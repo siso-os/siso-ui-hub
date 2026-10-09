@@ -1,0 +1,29 @@
+#!/usr/bin/env bash
+# The hub's nightly (launchd com.siso.ui-hub-nightly, 04:15; listed in siso-estate plan/services.json, owner UI-HUB).
+# Re-inventories every project from local git refs (no fetch, no checkout), checks for component files added since the
+# baseline that are from neither a pick nor our register (inventory/checks.json), rewrites the reader hand-off files,
+# and commits the inventory here. It never pushes: hub changes reach GitHub by branch and PR.
+set -u
+export PATH="/opt/homebrew/bin:/usr/local/bin:$HOME/.local/bin:/usr/bin:/bin:$PATH"
+HUB=$(cd "$(dirname "$(realpath "$0")")/.." && pwd)
+cd "$HUB" || exit 1
+mkdir -p inventory/raw
+exec >> inventory/raw/nightly.log 2>&1
+echo "=== $(date '+%F %T') ui-hub nightly start"
+# the census command lines (inventory/README.md points here)
+O=~/SISO_Workspace/SISO_Agency/partners/halo/oracle
+P='(^|/)(screens?|pages|routes?)/|(Page|Screen|App)\.tsx$'
+bin/census operator          $O/operator-app main                             src --alias @=src --pages "$P" || echo "census operator failed"
+bin/census operator-redesign $O/operator-app origin/operator-ui/opus-20261006 src --alias @=src --pages "$P" || echo "census operator-redesign failed"
+bin/census model-app $O/core origin/streaming/rc-first-model-20261006 oracle-worker/src/renderer \
+  --alias @=oracle-worker/src/renderer --alias @renderer=oracle-worker/src/renderer --pages '(Panel|Page|Screen|App)\.tsx$|/pages/|/routes/' || echo "census model-app failed"
+bin/census agent-base ~/SISO_Workspace/_data/worktrees/siso-internal-labs-agent-base/ab-map-20261006 origin/main apps/web/src \
+  --alias @=apps/web/src --pages '(Page|Screen|View|App|Space)\.tsx$' || echo "census agent-base failed"
+# HALO CRM is Cam's: file names only, and its inventory stays out of git (.gitignore)
+bin/census halo-crm ~/SISO_Workspace/SISO_Agency/partners/halo/crm/repo origin/cam/widgets-v3 src --alias @=src --names-only || echo "census halo-crm failed"
+bin/fingerprint model-app operator operator-redesign agent-base || echo "fingerprint failed"
+bin/inventory || echo "inventory failed"
+bin/uihub checks || echo "checks failed"
+bin/handoff || echo "handoff failed"
+git add inventory && { git diff --cached --quiet || git commit -qm "nightly: inventory and checks $(date +%F)"; } || echo "inventory not committed"
+echo "=== $(date '+%F %T') ui-hub nightly end"

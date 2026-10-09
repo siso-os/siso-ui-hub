@@ -1,0 +1,19 @@
+{
+ "name": "sidebar-11",
+ "type": "registry:block",
+ "description": "A sidebar with a collapsible file tree.",
+ "categories": [
+  "sidebar",
+  "dashboard"
+ ],
+ "registryDependencies": [
+  "sidebar",
+  "breadcrumb",
+  "separator",
+  "collapsible"
+ ],
+ "files": [
+  "blocks/sidebar-11/page.tsx",
+  "blocks/sidebar-11/components/app-sidebar.tsx"
+ ]
+}

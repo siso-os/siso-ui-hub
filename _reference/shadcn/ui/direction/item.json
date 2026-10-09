@@ -1,0 +1,16 @@
+{
+ "name": "direction",
+ "type": "registry:ui",
+ "dependencies": [
+  "@base-ui/react"
+ ],
+ "meta": {
+  "links": {
+   "docs": "https://ui.shadcn.com/docs/components/base/direction",
+   "api": "https://base-ui.com/react/utils/direction-provider.md"
+  }
+ },
+ "files": [
+  "ui/direction.tsx"
+ ]
+}

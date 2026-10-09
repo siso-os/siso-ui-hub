@@ -1,0 +1,16 @@
+{
+ "name": "native-select",
+ "type": "registry:ui",
+ "dependencies": [
+  "cn"
+ ],
+ "meta": {
+  "links": {
+   "docs": "https://ui.shadcn.com/docs/components/base/native-select",
+   "examples": "https://ui.shadcn.com/code/apps/v4/registry/bases/base/examples/native-select-example.tsx"
+  }
+ },
+ "files": [
+  "ui/native-select.tsx"
+ ]
+}

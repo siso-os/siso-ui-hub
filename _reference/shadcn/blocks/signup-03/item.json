@@ -1,0 +1,23 @@
+{
+ "name": "signup-03",
+ "type": "registry:block",
+ "description": "A signup page with a muted background color.",
+ "categories": [
+  "authentication",
+  "signup"
+ ],
+ "dependencies": [
+  "cn"
+ ],
+ "registryDependencies": [
+  "button",
+  "card",
+  "input",
+  "label",
+  "field"
+ ],
+ "files": [
+  "blocks/signup-03/page.tsx",
+  "blocks/signup-03/components/signup-form.tsx"
+ ]
+}

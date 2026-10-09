@@ -1,0 +1,17 @@
+{
+ "name": "tooltip",
+ "type": "registry:ui",
+ "dependencies": [
+  "cn"
+ ],
+ "meta": {
+  "links": {
+   "docs": "https://ui.shadcn.com/docs/components/base/tooltip",
+   "examples": "https://ui.shadcn.com/code/apps/v4/registry/bases/base/examples/tooltip-example.tsx",
+   "api": "https://base-ui.com/react/components/tooltip.md"
+  }
+ },
+ "files": [
+  "ui/tooltip.tsx"
+ ]
+}

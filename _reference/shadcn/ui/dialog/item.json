@@ -1,0 +1,20 @@
+{
+ "name": "dialog",
+ "type": "registry:ui",
+ "dependencies": [
+  "cn"
+ ],
+ "registryDependencies": [
+  "button"
+ ],
+ "meta": {
+  "links": {
+   "docs": "https://ui.shadcn.com/docs/components/base/dialog",
+   "examples": "https://ui.shadcn.com/code/apps/v4/registry/bases/base/examples/dialog-example.tsx",
+   "api": "https://base-ui.com/react/components/dialog.md"
+  }
+ },
+ "files": [
+  "ui/dialog.tsx"
+ ]
+}

@@ -1,0 +1,60 @@
+# Devigner UI
+
+> Free animated React components for Tailwind CSS. Each component installs as a plain .tsx file in your repo with one command, and ships with keyboard support, reduced motion and light/dark themes built in.
+
+- Site: https://ui.devigner.cc
+- Requirements: React 18 or 19, Tailwind CSS v4
+- Set up once per project: `npx devignerui init`
+- Add a component: `npx devignerui add <name>` (writes components/ui/<name>.tsx and lists the packages it needs)
+- npm package: devignerui (React components, motion tokens and the CLI)
+- License: MIT, free including commercial use
+- Components: 14
+
+## Components
+
+- [Contact Lens](https://ui.devigner.cc/components/contact-lens): A dim contact line with an icon row: hover an icon and its part of the line lifts and lights up under a label, click to copy it. Category: Animation. Install: `npx devignerui add contact-lens`. Full guide: https://ui.devigner.cc/llms/contact-lens.md
+- [Copy Button](https://ui.devigner.cc/components/copy-button): Copies text in one click, then turns green and retypes its label to Copied. Category: Primitives. Install: `npx devignerui add copy-button`. Full guide: https://ui.devigner.cc/llms/copy-button.md
+- [Nav Notch](https://ui.devigner.cc/components/nav-notch): A row of small notches that works as a navigation bar: the one under the pointer opens into a labelled chip and its neighbours swell around it like a lens. Category: Navigation. Install: `npx devignerui add nav-notch`. Full guide: https://ui.devigner.cc/llms/nav-notch.md
+- [Liquid Glass](https://ui.devigner.cc/components/liquid-glass): An iOS 27 style glass menu whose rim bends the page behind it: a pill that swells into a squircle panel of rows and melts back once you pick one. Category: Primitives. Install: `npx devignerui add liquid-glass`. Full guide: https://ui.devigner.cc/llms/liquid-glass.md
+- [Slider](https://ui.devigner.cc/components/slider): A slider whose fill heats from yellow to red as it grows, with a glass thumb that opens to show the value while you drag. Category: Forms. Install: `npx devignerui add slider`. Full guide: https://ui.devigner.cc/llms/slider.md
+- [File Upload](https://ui.devigner.cc/components/file-upload): An upload panel whose files drip out of the dropzone as liquid, then queue, pause, fail and retry in compact cards before you submit them. Category: Forms. Install: `npx devignerui add file-upload`. Full guide: https://ui.devigner.cc/llms/file-upload.md
+- [Goo Switch](https://ui.devigner.cc/components/goo-switch): A switch whose thumb is a drop of liquid: it trails a tail when it moves and stretches over the edge when you pull it too far. Category: Forms. Install: `npx devignerui add goo-switch`. Full guide: https://ui.devigner.cc/llms/goo-switch.md
+- [Inline Time Edit](https://ui.devigner.cc/components/inline-time-edit): A 2:30 that splits into hour and minute fields when you edit it, then folds back. Category: Forms. Install: `npx devignerui add inline-time-edit`. Full guide: https://ui.devigner.cc/llms/inline-time-edit.md
+- [Date Range Picker](https://ui.devigner.cc/components/date-range-picker): A calendar that shows the range before you commit to it, with presets. Category: Forms. Install: `npx devignerui add date-range-picker`. Full guide: https://ui.devigner.cc/llms/date-range-picker.md
+- [Chart Card](https://ui.devigner.cc/components/chart-card): A stats card whose bars show their value as you move across them. Category: Data Display. Install: `npx devignerui add chart-card`. Full guide: https://ui.devigner.cc/llms/chart-card.md
+- [Delete Button](https://ui.devigner.cc/components/delete-button): Asks before it deletes, waits for your API call, then shows a tick. Category: Primitives. Install: `npx devignerui add delete-button`. Full guide: https://ui.devigner.cc/llms/delete-button.md
+- [Menu Dock](https://ui.devigner.cc/components/menu-dock): A dock that grows into its own menus, nested as deep as you need. Category: Navigation. Install: `npx devignerui add menu-dock`. Full guide: https://ui.devigner.cc/llms/menu-dock.md
+- [Timeline](https://ui.devigner.cc/components/timeline): The active step slides off the rail, and the line bends to follow it. Category: Data Display. Install: `npx devignerui add timeline`. Full guide: https://ui.devigner.cc/llms/timeline.md
+- [Magnetic Button](https://ui.devigner.cc/components/magnetic-button): Leans toward your cursor before you reach it, then lets go with a wobble. Category: Animation. Install: `npx devignerui add magnetic-button`. Full guide: https://ui.devigner.cc/llms/magnetic-button.md
+
+## Docs
+
+- [Full documentation in one file](https://ui.devigner.cc/llms-full.txt): every component's usage, props, keyboard, accessibility, theming, edge cases and troubleshooting
+- [All components](https://ui.devigner.cc/components): every component running live, with search and filters
+- [Home](https://ui.devigner.cc): overview, pricing and FAQ
+
+## FAQ
+
+### Is Devigner UI free?
+
+Yes. Every component on the site is free, including for commercial work. Pro will be a separate paid set, and nothing that's free now moves behind it.
+
+### How do I add a component to my project?
+
+Run npx devignerui init once per project, then npx devignerui add with the component's name. The CLI writes the file into components/ui and prints the npm packages it needs.
+
+### Does it work with shadcn/ui?
+
+Yes. Components install into the same components/ui folder and use the standard shadcn/ui color tokens (primary, secondary, muted, accent, border, ring and the rest), so they pick up your existing theme and dark mode with nothing to add.
+
+### Do I need Framer Motion?
+
+Most components use Motion, the library that used to be called Framer Motion, and a few use GSAP. Each component's page and the CLI list exactly which packages it needs.
+
+### Will it work with the Next.js App Router?
+
+Yes. Every component starts with "use client", so you can render it from a server component.
+
+### How do dark mode and theming work?
+
+Every color is a CSS variable. Put the dark class on your html element and the components switch, and override any variable in your own CSS to change the look.

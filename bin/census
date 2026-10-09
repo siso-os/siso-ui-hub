@@ -1,0 +1,152 @@
+#!/usr/bin/env python3
+"""census: every UI component file in one project at one git ref, read straight from git (no checkout, no network).
+For each .tsx file under the source prefix: who imports it, which pages reach it, how much it has been iterated, what it is
+built from (provenance tags, shadcn/radix/base-ui/motion/chart imports), and cheap code facts (a11y, reduced motion,
+hard-coded colours, tokens). Writes inventory/<project>.census.json. Generalises AB-MAP's tools/ab-map/census.mjs.
+
+  census <project> <repo> <ref> <src_prefix> [--alias @=<dir>]... [--pages REGEX] [--names-only]
+--names-only: record names, paths, imports and usage but no code facts or tags (for repos whose code must stay put, e.g. Cam's).
+"""
+import json, os, re, subprocess, sys, collections, posixpath
+args = sys.argv[1:]
+if len(args) < 4: print(__doc__); sys.exit(64)
+project, repo, ref, prefix = args[:4]; prefix = prefix.rstrip("/") + "/"
+def opt_all(k): return [args[i + 1] for i, a in enumerate(args) if a == k]
+aliases = {a.split("=", 1)[0]: a.split("=", 1)[1].rstrip("/") for a in opt_all("--alias")}
+pages_rx = re.compile((opt_all("--pages") or [r"(^|/)(pages?|routes?|screens?|views?|panels?)/|Page\.tsx$|Screen\.tsx$|View\.tsx$|App\.tsx$"])[0])
+names_only = "--names-only" in args
+HUB = os.path.dirname(os.path.dirname(os.path.realpath(__file__)))  # the siso-ui-hub repo root
+OUT = f"{HUB}/inventory/{project}.census.json"
+
+def git(*a, inp=None):
+    return subprocess.run(["git", "-C", repo, *a], input=inp, capture_output=True, check=True).stdout
+sha = git("rev-parse", ref).decode().strip()
+files = [f for f in git("ls-tree", "-r", "--name-only", ref, "--", prefix).decode().splitlines()
+         if re.search(r"\.(tsx?|mts)$", f) and not re.search(r"\.(test|spec|stories|d)\.|__tests__|/test/|/fixtures?/|\.mock\.", f)]
+# read every file in one batch
+blob = git("cat-file", "--batch", inp="".join(f"{ref}:{f}\n" for f in files).encode())
+text, i = {}, 0
+for f in files:
+    nl = blob.index(b"\n", i); hdr = blob[i:nl].split(); size = int(hdr[2]); i = nl + 1
+    text[f] = blob[i:i + size].decode("utf-8", "ignore"); i += size + 1
+fileset = set(files)
+def resolve(src, spec):
+    if spec.startswith("."): base = posixpath.normpath(posixpath.join(posixpath.dirname(src), spec))
+    else:
+        hit = next((a for a in sorted(aliases, key=len, reverse=True) if spec == a or spec.startswith(a + "/")), None)
+        if not hit: return None
+        base = posixpath.normpath(aliases[hit] + spec[len(hit):])
+    for c in (base, base + ".tsx", base + ".ts", base + "/index.tsx", base + "/index.ts"):
+        if c in fileset: return c
+    return None
+# Imports are followed by name through barrels (index.ts, `export * from`), so a page that imports one primitive from
+# ui/index.ts reaches that primitive only, not the whole kit. Type-only imports draw nothing and are skipped.
+STMT = re.compile(r"""\bimport\s+(type\s+)?([^'";]*?)\s*from\s*['"]([^'"]+)['"]"""
+                  r"""|\bexport\s+(type\s+)?(\*(?:\s*as\s+[\w$]+)?|\{[^}]*\})\s*from\s*['"]([^'"]+)['"]"""
+                  r"""|\bimport\s*\(\s*['"]([^'"]+)['"]\s*\)|\bimport\s+['"]([^'"]+)['"]""")
+DECL = re.compile(r"\bexport\s+(?:default\s+)?(?:declare\s+)?(?:async\s+)?(?:abstract\s+)?(?:function\*?|const|let|var|class|interface|type|enum)\s+([A-Za-z_$][\w$]*)")
+LOCAL = re.compile(r"\bexport\s*(?:type\s*)?\{([^}]*)\}(?!\s*from\b)")
+def names(clause):  # "{ A, B as C, type D }" -> [("A","A"), ("B","C")]; type-only names dropped
+    out = []
+    for it in clause.strip().strip("{}").split(","):
+        it = it.strip()
+        if not it or it.startswith("type "): continue
+        a, _, b = it.partition(" as "); out.append((a.strip(), (b or a).strip()))
+    return out
+declared, rx_named, rx_star, stmts, ext = {}, {}, {}, {}, {}
+for f in files:
+    t = text[f]; d = set(DECL.findall(t)); rn, rs, st, ex = {}, [], [], set()
+    for m in LOCAL.finditer(t): d.update(b for a, b in names(m.group(1)))
+    if re.search(r"\bexport\s+default\b", t): d.add("default")
+    for m in STMT.finditer(t):
+        g = m.groups(); spec = g[2] or g[5] or g[6] or g[7]
+        if not spec.startswith(".") and not any(spec == a or spec.startswith(a + "/") for a in aliases): ex.add(spec)
+        if g[2] is not None:  # import ... from
+            if g[0]: continue
+            c = g[1].strip(); head = c.split("{")[0].strip().rstrip(",").strip()
+            named = [a for a, b in names(c[c.find("{"):])] if "{" in c else []
+            if head and not head.startswith("*"): named.append("default")  # default import, resolved like a name
+            st.append((spec, named, "*" in head))
+        elif g[5] is not None:  # re-export
+            if g[3]: continue
+            if g[4].startswith("*"):
+                if " as " in g[4]: rn[g[4].split(" as ")[1].strip()] = ("*", spec)
+                else: rs.append(spec)
+            else:
+                for a, b in names(g[4]): rn[b] = (a, spec)
+        else: st.append((spec, [], True))  # dynamic or side-effect import
+    declared[f], rx_named[f], rx_star[f], stmts[f], ext[f] = d, rn, rs, st, sorted(ex)
+def find(name, T, depth=0):
+    if T is None or depth > 8: return None
+    if name in declared.get(T, ()): return T
+    if name in rx_named.get(T, {}):
+        a, spec = rx_named[T][name]; U = resolve(T, spec)
+        return U if a == "*" else (find(a, U, depth + 1) or U)
+    for spec in rx_star.get(T, []):
+        r = find(name, resolve(T, spec), depth + 1)
+        if r: return r
+    return None
+def everything(T, depth=0):  # a whole-module import of a barrel reaches all it re-exports
+    out = {T}
+    if depth < 6:
+        for _, spec in rx_named.get(T, {}).values():
+            U = resolve(T, spec); out |= everything(U, depth + 1) if U else set()
+        for spec in rx_star.get(T, []):
+            U = resolve(T, spec); out |= everything(U, depth + 1) if U else set()
+    return out
+imports, importers = {}, collections.defaultdict(list)
+for f in files:
+    out = set()
+    for spec, ns, whole in stmts[f]:
+        T = resolve(f, spec)
+        if not T: continue
+        if whole: out |= everything(T)
+        for n in ns: out.add(find(n, T) or T)
+    out.discard(f); imports[f] = sorted(out)
+    for o in imports[f]: importers[o].append(f)
+pages = [f for f in files if pages_rx.search(f) and f.endswith(".tsx")]
+used_on = collections.defaultdict(set)
+for p in pages:
+    seen, q = {p}, [p]
+    while q:
+        for n in imports.get(q.pop(), []):
+            if n not in seen: seen.add(n); q.append(n)
+    for n in seen: used_on[n].add(p)
+# history: one log over the prefix
+log = git("log", ref, "--format=@@%h\t%aI\t%s", "--name-only", "--", prefix).decode("utf-8", "ignore")
+hist = collections.defaultdict(list); cur = None
+for line in log.splitlines():
+    if line.startswith("@@"): h, at, s = (line[2:].split("\t", 2) + ["", ""])[:3]; cur = (h, at, s)
+    elif line.strip() and cur and line in fileset: hist[line].append(cur)
+LIB = {"radix": r"^@radix-ui/", "base-ui": r"^@base-ui", "react-aria": r"react-aria", "cmdk": r"^cmdk$", "vaul": r"^vaul$",
+       "sonner": r"^sonner$", "motion": r"^(motion|framer-motion)", "recharts": r"^recharts", "visx": r"^@visx", "lucide": r"^lucide-react",
+       "tabler": r"^@tabler/icons", "tanstack-table": r"^@tanstack/react-table", "dnd-kit": r"^@dnd-kit", "react-day-picker": r"^react-day-picker"}
+TAG = re.compile(r"\b(pick:\s?\d+[\w-]*|ui:[\w./-]+|block:[\w./-]+|app:[A-Z]\w+|chart-[\w-]+|@provenance\s+[^\n*]+|provenance:\s*[^\n*]+)", re.I)
+rows = []
+for f in files:
+    if not f.endswith(".tsx"): continue
+    t = text[f]; h = hist.get(f, []); days = {c[1][:10] for c in h}
+    row = {"file": f, "name": posixpath.splitext(posixpath.basename(f))[0], "loc": t.count("\n") + 1,
+           "importedBy": sorted(importers.get(f, [])), "usedOn": sorted(used_on.get(f, set()) - {f}), "isPage": f in pages,
+           "commits": len(h), "days": len(days), "first": min(days) if days else None, "last": max(days) if days else None,
+           "rounds": sum(1 for c in h if re.search(r"\b(round|r\d+|iterat|polish|redesign|feedback|review fix|v\d)\b", c[2], re.I)),
+           "libs": sorted(k for k, rx in LIB.items() if any(re.search(rx, s) for s in ext[f])),
+           "shadcn": sorted({m for m in re.findall(r"components/ui/([\w-]+)", " ".join(imports[f] + ext[f]))}),
+           "barrel": bool(rx_named[f] or rx_star[f]) and len(declared[f]) <= 2}
+    if not names_only:
+        row.update({"tags": sorted(set(m.strip()[:80] for m in TAG.findall(t)))[:8],
+                    "a11y": len(re.findall(r"aria-[a-z]+|role=|onKeyDown|keydown|focus-visible|tabIndex|sr-only", t)),
+                    "reduced": bool(re.search(r"prefers-reduced-motion|useReducedMotion|reducedMotion|motion-reduce", t)),
+                    "hex": len(re.findall(r"#[0-9a-fA-F]{3,8}\b|rgba?\(\s*\d|hsla?\(\s*\d", t)),
+                    "tokens": len(re.findall(r"var\(--|(?:bg|text|border|ring|fill|stroke)-(?:background|foreground|muted|primary|secondary|accent|card|popover|border|input|ring|destructive)", t)),
+                    "emoji": len(re.findall(r"[\U0001F300-\U0001FAFF☀-➿]", t)),
+                    "divClick": len(re.findall(r"<(?:div|span|li|tr|td|section|article)\b[^>]{0,400}?\bonClick", t, re.S)),
+                    "pills": len(re.findall(r"rounded-full[^\"'`]{0,80}\b(?:px-[1-3]|py-0\.5|text-\[?1[01])|\b(?:Pill|Chip)\b", t)),
+                    "accentLine": bool(re.search(r"border-l-(?:[2-8]|\[\d+px\])|border-left:\s*[2-9]px|borderLeft:\s*['\"]?[2-9]px", t))})
+    rows.append(row)
+os.makedirs(os.path.dirname(OUT), exist_ok=True)
+json.dump({"project": project, "repo": repo, "ref": ref, "sha": sha, "prefix": prefix, "aliases": aliases,
+           "namesOnly": names_only, "pages": len(pages), "rows": rows,
+           "graph": {f: imports[f] for f in files if imports[f]}}, open(OUT, "w"), indent=1)
+reach = sum(1 for r in rows if r["usedOn"] or r["isPage"])
+print(f"{project}: {len(rows)} component files, {len(pages)} pages, {reach} reached from a page, sha {sha[:10]} → {OUT}")

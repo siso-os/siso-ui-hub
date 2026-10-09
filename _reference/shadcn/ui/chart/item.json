@@ -1,0 +1,20 @@
+{
+ "name": "chart",
+ "type": "registry:ui",
+ "dependencies": [
+  "cn",
+  "recharts@3.8.0"
+ ],
+ "registryDependencies": [
+  "card"
+ ],
+ "meta": {
+  "links": {
+   "docs": "https://ui.shadcn.com/docs/components/base/chart",
+   "examples": "https://ui.shadcn.com/code/apps/v4/registry/bases/base/examples/chart-example.tsx"
+  }
+ },
+ "files": [
+  "ui/chart.tsx"
+ ]
+}

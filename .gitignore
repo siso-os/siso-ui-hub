@@ -1,0 +1,14 @@
+node_modules/
+.DS_Store
+# Raw fetches and screenshots: big and re-fetchable, so they stay on disk, not in git
+sources/*/raw/
+sources/*/shots/
+inventory/raw/
+inventory/shots/
+round1/shots/
+round1/check/
+# HALO CRM is Cam's: its names-only census stays on this laptop
+inventory/halo-crm.*
+# Third-party demo GIFs robbed for reference (meetily): big and re-downloadable; kept on disk
+catalogue/curated/rob/**/*.gif
+__pycache__/

@@ -1,0 +1,155 @@
+{
+ "_about": "Round-1 best-in-category picks (UI-HUB, 7 Oct). category -> pick. Install lines are the library's own. 'why' is one line; the full reasoning is in the round-1 page, chapter 4.",
+ "overlays/hover-card": {
+  "pick": "arc:hover-card",
+  "install": "npx shadcn@latest add @uiarc/hover-card",
+  "why": "does all of rule 1: 500 ms rest, 80 ms when warm, focus, Esc, tap to toggle, reduced motion"
+ },
+ "overlays/notifications": {
+  "pick": "arc:notification-center",
+  "install": "npx shadcn@latest add @uiarc/notification-center",
+  "why": "the bell: unread badge, All/Unread, mark all read, live summary; rows = our AgentNotificationStack row"
+ },
+ "overlays/toast": {
+  "pick": "arc:toast",
+  "install": "npx shadcn@latest add @uiarc/toast",
+  "why": "brief confirmation; the 4-second ping",
+  "also": [
+   "arc:toast-stack"
+  ]
+ },
+ "overlays/tooltip": {
+  "pick": "arc:tooltip",
+  "install": "npx shadcn@latest add @uiarc/tooltip",
+  "why": "Radix, tokens, reduced motion"
+ },
+ "overlays/popover": {
+  "pick": "arc:popover",
+  "install": "npx shadcn@latest add @uiarc/popover",
+  "why": "click-to-open panel that can hold actions (pinnable pattern = our InfrastructurePopover)"
+ },
+ "overlays/dialog": {
+  "pick": "arc:dialog",
+  "install": "npx shadcn@latest add @uiarc/dialog",
+  "why": "Radix dialog, tokens, reduced motion"
+ },
+ "overlays/sheet": {
+  "pick": "arc:drawer",
+  "install": "npx shadcn@latest add @uiarc/drawer",
+  "why": "side sheet for drill-in-place (rule 5); bottom-sheet for touch",
+  "also": [
+   "arc:bottom-sheet"
+  ]
+ },
+ "navigation/command-palette": {
+  "pick": "arc:command-palette",
+  "install": "npx shadcn@latest add @uiarc/command-palette",
+  "why": "keyboard-driven, grouped results; compare with our WorkspaceCommandPalette"
+ },
+ "navigation/tabs": {
+  "pick": "arc:tabs",
+  "install": "npx shadcn@latest add @uiarc/tabs",
+  "why": "tokens, a11y, reduced motion"
+ },
+ "navigation/breadcrumb": {
+  "pick": "arc:breadcrumb",
+  "install": "npx shadcn@latest add @uiarc/breadcrumb",
+  "why": "Kobra's is paid"
+ },
+ "data-display/timeline": {
+  "pick": "arc:timeline",
+  "install": "npx shadcn@latest add @uiarc/timeline",
+  "why": "newest first, by day, opens in place"
+ },
+ "data-display/table": {
+  "pick": "arc:sortable-data-table",
+  "install": "npx shadcn@latest add @uiarc/sortable-data-table",
+  "why": "small tables; dense ones: easyui advanced-data-table; huge ones: Space UI data-grid"
+ },
+ "data-display/stat": {
+  "pick": "arc:metric-card",
+  "install": "npx shadcn@latest add @uiarc/metric-card",
+  "why": "an S widget: one number with context"
+ },
+ "data-display/empty-state": {
+  "pick": "arc:empty-state",
+  "install": "npx shadcn@latest add @uiarc/empty-state",
+  "why": "a useful next step when there is nothing yet (rule 9)"
+ },
+ "data-display/avatar": {
+  "pick": "arc:avatar",
+  "also": [
+   "arc:avatar-group"
+  ],
+  "install": "npx shadcn@latest add @uiarc/avatar",
+  "why": "one face with a fallback; avatar-group for a row of faces, paired with the hover card"
+ },
+ "data-display/tree": {
+  "pick": "arc:tree-view",
+  "install": "npx shadcn@latest add @uiarc/tree-view",
+  "why": "keyboard navigable tree"
+ },
+ "data-display/chat-thread": {
+  "pick": "arc:chat-thread",
+  "also": [
+   "easyui:ai-response"
+  ],
+  "install": "npx shadcn@latest add @uiarc/chat-thread",
+  "why": "people talking (room chat, team chat): grouped messages, reactions, typing; AI answers use easyui:ai-response"
+ },
+ "status/skeleton": {
+  "pick": "arc:skeleton",
+  "install": "npx shadcn@latest add @uiarc/skeleton",
+  "why": "reserve space at real size (rules 9, 10); text-shimmer for 'working'"
+ },
+ "status/loader": {
+  "pick": "arc:text-shimmer",
+  "install": "npx shadcn@latest add @uiarc/text-shimmer",
+  "why": "calm light across words for ongoing work"
+ },
+ "actions/switch": {
+  "pick": "arc:switch",
+  "install": "npx shadcn@latest add @uiarc/switch",
+  "why": "tactile, immediate settings"
+ },
+ "inputs/slider": {
+  "pick": "arc:slider",
+  "install": "npx shadcn@latest add @uiarc/slider",
+  "why": "value or range, ticks, keyboard"
+ },
+ "inputs/date-picker": {
+  "pick": "arc:date-picker",
+  "install": "npx shadcn@latest add @uiarc/date-picker",
+  "why": "choose a date without losing context"
+ },
+ "inputs/date-range": {
+  "pick": "arc:date-range-picker",
+  "install": "npx shadcn@latest add @uiarc/date-range-picker",
+  "why": "presets (Last 7 days), apply/cancel"
+ },
+ "inputs/period-filter": {
+  "pick": "spaceui:components-spaceui-date-selector",
+  "install": "npx shadcn@latest add @spaceui/components-spaceui-date-selector",
+  "why": "is/before/after/between by day..year: the dashboard filter"
+ },
+ "ai-agent/run": {
+  "pick": "easyui:ai-agent-activity",
+  "install": "npx shadcn@latest add https://www.easyui.site/r/ai-agent-activity.json",
+  "why": "one line per step (thinking, tool call), expand for parameters and output"
+ },
+ "ai-agent/response": {
+  "pick": "easyui:ai-response",
+  "install": "npx shadcn@latest add https://www.easyui.site/r/ai-response.json",
+  "why": "the answer: streaming, code blocks, citations, 'used 4 tools' folded"
+ },
+ "ai-agent/composer": {
+  "pick": "uselayouts:prompt-box",
+  "install": "npx shadcn@latest add @uselayouts/prompt-box",
+  "why": "try: a collapsed pill that grows into the composer"
+ },
+ "inputs/tuning-panel": {
+  "pick": "toolcraft:settings-transfer",
+  "install": "copy from github.com/pixel-point/toolcraft (starter/)",
+  "why": "internal: tweak a live variant and export the settings"
+ }
+}

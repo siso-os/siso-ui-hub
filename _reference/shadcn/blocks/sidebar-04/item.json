@@ -1,0 +1,18 @@
+{
+ "name": "sidebar-04",
+ "type": "registry:block",
+ "description": "A floating sidebar with submenus.",
+ "categories": [
+  "sidebar",
+  "dashboard"
+ ],
+ "registryDependencies": [
+  "sidebar",
+  "breadcrumb",
+  "separator"
+ ],
+ "files": [
+  "blocks/sidebar-04/page.tsx",
+  "blocks/sidebar-04/components/app-sidebar.tsx"
+ ]
+}

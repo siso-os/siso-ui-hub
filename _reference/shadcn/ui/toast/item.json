@@ -1,0 +1,21 @@
+{
+ "name": "toast",
+ "type": "registry:ui",
+ "dependencies": [
+  "cn",
+  "@base-ui/react"
+ ],
+ "registryDependencies": [
+  "button"
+ ],
+ "meta": {
+  "links": {
+   "docs": "https://ui.shadcn.com/docs/components/base/toast",
+   "examples": "https://ui.shadcn.com/code/apps/v4/registry/bases/base/examples/toast-example.tsx",
+   "api": "https://base-ui.com/react/components/toast.md"
+  }
+ },
+ "files": [
+  "ui/toast.tsx"
+ ]
+}

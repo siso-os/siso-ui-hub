@@ -1,0 +1,145 @@
+#!/usr/bin/env python3
+"""inventory: one row per UI component per project: where it is, where it shows, where it came from, how good it is, and
+what to swap it for. Joins the census (usage, history, code facts), the fingerprints (source), the taxonomy (category),
+AB-MAP's grades (Agent Base) and catalogue/picks.json (swap target), then ranks swap candidates by visible gain.
+No model, no network. Writes inventory/<project>.jsonl and inventory/summary.json.
+  inventory [project ...]      (default: every inventory/*.census.json)
+
+Grade (one scale for every project: good / ok / weak / dead):
+  Agent Base: AB-MAP's grade (his words first, then iteration, then the live screenshot).
+  Elsewhere, from signals: dead = no page reaches it; a point off for each broken rule (hard-coded colours, ADR 14;
+  emoji, ADR 14; left accent line, ADR 7; clickable div, motion without reduced-motion, ADR 13); a point on for being
+  built from a library or pick, and for being iterated and kept. HALO CRM is names-only: never read, never graded.
+Gain = visibility x gap. Visibility = pages that show it (+8 if the shell shows it on every page). Gap = how far its
+grade is from a library pick (weak 3, ok 2, good 1; halved when it already comes from a library)."""
+import json, os, re, sys, glob, collections, importlib.machinery
+HUB = os.path.dirname(os.path.dirname(os.path.realpath(__file__)))  # the siso-ui-hub repo root
+H = HUB
+AB_MAP = os.path.expanduser("~/SISO_Workspace/_data/worktrees/siso-internal-labs-agent-base/ab-map-20261006/ui-hub/_map/census.json")
+RULES = importlib.machinery.SourceFileLoader("categorise", f"{H}/bin/categorise").load_module().RULES
+PICKS = {k: v for k, v in json.load(open(f"{H}/catalogue/picks.json")).items() if not k.startswith("_")}
+
+# Project components are named after our domain ("Agent", "Model", "Stream"), so these run before the library rules,
+# and the library rules run without their bare "agent" match.
+PROJECT_RULES = [
+ (r"\bbell\b|notification-?(center|stack|list|inbox|popover|panel|tray|drawer)|\binbox\b", "overlays/notifications"),
+ (r"hover-?card|link-?preview|\bpeek\b", "overlays/hover-card"),
+ (r"thinking|reasoning|tool-?calls?\b|run-?(steps|trace|activity)|\btrace\b|agent-?activity", "ai-agent/run"),
+ (r"composer|prompt-?(box|input|bar)|chat-?input|message-?input|reply-?box", "ai-agent/composer"),
+ (r"command-?(palette|menu|bar)|\bpalette\b|cmdk|quick-?switch|spotlight", "navigation/command-palette"),
+ (r"(activity|event|run|change|audit)-?(feed|log|timeline|list|stream)|timeline|changelog", "data-display/timeline"),
+ (r"date-?range|range-?picker|period-?(picker|select|filter)", "inputs/date-range"),
+ (r"\b(stat|stats|kpi|metric|figure|figures|totals?)\b", "data-display/stat"),
+ (r"\bempty\b", "data-display/empty-state"), (r"skeleton", "status/skeleton"), (r"shimmer|spinner|loader|loading", "status/loader"),
+ (r"tooltip", "overlays/tooltip"), (r"popover", "overlays/popover"), (r"dialog|modal", "overlays/dialog"),
+ (r"drawer|\bsheet\b|bottom-?sheet", "overlays/sheet"), (r"toast|snackbar", "overlays/toast"),
+ (r"\btabs?\b", "navigation/tabs"), (r"breadcrumb", "navigation/breadcrumb"), (r"\btree\b", "data-display/tree"),
+ (r"\btable\b|data-?grid", "data-display/table"), (r"avatar", "data-display/avatar"), (r"\bswitch\b|\btoggle\b", "actions/switch"),
+ (r"slider", "inputs/slider"),
+ (r"(panel|section|band|desk|wall|board|hero)$", "composite/section"), (r"(card|tile)$", "composite/card"),
+ (r"(row|item|list|roster|queue)$", "composite/list"), (r"(header|bar|rail|nav|sidebar|footer|shell)$", "composite/chrome"),
+]
+LIB_RULES = [((r"orb|thinking|reasoning|tool-?call|ai-?(response|chat|editor)|prompt|composer|chat-?input|streaming|citation|llm"
+               if i == 0 else pat), cat) for i, (pat, cat) in enumerate(RULES)]
+PATTERN = re.compile(r"^(overlays|navigation|inputs|actions|status|ai-agent)/|^data-display/(table|timeline|tree|avatar|badge|stat|"
+                     r"empty-state|chat-thread|accordion|code-block)$")
+DEV = re.compile(r"/(dev-web|dev|labs?|playground|storybook|__dev__)/|Lab\.tsx$|Dev(Page)?\.tsx$")
+APP = re.compile(r"(^|/)\w*App\.tsx$")
+
+def kebab(n): return re.sub(r"(?<=[a-z0-9])(?=[A-Z])|(?<=[A-Z])(?=[A-Z][a-z])", "-", n).lower()
+def category(name, is_page):
+    if is_page: return "page"
+    k = kebab(name)
+    for pat, c in PROJECT_RULES + LIB_RULES:  # whole words only: "feedback" is not a feed, "surfaces" has no face
+        if re.search(rf"(?:^|-)(?:{pat})(?:e?s)?(?=-|$)", k): return c
+    return "composite/other"
+
+def source(row, fp, names_only):
+    if names_only: return "not read", None, None
+    top = (fp.get(row["file"]) or [None])[0]
+    if top and top["sim"] >= 0.25:
+        ref = top["ref"]; kind = ("library" if ref.startswith("lib:") else "shadcn" if ref.startswith("shadcn:")
+                                  else "our pick" if ref.startswith("pick:") else "21st.dev bank")
+        return (kind if top["sim"] >= 0.5 else f"partly {kind}"), ref, top["sim"]
+    if "/components/ui/" in "/" + row["file"]: return "shadcn-style, edited", None, None
+    return "custom", None, None
+
+def signal_grade(row, src, reached):
+    if not reached: return "dead", ["no page reaches it"]
+    off, on = [], []
+    if row.get("hex", 0) >= 6: off.append(f"{row['hex']} hard-coded colours")
+    if row.get("emoji"): off.append(f"{row['emoji']} emoji")
+    if row.get("accentLine"): off.append("left accent line")
+    if row.get("divClick"): off.append(f"{row['divClick']} clickable div")
+    if "motion" in row.get("libs", []) and not row.get("reduced"): off.append("motion without reduced-motion")
+    if src in ("library", "our pick", "shadcn", "21st.dev bank"): on.append(f"from {src}")
+    if row.get("days", 0) >= 3 and row.get("rounds", 0) >= 1: on.append(f"iterated {row['days']} days, kept")
+    score = len(on) - len(off)
+    g = "good" if score >= 1 and not off else "weak" if score <= -2 or (off and row.get("days", 0) <= 1 and not on) else "ok"
+    return g, on + [f"- {o}" for o in off]
+
+def run(project):
+    c = json.load(open(f"{H}/inventory/{project}.census.json")); names_only = c.get("namesOnly")
+    fp = {} if names_only else json.load(open(f"{H}/inventory/{project}.sources.json"))
+    graph, rows = c.get("graph", {}), c["rows"]
+    pages = {r["file"] for r in rows if r["isPage"]}
+    importers = collections.Counter(x for v in graph.values() for x in v)
+    roots = sorted(f for f in graph if re.search(r"(^|/)main\.tsx$", f) and not importers[f] and not DEV.search(f))
+    root = roots[0] if roots else None
+    shell, q = set(), list(roots)
+    while q:  # everything an entry point draws without going through a page (App-like pages are the shell itself)
+        n = q.pop()
+        for m in graph.get(n, []):
+            if m in shell: continue
+            shell.add(m)
+            if m not in pages or APP.search(m): q.append(m)
+    ab = {}
+    if project == "agent-base" and os.path.exists(AB_MAP):
+        ab = {x["file"]: x for x in json.load(open(AB_MAP))["components"]}
+    out = []
+    for r in rows:
+        f = r["file"]
+        real_pages = sorted(p for p in r["usedOn"] if p not in roots and not APP.search(p) and not DEV.search(p))
+        dev_only = bool(r["usedOn"]) and not real_pages and not (f in shell) and all(DEV.search(p) for p in r["usedOn"])
+        reached = bool(r["usedOn"] or r["isPage"] or f in shell) and not DEV.search(f)
+        cat = "barrel" if r.get("barrel") else "root" if f in roots else "dev" if DEV.search(f) or dev_only else category(r["name"], r["isPage"])
+        src, ref, sim = source(r, fp, names_only)
+        if f in ab:
+            a = ab[f]; grade, graded, why = a["grade"], "ab-map", [a.get("why") or ""]
+            fate, into = a.get("fate"), a.get("into")
+        elif cat in ("root", "dev", "barrel"):
+            grade, graded, why, fate, into = None, cat, [], None, None
+        elif names_only:
+            grade, graded, why, fate, into = None, "not read", [], None, None
+        else:
+            grade, why = signal_grade(r, src.replace("partly ", "~"), reached); graded, fate, into = "signals", None, None
+        vis = len(real_pages) + (8 if f in shell and not r["isPage"] else 0)
+        pick = PICKS.get(cat)
+        swap = pick["pick"] if pick and not (ref and ref == f"lib:{pick['pick']}") else None
+        gap = {"weak": 3, "ok": 2, "good": 1}.get(grade, 0) * (0.5 if src in ("library", "shadcn", "our pick") else 1)
+        out.append({"project": project, "name": r["name"], "file": f, "loc": r["loc"],
+                    "kind": cat if cat in ("page", "root", "dev", "barrel") else "icon" if "/icons/" in f else "pattern" if PATTERN.search(cat) else "domain",
+                    "category": cat, "pages": len(real_pages), "topPages": [os.path.basename(p)[:-4] for p in real_pages[:4]],
+                    "shell": f in shell, "devOnly": dev_only, "source": src, "sourceRef": ref, "sim": sim,
+                    "grade": grade, "graded": graded, "why": [w for w in why if w], "fate": fate, "into": into,
+                    "swapTo": swap, "gain": round(vis * gap, 1) if swap and grade not in (None, "dead") else 0,
+                    "commits": r["commits"], "days": r["days"], "last": r["last"]})
+    with open(f"{H}/inventory/{project}.jsonl", "w") as fh:
+        for o in out: fh.write(json.dumps(o, ensure_ascii=False) + "\n")
+    n = len(out); cnt = lambda k: collections.Counter(o[k] for o in out)
+    src_simple = collections.Counter(o["source"].replace("partly ", "~") for o in out)
+    cands = sorted((o for o in out if o["gain"] > 0), key=lambda o: -o["gain"])
+    return {"project": project, "ref": c["ref"], "sha": c["sha"][:10], "components": n, "pages": len(pages),
+            "shell": len([o for o in out if o["shell"]]), "root": ", ".join(roots),
+            "bySource": dict(src_simple.most_common()), "byGrade": dict(cnt("grade").most_common()),
+            "byKind": dict(cnt("kind").most_common()), "patternCustom": sum(1 for o in out if o["kind"] == "pattern" and o["source"] in ("custom", "shadcn-style, edited")),
+            "swapCandidates": [{k: o[k] for k in ("name", "file", "category", "pages", "shell", "source", "grade", "why", "swapTo", "gain")} for o in cands[:25]]}
+
+projects = sys.argv[1:] or sorted(os.path.basename(p)[:-12] for p in glob.glob(f"{H}/inventory/*.census.json"))
+summary = {p: run(p) for p in projects}
+json.dump(summary, open(f"{H}/inventory/summary.json", "w"), ensure_ascii=False, indent=1)
+for p, s in summary.items():
+    print(f"\n== {p} @ {s['sha']}: {s['components']} components, {s['pages']} pages, shell draws {s['shell']} (root {s['root']})")
+    print("   source:", s["bySource"]); print("   grade: ", s["byGrade"]); print("   kind:  ", s["byKind"], "| patterns built custom:", s["patternCustom"])
+    for o in s["swapCandidates"][:12]:
+        print(f"   {o['gain']:5} {o['name'][:34]:34} {o['category'][:26]:26} p{o['pages']:<3}{'S' if o['shell'] else ' '} {o['grade']:5} {o['source'][:14]:14} -> {o['swapTo']}")

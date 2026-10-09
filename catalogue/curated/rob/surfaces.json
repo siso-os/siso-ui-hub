@@ -1,0 +1,685 @@
+{
+ "_readme": "Rob board manifest. One surface = one page of the models app to rob UI for. level1 = 21st corpus query (lanes + regex over name/desc/tags, ranked by usage, local previews). level2 = shadcn official (view iframes for blocks, docs links for components). level3 = GitHub repos (seeded from the scouts; demo iframes when the site allows). Picks land in rob/votes.json as { '<surface>': { '<url>': { pick: 'yes'|'no', note, at } } }.",
+ "surfaces": [
+  {
+   "id": "sessions",
+   "title": "Sessions",
+   "ask": "Calendar of past sessions \u2192 day list \u2192 per-session detail (tokens, tips, viewers, transcript, timeline). Shaan: 'the sessions thing is terrible\u2026 could be robbed'.",
+   "level1": {
+    "lanes": [
+     "calendar-flow",
+     "dashboard",
+     "charts",
+     "cards"
+    ],
+    "match": "calendar|timeline|schedul|history|activity|session|log\\b|table|analytic|stats|event|agenda|date|day|week|month|report|kpi|metric"
+   },
+   "level2": {
+    "blocks": [
+     "dashboard-01",
+     "sidebar-07",
+     "sidebar-08",
+     "chart-area-interactive",
+     "chart-bar-interactive",
+     "chart-line-interactive"
+    ],
+    "components": [
+     "calendar",
+     "table",
+     "data-table",
+     "tabs",
+     "sheet",
+     "drawer",
+     "card",
+     "chart"
+    ]
+   },
+   "level3": [
+    {
+     "name": "Meetily (Fathom alternative)",
+     "url": "https://github.com/Zackriya-Solutions/meetily",
+     "demo": "https://meetily.ai",
+     "noframe": true,
+     "image": "/rob/now/meetily-home.png",
+     "license": "MIT \u00b7 30.6k\u2605",
+     "stack": "Tauri \u00b7 Next 14 \u00b7 React 18 \u00b7 TW 3.4 \u00b7 shadcn (22 ui comps)",
+     "rob": "the whole Sessions shape: meetings list sidebar \u2192 meeting page with summary, transcript, speakers, timestamps; export",
+     "why": "the 'manages sessions' app you pointed at, and it is shadcn",
+     "risk": "TW3 / React 18: comps port, layout copies"
+    },
+    {
+     "name": "talky (meeting notes)",
+     "url": "https://github.com/itskhalil/talky",
+     "image": "/rob/now/talky-04-transcript.png",
+     "license": "MIT",
+     "stack": "Tauri \u00b7 React 18 \u00b7 Vite 6 \u00b7 TW 4 \u00b7 zustand \u00b7 lucide",
+     "rob": "transcript view with live timestamps, notes beside transcript, ask-questions panel",
+     "why": "same shape as Meetily on Tailwind 4 and Vite",
+     "risk": "16\u2605, young"
+    },
+    {
+     "name": "Screenpipe timeline",
+     "url": "https://github.com/mediar-ai/screenpipe",
+     "demo": "https://screenpipe.com",
+     "noframe": true,
+     "license": "mixed (NOASSERTION) \u00b7 21k\u2605",
+     "stack": "Tauri \u00b7 Next 15 \u00b7 React 18 \u00b7 TW 3 \u00b7 shadcn",
+     "rob": "the day timeline of recordings: scrub through a day, frames + transcript at the cursor",
+     "why": "a timeline-first way to browse sessions",
+     "risk": "licence mixed; TW3"
+    },
+    {
+     "name": "HyperDX session replay",
+     "url": "https://github.com/hyperdxio/hyperdx",
+     "demo": "https://www.hyperdx.io/",
+     "noframe": true,
+     "image": "/rob/now/hyperdx-search.png",
+     "license": "MIT \u00b7 9.9k\u2605",
+     "stack": "React 19 \u00b7 Next 16 \u00b7 Mantine \u00b7 recharts",
+     "rob": "sessions list \u2192 session page: timeline scrubber, events rail beside the replay, filters",
+     "why": "list \u2192 detail \u2192 timeline is exactly our Sessions; MIT",
+     "risk": "Mantine, not shadcn: shape only"
+    },
+    {
+     "name": "OpenReplay",
+     "url": "https://github.com/openreplay/openreplay",
+     "demo": "https://openreplay.com",
+     "noframe": true,
+     "license": "ELv2-ish (NOASSERTION) \u00b7 12.8k\u2605",
+     "stack": "React 19 \u00b7 TW 4 \u00b7 antd \u00b7 recharts",
+     "rob": "session list with duration/events/metadata chips, session player with event timeline",
+     "why": "the most polished session list in OSS",
+     "risk": "licence; antd"
+    },
+    {
+     "name": "Talivia (session replay + revenue analytics)",
+     "url": "https://github.com/talivia-group/talivia",
+     "demo": "https://talivia.com",
+     "noframe": true,
+     "image": "/rob/now/site-talivia.png",
+     "license": "MIT \u00b7 2.4k\u2605",
+     "stack": "React 19 \u00b7 Next 16 \u00b7 lucide",
+     "rob": "analytics dashboard + session replay list, revenue-first cards (tokens = revenue)",
+     "why": "revenue-first analytics matches 'tokens per session'",
+     "risk": "no shadcn dir; Next"
+    },
+    {
+     "name": "shadcn dashboard-01 (Base UI)",
+     "url": "https://github.com/shadcn-ui/ui/tree/main/apps/v4/registry/bases/base/blocks/dashboard-01",
+     "demo": "https://ui.shadcn.com/view/new-york-v4/dashboard-01",
+     "license": "MIT",
+     "stack": "React 19 \u00b7 TW4 \u00b7 base-nova",
+     "rob": "data-table row \u2192 right Drawer with AreaChart, section-cards, chart-area-interactive",
+     "why": "already base-nova; the list\u2192drawer mechanism is exactly session list \u2192 detail",
+     "risk": "no calendar; dnd-kit + zod baggage"
+    },
+    {
+     "name": "Kiranism/next-shadcn-dashboard-starter",
+     "url": "https://github.com/Kiranism/next-shadcn-dashboard-starter",
+     "demo": "https://dub.sh/shadcn-dashboard",
+     "license": "MIT",
+     "stack": "Next 16 \u00b7 React 19 \u00b7 TW 4.2 \u00b7 Base UI",
+     "rob": "features/products tables + view page, overview stat cards",
+     "why": "Base UI, polished admin",
+     "risk": "Next app-router + nuqs"
+    },
+    {
+     "name": "origin-space/event-calendar (OriginUI)",
+     "url": "https://github.com/origin-space/event-calendar",
+     "demo": "https://full-calendar-steel.vercel.app",
+     "license": "MIT",
+     "stack": "Next 15 \u00b7 React 19 \u00b7 TW 4.1 \u00b7 Radix",
+     "rob": "agenda-view, month-view, event-dialog \u2192 the day picker + day list",
+     "why": "the calendar half of Sessions, done properly",
+     "risk": "Radix dialog \u2192 rewrap for base-nova"
+    },
+    {
+     "name": "evilrabbit/lifeline",
+     "url": "https://github.com/evilrabbit/lifeline",
+     "demo": "https://lifeline-evil-rabbit.vercel.app",
+     "license": "MIT",
+     "stack": "Next 16 \u00b7 React 19 \u00b7 TW4 \u00b7 Base UI",
+     "rob": "timeline \u2192 session highlights",
+     "why": "Base UI, shadcn registry, clean",
+     "risk": "Next-only demo"
+    },
+    {
+     "name": "satnaing/shadcn-admin",
+     "url": "https://github.com/satnaing/shadcn-admin",
+     "demo": "https://shadcn-admin.netlify.app",
+     "license": "MIT",
+     "stack": "Vite 8 \u00b7 React 19 \u00b7 TW 4.2 \u00b7 Radix",
+     "rob": "features/tasks table + mutate drawer + row actions",
+     "why": "Vite like us",
+     "risk": "Radix"
+    },
+    {
+     "name": "sadmann7/shadcn-table (tablecn)",
+     "url": "https://github.com/sadmann7/shadcn-table",
+     "demo": "https://tablecn.com",
+     "license": "MIT",
+     "stack": "Next 16 \u00b7 TW 4.3 \u00b7 Radix \u00b7 vaul",
+     "rob": "advanced-filter data table + row sheet",
+     "why": "best filterable table in the ecosystem",
+     "risk": "Radix, Next"
+    },
+    {
+     "name": "keenthemes/reui",
+     "url": "https://github.com/keenthemes/reui",
+     "demo": "https://reui.io",
+     "license": "MIT",
+     "stack": "Next 16 \u00b7 TW 4.3 \u00b7 base + radix",
+     "rob": "event-calendar, timeline, data-grid, gantt",
+     "why": "one library with all four pieces",
+     "risk": "those live only in the radix base",
+     "noframe": true
+    },
+    {
+     "name": "haydenbleasel/kibo",
+     "url": "https://github.com/haydenbleasel/kibo",
+     "demo": "https://www.kibo-ui.com",
+     "license": "MIT",
+     "stack": "React 19 \u00b7 Radix",
+     "rob": "calendar, list, table, relative-time",
+     "why": "composable blocks",
+     "risk": "Radix"
+    }
+   ]
+  },
+  {
+   "id": "overlays",
+   "title": "Overlay editor",
+   "ask": "Canvas on a 16:9 frame, draggable/resizable overlay elements, layers list, properties inspector, templates. Shaan: 'our overlay editor is so shit\u2026 just the way we've done it isn't good whatsoever'.",
+   "level1": {
+    "lanes": [
+     "longtail",
+     "dashboard",
+     "cards",
+     "nav",
+     "feedback"
+    ],
+    "match": "editor|canvas|layer|drag|resiz|overlay|inspector|propert|template|gallery|scene|design|studio|builder|panel|toolbar|palette|color|font|position|align"
+   },
+   "level2": {
+    "blocks": [
+     "sidebar-13",
+     "sidebar-14",
+     "sidebar-15",
+     "sidebar-16"
+    ],
+    "components": [
+     "resizable",
+     "slider",
+     "toggle-group",
+     "popover",
+     "color-picker",
+     "tabs",
+     "scroll-area",
+     "context-menu",
+     "collapsible",
+     "accordion"
+    ]
+   },
+   "level3": [
+    {
+     "name": "NoaCG Studio",
+     "url": "https://github.com/NoaCG/NoaCG-Studio",
+     "demo": "https://noacg.studio",
+     "noframe": true,
+     "image": "/rob/now/site-noacg-editor-2.png",
+     "license": "AGPL-3.0 (look, don't copy)",
+     "stack": "React 19 \u00b7 Vite 8 \u00b7 zustand",
+     "rob": "THE SHAPE: web app that creates/edits/previews HTML broadcast graphics (lower thirds, tickers, scoreboards) and exports to OBS / vMix / OGraf",
+     "why": "the closest thing to 'our overlay editor' that exists; fresh search on 'overlay'",
+     "risk": "AGPL: copy the flow and layout, write our own code"
+    },
+    {
+     "name": "TikFinity Overlay Editor (overlayed)",
+     "url": "https://github.com/BadWise/TikFinity-Overlay-Editor",
+     "demo": "https://overlayed.stromsv.xyz/",
+     "license": "none",
+     "stack": "HTML/JS",
+     "rob": "the layout mechanic: arrange multiple widgets on a 16:9 canvas, save presets, export a clean overlay URL for OBS",
+     "why": "exactly the 'arrange overlays and get a URL' job, for TikTok LIVE creators",
+     "risk": "unlicensed, plain JS, site was down when checked"
+    },
+    {
+     "name": "Streamlabs Desktop (overlay + widget editor)",
+     "url": "https://github.com/streamlabs/desktop",
+     "demo": "https://streamlabs.com/",
+     "noframe": true,
+     "image": "/rob/now/site-streamlabs.png",
+     "license": "GPL-3.0 (look, don't copy)",
+     "stack": "Electron \u00b7 React 17 \u00b7 Vue 2",
+     "rob": "the widget editor UX every streamer already knows: source list, canvas, per-widget settings drawer",
+     "why": "4.8k\u2605, the reference UX",
+     "risk": "GPL; old stack"
+    },
+    {
+     "name": "OGraf (EBU open HTML graphics standard) + ograf-devtool / ograf-server",
+     "url": "https://github.com/ebu/ograf",
+     "demo": "https://ograf-devtool.superfly.tv",
+     "license": "MIT",
+     "stack": "spec + JS tools",
+     "rob": "the overlay FORMAT: any OGraf graphic (lower third, ticker, alert) drops into our stream; devtool shows how a graphic is previewed/controlled",
+     "why": "a standard instead of our own format; ecosystem of graphics",
+     "risk": "we would still build the arrangement editor"
+    },
+    {
+     "name": "Eyevinn/ograf-editor",
+     "url": "https://github.com/Eyevinn/ograf-editor",
+     "license": "MIT",
+     "stack": "Vite",
+     "rob": "a small MIT OGraf editor to read for structure",
+     "why": "MIT and tiny",
+     "risk": "5\u2605, early"
+    },
+    {
+     "name": "fanfare (Streamlabs-style alerts & widgets suite)",
+     "url": "https://github.com/vingaming1113/fanfare",
+     "license": "MIT",
+     "stack": "Bun \u00b7 TypeScript \u00b7 websocket",
+     "rob": "alerts, chat box, goals, polls, tip page as self-hosted widgets with a dashboard",
+     "why": "the widget SET as a whole, MIT",
+     "risk": "0\u2605, fresh; Bun backend"
+    },
+    {
+     "name": "tiktok-live-overlay (overlay studio for OBS)",
+     "url": "https://github.com/ThangBaymau123/tiktok-live-overlay",
+     "license": "MIT",
+     "stack": "Node \u00b7 Fastify \u00b7 vanilla JS",
+     "rob": "multi-overlay dashboard with gamification (boss battle, quests, spotlight)",
+     "why": "gamified overlays for live gifting, MIT",
+     "risk": "vanilla JS, 2\u2605"
+    },
+    {
+     "name": "daybrush/moveable",
+     "url": "https://github.com/daybrush/moveable",
+     "demo": "https://daybrush.com/moveable/",
+     "license": "MIT",
+     "stack": "React wrapper",
+     "rob": "drag / resize / rotate / snap handles over our existing DOM overlays",
+     "why": "our overlays are React DOM already, not a canvas: this is the editor mechanic without a canvas library",
+     "risk": "last push 2024"
+    },
+    {
+     "name": "MrLightful/shadcn-tree-view",
+     "url": "https://github.com/MrLightful/shadcn-tree-view",
+     "license": "MIT",
+     "stack": "shadcn",
+     "rob": "layers panel",
+     "why": "the missing layers list",
+     "risk": "needs DnD glue"
+    },
+    {
+     "name": "sanidhyy/canva-clone",
+     "url": "https://github.com/sanidhyy/canva-clone",
+     "demo": "https://clone-canva.vercel.app",
+     "license": "MIT",
+     "stack": "React 19 \u00b7 Next 16 \u00b7 Fabric 7 \u00b7 shadcn",
+     "rob": "(rejected by Shaan 12 Sep: 'not good for the overlay editor') \u2014 inspector sidebar pattern only",
+     "why": "kept for the inspector pattern",
+     "risk": "a design tool, not an overlay tool"
+    }
+   ]
+  },
+  {
+   "id": "oracle-chat",
+   "title": "Ask Oracle (chat agent)",
+   "ask": "Ask Oracle must (from the tests on the lane): be silent by default; expand for a cue, thinking, or thread activity and collapse idle silence to the breathing glyph; erupt into the TIP state on a fresh tip and draft a say-this card (never for a stale or pre-session tip); admit one visible nudge, 45s global cooldown, six per ten minutes, stall nudge once per 12 min framed only as a forward idea; queue drafts behind a danger status; keep ONE voice (rest | thinking | tip); show \u22643 follow-up suggestions UNDER each answer that become the next turn, none while thinking, none without data (no chat suggestion without chat, no thank-you without a named fan); load a cue into the real composer; disable input/chips when autonomy is off; single-line prompts only; persist the thread per model per day, prune 48h, isolate threads per session id; answer locally from real figures when the IPC is missing and say so; never dead-end. Shaan: 'we should just have a chat agent that we can talk to and we add all of this stuff on top of the base' + orb (ahmedmayara ai-thinking-orb) and voice state (ia-siri-chat) from the corpus.",
+   "level1": {
+    "lanes": [
+     "ai-chat"
+    ],
+    "match": "chat|message|assistant|ai|prompt|conversation|thread|compose|input|stream|typing|thinking"
+   },
+   "level2": {
+    "blocks": [],
+    "components": [
+     "textarea",
+     "scroll-area",
+     "avatar",
+     "badge",
+     "skeleton",
+     "tooltip",
+     "command",
+     "kbd"
+    ]
+   },
+   "level3": [
+    {
+     "name": "assistant-ui",
+     "url": "https://github.com/assistant-ui/assistant-ui",
+     "demo": "https://www.assistant-ui.com",
+     "noframe": true,
+     "image": "/rob/now/site-assistant-ui.png",
+     "license": "MIT \u00b7 12.1k\u2605",
+     "stack": "React 18/19 \u00b7 radix-ui \u00b7 zustand \u00b7 shadcn-style styled kit",
+     "rob": "Thread / Message / Composer / ActionBar primitives; streaming, auto-scroll, retry, cancel, markdown, in-thread suggestions, tool UI; AssistantModal floating panel",
+     "why": "LocalRuntime = one adapter over our modelAssistantAsk IPC; the runtime owns everything our hook hand-rolls",
+     "risk": "v0.15 API churn; Radix flavour vs our base-nova"
+    },
+    {
+     "name": "shadcn/ui chatbot-template (official)",
+     "url": "https://github.com/shadcn-ui/chatbot-template",
+     "license": "MIT \u00b7 935\u2605",
+     "stack": "Next 16 \u00b7 React 19 \u00b7 TW4 \u00b7 @base-ui/react \u00b7 shadcn 4 \u00b7 AI SDK 7 \u00b7 react-markdown",
+     "rob": "the official minimal chat: message list, composer, streaming with AI SDK, markdown; already Base UI like us",
+     "why": "same primitives we run (base-nova), zero styling debt",
+     "risk": "tied to AI SDK useChat transport; Next"
+    },
+    {
+     "name": "prompt-kit",
+     "url": "https://github.com/ibelick/prompt-kit",
+     "demo": "https://www.prompt-kit.com",
+     "image": "/rob/now/site-prompt-kit.png",
+     "license": "MIT \u00b7 3k\u2605",
+     "stack": "React 19 \u00b7 TW 4.1 \u00b7 shadcn registry \u00b7 use-stick-to-bottom \u00b7 motion",
+     "rob": "prompt-input, message, chat-container, prompt-suggestion chips, loader, reasoning, tool, markdown \u2014 dumb styled parts",
+     "why": "prettiest parts; drop under our existing useModelAssistant state",
+     "risk": "no runtime: retry/stream stay ours; last push Mar 2026"
+    },
+    {
+     "name": "Vercel AI Elements",
+     "url": "https://github.com/vercel/ai-elements",
+     "demo": "https://elements.ai-sdk.dev",
+     "image": "/rob/now/site-ai-elements.png",
+     "license": "Apache-2 \u00b7 2.4k\u2605",
+     "stack": "React 19 \u00b7 TW4 \u00b7 shadcn registry \u00b7 streamdown",
+     "rob": "conversation, message, prompt-input, suggestion, reasoning, tool, sources",
+     "why": "Vercel polish; suggestion chips exactly like Oracle's in-thread buttons",
+     "risk": "UIMessage types from ai v6; heavy"
+    },
+    {
+     "name": "Lobe UI",
+     "url": "https://github.com/lobehub/lobe-ui",
+     "demo": "https://ui.lobehub.com",
+     "image": "/rob/now/site-lobe-ui.png",
+     "license": "MIT \u00b7 2.2k\u2605",
+     "stack": "React 19 \u00b7 @base-ui/react \u00b7 antd + antd-style \u00b7 motion",
+     "rob": "ChatList, ChatItem, EditableMessage, Markdown, Highlighter, ThemeProvider \u2014 the LobeChat look",
+     "why": "the most beautiful AIGC kit in OSS; Base UI under it",
+     "risk": "antd-style CSS-in-JS, its own theme system"
+    },
+    {
+     "name": "Ant Design X",
+     "url": "https://github.com/ant-design/x",
+     "demo": "https://x.ant.design",
+     "image": "/rob/now/site-antd-x.png",
+     "license": "MIT \u00b7 4.8k\u2605",
+     "stack": "antd 6 \u00b7 react-markdown",
+     "rob": "Bubble, Sender (composer with speech), Suggestion, Prompts, ThoughtChain, Welcome",
+     "why": "the widest set of AI-chat patterns incl. voice sender + thought chain",
+     "risk": "antd"
+    },
+    {
+     "name": "LangUI",
+     "url": "https://github.com/CommandCodeAI/langui",
+     "demo": "https://www.langui.dev/",
+     "image": "/rob/now/site-langui.png",
+     "license": "MIT \u00b7 3.1k\u2605",
+     "stack": "Tailwind 3 HTML snippets",
+     "rob": "copy-paste Tailwind blocks: chat bubbles, prompt containers, typing states, empty states",
+     "why": "pure markup, zero deps, beautiful",
+     "risk": "TW3, static; 2024"
+    },
+    {
+     "name": "neo-chat",
+     "url": "https://github.com/u14app/neo-chat",
+     "demo": "https://neo.u14.app",
+     "image": "/rob/now/site-neo-chat.png",
+     "license": "MIT \u00b7 1.8k\u2605",
+     "stack": "Next 16 \u00b7 React 19 \u00b7 TW 4.3 \u00b7 zustand \u00b7 react-markdown",
+     "rob": "a whole modern chat workspace (voice, memory, artifacts) on our stack",
+     "why": "the most current MIT chat app on React 19 + TW4",
+     "risk": "whole app; Next"
+    },
+    {
+     "name": "chatscope chat-ui-kit-react",
+     "url": "https://github.com/chatscope/chat-ui-kit-react",
+     "demo": "https://chatscope.io",
+     "image": "/rob/now/site-chatscope.png",
+     "license": "MIT \u00b7 1.8k\u2605",
+     "stack": "React \u00b7 own CSS",
+     "rob": "MessageList, MessageInput, TypingIndicator, ConversationList",
+     "why": "classic messenger kit",
+     "risk": "own CSS theme; not AI-shaped"
+    },
+    {
+     "name": "CopilotKit",
+     "url": "https://github.com/CopilotKit/CopilotKit",
+     "demo": "https://www.copilotkit.ai",
+     "noframe": true,
+     "license": "MIT \u00b7 37k\u2605",
+     "stack": "own CSS vars",
+     "rob": "CopilotPopup / CopilotSidebar shell, generative UI",
+     "why": "popup shape",
+     "risk": "runtime lock-in"
+    }
+   ]
+  },
+  {
+   "id": "camera-mic",
+   "title": "Camera & Mic",
+   "ask": "Device pickers, live level meters, preview, permission states, toggles. Shaan: 'camera mic is all right but the comps are a bit shit\u2026 you can't actually see the stuff'.",
+   "level1": {
+    "lanes": [
+     "feedback",
+     "atoms",
+     "dashboard",
+     "longtail"
+    ],
+    "match": "camera|video|mic|audio|device|permission|toggle|switch|slider|select|setting|level|meter|volume|record|preview|status|connect"
+   },
+   "level2": {
+    "blocks": [],
+    "components": [
+     "select",
+     "switch",
+     "slider",
+     "radio-group",
+     "item",
+     "field",
+     "progress",
+     "alert",
+     "empty",
+     "spinner"
+    ]
+   },
+   "level3": [
+    {
+     "name": "LiveKit PreJoin + MediaDeviceMenu",
+     "url": "https://github.com/livekit/components-js/blob/main/packages/react/src/prefabs/PreJoin.tsx",
+     "demo": "https://meet.livekit.io",
+     "license": "Apache-2.0",
+     "stack": "React 18+ \u00b7 plain CSS (lk-*)",
+     "rob": "usePreviewTracks hook, live preview, per-kind device menu, requestPermissions gate, persisted choices",
+     "why": "the logic is done and permissive; only the CSS is disposable",
+     "risk": "tied to livekit-client tracks; restyle from scratch"
+    },
+    {
+     "name": "Stream Video DeviceSettings (shape only)",
+     "url": "https://github.com/GetStream/stream-video-js/tree/main/packages/react-sdk/src/components/DeviceSettings",
+     "license": "PROPRIETARY",
+     "stack": "React 17\u201319",
+     "rob": "STRUCTURE: DeviceSelectorVideo/Audio/Output + AudioVolumeIndicator + SpeakerTest (setSinkId + test mp3)",
+     "why": "the cleanest four-part layout",
+     "risk": "cannot copy code; copy the shape"
+    },
+    {
+     "name": "100ms roomkit DeviceSettings + VBPicker",
+     "url": "https://github.com/100mslive/web-sdks/blob/main/packages/roomkit-react/src/Prebuilt/components/Settings/DeviceSettings.jsx",
+     "license": "MIT",
+     "stack": "React <19 \u00b7 Radix \u00b7 Stitches",
+     "rob": "camera/mic/speaker dropdowns, TestAudio, VirtualBackground picker (blur)",
+     "why": "MIT, has the blur picker",
+     "risk": "React 19 peer-dep block; Stitches"
+    },
+    {
+     "name": "Jitsi audio/video settings",
+     "url": "https://github.com/jitsi/jitsi-meet/tree/master/react/features/settings/components/web/audio",
+     "license": "Apache-2.0",
+     "stack": "React 19.2 \u00b7 MUI",
+     "rob": "MicrophoneEntry per-device live meters, SpeakerEntry test-click, VideoSettings thumbnail-per-camera",
+     "why": "per-device live meters is the 'you can actually see the stuff' answer",
+     "risk": "redux + lib-jitsi-meet coupling"
+    },
+    {
+     "name": "Element Call DeviceSelection + VideoPreview",
+     "url": "https://github.com/element-hq/element-call/blob/livekit/src/settings/DeviceSelection.tsx",
+     "license": "AGPL-3.0",
+     "stack": "React 19 \u00b7 Vite 8 \u00b7 LiveKit",
+     "rob": "radio-list device picker, hides when \u22641 device, preview tile",
+     "why": "pattern reference",
+     "risk": "AGPL \u2014 look, do not copy"
+    },
+    {
+     "name": "Daily hooks useDevices/usePermissions/useAudioLevel",
+     "url": "https://github.com/daily-co/daily-react/tree/main/src/hooks",
+     "license": "BSD-2",
+     "stack": "React 16\u201319 \u00b7 jotai",
+     "rob": "permission-state + level-meter contracts",
+     "why": "clean hook contracts",
+     "risk": "needs daily-js"
+    },
+    {
+     "name": "hirelytics media-device-selector",
+     "url": "https://github.com/sumantadotai/hirelytics.app/blob/main/src/components/interview/media-device-selector.tsx",
+     "license": "none",
+     "stack": "shadcn Select/Label/Button",
+     "rob": "shadcn-native picker with permission-first enumerate",
+     "why": "already shadcn",
+     "risk": "unlicensed; pattern only"
+    },
+    {
+     "name": "Cerebrium check page",
+     "url": "https://github.com/CerebriumAI/example-live-translation-room",
+     "license": "none",
+     "stack": "shadcn Select/Alert/Slider",
+     "rob": "typed error card {camera|microphone|permission|general}",
+     "why": "the permission-state card",
+     "risk": "unlicensed; pattern only"
+    }
+   ]
+  },
+  {
+   "id": "profile",
+   "title": "Profile (gamified)",
+   "ask": "Level bar, streak, stat tiles with sparklines, token leaderboard podium, heat map, achievements. Shaan: 'we have some good comps but surely there'll be 21st.dev stuff or GitHub repos which do it better'.",
+   "level1": {
+    "lanes": [
+     "dashboard",
+     "cards",
+     "charts",
+     "feedback",
+     "longtail"
+    ],
+    "match": "profile|leaderboard|achievement|badge|streak|level|xp|progress|stat|rank|gamif|reward|trophy|milestone|heatmap|contribution|sparkline|podium|score|avatar"
+   },
+   "level2": {
+    "blocks": [
+     "chart-radial-stacked",
+     "chart-bar-mixed",
+     "chart-area-stacked",
+     "chart-pie-donut-text"
+    ],
+    "components": [
+     "progress",
+     "avatar",
+     "badge",
+     "card",
+     "hover-card",
+     "chart",
+     "tooltip"
+    ]
+   },
+   "level3": [
+    {
+     "name": "trophyso/ui (whole kit)",
+     "url": "https://github.com/trophyso/ui",
+     "demo": "https://ui.trophy.so",
+     "license": "MIT \u00b7 142\u2605",
+     "stack": "React 19.2 \u00b7 TW 4.1 \u00b7 shadcn-style registry \u00b7 motion \u00b7 recharts",
+     "rob": "leaderboard-podium/rankings/card, streak-card/calendar/badge, achievement-grid/list/badge/unlocked, points-levels-timeline (= XP bar with milestones), points-chart",
+     "why": "the source of every trophyso pick Shaan already blessed; one visual family covers podium, streak, XP, achievements",
+     "risk": "no heatmap, no sparkline tile; streak-card pulls Button/Collapsible \u2192 base-nova equivalents"
+    },
+    {
+     "name": "trophyso/example-fitness-platform",
+     "url": "https://github.com/trophyso/example-fitness-platform",
+     "license": "MIT",
+     "stack": "Next 16 \u00b7 React 19.2 \u00b7 radix \u00b7 shadcn",
+     "rob": "PAGE LAYOUT: app/profile (avatar hero + stat cards + progress), app/leaderboards (tabbed), app/achievements",
+     "why": "a whole profile page laid out with the kit",
+     "risk": "wired to the Trophy API; strip the data layer"
+    },
+    {
+     "name": "Kibo UI contribution-graph",
+     "url": "https://github.com/haydenbleasel/kibo/tree/main/packages/contribution-graph",
+     "demo": "https://www.kibo-ui.com/components/contribution-graph",
+     "license": "MIT \u00b7 3.9k\u2605",
+     "stack": "React 19 \u00b7 TW4 \u00b7 shadcn \u00b7 date-fns",
+     "rob": "HEATMAP: ContributionGraph / Calendar / Block / Footer / Legend / TotalCount",
+     "why": "the missing heat map, composable",
+     "risk": "internal @repo/shadcn-ui import; copy-paste not npm"
+    },
+    {
+     "name": "grubersjoe/react-activity-calendar",
+     "url": "https://github.com/grubersjoe/react-activity-calendar",
+     "demo": "https://grubersjoe.github.io/react-activity-calendar/",
+     "license": "MIT \u00b7 592\u2605",
+     "stack": "React 18/19 \u00b7 date-fns \u00b7 floating-ui",
+     "rob": "heatmap fallback",
+     "why": "if the Kibo copy is awkward",
+     "risk": "own theming, not Tailwind"
+    },
+    {
+     "name": "shadcn v4 charts (sparkline)",
+     "url": "https://github.com/shadcn-ui/ui/tree/main/apps/v4/registry/new-york-v4/charts",
+     "demo": "https://ui.shadcn.com/charts/line",
+     "license": "MIT",
+     "stack": "React 19 \u00b7 recharts",
+     "rob": "chart-line-default / chart-area-step stripped to a 40px sparkline for stat tiles",
+     "why": "official",
+     "risk": "recharts not installed in the model app; local SessionsTrendBand draws a trend already \u2014 reuse first"
+    },
+    {
+     "name": "mohannadofficial/duolingo-nextjs",
+     "url": "https://github.com/mohannadofficial/duolingo-nextjs",
+     "license": "MIT \u00b7 76\u2605",
+     "stack": "Next 14 \u00b7 React 18 \u00b7 TW3 \u00b7 shadcn",
+     "rob": "leaderboard rows + quests progress list (layout only)",
+     "why": "the Duolingo feel",
+     "risk": "TW3 / React 18"
+    }
+   ]
+  },
+  {
+   "id": "hud-chat-card",
+   "title": "HUD chat card + top nav",
+   "ask": "The floating glass chat card, its tab strip, the goal bar, Up Next. Shaan: 'the top nav just needs to be nicer'.",
+   "level1": {
+    "lanes": [
+     "ai-chat",
+     "cards",
+     "nav"
+    ],
+    "match": "chat|message|feed|comment|glass|float|panel|tab|nav|menu|dock|toolbar|segment|pill|bar|header|live|stream"
+   },
+   "level2": {
+    "blocks": [],
+    "components": [
+     "tabs",
+     "navigation-menu",
+     "menubar",
+     "toggle-group",
+     "scroll-area",
+     "card",
+     "separator"
+    ]
+   },
+   "level3": []
+  }
+ ],
+ "exclude": "hero|landing|footer|pricing|testimonial|marquee|shimmer|shader|cta|newsletter|logo|faq|team-section|feature-section|bento|cursor|spotlight|beam|particle|aurora|globe|3d|parallax|typewriter|sparkle|confetti|glitch|scroll-expansion|text-(reveal|effect|animate)|hover-(border|card)"
+}

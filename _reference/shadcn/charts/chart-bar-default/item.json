@@ -1,0 +1,12 @@
+{
+ "name": "chart-bar-default",
+ "type": "registry:block",
+ "description": null,
+ "registryDependencies": [
+  "card",
+  "chart"
+ ],
+ "files": [
+  "charts/chart-bar-default.tsx"
+ ]
+}

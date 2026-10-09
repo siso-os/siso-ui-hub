@@ -1,0 +1,767 @@
+{
+ "_about": "SISO's UI taxonomy: group/category, the keyword rules bin/categorise uses (first match wins, in this order), how many library items fall in each, and the pick. Hand overrides: sources/overrides.json.",
+ "categories": [
+  {
+   "category": "ai-agent",
+   "group": "ai-agent",
+   "match": [
+    "orb|thinking|reasoning|agent|tool-?call|ai-?(response|chat|editor|agent)|prompt|composer|chat-?input|conversation|streaming|citation|plan-card|image-generation|llm|voice|eleven"
+   ],
+   "items": 49,
+   "pick": null
+  },
+  {
+   "category": "overlays/hover-card",
+   "group": "overlays",
+   "match": [
+    "hover-?card|preview-?(card|link)|link-?preview|peek"
+   ],
+   "items": 5,
+   "pick": "arc:hover-card"
+  },
+  {
+   "category": "overlays/tooltip",
+   "group": "overlays",
+   "match": [
+    "tooltip"
+   ],
+   "items": 8,
+   "pick": "arc:tooltip"
+  },
+  {
+   "category": "overlays/popover",
+   "group": "overlays",
+   "match": [
+    "popover|callout"
+   ],
+   "items": 5,
+   "pick": "arc:popover"
+  },
+  {
+   "category": "overlays/context-menu",
+   "group": "overlays",
+   "match": [
+    "context-?menu"
+   ],
+   "items": 3,
+   "pick": null
+  },
+  {
+   "category": "overlays/dialog",
+   "group": "overlays",
+   "match": [
+    "alert-?dialog|dialog|modal"
+   ],
+   "items": 8,
+   "pick": "arc:dialog"
+  },
+  {
+   "category": "overlays/sheet",
+   "group": "overlays",
+   "match": [
+    "drawer|sheet|bottom-?sheet"
+   ],
+   "items": 15,
+   "pick": "arc:drawer"
+  },
+  {
+   "category": "overlays/toast",
+   "group": "overlays",
+   "match": [
+    "toast|snackbar|notification|sonner"
+   ],
+   "items": 25,
+   "pick": "arc:toast"
+  },
+  {
+   "category": "overlays/lightbox",
+   "group": "overlays",
+   "match": [
+    "lightbox"
+   ],
+   "items": 2,
+   "pick": null
+  },
+  {
+   "category": "overlays/alert-banner",
+   "group": "overlays",
+   "match": [
+    "\\balert\\b|banner"
+   ],
+   "items": 4,
+   "pick": null
+  },
+  {
+   "category": "navigation/command-palette",
+   "group": "navigation",
+   "match": [
+    "command|kbar|cmdk|spotlight"
+   ],
+   "items": 16,
+   "pick": "arc:command-palette"
+  },
+  {
+   "category": "navigation/breadcrumb",
+   "group": "navigation",
+   "match": [
+    "breadcrumb"
+   ],
+   "items": 4,
+   "pick": "arc:breadcrumb"
+  },
+  {
+   "category": "navigation/tabs",
+   "group": "navigation",
+   "match": [
+    "tabs?\\b|tab-"
+   ],
+   "items": 12,
+   "pick": "arc:tabs"
+  },
+  {
+   "category": "navigation/sidebar",
+   "group": "navigation",
+   "match": [
+    "sidebar|side-?nav|rail"
+   ],
+   "items": 12,
+   "pick": null
+  },
+  {
+   "category": "navigation/dock",
+   "group": "navigation",
+   "match": [
+    "dock"
+   ],
+   "items": 11,
+   "pick": null
+  },
+  {
+   "category": "navigation/pagination",
+   "group": "navigation",
+   "match": [
+    "pagination|pager"
+   ],
+   "items": 5,
+   "pick": null
+  },
+  {
+   "category": "navigation/wizard-steps",
+   "group": "navigation",
+   "match": [
+    "stepper|steps|wizard|onboarding"
+   ],
+   "items": 4,
+   "pick": null
+  },
+  {
+   "category": "navigation/table-of-contents",
+   "group": "navigation",
+   "match": [
+    "table-of-contents|\\btoc\\b"
+   ],
+   "items": 0,
+   "pick": null
+  },
+  {
+   "category": "navigation/top-nav",
+   "group": "navigation",
+   "match": [
+    "menubar|navigation-?menu|navbar|nav-|top-?nav|header"
+   ],
+   "items": 13,
+   "pick": null
+  },
+  {
+   "category": "navigation/menu",
+   "group": "navigation",
+   "match": [
+    "menu|dropdown"
+   ],
+   "items": 18,
+   "pick": null
+  },
+  {
+   "category": "data-display/table",
+   "group": "data-display",
+   "match": [
+    "data-?grid|data-?table|\\btable\\b|spreadsheet"
+   ],
+   "items": 23,
+   "pick": "arc:sortable-data-table"
+  },
+  {
+   "category": "data-display/timeline",
+   "group": "data-display",
+   "match": [
+    "timeline|activity|feed|changelog"
+   ],
+   "items": 22,
+   "pick": "arc:timeline"
+  },
+  {
+   "category": "data-display/kanban",
+   "group": "data-display",
+   "match": [
+    "kanban|board"
+   ],
+   "items": 10,
+   "pick": null
+  },
+  {
+   "category": "data-display/calendar",
+   "group": "data-display",
+   "match": [
+    "event-?calendar|schedule|agenda"
+   ],
+   "items": 14,
+   "pick": null
+  },
+  {
+   "category": "data-display/tree",
+   "group": "data-display",
+   "match": [
+    "tree"
+   ],
+   "items": 2,
+   "pick": "arc:tree-view"
+  },
+  {
+   "category": "data-display/accordion",
+   "group": "data-display",
+   "match": [
+    "accordion|collapsible|disclosure|faq"
+   ],
+   "items": 15,
+   "pick": null
+  },
+  {
+   "category": "data-display/code-block",
+   "group": "data-display",
+   "match": [
+    "code-?block|code|snippet|syntax"
+   ],
+   "items": 7,
+   "pick": null
+  },
+  {
+   "category": "data-display/json-viewer",
+   "group": "data-display",
+   "match": [
+    "json"
+   ],
+   "items": 1,
+   "pick": null
+  },
+  {
+   "category": "data-display/diff",
+   "group": "data-display",
+   "match": [
+    "diff"
+   ],
+   "items": 3,
+   "pick": null
+  },
+  {
+   "category": "data-display/chat-thread",
+   "group": "data-display",
+   "match": [
+    "comment|thread|chat"
+   ],
+   "items": 6,
+   "pick": "arc:chat-thread"
+  },
+  {
+   "category": "data-display/avatar",
+   "group": "data-display",
+   "match": [
+    "avatar|face|people|team"
+   ],
+   "items": 25,
+   "pick": "arc:avatar"
+  },
+  {
+   "category": "data-display/badge",
+   "group": "data-display",
+   "match": [
+    "badge|chip|\\btag\\b|pill|label-?badge"
+   ],
+   "items": 29,
+   "pick": null
+  },
+  {
+   "category": "data-display/stat",
+   "group": "data-display",
+   "match": [
+    "stat|kpi|metric|number-?card|counter-?card"
+   ],
+   "items": 25,
+   "pick": "arc:metric-card"
+  },
+  {
+   "category": "data-display/empty-state",
+   "group": "data-display",
+   "match": [
+    "empty"
+   ],
+   "items": 3,
+   "pick": "arc:empty-state"
+  },
+  {
+   "category": "data-viz/chart",
+   "group": "data-viz",
+   "match": [
+    "chart|graph|bar|sparkline|heatmap|github-activity|contribution"
+   ],
+   "items": 40,
+   "pick": null
+  },
+  {
+   "category": "data-viz/gauge",
+   "group": "data-viz",
+   "match": [
+    "gauge|meter|dial"
+   ],
+   "items": 13,
+   "pick": null
+  },
+  {
+   "category": "data-viz/progress-bar",
+   "group": "data-viz",
+   "match": [
+    "progress"
+   ],
+   "items": 11,
+   "pick": null
+  },
+  {
+   "category": "data-viz/map",
+   "group": "data-viz",
+   "match": [
+    "map|route"
+   ],
+   "items": 5,
+   "pick": null
+  },
+  {
+   "category": "status/loader",
+   "group": "status",
+   "match": [
+    "spinner|loader|loading"
+   ],
+   "items": 12,
+   "pick": "arc:text-shimmer"
+  },
+  {
+   "category": "status/skeleton",
+   "group": "status",
+   "match": [
+    "skeleton|shimmer"
+   ],
+   "items": 9,
+   "pick": "arc:skeleton"
+  },
+  {
+   "category": "status/status-dot",
+   "group": "status",
+   "match": [
+    "status|presence|online|indicator|pulse"
+   ],
+   "items": 6,
+   "pick": null
+  },
+  {
+   "category": "inputs/date-range",
+   "group": "inputs",
+   "match": [
+    "date-?range|range-?picker"
+   ],
+   "items": 3,
+   "pick": "arc:date-range-picker"
+  },
+  {
+   "category": "inputs/date-picker",
+   "group": "inputs",
+   "match": [
+    "date|calendar|day-?picker"
+   ],
+   "items": 20,
+   "pick": "arc:date-picker"
+  },
+  {
+   "category": "inputs/time-picker",
+   "group": "inputs",
+   "match": [
+    "time"
+   ],
+   "items": 10,
+   "pick": null
+  },
+  {
+   "category": "inputs/color-picker",
+   "group": "inputs",
+   "match": [
+    "color|palette|gradient|hue"
+   ],
+   "items": 18,
+   "pick": null
+  },
+  {
+   "category": "inputs/file-upload",
+   "group": "inputs",
+   "match": [
+    "upload|dropzone|file"
+   ],
+   "items": 17,
+   "pick": null
+  },
+  {
+   "category": "inputs/otp-input",
+   "group": "inputs",
+   "match": [
+    "otp|one-time|pin-?input"
+   ],
+   "items": 7,
+   "pick": null
+  },
+  {
+   "category": "inputs/slider",
+   "group": "inputs",
+   "match": [
+    "slider|range|scrub"
+   ],
+   "items": 17,
+   "pick": "arc:slider"
+  },
+  {
+   "category": "inputs/combobox",
+   "group": "inputs",
+   "match": [
+    "combobox|autocomplete|mention"
+   ],
+   "items": 6,
+   "pick": null
+  },
+  {
+   "category": "inputs/tag-input",
+   "group": "inputs",
+   "match": [
+    "multi-?select|tag-?input|tags-?input"
+   ],
+   "items": 2,
+   "pick": null
+  },
+  {
+   "category": "inputs/select",
+   "group": "inputs",
+   "match": [
+    "select|picker|listbox"
+   ],
+   "items": 21,
+   "pick": null
+  },
+  {
+   "category": "inputs/search",
+   "group": "inputs",
+   "match": [
+    "search"
+   ],
+   "items": 8,
+   "pick": null
+  },
+  {
+   "category": "inputs/textarea",
+   "group": "inputs",
+   "match": [
+    "textarea|editor|rich-?text"
+   ],
+   "items": 13,
+   "pick": null
+  },
+  {
+   "category": "inputs/checkbox",
+   "group": "inputs",
+   "match": [
+    "checkbox"
+   ],
+   "items": 8,
+   "pick": null
+  },
+  {
+   "category": "inputs/radio",
+   "group": "inputs",
+   "match": [
+    "radio"
+   ],
+   "items": 5,
+   "pick": null
+  },
+  {
+   "category": "inputs/number-input",
+   "group": "inputs",
+   "match": [
+    "number-?(field|input)|stepper-?input|quantity"
+   ],
+   "items": 2,
+   "pick": null
+  },
+  {
+   "category": "inputs/rating",
+   "group": "inputs",
+   "match": [
+    "rating|stars?\\b"
+   ],
+   "items": 6,
+   "pick": null
+  },
+  {
+   "category": "inputs/form-field",
+   "group": "inputs",
+   "match": [
+    "form|field|fieldset|input|label|login|sign-?in|sign-?up|password|auth"
+   ],
+   "items": 58,
+   "pick": null
+  },
+  {
+   "category": "actions/switch",
+   "group": "actions",
+   "match": [
+    "switch|toggle"
+   ],
+   "items": 32,
+   "pick": "arc:switch"
+  },
+  {
+   "category": "actions/segmented-control",
+   "group": "actions",
+   "match": [
+    "segment"
+   ],
+   "items": 3,
+   "pick": null
+  },
+  {
+   "category": "actions/copy-button",
+   "group": "actions",
+   "match": [
+    "copy|clipboard"
+   ],
+   "items": 4,
+   "pick": null
+  },
+  {
+   "category": "actions/button",
+   "group": "actions",
+   "match": [
+    "button|btn|cta|like|bookmark|hold|press|confirm"
+   ],
+   "items": 70,
+   "pick": null
+  },
+  {
+   "category": "media/carousel",
+   "group": "media",
+   "match": [
+    "carousel|slideshow|marquee-?gallery"
+   ],
+   "items": 12,
+   "pick": null
+  },
+  {
+   "category": "media/image-compare",
+   "group": "media",
+   "match": [
+    "image-?compare|before-?after|compare"
+   ],
+   "items": 4,
+   "pick": null
+  },
+  {
+   "category": "media/gallery",
+   "group": "media",
+   "match": [
+    "gallery|masonry|photo|image"
+   ],
+   "items": 16,
+   "pick": null
+  },
+  {
+   "category": "media/card-stack",
+   "group": "media",
+   "match": [
+    "card-?stack|stack|deck|swipe"
+   ],
+   "items": 23,
+   "pick": null
+  },
+  {
+   "category": "media/player",
+   "group": "media",
+   "match": [
+    "video|player|audio|music|sound"
+   ],
+   "items": 10,
+   "pick": null
+  },
+  {
+   "category": "layout/bento-grid",
+   "group": "layout",
+   "match": [
+    "bento"
+   ],
+   "items": 4,
+   "pick": null
+  },
+  {
+   "category": "layout/split-pane",
+   "group": "layout",
+   "match": [
+    "resizable|split|panel"
+   ],
+   "items": 9,
+   "pick": null
+  },
+  {
+   "category": "layout/scroll-area",
+   "group": "layout",
+   "match": [
+    "scroll-?area|scroll"
+   ],
+   "items": 14,
+   "pick": null
+  },
+  {
+   "category": "layout/page-shell",
+   "group": "layout",
+   "match": [
+    "dashboard|workspace|shell|layout|grid|section|template"
+   ],
+   "items": 16,
+   "pick": null
+  },
+  {
+   "category": "flows/settings",
+   "group": "flows",
+   "match": [
+    "settings"
+   ],
+   "items": 3,
+   "pick": null
+  },
+  {
+   "category": "marketing",
+   "group": "marketing",
+   "match": [
+    "hero|feature|pricing|testimonial|logo|footer|landing|cta"
+   ],
+   "items": 11,
+   "pick": null
+  },
+  {
+   "category": "motion/text-effect",
+   "group": "motion",
+   "match": [
+    "text|type|word|letter|glitch|scramble|morph|reveal|blur"
+   ],
+   "items": 39,
+   "pick": null
+  },
+  {
+   "category": "motion/number-ticker",
+   "group": "motion",
+   "match": [
+    "number|ticker|count|odometer|clock"
+   ],
+   "items": 15,
+   "pick": null
+  },
+  {
+   "category": "motion/background",
+   "group": "motion",
+   "match": [
+    "shader|background|aurora|gradient|mesh|noise|dither|particles|glow|beam|dots|halftone|silk|fluid|liquid|goo"
+   ],
+   "items": 51,
+   "pick": null
+  },
+  {
+   "category": "motion/cursor",
+   "group": "motion",
+   "match": [
+    "cursor|magnetic|pointer|mouse"
+   ],
+   "items": 5,
+   "pick": null
+  },
+  {
+   "category": "motion/tilt-3d",
+   "group": "motion",
+   "match": [
+    "tilt|3d|parallax|flip|book|fold"
+   ],
+   "items": 16,
+   "pick": null
+  },
+  {
+   "category": "data-display/card",
+   "group": "data-display",
+   "match": [
+    "card"
+   ],
+   "items": 23,
+   "pick": null
+  },
+  {
+   "category": "data-display/list",
+   "group": "data-display",
+   "match": [
+    "list|row|item"
+   ],
+   "items": 15,
+   "pick": null
+  },
+  {
+   "category": "overlays/notifications",
+   "group": "overlays",
+   "match": [],
+   "items": 0,
+   "pick": "arc:notification-center"
+  },
+  {
+   "category": "inputs/period-filter",
+   "group": "inputs",
+   "match": [],
+   "items": 0,
+   "pick": "spaceui:components-spaceui-date-selector"
+  },
+  {
+   "category": "ai-agent/run",
+   "group": "ai-agent",
+   "match": [],
+   "items": 0,
+   "pick": "easyui:ai-agent-activity"
+  },
+  {
+   "category": "ai-agent/response",
+   "group": "ai-agent",
+   "match": [],
+   "items": 0,
+   "pick": "easyui:ai-response"
+  },
+  {
+   "category": "ai-agent/composer",
+   "group": "ai-agent",
+   "match": [],
+   "items": 0,
+   "pick": "uselayouts:prompt-box"
+  },
+  {
+   "category": "inputs/tuning-panel",
+   "group": "inputs",
+   "match": [],
+   "items": 0,
+   "pick": "toolcraft:settings-transfer"
+  }
+ ]
+}

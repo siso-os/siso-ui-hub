@@ -1,0 +1,23 @@
+{
+ "name": "login-03",
+ "type": "registry:block",
+ "description": "A login page with a muted background color.",
+ "categories": [
+  "authentication",
+  "login"
+ ],
+ "dependencies": [
+  "cn"
+ ],
+ "registryDependencies": [
+  "button",
+  "card",
+  "input",
+  "label",
+  "field"
+ ],
+ "files": [
+  "blocks/login-03/page.tsx",
+  "blocks/login-03/components/login-form.tsx"
+ ]
+}

@@ -1,0 +1,16 @@
+{
+ "name": "button",
+ "type": "registry:ui",
+ "dependencies": [
+  "cn"
+ ],
+ "meta": {
+  "links": {
+   "docs": "https://ui.shadcn.com/docs/components/base/button",
+   "examples": "https://ui.shadcn.com/code/apps/v4/registry/bases/base/examples/button-example.tsx"
+  }
+ },
+ "files": [
+  "ui/button.tsx"
+ ]
+}

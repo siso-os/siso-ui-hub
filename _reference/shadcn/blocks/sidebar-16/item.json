@@ -1,0 +1,29 @@
+{
+ "name": "sidebar-16",
+ "type": "registry:block",
+ "description": "A sidebar with a sticky site header.",
+ "categories": [
+  "sidebar",
+  "dashboard"
+ ],
+ "registryDependencies": [
+  "sidebar",
+  "breadcrumb",
+  "separator",
+  "collapsible",
+  "dropdown-menu",
+  "avatar",
+  "button",
+  "label"
+ ],
+ "files": [
+  "blocks/sidebar-16/page.tsx",
+  "blocks/sidebar-16/components/app-sidebar.tsx",
+  "blocks/sidebar-16/components/nav-main.tsx",
+  "blocks/sidebar-16/components/nav-projects.tsx",
+  "blocks/sidebar-16/components/nav-secondary.tsx",
+  "blocks/sidebar-16/components/nav-user.tsx",
+  "blocks/sidebar-16/components/search-form.tsx",
+  "blocks/sidebar-16/components/site-header.tsx"
+ ]
+}

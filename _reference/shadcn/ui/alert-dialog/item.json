@@ -1,0 +1,20 @@
+{
+ "name": "alert-dialog",
+ "type": "registry:ui",
+ "dependencies": [
+  "cn"
+ ],
+ "registryDependencies": [
+  "button"
+ ],
+ "meta": {
+  "links": {
+   "docs": "https://ui.shadcn.com/docs/components/base/alert-dialog",
+   "examples": "https://ui.shadcn.com/code/apps/v4/registry/bases/base/examples/alert-dialog-example.tsx",
+   "api": "https://base-ui.com/react/components/alert-dialog.md"
+  }
+ },
+ "files": [
+  "ui/alert-dialog.tsx"
+ ]
+}

@@ -1,0 +1,98 @@
+#!/usr/bin/env python3
+"""shoot: headless screenshots through camofox (:9377), shared fairly by every UI-HUB research agent.
+
+  shoot OUT_DIR < list.tsv        # each line: URL<TAB>name[<TAB>scroll_px[<TAB>js run before the shot, e.g. open a popover]]
+  shoot OUT_DIR URL name [scroll_px]
+
+Writes OUT_DIR/<name>.jpg (1440x900 viewport, JPEG q55, max 1440 wide). Skips names that already exist.
+At most SLOTS pages render at once across ALL agents (mkdir locks in /tmp), so 11 agents never mean 11 tabs.
+Every tab it opens it closes. Never opens anything on screen. Exit 0 even on per-URL failure; read the log lines.
+"""
+import json, os, subprocess, sys, time, urllib.request, urllib.parse
+
+API = "http://localhost:9377"
+SLOTS = int(os.environ.get("SHOOT_SLOTS", "3"))
+WAIT = float(os.environ.get("SHOOT_WAIT", "2.5"))
+USER = "uihub"
+
+def call(method, path, body=None, timeout=45):
+    data = json.dumps(body).encode() if body is not None else None
+    req = urllib.request.Request(API + path, data=data, method=method, headers={"content-type": "application/json"})
+    with urllib.request.urlopen(req, timeout=timeout) as r:
+        raw = r.read()
+        ctype = r.headers.get("content-type", "")
+        return raw if "image" in ctype else (json.loads(raw) if raw else {})
+
+def acquire():
+    while True:
+        for i in range(SLOTS):
+            d = f"/tmp/uihub-shoot-slot-{i}"
+            try:
+                os.mkdir(d)
+                with open(d + "/pid", "w") as f: f.write(str(os.getpid()))
+                return i, d
+            except FileExistsError:
+                # stale lock: owner pid gone or lock older than 120 s
+                try:
+                    pid = int(open(d + "/pid").read().strip())
+                    os.kill(pid, 0)
+                    if time.time() - os.path.getmtime(d) > 120: raise ProcessLookupError
+                except (ProcessLookupError, ValueError, FileNotFoundError):
+                    try: os.rename(d, d + f".stale.{time.time_ns()}")
+                    except OSError: pass
+                except PermissionError: pass
+        time.sleep(0.7)
+
+def release(d):
+    try:
+        os.remove(d + "/pid")
+        os.rmdir(d)
+    except OSError: pass
+
+def shoot(out_dir, url, name, scroll=0, js=""):
+    out = os.path.join(out_dir, name + ".jpg")
+    if os.path.exists(out): return "skip"
+    slot, lock = acquire()
+    sess = f"slot{slot}"
+    tab = None
+    try:
+        tab = call("POST", "/tabs", {"userId": USER, "sessionKey": sess, "url": url})["tabId"]
+        q = urllib.parse.urlencode({"userId": USER})
+        try: call("POST", f"/tabs/{tab}/viewport", {"userId": USER, "width": 1440, "height": 900})
+        except Exception: pass
+        time.sleep(WAIT)
+        if scroll:
+            try: call("POST", f"/tabs/{tab}/evaluate", {"userId": USER, "expression": f"window.scrollTo(0,{int(scroll)})"})
+            except Exception: pass
+            time.sleep(1.0)
+        if js:
+            try: call("POST", f"/tabs/{tab}/evaluate", {"userId": USER, "expression": js})
+            except Exception: pass
+            time.sleep(1.4)
+        png = call("GET", f"/tabs/{tab}/screenshot?{q}")
+        if not isinstance(png, (bytes, bytearray)) or len(png) < 2000: return "fail:empty-shot"
+        tmp = f"/tmp/uihub-shot-{os.getpid()}.png"
+        with open(tmp, "wb") as f: f.write(png)
+        subprocess.run(["sips", "-s", "format", "jpeg", "-s", "formatOptions", "55", "-Z", "1440", tmp, "--out", out],
+                       check=True, capture_output=True)
+        os.remove(tmp)
+        return "ok"
+    except Exception as e:
+        return f"fail:{type(e).__name__}:{str(e)[:80]}"
+    finally:
+        if tab:
+            try: call("DELETE", f"/tabs/{tab}?" + urllib.parse.urlencode({"userId": USER}), timeout=15)
+            except Exception: pass
+        release(lock)
+
+def main():
+    if len(sys.argv) < 2: print(__doc__); sys.exit(64)
+    out_dir = sys.argv[1]; os.makedirs(out_dir, exist_ok=True)
+    rows = [sys.argv[2:5]] if len(sys.argv) >= 4 else [l.rstrip("\n").split("\t") for l in sys.stdin if l.strip()]
+    for r in rows:
+        url, name = r[0], r[1]
+        scroll = int(r[2]) if len(r) > 2 and r[2].strip().isdigit() else 0
+        js = r[3] if len(r) > 3 else ""
+        print(f"{shoot(out_dir, url, name, scroll, js)}\t{name}\t{url}", flush=True)
+
+if __name__ == "__main__": main()

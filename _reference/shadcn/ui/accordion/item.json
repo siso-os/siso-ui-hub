@@ -1,0 +1,17 @@
+{
+ "name": "accordion",
+ "type": "registry:ui",
+ "dependencies": [
+  "cn"
+ ],
+ "meta": {
+  "links": {
+   "docs": "https://ui.shadcn.com/docs/components/base/accordion",
+   "examples": "https://ui.shadcn.com/code/apps/v4/registry/bases/base/examples/accordion-example.tsx",
+   "api": "https://base-ui.com/react/components/accordion.md"
+  }
+ },
+ "files": [
+  "ui/accordion.tsx"
+ ]
+}

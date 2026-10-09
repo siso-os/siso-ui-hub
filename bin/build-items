@@ -1,0 +1,150 @@
+#!/usr/bin/env python3
+"""build-items: one row per component across the 11 libraries, from each library's OWN data (registry, catalog,
+llms.txt, repo facts the research left in sources/<lib>/raw). No model, no browser. Writes sources/items.jsonl and
+prints counts. Re-run any time; it only reads.
+
+Row: lib, id, name, title, desc, kind, tier, lib_cat, url, install, deps, files, facts{}, docs{}"""
+import json, os, re, glob, collections
+HUB = os.path.dirname(os.path.dirname(os.path.realpath(__file__)))  # the siso-ui-hub repo root
+W = os.path.expanduser("~/SISO_Workspace"); S = f"{HUB}/sources"; R = f"{W}/_reference/ui-libs"
+
+def J(p):
+    with open(p) as f: return json.load(f)
+def lst(v):  # registry fields sometimes arrive as python-repr strings
+    if isinstance(v, list): return v
+    if isinstance(v, str) and v.startswith("["):
+        try: return json.loads(v.replace("'", '"'))
+        except Exception: return re.findall(r"'([^']+)'", v)
+    return []
+def md_links(path, base=None):
+    out, sec = [], ""
+    for line in open(path, errors="ignore"):
+        if line.startswith("#"): sec = line.strip("# \n"); continue
+        m = re.match(r"\s*[-*]\s+\[([^\]]+)\]\(([^)]+)\)\s*:?\s*(.*)", line)
+        if m: out.append({"title": m[1], "url": m[2], "desc": m[3].strip(), "sec": sec}); continue
+        m = re.match(r"\s*[-*]\s+`(@[\w-]+/[\w-]+)`\s*[—-]\s*(.*)", line)
+        if m: out.append({"title": m[1].split("/")[1], "ns": m[1], "desc": m[2].strip(), "sec": sec})
+    return out
+rows = []
+def add(lib, name, **k):
+    r = {"lib": lib, "id": f"{lib}:{name}", "name": name, "title": k.get("title") or name, "desc": k.get("desc", ""),
+         "kind": k.get("kind", "component"), "tier": k.get("tier", "free"), "lib_cat": k.get("lib_cat", ""),
+         "url": k.get("url", ""), "install": k.get("install", ""), "deps": k.get("deps", []), "files": k.get("files", []),
+         "facts": k.get("facts", {}), "docs": k.get("docs", {})}
+    rows.append(r)
+
+# Arc: catalog.json is the richest source anywhere (tier, whenToUse, a11y, motion, aiNotes per item)
+def arc():
+    cat = J(f"{S}/arc/raw/arc-catalog.json")["items"]
+    reg = {i["name"]: i for i in J(f"{S}/arc/raw/arc-r_registry.json")["items"]}
+    for i in cat:
+        n = i["name"]; files = [f.get("path") for f in lst(reg.get(n, {}).get("files")) if isinstance(f, dict)] or \
+            [p for p in re.findall(r"'path': '([^']+)'", str(reg.get(n, {}).get("files", "")))]
+        add("arc", n, title=i.get("title"), desc=i.get("description", ""), kind=i.get("kind", "component"),
+            tier=i.get("tier", "free"), lib_cat=i.get("category", ""), url=i.get("docs", ""),
+            install=f"npx shadcn@latest add @uiarc/{n}", deps=lst(i.get("dependencies")), files=files,
+            docs={k: lst(i.get(k)) for k in ("whenToUse", "whenNotToUse", "accessibility", "motion", "responsive",
+                                             "performance", "aiNotes", "related")})
+
+# Space UI: registry minus its 832 demo variants and hook/lib plumbing
+def spaceui():
+    items = J(f"{S}/spaceui/raw/spaceui-r-registry.json")["items"]
+    sm = set(re.findall(r"<loc>\s*([^<]+?)\s*</loc>", open(glob.glob(f"{S}/spaceui/raw/*/sitemap.xml")[0]).read()))
+    for i in items:
+        n, t = i["name"], i.get("type", "").replace("registry:", "")
+        if n.startswith("demo-") or t not in ("ui", "component", "block"): continue
+        slug = re.sub(r"^(primitives|components-spaceui|components|block|template)-", "", n)
+        url = next((u for u in sm if u.rstrip("/").endswith("/" + slug)), "")
+        kind = {"ui": "primitive", "block": "template" if n.startswith("template-") else "block"}.get(t, "component")
+        add("spaceui", n, title=i.get("title"), desc=i.get("description", ""), kind=kind, lib_cat=",".join(i.get("categories") or []),
+            url=url, install=f"npx shadcn@latest add @spaceui/{n}",
+            deps=[d for d in (i.get("dependencies") or [])], files=[f.get("path") for f in i.get("files") or [] if isinstance(f, dict)],
+            facts={"registryDependencies": i.get("registryDependencies") or [], "updated": i.get("updatedAt", "")})
+
+# Kobra: registry index + llms.txt sections (Free = no account needed; the rest need a Kobra account)
+def kobra():
+    reg = J(f"{S}/kobra/raw/tmp-kobra-r/out-r_registry.json")["items"]
+    secs = {x["title"]: x["sec"] for x in md_links(f"{S}/kobra/raw/tmp-kobra-r/llms.txt")}
+    for i in reg:
+        n = i["name"]; sec = secs.get(n, "")
+        add("kobra", n, title=i.get("title"), desc=i.get("description", ""), kind="lib" if i.get("type") == "registry:lib" else "component",
+            tier="free" if sec.startswith("Free") else ("unknown" if not sec else "account"), lib_cat=sec,
+            url=f"https://kobra.systems/components/{n}", install=f"npx shadcn@latest add @kobra/{n}")
+
+# uselayouts: registry + the facts the stopped agent computed from the repo
+def uselayouts():
+    reg = J(f"{S}/uselayouts/raw/tmp-ul/probe_r_registry.json")["items"]
+    facts = J(f"{S}/uselayouts/raw/tmp-ul/facts.json")
+    for i in reg:
+        n = i["name"]
+        add("uselayouts", n, title=i.get("title"), desc=i.get("description", ""), url=f"https://uselayouts.com/docs/components/{n}",
+            install=f"npx shadcn@latest add @uselayouts/{n}", deps=lst(i.get("dependencies")),
+            files=re.findall(r"'path': '([^']+)'", str(i.get("files", ""))), facts=facts.get(n, {}))
+
+# Devigner: llms.txt lines carry category and install
+def devigner():
+    for x in md_links(f"{S}/devigner/raw/tmp-dev_r/llms.txt"):
+        if "/components/" not in x["url"]: continue
+        n = x["url"].rstrip("/").split("/")[-1]
+        cat = re.search(r"Category: ([^.]+)\.", x["desc"]); inst = re.search(r"Install: `([^`]+)`", x["desc"])
+        add("devigner", n, title=x["title"], desc=x["desc"].split(" Category:")[0], lib_cat=cat[1] if cat else "",
+            url=x["url"], install=inst[1] if inst else f"npx devignerui add {n}",
+            files=[os.path.relpath(p, f"{R}/devigner") for p in glob.glob(f"{R}/devigner/registry-extract/components/{n}*")])
+
+# Easy UI: site meta + repo facts
+def easyui():
+    meta = J(f"{S}/easyui/raw/tmp-easyui-work/meta.json"); facts = J(f"{S}/easyui/raw/tmp-easyui-work/facts.json")
+    def kebab(s): return re.sub(r"(?<!^)(?=[A-Z][a-z])|(?<=[a-z0-9])(?=[A-Z])", "-", s).lower()
+    for k, m in meta.items():
+        n = kebab(k).replace("a-i-", "ai-")
+        add("easyui", n, title=m.get("title"), desc=m.get("description", ""), lib_cat=m.get("category", ""),
+            url=f"https://www.easyui.site/components/{n}", install=f"npx shadcn@latest add https://www.easyui.site/r/{n}.json",
+            facts=facts.get(n, {}), files=[facts.get(n, {}).get("file")] if facts.get(n, {}).get("file") else [])
+
+# OpenSourceUI: showcase entries from the repo + static analysis by file
+def opensourceui():
+    ent = J(f"{S}/opensourceui/raw/tmp-osui/showcase_entries.json"); an = J(f"{S}/opensourceui/raw/tmp-osui/analysis.json")
+    for e in ent:
+        f = e.get("file", "")
+        add("opensourceui", e["slug"], title=e.get("title"), desc=e.get("description", ""), lib_cat=f.split("/")[1] if f.count("/") > 1 else "",
+            url=f"https://opensourceui.in/components/{e['slug']}", install=f"copy {f} from github.com/bidyut10/opensourceui",
+            files=[f], facts=an.get(f, {}), docs={"usage": e.get("usage", "")})
+
+# Feral UI: llms.txt Components section (interactive pieces, several are tools rather than components)
+def feralui():
+    for x in md_links(f"{S}/feralui/raw/tmp-feral/out_llms.txt"):
+        if x["sec"] != "Components": continue
+        n = x["url"].rstrip("/").split("/")[-1]
+        add("feralui", n, title=x["title"], desc=x["desc"], kind="toy", url=x["url"], install="see author repos (mortspace)")
+
+# Toolcraft: one long components page, one anchor per control
+def toolcraft():
+    html = open(f"{S}/toolcraft/raw/tmp-toolcraft-work/components.html", errors="ignore").read()
+    for n in dict.fromkeys(re.findall(r'id="([a-z0-9-]+)-title"', html)):
+        add("toolcraft", n, title=n.replace("-", " ").title(), url=f"https://toolcraft.sh/components#{n}",
+            install="copy from github.com/pixel-point/toolcraft (starter/)")
+
+# bencho: its registry lists 63 interaction blocks, each crediting the X post it recreates
+def bencho():
+    j = J(f"{S}/bencho/raw/tmp-bencho/registry.json")
+    for b in j["cD"]:
+        add("bencho", b["id"], title=b.get("name"), lib_cat=b.get("cat", ""), kind="interaction", url=f"https://bencho.dev/#{b['id']}",
+            install="site bundle only (no repo found)", facts={k: b.get(k) for k in ("fresh", "rich", "glass")})
+
+# Kinetics: 153 motion cards on one page; no licence in the repo
+def kinetics():
+    for c in J(f"{S}/kinetics/raw/tmp-kin/cards.json"):
+        n = re.sub(r"[^a-z0-9]+", "-", c["name"].lower()).strip("-")
+        add("kinetics", n, title=c["name"], desc=c.get("desc", ""), kind="motion", lib_cat=c.get("group", ""),
+            url="https://kinetics.colorion.co/", install="reference only (no licence)", facts={"param": c.get("param", "")})
+
+for fn in (arc, spaceui, kobra, uselayouts, devigner, easyui, opensourceui, feralui, toolcraft, bencho, kinetics):
+    try: fn()
+    except Exception as e: print(f"!! {fn.__name__}: {type(e).__name__}: {e}")
+with open(f"{S}/items.jsonl", "w") as f:
+    for r in rows: f.write(json.dumps(r, ensure_ascii=False) + "\n")
+c = collections.Counter((r["lib"], r["kind"], r["tier"]) for r in rows)
+by = collections.defaultdict(list)
+for (l, k, t), n in sorted(c.items()): by[l].append(f"{k}/{t}={n}")
+for l, v in by.items(): print(f"{l:13} {sum(int(x.split('=')[1]) for x in v):4}  {' '.join(v)}")
+print("total", len(rows))

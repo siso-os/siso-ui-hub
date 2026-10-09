@@ -1,0 +1,23 @@
+{
+ "name": "signup-04",
+ "type": "registry:block",
+ "description": "A signup page with form and image.",
+ "categories": [
+  "authentication",
+  "signup"
+ ],
+ "dependencies": [
+  "cn"
+ ],
+ "registryDependencies": [
+  "button",
+  "card",
+  "input",
+  "label",
+  "field"
+ ],
+ "files": [
+  "blocks/signup-04/page.tsx",
+  "blocks/signup-04/components/signup-form.tsx"
+ ]
+}

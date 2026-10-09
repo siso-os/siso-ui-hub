@@ -1,0 +1,17 @@
+{
+ "name": "hover-card",
+ "type": "registry:ui",
+ "dependencies": [
+  "cn"
+ ],
+ "meta": {
+  "links": {
+   "docs": "https://ui.shadcn.com/docs/components/base/hover-card",
+   "examples": "https://ui.shadcn.com/code/apps/v4/registry/bases/base/examples/hover-card-example.tsx",
+   "api": "https://base-ui.com/react/components/hover-card.md"
+  }
+ },
+ "files": [
+  "ui/hover-card.tsx"
+ ]
+}

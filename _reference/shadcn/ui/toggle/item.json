@@ -1,0 +1,17 @@
+{
+ "name": "toggle",
+ "type": "registry:ui",
+ "dependencies": [
+  "cn"
+ ],
+ "meta": {
+  "links": {
+   "docs": "https://ui.shadcn.com/docs/components/base/toggle",
+   "examples": "https://ui.shadcn.com/code/apps/v4/registry/bases/base/examples/toggle-example.tsx",
+   "api": "https://base-ui.com/react/components/toggle.md"
+  }
+ },
+ "files": [
+  "ui/toggle.tsx"
+ ]
+}

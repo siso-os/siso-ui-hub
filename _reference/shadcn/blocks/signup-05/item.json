@@ -1,0 +1,21 @@
+{
+ "name": "signup-05",
+ "type": "registry:block",
+ "description": "A simple signup form with social providers.",
+ "categories": [
+  "authentication",
+  "signup"
+ ],
+ "dependencies": [
+  "cn"
+ ],
+ "registryDependencies": [
+  "button",
+  "input",
+  "label"
+ ],
+ "files": [
+  "blocks/signup-05/page.tsx",
+  "blocks/signup-05/components/signup-form.tsx"
+ ]
+}

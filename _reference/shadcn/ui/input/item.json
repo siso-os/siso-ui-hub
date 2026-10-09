@@ -1,0 +1,16 @@
+{
+ "name": "input",
+ "type": "registry:ui",
+ "dependencies": [
+  "cn"
+ ],
+ "meta": {
+  "links": {
+   "docs": "https://ui.shadcn.com/docs/components/base/input",
+   "examples": "https://ui.shadcn.com/code/apps/v4/registry/bases/base/examples/input-example.tsx"
+  }
+ },
+ "files": [
+  "ui/input.tsx"
+ ]
+}

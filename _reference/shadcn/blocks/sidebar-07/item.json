@@ -1,0 +1,25 @@
+{
+ "name": "sidebar-07",
+ "type": "registry:block",
+ "description": "A sidebar that collapses to icons.",
+ "categories": [
+  "sidebar",
+  "dashboard"
+ ],
+ "registryDependencies": [
+  "sidebar",
+  "breadcrumb",
+  "separator",
+  "collapsible",
+  "dropdown-menu",
+  "avatar"
+ ],
+ "files": [
+  "blocks/sidebar-07/page.tsx",
+  "blocks/sidebar-07/components/app-sidebar.tsx",
+  "blocks/sidebar-07/components/nav-main.tsx",
+  "blocks/sidebar-07/components/nav-projects.tsx",
+  "blocks/sidebar-07/components/nav-user.tsx",
+  "blocks/sidebar-07/components/team-switcher.tsx"
+ ]
+}

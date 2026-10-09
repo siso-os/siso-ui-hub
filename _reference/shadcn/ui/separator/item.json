@@ -1,0 +1,17 @@
+{
+ "name": "separator",
+ "type": "registry:ui",
+ "dependencies": [
+  "cn"
+ ],
+ "meta": {
+  "links": {
+   "docs": "https://ui.shadcn.com/docs/components/base/separator",
+   "examples": "https://ui.shadcn.com/code/apps/v4/registry/bases/base/examples/separator-example.tsx",
+   "api": "https://base-ui.com/react/components/separator.md"
+  }
+ },
+ "files": [
+  "ui/separator.tsx"
+ ]
+}

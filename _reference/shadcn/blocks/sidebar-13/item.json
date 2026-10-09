@@ -1,0 +1,19 @@
+{
+ "name": "sidebar-13",
+ "type": "registry:block",
+ "description": "A sidebar in a dialog.",
+ "categories": [
+  "sidebar",
+  "dashboard"
+ ],
+ "registryDependencies": [
+  "sidebar",
+  "breadcrumb",
+  "button",
+  "dialog"
+ ],
+ "files": [
+  "blocks/sidebar-13/page.tsx",
+  "blocks/sidebar-13/components/settings-dialog.tsx"
+ ]
+}

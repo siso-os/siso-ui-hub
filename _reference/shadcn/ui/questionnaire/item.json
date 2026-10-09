@@ -1,0 +1,20 @@
+{
+ "name": "questionnaire",
+ "type": "registry:ui",
+ "dependencies": [
+  "cn",
+  "@shadcn/react"
+ ],
+ "registryDependencies": [
+  "button"
+ ],
+ "meta": {
+  "links": {
+   "docs": "https://ui.shadcn.com/docs/components/base/questionnaire",
+   "examples": "https://ui.shadcn.com/code/apps/v4/registry/bases/base/examples/questionnaire-example.tsx"
+  }
+ },
+ "files": [
+  "ui/questionnaire.tsx"
+ ]
+}

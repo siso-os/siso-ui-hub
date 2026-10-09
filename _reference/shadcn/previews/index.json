@@ -1,0 +1,766 @@
+[
+  {
+    "kind": "ui",
+    "name": "accordion",
+    "file": "ui/accordion.png",
+    "source": "https://ui.shadcn.com/docs/components/base/accordion",
+    "ok": true
+  },
+  {
+    "kind": "ui",
+    "name": "alert",
+    "file": "ui/alert.png",
+    "source": "https://ui.shadcn.com/docs/components/base/alert",
+    "ok": true
+  },
+  {
+    "kind": "ui",
+    "name": "alert-dialog",
+    "file": "ui/alert-dialog.png",
+    "source": "https://ui.shadcn.com/docs/components/base/alert-dialog",
+    "ok": true
+  },
+  {
+    "kind": "ui",
+    "name": "aspect-ratio",
+    "file": "ui/aspect-ratio.png",
+    "source": "https://ui.shadcn.com/docs/components/base/aspect-ratio",
+    "ok": true
+  },
+  {
+    "kind": "ui",
+    "name": "attachment",
+    "file": "ui/attachment.png",
+    "source": "https://ui.shadcn.com/docs/components/base/attachment",
+    "ok": true,
+    "note": "no meta.links.docs in item.json; guessed URL"
+  },
+  {
+    "kind": "ui",
+    "name": "avatar",
+    "file": "ui/avatar.png",
+    "source": "https://ui.shadcn.com/docs/components/base/avatar",
+    "ok": true
+  },
+  {
+    "kind": "ui",
+    "name": "badge",
+    "file": "ui/badge.png",
+    "source": "https://ui.shadcn.com/docs/components/base/badge",
+    "ok": true
+  },
+  {
+    "kind": "ui",
+    "name": "breadcrumb",
+    "file": "ui/breadcrumb.png",
+    "source": "https://ui.shadcn.com/docs/components/base/breadcrumb",
+    "ok": true
+  },
+  {
+    "kind": "ui",
+    "name": "bubble",
+    "file": "ui/bubble.png",
+    "source": "https://ui.shadcn.com/docs/components/base/bubble",
+    "ok": true,
+    "note": "no meta.links.docs in item.json; guessed URL"
+  },
+  {
+    "kind": "ui",
+    "name": "button",
+    "file": "ui/button.png",
+    "source": "https://ui.shadcn.com/docs/components/base/button",
+    "ok": true
+  },
+  {
+    "kind": "ui",
+    "name": "button-group",
+    "file": "ui/button-group.png",
+    "source": "https://ui.shadcn.com/docs/components/base/button-group",
+    "ok": true
+  },
+  {
+    "kind": "ui",
+    "name": "calendar",
+    "file": "ui/calendar.png",
+    "source": "https://ui.shadcn.com/docs/components/base/calendar",
+    "ok": true
+  },
+  {
+    "kind": "ui",
+    "name": "card",
+    "file": "ui/card.png",
+    "source": "https://ui.shadcn.com/docs/components/base/card",
+    "ok": true
+  },
+  {
+    "kind": "ui",
+    "name": "carousel",
+    "file": "ui/carousel.png",
+    "source": "https://ui.shadcn.com/docs/components/base/carousel",
+    "ok": true
+  },
+  {
+    "kind": "ui",
+    "name": "chart",
+    "file": "ui/chart.png",
+    "source": "https://ui.shadcn.com/docs/components/base/chart",
+    "ok": true
+  },
+  {
+    "kind": "ui",
+    "name": "checkbox",
+    "file": "ui/checkbox.png",
+    "source": "https://ui.shadcn.com/docs/components/base/checkbox",
+    "ok": true
+  },
+  {
+    "kind": "ui",
+    "name": "collapsible",
+    "file": "ui/collapsible.png",
+    "source": "https://ui.shadcn.com/docs/components/base/collapsible",
+    "ok": true
+  },
+  {
+    "kind": "ui",
+    "name": "combobox",
+    "file": "ui/combobox.png",
+    "source": "https://ui.shadcn.com/docs/components/base/combobox",
+    "ok": true
+  },
+  {
+    "kind": "ui",
+    "name": "command",
+    "file": "ui/command.png",
+    "source": "https://ui.shadcn.com/docs/components/base/command",
+    "ok": true
+  },
+  {
+    "kind": "ui",
+    "name": "context-menu",
+    "file": "ui/context-menu.png",
+    "source": "https://ui.shadcn.com/docs/components/base/context-menu",
+    "ok": true
+  },
+  {
+    "kind": "ui",
+    "name": "dialog",
+    "file": "ui/dialog.png",
+    "source": "https://ui.shadcn.com/docs/components/base/dialog",
+    "ok": true
+  },
+  {
+    "kind": "ui",
+    "name": "direction",
+    "file": "ui/direction.png",
+    "source": "https://ui.shadcn.com/docs/components/base/direction",
+    "ok": true
+  },
+  {
+    "kind": "ui",
+    "name": "drawer",
+    "file": "ui/drawer.png",
+    "source": "https://ui.shadcn.com/docs/components/base/drawer",
+    "ok": true
+  },
+  {
+    "kind": "ui",
+    "name": "dropdown-menu",
+    "file": "ui/dropdown-menu.png",
+    "source": "https://ui.shadcn.com/docs/components/base/dropdown-menu",
+    "ok": true
+  },
+  {
+    "kind": "ui",
+    "name": "empty",
+    "file": "ui/empty.png",
+    "source": "https://ui.shadcn.com/docs/components/base/empty",
+    "ok": true
+  },
+  {
+    "kind": "ui",
+    "name": "field",
+    "file": "ui/field.png",
+    "source": "https://ui.shadcn.com/docs/components/base/field",
+    "ok": true
+  },
+  {
+    "kind": "ui",
+    "name": "form",
+    "file": null,
+    "source": "https://ui.shadcn.com/docs/components/base/form",
+    "ok": false,
+    "note": "no meta.links.docs in item.json; guessed URL; https://ui.shadcn.com/docs/forms: no live component preview found; https://ui.shadcn.com/docs/forms: no live component preview found"
+  },
+  {
+    "kind": "ui",
+    "name": "hover-card",
+    "file": "ui/hover-card.png",
+    "source": "https://ui.shadcn.com/docs/components/base/hover-card",
+    "ok": true
+  },
+  {
+    "kind": "ui",
+    "name": "input",
+    "file": "ui/input.png",
+    "source": "https://ui.shadcn.com/docs/components/base/input",
+    "ok": true
+  },
+  {
+    "kind": "ui",
+    "name": "input-group",
+    "file": "ui/input-group.png",
+    "source": "https://ui.shadcn.com/docs/components/base/input-group",
+    "ok": true
+  },
+  {
+    "kind": "ui",
+    "name": "input-otp",
+    "file": "ui/input-otp.png",
+    "source": "https://ui.shadcn.com/docs/components/base/input-otp",
+    "ok": true
+  },
+  {
+    "kind": "ui",
+    "name": "item",
+    "file": "ui/item.png",
+    "source": "https://ui.shadcn.com/docs/components/base/item",
+    "ok": true
+  },
+  {
+    "kind": "ui",
+    "name": "kbd",
+    "file": "ui/kbd.png",
+    "source": "https://ui.shadcn.com/docs/components/base/kbd",
+    "ok": true
+  },
+  {
+    "kind": "ui",
+    "name": "label",
+    "file": "ui/label.png",
+    "source": "https://ui.shadcn.com/docs/components/base/label",
+    "ok": true
+  },
+  {
+    "kind": "ui",
+    "name": "marker",
+    "file": "ui/marker.png",
+    "source": "https://ui.shadcn.com/docs/components/base/marker",
+    "ok": true,
+    "note": "no meta.links.docs in item.json; guessed URL"
+  },
+  {
+    "kind": "ui",
+    "name": "menubar",
+    "file": "ui/menubar.png",
+    "source": "https://ui.shadcn.com/docs/components/base/menubar",
+    "ok": true
+  },
+  {
+    "kind": "ui",
+    "name": "message",
+    "file": "ui/message.png",
+    "source": "https://ui.shadcn.com/docs/components/base/message",
+    "ok": true,
+    "note": "no meta.links.docs in item.json; guessed URL"
+  },
+  {
+    "kind": "ui",
+    "name": "message-scroller",
+    "file": "ui/message-scroller.png",
+    "source": "https://ui.shadcn.com/docs/components/base/message-scroller",
+    "ok": true,
+    "note": "no meta.links.docs in item.json; guessed URL"
+  },
+  {
+    "kind": "ui",
+    "name": "native-select",
+    "file": "ui/native-select.png",
+    "source": "https://ui.shadcn.com/docs/components/base/native-select",
+    "ok": true
+  },
+  {
+    "kind": "ui",
+    "name": "navigation-menu",
+    "file": "ui/navigation-menu.png",
+    "source": "https://ui.shadcn.com/docs/components/base/navigation-menu",
+    "ok": true
+  },
+  {
+    "kind": "ui",
+    "name": "pagination",
+    "file": "ui/pagination.png",
+    "source": "https://ui.shadcn.com/docs/components/base/pagination",
+    "ok": true
+  },
+  {
+    "kind": "ui",
+    "name": "popover",
+    "file": "ui/popover.png",
+    "source": "https://ui.shadcn.com/docs/components/base/popover",
+    "ok": true
+  },
+  {
+    "kind": "ui",
+    "name": "progress",
+    "file": "ui/progress.png",
+    "source": "https://ui.shadcn.com/docs/components/base/progress",
+    "ok": true
+  },
+  {
+    "kind": "ui",
+    "name": "questionnaire",
+    "file": "ui/questionnaire.png",
+    "source": "https://ui.shadcn.com/docs/components/base/questionnaire",
+    "ok": true
+  },
+  {
+    "kind": "ui",
+    "name": "radio-group",
+    "file": "ui/radio-group.png",
+    "source": "https://ui.shadcn.com/docs/components/base/radio-group",
+    "ok": true
+  },
+  {
+    "kind": "ui",
+    "name": "resizable",
+    "file": "ui/resizable.png",
+    "source": "https://ui.shadcn.com/docs/components/base/resizable",
+    "ok": true
+  },
+  {
+    "kind": "ui",
+    "name": "scroll-area",
+    "file": "ui/scroll-area.png",
+    "source": "https://ui.shadcn.com/docs/components/base/scroll-area",
+    "ok": true
+  },
+  {
+    "kind": "ui",
+    "name": "select",
+    "file": "ui/select.png",
+    "source": "https://ui.shadcn.com/docs/components/base/select",
+    "ok": true
+  },
+  {
+    "kind": "ui",
+    "name": "separator",
+    "file": "ui/separator.png",
+    "source": "https://ui.shadcn.com/docs/components/base/separator",
+    "ok": true
+  },
+  {
+    "kind": "ui",
+    "name": "sheet",
+    "file": "ui/sheet.png",
+    "source": "https://ui.shadcn.com/docs/components/base/sheet",
+    "ok": true
+  },
+  {
+    "kind": "ui",
+    "name": "sidebar",
+    "file": "ui/sidebar.png",
+    "source": "https://ui.shadcn.com/docs/components/base/sidebar",
+    "ok": true,
+    "note": "docs demo is an embedded iframe; captured live https://ui.shadcn.com/view/base-nova/sidebar-demo at 1400x1000 viewport"
+  },
+  {
+    "kind": "ui",
+    "name": "skeleton",
+    "file": "ui/skeleton.png",
+    "source": "https://ui.shadcn.com/docs/components/base/skeleton",
+    "ok": true
+  },
+  {
+    "kind": "ui",
+    "name": "slider",
+    "file": "ui/slider.png",
+    "source": "https://ui.shadcn.com/docs/components/base/slider",
+    "ok": true
+  },
+  {
+    "kind": "ui",
+    "name": "sonner",
+    "file": "ui/sonner.png",
+    "source": "https://ui.shadcn.com/docs/components/base/toast",
+    "ok": true,
+    "note": "redirected to https://ui.shadcn.com/docs/components/base/toast"
+  },
+  {
+    "kind": "ui",
+    "name": "spinner",
+    "file": "ui/spinner.png",
+    "source": "https://ui.shadcn.com/docs/components/base/spinner",
+    "ok": true
+  },
+  {
+    "kind": "ui",
+    "name": "switch",
+    "file": "ui/switch.png",
+    "source": "https://ui.shadcn.com/docs/components/base/switch",
+    "ok": true
+  },
+  {
+    "kind": "ui",
+    "name": "table",
+    "file": "ui/table.png",
+    "source": "https://ui.shadcn.com/docs/components/base/table",
+    "ok": true
+  },
+  {
+    "kind": "ui",
+    "name": "tabs",
+    "file": "ui/tabs.png",
+    "source": "https://ui.shadcn.com/docs/components/base/tabs",
+    "ok": true
+  },
+  {
+    "kind": "ui",
+    "name": "textarea",
+    "file": "ui/textarea.png",
+    "source": "https://ui.shadcn.com/docs/components/base/textarea",
+    "ok": true
+  },
+  {
+    "kind": "ui",
+    "name": "toast",
+    "file": "ui/toast.png",
+    "source": "https://ui.shadcn.com/docs/components/base/toast",
+    "ok": true
+  },
+  {
+    "kind": "ui",
+    "name": "toggle",
+    "file": "ui/toggle.png",
+    "source": "https://ui.shadcn.com/docs/components/base/toggle",
+    "ok": true
+  },
+  {
+    "kind": "ui",
+    "name": "toggle-group",
+    "file": "ui/toggle-group.png",
+    "source": "https://ui.shadcn.com/docs/components/base/toggle-group",
+    "ok": true
+  },
+  {
+    "kind": "ui",
+    "name": "tooltip",
+    "file": "ui/tooltip.png",
+    "source": "https://ui.shadcn.com/docs/components/base/tooltip",
+    "ok": true
+  },
+  {
+    "kind": "chart",
+    "name": "chart-area-axes",
+    "file": "charts/chart-area-axes.png",
+    "source": "https://ui.shadcn.com/charts/area#chart-area-axes",
+    "ok": true
+  },
+  {
+    "kind": "chart",
+    "name": "chart-area-default",
+    "file": "charts/chart-area-default.png",
+    "source": "https://ui.shadcn.com/charts/area#chart-area-default",
+    "ok": true
+  },
+  {
+    "kind": "chart",
+    "name": "chart-area-gradient",
+    "file": "charts/chart-area-gradient.png",
+    "source": "https://ui.shadcn.com/charts/area#chart-area-gradient",
+    "ok": true
+  },
+  {
+    "kind": "chart",
+    "name": "chart-area-icons",
+    "file": "charts/chart-area-icons.png",
+    "source": "https://ui.shadcn.com/charts/area#chart-area-icons",
+    "ok": true
+  },
+  {
+    "kind": "chart",
+    "name": "chart-area-interactive",
+    "file": "charts/chart-area-interactive.png",
+    "source": "https://ui.shadcn.com/charts/area#chart-area-interactive",
+    "ok": true
+  },
+  {
+    "kind": "chart",
+    "name": "chart-area-legend",
+    "file": "charts/chart-area-legend.png",
+    "source": "https://ui.shadcn.com/charts/area#chart-area-legend",
+    "ok": true
+  },
+  {
+    "kind": "chart",
+    "name": "chart-area-linear",
+    "file": "charts/chart-area-linear.png",
+    "source": "https://ui.shadcn.com/charts/area#chart-area-linear",
+    "ok": true
+  },
+  {
+    "kind": "chart",
+    "name": "chart-area-stacked",
+    "file": "charts/chart-area-stacked.png",
+    "source": "https://ui.shadcn.com/charts/area#chart-area-stacked",
+    "ok": true
+  },
+  {
+    "kind": "chart",
+    "name": "chart-area-step",
+    "file": "charts/chart-area-step.png",
+    "source": "https://ui.shadcn.com/charts/area#chart-area-step",
+    "ok": true
+  },
+  {
+    "kind": "chart",
+    "name": "chart-bar-active",
+    "file": "charts/chart-bar-active.png",
+    "source": "https://ui.shadcn.com/charts/bar#chart-bar-active",
+    "ok": true
+  },
+  {
+    "kind": "chart",
+    "name": "chart-bar-default",
+    "file": "charts/chart-bar-default.png",
+    "source": "https://ui.shadcn.com/charts/bar#chart-bar-default",
+    "ok": true
+  },
+  {
+    "kind": "chart",
+    "name": "chart-bar-horizontal",
+    "file": "charts/chart-bar-horizontal.png",
+    "source": "https://ui.shadcn.com/charts/bar#chart-bar-horizontal",
+    "ok": true
+  },
+  {
+    "kind": "chart",
+    "name": "chart-bar-interactive",
+    "file": "charts/chart-bar-interactive.png",
+    "source": "https://ui.shadcn.com/charts/bar#chart-bar-interactive",
+    "ok": true
+  },
+  {
+    "kind": "chart",
+    "name": "chart-bar-label",
+    "file": "charts/chart-bar-label.png",
+    "source": "https://ui.shadcn.com/charts/bar#chart-bar-label",
+    "ok": true
+  },
+  {
+    "kind": "chart",
+    "name": "chart-bar-mixed",
+    "file": "charts/chart-bar-mixed.png",
+    "source": "https://ui.shadcn.com/charts/bar#chart-bar-mixed",
+    "ok": true
+  },
+  {
+    "kind": "chart",
+    "name": "chart-bar-multiple",
+    "file": "charts/chart-bar-multiple.png",
+    "source": "https://ui.shadcn.com/charts/bar#chart-bar-multiple",
+    "ok": true
+  },
+  {
+    "kind": "chart",
+    "name": "chart-bar-negative",
+    "file": "charts/chart-bar-negative.png",
+    "source": "https://ui.shadcn.com/charts/bar#chart-bar-negative",
+    "ok": true
+  },
+  {
+    "kind": "chart",
+    "name": "chart-bar-stacked",
+    "file": "charts/chart-bar-stacked.png",
+    "source": "https://ui.shadcn.com/charts/bar#chart-bar-stacked",
+    "ok": true
+  },
+  {
+    "kind": "chart",
+    "name": "chart-line-default",
+    "file": "charts/chart-line-default.png",
+    "source": "https://ui.shadcn.com/charts/line#chart-line-default",
+    "ok": true
+  },
+  {
+    "kind": "chart",
+    "name": "chart-line-dots",
+    "file": "charts/chart-line-dots.png",
+    "source": "https://ui.shadcn.com/charts/line#chart-line-dots",
+    "ok": true
+  },
+  {
+    "kind": "chart",
+    "name": "chart-line-interactive",
+    "file": "charts/chart-line-interactive.png",
+    "source": "https://ui.shadcn.com/charts/line#chart-line-interactive",
+    "ok": true
+  },
+  {
+    "kind": "chart",
+    "name": "chart-line-label",
+    "file": "charts/chart-line-label.png",
+    "source": "https://ui.shadcn.com/charts/line#chart-line-label",
+    "ok": true
+  },
+  {
+    "kind": "chart",
+    "name": "chart-line-linear",
+    "file": "charts/chart-line-linear.png",
+    "source": "https://ui.shadcn.com/charts/line#chart-line-linear",
+    "ok": true
+  },
+  {
+    "kind": "chart",
+    "name": "chart-line-multiple",
+    "file": "charts/chart-line-multiple.png",
+    "source": "https://ui.shadcn.com/charts/line#chart-line-multiple",
+    "ok": true
+  },
+  {
+    "kind": "chart",
+    "name": "chart-line-step",
+    "file": "charts/chart-line-step.png",
+    "source": "https://ui.shadcn.com/charts/line#chart-line-step",
+    "ok": true
+  },
+  {
+    "kind": "chart",
+    "name": "chart-pie-donut",
+    "file": "charts/chart-pie-donut.png",
+    "source": "https://ui.shadcn.com/charts/pie#chart-pie-donut",
+    "ok": true
+  },
+  {
+    "kind": "chart",
+    "name": "chart-pie-interactive",
+    "file": "charts/chart-pie-interactive.png",
+    "source": "https://ui.shadcn.com/charts/pie#chart-pie-interactive",
+    "ok": true
+  },
+  {
+    "kind": "chart",
+    "name": "chart-pie-label",
+    "file": "charts/chart-pie-label.png",
+    "source": "https://ui.shadcn.com/charts/pie#chart-pie-label",
+    "ok": true
+  },
+  {
+    "kind": "chart",
+    "name": "chart-pie-legend",
+    "file": "charts/chart-pie-legend.png",
+    "source": "https://ui.shadcn.com/charts/pie#chart-pie-legend",
+    "ok": true
+  },
+  {
+    "kind": "chart",
+    "name": "chart-pie-simple",
+    "file": "charts/chart-pie-simple.png",
+    "source": "https://ui.shadcn.com/charts/pie#chart-pie-simple",
+    "ok": true
+  },
+  {
+    "kind": "chart",
+    "name": "chart-pie-stacked",
+    "file": "charts/chart-pie-stacked.png",
+    "source": "https://ui.shadcn.com/charts/pie#chart-pie-stacked",
+    "ok": true
+  },
+  {
+    "kind": "chart",
+    "name": "chart-radar-default",
+    "file": "charts/chart-radar-default.png",
+    "source": "https://ui.shadcn.com/charts/radar#chart-radar-default",
+    "ok": true
+  },
+  {
+    "kind": "chart",
+    "name": "chart-radar-dots",
+    "file": "charts/chart-radar-dots.png",
+    "source": "https://ui.shadcn.com/charts/radar#chart-radar-dots",
+    "ok": true
+  },
+  {
+    "kind": "chart",
+    "name": "chart-radar-legend",
+    "file": "charts/chart-radar-legend.png",
+    "source": "https://ui.shadcn.com/charts/radar#chart-radar-legend",
+    "ok": true
+  },
+  {
+    "kind": "chart",
+    "name": "chart-radar-multiple",
+    "file": "charts/chart-radar-multiple.png",
+    "source": "https://ui.shadcn.com/charts/radar#chart-radar-multiple",
+    "ok": true
+  },
+  {
+    "kind": "chart",
+    "name": "chart-radial-grid",
+    "file": "charts/chart-radial-grid.png",
+    "source": "https://ui.shadcn.com/charts/radial#chart-radial-grid",
+    "ok": true
+  },
+  {
+    "kind": "chart",
+    "name": "chart-radial-label",
+    "file": "charts/chart-radial-label.png",
+    "source": "https://ui.shadcn.com/charts/radial#chart-radial-label",
+    "ok": true
+  },
+  {
+    "kind": "chart",
+    "name": "chart-radial-shape",
+    "file": "charts/chart-radial-shape.png",
+    "source": "https://ui.shadcn.com/charts/radial#chart-radial-shape",
+    "ok": true
+  },
+  {
+    "kind": "chart",
+    "name": "chart-radial-simple",
+    "file": "charts/chart-radial-simple.png",
+    "source": "https://ui.shadcn.com/charts/radial#chart-radial-simple",
+    "ok": true
+  },
+  {
+    "kind": "chart",
+    "name": "chart-radial-stacked",
+    "file": "charts/chart-radial-stacked.png",
+    "source": "https://ui.shadcn.com/charts/radial#chart-radial-stacked",
+    "ok": true
+  },
+  {
+    "kind": "chart",
+    "name": "chart-radial-text",
+    "file": "charts/chart-radial-text.png",
+    "source": "https://ui.shadcn.com/charts/radial#chart-radial-text",
+    "ok": true
+  },
+  {
+    "kind": "chart",
+    "name": "chart-tooltip-advanced",
+    "file": "charts/chart-tooltip-advanced.png",
+    "source": "https://ui.shadcn.com/charts/tooltip#chart-tooltip-advanced",
+    "ok": true
+  },
+  {
+    "kind": "chart",
+    "name": "chart-tooltip-default",
+    "file": "charts/chart-tooltip-default.png",
+    "source": "https://ui.shadcn.com/charts/tooltip#chart-tooltip-default",
+    "ok": true
+  },
+  {
+    "kind": "chart",
+    "name": "chart-tooltip-formatter",
+    "file": "charts/chart-tooltip-formatter.png",
+    "source": "https://ui.shadcn.com/charts/tooltip#chart-tooltip-formatter",
+    "ok": true
+  },
+  {
+    "kind": "chart",
+    "name": "chart-tooltip-icons",
+    "file": "charts/chart-tooltip-icons.png",
+    "source": "https://ui.shadcn.com/charts/tooltip#chart-tooltip-icons",
+    "ok": true
+  }
+]

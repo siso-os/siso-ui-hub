@@ -1,0 +1,35 @@
+{
+ "id": "agent-operations",
+ "name": "Agent operations",
+ "surface": "dashboard",
+ "projects": [
+  "Agent Base"
+ ],
+ "owner": "AGENT-BASE",
+ "status": "stub: round 1 names it; the owner fills it in",
+ "pages": [],
+ "_page_shape": {
+  "id": "home",
+  "sections_or_bands": [
+   {
+    "component": "<catalogue id>@<version>",
+    "variant": "<name>",
+    "data": [
+     "<field>"
+    ]
+   }
+  ]
+ },
+ "data_fields": {},
+ "tokens": {
+  "colours": {},
+  "fonts": {},
+  "logo": null
+ },
+ "copy": {
+  "languages": [
+   "en"
+  ],
+  "keys": {}
+ }
+}

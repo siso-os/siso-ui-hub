@@ -1,0 +1,17 @@
+{
+ "name": "radio-group",
+ "type": "registry:ui",
+ "dependencies": [
+  "cn"
+ ],
+ "meta": {
+  "links": {
+   "docs": "https://ui.shadcn.com/docs/components/base/radio-group",
+   "examples": "https://ui.shadcn.com/code/apps/v4/registry/bases/base/examples/radio-group-example.tsx",
+   "api": "https://base-ui.com/react/components/radio-group.md"
+  }
+ },
+ "files": [
+  "ui/radio-group.tsx"
+ ]
+}

@@ -1,0 +1,105 @@
+{
+ "_about": "The 11 libraries reviewed in round 1 (7 Oct 2026): licence, size, role in the catalogue, verdict. Item rows: items.jsonl / items.cat.jsonl; code facts: code-facts.jsonl.",
+ "libraries": [
+  {
+   "id": "arc",
+   "name": "Arc",
+   "site": "uiarc.dev",
+   "licence": "MIT (free tier); Pro is paid",
+   "items": 238,
+   "free": 129,
+   "role": "base",
+   "verdict": "The base: every free item handles reduced motion and ships when-to-use docs, an agent skill and an MCP. Install free items only; Pro is reference."
+  },
+  {
+   "id": "easyui",
+   "name": "EasyUI",
+   "site": "easyui.site",
+   "licence": "MIT",
+   "items": 108,
+   "role": "pick",
+   "verdict": "Agents: agent run, AI answer, dense table, machine log. Map colours to tokens before install."
+  },
+  {
+   "id": "spaceui",
+   "name": "Space UI",
+   "site": "spaceui.one",
+   "licence": "MIT",
+   "items": 200,
+   "role": "pick",
+   "verdict": "Period filter, big virtual grid, presence. Check motion before install."
+  },
+  {
+   "id": "uselayouts",
+   "name": "uselayouts",
+   "site": "uselayouts.com",
+   "licence": "MIT",
+   "items": 64,
+   "role": "try",
+   "verdict": "The prompt box (a pill that grows into the composer)."
+  },
+  {
+   "id": "toolcraft",
+   "name": "Toolcraft",
+   "site": "toolcraft.sh",
+   "licence": "MIT",
+   "items": 29,
+   "role": "internal",
+   "verdict": "Tuning panels and settings export while we design."
+  },
+  {
+   "id": "devigner",
+   "name": "Devigner",
+   "site": "ui.devigner.cc",
+   "licence": "MIT",
+   "items": 14,
+   "role": "watch",
+   "verdict": "Small and careful; stepper and heat slider usable; its date range is for bookings."
+  },
+  {
+   "id": "opensourceui",
+   "name": "OpenSourceUI",
+   "site": "opensourceui.in",
+   "licence": "MIT",
+   "items": 207,
+   "role": "reference",
+   "verdict": "Mostly phone-widget mock-ups, not controls."
+  },
+  {
+   "id": "feralui",
+   "name": "Feral UI",
+   "site": "feralui.dev",
+   "licence": "MIT (4 repos)",
+   "items": 20,
+   "role": "skip",
+   "verdict": "Canvas experiments."
+  },
+  {
+   "id": "kobra",
+   "name": "Kobra",
+   "site": "kobra.systems",
+   "licence": "Paid",
+   "items": 86,
+   "role": "reference",
+   "verdict": "Registry refuses without an account."
+  },
+  {
+   "id": "kinetics",
+   "name": "Kinetics",
+   "site": "kinetics.colorion.co",
+   "licence": "none",
+   "items": 153,
+   "role": "reference",
+   "verdict": "No licence, so nothing is copied."
+  },
+  {
+   "id": "bencho",
+   "name": "bencho",
+   "site": "bencho.dev",
+   "licence": "none (no repo)",
+   "items": 63,
+   "role": "intake",
+   "verdict": "A gallery of links that feeds intake."
+  }
+ ]
+}

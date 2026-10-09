@@ -1,0 +1,17 @@
+{
+ "name": "switch",
+ "type": "registry:ui",
+ "dependencies": [
+  "cn"
+ ],
+ "meta": {
+  "links": {
+   "docs": "https://ui.shadcn.com/docs/components/base/switch",
+   "examples": "https://ui.shadcn.com/code/apps/v4/registry/bases/base/examples/switch-example.tsx",
+   "api": "https://base-ui.com/react/components/switch.md"
+  }
+ },
+ "files": [
+  "ui/switch.tsx"
+ ]
+}

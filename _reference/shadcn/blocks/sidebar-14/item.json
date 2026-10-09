@@ -1,0 +1,17 @@
+{
+ "name": "sidebar-14",
+ "type": "registry:block",
+ "description": "A sidebar on the right.",
+ "categories": [
+  "sidebar",
+  "dashboard"
+ ],
+ "registryDependencies": [
+  "sidebar",
+  "breadcrumb"
+ ],
+ "files": [
+  "blocks/sidebar-14/page.tsx",
+  "blocks/sidebar-14/components/app-sidebar.tsx"
+ ]
+}

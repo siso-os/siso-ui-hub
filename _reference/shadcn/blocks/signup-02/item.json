@@ -1,0 +1,22 @@
+{
+ "name": "signup-02",
+ "type": "registry:block",
+ "description": "A two column signup page with a cover image.",
+ "categories": [
+  "authentication",
+  "signup"
+ ],
+ "dependencies": [
+  "cn"
+ ],
+ "registryDependencies": [
+  "button",
+  "input",
+  "label",
+  "field"
+ ],
+ "files": [
+  "blocks/signup-02/page.tsx",
+  "blocks/signup-02/components/signup-form.tsx"
+ ]
+}

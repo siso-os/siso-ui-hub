@@ -1,0 +1,12 @@
+{
+ "name": "chart-bar-interactive",
+ "type": "registry:block",
+ "description": null,
+ "registryDependencies": [
+  "card",
+  "chart"
+ ],
+ "files": [
+  "charts/chart-bar-interactive.tsx"
+ ]
+}

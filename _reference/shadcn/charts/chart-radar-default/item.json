@@ -1,0 +1,12 @@
+{
+ "name": "chart-radar-default",
+ "type": "registry:block",
+ "description": null,
+ "registryDependencies": [
+  "card",
+  "chart"
+ ],
+ "files": [
+  "charts/chart-radar-default.tsx"
+ ]
+}

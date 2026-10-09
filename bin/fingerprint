@@ -1,0 +1,64 @@
+#!/usr/bin/env python3
+"""fingerprint: where did each project component come from? MinHash (128 perms, 5-token shingles) over normalised code,
+compared against every reference we hold: the 11 libraries' sources, shadcn's ui/charts/blocks snapshot, the 21st.dev
+mirror (5,210 sources) and, through it, your 138 picks. No model, no network. Projects marked names-only (HALO CRM) are
+never read. Writes inventory/<project>.sources.json: {file: [{ref, sim}, ...top 3]}.
+  fingerprint model-app operator agent-base ...      (reads inventory/<project>.census.json for repo and ref)"""
+import json, os, re, sys, glob, zlib, subprocess
+import numpy as np
+HUB = os.path.dirname(os.path.dirname(os.path.realpath(__file__)))  # the siso-ui-hub repo root
+W = os.path.expanduser("~/SISO_Workspace"); H = HUB; R = f"{W}/_reference/ui-libs"
+B = f"{W}/Great_Library_of_SISO/banks"
+P = np.uint64(4294967311); rng = np.random.default_rng(7)
+A = rng.integers(1, 2**32 - 1, 128, dtype=np.uint64)[:, None]; Bv = rng.integers(0, 2**32 - 1, 128, dtype=np.uint64)[:, None]
+TOK = re.compile(r"[A-Za-z_$][\w$-]*|\d+(?:\.\d+)?|[{}()\[\];,<>=+*/!?:&|%-]")
+def norm(t):
+    t = re.sub(r"/\*.*?\*/", " ", t, flags=re.S); t = re.sub(r"(?m)^\s*//.*$", " ", t)
+    t = re.sub(r"(?m)^\s*(import|export\s+\*|export\s+\{[^}]*\}\s+from)\b[^\n]*$", " ", t)
+    return TOK.findall(t)
+def sig(text):
+    toks = norm(text)
+    if len(toks) < 40: return None
+    sh = np.fromiter((zlib.crc32(" ".join(toks[i:i + 5]).encode()) for i in range(len(toks) - 4)), dtype=np.uint64)
+    sh = np.unique(sh)
+    return ((A * sh[None, :] + Bv) % P).min(axis=1)
+
+refs, labels = [], []
+def add(label, text):
+    s = sig(text)
+    if s is not None: refs.append(s); labels.append(label)
+# the 11 libraries (sources resolved by code-facts)
+cf = {json.loads(l)["id"]: json.loads(l) for l in open(f"{H}/sources/code-facts.jsonl")}
+for i, f in cf.items():
+    if not f.get("found"): continue
+    txt = "\n".join(open(p if p.startswith("/") else f"{R}/{p}", errors="ignore").read() for p in f["files"] if os.path.isfile(p if p.startswith("/") else f"{R}/{p}"))
+    if txt: add(f"lib:{i}", txt)
+# shadcn snapshot
+for d in ("ui", "charts", "blocks"):
+    for item in sorted(glob.glob(f"{H}/_reference/shadcn/{d}/*")):
+        txt = "\n".join(open(p, errors="ignore").read() for p in glob.glob(f"{item}/**/*.tsx", recursive=True))
+        if txt: add(f"shadcn:{d}/{os.path.basename(item)}", txt)
+# 21st mirror, with your picks marked
+picks = {f"{p['author']}__{p['slug']}": p["n"] for p in map(json.loads, open(f"{H}/catalogue/curated/picks.jsonl"))}
+for p in sorted(glob.glob(f"{B}/siso-component-bank/source/*/code.tsx")):
+    cid = os.path.basename(os.path.dirname(p))
+    add(f"pick:{picks[cid]}:{cid}" if cid in picks else f"21st:{cid}", open(p, errors="ignore").read())
+M = np.stack(refs); print(f"references: {len(labels)} ({sum(l.startswith('lib:') for l in labels)} library, "
+                         f"{sum(l.startswith('shadcn:') for l in labels)} shadcn, {sum(l.startswith(('21st:', 'pick:')) for l in labels)} 21st)", flush=True)
+
+for project in sys.argv[1:]:
+    c = json.load(open(f"{H}/inventory/{project}.census.json"))
+    if c.get("namesOnly"): print(f"{project}: names only, not read"); continue
+    files = [r["file"] for r in c["rows"]]
+    blob = subprocess.run(["git", "-C", c["repo"], "cat-file", "--batch"], input="".join(f"{c['ref']}:{f}\n" for f in files).encode(),
+                          capture_output=True, check=True).stdout
+    out, i = {}, 0
+    for f in files:
+        nl = blob.index(b"\n", i); size = int(blob[i:nl].split()[2]); i = nl + 1
+        s = sig(blob[i:i + size].decode("utf-8", "ignore")); i += size + 1
+        if s is None: continue
+        sims = (M == s[None, :]).mean(axis=1); top = np.argsort(-sims)[:3]
+        out[f] = [{"ref": labels[j], "sim": round(float(sims[j]), 3)} for j in top if sims[j] >= 0.12]
+    json.dump(out, open(f"{H}/inventory/{project}.sources.json", "w"), indent=1)
+    strong = sum(1 for v in out.values() if v and v[0]["sim"] >= 0.5); part = sum(1 for v in out.values() if v and 0.25 <= v[0]["sim"] < 0.5)
+    print(f"{project}: {len(out)} files fingerprinted; {strong} built from a reference (>=0.5), {part} partly (0.25-0.5)", flush=True)

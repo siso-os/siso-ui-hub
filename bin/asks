@@ -1,0 +1,95 @@
+#!/usr/bin/env python3
+"""asks: turn a project's decided swaps (catalogue/swaps.json) into asks for its owner, one spec file per swap.
+
+  asks <project>          write catalogue/asks/<project>/<NN>-<slug>.md and print the `ask new` lines
+  asks <project> --run    also file them with Agent Zero's `ask new` (the owner pulls them with `ask queue <OWNER>`),
+                          and record each task id on its swap in catalogue/swaps.json ("ask": "t-NNNN")
+
+A spec holds Shaan's words verbatim (the rule he set for UI, and the words behind the ADR the swap serves), what the
+swap means (files, catalogue target, install lines), and when it is done. A swap that already has an ask is skipped."""
+import datetime, json, os, re, subprocess, sys
+HUB = os.path.dirname(os.path.dirname(os.path.realpath(__file__)))
+ASK = os.path.expanduser("~/SISO_Workspace/SISO_Agents/agent-zero/siso-agent-zero/bin/ask")
+NAMES = {"agent-base": "Agent Base", "operator": "Operator", "model-app": "model app"}
+# the rule every swap serves (A0-NOTE-2), then the ADRs each kind of swap serves
+RULE = ("every comp comes from this list and if we make a new custom comp it gets noted down as a custom comp on this "
+        "inventory list… make the ui clean instead of just doing a bunch of iteration rounds", "7 Oct ~00:40 (relayed by A0, A0-NOTE-2)")
+# (ADR, a word that picks the dated line inside it; None = its main quote). Rule 11 (take before you build) is every swap's.
+ADRS = {"bell": [(15, "notification")], "toast": [], "command palette": [], "quick jump": [], "activity": [(8, None), (5, None)],
+        "timeline": [(8, None), (5, None)], "sheet": [(5, None)], "popover": [(6, None)], "faces": [(1, None)], "hover": [(1, None)],
+        "icons": [(13, None)]}
+def said(q, word):
+    """The main quote, or the dated line in `when` that holds word: [(text, when)]."""
+    if not word: return (q["quote"].strip('"'), q["when"].split(" · ")[0])
+    for seg in q["when"].split(" · "):
+        m = re.match(r'(?:also )?(.+?):\s*"(.+)"$', seg.strip())
+        if m and word in m.group(2).lower(): return (m.group(2), m.group(1) if "Oct" in m.group(1) or "Jun" in m.group(1) else "6 Oct " + m.group(1))
+    return (q["quote"].strip('"'), q["when"].split(" · ")[0])
+def third(t):  # the swap notes were written to Shaan; the spec is read by the builder
+    for a, b in ((r"\bYour\b", "Shaan's"), (r"\byour\b", "his"), (r"\byou\b", "he"), (r"\bYou\b", "He")): t = re.sub(a, b, t)
+    return t
+AREA = {"bell": "notifications", "toast": "toasts", "command palette": "command-palette", "quick jump": "command-palette",
+        "activity": "timeline", "sheet": "sheets", "popover": "popovers", "faces": "faces", "icons": "icons"}
+
+def main():
+    a = sys.argv[1:]
+    if not a or a[0] in ("-h", "--help"): print(__doc__); sys.exit(0)
+    project, run = a[0], "--run" in a
+    S = json.load(open(f"{HUB}/catalogue/swaps.json")); P = S["projects"][project]
+    owner = P["reader"].split()[0]; name = NAMES.get(project, project)
+    items = {json.loads(l)["id"]: json.loads(l) for l in open(f"{HUB}/sources/items.cat.jsonl")}
+    custom = json.load(open(f"{HUB}/catalogue/custom.json"))
+    quotes = {q["adr"]: q for q in map(json.loads, open(f"{HUB}/principles/quotes.jsonl"))}
+    titles = {int(m.group(1)): m.group(2) for m in re.finditer(r"^- \[(\d{4}) ([^\]]+)\]", open(f"{HUB}/principles/README.md").read(), re.M)}
+    out = f"{HUB}/catalogue/asks/{project}"; os.makedirs(out, exist_ok=True)
+    try:  # the owner's open asks, to name the ones that touch the same files
+        q = json.loads(subprocess.run([ASK, "queue", owner, "--json"], capture_output=True, text=True).stdout or "[]")
+        groups = q if isinstance(q, list) else q.get("groups", [])
+        open_asks = [dict(a, touches=g.get("touches", "")) for g in groups for a in g.get("asks", [])]
+    except (json.JSONDecodeError, OSError): open_asks = []
+    now = datetime.datetime.now().astimezone()
+    for n, s in enumerate(P["swaps"], 1):
+        key = next((k for k in ADRS if k in s["what"].lower()), None)
+        stems = {os.path.splitext(os.path.basename(f))[0] for f in s["files"]}
+        pat = next((pt for pt in S["patterns"] if stems & {re.sub(r"\s*\(.*\)$", "", h).split("/")[-1] for h in pt["have"].get(project, [])}), None)
+        ids = list(dict.fromkeys(re.findall(r"\b(?:arc|easyui|spaceui|uselayouts|toolcraft|siso):[\w-]+", s["to"] + " " + (pat["catalogue"] if pat else ""))))
+        installs = [f"`{items[i]['install']}`" for i in ids if i in items and items[i].get("install")]
+        ours = [f"`{i}` (ours, registered: {third(custom[i]['reason'])})" for i in ids if i in custom]
+        slug = re.sub(r"[^a-z0-9]+", "-", s["what"].lower()).strip("-")
+        overlaps = [a for a in open_asks if a["id"] != s.get("ask") and any(re.search(rf"(^|[,/{{]){re.escape(st)}(\.|,|$|\*)", a["touches"]) for st in stems)]
+        touches = ",".join([AREA.get(key, slug)] + sorted(os.path.basename(f) for f in s["files"]))
+        title = f"{s['what']}: {', '.join(s['files'][:2])}{' …' if len(s['files']) > 2 else ''} → {s['to']}"
+        lines = [f"# {name}: {s['what']} → {s['to']}", "",
+                 f"**Project:** {name} · **Owner:** {owner} · **At:** {now:%Y-%m-%d %H:%M %z} · **From:** UI-HUB, "
+                 f"`siso-ui-hub/catalogue/swaps.json` ({project}, swap {n} of {len(P['swaps'])}; judged at {P['ref']})", "",
+                 "## His words (verbatim)", f"> {RULE[0]}", f"— Shaan, {RULE[1]}", ""]
+        for adr, word in [(11, None)] + ADRS.get(key, []):
+            q = quotes.get(adr)
+            if q: t, when = said(q, word); lines += [f"> {t}", f"— Shaan, {when} (rule {adr}: {titles.get(adr, '')})", ""]
+        lines += ["## What it means (UI-HUB)",
+                  f"- Swap {', '.join(f'`{f}`' for f in s['files'])} for **{s['to']}**. {third(s['gain'])}",
+                  *([f"- Across the apps: {pat['why']}"] if pat else []),
+                  *([f"- Install: {' · '.join(installs)} (map it to your tokens; keep your data and actions)"] if installs else []),
+                  *([f"- Keep: {'; '.join(ours)}"] if ours else []),
+                  *([f"- Needs: {s['needs']}"] if s.get("needs") else []),
+                  *([f"- Overlaps {a['id']} ({a['title']}): it touches the same files; take them in one run." for a in overlaps]),
+                  f"- Effort: {s['effort']}. Brief for your project: `{HUB.replace(os.path.expanduser('~'), '~')}/bin/uihub brief {project}`.", "",
+                  "## Done when",
+                  f"- The files above render through {s['to']}, installed from the catalogue, and each new or changed component file carries a line `// uihub: <id>`.",
+                  f"- `uihub check {project} --ref <your branch>` exits 0, and `uihub check <page URL> --surface dashboard` shows no new failures on the pages it appears on.",
+                  "- He can open one URL and see it (before/after shots).", ""]
+        spec = f"{out}/{n:02d}-{slug}.md"; open(spec, "w").write("\n".join(lines))
+        cmd = [ASK, "new", "--project", name, "--owner", owner, "--his", RULE[0], "--means", f"{s['what']} → {s['to']}",
+               "--touches", touches, "--spec", spec, title]
+        if s.get("ask"):
+            if run: subprocess.run([os.path.dirname(ASK) + "/a0-task", "set", "--by", "UI-HUB", s["ask"], f"touches={touches}"], capture_output=True)
+            print(f"{s['ask']} {s['what']}: spec rewritten" + (", touches set" if run else "") + (f"; overlaps {', '.join(a['id'] for a in overlaps)}" if overlaps else "")); continue
+        if not run: print("would run:", " ".join(repr(c) if " " in c else c for c in cmd[1:])); continue
+        r = subprocess.run(cmd, capture_output=True, text=True)
+        tid = (re.search(r"\bt-\d{3,5}\b", r.stdout + r.stderr) or [None])[0]
+        print(f"{n} {s['what']}: {'filed ' + tid if r.returncode == 0 else 'FAILED ' + (r.stderr or r.stdout)[-300:]}")
+        if r.returncode == 0 and tid: s["ask"] = tid
+    if run:
+        json.dump(S, open(f"{HUB}/catalogue/swaps.json", "w"), ensure_ascii=False, indent=1)
+
+if __name__ == "__main__": main()

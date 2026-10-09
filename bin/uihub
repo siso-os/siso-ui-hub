@@ -1,0 +1,222 @@
+#!/usr/bin/env python3
+"""uihub: the hub from a shell. Every agent runs `uihub brief` before UI work; CI runs `uihub check` before merge.
+
+  uihub brief <surface|project|vertical>   the rules, what fits this surface, the picks with install lines, decided swaps
+  uihub find <words...>                    search the catalogue (picks, ours) and the 11 libraries' 1,182 items
+  uihub show <id>                          one item: why it is picked, install, licence, docs, code facts
+  uihub check <project> [--ref REF] [--base SHA] [--repo DIR --prefix src/]
+                                           component files added since the baseline (inventory/baseline.json) must say where they came
+                                           from: a line `uihub: <id>` naming a pick or one of ours (custom.json).
+                                           Pages, app roots, providers, dev labs, tests and stock shadcn ui/ files are
+                                           skipped. Exit 1 lists the files and the fix.
+  uihub check <url> [--surface dashboard|native-app|landing-site|doc] [--width 390] [--js "<open a popover>"] [--wait 8] [--out shot.jpg]
+                                           a rendered page against the rules a script can check (bin/pagecheck.js): box in
+                                           a box, type sizes per band, emoji, accent lines, inline colours, clickable
+                                           non-buttons, tall empty states, broken images, motion without reduced motion;
+                                           one screenshot. Exit 1 on any failure.
+  uihub checks                             check every project at its inventoried ref into inventory/checks.json (nightly)
+  uihub add <siso:id> --from <path> --reason "<why>"   register one of ours in catalogue/custom.json
+
+Surfaces: dashboard, native-app, landing-site. Projects: operator, operator-redesign, agent-base, model-app, halo-crm,
+cafe-89, kikas. No model, no network."""
+import json, os, re, subprocess, sys
+sys.dont_write_bytecode = True  # loading bin/shoot as a module must not leave __pycache__ in bin/
+HUB = os.path.dirname(os.path.dirname(os.path.realpath(__file__)))
+def load(p): return json.load(open(f"{HUB}/{p}"))
+def jl(p): return [json.loads(l) for l in open(f"{HUB}/{p}")]
+PICKS = {k: v for k, v in load("catalogue/picks.json").items() if not k.startswith("_")}
+CUSTOM = {k: v for k, v in load("catalogue/custom.json").items() if not k.startswith("_")}
+SURFACE_OF = {"operator": "dashboard", "operator-redesign": "dashboard", "agent-base": "dashboard", "halo-crm": "dashboard",
+              "model-app": "native-app", "cafe-89": "landing-site", "kikas": "landing-site"}
+def pick_ids():
+    out = set()
+    for v in PICKS.values():
+        out.add(v["pick"]); out.update(a for a in v.get("also", []) if ":" in a and " " not in a)
+    return out
+def items(): return {r["id"]: r for r in jl("sources/items.cat.jsonl")}
+
+def brief(arg):
+    vert = f"{HUB}/verticals/{arg}.json"
+    surface = arg if arg in ("dashboard", "native-app", "landing-site") else SURFACE_OF.get(arg)
+    if not surface and os.path.exists(vert): surface = load(f"verticals/{arg}.json")["surface"].split(" + ")[0]
+    if not surface: sys.exit(f"unknown: {arg} (try a surface, a project or a vertical in verticals/)")
+    print(f"# UI brief: {arg} ({surface})\n\n## Rules (principles/)")
+    for l in open(f"{HUB}/principles/README.md"):
+        if l.startswith("- ["): print("  " + re.sub(r"\]\(.*\)", "", l[3:]).strip())
+    print(f"\n## This surface (surfaces/{surface}.md)")
+    for l in open(f"{HUB}/surfaces/{surface}.md"):
+        if l.startswith("- **"): print("  " + l.strip()[2:])
+    print("\n## What fits (surfaces/fit.json)")
+    for f in load("surfaces/fit.json")["fit"]:
+        verdict = f[surface]
+        if verdict != "no": print(f"  {verdict:8} {f['item']}: {', '.join(f['ids'])}. {f['why']}")
+    if surface == "landing-site":
+        print("\n## Components: no library installs on a landing site; sections come from the vertical's static kit (surfaces/landing-site.md)")
+    else:
+        print("\n## Install lines (catalogue/picks.json)")
+        for c, v in PICKS.items(): print(f"  {c:28} {v['pick']:36} {v['install']}")
+    sw = load("catalogue/swaps.json")["projects"].get(arg.replace("-redesign", ""))
+    if sw and sw.get("swaps"):
+        print(f"\n## Decided swaps for {arg} (catalogue/swaps.json; for {sw['reader']})")
+        for i, s in enumerate(sw["swaps"], 1): print(f"  {i}. {s['what']} ({s['effort']}): {', '.join(s['files'])} -> {s['to']}")
+    print("\nThe rule: every component comes from the catalogue. Mark each file with a line `uihub: <id>`; register new ones of ours with `uihub add`.")
+
+def find(words):
+    q = [w.lower() for w in words]; its = items(); hits = []
+    picked = {v["pick"]: c for c, v in PICKS.items()}
+    for cid, v in CUSTOM.items():
+        s = sum(3 for w in q if w in (cid + " " + v["reason"] + " " + v["from"]).lower())
+        if s: hits.append((s + 5, cid, "ours", v["reason"]))
+    for i, r in its.items():
+        hay = f"{r['name']} {r.get('title') or ''} {r['cat']} {r.get('desc') or ''}".lower()
+        if i in picked: hay += f" {picked[i]} {PICKS[picked[i]]['why']}".lower()  # the pick's category and why: "bell" finds the notification centre
+        s = sum((3 if w in r["name"].lower() else 1) for w in q if w in hay)
+        if not s: continue
+        if i in picked: s += 6
+        if r.get("tier") not in ("free", None): s -= 2
+        hits.append((s, i, ("PICK " if i in picked else "") + r["cat"], (r.get("desc") or "")[:90]))
+    for s, i, cat, d in sorted(hits, key=lambda h: -h[0])[:14]: print(f"{i:44} {cat:34} {d}")
+
+def show(i):
+    its = items(); facts = {r["id"]: r for r in jl("sources/code-facts.jsonl")}
+    for c, v in PICKS.items():
+        if v["pick"] == i or i in v.get("also", []): print(f"PICK for {c}: {v['why']}\n  install: {v['install']}")
+    if i in CUSTOM: v = CUSTOM[i]; print(f"OURS {i}\n  from: {v['from']}\n  reason: {v['reason']}\n  since: {v.get('since')}")
+    r = its.get(i)
+    if r:
+        print(f"{r['id']}  {r.get('title') or r['name']}  [{r['cat']}] tier {r.get('tier')}\n  {r.get('desc') or ''}\n  url: {r.get('url')}\n  install: {r.get('install')}")
+        docs = r.get("docs") or {}
+        for k in ("whenToUse", "whenNotToUse", "a11y", "motion", "aiNotes"):
+            if docs.get(k): print(f"  {k}: {str(docs[k])[:300]}")
+        f = facts.get(i)
+        if f and f.get("found"): print(f"  code: {f['loc']} lines, a11y {f['a11y']}, reduced-motion {f['reduced']}, hard-coded colours {f['hex']}, motion {','.join(f['motion']) or '-'}")
+    elif i not in CUSTOM and not any(v["pick"] == i for v in PICKS.values()): sys.exit(f"not found: {i} (try uihub find)")
+
+# Pages, app roots, providers and dev labs compose components; they are not components, so check skips them (same
+# page and dev patterns as bin/inventory and the census command lines).
+NOT_A_COMPONENT = re.compile(r"(^|/)(screens?|pages|routes?)/|(Page|Screen|View|App|Space|Provider|Context)\.tsx$|(^|/)main\.tsx$"
+                             r"|/(dev-web|dev|labs?|playground|storybook|__dev__)/|Lab\.tsx$|Dev(Page)?\.tsx$")
+BASELINE = load("inventory/baseline.json")["projects"]
+def unmarked(project, ref=None, base=None, repo=None, prefix=None):
+    """Component files at ref that were in no baseline of the same repo (or not at --base), and carry no known mark."""
+    if project == "halo-crm": sys.exit("HALO CRM is Cam's: the hub records names and usage only and never reads its code")
+    b = BASELINE.get(project, {})
+    repo = os.path.expanduser(repo or b.get("repo", "")); prefix = prefix or b.get("prefix", "")
+    ref = ref or b.get("ref", "HEAD")
+    if not repo or not (base or b): sys.exit(f"no baseline for {project}: pass --repo, --base and --prefix (see inventory/README.md)")
+    def git(*a):
+        r = subprocess.run(["git", "-C", repo, *a], capture_output=True, text=True)
+        if r.returncode: sys.exit(f"git {' '.join(a[:2])}: {r.stderr.strip()}")
+        return r.stdout
+    def tree(sha):  # path -> blob id
+        return dict((l.split("\t")[1], l.split()[2]) for l in git("ls-tree", "-r", sha, "--", prefix).splitlines())
+    bases = [base] if base else [v["sha"] for v in BASELINE.values() if os.path.expanduser(v["repo"]) == repo]
+    seen_paths, seen_blobs = set(), set()
+    for sha in bases: t = tree(sha); seen_paths |= set(t); seen_blobs |= set(t.values())
+    now = tree(ref)
+    added = sorted(f for f, blob in now.items() if f not in seen_paths and blob not in seen_blobs  # a pure move is not new
+                   and f.endswith(".tsx") and not re.search(r"\.(test|spec|stories)\.|__tests__|/fixtures?/", f)
+                   and not NOT_A_COMPONENT.search(f))
+    known = pick_ids() | set(CUSTOM)
+    shadcn = set(os.listdir(f"{HUB}/_reference/shadcn/ui")) if os.path.isdir(f"{HUB}/_reference/shadcn/ui") else set()
+    bad = []
+    for f in added:
+        if "/components/ui/" in "/" + f and os.path.splitext(os.path.basename(f))[0] in shadcn: continue  # a stock shadcn primitive
+        tags = re.findall(r"uihub:\s*([\w.:-]+)", git("show", f"{ref}:{f}"))
+        if not any(t in known for t in tags): bad.append((f, tags))
+    return ",".join(x[:10] for x in bases), ref, added, bad
+
+def check(project, ref=None, base=None, repo=None, prefix=None):
+    base, ref, added, bad = unmarked(project, ref, base, repo, prefix)
+    print(f"uihub check {project}: {len(added)} component files added since {base} (to {ref}); {len(bad)} not from the catalogue")
+    for f, tags in bad:
+        print(f"  {f}" + (f"  (names {', '.join(tags)}, which is not in the catalogue)" if tags else ""))
+    if bad:
+        print("Fix: add a line `// uihub: <pick id>` if it came from the catalogue (uihub find), or register it as ours:\n"
+              "  uihub add siso:<name> --from <path> --reason \"<why no pick fits>\"   and mark the file `// uihub: siso:<name>`")
+        sys.exit(1)
+
+
+# Page checks, by rule: (key, what it means, the rule, where it fails: True = every surface, else the surfaces; elsewhere a note).
+# Surfaces: dashboard, native-app, landing-site, and doc (a long read such as a console page: layout rules are notes).
+PAGE_RULES = [("box_in_box", "a framed box inside another", "rule 7, FIT-RULES: no box in a box", {"dashboard", "native-app", "landing-site"}),
+              ("type_sizes", "bands with more than three type sizes", "FIT-RULES: at most three sizes a band", {"dashboard"}),
+              ("emoji", "emoji used as icons", "rule 14: real icons", True),
+              ("accent", "left accent lines", "rule 14: no accent lines", True),
+              ("inline_colours", "colours written inline", "rule 14: one set of tokens", True),
+              ("pointer_no_role", "clickable things that are not buttons or links", "keyboard and screen readers can't reach them", True),
+              ("empty_tall", "empty states taller than a line", "rule 9, FIT-RULES: empty is one line", True),
+              ("broken_images", "images that failed to load", "rule 9: tell the truth about state", True)]
+def check_url(url, js=None, width=1440, surface="dashboard", out=None, wait=None):
+    """Open url in a headless tab (camofox, through bin/shoot's shared slots), run bin/pagecheck.js, take one shot."""
+    import importlib.machinery, time, urllib.parse
+    S = importlib.machinery.SourceFileLoader("shoot", f"{HUB}/bin/shoot").load_module()
+    code = open(f"{HUB}/bin/pagecheck.js").read()
+    slug = re.sub(r"[^\w]+", "-", re.sub(r"^https?://", "", url)).strip("-")[:60]
+    out = out or f"{HUB}/inventory/shots/check-{slug}-{width}.jpg"; os.makedirs(os.path.dirname(out), exist_ok=True)
+    slot, lock = S.acquire(); tab = None; q = urllib.parse.urlencode({"userId": S.USER})
+    try:
+        tab = S.call("POST", "/tabs", {"userId": S.USER, "sessionKey": f"slot{slot}", "url": url})["tabId"]
+        S.call("POST", f"/tabs/{tab}/viewport", {"userId": S.USER, "width": width, "height": 900}); time.sleep(wait or S.WAIT)
+        if js: S.call("POST", f"/tabs/{tab}/evaluate", {"userId": S.USER, "expression": js}); time.sleep(1.0)
+        raw = S.call("POST", f"/tabs/{tab}/evaluate", {"userId": S.USER, "expression": code}, timeout=60)
+        res = next((json.loads(v) for v in (raw.values() if isinstance(raw, dict) else [raw]) if isinstance(v, str) and v.startswith("{")), None)
+        if res is None: sys.exit(f"pagecheck returned nothing readable: {str(raw)[:200]}")
+        png = S.call("GET", f"/tabs/{tab}/screenshot?{q}")
+        if isinstance(png, (bytes, bytearray)) and len(png) > 2000:
+            tmp = f"/tmp/uihub-check-{os.getpid()}.png"; open(tmp, "wb").write(png)
+            subprocess.run(["sips", "-s", "format", "jpeg", "-s", "formatOptions", "55", "-Z", "1440", tmp, "--out", out], check=True, capture_output=True); os.remove(tmp)
+    finally:
+        if tab:
+            try: S.call("DELETE", f"/tabs/{tab}?{q}", timeout=15)
+            except Exception: pass
+        S.release(lock)
+    fails = 0
+    print(f"uihub check {url} ({surface}, {width} px): {res['elements']} visible elements, {res['bands']} bands, {res['palette']} colours in use")
+    for key, what, rule, hard in PAGE_RULES:
+        c = res[key]; counts = hard is True or surface in hard
+        flag = c["n"] > 0 and counts; fails += flag
+        print(f"  {'FAIL' if flag else ('note' if c['n'] else 'ok  ')}  {c['n']:3} {what} ({rule})")
+        for x in c["samples"][:3 if flag else 1] if c["n"] else []: print(f"          {x}")
+    m = res["motion"]
+    if m["animated"] and not m["reduced_rules"] and not m["unreadable_sheets"]:
+        fails += 1; print(f"  FAIL  {m['animated']:3} animated elements and no prefers-reduced-motion rule (rule 13)"); [print(f"          {x}") for x in m["samples"][:3]]
+    else: print(f"  {'ok  ' if m['reduced_rules'] or not m['animated'] else 'note'}  {m['animated']:3} animated elements; {m['reduced_rules']} reduced-motion rules" + (f"; {m['unreadable_sheets']} style sheets unreadable (other origin)" if m["unreadable_sheets"] else ""))
+    print(f"  shot: {out}")
+    if fails: sys.exit(1)
+
+def checks():
+    """Every baseline project at its inventoried ref, into inventory/checks.json (the nightly; bin/handoff reads it)."""
+    import datetime
+    out = {}
+    for p in BASELINE:
+        try: base, ref, added, bad = unmarked(p); out[p] = {"ref": ref, "added": len(added), "unmarked": [f for f, _ in bad]}
+        except SystemExit as e: out[p] = {"error": str(e)}
+    path = f"{HUB}/inventory/checks.json"  # rewritten only when a result changes: a quiet night makes no commit
+    if not os.path.exists(path) or json.load(open(path))["projects"] != out:
+        json.dump({"at": datetime.datetime.now().astimezone().isoformat(timespec="minutes"), "projects": out}, open(path, "w"), indent=1)
+    print("uihub checks: " + "; ".join(f"{p} {v.get('added', '?')} new, {len(v.get('unmarked', []))} unmarked" + (" (error)" if "error" in v else "") for p, v in out.items()))
+
+def add(cid, frm, reason):
+    if not cid.startswith("siso:"): sys.exit("ours start with siso:")
+    if len(reason.split()) < 4: sys.exit("give a real reason: why does no pick fit?")
+    d = load("catalogue/custom.json")
+    if cid in d: sys.exit(f"{cid} is already registered")
+    import datetime
+    d[cid] = {"from": frm, "reason": reason, "since": datetime.date.today().isoformat()}
+    json.dump(d, open(f"{HUB}/catalogue/custom.json", "w"), ensure_ascii=False, indent=1); print(f"registered {cid}")
+
+a = sys.argv[1:]
+def opt(k):
+    if k in a: i = a.index(k); v = a[i + 1]; del a[i:i + 2]; return v
+if not a or a[0] in ("-h", "--help"): print(__doc__); sys.exit(0)
+cmd = a.pop(0)
+if cmd == "brief" and a: brief(a[0])
+elif cmd == "find" and a: find(a)
+elif cmd == "show" and a: show(a[0])
+elif cmd == "check" and a and re.match(r"https?://", a[0]):
+    js, width, surface, out, wait = opt("--js"), opt("--width"), opt("--surface"), opt("--out"), opt("--wait"); check_url(a[0], js, int(width or 1440), surface or "dashboard", out, float(wait) if wait else None)
+elif cmd == "check" and a: ref, base, repo, prefix = opt("--ref"), opt("--base"), opt("--repo"), opt("--prefix"); check(a[0], ref, base, repo, prefix)
+elif cmd == "checks": checks()
+elif cmd == "add" and a: frm, reason = opt("--from"), opt("--reason"); add(a[0], frm or "", reason or "")
+else: print(__doc__); sys.exit(64)

@@ -1,0 +1,337 @@
+{
+ "arc": {
+  "status": "1/6 sitemap+catalog+llms read; repo cloned (29 MB); next: pages.jsonl, shots, then code reading",
+  "sitemap_urls": 254,
+  "llms": {
+   "arc-llms-small.txt": 40621,
+   "arc-llms.txt": 48758,
+   "arc-llms-full.txt": 1534211
+  },
+  "registry": [
+   {
+    "file": "raw/arc-r_registry.json",
+    "items": 131,
+    "types": {
+     "item": 1,
+     "file": 1,
+     "ui": 107,
+     "block": 22
+    }
+   }
+  ],
+  "shots": 0,
+  "raw_mb": 3.9,
+  "clone": {
+   "mb": 28.8,
+   "licence_files": [
+    "LICENSE"
+   ],
+   "top": [
+    ".git",
+    ".gitattributes",
+    ".github",
+    ".gitignore",
+    "CHANGELOG.md",
+    "CODE_OF_CONDUCT.md",
+    "CONTRIBUTING.md",
+    "LICENSE",
+    "README.md",
+    "SECURITY.md",
+    "eslint.config.mjs",
+    "lib",
+    "package.json",
+    "public"
+   ],
+   "is_git": true
+  }
+ },
+ "bencho": {
+  "status": "1/6 sitemap: starting",
+  "sitemap_urls": 200,
+  "llms": {},
+  "registry": [],
+  "shots": 0,
+  "raw_mb": 3.4,
+  "clone": {
+   "mb": 3.6,
+   "licence_files": [],
+   "top": [
+    "_site-bundle",
+    "blocks"
+   ],
+   "is_git": false
+  }
+ },
+ "devigner": {
+  "status": "2/6 screenshots running (17 pages)",
+  "sitemap_urls": 17,
+  "llms": {
+   "llms.txt": 6152,
+   "llms-full.txt": 89863
+  },
+  "registry": [],
+  "shots": 0,
+  "raw_mb": 2.6,
+  "clone": {
+   "mb": 1.3,
+   "licence_files": [
+    "LICENSE"
+   ],
+   "top": [
+    "LICENSE",
+    "README.md",
+    "dist",
+    "package.json",
+    "registry-extract"
+   ],
+   "is_git": false
+  }
+ },
+ "easyui": {
+  "status": "1/6 sitemap+listing done; fetching 108 component pages",
+  "sitemap_urls": 124,
+  "llms": {
+   "probe_llms.txt": 25872,
+   "probe_llms-full.txt": 1209
+  },
+  "registry": [],
+  "shots": 0,
+  "raw_mb": 9.8,
+  "clone": {
+   "mb": 11.0,
+   "licence_files": [
+    "LICENSE"
+   ],
+   "top": [
+    ".env.example",
+    ".git",
+    ".gitattributes",
+    ".github",
+    ".gitignore",
+    ".oxlintrc.json",
+    "@",
+    "CONTRIBUTING.md",
+    "EASYUI_COMPONENT_DESIGN_SYSTEM.md",
+    "EasyUI Component Design System.md",
+    "LICENSE",
+    "README.md",
+    "components.json",
+    "docs"
+   ],
+   "is_git": true
+  }
+ },
+ "feralui": {
+  "status": "3/6 source+licence: cloned mortspace repos",
+  "sitemap_urls": 37,
+  "llms": {
+   "out_llms-full.txt": 11882,
+   "out_llms.txt": 3784
+  },
+  "registry": [],
+  "shots": 3,
+  "raw_mb": 1.5,
+  "clone": {
+   "mb": 24.2,
+   "licence_files": [
+    "feral-blob/LICENSE",
+    "fur/LICENSE",
+    "pullcord/LICENSE",
+    "momo/LICENSE"
+   ],
+   "top": [
+    "Deskfolio",
+    "animaps",
+    "feral-blob",
+    "fur",
+    "momo",
+    "playcaptcha",
+    "pullcord",
+    "stamp"
+   ],
+   "is_git": false
+  }
+ },
+ "kinetics": {
+  "status": "2/6 cloned; reading repo",
+  "sitemap_urls": 1,
+  "llms": {},
+  "registry": [],
+  "shots": 0,
+  "raw_mb": 0.7,
+  "clone": {
+   "mb": 1.4,
+   "licence_files": [],
+   "top": [
+    ".claude",
+    ".git",
+    ".gitattributes",
+    ".gitignore",
+    ".openai",
+    "README.md",
+    "astro.config.mjs",
+    "package-lock.json",
+    "package.json",
+    "public",
+    "src"
+   ],
+   "is_git": true
+  }
+ },
+ "kobra": {
+  "status": "1/6 sitemap: 89 sitemap URLs + home + /components; fetching per-component md (80)",
+  "sitemap_urls": 89,
+  "llms": {
+   "llms.txt": 11439,
+   "llms-full.txt": 12197
+  },
+  "registry": [
+   {
+    "file": "raw/tmp-kobra-r/out-r_registry.json",
+    "items": 86,
+    "types": {
+     "ui": 80,
+     "lib": 6
+    }
+   }
+  ],
+  "shots": 0,
+  "raw_mb": 1.1
+ },
+ "opensourceui": {
+  "status": "2/6 shots running in bg (log /tmp/osui/shoot.log); reading code",
+  "sitemap_urls": 245,
+  "llms": {
+   "llms.txt": 4574
+  },
+  "registry": [],
+  "shots": 25,
+  "raw_mb": 57.1,
+  "clone": {
+   "mb": 11.3,
+   "licence_files": [
+    "LICENSE"
+   ],
+   "top": [
+    ".cursor",
+    ".env.example",
+    ".git",
+    ".github",
+    ".gitignore",
+    ".husky",
+    ".node-version",
+    ".prettierignore",
+    ".prettierrc",
+    "AGENTS.md",
+    "CODE_OF_CONDUCT.md",
+    "CONTRIBUTING.md",
+    "LICENSE",
+    "PRODUCT.md"
+   ],
+   "is_git": true
+  }
+ },
+ "spaceui": {
+  "status": "2/6 shots running in background (305 pages); repo cloned usespaceui/ui MIT; reading code",
+  "sitemap_urls": 305,
+  "llms": {
+   "llms.txt": 41980
+  },
+  "registry": [],
+  "shots": 1,
+  "raw_mb": 4.0,
+  "clone": {
+   "mb": 26.7,
+   "licence_files": [
+    "LICENSE"
+   ],
+   "top": [
+    ".agents",
+    ".git",
+    ".github",
+    ".gitignore",
+    ".mdxlintrc.json",
+    ".prettierignore",
+    "AGENTS.md",
+    "CLAUDE.md",
+    "CODE_OF_CONDUCT.md",
+    "LICENSE",
+    "README.md",
+    "eslint.config.mjs",
+    "mdxlint.config.mjs",
+    "next.config.ts"
+   ],
+   "is_git": true
+  }
+ },
+ "toolcraft": {
+  "status": "1/6 sitemap fetched (33 urls), clone done (24 MB sparse starter/), building pages list",
+  "sitemap_urls": 34,
+  "llms": {
+   "probe-llms.txt": 50561,
+   "probe-llms-full.txt": 50561
+  },
+  "registry": [],
+  "shots": 0,
+  "raw_mb": 12.4,
+  "clone": {
+   "mb": 24.1,
+   "licence_files": [
+    "LICENSE.md",
+    "starter/LICENSE.md",
+    "starter/src/toolcraft/runtime/model-import/formats/vendor/draco/LICENSE"
+   ],
+   "top": [
+    ".git",
+    ".gitignore",
+    "LICENSE.md",
+    "README.md",
+    "starter"
+   ],
+   "is_git": true
+  }
+ },
+ "uselayouts": {
+  "status": "2/6 shooting 0 of 71 pages",
+  "sitemap_urls": 67,
+  "llms": {
+   "probe_docs_llms.txt": 42294,
+   "probe_llms.txt": 23945,
+   "probe_llms-full.txt": 23945
+  },
+  "registry": [
+   {
+    "file": "raw/tmp-ul/probe_r_registry.json",
+    "items": 64,
+    "types": {
+     "component": 64
+    }
+   }
+  ],
+  "shots": 4,
+  "raw_mb": 1.0,
+  "clone": {
+   "mb": 37.2,
+   "licence_files": [
+    "LICENSE"
+   ],
+   "top": [
+    ".env.example",
+    ".git",
+    ".github",
+    ".gitignore",
+    "LICENSE",
+    "README.md",
+    "app",
+    "cli.json",
+    "components",
+    "components.json",
+    "content",
+    "emails",
+    "eslint.config.mjs",
+    "hooks"
+   ],
+   "is_git": true
+  }
+ }
+}

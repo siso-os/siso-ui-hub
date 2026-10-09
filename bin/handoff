@@ -1,0 +1,51 @@
+#!/usr/bin/env python3
+"""handoff: write one self-contained file per reader from catalogue/swaps.json + picks.json, into handoff/<READER>.md.
+Readers pick these up from UI-HUB's folder (agents don't message agents). Re-run whenever swaps.json changes."""
+import json, os, re, glob, datetime
+HUB = os.path.dirname(os.path.dirname(os.path.realpath(__file__)))  # the siso-ui-hub repo root
+H = HUB
+OUT = os.path.expanduser("~/SISO_Workspace/_data/ui-hub/handoff")  # where readers look (agents don't message agents)
+S = json.load(open(f"{H}/catalogue/swaps.json")); P = json.load(open(f"{H}/catalogue/picks.json"))
+PAGE = "http://127.0.0.1:8891/card/UI-HUB-round1-20261006/html"
+INSTALL = {v["pick"]: v["install"] for k, v in P.items() if not k.startswith("_")}
+now = datetime.datetime.now().astimezone().strftime("%-d %b %H:%M %z")
+os.makedirs(OUT, exist_ok=True)
+for proj, d in S["projects"].items():
+    if not d.get("swaps"): continue
+    reader = d["reader"].split(" (")[0]
+    L = [f"# UI-HUB → {reader}: {proj} swap list", "",
+         f"Written {now} by UI-HUB from `catalogue/swaps.json`. The page: {PAGE}#proj-{proj}", "",
+         *([f"**Status:** {d['status']}", ""] if d.get("status") else []),
+         f"**Read at:** `{d['ref']}`. **When:** {d['reader']}.", "", d["verdict"], "",
+         f"**The rule:** {S['rule']}", "", "## Swaps, by what Shaan will see", ""]
+    for i, s in enumerate(d["swaps"], 1):
+        pick = s["to"].split(" ")[0]
+        L += [f"{i}. **{s['what']}** ({s['effort']}). Swap to {s['to']}.",
+              f"   - Files: " + ", ".join(f"`{f}`" for f in s["files"]),
+              f"   - Shaan sees: {s['gain']}"]
+        if s.get("needs"): L.append(f"   - Needs first: {s['needs']}")
+        if pick in INSTALL: L.append(f"   - Install: `{INSTALL[pick]}`")
+    L += ["", "## Shared patterns: build the catalogue one, not your own", ""]
+    for pt in S["patterns"]:
+        mine = pt["have"].get(proj, [])
+        if mine: L.append(f"- **{pt['pattern']}** → {pt['catalogue']}. Yours today: {', '.join(mine)}. {pt['why']}")
+    if d.get("fix"): L += ["", "## Fix in place", ""] + [f"- {x}" for x in d["fix"]]
+    if d.get("keep"): L += ["", "## Keep", ""] + [f"- {x}" for x in d["keep"]]
+    if d.get("archive"): L += ["", f"## {len(d['archive'])} files no page reaches (check each before archiving under `_archive/`)", ""] + [f"- `{x}`" for x in d["archive"]]
+    L += ["", "## Registered `siso:` items you may use", ""] + [f"- `{r['id']}` from {r['from']}: {r['reason']}" for r in S["register"]]
+    U = f"{H}/bin/uihub".replace(os.path.expanduser("~"), "~")
+    ck = json.load(open(f"{H}/inventory/checks.json"))["projects"] if os.path.exists(f"{H}/inventory/checks.json") else {}
+    sha = (re.search(r"\((\w{7,})\)", d["ref"]) or [None, "-"])[1]  # check from the inventory the swaps were judged at
+    chk = next((c["project"] for c in map(lambda f: json.load(open(f)), glob.glob(f"{H}/inventory/*.census.json")) if c["sha"].startswith(sha)), proj)
+    c = ck.get(chk, {})
+    if c.get("unmarked"):
+        L += ["", f"## New since 7 Oct and not from the catalogue: {len(c['unmarked'])} (nightly check of {c['ref']})", "",
+              "Each one: mark it `// uihub: <pick id>` if a pick fits, or register it as ours (below). Shaan's rule: every component comes from the list.", ""]
+        L += [f"- `{f}`" for f in c["unmarked"][:25]] + ([f"- …and {len(c['unmarked']) - 25} more (`inventory/checks.json`)"] if len(c["unmarked"]) > 25 else [])
+    L += ["", "## Before you build", "",
+          f"- `{U} brief {proj}`: the rules, what fits your surface, the install lines and these swaps, in one screen.",
+          f"- Mark each new component file with a line `// uihub: <id>`: a pick (`{U} find <words>`) or one of ours. Nothing fits? `{U} add siso:<id> --from <path> --reason \"<why no pick fits>\"` before it ships.",
+          f"- `{U} check {chk} --ref <your branch>` lists new component files without a mark (exit 1). Pages, app roots and dev labs are skipped.",
+          f"- `{U} check <your page URL> --surface {'native-app' if proj == 'model-app' else 'dashboard'}` checks the rendered page: box in a box, type sizes per band, emoji, accent lines, inline colours, clickable non-buttons, tall empty states, broken images, motion without reduced motion (one screenshot).", ""]
+    open(f"{OUT}/{reader}.md", "w").write("\n".join(L))
+    print(f"{OUT}/{reader}.md: {len(d['swaps'])} swaps, {len(d.get('archive', []))} to check")

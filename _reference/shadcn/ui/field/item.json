@@ -1,0 +1,20 @@
+{
+ "name": "field",
+ "type": "registry:ui",
+ "dependencies": [
+  "cn"
+ ],
+ "registryDependencies": [
+  "label",
+  "separator"
+ ],
+ "meta": {
+  "links": {
+   "docs": "https://ui.shadcn.com/docs/components/base/field",
+   "examples": "https://ui.shadcn.com/code/apps/v4/registry/bases/base/examples/field-example.tsx"
+  }
+ },
+ "files": [
+  "ui/field.tsx"
+ ]
+}

@@ -1,0 +1,14 @@
+{
+ "name": "message-scroller",
+ "type": "registry:ui",
+ "dependencies": [
+  "cn",
+  "@shadcn/react"
+ ],
+ "registryDependencies": [
+  "button"
+ ],
+ "files": [
+  "ui/message-scroller.tsx"
+ ]
+}

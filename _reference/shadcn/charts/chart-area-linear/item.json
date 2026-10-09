@@ -1,0 +1,12 @@
+{
+ "name": "chart-area-linear",
+ "type": "registry:block",
+ "description": null,
+ "registryDependencies": [
+  "card",
+  "chart"
+ ],
+ "files": [
+  "charts/chart-area-linear.tsx"
+ ]
+}

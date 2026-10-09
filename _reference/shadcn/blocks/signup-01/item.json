@@ -1,0 +1,19 @@
+{
+ "name": "signup-01",
+ "type": "registry:block",
+ "description": "A simple signup form.",
+ "categories": [
+  "authentication",
+  "signup"
+ ],
+ "registryDependencies": [
+  "button",
+  "card",
+  "input",
+  "label"
+ ],
+ "files": [
+  "blocks/signup-01/page.tsx",
+  "blocks/signup-01/components/signup-form.tsx"
+ ]
+}

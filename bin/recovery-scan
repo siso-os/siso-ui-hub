@@ -1,0 +1,54 @@
+#!/usr/bin/env python3
+"""recovery-scan: what each library's research left on disk (sources/<slug> + _reference/ui-libs/<slug>). Cheap; reads no page content."""
+import json, os, re, glob, subprocess
+W = os.path.expanduser("~/SISO_Workspace")
+HUB = os.path.dirname(os.path.dirname(os.path.realpath(__file__)))  # the siso-ui-hub repo root
+S = f"{HUB}/sources"; R = f"{W}/_reference/ui-libs"
+def files(root, pat):
+    out = []
+    for dp, dn, fn in os.walk(root):
+        dn[:] = [d for d in dn if d not in ("node_modules", ".git", ".next")]
+        out += [os.path.join(dp, f) for f in fn if re.search(pat, f)]
+    return out
+def mb(p):
+    try: return round(int(subprocess.run(["du", "-sk", p], capture_output=True, text=True).stdout.split()[0]) / 1024, 1)
+    except Exception: return 0
+rows = {}
+for slug in sorted(os.listdir(S)):
+    d = f"{S}/{slug}"
+    if not os.path.isdir(d): continue
+    r = {"status": open(f"{d}/STATUS").read().strip() if os.path.exists(f"{d}/STATUS") else ""}
+    sm = files(d, r"sitemap.*\.xml$")
+    urls = set()
+    for f in sm:
+        urls |= set(re.findall(r"<loc>\s*([^<]+?)\s*</loc>", open(f, errors="ignore").read()))
+    r["sitemap_urls"] = len(urls)
+    r["llms"] = {os.path.basename(f): os.path.getsize(f) for f in files(d, r"llms.*\.txt$")}
+    reg = []
+    for f in files(d, r"registry.*\.json$"):
+        try:
+            j = json.load(open(f))
+            items = j.get("items") if isinstance(j, dict) else (j if isinstance(j, list) else None)
+            if items:
+                types = {}
+                for it in items:
+                    t = (it.get("type") or "?").replace("registry:", "") if isinstance(it, dict) else "?"
+                    types[t] = types.get(t, 0) + 1
+                reg.append({"file": os.path.relpath(f, d), "items": len(items), "types": types})
+        except Exception: pass
+    r["registry"] = reg
+    r["shots"] = len(glob.glob(f"{d}/shots/*.jpg"))
+    r["raw_mb"] = mb(f"{d}/raw") if os.path.isdir(f"{d}/raw") else 0
+    c = f"{R}/{slug}"
+    if os.path.isdir(c):
+        lic = [os.path.relpath(f, c) for f in files(c, r"^(LICEN[CS]E|COPYING)(\.md|\.txt)?$")][:4]
+        top = sorted(os.listdir(c))[:14]
+        r["clone"] = {"mb": mb(c), "licence_files": lic, "top": top,
+                      "is_git": os.path.isdir(f"{c}/.git")}
+    rows[slug] = r
+json.dump(rows, open(f"{S}/recovery-scan.json", "w"), indent=1)
+for k, r in rows.items():
+    print(f"## {k}: {r['status'][:110]}")
+    print(f"   sitemap={r['sitemap_urls']} llms={r['llms']} shots={r['shots']} raw={r['raw_mb']}MB")
+    for g in r["registry"]: print(f"   registry {g['file']}: {g['items']} {g['types']}")
+    if "clone" in r: print(f"   clone {r['clone']['mb']}MB git={r['clone']['is_git']} lic={r['clone']['licence_files']} top={r['clone']['top']}")

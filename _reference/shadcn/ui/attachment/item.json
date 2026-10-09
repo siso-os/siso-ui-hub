@@ -1,0 +1,13 @@
+{
+ "name": "attachment",
+ "type": "registry:ui",
+ "dependencies": [
+  "cn"
+ ],
+ "registryDependencies": [
+  "button"
+ ],
+ "files": [
+  "ui/attachment.tsx"
+ ]
+}

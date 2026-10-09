@@ -1,0 +1,22 @@
+{
+ "name": "combobox",
+ "type": "registry:ui",
+ "dependencies": [
+  "cn",
+  "@base-ui/react"
+ ],
+ "registryDependencies": [
+  "button",
+  "input-group"
+ ],
+ "meta": {
+  "links": {
+   "docs": "https://ui.shadcn.com/docs/components/base/combobox",
+   "examples": "https://ui.shadcn.com/code/apps/v4/registry/bases/base/examples/combobox-example.tsx",
+   "api": "https://base-ui.com/react/components/combobox.md"
+  }
+ },
+ "files": [
+  "ui/combobox.tsx"
+ ]
+}

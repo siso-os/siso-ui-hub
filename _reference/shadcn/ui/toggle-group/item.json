@@ -1,0 +1,20 @@
+{
+ "name": "toggle-group",
+ "type": "registry:ui",
+ "dependencies": [
+  "cn"
+ ],
+ "registryDependencies": [
+  "toggle"
+ ],
+ "meta": {
+  "links": {
+   "docs": "https://ui.shadcn.com/docs/components/base/toggle-group",
+   "examples": "https://ui.shadcn.com/code/apps/v4/registry/bases/base/examples/toggle-group-example.tsx",
+   "api": "https://base-ui.com/react/components/toggle-group.md"
+  }
+ },
+ "files": [
+  "ui/toggle-group.tsx"
+ ]
+}

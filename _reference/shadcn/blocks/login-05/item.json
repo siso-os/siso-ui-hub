@@ -1,0 +1,22 @@
+{
+ "name": "login-05",
+ "type": "registry:block",
+ "description": "A simple email-only login page.",
+ "categories": [
+  "authentication",
+  "login"
+ ],
+ "dependencies": [
+  "cn"
+ ],
+ "registryDependencies": [
+  "button",
+  "input",
+  "label",
+  "field"
+ ],
+ "files": [
+  "blocks/login-05/page.tsx",
+  "blocks/login-05/components/login-form.tsx"
+ ]
+}

@@ -1,0 +1,24 @@
+{
+ "name": "sidebar-09",
+ "type": "registry:block",
+ "description": "Collapsible nested sidebars.",
+ "categories": [
+  "sidebar",
+  "dashboard"
+ ],
+ "registryDependencies": [
+  "sidebar",
+  "breadcrumb",
+  "separator",
+  "collapsible",
+  "dropdown-menu",
+  "avatar",
+  "switch",
+  "label"
+ ],
+ "files": [
+  "blocks/sidebar-09/page.tsx",
+  "blocks/sidebar-09/components/app-sidebar.tsx",
+  "blocks/sidebar-09/components/nav-user.tsx"
+ ]
+}

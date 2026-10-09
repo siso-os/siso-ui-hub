@@ -1,0 +1,28 @@
+#!/usr/bin/env python3
+"""sheet: tile screenshots into one contact sheet, each optionally cropped, with a caption strip.
+Usage: sheet OUT.jpg COLS TILE_W  img[@x,y,w,h][=caption] ...   (crop box in source pixels; caption defaults to the file name)"""
+import sys, os
+from PIL import Image, ImageDraw, ImageFont
+out, cols, tw = sys.argv[1], int(sys.argv[2]), int(sys.argv[3]); specs = sys.argv[4:]
+tiles = []
+for s in specs:
+    cap = None
+    if "=" in s: s, cap = s.split("=", 1)
+    box = None
+    if "@" in s: s, b = s.split("@", 1); box = tuple(int(v) for v in b.split(","))
+    im = Image.open(s).convert("RGB")
+    if box: x, y, w, h = box; im = im.crop((x, y, x + w, y + h))
+    im = im.resize((tw, int(im.height * tw / im.width)))
+    tiles.append((im, cap or os.path.splitext(os.path.basename(s))[0]))
+th = max(t.height for t, _ in tiles); cap_h = 30; gap = 12
+rows = (len(tiles) + cols - 1) // cols
+sheet = Image.new("RGB", (cols * tw + (cols + 1) * gap, rows * (th + cap_h) + (rows + 1) * gap), (24, 24, 27))
+d = ImageDraw.Draw(sheet)
+try: font = ImageFont.truetype("/System/Library/Fonts/SFNS.ttf", 17)
+except Exception: font = ImageFont.load_default()
+for i, (im, cap) in enumerate(tiles):
+    r, c = divmod(i, cols); x = gap + c * (tw + gap); y = gap + r * (th + cap_h + gap)
+    d.text((x + 2, y + 5), cap, fill=(228, 228, 231), font=font)
+    sheet.paste(im, (x, y + cap_h))
+sheet.save(out, "JPEG", quality=72)
+print(out, sheet.size)

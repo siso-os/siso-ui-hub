@@ -1,0 +1,20 @@
+{
+ "name": "sheet",
+ "type": "registry:ui",
+ "dependencies": [
+  "cn"
+ ],
+ "registryDependencies": [
+  "button"
+ ],
+ "meta": {
+  "links": {
+   "docs": "https://ui.shadcn.com/docs/components/base/sheet",
+   "examples": "https://ui.shadcn.com/code/apps/v4/registry/bases/base/examples/sheet-example.tsx",
+   "api": "https://base-ui.com/react/components/dialog.md"
+  }
+ },
+ "files": [
+  "ui/sheet.tsx"
+ ]
+}

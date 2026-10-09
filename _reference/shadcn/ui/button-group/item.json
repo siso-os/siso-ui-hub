@@ -1,0 +1,19 @@
+{
+ "name": "button-group",
+ "type": "registry:ui",
+ "dependencies": [
+  "cn"
+ ],
+ "registryDependencies": [
+  "separator"
+ ],
+ "meta": {
+  "links": {
+   "docs": "https://ui.shadcn.com/docs/components/base/button-group",
+   "examples": "https://ui.shadcn.com/code/apps/v4/registry/bases/base/examples/button-group-example.tsx"
+  }
+ },
+ "files": [
+  "ui/button-group.tsx"
+ ]
+}

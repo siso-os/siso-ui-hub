@@ -1,0 +1,21 @@
+{
+ "name": "input-group",
+ "type": "registry:ui",
+ "dependencies": [
+  "cn"
+ ],
+ "registryDependencies": [
+  "button",
+  "input",
+  "textarea"
+ ],
+ "meta": {
+  "links": {
+   "docs": "https://ui.shadcn.com/docs/components/base/input-group",
+   "examples": "https://ui.shadcn.com/code/apps/v4/registry/bases/base/examples/input-group-example.tsx"
+  }
+ },
+ "files": [
+  "ui/input-group.tsx"
+ ]
+}

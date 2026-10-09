@@ -1,0 +1,75 @@
+#!/usr/bin/env python3
+"""categorise: map every row of sources/items.jsonl onto SISO's taxonomy (group/category) with ordered keyword rules
+over name + title (description only as a fallback). Writes sources/items.cat.jsonl and prints the overlap table:
+categories that 2+ libraries cover, which is where a best-in-category call is needed. Rules are a tool; UI-HUB
+reviews the result and overrides by hand in sources/overrides.json ({"lib:name": "group/category"})."""
+import json, os, re, collections
+HUB = os.path.dirname(os.path.dirname(os.path.realpath(__file__)))  # the siso-ui-hub repo root
+S = f"{HUB}/sources"
+RULES = [  # first match wins; order matters (specific before generic)
+ (r"orb|thinking|reasoning|agent|tool-?call|ai-?(response|chat|editor|agent)|prompt|composer|chat-?input|conversation|streaming|citation|plan-card|image-generation|llm|voice|eleven", "ai-agent"),
+ (r"hover-?card|preview-?(card|link)|link-?preview|peek", "overlays/hover-card"),
+ (r"tooltip", "overlays/tooltip"), (r"popover|callout", "overlays/popover"),
+ (r"context-?menu", "overlays/context-menu"), (r"alert-?dialog|dialog|modal", "overlays/dialog"),
+ (r"drawer|sheet|bottom-?sheet", "overlays/sheet"), (r"toast|snackbar|notification|sonner", "overlays/toast"),
+ (r"lightbox", "overlays/lightbox"), (r"\balert\b|banner", "overlays/alert-banner"),
+ (r"command|kbar|cmdk|spotlight", "navigation/command-palette"), (r"breadcrumb", "navigation/breadcrumb"),
+ (r"tabs?\b|tab-", "navigation/tabs"), (r"sidebar|side-?nav|rail", "navigation/sidebar"),
+ (r"dock", "navigation/dock"), (r"pagination|pager", "navigation/pagination"),
+ (r"stepper|steps|wizard|onboarding", "navigation/wizard-steps"), (r"table-of-contents|\btoc\b", "navigation/table-of-contents"),
+ (r"menubar|navigation-?menu|navbar|nav-|top-?nav|header", "navigation/top-nav"), (r"menu|dropdown", "navigation/menu"),
+ (r"data-?grid|data-?table|\btable\b|spreadsheet", "data-display/table"), (r"timeline|activity|feed|changelog", "data-display/timeline"),
+ (r"kanban|board", "data-display/kanban"), (r"event-?calendar|schedule|agenda", "data-display/calendar"),
+ (r"tree", "data-display/tree"), (r"accordion|collapsible|disclosure|faq", "data-display/accordion"),
+ (r"code-?block|code|snippet|syntax", "data-display/code-block"), (r"json", "data-display/json-viewer"),
+ (r"diff", "data-display/diff"), (r"comment|thread|chat", "data-display/chat-thread"),
+ (r"avatar|face|people|team", "data-display/avatar"), (r"badge|chip|\btag\b|pill|label-?badge", "data-display/badge"),
+ (r"stat|kpi|metric|number-?card|counter-?card", "data-display/stat"), (r"empty", "data-display/empty-state"),
+ (r"chart|graph|bar|sparkline|heatmap|github-activity|contribution", "data-viz/chart"),
+ (r"gauge|meter|dial", "data-viz/gauge"), (r"progress", "data-viz/progress-bar"), (r"map|route", "data-viz/map"),
+ (r"spinner|loader|loading", "status/loader"), (r"skeleton|shimmer", "status/skeleton"),
+ (r"status|presence|online|indicator|pulse", "status/status-dot"),
+ (r"date-?range|range-?picker", "inputs/date-range"), (r"date|calendar|day-?picker", "inputs/date-picker"),
+ (r"time", "inputs/time-picker"), (r"color|palette|gradient|hue", "inputs/color-picker"),
+ (r"upload|dropzone|file", "inputs/file-upload"), (r"otp|one-time|pin-?input", "inputs/otp-input"),
+ (r"slider|range|scrub", "inputs/slider"), (r"combobox|autocomplete|mention", "inputs/combobox"),
+ (r"multi-?select|tag-?input|tags-?input", "inputs/tag-input"), (r"select|picker|listbox", "inputs/select"),
+ (r"search", "inputs/search"), (r"textarea|editor|rich-?text", "inputs/textarea"),
+ (r"checkbox", "inputs/checkbox"), (r"radio", "inputs/radio"), (r"number-?(field|input)|stepper-?input|quantity", "inputs/number-input"),
+ (r"rating|stars?\b", "inputs/rating"), (r"form|field|fieldset|input|label|login|sign-?in|sign-?up|password|auth", "inputs/form-field"),
+ (r"switch|toggle", "actions/switch"), (r"segment", "actions/segmented-control"), (r"copy|clipboard", "actions/copy-button"),
+ (r"button|btn|cta|like|bookmark|hold|press|confirm", "actions/button"),
+ (r"carousel|slideshow|marquee-?gallery", "media/carousel"), (r"image-?compare|before-?after|compare", "media/image-compare"),
+ (r"gallery|masonry|photo|image", "media/gallery"), (r"card-?stack|stack|deck|swipe", "media/card-stack"),
+ (r"video|player|audio|music|sound", "media/player"),
+ (r"bento", "layout/bento-grid"), (r"resizable|split|panel", "layout/split-pane"), (r"scroll-?area|scroll", "layout/scroll-area"),
+ (r"dashboard|workspace|shell|layout|grid|section|template", "layout/page-shell"), (r"settings", "flows/settings"),
+ (r"hero|feature|pricing|testimonial|logo|footer|landing|cta", "marketing"),
+ (r"text|type|word|letter|glitch|scramble|morph|reveal|blur", "motion/text-effect"), (r"number|ticker|count|odometer|clock", "motion/number-ticker"),
+ (r"shader|background|aurora|gradient|mesh|noise|dither|particles|glow|beam|dots|halftone|silk|fluid|liquid|goo", "motion/background"),
+ (r"cursor|magnetic|pointer|mouse", "motion/cursor"), (r"tilt|3d|parallax|flip|book|fold", "motion/tilt-3d"),
+ (r"card", "data-display/card"), (r"list|row|item", "data-display/list"),
+]
+def main():
+    OV = json.load(open(f"{S}/overrides.json")) if os.path.exists(f"{S}/overrides.json") else {}
+    rows = [json.loads(l) for l in open(f"{S}/items.jsonl")]
+    for r in rows:
+        key = f"{r['name']} {r['title']}".lower().replace("_", "-")
+        cat = OV.get(r["id"])
+        if not cat:
+            for pat, c in RULES:
+                if re.search(pat, key): cat = c; break
+        if not cat:
+            d = (r.get("desc") or "").lower()
+            for pat, c in RULES:
+                if re.search(pat, d): cat = c + "?"; break
+        r["cat"] = cat or "unsorted"
+    with open(f"{S}/items.cat.jsonl", "w") as f:
+        for r in rows: f.write(json.dumps(r, ensure_ascii=False) + "\n")
+    by = collections.defaultdict(lambda: collections.Counter())
+    for r in rows: by[r["cat"].rstrip("?")][r["lib"]] += 1
+    over = sorted(((c, libs) for c, libs in by.items() if len(libs) >= 2), key=lambda x: (-len(x[1]), x[0]))
+    print(f"{len(rows)} items, {len(by)} categories, {len(over)} covered by 2+ libraries; unsorted={sum(by['unsorted'].values())}")
+    for c, libs in over: print(f"{c:30} {len(libs)} libs  " + " ".join(f"{l}:{n}" for l, n in libs.most_common()))
+
+if __name__ == "__main__": main()

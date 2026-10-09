@@ -1,0 +1,162 @@
+{
+ "_about": "Which catalogue items suit which surface kind (yes / careful / no) and why. Source: round 1, chapter 1 matrix.",
+ "fit": [
+  {
+   "item": "Hover card (Arc)",
+   "ids": [
+    "arc:hover-card"
+   ],
+   "dashboard": "yes",
+   "native-app": "careful",
+   "landing-site": "no",
+   "why": "Dense rows of people and agents; preview without leaving. Phones have no hover, so the app uses tap, and sites don't use it at all."
+  },
+  {
+   "item": "Bell (Arc notification centre)",
+   "ids": [
+    "arc:notification-center",
+    "siso:agent-notification-row"
+   ],
+   "dashboard": "yes",
+   "native-app": "yes",
+   "landing-site": "no",
+   "why": "One bell in the header (ADR 15). The app adds operating-system notifications."
+  },
+  {
+   "item": "Command palette (Arc)",
+   "ids": [
+    "arc:command-palette"
+   ],
+   "dashboard": "yes",
+   "native-app": "careful",
+   "landing-site": "no",
+   "why": "Keyboard power for people who live in it. A model mid-show won't press ⌘K."
+  },
+  {
+   "item": "Toast (Arc)",
+   "ids": [
+    "arc:toast",
+    "arc:toast-stack"
+   ],
+   "dashboard": "yes",
+   "native-app": "yes",
+   "landing-site": "careful",
+   "why": "Brief confirmations. On a site, only \"Message sent\"."
+  },
+  {
+   "item": "Timeline (Arc)",
+   "ids": [
+    "arc:timeline"
+   ],
+   "dashboard": "yes",
+   "native-app": "yes",
+   "landing-site": "careful",
+   "why": "Activity, sessions and supporters, by day. On a site, only a static \"our story\"."
+  },
+  {
+   "item": "Sortable and dense tables (Arc, EasyUI)",
+   "ids": [
+    "arc:sortable-data-table",
+    "easyui:advanced-data-table"
+   ],
+   "dashboard": "yes",
+   "native-app": "careful",
+   "landing-site": "no",
+   "why": "Comparing records is dashboard work. On a narrow screen a table becomes a list."
+  },
+  {
+   "item": "Big virtual grid (Space UI)",
+   "ids": [
+    "spaceui:components-spaceui-data-grid-table"
+   ],
+   "dashboard": "careful",
+   "native-app": "no",
+   "landing-site": "no",
+   "why": "Only above about a thousand rows; below that the sortable table is lighter."
+  },
+  {
+   "item": "Stat tile (siso:stat-tile), metric card (Arc)",
+   "ids": [
+    "siso:stat-tile",
+    "arc:metric-card"
+   ],
+   "dashboard": "yes",
+   "native-app": "yes",
+   "landing-site": "careful",
+   "why": "The S widget. A site gets one static stats band as social proof (\"1,000 sites built\")."
+  },
+  {
+   "item": "Period filter (Space UI date selector)",
+   "ids": [
+    "spaceui:components-spaceui-date-selector"
+   ],
+   "dashboard": "yes",
+   "native-app": "careful",
+   "landing-site": "no",
+   "why": "Is, before, after, between, by day to year: the dashboard's filter. The app needs only \"tonight / this week\"."
+  },
+  {
+   "item": "Agent run (EasyUI)",
+   "ids": [
+    "easyui:ai-agent-activity"
+   ],
+   "dashboard": "yes",
+   "native-app": "careful",
+   "landing-site": "no",
+   "why": "One line per step in Agent Base. The Oracle shows steps only when asked."
+  },
+  {
+   "item": "AI answer (EasyUI), chat thread (Arc)",
+   "ids": [
+    "easyui:ai-response",
+    "arc:chat-thread"
+   ],
+   "dashboard": "yes",
+   "native-app": "yes",
+   "landing-site": "careful",
+   "why": "Agent chat, room chat and the Oracle. A site gets a chatbot later, as one island."
+  },
+  {
+   "item": "Drawer and bottom sheet (Arc)",
+   "ids": [
+    "arc:drawer",
+    "arc:bottom-sheet"
+   ],
+   "dashboard": "yes",
+   "native-app": "yes",
+   "landing-site": "careful",
+   "why": "Open detail in place (ADR 5). On a site, only the phone menu, in CSS."
+  },
+  {
+   "item": "Skeleton and shimmer (Arc)",
+   "ids": [
+    "arc:skeleton",
+    "arc:text-shimmer"
+   ],
+   "dashboard": "yes",
+   "native-app": "yes",
+   "landing-site": "no",
+   "why": "The shell loads once and data streams in (ADR 10). A static page arrives whole."
+  },
+  {
+   "item": "Tuning panel (Toolcraft)",
+   "ids": [
+    "toolcraft:settings-transfer"
+   ],
+   "dashboard": "careful",
+   "native-app": "no",
+   "landing-site": "no",
+   "why": "For us while designing, never for customers."
+  },
+  {
+   "item": "Hero, menu, hours and map, photos, reviews, footer",
+   "ids": [
+    "vertical section kit"
+   ],
+   "dashboard": "no",
+   "native-app": "no",
+   "landing-site": "yes",
+   "why": "The landing site's section kit: static, tokenised and versioned. Libraries are only references here."
+  }
+ ]
+}

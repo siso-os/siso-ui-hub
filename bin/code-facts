@@ -1,0 +1,60 @@
+#!/usr/bin/env python3
+"""code-facts: cheap, model-free facts about each component's real source, so UI-HUB reads code only for a shortlist.
+For every row of sources/items.cat.jsonl it resolves the files in the shallow clones (_reference/ui-libs/<lib>) or the
+saved registry JSON, then counts: lines, imports (motion, radix/base-ui/aria primitives, gsap/three), accessibility signals
+(aria-*, role=, key handlers, focus-visible, tabIndex), reduced-motion handling, hard-coded colours vs tokens.
+Writes sources/code-facts.jsonl ({id, found, files, loc, imports[], a11y, reduced, hex, tokens, motion}). Read-only."""
+import json, os, re, glob
+HUB = os.path.dirname(os.path.dirname(os.path.realpath(__file__)))  # the siso-ui-hub repo root
+W = os.path.expanduser("~/SISO_Workspace"); S = f"{HUB}/sources"; R = f"{W}/_reference/ui-libs"
+rows = [json.loads(l) for l in open(f"{S}/items.cat.jsonl")]
+
+def src_for(r):
+    lib, n = r["lib"], r["name"]
+    paths = [f"{R}/{lib}/{p}" for p in r.get("files") or [] if p]
+    paths = [p for p in paths if os.path.isfile(p)]
+    if paths: return [(p, open(p, errors="ignore").read()) for p in paths]
+    if lib == "kobra":
+        p = f"{S}/kobra/raw/tmp-kobra-r/out-r_{n}.json"
+        if os.path.isfile(p):
+            try: return [(f.get("path", n), f.get("content", "")) for f in json.load(open(p)).get("files", [])]
+            except Exception: return []
+    pats = {"toolcraft": [f"{R}/toolcraft/starter/src/toolcraft/**/{n}*", f"{R}/toolcraft/starter/src/toolcraft/**/{n}/*"],
+            "feralui": [f"{R}/feralui/*/**/*{n}*.tsx", f"{R}/feralui/*/**/*{n}*.ts"],
+            "kinetics": [f"{R}/kinetics/src/**/*{n}*"],
+            "uselayouts": [f"{R}/uselayouts/registry/default/**/{n}.tsx"],
+            "easyui": [f"{R}/easyui/src/**/{n}.tsx"],
+            "devigner": [f"{R}/devigner/registry-extract/components/ui/{n}.tsx", f"{R}/devigner/registry-extract/components/ui/{n}*.tsx"]}.get(lib, [])
+    out = []
+    for pat in pats:
+        for p in glob.glob(pat, recursive=True):
+            if os.path.isfile(p) and "node_modules" not in p and os.path.getsize(p) < 400_000:
+                out.append((p, open(p, errors="ignore").read()))
+        if out: break
+    return out[:6]
+
+IMP = re.compile(r"""(?:import[^'"]*from\s*|require\()\s*['"]([^'"]+)['"]""")
+def facts(files):
+    code = "\n".join(c for _, c in files)
+    imps = sorted({m.split("/")[0] if not m.startswith("@") else "/".join(m.split("/")[:2]) for m in IMP.findall(code)
+                   if not m.startswith((".", "@/", "~/"))})
+    return {"files": [os.path.relpath(p, R) if p.startswith(R) else p for p, _ in files], "loc": code.count("\n") + 1,
+            "imports": imps,
+            "a11y": len(re.findall(r"aria-[a-z]+|role=|onKeyDown|onKeyUp|keydown|focus-visible|tabIndex|useFocus|sr-only", code)),
+            "reduced": bool(re.search(r"prefers-reduced-motion|useReducedMotion|reducedMotion|motion-reduce", code)),
+            "hex": len(re.findall(r"#[0-9a-fA-F]{3,8}\b|rgba?\(\s*\d|hsla?\(\s*\d", code)),
+            "tokens": len(re.findall(r"var\(--|(?:bg|text|border|ring|fill|stroke)-(?:background|foreground|muted|primary|secondary|accent|card|popover|border|input|ring|destructive)", code)),
+            "motion": sorted({k for k, rx in {"motion": r"from ['\"](?:motion|framer-motion)", "gsap": r"gsap", "css": r"@keyframes|transition[:-]",
+                                              "spring": r"spring", "three": r"three|@react-three", "canvas": r"getContext\("}.items() if re.search(rx, code)})}
+
+out = []
+for r in rows:
+    fs = src_for(r)
+    f = facts(fs) if fs else {}
+    out.append({"id": r["id"], "found": bool(fs), **f})
+with open(f"{S}/code-facts.jsonl", "w") as fh:
+    for o in out: fh.write(json.dumps(o) + "\n")
+import collections
+c = collections.Counter((o["id"].split(":")[0], o["found"]) for o in out)
+libs = sorted({k[0] for k in c})
+print("source found per library:", ", ".join(f"{l} {c[(l, True)]}/{c[(l, True)] + c[(l, False)]}" for l in libs))

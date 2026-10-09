@@ -1,0 +1,12 @@
+{
+ "name": "chart-pie-label",
+ "type": "registry:block",
+ "description": null,
+ "registryDependencies": [
+  "card",
+  "chart"
+ ],
+ "files": [
+  "charts/chart-pie-label.tsx"
+ ]
+}

@@ -1,0 +1,32 @@
+{
+ "name": "sidebar-15",
+ "type": "registry:block",
+ "description": "A left and right sidebar.",
+ "categories": [
+  "sidebar",
+  "dashboard"
+ ],
+ "registryDependencies": [
+  "sidebar",
+  "breadcrumb",
+  "separator",
+  "popover",
+  "collapsible",
+  "dropdown-menu",
+  "calendar",
+  "avatar"
+ ],
+ "files": [
+  "blocks/sidebar-15/page.tsx",
+  "blocks/sidebar-15/components/calendars.tsx",
+  "blocks/sidebar-15/components/date-picker.tsx",
+  "blocks/sidebar-15/components/nav-favorites.tsx",
+  "blocks/sidebar-15/components/nav-main.tsx",
+  "blocks/sidebar-15/components/nav-secondary.tsx",
+  "blocks/sidebar-15/components/nav-user.tsx",
+  "blocks/sidebar-15/components/nav-workspaces.tsx",
+  "blocks/sidebar-15/components/sidebar-left.tsx",
+  "blocks/sidebar-15/components/sidebar-right.tsx",
+  "blocks/sidebar-15/components/team-switcher.tsx"
+ ]
+}

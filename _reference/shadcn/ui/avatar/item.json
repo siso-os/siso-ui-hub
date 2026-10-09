@@ -1,0 +1,17 @@
+{
+ "name": "avatar",
+ "type": "registry:ui",
+ "dependencies": [
+  "cn"
+ ],
+ "meta": {
+  "links": {
+   "docs": "https://ui.shadcn.com/docs/components/base/avatar",
+   "examples": "https://ui.shadcn.com/code/apps/v4/registry/bases/base/examples/avatar-example.tsx",
+   "api": "https://base-ui.com/react/components/avatar.md"
+  }
+ },
+ "files": [
+  "ui/avatar.tsx"
+ ]
+}

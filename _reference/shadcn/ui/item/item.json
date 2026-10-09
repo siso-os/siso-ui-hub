@@ -1,0 +1,19 @@
+{
+ "name": "item",
+ "type": "registry:ui",
+ "dependencies": [
+  "cn"
+ ],
+ "registryDependencies": [
+  "separator"
+ ],
+ "meta": {
+  "links": {
+   "docs": "https://ui.shadcn.com/docs/components/base/item",
+   "examples": "https://ui.shadcn.com/code/apps/v4/registry/bases/base/examples/item-example.tsx"
+  }
+ },
+ "files": [
+  "ui/item.tsx"
+ ]
+}

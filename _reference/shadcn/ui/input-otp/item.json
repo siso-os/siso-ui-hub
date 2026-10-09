@@ -1,0 +1,18 @@
+{
+ "name": "input-otp",
+ "type": "registry:ui",
+ "dependencies": [
+  "cn",
+  "input-otp"
+ ],
+ "meta": {
+  "links": {
+   "docs": "https://ui.shadcn.com/docs/components/base/input-otp",
+   "examples": "https://ui.shadcn.com/code/apps/v4/registry/bases/base/examples/input-otp-example.tsx",
+   "api": "https://input-otp.rodz.dev"
+  }
+ },
+ "files": [
+  "ui/input-otp.tsx"
+ ]
+}

@@ -1,0 +1,13 @@
+{
+ "name": "chart-area-interactive",
+ "type": "registry:block",
+ "description": null,
+ "registryDependencies": [
+  "card",
+  "chart",
+  "select"
+ ],
+ "files": [
+  "charts/chart-area-interactive.tsx"
+ ]
+}

@@ -1,0 +1,17 @@
+{
+ "name": "sidebar-03",
+ "type": "registry:block",
+ "description": "A sidebar with submenus.",
+ "categories": [
+  "sidebar",
+  "dashboard"
+ ],
+ "registryDependencies": [
+  "sidebar",
+  "breadcrumb"
+ ],
+ "files": [
+  "blocks/sidebar-03/page.tsx",
+  "blocks/sidebar-03/components/app-sidebar.tsx"
+ ]
+}

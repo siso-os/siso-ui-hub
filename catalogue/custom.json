@@ -1,0 +1,38 @@
+{
+ "_about": "Our own components, registered with a reason (the rule: every UI component comes from the catalogue; a custom one is added here before it ships). Library picks are in picks.json.",
+ "siso:agent-notification-row": {
+  "from": "agent-base AgentNotificationStack",
+  "reason": "You asked for these owner pop-ups; approved bank 'good'. Face, title, the ask, react, reply in one row. No library row does this.",
+  "since": "2026-10-07"
+ },
+ "siso:person-card": {
+  "from": "agent-base AgentHoverCard",
+  "reason": "Who, state, what they hold, last report, plan progress: our domain. Rides on arc:hover-card timing.",
+  "since": "2026-10-07"
+ },
+ "siso:stat-tile": {
+  "from": "operator ui/StatTile",
+  "reason": "The S widget: value, unit, label, delta tone, and it is a button (a tile that filters). Token-based, 35 lines.",
+  "since": "2026-10-07"
+ },
+ "siso:status-badge": {
+  "from": "operator ui/StatusBadge",
+  "reason": "Live/idle/error with reduced-motion handled; on 42 Operator pages. ADR 9.",
+  "since": "2026-10-07"
+ },
+ "siso:empty-state": {
+  "from": "operator ui/EmptyState + EmptyArt",
+  "reason": "Whole-page empty with our own 13 drawings and one next step.",
+  "since": "2026-10-07"
+ },
+ "siso:segmented": {
+  "from": "operator ui/Segmented (ViewSwitch)",
+  "reason": "List/cards switch; small, token-based.",
+  "since": "2026-10-07"
+ },
+ "siso:kit-base-ui": {
+  "from": "operator ui/ (Popover, Tabs, HubTabs, ConfirmDialog, MonthCalendar)",
+  "reason": "Thin token wrappers on Base UI; already what the catalogue asks for. Kept, not swapped.",
+  "since": "2026-10-07"
+ }
+}

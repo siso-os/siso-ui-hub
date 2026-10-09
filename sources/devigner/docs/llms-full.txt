@@ -1,0 +1,1926 @@
+# Devigner UI
+
+> Free animated React components for Tailwind CSS. Each component installs as a plain .tsx file in your repo with one command, and ships with keyboard support, reduced motion and light/dark themes built in.
+
+- Site: https://ui.devigner.cc
+- Requirements: React 18 or 19, Tailwind CSS v4
+- Set up once per project: `npx devignerui init`
+- Add a component: `npx devignerui add <name>` (writes components/ui/<name>.tsx and lists the packages it needs)
+- npm package: devignerui (React components, motion tokens and the CLI)
+- License: MIT, free including commercial use
+- Components: 14
+
+## FAQ
+
+### Is Devigner UI free?
+
+Yes. Every component on the site is free, including for commercial work. Pro will be a separate paid set, and nothing that's free now moves behind it.
+
+### How do I add a component to my project?
+
+Run npx devignerui init once per project, then npx devignerui add with the component's name. The CLI writes the file into components/ui and prints the npm packages it needs.
+
+### Does it work with shadcn/ui?
+
+Yes. Components install into the same components/ui folder and use the standard shadcn/ui color tokens (primary, secondary, muted, accent, border, ring and the rest), so they pick up your existing theme and dark mode with nothing to add.
+
+### Do I need Framer Motion?
+
+Most components use Motion, the library that used to be called Framer Motion, and a few use GSAP. Each component's page and the CLI list exactly which packages it needs.
+
+### Will it work with the Next.js App Router?
+
+Yes. Every component starts with "use client", so you can render it from a server component.
+
+### How do dark mode and theming work?
+
+Every color is a CSS variable. Put the dark class on your html element and the components switch, and override any variable in your own CSS to change the look.
+
+## Contact Lens
+
+> A dim contact line with an icon row: hover an icon and its part of the line lifts and lights up under a label, click to copy it.
+
+- Page: https://ui.devigner.cc/components/contact-lens
+- Category: Animation
+- Requirements: React 18 or 19, Tailwind CSS v4
+- Install: `npx devignerui add contact-lens` (writes components/ui/contact-lens.tsx)
+- Packages it needs: cn, motion, @devigner-ui/icons, devignerui
+
+### What the demo shows
+
+The live demo is hello@devigner.cc in dim text over a mail, a globe and a user icon. Hover the mail icon and the whole address lifts and lights with an Email pill under it; the globe lights devigner.cc under a Website pill, the user icon lights hello under a Name pill. Click an icon to copy that part.
+
+### When to use it
+
+- A contact block on a portfolio or studio site where one line carries the name, the domain and the email.
+- Any short string made of parts people might want to copy one at a time.
+
+### When to reach for something else
+
+- Contact details people need to read at a glance. The line rests dimmed; use plain text.
+- Long or multi-line text. The parts are lit inside one line.
+
+### Usage
+
+```tsx
+import { ContactLens } from "@/components/ui/contact-lens";
+
+<ContactLens value="hello@devigner.cc" items={items} />
+```
+
+Custom composition:
+
+```tsx
+<ContactLens value="hello@devigner.cc" items={items} copiedLabel="On your clipboard" className="text-2xl" />
+```
+
+#### Studio contact
+
+Email, website and name from one address.
+
+```tsx
+import { IconGlobal, IconSms, IconUser } from "@devigner-ui/icons";
+import { ContactLens } from "@/components/ui/contact-lens";
+
+const items = [
+  { label: "Email", icon: <IconSms /> },
+  { label: "Website", icon: <IconGlobal />, text: "devigner.cc", copy: "https://devigner.cc" },
+  { label: "Name", icon: <IconUser />, text: "hello" },
+];
+
+export function Contact() {
+  return <ContactLens value="hello@devigner.cc" items={items} />;
+}
+```
+
+#### Links instead of copy
+
+Email opens the mail app, the website opens in a tab.
+
+```tsx
+import { IconGlobal, IconSms } from "@devigner-ui/icons";
+import { ContactLens } from "@/components/ui/contact-lens";
+
+const items = [
+  { label: "Email", icon: <IconSms />, href: "mailto:hello@devigner.cc" },
+  { label: "Website", icon: <IconGlobal />, text: "devigner.cc", href: "https://devigner.cc" },
+];
+
+export function ContactLinks() {
+  return <ContactLens value="hello@devigner.cc" items={items} />;
+}
+```
+
+#### Light a part from outside
+
+Control the lit item, for example from a button elsewhere on the page.
+
+```tsx
+import { useState } from "react";
+import { IconSms, IconUser } from "@devigner-ui/icons";
+import { ContactLens } from "@/components/ui/contact-lens";
+
+const items = [
+  { label: "Email", icon: <IconSms /> },
+  { label: "Name", icon: <IconUser />, text: "hello" },
+];
+
+export function Highlighted() {
+  const [active, setActive] = useState<string | null>(null);
+  return (
+    <div>
+      <button type="button" onClick={() => setActive("Email")}>Show email</button>
+      <ContactLens value="hello@devigner.cc" items={items} active={active} onActiveChange={setActive} />
+    </div>
+  );
+}
+```
+
+### Props
+
+| Prop | Type | Default | Description |
+| --- | --- | --- | --- |
+| value | `string` | - | The full line, for example an email address. |
+| items | `{ label, icon, id?, text?, copy?, href?, pill? }[]` | - | One icon each. text is the part of value it lights (the whole value when left out); copy is what a click copies; href makes the icon a link instead; pill is "above" or "below". |
+| active | `string \| null` | - | Controlled id (or label) of the lit item. |
+| defaultActive | `string \| null` | null | Item lit at first when uncontrolled. |
+| onActiveChange | `function` | - | Fires as hover and focus light or clear an item. |
+| onSelect | `function` | - | Fires with the item on every click. |
+| onCopy | `function` | - | Fires with the copied text and item after a copy. |
+| onError | `function` | - | Fires when the clipboard write fails. |
+| copiedLabel | `string` | Copied | Pill text after a copy. |
+| resetAfter | `number` | 1200 | ms the Copied pill holds. |
+| classNames | `{ text?, lit?, pill?, icon? }` | - | Slot classes: every piece of the line, lit pieces, the pill, each icon. |
+
+### Keyboard
+
+| Keys | Action |
+| --- | --- |
+| Tab | Moves between the icons; the focused icon lights its part like a hover. |
+| Enter / Space | Copies the focused icon's part, or follows its link. |
+
+### Accessibility
+
+- Each icon is a real button named Copy <label>: <text>, or a link named <label>: <text> when it has href, with a visible focus ring.
+- A polite live region announces each copy.
+- Honors prefers-reduced-motion and an ancestor <MotionConfig reducedMotion="always">: parts and pills fade without lifting or blurring.
+
+### Theming
+
+- Text and icons are text-foreground at 35% opacity at rest and full when lit; the pill is bg-foreground with text-background, so it flips with the theme.
+- Everything is sized in em from the root's text-4xl. Pass a text size in className to scale the whole thing.
+- classNames targets text (every piece), lit (pieces while lit), pill and icon.
+
+### Edge cases
+
+- text must appear in value; the first match is lit. Leave it out to light the whole line. The pill sits below the whole line and above a part unless the item sets pill.
+- An item with href is a link: a click follows it and calls onSelect, with no copy.
+- copy falls back to text, then to value.
+- Copying uses navigator.clipboard, which needs https or localhost. A failed copy calls onError and leaves the pill unchanged.
+- With active passed, hover and focus only call onActiveChange; the lit item changes when you update active.
+
+### Troubleshooting
+
+**The component renders with no background or the wrong colors.**
+Colors use the standard shadcn/ui tokens only (background, foreground, primary, secondary, muted, accent, border, input, ring, destructive), so a project set up with shadcn/ui needs nothing extra and the component follows its theme, dark mode included. Without shadcn/ui, define those CSS variables for :root and .dark and map them in your Tailwind v4 @theme, or run npx shadcn init.
+
+---
+
+## Copy Button
+
+> Copies text in one click, then turns green and retypes its label to Copied.
+
+- Page: https://ui.devigner.cc/components/copy-button
+- Category: Primitives
+- Requirements: React 18 or 19, Tailwind CSS v4
+- Install: `npx devignerui add copy-button` (writes components/ui/copy-button.tsx)
+- Packages it needs: cn, motion, @devigner-ui/icons, devignerui
+
+### What the demo shows
+
+The live demo is a black Copy pill. Click it and the text goes to your clipboard, the pill turns green, the icon blurs into a check and the label retypes itself to Copied, then it settles back after a second.
+
+### When to use it
+
+- Copying a command, token, link or code snippet where the user needs to know the copy landed.
+- Any spot that already has a primary action style and needs a single compact copy control.
+
+### When to reach for something else
+
+- Icon-only copy affordances inside dense code blocks. A plain icon button takes less room.
+- Copying data that needs a format choice (CSV or JSON). Use a menu for that.
+
+### Usage
+
+```tsx
+import { CopyButton } from "@/components/ui/copy-button";
+
+<CopyButton value="npx devignerui add copy-button" />
+```
+
+Custom composition:
+
+```tsx
+<CopyButton value={() => editor.getText()} label="Copy code" copiedLabel="Copied!" />
+```
+
+#### Copy an install command
+
+Pass the text and log the result.
+
+```tsx
+import { CopyButton } from "@/components/ui/copy-button";
+
+export function InstallCommand() {
+  return (
+    <CopyButton
+      value="pnpm add devignerui"
+      onCopy={(text) => console.log("copied", text)}
+      onError={(error) => console.error(error)}
+    />
+  );
+}
+```
+
+#### Copy a link created on the server
+
+Return a promise from value and the button waits on it with a spinner.
+
+```tsx
+import { CopyButton } from "@/components/ui/copy-button";
+
+export function ShareLink({ id }: { id: string }) {
+  return (
+    <CopyButton
+      label="Copy link"
+      copiedLabel="Link copied"
+      value={() => fetch(`/api/share/${id}`).then((r) => r.text())}
+    />
+  );
+}
+```
+
+#### Icon-only button in a code block
+
+Small and square, with the label kept for screen readers.
+
+```tsx
+import { CopyButton } from "@/components/ui/copy-button";
+
+export function CodeCopy({ code }: { code: string }) {
+  return <CopyButton value={code} iconOnly size="sm" label="Copy code" />;
+}
+```
+
+### Props
+
+| Prop | Type | Default | Description |
+| --- | --- | --- | --- |
+| value | `string \| function` | - | Text to copy. A function is read at click time and may return a promise. |
+| copy | `function` | navigator.clipboard.writeText | Writes the text. Swap it for rich content or a fallback. |
+| status | `"idle" \| "pending" \| "copied" \| "error"` | - | Controlled state. |
+| defaultStatus | `"idle" \| "pending" \| "copied" \| "error"` | "idle" | Initial state when uncontrolled. |
+| onStatusChange | `function` | - | Fires whenever the state changes. |
+| onCopy | `function` | - | Fires after the text is on the clipboard. |
+| onError | `function` | - | Fires when reading or writing fails. |
+| label | `string` | Copy | Label at rest. |
+| copiedLabel | `string` | Copied | Label after a copy. |
+| pendingLabel | `string` | Copying | Label while an async value resolves. |
+| errorLabel | `string` | Failed | Label after a failed copy. |
+| resetAfter | `number` | 1000 | ms the copied or error state holds. 0 keeps it. |
+| size | `"sm" \| "md" \| "lg"` | "md" | Height: 36, 44 or 52px. |
+| iconOnly | `boolean` | false | Hides the text; the label stays as the accessible name. |
+| disabled | `boolean` | false | Disables interaction. |
+
+### Keyboard
+
+| Keys | Action |
+| --- | --- |
+| Enter / Space | Copies the value. Ignored while an async value is still resolving. |
+
+### Accessibility
+
+- A real button element with visible focus.
+- Its accessible name follows the state (label, pendingLabel, copiedLabel, errorLabel), and a polite live region announces every state but idle.
+- aria-busy is set while an async value resolves, and data-status mirrors the state for styling.
+- With iconOnly the text is hidden but label stays the accessible name.
+- Honors prefers-reduced-motion and an ancestor <MotionConfig reducedMotion="always">, so an in-app motion switch works too.
+
+### Theming
+
+- Rests on bg-foreground with text-background, so it inverts with the theme. Copied uses bg-green-700 and error bg-red-600, both with white text.
+- data-status (idle, pending, copied, error) is on the button, so className can target a state, for example data-[status=copied]:bg-emerald-600.
+- size sets the height, padding, text and icon size: sm 36px, md 44px, lg 52px.
+- label, copiedLabel, pendingLabel and errorLabel set both the visible text and the accessible name, for translation.
+
+### Edge cases
+
+- The default copy uses navigator.clipboard, which needs a secure context (https or localhost). Any failure, in value or in copy, shows the error state and calls onError.
+- If value returns a promise, the button shows a spinner until it resolves. Clicks during that time are ignored.
+- Letters the two labels share stay put; only the differing ones swap, so similar labels animate best.
+- Clicking again while Copied copies again and restarts the resetAfter hold. resetAfter 0 keeps the copied or error state until status changes.
+- Pass status to drive the look yourself, for example to show Copied after a keyboard shortcut copies.
+
+### Troubleshooting
+
+**Nothing is copied and I get an error.**
+navigator.clipboard only works on https or localhost and after a user gesture. Serve the page securely and pass onError to show a message.
+
+---
+
+## Nav Notch
+
+> A row of small notches that works as a navigation bar: the one under the pointer opens into a labelled chip and its neighbours swell around it like a lens.
+
+- Page: https://ui.devigner.cc/components/nav-notch
+- Category: Navigation
+- Requirements: React 18 or 19, Tailwind CSS v4
+- Install: `npx devignerui add nav-notch` (writes components/ui/nav-notch.tsx)
+- Packages it needs: cn, motion, devignerui
+
+### What the demo shows
+
+The live demo is a bar of ten notches with Link 5 current. Move the pointer along it and a lens glides with it: the notch underneath opens into a chip with its label and the two notches either side grow taller and brighter. Leave the bar and the lens fades out, leaving the current link as the one bright notch.
+
+### When to use it
+
+- A compact section or page switcher where the labels can stay hidden until someone looks for them, such as a portfolio, a slide deck or a long one-page site.
+- A secondary navigation bar with a handful to a dozen links of similar weight.
+
+### When to reach for something else
+
+- Primary navigation people need to scan at a glance. The labels are hidden until hovered or focused; use visible tabs or links.
+- Long lists of links. Past fifteen or so notches the bar gets wide and the targets thin; use a menu or a sidebar.
+
+### Usage
+
+```tsx
+import { NavNotch } from "@/components/ui/nav-notch";
+
+<NavNotch items={items} defaultValue="Home" />
+```
+
+Custom composition:
+
+```tsx
+<NavNotch items={items} value={page} onValueChange={setPage} label="Sections" />
+```
+
+#### Section switcher
+
+Keeps the current section in React state.
+
+```tsx
+import { useState } from "react";
+import { NavNotch } from "@/components/ui/nav-notch";
+
+const items = ["Intro", "Work", "About", "Contact"].map((label) => ({
+  label,
+  href: `#${label.toLowerCase()}`,
+}));
+
+export function Sections() {
+  const [section, setSection] = useState<string | null>("Intro");
+  return <NavNotch items={items} value={section} onValueChange={setSection} label="Sections" />;
+}
+```
+
+### Props
+
+| Prop | Type | Default | Description |
+| --- | --- | --- | --- |
+| items | `{ label, href?, id?, onSelect? }[]` | - | The links, one notch each. An item with href renders a link, otherwise a button. |
+| value | `string \| null` | - | Controlled id (or label) of the current item, whose notch is drawn brighter. |
+| defaultValue | `string \| null` | null | Initial current item; null leaves every notch closed. |
+| onValueChange | `function` | - | Fires with the id (or label) of the clicked item. |
+| label | `string` | Navigation | Accessible name for the nav landmark. |
+| orientation | `"horizontal" \| "vertical"` | horizontal | Lays the notches out in a row or a column. |
+| side | `"left" \| "right"` | right | Vertical only: the side the open chip grows out of the track toward. |
+| classNames | `NavNotchClassNames` | - | Slot classes for track, notch and label. |
+
+### Keyboard
+
+| Keys | Action |
+| --- | --- |
+| Tab | Moves focus into the bar, onto the current link, and out again. |
+| Arrow Left / Arrow Right | Moves between notches; Arrow Up and Arrow Down do the same. |
+| Home / End | Jumps to the first or last notch. |
+| Enter | Follows the link, or picks the item when it has no href. |
+
+### Accessibility
+
+- Renders a nav landmark named by label, with a list of real links (or buttons for items without href).
+- Labels stay in the DOM while hidden, so screen readers read every link name.
+- The current item carries aria-current="page".
+- The bar is a single tab stop with the arrow keys moving inside it, and the focused notch opens just like a hovered one, with a visible focus ring.
+- Honors prefers-reduced-motion and an ancestor <MotionConfig reducedMotion="always">, so an in-app motion switch works too.
+
+### Theming
+
+- The track is var(--foreground) mixed 9% into var(--background) with a lit top rim, a shaded bottom lip and a hairline edge; notches and the chip are var(--foreground) with var(--background) text and a soft bevel. Every shade is a mix of var(--foreground) or var(--background), so it flips with the theme.
+- classNames targets track, notch and label. Put placement classes in className.
+
+### Edge cases
+
+- The notch hit areas touch each other, so the pointer is always over exactly one notch and moving across the gaps never flickers.
+- With orientation="vertical" the notches stack in a column and the open chip pops out of the track toward side (right by default), overlapping whatever sits beside the bar. Leave room on that side.
+- The current item only changes color: its notch is drawn at full strength and never opens into a chip on its own.
+- Two items with the same label need an id each, since value falls back to label.
+- A click sets the current item before onSelect runs; with value passed, the bar only changes when you update it.
+
+### Troubleshooting
+
+**No notch is highlighted when the page loads.**
+Pass defaultValue (or value) with the id or label of the current item. Without it every notch rests at the same strength.
+
+**The component renders with no background or the wrong colors.**
+Colors use the standard shadcn/ui tokens only (background, foreground, primary, secondary, muted, accent, border, input, ring, destructive), so a project set up with shadcn/ui needs nothing extra and the component follows its theme, dark mode included. Without shadcn/ui, define those CSS variables for :root and .dark and map them in your Tailwind v4 @theme, or run npx shadcn init.
+
+---
+
+## Liquid Glass
+
+> An iOS 27 style glass menu whose rim bends the page behind it: a pill that swells into a squircle panel of rows and melts back once you pick one.
+
+- Page: https://ui.devigner.cc/components/liquid-glass
+- Category: Primitives
+- Requirements: React 18 or 19, Tailwind CSS v4
+- Install: `npx devignerui add liquid-glass` (writes components/ui/liquid-glass.tsx)
+- Packages it needs: cn, motion, devignerui
+
+### What the demo shows
+
+The live demo is a GlassMenu over a dot field: a Menu pill that swells out from its center into a squircle glass panel of four rows, its text zooming out of the way while the rows zoom in from a little larger and blurred. Pick a row, press Escape or press outside and it melts back into the pill. Pressing the pill swells it slightly and it wobbles back when let go. In Chrome and Edge the rim bends whatever sits behind it.
+
+### When to use it
+
+- A small set of actions or destinations that should stay out of the way until asked for, such as a view switcher or a shape picker.
+- Floating controls over media, maps or artwork, where the Liquid Glass look matches the surroundings.
+
+### When to reach for something else
+
+- Long lists or anything that needs search or scrolling. The panel grows to fit every row; use a combobox or a command menu.
+- Dense toolbars with many menus side by side: each one is its own glass surface with a backdrop filter, which costs GPU time.
+
+### Usage
+
+```tsx
+import { GlassMenu } from "@/components/ui/liquid-glass";
+
+<GlassMenu items={items} onSelect={go} />
+```
+
+Custom composition:
+
+```tsx
+<GlassMenu label="Shapes" items={items} open={open} onOpenChange={setOpen} onSelect={pick} transparency={0.6} />
+```
+
+#### Shape picker
+
+onSelect gets the row's id, then the panel melts back.
+
+```tsx
+import { GlassMenu } from "@/components/ui/liquid-glass";
+import { IconDiamond, IconRecord, IconStop } from "@devigner-ui/icons";
+
+export function ShapeMenu({ pick }: { pick: (id: string) => void }) {
+  return (
+    <GlassMenu
+      label="Shapes"
+      onSelect={pick}
+      items={[
+        { id: "circle", label: "Circle", icon: <IconRecord className="size-6" /> },
+        { id: "square", label: "Square", icon: <IconStop className="size-6" /> },
+        { id: "diamond", label: "Diamond", icon: <IconDiamond className="size-6" /> },
+      ]}
+    />
+  );
+}
+```
+
+#### Controlled
+
+Keep the open state in React, for example to close the menu from elsewhere.
+
+```tsx
+import { useState } from "react";
+import { GlassMenu } from "@/components/ui/liquid-glass";
+
+export function ViewMenu({ items, show }: {
+  items: { id: string; label: string }[];
+  show: (id: string) => void;
+}) {
+  const [open, setOpen] = useState(false);
+  return (
+    <GlassMenu
+      label="View"
+      items={items}
+      open={open}
+      onOpenChange={setOpen}
+      onSelect={show}
+      transparency={0.6}
+    />
+  );
+}
+```
+
+### Props
+
+| Prop | Type | Default | Description |
+| --- | --- | --- | --- |
+| items | `{ id, label, icon?, disabled? }[]` | - | Rows of the panel, in order. |
+| onSelect | `(id: string) => void` | - | Fires with the picked row's id, then the panel melts back. |
+| open | `boolean` | - | Controlled open state. |
+| defaultOpen | `boolean` | false | Initial open state. |
+| onOpenChange | `function` | - | Fires when the panel opens or closes. |
+| label | `string` | Menu | Text on the closed pill, and the menu's accessible name. |
+| transparency | `number` | 0.05 | Glass tint from 0 (ultra clear) to 1 (fully tinted). |
+| disabled | `boolean` | false | Disables interaction. |
+
+### Keyboard
+
+| Keys | Action |
+| --- | --- |
+| Enter / Space | On the pill, opens the panel and moves focus to the first row. On a row, picks it and closes the panel. |
+| Arrow Down / Arrow Up | Moves between rows, wrapping at the ends. |
+| Home / End | Jumps to the first or last row. |
+| Escape | Closes the panel and returns focus to the pill. |
+| Tab | Closes the panel. |
+
+### Accessibility
+
+- The pill is a button with aria-haspopup="menu" and aria-expanded; the panel is role="menu" named by label, each row a role="menuitem" button.
+- Focus moves to the first enabled row on open and back to the pill on close, so it never drops to the page body.
+- The closed panel is inert, so its rows are never tabbed to. Disabled rows are skipped by the arrow keys.
+- Under prefers-reduced-transparency the glass turns fully tinted and the lens is switched off, the way iOS handles Reduce Transparency.
+- Honors prefers-reduced-motion and an ancestor <MotionConfig reducedMotion="always">, so an in-app motion switch works too.
+
+### Theming
+
+- The glass tint mixes var(--background) in by transparency, from 0 (ultra clear, 3%) to 1 (fully tinted, 85%). Even clear glass softens the backdrop slightly; the blur builds up toward the tinted end.
+- Rows use text-foreground, with a var(--foreground) wash on hover and focus. Hovering the closed pill lights it faintly from inside and pressing lights it brightly, in white light, in both themes.
+- The rim has a crisp specular line and a soft inner glow, brightest at the top left and bottom right, plus a faint var(--foreground) line at 8% just outside. The specular light and the drop shadow are white and black light, the same in both themes. In Chromium the rim also splits a thin rainbow, like real glass.
+- The closed pill has gently squircle ends and the open panel firms up into squircle corners as it grows. Browsers with CSS corner-shape draw the focus rings and row highlights with the same curve; others keep them round.
+- Pass className to place the wrapper.
+
+### Edge cases
+
+- The panel grows out of the pill's center, as far each way, and floats over its surroundings without moving them. Over the clear glass anything underneath shows through the rows, so leave it free space all around or raise transparency.
+- The pill fits its label and the panel fits its widest row; both are re-measured when fonts load or the content changes.
+- The lens that bends the page behind the rim only renders in Chromium browsers (Chrome, Edge, Arc, Opera). Safari and Firefox show the same frosted glass without the bend.
+- The lens needs something behind it. On a flat background the glass looks frosted either way; place it over images, stripes or text to see it.
+- An ancestor with filter, opacity below 1 or a mask cuts the glass off from the page behind it, so the lens and blur only see content inside that ancestor.
+- Setting disabled while open closes the panel.
+
+### Troubleshooting
+
+**The rim does not bend anything.**
+The lens only renders in Chromium browsers, and only when there is visible detail behind the glass. Also check that no ancestor has filter, opacity below 1 or a mask, which cuts the glass off from the page behind it.
+
+**The glass looks solid.**
+Lower transparency. If it stays solid, the system Reduce Transparency setting is on, which forces the tinted look.
+
+**The open panel covers content I need.**
+The panel floats and grows from the pill's center in every direction. Place the pill where there is room around it, or raise transparency so what is underneath doesn't show through.
+
+**The component renders with no background or the wrong colors.**
+Colors use the standard shadcn/ui tokens only (background, foreground, primary, secondary, muted, accent, border, input, ring, destructive), so a project set up with shadcn/ui needs nothing extra and the component follows its theme, dark mode included. Without shadcn/ui, define those CSS variables for :root and .dark and map them in your Tailwind v4 @theme, or run npx shadcn init.
+
+---
+
+## Slider
+
+> A slider whose fill heats from yellow to red as it grows, with a glass thumb that opens to show the value while you drag.
+
+- Page: https://ui.devigner.cc/components/slider
+- Category: Forms
+- Requirements: React 18 or 19, Tailwind CSS v4
+- Install: `npx devignerui add slider` (writes components/ui/slider.tsx)
+- Packages it needs: cn, motion, devignerui
+
+### What the demo shows
+
+The live demo is a horizontal slider at 40 with a mark every 10. Press it and the glass thumb opens to show the value; drag right and the fill grows from yellow through orange to red, the digits sliding up as they change, then let go and the thumb closes back to a circle.
+
+### When to use it
+
+- One value where how much matters more than the exact number: heat, volume, brightness, intensity, a 0 to 100 level.
+- Controls panels and thermostat-style screens where a tall, touchable slider fits.
+
+### When to reach for something else
+
+- Picking a min and max. It has one thumb; use a two-thumb range slider.
+- Entering an exact figure, like a price. Use a number input.
+- A few named choices (Low, Medium, High). Use a segmented control.
+
+### Usage
+
+```tsx
+import { Slider } from "@/components/ui/slider";
+
+<Slider aria-label="Heat" defaultValue={40} />
+```
+
+Custom composition:
+
+```tsx
+<Slider value={temp} onValueChange={setTemp} min={10} max={30} step={1} format={(v) => `${v}°`} orientation="vertical" aria-label="Temperature" />
+```
+
+#### Thermostat
+
+Whole degrees from 10 to 30, shown with a degree sign.
+
+```tsx
+import { useState } from "react";
+import { Slider } from "@/components/ui/slider";
+
+export function Thermostat() {
+  const [temp, setTemp] = useState(21);
+  return (
+    <Slider
+      value={temp}
+      onValueChange={setTemp}
+      min={10}
+      max={30}
+      step={1}
+      format={(v) => `${v}°`}
+      orientation="vertical"
+      size="lg"
+      className="h-72"
+      aria-label="Temperature"
+    />
+  );
+}
+```
+
+#### Volume in a form
+
+Submits the level under volume.
+
+```tsx
+import { Slider } from "@/components/ui/slider";
+
+export function VolumeForm() {
+  return (
+    <form action="/api/settings" className="flex items-center gap-4">
+      <span id="volume-label" className="text-sm">Volume</span>
+      <Slider
+        name="volume"
+        defaultValue={60}
+        size="sm"
+        aria-labelledby="volume-label"
+      />
+      <button type="submit">Save</button>
+    </form>
+  );
+}
+```
+
+### Props
+
+| Prop | Type | Default | Description |
+| --- | --- | --- | --- |
+| value | `number` | - | Controlled value. |
+| defaultValue | `number` | 0 | Initial value. |
+| onValueChange | `function` | - | Fires with the new value while dragging and on each key press. |
+| onValueCommit | `function` | - | Fires once when the thumb is let go, and on each key press that changes the value. |
+| min | `number` | 0 | Lowest value. |
+| max | `number` | 100 | Highest value. |
+| step | `number` | 10 | The arrow key step, the gap between marks, and the snap grid. |
+| snap | `boolean` | false | Snaps to multiples of step from min, the thumb jumping stop to stop. Off, the value is continuous (rounded to the step's decimals) and the thumb glides after the pointer. |
+| orientation | `"vertical" \| "horizontal"` | horizontal | Vertical fills bottom to top, horizontal left to right. |
+| inverted | `boolean` | false | Fills from the other end: top to bottom, or right to left for right-to-left layouts. |
+| size | `"sm" \| "md" \| "lg" \| number` | md | Track thickness: 32, 44 or 56px, or a number of px. Set the length with an h-* or w-* class. |
+| marks | `boolean` | true | Shows marks along the track, one per step, spread evenly end to end. |
+| format | `(value: number) => string` | String | Text shown in the thumb and read out by screen readers, e.g. v => `${v}°`. |
+| disabled | `boolean` | false | Disables interaction. |
+| name | `string` | - | Form field name; submits the value. |
+| classNames | `SliderClassNames` | - | Slot classes: root, track, fill, mark, thumb, value. |
+
+### Keyboard
+
+| Keys | Action |
+| --- | --- |
+| Arrow Up / Arrow Right | Raises the value by one step (the arrow along the axis lowers it when inverted). |
+| Arrow Down / Arrow Left | Lowers the value by one step (the arrow along the axis raises it when inverted). |
+| Page Up / Page Down | Moves a tenth of the range (at least one step). |
+| Home / End | Jumps to min or max. |
+
+### Accessibility
+
+- The thumb has role="slider" with aria-valuemin, aria-valuemax, aria-valuenow, aria-orientation and aria-valuetext from format, so screen readers read "72°" rather than "72".
+- Pass aria-label or aria-labelledby; both go on the thumb, which is the focus target.
+- Keyboard focus opens the thumb, so the value is visible to keyboard users too. The focus ring uses var(--ring).
+- Pressing the track moves focus to the thumb, so the arrow keys work right after a drag.
+- Honors prefers-reduced-motion and an ancestor <MotionConfig reducedMotion="always">, so an in-app motion switch works too.
+
+### Theming
+
+- The fill uses Tailwind's red-600, orange-500 and yellow-400 as a gradient. Pass your own gradient stops through classNames.fill, e.g. "from-sky-600 via-sky-400 to-cyan-300".
+- The track is var(--foreground) at 15% and the thumb is var(--background) frosted glass, so both follow dark mode. Marks are hairlines that fade out at both ends, white at 45% in the middle.
+- size picks a 32, 44 or 56px track, or takes a number of px; the length is h-56 vertical or w-72 horizontal, and an h-* or w-* class in className overrides it.
+- classNames targets root, track, fill, mark, thumb and value.
+
+### Edge cases
+
+- The gradient is tied to the fill's end: a short fill shows only yellow, and red comes in as it nears full.
+- Pressing the thumb keeps the grab point, so it never jumps; pressing the track glides the thumb there. While dragging it glides after the pointer on a soft follow spring, or moves stop to stop with snap.
+- Marks count the steps (step={10} over 0 to 100 draws 9) and are spread evenly across the whole track, with or without snap. The thumb can't reach the very ends, so it lands on a mark exactly mid-track and up to half a thumb off near the ends. Past 40 marks none are drawn.
+- Only one pointer drags at a time; a second finger on the slider is ignored until the first lets go.
+- onValueChange fires on every move; save or fetch in onValueCommit, which fires once per release.
+- With snap, when step doesn't divide the range, max is a stop too: step={3} over 0 to 100 snaps to 99, then 100, by pointer and by the arrow keys.
+- Values are rounded to the step's decimals, so step={0.1} gives 0.3, not 0.30000000000000004.
+- A controlled value outside min and max is shown clamped. The pointer is captured while pressed, so a drag keeps working outside the slider.
+- With name set, a hidden input submits the value; a form reset returns it to defaultValue.
+
+### Troubleshooting
+
+**The fill has no colors.**
+The gradient is made of Tailwind classes in the component file. Make sure Tailwind scans the folder the component was installed into (an @source line in Tailwind v4 if it lives outside your app).
+
+**Dragging the slider scrolls the page on a phone.**
+The slider sets touch-action: none on itself. If a parent handles the gesture first (a carousel or a sheet), stop propagation of pointerdown on the slider.
+
+**The thumb doesn't look frosted.**
+The blur comes from backdrop-filter. An ancestor with opacity, filter or mask limits what it can blur, so keep those off the slider's parents.
+
+**The component renders with no background or the wrong colors.**
+Colors use the standard shadcn/ui tokens only (background, foreground, primary, secondary, muted, accent, border, input, ring, destructive), so a project set up with shadcn/ui needs nothing extra and the component follows its theme, dark mode included. Without shadcn/ui, define those CSS variables for :root and .dark and map them in your Tailwind v4 @theme, or run npx shadcn init.
+
+---
+
+## File Upload
+
+> An upload panel whose files drip out of the dropzone as liquid, then queue, pause, fail and retry in compact cards before you submit them.
+
+- Page: https://ui.devigner.cc/components/file-upload
+- Category: Forms
+- Requirements: React 18 or 19, Tailwind CSS v4
+- Install: `npx devignerui add file-upload` (writes components/ui/file-upload.tsx)
+- Packages it needs: cn, motion, @devigner-ui/icons, devignerui
+
+### What the demo shows
+
+The live demo is an upload panel with fake uploads. Drag files over it and a badge with the file type and count follows the cursor; drop them and each card fades in as its row opens, then they upload two at a time. Remove one and it fades out as its row closes. Hover a card to pause it. Every third upload fails once, so Retry has something to do. A file over 25 MB or of the wrong type turns the dropzone red instead.
+
+### When to use it
+
+- Attaching files to a form or a message, where people want to see each file's progress and fix failures in place.
+- Large uploads where pause, resume and a queue matter.
+
+### When to reach for something else
+
+- A single avatar or logo picker. A plain button and an image preview are lighter.
+- Hundreds of files at once. The cards animate one by one; use a compact table with totals.
+
+### Usage
+
+```tsx
+import { FileUploader } from "@/components/ui/file-upload";
+
+<FileUploader upload={upload} accept=".zip,.pdf" maxSize={25 * 1024 * 1024} onSubmit={save} onCancel={close} />
+```
+
+Custom composition:
+
+```tsx
+<FileUploader upload={upload} accept="image/*" maxFiles={5} concurrency={3} resumable name="attachments" onDownload={download} />
+```
+
+#### Upload with fetch-like progress
+
+XMLHttpRequest reports upload progress; the signal cancels it.
+
+```tsx
+import { FileUploader, type FileUploaderContext } from "@/components/ui/file-upload";
+
+function upload(file: File, { onProgress, signal }: FileUploaderContext) {
+  return new Promise<void>((resolve, reject) => {
+    const xhr = new XMLHttpRequest();
+    xhr.upload.onprogress = (e) => onProgress(e.loaded / e.total);
+    xhr.onload = () => (xhr.status < 400 ? resolve() : reject(new Error("Upload failed")));
+    xhr.onerror = () => reject(new Error("Network error"));
+    signal.addEventListener("abort", () => xhr.abort());
+    xhr.open("POST", "/api/upload");
+    xhr.send(file);
+  });
+}
+
+export function Attachments() {
+  return <FileUploader upload={upload} accept=".zip,.pdf,.ai,.cdr" maxSize={25 * 1024 * 1024} />;
+}
+```
+
+#### Your own list
+
+The dropzone validates, you keep the files, and the card shows whatever state you hand it.
+
+```tsx
+import { useState } from "react";
+import { FileDropzone, FileUpload } from "@/components/ui/file-upload";
+
+export function Picker() {
+  const [files, setFiles] = useState<File[]>([]);
+  return (
+    <div className="flex flex-col gap-3">
+      <FileDropzone accept="image/*" maxSize={5 * 1024 * 1024} onFiles={(ok) => setFiles((f) => [...f, ...ok])} />
+      {files.map((file) => (
+        <FileUpload
+          key={file.name}
+          name={file.name}
+          size={file.size}
+          status="queued"
+          onCancel={() => setFiles((f) => f.filter((x) => x !== file))}
+        />
+      ))}
+    </div>
+  );
+}
+```
+
+### Props
+
+| Prop | Type | Default | Description |
+| --- | --- | --- | --- |
+| upload | `(file, { onProgress, signal }) => Promise<void>` | - | Uploads one file; reject to show the error state. |
+| accept | `string` | - | Allowed types, as on <input accept>. |
+| maxSize | `number` | - | Largest file, in bytes. |
+| maxFiles | `number` | - | Most files in the list. |
+| multiple | `boolean` | true | More than one file per drop. |
+| concurrency | `number` | 2 | Uploads at once; the rest queue. |
+| resumable | `boolean` | false | Shows pause and resume. |
+| name | `string` | - | Form field name for the listed files. |
+| title | `ReactNode` | Upload Files | Header title. |
+| description | `ReactNode` | Select the files you want to upload. | Header line under the title. |
+| onClose | `() => void` | - | Shows the header close button. |
+| onCancel | `() => void` | - | Shows Cancel; clears the list first. |
+| onSubmit | `(files) => void` | - | Shows Submit; gets the completed files. |
+| cancelLabel | `string` | Cancel | Cancel button text. |
+| submitLabel | `string` | Submit Files | Submit button text. |
+| onUploaded | `(file) => void` | - | Fires when a file finishes. |
+| onDownload | `(file) => void` | - | Adds Download to finished files. |
+| label | `ReactNode` | Drag and drop files or | Dropzone first line. |
+| chooseLabel | `ReactNode` | choose | The picker link. |
+| hint | `ReactNode` | from maxSize and accept | Dropzone second line. |
+| disabled | `boolean` | false | Disables the dropzone. |
+| classNames | `FileUploaderClassNames` | - | Slot classes. |
+
+### Keyboard
+
+| Keys | Action |
+| --- | --- |
+| Tab | Moves to the choose link, then through each card's pause or play, Retry, close or trash, and Download. |
+| Space / Enter | On the choose link, opens the file picker; on a card button, presses it. |
+| Ctrl/Cmd + V | With focus in the dropzone, adds files from the clipboard (a copied screenshot, for example). |
+
+### Accessibility
+
+- The panel is a role="group" labelled by its title, and the header close button is labelled Close.
+- The choose link is a real button, so the dropzone works without a mouse or drag and drop.
+- Validation errors on the dropzone are role="alert" and read out as they appear.
+- Each card's status word (Queued, Uploading, Paused, Completed, or the error) is aria-live="polite"; the percent is not, so it does not talk over everything. The bar is a role="progressbar" labelled with the file name.
+- Icon buttons carry aria-labels: Pause upload, Resume upload, Start upload, Cancel upload, Dismiss and Remove file.
+- On a mouse the pause button stays hidden until the card is hovered, but it shows on keyboard focus. On touch it is always visible.
+- Honors prefers-reduced-motion and an ancestor <MotionConfig reducedMotion="always">, so an in-app motion switch works too.
+
+### Theming
+
+- Progress, the trail behind it, the choose link and the drag-over state use var(--primary). Paused, the fill turns var(--foreground) and the trail goes grey with a dashed edge.
+- Errors use var(--destructive): a red dropzone, or a red-ringed card with Retry.
+- The panel is var(--card) on a var(--muted) shell that holds Cancel (var(--foreground) at 6%) and Submit (var(--primary)).
+- Badges are colored by file family (archives amber, RAR violet, PDF red, design files orange, images blue, video pink, audio sky, documents indigo, sheets emerald, slides orange), each with its own glyph, and fall back to var(--primary). Image files show a thumbnail instead.
+- Queued is Tailwind amber-600 and the completed tick emerald-500, since shadcn/ui has no warning or success token.
+- classNames: FileUploader targets root, panel, header, dropzone, list and footer; FileDropzone targets root, icon, label and hint; FileUpload targets root, card, badge, name, status, track, fill and actions.
+
+### Edge cases
+
+- Browsers hide file names and sizes during a drag, so the drag badge shows a type read from the MIME type and a count. Size and type checks run on drop.
+- A drop with some bad files keeps the good ones and shows the problem on the dropzone: a single file is named (setup.exe: Only ZIP or PDF are allowed.), several read as the first reason and how many were left out. The next drag, pick or paste clears it.
+- The same file (name, size and modified date) can't be listed twice; dropping it again reads Already in the list.
+- Files dropped together drip out one after another, 80ms apart. Earlier cards stack above later ones, so a drop falls behind them to the end of the list. Removing a card reverses it: the card melts into the drop, which rises behind the cards above into the dropzone, and the slot closes after it. With reduced motion there is no drop; cards simply appear and disappear.
+- The bar and the tinted wash behind the card show the reported progress as is, with no easing, and the wash ends exactly at the bar head. How smooth they look depends on how often upload calls onProgress.
+- Submit stays disabled until at least one file is done and nothing is uploading or queued; it receives only the completed files. Cancel stops every upload and clears the list before calling onCancel. The header close button only calls onClose.
+- The header shows while title or onClose is set, and the footer while onCancel or onSubmit is; pass title={null} and no onClose for a bare panel.
+- Thumbnails the browser can't decode (HEIC in most browsers) fall back to the type badge.
+- maxFiles counts the whole list. A drop bigger than the room left keeps what fits and says how many more could be added. Once full, the dropzone stays live: its hint reads 5 of 5 files added, and a drop, paste or click shakes it with the limit instead of opening the picker. Removing a file clears the message.
+- FileDropzone takes validate(file, accepted) for your own per-file checks (return a message to reject) and blocked, a message that refuses everything while keeping the zone live.
+- Pause aborts the upload's signal. Resume calls upload again, so resumable should only be on when upload can continue where it stopped; the demo keeps its own byte count to fake that.
+- The play button on a queued card starts it right away, ahead of the queue and above concurrency.
+- Retry resets the bar and calls upload again. The error text is the rejection's message, or Upload failed.
+- With name set, a hidden file input carries every listed file, so a native form submit includes them. It does not wait for uploads to finish.
+- Thumbnails use object URLs that are revoked when a card is removed and when the uploader unmounts.
+- FileDropzone and FileUpload are exported too, for a list you manage yourself: the dropzone hands you accepted and rejected files, and the card is fully controlled by status and progress.
+
+### Troubleshooting
+
+**There is no pause button.**
+Pause needs resumable on FileUploader (or onPause on FileUpload). On a mouse it also stays hidden until the card is hovered or focused.
+
+**The drag badge says FILE instead of the type.**
+Some types have no MIME type the browser will name during a drag (.cdr, for one). The real name and badge appear on the card after the drop.
+
+**Resume starts the file over.**
+Resume calls upload again. Report progress for the whole file and continue from the server's offset (tus, S3 multipart), or leave resumable off.
+
+**The component renders with no background or the wrong colors.**
+Colors use the standard shadcn/ui tokens only (background, foreground, primary, secondary, muted, accent, border, input, ring, destructive), so a project set up with shadcn/ui needs nothing extra and the component follows its theme, dark mode included. Without shadcn/ui, define those CSS variables for :root and .dark and map them in your Tailwind v4 @theme, or run npx shadcn init.
+
+---
+
+## Goo Switch
+
+> A switch whose thumb is a drop of liquid: it trails a tail when it moves and stretches over the edge when you pull it too far.
+
+- Page: https://ui.devigner.cc/components/goo-switch
+- Category: Forms
+- Requirements: React 18 or 19, Tailwind CSS v4
+- Install: `npx devignerui add goo-switch` (writes components/ui/goo-switch.tsx)
+- Packages it needs: cn, motion, devignerui
+
+### What the demo shows
+
+The live demo is a switch that is on. Click it and the thumb shrinks to a drop, runs to the other end with a tail behind it and settles back into a pill; drag it past either end and it spreads over the edge, and letting go there slings it to the opposite side.
+
+### When to use it
+
+- A single on/off setting that applies right away, where the switch itself is part of the product's personality.
+- Settings screens and toolbars with only a few toggles, so the motion stays a treat.
+
+### When to reach for something else
+
+- Choices that only apply after a Save button. Use a checkbox.
+- Dense tables or long settings lists, where every row moving like liquid gets tiring.
+
+### Usage
+
+```tsx
+import { GooSwitch } from "@/components/ui/goo-switch";
+
+<GooSwitch aria-label="Wi-Fi" />
+```
+
+Custom composition:
+
+```tsx
+<GooSwitch checked={on} onCheckedChange={setOn} aria-label="Wi-Fi" size="lg" inset={2} sling={false} />
+```
+
+#### In a form
+
+Submits "yes" under newsletter while on, and must be on to submit.
+
+```tsx
+import { GooSwitch } from "@/components/ui/goo-switch";
+
+export function Signup() {
+  return (
+    <form action="/api/signup" className="flex items-center gap-3">
+      <span id="newsletter-label" className="text-sm">Send me the newsletter</span>
+      <GooSwitch name="newsletter" value="yes" required aria-labelledby="newsletter-label" />
+      <button type="submit">Sign up</button>
+    </form>
+  );
+}
+```
+
+#### Labelled setting
+
+Keep the state in React and label the switch with the text beside it.
+
+```tsx
+import { useState } from "react";
+import { GooSwitch } from "@/components/ui/goo-switch";
+
+export function WifiSetting() {
+  const [on, setOn] = useState(true);
+  return (
+    <div className="flex items-center justify-between gap-6">
+      <span id="wifi-label" className="text-sm font-medium">Wi-Fi</span>
+      <GooSwitch checked={on} onCheckedChange={setOn} aria-labelledby="wifi-label" />
+    </div>
+  );
+}
+```
+
+### Props
+
+| Prop | Type | Default | Description |
+| --- | --- | --- | --- |
+| checked | `boolean` | - | Controlled state. |
+| defaultChecked | `boolean` | false | Initial state. |
+| onCheckedChange | `function` | - | Fires with the new state. |
+| disabled | `boolean` | false | Disables interaction. |
+| size | `"sm" \| "md" \| "lg"` | md | Track height: 24, 32 or 40px. |
+| inset | `number` | 4 | Gap around the thumb, in 32nds of the track height (1 to 10). |
+| stretch | `boolean` | true | Dragging past an end spreads the thumb over the edge. |
+| sling | `number \| false` | 0.5 | Stretch (0 to 1) past which a release slings to the other side; false never slings. |
+| trail | `number` | 3.2 | Droplet tail length on a toggle; 0 hides it. |
+| name | `string` | - | Form field name; submitted when on. |
+| value | `string` | on | Value submitted under name. |
+| required | `boolean` | false | Blocks form submission while off. |
+| classNames | `GooSwitchClassNames` | - | Slot classes. |
+
+### Keyboard
+
+| Keys | Action |
+| --- | --- |
+| Space / Enter | Toggles the switch. |
+| Tab | Moves focus to and from the switch. |
+
+### Accessibility
+
+- Renders a native button with role="switch" and aria-checked, so screen readers announce it as a switch and its state.
+- It has no visible label of its own. Pass aria-label, or aria-labelledby pointing at the text next to it.
+- The form checkbox is hidden from assistive tech and the tab order; when validation lands on it, focus moves to the switch.
+- Honors prefers-reduced-motion and an ancestor <MotionConfig reducedMotion="always">, so an in-app motion switch works too.
+
+### Theming
+
+- On, the track uses var(--primary); off, a mix of var(--muted-foreground) and var(--background). The thumb is white in both themes.
+- Hover and press wash the track toward var(--background), so it follows dark mode.
+- size picks a 24, 32 or 40px track; a height class in className overrides it, and the width always follows at 62:32. classNames targets root and svg.
+- inset sets the gap around the thumb in 32nds of the track height; the thumb grows into whatever the gap gives up.
+- trail sets how long the droplet tail is on a toggle, and 0 turns it off for a plainer switch.
+
+### Edge cases
+
+- A click toggles on release. A drag ends on the side the thumb was let go on.
+- A drag pulled past sling (half the stretch by default) slings the thumb to the other side: pulled past the right end it turns off, past the left end it turns on. sling={false} turns this off, and stretch={false} stops the thumb at the ends altogether.
+- With name set, a hidden checkbox submits value under name while the switch is on, and nothing while it is off, the same as a checkbox. required blocks submission while off, and a form reset returns it to defaultChecked.
+- The pointer is captured while pressed, so the drag keeps working outside the switch.
+- Setting checked from outside moves the thumb with the same droplet motion as a click.
+
+### Troubleshooting
+
+**Dragging the switch scrolls the page on a phone.**
+The switch sets touch-action: none on itself. If a parent handles the gesture first (a carousel or a sheet), stop propagation of pointerdown on the switch.
+
+**My form does not receive the switch value.**
+Pass name. Without it no form field is rendered. Like a checkbox, the field is only sent while the switch is on.
+
+**The component renders with no background or the wrong colors.**
+Colors use the standard shadcn/ui tokens only (background, foreground, primary, secondary, muted, accent, border, input, ring, destructive), so a project set up with shadcn/ui needs nothing extra and the component follows its theme, dark mode included. Without shadcn/ui, define those CSS variables for :root and .dark and map them in your Tailwind v4 @theme, or run npx shadcn init.
+
+---
+
+## Inline Time Edit
+
+> A 2:30 that splits into hour and minute fields when you edit it, then folds back.
+
+- Page: https://ui.devigner.cc/components/inline-time-edit
+- Category: Forms
+- Requirements: React 18 or 19, Tailwind CSS v4
+- Install: `npx devignerui add inline-time-edit` (writes components/ui/inline-time-edit.tsx)
+- Packages it needs: cn, motion, @devigner-ui/icons, devignerui
+
+### What the demo shows
+
+The live demo reads 2:30. Press the pencil and the pill splits into an hours field and a minutes field with their units, and a save button; change a number and press the tick, and the fields fold back into one pill with the new time.
+
+### When to use it
+
+- Durations shown inline in a row or card (estimates, timers, meeting lengths) that people occasionally correct in place.
+- Anywhere a full form or dialog would be too heavy for changing two numbers.
+
+### When to reach for something else
+
+- Clock times or dates. The value is a duration in minutes, not a time of day.
+- Durations longer than 99 hours or finer than a minute.
+
+### Usage
+
+```tsx
+import { InlineTimeEdit } from "@/components/ui/inline-time-edit";
+
+<InlineTimeEdit defaultValue={150} />
+```
+
+Custom composition:
+
+```tsx
+<InlineTimeEdit value={minutes} onValueChange={setMinutes} hourUnit="h" minuteUnit="m" />
+```
+
+#### Controlled duration
+
+Keep the minutes in state and show them elsewhere.
+
+```tsx
+import { useState } from "react";
+import { InlineTimeEdit } from "@/components/ui/inline-time-edit";
+
+export function Estimate() {
+  const [minutes, setMinutes] = useState(90);
+  return (
+    <div className="flex items-center gap-3">
+      <span className="text-sm text-muted-foreground">Estimate</span>
+      <InlineTimeEdit value={minutes} onValueChange={setMinutes} />
+    </div>
+  );
+}
+```
+
+### Props
+
+| Prop | Type | Default | Description |
+| --- | --- | --- | --- |
+| value | `number` | - | Controlled duration in minutes. |
+| defaultValue | `number` | 150 | Initial duration in minutes. |
+| onValueChange | `function` | - | Fires with the saved total in minutes, only when it changed. |
+| open | `boolean` | - | Controlled edit state. |
+| defaultOpen | `boolean` | false | Initial edit state. |
+| onOpenChange | `function` | - | Fires when the edit opens, saves or is discarded. |
+| maxHours | `number` | 99 | Largest hour value accepted. |
+| shortTime | `boolean` | true | Closed, shows 2:30 instead of 2 Hr. 30 Min. |
+| hourUnit | `string` | Hr. | Unit after the hours while editing. |
+| minuteUnit | `string` | Min. | Unit after the minutes while editing. |
+| hoursLabel | `string` | Hours | Hours field accessible name. |
+| minutesLabel | `string` | Minutes | Minutes field accessible name. |
+| editLabel | `string` | Edit time | Button name while closed. |
+| saveLabel | `string` | Save time | Button name while editing. |
+| disabled | `boolean` | false | Disables interaction. |
+| classNames | `InlineTimeEditClassNames` | - | Slot classes. |
+
+### Keyboard
+
+| Keys | Action |
+| --- | --- |
+| Enter / Space | On the pencil, opens the edit. On the tick, saves. |
+| Tab | Moves between the hours field, the minutes field and the button while editing. |
+| Enter | In either field, saves. |
+| Up / Down arrows | In either field, adds or removes 1, clamped to 0 to maxHours for hours and 0 to 59 for minutes. |
+| Shift + Up / Down | Steps by 10 instead. |
+| Escape | Anywhere in the control, discards the edit and returns focus to the button. |
+
+### Accessibility
+
+- The fields are labelled with hoursLabel and minutesLabel, and are out of the tab order until the edit opens.
+- The button keeps focus across the swap and is renamed from editLabel to saveLabel, so screen readers hear what it will do.
+- Fields are role="spinbutton" with aria-valuemin, aria-valuemax and aria-valuenow, and use inputMode="numeric", so phones show a number pad.
+- Honors prefers-reduced-motion and an ancestor <MotionConfig reducedMotion="always">, so an in-app motion switch works too.
+
+### Theming
+
+- classNames targets root, tile, input, unit and button.
+- hourUnit and minuteUnit change the units shown while editing ("h", "m", or a translation). Closed, the time reads as a clock (2:05) with no units; pass shortTime={false} to keep the units there too.
+- Tiles use bg-background. The shadow is smooth-shadow-ring-sm, a shadow utility from shadow-plugin, drawn once around the closed pill and per tile when open; replace it with shadow-sm if you don't use shadow-plugin. Values use text-foreground and units text-muted-foreground.
+
+### Edge cases
+
+- Each field takes up to two digits. Hours above maxHours and minutes above 59 are clamped on save; empty fields save as 0.
+- onValueChange only fires on save, with the total in minutes, and only when the total changed. Typing does not change the value.
+- Clicking outside or tabbing out of the control discards the edit, the same as Escape.
+- If a controlled value changes while the edit is open, the fields show the new value and anything typed is dropped.
+- open, defaultOpen and onOpenChange control the edit state, for example to open it from a row action.
+- Setting disabled while the edit is open discards it.
+
+### Troubleshooting
+
+**Typing a number does not update my state.**
+onValueChange fires when the edit is saved (tick or Enter), not on every keystroke.
+
+**The component renders with no background or the wrong colors.**
+Colors use the standard shadcn/ui tokens only (background, foreground, primary, secondary, muted, accent, border, input, ring, destructive), so a project set up with shadcn/ui needs nothing extra and the component follows its theme, dark mode included. Without shadcn/ui, define those CSS variables for :root and .dark and map them in your Tailwind v4 @theme, or run npx shadcn init.
+
+---
+
+## Date Range Picker
+
+> A calendar that shows the range before you commit to it, with presets.
+
+- Page: https://ui.devigner.cc/components/date-range-picker
+- Category: Forms
+- Requirements: React 18 or 19, Tailwind CSS v4
+- Install: `npx devignerui add date-range-picker` (writes components/ui/date-range-picker.tsx)
+- Packages it needs: cn, motion, @devigner-ui/icons, devignerui
+
+### What the demo shows
+
+The live demo is a Trip Dates calendar where days before today are disabled. Pick a check-in day, then move across the calendar to preview the range before you choose check-out; the badge counts the nights, and presets such as Weekend fill a range in one press.
+
+### When to use it
+
+- Booking and travel flows (check-in and check-out, nights), and any start and end date filter.
+- Inline in a page or a popover you provide, when you want the range preview and presets.
+
+### When to reach for something else
+
+- Picking a single date: the picker always produces a start and an end.
+- Picking times, or ranges that span many months at once. It shows one month at a time.
+
+### Usage
+
+```tsx
+import { DateRangePicker } from "@/components/ui/date-range-picker";
+
+<DateRangePicker onValueChange={setRange} />
+```
+
+Custom composition:
+
+```tsx
+<DateRangePicker title="Stay" presets={presets} renderBadge={(range) => (range ? "Booked" : "Add dates")} />
+```
+
+#### Controlled value with booked nights disabled
+
+Keep the range in state, block past days and specific booked dates.
+
+```tsx
+import { useState } from "react";
+import { DateRangePicker, type DateRange } from "@/components/ui/date-range-picker";
+
+const booked = ["2026-10-10", "2026-10-11"];
+const key = (d: Date) =>
+  `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, "0")}-${String(d.getDate()).padStart(2, "0")}`;
+
+export function StayPicker() {
+  const [range, setRange] = useState<DateRange | null>(null);
+  return (
+    <DateRangePicker
+      value={range}
+      onValueChange={setRange}
+      minDate={new Date()}
+      isDateDisabled={(date) => booked.includes(key(date))}
+    />
+  );
+}
+```
+
+#### A report period without presets
+
+Change the copy and hide the travel presets.
+
+```tsx
+import { DateRangePicker } from "@/components/ui/date-range-picker";
+
+export function ReportPeriod() {
+  return (
+    <DateRangePicker
+      title="Report period"
+      startLabel="From"
+      endLabel="To"
+      presets={[]}
+      maxDate={new Date()}
+      renderBadge={(range) => (range ? "Custom range" : "All time")}
+    />
+  );
+}
+```
+
+### Props
+
+| Prop | Type | Default | Description |
+| --- | --- | --- | --- |
+| value | `DateRange \| null` | - | Controlled range. |
+| defaultValue | `DateRange \| null` | null | Initial range. |
+| onValueChange | `function` | - | Range callback. |
+| month | `Date` | - | Controlled visible month. |
+| defaultMonth | `Date` | - | Initial visible month. |
+| onMonthChange | `function` | - | Month callback. |
+| minDate | `Date` | - | Earliest selectable day. |
+| maxDate | `Date` | - | Latest selectable day. |
+| isDateDisabled | `function` | - | Marks individual days unavailable. |
+| title | `ReactNode` | Trip Dates | Card title. |
+| presets | `DateRangePreset[]` | Weekend, 3 nights, 1 week, 2 weeks | Quick-select ranges; a preset lights up when the range matches it. |
+| startLabel | `string` | Check-in | Start field label. |
+| endLabel | `string` | Check-out | End field label. |
+| renderBadge | `function` | - | Replaces the badge text. |
+| onClear | `function` | - | Fires when Clear is pressed. |
+| classNames | `DateRangePickerClassNames` | - | Slot classes. |
+| slotProps | `DateRangePickerSlotProps` | - | Slot attributes. |
+
+### Keyboard
+
+| Keys | Action |
+| --- | --- |
+| Tab | Focuses the calendar on one day (the start of the range, or today), then the presets and Clear. |
+| Left / Right arrows | Previous or next day, skipping disabled days. |
+| Up / Down arrows | Same weekday in the previous or next week. |
+| Home / End | First or last day of the week (Monday to Sunday). |
+| Page Up / Page Down | Same day in the previous or next month, or its first available day. |
+| Enter / Space | Picks the focused day: first press sets the start, second sets the end. |
+
+### Accessibility
+
+- The calendar is a role="grid" labelled with the month and year, with one tab stop that moves with the arrow keys.
+- Days in the range have aria-selected, and disabled days have aria-disabled and cannot be picked.
+- Each committed range is announced in a polite live region, for example "Check-in September 26, check-out September 29, 3 nights".
+- Honors prefers-reduced-motion and an ancestor <MotionConfig reducedMotion="always">, so an in-app motion switch works too.
+
+### Theming
+
+- classNames targets root, header, badge, label, grid, day, presets, presetButton and clearButton.
+- title, startLabel and endLabel change the copy, so it works for things other than trips ("Report period", "From", "To").
+- renderBadge replaces the nights badge; it receives the committed range, or the preview range while the end is being picked.
+- Pass presets={[]} to hide the presets, or your own list of { id, label, getRange }.
+- Colors come from shadcn tokens. The card's smooth-shadow-ring-lg and the header's shadow-subtle are shadow utilities from shadow-plugin and a Devigner shadow token; replace them with shadow-lg and shadow-xs if you don't use those.
+
+### Edge cases
+
+- minDate and maxDate disable everything outside them; isDateDisabled disables single days (weekends, booked nights). All three combine.
+- A range never crosses a disabled day: if one sits between the start and the day you pick, the end stops on the last available day before it. Presets are clamped the same way.
+- Picking an end before the start swaps them, so value.start is always the earlier day.
+- Dates are local midnight Date objects. Serialize them with local getters, not toISOString(), or a user east or west of UTC can see the date shift by one day.
+- The first click of a new range clears the previous value, so onValueChange receives null before the new range.
+- Weeks start on Monday and month names are in English.
+
+### Troubleshooting
+
+**Controlled value flickers to null when I start a new range.**
+The first click of a new range clears the value, then the second click sets the full range. Keep the null in state; the picker shows the pending start day itself.
+
+**The saved dates are one day off.**
+Date objects are local midnight. toISOString() converts to UTC and can move the date. Build the string from getFullYear(), getMonth() and getDate() instead.
+
+**My range ends earlier than the day I clicked.**
+A disabled day sits between the start and that day, so the range stops before it. Check minDate, maxDate and isDateDisabled.
+
+**The component renders with no background or the wrong colors.**
+Colors use the standard shadcn/ui tokens only (background, foreground, primary, secondary, muted, accent, border, input, ring, destructive), so a project set up with shadcn/ui needs nothing extra and the component follows its theme, dark mode included. Without shadcn/ui, define those CSS variables for :root and .dark and map them in your Tailwind v4 @theme, or run npx shadcn init.
+
+---
+
+## Chart Card
+
+> A stats card whose bars show their value as you move across them.
+
+- Page: https://ui.devigner.cc/components/chart-card
+- Category: Data Display
+- Requirements: React 18 or 19, Tailwind CSS v4
+- Install: `npx devignerui add chart-card` (writes components/ui/chart-card.tsx)
+- Packages it needs: cn, motion, @devigner-ui/icons, devignerui
+
+### What the demo shows
+
+The live demo is a Total sales card with seven months of bars. The June bar starts open with a hatched fill and a tooltip. Click or tap another bar and the tooltip travels to it.
+
+### When to use it
+
+- A dashboard tile with one headline number and a short series behind it, such as monthly sales or weekly signups.
+- Small series of about 4 to 12 points, where each bar is wide enough to press.
+
+### When to reach for something else
+
+- Long or dense series, multiple series or axes with scales. Use a charting library for those.
+- Data where negative values matter: bar heights assume values of 0 and up.
+
+### Usage
+
+```tsx
+import { ChartCard } from "@/components/ui/chart-card";
+
+<ChartCard data={sales} />
+```
+
+Custom composition:
+
+```tsx
+<ChartCard data={sales} renderTooltip={({ point }) => <strong>{point.value}</strong>} />
+```
+
+#### Controlled selection
+
+Keep the open bar in your state, for example to show details for that month elsewhere on the page.
+
+```tsx
+import { useState } from "react";
+import { ChartCard, type ChartCardActiveId } from "@/components/ui/chart-card";
+
+const sales = [
+  { id: "jan", label: "Jan", value: 4200 },
+  { id: "feb", label: "Feb", value: 6100 },
+  { id: "mar", label: "Mar", value: 5300 },
+];
+
+export function SalesCard() {
+  const [active, setActive] = useState<ChartCardActiveId>("feb");
+  return (
+    <ChartCard
+      title="Revenue"
+      caption="this quarter"
+      data={sales}
+      activeId={active}
+      onActiveChange={setActive}
+    />
+  );
+}
+```
+
+### Props
+
+| Prop | Type | Default | Description |
+| --- | --- | --- | --- |
+| data | `ChartCardPoint[]` | - | Chart data: { id?, label, value }. |
+| title | `ReactNode` | Total sales | Card title. |
+| caption | `string` | for all time | Line above the headline figure. |
+| total | `number` | sum of data | Headline figure. |
+| activeId | `ChartCardActiveId` | - | Controlled point. |
+| defaultActiveId | `ChartCardActiveId` | - | Initial point. |
+| onActiveChange | `function` | - | Active point callback. |
+| actions | `ChartCardAction[]` | - | Actionable header actions. |
+| renderPoint | `function` | - | Point slot. |
+| renderTooltip | `function` | - | Tooltip slot. |
+| renderActions | `function` | - | Actions slot. |
+| classNames | `ChartCardClassNames` | - | Slot classes. |
+| slotProps | `ChartCardSlotProps` | - | Slot attributes. |
+
+### Keyboard
+
+| Keys | Action |
+| --- | --- |
+| Tab | Moves through the header actions, then each bar. Every bar is a button. |
+| Enter / Space | Opens the focused bar and moves the tooltip to it. |
+
+### Accessibility
+
+- Each bar is a <button> named "label: value" (for example "Jun: 16,520") with aria-pressed on the open one.
+- Header actions are icon buttons with aria-label taken from each action's label. Actions without onSelect are not rendered, so there are no dead buttons.
+- The labels row under the chart is aria-hidden because each bar already names itself.
+- Honors prefers-reduced-motion and an ancestor <MotionConfig reducedMotion="always">, so an in-app motion switch works too.
+
+### Theming
+
+- classNames targets the root, header, actions, chart, point, tooltip and labels slots, and slotProps passes attributes to them.
+- The open bar, its dot and the tooltip use primary; idle bars use bg-accent with a border-input top edge.
+- renderTooltip replaces the tooltip content but keeps its position and motion; renderPoint adds content inside each bar.
+
+### Edge cases
+
+- total defaults to the sum of data. Pass it when the headline is not a sum, such as an average or a figure from another source.
+- Numbers are formatted with en-US grouping (16,520). Format them yourself in renderTooltip for another locale.
+- Give each point a stable id when the data can reorder or change. If activeId points at an id that no longer exists, the tooltip closes rather than jumping to another bar.
+- Bars have a minimum height so a near-zero value still shows as a bar.
+- Two cards on one page keep separate tooltips.
+
+### Troubleshooting
+
+**My header action buttons do not show up.**
+Only actions with an onSelect function are rendered. Add onSelect to each action.
+
+**The wrong bar is open after the data updates.**
+Without ids, bars are matched by index. Give each point a stable id and select by that id.
+
+**The component renders with no background or the wrong colors.**
+Colors use the standard shadcn/ui tokens only (background, foreground, primary, secondary, muted, accent, border, input, ring, destructive), so a project set up with shadcn/ui needs nothing extra and the component follows its theme, dark mode included. Without shadcn/ui, define those CSS variables for :root and .dark and map them in your Tailwind v4 @theme, or run npx shadcn init.
+
+---
+
+## Delete Button
+
+> Asks before it deletes, waits for your API call, then shows a tick.
+
+- Page: https://ui.devigner.cc/components/delete-button
+- Category: Primitives
+- Requirements: React 18 or 19, Tailwind CSS v4
+- Install: `npx devignerui add delete-button` (writes components/ui/delete-button.tsx)
+- Packages it needs: cn, motion, @devigner-ui/icons, devignerui
+
+### What the demo shows
+
+The live demo is a trash tile. Press it and the lid swings open while Confirm and Keep buttons slide out. Confirm starts a short fake request, so you see the spinner and then a tick before it resets.
+
+### When to use it
+
+- Deleting a single row, file or card inline, where a full confirmation dialog would be too heavy.
+- Deletes that call an API: return the promise from onConfirm and the tile shows pending, then done, or goes back to idle if it fails.
+
+### When to reach for something else
+
+- Bulk or irreversible deletes that need the user to read consequences or type a name. Use a dialog for those.
+
+### Usage
+
+```tsx
+import { DeleteButton } from "@/components/ui/delete-button";
+
+<DeleteButton onConfirm={remove} />
+```
+
+Custom composition:
+
+```tsx
+<DeleteButton onConfirm={remove} renderConfirmation={({ status }) => <span>{status}</span>} />
+```
+
+#### Delete through an API with error handling
+
+Return the request's promise so the tile waits on it, and handle failures yourself.
+
+```tsx
+import { DeleteButton } from "@/components/ui/delete-button";
+
+export function DeleteInvoice({ id }: { id: string }) {
+  return (
+    <DeleteButton
+      label="Delete invoice"
+      onConfirm={() => fetch(`/api/invoices/${id}`, { method: "DELETE" }).then((r) => {
+        if (!r.ok) throw new Error("Delete failed");
+      })}
+      onError={(error) => console.error(error)}
+    />
+  );
+}
+```
+
+### Props
+
+| Prop | Type | Default | Description |
+| --- | --- | --- | --- |
+| onConfirm | `function` | - | Confirmation handler. |
+| status | `DeleteButtonStatus` | - | Controlled status. |
+| defaultStatus | `DeleteButtonStatus` | idle | Initial status. |
+| onStatusChange | `function` | - | Status callback. |
+| renderConfirmation | `function` | - | Confirmation slot. |
+| classNames | `DeleteButtonClassNames` | - | Slot classes. |
+| slotProps | `DeleteButtonSlotProps` | - | Slot attributes. |
+| onCancel | `function` | - | Fires on Keep, Escape or a second press. |
+| onError | `function` | - | Handles a rejected onConfirm. |
+| label | `string` | Delete | Tile accessible name. |
+| confirmLabel | `string` | Confirm delete | Confirm button name. |
+| cancelLabel | `string` | Keep | Cancel button name. |
+| pendingLabel | `string` | Deleting | Announced while pending. |
+| doneLabel | `string` | Deleted | Announced when done. |
+| resetAfter | `number` | 1400 | ms before the tick resets. 0 keeps it. |
+| left | `boolean` | false | Puts the confirmation on the left. |
+| disabled | `boolean` | false | Disables interaction. |
+
+### Keyboard
+
+| Keys | Action |
+| --- | --- |
+| Enter / Space | On the trash tile, opens the confirmation. Pressed again while open, it cancels. |
+| Tab | Moves between the tile, Confirm and Keep. |
+| Escape | Cancels while the confirmation is open and returns focus to the tile. |
+
+### Accessibility
+
+- A real button element with visible focus.
+- Its accessible name follows the state (label, pendingLabel, copiedLabel, errorLabel), and a polite live region announces every state but idle.
+- aria-busy is set while an async value resolves, and data-status mirrors the state for styling.
+- With iconOnly the text is hidden but label stays the accessible name.
+- Honors prefers-reduced-motion and an ancestor <MotionConfig reducedMotion="always">, so an in-app motion switch works too.
+
+### Theming
+
+- classNames targets the root, the tile and the confirmation pill.
+- Uses bg-background for the shell and bg-secondary for the confirmation. The shell's shadow-elevated utility is a Devigner shadow token: define --shadow-elevated in your @theme or swap in shadow-lg.
+- label, confirmLabel, cancelLabel, pendingLabel and doneLabel set every accessible name, for translation or more specific wording ("Delete invoice").
+- left puts the confirmation on the left of the tile, and the lid opens toward it.
+
+### Edge cases
+
+- If onConfirm returns nothing, the tile goes straight to done. If it returns a promise, the spinner only appears after a short grace period, so fast requests do not flash it.
+- A rejected promise returns the tile to idle and calls onError. Without onError the error is re-thrown, so pass onError to show your own message.
+- resetAfter (1400 ms by default) is how long the tick stays. Set 0 to keep the done state, for example when the row is about to unmount.
+- Setting disabled while the confirmation is open closes it.
+
+### Troubleshooting
+
+**The spinner never shows.**
+onConfirm must return the promise. An async function works; a function that starts a fetch without returning it goes straight to done.
+
+**I get an uncaught error when the request fails.**
+Pass onError. Without it, a rejected onConfirm is re-thrown after the tile resets.
+
+**The component renders with no background or the wrong colors.**
+Colors use the standard shadcn/ui tokens only (background, foreground, primary, secondary, muted, accent, border, input, ring, destructive), so a project set up with shadcn/ui needs nothing extra and the component follows its theme, dark mode included. Without shadcn/ui, define those CSS variables for :root and .dark and map them in your Tailwind v4 @theme, or run npx shadcn init.
+
+---
+
+## Menu Dock
+
+> A dock that grows into its own menus, nested as deep as you need.
+
+- Page: https://ui.devigner.cc/components/menu-dock
+- Category: Navigation
+- Requirements: React 18 or 19, Tailwind CSS v4
+- Install: `npx devignerui add menu-dock` (writes components/ui/menu-dock.tsx)
+- Packages it needs: cn, motion, @devigner-ui/icons, devignerui
+
+### What the demo shows
+
+The live demo is a dock with Home, Search, Saved and Account. Open Account and the dock grows upward into a menu with Profile, Appearance and Sign out; the arrow keys move between rows and Escape goes back.
+
+### When to use it
+
+- App-level navigation that should stay small until needed, like a mobile-style bottom bar on the web.
+- Nested menus (account, settings, libraries) that open in place instead of in a separate dropdown.
+- A search field or other custom panel that opens from a dock icon, through an item's content.
+
+### When to reach for something else
+
+- Primary navigation with many top-level items. The closed dock is icon-only, so more than about six icons gets hard to scan.
+- Menus that must stay open next to the content they affect: an outside click closes the dock.
+
+### Usage
+
+```tsx
+import { MenuDock } from "@/components/ui/menu-dock";
+
+<MenuDock items={items} />
+```
+
+Custom composition:
+
+```tsx
+<MenuDock items={items} renderIcon={({ defaultIcon }) => <span>{defaultIcon}</span>} />
+```
+
+#### Close the dock after a choice
+
+Control path so a selection, or a route change, returns to the closed dock.
+
+```tsx
+import { useState } from "react";
+import { MenuDock, type MenuDockItem } from "@/components/ui/menu-dock";
+
+export function AppDock({ signOut }: { signOut: () => void }) {
+  const [path, setPath] = useState<number[]>([]);
+  const items: MenuDockItem[] = [
+    { id: "home", label: "Home", href: "/" },
+    {
+      id: "account",
+      label: "Account",
+      items: [
+        { label: "Profile", href: "/profile" },
+        { label: "Sign out", destructive: true, onSelect: () => { signOut(); setPath([]); } },
+      ],
+    },
+  ];
+  return <MenuDock items={items} active="home" path={path} onNavigate={setPath} />;
+}
+```
+
+### Props
+
+| Prop | Type | Default | Description |
+| --- | --- | --- | --- |
+| items | `MenuDockItem[]` | - | Dock items. |
+| active | `string` | - | Active item ID. |
+| path | `number[]` | - | Controlled path. |
+| onNavigate | `function` | - | Path callback. |
+| floating | `boolean` | false | Pins the dock to the bottom center of the viewport. |
+| label | `string` | Menu | Accessible name for the dock. |
+| renderIcon | `function` | - | Icon slot. |
+| classNames | `MenuDockClassNames` | - | Slot classes. |
+| slotProps | `MenuDockSlotProps` | - | Slot attributes. |
+| layoutId | `string` | - | Shared-layout ID: a remounted dock glides from the old one's size. |
+
+### Keyboard
+
+| Keys | Action |
+| --- | --- |
+| Tab | The dock is one tab stop; the last focused row keeps it. |
+| Left / Right arrows | Move between icons in the closed dock. |
+| Up / Down arrows | Move between rows in an open menu. |
+| Home / End | Jump to the first or last row. |
+| Enter / Space | Opens an item's submenu or panel, or runs its onSelect or link. |
+| Escape | Goes back one level, and closes a content panel. |
+
+### Accessibility
+
+- Each level is role="menu" with menuitem rows, labelled with the level's title (or the dock's label, "Menu" by default). Content panels are role="dialog".
+- Rows with children have aria-haspopup, and the item matching active has aria-current="page".
+- Icon-only dock buttons get the item's label as aria-label and a title tooltip.
+- Opening a level moves focus to its first row, and going back returns focus to the row that opened it.
+- Honors prefers-reduced-motion and an ancestor <MotionConfig reducedMotion="always">, so an in-app motion switch works too.
+
+### Theming
+
+- className goes on the footprint wrapper that holds the dock's place in the layout; position the dock there. classNames.shell styles the surface that grows, whose shadow-elevated utility is a Devigner shadow token (define --shadow-elevated in your @theme or swap in shadow-lg).
+- floating pins the dock to the bottom center of the viewport.
+- destructive rows (such as Sign out) use the destructive color.
+- Pass activeIcon next to icon to swap in a filled glyph for the active item, and renderIcon to wrap or replace any icon.
+
+### Edge cases
+
+- The closed dock reserves its own size, so the menu grows upward over the page instead of pushing content.
+- An item with both items and onSelect opens its submenu; onSelect is ignored. content wins over items.
+- Choosing a leaf row calls onSelect or follows href but leaves the menu open. Control path and set it to [] to close after a choice.
+- If items change under an open level so that the level no longer exists, the dock steps back to the nearest valid level and reports it through onNavigate.
+- Items are matched to active by id, falling back to label, so give items ids when two share a label.
+
+### Troubleshooting
+
+**The menu stays open after I pick an item.**
+That is the default. Pass path and onNavigate, then set the path to [] in onSelect or on route change.
+
+**The dock jumps or pushes the page when it opens.**
+Put positioning on className (the footprint wrapper), not on a parent that clips overflow. The open panel extends above the footprint, so an overflow-hidden ancestor cuts it off.
+
+**The component renders with no background or the wrong colors.**
+Colors use the standard shadcn/ui tokens only (background, foreground, primary, secondary, muted, accent, border, input, ring, destructive), so a project set up with shadcn/ui needs nothing extra and the component follows its theme, dark mode included. Without shadcn/ui, define those CSS variables for :root and .dark and map them in your Tailwind v4 @theme, or run npx shadcn init.
+
+---
+
+## Timeline
+
+> The active step slides off the rail, and the line bends to follow it.
+
+- Page: https://ui.devigner.cc/components/timeline
+- Category: Data Display
+- Requirements: React 18 or 19, Tailwind CSS v4
+- Install: `npx devignerui add timeline` (writes components/ui/timeline.tsx)
+- Packages it needs: cn, motion, devignerui
+
+### What the demo shows
+
+The live demo is a four-step project timeline: Kickoff, Prototype, Polish and Ship. Hover a step, or tab to something inside it, and that row slides off the rail while the line bends around it.
+
+### When to use it
+
+- Roadmaps, onboarding steps, changelogs and process explainers with a handful of steps.
+- Showing the current step of a flow with activeId, while hovering still previews the others.
+
+### When to reach for something else
+
+- An interactive stepper that users click to move through a form. Timeline highlights steps but does not navigate between them.
+- Very long histories. Each step takes a full row plus spacing.
+
+### Usage
+
+```tsx
+import { Timeline } from "@/components/ui/timeline";
+
+<Timeline steps={steps} />
+```
+
+Custom composition:
+
+```tsx
+<Timeline steps={steps} renderStep={({ step }) => <strong>{step.title}</strong>} />
+```
+
+#### Mark the current step
+
+Rest on the current step and use your own labels.
+
+```tsx
+import { Timeline } from "@/components/ui/timeline";
+
+const steps = [
+  { id: "plan", label: "Q1", title: "Plan", description: "Scope the release." },
+  { id: "build", label: "Q2", title: "Build", description: "Ship the beta." },
+  { id: "launch", label: "Q3", title: "Launch", description: "Open to everyone." },
+];
+
+export function Roadmap() {
+  return <Timeline steps={steps} defaultActiveId="build" />;
+}
+```
+
+### Props
+
+| Prop | Type | Default | Description |
+| --- | --- | --- | --- |
+| steps | `TimelineStep[]` | - | Timeline steps. |
+| activeId | `TimelineActiveId` | - | Controlled step. |
+| defaultActiveId | `TimelineActiveId` | - | Initial step. |
+| onActiveChange | `function` | - | Step callback. |
+| renderStep | `function` | - | Step slot. |
+| classNames | `TimelineClassNames` | - | Slot classes. |
+| slotProps | `TimelineSlotProps` | - | Slot attributes. |
+
+### Keyboard
+
+| Keys | Action |
+| --- | --- |
+| Tab | Steps are not focusable on their own. Focusable content you render inside a step (a link or button) highlights that step while it has focus. |
+
+### Accessibility
+
+- Renders an ordered list (<ol>), and each title is an <h3>, so the step order and titles are in the document outline.
+- The highlighted step gets aria-current="step".
+- The rail and dots are decorative and hidden from assistive technology.
+- Under reduced motion nothing slides and the rail stays straight; only the dot color marks the step.
+
+### Theming
+
+- classNames targets the root list, each item and each content block.
+- The active dot uses primary, idle dots and the rail use border, titles use text-foreground and descriptions text-muted-foreground.
+- renderStep adds your own content above the badge, such as a date, icon or link.
+
+### Edge cases
+
+- label defaults to "Step n". Pass label on each step for dates or version numbers.
+- Without defaultActiveId no step is highlighted at rest and the rail is straight until someone hovers.
+- When the pointer leaves, the highlight returns to the resting step (defaultActiveId), not to the last hovered one.
+- Long titles and descriptions wrap without breaking the rail: its bend is proportional, not measured.
+- Give steps stable ids when the list can change.
+
+### Troubleshooting
+
+**The highlight jumps back when I move the pointer away.**
+That is by design: it returns to the resting step. Set defaultActiveId to the step that should stay highlighted, or control activeId yourself.
+
+**The component renders with no background or the wrong colors.**
+Colors use the standard shadcn/ui tokens only (background, foreground, primary, secondary, muted, accent, border, input, ring, destructive), so a project set up with shadcn/ui needs nothing extra and the component follows its theme, dark mode included. Without shadcn/ui, define those CSS variables for :root and .dark and map them in your Tailwind v4 @theme, or run npx shadcn init.
+
+---
+
+## Magnetic Button
+
+> Leans toward your cursor before you reach it, then lets go with a wobble.
+
+- Page: https://ui.devigner.cc/components/magnetic-button
+- Category: Animation
+- Requirements: React 18 or 19, Tailwind CSS v4
+- Install: `npx devignerui add magnetic-button` (writes components/ui/magnetic-button.tsx)
+- Packages it needs: cn, gsap, motion, devignerui
+
+### What the demo shows
+
+The live demo is a gradient Get started button. Move the pointer near it and the pill leans toward the cursor while the label drifts and tilts a little further, then both spring back with a wobble when the pointer leaves the field.
+
+### When to use it
+
+- One primary call to action per view, such as a hero or pricing button, where a bit of playful physics earns attention.
+- A link that should feel like a button, via href, including external links (target="_blank" gets rel="noopener noreferrer" added for you).
+
+### When to reach for something else
+
+- Dense toolbars, forms or lists of buttons: several magnetic fields next to each other compete for the cursor.
+- Destructive actions. Use Delete Button, which asks for confirmation.
+
+### Usage
+
+```tsx
+import { MagneticButton } from "@/components/ui/magnetic-button";
+
+<MagneticButton>Continue</MagneticButton>
+```
+
+Custom composition:
+
+```tsx
+<MagneticButton className="rounded-none">Continue</MagneticButton>
+```
+
+#### External link with a softer pull
+
+Lower strength for a subtle lean, and pass href to render a link.
+
+```tsx
+import { MagneticButton } from "@/components/ui/magnetic-button";
+
+export function DocsLink() {
+  return (
+    <MagneticButton href="https://github.com" target="_blank" strength={2} labelStrength={3}>
+      View on GitHub
+    </MagneticButton>
+  );
+}
+```
+
+### Props
+
+| Prop | Type | Default | Description |
+| --- | --- | --- | --- |
+| children | `ReactNode` | - | Button content. |
+| href | `string` | - | Renders a link. |
+| strength | `number` | 3 | Cursor pull strength. |
+| labelStrength | `number` | 4 | Label parallax strength. |
+| field | `number` | 40 | Magnetic field radius. |
+| tilt | `number` | 15 | Label tilt. |
+| className | `string` | - | Button classes. |
+| disabled | `boolean` | false | Disables interaction. |
+
+### Keyboard
+
+| Keys | Action |
+| --- | --- |
+| Tab | Focuses the button or link. A focus ring is drawn on the visible pill. |
+| Enter / Space | Activates it, like any native button (Enter only for the link form). |
+
+### Accessibility
+
+- Renders a real <button type="button"> or <a>, so screen readers announce the right role and the label is the children you pass.
+- The magnetic field is invisible padding cancelled by a negative margin: the hit area grows without moving the layout.
+- Disabled links get aria-disabled, lose their href and are removed from the tab order.
+- Honors prefers-reduced-motion and an ancestor <MotionConfig reducedMotion="always">, so an in-app motion switch works too.
+
+### Theming
+
+- className styles the visible pill, not the invisible field, so backgrounds, rounding and padding go there.
+- Defaults use bg-secondary and text-foreground, and the focus ring uses ring-ring.
+- strength and labelStrength are 0 to 10 dials. A different value for each gives the parallax between pill and label.
+
+### Edge cases
+
+- The pull only runs on devices with a fine pointer that can hover, so touch screens get a plain button.
+- field is the radius in px of the attraction zone. Set it to 0 to turn the magnet off while keeping the button.
+- The field's negative margin can overlap nearby elements. Give the button enough room, or lower field, when it sits inside a tight container.
+
+### Troubleshooting
+
+**The button does not move toward the cursor.**
+Check that reduced motion is off in the OS and in any MotionConfig above it, that the device has a mouse or trackpad, that disabled is not set, and that field is above 0. GSAP must be installed (npm i gsap).
+
+**Clicks near the button hit it instead of the element next to it.**
+That is the magnetic field, which extends field px (40 by default) around the pill. Lower field or add spacing around the button.
+
+**The component renders with no background or the wrong colors.**
+Colors use the standard shadcn/ui tokens only (background, foreground, primary, secondary, muted, accent, border, input, ring, destructive), so a project set up with shadcn/ui needs nothing extra and the component follows its theme, dark mode included. Without shadcn/ui, define those CSS variables for :root and .dark and map them in your Tailwind v4 @theme, or run npx shadcn init.

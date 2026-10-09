@@ -1,0 +1,1313 @@
+{
+ "style": "base-nova",
+ "fetched": "2026-09-18 17:38",
+ "source": "https://ui.shadcn.com/r/styles/base-nova/<name>.json",
+ "items": [
+  {
+   "name": "accordion",
+   "kind": "ui",
+   "ok": true,
+   "files": 1,
+   "description": null,
+   "registryDependencies": []
+  },
+  {
+   "name": "alert",
+   "kind": "ui",
+   "ok": true,
+   "files": 1,
+   "description": null,
+   "registryDependencies": []
+  },
+  {
+   "name": "alert-dialog",
+   "kind": "ui",
+   "ok": true,
+   "files": 1,
+   "description": null,
+   "registryDependencies": [
+    "button"
+   ]
+  },
+  {
+   "name": "aspect-ratio",
+   "kind": "ui",
+   "ok": true,
+   "files": 1,
+   "description": null,
+   "registryDependencies": []
+  },
+  {
+   "name": "attachment",
+   "kind": "ui",
+   "ok": true,
+   "files": 1,
+   "description": null,
+   "registryDependencies": [
+    "button"
+   ]
+  },
+  {
+   "name": "avatar",
+   "kind": "ui",
+   "ok": true,
+   "files": 1,
+   "description": null,
+   "registryDependencies": []
+  },
+  {
+   "name": "badge",
+   "kind": "ui",
+   "ok": true,
+   "files": 1,
+   "description": null,
+   "registryDependencies": []
+  },
+  {
+   "name": "breadcrumb",
+   "kind": "ui",
+   "ok": true,
+   "files": 1,
+   "description": null,
+   "registryDependencies": []
+  },
+  {
+   "name": "bubble",
+   "kind": "ui",
+   "ok": true,
+   "files": 1,
+   "description": null,
+   "registryDependencies": []
+  },
+  {
+   "name": "button",
+   "kind": "ui",
+   "ok": true,
+   "files": 1,
+   "description": null,
+   "registryDependencies": []
+  },
+  {
+   "name": "button-group",
+   "kind": "ui",
+   "ok": true,
+   "files": 1,
+   "description": null,
+   "registryDependencies": [
+    "separator"
+   ]
+  },
+  {
+   "name": "calendar",
+   "kind": "ui",
+   "ok": true,
+   "files": 1,
+   "description": null,
+   "registryDependencies": [
+    "button"
+   ]
+  },
+  {
+   "name": "card",
+   "kind": "ui",
+   "ok": true,
+   "files": 1,
+   "description": null,
+   "registryDependencies": []
+  },
+  {
+   "name": "carousel",
+   "kind": "ui",
+   "ok": true,
+   "files": 1,
+   "description": null,
+   "registryDependencies": [
+    "button"
+   ]
+  },
+  {
+   "name": "chart",
+   "kind": "ui",
+   "ok": true,
+   "files": 1,
+   "description": null,
+   "registryDependencies": [
+    "card"
+   ]
+  },
+  {
+   "name": "checkbox",
+   "kind": "ui",
+   "ok": true,
+   "files": 1,
+   "description": null,
+   "registryDependencies": []
+  },
+  {
+   "name": "collapsible",
+   "kind": "ui",
+   "ok": true,
+   "files": 1,
+   "description": null,
+   "registryDependencies": []
+  },
+  {
+   "name": "combobox",
+   "kind": "ui",
+   "ok": true,
+   "files": 1,
+   "description": null,
+   "registryDependencies": [
+    "button",
+    "input-group"
+   ]
+  },
+  {
+   "name": "command",
+   "kind": "ui",
+   "ok": true,
+   "files": 1,
+   "description": null,
+   "registryDependencies": [
+    "dialog",
+    "input-group"
+   ]
+  },
+  {
+   "name": "context-menu",
+   "kind": "ui",
+   "ok": true,
+   "files": 1,
+   "description": null,
+   "registryDependencies": []
+  },
+  {
+   "name": "dialog",
+   "kind": "ui",
+   "ok": true,
+   "files": 1,
+   "description": null,
+   "registryDependencies": [
+    "button"
+   ]
+  },
+  {
+   "name": "direction",
+   "kind": "ui",
+   "ok": true,
+   "files": 1,
+   "description": null,
+   "registryDependencies": []
+  },
+  {
+   "name": "drawer",
+   "kind": "ui",
+   "ok": true,
+   "files": 1,
+   "description": null,
+   "registryDependencies": []
+  },
+  {
+   "name": "dropdown-menu",
+   "kind": "ui",
+   "ok": true,
+   "files": 1,
+   "description": null,
+   "registryDependencies": []
+  },
+  {
+   "name": "empty",
+   "kind": "ui",
+   "ok": true,
+   "files": 1,
+   "description": null,
+   "registryDependencies": []
+  },
+  {
+   "name": "field",
+   "kind": "ui",
+   "ok": true,
+   "files": 1,
+   "description": null,
+   "registryDependencies": [
+    "label",
+    "separator"
+   ]
+  },
+  {
+   "name": "form",
+   "kind": "ui",
+   "ok": true,
+   "files": 0,
+   "description": null,
+   "registryDependencies": []
+  },
+  {
+   "name": "hover-card",
+   "kind": "ui",
+   "ok": true,
+   "files": 1,
+   "description": null,
+   "registryDependencies": []
+  },
+  {
+   "name": "input",
+   "kind": "ui",
+   "ok": true,
+   "files": 1,
+   "description": null,
+   "registryDependencies": []
+  },
+  {
+   "name": "input-group",
+   "kind": "ui",
+   "ok": true,
+   "files": 1,
+   "description": null,
+   "registryDependencies": [
+    "button",
+    "input",
+    "textarea"
+   ]
+  },
+  {
+   "name": "input-otp",
+   "kind": "ui",
+   "ok": true,
+   "files": 1,
+   "description": null,
+   "registryDependencies": []
+  },
+  {
+   "name": "item",
+   "kind": "ui",
+   "ok": true,
+   "files": 1,
+   "description": null,
+   "registryDependencies": [
+    "separator"
+   ]
+  },
+  {
+   "name": "kbd",
+   "kind": "ui",
+   "ok": true,
+   "files": 1,
+   "description": null,
+   "registryDependencies": []
+  },
+  {
+   "name": "label",
+   "kind": "ui",
+   "ok": true,
+   "files": 1,
+   "description": null,
+   "registryDependencies": []
+  },
+  {
+   "name": "marker",
+   "kind": "ui",
+   "ok": true,
+   "files": 1,
+   "description": null,
+   "registryDependencies": []
+  },
+  {
+   "name": "menubar",
+   "kind": "ui",
+   "ok": true,
+   "files": 1,
+   "description": null,
+   "registryDependencies": [
+    "dropdown-menu"
+   ]
+  },
+  {
+   "name": "message",
+   "kind": "ui",
+   "ok": true,
+   "files": 1,
+   "description": null,
+   "registryDependencies": []
+  },
+  {
+   "name": "message-scroller",
+   "kind": "ui",
+   "ok": true,
+   "files": 1,
+   "description": null,
+   "registryDependencies": [
+    "button"
+   ]
+  },
+  {
+   "name": "native-select",
+   "kind": "ui",
+   "ok": true,
+   "files": 1,
+   "description": null,
+   "registryDependencies": []
+  },
+  {
+   "name": "navigation-menu",
+   "kind": "ui",
+   "ok": true,
+   "files": 1,
+   "description": null,
+   "registryDependencies": []
+  },
+  {
+   "name": "pagination",
+   "kind": "ui",
+   "ok": true,
+   "files": 1,
+   "description": null,
+   "registryDependencies": [
+    "button"
+   ]
+  },
+  {
+   "name": "popover",
+   "kind": "ui",
+   "ok": true,
+   "files": 1,
+   "description": null,
+   "registryDependencies": []
+  },
+  {
+   "name": "progress",
+   "kind": "ui",
+   "ok": true,
+   "files": 1,
+   "description": null,
+   "registryDependencies": []
+  },
+  {
+   "name": "questionnaire",
+   "kind": "ui",
+   "ok": true,
+   "files": 1,
+   "description": null,
+   "registryDependencies": [
+    "button"
+   ]
+  },
+  {
+   "name": "radio-group",
+   "kind": "ui",
+   "ok": true,
+   "files": 1,
+   "description": null,
+   "registryDependencies": []
+  },
+  {
+   "name": "resizable",
+   "kind": "ui",
+   "ok": true,
+   "files": 1,
+   "description": null,
+   "registryDependencies": []
+  },
+  {
+   "name": "scroll-area",
+   "kind": "ui",
+   "ok": true,
+   "files": 1,
+   "description": null,
+   "registryDependencies": []
+  },
+  {
+   "name": "select",
+   "kind": "ui",
+   "ok": true,
+   "files": 1,
+   "description": null,
+   "registryDependencies": []
+  },
+  {
+   "name": "separator",
+   "kind": "ui",
+   "ok": true,
+   "files": 1,
+   "description": null,
+   "registryDependencies": []
+  },
+  {
+   "name": "sheet",
+   "kind": "ui",
+   "ok": true,
+   "files": 1,
+   "description": null,
+   "registryDependencies": [
+    "button"
+   ]
+  },
+  {
+   "name": "sidebar",
+   "kind": "ui",
+   "ok": true,
+   "files": 1,
+   "description": null,
+   "registryDependencies": [
+    "button",
+    "input",
+    "separator",
+    "sheet",
+    "skeleton",
+    "tooltip",
+    "use-mobile"
+   ]
+  },
+  {
+   "name": "skeleton",
+   "kind": "ui",
+   "ok": true,
+   "files": 1,
+   "description": null,
+   "registryDependencies": []
+  },
+  {
+   "name": "slider",
+   "kind": "ui",
+   "ok": true,
+   "files": 1,
+   "description": null,
+   "registryDependencies": []
+  },
+  {
+   "name": "sonner",
+   "kind": "ui",
+   "ok": true,
+   "files": 1,
+   "description": null,
+   "registryDependencies": []
+  },
+  {
+   "name": "spinner",
+   "kind": "ui",
+   "ok": true,
+   "files": 1,
+   "description": null,
+   "registryDependencies": []
+  },
+  {
+   "name": "switch",
+   "kind": "ui",
+   "ok": true,
+   "files": 1,
+   "description": null,
+   "registryDependencies": []
+  },
+  {
+   "name": "table",
+   "kind": "ui",
+   "ok": true,
+   "files": 1,
+   "description": null,
+   "registryDependencies": []
+  },
+  {
+   "name": "tabs",
+   "kind": "ui",
+   "ok": true,
+   "files": 1,
+   "description": null,
+   "registryDependencies": []
+  },
+  {
+   "name": "textarea",
+   "kind": "ui",
+   "ok": true,
+   "files": 1,
+   "description": null,
+   "registryDependencies": []
+  },
+  {
+   "name": "toast",
+   "kind": "ui",
+   "ok": true,
+   "files": 1,
+   "description": null,
+   "registryDependencies": [
+    "button"
+   ]
+  },
+  {
+   "name": "toggle",
+   "kind": "ui",
+   "ok": true,
+   "files": 1,
+   "description": null,
+   "registryDependencies": []
+  },
+  {
+   "name": "toggle-group",
+   "kind": "ui",
+   "ok": true,
+   "files": 1,
+   "description": null,
+   "registryDependencies": [
+    "toggle"
+   ]
+  },
+  {
+   "name": "tooltip",
+   "kind": "ui",
+   "ok": true,
+   "files": 1,
+   "description": null,
+   "registryDependencies": []
+  },
+  {
+   "name": "dashboard-01",
+   "kind": "blocks",
+   "ok": true,
+   "files": 11,
+   "description": "A dashboard with sidebar, charts and data table.",
+   "registryDependencies": [
+    "sidebar",
+    "breadcrumb",
+    "separator",
+    "label",
+    "chart",
+    "card",
+    "select",
+    "tabs",
+    "table",
+    "toggle-group",
+    "badge",
+    "button",
+    "checkbox",
+    "dropdown-menu",
+    "drawer",
+    "input",
+    "avatar",
+    "sheet",
+    "sonner"
+   ]
+  },
+  {
+   "name": "login-01",
+   "kind": "blocks",
+   "ok": true,
+   "files": 2,
+   "description": "A simple login form.",
+   "registryDependencies": [
+    "button",
+    "card",
+    "input",
+    "label",
+    "field"
+   ]
+  },
+  {
+   "name": "login-02",
+   "kind": "blocks",
+   "ok": true,
+   "files": 2,
+   "description": "A two column login page with a cover image.",
+   "registryDependencies": [
+    "button",
+    "input",
+    "label",
+    "field"
+   ]
+  },
+  {
+   "name": "login-03",
+   "kind": "blocks",
+   "ok": true,
+   "files": 2,
+   "description": "A login page with a muted background color.",
+   "registryDependencies": [
+    "button",
+    "card",
+    "input",
+    "label",
+    "field"
+   ]
+  },
+  {
+   "name": "login-04",
+   "kind": "blocks",
+   "ok": true,
+   "files": 2,
+   "description": "A login page with form and image.",
+   "registryDependencies": [
+    "button",
+    "card",
+    "input",
+    "label",
+    "field"
+   ]
+  },
+  {
+   "name": "login-05",
+   "kind": "blocks",
+   "ok": true,
+   "files": 2,
+   "description": "A simple email-only login page.",
+   "registryDependencies": [
+    "button",
+    "input",
+    "label",
+    "field"
+   ]
+  },
+  {
+   "name": "sidebar-01",
+   "kind": "blocks",
+   "ok": true,
+   "files": 4,
+   "description": "A simple sidebar with navigation grouped by section.",
+   "registryDependencies": [
+    "sidebar",
+    "breadcrumb",
+    "separator",
+    "label",
+    "dropdown-menu"
+   ]
+  },
+  {
+   "name": "sidebar-02",
+   "kind": "blocks",
+   "ok": true,
+   "files": 4,
+   "description": "A sidebar with collapsible sections.",
+   "registryDependencies": [
+    "sidebar",
+    "breadcrumb",
+    "separator",
+    "label",
+    "dropdown-menu"
+   ]
+  },
+  {
+   "name": "sidebar-03",
+   "kind": "blocks",
+   "ok": true,
+   "files": 2,
+   "description": "A sidebar with submenus.",
+   "registryDependencies": [
+    "sidebar",
+    "breadcrumb"
+   ]
+  },
+  {
+   "name": "sidebar-04",
+   "kind": "blocks",
+   "ok": true,
+   "files": 2,
+   "description": "A floating sidebar with submenus.",
+   "registryDependencies": [
+    "sidebar",
+    "breadcrumb",
+    "separator"
+   ]
+  },
+  {
+   "name": "sidebar-05",
+   "kind": "blocks",
+   "ok": true,
+   "files": 3,
+   "description": "A sidebar with collapsible submenus.",
+   "registryDependencies": [
+    "sidebar",
+    "breadcrumb",
+    "separator",
+    "label",
+    "collapsible"
+   ]
+  },
+  {
+   "name": "sidebar-06",
+   "kind": "blocks",
+   "ok": true,
+   "files": 4,
+   "description": "A sidebar with submenus as dropdowns.",
+   "registryDependencies": [
+    "sidebar",
+    "breadcrumb",
+    "separator",
+    "card",
+    "dropdown-menu"
+   ]
+  },
+  {
+   "name": "sidebar-07",
+   "kind": "blocks",
+   "ok": true,
+   "files": 6,
+   "description": "A sidebar that collapses to icons.",
+   "registryDependencies": [
+    "sidebar",
+    "breadcrumb",
+    "separator",
+    "collapsible",
+    "dropdown-menu",
+    "avatar"
+   ]
+  },
+  {
+   "name": "sidebar-08",
+   "kind": "blocks",
+   "ok": true,
+   "files": 6,
+   "description": "An inset sidebar with secondary navigation.",
+   "registryDependencies": [
+    "sidebar",
+    "breadcrumb",
+    "separator",
+    "collapsible",
+    "dropdown-menu",
+    "avatar"
+   ]
+  },
+  {
+   "name": "sidebar-09",
+   "kind": "blocks",
+   "ok": true,
+   "files": 3,
+   "description": "Collapsible nested sidebars.",
+   "registryDependencies": [
+    "sidebar",
+    "breadcrumb",
+    "separator",
+    "collapsible",
+    "dropdown-menu",
+    "avatar",
+    "switch",
+    "label"
+   ]
+  },
+  {
+   "name": "sidebar-10",
+   "kind": "blocks",
+   "ok": true,
+   "files": 8,
+   "description": "A sidebar in a popover.",
+   "registryDependencies": [
+    "sidebar",
+    "breadcrumb",
+    "separator",
+    "popover",
+    "collapsible",
+    "dropdown-menu"
+   ]
+  },
+  {
+   "name": "sidebar-11",
+   "kind": "blocks",
+   "ok": true,
+   "files": 2,
+   "description": "A sidebar with a collapsible file tree.",
+   "registryDependencies": [
+    "sidebar",
+    "breadcrumb",
+    "separator",
+    "collapsible"
+   ]
+  },
+  {
+   "name": "sidebar-12",
+   "kind": "blocks",
+   "ok": true,
+   "files": 5,
+   "description": "A sidebar with a calendar.",
+   "registryDependencies": [
+    "sidebar",
+    "breadcrumb",
+    "separator",
+    "collapsible",
+    "calendar",
+    "dropdown-menu",
+    "avatar"
+   ]
+  },
+  {
+   "name": "sidebar-13",
+   "kind": "blocks",
+   "ok": true,
+   "files": 2,
+   "description": "A sidebar in a dialog.",
+   "registryDependencies": [
+    "sidebar",
+    "breadcrumb",
+    "button",
+    "dialog"
+   ]
+  },
+  {
+   "name": "sidebar-14",
+   "kind": "blocks",
+   "ok": true,
+   "files": 2,
+   "description": "A sidebar on the right.",
+   "registryDependencies": [
+    "sidebar",
+    "breadcrumb"
+   ]
+  },
+  {
+   "name": "sidebar-15",
+   "kind": "blocks",
+   "ok": true,
+   "files": 11,
+   "description": "A left and right sidebar.",
+   "registryDependencies": [
+    "sidebar",
+    "breadcrumb",
+    "separator",
+    "popover",
+    "collapsible",
+    "dropdown-menu",
+    "calendar",
+    "avatar"
+   ]
+  },
+  {
+   "name": "sidebar-16",
+   "kind": "blocks",
+   "ok": true,
+   "files": 8,
+   "description": "A sidebar with a sticky site header.",
+   "registryDependencies": [
+    "sidebar",
+    "breadcrumb",
+    "separator",
+    "collapsible",
+    "dropdown-menu",
+    "avatar",
+    "button",
+    "label"
+   ]
+  },
+  {
+   "name": "signup-01",
+   "kind": "blocks",
+   "ok": true,
+   "files": 2,
+   "description": "A simple signup form.",
+   "registryDependencies": [
+    "button",
+    "card",
+    "input",
+    "label"
+   ]
+  },
+  {
+   "name": "signup-02",
+   "kind": "blocks",
+   "ok": true,
+   "files": 2,
+   "description": "A two column signup page with a cover image.",
+   "registryDependencies": [
+    "button",
+    "input",
+    "label",
+    "field"
+   ]
+  },
+  {
+   "name": "signup-03",
+   "kind": "blocks",
+   "ok": true,
+   "files": 2,
+   "description": "A signup page with a muted background color.",
+   "registryDependencies": [
+    "button",
+    "card",
+    "input",
+    "label",
+    "field"
+   ]
+  },
+  {
+   "name": "signup-04",
+   "kind": "blocks",
+   "ok": true,
+   "files": 2,
+   "description": "A signup page with form and image.",
+   "registryDependencies": [
+    "button",
+    "card",
+    "input",
+    "label",
+    "field"
+   ]
+  },
+  {
+   "name": "signup-05",
+   "kind": "blocks",
+   "ok": true,
+   "files": 2,
+   "description": "A simple signup form with social providers.",
+   "registryDependencies": [
+    "button",
+    "input",
+    "label"
+   ]
+  },
+  {
+   "name": "chart-area-axes",
+   "kind": "charts",
+   "ok": true,
+   "files": 1,
+   "description": null,
+   "style": "new-york-v4"
+  },
+  {
+   "name": "chart-area-default",
+   "kind": "charts",
+   "ok": true,
+   "files": 1,
+   "description": null,
+   "style": "new-york-v4"
+  },
+  {
+   "name": "chart-area-gradient",
+   "kind": "charts",
+   "ok": true,
+   "files": 1,
+   "description": null,
+   "style": "new-york-v4"
+  },
+  {
+   "name": "chart-area-icons",
+   "kind": "charts",
+   "ok": true,
+   "files": 1,
+   "description": null,
+   "style": "new-york-v4"
+  },
+  {
+   "name": "chart-area-interactive",
+   "kind": "charts",
+   "ok": true,
+   "files": 1,
+   "description": null,
+   "style": "new-york-v4"
+  },
+  {
+   "name": "chart-area-legend",
+   "kind": "charts",
+   "ok": true,
+   "files": 1,
+   "description": null,
+   "style": "new-york-v4"
+  },
+  {
+   "name": "chart-area-linear",
+   "kind": "charts",
+   "ok": true,
+   "files": 1,
+   "description": null,
+   "style": "new-york-v4"
+  },
+  {
+   "name": "chart-area-stacked",
+   "kind": "charts",
+   "ok": true,
+   "files": 1,
+   "description": null,
+   "style": "new-york-v4"
+  },
+  {
+   "name": "chart-area-step",
+   "kind": "charts",
+   "ok": true,
+   "files": 1,
+   "description": null,
+   "style": "new-york-v4"
+  },
+  {
+   "name": "chart-bar-active",
+   "kind": "charts",
+   "ok": true,
+   "files": 1,
+   "description": null,
+   "style": "new-york-v4"
+  },
+  {
+   "name": "chart-bar-default",
+   "kind": "charts",
+   "ok": true,
+   "files": 1,
+   "description": null,
+   "style": "new-york-v4"
+  },
+  {
+   "name": "chart-bar-horizontal",
+   "kind": "charts",
+   "ok": true,
+   "files": 1,
+   "description": null,
+   "style": "new-york-v4"
+  },
+  {
+   "name": "chart-bar-interactive",
+   "kind": "charts",
+   "ok": true,
+   "files": 1,
+   "description": null,
+   "style": "new-york-v4"
+  },
+  {
+   "name": "chart-bar-label",
+   "kind": "charts",
+   "ok": true,
+   "files": 1,
+   "description": null,
+   "style": "new-york-v4"
+  },
+  {
+   "name": "chart-bar-mixed",
+   "kind": "charts",
+   "ok": true,
+   "files": 1,
+   "description": null,
+   "style": "new-york-v4"
+  },
+  {
+   "name": "chart-bar-multiple",
+   "kind": "charts",
+   "ok": true,
+   "files": 1,
+   "description": null,
+   "style": "new-york-v4"
+  },
+  {
+   "name": "chart-bar-negative",
+   "kind": "charts",
+   "ok": true,
+   "files": 1,
+   "description": null,
+   "style": "new-york-v4"
+  },
+  {
+   "name": "chart-bar-stacked",
+   "kind": "charts",
+   "ok": true,
+   "files": 1,
+   "description": null,
+   "style": "new-york-v4"
+  },
+  {
+   "name": "chart-line-default",
+   "kind": "charts",
+   "ok": true,
+   "files": 1,
+   "description": null,
+   "style": "new-york-v4"
+  },
+  {
+   "name": "chart-line-dots",
+   "kind": "charts",
+   "ok": true,
+   "files": 1,
+   "description": null,
+   "style": "new-york-v4"
+  },
+  {
+   "name": "chart-line-interactive",
+   "kind": "charts",
+   "ok": true,
+   "files": 1,
+   "description": null,
+   "style": "new-york-v4"
+  },
+  {
+   "name": "chart-line-label",
+   "kind": "charts",
+   "ok": true,
+   "files": 1,
+   "description": null,
+   "style": "new-york-v4"
+  },
+  {
+   "name": "chart-line-linear",
+   "kind": "charts",
+   "ok": true,
+   "files": 1,
+   "description": null,
+   "style": "new-york-v4"
+  },
+  {
+   "name": "chart-line-multiple",
+   "kind": "charts",
+   "ok": true,
+   "files": 1,
+   "description": null,
+   "style": "new-york-v4"
+  },
+  {
+   "name": "chart-line-step",
+   "kind": "charts",
+   "ok": true,
+   "files": 1,
+   "description": null,
+   "style": "new-york-v4"
+  },
+  {
+   "name": "chart-pie-donut",
+   "kind": "charts",
+   "ok": true,
+   "files": 1,
+   "description": null,
+   "style": "new-york-v4"
+  },
+  {
+   "name": "chart-pie-interactive",
+   "kind": "charts",
+   "ok": true,
+   "files": 1,
+   "description": null,
+   "style": "new-york-v4"
+  },
+  {
+   "name": "chart-pie-label",
+   "kind": "charts",
+   "ok": true,
+   "files": 1,
+   "description": null,
+   "style": "new-york-v4"
+  },
+  {
+   "name": "chart-pie-legend",
+   "kind": "charts",
+   "ok": true,
+   "files": 1,
+   "description": null,
+   "style": "new-york-v4"
+  },
+  {
+   "name": "chart-pie-simple",
+   "kind": "charts",
+   "ok": true,
+   "files": 1,
+   "description": null,
+   "style": "new-york-v4"
+  },
+  {
+   "name": "chart-pie-stacked",
+   "kind": "charts",
+   "ok": true,
+   "files": 1,
+   "description": null,
+   "style": "new-york-v4"
+  },
+  {
+   "name": "chart-radar-default",
+   "kind": "charts",
+   "ok": true,
+   "files": 1,
+   "description": null,
+   "style": "new-york-v4"
+  },
+  {
+   "name": "chart-radar-dots",
+   "kind": "charts",
+   "ok": true,
+   "files": 1,
+   "description": null,
+   "style": "new-york-v4"
+  },
+  {
+   "name": "chart-radar-legend",
+   "kind": "charts",
+   "ok": true,
+   "files": 1,
+   "description": null,
+   "style": "new-york-v4"
+  },
+  {
+   "name": "chart-radar-multiple",
+   "kind": "charts",
+   "ok": true,
+   "files": 1,
+   "description": null,
+   "style": "new-york-v4"
+  },
+  {
+   "name": "chart-radial-grid",
+   "kind": "charts",
+   "ok": true,
+   "files": 1,
+   "description": null,
+   "style": "new-york-v4"
+  },
+  {
+   "name": "chart-radial-label",
+   "kind": "charts",
+   "ok": true,
+   "files": 1,
+   "description": null,
+   "style": "new-york-v4"
+  },
+  {
+   "name": "chart-radial-shape",
+   "kind": "charts",
+   "ok": true,
+   "files": 1,
+   "description": null,
+   "style": "new-york-v4"
+  },
+  {
+   "name": "chart-radial-simple",
+   "kind": "charts",
+   "ok": true,
+   "files": 1,
+   "description": null,
+   "style": "new-york-v4"
+  },
+  {
+   "name": "chart-radial-stacked",
+   "kind": "charts",
+   "ok": true,
+   "files": 1,
+   "description": null,
+   "style": "new-york-v4"
+  },
+  {
+   "name": "chart-radial-text",
+   "kind": "charts",
+   "ok": true,
+   "files": 1,
+   "description": null,
+   "style": "new-york-v4"
+  },
+  {
+   "name": "chart-tooltip-advanced",
+   "kind": "charts",
+   "ok": true,
+   "files": 1,
+   "description": null,
+   "style": "new-york-v4"
+  },
+  {
+   "name": "chart-tooltip-default",
+   "kind": "charts",
+   "ok": true,
+   "files": 1,
+   "description": null,
+   "style": "new-york-v4"
+  },
+  {
+   "name": "chart-tooltip-formatter",
+   "kind": "charts",
+   "ok": true,
+   "files": 1,
+   "description": null,
+   "style": "new-york-v4"
+  },
+  {
+   "name": "chart-tooltip-icons",
+   "kind": "charts",
+   "ok": true,
+   "files": 1,
+   "description": null,
+   "style": "new-york-v4"
+  }
+ ],
+ "charts_style": "new-york-v4 (Recharts+Card only, no Radix \u2014 portable to base-nova)"
+}

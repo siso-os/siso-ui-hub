@@ -1,0 +1,23 @@
+{
+ "name": "login-04",
+ "type": "registry:block",
+ "description": "A login page with form and image.",
+ "categories": [
+  "authentication",
+  "login"
+ ],
+ "dependencies": [
+  "cn"
+ ],
+ "registryDependencies": [
+  "button",
+  "card",
+  "input",
+  "label",
+  "field"
+ ],
+ "files": [
+  "blocks/login-04/page.tsx",
+  "blocks/login-04/components/login-form.tsx"
+ ]
+}

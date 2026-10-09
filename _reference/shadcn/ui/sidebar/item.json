@@ -1,0 +1,25 @@
+{
+ "name": "sidebar",
+ "type": "registry:ui",
+ "dependencies": [
+  "cn"
+ ],
+ "registryDependencies": [
+  "button",
+  "input",
+  "separator",
+  "sheet",
+  "skeleton",
+  "tooltip",
+  "use-mobile"
+ ],
+ "meta": {
+  "links": {
+   "docs": "https://ui.shadcn.com/docs/components/base/sidebar",
+   "examples": "https://ui.shadcn.com/code/apps/v4/registry/bases/base/examples/sidebar-example.tsx"
+  }
+ },
+ "files": [
+  "ui/sidebar.tsx"
+ ]
+}

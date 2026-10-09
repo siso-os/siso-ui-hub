@@ -1,0 +1,23 @@
+{
+ "name": "login-01",
+ "type": "registry:block",
+ "description": "A simple login form.",
+ "categories": [
+  "authentication",
+  "login"
+ ],
+ "dependencies": [
+  "cn"
+ ],
+ "registryDependencies": [
+  "button",
+  "card",
+  "input",
+  "label",
+  "field"
+ ],
+ "files": [
+  "blocks/login-01/page.tsx",
+  "blocks/login-01/components/login-form.tsx"
+ ]
+}
