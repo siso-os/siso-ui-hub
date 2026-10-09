@@ -18,7 +18,44 @@
 </p>
 
 <!-- /siso-os:header -->
-SISO's one UI hub: rules, one catalogue, three kinds of surface, verticals as data, and an inventory of every component in every project.
 
-- Round 1 (7 Oct 2026): http://127.0.0.1:8891/card/UI-HUB-round1-20261006/html (rebuild: `round1/build-page --post`).
-- Start with `AGENTS.md`.
+Where our UI comes from. SISO UI Hub is the catalogue every SISO project takes its components from: 1,182 components
+from 11 independent UI libraries, the picks we chose and why, our own components, and 15 short design rules. Browse it
+at **[hub.sisolabs.space](https://hub.sisolabs.space)**, or search it from your terminal with `uihub`.
+
+More on [the website](https://www.sisolabs.space/ui-hub/).
+
+## Install
+
+You need Python 3 and git. Nothing else: no packages, no network calls.
+
+```bash
+git clone https://github.com/siso-os/siso-ui-hub.git
+cd siso-ui-hub
+export PATH="$PWD/bin:$PATH"   # add this line to ~/.zshrc to keep it
+uihub find modal
+```
+
+## Use it
+
+- `uihub find <words>`: search the picks, our own components and all 1,182 library components.
+- `uihub show <id>`: one component: what it is, its link and the line that installs it. For example
+  `uihub show kobra:dialog` prints `npx shadcn@latest add @kobra/dialog`.
+- `uihub brief <surface>`: the rules for a `dashboard`, `native-app` or `landing-site`, what fits it, and the picks with
+  install lines. Run it before you build a screen.
+- `uihub check <project> --repo DIR --base SHA --prefix src/`: in CI, fail when a new component file does not say
+  which pick or catalogue entry it came from.
+
+## What is in it
+
+- `catalogue/picks.json`: 29 components we picked, each with the reason.
+- `catalogue/custom.json`: our own components.
+- `sources/items.jsonl`: all 1,182 components from the 11 libraries (Arc, bencho, Devigner, EasyUI, Feral UI, Kinetics,
+  Kobra, OpenSourceUI, Space UI, Toolcraft, uselayouts), with `sources/libraries.json` giving each library's licence.
+- `principles/`: 15 design rules, one page each ("Hover shows more; click commits", "Space comes before components" ...).
+- `surfaces/`: what changes between a dashboard, a native app and a landing site.
+
+## Licence
+
+MIT for this repo; see [LICENSE](LICENSE). Each component keeps its own library's licence, listed in
+`sources/libraries.json`.

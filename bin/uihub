@@ -96,7 +96,8 @@ def show(i):
 # page and dev patterns as bin/inventory and the census command lines).
 NOT_A_COMPONENT = re.compile(r"(^|/)(screens?|pages|routes?)/|(Page|Screen|View|App|Space|Provider|Context)\.tsx$|(^|/)main\.tsx$"
                              r"|/(dev-web|dev|labs?|playground|storybook|__dev__)/|Lab\.tsx$|Dev(Page)?\.tsx$")
-BASELINE = load("inventory/baseline.json")["projects"]
+# The inventory baseline lists our own projects; a public clone has none, and find, show and brief work without it.
+BASELINE = load("inventory/baseline.json")["projects"] if os.path.exists(f"{HUB}/inventory/baseline.json") else {}
 def unmarked(project, ref=None, base=None, repo=None, prefix=None):
     """Component files at ref that were in no baseline of the same repo (or not at --base), and carry no known mark."""
     if project == "halo-crm": sys.exit("HALO CRM is Cam's: the hub records names and usage only and never reads its code")
