@@ -1,0 +1,217 @@
+{
+  "atom/layout": {
+    "variations": [
+      {"id": "scroll-area", "name": "Standard scroll area", "kind": "structure", "why": "the most common scroll layout, content flows vertically", "match": ["standard scroll area", "vertical scroll"]},
+      {"id": "horizontal-scroll", "name": "Horizontal scroll", "kind": "structure", "why": "slides or galleries that scroll left-right", "match": ["horizontal scroll"]},
+      {"id": "parallax", "name": "Parallax", "kind": "structure", "why": "layers move at different speeds on scroll", "match": ["parallax"]},
+      {"id": "sticky-header", "name": "Sticky and stacking", "kind": "structure", "why": "header or sections stay in place while content scrolls", "match": ["sticky and stacking"]},
+      {"id": "scroll-reveal", "name": "Scroll reveal", "kind": "structure", "why": "elements appear or animate as they scroll into view", "match": ["scroll reveal", "scroll-driven animation"]}
+    ]
+  },
+  "atom/text": {
+    "variations": [
+      {"id": "heading", "name": "Heading", "kind": "job", "why": "titles and section heads in various sizes", "match": ["headings", "typography system"]},
+      {"id": "body", "name": "Body", "kind": "job", "why": "prose text and paragraphs", "match": ["prose", "prose section"]},
+      {"id": "keyboard", "name": "Keyboard key", "kind": "edge", "why": "styled key representation for keyboard shortcuts", "match": ["kbd", "keyboard keys"]},
+      {"id": "blockquote", "name": "Blockquote", "kind": "job", "why": "quoted or emphasized text block", "match": ["blockquote"]},
+      {"id": "inline-code", "name": "Inline code", "kind": "edge", "why": "small code snippets within text", "match": ["inline"]}
+    ]
+  },
+  "atom/link": {
+    "variations": [
+      {"id": "standard", "name": "Standard link", "kind": "structure", "why": "basic underlined text link", "match": ["standard link", "inline styled link"]},
+      {"id": "navigation", "name": "Navigation link", "kind": "structure", "why": "links in nav bars and menus", "match": ["navigation"]},
+      {"id": "social", "name": "Social links", "kind": "job", "why": "links to social profiles and platforms", "match": ["social links"]},
+      {"id": "preview-hover", "name": "Preview on hover", "kind": "edge", "why": "tooltip or card appears on hover", "match": ["preview on hover"]}
+    ]
+  },
+  "atom/button": {
+    "variations": [
+      {"id": "primary", "name": "Primary", "kind": "structure", "why": "the main action on a page or form", "match": ["standard button", "default"]},
+      {"id": "icon-button", "name": "Icon button", "kind": "structure", "why": "icon-only without visible text label", "match": ["icon button"]},
+      {"id": "loading", "name": "Loading", "kind": "state", "why": "shows progress or busy state while action completes", "match": ["loading"]},
+      {"id": "toggle", "name": "Toggle", "kind": "structure", "why": "switches between two states on and off", "match": ["toggle or like"]},
+      {"id": "group", "name": "Group or split", "kind": "structure", "why": "multiple buttons grouped or split with dropdown", "match": ["group or split"]},
+      {"id": "social-brand", "name": "Social or brand button", "kind": "job", "why": "branded buttons for OAuth, payments, integrations", "match": ["social or brand"]},
+      {"id": "copy-share", "name": "Copy or share", "kind": "edge", "why": "copies to clipboard or shares content with feedback", "match": ["copy or share", "standard copy button"]},
+      {"id": "hold-confirm", "name": "Hold to confirm", "kind": "edge", "why": "requires sustained press to complete dangerous action", "match": ["hold to confirm"]}
+    ]
+  },
+  "atom/icon": {
+    "variations": [
+      {"id": "ui-icons", "name": "UI icon set", "kind": "job", "why": "app controls: menu, close, settings, arrow, search", "match": []},
+      {"id": "brand-social", "name": "Brand and social icons", "kind": "job", "why": "logos for platforms, services, integrations", "match": []},
+      {"id": "file-type", "name": "File type icons", "kind": "job", "why": "identifies file formats and document types", "match": []},
+      {"id": "status-weather", "name": "Status and weather", "kind": "job", "why": "indicates state: online, offline, success, error, weather", "match": []},
+      {"id": "animated", "name": "Animated icon", "kind": "edge", "why": "icon that animates on interaction or state change", "match": []}
+    ]
+  },
+  "atom/image": {
+    "variations": [
+      {"id": "video-player", "name": "Video player", "kind": "job", "why": "plays video with standard controls", "match": ["video player"]},
+      {"id": "audio-player", "name": "Audio player", "kind": "job", "why": "plays audio tracks with controls", "match": ["audio player", "audio mixer or controls"]},
+      {"id": "waveform", "name": "Waveform visualizer", "kind": "edge", "why": "displays audio as waveform or spectrum", "match": ["waveform visualizer"]}
+    ]
+  },
+  "atom/avatar": {
+    "variations": [
+      {"id": "standard", "name": "Standard avatar", "kind": "structure", "why": "image or initials for a single person or org", "match": ["standard avatar"]},
+      {"id": "avatar-group", "name": "Avatar group", "kind": "structure", "why": "stack of multiple avatars, often overlapping", "match": ["avatar group"]},
+      {"id": "fallback", "name": "Fallback initials", "kind": "state", "why": "initials or placeholder when image unavailable", "match": ["fallback"]},
+      {"id": "with-status", "name": "With status badge", "kind": "edge", "why": "shows online status or activity indicator", "match": ["application usage"]}
+    ]
+  },
+  "atom/badge": {
+    "variations": [
+      {"id": "badge", "name": "Badge", "kind": "structure", "why": "label or label for categories and tags", "match": ["standard badge"]},
+      {"id": "tag-chip", "name": "Tag or chip", "kind": "structure", "why": "removable or interactive tag with close button", "match": ["tag or chip"]},
+      {"id": "count", "name": "Count", "kind": "job", "why": "shows notification count or number", "match": ["count"]},
+      {"id": "dot", "name": "Dot indicator", "kind": "structure", "why": "small circular indicator for status or count", "match": ["dot"]},
+      {"id": "icon-badge", "name": "Icon badge", "kind": "edge", "why": "icon with count badge overlay", "match": ["icon badge"]},
+      {"id": "positioned", "name": "Positioned", "kind": "edge", "why": "badge positioned relative to another element", "match": ["badge in context"]}
+    ]
+  },
+  "atom/status-dot": {
+    "variations": [
+      {"id": "standard", "name": "Standard", "kind": "structure", "why": "small dot showing online, away, or offline state", "match": ["standard status dot"]},
+      {"id": "ping", "name": "Ping animation", "kind": "state", "why": "pulsing dot to highlight active status", "match": ["ping"]},
+      {"id": "bar", "name": "Status bar", "kind": "structure", "why": "thin bar or line representing status", "match": ["bar"]},
+      {"id": "presence-wrapper", "name": "Presence wrapper", "kind": "edge", "why": "status ring or badge around another element", "match": ["presence wrapper"]}
+    ]
+  },
+  "atom/text-input": {
+    "variations": [
+      {"id": "text-input", "name": "Text input", "kind": "structure", "why": "single-line text field for text entry", "match": ["text input", "standard form field"]},
+      {"id": "textarea", "name": "Textarea", "kind": "structure", "why": "multi-line text field for longer content", "match": ["standard textarea", "rich text editor"]},
+      {"id": "with-error", "name": "With error state", "kind": "state", "why": "shows validation error message below field", "match": ["validation"]},
+      {"id": "with-slots", "name": "With slots or addons", "kind": "edge", "why": "prefix or suffix icon or button inside field", "match": ["slots", "icon or addon"]},
+      {"id": "stepper", "name": "Number stepper", "kind": "structure", "why": "number input with increment/decrement buttons", "match": ["stepper", "number stepper"]},
+      {"id": "otp", "name": "OTP or PIN", "kind": "edge", "why": "separate boxes for code digits with auto-focus", "match": ["standard otp input", "pin or 4-digit"]},
+      {"id": "password", "name": "Password field", "kind": "structure", "why": "text input with show/hide toggle", "match": ["password"]},
+      {"id": "code-editor", "name": "Code editor", "kind": "job", "why": "syntax-highlighted code block for editing", "match": ["code editor"]}
+    ]
+  },
+  "atom/choice": {
+    "variations": [
+      {"id": "checkbox", "name": "Checkbox", "kind": "structure", "why": "select multiple options from a list", "match": ["standard checkbox"]},
+      {"id": "radio", "name": "Radio button", "kind": "structure", "why": "select exactly one option from a group", "match": ["standard radio"]},
+      {"id": "group", "name": "Group", "kind": "structure", "why": "multiple checkboxes or radios together", "match": ["group"]},
+      {"id": "card", "name": "Card radio or checkbox", "kind": "structure", "why": "larger card-like selection option with image or content", "match": ["card radio", "card checkbox"]},
+      {"id": "indeterminate", "name": "Indeterminate state", "kind": "state", "why": "shows partial selection in hierarchical lists", "match": ["indeterminate"]},
+      {"id": "with-description", "name": "With label and description", "kind": "edge", "why": "choice with helper text below the label", "match": ["label and description", "description"]}
+    ]
+  },
+  "atom/switch": {
+    "variations": [
+      {"id": "standard", "name": "Standard switch", "kind": "structure", "why": "toggle to turn on or off a setting", "match": ["standard switch", "on/off switch"]},
+      {"id": "theme-toggle", "name": "Theme toggle", "kind": "job", "why": "switches between light and dark mode", "match": ["theme toggle"]},
+      {"id": "toggle-button", "name": "Toggle button", "kind": "structure", "why": "button that toggles between active and inactive states", "match": ["toggle button"]},
+      {"id": "segmented", "name": "Segmented toggle", "kind": "structure", "why": "horizontal row of mutually exclusive options", "match": ["segmented toggle"]},
+      {"id": "toggle-group", "name": "Toggle group", "kind": "structure", "why": "multiple toggles grouped together", "match": ["toggle group"]},
+      {"id": "with-icons", "name": "With icons or labels", "kind": "edge", "why": "switch with icon or text labels on both sides", "match": ["icons", "label"]}
+    ]
+  },
+  "atom/slider": {
+    "variations": [
+      {"id": "slider", "name": "Single slider", "kind": "structure", "why": "pick one value along a range", "match": ["standard slider", "horizontal slider"]},
+      {"id": "range", "name": "Range slider", "kind": "structure", "why": "pick a min and max range with two handles", "match": ["range"]},
+      {"id": "vertical", "name": "Vertical slider", "kind": "structure", "why": "slider oriented vertically", "match": ["vertical"]},
+      {"id": "rating", "name": "Star rating", "kind": "job", "why": "click stars to rate something 1-5 or similar", "match": ["star rating", "standard rating", "emoji or icon rating"]},
+      {"id": "with-ticks", "name": "With ticks or labels", "kind": "edge", "why": "shows tick marks and labels for steps", "match": ["labels or ticks"]},
+      {"id": "dial-knob", "name": "Dial or knob", "kind": "structure", "why": "circular dial for continuous selection", "match": ["dial or knob"]}
+    ]
+  },
+  "atom/loader": {
+    "variations": [
+      {"id": "spinner", "name": "Spinner", "kind": "structure", "why": "rotating or animated circle indicating loading", "match": ["spinner", "rotating ring or arc", "orbit", "spiral"]},
+      {"id": "skeleton", "name": "Skeleton", "kind": "structure", "why": "gray placeholder showing content shape while loading", "match": ["shapes or grid", "text lines", "standard skeleton", "card skeleton", "list skeleton"]},
+      {"id": "pulse-shimmer", "name": "Pulse or shimmer", "kind": "state", "why": "pulsing or sweeping animation over content area", "match": ["pulse", "shimmer", "sweep"]},
+      {"id": "progress-bar", "name": "Progress bar", "kind": "structure", "why": "linear bar showing percentage complete", "match": ["progress"]},
+      {"id": "dots-bars", "name": "Dots or bars", "kind": "edge", "why": "animated dots or bars for indeterminate progress", "match": ["dots", "bars", "standard loader"]},
+      {"id": "specialized", "name": "Specialized or themed", "kind": "edge", "why": "custom loaders for specific brands or use cases", "match": ["specialized or themed", "geometric shape loaders"]}
+    ]
+  },
+  "atom/progress": {
+    "variations": [
+      {"id": "linear", "name": "Linear progress bar", "kind": "structure", "why": "horizontal bar showing percentage complete", "match": ["linear", "standard progress bar"]},
+      {"id": "circular", "name": "Circular progress", "kind": "structure", "why": "circular/donut showing percentage complete", "match": ["circular"]},
+      {"id": "stepped", "name": "Stepped or timeline", "kind": "structure", "why": "shows discrete steps in a process or journey", "match": ["stepped"]},
+      {"id": "segmented", "name": "Segmented", "kind": "structure", "why": "progress shown as filled segments", "match": ["segmented"]},
+      {"id": "meter-gauge", "name": "Meter or gauge", "kind": "job", "why": "shows measurement or strength like CPU, storage", "match": ["linear meter", "standard gauge", "specialized gauge", "strength meter"]},
+      {"id": "scroll-progress", "name": "Scroll progress", "kind": "edge", "why": "shows how far down page user has scrolled", "match": ["scroll progress"]}
+    ]
+  },
+  "atom/tooltip": {
+    "variations": [
+      {"id": "standard", "name": "Standard tooltip", "kind": "structure", "why": "simple text explanation on hover", "match": ["standard tooltip"]},
+      {"id": "rich", "name": "Rich content", "kind": "structure", "why": "tooltip with formatted content, images, or links", "match": ["rich tooltip"]},
+      {"id": "with-arrow", "name": "With arrow", "kind": "edge", "why": "pointer arrow showing which element is explained", "match": ["arrow"]},
+      {"id": "grouped-delay", "name": "Grouped or delayed", "kind": "edge", "why": "groups multiple related tooltips or delays appearance", "match": ["grouped or delay"]}
+    ]
+  },
+  "asset/logo": {
+    "variations": [
+      {"id": "brand", "name": "Brand logos", "kind": "job", "why": "company or product logos for partners and integrations", "match": []},
+      {"id": "payment", "name": "Payment methods", "kind": "job", "why": "card brands and payment processor logos", "match": []},
+      {"id": "social-tech", "name": "Social and tech icons", "kind": "job", "why": "logos for platforms, frameworks, and services", "match": []}
+    ]
+  },
+  "asset/sound": {
+    "variations": [
+      {"id": "click", "name": "Click", "kind": "job", "why": "feedback sound for button press or interaction", "match": []},
+      {"id": "success", "name": "Success", "kind": "job", "why": "positive confirmation sound for completed action", "match": []},
+      {"id": "error", "name": "Error", "kind": "job", "why": "alert sound for failure or invalid action", "match": []},
+      {"id": "notification", "name": "Notification", "kind": "job", "why": "sound for incoming message or alert", "match": []},
+      {"id": "ambient", "name": "Ambient", "kind": "job", "why": "background or loop sound for immersive experience", "match": []},
+      {"id": "typing", "name": "Typing", "kind": "job", "why": "subtle sound for each keystroke or character entry", "match": []}
+    ]
+  },
+  "asset/flag": {
+    "variations": [
+      {"id": "country", "name": "Country flag", "kind": "job", "why": "represents nations and official regions", "match": []},
+      {"id": "region-state", "name": "Region or state flag", "kind": "job", "why": "represents provinces, states, or subdivisions", "match": []},
+      {"id": "icon-flag", "name": "Flag icon", "kind": "job", "why": "small flag symbol or icon for language or region selector", "match": []}
+    ]
+  },
+  "asset/illustration": {
+    "variations": [
+      {"id": "hero", "name": "Hero illustration", "kind": "job", "why": "large focal illustration for landing page or section", "match": []},
+      {"id": "spot", "name": "Spot illustration", "kind": "job", "why": "small supporting illustration alongside content", "match": []},
+      {"id": "icon-illustration", "name": "Icon illustration", "kind": "job", "why": "illustrated replacement for a basic icon", "match": []},
+      {"id": "pattern", "name": "Background pattern", "kind": "job", "why": "repeating pattern for page background or texture", "match": []}
+    ]
+  },
+  "asset/og-image": {
+    "variations": [
+      {"id": "home", "name": "Home or landing", "kind": "job", "why": "preview for homepage or main landing page share", "match": []},
+      {"id": "blog-post", "name": "Blog post", "kind": "job", "why": "preview for article or blog entry", "match": []},
+      {"id": "product", "name": "Product page", "kind": "job", "why": "preview for product, feature, or offering", "match": []},
+      {"id": "docs", "name": "Docs page", "kind": "job", "why": "preview for documentation or guide", "match": []},
+      {"id": "changelog", "name": "Changelog", "kind": "job", "why": "preview for release notes or updates", "match": []}
+    ]
+  },
+  "asset/font": {
+    "variations": [
+      {"id": "ui-sans", "name": "UI sans serif", "kind": "job", "why": "clean sans-serif for app interface and body text", "match": []},
+      {"id": "display", "name": "Display or heading", "kind": "job", "why": "larger expressive font for headlines and titles", "match": []},
+      {"id": "monospace", "name": "Monospace code", "kind": "job", "why": "fixed-width font for code and technical content", "match": []},
+      {"id": "serif-editorial", "name": "Serif editorial", "kind": "job", "why": "serif font for long-form reading and articles", "match": []}
+    ]
+  },
+  "asset/shape": {
+    "variations": [
+      {"id": "geometric", "name": "Geometric shape", "kind": "job", "why": "circles, rectangles, polygons as design elements", "match": []},
+      {"id": "organic", "name": "Organic shape", "kind": "job", "why": "natural curved shapes and squiggles", "match": []},
+      {"id": "pattern", "name": "Pattern or texture", "kind": "job", "why": "repeating shapes forming pattern or texture", "match": []},
+      {"id": "decoration", "name": "Decoration", "kind": "job", "why": "small embellishment or border element", "match": []}
+    ]
+  },
+  "asset/avatar": {
+    "variations": [
+      {"id": "profile-image", "name": "Profile image", "kind": "job", "why": "photograph or custom illustration for user profile", "match": []},
+      {"id": "placeholder", "name": "Placeholder", "kind": "job", "why": "default generic avatar when image unavailable", "match": []},
+      {"id": "generated", "name": "Generated or random", "kind": "job", "why": "procedurally generated unique avatar per user", "match": []},
+      {"id": "character", "name": "Character or mascot", "kind": "job", "why": "stylized character or mascot for brand", "match": []}
+    ]
+  }
+}

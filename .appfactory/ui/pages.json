@@ -1,0 +1,126 @@
+{
+ "$schema": "../../factory/standard/schema/pages.schema.json",
+ "pages": [
+  {
+   "id": "P-home",
+   "name": "Projects",
+   "route": "/app#/projects",
+   "parent": null,
+   "purpose": "his projects at a glance, with real counts",
+   "widgets": [
+    "W-cores-rail",
+    "W-working-tabs",
+    "W-project-grid",
+    "W-status-bar"
+   ],
+   "status": "built"
+  },
+  {
+   "id": "P-project",
+   "name": "A project",
+   "route": "/app#/p/agent-base",
+   "parent": "P-home",
+   "purpose": "one project's line: its pages and components with status",
+   "widgets": [
+    "W-project-header",
+    "W-line-strip",
+    "W-status-filter",
+    "W-feature-chain",
+    "W-page-card"
+   ],
+   "status": "built"
+  },
+  {
+   "id": "P-component",
+   "name": "A component",
+   "route": "/app#/p/agent-base/c/apps%2Fweb%2Fsrc%2Fcomponents%2FSpeakToggle.tsx",
+   "parent": "P-project",
+   "purpose": "the standard page for one component",
+   "widgets": [
+    "W-component-facts",
+    "W-live-preview",
+    "W-install-line",
+    "W-rules"
+   ],
+   "status": "built"
+  },
+  {
+   "id": "P-compare",
+   "name": "Compare",
+   "route": "/app#/p/agent-base/compare/<file>",
+   "parent": "P-component",
+   "purpose": "the component next to 2-3 variations; he picks",
+   "widgets": [
+    "W-variations"
+   ],
+   "status": "planned"
+  },
+  {
+   "id": "P-core",
+   "name": "A core",
+   "route": "/app#/ui",
+   "parent": null,
+   "purpose": "a core's landing inside the factory",
+   "widgets": [
+    "W-core-card"
+   ],
+   "status": "built"
+  },
+  {
+   "id": "P-siso-ui-picks",
+   "name": "SISO UI v0.1: take or skip",
+   "route": "/",
+   "parent": "P-core",
+   "purpose": "every candidate for SISO UI rendered side by side, with take / skip",
+   "widgets": [
+    "W-candidate-card"
+   ],
+   "status": "built"
+  },
+  {
+   "id": "P-siso-ui",
+   "name": "SISO UI",
+   "route": "/app#/ui/set",
+   "parent": "P-core",
+   "purpose": "the set he chose, with install lines",
+   "widgets": [
+    "W-siso-ui-set",
+    "W-install-line"
+   ],
+   "status": "planned"
+  },
+  {
+   "id": "P-industries",
+   "name": "Industries",
+   "route": "/app#/industries",
+   "parent": null,
+   "purpose": "every industry, searchable",
+   "widgets": [
+    "W-industries-table"
+   ],
+   "status": "planned"
+  },
+  {
+   "id": "P-industry",
+   "name": "An industry",
+   "route": "/app#/industries/<slug>",
+   "parent": "P-industries",
+   "purpose": "one industry's research packs",
+   "widgets": [
+    "W-industry-packs"
+   ],
+   "status": "planned"
+  },
+  {
+   "id": "P-rules",
+   "name": "Rules",
+   "route": "/app#/law",
+   "parent": null,
+   "purpose": "the UI principles with his words",
+   "widgets": [
+    "W-rules"
+   ],
+   "status": "planned"
+  }
+ ]
+}

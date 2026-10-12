@@ -1,0 +1,111 @@
+#!/usr/bin/env python3
+"""The library's clean types (Shaan, 11 Oct: "surely ... a bunch of them are in the wrong place and there's probably a better
+more higher intelligent way of organizing them"). Readers typed 102k parts with 3,859 free phrases; many are looks ("solid",
+"glow or shiny"), vague ("basic", "simple"), near-duplicates ("multi select", "multi-select") or used once.
+
+  bin/types-clean plan     each category keeps the phrases readers used for at least 10 parts (or 1%), merged when they are
+                           the same words, with look and vague words stripped; the commonest becomes the plain type. Writes
+                           catalogue/schema/types-map/plan.json and, for a reader, rare/todo-<n>.json: the leftover phrases
+  (a reader)               places each leftover on one kept type of its category: rare/done-<n>.json {cat: {phrase: type}}
+  bin/types-clean build    writes catalogue/schema/types-map/types.json, which the export applies (bin/hubindex.py
+                           clean_types): {cat: {"types": [{"id","name"}], "map": {phrase: {"to","look","motion"}}}}
+  bin/types-clean report   before and after, per category"""
+import json, os, re, sys, collections
+HUB = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+CODE = os.path.join(os.path.dirname(HUB), "siso-ui-code")
+DIR = f"{HUB}/catalogue/schema/types-map"
+LOOKS = {"glow": "neon-glow", "glowing": "neon-glow", "shiny": "neon-glow", "neon": "neon-glow", "glass": "glass", "glassy": "glass",
+         "gradient": "gradient", "3d": "3d", "minimal": "minimal", "playful": "playful", "retro": "retro-hud", "brutalist": "brutalist"}
+MOTION = {"animated": "micro", "animation": "micro", "hover": "interactive", "magnetic": "interactive"}
+VAGUE = {"default", "basic", "simple", "standard", "plain", "solid", "other", "misc", "general", "widget", "helper", "status",
+         "state", "styled", "custom", "fancy", "modern", "single", "generic", "classic", "regular", "normal", "variant", "variants", "item"}
+JOIN = {"with", "or", "and", "a", "the", "for"}
+SCENE = re.compile(r"scene|webgl|model|globe|canvas|shader")
+
+def words(s): return re.findall(r"[a-z0-9]+", s.lower())
+def stem(w): return w[:-3] + "y" if w.endswith("ies") else w[:-1] if w.endswith("s") and len(w) > 3 and not w.endswith(("ss", "us", "is")) else w
+def singular(cat): return " ".join(stem(w) for w in cat.split("/")[-1].replace("-", " ").split())
+def tags(p):
+    """the look and motion its words carry"""
+    w = words(p); look = next((LOOKS[x] for x in w if x in LOOKS and not (x == "3d" and SCENE.search(p))), None)
+    return look, next((MOTION[x] for x in w if x in MOTION), None)
+def core(p, cat):
+    """the phrase without its look, motion and vague words; "" when nothing structural is left (or only the category's own noun)"""
+    own = set(singular(cat).split()) | set(words(cat.split("/")[-1]))
+    w = [stem(x) for x in words(p) if x not in JOIN and x not in VAGUE and x not in MOTION and not (x in LOOKS and not (x == "3d" and SCENE.search(p)))]
+    w = [x for x in w if x not in ("effect", "style", "button") and x not in {stem(o) for o in own}]
+    return " ".join(w)
+def label(p):
+    """a display name: the reader's own phrase without its leading look, motion or vague words ("animated indicator" -> "indicator")"""
+    w = p.split()
+    while w and (w[0].lower() in VAGUE or w[0].lower() in MOTION or w[0].lower() in LOOKS or w[0].lower() in JOIN): w = w[1:]
+    return " ".join(w)
+
+def counts():
+    c = collections.defaultdict(collections.Counter)
+    for l in open(f"{CODE}/types.jsonl"):
+        t = json.loads(l); c[t.get("cat") or "none"][t.get("pattern") or "none"] += 1
+    return c
+
+def plan():
+    cnt = counts(); out = {}; todo = {}
+    for cat, cc in cnt.items():
+        total = sum(cc.values()); th = max(10, total * 0.01) if total >= 200 else max(3, total * 0.03)
+        groups = collections.defaultdict(list)
+        for p, n in cc.items():
+            if re.search(r"\bdemo\b|documentation", p): continue
+            groups[" ".join(sorted(core(p, cat).split()))].append((n, p))
+        plain = f"standard {singular(cat)}"
+        kept = {}
+        for k, l in groups.items():
+            n = sum(x for x, _ in l)
+            name = plain if not k else (label(max(l)[1]) or plain)
+            if not k or n >= th: kept.setdefault(name, []).extend(p for _, p in l)
+        kept.setdefault(plain, [])
+        covered = {p for v in kept.values() for p in v}
+        out[cat] = {"plain": plain, "types": kept}
+        rare = [p for p, _ in cc.most_common() if p not in covered and not re.search(r"\bdemo\b|documentation", p)]
+        if rare: todo[cat] = {"types": sorted(kept), "phrases": rare}
+    os.makedirs(f"{DIR}/rare", exist_ok=True)
+    json.dump(out, open(f"{DIR}/plan.json", "w"), indent=1, ensure_ascii=False)
+    cats = sorted(todo, key=lambda c: -len(todo[c]["phrases"])); bins = [{} for _ in range(4)]
+    for i, c in enumerate(cats): min(bins, key=lambda b: sum(len(v["phrases"]) for v in b.values()))[c] = todo[c]
+    for i, b in enumerate(bins): json.dump(b, open(f"{DIR}/rare/todo-{i + 1}.json", "w"), indent=1, ensure_ascii=False)
+    print(f"{len(out)} categories, {sum(len(v['types']) for v in out.values())} types kept, {sum(len(v['phrases']) for v in todo.values())} leftover phrases in 4 files", file=sys.stderr)
+
+def build():
+    pl = json.load(open(f"{DIR}/plan.json")); done = {}
+    for f in sorted(os.listdir(f"{DIR}/rare")):
+        if f.startswith("done-"): done.update(json.load(open(f"{DIR}/rare/{f}")))
+    mf = f"{DIR}/rare/merge.json"; merges = json.load(open(mf)) if os.path.exists(mf) else {}
+    cnt = counts(); out = {}
+    for cat, v in pl.items():
+        mp = {}
+        for name, phrases in v["types"].items():
+            for p in phrases: mp[p] = name
+        for p, to in (done.get(cat) or {}).items(): mp.setdefault(p, to if to in v["types"] else v["plain"])
+        for p in cnt[cat]:
+            if p not in mp: mp[p] = "demo" if re.search(r"\bdemo\b|documentation", p) else v["plain"]
+        # kept types that are the same thing (rare/merge.json, a reader's second pass): "kbd", "keyboard keys" -> one
+        mg = merges.get(cat) or {}
+        for p, to in mp.items():
+            seen = set()
+            while to in mg and mg[to] in v["types"] and to not in seen: seen.add(to); to = mg[to]
+            mp[p] = to
+        v["types"] = {n: ph for n, ph in v["types"].items() if n in set(mp.values())}
+        ids = {name: re.sub(r"[^a-z0-9]+", "-", name).strip("-") for name in v["types"]}
+        out[cat] = {"types": [{"id": ids[n], "name": n} for n in sorted(v["types"], key=lambda n: -sum(cnt[cat][p] for p in mp if mp[p] == n))],
+                    "map": {p: {"to": "demo" if to == "demo" else ids[to], **dict(zip(("look", "motion"), tags(p)))} for p, to in mp.items()}}
+    json.dump(out, open(f"{DIR}/types.json", "w"), indent=1, ensure_ascii=False)
+    print(f"{DIR}/types.json: {len(out)} categories, {sum(len(v['types']) for v in out.values())} types", file=sys.stderr)
+
+def report():
+    tj = json.load(open(f"{DIR}/types.json")); cnt = counts()
+    before = sum(len(c) for c in cnt.values()); after = sum(len(v["types"]) for v in tj.values())
+    print(f"types: {before} before, {after} after")
+    for cat in sorted(tj, key=lambda c: -sum(cnt[c].values())):
+        size = collections.Counter()
+        for p, m in tj[cat]["map"].items(): size[m["to"]] += cnt[cat].get(p, 0)
+        print(f"{cat} ({sum(cnt[cat].values()):,}): " + " | ".join(f"{t['name']} {size[t['id']]}" for t in tj[cat]["types"]))
+
+{"plan": plan, "build": build, "report": report}[sys.argv[1] if len(sys.argv) > 1 else "report"]()

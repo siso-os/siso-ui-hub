@@ -1,0 +1,37 @@
+{"id": "bklit:area-chart", "node": "component/chart", "variation": "area-chart", "job": "composable area chart with gradient fills"}
+{"id": "bklit:background", "node": "component/chart", "variation": null, "job": "pattern fill for the plot area", "edge": "chart background"}
+{"id": "bklit:bar-chart", "node": "component/chart", "variation": "bar-chart", "job": "composable bar chart, horizontal or vertical"}
+{"id": "bklit:bar-depth", "node": "component/chart", "variation": "bar-chart", "job": "3D depth and glossy surfaces for bar chart bars"}
+{"id": "bklit:candlestick-chart", "node": "component/chart", "variation": null, "job": "composable OHLC candlestick chart with tooltips", "edge": "candlestick chart"}
+{"id": "bklit:chart-animation", "node": null, "variation": null, "job": "shared motion helpers for chart enter transitions"}
+{"id": "bklit:chart-context", "node": null, "variation": null, "job": "shared context and hooks for chart components"}
+{"id": "bklit:chart-series", "node": "component/chart", "variation": null, "job": "renders shared line and area series paths and markers", "edge": "chart series layer"}
+{"id": "bklit:chart-stat-flow", "node": "component/stat", "variation": "counter", "job": "animated stat value and label for chart overlays"}
+{"id": "bklit:chart-tooltip", "node": "atom/tooltip", "variation": "standard", "job": "composable tooltip components for charts"}
+{"id": "bklit:chart-utils", "node": null, "variation": null, "job": "formatters, decimation and tooltip scheduling utilities"}
+{"id": "bklit:choropleth-chart", "node": "component/map", "variation": "choropleth", "job": "geographic map chart with zoom and pan"}
+{"id": "bklit:composed-chart", "node": "component/chart", "variation": null, "job": "time-series chart composing line, area and bar", "edge": "composed bar-line chart"}
+{"id": "bklit:funnel-chart", "node": "component/chart", "variation": null, "job": "animated funnel chart with hover interaction", "edge": "funnel chart"}
+{"id": "bklit:gauge-chart", "node": "atom/progress", "variation": "meter-gauge", "job": "radial or linear gauge with optional centre label"}
+{"id": "bklit:grid", "node": "component/chart", "variation": null, "job": "grid lines aiding value reading on charts", "edge": "chart grid lines"}
+{"id": "bklit:heatmap-chart", "node": "component/chart", "variation": "heatmap", "job": "contribution heatmap with animated cells"}
+{"id": "bklit:legend", "node": "component/chart", "variation": null, "job": "composable legend components for charts", "edge": "chart legend"}
+{"id": "bklit:line-chart", "node": "component/chart", "variation": "line-chart", "job": "composable line chart with multiple series"}
+{"id": "bklit:live-line-chart", "node": "component/chart", "variation": "line-chart", "job": "real-time streaming line chart with crosshair"}
+{"id": "bklit:markers", "node": "component/chart", "variation": null, "job": "markers highlighting data points on charts", "edge": "chart data point marker"}
+{"id": "bklit:pie-chart", "node": "component/chart", "variation": "pie-donut", "job": "composable pie chart with animated slices"}
+{"id": "bklit:profit-loss-line", "node": "component/chart", "variation": "line-chart", "job": "sign-coloured profit and loss line segments"}
+{"id": "bklit:projection-line", "node": "component/chart", "variation": "line-chart", "job": "forecast segment extending a line series"}
+{"id": "bklit:radar-chart", "node": "component/chart", "variation": "radar-specialized", "job": "composable radar chart with multiple series"}
+{"id": "bklit:reference-area", "node": "component/chart", "variation": null, "job": "shaded band marking target ranges on charts", "edge": "chart reference area"}
+{"id": "bklit:ring-chart", "node": "component/chart", "variation": "pie-donut", "job": "composable donut ring chart with progress"}
+{"id": "bklit:sankey-chart", "node": "component/chart", "variation": null, "job": "flow diagram of transfers between nodes", "edge": "sankey flow chart"}
+{"id": "bklit:scatter-chart", "node": "component/chart", "variation": null, "job": "composable time-series scatter chart with hover", "edge": "scatter chart"}
+{"id": "bklit:shimmering-text", "node": "atom/loader", "variation": "pulse-shimmer", "job": "per-character shimmer on loading labels and badges"}
+{"id": "bklit:stat-card-area-01", "node": "component/stat", "variation": "kpi-sparkline", "job": "revenue stat card with area sparkline and trend"}
+{"id": "bklit:stat-card-choropleth-01", "node": "component/stat", "variation": "with-chart", "job": "visitor stat card with choropleth sparkline and trend"}
+{"id": "bklit:stat-card-line-01", "node": "component/stat", "variation": "kpi-sparkline", "job": "sessions stat card with line sparkline and trend"}
+{"id": "bklit:sunburst-chart", "node": "component/chart", "variation": null, "job": "hierarchical sunburst chart with drill-down zoom", "edge": "sunburst chart"}
+{"id": "bklit:utils", "node": null, "variation": null, "job": "className merging helper using clsx and tailwind-merge"}
+{"id": "bklit:x-axis", "node": "component/chart", "variation": null, "job": "x-axis labels for time-series charts", "edge": "chart x-axis"}
+{"id": "bklit:y-axis", "node": "component/chart", "variation": null, "job": "y-axis value labels for line and area charts", "edge": "chart y-axis"}

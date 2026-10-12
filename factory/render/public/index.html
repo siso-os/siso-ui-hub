@@ -1,0 +1,204 @@
+<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>SISO UI v0.1: take or skip</title><style>
+body{margin:0;background:#0b0b0c;color:#e8e8ea;font:14px/1.45 Inter,system-ui,sans-serif}
+header{padding:26px 32px 8px} h1{margin:0 0 6px;font-size:26px} h1 b{color:#3B82F6} header p{color:#9a9aa2;margin:4px 0}
+nav.toc{position:sticky;top:0;z-index:5;background:#0b0b0cee;backdrop-filter:blur(8px);padding:10px 32px;display:flex;gap:14px;flex-wrap:wrap;border-bottom:1px solid #222}
+nav.toc a{color:#c8c8d0;text-decoration:none;font-size:13px} nav.toc a:hover{color:#3B82F6}
+section{padding:18px 32px} h2{margin:8px 0 8px;font-size:19px;color:#3B82F6}
+blockquote{margin:0 0 12px;color:#d6c9a8;border-left:3px solid #FFA726;padding:4px 12px;font-style:italic;max-width:1100px}
+.finding{background:#1f1310;border:1px solid #5a2a1a;border-radius:10px;padding:10px 14px;color:#f3c7b5;max-width:1100px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(420px,100%),1fr));gap:16px}
+.card{background:#141416;border:1px solid #26262b;border-radius:12px;overflow:hidden;display:flex;flex-direction:column}
+.card.take{border-color:#22c55e;box-shadow:0 0 18px #22c55e44} .card.skip{opacity:.45}
+iframe{width:100%;border:0;border-bottom:1px solid #26262b;background:#0e0e10;display:block}
+.miss{padding:28px;background:#1c1c20;color:#b0b0b8;border-bottom:1px solid #26262b} .miss b{color:#f59e0b}
+.body{padding:10px 14px 12px} h3{margin:0 0 6px;font-size:15px} .body p{margin:4px 0;font-size:13px;color:#c8c8d0}
+.words{color:#d6c9a8!important;font-style:italic} .meta{color:#8a8a92!important;font-size:12px!important}
+.vote{display:flex;gap:8px;margin-top:8px;align-items:center} .vote button{background:#1d1d22;color:#e8e8ea;border:1px solid #333;border-radius:8px;padding:6px 14px;cursor:pointer}
+.vote button[data-v=take]:hover{border-color:#22c55e} .vote button[data-v=skip]:hover{border-color:#ef4444}
+.vote input{flex:1;background:#0e0e10;border:1px solid #2a2a30;border-radius:8px;color:#e8e8ea;padding:6px 10px} .got{font-size:12px;color:#22c55e}
+footer{padding:20px 32px 40px;color:#8a8a92;font-size:12px}
+</style></head><body>
+<header><h1>SISO UI <b>v0.1</b>: take or skip</h1>
+<p>The parts the App Factory gets built with. 24 candidates in 9 decisions, every one rendered, not described: ours live from our own source, your 21st picks from 21st's own build. 2 we can't show yet, and each says why.</p>
+<p>Press Take or Skip on each (add words if you like); it's written to <code>factory/siso-ui/picks.jsonl</code> with your words. Or just tell me in chat.</p>
+<p>Your projects today: agent-base 173 · halo-crm 723 · model-app 389 · operator 157 · operator-redesign 268 = 1,710 components.</p></header>
+<nav class="toc"><a href="#nav">1 · Side nav</a><a href="#tabs">2 · Page tabs up top</a><a href="#search">3 · Centre search (⌘K)</a><a href="#bell">4 · One bell, and the toast</a><a href="#cards">5 · Cards and stat tiles</a><a href="#charts">6 · Charts</a><a href="#inputs">7 · AI input and pickers</a><a href="#brand">8 · Ours: agents, marks, the landing&#x27;s pieces</a><a href="#look">9 · Colour and glow</a></nav>
+<section id="nav"><h2>1 · Side nav</h2>
+<blockquote>“the side nav at the halo one with the four buttons and the search, their search with the pop-ups, really cool ... I would just want to redesign that comp so it&#x27;s nicer and then the compress is good back arrows is good”</blockquote>
+
+<div class="grid"><div class="card" data-id="ab-rail"><iframe loading="lazy" src="/demo/ab-rail" style="height:640px"></iframe>
+<div class="body"><h3>Agent Base GroupedRail (@siso/side-nav)</h3>
+
+<p>Lifted from the SISO CRM rail, which is where HALO&#x27;s side nav came from: champagne glass, ⌘K search, groups, collapse. Holding the factory&#x27;s cores in V1 §4a&#x27;s groups.</p>
+<p class="meta">live from our source · agent-base packages/siso-side-nav/src/GroupedRail.tsx · ours · lucide-react</p>
+<div class="vote"><button data-v="take">Take</button><button data-v="skip">Skip</button><input placeholder="your words (optional)"><span class="got"></span></div>
+</div></div><div class="card" data-id="manuarora700__sidebar"><iframe loading="lazy" src="/bundle/manuarora700__sidebar?theme=dark" style="height:640px"></iframe>
+<div class="body"><h3>Aceternity sidebar (manuarora700)</h3>
+<p class="words">“desktop side nav counterpart to the mobile dock, BYK member app”</p>
+
+<p class="meta">21st&#x27;s own build, their demo data · + framer-motion · next/link to shim</p>
+<div class="vote"><button data-v="take">Take</button><button data-v="skip">Skip</button><input placeholder="your words (optional)"><span class="got"></span></div>
+</div></div><div class="card" data-id="aymanch-03__user-dropdown"><iframe loading="lazy" src="/bundle/aymanch-03__user-dropdown?theme=dark" style="height:520px"></iframe>
+<div class="body"><h3>User dropdown (aymanch-03)</h3>
+<p class="words">“use this for the dashboard dropdown side nav, for the dashboard and setting thing please”</p>
+<p>For the project dropdown at the top of the side nav.</p>
+<p class="meta">21st&#x27;s own build, their demo data · + framer-motion</p>
+<div class="vote"><button data-v="take">Take</button><button data-v="skip">Skip</button><input placeholder="your words (optional)"><span class="got"></span></div>
+</div></div></div></section><section id="tabs"><h2>2 · Page tabs up top</h2>
+<blockquote>“in our agent base, like, I really love how the pages ... you can have different tabs up top ... if you click on different pages Maybe they save up there, so you can easily navigate”</blockquote>
+
+<div class="grid"><div class="card" data-id="ab-tabs"><iframe loading="lazy" src="/demo/ab-tabs" style="height:90px"></iframe>
+<div class="body"><h3>Agent Base PillTabs (@siso/shell)</h3>
+
+<p>Click to switch, × or middle-click to close. ★ marks a pinned page.</p>
+<p class="meta">live from our source · agent-base packages/siso-shell/src/PillTabs.tsx · ours · zero new deps</p>
+<div class="vote"><button data-v="take">Take</button><button data-v="skip">Skip</button><input placeholder="your words (optional)"><span class="got"></span></div>
+</div></div></div></section><section id="search"><h2>3 · Centre search (⌘K)</h2>
+<blockquote>“their search with the pop-ups, really cool, it&#x27;s taken from Shadzi and UI to be fair, with the pop-up in the middle, that&#x27;s nice”</blockquote>
+
+<div class="grid"><div class="card" data-id="samitkapoor__apple-spotlight"><iframe loading="lazy" src="/bundle/samitkapoor__apple-spotlight?theme=dark" style="height:520px"></iframe>
+<div class="body"><h3>Apple Spotlight (samitkapoor)</h3>
+<p class="words">“oh my gosh this apple spotlight is beautiful. Use it for search or something. We already have something like that for search but this is really cool”</p>
+
+<p class="meta">21st&#x27;s own build, their demo data · + framer-motion</p>
+<div class="vote"><button data-v="take">Take</button><button data-v="skip">Skip</button><input placeholder="your words (optional)"><span class="got"></span></div>
+</div></div><div class="card" data-id="ab-spotlight"><div class="miss"><b>Not shown</b><p>Not on Agent Base&#x27;s main yet, so it is not on disk to render. It is shadcn Command (cmdk) underneath. It gets a card once AGENT-BASE lands it, or I render it from the branch with git show next round.</p></div>
+<div class="body"><h3>Agent Base spotlight (branch feat/cmdk-spotlight-20261008 @ 6f67a7a)</h3>
+
+
+<p class="meta"></p>
+<div class="vote"><button data-v="take">Take</button><button data-v="skip">Skip</button><input placeholder="your words (optional)"><span class="got"></span></div>
+</div></div></div></section><section id="bell"><h2>4 · One bell, and the toast</h2>
+<blockquote>“the versions and notifications can kind of be merged together because that&#x27;s the same shit”</blockquote>
+
+<div class="grid"><div class="card" data-id="ahmedmayara__notifications-menu"><iframe loading="lazy" src="/bundle/ahmedmayara__notifications-menu?theme=dark" style="height:560px"></iframe>
+<div class="body"><h3>Notifications menu (ahmedmayara)</h3>
+<p class="words">“banging notifications menu, a really good one. We need a good notifications menu and this is a side one so it doesn&#x27;t take up much space”</p>
+
+<p class="meta">21st&#x27;s own build, their demo data · shadcn avatar, badge, button, card, tabs</p>
+<div class="vote"><button data-v="take">Take</button><button data-v="skip">Skip</button><input placeholder="your words (optional)"><span class="got"></span></div>
+</div></div><div class="card" data-id="yadwinder__toast-save"><iframe loading="lazy" src="/bundle/yadwinder__toast-save?theme=dark" style="height:300px"></iframe>
+<div class="body"><h3>Toast save (yadwinder)</h3>
+<p class="words">“I like this as well. ANY comp which is supposed to be like that should be using THIS comp instead - swapping out all the bullshit comps for what we actually know looks good. STANDARD for save/toast confirmations.”</p>
+
+<p class="meta">21st&#x27;s own build, their demo data · shadcn button, spinner</p>
+<div class="vote"><button data-v="take">Take</button><button data-v="skip">Skip</button><input placeholder="your words (optional)"><span class="got"></span></div>
+</div></div></div></section><section id="cards"><h2>5 · Cards and stat tiles</h2>
+<blockquote>“this card 05 to be how I want it on its own. STANDARD not placement.”</blockquote>
+
+<div class="grid"><div class="card" data-id="ravikatiyar162__stats-card"><iframe loading="lazy" src="/bundle/ravikatiyar162__stats-card?theme=dark" style="height:460px"></iframe>
+<div class="body"><h3>Stats card (ravikatiyar162)</h3>
+<p class="words">“I like this stats card, the earning one, really nice || 2026-09-12: stats bento for profile — BYK member app”</p>
+
+<p class="meta">21st&#x27;s own build, their demo data · + framer-motion</p>
+<div class="vote"><button data-v="take">Take</button><button data-v="skip">Skip</button><input placeholder="your words (optional)"><span class="got"></span></div>
+</div></div><div class="card" data-id="0xUrvish__bento-card"><iframe loading="lazy" src="/bundle/0xUrvish__bento-card?theme=dark" style="height:560px"></iframe>
+<div class="body"><h3>Bento card (0xUrvish)</h3>
+<p class="words">“really nice bento card. If we ever make a landing page this is a really good comp to have. Must mean a lot considering I&#x27;ve actively not been mentioning landing page stuff”</p>
+
+<p class="meta">21st&#x27;s own build, their demo data · + framer-motion</p>
+<div class="vote"><button data-v="take">Take</button><button data-v="skip">Skip</button><input placeholder="your words (optional)"><span class="got"></span></div>
+</div></div><div class="card" data-id="trophyso__leaderboard-card"><iframe loading="lazy" src="/bundle/trophyso__leaderboard-card?theme=dark" style="height:560px"></iframe>
+<div class="body"><h3>Leaderboard card (trophyso)</h3>
+<p class="words">“this would be so banging in the operators dashboard. I&#x27;d make a whole page for this. Models could have streaks, get assigned badges. We&#x27;re going to gamify a bit for them, on the operators performance side of the admin board”</p>
+
+<p class="meta">21st&#x27;s own build, their demo data · shadcn primitives</p>
+<div class="vote"><button data-v="take">Take</button><button data-v="skip">Skip</button><input placeholder="your words (optional)"><span class="got"></span></div>
+</div></div><div class="card" data-id="felipemenezes098__card-05"><div class="miss"><b>Not shown</b><p>Your standard card, and the one pick we hold nothing for: no source, no build, no preview on disk (21st returned nothing when the bank was harvested). Next step: fetch it through camofox and add it to the bank, then it renders here.</p></div>
+<div class="body"><h3>Card 05 (felipemenezes098)</h3>
+<p class="words">“this is nice, this is how I want cards. like cards on their own - this card 05 to be how I want it on its own. STANDARD not placement.”</p>
+
+<p class="meta"></p>
+<div class="vote"><button data-v="take">Take</button><button data-v="skip">Skip</button><input placeholder="your words (optional)"><span class="got"></span></div>
+</div></div></div></section><section id="charts"><h2>6 · Charts</h2>
+<blockquote>“mini charts, exactly what we needed ... more charts, fucking beautiful, exactly what we wanted”</blockquote>
+<p class="finding">Finding: the bank&#x27;s saved source for these three is not the chart. area-charts-1&#x27;s code.tsx is 21st&#x27;s 17-line placeholder counter, and line-charts-1 and chart are copies of shadcn&#x27;s chart.tsx wrapper, which draws nothing. The real charts are in each one&#x27;s demo.tsx, on ReUI&#x27;s primitives. The previews below are 21st&#x27;s own builds, so they are the real charts; installing one means taking its demo.tsx, not its code.tsx.</p>
+<div class="grid"><div class="card" data-id="sean0205__line-charts-1"><iframe loading="lazy" src="/bundle/sean0205__line-charts-1?theme=dark" style="height:520px"></iframe>
+<div class="body"><h3>Line chart 1 (ReUI, sean0205)</h3>
+<p class="words">“more charts, fucking beautiful, exactly what we wanted”</p>
+
+<p class="meta">21st&#x27;s own build, their demo data · + recharts · ReUI card, badge, button</p>
+<div class="vote"><button data-v="take">Take</button><button data-v="skip">Skip</button><input placeholder="your words (optional)"><span class="got"></span></div>
+</div></div><div class="card" data-id="sean0205__area-charts-1"><iframe loading="lazy" src="/bundle/sean0205__area-charts-1?theme=dark" style="height:520px"></iframe>
+<div class="body"><h3>Area chart 1 (ReUI, sean0205)</h3>
+<p class="words">“mini charts, exactly what we needed. Chart area ones, exactly what we needed for our dashboard”</p>
+
+<p class="meta">21st&#x27;s own build, their demo data · + recharts</p>
+<div class="vote"><button data-v="take">Take</button><button data-v="skip">Skip</button><input placeholder="your words (optional)"><span class="got"></span></div>
+</div></div><div class="card" data-id="sean0205__chart"><iframe loading="lazy" src="/bundle/sean0205__chart?theme=dark" style="height:520px"></iframe>
+<div class="body"><h3>Streak chart (ReUI, sean0205)</h3>
+<p class="words">“these are those streak charts I was looking for”</p>
+
+<p class="meta">21st&#x27;s own build, their demo data · + recharts</p>
+<div class="vote"><button data-v="take">Take</button><button data-v="skip">Skip</button><input placeholder="your words (optional)"><span class="got"></span></div>
+</div></div><div class="card" data-id="jatin-yadav05__mini-chart"><iframe loading="lazy" src="/bundle/jatin-yadav05__mini-chart?theme=dark" style="height:420px"></iframe>
+<div class="body"><h3>Mini chart (jatin-yadav05)</h3>
+<p class="words">“does this activity mini chart actually work? It does. Banging. We needed some graphs. This is going to be used in the operator thing”</p>
+
+<p class="meta">21st&#x27;s own build, their demo data · + framer-motion</p>
+<div class="vote"><button data-v="take">Take</button><button data-v="skip">Skip</button><input placeholder="your words (optional)"><span class="got"></span></div>
+</div></div></div></section><section id="inputs"><h2>7 · AI input and pickers</h2>
+<blockquote>“ask AI input. Really cool the way it pops up, then we&#x27;re not always wasting space”</blockquote>
+
+<div class="grid"><div class="card" data-id="aghasisahakyan1__ai-input"><iframe loading="lazy" src="/bundle/aghasisahakyan1__ai-input?theme=dark" style="height:420px"></iframe>
+<div class="body"><h3>AI input (aghasisahakyan1)</h3>
+<p class="words">“ask AI input. Really cool the way it pops up, then we&#x27;re not always wasting space. Having an AI chat always showing is the bad way to go on Oracle. This is definitely the best way, definitely best UI principles. Hand over to an agent to look into”</p>
+
+<p class="meta">21st&#x27;s own build, their demo data · + framer-motion</p>
+<div class="vote"><button data-v="take">Take</button><button data-v="skip">Skip</button><input placeholder="your words (optional)"><span class="got"></span></div>
+</div></div><div class="card" data-id="uplusion23__color-picker"><iframe loading="lazy" src="/bundle/uplusion23__color-picker?theme=dark" style="height:460px"></iframe>
+<div class="body"><h3>Colour picker (uplusion23)</h3>
+<p class="words">“the color selector on the components thing - just make this like a little dropdown or something, as opposed to what&#x27;s there now”</p>
+<p>For changing tokens on the component page (shadcn&#x27;s Create).</p>
+<p class="meta">21st&#x27;s own build, their demo data · shadcn primitives</p>
+<div class="vote"><button data-v="take">Take</button><button data-v="skip">Skip</button><input placeholder="your words (optional)"><span class="got"></span></div>
+</div></div><div class="card" data-id="arunachalam__animated-file-tree"><iframe loading="lazy" src="/bundle/arunachalam__animated-file-tree?theme=dark" style="height:460px"></iframe>
+<div class="body"><h3>Animated file tree (arunachalam)</h3>
+<p class="words">“for the side nav on the settings I thought a comp like this could be really cool, this animated file tree”</p>
+<p>For a project&#x27;s pages, sub-pages and components.</p>
+<p class="meta">21st&#x27;s own build, their demo data · + framer-motion</p>
+<div class="vote"><button data-v="take">Take</button><button data-v="skip">Skip</button><input placeholder="your words (optional)"><span class="got"></span></div>
+</div></div></div></section><section id="brand"><h2>8 · Ours: agents, marks, the landing&#x27;s pieces</h2>
+<blockquote>“the token tracker on the main landing page the UI for each of those cards the two cards of the UI for the UI hub is so beautiful and all the 3D animations and stuff are quite cool ... the 3D logos”</blockquote>
+
+<div class="grid"><div class="card" data-id="ab-faces"><iframe loading="lazy" src="/demo/ab-faces" style="height:150px"></iframe>
+<div class="body"><h3>HALO faces (@halo/agent-face)</h3>
+
+
+<p class="meta">live from our source · agent-base packages/halo-face · ours · zero deps</p>
+<div class="vote"><button data-v="take">Take</button><button data-v="skip">Skip</button><input placeholder="your words (optional)"><span class="got"></span></div>
+</div></div><div class="card" data-id="lp-marks"><iframe loading="lazy" src="/demo/lp-marks" style="height:360px"></iframe>
+<div class="body"><h3>Living marks + lion (landing)</h3>
+
+
+<p class="meta">live from our source · landing living/WorkspaceMark.tsx, ui/LionGlyph.tsx · ours · zero deps</p>
+<div class="vote"><button data-v="take">Take</button><button data-v="skip">Skip</button><input placeholder="your words (optional)"><span class="got"></span></div>
+</div></div><div class="card" data-id="lp-tokendial"><iframe loading="lazy" src="/demo/lp-tokendial" style="height:300px"></iframe>
+<div class="body"><h3>Token tracker (landing TokenDial)</h3>
+
+
+<p class="meta">live from our source · landing home-hero/TokenDial.tsx · siso-stats.json · ours · zero deps</p>
+<div class="vote"><button data-v="take">Take</button><button data-v="skip">Skip</button><input placeholder="your words (optional)"><span class="got"></span></div>
+</div></div><div class="card" data-id="lp-uihubcard"><iframe loading="lazy" src="/demo/lp-uihubcard" style="height:460px"></iframe>
+<div class="body"><h3>UI Hub card (landing UiHubCard)</h3>
+
+<p>Rendered from its source without the landing&#x27;s global stylesheet, so spacing is looser than on the site.</p>
+<p class="meta">live from our source · landing home-products/ui-hub/UiHubCard.tsx · ours · + framer-motion</p>
+<div class="vote"><button data-v="take">Take</button><button data-v="skip">Skip</button><input placeholder="your words (optional)"><span class="got"></span></div>
+</div></div></div></section><section id="look"><h2>9 · Colour and glow</h2>
+<blockquote>“I want to use that kind of UI theme for it ... UI is going to be blue ... I like the glowy effects of like the ARC, our browser and the agent base”</blockquote>
+
+<div class="grid"><div class="card" data-id="theme"><iframe loading="lazy" src="/demo/theme" style="height:330px"></iframe>
+<div class="body"><h3>Both schemes, read from the live CSS, and a colour per core</h3>
+
+<p>The core colours other than UI blue are my placeholders: say which you want.</p>
+<p class="meta">live from our source · landing color-system.css · agent-base siso.css · tokens only</p>
+<div class="vote"><button data-v="take">Take</button><button data-v="skip">Skip</button><input placeholder="your words (optional)"><span class="got"></span></div>
+</div></div></div></section>
+<footer>A proposal: no file in Agent Base, the landing or the bank was changed. Render service: factory/render/server.mjs (Sucrase + esm.sh, one React 19).</footer>
+<script>
+fetch('/api/picks').then(r=>r.json()).then(rows=>rows.forEach(p=>{const c=document.querySelector('.card[data-id="'+p.id+'"]');if(c){c.classList.remove('take','skip');c.classList.add(p.verdict);c.querySelector('.got').textContent=p.verdict+(p.words?': '+p.words:'');}}));
+document.querySelectorAll('.vote button').forEach(b=>b.onclick=()=>{const c=b.closest('.card');const words=c.querySelector('input').value;
+fetch('/api/pick',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({id:c.dataset.id,verdict:b.dataset.v,words})}).then(r=>r.json()).then(()=>{c.classList.remove('take','skip');c.classList.add(b.dataset.v);c.querySelector('.got').textContent='saved: '+b.dataset.v;});});
+</script></body></html>

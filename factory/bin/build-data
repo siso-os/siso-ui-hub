@@ -1,0 +1,57 @@
+#!/usr/bin/env python3
+"""build-data: the factory's Projects data from the UI Hub inventory (no model, no network).
+Writes factory/data/projects.json (home: one row per project with real counts) and factory/data/projects/<id>.json
+(pages -> components with status). Status, per spec §6: dead (grade dead), needs-pick (a swap is proposed),
+picked (from a library or our catalogue), ours (our own code). 'weak' is counted on top of status."""
+import json, pathlib, collections
+F = pathlib.Path(__file__).resolve().parent.parent
+HUB = F.parent
+INV = HUB / "inventory"
+NAMES = {
+    "agent-base": ("Agent Base", "SISO Labs, the app you live in"),
+    "model-app": ("Model app", "HALO Oracle: the models' app"),
+    "operator": ("Operator app", "HALO Oracle: the streaming operator dashboard"),
+    "operator-redesign": ("Operator redesign", "HALO Oracle: the operator app's redesign"),
+    "halo-crm": ("HALO CRM", "Cam's agency CRM (names only: his code stays his)"),
+}
+
+def status(r):
+    if r.get("grade") == "dead": return "dead"
+    if r.get("swapTo"): return "needs-pick"
+    src = (r.get("source") or "").lstrip("~")
+    if src in ("custom", "not read", ""): return "ours"
+    return "picked"
+
+summ = json.load(open(INV / "summary.json"))
+home = []
+(F / "data/projects").mkdir(parents=True, exist_ok=True)
+for pid, s in summ.items():
+    if not (isinstance(s, dict) and "components" in s): continue
+    rows = [json.loads(l) for l in open(INV / f"{pid}.jsonl")] if (INV / f"{pid}.jsonl").exists() else []
+    c = collections.Counter(status(r) for r in rows)
+    weak = sum(1 for r in rows if r.get("grade") == "weak")
+    name, about = NAMES.get(pid, (pid, ""))
+    home.append({"id": pid, "name": name, "about": about, "components": s["components"], "pages": s.get("pages"),
+                 "picked": c["picked"], "needsPick": c["needs-pick"], "ours": c["ours"], "dead": c["dead"], "weak": weak,
+                 "sha": s.get("sha"), "ref": s.get("ref"), "namesOnly": not rows})
+    census = INV / f"{pid}.census.json"
+    if not rows or not census.exists(): continue
+    cen = json.load(open(census))
+    by_file = {r["file"]: r for r in rows}
+    pages = []
+    for cr in cen["rows"]:
+        if not cr.get("isPage"): continue
+        comps = [by_file[f] for f in by_file if cr["file"] in (next((x for x in cen["rows"] if x["file"] == f), {}).get("usedOn") or [])]
+        pages.append({"name": cr["name"], "file": cr["file"], "loc": cr.get("loc"),
+                      "components": sorted([{"name": r["name"], "file": r["file"], "status": status(r), "grade": r.get("grade"),
+                                             "swapTo": r.get("swapTo"), "why": r.get("why") or [], "loc": r.get("loc")} for r in comps],
+                                           key=lambda x: ["dead", "needs-pick", "ours", "picked"].index(x["status"]))})
+    pages.sort(key=lambda p: -len(p["components"]))
+    json.dump({"id": pid, "name": name, "sha": s.get("sha"), "pages": pages,
+               "components": [{"name": r["name"], "file": r["file"], "status": status(r), "grade": r.get("grade"), "swapTo": r.get("swapTo"),
+                               "kind": r.get("kind"), "pages": r.get("pages"), "why": r.get("why") or []} for r in rows]},
+              open(F / f"data/projects/{pid}.json", "w"), indent=1)
+home.sort(key=lambda p: -p["components"])
+json.dump({"_about": "Built by factory/bin/build-data from inventory/ (the UI Hub's nightly census).", "projects": home},
+          open(F / "data/projects.json", "w"), indent=1)
+for p in home: print(p["id"], p["components"], "pages", p["pages"], "picked", p["picked"], "needs", p["needsPick"], "ours", p["ours"], "dead", p["dead"], "weak", p["weak"])

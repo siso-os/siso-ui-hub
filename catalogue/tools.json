@@ -1,0 +1,60 @@
+{
+ "_about": "Tools that make or check UI, one step beyond components (ADR 0007: 'maybe even image gen tools'). Each is real and runs today; `where` says where. Kind: tool.",
+ "tool:gen-image": {
+  "title": "Generate an image (OpenRouter)",
+  "desc": "One generated image through OpenRouter, Google's Gemini 3.1 Flash Image by default. Writes NAME.png and a gen-log line with the cost. The key comes from OPENROUTER_API_KEY and is never printed.",
+  "install": "round2/gen-image NAME \"PROMPT\" [--aspect 16:9] [--out DIR]",
+  "where": "siso-ui-hub, branch ui-hub/landing-kit-20261007, round2/gen-image",
+  "category": "tools/image-gen",
+  "licence": "ours"
+ },
+ "tool:gen-image-fal": {
+  "title": "Generate an image (fal, Nano Banana 2.1)",
+  "desc": "gen-image's twin through fal.ai for when OpenRouter runs out: Nano Banana 2.1 at 1K, about $0.04 an image. FAL_KEY is read from the environment, never printed.",
+  "install": "round2/gen-image-fal NAME \"PROMPT\" [--aspect 16:9] [--out DIR]",
+  "where": "siso-ui-hub, branch ui-hub/landing-kit-20261007, round2/gen-image-fal",
+  "category": "tools/image-gen",
+  "licence": "ours"
+ },
+ "tool:ui-pick": {
+  "title": "ui-pick: rank his curated picks for a need",
+  "desc": "Ranks Shaan's curated picks against what you need, reading his own note on each; about 1.5 s and $0.0006 a call. Ranks only; you still decide by looking.",
+  "install": "python3 ~/.claude/skills/ui-pick/pick.py \"<need>\"",
+  "where": "skill ui-pick (SISO_Agents/siso-skills-hub)",
+  "category": "tools/pick",
+  "licence": "ours"
+ },
+ "tool:pagecheck": {
+  "title": "uihub check <url>: a page against the rules",
+  "desc": "Checks a rendered page against the rules a script can see: box in a box, type sizes, emoji, inline colours, clickable non-buttons, motion without reduced motion; one screenshot, exit 1 on a failure.",
+  "install": "bin/uihub check <url> [--surface dashboard|native-app|landing-site] [--width 390]",
+  "where": "siso-ui-hub bin/uihub, bin/pagecheck.js",
+  "category": "tools/check",
+  "licence": "ours"
+ },
+ "tool:design-lab": {
+  "title": "design-lab: pick by looking",
+  "desc": "Builds a hosted side-by-side page of real rendered options so a person picks a direction by looking, not by reading names.",
+  "install": "skill design-lab",
+  "where": "skill design-lab (SISO_Agents/siso-skills-hub)",
+  "category": "tools/pick",
+  "licence": "ours"
+ },
+ "tool:siso-shell-compose": {
+  "title": "compose: a page from a siso-shell family",
+  "desc": "Renders one of the 24 page families (U0-U23) from a data file into a static page inside the SISO shell.",
+  "install": "bin/compose <U-id> data.json --out page.html",
+  "where": "Great_Library_of_SISO/banks/siso-shell",
+  "url": "https://siso-shell.pages.dev/how/",
+  "category": "tools/compose",
+  "licence": "ours"
+ },
+ "tool:shoot": {
+  "title": "shoot: headless screenshots",
+  "desc": "Screenshots of a URL through camofox (headless, never opens a window); one tab, closed after.",
+  "install": "bin/shoot <url> --out shot.png",
+  "where": "siso-ui-hub bin/shoot",
+  "category": "tools/check",
+  "licence": "ours"
+ }
+}

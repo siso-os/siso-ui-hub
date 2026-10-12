@@ -1,0 +1,79 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "$id": "appfactory/0.1/widgets",
+ "title": ".appfactory/ui/widgets.json",
+ "type": "object",
+ "required": [
+  "widgets"
+ ],
+ "additionalProperties": false,
+ "properties": {
+  "$schema": {
+   "type": "string"
+  },
+  "widgets": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "required": [
+     "id",
+     "name",
+     "features",
+     "shows",
+     "data",
+     "states",
+     "status"
+    ],
+    "additionalProperties": false,
+    "properties": {
+     "id": {
+      "type": "string",
+      "pattern": "^W-[a-z0-9-]+$"
+     },
+     "name": {
+      "type": "string"
+     },
+     "features": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+       "type": "string",
+       "pattern": "^F\\d{2}$"
+      }
+     },
+     "shows": {
+      "type": "string"
+     },
+     "data": {
+      "type": "string"
+     },
+     "states": {
+      "type": "array",
+      "contains": {
+       "const": "ready"
+      },
+      "items": {
+       "enum": [
+        "ready",
+        "loading",
+        "empty",
+        "error",
+        "offline",
+        "edit"
+       ]
+      }
+     },
+     "status": {
+      "enum": [
+       "planned",
+       "built"
+      ]
+     },
+     "note": {
+      "type": "string"
+     }
+    }
+   }
+  }
+ }
+}

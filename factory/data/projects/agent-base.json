@@ -1,0 +1,6009 @@
+{
+ "id": "agent-base",
+ "name": "Agent Base",
+ "sha": "58b48c6801",
+ "pages": [
+  {
+   "name": "App",
+   "file": "apps/web/src/App.tsx",
+   "loc": 2237,
+   "components": [
+    {
+     "name": "AgentHoverCard",
+     "file": "apps/web/src/components/AgentHoverCard.tsx",
+     "status": "needs-pick",
+     "grade": "good",
+     "swapTo": "arc:hover-card",
+     "why": [
+      "iterated 3 days, kept"
+     ],
+     "loc": 119
+    },
+    {
+     "name": "AgentNotificationStack",
+     "file": "apps/web/src/components/AgentNotificationStack.tsx",
+     "status": "needs-pick",
+     "grade": "weak",
+     "swapTo": "arc:notification-center",
+     "why": [
+      "- 9 hard-coded colours"
+     ],
+     "loc": 179
+    },
+    {
+     "name": "ChatLinkPreview",
+     "file": "apps/web/src/components/ChatLinkPreview.tsx",
+     "status": "needs-pick",
+     "grade": "ok",
+     "swapTo": "arc:hover-card",
+     "why": [],
+     "loc": 112
+    },
+    {
+     "name": "ChatResponseScene",
+     "file": "apps/web/src/components/ChatResponseScene.tsx",
+     "status": "needs-pick",
+     "grade": "ok",
+     "swapTo": "arc:chat-thread",
+     "why": [],
+     "loc": 73
+    },
+    {
+     "name": "Composer",
+     "file": "apps/web/src/components/Composer.tsx",
+     "status": "needs-pick",
+     "grade": "good",
+     "swapTo": "uselayouts:prompt-box",
+     "why": [
+      "iterated 4 days, kept"
+     ],
+     "loc": 10
+    },
+    {
+     "name": "FleetStats",
+     "file": "apps/web/src/components/FleetStats.tsx",
+     "status": "needs-pick",
+     "grade": "ok",
+     "swapTo": "arc:metric-card",
+     "why": [],
+     "loc": 341
+    },
+    {
+     "name": "InfrastructurePopover",
+     "file": "apps/web/src/components/InfrastructurePopover.tsx",
+     "status": "needs-pick",
+     "grade": "ok",
+     "swapTo": "arc:popover",
+     "why": [],
+     "loc": 109
+    },
+    {
+     "name": "NotificationsBell",
+     "file": "apps/web/src/components/NotificationsBell.tsx",
+     "status": "needs-pick",
+     "grade": "ok",
+     "swapTo": "arc:notification-center",
+     "why": [],
+     "loc": 29
+    },
+    {
+     "name": "OwnerLinkToast",
+     "file": "apps/web/src/components/OwnerLinkToast.tsx",
+     "status": "needs-pick",
+     "grade": "ok",
+     "swapTo": "arc:toast",
+     "why": [],
+     "loc": 102
+    },
+    {
+     "name": "SpeakToggle",
+     "file": "apps/web/src/components/SpeakToggle.tsx",
+     "status": "needs-pick",
+     "grade": "ok",
+     "swapTo": "arc:switch",
+     "why": [],
+     "loc": 59
+    },
+    {
+     "name": "StatsBars",
+     "file": "apps/web/src/components/StatsBars.tsx",
+     "status": "needs-pick",
+     "grade": "ok",
+     "swapTo": "arc:metric-card",
+     "why": [],
+     "loc": 19
+    },
+    {
+     "name": "SubagentsPopover",
+     "file": "apps/web/src/components/SubagentsPopover.tsx",
+     "status": "needs-pick",
+     "grade": "ok",
+     "swapTo": "arc:popover",
+     "why": [
+      "iterated 4 days, kept",
+      "- 1 emoji"
+     ],
+     "loc": 219
+    },
+    {
+     "name": "Timeline",
+     "file": "apps/web/src/components/Timeline.tsx",
+     "status": "needs-pick",
+     "grade": "good",
+     "swapTo": "arc:timeline",
+     "why": [
+      "iterated 5 days, kept"
+     ],
+     "loc": 344
+    },
+    {
+     "name": "UpdateToast",
+     "file": "apps/web/src/components/UpdateToast.tsx",
+     "status": "needs-pick",
+     "grade": "weak",
+     "swapTo": "arc:toast",
+     "why": [
+      "- 2 emoji",
+      "- 2 clickable div"
+     ],
+     "loc": 178
+    },
+    {
+     "name": "WorkspaceCommandPalette",
+     "file": "apps/web/src/components/WorkspaceCommandPalette.tsx",
+     "status": "needs-pick",
+     "grade": "ok",
+     "swapTo": "arc:command-palette",
+     "why": [],
+     "loc": 121
+    },
+    {
+     "name": "ZeroFace",
+     "file": "apps/web/src/components/ZeroFace.tsx",
+     "status": "needs-pick",
+     "grade": "ok",
+     "swapTo": "arc:avatar",
+     "why": [],
+     "loc": 59
+    },
+    {
+     "name": "CommandBar",
+     "file": "apps/web/src/components/browser/CommandBar.tsx",
+     "status": "needs-pick",
+     "grade": "ok",
+     "swapTo": "arc:command-palette",
+     "why": [],
+     "loc": 83
+    },
+    {
+     "name": "DownloadToast",
+     "file": "apps/web/src/components/browser/DownloadToast.tsx",
+     "status": "needs-pick",
+     "grade": "ok",
+     "swapTo": "arc:toast",
+     "why": [],
+     "loc": 42
+    },
+    {
+     "name": "SetupSheet",
+     "file": "apps/web/src/components/browser/SetupSheet.tsx",
+     "status": "needs-pick",
+     "grade": "ok",
+     "swapTo": "arc:drawer",
+     "why": [
+      "- 1 clickable div"
+     ],
+     "loc": 182
+    },
+    {
+     "name": "SignInSheet",
+     "file": "apps/web/src/components/browser/SignInSheet.tsx",
+     "status": "needs-pick",
+     "grade": "ok",
+     "swapTo": "arc:drawer",
+     "why": [],
+     "loc": 86
+    },
+    {
+     "name": "Figures",
+     "file": "apps/web/src/components/page/Figures.tsx",
+     "status": "needs-pick",
+     "grade": "ok",
+     "swapTo": "arc:metric-card",
+     "why": [],
+     "loc": 110
+    },
+    {
+     "name": "AgentTeam",
+     "file": "apps/web/src/components/panel/AgentTeam.tsx",
+     "status": "needs-pick",
+     "grade": "ok",
+     "swapTo": "arc:avatar",
+     "why": [],
+     "loc": 96
+    },
+    {
+     "name": "PanelTabs",
+     "file": "apps/web/src/components/panel/PanelTabs.tsx",
+     "status": "needs-pick",
+     "grade": "ok",
+     "swapTo": "arc:tabs",
+     "why": [
+      "iterated 3 days, kept",
+      "- 1 emoji"
+     ],
+     "loc": 195
+    },
+    {
+     "name": "StatsCard",
+     "file": "apps/web/src/components/panel/StatsCard.tsx",
+     "status": "needs-pick",
+     "grade": "ok",
+     "swapTo": "arc:metric-card",
+     "why": [
+      "- 15 hard-coded colours"
+     ],
+     "loc": 294
+    },
+    {
+     "name": "TaskTree",
+     "file": "apps/web/src/components/panel/TaskTree.tsx",
+     "status": "needs-pick",
+     "grade": "ok",
+     "swapTo": "arc:tree-view",
+     "why": [
+      "iterated 3 days, kept",
+      "- 2 emoji"
+     ],
+     "loc": 75
+    },
+    {
+     "name": "TasksSheet",
+     "file": "apps/web/src/components/phone/TasksSheet.tsx",
+     "status": "needs-pick",
+     "grade": "ok",
+     "swapTo": "arc:drawer",
+     "why": [],
+     "loc": 100
+    },
+    {
+     "name": "TeamWidget",
+     "file": "apps/web/src/components/widgets/TeamWidget.tsx",
+     "status": "needs-pick",
+     "grade": "ok",
+     "swapTo": "arc:avatar",
+     "why": [],
+     "loc": 48
+    },
+    {
+     "name": "A0Nav",
+     "file": "apps/web/src/components/A0Nav.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 67
+    },
+    {
+     "name": "AgentCanvas",
+     "file": "apps/web/src/components/AgentCanvas.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 169
+    },
+    {
+     "name": "AgentPanel",
+     "file": "apps/web/src/components/AgentPanel.tsx",
+     "status": "ours",
+     "grade": "good",
+     "swapTo": null,
+     "why": [
+      "iterated 6 days, kept"
+     ],
+     "loc": 408
+    },
+    {
+     "name": "AgentZeroPage",
+     "file": "apps/web/src/components/AgentZeroPage.tsx",
+     "status": "ours",
+     "grade": "good",
+     "swapTo": null,
+     "why": [
+      "iterated 5 days, kept"
+     ],
+     "loc": 120
+    },
+    {
+     "name": "ArtifactShelf",
+     "file": "apps/web/src/components/ArtifactShelf.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 75
+    },
+    {
+     "name": "AttentionPanel",
+     "file": "apps/web/src/components/AttentionPanel.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 109
+    },
+    {
+     "name": "BankNavigationAdapters",
+     "file": "apps/web/src/components/BankNavigationAdapters.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 74
+    },
+    {
+     "name": "BankWorkspaceChooser",
+     "file": "apps/web/src/components/BankWorkspaceChooser.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 40
+    },
+    {
+     "name": "Boundary",
+     "file": "apps/web/src/components/Boundary.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 49
+    },
+    {
+     "name": "Browser",
+     "file": "apps/web/src/components/Browser.tsx",
+     "status": "ours",
+     "grade": "good",
+     "swapTo": null,
+     "why": [
+      "iterated 5 days, kept"
+     ],
+     "loc": 779
+    },
+    {
+     "name": "ChangeLens",
+     "file": "apps/web/src/components/ChangeLens.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 106
+    },
+    {
+     "name": "ChangesPanel",
+     "file": "apps/web/src/components/ChangesPanel.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 206
+    },
+    {
+     "name": "ChatActivityRail",
+     "file": "apps/web/src/components/ChatActivityRail.tsx",
+     "status": "ours",
+     "grade": "weak",
+     "swapTo": null,
+     "why": [
+      "- 9 hard-coded colours"
+     ],
+     "loc": 98
+    },
+    {
+     "name": "ChatHeader",
+     "file": "apps/web/src/components/ChatHeader.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [
+      "iterated 4 days, kept",
+      "- 2 emoji"
+     ],
+     "loc": 242
+    },
+    {
+     "name": "ChatView",
+     "file": "apps/web/src/components/ChatView.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [
+      "iterated 6 days, kept",
+      "- 6 emoji"
+     ],
+     "loc": 1984
+    },
+    {
+     "name": "CodexWorkPage",
+     "file": "apps/web/src/components/CodexWorkPage.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 57
+    },
+    {
+     "name": "CodexWorkerFlights",
+     "file": "apps/web/src/components/CodexWorkerFlights.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 28
+    },
+    {
+     "name": "CodexWorkerPage",
+     "file": "apps/web/src/components/CodexWorkerPage.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 73
+    },
+    {
+     "name": "Constellation",
+     "file": "apps/web/src/components/Constellation.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 93
+    },
+    {
+     "name": "ContextMeter",
+     "file": "apps/web/src/components/ContextMeter.tsx",
+     "status": "ours",
+     "grade": null,
+     "swapTo": null,
+     "why": [],
+     "loc": 2
+    },
+    {
+     "name": "ContextStack",
+     "file": "apps/web/src/components/ContextStack.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 127
+    },
+    {
+     "name": "DashboardPage",
+     "file": "apps/web/src/components/DashboardPage.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 185
+    },
+    {
+     "name": "DeliveryEvidence",
+     "file": "apps/web/src/components/DeliveryEvidence.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 38
+    },
+    {
+     "name": "DevPill",
+     "file": "apps/web/src/components/DevPill.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 6
+    },
+    {
+     "name": "DictationSpace",
+     "file": "apps/web/src/components/DictationSpace.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 96
+    },
+    {
+     "name": "DonorWork",
+     "file": "apps/web/src/components/DonorWork.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 51
+    },
+    {
+     "name": "EndedPage",
+     "file": "apps/web/src/components/EndedPage.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 34
+    },
+    {
+     "name": "EntityPage",
+     "file": "apps/web/src/components/EntityPage.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [
+      "iterated 3 days, kept",
+      "- 11 hard-coded colours",
+      "- 1 clickable div"
+     ],
+     "loc": 401
+    },
+    {
+     "name": "FanOut",
+     "file": "apps/web/src/components/FanOut.tsx",
+     "status": "ours",
+     "grade": "good",
+     "swapTo": null,
+     "why": [
+      "iterated 4 days, kept"
+     ],
+     "loc": 113
+    },
+    {
+     "name": "FleetBoard",
+     "file": "apps/web/src/components/FleetBoard.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 100
+    },
+    {
+     "name": "HistoryButtons",
+     "file": "apps/web/src/components/HistoryButtons.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 14
+    },
+    {
+     "name": "Hud",
+     "file": "apps/web/src/components/Hud.tsx",
+     "status": "ours",
+     "grade": "good",
+     "swapTo": null,
+     "why": [
+      "iterated 5 days, kept"
+     ],
+     "loc": 179
+    },
+    {
+     "name": "LaptopJobsPage",
+     "file": "apps/web/src/components/LaptopJobsPage.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 40
+    },
+    {
+     "name": "LibraryPage",
+     "file": "apps/web/src/components/LibraryPage.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 50
+    },
+    {
+     "name": "LibrarySpace",
+     "file": "apps/web/src/components/LibrarySpace.tsx",
+     "status": "ours",
+     "grade": "good",
+     "swapTo": null,
+     "why": [
+      "iterated 3 days, kept"
+     ],
+     "loc": 672
+    },
+    {
+     "name": "LifeSpace",
+     "file": "apps/web/src/components/LifeSpace.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 402
+    },
+    {
+     "name": "MachineGlyph",
+     "file": "apps/web/src/components/MachineGlyph.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 26
+    },
+    {
+     "name": "MicButton",
+     "file": "apps/web/src/components/MicButton.tsx",
+     "status": "ours",
+     "grade": "good",
+     "swapTo": null,
+     "why": [
+      "iterated 4 days, kept"
+     ],
+     "loc": 226
+    },
+    {
+     "name": "MiniLanes",
+     "file": "apps/web/src/components/MiniLanes.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 155
+    },
+    {
+     "name": "ModelMenu",
+     "file": "apps/web/src/components/ModelMenu.tsx",
+     "status": "ours",
+     "grade": "good",
+     "swapTo": null,
+     "why": [
+      "iterated 4 days, kept"
+     ],
+     "loc": 78
+    },
+    {
+     "name": "MoveMenu",
+     "file": "apps/web/src/components/MoveMenu.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 52
+    },
+    {
+     "name": "OrgChart",
+     "file": "apps/web/src/components/OrgChart.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 98
+    },
+    {
+     "name": "OrgPage",
+     "file": "apps/web/src/components/OrgPage.tsx",
+     "status": "ours",
+     "grade": "good",
+     "swapTo": null,
+     "why": [
+      "iterated 4 days, kept"
+     ],
+     "loc": 291
+    },
+    {
+     "name": "OrgTour",
+     "file": "apps/web/src/components/OrgTour.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 82
+    },
+    {
+     "name": "OutputInspectDock",
+     "file": "apps/web/src/components/OutputInspectDock.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 68
+    },
+    {
+     "name": "OwnerBoard",
+     "file": "apps/web/src/components/OwnerBoard.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [
+      "- 3 emoji"
+     ],
+     "loc": 127
+    },
+    {
+     "name": "OwnerSpaceWork",
+     "file": "apps/web/src/components/OwnerSpaceWork.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 69
+    },
+    {
+     "name": "OwnerTasks",
+     "file": "apps/web/src/components/OwnerTasks.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 44
+    },
+    {
+     "name": "OwnerTasksPanel",
+     "file": "apps/web/src/components/OwnerTasksPanel.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [
+      "iterated 5 days, kept",
+      "- 2 emoji"
+     ],
+     "loc": 604
+    },
+    {
+     "name": "PagePop",
+     "file": "apps/web/src/components/PagePop.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 72
+    },
+    {
+     "name": "PanelFold",
+     "file": "apps/web/src/components/PanelFold.tsx",
+     "status": "ours",
+     "grade": "good",
+     "swapTo": null,
+     "why": [
+      "iterated 3 days, kept"
+     ],
+     "loc": 56
+    },
+    {
+     "name": "PingStrip",
+     "file": "apps/web/src/components/PingStrip.tsx",
+     "status": "ours",
+     "grade": "weak",
+     "swapTo": null,
+     "why": [
+      "- 6 emoji",
+      "- 1 clickable div"
+     ],
+     "loc": 195
+    },
+    {
+     "name": "ProductMap",
+     "file": "apps/web/src/components/ProductMap.tsx",
+     "status": "ours",
+     "grade": "weak",
+     "swapTo": null,
+     "why": [
+      "- 1 emoji",
+      "- 1 clickable div"
+     ],
+     "loc": 89
+    },
+    {
+     "name": "ProductMapManual",
+     "file": "apps/web/src/components/ProductMapManual.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 45
+    },
+    {
+     "name": "ProjectCrew",
+     "file": "apps/web/src/components/ProjectCrew.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 44
+    },
+    {
+     "name": "ProjectDashboard",
+     "file": "apps/web/src/components/ProjectDashboard.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 108
+    },
+    {
+     "name": "ProjectMark",
+     "file": "apps/web/src/components/ProjectMark.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 23
+    },
+    {
+     "name": "ProjectSpace",
+     "file": "apps/web/src/components/ProjectSpace.tsx",
+     "status": "ours",
+     "grade": "weak",
+     "swapTo": null,
+     "why": [
+      "- 2 emoji",
+      "- 1 clickable div"
+     ],
+     "loc": 267
+    },
+    {
+     "name": "PromptLibrary",
+     "file": "apps/web/src/components/PromptLibrary.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 101
+    },
+    {
+     "name": "ProviderUsageMeters",
+     "file": "apps/web/src/components/ProviderUsageMeters.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 82
+    },
+    {
+     "name": "QuestionCard",
+     "file": "apps/web/src/components/QuestionCard.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 30
+    },
+    {
+     "name": "QuestionRecoveryHistory",
+     "file": "apps/web/src/components/QuestionRecoveryHistory.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 19
+    },
+    {
+     "name": "QueuedPrompts",
+     "file": "apps/web/src/components/QueuedPrompts.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 34
+    },
+    {
+     "name": "RecentOutput",
+     "file": "apps/web/src/components/RecentOutput.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 30
+    },
+    {
+     "name": "RecordedSessionReplay",
+     "file": "apps/web/src/components/RecordedSessionReplay.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 47
+    },
+    {
+     "name": "RemoteInventory",
+     "file": "apps/web/src/components/RemoteInventory.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 43
+    },
+    {
+     "name": "ResearchPage",
+     "file": "apps/web/src/components/ResearchPage.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 58
+    },
+    {
+     "name": "RolodexCard",
+     "file": "apps/web/src/components/RolodexCard.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 221
+    },
+    {
+     "name": "RolodexImport",
+     "file": "apps/web/src/components/RolodexImport.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 80
+    },
+    {
+     "name": "RolodexList",
+     "file": "apps/web/src/components/RolodexList.tsx",
+     "status": "ours",
+     "grade": "weak",
+     "swapTo": null,
+     "why": [
+      "- 1 clickable div"
+     ],
+     "loc": 64
+    },
+    {
+     "name": "RolodexSpace",
+     "file": "apps/web/src/components/RolodexSpace.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 168
+    },
+    {
+     "name": "SayNew",
+     "file": "apps/web/src/components/SayNew.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 85
+    },
+    {
+     "name": "Scratchpad",
+     "file": "apps/web/src/components/Scratchpad.tsx",
+     "status": "ours",
+     "grade": "good",
+     "swapTo": null,
+     "why": [
+      "iterated 4 days, kept"
+     ],
+     "loc": 184
+    },
+    {
+     "name": "ServersSpace",
+     "file": "apps/web/src/components/ServersSpace.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 773
+    },
+    {
+     "name": "SessionReplay",
+     "file": "apps/web/src/components/SessionReplay.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 92
+    },
+    {
+     "name": "Sidebar",
+     "file": "apps/web/src/components/Sidebar.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [
+      "iterated 5 days, kept",
+      "- 1 clickable div"
+     ],
+     "loc": 1285
+    },
+    {
+     "name": "SpendChip",
+     "file": "apps/web/src/components/SpendChip.tsx",
+     "status": "ours",
+     "grade": "good",
+     "swapTo": null,
+     "why": [
+      "iterated 3 days, kept"
+     ],
+     "loc": 19
+    },
+    {
+     "name": "SpendPanel",
+     "file": "apps/web/src/components/SpendPanel.tsx",
+     "status": "ours",
+     "grade": "good",
+     "swapTo": null,
+     "why": [
+      "iterated 3 days, kept"
+     ],
+     "loc": 86
+    },
+    {
+     "name": "StatsPage",
+     "file": "apps/web/src/components/StatsPage.tsx",
+     "status": "ours",
+     "grade": null,
+     "swapTo": null,
+     "why": [],
+     "loc": 105
+    },
+    {
+     "name": "SubagentRow",
+     "file": "apps/web/src/components/SubagentRow.tsx",
+     "status": "ours",
+     "grade": "good",
+     "swapTo": null,
+     "why": [
+      "iterated 3 days, kept"
+     ],
+     "loc": 83
+    },
+    {
+     "name": "TalkOrb",
+     "file": "apps/web/src/components/TalkOrb.tsx",
+     "status": "ours",
+     "grade": "weak",
+     "swapTo": null,
+     "why": [
+      "- 25 hard-coded colours"
+     ],
+     "loc": 89
+    },
+    {
+     "name": "TaskActions",
+     "file": "apps/web/src/components/TaskActions.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 150
+    },
+    {
+     "name": "TaskFold",
+     "file": "apps/web/src/components/TaskFold.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 10
+    },
+    {
+     "name": "TaskWorkspaceDeck",
+     "file": "apps/web/src/components/TaskWorkspaceDeck.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 65
+    },
+    {
+     "name": "TaskWorkspaceGroups",
+     "file": "apps/web/src/components/TaskWorkspaceGroups.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 40
+    },
+    {
+     "name": "TasksPage",
+     "file": "apps/web/src/components/TasksPage.tsx",
+     "status": "ours",
+     "grade": "good",
+     "swapTo": null,
+     "why": [
+      "iterated 5 days, kept"
+     ],
+     "loc": 354
+    },
+    {
+     "name": "TerminalLoadBoundary",
+     "file": "apps/web/src/components/TerminalLoadBoundary.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 26
+    },
+    {
+     "name": "TodaySpendDial",
+     "file": "apps/web/src/components/TodaySpendDial.tsx",
+     "status": "ours",
+     "grade": "weak",
+     "swapTo": null,
+     "why": [
+      "- 11 hard-coded colours"
+     ],
+     "loc": 105
+    },
+    {
+     "name": "TokensSpace",
+     "file": "apps/web/src/components/TokensSpace.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [
+      "- 67 hard-coded colours"
+     ],
+     "loc": 1227
+    },
+    {
+     "name": "TopNav",
+     "file": "apps/web/src/components/TopNav.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 54
+    },
+    {
+     "name": "TurnDivider",
+     "file": "apps/web/src/components/TurnDivider.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 6
+    },
+    {
+     "name": "VersionPulse",
+     "file": "apps/web/src/components/VersionPulse.tsx",
+     "status": "ours",
+     "grade": "weak",
+     "swapTo": null,
+     "why": [
+      "- 11 hard-coded colours"
+     ],
+     "loc": 107
+    },
+    {
+     "name": "VoiceSpace",
+     "file": "apps/web/src/components/VoiceSpace.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 154
+    },
+    {
+     "name": "WhatsAppSpace",
+     "file": "apps/web/src/components/WhatsAppSpace.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [
+      "- 1 clickable div"
+     ],
+     "loc": 671
+    },
+    {
+     "name": "WhatsNew",
+     "file": "apps/web/src/components/WhatsNew.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 218
+    },
+    {
+     "name": "WorkerFold",
+     "file": "apps/web/src/components/WorkerFold.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 50
+    },
+    {
+     "name": "WorkspaceArrival",
+     "file": "apps/web/src/components/WorkspaceArrival.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 91
+    },
+    {
+     "name": "WorkspaceChoices",
+     "file": "apps/web/src/components/WorkspaceChoices.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 70
+    },
+    {
+     "name": "WorktreeSetupCard",
+     "file": "apps/web/src/components/WorktreeSetupCard.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 27
+    },
+    {
+     "name": "ZeroDock",
+     "file": "apps/web/src/components/ZeroDock.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 83
+    },
+    {
+     "name": "ZeroOrbit",
+     "file": "apps/web/src/components/ZeroOrbit.tsx",
+     "status": "ours",
+     "grade": "good",
+     "swapTo": null,
+     "why": [
+      "iterated 3 days, kept"
+     ],
+     "loc": 76
+    },
+    {
+     "name": "AccountsHub",
+     "file": "apps/web/src/components/browser/AccountsHub.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 161
+    },
+    {
+     "name": "ErrorPage",
+     "file": "apps/web/src/components/browser/ErrorPage.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 34
+    },
+    {
+     "name": "MiniPlayer",
+     "file": "apps/web/src/components/browser/MiniPlayer.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 24
+    },
+    {
+     "name": "SavedFolders",
+     "file": "apps/web/src/components/browser/SavedFolders.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 98
+    },
+    {
+     "name": "SpaceMenu",
+     "file": "apps/web/src/components/browser/SpaceMenu.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 44
+    },
+    {
+     "name": "StatusLines",
+     "file": "apps/web/src/components/browser/StatusLines.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 18
+    },
+    {
+     "name": "HubPage",
+     "file": "apps/web/src/components/page/HubPage.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 196
+    },
+    {
+     "name": "A0Board",
+     "file": "apps/web/src/components/panel/A0Board.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 48
+    },
+    {
+     "name": "AgentOverview",
+     "file": "apps/web/src/components/panel/AgentOverview.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 58
+    },
+    {
+     "name": "LandedRows",
+     "file": "apps/web/src/components/panel/LandedRows.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 95
+    },
+    {
+     "name": "OwnerRoster",
+     "file": "apps/web/src/components/panel/OwnerRoster.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 123
+    },
+    {
+     "name": "SubRow",
+     "file": "apps/web/src/components/panel/SubRow.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [
+      "- 3 emoji"
+     ],
+     "loc": 57
+    },
+    {
+     "name": "SubagentView",
+     "file": "apps/web/src/components/panel/SubagentView.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [
+      "- 2 emoji"
+     ],
+     "loc": 339
+    },
+    {
+     "name": "TaskProjects",
+     "file": "apps/web/src/components/panel/TaskProjects.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 127
+    },
+    {
+     "name": "ZeroHome",
+     "file": "apps/web/src/components/panel/ZeroHome.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 135
+    },
+    {
+     "name": "AgentWidgets",
+     "file": "apps/web/src/components/widgets/AgentWidgets.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 90
+    },
+    {
+     "name": "ListWidget",
+     "file": "apps/web/src/components/widgets/ListWidget.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 24
+    },
+    {
+     "name": "NeedsWidget",
+     "file": "apps/web/src/components/widgets/NeedsWidget.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 49
+    },
+    {
+     "name": "ProgressWidget",
+     "file": "apps/web/src/components/widgets/ProgressWidget.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 48
+    },
+    {
+     "name": "SystemsWidget",
+     "file": "apps/web/src/components/widgets/SystemsWidget.tsx",
+     "status": "ours",
+     "grade": "good",
+     "swapTo": null,
+     "why": [
+      "iterated 3 days, kept"
+     ],
+     "loc": 66
+    },
+    {
+     "name": "TasksWidget",
+     "file": "apps/web/src/components/widgets/TasksWidget.tsx",
+     "status": "ours",
+     "grade": "good",
+     "swapTo": null,
+     "why": [
+      "iterated 5 days, kept"
+     ],
+     "loc": 67
+    },
+    {
+     "name": "UnknownWidget",
+     "file": "apps/web/src/components/widgets/UnknownWidget.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 32
+    },
+    {
+     "name": "WidgetCard",
+     "file": "apps/web/src/components/widgets/WidgetCard.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 77
+    },
+    {
+     "name": "Icon",
+     "file": "apps/web/src/lib/Icon.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 69
+    },
+    {
+     "name": "provider-usage",
+     "file": "apps/web/src/lib/provider-usage.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 54
+    }
+   ]
+  },
+  {
+   "name": "ProjectSpace",
+   "file": "apps/web/src/components/ProjectSpace.tsx",
+   "loc": 267,
+   "components": [
+    {
+     "name": "AgentHoverCard",
+     "file": "apps/web/src/components/AgentHoverCard.tsx",
+     "status": "needs-pick",
+     "grade": "good",
+     "swapTo": "arc:hover-card",
+     "why": [
+      "iterated 3 days, kept"
+     ],
+     "loc": 119
+    },
+    {
+     "name": "ChatLinkPreview",
+     "file": "apps/web/src/components/ChatLinkPreview.tsx",
+     "status": "needs-pick",
+     "grade": "ok",
+     "swapTo": "arc:hover-card",
+     "why": [],
+     "loc": 112
+    },
+    {
+     "name": "ChatResponseScene",
+     "file": "apps/web/src/components/ChatResponseScene.tsx",
+     "status": "needs-pick",
+     "grade": "ok",
+     "swapTo": "arc:chat-thread",
+     "why": [],
+     "loc": 73
+    },
+    {
+     "name": "Composer",
+     "file": "apps/web/src/components/Composer.tsx",
+     "status": "needs-pick",
+     "grade": "good",
+     "swapTo": "uselayouts:prompt-box",
+     "why": [
+      "iterated 4 days, kept"
+     ],
+     "loc": 10
+    },
+    {
+     "name": "OwnerLinkToast",
+     "file": "apps/web/src/components/OwnerLinkToast.tsx",
+     "status": "needs-pick",
+     "grade": "ok",
+     "swapTo": "arc:toast",
+     "why": [],
+     "loc": 102
+    },
+    {
+     "name": "SpeakToggle",
+     "file": "apps/web/src/components/SpeakToggle.tsx",
+     "status": "needs-pick",
+     "grade": "ok",
+     "swapTo": "arc:switch",
+     "why": [],
+     "loc": 59
+    },
+    {
+     "name": "StatsBars",
+     "file": "apps/web/src/components/StatsBars.tsx",
+     "status": "needs-pick",
+     "grade": "ok",
+     "swapTo": "arc:metric-card",
+     "why": [],
+     "loc": 19
+    },
+    {
+     "name": "SubagentsPopover",
+     "file": "apps/web/src/components/SubagentsPopover.tsx",
+     "status": "needs-pick",
+     "grade": "ok",
+     "swapTo": "arc:popover",
+     "why": [
+      "iterated 4 days, kept",
+      "- 1 emoji"
+     ],
+     "loc": 219
+    },
+    {
+     "name": "Timeline",
+     "file": "apps/web/src/components/Timeline.tsx",
+     "status": "needs-pick",
+     "grade": "good",
+     "swapTo": "arc:timeline",
+     "why": [
+      "iterated 5 days, kept"
+     ],
+     "loc": 344
+    },
+    {
+     "name": "Figures",
+     "file": "apps/web/src/components/page/Figures.tsx",
+     "status": "needs-pick",
+     "grade": "ok",
+     "swapTo": "arc:metric-card",
+     "why": [],
+     "loc": 110
+    },
+    {
+     "name": "AgentTeam",
+     "file": "apps/web/src/components/panel/AgentTeam.tsx",
+     "status": "needs-pick",
+     "grade": "ok",
+     "swapTo": "arc:avatar",
+     "why": [],
+     "loc": 96
+    },
+    {
+     "name": "PanelTabs",
+     "file": "apps/web/src/components/panel/PanelTabs.tsx",
+     "status": "needs-pick",
+     "grade": "ok",
+     "swapTo": "arc:tabs",
+     "why": [
+      "iterated 3 days, kept",
+      "- 1 emoji"
+     ],
+     "loc": 195
+    },
+    {
+     "name": "StatsCard",
+     "file": "apps/web/src/components/panel/StatsCard.tsx",
+     "status": "needs-pick",
+     "grade": "ok",
+     "swapTo": "arc:metric-card",
+     "why": [
+      "- 15 hard-coded colours"
+     ],
+     "loc": 294
+    },
+    {
+     "name": "TaskTree",
+     "file": "apps/web/src/components/panel/TaskTree.tsx",
+     "status": "needs-pick",
+     "grade": "ok",
+     "swapTo": "arc:tree-view",
+     "why": [
+      "iterated 3 days, kept",
+      "- 2 emoji"
+     ],
+     "loc": 75
+    },
+    {
+     "name": "TeamWidget",
+     "file": "apps/web/src/components/widgets/TeamWidget.tsx",
+     "status": "needs-pick",
+     "grade": "ok",
+     "swapTo": "arc:avatar",
+     "why": [],
+     "loc": 48
+    },
+    {
+     "name": "A0Nav",
+     "file": "apps/web/src/components/A0Nav.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 67
+    },
+    {
+     "name": "AgentPanel",
+     "file": "apps/web/src/components/AgentPanel.tsx",
+     "status": "ours",
+     "grade": "good",
+     "swapTo": null,
+     "why": [
+      "iterated 6 days, kept"
+     ],
+     "loc": 408
+    },
+    {
+     "name": "ArtifactShelf",
+     "file": "apps/web/src/components/ArtifactShelf.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 75
+    },
+    {
+     "name": "Boundary",
+     "file": "apps/web/src/components/Boundary.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 49
+    },
+    {
+     "name": "ChangeLens",
+     "file": "apps/web/src/components/ChangeLens.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 106
+    },
+    {
+     "name": "ChangesPanel",
+     "file": "apps/web/src/components/ChangesPanel.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 206
+    },
+    {
+     "name": "ChatActivityRail",
+     "file": "apps/web/src/components/ChatActivityRail.tsx",
+     "status": "ours",
+     "grade": "weak",
+     "swapTo": null,
+     "why": [
+      "- 9 hard-coded colours"
+     ],
+     "loc": 98
+    },
+    {
+     "name": "ChatView",
+     "file": "apps/web/src/components/ChatView.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [
+      "iterated 6 days, kept",
+      "- 6 emoji"
+     ],
+     "loc": 1984
+    },
+    {
+     "name": "CodexWorkerFlights",
+     "file": "apps/web/src/components/CodexWorkerFlights.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 28
+    },
+    {
+     "name": "CodexWorkerPage",
+     "file": "apps/web/src/components/CodexWorkerPage.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 73
+    },
+    {
+     "name": "ContextMeter",
+     "file": "apps/web/src/components/ContextMeter.tsx",
+     "status": "ours",
+     "grade": null,
+     "swapTo": null,
+     "why": [],
+     "loc": 2
+    },
+    {
+     "name": "ContextStack",
+     "file": "apps/web/src/components/ContextStack.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 127
+    },
+    {
+     "name": "DeliveryEvidence",
+     "file": "apps/web/src/components/DeliveryEvidence.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 38
+    },
+    {
+     "name": "DevPill",
+     "file": "apps/web/src/components/DevPill.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 6
+    },
+    {
+     "name": "FanOut",
+     "file": "apps/web/src/components/FanOut.tsx",
+     "status": "ours",
+     "grade": "good",
+     "swapTo": null,
+     "why": [
+      "iterated 4 days, kept"
+     ],
+     "loc": 113
+    },
+    {
+     "name": "FleetBoard",
+     "file": "apps/web/src/components/FleetBoard.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 100
+    },
+    {
+     "name": "Hud",
+     "file": "apps/web/src/components/Hud.tsx",
+     "status": "ours",
+     "grade": "good",
+     "swapTo": null,
+     "why": [
+      "iterated 5 days, kept"
+     ],
+     "loc": 179
+    },
+    {
+     "name": "LaptopJobsPage",
+     "file": "apps/web/src/components/LaptopJobsPage.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 40
+    },
+    {
+     "name": "MachineGlyph",
+     "file": "apps/web/src/components/MachineGlyph.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 26
+    },
+    {
+     "name": "MicButton",
+     "file": "apps/web/src/components/MicButton.tsx",
+     "status": "ours",
+     "grade": "good",
+     "swapTo": null,
+     "why": [
+      "iterated 4 days, kept"
+     ],
+     "loc": 226
+    },
+    {
+     "name": "ModelMenu",
+     "file": "apps/web/src/components/ModelMenu.tsx",
+     "status": "ours",
+     "grade": "good",
+     "swapTo": null,
+     "why": [
+      "iterated 4 days, kept"
+     ],
+     "loc": 78
+    },
+    {
+     "name": "MoveMenu",
+     "file": "apps/web/src/components/MoveMenu.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 52
+    },
+    {
+     "name": "OutputInspectDock",
+     "file": "apps/web/src/components/OutputInspectDock.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 68
+    },
+    {
+     "name": "OwnerBoard",
+     "file": "apps/web/src/components/OwnerBoard.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [
+      "- 3 emoji"
+     ],
+     "loc": 127
+    },
+    {
+     "name": "OwnerSpaceWork",
+     "file": "apps/web/src/components/OwnerSpaceWork.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 69
+    },
+    {
+     "name": "OwnerTasksPanel",
+     "file": "apps/web/src/components/OwnerTasksPanel.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [
+      "iterated 5 days, kept",
+      "- 2 emoji"
+     ],
+     "loc": 604
+    },
+    {
+     "name": "PanelFold",
+     "file": "apps/web/src/components/PanelFold.tsx",
+     "status": "ours",
+     "grade": "good",
+     "swapTo": null,
+     "why": [
+      "iterated 3 days, kept"
+     ],
+     "loc": 56
+    },
+    {
+     "name": "ProjectMark",
+     "file": "apps/web/src/components/ProjectMark.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 23
+    },
+    {
+     "name": "PromptLibrary",
+     "file": "apps/web/src/components/PromptLibrary.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 101
+    },
+    {
+     "name": "ProviderUsageMeters",
+     "file": "apps/web/src/components/ProviderUsageMeters.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 82
+    },
+    {
+     "name": "QuestionCard",
+     "file": "apps/web/src/components/QuestionCard.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 30
+    },
+    {
+     "name": "QuestionRecoveryHistory",
+     "file": "apps/web/src/components/QuestionRecoveryHistory.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 19
+    },
+    {
+     "name": "QueuedPrompts",
+     "file": "apps/web/src/components/QueuedPrompts.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 34
+    },
+    {
+     "name": "RecordedSessionReplay",
+     "file": "apps/web/src/components/RecordedSessionReplay.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 47
+    },
+    {
+     "name": "SayNew",
+     "file": "apps/web/src/components/SayNew.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 85
+    },
+    {
+     "name": "ServersSpace",
+     "file": "apps/web/src/components/ServersSpace.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 773
+    },
+    {
+     "name": "SessionReplay",
+     "file": "apps/web/src/components/SessionReplay.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 92
+    },
+    {
+     "name": "Sidebar",
+     "file": "apps/web/src/components/Sidebar.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [
+      "iterated 5 days, kept",
+      "- 1 clickable div"
+     ],
+     "loc": 1285
+    },
+    {
+     "name": "SpendPanel",
+     "file": "apps/web/src/components/SpendPanel.tsx",
+     "status": "ours",
+     "grade": "good",
+     "swapTo": null,
+     "why": [
+      "iterated 3 days, kept"
+     ],
+     "loc": 86
+    },
+    {
+     "name": "SubagentRow",
+     "file": "apps/web/src/components/SubagentRow.tsx",
+     "status": "ours",
+     "grade": "good",
+     "swapTo": null,
+     "why": [
+      "iterated 3 days, kept"
+     ],
+     "loc": 83
+    },
+    {
+     "name": "TalkOrb",
+     "file": "apps/web/src/components/TalkOrb.tsx",
+     "status": "ours",
+     "grade": "weak",
+     "swapTo": null,
+     "why": [
+      "- 25 hard-coded colours"
+     ],
+     "loc": 89
+    },
+    {
+     "name": "TaskActions",
+     "file": "apps/web/src/components/TaskActions.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 150
+    },
+    {
+     "name": "TaskFold",
+     "file": "apps/web/src/components/TaskFold.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 10
+    },
+    {
+     "name": "TaskWorkspaceDeck",
+     "file": "apps/web/src/components/TaskWorkspaceDeck.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 65
+    },
+    {
+     "name": "TaskWorkspaceGroups",
+     "file": "apps/web/src/components/TaskWorkspaceGroups.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 40
+    },
+    {
+     "name": "TasksPage",
+     "file": "apps/web/src/components/TasksPage.tsx",
+     "status": "ours",
+     "grade": "good",
+     "swapTo": null,
+     "why": [
+      "iterated 5 days, kept"
+     ],
+     "loc": 354
+    },
+    {
+     "name": "TurnDivider",
+     "file": "apps/web/src/components/TurnDivider.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 6
+    },
+    {
+     "name": "WorkerFold",
+     "file": "apps/web/src/components/WorkerFold.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 50
+    },
+    {
+     "name": "WorkspaceChoices",
+     "file": "apps/web/src/components/WorkspaceChoices.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 70
+    },
+    {
+     "name": "WorktreeSetupCard",
+     "file": "apps/web/src/components/WorktreeSetupCard.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 27
+    },
+    {
+     "name": "HubPage",
+     "file": "apps/web/src/components/page/HubPage.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 196
+    },
+    {
+     "name": "A0Board",
+     "file": "apps/web/src/components/panel/A0Board.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 48
+    },
+    {
+     "name": "AgentOverview",
+     "file": "apps/web/src/components/panel/AgentOverview.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 58
+    },
+    {
+     "name": "LandedRows",
+     "file": "apps/web/src/components/panel/LandedRows.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 95
+    },
+    {
+     "name": "OwnerRoster",
+     "file": "apps/web/src/components/panel/OwnerRoster.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 123
+    },
+    {
+     "name": "SubRow",
+     "file": "apps/web/src/components/panel/SubRow.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [
+      "- 3 emoji"
+     ],
+     "loc": 57
+    },
+    {
+     "name": "SubagentView",
+     "file": "apps/web/src/components/panel/SubagentView.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [
+      "- 2 emoji"
+     ],
+     "loc": 339
+    },
+    {
+     "name": "TaskProjects",
+     "file": "apps/web/src/components/panel/TaskProjects.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 127
+    },
+    {
+     "name": "ZeroHome",
+     "file": "apps/web/src/components/panel/ZeroHome.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 135
+    },
+    {
+     "name": "AgentWidgets",
+     "file": "apps/web/src/components/widgets/AgentWidgets.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 90
+    },
+    {
+     "name": "NeedsWidget",
+     "file": "apps/web/src/components/widgets/NeedsWidget.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 49
+    },
+    {
+     "name": "SystemsWidget",
+     "file": "apps/web/src/components/widgets/SystemsWidget.tsx",
+     "status": "ours",
+     "grade": "good",
+     "swapTo": null,
+     "why": [
+      "iterated 3 days, kept"
+     ],
+     "loc": 66
+    },
+    {
+     "name": "UnknownWidget",
+     "file": "apps/web/src/components/widgets/UnknownWidget.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 32
+    },
+    {
+     "name": "WidgetCard",
+     "file": "apps/web/src/components/widgets/WidgetCard.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 77
+    },
+    {
+     "name": "Icon",
+     "file": "apps/web/src/lib/Icon.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 69
+    },
+    {
+     "name": "provider-usage",
+     "file": "apps/web/src/lib/provider-usage.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 54
+    }
+   ]
+  },
+  {
+   "name": "OrgPage",
+   "file": "apps/web/src/components/OrgPage.tsx",
+   "loc": 291,
+   "components": [
+    {
+     "name": "ChatLinkPreview",
+     "file": "apps/web/src/components/ChatLinkPreview.tsx",
+     "status": "needs-pick",
+     "grade": "ok",
+     "swapTo": "arc:hover-card",
+     "why": [],
+     "loc": 112
+    },
+    {
+     "name": "ChatResponseScene",
+     "file": "apps/web/src/components/ChatResponseScene.tsx",
+     "status": "needs-pick",
+     "grade": "ok",
+     "swapTo": "arc:chat-thread",
+     "why": [],
+     "loc": 73
+    },
+    {
+     "name": "Composer",
+     "file": "apps/web/src/components/Composer.tsx",
+     "status": "needs-pick",
+     "grade": "good",
+     "swapTo": "uselayouts:prompt-box",
+     "why": [
+      "iterated 4 days, kept"
+     ],
+     "loc": 10
+    },
+    {
+     "name": "SpeakToggle",
+     "file": "apps/web/src/components/SpeakToggle.tsx",
+     "status": "needs-pick",
+     "grade": "ok",
+     "swapTo": "arc:switch",
+     "why": [],
+     "loc": 59
+    },
+    {
+     "name": "TaskTree",
+     "file": "apps/web/src/components/panel/TaskTree.tsx",
+     "status": "needs-pick",
+     "grade": "ok",
+     "swapTo": "arc:tree-view",
+     "why": [
+      "iterated 3 days, kept",
+      "- 2 emoji"
+     ],
+     "loc": 75
+    },
+    {
+     "name": "ArtifactShelf",
+     "file": "apps/web/src/components/ArtifactShelf.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 75
+    },
+    {
+     "name": "ChatActivityRail",
+     "file": "apps/web/src/components/ChatActivityRail.tsx",
+     "status": "ours",
+     "grade": "weak",
+     "swapTo": null,
+     "why": [
+      "- 9 hard-coded colours"
+     ],
+     "loc": 98
+    },
+    {
+     "name": "ChatView",
+     "file": "apps/web/src/components/ChatView.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [
+      "iterated 6 days, kept",
+      "- 6 emoji"
+     ],
+     "loc": 1984
+    },
+    {
+     "name": "CodexWorkerFlights",
+     "file": "apps/web/src/components/CodexWorkerFlights.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 28
+    },
+    {
+     "name": "ContextStack",
+     "file": "apps/web/src/components/ContextStack.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 127
+    },
+    {
+     "name": "DeliveryEvidence",
+     "file": "apps/web/src/components/DeliveryEvidence.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 38
+    },
+    {
+     "name": "EntityPage",
+     "file": "apps/web/src/components/EntityPage.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [
+      "iterated 3 days, kept",
+      "- 11 hard-coded colours",
+      "- 1 clickable div"
+     ],
+     "loc": 401
+    },
+    {
+     "name": "FanOut",
+     "file": "apps/web/src/components/FanOut.tsx",
+     "status": "ours",
+     "grade": "good",
+     "swapTo": null,
+     "why": [
+      "iterated 4 days, kept"
+     ],
+     "loc": 113
+    },
+    {
+     "name": "MicButton",
+     "file": "apps/web/src/components/MicButton.tsx",
+     "status": "ours",
+     "grade": "good",
+     "swapTo": null,
+     "why": [
+      "iterated 4 days, kept"
+     ],
+     "loc": 226
+    },
+    {
+     "name": "OutputInspectDock",
+     "file": "apps/web/src/components/OutputInspectDock.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 68
+    },
+    {
+     "name": "OwnerTasks",
+     "file": "apps/web/src/components/OwnerTasks.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 44
+    },
+    {
+     "name": "PromptLibrary",
+     "file": "apps/web/src/components/PromptLibrary.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 101
+    },
+    {
+     "name": "QuestionCard",
+     "file": "apps/web/src/components/QuestionCard.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 30
+    },
+    {
+     "name": "QuestionRecoveryHistory",
+     "file": "apps/web/src/components/QuestionRecoveryHistory.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 19
+    },
+    {
+     "name": "QueuedPrompts",
+     "file": "apps/web/src/components/QueuedPrompts.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 34
+    },
+    {
+     "name": "RecordedSessionReplay",
+     "file": "apps/web/src/components/RecordedSessionReplay.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 47
+    },
+    {
+     "name": "SessionReplay",
+     "file": "apps/web/src/components/SessionReplay.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 92
+    },
+    {
+     "name": "SubagentRow",
+     "file": "apps/web/src/components/SubagentRow.tsx",
+     "status": "ours",
+     "grade": "good",
+     "swapTo": null,
+     "why": [
+      "iterated 3 days, kept"
+     ],
+     "loc": 83
+    },
+    {
+     "name": "TalkOrb",
+     "file": "apps/web/src/components/TalkOrb.tsx",
+     "status": "ours",
+     "grade": "weak",
+     "swapTo": null,
+     "why": [
+      "- 25 hard-coded colours"
+     ],
+     "loc": 89
+    },
+    {
+     "name": "TaskActions",
+     "file": "apps/web/src/components/TaskActions.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 150
+    },
+    {
+     "name": "TaskFold",
+     "file": "apps/web/src/components/TaskFold.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 10
+    },
+    {
+     "name": "TurnDivider",
+     "file": "apps/web/src/components/TurnDivider.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 6
+    },
+    {
+     "name": "LandedRows",
+     "file": "apps/web/src/components/panel/LandedRows.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 95
+    },
+    {
+     "name": "Icon",
+     "file": "apps/web/src/lib/Icon.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 69
+    }
+   ]
+  },
+  {
+   "name": "CodexWorkerPage",
+   "file": "apps/web/src/components/CodexWorkerPage.tsx",
+   "loc": 73,
+   "components": [
+    {
+     "name": "ChatLinkPreview",
+     "file": "apps/web/src/components/ChatLinkPreview.tsx",
+     "status": "needs-pick",
+     "grade": "ok",
+     "swapTo": "arc:hover-card",
+     "why": [],
+     "loc": 112
+    },
+    {
+     "name": "ChatResponseScene",
+     "file": "apps/web/src/components/ChatResponseScene.tsx",
+     "status": "needs-pick",
+     "grade": "ok",
+     "swapTo": "arc:chat-thread",
+     "why": [],
+     "loc": 73
+    },
+    {
+     "name": "Composer",
+     "file": "apps/web/src/components/Composer.tsx",
+     "status": "needs-pick",
+     "grade": "good",
+     "swapTo": "uselayouts:prompt-box",
+     "why": [
+      "iterated 4 days, kept"
+     ],
+     "loc": 10
+    },
+    {
+     "name": "SpeakToggle",
+     "file": "apps/web/src/components/SpeakToggle.tsx",
+     "status": "needs-pick",
+     "grade": "ok",
+     "swapTo": "arc:switch",
+     "why": [],
+     "loc": 59
+    },
+    {
+     "name": "TaskTree",
+     "file": "apps/web/src/components/panel/TaskTree.tsx",
+     "status": "needs-pick",
+     "grade": "ok",
+     "swapTo": "arc:tree-view",
+     "why": [
+      "iterated 3 days, kept",
+      "- 2 emoji"
+     ],
+     "loc": 75
+    },
+    {
+     "name": "ArtifactShelf",
+     "file": "apps/web/src/components/ArtifactShelf.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 75
+    },
+    {
+     "name": "ChatActivityRail",
+     "file": "apps/web/src/components/ChatActivityRail.tsx",
+     "status": "ours",
+     "grade": "weak",
+     "swapTo": null,
+     "why": [
+      "- 9 hard-coded colours"
+     ],
+     "loc": 98
+    },
+    {
+     "name": "ChatView",
+     "file": "apps/web/src/components/ChatView.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [
+      "iterated 6 days, kept",
+      "- 6 emoji"
+     ],
+     "loc": 1984
+    },
+    {
+     "name": "CodexWorkerFlights",
+     "file": "apps/web/src/components/CodexWorkerFlights.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 28
+    },
+    {
+     "name": "ContextStack",
+     "file": "apps/web/src/components/ContextStack.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 127
+    },
+    {
+     "name": "DeliveryEvidence",
+     "file": "apps/web/src/components/DeliveryEvidence.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 38
+    },
+    {
+     "name": "FanOut",
+     "file": "apps/web/src/components/FanOut.tsx",
+     "status": "ours",
+     "grade": "good",
+     "swapTo": null,
+     "why": [
+      "iterated 4 days, kept"
+     ],
+     "loc": 113
+    },
+    {
+     "name": "MicButton",
+     "file": "apps/web/src/components/MicButton.tsx",
+     "status": "ours",
+     "grade": "good",
+     "swapTo": null,
+     "why": [
+      "iterated 4 days, kept"
+     ],
+     "loc": 226
+    },
+    {
+     "name": "OutputInspectDock",
+     "file": "apps/web/src/components/OutputInspectDock.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 68
+    },
+    {
+     "name": "PromptLibrary",
+     "file": "apps/web/src/components/PromptLibrary.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 101
+    },
+    {
+     "name": "QuestionCard",
+     "file": "apps/web/src/components/QuestionCard.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 30
+    },
+    {
+     "name": "QuestionRecoveryHistory",
+     "file": "apps/web/src/components/QuestionRecoveryHistory.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 19
+    },
+    {
+     "name": "QueuedPrompts",
+     "file": "apps/web/src/components/QueuedPrompts.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 34
+    },
+    {
+     "name": "RecordedSessionReplay",
+     "file": "apps/web/src/components/RecordedSessionReplay.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 47
+    },
+    {
+     "name": "SessionReplay",
+     "file": "apps/web/src/components/SessionReplay.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 92
+    },
+    {
+     "name": "SubagentRow",
+     "file": "apps/web/src/components/SubagentRow.tsx",
+     "status": "ours",
+     "grade": "good",
+     "swapTo": null,
+     "why": [
+      "iterated 3 days, kept"
+     ],
+     "loc": 83
+    },
+    {
+     "name": "TalkOrb",
+     "file": "apps/web/src/components/TalkOrb.tsx",
+     "status": "ours",
+     "grade": "weak",
+     "swapTo": null,
+     "why": [
+      "- 25 hard-coded colours"
+     ],
+     "loc": 89
+    },
+    {
+     "name": "TaskActions",
+     "file": "apps/web/src/components/TaskActions.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 150
+    },
+    {
+     "name": "TaskFold",
+     "file": "apps/web/src/components/TaskFold.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 10
+    },
+    {
+     "name": "TurnDivider",
+     "file": "apps/web/src/components/TurnDivider.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 6
+    },
+    {
+     "name": "LandedRows",
+     "file": "apps/web/src/components/panel/LandedRows.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 95
+    },
+    {
+     "name": "Icon",
+     "file": "apps/web/src/lib/Icon.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 69
+    }
+   ]
+  },
+  {
+   "name": "EntityPage",
+   "file": "apps/web/src/components/EntityPage.tsx",
+   "loc": 401,
+   "components": [
+    {
+     "name": "ChatLinkPreview",
+     "file": "apps/web/src/components/ChatLinkPreview.tsx",
+     "status": "needs-pick",
+     "grade": "ok",
+     "swapTo": "arc:hover-card",
+     "why": [],
+     "loc": 112
+    },
+    {
+     "name": "ChatResponseScene",
+     "file": "apps/web/src/components/ChatResponseScene.tsx",
+     "status": "needs-pick",
+     "grade": "ok",
+     "swapTo": "arc:chat-thread",
+     "why": [],
+     "loc": 73
+    },
+    {
+     "name": "Composer",
+     "file": "apps/web/src/components/Composer.tsx",
+     "status": "needs-pick",
+     "grade": "good",
+     "swapTo": "uselayouts:prompt-box",
+     "why": [
+      "iterated 4 days, kept"
+     ],
+     "loc": 10
+    },
+    {
+     "name": "SpeakToggle",
+     "file": "apps/web/src/components/SpeakToggle.tsx",
+     "status": "needs-pick",
+     "grade": "ok",
+     "swapTo": "arc:switch",
+     "why": [],
+     "loc": 59
+    },
+    {
+     "name": "TaskTree",
+     "file": "apps/web/src/components/panel/TaskTree.tsx",
+     "status": "needs-pick",
+     "grade": "ok",
+     "swapTo": "arc:tree-view",
+     "why": [
+      "iterated 3 days, kept",
+      "- 2 emoji"
+     ],
+     "loc": 75
+    },
+    {
+     "name": "ArtifactShelf",
+     "file": "apps/web/src/components/ArtifactShelf.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 75
+    },
+    {
+     "name": "ChatActivityRail",
+     "file": "apps/web/src/components/ChatActivityRail.tsx",
+     "status": "ours",
+     "grade": "weak",
+     "swapTo": null,
+     "why": [
+      "- 9 hard-coded colours"
+     ],
+     "loc": 98
+    },
+    {
+     "name": "ChatView",
+     "file": "apps/web/src/components/ChatView.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [
+      "iterated 6 days, kept",
+      "- 6 emoji"
+     ],
+     "loc": 1984
+    },
+    {
+     "name": "CodexWorkerFlights",
+     "file": "apps/web/src/components/CodexWorkerFlights.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 28
+    },
+    {
+     "name": "ContextStack",
+     "file": "apps/web/src/components/ContextStack.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 127
+    },
+    {
+     "name": "DeliveryEvidence",
+     "file": "apps/web/src/components/DeliveryEvidence.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 38
+    },
+    {
+     "name": "FanOut",
+     "file": "apps/web/src/components/FanOut.tsx",
+     "status": "ours",
+     "grade": "good",
+     "swapTo": null,
+     "why": [
+      "iterated 4 days, kept"
+     ],
+     "loc": 113
+    },
+    {
+     "name": "MicButton",
+     "file": "apps/web/src/components/MicButton.tsx",
+     "status": "ours",
+     "grade": "good",
+     "swapTo": null,
+     "why": [
+      "iterated 4 days, kept"
+     ],
+     "loc": 226
+    },
+    {
+     "name": "OutputInspectDock",
+     "file": "apps/web/src/components/OutputInspectDock.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 68
+    },
+    {
+     "name": "PromptLibrary",
+     "file": "apps/web/src/components/PromptLibrary.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 101
+    },
+    {
+     "name": "QuestionCard",
+     "file": "apps/web/src/components/QuestionCard.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 30
+    },
+    {
+     "name": "QuestionRecoveryHistory",
+     "file": "apps/web/src/components/QuestionRecoveryHistory.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 19
+    },
+    {
+     "name": "QueuedPrompts",
+     "file": "apps/web/src/components/QueuedPrompts.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 34
+    },
+    {
+     "name": "RecordedSessionReplay",
+     "file": "apps/web/src/components/RecordedSessionReplay.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 47
+    },
+    {
+     "name": "SessionReplay",
+     "file": "apps/web/src/components/SessionReplay.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 92
+    },
+    {
+     "name": "SubagentRow",
+     "file": "apps/web/src/components/SubagentRow.tsx",
+     "status": "ours",
+     "grade": "good",
+     "swapTo": null,
+     "why": [
+      "iterated 3 days, kept"
+     ],
+     "loc": 83
+    },
+    {
+     "name": "TalkOrb",
+     "file": "apps/web/src/components/TalkOrb.tsx",
+     "status": "ours",
+     "grade": "weak",
+     "swapTo": null,
+     "why": [
+      "- 25 hard-coded colours"
+     ],
+     "loc": 89
+    },
+    {
+     "name": "TaskActions",
+     "file": "apps/web/src/components/TaskActions.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 150
+    },
+    {
+     "name": "TaskFold",
+     "file": "apps/web/src/components/TaskFold.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 10
+    },
+    {
+     "name": "TurnDivider",
+     "file": "apps/web/src/components/TurnDivider.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 6
+    },
+    {
+     "name": "LandedRows",
+     "file": "apps/web/src/components/panel/LandedRows.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 95
+    },
+    {
+     "name": "Icon",
+     "file": "apps/web/src/lib/Icon.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 69
+    }
+   ]
+  },
+  {
+   "name": "ChatView",
+   "file": "apps/web/src/components/ChatView.tsx",
+   "loc": 1984,
+   "components": [
+    {
+     "name": "ChatLinkPreview",
+     "file": "apps/web/src/components/ChatLinkPreview.tsx",
+     "status": "needs-pick",
+     "grade": "ok",
+     "swapTo": "arc:hover-card",
+     "why": [],
+     "loc": 112
+    },
+    {
+     "name": "ChatResponseScene",
+     "file": "apps/web/src/components/ChatResponseScene.tsx",
+     "status": "needs-pick",
+     "grade": "ok",
+     "swapTo": "arc:chat-thread",
+     "why": [],
+     "loc": 73
+    },
+    {
+     "name": "Composer",
+     "file": "apps/web/src/components/Composer.tsx",
+     "status": "needs-pick",
+     "grade": "good",
+     "swapTo": "uselayouts:prompt-box",
+     "why": [
+      "iterated 4 days, kept"
+     ],
+     "loc": 10
+    },
+    {
+     "name": "SpeakToggle",
+     "file": "apps/web/src/components/SpeakToggle.tsx",
+     "status": "needs-pick",
+     "grade": "ok",
+     "swapTo": "arc:switch",
+     "why": [],
+     "loc": 59
+    },
+    {
+     "name": "TaskTree",
+     "file": "apps/web/src/components/panel/TaskTree.tsx",
+     "status": "needs-pick",
+     "grade": "ok",
+     "swapTo": "arc:tree-view",
+     "why": [
+      "iterated 3 days, kept",
+      "- 2 emoji"
+     ],
+     "loc": 75
+    },
+    {
+     "name": "ArtifactShelf",
+     "file": "apps/web/src/components/ArtifactShelf.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 75
+    },
+    {
+     "name": "ChatActivityRail",
+     "file": "apps/web/src/components/ChatActivityRail.tsx",
+     "status": "ours",
+     "grade": "weak",
+     "swapTo": null,
+     "why": [
+      "- 9 hard-coded colours"
+     ],
+     "loc": 98
+    },
+    {
+     "name": "CodexWorkerFlights",
+     "file": "apps/web/src/components/CodexWorkerFlights.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 28
+    },
+    {
+     "name": "ContextStack",
+     "file": "apps/web/src/components/ContextStack.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 127
+    },
+    {
+     "name": "DeliveryEvidence",
+     "file": "apps/web/src/components/DeliveryEvidence.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 38
+    },
+    {
+     "name": "FanOut",
+     "file": "apps/web/src/components/FanOut.tsx",
+     "status": "ours",
+     "grade": "good",
+     "swapTo": null,
+     "why": [
+      "iterated 4 days, kept"
+     ],
+     "loc": 113
+    },
+    {
+     "name": "MicButton",
+     "file": "apps/web/src/components/MicButton.tsx",
+     "status": "ours",
+     "grade": "good",
+     "swapTo": null,
+     "why": [
+      "iterated 4 days, kept"
+     ],
+     "loc": 226
+    },
+    {
+     "name": "OutputInspectDock",
+     "file": "apps/web/src/components/OutputInspectDock.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 68
+    },
+    {
+     "name": "PromptLibrary",
+     "file": "apps/web/src/components/PromptLibrary.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 101
+    },
+    {
+     "name": "QuestionCard",
+     "file": "apps/web/src/components/QuestionCard.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 30
+    },
+    {
+     "name": "QuestionRecoveryHistory",
+     "file": "apps/web/src/components/QuestionRecoveryHistory.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 19
+    },
+    {
+     "name": "QueuedPrompts",
+     "file": "apps/web/src/components/QueuedPrompts.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 34
+    },
+    {
+     "name": "RecordedSessionReplay",
+     "file": "apps/web/src/components/RecordedSessionReplay.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 47
+    },
+    {
+     "name": "SessionReplay",
+     "file": "apps/web/src/components/SessionReplay.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 92
+    },
+    {
+     "name": "SubagentRow",
+     "file": "apps/web/src/components/SubagentRow.tsx",
+     "status": "ours",
+     "grade": "good",
+     "swapTo": null,
+     "why": [
+      "iterated 3 days, kept"
+     ],
+     "loc": 83
+    },
+    {
+     "name": "TalkOrb",
+     "file": "apps/web/src/components/TalkOrb.tsx",
+     "status": "ours",
+     "grade": "weak",
+     "swapTo": null,
+     "why": [
+      "- 25 hard-coded colours"
+     ],
+     "loc": 89
+    },
+    {
+     "name": "TaskActions",
+     "file": "apps/web/src/components/TaskActions.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 150
+    },
+    {
+     "name": "TaskFold",
+     "file": "apps/web/src/components/TaskFold.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 10
+    },
+    {
+     "name": "TurnDivider",
+     "file": "apps/web/src/components/TurnDivider.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 6
+    },
+    {
+     "name": "LandedRows",
+     "file": "apps/web/src/components/panel/LandedRows.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 95
+    },
+    {
+     "name": "Icon",
+     "file": "apps/web/src/lib/Icon.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 69
+    }
+   ]
+  },
+  {
+   "name": "SubagentsPage",
+   "file": "apps/web/src/components/panel/SubagentsPage.tsx",
+   "loc": 118,
+   "components": [
+    {
+     "name": "AgentHoverCard",
+     "file": "apps/web/src/components/AgentHoverCard.tsx",
+     "status": "needs-pick",
+     "grade": "good",
+     "swapTo": "arc:hover-card",
+     "why": [
+      "iterated 3 days, kept"
+     ],
+     "loc": 119
+    },
+    {
+     "name": "SpeakToggle",
+     "file": "apps/web/src/components/SpeakToggle.tsx",
+     "status": "needs-pick",
+     "grade": "ok",
+     "swapTo": "arc:switch",
+     "why": [],
+     "loc": 59
+    },
+    {
+     "name": "A0Nav",
+     "file": "apps/web/src/components/A0Nav.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 67
+    },
+    {
+     "name": "Boundary",
+     "file": "apps/web/src/components/Boundary.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 49
+    },
+    {
+     "name": "MachineGlyph",
+     "file": "apps/web/src/components/MachineGlyph.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 26
+    },
+    {
+     "name": "MicButton",
+     "file": "apps/web/src/components/MicButton.tsx",
+     "status": "ours",
+     "grade": "good",
+     "swapTo": null,
+     "why": [
+      "iterated 4 days, kept"
+     ],
+     "loc": 226
+    },
+    {
+     "name": "MiniLanes",
+     "file": "apps/web/src/components/MiniLanes.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 155
+    },
+    {
+     "name": "OwnerBoard",
+     "file": "apps/web/src/components/OwnerBoard.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [
+      "- 3 emoji"
+     ],
+     "loc": 127
+    },
+    {
+     "name": "OwnerSpaceWork",
+     "file": "apps/web/src/components/OwnerSpaceWork.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 69
+    },
+    {
+     "name": "ProjectMark",
+     "file": "apps/web/src/components/ProjectMark.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 23
+    },
+    {
+     "name": "QuestionCard",
+     "file": "apps/web/src/components/QuestionCard.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 30
+    },
+    {
+     "name": "QuestionRecoveryHistory",
+     "file": "apps/web/src/components/QuestionRecoveryHistory.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 19
+    },
+    {
+     "name": "SayNew",
+     "file": "apps/web/src/components/SayNew.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 85
+    },
+    {
+     "name": "Sidebar",
+     "file": "apps/web/src/components/Sidebar.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [
+      "iterated 5 days, kept",
+      "- 1 clickable div"
+     ],
+     "loc": 1285
+    },
+    {
+     "name": "SubagentRow",
+     "file": "apps/web/src/components/SubagentRow.tsx",
+     "status": "ours",
+     "grade": "good",
+     "swapTo": null,
+     "why": [
+      "iterated 3 days, kept"
+     ],
+     "loc": 83
+    },
+    {
+     "name": "TalkOrb",
+     "file": "apps/web/src/components/TalkOrb.tsx",
+     "status": "ours",
+     "grade": "weak",
+     "swapTo": null,
+     "why": [
+      "- 25 hard-coded colours"
+     ],
+     "loc": 89
+    },
+    {
+     "name": "WorkerFold",
+     "file": "apps/web/src/components/WorkerFold.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 50
+    },
+    {
+     "name": "WorkspaceChoices",
+     "file": "apps/web/src/components/WorkspaceChoices.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 70
+    },
+    {
+     "name": "HubPage",
+     "file": "apps/web/src/components/page/HubPage.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 196
+    },
+    {
+     "name": "SubRow",
+     "file": "apps/web/src/components/panel/SubRow.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [
+      "- 3 emoji"
+     ],
+     "loc": 57
+    },
+    {
+     "name": "WidgetCard",
+     "file": "apps/web/src/components/widgets/WidgetCard.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 77
+    },
+    {
+     "name": "Icon",
+     "file": "apps/web/src/lib/Icon.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 69
+    }
+   ]
+  },
+  {
+   "name": "AgentZeroPage",
+   "file": "apps/web/src/components/AgentZeroPage.tsx",
+   "loc": 120,
+   "components": [
+    {
+     "name": "TeamWidget",
+     "file": "apps/web/src/components/widgets/TeamWidget.tsx",
+     "status": "needs-pick",
+     "grade": "ok",
+     "swapTo": "arc:avatar",
+     "why": [],
+     "loc": 48
+    },
+    {
+     "name": "Boundary",
+     "file": "apps/web/src/components/Boundary.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 49
+    },
+    {
+     "name": "ListWidget",
+     "file": "apps/web/src/components/widgets/ListWidget.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 24
+    },
+    {
+     "name": "NeedsWidget",
+     "file": "apps/web/src/components/widgets/NeedsWidget.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 49
+    },
+    {
+     "name": "ProgressWidget",
+     "file": "apps/web/src/components/widgets/ProgressWidget.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 48
+    },
+    {
+     "name": "SystemsWidget",
+     "file": "apps/web/src/components/widgets/SystemsWidget.tsx",
+     "status": "ours",
+     "grade": "good",
+     "swapTo": null,
+     "why": [
+      "iterated 3 days, kept"
+     ],
+     "loc": 66
+    },
+    {
+     "name": "TasksWidget",
+     "file": "apps/web/src/components/widgets/TasksWidget.tsx",
+     "status": "ours",
+     "grade": "good",
+     "swapTo": null,
+     "why": [
+      "iterated 5 days, kept"
+     ],
+     "loc": 67
+    },
+    {
+     "name": "WidgetCard",
+     "file": "apps/web/src/components/widgets/WidgetCard.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 77
+    }
+   ]
+  },
+  {
+   "name": "TasksPage",
+   "file": "apps/web/src/components/TasksPage.tsx",
+   "loc": 354,
+   "components": [
+    {
+     "name": "SpeakToggle",
+     "file": "apps/web/src/components/SpeakToggle.tsx",
+     "status": "needs-pick",
+     "grade": "ok",
+     "swapTo": "arc:switch",
+     "why": [],
+     "loc": 59
+    },
+    {
+     "name": "MicButton",
+     "file": "apps/web/src/components/MicButton.tsx",
+     "status": "ours",
+     "grade": "good",
+     "swapTo": null,
+     "why": [
+      "iterated 4 days, kept"
+     ],
+     "loc": 226
+    },
+    {
+     "name": "TalkOrb",
+     "file": "apps/web/src/components/TalkOrb.tsx",
+     "status": "ours",
+     "grade": "weak",
+     "swapTo": null,
+     "why": [
+      "- 25 hard-coded colours"
+     ],
+     "loc": 89
+    },
+    {
+     "name": "TaskActions",
+     "file": "apps/web/src/components/TaskActions.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 150
+    },
+    {
+     "name": "TaskWorkspaceDeck",
+     "file": "apps/web/src/components/TaskWorkspaceDeck.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 65
+    },
+    {
+     "name": "TaskWorkspaceGroups",
+     "file": "apps/web/src/components/TaskWorkspaceGroups.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 40
+    }
+   ]
+  },
+  {
+   "name": "DashboardPage",
+   "file": "apps/web/src/components/DashboardPage.tsx",
+   "loc": 185,
+   "components": [
+    {
+     "name": "Figures",
+     "file": "apps/web/src/components/page/Figures.tsx",
+     "status": "needs-pick",
+     "grade": "ok",
+     "swapTo": "arc:metric-card",
+     "why": [],
+     "loc": 110
+    },
+    {
+     "name": "Boundary",
+     "file": "apps/web/src/components/Boundary.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 49
+    },
+    {
+     "name": "HubPage",
+     "file": "apps/web/src/components/page/HubPage.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 196
+    },
+    {
+     "name": "TasksWidget",
+     "file": "apps/web/src/components/widgets/TasksWidget.tsx",
+     "status": "ours",
+     "grade": "good",
+     "swapTo": null,
+     "why": [
+      "iterated 5 days, kept"
+     ],
+     "loc": 67
+    },
+    {
+     "name": "WidgetCard",
+     "file": "apps/web/src/components/widgets/WidgetCard.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 77
+    }
+   ]
+  },
+  {
+   "name": "ServersSpace",
+   "file": "apps/web/src/components/ServersSpace.tsx",
+   "loc": 773,
+   "components": [
+    {
+     "name": "Figures",
+     "file": "apps/web/src/components/page/Figures.tsx",
+     "status": "needs-pick",
+     "grade": "ok",
+     "swapTo": "arc:metric-card",
+     "why": [],
+     "loc": 110
+    },
+    {
+     "name": "Boundary",
+     "file": "apps/web/src/components/Boundary.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 49
+    },
+    {
+     "name": "LaptopJobsPage",
+     "file": "apps/web/src/components/LaptopJobsPage.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 40
+    },
+    {
+     "name": "HubPage",
+     "file": "apps/web/src/components/page/HubPage.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 196
+    }
+   ]
+  },
+  {
+   "name": "CodexWorkPage",
+   "file": "apps/web/src/components/CodexWorkPage.tsx",
+   "loc": 57,
+   "components": [
+    {
+     "name": "Figures",
+     "file": "apps/web/src/components/page/Figures.tsx",
+     "status": "needs-pick",
+     "grade": "ok",
+     "swapTo": "arc:metric-card",
+     "why": [],
+     "loc": 110
+    },
+    {
+     "name": "Boundary",
+     "file": "apps/web/src/components/Boundary.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 49
+    },
+    {
+     "name": "HubPage",
+     "file": "apps/web/src/components/page/HubPage.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 196
+    }
+   ]
+  },
+  {
+   "name": "LaptopJobsPage",
+   "file": "apps/web/src/components/LaptopJobsPage.tsx",
+   "loc": 40,
+   "components": [
+    {
+     "name": "Figures",
+     "file": "apps/web/src/components/page/Figures.tsx",
+     "status": "needs-pick",
+     "grade": "ok",
+     "swapTo": "arc:metric-card",
+     "why": [],
+     "loc": 110
+    },
+    {
+     "name": "Boundary",
+     "file": "apps/web/src/components/Boundary.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 49
+    },
+    {
+     "name": "HubPage",
+     "file": "apps/web/src/components/page/HubPage.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 196
+    }
+   ]
+  },
+  {
+   "name": "LibrarySpace",
+   "file": "apps/web/src/components/LibrarySpace.tsx",
+   "loc": 672,
+   "components": [
+    {
+     "name": "DonorWork",
+     "file": "apps/web/src/components/DonorWork.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 51
+    },
+    {
+     "name": "LibraryPage",
+     "file": "apps/web/src/components/LibraryPage.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 50
+    },
+    {
+     "name": "TaskFold",
+     "file": "apps/web/src/components/TaskFold.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 10
+    }
+   ]
+  },
+  {
+   "name": "RolodexSpace",
+   "file": "apps/web/src/components/RolodexSpace.tsx",
+   "loc": 168,
+   "components": [
+    {
+     "name": "RolodexCard",
+     "file": "apps/web/src/components/RolodexCard.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 221
+    },
+    {
+     "name": "RolodexImport",
+     "file": "apps/web/src/components/RolodexImport.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 80
+    },
+    {
+     "name": "RolodexList",
+     "file": "apps/web/src/components/RolodexList.tsx",
+     "status": "ours",
+     "grade": "weak",
+     "swapTo": null,
+     "why": [
+      "- 1 clickable div"
+     ],
+     "loc": 64
+    }
+   ]
+  },
+  {
+   "name": "EndedPage",
+   "file": "apps/web/src/components/EndedPage.tsx",
+   "loc": 34,
+   "components": [
+    {
+     "name": "Boundary",
+     "file": "apps/web/src/components/Boundary.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 49
+    },
+    {
+     "name": "HubPage",
+     "file": "apps/web/src/components/page/HubPage.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 196
+    }
+   ]
+  },
+  {
+   "name": "SubagentView",
+   "file": "apps/web/src/components/panel/SubagentView.tsx",
+   "loc": 339,
+   "components": [
+    {
+     "name": "SubagentRow",
+     "file": "apps/web/src/components/SubagentRow.tsx",
+     "status": "ours",
+     "grade": "good",
+     "swapTo": null,
+     "why": [
+      "iterated 3 days, kept"
+     ],
+     "loc": 83
+    },
+    {
+     "name": "SubRow",
+     "file": "apps/web/src/components/panel/SubRow.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [
+      "- 3 emoji"
+     ],
+     "loc": 57
+    }
+   ]
+  },
+  {
+   "name": "ResearchPage",
+   "file": "apps/web/src/components/ResearchPage.tsx",
+   "loc": 58,
+   "components": [
+    {
+     "name": "A0Nav",
+     "file": "apps/web/src/components/A0Nav.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 67
+    }
+   ]
+  },
+  {
+   "name": "StatsPage",
+   "file": "apps/web/src/components/StatsPage.tsx",
+   "loc": 105,
+   "components": [
+    {
+     "name": "StatsBars",
+     "file": "apps/web/src/components/StatsBars.tsx",
+     "status": "needs-pick",
+     "grade": "ok",
+     "swapTo": "arc:metric-card",
+     "why": [],
+     "loc": 19
+    }
+   ]
+  },
+  {
+   "name": "TokensSpace",
+   "file": "apps/web/src/components/TokensSpace.tsx",
+   "loc": 1227,
+   "components": [
+    {
+     "name": "Figures",
+     "file": "apps/web/src/components/page/Figures.tsx",
+     "status": "needs-pick",
+     "grade": "ok",
+     "swapTo": "arc:metric-card",
+     "why": [],
+     "loc": 110
+    }
+   ]
+  },
+  {
+   "name": "VoiceSpace",
+   "file": "apps/web/src/components/VoiceSpace.tsx",
+   "loc": 154,
+   "components": [
+    {
+     "name": "DictationSpace",
+     "file": "apps/web/src/components/DictationSpace.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 96
+    }
+   ]
+  },
+  {
+   "name": "HubPage",
+   "file": "apps/web/src/components/page/HubPage.tsx",
+   "loc": 196,
+   "components": [
+    {
+     "name": "Boundary",
+     "file": "apps/web/src/components/Boundary.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 49
+    }
+   ]
+  },
+  {
+   "name": "DictationSpace",
+   "file": "apps/web/src/components/DictationSpace.tsx",
+   "loc": 96,
+   "components": []
+  },
+  {
+   "name": "LibraryPage",
+   "file": "apps/web/src/components/LibraryPage.tsx",
+   "loc": 50,
+   "components": []
+  },
+  {
+   "name": "LifeSpace",
+   "file": "apps/web/src/components/LifeSpace.tsx",
+   "loc": 402,
+   "components": []
+  },
+  {
+   "name": "WhatsAppSpace",
+   "file": "apps/web/src/components/WhatsAppSpace.tsx",
+   "loc": 671,
+   "components": []
+  },
+  {
+   "name": "ErrorPage",
+   "file": "apps/web/src/components/browser/ErrorPage.tsx",
+   "loc": 34,
+   "components": []
+  }
+ ],
+ "components": [
+  {
+   "name": "App",
+   "file": "apps/web/src/App.tsx",
+   "status": "ours",
+   "grade": "ok",
+   "swapTo": null,
+   "kind": "page",
+   "pages": 0,
+   "why": [
+    "iterated 6 days, kept",
+    "- left accent line"
+   ]
+  },
+  {
+   "name": "A0Nav",
+   "file": "apps/web/src/components/A0Nav.tsx",
+   "status": "ours",
+   "grade": "ok",
+   "swapTo": null,
+   "kind": "domain",
+   "pages": 3,
+   "why": []
+  },
+  {
+   "name": "AgentCanvas",
+   "file": "apps/web/src/components/AgentCanvas.tsx",
+   "status": "ours",
+   "grade": "ok",
+   "swapTo": null,
+   "kind": "domain",
+   "pages": 0,
+   "why": []
+  },
+  {
+   "name": "AgentHoverCard",
+   "file": "apps/web/src/components/AgentHoverCard.tsx",
+   "status": "needs-pick",
+   "grade": "good",
+   "swapTo": "arc:hover-card",
+   "kind": "pattern",
+   "pages": 2,
+   "why": [
+    "iterated 3 days, kept"
+   ]
+  },
+  {
+   "name": "AgentNotificationStack",
+   "file": "apps/web/src/components/AgentNotificationStack.tsx",
+   "status": "needs-pick",
+   "grade": "weak",
+   "swapTo": "arc:notification-center",
+   "kind": "pattern",
+   "pages": 0,
+   "why": [
+    "- 9 hard-coded colours"
+   ]
+  },
+  {
+   "name": "AgentPanel",
+   "file": "apps/web/src/components/AgentPanel.tsx",
+   "status": "ours",
+   "grade": "good",
+   "swapTo": null,
+   "kind": "domain",
+   "pages": 1,
+   "why": [
+    "iterated 6 days, kept"
+   ]
+  },
+  {
+   "name": "AgentZeroPage",
+   "file": "apps/web/src/components/AgentZeroPage.tsx",
+   "status": "ours",
+   "grade": "good",
+   "swapTo": null,
+   "kind": "page",
+   "pages": 0,
+   "why": [
+    "iterated 5 days, kept"
+   ]
+  },
+  {
+   "name": "ArtifactShelf",
+   "file": "apps/web/src/components/ArtifactShelf.tsx",
+   "status": "ours",
+   "grade": "ok",
+   "swapTo": null,
+   "kind": "domain",
+   "pages": 5,
+   "why": []
+  },
+  {
+   "name": "AttentionPanel",
+   "file": "apps/web/src/components/AttentionPanel.tsx",
+   "status": "ours",
+   "grade": "ok",
+   "swapTo": null,
+   "kind": "domain",
+   "pages": 0,
+   "why": []
+  },
+  {
+   "name": "BankNavigationAdapters",
+   "file": "apps/web/src/components/BankNavigationAdapters.tsx",
+   "status": "ours",
+   "grade": "ok",
+   "swapTo": null,
+   "kind": "domain",
+   "pages": 0,
+   "why": []
+  },
+  {
+   "name": "BankWorkspaceChooser",
+   "file": "apps/web/src/components/BankWorkspaceChooser.tsx",
+   "status": "ours",
+   "grade": "ok",
+   "swapTo": null,
+   "kind": "domain",
+   "pages": 0,
+   "why": []
+  },
+  {
+   "name": "Boundary",
+   "file": "apps/web/src/components/Boundary.tsx",
+   "status": "ours",
+   "grade": "ok",
+   "swapTo": null,
+   "kind": "domain",
+   "pages": 9,
+   "why": []
+  },
+  {
+   "name": "Browser",
+   "file": "apps/web/src/components/Browser.tsx",
+   "status": "ours",
+   "grade": "good",
+   "swapTo": null,
+   "kind": "domain",
+   "pages": 0,
+   "why": [
+    "iterated 5 days, kept"
+   ]
+  },
+  {
+   "name": "CardCrew",
+   "file": "apps/web/src/components/CardCrew.tsx",
+   "status": "dead",
+   "grade": "dead",
+   "swapTo": null,
+   "kind": "domain",
+   "pages": 0,
+   "why": [
+    "no page reaches it"
+   ]
+  },
+  {
+   "name": "ChangeLens",
+   "file": "apps/web/src/components/ChangeLens.tsx",
+   "status": "ours",
+   "grade": "ok",
+   "swapTo": null,
+   "kind": "domain",
+   "pages": 1,
+   "why": []
+  },
+  {
+   "name": "ChangesPanel",
+   "file": "apps/web/src/components/ChangesPanel.tsx",
+   "status": "ours",
+   "grade": "ok",
+   "swapTo": null,
+   "kind": "domain",
+   "pages": 1,
+   "why": []
+  },
+  {
+   "name": "ChatActivityRail",
+   "file": "apps/web/src/components/ChatActivityRail.tsx",
+   "status": "ours",
+   "grade": "weak",
+   "swapTo": null,
+   "kind": "domain",
+   "pages": 5,
+   "why": [
+    "- 9 hard-coded colours"
+   ]
+  },
+  {
+   "name": "ChatHeader",
+   "file": "apps/web/src/components/ChatHeader.tsx",
+   "status": "ours",
+   "grade": "ok",
+   "swapTo": null,
+   "kind": "domain",
+   "pages": 0,
+   "why": [
+    "iterated 4 days, kept",
+    "- 2 emoji"
+   ]
+  },
+  {
+   "name": "ChatLinkPreview",
+   "file": "apps/web/src/components/ChatLinkPreview.tsx",
+   "status": "needs-pick",
+   "grade": "ok",
+   "swapTo": "arc:hover-card",
+   "kind": "pattern",
+   "pages": 5,
+   "why": []
+  },
+  {
+   "name": "ChatResponseScene",
+   "file": "apps/web/src/components/ChatResponseScene.tsx",
+   "status": "needs-pick",
+   "grade": "ok",
+   "swapTo": "arc:chat-thread",
+   "kind": "pattern",
+   "pages": 5,
+   "why": []
+  },
+  {
+   "name": "ChatView",
+   "file": "apps/web/src/components/ChatView.tsx",
+   "status": "ours",
+   "grade": "ok",
+   "swapTo": null,
+   "kind": "page",
+   "pages": 4,
+   "why": [
+    "iterated 6 days, kept",
+    "- 6 emoji"
+   ]
+  },
+  {
+   "name": "CheckpointBlock",
+   "file": "apps/web/src/components/CheckpointBlock.tsx",
+   "status": "dead",
+   "grade": "dead",
+   "swapTo": null,
+   "kind": "domain",
+   "pages": 0,
+   "why": [
+    "no page reaches it"
+   ]
+  },
+  {
+   "name": "CodexWorkPage",
+   "file": "apps/web/src/components/CodexWorkPage.tsx",
+   "status": "ours",
+   "grade": "ok",
+   "swapTo": null,
+   "kind": "page",
+   "pages": 0,
+   "why": []
+  },
+  {
+   "name": "CodexWorkerFlights",
+   "file": "apps/web/src/components/CodexWorkerFlights.tsx",
+   "status": "ours",
+   "grade": "ok",
+   "swapTo": null,
+   "kind": "domain",
+   "pages": 5,
+   "why": []
+  },
+  {
+   "name": "CodexWorkerPage",
+   "file": "apps/web/src/components/CodexWorkerPage.tsx",
+   "status": "ours",
+   "grade": "ok",
+   "swapTo": null,
+   "kind": "page",
+   "pages": 1,
+   "why": []
+  },
+  {
+   "name": "CommandBar",
+   "file": "apps/web/src/components/CommandBar.tsx",
+   "status": "dead",
+   "grade": "dead",
+   "swapTo": "arc:command-palette",
+   "kind": "pattern",
+   "pages": 0,
+   "why": [
+    "no page reaches it"
+   ]
+  },
+  {
+   "name": "CommandCrumbs",
+   "file": "apps/web/src/components/CommandCrumbs.tsx",
+   "status": "dead",
+   "grade": "dead",
+   "swapTo": "arc:command-palette",
+   "kind": "pattern",
+   "pages": 0,
+   "why": [
+    "no page reaches it"
+   ]
+  },
+  {
+   "name": "Composer",
+   "file": "apps/web/src/components/Composer.tsx",
+   "status": "needs-pick",
+   "grade": "good",
+   "swapTo": "uselayouts:prompt-box",
+   "kind": "pattern",
+   "pages": 5,
+   "why": [
+    "iterated 4 days, kept"
+   ]
+  },
+  {
+   "name": "Constellation",
+   "file": "apps/web/src/components/Constellation.tsx",
+   "status": "ours",
+   "grade": "ok",
+   "swapTo": null,
+   "kind": "domain",
+   "pages": 0,
+   "why": []
+  },
+  {
+   "name": "ContextMeter",
+   "file": "apps/web/src/components/ContextMeter.tsx",
+   "status": "ours",
+   "grade": null,
+   "swapTo": null,
+   "kind": "barrel",
+   "pages": 1,
+   "why": []
+  },
+  {
+   "name": "ContextStack",
+   "file": "apps/web/src/components/ContextStack.tsx",
+   "status": "ours",
+   "grade": "ok",
+   "swapTo": null,
+   "kind": "domain",
+   "pages": 5,
+   "why": []
+  },
+  {
+   "name": "DashboardPage",
+   "file": "apps/web/src/components/DashboardPage.tsx",
+   "status": "ours",
+   "grade": "ok",
+   "swapTo": null,
+   "kind": "page",
+   "pages": 0,
+   "why": []
+  },
+  {
+   "name": "DeliveryEvidence",
+   "file": "apps/web/src/components/DeliveryEvidence.tsx",
+   "status": "ours",
+   "grade": "ok",
+   "swapTo": null,
+   "kind": "domain",
+   "pages": 5,
+   "why": []
+  },
+  {
+   "name": "DevPill",
+   "file": "apps/web/src/components/DevPill.tsx",
+   "status": "ours",
+   "grade": "ok",
+   "swapTo": null,
+   "kind": "pattern",
+   "pages": 1,
+   "why": []
+  },
+  {
+   "name": "DictationSpace",
+   "file": "apps/web/src/components/DictationSpace.tsx",
+   "status": "ours",
+   "grade": "ok",
+   "swapTo": null,
+   "kind": "page",
+   "pages": 1,
+   "why": []
+  },
+  {
+   "name": "DonorWork",
+   "file": "apps/web/src/components/DonorWork.tsx",
+   "status": "ours",
+   "grade": "ok",
+   "swapTo": null,
+   "kind": "domain",
+   "pages": 1,
+   "why": []
+  },
+  {
+   "name": "EndedPage",
+   "file": "apps/web/src/components/EndedPage.tsx",
+   "status": "ours",
+   "grade": "ok",
+   "swapTo": null,
+   "kind": "page",
+   "pages": 0,
+   "why": []
+  },
+  {
+   "name": "EntityPage",
+   "file": "apps/web/src/components/EntityPage.tsx",
+   "status": "ours",
+   "grade": "ok",
+   "swapTo": null,
+   "kind": "page",
+   "pages": 1,
+   "why": [
+    "iterated 3 days, kept",
+    "- 11 hard-coded colours",
+    "- 1 clickable div"
+   ]
+  },
+  {
+   "name": "FanOut",
+   "file": "apps/web/src/components/FanOut.tsx",
+   "status": "ours",
+   "grade": "good",
+   "swapTo": null,
+   "kind": "domain",
+   "pages": 5,
+   "why": [
+    "iterated 4 days, kept"
+   ]
+  },
+  {
+   "name": "FleetBoard",
+   "file": "apps/web/src/components/FleetBoard.tsx",
+   "status": "ours",
+   "grade": "ok",
+   "swapTo": null,
+   "kind": "domain",
+   "pages": 1,
+   "why": []
+  },
+  {
+   "name": "FleetStats",
+   "file": "apps/web/src/components/FleetStats.tsx",
+   "status": "needs-pick",
+   "grade": "ok",
+   "swapTo": "arc:metric-card",
+   "kind": "pattern",
+   "pages": 0,
+   "why": []
+  },
+  {
+   "name": "GroupDashboard",
+   "file": "apps/web/src/components/GroupDashboard.tsx",
+   "status": "dead",
+   "grade": "dead",
+   "swapTo": null,
+   "kind": "domain",
+   "pages": 0,
+   "why": [
+    "no page reaches it"
+   ]
+  },
+  {
+   "name": "HistoryButtons",
+   "file": "apps/web/src/components/HistoryButtons.tsx",
+   "status": "ours",
+   "grade": "ok",
+   "swapTo": null,
+   "kind": "pattern",
+   "pages": 0,
+   "why": []
+  },
+  {
+   "name": "Hud",
+   "file": "apps/web/src/components/Hud.tsx",
+   "status": "ours",
+   "grade": "good",
+   "swapTo": null,
+   "kind": "domain",
+   "pages": 1,
+   "why": [
+    "iterated 5 days, kept"
+   ]
+  },
+  {
+   "name": "InfrastructurePopover",
+   "file": "apps/web/src/components/InfrastructurePopover.tsx",
+   "status": "needs-pick",
+   "grade": "ok",
+   "swapTo": "arc:popover",
+   "kind": "pattern",
+   "pages": 0,
+   "why": []
+  },
+  {
+   "name": "LaptopJobsPage",
+   "file": "apps/web/src/components/LaptopJobsPage.tsx",
+   "status": "ours",
+   "grade": "ok",
+   "swapTo": null,
+   "kind": "page",
+   "pages": 2,
+   "why": []
+  },
+  {
+   "name": "LibraryPage",
+   "file": "apps/web/src/components/LibraryPage.tsx",
+   "status": "ours",
+   "grade": "ok",
+   "swapTo": null,
+   "kind": "page",
+   "pages": 1,
+   "why": []
+  },
+  {
+   "name": "LibrarySpace",
+   "file": "apps/web/src/components/LibrarySpace.tsx",
+   "status": "ours",
+   "grade": "good",
+   "swapTo": null,
+   "kind": "page",
+   "pages": 0,
+   "why": [
+    "iterated 3 days, kept"
+   ]
+  },
+  {
+   "name": "LifeSpace",
+   "file": "apps/web/src/components/LifeSpace.tsx",
+   "status": "ours",
+   "grade": "ok",
+   "swapTo": null,
+   "kind": "page",
+   "pages": 0,
+   "why": []
+  },
+  {
+   "name": "MachineGlyph",
+   "file": "apps/web/src/components/MachineGlyph.tsx",
+   "status": "ours",
+   "grade": "ok",
+   "swapTo": null,
+   "kind": "domain",
+   "pages": 2,
+   "why": []
+  },
+  {
+   "name": "MicButton",
+   "file": "apps/web/src/components/MicButton.tsx",
+   "status": "ours",
+   "grade": "good",
+   "swapTo": null,
+   "kind": "pattern",
+   "pages": 7,
+   "why": [
+    "iterated 4 days, kept"
+   ]
+  },
+  {
+   "name": "MiniLanes",
+   "file": "apps/web/src/components/MiniLanes.tsx",
+   "status": "ours",
+   "grade": "ok",
+   "swapTo": null,
+   "kind": "domain",
+   "pages": 1,
+   "why": []
+  },
+  {
+   "name": "ModelMenu",
+   "file": "apps/web/src/components/ModelMenu.tsx",
+   "status": "ours",
+   "grade": "good",
+   "swapTo": null,
+   "kind": "pattern",
+   "pages": 1,
+   "why": [
+    "iterated 4 days, kept"
+   ]
+  },
+  {
+   "name": "MoveMenu",
+   "file": "apps/web/src/components/MoveMenu.tsx",
+   "status": "ours",
+   "grade": "ok",
+   "swapTo": null,
+   "kind": "pattern",
+   "pages": 1,
+   "why": []
+  },
+  {
+   "name": "NotificationsBell",
+   "file": "apps/web/src/components/NotificationsBell.tsx",
+   "status": "needs-pick",
+   "grade": "ok",
+   "swapTo": "arc:notification-center",
+   "kind": "pattern",
+   "pages": 0,
+   "why": []
+  },
+  {
+   "name": "OrgChart",
+   "file": "apps/web/src/components/OrgChart.tsx",
+   "status": "ours",
+   "grade": "ok",
+   "swapTo": null,
+   "kind": "domain",
+   "pages": 0,
+   "why": []
+  },
+  {
+   "name": "OrgPage",
+   "file": "apps/web/src/components/OrgPage.tsx",
+   "status": "ours",
+   "grade": "good",
+   "swapTo": null,
+   "kind": "page",
+   "pages": 0,
+   "why": [
+    "iterated 4 days, kept"
+   ]
+  },
+  {
+   "name": "OrgTour",
+   "file": "apps/web/src/components/OrgTour.tsx",
+   "status": "ours",
+   "grade": "ok",
+   "swapTo": null,
+   "kind": "domain",
+   "pages": 0,
+   "why": []
+  },
+  {
+   "name": "OutputInspectDock",
+   "file": "apps/web/src/components/OutputInspectDock.tsx",
+   "status": "ours",
+   "grade": "ok",
+   "swapTo": null,
+   "kind": "pattern",
+   "pages": 5,
+   "why": []
+  },
+  {
+   "name": "OwnerBoard",
+   "file": "apps/web/src/components/OwnerBoard.tsx",
+   "status": "ours",
+   "grade": "ok",
+   "swapTo": null,
+   "kind": "domain",
+   "pages": 2,
+   "why": [
+    "- 3 emoji"
+   ]
+  },
+  {
+   "name": "OwnerLinkToast",
+   "file": "apps/web/src/components/OwnerLinkToast.tsx",
+   "status": "needs-pick",
+   "grade": "ok",
+   "swapTo": "arc:toast",
+   "kind": "pattern",
+   "pages": 1,
+   "why": []
+  },
+  {
+   "name": "OwnerSpaceWork",
+   "file": "apps/web/src/components/OwnerSpaceWork.tsx",
+   "status": "ours",
+   "grade": "ok",
+   "swapTo": null,
+   "kind": "domain",
+   "pages": 2,
+   "why": []
+  },
+  {
+   "name": "OwnerTasks",
+   "file": "apps/web/src/components/OwnerTasks.tsx",
+   "status": "ours",
+   "grade": "ok",
+   "swapTo": null,
+   "kind": "domain",
+   "pages": 1,
+   "why": []
+  },
+  {
+   "name": "OwnerTasksPanel",
+   "file": "apps/web/src/components/OwnerTasksPanel.tsx",
+   "status": "ours",
+   "grade": "ok",
+   "swapTo": null,
+   "kind": "domain",
+   "pages": 1,
+   "why": [
+    "iterated 5 days, kept",
+    "- 2 emoji"
+   ]
+  },
+  {
+   "name": "PagePop",
+   "file": "apps/web/src/components/PagePop.tsx",
+   "status": "ours",
+   "grade": "ok",
+   "swapTo": null,
+   "kind": "domain",
+   "pages": 0,
+   "why": []
+  },
+  {
+   "name": "PageRow",
+   "file": "apps/web/src/components/PageRow.tsx",
+   "status": "dead",
+   "grade": "dead",
+   "swapTo": null,
+   "kind": "domain",
+   "pages": 0,
+   "why": [
+    "no page reaches it"
+   ]
+  },
+  {
+   "name": "PanelFold",
+   "file": "apps/web/src/components/PanelFold.tsx",
+   "status": "ours",
+   "grade": "good",
+   "swapTo": null,
+   "kind": "domain",
+   "pages": 1,
+   "why": [
+    "iterated 3 days, kept"
+   ]
+  },
+  {
+   "name": "PingStrip",
+   "file": "apps/web/src/components/PingStrip.tsx",
+   "status": "ours",
+   "grade": "weak",
+   "swapTo": null,
+   "kind": "domain",
+   "pages": 0,
+   "why": [
+    "- 6 emoji",
+    "- 1 clickable div"
+   ]
+  },
+  {
+   "name": "PinnedProjectCard",
+   "file": "apps/web/src/components/PinnedProjectCard.tsx",
+   "status": "dead",
+   "grade": "dead",
+   "swapTo": null,
+   "kind": "domain",
+   "pages": 0,
+   "why": [
+    "no page reaches it"
+   ]
+  },
+  {
+   "name": "PointAndSay",
+   "file": "apps/web/src/components/PointAndSay.tsx",
+   "status": "ours",
+   "grade": "ok",
+   "swapTo": null,
+   "kind": "domain",
+   "pages": 0,
+   "why": []
+  },
+  {
+   "name": "ProductMap",
+   "file": "apps/web/src/components/ProductMap.tsx",
+   "status": "ours",
+   "grade": "weak",
+   "swapTo": null,
+   "kind": "domain",
+   "pages": 0,
+   "why": [
+    "- 1 emoji",
+    "- 1 clickable div"
+   ]
+  },
+  {
+   "name": "ProductMapManual",
+   "file": "apps/web/src/components/ProductMapManual.tsx",
+   "status": "ours",
+   "grade": "ok",
+   "swapTo": null,
+   "kind": "domain",
+   "pages": 0,
+   "why": []
+  },
+  {
+   "name": "ProjectCrew",
+   "file": "apps/web/src/components/ProjectCrew.tsx",
+   "status": "ours",
+   "grade": "ok",
+   "swapTo": null,
+   "kind": "domain",
+   "pages": 0,
+   "why": []
+  },
+  {
+   "name": "ProjectDashboard",
+   "file": "apps/web/src/components/ProjectDashboard.tsx",
+   "status": "ours",
+   "grade": "ok",
+   "swapTo": null,
+   "kind": "domain",
+   "pages": 0,
+   "why": []
+  },
+  {
+   "name": "ProjectMark",
+   "file": "apps/web/src/components/ProjectMark.tsx",
+   "status": "ours",
+   "grade": "ok",
+   "swapTo": null,
+   "kind": "domain",
+   "pages": 2,
+   "why": []
+  },
+  {
+   "name": "ProjectSpace",
+   "file": "apps/web/src/components/ProjectSpace.tsx",
+   "status": "ours",
+   "grade": "weak",
+   "swapTo": null,
+   "kind": "page",
+   "pages": 0,
+   "why": [
+    "- 2 emoji",
+    "- 1 clickable div"
+   ]
+  },
+  {
+   "name": "PromptLibrary",
+   "file": "apps/web/src/components/PromptLibrary.tsx",
+   "status": "ours",
+   "grade": "ok",
+   "swapTo": null,
+   "kind": "domain",
+   "pages": 5,
+   "why": []
+  },
+  {
+   "name": "ProviderUsageMeters",
+   "file": "apps/web/src/components/ProviderUsageMeters.tsx",
+   "status": "ours",
+   "grade": "ok",
+   "swapTo": null,
+   "kind": "domain",
+   "pages": 1,
+   "why": []
+  },
+  {
+   "name": "QuestionCard",
+   "file": "apps/web/src/components/QuestionCard.tsx",
+   "status": "ours",
+   "grade": "ok",
+   "swapTo": null,
+   "kind": "domain",
+   "pages": 6,
+   "why": []
+  },
+  {
+   "name": "QuestionRecoveryHistory",
+   "file": "apps/web/src/components/QuestionRecoveryHistory.tsx",
+   "status": "ours",
+   "grade": "ok",
+   "swapTo": null,
+   "kind": "domain",
+   "pages": 6,
+   "why": []
+  },
+  {
+   "name": "QueuedPrompts",
+   "file": "apps/web/src/components/QueuedPrompts.tsx",
+   "status": "ours",
+   "grade": "ok",
+   "swapTo": null,
+   "kind": "domain",
+   "pages": 5,
+   "why": []
+  },
+  {
+   "name": "RecentOutput",
+   "file": "apps/web/src/components/RecentOutput.tsx",
+   "status": "ours",
+   "grade": "ok",
+   "swapTo": null,
+   "kind": "domain",
+   "pages": 0,
+   "why": []
+  },
+  {
+   "name": "RecordedSessionReplay",
+   "file": "apps/web/src/components/RecordedSessionReplay.tsx",
+   "status": "ours",
+   "grade": "ok",
+   "swapTo": null,
+   "kind": "domain",
+   "pages": 5,
+   "why": []
+  },
+  {
+   "name": "RemoteInventory",
+   "file": "apps/web/src/components/RemoteInventory.tsx",
+   "status": "ours",
+   "grade": "ok",
+   "swapTo": null,
+   "kind": "domain",
+   "pages": 0,
+   "why": []
+  },
+  {
+   "name": "RemoteInventoryNavigation",
+   "file": "apps/web/src/components/RemoteInventoryNavigation.tsx",
+   "status": "dead",
+   "grade": "dead",
+   "swapTo": null,
+   "kind": "domain",
+   "pages": 0,
+   "why": [
+    "no page reaches it"
+   ]
+  },
+  {
+   "name": "ResearchPage",
+   "file": "apps/web/src/components/ResearchPage.tsx",
+   "status": "ours",
+   "grade": "ok",
+   "swapTo": null,
+   "kind": "page",
+   "pages": 0,
+   "why": []
+  },
+  {
+   "name": "RolodexCard",
+   "file": "apps/web/src/components/RolodexCard.tsx",
+   "status": "ours",
+   "grade": "ok",
+   "swapTo": null,
+   "kind": "domain",
+   "pages": 1,
+   "why": []
+  },
+  {
+   "name": "RolodexImport",
+   "file": "apps/web/src/components/RolodexImport.tsx",
+   "status": "ours",
+   "grade": "ok",
+   "swapTo": null,
+   "kind": "domain",
+   "pages": 1,
+   "why": []
+  },
+  {
+   "name": "RolodexList",
+   "file": "apps/web/src/components/RolodexList.tsx",
+   "status": "ours",
+   "grade": "weak",
+   "swapTo": null,
+   "kind": "domain",
+   "pages": 1,
+   "why": [
+    "- 1 clickable div"
+   ]
+  },
+  {
+   "name": "RolodexSpace",
+   "file": "apps/web/src/components/RolodexSpace.tsx",
+   "status": "ours",
+   "grade": "ok",
+   "swapTo": null,
+   "kind": "page",
+   "pages": 0,
+   "why": []
+  },
+  {
+   "name": "SayNew",
+   "file": "apps/web/src/components/SayNew.tsx",
+   "status": "ours",
+   "grade": "ok",
+   "swapTo": null,
+   "kind": "domain",
+   "pages": 2,
+   "why": []
+  },
+  {
+   "name": "Scratchpad",
+   "file": "apps/web/src/components/Scratchpad.tsx",
+   "status": "ours",
+   "grade": "good",
+   "swapTo": null,
+   "kind": "domain",
+   "pages": 0,
+   "why": [
+    "iterated 4 days, kept"
+   ]
+  },
+  {
+   "name": "ServersSpace",
+   "file": "apps/web/src/components/ServersSpace.tsx",
+   "status": "ours",
+   "grade": "ok",
+   "swapTo": null,
+   "kind": "page",
+   "pages": 1,
+   "why": []
+  },
+  {
+   "name": "SessionReplay",
+   "file": "apps/web/src/components/SessionReplay.tsx",
+   "status": "ours",
+   "grade": "ok",
+   "swapTo": null,
+   "kind": "domain",
+   "pages": 5,
+   "why": []
+  },
+  {
+   "name": "Sidebar",
+   "file": "apps/web/src/components/Sidebar.tsx",
+   "status": "ours",
+   "grade": "ok",
+   "swapTo": null,
+   "kind": "domain",
+   "pages": 2,
+   "why": [
+    "iterated 5 days, kept",
+    "- 1 clickable div"
+   ]
+  },
+  {
+   "name": "SpeakToggle",
+   "file": "apps/web/src/components/SpeakToggle.tsx",
+   "status": "needs-pick",
+   "grade": "ok",
+   "swapTo": "arc:switch",
+   "kind": "pattern",
+   "pages": 7,
+   "why": []
+  },
+  {
+   "name": "SpendChip",
+   "file": "apps/web/src/components/SpendChip.tsx",
+   "status": "ours",
+   "grade": "good",
+   "swapTo": null,
+   "kind": "pattern",
+   "pages": 0,
+   "why": [
+    "iterated 3 days, kept"
+   ]
+  },
+  {
+   "name": "SpendPanel",
+   "file": "apps/web/src/components/SpendPanel.tsx",
+   "status": "ours",
+   "grade": "good",
+   "swapTo": null,
+   "kind": "domain",
+   "pages": 1,
+   "why": [
+    "iterated 3 days, kept"
+   ]
+  },
+  {
+   "name": "StatsBars",
+   "file": "apps/web/src/components/StatsBars.tsx",
+   "status": "needs-pick",
+   "grade": "ok",
+   "swapTo": "arc:metric-card",
+   "kind": "pattern",
+   "pages": 2,
+   "why": []
+  },
+  {
+   "name": "StatsPage",
+   "file": "apps/web/src/components/StatsPage.tsx",
+   "status": "ours",
+   "grade": null,
+   "swapTo": null,
+   "kind": "barrel",
+   "pages": 0,
+   "why": []
+  },
+  {
+   "name": "SubagentRow",
+   "file": "apps/web/src/components/SubagentRow.tsx",
+   "status": "ours",
+   "grade": "good",
+   "swapTo": null,
+   "kind": "domain",
+   "pages": 7,
+   "why": [
+    "iterated 3 days, kept"
+   ]
+  },
+  {
+   "name": "SubagentsPopover",
+   "file": "apps/web/src/components/SubagentsPopover.tsx",
+   "status": "needs-pick",
+   "grade": "ok",
+   "swapTo": "arc:popover",
+   "kind": "pattern",
+   "pages": 1,
+   "why": [
+    "iterated 4 days, kept",
+    "- 1 emoji"
+   ]
+  },
+  {
+   "name": "TalkOrb",
+   "file": "apps/web/src/components/TalkOrb.tsx",
+   "status": "ours",
+   "grade": "weak",
+   "swapTo": null,
+   "kind": "domain",
+   "pages": 7,
+   "why": [
+    "- 25 hard-coded colours"
+   ]
+  },
+  {
+   "name": "TaskActions",
+   "file": "apps/web/src/components/TaskActions.tsx",
+   "status": "ours",
+   "grade": "ok",
+   "swapTo": null,
+   "kind": "domain",
+   "pages": 6,
+   "why": []
+  },
+  {
+   "name": "TaskFold",
+   "file": "apps/web/src/components/TaskFold.tsx",
+   "status": "ours",
+   "grade": "ok",
+   "swapTo": null,
+   "kind": "domain",
+   "pages": 6,
+   "why": []
+  },
+  {
+   "name": "TaskWorkspaceDeck",
+   "file": "apps/web/src/components/TaskWorkspaceDeck.tsx",
+   "status": "ours",
+   "grade": "ok",
+   "swapTo": null,
+   "kind": "domain",
+   "pages": 2,
+   "why": []
+  },
+  {
+   "name": "TaskWorkspaceGroups",
+   "file": "apps/web/src/components/TaskWorkspaceGroups.tsx",
+   "status": "ours",
+   "grade": "ok",
+   "swapTo": null,
+   "kind": "domain",
+   "pages": 2,
+   "why": []
+  },
+  {
+   "name": "TasksPage",
+   "file": "apps/web/src/components/TasksPage.tsx",
+   "status": "ours",
+   "grade": "good",
+   "swapTo": null,
+   "kind": "page",
+   "pages": 1,
+   "why": [
+    "iterated 5 days, kept"
+   ]
+  },
+  {
+   "name": "TeamList",
+   "file": "apps/web/src/components/TeamList.tsx",
+   "status": "dead",
+   "grade": "dead",
+   "swapTo": null,
+   "kind": "domain",
+   "pages": 0,
+   "why": [
+    "no page reaches it"
+   ]
+  },
+  {
+   "name": "TerminalLoadBoundary",
+   "file": "apps/web/src/components/TerminalLoadBoundary.tsx",
+   "status": "ours",
+   "grade": "ok",
+   "swapTo": null,
+   "kind": "domain",
+   "pages": 0,
+   "why": []
+  },
+  {
+   "name": "Timeline",
+   "file": "apps/web/src/components/Timeline.tsx",
+   "status": "needs-pick",
+   "grade": "good",
+   "swapTo": "arc:timeline",
+   "kind": "pattern",
+   "pages": 1,
+   "why": [
+    "iterated 5 days, kept"
+   ]
+  },
+  {
+   "name": "TodaySpendDial",
+   "file": "apps/web/src/components/TodaySpendDial.tsx",
+   "status": "ours",
+   "grade": "weak",
+   "swapTo": null,
+   "kind": "domain",
+   "pages": 0,
+   "why": [
+    "- 11 hard-coded colours"
+   ]
+  },
+  {
+   "name": "TokensSpace",
+   "file": "apps/web/src/components/TokensSpace.tsx",
+   "status": "ours",
+   "grade": "ok",
+   "swapTo": null,
+   "kind": "page",
+   "pages": 0,
+   "why": [
+    "- 67 hard-coded colours"
+   ]
+  },
+  {
+   "name": "TopNav",
+   "file": "apps/web/src/components/TopNav.tsx",
+   "status": "ours",
+   "grade": "ok",
+   "swapTo": null,
+   "kind": "domain",
+   "pages": 0,
+   "why": []
+  },
+  {
+   "name": "TurnDivider",
+   "file": "apps/web/src/components/TurnDivider.tsx",
+   "status": "ours",
+   "grade": "ok",
+   "swapTo": null,
+   "kind": "domain",
+   "pages": 5,
+   "why": []
+  },
+  {
+   "name": "UpdateToast",
+   "file": "apps/web/src/components/UpdateToast.tsx",
+   "status": "needs-pick",
+   "grade": "weak",
+   "swapTo": "arc:toast",
+   "kind": "pattern",
+   "pages": 0,
+   "why": [
+    "- 2 emoji",
+    "- 2 clickable div"
+   ]
+  },
+  {
+   "name": "VersionPulse",
+   "file": "apps/web/src/components/VersionPulse.tsx",
+   "status": "ours",
+   "grade": "weak",
+   "swapTo": null,
+   "kind": "pattern",
+   "pages": 0,
+   "why": [
+    "- 11 hard-coded colours"
+   ]
+  },
+  {
+   "name": "VoiceSpace",
+   "file": "apps/web/src/components/VoiceSpace.tsx",
+   "status": "ours",
+   "grade": "ok",
+   "swapTo": null,
+   "kind": "page",
+   "pages": 0,
+   "why": []
+  },
+  {
+   "name": "WhatsAppSpace",
+   "file": "apps/web/src/components/WhatsAppSpace.tsx",
+   "status": "ours",
+   "grade": "ok",
+   "swapTo": null,
+   "kind": "page",
+   "pages": 0,
+   "why": [
+    "- 1 clickable div"
+   ]
+  },
+  {
+   "name": "WhatsNew",
+   "file": "apps/web/src/components/WhatsNew.tsx",
+   "status": "ours",
+   "grade": "ok",
+   "swapTo": null,
+   "kind": "domain",
+   "pages": 0,
+   "why": []
+  },
+  {
+   "name": "WorkerFold",
+   "file": "apps/web/src/components/WorkerFold.tsx",
+   "status": "ours",
+   "grade": "ok",
+   "swapTo": null,
+   "kind": "domain",
+   "pages": 2,
+   "why": []
+  },
+  {
+   "name": "WorkspaceArrival",
+   "file": "apps/web/src/components/WorkspaceArrival.tsx",
+   "status": "ours",
+   "grade": "ok",
+   "swapTo": null,
+   "kind": "domain",
+   "pages": 0,
+   "why": []
+  },
+  {
+   "name": "WorkspaceChoices",
+   "file": "apps/web/src/components/WorkspaceChoices.tsx",
+   "status": "ours",
+   "grade": "ok",
+   "swapTo": null,
+   "kind": "domain",
+   "pages": 2,
+   "why": []
+  },
+  {
+   "name": "WorkspaceCommandPalette",
+   "file": "apps/web/src/components/WorkspaceCommandPalette.tsx",
+   "status": "needs-pick",
+   "grade": "ok",
+   "swapTo": "arc:command-palette",
+   "kind": "pattern",
+   "pages": 0,
+   "why": []
+  },
+  {
+   "name": "WorktreeSetupCard",
+   "file": "apps/web/src/components/WorktreeSetupCard.tsx",
+   "status": "ours",
+   "grade": "ok",
+   "swapTo": null,
+   "kind": "domain",
+   "pages": 1,
+   "why": []
+  },
+  {
+   "name": "ZeroDock",
+   "file": "apps/web/src/components/ZeroDock.tsx",
+   "status": "ours",
+   "grade": "ok",
+   "swapTo": null,
+   "kind": "pattern",
+   "pages": 0,
+   "why": []
+  },
+  {
+   "name": "ZeroFace",
+   "file": "apps/web/src/components/ZeroFace.tsx",
+   "status": "needs-pick",
+   "grade": "ok",
+   "swapTo": "arc:avatar",
+   "kind": "pattern",
+   "pages": 0,
+   "why": []
+  },
+  {
+   "name": "ZeroOrbit",
+   "file": "apps/web/src/components/ZeroOrbit.tsx",
+   "status": "ours",
+   "grade": "good",
+   "swapTo": null,
+   "kind": "domain",
+   "pages": 0,
+   "why": [
+    "iterated 3 days, kept"
+   ]
+  },
+  {
+   "name": "ZeroSwitcher",
+   "file": "apps/web/src/components/ZeroSwitcher.tsx",
+   "status": "dead",
+   "grade": "dead",
+   "swapTo": null,
+   "kind": "domain",
+   "pages": 0,
+   "why": [
+    "no page reaches it"
+   ]
+  },
+  {
+   "name": "ZeroTabs",
+   "file": "apps/web/src/components/ZeroTabs.tsx",
+   "status": "dead",
+   "grade": "dead",
+   "swapTo": "arc:tabs",
+   "kind": "pattern",
+   "pages": 0,
+   "why": [
+    "no page reaches it"
+   ]
+  },
+  {
+   "name": "ZeroVoice",
+   "file": "apps/web/src/components/ZeroVoice.tsx",
+   "status": "dead",
+   "grade": "dead",
+   "swapTo": null,
+   "kind": "domain",
+   "pages": 0,
+   "why": [
+    "no page reaches it"
+   ]
+  },
+  {
+   "name": "AccountsHub",
+   "file": "apps/web/src/components/browser/AccountsHub.tsx",
+   "status": "ours",
+   "grade": "ok",
+   "swapTo": null,
+   "kind": "domain",
+   "pages": 0,
+   "why": []
+  },
+  {
+   "name": "CommandBar",
+   "file": "apps/web/src/components/browser/CommandBar.tsx",
+   "status": "needs-pick",
+   "grade": "ok",
+   "swapTo": "arc:command-palette",
+   "kind": "pattern",
+   "pages": 0,
+   "why": []
+  },
+  {
+   "name": "DownloadToast",
+   "file": "apps/web/src/components/browser/DownloadToast.tsx",
+   "status": "needs-pick",
+   "grade": "ok",
+   "swapTo": "arc:toast",
+   "kind": "pattern",
+   "pages": 0,
+   "why": []
+  },
+  {
+   "name": "ErrorPage",
+   "file": "apps/web/src/components/browser/ErrorPage.tsx",
+   "status": "ours",
+   "grade": "ok",
+   "swapTo": null,
+   "kind": "page",
+   "pages": 0,
+   "why": []
+  },
+  {
+   "name": "MiniPlayer",
+   "file": "apps/web/src/components/browser/MiniPlayer.tsx",
+   "status": "ours",
+   "grade": "ok",
+   "swapTo": null,
+   "kind": "domain",
+   "pages": 0,
+   "why": []
+  },
+  {
+   "name": "SavedFolders",
+   "file": "apps/web/src/components/browser/SavedFolders.tsx",
+   "status": "ours",
+   "grade": "ok",
+   "swapTo": null,
+   "kind": "domain",
+   "pages": 0,
+   "why": []
+  },
+  {
+   "name": "SetupSheet",
+   "file": "apps/web/src/components/browser/SetupSheet.tsx",
+   "status": "needs-pick",
+   "grade": "ok",
+   "swapTo": "arc:drawer",
+   "kind": "pattern",
+   "pages": 0,
+   "why": [
+    "- 1 clickable div"
+   ]
+  },
+  {
+   "name": "SignInSheet",
+   "file": "apps/web/src/components/browser/SignInSheet.tsx",
+   "status": "needs-pick",
+   "grade": "ok",
+   "swapTo": "arc:drawer",
+   "kind": "pattern",
+   "pages": 0,
+   "why": []
+  },
+  {
+   "name": "SpaceMenu",
+   "file": "apps/web/src/components/browser/SpaceMenu.tsx",
+   "status": "ours",
+   "grade": "ok",
+   "swapTo": null,
+   "kind": "pattern",
+   "pages": 0,
+   "why": []
+  },
+  {
+   "name": "StatusLines",
+   "file": "apps/web/src/components/browser/StatusLines.tsx",
+   "status": "ours",
+   "grade": "ok",
+   "swapTo": null,
+   "kind": "pattern",
+   "pages": 0,
+   "why": []
+  },
+  {
+   "name": "Figures",
+   "file": "apps/web/src/components/page/Figures.tsx",
+   "status": "needs-pick",
+   "grade": "ok",
+   "swapTo": "arc:metric-card",
+   "kind": "pattern",
+   "pages": 6,
+   "why": []
+  },
+  {
+   "name": "HubPage",
+   "file": "apps/web/src/components/page/HubPage.tsx",
+   "status": "ours",
+   "grade": "ok",
+   "swapTo": null,
+   "kind": "page",
+   "pages": 7,
+   "why": []
+  },
+  {
+   "name": "A0Board",
+   "file": "apps/web/src/components/panel/A0Board.tsx",
+   "status": "ours",
+   "grade": "ok",
+   "swapTo": null,
+   "kind": "domain",
+   "pages": 1,
+   "why": []
+  },
+  {
+   "name": "A0Now",
+   "file": "apps/web/src/components/panel/A0Now.tsx",
+   "status": "dead",
+   "grade": "dead",
+   "swapTo": null,
+   "kind": "domain",
+   "pages": 0,
+   "why": [
+    "no page reaches it"
+   ]
+  },
+  {
+   "name": "AgentOverview",
+   "file": "apps/web/src/components/panel/AgentOverview.tsx",
+   "status": "ours",
+   "grade": "ok",
+   "swapTo": null,
+   "kind": "domain",
+   "pages": 1,
+   "why": []
+  },
+  {
+   "name": "AgentTeam",
+   "file": "apps/web/src/components/panel/AgentTeam.tsx",
+   "status": "needs-pick",
+   "grade": "ok",
+   "swapTo": "arc:avatar",
+   "kind": "pattern",
+   "pages": 1,
+   "why": []
+  },
+  {
+   "name": "LandedRows",
+   "file": "apps/web/src/components/panel/LandedRows.tsx",
+   "status": "ours",
+   "grade": "ok",
+   "swapTo": null,
+   "kind": "domain",
+   "pages": 5,
+   "why": []
+  },
+  {
+   "name": "OrgCard",
+   "file": "apps/web/src/components/panel/OrgCard.tsx",
+   "status": "dead",
+   "grade": "dead",
+   "swapTo": null,
+   "kind": "domain",
+   "pages": 0,
+   "why": [
+    "no page reaches it"
+   ]
+  },
+  {
+   "name": "OwnerRoster",
+   "file": "apps/web/src/components/panel/OwnerRoster.tsx",
+   "status": "ours",
+   "grade": "ok",
+   "swapTo": null,
+   "kind": "domain",
+   "pages": 1,
+   "why": []
+  },
+  {
+   "name": "PanelTabs",
+   "file": "apps/web/src/components/panel/PanelTabs.tsx",
+   "status": "needs-pick",
+   "grade": "ok",
+   "swapTo": "arc:tabs",
+   "kind": "pattern",
+   "pages": 1,
+   "why": [
+    "iterated 3 days, kept",
+    "- 1 emoji"
+   ]
+  },
+  {
+   "name": "ReviewsHistory",
+   "file": "apps/web/src/components/panel/ReviewsHistory.tsx",
+   "status": "dead",
+   "grade": "dead",
+   "swapTo": null,
+   "kind": "domain",
+   "pages": 0,
+   "why": [
+    "no page reaches it"
+   ]
+  },
+  {
+   "name": "StatsCard",
+   "file": "apps/web/src/components/panel/StatsCard.tsx",
+   "status": "needs-pick",
+   "grade": "ok",
+   "swapTo": "arc:metric-card",
+   "kind": "pattern",
+   "pages": 1,
+   "why": [
+    "- 15 hard-coded colours"
+   ]
+  },
+  {
+   "name": "SubRow",
+   "file": "apps/web/src/components/panel/SubRow.tsx",
+   "status": "ours",
+   "grade": "ok",
+   "swapTo": null,
+   "kind": "domain",
+   "pages": 3,
+   "why": [
+    "- 3 emoji"
+   ]
+  },
+  {
+   "name": "SubagentView",
+   "file": "apps/web/src/components/panel/SubagentView.tsx",
+   "status": "ours",
+   "grade": "ok",
+   "swapTo": null,
+   "kind": "page",
+   "pages": 1,
+   "why": [
+    "- 2 emoji"
+   ]
+  },
+  {
+   "name": "SubagentsPage",
+   "file": "apps/web/src/components/panel/SubagentsPage.tsx",
+   "status": "ours",
+   "grade": "ok",
+   "swapTo": null,
+   "kind": "page",
+   "pages": 0,
+   "why": []
+  },
+  {
+   "name": "TaskProjects",
+   "file": "apps/web/src/components/panel/TaskProjects.tsx",
+   "status": "ours",
+   "grade": "ok",
+   "swapTo": null,
+   "kind": "domain",
+   "pages": 1,
+   "why": []
+  },
+  {
+   "name": "TaskTree",
+   "file": "apps/web/src/components/panel/TaskTree.tsx",
+   "status": "needs-pick",
+   "grade": "ok",
+   "swapTo": "arc:tree-view",
+   "kind": "pattern",
+   "pages": 5,
+   "why": [
+    "iterated 3 days, kept",
+    "- 2 emoji"
+   ]
+  },
+  {
+   "name": "YourAsks",
+   "file": "apps/web/src/components/panel/YourAsks.tsx",
+   "status": "dead",
+   "grade": "dead",
+   "swapTo": null,
+   "kind": "domain",
+   "pages": 0,
+   "why": [
+    "no page reaches it"
+   ]
+  },
+  {
+   "name": "ZeroHome",
+   "file": "apps/web/src/components/panel/ZeroHome.tsx",
+   "status": "ours",
+   "grade": "ok",
+   "swapTo": null,
+   "kind": "domain",
+   "pages": 1,
+   "why": []
+  },
+  {
+   "name": "TasksSheet",
+   "file": "apps/web/src/components/phone/TasksSheet.tsx",
+   "status": "needs-pick",
+   "grade": "ok",
+   "swapTo": "arc:drawer",
+   "kind": "pattern",
+   "pages": 0,
+   "why": []
+  },
+  {
+   "name": "AgentWidgets",
+   "file": "apps/web/src/components/widgets/AgentWidgets.tsx",
+   "status": "ours",
+   "grade": "ok",
+   "swapTo": null,
+   "kind": "domain",
+   "pages": 1,
+   "why": []
+  },
+  {
+   "name": "ListWidget",
+   "file": "apps/web/src/components/widgets/ListWidget.tsx",
+   "status": "ours",
+   "grade": "ok",
+   "swapTo": null,
+   "kind": "domain",
+   "pages": 1,
+   "why": []
+  },
+  {
+   "name": "NeedsWidget",
+   "file": "apps/web/src/components/widgets/NeedsWidget.tsx",
+   "status": "ours",
+   "grade": "ok",
+   "swapTo": null,
+   "kind": "domain",
+   "pages": 2,
+   "why": []
+  },
+  {
+   "name": "ProgressWidget",
+   "file": "apps/web/src/components/widgets/ProgressWidget.tsx",
+   "status": "ours",
+   "grade": "ok",
+   "swapTo": null,
+   "kind": "domain",
+   "pages": 1,
+   "why": []
+  },
+  {
+   "name": "SystemsWidget",
+   "file": "apps/web/src/components/widgets/SystemsWidget.tsx",
+   "status": "ours",
+   "grade": "good",
+   "swapTo": null,
+   "kind": "domain",
+   "pages": 2,
+   "why": [
+    "iterated 3 days, kept"
+   ]
+  },
+  {
+   "name": "TasksWidget",
+   "file": "apps/web/src/components/widgets/TasksWidget.tsx",
+   "status": "ours",
+   "grade": "good",
+   "swapTo": null,
+   "kind": "domain",
+   "pages": 2,
+   "why": [
+    "iterated 5 days, kept"
+   ]
+  },
+  {
+   "name": "TeamWidget",
+   "file": "apps/web/src/components/widgets/TeamWidget.tsx",
+   "status": "needs-pick",
+   "grade": "ok",
+   "swapTo": "arc:avatar",
+   "kind": "pattern",
+   "pages": 2,
+   "why": []
+  },
+  {
+   "name": "UnknownWidget",
+   "file": "apps/web/src/components/widgets/UnknownWidget.tsx",
+   "status": "ours",
+   "grade": "ok",
+   "swapTo": null,
+   "kind": "domain",
+   "pages": 1,
+   "why": []
+  },
+  {
+   "name": "WidgetCard",
+   "file": "apps/web/src/components/widgets/WidgetCard.tsx",
+   "status": "ours",
+   "grade": "ok",
+   "swapTo": null,
+   "kind": "domain",
+   "pages": 4,
+   "why": []
+  },
+  {
+   "name": "Icon",
+   "file": "apps/web/src/lib/Icon.tsx",
+   "status": "ours",
+   "grade": "ok",
+   "swapTo": null,
+   "kind": "domain",
+   "pages": 6,
+   "why": []
+  },
+  {
+   "name": "provider-usage",
+   "file": "apps/web/src/lib/provider-usage.tsx",
+   "status": "ours",
+   "grade": "ok",
+   "swapTo": null,
+   "kind": "domain",
+   "pages": 1,
+   "why": []
+  },
+  {
+   "name": "main",
+   "file": "apps/web/src/main.tsx",
+   "status": "ours",
+   "grade": null,
+   "swapTo": null,
+   "kind": "root",
+   "pages": 0,
+   "why": []
+  }
+ ]
+}

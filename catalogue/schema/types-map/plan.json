@@ -1,0 +1,4329 @@
+{
+ "themes/style": {
+  "plain": "standard style",
+  "types": {
+   "style kit": [
+    "style kit"
+   ],
+   "colour palette": [
+    "colour palette"
+   ],
+   "utility classes": [
+    "utility classes"
+   ],
+   "motion": [
+    "animation or motion"
+   ],
+   "design tokens": [
+    "design tokens"
+   ],
+   "example": [
+    "styled example"
+   ],
+   "base components": [
+    "base components"
+   ],
+   "theme variant": [
+    "theme variant"
+   ],
+   "component styling": [
+    "component styling"
+   ],
+   "icon or logo tokens": [
+    "icon or logo tokens"
+   ],
+   "standard style": []
+  }
+ },
+ "data-display/accordion": {
+  "plain": "standard accordion",
+  "types": {
+   "standard accordion": [
+    "basic accordion",
+    "animated accordion",
+    "basic",
+    "animated",
+    "glass style",
+    "brutalist accordion"
+   ],
+   "collapsible": [
+    "collapsible",
+    "animated collapsible",
+    "basic collapsible",
+    "glass collapsible"
+   ],
+   "faq accordion": [
+    "faq accordion",
+    "faq style"
+   ],
+   "nested": [
+    "nested accordion",
+    "nested"
+   ],
+   "card style": [
+    "card accordion",
+    "card style"
+   ],
+   "product/ecommerce accordion": [
+    "product/ecommerce accordion"
+   ],
+   "icons": [
+    "with icons",
+    "icon accordion",
+    "icon variant"
+   ],
+   "disclosure": [
+    "disclosure"
+   ],
+   "feature disclosure": [
+    "feature disclosure"
+   ]
+  }
+ },
+ "media/gallery": {
+  "plain": "standard gallery",
+  "types": {
+   "reveal": [
+    "hover reveal",
+    "reveal",
+    "reveal effect"
+   ],
+   "grid": [
+    "grid"
+   ],
+   "circular": [
+    "3d or circular"
+   ],
+   "carousel": [
+    "carousel",
+    "carousel gallery",
+    "3d carousel"
+   ],
+   "masonry": [
+    "masonry",
+    "masonry gallery"
+   ],
+   "zoom and lens": [
+    "zoom and lens",
+    "zoom/lens"
+   ],
+   "image effects": [
+    "image effects",
+    "simple image"
+   ],
+   "lightbox": [
+    "lightbox"
+   ],
+   "editorial": [
+    "editorial"
+   ],
+   "image display": [
+    "image display"
+   ],
+   "viewer": [
+    "viewer",
+    "3d viewer"
+   ],
+   "standard gallery": [
+    "hover effect",
+    "animation effects",
+    "3d gallery",
+    "3d effect",
+    "animated or custom"
+   ],
+   "image crop": [
+    "image crop"
+   ],
+   "viewers and croppers": [
+    "viewers and croppers"
+   ],
+   "distortion effect": [
+    "distortion effect"
+   ],
+   "gallery section": [
+    "gallery section"
+   ]
+  }
+ },
+ "navigation/dock": {
+  "plain": "standard dock",
+  "types": {
+   "action toolbar": [
+    "action toolbar"
+   ],
+   "macos magnifying": [
+    "macos magnifying"
+   ],
+   "standard dock": [
+    "glass style",
+    "magnetic effects",
+    "magnetic dock",
+    "glass dock"
+   ],
+   "app launcher": [
+    "app launcher"
+   ],
+   "floating nav pill": [
+    "floating nav pill"
+   ],
+   "expandable": [
+    "expandable dock",
+    "expandable"
+   ],
+   "macos-style dock": [
+    "macos-style dock"
+   ]
+  }
+ },
+ "data-display/timeline": {
+  "plain": "standard timeline",
+  "types": {
+   "activity": [
+    "activity"
+   ],
+   "vertical": [
+    "vertical",
+    "vertical timeline"
+   ],
+   "horizontal": [
+    "horizontal",
+    "horizontal timeline"
+   ],
+   "standard timeline": [
+    "basic",
+    "timeline",
+    "styled timeline",
+    "simple timeline"
+   ],
+   "steps": [
+    "steps"
+   ],
+   "activity feed": [
+    "activity feed"
+   ],
+   "changelog": [
+    "changelog",
+    "changelog timeline"
+   ],
+   "gantt": [
+    "gantt"
+   ]
+  }
+ },
+ "flows/settings": {
+  "plain": "standard setting",
+  "types": {
+   "preferences dialog": [
+    "preferences dialog"
+   ],
+   "tabbed sections": [
+    "tabbed sections"
+   ],
+   "profile form": [
+    "profile form"
+   ],
+   "sidebar layout": [
+    "sidebar layout"
+   ],
+   "settings form": [
+    "settings form",
+    "form"
+   ],
+   "notification preferences": [
+    "notification preferences"
+   ],
+   "security settings": [
+    "security settings"
+   ],
+   "workspace preferences": [
+    "workspace preferences"
+   ],
+   "whole form": [
+    "whole form"
+   ],
+   "settings page": [
+    "settings page"
+   ],
+   "standard setting": [
+    "settings"
+   ],
+   "settings block or card": [
+    "settings block or card"
+   ]
+  }
+ },
+ "ai-agent/ai-agent": {
+  "plain": "standard ai agent",
+  "types": {
+   "full chat app": [
+    "full chat app",
+    "full chat apps"
+   ],
+   "standard ai agent": [
+    "agent status"
+   ],
+   "message bubble": [
+    "message bubble"
+   ],
+   "chat thread": [
+    "chat thread"
+   ],
+   "voice or orb": [
+    "voice or orb"
+   ],
+   "composer": [
+    "composer"
+   ],
+   "tool call or steps": [
+    "tool call or steps"
+   ],
+   "sources": [
+    "sources"
+   ],
+   "reasoning": [
+    "reasoning"
+   ],
+   "streaming text": [
+    "streaming text"
+   ],
+   "model picker": [
+    "model picker"
+   ],
+   "artifact": [
+    "artifact"
+   ],
+   "suggestions": [
+    "suggestions"
+   ],
+   "orbs and presence": [
+    "orbs and presence"
+   ],
+   "reasoning and tools": [
+    "reasoning and tools"
+   ]
+  }
+ },
+ "overlays/alert-banner": {
+  "plain": "standard alert banner",
+  "types": {
+   "standard alert banner": [
+    "basic alert",
+    "alert variant",
+    "styled alert",
+    "banner variant",
+    "solid alert",
+    "status banner",
+    "brutalist alert",
+    "state alert",
+    "status alert",
+    "basic banner",
+    "gradient banner",
+    "banner",
+    "glass alert"
+   ],
+   "cookie consent": [
+    "cookie consent banner",
+    "cookie consent"
+   ],
+   "inline alert": [
+    "inline alert"
+   ],
+   "top banner": [
+    "top banner"
+   ],
+   "composed alert": [
+    "composed alert",
+    "composed banner"
+   ],
+   "dismissible alert": [
+    "dismissible alert",
+    "dismissible banner"
+   ],
+   "callout": [
+    "callout",
+    "status callout"
+   ],
+   "announcement": [
+    "announcement",
+    "announcement banner"
+   ],
+   "floating card": [
+    "floating card"
+   ]
+  }
+ },
+ "overlays/dialog": {
+  "plain": "standard dialog",
+  "types": {
+   "confirm": [
+    "confirm"
+   ],
+   "modal": [
+    "basic modal",
+    "animated modal"
+   ],
+   "form in dialog": [
+    "form in dialog"
+   ],
+   "onboarding": [
+    "onboarding"
+   ],
+   "standard dialog": [
+    "animated",
+    "styled variant",
+    "animation variants"
+   ],
+   "confirm or alert": [
+    "confirm or alert"
+   ]
+  }
+ },
+ "motion/background": {
+  "plain": "standard background",
+  "types": {
+   "grid or dots": [
+    "grid or dots",
+    "grid and dots"
+   ],
+   "scene": [
+    "3d scene"
+   ],
+   "noise or grain": [
+    "noise or grain"
+   ],
+   "landscape or scene": [
+    "landscape or scene"
+   ],
+   "particles or stars": [
+    "particles or stars"
+   ],
+   "waves": [
+    "waves"
+   ],
+   "standard background": [
+    "gradient",
+    "gradient background",
+    "animated background",
+    "animation helper",
+    "neon-glow"
+   ],
+   "text effect": [
+    "text effect",
+    "3d text",
+    "text-effect"
+   ],
+   "beams or lines": [
+    "beams or lines"
+   ],
+   "spotlight": [
+    "spotlight"
+   ],
+   "aurora": [
+    "aurora"
+   ],
+   "shader": [
+    "shader",
+    "gradient shader",
+    "shader effect"
+   ],
+   "blobs": [
+    "blobs"
+   ],
+   "mesh": [
+    "gradient mesh"
+   ],
+   "particle tunnel or field": [
+    "particle tunnel or field"
+   ],
+   "noise field": [
+    "noise field"
+   ],
+   "grid pattern": [
+    "grid pattern"
+   ],
+   "wave or ripple": [
+    "wave or ripple",
+    "wave and ripple effects"
+   ],
+   "mascot or creature": [
+    "mascot or creature"
+   ],
+   "beam or light effect": [
+    "beam or light effect",
+    "beams or light",
+    "light and beams"
+   ]
+  }
+ },
+ "motion/number-ticker": {
+  "plain": "standard number ticker",
+  "types": {
+   "count-up": [
+    "animated count-up"
+   ],
+   "rolling digits": [
+    "rolling digits"
+   ],
+   "countdown timer": [
+    "countdown timer"
+   ],
+   "counting animation": [
+    "counting animation"
+   ],
+   "standard number ticker": [
+    "animated number",
+    "number animation"
+   ],
+   "number counter": [
+    "animated counter",
+    "counter",
+    "number counter"
+   ],
+   "odometer": [
+    "odometer"
+   ],
+   "sample data": [
+    "sample data"
+   ],
+   "interactive counter": [
+    "interactive counter"
+   ]
+  }
+ },
+ "themes/theme": {
+  "plain": "standard theme",
+  "types": {
+   "colour theme": [
+    "colour theme"
+   ],
+   "design system": [
+    "design system"
+   ],
+   "tokens": [
+    "tokens"
+   ],
+   "base theme kit": [
+    "base theme kit"
+   ],
+   "tailwind v4 hsl variant": [
+    "tailwind v4 hsl variant"
+   ],
+   "tailwind v4 hex variant": [
+    "tailwind v4 hex variant"
+   ],
+   "tailwind v4 rgb variant": [
+    "tailwind v4 rgb variant"
+   ],
+   "tailwind v3 hsl variant": [
+    "tailwind v3 hsl variant"
+   ],
+   "tailwind v3 hex variant": [
+    "tailwind v3 hex variant"
+   ],
+   "tailwind v3 rgb variant": [
+    "tailwind v3 rgb variant"
+   ],
+   "dark color palette system": [
+    "dark color palette system"
+   ],
+   "branded product palette": [
+    "branded product palette"
+   ],
+   "mobile app design system": [
+    "mobile app design system"
+   ],
+   "developer tool design": [
+    "developer tool design"
+   ],
+   "ui kit": [
+    "custom ui kit"
+   ],
+   "standard theme": []
+  }
+ },
+ "data-viz/chart": {
+  "plain": "standard chart",
+  "types": {
+   "area": [
+    "area",
+    "area chart"
+   ],
+   "bar": [
+    "bar",
+    "bar chart"
+   ],
+   "chart kit": [
+    "chart kit"
+   ],
+   "line": [
+    "line",
+    "line chart"
+   ],
+   "pie or donut": [
+    "pie or donut"
+   ],
+   "radar": [
+    "radar"
+   ],
+   "radial": [
+    "radial"
+   ],
+   "heatmap": [
+    "heatmap"
+   ],
+   "gauge": [
+    "gauge"
+   ],
+   "funnel": [
+    "funnel"
+   ],
+   "combo": [
+    "combo"
+   ],
+   "scatter": [
+    "scatter"
+   ],
+   "sparkline": [
+    "sparkline"
+   ],
+   "line and sparkline": [
+    "line and sparkline"
+   ],
+   "chart story": [
+    "chart story"
+   ],
+   "standard chart": [
+    "chart"
+   ]
+  }
+ },
+ "motion/text-effect": {
+  "plain": "standard text effect",
+  "types": {
+   "reveal": [
+    "reveal"
+   ],
+   "rotating words": [
+    "rotating words"
+   ],
+   "reveal and entrance": [
+    "reveal and entrance",
+    "reveal entrance",
+    "entrance reveal"
+   ],
+   "typewriter": [
+    "typewriter"
+   ],
+   "standard text effect": [
+    "hover animation",
+    "text effect",
+    "3d text",
+    "animation",
+    "animation helper",
+    "retro effects",
+    "text animation"
+   ],
+   "shimmer": [
+    "gradient and shimmer",
+    "shimmer or gradient",
+    "gradient or shimmer"
+   ],
+   "scramble or glitch": [
+    "scramble and glitch",
+    "scramble or glitch",
+    "glitch or scramble"
+   ],
+   "blur in": [
+    "blur in"
+   ],
+   "split letters": [
+    "split letters"
+   ],
+   "highlight or underline": [
+    "highlight or underline"
+   ],
+   "counter": [
+    "counter"
+   ],
+   "editor interface": [
+    "editor interface"
+   ],
+   "cursor interaction": [
+    "cursor interaction"
+   ],
+   "shader or 3d": [
+    "shader or 3d"
+   ]
+  }
+ },
+ "layout/page-shell": {
+  "plain": "standard page shell",
+  "types": {
+   "aspect ratio": [
+    "aspect ratio"
+   ],
+   "separator": [
+    "separators",
+    "separator"
+   ],
+   "container": [
+    "containers",
+    "container"
+   ],
+   "app shell": [
+    "app shells",
+    "app shell"
+   ],
+   "layout helper": [
+    "layout helper"
+   ],
+   "split view": [
+    "split view"
+   ],
+   "ratio container": [
+    "ratio container"
+   ],
+   "hairline separator": [
+    "hairline separator"
+   ],
+   "page header": [
+    "page header"
+   ],
+   "standard page shell": [
+    "page shell"
+   ],
+   "shader effect": [
+    "shader effect"
+   ],
+   "sidebar dashboard": [
+    "sidebar dashboard"
+   ]
+  }
+ },
+ "inputs/file-upload": {
+  "plain": "standard file upload",
+  "types": {
+   "attachment row": [
+    "attachment row"
+   ],
+   "dropzone": [
+    "dropzone"
+   ],
+   "standard file upload": [
+    "button",
+    "basic file upload",
+    "upload button"
+   ],
+   "previews": [
+    "with previews",
+    "with preview"
+   ],
+   "avatar upload": [
+    "avatar upload"
+   ],
+   "progress list": [
+    "progress list"
+   ],
+   "progress": [
+    "with progress"
+   ],
+   "drag and drop": [
+    "drag and drop"
+   ],
+   "attachment card": [
+    "attachment card"
+   ],
+   "image preview": [
+    "image preview"
+   ],
+   "file list": [
+    "file list"
+   ],
+   "attachments": [
+    "attachments"
+   ]
+  }
+ },
+ "data-display/avatar": {
+  "plain": "standard avatar",
+  "types": {
+   "avatar group": [
+    "avatar group",
+    "animated group"
+   ],
+   "standard avatar": [
+    "single avatar",
+    "animated",
+    "with status",
+    "avatar with status"
+   ],
+   "fallback": [
+    "with fallback"
+   ],
+   "avatar stack": [
+    "avatar stack"
+   ],
+   "application usage": [
+    "application usage"
+   ]
+  }
+ },
+ "data-display/badge": {
+  "plain": "standard badge",
+  "types": {
+   "standard badge": [
+    "status",
+    "animated or shiny",
+    "basic badge",
+    "status badge",
+    "animated or glowing",
+    "animated badge",
+    "solid variant"
+   ],
+   "tag or chip": [
+    "tag or chip"
+   ],
+   "dot": [
+    "with dot"
+   ],
+   "count": [
+    "count"
+   ],
+   "badge in context": [
+    "badge in context"
+   ],
+   "count or pill badge": [
+    "count or pill badge"
+   ],
+   "icon badge": [
+    "icon badge",
+    "with icon"
+   ]
+  }
+ },
+ "layout/bento-grid": {
+  "plain": "standard bento grid",
+  "types": {
+   "feature bento": [
+    "feature bento"
+   ],
+   "stats bento": [
+    "stats bento"
+   ],
+   "image bento": [
+    "image bento"
+   ],
+   "tile": [
+    "single tile"
+   ],
+   "feature showcase": [
+    "feature showcase"
+   ],
+   "standard bento grid": [
+    "animated bento",
+    "animated"
+   ],
+   "feature cards": [
+    "feature cards"
+   ],
+   "image collage": [
+    "image collage"
+   ],
+   "product showcase": [
+    "product showcase"
+   ],
+   "analytics dashboard": [
+    "analytics dashboard"
+   ],
+   "metric card": [
+    "metric card"
+   ],
+   "feature description": [
+    "feature description"
+   ],
+   "analytics tile": [
+    "analytics tile"
+   ],
+   "pricing offer": [
+    "pricing offer"
+   ],
+   "editorial image": [
+    "editorial image"
+   ]
+  }
+ },
+ "navigation/breadcrumb": {
+  "plain": "standard breadcrumb",
+  "types": {
+   "standard breadcrumb": [
+    "basic",
+    "styled variants",
+    "basic breadcrumb",
+    "styled variant",
+    "breadcrumb",
+    "simple breadcrumb",
+    "default or basic"
+   ],
+   "dropdowns": [
+    "with dropdowns"
+   ],
+   "icons": [
+    "with icons"
+   ],
+   "separator variant": [
+    "separator variant",
+    "separators"
+   ],
+   "truncation": [
+    "with truncation"
+   ],
+   "bar": [
+    "simple bar"
+   ],
+   "overflow menu": [
+    "with overflow menu"
+   ],
+   "breadcrumb trail": [
+    "basic breadcrumb trail",
+    "breadcrumb trail"
+   ],
+   "text breadcrumb": [
+    "simple text breadcrumb"
+   ],
+   "truncated or menu": [
+    "truncated or menu"
+   ]
+  }
+ },
+ "actions/button": {
+  "plain": "standard button",
+  "types": {
+   "standard button": [
+    "solid",
+    "glow or shiny",
+    "animated hover",
+    "magnetic",
+    "animated",
+    "3d or effect",
+    "playful",
+    "glass",
+    "neon-glow",
+    "single"
+   ],
+   "toggle or like": [
+    "toggle or like"
+   ],
+   "loading": [
+    "with loading"
+   ],
+   "pressable": [
+    "3d or pressable"
+   ],
+   "group or split": [
+    "group or split"
+   ],
+   "hold to confirm": [
+    "hold to confirm"
+   ],
+   "icon button": [
+    "icon button",
+    "with icon"
+   ],
+   "copy or share": [
+    "copy or share"
+   ],
+   "social or brand": [
+    "social or brand"
+   ]
+  }
+ },
+ "data-display/calendar": {
+  "plain": "standard calendar",
+  "types": {
+   "month calendar": [
+    "month calendar"
+   ],
+   "week schedule": [
+    "week schedule"
+   ],
+   "date picker": [
+    "date picker"
+   ],
+   "event calendar": [
+    "event calendar"
+   ],
+   "range picker": [
+    "range picker"
+   ],
+   "mini calendar": [
+    "mini calendar"
+   ],
+   "standard calendar": []
+  }
+ },
+ "data-display/card": {
+  "plain": "standard card",
+  "types": {
+   "profile card": [
+    "profile",
+    "profile card",
+    "status or profile"
+   ],
+   "component": [
+    "component"
+   ],
+   "product card": [
+    "product",
+    "product card"
+   ],
+   "payment card": [
+    "payment",
+    "payment card",
+    "payment widget"
+   ],
+   "standard card": [
+    "animated glowing",
+    "basic card",
+    "3d effect",
+    "card variants",
+    "basic",
+    "widget",
+    "card",
+    "glass card",
+    "animated card",
+    "glow effect",
+    "glow or shiny"
+   ],
+   "social post": [
+    "social posts",
+    "social post"
+   ],
+   "article card": [
+    "article card"
+   ],
+   "flip": [
+    "flip"
+   ],
+   "container": [
+    "basic container",
+    "container",
+    "simple container"
+   ],
+   "feature card": [
+    "feature card"
+   ],
+   "tilt": [
+    "3d tilt"
+   ],
+   "stat card": [
+    "stat card"
+   ],
+   "spotlight": [
+    "glow or spotlight"
+   ],
+   "media card": [
+    "media card"
+   ],
+   "stack or deck": [
+    "stack or deck"
+   ],
+   "notification card": [
+    "notification card"
+   ],
+   "panel": [
+    "panel",
+    "simple panel"
+   ]
+  }
+ },
+ "media/carousel": {
+  "plain": "standard carousel",
+  "types": {
+   "standard carousel": [
+    "basic carousel",
+    "carousel",
+    "single",
+    "animated or custom"
+   ],
+   "image carousel": [
+    "image carousel"
+   ],
+   "testimonial carousel": [
+    "testimonial carousel"
+   ],
+   "thumbnails": [
+    "with thumbnails",
+    "thumbnail carousel"
+   ],
+   "perspective": [
+    "3d or perspective"
+   ],
+   "slider": [
+    "basic slider"
+   ],
+   "coverflow": [
+    "3d or coverflow"
+   ],
+   "feature carousel": [
+    "feature carousel"
+   ],
+   "cards carousel": [
+    "cards carousel",
+    "card carousel"
+   ],
+   "product carousel": [
+    "product carousel"
+   ],
+   "autoplay carousel": [
+    "autoplay",
+    "autoplay carousel"
+   ],
+   "embla basic": [
+    "embla basic"
+   ],
+   "motion carousel": [
+    "motion carousel"
+   ],
+   "slide indicators": [
+    "with slide indicators"
+   ]
+  }
+ },
+ "overlays/tooltip": {
+  "plain": "standard tooltip",
+  "types": {
+   "rich tooltip": [
+    "rich tooltip"
+   ],
+   "standard tooltip": [
+    "basic tooltip",
+    "animated"
+   ],
+   "arrow": [
+    "with arrow"
+   ],
+   "grouped or delay": [
+    "grouped or delay"
+   ]
+  }
+ },
+ "inputs/checkbox": {
+  "plain": "standard checkbox",
+  "types": {
+   "standard checkbox": [
+    "animated checkbox",
+    "basic checkbox",
+    "animated"
+   ],
+   "card checkbox": [
+    "card checkbox"
+   ],
+   "group": [
+    "checkbox group",
+    "group"
+   ],
+   "checklist": [
+    "checklist"
+   ],
+   "indeterminate": [
+    "indeterminate"
+   ],
+   "label and description": [
+    "with label and description"
+   ]
+  }
+ },
+ "inputs/form-field": {
+  "plain": "standard form field",
+  "types": {
+   "field primitives": [
+    "basic field primitives",
+    "form primitive"
+   ],
+   "text input": [
+    "text input"
+   ],
+   "label": [
+    "animated field labels",
+    "label",
+    "field with label"
+   ],
+   "standard form field": [
+    "animated field",
+    "form field",
+    "animated",
+    "animated fields",
+    "form"
+   ],
+   "whole form": [
+    "whole form"
+   ],
+   "icon or addon": [
+    "with icon or addon"
+   ],
+   "phone": [
+    "phone"
+   ],
+   "password": [
+    "password"
+   ],
+   "number stepper": [
+    "number stepper"
+   ],
+   "validation states": [
+    "validation states"
+   ],
+   "tags input": [
+    "tags input"
+   ],
+   "floating label": [
+    "floating label"
+   ],
+   "form field wrapper": [
+    "form field wrapper",
+    "field wrapper"
+   ]
+  }
+ },
+ "data-display/code-block": {
+  "plain": "standard code block",
+  "types": {
+   "syntax-highlighted code": [
+    "syntax-highlighted code"
+   ],
+   "terminal window": [
+    "terminal window"
+   ],
+   "terminal element": [
+    "terminal element"
+   ],
+   "terminal output": [
+    "terminal output"
+   ],
+   "standard code block": [
+    "animated code",
+    "glass or styled",
+    "code",
+    "animated"
+   ],
+   "code snippet": [
+    "code snippet",
+    "snippet"
+   ],
+   "highlighted code": [
+    "highlighted code"
+   ],
+   "tabs": [
+    "code with tabs",
+    "with tabs"
+   ],
+   "qr code": [
+    "qr code"
+   ],
+   "install command": [
+    "install command"
+   ],
+   "terminal": [
+    "terminal"
+   ],
+   "inline code": [
+    "inline code"
+   ],
+   "diff": [
+    "diff"
+   ],
+   "copy": [
+    "code block with copy",
+    "with copy"
+   ]
+  }
+ },
+ "inputs/combobox": {
+  "plain": "standard combobox",
+  "types": {
+   "select": [
+    "basic single select"
+   ],
+   "multi-select with chips": [
+    "multi-select with chips"
+   ],
+   "icons or avatars": [
+    "with icons or avatars"
+   ],
+   "autocomplete field": [
+    "autocomplete field"
+   ],
+   "standard combobox": [
+    "basic combobox"
+   ],
+   "grouped options": [
+    "grouped options"
+   ],
+   "creatable": [
+    "creatable"
+   ],
+   "mention input": [
+    "mention input"
+   ],
+   "searchable dropdown": [
+    "searchable dropdown"
+   ],
+   "multi select": [
+    "multi select",
+    "multi-select"
+   ],
+   "async search": [
+    "async search"
+   ],
+   "autocomplete with suggestions": [
+    "autocomplete with suggestions"
+   ],
+   "autocomplete": [
+    "autocomplete"
+   ],
+   "searchable select": [
+    "searchable select"
+   ],
+   "grouped": [
+    "grouped"
+   ]
+  }
+ },
+ "navigation/command-palette": {
+  "plain": "standard command palette",
+  "types": {
+   "groups": [
+    "with groups"
+   ],
+   "search focused": [
+    "search focused"
+   ],
+   "dialog": [
+    "basic dialog"
+   ],
+   "standard command palette": [
+    "command style",
+    "basic command"
+   ],
+   "actions menu": [
+    "actions menu"
+   ],
+   "command menu": [
+    "command menu",
+    "basic command menu"
+   ]
+  }
+ },
+ "layout/dashboard": {
+  "plain": "standard dashboard",
+  "types": {
+   "app shell": [
+    "app shell"
+   ],
+   "full dashboard page": [
+    "full dashboard page"
+   ],
+   "admin shell": [
+    "admin shell"
+   ],
+   "analytics dashboard": [
+    "analytics dashboard",
+    "analytics"
+   ],
+   "sales/revenue dashboard": [
+    "sales/revenue dashboard"
+   ],
+   "operations dashboard": [
+    "operations dashboard"
+   ],
+   "admin overview": [
+    "admin overview"
+   ],
+   "finance": [
+    "finance dashboard",
+    "finance"
+   ],
+   "standard dashboard": [
+    "status dashboard",
+    "dashboard"
+   ],
+   "admin page": [
+    "admin page"
+   ]
+  }
+ },
+ "overlays/context-menu": {
+  "plain": "standard context menu",
+  "types": {
+   "submenus": [
+    "with submenus",
+    "context menu with submenus"
+   ],
+   "standard context menu": [
+    "styled retro",
+    "basic context menu",
+    "context menu",
+    "styled variant",
+    "minimal",
+    "custom styled",
+    "styled glass"
+   ],
+   "icons": [
+    "with icons"
+   ],
+   "entry": [
+    "animated entry"
+   ],
+   "list": [
+    "basic list"
+   ],
+   "submenu or groups": [
+    "with submenu or groups"
+   ],
+   "radix wrapper": [
+    "radix wrapper"
+   ],
+   "dropdown menu": [
+    "dropdown menu"
+   ],
+   "right-click menu": [
+    "basic right-click menu"
+   ]
+  }
+ },
+ "data-display/table": {
+  "plain": "standard table",
+  "types": {
+   "data table": [
+    "data table"
+   ],
+   "standard table": [
+    "simple table"
+   ],
+   "editable grid": [
+    "editable grid"
+   ],
+   "expandable rows": [
+    "expandable rows"
+   ],
+   "virtualized": [
+    "virtualized"
+   ],
+   "table toolbar or filters": [
+    "table toolbar or filters"
+   ],
+   "data grid": [
+    "data grid"
+   ],
+   "primitive": [
+    "primitive"
+   ],
+   "editable": [
+    "editable"
+   ]
+  }
+ },
+ "inputs/date-picker": {
+  "plain": "standard date picker",
+  "types": {
+   "standard date picker": [
+    "single date picker",
+    "date picker"
+   ],
+   "date range picker": [
+    "date range picker",
+    "range picker",
+    "date range"
+   ],
+   "presets": [
+    "with presets"
+   ],
+   "segmented input": [
+    "segmented input"
+   ],
+   "calendar only": [
+    "calendar only"
+   ],
+   "bottom sheet modal": [
+    "bottom sheet modal"
+   ],
+   "month calendar": [
+    "month calendar"
+   ],
+   "segmented date entry": [
+    "segmented date entry"
+   ],
+   "date input field": [
+    "date input field"
+   ],
+   "date input": [
+    "with date input"
+   ],
+   "calendar popover": [
+    "calendar popover"
+   ],
+   "time selection": [
+    "with time selection"
+   ]
+  }
+ },
+ "overlays/sheet": {
+  "plain": "standard sheet",
+  "types": {
+   "drawer": [
+    "drawer",
+    "glass drawer",
+    "styled drawer",
+    "custom styled drawer"
+   ],
+   "side sheet": [
+    "side sheet"
+   ],
+   "form": [
+    "with form"
+   ],
+   "bottom sheet": [
+    "bottom sheet"
+   ],
+   "bottom drawer": [
+    "bottom drawer"
+   ],
+   "side drawer": [
+    "side drawer"
+   ],
+   "side slide-over panel": [
+    "side slide-over panel"
+   ],
+   "bottom drawer with swipe": [
+    "bottom drawer with swipe"
+   ],
+   "standard sheet": [
+    "glass sheet"
+   ],
+   "detail view": [
+    "detail view"
+   ],
+   "bottom drawer with snap points": [
+    "bottom drawer with snap points"
+   ]
+  }
+ },
+ "navigation/menu": {
+  "plain": "standard menu",
+  "types": {
+   "dropdown menu": [
+    "dropdown menu",
+    "animated dropdown"
+   ],
+   "navigation menu": [
+    "navigation menu"
+   ],
+   "menubar": [
+    "menubar"
+   ],
+   "context menu": [
+    "context menu"
+   ],
+   "standard menu": [
+    "animated menu",
+    "menu item"
+   ],
+   "user menu": [
+    "user menu"
+   ],
+   "radial": [
+    "radial menu",
+    "animated or radial"
+   ],
+   "toolbar or menubar": [
+    "toolbar or menubar"
+   ],
+   "toolbar": [
+    "toolbar"
+   ],
+   "context or slash menu": [
+    "context or slash menu"
+   ],
+   "nested or cascading": [
+    "nested or cascading"
+   ],
+   "mega menu": [
+    "mega menu"
+   ],
+   "morph": [
+    "animated morph"
+   ]
+  }
+ },
+ "data-display/empty-state": {
+  "plain": "standard empty state",
+  "types": {
+   "icon and text": [
+    "icon and text",
+    "empty or icon and text"
+   ],
+   "search no results": [
+    "search no results"
+   ],
+   "illustrated": [
+    "illustrated"
+   ],
+   "action": [
+    "with action"
+   ],
+   "icon and message": [
+    "simple icon and message"
+   ],
+   "error state": [
+    "error state"
+   ],
+   "standard empty state": [
+    "empty state"
+   ]
+  }
+ },
+ "layout/scroll-area": {
+  "plain": "standard scroll area",
+  "types": {
+   "standard scroll area": [
+    "scroll effect",
+    "scroll area",
+    "scroll areas",
+    "scroll animation",
+    "custom scroll",
+    "glass scroll"
+   ],
+   "reveal on scroll": [
+    "reveal on scroll"
+   ],
+   "parallax": [
+    "parallax",
+    "parallax scroll",
+    "parallax effect"
+   ],
+   "sticky and stacking": [
+    "sticky and stacking"
+   ],
+   "scroll progress": [
+    "scroll progress"
+   ],
+   "vertical scroll": [
+    "vertical scroll"
+   ],
+   "scroll-driven animation": [
+    "scroll-driven scroll",
+    "scroll-driven animation"
+   ],
+   "scroll fade": [
+    "scroll fade"
+   ],
+   "scroll reveal": [
+    "scroll reveal"
+   ],
+   "horizontal scroll": [
+    "horizontal scroll"
+   ],
+   "infinite and velocity": [
+    "infinite and velocity"
+   ],
+   "text scroll": [
+    "scroll text effect",
+    "text scroll"
+   ]
+  }
+ },
+ "data-viz/progress-bar": {
+  "plain": "standard progress bar",
+  "types": {
+   "label": [
+    "with label"
+   ],
+   "stepped": [
+    "stepped"
+   ],
+   "linear": [
+    "linear"
+   ],
+   "scroll progress": [
+    "scroll progress"
+   ],
+   "standard progress bar": [
+    "animated",
+    "progress",
+    "single"
+   ],
+   "circular": [
+    "circular"
+   ],
+   "segmented": [
+    "segmented"
+   ]
+  }
+ },
+ "motion/cursor": {
+  "plain": "standard cursor",
+  "types": {
+   "standard cursor": [
+    "custom cursor",
+    "magnetic cursor",
+    "magnetic",
+    "animated cursor",
+    "magnetic effect"
+   ],
+   "interactive": [
+    "3d interactive",
+    "interactive",
+    "interactive effect"
+   ],
+   "spotlight": [
+    "spotlight cursor",
+    "spotlight"
+   ],
+   "trail": [
+    "trail cursor",
+    "trail",
+    "glow trail"
+   ],
+   "distortion cursor": [
+    "distortion cursor",
+    "distortion"
+   ],
+   "labels and multiplayer": [
+    "labels and multiplayer"
+   ],
+   "interactive surface": [
+    "interactive surface"
+   ],
+   "collaborative cursors": [
+    "collaborative cursors"
+   ],
+   "smooth follower": [
+    "smooth follower"
+   ],
+   "pointer": [
+    "custom pointer",
+    "animated pointer"
+   ],
+   "character follower": [
+    "character follower"
+   ],
+   "spotlight and reveal": [
+    "spotlight reveal",
+    "spotlight and reveal"
+   ],
+   "particle effects": [
+    "particle cursor",
+    "particle effects"
+   ]
+  }
+ },
+ "status/loader": {
+  "plain": "standard loader",
+  "types": {
+   "standard loader": [
+    "3d"
+   ],
+   "spinner": [
+    "spinner"
+   ],
+   "progress": [
+    "progress"
+   ],
+   "shapes or grid": [
+    "shapes or grid",
+    "shapes/grid"
+   ],
+   "orbit": [
+    "orbit"
+   ],
+   "dots": [
+    "dots"
+   ],
+   "bars": [
+    "bars"
+   ],
+   "text or logo": [
+    "text or logo"
+   ],
+   "pulse": [
+    "pulse"
+   ],
+   "spin": [
+    "spin"
+   ],
+   "cascade": [
+    "cascade"
+   ],
+   "spiral": [
+    "spiral"
+   ],
+   "sweep": [
+    "sweep"
+   ],
+   "explosion": [
+    "explosion"
+   ],
+   "rotating ring or arc": [
+    "rotating ring or arc"
+   ],
+   "grid puzzle or scan": [
+    "grid puzzle or scan"
+   ],
+   "specialized or themed": [
+    "specialized or themed"
+   ],
+   "dots and pulse": [
+    "dots and pulse"
+   ],
+   "space loaders": [
+    "space loaders"
+   ],
+   "geometric shape loaders": [
+    "geometric shape loaders"
+   ]
+  }
+ },
+ "overlays/hover-card": {
+  "plain": "standard hover card",
+  "types": {
+   "profile preview": [
+    "profile preview"
+   ],
+   "standard hover card": [
+    "basic hover card",
+    "styled variant",
+    "glass effect"
+   ],
+   "link preview": [
+    "link preview"
+   ],
+   "composable overlay": [
+    "composable overlay"
+   ],
+   "popover": [
+    "simple popover",
+    "basic popover"
+   ],
+   "tooltip": [
+    "basic tooltip"
+   ],
+   "component": [
+    "basic component"
+   ],
+   "info tooltip": [
+    "info tooltip"
+   ],
+   "preview": [
+    "simple preview"
+   ]
+  }
+ },
+ "inputs/otp-input": {
+  "plain": "standard otp input",
+  "types": {
+   "slots": [
+    "basic slots"
+   ],
+   "system": [
+    "styled system"
+   ],
+   "separators": [
+    "with separators"
+   ],
+   "entrance": [
+    "animated entrance"
+   ],
+   "standard otp input": [
+    "with state variants",
+    "basic",
+    "with animation"
+   ],
+   "code or pin": [
+    "code or pin"
+   ],
+   "pin or 4-digit": [
+    "pin or 4-digit"
+   ],
+   "verification form": [
+    "verification form"
+   ],
+   "autofill aware": [
+    "autofill aware"
+   ],
+   "individual character slots": [
+    "individual character slots"
+   ],
+   "segmented slots": [
+    "segmented slots",
+    "basic segmented slots"
+   ],
+   "email verification": [
+    "email verification"
+   ]
+  }
+ },
+ "data-display/list": {
+  "plain": "standard list",
+  "types": {
+   "standard list": [
+    "simple list",
+    "list",
+    "simple item",
+    "item",
+    "animated",
+    "item variant",
+    "item basic",
+    "basic list"
+   ],
+   "sortable": [
+    "sortable"
+   ],
+   "list with avatars": [
+    "list with avatars",
+    "item with avatar"
+   ],
+   "file list": [
+    "file list"
+   ],
+   "activity feed": [
+    "activity feed",
+    "activity or feed"
+   ],
+   "virtualized": [
+    "virtualized"
+   ],
+   "data row": [
+    "data row"
+   ],
+   "full page": [
+    "full page"
+   ]
+  }
+ },
+ "data-display/typography": {
+  "plain": "standard typography",
+  "types": {
+   "kbd or inline": [
+    "kbd or inline"
+   ],
+   "prose": [
+    "prose"
+   ],
+   "keyboard keys": [
+    "keyboard keys"
+   ],
+   "split letters": [
+    "split letters"
+   ],
+   "typography system": [
+    "typography system"
+   ],
+   "key": [
+    "single key",
+    "key variants"
+   ],
+   "keyboard shortcut": [
+    "keyboard shortcut"
+   ],
+   "text": [
+    "text"
+   ],
+   "headings and prose": [
+    "headings and prose"
+   ],
+   "kbd": [
+    "kbd"
+   ],
+   "lists": [
+    "lists",
+    "list"
+   ],
+   "headings": [
+    "headings",
+    "animated heading",
+    "heading"
+   ],
+   "standard typography": [
+    "typography"
+   ],
+   "blockquote": [
+    "blockquote"
+   ],
+   "text primitives": [
+    "text primitives"
+   ],
+   "keyboard key caps": [
+    "keyboard key caps"
+   ],
+   "prose section": [
+    "prose section"
+   ]
+  }
+ },
+ "actions/link": {
+  "plain": "standard link",
+  "types": {
+   "navigation": [
+    "basic navigation"
+   ],
+   "preview on hover": [
+    "preview on hover"
+   ],
+   "social links": [
+    "social links"
+   ],
+   "standard link": [
+    "hover effect",
+    "styled link",
+    "solid",
+    "basic styled link",
+    "link",
+    "basic link"
+   ],
+   "github contribution calendar": [
+    "github contribution calendar"
+   ],
+   "inline styled link": [
+    "inline styled link"
+   ],
+   "preview": [
+    "hover preview"
+   ]
+  }
+ },
+ "motion/marquee": {
+  "plain": "standard marquee",
+  "types": {
+   "perspective": [
+    "3d perspective"
+   ],
+   "horizontal scroll": [
+    "horizontal scroll"
+   ],
+   "standard marquee": [
+    "gradient or effect",
+    "marquee",
+    "basic marquee"
+   ],
+   "ticker style": [
+    "ticker style",
+    "ticker"
+   ],
+   "velocity or interactive": [
+    "velocity or interactive"
+   ],
+   "seamless scrolling": [
+    "seamless scrolling"
+   ]
+  }
+ },
+ "navigation/top-nav": {
+  "plain": "standard top nav",
+  "types": {
+   "bar": [
+    "simple bar"
+   ],
+   "mobile drawer": [
+    "mobile drawer"
+   ],
+   "shrinks on scroll": [
+    "shrinks on scroll"
+   ],
+   "search": [
+    "with search"
+   ],
+   "mega menu": [
+    "with mega menu"
+   ],
+   "floating pill": [
+    "floating pill",
+    "floating pill nav"
+   ],
+   "announcement": [
+    "with announcement"
+   ],
+   "responsive header": [
+    "responsive header"
+   ],
+   "menubar": [
+    "menubar"
+   ],
+   "mega menu or dropdown": [
+    "mega menu or dropdown"
+   ],
+   "standard top nav": []
+  }
+ },
+ "inputs/select": {
+  "plain": "standard select",
+  "types": {
+   "multi select": [
+    "multi select",
+    "multi-select"
+   ],
+   "native select": [
+    "native select"
+   ],
+   "standard select": [
+    "basic select",
+    "animated"
+   ],
+   "emoji, icon and colour": [
+    "emoji, icon and colour"
+   ],
+   "searchable": [
+    "searchable"
+   ],
+   "date and time": [
+    "date and time"
+   ],
+   "icons or avatars": [
+    "with icons or avatars"
+   ],
+   "dropdown": [
+    "basic dropdown"
+   ],
+   "grouped": [
+    "grouped"
+   ],
+   "multi-select with chips": [
+    "multi-select with chips"
+   ],
+   "wheel picker": [
+    "wheel picker"
+   ],
+   "icons": [
+    "with icons"
+   ],
+   "specialized picker": [
+    "specialized picker"
+   ]
+  }
+ },
+ "inputs/number-input": {
+  "plain": "standard number input",
+  "types": {
+   "stepper": [
+    "stepper",
+    "number stepper"
+   ],
+   "scrub": [
+    "scrub"
+   ],
+   "numeric stepper": [
+    "numeric stepper"
+   ],
+   "standard number input": [
+    "single",
+    "with input",
+    "animated or custom"
+   ],
+   "stepper horizontal": [
+    "stepper horizontal"
+   ]
+  }
+ },
+ "inputs/slider": {
+  "plain": "standard slider",
+  "types": {
+   "horizontal slider": [
+    "basic horizontal slider"
+   ],
+   "specialty slider": [
+    "specialty slider"
+   ],
+   "range": [
+    "range slider",
+    "range"
+   ],
+   "elastic slider": [
+    "animated or elastic slider",
+    "elastic slider"
+   ],
+   "vertical": [
+    "vertical slider",
+    "vertical"
+   ],
+   "standard slider": [
+    "single",
+    "animated or custom",
+    "basic single",
+    "styled slider"
+   ],
+   "labels or ticks": [
+    "with labels or ticks"
+   ],
+   "input": [
+    "with input"
+   ],
+   "specialized": [
+    "specialized"
+   ],
+   "value input": [
+    "with value input"
+   ],
+   "dial or knob": [
+    "dial or knob"
+   ]
+  }
+ },
+ "navigation/pagination": {
+  "plain": "standard pagination",
+  "types": {
+   "numbered pages": [
+    "numbered pages"
+   ],
+   "standard pagination": [
+    "styled variants",
+    "simple",
+    "pagination"
+   ],
+   "page counter": [
+    "page counter"
+   ],
+   "numbered pagination": [
+    "numbered buttons",
+    "numbered pagination"
+   ],
+   "first and last": [
+    "with first and last",
+    "with first/last buttons",
+    "with first/last"
+   ],
+   "ellipsis": [
+    "with ellipsis"
+   ],
+   "page size selector": [
+    "page size selector",
+    "with page size selector"
+   ],
+   "table pagination": [
+    "table pagination"
+   ],
+   "numbered pages with ellipsis": [
+    "numbered pages with ellipsis"
+   ],
+   "page size dropdown": [
+    "with page size dropdown"
+   ]
+  }
+ },
+ "overlays/popover": {
+  "plain": "standard popover",
+  "types": {
+   "standard popover": [
+    "basic popover",
+    "styled popover",
+    "animated popover",
+    "animated"
+   ],
+   "entrance": [
+    "animated entrance"
+   ],
+   "popover kit": [
+    "popover kit"
+   ],
+   "floating panel": [
+    "floating panel",
+    "floating panels"
+   ],
+   "specialized content": [
+    "specialized content"
+   ],
+   "morphing popover": [
+    "morphing popover",
+    "morphing"
+   ],
+   "form popover": [
+    "form popover",
+    "with form"
+   ],
+   "info card": [
+    "info card"
+   ],
+   "menu popover": [
+    "menu popover"
+   ],
+   "form in popover": [
+    "form in popover"
+   ]
+  }
+ },
+ "status/status-dot": {
+  "plain": "standard status dot",
+  "types": {
+   "presence wrapper": [
+    "presence wrapper"
+   ],
+   "standard status dot": [
+    "simple dot",
+    "status",
+    "with status",
+    "with dot",
+    "animated or shiny"
+   ],
+   "ping": [
+    "animated ping"
+   ],
+   "bar": [
+    "status bar"
+   ],
+   "avatar stack": [
+    "avatar stack"
+   ]
+  }
+ },
+ "marketing/testimonials": {
+  "plain": "standard testimonial",
+  "types": {
+   "company logos": [
+    "with company logos"
+   ],
+   "carousel": [
+    "carousel"
+   ],
+   "card grid": [
+    "card grid"
+   ],
+   "big quote": [
+    "single big quote"
+   ],
+   "masonry wall": [
+    "masonry wall"
+   ],
+   "marquee": [
+    "marquee"
+   ],
+   "star ratings": [
+    "star ratings"
+   ],
+   "marquee scroll": [
+    "marquee scroll"
+   ],
+   "dual marquee": [
+    "dual marquee"
+   ],
+   "standard testimonial": []
+  }
+ },
+ "data-display/profile": {
+  "plain": "standard profile",
+  "types": {
+   "profile card": [
+    "profile card",
+    "card"
+   ],
+   "profile page": [
+    "profile page"
+   ],
+   "specialized profile": [
+    "specialized profile"
+   ],
+   "profile form": [
+    "profile form"
+   ],
+   "standard profile": [
+    "profile"
+   ]
+  }
+ },
+ "marketing/faq": {
+  "plain": "standard faq",
+  "types": {
+   "question grid": [
+    "question grid"
+   ],
+   "accordion": [
+    "accordion"
+   ],
+   "two columns": [
+    "two columns"
+   ],
+   "contact": [
+    "with contact"
+   ],
+   "tabs by topic": [
+    "tabs by topic"
+   ],
+   "search": [
+    "with search"
+   ],
+   "full page": [
+    "full page"
+   ],
+   "standard faq": []
+  }
+ },
+ "inputs/radio": {
+  "plain": "standard radio",
+  "types": {
+   "standard radio": [
+    "basic radio",
+    "animated"
+   ],
+   "card radio": [
+    "card radio"
+   ],
+   "description": [
+    "with description"
+   ],
+   "group": [
+    "basic group",
+    "group"
+   ],
+   "size variants": [
+    "size variants"
+   ],
+   "themed": [
+    "themed"
+   ]
+  }
+ },
+ "layout/split-pane": {
+  "plain": "standard split pane",
+  "types": {
+   "two-pane": [
+    "basic two-pane"
+   ],
+   "standard split pane": [
+    "styled variants"
+   ],
+   "nested panels": [
+    "nested panels"
+   ],
+   "resizable panels": [
+    "resizable panels"
+   ],
+   "resizable panes": [
+    "resizable panes"
+   ],
+   "horizontal split with drag handle": [
+    "horizontal split with drag handle"
+   ]
+  }
+ },
+ "navigation/sidebar": {
+  "plain": "standard sidebar",
+  "types": {
+   "collapsible icon rail": [
+    "collapsible icon rail"
+   ],
+   "grouped sections": [
+    "grouped sections"
+   ],
+   "standard sidebar": [
+    "with hover",
+    "with animation",
+    "animated"
+   ],
+   "floating or inset": [
+    "floating or inset"
+   ],
+   "nested tree": [
+    "nested tree"
+   ],
+   "mobile drawer": [
+    "mobile drawer"
+   ],
+   "collapsible sidebar": [
+    "collapsible sidebar",
+    "simple collapsible"
+   ],
+   "workspace switcher": [
+    "with workspace switcher"
+   ],
+   "user menu": [
+    "with user menu"
+   ],
+   "indicator": [
+    "animated indicator"
+   ],
+   "docs": [
+    "for docs"
+   ]
+  }
+ },
+ "status/skeleton": {
+  "plain": "standard skeleton",
+  "types": {
+   "card skeleton": [
+    "card skeleton"
+   ],
+   "text lines": [
+    "text lines"
+   ],
+   "standard skeleton": [
+    "3d",
+    "skeleton",
+    "animated",
+    "retro"
+   ],
+   "shimmer": [
+    "shimmer"
+   ],
+   "pulse": [
+    "pulse"
+   ],
+   "list skeleton": [
+    "list skeleton",
+    "list"
+   ],
+   "shapes": [
+    "shapes"
+   ]
+  }
+ },
+ "actions/switch": {
+  "plain": "standard switch",
+  "types": {
+   "standard switch": [
+    "basic switch",
+    "animated",
+    "animated switch",
+    "brutalist switch"
+   ],
+   "theme toggle": [
+    "theme toggle"
+   ],
+   "toggle button": [
+    "toggle button",
+    "3d toggle",
+    "neon toggle",
+    "glass toggle",
+    "playful toggle",
+    "animated toggle",
+    "modern toggle",
+    "toggle"
+   ],
+   "toggle group": [
+    "toggle group"
+   ],
+   "icons": [
+    "with icons"
+   ],
+   "segmented toggle": [
+    "segmented toggle"
+   ],
+   "label": [
+    "with label"
+   ],
+   "toggle or like": [
+    "toggle or like"
+   ],
+   "on/off switch": [
+    "basic on/off switch"
+   ]
+  }
+ },
+ "navigation/tabs": {
+  "plain": "standard tab",
+  "types": {
+   "underline or segment": [
+    "underline or segment"
+   ],
+   "segmented controls": [
+    "segmented controls",
+    "segmented control"
+   ],
+   "counts": [
+    "with counts"
+   ],
+   "pill or segmented": [
+    "pill or segmented"
+   ],
+   "sliding": [
+    "animated and sliding"
+   ],
+   "vertical": [
+    "vertical"
+   ],
+   "icons": [
+    "with icons"
+   ],
+   "underline": [
+    "underline"
+   ],
+   "indicator": [
+    "animated indicator",
+    "glass indicator"
+   ],
+   "switcher": [
+    "basic switcher"
+   ],
+   "standard tab": [
+    "brutalist",
+    "glass",
+    "variant tabs",
+    "3d effect tabs"
+   ]
+  }
+ },
+ "marketing/announcement": {
+  "plain": "standard announcement",
+  "types": {
+   "ribbon": [
+    "ribbon",
+    "ribbon effect"
+   ],
+   "announcement bar": [
+    "announcement bar"
+   ],
+   "promo card": [
+    "promo card"
+   ],
+   "topbar": [
+    "topbar"
+   ],
+   "banner": [
+    "simple banner",
+    "banner"
+   ],
+   "promo section": [
+    "promo section"
+   ],
+   "centered banner": [
+    "centered banner"
+   ],
+   "standard announcement": []
+  }
+ },
+ "inputs/textarea": {
+  "plain": "standard textarea",
+  "types": {
+   "counter": [
+    "with counter"
+   ],
+   "standard textarea": [
+    "basic textarea",
+    "styled variants",
+    "animated",
+    "state variants"
+   ],
+   "auto-growing": [
+    "auto-growing"
+   ],
+   "validation states": [
+    "validation states"
+   ],
+   "rich text editor": [
+    "rich text editor"
+   ],
+   "code editor": [
+    "code editor"
+   ],
+   "autosize": [
+    "autosize"
+   ],
+   "actions": [
+    "with actions"
+   ],
+   "toolbar": [
+    "with toolbar"
+   ],
+   "validation": [
+    "with validation"
+   ],
+   "mark formatting": [
+    "mark formatting"
+   ],
+   "save and export": [
+    "save and export"
+   ],
+   "label": [
+    "with label"
+   ]
+  }
+ },
+ "overlays/toast": {
+  "plain": "standard toast",
+  "types": {
+   "standard toast": [
+    "basic toast"
+   ],
+   "rich": [
+    "rich"
+   ],
+   "stacked": [
+    "stacked",
+    "stacked toasts"
+   ],
+   "promise or loading": [
+    "promise or loading",
+    "promise or loading toast"
+   ],
+   "action": [
+    "with action",
+    "toast with action",
+    "with actions"
+   ],
+   "sonner wrapper": [
+    "sonner wrapper"
+   ],
+   "sonner": [
+    "sonner"
+   ]
+  }
+ },
+ "data-display/tree": {
+  "plain": "standard tree",
+  "types": {
+   "tree view": [
+    "tree view"
+   ],
+   "file tree": [
+    "file tree"
+   ],
+   "standard tree": [
+    "tree",
+    "basic"
+   ],
+   "hierarchical tree": [
+    "hierarchical tree"
+   ],
+   "file explorer tree": [
+    "file explorer tree"
+   ]
+  }
+ },
+ "lib/utility": {
+  "plain": "standard utility",
+  "types": {
+   "provider or adapter": [
+    "provider or adapter"
+   ],
+   "formatter or parser": [
+    "formatter or parser"
+   ],
+   "theme tokens": [
+    "theme tokens",
+    "theme token",
+    "theme or tokens"
+   ],
+   "standard utility": [
+    "helper",
+    "style utility",
+    "animation helper",
+    "utility",
+    "helper or utility",
+    "effect helper"
+   ],
+   "data fetching": [
+    "data fetching"
+   ],
+   "hook": [
+    "hook",
+    "state hook",
+    "effect hook"
+   ],
+   "class helper": [
+    "class helper"
+   ],
+   "provider": [
+    "provider",
+    "state provider"
+   ],
+   "theme": [
+    "theme",
+    "theme helper"
+   ],
+   "sample data": [
+    "sample data"
+   ],
+   "type definitions": [
+    "type definitions"
+   ],
+   "font loader": [
+    "font loader"
+   ],
+   "generated schema": [
+    "generated schema"
+   ],
+   "server utility": [
+    "server utility"
+   ],
+   "geometry or physics": [
+    "geometry or physics"
+   ]
+  }
+ },
+ "marketing/footer": {
+  "plain": "standard footer",
+  "types": {
+   "link columns": [
+    "link columns"
+   ],
+   "standard footer": [
+    "with animation"
+   ],
+   "one row minimal": [
+    "one row minimal"
+   ],
+   "newsletter": [
+    "with newsletter"
+   ],
+   "mega sitemap": [
+    "mega sitemap"
+   ],
+   "call to action": [
+    "with call to action"
+   ],
+   "big wordmark": [
+    "big wordmark"
+   ],
+   "multi-column links": [
+    "multi-column links"
+   ],
+   "row": [
+    "minimal single row"
+   ],
+   "newsletter form": [
+    "with newsletter form"
+   ],
+   "cta panel": [
+    "cta panel"
+   ],
+   "contact focused": [
+    "contact focused"
+   ]
+  }
+ },
+ "data-display/stat": {
+  "plain": "standard stat",
+  "types": {
+   "kpi card": [
+    "kpi card"
+   ],
+   "stats row": [
+    "stats row"
+   ],
+   "counter": [
+    "animated counter"
+   ],
+   "progress stat": [
+    "progress stat"
+   ],
+   "kpi with sparkline": [
+    "kpi with sparkline"
+   ],
+   "stat grid": [
+    "stat grid"
+   ],
+   "multi-stat row": [
+    "multi-stat row"
+   ],
+   "metric card": [
+    "metric card"
+   ],
+   "stat section": [
+    "stat section"
+   ],
+   "stat with chart": [
+    "stat with chart",
+    "with chart"
+   ],
+   "kpi with indicator": [
+    "kpi with indicator"
+   ],
+   "stat tile": [
+    "stat tile"
+   ],
+   "standard stat": [
+    "stat"
+   ]
+  }
+ },
+ "flows/sign-in": {
+  "plain": "standard sign in",
+  "types": {
+   "centered card": [
+    "centered card"
+   ],
+   "split with image": [
+    "split with image"
+   ],
+   "sign up": [
+    "sign up"
+   ],
+   "forgot password": [
+    "forgot password"
+   ],
+   "password reset": [
+    "password reset"
+   ],
+   "social buttons": [
+    "social buttons"
+   ],
+   "verification": [
+    "verification"
+   ],
+   "two-factor": [
+    "two-factor"
+   ],
+   "auth component": [
+    "auth component"
+   ],
+   "signup form": [
+    "signup form"
+   ],
+   "magic link or code": [
+    "magic link or code"
+   ],
+   "full page": [
+    "full page"
+   ],
+   "standard sign in": []
+  }
+ },
+ "data-display/gamification": {
+  "plain": "standard gamification",
+  "types": {
+   "leaderboard with ranking": [
+    "leaderboard with ranking",
+    "ranking or leaderboard"
+   ],
+   "streak tracker": [
+    "streak tracker"
+   ],
+   "leaderboard table": [
+    "leaderboard table"
+   ],
+   "playable game": [
+    "playable game"
+   ],
+   "achievement collection": [
+    "achievement collection"
+   ],
+   "rank badges": [
+    "rank badges"
+   ],
+   "background": [
+    "animated background"
+   ],
+   "interactive element": [
+    "interactive element"
+   ],
+   "standard gamification": []
+  }
+ },
+ "marketing/pricing": {
+  "plain": "standard pricing",
+  "types": {
+   "tier cards with billing toggle": [
+    "tier cards with billing toggle"
+   ],
+   "pricing card": [
+    "pricing card"
+   ],
+   "tier cards": [
+    "tier cards"
+   ],
+   "plan": [
+    "single plan"
+   ],
+   "comparison table": [
+    "comparison table"
+   ],
+   "checkout": [
+    "checkout"
+   ],
+   "usage slider": [
+    "usage slider",
+    "usage and sliders"
+   ],
+   "plan card": [
+    "plan card",
+    "plan cards"
+   ],
+   "pricing transparency": [
+    "pricing transparency"
+   ],
+   "checkout flow": [
+    "checkout flow"
+   ],
+   "standard pricing": [
+    "single"
+   ]
+  }
+ },
+ "marketing/marketing": {
+  "plain": "standard marketing",
+  "types": {
+   "blog list": [
+    "blog list"
+   ],
+   "contact form": [
+    "contact form"
+   ],
+   "case study": [
+    "case study"
+   ],
+   "stats row": [
+    "stats row"
+   ],
+   "news grid": [
+    "news grid"
+   ],
+   "blog post": [
+    "blog post"
+   ],
+   "about": [
+    "about"
+   ],
+   "blog grid": [
+    "blog grid"
+   ],
+   "blog featured": [
+    "blog featured"
+   ],
+   "changelog": [
+    "changelog"
+   ],
+   "contact split": [
+    "contact split"
+   ],
+   "about section": [
+    "about section"
+   ],
+   "how it works": [
+    "how it works"
+   ],
+   "timeline or history": [
+    "timeline or history"
+   ],
+   "help card": [
+    "help card"
+   ],
+   "stats or metrics": [
+    "stats or metrics"
+   ],
+   "standard marketing": []
+  }
+ },
+ "data-display/kanban": {
+  "plain": "standard kanban",
+  "types": {
+   "multi-column board": [
+    "multi-column board"
+   ],
+   "visual display": [
+    "visual display"
+   ],
+   "board with columns": [
+    "board with columns"
+   ],
+   "drag and drop board": [
+    "drag and drop board"
+   ],
+   "standard kanban": [
+    "kanban"
+   ],
+   "column-based board": [
+    "column-based board"
+   ]
+  }
+ },
+ "media/player": {
+  "plain": "standard player",
+  "types": {
+   "music player": [
+    "music player"
+   ],
+   "waveform visualization": [
+    "waveform visualization"
+   ],
+   "video player": [
+    "video player",
+    "video effect",
+    "glass video player"
+   ],
+   "audio player": [
+    "audio player"
+   ],
+   "waveform": [
+    "waveform"
+   ],
+   "audio hook or utility": [
+    "audio hook or utility"
+   ],
+   "audio mixer or controls": [
+    "audio mixer or controls"
+   ],
+   "podcast player or section": [
+    "podcast player or section",
+    "podcast section"
+   ],
+   "waveform visualizer": [
+    "waveform visualizer"
+   ],
+   "full featured video player": [
+    "full featured video player"
+   ],
+   "video gallery section": [
+    "video gallery section"
+   ],
+   "audio player with waveform": [
+    "audio player with waveform"
+   ],
+   "video model": [
+    "video model"
+   ],
+   "standard player": [
+    "animated or custom"
+   ]
+  }
+ },
+ "navigation/wizard-steps": {
+  "plain": "standard wizard step",
+  "types": {
+   "multi-step form": [
+    "multi-step form wizard",
+    "multi-step form"
+   ],
+   "setup checklist or progress tracker": [
+    "setup checklist or progress tracker"
+   ],
+   "onboarding welcome screen": [
+    "onboarding welcome screen"
+   ],
+   "horizontal numbered stepper": [
+    "horizontal numbered stepper"
+   ],
+   "onboarding": [
+    "onboarding"
+   ],
+   "progress steps": [
+    "progress steps"
+   ],
+   "horizontal stepper": [
+    "horizontal stepper"
+   ],
+   "standard wizard step": [
+    "steps"
+   ],
+   "vertical stepper": [
+    "vertical stepper"
+   ]
+  }
+ },
+ "pages/templates": {
+  "plain": "standard template",
+  "types": {
+   "landing page": [
+    "landing page"
+   ],
+   "error page": [
+    "error page"
+   ],
+   "coming soon": [
+    "coming soon"
+   ],
+   "404 search": [
+    "404 search"
+   ],
+   "404 minimal": [
+    "404 minimal",
+    "404 with animation",
+    "404 simple",
+    "404 retro",
+    "404 effect",
+    "404 animation",
+    "404 3d"
+   ],
+   "full-page template": [
+    "full-page template"
+   ],
+   "portfolio": [
+    "portfolio"
+   ],
+   "docs": [
+    "docs"
+   ],
+   "standard template": []
+  }
+ },
+ "overlays/notifications": {
+  "plain": "standard notification",
+  "types": {
+   "notification center": [
+    "notification center"
+   ],
+   "standard notification": [
+    "retro notification",
+    "glass notification",
+    "custom"
+   ],
+   "email template": [
+    "email template"
+   ],
+   "notification card": [
+    "notification card"
+   ],
+   "notification inbox": [
+    "notification inbox"
+   ],
+   "notification template": [
+    "notification template"
+   ]
+  }
+ },
+ "inputs/search": {
+  "plain": "standard search",
+  "types": {
+   "filters": [
+    "with filters"
+   ],
+   "search field": [
+    "search field"
+   ],
+   "suggestions": [
+    "with suggestions"
+   ],
+   "command style": [
+    "command style"
+   ],
+   "expanding": [
+    "expanding"
+   ],
+   "results": [
+    "with results",
+    "search results"
+   ],
+   "domain search": [
+    "domain search"
+   ],
+   "standard search": []
+  }
+ },
+ "motion/shader": {
+  "plain": "standard shader",
+  "types": {
+   "noise or fluid": [
+    "noise or fluid"
+   ],
+   "standard shader": [
+    "gradient shader",
+    "shader"
+   ],
+   "dither": [
+    "dither"
+   ],
+   "particles": [
+    "particles"
+   ],
+   "light effects": [
+    "light effects"
+   ],
+   "shape": [
+    "3d shape"
+   ],
+   "refraction": [
+    "glass or refraction"
+   ],
+   "scene": [
+    "3d scene"
+   ],
+   "fluid or liquid": [
+    "fluid or liquid"
+   ],
+   "orbsy sphere variant": [
+    "orbsy sphere variant"
+   ],
+   "shader example": [
+    "shader example"
+   ],
+   "interactive distortion": [
+    "interactive distortion"
+   ],
+   "blobs": [
+    "blobs"
+   ],
+   "waves": [
+    "waves"
+   ]
+  }
+ },
+ "inputs/color-picker": {
+  "plain": "standard color picker",
+  "types": {
+   "color swatches": [
+    "color swatches"
+   ],
+   "saturation and brightness area": [
+    "saturation and brightness area"
+   ],
+   "hue wheel or ring": [
+    "hue wheel or ring"
+   ],
+   "saturation and hue pad": [
+    "saturation and hue pad"
+   ],
+   "swatch selector": [
+    "swatch selector"
+   ],
+   "standard color picker": []
+  }
+ },
+ "motion/gradient": {
+  "plain": "standard gradient",
+  "types": {
+   "shader gradient": [
+    "shader gradient",
+    "gradient shader",
+    "shader"
+   ],
+   "text": [
+    "gradient text",
+    "text gradient"
+   ],
+   "background": [
+    "animated gradient background"
+   ],
+   "aurora": [
+    "aurora"
+   ],
+   "mesh gradient": [
+    "mesh gradient",
+    "gradient mesh"
+   ],
+   "grain gradient": [
+    "grain gradient"
+   ],
+   "standard gradient": [
+    "gradient animation",
+    "animated gradient",
+    "gradient effect",
+    "glass effect"
+   ]
+  }
+ },
+ "marketing/features": {
+  "plain": "standard feature",
+  "types": {
+   "icon grid": [
+    "icon grid"
+   ],
+   "numbered steps": [
+    "numbered steps"
+   ],
+   "alternating rows": [
+    "alternating rows"
+   ],
+   "tabs or switcher": [
+    "tabs or switcher"
+   ],
+   "list beside image": [
+    "list beside image"
+   ],
+   "card carousel": [
+    "card carousel"
+   ],
+   "bento grid": [
+    "bento grid"
+   ],
+   "stats with features": [
+    "stats with features"
+   ],
+   "scrolling section": [
+    "scrolling section"
+   ],
+   "card grid": [
+    "card grid"
+   ],
+   "split text and image": [
+    "split text and image"
+   ],
+   "feature grid": [
+    "feature grid"
+   ],
+   "split with images": [
+    "split with images",
+    "split with image"
+   ],
+   "feature card": [
+    "cards with state",
+    "feature card"
+   ],
+   "integration tool": [
+    "integration tool"
+   ],
+   "grid of cards": [
+    "grid of cards"
+   ],
+   "two-column split": [
+    "two-column split"
+   ],
+   "expandable or accordion": [
+    "expandable or accordion"
+   ],
+   "standard feature": [
+    "animated or custom"
+   ]
+  }
+ },
+ "marketing/cta": {
+  "plain": "standard cta",
+  "types": {
+   "centered banner": [
+    "centered banner"
+   ],
+   "newsletter signup": [
+    "newsletter signup"
+   ],
+   "card": [
+    "card"
+   ],
+   "full-bleed gradient": [
+    "full-bleed gradient"
+   ],
+   "split with image": [
+    "split with image"
+   ],
+   "media": [
+    "with media"
+   ],
+   "split": [
+    "split"
+   ],
+   "standard cta": [
+    "glowing and gradient"
+   ],
+   "contact options": [
+    "contact options"
+   ],
+   "centered card": [
+    "centered card"
+   ],
+   "split layout": [
+    "split layout"
+   ],
+   "waitlist form": [
+    "waitlist form"
+   ],
+   "email form": [
+    "with email form",
+    "email form"
+   ],
+   "contact form": [
+    "contact form"
+   ]
+  }
+ },
+ "marketing/logos": {
+  "plain": "standard logo",
+  "types": {
+   "integration card grid": [
+    "integration card grid"
+   ],
+   "grid": [
+    "grid",
+    "simple grid"
+   ],
+   "marquee": [
+    "marquee"
+   ],
+   "static row": [
+    "static row"
+   ],
+   "carousel": [
+    "carousel"
+   ],
+   "stats": [
+    "with stats"
+   ],
+   "copy": [
+    "with copy"
+   ],
+   "integration hub": [
+    "integration hub"
+   ],
+   "integrations": [
+    "integrations"
+   ],
+   "partner grid": [
+    "partner grid"
+   ],
+   "directory grid": [
+    "directory grid"
+   ],
+   "integration list": [
+    "integration list"
+   ],
+   "standard logo": []
+  }
+ },
+ "marketing/team": {
+  "plain": "standard team",
+  "types": {
+   "cards with socials": [
+    "cards with socials"
+   ],
+   "photo grid": [
+    "photo grid"
+   ],
+   "portraits and hover": [
+    "portraits and hover",
+    "portrait"
+   ],
+   "grid of cards": [
+    "grid of cards"
+   ],
+   "carousel": [
+    "carousel"
+   ],
+   "split layout": [
+    "split layout"
+   ],
+   "lists and directories": [
+    "lists and directories"
+   ],
+   "team management": [
+    "team management"
+   ],
+   "about section": [
+    "about section"
+   ],
+   "founders": [
+    "founders"
+   ],
+   "cards": [
+    "glowing cards"
+   ],
+   "standard team": []
+  }
+ },
+ "marketing/comparison": {
+  "plain": "standard comparison",
+  "types": {
+   "us versus them": [
+    "us versus them"
+   ],
+   "comparison table": [
+    "comparison table"
+   ],
+   "feature table": [
+    "feature table"
+   ],
+   "before and after slider": [
+    "before and after slider"
+   ],
+   "side-by-side cards": [
+    "side-by-side cards"
+   ],
+   "metric comparison": [
+    "metric comparison"
+   ],
+   "before and after": [
+    "before and after"
+   ],
+   "product comparison": [
+    "product comparison"
+   ],
+   "standard comparison": []
+  }
+ },
+ "ai-agent/composer": {
+  "plain": "standard composer",
+  "types": {
+   "suggestions": [
+    "with suggestions",
+    "suggestions"
+   ],
+   "prompt inputs": [
+    "prompt input",
+    "prompt inputs"
+   ],
+   "chat composer": [
+    "chat composer",
+    "chat composers"
+   ],
+   "attachments": [
+    "with attachments"
+   ],
+   "standard composer": [
+    "composer"
+   ],
+   "component": [
+    "component"
+   ],
+   "prompt input box": [
+    "prompt input box"
+   ]
+  }
+ },
+ "marketing/hero": {
+  "plain": "standard hero",
+  "types": {
+   "split text and image": [
+    "split text and image"
+   ],
+   "centered headline": [
+    "centered headline"
+   ],
+   "signup form": [
+    "with signup form"
+   ],
+   "logos or proof": [
+    "with logos or proof"
+   ],
+   "product screenshot": [
+    "product screenshot"
+   ],
+   "text only": [
+    "text only"
+   ],
+   "background": [
+    "animated background"
+   ],
+   "image collage": [
+    "image collage"
+   ],
+   "webgl scene": [
+    "3d or webgl scene"
+   ],
+   "video background": [
+    "video background"
+   ],
+   "fullscreen image": [
+    "fullscreen image"
+   ],
+   "image background": [
+    "image background"
+   ],
+   "standard hero": []
+  }
+ },
+ "inputs/rating": {
+  "plain": "standard rating",
+  "types": {
+   "feedback widget": [
+    "feedback widget",
+    "with feedback"
+   ],
+   "star rating": [
+    "star rating"
+   ],
+   "review list": [
+    "review list"
+   ],
+   "emoji or icon rating": [
+    "emoji or icon rating"
+   ],
+   "standard rating": [
+    "basic",
+    "basic rating"
+   ]
+  }
+ },
+ "marketing/about": {
+  "plain": "standard about",
+  "types": {
+   "mission and values": [
+    "mission and values"
+   ],
+   "story with photo": [
+    "story with photo"
+   ],
+   "principles list": [
+    "principles list"
+   ],
+   "split with images": [
+    "split with images"
+   ],
+   "team intro": [
+    "team intro"
+   ],
+   "stats band": [
+    "stats band"
+   ],
+   "standard about": []
+  }
+ },
+ "data-viz/map": {
+  "plain": "standard map",
+  "types": {
+   "pin map": [
+    "pin map"
+   ],
+   "world map": [
+    "world map"
+   ],
+   "choropleth": [
+    "choropleth"
+   ],
+   "route": [
+    "route"
+   ],
+   "standard map": []
+  }
+ },
+ "data-display/json-viewer": {
+  "plain": "standard json viewer",
+  "types": {
+   "collapsible tree": [
+    "collapsible tree"
+   ],
+   "searchable tree": [
+    "searchable tree"
+   ],
+   "keyboard navigation": [
+    "keyboard navigation"
+   ],
+   "standard json viewer": []
+  }
+ },
+ "motion/tilt-3d": {
+  "plain": "standard tilt 3d",
+  "types": {
+   "transform": [
+    "3d transform"
+   ],
+   "tilt on hover": [
+    "tilt on hover"
+   ],
+   "carousel effect": [
+    "3d carousel",
+    "3d carousel effect"
+   ],
+   "perspective grid": [
+    "perspective grid"
+   ],
+   "scene": [
+    "3d scene"
+   ],
+   "standard tilt 3d": [
+    "3d tilt effect"
+   ],
+   "text reveal": [
+    "3d text reveal"
+   ]
+  }
+ },
+ "navigation/table-of-contents": {
+  "plain": "standard table of content",
+  "types": {
+   "scroll tracking": [
+    "scroll tracking"
+   ],
+   "vertical toc": [
+    "vertical toc"
+   ],
+   "outline": [
+    "outline"
+   ],
+   "minimap variant": [
+    "minimap variant"
+   ],
+   "auto-generated toc": [
+    "auto-generated toc"
+   ],
+   "sticky sidebar toc": [
+    "sticky sidebar toc"
+   ],
+   "compact minimap": [
+    "compact minimap"
+   ],
+   "sticky aside": [
+    "sticky aside"
+   ],
+   "standard table of content": []
+  }
+ },
+ "motion/border": {
+  "plain": "standard border",
+  "types": {
+   "standard border": [
+    "animated border",
+    "border glow",
+    "border",
+    "glow border",
+    "border effect"
+   ],
+   "border beam": [
+    "border beam",
+    "beam animation"
+   ],
+   "trail border": [
+    "trail border"
+   ],
+   "shine border": [
+    "shine border",
+    "shine animation"
+   ],
+   "traveling beam": [
+    "traveling beam"
+   ],
+   "gpu gradient": [
+    "gpu gradient"
+   ]
+  }
+ },
+ "media/card-stack": {
+  "plain": "standard card stack",
+  "types": {
+   "swipeable": [
+    "swipeable"
+   ],
+   "draggable": [
+    "draggable"
+   ],
+   "stack or deck": [
+    "stack or deck"
+   ],
+   "circular": [
+    "3d or circular"
+   ],
+   "perspective": [
+    "3d or perspective"
+   ],
+   "auto-rotating": [
+    "auto-rotating"
+   ],
+   "standard card stack": []
+  }
+ },
+ "motion/globe": {
+  "plain": "standard globe",
+  "types": {
+   "rotating globe": [
+    "3d rotating globe"
+   ],
+   "globe with markers and arcs": [
+    "globe with markers and arcs"
+   ],
+   "standard globe": [
+    "globe"
+   ],
+   "featured globe": [
+    "featured globe"
+   ],
+   "world clock": [
+    "world clock"
+   ],
+   "text placeholder": [
+    "text placeholder"
+   ],
+   "placeholder": [
+    "simple placeholder"
+   ],
+   "interactive 3d globe": [
+    "interactive 3d globe"
+   ],
+   "physics simulation": [
+    "physics simulation"
+   ]
+  }
+ },
+ "motion/ascii": {
+  "plain": "standard ascii",
+  "types": {
+   "ascii render": [
+    "ascii render"
+   ],
+   "ascii transition": [
+    "ascii transition"
+   ],
+   "ascii magnify": [
+    "ascii magnify"
+   ],
+   "image to ascii": [
+    "image to ascii"
+   ],
+   "standard ascii": [
+    "ascii 3d",
+    "ascii effect"
+   ],
+   "ascii pattern": [
+    "ascii pattern"
+   ],
+   "ascii chart": [
+    "ascii chart"
+   ],
+   "ascii diagram": [
+    "ascii diagram"
+   ]
+  }
+ },
+ "lib/hook": {
+  "plain": "standard hook",
+  "types": {
+   "standard hook": [
+    "state",
+    "hook",
+    "helper",
+    "hook helper"
+   ],
+   "media query": [
+    "media query"
+   ],
+   "dom or events": [
+    "dom or events",
+    "dom and events"
+   ],
+   "timing": [
+    "timing"
+   ],
+   "data fetching": [
+    "data fetching"
+   ],
+   "media and layout": [
+    "media and layout"
+   ],
+   "storage": [
+    "storage"
+   ],
+   "provider": [
+    "provider"
+   ],
+   "management": [
+    "state management"
+   ],
+   "timing and motion": [
+    "timing and motion"
+   ],
+   "effects and lifecycle": [
+    "effects and lifecycle"
+   ],
+   "browser apis": [
+    "browser apis"
+   ],
+   "form handling": [
+    "form handling"
+   ]
+  }
+ },
+ "data-display/diff": {
+  "plain": "standard diff",
+  "types": {
+   "file diff": [
+    "file diff"
+   ],
+   "standard diff": [
+    "basic diff",
+    "diff"
+   ],
+   "decisions": [
+    "with decisions"
+   ],
+   "inline diff": [
+    "inline diff"
+   ],
+   "split view": [
+    "split view"
+   ],
+   "code review": [
+    "code review"
+   ],
+   "code file diff": [
+    "code file diff"
+   ]
+  }
+ },
+ "actions/segmented-control": {
+  "plain": "standard segmented control",
+  "types": {
+   "standard segmented control": [
+    "basic segmented",
+    "segmented buttons"
+   ],
+   "sliding pill": [
+    "sliding pill"
+   ],
+   "sliding thumb": [
+    "sliding thumb"
+   ],
+   "pill or segmented": [
+    "pill or segmented"
+   ],
+   "button segments": [
+    "button segments"
+   ],
+   "segmented toggle": [
+    "segmented toggle"
+   ],
+   "pill toggle with sliding thumb": [
+    "pill toggle with sliding thumb"
+   ],
+   "toggle group or radio buttons": [
+    "toggle group or radio buttons"
+   ],
+   "rubber segment": [
+    "rubber segment"
+   ],
+   "mode selector": [
+    "mode selector"
+   ]
+  }
+ },
+ "other/other": {
+  "plain": "standard other",
+  "types": {
+   "standard other": [
+    "animation helper",
+    "animation effect",
+    "other",
+    "helper"
+   ],
+   "layout utility": [
+    "layout utility"
+   ],
+   "text effect": [
+    "text effect",
+    "text animation"
+   ],
+   "shapes or grid": [
+    "shapes or grid"
+   ],
+   "decorative shape": [
+    "decorative shape"
+   ],
+   "utility or helper": [
+    "utility",
+    "utility or helper"
+   ],
+   "utility provider": [
+    "utility provider"
+   ],
+   "layout primitive": [
+    "layout primitive"
+   ],
+   "interaction pattern": [
+    "interaction pattern"
+   ],
+   "accordion variant": [
+    "accordion variant"
+   ],
+   "motion effect": [
+    "motion effect",
+    "animation or motion effect"
+   ],
+   "utility function": [
+    "utility function"
+   ],
+   "workflow task": [
+    "workflow task"
+   ],
+   "layout wrapper": [
+    "layout wrapper"
+   ],
+   "separator": [
+    "separator"
+   ],
+   "click particle effect": [
+    "click particle effect"
+   ],
+   "empty state": [
+    "empty state"
+   ],
+   "interactive cursor": [
+    "interactive cursor"
+   ],
+   "framework": [
+    "framework"
+   ],
+   "service integration": [
+    "service integration"
+   ],
+   "utility or hook": [
+    "utility or hook"
+   ],
+   "mechanical or 3d model": [
+    "mechanical or 3d model"
+   ],
+   "admin or data tool": [
+    "admin or data tool"
+   ],
+   "notification": [
+    "notification"
+   ]
+  }
+ },
+ "inputs/date-range": {
+  "plain": "standard date range",
+  "types": {
+   "dual month calendar": [
+    "dual month calendar"
+   ],
+   "calendar interface": [
+    "calendar interface"
+   ],
+   "distribution histogram": [
+    "distribution histogram"
+   ],
+   "range picker": [
+    "range picker",
+    "date picker"
+   ],
+   "range picker with presets": [
+    "range picker with presets"
+   ],
+   "aria date picker": [
+    "aria date picker"
+   ],
+   "range calendar": [
+    "range calendar"
+   ],
+   "range input": [
+    "range input"
+   ],
+   "standard date range": [
+    "animated range",
+    "retro style",
+    "range"
+   ]
+  }
+ },
+ "data-viz/gauge": {
+  "plain": "standard gauge",
+  "types": {
+   "circular": [
+    "circular gauge",
+    "circular"
+   ],
+   "linear meter": [
+    "linear meter"
+   ],
+   "segmented meter": [
+    "segmented meter"
+   ],
+   "segmented": [
+    "segmented",
+    "segmented gauge"
+   ],
+   "specialized gauge": [
+    "specialized gauge"
+   ],
+   "standard gauge": [
+    "classic gauge",
+    "gauge"
+   ],
+   "linear gauge": [
+    "linear gauge"
+   ],
+   "strength meter": [
+    "strength meter"
+   ]
+  }
+ },
+ "data-viz/flow": {
+  "plain": "standard flow",
+  "types": {
+   "layout basic": [
+    "layout basic"
+   ],
+   "sankey flow": [
+    "sankey flow"
+   ],
+   "funnel": [
+    "funnel"
+   ],
+   "standard flow": [
+    "flow",
+    "animation effect"
+   ],
+   "flow diagram": [
+    "flow diagram"
+   ],
+   "node": [
+    "basic node"
+   ],
+   "editing interaction": [
+    "editing interaction"
+   ],
+   "workflow editor": [
+    "workflow editor"
+   ],
+   "edge effect": [
+    "edge effect"
+   ],
+   "layout algorithm": [
+    "layout algorithm"
+   ],
+   "interaction advanced": [
+    "interaction advanced"
+   ]
+  }
+ },
+ "media/image-compare": {
+  "plain": "standard image compare",
+  "types": {
+   "draggable slider": [
+    "draggable slider"
+   ],
+   "comparison layout": [
+    "comparison layout"
+   ],
+   "slider": [
+    "slider",
+    "3d slider"
+   ],
+   "before and after": [
+    "before and after"
+   ],
+   "standard image compare": [
+    "image compare"
+   ],
+   "draggable clip-path slider": [
+    "draggable clip-path slider"
+   ]
+  }
+ },
+ "inputs/time-picker": {
+  "plain": "standard time picker",
+  "types": {
+   "inline column picker": [
+    "inline column picker"
+   ],
+   "segmented time entry": [
+    "segmented time entry"
+   ],
+   "popup picker": [
+    "popup picker"
+   ],
+   "scrollable columns": [
+    "scrollable columns"
+   ],
+   "calendar with time": [
+    "calendar with time"
+   ],
+   "standard time picker": [
+    "time picker",
+    "basic time"
+   ],
+   "time input": [
+    "time input"
+   ],
+   "segment-based": [
+    "segment-based"
+   ],
+   "form-integrated": [
+    "form-integrated"
+   ],
+   "dialog picker": [
+    "dialog picker"
+   ]
+  }
+ },
+ "actions/copy-button": {
+  "plain": "standard copy button",
+  "types": {
+   "standard copy button": [
+    "basic copy",
+    "copy button",
+    "copy"
+   ],
+   "transition": [
+    "animated transition"
+   ],
+   "code block with copy": [
+    "code block with copy"
+   ],
+   "copy or share": [
+    "copy or share"
+   ],
+   "feedback animation": [
+    "with feedback animation"
+   ],
+   "icon state morph": [
+    "icon state morph"
+   ],
+   "label": [
+    "with label"
+   ]
+  }
+ },
+ "media/mockup": {
+  "plain": "standard mockup",
+  "types": {
+   "device frame": [
+    "device frame"
+   ],
+   "interactive frame": [
+    "animated or interactive frame"
+   ],
+   "device mockup": [
+    "device mockup",
+    "3d device mockup"
+   ],
+   "slide gesture": [
+    "slide gesture"
+   ],
+   "standard mockup": [
+    "mockup"
+   ],
+   "specialized hardware frame": [
+    "specialized hardware frame"
+   ]
+  }
+ },
+ "inputs/tag-input": {
+  "plain": "standard tag input",
+  "types": {
+   "standard tag input": [
+    "tags input",
+    "tag input",
+    "basic tag input"
+   ],
+   "suggestions": [
+    "with suggestions",
+    "single input with suggestions"
+   ],
+   "tag or chip": [
+    "tag or chip"
+   ],
+   "multi select": [
+    "multi-tag with select",
+    "multi select"
+   ],
+   "text to tags": [
+    "text to tags"
+   ],
+   "token or amount input": [
+    "token or amount input"
+   ]
+  }
+ },
+ "none": {
+  "plain": "standard none",
+  "types": {
+   "article layout": [
+    "article layout"
+   ],
+   "contact form": [
+    "contact form"
+   ],
+   "standard none": [
+    "animation",
+    "helper"
+   ],
+   "pagination": [
+    "basic pagination"
+   ],
+   "featured grid": [
+    "featured grid"
+   ],
+   "scene": [
+    "3d scene"
+   ],
+   "centered form": [
+    "centered form"
+   ]
+  }
+ },
+ "overlays/lightbox": {
+  "plain": "standard lightbox",
+  "types": {
+   "thumbnail-connected viewer": [
+    "thumbnail-connected viewer"
+   ],
+   "fullscreen viewer": [
+    "fullscreen viewer"
+   ],
+   "standard lightbox": [
+    "lightbox"
+   ],
+   "full-screen viewer": [
+    "full-screen viewer"
+   ]
+  }
+ }
+}

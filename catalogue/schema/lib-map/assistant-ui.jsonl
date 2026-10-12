@@ -1,0 +1,170 @@
+{"id": "assistant-ui:accordion", "node": "component/accordion", "variation": "standard-accordion", "job": "Stacked headings that reveal or hide content sections."}
+{"id": "assistant-ui:agent-status", "node": "component/agent-parts", "variation": "working-status", "job": "A runtime task summary chip with an optional tray for every task in the thread."}
+{"id": "assistant-ui:ai-sdk-backend", "node": null, "variation": null, "job": "Plumbing, not a part you see."}
+{"id": "assistant-ui:ai-sdk-backend-resumable", "node": null, "variation": null, "job": "Plumbing, not a part you see."}
+{"id": "assistant-ui:assistant-modal", "node": "section/chat", "variation": "widget", "job": "Floating chat bubble for support widgets and help desks, with a thread list and a resizabl"}
+{"id": "assistant-ui:assistant-sidebar", "node": "section/chat", "variation": "side-panel", "job": "Side panel chat for copilot experiences and inline assistance."}
+{"id": "assistant-ui:attachment", "node": "component/composer", "variation": "with-attachments", "job": "Attach files from the composer and view them inside messages."}
+{"id": "assistant-ui:badge", "node": "atom/badge", "variation": "badge", "job": "Small label for status, categories, and metadata."}
+{"id": "assistant-ui:chat/b/ai-sdk-quick-start/json", "node": "page/chat-screen", "variation": "chat-history", "job": "Assistant page wired to the AI SDK chat route, with the thread component installed."}
+{"id": "assistant-ui:composer-trigger-popover", "node": "component/composer", "variation": "mentions-commands", "job": "Character triggered picker for @ mentions, / commands, and similar popovers."}
+{"id": "assistant-ui:context-display", "node": "component/agent-parts", "variation": "usage-cost", "job": "Token usage against a model's context window as a ring, bar, or text, with a hover popover"}
+{"id": "assistant-ui:conversation-map", "node": "section/chat", "variation": "thread-nav", "job": "Runtime-backed thread rail: a tick per turn, the turn being read marked and the ones on sc"}
+{"id": "assistant-ui:diff-viewer", "node": "component/code", "variation": "diff-view", "job": "Render code diffs with highlighted additions and deletions."}
+{"id": "assistant-ui:direction", "node": null, "variation": null, "job": "Plumbing, not a part you see."}
+{"id": "assistant-ui:directive-text", "node": "component/composer", "variation": "mentions-commands", "job": "Render mention directives as inline chips in user messages."}
+{"id": "assistant-ui:dot-matrix", "node": "component/agent-parts", "variation": "working-status", "job": "5x5 dot matrix indicator with state specific blink patterns."}
+{"id": "assistant-ui:elements-activity-graph", "node": "component/chart", "variation": "heatmap", "job": "A half-year of runs as a calendar of cells, dense where the work was."}
+{"id": "assistant-ui:elements-agent-card", "node": "component/agent-parts", "variation": "agents", "job": "Who you are about to talk to: its skills, its model, and the endpoint behind it."}
+{"id": "assistant-ui:elements-agent-handoff", "node": "component/agent-parts", "variation": "agents", "job": "Control passing between agents, with the reason and what came along."}
+{"id": "assistant-ui:elements-agent-plan", "node": "component/agent-parts", "variation": "plan-tasks", "job": "A checklist the agent works through, with progress you can glance."}
+{"id": "assistant-ui:elements-agent-status", "node": "component/agent-parts", "variation": "working-status", "job": "One pill that always answers: what is it doing, and for how long."}
+{"id": "assistant-ui:elements-approval-card", "node": "component/agent-parts", "variation": "approval", "job": "Human in the loop: the agent asks before it runs anything with side effects."}
+{"id": "assistant-ui:elements-artifact-card", "node": "component/agent-parts", "variation": "artifact-display", "job": "A generated document as a tangible object, written live and versioned."}
+{"id": "assistant-ui:elements-background-inbox", "node": "component/inbox", "variation": "notification-center", "job": "Work still going somewhere else, and the results waiting to be collected."}
+{"id": "assistant-ui:elements-canvas-split", "node": "page/chat-screen", "variation": "chat-with-artifact", "job": "The thread steps aside and the document takes the room, still being written as you read."}
+{"id": "assistant-ui:elements-chart", "node": "component/chart", "variation": "area-chart", "job": "Area, line, and bars, with points landing one at a time as the series streams in."}
+{"id": "assistant-ui:elements-chat-panel", "node": "section/chat", "variation": "thread", "job": "The whole family working together: a message, a pause, a streamed reply."}
+{"id": "assistant-ui:elements-checkpoint-history", "node": "component/agent-parts", "variation": "checkpoints", "job": "Points you can fall back to, with what each one would give back."}
+{"id": "assistant-ui:elements-code-diff", "node": "component/code", "variation": "diff-view", "job": "A unified diff with tinted additions and removals, sized for chat."}
+{"id": "assistant-ui:elements-code-runner", "node": "component/code", "variation": "run-results", "job": "A snippet with a run button, and the output it produced attached below it."}
+{"id": "assistant-ui:elements-collapsible-root", "node": null, "variation": null, "job": "Plumbing, not a part you see."}
+{"id": "assistant-ui:elements-command-palette", "node": "component/command", "variation": "command-palette", "job": "Everything the app can do, one keystroke away and grouped by where it acts."}
+{"id": "assistant-ui:elements-comparison-card", "node": "component/agent-parts", "variation": "structured-answer", "job": "Two options weighed side by side, with the pick named and argued."}
+{"id": "assistant-ui:elements-composer", "node": "component/composer", "variation": "chat-composer", "job": "The unified input: attachments, commands, mentions, models, voice, and context in one surf"}
+{"id": "assistant-ui:elements-computer-use", "node": "component/agent-parts", "variation": "computer-use", "job": "The screen the agent is driving, with a cursor trail and what it is doing right now."}
+{"id": "assistant-ui:elements-confidence-marker", "node": "component/agent-parts", "variation": "citations", "job": "Which claims came from a source, which were inferred, and which are guesses."}
+{"id": "assistant-ui:elements-connection-state", "node": "component/agent-parts", "variation": "notices", "job": "The socket drops, the run keeps going on the server, and the stream is picked back up."}
+{"id": "assistant-ui:elements-context-breakdown", "node": "component/agent-parts", "variation": "usage-cost", "job": "Where the window actually went: prompt, tools, files, conversation, and what's left."}
+{"id": "assistant-ui:elements-context-display", "node": "component/agent-parts", "variation": "usage-cost", "job": "The props-driven context usage display: ring, bar, and text presets with the usage popover", "same_as": "assistant-ui:context-display"}
+{"id": "assistant-ui:elements-context-usage", "node": null, "variation": null, "job": "Plumbing, not a part you see."}
+{"id": "assistant-ui:elements-conversation-map", "node": "section/chat", "variation": "thread-nav", "job": "A rail of the whole thread: one tick per turn, the turn being read marked and the ones on ", "same_as": "assistant-ui:conversation-map"}
+{"id": "assistant-ui:elements-conversation-search", "node": "section/chat", "variation": "thread-nav", "job": "Find inside a long thread, with every hit marked down the scrollbar."}
+{"id": "assistant-ui:elements-cost-meter", "node": "component/agent-parts", "variation": "usage-cost", "job": "What the run spent, split by model, against the session total."}
+{"id": "assistant-ui:elements-data-table", "node": "component/table", "variation": "data-table", "job": "A tool's rows and columns with formatting, sorting, and a card layout in narrow columns."}
+{"id": "assistant-ui:elements-day-separator", "node": "component/message", "variation": "chat-thread", "job": "Chronology in a long thread: days marked, times on hover."}
+{"id": "assistant-ui:elements-diagram", "node": "component/agent-parts", "variation": "diagram-math", "job": "A drawn answer with zoom, reset, and a full-bleed view; you hand it the rendered graphic."}
+{"id": "assistant-ui:elements-directive-text", "node": "component/composer", "variation": "mentions-commands", "job": "The props-driven directive chip renderer: bring your own formatter, no runtime required.", "same_as": "assistant-ui:directive-text"}
+{"id": "assistant-ui:elements-document-reference", "node": "component/agent-parts", "variation": "sources-display", "job": "A document the answer leans on, with the quoted passage and the page to jump to."}
+{"id": "assistant-ui:elements-draft-restore", "node": "component/composer", "variation": "chat-composer", "job": "Come back to a thread and the sentence you never sent is still waiting."}
+{"id": "assistant-ui:elements-edit-message", "node": "component/message", "variation": "branches-edit", "job": "Rewrite a turn in place, told up front how many replies the edit throws away."}
+{"id": "assistant-ui:elements-elicitation-form", "node": "component/agent-parts", "variation": "ask-user", "job": "A server pausing mid-tool-call to ask you for the fields it still needs."}
+{"id": "assistant-ui:elements-empty-state", "node": "component/empty", "variation": "with-action", "job": "The first screen: a greeting, three ways in, and the composer front and center."}
+{"id": "assistant-ui:elements-error-state", "node": "component/agent-parts", "variation": "notices", "job": "A quiet failure banner with a retry path, not a modal in your face."}
+{"id": "assistant-ui:elements-feedback-dialog", "node": "component/message", "variation": "actions-feedback", "job": "A thumbs-down that asks why, so the signal arrives with a reason attached."}
+{"id": "assistant-ui:elements-file-tree", "node": "component/tree", "variation": "file-tree", "job": "Everything a run touched, as a tree, with the churn spelled out per file."}
+{"id": "assistant-ui:elements-flow-graph", "node": "component/agent-parts", "variation": "workflow-graph", "job": "Work as a graph rather than a list: branches that fan out and rejoin."}
+{"id": "assistant-ui:elements-geo-map", "node": "component/map", "variation": "route-map", "job": "Places and routes on a real tiled map, with an accessible list of every place."}
+{"id": "assistant-ui:elements-guardrail-notice", "node": "component/agent-parts", "variation": "notices", "job": "A refusal in its own shape, with the nearest thing it can do instead."}
+{"id": "assistant-ui:elements-href", "node": null, "variation": null, "job": "Plumbing, not a part you see."}
+{"id": "assistant-ui:elements-image-gallery", "node": "component/agent-parts", "variation": "generated-image", "job": "A compact grid of returned images that opens each one in a shared lightbox."}
+{"id": "assistant-ui:elements-image-generation", "node": "component/agent-parts", "variation": "generated-image", "job": "A dot grid holds the frame while the image resolves out of a blur."}
+{"id": "assistant-ui:elements-inline-citation", "node": "component/agent-parts", "variation": "citations", "job": "Numbered references inside a sentence, each with a hover preview of its source."}
+{"id": "assistant-ui:elements-job-progress", "node": "component/agent-parts", "variation": "plan-tasks", "job": "Work measured in minutes: weighted stages, an ETA, and a way out."}
+{"id": "assistant-ui:elements-launcher-bubble", "node": "section/chat", "variation": "widget", "job": "The floating entry point, and the panel it opens into."}
+{"id": "assistant-ui:elements-loading-state", "node": "component/agent-parts", "variation": "working-status", "job": "A pixel matrix that keeps time while the model has nothing to show yet."}
+{"id": "assistant-ui:elements-map-answer", "node": "component/map", "variation": "route-map", "job": "A location answer: pins, a route between them, and the list they came from."}
+{"id": "assistant-ui:elements-math-block", "node": "component/agent-parts", "variation": "diagram-math", "job": "Rendered expressions with the working shown, one step at a time."}
+{"id": "assistant-ui:elements-mcp-config-state", "node": null, "variation": null, "job": "Plumbing, not a part you see."}
+{"id": "assistant-ui:elements-mcp-server-panel", "node": "component/agent-parts", "variation": "settings", "job": "Which servers are connected, what each one brought, and which is still waiting on you."}
+{"id": "assistant-ui:elements-media-player", "node": "component/player", "variation": "video-player", "job": "Audio and video a tool returned, played inline without leaving the thread."}
+{"id": "assistant-ui:elements-memory-chips", "node": "component/agent-parts", "variation": "memory", "job": "What it now remembers about you, written during the turn and removable."}
+{"id": "assistant-ui:elements-mermaid-diagram", "node": "component/agent-parts", "variation": "diagram-math", "job": "The props-driven Mermaid renderer: zoom overlay, skeleton, and error fallback, no runtime ", "same_as": "assistant-ui:mermaid-diagram"}
+{"id": "assistant-ui:elements-message-actions", "node": "component/message", "variation": "actions-feedback", "job": "Copy, rate, and regenerate. Each action confirms itself with a small state change."}
+{"id": "assistant-ui:elements-message-attachment", "node": "component/composer", "variation": "with-attachments", "job": "Files as received rather than staged: an image to open, a document with its page count."}
+{"id": "assistant-ui:elements-message-branches", "node": "component/message", "variation": "branches-edit", "job": "Navigate between regenerated versions of the same answer without losing your place."}
+{"id": "assistant-ui:elements-message-pair", "node": "component/message", "variation": "message-bubble", "job": "A user bubble and a streaming assistant reply, with actions that appear on hover."}
+{"id": "assistant-ui:elements-message-queue", "node": "component/composer", "variation": "queue", "job": "Turns you typed while a run was in flight, stacked and cancelable until it finishes."}
+{"id": "assistant-ui:elements-message-timing", "node": "component/agent-parts", "variation": "usage-cost", "job": "What the turn cost: time to first token, throughput, tokens, money.", "same_as": "assistant-ui:message-timing"}
+{"id": "assistant-ui:elements-mobile-composer", "node": "component/composer", "variation": "chat-composer", "job": "The bottom sheet: keyboard-aware, quick actions above, thumb-sized targets."}
+{"id": "assistant-ui:elements-modal-size", "node": null, "variation": null, "job": "Plumbing, not a part you see."}
+{"id": "assistant-ui:elements-model-picker", "node": "component/composer", "variation": "with-model-picker", "job": "The full list rather than the rail: grouped by family, priced, with what each one can do."}
+{"id": "assistant-ui:elements-model-selection", "node": null, "variation": null, "job": "Plumbing, not a part you see."}
+{"id": "assistant-ui:elements-model-selector", "node": "component/composer", "variation": "with-model-picker", "job": "The props-driven model picker: search, groups, and reasoning effort levels, no runtime req", "same_as": "assistant-ui:model-selector"}
+{"id": "assistant-ui:elements-number-ticker", "node": "component/stat", "variation": "counter", "job": "Digits that roll into place as a count updates in real time.", "same_as": "assistant-ui:number-roll"}
+{"id": "assistant-ui:elements-onboarding", "node": "component/steps", "variation": "onboarding-flow", "job": "First run: three moves that teach what this assistant is actually for."}
+{"id": "assistant-ui:elements-option-list", "node": "component/agent-parts", "variation": "ask-user", "job": "The agent asks a question with a few answers; the pick returns to it and stays as a receip"}
+{"id": "assistant-ui:elements-permission-grant", "node": "component/agent-parts", "variation": "approval", "job": "Granting a capability rather than approving one action, with the reach spelled out."}
+{"id": "assistant-ui:elements-prompt-library", "node": "component/composer", "variation": "prompt-inputs", "job": "Prompts you saved, searchable, with their variables shown before you insert one."}
+{"id": "assistant-ui:elements-question-flow", "node": "component/agent-parts", "variation": "ask-user", "job": "A few short questions asked one at a time, answered together and kept as a receipt."}
+{"id": "assistant-ui:elements-quota-banner", "node": "component/agent-parts", "variation": "notices", "job": "How much is left, when it comes back, and the way to get more."}
+{"id": "assistant-ui:elements-quote-reply", "node": "component/composer", "variation": "quote-reply", "job": "Select a phrase in an answer and a toolbar offers to quote, explain, or rewrite it.", "same_as": "assistant-ui:quote"}
+{"id": "assistant-ui:elements-range", "node": null, "variation": null, "job": "Plumbing, not a part you see."}
+{"id": "assistant-ui:elements-read-aloud", "node": "component/agent-parts", "variation": "transcript", "job": "An answer played back, the spoken word lit as it goes, speed under your thumb."}
+{"id": "assistant-ui:elements-reasoning", "node": "component/agent-parts", "variation": "reasoning-display", "job": "The props-driven reasoning disclosure: streaming preview, fades, and variants, no runtime ", "same_as": "assistant-ui:reasoning"}
+{"id": "assistant-ui:elements-reasoning-effort", "node": "component/composer", "variation": "with-model-picker", "job": "How hard to think, and how much of that budget the run actually spent."}
+{"id": "assistant-ui:elements-reasoning-panel", "node": "component/agent-parts", "variation": "reasoning-display", "job": "A collapsible trace that streams reasoning steps along a timeline, then settles into a sum"}
+{"id": "assistant-ui:elements-receipt-focus", "node": null, "variation": null, "job": "Plumbing, not a part you see."}
+{"id": "assistant-ui:elements-recommendation-card", "node": "component/agent-parts", "variation": "approval", "job": "The agent proposes a change with its confidence, and waits for a yes."}
+{"id": "assistant-ui:elements-regenerate-menu", "node": "component/message", "variation": "branches-edit", "job": "Fork the same turn to a different model instead of rolling the same dice."}
+{"id": "assistant-ui:elements-research-report", "node": "component/agent-parts", "variation": "artifact-display", "job": "An outline that fills in section by section, each carrying the sources behind it."}
+{"id": "assistant-ui:elements-retrieval-chunks", "node": "component/agent-parts", "variation": "sources-display", "job": "The passages a retrieval answer stands on, scored, before the answer itself arrives."}
+{"id": "assistant-ui:elements-reviewable-diff", "node": "component/code", "variation": "diff-view", "job": "The same diff, but each hunk is a decision: keep it, discard it, apply what survived."}
+{"id": "assistant-ui:elements-run-activity", "node": "component/agent-parts", "variation": "tool-calls", "job": "Ordered commentary and tools, with a live summary and a final answer that stays visible."}
+{"id": "assistant-ui:elements-schedule-card", "node": "component/agent-parts", "variation": "plan-tasks", "job": "A run that repeats on its own, with its cadence and how it has been doing."}
+{"id": "assistant-ui:elements-score-breakdown", "node": "component/agent-parts", "variation": "structured-answer", "job": "A verdict with its arithmetic shown: criteria, weights, and what pulled it down."}
+{"id": "assistant-ui:elements-scroll-anchor", "node": "section/chat", "variation": "jump-to-latest", "job": "Streaming never steals your scroll position; a pill offers the way back down."}
+{"id": "assistant-ui:elements-settings-panel", "node": "component/agent-parts", "variation": "settings", "job": "Model, system prompt, temperature, and what the assistant is allowed to do."}
+{"id": "assistant-ui:elements-shared-conversation", "node": "page/chat-screen", "variation": "chat-history", "job": "A read-only transcript someone sent you, with a way to pick it up yourself."}
+{"id": "assistant-ui:elements-shiki-highlighter", "node": "component/code", "variation": "highlighted-code", "job": "The props-driven Shiki code block: streaming-aware highlighting, no runtime required.", "same_as": "assistant-ui:shiki-highlighter"}
+{"id": "assistant-ui:elements-sources", "node": "component/agent-parts", "variation": "sources-display", "job": "Citations collapsed into a pill, expanding into scannable source cards."}
+{"id": "assistant-ui:elements-speaker-identity", "node": "component/message", "variation": "message-bubble", "job": "Who is talking, once a thread holds more than a user and one model."}
+{"id": "assistant-ui:elements-spec-sheet", "node": "component/agent-parts", "variation": "structured-answer", "job": "The most common structured answer after a table: one object, labeled."}
+{"id": "assistant-ui:elements-stopped-run", "node": "component/agent-parts", "variation": "notices", "job": "You pressed stop. The half-written answer stays, and continuing is one tap away."}
+{"id": "assistant-ui:elements-streaming-text", "node": "component/message", "variation": "streaming-text", "job": "Tokens arrive softly: the newest words land in blue and settle into ink."}
+{"id": "assistant-ui:elements-subagent-list", "node": "component/agent-parts", "variation": "agents", "job": "Parallel workers with their own progress, models, and completions."}
+{"id": "assistant-ui:elements-suggestions", "node": "component/message", "variation": "suggestions", "job": "Prompt pills that stagger in after a reply and invite the next turn."}
+{"id": "assistant-ui:elements-surfaces", "node": null, "variation": null, "job": "Plumbing, not a part you see."}
+{"id": "assistant-ui:elements-task", "node": null, "variation": null, "job": "Plumbing, not a part you see."}
+{"id": "assistant-ui:elements-task-card", "node": "component/agent-parts", "variation": "plan-tasks", "job": "A delegated task with its state, timing, result, and transcript in one card.", "same_as": "assistant-ui:task-card"}
+{"id": "assistant-ui:elements-terminal-block", "node": "component/code", "variation": "terminal", "job": "Command output that streams line by line and ends with an exit status."}
+{"id": "assistant-ui:elements-thinking-indicator", "node": "component/agent-parts", "variation": "working-status", "job": "A live status line that names what the agent is doing right now, with elapsed time."}
+{"id": "assistant-ui:elements-thread-list", "node": "section/chat", "variation": "history-list", "job": "Conversation history with unread marks and actions that wait for hover.", "same_as": "assistant-ui:thread-list"}
+{"id": "assistant-ui:elements-thread-search", "node": "section/chat", "variation": "history-list", "job": "History you can actually get back into: pinned first, then grouped by when."}
+{"id": "assistant-ui:elements-timeline", "node": "component/timeline", "variation": "vertical-timeline", "job": "Events on a time axis, with what already happened and what is still coming."}
+{"id": "assistant-ui:elements-todo-list", "node": "component/agent-parts", "variation": "plan-tasks", "job": "The agent's own working list, rewritten mid-run as it discovers what else is needed."}
+{"id": "assistant-ui:elements-tokens", "node": null, "variation": null, "job": "Plumbing, not a part you see."}
+{"id": "assistant-ui:elements-tool-call", "node": "component/agent-parts", "variation": "tool-calls", "job": "One tool invocation with its request and result tucked behind a disclosure."}
+{"id": "assistant-ui:elements-tool-error", "node": "component/agent-parts", "variation": "notices", "job": "One call failed. The error, the attempt count, and a retry that doesn't restart the turn."}
+{"id": "assistant-ui:elements-tool-group", "node": "component/agent-parts", "variation": "tool-calls", "job": "Calls that went out together, collapsed to one row until you want the detail.", "same_as": "assistant-ui:tool-group"}
+{"id": "assistant-ui:elements-tool-timeline", "node": "component/agent-parts", "variation": "tool-calls", "job": "A whole working session summarized as verbs, targets, and file stats."}
+{"id": "assistant-ui:elements-trace-waterfall", "node": "component/agent-parts", "variation": "workflow-graph", "job": "Every span in a run on one time axis, nested, so you can see where it actually went."}
+{"id": "assistant-ui:elements-typing-indicator", "node": "component/agent-parts", "variation": "working-status", "job": "The classic three dots, tuned to read as presence rather than noise."}
+{"id": "assistant-ui:elements-voice", "node": "component/agent-parts", "variation": "voice-orb", "job": "The props-driven voice orb: five session states and four palettes, no runtime required."}
+{"id": "assistant-ui:elements-voice-conversation", "node": "component/agent-parts", "variation": "voice-orb", "job": "A live call: the orb tracks your voice, the caption names the turn, the transcript follows", "same_as": "assistant-ui:voice-conversation"}
+{"id": "assistant-ui:elements-web-search", "node": "component/agent-parts", "variation": "sources-display", "job": "A search query and its results landing one by one as the agent reads."}
+{"id": "assistant-ui:eve-ask-question", "node": "component/agent-parts", "variation": "ask-user", "job": "Renders Eve's built-in ask_question tool as a standalone question with answer controls, ou"}
+{"id": "assistant-ui:eve-chat", "node": "page/chat-screen", "variation": "chat-history", "job": "Chat page for an Eve agent, rendering the session through an assistant-ui thread."}
+{"id": "assistant-ui:file", "node": "component/composer", "variation": "with-attachments", "job": "Display file parts with icon, name, size, and a download button, playing audio and video i"}
+{"id": "assistant-ui:follow-up-suggestions", "node": "component/message", "variation": "suggestions", "job": "Prompt chips rendered from runtime generated follow up suggestions."}
+{"id": "assistant-ui:generative-ui", "node": null, "variation": null, "job": "Plumbing, not a part you see."}
+{"id": "assistant-ui:generative-ui-style", "node": null, "variation": null, "job": "Plumbing, not a part you see."}
+{"id": "assistant-ui:heat-graph", "node": "component/chart", "variation": "heatmap", "job": "Activity heat map with month and weekday labels."}
+{"id": "assistant-ui:image", "node": "component/agent-parts", "variation": "generated-image", "job": "Display image parts with preview, loading states, and a fullscreen dialog."}
+{"id": "assistant-ui:logos", "node": "asset/logo", "variation": "brand", "job": "Model provider logos as inline SVG components."}
+{"id": "assistant-ui:markdown-text", "node": "component/message", "variation": "markdown", "job": "Render assistant markdown with headings, lists, links, and code blocks."}
+{"id": "assistant-ui:mcp-config", "node": "component/agent-parts", "variation": "settings", "job": "Dialog listing MCP connectors and custom servers, with OAuth and bearer auth controls."}
+{"id": "assistant-ui:mermaid-diagram", "node": "component/agent-parts", "variation": "diagram-math", "job": "Render Mermaid diagrams in messages, including while they stream."}
+{"id": "assistant-ui:message-timing", "node": "component/agent-parts", "variation": "usage-cost", "job": "Badge with streaming stats: time to first token, total time, and tokens per second."}
+{"id": "assistant-ui:model-selector", "node": "component/composer", "variation": "with-model-picker", "job": "Model picker with reasoning effort levels, search, and runtime integration."}
+{"id": "assistant-ui:number-roll", "node": "component/stat", "variation": "counter", "job": "Animated number that rolls its digits odometer style when the value changes."}
+{"id": "assistant-ui:quote", "node": "component/composer", "variation": "quote-reply", "job": "Select and quote message text with a floating toolbar and a composer preview."}
+{"id": "assistant-ui:reasoning", "node": "component/agent-parts", "variation": "reasoning-display", "job": "Collapsible panel for assistant reasoning and thinking content."}
+{"id": "assistant-ui:select", "node": "component/select", "variation": "standard-select", "job": "Dropdown select with composable trigger, content, and item components."}
+{"id": "assistant-ui:shiki-highlighter", "node": "component/code", "variation": "highlighted-code", "job": "Code block highlighting powered by react-shiki."}
+{"id": "assistant-ui:shimmer-style", "node": null, "variation": null, "job": "Plumbing, not a part you see."}
+{"id": "assistant-ui:sources", "node": "component/agent-parts", "variation": "sources-display", "job": "Display URL sources with favicon, title, and an external link."}
+{"id": "assistant-ui:syntax-highlighter", "node": "component/code", "variation": "highlighted-code", "job": "Code block highlighting powered by react-syntax-highlighter."}
+{"id": "assistant-ui:tabs", "node": "component/tabs", "variation": "underline", "job": "Tabs for organizing content into switchable panels."}
+{"id": "assistant-ui:task-card", "node": "component/agent-parts", "variation": "plan-tasks", "job": "A runtime task card with nested transcripts, timing, results, and grouped task lanes."}
+{"id": "assistant-ui:thread", "node": "section/chat", "variation": "thread", "job": "Chat container with message list, composer, auto scroll, and accessibility built in."}
+{"id": "assistant-ui:thread-list", "node": "section/chat", "variation": "history-list", "job": "Sidebar or dropdown for switching conversations, with search and active selection."}
+{"id": "assistant-ui:threadlist-sidebar", "node": "section/chat", "variation": "full-app", "job": "Sidebar shell that hosts the thread list beside a thread."}
+{"id": "assistant-ui:tool-fallback", "node": "component/agent-parts", "variation": "tool-calls", "job": "Default renderer for tool calls that have no dedicated UI."}
+{"id": "assistant-ui:tool-group", "node": "component/agent-parts", "variation": "tool-calls", "job": "Collapsible wrapper around consecutive tool calls."}
+{"id": "assistant-ui:tooltip-icon-button", "node": "atom/button", "variation": "icon-button", "job": "Icon button with an accessible tooltip label, shared across the assistant UI components."}
+{"id": "assistant-ui:use-attachment-src", "node": null, "variation": null, "job": "Plumbing, not a part you see."}
+{"id": "assistant-ui:use-copy-to-clipboard", "node": null, "variation": null, "job": "Plumbing, not a part you see."}
+{"id": "assistant-ui:utils", "node": null, "variation": null, "job": "Plumbing, not a part you see."}
+{"id": "assistant-ui:voice", "node": "component/agent-parts", "variation": "voice-orb", "job": "Realtime voice session controls with connect, mute, and a status indicator."}
+{"id": "assistant-ui:voice-conversation", "node": "component/agent-parts", "variation": "voice-orb", "job": "The live call screen bound to the thread's voice session: orb, caption, transcript, mute, "}

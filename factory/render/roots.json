@@ -1,0 +1,49 @@
+{
+  "_about": "Where the render service may read source from (read-only). Aliases map import specifiers to files in a root; '*' is a wildcard.",
+  "roots": {
+    "factory": {
+      "dir": "~/SISO_Workspace/_data/worktrees/siso-ui-hub/eco-shell-20261010/factory"
+    },
+    "hub": {
+      "dir": "~/SISO_Workspace/_data/worktrees/siso-ui-hub/eco-shell-20261010"
+    },
+    "ab": {
+      "dir": "~/SISO_Workspace/_data/worktrees/siso-internal-labs-agent-base/side-nav-hubs",
+      "note": "Agent Base's side-nav lane (agent-base.md \u00a75.2): 8850 runs every @siso package from it, so a change shows in a second"
+    },
+    "lp": {
+      "dir": "~/SISO_Workspace/_data/worktrees/siso-agency-lp/siso-ecosystem",
+      "at": "src"
+    },
+    "bank": {
+      "dir": "~/SISO_Workspace/Great_Library_of_SISO/banks/siso-ui-base/registry"
+    },
+    "abnav": {
+      "dir": "~/SISO_Workspace/_data/worktrees/siso-internal-labs-agent-base/side-nav-hubs"
+    }
+  },
+  "aliases": {
+    "@siso/shell": "ab:packages/siso-shell/src/index.ts",
+    "@siso/side-nav": "ab:packages/siso-side-nav/src/index.ts",
+    "@siso/icons": "ab:packages/siso-icons/src/index.ts",
+    "@halo/agent-face": "ab:packages/halo-face/index.ts",
+    "cn": "factory:render/shims/utils.ts",
+    "@/lib/utils": "factory:render/shims/utils.ts",
+    "@/app/(create)/components/icon-placeholder": "factory:render/shims/icon-placeholder.tsx",
+    "@/registry/base-nova/ui/*": "hub:_reference/shadcn/ui/*/ui/*",
+    "@/components/ui/*": "hub:_reference/shadcn/ui/*/ui/*",
+    "@/registry/base-nova/hooks/use-mobile": "factory:render/shims/use-mobile.ts",
+    "@/hooks/use-mobile": "factory:render/shims/use-mobile.ts"
+  },
+  "pins": {
+    "lucide-react": "0.546.0",
+    "framer-motion": "11.11.17",
+    "motion": "11.11.17",
+    "recharts": "2.15.4",
+    "@tanstack/react-table": "8.20.5?bundle",
+    "react-resizable-panels": "2.1.7",
+    "@base-ui/react": "1.9.0",
+    "class-variance-authority": "0.7.1",
+    "react-grid-layout": "2.3.0?bundle"
+  }
+}

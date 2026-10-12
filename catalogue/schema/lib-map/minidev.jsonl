@@ -1,0 +1,515 @@
+{"id": "minidev:accordion", "node": "component/accordion", "variation": "standard-accordion", "job": "Expandable accordion items with animated chevron"}
+{"id": "minidev:account-setup-progress", "node": "section/onboarding", "variation": "checklist", "job": "Onboarding card showing account setup steps completed"}
+{"id": "minidev:activity-feed", "node": "component/list", "variation": "activity-feed", "job": "Activity feed listing who did what and when"}
+{"id": "minidev:add-card-form", "node": "component/form", "variation": null, "job": "Form collecting card number, expiry and CVC", "edge": "payment card form"}
+{"id": "minidev:admin-console", "node": "page/dashboard", "variation": "dashboard-operations", "job": "Admin console with impersonation, org switcher and KPIs"}
+{"id": "minidev:admin-overview", "node": "section/kpis", "variation": "metric-cards", "job": "Admin overview with heading, invite action and stat tiles"}
+{"id": "minidev:admin-stat-strip", "node": "component/stat", "variation": "stats-row", "job": "Responsive row of admin KPI tiles with deltas"}
+{"id": "minidev:admin-user-row", "node": "component/list", "variation": "with-avatars", "job": "User management row with avatar, status and role chip"}
+{"id": "minidev:agency-portfolio", "node": "page/home", "variation": "home-agency", "job": "Agency portfolio page showcasing projects with animated headline"}
+{"id": "minidev:agent-trace", "node": "component/agent-parts", "variation": "tool-calls", "job": "Timeline of AI agent tool steps and their status"}
+{"id": "minidev:ai-composer", "node": "component/composer", "variation": "chat-composer", "job": "Chat input for AI apps with send and suggestions"}
+{"id": "minidev:alert-dialog", "node": "component/dialog", "variation": "confirm-alert", "job": "Confirmation dialog requiring an explicit answer"}
+{"id": "minidev:analytics-page", "node": "page/dashboard", "variation": "dashboard-analytics", "job": "Analytics page with KPI strip and charts"}
+{"id": "minidev:animated-beam", "node": "section/how", "variation": null, "job": "Animated beams showing sources flowing into a result", "edge": "animated flow diagram"}
+{"id": "minidev:animated-feature-row", "node": "section/features", "variation": "card-grid", "job": "Feature cards sliding in with staggered scroll reveal"}
+{"id": "minidev:animated-list", "node": "component/list", "variation": "standard-list", "job": "Live feed where new items drop in with spring"}
+{"id": "minidev:animated-tabs", "node": "component/tabs", "variation": "pill-segmented", "job": "Tabs with sliding pill indicator and fading panels"}
+{"id": "minidev:announcement-bar", "node": "section/announcement", "variation": "text-link", "job": "Slim site-wide bar for launches, promos or notices"}
+{"id": "minidev:api-docs-page", "node": "page/article", "variation": "article-docs-style", "job": "API reference page with sidebar navigation and endpoints"}
+{"id": "minidev:api-key-list", "node": "component/list", "variation": "standard-list", "job": "Settings list of API keys with masked previews"}
+{"id": "minidev:app-shell", "node": "section/shell", "variation": "sidebar-top", "job": "Layout shell with sidebar, topbar and scrolling main"}
+{"id": "minidev:approval-card", "node": "component/card", "variation": "standard-card", "job": "Request card for approve or reject workflows"}
+{"id": "minidev:area-chart", "node": "component/chart", "variation": "area-chart", "job": "Area chart with smoothed line and gradient fill"}
+{"id": "minidev:aspect-ratio", "node": "atom/layout", "variation": null, "job": "Locks media to a fixed ratio such as 16:9", "edge": "aspect ratio wrapper"}
+{"id": "minidev:assign-picker", "node": "component/select", "variation": "standard-select", "job": "Assignee picker listing people with initials avatars"}
+{"id": "minidev:attachment-chip", "node": "component/upload", "variation": "attachment-list", "job": "Compact removable chip showing an attached file"}
+{"id": "minidev:audio-player", "node": "component/player", "variation": "audio-player", "job": "Minimal audio player with play and pause toggle"}
+{"id": "minidev:audit-filter-bar", "node": "section/filters", "variation": "filters", "job": "Filter toolbar for audit logs with search and actor chips"}
+{"id": "minidev:audit-log-entry", "node": "component/list", "variation": "activity-feed", "job": "Single audit log line with actor, action and target"}
+{"id": "minidev:audit-trail", "node": "component/timeline", "variation": "activity-timeline", "job": "Bordered audit trail of actor, action, target and time"}
+{"id": "minidev:auth-card", "node": "section/auth", "variation": "sign-in", "job": "Centered sign-in card with fields and submit"}
+{"id": "minidev:autocomplete", "node": "component/select", "variation": "combobox", "job": "Text input filtering string options as user types"}
+{"id": "minidev:avatar", "node": "atom/avatar", "variation": "standard", "job": "Avatar with image, initials fallback and status"}
+{"id": "minidev:avatar-group", "node": "atom/avatar", "variation": "avatar-group", "job": "Overlapping group of avatars with overflow list"}
+{"id": "minidev:back-link", "node": "atom/link", "variation": "navigation", "job": "Back navigation link with left arrow icon"}
+{"id": "minidev:back-to-top", "node": "atom/button", "variation": "icon-button", "job": "Button returning to top, ring fills with scroll progress"}
+{"id": "minidev:badge", "node": "atom/badge", "variation": "badge", "job": "Badge label in seven variants"}
+{"id": "minidev:banner", "node": "component/alert", "variation": "inline-alert", "job": "Inline notice banner in accent, warning or danger tones"}
+{"id": "minidev:bar-chart", "node": "component/chart", "variation": "bar-chart", "job": "Bar chart with rounded bars and hover values"}
+{"id": "minidev:before-after-wipe", "node": "component/compare", "variation": "slider-compare", "job": "Before and after comparison slider with drag handle"}
+{"id": "minidev:bento-grid", "node": "section/features", "variation": "bento", "job": "Bento grid of feature tiles with icons and visuals"}
+{"id": "minidev:bento-live", "node": "section/features", "variation": "bento", "job": "Bento feature grid with tiles running live demos"}
+{"id": "minidev:billing-address", "node": "component/field", "variation": null, "job": "Address fields for billing, grouped in one fieldset", "edge": "address fieldset"}
+{"id": "minidev:billing-page", "node": "page/settings", "variation": null, "job": "Workspace billing page with three plan cards", "edge": "billing settings page"}
+{"id": "minidev:blog-card", "node": "component/card", "variation": "article-card", "job": "Linked blog post card with cover, tag and title"}
+{"id": "minidev:blog-home", "node": "page/blog-index", "variation": "blog-categories", "job": "Blog index page with nav and tag filter chips"}
+{"id": "minidev:border-beam", "node": null, "variation": null, "job": "Decorative light beam travelling around a card border"}
+{"id": "minidev:brand-kit-page", "node": "page/home", "variation": "home-portfolio", "job": "Brand showcase page with type marquee and tilt cards"}
+{"id": "minidev:breadcrumb", "node": "component/breadcrumb", "variation": "text-breadcrumb", "job": "Breadcrumb trail with chevron separators and links"}
+{"id": "minidev:breadcrumb-ellipsis", "node": "component/breadcrumb", "variation": "overflow-menu", "job": "Ellipsis marker collapsing middle of long breadcrumbs"}
+{"id": "minidev:build-pipeline", "node": "component/steps", "variation": "horizontal-stepper", "job": "CI pipeline showing each stage's success, running or failed status"}
+{"id": "minidev:bulk-actions-bar", "node": "component/dock", "variation": "action-toolbar", "job": "Floating selection bar with count and bulk action buttons"}
+{"id": "minidev:bulk-user-import", "node": "component/upload", "variation": "dropzone", "job": "CSV user import panel with dropzone and format hint"}
+{"id": "minidev:button", "node": "atom/button", "variation": "primary", "job": "Button with variants, sizes and icon support"}
+{"id": "minidev:button-group", "node": "atom/button", "variation": "group", "job": "Adjacent buttons joined into one segmented control"}
+{"id": "minidev:calendar-agenda", "node": "component/calendar", "variation": "event-calendar", "job": "Agenda list of the day's events with time column"}
+{"id": "minidev:calendar-month", "node": "component/calendar", "variation": "month-calendar", "job": "Month calendar grid with selectable day cells"}
+{"id": "minidev:callout", "node": "component/alert", "variation": "callout", "job": "Callout box in info, success, warning or danger tones"}
+{"id": "minidev:cancel-flow", "node": "component/form", "variation": "multi-step", "job": "Two-step cancellation flow asking reason then confirming"}
+{"id": "minidev:card", "node": "component/card", "variation": "standard-card", "job": "Card with header, title, content and footer slots"}
+{"id": "minidev:card-tilt", "node": "component/card", "variation": "spotlight", "job": "Card tilting toward pointer with glare following it"}
+{"id": "minidev:careers-page", "node": "page/about-page", "variation": null, "job": "Careers page listing open roles with animated headline", "edge": "careers listing page"}
+{"id": "minidev:carousel", "node": "component/carousel", "variation": "slider-carousel", "job": "Scroll-snap carousel with previous and next controls"}
+{"id": "minidev:cart-line-item", "node": "component/list", "variation": "standard-list", "job": "Shopping cart row with price and quantity stepper"}
+{"id": "minidev:case-study-card", "node": "component/card", "variation": "stat-card", "job": "Case study card with headline and large result metric"}
+{"id": "minidev:center", "node": "atom/layout", "variation": null, "job": "Centers content horizontally and vertically in a narrow column", "edge": "centered content wrapper"}
+{"id": "minidev:changelog-marketing", "node": "component/timeline", "variation": "changelog", "job": "Marketing changelog timeline with subscribe call to action"}
+{"id": "minidev:changelog-motion", "node": "component/timeline", "variation": "changelog", "job": "Changelog timeline releases sliding in on scroll"}
+{"id": "minidev:changelog-page", "node": "component/timeline", "variation": "changelog", "job": "Changelog card listing releases with version, date and tag"}
+{"id": "minidev:character-count", "node": "atom/badge", "variation": "count", "job": "Live character counter against a limit, red when over"}
+{"id": "minidev:chart-card", "node": "component/card", "variation": "standard-card", "job": "Card wrapper framing a chart with title and description"}
+{"id": "minidev:chart-legend", "node": "component/chart", "variation": null, "job": "Colour swatches and labels identifying chart series", "edge": "chart legend"}
+{"id": "minidev:chart-tooltip-card", "node": "atom/tooltip", "variation": "rich", "job": "Chart tooltip card with title and label value rows"}
+{"id": "minidev:chat-page", "node": "page/chat-screen", "variation": "chat-history", "job": "Fixed-height AI chat page with header and scrolling thread"}
+{"id": "minidev:chat-thread", "node": "component/message", "variation": "chat-thread", "job": "Scrolling thread rendering user, assistant and system bubbles"}
+{"id": "minidev:check-run-list", "node": "component/list", "variation": "standard-list", "job": "List of CI check runs with status icons"}
+{"id": "minidev:checkbox", "node": "atom/choice", "variation": "checkbox", "job": "Checkbox with animated check and indeterminate state"}
+{"id": "minidev:checkbox-group", "node": "atom/choice", "variation": "group", "job": "Vertical group of related checkboxes under one role"}
+{"id": "minidev:checkout-summary", "node": "section/pricing", "variation": "checkout", "job": "Order summary card with line items, total and checkout button"}
+{"id": "minidev:chip-filter", "node": "atom/choice", "variation": "radio", "job": "Single-select filter chips behaving as a radio group"}
+{"id": "minidev:choice-card", "node": "atom/choice", "variation": "card", "job": "Selectable card with icon, title and description"}
+{"id": "minidev:citation-chip", "node": "component/agent-parts", "variation": "citations", "job": "Inline citation chip linking to an AI answer source"}
+{"id": "minidev:client-pitch-kit", "node": "page/home", "variation": "home-product-launch", "job": "Full client pitch page chaining hero, ticker and product rail"}
+{"id": "minidev:cluster", "node": "atom/layout", "variation": null, "job": "Flex row wrapping children with vertical centring and gap", "edge": "wrapping flex row"}
+{"id": "minidev:code-block", "node": "component/code", "variation": "highlighted-code", "job": "Code block with syntax colouring, language tag and copy"}
+{"id": "minidev:code-editor-frame", "node": "component/code", "variation": "highlighted-code", "job": "Editor-style frame with filename tab around code"}
+{"id": "minidev:collapsible", "node": "component/accordion", "variation": "collapsible", "job": "Trigger that shows or hides a panel of content"}
+{"id": "minidev:collapsible-sidebar", "node": "section/sidebar", "variation": "collapsible", "job": "Sidebar collapsing to a narrow rail and expanding back"}
+{"id": "minidev:color-picker", "node": "component/picker", "variation": "color-picker", "job": "Swatch colour picker with eight preset colours"}
+{"id": "minidev:column-visibility-menu", "node": "component/menu", "variation": "dropdown-menu", "job": "Dropdown of checkboxes showing or hiding table columns"}
+{"id": "minidev:combobox", "node": "component/select", "variation": "combobox", "job": "Popover select with filter input and check mark"}
+{"id": "minidev:command-center", "node": "page/dashboard", "variation": "dashboard-operations", "job": "Operations dashboard with KPI row for agents, jobs and failures"}
+{"id": "minidev:command-dialog", "node": "component/command", "variation": "dialog-based", "job": "Command palette opened in a modal dialog"}
+{"id": "minidev:command-item", "node": "component/command", "variation": "command-menu", "job": "Command menu row with label, shortcut and action"}
+{"id": "minidev:command-palette", "node": "component/command", "variation": "command-palette", "job": "Cmd K command palette filtering commands as you type"}
+{"id": "minidev:command-waitlist", "node": "section/cta", "variation": "waitlist-form", "job": "Terminal-styled waitlist card with email join prompt"}
+{"id": "minidev:comment-composer", "node": "component/composer", "variation": "standard-composer", "job": "Comment box with textarea and button disabled when empty"}
+{"id": "minidev:comment-thread", "node": "component/list", "variation": "with-avatars", "job": "Threaded comment list with avatars, author and timestamp"}
+{"id": "minidev:commerce-checkout", "node": "section/pricing", "variation": "checkout", "job": "Two-column checkout with cart, shipping and payment"}
+{"id": "minidev:commit-row", "node": "component/list", "variation": "standard-list", "job": "Git commit row with author, message, time and SHA"}
+{"id": "minidev:comparison-table", "node": "section/pricing", "variation": "comparison-table", "job": "Plan comparison table with features as rows"}
+{"id": "minidev:confetti-button", "node": "atom/button", "variation": "primary", "job": "Button bursting confetti from itself on click"}
+{"id": "minidev:confirm-destructive", "node": "component/dialog", "variation": "confirm-alert", "job": "Destructive action confirm dialog with warning text"}
+{"id": "minidev:connected-account", "node": "component/list", "variation": "standard-list", "job": "Settings row for a linked third-party account"}
+{"id": "minidev:console-output", "node": "component/code", "variation": "terminal", "job": "Monospace console panel printing log, warn and error lines"}
+{"id": "minidev:contact-sales", "node": "page/contact-page", "variation": "contact-with-info", "job": "Contact sales page with headline, case study and quote"}
+{"id": "minidev:container", "node": "atom/layout", "variation": null, "job": "Centers content with side padding and max width preset", "edge": "page width container"}
+{"id": "minidev:context-chip", "node": "atom/button", "variation": "toggle", "job": "Small toggle chip for picking context in prompts or filters"}
+{"id": "minidev:context-menu", "node": "component/menu", "variation": "context-menu", "job": "Right-click menu opening at cursor with menu items"}
+{"id": "minidev:context-pill", "node": "component/upload", "variation": "attachment-list", "job": "Pill showing attached context such as files or pages"}
+{"id": "minidev:conversation-sidebar", "node": "section/chat", "variation": "history-list", "job": "Chat history sidebar with new chat and conversation list"}
+{"id": "minidev:cookie-banner", "node": "component/alert", "variation": "cookie-consent", "job": "Floating consent card with notice and accept action"}
+{"id": "minidev:copy-button", "node": "atom/button", "variation": "copy-share", "job": "Button copying a value and swapping to a check icon"}
+{"id": "minidev:copy-id", "node": "atom/button", "variation": "copy-share", "job": "Monospace ID chip that copies its value on click"}
+{"id": "minidev:coupon-input", "node": "component/field", "variation": "with-addon", "job": "Promo code field with Apply button and inline messages"}
+{"id": "minidev:coverage-meter", "node": "atom/progress", "variation": "linear", "job": "Test coverage bar coloured by threshold"}
+{"id": "minidev:create-api-key", "node": "component/form", "variation": "horizontal-layout", "job": "Inline form naming and creating an API key"}
+{"id": "minidev:credit-balance", "node": "atom/badge", "variation": "count", "job": "Pill showing remaining credit balance figure"}
+{"id": "minidev:credit-card-input", "node": "component/field", "variation": "validation-states", "job": "Card number input validated with Luhn checksum"}
+{"id": "minidev:cta-band", "node": "section/cta", "variation": "email-form", "job": "Closing CTA band with email signup form"}
+{"id": "minidev:cta-banner", "node": "section/cta", "variation": "centered-banner", "job": "Call to action banner with heading and primary button"}
+{"id": "minidev:cta-glow", "node": "section/cta", "variation": "card", "job": "Call to action card with title, copy and button"}
+{"id": "minidev:currency-input", "node": "component/field", "variation": "with-addon", "job": "Money input with currency code prefix"}
+{"id": "minidev:cursor-spotlight-panel", "node": "component/card", "variation": "spotlight", "job": "Panel with accent spotlight following the cursor"}
+{"id": "minidev:danger-zone", "node": "section/settings-panel", "variation": "card-blocks", "job": "Danger zone settings card with irreversible action warning"}
+{"id": "minidev:dashboard-home", "node": "page/dashboard", "variation": "dashboard-overview", "job": "Dashboard home with header, KPI row and new project action"}
+{"id": "minidev:data-table", "node": "component/table", "variation": "data-table", "job": "Data table with sorting, selection and bulk actions"}
+{"id": "minidev:date-picker", "node": "component/picker", "variation": "date-picker", "job": "Native date input styled as a form date picker"}
+{"id": "minidev:date-range-picker", "node": "component/picker", "variation": "date-range", "job": "Start and end date range picker from two inputs"}
+{"id": "minidev:delete-account-confirm", "node": "component/dialog", "variation": "confirm-alert", "job": "Account deletion confirm step gated by typed confirmation"}
+{"id": "minidev:density-toggle", "node": "atom/switch", "variation": "toggle-group", "job": "Toggle group switching compact and comfortable density"}
+{"id": "minidev:description-list", "node": "component/list", "variation": "standard-list", "job": "Semantic label and value list in a responsive grid"}
+{"id": "minidev:device-frame", "node": "component/mockup", "variation": "device-mockup", "job": "Wraps UI in a phone or browser device frame"}
+{"id": "minidev:device-frame-stack", "node": "component/mockup", "variation": "device-mockup", "job": "Fanned stack of three labelled device frames"}
+{"id": "minidev:dialog", "node": "component/dialog", "variation": "modal-dialog", "job": "Modal dialog with backdrop, animations and close"}
+{"id": "minidev:diff-view", "node": "component/code", "variation": "diff-view", "job": "Code diff viewer tinting added and removed lines"}
+{"id": "minidev:dock", "node": "component/dock", "variation": "macos-magnifying", "job": "macOS style dock with icons magnifying under pointer"}
+{"id": "minidev:docs-marketing", "node": "page/home", "variation": "home-saas", "job": "Docs landing page with headline, search and get-started"}
+{"id": "minidev:docs-page", "node": "page/article", "variation": "article-docs-style", "job": "Documentation page with table of contents and prose"}
+{"id": "minidev:donut-chart", "node": "component/chart", "variation": "pie-donut", "job": "Single value donut chart filling to a percentage"}
+{"id": "minidev:dot-pattern", "node": null, "variation": null, "job": "Decorative dot or grid background pattern"}
+{"id": "minidev:downgrade-warning", "node": "component/alert", "variation": "inline-alert", "job": "Amber warning card summarising features locked on downgrade"}
+{"id": "minidev:drawer", "node": "component/sheet", "variation": "bottom-sheet", "job": "Bottom drawer sliding up with titled header and close"}
+{"id": "minidev:dropdown-menu", "node": "component/menu", "variation": "dropdown-menu", "job": "Dropdown menu with groups, checkboxes and radio items"}
+{"id": "minidev:due-date-chip", "node": "atom/badge", "variation": "tag-chip", "job": "Due date chip turning red when overdue"}
+{"id": "minidev:editable-heading", "node": "atom/text-input", "variation": "text-input", "job": "Inline editable title styled as a large heading"}
+{"id": "minidev:email-button", "node": "atom/button", "variation": "primary", "job": "Solid link button for email templates"}
+{"id": "minidev:email-card", "node": "component/inbox", "variation": "email-template", "job": "Content card for transactional email body"}
+{"id": "minidev:email-footer", "node": "section/footer", "variation": "minimal-row", "job": "Email footer with address and unsubscribe links"}
+{"id": "minidev:email-header", "node": "section/nav", "variation": "simple-bar", "job": "Email header band showing brand name"}
+{"id": "minidev:email-layout", "node": "component/inbox", "variation": "email-template", "job": "Email layout shell with centred column and surface"}
+{"id": "minidev:email-preview-frame", "node": "component/inbox", "variation": "email-template", "job": "Inbox-style preview showing sender, subject and body"}
+{"id": "minidev:email-receipt", "node": "component/inbox", "variation": "email-template", "job": "Payment receipt email with branded header and line items"}
+{"id": "minidev:email-welcome", "node": "component/inbox", "variation": "email-template", "job": "Welcome email template with intro copy and call to action"}
+{"id": "minidev:emoji-picker", "node": "component/picker", "variation": "presets", "job": "Compact emoji grid of reactions from a default or custom set"}
+{"id": "minidev:empty-search", "node": "component/empty", "variation": "search-no-results", "job": "No-results state echoing the query and suggesting retries"}
+{"id": "minidev:empty-state", "node": "component/empty", "variation": "icon-text", "job": "Dashed empty state with icon, title, text and action"}
+{"id": "minidev:empty-table", "node": "component/empty", "variation": "icon-text", "job": "Empty table placeholder with dashed border and helper text"}
+{"id": "minidev:empty-workspace", "node": "page/dashboard", "variation": "dashboard-first-run-empty", "job": "Empty workspace screen with new project action"}
+{"id": "minidev:engineering-console", "node": "page/dashboard", "variation": "dashboard-operations", "job": "Engineering console with environments, build pipeline and tabs"}
+{"id": "minidev:env-badge", "node": "atom/badge", "variation": "badge", "job": "Uppercase environment badge for prod, staging or dev"}
+{"id": "minidev:env-switcher", "node": "atom/switch", "variation": "segmented", "job": "Segmented control switching Dev, Staging and Prod environments"}
+{"id": "minidev:error-state", "node": "component/empty", "variation": "error-state", "job": "Error panel with alert role, explanation and retry"}
+{"id": "minidev:event-calendar", "node": "component/calendar", "variation": "event-calendar", "job": "Week and day event scheduler with overlap layout"}
+{"id": "minidev:expandable-row", "node": "component/accordion", "variation": "standard-accordion", "job": "Bordered row expanding to reveal details on click"}
+{"id": "minidev:export-data", "node": "section/settings-panel", "variation": "card-blocks", "job": "Settings card requesting a JSON data export"}
+{"id": "minidev:facet-filter", "node": "section/filters", "variation": "filters", "job": "Checkbox facet group for sidebar search filters"}
+{"id": "minidev:faq-accordion-motion", "node": "component/accordion", "variation": "faq-accordion", "job": "FAQ accordion opening one answer at a time"}
+{"id": "minidev:faq-list", "node": "section/faq", "variation": "accordion", "job": "FAQ section built on an accessible accordion"}
+{"id": "minidev:faq-section", "node": "section/faq", "variation": "two-column", "job": "FAQ with heading column and accessible accordion"}
+{"id": "minidev:feature-bento-motion", "node": "section/features", "variation": "bento", "job": "Four cell bento grid of feature cards rising on scroll"}
+{"id": "minidev:feature-comparison", "node": "section/comparison", "variation": "table", "job": "Free versus premium comparison table with check cells"}
+{"id": "minidev:feature-flag-toggle", "node": "atom/switch", "variation": "standard", "job": "Settings row switching one feature flag on or off"}
+{"id": "minidev:feature-flags", "node": "section/settings-panel", "variation": "sections", "job": "Feature flag settings list pairing keys with switches"}
+{"id": "minidev:feature-grid", "node": "section/features", "variation": "card-grid", "job": "Responsive grid of feature cards with icons"}
+{"id": "minidev:feedback-thumbs", "node": "atom/button", "variation": "toggle", "job": "Thumbs up and down buttons rating an answer"}
+{"id": "minidev:file-dropzone", "node": "component/upload", "variation": "dropzone", "job": "Drag and drop upload zone with type and size checks"}
+{"id": "minidev:file-list", "node": "component/list", "variation": "file-list", "job": "Stacked list of file rows with name and metadata"}
+{"id": "minidev:file-reference", "node": "component/agent-parts", "variation": "citations", "job": "Compact card citing a source file and line range"}
+{"id": "minidev:file-row", "node": "component/list", "variation": "file-list", "job": "File row with icon, truncated name and download action"}
+{"id": "minidev:file-tree", "node": "component/tree", "variation": "file-tree", "job": "Code editor style file explorer with git status and filter"}
+{"id": "minidev:filmstrip-scrub", "node": "component/player", "variation": "video-player", "job": "Filmstrip scrubber selecting frames of a preview"}
+{"id": "minidev:filter-bar", "node": "section/filters", "variation": "filters", "job": "Wrapping toolbar with search and filter controls"}
+{"id": "minidev:flickering-grid", "node": null, "variation": null, "job": "Decorative flickering grid background behind content"}
+{"id": "minidev:flip-stat-board", "node": "component/stat", "variation": "counter", "job": "Stat board counting up numbers with flipping digits"}
+{"id": "minidev:floating-action-button", "node": "atom/button", "variation": "primary", "job": "Round primary button fixed to the bottom right corner"}
+{"id": "minidev:floating-label-input", "node": "component/field", "variation": "floating-label", "job": "Input with floating label and submit-time error message"}
+{"id": "minidev:floating-nav", "node": "section/nav", "variation": "sticky-shrink", "job": "Sticky navbar tucking into a floating pill on scroll"}
+{"id": "minidev:footer-mega", "node": "section/footer", "variation": "columns", "job": "Multi column footer with brand block and link groups"}
+{"id": "minidev:footer-nav", "node": "section/footer", "variation": "minimal-row", "job": "Slim one line footer with brand and wrapping links"}
+{"id": "minidev:forgot-password-form", "node": "section/auth", "variation": "forgot", "job": "Password reset request card with email and send button"}
+{"id": "minidev:form-field", "node": "component/field", "variation": "validation-states", "job": "Wrapper pairing an input with label, help and error"}
+{"id": "minidev:form-wizard", "node": "component/steps", "variation": "multi-step-form", "job": "Three step form wizard with stepper and per step fields"}
+{"id": "minidev:free-premium-compare", "node": "section/pricing", "variation": "tier-cards", "job": "Two column free and premium tier cards with feature checklists"}
+{"id": "minidev:funnel-steps", "node": "component/chart", "variation": "bar-chart", "job": "Conversion funnel drawn as labelled horizontal bars"}
+{"id": "minidev:gantt-row", "node": "component/timeline", "variation": "gantt-chart", "job": "One Gantt row: task label and bar from start to end"}
+{"id": "minidev:gauge-chart", "node": "atom/progress", "variation": "meter-gauge", "job": "Semicircle gauge filling to a value against a max"}
+{"id": "minidev:goal-ring", "node": "atom/progress", "variation": "circular", "job": "Circular progress ring showing goal completion percentage"}
+{"id": "minidev:gradient-text", "node": "atom/text", "variation": "heading", "job": "Headline text filled with a drifting accent gradient"}
+{"id": "minidev:grid-reveal", "node": "section/features", "variation": "card-grid", "job": "Grid of labelled tiles sliding up as section scrolls in"}
+{"id": "minidev:heading", "node": "atom/text", "variation": "heading", "job": "Heading primitive rendering h1 to h6 with type scale"}
+{"id": "minidev:health-indicator", "node": "atom/status-dot", "variation": "standard", "job": "Status dot and label for operational, degraded and down"}
+{"id": "minidev:heatmap-cell", "node": "component/chart", "variation": "heatmap", "job": "Heatmap cell blending fill from base to accent by intensity"}
+{"id": "minidev:hero", "node": "section/hero", "variation": "centered-text", "job": "Centred landing hero with eyebrow, headline and actions"}
+{"id": "minidev:hero-aurora", "node": "section/hero", "variation": "centered-text", "job": "Hero with drifting aurora gradient behind headline"}
+{"id": "minidev:hero-bento", "node": "section/hero", "variation": "collage", "job": "Hero headline above a bento grid of product tiles"}
+{"id": "minidev:hero-client-pitch", "node": "section/hero", "variation": "centered-text", "job": "Pitch hero with headline words sliding up in sequence"}
+{"id": "minidev:hero-editorial-split", "node": "section/hero", "variation": "split-image", "job": "Two column editorial hero with masked headline and lede"}
+{"id": "minidev:hero-gradient-mesh", "node": "section/hero", "variation": "centered-text", "job": "Dark hero on layered gradient mesh with headline"}
+{"id": "minidev:hero-kinetic-type", "node": "section/hero", "variation": "text-only", "job": "Kinetic type hero with headline lines sliding from masks"}
+{"id": "minidev:hero-marquee-brands", "node": "section/hero", "variation": "social-proof", "job": "Hero headline above scrolling brand name marquee"}
+{"id": "minidev:hero-poster-type", "node": "section/hero", "variation": "text-only", "job": "Poster scale typography hero with rising headline lines"}
+{"id": "minidev:hero-split-showcase", "node": "section/hero", "variation": "split-image", "job": "Split hero with copy left and animated product card right"}
+{"id": "minidev:hero-spotlight", "node": "section/hero", "variation": "centered-text", "job": "Launch hero with pulsing eyebrow and blur-in headline"}
+{"id": "minidev:hero-typed-headline", "node": "section/hero", "variation": "centered-text", "job": "Centred hero whose headline cycles rotating words"}
+{"id": "minidev:horizontal-bar-chart", "node": "component/chart", "variation": "bar-chart", "job": "Horizontal bar chart with rounded bars scaled to max"}
+{"id": "minidev:horizontal-product-rail", "node": "component/carousel", "variation": "cards-carousel", "job": "Horizontal scrolling rail of product cards"}
+{"id": "minidev:hover-card", "node": "component/popover", "variation": "hover-card", "job": "Card appearing on hover to preview extra detail"}
+{"id": "minidev:icon-button", "node": "atom/button", "variation": "icon-button", "job": "Square button for icon-only actions in three sizes"}
+{"id": "minidev:image-cropper", "node": "component/upload", "variation": null, "job": "Image crop tool with rotation and crop box", "edge": "image crop editor"}
+{"id": "minidev:image-gallery", "node": "component/gallery", "variation": "grid-gallery", "job": "Responsive grid of square photo tiles"}
+{"id": "minidev:image-lightbox", "node": "component/lightbox", "variation": "standard-lightbox", "job": "Thumbnail opening a full screen image modal"}
+{"id": "minidev:image-upload", "node": "component/upload", "variation": "with-previews", "job": "Image picker from drop zone to large preview"}
+{"id": "minidev:impersonation-banner", "node": "component/alert", "variation": "top-banner", "job": "Top bar showing support staff viewing as a user"}
+{"id": "minidev:inbox-page", "node": "component/inbox", "variation": "notification-inbox", "job": "Inbox panel listing messages with sender and preview"}
+{"id": "minidev:incident-banner", "node": "component/alert", "variation": "top-banner", "job": "Full width status bar announcing an outage by severity"}
+{"id": "minidev:infinite-scroll", "node": "component/list", "variation": "standard-list", "job": "Loads next page when sentinel scrolls into view"}
+{"id": "minidev:inline-alert", "node": "component/alert", "variation": "inline-alert", "job": "Inline message box in neutral, success, warning or danger"}
+{"id": "minidev:inline-cell-edit", "node": "component/table", "variation": "editable-grid", "job": "Table cell turning into input on click and saving"}
+{"id": "minidev:inline-code-diff", "node": "component/code", "variation": "diff-view", "job": "Two line code diff with removed and added lines"}
+{"id": "minidev:input", "node": "atom/text-input", "variation": "text-input", "job": "Base text input with sizes and designed states"}
+{"id": "minidev:inset", "node": "atom/layout", "variation": null, "job": "Recessed panel with sunken background and padding", "edge": "recessed inset panel"}
+{"id": "minidev:integration-card", "node": "component/card", "variation": "feature-card", "job": "Integration tile with service name and connection status"}
+{"id": "minidev:interactive-area-chart", "node": "component/chart", "variation": "area-chart", "job": "Area chart with crosshair following pointer or arrows"}
+{"id": "minidev:investor-update", "node": "page/about-page", "variation": "about-stats", "job": "Investor update page with headline, stats and highlights"}
+{"id": "minidev:invite-members", "node": "section/settings-panel", "variation": "card-blocks", "job": "Team invite panel with email input and pending badges"}
+{"id": "minidev:invoice-detail", "node": "component/card", "variation": "standard-card", "job": "Invoice card with number, status badge and line items"}
+{"id": "minidev:invoice-list", "node": "component/list", "variation": "standard-list", "job": "Bordered list of invoices with number, amount and status"}
+{"id": "minidev:ip-allowlist", "node": "component/tags", "variation": "basic-tag-input", "job": "Editor for IP and CIDR allowlist entries with removal"}
+{"id": "minidev:issue-card", "node": "component/card", "variation": "standard-card", "job": "Issue tracker card with ticket key, status and priority"}
+{"id": "minidev:issue-key", "node": "atom/link", "variation": "standard", "job": "Monospace ticket key rendering as plain text or link"}
+{"id": "minidev:join-workspace", "node": "component/form", "variation": "with-validation", "job": "Centred card for joining a workspace with invite code"}
+{"id": "minidev:json-viewer", "node": "component/code", "variation": "highlighted-code", "job": "Pretty printed JSON in a scrollable monospace block"}
+{"id": "minidev:kanban-board", "node": "component/board", "variation": "multi-column-board", "job": "Horizontal Kanban board built from column data"}
+{"id": "minidev:kanban-column", "node": "component/board", "variation": "multi-column-board", "job": "Single Kanban lane with title, count and card slot"}
+{"id": "minidev:kbd", "node": "atom/text", "variation": "keyboard", "job": "Keyboard key cap for showing shortcuts"}
+{"id": "minidev:kpi-row", "node": "component/stat", "variation": "stats-row", "job": "Responsive row of up to four KPI tiles"}
+{"id": "minidev:label", "node": "atom/text", "variation": "body", "job": "Form label dimming when its input is disabled"}
+{"id": "minidev:language-picker", "node": "component/select", "variation": "standard-select", "job": "Grid of language options as an accessible listbox"}
+{"id": "minidev:latency-badge", "node": "atom/badge", "variation": "badge", "job": "Millisecond badge coloured green, amber or red by latency"}
+{"id": "minidev:launch-countdown", "node": "component/stat", "variation": "counter", "job": "Countdown showing days, hours, minutes and seconds to launch"}
+{"id": "minidev:light-field", "node": null, "variation": null, "job": "Decorative WebGL shader background of drifting colour"}
+{"id": "minidev:light-provider", "node": null, "variation": null, "job": "Provider supplying a pointer-following light source to the page"}
+{"id": "minidev:line-chart", "node": "component/chart", "variation": "line-chart", "job": "Multi series SVG line chart with smooth curves"}
+{"id": "minidev:link", "node": "atom/link", "variation": "standard", "job": "Styled anchor with accent colour and visible focus ring"}
+{"id": "minidev:list-item", "node": "component/list", "variation": "standard-list", "job": "Flexible list row with leading and trailing slots"}
+{"id": "minidev:live-component-rail", "node": "section/showcase", "variation": "carousel", "job": "Rail of live component demo cards"}
+{"id": "minidev:live-cursors-bar", "node": "atom/avatar", "variation": "avatar-group", "job": "Presence strip of overlapping collaborator avatars"}
+{"id": "minidev:loading-overlay", "node": "atom/loader", "variation": "spinner", "job": "Translucent overlay with spinner while data loads"}
+{"id": "minidev:loading-table", "node": "atom/loader", "variation": "skeleton", "job": "Skeleton placeholder rows and columns for data tables"}
+{"id": "minidev:logo-cloud", "node": "section/logos", "variation": "grid", "job": "Centred wrapping row of customer or partner logos"}
+{"id": "minidev:logo-wall-motion", "node": "section/logos", "variation": "marquee", "job": "Logo wall scrolling brand names in endless marquee"}
+{"id": "minidev:logs-viewer", "node": "component/code", "variation": "terminal", "job": "Scrollable monospace log list with filter input"}
+{"id": "minidev:magic-link-form", "node": "section/auth", "variation": "magic-link", "job": "Passwordless sign-in card sending a magic link"}
+{"id": "minidev:magnetic-cta", "node": "atom/button", "variation": "primary", "job": "Button drifting toward cursor on a spring"}
+{"id": "minidev:markdown-renderer", "node": "component/message", "variation": "markdown", "job": "Renders AI output paragraphs and markdown text"}
+{"id": "minidev:marketing-landing", "node": "page/home", "variation": "home-saas", "job": "Landing page of hero, logo cloud and sections"}
+{"id": "minidev:marquee", "node": "atom/layout", "variation": null, "job": "Loops children horizontally forever as a continuous scrolling strip.", "edge": "infinite marquee strip"}
+{"id": "minidev:marquee-quotes", "node": "section/testimonials", "variation": "marquee", "job": "Two rows of testimonial quotes scrolling in opposite directions."}
+{"id": "minidev:masked-gradient-headline", "node": "atom/text", "variation": "heading", "job": "Gradient headline that wipes in with a clip-path reveal."}
+{"id": "minidev:masked-input", "node": "atom/text-input", "variation": "text-input", "job": "Input that formats its value with a mask pattern."}
+{"id": "minidev:masonry-grid", "node": "component/gallery", "variation": "masonry-gallery", "job": "Masonry grid of media keeping source order."}
+{"id": "minidev:media-library", "node": "component/upload", "variation": "with-previews", "job": "Media panel with upload action and two-column asset grid."}
+{"id": "minidev:mention-input", "node": "component/composer", "variation": "mentions-commands", "job": "Comment box opening a suggestion list on at-mention."}
+{"id": "minidev:menubar", "node": "component/menu", "variation": "menubar", "job": "Desktop app menubar of triggers opening menus."}
+{"id": "minidev:merge-box", "node": "component/card", "variation": "standard-card", "job": "Pull request merge panel with status callouts and merge action."}
+{"id": "minidev:message-actions", "node": "component/message", "variation": "actions-feedback", "job": "Row of icon buttons on a chat reply: copy, retry, feedback."}
+{"id": "minidev:message-bubble", "node": "component/message", "variation": "message-bubble", "job": "Chat message bubble for user, assistant and system roles."}
+{"id": "minidev:meteors", "node": null, "variation": null, "job": "Decorative meteor streaks behind content."}
+{"id": "minidev:meter", "node": "atom/progress", "variation": "meter-gauge", "job": "Horizontal gauge with meter role and value attributes."}
+{"id": "minidev:metric-delta", "node": "atom/badge", "variation": "icon-badge", "job": "Shows a percentage change with a coloured arrow."}
+{"id": "minidev:metric-ticker-board", "node": "section/stats", "variation": "counter", "job": "Four-cell metric board whose numbers count up from zero."}
+{"id": "minidev:mobile-action-sheet", "node": "component/sheet", "variation": "bottom-sheet", "job": "iOS-style action list rising from the bottom edge."}
+{"id": "minidev:mobile-nav-drawer", "node": "section/nav", "variation": "mobile-drawer", "job": "Hamburger opening a right-side navigation drawer on mobile."}
+{"id": "minidev:model-compare", "node": "section/comparison", "variation": "table", "job": "Table comparing AI models on name, latency and other metrics."}
+{"id": "minidev:model-picker", "node": "component/agent-parts", "variation": null, "job": "Dropdown for choosing an AI model, built on Select.", "edge": "model picker dropdown"}
+{"id": "minidev:morph-panel", "node": "component/popover", "variation": "standard-popover", "job": "Button that morphs into the panel it opens."}
+{"id": "minidev:morph-price", "node": "section/pricing", "variation": "billing-toggle", "job": "Price that slides between monthly and yearly amounts on toggle."}
+{"id": "minidev:multi-select", "node": "component/select", "variation": "multi-select", "job": "Multi-select dropdown in a popover with check marks."}
+{"id": "minidev:nav-marketing", "node": "section/nav", "variation": "simple-bar", "job": "Sticky translucent marketing header with brand and links."}
+{"id": "minidev:navigation-menu", "node": "component/menu", "variation": "navigation-menu", "job": "Site menu whose triggers open rich dropdown panels."}
+{"id": "minidev:nested-nav", "node": "section/sidebar", "variation": "tree", "job": "Collapsible nested tree navigation indented by depth."}
+{"id": "minidev:newsletter-signup", "node": "section/cta", "variation": "email-form", "job": "Inline email capture form with a subscribe button."}
+{"id": "minidev:not-found-state", "node": "page/not-found", "variation": "notfound-404", "job": "404 state with error code, heading and short explanation."}
+{"id": "minidev:notebook-cell", "node": "component/code", "variation": "run-results", "job": "Notebook code cell with a Run button beside the editor."}
+{"id": "minidev:notification-center", "node": "component/inbox", "variation": "notification-center", "job": "Notification card with settings action and a stack of items."}
+{"id": "minidev:notification-inbox", "node": "component/inbox", "variation": "notification-inbox", "job": "Bell with unread count opening a notification popover."}
+{"id": "minidev:notification-item", "node": "component/inbox", "variation": "notification-card", "job": "Single notification row with unread dot and truncated text."}
+{"id": "minidev:notification-preferences", "node": "section/settings-panel", "variation": "sections", "job": "Settings list of labelled switches for notification channels."}
+{"id": "minidev:number-input", "node": "atom/text-input", "variation": "stepper", "job": "Numeric input with minus and plus stepper buttons."}
+{"id": "minidev:number-roll", "node": "component/stat", "variation": "counter", "job": "Odometer-style number whose digits roll to a value."}
+{"id": "minidev:offline-banner", "node": "component/alert", "variation": "top-banner", "job": "Full-width banner warning the app lost its connection."}
+{"id": "minidev:offline-state", "node": "component/empty", "variation": "error-state", "job": "Offline status card with a warning dot and retry text."}
+{"id": "minidev:onboarding-checklist", "node": "section/onboarding", "variation": "checklist", "job": "Get-started card of setup tasks that toggle done."}
+{"id": "minidev:onboarding-flow", "node": "section/onboarding", "variation": "wizard", "job": "Three-step card for naming a workspace and inviting teammates."}
+{"id": "minidev:onboarding-motion", "node": "section/onboarding", "variation": "stepper", "job": "Animated onboarding card with clickable segmented step bar."}
+{"id": "minidev:onboarding-wizard", "node": "section/onboarding", "variation": "wizard", "job": "Three-step flow walking new users through setup."}
+{"id": "minidev:orbit-logo-cluster", "node": "section/logos", "variation": "integration-cards", "job": "Logo chips orbiting a centre badge to show integrations."}
+{"id": "minidev:orbiting-circles", "node": "section/logos", "variation": "integration-cards", "job": "Icons orbiting a central hub on rings for integrations."}
+{"id": "minidev:order-summary", "node": "section/pricing", "variation": "checkout", "job": "Checkout summary listing subtotal, shipping and totals."}
+{"id": "minidev:org-switcher", "node": "section/sidebar", "variation": "workspace-switch", "job": "Popover for switching between organisations or workspaces."}
+{"id": "minidev:otp-input", "node": "atom/text-input", "variation": "otp", "job": "One-time code input with slots over one real input."}
+{"id": "minidev:page-header", "node": "section/page-header", "variation": "title-only", "job": "Page title block with heading, description and action."}
+{"id": "minidev:pagination", "node": "component/pagination", "variation": "page-counter", "job": "Previous and next buttons that disable at the page edges."}
+{"id": "minidev:parallax-panel", "node": "atom/layout", "variation": "parallax", "job": "Panel whose heading and accent orb move at different speeds."}
+{"id": "minidev:particles", "node": null, "variation": null, "job": "Decorative canvas particle field behind content."}
+{"id": "minidev:password-input", "node": "component/field", "variation": "password", "job": "Password field with a show and hide toggle."}
+{"id": "minidev:password-strength", "node": "component/field", "variation": "validation-states", "job": "Password field with four-step strength meter and rule checks."}
+{"id": "minidev:payment-method-card", "node": "component/card", "variation": "standard-card", "job": "Saved card row showing brand, last four digits and expiry."}
+{"id": "minidev:peek-panel", "node": "component/sheet", "variation": "detail-view", "job": "Right-side detail panel with title, close button and content."}
+{"id": "minidev:permission-chip", "node": "atom/badge", "variation": "tag-chip", "job": "Small uppercase chip showing an access level."}
+{"id": "minidev:permission-denied", "node": "component/empty", "variation": "error-state", "job": "403 card explaining admin rights are needed, with an action."}
+{"id": "minidev:phone-input", "node": "component/field", "variation": "text-input", "job": "Telephone field with numeric keypad and autocomplete."}
+{"id": "minidev:pie-chart", "node": "component/chart", "variation": "pie-donut", "job": "Pie chart with leader-line labels, legend and pulling slices."}
+{"id": "minidev:pin-scroll-gallery", "node": "component/gallery", "variation": "carousel-gallery", "job": "Pinned gallery that scrolls horizontally as the page scrolls."}
+{"id": "minidev:pinned-message", "node": "component/alert", "variation": "callout", "job": "Highlighted pinned note in a chat channel or thread."}
+{"id": "minidev:plan-card", "node": "section/pricing", "variation": "tier-cards", "job": "Pricing plan card with name, price and feature list."}
+{"id": "minidev:plan-comparison", "node": "section/pricing", "variation": "comparison-table", "job": "Free versus Pro table with a row per feature."}
+{"id": "minidev:popover", "node": "component/popover", "variation": "standard-popover", "job": "Floating panel anchored to a trigger element."}
+{"id": "minidev:premium-landing", "node": "page/home", "variation": "home-saas", "job": "Landing page combining aurora hero, features and proof."}
+{"id": "minidev:presence-dot", "node": "atom/status-dot", "variation": "standard", "job": "Coloured dot showing online, away, busy or offline."}
+{"id": "minidev:press-quote", "node": "section/testimonials", "variation": "big-quote", "job": "Centred press quote in a figure and blockquote."}
+{"id": "minidev:pricing-kinetic", "node": "section/pricing", "variation": "tier-cards", "job": "Pricing section with kinetic headline and marquee strip."}
+{"id": "minidev:pricing-motion", "node": "section/pricing", "variation": "tier-cards", "job": "Pricing plan cards that fade up in sequence on scroll."}
+{"id": "minidev:pricing-page", "node": "page/pricing-page", "variation": "pricing-toggle", "job": "Full pricing page with monthly or yearly toggle."}
+{"id": "minidev:pricing-plans", "node": "section/pricing", "variation": "billing-toggle", "job": "Pricing section with monthly or yearly switch rolling prices."}
+{"id": "minidev:pricing-table", "node": "section/pricing", "variation": "tier-cards", "job": "Three-column pricing section rendering a card per tier."}
+{"id": "minidev:pricing-toggle", "node": "atom/switch", "variation": "segmented", "job": "Monthly and yearly billing period switch on segmented control."}
+{"id": "minidev:priority-picker", "node": "atom/choice", "variation": "group", "job": "Radio group of priority chips from low to urgent."}
+{"id": "minidev:product-card", "node": "component/card", "variation": "product-card", "job": "Storefront product tile with image, badge and price."}
+{"id": "minidev:product-launch", "node": "page/home", "variation": "home-product-launch", "job": "Product launch page with hero, device mock and scroll rail."}
+{"id": "minidev:product-os-mock", "node": "component/mockup", "variation": "interactive-frame", "job": "Mock product interface cycling through inbox and pipeline views."}
+{"id": "minidev:product-tour", "node": "section/features", "variation": "tabs", "job": "Clickable product steps beside a detail pane."}
+{"id": "minidev:profile-form", "node": "section/settings-panel", "variation": "form-layout", "job": "Account profile form with display name and bio fields."}
+{"id": "minidev:progress", "node": "atom/progress", "variation": "linear", "job": "Linear progress bar with track, indicator and label."}
+{"id": "minidev:progress-circle", "node": "atom/progress", "variation": "circular", "job": "Compact circular progress ring drawn in SVG."}
+{"id": "minidev:project-detail", "node": "section/page-header", "variation": "title-only", "job": "Project header with back link, title and description."}
+{"id": "minidev:project-list", "node": "section/data-view", "variation": "list", "job": "Projects list with page header and new project button."}
+{"id": "minidev:prompt-input", "node": "component/composer", "variation": "prompt-inputs", "job": "Chat composer that grows and sends on Enter."}
+{"id": "minidev:prompt-library", "node": "component/list", "variation": "standard-list", "job": "Searchable list of saved prompts filtered by title and tag."}
+{"id": "minidev:prose", "node": "atom/text", "variation": "body", "job": "Typography wrapper styling raw HTML or MDX content."}
+{"id": "minidev:publish-bar", "node": "section/top-bar", "variation": "simple-bar", "job": "Publish bar with status badge and publish action."}
+{"id": "minidev:quantity-stepper", "node": "atom/text-input", "variation": "stepper", "job": "Minus and plus stepper around a tabular quantity."}
+{"id": "minidev:query-builder", "node": "section/filters", "variation": "filters", "job": "Builder chaining field, operator and value filter clauses."}
+{"id": "minidev:quota-bar", "node": "atom/progress", "variation": "linear", "job": "Compact bar showing used against max with a label."}
+{"id": "minidev:radar-chart", "node": "component/chart", "variation": "radar-specialized", "job": "Radar chart plotting normalised values on labelled axes."}
+{"id": "minidev:radial-chart", "node": "component/chart", "variation": "pie-donut", "job": "Radial chart of concentric progress rings with legend."}
+{"id": "minidev:radio-group", "node": "atom/choice", "variation": "group", "job": "Accessible radio group with keyboard navigation."}
+{"id": "minidev:range-slider", "node": "atom/slider", "variation": "range", "job": "Two-thumb slider picking a minimum and maximum."}
+{"id": "minidev:rating", "node": "atom/slider", "variation": "rating", "job": "Star rating input as a radio group."}
+{"id": "minidev:reaction-bar", "node": "atom/button", "variation": "toggle", "job": "Emoji reaction pills with counts that toggle on and off."}
+{"id": "minidev:read-receipt", "node": "atom/icon", "variation": "ui-icons", "job": "Icon showing sent, delivered or read tick states."}
+{"id": "minidev:reasoning-block", "node": "component/agent-parts", "variation": "reasoning-display", "job": "Collapsible AI reasoning block folded by default."}
+{"id": "minidev:receipt", "node": "component/card", "variation": "standard-card", "job": "Monospace payment receipt with itemised amounts and order id."}
+{"id": "minidev:regenerate-bar", "node": "component/message", "variation": "actions-feedback", "job": "Bar under AI answers with regenerate and not-quite-right actions."}
+{"id": "minidev:region-picker", "node": "atom/choice", "variation": "card", "job": "Selectable cards for choosing a deployment region."}
+{"id": "minidev:relative-time", "node": "atom/text", "variation": "body", "job": "Relative timestamp such as 5m ago or 2d ago."}
+{"id": "minidev:report-builder", "node": "section/detail", "variation": "two-pane", "job": "Report layout with export, date range and options panes."}
+{"id": "minidev:reset-password-form", "node": "section/auth", "variation": "forgot", "job": "Reset password card with new and confirm password fields."}
+{"id": "minidev:resizable-panels", "node": "section/detail", "variation": "resizable", "job": "Two panels split by a draggable divider with clamped widths."}
+{"id": "minidev:resource-quota-grid", "node": "component/stat", "variation": "progress-stat", "job": "Responsive grid of quota cards with labelled usage bars."}
+{"id": "minidev:retro-grid", "node": null, "variation": null, "job": "Decorative retro perspective grid floor behind content."}
+{"id": "minidev:retry-block", "node": "component/alert", "variation": "inline-alert", "job": "Danger inline alert paired with a Try again button."}
+{"id": "minidev:review-request-card", "node": "component/card", "variation": "standard-card", "job": "Code review request card with badge and pull request title."}
+{"id": "minidev:rich-text-toolbar", "node": "atom/button", "variation": "group", "job": "Formatting toolbar with bold, italic, link and list toggles."}
+{"id": "minidev:ripple", "node": null, "variation": null, "job": "Decorative rings pulsing behind content."}
+{"id": "minidev:role-permission-matrix", "node": "component/table", "variation": "standard-table", "job": "Matrix with roles as columns and permissions as checkable rows."}
+{"id": "minidev:role-picker", "node": "atom/choice", "variation": "group", "job": "Team role picker offering Owner, Admin and Member."}
+{"id": "minidev:row-selection", "node": "atom/choice", "variation": "checkbox", "job": "Table row checkbox with checked and indeterminate states."}
+{"id": "minidev:saas-landing", "node": "page/home", "variation": "home-saas", "job": "Full SaaS landing template with hero, logos and pricing."}
+{"id": "minidev:saas-marketing-page", "node": "page/home", "variation": "home-saas", "job": "Full SaaS marketing page with pitch hero and logo strip."}
+{"id": "minidev:saved-views", "node": "component/list", "variation": "standard-list", "job": "Listbox of named saved filter views."}
+{"id": "minidev:schema-field-row", "node": "component/code", "variation": "schema", "job": "API schema row with monospace field name and required badge."}
+{"id": "minidev:scroll-area", "node": "atom/layout", "variation": "scroll-area", "job": "Custom scroll area with thin rounded thumb."}
+{"id": "minidev:scroll-chapter-story", "node": "section/about", "variation": "story-photo", "job": "Three-chapter scroll story sliding in as the reader scrolls."}
+{"id": "minidev:scroll-progress-rail", "node": "atom/progress", "variation": "scroll-progress", "job": "Reading progress bar filling with page scroll on a spring."}
+{"id": "minidev:scroll-reveal", "node": "atom/layout", "variation": "scroll-reveal", "job": "Wrapper sliding children up into place once visible."}
+{"id": "minidev:scroll-story", "node": "section/features", "variation": "split-text-image", "job": "Scrolling story: steps on one side, a pinned visual swaps."}
+{"id": "minidev:search-input", "node": "component/search", "variation": "search-field", "job": "Search field with leading icon and a clear button once typed."}
+{"id": "minidev:search-results-page", "node": "component/search", "variation": "results-display", "job": "Query input with result count and a list of matching hits."}
+{"id": "minidev:search-with-results", "node": "component/search", "variation": "with-suggestions", "job": "Search field with a results list of titles and subtitles below."}
+{"id": "minidev:seat-manager", "node": "section/settings-panel", "variation": "card-blocks", "job": "Team seat card showing seats used, an Invite button and members."}
+{"id": "minidev:secret-reveal", "node": "component/field", "variation": "password", "job": "Masked API key field with a reveal toggle and copy action."}
+{"id": "minidev:section-header", "node": "section/page-header", "variation": "title-only", "job": "Section header with title, muted description and a right-aligned action."}
+{"id": "minidev:segmented-control", "node": "component/tabs", "variation": "pill-segmented", "job": "Segmented option control with a springing thumb and keyboard arrows."}
+{"id": "minidev:select", "node": "component/select", "variation": "standard-select", "job": "Select dropdown with trigger sizes, animated popup and option groups."}
+{"id": "minidev:separator", "node": "atom/layout", "variation": null, "job": "Hairline rule separating content horizontally or vertically.", "edge": "hairline divider"}
+{"id": "minidev:server-error-state", "node": "component/empty", "variation": "error-state", "job": "500 error card with explanation and Retry and Copy request actions."}
+{"id": "minidev:session-list", "node": "component/list", "variation": "standard-list", "job": "Active sessions list marking the current device with revoke actions."}
+{"id": "minidev:settings-layout", "node": "section/settings-panel", "variation": "sidebar", "job": "Settings layout with a 200px side nav and a content area."}
+{"id": "minidev:settings-page", "node": "page/settings", "variation": "settings-sidebar", "job": "Full settings page: profile, theme, notification preferences and more."}
+{"id": "minidev:sheet", "node": "component/sheet", "variation": "side-sheet", "job": "Slide-out sheet from any edge with backdrop, header and close."}
+{"id": "minidev:shimmer-button", "node": "atom/button", "variation": "primary", "job": "Call to action with a light band sweeping across it."}
+{"id": "minidev:shipping-address", "node": "component/form", "variation": "with-validation", "job": "Shipping address form with name, street, city and postal fields."}
+{"id": "minidev:shortcut-cheat-sheet", "node": "component/dialog", "variation": "modal-dialog", "job": "Keyboard shortcut list with key combinations rendered as keycaps."}
+{"id": "minidev:sidebar", "node": "section/sidebar", "variation": "icon-rail", "job": "App sidebar shell that collapses to an icon-only rail."}
+{"id": "minidev:sidebar-section", "node": "section/sidebar", "variation": "grouped", "job": "Sidebar group of nav items under an optional small heading."}
+{"id": "minidev:sign-in-page", "node": "page/auth-page", "variation": "auth-sign-in", "job": "Centered sign-in page with social buttons, email and password."}
+{"id": "minidev:sign-up-form", "node": "section/auth", "variation": "sign-up", "job": "Create-account form with GitHub, Google, name, email and password."}
+{"id": "minidev:signature-pad", "node": "component/field", "variation": null, "job": "Canvas to draw a signature by mouse, pen or finger.", "edge": "signature canvas"}
+{"id": "minidev:skeleton", "node": "atom/loader", "variation": "skeleton", "job": "Loading placeholder plate with a sweeping sheen."}
+{"id": "minidev:skip-link", "node": "atom/link", "variation": "navigation", "job": "Skip-to-content link hidden until focused, then shown fixed."}
+{"id": "minidev:slash-command-menu", "node": "component/command", "variation": "command-menu", "job": "Slash menu filtering commands by typed query with shortcut labels."}
+{"id": "minidev:slider", "node": "atom/slider", "variation": "slider", "job": "Range slider with a value bubble shown while dragging."}
+{"id": "minidev:social-auth-row", "node": "atom/button", "variation": "social-brand", "job": "Two-column row of Continue with GitHub and Google buttons."}
+{"id": "minidev:social-proof", "node": "atom/avatar", "variation": "avatar-group", "job": "Row of overlapping avatars with initials fallback and a count."}
+{"id": "minidev:social-proof-wall", "node": "section/testimonials", "variation": "masonry", "job": "Testimonial wall with logo marquee and three quote columns."}
+{"id": "minidev:soft-stack", "node": "component/card", "variation": "stack-flip", "job": "Three offset cards that spring into a layered pile on scroll."}
+{"id": "minidev:sortable-header", "node": "component/table", "variation": "data-table", "job": "Table header button cycling sort direction with arrow indicators."}
+{"id": "minidev:sortable-list", "node": "component/list", "variation": "sortable", "job": "Drag-to-reorder list with keyboard reordering from the handle."}
+{"id": "minidev:source-card", "node": "component/agent-parts", "variation": "sources-display", "job": "Citation source card with title, source badge and truncated URL."}
+{"id": "minidev:sparkles-text", "node": "atom/text", "variation": "heading", "job": "Headline with twinkling star accents around the text."}
+{"id": "minidev:sparkline-set", "node": "component/stat", "variation": "kpi-sparkline", "job": "Grid of metric cards, each with delta chip and area sparkline."}
+{"id": "minidev:spinner", "node": "atom/loader", "variation": "spinner", "job": "Loading spinner in three sizes with an accessible label."}
+{"id": "minidev:split-button", "node": "atom/button", "variation": "group", "job": "Primary action with a chevron opening secondary action dropdown."}
+{"id": "minidev:split-flap", "node": "atom/text", "variation": null, "job": "Split-flap board that flips characters through the alphabet.", "edge": "split-flap display text"}
+{"id": "minidev:split-pane", "node": "atom/layout", "variation": null, "job": "Two-column layout stacking on mobile, side by side from md.", "edge": "static split columns"}
+{"id": "minidev:split-proof-panel", "node": "section/features", "variation": "split-text-image", "job": "Two-column proof section with pitch, checklist and key facts."}
+{"id": "minidev:sql-result-table", "node": "component/table", "variation": "data-table", "job": "Query result table with monospace cells and horizontal scroll."}
+{"id": "minidev:sso-provider-card", "node": "component/card", "variation": "standard-card", "job": "SSO provider card with status badge and enable switch."}
+{"id": "minidev:stack", "node": "atom/layout", "variation": null, "job": "Vertical flex column layout primitive with a gap prop.", "edge": "flex column stack"}
+{"id": "minidev:stack-reveal-story", "node": "component/card", "variation": "stack-flip", "job": "Story cards that rise and overlap into a stack on scroll."}
+{"id": "minidev:stack-trace", "node": "component/code", "variation": "highlighted-code", "job": "Monospace error trace block with danger tint and scrolling."}
+{"id": "minidev:stacked-bar-chart", "node": "component/chart", "variation": "bar-chart", "job": "Stacked bar chart splitting each column into coloured series."}
+{"id": "minidev:stat-card", "node": "component/card", "variation": "stat-card", "job": "Stat card with label, icon, large value and coloured delta chip."}
+{"id": "minidev:stat-sparkline", "node": "component/stat", "variation": "kpi-sparkline", "job": "Metric card with large value, signed delta and area sparkline."}
+{"id": "minidev:stats-counter", "node": "component/stat", "variation": "counter", "job": "Single stat counting up from zero once it scrolls into view."}
+{"id": "minidev:stats-strip", "node": "section/stats", "variation": "row", "job": "Strip of centred value and label cells split by hairlines."}
+{"id": "minidev:status-badge", "node": "atom/badge", "variation": "badge", "job": "Status badge with tinted fill and coloured dot."}
+{"id": "minidev:status-dot", "node": "atom/status-dot", "variation": "standard", "job": "Small status dot in neutral, success, warning, danger and accent tones."}
+{"id": "minidev:status-marketing", "node": "section/hero", "variation": "text-only", "job": "Status section with incident banner, badge and gradient headline."}
+{"id": "minidev:status-page", "node": "component/card", "variation": "standard-card", "job": "System status panel listing services with per-service health marks."}
+{"id": "minidev:step-progress", "node": "component/steps", "variation": "progress-steps", "job": "Segmented progress bar filling for completed and current steps."}
+{"id": "minidev:stepper", "node": "component/steps", "variation": "horizontal-stepper", "job": "Numbered stepper bars and labels for multi-step forms."}
+{"id": "minidev:sticky-bar", "node": "component/dock", "variation": "action-toolbar", "job": "Sticky bottom action bar with blurred translucent background."}
+{"id": "minidev:sticky-column", "node": "component/table", "variation": "data-table", "job": "Table column that pins to the left or right edge."}
+{"id": "minidev:sticky-cta-bar", "node": "section/cta", "variation": "centered-banner", "job": "Floating CTA bar that slides up after the page scrolls 320px."}
+{"id": "minidev:sticky-feature-story", "node": "section/features", "variation": "split-text-image", "job": "Sticky scroll section: active step highlights while a preview stays pinned."}
+{"id": "minidev:stop-generating", "node": "atom/button", "variation": "icon-button", "job": "Stop button with a filled square icon that cancels generation."}
+{"id": "minidev:streak-calendar", "node": "component/widget", "variation": "streak-tracker", "job": "28-day streak grid in seven columns with active days filled."}
+{"id": "minidev:streaming-cursor", "node": "atom/text", "variation": null, "job": "Blinking caret placed at the end of streaming text.", "edge": "blinking text caret"}
+{"id": "minidev:streaming-message", "node": "component/message", "variation": "streaming-text", "job": "Chat bubble rendering partial AI output with a blinking caret."}
+{"id": "minidev:suggestion-chips", "node": "component/message", "variation": "suggestions", "job": "Row of suggestion chips that call onSelect when clicked."}
+{"id": "minidev:support-inbox", "node": "page/index", "variation": "index-list", "job": "Support ticket inbox with search, compose and threaded list."}
+{"id": "minidev:switch", "node": "atom/switch", "variation": "standard", "job": "On/off switch whose thumb stretches on press then springs across."}
+{"id": "minidev:table", "node": "component/table", "variation": "standard-table", "job": "Table primitives for header, body, row, cell and caption, scroll-wrapped."}
+{"id": "minidev:table-pagination", "node": "component/pagination", "variation": "page-counter", "job": "Footer showing Page X of Y with previous and next buttons."}
+{"id": "minidev:table-toolbar", "node": "section/filters", "variation": "filters", "job": "Table toolbar with search on the left and filter slots right."}
+{"id": "minidev:tabs", "node": "component/tabs", "variation": "underline", "job": "Tabs with a springing thumb or underline for the active tab."}
+{"id": "minidev:tags-input", "node": "component/tags", "variation": "basic-tag-input", "job": "Tag input adding chips on Enter or comma, skipping duplicates."}
+{"id": "minidev:tax-fields", "node": "component/form", "variation": "with-validation", "job": "Checkout tax fields: country and a monospace VAT or EIN input."}
+{"id": "minidev:team-member-row", "node": "component/list", "variation": "with-avatars", "job": "Team member row with initials avatar, name, email and role badge."}
+{"id": "minidev:terminal-window", "node": "component/code", "variation": "terminal", "job": "Terminal window with traffic-light dots and a monospace body."}
+{"id": "minidev:testimonial", "node": "component/card", "variation": "profile-card", "job": "Testimonial card with quote, initials avatar, name and role."}
+{"id": "minidev:testimonial-carousel", "node": "section/testimonials", "variation": "carousel", "job": "Testimonial carousel that auto-advances with slide transitions."}
+{"id": "minidev:text", "node": "atom/text", "variation": "body", "job": "Paragraph text primitive with muted, subtle and mono variants."}
+{"id": "minidev:text-reveal", "node": "atom/text", "variation": "body", "job": "Paragraph that lights up word by word on scroll."}
+{"id": "minidev:text-scramble", "node": "atom/text", "variation": null, "job": "Text that scrambles random glyphs, then resolves letter by letter.", "edge": "scramble text effect"}
+{"id": "minidev:textarea", "node": "atom/text-input", "variation": "textarea", "job": "Multiline text field with a 96px minimum height and hairline border."}
+{"id": "minidev:theme-picker", "node": "atom/switch", "variation": "theme-toggle", "job": "Light, dark and system theme picker as a segmented radio group."}
+{"id": "minidev:thinking-block", "node": "component/agent-parts", "variation": "reasoning-display", "job": "Thinking panel with chevron header that reveals the model's reasoning."}
+{"id": "minidev:time-picker", "node": "component/picker", "variation": "time-picker", "job": "Time picker built on the native time input, styled to match."}
+{"id": "minidev:timeline", "node": "component/timeline", "variation": "vertical-timeline", "job": "Vertical timeline with a hairline rail and a dot per event."}
+{"id": "minidev:toast", "node": "component/toast", "variation": "basic-toast", "job": "Toast notifications for success, error, warning and promise states."}
+{"id": "minidev:toc", "node": "component/toc", "variation": "standard-toc", "job": "Table of contents with anchor links indented by heading level."}
+{"id": "minidev:toggle", "node": "atom/button", "variation": "toggle", "job": "Two-state toggle button with a pressed style in three sizes."}
+{"id": "minidev:toggle-group", "node": "atom/switch", "variation": "toggle-group", "job": "Toggle group for single or multiple selection of toggle buttons."}
+{"id": "minidev:token-usage-meter", "node": "component/agent-parts", "variation": "usage-cost", "job": "LLM token meter showing tokens used against a monthly limit."}
+{"id": "minidev:tool-call-card", "node": "component/agent-parts", "variation": "tool-calls", "job": "Agent tool call card with tool name, argument preview and status."}
+{"id": "minidev:tool-call-collapsed", "node": "component/agent-parts", "variation": "tool-calls", "job": "Compact collapsed tool call row that expands with a rotating chevron."}
+{"id": "minidev:tool-result-panel", "node": "component/agent-parts", "variation": "tool-calls", "job": "Tool result panel with name, success or error badge and output."}
+{"id": "minidev:tooltip", "node": "atom/tooltip", "variation": "standard", "job": "Tooltip on hover or focus, with a provider for shared delay."}
+{"id": "minidev:topbar", "node": "section/top-bar", "variation": "simple-bar", "job": "App top bar: title or custom left content, right action slot."}
+{"id": "minidev:trace-waterfall", "node": "component/timeline", "variation": "gantt-chart", "job": "Spans drawn as bars offset by start time and scaled."}
+{"id": "minidev:tree-view", "node": "component/tree", "variation": "standard-tree", "job": "Nested tree view with expandable nodes and ARIA tree roles."}
+{"id": "minidev:trial-banner", "node": "component/alert", "variation": "top-banner", "job": "Trial banner with days-left headline and an Upgrade button."}
+{"id": "minidev:two-factor-setup", "node": "section/auth", "variation": "2fa", "job": "Two-factor setup card with QR code, one-time code input and verify."}
+{"id": "minidev:two-factor-verify", "node": "section/auth", "variation": "2fa", "job": "Two-factor verification screen with one-time password input."}
+{"id": "minidev:typing-indicator", "node": "atom/loader", "variation": "dots-bars", "job": "Three pulsing dots in a rounded pill, staggered by 120ms."}
+{"id": "minidev:typing-text", "node": "atom/text", "variation": null, "job": "Typewriter that types, holds, deletes and moves to the next phrase.", "edge": "typewriter text"}
+{"id": "minidev:typographic-marquee", "node": "atom/layout", "variation": null, "job": "Large type marquee looping phrases horizontally in an endless scroll.", "edge": "infinite marquee strip"}
+{"id": "minidev:upgrade-prompt", "node": "section/cta", "variation": "card", "job": "Upgrade card showing what the paid plan unlocks, with a button."}
+{"id": "minidev:uptime-bar", "node": "component/chart", "variation": "heatmap", "job": "One cell per day over 90 days, coloured by uptime status."}
+{"id": "minidev:usage-breakdown", "node": "component/stat", "variation": "progress-stat", "job": "Metered items, each with a label, used-over-limit count and bar."}
+{"id": "minidev:usage-meter", "node": "atom/progress", "variation": "linear", "job": "Single usage meter with label, used-over-limit count and linked progress bar."}
+{"id": "minidev:user-chip", "node": "atom/avatar", "variation": "standard", "job": "Small avatar with initials fallback and the person's name beside it."}
+{"id": "minidev:user-detail", "node": "page/record", "variation": "record-profile", "job": "User detail header: back link, avatar beside the name, details."}
+{"id": "minidev:users-table-page", "node": "page/index", "variation": "index-table", "job": "Users admin page with an invite action and row-filtering search."}
+{"id": "minidev:version-badge", "node": "atom/badge", "variation": "badge", "job": "Release-number badge with optional stable, beta or canary tag."}
+{"id": "minidev:vertical-tabs", "node": "component/tabs", "variation": "vertical", "job": "Vertical tab list on the left, active panel on the right."}
+{"id": "minidev:video-player-chrome", "node": "component/player", "variation": "video-player", "job": "Video player chrome: 16:9 stage, play button, volume and controls."}
+{"id": "minidev:virtualized-list", "node": "component/list", "variation": "virtualized", "job": "Renders only visible rows plus a small buffer for long lists."}
+{"id": "minidev:visually-hidden", "node": null, "variation": null, "job": "Wrapper hiding content visually while keeping it for screen readers."}
+{"id": "minidev:vote-control", "node": "atom/button", "variation": "toggle", "job": "Upvote and downvote control with score and aria-pressed states."}
+{"id": "minidev:waffle-chart", "node": "component/chart", "variation": null, "job": "Squares fill a 10-column grid to show value out of total.", "edge": "waffle grid chart"}
+{"id": "minidev:waitlist-hero", "node": "section/hero", "variation": "form", "job": "Hero with pulsing glow, email input and a request-access button."}
+{"id": "minidev:waveform-hero", "node": "section/hero", "variation": "centered-text", "job": "Hero with an audio waveform of staggered pulsing hairline bars."}
+{"id": "minidev:webhook-list", "node": "component/list", "variation": "standard-list", "job": "Webhook endpoint list with add button, monospace URLs and subscribed events."}
+{"id": "minidev:welcome-screen", "node": "section/onboarding", "variation": "welcome-screen", "job": "Onboarding welcome card with headline, intro and three numbered first steps."}
+{"id": "minidev:well", "node": "atom/layout", "variation": null, "job": "Recessed panel with sunken background and hairline border for grouping content.", "edge": "recessed panel"}
+{"id": "minidev:window-chrome", "node": "component/mockup", "variation": null, "job": "macOS-style window frame with traffic-light dots and a truncated title bar.", "edge": "window frame chrome"}
+{"id": "minidev:wishlist-button", "node": "atom/button", "variation": "toggle", "job": "Heart icon button toggling a wishlist state with aria-pressed."}
+{"id": "minidev:word-rotate", "node": "atom/text", "variation": null, "job": "Sentence word rotating, old word blurs out as the next rises.", "edge": "rotating word text"}
+{"id": "minidev:workflow-board", "node": "component/board", "variation": "multi-column-board", "job": "Triage and approvals board with issue keys, due chips and priority."}
+{"id": "minidev:workspace-create", "node": "component/form", "variation": "with-validation", "job": "Create-workspace form: required name, URL slug input, and validation."}

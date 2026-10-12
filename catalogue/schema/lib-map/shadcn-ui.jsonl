@@ -1,0 +1,135 @@
+{"id": "shadcn-ui:accordion", "node": "component/accordion", "variation": null, "job": "Accordion"}
+{"id": "shadcn-ui:alert", "node": "component/alert", "variation": "inline-alert", "job": "Alert"}
+{"id": "shadcn-ui:alert-dialog", "node": "component/dialog", "variation": "confirm-alert", "job": "Alert dialog"}
+{"id": "shadcn-ui:aspect-ratio", "node": "atom/layout", "variation": null, "job": "Aspect ratio"}
+{"id": "shadcn-ui:attachment", "node": "component/upload", "variation": "attachment-list", "job": "Attachment"}
+{"id": "shadcn-ui:avatar", "node": "atom/avatar", "variation": null, "job": "Avatar"}
+{"id": "shadcn-ui:badge", "node": "atom/badge", "variation": null, "job": "Badge"}
+{"id": "shadcn-ui:breadcrumb", "node": "component/breadcrumb", "variation": null, "job": "Breadcrumb"}
+{"id": "shadcn-ui:bubble", "node": "component/message", "variation": "message-bubble", "job": "Bubble"}
+{"id": "shadcn-ui:button", "node": "atom/button", "variation": null, "job": "Button"}
+{"id": "shadcn-ui:button-group", "node": "atom/button", "variation": "group", "job": "Button group"}
+{"id": "shadcn-ui:calendar", "node": "component/calendar", "variation": "month-calendar", "job": "Calendar"}
+{"id": "shadcn-ui:card", "node": "component/card", "variation": null, "job": "Card"}
+{"id": "shadcn-ui:carousel", "node": "component/carousel", "variation": null, "job": "Carousel"}
+{"id": "shadcn-ui:chart", "node": "component/chart", "variation": null, "job": "Chart"}
+{"id": "shadcn-ui:checkbox", "node": "atom/choice", "variation": "checkbox", "job": "Checkbox"}
+{"id": "shadcn-ui:collapsible", "node": "component/accordion", "variation": "collapsible", "job": "Collapsible"}
+{"id": "shadcn-ui:combobox", "node": "component/select", "variation": "combobox", "job": "Combobox"}
+{"id": "shadcn-ui:command", "node": "component/command", "variation": "command-menu", "job": "Command"}
+{"id": "shadcn-ui:context-menu", "node": "component/menu", "variation": "context-menu", "job": "Context menu"}
+{"id": "shadcn-ui:dialog", "node": "component/dialog", "variation": "modal-dialog", "job": "Dialog"}
+{"id": "shadcn-ui:direction", "node": null, "variation": null, "job": "Direction"}
+{"id": "shadcn-ui:drawer", "node": "component/sheet", "variation": "bottom-sheet", "job": "Drawer"}
+{"id": "shadcn-ui:dropdown-menu", "node": "component/menu", "variation": "dropdown-menu", "job": "Dropdown menu"}
+{"id": "shadcn-ui:empty", "node": "component/empty", "variation": null, "job": "Empty"}
+{"id": "shadcn-ui:field", "node": "component/field", "variation": null, "job": "Field"}
+{"id": "shadcn-ui:form", "node": "component/form", "variation": "with-validation", "job": "Form"}
+{"id": "shadcn-ui:hover-card", "node": "component/popover", "variation": "hover-card", "job": "Hover card"}
+{"id": "shadcn-ui:input", "node": "atom/text-input", "variation": "text-input", "job": "Input"}
+{"id": "shadcn-ui:input-group", "node": "component/field", "variation": "with-addon", "job": "Input group"}
+{"id": "shadcn-ui:input-otp", "node": "atom/text-input", "variation": "otp", "job": "Input otp"}
+{"id": "shadcn-ui:item", "node": "component/list", "variation": null, "job": "Item"}
+{"id": "shadcn-ui:kbd", "node": "atom/text", "variation": "keyboard", "job": "Kbd"}
+{"id": "shadcn-ui:label", "node": "atom/text", "variation": null, "job": "Label"}
+{"id": "shadcn-ui:marker", "node": null, "variation": null, "job": "Marker"}
+{"id": "shadcn-ui:menubar", "node": "component/menu", "variation": "menubar", "job": "Menubar"}
+{"id": "shadcn-ui:message", "node": "component/message", "variation": null, "job": "Message"}
+{"id": "shadcn-ui:message-scroller", "node": "component/message", "variation": "chat-thread", "job": "Message scroller"}
+{"id": "shadcn-ui:native-select", "node": "component/select", "variation": "native-select", "job": "Native select"}
+{"id": "shadcn-ui:navigation-menu", "node": "component/menu", "variation": "navigation-menu", "job": "Navigation menu"}
+{"id": "shadcn-ui:pagination", "node": "component/pagination", "variation": null, "job": "Pagination"}
+{"id": "shadcn-ui:popover", "node": "component/popover", "variation": "standard-popover", "job": "Popover"}
+{"id": "shadcn-ui:progress", "node": "atom/progress", "variation": "linear", "job": "Progress"}
+{"id": "shadcn-ui:questionnaire", "node": "component/form", "variation": "multi-step", "job": "Questionnaire"}
+{"id": "shadcn-ui:radio-group", "node": "atom/choice", "variation": "radio", "job": "Radio group"}
+{"id": "shadcn-ui:resizable", "node": "section/detail", "variation": "resizable", "job": "Resizable"}
+{"id": "shadcn-ui:scroll-area", "node": "atom/layout", "variation": "scroll-area", "job": "Scroll area"}
+{"id": "shadcn-ui:select", "node": "component/select", "variation": "standard-select", "job": "Select"}
+{"id": "shadcn-ui:separator", "node": "atom/layout", "variation": null, "job": "Separator"}
+{"id": "shadcn-ui:sheet", "node": "component/sheet", "variation": "side-sheet", "job": "Sheet"}
+{"id": "shadcn-ui:sidebar", "node": "section/sidebar", "variation": null, "job": "Sidebar"}
+{"id": "shadcn-ui:skeleton", "node": "atom/loader", "variation": "skeleton", "job": "Skeleton"}
+{"id": "shadcn-ui:slider", "node": "atom/slider", "variation": null, "job": "Slider"}
+{"id": "shadcn-ui:sonner", "node": "component/toast", "variation": "basic-toast", "job": "Sonner"}
+{"id": "shadcn-ui:spinner", "node": "atom/loader", "variation": "spinner", "job": "Spinner"}
+{"id": "shadcn-ui:switch", "node": "atom/switch", "variation": null, "job": "Switch"}
+{"id": "shadcn-ui:table", "node": "component/table", "variation": "standard-table", "job": "Table"}
+{"id": "shadcn-ui:tabs", "node": "component/tabs", "variation": null, "job": "Tabs"}
+{"id": "shadcn-ui:textarea", "node": "atom/text-input", "variation": "textarea", "job": "Textarea"}
+{"id": "shadcn-ui:toast", "node": "component/toast", "variation": "basic-toast", "job": "Toast"}
+{"id": "shadcn-ui:toggle", "node": "atom/switch", "variation": "toggle-button", "job": "Toggle"}
+{"id": "shadcn-ui:toggle-group", "node": "atom/switch", "variation": "toggle-group", "job": "Toggle group"}
+{"id": "shadcn-ui:tooltip", "node": "atom/tooltip", "variation": null, "job": "Tooltip"}
+{"id": "shadcn-ui:dashboard-01", "node": "page/dashboard", "variation": "dashboard-overview", "job": "A dashboard with sidebar, charts and data table."}
+{"id": "shadcn-ui:login-01", "node": "section/auth", "variation": "sign-in", "job": "A simple login form."}
+{"id": "shadcn-ui:login-02", "node": "section/auth", "variation": "split-image", "job": "A two column login page with a cover image."}
+{"id": "shadcn-ui:login-03", "node": "section/auth", "variation": "fullpage", "job": "A login page with a muted background color."}
+{"id": "shadcn-ui:login-04", "node": "section/auth", "variation": "split-image", "job": "A login page with form and image."}
+{"id": "shadcn-ui:login-05", "node": "section/auth", "variation": "magic-link", "job": "A simple email-only login page."}
+{"id": "shadcn-ui:sidebar-01", "node": "section/sidebar", "variation": "grouped", "job": "A simple sidebar with navigation grouped by section."}
+{"id": "shadcn-ui:sidebar-02", "node": "section/sidebar", "variation": "collapsible", "job": "A sidebar with collapsible sections."}
+{"id": "shadcn-ui:sidebar-03", "node": "section/sidebar", "variation": "tree", "job": "A sidebar with submenus."}
+{"id": "shadcn-ui:sidebar-04", "node": "section/sidebar", "variation": "tree", "job": "A floating sidebar with submenus."}
+{"id": "shadcn-ui:sidebar-05", "node": "section/sidebar", "variation": "collapsible", "job": "A sidebar with collapsible submenus."}
+{"id": "shadcn-ui:sidebar-06", "node": "section/sidebar", "variation": "tree", "job": "A sidebar with submenus as dropdowns."}
+{"id": "shadcn-ui:sidebar-07", "node": "section/sidebar", "variation": "icon-rail", "job": "A sidebar that collapses to icons."}
+{"id": "shadcn-ui:sidebar-08", "node": "section/shell", "variation": "sidebar-top", "job": "An inset sidebar with secondary navigation."}
+{"id": "shadcn-ui:sidebar-09", "node": "section/sidebar", "variation": "collapsible", "job": "Collapsible nested sidebars."}
+{"id": "shadcn-ui:sidebar-10", "node": "section/sidebar", "variation": null, "job": "A sidebar in a popover."}
+{"id": "shadcn-ui:sidebar-11", "node": "section/sidebar", "variation": "tree", "job": "A sidebar with a collapsible file tree."}
+{"id": "shadcn-ui:sidebar-12", "node": "section/sidebar", "variation": null, "job": "A sidebar with a calendar."}
+{"id": "shadcn-ui:sidebar-13", "node": "section/sidebar", "variation": null, "job": "A sidebar in a dialog."}
+{"id": "shadcn-ui:sidebar-14", "node": "section/sidebar", "variation": null, "job": "A sidebar on the right."}
+{"id": "shadcn-ui:sidebar-15", "node": "section/shell", "variation": "split-view", "job": "A left and right sidebar."}
+{"id": "shadcn-ui:sidebar-16", "node": "section/shell", "variation": "sidebar-top", "job": "A sidebar with a sticky site header."}
+{"id": "shadcn-ui:signup-01", "node": "section/auth", "variation": "sign-up", "job": "A simple signup form."}
+{"id": "shadcn-ui:signup-02", "node": "section/auth", "variation": "sign-up", "job": "A two column signup page with a cover image."}
+{"id": "shadcn-ui:signup-03", "node": "section/auth", "variation": "sign-up", "job": "A signup page with a muted background color."}
+{"id": "shadcn-ui:signup-04", "node": "section/auth", "variation": "sign-up", "job": "A signup page with form and image."}
+{"id": "shadcn-ui:signup-05", "node": "section/auth", "variation": "social", "job": "A simple signup form with social providers."}
+{"id": "shadcn-ui:chart-area-axes", "node": "component/chart", "variation": "area-chart", "job": "Chart area axes"}
+{"id": "shadcn-ui:chart-area-default", "node": "component/chart", "variation": "area-chart", "job": "Chart area default"}
+{"id": "shadcn-ui:chart-area-gradient", "node": "component/chart", "variation": "area-chart", "job": "Chart area gradient"}
+{"id": "shadcn-ui:chart-area-icons", "node": "component/chart", "variation": "area-chart", "job": "Chart area icons"}
+{"id": "shadcn-ui:chart-area-interactive", "node": "component/chart", "variation": "area-chart", "job": "Chart area interactive"}
+{"id": "shadcn-ui:chart-area-legend", "node": "component/chart", "variation": "area-chart", "job": "Chart area legend"}
+{"id": "shadcn-ui:chart-area-linear", "node": "component/chart", "variation": "area-chart", "job": "Chart area linear"}
+{"id": "shadcn-ui:chart-area-stacked", "node": "component/chart", "variation": "area-chart", "job": "Chart area stacked"}
+{"id": "shadcn-ui:chart-area-step", "node": "component/chart", "variation": "area-chart", "job": "Chart area step"}
+{"id": "shadcn-ui:chart-bar-active", "node": "component/chart", "variation": "bar-chart", "job": "Chart bar active"}
+{"id": "shadcn-ui:chart-bar-default", "node": "component/chart", "variation": "bar-chart", "job": "Chart bar default"}
+{"id": "shadcn-ui:chart-bar-horizontal", "node": "component/chart", "variation": "bar-chart", "job": "Chart bar horizontal"}
+{"id": "shadcn-ui:chart-bar-interactive", "node": "component/chart", "variation": "bar-chart", "job": "Chart bar interactive"}
+{"id": "shadcn-ui:chart-bar-label", "node": "component/chart", "variation": "bar-chart", "job": "Chart bar label"}
+{"id": "shadcn-ui:chart-bar-mixed", "node": "component/chart", "variation": "bar-chart", "job": "Chart bar mixed"}
+{"id": "shadcn-ui:chart-bar-multiple", "node": "component/chart", "variation": "bar-chart", "job": "Chart bar multiple"}
+{"id": "shadcn-ui:chart-bar-negative", "node": "component/chart", "variation": "bar-chart", "job": "Chart bar negative"}
+{"id": "shadcn-ui:chart-bar-stacked", "node": "component/chart", "variation": "bar-chart", "job": "Chart bar stacked"}
+{"id": "shadcn-ui:chart-line-default", "node": "component/chart", "variation": "line-chart", "job": "Chart line default"}
+{"id": "shadcn-ui:chart-line-dots", "node": "component/chart", "variation": "line-chart", "job": "Chart line dots"}
+{"id": "shadcn-ui:chart-line-interactive", "node": "component/chart", "variation": "line-chart", "job": "Chart line interactive"}
+{"id": "shadcn-ui:chart-line-label", "node": "component/chart", "variation": "line-chart", "job": "Chart line label"}
+{"id": "shadcn-ui:chart-line-linear", "node": "component/chart", "variation": "line-chart", "job": "Chart line linear"}
+{"id": "shadcn-ui:chart-line-multiple", "node": "component/chart", "variation": "line-chart", "job": "Chart line multiple"}
+{"id": "shadcn-ui:chart-line-step", "node": "component/chart", "variation": "line-chart", "job": "Chart line step"}
+{"id": "shadcn-ui:chart-pie-donut", "node": "component/chart", "variation": "pie-donut", "job": "Chart pie donut"}
+{"id": "shadcn-ui:chart-pie-interactive", "node": "component/chart", "variation": "pie-donut", "job": "Chart pie interactive"}
+{"id": "shadcn-ui:chart-pie-label", "node": "component/chart", "variation": "pie-donut", "job": "Chart pie label"}
+{"id": "shadcn-ui:chart-pie-legend", "node": "component/chart", "variation": "pie-donut", "job": "Chart pie legend"}
+{"id": "shadcn-ui:chart-pie-simple", "node": "component/chart", "variation": "pie-donut", "job": "Chart pie simple"}
+{"id": "shadcn-ui:chart-pie-stacked", "node": "component/chart", "variation": "pie-donut", "job": "Chart pie stacked"}
+{"id": "shadcn-ui:chart-radar-default", "node": "component/chart", "variation": "radar-specialized", "job": "Chart radar default"}
+{"id": "shadcn-ui:chart-radar-dots", "node": "component/chart", "variation": "radar-specialized", "job": "Chart radar dots"}
+{"id": "shadcn-ui:chart-radar-legend", "node": "component/chart", "variation": "radar-specialized", "job": "Chart radar legend"}
+{"id": "shadcn-ui:chart-radar-multiple", "node": "component/chart", "variation": "radar-specialized", "job": "Chart radar multiple"}
+{"id": "shadcn-ui:chart-radial-grid", "node": "atom/progress", "variation": "circular", "job": "Chart radial grid"}
+{"id": "shadcn-ui:chart-radial-label", "node": "atom/progress", "variation": "circular", "job": "Chart radial label"}
+{"id": "shadcn-ui:chart-radial-shape", "node": "atom/progress", "variation": "circular", "job": "Chart radial shape"}
+{"id": "shadcn-ui:chart-radial-simple", "node": "atom/progress", "variation": "circular", "job": "Chart radial simple"}
+{"id": "shadcn-ui:chart-radial-stacked", "node": "atom/progress", "variation": "circular", "job": "Chart radial stacked"}
+{"id": "shadcn-ui:chart-radial-text", "node": "atom/progress", "variation": "circular", "job": "Chart radial text"}
+{"id": "shadcn-ui:chart-tooltip-advanced", "node": "component/chart", "variation": null, "job": "Chart tooltip advanced"}
+{"id": "shadcn-ui:chart-tooltip-default", "node": "component/chart", "variation": null, "job": "Chart tooltip default"}
+{"id": "shadcn-ui:chart-tooltip-formatter", "node": "component/chart", "variation": null, "job": "Chart tooltip formatter"}
+{"id": "shadcn-ui:chart-tooltip-icons", "node": "component/chart", "variation": null, "job": "Chart tooltip icons"}

@@ -1,0 +1,230 @@
+#!/usr/bin/env python3
+"""appfactory: the .appfactory/ standard's tool (factory/standard/APPFACTORY.md). No model; network only for `shots`.
+
+  appfactory init  <repo> --id ID --name NAME [--surface dashboard] [--space app-factory] [--repo owner/name]
+  appfactory check <repo>          schemas, the chain (features -> widgets -> pages -> components), shots; exit 1 on a failure
+  appfactory show  <repo>          the chain on one screen
+  appfactory shots <repo> --base URL [--only P-id,...]   every built page at 390 and 1440 into ui/shots/ (camofox, via bin/shoot)
+
+<repo> is the project's repo root (the folder that holds .appfactory/).
+"""
+import json, os, re, subprocess, sys, pathlib, datetime
+
+HERE = pathlib.Path(__file__).resolve().parent
+STD = HERE.parent / "standard"
+SHOOT = HERE.parent.parent / "bin" / "shoot"
+STEPS = ["What the app is for", "The features that purpose needs", "The widgets those features need",
+         "The pages and sub-pages", "Put them together", "Better components for each job", "Clean, and right at every size",
+         "He iterates with the agent"]
+
+
+def af(repo):
+    return pathlib.Path(repo).expanduser().resolve() / ".appfactory"
+
+
+def load(p):
+    with open(p) as f:
+        return json.load(f)
+
+
+def features(md):
+    out = {}
+    for m in re.finditer(r"^## (F\d{2}) · (.+)$", md, re.M):
+        body = md[m.end():].split("\n## ", 1)[0]
+        st = re.search(r"^Status:\s*(\w+)", body, re.M)
+        out[m.group(1)] = {"name": m.group(2).strip(), "status": st.group(1) if st else None}
+    return out
+
+
+def jpeg_size(path):
+    """(width, height) of a JPEG from its SOF marker; no imaging library needed."""
+    b = open(path, "rb").read()
+    i = 2
+    while i < len(b) - 9:
+        if b[i] != 0xFF: i += 1; continue
+        m = b[i + 1]
+        if 0xC0 <= m <= 0xCF and m not in (0xC4, 0xC8, 0xCC):
+            return int.from_bytes(b[i + 7:i + 9], "big"), int.from_bytes(b[i + 5:i + 7], "big")
+        i += 2 + int.from_bytes(b[i + 2:i + 4], "big")
+    return None
+
+
+def check(repo, quiet=False):
+    d = af(repo)
+    fails, warns = [], []
+    F = lambda m: fails.append(m)
+    W = lambda m: warns.append(m)
+    if not d.is_dir():
+        print(f"FAIL no .appfactory/ in {repo}")
+        return 1
+    need = ["appfactory.json", "app.md", "features.md", "ui/widgets.json", "ui/pages.json", "ui/components.json"]
+    for n in need:
+        if not (d / n).is_file():
+            F(f"missing {n}")
+    for n in ["ui/flows", "ui/reasoning", "ui/shots"]:
+        if not (d / n).is_dir():
+            F(f"missing {n}/")
+    if fails:
+        for m in fails: print("FAIL", m)
+        return 1
+    try:
+        import jsonschema
+    except ImportError:
+        jsonschema = None
+        W("python jsonschema not installed: schemas not checked (pip install jsonschema)")
+    docs = {}
+    for n, s in [("appfactory.json", "appfactory"), ("ui/widgets.json", "widgets"), ("ui/pages.json", "pages"), ("ui/components.json", "components")]:
+        try:
+            docs[s] = load(d / n)
+        except Exception as e:
+            F(f"{n}: not JSON ({e})")
+            continue
+        if jsonschema:
+            v = jsonschema.Draft202012Validator(load(STD / "schema" / f"{s}.schema.json"))
+            for e in sorted(v.iter_errors(docs[s]), key=lambda e: list(e.path)):
+                F(f"{n} {'/'.join(map(str, e.path)) or '(root)'}: {e.message[:160]}")
+    if len(docs) < 4 or fails:
+        for m in fails: print("FAIL", m)
+        print("FAIL: fix the schema failures first; the chain is checked after")
+        return 1
+    # app.md headings
+    app = (d / "app.md").read_text()
+    for h in ["## For", "## His words", "## It is not", "## Done looks like"]:
+        if h not in app:
+            F(f"app.md: missing heading '{h}'")
+    if "> " not in app:
+        F("app.md: '## His words' has no verbatim quote ('> ')")
+    feats = features((d / "features.md").read_text())
+    if not feats:
+        F("features.md: no features (headings '## F01 · Name')")
+    wids = {w["id"]: w for w in docs["widgets"]["widgets"]}
+    pages = {p["id"]: p for p in docs["pages"]["pages"]}
+    comps = docs["components"]["components"]
+    for coll, label in [(docs["widgets"]["widgets"], "widget"), (docs["pages"]["pages"], "page"), (comps, "component")]:
+        seen = set()
+        for x in coll:
+            if x["id"] in seen: F(f"duplicate {label} id {x['id']}")
+            seen.add(x["id"])
+    # the chain
+    for w in wids.values():
+        for f in w["features"]:
+            if f not in feats: F(f"widget {w['id']}: feature {f} is not in features.md")
+            elif feats[f]["status"] == "cut": W(f"widget {w['id']}: feature {f} is cut")
+    placed = {wid for p in pages.values() for wid in p["widgets"]}
+    for p in pages.values():
+        if p["parent"] and p["parent"] not in pages: F(f"page {p['id']}: parent {p['parent']} does not exist")
+        for wid in p["widgets"]:
+            if wid not in wids: F(f"page {p['id']}: widget {wid} is not in widgets.json")
+    for w in wids.values():
+        if w["id"] not in placed: W(f"widget {w['id']} is on no page")
+    used = set()
+    for c in comps:
+        for wid in c["widgets"]:
+            used.add(wid)
+            if wid not in wids: F(f"component {c['id']}: widget {wid} is not in widgets.json")
+        if c["source"] != "custom" and not c.get("uihub"): W(f"component {c['id']}: no uihub id")
+    for w in wids.values():
+        if w["status"] == "built" and w["id"] not in used: W(f"widget {w['id']} is built but no component names it")
+    for f, v in feats.items():
+        if v["status"] != "cut" and not any(f in w["features"] for w in wids.values()): W(f"feature {f} ({v['name']}) has no widget yet")
+    # shots
+    step7 = next((s for s in docs["appfactory"]["line"] if s["step"] == 7), {})
+    for p in pages.values():
+        if p["status"] != "built": continue
+        for size in (390, 1440):
+            f = d / "ui/shots" / f"{p['id']}@{size}.jpg"
+            if not f.is_file():
+                (F if step7.get("status") == "done" else W)(f"page {p['id']}: no shot at {size}")
+                continue
+            wh = jpeg_size(f)
+            if wh and (wh[0] < wh[1]) != (size == 390):
+                F(f"page {p['id']}: the {size} shot is {wh[0]}x{wh[1]}, the wrong shape (the viewport didn't take)")
+    # reasoning
+    for r in sorted((d / "ui/reasoning").glob("*.md")):
+        t = r.read_text()
+        if not re.match(r"\d{4}-\d{2}-\d{2}-", r.name): W(f"reasoning/{r.name}: name should start with a date")
+        for h in ["## Decision", "## His words", "## Why"]:
+            if h not in t: F(f"reasoning/{r.name}: missing '{h}'")
+    for m in fails: print("FAIL", m)
+    for m in warns: print("warn", m)
+    line = docs["appfactory"]["line"]
+    print(f"{'FAIL' if fails else 'ok'}: {docs['appfactory']['id']} · {len(feats)} features · {len(wids)} widgets · "
+          f"{len(pages)} pages · {len(comps)} components · line {sum(s['status'] == 'done' for s in line)}/8 done · "
+          f"{len(fails)} failures, {len(warns)} warnings")
+    return 1 if fails else 0
+
+
+def show(repo):
+    d = af(repo)
+    a = load(d / "appfactory.json")
+    feats = features((d / "features.md").read_text())
+    wids = load(d / "ui/widgets.json")["widgets"]
+    pages = load(d / "ui/pages.json")["pages"]
+    comps = load(d / "ui/components.json")["components"]
+    print(f"{a['name']} ({a['id']}) · {a['surface']} · space {a.get('space')}")
+    print("line: " + "  ".join(f"{s['step']}{'✓' if s['status'] == 'done' else '…' if s['status'] == 'doing' else '·'}" for s in a["line"]))
+    for f, v in feats.items():
+        print(f"\n{f} · {v['name']} [{v['status']}]")
+        for w in [w for w in wids if f in w["features"]]:
+            on = [p["id"] for p in pages if w["id"] in p["widgets"]]
+            cs = [c["name"] for c in comps if w["id"] in c["widgets"]]
+            print(f"   {w['id']} [{w['status']}] on {', '.join(on) or '-'} ← {', '.join(cs) or '-'}")
+
+
+def init(repo, args):
+    d = af(repo)
+    if d.exists():
+        print(f"{d} exists; not touching it"); return 1
+    opt = dict(zip(args[::2], args[1::2]))
+    pid, name = opt.get("--id"), opt.get("--name")
+    if not pid or not name:
+        print("init needs --id and --name"); return 64
+    for sub in ["ui/flows", "ui/reasoning", "ui/shots"]:
+        (d / sub).mkdir(parents=True)
+        (d / sub / ".gitkeep").write_text("")
+    today = datetime.date.today().isoformat()
+    json.dump({"standard": "appfactory/0.1", "id": pid, "name": name, "repo": opt.get("--repo", "owner/" + pid), "root": ".",
+               "surface": opt.get("--surface", "dashboard"), "space": opt.get("--space"), "inventory": None,
+               "line": [{"step": i + 1, "name": n, "status": "todo", "at": None, "by": None, "note": None} for i, n in enumerate(STEPS)]},
+              open(d / "appfactory.json", "w"), indent=1, ensure_ascii=False)
+    (d / "app.md").write_text(f"# {name}: what it is for\n\n## For\n\n## His words\n\n> \n\n## It is not\n\n## Done looks like\n")
+    (d / "features.md").write_text(f"# {name}: features\n\nOne heading per feature, `## F01 · Name`, then what it does, `Why:` and `Status:`.\n")
+    for n, k in [("widgets", "widgets"), ("pages", "pages"), ("components", "components")]:
+        json.dump({k: []}, open(d / f"ui/{n}.json", "w"), indent=1)
+    (d / "README.md").write_text(f"# .appfactory/ for {name}\n\nThis project follows the `.appfactory/` standard v0.1 "
+                                 "(siso-ui-hub `factory/standard/APPFACTORY.md`). Read `app.md`, then `features.md`, then `ui/`.\n"
+                                 f"Check it with `factory/bin/appfactory check <repo>`. Started {today}.\n")
+    print(f"wrote {d}")
+    return 0
+
+
+def shots(repo, args):
+    opt = dict(zip(args[::2], args[1::2]))
+    base = opt.get("--base")
+    if not base:
+        print("shots needs --base URL (the running app; page routes are appended)"); return 64
+    only = set(filter(None, opt.get("--only", "").split(",")))
+    d = af(repo)
+    out = d / "ui/shots"
+    rows = [p for p in load(d / "ui/pages.json")["pages"] if p["status"] == "built" and (not only or p["id"] in only)]
+    for size in (1440, 390):
+        lst = "".join(f"{base}{p['route']}\t{p['id']}@{size}\n" for p in rows)
+        for p in rows:
+            f = out / f"{p['id']}@{size}.jpg"
+            if f.exists(): f.unlink()
+        r = subprocess.run([str(SHOOT), str(out)], input=lst, text=True, capture_output=True,
+                           env={**os.environ, "SHOOT_WIDTH": str(size), "SHOOT_WAIT": os.environ.get("SHOOT_WAIT", "6")})
+        sys.stdout.write(r.stdout + r.stderr)
+    return 0
+
+
+def main():
+    a = sys.argv[1:]
+    if len(a) < 2 or a[0] not in ("init", "check", "show", "shots"):
+        print(__doc__); return 64
+    cmd, repo, rest = a[0], a[1], a[2:]
+    return {"check": lambda: check(repo), "show": lambda: show(repo) or 0, "init": lambda: init(repo, rest), "shots": lambda: shots(repo, rest)}[cmd]()
+
+
+if __name__ == "__main__":
+    sys.exit(main())

@@ -1,0 +1,34 @@
+#!/usr/bin/env python3
+"""Merge the variation drafts (catalogue/schema/variations/draft-*.json, one per scale, drafted by readers from each node's
+evidence) into catalogue/schema/variations.json, the slots of the SISO skeleton on /siso (Shaan, 12 Oct: "get the AI to figure
+out what variations of announcements bars we need and then we pick a schema set from that"). Checks each draft names real
+nodes, gives ids once, and reports how many of each node's parts its match words reach and which variations are gaps."""
+import json, os, re, glob, collections
+HUB = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+D = f"{HUB}/catalogue/schema/variations"
+MOVE = {"page/shell": "section/shell"}  # the app frame is the shell section's own variations
+out, report = {}, []
+ev = {}
+for f in sorted(glob.glob(f"{D}/evidence-*.json")):
+    for n in json.load(open(f)): ev[n["key"]] = n
+for f in sorted(glob.glob(f"{D}/draft-*.json")):
+    for key, v in json.load(open(f)).items():
+        key = MOVE.get(key, key)
+        if key not in ev: report.append(f"unknown node {key} in {os.path.basename(f)}"); continue
+        have = out.setdefault(key, {"variations": []})["variations"]
+        for x in v.get("variations", []):
+            x["id"] = re.sub(r"[^a-z0-9]+", "-", x["id"].lower()).strip("-")
+            if any(y["id"] == x["id"] for y in have): continue
+            x["match"] = [m.lower() for m in x.get("match") or [] if m.strip()]
+            have.append({k: x[k] for k in ("id", "name", "kind", "why", "match") if k in x})
+gaps = tot = 0
+for key, v in out.items():
+    types = ev[key]["types"]; n = sum(c for _, c in types) or 1
+    reach = sum(c for t, c in types if any(any(m in t.lower() for m in x["match"]) for x in v["variations"]))
+    g = [x["id"] for x in v["variations"] if not any(any(m in t.lower() for m in x["match"]) for t, _ in types)]
+    gaps += len(g); tot += len(v["variations"])
+    if reach / n < 0.6: report.append(f"{key}: match words reach {reach / n:.0%} of typed parts")
+missing = [k for k in ev if k not in out]
+json.dump(out, open(f"{HUB}/catalogue/schema/variations.json", "w"), indent=1, ensure_ascii=False)
+print(f"{len(out)} nodes, {tot} variations, {gaps} gaps; nodes without variations: {missing}")
+print("\n".join(report[:40]))

@@ -1,0 +1,94 @@
+{"id": "ai-elements:agent", "node": "component/agent-parts", "variation": "agents", "job": "An agent defined as a card: name, model, instructions, tools."}
+{"id": "ai-elements:artifact", "node": "component/agent-parts", "variation": "artifact-display", "job": "A generated file or document in its own panel with actions."}
+{"id": "ai-elements:attachments", "node": "component/composer", "variation": "with-attachments", "job": "Files attached to a prompt or message, inline or as a list."}
+{"id": "ai-elements:audio-player", "node": "component/player", "variation": "audio-player", "job": "Plays audio the agent returned."}
+{"id": "ai-elements:canvas", "node": "component/agent-parts", "variation": "workflow-graph", "job": "A React Flow canvas for agent workflows: nodes, edges, controls."}
+{"id": "ai-elements:chain-of-thought", "node": "component/agent-parts", "variation": "reasoning-display", "job": "Step-by-step reasoning with search results and images, collapsible."}
+{"id": "ai-elements:checkpoint", "node": "component/agent-parts", "variation": "checkpoints", "job": "A marker in the thread you can restore to."}
+{"id": "ai-elements:code-block", "node": "component/code", "variation": "highlighted-code", "job": "Highlighted code with copy."}
+{"id": "ai-elements:commit", "node": "component/code", "variation": "diff-view", "job": "A git commit: message, author, files changed."}
+{"id": "ai-elements:confirmation", "node": "component/agent-parts", "variation": "approval", "job": "Asks you to approve a tool call; shows accepted or rejected."}
+{"id": "ai-elements:connection", "node": "component/agent-parts", "variation": "workflow-graph", "job": "AI-powered connection component.", "same_as": "ai-elements:canvas"}
+{"id": "ai-elements:context", "node": "component/agent-parts", "variation": "usage-cost", "job": "Context window used and what it cost, on hover."}
+{"id": "ai-elements:controls", "node": "component/agent-parts", "variation": "workflow-graph", "job": "AI-powered controls component.", "same_as": "ai-elements:canvas"}
+{"id": "ai-elements:conversation", "node": "section/chat", "variation": "thread", "job": "The scrolling message list that sticks to the bottom while streaming."}
+{"id": "ai-elements:edge", "node": "component/agent-parts", "variation": "workflow-graph", "job": "AI-powered edge component.", "same_as": "ai-elements:canvas"}
+{"id": "ai-elements:environment-variables", "node": "component/agent-parts", "variation": "settings", "job": "Environment variables with masked values and copy."}
+{"id": "ai-elements:example-attachments-inline", "node": "component/composer", "variation": "with-attachments", "job": "Example implementation of attachments inline.", "same_as": "ai-elements:attachments"}
+{"id": "ai-elements:example-attachments-list", "node": "component/composer", "variation": "with-attachments", "job": "Example implementation of attachments list.", "same_as": "ai-elements:attachments"}
+{"id": "ai-elements:example-audio-player-remote", "node": "component/player", "variation": "audio-player", "job": "Example implementation of audio player-remote.", "same_as": "ai-elements:audio-player"}
+{"id": "ai-elements:example-chatbot", "node": "section/chat", "variation": "thread", "job": "A working chatbot: conversation, prompt input, model picker."}
+{"id": "ai-elements:example-code-block-dark", "node": "component/code", "variation": "highlighted-code", "job": "Example implementation of code block-dark.", "same_as": "ai-elements:code-block"}
+{"id": "ai-elements:example-confirmation-accepted", "node": "component/agent-parts", "variation": "approval", "job": "Example implementation of confirmation accepted.", "same_as": "ai-elements:confirmation"}
+{"id": "ai-elements:example-confirmation-rejected", "node": "component/agent-parts", "variation": "approval", "job": "Example implementation of confirmation rejected.", "same_as": "ai-elements:confirmation"}
+{"id": "ai-elements:example-confirmation-request", "node": "component/agent-parts", "variation": "approval", "job": "Example implementation of confirmation request.", "same_as": "ai-elements:confirmation"}
+{"id": "ai-elements:example-demo-chatgpt", "node": "page/chat-screen", "variation": "chat-history", "job": "A ChatGPT look-alike built from the kit."}
+{"id": "ai-elements:example-demo-claude", "node": "page/chat-screen", "variation": "chat-history", "job": "A Claude look-alike built from the kit."}
+{"id": "ai-elements:example-demo-cursor", "node": "page/chat-screen", "variation": "chat-with-artifact", "job": "A Cursor look-alike: chat beside code."}
+{"id": "ai-elements:example-demo-grok", "node": "page/chat-screen", "variation": "chat-history", "job": "A Grok look-alike built from the kit."}
+{"id": "ai-elements:example-demo-workflow", "node": "component/agent-parts", "variation": "workflow-graph", "job": "Example implementation of demo workflow.", "same_as": "ai-elements:canvas"}
+{"id": "ai-elements:example-file-tree-expanded", "node": "component/tree", "variation": "file-tree", "job": "Example implementation of file tree-expanded.", "same_as": "ai-elements:file-tree"}
+{"id": "ai-elements:example-file-tree-selection", "node": "component/tree", "variation": "file-tree", "job": "Example implementation of file tree-selection.", "same_as": "ai-elements:file-tree"}
+{"id": "ai-elements:example-jsx-preview", "node": "component/agent-parts", "variation": "live-preview", "job": "Example implementation of jsx preview.", "same_as": "ai-elements:jsx-preview"}
+{"id": "ai-elements:example-persona-command", "node": "component/agent-parts", "variation": "voice-orb", "job": "Example implementation of persona command.", "same_as": "ai-elements:persona"}
+{"id": "ai-elements:example-persona-glint", "node": "component/agent-parts", "variation": "voice-orb", "job": "Example implementation of persona glint.", "same_as": "ai-elements:persona"}
+{"id": "ai-elements:example-persona-halo", "node": "component/agent-parts", "variation": "voice-orb", "job": "Example implementation of persona halo.", "same_as": "ai-elements:persona"}
+{"id": "ai-elements:example-persona-mana", "node": "component/agent-parts", "variation": "voice-orb", "job": "Example implementation of persona mana.", "same_as": "ai-elements:persona"}
+{"id": "ai-elements:example-persona-obsidian", "node": "component/agent-parts", "variation": "voice-orb", "job": "Example implementation of persona obsidian.", "same_as": "ai-elements:persona"}
+{"id": "ai-elements:example-persona-opal", "node": "component/agent-parts", "variation": "voice-orb", "job": "Example implementation of persona opal.", "same_as": "ai-elements:persona"}
+{"id": "ai-elements:example-prompt-input-cursor", "node": "component/composer", "variation": "chat-composer", "job": "Example implementation of prompt input-cursor.", "same_as": "ai-elements:prompt-input"}
+{"id": "ai-elements:example-prompt-input-tooltip", "node": "component/composer", "variation": "chat-composer", "job": "Example implementation of prompt input-tooltip.", "same_as": "ai-elements:prompt-input"}
+{"id": "ai-elements:example-queue-prompt-input", "node": "component/composer", "variation": "queue", "job": "Example implementation of queue prompt-input.", "same_as": "ai-elements:queue"}
+{"id": "ai-elements:example-schema-display-body", "node": "component/code", "variation": "schema", "job": "Example implementation of schema display-body.", "same_as": "ai-elements:schema-display"}
+{"id": "ai-elements:example-schema-display-nested", "node": "component/code", "variation": "schema", "job": "Example implementation of schema display-nested.", "same_as": "ai-elements:schema-display"}
+{"id": "ai-elements:example-schema-display-params", "node": "component/code", "variation": "schema", "job": "Example implementation of schema display-params.", "same_as": "ai-elements:schema-display"}
+{"id": "ai-elements:example-shimmer-duration", "node": "component/agent-parts", "variation": "working-status", "job": "Example implementation of shimmer duration.", "same_as": "ai-elements:shimmer"}
+{"id": "ai-elements:example-shimmer-elements", "node": "component/agent-parts", "variation": "working-status", "job": "Example implementation of shimmer elements.", "same_as": "ai-elements:shimmer"}
+{"id": "ai-elements:example-snippet-plain", "node": "component/code", "variation": "snippet-copy", "job": "Example implementation of snippet plain.", "same_as": "ai-elements:snippet"}
+{"id": "ai-elements:example-sources-custom", "node": "component/agent-parts", "variation": "sources-display", "job": "Example implementation of sources custom.", "same_as": "ai-elements:sources"}
+{"id": "ai-elements:example-stack-trace-collapsed", "node": "component/code", "variation": "run-results", "job": "Example implementation of stack trace-collapsed.", "same_as": "ai-elements:stack-trace"}
+{"id": "ai-elements:example-stack-trace-no-internal", "node": "component/code", "variation": "run-results", "job": "Example implementation of stack trace-no-internal.", "same_as": "ai-elements:stack-trace"}
+{"id": "ai-elements:example-suggestion-input", "node": "component/message", "variation": "suggestions", "job": "Example implementation of suggestion input.", "same_as": "ai-elements:suggestion"}
+{"id": "ai-elements:example-terminal-clear", "node": "component/code", "variation": "terminal", "job": "Example implementation of terminal clear.", "same_as": "ai-elements:terminal"}
+{"id": "ai-elements:example-terminal-streaming", "node": "component/code", "variation": "terminal", "job": "Example implementation of terminal streaming.", "same_as": "ai-elements:terminal"}
+{"id": "ai-elements:example-test-results-errors", "node": "component/code", "variation": "run-results", "job": "Example implementation of test results-errors.", "same_as": "ai-elements:test-results"}
+{"id": "ai-elements:example-test-results-suites", "node": "component/code", "variation": "run-results", "job": "Example implementation of test results-suites.", "same_as": "ai-elements:test-results"}
+{"id": "ai-elements:example-tool-input-available", "node": "component/agent-parts", "variation": "tool-calls", "job": "Example implementation of tool input-available.", "same_as": "ai-elements:tool"}
+{"id": "ai-elements:example-tool-input-streaming", "node": "component/agent-parts", "variation": "tool-calls", "job": "Example implementation of tool input-streaming.", "same_as": "ai-elements:tool"}
+{"id": "ai-elements:example-tool-output-available", "node": "component/agent-parts", "variation": "tool-calls", "job": "Example implementation of tool output-available.", "same_as": "ai-elements:tool"}
+{"id": "ai-elements:example-tool-output-error", "node": "component/agent-parts", "variation": "tool-calls", "job": "Example implementation of tool output-error.", "same_as": "ai-elements:tool"}
+{"id": "ai-elements:example-v0-clone", "node": "page/chat-screen", "variation": "chat-with-artifact", "job": "A v0 look-alike: chat beside a live preview."}
+{"id": "ai-elements:example-web-preview", "node": "component/agent-parts", "variation": "live-preview", "job": "Example implementation of web preview.", "same_as": "ai-elements:web-preview"}
+{"id": "ai-elements:example-workflow", "node": "component/agent-parts", "variation": "workflow-graph", "job": "Example implementation of workflow.", "same_as": "ai-elements:canvas"}
+{"id": "ai-elements:file-tree", "node": "component/tree", "variation": "file-tree", "job": "Files and folders the agent touched."}
+{"id": "ai-elements:image", "node": "component/agent-parts", "variation": "generated-image", "job": "An image the model generated."}
+{"id": "ai-elements:inline-citation", "node": "component/agent-parts", "variation": "citations", "job": "A numbered citation inside the text, with a source carousel on hover."}
+{"id": "ai-elements:jsx-preview", "node": "component/agent-parts", "variation": "live-preview", "job": "Renders JSX the model wrote, even while it streams."}
+{"id": "ai-elements:message", "node": "component/message", "variation": "message-bubble", "job": "One message, user or assistant, with actions and branches."}
+{"id": "ai-elements:mic-selector", "node": "component/composer", "variation": "voice-input", "job": "Pick the microphone."}
+{"id": "ai-elements:model-selector", "node": "component/composer", "variation": "with-model-picker", "job": "Pick the model, searchable, with provider logos."}
+{"id": "ai-elements:node", "node": "component/agent-parts", "variation": "workflow-graph", "job": "AI-powered node component.", "same_as": "ai-elements:canvas"}
+{"id": "ai-elements:open-in-chat", "node": "component/menu", "variation": "dropdown-menu", "job": "Open this prompt in ChatGPT, Claude, v0 and others."}
+{"id": "ai-elements:package-info", "node": "component/card", "variation": "standard-card", "job": "A package and its version change."}
+{"id": "ai-elements:panel", "node": "component/agent-parts", "variation": "workflow-graph", "job": "AI-powered panel component.", "same_as": "ai-elements:canvas"}
+{"id": "ai-elements:persona", "node": "component/agent-parts", "variation": "voice-orb", "job": "An animated orb that shows the voice agent listening, thinking, speaking."}
+{"id": "ai-elements:plan", "node": "component/agent-parts", "variation": "plan-tasks", "job": "The agent's plan, streaming in, collapsible."}
+{"id": "ai-elements:prompt-input", "node": "component/composer", "variation": "chat-composer", "job": "The prompt box: text, attachments, model picker, submit."}
+{"id": "ai-elements:queue", "node": "component/composer", "variation": "queue", "job": "Messages and to-dos waiting while the agent works."}
+{"id": "ai-elements:reasoning", "node": "component/agent-parts", "variation": "reasoning-display", "job": "\"Thought for N seconds\", opening to the reasoning."}
+{"id": "ai-elements:sandbox", "node": "component/agent-parts", "variation": "live-preview", "job": "A sandboxed run with its files and output."}
+{"id": "ai-elements:schema-display", "node": "component/code", "variation": "schema", "job": "An API endpoint: path, parameters, body."}
+{"id": "ai-elements:shimmer", "node": "component/agent-parts", "variation": "working-status", "job": "Shimmering text while the model works."}
+{"id": "ai-elements:snippet", "node": "component/code", "variation": "snippet-copy", "job": "A one-line command with copy."}
+{"id": "ai-elements:sources", "node": "component/agent-parts", "variation": "sources-display", "job": "\"Used N sources\", expanding into the links."}
+{"id": "ai-elements:speech-input", "node": "component/composer", "variation": "voice-input", "job": "A mic button that types what you say."}
+{"id": "ai-elements:stack-trace", "node": "component/code", "variation": "run-results", "job": "A stack trace, collapsible, internal frames hidden."}
+{"id": "ai-elements:suggestion", "node": "component/message", "variation": "suggestions", "job": "Prompt pills to start or continue."}
+{"id": "ai-elements:task", "node": "component/agent-parts", "variation": "plan-tasks", "job": "A task with the files it touched."}
+{"id": "ai-elements:terminal", "node": "component/code", "variation": "terminal", "job": "Terminal output, streaming, with clear."}
+{"id": "ai-elements:test-results", "node": "component/code", "variation": "run-results", "job": "Test suites with passes and failures."}
+{"id": "ai-elements:tool", "node": "component/agent-parts", "variation": "tool-calls", "job": "One tool call: name, status, input and output, collapsible."}
+{"id": "ai-elements:toolbar", "node": "component/agent-parts", "variation": "workflow-graph", "job": "AI-powered toolbar component.", "same_as": "ai-elements:canvas"}
+{"id": "ai-elements:transcription", "node": "component/agent-parts", "variation": "transcript", "job": "Speech turned to text, word by word."}
+{"id": "ai-elements:voice-selector", "node": "component/composer", "variation": "voice-input", "job": "Pick the agent's voice."}
+{"id": "ai-elements:web-preview", "node": "component/agent-parts", "variation": "live-preview", "job": "A browser frame showing the page the agent built, with URL bar and console."}

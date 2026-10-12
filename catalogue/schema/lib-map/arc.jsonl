@@ -1,0 +1,238 @@
+{"id": "arc:button", "node": "atom/button", "variation": null, "job": "A clear, responsive action with quiet secondary states."}
+{"id": "arc:action-button", "node": "atom/button", "variation": "loading", "job": "A compact button for frequent toolbar actions."}
+{"id": "arc:split-button", "node": "atom/button", "variation": "group", "job": "A primary action with a menu of nearby alternatives."}
+{"id": "arc:button-group", "node": "atom/button", "variation": "group", "job": "Related actions joined into one surface with hairline dividers: a hover highlight glides between segments, the pressed o"}
+{"id": "arc:floating-button-group", "node": "component/dock", "variation": "action-toolbar", "job": "Separate soft buttons in a quiet tray, with one shared highlight that morphs from button to button as you move, and a pr"}
+{"id": "arc:expanding-button-group", "node": "component/dock", "variation": "action-toolbar", "job": "Icon buttons in a compact group: the one you point at or focus grows to reveal its label while its neighbours slide asid"}
+{"id": "arc:dropdown-menu", "node": "component/menu", "variation": "dropdown-menu", "job": "A focused list of actions anchored to a trigger."}
+{"id": "arc:context-menu", "node": "component/menu", "variation": "context-menu", "job": "Secondary actions kept close to the selected object."}
+{"id": "arc:copy-button", "node": "atom/button", "variation": "copy-share", "job": "Copy a value with immediate confirmation."}
+{"id": "arc:drawer", "node": "component/sheet", "variation": "side-sheet", "job": "A temporary side surface for focused work."}
+{"id": "arc:theme-switch", "node": "atom/switch", "variation": "theme-toggle", "job": "Four smooth ways to move between light and dark appearance."}
+{"id": "arc:theme-switch-eclipse", "node": "atom/switch", "variation": "theme-toggle", "job": "The next appearance crosses the page like an eclipse."}
+{"id": "arc:theme-switch-split", "node": "atom/switch", "variation": "theme-toggle", "job": "The next appearance opens from a slim center seam."}
+{"id": "arc:theme-switch-rise", "node": "atom/switch", "variation": "theme-toggle", "job": "The next appearance rises into place."}
+{"id": "arc:avatar", "node": "atom/avatar", "variation": null, "job": "A compact identity marker for people and accounts."}
+{"id": "arc:avatar-group", "node": "atom/avatar", "variation": "avatar-group", "job": "Show a team or set of contributors in a small space."}
+{"id": "arc:input", "node": "atom/text-input", "variation": "text-input", "job": "A single line field with clear labels and useful states."}
+{"id": "arc:textarea", "node": "atom/text-input", "variation": "textarea", "job": "A multiline field for notes, descriptions, and longer text."}
+{"id": "arc:select", "node": "component/select", "variation": "standard-select", "job": "A compact choice field with a keyboard friendly menu."}
+{"id": "arc:combobox", "node": "component/select", "variation": "combobox", "job": "Search and select from a list without leaving the field."}
+{"id": "arc:checkbox", "node": "atom/choice", "variation": "checkbox", "job": "A binary choice with a precise, legible state."}
+{"id": "arc:switch", "node": "atom/switch", "variation": null, "job": "A tactile toggle for settings that take effect immediately."}
+{"id": "arc:multi-select", "node": "component/select", "variation": "multi-select", "job": "Select several values while keeping the field readable."}
+{"id": "arc:number-field", "node": "atom/text-input", "variation": "stepper", "job": "Enter a bounded number with clear increment controls."}
+{"id": "arc:password-field", "node": "atom/text-input", "variation": "password", "job": "Capture sensitive text with a visible reveal control."}
+{"id": "arc:search-field", "node": "component/search", "variation": "search-field", "job": "A recognizable search entry point with clear affordances."}
+{"id": "arc:tag-input", "node": "component/tags", "variation": "basic-tag-input", "job": "Turn short text values into removable tags."}
+{"id": "arc:file-dropzone", "node": "component/upload", "variation": "dropzone", "job": "A generous target for dropping one or more files."}
+{"id": "arc:radio-group", "node": "atom/choice", "variation": "radio", "job": "Choose one option from a visible set."}
+{"id": "arc:segmented-control", "node": "atom/switch", "variation": "segmented", "job": "Switch between a small set of related views."}
+{"id": "arc:calendar", "node": "component/calendar", "variation": "month-calendar", "job": "Browse dates in a clear, compact month view."}
+{"id": "arc:date-picker", "node": "component/picker", "variation": "date-picker", "job": "Choose a date without losing context."}
+{"id": "arc:time-picker", "node": "component/picker", "variation": "time-picker", "job": "Choose a time with sensible keyboard behavior."}
+{"id": "arc:accordion", "node": "component/accordion", "variation": null, "job": "Progressively reveal supporting information in place."}
+{"id": "arc:dialog", "node": "component/dialog", "variation": "modal-dialog", "job": "A focused surface for decisions that need attention."}
+{"id": "arc:popover", "node": "component/popover", "variation": "standard-popover", "job": "A small anchored surface for contextual information."}
+{"id": "arc:tooltip", "node": "atom/tooltip", "variation": null, "job": "Short supporting text for unfamiliar controls."}
+{"id": "arc:tabs", "node": "component/tabs", "variation": null, "job": "Switch between related content in the same context."}
+{"id": "arc:expandable-card", "node": "component/accordion", "variation": "card-style", "job": "Give a dense card more room when requested."}
+{"id": "arc:breadcrumb", "node": "component/breadcrumb", "variation": null, "job": "Show where a page sits in a hierarchy."}
+{"id": "arc:alert", "node": "component/alert", "variation": "inline-alert", "job": "A persistent message that helps people recover or continue."}
+{"id": "arc:toast", "node": "component/toast", "variation": "basic-toast", "job": "Brief confirmation for a completed background action."}
+{"id": "arc:progress", "node": "atom/progress", "variation": "linear", "job": "Show how much of a known task is complete."}
+{"id": "arc:skeleton", "node": "atom/loader", "variation": "skeleton", "job": "Reserve space while content is still loading."}
+{"id": "arc:badge", "node": "atom/badge", "variation": null, "job": "A small label for status, category, or metadata."}
+{"id": "arc:card", "node": "component/card", "variation": null, "job": "A contained group of related content and actions."}
+{"id": "arc:metric-card", "node": "component/stat", "variation": "kpi-card", "job": "A compact summary for a number that needs context."}
+{"id": "arc:empty-state", "node": "component/empty", "variation": null, "job": "A useful next step when there is nothing to show yet."}
+{"id": "arc:tree-view", "node": "component/tree", "variation": "file-tree", "job": "Navigate nested folders and structured content."}
+{"id": "arc:pagination", "node": "component/pagination", "variation": null, "job": "Move through a long collection with clear bounds."}
+{"id": "arc:filter-toolbar", "node": "section/filters", "variation": null, "job": "Keep collection filters close and easy to reset."}
+{"id": "arc:sortable-data-table", "node": "component/table", "variation": "data-table", "job": "Compare structured records with sortable columns."}
+{"id": "arc:sparkline", "node": "component/chart", "variation": "sparkline", "job": "Show a compact trend beside a value."}
+{"id": "arc:gauge", "node": "atom/progress", "variation": "meter-gauge", "job": "Show a value against a known range."}
+{"id": "arc:animated-counter", "node": "component/stat", "variation": "counter", "job": "Give changing totals a clear sense of movement."}
+{"id": "arc:code-block", "node": "component/code", "variation": "highlighted-code", "job": "Present code with legible hierarchy and copy access."}
+{"id": "arc:text-reveal", "node": "atom/text", "variation": "heading", "job": "Reveal a short piece of content with restrained motion."}
+{"id": "arc:in-view-title", "node": "atom/text", "variation": "heading", "job": "Bring a section title in as it scrolls into view."}
+{"id": "arc:text-morph", "node": "atom/text", "variation": null, "job": "Morph a label into its next state, letter by letter."}
+{"id": "arc:text-shimmer", "node": "atom/loader", "variation": "pulse-shimmer", "job": "Show ongoing work with a calm light across the words."}
+{"id": "arc:hold-to-confirm", "node": "atom/button", "variation": "hold-confirm", "job": "Confirm a destructive action by holding, not tapping."}
+{"id": "arc:swipe-actions", "node": "component/list", "variation": null, "job": "Reveal row actions with a swipe, or from the same actions in a menu."}
+{"id": "arc:slider", "node": "atom/slider", "variation": null, "job": "Pick a value or a range on a track that follows your finger."}
+{"id": "arc:inline-edit", "node": "atom/text-input", "variation": null, "job": "Rename in place: the text becomes a field without moving."}
+{"id": "arc:expanding-search", "node": "component/search", "variation": "expanding-search", "job": "An icon that morphs into a search field with results beneath it."}
+{"id": "arc:chip-group", "node": "atom/badge", "variation": "tag-chip", "job": "Filter by a few facets with chips that morph as you pick them."}
+{"id": "arc:password-strength", "node": "atom/text-input", "variation": "password", "job": "Show how strong a new password is while it is typed."}
+{"id": "arc:bottom-sheet", "node": "component/sheet", "variation": "bottom-sheet", "job": "A sheet that rests at a peek or full height and follows your finger."}
+{"id": "arc:hover-card", "node": "component/popover", "variation": "hover-card", "job": "Preview a person or link on hover or focus without leaving the page."}
+{"id": "arc:resizable-panels", "node": "section/detail", "variation": "resizable", "job": "Trade space between panes by dragging the divider between them."}
+{"id": "arc:toast-stack", "node": "component/toast", "variation": "stacked-toasts", "job": "Stack short results at the edge until you reach for them."}
+{"id": "arc:usage-meter", "node": "atom/progress", "variation": "meter-gauge", "job": "Show what fills an allowance and how close it is to the limit."}
+{"id": "arc:image-compare", "node": "component/compare", "variation": "before-after", "job": "Drag a divider across two images to see what changed."}
+{"id": "arc:carousel", "node": "component/carousel", "variation": null, "job": "Browse a row of slides by dragging, flicking, or arrowing through them."}
+{"id": "arc:card-stack", "node": "component/card", "variation": "stack-flip", "job": "Review a deck one card at a time, with a throw and an undo."}
+{"id": "arc:morph-nav", "node": "section/nav", "variation": "mega-menu", "job": "A navigation bar that morphs into rich menus, search, and a compact state as one surface."}
+{"id": "arc:dock", "node": "component/dock", "variation": "standard-dock", "job": "A floating tool dock with a gliding label, a springy selection, and trays that grow out of it."}
+{"id": "arc:wallet-stack", "node": "component/card", "variation": "stack-flip", "job": "Fan a stack of cards and lift one out to see its activity."}
+{"id": "arc:liquid-tab-bar", "node": "component/tabs", "variation": "pill-segmented", "job": "Tabs with a liquid selection that stretches between them and fills in icons as it passes."}
+{"id": "arc:now-playing", "node": "component/player", "variation": "audio-player", "job": "Grow a mini player into the full player in one continuous morph."}
+{"id": "arc:photo-grid", "node": "component/gallery", "variation": "grid-gallery", "job": "Pinch through zoom levels and open any photo straight from its cell."}
+{"id": "arc:control-center", "node": "component/widget", "variation": null, "job": "Workspace quick settings: tiles that morph into detail, a duration dial, and rubber-banded meters."}
+{"id": "arc:cover-flow", "node": "component/carousel", "variation": "coverflow", "job": "A depth rail of images you can throw, with soft grounded shadows and a quiet reflection."}
+{"id": "arc:activity-rings", "node": "atom/progress", "variation": "circular", "job": "Daily goals as tick rings that sweep, count up, and trace a second lap past 100%."}
+{"id": "arc:bar-chart", "node": "component/chart", "variation": "bar-chart", "job": "Compare one measure across days and scrub any bar for its value."}
+{"id": "arc:activity-heatmap", "node": "component/chart", "variation": "heatmap", "job": "See a year of activity at a glance, one square per day."}
+{"id": "arc:timeline", "node": "component/timeline", "variation": "activity-timeline", "job": "Follow what happened, newest first, grouped by day."}
+{"id": "arc:stretch-refresh", "node": null, "variation": null, "job": "Pull a feed down and a line stretches to tell you when to let go."}
+{"id": "arc:orbit-menu", "node": "component/menu", "variation": "radial-menu", "job": "Hold a button and its actions orbit out, ready to pick with a drag."}
+{"id": "arc:time-dial", "node": "component/picker", "variation": "time-picker", "job": "Spin a dial to pick an hour and see which team cities are at work."}
+{"id": "arc:booking-pill", "node": "component/form", "variation": null, "job": "One pill that reshapes through party size, date, time, and a ticket."}
+{"id": "arc:voice-recorder", "node": "component/player", "variation": "waveform-visualizer", "job": "Record with a live waveform, review and scrub, then send the take into the thread."}
+{"id": "arc:user-menu", "node": "component/menu", "variation": "dropdown-menu", "job": "Your account, settings, theme, and sign out behind the avatar. Opens as a bottom sheet on phones."}
+{"id": "arc:data-grid", "node": "component/table", "variation": "editable-grid", "job": "A spreadsheet grid with range selection, inline editing, a fill handle, and animated sorting."}
+{"id": "arc:lightbox-gallery", "node": "component/lightbox", "variation": null, "job": "A masonry grid where photos zoom from their slot into a viewer you can swipe, pinch, and drag away."}
+{"id": "arc:stepper", "node": "component/steps", "variation": "horizontal-stepper", "job": "Show where a person is in a multi-step flow and what is done."}
+{"id": "arc:morph-loader", "node": "atom/loader", "variation": "specialized", "job": "Tiny loaders that morph between shapes and fold into a check or a cross when done."}
+{"id": "arc:voice-orb", "node": "component/agent-parts", "variation": "voice-orb", "job": "A voice mode orb that listens, thinks, and speaks, with a live transcript and call controls."}
+{"id": "arc:signature-pad", "node": null, "variation": null, "job": "Smooth ink that thins with speed, with undo, replay, and PNG or SVG export."}
+{"id": "arc:date-range-picker", "node": "component/picker", "variation": "date-range", "job": "A range picker that grows from its trigger into two months with presets and a stretching range highlight."}
+{"id": "arc:color-picker", "node": "component/picker", "variation": "color-picker", "job": "A swatch that grows into a picker with format morphing, eyedropper, saved swatches, and contrast readout."}
+{"id": "arc:morph-select", "node": "component/select", "variation": "standard-select", "job": "A select whose trigger grows into the list, with a gliding highlight and type-ahead."}
+{"id": "arc:action-morph", "node": "component/dock", "variation": "expandable", "job": "A floating button that morphs into a quick-action menu, then an inline form, then back with a check."}
+{"id": "arc:share-sheet", "node": "component/popover", "variation": "standard-popover", "job": "A Share button that opens into a panel with copy link, access level, channels, and people to send to."}
+{"id": "arc:line-chart", "node": "component/chart", "variation": "line-chart", "job": "A multi-series line chart with a gliding crosshair, legend toggles, and paths that morph between ranges."}
+{"id": "arc:donut-chart", "node": "component/chart", "variation": "pie-donut", "job": "A donut whose arcs morph between datasets, with the active value rolling into the center."}
+{"id": "arc:streamgraph", "node": "component/chart", "variation": "area-chart", "job": "Layered streams on a wiggle baseline that morph between ranges, with a layer you can isolate and read week by week."}
+{"id": "arc:brush-chart", "node": "component/chart", "variation": "line-chart", "job": "A dense time series with an overview strip: drag a window to zoom, resize it by its handles, and read events in place."}
+{"id": "arc:race-bar-chart", "node": "component/chart", "variation": "bar-chart", "job": "A ranking over time: bars overtake each other on springs, values count up, and a timeline you can play or scrub."}
+{"id": "arc:ridgeline", "node": "component/chart", "variation": "radar-specialized", "job": "Overlapping distributions, one ridge per group: hover to lift a ridge and read its quartiles, switch datasets and every "}
+{"id": "arc:treemap", "node": "component/chart", "variation": "radar-specialized", "job": "A squarified treemap: click to drill and the tiles grow to fill the view, with a breadcrumb back and metrics that morph "}
+{"id": "arc:sunburst", "node": "component/chart", "variation": "pie-donut", "job": "A hierarchy in rings: click a segment and every arc swings around it as the new centre, with a breadcrumb back and a rol"}
+{"id": "arc:sankey-flow", "node": "component/chart", "variation": "radar-specialized", "job": "Flows between stages as ribbons with drifting particles; hover any node or ribbon to pour its share through the whole jo"}
+{"id": "arc:waffle-chart", "node": "component/chart", "variation": "radar-specialized", "job": "A ten by ten unit chart where every cell is one percent, and cells fly to their new group when the data changes."}
+{"id": "arc:funnel-chart", "node": "component/chart", "variation": "bar-chart", "job": "A tapered conversion funnel with drop-off at every step, a device split that morphs the band, and dots that stream throu"}
+{"id": "arc:radar-chart", "node": "component/chart", "variation": "radar-specialized", "job": "Two or three profiles on one web: shapes morph when you swap a profile, and a sweep across the axes compares values in p"}
+{"id": "arc:realtime-stream", "node": "component/chart", "variation": "line-chart", "job": "A live line that scrolls at 60fps as readings arrive, holds still on hover to read, and pops a marker on every anomaly."}
+{"id": "arc:slope-chart", "node": "component/chart", "variation": "line-chart", "job": "Before and after on two axes: lines draw in, rank moves sit beside each value, and switching datasets slides every line "}
+{"id": "arc:countdown", "node": "component/stat", "variation": "counter", "job": "A launch countdown with rolling digits that morphs into a live state at zero."}
+{"id": "arc:announcement-bar", "node": "section/announcement", "variation": null, "job": "A top banner that rotates messages, counts down, and collapses smoothly when dismissed."}
+{"id": "arc:json-viewer", "node": "component/tree", "variation": "hierarchical", "job": "A collapsible JSON tree with search, paging for long arrays, and copy value or path."}
+{"id": "arc:product-gallery", "node": "component/gallery", "variation": "zoom-effects", "job": "A product gallery with a hover magnifier, gliding thumbnails, and color and size variants that crossfade photos."}
+{"id": "arc:sheet-stack", "node": "component/sheet", "variation": "bottom-sheet", "job": "Nested sheets that stack with depth, drag to dismiss, and become stacked dialogs on wide screens."}
+{"id": "arc:phone-input", "node": "component/field", "variation": "with-addon", "job": "A phone field with a country picker, formatting as you type, and E.164 output."}
+{"id": "arc:money-input", "node": "component/field", "variation": "with-addon", "job": "A currency field with live grouping, stable width, rolling digits, and minor-unit output."}
+{"id": "arc:shortcut-recorder", "node": "atom/text", "variation": "keyboard", "job": "Record key combinations into key caps, with conflict warnings, Kbd, and a searchable cheatsheet."}
+{"id": "arc:confirm-morph", "node": "component/dialog", "variation": "confirm-alert", "job": "A destructive button that morphs into an inline confirmation, a spinner, and a result with undo."}
+{"id": "arc:mention-input", "node": "atom/text-input", "variation": "textarea", "job": "A textarea with @people and #channel mentions that act as single tokens, with suggestions at the caret."}
+{"id": "arc:chat-thread", "node": "component/message", "variation": "chat-thread", "job": "A chat thread with grouped messages, reactions, read receipts, typing, and a composer with attachments."}
+{"id": "arc:rich-text-editor", "node": "atom/text-input", "variation": "textarea", "job": "A lightweight editor with markdown shortcuts, a floating toolbar, a slash menu, and HTML and markdown output."}
+{"id": "arc:billing-toggle", "node": "section/pricing", "variation": "billing-toggle", "job": "A monthly and yearly switch with a savings badge and prices that roll to the new amount."}
+{"id": "arc:scroll-area", "node": "atom/layout", "variation": "scroll-area", "job": "A native scroll container with thin overlay scrollbars and edge fades that appear only when content overflows."}
+{"id": "arc:radio-cards", "node": "atom/choice", "variation": "card", "job": "Selectable option cards with a sliding selection ring, price and description slots, and radio keyboard behavior."}
+{"id": "arc:comment-thread", "node": "component/message", "variation": null, "job": "Threaded comments with replies, reactions, mentions, inline edit, and resolve."}
+{"id": "arc:dot-grid", "node": "section/hero", "variation": "webgl", "job": "A dot field that bulges around the cursor like a lens and ripples from every click."}
+{"id": "arc:slot-text", "node": "component/stat", "variation": "counter", "job": "Text and numbers that spin into their new value on staggered slot machine reels."}
+{"id": "arc:page-curl", "node": "component/gallery", "variation": "reveal-effects", "job": "A small magazine you read by dragging page corners, with a real fold, lit curl, and flick to turn."}
+{"id": "arc:glass-card", "node": "component/card", "variation": "profile-card", "job": "A glass info panel over a photo whose rim catches a pointer-following highlight while the card tilts; tap to morph it in"}
+{"id": "arc:glass-tabbar", "node": "component/dock", "variation": "floating-nav-pill", "job": "A floating Liquid Glass tab bar that refracts what scrolls beneath it, with a glass lens that glides, magnifies and can "}
+{"id": "arc:skeleton-morph", "node": "atom/loader", "variation": "skeleton", "job": "Loading skeletons that grow into the real content, block by block, instead of swapping."}
+{"id": "arc:orbit-logos", "node": "section/logos", "variation": "integration-cards", "job": "An integrations showcase with brand logos orbiting your product mark on tilted rings. Hover or focus one to rest the orb"}
+{"id": "arc:sand-text", "node": "atom/text", "variation": "heading", "job": "A headline made of sand that pours into the letters, crumbles where the cursor digs, and heals itself."}
+{"id": "arc:gravity-well", "node": "section/showcase", "variation": "grid", "job": "A grid of tiles that bends toward the cursor like spacetime, with a click that sends a shockwave through it."}
+{"id": "arc:data-flow", "node": "section/how", "variation": null, "job": "Data flow illustration. Sources (app, database, events) are on the left, a processing core with a live count sits in the"}
+{"id": "arc:payment-flow", "node": "section/how", "variation": null, "job": "A card tap goes to a processor, then the network, then the bank and back with authorization, then settlement; each hop l"}
+{"id": "arc:date-reel", "node": "component/picker", "variation": "time-picker", "job": "A 3D wheel date and time picker (like iOS reels) with momentum scrolling, snapping, curved perspective, and full keyboar"}
+{"id": "arc:multi-region-failover", "node": "section/features", "variation": null, "job": "Animated multi-region failover on a 2.5D stage: users stream requests through a global load balancer to two regions; the"}
+{"id": "arc:vector-search", "node": "section/features", "variation": null, "job": "Documents drop onto a tilted embedding plane and fold into points that cluster by topic; the index links neighbours, a q"}
+{"id": "arc:typewriter-terminal", "node": "component/code", "variation": "terminal", "job": "A terminal that types a scripted CLI session with a seeded human cadence, colors the shell syntax, and streams output li"}
+{"id": "arc:link-unfurl", "node": "component/composer", "variation": "with-attachments", "job": "A composer where pasting a URL shows a loading shimmer on the link, then unfurls it into a rich preview card with title,"}
+{"id": "arc:release-readiness", "node": "section/onboarding", "variation": "checklist", "job": "A launch checklist that keeps prerequisites, progress, and the final action together."}
+{"id": "arc:signup-form", "node": "component/form", "variation": "sign-up", "job": "An account creation flow with field validation, password strength, and a clear completion state."}
+{"id": "arc:wallet-card", "node": "component/card", "variation": "stat-card", "job": "A compact account view with balance, recent activity, and focused money actions."}
+{"id": "arc:logo-marquee", "node": "section/logos", "variation": "marquee", "job": "A quiet, continuously moving row of brand marks with a pause control."}
+{"id": "arc:team-directory", "node": "section/team", "variation": "directory", "job": "Searchable people, team filters, and a focused profile panel."}
+{"id": "arc:project-board", "node": "component/board", "variation": "kanban-drag-drop", "job": "A living workflow board for moving work between stages."}
+{"id": "arc:invoice-studio", "node": "component/form", "variation": null, "job": "An editable invoice with live totals and a clear save flow."}
+{"id": "arc:plan-comparison", "node": "section/pricing", "variation": "comparison-table", "job": "Compare meaningful differences between plans and billing periods."}
+{"id": "arc:availability-picker", "node": "component/calendar", "variation": "week-schedule", "job": "Find a meeting time across people and see the choice come together."}
+{"id": "arc:metrics-dashboard", "node": "page/dashboard", "variation": "dashboard-analytics", "job": "A dense analytics view with KPI tabs, one inspectable chart, and top pages and sources."}
+{"id": "arc:media-player", "node": "component/player", "variation": "audio-player", "job": "An audio player with a living playlist and complete playback controls."}
+{"id": "arc:support-conversation", "node": "section/chat", "variation": "thread", "job": "A responsive message thread with useful quick replies and live feedback."}
+{"id": "arc:inbox-triage", "node": "component/inbox", "variation": "notification-inbox", "job": "Process a focused inbox with archive, snooze, and restore actions."}
+{"id": "arc:command-palette", "node": "component/command", "variation": "command-palette", "job": "A complete keyboard driven action surface with search, grouped results, and shortcuts."}
+{"id": "arc:notification-center", "node": "component/inbox", "variation": "notification-center", "job": "A home for updates with read state, grouped information, and animated disclosure."}
+{"id": "arc:file-upload", "node": "component/upload", "variation": "progress-tracking", "job": "A complete file selection flow with constraints, progress, and error feedback."}
+{"id": "arc:otp-input", "node": "atom/text-input", "variation": "otp", "job": "A six digit verification flow with paste support and keyboard navigation."}
+{"id": "arc:multi-step-form", "node": "component/form", "variation": "multi-step", "job": "A guided form that presents one decision at a time and preserves progress."}
+{"id": "arc:team-showcase", "node": "section/team", "variation": "card-grid", "job": "An image led team introduction with profiles that open in place."}
+{"id": "arc:testimonial-stage", "node": "section/testimonials", "variation": "big-quote", "job": "Portrait led editorial stories with a focused reading state."}
+{"id": "arc:changelog-feed", "node": "section/blog", "variation": "changelog", "job": "Release notes you can filter, open in place, and scroll through month by month."}
+{"id": "arc:usage-pricing", "node": "section/pricing", "variation": "usage-slider", "job": "A pricing calculator that finds your plan as you drag seats and traffic."}
+{"id": "arc:ai-composer", "node": "component/composer", "variation": "chat-composer", "job": "A focused assistant thread where messages lift out of the composer and replies stream in."}
+{"id": "arc:sign-in", "node": "section/auth", "variation": "sign-in", "job": "A sign in card that morphs from email to a six digit code to your account."}
+{"id": "arc:workspace-sidebar", "node": "section/sidebar", "variation": "workspace-switch", "job": "A product sidebar with a workspace switcher, live search, draggable favorites, and inline projects."}
+{"id": "arc:settings-page", "node": "page/settings", "variation": "settings-sidebar", "job": "Account settings with a gliding section nav and a save bar that morphs in as you edit."}
+{"id": "arc:sidebar-rail", "node": "section/shell", "variation": "shell-rail", "job": "An app shell whose sidebar folds into an icon rail and slides in as a sheet on phones."}
+{"id": "arc:docs-sidebar", "node": "section/sidebar", "variation": "tree", "job": "A docs layout with a live filtering nav tree, version switcher, and a gliding on this page outline."}
+{"id": "arc:integrations", "node": "section/settings-panel", "variation": "card-blocks", "job": "An integrations directory where Connect morphs to Connected and the filters recount as you go."}
+{"id": "arc:billing-overview", "node": "section/settings-panel", "variation": null, "job": "A billing page where the plan card morphs into a picker and usage, invoices, and card follow."}
+{"id": "arc:api-keys", "node": "section/settings-panel", "variation": null, "job": "API key management where Create key unfolds into its form and each secret is shown once."}
+{"id": "arc:inbox-sidebar", "node": "section/shell", "variation": "split-view", "job": "A mail sidebar whose Compose button grows into a composer and whose folders take dropped mail."}
+{"id": "arc:team-members", "node": "section/settings-panel", "variation": "inline", "job": "A members list where typed emails turn into chips and fly into pending invites as seats roll."}
+{"id": "arc:page-header", "node": "section/page-header", "variation": null, "job": "A project page header that folds into a compact bar as you scroll, with tabs whose counts roll."}
+{"id": "arc:revenue-explorer", "node": "component/chart", "variation": "area-chart", "job": "A SaaS revenue chart you zoom with a brush while paths, axes and figures glide to the range."}
+{"id": "arc:journey-flow", "node": "component/chart", "variation": "radar-specialized", "job": "A Sankey of user journeys whose flows morph by channel and trace a cohort on hover."}
+{"id": "arc:empty-states", "node": "component/empty", "variation": "illustrated", "job": "Four empty states in one illustration whose shapes morph between scenes as you switch tabs."}
+{"id": "arc:login-centered", "node": "page/auth-screen", "variation": "auth-sign-in-desktop", "job": "A passkey-first login card on a quiet ring backdrop that morphs through email and code."}
+{"id": "arc:login-immersive", "node": "page/auth-screen", "variation": "auth-magic-link", "job": "A glass magic link card over dusk photography that folds its envelope shut once sent."}
+{"id": "arc:security-settings", "node": "page/settings", "variation": "settings-security", "job": "An account security page with guided two-factor setup, password change and active sessions."}
+{"id": "arc:cancel-flow", "node": "section/settings-panel", "variation": "dialog", "job": "A cancellation flow that answers each reason with a tailored offer and a calm hold-to-cancel."}
+{"id": "arc:login-split", "node": "section/auth", "variation": "split-image", "job": "A full screen split login: an email-first form that morphs into a password step beside a photo."}
+{"id": "arc:cohort-retention", "node": "component/chart", "variation": "heatmap", "job": "A cohort retention triangle that morphs into retention curves and rewashes by segment."}
+{"id": "arc:support-widget", "node": "component/popover", "variation": "info-card", "job": "An in-app help launcher that grows into live article search, reading, and a chat with your team."}
+{"id": "arc:usage-forecast", "node": "component/chart", "variation": "area-chart", "job": "A billing period usage chart with a forecast cone and a draggable budget that dates the crossing."}
+{"id": "arc:mrr-waterfall", "node": "component/chart", "variation": "bar-chart", "job": "An MRR bridge whose floating bars morph by period and open the accounts behind each move."}
+{"id": "arc:webhooks", "node": "section/settings-panel", "variation": null, "job": "A webhooks console with delivery history, a payload inspector and retries that roll the rate."}
+{"id": "arc:roles-permissions", "node": "component/table", "variation": "editable-grid", "job": "A permissions matrix with group toggles that ripple, role duplication and a review bar."}
+{"id": "arc:metric-explorer", "node": "section/kpis", "variation": "analytics", "job": "KPI cards that open into a scrubbable chart and morph between metrics and ranges."}
+{"id": "arc:activity-terrain", "node": "component/chart", "variation": "heatmap", "job": "A 3D terrain of hourly activity you can orbit, zoom, fly into and flatten into a heatmap."}
+{"id": "arc:revenue-globe", "node": "component/map", "variation": "world-map", "job": "A dotted globe where live payments arc home to headquarters, with a replayable day."}
+{"id": "arc:customer-galaxy", "node": null, "variation": null, "job": "2,400 accounts as a drifting galaxy that spirals into clusters by plan, region or health."}
+{"id": "arc:semantic-zoom", "node": null, "variation": null, "job": "An infinite-zoom map of a company that reveals teams, projects, tasks and people as you fly in."}
+{"id": "arc:layout-morph", "node": "component/gallery", "variation": null, "job": "A 24 card gallery that flies between grid, masonry, list, fan, carousel and a 3D helix."}
+{"id": "arc:agent-run", "node": "component/agent-parts", "variation": "tool-calls", "job": "A live AI agent run: steps stream in, tool calls expand, a diff waits for approval, and it all folds into a result."}
+{"id": "arc:week-calendar", "node": "component/calendar", "variation": "week-schedule", "job": "A week calendar where you drag to create, move, and resize events, with color coded calendars, day and agenda views, and"}
+{"id": "arc:scroll-story", "node": "section/features", "variation": "split-text-image", "job": "A feature section where scrolling the copy drives a pinned product view through each step."}
+{"id": "arc:spotlight-grid", "node": "section/features", "variation": "card-grid", "job": "A feature grid where light follows the pointer, cards play live demos, and a click morphs a card into its detail."}
+{"id": "arc:invite-people", "node": "section/settings-panel", "variation": "inline", "job": "Invite teammates with roles, bulk paste validation, a seat meter, and avatars that fly into a pending list."}
+{"id": "arc:cart-drawer", "node": "component/sheet", "variation": "side-sheet", "job": "Products fly into the cart, counts roll, and a drawer handles quantities, shipping progress, and checkout."}
+{"id": "arc:pricing-calculator", "node": "section/pricing", "variation": "usage-slider", "job": "A seat slider and billing toggle drive plan cards with rolling prices and a moving recommended badge."}
+{"id": "arc:ai-chat", "node": "page/chat-screen", "variation": "chat-history", "job": "A complete AI chat with streamed markdown answers, folding reasoning, tool chips, citations, and a model switcher."}
+{"id": "arc:checkout-summary", "node": "section/pricing", "variation": "checkout", "job": "An order summary with a promo code that becomes a chip, discount and tax lines, and pay button states."}
+{"id": "arc:site-header", "node": "section/nav", "variation": "sticky-shrink", "job": "A sticky website header that turns solid on scroll, with a gliding active link, mega menu panels, and a mobile sheet."}
+{"id": "arc:site-footer", "node": "section/footer", "variation": "columns", "job": "A website footer with link columns and newsletter, a minimal layout, and a large fading Arc mark."}
+{"id": "arc:hero-section", "node": "section/hero", "variation": null, "job": "Three full screen SaaS heroes: a live dashboard rising from the bottom edge over a drifting mesh, a workflow graph that "}
+{"id": "arc:faq-section", "node": "section/faq", "variation": "accordion", "job": "FAQs as an accordion, a topic rail, or a searchable list that highlights matches."}
+{"id": "arc:contact-section", "node": "section/contact", "variation": "form", "job": "A validated contact form that morphs into a confirmation, support channels, and office cards with local times."}
+{"id": "arc:settings-command", "node": "section/settings-panel", "variation": null, "job": "Workspace settings where a search field grows into a palette that flies you to any setting."}
+{"id": "arc:usage-billing", "node": "page/dashboard", "variation": "dashboard-operations", "job": "A usage based billing dashboard with a projected spend line, meters against limits, alerts, and an upgrade that morphs i"}
+{"id": "arc:kpi-drilldown", "node": "section/kpis", "variation": "analytics", "job": "KPI cards that expand into a full detail chart with period comparison and a breakdown table, then fold back."}
+{"id": "arc:blog-grid", "node": "section/blog", "variation": "news-grid", "job": "A blog index with a featured post, category filter, post cards, pagination and an in-place reader."}
+{"id": "arc:comparison-table", "node": "section/comparison", "variation": "us-vs-them", "job": "An us versus them table with a sticky header, a highlighted column, and a stacked phone view."}
+{"id": "arc:feature-bento", "node": "section/features", "variation": "bento", "job": "A six cell feature bento where small, real product UI acts each feature out on hover."}
+{"id": "arc:stats-band", "node": "section/stats", "variation": "counter", "job": "Headline numbers that count up in view, each with a tiny visual that proves it and a context line on hover, plain or in "}
+{"id": "arc:cta-section", "node": "section/cta", "variation": "centered-banner", "job": "A call to action as a centered closing section, a split beside a setup card that completes itself, or a dismissible bann"}
+{"id": "arc:newsletter-signup", "node": "section/cta", "variation": "email-form", "job": "An email signup framed by a stack of past issues; subscribing drops the next issue, addressed to you, onto the front."}
+{"id": "arc:product-listing", "node": "section/showcase", "variation": "grid", "job": "A storefront grid with price, color and size filters, a sort menu, hover photo swaps, and quick add with a size row."}
+{"id": "arc:product-detail", "node": "page/record", "variation": null, "job": "A product page with a swipeable gallery, finish and size variants, add to bag that confirms in place, shipping, a review"}
+{"id": "arc:hero-signup", "node": "section/hero", "variation": "form", "job": "A full screen waitlist hero on a soft, drifting mesh gradient: the email field validates as you type and its button grow"}
+{"id": "arc:search-results", "node": "component/search", "variation": "results-display", "job": "A faceted workspace search page with suggestions, facet counts that follow the query, filter chips, mixed doc, person an"}
+{"id": "arc:market-terminal", "node": "page/dashboard", "variation": "dashboard-analytics", "job": "A trading terminal with a canvas candlestick chart, volume, moving averages, crosshair OHLC readout, wheel, drag and pin"}
+{"id": "arc:budget-variance", "node": "component/chart", "variation": "bar-chart", "job": "Budget against actual operating spend by department as aligned bullet charts, with favorable and unfavorable variance, a"}
+{"id": "arc:choropleth-explorer", "node": "component/map", "variation": "choropleth", "job": "A filled-region map that shades every state or region by revenue, growth or penetration on a stepped scale, with a count"}
+{"id": "arc:small-multiples", "node": "component/chart", "variation": "line-chart", "job": "A trellis of small line charts that reads as one chart, with a synced crosshair, a shared or independent y scale that sp"}
+{"id": "arc:connected-scatter", "node": "component/chart", "variation": "radar-specialized", "job": "A connected scatterplot of monthly CAC against LTV where the path draws itself in, a scrubber moves a head along the cur"}
+{"id": "arc:line-replay", "node": "component/chart", "variation": "line-chart", "job": "A time replay line chart that draws a day of traffic with a moving playhead, a value label on the tip, a scrubber, speed"}
+{"id": "arc:ai-side-panel", "node": "section/chat", "variation": "ai-response", "job": "An assistant docked beside a page that streams answers"}

@@ -1,0 +1,398 @@
+{
+  "component/field": {
+    "variations": [
+      {"id": "text-input", "name": "Text input", "kind": "structure", "why": "plain text field, the default for most inputs", "match": ["text input", "standard form field"]},
+      {"id": "with-addon", "name": "With icon or addon", "kind": "structure", "why": "prefix or suffix (icon, button, unit label) on the field", "match": ["icon or addon", "icon"]},
+      {"id": "password", "name": "Password input", "kind": "structure", "why": "masked text with show/hide toggle", "match": ["password"]},
+      {"id": "validation-states", "name": "Validation states", "kind": "state", "why": "error, success, or warning feedback on user input", "match": ["validation states", "validation"]},
+      {"id": "number-stepper", "name": "Number stepper", "kind": "structure", "why": "numeric input with increment/decrement buttons", "match": ["number stepper"]},
+      {"id": "floating-label", "name": "Floating label", "kind": "structure", "why": "label inside the field that floats on focus or fill", "match": ["floating label"]},
+      {"id": "tags-input", "name": "Tags input", "kind": "structure", "why": "multiple tags entered and removed as chips", "match": ["tags input"]}
+    ]
+  },
+  "component/select": {
+    "variations": [
+      {"id": "standard-select", "name": "Standard select", "kind": "structure", "why": "dropdown list to pick one option", "match": ["standard select", "select"]},
+      {"id": "combobox", "name": "Combobox", "kind": "structure", "why": "searchable select where you can type to filter", "match": ["standard combobox", "searchable", "combobox"]},
+      {"id": "multi-select", "name": "Multi-select", "kind": "structure", "why": "pick multiple options shown as chips or list", "match": ["multi select", "multi-select"]},
+      {"id": "with-icons", "name": "With icons", "kind": "structure", "why": "each option prefixed with an icon or avatar", "match": ["icons or avatars", "icons"]},
+      {"id": "grouped", "name": "Grouped options", "kind": "structure", "why": "options organized under category headers", "match": ["grouped"]},
+      {"id": "native-select", "name": "Native select", "kind": "platform", "why": "browser's native select element for mobile", "match": ["native select"]},
+      {"id": "date-time-picker", "name": "Date/time picker", "kind": "edge", "why": "specialized picker for dates or times inside select", "match": ["date and time"]}
+    ]
+  },
+  "component/search": {
+    "variations": [
+      {"id": "search-field", "name": "Search field", "kind": "structure", "why": "text input with search icon and optional clear button", "match": ["search field"]},
+      {"id": "with-suggestions", "name": "With suggestions", "kind": "structure", "why": "dropdown of recent or popular searches as you type", "match": ["suggestions"]},
+      {"id": "with-filters", "name": "With filters", "kind": "structure", "why": "refinement options to narrow the search", "match": ["filters"]},
+      {"id": "results-display", "name": "Results display", "kind": "state", "why": "list of search results below or in a panel", "match": ["results"]},
+      {"id": "expanding-search", "name": "Expanding search", "kind": "structure", "why": "search bar expands when focused", "match": ["expanding"]},
+      {"id": "command-style", "name": "Command-style search", "kind": "structure", "why": "keyboard-driven interface (like command palettes)", "match": ["command style"]}
+    ]
+  },
+  "component/picker": {
+    "variations": [
+      {"id": "date-picker", "name": "Date picker", "kind": "structure", "why": "calendar grid to select a single date", "match": ["standard date picker", "month calendar", "date picker"]},
+      {"id": "date-range", "name": "Date range picker", "kind": "structure", "why": "select a start and end date with two calendars", "match": ["date range picker", "range picker", "range calendar"]},
+      {"id": "time-picker", "name": "Time picker", "kind": "structure", "why": "hours, minutes, seconds with spinners or segmented input", "match": ["standard time picker", "time input", "segmented time"]},
+      {"id": "color-picker", "name": "Color picker", "kind": "structure", "why": "select a color via swatches, saturation area, or hue wheel", "match": ["standard color picker", "color swatches", "saturation and brightness"]},
+      {"id": "presets", "name": "With presets", "kind": "structure", "why": "quick-select buttons for common dates (today, last 7 days)", "match": ["presets"]},
+      {"id": "popover-layout", "name": "Popover layout", "kind": "structure", "why": "picker opens as a floating popover, not a dialog", "match": ["calendar popover"]},
+      {"id": "segmented-input", "name": "Segmented input", "kind": "edge", "why": "date/time entered as separate fields per unit (MM/DD/YYYY)", "match": ["segmented input", "segmented time"]}
+    ]
+  },
+  "component/upload": {
+    "variations": [
+      {"id": "dropzone", "name": "Dropzone", "kind": "structure", "why": "drag-and-drop area to upload files", "match": ["dropzone", "drag and drop"]},
+      {"id": "avatar-upload", "name": "Avatar upload", "kind": "structure", "why": "specialized for a single profile picture with preview", "match": ["avatar upload"]},
+      {"id": "with-previews", "name": "With previews", "kind": "structure", "why": "thumbnails or cards showing uploaded files", "match": ["previews"]},
+      {"id": "progress-tracking", "name": "Progress tracking", "kind": "state", "why": "progress bar or list showing upload status", "match": ["progress list", "progress"]},
+      {"id": "attachment-list", "name": "Attachment list", "kind": "structure", "why": "uploaded files shown as rows or list with delete action", "match": ["attachment row", "attachments"]}
+    ]
+  },
+  "component/tags": {
+    "variations": [
+      {"id": "basic-tag-input", "name": "Tag input", "kind": "structure", "why": "enter tags separated by commas or Enter key", "match": ["standard tag input"]},
+      {"id": "with-suggestions", "name": "With suggestions", "kind": "structure", "why": "dropdown of tag suggestions as you type", "match": ["suggestions"]},
+      {"id": "token-input", "name": "Token or amount", "kind": "edge", "why": "specialized for numeric tokens or cryptocurrency amounts", "match": ["token or amount"]}
+    ]
+  },
+  "component/form": {
+    "variations": [
+      {"id": "sign-in", "name": "Sign in form", "kind": "structure", "why": "email/username and password with sign-in button", "match": []},
+      {"id": "sign-up", "name": "Sign up form", "kind": "structure", "why": "multiple fields for account creation (email, password, name)", "match": []},
+      {"id": "multi-step", "name": "Multi-step form", "kind": "structure", "why": "form split across several pages with progress indicator", "match": []},
+      {"id": "contact", "name": "Contact form", "kind": "structure", "why": "name, email, message fields for inquiry or feedback", "match": []},
+      {"id": "with-validation", "name": "With validation", "kind": "state", "why": "real-time or on-submit feedback for errors and successes", "match": []},
+      {"id": "horizontal-layout", "name": "Horizontal layout", "kind": "structure", "why": "form fields side-by-side instead of stacked", "match": []}
+    ]
+  },
+  "component/menu": {
+    "variations": [
+      {"id": "dropdown-menu", "name": "Dropdown menu", "kind": "structure", "why": "list opens below a button with clickable options", "match": ["dropdown menu"]},
+      {"id": "context-menu", "name": "Context menu", "kind": "structure", "why": "right-click menu floating near the cursor", "match": ["context menu", "standard context menu"]},
+      {"id": "menubar", "name": "Menubar", "kind": "structure", "why": "horizontal bar of top-level menus (File, Edit, View)", "match": ["menubar"]},
+      {"id": "navigation-menu", "name": "Navigation menu", "kind": "structure", "why": "primary site or app navigation with links", "match": ["navigation menu"]},
+      {"id": "mega-menu", "name": "Mega menu", "kind": "structure", "why": "large dropdown with multiple columns and sections", "match": ["mega menu"]},
+      {"id": "radial-menu", "name": "Radial menu", "kind": "edge", "why": "circular menu radiating from a center point", "match": ["radial"]}
+    ]
+  },
+  "component/tabs": {
+    "variations": [
+      {"id": "underline", "name": "Underline tabs", "kind": "structure", "why": "active tab has an underline, content switches below", "match": ["underline"]},
+      {"id": "indicator", "name": "Indicator tabs", "kind": "structure", "why": "sliding or fixed indicator bar shows active tab", "match": ["indicator", "sliding"]},
+      {"id": "pill-segmented", "name": "Pill segmented", "kind": "structure", "why": "rounded pill buttons grouped together", "match": ["pill or segmented", "segmented control"]},
+      {"id": "with-icons", "name": "With icons", "kind": "structure", "why": "each tab has an icon alongside or instead of text", "match": ["icons"]},
+      {"id": "vertical", "name": "Vertical tabs", "kind": "structure", "why": "tabs arranged vertically on the left or right", "match": ["vertical"]},
+      {"id": "with-counts", "name": "With counts", "kind": "edge", "why": "badge or number next to tab label", "match": ["counts"]}
+    ]
+  },
+  "component/breadcrumb": {
+    "variations": [
+      {"id": "text-breadcrumb", "name": "Text breadcrumb", "kind": "structure", "why": "plain text path separated by slashes or arrows", "match": ["text breadcrumb", "standard breadcrumb"]},
+      {"id": "with-icons", "name": "With icons", "kind": "structure", "why": "each segment has an icon before the text", "match": ["icons"]},
+      {"id": "with-dropdown", "name": "With dropdown", "kind": "structure", "why": "long paths abbreviated; hover to expand section", "match": ["dropdowns"]},
+      {"id": "overflow-menu", "name": "Overflow menu", "kind": "edge", "why": "very long paths collapsed into an ellipsis menu", "match": ["truncated or menu", "overflow"]}
+    ]
+  },
+  "component/pagination": {
+    "variations": [
+      {"id": "numbered-pages", "name": "Numbered pages", "kind": "structure", "why": "clickable page numbers 1, 2, 3… with prev/next", "match": ["numbered pages"]},
+      {"id": "with-page-size", "name": "With page size", "kind": "structure", "why": "dropdown to change items per page (10, 20, 50)", "match": ["page size dropdown"]},
+      {"id": "with-ellipsis", "name": "With ellipsis", "kind": "structure", "why": "shows … between distant page numbers", "match": ["ellipsis"]},
+      {"id": "page-counter", "name": "Page counter", "kind": "structure", "why": "text label 'Page 5 of 20' instead of numbered buttons", "match": ["page counter"]},
+      {"id": "first-last-buttons", "name": "First and last", "kind": "edge", "why": "jump to first or last page directly", "match": ["first and last"]}
+    ]
+  },
+  "component/steps": {
+    "variations": [
+      {"id": "horizontal-stepper", "name": "Horizontal stepper", "kind": "structure", "why": "step numbers or circles arranged left to right", "match": ["horizontal stepper", "horizontal numbered"]},
+      {"id": "vertical-stepper", "name": "Vertical stepper", "kind": "structure", "why": "steps stacked vertically with connector lines", "match": ["vertical stepper"]},
+      {"id": "multi-step-form", "name": "Multi-step form", "kind": "structure", "why": "form fields grouped by step with next/back buttons", "match": ["multi-step form"]},
+      {"id": "onboarding-flow", "name": "Onboarding flow", "kind": "structure", "why": "tutorial or welcome sequence with tips and progression", "match": ["onboarding"]},
+      {"id": "progress-steps", "name": "Progress steps", "kind": "state", "why": "steps showing current progress (active, completed, pending)", "match": ["progress steps"]}
+    ]
+  },
+  "component/command": {
+    "variations": [
+      {"id": "command-menu", "name": "Command menu", "kind": "structure", "why": "keyboard-accessible menu of commands or actions", "match": ["command menu"]},
+      {"id": "command-palette", "name": "Command palette", "kind": "structure", "why": "search-focused interface (like Cmd+K) with grouped actions", "match": ["standard command palette", "search focused"]},
+      {"id": "dialog-based", "name": "Dialog-based", "kind": "structure", "why": "command interface opens as a modal dialog", "match": ["dialog"]},
+      {"id": "grouped-commands", "name": "Grouped commands", "kind": "structure", "why": "commands organized under category sections", "match": ["groups"]}
+    ]
+  },
+  "component/toc": {
+    "variations": [
+      {"id": "scroll-tracking", "name": "Scroll tracking", "kind": "structure", "why": "highlights current section as user scrolls the page", "match": ["scroll tracking"]},
+      {"id": "sticky-sidebar", "name": "Sticky sidebar", "kind": "structure", "why": "stays fixed on screen while scrolling main content", "match": ["sticky sidebar", "sticky"]},
+      {"id": "minimap", "name": "Minimap variant", "kind": "structure", "why": "visual miniature of document with scrollbar indicator", "match": ["minimap"]},
+      {"id": "standard-toc", "name": "Standard TOC", "kind": "structure", "why": "static list of heading links at page top or side", "match": ["standard table"]}
+    ]
+  },
+  "component/dock": {
+    "variations": [
+      {"id": "standard-dock", "name": "Standard dock", "kind": "structure", "why": "horizontal bar with app or action icons", "match": ["standard dock"]},
+      {"id": "macos-magnifying", "name": "macOS magnifying", "kind": "platform", "why": "dock with hover magnification effect (platform variant)", "match": ["macos magnifying"]},
+      {"id": "action-toolbar", "name": "Action toolbar", "kind": "structure", "why": "vertically-stacked tool icons (for desktop apps)", "match": ["action toolbar"]},
+      {"id": "floating-nav-pill", "name": "Floating nav pill", "kind": "structure", "why": "floating rounded bar with navigation or action buttons", "match": ["floating nav pill"]},
+      {"id": "expandable", "name": "Expandable dock", "kind": "structure", "why": "dock that expands on hover or click", "match": ["expandable"]}
+    ]
+  },
+  "component/card": {
+    "variations": [
+      {"id": "standard-card", "name": "Standard card", "kind": "structure", "why": "container with padding, border, and shadow", "match": ["standard card"]},
+      {"id": "feature-card", "name": "Feature card", "kind": "structure", "why": "highlights a product feature with icon, title, description", "match": ["feature card"]},
+      {"id": "product-card", "name": "Product card", "kind": "structure", "why": "commerce product with image, title, price, and add-to-cart", "match": ["product card"]},
+      {"id": "stat-card", "name": "Stat card", "kind": "structure", "why": "dashboard KPI card with large number and label", "match": ["stat card"]},
+      {"id": "article-card", "name": "Article card", "kind": "structure", "why": "blog or news card with thumbnail, headline, excerpt, date", "match": ["article card"]},
+      {"id": "profile-card", "name": "Profile card", "kind": "structure", "why": "person's avatar, name, title, and action buttons", "match": ["profile card"]},
+      {"id": "spotlight", "name": "Spotlight card", "kind": "structure", "why": "featured or hero card with emphasis and overlay", "match": ["spotlight"]},
+      {"id": "stack-flip", "name": "Stack or flip", "kind": "edge", "why": "cards that flip, stack, or have interactive transforms", "match": ["stack or deck", "flip"]}
+    ]
+  },
+  "component/list": {
+    "variations": [
+      {"id": "standard-list", "name": "Standard list", "kind": "structure", "why": "vertical list of items with consistent row styling", "match": ["standard list"]},
+      {"id": "sortable", "name": "Sortable list", "kind": "structure", "why": "drag-and-drop rows to reorder or sort by column", "match": ["sortable"]},
+      {"id": "activity-feed", "name": "Activity feed", "kind": "structure", "why": "timeline of events or updates with icons and timestamps", "match": ["activity feed"]},
+      {"id": "with-avatars", "name": "With avatars", "kind": "structure", "why": "each row has a profile picture or icon", "match": ["list with avatars"]},
+      {"id": "file-list", "name": "File list", "kind": "structure", "why": "documents or files with name, size, date, and actions", "match": ["file list"]},
+      {"id": "virtualized", "name": "Virtualized list", "kind": "edge", "why": "efficiently renders thousands of items via windowing", "match": ["virtualized"]}
+    ]
+  },
+  "component/table": {
+    "variations": [
+      {"id": "data-table", "name": "Data table", "kind": "structure", "why": "sortable, filterable rows with toolbar for records", "match": ["data table"]},
+      {"id": "standard-table", "name": "Standard table", "kind": "structure", "why": "basic grid with headers and aligned columns", "match": ["standard table"]},
+      {"id": "expandable-rows", "name": "Expandable rows", "kind": "structure", "why": "click a row to reveal details below it", "match": ["expandable rows"]},
+      {"id": "editable-grid", "name": "Editable grid", "kind": "structure", "why": "inline cell editing for spreadsheet-like workflows", "match": ["editable grid", "editable"]},
+      {"id": "with-toolbar-filters", "name": "With toolbar", "kind": "structure", "why": "search, filter, and column visibility controls above", "match": ["table toolbar"]},
+      {"id": "virtualized", "name": "Virtualized table", "kind": "edge", "why": "efficiently handles thousands of rows", "match": ["virtualized"]}
+    ]
+  },
+  "component/stat": {
+    "variations": [
+      {"id": "kpi-card", "name": "KPI card", "kind": "structure", "why": "key metric with large number, label, and trend indicator", "match": ["kpi card"]},
+      {"id": "stats-row", "name": "Stats row", "kind": "structure", "why": "multiple KPIs in a horizontal row", "match": ["stats row"]},
+      {"id": "kpi-sparkline", "name": "KPI with sparkline", "kind": "structure", "why": "metric with small inline chart showing trend", "match": ["kpi with sparkline"]},
+      {"id": "progress-stat", "name": "Progress stat", "kind": "structure", "why": "progress bar with percentage and label", "match": ["progress stat"]},
+      {"id": "counter", "name": "Counter", "kind": "structure", "why": "animated number that counts up to the final value", "match": ["counter"]},
+      {"id": "with-chart", "name": "Stat with chart", "kind": "structure", "why": "metric paired with a full chart below", "match": ["stat with chart"]}
+    ]
+  },
+  "component/chart": {
+    "variations": [
+      {"id": "bar-chart", "name": "Bar chart", "kind": "structure", "why": "vertical or horizontal bars comparing categories", "match": ["bar"]},
+      {"id": "line-chart", "name": "Line chart", "kind": "structure", "why": "lines connecting data points over time or categories", "match": ["line"]},
+      {"id": "area-chart", "name": "Area chart", "kind": "structure", "why": "line chart with filled area below for cumulative view", "match": ["area"]},
+      {"id": "pie-donut", "name": "Pie/donut chart", "kind": "structure", "why": "circular segments showing parts of a whole", "match": ["pie or donut"]},
+      {"id": "heatmap", "name": "Heatmap", "kind": "structure", "why": "color-coded grid cells showing intensity or frequency", "match": ["heatmap"]},
+      {"id": "sparkline", "name": "Sparkline", "kind": "structure", "why": "tiny inline chart for quick trend at-a-glance", "match": ["sparkline"]},
+      {"id": "radar-specialized", "name": "Radar or specialized", "kind": "edge", "why": "radial, gauge, combo, or other advanced chart types", "match": ["radar", "gauge", "combo"]}
+    ]
+  },
+  "component/map": {
+    "variations": [
+      {"id": "pin-map", "name": "Pin map", "kind": "structure", "why": "markers on a map showing locations or points of interest", "match": ["pin map"]},
+      {"id": "world-map", "name": "World map", "kind": "structure", "why": "globe or world map view for global data", "match": ["world map"]},
+      {"id": "route-map", "name": "Route/directions", "kind": "structure", "why": "paths or routes drawn on map between locations", "match": ["route"]},
+      {"id": "choropleth", "name": "Choropleth map", "kind": "structure", "why": "regions colored by data values (heat map)", "match": ["choropleth"]}
+    ]
+  },
+  "component/accordion": {
+    "variations": [
+      {"id": "standard-accordion", "name": "Standard accordion", "kind": "structure", "why": "multiple collapsible panels, one or several open", "match": ["standard accordion"]},
+      {"id": "collapsible", "name": "Collapsible", "kind": "structure", "why": "single expandable/collapsible section", "match": ["collapsible"]},
+      {"id": "faq-accordion", "name": "FAQ accordion", "kind": "structure", "why": "questions and answers with collapse/expand", "match": ["faq"]},
+      {"id": "card-style", "name": "Card style", "kind": "structure", "why": "each section looks like a card when collapsed", "match": ["card style"]},
+      {"id": "nested", "name": "Nested accordion", "kind": "structure", "why": "accordions inside accordion sections", "match": ["nested"]},
+      {"id": "feature-disclosure", "name": "Feature disclosure", "kind": "edge", "why": "hide advanced or secondary features behind expand", "match": ["feature disclosure"]}
+    ]
+  },
+  "component/tree": {
+    "variations": [
+      {"id": "file-tree", "name": "File tree", "kind": "structure", "why": "hierarchical folder/file structure with expand icons", "match": ["file tree"]},
+      {"id": "standard-tree", "name": "Standard tree", "kind": "structure", "why": "nested list with collapse/expand and connecting lines", "match": ["standard tree"]},
+      {"id": "hierarchical", "name": "Hierarchical tree", "kind": "structure", "why": "deep multi-level organizational structures", "match": ["hierarchical"]}
+    ]
+  },
+  "component/timeline": {
+    "variations": [
+      {"id": "vertical-timeline", "name": "Vertical timeline", "kind": "structure", "why": "events listed top-to-bottom with connector line", "match": ["vertical"]},
+      {"id": "horizontal-timeline", "name": "Horizontal timeline", "kind": "structure", "why": "events arranged left-to-right (common in onboarding)", "match": ["horizontal"]},
+      {"id": "activity-timeline", "name": "Activity feed", "kind": "structure", "why": "social or user activity log with timestamps", "match": ["activity"]},
+      {"id": "steps-timeline", "name": "Steps timeline", "kind": "structure", "why": "progress through phases or milestones", "match": ["steps"]},
+      {"id": "gantt-chart", "name": "Gantt chart", "kind": "edge", "why": "project timeline with bars showing duration", "match": ["gantt"]},
+      {"id": "changelog", "name": "Changelog", "kind": "structure", "why": "release or version history timeline", "match": ["changelog"]}
+    ]
+  },
+  "component/calendar": {
+    "variations": [
+      {"id": "month-calendar", "name": "Month calendar", "kind": "structure", "why": "traditional calendar grid showing weeks and days", "match": ["month calendar"]},
+      {"id": "event-calendar", "name": "Event calendar", "kind": "structure", "why": "calendar with events displayed on dates", "match": ["event calendar"]},
+      {"id": "date-picker", "name": "Date picker", "kind": "structure", "why": "clickable calendar for selecting a single date", "match": ["date picker"]},
+      {"id": "range-picker", "name": "Range picker", "kind": "structure", "why": "calendar for selecting start and end dates", "match": ["range picker"]},
+      {"id": "week-schedule", "name": "Week schedule", "kind": "structure", "why": "weekly view with time slots and events", "match": ["week schedule"]}
+    ]
+  },
+  "component/board": {
+    "variations": [
+      {"id": "multi-column-board", "name": "Multi-column board", "kind": "structure", "why": "kanban-style columns (To Do, In Progress, Done)", "match": ["multi-column", "board with columns"]},
+      {"id": "kanban-drag-drop", "name": "Kanban board", "kind": "structure", "why": "draggable cards across columns for workflow", "match": ["drag and drop", "kanban"]},
+      {"id": "visual-board", "name": "Visual board", "kind": "state", "why": "read-only or view-only board without interaction", "match": ["visual display"]}
+    ]
+  },
+  "component/code": {
+    "variations": [
+      {"id": "highlighted-code", "name": "Highlighted code", "kind": "structure", "why": "syntax-highlighted code block with line numbers", "match": ["highlighted code"]},
+      {"id": "terminal", "name": "Terminal", "kind": "structure", "why": "monospace text styled like a command-line interface", "match": ["terminal"]},
+      {"id": "diff-view", "name": "Diff view", "kind": "structure", "why": "side-by-side or unified diff showing changes", "match": ["diff", "standard diff"]},
+      {"id": "inline-code", "name": "Inline code", "kind": "structure", "why": "small code snippet within text or paragraph", "match": ["inline code"]},
+      {"id": "snippet-copy", "name": "Snippet with copy", "kind": "structure", "why": "code block with copy-to-clipboard button", "match": ["copy"]},
+      {"id": "split-view", "name": "Split view", "kind": "edge", "why": "two code blocks side-by-side for comparison", "match": ["split view"]}
+    ]
+  },
+  "component/empty": {
+    "variations": [
+      {"id": "icon-text", "name": "Icon and text", "kind": "structure", "why": "icon with heading and description (basic empty state)", "match": ["icon and text"]},
+      {"id": "with-action", "name": "With action", "kind": "structure", "why": "empty state with button to create or import content", "match": ["action"]},
+      {"id": "illustrated", "name": "Illustrated", "kind": "structure", "why": "custom illustration instead of generic icon", "match": ["illustrated"]},
+      {"id": "search-no-results", "name": "Search no results", "kind": "state", "why": "message when search or filter returns nothing", "match": ["search no results"]},
+      {"id": "error-state", "name": "Error state", "kind": "state", "why": "something went wrong; can reload or retry", "match": ["error state"]}
+    ]
+  },
+  "component/widget": {
+    "variations": [
+      {"id": "gamification", "name": "Gamification", "kind": "structure", "why": "points, badges, or rewards system", "match": ["gamification"]},
+      {"id": "leaderboard", "name": "Leaderboard", "kind": "structure", "why": "ranked list of users or scores", "match": ["leaderboard"]},
+      {"id": "streak-tracker", "name": "Streak tracker", "kind": "structure", "why": "visual counter of consecutive days/completions", "match": ["streak tracker"]},
+      {"id": "achievement", "name": "Achievement", "kind": "structure", "why": "collection or badge display of milestones", "match": ["achievement"]}
+    ]
+  },
+  "component/dialog": {
+    "variations": [
+      {"id": "modal-dialog", "name": "Modal dialog", "kind": "structure", "why": "centered dialog that blocks interaction outside it", "match": ["modal"]},
+      {"id": "confirm-alert", "name": "Confirm/alert", "kind": "structure", "why": "simple dialog asking for confirmation or showing alert", "match": ["confirm", "confirm or alert"]},
+      {"id": "form-dialog", "name": "Form in dialog", "kind": "structure", "why": "form fields inside a modal for data entry", "match": ["form in dialog"]},
+      {"id": "onboarding-dialog", "name": "Onboarding dialog", "kind": "structure", "why": "tutorial or welcome dialog with steps and tips", "match": ["onboarding"]}
+    ]
+  },
+  "component/sheet": {
+    "variations": [
+      {"id": "side-sheet", "name": "Side sheet", "kind": "structure", "why": "slide-in panel from left or right edge", "match": ["side sheet"]},
+      {"id": "bottom-sheet", "name": "Bottom sheet", "kind": "platform", "why": "mobile-optimized drawer sliding up from bottom", "match": ["bottom drawer"]},
+      {"id": "form-sheet", "name": "Form sheet", "kind": "structure", "why": "form or data entry inside a sheet/drawer", "match": ["form"]},
+      {"id": "detail-view", "name": "Detail view", "kind": "structure", "why": "expanded view of an item's details in a sheet", "match": ["detail view"]}
+    ]
+  },
+  "component/popover": {
+    "variations": [
+      {"id": "standard-popover", "name": "Standard popover", "kind": "structure", "why": "floating box with content triggered by click or hover", "match": ["standard popover"]},
+      {"id": "hover-card", "name": "Hover card", "kind": "structure", "why": "preview or info card shown on hover", "match": ["standard hover card", "preview"]},
+      {"id": "tooltip", "name": "Tooltip", "kind": "structure", "why": "small label or text on hover (no interaction)", "match": ["tooltip"]},
+      {"id": "link-preview", "name": "Link preview", "kind": "structure", "why": "preview of linked page on hover", "match": ["link preview"]},
+      {"id": "info-card", "name": "Info card", "kind": "structure", "why": "additional information or context in a popover", "match": ["info card"]}
+    ]
+  },
+  "component/toast": {
+    "variations": [
+      {"id": "basic-toast", "name": "Basic toast", "kind": "structure", "why": "brief notification message that auto-dismisses", "match": ["standard toast"]},
+      {"id": "action-toast", "name": "Action toast", "kind": "structure", "why": "toast with an action button (undo, retry)", "match": ["action"]},
+      {"id": "rich-toast", "name": "Rich toast", "kind": "structure", "why": "toast with multiple lines, icons, or custom content", "match": ["rich"]},
+      {"id": "stacked-toasts", "name": "Stacked toasts", "kind": "structure", "why": "multiple toasts queued vertically", "match": ["stacked"]},
+      {"id": "loading-toast", "name": "Loading toast", "kind": "state", "why": "spinner or progress while operation completes", "match": ["promise or loading"]}
+    ]
+  },
+  "component/alert": {
+    "variations": [
+      {"id": "inline-alert", "name": "Inline alert", "kind": "structure", "why": "alert box inline with content, not floating", "match": ["inline alert"]},
+      {"id": "top-banner", "name": "Top banner", "kind": "structure", "why": "full-width banner at page or section top", "match": ["top banner"]},
+      {"id": "callout", "name": "Callout", "kind": "structure", "why": "highlighted note or tip box within content", "match": ["callout"]},
+      {"id": "cookie-consent", "name": "Cookie consent", "kind": "structure", "why": "persistent prompt to accept cookies or privacy policy", "match": ["cookie consent"]},
+      {"id": "announcement", "name": "Announcement", "kind": "structure", "why": "broadcast message about updates or events", "match": ["announcement"]}
+    ]
+  },
+  "component/inbox": {
+    "variations": [
+      {"id": "notification-card", "name": "Notification card", "kind": "structure", "why": "individual notification with icon, title, action", "match": ["notification card"]},
+      {"id": "notification-center", "name": "Notification center", "kind": "structure", "why": "list of all notifications with filter and sort", "match": ["notification center"]},
+      {"id": "notification-inbox", "name": "Notification inbox", "kind": "structure", "why": "persistent notifications panel in the app", "match": ["notification inbox"]},
+      {"id": "email-template", "name": "Email template", "kind": "structure", "why": "HTML email notification design", "match": ["email template"]}
+    ]
+  },
+  "component/lightbox": {
+    "variations": [
+      {"id": "standard-lightbox", "name": "Standard lightbox", "kind": "structure", "why": "image opens fullscreen with prev/next navigation", "match": ["standard lightbox"]},
+      {"id": "fullscreen-viewer", "name": "Fullscreen viewer", "kind": "structure", "why": "dedicated fullscreen image or document viewer", "match": ["fullscreen viewer"]},
+      {"id": "thumbnail-viewer", "name": "Thumbnail viewer", "kind": "structure", "why": "gallery with thumbnails controlling main image", "match": ["thumbnail"]}
+    ]
+  },
+  "component/gallery": {
+    "variations": [
+      {"id": "grid-gallery", "name": "Grid gallery", "kind": "structure", "why": "images arranged in evenly-spaced rows and columns", "match": ["grid"]},
+      {"id": "masonry-gallery", "name": "Masonry gallery", "kind": "structure", "why": "images of varying sizes arranged like masonry", "match": ["masonry"]},
+      {"id": "carousel-gallery", "name": "Carousel gallery", "kind": "structure", "why": "images in a slider with navigation arrows", "match": ["carousel"]},
+      {"id": "reveal-effects", "name": "Reveal effects", "kind": "structure", "why": "images animated in or gradually revealed", "match": ["reveal"]},
+      {"id": "zoom-effects", "name": "Zoom effects", "kind": "structure", "why": "hover zoom, lens, or magnification on images", "match": ["zoom and lens"]},
+      {"id": "circular-gallery", "name": "Circular gallery", "kind": "structure", "why": "images arranged in a circle or radial pattern", "match": ["circular"]}
+    ]
+  },
+  "component/carousel": {
+    "variations": [
+      {"id": "slider-carousel", "name": "Slider carousel", "kind": "structure", "why": "slides with progress bar and prev/next buttons", "match": ["slider"]},
+      {"id": "coverflow", "name": "Coverflow carousel", "kind": "structure", "why": "3D card flip effect as you slide", "match": ["coverflow"]},
+      {"id": "cards-carousel", "name": "Cards carousel", "kind": "structure", "why": "multiple card slides visible at once", "match": ["cards carousel"]},
+      {"id": "autoplay-carousel", "name": "Autoplay carousel", "kind": "state", "why": "carousel auto-advances on a timer", "match": ["autoplay"]},
+      {"id": "swipeable", "name": "Swipeable carousel", "kind": "structure", "why": "touch/swipe gesture to navigate slides", "match": ["swipeable"]}
+    ]
+  },
+  "component/player": {
+    "variations": [
+      {"id": "video-player", "name": "Video player", "kind": "structure", "why": "video playback with controls (play, volume, full screen)", "match": ["video player"]},
+      {"id": "audio-player", "name": "Audio player", "kind": "structure", "why": "music or podcast playback with timeline scrubber", "match": ["audio player", "music player"]},
+      {"id": "waveform-visualizer", "name": "Waveform visualizer", "kind": "structure", "why": "audio with animated waveform visualization", "match": ["waveform"]},
+      {"id": "podcast-player", "name": "Podcast player", "kind": "structure", "why": "specialized player for podcast episodes", "match": ["podcast"]}
+    ]
+  },
+  "component/compare": {
+    "variations": [
+      {"id": "before-after", "name": "Before and after", "kind": "structure", "why": "two images side-by-side or stacked for comparison", "match": ["before and after"]},
+      {"id": "slider-compare", "name": "Slider compare", "kind": "structure", "why": "draggable handle to reveal one image over another", "match": ["draggable slider", "image compare"]}
+    ]
+  },
+  "component/mockup": {
+    "variations": [
+      {"id": "device-mockup", "name": "Device mockup", "kind": "structure", "why": "screenshot framed in phone, tablet, or laptop bezel", "match": ["device mockup", "device frame"]},
+      {"id": "interactive-frame", "name": "Interactive frame", "kind": "structure", "why": "embedded interface responsive inside device frame", "match": ["interactive frame"]}
+    ]
+  },
+  "component/message": {
+    "variations": [
+      {"id": "message-bubble", "name": "Message bubble", "kind": "structure", "why": "chat message with avatar, text, and timestamp", "match": ["message bubble"]},
+      {"id": "chat-thread", "name": "Chat thread", "kind": "structure", "why": "conversation between multiple participants", "match": ["chat thread"]},
+      {"id": "streaming-text", "name": "Streaming text", "kind": "state", "why": "text animating in as it's generated (AI streaming)", "match": ["streaming"]},
+      {"id": "tool-calls", "name": "Tool calls display", "kind": "structure", "why": "agent tool invocations with inputs and outputs", "match": ["tool call"]},
+      {"id": "reasoning-display", "name": "Reasoning display", "kind": "structure", "why": "agent's internal reasoning steps shown to user", "match": ["reasoning"]},
+      {"id": "suggestions", "name": "Suggestions", "kind": "structure", "why": "quick reply or suggested next messages", "match": ["suggestions"]}
+    ]
+  },
+  "component/composer": {
+    "variations": [
+      {"id": "standard-composer", "name": "Standard composer", "kind": "structure", "why": "text input area for entering messages or prompts", "match": ["standard composer"]},
+      {"id": "prompt-inputs", "name": "Prompt inputs", "kind": "structure", "why": "quick buttons for common prompts or templates", "match": ["prompt inputs"]},
+      {"id": "chat-composer", "name": "Chat composer", "kind": "structure", "why": "composer with send button and formatting options", "match": ["chat composer"]},
+      {"id": "with-model-picker", "name": "With model picker", "kind": "structure", "why": "dropdown to select AI model before sending", "match": ["model picker"]},
+      {"id": "with-attachments", "name": "With attachments", "kind": "structure", "why": "upload files or images alongside message", "match": ["attachments"]}
+    ]
+  },
+  "component/agent-parts": {
+    "variations": [
+      {"id": "tool-calls", "name": "Tool calls", "kind": "structure", "why": "display of function/tool invocations with status", "match": ["tool call"]},
+      {"id": "voice-orb", "name": "Voice/orb input", "kind": "structure", "why": "microphone button or animated orb for voice input", "match": ["voice or orb"]},
+      {"id": "artifact-display", "name": "Artifact display", "kind": "structure", "why": "code, JSON, or generated content in a panel", "match": ["artifact"]},
+      {"id": "sources-display", "name": "Sources display", "kind": "structure", "why": "citations or references used by the agent", "match": ["sources"]},
+      {"id": "reasoning-display", "name": "Reasoning display", "kind": "structure", "why": "agent's thought process or analysis steps", "match": ["reasoning"]}
+    ]
+  }
+}

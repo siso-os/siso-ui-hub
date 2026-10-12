@@ -1,0 +1,283 @@
+{
+ "data-display/accordion": {
+  "disclosure": "feature disclosure"
+ },
+ "navigation/dock": {
+  "macos-style dock": "macos magnifying"
+ },
+ "flows/settings": {
+  "whole form": "settings form"
+ },
+ "ai-agent/ai-agent": {
+  "reasoning and tools": "tool call or steps"
+ },
+ "motion/background": {
+  "wave or ripple": "waves",
+  "beam or light effect": "beams or lines",
+  "grid pattern": "grid or dots",
+  "landscape or scene": "scene"
+ },
+ "motion/number-ticker": {
+  "counting animation": "count-up",
+  "interactive counter": "number counter",
+  "odometer": "rolling digits",
+  "sample data": "standard number ticker"
+ },
+ "themes/theme": {
+  "standard theme": "design system"
+ },
+ "motion/text-effect": {
+  "reveal and entrance": "reveal"
+ },
+ "layout/page-shell": {
+  "aspect ratio": "ratio container",
+  "layout helper": "standard page shell"
+ },
+ "inputs/file-upload": {
+  "image preview": "previews",
+  "attachment card": "attachment row",
+  "file list": "progress list"
+ },
+ "data-display/avatar": {
+  "avatar stack": "avatar group"
+ },
+ "data-display/badge": {
+  "count or pill badge": "count"
+ },
+ "layout/bento-grid": {
+  "feature showcase": "feature bento",
+  "analytics tile": "analytics dashboard"
+ },
+ "navigation/breadcrumb": {
+  "breadcrumb trail": "standard breadcrumb",
+  "separator variant": "icons",
+  "truncation": "truncated or menu",
+  "bar": "standard breadcrumb"
+ },
+ "data-display/calendar": {
+  "mini calendar": "month calendar",
+  "standard calendar": "month calendar"
+ },
+ "data-display/card": {
+  "container": "standard card",
+  "panel": "standard card",
+  "component": "standard card"
+ },
+ "data-display/code-block": {
+  "syntax-highlighted code": "highlighted code",
+  "terminal output": "terminal",
+  "terminal element": "terminal",
+  "terminal window": "terminal",
+  "install command": "highlighted code"
+ },
+ "inputs/combobox": {
+  "grouped options": "grouped",
+  "autocomplete field": "autocomplete with suggestions",
+  "autocomplete": "autocomplete with suggestions"
+ },
+ "layout/dashboard": {
+  "admin shell": "app shell",
+  "admin page": "admin overview"
+ },
+ "overlays/context-menu": {
+  "right-click menu": "standard context menu",
+  "submenu or groups": "submenus",
+  "entry": "list",
+  "radix wrapper": "standard context menu"
+ },
+ "data-display/table": {
+  "primitive": "standard table"
+ },
+ "inputs/date-picker": {
+  "calendar only": "month calendar",
+  "segmented date entry": "segmented input",
+  "date input field": "date input"
+ },
+ "overlays/sheet": {
+  "side drawer": "side sheet",
+  "side slide-over panel": "side sheet",
+  "bottom sheet": "bottom drawer",
+  "bottom drawer with swipe": "bottom drawer",
+  "bottom drawer with snap points": "bottom drawer"
+ },
+ "navigation/menu": {
+  "context or slash menu": "context menu",
+  "toolbar": "toolbar or menubar"
+ },
+ "data-display/empty-state": {
+  "icon and message": "icon and text"
+ },
+ "layout/scroll-area": {
+  "reveal on scroll": "scroll reveal"
+ },
+ "motion/cursor": {
+  "spotlight and reveal": "spotlight",
+  "interactive": "interactive surface"
+ },
+ "status/loader": {
+  "dots and pulse": "pulse"
+ },
+ "overlays/hover-card": {
+  "info tooltip": "tooltip",
+  "component": "standard hover card"
+ },
+ "inputs/otp-input": {
+  "segmented slots": "slots",
+  "individual character slots": "slots",
+  "code or pin": "pin or 4-digit",
+  "email verification": "verification form"
+ },
+ "data-display/typography": {
+  "kbd": "kbd or inline",
+  "key": "keyboard keys",
+  "keyboard key caps": "keyboard keys",
+  "keyboard shortcut": "keyboard keys"
+ },
+ "actions/link": {
+  "preview": "preview on hover"
+ },
+ "navigation/top-nav": {
+  "mega menu or dropdown": "mega menu"
+ },
+ "inputs/number-input": {
+  "stepper horizontal": "stepper",
+  "numeric stepper": "stepper"
+ },
+ "inputs/slider": {
+  "specialty slider": "specialized"
+ },
+ "navigation/pagination": {
+  "numbered pagination": "numbered pages",
+  "numbered pages with ellipsis": "numbered pages",
+  "page size selector": "page size dropdown"
+ },
+ "overlays/popover": {
+  "form in popover": "form popover"
+ },
+ "marketing/testimonials": {
+  "marquee scroll": "marquee"
+ },
+ "data-display/profile": {
+  "specialized profile": "standard profile"
+ },
+ "inputs/radio": {
+  "size variants": "standard radio"
+ },
+ "layout/split-pane": {
+  "resizable panes": "resizable panels"
+ },
+ "navigation/sidebar": {
+  "user menu": "standard sidebar",
+  "indicator": "standard sidebar"
+ },
+ "navigation/tabs": {
+  "underline or segment": "underline"
+ },
+ "inputs/textarea": {
+  "validation states": "validation",
+  "auto-growing": "autosize"
+ },
+ "data-display/tree": {
+  "file explorer tree": "file tree"
+ },
+ "lib/utility": {
+  "provider or adapter": "provider"
+ },
+ "marketing/footer": {
+  "multi-column links": "link columns",
+  "newsletter form": "newsletter"
+ },
+ "flows/sign-in": {
+  "signup form": "sign up",
+  "password reset": "forgot password"
+ },
+ "data-display/gamification": {
+  "interactive element": "standard gamification"
+ },
+ "marketing/pricing": {
+  "plan": "plan card",
+  "checkout flow": "checkout"
+ },
+ "marketing/marketing": {
+  "stats or metrics": "stats row",
+  "about section": "about",
+  "blog featured": "blog post"
+ },
+ "data-display/kanban": {
+  "column-based board": "board with columns"
+ },
+ "media/player": {
+  "waveform visualization": "waveform visualizer",
+  "waveform": "waveform visualizer",
+  "audio player with waveform": "audio player",
+  "audio hook or utility": "audio player"
+ },
+ "pages/templates": {
+  "404 search": "404 minimal"
+ },
+ "overlays/notifications": {
+  "notification template": "standard notification"
+ },
+ "inputs/search": {
+  "domain search": "search field"
+ },
+ "motion/shader": {
+  "shader example": "standard shader"
+ },
+ "inputs/color-picker": {
+  "saturation and hue pad": "saturation and brightness area"
+ },
+ "marketing/cta": {
+  "contact form": "email form",
+  "contact options": "standard cta"
+ },
+ "marketing/comparison": {
+  "before and after": "before and after slider"
+ },
+ "ai-agent/composer": {
+  "component": "standard composer"
+ },
+ "navigation/table-of-contents": {
+  "compact minimap": "minimap variant"
+ },
+ "motion/globe": {
+  "featured globe": "standard globe"
+ },
+ "actions/segmented-control": {
+  "sliding pill": "pill toggle with sliding thumb",
+  "sliding thumb": "pill toggle with sliding thumb",
+  "pill or segmented": "standard segmented control",
+  "toggle group or radio buttons": "standard segmented control",
+  "rubber segment": "standard segmented control",
+  "segmented toggle": "standard segmented control",
+  "mode selector": "standard segmented control",
+  "button segments": "standard segmented control"
+ },
+ "other/other": {
+  "decorative shape": "shapes or grid",
+  "utility or hook": "utility function",
+  "utility or helper": "utility function",
+  "layout utility": "layout wrapper",
+  "layout primitive": "layout wrapper",
+  "accordion variant": "standard other",
+  "empty state": "standard other"
+ },
+ "inputs/date-range": {
+  "calendar interface": "range calendar"
+ },
+ "data-viz/gauge": {
+  "linear gauge": "linear meter",
+  "segmented meter": "segmented"
+ },
+ "media/image-compare": {
+  "comparison layout": "before and after",
+  "slider": "draggable slider"
+ },
+ "inputs/time-picker": {
+  "segment-based": "segmented time entry",
+  "popup picker": "dialog picker"
+ },
+ "none": {
+  "pagination": "standard none"
+ }
+}

@@ -1,0 +1,675 @@
+{
+  "page/home": {
+    "variations": [
+      {
+        "id": "home-saas",
+        "name": "SaaS home",
+        "kind": "structure",
+        "why": "Hero, features, testimonials, pricing, FAQ—standard growth funnel",
+        "match": ["landing page", "full-page template"]
+      },
+      {
+        "id": "home-portfolio",
+        "name": "Portfolio home",
+        "kind": "structure",
+        "why": "Case studies, gallery, awards, testimonials—showcase work",
+        "match": ["portfolio"]
+      },
+      {
+        "id": "home-agency",
+        "name": "Agency home",
+        "kind": "structure",
+        "why": "Services, team, process, case studies, contact CTA",
+        "match": ["agency"]
+      },
+      {
+        "id": "home-product-launch",
+        "name": "Product launch",
+        "kind": "structure",
+        "why": "Waitlist, countdown, early access, social proof",
+        "match": ["landing page"]
+      },
+      {
+        "id": "home-app-download",
+        "name": "App download",
+        "kind": "structure",
+        "why": "App screenshots, features, download buttons, reviews",
+        "match": ["full-page template"]
+      }
+    ]
+  },
+  "page/pricing-page": {
+    "variations": [
+      {
+        "id": "pricing-tiered",
+        "name": "Tiered plans",
+        "kind": "structure",
+        "why": "Three or four columns per tier with features, price, CTA",
+        "match": ["pricing"]
+      },
+      {
+        "id": "pricing-toggle",
+        "name": "Annual/monthly",
+        "kind": "structure",
+        "why": "Switch between billing periods; shows discount on annual",
+        "match": ["pricing"]
+      },
+      {
+        "id": "pricing-comparison",
+        "name": "With comparison",
+        "kind": "structure",
+        "why": "Tier cards above detailed feature-by-tier comparison table",
+        "match": ["comparison"]
+      },
+      {
+        "id": "pricing-faq",
+        "name": "With FAQ",
+        "kind": "structure",
+        "why": "Pricing cards plus common questions collapsed accordion",
+        "match": ["pricing", "faq"]
+      }
+    ]
+  },
+  "page/about-page": {
+    "variations": [
+      {
+        "id": "about-team",
+        "name": "With team",
+        "kind": "structure",
+        "why": "Hero, mission statement, team member cards, testimonials",
+        "match": ["team"]
+      },
+      {
+        "id": "about-stats",
+        "name": "With stats",
+        "kind": "structure",
+        "why": "Hero, key metrics (revenue, users, years), story, CTA",
+        "match": ["stats"]
+      },
+      {
+        "id": "about-timeline",
+        "name": "Timeline history",
+        "kind": "structure",
+        "why": "Vertical or horizontal timeline showing company milestones",
+        "match": ["about"]
+      },
+      {
+        "id": "about-values",
+        "name": "Values-first",
+        "kind": "structure",
+        "why": "Core values with icons, mission statement, team small cards",
+        "match": ["about"]
+      }
+    ]
+  },
+  "page/blog-index": {
+    "variations": [
+      {
+        "id": "blog-grid",
+        "name": "Grid of posts",
+        "kind": "structure",
+        "why": "Card layout with thumbnail, title, excerpt, date, author",
+        "match": ["blog"]
+      },
+      {
+        "id": "blog-featured",
+        "name": "Featured above",
+        "kind": "structure",
+        "why": "Large featured post card, then smaller post list below",
+        "match": ["blog"]
+      },
+      {
+        "id": "blog-list",
+        "name": "List with sidebar",
+        "kind": "structure",
+        "why": "Posts as rows, right sidebar with categories/tags/search",
+        "match": ["blog"]
+      },
+      {
+        "id": "blog-categories",
+        "name": "Categorized",
+        "kind": "structure",
+        "why": "Posts grouped by category tabs or collapsible sections",
+        "match": ["blog"]
+      }
+    ]
+  },
+  "page/article": {
+    "variations": [
+      {
+        "id": "article-standard",
+        "name": "Standard article",
+        "kind": "structure",
+        "why": "Title, header image, body text, date, author bio",
+        "match": ["standard template", "docs"]
+      },
+      {
+        "id": "article-with-toc",
+        "name": "With table of contents",
+        "kind": "structure",
+        "why": "Left or right sticky sidebar; heading links for long articles",
+        "match": ["docs"]
+      },
+      {
+        "id": "article-docs-style",
+        "name": "Docs style",
+        "kind": "structure",
+        "why": "Left sidebar navigation, breadcrumbs, next/prev footer",
+        "match": ["docs"]
+      },
+      {
+        "id": "article-with-related",
+        "name": "With related posts",
+        "kind": "structure",
+        "why": "Main article plus 2-3 related/recommended at bottom",
+        "match": ["standard template"]
+      }
+    ]
+  },
+  "page/contact-page": {
+    "variations": [
+      {
+        "id": "contact-form",
+        "name": "Contact form",
+        "kind": "structure",
+        "why": "Centered form with name, email, subject, message, submit",
+        "match": ["contact"]
+      },
+      {
+        "id": "contact-with-info",
+        "name": "Form and info",
+        "kind": "structure",
+        "why": "Two-column: form on left, contact info, social links on right",
+        "match": ["contact"]
+      },
+      {
+        "id": "contact-with-map",
+        "name": "Form and map",
+        "kind": "structure",
+        "why": "Form left, embedded map right showing office location",
+        "match": ["contact"]
+      },
+      {
+        "id": "contact-multiple",
+        "name": "Multiple teams",
+        "kind": "structure",
+        "why": "Tabs or sections for sales, support, partnerships contacts",
+        "match": ["contact"]
+      }
+    ]
+  },
+  "page/auth-page": {
+    "variations": [
+      {
+        "id": "auth-sign-in",
+        "name": "Sign in",
+        "kind": "structure",
+        "why": "Email/password form, remember me, forgot link, sign up link",
+        "match": ["centered card", "standard sign in"]
+      },
+      {
+        "id": "auth-sign-up",
+        "name": "Sign up",
+        "kind": "structure",
+        "why": "Email, password, confirm, name, terms checkbox, submit",
+        "match": ["sign up"]
+      },
+      {
+        "id": "auth-forgot-password",
+        "name": "Forgot password",
+        "kind": "structure",
+        "why": "Email field, submit button, back to sign in link",
+        "match": ["forgot password"]
+      },
+      {
+        "id": "auth-magic-link",
+        "name": "Magic link",
+        "kind": "structure",
+        "why": "Email only, no password, submit sends link to email",
+        "match": ["magic link or code"]
+      }
+    ]
+  },
+  "page/not-found": {
+    "variations": [
+      {
+        "id": "notfound-404",
+        "name": "404 Not Found",
+        "kind": "edge",
+        "why": "Error code, message, home link, search box",
+        "match": ["error page", "404 minimal"]
+      },
+      {
+        "id": "notfound-500",
+        "name": "500 Server Error",
+        "kind": "edge",
+        "why": "Server error message, contact support link, retry button",
+        "match": ["error page"]
+      },
+      {
+        "id": "notfound-maintenance",
+        "name": "Maintenance",
+        "kind": "edge",
+        "why": "Under maintenance message, expected return time, email notification",
+        "match": ["coming soon"]
+      },
+      {
+        "id": "notfound-coming-soon",
+        "name": "Coming soon",
+        "kind": "edge",
+        "why": "Feature not yet available, waitlist form, estimated date",
+        "match": ["coming soon"]
+      },
+      {
+        "id": "notfound-no-permission",
+        "name": "No permission",
+        "kind": "edge",
+        "why": "Access denied message, request access link or contact admin",
+        "match": ["error page"]
+      }
+    ]
+  },
+  "page/dashboard": {
+    "variations": [
+      {
+        "id": "dashboard-overview",
+        "name": "Overview",
+        "kind": "structure",
+        "why": "KPI cards, chart overview, key metrics at a glance",
+        "match": ["analytics dashboard", "full dashboard page"]
+      },
+      {
+        "id": "dashboard-analytics",
+        "name": "Analytics deep dive",
+        "kind": "structure",
+        "why": "Filterable charts, comparison views, time period selectors",
+        "match": ["analytics dashboard"]
+      },
+      {
+        "id": "dashboard-operations",
+        "name": "Operations",
+        "kind": "structure",
+        "why": "Task lists, workflow stages, real-time status updates",
+        "match": ["operations dashboard"]
+      },
+      {
+        "id": "dashboard-first-run-empty",
+        "name": "First run / empty",
+        "kind": "state",
+        "why": "No data yet; empty states with onboarding prompts",
+        "match": []
+      },
+      {
+        "id": "dashboard-shell-rail",
+        "name": "Rail shell",
+        "kind": "platform",
+        "why": "Icon rail on left with dashboard panel on right",
+        "match": ["app shell"]
+      },
+      {
+        "id": "dashboard-shell-drill",
+        "name": "Drill shell",
+        "kind": "platform",
+        "why": "Nested side nav that drills down; animates left-right",
+        "match": ["app shell"]
+      },
+      {
+        "id": "dashboard-shell-flat",
+        "name": "Flat sidebar",
+        "kind": "platform",
+        "why": "Standard sidebar with all items visible; no nesting",
+        "match": ["app shell"]
+      }
+    ]
+  },
+  "page/index": {
+    "variations": [
+      {
+        "id": "index-table",
+        "name": "Data table",
+        "kind": "structure",
+        "why": "Columns, rows, sortable headers, pagination or infinite scroll",
+        "match": ["data table", "standard table"]
+      },
+      {
+        "id": "index-kanban",
+        "name": "Kanban board",
+        "kind": "structure",
+        "why": "Columns by status, cards draggable between columns",
+        "match": ["multi-column board", "standard kanban"]
+      },
+      {
+        "id": "index-list",
+        "name": "Simple list",
+        "kind": "structure",
+        "why": "Rows with minimal info, compact layout, bulk actions",
+        "match": ["standard list"]
+      },
+      {
+        "id": "index-empty",
+        "name": "Empty state",
+        "kind": "state",
+        "why": "No items yet; message, create new button, help link",
+        "match": []
+      },
+      {
+        "id": "index-shell-rail",
+        "name": "Rail shell",
+        "kind": "platform",
+        "why": "Icon rail navigation with list on right",
+        "match": ["app shell"]
+      },
+      {
+        "id": "index-shell-drill",
+        "name": "Drill shell",
+        "kind": "platform",
+        "why": "Drill-down nav on left with list on right",
+        "match": ["app shell"]
+      },
+      {
+        "id": "index-shell-flat",
+        "name": "Flat sidebar",
+        "kind": "platform",
+        "why": "Flat sidebar on left with list on right",
+        "match": ["app shell"]
+      }
+    ]
+  },
+  "page/record": {
+    "variations": [
+      {
+        "id": "record-profile",
+        "name": "Profile page",
+        "kind": "structure",
+        "why": "Avatar, name, bio, stats, action buttons",
+        "match": ["profile page"]
+      },
+      {
+        "id": "record-form",
+        "name": "Edit form",
+        "kind": "structure",
+        "why": "Read mode switches to edit; form fields, save/cancel buttons",
+        "match": ["profile form"]
+      },
+      {
+        "id": "record-split-pane",
+        "name": "Split detail",
+        "kind": "structure",
+        "why": "List on left, detail on right; selection highlights row",
+        "match": ["standard split pane"]
+      },
+      {
+        "id": "record-shell-rail",
+        "name": "Rail shell",
+        "kind": "platform",
+        "why": "Icon rail with detail page on right",
+        "match": ["app shell"]
+      },
+      {
+        "id": "record-shell-drill",
+        "name": "Drill shell",
+        "kind": "platform",
+        "why": "Drill nav on left with detail on right",
+        "match": ["app shell"]
+      },
+      {
+        "id": "record-shell-flat",
+        "name": "Flat sidebar",
+        "kind": "platform",
+        "why": "Flat sidebar on left with detail on right",
+        "match": ["app shell"]
+      }
+    ]
+  },
+  "page/settings": {
+    "variations": [
+      {
+        "id": "settings-tabbed",
+        "name": "Tabs",
+        "kind": "structure",
+        "why": "Horizontal or vertical tabs: account, profile, notifications, billing, security",
+        "match": ["tabbed sections"]
+      },
+      {
+        "id": "settings-sidebar",
+        "name": "Sidebar menu",
+        "kind": "structure",
+        "why": "Left sidebar sections; clicking each section loads right panel",
+        "match": ["sidebar layout"]
+      },
+      {
+        "id": "settings-profile",
+        "name": "Profile settings",
+        "kind": "structure",
+        "why": "Name, email, avatar upload, bio, language, timezone",
+        "match": ["profile form"]
+      },
+      {
+        "id": "settings-security",
+        "name": "Security settings",
+        "kind": "structure",
+        "why": "Password change, two-factor, connected apps, login history",
+        "match": ["security settings"]
+      },
+      {
+        "id": "settings-danger-zone",
+        "name": "Danger zone",
+        "kind": "edge",
+        "why": "Delete account, destructive actions behind confirmation",
+        "match": []
+      },
+      {
+        "id": "settings-shell-rail",
+        "name": "Rail shell",
+        "kind": "platform",
+        "why": "Icon rail with settings panel on right",
+        "match": ["app shell"]
+      },
+      {
+        "id": "settings-shell-drill",
+        "name": "Drill shell",
+        "kind": "platform",
+        "why": "Drill nav on left with settings on right",
+        "match": ["app shell"]
+      }
+    ]
+  },
+  "page/chat-screen": {
+    "variations": [
+      {
+        "id": "chat-empty",
+        "name": "Empty",
+        "kind": "state",
+        "why": "No conversation yet; welcome message, suggested prompts",
+        "match": []
+      },
+      {
+        "id": "chat-history",
+        "name": "With history",
+        "kind": "structure",
+        "why": "Messages back and forth, scrollable history, composer at bottom",
+        "match": ["full chat app", "chat thread"]
+      },
+      {
+        "id": "chat-agent-working",
+        "name": "Agent working",
+        "kind": "state",
+        "why": "Agent thinking, tool calls showing, streaming response",
+        "match": ["tool call or steps", "reasoning"]
+      },
+      {
+        "id": "chat-with-artifact",
+        "name": "With artifact",
+        "kind": "structure",
+        "why": "Code, rendered output, or full-page artifact beside or below",
+        "match": ["artifact"]
+      },
+      {
+        "id": "chat-voice",
+        "name": "Voice/orb",
+        "kind": "structure",
+        "why": "Audio input button, waveform visualization, voice output",
+        "match": ["voice or orb"]
+      },
+      {
+        "id": "chat-shell-rail",
+        "name": "Rail shell",
+        "kind": "platform",
+        "why": "Icon rail with chat on right",
+        "match": ["full chat app"]
+      },
+      {
+        "id": "chat-shell-drill",
+        "name": "Drill shell",
+        "kind": "platform",
+        "why": "Drill nav (conversations list) on left, chat on right",
+        "match": ["full chat app"]
+      },
+      {
+        "id": "chat-shell-flat",
+        "name": "Flat sidebar",
+        "kind": "platform",
+        "why": "Flat sidebar on left with chat on right",
+        "match": ["full chat app"]
+      }
+    ]
+  },
+  "page/onboarding-flow": {
+    "variations": [
+      {
+        "id": "onboarding-welcome",
+        "name": "Welcome screen",
+        "kind": "structure",
+        "why": "Hero message, progress indicator, next button",
+        "match": ["onboarding welcome screen"]
+      },
+      {
+        "id": "onboarding-multi-step",
+        "name": "Multi-step form",
+        "kind": "structure",
+        "why": "Form fields across steps; back/next buttons; progress bar",
+        "match": ["multi-step form"]
+      },
+      {
+        "id": "onboarding-checklist",
+        "name": "Checklist",
+        "kind": "structure",
+        "why": "Task list with checkboxes; skippable items; completion message",
+        "match": ["onboarding"]
+      },
+      {
+        "id": "onboarding-stepper",
+        "name": "Numbered stepper",
+        "kind": "structure",
+        "why": "Horizontal or vertical numbered steps; each step is a screen",
+        "match": ["standard wizard step"]
+      }
+    ]
+  },
+  "page/auth-screen": {
+    "variations": [
+      {
+        "id": "auth-sign-in-desktop",
+        "name": "Sign in, desktop",
+        "kind": "platform",
+        "why": "Form on left, brand image on right; wide layout",
+        "match": ["split with image"]
+      },
+      {
+        "id": "auth-sign-in-mobile",
+        "name": "Sign in, mobile",
+        "kind": "platform",
+        "why": "Single column, full-width form, thumb-reachable button",
+        "match": ["centered card"]
+      },
+      {
+        "id": "auth-sign-up",
+        "name": "Sign up",
+        "kind": "structure",
+        "why": "Name, email, password, confirm, terms checkbox",
+        "match": ["sign up"]
+      },
+      {
+        "id": "auth-forgot-password",
+        "name": "Forgot password",
+        "kind": "structure",
+        "why": "Email field, submit sends reset link",
+        "match": ["forgot password"]
+      },
+      {
+        "id": "auth-two-factor",
+        "name": "Two-factor",
+        "kind": "structure",
+        "why": "Code input (6 digits), resend button, backup codes option",
+        "match": ["two-factor"]
+      },
+      {
+        "id": "auth-magic-link",
+        "name": "Magic link",
+        "kind": "structure",
+        "why": "Email only; click link in email or enter code",
+        "match": ["magic link or code"]
+      },
+      {
+        "id": "auth-verification",
+        "name": "Email verification",
+        "kind": "structure",
+        "why": "Verify code sent to email; resend or change email option",
+        "match": ["verification"]
+      },
+      {
+        "id": "auth-social-buttons",
+        "name": "Social login",
+        "kind": "structure",
+        "why": "Continue with Google/GitHub/Apple plus email/password form",
+        "match": ["social buttons"]
+      }
+    ]
+  },
+  "page/shell": {
+    "variations": [
+      {
+        "id": "shell-rail",
+        "name": "Icon Rail",
+        "kind": "structure",
+        "why": "Narrow column of icons on left edge; click swaps right panel or highlights destination",
+        "match": ["rail"]
+      },
+      {
+        "id": "shell-drill",
+        "name": "Drill-down nav",
+        "kind": "structure",
+        "why": "Left side nav with nested drill-through; lists slide left-right on item click",
+        "match": ["drill"]
+      },
+      {
+        "id": "shell-flat",
+        "name": "Flat sidebar",
+        "kind": "structure",
+        "why": "Vertical sidebar with sections and flat item lists; no nesting",
+        "match": ["flat"]
+      },
+      {
+        "id": "shell-mobile-drawer",
+        "name": "Mobile drawer",
+        "kind": "platform",
+        "why": "Hidden nav in offcanvas drawer; menu button or swipe reveals it",
+        "match": []
+      },
+      {
+        "id": "shell-mobile-tabs",
+        "name": "Mobile tabs",
+        "kind": "platform",
+        "why": "Icon tabs at bottom of screen; tapping switches tab content",
+        "match": []
+      },
+      {
+        "id": "shell-top-bar",
+        "name": "Top bar only",
+        "kind": "structure",
+        "why": "Horizontal nav bar at top; dropdowns or collapse for mobile",
+        "match": []
+      }
+    ]
+  }
+}

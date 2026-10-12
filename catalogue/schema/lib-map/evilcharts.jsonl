@@ -1,0 +1,49 @@
+{"id": "evilcharts:allocation-echarts-sankey-chart", "node": "component/chart", "variation": null, "job": "fund allocation flow chart with labelled nodes and stats", "edge": "sankey flow chart"}
+{"id": "evilcharts:audience-echarts-area-chart", "node": "component/chart", "variation": "area-chart", "job": "audience growth area chart in a card"}
+{"id": "evilcharts:benchmark-echarts-area-chart", "node": "component/chart", "variation": "area-chart", "job": "growth area chart against a dashed benchmark line"}
+{"id": "evilcharts:budget-echarts-radial-chart", "node": "component/chart", "variation": "radar-specialized", "job": "budget breakdown card with four radial gauges"}
+{"id": "evilcharts:cache-tiers-echarts-radial-chart", "node": "component/chart", "variation": "radar-specialized", "job": "semi-circle multi-ring gauge showing cache tier shares"}
+{"id": "evilcharts:echarts-area-chart", "node": "component/chart", "variation": "area-chart", "job": "area chart rendered with ECharts"}
+{"id": "evilcharts:echarts-bar-chart", "node": "component/chart", "variation": "bar-chart", "job": "bar chart rendered with ECharts"}
+{"id": "evilcharts:echarts-brush", "node": "component/chart", "variation": null, "job": "drag-to-select range brush over a chart", "edge": "chart range brush"}
+{"id": "evilcharts:echarts-chart", "node": "component/chart", "variation": null, "job": "base ECharts wrapper for chart rendering", "edge": "chart container"}
+{"id": "evilcharts:echarts-composed-chart", "node": "component/chart", "variation": null, "job": "chart combining bars and lines on one axis", "edge": "composed bar-line chart"}
+{"id": "evilcharts:echarts-dot", "node": "component/chart", "variation": null, "job": "dot marker drawn at a chart data point", "edge": "chart data point marker"}
+{"id": "evilcharts:echarts-legend", "node": "component/chart", "variation": null, "job": "legend keying chart series to their colours", "edge": "chart legend"}
+{"id": "evilcharts:echarts-line-chart", "node": "component/chart", "variation": "line-chart", "job": "line chart rendered with ECharts"}
+{"id": "evilcharts:echarts-pie-chart", "node": "component/chart", "variation": "pie-donut", "job": "pie chart rendered with ECharts"}
+{"id": "evilcharts:echarts-radar-chart", "node": "component/chart", "variation": "radar-specialized", "job": "radar chart rendered with ECharts"}
+{"id": "evilcharts:echarts-radial-chart", "node": "component/chart", "variation": "radar-specialized", "job": "radial chart rendered with ECharts"}
+{"id": "evilcharts:echarts-sankey-chart", "node": "component/chart", "variation": null, "job": "sankey flow chart rendered with ECharts", "edge": "sankey flow chart"}
+{"id": "evilcharts:echarts-tooltip", "node": "atom/tooltip", "variation": "standard", "job": "hover tooltip showing chart values"}
+{"id": "evilcharts:grid-bar-chart", "node": "component/chart", "variation": "bar-chart", "job": "bar chart whose bars are stacked square blocks"}
+{"id": "evilcharts:grid-echarts-bar-chart", "node": "component/chart", "variation": "bar-chart", "job": "bar chart with block-stack columns on ECharts"}
+{"id": "evilcharts:hover-trace-bar-chart", "node": "component/chart", "variation": "bar-chart", "job": "bar chart with an active value line on hover"}
+{"id": "evilcharts:isometric-bar-chart", "node": "component/chart", "variation": "bar-chart", "job": "bar chart with extruded 3D bars"}
+{"id": "evilcharts:latency-echarts-area-chart", "node": "component/chart", "variation": "area-chart", "job": "latency percentile monitor area chart with stat row"}
+{"id": "evilcharts:market-share-echarts-pie-chart", "node": "component/chart", "variation": "pie-donut", "job": "grayscale donut with centre total and legend"}
+{"id": "evilcharts:monospace-bar-chart", "node": "component/chart", "variation": "bar-chart", "job": "monospace bar chart"}
+{"id": "evilcharts:monospace-echarts-bar-chart", "node": "component/chart", "variation": "bar-chart", "job": "sales bar chart with hover-expanding bars"}
+{"id": "evilcharts:payouts-echarts-line-chart", "node": "component/chart", "variation": "line-chart", "job": "payout trend line chart with stat rows"}
+{"id": "evilcharts:peak-echarts-bar-chart", "node": "component/chart", "variation": "bar-chart", "job": "stacked weekly signups bar chart highlighting best week"}
+{"id": "evilcharts:pipeline-echarts-sankey-chart", "node": "component/chart", "variation": null, "job": "revenue flow chart converging through a hub with total", "edge": "sankey flow chart"}
+{"id": "evilcharts:portfolio-echarts-area-chart", "node": "component/chart", "variation": "area-chart", "job": "portfolio comparison area chart with hover reveal"}
+{"id": "evilcharts:progress-rings-echarts-pie-chart", "node": "atom/progress", "variation": "circular", "job": "dotted progress rings with a centred stat"}
+{"id": "evilcharts:recharts-area-chart", "node": "component/chart", "variation": "area-chart", "job": "area chart rendered with Recharts"}
+{"id": "evilcharts:recharts-background", "node": "component/chart", "variation": null, "job": "pattern fill for the chart plot area", "edge": "chart background"}
+{"id": "evilcharts:recharts-bar-chart", "node": "component/chart", "variation": "bar-chart", "job": "bar chart rendered with Recharts"}
+{"id": "evilcharts:recharts-brush", "node": "component/chart", "variation": null, "job": "drag-to-select range brush over a chart", "edge": "chart range brush"}
+{"id": "evilcharts:recharts-chart", "node": "component/chart", "variation": null, "job": "base Recharts wrapper for chart rendering", "edge": "chart container"}
+{"id": "evilcharts:recharts-composed-chart", "node": "component/chart", "variation": null, "job": "chart combining bars and lines on one axis", "edge": "composed bar-line chart"}
+{"id": "evilcharts:recharts-dot", "node": "component/chart", "variation": null, "job": "dot marker drawn at a chart data point", "edge": "chart data point marker"}
+{"id": "evilcharts:recharts-legend", "node": "component/chart", "variation": null, "job": "legend keying chart series to their colours", "edge": "chart legend"}
+{"id": "evilcharts:recharts-line-chart", "node": "component/chart", "variation": "line-chart", "job": "line chart rendered with Recharts"}
+{"id": "evilcharts:recharts-pie-chart", "node": "component/chart", "variation": "pie-donut", "job": "donut pie chart with gradient and glow"}
+{"id": "evilcharts:recharts-radar-chart", "node": "component/chart", "variation": "radar-specialized", "job": "radar chart rendered with Recharts"}
+{"id": "evilcharts:recharts-radial-chart", "node": "component/chart", "variation": "radar-specialized", "job": "radial bar chart with full or semi-circle layout"}
+{"id": "evilcharts:recharts-sankey-chart", "node": "component/chart", "variation": null, "job": "sankey chart showing flow between nodes and links", "edge": "sankey flow chart"}
+{"id": "evilcharts:recharts-tooltip", "node": "atom/tooltip", "variation": "standard", "job": "hover tooltip showing chart values"}
+{"id": "evilcharts:reliability-score-echarts-pie-chart", "node": "atom/progress", "variation": "meter-gauge", "job": "banded score arc with a range scale"}
+{"id": "evilcharts:revenue-mix-echarts-pie-chart", "node": "component/chart", "variation": "pie-donut", "job": "donut chart with centre total and amount legend"}
+{"id": "evilcharts:ride-echarts-radial-chart", "node": "component/chart", "variation": "radar-specialized", "job": "activity summary card with goal bar and gauges"}
+{"id": "evilcharts:shipments-echarts-line-chart", "node": "component/chart", "variation": "line-chart", "job": "week-over-week line chart comparing two series"}

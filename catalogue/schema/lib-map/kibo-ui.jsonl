@@ -1,0 +1,41 @@
+{"id": "kibo-ui:announcement", "node": "section/announcement", "variation": "badge-icon", "job": "Compound announcement badge with icon and short announcement text."}
+{"id": "kibo-ui:avatar-stack", "node": "atom/avatar", "variation": "avatar-group", "job": "Overlapping avatar stack showing a group of people."}
+{"id": "kibo-ui:banner", "node": "component/alert", "variation": "top-banner", "job": "Full-width banner with a message and an action button."}
+{"id": "kibo-ui:calendar", "node": "component/calendar", "variation": "event-calendar", "job": "Grid calendar placing features across their start and end dates."}
+{"id": "kibo-ui:choicebox", "node": "atom/choice", "variation": "card", "job": "Radio or checkbox options styled as selectable cards."}
+{"id": "kibo-ui:code-block", "node": "component/code", "variation": "highlighted-code", "job": "Syntax-highlighted code with line numbers and copy to clipboard."}
+{"id": "kibo-ui:color-picker", "node": "component/picker", "variation": "color-picker", "job": "Colour picker modelled on Figma's colour picker for choosing values."}
+{"id": "kibo-ui:combobox", "node": "component/select", "variation": "combobox", "job": "Autocomplete input with a filtered suggestion list."}
+{"id": "kibo-ui:comparison", "node": "component/compare", "variation": "slider-compare", "job": "Overlay slider comparing two items side by side."}
+{"id": "kibo-ui:contribution-graph", "node": "component/chart", "variation": "heatmap", "job": "GitHub-style activity grid showing activity levels over time."}
+{"id": "kibo-ui:credit-card", "node": "component/card", "variation": null, "job": "Displays and validates credit card information for payment entry.", "edge": "payment card display"}
+{"id": "kibo-ui:cursor", "node": "atom/icon", "variation": null, "job": "Realtime cursor marker showing another user's pointer position.", "edge": "live collaborator cursor"}
+{"id": "kibo-ui:deck", "node": "component/carousel", "variation": "swipeable", "job": "Tinder-style swipeable card stack with smooth animations."}
+{"id": "kibo-ui:dialog-stack", "node": "component/dialog", "variation": "modal-dialog", "job": "Stacked dialogs for wizards, nested forms and multi-step flows."}
+{"id": "kibo-ui:dropzone", "node": "component/upload", "variation": "dropzone", "job": "Drag-and-drop area that accepts files for upload or processing."}
+{"id": "kibo-ui:editor", "node": "atom/text-input", "variation": null, "job": "Rich text editor for creating and formatting long-form content.", "edge": "rich text editor"}
+{"id": "kibo-ui:gantt", "node": "component/timeline", "variation": "gantt-chart", "job": "Gantt chart plotting project schedules and tracking progress."}
+{"id": "kibo-ui:glimpse", "node": "atom/link", "variation": "preview-hover", "job": "Hover card previewing a URL's content over a link."}
+{"id": "kibo-ui:image-crop", "node": "atom/image", "variation": null, "job": "Crops an image to a set size or aspect ratio.", "edge": "image crop tool"}
+{"id": "kibo-ui:image-zoom", "node": "component/gallery", "variation": "zoom-effects", "job": "Zooms in on an image to inspect its detail."}
+{"id": "kibo-ui:kanban", "node": "component/board", "variation": "kanban-drag-drop", "job": "Kanban board for visualising and moving work across columns."}
+{"id": "kibo-ui:list", "node": "component/list", "variation": "standard-list", "job": "Task list grouped by status and ranked by priority."}
+{"id": "kibo-ui:marquee", "node": "atom/layout", "variation": null, "job": "Items scroll horizontally in an endless looping motion.", "edge": "infinite marquee strip"}
+{"id": "kibo-ui:mini-calendar", "node": "component/calendar", "variation": "date-picker", "job": "Compact calendar for picking dates near today."}
+{"id": "kibo-ui:pill", "node": "atom/badge", "variation": "badge", "job": "Flexible pill badge for labels, statuses and short counts."}
+{"id": "kibo-ui:qr-code", "node": "atom/image", "variation": null, "job": "Generates a QR code image from a string.", "edge": "qr code image"}
+{"id": "kibo-ui:rating", "node": "atom/slider", "variation": "rating", "job": "Star rating with keyboard navigation and hover effects."}
+{"id": "kibo-ui:reel", "node": "component/carousel", "variation": "autoplay-carousel", "job": "Instagram-style full-height 9:16 story reel for slides."}
+{"id": "kibo-ui:relative-time", "node": "atom/text", "variation": null, "job": "Displays a time in relation to now, across timezones.", "edge": "relative time label"}
+{"id": "kibo-ui:sandbox", "node": "component/mockup", "variation": "interactive-frame", "job": "Sandboxed frame previewing and testing components in isolation."}
+{"id": "kibo-ui:snippet", "node": "component/code", "variation": "snippet-copy", "job": "Tabbed code snippets with a copy button on each."}
+{"id": "kibo-ui:spinner", "node": "atom/loader", "variation": "spinner", "job": "Spinning indicator showing that an activity is in progress."}
+{"id": "kibo-ui:status", "node": "atom/status-dot", "variation": "standard", "job": "Coloured dot and label showing a service's uptime status."}
+{"id": "kibo-ui:stories", "node": "component/carousel", "variation": "cards-carousel", "job": "Carousel of video cards presented like social stories."}
+{"id": "kibo-ui:table", "node": "component/table", "variation": "standard-table", "job": "Tabular view presenting rows of data in columns."}
+{"id": "kibo-ui:tags", "node": "atom/badge", "variation": "tag-chip", "job": "Labels applied to an item, shown as small tag chips."}
+{"id": "kibo-ui:theme-switcher", "node": "atom/switch", "variation": "theme-toggle", "job": "Switches between light, dark and system themes."}
+{"id": "kibo-ui:ticker", "node": "atom/layout", "variation": null, "job": "Scrolling finance ticker of symbols, prices and changes.", "edge": "infinite marquee strip"}
+{"id": "kibo-ui:tree", "node": "component/tree", "variation": "standard-tree", "job": "Nested tree with animated expand and collapse for nodes."}
+{"id": "kibo-ui:typography", "node": "atom/text", "variation": "body", "job": "Text primitive that renders typography in one consistent style."}
+{"id": "kibo-ui:video-player", "node": "component/player", "variation": "video-player", "job": "Video player with shadcn-styled controls built on media-chrome."}

@@ -1,0 +1,159 @@
+{"id": "react-aria:css", "node": null, "variation": null, "job": "Base stylesheet for the React Aria component styles"}
+{"id": "react-aria:css-breadcrumbs", "node": "component/breadcrumb", "variation": "text-breadcrumb", "job": "Breadcrumb trail showing location in the hierarchy"}
+{"id": "react-aria:css-button", "node": "atom/button", "variation": "primary", "job": "Standard button that triggers an action"}
+{"id": "react-aria:css-calendar", "node": "component/calendar", "variation": "month-calendar", "job": "Month calendar for choosing a single date"}
+{"id": "react-aria:css-checkbox", "node": "atom/choice", "variation": "checkbox", "job": "Checkbox turning one option on or off"}
+{"id": "react-aria:css-checkboxgroup", "node": "atom/choice", "variation": "group", "job": "Group of checkboxes for choosing several options"}
+{"id": "react-aria:css-colorarea", "node": "component/picker", "variation": "color-picker", "job": "Two-dimensional area for picking saturation and brightness"}
+{"id": "react-aria:css-colorfield", "node": "component/picker", "variation": "color-picker", "job": "Text field for typing a colour value"}
+{"id": "react-aria:css-colorpicker", "node": "component/picker", "variation": "color-picker", "job": "Full colour picker combining area, sliders and fields"}
+{"id": "react-aria:css-colorslider", "node": "atom/slider", "variation": "slider", "job": "Slider for one colour channel such as hue"}
+{"id": "react-aria:css-colorswatch", "node": "component/picker", "variation": null, "job": "Small square showing one colour value", "edge": "colour swatch chip"}
+{"id": "react-aria:css-colorswatchpicker", "node": "component/picker", "variation": "presets", "job": "Row of preset colour swatches to choose from"}
+{"id": "react-aria:css-colorthumb", "node": "component/picker", "variation": null, "job": "Draggable handle marking the chosen colour position", "edge": "colour thumb handle"}
+{"id": "react-aria:css-colorwheel", "node": "component/picker", "variation": "color-picker", "job": "Circular hue wheel for picking a colour"}
+{"id": "react-aria:css-combobox", "node": "component/select", "variation": "combobox", "job": "Text input with a dropdown list of options"}
+{"id": "react-aria:css-commandpalette", "node": "component/command", "variation": "command-palette", "job": "Command palette for searching and running actions"}
+{"id": "react-aria:css-content", "node": "atom/layout", "variation": null, "job": "Wrapper that lays out a component's content", "edge": "content wrapper"}
+{"id": "react-aria:css-datefield", "node": "component/picker", "variation": "segmented-input", "job": "Segmented field for typing a date part by part"}
+{"id": "react-aria:css-datepicker", "node": "component/picker", "variation": "date-picker", "job": "Date input with a calendar popover to pick a date"}
+{"id": "react-aria:css-daterangepicker", "node": "component/picker", "variation": "date-range", "job": "Date input with a popover to pick a date range"}
+{"id": "react-aria:css-dialog", "node": "component/dialog", "variation": "modal-dialog", "job": "Dialog box overlaying the page for a task"}
+{"id": "react-aria:css-disclosure", "node": "component/accordion", "variation": "collapsible", "job": "Single section that expands and collapses its content"}
+{"id": "react-aria:css-disclosuregroup", "node": "component/accordion", "variation": "standard-accordion", "job": "Group of disclosures forming an accordion"}
+{"id": "react-aria:css-dropzone", "node": "component/upload", "variation": "dropzone", "job": "Drop area accepting dragged files for upload"}
+{"id": "react-aria:css-form", "node": "component/form", "variation": "with-validation", "job": "Form wrapper that validates and submits fields"}
+{"id": "react-aria:css-gridlist", "node": "component/list", "variation": "standard-list", "job": "Keyboard-navigable list of rows and items"}
+{"id": "react-aria:css-inputgroup", "node": "component/field", "variation": "with-addon", "job": "Input with attached addon or button"}
+{"id": "react-aria:css-link", "node": "atom/link", "variation": "standard", "job": "Standard link to another page or target"}
+{"id": "react-aria:css-listbox", "node": "component/select", "variation": "standard-select", "job": "List of selectable options for a select"}
+{"id": "react-aria:css-menu", "node": "component/menu", "variation": "dropdown-menu", "job": "Dropdown menu of actions opened from a trigger"}
+{"id": "react-aria:css-meter", "node": "atom/progress", "variation": "meter-gauge", "job": "Meter showing a value within a known range"}
+{"id": "react-aria:css-modal", "node": "component/dialog", "variation": "modal-dialog", "job": "Modal overlay that holds a dialog above the page"}
+{"id": "react-aria:css-navigationtree", "node": "component/tree", "variation": "standard-tree", "job": "Expandable tree used for site navigation"}
+{"id": "react-aria:css-numberfield", "node": "component/field", "variation": "number-stepper", "job": "Number input with increment and decrement buttons"}
+{"id": "react-aria:css-popover", "node": "component/popover", "variation": "standard-popover", "job": "Floating panel anchored to a trigger element"}
+{"id": "react-aria:css-progressbar", "node": "atom/progress", "variation": "linear", "job": "Linear bar showing how far a task has progressed"}
+{"id": "react-aria:css-progresscircle", "node": "atom/progress", "variation": "circular", "job": "Circular ring showing how far a task has progressed"}
+{"id": "react-aria:css-radiogroup", "node": "atom/choice", "variation": "radio", "job": "Radio group choosing one option from several"}
+{"id": "react-aria:css-rangecalendar", "node": "component/calendar", "variation": "range-picker", "job": "Calendar for choosing a start and end date"}
+{"id": "react-aria:css-searchfield", "node": "component/search", "variation": "search-field", "job": "Search input with a clear button"}
+{"id": "react-aria:css-segmentedcontrol", "node": "atom/switch", "variation": "segmented", "job": "Segmented control choosing one option"}
+{"id": "react-aria:css-select", "node": "component/select", "variation": "standard-select", "job": "Dropdown select to choose one option"}
+{"id": "react-aria:css-separator", "node": "atom/layout", "variation": null, "job": "Horizontal and vertical divider line between sections", "edge": "separator line"}
+{"id": "react-aria:css-sheet", "node": "component/sheet", "variation": "side-sheet", "job": "Sheet sliding in from the side of the screen"}
+{"id": "react-aria:css-slider", "node": "atom/slider", "variation": "slider", "job": "Slider for picking a value along a range"}
+{"id": "react-aria:css-switch", "node": "atom/switch", "variation": "standard", "job": "On or off switch toggling a setting"}
+{"id": "react-aria:css-table", "node": "component/table", "variation": "standard-table", "job": "Basic table of rows and columns"}
+{"id": "react-aria:css-tabs", "node": "component/tabs", "variation": "underline", "job": "Basic tabs switching between panels"}
+{"id": "react-aria:css-taggroup", "node": "atom/badge", "variation": "tag-chip", "job": "Group of removable tag chips showing labels"}
+{"id": "react-aria:css-textfield", "node": "component/field", "variation": "text-input", "job": "Labelled single-line text field with description"}
+{"id": "react-aria:css-timefield", "node": "component/picker", "variation": "segmented-input", "job": "Segmented field for typing a time part by part"}
+{"id": "react-aria:css-toast", "node": "component/toast", "variation": "basic-toast", "job": "Basic toast notification with title and description"}
+{"id": "react-aria:css-togglebutton", "node": "atom/switch", "variation": "toggle-button", "job": "Pressable on-off toggle button"}
+{"id": "react-aria:css-togglebuttongroup", "node": "atom/switch", "variation": "toggle-group", "job": "Group of toggle buttons where one or more can be on"}
+{"id": "react-aria:css-tokenfield", "node": "component/tags", "variation": "token-input", "job": "Input that turns entries into removable tokens"}
+{"id": "react-aria:css-toolbar", "node": "component/dock", "variation": "action-toolbar", "job": "Toolbar grouping buttons and controls for actions"}
+{"id": "react-aria:css-tooltip", "node": "atom/tooltip", "variation": "standard", "job": "Basic tooltip shown on hover or focus"}
+{"id": "react-aria:css-tree", "node": "component/tree", "variation": "standard-tree", "job": "Expandable tree of nested items"}
+{"id": "react-aria:hooks", "node": null, "variation": null, "job": "Collection of hooks supporting the styled components"}
+{"id": "react-aria:hooks-breadcrumbs", "node": null, "variation": null, "job": "Hook logic behind the breadcrumb component"}
+{"id": "react-aria:hooks-button", "node": null, "variation": null, "job": "headless button press and focus behaviour hook"}
+{"id": "react-aria:hooks-calendar", "node": null, "variation": null, "job": "headless calendar grid keyboard and date behaviour hook"}
+{"id": "react-aria:hooks-checkbox", "node": null, "variation": null, "job": "headless checkbox state and accessibility hook"}
+{"id": "react-aria:hooks-checkboxgroup", "node": null, "variation": null, "job": "headless checkbox group state and accessibility hook"}
+{"id": "react-aria:hooks-colorarea", "node": null, "variation": null, "job": "headless two-axis colour area interaction hook"}
+{"id": "react-aria:hooks-colorfield", "node": null, "variation": null, "job": "headless colour text field state hook"}
+{"id": "react-aria:hooks-colorslider", "node": null, "variation": null, "job": "headless colour channel slider interaction hook"}
+{"id": "react-aria:hooks-colorswatch", "node": null, "variation": null, "job": "headless colour swatch display hook"}
+{"id": "react-aria:hooks-colorwheel", "node": null, "variation": null, "job": "headless colour wheel hue interaction hook"}
+{"id": "react-aria:hooks-combobox", "node": null, "variation": null, "job": "headless combobox filtering and state hook"}
+{"id": "react-aria:hooks-datefield", "node": null, "variation": null, "job": "headless segmented date field state hook"}
+{"id": "react-aria:hooks-datepicker", "node": null, "variation": null, "job": "headless date picker state hook"}
+{"id": "react-aria:hooks-daterangepicker", "node": null, "variation": null, "job": "headless date range picker state hook"}
+{"id": "react-aria:hooks-disclosure", "node": null, "variation": null, "job": "headless expand and collapse state hook"}
+{"id": "react-aria:hooks-dropdownlistbox", "node": null, "variation": null, "job": "headless dropdown listbox behaviour hook"}
+{"id": "react-aria:hooks-gridlist", "node": null, "variation": null, "job": "headless grid list selection and keyboard hook"}
+{"id": "react-aria:hooks-link", "node": null, "variation": null, "job": "headless link press and navigation hook"}
+{"id": "react-aria:hooks-listbox", "node": null, "variation": null, "job": "headless listbox selection and keyboard hook"}
+{"id": "react-aria:hooks-menu", "node": null, "variation": null, "job": "headless menu trigger and keyboard hook"}
+{"id": "react-aria:hooks-meter", "node": null, "variation": null, "job": "headless meter value and label hook"}
+{"id": "react-aria:hooks-modal", "node": null, "variation": null, "job": "headless modal focus trap and overlay hook"}
+{"id": "react-aria:hooks-numberfield", "node": null, "variation": null, "job": "headless number input state and stepping hook"}
+{"id": "react-aria:hooks-popover", "node": null, "variation": null, "job": "headless popover positioning and dismissal hook"}
+{"id": "react-aria:hooks-progressbar", "node": null, "variation": null, "job": "headless progress value and label hook"}
+{"id": "react-aria:hooks-radiogroup", "node": null, "variation": null, "job": "headless radio group selection and keyboard hook"}
+{"id": "react-aria:hooks-rangecalendar", "node": null, "variation": null, "job": "headless range calendar selection hook"}
+{"id": "react-aria:hooks-searchfield", "node": null, "variation": null, "job": "headless search field state and clear hook"}
+{"id": "react-aria:hooks-select", "node": null, "variation": null, "job": "headless select trigger and state hook"}
+{"id": "react-aria:hooks-separator", "node": null, "variation": null, "job": "headless separator semantics hook"}
+{"id": "react-aria:hooks-slider", "node": null, "variation": null, "job": "headless slider value and drag hook"}
+{"id": "react-aria:hooks-switch", "node": null, "variation": null, "job": "headless switch toggle state hook"}
+{"id": "react-aria:hooks-table", "node": null, "variation": null, "job": "headless table selection and sorting hook"}
+{"id": "react-aria:hooks-tabs", "node": null, "variation": null, "job": "headless tab selection and keyboard hook"}
+{"id": "react-aria:hooks-taggroup", "node": null, "variation": null, "job": "headless tag group selection and removal hook"}
+{"id": "react-aria:hooks-textfield", "node": null, "variation": null, "job": "headless text field state and validation hook"}
+{"id": "react-aria:hooks-timefield", "node": null, "variation": null, "job": "headless segmented time field state hook"}
+{"id": "react-aria:hooks-toast", "node": null, "variation": null, "job": "headless toast queue and timing hook"}
+{"id": "react-aria:hooks-togglebutton", "node": null, "variation": null, "job": "headless toggle button state hook"}
+{"id": "react-aria:hooks-togglebuttongroup", "node": null, "variation": null, "job": "headless toggle button group selection hook"}
+{"id": "react-aria:hooks-toolbar", "node": null, "variation": null, "job": "headless toolbar keyboard navigation hook"}
+{"id": "react-aria:hooks-tooltip", "node": null, "variation": null, "job": "headless tooltip trigger timing hook"}
+{"id": "react-aria:tailwind", "node": null, "variation": null, "job": "base Tailwind style theme file for react-aria components"}
+{"id": "react-aria:tailwind-alertdialog", "node": "component/dialog", "variation": "confirm-alert", "job": "styled alert dialog asking to confirm an action"}
+{"id": "react-aria:tailwind-breadcrumbs", "node": "component/breadcrumb", "variation": "text-breadcrumb", "job": "styled breadcrumb trail showing location path"}
+{"id": "react-aria:tailwind-button", "node": "atom/button", "variation": "primary", "job": "styled button that triggers an action"}
+{"id": "react-aria:tailwind-calendar", "node": "component/calendar", "variation": "month-calendar", "job": "styled month calendar for picking a single date"}
+{"id": "react-aria:tailwind-checkbox", "node": "atom/choice", "variation": "checkbox", "job": "styled checkbox for choosing an option on or off"}
+{"id": "react-aria:tailwind-checkboxgroup", "node": "atom/choice", "variation": "group", "job": "styled group of checkboxes for choosing several options"}
+{"id": "react-aria:tailwind-colorarea", "node": "component/picker", "variation": "color-picker", "job": "styled two-axis area for picking a colour"}
+{"id": "react-aria:tailwind-colorfield", "node": "component/picker", "variation": "color-picker", "job": "styled text field for entering a colour value"}
+{"id": "react-aria:tailwind-colorpicker", "node": "component/picker", "variation": "color-picker", "job": "styled colour picker with popover and channels"}
+{"id": "react-aria:tailwind-colorslider", "node": "atom/slider", "variation": "slider", "job": "styled slider for adjusting one colour channel"}
+{"id": "react-aria:tailwind-colorswatch", "node": "component/picker", "variation": "color-picker", "job": "styled colour chip showing the chosen colour"}
+{"id": "react-aria:tailwind-colorswatchpicker", "node": "component/picker", "variation": "color-picker", "job": "styled grid of colour swatches to pick from"}
+{"id": "react-aria:tailwind-colorthumb", "node": "component/picker", "variation": "color-picker", "job": "styled draggable thumb marking the colour position"}
+{"id": "react-aria:tailwind-colorwheel", "node": "component/picker", "variation": "color-picker", "job": "styled hue wheel for picking a colour"}
+{"id": "react-aria:tailwind-combobox", "node": "component/select", "variation": "combobox", "job": "styled combobox that filters options as you type"}
+{"id": "react-aria:tailwind-commandpalette", "node": "component/command", "variation": "command-palette", "job": "styled command palette for searching and running actions"}
+{"id": "react-aria:tailwind-datefield", "node": "component/picker", "variation": "date-picker", "job": "styled segmented field for typing a date"}
+{"id": "react-aria:tailwind-datepicker", "node": "component/picker", "variation": "date-picker", "job": "styled date picker with calendar popover"}
+{"id": "react-aria:tailwind-daterangepicker", "node": "component/picker", "variation": "date-range", "job": "styled date range picker with start and end dates"}
+{"id": "react-aria:tailwind-dialog", "node": "component/dialog", "variation": "modal-dialog", "job": "styled dialog box shown over the page"}
+{"id": "react-aria:tailwind-disclosure", "node": "component/accordion", "variation": "collapsible", "job": "styled expandable section that shows or hides content"}
+{"id": "react-aria:tailwind-disclosuregroup", "node": "component/accordion", "variation": "standard-accordion", "job": "styled group of expandable sections, one open at a time"}
+{"id": "react-aria:tailwind-dropzone", "node": "component/upload", "variation": "dropzone", "job": "styled drop area for dragging files to upload"}
+{"id": "react-aria:tailwind-field", "node": "component/field", "variation": "text-input", "job": "styled labelled field wrapper with description and error text"}
+{"id": "react-aria:tailwind-fieldbutton", "node": "atom/button", "variation": "icon-button", "job": "small icon button placed inside a text field"}
+{"id": "react-aria:tailwind-form", "node": "component/form", "variation": "with-validation", "job": "styled form container that validates its fields"}
+{"id": "react-aria:tailwind-gridlist", "node": "component/list", "variation": "standard-list", "job": "styled selectable list of items in a grid"}
+{"id": "react-aria:tailwind-link", "node": "atom/link", "variation": "standard", "job": "styled link that goes to another page"}
+{"id": "react-aria:tailwind-listbox", "node": "component/select", "variation": "standard-select", "job": "styled listbox of options to choose from"}
+{"id": "react-aria:tailwind-menu", "node": "component/menu", "variation": "dropdown-menu", "job": "styled menu of actions opened from a trigger"}
+{"id": "react-aria:tailwind-meter", "node": "atom/progress", "variation": "meter-gauge", "job": "styled meter showing a value within a range"}
+{"id": "react-aria:tailwind-modal", "node": "component/dialog", "variation": "modal-dialog", "job": "styled modal overlay that blocks the page behind it"}
+{"id": "react-aria:tailwind-navigationtree", "node": "component/tree", "variation": "standard-tree", "job": "styled navigation tree of nested links"}
+{"id": "react-aria:tailwind-numberfield", "node": "atom/text-input", "variation": "stepper", "job": "styled number input with increment and decrement buttons"}
+{"id": "react-aria:tailwind-popover", "node": "component/popover", "variation": "standard-popover", "job": "styled floating panel anchored to a trigger"}
+{"id": "react-aria:tailwind-progressbar", "node": "atom/progress", "variation": "linear", "job": "styled bar showing how far a task has got"}
+{"id": "react-aria:tailwind-radiogroup", "node": "atom/choice", "variation": "group", "job": "styled group of radio buttons for choosing one option"}
+{"id": "react-aria:tailwind-rangecalendar", "node": "component/calendar", "variation": "range-picker", "job": "styled calendar for picking a start and end date"}
+{"id": "react-aria:tailwind-searchfield", "node": "component/search", "variation": "search-field", "job": "styled search input with a clear button"}
+{"id": "react-aria:tailwind-select", "node": "component/select", "variation": "standard-select", "job": "styled dropdown select for choosing one option"}
+{"id": "react-aria:tailwind-separator", "node": "atom/layout", "variation": null, "job": "styled thin line separating parts of a layout", "edge": "plain divider"}
+{"id": "react-aria:tailwind-sheet", "node": "component/sheet", "variation": "side-sheet", "job": "styled panel that slides in from the edge"}
+{"id": "react-aria:tailwind-slider", "node": "atom/slider", "variation": "slider", "job": "styled slider for picking a value along a range"}
+{"id": "react-aria:tailwind-switch", "node": "atom/switch", "variation": "standard", "job": "styled switch that turns a setting on or off"}
+{"id": "react-aria:tailwind-table", "node": "component/table", "variation": "standard-table", "job": "styled table of rows and columns with selection"}
+{"id": "react-aria:tailwind-tabs", "node": "component/tabs", "variation": "underline", "job": "styled tabs switching between panels"}
+{"id": "react-aria:tailwind-taggroup", "node": "atom/badge", "variation": "tag-chip", "job": "styled group of removable tag chips"}
+{"id": "react-aria:tailwind-textfield", "node": "component/field", "variation": "text-input", "job": "styled labelled text input with validation messages"}
+{"id": "react-aria:tailwind-timefield", "node": "component/picker", "variation": "time-picker", "job": "styled segmented field for typing a time"}
+{"id": "react-aria:tailwind-toast", "node": "component/toast", "variation": "basic-toast", "job": "styled short message that appears and dismisses itself"}
+{"id": "react-aria:tailwind-togglebutton", "node": "atom/button", "variation": "toggle", "job": "styled button that stays pressed when switched on"}
+{"id": "react-aria:tailwind-togglebuttongroup", "node": "atom/switch", "variation": "toggle-group", "job": "styled group of toggle buttons sharing one selection"}
+{"id": "react-aria:tailwind-tokenfield", "node": "component/tags", "variation": "token-input", "job": "styled input that turns entries into removable tokens"}
+{"id": "react-aria:tailwind-toolbar", "node": "component/dock", "variation": "action-toolbar", "job": "styled row of action controls with keyboard navigation"}
+{"id": "react-aria:tailwind-tooltip", "node": "atom/tooltip", "variation": "standard", "job": "styled hint shown when hovering a control"}
+{"id": "react-aria:tailwind-tree", "node": "component/tree", "variation": "standard-tree", "job": "styled tree of expandable nested items"}
+{"id": "react-aria:tailwind-utils", "node": null, "variation": null, "job": "shared class-name helper utilities for the Tailwind components"}

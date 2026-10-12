@@ -1,0 +1,7122 @@
+{
+ "id": "operator",
+ "name": "Operator app",
+ "sha": "fce0976671",
+ "pages": [
+  {
+   "name": "App",
+   "file": "src/App.tsx",
+   "loc": 359,
+   "components": [
+    {
+     "name": "AccountLoginDialog",
+     "file": "src/components/board/AccountLoginDialog.tsx",
+     "status": "needs-pick",
+     "grade": "ok",
+     "swapTo": "arc:dialog",
+     "why": [],
+     "loc": 127
+    },
+    {
+     "name": "AdminHelpPopover",
+     "file": "src/components/board/AdminHelpPopover.tsx",
+     "status": "needs-pick",
+     "grade": "ok",
+     "swapTo": "arc:popover",
+     "why": [],
+     "loc": 230
+    },
+    {
+     "name": "Avatar",
+     "file": "src/components/board/Avatar.tsx",
+     "status": "needs-pick",
+     "grade": "ok",
+     "swapTo": "arc:avatar",
+     "why": [],
+     "loc": 8
+    },
+    {
+     "name": "Breadcrumb",
+     "file": "src/components/board/Breadcrumb.tsx",
+     "status": "needs-pick",
+     "grade": "ok",
+     "swapTo": "arc:breadcrumb",
+     "why": [],
+     "loc": 39
+    },
+    {
+     "name": "HostStats",
+     "file": "src/components/board/HostStats.tsx",
+     "status": "needs-pick",
+     "grade": "ok",
+     "swapTo": "arc:metric-card",
+     "why": [],
+     "loc": 164
+    },
+    {
+     "name": "SessionsTable",
+     "file": "src/components/board/SessionsTable.tsx",
+     "status": "needs-pick",
+     "grade": "ok",
+     "swapTo": "arc:sortable-data-table",
+     "why": [
+      "iterated 8 days, kept",
+      "- 1 clickable div"
+     ],
+     "loc": 39
+    },
+    {
+     "name": "VpsDesktopDialog",
+     "file": "src/components/board/VpsDesktopDialog.tsx",
+     "status": "needs-pick",
+     "grade": "ok",
+     "swapTo": "arc:dialog",
+     "why": [],
+     "loc": 86
+    },
+    {
+     "name": "WorkspaceNotifications",
+     "file": "src/components/board/WorkspaceNotifications.tsx",
+     "status": "needs-pick",
+     "grade": "good",
+     "swapTo": "arc:toast",
+     "why": [
+      "iterated 7 days, kept"
+     ],
+     "loc": 93
+    },
+    {
+     "name": "bell",
+     "file": "src/components/board/icons/pq/bell.tsx",
+     "status": "needs-pick",
+     "grade": "weak",
+     "swapTo": "arc:notification-center",
+     "why": [
+      "- motion without reduced-motion"
+     ],
+     "loc": 94
+    },
+    {
+     "name": "dialog",
+     "file": "src/components/ui/dialog.tsx",
+     "status": "needs-pick",
+     "grade": "good",
+     "swapTo": "arc:dialog",
+     "why": [
+      "from shadcn"
+     ],
+     "loc": 159
+    },
+    {
+     "name": "sheet",
+     "file": "src/components/ui/sheet.tsx",
+     "status": "needs-pick",
+     "grade": "good",
+     "swapTo": "arc:drawer",
+     "why": [
+      "from shadcn"
+     ],
+     "loc": 137
+    },
+    {
+     "name": "skeleton",
+     "file": "src/components/ui/skeleton.tsx",
+     "status": "needs-pick",
+     "grade": "good",
+     "swapTo": "arc:skeleton",
+     "why": [
+      "from shadcn"
+     ],
+     "loc": 14
+    },
+    {
+     "name": "tooltip",
+     "file": "src/components/ui/tooltip.tsx",
+     "status": "needs-pick",
+     "grade": "good",
+     "swapTo": "arc:tooltip",
+     "why": [
+      "from shadcn"
+     ],
+     "loc": 67
+    },
+    {
+     "name": "ConfirmDialog",
+     "file": "src/ui/ConfirmDialog.tsx",
+     "status": "needs-pick",
+     "grade": "ok",
+     "swapTo": "arc:dialog",
+     "why": [],
+     "loc": 20
+    },
+    {
+     "name": "EmptyArt",
+     "file": "src/ui/EmptyArt.tsx",
+     "status": "needs-pick",
+     "grade": "ok",
+     "swapTo": "arc:empty-state",
+     "why": [],
+     "loc": 42
+    },
+    {
+     "name": "EmptyState",
+     "file": "src/ui/EmptyState.tsx",
+     "status": "needs-pick",
+     "grade": "good",
+     "swapTo": "arc:empty-state",
+     "why": [
+      "iterated 3 days, kept"
+     ],
+     "loc": 35
+    },
+    {
+     "name": "MonthCalendar",
+     "file": "src/ui/MonthCalendar.tsx",
+     "status": "needs-pick",
+     "grade": "ok",
+     "swapTo": "arc:date-picker",
+     "why": [],
+     "loc": 124
+    },
+    {
+     "name": "Popover",
+     "file": "src/ui/Popover.tsx",
+     "status": "needs-pick",
+     "grade": "ok",
+     "swapTo": "arc:popover",
+     "why": [],
+     "loc": 44
+    },
+    {
+     "name": "StatTile",
+     "file": "src/ui/StatTile.tsx",
+     "status": "needs-pick",
+     "grade": "ok",
+     "swapTo": "arc:metric-card",
+     "why": [],
+     "loc": 35
+    },
+    {
+     "name": "Tabs",
+     "file": "src/ui/Tabs.tsx",
+     "status": "needs-pick",
+     "grade": "good",
+     "swapTo": "arc:tabs",
+     "why": [
+      "iterated 3 days, kept"
+     ],
+     "loc": 55
+    },
+    {
+     "name": "Toast",
+     "file": "src/ui/Toast.tsx",
+     "status": "needs-pick",
+     "grade": "ok",
+     "swapTo": "arc:toast",
+     "why": [],
+     "loc": 147
+    },
+    {
+     "name": "AreaMetric",
+     "file": "src/ui/bank/AreaMetric.tsx",
+     "status": "needs-pick",
+     "grade": "ok",
+     "swapTo": "arc:metric-card",
+     "why": [],
+     "loc": 22
+    },
+    {
+     "name": "MetricTrend",
+     "file": "src/ui/bank/MetricTrend.tsx",
+     "status": "needs-pick",
+     "grade": "ok",
+     "swapTo": "arc:metric-card",
+     "why": [],
+     "loc": 17
+    },
+    {
+     "name": "ViewSwitch",
+     "file": "src/ui/grid/ViewSwitch.tsx",
+     "status": "needs-pick",
+     "grade": "ok",
+     "swapTo": "arc:switch",
+     "why": [],
+     "loc": 25
+    },
+    {
+     "name": "ContextHelp",
+     "file": "src/components/board/ContextHelp.tsx",
+     "status": "ours",
+     "grade": "good",
+     "swapTo": null,
+     "why": [
+      "iterated 6 days, kept"
+     ],
+     "loc": 104
+    },
+    {
+     "name": "EarningsChart",
+     "file": "src/components/board/EarningsChart.tsx",
+     "status": "ours",
+     "grade": "good",
+     "swapTo": null,
+     "why": [
+      "iterated 9 days, kept"
+     ],
+     "loc": 78
+    },
+    {
+     "name": "EvidenceBits",
+     "file": "src/components/board/EvidenceBits.tsx",
+     "status": "ours",
+     "grade": "good",
+     "swapTo": null,
+     "why": [
+      "iterated 3 days, kept"
+     ],
+     "loc": 147
+    },
+    {
+     "name": "GroupedRail",
+     "file": "src/components/board/GroupedRail.tsx",
+     "status": "ours",
+     "grade": "good",
+     "swapTo": null,
+     "why": [
+      "iterated 6 days, kept"
+     ],
+     "loc": 425
+    },
+    {
+     "name": "HlsVideo",
+     "file": "src/components/board/HlsVideo.tsx",
+     "status": "ours",
+     "grade": "good",
+     "swapTo": null,
+     "why": [
+      "iterated 3 days, kept"
+     ],
+     "loc": 90
+    },
+    {
+     "name": "OperatorSurface",
+     "file": "src/components/board/OperatorSurface.tsx",
+     "status": "ours",
+     "grade": "good",
+     "swapTo": null,
+     "why": [
+      "iterated 6 days, kept"
+     ],
+     "loc": 123
+    },
+    {
+     "name": "PlatformGlyph",
+     "file": "src/components/board/PlatformGlyph.tsx",
+     "status": "ours",
+     "grade": "weak",
+     "swapTo": null,
+     "why": [
+      "- 7 hard-coded colours"
+     ],
+     "loc": 88
+    },
+    {
+     "name": "RecordFields",
+     "file": "src/components/board/RecordFields.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 102
+    },
+    {
+     "name": "SeedBadge",
+     "file": "src/components/board/SeedBadge.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 9
+    },
+    {
+     "name": "SessionDrafts",
+     "file": "src/components/board/SessionDrafts.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 46
+    },
+    {
+     "name": "SessionRecordings",
+     "file": "src/components/board/SessionRecordings.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 229
+    },
+    {
+     "name": "SourceLine",
+     "file": "src/components/board/SourceLine.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 62
+    },
+    {
+     "name": "StatusBits",
+     "file": "src/components/board/StatusBits.tsx",
+     "status": "ours",
+     "grade": "good",
+     "swapTo": null,
+     "why": [
+      "iterated 4 days, kept"
+     ],
+     "loc": 59
+    },
+    {
+     "name": "TokenRevoke",
+     "file": "src/components/board/TokenRevoke.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 137
+    },
+    {
+     "name": "TutorialPlayer",
+     "file": "src/components/board/TutorialPlayer.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 162
+    },
+    {
+     "name": "WorkspaceQuickJump",
+     "file": "src/components/board/WorkspaceQuickJump.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [
+      "iterated 6 days, kept",
+      "- 1 emoji",
+      "- motion without reduced-motion"
+     ],
+     "loc": 270
+    },
+    {
+     "name": "badge-alert",
+     "file": "src/components/board/icons/pq/badge-alert.tsx",
+     "status": "ours",
+     "grade": "weak",
+     "swapTo": null,
+     "why": [
+      "- motion without reduced-motion"
+     ],
+     "loc": 99
+    },
+    {
+     "name": "chart-column-increasing",
+     "file": "src/components/board/icons/pq/chart-column-increasing.tsx",
+     "status": "ours",
+     "grade": "weak",
+     "swapTo": null,
+     "why": [
+      "- motion without reduced-motion"
+     ],
+     "loc": 131
+    },
+    {
+     "name": "clock",
+     "file": "src/components/board/icons/pq/clock.tsx",
+     "status": "ours",
+     "grade": "weak",
+     "swapTo": null,
+     "why": [
+      "- motion without reduced-motion"
+     ],
+     "loc": 100
+    },
+    {
+     "name": "hand-coins",
+     "file": "src/components/board/icons/pq/hand-coins.tsx",
+     "status": "ours",
+     "grade": "weak",
+     "swapTo": null,
+     "why": [
+      "- motion without reduced-motion"
+     ],
+     "loc": 151
+    },
+    {
+     "name": "home",
+     "file": "src/components/board/icons/pq/home.tsx",
+     "status": "ours",
+     "grade": "weak",
+     "swapTo": null,
+     "why": [
+      "- motion without reduced-motion"
+     ],
+     "loc": 104
+    },
+    {
+     "name": "panel-left-close",
+     "file": "src/components/board/icons/pq/panel-left-close.tsx",
+     "status": "ours",
+     "grade": "weak",
+     "swapTo": null,
+     "why": [
+      "- motion without reduced-motion"
+     ],
+     "loc": 100
+    },
+    {
+     "name": "panel-left-open",
+     "file": "src/components/board/icons/pq/panel-left-open.tsx",
+     "status": "ours",
+     "grade": "weak",
+     "swapTo": null,
+     "why": [
+      "- motion without reduced-motion"
+     ],
+     "loc": 100
+    },
+    {
+     "name": "radio",
+     "file": "src/components/board/icons/pq/radio.tsx",
+     "status": "ours",
+     "grade": "weak",
+     "swapTo": null,
+     "why": [
+      "- motion without reduced-motion"
+     ],
+     "loc": 137
+    },
+    {
+     "name": "search",
+     "file": "src/components/board/icons/pq/search.tsx",
+     "status": "ours",
+     "grade": "weak",
+     "swapTo": null,
+     "why": [
+      "- motion without reduced-motion"
+     ],
+     "loc": 95
+    },
+    {
+     "name": "settings",
+     "file": "src/components/board/icons/pq/settings.tsx",
+     "status": "ours",
+     "grade": "weak",
+     "swapTo": null,
+     "why": [
+      "- motion without reduced-motion"
+     ],
+     "loc": 93
+    },
+    {
+     "name": "shield-check",
+     "file": "src/components/board/icons/pq/shield-check.tsx",
+     "status": "ours",
+     "grade": "weak",
+     "swapTo": null,
+     "why": [
+      "- motion without reduced-motion"
+     ],
+     "loc": 100
+    },
+    {
+     "name": "user-plus",
+     "file": "src/components/board/icons/pq/user-plus.tsx",
+     "status": "ours",
+     "grade": "weak",
+     "swapTo": null,
+     "why": [
+      "- motion without reduced-motion"
+     ],
+     "loc": 116
+    },
+    {
+     "name": "users",
+     "file": "src/components/board/icons/pq/users.tsx",
+     "status": "ours",
+     "grade": "weak",
+     "swapTo": null,
+     "why": [
+      "- motion without reduced-motion"
+     ],
+     "loc": 114
+    },
+    {
+     "name": "railIcons",
+     "file": "src/components/board/icons/railIcons.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 50
+    },
+    {
+     "name": "DevHub",
+     "file": "src/components/devhub/DevHub.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 34
+    },
+    {
+     "name": "DocsHub",
+     "file": "src/components/devhub/DocsHub.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 42
+    },
+    {
+     "name": "OracleAreaMenu",
+     "file": "src/components/devhub/OracleAreaMenu.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 52
+    },
+    {
+     "name": "AccountPage",
+     "file": "src/components/screens/AccountPage.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [
+      "iterated 9 days, kept",
+      "- 1 clickable div"
+     ],
+     "loc": 321
+    },
+    {
+     "name": "ActivationApproval",
+     "file": "src/components/screens/ActivationApproval.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 50
+    },
+    {
+     "name": "CasesScreen",
+     "file": "src/components/screens/CasesScreen.tsx",
+     "status": "ours",
+     "grade": "good",
+     "swapTo": null,
+     "why": [
+      "iterated 16 days, kept"
+     ],
+     "loc": 507
+    },
+    {
+     "name": "ChangesScreen",
+     "file": "src/components/screens/ChangesScreen.tsx",
+     "status": "ours",
+     "grade": "good",
+     "swapTo": null,
+     "why": [
+      "iterated 7 days, kept"
+     ],
+     "loc": 93
+    },
+    {
+     "name": "DiagnosticsScreen",
+     "file": "src/components/screens/DiagnosticsScreen.tsx",
+     "status": "ours",
+     "grade": "good",
+     "swapTo": null,
+     "why": [
+      "iterated 8 days, kept"
+     ],
+     "loc": 263
+    },
+    {
+     "name": "FleetEarnings",
+     "file": "src/components/screens/FleetEarnings.tsx",
+     "status": "ours",
+     "grade": "good",
+     "swapTo": null,
+     "why": [
+      "iterated 10 days, kept"
+     ],
+     "loc": 163
+    },
+    {
+     "name": "HomeQueue",
+     "file": "src/components/screens/HomeQueue.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [
+      "iterated 15 days, kept",
+      "- 1 clickable div"
+     ],
+     "loc": 180
+    },
+    {
+     "name": "Leaderboard",
+     "file": "src/components/screens/Leaderboard.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 394
+    },
+    {
+     "name": "ModelLiveWindow",
+     "file": "src/components/screens/ModelLiveWindow.tsx",
+     "status": "ours",
+     "grade": "good",
+     "swapTo": null,
+     "why": [
+      "iterated 5 days, kept"
+     ],
+     "loc": 91
+    },
+    {
+     "name": "ModelRecord",
+     "file": "src/components/screens/ModelRecord.tsx",
+     "status": "ours",
+     "grade": "good",
+     "swapTo": null,
+     "why": [
+      "iterated 18 days, kept"
+     ],
+     "loc": 555
+    },
+    {
+     "name": "ModelSetup",
+     "file": "src/components/screens/ModelSetup.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 239
+    },
+    {
+     "name": "ModelsRoster",
+     "file": "src/components/screens/ModelsRoster.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [
+      "iterated 16 days, kept",
+      "- 2 clickable div"
+     ],
+     "loc": 649
+    },
+    {
+     "name": "NeedsYou",
+     "file": "src/components/screens/NeedsYou.tsx",
+     "status": "ours",
+     "grade": "good",
+     "swapTo": null,
+     "why": [
+      "iterated 8 days, kept"
+     ],
+     "loc": 258
+    },
+    {
+     "name": "NotificationsScreen",
+     "file": "src/components/screens/NotificationsScreen.tsx",
+     "status": "ours",
+     "grade": "good",
+     "swapTo": null,
+     "why": [
+      "iterated 6 days, kept"
+     ],
+     "loc": 54
+    },
+    {
+     "name": "OnboardingAccountEntry",
+     "file": "src/components/screens/OnboardingAccountEntry.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 57
+    },
+    {
+     "name": "OnboardingBoard",
+     "file": "src/components/screens/OnboardingBoard.tsx",
+     "status": "ours",
+     "grade": "good",
+     "swapTo": null,
+     "why": [
+      "iterated 21 days, kept"
+     ],
+     "loc": 207
+    },
+    {
+     "name": "OnboardingCreator",
+     "file": "src/components/screens/OnboardingCreator.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [
+      "iterated 11 days, kept",
+      "- 1 emoji"
+     ],
+     "loc": 1017
+    },
+    {
+     "name": "OnboardingPreparation",
+     "file": "src/components/screens/OnboardingPreparation.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 86
+    },
+    {
+     "name": "OnboardingStepPage",
+     "file": "src/components/screens/OnboardingStepPage.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 417
+    },
+    {
+     "name": "PerformancePeriod",
+     "file": "src/components/screens/PerformancePeriod.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 51
+    },
+    {
+     "name": "ProductReadiness",
+     "file": "src/components/screens/ProductReadiness.tsx",
+     "status": "ours",
+     "grade": "good",
+     "swapTo": null,
+     "why": [
+      "iterated 6 days, kept"
+     ],
+     "loc": 61
+    },
+    {
+     "name": "SessionDetail",
+     "file": "src/components/screens/SessionDetail.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [
+      "iterated 12 days, kept",
+      "- 7 hard-coded colours"
+     ],
+     "loc": 235
+    },
+    {
+     "name": "SessionTotals",
+     "file": "src/components/screens/SessionTotals.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 30
+    },
+    {
+     "name": "SessionsList",
+     "file": "src/components/screens/SessionsList.tsx",
+     "status": "ours",
+     "grade": "good",
+     "swapTo": null,
+     "why": [
+      "iterated 14 days, kept"
+     ],
+     "loc": 176
+    },
+    {
+     "name": "SetupBar",
+     "file": "src/components/screens/SetupBar.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 102
+    },
+    {
+     "name": "StreamsDesk",
+     "file": "src/components/screens/StreamsDesk.tsx",
+     "status": "ours",
+     "grade": "good",
+     "swapTo": null,
+     "why": [
+      "iterated 6 days, kept"
+     ],
+     "loc": 597
+    },
+    {
+     "name": "TodayLiveWall",
+     "file": "src/components/screens/TodayLiveWall.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [
+      "iterated 10 days, kept",
+      "- 1 clickable div"
+     ],
+     "loc": 313
+    },
+    {
+     "name": "TodayTotals",
+     "file": "src/components/screens/TodayTotals.tsx",
+     "status": "ours",
+     "grade": "good",
+     "swapTo": null,
+     "why": [
+      "iterated 4 days, kept"
+     ],
+     "loc": 172
+    },
+    {
+     "name": "ActionMenu",
+     "file": "src/ui/ActionMenu.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 15
+    },
+    {
+     "name": "Card",
+     "file": "src/ui/Card.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 40
+    },
+    {
+     "name": "CardGrid",
+     "file": "src/ui/CardGrid.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 27
+    },
+    {
+     "name": "DraftGuard",
+     "file": "src/ui/DraftGuard.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 32
+    },
+    {
+     "name": "Row",
+     "file": "src/ui/Row.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 55
+    },
+    {
+     "name": "Segmented",
+     "file": "src/ui/Segmented.tsx",
+     "status": "ours",
+     "grade": "good",
+     "swapTo": null,
+     "why": [
+      "iterated 3 days, kept"
+     ],
+     "loc": 76
+    },
+    {
+     "name": "StatusBadge",
+     "file": "src/ui/StatusBadge.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 97
+    },
+    {
+     "name": "OpportunityCard",
+     "file": "src/ui/bank/OpportunityCard.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 26
+    },
+    {
+     "name": "AddField",
+     "file": "src/ui/grid/AddField.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 99
+    },
+    {
+     "name": "Cards",
+     "file": "src/ui/grid/Cards.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 163
+    },
+    {
+     "name": "FilterBar",
+     "file": "src/ui/grid/FilterBar.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 88
+    },
+    {
+     "name": "FilterBuilder",
+     "file": "src/ui/grid/FilterBuilder.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 146
+    },
+    {
+     "name": "Grid",
+     "file": "src/ui/grid/Grid.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 264
+    },
+    {
+     "name": "HideFields",
+     "file": "src/ui/grid/HideFields.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 53
+    },
+    {
+     "name": "Providers",
+     "file": "src/ui/grid/Providers.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 23
+    },
+    {
+     "name": "Select",
+     "file": "src/ui/grid/Select.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 81
+    },
+    {
+     "name": "SortGroup",
+     "file": "src/ui/grid/SortGroup.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 70
+    },
+    {
+     "name": "Tag",
+     "file": "src/ui/grid/Tag.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 23
+    },
+    {
+     "name": "WidgetFrame",
+     "file": "src/widgets/WidgetFrame.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 101
+    },
+    {
+     "name": "WidgetHost",
+     "file": "src/widgets/WidgetHost.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 87
+    },
+    {
+     "name": "WidgetPreview",
+     "file": "src/widgets/WidgetPreview.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 87
+    },
+    {
+     "name": "WidgetsMenu",
+     "file": "src/widgets/WidgetsMenu.tsx",
+     "status": "ours",
+     "grade": "good",
+     "swapTo": null,
+     "why": [
+      "iterated 3 days, kept"
+     ],
+     "loc": 257
+    },
+    {
+     "name": "index",
+     "file": "src/widgets/activity/index.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 89
+    },
+    {
+     "name": "index",
+     "file": "src/widgets/by-platform/index.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 92
+    },
+    {
+     "name": "index",
+     "file": "src/widgets/chart-by-metric/index.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 59
+    },
+    {
+     "name": "index",
+     "file": "src/widgets/funnel/index.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 57
+    },
+    {
+     "name": "index",
+     "file": "src/widgets/heat-map/index.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 58
+    },
+    {
+     "name": "index",
+     "file": "src/widgets/hours-per-day/index.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 75
+    },
+    {
+     "name": "index",
+     "file": "src/widgets/hours-vs-streaming/index.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 28
+    },
+    {
+     "name": "index",
+     "file": "src/widgets/metric-strip/index.tsx",
+     "status": "ours",
+     "grade": "good",
+     "swapTo": null,
+     "why": [
+      "iterated 3 days, kept"
+     ],
+     "loc": 112
+    },
+    {
+     "name": "parts",
+     "file": "src/widgets/parts.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 36
+    },
+    {
+     "name": "index",
+     "file": "src/widgets/sessions/index.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 98
+    },
+    {
+     "name": "index",
+     "file": "src/widgets/streak/index.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 45
+    },
+    {
+     "name": "index",
+     "file": "src/widgets/top-tippers/index.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 81
+    },
+    {
+     "name": "index",
+     "file": "src/widgets/who-earns-here/index.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 153
+    },
+    {
+     "name": "StateIcons",
+     "file": "src/components/board/icons/StateIcons.tsx",
+     "status": "picked",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 98
+    },
+    {
+     "name": "alert",
+     "file": "src/components/ui/alert.tsx",
+     "status": "picked",
+     "grade": "good",
+     "swapTo": null,
+     "why": [
+      "from shadcn"
+     ],
+     "loc": 77
+    },
+    {
+     "name": "badge",
+     "file": "src/components/ui/badge.tsx",
+     "status": "picked",
+     "grade": "good",
+     "swapTo": null,
+     "why": [
+      "from shadcn"
+     ],
+     "loc": 53
+    },
+    {
+     "name": "button",
+     "file": "src/components/ui/button.tsx",
+     "status": "picked",
+     "grade": "good",
+     "swapTo": null,
+     "why": [
+      "from shadcn"
+     ],
+     "loc": 59
+    },
+    {
+     "name": "card",
+     "file": "src/components/ui/card.tsx",
+     "status": "picked",
+     "grade": "good",
+     "swapTo": null,
+     "why": [
+      "from shadcn"
+     ],
+     "loc": 104
+    },
+    {
+     "name": "chart",
+     "file": "src/components/ui/chart.tsx",
+     "status": "picked",
+     "grade": "good",
+     "swapTo": null,
+     "why": [
+      "from shadcn"
+     ],
+     "loc": 375
+    },
+    {
+     "name": "checkbox",
+     "file": "src/components/ui/checkbox.tsx",
+     "status": "picked",
+     "grade": "good",
+     "swapTo": null,
+     "why": [
+      "from shadcn"
+     ],
+     "loc": 27
+    },
+    {
+     "name": "dropdown-menu",
+     "file": "src/components/ui/dropdown-menu.tsx",
+     "status": "picked",
+     "grade": "good",
+     "swapTo": null,
+     "why": [
+      "from shadcn"
+     ],
+     "loc": 269
+    },
+    {
+     "name": "field",
+     "file": "src/components/ui/field.tsx",
+     "status": "picked",
+     "grade": "good",
+     "swapTo": null,
+     "why": [
+      "from shadcn"
+     ],
+     "loc": 237
+    },
+    {
+     "name": "input",
+     "file": "src/components/ui/input.tsx",
+     "status": "picked",
+     "grade": "good",
+     "swapTo": null,
+     "why": [
+      "from shadcn"
+     ],
+     "loc": 21
+    },
+    {
+     "name": "item",
+     "file": "src/components/ui/item.tsx",
+     "status": "picked",
+     "grade": "good",
+     "swapTo": null,
+     "why": [
+      "from shadcn"
+     ],
+     "loc": 202
+    },
+    {
+     "name": "label",
+     "file": "src/components/ui/label.tsx",
+     "status": "picked",
+     "grade": "good",
+     "swapTo": null,
+     "why": [
+      "from shadcn"
+     ],
+     "loc": 20
+    },
+    {
+     "name": "separator",
+     "file": "src/components/ui/separator.tsx",
+     "status": "picked",
+     "grade": "good",
+     "swapTo": null,
+     "why": [
+      "from shadcn"
+     ],
+     "loc": 24
+    },
+    {
+     "name": "textarea",
+     "file": "src/components/ui/textarea.tsx",
+     "status": "picked",
+     "grade": "good",
+     "swapTo": null,
+     "why": [
+      "from shadcn"
+     ],
+     "loc": 18
+    }
+   ]
+  },
+  {
+   "name": "ModelRecord",
+   "file": "src/components/screens/ModelRecord.tsx",
+   "loc": 555,
+   "components": [
+    {
+     "name": "Avatar",
+     "file": "src/components/board/Avatar.tsx",
+     "status": "needs-pick",
+     "grade": "ok",
+     "swapTo": "arc:avatar",
+     "why": [],
+     "loc": 8
+    },
+    {
+     "name": "SessionsTable",
+     "file": "src/components/board/SessionsTable.tsx",
+     "status": "needs-pick",
+     "grade": "ok",
+     "swapTo": "arc:sortable-data-table",
+     "why": [
+      "iterated 8 days, kept",
+      "- 1 clickable div"
+     ],
+     "loc": 39
+    },
+    {
+     "name": "sheet",
+     "file": "src/components/ui/sheet.tsx",
+     "status": "needs-pick",
+     "grade": "good",
+     "swapTo": "arc:drawer",
+     "why": [
+      "from shadcn"
+     ],
+     "loc": 137
+    },
+    {
+     "name": "ConfirmDialog",
+     "file": "src/ui/ConfirmDialog.tsx",
+     "status": "needs-pick",
+     "grade": "ok",
+     "swapTo": "arc:dialog",
+     "why": [],
+     "loc": 20
+    },
+    {
+     "name": "EmptyArt",
+     "file": "src/ui/EmptyArt.tsx",
+     "status": "needs-pick",
+     "grade": "ok",
+     "swapTo": "arc:empty-state",
+     "why": [],
+     "loc": 42
+    },
+    {
+     "name": "EmptyState",
+     "file": "src/ui/EmptyState.tsx",
+     "status": "needs-pick",
+     "grade": "good",
+     "swapTo": "arc:empty-state",
+     "why": [
+      "iterated 3 days, kept"
+     ],
+     "loc": 35
+    },
+    {
+     "name": "MonthCalendar",
+     "file": "src/ui/MonthCalendar.tsx",
+     "status": "needs-pick",
+     "grade": "ok",
+     "swapTo": "arc:date-picker",
+     "why": [],
+     "loc": 124
+    },
+    {
+     "name": "Popover",
+     "file": "src/ui/Popover.tsx",
+     "status": "needs-pick",
+     "grade": "ok",
+     "swapTo": "arc:popover",
+     "why": [],
+     "loc": 44
+    },
+    {
+     "name": "StatTile",
+     "file": "src/ui/StatTile.tsx",
+     "status": "needs-pick",
+     "grade": "ok",
+     "swapTo": "arc:metric-card",
+     "why": [],
+     "loc": 35
+    },
+    {
+     "name": "Tabs",
+     "file": "src/ui/Tabs.tsx",
+     "status": "needs-pick",
+     "grade": "good",
+     "swapTo": "arc:tabs",
+     "why": [
+      "iterated 3 days, kept"
+     ],
+     "loc": 55
+    },
+    {
+     "name": "AreaMetric",
+     "file": "src/ui/bank/AreaMetric.tsx",
+     "status": "needs-pick",
+     "grade": "ok",
+     "swapTo": "arc:metric-card",
+     "why": [],
+     "loc": 22
+    },
+    {
+     "name": "MetricTrend",
+     "file": "src/ui/bank/MetricTrend.tsx",
+     "status": "needs-pick",
+     "grade": "ok",
+     "swapTo": "arc:metric-card",
+     "why": [],
+     "loc": 17
+    },
+    {
+     "name": "ViewSwitch",
+     "file": "src/ui/grid/ViewSwitch.tsx",
+     "status": "needs-pick",
+     "grade": "ok",
+     "swapTo": "arc:switch",
+     "why": [],
+     "loc": 25
+    },
+    {
+     "name": "EarningsChart",
+     "file": "src/components/board/EarningsChart.tsx",
+     "status": "ours",
+     "grade": "good",
+     "swapTo": null,
+     "why": [
+      "iterated 9 days, kept"
+     ],
+     "loc": 78
+    },
+    {
+     "name": "HlsVideo",
+     "file": "src/components/board/HlsVideo.tsx",
+     "status": "ours",
+     "grade": "good",
+     "swapTo": null,
+     "why": [
+      "iterated 3 days, kept"
+     ],
+     "loc": 90
+    },
+    {
+     "name": "OperatorSurface",
+     "file": "src/components/board/OperatorSurface.tsx",
+     "status": "ours",
+     "grade": "good",
+     "swapTo": null,
+     "why": [
+      "iterated 6 days, kept"
+     ],
+     "loc": 123
+    },
+    {
+     "name": "PlatformGlyph",
+     "file": "src/components/board/PlatformGlyph.tsx",
+     "status": "ours",
+     "grade": "weak",
+     "swapTo": null,
+     "why": [
+      "- 7 hard-coded colours"
+     ],
+     "loc": 88
+    },
+    {
+     "name": "SeedBadge",
+     "file": "src/components/board/SeedBadge.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 9
+    },
+    {
+     "name": "SessionDrafts",
+     "file": "src/components/board/SessionDrafts.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 46
+    },
+    {
+     "name": "StatusBits",
+     "file": "src/components/board/StatusBits.tsx",
+     "status": "ours",
+     "grade": "good",
+     "swapTo": null,
+     "why": [
+      "iterated 4 days, kept"
+     ],
+     "loc": 59
+    },
+    {
+     "name": "ActivationApproval",
+     "file": "src/components/screens/ActivationApproval.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 50
+    },
+    {
+     "name": "FleetEarnings",
+     "file": "src/components/screens/FleetEarnings.tsx",
+     "status": "ours",
+     "grade": "good",
+     "swapTo": null,
+     "why": [
+      "iterated 10 days, kept"
+     ],
+     "loc": 163
+    },
+    {
+     "name": "ModelLiveWindow",
+     "file": "src/components/screens/ModelLiveWindow.tsx",
+     "status": "ours",
+     "grade": "good",
+     "swapTo": null,
+     "why": [
+      "iterated 5 days, kept"
+     ],
+     "loc": 91
+    },
+    {
+     "name": "ModelSetup",
+     "file": "src/components/screens/ModelSetup.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 239
+    },
+    {
+     "name": "ModelsRoster",
+     "file": "src/components/screens/ModelsRoster.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [
+      "iterated 16 days, kept",
+      "- 2 clickable div"
+     ],
+     "loc": 649
+    },
+    {
+     "name": "PerformancePeriod",
+     "file": "src/components/screens/PerformancePeriod.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 51
+    },
+    {
+     "name": "SessionTotals",
+     "file": "src/components/screens/SessionTotals.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 30
+    },
+    {
+     "name": "SessionsList",
+     "file": "src/components/screens/SessionsList.tsx",
+     "status": "ours",
+     "grade": "good",
+     "swapTo": null,
+     "why": [
+      "iterated 14 days, kept"
+     ],
+     "loc": 176
+    },
+    {
+     "name": "SetupBar",
+     "file": "src/components/screens/SetupBar.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 102
+    },
+    {
+     "name": "ActionMenu",
+     "file": "src/ui/ActionMenu.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 15
+    },
+    {
+     "name": "Card",
+     "file": "src/ui/Card.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 40
+    },
+    {
+     "name": "CardGrid",
+     "file": "src/ui/CardGrid.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 27
+    },
+    {
+     "name": "DraftGuard",
+     "file": "src/ui/DraftGuard.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 32
+    },
+    {
+     "name": "Row",
+     "file": "src/ui/Row.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 55
+    },
+    {
+     "name": "Segmented",
+     "file": "src/ui/Segmented.tsx",
+     "status": "ours",
+     "grade": "good",
+     "swapTo": null,
+     "why": [
+      "iterated 3 days, kept"
+     ],
+     "loc": 76
+    },
+    {
+     "name": "StatusBadge",
+     "file": "src/ui/StatusBadge.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 97
+    },
+    {
+     "name": "AddField",
+     "file": "src/ui/grid/AddField.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 99
+    },
+    {
+     "name": "Cards",
+     "file": "src/ui/grid/Cards.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 163
+    },
+    {
+     "name": "FilterBar",
+     "file": "src/ui/grid/FilterBar.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 88
+    },
+    {
+     "name": "FilterBuilder",
+     "file": "src/ui/grid/FilterBuilder.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 146
+    },
+    {
+     "name": "Grid",
+     "file": "src/ui/grid/Grid.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 264
+    },
+    {
+     "name": "HideFields",
+     "file": "src/ui/grid/HideFields.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 53
+    },
+    {
+     "name": "Providers",
+     "file": "src/ui/grid/Providers.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 23
+    },
+    {
+     "name": "Select",
+     "file": "src/ui/grid/Select.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 81
+    },
+    {
+     "name": "SortGroup",
+     "file": "src/ui/grid/SortGroup.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 70
+    },
+    {
+     "name": "Tag",
+     "file": "src/ui/grid/Tag.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 23
+    },
+    {
+     "name": "WidgetFrame",
+     "file": "src/widgets/WidgetFrame.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 101
+    },
+    {
+     "name": "WidgetHost",
+     "file": "src/widgets/WidgetHost.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 87
+    },
+    {
+     "name": "WidgetPreview",
+     "file": "src/widgets/WidgetPreview.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 87
+    },
+    {
+     "name": "WidgetsMenu",
+     "file": "src/widgets/WidgetsMenu.tsx",
+     "status": "ours",
+     "grade": "good",
+     "swapTo": null,
+     "why": [
+      "iterated 3 days, kept"
+     ],
+     "loc": 257
+    },
+    {
+     "name": "index",
+     "file": "src/widgets/activity/index.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 89
+    },
+    {
+     "name": "index",
+     "file": "src/widgets/by-platform/index.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 92
+    },
+    {
+     "name": "index",
+     "file": "src/widgets/chart-by-metric/index.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 59
+    },
+    {
+     "name": "index",
+     "file": "src/widgets/funnel/index.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 57
+    },
+    {
+     "name": "index",
+     "file": "src/widgets/heat-map/index.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 58
+    },
+    {
+     "name": "index",
+     "file": "src/widgets/hours-per-day/index.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 75
+    },
+    {
+     "name": "index",
+     "file": "src/widgets/hours-vs-streaming/index.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 28
+    },
+    {
+     "name": "index",
+     "file": "src/widgets/metric-strip/index.tsx",
+     "status": "ours",
+     "grade": "good",
+     "swapTo": null,
+     "why": [
+      "iterated 3 days, kept"
+     ],
+     "loc": 112
+    },
+    {
+     "name": "parts",
+     "file": "src/widgets/parts.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 36
+    },
+    {
+     "name": "index",
+     "file": "src/widgets/sessions/index.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 98
+    },
+    {
+     "name": "index",
+     "file": "src/widgets/streak/index.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 45
+    },
+    {
+     "name": "index",
+     "file": "src/widgets/top-tippers/index.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 81
+    },
+    {
+     "name": "index",
+     "file": "src/widgets/who-earns-here/index.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 153
+    },
+    {
+     "name": "button",
+     "file": "src/components/ui/button.tsx",
+     "status": "picked",
+     "grade": "good",
+     "swapTo": null,
+     "why": [
+      "from shadcn"
+     ],
+     "loc": 59
+    },
+    {
+     "name": "chart",
+     "file": "src/components/ui/chart.tsx",
+     "status": "picked",
+     "grade": "good",
+     "swapTo": null,
+     "why": [
+      "from shadcn"
+     ],
+     "loc": 375
+    },
+    {
+     "name": "input",
+     "file": "src/components/ui/input.tsx",
+     "status": "picked",
+     "grade": "good",
+     "swapTo": null,
+     "why": [
+      "from shadcn"
+     ],
+     "loc": 21
+    }
+   ]
+  },
+  {
+   "name": "FleetEarnings",
+   "file": "src/components/screens/FleetEarnings.tsx",
+   "loc": 163,
+   "components": [
+    {
+     "name": "Avatar",
+     "file": "src/components/board/Avatar.tsx",
+     "status": "needs-pick",
+     "grade": "ok",
+     "swapTo": "arc:avatar",
+     "why": [],
+     "loc": 8
+    },
+    {
+     "name": "sheet",
+     "file": "src/components/ui/sheet.tsx",
+     "status": "needs-pick",
+     "grade": "good",
+     "swapTo": "arc:drawer",
+     "why": [
+      "from shadcn"
+     ],
+     "loc": 137
+    },
+    {
+     "name": "EmptyArt",
+     "file": "src/ui/EmptyArt.tsx",
+     "status": "needs-pick",
+     "grade": "ok",
+     "swapTo": "arc:empty-state",
+     "why": [],
+     "loc": 42
+    },
+    {
+     "name": "EmptyState",
+     "file": "src/ui/EmptyState.tsx",
+     "status": "needs-pick",
+     "grade": "good",
+     "swapTo": "arc:empty-state",
+     "why": [
+      "iterated 3 days, kept"
+     ],
+     "loc": 35
+    },
+    {
+     "name": "Popover",
+     "file": "src/ui/Popover.tsx",
+     "status": "needs-pick",
+     "grade": "ok",
+     "swapTo": "arc:popover",
+     "why": [],
+     "loc": 44
+    },
+    {
+     "name": "StatTile",
+     "file": "src/ui/StatTile.tsx",
+     "status": "needs-pick",
+     "grade": "ok",
+     "swapTo": "arc:metric-card",
+     "why": [],
+     "loc": 35
+    },
+    {
+     "name": "AreaMetric",
+     "file": "src/ui/bank/AreaMetric.tsx",
+     "status": "needs-pick",
+     "grade": "ok",
+     "swapTo": "arc:metric-card",
+     "why": [],
+     "loc": 22
+    },
+    {
+     "name": "EarningsChart",
+     "file": "src/components/board/EarningsChart.tsx",
+     "status": "ours",
+     "grade": "good",
+     "swapTo": null,
+     "why": [
+      "iterated 9 days, kept"
+     ],
+     "loc": 78
+    },
+    {
+     "name": "OperatorSurface",
+     "file": "src/components/board/OperatorSurface.tsx",
+     "status": "ours",
+     "grade": "good",
+     "swapTo": null,
+     "why": [
+      "iterated 6 days, kept"
+     ],
+     "loc": 123
+    },
+    {
+     "name": "PlatformGlyph",
+     "file": "src/components/board/PlatformGlyph.tsx",
+     "status": "ours",
+     "grade": "weak",
+     "swapTo": null,
+     "why": [
+      "- 7 hard-coded colours"
+     ],
+     "loc": 88
+    },
+    {
+     "name": "StatusBits",
+     "file": "src/components/board/StatusBits.tsx",
+     "status": "ours",
+     "grade": "good",
+     "swapTo": null,
+     "why": [
+      "iterated 4 days, kept"
+     ],
+     "loc": 59
+    },
+    {
+     "name": "PerformancePeriod",
+     "file": "src/components/screens/PerformancePeriod.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 51
+    },
+    {
+     "name": "Card",
+     "file": "src/ui/Card.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 40
+    },
+    {
+     "name": "Row",
+     "file": "src/ui/Row.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 55
+    },
+    {
+     "name": "Segmented",
+     "file": "src/ui/Segmented.tsx",
+     "status": "ours",
+     "grade": "good",
+     "swapTo": null,
+     "why": [
+      "iterated 3 days, kept"
+     ],
+     "loc": 76
+    },
+    {
+     "name": "StatusBadge",
+     "file": "src/ui/StatusBadge.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 97
+    },
+    {
+     "name": "WidgetFrame",
+     "file": "src/widgets/WidgetFrame.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 101
+    },
+    {
+     "name": "WidgetHost",
+     "file": "src/widgets/WidgetHost.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 87
+    },
+    {
+     "name": "WidgetPreview",
+     "file": "src/widgets/WidgetPreview.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 87
+    },
+    {
+     "name": "WidgetsMenu",
+     "file": "src/widgets/WidgetsMenu.tsx",
+     "status": "ours",
+     "grade": "good",
+     "swapTo": null,
+     "why": [
+      "iterated 3 days, kept"
+     ],
+     "loc": 257
+    },
+    {
+     "name": "index",
+     "file": "src/widgets/activity/index.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 89
+    },
+    {
+     "name": "index",
+     "file": "src/widgets/by-platform/index.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 92
+    },
+    {
+     "name": "index",
+     "file": "src/widgets/chart-by-metric/index.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 59
+    },
+    {
+     "name": "index",
+     "file": "src/widgets/funnel/index.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 57
+    },
+    {
+     "name": "index",
+     "file": "src/widgets/heat-map/index.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 58
+    },
+    {
+     "name": "index",
+     "file": "src/widgets/hours-per-day/index.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 75
+    },
+    {
+     "name": "index",
+     "file": "src/widgets/hours-vs-streaming/index.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 28
+    },
+    {
+     "name": "index",
+     "file": "src/widgets/metric-strip/index.tsx",
+     "status": "ours",
+     "grade": "good",
+     "swapTo": null,
+     "why": [
+      "iterated 3 days, kept"
+     ],
+     "loc": 112
+    },
+    {
+     "name": "parts",
+     "file": "src/widgets/parts.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 36
+    },
+    {
+     "name": "index",
+     "file": "src/widgets/sessions/index.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 98
+    },
+    {
+     "name": "index",
+     "file": "src/widgets/streak/index.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 45
+    },
+    {
+     "name": "index",
+     "file": "src/widgets/top-tippers/index.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 81
+    },
+    {
+     "name": "index",
+     "file": "src/widgets/who-earns-here/index.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 153
+    },
+    {
+     "name": "button",
+     "file": "src/components/ui/button.tsx",
+     "status": "picked",
+     "grade": "good",
+     "swapTo": null,
+     "why": [
+      "from shadcn"
+     ],
+     "loc": 59
+    },
+    {
+     "name": "chart",
+     "file": "src/components/ui/chart.tsx",
+     "status": "picked",
+     "grade": "good",
+     "swapTo": null,
+     "why": [
+      "from shadcn"
+     ],
+     "loc": 375
+    }
+   ]
+  },
+  {
+   "name": "OnboardingBoard",
+   "file": "src/components/screens/OnboardingBoard.tsx",
+   "loc": 207,
+   "components": [
+    {
+     "name": "AccountLoginDialog",
+     "file": "src/components/board/AccountLoginDialog.tsx",
+     "status": "needs-pick",
+     "grade": "ok",
+     "swapTo": "arc:dialog",
+     "why": [],
+     "loc": 127
+    },
+    {
+     "name": "Avatar",
+     "file": "src/components/board/Avatar.tsx",
+     "status": "needs-pick",
+     "grade": "ok",
+     "swapTo": "arc:avatar",
+     "why": [],
+     "loc": 8
+    },
+    {
+     "name": "VpsDesktopDialog",
+     "file": "src/components/board/VpsDesktopDialog.tsx",
+     "status": "needs-pick",
+     "grade": "ok",
+     "swapTo": "arc:dialog",
+     "why": [],
+     "loc": 86
+    },
+    {
+     "name": "dialog",
+     "file": "src/components/ui/dialog.tsx",
+     "status": "needs-pick",
+     "grade": "good",
+     "swapTo": "arc:dialog",
+     "why": [
+      "from shadcn"
+     ],
+     "loc": 159
+    },
+    {
+     "name": "EmptyArt",
+     "file": "src/ui/EmptyArt.tsx",
+     "status": "needs-pick",
+     "grade": "ok",
+     "swapTo": "arc:empty-state",
+     "why": [],
+     "loc": 42
+    },
+    {
+     "name": "EmptyState",
+     "file": "src/ui/EmptyState.tsx",
+     "status": "needs-pick",
+     "grade": "good",
+     "swapTo": "arc:empty-state",
+     "why": [
+      "iterated 3 days, kept"
+     ],
+     "loc": 35
+    },
+    {
+     "name": "PlatformGlyph",
+     "file": "src/components/board/PlatformGlyph.tsx",
+     "status": "ours",
+     "grade": "weak",
+     "swapTo": null,
+     "why": [
+      "- 7 hard-coded colours"
+     ],
+     "loc": 88
+    },
+    {
+     "name": "SeedBadge",
+     "file": "src/components/board/SeedBadge.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 9
+    },
+    {
+     "name": "StatusBits",
+     "file": "src/components/board/StatusBits.tsx",
+     "status": "ours",
+     "grade": "good",
+     "swapTo": null,
+     "why": [
+      "iterated 4 days, kept"
+     ],
+     "loc": 59
+    },
+    {
+     "name": "TokenRevoke",
+     "file": "src/components/board/TokenRevoke.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 137
+    },
+    {
+     "name": "OnboardingAccountEntry",
+     "file": "src/components/screens/OnboardingAccountEntry.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 57
+    },
+    {
+     "name": "OnboardingCreator",
+     "file": "src/components/screens/OnboardingCreator.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [
+      "iterated 11 days, kept",
+      "- 1 emoji"
+     ],
+     "loc": 1017
+    },
+    {
+     "name": "OnboardingPreparation",
+     "file": "src/components/screens/OnboardingPreparation.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 86
+    },
+    {
+     "name": "OnboardingStepPage",
+     "file": "src/components/screens/OnboardingStepPage.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 417
+    },
+    {
+     "name": "Card",
+     "file": "src/ui/Card.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 40
+    },
+    {
+     "name": "Row",
+     "file": "src/ui/Row.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 55
+    },
+    {
+     "name": "Segmented",
+     "file": "src/ui/Segmented.tsx",
+     "status": "ours",
+     "grade": "good",
+     "swapTo": null,
+     "why": [
+      "iterated 3 days, kept"
+     ],
+     "loc": 76
+    },
+    {
+     "name": "StatusBadge",
+     "file": "src/ui/StatusBadge.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 97
+    },
+    {
+     "name": "alert",
+     "file": "src/components/ui/alert.tsx",
+     "status": "picked",
+     "grade": "good",
+     "swapTo": null,
+     "why": [
+      "from shadcn"
+     ],
+     "loc": 77
+    },
+    {
+     "name": "badge",
+     "file": "src/components/ui/badge.tsx",
+     "status": "picked",
+     "grade": "good",
+     "swapTo": null,
+     "why": [
+      "from shadcn"
+     ],
+     "loc": 53
+    },
+    {
+     "name": "button",
+     "file": "src/components/ui/button.tsx",
+     "status": "picked",
+     "grade": "good",
+     "swapTo": null,
+     "why": [
+      "from shadcn"
+     ],
+     "loc": 59
+    },
+    {
+     "name": "card",
+     "file": "src/components/ui/card.tsx",
+     "status": "picked",
+     "grade": "good",
+     "swapTo": null,
+     "why": [
+      "from shadcn"
+     ],
+     "loc": 104
+    },
+    {
+     "name": "checkbox",
+     "file": "src/components/ui/checkbox.tsx",
+     "status": "picked",
+     "grade": "good",
+     "swapTo": null,
+     "why": [
+      "from shadcn"
+     ],
+     "loc": 27
+    },
+    {
+     "name": "field",
+     "file": "src/components/ui/field.tsx",
+     "status": "picked",
+     "grade": "good",
+     "swapTo": null,
+     "why": [
+      "from shadcn"
+     ],
+     "loc": 237
+    },
+    {
+     "name": "input",
+     "file": "src/components/ui/input.tsx",
+     "status": "picked",
+     "grade": "good",
+     "swapTo": null,
+     "why": [
+      "from shadcn"
+     ],
+     "loc": 21
+    },
+    {
+     "name": "item",
+     "file": "src/components/ui/item.tsx",
+     "status": "picked",
+     "grade": "good",
+     "swapTo": null,
+     "why": [
+      "from shadcn"
+     ],
+     "loc": 202
+    },
+    {
+     "name": "label",
+     "file": "src/components/ui/label.tsx",
+     "status": "picked",
+     "grade": "good",
+     "swapTo": null,
+     "why": [
+      "from shadcn"
+     ],
+     "loc": 20
+    },
+    {
+     "name": "separator",
+     "file": "src/components/ui/separator.tsx",
+     "status": "picked",
+     "grade": "good",
+     "swapTo": null,
+     "why": [
+      "from shadcn"
+     ],
+     "loc": 24
+    },
+    {
+     "name": "textarea",
+     "file": "src/components/ui/textarea.tsx",
+     "status": "picked",
+     "grade": "good",
+     "swapTo": null,
+     "why": [
+      "from shadcn"
+     ],
+     "loc": 18
+    }
+   ]
+  },
+  {
+   "name": "HomeQueue",
+   "file": "src/components/screens/HomeQueue.tsx",
+   "loc": 180,
+   "components": [
+    {
+     "name": "Avatar",
+     "file": "src/components/board/Avatar.tsx",
+     "status": "needs-pick",
+     "grade": "ok",
+     "swapTo": "arc:avatar",
+     "why": [],
+     "loc": 8
+    },
+    {
+     "name": "EmptyArt",
+     "file": "src/ui/EmptyArt.tsx",
+     "status": "needs-pick",
+     "grade": "ok",
+     "swapTo": "arc:empty-state",
+     "why": [],
+     "loc": 42
+    },
+    {
+     "name": "EmptyState",
+     "file": "src/ui/EmptyState.tsx",
+     "status": "needs-pick",
+     "grade": "good",
+     "swapTo": "arc:empty-state",
+     "why": [
+      "iterated 3 days, kept"
+     ],
+     "loc": 35
+    },
+    {
+     "name": "Popover",
+     "file": "src/ui/Popover.tsx",
+     "status": "needs-pick",
+     "grade": "ok",
+     "swapTo": "arc:popover",
+     "why": [],
+     "loc": 44
+    },
+    {
+     "name": "StatTile",
+     "file": "src/ui/StatTile.tsx",
+     "status": "needs-pick",
+     "grade": "ok",
+     "swapTo": "arc:metric-card",
+     "why": [],
+     "loc": 35
+    },
+    {
+     "name": "Tabs",
+     "file": "src/ui/Tabs.tsx",
+     "status": "needs-pick",
+     "grade": "good",
+     "swapTo": "arc:tabs",
+     "why": [
+      "iterated 3 days, kept"
+     ],
+     "loc": 55
+    },
+    {
+     "name": "MetricTrend",
+     "file": "src/ui/bank/MetricTrend.tsx",
+     "status": "needs-pick",
+     "grade": "ok",
+     "swapTo": "arc:metric-card",
+     "why": [],
+     "loc": 17
+    },
+    {
+     "name": "EarningsChart",
+     "file": "src/components/board/EarningsChart.tsx",
+     "status": "ours",
+     "grade": "good",
+     "swapTo": null,
+     "why": [
+      "iterated 9 days, kept"
+     ],
+     "loc": 78
+    },
+    {
+     "name": "HlsVideo",
+     "file": "src/components/board/HlsVideo.tsx",
+     "status": "ours",
+     "grade": "good",
+     "swapTo": null,
+     "why": [
+      "iterated 3 days, kept"
+     ],
+     "loc": 90
+    },
+    {
+     "name": "OperatorSurface",
+     "file": "src/components/board/OperatorSurface.tsx",
+     "status": "ours",
+     "grade": "good",
+     "swapTo": null,
+     "why": [
+      "iterated 6 days, kept"
+     ],
+     "loc": 123
+    },
+    {
+     "name": "PlatformGlyph",
+     "file": "src/components/board/PlatformGlyph.tsx",
+     "status": "ours",
+     "grade": "weak",
+     "swapTo": null,
+     "why": [
+      "- 7 hard-coded colours"
+     ],
+     "loc": 88
+    },
+    {
+     "name": "SeedBadge",
+     "file": "src/components/board/SeedBadge.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 9
+    },
+    {
+     "name": "StatusBits",
+     "file": "src/components/board/StatusBits.tsx",
+     "status": "ours",
+     "grade": "good",
+     "swapTo": null,
+     "why": [
+      "iterated 4 days, kept"
+     ],
+     "loc": 59
+    },
+    {
+     "name": "Leaderboard",
+     "file": "src/components/screens/Leaderboard.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 394
+    },
+    {
+     "name": "TodayLiveWall",
+     "file": "src/components/screens/TodayLiveWall.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [
+      "iterated 10 days, kept",
+      "- 1 clickable div"
+     ],
+     "loc": 313
+    },
+    {
+     "name": "TodayTotals",
+     "file": "src/components/screens/TodayTotals.tsx",
+     "status": "ours",
+     "grade": "good",
+     "swapTo": null,
+     "why": [
+      "iterated 4 days, kept"
+     ],
+     "loc": 172
+    },
+    {
+     "name": "Card",
+     "file": "src/ui/Card.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 40
+    },
+    {
+     "name": "CardGrid",
+     "file": "src/ui/CardGrid.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 27
+    },
+    {
+     "name": "Row",
+     "file": "src/ui/Row.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 55
+    },
+    {
+     "name": "Segmented",
+     "file": "src/ui/Segmented.tsx",
+     "status": "ours",
+     "grade": "good",
+     "swapTo": null,
+     "why": [
+      "iterated 3 days, kept"
+     ],
+     "loc": 76
+    },
+    {
+     "name": "StatusBadge",
+     "file": "src/ui/StatusBadge.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 97
+    },
+    {
+     "name": "OpportunityCard",
+     "file": "src/ui/bank/OpportunityCard.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 26
+    },
+    {
+     "name": "FilterBar",
+     "file": "src/ui/grid/FilterBar.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 88
+    },
+    {
+     "name": "FilterBuilder",
+     "file": "src/ui/grid/FilterBuilder.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 146
+    },
+    {
+     "name": "HideFields",
+     "file": "src/ui/grid/HideFields.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 53
+    },
+    {
+     "name": "Providers",
+     "file": "src/ui/grid/Providers.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 23
+    },
+    {
+     "name": "SortGroup",
+     "file": "src/ui/grid/SortGroup.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 70
+    },
+    {
+     "name": "chart",
+     "file": "src/components/ui/chart.tsx",
+     "status": "picked",
+     "grade": "good",
+     "swapTo": null,
+     "why": [
+      "from shadcn"
+     ],
+     "loc": 375
+    }
+   ]
+  },
+  {
+   "name": "ModelsRoster",
+   "file": "src/components/screens/ModelsRoster.tsx",
+   "loc": 649,
+   "components": [
+    {
+     "name": "Avatar",
+     "file": "src/components/board/Avatar.tsx",
+     "status": "needs-pick",
+     "grade": "ok",
+     "swapTo": "arc:avatar",
+     "why": [],
+     "loc": 8
+    },
+    {
+     "name": "ConfirmDialog",
+     "file": "src/ui/ConfirmDialog.tsx",
+     "status": "needs-pick",
+     "grade": "ok",
+     "swapTo": "arc:dialog",
+     "why": [],
+     "loc": 20
+    },
+    {
+     "name": "EmptyArt",
+     "file": "src/ui/EmptyArt.tsx",
+     "status": "needs-pick",
+     "grade": "ok",
+     "swapTo": "arc:empty-state",
+     "why": [],
+     "loc": 42
+    },
+    {
+     "name": "EmptyState",
+     "file": "src/ui/EmptyState.tsx",
+     "status": "needs-pick",
+     "grade": "good",
+     "swapTo": "arc:empty-state",
+     "why": [
+      "iterated 3 days, kept"
+     ],
+     "loc": 35
+    },
+    {
+     "name": "Popover",
+     "file": "src/ui/Popover.tsx",
+     "status": "needs-pick",
+     "grade": "ok",
+     "swapTo": "arc:popover",
+     "why": [],
+     "loc": 44
+    },
+    {
+     "name": "Tabs",
+     "file": "src/ui/Tabs.tsx",
+     "status": "needs-pick",
+     "grade": "good",
+     "swapTo": "arc:tabs",
+     "why": [
+      "iterated 3 days, kept"
+     ],
+     "loc": 55
+    },
+    {
+     "name": "MetricTrend",
+     "file": "src/ui/bank/MetricTrend.tsx",
+     "status": "needs-pick",
+     "grade": "ok",
+     "swapTo": "arc:metric-card",
+     "why": [],
+     "loc": 17
+    },
+    {
+     "name": "ViewSwitch",
+     "file": "src/ui/grid/ViewSwitch.tsx",
+     "status": "needs-pick",
+     "grade": "ok",
+     "swapTo": "arc:switch",
+     "why": [],
+     "loc": 25
+    },
+    {
+     "name": "PlatformGlyph",
+     "file": "src/components/board/PlatformGlyph.tsx",
+     "status": "ours",
+     "grade": "weak",
+     "swapTo": null,
+     "why": [
+      "- 7 hard-coded colours"
+     ],
+     "loc": 88
+    },
+    {
+     "name": "SeedBadge",
+     "file": "src/components/board/SeedBadge.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 9
+    },
+    {
+     "name": "StatusBits",
+     "file": "src/components/board/StatusBits.tsx",
+     "status": "ours",
+     "grade": "good",
+     "swapTo": null,
+     "why": [
+      "iterated 4 days, kept"
+     ],
+     "loc": 59
+    },
+    {
+     "name": "ActionMenu",
+     "file": "src/ui/ActionMenu.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 15
+    },
+    {
+     "name": "Card",
+     "file": "src/ui/Card.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 40
+    },
+    {
+     "name": "CardGrid",
+     "file": "src/ui/CardGrid.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 27
+    },
+    {
+     "name": "DraftGuard",
+     "file": "src/ui/DraftGuard.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 32
+    },
+    {
+     "name": "Segmented",
+     "file": "src/ui/Segmented.tsx",
+     "status": "ours",
+     "grade": "good",
+     "swapTo": null,
+     "why": [
+      "iterated 3 days, kept"
+     ],
+     "loc": 76
+    },
+    {
+     "name": "StatusBadge",
+     "file": "src/ui/StatusBadge.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 97
+    },
+    {
+     "name": "AddField",
+     "file": "src/ui/grid/AddField.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 99
+    },
+    {
+     "name": "Cards",
+     "file": "src/ui/grid/Cards.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 163
+    },
+    {
+     "name": "FilterBar",
+     "file": "src/ui/grid/FilterBar.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 88
+    },
+    {
+     "name": "FilterBuilder",
+     "file": "src/ui/grid/FilterBuilder.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 146
+    },
+    {
+     "name": "Grid",
+     "file": "src/ui/grid/Grid.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 264
+    },
+    {
+     "name": "HideFields",
+     "file": "src/ui/grid/HideFields.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 53
+    },
+    {
+     "name": "Providers",
+     "file": "src/ui/grid/Providers.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 23
+    },
+    {
+     "name": "Select",
+     "file": "src/ui/grid/Select.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 81
+    },
+    {
+     "name": "SortGroup",
+     "file": "src/ui/grid/SortGroup.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 70
+    },
+    {
+     "name": "Tag",
+     "file": "src/ui/grid/Tag.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 23
+    },
+    {
+     "name": "input",
+     "file": "src/components/ui/input.tsx",
+     "status": "picked",
+     "grade": "good",
+     "swapTo": null,
+     "why": [
+      "from shadcn"
+     ],
+     "loc": 21
+    }
+   ]
+  },
+  {
+   "name": "OnboardingCreator",
+   "file": "src/components/screens/OnboardingCreator.tsx",
+   "loc": 1017,
+   "components": [
+    {
+     "name": "AccountLoginDialog",
+     "file": "src/components/board/AccountLoginDialog.tsx",
+     "status": "needs-pick",
+     "grade": "ok",
+     "swapTo": "arc:dialog",
+     "why": [],
+     "loc": 127
+    },
+    {
+     "name": "Avatar",
+     "file": "src/components/board/Avatar.tsx",
+     "status": "needs-pick",
+     "grade": "ok",
+     "swapTo": "arc:avatar",
+     "why": [],
+     "loc": 8
+    },
+    {
+     "name": "VpsDesktopDialog",
+     "file": "src/components/board/VpsDesktopDialog.tsx",
+     "status": "needs-pick",
+     "grade": "ok",
+     "swapTo": "arc:dialog",
+     "why": [],
+     "loc": 86
+    },
+    {
+     "name": "dialog",
+     "file": "src/components/ui/dialog.tsx",
+     "status": "needs-pick",
+     "grade": "good",
+     "swapTo": "arc:dialog",
+     "why": [
+      "from shadcn"
+     ],
+     "loc": 159
+    },
+    {
+     "name": "PlatformGlyph",
+     "file": "src/components/board/PlatformGlyph.tsx",
+     "status": "ours",
+     "grade": "weak",
+     "swapTo": null,
+     "why": [
+      "- 7 hard-coded colours"
+     ],
+     "loc": 88
+    },
+    {
+     "name": "SeedBadge",
+     "file": "src/components/board/SeedBadge.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 9
+    },
+    {
+     "name": "StatusBits",
+     "file": "src/components/board/StatusBits.tsx",
+     "status": "ours",
+     "grade": "good",
+     "swapTo": null,
+     "why": [
+      "iterated 4 days, kept"
+     ],
+     "loc": 59
+    },
+    {
+     "name": "TokenRevoke",
+     "file": "src/components/board/TokenRevoke.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 137
+    },
+    {
+     "name": "OnboardingAccountEntry",
+     "file": "src/components/screens/OnboardingAccountEntry.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 57
+    },
+    {
+     "name": "OnboardingPreparation",
+     "file": "src/components/screens/OnboardingPreparation.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 86
+    },
+    {
+     "name": "OnboardingStepPage",
+     "file": "src/components/screens/OnboardingStepPage.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 417
+    },
+    {
+     "name": "StatusBadge",
+     "file": "src/ui/StatusBadge.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 97
+    },
+    {
+     "name": "alert",
+     "file": "src/components/ui/alert.tsx",
+     "status": "picked",
+     "grade": "good",
+     "swapTo": null,
+     "why": [
+      "from shadcn"
+     ],
+     "loc": 77
+    },
+    {
+     "name": "badge",
+     "file": "src/components/ui/badge.tsx",
+     "status": "picked",
+     "grade": "good",
+     "swapTo": null,
+     "why": [
+      "from shadcn"
+     ],
+     "loc": 53
+    },
+    {
+     "name": "button",
+     "file": "src/components/ui/button.tsx",
+     "status": "picked",
+     "grade": "good",
+     "swapTo": null,
+     "why": [
+      "from shadcn"
+     ],
+     "loc": 59
+    },
+    {
+     "name": "card",
+     "file": "src/components/ui/card.tsx",
+     "status": "picked",
+     "grade": "good",
+     "swapTo": null,
+     "why": [
+      "from shadcn"
+     ],
+     "loc": 104
+    },
+    {
+     "name": "checkbox",
+     "file": "src/components/ui/checkbox.tsx",
+     "status": "picked",
+     "grade": "good",
+     "swapTo": null,
+     "why": [
+      "from shadcn"
+     ],
+     "loc": 27
+    },
+    {
+     "name": "field",
+     "file": "src/components/ui/field.tsx",
+     "status": "picked",
+     "grade": "good",
+     "swapTo": null,
+     "why": [
+      "from shadcn"
+     ],
+     "loc": 237
+    },
+    {
+     "name": "input",
+     "file": "src/components/ui/input.tsx",
+     "status": "picked",
+     "grade": "good",
+     "swapTo": null,
+     "why": [
+      "from shadcn"
+     ],
+     "loc": 21
+    },
+    {
+     "name": "item",
+     "file": "src/components/ui/item.tsx",
+     "status": "picked",
+     "grade": "good",
+     "swapTo": null,
+     "why": [
+      "from shadcn"
+     ],
+     "loc": 202
+    },
+    {
+     "name": "label",
+     "file": "src/components/ui/label.tsx",
+     "status": "picked",
+     "grade": "good",
+     "swapTo": null,
+     "why": [
+      "from shadcn"
+     ],
+     "loc": 20
+    },
+    {
+     "name": "separator",
+     "file": "src/components/ui/separator.tsx",
+     "status": "picked",
+     "grade": "good",
+     "swapTo": null,
+     "why": [
+      "from shadcn"
+     ],
+     "loc": 24
+    },
+    {
+     "name": "textarea",
+     "file": "src/components/ui/textarea.tsx",
+     "status": "picked",
+     "grade": "good",
+     "swapTo": null,
+     "why": [
+      "from shadcn"
+     ],
+     "loc": 18
+    }
+   ]
+  },
+  {
+   "name": "Leaderboard",
+   "file": "src/components/screens/Leaderboard.tsx",
+   "loc": 394,
+   "components": [
+    {
+     "name": "Avatar",
+     "file": "src/components/board/Avatar.tsx",
+     "status": "needs-pick",
+     "grade": "ok",
+     "swapTo": "arc:avatar",
+     "why": [],
+     "loc": 8
+    },
+    {
+     "name": "EmptyArt",
+     "file": "src/ui/EmptyArt.tsx",
+     "status": "needs-pick",
+     "grade": "ok",
+     "swapTo": "arc:empty-state",
+     "why": [],
+     "loc": 42
+    },
+    {
+     "name": "EmptyState",
+     "file": "src/ui/EmptyState.tsx",
+     "status": "needs-pick",
+     "grade": "good",
+     "swapTo": "arc:empty-state",
+     "why": [
+      "iterated 3 days, kept"
+     ],
+     "loc": 35
+    },
+    {
+     "name": "Popover",
+     "file": "src/ui/Popover.tsx",
+     "status": "needs-pick",
+     "grade": "ok",
+     "swapTo": "arc:popover",
+     "why": [],
+     "loc": 44
+    },
+    {
+     "name": "EarningsChart",
+     "file": "src/components/board/EarningsChart.tsx",
+     "status": "ours",
+     "grade": "good",
+     "swapTo": null,
+     "why": [
+      "iterated 9 days, kept"
+     ],
+     "loc": 78
+    },
+    {
+     "name": "OperatorSurface",
+     "file": "src/components/board/OperatorSurface.tsx",
+     "status": "ours",
+     "grade": "good",
+     "swapTo": null,
+     "why": [
+      "iterated 6 days, kept"
+     ],
+     "loc": 123
+    },
+    {
+     "name": "PlatformGlyph",
+     "file": "src/components/board/PlatformGlyph.tsx",
+     "status": "ours",
+     "grade": "weak",
+     "swapTo": null,
+     "why": [
+      "- 7 hard-coded colours"
+     ],
+     "loc": 88
+    },
+    {
+     "name": "SeedBadge",
+     "file": "src/components/board/SeedBadge.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 9
+    },
+    {
+     "name": "StatusBits",
+     "file": "src/components/board/StatusBits.tsx",
+     "status": "ours",
+     "grade": "good",
+     "swapTo": null,
+     "why": [
+      "iterated 4 days, kept"
+     ],
+     "loc": 59
+    },
+    {
+     "name": "Card",
+     "file": "src/ui/Card.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 40
+    },
+    {
+     "name": "Row",
+     "file": "src/ui/Row.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 55
+    },
+    {
+     "name": "Segmented",
+     "file": "src/ui/Segmented.tsx",
+     "status": "ours",
+     "grade": "good",
+     "swapTo": null,
+     "why": [
+      "iterated 3 days, kept"
+     ],
+     "loc": 76
+    },
+    {
+     "name": "StatusBadge",
+     "file": "src/ui/StatusBadge.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 97
+    },
+    {
+     "name": "FilterBar",
+     "file": "src/ui/grid/FilterBar.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 88
+    },
+    {
+     "name": "FilterBuilder",
+     "file": "src/ui/grid/FilterBuilder.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 146
+    },
+    {
+     "name": "HideFields",
+     "file": "src/ui/grid/HideFields.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 53
+    },
+    {
+     "name": "Providers",
+     "file": "src/ui/grid/Providers.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 23
+    },
+    {
+     "name": "SortGroup",
+     "file": "src/ui/grid/SortGroup.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 70
+    },
+    {
+     "name": "chart",
+     "file": "src/components/ui/chart.tsx",
+     "status": "picked",
+     "grade": "good",
+     "swapTo": null,
+     "why": [
+      "from shadcn"
+     ],
+     "loc": 375
+    }
+   ]
+  },
+  {
+   "name": "AccountPage",
+   "file": "src/components/screens/AccountPage.tsx",
+   "loc": 321,
+   "components": [
+    {
+     "name": "AccountLoginDialog",
+     "file": "src/components/board/AccountLoginDialog.tsx",
+     "status": "needs-pick",
+     "grade": "ok",
+     "swapTo": "arc:dialog",
+     "why": [],
+     "loc": 127
+    },
+    {
+     "name": "VpsDesktopDialog",
+     "file": "src/components/board/VpsDesktopDialog.tsx",
+     "status": "needs-pick",
+     "grade": "ok",
+     "swapTo": "arc:dialog",
+     "why": [],
+     "loc": 86
+    },
+    {
+     "name": "dialog",
+     "file": "src/components/ui/dialog.tsx",
+     "status": "needs-pick",
+     "grade": "good",
+     "swapTo": "arc:dialog",
+     "why": [
+      "from shadcn"
+     ],
+     "loc": 159
+    },
+    {
+     "name": "ConfirmDialog",
+     "file": "src/ui/ConfirmDialog.tsx",
+     "status": "needs-pick",
+     "grade": "ok",
+     "swapTo": "arc:dialog",
+     "why": [],
+     "loc": 20
+    },
+    {
+     "name": "Popover",
+     "file": "src/ui/Popover.tsx",
+     "status": "needs-pick",
+     "grade": "ok",
+     "swapTo": "arc:popover",
+     "why": [],
+     "loc": 44
+    },
+    {
+     "name": "RecordFields",
+     "file": "src/components/board/RecordFields.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 102
+    },
+    {
+     "name": "StatusBits",
+     "file": "src/components/board/StatusBits.tsx",
+     "status": "ours",
+     "grade": "good",
+     "swapTo": null,
+     "why": [
+      "iterated 4 days, kept"
+     ],
+     "loc": 59
+    },
+    {
+     "name": "DraftGuard",
+     "file": "src/ui/DraftGuard.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 32
+    },
+    {
+     "name": "Row",
+     "file": "src/ui/Row.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 55
+    },
+    {
+     "name": "StatusBadge",
+     "file": "src/ui/StatusBadge.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 97
+    },
+    {
+     "name": "AddField",
+     "file": "src/ui/grid/AddField.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 99
+    },
+    {
+     "name": "button",
+     "file": "src/components/ui/button.tsx",
+     "status": "picked",
+     "grade": "good",
+     "swapTo": null,
+     "why": [
+      "from shadcn"
+     ],
+     "loc": 59
+    },
+    {
+     "name": "field",
+     "file": "src/components/ui/field.tsx",
+     "status": "picked",
+     "grade": "good",
+     "swapTo": null,
+     "why": [
+      "from shadcn"
+     ],
+     "loc": 237
+    },
+    {
+     "name": "input",
+     "file": "src/components/ui/input.tsx",
+     "status": "picked",
+     "grade": "good",
+     "swapTo": null,
+     "why": [
+      "from shadcn"
+     ],
+     "loc": 21
+    },
+    {
+     "name": "label",
+     "file": "src/components/ui/label.tsx",
+     "status": "picked",
+     "grade": "good",
+     "swapTo": null,
+     "why": [
+      "from shadcn"
+     ],
+     "loc": 20
+    },
+    {
+     "name": "separator",
+     "file": "src/components/ui/separator.tsx",
+     "status": "picked",
+     "grade": "good",
+     "swapTo": null,
+     "why": [
+      "from shadcn"
+     ],
+     "loc": 24
+    }
+   ]
+  },
+  {
+   "name": "OnboardingStepPage",
+   "file": "src/components/screens/OnboardingStepPage.tsx",
+   "loc": 417,
+   "components": [
+    {
+     "name": "AccountLoginDialog",
+     "file": "src/components/board/AccountLoginDialog.tsx",
+     "status": "needs-pick",
+     "grade": "ok",
+     "swapTo": "arc:dialog",
+     "why": [],
+     "loc": 127
+    },
+    {
+     "name": "VpsDesktopDialog",
+     "file": "src/components/board/VpsDesktopDialog.tsx",
+     "status": "needs-pick",
+     "grade": "ok",
+     "swapTo": "arc:dialog",
+     "why": [],
+     "loc": 86
+    },
+    {
+     "name": "dialog",
+     "file": "src/components/ui/dialog.tsx",
+     "status": "needs-pick",
+     "grade": "good",
+     "swapTo": "arc:dialog",
+     "why": [
+      "from shadcn"
+     ],
+     "loc": 159
+    },
+    {
+     "name": "PlatformGlyph",
+     "file": "src/components/board/PlatformGlyph.tsx",
+     "status": "ours",
+     "grade": "weak",
+     "swapTo": null,
+     "why": [
+      "- 7 hard-coded colours"
+     ],
+     "loc": 88
+    },
+    {
+     "name": "StatusBits",
+     "file": "src/components/board/StatusBits.tsx",
+     "status": "ours",
+     "grade": "good",
+     "swapTo": null,
+     "why": [
+      "iterated 4 days, kept"
+     ],
+     "loc": 59
+    },
+    {
+     "name": "OnboardingAccountEntry",
+     "file": "src/components/screens/OnboardingAccountEntry.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 57
+    },
+    {
+     "name": "StatusBadge",
+     "file": "src/ui/StatusBadge.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 97
+    },
+    {
+     "name": "alert",
+     "file": "src/components/ui/alert.tsx",
+     "status": "picked",
+     "grade": "good",
+     "swapTo": null,
+     "why": [
+      "from shadcn"
+     ],
+     "loc": 77
+    },
+    {
+     "name": "badge",
+     "file": "src/components/ui/badge.tsx",
+     "status": "picked",
+     "grade": "good",
+     "swapTo": null,
+     "why": [
+      "from shadcn"
+     ],
+     "loc": 53
+    },
+    {
+     "name": "button",
+     "file": "src/components/ui/button.tsx",
+     "status": "picked",
+     "grade": "good",
+     "swapTo": null,
+     "why": [
+      "from shadcn"
+     ],
+     "loc": 59
+    },
+    {
+     "name": "checkbox",
+     "file": "src/components/ui/checkbox.tsx",
+     "status": "picked",
+     "grade": "good",
+     "swapTo": null,
+     "why": [
+      "from shadcn"
+     ],
+     "loc": 27
+    },
+    {
+     "name": "field",
+     "file": "src/components/ui/field.tsx",
+     "status": "picked",
+     "grade": "good",
+     "swapTo": null,
+     "why": [
+      "from shadcn"
+     ],
+     "loc": 237
+    },
+    {
+     "name": "input",
+     "file": "src/components/ui/input.tsx",
+     "status": "picked",
+     "grade": "good",
+     "swapTo": null,
+     "why": [
+      "from shadcn"
+     ],
+     "loc": 21
+    },
+    {
+     "name": "label",
+     "file": "src/components/ui/label.tsx",
+     "status": "picked",
+     "grade": "good",
+     "swapTo": null,
+     "why": [
+      "from shadcn"
+     ],
+     "loc": 20
+    },
+    {
+     "name": "separator",
+     "file": "src/components/ui/separator.tsx",
+     "status": "picked",
+     "grade": "good",
+     "swapTo": null,
+     "why": [
+      "from shadcn"
+     ],
+     "loc": 24
+    },
+    {
+     "name": "textarea",
+     "file": "src/components/ui/textarea.tsx",
+     "status": "picked",
+     "grade": "good",
+     "swapTo": null,
+     "why": [
+      "from shadcn"
+     ],
+     "loc": 18
+    }
+   ]
+  },
+  {
+   "name": "ProductReadiness",
+   "file": "src/components/screens/ProductReadiness.tsx",
+   "loc": 61,
+   "components": [
+    {
+     "name": "HostStats",
+     "file": "src/components/board/HostStats.tsx",
+     "status": "needs-pick",
+     "grade": "ok",
+     "swapTo": "arc:metric-card",
+     "why": [],
+     "loc": 164
+    },
+    {
+     "name": "ConfirmDialog",
+     "file": "src/ui/ConfirmDialog.tsx",
+     "status": "needs-pick",
+     "grade": "ok",
+     "swapTo": "arc:dialog",
+     "why": [],
+     "loc": 20
+    },
+    {
+     "name": "StatusBits",
+     "file": "src/components/board/StatusBits.tsx",
+     "status": "ours",
+     "grade": "good",
+     "swapTo": null,
+     "why": [
+      "iterated 4 days, kept"
+     ],
+     "loc": 59
+    },
+    {
+     "name": "TutorialPlayer",
+     "file": "src/components/board/TutorialPlayer.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 162
+    },
+    {
+     "name": "NeedsYou",
+     "file": "src/components/screens/NeedsYou.tsx",
+     "status": "ours",
+     "grade": "good",
+     "swapTo": null,
+     "why": [
+      "iterated 8 days, kept"
+     ],
+     "loc": 258
+    },
+    {
+     "name": "DraftGuard",
+     "file": "src/ui/DraftGuard.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 32
+    },
+    {
+     "name": "Row",
+     "file": "src/ui/Row.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 55
+    },
+    {
+     "name": "StatusBadge",
+     "file": "src/ui/StatusBadge.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 97
+    },
+    {
+     "name": "badge",
+     "file": "src/components/ui/badge.tsx",
+     "status": "picked",
+     "grade": "good",
+     "swapTo": null,
+     "why": [
+      "from shadcn"
+     ],
+     "loc": 53
+    },
+    {
+     "name": "button",
+     "file": "src/components/ui/button.tsx",
+     "status": "picked",
+     "grade": "good",
+     "swapTo": null,
+     "why": [
+      "from shadcn"
+     ],
+     "loc": 59
+    },
+    {
+     "name": "card",
+     "file": "src/components/ui/card.tsx",
+     "status": "picked",
+     "grade": "good",
+     "swapTo": null,
+     "why": [
+      "from shadcn"
+     ],
+     "loc": 104
+    },
+    {
+     "name": "input",
+     "file": "src/components/ui/input.tsx",
+     "status": "picked",
+     "grade": "good",
+     "swapTo": null,
+     "why": [
+      "from shadcn"
+     ],
+     "loc": 21
+    }
+   ]
+  },
+  {
+   "name": "SessionsList",
+   "file": "src/components/screens/SessionsList.tsx",
+   "loc": 176,
+   "components": [
+    {
+     "name": "SessionsTable",
+     "file": "src/components/board/SessionsTable.tsx",
+     "status": "needs-pick",
+     "grade": "ok",
+     "swapTo": "arc:sortable-data-table",
+     "why": [
+      "iterated 8 days, kept",
+      "- 1 clickable div"
+     ],
+     "loc": 39
+    },
+    {
+     "name": "EmptyArt",
+     "file": "src/ui/EmptyArt.tsx",
+     "status": "needs-pick",
+     "grade": "ok",
+     "swapTo": "arc:empty-state",
+     "why": [],
+     "loc": 42
+    },
+    {
+     "name": "EmptyState",
+     "file": "src/ui/EmptyState.tsx",
+     "status": "needs-pick",
+     "grade": "good",
+     "swapTo": "arc:empty-state",
+     "why": [
+      "iterated 3 days, kept"
+     ],
+     "loc": 35
+    },
+    {
+     "name": "MonthCalendar",
+     "file": "src/ui/MonthCalendar.tsx",
+     "status": "needs-pick",
+     "grade": "ok",
+     "swapTo": "arc:date-picker",
+     "why": [],
+     "loc": 124
+    },
+    {
+     "name": "Tabs",
+     "file": "src/ui/Tabs.tsx",
+     "status": "needs-pick",
+     "grade": "good",
+     "swapTo": "arc:tabs",
+     "why": [
+      "iterated 3 days, kept"
+     ],
+     "loc": 55
+    },
+    {
+     "name": "ViewSwitch",
+     "file": "src/ui/grid/ViewSwitch.tsx",
+     "status": "needs-pick",
+     "grade": "ok",
+     "swapTo": "arc:switch",
+     "why": [],
+     "loc": 25
+    },
+    {
+     "name": "OperatorSurface",
+     "file": "src/components/board/OperatorSurface.tsx",
+     "status": "ours",
+     "grade": "good",
+     "swapTo": null,
+     "why": [
+      "iterated 6 days, kept"
+     ],
+     "loc": 123
+    },
+    {
+     "name": "PlatformGlyph",
+     "file": "src/components/board/PlatformGlyph.tsx",
+     "status": "ours",
+     "grade": "weak",
+     "swapTo": null,
+     "why": [
+      "- 7 hard-coded colours"
+     ],
+     "loc": 88
+    },
+    {
+     "name": "StatusBits",
+     "file": "src/components/board/StatusBits.tsx",
+     "status": "ours",
+     "grade": "good",
+     "swapTo": null,
+     "why": [
+      "iterated 4 days, kept"
+     ],
+     "loc": 59
+    },
+    {
+     "name": "SessionTotals",
+     "file": "src/components/screens/SessionTotals.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 30
+    },
+    {
+     "name": "Segmented",
+     "file": "src/ui/Segmented.tsx",
+     "status": "ours",
+     "grade": "good",
+     "swapTo": null,
+     "why": [
+      "iterated 3 days, kept"
+     ],
+     "loc": 76
+    },
+    {
+     "name": "StatusBadge",
+     "file": "src/ui/StatusBadge.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 97
+    }
+   ]
+  },
+  {
+   "name": "TodayLiveWall",
+   "file": "src/components/screens/TodayLiveWall.tsx",
+   "loc": 313,
+   "components": [
+    {
+     "name": "Avatar",
+     "file": "src/components/board/Avatar.tsx",
+     "status": "needs-pick",
+     "grade": "ok",
+     "swapTo": "arc:avatar",
+     "why": [],
+     "loc": 8
+    },
+    {
+     "name": "EmptyArt",
+     "file": "src/ui/EmptyArt.tsx",
+     "status": "needs-pick",
+     "grade": "ok",
+     "swapTo": "arc:empty-state",
+     "why": [],
+     "loc": 42
+    },
+    {
+     "name": "EmptyState",
+     "file": "src/ui/EmptyState.tsx",
+     "status": "needs-pick",
+     "grade": "good",
+     "swapTo": "arc:empty-state",
+     "why": [
+      "iterated 3 days, kept"
+     ],
+     "loc": 35
+    },
+    {
+     "name": "Tabs",
+     "file": "src/ui/Tabs.tsx",
+     "status": "needs-pick",
+     "grade": "good",
+     "swapTo": "arc:tabs",
+     "why": [
+      "iterated 3 days, kept"
+     ],
+     "loc": 55
+    },
+    {
+     "name": "HlsVideo",
+     "file": "src/components/board/HlsVideo.tsx",
+     "status": "ours",
+     "grade": "good",
+     "swapTo": null,
+     "why": [
+      "iterated 3 days, kept"
+     ],
+     "loc": 90
+    },
+    {
+     "name": "PlatformGlyph",
+     "file": "src/components/board/PlatformGlyph.tsx",
+     "status": "ours",
+     "grade": "weak",
+     "swapTo": null,
+     "why": [
+      "- 7 hard-coded colours"
+     ],
+     "loc": 88
+    },
+    {
+     "name": "SeedBadge",
+     "file": "src/components/board/SeedBadge.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 9
+    },
+    {
+     "name": "StatusBits",
+     "file": "src/components/board/StatusBits.tsx",
+     "status": "ours",
+     "grade": "good",
+     "swapTo": null,
+     "why": [
+      "iterated 4 days, kept"
+     ],
+     "loc": 59
+    },
+    {
+     "name": "Card",
+     "file": "src/ui/Card.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 40
+    },
+    {
+     "name": "CardGrid",
+     "file": "src/ui/CardGrid.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 27
+    },
+    {
+     "name": "StatusBadge",
+     "file": "src/ui/StatusBadge.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 97
+    },
+    {
+     "name": "OpportunityCard",
+     "file": "src/ui/bank/OpportunityCard.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 26
+    }
+   ]
+  },
+  {
+   "name": "CasesScreen",
+   "file": "src/components/screens/CasesScreen.tsx",
+   "loc": 507,
+   "components": [
+    {
+     "name": "EmptyArt",
+     "file": "src/ui/EmptyArt.tsx",
+     "status": "needs-pick",
+     "grade": "ok",
+     "swapTo": "arc:empty-state",
+     "why": [],
+     "loc": 42
+    },
+    {
+     "name": "EmptyState",
+     "file": "src/ui/EmptyState.tsx",
+     "status": "needs-pick",
+     "grade": "good",
+     "swapTo": "arc:empty-state",
+     "why": [
+      "iterated 3 days, kept"
+     ],
+     "loc": 35
+    },
+    {
+     "name": "Tabs",
+     "file": "src/ui/Tabs.tsx",
+     "status": "needs-pick",
+     "grade": "good",
+     "swapTo": "arc:tabs",
+     "why": [
+      "iterated 3 days, kept"
+     ],
+     "loc": 55
+    },
+    {
+     "name": "ContextHelp",
+     "file": "src/components/board/ContextHelp.tsx",
+     "status": "ours",
+     "grade": "good",
+     "swapTo": null,
+     "why": [
+      "iterated 6 days, kept"
+     ],
+     "loc": 104
+    },
+    {
+     "name": "EvidenceBits",
+     "file": "src/components/board/EvidenceBits.tsx",
+     "status": "ours",
+     "grade": "good",
+     "swapTo": null,
+     "why": [
+      "iterated 3 days, kept"
+     ],
+     "loc": 147
+    },
+    {
+     "name": "OperatorSurface",
+     "file": "src/components/board/OperatorSurface.tsx",
+     "status": "ours",
+     "grade": "good",
+     "swapTo": null,
+     "why": [
+      "iterated 6 days, kept"
+     ],
+     "loc": 123
+    },
+    {
+     "name": "StatusBits",
+     "file": "src/components/board/StatusBits.tsx",
+     "status": "ours",
+     "grade": "good",
+     "swapTo": null,
+     "why": [
+      "iterated 4 days, kept"
+     ],
+     "loc": 59
+    },
+    {
+     "name": "Row",
+     "file": "src/ui/Row.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 55
+    },
+    {
+     "name": "StatusBadge",
+     "file": "src/ui/StatusBadge.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 97
+    },
+    {
+     "name": "button",
+     "file": "src/components/ui/button.tsx",
+     "status": "picked",
+     "grade": "good",
+     "swapTo": null,
+     "why": [
+      "from shadcn"
+     ],
+     "loc": 59
+    },
+    {
+     "name": "input",
+     "file": "src/components/ui/input.tsx",
+     "status": "picked",
+     "grade": "good",
+     "swapTo": null,
+     "why": [
+      "from shadcn"
+     ],
+     "loc": 21
+    }
+   ]
+  },
+  {
+   "name": "NotificationsScreen",
+   "file": "src/components/screens/NotificationsScreen.tsx",
+   "loc": 54,
+   "components": [
+    {
+     "name": "Avatar",
+     "file": "src/components/board/Avatar.tsx",
+     "status": "needs-pick",
+     "grade": "ok",
+     "swapTo": "arc:avatar",
+     "why": [],
+     "loc": 8
+    },
+    {
+     "name": "WorkspaceNotifications",
+     "file": "src/components/board/WorkspaceNotifications.tsx",
+     "status": "needs-pick",
+     "grade": "good",
+     "swapTo": "arc:toast",
+     "why": [
+      "iterated 7 days, kept"
+     ],
+     "loc": 93
+    },
+    {
+     "name": "EmptyArt",
+     "file": "src/ui/EmptyArt.tsx",
+     "status": "needs-pick",
+     "grade": "ok",
+     "swapTo": "arc:empty-state",
+     "why": [],
+     "loc": 42
+    },
+    {
+     "name": "EmptyState",
+     "file": "src/ui/EmptyState.tsx",
+     "status": "needs-pick",
+     "grade": "good",
+     "swapTo": "arc:empty-state",
+     "why": [
+      "iterated 3 days, kept"
+     ],
+     "loc": 35
+    },
+    {
+     "name": "Popover",
+     "file": "src/ui/Popover.tsx",
+     "status": "needs-pick",
+     "grade": "ok",
+     "swapTo": "arc:popover",
+     "why": [],
+     "loc": 44
+    },
+    {
+     "name": "Tabs",
+     "file": "src/ui/Tabs.tsx",
+     "status": "needs-pick",
+     "grade": "good",
+     "swapTo": "arc:tabs",
+     "why": [
+      "iterated 3 days, kept"
+     ],
+     "loc": 55
+    },
+    {
+     "name": "OperatorSurface",
+     "file": "src/components/board/OperatorSurface.tsx",
+     "status": "ours",
+     "grade": "good",
+     "swapTo": null,
+     "why": [
+      "iterated 6 days, kept"
+     ],
+     "loc": 123
+    },
+    {
+     "name": "StatusBits",
+     "file": "src/components/board/StatusBits.tsx",
+     "status": "ours",
+     "grade": "good",
+     "swapTo": null,
+     "why": [
+      "iterated 4 days, kept"
+     ],
+     "loc": 59
+    },
+    {
+     "name": "Row",
+     "file": "src/ui/Row.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 55
+    },
+    {
+     "name": "StatusBadge",
+     "file": "src/ui/StatusBadge.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 97
+    },
+    {
+     "name": "StateIcons",
+     "file": "src/components/board/icons/StateIcons.tsx",
+     "status": "picked",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 98
+    }
+   ]
+  },
+  {
+   "name": "ChangesScreen",
+   "file": "src/components/screens/ChangesScreen.tsx",
+   "loc": 93,
+   "components": [
+    {
+     "name": "EmptyArt",
+     "file": "src/ui/EmptyArt.tsx",
+     "status": "needs-pick",
+     "grade": "ok",
+     "swapTo": "arc:empty-state",
+     "why": [],
+     "loc": 42
+    },
+    {
+     "name": "EmptyState",
+     "file": "src/ui/EmptyState.tsx",
+     "status": "needs-pick",
+     "grade": "good",
+     "swapTo": "arc:empty-state",
+     "why": [
+      "iterated 3 days, kept"
+     ],
+     "loc": 35
+    },
+    {
+     "name": "ContextHelp",
+     "file": "src/components/board/ContextHelp.tsx",
+     "status": "ours",
+     "grade": "good",
+     "swapTo": null,
+     "why": [
+      "iterated 6 days, kept"
+     ],
+     "loc": 104
+    },
+    {
+     "name": "EvidenceBits",
+     "file": "src/components/board/EvidenceBits.tsx",
+     "status": "ours",
+     "grade": "good",
+     "swapTo": null,
+     "why": [
+      "iterated 3 days, kept"
+     ],
+     "loc": 147
+    },
+    {
+     "name": "OperatorSurface",
+     "file": "src/components/board/OperatorSurface.tsx",
+     "status": "ours",
+     "grade": "good",
+     "swapTo": null,
+     "why": [
+      "iterated 6 days, kept"
+     ],
+     "loc": 123
+    },
+    {
+     "name": "Card",
+     "file": "src/ui/Card.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 40
+    },
+    {
+     "name": "Row",
+     "file": "src/ui/Row.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 55
+    },
+    {
+     "name": "StatusBadge",
+     "file": "src/ui/StatusBadge.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 97
+    }
+   ]
+  },
+  {
+   "name": "NeedsYou",
+   "file": "src/components/screens/NeedsYou.tsx",
+   "loc": 258,
+   "components": [
+    {
+     "name": "ConfirmDialog",
+     "file": "src/ui/ConfirmDialog.tsx",
+     "status": "needs-pick",
+     "grade": "ok",
+     "swapTo": "arc:dialog",
+     "why": [],
+     "loc": 20
+    },
+    {
+     "name": "DraftGuard",
+     "file": "src/ui/DraftGuard.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 32
+    },
+    {
+     "name": "Row",
+     "file": "src/ui/Row.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 55
+    },
+    {
+     "name": "StatusBadge",
+     "file": "src/ui/StatusBadge.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 97
+    },
+    {
+     "name": "badge",
+     "file": "src/components/ui/badge.tsx",
+     "status": "picked",
+     "grade": "good",
+     "swapTo": null,
+     "why": [
+      "from shadcn"
+     ],
+     "loc": 53
+    },
+    {
+     "name": "button",
+     "file": "src/components/ui/button.tsx",
+     "status": "picked",
+     "grade": "good",
+     "swapTo": null,
+     "why": [
+      "from shadcn"
+     ],
+     "loc": 59
+    },
+    {
+     "name": "card",
+     "file": "src/components/ui/card.tsx",
+     "status": "picked",
+     "grade": "good",
+     "swapTo": null,
+     "why": [
+      "from shadcn"
+     ],
+     "loc": 104
+    },
+    {
+     "name": "input",
+     "file": "src/components/ui/input.tsx",
+     "status": "picked",
+     "grade": "good",
+     "swapTo": null,
+     "why": [
+      "from shadcn"
+     ],
+     "loc": 21
+    }
+   ]
+  },
+  {
+   "name": "StreamsDesk",
+   "file": "src/components/screens/StreamsDesk.tsx",
+   "loc": 597,
+   "components": [
+    {
+     "name": "Avatar",
+     "file": "src/components/board/Avatar.tsx",
+     "status": "needs-pick",
+     "grade": "ok",
+     "swapTo": "arc:avatar",
+     "why": [],
+     "loc": 8
+    },
+    {
+     "name": "EmptyArt",
+     "file": "src/ui/EmptyArt.tsx",
+     "status": "needs-pick",
+     "grade": "ok",
+     "swapTo": "arc:empty-state",
+     "why": [],
+     "loc": 42
+    },
+    {
+     "name": "EmptyState",
+     "file": "src/ui/EmptyState.tsx",
+     "status": "needs-pick",
+     "grade": "good",
+     "swapTo": "arc:empty-state",
+     "why": [
+      "iterated 3 days, kept"
+     ],
+     "loc": 35
+    },
+    {
+     "name": "HlsVideo",
+     "file": "src/components/board/HlsVideo.tsx",
+     "status": "ours",
+     "grade": "good",
+     "swapTo": null,
+     "why": [
+      "iterated 3 days, kept"
+     ],
+     "loc": 90
+    },
+    {
+     "name": "StatusBits",
+     "file": "src/components/board/StatusBits.tsx",
+     "status": "ours",
+     "grade": "good",
+     "swapTo": null,
+     "why": [
+      "iterated 4 days, kept"
+     ],
+     "loc": 59
+    },
+    {
+     "name": "Card",
+     "file": "src/ui/Card.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 40
+    },
+    {
+     "name": "Segmented",
+     "file": "src/ui/Segmented.tsx",
+     "status": "ours",
+     "grade": "good",
+     "swapTo": null,
+     "why": [
+      "iterated 3 days, kept"
+     ],
+     "loc": 76
+    },
+    {
+     "name": "StatusBadge",
+     "file": "src/ui/StatusBadge.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 97
+    }
+   ]
+  },
+  {
+   "name": "ModelSetup",
+   "file": "src/components/screens/ModelSetup.tsx",
+   "loc": 239,
+   "components": [
+    {
+     "name": "PlatformGlyph",
+     "file": "src/components/board/PlatformGlyph.tsx",
+     "status": "ours",
+     "grade": "weak",
+     "swapTo": null,
+     "why": [
+      "- 7 hard-coded colours"
+     ],
+     "loc": 88
+    },
+    {
+     "name": "StatusBits",
+     "file": "src/components/board/StatusBits.tsx",
+     "status": "ours",
+     "grade": "good",
+     "swapTo": null,
+     "why": [
+      "iterated 4 days, kept"
+     ],
+     "loc": 59
+    },
+    {
+     "name": "ActivationApproval",
+     "file": "src/components/screens/ActivationApproval.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 50
+    },
+    {
+     "name": "SetupBar",
+     "file": "src/components/screens/SetupBar.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 102
+    },
+    {
+     "name": "StatusBadge",
+     "file": "src/ui/StatusBadge.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 97
+    },
+    {
+     "name": "button",
+     "file": "src/components/ui/button.tsx",
+     "status": "picked",
+     "grade": "good",
+     "swapTo": null,
+     "why": [
+      "from shadcn"
+     ],
+     "loc": 59
+    },
+    {
+     "name": "input",
+     "file": "src/components/ui/input.tsx",
+     "status": "picked",
+     "grade": "good",
+     "swapTo": null,
+     "why": [
+      "from shadcn"
+     ],
+     "loc": 21
+    }
+   ]
+  },
+  {
+   "name": "FleetActivity",
+   "file": "src/components/screens/FleetActivity.tsx",
+   "loc": 19,
+   "components": [
+    {
+     "name": "EmptyArt",
+     "file": "src/ui/EmptyArt.tsx",
+     "status": "needs-pick",
+     "grade": "ok",
+     "swapTo": "arc:empty-state",
+     "why": [],
+     "loc": 42
+    },
+    {
+     "name": "EmptyState",
+     "file": "src/ui/EmptyState.tsx",
+     "status": "needs-pick",
+     "grade": "good",
+     "swapTo": "arc:empty-state",
+     "why": [
+      "iterated 3 days, kept"
+     ],
+     "loc": 35
+    },
+    {
+     "name": "OperatorSurface",
+     "file": "src/components/board/OperatorSurface.tsx",
+     "status": "ours",
+     "grade": "good",
+     "swapTo": null,
+     "why": [
+      "iterated 6 days, kept"
+     ],
+     "loc": 123
+    },
+    {
+     "name": "StatusBits",
+     "file": "src/components/board/StatusBits.tsx",
+     "status": "ours",
+     "grade": "good",
+     "swapTo": null,
+     "why": [
+      "iterated 4 days, kept"
+     ],
+     "loc": 59
+    },
+    {
+     "name": "StatusBadge",
+     "file": "src/ui/StatusBadge.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 97
+    }
+   ]
+  },
+  {
+   "name": "OnboardingPreparation",
+   "file": "src/components/screens/OnboardingPreparation.tsx",
+   "loc": 86,
+   "components": [
+    {
+     "name": "button",
+     "file": "src/components/ui/button.tsx",
+     "status": "picked",
+     "grade": "good",
+     "swapTo": null,
+     "why": [
+      "from shadcn"
+     ],
+     "loc": 59
+    },
+    {
+     "name": "field",
+     "file": "src/components/ui/field.tsx",
+     "status": "picked",
+     "grade": "good",
+     "swapTo": null,
+     "why": [
+      "from shadcn"
+     ],
+     "loc": 237
+    },
+    {
+     "name": "label",
+     "file": "src/components/ui/label.tsx",
+     "status": "picked",
+     "grade": "good",
+     "swapTo": null,
+     "why": [
+      "from shadcn"
+     ],
+     "loc": 20
+    },
+    {
+     "name": "separator",
+     "file": "src/components/ui/separator.tsx",
+     "status": "picked",
+     "grade": "good",
+     "swapTo": null,
+     "why": [
+      "from shadcn"
+     ],
+     "loc": 24
+    },
+    {
+     "name": "textarea",
+     "file": "src/components/ui/textarea.tsx",
+     "status": "picked",
+     "grade": "good",
+     "swapTo": null,
+     "why": [
+      "from shadcn"
+     ],
+     "loc": 18
+    }
+   ]
+  },
+  {
+   "name": "SessionDetail",
+   "file": "src/components/screens/SessionDetail.tsx",
+   "loc": 235,
+   "components": [
+    {
+     "name": "PlatformGlyph",
+     "file": "src/components/board/PlatformGlyph.tsx",
+     "status": "ours",
+     "grade": "weak",
+     "swapTo": null,
+     "why": [
+      "- 7 hard-coded colours"
+     ],
+     "loc": 88
+    },
+    {
+     "name": "SessionRecordings",
+     "file": "src/components/board/SessionRecordings.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 229
+    },
+    {
+     "name": "StatusBits",
+     "file": "src/components/board/StatusBits.tsx",
+     "status": "ours",
+     "grade": "good",
+     "swapTo": null,
+     "why": [
+      "iterated 4 days, kept"
+     ],
+     "loc": 59
+    },
+    {
+     "name": "Row",
+     "file": "src/ui/Row.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 55
+    },
+    {
+     "name": "StatusBadge",
+     "file": "src/ui/StatusBadge.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 97
+    }
+   ]
+  },
+  {
+   "name": "TodayTotals",
+   "file": "src/components/screens/TodayTotals.tsx",
+   "loc": 172,
+   "components": [
+    {
+     "name": "StatTile",
+     "file": "src/ui/StatTile.tsx",
+     "status": "needs-pick",
+     "grade": "ok",
+     "swapTo": "arc:metric-card",
+     "why": [],
+     "loc": 35
+    },
+    {
+     "name": "MetricTrend",
+     "file": "src/ui/bank/MetricTrend.tsx",
+     "status": "needs-pick",
+     "grade": "ok",
+     "swapTo": "arc:metric-card",
+     "why": [],
+     "loc": 17
+    },
+    {
+     "name": "StatusBits",
+     "file": "src/components/board/StatusBits.tsx",
+     "status": "ours",
+     "grade": "good",
+     "swapTo": null,
+     "why": [
+      "iterated 4 days, kept"
+     ],
+     "loc": 59
+    },
+    {
+     "name": "Segmented",
+     "file": "src/ui/Segmented.tsx",
+     "status": "ours",
+     "grade": "good",
+     "swapTo": null,
+     "why": [
+      "iterated 3 days, kept"
+     ],
+     "loc": 76
+    },
+    {
+     "name": "StatusBadge",
+     "file": "src/ui/StatusBadge.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 97
+    }
+   ]
+  },
+  {
+   "name": "ModelLiveWindow",
+   "file": "src/components/screens/ModelLiveWindow.tsx",
+   "loc": 91,
+   "components": [
+    {
+     "name": "HlsVideo",
+     "file": "src/components/board/HlsVideo.tsx",
+     "status": "ours",
+     "grade": "good",
+     "swapTo": null,
+     "why": [
+      "iterated 3 days, kept"
+     ],
+     "loc": 90
+    },
+    {
+     "name": "PlatformGlyph",
+     "file": "src/components/board/PlatformGlyph.tsx",
+     "status": "ours",
+     "grade": "weak",
+     "swapTo": null,
+     "why": [
+      "- 7 hard-coded colours"
+     ],
+     "loc": 88
+    },
+    {
+     "name": "StatusBits",
+     "file": "src/components/board/StatusBits.tsx",
+     "status": "ours",
+     "grade": "good",
+     "swapTo": null,
+     "why": [
+      "iterated 4 days, kept"
+     ],
+     "loc": 59
+    },
+    {
+     "name": "StatusBadge",
+     "file": "src/ui/StatusBadge.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 97
+    }
+   ]
+  },
+  {
+   "name": "OnboardingAccountEntry",
+   "file": "src/components/screens/OnboardingAccountEntry.tsx",
+   "loc": 57,
+   "components": [
+    {
+     "name": "PlatformGlyph",
+     "file": "src/components/board/PlatformGlyph.tsx",
+     "status": "ours",
+     "grade": "weak",
+     "swapTo": null,
+     "why": [
+      "- 7 hard-coded colours"
+     ],
+     "loc": 88
+    },
+    {
+     "name": "StatusBits",
+     "file": "src/components/board/StatusBits.tsx",
+     "status": "ours",
+     "grade": "good",
+     "swapTo": null,
+     "why": [
+      "iterated 4 days, kept"
+     ],
+     "loc": 59
+    },
+    {
+     "name": "StatusBadge",
+     "file": "src/ui/StatusBadge.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 97
+    },
+    {
+     "name": "button",
+     "file": "src/components/ui/button.tsx",
+     "status": "picked",
+     "grade": "good",
+     "swapTo": null,
+     "why": [
+      "from shadcn"
+     ],
+     "loc": 59
+    }
+   ]
+  },
+  {
+   "name": "DiagnosticsScreen",
+   "file": "src/components/screens/DiagnosticsScreen.tsx",
+   "loc": 263,
+   "components": [
+    {
+     "name": "HostStats",
+     "file": "src/components/board/HostStats.tsx",
+     "status": "needs-pick",
+     "grade": "ok",
+     "swapTo": "arc:metric-card",
+     "why": [],
+     "loc": 164
+    },
+    {
+     "name": "Row",
+     "file": "src/ui/Row.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 55
+    },
+    {
+     "name": "StatusBadge",
+     "file": "src/ui/StatusBadge.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 97
+    }
+   ]
+  },
+  {
+   "name": "SetupBar",
+   "file": "src/components/screens/SetupBar.tsx",
+   "loc": 102,
+   "components": [
+    {
+     "name": "PlatformGlyph",
+     "file": "src/components/board/PlatformGlyph.tsx",
+     "status": "ours",
+     "grade": "weak",
+     "swapTo": null,
+     "why": [
+      "- 7 hard-coded colours"
+     ],
+     "loc": 88
+    },
+    {
+     "name": "StatusBits",
+     "file": "src/components/board/StatusBits.tsx",
+     "status": "ours",
+     "grade": "good",
+     "swapTo": null,
+     "why": [
+      "iterated 4 days, kept"
+     ],
+     "loc": 59
+    },
+    {
+     "name": "StatusBadge",
+     "file": "src/ui/StatusBadge.tsx",
+     "status": "ours",
+     "grade": "ok",
+     "swapTo": null,
+     "why": [],
+     "loc": 97
+    }
+   ]
+  },
+  {
+   "name": "PerformancePeriod",
+   "file": "src/components/screens/PerformancePeriod.tsx",
+   "loc": 51,
+   "components": [
+    {
+     "name": "Segmented",
+     "file": "src/ui/Segmented.tsx",
+     "status": "ours",
+     "grade": "good",
+     "swapTo": null,
+     "why": [
+      "iterated 3 days, kept"
+     ],
+     "loc": 76
+    }
+   ]
+  },
+  {
+   "name": "ActivationApproval",
+   "file": "src/components/screens/ActivationApproval.tsx",
+   "loc": 50,
+   "components": []
+  },
+  {
+   "name": "SessionTotals",
+   "file": "src/components/screens/SessionTotals.tsx",
+   "loc": 30,
+   "components": []
+  }
+ ],
+ "components": [
+  {
+   "name": "App",
+   "file": "src/App.tsx",
+   "status": "ours",
+   "grade": "good",
+   "swapTo": null,
+   "kind": "page",
+   "pages": 0,
+   "why": [
+    "iterated 19 days, kept"
+   ]
+  },
+  {
+   "name": "AccountLoginDialog",
+   "file": "src/components/board/AccountLoginDialog.tsx",
+   "status": "needs-pick",
+   "grade": "ok",
+   "swapTo": "arc:dialog",
+   "kind": "pattern",
+   "pages": 4,
+   "why": []
+  },
+  {
+   "name": "AccountsGrid",
+   "file": "src/components/board/AccountsGrid.tsx",
+   "status": "dead",
+   "grade": "dead",
+   "swapTo": null,
+   "kind": "domain",
+   "pages": 0,
+   "why": [
+    "no page reaches it"
+   ]
+  },
+  {
+   "name": "AdminHelpPopover",
+   "file": "src/components/board/AdminHelpPopover.tsx",
+   "status": "needs-pick",
+   "grade": "ok",
+   "swapTo": "arc:popover",
+   "kind": "pattern",
+   "pages": 0,
+   "why": []
+  },
+  {
+   "name": "Avatar",
+   "file": "src/components/board/Avatar.tsx",
+   "status": "needs-pick",
+   "grade": "ok",
+   "swapTo": "arc:avatar",
+   "kind": "pattern",
+   "pages": 10,
+   "why": []
+  },
+  {
+   "name": "Breadcrumb",
+   "file": "src/components/board/Breadcrumb.tsx",
+   "status": "needs-pick",
+   "grade": "ok",
+   "swapTo": "arc:breadcrumb",
+   "kind": "pattern",
+   "pages": 0,
+   "why": []
+  },
+  {
+   "name": "ContextHelp",
+   "file": "src/components/board/ContextHelp.tsx",
+   "status": "ours",
+   "grade": "good",
+   "swapTo": null,
+   "kind": "domain",
+   "pages": 2,
+   "why": [
+    "iterated 6 days, kept"
+   ]
+  },
+  {
+   "name": "EarningsChart",
+   "file": "src/components/board/EarningsChart.tsx",
+   "status": "ours",
+   "grade": "good",
+   "swapTo": null,
+   "kind": "domain",
+   "pages": 4,
+   "why": [
+    "iterated 9 days, kept"
+   ]
+  },
+  {
+   "name": "EarningsStrip",
+   "file": "src/components/board/EarningsStrip.tsx",
+   "status": "dead",
+   "grade": "dead",
+   "swapTo": null,
+   "kind": "domain",
+   "pages": 0,
+   "why": [
+    "no page reaches it"
+   ]
+  },
+  {
+   "name": "EvidenceBits",
+   "file": "src/components/board/EvidenceBits.tsx",
+   "status": "ours",
+   "grade": "good",
+   "swapTo": null,
+   "kind": "domain",
+   "pages": 2,
+   "why": [
+    "iterated 3 days, kept"
+   ]
+  },
+  {
+   "name": "GroupedRail",
+   "file": "src/components/board/GroupedRail.tsx",
+   "status": "ours",
+   "grade": "good",
+   "swapTo": null,
+   "kind": "domain",
+   "pages": 0,
+   "why": [
+    "iterated 6 days, kept"
+   ]
+  },
+  {
+   "name": "HlsVideo",
+   "file": "src/components/board/HlsVideo.tsx",
+   "status": "ours",
+   "grade": "good",
+   "swapTo": null,
+   "kind": "domain",
+   "pages": 5,
+   "why": [
+    "iterated 3 days, kept"
+   ]
+  },
+  {
+   "name": "HostStats",
+   "file": "src/components/board/HostStats.tsx",
+   "status": "needs-pick",
+   "grade": "ok",
+   "swapTo": "arc:metric-card",
+   "kind": "pattern",
+   "pages": 2,
+   "why": []
+  },
+  {
+   "name": "ModelHero",
+   "file": "src/components/board/ModelHero.tsx",
+   "status": "dead",
+   "grade": "dead",
+   "swapTo": null,
+   "kind": "domain",
+   "pages": 0,
+   "why": [
+    "no page reaches it"
+   ]
+  },
+  {
+   "name": "ModelNoteEditor",
+   "file": "src/components/board/ModelNoteEditor.tsx",
+   "status": "dead",
+   "grade": "dead",
+   "swapTo": null,
+   "kind": "pattern",
+   "pages": 0,
+   "why": [
+    "no page reaches it"
+   ]
+  },
+  {
+   "name": "OperatorSurface",
+   "file": "src/components/board/OperatorSurface.tsx",
+   "status": "ours",
+   "grade": "good",
+   "swapTo": null,
+   "kind": "domain",
+   "pages": 9,
+   "why": [
+    "iterated 6 days, kept"
+   ]
+  },
+  {
+   "name": "PlatformBreakdown",
+   "file": "src/components/board/PlatformBreakdown.tsx",
+   "status": "dead",
+   "grade": "dead",
+   "swapTo": null,
+   "kind": "domain",
+   "pages": 0,
+   "why": [
+    "no page reaches it"
+   ]
+  },
+  {
+   "name": "PlatformGlyph",
+   "file": "src/components/board/PlatformGlyph.tsx",
+   "status": "ours",
+   "grade": "weak",
+   "swapTo": null,
+   "kind": "domain",
+   "pages": 15,
+   "why": [
+    "- 7 hard-coded colours"
+   ]
+  },
+  {
+   "name": "RecordFields",
+   "file": "src/components/board/RecordFields.tsx",
+   "status": "ours",
+   "grade": "ok",
+   "swapTo": null,
+   "kind": "pattern",
+   "pages": 1,
+   "why": []
+  },
+  {
+   "name": "SeedBadge",
+   "file": "src/components/board/SeedBadge.tsx",
+   "status": "ours",
+   "grade": "ok",
+   "swapTo": null,
+   "kind": "pattern",
+   "pages": 7,
+   "why": []
+  },
+  {
+   "name": "SessionDrafts",
+   "file": "src/components/board/SessionDrafts.tsx",
+   "status": "ours",
+   "grade": "ok",
+   "swapTo": null,
+   "kind": "domain",
+   "pages": 1,
+   "why": []
+  },
+  {
+   "name": "SessionRecordings",
+   "file": "src/components/board/SessionRecordings.tsx",
+   "status": "ours",
+   "grade": "ok",
+   "swapTo": null,
+   "kind": "domain",
+   "pages": 1,
+   "why": []
+  },
+  {
+   "name": "SessionsTable",
+   "file": "src/components/board/SessionsTable.tsx",
+   "status": "needs-pick",
+   "grade": "ok",
+   "swapTo": "arc:sortable-data-table",
+   "kind": "pattern",
+   "pages": 2,
+   "why": [
+    "iterated 8 days, kept",
+    "- 1 clickable div"
+   ]
+  },
+  {
+   "name": "SourceLine",
+   "file": "src/components/board/SourceLine.tsx",
+   "status": "ours",
+   "grade": "ok",
+   "swapTo": null,
+   "kind": "domain",
+   "pages": 0,
+   "why": []
+  },
+  {
+   "name": "StatusBits",
+   "file": "src/components/board/StatusBits.tsx",
+   "status": "ours",
+   "grade": "good",
+   "swapTo": null,
+   "kind": "pattern",
+   "pages": 22,
+   "why": [
+    "iterated 4 days, kept"
+   ]
+  },
+  {
+   "name": "StreakCard",
+   "file": "src/components/board/StreakCard.tsx",
+   "status": "dead",
+   "grade": "dead",
+   "swapTo": null,
+   "kind": "domain",
+   "pages": 0,
+   "why": [
+    "no page reaches it"
+   ]
+  },
+  {
+   "name": "TokenRevoke",
+   "file": "src/components/board/TokenRevoke.tsx",
+   "status": "ours",
+   "grade": "ok",
+   "swapTo": null,
+   "kind": "domain",
+   "pages": 2,
+   "why": []
+  },
+  {
+   "name": "TopTippers",
+   "file": "src/components/board/TopTippers.tsx",
+   "status": "dead",
+   "grade": "dead",
+   "swapTo": null,
+   "kind": "domain",
+   "pages": 0,
+   "why": [
+    "no page reaches it"
+   ]
+  },
+  {
+   "name": "TutorialPlayer",
+   "file": "src/components/board/TutorialPlayer.tsx",
+   "status": "ours",
+   "grade": "ok",
+   "swapTo": null,
+   "kind": "domain",
+   "pages": 1,
+   "why": []
+  },
+  {
+   "name": "VpsDesktopDialog",
+   "file": "src/components/board/VpsDesktopDialog.tsx",
+   "status": "needs-pick",
+   "grade": "ok",
+   "swapTo": "arc:dialog",
+   "kind": "pattern",
+   "pages": 4,
+   "why": []
+  },
+  {
+   "name": "WorkspaceNotifications",
+   "file": "src/components/board/WorkspaceNotifications.tsx",
+   "status": "needs-pick",
+   "grade": "good",
+   "swapTo": "arc:toast",
+   "kind": "pattern",
+   "pages": 1,
+   "why": [
+    "iterated 7 days, kept"
+   ]
+  },
+  {
+   "name": "WorkspaceQuickJump",
+   "file": "src/components/board/WorkspaceQuickJump.tsx",
+   "status": "ours",
+   "grade": "ok",
+   "swapTo": null,
+   "kind": "domain",
+   "pages": 0,
+   "why": [
+    "iterated 6 days, kept",
+    "- 1 emoji",
+    "- motion without reduced-motion"
+   ]
+  },
+  {
+   "name": "StateIcons",
+   "file": "src/components/board/icons/StateIcons.tsx",
+   "status": "picked",
+   "grade": "ok",
+   "swapTo": null,
+   "kind": "icon",
+   "pages": 1,
+   "why": []
+  },
+  {
+   "name": "badge-alert",
+   "file": "src/components/board/icons/pq/badge-alert.tsx",
+   "status": "ours",
+   "grade": "weak",
+   "swapTo": null,
+   "kind": "icon",
+   "pages": 0,
+   "why": [
+    "- motion without reduced-motion"
+   ]
+  },
+  {
+   "name": "bell",
+   "file": "src/components/board/icons/pq/bell.tsx",
+   "status": "needs-pick",
+   "grade": "weak",
+   "swapTo": "arc:notification-center",
+   "kind": "icon",
+   "pages": 0,
+   "why": [
+    "- motion without reduced-motion"
+   ]
+  },
+  {
+   "name": "chart-column-increasing",
+   "file": "src/components/board/icons/pq/chart-column-increasing.tsx",
+   "status": "ours",
+   "grade": "weak",
+   "swapTo": null,
+   "kind": "icon",
+   "pages": 0,
+   "why": [
+    "- motion without reduced-motion"
+   ]
+  },
+  {
+   "name": "clock",
+   "file": "src/components/board/icons/pq/clock.tsx",
+   "status": "ours",
+   "grade": "weak",
+   "swapTo": null,
+   "kind": "icon",
+   "pages": 0,
+   "why": [
+    "- motion without reduced-motion"
+   ]
+  },
+  {
+   "name": "hand-coins",
+   "file": "src/components/board/icons/pq/hand-coins.tsx",
+   "status": "ours",
+   "grade": "weak",
+   "swapTo": null,
+   "kind": "icon",
+   "pages": 0,
+   "why": [
+    "- motion without reduced-motion"
+   ]
+  },
+  {
+   "name": "home",
+   "file": "src/components/board/icons/pq/home.tsx",
+   "status": "ours",
+   "grade": "weak",
+   "swapTo": null,
+   "kind": "icon",
+   "pages": 0,
+   "why": [
+    "- motion without reduced-motion"
+   ]
+  },
+  {
+   "name": "panel-left-close",
+   "file": "src/components/board/icons/pq/panel-left-close.tsx",
+   "status": "ours",
+   "grade": "weak",
+   "swapTo": null,
+   "kind": "icon",
+   "pages": 0,
+   "why": [
+    "- motion without reduced-motion"
+   ]
+  },
+  {
+   "name": "panel-left-open",
+   "file": "src/components/board/icons/pq/panel-left-open.tsx",
+   "status": "ours",
+   "grade": "weak",
+   "swapTo": null,
+   "kind": "icon",
+   "pages": 0,
+   "why": [
+    "- motion without reduced-motion"
+   ]
+  },
+  {
+   "name": "radio",
+   "file": "src/components/board/icons/pq/radio.tsx",
+   "status": "ours",
+   "grade": "weak",
+   "swapTo": null,
+   "kind": "icon",
+   "pages": 0,
+   "why": [
+    "- motion without reduced-motion"
+   ]
+  },
+  {
+   "name": "search",
+   "file": "src/components/board/icons/pq/search.tsx",
+   "status": "ours",
+   "grade": "weak",
+   "swapTo": null,
+   "kind": "icon",
+   "pages": 0,
+   "why": [
+    "- motion without reduced-motion"
+   ]
+  },
+  {
+   "name": "settings",
+   "file": "src/components/board/icons/pq/settings.tsx",
+   "status": "ours",
+   "grade": "weak",
+   "swapTo": null,
+   "kind": "icon",
+   "pages": 0,
+   "why": [
+    "- motion without reduced-motion"
+   ]
+  },
+  {
+   "name": "shield-check",
+   "file": "src/components/board/icons/pq/shield-check.tsx",
+   "status": "ours",
+   "grade": "weak",
+   "swapTo": null,
+   "kind": "icon",
+   "pages": 0,
+   "why": [
+    "- motion without reduced-motion"
+   ]
+  },
+  {
+   "name": "user-plus",
+   "file": "src/components/board/icons/pq/user-plus.tsx",
+   "status": "ours",
+   "grade": "weak",
+   "swapTo": null,
+   "kind": "icon",
+   "pages": 0,
+   "why": [
+    "- motion without reduced-motion"
+   ]
+  },
+  {
+   "name": "users",
+   "file": "src/components/board/icons/pq/users.tsx",
+   "status": "ours",
+   "grade": "weak",
+   "swapTo": null,
+   "kind": "icon",
+   "pages": 0,
+   "why": [
+    "- motion without reduced-motion"
+   ]
+  },
+  {
+   "name": "railIcons",
+   "file": "src/components/board/icons/railIcons.tsx",
+   "status": "ours",
+   "grade": "ok",
+   "swapTo": null,
+   "kind": "icon",
+   "pages": 0,
+   "why": []
+  },
+  {
+   "name": "DevHub",
+   "file": "src/components/devhub/DevHub.tsx",
+   "status": "ours",
+   "grade": "ok",
+   "swapTo": null,
+   "kind": "domain",
+   "pages": 0,
+   "why": []
+  },
+  {
+   "name": "DocsHub",
+   "file": "src/components/devhub/DocsHub.tsx",
+   "status": "ours",
+   "grade": "ok",
+   "swapTo": null,
+   "kind": "domain",
+   "pages": 0,
+   "why": []
+  },
+  {
+   "name": "OracleAreaMenu",
+   "file": "src/components/devhub/OracleAreaMenu.tsx",
+   "status": "ours",
+   "grade": "ok",
+   "swapTo": null,
+   "kind": "pattern",
+   "pages": 0,
+   "why": []
+  },
+  {
+   "name": "AccountPage",
+   "file": "src/components/screens/AccountPage.tsx",
+   "status": "ours",
+   "grade": "ok",
+   "swapTo": null,
+   "kind": "page",
+   "pages": 0,
+   "why": [
+    "iterated 9 days, kept",
+    "- 1 clickable div"
+   ]
+  },
+  {
+   "name": "ActivationApproval",
+   "file": "src/components/screens/ActivationApproval.tsx",
+   "status": "ours",
+   "grade": "ok",
+   "swapTo": null,
+   "kind": "page",
+   "pages": 2,
+   "why": []
+  },
+  {
+   "name": "CasesScreen",
+   "file": "src/components/screens/CasesScreen.tsx",
+   "status": "ours",
+   "grade": "good",
+   "swapTo": null,
+   "kind": "page",
+   "pages": 0,
+   "why": [
+    "iterated 16 days, kept"
+   ]
+  },
+  {
+   "name": "ChangesScreen",
+   "file": "src/components/screens/ChangesScreen.tsx",
+   "status": "ours",
+   "grade": "good",
+   "swapTo": null,
+   "kind": "page",
+   "pages": 0,
+   "why": [
+    "iterated 7 days, kept"
+   ]
+  },
+  {
+   "name": "DiagnosticsScreen",
+   "file": "src/components/screens/DiagnosticsScreen.tsx",
+   "status": "ours",
+   "grade": "good",
+   "swapTo": null,
+   "kind": "page",
+   "pages": 0,
+   "why": [
+    "iterated 8 days, kept"
+   ]
+  },
+  {
+   "name": "FleetActivity",
+   "file": "src/components/screens/FleetActivity.tsx",
+   "status": "ours",
+   "grade": "ok",
+   "swapTo": null,
+   "kind": "page",
+   "pages": 0,
+   "why": []
+  },
+  {
+   "name": "FleetEarnings",
+   "file": "src/components/screens/FleetEarnings.tsx",
+   "status": "ours",
+   "grade": "good",
+   "swapTo": null,
+   "kind": "page",
+   "pages": 1,
+   "why": [
+    "iterated 10 days, kept"
+   ]
+  },
+  {
+   "name": "HomeQueue",
+   "file": "src/components/screens/HomeQueue.tsx",
+   "status": "ours",
+   "grade": "ok",
+   "swapTo": null,
+   "kind": "page",
+   "pages": 0,
+   "why": [
+    "iterated 15 days, kept",
+    "- 1 clickable div"
+   ]
+  },
+  {
+   "name": "Leaderboard",
+   "file": "src/components/screens/Leaderboard.tsx",
+   "status": "ours",
+   "grade": "ok",
+   "swapTo": null,
+   "kind": "page",
+   "pages": 1,
+   "why": []
+  },
+  {
+   "name": "ModelLiveWindow",
+   "file": "src/components/screens/ModelLiveWindow.tsx",
+   "status": "ours",
+   "grade": "good",
+   "swapTo": null,
+   "kind": "page",
+   "pages": 1,
+   "why": [
+    "iterated 5 days, kept"
+   ]
+  },
+  {
+   "name": "ModelRecord",
+   "file": "src/components/screens/ModelRecord.tsx",
+   "status": "ours",
+   "grade": "good",
+   "swapTo": null,
+   "kind": "page",
+   "pages": 0,
+   "why": [
+    "iterated 18 days, kept"
+   ]
+  },
+  {
+   "name": "ModelSetup",
+   "file": "src/components/screens/ModelSetup.tsx",
+   "status": "ours",
+   "grade": "ok",
+   "swapTo": null,
+   "kind": "page",
+   "pages": 1,
+   "why": []
+  },
+  {
+   "name": "ModelsRoster",
+   "file": "src/components/screens/ModelsRoster.tsx",
+   "status": "ours",
+   "grade": "ok",
+   "swapTo": null,
+   "kind": "page",
+   "pages": 1,
+   "why": [
+    "iterated 16 days, kept",
+    "- 2 clickable div"
+   ]
+  },
+  {
+   "name": "NeedsYou",
+   "file": "src/components/screens/NeedsYou.tsx",
+   "status": "ours",
+   "grade": "good",
+   "swapTo": null,
+   "kind": "page",
+   "pages": 1,
+   "why": [
+    "iterated 8 days, kept"
+   ]
+  },
+  {
+   "name": "NotificationsScreen",
+   "file": "src/components/screens/NotificationsScreen.tsx",
+   "status": "ours",
+   "grade": "good",
+   "swapTo": null,
+   "kind": "page",
+   "pages": 0,
+   "why": [
+    "iterated 6 days, kept"
+   ]
+  },
+  {
+   "name": "OnboardingAccountEntry",
+   "file": "src/components/screens/OnboardingAccountEntry.tsx",
+   "status": "ours",
+   "grade": "ok",
+   "swapTo": null,
+   "kind": "page",
+   "pages": 3,
+   "why": []
+  },
+  {
+   "name": "OnboardingBoard",
+   "file": "src/components/screens/OnboardingBoard.tsx",
+   "status": "ours",
+   "grade": "good",
+   "swapTo": null,
+   "kind": "page",
+   "pages": 0,
+   "why": [
+    "iterated 21 days, kept"
+   ]
+  },
+  {
+   "name": "OnboardingCreator",
+   "file": "src/components/screens/OnboardingCreator.tsx",
+   "status": "ours",
+   "grade": "ok",
+   "swapTo": null,
+   "kind": "page",
+   "pages": 1,
+   "why": [
+    "iterated 11 days, kept",
+    "- 1 emoji"
+   ]
+  },
+  {
+   "name": "OnboardingPreparation",
+   "file": "src/components/screens/OnboardingPreparation.tsx",
+   "status": "ours",
+   "grade": "ok",
+   "swapTo": null,
+   "kind": "page",
+   "pages": 2,
+   "why": []
+  },
+  {
+   "name": "OnboardingStepPage",
+   "file": "src/components/screens/OnboardingStepPage.tsx",
+   "status": "ours",
+   "grade": "ok",
+   "swapTo": null,
+   "kind": "page",
+   "pages": 2,
+   "why": []
+  },
+  {
+   "name": "PerformancePeriod",
+   "file": "src/components/screens/PerformancePeriod.tsx",
+   "status": "ours",
+   "grade": "ok",
+   "swapTo": null,
+   "kind": "page",
+   "pages": 2,
+   "why": []
+  },
+  {
+   "name": "ProductReadiness",
+   "file": "src/components/screens/ProductReadiness.tsx",
+   "status": "ours",
+   "grade": "good",
+   "swapTo": null,
+   "kind": "page",
+   "pages": 0,
+   "why": [
+    "iterated 6 days, kept"
+   ]
+  },
+  {
+   "name": "SessionDetail",
+   "file": "src/components/screens/SessionDetail.tsx",
+   "status": "ours",
+   "grade": "ok",
+   "swapTo": null,
+   "kind": "page",
+   "pages": 0,
+   "why": [
+    "iterated 12 days, kept",
+    "- 7 hard-coded colours"
+   ]
+  },
+  {
+   "name": "SessionTotals",
+   "file": "src/components/screens/SessionTotals.tsx",
+   "status": "ours",
+   "grade": "ok",
+   "swapTo": null,
+   "kind": "page",
+   "pages": 2,
+   "why": []
+  },
+  {
+   "name": "SessionsList",
+   "file": "src/components/screens/SessionsList.tsx",
+   "status": "ours",
+   "grade": "good",
+   "swapTo": null,
+   "kind": "page",
+   "pages": 1,
+   "why": [
+    "iterated 14 days, kept"
+   ]
+  },
+  {
+   "name": "SetupBar",
+   "file": "src/components/screens/SetupBar.tsx",
+   "status": "ours",
+   "grade": "ok",
+   "swapTo": null,
+   "kind": "page",
+   "pages": 2,
+   "why": []
+  },
+  {
+   "name": "StreamsDesk",
+   "file": "src/components/screens/StreamsDesk.tsx",
+   "status": "ours",
+   "grade": "good",
+   "swapTo": null,
+   "kind": "page",
+   "pages": 0,
+   "why": [
+    "iterated 6 days, kept"
+   ]
+  },
+  {
+   "name": "TodayLiveWall",
+   "file": "src/components/screens/TodayLiveWall.tsx",
+   "status": "ours",
+   "grade": "ok",
+   "swapTo": null,
+   "kind": "page",
+   "pages": 1,
+   "why": [
+    "iterated 10 days, kept",
+    "- 1 clickable div"
+   ]
+  },
+  {
+   "name": "TodayTotals",
+   "file": "src/components/screens/TodayTotals.tsx",
+   "status": "ours",
+   "grade": "good",
+   "swapTo": null,
+   "kind": "page",
+   "pages": 1,
+   "why": [
+    "iterated 4 days, kept"
+   ]
+  },
+  {
+   "name": "alert",
+   "file": "src/components/ui/alert.tsx",
+   "status": "picked",
+   "grade": "good",
+   "swapTo": null,
+   "kind": "pattern",
+   "pages": 3,
+   "why": [
+    "from shadcn"
+   ]
+  },
+  {
+   "name": "avatar",
+   "file": "src/components/ui/avatar.tsx",
+   "status": "dead",
+   "grade": "dead",
+   "swapTo": "arc:avatar",
+   "kind": "pattern",
+   "pages": 0,
+   "why": [
+    "no page reaches it"
+   ]
+  },
+  {
+   "name": "badge",
+   "file": "src/components/ui/badge.tsx",
+   "status": "picked",
+   "grade": "good",
+   "swapTo": null,
+   "kind": "pattern",
+   "pages": 5,
+   "why": [
+    "from shadcn"
+   ]
+  },
+  {
+   "name": "button",
+   "file": "src/components/ui/button.tsx",
+   "status": "picked",
+   "grade": "good",
+   "swapTo": null,
+   "kind": "pattern",
+   "pages": 12,
+   "why": [
+    "from shadcn"
+   ]
+  },
+  {
+   "name": "card",
+   "file": "src/components/ui/card.tsx",
+   "status": "picked",
+   "grade": "good",
+   "swapTo": null,
+   "kind": "domain",
+   "pages": 4,
+   "why": [
+    "from shadcn"
+   ]
+  },
+  {
+   "name": "chart",
+   "file": "src/components/ui/chart.tsx",
+   "status": "picked",
+   "grade": "good",
+   "swapTo": null,
+   "kind": "domain",
+   "pages": 4,
+   "why": [
+    "from shadcn"
+   ]
+  },
+  {
+   "name": "checkbox",
+   "file": "src/components/ui/checkbox.tsx",
+   "status": "picked",
+   "grade": "good",
+   "swapTo": null,
+   "kind": "pattern",
+   "pages": 3,
+   "why": [
+    "from shadcn"
+   ]
+  },
+  {
+   "name": "dialog",
+   "file": "src/components/ui/dialog.tsx",
+   "status": "needs-pick",
+   "grade": "good",
+   "swapTo": "arc:dialog",
+   "kind": "pattern",
+   "pages": 4,
+   "why": [
+    "from shadcn"
+   ]
+  },
+  {
+   "name": "dropdown-menu",
+   "file": "src/components/ui/dropdown-menu.tsx",
+   "status": "picked",
+   "grade": "good",
+   "swapTo": null,
+   "kind": "pattern",
+   "pages": 0,
+   "why": [
+    "from shadcn"
+   ]
+  },
+  {
+   "name": "empty",
+   "file": "src/components/ui/empty.tsx",
+   "status": "dead",
+   "grade": "dead",
+   "swapTo": "arc:empty-state",
+   "kind": "pattern",
+   "pages": 0,
+   "why": [
+    "no page reaches it"
+   ]
+  },
+  {
+   "name": "field",
+   "file": "src/components/ui/field.tsx",
+   "status": "picked",
+   "grade": "good",
+   "swapTo": null,
+   "kind": "pattern",
+   "pages": 5,
+   "why": [
+    "from shadcn"
+   ]
+  },
+  {
+   "name": "input",
+   "file": "src/components/ui/input.tsx",
+   "status": "picked",
+   "grade": "good",
+   "swapTo": null,
+   "kind": "pattern",
+   "pages": 10,
+   "why": [
+    "from shadcn"
+   ]
+  },
+  {
+   "name": "item",
+   "file": "src/components/ui/item.tsx",
+   "status": "picked",
+   "grade": "good",
+   "swapTo": null,
+   "kind": "domain",
+   "pages": 2,
+   "why": [
+    "from shadcn"
+   ]
+  },
+  {
+   "name": "label",
+   "file": "src/components/ui/label.tsx",
+   "status": "picked",
+   "grade": "good",
+   "swapTo": null,
+   "kind": "pattern",
+   "pages": 5,
+   "why": [
+    "from shadcn"
+   ]
+  },
+  {
+   "name": "progress",
+   "file": "src/components/ui/progress.tsx",
+   "status": "dead",
+   "grade": "dead",
+   "swapTo": null,
+   "kind": "domain",
+   "pages": 0,
+   "why": [
+    "no page reaches it"
+   ]
+  },
+  {
+   "name": "scroll-area",
+   "file": "src/components/ui/scroll-area.tsx",
+   "status": "dead",
+   "grade": "dead",
+   "swapTo": null,
+   "kind": "domain",
+   "pages": 0,
+   "why": [
+    "no page reaches it"
+   ]
+  },
+  {
+   "name": "select",
+   "file": "src/components/ui/select.tsx",
+   "status": "dead",
+   "grade": "dead",
+   "swapTo": null,
+   "kind": "pattern",
+   "pages": 0,
+   "why": [
+    "no page reaches it"
+   ]
+  },
+  {
+   "name": "separator",
+   "file": "src/components/ui/separator.tsx",
+   "status": "picked",
+   "grade": "good",
+   "swapTo": null,
+   "kind": "domain",
+   "pages": 5,
+   "why": [
+    "from shadcn"
+   ]
+  },
+  {
+   "name": "sheet",
+   "file": "src/components/ui/sheet.tsx",
+   "status": "needs-pick",
+   "grade": "good",
+   "swapTo": "arc:drawer",
+   "kind": "pattern",
+   "pages": 2,
+   "why": [
+    "from shadcn"
+   ]
+  },
+  {
+   "name": "sidebar",
+   "file": "src/components/ui/sidebar.tsx",
+   "status": "dead",
+   "grade": "dead",
+   "swapTo": null,
+   "kind": "domain",
+   "pages": 0,
+   "why": [
+    "no page reaches it"
+   ]
+  },
+  {
+   "name": "skeleton",
+   "file": "src/components/ui/skeleton.tsx",
+   "status": "needs-pick",
+   "grade": "good",
+   "swapTo": "arc:skeleton",
+   "kind": "pattern",
+   "pages": 0,
+   "why": [
+    "from shadcn"
+   ]
+  },
+  {
+   "name": "switch",
+   "file": "src/components/ui/switch.tsx",
+   "status": "dead",
+   "grade": "dead",
+   "swapTo": "arc:switch",
+   "kind": "pattern",
+   "pages": 0,
+   "why": [
+    "no page reaches it"
+   ]
+  },
+  {
+   "name": "table",
+   "file": "src/components/ui/table.tsx",
+   "status": "dead",
+   "grade": "dead",
+   "swapTo": "arc:sortable-data-table",
+   "kind": "pattern",
+   "pages": 0,
+   "why": [
+    "no page reaches it"
+   ]
+  },
+  {
+   "name": "tabs",
+   "file": "src/components/ui/tabs.tsx",
+   "status": "dead",
+   "grade": "dead",
+   "swapTo": "arc:tabs",
+   "kind": "pattern",
+   "pages": 0,
+   "why": [
+    "no page reaches it"
+   ]
+  },
+  {
+   "name": "textarea",
+   "file": "src/components/ui/textarea.tsx",
+   "status": "picked",
+   "grade": "good",
+   "swapTo": null,
+   "kind": "pattern",
+   "pages": 4,
+   "why": [
+    "from shadcn"
+   ]
+  },
+  {
+   "name": "to-do-item",
+   "file": "src/components/ui/to-do-item.tsx",
+   "status": "dead",
+   "grade": "dead",
+   "swapTo": null,
+   "kind": "domain",
+   "pages": 0,
+   "why": [
+    "no page reaches it"
+   ]
+  },
+  {
+   "name": "tooltip",
+   "file": "src/components/ui/tooltip.tsx",
+   "status": "needs-pick",
+   "grade": "good",
+   "swapTo": "arc:tooltip",
+   "kind": "pattern",
+   "pages": 0,
+   "why": [
+    "from shadcn"
+   ]
+  },
+  {
+   "name": "main",
+   "file": "src/main.tsx",
+   "status": "ours",
+   "grade": null,
+   "swapTo": null,
+   "kind": "root",
+   "pages": 0,
+   "why": []
+  },
+  {
+   "name": "ActionMenu",
+   "file": "src/ui/ActionMenu.tsx",
+   "status": "ours",
+   "grade": "ok",
+   "swapTo": null,
+   "kind": "pattern",
+   "pages": 2,
+   "why": []
+  },
+  {
+   "name": "Card",
+   "file": "src/ui/Card.tsx",
+   "status": "ours",
+   "grade": "ok",
+   "swapTo": null,
+   "kind": "domain",
+   "pages": 9,
+   "why": []
+  },
+  {
+   "name": "CardGrid",
+   "file": "src/ui/CardGrid.tsx",
+   "status": "ours",
+   "grade": "ok",
+   "swapTo": null,
+   "kind": "domain",
+   "pages": 4,
+   "why": []
+  },
+  {
+   "name": "ConfirmDialog",
+   "file": "src/ui/ConfirmDialog.tsx",
+   "status": "needs-pick",
+   "grade": "ok",
+   "swapTo": "arc:dialog",
+   "kind": "pattern",
+   "pages": 5,
+   "why": []
+  },
+  {
+   "name": "DraftGuard",
+   "file": "src/ui/DraftGuard.tsx",
+   "status": "ours",
+   "grade": "ok",
+   "swapTo": null,
+   "kind": "domain",
+   "pages": 5,
+   "why": []
+  },
+  {
+   "name": "EmptyArt",
+   "file": "src/ui/EmptyArt.tsx",
+   "status": "needs-pick",
+   "grade": "ok",
+   "swapTo": "arc:empty-state",
+   "kind": "pattern",
+   "pages": 13,
+   "why": []
+  },
+  {
+   "name": "EmptyState",
+   "file": "src/ui/EmptyState.tsx",
+   "status": "needs-pick",
+   "grade": "good",
+   "swapTo": "arc:empty-state",
+   "kind": "pattern",
+   "pages": 13,
+   "why": [
+    "iterated 3 days, kept"
+   ]
+  },
+  {
+   "name": "MonthCalendar",
+   "file": "src/ui/MonthCalendar.tsx",
+   "status": "needs-pick",
+   "grade": "ok",
+   "swapTo": "arc:date-picker",
+   "kind": "pattern",
+   "pages": 2,
+   "why": []
+  },
+  {
+   "name": "Popover",
+   "file": "src/ui/Popover.tsx",
+   "status": "needs-pick",
+   "grade": "ok",
+   "swapTo": "arc:popover",
+   "kind": "pattern",
+   "pages": 7,
+   "why": []
+  },
+  {
+   "name": "Row",
+   "file": "src/ui/Row.tsx",
+   "status": "ours",
+   "grade": "ok",
+   "swapTo": null,
+   "kind": "domain",
+   "pages": 13,
+   "why": []
+  },
+  {
+   "name": "Segmented",
+   "file": "src/ui/Segmented.tsx",
+   "status": "ours",
+   "grade": "good",
+   "swapTo": null,
+   "kind": "domain",
+   "pages": 10,
+   "why": [
+    "iterated 3 days, kept"
+   ]
+  },
+  {
+   "name": "StatTile",
+   "file": "src/ui/StatTile.tsx",
+   "status": "needs-pick",
+   "grade": "ok",
+   "swapTo": "arc:metric-card",
+   "kind": "pattern",
+   "pages": 4,
+   "why": []
+  },
+  {
+   "name": "StatusBadge",
+   "file": "src/ui/StatusBadge.tsx",
+   "status": "ours",
+   "grade": "ok",
+   "swapTo": null,
+   "kind": "pattern",
+   "pages": 25,
+   "why": []
+  },
+  {
+   "name": "Tabs",
+   "file": "src/ui/Tabs.tsx",
+   "status": "needs-pick",
+   "grade": "good",
+   "swapTo": "arc:tabs",
+   "kind": "pattern",
+   "pages": 7,
+   "why": [
+    "iterated 3 days, kept"
+   ]
+  },
+  {
+   "name": "Toast",
+   "file": "src/ui/Toast.tsx",
+   "status": "needs-pick",
+   "grade": "ok",
+   "swapTo": "arc:toast",
+   "kind": "pattern",
+   "pages": 0,
+   "why": []
+  },
+  {
+   "name": "AreaMetric",
+   "file": "src/ui/bank/AreaMetric.tsx",
+   "status": "needs-pick",
+   "grade": "ok",
+   "swapTo": "arc:metric-card",
+   "kind": "pattern",
+   "pages": 2,
+   "why": []
+  },
+  {
+   "name": "MetricTrend",
+   "file": "src/ui/bank/MetricTrend.tsx",
+   "status": "needs-pick",
+   "grade": "ok",
+   "swapTo": "arc:metric-card",
+   "kind": "pattern",
+   "pages": 4,
+   "why": []
+  },
+  {
+   "name": "OpportunityCard",
+   "file": "src/ui/bank/OpportunityCard.tsx",
+   "status": "ours",
+   "grade": "ok",
+   "swapTo": null,
+   "kind": "domain",
+   "pages": 2,
+   "why": []
+  },
+  {
+   "name": "AddField",
+   "file": "src/ui/grid/AddField.tsx",
+   "status": "ours",
+   "grade": "ok",
+   "swapTo": null,
+   "kind": "pattern",
+   "pages": 3,
+   "why": []
+  },
+  {
+   "name": "Cards",
+   "file": "src/ui/grid/Cards.tsx",
+   "status": "ours",
+   "grade": "ok",
+   "swapTo": null,
+   "kind": "domain",
+   "pages": 2,
+   "why": []
+  },
+  {
+   "name": "FilterBar",
+   "file": "src/ui/grid/FilterBar.tsx",
+   "status": "ours",
+   "grade": "ok",
+   "swapTo": null,
+   "kind": "domain",
+   "pages": 4,
+   "why": []
+  },
+  {
+   "name": "FilterBuilder",
+   "file": "src/ui/grid/FilterBuilder.tsx",
+   "status": "ours",
+   "grade": "ok",
+   "swapTo": null,
+   "kind": "domain",
+   "pages": 4,
+   "why": []
+  },
+  {
+   "name": "Grid",
+   "file": "src/ui/grid/Grid.tsx",
+   "status": "ours",
+   "grade": "ok",
+   "swapTo": null,
+   "kind": "domain",
+   "pages": 2,
+   "why": []
+  },
+  {
+   "name": "HideFields",
+   "file": "src/ui/grid/HideFields.tsx",
+   "status": "ours",
+   "grade": "ok",
+   "swapTo": null,
+   "kind": "pattern",
+   "pages": 4,
+   "why": []
+  },
+  {
+   "name": "Providers",
+   "file": "src/ui/grid/Providers.tsx",
+   "status": "ours",
+   "grade": "ok",
+   "swapTo": null,
+   "kind": "domain",
+   "pages": 4,
+   "why": []
+  },
+  {
+   "name": "Select",
+   "file": "src/ui/grid/Select.tsx",
+   "status": "ours",
+   "grade": "ok",
+   "swapTo": null,
+   "kind": "pattern",
+   "pages": 2,
+   "why": []
+  },
+  {
+   "name": "SortGroup",
+   "file": "src/ui/grid/SortGroup.tsx",
+   "status": "ours",
+   "grade": "ok",
+   "swapTo": null,
+   "kind": "domain",
+   "pages": 4,
+   "why": []
+  },
+  {
+   "name": "Tag",
+   "file": "src/ui/grid/Tag.tsx",
+   "status": "ours",
+   "grade": "ok",
+   "swapTo": null,
+   "kind": "pattern",
+   "pages": 2,
+   "why": []
+  },
+  {
+   "name": "ViewSwitch",
+   "file": "src/ui/grid/ViewSwitch.tsx",
+   "status": "needs-pick",
+   "grade": "ok",
+   "swapTo": "arc:switch",
+   "kind": "pattern",
+   "pages": 3,
+   "why": []
+  },
+  {
+   "name": "react-hammerjs",
+   "file": "src/ui/grid/shims/react-hammerjs.tsx",
+   "status": "dead",
+   "grade": "dead",
+   "swapTo": null,
+   "kind": "domain",
+   "pages": 0,
+   "why": [
+    "no page reaches it"
+   ]
+  },
+  {
+   "name": "sdk-hooks",
+   "file": "src/ui/grid/shims/sdk-hooks.tsx",
+   "status": "dead",
+   "grade": "dead",
+   "swapTo": null,
+   "kind": "domain",
+   "pages": 0,
+   "why": [
+    "no page reaches it"
+   ]
+  },
+  {
+   "name": "teable-next-themes",
+   "file": "src/ui/grid/shims/teable-next-themes.tsx",
+   "status": "dead",
+   "grade": "dead",
+   "swapTo": null,
+   "kind": "domain",
+   "pages": 0,
+   "why": [
+    "no page reaches it"
+   ]
+  },
+  {
+   "name": "WidgetFrame",
+   "file": "src/widgets/WidgetFrame.tsx",
+   "status": "ours",
+   "grade": "ok",
+   "swapTo": null,
+   "kind": "domain",
+   "pages": 2,
+   "why": []
+  },
+  {
+   "name": "WidgetHost",
+   "file": "src/widgets/WidgetHost.tsx",
+   "status": "ours",
+   "grade": "ok",
+   "swapTo": null,
+   "kind": "domain",
+   "pages": 2,
+   "why": []
+  },
+  {
+   "name": "WidgetPreview",
+   "file": "src/widgets/WidgetPreview.tsx",
+   "status": "ours",
+   "grade": "ok",
+   "swapTo": null,
+   "kind": "domain",
+   "pages": 2,
+   "why": []
+  },
+  {
+   "name": "WidgetsMenu",
+   "file": "src/widgets/WidgetsMenu.tsx",
+   "status": "ours",
+   "grade": "good",
+   "swapTo": null,
+   "kind": "pattern",
+   "pages": 2,
+   "why": [
+    "iterated 3 days, kept"
+   ]
+  },
+  {
+   "name": "index",
+   "file": "src/widgets/activity/index.tsx",
+   "status": "ours",
+   "grade": "ok",
+   "swapTo": null,
+   "kind": "domain",
+   "pages": 2,
+   "why": []
+  },
+  {
+   "name": "index",
+   "file": "src/widgets/by-platform/index.tsx",
+   "status": "ours",
+   "grade": "ok",
+   "swapTo": null,
+   "kind": "domain",
+   "pages": 2,
+   "why": []
+  },
+  {
+   "name": "index",
+   "file": "src/widgets/chart-by-metric/index.tsx",
+   "status": "ours",
+   "grade": "ok",
+   "swapTo": null,
+   "kind": "domain",
+   "pages": 2,
+   "why": []
+  },
+  {
+   "name": "index",
+   "file": "src/widgets/funnel/index.tsx",
+   "status": "ours",
+   "grade": "ok",
+   "swapTo": null,
+   "kind": "domain",
+   "pages": 2,
+   "why": []
+  },
+  {
+   "name": "index",
+   "file": "src/widgets/heat-map/index.tsx",
+   "status": "ours",
+   "grade": "ok",
+   "swapTo": null,
+   "kind": "domain",
+   "pages": 2,
+   "why": []
+  },
+  {
+   "name": "index",
+   "file": "src/widgets/hours-per-day/index.tsx",
+   "status": "ours",
+   "grade": "ok",
+   "swapTo": null,
+   "kind": "domain",
+   "pages": 2,
+   "why": []
+  },
+  {
+   "name": "index",
+   "file": "src/widgets/hours-vs-streaming/index.tsx",
+   "status": "ours",
+   "grade": "ok",
+   "swapTo": null,
+   "kind": "domain",
+   "pages": 2,
+   "why": []
+  },
+  {
+   "name": "index",
+   "file": "src/widgets/metric-strip/index.tsx",
+   "status": "ours",
+   "grade": "good",
+   "swapTo": null,
+   "kind": "domain",
+   "pages": 2,
+   "why": [
+    "iterated 3 days, kept"
+   ]
+  },
+  {
+   "name": "parts",
+   "file": "src/widgets/parts.tsx",
+   "status": "ours",
+   "grade": "ok",
+   "swapTo": null,
+   "kind": "domain",
+   "pages": 2,
+   "why": []
+  },
+  {
+   "name": "index",
+   "file": "src/widgets/sessions/index.tsx",
+   "status": "ours",
+   "grade": "ok",
+   "swapTo": null,
+   "kind": "domain",
+   "pages": 2,
+   "why": []
+  },
+  {
+   "name": "index",
+   "file": "src/widgets/streak/index.tsx",
+   "status": "ours",
+   "grade": "ok",
+   "swapTo": null,
+   "kind": "domain",
+   "pages": 2,
+   "why": []
+  },
+  {
+   "name": "index",
+   "file": "src/widgets/top-tippers/index.tsx",
+   "status": "ours",
+   "grade": "ok",
+   "swapTo": null,
+   "kind": "domain",
+   "pages": 2,
+   "why": []
+  },
+  {
+   "name": "index",
+   "file": "src/widgets/who-earns-here/index.tsx",
+   "status": "ours",
+   "grade": "ok",
+   "swapTo": null,
+   "kind": "domain",
+   "pages": 2,
+   "why": []
+  }
+ ]
+}

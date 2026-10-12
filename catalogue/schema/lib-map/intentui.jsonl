@@ -1,0 +1,112 @@
+{"id": "intentui:area-chart", "node": "component/chart", "variation": "area-chart", "job": "area chart showing values over time"}
+{"id": "intentui:auth-01", "node": "section/auth", "variation": "sign-in", "job": "sign-in block with email and password fields"}
+{"id": "intentui:auth-02", "node": "section/auth", "variation": "sign-in", "job": "sign-in block with social login options"}
+{"id": "intentui:auth-03", "node": "section/auth", "variation": "sign-in", "job": "sign-in block with a split layout"}
+{"id": "intentui:avatar", "node": "atom/avatar", "variation": "standard", "job": "round image or initials standing for a person"}
+{"id": "intentui:badge", "node": "atom/badge", "variation": "badge", "job": "small label marking a status or count"}
+{"id": "intentui:bar-chart", "node": "component/chart", "variation": "bar-chart", "job": "bar chart comparing values across categories"}
+{"id": "intentui:bar-list", "node": "component/chart", "variation": "bar-chart", "job": "ranked list of horizontal bars showing relative values"}
+{"id": "intentui:breadcrumbs", "node": "component/breadcrumb", "variation": "text-breadcrumb", "job": "trail of links showing the current page path"}
+{"id": "intentui:button", "node": "atom/button", "variation": "primary", "job": "button that triggers an action"}
+{"id": "intentui:button-group", "node": "atom/button", "variation": "group", "job": "row of joined buttons acting as one control"}
+{"id": "intentui:calendar", "node": "component/calendar", "variation": "month-calendar", "job": "month calendar for picking a date"}
+{"id": "intentui:card", "node": "component/card", "variation": "standard-card", "job": "bordered container grouping related content"}
+{"id": "intentui:carousel", "node": "component/carousel", "variation": "slider-carousel", "job": "carousel that slides through a set of items"}
+{"id": "intentui:chart", "node": "component/chart", "variation": null, "job": "generic chart frame with legend and tooltip", "edge": "chart container"}
+{"id": "intentui:checkbox", "node": "atom/choice", "variation": "checkbox", "job": "checkbox for choosing an option on or off"}
+{"id": "intentui:choice-box", "node": "atom/choice", "variation": "card", "job": "selectable card-style option box"}
+{"id": "intentui:color-area", "node": "component/picker", "variation": "color-picker", "job": "two-axis area for picking a colour"}
+{"id": "intentui:color-field", "node": "component/picker", "variation": "color-picker", "job": "text field for entering a colour value"}
+{"id": "intentui:color-picker", "node": "component/picker", "variation": "color-picker", "job": "colour picker with area, sliders and swatches"}
+{"id": "intentui:color-slider", "node": "atom/slider", "variation": "slider", "job": "slider for adjusting one colour channel"}
+{"id": "intentui:color-swatch", "node": "component/picker", "variation": "color-picker", "job": "colour chip showing a chosen colour"}
+{"id": "intentui:color-swatch-picker", "node": "component/picker", "variation": "color-picker", "job": "grid of colour swatches to pick from"}
+{"id": "intentui:color-thumb", "node": "component/picker", "variation": "color-picker", "job": "draggable thumb marking the colour position"}
+{"id": "intentui:color-wheel", "node": "component/picker", "variation": "color-picker", "job": "hue wheel for picking a colour"}
+{"id": "intentui:combo-box", "node": "component/select", "variation": "combobox", "job": "input that filters a list of options as you type"}
+{"id": "intentui:command-menu", "node": "component/command", "variation": "command-menu", "job": "command menu for searching and running actions"}
+{"id": "intentui:container", "node": "atom/layout", "variation": null, "job": "max-width wrapper centring page content", "edge": "content container"}
+{"id": "intentui:context-menu", "node": "component/menu", "variation": "context-menu", "job": "menu of actions opened by right-clicking"}
+{"id": "intentui:controlled-values", "node": "component/form", "variation": null, "job": "demo showing components driven by controlled state values", "edge": "state-driven form demo"}
+{"id": "intentui:date", "node": null, "variation": null, "job": "date formatting and parsing helper"}
+{"id": "intentui:date-field", "node": "component/picker", "variation": "date-picker", "job": "segmented field for typing a date"}
+{"id": "intentui:date-picker", "node": "component/picker", "variation": "date-picker", "job": "date picker with calendar popover"}
+{"id": "intentui:date-range-picker", "node": "component/picker", "variation": "date-range", "job": "date range picker with start and end dates"}
+{"id": "intentui:description-list", "node": "component/list", "variation": "standard-list", "job": "term and value pairs listing item details"}
+{"id": "intentui:dialog", "node": "component/dialog", "variation": "modal-dialog", "job": "dialog box shown over the page"}
+{"id": "intentui:disclosure-group", "node": "component/accordion", "variation": "standard-accordion", "job": "group of expandable sections"}
+{"id": "intentui:drop-zone", "node": "component/upload", "variation": "dropzone", "job": "drop area for dragging files to upload"}
+{"id": "intentui:dropdown", "node": "component/menu", "variation": "dropdown-menu", "job": "dropdown menu of actions from a trigger"}
+{"id": "intentui:field", "node": "component/field", "variation": "text-input", "job": "labelled field wrapper with description and error text"}
+{"id": "intentui:file-trigger", "node": "component/upload", "variation": null, "job": "button that opens the system file picker", "edge": "file picker trigger"}
+{"id": "intentui:grid-list", "node": "component/list", "variation": "standard-list", "job": "selectable list of items laid out in a grid"}
+{"id": "intentui:heading", "node": "atom/text", "variation": "heading", "job": "animated heading text for a section title"}
+{"id": "intentui:input", "node": "atom/text-input", "variation": "text-input", "job": "basic single-line text input"}
+{"id": "intentui:input-otp", "node": "atom/text-input", "variation": "otp", "job": "one-time code input split into separate boxes"}
+{"id": "intentui:keyboard", "node": "atom/text", "variation": "keyboard", "job": "styled keyboard key showing a shortcut"}
+{"id": "intentui:leaderboard", "node": "component/widget", "variation": "leaderboard", "job": "ranked leaderboard of players or entries"}
+{"id": "intentui:line-chart", "node": "component/chart", "variation": "line-chart", "job": "line chart showing trends over time"}
+{"id": "intentui:link", "node": "atom/link", "variation": "standard", "job": "link that goes to another page"}
+{"id": "intentui:list-box", "node": "component/select", "variation": "standard-select", "job": "listbox of options to choose from"}
+{"id": "intentui:loader", "node": "atom/loader", "variation": "spinner", "job": "spinner shown while content is loading"}
+{"id": "intentui:menu", "node": "component/menu", "variation": "dropdown-menu", "job": "menu of actions opened from a trigger"}
+{"id": "intentui:meter", "node": "atom/progress", "variation": "meter-gauge", "job": "meter showing a value within a range"}
+{"id": "intentui:modal", "node": "component/dialog", "variation": "modal-dialog", "job": "modal overlay that blocks the page behind it"}
+{"id": "intentui:multiple-select", "node": "component/select", "variation": "multi-select", "job": "select that chooses several options at once"}
+{"id": "intentui:native-select", "node": "component/select", "variation": "native-select", "job": "browser-native select dropdown for one option"}
+{"id": "intentui:navbar", "node": "section/nav", "variation": "simple-bar", "job": "top navigation bar with links and actions"}
+{"id": "intentui:note", "node": "atom/text", "variation": "body", "job": "small hint text placed under a form field"}
+{"id": "intentui:number-field", "node": "atom/text-input", "variation": "stepper", "job": "number input with increment and decrement controls"}
+{"id": "intentui:option-preview", "node": "component/select", "variation": null, "job": "demo previewing how select options render", "edge": "option preview demo"}
+{"id": "intentui:pagination", "node": "component/pagination", "variation": "numbered-pages", "job": "page numbers for moving through a long list"}
+{"id": "intentui:pie-chart", "node": "component/chart", "variation": "pie-donut", "job": "pie chart showing parts of a whole"}
+{"id": "intentui:popover", "node": "component/popover", "variation": "standard-popover", "job": "floating panel anchored to a trigger"}
+{"id": "intentui:preview", "node": "section/testimonials", "variation": "card-grid", "job": "preview cards of customer testimonials"}
+{"id": "intentui:primitive", "node": null, "variation": null, "job": "base primitive helper used by other components"}
+{"id": "intentui:progress-bar", "node": "atom/progress", "variation": "linear", "job": "bar showing how far a task has got"}
+{"id": "intentui:progress-circle", "node": "atom/progress", "variation": "circular", "job": "circular ring showing progress"}
+{"id": "intentui:radar-chart", "node": "component/chart", "variation": "radar-specialized", "job": "radar chart comparing values across several axes"}
+{"id": "intentui:radial-bar-chart", "node": "component/chart", "variation": "radar-specialized", "job": "radial chart with concentric bars showing values"}
+{"id": "intentui:radio", "node": "atom/choice", "variation": "radio", "job": "radio button for choosing one option"}
+{"id": "intentui:range-calendar", "node": "component/calendar", "variation": "range-picker", "job": "calendar for picking a start and end date"}
+{"id": "intentui:scroll-area", "node": "atom/layout", "variation": "scroll-area", "job": "area with a styled scrollbar for overflowing content"}
+{"id": "intentui:search-field", "node": "component/search", "variation": "search-field", "job": "search input with a clear button"}
+{"id": "intentui:select", "node": "component/select", "variation": "standard-select", "job": "dropdown select for choosing one option"}
+{"id": "intentui:separator", "node": "atom/layout", "variation": null, "job": "thin line separating parts of a layout", "edge": "plain divider"}
+{"id": "intentui:sheet", "node": "component/sheet", "variation": "side-sheet", "job": "panel that slides in from the edge"}
+{"id": "intentui:show-more", "node": "atom/link", "variation": "standard", "job": "control that expands hidden text to show more"}
+{"id": "intentui:sidebar", "node": "section/sidebar", "variation": "grouped", "job": "side navigation with grouped links"}
+{"id": "intentui:skeleton", "node": "atom/loader", "variation": "skeleton", "job": "placeholder shape shown while content loads"}
+{"id": "intentui:slider", "node": "atom/slider", "variation": "slider", "job": "slider for picking a value along a range"}
+{"id": "intentui:snippet", "node": "component/code", "variation": "snippet-copy", "job": "short code snippet with a copy button"}
+{"id": "intentui:switch", "node": "atom/switch", "variation": "standard", "job": "toggle switch turning a setting on or off"}
+{"id": "intentui:table", "node": "component/table", "variation": "standard-table", "job": "table of rows and columns showing data"}
+{"id": "intentui:tabs", "node": "component/tabs", "variation": "indicator", "job": "tabs switching panels with a sliding indicator"}
+{"id": "intentui:tag-field", "node": "component/tags", "variation": "basic-tag-input", "job": "input that turns typed entries into removable tags"}
+{"id": "intentui:tag-group", "node": "atom/badge", "variation": "tag-chip", "job": "group of removable tag chips"}
+{"id": "intentui:text", "node": "atom/text", "variation": null, "job": "text with an animated reveal effect", "edge": "animated text effect"}
+{"id": "intentui:text-field", "node": "component/field", "variation": "text-input", "job": "labelled text field with description and error text"}
+{"id": "intentui:textarea", "node": "atom/text-input", "variation": "textarea", "job": "multi-line text box for longer input"}
+{"id": "intentui:theme-blue", "node": null, "variation": null, "job": "colour theme tokens for the blue palette"}
+{"id": "intentui:theme-cyan", "node": null, "variation": null, "job": "colour theme tokens for the cyan palette"}
+{"id": "intentui:theme-default", "node": null, "variation": null, "job": "default colour theme tokens"}
+{"id": "intentui:theme-emerald", "node": null, "variation": null, "job": "colour theme tokens for the emerald palette"}
+{"id": "intentui:theme-green", "node": null, "variation": null, "job": "colour theme tokens for the green palette"}
+{"id": "intentui:theme-indigo", "node": null, "variation": null, "job": "colour theme tokens for the indigo palette"}
+{"id": "intentui:theme-lime", "node": null, "variation": null, "job": "colour theme tokens for the lime palette"}
+{"id": "intentui:theme-pink", "node": null, "variation": null, "job": "colour theme tokens for the pink palette"}
+{"id": "intentui:theme-purple", "node": null, "variation": null, "job": "colour theme tokens for the purple palette"}
+{"id": "intentui:theme-rose", "node": null, "variation": null, "job": "colour theme tokens for the rose palette"}
+{"id": "intentui:theme-sky", "node": null, "variation": null, "job": "colour theme tokens for the sky palette"}
+{"id": "intentui:theme-teal", "node": null, "variation": null, "job": "colour theme tokens for the teal palette"}
+{"id": "intentui:time-field", "node": "component/picker", "variation": "time-picker", "job": "segmented field for typing a time"}
+{"id": "intentui:toast", "node": "component/toast", "variation": "basic-toast", "job": "brief notification shown at the screen edge"}
+{"id": "intentui:toggle", "node": "atom/button", "variation": "toggle", "job": "button that switches between pressed and unpressed"}
+{"id": "intentui:toggle-group", "node": "atom/switch", "variation": "toggle-group", "job": "row of toggle buttons where one or more can be on"}
+{"id": "intentui:toolbar", "node": "component/dock", "variation": "action-toolbar", "job": "bar grouping action buttons with keyboard navigation"}
+{"id": "intentui:tooltip", "node": "atom/tooltip", "variation": "standard", "job": "small label shown on hover or focus"}
+{"id": "intentui:tracker", "node": "atom/progress", "variation": "segmented", "job": "row of status segments showing history over time"}
+{"id": "intentui:tree", "node": "component/tree", "variation": "standard-tree", "job": "expandable tree of nested items"}
+{"id": "intentui:use-clipboard", "node": null, "variation": null, "job": "clipboard copy helper hook"}
+{"id": "intentui:use-media-query", "node": null, "variation": null, "job": "hook reporting whether a media query matches"}
+{"id": "intentui:use-mobile", "node": null, "variation": null, "job": "hook reporting whether the viewport is mobile"}

@@ -1,0 +1,81 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "$id": "appfactory/0.1/components",
+ "title": ".appfactory/ui/components.json",
+ "type": "object",
+ "required": [
+  "components"
+ ],
+ "additionalProperties": false,
+ "properties": {
+  "$schema": {
+   "type": "string"
+  },
+  "components": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "required": [
+     "id",
+     "name",
+     "file",
+     "source",
+     "why",
+     "widgets",
+     "status"
+    ],
+    "additionalProperties": false,
+    "properties": {
+     "id": {
+      "type": "string",
+      "pattern": "^C-[a-z0-9-]+$"
+     },
+     "name": {
+      "type": "string"
+     },
+     "file": {
+      "type": "string"
+     },
+     "source": {
+      "type": "string",
+      "pattern": "^(siso:[a-z0-9-]+|pick:https?://.+|shadcn:[a-z0-9-]+|library:[\\w.-]+/[\\w.-]+|custom)$"
+     },
+     "uihub": {
+      "type": [
+       "string",
+       "null"
+      ]
+     },
+     "why": {
+      "type": "string",
+      "minLength": 3
+     },
+     "widgets": {
+      "type": "array",
+      "items": {
+       "type": "string",
+       "pattern": "^W-[a-z0-9-]+$"
+      }
+     },
+     "status": {
+      "enum": [
+       "picked",
+       "needs-pick",
+       "ours",
+       "dead"
+      ]
+     },
+     "swapTo": {
+      "type": [
+       "string",
+       "null"
+      ]
+     },
+     "note": {
+      "type": "string"
+     }
+    }
+   }
+  }
+ }
+}

@@ -1,0 +1,281 @@
+{
+ "$schema": "../../factory/standard/schema/widgets.schema.json",
+ "widgets": [
+  {
+   "id": "W-cores-rail",
+   "name": "Hub side nav",
+   "features": [
+    "F08"
+   ],
+   "shows": "HALO's four tools, search scoped to the open hub, the hubs grouped (Know who, Build with, Judge, Make); a hub opens its own side nav with a breadcrumb back",
+   "data": "factory/app/hubs.ts (+ cores.ts)",
+   "states": [
+    "ready",
+    "empty"
+   ],
+   "status": "built",
+   "note": "@siso/side-nav HubNav on branch app-factory/side-nav-20261010 of Agent Base's repo; every SISO OS space can use it."
+  },
+  {
+   "id": "W-working-tabs",
+   "name": "Working-set tabs",
+   "features": [
+    "F02",
+    "F03"
+   ],
+   "shows": "every page he opens as a tab; Projects and UI pinned",
+   "data": "localStorage af.tabs",
+   "states": [
+    "ready",
+    "empty"
+   ],
+   "status": "built",
+   "note": "Standalone view only; inside SISO OS (?embed=1) the OS draws the tabs."
+  },
+  {
+   "id": "W-project-grid",
+   "name": "Project cards",
+   "features": [
+    "F01"
+   ],
+   "shows": "one card per project: name, purpose, pages, components, weak, the four-colour status bar",
+   "data": "factory/data/projects.json (from inventory/summary.json)",
+   "states": [
+    "ready",
+    "loading",
+    "empty"
+   ],
+   "status": "built"
+  },
+  {
+   "id": "W-status-bar",
+   "name": "Status bar",
+   "features": [
+    "F01",
+    "F02"
+   ],
+   "shows": "picked green, needs a pick amber, ours orange, dead red, in proportion",
+   "data": "the project's components",
+   "states": [
+    "ready"
+   ],
+   "status": "built"
+  },
+  {
+   "id": "W-project-header",
+   "name": "Project header",
+   "features": [
+    "F02"
+   ],
+   "shows": "name, page and component counts, census commit",
+   "data": "factory/data/projects/<id>.json",
+   "states": [
+    "ready",
+    "loading"
+   ],
+   "status": "built"
+  },
+  {
+   "id": "W-status-filter",
+   "name": "Status filter",
+   "features": [
+    "F02"
+   ],
+   "shows": "all / picked / needs a pick / ours / dead, with counts",
+   "data": "the project's components",
+   "states": [
+    "ready"
+   ],
+   "status": "built"
+  },
+  {
+   "id": "W-page-card",
+   "name": "Page card",
+   "features": [
+    "F02"
+   ],
+   "shows": "one page with its components, each with a status dot and its proposed swap",
+   "data": "census usedOn",
+   "states": [
+    "ready",
+    "empty"
+   ],
+   "status": "built"
+  },
+  {
+   "id": "W-line-strip",
+   "name": "The line",
+   "features": [
+    "F02",
+    "F10"
+   ],
+   "shows": "the project's eight steps, done / doing / todo, and its check result",
+   "data": "the project's .appfactory/appfactory.json",
+   "states": [
+    "ready",
+    "empty",
+    "error"
+   ],
+   "status": "planned"
+  },
+  {
+   "id": "W-feature-chain",
+   "name": "Feature chain",
+   "features": [
+    "F02",
+    "F10"
+   ],
+   "shows": "features -> widgets -> pages -> components, as appfactory show prints it",
+   "data": "the project's .appfactory/",
+   "states": [
+    "ready",
+    "empty"
+   ],
+   "status": "planned"
+  },
+  {
+   "id": "W-component-facts",
+   "name": "Component facts",
+   "features": [
+    "F03"
+   ],
+   "shows": "status, grade, proposed swap, pages it's used on, why it's graded so",
+   "data": "factory/data/projects/<id>.json",
+   "states": [
+    "ready",
+    "loading"
+   ],
+   "status": "built"
+  },
+  {
+   "id": "W-live-preview",
+   "name": "Live preview",
+   "features": [
+    "F03",
+    "F06"
+   ],
+   "shows": "the component rendered from its own code in an iframe",
+   "data": "factory/render (separate origin)",
+   "states": [
+    "ready",
+    "loading",
+    "error"
+   ],
+   "status": "planned",
+   "note": "Built on the pick page as candidate frames; not yet on the component page."
+  },
+  {
+   "id": "W-install-line",
+   "name": "Install line",
+   "features": [
+    "F03",
+    "F07"
+   ],
+   "shows": "npx shadcn add @siso/<name>, copyable",
+   "data": "the SISO UI registry",
+   "states": [
+    "ready"
+   ],
+   "status": "planned"
+  },
+  {
+   "id": "W-variations",
+   "name": "Variations",
+   "features": [
+    "F04"
+   ],
+   "shows": "the current component beside 2-3 variations, each with take / skip",
+   "data": "agent-made variations (factory/render demos)",
+   "states": [
+    "ready",
+    "loading",
+    "empty"
+   ],
+   "status": "planned"
+  },
+  {
+   "id": "W-candidate-card",
+   "name": "Candidate card",
+   "features": [
+    "F05",
+    "F06"
+   ],
+   "shows": "a candidate rendered live, his words on it, cost, take / skip and a box for his words",
+   "data": "factory/siso-ui/v01.json + catalogue/curated/picks.jsonl",
+   "states": [
+    "ready",
+    "error"
+   ],
+   "status": "built"
+  },
+  {
+   "id": "W-core-card",
+   "name": "Core card",
+   "features": [
+    "F08"
+   ],
+   "shows": "a core's parts and what we have today, in its colour",
+   "data": "factory/app/cores.ts",
+   "states": [
+    "ready"
+   ],
+   "status": "built"
+  },
+  {
+   "id": "W-siso-ui-set",
+   "name": "SISO UI set",
+   "features": [
+    "F07"
+   ],
+   "shows": "the parts he took, each with its install line",
+   "data": "factory/siso-ui/picks.jsonl -> the registry",
+   "states": [
+    "ready",
+    "empty"
+   ],
+   "status": "planned"
+  },
+  {
+   "id": "W-industries-table",
+   "name": "All-industries table",
+   "features": [
+    "F09"
+   ],
+   "shows": "every industry, searchable, ranked, in 8 families",
+   "data": "the landing's industry-pages.json, AGENCY-INDUSTRIES' briefs",
+   "states": [
+    "ready",
+    "loading",
+    "empty"
+   ],
+   "status": "planned"
+  },
+  {
+   "id": "W-industry-packs",
+   "name": "Industry packs",
+   "features": [
+    "F09"
+   ],
+   "shows": "an industry's research packs and customer jobs",
+   "data": "AGENCY-INDUSTRIES' 26 briefs, 78 jobs",
+   "states": [
+    "ready",
+    "empty"
+   ],
+   "status": "planned"
+  },
+  {
+   "id": "W-rules",
+   "name": "Rules",
+   "features": [
+    "F11"
+   ],
+   "shows": "the 15 principles with his words; on a component, pass or fail per rule",
+   "data": "principles/",
+   "states": [
+    "ready"
+   ],
+   "status": "planned"
+  }
+ ]
+}

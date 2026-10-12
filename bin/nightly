@@ -25,5 +25,11 @@ bin/fingerprint model-app operator operator-redesign agent-base || echo "fingerp
 bin/inventory || echo "inventory failed"
 bin/uihub checks || echo "checks failed"
 bin/handoff || echo "handoff failed"
-git add inventory && { git diff --cached --quiet || git commit -qm "nightly: inventory and checks $(date +%F)"; } || echo "inventory not committed"
+# bookmarks Shaan made on the hosted site (KV) into catalogue/bookmarks.json, where every agent reads them; the
+# password comes from the estate world's credentials file into the environment only, never printed
+CRED=~/SISO_Workspace/.credentials/projects/SISO_Agents/siso-estate/world-worker.env
+if [ -f "$CRED" ]; then
+  UIHUB_URL=https://siso-ui-hub.dtc-storefront.workers.dev UIHUB_PASSWORD="$(grep '^WORLD_PASSWORD=' "$CRED" | cut -d= -f2-)" bin/uihub sync || echo "bookmark sync failed"
+fi
+git add inventory catalogue/bookmarks.json && { git diff --cached --quiet || git commit -qm "nightly: inventory, checks and bookmarks $(date +%F)"; } || echo "inventory not committed"
 echo "=== $(date '+%F %T') ui-hub nightly end"

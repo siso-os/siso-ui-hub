@@ -1,0 +1,294 @@
+{
+  "section/announcement": {
+    "variations": [
+      {"id": "text-link", "name": "Text and link", "kind": "structure", "why": "one line of news with action link", "match": ["announcement", "topbar", "text"]},
+      {"id": "badge-icon", "name": "With icon or badge", "kind": "structure", "why": "draws attention with visual marker", "match": ["banner", "promo"]},
+      {"id": "ribbon", "name": "Ribbon", "kind": "structure", "why": "diagonal or edge treatment for promotions", "match": ["ribbon"]},
+      {"id": "dismissible", "name": "Dismissible", "kind": "edge", "why": "user can close and hide until reset", "match": []}
+    ]
+  },
+  "section/nav": {
+    "variations": [
+      {"id": "simple-bar", "name": "Simple bar", "kind": "structure", "why": "logo, links, optional CTA; stays visible", "match": ["bar", "top nav"]},
+      {"id": "mega-menu", "name": "Mega menu", "kind": "structure", "why": "dropdown shows grid of topics and links", "match": ["mega menu"]},
+      {"id": "mobile-drawer", "name": "Mobile drawer", "kind": "platform", "why": "hamburger opens side drawer on small screens", "match": ["mobile drawer", "responsive"]},
+      {"id": "sticky-shrink", "name": "Sticky, shrinks on scroll", "kind": "state", "why": "nav sticks and gets smaller as user scrolls down", "match": ["shrinks on scroll", "floating"]},
+      {"id": "announcement-bar", "name": "With announcement above", "kind": "structure", "why": "promo or news bar floats above main nav", "match": ["announcement"]},
+      {"id": "search", "name": "With search", "kind": "structure", "why": "integrated search field in nav", "match": ["search"]}
+    ]
+  },
+  "section/hero": {
+    "variations": [
+      {"id": "centered-text", "name": "Centered headline", "kind": "structure", "why": "text and CTA centered, image behind or below", "match": ["centered headline", "background"]},
+      {"id": "split-image", "name": "Split with image", "kind": "structure", "why": "text on left, image or mockup on right", "match": ["split text and image", "product screenshot"]},
+      {"id": "fullscreen", "name": "Fullscreen image", "kind": "structure", "why": "large background image with text overlay", "match": ["fullscreen image", "image background"]},
+      {"id": "collage", "name": "Image collage", "kind": "structure", "why": "multiple images arranged in layout", "match": ["image collage"]},
+      {"id": "webgl", "name": "3D or interactive", "kind": "structure", "why": "animated or interactive element at center", "match": ["webgl scene"]},
+      {"id": "form", "name": "With signup form", "kind": "structure", "why": "email or account creation above fold", "match": ["signup form"]},
+      {"id": "text-only", "name": "Text only", "kind": "structure", "why": "no images; pure typography and copy", "match": ["text only"]},
+      {"id": "social-proof", "name": "With logos or proof", "kind": "edge", "why": "customer logos or trust badges in hero", "match": ["logos or proof"]}
+    ]
+  },
+  "section/logos": {
+    "variations": [
+      {"id": "grid", "name": "Grid", "kind": "structure", "why": "logos in neat rows and columns", "match": ["grid", "standard logo"]},
+      {"id": "marquee", "name": "Marquee", "kind": "structure", "why": "logos scroll infinitely left or right", "match": ["marquee"]},
+      {"id": "directory", "name": "Directory with text", "kind": "structure", "why": "logo plus company name or category label", "match": ["directory grid"]},
+      {"id": "integration-cards", "name": "Integration cards", "kind": "structure", "why": "logo in card with description and link", "match": ["integration card grid", "integration"]},
+      {"id": "static-row", "name": "Static row", "kind": "structure", "why": "logos in single horizontal line", "match": ["static row"]},
+      {"id": "carousel", "name": "Carousel", "kind": "structure", "why": "logos in scrollable or paginated carousel", "match": ["carousel"]}
+    ]
+  },
+  "section/features": {
+    "variations": [
+      {"id": "icon-grid", "name": "Icon grid", "kind": "structure", "why": "small icons with short text, 3-6 per row", "match": ["icon grid"]},
+      {"id": "card-grid", "name": "Card grid", "kind": "structure", "why": "feature in larger card with image or icon", "match": ["card grid", "feature grid"]},
+      {"id": "bento", "name": "Bento grid", "kind": "structure", "why": "varied card sizes in asymmetric layout", "match": ["feature bento", "bento grid", "bento"]},
+      {"id": "split-text-image", "name": "Split: text and image", "kind": "structure", "why": "feature text on left, image on right; alternates", "match": ["split text and image", "list beside image", "alternating rows"]},
+      {"id": "tabs", "name": "Tabs or switcher", "kind": "structure", "why": "features grouped by topic, switch between tabs", "match": ["tabs or switcher"]},
+      {"id": "carousel", "name": "Carousel", "kind": "structure", "why": "features scroll horizontally", "match": ["card carousel", "scrolling section"]},
+      {"id": "expandable", "name": "Expandable or accordion", "kind": "structure", "why": "features nested under collapsible headings", "match": ["expandable or accordion"]}
+    ]
+  },
+  "section/how": {
+    "variations": [
+      {"id": "numbered-steps", "name": "Numbered steps", "kind": "structure", "why": "1, 2, 3... with icon, text, image for each step", "match": ["numbered steps", "standard feature"]},
+      {"id": "alternating", "name": "Alternating text and image", "kind": "structure", "why": "step text left, image right; alternates per row", "match": ["alternating rows"]},
+      {"id": "expandable", "name": "Expandable steps", "kind": "structure", "why": "steps collapse/expand on click", "match": ["expandable or accordion"]},
+      {"id": "tabs", "name": "Tabs by step", "kind": "structure", "why": "switch between steps in tabs", "match": ["tabs or switcher"]}
+    ]
+  },
+  "section/showcase": {
+    "variations": [
+      {"id": "grid", "name": "Grid", "kind": "structure", "why": "images in neat rows and columns", "match": ["grid", "standard gallery"]},
+      {"id": "masonry", "name": "Masonry", "kind": "structure", "why": "images fill column space, varied heights", "match": ["masonry"]},
+      {"id": "carousel", "name": "Carousel", "kind": "structure", "why": "images scroll left/right, one or few visible", "match": ["carousel"]},
+      {"id": "collage", "name": "Collage", "kind": "structure", "why": "images overlapped or in custom arrangement", "match": ["image collage", "editorial"]},
+      {"id": "lightbox", "name": "Lightbox on click", "kind": "state", "why": "click image to enlarge or view full size", "match": ["lightbox", "reveal"]},
+      {"id": "bento", "name": "Bento gallery", "kind": "structure", "why": "images in varied sizes, asymmetric layout", "match": ["image bento"]}
+    ]
+  },
+  "section/stats": {
+    "variations": [
+      {"id": "row", "name": "Stats row", "kind": "structure", "why": "3-4 stats in horizontal line; number, label, unit", "match": ["stats row", "multi-stat row"]},
+      {"id": "counter", "name": "Animated counter", "kind": "state", "why": "number counts up when scrolled into view", "match": ["counter"]},
+      {"id": "grid", "name": "Grid", "kind": "structure", "why": "stats in 2-4 columns, wrap to rows", "match": ["stat grid", "stat section"]},
+      {"id": "kpi-card", "name": "KPI card", "kind": "structure", "why": "stat in card with label and optional trend", "match": ["kpi card", "metric card"]},
+      {"id": "progress", "name": "Progress stat", "kind": "structure", "why": "number with progress bar or gauge", "match": ["progress stat"]},
+      {"id": "with-chart", "name": "With chart", "kind": "structure", "why": "stat number with sparkline or mini chart", "match": ["stat with chart", "sparkline"]}
+    ]
+  },
+  "section/testimonials": {
+    "variations": [
+      {"id": "card-grid", "name": "Card grid", "kind": "structure", "why": "quote in card with avatar and name; 2-3 columns", "match": ["card grid", "standard testimonial"]},
+      {"id": "big-quote", "name": "Big single quote", "kind": "structure", "why": "large, centered quote with photo and name below", "match": ["big quote"]},
+      {"id": "carousel", "name": "Carousel", "kind": "structure", "why": "testimonials scroll left/right, one visible", "match": ["carousel"]},
+      {"id": "masonry", "name": "Masonry wall", "kind": "structure", "why": "quotes fill columns, varied heights", "match": ["masonry wall"]},
+      {"id": "marquee", "name": "Marquee", "kind": "structure", "why": "quotes scroll infinitely, no pause", "match": ["marquee"]},
+      {"id": "logos", "name": "Logo row with quote", "kind": "structure", "why": "company logos as proof, with one featured quote", "match": ["company logos"]},
+      {"id": "ratings", "name": "Star ratings", "kind": "structure", "why": "testimonial with 5-star rating display", "match": ["star ratings"]}
+    ]
+  },
+  "section/pricing": {
+    "variations": [
+      {"id": "tier-cards", "name": "Tier cards", "kind": "structure", "why": "3+ plan cards side by side; price, features, CTA", "match": ["tier cards", "plan card", "pricing card"]},
+      {"id": "billing-toggle", "name": "Billing toggle", "kind": "state", "why": "monthly/yearly switcher changes prices dynamically", "match": ["tier cards with billing toggle"]},
+      {"id": "comparison-table", "name": "Comparison table", "kind": "structure", "why": "features table comparing all plans side by side", "match": ["comparison table", "feature table"]},
+      {"id": "single-plan", "name": "Single plan focus", "kind": "structure", "why": "one prominent plan, others de-emphasized", "match": ["plan card"]},
+      {"id": "checkout", "name": "Checkout or payment", "kind": "structure", "why": "payment form, quantity selector, total", "match": ["checkout"]},
+      {"id": "usage-slider", "name": "Usage-based pricing", "kind": "structure", "why": "slider shows price based on usage/scale", "match": ["usage slider"]},
+      {"id": "comparison-toggle", "name": "Plan comparison toggle", "kind": "state", "why": "switch between plan views or detail levels", "match": []}
+    ]
+  },
+  "section/comparison": {
+    "variations": [
+      {"id": "table", "name": "Comparison table", "kind": "structure", "why": "side-by-side feature table, checkmarks and X's", "match": ["comparison table", "feature table"]},
+      {"id": "metric-table", "name": "Metric comparison", "kind": "structure", "why": "specific metrics or stats compared across options", "match": ["metric comparison"]},
+      {"id": "cards", "name": "Side-by-side cards", "kind": "structure", "why": "two or three cards with comparison highlights", "match": ["side-by-side cards"]},
+      {"id": "us-vs-them", "name": "Us versus them", "kind": "structure", "why": "competitor comparison, why we're better", "match": ["us versus them"]},
+      {"id": "before-after", "name": "Before/after slider", "kind": "structure", "why": "drag slider to see transformation or difference", "match": ["before and after slider"]}
+    ]
+  },
+  "section/faq": {
+    "variations": [
+      {"id": "accordion", "name": "Accordion", "kind": "structure", "why": "question expands on click to show answer", "match": ["accordion"]},
+      {"id": "two-column", "name": "Two columns", "kind": "structure", "why": "FAQs in left and right columns", "match": ["two columns"]},
+      {"id": "grid", "name": "Question grid", "kind": "structure", "why": "questions as cards in grid; click to reveal answer", "match": ["question grid"]},
+      {"id": "tabs", "name": "Tabs by topic", "kind": "structure", "why": "switch between FAQ categories in tabs", "match": ["tabs by topic"]},
+      {"id": "search", "name": "Searchable", "kind": "state", "why": "search field filters questions in real time", "match": ["search"]},
+      {"id": "contact-link", "name": "With contact option", "kind": "structure", "why": "unresolved questions link to contact form", "match": ["contact"]}
+    ]
+  },
+  "section/team": {
+    "variations": [
+      {"id": "photo-grid", "name": "Photo grid", "kind": "structure", "why": "team headshots in clean grid, 3-4 per row", "match": ["photo grid"]},
+      {"id": "card-grid", "name": "Card grid", "kind": "structure", "why": "photo, name, title in card; click for bio", "match": ["grid of cards", "cards with socials"]},
+      {"id": "carousel", "name": "Carousel", "kind": "structure", "why": "team members scroll horizontally, one visible", "match": ["carousel"]},
+      {"id": "split-layout", "name": "Split layout", "kind": "structure", "why": "large hero photo, sidebar text list of team", "match": ["split layout", "team management"]},
+      {"id": "hover-details", "name": "Hover reveals details", "kind": "state", "why": "photo shows name and title on hover", "match": ["portraits and hover"]},
+      {"id": "directory", "name": "Directory list", "kind": "structure", "why": "team as clickable list with names and titles", "match": ["lists and directories"]}
+    ]
+  },
+  "section/about": {
+    "variations": [
+      {"id": "case-study", "name": "Case study", "kind": "structure", "why": "story of challenge, approach, result with images", "match": ["case study"]},
+      {"id": "story-photo", "name": "Story with photo", "kind": "structure", "why": "narrative text with supporting photography", "match": ["story with photo", "about"]},
+      {"id": "split-images", "name": "Split: text and images", "kind": "structure", "why": "text block, then image; alternates down page", "match": ["split with images"]},
+      {"id": "mission-values", "name": "Mission and values", "kind": "structure", "why": "mission statement, then value cards or list", "match": ["mission and values"]},
+      {"id": "timeline", "name": "Timeline or history", "kind": "structure", "why": "founding to now in chronological steps", "match": ["timeline or history"]},
+      {"id": "team-intro", "name": "Team intro", "kind": "structure", "why": "intro to team with photos and brief bios", "match": ["team intro", "stats band", "principles list"]}
+    ]
+  },
+  "section/blog": {
+    "variations": [
+      {"id": "list", "name": "Blog list", "kind": "structure", "why": "post cards in grid or list with image, title, excerpt", "match": ["blog list", "blog grid", "standard marketing"]},
+      {"id": "changelog", "name": "Changelog", "kind": "structure", "why": "dated entries in reverse chronological order", "match": ["changelog"]},
+      {"id": "news-grid", "name": "News grid", "kind": "structure", "why": "larger cards with prominent images, tag badges", "match": ["news grid"]},
+      {"id": "featured-carousel", "name": "Featured + carousel", "kind": "structure", "why": "large featured post, carousel of recent below", "match": ["featured grid"]},
+      {"id": "post-layout", "name": "Single post", "kind": "structure", "why": "article page: title, date, body, sidebar", "match": ["blog post", "article layout"]},
+      {"id": "topic-filter", "name": "With topic filter", "kind": "state", "why": "tabs or pills filter posts by category", "match": []}
+    ]
+  },
+  "section/cta": {
+    "variations": [
+      {"id": "centered-banner", "name": "Centered banner", "kind": "structure", "why": "headline and CTA centered on full-width band", "match": ["centered banner", "standard cta"]},
+      {"id": "email-form", "name": "Email form", "kind": "structure", "why": "email input and submit button, optional name", "match": ["email form", "newsletter signup"]},
+      {"id": "split-image", "name": "Split: text and image", "kind": "structure", "why": "text CTA on one side, image or graphic on other", "match": ["split with image", "split layout"]},
+      {"id": "card", "name": "Card", "kind": "structure", "why": "CTA in contained card with border or background", "match": ["card", "centered card"]},
+      {"id": "waitlist-form", "name": "Waitlist form", "kind": "structure", "why": "email plus optional extra fields (job, company)", "match": ["waitlist form"]},
+      {"id": "full-bleed", "name": "Full-bleed gradient", "kind": "structure", "why": "band stretches edge-to-edge with gradient", "match": ["full-bleed gradient"]}
+    ]
+  },
+  "section/contact": {
+    "variations": [
+      {"id": "form", "name": "Contact form", "kind": "structure", "why": "name, email, message fields and submit button", "match": ["contact form"]},
+      {"id": "centered", "name": "Centered form", "kind": "structure", "why": "form centered on page in card or plain", "match": ["centered form"]},
+      {"id": "split", "name": "Split layout", "kind": "structure", "why": "form on right, contact info/map on left", "match": ["contact split"]},
+      {"id": "tabs", "name": "Multiple options", "kind": "structure", "why": "email, phone, form in tabs or separate sections", "match": []},
+      {"id": "inline-note", "name": "With help text", "kind": "edge", "why": "FAQ or guidance text beside form fields", "match": ["help card"]}
+    ]
+  },
+  "section/footer": {
+    "variations": [
+      {"id": "columns", "name": "Link columns", "kind": "structure", "why": "footer in 3-5 columns of grouped links", "match": ["link columns", "row"]},
+      {"id": "newsletter", "name": "With newsletter", "kind": "structure", "why": "email signup in footer, usually top right", "match": ["newsletter"]},
+      {"id": "minimal-row", "name": "Minimal row", "kind": "structure", "why": "single line: logo, links, copyright", "match": ["one row minimal"]},
+      {"id": "big-wordmark", "name": "Large logo footer", "kind": "structure", "why": "large company logo, minimal links", "match": ["big wordmark"]},
+      {"id": "cta-focus", "name": "With CTA", "kind": "structure", "why": "footer includes call-to-action button", "match": ["call to action"]},
+      {"id": "social-links", "name": "With social icons", "kind": "structure", "why": "social media icon links (Twitter, LinkedIn, etc)", "match": []}
+    ]
+  },
+  "section/shell": {
+    "variations": [
+      {"id": "sidebar-top", "name": "Sidebar plus top bar", "kind": "structure", "why": "left sidebar for nav, top bar for breadcrumb/user", "match": ["app shell", "standard page shell", "separator"]},
+      {"id": "top-only", "name": "Top bar only", "kind": "structure", "why": "content uses full width, top bar for nav/info", "match": ["container", "hairline separator"]},
+      {"id": "dashboard", "name": "Dashboard page", "kind": "structure", "why": "main area with grid of panels, sidebar optional", "match": ["full dashboard page", "analytics dashboard"]},
+      {"id": "split-view", "name": "Split view", "kind": "structure", "why": "left panel for list/nav, right panel for details", "match": ["split view"]},
+      {"id": "fullscreen", "name": "Fullscreen", "kind": "structure", "why": "content expands edge-to-edge, minimal chrome", "match": []}
+    ]
+  },
+  "section/sidebar": {
+    "variations": [
+      {"id": "grouped", "name": "Grouped sections", "kind": "structure", "why": "nav items grouped under section headers", "match": ["grouped sections", "standard sidebar"]},
+      {"id": "icon-rail", "name": "Icon rail", "kind": "platform", "why": "narrow icon-only sidebar; expands on hover or click", "match": ["collapsible icon rail"]},
+      {"id": "tree", "name": "Nested tree", "kind": "structure", "why": "expandable menu items with nesting levels", "match": ["nested tree"]},
+      {"id": "mobile-drawer", "name": "Mobile drawer", "kind": "platform", "why": "hidden side drawer on mobile, hamburger toggle", "match": ["mobile drawer"]},
+      {"id": "workspace-switch", "name": "With workspace switcher", "kind": "structure", "why": "dropdown at top to switch workspaces", "match": ["workspace switcher"]},
+      {"id": "search", "name": "With search", "kind": "structure", "why": "search field at top to find nav items", "match": []},
+      {"id": "collapsible", "name": "Collapsible", "kind": "state", "why": "sidebar collapses to icons or hidden, click to expand", "match": ["collapsible sidebar"]}
+    ]
+  },
+  "section/top-bar": {
+    "variations": [
+      {"id": "simple-bar", "name": "Simple bar", "kind": "structure", "why": "breadcrumb, title, and user/search buttons", "match": ["bar", "standard top nav"]},
+      {"id": "mega-menu", "name": "Mega menu", "kind": "structure", "why": "dropdown shows grid of links and actions", "match": ["mega menu"]},
+      {"id": "search", "name": "With search", "kind": "structure", "why": "search field for finding items or pages", "match": ["search"]},
+      {"id": "responsive", "name": "Responsive", "kind": "platform", "why": "adapts for mobile, drawer or compact view", "match": ["responsive header"]}
+    ]
+  },
+  "section/page-header": {
+    "variations": [
+      {"id": "title-tabs", "name": "Title with tabs", "kind": "structure", "why": "page title/heading, tabs for sub-sections", "match": ["page header"]},
+      {"id": "title-only", "name": "Title only", "kind": "structure", "why": "page heading or section title, no tabs", "match": []}
+    ]
+  },
+  "section/filters": {
+    "variations": [
+      {"id": "filters", "name": "Filters bar", "kind": "structure", "why": "multiple filter inputs (select, checkbox, date)", "match": ["filters"]},
+      {"id": "search-field", "name": "Search field", "kind": "structure", "why": "text input to search or filter results", "match": ["search field"]},
+      {"id": "search-suggestions", "name": "With suggestions", "kind": "state", "why": "dropdown shows suggestion list as user types", "match": ["suggestions"]},
+      {"id": "command-style", "name": "Command palette style", "kind": "structure", "why": "keyboard-first search with shortcuts", "match": ["command style"]},
+      {"id": "results-count", "name": "Shows result count", "kind": "state", "why": "displays number of results matching filters", "match": ["results"]}
+    ]
+  },
+  "section/kpis": {
+    "variations": [
+      {"id": "metric-cards", "name": "Metric cards", "kind": "structure", "why": "3-4 KPI cards in row; number, label, trend", "match": ["metric card", "kpi card", "feature description"]},
+      {"id": "analytics", "name": "Analytics row", "kind": "structure", "why": "KPI cards with sparkline or mini chart", "match": ["analytics dashboard"]},
+      {"id": "bento", "name": "Bento grid", "kind": "structure", "why": "varied card sizes, some with charts", "match": ["stats bento", "feature bento"]},
+      {"id": "single-stat", "name": "Single featured stat", "kind": "structure", "why": "one prominent KPI, others smaller beside", "match": []}
+    ]
+  },
+  "section/data-view": {
+    "variations": [
+      {"id": "list", "name": "List view", "kind": "structure", "why": "rows of items; compact or with thumbnail", "match": ["standard list", "list with avatars", "sortable"]},
+      {"id": "table", "name": "Table", "kind": "structure", "why": "sortable columns with data, paginated", "match": ["standard table", "data table"]},
+      {"id": "board", "name": "Kanban board", "kind": "structure", "why": "columns with draggable cards, often status-based", "match": ["multi-column board", "drag and drop board", "standard kanban"]},
+      {"id": "calendar", "name": "Calendar", "kind": "structure", "why": "month or week view for dates, events on cells", "match": ["event calendar", "month calendar", "week schedule"]},
+      {"id": "date-picker", "name": "Date picker", "kind": "structure", "why": "calendar popup to select single or date range", "match": ["date picker"]},
+      {"id": "expandable", "name": "Expandable rows", "kind": "state", "why": "click row to reveal details below", "match": ["expandable rows"]},
+      {"id": "feed", "name": "Activity feed", "kind": "structure", "why": "timeline of events or activity log", "match": ["activity feed"]}
+    ]
+  },
+  "section/detail": {
+    "variations": [
+      {"id": "two-pane", "name": "Two-pane split", "kind": "structure", "why": "list/tree on left, detail panel on right", "match": ["two-pane", "standard split pane"]},
+      {"id": "resizable", "name": "Resizable panels", "kind": "state", "why": "drag divider to resize left/right panels", "match": ["resizable panels", "horizontal split with drag handle"]},
+      {"id": "tab-layout", "name": "Tab sections", "kind": "structure", "why": "tabs switch between different detail views", "match": []},
+      {"id": "modal", "name": "Modal drawer", "kind": "structure", "why": "detail opens in side panel or modal overlay", "match": []},
+      {"id": "nested", "name": "Nested panels", "kind": "structure", "why": "drill-down to reveal more levels of detail", "match": ["nested panels"]}
+    ]
+  },
+  "section/settings-panel": {
+    "variations": [
+      {"id": "form-layout", "name": "Settings form", "kind": "structure", "why": "labeled input fields, save button at bottom", "match": ["settings form", "profile form", "security settings"]},
+      {"id": "sections", "name": "Grouped sections", "kind": "structure", "why": "settings organized into collapsible or tabbed groups", "match": ["tabbed sections"]},
+      {"id": "dialog", "name": "Preferences dialog", "kind": "structure", "why": "settings in modal or popover overlay", "match": ["preferences dialog"]},
+      {"id": "card-blocks", "name": "Card blocks", "kind": "structure", "why": "each setting or group in its own card", "match": ["settings block or card", "notification preferences"]},
+      {"id": "sidebar", "name": "Sidebar layout", "kind": "structure", "why": "settings categories in left sidebar, form on right", "match": ["sidebar layout"]},
+      {"id": "inline", "name": "Inline toggles", "kind": "structure", "why": "simple on/off switch for each setting", "match": ["standard setting"]}
+    ]
+  },
+  "section/auth": {
+    "variations": [
+      {"id": "sign-in", "name": "Sign in", "kind": "structure", "why": "email/username and password in centered card", "match": ["centered card"]},
+      {"id": "sign-up", "name": "Sign up", "kind": "structure", "why": "name, email, password fields for registration", "match": ["sign up"]},
+      {"id": "forgot", "name": "Forgot password", "kind": "structure", "why": "email field to reset password via link", "match": ["forgot password"]},
+      {"id": "social", "name": "Social login", "kind": "structure", "why": "buttons for Google, GitHub, etc. SSO options", "match": ["social buttons"]},
+      {"id": "2fa", "name": "Two-factor auth", "kind": "structure", "why": "verification code or TOTP entry after sign in", "match": ["two-factor"]},
+      {"id": "magic-link", "name": "Magic link or code", "kind": "structure", "why": "send link or code to email instead of password", "match": ["magic link or code"]},
+      {"id": "split-image", "name": "Split with image", "kind": "platform", "why": "desktop: form on right, background image on left", "match": ["split with image"]},
+      {"id": "fullpage", "name": "Full page", "kind": "platform", "why": "mobile: auth form uses full screen", "match": ["full page"]}
+    ]
+  },
+  "section/onboarding": {
+    "variations": [
+      {"id": "wizard", "name": "Multi-step wizard", "kind": "structure", "why": "progress bar + form that steps through sections", "match": ["multi-step form", "standard wizard step", "onboarding"]},
+      {"id": "checklist", "name": "Checklist", "kind": "structure", "why": "todo items to complete onboarding flow", "match": ["setup checklist or progress tracker"]},
+      {"id": "welcome-screen", "name": "Welcome screen", "kind": "structure", "why": "intro page with overview and next button", "match": ["onboarding welcome screen"]},
+      {"id": "stepper", "name": "Stepper", "kind": "structure", "why": "numbered or visual step indicator, form per step", "match": ["progress steps", "horizontal numbered stepper"]}
+    ]
+  },
+  "section/chat": {
+    "variations": [
+      {"id": "thread", "name": "Chat thread", "kind": "structure", "why": "messages in chronological order, input at bottom", "match": ["chat thread", "message bubble", "standard ai agent"]},
+      {"id": "full-app", "name": "Full chat app", "kind": "structure", "why": "thread list on left, messages in main area", "match": ["full chat app"]},
+      {"id": "ai-response", "name": "AI response", "kind": "structure", "why": "assistant reply with thinking, steps, or artifacts", "match": ["tool call or steps", "reasoning", "artifact"]},
+      {"id": "suggestions", "name": "With suggestions", "kind": "state", "why": "prompt suggestions above composer for quick action", "match": ["suggestions"]},
+      {"id": "sources", "name": "With sources", "kind": "structure", "why": "response cites sources, shows attribution links", "match": ["sources"]},
+      {"id": "streaming", "name": "Streaming text", "kind": "state", "why": "response text appears character-by-character", "match": ["streaming text"]},
+      {"id": "composer", "name": "Composer", "kind": "structure", "why": "input area for composing and sending messages", "match": ["composer"]},
+      {"id": "voice", "name": "Voice input", "kind": "structure", "why": "audio input button, transcription of voice", "match": ["voice or orb"]}
+    ]
+  }
+}

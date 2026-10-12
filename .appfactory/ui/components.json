@@ -1,0 +1,155 @@
+{
+ "$schema": "../../factory/standard/schema/components.schema.json",
+ "components": [
+  {
+   "id": "C-hub-nav",
+   "name": "HubNav",
+   "file": "agent-base:packages/siso-side-nav/src/HubNav.tsx",
+   "source": "siso:side-nav",
+   "uihub": "siso:side-nav",
+   "why": "shadcn's Sidebar (vendored, MIT) for collapse, ⌘B, the phone sheet and tooltips, in HALO's glass rail; hubs open their own side nav (idea 31)",
+   "widgets": [
+    "W-cores-rail"
+   ],
+   "status": "ours"
+  },
+  {
+   "id": "C-pill-tabs",
+   "name": "PillTabs",
+   "file": "agent-base:packages/siso-shell/src/PillTabs.tsx",
+   "source": "siso:shell",
+   "uihub": "siso:shell",
+   "why": "the tabs up top he loves in Agent Base (idea 16)",
+   "widgets": [
+    "W-working-tabs"
+   ],
+   "status": "ours"
+  },
+  {
+   "id": "C-agent-face",
+   "name": "AgentFace",
+   "file": "agent-base:packages/halo-face/AgentFace.tsx",
+   "source": "siso:halo-face",
+   "uihub": "siso:halo-face",
+   "why": "a face per project that shows its state at a glance",
+   "widgets": [
+    "W-project-grid",
+    "W-cores-rail"
+   ],
+   "status": "ours"
+  },
+  {
+   "id": "C-glow-card",
+   "name": "Card (glow on hover / live)",
+   "file": "factory/app/App.tsx",
+   "source": "custom",
+   "why": "the Agent Base glow, used only on what's live or hovered, coloured by meaning (spec §8)",
+   "widgets": [
+    "W-project-grid",
+    "W-page-card",
+    "W-component-facts",
+    "W-core-card"
+   ],
+   "status": "ours",
+   "note": "Register as siso:glow-card when SISO UI v0.1 is cut."
+  },
+  {
+   "id": "C-status-bar",
+   "name": "Bar",
+   "file": "factory/app/App.tsx",
+   "source": "custom",
+   "why": "the four statuses in proportion, readable at a glance",
+   "widgets": [
+    "W-status-bar"
+   ],
+   "status": "ours"
+  },
+  {
+   "id": "C-status-dot",
+   "name": "Dot",
+   "file": "factory/app/App.tsx",
+   "source": "custom",
+   "why": "one status per component, glowing where it needs him",
+   "widgets": [
+    "W-page-card",
+    "W-status-filter",
+    "W-component-facts"
+   ],
+   "status": "ours"
+  },
+  {
+   "id": "C-page-header",
+   "name": "page header (h1, counts, back link)",
+   "file": "factory/app/App.tsx",
+   "source": "custom",
+   "uihub": null,
+   "why": "name, counts and a back arrow on every page below Projects",
+   "widgets": [
+    "W-project-header"
+   ],
+   "status": "needs-pick",
+   "swapTo": "shadcn:breadcrumb",
+   "note": "atoms audit: breadcrumb is a gap; shadcn's fills it"
+  },
+  {
+   "id": "C-stat",
+   "name": "Stat",
+   "file": "factory/app/App.tsx",
+   "source": "custom",
+   "why": "one number and its label",
+   "widgets": [
+    "W-project-grid"
+   ],
+   "status": "needs-pick",
+   "swapTo": "catalogue: siso:stat-tile"
+  },
+  {
+   "id": "C-filter-pill",
+   "name": "filter pill (button)",
+   "file": "factory/app/App.tsx",
+   "source": "custom",
+   "why": "status filter with counts",
+   "widgets": [
+    "W-status-filter"
+   ],
+   "status": "needs-pick",
+   "swapTo": "catalogue: siso:segmented"
+  },
+  {
+   "id": "C-lucide",
+   "name": "lucide icons",
+   "file": "lucide-react",
+   "source": "library:lucide/lucide-react",
+   "uihub": "library:lucide",
+   "why": "the icon set Agent Base and the landing already share",
+   "widgets": [
+    "W-cores-rail",
+    "W-working-tabs"
+   ],
+   "status": "picked"
+  },
+  {
+   "id": "C-render-harness",
+   "name": "render harness",
+   "file": "factory/render/server.mjs",
+   "source": "custom",
+   "why": "renders any component from its own code, with a loud error bar when it can't",
+   "widgets": [
+    "W-candidate-card",
+    "W-live-preview"
+   ],
+   "status": "ours"
+  },
+  {
+   "id": "C-candidate-card",
+   "name": "candidate card (HTML)",
+   "file": "factory/siso-ui/build-v01.py",
+   "source": "custom",
+   "why": "rendered frame, his words, cost, take / skip",
+   "widgets": [
+    "W-candidate-card"
+   ],
+   "status": "ours"
+  }
+ ]
+}

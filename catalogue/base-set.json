@@ -1,0 +1,168 @@
+{
+ "about": "The SISO base set, by layer: which library a part comes from, in order. Shaan, 12 Oct 2026 (.agents/source/2026-10-12-library-walk.md): 'Tier 1: we download everything shadcn UI, but if there's Arc, we take Arc over shadcn'; gap-fill libraries add only what we don't have, or replace ours when their code is more technical. Agents pick deterministically from this, then tokens make them one family.",
+ "rule": [
+  "take the first library in the layer that has the part",
+  "a gap-fill library adds a part only if no earlier library has it, or its code is clearly more complete (states, keyboard, a11y)",
+  "paid tiers (Arc Pro, reui Pro, Kobra) are reference only: rebuild, never copy",
+  "motion is its own layer, wired into parts afterwards"
+ ],
+ "layers": {
+  "app-parts": {
+   "order": [
+    "arc",
+    "shadcn-ui"
+   ],
+   "gap_fill": [
+    "minidev",
+    "watermelon",
+    "kibo-ui",
+    "diceui",
+    "reui",
+    "cubby-ui",
+    "coss"
+   ],
+   "note": "reui free parts for data grids, dashboard parts and app shells; watermelon for clean standard variations; react-aria and intentui are not for looks but for behaviour and edge cases (keyboard, a11y, i18n) when ours lacks them",
+   "depth": [
+    "react-aria",
+    "intentui"
+   ]
+  },
+  "charts": {
+   "order": [
+    "arc",
+    "evilcharts",
+    "bklit",
+    "shadcn-ui",
+    "ssych"
+   ],
+   "note": "take all: many chart types is the point"
+  },
+  "agent-ui": {
+   "order": [
+    "ai-elements",
+    "prompt-kit",
+    "assistant-ui",
+    "pastaui",
+    "seamui",
+    "tool-ui",
+    "elevenlabs-ui"
+   ],
+   "gap_fill": [
+    "scrimui",
+    "pipecat"
+   ]
+  },
+  "landing-blocks": {
+   "order": [
+    "tailark",
+    "efferd",
+    "watermelon"
+   ],
+   "raid": [
+    "shadcn-ui-blocks",
+    "ballmac",
+    "beste-ui",
+    "cnippet",
+    "shadcnblocks",
+    "uitripled",
+    "21st"
+   ],
+   "templates": [
+    "viberdy"
+   ],
+   "note": "efferd's variation sets are the model for client and industry sites; shadcn-ui-blocks' categories are the model taxonomy"
+  },
+  "pricing-billing": {
+   "order": [
+    "billingsdk"
+   ],
+   "raid": [
+    "tailark",
+    "efferd",
+    "shadcn-ui-blocks"
+   ]
+  },
+  "motion": {
+   "order": [
+    "arc",
+    "smoothui",
+    "animate-ui",
+    "cult-ui",
+    "motion-primitives",
+    "magicui",
+    "motiq",
+    "kokonutui",
+    "glint-ui",
+    "toggles",
+    "threecn",
+    "soonish"
+   ],
+   "note": "a separate section"
+  },
+  "specialists": {
+   "gamification": [
+    "trophy-ui"
+   ],
+   "reviews": [
+    "shadcncraft"
+   ],
+   "blog": [
+    "7ovr"
+   ],
+   "shop": [
+    "ecomcn"
+   ],
+   "video": [
+    "videocn",
+    "remocn"
+   ],
+   "forms": [
+    "formscn",
+    "sureui",
+    "quiz-ui"
+   ],
+   "rich-text": [
+    "plate"
+   ],
+   "maps": [
+    "shadcnmaps"
+   ],
+   "email": [
+    "emailcn"
+   ],
+   "slides": [
+    "slidecn"
+   ],
+   "status-pages": [
+    "openstatus"
+   ],
+   "flow-diagrams": [
+    "react-flow-xyflow"
+   ],
+   "trading": [
+    "ssych"
+   ]
+  },
+  "assets": {
+   "order": [
+    "keyline",
+    "heroicons-animated",
+    "svgl",
+    "flagcn",
+    "dicebear",
+    "soundcn"
+   ]
+  }
+ },
+ "not_for_us": [
+  "kanpeki",
+  "uiable",
+  "velora",
+  "quill",
+  "ai2"
+ ],
+ "blog_note": "SISO Labs' own blog is the design; 7ovr's parts go into it, not the other way round",
+ "todo": [
+  "find more gamification libraries"
+ ]
+}

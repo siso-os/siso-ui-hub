@@ -1,0 +1,126 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "$id": "appfactory/0.1/appfactory",
+ "title": ".appfactory/appfactory.json",
+ "type": "object",
+ "required": [
+  "standard",
+  "id",
+  "name",
+  "repo",
+  "root",
+  "surface",
+  "line"
+ ],
+ "additionalProperties": false,
+ "properties": {
+  "$schema": {
+   "type": "string"
+  },
+  "standard": {
+   "const": "appfactory/0.1"
+  },
+  "id": {
+   "type": "string",
+   "pattern": "^[a-z0-9][a-z0-9-]*$"
+  },
+  "name": {
+   "type": "string",
+   "minLength": 1
+  },
+  "repo": {
+   "type": "string",
+   "pattern": "^[\\w.-]+/[\\w.-]+$"
+  },
+  "root": {
+   "type": "string"
+  },
+  "surface": {
+   "enum": [
+    "dashboard",
+    "native-app",
+    "landing-site",
+    "doc"
+   ]
+  },
+  "space": {
+   "enum": [
+    "agent-base",
+    "app-factory",
+    "agency",
+    null
+   ]
+  },
+  "colour": {
+   "type": "string",
+   "pattern": "^#[0-9A-Fa-f]{6}$"
+  },
+  "inventory": {
+   "type": [
+    "string",
+    "null"
+   ]
+  },
+  "run": {
+   "type": "object",
+   "properties": {
+    "dev": {
+     "type": "string"
+    },
+    "url": {
+     "type": "string"
+    }
+   },
+   "additionalProperties": false
+  },
+  "line": {
+   "type": "array",
+   "minItems": 8,
+   "maxItems": 8,
+   "items": {
+    "type": "object",
+    "required": [
+     "step",
+     "name",
+     "status"
+    ],
+    "additionalProperties": false,
+    "properties": {
+     "step": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 8
+     },
+     "name": {
+      "type": "string"
+     },
+     "status": {
+      "enum": [
+       "todo",
+       "doing",
+       "done"
+      ]
+     },
+     "at": {
+      "type": [
+       "string",
+       "null"
+      ]
+     },
+     "by": {
+      "type": [
+       "string",
+       "null"
+      ]
+     },
+     "note": {
+      "type": [
+       "string",
+       "null"
+      ]
+     }
+    }
+   }
+  }
+ }
+}
