@@ -1,0 +1,403 @@
+{
+ "_about": "siso-shell's page families U0-U23 (shells, page templates), copied from siso-shell site/templates.json on 8 Oct 2026. Live examples at https://siso-shell.pages.dev/t/<id>/example/.",
+ "templates": [
+  {
+   "id": "U0",
+   "family": "Shell: CRM GroupedRail + SISO tokens (the one shell)",
+   "instances": "every page family below",
+   "count": "1 shell · 18 Library routes · 24 atlas pages · 10 front doors",
+   "source_data": "SISOCRM product-app GroupedRail.tsx/.css + tokens.css (hashes in briefs/LIBRARY-UI-FABLE.md): grouped nav, compact mode keeps the destination map, 20px collapsed handle, [ toggles, Cmd-K search, persisted preference; tokens: --siso-bg #202020, --siso-orange #FFA726 brand, --siso-gradient-brand 135° red→orange, semantic accents today/tasks/health/focus/reflect/danger, Geist",
+   "sections": [
+    "brand block",
+    "groups: Now / Plan / Readings / Outside (atlas) · Library / Research / Agents / Projects / Estate (Library)",
+    "compact icons",
+    "search (Cmd-K)",
+    "collapse handle",
+    "current-page marker"
+   ],
+   "status": "atlas: porting now. Library: siso-shell ships its own siso-rail (forest gradient, flat list, no groups) on 6 of 18 routes; 0 GroupedRail ports anywhere (REVIEW-ZERO grep)",
+   "host": "fable"
+  },
+  {
+   "id": "U13",
+   "family": "Reusable modules (the parts every family composes)",
+   "instances": "12 modules from library-ui-spec §6",
+   "count": "12",
+   "source_data": "library-ui-spec.md §6: shell; heading+breadcrumb+state badges; authored reasoning block (source vs interpretation); ecosystem loop + typed relationship map; repo/satellite cards with public/private/access/rights; sauce cards; contents/capability list + procedure; agent quick-start panel; evidence/limits/version panel; activity strip; searchable catalogue cards/table + empty states; related work",
+   "sections": [
+    "one HTML/CSS partial each",
+    "dark tokens",
+    "no framework",
+    "a fixture page showing all 12",
+    "truthful empty state + a real 404 (GAPS F-3)"
+   ],
+   "status": "0 built as shared partials; each page hand-writes its own",
+   "host": "fable-with-shaan"
+  },
+  {
+   "id": "U23",
+   "family": "Template gallery",
+   "instances": "one page + one detail page per template",
+   "count": "24 templates (this map)",
+   "source_data": "plan/templates.json: every row's reasoning, content contract, sections, rob-from lists (Action Model inventory + 21st.dev picks), example today, verification",
+   "sections": [
+    "card per template",
+    "detail: reasoning block · content contract · wireframe · components to rob (with screenshots) · example today · verification · issue"
+   ],
+   "status": "this page, being built now",
+   "host": "fable"
+  },
+  {
+   "id": "U4",
+   "family": "Project one pager (bigger; the hub that links to the rest)",
+   "instances": "one per project, agency and client",
+   "count": "10 projects: Library, Foundry, Internal+Agent Base, Knowledge/siso-source, Plays/hub, GQ+compute, Agent Zero (agency) · Oracle, HALO, BykonzYard, Action Model (client)",
+   "source_data": "plan/projects.json (repos with branch/head/private, urls with HTTP code, seats with last writeback, landed, said verbatim, left, modules with verification lines) + <repo>/.agents/{PAGE.md,HANDOFF.md,owners.log,page.url,repos.json}",
+   "sections": [
+    "what it is, in his words",
+    "repos incl. private (head, time, visibility)",
+    "live URLs with codes",
+    "owner seats + latest writeback",
+    "what landed (verified)",
+    "what is left → the module rows with verification lines",
+    "links: the Works, GQs and industries this project touches",
+    "the Cloudflare pages it leads to"
+   ],
+   "status": "data exists (PROJECTS.html 11 rows, atlas/p 17 pages); front door on 4 of 10 repos; no shared template",
+   "host": "fable"
+  },
+  {
+   "id": "U5",
+   "family": "God Question page",
+   "instances": "one per GQ",
+   "count": "22 (GOD-QUESTIONS.md; 18 registered as Works; 14 GQ URLs fall through to root)",
+   "source_data": "GOD-QUESTIONS.md cards (question, decision target, counterexample, evidence lines), docs/frontier-question-template.html (exact question, why it matters, assumptions, evidence map, subquestions, expected answer package), domains/compute/runs/<run>/ receipts",
+   "sections": [
+    "the question + decision target",
+    "research state + counterexample",
+    "evidence map with dated receipts (J2 ratio, E1 windows…)",
+    "subquestions → compute modules allocated / not",
+    "expected answer package",
+    "who is on it + host (webui/luna/codex/shaan/hold)"
+   ],
+   "status": "index exists with rail; 9 real GQ pages, 14 return the root HTML with 200 (GAPS F-3); no GQ page shows its compute modules",
+   "host": "fable"
+  },
+  {
+   "id": "U19",
+   "family": "Compute run page",
+   "instances": "one per measured run",
+   "count": "runs: 2026-09-05-gq-compute, 2026-09-06-j2 (medium vs xhigh), e1 windows ×3; receipts in domains/compute/runs/",
+   "source_data": "domains/compute/runs/<run>/{preregistration,run,acceptance,runtime-audit}.json, events.jsonl, metadata.json (effort applied), receipts",
+   "sections": [
+    "preregistration (what we expected)",
+    "arms + effort applied",
+    "tokens in/out per arm, ratio with n",
+    "acceptance verdict",
+    "runtime audit",
+    "what it changes (decision)"
+   ],
+   "status": "JSON + mjs on disk; summarised in GAPS M-1/M-3; no page",
+   "host": "luna"
+  },
+  {
+   "id": "U3",
+   "family": "Library module (standard Work) page",
+   "instances": "one per Work, by category",
+   "count": "47 Works: 18 research_question · 8 knowledge_system · 4 bundle · 3 project · 3 tool · 2 section · 2 agent_system · 2 capability_pack · 2 playbook · 2 application · 1 library",
+   "source_data": "registry/works/<id>.json + releases + source_links; his categories 16:50: 'projects, niches, client, personal' → maps onto type + section; connected to the GitHub repo front end (repos.json) 'even if they private'",
+   "sections": [
+    "kicker: section/type/maturity",
+    "title + why it matters (authored)",
+    "repo + satellites cards with public/private/rights",
+    "sauce: 3–7 real assets",
+    "contents / capabilities",
+    "agent quick-start: entry file, commands, owner, verification line",
+    "evidence / limits / version",
+    "related work"
+   ],
+   "status": "1/47 on the template",
+   "host": "fable"
+  },
+  {
+   "id": "U9",
+   "family": "Agent Zero page (his concepts + the fleet, on the Library)",
+   "instances": "one",
+   "count": "1 (+ the 24 atlas pages it fronts)",
+   "source_data": "INTENT.md, BASELINE.md, plan/{modules,projects,decisions}.json, GOD-QUESTIONS.md, source/ (44 verbatim files, 111,930 words), ledger/OWNERS.md, the atlas",
+   "sections": [
+    "the bet + the two axes",
+    "his concepts (source/ index, dated, verbatim)",
+    "projects → U4 pages",
+    "register: allocated / not allocated / done, by host, with verification lines",
+    "decisions D-1…D-29",
+    "fleet now (owners, nodes)",
+    "gaps"
+   ],
+   "status": "atlas/AGENT-ZERO.html + index.html exist on the laptop only; not on the Library; the atlas rail is not the CRM one (fixing now)",
+   "host": "fable"
+  },
+  {
+   "id": "U1",
+   "family": "Library landing (root front door)",
+   "instances": "one page",
+   "count": "1",
+   "source_data": "catalog.json counts (47 Works, 86 Releases, 40 Snapshots, 8 inventories, 27 repos 23 public / 4 private, 17 industries, 22 GQ), the ecosystem loop from library-ui-spec §6, featured entry points",
+   "sections": [
+    "purpose in his words",
+    "the loop: clients fund compute → owners build → packs enter the Library → people+repos feed Foundry → questions turn evidence into breakthroughs",
+    "section counts from catalog.json",
+    "featured: latest Works, latest GQ, latest project one pagers",
+    "search"
+   ],
+   "status": "exists, 'stupid' by his 16:36 word: no loop, no counts, siso-rail not GroupedRail; he wants 21st.dev bento/onboarding picks (ui-bank preset landing: only bento-card and onboarding-dialog kept)",
+   "host": "fable"
+  },
+  {
+   "id": "U18",
+   "family": "Source page (his words)",
+   "instances": "one per capture",
+   "count": "44 files, 111,930 words in 00_AGENT_ZERO/source/ + siso-source partitions (August 10,503, September 4,144 occurrences)",
+   "source_data": "source/<date-time>-<slug>.md: verbatim block + Reads; transcript timestamp; the decisions/projects it caused",
+   "sections": [
+    "the words, verbatim, dated",
+    "who it was said to",
+    "what it caused (decisions, briefs, pages)",
+    "the offset note (label vs transcript, GAPS F-8)"
+   ],
+   "status": "44 markdown files; quoted on pages; no index, no page per capture",
+   "host": "luna"
+  },
+  {
+   "id": "U2",
+   "family": "Section / catalogue",
+   "instances": "Works, Releases, Snapshots, Research, Agents, Industries, Estate, Promotion, Intelligence",
+   "count": "9 sections",
+   "source_data": "catalog.json works[] (type, maturity, section, source_links), releases (86), snapshots (40), research.json, industries index",
+   "sections": [
+    "section purpose + scope",
+    "real counts",
+    "filter by type / maturity / section",
+    "cards with kicker, summary, repo state",
+    "truthful empty state"
+   ],
+   "status": "9 routes 200; rail on 3 (/works/, /docs/, /god-questions/); 16 Works sit in section 'Unassigned'",
+   "host": "fable"
+  },
+  {
+   "id": "U16",
+   "family": "Decision page",
+   "instances": "one per decision",
+   "count": "29 (plan/decisions.json D-1…D-29) + harness-lab DECISIONS.md",
+   "source_data": "plan/decisions.json: id, date, his words, what it changed, what reverses it; the source/ file it came from",
+   "sections": [
+    "the decision in one line",
+    "his words (verbatim)",
+    "what it changed (files, modules)",
+    "what reverses it",
+    "superseded by"
+   ],
+   "status": "JSON only; no page; decisions are quoted inside other pages",
+   "host": "luna"
+  },
+  {
+   "id": "U17",
+   "family": "Agent seat page",
+   "instances": "one per seat that ever ran",
+   "count": "~30 seats 5–6 Sep (12 closed Astra seats + Fable heads + Oracle lane + Mini seats); ledger/OWNERS.md lines",
+   "source_data": "briefs/<SEAT>.md (born from), handoffs/<SEAT>.md, OWNERS.md lines, owners.log, rollout path + token maxima (GAPS M-4), verification line",
+   "sections": [
+    "born: date, brief, node, model, harness",
+    "what it landed (verified)",
+    "what it cost (uncached in / out / reasoning)",
+    "its writebacks",
+    "its rollout (path, size, private)",
+    "closed: how, handoff"
+   ],
+   "status": "exists as handoff markdown + OWNERS lines; no page; cost only in GAPS M-4",
+   "host": "luna"
+  },
+  {
+   "id": "U21",
+   "family": "Timeline page",
+   "instances": "one per project + one global",
+   "count": "10 projects + Agent Zero; axis = commits, seats born/closed, decisions, docs, source captures, writebacks",
+   "source_data": "git log per repo (date, hash, author human/auto), OWNERS.md, decisions.json, ls source/, ls docs by mtime, owners.log",
+   "sections": [
+    "one axis, day ticks",
+    "lanes: commits · seats · decisions · docs · his words",
+    "filters by lane",
+    "hover = the record"
+   ],
+   "status": "nothing renders time; the closest is the Overnight page's ten lines",
+   "host": "fable"
+  },
+  {
+   "id": "U8",
+   "family": "Industry detail / value research",
+   "instances": "one per industry",
+   "count": "17 records (siso-foundry intelligence/agency/industries), law-firm pilot live",
+   "source_data": "Foundry industry JSON (process hypotheses 70, capability rows 35), N2 value model + 10 examples, his 14:26 ask: 'per industry research with all of the projects and what we're offering'",
+   "sections": [
+    "process / workflow map",
+    "current marketed capabilities",
+    "candidate modules",
+    "SISO projects that apply",
+    "the offer",
+    "value inputs + rank (unmeasured stays unmeasured)",
+    "evidence gaps"
+   ],
+   "status": "17 index rows, 1 pilot page, no rail on either, no JSON contract",
+   "host": "fable-spec-then-luna"
+  },
+  {
+   "id": "U14",
+   "family": "Person page",
+   "instances": "one per client, collaborator, person in the graph",
+   "count": "3 clients (Camron · ofm, Fahmy · bykonz, Cena · actionmodel) + the People Graph programme",
+   "source_data": "PEOPLE-GRAPH-PROGRAM.md, client account repos, projects.json 'for whom', WhatsApp intake words (private)",
+   "sections": [
+    "who, in one line",
+    "relationship + since",
+    "projects + repos",
+    "what they said (private, dated)",
+    "what we owe / they owe",
+    "activity"
+   ],
+   "status": "nothing renders a person; clients exist only as words inside project rows",
+   "host": "fable"
+  },
+  {
+   "id": "U15",
+   "family": "Client account page",
+   "instances": "one per client account (the account repo over its project repos)",
+   "count": "3 accounts → 5 client projects (ofm: Oracle, HALO · bykonz: BykonzYard · actionmodel: Actionist)",
+   "source_data": "his 5 Sep 22:20 'You've got client projects and you've got agency work. It should be split like that.'; account repo; the projects' U4 pages",
+   "sections": [
+    "account in one line",
+    "projects (U4 cards)",
+    "repos incl. private",
+    "money + deliverables (private)",
+    "people",
+    "timeline"
+   ],
+   "status": "not built; HALO front door is a private mirror URL (GAPS F-4)",
+   "host": "fable"
+  },
+  {
+   "id": "U7",
+   "family": "Research doc reader",
+   "instances": "one per document",
+   "count": "20 docs on the site (site/docs/*.html) + every research dossier Work",
+   "source_data": "site/docs/*.html, research.json, the Works of type knowledge_system/bundle",
+   "sections": [
+    "same shell + breadcrumb",
+    "title, description, date, author seat",
+    "table of contents rail",
+    "the doc",
+    "evidence / version panel",
+    "related"
+   ],
+   "status": "/docs/ index has the rail; /docs/*.html do not (308 redirect on the .html route; readers carry no shell)",
+   "host": "fable"
+  },
+  {
+   "id": "U11",
+   "family": "Private Work stub (client + personal)",
+   "instances": "one per private repo / satellite",
+   "count": "4 private repos in catalog (27 total) + siso-source + oracle-source/sessions + halocrm-mirror + bykonz-scout-review + actionmodel-private",
+   "source_data": "catalog repositories[] lifecycle_status + visibility; repos.json per front door; his 16:36: 'even client stock will have the listing of the repos even if they private'",
+   "sections": [
+    "public-safe purpose",
+    "owner + relationship",
+    "why it exists",
+    "how access works",
+    "the repo listed, marked private",
+    "dated activity"
+   ],
+   "status": "no stub template; private repos appear only as a visibility flag on 4 rows",
+   "host": "fable"
+  },
+  {
+   "id": "U6",
+   "family": "Erdős question page",
+   "instances": "one per problem in the Erdős fleet",
+   "count": "4 (742, 647, 23, 848; SISO_Research/erdos, laptop lane frozen 30 Aug, Mini lane)",
+   "source_data": "SISO_Research/erdos/goals/*.md, DECISION-LOG.html, CHECKPOINT-2026-08-30.html, audits/, proof certificates",
+   "sections": [
+    "problem statement",
+    "approach + reductions",
+    "certificate / replay status",
+    "compute spent + host",
+    "decision log",
+    "what would close it"
+   ],
+   "status": "not in the Library at all (0 Works mention erdos); the fleet's own HTML pages exist locally",
+   "host": "luna-then-fable"
+  },
+  {
+   "id": "U10",
+   "family": "Now / activity",
+   "instances": "one per site + one per project",
+   "count": "Library /now/, atlas NOW.html, per-project owners.log views",
+   "source_data": "owners.log lines (P5 writeback), OWNERS.md, herdr roster, rate_limits events",
+   "sections": [
+    "dated owner/runtime observations",
+    "task/outcome summaries",
+    "repo activity",
+    "coverage date",
+    "who to message"
+   ],
+   "status": "Library /now/ 200 with rail; atlas NOW every 5 min; no per-project view",
+   "host": "luna"
+  },
+  {
+   "id": "U12",
+   "family": "Release / Snapshot / Assembly record",
+   "instances": "one per pinned thing",
+   "count": "86 releases · 40 snapshots · 2 assemblies · 8 source inventories",
+   "source_data": "registry/{releases,snapshots,assemblies,source-inventories}/*.json (gls schemas, immutable history)",
+   "sections": [
+    "exact version + scope",
+    "source locators",
+    "evidence",
+    "distribution + rights",
+    "what it pins, linked to its Work"
+   ],
+   "status": "indexes 200, no rail, records rendered as lists",
+   "host": "luna"
+  },
+  {
+   "id": "U20",
+   "family": "Play / skill page",
+   "instances": "one per play and per hub skill",
+   "count": "8 plays (P1–P8) + 32 hub skills (siso-skills-hub)",
+   "source_data": "atlas/FRAMEWORKS-2026-09-05.html, skills-hub registry/skills/*/SKILL.md, install state per harness per machine (cold-discovery probes)",
+   "sections": [
+    "what it does in one line",
+    "the command",
+    "where installed (harness × machine) with probe date",
+    "used for real: receipts",
+    "source hash"
+   ],
+   "status": "one atlas reading page; hub has SKILL.md files; no per-play page with install state",
+   "host": "luna"
+  },
+  {
+   "id": "U22",
+   "family": "Estate / node page",
+   "instances": "one per node",
+   "count": "3 (laptop, Mac Mini, client VPS) + Cloudflare/Tailscale/WARP routes",
+   "source_data": "ESTATE.md, estate/SWEEP-*.md, briefs/MINI-SYNC.md, ledger mini-probe, herdr roster, rate_limits",
+   "sections": [
+    "node: what runs there",
+    "reachability probe, dated",
+    "seats on it now",
+    "disk / swap / budgets",
+    "placement rule"
+   ],
+   "status": "ESTATE.md + a Library /estate/ page (no rail); the Mini WARP question open (GAPS N-1)",
+   "host": "luna"
+  }
+ ]
+}

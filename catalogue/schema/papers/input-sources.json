@@ -1,0 +1,2168 @@
+{
+ "totals": {
+  "sources": 2047,
+  "claims": 3678,
+  "orgs": 361
+ },
+ "by": {
+  "family": {
+   "experiments": 319,
+   "craft": 300,
+   "ux-research": 274,
+   "public-standards": 199,
+   "design-systems": 158,
+   "psychology": 158,
+   "company-essays": 119,
+   "hci-papers": 119,
+   "canon": 79,
+   "landing": 79,
+   "dataviz-motion": 78,
+   "engagement": 64,
+   "ai-ux": 57,
+   "dashboards": 44
+  },
+  "kind": {
+   "article": 928,
+   "guideline": 482,
+   "paper": 203,
+   "talk": 189,
+   "dataset": 143,
+   "standard": 65,
+   "book": 37
+  }
+ },
+ "families": {
+  "ai-ux": [
+   {
+    "id": "openai-chatgpt-plugin-ui-guidelines",
+    "title": "UI guidelines – Plugins",
+    "org": "OpenAI",
+    "year": 2023,
+    "url": "https://developers.openai.com/plugins/concepts/ui-guidelines",
+    "why": "UI patterns for ChatGPT plugins: inline cards, carousels, fullscreen, picture-in-picture modes with visual design principles and accessibility constraints.",
+    "claims": 6
+   },
+   {
+    "id": "openai-apps-sdk-design-system",
+    "title": "OpenAI Apps SDK Design System",
+    "org": "OpenAI",
+    "year": 2023,
+    "url": "https://developers.openai.com/apps-sdk/concepts/ui-guidelines",
+    "why": "Tailwind-based design tokens, CSS variables, accessible component library for ChatGPT and plugin integrations.",
+    "claims": 6
+   },
+   {
+    "id": "cline-vscode-agent-ui",
+    "title": "Cline: VS Code Agent UI Pattern",
+    "org": "Independent",
+    "year": 2024,
+    "url": "https://github.com/cline/cline",
+    "why": "Progress panel convergence: side chat + central task panel for long-running agent operations.",
+    "claims": 5
+   },
+   {
+    "id": "elicit-ai-research-interface",
+    "title": "Elicit: AI Research Paper Synthesis Interface",
+    "org": "Ought/Elicit",
+    "year": 2024,
+    "url": "https://elicit.org/",
+    "why": "Specialized vertical interface: literature review assistance, systematic evidence extraction.",
+    "claims": 4
+   },
+   {
+    "id": "lazarev-ai-transparency-explainability-guide",
+    "title": "AI Transparency and Explainability in 2026: A UX Designer's Field Guide",
+    "org": "Lazarev",
+    "year": 2026,
+    "url": "https://www.lazarev.agency/articles/ai-transparency-and-explainability",
+    "why": "Distinguishes transparency (system-level) vs explainability (decision-level); covers 5 methods, failure modes, audience-matching, regulatory context.",
+    "claims": 3
+   },
+   {
+    "id": "shape-of-ai-patterns",
+    "title": "Shape of AI: AI UX Patterns Database",
+    "org": "Independent",
+    "year": 2023,
+    "url": "https://shapeof.ai/",
+    "why": "Curated pattern library for AI-enhanced interfaces: confidence indicators, override flows, copilot panels, low-confidence states, explainability tooltips.",
+    "claims": 3
+   },
+   {
+    "id": "rovo-ui-atlassian-ai-components",
+    "title": "Rovo UI: Atlassian Design Language for AI",
+    "org": "Atlassian",
+    "year": 2024,
+    "url": "https://atlassian.design/rovo-ui",
+    "why": "Foundations for color, elevation, motion, voice, and components (buttons, borders, icons, illustrations, skills tags) for AI-powered moments.",
+    "claims": 2
+   },
+   {
+    "id": "slack-ai-bolt-integration",
+    "title": "Slack AI: Message Integration Patterns",
+    "org": "Slack",
+    "year": 2024,
+    "url": "https://slack.com/",
+    "why": "AI in messaging: bot recommendations, automated summaries, action suggestions.",
+    "claims": 2
+   },
+   {
+    "id": "sourcegraph-cody-editor-context",
+    "title": "Sourcegraph Cody: Context-Aware Coding Assistant",
+    "org": "Sourcegraph",
+    "year": 2024,
+    "url": "https://sourcegraph.com/cody",
+    "why": "Codebase-aware AI: using repository context for accurate suggestions, file operations.",
+    "claims": 2
+   },
+   {
+    "id": "carbon-for-ai-overview",
+    "title": "Carbon for AI: Framework for AI-Generated Content",
+    "org": "IBM",
+    "year": 2023,
+    "url": "https://carbondesignsystem.com/guidelines/carbon-for-ai/",
+    "why": "Framework for identifying AI-generated content using light-inspired effects, explainability, and branded visual identity across IBM products.",
+    "claims": 2
+   },
+   {
+    "id": "microsoft-hax-toolkit",
+    "title": "HAX Toolkit: Design Library",
+    "org": "Microsoft",
+    "year": 2019,
+    "url": "https://www.microsoft.com/en-us/haxtoolkit/",
+    "why": "Design library pairing 18 guidelines with patterns, examples, and filterable by product category and design goal (transparency, personalisation, reliability, fairness).",
+    "claims": 2
+   },
+   {
+    "id": "arxiv-explanation-user-interfaces-review",
+    "title": "Explanation User Interfaces: A Systematic Literature Review",
+    "org": "CHI Research Community",
+    "year": 2025,
+    "url": "https://arxiv.org/html/2505.20085v1",
+    "why": "Systematizes 146 papers on XUI design across 4 dimensions; introduces HERMES framework for human-centered XUI/XAI development and evaluation.",
+    "claims": 1
+   },
+   {
+    "id": "jacar-agent-ui-design-principles",
+    "title": "UI Design for Agents: Principles We're Starting to Understand",
+    "org": "Independent",
+    "year": 2024,
+    "url": "https://jacar.es/en/ui-design-for-agents-principles-were-starting-to-understand/",
+    "why": "Emerging principles for agentic UI: rethinking request-response model, explaining/revising/coordinating agent actions for transparency.",
+    "claims": 1
+   },
+   {
+    "id": "figma-ai-collaborative-design",
+    "title": "Figma AI: Collaborative Design Assistance",
+    "org": "Figma",
+    "year": 2024,
+    "url": "https://www.figma.com/",
+    "why": "Collaborative canvas pattern: AI suggestions inline with design workflow without context switching.",
+    "claims": 1
+   },
+   {
+    "id": "microsoft-18-guidelines",
+    "title": "Guidelines for Human-AI Interaction",
+    "org": "Microsoft",
+    "year": 2019,
+    "url": "https://www.microsoft.com/en-us/research/publication/guidelines-for-human-ai-interaction/",
+    "why": "18 design guidelines for human-AI interaction grouped by interaction phase: initially, during, when wrong, and over time.",
+    "claims": 1
+   },
+   {
+    "id": "anthropic-constitutional-ai",
+    "title": "Claude's Constitution: Safety and Ethics Principles",
+    "org": "Anthropic",
+    "year": 2026,
+    "url": "https://www.aigl.blog/claudes-constitution/",
+    "why": "Alignment document defining how Claude should be broadly safe, ethical, helpful via constitutional AI training method and principles-based design.",
+    "claims": 0
+   },
+   {
+    "id": "hci-2026-human-ai-standards",
+    "title": "Human-AI Interaction Design Standards",
+    "org": "CHI Research Community",
+    "year": 2026,
+    "url": "https://arxiv.org/pdf/2503.16472",
+    "why": "Latest standards and best practices for human-AI interaction from HCI research community.",
+    "claims": 0
+   },
+   {
+    "id": "atlassian-ai-interaction-guidelines",
+    "title": "AI Interaction Guidelines",
+    "org": "Atlassian",
+    "year": 2024,
+    "url": "https://atlassian.design/patterns/ai-interaction-guidelines",
+    "why": "Rovo UI layer for AI-powered moments with guidance on collaboration, brand integration, responsible AI, and tone.",
+    "claims": 0
+   }
+  ],
+  "canon": [
+   {
+    "id": "jakob-nielsen-10-usability-heuristics",
+    "title": "Jakob Nielsen's 10 Usability Heuristics for User Interface Design",
+    "org": "Nielsen Norman Group",
+    "year": 1995,
+    "url": "https://www.nngroup.com/articles/ten-usability-heuristics/",
+    "why": "Foundational 10 heuristics for evaluating interface usability: system visibility, real-world language, control, standards, error prevention.",
+    "claims": 11
+   },
+   {
+    "id": "laws-ux-doherty-threshold",
+    "title": "Laws of UX: Doherty Threshold",
+    "org": "Laws of UX (Jon Yablonski)",
+    "year": 2020,
+    "url": "https://lawsofux.com/doherty-threshold/",
+    "why": "Systems responding within 400 milliseconds feel responsive; faster responses increase perceived productivity.",
+    "claims": 4
+   },
+   {
+    "id": "laws-ux-hicks-law",
+    "title": "Laws of UX: Hick's Law",
+    "org": "Laws of UX (Jon Yablonski)",
+    "year": 2020,
+    "url": "https://lawsofux.com/hicks-law/",
+    "why": "Decision time increases logarithmically with number of options; progressively reveal advanced options.",
+    "claims": 4
+   },
+   {
+    "id": "laws-ux-von-restorff",
+    "title": "Laws of UX: Von Restorff Effect",
+    "org": "Laws of UX (Jon Yablonski)",
+    "year": 2020,
+    "url": "https://lawsofux.com/von-restorff-effect/",
+    "why": "Visually distinct elements are more memorable and attention-grabbing; use contrast to highlight key items.",
+    "claims": 4
+   },
+   {
+    "id": "shneiderman-eight-rules",
+    "title": "Ben Shneiderman",
+    "org": "Ben Shneiderman",
+    "year": 1986,
+    "url": "https://www.cs.umd.edu/~ben/goldenrules.html",
+    "why": "Eight foundational heuristics for interface design: consistency, shortcuts, feedback, closure, error handling, reversal, control, and memory.",
+    "claims": 4
+   },
+   {
+    "id": "every-layout-stack",
+    "title": "Every Layout: The Stack",
+    "org": "Heydon Pickering, Andy Bell",
+    "year": 2020,
+    "url": "https://every-layout.dev/layouts/stack/",
+    "why": "Algorithmic layout primitive for vertical stacking with consistent spacing, eliminating media queries.",
+    "claims": 3
+   },
+   {
+    "id": "laws-ux-choice-overload",
+    "title": "Laws of UX: Choice Overload",
+    "org": "Laws of UX (Jon Yablonski)",
+    "year": 2020,
+    "url": "https://lawsofux.com/choice-overload/",
+    "why": "Excessive choices increase cognitive load and decision paralysis; limit options to three to five core alternatives.",
+    "claims": 3
+   },
+   {
+    "id": "laws-ux-fitts-law",
+    "title": "Laws of UX: Fitts's Law",
+    "org": "Laws of UX (Jon Yablonski)",
+    "year": 2020,
+    "url": "https://lawsofux.com/fittss-law/",
+    "why": "Target acquisition time depends on distance and size; make important buttons larger or place at screen edges.",
+    "claims": 3
+   },
+   {
+    "id": "laws-ux-flow",
+    "title": "Laws of UX: Flow",
+    "org": "Laws of UX (Jon Yablonski)",
+    "year": 2020,
+    "url": "https://lawsofux.com/flow/",
+    "why": "Users achieve flow state when challenge level matches skill level; design tasks with appropriate difficulty progression.",
+    "claims": 3
+   },
+   {
+    "id": "laws-ux-similarity",
+    "title": "Laws of UX: Law of Similarity",
+    "org": "Laws of UX (Jon Yablonski)",
+    "year": 2020,
+    "url": "https://lawsofux.com/law-of-similarity/",
+    "why": "Elements sharing visual properties are perceived as related; use consistent styling for related items.",
+    "claims": 3
+   },
+   {
+    "id": "laws-ux-mental-model",
+    "title": "Laws of UX: Mental Model",
+    "org": "Laws of UX (Jon Yablonski)",
+    "year": 2020,
+    "url": "https://lawsofux.com/mental-model/",
+    "why": "Users form mental models of systems based on experience; design interfaces aligned with how users think.",
+    "claims": 3
+   },
+   {
+    "id": "laws-ux-selective-attention",
+    "title": "Laws of UX: Selective Attention",
+    "org": "Laws of UX (Jon Yablonski)",
+    "year": 2020,
+    "url": "https://lawsofux.com/selective-attention/",
+    "why": "Users filter information to focus on relevant tasks; highlight important elements and reduce distractions.",
+    "claims": 3
+   },
+   {
+    "id": "laws-ux-zeigarnik-effect",
+    "title": "Laws of UX: Zeigarnik Effect",
+    "org": "Laws of UX (Jon Yablonski)",
+    "year": 2020,
+    "url": "https://lawsofux.com/zeigarnik-effect/",
+    "why": "Incomplete tasks are remembered better than completed ones; show progress and incomplete states to maintain engagement.",
+    "claims": 3
+   },
+   {
+    "id": "every-layout-switcher",
+    "title": "Every Layout: The Switcher",
+    "org": "Heydon Pickering, Andy Bell",
+    "year": 2020,
+    "url": "https://every-layout.dev/layouts/switcher/",
+    "why": "Adaptive layout that switches from horizontal to vertical orientation based on intrinsic sizing constraints.",
+    "claims": 2
+   },
+   {
+    "id": "laws-ux-aesthetic-usability",
+    "title": "Laws of UX: Aesthetic-Usability Effect",
+    "org": "Laws of UX (Jon Yablonski)",
+    "year": 2020,
+    "url": "https://lawsofux.com/aesthetic-usability-effect/",
+    "why": "Users perceive aesthetically pleasing design as more usable, even when it functions identically to less attractive alternatives.",
+    "claims": 2
+   },
+   {
+    "id": "laws-ux-chunking",
+    "title": "Laws of UX: Chunking",
+    "org": "Laws of UX (Jon Yablonski)",
+    "year": 2020,
+    "url": "https://lawsofux.com/chunking/",
+    "why": "Breaking information into smaller, meaningful chunks reduces cognitive load and improves memory retention.",
+    "claims": 2
+   },
+   {
+    "id": "laws-ux-cognitive-load",
+    "title": "Laws of UX: Cognitive Load",
+    "org": "Laws of UX (Jon Yablonski)",
+    "year": 2020,
+    "url": "https://lawsofux.com/cognitive-load/",
+    "why": "Working memory capacity is limited; design should minimize cognitive demands through simplification and clarity.",
+    "claims": 2
+   },
+   {
+    "id": "laws-ux-goal-gradient",
+    "title": "Laws of UX: Goal-Gradient Effect",
+    "org": "Laws of UX (Jon Yablonski)",
+    "year": 2020,
+    "url": "https://lawsofux.com/goal-gradient-effect/",
+    "why": "Users are motivated to increase effort as they approach a goal; show progress and celebrate milestones.",
+    "claims": 2
+   }
+  ],
+  "company-essays": [
+   {
+    "id": "laws-of-ux",
+    "title": "Laws of UX",
+    "org": "Laws of UX (Jon Yablonski)",
+    "year": 2023,
+    "url": "https://lawsofux.com/",
+    "why": "Collection of maxims on user experience design backed by research.",
+    "claims": 16
+   },
+   {
+    "id": "ibm-design-thinking",
+    "title": "IBM Design Thinking",
+    "org": "IBM",
+    "year": 2023,
+    "url": "https://www.ibm.com/design/approach/design-thinking",
+    "why": "Design thinking approach for problem-solving, observation, ideation, prototyping, testing.",
+    "claims": 5
+   },
+   {
+    "id": "shopify-design-system-principles",
+    "title": "Shopify Design System Principles",
+    "org": "Shopify",
+    "year": 2023,
+    "url": "https://shopify.dev/docs/apps/design",
+    "why": "Design principles and system for building apps on Shopify platform.",
+    "claims": 5
+   },
+   {
+    "id": "shopify-polaris-design-system",
+    "title": "How to Get the Most Out of Shopify's Design System Polaris",
+    "org": "Shopify",
+    "year": 2017,
+    "url": "https://shopify.com/partners/blog/how-to-get-the-most-out-of-polaris-shopify-s-new-design-system",
+    "why": "Introduces Polaris design system principles, voice and tone, developer resources, pre-made components.",
+    "claims": 5
+   },
+   {
+    "id": "linear-calmer-interface-design-refresh",
+    "title": "A calmer interface for a product in motion",
+    "org": "Linear",
+    "year": 2026,
+    "url": "https://linear.app/now/behind-the-latest-design-refresh",
+    "why": "Details interface refresh focused on balance, reducing visual clutter while maintaining information density.",
+    "claims": 4
+   },
+   {
+    "id": "figma-design-principles",
+    "title": "Figma Design Principles",
+    "org": "Figma",
+    "year": 2025,
+    "url": "https://principles.design/examples/figma-design-principles",
+    "why": "Nine principles: Powerful, Precise, Systematic, Predictable, Biased toward Simplicity, Natural, Responsible, Detail-oriented, Respectful.",
+    "claims": 4
+   },
+   {
+    "id": "apple-wwdc-design-2025",
+    "title": "Get to know the new design system",
+    "org": "Apple",
+    "year": 2025,
+    "url": "https://developer.apple.com/videos/play/wwdc2025/356/",
+    "why": "WWDC25 session on Apple's Liquid Glass design update, visual design, information architecture, core components.",
+    "claims": 4
+   },
+   {
+    "id": "mobile-design-patterns",
+    "title": "LukeW",
+    "org": "Luke Wroblewski",
+    "year": 2023,
+    "url": "https://www.lukew.com/ff/entry.asp?571",
+    "why": "Analysis of mobile design patterns and best practices.",
+    "claims": 4
+   },
+   {
+    "id": "microsoft-four-principles-future-design",
+    "title": "Four Principles for the Future of Design",
+    "org": "Microsoft",
+    "year": 2021,
+    "url": "https://microsoft.design/articles/four-principles-for-the-future-of-design/",
+    "why": "Evolves Microsoft design principles to: Natural on every platform, Built for focus, One for all, Unmistakably Microsoft.",
+    "claims": 4
+   },
+   {
+    "id": "duolingo-shape-language-art-style",
+    "title": "Shape language: Duolingo's art style",
+    "org": "Duolingo",
+    "year": 2020,
+    "url": "https://blog.duolingo.com/shape-language-duolingos-art-style/",
+    "why": "Defines core shape-based approach to illustration and visual design: rounded rectangle, circle, rounded triangle create rhythm.",
+    "claims": 4
+   },
+   {
+    "id": "duolingo-elevating-craft-tabs-redesign",
+    "title": "Elevating craft: How we refreshed our core tabs",
+    "org": "Duolingo",
+    "year": 2026,
+    "url": "https://blog.duolingo.com/core-tabs-redesign",
+    "why": "Documents tab redesign focusing on consistency, typography hierarchy, spacing, and framework for balanced design decisions.",
+    "claims": 3
+   },
+   {
+    "id": "linear-styling-with-stylex",
+    "title": "Styling Linear for the future with StyleX",
+    "org": "Linear",
+    "year": 2026,
+    "url": "https://linear.app/now/styling-linear-for-the-future-stylex",
+    "why": "Documents design system migration with automation and clearer boundaries for design and engineering.",
+    "claims": 3
+   },
+   {
+    "id": "figma-new-icon",
+    "title": "Figma's new icon",
+    "org": "Figma",
+    "year": 2026,
+    "url": "https://www.figma.com/blog/figmas-new-icon/",
+    "why": "Documents icon design evolution for Figma's product.",
+    "claims": 3
+   },
+   {
+    "id": "figma-on-figma-design-system",
+    "title": "Figma on Figma: How we built figma.com's design system",
+    "org": "Figma",
+    "year": 2025,
+    "url": "https://www.figma.com/blog/figma-on-figma-how-we-built-figma-dot-coms-design-system/",
+    "why": "Figma applies design system principles to its own website and design tooling.",
+    "claims": 3
+   },
+   {
+    "id": "rauno-freiberg-invisible-details",
+    "title": "Invisible Details of Interaction Design",
+    "org": "Rauno Freiberg",
+    "year": 2023,
+    "url": "https://every.to/p/invisible-details-of-interaction-design",
+    "why": "Essay on micro-interactions, animations, and tactile feedback that make software feel alive.",
+    "claims": 3
+   },
+   {
+    "id": "uber-design-principles",
+    "title": "Guiding Principles of Uber",
+    "org": "Uber",
+    "year": 2023,
+    "url": "https://principles.design/examples/uber-design-principles",
+    "why": "Act responsibly, Put design at center, Say we not me - from 77 Things primer for Uber Design.",
+    "claims": 3
+   },
+   {
+    "id": "airbnb-design-language",
+    "title": "Airbnb Design Language System",
+    "org": "Airbnb",
+    "year": 2023,
+    "url": "https://principles.design/examples/airbnb-design-principles",
+    "why": "Four principles: Unified (part of whole), Universal (global), Iconic (bold and clear), Conversational (motion communicates).",
+    "claims": 3
+   },
+   {
+    "id": "chakra-ui-design-system",
+    "title": "Chakra UI",
+    "org": "Chakra",
+    "year": 2023,
+    "url": "https://chakra-ui.com/",
+    "why": "Component library with built-in accessibility features and theming.",
+    "claims": 3
+   }
+  ],
+  "craft": [
+   {
+    "id": "apple-wwdc2021-10126",
+    "title": "Discoverable design",
+    "org": "Apple",
+    "year": 2021,
+    "url": "https://developer.apple.com/videos/play/wwdc2021/10126/",
+    "why": "Apple design-team session from the WWDC design track.",
+    "claims": 14
+   },
+   {
+    "id": "apple-tech-talks-111462",
+    "title": "Raise the bar with iPhone Duo",
+    "org": "Apple",
+    "year": null,
+    "url": "https://developer.apple.com/videos/play/tech-talks/111462/",
+    "why": "Apple design-team session from the WWDC design track.",
+    "claims": 13
+   },
+   {
+    "id": "apple-wwdc2023-10194",
+    "title": "Design dynamic Live Activities",
+    "org": "Apple",
+    "year": 2023,
+    "url": "https://developer.apple.com/videos/play/wwdc2023/10194/",
+    "why": "Apple design-team session from the WWDC design track.",
+    "claims": 11
+   },
+   {
+    "id": "apple-wwdc2017-811",
+    "title": "Design Tips for Great Games",
+    "org": "Apple",
+    "year": 2017,
+    "url": "https://developer.apple.com/videos/play/wwdc2017/811/",
+    "why": "Apple design-team session from the WWDC design track.",
+    "claims": 11
+   },
+   {
+    "id": "apple-wwdc2022-110340",
+    "title": "Design an effective chart",
+    "org": "Apple",
+    "year": 2022,
+    "url": "https://developer.apple.com/videos/play/wwdc2022/110340/",
+    "why": "Apple design-team session from the WWDC design track.",
+    "claims": 10
+   },
+   {
+    "id": "apple-wwdc2021-10029",
+    "title": "Design for Safari 15",
+    "org": "Apple",
+    "year": 2021,
+    "url": "https://developer.apple.com/videos/play/wwdc2021/10029/",
+    "why": "Apple design-team session from the WWDC design track.",
+    "claims": 10
+   },
+   {
+    "id": "apple-wwdc2025-255",
+    "title": "Design widgets for visionOS",
+    "org": "Apple",
+    "year": 2025,
+    "url": "https://developer.apple.com/videos/play/wwdc2025/255/",
+    "why": "Apple design-team session from the WWDC design track.",
+    "claims": 9
+   },
+   {
+    "id": "apple-wwdc2023-10076",
+    "title": "Design for spatial user interfaces",
+    "org": "Apple",
+    "year": 2023,
+    "url": "https://developer.apple.com/videos/play/wwdc2023/10076/",
+    "why": "Apple design-team session from the WWDC design track.",
+    "claims": 9
+   },
+   {
+    "id": "apple-wwdc2026-234",
+    "title": "Design immersive environments for visionOS apps and the spatial web",
+    "org": "Apple",
+    "year": 2026,
+    "url": "https://developer.apple.com/videos/play/wwdc2026/234/",
+    "why": "Apple design-team session from the WWDC design track.",
+    "claims": 8
+   },
+   {
+    "id": "apple-wwdc2025-248",
+    "title": "Explore prompt design & safety for on-device foundation models",
+    "org": "Apple",
+    "year": 2025,
+    "url": "https://developer.apple.com/videos/play/wwdc2025/248/",
+    "why": "Apple design-team session from the WWDC design track.",
+    "claims": 8
+   },
+   {
+    "id": "apple-wwdc2025-284",
+    "title": "Build a UIKit app with the new design",
+    "org": "Apple",
+    "year": 2025,
+    "url": "https://developer.apple.com/videos/play/wwdc2025/284/",
+    "why": "Apple design-team session from the WWDC design track.",
+    "claims": 8
+   },
+   {
+    "id": "apple-wwdc2024-10086",
+    "title": "Design great visionOS apps",
+    "org": "Apple",
+    "year": 2024,
+    "url": "https://developer.apple.com/videos/play/wwdc2024/10086/",
+    "why": "Apple design-team session from the WWDC design track.",
+    "claims": 8
+   },
+   {
+    "id": "apple-wwdc2024-10094",
+    "title": "Explore game input in visionOS",
+    "org": "Apple",
+    "year": 2024,
+    "url": "https://developer.apple.com/videos/play/wwdc2024/10094/",
+    "why": "Apple design-team session from the WWDC design track.",
+    "claims": 8
+   },
+   {
+    "id": "apple-wwdc2023-10078",
+    "title": "Design considerations for vision and motion",
+    "org": "Apple",
+    "year": 2023,
+    "url": "https://developer.apple.com/videos/play/wwdc2023/10078/",
+    "why": "Apple design-team session from the WWDC design track.",
+    "claims": 8
+   },
+   {
+    "id": "apple-wwdc2022-10131",
+    "title": "Qualities of great AR experiences",
+    "org": "Apple",
+    "year": 2022,
+    "url": "https://developer.apple.com/videos/play/wwdc2022/10131/",
+    "why": "Apple design-team session from the WWDC design track.",
+    "claims": 8
+   },
+   {
+    "id": "apple-wwdc2017-821",
+    "title": "Get Started with Display P3",
+    "org": "Apple",
+    "year": 2017,
+    "url": "https://developer.apple.com/videos/play/wwdc2017/821/",
+    "why": "Apple design-team session from the WWDC design track.",
+    "claims": 8
+   },
+   {
+    "id": "apple-tech-talks-111466",
+    "title": "Design for iPhone Duo",
+    "org": "Apple",
+    "year": null,
+    "url": "https://developer.apple.com/videos/play/tech-talks/111466/",
+    "why": "Apple design-team session from the WWDC design track.",
+    "claims": 8
+   },
+   {
+    "id": "apple-wwdc2026-8012",
+    "title": "Icon Composer for Beginners Group Lab",
+    "org": "Apple",
+    "year": 2026,
+    "url": "https://developer.apple.com/videos/play/wwdc2026/8012/",
+    "why": "Apple design-team session from the WWDC design track.",
+    "claims": 7
+   }
+  ],
+  "dashboards": [
+   {
+    "id": "odown-monitoring-dashboard",
+    "title": "Monitoring Dashboard Design: Creating Effective Visualizations for Operations Teams",
+    "org": "Odown",
+    "year": null,
+    "url": "https://odown.com/blog/monitoring-dashboard-design-effective-visualizations-operations-teams",
+    "why": "Design patterns for real-time operational dashboards: update frequency, latency, interaction design, and rendering optimization",
+    "claims": 21
+   },
+   {
+    "id": "ibm-carbon-data-table-usage",
+    "title": "Data Table | Carbon Design System",
+    "org": "IBM",
+    "year": 2024,
+    "url": "https://carbondesignsystem.com/components/data-table/usage/",
+    "why": "Documents table data organization, sorting, expansion, batch actions, toolbar utilities",
+    "claims": 8
+   },
+   {
+    "id": "patternfly-filters-design-guidelines",
+    "title": "PatternFly • Filters",
+    "org": "Red Hat (PatternFly)",
+    "year": 2024,
+    "url": "https://www.patternfly.org/patterns/filters/design-guidelines",
+    "why": "Filter types (text, single select, checkbox) with typeahead and badge count features, toolbar integration",
+    "claims": 6
+   },
+   {
+    "id": "steve-kinney-skeleton-screens",
+    "title": "Skeleton Screens & Perceived Performance",
+    "org": "Steve Kinney",
+    "year": 2024,
+    "url": "https://stevekinney.com/courses/react-performance/skeleton-screens-perceived-performance",
+    "why": "Perceived vs actual performance: 2-second skeleton feels faster than 1-second spinner; maintains layout stability, prevents shifts, psychological optimization",
+    "claims": 6
+   },
+   {
+    "id": "ibm-carbon-empty-states-pattern",
+    "title": "Empty States | Carbon Design System",
+    "org": "IBM",
+    "year": 2024,
+    "url": "https://carbondesignsystem.com/patterns/empty-states-pattern/",
+    "why": "Defines three empty state types (no-data, user-action, error-management) with anatomy and alternatives",
+    "claims": 5
+   },
+   {
+    "id": "patternfly-empty-state-design-guidelines",
+    "title": "PatternFly • Empty State",
+    "org": "Red Hat (PatternFly)",
+    "year": 2024,
+    "url": "https://www.patternfly.org/components/empty-state/design-guidelines",
+    "why": "Covers five elements (icon, heading, body, primary, secondary actions) with five use cases",
+    "claims": 5
+   },
+   {
+    "id": "gitlab-pajamas-empty-states",
+    "title": "Empty States | Pajamas Design System",
+    "org": "GitLab",
+    "year": 2024,
+    "url": "https://design.gitlab.com/regions/empty-states",
+    "why": "Empty state goals (adoption, learnability, usability) with unique feature design over fallbacks",
+    "claims": 5
+   },
+   {
+    "id": "stripe-apps-design",
+    "title": "Design your app",
+    "org": "Stripe",
+    "year": 2024,
+    "url": "https://docs.stripe.com/stripe-apps/design",
+    "why": "Stripe Apps UI design patterns, components, views (ContextView/FocusView/SettingsView), branding, and accessibility-first custom styling constraints",
+    "claims": 5
+   },
+   {
+    "id": "datashool-data-ink-ratio",
+    "title": "What is the Data Ink Ratio?",
+    "org": "The Data School",
+    "year": null,
+    "url": "https://www.thedataschool.co.uk/calvin-gao/what-is-the-data-ink-ratio/",
+    "why": "Explains Tufte's data-ink ratio principle: maximizing meaningful data representation while minimizing decorative elements",
+    "claims": 5
+   },
+   {
+    "id": "patternfly-card-design-guidelines",
+    "title": "PatternFly • Card",
+    "org": "Red Hat (PatternFly)",
+    "year": 2024,
+    "url": "https://www.patternfly.org/components/card/design-guidelines",
+    "why": "Card anatomy (header, title, body, footer) with three spacing variants (compact, standard, large)",
+    "claims": 4
+   },
+   {
+    "id": "elastic-eui-metric-chart",
+    "title": "Metric chart | Elastic UI Framework",
+    "org": "Elastic",
+    "year": 2024,
+    "url": "https://eui.elastic.co/docs/dataviz/types/metric-chart/",
+    "why": "Single value visualization for metrics and KPIs with enhanced data visualization capabilities",
+    "claims": 4
+   },
+   {
+    "id": "elastic-eui-error-messages",
+    "title": "Error messages | Elastic UI Framework",
+    "org": "Elastic",
+    "year": 2024,
+    "url": "https://eui.elastic.co/docs/patterns/error-messages/",
+    "why": "Error communication patterns with codes translated to plain language, callout stacking order",
+    "claims": 4
+   },
+   {
+    "id": "salesforce-lightning-empty-state",
+    "title": "Empty State - Lightning Design System",
+    "org": "Salesforce",
+    "year": 2024,
+    "url": "http://v1.lightningdesignsystem.com/guidelines/empty-state/",
+    "why": "Empty state messages for unconfigured features, errors, search results with desktop/mobile adaptation",
+    "claims": 4
+   },
+   {
+    "id": "linear-dashboards-best-practices",
+    "title": "Best practices for designing Linear Dashboards",
+    "org": "Linear",
+    "year": null,
+    "url": "https://linear.app/blog/dashboards-best-practices",
+    "why": "Dashboard intentionality and purpose-driven design with information density guidance for operational vs strategic views",
+    "claims": 4
+   },
+   {
+    "id": "cdc-sparkline-cove",
+    "title": "Sparkline | COVE | CDC",
+    "org": "CDC",
+    "year": null,
+    "url": "https://www.cdc.gov/cove/data-visualization-types/sparkline.html",
+    "why": "CDC's open-source visualization editor documentation on sparklines as single-series charts for compact trend display in dashboards",
+    "claims": 3
+   },
+   {
+    "id": "tableau-dashboards-best-practices",
+    "title": "Best Practices for Effective Dashboards",
+    "org": "Tableau",
+    "year": null,
+    "url": "https://help.tableau.com/current/pro/desktop/en-us/dashboards_best_practices.htm",
+    "why": "Official Tableau guidance on dashboard audience, purpose, visual hierarchy, and device-responsive design patterns",
+    "claims": 3
+   },
+   {
+    "id": "nngroup-empty-states",
+    "title": "Designing Empty States in Complex Applications: 3 Guidelines",
+    "org": "Nielsen Norman Group",
+    "year": null,
+    "url": "https://nngroup.com/articles/empty-state-interface-design",
+    "why": "Empty state patterns for complex apps: communicate status, teach affordances, direct next action—15-30% skeleton screen lift over spinners",
+    "claims": 3
+   },
+   {
+    "id": "patternfly-skeleton-design-guidelines",
+    "title": "Skeleton",
+    "org": "Red Hat (PatternFly)",
+    "year": 2024,
+    "url": "https://www.patternfly.org/components/skeleton/design-guidelines",
+    "why": "Progressive skeleton loading matching exact content structure with accessibility requirements",
+    "claims": 2
+   }
+  ],
+  "dataviz-motion": [
+   {
+    "id": "carbon-spatial-charts",
+    "title": "Spatial Charts – Carbon Design System",
+    "org": "IBM",
+    "year": 2024,
+    "url": "https://carbondesignsystem.com/building-blocks/data-visualization/spatial-charts",
+    "why": "Guide to geographical data visualization: choropleth maps, circle packs, connection maps, proportional symbols, and cartograms.",
+    "claims": 12
+   },
+   {
+    "id": "svg-animation-performance",
+    "title": "Optimize SVG Animations for Page Speed – SVGator",
+    "org": "SVGator",
+    "year": 2024,
+    "url": "https://www.svgator.com/blog/optimize-svg-animations-page-speed",
+    "why": "SVG animation optimization: file size reduction, rendering performance, CSS vs JavaScript animation trade-offs.",
+    "claims": 7
+   },
+   {
+    "id": "carbon-simple-charts",
+    "title": "Simple Charts – Carbon Design System",
+    "org": "IBM",
+    "year": 2024,
+    "url": "https://carbondesignsystem.com/building-blocks/data-visualization/simple-charts",
+    "why": "Comprehensive guide to 24 chart types with anatomy, best practices, and implementation guidelines for bar, line, area, pie, bubble, scatter, and specialized charts.",
+    "claims": 6
+   },
+   {
+    "id": "carbon-chart-anatomy",
+    "title": "Chart Anatomy – Carbon Design System",
+    "org": "IBM",
+    "year": 2024,
+    "url": "https://carbondesignsystem.com/building-blocks/data-visualization/chart-anatomy",
+    "why": "Defines core chart elements: title, legend, axes, grid, and data representation with principles for clarity and hierarchy.",
+    "claims": 6
+   },
+   {
+    "id": "carbon-axes-labels",
+    "title": "Axes and Labels – Carbon Design System",
+    "org": "IBM",
+    "year": 2024,
+    "url": "https://carbondesignsystem.com/building-blocks/data-visualization/axes-and-labels",
+    "why": "Guidance on axis design, tick marks, grid lines, and label placement for chart readability and interpretation.",
+    "claims": 6
+   },
+   {
+    "id": "ft-visual-vocabulary",
+    "title": "Visual Vocabulary – Financial Times",
+    "org": "Financial Times",
+    "year": 2024,
+    "url": "https://github.com/Financial-Times/chart-doctor/blob/main/visual-vocabulary/README.md",
+    "why": "Taxonomy of 70+ chart types organized by purpose (deviation, correlation, ranking, distribution, change, part-to-whole, magnitude, spatial, flow).",
+    "claims": 6
+   },
+   {
+    "id": "fluent-motion",
+    "title": "Motion – Microsoft Fluent Design",
+    "org": "Microsoft",
+    "year": 2024,
+    "url": "https://fluent2.microsoft.design/motion",
+    "why": "Fluent motion fundamentals: timing, easing, directionality, gravity. Reactive, direct, context-appropriate animation with spatial connection.",
+    "claims": 6
+   },
+   {
+    "id": "carbon-motion-overview",
+    "title": "Motion – Carbon Design System",
+    "org": "IBM",
+    "year": 2024,
+    "url": "https://carbondesignsystem.com/elements/motion/overview/",
+    "why": "Productive vs. expressive motion: animation for efficiency and task completion, or enthusiasm and significant moments. Motion choreography on grid.",
+    "claims": 6
+   },
+   {
+    "id": "datawrapper-blog-10-ways-fewer-colors",
+    "title": "10 Ways to Use Fewer Colors in Your Data Visualizations – Datawrapper Blog",
+    "org": "Datawrapper",
+    "year": 2024,
+    "url": "https://www.datawrapper.de/blog/10-ways-to-use-fewer-colors-in-your-data-visualizations",
+    "why": "Lisa Charlotte Muth: strategies for visualizing many categories without color overload (confetti effect).",
+    "claims": 6
+   },
+   {
+    "id": "gestalt-visual-ui-design",
+    "title": "Gestalt Principles for Visual UI Design – Jakob Nielsen PhD",
+    "org": "Nielsen Norman Group",
+    "year": 2024,
+    "url": "https://jakobnielsenphd.substack.com/p/gestalt-principles",
+    "why": "Practical application of Gestalt principles to visual interface design: proximity, similarity, continuity for UI organization.",
+    "claims": 6
+   },
+   {
+    "id": "carbon-flow-charts",
+    "title": "Flow Charts – Carbon Design System",
+    "org": "IBM",
+    "year": 2024,
+    "url": "https://carbondesignsystem.com/building-blocks/data-visualization/flow-charts",
+    "why": "Guide to flow visualization types: alluvial diagrams, network diagrams, parallel coordinates, and tree diagrams with design principles.",
+    "claims": 5
+   },
+   {
+    "id": "datawrapper-blog-color-style-guides",
+    "title": "Colors for data visualization style guides – Datawrapper Blog",
+    "org": "Datawrapper",
+    "year": 2024,
+    "url": "https://www.datawrapper.de/blog/colors-for-data-vis-style-guides",
+    "why": "Lisa Charlotte Muth: building organizational color palettes with principles for consistency and accessibility.",
+    "claims": 5
+   },
+   {
+    "id": "modern-svg-animation",
+    "title": "Modern SVG Animation Techniques – OpenReplay",
+    "org": "OpenReplay",
+    "year": 2024,
+    "url": "https://blog.openreplay.com/modern-svg-animation-techniques/",
+    "why": "SVG animation approaches: CSS animations, SMIL, JavaScript libraries (GSAP, Anime.js) for interactive graphics.",
+    "claims": 5
+   },
+   {
+    "id": "datawrapper-blog-color-keys",
+    "title": "How to design better color keys – Datawrapper Blog",
+    "org": "Datawrapper",
+    "year": 2024,
+    "url": "https://www.datawrapper.de/blog/color-keys-for-data-visualizations",
+    "why": "Lisa Charlotte Muth: designing color legends that help readers interpret visualizations effectively.",
+    "claims": 4
+   },
+   {
+    "id": "atlassian-dataviz-color",
+    "title": "Data Visualization – Atlassian Design",
+    "org": "Atlassian",
+    "year": 2024,
+    "url": "https://atlassian.design/foundations/color/data-visualization-color",
+    "why": "Design token approach to chart colors: brand colors, status colors, neutral contrast, and accessibility in data visualization.",
+    "claims": 3
+   },
+   {
+    "id": "fluent-motion-practice",
+    "title": "Motion in Practice – Microsoft Fluent",
+    "org": "Microsoft",
+    "year": 2024,
+    "url": "https://learn.microsoft.com/en-us/windows/apps/design/motion",
+    "why": "Implementation guidance: implicit animation, built-in animation, custom animation with standardized values and physics-based motion.",
+    "claims": 3
+   },
+   {
+    "id": "carbon-motion-choreography",
+    "title": "Motion Choreography – Carbon Design System",
+    "org": "IBM",
+    "year": 2024,
+    "url": "https://carbondesignsystem.com/elements/motion/choreography/",
+    "why": "Timing choreography: staggered animations on grid, rounded corners from horizontal/vertical animation pairing, product strategy for motion.",
+    "claims": 3
+   },
+   {
+    "id": "datawrapper-blog-emphasize-color",
+    "title": "How to emphasize with color in data visualizations – Datawrapper Blog",
+    "org": "Datawrapper",
+    "year": 2024,
+    "url": "https://www.datawrapper.de/blog/emphasize-with-color-in-data-visualizations",
+    "why": "Lisa Charlotte Muth: using color to guide attention, emphasize key data, and de-emphasize context.",
+    "claims": 3
+   }
+  ],
+  "design-systems": [
+   {
+    "id": "carbon-button",
+    "title": "Button – IBM Carbon",
+    "org": "IBM",
+    "year": 2024,
+    "url": "https://carbondesignsystem.com/components/button/usage/",
+    "why": "Button component usage and variants.",
+    "claims": 9
+   },
+   {
+    "id": "primer-layout",
+    "title": "Layout – GitHub Primer",
+    "org": "GitHub",
+    "year": 2024,
+    "url": "https://primer.style/foundations/layout",
+    "why": "Standards for consistent, accessible, responsive experiences.",
+    "claims": 8
+   },
+   {
+    "id": "carbon-dropdown",
+    "title": "Dropdown – IBM Carbon",
+    "org": "IBM",
+    "year": 2024,
+    "url": "https://carbondesignsystem.com/components/dropdown/usage/",
+    "why": "Dropdown and select component patterns.",
+    "claims": 8
+   },
+   {
+    "id": "carbon-tabs",
+    "title": "Tabs – IBM Carbon",
+    "org": "IBM",
+    "year": 2024,
+    "url": "https://carbondesignsystem.com/components/tabs/usage/",
+    "why": "Tabbed interface patterns.",
+    "claims": 8
+   },
+   {
+    "id": "carbon-pattern-forms",
+    "title": "Forms Pattern – IBM Carbon",
+    "org": "IBM",
+    "year": 2024,
+    "url": "https://carbondesignsystem.com/patterns/forms-pattern",
+    "why": "Form design patterns and best practices.",
+    "claims": 8
+   },
+   {
+    "id": "atlassian-typography",
+    "title": "Typography – Atlassian Design System",
+    "org": "Atlassian",
+    "year": 2024,
+    "url": "https://atlassian.design/foundations/typography/applying-typography",
+    "why": "Applying typography at scale with contrast and token guidance.",
+    "claims": 7
+   },
+   {
+    "id": "atlassian-spacing",
+    "title": "Spacing – Atlassian Design System",
+    "org": "Atlassian",
+    "year": 2024,
+    "url": "https://atlassian.design/foundations/spacing",
+    "why": "8px base spacing system for consistent layout and hierarchy.",
+    "claims": 7
+   },
+   {
+    "id": "carbon-slider",
+    "title": "Slider – IBM Carbon",
+    "org": "IBM",
+    "year": 2024,
+    "url": "https://carbondesignsystem.com/components/slider/usage/",
+    "why": "Range slider component.",
+    "claims": 7
+   },
+   {
+    "id": "fluent2-accessibility",
+    "title": "Accessibility – Microsoft Fluent 2",
+    "org": "Microsoft",
+    "year": 2023,
+    "url": "https://fluent2.microsoft.design/accessibility",
+    "why": "Fluent accessibility standards and considerations.",
+    "claims": 7
+   },
+   {
+    "id": "fluent2-layout",
+    "title": "Layout – Microsoft Fluent 2",
+    "org": "Microsoft",
+    "year": 2023,
+    "url": "https://fluent2.microsoft.design/layout",
+    "why": "Fluent layout and spacing system.",
+    "claims": 7
+   },
+   {
+    "id": "carbon-2x-grid",
+    "title": "2x Grid – IBM Carbon Design System",
+    "org": "IBM",
+    "year": 2024,
+    "url": "https://carbondesignsystem.com/building-blocks/foundations/2x-grid",
+    "why": "Geometric foundation for typography, layouts, icons, and illustrations.",
+    "claims": 6
+   },
+   {
+    "id": "carbon-color",
+    "title": "Color – IBM Carbon Design System",
+    "org": "IBM",
+    "year": 2024,
+    "url": "https://carbondesignsystem.com/building-blocks/foundations/color",
+    "why": "Color palette, semantics, and accessible color contrast ratios.",
+    "claims": 6
+   },
+   {
+    "id": "primer-responsive",
+    "title": "Responsive – GitHub Primer",
+    "org": "GitHub",
+    "year": 2024,
+    "url": "https://primer.style/foundations/responsive",
+    "why": "Responsive design patterns for all devices and preferences.",
+    "claims": 6
+   },
+   {
+    "id": "atlassian-iconography",
+    "title": "Iconography – Atlassian Design System",
+    "org": "Atlassian",
+    "year": 2024,
+    "url": "https://atlassian.design/foundations/iconography",
+    "why": "Rounded icon system harmonious with typography and UI elements.",
+    "claims": 6
+   },
+   {
+    "id": "carbon-accessibility-guidelines",
+    "title": "Accessibility Guidelines – IBM Carbon",
+    "org": "IBM",
+    "year": 2024,
+    "url": "https://carbondesignsystem.com/guidelines/accessibility",
+    "why": "Comprehensive accessibility standards and guidelines.",
+    "claims": 6
+   },
+   {
+    "id": "carbon-motion-guide",
+    "title": "Motion Design Guide – IBM Carbon",
+    "org": "IBM",
+    "year": 2024,
+    "url": "https://carbondesignsystem.com/guidelines/motion",
+    "why": "Motion principles and animation timings.",
+    "claims": 6
+   },
+   {
+    "id": "carbon-toggle",
+    "title": "Toggle – IBM Carbon",
+    "org": "IBM",
+    "year": 2024,
+    "url": "https://carbondesignsystem.com/components/toggle/usage/",
+    "why": "Toggle switch component.",
+    "claims": 6
+   },
+   {
+    "id": "carbon-tooltip",
+    "title": "Tooltip – IBM Carbon",
+    "org": "IBM",
+    "year": 2024,
+    "url": "https://carbondesignsystem.com/components/tooltip/usage/",
+    "why": "Tooltip and contextual help patterns.",
+    "claims": 6
+   }
+  ],
+  "engagement": [
+   {
+    "id": "facebook-7-friends-10-days",
+    "title": "7 Friends in 10 Days: The Aha Moment Threshold",
+    "org": "Meta",
+    "year": 2007,
+    "url": "https://www.koji.so/docs/aha-moment-research",
+    "why": "Users who connected 7+ friends in first 10 days became long-term active users; threshold where network effect clicked.",
+    "claims": 4
+   },
+   {
+    "id": "intercom-customer-messaging",
+    "title": "Intercom: Unified Customer Communication Platform",
+    "org": "Intercom",
+    "year": 2011,
+    "url": "https://www.intercom.com/",
+    "why": "Consolidated support chat AI bots product tours and email campaigns for onboarding activation and retention messaging.",
+    "claims": 3
+   },
+   {
+    "id": "lally-et-al-66-days",
+    "title": "How Long to Form a Habit? 66 Days Average",
+    "org": "University College London",
+    "year": 2010,
+    "url": "https://www.thebehavioralscientist.com/articles/how-long-to-form-a-habit",
+    "why": "Measured the time required for habit automaticity across different behaviors, establishing benchmarks for habit formation tracking.",
+    "claims": 3
+   },
+   {
+    "id": "push-notification-timing",
+    "title": "Not So Timely: Screen-On Push Notifications and User Engagement",
+    "org": "University of Copenhagen / MIT Media Lab",
+    "year": 2023,
+    "url": "https://english.phbs.pku.edu.cn/info/3882/48902.htm",
+    "why": "Modest notification delay (1-6 min after screen-on) generates higher engagement than immediate delivery.",
+    "claims": 2
+   },
+   {
+    "id": "deceptive-design-forced-action",
+    "title": "Dark Pattern: Forced Action",
+    "org": "deceptive.design",
+    "year": 2023,
+    "url": "https://www.deceptive.design/types/forced-action",
+    "why": "User required to perform undesirable action to access desired feature or service.",
+    "claims": 2
+   },
+   {
+    "id": "deceptive-design-hard-to-cancel",
+    "title": "Dark Pattern: Hard to Cancel",
+    "org": "deceptive.design",
+    "year": 2023,
+    "url": "https://www.deceptive.design/types/hard-to-cancel",
+    "why": "Easy to subscribe but difficult to cancel; asymmetric friction in sign-up vs cancellation.",
+    "claims": 2
+   },
+   {
+    "id": "deceptive-design-fake-scarcity",
+    "title": "Dark Pattern: Fake Scarcity",
+    "org": "deceptive.design",
+    "year": 2023,
+    "url": "https://www.deceptive.design/types/fake-scarcity",
+    "why": "Pressure through fake indication of limited supply or popularity.",
+    "claims": 2
+   },
+   {
+    "id": "deceptive-design-disguised-ads",
+    "title": "Dark Pattern: Disguised Ads",
+    "org": "deceptive.design",
+    "year": 2023,
+    "url": "https://www.deceptive.design/types/disguised-ads",
+    "why": "User mistakenly clicks interface element believing it to be functional but it's a disguised advertisement.",
+    "claims": 2
+   },
+   {
+    "id": "deceptive-design-confirmshaming",
+    "title": "Dark Pattern: Confirmshaming",
+    "org": "deceptive.design",
+    "year": 2023,
+    "url": "https://www.deceptive.design/types/confirmshaming",
+    "why": "Emotional manipulation through shaming labels to coerce desired action.",
+    "claims": 2
+   },
+   {
+    "id": "deceptive-design-currency-confusion",
+    "title": "Dark Pattern: Currency Confusion",
+    "org": "deceptive.design",
+    "year": 2023,
+    "url": "https://www.deceptive.design/types/currency-confusion",
+    "why": "Real money converted to virtual currency to obscure true cost to user.",
+    "claims": 2
+   },
+   {
+    "id": "peloton-community-engagement",
+    "title": "How Peloton Builds Onboarding and Community Engagement",
+    "org": "Peloton",
+    "year": 2021,
+    "url": "https://www.builtinnyc.com/articles/user-onboarding-process-peloton",
+    "why": "Onboarding plus gamification and community features drive engagement; social engagement increases workout frequency.",
+    "claims": 2
+   },
+   {
+    "id": "linear-speed-philosophy",
+    "title": "Linear: Speed as Core Feature and Philosophy",
+    "org": "Linear",
+    "year": 2021,
+    "url": "https://linear.app/",
+    "why": "Issue tracker built on speed and simplicity; keyboard-first interface makes issue creation as fast as Slack message.",
+    "claims": 2
+   },
+   {
+    "id": "gray-dark-patterns-taxonomy",
+    "title": "Dark Patterns as Anti-Patterns",
+    "org": "Indiana University",
+    "year": 2018,
+    "url": "https://deceptive.design/articles/the-dark-patterns-side-of-ux-design",
+    "why": "Taxonomy of 5 dark pattern categories: Nagging, Obstruction, Sneaking, Interface Interference, Forced Action.",
+    "claims": 2
+   },
+   {
+    "id": "skinner-ferster-variable-ratio",
+    "title": "Schedules of Reinforcement",
+    "org": "Operant Conditioning",
+    "year": 1957,
+    "url": "https://simplypsychology.org/schedules-of-reinforcement.html",
+    "why": "Variable-ratio schedules produce highest and most persistent response rates with no post-reinforcement pauses.",
+    "claims": 2
+   },
+   {
+    "id": "autoplay-engagement-study",
+    "title": "Can't Stop: Context and Individual Traits in Infinite Scrolling Interventions",
+    "org": "University",
+    "year": 2024,
+    "url": "https://arxiv.org/abs/2607.15818",
+    "why": "7-day study of 72 users on short-form video platforms; context and personality affect intervention effectiveness.",
+    "claims": 1
+   },
+   {
+    "id": "duolingo-streak-retention",
+    "title": "Improving the Streak",
+    "org": "Duolingo",
+    "year": 2023,
+    "url": "https://blog.duolingo.com/improving-the-streak/",
+    "why": "Separating streak mechanic from daily goals increases retention and habit formation through lower barrier to consistency.",
+    "claims": 1
+   },
+   {
+    "id": "deceptive-design-org",
+    "title": "Deceptive Design Reference",
+    "org": "deceptive.design",
+    "year": 2023,
+    "url": "https://deceptive.design/",
+    "why": "Living resource documenting dark pattern taxonomy, regulations (EU DSA, GDPR), and research on deceptive design practices.",
+    "claims": 1
+   },
+   {
+    "id": "deceptive-design-sneaking",
+    "title": "Dark Pattern: Sneaking",
+    "org": "deceptive.design",
+    "year": 2023,
+    "url": "https://www.deceptive.design/types/sneaking",
+    "why": "User drawn into transaction on false pretences through hidden or delayed information.",
+    "claims": 1
+   }
+  ],
+  "experiments": [
+   {
+    "id": "pagination-vs-infinite-scroll",
+    "title": "Pagination vs infinite scroll: Task-dependent; infinite better for exploration, pagination for goal-driven",
+    "org": "Multiple",
+    "year": 2016,
+    "url": "https://smashingmagazine.com/2016/03/pagination-infinite-scrolling-load-more-buttons",
+    "why": "No significant UX difference in task time; choice depends on user intent (exploration vs specific search)",
+    "claims": 8
+   },
+   {
+    "id": "goodui-pattern-21",
+    "title": "Pattern #21: What It's Worth",
+    "org": "GoodUI",
+    "year": null,
+    "url": "https://goodui.org/patterns/21/",
+    "why": "UI pattern scored across the A/B tests that tried it, with its median effect.",
+    "claims": 7
+   },
+   {
+    "id": "goodui-pattern-69",
+    "title": "Pattern #69: Autodiscounting",
+    "org": "GoodUI",
+    "year": null,
+    "url": "https://goodui.org/patterns/69/",
+    "why": "UI pattern scored across the A/B tests that tried it, with its median effect.",
+    "claims": 7
+   },
+   {
+    "id": "goodui-pattern-26",
+    "title": "Pattern #26: Cart Reminder And Recently Viewed",
+    "org": "GoodUI",
+    "year": null,
+    "url": "https://goodui.org/patterns/26/",
+    "why": "UI pattern scored across the A/B tests that tried it, with its median effect.",
+    "claims": 6
+   },
+   {
+    "id": "goodui-leak-walmart-a-b-tests-and-rolls-out-this-new-product-page-layout",
+    "title": "Walmart A/B Tests And Rolls Out This New Product Page Layout",
+    "org": "GoodUI",
+    "year": null,
+    "url": "https://goodui.org/leaks/walmart-a-b-tests-and-rolls-out-this-new-product-page-layout/",
+    "why": "A/B test a large company ran on its live product, as observed and reported by GoodUI.",
+    "claims": 6
+   },
+   {
+    "id": "goodui-pattern-7",
+    "title": "Pattern #7: Social Counts",
+    "org": "GoodUI",
+    "year": null,
+    "url": "https://goodui.org/patterns/7/",
+    "why": "UI pattern scored across the A/B tests that tried it, with its median effect.",
+    "claims": 5
+   },
+   {
+    "id": "goodui-pattern-13",
+    "title": "Pattern #13: Centered Forms & Buttons",
+    "org": "GoodUI",
+    "year": null,
+    "url": "https://goodui.org/patterns/13/",
+    "why": "UI pattern scored across the A/B tests that tried it, with its median effect.",
+    "claims": 5
+   },
+   {
+    "id": "goodui-pattern-46",
+    "title": "Pattern #46: Pay Later",
+    "org": "GoodUI",
+    "year": null,
+    "url": "https://goodui.org/patterns/46/",
+    "why": "UI pattern scored across the A/B tests that tried it, with its median effect.",
+    "claims": 5
+   },
+   {
+    "id": "goodui-pattern-78",
+    "title": "Pattern #78: Tags, Badges And Structured Information",
+    "org": "GoodUI",
+    "year": null,
+    "url": "https://goodui.org/patterns/78/",
+    "why": "UI pattern scored across the A/B tests that tried it, with its median effect.",
+    "claims": 5
+   },
+   {
+    "id": "goodui-pattern-114",
+    "title": "Pattern #114: Less Or More Visible Prices",
+    "org": "GoodUI",
+    "year": null,
+    "url": "https://goodui.org/patterns/114/",
+    "why": "UI pattern scored across the A/B tests that tried it, with its median effect.",
+    "claims": 5
+   },
+   {
+    "id": "goodui-leak-airbnb-discovers-a-better-way-to-let-customers-explore-listings",
+    "title": "Airbnb Discovers A Better Way To Let Customers Explore Listings",
+    "org": "GoodUI",
+    "year": null,
+    "url": "https://goodui.org/leaks/airbnb-discovers-a-better-way-to-let-customers-explore-listings/",
+    "why": "A/B test a large company ran on its live product, as observed and reported by GoodUI.",
+    "claims": 5
+   },
+   {
+    "id": "goodui-leak-reverbs-ui-redesign-succeeds-in-this-a-b-test",
+    "title": "Reverb's UI Redesign Succeeds In This A/B Test",
+    "org": "GoodUI",
+    "year": null,
+    "url": "https://goodui.org/leaks/reverbs-ui-redesign-succeeds-in-this-a-b-test/",
+    "why": "A/B test a large company ran on its live product, as observed and reported by GoodUI.",
+    "claims": 5
+   },
+   {
+    "id": "etsy-search-bar-test",
+    "title": "Etsy Discovers Better Padded and Wider Search Bar",
+    "org": "Etsy",
+    "year": 2014,
+    "url": "https://goodui.org/leaks/etsy-discovers-a-better-padded-and-wider-search-bar-in-this-a-b-c-test/",
+    "why": "Wider, padded search bar wins in A/B/C test on marketplace",
+    "claims": 4
+   },
+   {
+    "id": "goodui-pattern-14",
+    "title": "Pattern #14: Exposed Menu Options",
+    "org": "GoodUI",
+    "year": null,
+    "url": "https://goodui.org/patterns/14/",
+    "why": "UI pattern scored across the A/B tests that tried it, with its median effect.",
+    "claims": 4
+   },
+   {
+    "id": "goodui-pattern-18",
+    "title": "Pattern #18: Single Or Alternative Buttons",
+    "org": "GoodUI",
+    "year": null,
+    "url": "https://goodui.org/patterns/18/",
+    "why": "UI pattern scored across the A/B tests that tried it, with its median effect.",
+    "claims": 4
+   },
+   {
+    "id": "goodui-pattern-32",
+    "title": "Pattern #32: Condensed List",
+    "org": "GoodUI",
+    "year": null,
+    "url": "https://goodui.org/patterns/32/",
+    "why": "UI pattern scored across the A/B tests that tried it, with its median effect.",
+    "claims": 4
+   },
+   {
+    "id": "goodui-pattern-36",
+    "title": "Pattern #36: Fewer Or More Results",
+    "org": "GoodUI",
+    "year": null,
+    "url": "https://goodui.org/patterns/36/",
+    "why": "UI pattern scored across the A/B tests that tried it, with its median effect.",
+    "claims": 4
+   },
+   {
+    "id": "goodui-pattern-79",
+    "title": "Pattern #79: Product Highlights",
+    "org": "GoodUI",
+    "year": null,
+    "url": "https://goodui.org/patterns/79/",
+    "why": "UI pattern scored across the A/B tests that tried it, with its median effect.",
+    "claims": 4
+   }
+  ],
+  "hci-papers": [
+   {
+    "id": "microinteractions-accessibility",
+    "title": "Microinteractions : How to Make UI Feedback Accessible",
+    "org": "Accessibility Resources",
+    "year": 2024,
+    "url": "https://www.accessibilitychecker.org/blog/microinteractions/",
+    "why": "Guide on making microinteractions and feedback accessible.",
+    "claims": 9
+   },
+   {
+    "id": "form-design-usability-nn-group",
+    "title": "Website Forms Usability: Top 10 Recommendations",
+    "org": "Nielsen Norman Group",
+    "year": 2024,
+    "url": "https://www.nngroup.com/articles/web-form-design/",
+    "why": "NN/G research-based form design recommendations.",
+    "claims": 9
+   },
+   {
+    "id": "ixdf-dark-mode-design",
+    "title": "What is Dark Mode? — updated 2026",
+    "org": "IxDF",
+    "year": 2024,
+    "url": "https://ixdf.org/literature/topics/dark-mode",
+    "why": "Comprehensive guide to dark mode design principles.",
+    "claims": 9
+   },
+   {
+    "id": "motion-design-accessibility-ux",
+    "title": "How to Make Motion Design Accessible: UX Choreography Part Two",
+    "org": "UX Magazine",
+    "year": 2022,
+    "url": "https://uxpamagazine.org/how-to-make-motion-design-accessible/?lang=en",
+    "why": "Guide on accessible motion and animation in UI design.",
+    "claims": 7
+   },
+   {
+    "id": "skeleton-loading-perceived-performance",
+    "title": "Skeleton loading screen design — How to improve perceived performance",
+    "org": "LogRocket",
+    "year": 2024,
+    "url": "https://blog.logrocket.com/ux-design/skeleton-loading-screen-design/",
+    "why": "Best practices for skeleton screen design and perceived performance.",
+    "claims": 6
+   },
+   {
+    "id": "skeleton-vs-spinners-loading",
+    "title": "Skeleton Screens vs Loading Spinners: When to Use Each",
+    "org": "One Thing",
+    "year": 2024,
+    "url": "https://www.onething.design/post/skeleton-screens-vs-loading-spinners",
+    "why": "Comparison of skeleton screens vs spinners for loading states.",
+    "claims": 6
+   },
+   {
+    "id": "accessibility-heuristics-principles",
+    "title": "5 Accessibility Heuristic Principles for Better UX",
+    "org": "Abstracta",
+    "year": 2024,
+    "url": "https://abstracta.us/blog/accessibility-testing/accessibility-heuristic",
+    "why": "Five core heuristic principles for accessible interface design.",
+    "claims": 6
+   },
+   {
+    "id": "form-error-guidelines-nn-group",
+    "title": "10 Design Guidelines for Reporting Errors in Forms",
+    "org": "Nielsen Norman Group",
+    "year": 2023,
+    "url": "https://www.nngroup.com/articles/errors-forms-design-guidelines/",
+    "why": "NN/G guidelines on error message design and placement.",
+    "claims": 5
+   },
+   {
+    "id": "tooltip-help-text-best-practices",
+    "title": "Tooltip Guidelines",
+    "org": "Nielsen Norman Group",
+    "year": 2010,
+    "url": "https://www.nngroup.com/articles/tooltip-guidelines/",
+    "why": "NN/G research on effective tooltip and hint text design.",
+    "claims": 5
+   },
+   {
+    "id": "google-generative-ui",
+    "title": "Generative UI: A rich, custom, visual interactive user experience for any prompt",
+    "org": "Google",
+    "year": 2024,
+    "url": "https://research.google/blog/generative-ui-a-rich-custom-visual-interactive-user-experience-for-any-prompt/",
+    "why": "Google Research on AI-generated rich interactive UIs.",
+    "claims": 4
+   },
+   {
+    "id": "animation-web-usability-nn",
+    "title": "Animation Usability",
+    "org": "Nielsen Norman Group",
+    "year": 2015,
+    "url": "https://www.nngroup.com/articles/animation-usability/",
+    "why": "NN/G research on animation effects and usability.",
+    "claims": 4
+   },
+   {
+    "id": "arxiv-mobile-accessibility-ml",
+    "title": "Making Mobile Applications Accessible with Machine Learning",
+    "org": "Apple",
+    "year": 2024,
+    "url": "https://machinelearning.apple.com/research/mobile-applications-accessible",
+    "why": "Apple ML Research on automated mobile app accessibility.",
+    "claims": 3
+   },
+   {
+    "id": "font-size-guidelines-responsive",
+    "title": "Font Size Guidelines for Responsive Websites",
+    "org": "Learn UI Design",
+    "year": 2024,
+    "url": "https://www.learnui.design/blog/mobile-desktop-website-font-size-guidelines.html",
+    "why": "Font sizing guidelines for responsive web interfaces.",
+    "claims": 3
+   },
+   {
+    "id": "gestalt-design-guide",
+    "title": "Gestalt Principles in Design: Key Laws for Effective Interfaces",
+    "org": "Eleken",
+    "year": 2024,
+    "url": "https://www.eleken.co/blog-posts/gestalt-principles",
+    "why": "Practical guide to Gestalt design principles for interfaces.",
+    "claims": 3
+   },
+   {
+    "id": "line-spacing-ux-best-practices",
+    "title": "Best UX practices for line spacing: 6 golden rules",
+    "org": "Justinmind",
+    "year": 2024,
+    "url": "https://www.justinmind.com/blog/best-ux-practices-for-line-spacing/",
+    "why": "Evidence-based guidelines for optimal line spacing.",
+    "claims": 2
+   },
+   {
+    "id": "human-ai-interaction-iui-2021",
+    "title": "Pushing the boundaries of human-AI interaction at IUI 2021",
+    "org": "IBM",
+    "year": 2021,
+    "url": "https://research.ibm.com/blog/ibm-at-iui-2021",
+    "why": "IBM Research on advancing human-AI interaction design.",
+    "claims": 2
+   },
+   {
+    "id": "google-users-simple-familiar",
+    "title": "Users love simple and familiar designs",
+    "org": "Google",
+    "year": 2012,
+    "url": "https://research.google/blog/users-love-simple-and-familiar-designs-why-websites-need-to-make-a-great-first-impression/",
+    "why": "Google Research on user preferences for simple, familiar design.",
+    "claims": 2
+   },
+   {
+    "id": "apple-squire-authoring",
+    "title": "SQUIRE: Interactive UI Authoring via Slot QUery Intermediate REpresentations",
+    "org": "Apple",
+    "year": 2024,
+    "url": "https://machinelearning.apple.com/research/squire",
+    "why": "Apple ML Research on interactive UI component authoring.",
+    "claims": 1
+   }
+  ],
+  "landing": [
+   {
+    "id": "glomopay-modals-101-when-and-how-to-use-them",
+    "title": "Modals 101: When and How to Use Them",
+    "org": "glomoPay",
+    "year": 2024,
+    "url": "https://blog.glomopay.com/modals-101-when-and-how-to-use-them/",
+    "why": "Modal dialog usage and implementation best practices.",
+    "claims": 10
+   },
+   {
+    "id": "tessl-accessible-modals-creation-guidelines",
+    "title": "Accessible Modals: Creation Guidelines",
+    "org": "Tessl",
+    "year": 2024,
+    "url": "https://tessl.io/registry/workspace-brfis/create-accessible-modals",
+    "why": "Step-by-step guide to creating accessible modal dialogs with WCAG compliance.",
+    "claims": 8
+   },
+   {
+    "id": "mada-guide-to-building-an-accessible-modal-di",
+    "title": "Guide to Building an Accessible Modal Dialog Widget (WCAG 2.2)",
+    "org": "MADA",
+    "year": 2024,
+    "url": "https://ictaccess.mada.org.qa/ui-accessible-component/en/modal-dialog.html",
+    "why": "Accessible modal dialog design: native HTML element, focus trapping, ARIA semantics, and testing with assistive tech.",
+    "claims": 7
+   },
+   {
+    "id": "wisernotify-cta-button-placement-and-landing-page-co",
+    "title": "40 Call to Action Statistics (2026, With Sources)",
+    "org": "WiserNotify",
+    "year": 2024,
+    "url": "https://wisernotify.com/blog/call-to-action-stats/",
+    "why": "Presents conversion rate data showing CTA placement impact and optimization strategies.",
+    "claims": 6
+   },
+   {
+    "id": "gropulse-shopify-announcement-bar-best-practices",
+    "title": "Shopify Announcement Bar Best Practices: Complete Guide to Higher Conversions",
+    "org": "GroPulse",
+    "year": 2024,
+    "url": "https://gropulse.com/shopify-announcement-bar-best-practices/",
+    "why": "Announcement bar design for conversion with guidance on stickiness, message clarity, color choice, and use cases.",
+    "claims": 6
+   },
+   {
+    "id": "formkeep-best-practices-to-designing-contact-form",
+    "title": "Best Practices to Designing Contact Forms That Convert",
+    "org": "FormKeep",
+    "year": 2024,
+    "url": "https://blog.formkeep.com/best-practices-to-designing-contact-forms-that-convert/",
+    "why": "Contact form conversion research: field count, layout, whitespace, conditional logic, and A/B testing guidance.",
+    "claims": 5
+   },
+   {
+    "id": "algolia-autocomplete-beyond-search-engaging-use",
+    "title": "Autocomplete Beyond Search: Engaging Users with Next-Level UX",
+    "org": "Algolia",
+    "year": 2024,
+    "url": "https://www.algolia.com/de/blog/ux/autocomplete-beyond-search-engaging-users-with-next-level-ux/",
+    "why": "Advanced autocomplete design patterns beyond basic search, with engagement strategies.",
+    "claims": 5
+   },
+   {
+    "id": "uxcel-system-buttons-actions",
+    "title": "System Buttons Actions",
+    "org": "Uxcel",
+    "year": 2023,
+    "url": "https://uxcel.com/lessons/system-buttons-actions-400",
+    "why": "Button component design patterns for system actions and user interaction.",
+    "claims": 5
+   },
+   {
+    "id": "evil-martians-we-studied-100-dev-tool-landing-pages—he",
+    "title": "We studied 100 dev tool landing pages—here's what really works in 2025",
+    "org": "Evil Martians",
+    "year": 2025,
+    "url": "https://evilmartians.com/chronicles/we-studied-100-devtool-landing-pages-here-is-what-actually-works-in-2025",
+    "why": "Empirical study of 100 real dev-tool landing pages identifies hero patterns, CTA strategy, social proof placement, and content hierarchy.",
+    "claims": 4
+   },
+   {
+    "id": "ux-design-institute-a-complete-guide-to-responsive-grids",
+    "title": "A Complete Guide to Responsive Grids",
+    "org": "UX Design Institute",
+    "year": 2024,
+    "url": "https://www.uxdesigninstitute.com/blog/?p=8368",
+    "why": "Responsive grid systems with column structures (4/8/12), breakpoints, and device adaptation guidance.",
+    "claims": 4
+   },
+   {
+    "id": "babich-using-card-based-design-to-enhance-ux",
+    "title": "Using Card-Based Design to Enhance UX",
+    "org": "Babich",
+    "year": 2023,
+    "url": "https://babich.biz/blog/using-card-based-design-to-enhance-ux/",
+    "why": "Card design research showing mobile/responsive benefits, personalization, scannability, and visual hierarchy advantages.",
+    "claims": 4
+   },
+   {
+    "id": "uxpin-what-is-a-tooltip?-types-best-practices",
+    "title": "What Is a Tooltip? Types, Best Practices & Design Tips (2026)",
+    "org": "UXPin",
+    "year": 2026,
+    "url": "https://www.uxpin.com/studio/?p=49509",
+    "why": "Tooltip design principles: concise content (under 150 characters), positioning, triggers, accessibility, and strategic use.",
+    "claims": 3
+   },
+   {
+    "id": "uxpin-ui-grids-the-complete-guide-to-grid-sys",
+    "title": "UI Grids: The Complete Guide to Grid Systems in Design",
+    "org": "UXPin",
+    "year": 2026,
+    "url": "https://www.uxpin.com/studio/blog/ui-grids-how-to-guide",
+    "why": "Comprehensive guide to grid systems in UI design with responsive patterns.",
+    "claims": 3
+   },
+   {
+    "id": "createwithswift-designing-micro-interactions-to-create-s",
+    "title": "Designing Micro-interactions to Create Seamless User Experiences",
+    "org": "CreateWithSwift",
+    "year": 2024,
+    "url": "https://www.createwithswift.com/designing-micro-interactions-to-create-seamless-user-experiences/",
+    "why": "Micro-interaction design principles: timing 200-500ms, easing, functional purpose, and consistency for product delight.",
+    "claims": 3
+   },
+   {
+    "id": "coveo-autocomplete-suggestions-ux-best-practic",
+    "title": "Autocomplete Suggestions UX Best Practices",
+    "org": "Coveo",
+    "year": 2024,
+    "url": "https://www.coveo.com/blog/autocomplete-suggestions-ux-best-practices/",
+    "why": "Autocomplete suggestion design with research on user expectations and behavior.",
+    "claims": 3
+   },
+   {
+    "id": "ezud-touch-target-sizes-and-mobile-accessibil",
+    "title": "Touch Target Sizes and Mobile Accessibility",
+    "org": "EZUD",
+    "year": 2023,
+    "url": "https://ezud.com/touch-target-sizes-mobile-accessibility/",
+    "why": "Compares WCAG, Apple HIG, and Material Design touch target standards with practical implementation guidance.",
+    "claims": 3
+   },
+   {
+    "id": "atomic-object-mind-the-gap(s)-–-the-importance-of-nega",
+    "title": "Mind the Gap(s) – The Importance of Negative Space in Design",
+    "org": "Atomic Object",
+    "year": 2023,
+    "url": "https://spin.atomicobject.com/design-negative-space/",
+    "why": "White space research showing impact on readability, comprehension, user engagement, and design perception of luxury.",
+    "claims": 3
+   },
+   {
+    "id": "f7-stop-the-slide-why-carousels-harm-ux",
+    "title": "Stop the Slide: Why Carousels Harm UX",
+    "org": "F7",
+    "year": 2023,
+    "url": "https://f7.de/en/blog/stop-the-slide-why-carousels-harm-the-ux",
+    "why": "Research on carousel usability problems and why users avoid them, with evidence of low engagement.",
+    "claims": 3
+   }
+  ],
+  "psychology": [
+   {
+    "id": "growthdesign-psychology",
+    "title": "Psychology of Design",
+    "org": "growth.design",
+    "year": null,
+    "url": "https://growth.design/psychology",
+    "why": "One-page catalogue of ~100 cognitive principles applied to product design, each with an example.",
+    "claims": 17
+   },
+   {
+    "id": "fogg-2002-stanford-web-credibility",
+    "title": "Stanford Guidelines for Web Credibility",
+    "org": "Stanford Behavior Design Lab",
+    "year": 2002,
+    "url": "https://credibility.stanford.edu/guidelines",
+    "why": "Large study of web credibility assessment; 46.1% of participants rated design/look as primary credibility signal.",
+    "claims": 6
+   },
+   {
+    "id": "decisionlab-choice-overload-bias",
+    "title": "Choice Overload Bias",
+    "org": "The Decision Lab",
+    "year": null,
+    "url": "https://thedecisionlab.com/biases/choice-overload-bias",
+    "why": "Explainer of one cognitive bias with the original studies it rests on.",
+    "claims": 6
+   },
+   {
+    "id": "decisionlab-parasocial-trust-in-ai",
+    "title": "Parasocial Trust In Ai",
+    "org": "The Decision Lab",
+    "year": null,
+    "url": "https://thedecisionlab.com/biases/parasocial-trust-in-ai",
+    "why": "Explainer of one cognitive bias with the original studies it rests on.",
+    "claims": 6
+   },
+   {
+    "id": "decisionlab-serial-position-effect",
+    "title": "Serial Position Effect",
+    "org": "The Decision Lab",
+    "year": null,
+    "url": "https://thedecisionlab.com/biases/serial-position-effect",
+    "why": "Explainer of one cognitive bias with the original studies it rests on.",
+    "claims": 6
+   },
+   {
+    "id": "decisionlab-ai-literacy-gap",
+    "title": "Ai Literacy Gap",
+    "org": "The Decision Lab",
+    "year": null,
+    "url": "https://thedecisionlab.com/biases/ai-literacy-gap",
+    "why": "Explainer of one cognitive bias with the original studies it rests on.",
+    "claims": 5
+   },
+   {
+    "id": "decisionlab-decision-fatigue",
+    "title": "Decision Fatigue",
+    "org": "The Decision Lab",
+    "year": null,
+    "url": "https://thedecisionlab.com/biases/decision-fatigue",
+    "why": "Explainer of one cognitive bias with the original studies it rests on.",
+    "claims": 5
+   },
+   {
+    "id": "decisionlab-delegation-creep",
+    "title": "Delegation Creep",
+    "org": "The Decision Lab",
+    "year": null,
+    "url": "https://thedecisionlab.com/biases/delegation-creep",
+    "why": "Explainer of one cognitive bias with the original studies it rests on.",
+    "claims": 5
+   },
+   {
+    "id": "decisionlab-peak-end-rule",
+    "title": "Peak End Rule",
+    "org": "The Decision Lab",
+    "year": null,
+    "url": "https://thedecisionlab.com/biases/peak-end-rule",
+    "why": "Explainer of one cognitive bias with the original studies it rests on.",
+    "claims": 5
+   },
+   {
+    "id": "decisionlab-primacy-effect",
+    "title": "Primacy Effect",
+    "org": "The Decision Lab",
+    "year": null,
+    "url": "https://thedecisionlab.com/biases/primacy-effect",
+    "why": "Explainer of one cognitive bias with the original studies it rests on.",
+    "claims": 5
+   },
+   {
+    "id": "decisionlab-source-confusion",
+    "title": "Source Confusion",
+    "org": "The Decision Lab",
+    "year": null,
+    "url": "https://thedecisionlab.com/biases/source-confusion",
+    "why": "Explainer of one cognitive bias with the original studies it rests on.",
+    "claims": 5
+   },
+   {
+    "id": "decisionlab-authority-bias",
+    "title": "Authority Bias",
+    "org": "The Decision Lab",
+    "year": null,
+    "url": "https://thedecisionlab.com/biases/authority-bias",
+    "why": "Explainer of one cognitive bias with the original studies it rests on.",
+    "claims": 4
+   },
+   {
+    "id": "decisionlab-automation-bias",
+    "title": "Automation Bias",
+    "org": "The Decision Lab",
+    "year": null,
+    "url": "https://thedecisionlab.com/biases/automation-bias",
+    "why": "Explainer of one cognitive bias with the original studies it rests on.",
+    "claims": 4
+   },
+   {
+    "id": "decisionlab-bottom-dollar-effect",
+    "title": "Bottom Dollar Effect",
+    "org": "The Decision Lab",
+    "year": null,
+    "url": "https://thedecisionlab.com/biases/bottom-dollar-effect",
+    "why": "Explainer of one cognitive bias with the original studies it rests on.",
+    "claims": 4
+   },
+   {
+    "id": "decisionlab-bounded-rationality",
+    "title": "Bounded Rationality",
+    "org": "The Decision Lab",
+    "year": null,
+    "url": "https://thedecisionlab.com/biases/bounded-rationality",
+    "why": "Explainer of one cognitive bias with the original studies it rests on.",
+    "claims": 4
+   },
+   {
+    "id": "decisionlab-google-effect",
+    "title": "Google Effect",
+    "org": "The Decision Lab",
+    "year": null,
+    "url": "https://thedecisionlab.com/biases/google-effect",
+    "why": "Explainer of one cognitive bias with the original studies it rests on.",
+    "claims": 4
+   },
+   {
+    "id": "decisionlab-illusory-truth-effect",
+    "title": "Illusory Truth Effect",
+    "org": "The Decision Lab",
+    "year": null,
+    "url": "https://thedecisionlab.com/biases/illusory-truth-effect",
+    "why": "Explainer of one cognitive bias with the original studies it rests on.",
+    "claims": 4
+   },
+   {
+    "id": "decisionlab-response-bias",
+    "title": "Response Bias",
+    "org": "The Decision Lab",
+    "year": null,
+    "url": "https://thedecisionlab.com/biases/response-bias",
+    "why": "Explainer of one cognitive bias with the original studies it rests on.",
+    "claims": 4
+   }
+  ],
+  "ux-research": [
+   {
+    "id": "nngroup-4-principles-reduce-cognitive-load",
+    "title": "Few Guesses, More Success: 4 Principles to Reduce Cognitive Load in Forms",
+    "org": "Nielsen Norman Group",
+    "year": 2026,
+    "url": "https://www.nngroup.com/articles/4-principles-reduce-cognitive-load/",
+    "why": "Four principles for minimizing cognitive load in form design.",
+    "claims": 16
+   },
+   {
+    "id": "baymard-plp-ux-definition",
+    "title": "Product Listing Page (PLP) UX: Definition & Ecommerce Best Practices",
+    "org": "Baymard Institute",
+    "year": 2026,
+    "url": "https://baymard.com/blog/product-listing-page-plp-ux",
+    "why": "Comprehensive guide to product listing page design best practices.",
+    "claims": 12
+   },
+   {
+    "id": "nngroup-edge-cases",
+    "title": "The Edge Cases that Break Hearts (And Products)",
+    "org": "Nielsen Norman Group",
+    "year": 2026,
+    "url": "https://www.nngroup.com/articles/edge-cases/",
+    "why": "Importance of handling edge cases in user experience design.",
+    "claims": 11
+   },
+   {
+    "id": "baymard-ecommerce-ux-audit",
+    "title": "Ecommerce UX Audit: How to Find What's Hurting Your Conversion",
+    "org": "Baymard Institute",
+    "year": 2026,
+    "url": "https://baymard.com/blog/ecommerce-ux-audit",
+    "why": "Framework for conducting comprehensive e-commerce UX audits.",
+    "claims": 11
+   },
+   {
+    "id": "nngroup-testing-visual-design",
+    "title": "Testing Visual Design: A Comprehensive Guide",
+    "org": "Nielsen Norman Group",
+    "year": 2026,
+    "url": "https://www.nngroup.com/articles/testing-visual-design/",
+    "why": "Methods for validating visual design effectiveness through user testing.",
+    "claims": 10
+   },
+   {
+    "id": "nngroup-phone-tree-guidelines",
+    "title": "The UX of Phone-Tree Systems: 16 Usability Guidelines",
+    "org": "Nielsen Norman Group",
+    "year": 2026,
+    "url": "https://www.nngroup.com/articles/phone-tree-guidelines/",
+    "why": "Research-backed guidelines for designing usable phone tree navigation systems.",
+    "claims": 10
+   },
+   {
+    "id": "nngroup-eas-framework-simplify-forms",
+    "title": "Less Effort, More Completion: The EAS Framework for Simplifying Forms",
+    "org": "Nielsen Norman Group",
+    "year": 2026,
+    "url": "https://www.nngroup.com/articles/eas-framework-simplify-forms/",
+    "why": "Framework for reducing effort and complexity in form design.",
+    "claims": 10
+   },
+   {
+    "id": "baymard-product-spec-sheet",
+    "title": "What is a Product Spec Sheet? Examples & UX Design Inspiration",
+    "org": "Baymard Institute",
+    "year": 2026,
+    "url": "https://baymard.com/blog/product-spec-sheet-ux-design",
+    "why": "Analysis of product specification sheet design patterns and best practices.",
+    "claims": 10
+   },
+   {
+    "id": "nngroup-ai-chatbots-dimensions",
+    "title": "The 5 Qualities of Site-Specific AI Chatbots",
+    "org": "Nielsen Norman Group",
+    "year": 2026,
+    "url": "https://www.nngroup.com/articles/dimensions-of-ai-chatbots/",
+    "why": "Five key dimensions for effective chatbot design.",
+    "claims": 10
+   },
+   {
+    "id": "nngroup-button-states-communicate-interaction",
+    "title": "Button States: Communicate Interaction",
+    "org": "Nielsen Norman Group",
+    "year": 2026,
+    "url": "https://www.nngroup.com/articles/button-states-communicate-interaction/",
+    "why": "Guidelines for using button states to signal affordances and feedback.",
+    "claims": 9
+   },
+   {
+    "id": "nngroup-write-alt-text",
+    "title": "Alt Text: What to Write",
+    "org": "Nielsen Norman Group",
+    "year": 2026,
+    "url": "https://www.nngroup.com/articles/write-alt-text/",
+    "why": "Best practices and examples for writing descriptive alt text.",
+    "claims": 9
+   },
+   {
+    "id": "nngroup-progress-indicators",
+    "title": "Progress Indicators Make a Slow System Less Insufferable",
+    "org": "Nielsen Norman Group",
+    "year": 2026,
+    "url": "https://www.nngroup.com/articles/progress-indicators/",
+    "why": "Research on effectiveness of progress indicators in mitigating perceived wait times.",
+    "claims": 9
+   },
+   {
+    "id": "nngroup-smart-device-onboarding",
+    "title": "Onboarding and Connecting Smart Devices: 5 Guidelines for User-Friendly Smart-Device Apps",
+    "org": "Nielsen Norman Group",
+    "year": 2026,
+    "url": "https://www.nngroup.com/articles/smart-device-onboarding/",
+    "why": "Guidelines for onboarding users with IoT and smart device applications.",
+    "claims": 9
+   },
+   {
+    "id": "nngroup-neobrutalism",
+    "title": "Neobrutalism: Definition and Best Practices",
+    "org": "Nielsen Norman Group",
+    "year": 2026,
+    "url": "https://www.nngroup.com/articles/neobrutalism/",
+    "why": "Design style patterns and usability implications of neobrutalism in interfaces.",
+    "claims": 8
+   },
+   {
+    "id": "nngroup-card-sorting-definition",
+    "title": "Card Sorting: Uncover Users' Mental Models for Better IA",
+    "org": "Nielsen Norman Group",
+    "year": 2026,
+    "url": "https://www.nngroup.com/articles/card-sorting-definition/",
+    "why": "Comprehensive guide to card sorting for uncovering user mental models.",
+    "claims": 8
+   },
+   {
+    "id": "nngroup-ai-ux-debt",
+    "title": "The Custodial Era of UX: Cleaning Up After AI",
+    "org": "Nielsen Norman Group",
+    "year": 2026,
+    "url": "https://www.nngroup.com/articles/ai-ux-debt/",
+    "why": "Technical debt and design issues created by AI-generated outputs.",
+    "claims": 8
+   },
+   {
+    "id": "baymard-benefits-ux-audit",
+    "title": "7 Benefits of Conducting a UX Audit on Your Ecommerce Site",
+    "org": "Baymard Institute",
+    "year": 2026,
+    "url": "https://baymard.com/blog/benefits-ux-audit-ecommerce",
+    "why": "Benefits and value proposition of comprehensive UX audits.",
+    "claims": 8
+   },
+   {
+    "id": "nngroup-hamburger-menu-icon-recognizability",
+    "title": "The Hamburger-Menu Icon Today: Is it Recognizable?",
+    "org": "Nielsen Norman Group",
+    "year": 2026,
+    "url": "https://www.nngroup.com/articles/hamburger-menu-icon-recognizability/",
+    "why": "Empirical evidence on recognizability of hamburger menu icons in modern interfaces.",
+    "claims": 7
+   }
+  ]
+ }
+}

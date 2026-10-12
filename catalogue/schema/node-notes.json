@@ -1,0 +1,1937 @@
+{
+  "atom/layout": {
+    "good": [
+      {
+        "line": "Standard scroll area for vertical; avoid horizontal scroll.",
+        "refs": [
+          "P0015"
+        ]
+      }
+    ],
+    "avoid": "Horizontal page scroll; breaks mobile and discovery."
+  },
+  "atom/text": {
+    "good": [
+      {
+        "line": "Body text 60-80 chars per line for readability.",
+        "refs": [
+          "P0019"
+        ]
+      },
+      {
+        "line": "Semantic hierarchy: heading, body, caption sizes.",
+        "refs": [
+          "P0018"
+        ]
+      },
+      {
+        "line": "4.5:1 contrast; pair colors with text or icons.",
+        "refs": [
+          "P0021",
+          "P0022"
+        ]
+      }
+    ],
+    "avoid": "Shrinking text to fit; minimum 12px for body."
+  },
+  "atom/link": {
+    "good": [
+      {
+        "line": "Use href for navigation, never button styled as link.",
+        "refs": [
+          "P0008"
+        ]
+      },
+      {
+        "line": "Style underlined or distinct color.",
+        "refs": [
+          "P0008"
+        ]
+      },
+      {
+        "line": "Show focus state for keyboard users.",
+        "refs": [
+          "C0050"
+        ]
+      }
+    ],
+    "avoid": "Links that look like text; users skip them."
+  },
+  "atom/button": {
+    "good": [
+      {
+        "line": "One primary button per view; others secondary or tertiary.",
+        "refs": [
+          "P0014"
+        ]
+      },
+      {
+        "line": "Button text describes action (Save, not Confirm).",
+        "refs": [
+          "P0029"
+        ]
+      },
+      {
+        "line": "Show rest, hover, focus, active, disabled states.",
+        "refs": [
+          "P0001"
+        ]
+      }
+    ],
+    "avoid": "Multiple primary buttons destroy visual hierarchy."
+  },
+  "atom/icon": {
+    "good": [
+      {
+        "line": "Pair with text label; icon-only in tight spaces only.",
+        "refs": [
+          "P0027"
+        ]
+      },
+      {
+        "line": "16-32px size; 3:1 contrast for icon boundaries.",
+        "refs": [
+          "P0027",
+          "P0021"
+        ]
+      }
+    ],
+    "avoid": "Icon-only without tooltip; unclear to new users."
+  },
+  "atom/image": {
+    "good": [
+      {
+        "line": "Use srcset and sizes for responsive images.",
+        "refs": [
+          "C0036",
+          "C0039"
+        ]
+      },
+      {
+        "line": "Lazy-load; provide alt text.",
+        "refs": [
+          "C0032",
+          "C0041"
+        ]
+      }
+    ],
+    "avoid": "Unoptimized images or missing alt text."
+  },
+  "atom/avatar": {
+    "good": [
+      {
+        "line": "Fallback: initials or monogram when image missing.",
+        "refs": [
+          "P0040"
+        ]
+      },
+      {
+        "line": "Consistent colors per user across app.",
+        "refs": [
+          "P0004"
+        ]
+      }
+    ],
+    "avoid": "No fallback when image fails to load."
+  },
+  "atom/badge": {
+    "good": [
+      {
+        "line": "Pair color with text, icon, or shape.",
+        "refs": [
+          "P0022",
+          "P0023"
+        ]
+      },
+      {
+        "line": "Semantic colors: red=error, green=success, etc.",
+        "refs": [
+          "P0023"
+        ]
+      }
+    ],
+    "avoid": "Color alone; affects 8% of users."
+  },
+  "atom/status-dot": {
+    "good": [
+      {
+        "line": "Semantic color: green active, red error, gray offline.",
+        "refs": [
+          "P0023",
+          "P0071"
+        ]
+      },
+      {
+        "line": "Pair with text label (Online, Away, etc.).",
+        "refs": [
+          "P0022"
+        ]
+      }
+    ],
+    "avoid": "Color alone without text; 8% cannot see red."
+  },
+  "atom/text-input": {
+    "good": [
+      {
+        "line": "Label above field, always visible (no placeholder-label).",
+        "refs": [
+          "P0032"
+        ]
+      },
+      {
+        "line": "Validate on blur; show inline error next field.",
+        "refs": [
+          "P0033",
+          "C0010"
+        ]
+      },
+      {
+        "line": "Field width suggests content length.",
+        "refs": [
+          "C0074"
+        ]
+      }
+    ],
+    "avoid": "Placeholder as label; users forget field purpose."
+  },
+  "atom/choice": {
+    "good": [
+      {
+        "line": "Radio for exclusive choices; checkbox for multiple.",
+        "refs": [
+          "P0028"
+        ]
+      },
+      {
+        "line": "Label clickable; show indeterminate state.",
+        "refs": [
+          "C0007",
+          "P0001"
+        ]
+      }
+    ],
+    "avoid": "Select instead of radio for 2-3 options."
+  },
+  "atom/switch": {
+    "good": [
+      {
+        "line": "Only for instant binary actions (toggle, power, notify).",
+        "refs": [
+          "P0028"
+        ]
+      },
+      {
+        "line": "Always pair with text label.",
+        "refs": [
+          "P0032"
+        ]
+      }
+    ],
+    "avoid": "Using switch for form options; use radio."
+  },
+  "atom/slider": {
+    "good": [
+      {
+        "line": "Always show current value and range.",
+        "refs": [
+          "P0050"
+        ]
+      },
+      {
+        "line": "Handle 44px minimum; accept text input too.",
+        "refs": [
+          "C0064",
+          "C0009"
+        ]
+      }
+    ],
+    "avoid": "Unlabeled handle; users cannot guess value."
+  },
+  "atom/loader": {
+    "good": [
+      {
+        "line": "Skeleton for known layouts; spinner for unknown.",
+        "refs": [
+          "P0037"
+        ]
+      },
+      {
+        "line": "Show after 0.1s; describe what is loading.",
+        "refs": [
+          "P0036",
+          "P0039"
+        ]
+      }
+    ],
+    "avoid": "Spinner-only; show skeleton when layout known."
+  },
+  "atom/progress": {
+    "good": [
+      {
+        "line": "Show percent or time; linear for files, circular for tasks.",
+        "refs": [
+          "P0050"
+        ]
+      },
+      {
+        "line": "Label what is uploading (e.g., \"3 of 8\").",
+        "refs": [
+          "P0046"
+        ]
+      }
+    ],
+    "avoid": "Progress bar without percent; pace unclear."
+  },
+  "atom/tooltip": {
+    "good": [
+      {
+        "line": "Show on hover and keyboard focus; hide on click.",
+        "refs": [
+          "P0030"
+        ]
+      },
+      {
+        "line": "Supplementary only; never essential info.",
+        "refs": [
+          "C0027"
+        ]
+      }
+    ],
+    "avoid": "Critical info only in tooltips; unreachable."
+  },
+  "asset/logo": {
+    "good": [],
+    "avoid": "License and format constraints apply to logo."
+  },
+  "asset/sound": {
+    "good": [],
+    "avoid": "License and format constraints apply to sound."
+  },
+  "asset/flag": {
+    "good": [],
+    "avoid": "License and format constraints apply to flag."
+  },
+  "asset/illustration": {
+    "good": [],
+    "avoid": "License and format constraints apply to illustration."
+  },
+  "asset/og-image": {
+    "good": [],
+    "avoid": "License and format constraints apply to og-image."
+  },
+  "asset/font": {
+    "good": [],
+    "avoid": "License and format constraints apply to font."
+  },
+  "asset/shape": {
+    "good": [],
+    "avoid": "License and format constraints apply to shape."
+  },
+  "asset/avatar": {
+    "good": [],
+    "avoid": "License and format constraints apply to avatar."
+  },
+  "component/field": {
+    "good": [
+      {
+        "line": "Label above; 1-3 words; always visible.",
+        "refs": [
+          "P0032",
+          "C0007"
+        ]
+      },
+      {
+        "line": "Mark required visibly.",
+        "refs": [
+          "C0007"
+        ]
+      }
+    ],
+    "avoid": "Placeholder as label; placeholder hides."
+  },
+  "component/select": {
+    "good": [
+      {
+        "line": "Show selected value; searchable for 5+ options.",
+        "refs": [
+          "P0006"
+        ]
+      },
+      {
+        "line": "Keyboard: arrows, type-search, ESC.",
+        "refs": [
+          "P0010"
+        ]
+      }
+    ],
+    "avoid": "Select over radio when 2-3 options exist."
+  },
+  "component/search": {
+    "good": [
+      {
+        "line": "Always visible text field; never in menu.",
+        "refs": [
+          "P0007"
+        ]
+      },
+      {
+        "line": "Show recents on focus; instant suggestions.",
+        "refs": [
+          "P0007",
+          "C0079"
+        ]
+      }
+    ],
+    "avoid": "Search hidden in hamburger menu."
+  },
+  "component/picker": {
+    "good": [
+      {
+        "line": "Calendar for dates; allow text input.",
+        "refs": [
+          "P0034"
+        ]
+      },
+      {
+        "line": "Presets for common ranges.",
+        "refs": [
+          "P0034"
+        ]
+      }
+    ],
+    "avoid": "Dropdowns for date instead of calendar."
+  },
+  "component/upload": {
+    "good": [
+      {
+        "line": "Drag and drop plus file input.",
+        "refs": [
+          "P0036",
+          "C0046"
+        ]
+      },
+      {
+        "line": "Show progress per file; validate upfront.",
+        "refs": [
+          "P0039"
+        ]
+      }
+    ],
+    "avoid": "Upload without progress feedback."
+  },
+  "component/tags": {
+    "good": [
+      {
+        "line": "Each tag removable via X; keyboard support.",
+        "refs": [
+          "P0010"
+        ]
+      },
+      {
+        "line": "Suggestions while typing.",
+        "refs": [
+          "P0007"
+        ]
+      }
+    ],
+    "avoid": "No way to remove tags."
+  },
+  "component/form": {
+    "good": [
+      {
+        "line": "One column; order by task flow.",
+        "refs": [
+          "P0035",
+          "C0001",
+          "C0002"
+        ]
+      },
+      {
+        "line": "One primary button; inline validation.",
+        "refs": [
+          "P0014",
+          "P0033"
+        ]
+      }
+    ],
+    "avoid": "Multi-column forms; break on mobile."
+  },
+  "component/menu": {
+    "good": [
+      {
+        "line": "2-4 items visible; 5+ as dropdown.",
+        "refs": [
+          "P0006"
+        ]
+      },
+      {
+        "line": "All keyboard-navigable; show shortcuts.",
+        "refs": [
+          "P0010"
+        ]
+      }
+    ],
+    "avoid": "Nested menus past depth 2."
+  },
+  "component/tabs": {
+    "good": [
+      {
+        "line": "Active tab clearly marked.",
+        "refs": [
+          "P0005"
+        ]
+      },
+      {
+        "line": "Arrow keys switch tabs; all keyboard accessible.",
+        "refs": [
+          "P0010"
+        ]
+      }
+    ],
+    "avoid": "Scroll-hiding tabs; show all options."
+  },
+  "component/breadcrumb": {
+    "good": [
+      {
+        "line": "Show when 3+ levels deep.",
+        "refs": [
+          "P0005"
+        ]
+      },
+      {
+        "line": "Last breadcrumb matches page title.",
+        "refs": [
+          "P0005"
+        ]
+      }
+    ],
+    "avoid": "Breadcrumbs for 1-2 levels."
+  },
+  "component/pagination": {
+    "good": [
+      {
+        "line": "Show current page, total, result count.",
+        "refs": [
+          "P0050"
+        ]
+      },
+      {
+        "line": "Page size selector; keyboard support.",
+        "refs": [
+          "P0012",
+          "P0010"
+        ]
+      }
+    ],
+    "avoid": "Page numbers without context."
+  },
+  "component/steps": {
+    "good": [
+      {
+        "line": "Show step count (2 of 4); mark completed.",
+        "refs": [
+          "P0037",
+          "P0046"
+        ]
+      },
+      {
+        "line": "Allow back/next or direct navigation.",
+        "refs": [
+          "P0009"
+        ]
+      }
+    ],
+    "avoid": "Long forms; break into 2-3 steps."
+  },
+  "component/command": {
+    "good": [
+      {
+        "line": "Open with Cmd+K; show shortcuts inline.",
+        "refs": [
+          "P0010"
+        ]
+      },
+      {
+        "line": "Fuzzy search; group by category.",
+        "refs": [
+          "C0079"
+        ]
+      }
+    ],
+    "avoid": "Command palette without shortcut discovery."
+  },
+  "component/toc": {
+    "good": [
+      {
+        "line": "Scroll-track; highlight current section.",
+        "refs": [
+          "P0005"
+        ]
+      },
+      {
+        "line": "Sticky; jump to section on click.",
+        "refs": [
+          "P0004"
+        ]
+      }
+    ],
+    "avoid": "TOC without scroll tracking."
+  },
+  "component/dock": {
+    "good": [
+      {
+        "line": "Fixed position; icons with labels.",
+        "refs": [
+          "P0027",
+          "P0004"
+        ]
+      },
+      {
+        "line": "Magnify or highlight on hover.",
+        "refs": [
+          "P0030"
+        ]
+      }
+    ],
+    "avoid": "Dock without labels."
+  },
+  "component/card": {
+    "good": [
+      {
+        "line": "One idea per card.",
+        "refs": [
+          "P0012"
+        ]
+      },
+      {
+        "line": "Heading, image, text, button layout.",
+        "refs": [
+          "P0046"
+        ]
+      }
+    ],
+    "avoid": "Cards packed with text and controls."
+  },
+  "component/list": {
+    "good": [
+      {
+        "line": "Rows with one action per row.",
+        "refs": [
+          "P0016"
+        ]
+      },
+      {
+        "line": "Sortable; paginate or lazy-load.",
+        "refs": [
+          "P0012"
+        ]
+      }
+    ],
+    "avoid": "All items visible; paginate."
+  },
+  "component/table": {
+    "good": [
+      {
+        "line": "Column headers <th> with scope.",
+        "refs": [
+          "C0049"
+        ]
+      },
+      {
+        "line": "Right-align numbers; stripe rows.",
+        "refs": [
+          "P0020",
+          "C0080"
+        ]
+      },
+      {
+        "line": "Detail beside table, not new page.",
+        "refs": [
+          "P0016"
+        ]
+      }
+    ],
+    "avoid": "Using table for layout."
+  },
+  "component/stat": {
+    "good": [
+      {
+        "line": "Big number top-left; label below.",
+        "refs": [
+          "P0049",
+          "P0050"
+        ]
+      },
+      {
+        "line": "Show trend and timeframe.",
+        "refs": [
+          "P0050"
+        ]
+      }
+    ],
+    "avoid": "Number alone without context."
+  },
+  "component/chart": {
+    "good": [
+      {
+        "line": "Pair color with text/pattern; not alone.",
+        "refs": [
+          "P0022"
+        ]
+      },
+      {
+        "line": "Label axes; tooltip on hover.",
+        "refs": [
+          "P0046",
+          "P0030"
+        ]
+      }
+    ],
+    "avoid": "Charts without axis labels."
+  },
+  "component/map": {
+    "good": [
+      {
+        "line": "Pin color with label or legend.",
+        "refs": [
+          "P0022"
+        ]
+      },
+      {
+        "line": "Zoom/pan controls; show scale.",
+        "refs": [
+          "P0001"
+        ]
+      }
+    ],
+    "avoid": "Map without context or scale."
+  },
+  "component/accordion": {
+    "good": [
+      {
+        "line": "Clickable header with chevron or +/-.",
+        "refs": [
+          "P0001"
+        ]
+      },
+      {
+        "line": "Multiple sections can open.",
+        "refs": [
+          "P0006"
+        ]
+      }
+    ],
+    "avoid": "Collapsed FAQs; show top 3 expanded."
+  },
+  "component/tree": {
+    "good": [
+      {
+        "line": "Expand/collapse icons; indent children.",
+        "refs": [
+          "P0001",
+          "P0013"
+        ]
+      },
+      {
+        "line": "Keyboard: arrows navigate, Enter expands.",
+        "refs": [
+          "P0010"
+        ]
+      }
+    ],
+    "avoid": "Deep nesting without indentation."
+  },
+  "component/timeline": {
+    "good": [
+      {
+        "line": "Vertical or horizontal with connecting line.",
+        "refs": [
+          "P0013"
+        ]
+      },
+      {
+        "line": "Label each event with date.",
+        "refs": [
+          "P0046"
+        ]
+      }
+    ],
+    "avoid": "Timeline without dates."
+  },
+  "component/calendar": {
+    "good": [
+      {
+        "line": "Month calendar with next/prev buttons.",
+        "refs": [
+          "P0034",
+          "P0001"
+        ]
+      },
+      {
+        "line": "Highlight today and selected date.",
+        "refs": [
+          "P0025",
+          "P0001"
+        ]
+      }
+    ],
+    "avoid": "Text input only for dates."
+  },
+  "component/board": {
+    "good": [
+      {
+        "line": "Drag cards between columns.",
+        "refs": [
+          "P0001"
+        ]
+      },
+      {
+        "line": "Keyboard accessible.",
+        "refs": [
+          "P0010"
+        ]
+      }
+    ],
+    "avoid": "No keyboard support."
+  },
+  "component/code": {
+    "good": [
+      {
+        "line": "Syntax highlighting; copy button.",
+        "refs": [
+          "P0023",
+          "P0001",
+          "P0042"
+        ]
+      },
+      {
+        "line": "Downloadable or full-screen option.",
+        "refs": [
+          "P0001"
+        ]
+      }
+    ],
+    "avoid": "Code block without copy button."
+  },
+  "component/empty": {
+    "good": [
+      {
+        "line": "Icon, explanation, action button.",
+        "refs": [
+          "P0038"
+        ]
+      },
+      {
+        "line": "Explain why empty and next step.",
+        "refs": [
+          "P0038",
+          "P0029"
+        ]
+      }
+    ],
+    "avoid": "Empty state without action."
+  },
+  "component/widget": {
+    "good": [
+      {
+        "line": "Specialized for one use.",
+        "refs": [
+          "P0012"
+        ]
+      },
+      {
+        "line": "Clear data; refresh on demand.",
+        "refs": [
+          "P0048"
+        ]
+      }
+    ],
+    "avoid": "Widget packed with unrelated info."
+  },
+  "component/dialog": {
+    "good": [
+      {
+        "line": "Modal for confirmation; modeless for side-by-side.",
+        "refs": [
+          "P0016"
+        ]
+      },
+      {
+        "line": "Trap focus; ESC closes.",
+        "refs": [
+          "P0010",
+          "P0014"
+        ]
+      }
+    ],
+    "avoid": "Modal on top of modal."
+  },
+  "component/sheet": {
+    "good": [
+      {
+        "line": "Side sheet (right); bottom on mobile.",
+        "refs": [
+          "P0016"
+        ]
+      },
+      {
+        "line": "Close with X or outside click.",
+        "refs": [
+          "P0010"
+        ]
+      },
+      {
+        "line": "Back and URL reflect state.",
+        "refs": [
+          "P0009"
+        ]
+      }
+    ],
+    "avoid": "Sheet without dismiss option."
+  },
+  "component/popover": {
+    "good": [
+      {
+        "line": "Show on hover/click/focus; hide on blur.",
+        "refs": [
+          "P0030"
+        ]
+      },
+      {
+        "line": "Arrow to trigger; adapt to viewport.",
+        "refs": [
+          "P0001"
+        ]
+      }
+    ],
+    "avoid": "Popover covering trigger."
+  },
+  "component/toast": {
+    "good": [
+      {
+        "line": "Max 2-3 stacked; auto-dismiss non-errors.",
+        "refs": [
+          "P0043"
+        ]
+      },
+      {
+        "line": "Color + icon (error=red+X).",
+        "refs": [
+          "P0022",
+          "P0023"
+        ]
+      }
+    ],
+    "avoid": "Too many toasts; users miss messages."
+  },
+  "component/alert": {
+    "good": [
+      {
+        "line": "Inline for field errors; banner for page.",
+        "refs": [
+          "P0039",
+          "C0078"
+        ]
+      },
+      {
+        "line": "Color + icon + plain text.",
+        "refs": [
+          "P0039",
+          "P0022"
+        ]
+      }
+    ],
+    "avoid": "Color-only alert."
+  },
+  "component/inbox": {
+    "good": [
+      {
+        "line": "Show count in badge; newest first.",
+        "refs": [
+          "P0050",
+          "P0046"
+        ]
+      },
+      {
+        "line": "Mark read/unread; batch actions.",
+        "refs": [
+          "P0001"
+        ]
+      }
+    ],
+    "avoid": "No bulk notification management."
+  },
+  "component/lightbox": {
+    "good": [
+      {
+        "line": "Full-size image; prev/next buttons.",
+        "refs": [
+          "P0001",
+          "P0010"
+        ]
+      },
+      {
+        "line": "Close with ESC or X; show count.",
+        "refs": [
+          "P0010",
+          "P0050"
+        ]
+      }
+    ],
+    "avoid": "Lightbox without keyboard navigation."
+  },
+  "component/gallery": {
+    "good": [
+      {
+        "line": "Grid or masonry; lazy-load.",
+        "refs": [
+          "P0012",
+          "C0032"
+        ]
+      },
+      {
+        "line": "Lightbox on click; filter by category.",
+        "refs": [
+          "P0046"
+        ]
+      }
+    ],
+    "avoid": "Loading all images at once."
+  },
+  "component/carousel": {
+    "good": [
+      {
+        "line": "Pause on hover; next/prev + dots.",
+        "refs": [
+          "P0001",
+          "P0010"
+        ]
+      },
+      {
+        "line": "Let user control; keyboard support.",
+        "refs": [
+          "C0030",
+          "P0010"
+        ]
+      }
+    ],
+    "avoid": "Auto-rotating carousel that cannot pause."
+  },
+  "component/player": {
+    "good": [
+      {
+        "line": "Play/pause, progress, volume, fullscreen.",
+        "refs": [
+          "P0001",
+          "P0010"
+        ]
+      },
+      {
+        "line": "Time elapsed and duration shown.",
+        "refs": [
+          "P0050"
+        ]
+      }
+    ],
+    "avoid": "Video player without controls."
+  },
+  "component/compare": {
+    "good": [
+      {
+        "line": "Draggable slider for before/after.",
+        "refs": [
+          "P0001"
+        ]
+      },
+      {
+        "line": "Label each side clearly.",
+        "refs": [
+          "P0046"
+        ]
+      }
+    ],
+    "avoid": "Comparison without control."
+  },
+  "component/mockup": {
+    "good": [
+      {
+        "line": "Device frame for credibility.",
+        "refs": [
+          "C0039",
+          "P0039"
+        ]
+      },
+      {
+        "line": "Alt text describing mockup.",
+        "refs": [
+          "C0041"
+        ]
+      }
+    ],
+    "avoid": "Mockup without product context."
+  },
+  "component/message": {
+    "good": [
+      {
+        "line": "Left/right bubbles; show name and avatar.",
+        "refs": [
+          "P0047"
+        ]
+      },
+      {
+        "line": "Timestamp; support code/links.",
+        "refs": [
+          "P0046",
+          "C0039"
+        ]
+      }
+    ],
+    "avoid": "Messages without timestamp."
+  },
+  "component/composer": {
+    "good": [
+      {
+        "line": "Textarea with auto-expand; Send button.",
+        "refs": [
+          "P0010",
+          "P0001"
+        ]
+      },
+      {
+        "line": "Suggestions; file attachment.",
+        "refs": [
+          "P0007",
+          "P0042"
+        ]
+      }
+    ],
+    "avoid": "Composer without clear send."
+  },
+  "component/agent-parts": {
+    "good": [
+      {
+        "line": "Tool calls with inputs, outputs, copy.",
+        "refs": [
+          "P0042",
+          "P0001"
+        ]
+      },
+      {
+        "line": "Collapsible reasoning section.",
+        "refs": [
+          "P0012"
+        ]
+      }
+    ],
+    "avoid": "Hidden tool calls; users cannot debug."
+  },
+  "section/announcement": {
+    "good": [
+      {
+        "line": "Bar at top; dismissible with X.",
+        "refs": [
+          "P0012",
+          "P0010"
+        ]
+      },
+      {
+        "line": "One sentence; link to details.",
+        "refs": [
+          "P0046"
+        ]
+      }
+    ],
+    "avoid": "Announcement that cannot dismiss."
+  },
+  "section/nav": {
+    "good": [
+      {
+        "line": "Logo top-left; primary nav visible.",
+        "refs": [
+          "P0004",
+          "P0006"
+        ]
+      },
+      {
+        "line": "Search and user menu top-right.",
+        "refs": [
+          "P0007",
+          "P0004"
+        ]
+      }
+    ],
+    "avoid": "Hamburger on desktop; hides nav."
+  },
+  "section/hero": {
+    "good": [
+      {
+        "line": "Headline + description + primary CTA.",
+        "refs": [
+          "P0014",
+          "P0046"
+        ]
+      },
+      {
+        "line": "Sufficient text contrast on background.",
+        "refs": [
+          "P0021"
+        ]
+      }
+    ],
+    "avoid": "Hero without call-to-action."
+  },
+  "section/logos": {
+    "good": [
+      {
+        "line": "Grid of client logos; same height ratio.",
+        "refs": [
+          "P0012"
+        ]
+      },
+      {
+        "line": "Consistent spacing.",
+        "refs": [
+          "P0013"
+        ]
+      }
+    ],
+    "avoid": "Logos at different scales."
+  },
+  "section/features": {
+    "good": [
+      {
+        "line": "Icon, headline, 1-2 lines per feature.",
+        "refs": [
+          "P0046",
+          "P0012"
+        ]
+      },
+      {
+        "line": "Limit 6-8; scannable layout.",
+        "refs": [
+          "C0042"
+        ]
+      }
+    ],
+    "avoid": "Long feature descriptions."
+  },
+  "section/how": {
+    "good": [
+      {
+        "line": "Numbered steps; one idea per step.",
+        "refs": [
+          "P0037",
+          "P0046"
+        ]
+      },
+      {
+        "line": "Image per step; 4-5 steps max.",
+        "refs": [
+          "C0024"
+        ]
+      }
+    ],
+    "avoid": "More than 5 steps."
+  },
+  "section/showcase": {
+    "good": [
+      {
+        "line": "Gallery of work; grid or masonry.",
+        "refs": [
+          "P0012"
+        ]
+      },
+      {
+        "line": "Lazy-load; lightbox on click.",
+        "refs": [
+          "C0032"
+        ]
+      }
+    ],
+    "avoid": "Portfolio without lazy-load."
+  },
+  "section/stats": {
+    "good": [
+      {
+        "line": "Big numbers with labels and units.",
+        "refs": [
+          "P0049",
+          "P0050"
+        ]
+      },
+      {
+        "line": "Show comparison or trend.",
+        "refs": [
+          "P0050"
+        ]
+      }
+    ],
+    "avoid": "Bare numbers without labels."
+  },
+  "section/testimonials": {
+    "good": [
+      {
+        "line": "Quote + name + title + photo.",
+        "refs": [
+          "P0046",
+          "P0017"
+        ]
+      },
+      {
+        "line": "Star rating; authentic photos.",
+        "refs": [
+          "P0053",
+          "C0017"
+        ]
+      }
+    ],
+    "avoid": "Generic testimonials."
+  },
+  "section/pricing": {
+    "good": [
+      {
+        "line": "Tier cards left-to-right.",
+        "refs": [
+          "P0046"
+        ]
+      },
+      {
+        "line": "Billing toggle; feature comparison table.",
+        "refs": [
+          "P0014"
+        ]
+      }
+    ],
+    "avoid": "Pricing without toggle."
+  },
+  "section/comparison": {
+    "good": [
+      {
+        "line": "Feature table with checkmarks and X.",
+        "refs": [
+          "C0066"
+        ]
+      },
+      {
+        "line": "Highlight your product column.",
+        "refs": [
+          "P0025",
+          "P0049"
+        ]
+      }
+    ],
+    "avoid": "Hiding your advantage."
+  },
+  "section/faq": {
+    "good": [
+      {
+        "line": "Accordion with top 3-5 expanded.",
+        "refs": [
+          "P0012",
+          "P0037"
+        ]
+      },
+      {
+        "line": "Link to contact for other questions.",
+        "refs": [
+          "P0038"
+        ]
+      }
+    ],
+    "avoid": "All FAQs collapsed."
+  },
+  "section/team": {
+    "good": [
+      {
+        "line": "Photo grid with name, title, bio.",
+        "refs": [
+          "P0046"
+        ]
+      },
+      {
+        "line": "Real photos, not stock.",
+        "refs": [
+          "C0053"
+        ]
+      }
+    ],
+    "avoid": "Team without names or roles."
+  },
+  "section/about": {
+    "good": [
+      {
+        "line": "Story with timeline; mix text and images.",
+        "refs": [
+          "C0043",
+          "P0046"
+        ]
+      },
+      {
+        "line": "Mission and values stated plainly.",
+        "refs": [
+          "C0043"
+        ]
+      }
+    ],
+    "avoid": "Generic about page."
+  },
+  "section/blog": {
+    "good": [
+      {
+        "line": "Article cards: title, excerpt, date, read time.",
+        "refs": [
+          "P0046",
+          "P0050"
+        ]
+      },
+      {
+        "line": "Filter by category; search; paginate.",
+        "refs": [
+          "P0007",
+          "P0012"
+        ]
+      }
+    ],
+    "avoid": "Blog without search."
+  },
+  "section/cta": {
+    "good": [
+      {
+        "line": "Headline, copy, button.",
+        "refs": [
+          "P0014",
+          "P0046"
+        ]
+      },
+      {
+        "line": "High contrast background.",
+        "refs": [
+          "P0021"
+        ]
+      }
+    ],
+    "avoid": "CTA without action verb."
+  },
+  "section/contact": {
+    "good": [
+      {
+        "line": "Form (name, email, message).",
+        "refs": [
+          "C0001",
+          "P0031"
+        ]
+      },
+      {
+        "line": "Map and social links below.",
+        "refs": [
+          "P0004"
+        ]
+      }
+    ],
+    "avoid": "Form asking too much."
+  },
+  "section/footer": {
+    "good": [
+      {
+        "line": "Link columns; copyright; socials.",
+        "refs": [
+          "P0004",
+          "P0046"
+        ]
+      },
+      {
+        "line": "Do not duplicate nav links.",
+        "refs": [
+          "P0012"
+        ]
+      }
+    ],
+    "avoid": "Footer cluttered."
+  },
+  "section/shell": {
+    "good": [
+      {
+        "line": "Sidebar, top bar, content; draw once.",
+        "refs": [
+          "P0002",
+          "P0004"
+        ]
+      },
+      {
+        "line": "Regions load independently.",
+        "refs": [
+          "P0002"
+        ]
+      }
+    ],
+    "avoid": "Full-page spinners."
+  },
+  "section/sidebar": {
+    "good": [
+      {
+        "line": "Grouped and labeled; collapsible.",
+        "refs": [
+          "P0003",
+          "P0015"
+        ]
+      },
+      {
+        "line": "Current page highlighted.",
+        "refs": [
+          "P0005"
+        ]
+      }
+    ],
+    "avoid": "Sidebar without collapse on mobile."
+  },
+  "section/top-bar": {
+    "good": [
+      {
+        "line": "Page title, search, user menu.",
+        "refs": [
+          "P0005",
+          "P0004"
+        ]
+      },
+      {
+        "line": "Sticky on scroll.",
+        "refs": [
+          "P0004"
+        ]
+      }
+    ],
+    "avoid": "Top bar cluttered."
+  },
+  "section/page-header": {
+    "good": [
+      {
+        "line": "Page title + breadcrumb; actions right.",
+        "refs": [
+          "P0005",
+          "P0004"
+        ]
+      },
+      {
+        "line": "Description if helpful.",
+        "refs": [
+          "P0018"
+        ]
+      }
+    ],
+    "avoid": "Page without clear title."
+  },
+  "section/filters": {
+    "good": [
+      {
+        "line": "Visible filters; show active count.",
+        "refs": [
+          "P0006",
+          "P0050"
+        ]
+      },
+      {
+        "line": "Instant results on change.",
+        "refs": [
+          "P0042"
+        ]
+      }
+    ],
+    "avoid": "Filters hidden in collapse."
+  },
+  "section/kpis": {
+    "good": [
+      {
+        "line": "Big number top-left; sparkline below.",
+        "refs": [
+          "P0049",
+          "P0050"
+        ]
+      },
+      {
+        "line": "4-8 KPIs; no more.",
+        "refs": [
+          "C0042"
+        ]
+      }
+    ],
+    "avoid": "Too many metrics."
+  },
+  "section/data-view": {
+    "good": [
+      {
+        "line": "Table for tabular; list for sequential.",
+        "refs": [
+          "P0010",
+          "P0016"
+        ]
+      },
+      {
+        "line": "Detail beside, not new page.",
+        "refs": [
+          "P0016"
+        ]
+      }
+    ],
+    "avoid": "Table when list better."
+  },
+  "section/detail": {
+    "good": [
+      {
+        "line": "Two-pane: list left, detail right.",
+        "refs": [
+          "P0016",
+          "P0001"
+        ]
+      },
+      {
+        "line": "URL reflects selection.",
+        "refs": [
+          "P0009"
+        ]
+      }
+    ],
+    "avoid": "Detail on new page."
+  },
+  "section/settings-panel": {
+    "good": [
+      {
+        "line": "Grouped settings (Account, Privacy).",
+        "refs": [
+          "C0002"
+        ]
+      },
+      {
+        "line": "Auto-save with feedback.",
+        "refs": [
+          "P0042"
+        ]
+      }
+    ],
+    "avoid": "Settings scattered across pages."
+  },
+  "section/auth": {
+    "good": [
+      {
+        "line": "Centered card; email + password.",
+        "refs": [
+          "P0035"
+        ]
+      },
+      {
+        "line": "Remember me; optional social.",
+        "refs": [
+          "P0034"
+        ]
+      }
+    ],
+    "avoid": "Auth asking unnecessary fields."
+  },
+  "section/onboarding": {
+    "good": [
+      {
+        "line": "Step count shown; 2-5 steps max.",
+        "refs": [
+          "P0037",
+          "C0024"
+        ]
+      },
+      {
+        "line": "Skip optional steps.",
+        "refs": [
+          "P0037"
+        ]
+      }
+    ],
+    "avoid": "Long onboarding flows."
+  },
+  "section/chat": {
+    "good": [
+      {
+        "line": "History scrolls; newest at bottom.",
+        "refs": [
+          "P0001",
+          "P0046"
+        ]
+      },
+      {
+        "line": "User right, assistant left.",
+        "refs": [
+          "P0017"
+        ]
+      }
+    ],
+    "avoid": "Chat without visible history."
+  },
+  "page/home": {
+    "good": [
+      {
+        "line": "Hero, features, testimonials, pricing, FAQ.",
+        "refs": [
+          "P0011",
+          "P0004"
+        ]
+      },
+      {
+        "line": "One primary CTA repeated 2-3 times.",
+        "refs": [
+          "P0014"
+        ]
+      }
+    ],
+    "avoid": "Homepage without value proposition."
+  },
+  "page/pricing-page": {
+    "good": [
+      {
+        "line": "Tier cards; annual/monthly toggle.",
+        "refs": [
+          "P0049",
+          "P0014"
+        ]
+      },
+      {
+        "line": "Comparison table; FAQ; one CTA per tier.",
+        "refs": [
+          "P0038"
+        ]
+      }
+    ],
+    "avoid": "Hidden pricing."
+  },
+  "page/about-page": {
+    "good": [
+      {
+        "line": "Story, mission, team, stats, CTA.",
+        "refs": [
+          "P0046",
+          "P0011"
+        ]
+      },
+      {
+        "line": "Real photos; authentic tone.",
+        "refs": [
+          "C0053"
+        ]
+      }
+    ],
+    "avoid": "Generic about page."
+  },
+  "page/blog-index": {
+    "good": [
+      {
+        "line": "Article cards with date and read time.",
+        "refs": [
+          "P0046",
+          "P0050"
+        ]
+      },
+      {
+        "line": "Search, filters, newest first.",
+        "refs": [
+          "P0007",
+          "P0012"
+        ]
+      }
+    ],
+    "avoid": "Blog without search."
+  },
+  "page/article": {
+    "good": [
+      {
+        "line": "Title, author, date, read time.",
+        "refs": [
+          "P0050",
+          "P0046"
+        ]
+      },
+      {
+        "line": "60-80 char lines; headings and paragraphs.",
+        "refs": [
+          "P0019"
+        ]
+      }
+    ],
+    "avoid": "Article without metadata."
+  },
+  "page/contact-page": {
+    "good": [
+      {
+        "line": "Form + map + phone/email.",
+        "refs": [
+          "P0031",
+          "P0004"
+        ]
+      },
+      {
+        "line": "Form: name, email, subject, message only.",
+        "refs": [
+          "C0001"
+        ]
+      }
+    ],
+    "avoid": "Form asking too much."
+  },
+  "page/auth-page": {
+    "good": [
+      {
+        "line": "Centered card; email + password.",
+        "refs": [
+          "P0035"
+        ]
+      },
+      {
+        "line": "Sign up and forgot password links.",
+        "refs": [
+          "P0038"
+        ]
+      }
+    ],
+    "avoid": "Auth page overwhelming."
+  },
+  "page/not-found": {
+    "good": [
+      {
+        "line": "404 with illustration; link home.",
+        "refs": [
+          "P0038"
+        ]
+      },
+      {
+        "line": "Suggest popular pages.",
+        "refs": [
+          "P0007"
+        ]
+      }
+    ],
+    "avoid": "404 without next steps."
+  },
+  "page/dashboard": {
+    "good": [
+      {
+        "line": "KPIs top; key metric biggest, top-left.",
+        "refs": [
+          "P0049",
+          "P0050"
+        ]
+      },
+      {
+        "line": "Charts, tables, widgets below.",
+        "refs": [
+          "P0048"
+        ]
+      }
+    ],
+    "avoid": "Dashboard with too many metrics."
+  },
+  "page/index": {
+    "good": [
+      {
+        "line": "Header + filters + table; detail side pane.",
+        "refs": [
+          "P0005",
+          "P0006",
+          "P0016"
+        ]
+      },
+      {
+        "line": "Sortable; bulk actions; keyboard nav.",
+        "refs": [
+          "P0010"
+        ]
+      }
+    ],
+    "avoid": "List without filters."
+  },
+  "page/record": {
+    "good": [
+      {
+        "line": "Page header + detail tabs/sections.",
+        "refs": [
+          "P0005",
+          "P0004"
+        ]
+      },
+      {
+        "line": "Edit in modal or sheet.",
+        "refs": [
+          "P0016"
+        ]
+      }
+    ],
+    "avoid": "Detail without sidebar context."
+  },
+  "page/settings": {
+    "good": [
+      {
+        "line": "Grouped (Account, Privacy, etc.).",
+        "refs": [
+          "C0002"
+        ]
+      },
+      {
+        "line": "Left nav or top tabs; highlight current.",
+        "refs": [
+          "P0003",
+          "P0005"
+        ]
+      }
+    ],
+    "avoid": "Settings scattered across pages."
+  },
+  "page/chat-screen": {
+    "good": [
+      {
+        "line": "History scrolls; user right, assistant left.",
+        "refs": [
+          "P0017",
+          "P0001"
+        ]
+      },
+      {
+        "line": "Typing indicator; code and link support.",
+        "refs": [
+          "P0042",
+          "P0039"
+        ]
+      }
+    ],
+    "avoid": "Chat without visible history."
+  },
+  "page/onboarding-flow": {
+    "good": [
+      {
+        "line": "Step count; title + description + action.",
+        "refs": [
+          "P0037",
+          "P0046"
+        ]
+      },
+      {
+        "line": "Progress saved; back works.",
+        "refs": [
+          "P0009",
+          "P0042"
+        ]
+      }
+    ],
+    "avoid": "Onboarding without skip option."
+  },
+  "page/auth-screen": {
+    "good": [
+      {
+        "line": "Card: email, password, remember.",
+        "refs": [
+          "P0035",
+          "P0014"
+        ]
+      },
+      {
+        "line": "Forgot password and sign up links.",
+        "refs": [
+          "P0038"
+        ]
+      }
+    ],
+    "avoid": "Auth screen with too many fields."
+  }
+}

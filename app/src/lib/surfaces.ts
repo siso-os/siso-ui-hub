@@ -1,0 +1,153 @@
+// The surfaces a part is made for, and their slots in the order a person meets them. Shaan, 7 Oct (A0 note 4): "figure out
+// where the fuck they can be used ... what's needed for mobile apps what's needed for landing pages what's needed for
+// desktops"; 11 Oct: "reorganize it from first principles, how it can actually be useful". The words match the bank's
+// types/vocab.json, where each part's reader says which slots it fills.
+export type Slot = { id: string; label: string; does: string; tall?: boolean }
+export type Surface = { id: string; label: string; about: string; slots: Slot[] }
+
+const s = (id: string, label: string, does: string, tall?: boolean): Slot => ({ id, label, does, tall })
+
+export const SURFACES: Surface[] = [
+  {
+    id: "landing", label: "Landing site", about: "A marketing site's pages, top to bottom: say what it is, prove it, show the price, ask.",
+    slots: [
+      s("announcement", "Announcement", "A thin bar above everything for news or an offer"),
+      s("nav", "Navigation", "Logo, links and the main button, often sticky"),
+      s("hero", "Hero", "The first screen: what it is, for whom, one call to action", true),
+      s("logos", "Logos", "Who uses it, as a row of customer logos"),
+      s("features", "Features", "What it does, as a grid, rows or tabs", true),
+      s("how-it-works", "How it works", "Three or four steps from start to result"),
+      s("showcase", "Showcase", "The product itself: screenshots, a tour, a demo", true),
+      s("stats", "Stats", "Big numbers that prove scale"),
+      s("integrations", "Integrations", "The tools it connects to"),
+      s("testimonials", "Testimonials", "Customers in their own words", true),
+      s("pricing", "Pricing", "Plans, prices and what each includes", true),
+      s("comparison", "Comparison", "Plans or rivals side by side"),
+      s("faq", "FAQ", "The questions that stop a purchase, answered"),
+      s("team", "Team", "The people behind it"),
+      s("about", "About", "The story, mission and values"),
+      s("careers", "Careers", "Open roles"),
+      s("gallery", "Gallery", "Pictures of the work or the place"),
+      s("blog", "Blog", "The latest posts as cards"),
+      s("blog-post", "Blog post", "One article's page"),
+      s("newsletter", "Newsletter", "An email signup"),
+      s("contact", "Contact", "How to reach them: a form, details, a map"),
+      s("cta", "Call to action", "The last ask before the footer"),
+      s("footer", "Footer", "Links, legal and socials"),
+      s("background", "Backgrounds", "What sits behind a section"),
+      s("error-page", "Error page", "404 and friends"),
+    ],
+  },
+  {
+    id: "dashboard", label: "Dashboard", about: "A web app or admin: a frame you live in, then lists, details, forms and the states between them.",
+    slots: [
+      s("shell", "App shell", "The whole frame: side nav, top bar, content", true),
+      s("sidebar", "Sidebar", "The main navigation down the side", true),
+      s("top-bar", "Top bar", "Search, notifications and the account menu"),
+      s("command", "Command palette", "Press ⌘K, type, go"),
+      s("page-header", "Page header", "Title, breadcrumbs and the page's actions"),
+      s("kpi", "KPIs", "The numbers that matter, as cards", true),
+      s("chart", "Charts", "Trends and breakdowns", true),
+      s("table", "Tables", "Rows to sort, filter, select and act on", true),
+      s("list", "Lists", "Items, activity and feeds"),
+      s("detail", "Detail panel", "One record, in a sheet or a page"),
+      s("filters", "Filters", "Narrow a list down"),
+      s("form", "Forms", "Create and edit"),
+      s("kanban", "Kanban", "Cards in columns by status"),
+      s("calendar", "Calendar", "Dates, bookings and schedules"),
+      s("inbox", "Inbox", "Messages and threads"),
+      s("chat", "Chat", "Talk inside the app"),
+      s("editor", "Editor", "Rich text, code or canvas"),
+      s("files", "Files", "Upload, browse and preview"),
+      s("map", "Map", "Places and routes"),
+      s("media", "Media", "Video, audio and images"),
+      s("notifications", "Notifications", "Toasts, alerts and the bell"),
+      s("settings", "Settings", "Account, team and preferences"),
+      s("billing", "Billing", "Plan, usage and invoices"),
+      s("profile", "Profile", "A person's page"),
+      s("auth", "Sign in", "Sign in, sign up, reset"),
+      s("onboarding", "Onboarding", "The first run, step by step"),
+      s("empty", "Empty states", "Nothing here yet, and what to do"),
+      s("loading", "Loading", "Skeletons and spinners"),
+    ],
+  },
+  {
+    id: "mobile", label: "Mobile app", about: "Phone screens: a bar at the top, tabs at the bottom, lists and sheets in between.",
+    slots: [
+      s("app-bar", "App bar", "The screen's title and actions"),
+      s("tab-bar", "Tab bar", "The main sections, at the thumb"),
+      s("list", "Lists", "Rows to tap, swipe and reorder", true),
+      s("card", "Cards", "One thing at a glance", true),
+      s("sheet", "Sheets", "Panels that slide up"),
+      s("onboarding", "Onboarding", "The first screens"),
+      s("auth", "Sign in", "Sign in on a phone"),
+      s("settings", "Settings", "Preferences"),
+    ],
+  },
+  {
+    id: "ai", label: "AI app", about: "Chat with a model or an agent: the thread, the box you type in, and what the agent shows it did.",
+    slots: [
+      s("thread", "Chat thread", "The whole conversation", true),
+      s("message", "Messages", "One turn, with its actions", true),
+      s("composer", "Composer", "Where you type, attach and send", true),
+      s("tool-call", "Tool calls", "What the agent ran, step by step"),
+      s("sources", "Sources", "Where an answer came from"),
+      s("artifact", "Artifacts", "Code, documents and previews it made"),
+      s("model-picker", "Model picker", "Choose the model"),
+      s("voice", "Voice", "Talk instead of type"),
+      s("agent-status", "Agent status", "Thinking, working, done"),
+    ],
+  },
+  {
+    id: "store", label: "Shop", about: "Products to browse, one to look at closely, then the cart and checkout.",
+    slots: [
+      s("product-card", "Product cards", "A product in a grid", true),
+      s("filters", "Filters", "Narrow the shelf"),
+      s("product-gallery", "Product gallery", "A product's pictures"),
+      s("product-detail", "Product page", "Everything about one product", true),
+      s("reviews", "Reviews", "What buyers say"),
+      s("cart", "Cart", "What you are buying"),
+      s("checkout", "Checkout", "Pay and ship", true),
+      s("order", "Orders", "After you bought"),
+    ],
+  },
+  {
+    id: "content", label: "Docs & blog", about: "Pages made to be read: navigation down the side, the article, code and callouts.",
+    slots: [
+      s("docs-nav", "Docs navigation", "The tree of pages"),
+      s("toc", "On this page", "The article's headings"),
+      s("article", "Article", "The reading column", true),
+      s("code", "Code", "Highlighted, copyable code"),
+      s("callout", "Callouts", "Notes, tips and warnings"),
+      s("blog-card", "Post cards", "A post in a list"),
+      s("changelog", "Changelog", "What changed, by date"),
+      s("comments", "Comments", "Readers' replies"),
+    ],
+  },
+  {
+    id: "portfolio", label: "Portfolio", about: "A person or studio: who they are, the work, one case in depth, and how to hire them.",
+    slots: [
+      s("intro", "Intro", "Name, role and a line about them", true),
+      s("work-grid", "Work", "Projects as a grid", true),
+      s("case-study", "Case study", "One project, in depth"),
+      s("about", "About", "The longer story"),
+      s("contact", "Contact", "Hire me"),
+    ],
+  },
+  {
+    id: "any", label: "Everywhere", about: "The pieces every surface uses: buttons, fields, feedback, overlays and the rest.",
+    slots: [
+      s("action", "Actions", "Buttons, toggles and links", true),
+      s("field", "Fields", "Inputs, selects and pickers", true),
+      s("feedback", "Feedback", "Alerts, badges, progress and toasts"),
+      s("overlay", "Overlays", "Dialogs, popovers, tooltips and menus"),
+      s("navigation", "Navigation", "Tabs, breadcrumbs, pagination and steps"),
+      s("data", "Data", "Cards, lists, tables and stats"),
+      s("media", "Media", "Images, video and audio"),
+      s("layout", "Layout", "Grids, panels, separators and scroll"),
+      s("decor", "Decoration", "Effects that make it feel alive"),
+    ],
+  },
+]
+
+export const surfaceOf = (id: string | undefined) => SURFACES.find((x) => x.id === id)

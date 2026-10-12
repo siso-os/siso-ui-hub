@@ -1,0 +1,54 @@
+{"id": "diceui:action-bar", "node": "component/dock", "variation": "action-toolbar", "job": "Floating toolbar of actions for the currently selected items."}
+{"id": "diceui:angle-slider", "node": "atom/slider", "variation": "dial-knob", "job": "Circular dial that sets an angle by dragging."}
+{"id": "diceui:avatar-group", "node": "atom/avatar", "variation": "avatar-group", "job": "Group of overlapping avatars for several people."}
+{"id": "diceui:badge-overflow", "node": "atom/badge", "variation": "count", "job": "Shows visible badges and collapses extras into a +N count."}
+{"id": "diceui:banner", "node": "component/alert", "variation": "top-banner", "job": "Full-width banner for a message with an optional action."}
+{"id": "diceui:circular-progress", "node": "atom/progress", "variation": "circular", "job": "Circular ring showing how far a task has progressed."}
+{"id": "diceui:client-only", "node": null, "variation": null, "job": "Renders children only on the client, after hydration."}
+{"id": "diceui:color-picker", "node": "component/picker", "variation": "color-picker", "job": "Colour selection control for choosing a colour value."}
+{"id": "diceui:color-swatch", "node": "component/picker", "variation": "presets", "job": "Selectable colour swatches offering quick preset colours."}
+{"id": "diceui:compare-slider", "node": "component/compare", "variation": "slider-compare", "job": "Draggable slider revealing a before and after image."}
+{"id": "diceui:compose-refs", "node": null, "variation": null, "job": "Utility merging multiple refs into one ref callback."}
+{"id": "diceui:cropper", "node": "atom/image", "variation": null, "job": "Crops an image to a set size or aspect ratio.", "edge": "image crop tool"}
+{"id": "diceui:data-grid-demo", "node": "component/table", "variation": "data-table", "job": "Demo data grid showing rows and columns of records."}
+{"id": "diceui:data-table-demo", "node": "component/table", "variation": "data-table", "job": "Demo data table with columns and rows of records."}
+{"id": "diceui:direction-provider", "node": null, "variation": null, "job": "Provides text direction, LTR or RTL, to descendant components."}
+{"id": "diceui:editable", "node": "atom/text-input", "variation": "text-input", "job": "Text that becomes an input in place when clicked to edit."}
+{"id": "diceui:file-upload", "node": "component/upload", "variation": "dropzone", "job": "File upload control for selecting and dropping files to upload."}
+{"id": "diceui:fps", "node": "atom/text", "variation": null, "job": "Displays frames per second as a live counter for performance checks.", "edge": "fps counter"}
+{"id": "diceui:gauge", "node": "atom/progress", "variation": "meter-gauge", "job": "Gauge dial showing a value within a range."}
+{"id": "diceui:kanban", "node": "component/board", "variation": "kanban-drag-drop", "job": "Kanban board arranging cards into columns by status."}
+{"id": "diceui:key-value", "node": "component/field", "variation": null, "job": "Rows of key and value fields for entering paired data.", "edge": "key value pairs"}
+{"id": "diceui:marquee", "node": "atom/layout", "variation": null, "job": "Looping marquee strip scrolling items endlessly in one direction.", "edge": "infinite marquee strip"}
+{"id": "diceui:mask-input", "node": "atom/text-input", "variation": "text-input", "job": "Text input that formats entered characters to a fixed mask pattern."}
+{"id": "diceui:masonry", "node": "component/gallery", "variation": "masonry-gallery", "job": "Masonry grid placing images and items in staggered columns."}
+{"id": "diceui:media-player", "node": "component/player", "variation": "video-player", "job": "Media player with playback controls for audio and video."}
+{"id": "diceui:phone-input", "node": "component/field", "variation": "with-addon", "job": "Phone number field with a country code selector."}
+{"id": "diceui:portal", "node": null, "variation": null, "job": "Renders children into a different part of the DOM tree."}
+{"id": "diceui:presence", "node": "atom/status-dot", "variation": "presence-wrapper", "job": "Wrapper animating children in and out as they mount or unmount."}
+{"id": "diceui:presentation", "node": "component/carousel", "variation": "slider-carousel", "job": "Slide presentation frame that steps through slides in sequence."}
+{"id": "diceui:presentation-zoom-select", "node": "component/select", "variation": "standard-select", "job": "Dropdown choosing a zoom level for presentations."}
+{"id": "diceui:qr-code", "node": "atom/image", "variation": null, "job": "Generates a QR code image from a string.", "edge": "qr code image"}
+{"id": "diceui:rating", "node": "atom/slider", "variation": "rating", "job": "Star rating with keyboard navigation and hover effects."}
+{"id": "diceui:relative-time-card", "node": "component/card", "variation": "standard-card", "job": "Card showing a timestamp relative to the current time."}
+{"id": "diceui:responsive-dialog", "node": "component/dialog", "variation": "modal-dialog", "job": "Dialog that adapts its layout to the screen size."}
+{"id": "diceui:scroll-spy", "node": "component/toc", "variation": "scroll-tracking", "job": "Highlights the nav item of the section currently in view."}
+{"id": "diceui:scroller", "node": "atom/layout", "variation": "scroll-area", "job": "Scrollable area showing scroll bars for overflowing content."}
+{"id": "diceui:segmented-input", "node": "component/picker", "variation": "segmented-input", "job": "Segmented input whose parts each take a date or time value."}
+{"id": "diceui:selection-toolbar", "node": "component/dock", "variation": "action-toolbar", "job": "Floating toolbar of formatting actions shown over a text selection."}
+{"id": "diceui:sortable", "node": "component/list", "variation": "sortable", "job": "List whose items can be reordered by dragging."}
+{"id": "diceui:speed-dial", "node": "component/dock", "variation": "expandable", "job": "Floating button that expands into a set of related actions."}
+{"id": "diceui:stack", "node": "atom/layout", "variation": null, "job": "Arranges children in a vertical or horizontal stack with spacing.", "edge": "stacked layout"}
+{"id": "diceui:stat", "node": "component/stat", "variation": "kpi-card", "job": "Stat block showing a label beside a large value."}
+{"id": "diceui:status", "node": "atom/status-dot", "variation": "standard", "job": "Coloured dot and label showing a live status state."}
+{"id": "diceui:stepper", "node": "component/steps", "variation": "horizontal-stepper", "job": "Step indicator guiding a user through ordered stages."}
+{"id": "diceui:swap", "node": "atom/icon", "variation": "animated", "job": "Animates between two icons or states in place."}
+{"id": "diceui:time-picker", "node": "component/picker", "variation": "time-picker", "job": "Time picker for choosing an hour and minute."}
+{"id": "diceui:timeline", "node": "component/timeline", "variation": "vertical-timeline", "job": "Vertical timeline of events in order along a rail."}
+{"id": "diceui:tour", "node": "section/onboarding", "variation": null, "job": "Step-by-step tour highlighting interface elements with explanations.", "edge": "guided product tour"}
+{"id": "diceui:use-as-ref", "node": null, "variation": null, "job": "Hook that exposes a value as a ref for callbacks."}
+{"id": "diceui:use-isomorphic-layout-effect", "node": null, "variation": null, "job": "Layout effect that is safe to use during server rendering."}
+{"id": "diceui:use-lazy-ref", "node": null, "variation": null, "job": "Hook creating a ref whose value is computed once, lazily."}
+{"id": "diceui:use-mobile", "node": null, "variation": null, "job": "Hook reporting whether the viewport is a mobile size."}
+{"id": "diceui:utils", "node": null, "variation": null, "job": "Utility helpers shared across components."}
+{"id": "diceui:visually-hidden-input", "node": null, "variation": null, "job": "Input hidden visually but still submitted and announced."}

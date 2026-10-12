@@ -1,0 +1,23 @@
+{"id": "prompt-kit:chain-of-thought", "node": "component/agent-parts", "variation": "reasoning-display", "job": "A component for displaying a chain of thought process with collapsible steps and triggers."}
+{"id": "prompt-kit:chat-container", "node": "section/chat", "variation": "thread", "job": "A component for creating chat interfaces with intelligent auto-scrolling behavior, designe"}
+{"id": "prompt-kit:chatbot", "node": "section/chat", "variation": "thread", "job": "A chatbot component that allows users to chat with an AI model. It uses prompt-kit, shadcn"}
+{"id": "prompt-kit:code-block", "node": "component/code", "variation": "highlighted-code", "job": "A component for displaying code snippets with syntax highlighting and customizable styling"}
+{"id": "prompt-kit:feedback-bar", "node": "component/message", "variation": "actions-feedback", "job": "A component to collect user feedback on AI responses."}
+{"id": "prompt-kit:file-upload", "node": "component/composer", "variation": "with-attachments", "job": "A component for creating drag-and-drop file upload interfaces with support for single or m"}
+{"id": "prompt-kit:image", "node": "component/agent-parts", "variation": "generated-image", "job": "A component for displaying images from base64 or Uint8Array data, with full accessibility "}
+{"id": "prompt-kit:jsx-preview", "node": "component/agent-parts", "variation": "live-preview", "job": "A component for rendering JSX strings as React components, with support for streaming cont"}
+{"id": "prompt-kit:loader", "node": "component/agent-parts", "variation": "working-status", "job": "A component for displaying a loading indicator with multiple variants and customizable sty"}
+{"id": "prompt-kit:markdown", "node": "component/message", "variation": "markdown", "job": "A component for rendering Markdown content with support for code blocks, GFM, and custom s"}
+{"id": "prompt-kit:message", "node": "component/message", "variation": "message-bubble", "job": "A component for displaying chat messages with support for avatars, markdown content, and i"}
+{"id": "prompt-kit:prompt-input", "node": "component/composer", "variation": "chat-composer", "job": "An input field designed for chat interfaces, allowing users to enter and submit text promp"}
+{"id": "prompt-kit:prompt-suggestion", "node": "component/message", "variation": "suggestions", "job": "A component for implementing interactive prompt suggestions in AI interfaces. The PromptSu"}
+{"id": "prompt-kit:reasoning", "node": "component/agent-parts", "variation": "reasoning-display", "job": "A collapsible component for showing AI reasoning, explanations, or logic. You can control "}
+{"id": "prompt-kit:response-stream", "node": "component/message", "variation": "streaming-text", "job": "A component to simulate streaming text on the client side, perfect for fake responses, or "}
+{"id": "prompt-kit:scroll-button", "node": "section/chat", "variation": "jump-to-latest", "job": "A floating button component that appears when users scroll up in a container, allowing the"}
+{"id": "prompt-kit:source", "node": "component/agent-parts", "variation": "sources-display", "job": "Displays website sources used by AI-generated content, showing URL details, titles, and de"}
+{"id": "prompt-kit:steps", "node": "component/agent-parts", "variation": "plan-tasks", "job": "A component for displaying a sequence of operations in a collapsible layout. Each step can"}
+{"id": "prompt-kit:system-message", "node": "component/agent-parts", "variation": "notices", "job": "A banner-style component for surfacing contextual information, warnings, or instructions w"}
+{"id": "prompt-kit:text-shimmer", "node": "component/agent-parts", "variation": "working-status", "job": "A component for displaying a shimmer effect on text, perfect for loading states or highlig"}
+{"id": "prompt-kit:thinking-bar", "node": "component/agent-parts", "variation": "working-status", "job": "A component to display the thinking state of an AI model with optional actions."}
+{"id": "prompt-kit:tool", "node": "component/agent-parts", "variation": "tool-calls", "job": "Displays tool call details including input, output, status, and errors. Ideal for visualiz"}
+{"id": "prompt-kit:tool-calling", "node": "page/chat-screen", "variation": "chat-agent-working", "job": "A chatbot with tool calling feature. It uses prompt-kit, shadcn/ui, and AI SDK V5."}

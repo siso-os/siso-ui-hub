@@ -1,0 +1,82 @@
+{
+ "$schema": "../factory/standard/schema/appfactory.schema.json",
+ "standard": "appfactory/0.1",
+ "id": "app-factory",
+ "name": "SISO App Factory",
+ "repo": "sisodias/siso-ui-hub",
+ "root": "factory",
+ "surface": "dashboard",
+ "space": "app-factory",
+ "colour": "#3B82F6",
+ "inventory": null,
+ "run": {
+  "dev": "node factory/render/server.mjs",
+  "url": "http://127.0.0.1:8850/app#/projects"
+ },
+ "line": [
+  {
+   "step": 1,
+   "name": "What the app is for",
+   "status": "done",
+   "at": "2026-10-10",
+   "by": "APP-FACTORY",
+   "note": "app.md: for Shaan only, a space in SISO OS"
+  },
+  {
+   "step": 2,
+   "name": "The features that purpose needs",
+   "status": "done",
+   "at": "2026-10-10",
+   "by": "APP-FACTORY",
+   "note": "12 features, 6 built"
+  },
+  {
+   "step": 3,
+   "name": "The widgets those features need",
+   "status": "done",
+   "at": "2026-10-10",
+   "by": "APP-FACTORY",
+   "note": "19 widgets, 10 built"
+  },
+  {
+   "step": 4,
+   "name": "The pages and sub-pages",
+   "status": "done",
+   "at": "2026-10-10",
+   "by": "APP-FACTORY",
+   "note": "10 pages, 5 built"
+  },
+  {
+   "step": 5,
+   "name": "Put them together",
+   "status": "doing",
+   "at": "2026-10-10",
+   "by": "APP-FACTORY",
+   "note": "home, project, component and core pages built; load from a URL with ?embed=1 for SISO OS (factory/os/manifest.ts)"
+  },
+  {
+   "step": 6,
+   "name": "Better components for each job",
+   "status": "doing",
+   "at": "2026-10-10",
+   "by": "APP-FACTORY",
+   "note": "SISO UI v0.1 pick page up; waits on his take / skip"
+  },
+  {
+   "step": 7,
+   "name": "Clean, and right at every size",
+   "status": "doing",
+   "at": "2026-10-10",
+   "by": "APP-FACTORY",
+   "note": "shots at 390 and 1440 for 5 built pages; uihub check at both: 2 FAIL left (65 inline colours, 1 band with 4+ type sizes), to fix when SISO UI's tokens are cut; clickable-div FAIL fixed"
+  },
+  {
+   "step": 8,
+   "name": "He iterates with the agent",
+   "status": "todo",
+   "at": null,
+   "by": null,
+   "note": null
+  }
+ ]
+}

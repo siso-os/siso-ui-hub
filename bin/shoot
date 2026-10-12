@@ -4,7 +4,7 @@
   shoot OUT_DIR < list.tsv        # each line: URL<TAB>name[<TAB>scroll_px[<TAB>js run before the shot, e.g. open a popover]]
   shoot OUT_DIR URL name [scroll_px]
 
-Writes OUT_DIR/<name>.jpg (1440x900 viewport, JPEG q55, max 1440 wide). Skips names that already exist.
+Writes OUT_DIR/<name>.jpg (1440x900 viewport, or SHOOT_WIDTH=390 for 390x844; JPEG q55, max 1440 wide). Skips names that already exist.
 At most SLOTS pages render at once across ALL agents (mkdir locks in /tmp), so 11 agents never mean 11 tabs.
 Every tab it opens it closes. Never opens anything on screen. Exit 0 even on per-URL failure; read the log lines.
 """
@@ -13,6 +13,8 @@ import json, os, subprocess, sys, time, urllib.request, urllib.parse
 API = "http://localhost:9377"
 SLOTS = int(os.environ.get("SHOOT_SLOTS", "3"))
 WAIT = float(os.environ.get("SHOOT_WAIT", "2.5"))
+WIDTH = int(os.environ.get("SHOOT_WIDTH", "1440"))   # 390 for phone shots (.appfactory/ui/shots/)
+HEIGHT = int(os.environ.get("SHOOT_HEIGHT", "900" if WIDTH > 600 else "844"))
 USER = "uihub"
 
 def call(method, path, body=None, timeout=45):
@@ -58,7 +60,7 @@ def shoot(out_dir, url, name, scroll=0, js=""):
     try:
         tab = call("POST", "/tabs", {"userId": USER, "sessionKey": sess, "url": url})["tabId"]
         q = urllib.parse.urlencode({"userId": USER})
-        try: call("POST", f"/tabs/{tab}/viewport", {"userId": USER, "width": 1440, "height": 900})
+        try: call("POST", f"/tabs/{tab}/viewport", {"userId": USER, "width": WIDTH, "height": HEIGHT})
         except Exception: pass
         time.sleep(WAIT)
         if scroll:

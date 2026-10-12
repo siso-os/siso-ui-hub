@@ -1,0 +1,5145 @@
+[
+ {
+  "key": "component/field",
+  "name": "Form field",
+  "group": "Input",
+  "job": null,
+  "made_of": [
+   "text",
+   "text-input",
+   "badge"
+  ],
+  "sections": null,
+  "parts": 1548,
+  "types": [
+   [
+    "text input",
+    384
+   ],
+   [
+    "standard form field",
+    278
+   ],
+   [
+    "icon or addon",
+    147
+   ],
+   [
+    "password",
+    82
+   ],
+   [
+    "validation states",
+    74
+   ],
+   [
+    "form field wrapper",
+    41
+   ],
+   [
+    "number stepper",
+    31
+   ],
+   [
+    "tags input",
+    31
+   ],
+   [
+    "phone",
+    29
+   ],
+   [
+    "floating label",
+    27
+   ],
+   [
+    "label",
+    16
+   ],
+   [
+    "field primitives",
+    11
+   ]
+  ],
+  "looks": [
+   [
+    "minimal",
+    685
+   ],
+   [
+    "dark",
+    304
+   ],
+   [
+    "clean",
+    251
+   ],
+   [
+    "3d",
+    43
+   ],
+   [
+    "playful",
+    33
+   ],
+   [
+    "retro-hud",
+    31
+   ],
+   [
+    "gradient",
+    29
+   ],
+   [
+    "glass",
+    13
+   ]
+  ],
+  "fits": [
+   [
+    "dev-tools",
+    65
+   ],
+   [
+    "commerce",
+    41
+   ],
+   [
+    "saas",
+    40
+   ],
+   [
+    "fintech",
+    37
+   ],
+   [
+    "ai",
+    22
+   ],
+   [
+    "productivity",
+    19
+   ],
+   [
+    "gaming",
+    16
+   ],
+   [
+    "media",
+    11
+   ]
+  ]
+ },
+ {
+  "key": "component/select",
+  "name": "Select and combobox",
+  "group": "Input",
+  "job": null,
+  "made_of": [
+   "button",
+   "text-input",
+   "icon"
+  ],
+  "sections": null,
+  "parts": 1654,
+  "types": [
+   [
+    "standard select",
+    529
+   ],
+   [
+    "standard combobox",
+    195
+   ],
+   [
+    "multi select",
+    133
+   ],
+   [
+    "native select",
+    75
+   ],
+   [
+    "icons or avatars",
+    71
+   ],
+   [
+    "searchable",
+    63
+   ],
+   [
+    "grouped",
+    61
+   ],
+   [
+    "select",
+    58
+   ],
+   [
+    "dropdown",
+    49
+   ],
+   [
+    "specialized picker",
+    37
+   ],
+   [
+    "date and time",
+    32
+   ],
+   [
+    "searchable select",
+    24
+   ],
+   [
+    "async search",
+    23
+   ],
+   [
+    "icons",
+    23
+   ],
+   [
+    "multi-select with chips",
+    21
+   ],
+   [
+    "autocomplete with suggestions",
+    16
+   ],
+   [
+    "emoji, icon and colour",
+    14
+   ],
+   [
+    "creatable",
+    14
+   ],
+   [
+    "mention input",
+    11
+   ],
+   [
+    "searchable dropdown",
+    4
+   ],
+   [
+    "wheel picker",
+    2
+   ]
+  ],
+  "looks": [
+   [
+    "minimal",
+    618
+   ],
+   [
+    "clean",
+    564
+   ],
+   [
+    "dark",
+    357
+   ],
+   [
+    "playful",
+    37
+   ],
+   [
+    "glass",
+    32
+   ],
+   [
+    "retro-hud",
+    13
+   ],
+   [
+    "brutalist",
+    10
+   ],
+   [
+    "skeuomorphic",
+    10
+   ]
+  ],
+  "fits": [
+   [
+    "saas",
+    194
+   ],
+   [
+    "dev-tools",
+    81
+   ],
+   [
+    "ai",
+    24
+   ],
+   [
+    "commerce",
+    22
+   ],
+   [
+    "productivity",
+    19
+   ],
+   [
+    "social",
+    18
+   ],
+   [
+    "fintech",
+    8
+   ],
+   [
+    "media",
+    7
+   ]
+  ]
+ },
+ {
+  "key": "component/search",
+  "name": "Search box",
+  "group": "Input",
+  "job": null,
+  "made_of": [
+   "text-input",
+   "icon",
+   "button"
+  ],
+  "sections": null,
+  "parts": 268,
+  "types": [
+   [
+    "search field",
+    75
+   ],
+   [
+    "suggestions",
+    48
+   ],
+   [
+    "filters",
+    33
+   ],
+   [
+    "results",
+    28
+   ],
+   [
+    "expanding",
+    18
+   ],
+   [
+    "command style",
+    18
+   ],
+   [
+    "standard search",
+    2
+   ]
+  ],
+  "looks": [
+   [
+    "minimal",
+    139
+   ],
+   [
+    "dark",
+    46
+   ],
+   [
+    "clean",
+    45
+   ],
+   [
+    "glass",
+    5
+   ],
+   [
+    "playful",
+    4
+   ],
+   [
+    "neon-glow",
+    3
+   ],
+   [
+    "light",
+    2
+   ],
+   [
+    "gradient",
+    2
+   ]
+  ],
+  "fits": [
+   [
+    "saas",
+    56
+   ],
+   [
+    "dev-tools",
+    29
+   ],
+   [
+    "commerce",
+    18
+   ],
+   [
+    "ai",
+    8
+   ],
+   [
+    "productivity",
+    3
+   ],
+   [
+    "crypto",
+    1
+   ],
+   [
+    "agency",
+    1
+   ],
+   [
+    "fintech",
+    1
+   ]
+  ]
+ },
+ {
+  "key": "component/picker",
+  "name": "Date, time and colour pickers",
+  "group": "Input",
+  "job": null,
+  "made_of": [
+   "button",
+   "text-input"
+  ],
+  "sections": null,
+  "parts": 705,
+  "types": [
+   [
+    "standard date picker",
+    94
+   ],
+   [
+    "saturation and brightness area",
+    62
+   ],
+   [
+    "month calendar",
+    37
+   ],
+   [
+    "date range picker",
+    32
+   ],
+   [
+    "calendar popover",
+    32
+   ],
+   [
+    "color swatches",
+    26
+   ],
+   [
+    "standard time picker",
+    25
+   ],
+   [
+    "standard color picker",
+    24
+   ],
+   [
+    "segmented input",
+    23
+   ],
+   [
+    "segmented time entry",
+    23
+   ],
+   [
+    "range picker",
+    21
+   ],
+   [
+    "date input",
+    21
+   ],
+   [
+    "dialog picker",
+    17
+   ],
+   [
+    "range calendar",
+    17
+   ],
+   [
+    "standard date range",
+    15
+   ],
+   [
+    "presets",
+    13
+   ],
+   [
+    "time selection",
+    13
+   ],
+   [
+    "swatch selector",
+    12
+   ],
+   [
+    "hue wheel or ring",
+    10
+   ],
+   [
+    "range picker with presets",
+    10
+   ],
+   [
+    "time input",
+    10
+   ],
+   [
+    "inline column picker",
+    7
+   ],
+   [
+    "scrollable columns",
+    7
+   ],
+   [
+    "dual month calendar",
+    6
+   ],
+   [
+    "aria date picker",
+    5
+   ]
+  ],
+  "looks": [
+   [
+    "minimal",
+    270
+   ],
+   [
+    "clean",
+    243
+   ],
+   [
+    "dark",
+    97
+   ],
+   [
+    "glass",
+    9
+   ],
+   [
+    "gradient",
+    7
+   ],
+   [
+    "playful",
+    6
+   ],
+   [
+    "retro-hud",
+    5
+   ],
+   [
+    "monochrome",
+    2
+   ]
+  ],
+  "fits": [
+   [
+    "saas",
+    53
+   ],
+   [
+    "dev-tools",
+    12
+   ],
+   [
+    "productivity",
+    7
+   ],
+   [
+    "commerce",
+    3
+   ],
+   [
+    "travel",
+    3
+   ],
+   [
+    "gaming",
+    1
+   ],
+   [
+    "health",
+    1
+   ],
+   [
+    "fintech",
+    1
+   ]
+  ]
+ },
+ {
+  "key": "component/upload",
+  "name": "File upload",
+  "group": "Input",
+  "job": null,
+  "made_of": [
+   "button",
+   "icon",
+   "progress"
+  ],
+  "sections": null,
+  "parts": 516,
+  "types": [
+   [
+    "dropzone",
+    164
+   ],
+   [
+    "previews",
+    67
+   ],
+   [
+    "progress list",
+    61
+   ],
+   [
+    "standard file upload",
+    42
+   ],
+   [
+    "avatar upload",
+    27
+   ],
+   [
+    "attachment row",
+    19
+   ],
+   [
+    "drag and drop",
+    18
+   ],
+   [
+    "attachments",
+    17
+   ],
+   [
+    "progress",
+    6
+   ]
+  ],
+  "looks": [
+   [
+    "minimal",
+    220
+   ],
+   [
+    "clean",
+    160
+   ],
+   [
+    "dark",
+    50
+   ],
+   [
+    "gradient",
+    5
+   ],
+   [
+    "retro-hud",
+    5
+   ],
+   [
+    "glass",
+    3
+   ],
+   [
+    "illustrated",
+    2
+   ],
+   [
+    "3d",
+    2
+   ]
+  ],
+  "fits": [
+   [
+    "saas",
+    67
+   ],
+   [
+    "ai",
+    15
+   ],
+   [
+    "dev-tools",
+    12
+   ],
+   [
+    "commerce",
+    3
+   ],
+   [
+    "productivity",
+    3
+   ],
+   [
+    "social",
+    3
+   ],
+   [
+    "media",
+    2
+   ],
+   [
+    "crypto",
+    2
+   ]
+  ]
+ },
+ {
+  "key": "component/tags",
+  "name": "Tag input",
+  "group": "Input",
+  "job": null,
+  "made_of": [
+   "text-input",
+   "badge"
+  ],
+  "sections": null,
+  "parts": 72,
+  "types": [
+   [
+    "standard tag input",
+    26
+   ],
+   [
+    "suggestions",
+    14
+   ],
+   [
+    "tag or chip",
+    13
+   ],
+   [
+    "multi select",
+    3
+   ],
+   [
+    "text to tags",
+    3
+   ],
+   [
+    "token or amount input",
+    2
+   ]
+  ],
+  "looks": [
+   [
+    "minimal",
+    32
+   ],
+   [
+    "clean",
+    22
+   ],
+   [
+    "dark",
+    5
+   ],
+   [
+    "playful",
+    3
+   ]
+  ],
+  "fits": [
+   [
+    "saas",
+    13
+   ],
+   [
+    "dev-tools",
+    2
+   ],
+   [
+    "fintech",
+    1
+   ],
+   [
+    "crypto",
+    1
+   ]
+  ]
+ },
+ {
+  "key": "component/form",
+  "name": "Form",
+  "group": "Input",
+  "job": null,
+  "made_of": [
+   "field",
+   "choice",
+   "button"
+  ],
+  "sections": null,
+  "parts": 665,
+  "types": [
+   [
+    "whole form",
+    665
+   ]
+  ],
+  "looks": [
+   [
+    "minimal",
+    399
+   ],
+   [
+    "dark",
+    183
+   ],
+   [
+    "clean",
+    148
+   ],
+   [
+    "gradient",
+    10
+   ],
+   [
+    "retro-hud",
+    4
+   ],
+   [
+    "playful",
+    3
+   ],
+   [
+    "brutalist",
+    3
+   ],
+   [
+    "3d",
+    2
+   ]
+  ],
+  "fits": [
+   [
+    "saas",
+    151
+   ],
+   [
+    "dev-tools",
+    92
+   ],
+   [
+    "commerce",
+    52
+   ],
+   [
+    "fintech",
+    26
+   ],
+   [
+    "crypto",
+    10
+   ],
+   [
+    "productivity",
+    9
+   ],
+   [
+    "ai",
+    7
+   ],
+   [
+    "media",
+    4
+   ]
+  ]
+ },
+ {
+  "key": "component/menu",
+  "name": "Menu",
+  "group": "Navigation",
+  "job": null,
+  "made_of": [
+   "link",
+   "icon",
+   "text"
+  ],
+  "sections": null,
+  "parts": 1481,
+  "types": [
+   [
+    "dropdown menu",
+    484
+   ],
+   [
+    "standard context menu",
+    112
+   ],
+   [
+    "context menu",
+    97
+   ],
+   [
+    "menubar",
+    88
+   ],
+   [
+    "radial",
+    61
+   ],
+   [
+    "toolbar or menubar",
+    57
+   ],
+   [
+    "list",
+    56
+   ],
+   [
+    "navigation menu",
+    45
+   ],
+   [
+    "mega menu",
+    38
+   ],
+   [
+    "submenus",
+    36
+   ],
+   [
+    "standard menu",
+    29
+   ],
+   [
+    "user menu",
+    23
+   ],
+   [
+    "morph",
+    15
+   ],
+   [
+    "nested or cascading",
+    10
+   ],
+   [
+    "icons",
+    7
+   ]
+  ],
+  "looks": [
+   [
+    "minimal",
+    615
+   ],
+   [
+    "dark",
+    338
+   ],
+   [
+    "clean",
+    228
+   ],
+   [
+    "playful",
+    43
+   ],
+   [
+    "glass",
+    40
+   ],
+   [
+    "retro-hud",
+    21
+   ],
+   [
+    "brutalist",
+    13
+   ],
+   [
+    "gradient",
+    7
+   ]
+  ],
+  "fits": [
+   [
+    "saas",
+    212
+   ],
+   [
+    "dev-tools",
+    117
+   ],
+   [
+    "productivity",
+    31
+   ],
+   [
+    "food",
+    14
+   ],
+   [
+    "commerce",
+    14
+   ],
+   [
+    "ai",
+    14
+   ],
+   [
+    "gaming",
+    13
+   ],
+   [
+    "social",
+    9
+   ]
+  ]
+ },
+ {
+  "key": "component/tabs",
+  "name": "Tabs and segmented control",
+  "group": "Navigation",
+  "job": null,
+  "made_of": [
+   "button",
+   "badge"
+  ],
+  "sections": null,
+  "parts": 1010,
+  "types": [
+   [
+    "underline",
+    231
+   ],
+   [
+    "indicator",
+    163
+   ],
+   [
+    "pill or segmented",
+    152
+   ],
+   [
+    "standard tab",
+    92
+   ],
+   [
+    "icons",
+    51
+   ],
+   [
+    "standard segmented control",
+    47
+   ],
+   [
+    "vertical",
+    33
+   ],
+   [
+    "sliding",
+    31
+   ],
+   [
+    "switcher",
+    26
+   ],
+   [
+    "segmented controls",
+    19
+   ],
+   [
+    "pill toggle with sliding thumb",
+    19
+   ],
+   [
+    "counts",
+    12
+   ]
+  ],
+  "looks": [
+   [
+    "minimal",
+    497
+   ],
+   [
+    "clean",
+    324
+   ],
+   [
+    "dark",
+    228
+   ],
+   [
+    "glass",
+    35
+   ],
+   [
+    "playful",
+    15
+   ],
+   [
+    "gradient",
+    15
+   ],
+   [
+    "retro-hud",
+    8
+   ],
+   [
+    "brutalist",
+    8
+   ]
+  ],
+  "fits": [
+   [
+    "saas",
+    108
+   ],
+   [
+    "dev-tools",
+    43
+   ],
+   [
+    "commerce",
+    13
+   ],
+   [
+    "portfolio",
+    9
+   ],
+   [
+    "agency",
+    7
+   ],
+   [
+    "productivity",
+    7
+   ],
+   [
+    "ai",
+    4
+   ],
+   [
+    "social",
+    4
+   ]
+  ]
+ },
+ {
+  "key": "component/breadcrumb",
+  "name": "Breadcrumb",
+  "group": "Navigation",
+  "job": null,
+  "made_of": [
+   "link",
+   "icon"
+  ],
+  "sections": null,
+  "parts": 400,
+  "types": [
+   [
+    "standard breadcrumb",
+    192
+   ],
+   [
+    "icons",
+    50
+   ],
+   [
+    "text breadcrumb",
+    45
+   ],
+   [
+    "dropdowns",
+    28
+   ],
+   [
+    "truncated or menu",
+    21
+   ],
+   [
+    "overflow menu",
+    7
+   ]
+  ],
+  "looks": [
+   [
+    "minimal",
+    287
+   ],
+   [
+    "clean",
+    34
+   ],
+   [
+    "dark",
+    34
+   ],
+   [
+    "retro-hud",
+    5
+   ],
+   [
+    "monochrome",
+    4
+   ],
+   [
+    "glass",
+    4
+   ],
+   [
+    "brutalist",
+    2
+   ],
+   [
+    "light",
+    2
+   ]
+  ],
+  "fits": [
+   [
+    "saas",
+    13
+   ],
+   [
+    "dev-tools",
+    6
+   ],
+   [
+    "gaming",
+    2
+   ],
+   [
+    "social",
+    1
+   ],
+   [
+    "commerce",
+    1
+   ]
+  ]
+ },
+ {
+  "key": "component/pagination",
+  "name": "Pagination",
+  "group": "Navigation",
+  "job": null,
+  "made_of": [
+   "button"
+  ],
+  "sections": null,
+  "parts": 374,
+  "types": [
+   [
+    "numbered pages",
+    172
+   ],
+   [
+    "standard pagination",
+    56
+   ],
+   [
+    "page size dropdown",
+    29
+   ],
+   [
+    "ellipsis",
+    22
+   ],
+   [
+    "first and last",
+    18
+   ],
+   [
+    "page counter",
+    10
+   ],
+   [
+    "table pagination",
+    8
+   ]
+  ],
+  "looks": [
+   [
+    "minimal",
+    232
+   ],
+   [
+    "clean",
+    51
+   ],
+   [
+    "dark",
+    22
+   ],
+   [
+    "brutalist",
+    5
+   ],
+   [
+    "retro-hud",
+    4
+   ],
+   [
+    "glass",
+    4
+   ],
+   [
+    "playful",
+    3
+   ],
+   [
+    "gradient",
+    3
+   ]
+  ],
+  "fits": [
+   [
+    "saas",
+    49
+   ],
+   [
+    "dev-tools",
+    6
+   ],
+   [
+    "gaming",
+    2
+   ],
+   [
+    "media",
+    2
+   ],
+   [
+    "portfolio",
+    2
+   ],
+   [
+    "commerce",
+    1
+   ]
+  ]
+ },
+ {
+  "key": "component/steps",
+  "name": "Steps",
+  "group": "Navigation",
+  "job": null,
+  "made_of": [
+   "badge",
+   "text",
+   "progress"
+  ],
+  "sections": null,
+  "parts": 423,
+  "types": [
+   [
+    "horizontal stepper",
+    115
+   ],
+   [
+    "multi-step form",
+    55
+   ],
+   [
+    "onboarding",
+    55
+   ],
+   [
+    "progress steps",
+    47
+   ],
+   [
+    "vertical stepper",
+    23
+   ],
+   [
+    "horizontal numbered stepper",
+    22
+   ],
+   [
+    "standard wizard step",
+    14
+   ],
+   [
+    "setup checklist or progress tracker",
+    7
+   ]
+  ],
+  "looks": [
+   [
+    "minimal",
+    182
+   ],
+   [
+    "clean",
+    123
+   ],
+   [
+    "dark",
+    59
+   ],
+   [
+    "playful",
+    9
+   ],
+   [
+    "monochrome",
+    6
+   ],
+   [
+    "gradient",
+    3
+   ],
+   [
+    "illustrated",
+    3
+   ],
+   [
+    "glass",
+    2
+   ]
+  ],
+  "fits": [
+   [
+    "saas",
+    91
+   ],
+   [
+    "dev-tools",
+    11
+   ],
+   [
+    "commerce",
+    10
+   ],
+   [
+    "social",
+    2
+   ],
+   [
+    "productivity",
+    1
+   ],
+   [
+    "ai",
+    1
+   ]
+  ]
+ },
+ {
+  "key": "component/command",
+  "name": "Command palette",
+  "group": "Navigation",
+  "job": null,
+  "made_of": [
+   "search",
+   "menu"
+  ],
+  "sections": null,
+  "parts": 394,
+  "types": [
+   [
+    "command menu",
+    142
+   ],
+   [
+    "dialog",
+    68
+   ],
+   [
+    "standard command palette",
+    54
+   ],
+   [
+    "search focused",
+    43
+   ],
+   [
+    "groups",
+    24
+   ],
+   [
+    "actions menu",
+    20
+   ]
+  ],
+  "looks": [
+   [
+    "minimal",
+    236
+   ],
+   [
+    "dark",
+    138
+   ],
+   [
+    "clean",
+    77
+   ],
+   [
+    "glass",
+    15
+   ],
+   [
+    "retro-hud",
+    8
+   ],
+   [
+    "brutalist",
+    5
+   ],
+   [
+    "monochrome",
+    3
+   ],
+   [
+    "playful",
+    3
+   ]
+  ],
+  "fits": [
+   [
+    "saas",
+    41
+   ],
+   [
+    "dev-tools",
+    32
+   ],
+   [
+    "ai",
+    7
+   ],
+   [
+    "gaming",
+    1
+   ],
+   [
+    "commerce",
+    1
+   ],
+   [
+    "education",
+    1
+   ]
+  ]
+ },
+ {
+  "key": "component/toc",
+  "name": "Table of contents",
+  "group": "Navigation",
+  "job": null,
+  "made_of": [
+   "link"
+  ],
+  "sections": null,
+  "parts": 56,
+  "types": [
+   [
+    "scroll tracking",
+    20
+   ],
+   [
+    "standard table of content",
+    11
+   ],
+   [
+    "minimap variant",
+    4
+   ],
+   [
+    "sticky sidebar toc",
+    4
+   ],
+   [
+    "sticky aside",
+    3
+   ],
+   [
+    "outline",
+    2
+   ],
+   [
+    "auto-generated toc",
+    2
+   ],
+   [
+    "vertical toc",
+    1
+   ]
+  ],
+  "looks": [
+   [
+    "minimal",
+    32
+   ],
+   [
+    "clean",
+    25
+   ],
+   [
+    "dark",
+    10
+   ],
+   [
+    "gradient",
+    3
+   ],
+   [
+    "playful",
+    2
+   ],
+   [
+    "glass",
+    2
+   ],
+   [
+    "monochrome",
+    1
+   ],
+   [
+    "light",
+    1
+   ]
+  ],
+  "fits": [
+   [
+    "dev-tools",
+    3
+   ],
+   [
+    "productivity",
+    1
+   ]
+  ]
+ },
+ {
+  "key": "component/dock",
+  "name": "Dock",
+  "group": "Navigation",
+  "job": null,
+  "made_of": [
+   "button",
+   "icon",
+   "tooltip"
+  ],
+  "sections": null,
+  "parts": 175,
+  "types": [
+   [
+    "macos magnifying",
+    48
+   ],
+   [
+    "standard dock",
+    26
+   ],
+   [
+    "action toolbar",
+    19
+   ],
+   [
+    "expandable",
+    9
+   ],
+   [
+    "floating nav pill",
+    8
+   ],
+   [
+    "app launcher",
+    4
+   ]
+  ],
+  "looks": [
+   [
+    "dark",
+    96
+   ],
+   [
+    "minimal",
+    33
+   ],
+   [
+    "glass",
+    17
+   ],
+   [
+    "clean",
+    8
+   ],
+   [
+    "playful",
+    4
+   ],
+   [
+    "gradient",
+    4
+   ],
+   [
+    "skeuomorphic",
+    2
+   ],
+   [
+    "retro-hud",
+    1
+   ]
+  ],
+  "fits": [
+   [
+    "saas",
+    11
+   ],
+   [
+    "productivity",
+    4
+   ],
+   [
+    "ai",
+    3
+   ],
+   [
+    "dev-tools",
+    3
+   ],
+   [
+    "social",
+    2
+   ],
+   [
+    "gaming",
+    2
+   ],
+   [
+    "portfolio",
+    2
+   ],
+   [
+    "fintech",
+    1
+   ]
+  ]
+ },
+ {
+  "key": "component/card",
+  "name": "Card",
+  "group": "Display",
+  "job": null,
+  "made_of": [
+   "text",
+   "image",
+   "button",
+   "badge"
+  ],
+  "sections": null,
+  "parts": 3274,
+  "types": [
+   [
+    "standard card",
+    833
+   ],
+   [
+    "feature card",
+    318
+   ],
+   [
+    "product card",
+    239
+   ],
+   [
+    "stat card",
+    222
+   ],
+   [
+    "article card",
+    180
+   ],
+   [
+    "profile card",
+    137
+   ],
+   [
+    "spotlight",
+    132
+   ],
+   [
+    "stack or deck",
+    131
+   ],
+   [
+    "tilt",
+    72
+   ],
+   [
+    "flip",
+    59
+   ],
+   [
+    "media card",
+    50
+   ],
+   [
+    "social post",
+    47
+   ],
+   [
+    "payment card",
+    41
+   ],
+   [
+    "notification card",
+    41
+   ],
+   [
+    "standard profile",
+    26
+   ],
+   [
+    "profile form",
+    14
+   ],
+   [
+    "profile page",
+    11
+   ]
+  ],
+  "looks": [
+   [
+    "clean",
+    1063
+   ],
+   [
+    "minimal",
+    695
+   ],
+   [
+    "dark",
+    577
+   ],
+   [
+    "neon-glow",
+    175
+   ],
+   [
+    "3d",
+    166
+   ],
+   [
+    "gradient",
+    140
+   ],
+   [
+    "glass",
+    106
+   ],
+   [
+    "playful",
+    80
+   ]
+  ],
+  "fits": [
+   [
+    "saas",
+    381
+   ],
+   [
+    "commerce",
+    371
+   ],
+   [
+    "portfolio",
+    161
+   ],
+   [
+    "dev-tools",
+    153
+   ],
+   [
+    "media",
+    114
+   ],
+   [
+    "social",
+    105
+   ],
+   [
+    "fintech",
+    89
+   ],
+   [
+    "productivity",
+    74
+   ]
+  ]
+ },
+ {
+  "key": "component/list",
+  "name": "List",
+  "group": "Display",
+  "job": null,
+  "made_of": [
+   "avatar",
+   "text",
+   "badge"
+  ],
+  "sections": null,
+  "parts": 1111,
+  "types": [
+   [
+    "standard list",
+    654
+   ],
+   [
+    "sortable",
+    87
+   ],
+   [
+    "activity feed",
+    81
+   ],
+   [
+    "list with avatars",
+    52
+   ],
+   [
+    "file list",
+    23
+   ],
+   [
+    "data row",
+    22
+   ],
+   [
+    "virtualized",
+    17
+   ],
+   [
+    "full page",
+    11
+   ]
+  ],
+  "looks": [
+   [
+    "minimal",
+    572
+   ],
+   [
+    "clean",
+    177
+   ],
+   [
+    "dark",
+    62
+   ],
+   [
+    "playful",
+    15
+   ],
+   [
+    "editorial",
+    15
+   ],
+   [
+    "retro-hud",
+    10
+   ],
+   [
+    "brutalist",
+    10
+   ],
+   [
+    "monochrome",
+    9
+   ]
+  ],
+  "fits": [
+   [
+    "saas",
+    213
+   ],
+   [
+    "commerce",
+    88
+   ],
+   [
+    "productivity",
+    60
+   ],
+   [
+    "dev-tools",
+    57
+   ],
+   [
+    "ai",
+    25
+   ],
+   [
+    "gaming",
+    21
+   ],
+   [
+    "fintech",
+    20
+   ],
+   [
+    "portfolio",
+    19
+   ]
+  ]
+ },
+ {
+  "key": "component/table",
+  "name": "Table",
+  "group": "Display",
+  "job": null,
+  "made_of": [
+   "text",
+   "badge",
+   "choice",
+   "pagination"
+  ],
+  "sections": null,
+  "parts": 1312,
+  "types": [
+   [
+    "data table",
+    523
+   ],
+   [
+    "standard table",
+    363
+   ],
+   [
+    "table toolbar or filters",
+    107
+   ],
+   [
+    "expandable rows",
+    59
+   ],
+   [
+    "editable grid",
+    54
+   ],
+   [
+    "data grid",
+    36
+   ],
+   [
+    "virtualized",
+    19
+   ],
+   [
+    "editable",
+    4
+   ]
+  ],
+  "looks": [
+   [
+    "clean",
+    648
+   ],
+   [
+    "minimal",
+    420
+   ],
+   [
+    "dark",
+    206
+   ],
+   [
+    "monochrome",
+    17
+   ],
+   [
+    "retro-hud",
+    15
+   ],
+   [
+    "glass",
+    13
+   ],
+   [
+    "editorial",
+    7
+   ],
+   [
+    "brutalist",
+    6
+   ]
+  ],
+  "fits": [
+   [
+    "saas",
+    656
+   ],
+   [
+    "dev-tools",
+    75
+   ],
+   [
+    "fintech",
+    62
+   ],
+   [
+    "commerce",
+    60
+   ],
+   [
+    "productivity",
+    42
+   ],
+   [
+    "crypto",
+    14
+   ],
+   [
+    "gaming",
+    8
+   ],
+   [
+    "ai",
+    8
+   ]
+  ]
+ },
+ {
+  "key": "component/stat",
+  "name": "Stat",
+  "group": "Display",
+  "job": null,
+  "made_of": [
+   "text",
+   "badge",
+   "progress"
+  ],
+  "sections": null,
+  "parts": 614,
+  "types": [
+   [
+    "kpi card",
+    153
+   ],
+   [
+    "stats row",
+    84
+   ],
+   [
+    "kpi with sparkline",
+    60
+   ],
+   [
+    "progress stat",
+    51
+   ],
+   [
+    "counter",
+    41
+   ],
+   [
+    "stat with chart",
+    27
+   ],
+   [
+    "stat grid",
+    19
+   ],
+   [
+    "metric card",
+    19
+   ],
+   [
+    "kpi with indicator",
+    14
+   ],
+   [
+    "standard stat",
+    12
+   ],
+   [
+    "stat tile",
+    6
+   ],
+   [
+    "stat section",
+    5
+   ],
+   [
+    "multi-stat row",
+    2
+   ]
+  ],
+  "looks": [
+   [
+    "minimal",
+    239
+   ],
+   [
+    "clean",
+    170
+   ],
+   [
+    "dark",
+    130
+   ],
+   [
+    "gradient",
+    13
+   ],
+   [
+    "3d",
+    11
+   ],
+   [
+    "retro-hud",
+    7
+   ],
+   [
+    "glass",
+    6
+   ],
+   [
+    "illustrated",
+    6
+   ]
+  ],
+  "fits": [
+   [
+    "saas",
+    217
+   ],
+   [
+    "fintech",
+    36
+   ],
+   [
+    "dev-tools",
+    34
+   ],
+   [
+    "commerce",
+    16
+   ],
+   [
+    "productivity",
+    10
+   ],
+   [
+    "ai",
+    6
+   ],
+   [
+    "health",
+    6
+   ],
+   [
+    "crypto",
+    5
+   ]
+  ]
+ },
+ {
+  "key": "component/chart",
+  "name": "Chart",
+  "group": "Display",
+  "job": null,
+  "made_of": [
+   "text"
+  ],
+  "sections": null,
+  "parts": 2014,
+  "types": [
+   [
+    "bar",
+    308
+   ],
+   [
+    "line",
+    163
+   ],
+   [
+    "area",
+    145
+   ],
+   [
+    "chart kit",
+    124
+   ],
+   [
+    "pie or donut",
+    124
+   ],
+   [
+    "heatmap",
+    111
+   ],
+   [
+    "radar",
+    80
+   ],
+   [
+    "combo",
+    63
+   ],
+   [
+    "funnel",
+    61
+   ],
+   [
+    "scatter",
+    55
+   ],
+   [
+    "radial",
+    51
+   ],
+   [
+    "standard chart",
+    39
+   ],
+   [
+    "sparkline",
+    36
+   ],
+   [
+    "line and sparkline",
+    33
+   ],
+   [
+    "gauge",
+    32
+   ],
+   [
+    "chart story",
+    32
+   ],
+   [
+    "interaction advanced",
+    23
+   ],
+   [
+    "standard flow",
+    20
+   ],
+   [
+    "edge effect",
+    16
+   ],
+   [
+    "node",
+    14
+   ],
+   [
+    "editing interaction",
+    10
+   ],
+   [
+    "workflow editor",
+    9
+   ],
+   [
+    "layout algorithm",
+    7
+   ],
+   [
+    "flow diagram",
+    5
+   ],
+   [
+    "layout basic",
+    3
+   ]
+  ],
+  "looks": [
+   [
+    "clean",
+    739
+   ],
+   [
+    "minimal",
+    559
+   ],
+   [
+    "dark",
+    391
+   ],
+   [
+    "gradient",
+    56
+   ],
+   [
+    "retro-hud",
+    55
+   ],
+   [
+    "playful",
+    35
+   ],
+   [
+    "editorial",
+    31
+   ],
+   [
+    "3d",
+    23
+   ]
+  ],
+  "fits": [
+   [
+    "saas",
+    780
+   ],
+   [
+    "dev-tools",
+    228
+   ],
+   [
+    "fintech",
+    150
+   ],
+   [
+    "commerce",
+    57
+   ],
+   [
+    "productivity",
+    40
+   ],
+   [
+    "media",
+    35
+   ],
+   [
+    "crypto",
+    18
+   ],
+   [
+    "health",
+    11
+   ]
+  ]
+ },
+ {
+  "key": "component/map",
+  "name": "Map",
+  "group": "Display",
+  "job": null,
+  "made_of": [
+   "icon",
+   "tooltip"
+  ],
+  "sections": null,
+  "parts": 415,
+  "types": [
+   [
+    "pin map",
+    253
+   ],
+   [
+    "world map",
+    63
+   ],
+   [
+    "route",
+    25
+   ],
+   [
+    "choropleth",
+    15
+   ],
+   [
+    "standard map",
+    7
+   ]
+  ],
+  "looks": [
+   [
+    "clean",
+    278
+   ],
+   [
+    "dark",
+    131
+   ],
+   [
+    "minimal",
+    42
+   ],
+   [
+    "3d",
+    17
+   ],
+   [
+    "retro-hud",
+    4
+   ],
+   [
+    "glass",
+    3
+   ],
+   [
+    "gradient",
+    3
+   ],
+   [
+    "monochrome",
+    3
+   ]
+  ],
+  "fits": [
+   [
+    "saas",
+    84
+   ],
+   [
+    "travel",
+    22
+   ],
+   [
+    "commerce",
+    17
+   ],
+   [
+    "dev-tools",
+    16
+   ],
+   [
+    "gaming",
+    13
+   ],
+   [
+    "local-business",
+    10
+   ],
+   [
+    "productivity",
+    8
+   ],
+   [
+    "portfolio",
+    5
+   ]
+  ]
+ },
+ {
+  "key": "component/accordion",
+  "name": "Accordion",
+  "group": "Display",
+  "job": null,
+  "made_of": [
+   "button",
+   "text",
+   "icon"
+  ],
+  "sections": null,
+  "parts": 1129,
+  "types": [
+   [
+    "standard accordion",
+    536
+   ],
+   [
+    "collapsible",
+    153
+   ],
+   [
+    "icons",
+    67
+   ],
+   [
+    "card style",
+    56
+   ],
+   [
+    "faq accordion",
+    51
+   ],
+   [
+    "feature disclosure",
+    44
+   ],
+   [
+    "nested",
+    40
+   ],
+   [
+    "product/ecommerce accordion",
+    18
+   ]
+  ],
+  "looks": [
+   [
+    "minimal",
+    568
+   ],
+   [
+    "clean",
+    319
+   ],
+   [
+    "dark",
+    105
+   ],
+   [
+    "glass",
+    17
+   ],
+   [
+    "gradient",
+    13
+   ],
+   [
+    "playful",
+    13
+   ],
+   [
+    "brutalist",
+    12
+   ],
+   [
+    "monochrome",
+    11
+   ]
+  ],
+  "fits": [
+   [
+    "saas",
+    98
+   ],
+   [
+    "commerce",
+    54
+   ],
+   [
+    "dev-tools",
+    36
+   ],
+   [
+    "ai",
+    15
+   ],
+   [
+    "portfolio",
+    15
+   ],
+   [
+    "fintech",
+    11
+   ],
+   [
+    "productivity",
+    9
+   ],
+   [
+    "social",
+    8
+   ]
+  ]
+ },
+ {
+  "key": "component/tree",
+  "name": "Tree",
+  "group": "Display",
+  "job": null,
+  "made_of": [
+   "icon",
+   "text"
+  ],
+  "sections": null,
+  "parts": 209,
+  "types": [
+   [
+    "file tree",
+    62
+   ],
+   [
+    "standard tree",
+    52
+   ],
+   [
+    "tree view",
+    39
+   ],
+   [
+    "hierarchical tree",
+    10
+   ]
+  ],
+  "looks": [
+   [
+    "clean",
+    80
+   ],
+   [
+    "dark",
+    63
+   ],
+   [
+    "minimal",
+    32
+   ],
+   [
+    "retro-hud",
+    1
+   ]
+  ],
+  "fits": [
+   [
+    "dev-tools",
+    48
+   ],
+   [
+    "saas",
+    20
+   ],
+   [
+    "productivity",
+    9
+   ],
+   [
+    "fintech",
+    5
+   ],
+   [
+    "commerce",
+    3
+   ],
+   [
+    "ai",
+    2
+   ],
+   [
+    "media",
+    2
+   ],
+   [
+    "education",
+    1
+   ]
+  ]
+ },
+ {
+  "key": "component/timeline",
+  "name": "Timeline",
+  "group": "Display",
+  "job": null,
+  "made_of": [
+   "status-dot",
+   "text",
+   "avatar"
+  ],
+  "sections": null,
+  "parts": 652,
+  "types": [
+   [
+    "vertical",
+    254
+   ],
+   [
+    "activity",
+    84
+   ],
+   [
+    "horizontal",
+    50
+   ],
+   [
+    "standard timeline",
+    45
+   ],
+   [
+    "steps",
+    37
+   ],
+   [
+    "activity feed",
+    29
+   ],
+   [
+    "gantt",
+    24
+   ],
+   [
+    "changelog",
+    11
+   ]
+  ],
+  "looks": [
+   [
+    "clean",
+    334
+   ],
+   [
+    "dark",
+    117
+   ],
+   [
+    "minimal",
+    77
+   ],
+   [
+    "editorial",
+    29
+   ],
+   [
+    "gradient",
+    10
+   ],
+   [
+    "monochrome",
+    5
+   ],
+   [
+    "glass",
+    3
+   ],
+   [
+    "brutalist",
+    3
+   ]
+  ],
+  "fits": [
+   [
+    "saas",
+    132
+   ],
+   [
+    "dev-tools",
+    61
+   ],
+   [
+    "portfolio",
+    39
+   ],
+   [
+    "commerce",
+    36
+   ],
+   [
+    "productivity",
+    34
+   ],
+   [
+    "media",
+    20
+   ],
+   [
+    "fintech",
+    17
+   ],
+   [
+    "social",
+    16
+   ]
+  ]
+ },
+ {
+  "key": "component/calendar",
+  "name": "Calendar",
+  "group": "Display",
+  "job": null,
+  "made_of": [
+   "button",
+   "text"
+  ],
+  "sections": null,
+  "parts": 682,
+  "types": [
+   [
+    "month calendar",
+    289
+   ],
+   [
+    "event calendar",
+    88
+   ],
+   [
+    "date picker",
+    60
+   ],
+   [
+    "range picker",
+    56
+   ],
+   [
+    "week schedule",
+    23
+   ]
+  ],
+  "looks": [
+   [
+    "clean",
+    271
+   ],
+   [
+    "minimal",
+    164
+   ],
+   [
+    "dark",
+    105
+   ],
+   [
+    "glass",
+    9
+   ],
+   [
+    "retro-hud",
+    8
+   ],
+   [
+    "brutalist",
+    5
+   ],
+   [
+    "skeuomorphic",
+    3
+   ],
+   [
+    "gradient",
+    2
+   ]
+  ],
+  "fits": [
+   [
+    "saas",
+    69
+   ],
+   [
+    "productivity",
+    21
+   ],
+   [
+    "commerce",
+    17
+   ],
+   [
+    "dev-tools",
+    11
+   ],
+   [
+    "travel",
+    7
+   ],
+   [
+    "health",
+    4
+   ],
+   [
+    "portfolio",
+    3
+   ],
+   [
+    "fintech",
+    3
+   ]
+  ]
+ },
+ {
+  "key": "component/board",
+  "name": "Board",
+  "group": "Display",
+  "job": null,
+  "made_of": [
+   "card"
+  ],
+  "sections": null,
+  "parts": 146,
+  "types": [
+   [
+    "multi-column board",
+    42
+   ],
+   [
+    "drag and drop board",
+    19
+   ],
+   [
+    "visual display",
+    16
+   ],
+   [
+    "standard kanban",
+    11
+   ],
+   [
+    "board with columns",
+    7
+   ]
+  ],
+  "looks": [
+   [
+    "clean",
+    43
+   ],
+   [
+    "dark",
+    20
+   ],
+   [
+    "retro-hud",
+    10
+   ],
+   [
+    "minimal",
+    10
+   ],
+   [
+    "playful",
+    5
+   ],
+   [
+    "glass",
+    3
+   ],
+   [
+    "illustrated",
+    2
+   ],
+   [
+    "skeuomorphic",
+    2
+   ]
+  ],
+  "fits": [
+   [
+    "saas",
+    45
+   ],
+   [
+    "productivity",
+    27
+   ],
+   [
+    "dev-tools",
+    5
+   ],
+   [
+    "gaming",
+    3
+   ],
+   [
+    "media",
+    1
+   ],
+   [
+    "fintech",
+    1
+   ]
+  ]
+ },
+ {
+  "key": "component/code",
+  "name": "Code block and diff",
+  "group": "Display",
+  "job": null,
+  "made_of": [
+   "text",
+   "button"
+  ],
+  "sections": null,
+  "parts": 522,
+  "types": [
+   [
+    "highlighted code",
+    126
+   ],
+   [
+    "terminal",
+    112
+   ],
+   [
+    "standard code block",
+    32
+   ],
+   [
+    "code snippet",
+    23
+   ],
+   [
+    "tabs",
+    22
+   ],
+   [
+    "inline code",
+    22
+   ],
+   [
+    "copy",
+    22
+   ],
+   [
+    "standard diff",
+    17
+   ],
+   [
+    "split view",
+    13
+   ],
+   [
+    "qr code",
+    10
+   ],
+   [
+    "collapsible tree",
+    9
+   ],
+   [
+    "decisions",
+    8
+   ],
+   [
+    "diff",
+    7
+   ],
+   [
+    "file diff",
+    5
+   ],
+   [
+    "standard json viewer",
+    5
+   ],
+   [
+    "inline diff",
+    4
+   ],
+   [
+    "searchable tree",
+    4
+   ],
+   [
+    "code file diff",
+    3
+   ],
+   [
+    "keyboard navigation",
+    2
+   ],
+   [
+    "code review",
+    1
+   ]
+  ],
+  "looks": [
+   [
+    "dark",
+    270
+   ],
+   [
+    "minimal",
+    122
+   ],
+   [
+    "clean",
+    105
+   ],
+   [
+    "monochrome",
+    53
+   ],
+   [
+    "retro-hud",
+    16
+   ],
+   [
+    "glass",
+    10
+   ],
+   [
+    "gradient",
+    6
+   ],
+   [
+    "3d",
+    4
+   ]
+  ],
+  "fits": [
+   [
+    "dev-tools",
+    324
+   ],
+   [
+    "ai",
+    32
+   ],
+   [
+    "saas",
+    16
+   ],
+   [
+    "education",
+    8
+   ],
+   [
+    "fintech",
+    8
+   ],
+   [
+    "gaming",
+    5
+   ],
+   [
+    "productivity",
+    5
+   ],
+   [
+    "crypto",
+    4
+   ]
+  ]
+ },
+ {
+  "key": "component/empty",
+  "name": "Empty state",
+  "group": "Display",
+  "job": null,
+  "made_of": [
+   "icon",
+   "text",
+   "button"
+  ],
+  "sections": null,
+  "parts": 348,
+  "types": [
+   [
+    "icon and text",
+    101
+   ],
+   [
+    "action",
+    86
+   ],
+   [
+    "illustrated",
+    33
+   ],
+   [
+    "standard empty state",
+    31
+   ],
+   [
+    "search no results",
+    20
+   ],
+   [
+    "error state",
+    16
+   ]
+  ],
+  "looks": [
+   [
+    "minimal",
+    134
+   ],
+   [
+    "clean",
+    107
+   ],
+   [
+    "dark",
+    70
+   ],
+   [
+    "illustrated",
+    22
+   ],
+   [
+    "playful",
+    6
+   ],
+   [
+    "3d",
+    4
+   ],
+   [
+    "glass",
+    4
+   ],
+   [
+    "gradient",
+    3
+   ]
+  ],
+  "fits": [
+   [
+    "saas",
+    93
+   ],
+   [
+    "commerce",
+    20
+   ],
+   [
+    "dev-tools",
+    10
+   ],
+   [
+    "productivity",
+    7
+   ],
+   [
+    "fintech",
+    5
+   ],
+   [
+    "gaming",
+    4
+   ],
+   [
+    "ai",
+    4
+   ],
+   [
+    "media",
+    1
+   ]
+  ]
+ },
+ {
+  "key": "component/widget",
+  "name": "Widgets",
+  "group": "Display",
+  "job": "a component specialised for one use",
+  "made_of": [
+   "stat",
+   "chart",
+   "progress"
+  ],
+  "sections": null,
+  "parts": 107,
+  "types": [
+   [
+    "standard gamification",
+    25
+   ],
+   [
+    "leaderboard table",
+    14
+   ],
+   [
+    "leaderboard with ranking",
+    8
+   ],
+   [
+    "streak tracker",
+    8
+   ],
+   [
+    "playable game",
+    7
+   ],
+   [
+    "achievement collection",
+    7
+   ],
+   [
+    "background",
+    5
+   ],
+   [
+    "rank badges",
+    1
+   ]
+  ],
+  "looks": [
+   [
+    "clean",
+    40
+   ],
+   [
+    "dark",
+    26
+   ],
+   [
+    "3d",
+    10
+   ],
+   [
+    "retro-hud",
+    7
+   ],
+   [
+    "playful",
+    7
+   ],
+   [
+    "minimal",
+    5
+   ],
+   [
+    "neon-glow",
+    3
+   ],
+   [
+    "editorial",
+    2
+   ]
+  ],
+  "fits": [
+   [
+    "gaming",
+    21
+   ],
+   [
+    "saas",
+    19
+   ],
+   [
+    "social",
+    7
+   ],
+   [
+    "productivity",
+    7
+   ],
+   [
+    "dev-tools",
+    3
+   ],
+   [
+    "education",
+    2
+   ],
+   [
+    "ai",
+    1
+   ],
+   [
+    "health",
+    1
+   ]
+  ]
+ },
+ {
+  "key": "component/dialog",
+  "name": "Dialog",
+  "group": "Overlay",
+  "job": null,
+  "made_of": [
+   "text",
+   "button"
+  ],
+  "sections": null,
+  "parts": 1354,
+  "types": [
+   [
+    "modal",
+    447
+   ],
+   [
+    "confirm",
+    360
+   ],
+   [
+    "form in dialog",
+    286
+   ],
+   [
+    "standard dialog",
+    53
+   ],
+   [
+    "onboarding",
+    22
+   ],
+   [
+    "confirm or alert",
+    13
+   ]
+  ],
+  "looks": [
+   [
+    "clean",
+    545
+   ],
+   [
+    "minimal",
+    454
+   ],
+   [
+    "dark",
+    365
+   ],
+   [
+    "glass",
+    54
+   ],
+   [
+    "brutalist",
+    23
+   ],
+   [
+    "retro-hud",
+    15
+   ],
+   [
+    "gradient",
+    12
+   ],
+   [
+    "playful",
+    12
+   ]
+  ],
+  "fits": [
+   [
+    "saas",
+    215
+   ],
+   [
+    "commerce",
+    81
+   ],
+   [
+    "dev-tools",
+    38
+   ],
+   [
+    "fintech",
+    23
+   ],
+   [
+    "ai",
+    18
+   ],
+   [
+    "productivity",
+    18
+   ],
+   [
+    "crypto",
+    14
+   ],
+   [
+    "media",
+    13
+   ]
+  ]
+ },
+ {
+  "key": "component/sheet",
+  "name": "Sheet and drawer",
+  "group": "Overlay",
+  "job": null,
+  "made_of": [
+   "text",
+   "button"
+  ],
+  "sections": null,
+  "parts": 744,
+  "types": [
+   [
+    "side sheet",
+    264
+   ],
+   [
+    "drawer",
+    123
+   ],
+   [
+    "bottom drawer",
+    112
+   ],
+   [
+    "form",
+    65
+   ],
+   [
+    "standard sheet",
+    58
+   ],
+   [
+    "detail view",
+    25
+   ]
+  ],
+  "looks": [
+   [
+    "minimal",
+    403
+   ],
+   [
+    "dark",
+    125
+   ],
+   [
+    "clean",
+    123
+   ],
+   [
+    "glass",
+    36
+   ],
+   [
+    "retro-hud",
+    9
+   ],
+   [
+    "brutalist",
+    9
+   ],
+   [
+    "playful",
+    7
+   ],
+   [
+    "skeuomorphic",
+    7
+   ]
+  ],
+  "fits": [
+   [
+    "saas",
+    53
+   ],
+   [
+    "commerce",
+    37
+   ],
+   [
+    "dev-tools",
+    25
+   ],
+   [
+    "productivity",
+    17
+   ],
+   [
+    "gaming",
+    8
+   ],
+   [
+    "crypto",
+    6
+   ],
+   [
+    "ai",
+    4
+   ],
+   [
+    "social",
+    4
+   ]
+  ]
+ },
+ {
+  "key": "component/popover",
+  "name": "Popover and hover card",
+  "group": "Overlay",
+  "job": null,
+  "made_of": [
+   "text",
+   "avatar",
+   "button"
+  ],
+  "sections": null,
+  "parts": 695,
+  "types": [
+   [
+    "standard popover",
+    255
+   ],
+   [
+    "standard hover card",
+    71
+   ],
+   [
+    "preview",
+    48
+   ],
+   [
+    "specialized content",
+    40
+   ],
+   [
+    "form popover",
+    27
+   ],
+   [
+    "link preview",
+    24
+   ],
+   [
+    "tooltip",
+    23
+   ],
+   [
+    "info card",
+    23
+   ],
+   [
+    "profile preview",
+    19
+   ],
+   [
+    "popover",
+    18
+   ],
+   [
+    "morphing popover",
+    17
+   ],
+   [
+    "entrance",
+    15
+   ],
+   [
+    "menu popover",
+    15
+   ],
+   [
+    "floating panel",
+    11
+   ],
+   [
+    "popover kit",
+    6
+   ],
+   [
+    "composable overlay",
+    5
+   ]
+  ],
+  "looks": [
+   [
+    "minimal",
+    338
+   ],
+   [
+    "clean",
+    163
+   ],
+   [
+    "dark",
+    87
+   ],
+   [
+    "glass",
+    27
+   ],
+   [
+    "playful",
+    13
+   ],
+   [
+    "retro-hud",
+    12
+   ],
+   [
+    "brutalist",
+    12
+   ],
+   [
+    "gradient",
+    9
+   ]
+  ],
+  "fits": [
+   [
+    "saas",
+    63
+   ],
+   [
+    "social",
+    26
+   ],
+   [
+    "dev-tools",
+    25
+   ],
+   [
+    "ai",
+    12
+   ],
+   [
+    "commerce",
+    11
+   ],
+   [
+    "gaming",
+    8
+   ],
+   [
+    "productivity",
+    7
+   ],
+   [
+    "media",
+    6
+   ]
+  ]
+ },
+ {
+  "key": "component/toast",
+  "name": "Toast",
+  "group": "Overlay",
+  "job": null,
+  "made_of": [
+   "icon",
+   "text",
+   "button"
+  ],
+  "sections": null,
+  "parts": 534,
+  "types": [
+   [
+    "standard toast",
+    181
+   ],
+   [
+    "action",
+    98
+   ],
+   [
+    "rich",
+    55
+   ],
+   [
+    "sonner wrapper",
+    49
+   ],
+   [
+    "stacked",
+    42
+   ],
+   [
+    "promise or loading",
+    13
+   ],
+   [
+    "sonner",
+    13
+   ]
+  ],
+  "looks": [
+   [
+    "minimal",
+    274
+   ],
+   [
+    "dark",
+    137
+   ],
+   [
+    "clean",
+    27
+   ],
+   [
+    "glass",
+    17
+   ],
+   [
+    "gradient",
+    8
+   ],
+   [
+    "retro-hud",
+    7
+   ],
+   [
+    "playful",
+    5
+   ],
+   [
+    "brutalist",
+    4
+   ]
+  ],
+  "fits": [
+   [
+    "saas",
+    21
+   ],
+   [
+    "dev-tools",
+    16
+   ],
+   [
+    "commerce",
+    11
+   ],
+   [
+    "social",
+    8
+   ],
+   [
+    "gaming",
+    7
+   ],
+   [
+    "fintech",
+    5
+   ],
+   [
+    "crypto",
+    4
+   ],
+   [
+    "media",
+    1
+   ]
+  ]
+ },
+ {
+  "key": "component/alert",
+  "name": "Alert banner",
+  "group": "Overlay",
+  "job": null,
+  "made_of": [
+   "icon",
+   "text",
+   "button"
+  ],
+  "sections": null,
+  "parts": 967,
+  "types": [
+   [
+    "inline alert",
+    297
+   ],
+   [
+    "top banner",
+    180
+   ],
+   [
+    "standard alert banner",
+    132
+   ],
+   [
+    "callout",
+    82
+   ],
+   [
+    "cookie consent",
+    75
+   ],
+   [
+    "announcement",
+    56
+   ],
+   [
+    "floating card",
+    16
+   ],
+   [
+    "composed alert",
+    5
+   ],
+   [
+    "dismissible alert",
+    4
+   ]
+  ],
+  "looks": [
+   [
+    "minimal",
+    530
+   ],
+   [
+    "clean",
+    217
+   ],
+   [
+    "dark",
+    105
+   ],
+   [
+    "gradient",
+    29
+   ],
+   [
+    "retro-hud",
+    19
+   ],
+   [
+    "playful",
+    17
+   ],
+   [
+    "glass",
+    14
+   ],
+   [
+    "brutalist",
+    13
+   ]
+  ],
+  "fits": [
+   [
+    "saas",
+    113
+   ],
+   [
+    "commerce",
+    48
+   ],
+   [
+    "dev-tools",
+    26
+   ],
+   [
+    "gaming",
+    19
+   ],
+   [
+    "social",
+    15
+   ],
+   [
+    "ai",
+    7
+   ],
+   [
+    "fintech",
+    6
+   ],
+   [
+    "media",
+    5
+   ]
+  ]
+ },
+ {
+  "key": "component/inbox",
+  "name": "Notifications",
+  "group": "Overlay",
+  "job": null,
+  "made_of": [
+   "list",
+   "badge"
+  ],
+  "sections": null,
+  "parts": 233,
+  "types": [
+   [
+    "notification card",
+    83
+   ],
+   [
+    "notification center",
+    53
+   ],
+   [
+    "standard notification",
+    28
+   ],
+   [
+    "email template",
+    26
+   ],
+   [
+    "notification inbox",
+    8
+   ]
+  ],
+  "looks": [
+   [
+    "minimal",
+    128
+   ],
+   [
+    "clean",
+    49
+   ],
+   [
+    "dark",
+    46
+   ],
+   [
+    "glass",
+    5
+   ],
+   [
+    "playful",
+    3
+   ],
+   [
+    "retro-hud",
+    1
+   ],
+   [
+    "neon-glow",
+    1
+   ],
+   [
+    "brutalist",
+    1
+   ]
+  ],
+  "fits": [
+   [
+    "saas",
+    36
+   ],
+   [
+    "dev-tools",
+    10
+   ],
+   [
+    "productivity",
+    7
+   ],
+   [
+    "social",
+    6
+   ],
+   [
+    "ai",
+    3
+   ],
+   [
+    "commerce",
+    1
+   ]
+  ]
+ },
+ {
+  "key": "component/lightbox",
+  "name": "Lightbox",
+  "group": "Overlay",
+  "job": null,
+  "made_of": [
+   "image",
+   "button"
+  ],
+  "sections": null,
+  "parts": 36,
+  "types": [
+   [
+    "standard lightbox",
+    15
+   ],
+   [
+    "fullscreen viewer",
+    8
+   ],
+   [
+    "full-screen viewer",
+    5
+   ],
+   [
+    "thumbnail-connected viewer",
+    4
+   ]
+  ],
+  "looks": [
+   [
+    "dark",
+    16
+   ],
+   [
+    "minimal",
+    14
+   ],
+   [
+    "clean",
+    13
+   ],
+   [
+    "glass",
+    2
+   ],
+   [
+    "3d",
+    1
+   ],
+   [
+    "monochrome",
+    1
+   ],
+   [
+    "neon-glow",
+    1
+   ]
+  ],
+  "fits": [
+   [
+    "media",
+    3
+   ],
+   [
+    "commerce",
+    3
+   ],
+   [
+    "portfolio",
+    2
+   ],
+   [
+    "ai",
+    1
+   ]
+  ]
+ },
+ {
+  "key": "component/gallery",
+  "name": "Gallery",
+  "group": "Media",
+  "job": null,
+  "made_of": [
+   "image"
+  ],
+  "sections": null,
+  "parts": 867,
+  "types": [
+   [
+    "grid",
+    137
+   ],
+   [
+    "standard gallery",
+    87
+   ],
+   [
+    "reveal",
+    76
+   ],
+   [
+    "image effects",
+    67
+   ],
+   [
+    "zoom and lens",
+    39
+   ],
+   [
+    "carousel",
+    39
+   ],
+   [
+    "circular",
+    35
+   ],
+   [
+    "masonry",
+    35
+   ],
+   [
+    "lightbox",
+    25
+   ],
+   [
+    "viewer",
+    22
+   ],
+   [
+    "distortion effect",
+    21
+   ],
+   [
+    "image crop",
+    19
+   ],
+   [
+    "viewers and croppers",
+    14
+   ],
+   [
+    "image display",
+    4
+   ]
+  ],
+  "looks": [
+   [
+    "minimal",
+    248
+   ],
+   [
+    "clean",
+    87
+   ],
+   [
+    "3d",
+    74
+   ],
+   [
+    "dark",
+    61
+   ],
+   [
+    "playful",
+    48
+   ],
+   [
+    "retro-hud",
+    43
+   ],
+   [
+    "glass",
+    37
+   ],
+   [
+    "editorial",
+    16
+   ]
+  ],
+  "fits": [
+   [
+    "media",
+    54
+   ],
+   [
+    "portfolio",
+    48
+   ],
+   [
+    "commerce",
+    33
+   ],
+   [
+    "dev-tools",
+    27
+   ],
+   [
+    "gaming",
+    22
+   ],
+   [
+    "ai",
+    21
+   ],
+   [
+    "saas",
+    15
+   ],
+   [
+    "productivity",
+    13
+   ]
+  ]
+ },
+ {
+  "key": "component/carousel",
+  "name": "Carousel",
+  "group": "Media",
+  "job": null,
+  "made_of": [
+   "image",
+   "card",
+   "button"
+  ],
+  "sections": null,
+  "parts": 713,
+  "types": [
+   [
+    "slider",
+    94
+   ],
+   [
+    "coverflow",
+    69
+   ],
+   [
+    "standard carousel",
+    66
+   ],
+   [
+    "cards carousel",
+    57
+   ],
+   [
+    "autoplay carousel",
+    30
+   ],
+   [
+    "swipeable",
+    27
+   ],
+   [
+    "perspective",
+    21
+   ],
+   [
+    "embla basic",
+    21
+   ],
+   [
+    "testimonial carousel",
+    16
+   ],
+   [
+    "stack or deck",
+    16
+   ],
+   [
+    "slide indicators",
+    15
+   ],
+   [
+    "image carousel",
+    14
+   ],
+   [
+    "thumbnails",
+    13
+   ],
+   [
+    "feature carousel",
+    13
+   ],
+   [
+    "draggable",
+    7
+   ],
+   [
+    "product carousel",
+    7
+   ],
+   [
+    "standard none",
+    5
+   ],
+   [
+    "auto-rotating",
+    3
+   ],
+   [
+    "circular",
+    2
+   ],
+   [
+    "motion carousel",
+    1
+   ]
+  ],
+  "looks": [
+   [
+    "minimal",
+    254
+   ],
+   [
+    "3d",
+    104
+   ],
+   [
+    "dark",
+    76
+   ],
+   [
+    "clean",
+    71
+   ],
+   [
+    "glass",
+    14
+   ],
+   [
+    "gradient",
+    11
+   ],
+   [
+    "playful",
+    7
+   ],
+   [
+    "retro-hud",
+    4
+   ]
+  ],
+  "fits": [
+   [
+    "portfolio",
+    28
+   ],
+   [
+    "commerce",
+    24
+   ],
+   [
+    "media",
+    21
+   ],
+   [
+    "saas",
+    17
+   ],
+   [
+    "travel",
+    7
+   ],
+   [
+    "social",
+    7
+   ],
+   [
+    "dev-tools",
+    3
+   ],
+   [
+    "real-estate",
+    3
+   ]
+  ]
+ },
+ {
+  "key": "component/player",
+  "name": "Player",
+  "group": "Media",
+  "job": null,
+  "made_of": [
+   "image",
+   "button",
+   "slider"
+  ],
+  "sections": null,
+  "parts": 427,
+  "types": [
+   [
+    "video player",
+    115
+   ],
+   [
+    "music player",
+    56
+   ],
+   [
+    "audio player",
+    43
+   ],
+   [
+    "standard player",
+    40
+   ],
+   [
+    "waveform visualizer",
+    32
+   ],
+   [
+    "podcast player or section",
+    21
+   ],
+   [
+    "video gallery section",
+    15
+   ],
+   [
+    "full featured video player",
+    12
+   ],
+   [
+    "audio mixer or controls",
+    7
+   ]
+  ],
+  "looks": [
+   [
+    "minimal",
+    138
+   ],
+   [
+    "dark",
+    106
+   ],
+   [
+    "clean",
+    97
+   ],
+   [
+    "playful",
+    17
+   ],
+   [
+    "retro-hud",
+    10
+   ],
+   [
+    "glass",
+    10
+   ],
+   [
+    "gradient",
+    8
+   ],
+   [
+    "3d",
+    6
+   ]
+  ],
+  "fits": [
+   [
+    "media",
+    102
+   ],
+   [
+    "ai",
+    27
+   ],
+   [
+    "portfolio",
+    24
+   ],
+   [
+    "saas",
+    17
+   ],
+   [
+    "social",
+    16
+   ],
+   [
+    "dev-tools",
+    11
+   ],
+   [
+    "commerce",
+    6
+   ],
+   [
+    "gaming",
+    5
+   ]
+  ]
+ },
+ {
+  "key": "component/compare",
+  "name": "Before and after",
+  "group": "Media",
+  "job": null,
+  "made_of": [
+   "image",
+   "slider"
+  ],
+  "sections": null,
+  "parts": 54,
+  "types": [
+   [
+    "draggable slider",
+    15
+   ],
+   [
+    "before and after",
+    12
+   ],
+   [
+    "standard image compare",
+    9
+   ],
+   [
+    "draggable clip-path slider",
+    5
+   ]
+  ],
+  "looks": [
+   [
+    "minimal",
+    31
+   ],
+   [
+    "clean",
+    7
+   ],
+   [
+    "dark",
+    7
+   ],
+   [
+    "3d",
+    1
+   ]
+  ],
+  "fits": [
+   [
+    "saas",
+    6
+   ],
+   [
+    "portfolio",
+    2
+   ],
+   [
+    "dev-tools",
+    1
+   ],
+   [
+    "media",
+    1
+   ],
+   [
+    "health",
+    1
+   ]
+  ]
+ },
+ {
+  "key": "component/mockup",
+  "name": "Device mockup",
+  "group": "Media",
+  "job": null,
+  "made_of": [
+   "image"
+  ],
+  "sections": null,
+  "parts": 179,
+  "types": [
+   [
+    "device frame",
+    51
+   ],
+   [
+    "device mockup",
+    33
+   ],
+   [
+    "standard mockup",
+    13
+   ],
+   [
+    "interactive frame",
+    12
+   ],
+   [
+    "slide gesture",
+    1
+   ],
+   [
+    "specialized hardware frame",
+    1
+   ]
+  ],
+  "looks": [
+   [
+    "minimal",
+    48
+   ],
+   [
+    "dark",
+    42
+   ],
+   [
+    "clean",
+    25
+   ],
+   [
+    "3d",
+    9
+   ],
+   [
+    "playful",
+    7
+   ],
+   [
+    "glass",
+    7
+   ],
+   [
+    "editorial",
+    5
+   ],
+   [
+    "gradient",
+    4
+   ]
+  ],
+  "fits": [
+   [
+    "saas",
+    16
+   ],
+   [
+    "social",
+    4
+   ],
+   [
+    "dev-tools",
+    2
+   ],
+   [
+    "commerce",
+    2
+   ]
+  ]
+ },
+ {
+  "key": "component/message",
+  "name": "Message",
+  "group": "Conversation",
+  "job": null,
+  "made_of": [
+   "avatar",
+   "text"
+  ],
+  "sections": null,
+  "parts": 597,
+  "types": [
+   [
+    "message bubble",
+    209
+   ],
+   [
+    "chat thread",
+    114
+   ],
+   [
+    "streaming text",
+    41
+   ],
+   [
+    "tool call or steps",
+    31
+   ],
+   [
+    "reasoning",
+    29
+   ],
+   [
+    "suggestions",
+    26
+   ],
+   [
+    "voice or orb",
+    21
+   ],
+   [
+    "standard ai agent",
+    18
+   ],
+   [
+    "artifact",
+    17
+   ],
+   [
+    "full chat app",
+    17
+   ],
+   [
+    "composer",
+    9
+   ],
+   [
+    "model picker",
+    8
+   ],
+   [
+    "sources",
+    3
+   ],
+   [
+    "orbs and presence",
+    1
+   ]
+  ],
+  "looks": [
+   [
+    "minimal",
+    221
+   ],
+   [
+    "dark",
+    180
+   ],
+   [
+    "clean",
+    127
+   ],
+   [
+    "playful",
+    17
+   ],
+   [
+    "skeuomorphic",
+    13
+   ],
+   [
+    "3d",
+    12
+   ],
+   [
+    "retro-hud",
+    9
+   ],
+   [
+    "glass",
+    8
+   ]
+  ],
+  "fits": [
+   [
+    "ai",
+    461
+   ],
+   [
+    "social",
+    66
+   ],
+   [
+    "dev-tools",
+    33
+   ],
+   [
+    "saas",
+    25
+   ],
+   [
+    "media",
+    2
+   ],
+   [
+    "gaming",
+    2
+   ],
+   [
+    "productivity",
+    1
+   ]
+  ]
+ },
+ {
+  "key": "component/composer",
+  "name": "Composer",
+  "group": "Conversation",
+  "job": null,
+  "made_of": [
+   "text-input",
+   "button",
+   "upload"
+  ],
+  "sections": null,
+  "parts": 418,
+  "types": [
+   [
+    "prompt inputs",
+    92
+   ],
+   [
+    "standard composer",
+    59
+   ],
+   [
+    "composer",
+    37
+   ],
+   [
+    "suggestions",
+    33
+   ],
+   [
+    "chat composer",
+    32
+   ],
+   [
+    "model picker",
+    23
+   ],
+   [
+    "attachments",
+    14
+   ],
+   [
+    "prompt input box",
+    12
+   ],
+   [
+    "full chat app",
+    7
+   ],
+   [
+    "tool call or steps",
+    6
+   ],
+   [
+    "voice or orb",
+    3
+   ],
+   [
+    "standard ai agent",
+    2
+   ],
+   [
+    "artifact",
+    1
+   ]
+  ],
+  "looks": [
+   [
+    "dark",
+    124
+   ],
+   [
+    "minimal",
+    108
+   ],
+   [
+    "clean",
+    102
+   ],
+   [
+    "gradient",
+    13
+   ],
+   [
+    "glass",
+    12
+   ],
+   [
+    "playful",
+    6
+   ],
+   [
+    "light",
+    3
+   ],
+   [
+    "retro-hud",
+    2
+   ]
+  ],
+  "fits": [
+   [
+    "ai",
+    294
+   ],
+   [
+    "dev-tools",
+    17
+   ],
+   [
+    "saas",
+    9
+   ],
+   [
+    "social",
+    8
+   ],
+   [
+    "productivity",
+    2
+   ]
+  ]
+ },
+ {
+  "key": "component/agent-parts",
+  "name": "Agent parts",
+  "group": "Conversation",
+  "job": "tool calls, sources, reasoning, model picker, voice orb, artifact",
+  "made_of": [
+   "card",
+   "loader",
+   "badge"
+  ],
+  "sections": null,
+  "parts": 864,
+  "types": [
+   [
+    "tool call or steps",
+    124
+   ],
+   [
+    "standard ai agent",
+    100
+   ],
+   [
+    "voice or orb",
+    98
+   ],
+   [
+    "full chat app",
+    72
+   ],
+   [
+    "artifact",
+    65
+   ],
+   [
+    "sources",
+    44
+   ],
+   [
+    "reasoning",
+    36
+   ],
+   [
+    "orbs and presence",
+    22
+   ]
+  ],
+  "looks": [
+   [
+    "dark",
+    189
+   ],
+   [
+    "minimal",
+    186
+   ],
+   [
+    "clean",
+    99
+   ],
+   [
+    "3d",
+    47
+   ],
+   [
+    "monochrome",
+    15
+   ],
+   [
+    "gradient",
+    15
+   ],
+   [
+    "illustrated",
+    15
+   ],
+   [
+    "playful",
+    13
+   ]
+  ],
+  "fits": [
+   [
+    "ai",
+    511
+   ],
+   [
+    "dev-tools",
+    45
+   ],
+   [
+    "saas",
+    23
+   ],
+   [
+    "gaming",
+    2
+   ],
+   [
+    "productivity",
+    2
+   ],
+   [
+    "media",
+    2
+   ],
+   [
+    "food",
+    1
+   ],
+   [
+    "health",
+    1
+   ]
+  ]
+ }
+]

@@ -1,0 +1,90 @@
+#!/usr/bin/env python3
+"""uihub-mcp: UI Hub as an MCP server (stdio, JSON-RPC, no dependencies). Same index as `uihub` and the site
+(bin/hubindex.py), so an agent sees what Shaan sees, his bookmarks included.
+
+Tools: find_items, show_item, take_item, list_bookmarks, bookmark_item, hub_stats, brief.
+Add to an agent:  {"mcpServers": {"uihub": {"command": "python3", "args": ["<repo>/bin/uihub-mcp"]}}}
+Claude Code:      claude mcp add uihub -- python3 <repo>/bin/uihub-mcp"""
+import json, os, subprocess, sys, datetime
+sys.dont_write_bytecode = True
+HUB = os.path.dirname(os.path.dirname(os.path.realpath(__file__)))
+sys.path.insert(0, f"{HUB}/bin")
+import hubindex as H
+
+def row(i):
+    return {k: v for k, v in {"id": i["id"], "title": i.get("title"), "kind": i["kind"], "source": i["source"], "category": i.get("category"),
+            "status": i["status"], "author": i.get("author"), "desc": (i.get("desc") or "")[:200], "install": i.get("install"),
+            "his_note": (i.get("curated") or {}).get("note"), "signal": (i.get("curated") or {}).get("signal"),
+            "pick_why": (i.get("pick") or {}).get("why"), "bookmarked": i.get("bookmarked")}.items() if v not in (None, "", False)}
+
+def find_items(query, kind=None, source=None, limit=12):
+    return [row(i) for i in H.search(H.build(), query.split(), kind=kind, source=source, limit=min(int(limit), 50))]
+
+def show_item(id):
+    i = H.get(H.build(), id)
+    if not i: return {"error": f"not found: {id}; try find_items"}
+    return {k: v for k, v in i.items() if k not in ("has",)} | {"files": [f["file"] for f in H.files(i)]}
+
+def take_item(id):
+    """Everything needed to use an item in a project: install line, licence, code we hold, and the repo rule."""
+    i = H.get(H.build(), id)
+    if not i: return {"error": f"not found: {id}; try find_items"}
+    lic = i.get("licence") or "unknown"
+    copy_ok = i["source"] in ("siso", "siso-shell") or "MIT" in lic or "Apache" in lic or "ISC" in lic
+    return {"id": i["id"], "title": i.get("title"), "install": i.get("install"), "licence": lic,
+            "how": ("install with the line" if i.get("install") else "see url") + ("" if copy_ok else "; do not paste its code into a product, rebuild against the project's tokens"),
+            "mark": f"// uihub: {i['id']}", "rule": "Mark the component file with the mark line; if you change it into our own, register it with `uihub add siso:<id> --from <path> --reason \"…\"` before it ships.",
+            "his_note": (i.get("curated") or {}).get("note"), "url": i.get("url"), "live": i.get("live") or i.get("bundle_url"),
+            "files": H.files(i)}
+
+def list_bookmarks(signal=None):
+    out = [row(i) for i in H.build()["items"] if i.get("bookmarked")]
+    return [r for r in out if not signal or r.get("signal") == signal or (r.get("bookmarked") and signal == "new" and not r.get("signal"))]
+
+def bookmark_item(id, note=None, signal=None, off=False):
+    cmd = [sys.executable, f"{HUB}/bin/uihub", "bookmark", id] + (["--note", note] if note else []) + (["--signal", signal] if signal else []) + (["--off"] if off else [])
+    p = subprocess.run(cmd, capture_output=True, text=True, env=os.environ | {"UIHUB_BY": os.environ.get("UIHUB_BY", "mcp")})
+    return {"ok": p.returncode == 0, "out": (p.stdout or p.stderr).strip()}
+
+def hub_stats(): return H.stats()
+
+def brief(target):
+    p = subprocess.run([sys.executable, f"{HUB}/bin/uihub", "brief", target], capture_output=True, text=True)
+    return {"brief": p.stdout or p.stderr}
+
+S = lambda **p: {"type": "object", "properties": p, "required": [k for k, v in p.items() if v.pop("req", False)]}
+str_ = lambda d, req=False: {"type": "string", "description": d, "req": req}
+TOOLS = {
+    "find_items": (find_items, "Search everything UI Hub holds (his 138 picks, best-in-category picks, ours, 11 libraries, the 21st.dev corpus, siso-shell page families, tools, RESEARCH's sites/assets/videos). Best first: his picks, then picks, ours, rated, reviewed, indexed.",
+                   S(query=str_("words, e.g. 'notification bell' or 'pricing section'", True), kind=str_("component|section|page|shell|layout|motion|tool|resource|…"),
+                     source=str_("21st|arc|easyui|spaceui|siso|siso-shell|research|…"), limit={"type": "integer", "description": "max 50"})),
+    "show_item": (show_item, "One item in full: his note and signal, why it is picked, install, licence, docs, live preview URL, code files held.", S(id=str_("item id, e.g. 21st:jatin-yadav05__sign-in-card-2 or arc:button", True))),
+    "take_item": (take_item, "Use an item in a project: install line, licence verdict, the `// uihub: <id>` mark, the registration rule and the code we hold.", S(id=str_("item id", True))),
+    "list_bookmarks": (list_bookmarks, "Shaan's bookmarks (his 138 picks plus any made since), optionally one signal.", S(signal=str_("love|star|good|maybe|meh|new"))),
+    "bookmark_item": (bookmark_item, "Bookmark (or with off=true, un-bookmark) an item for every agent; written to catalogue/bookmarks.json.",
+                      S(id=str_("item id", True), note=str_("why"), signal=str_("love|star|good|maybe|meh"), off={"type": "boolean"})),
+    "hub_stats": (hub_stats, "The counts on the site's home board: totals by kind, source, status, group; gone through; left; frontier.", S()),
+    "brief": (brief, "The UI brief for a surface (dashboard, native-app, landing-site), project or vertical: rules, what fits, picks, decided swaps.", S(target=str_("surface, project or vertical", True))),
+}
+
+def reply(id, result=None, error=None):
+    sys.stdout.write(json.dumps({"jsonrpc": "2.0", "id": id, **({"error": error} if error else {"result": result})}) + "\n"); sys.stdout.flush()
+
+for line in sys.stdin:
+    if not line.strip(): continue
+    try: m = json.loads(line)
+    except Exception: continue
+    mid, meth, prm = m.get("id"), m.get("method"), m.get("params") or {}
+    if mid is None: continue  # notifications (initialized, cancelled) need no answer
+    if meth == "initialize":
+        reply(mid, {"protocolVersion": prm.get("protocolVersion", "2025-06-18"), "capabilities": {"tools": {}},
+                    "serverInfo": {"name": "uihub", "version": "0.1.0"}})
+    elif meth == "ping": reply(mid, {})
+    elif meth == "tools/list":
+        reply(mid, {"tools": [{"name": n, "description": d, "inputSchema": s} for n, (_, d, s) in TOOLS.items()]})
+    elif meth == "tools/call":
+        name, args = prm.get("name"), prm.get("arguments") or {}
+        if name not in TOOLS: reply(mid, error={"code": -32602, "message": f"unknown tool {name}"}); continue
+        try: out = TOOLS[name][0](**args); reply(mid, {"content": [{"type": "text", "text": json.dumps(out, ensure_ascii=False, indent=1)}]})
+        except Exception as e: reply(mid, {"content": [{"type": "text", "text": f"error: {e}"}], "isError": True})
+    else: reply(mid, error={"code": -32601, "message": f"no method {meth}"})

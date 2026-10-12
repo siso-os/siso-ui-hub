@@ -1,0 +1,11 @@
+# The PUBLIC UI Hub: static assets only, no password, no bookmarks API. Built by `npm run build:public` from
+# `uihub export --public` (no notes, bookmarks, HALO or client text; no hosted 21st code), which runs the privacy gate.
+# Deploy: app/deploy.sh --public. The private build stays on worker/ (siso-ui-hub, Basic Auth).
+name = "siso-ui-hub-public"
+compatibility_date = "2026-09-01"
+account_id = "a955406e85b517fd5891b498f6e1643f"
+workers_dev = true
+
+[assets]
+directory = "../dist-public"
+not_found_handling = "single-page-application"

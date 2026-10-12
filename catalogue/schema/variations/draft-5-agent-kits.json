@@ -1,0 +1,44 @@
+{
+ "component/agent-parts": {"variations": [
+  {"id": "approval", "name": "Approval", "kind": "structure", "why": "the agent asks before it does something with side effects; you approve or reject", "match": ["approval", "confirmation"]},
+  {"id": "plan-tasks", "name": "Plan and tasks", "kind": "structure", "why": "the agent's plan, to-do list or delegated tasks, with progress", "match": ["plan", "task", "todo"]},
+  {"id": "working-status", "name": "Working status", "kind": "state", "why": "shows the agent is thinking or working right now: shimmer, thinking bar, dots", "match": ["thinking", "shimmer", "typing indicator"]},
+  {"id": "usage-cost", "name": "Usage and cost", "kind": "structure", "why": "tokens, context window and money the run used", "match": ["context", "usage", "cost"]},
+  {"id": "citations", "name": "Inline citations", "kind": "structure", "why": "numbered references inside the answer, with a preview on hover", "match": ["citation"]},
+  {"id": "live-preview", "name": "Live preview", "kind": "structure", "why": "a running web page, JSX or sandbox the agent built, shown in place", "match": ["web preview", "jsx preview", "sandbox"]},
+  {"id": "checkpoints", "name": "Checkpoints", "kind": "structure", "why": "points in the conversation you can roll back to", "match": ["checkpoint"]},
+  {"id": "workflow-graph", "name": "Workflow graph", "kind": "structure", "why": "the agent's work as nodes and edges on a canvas", "match": ["workflow", "flow graph", "canvas"]},
+  {"id": "notices", "name": "Notices and errors", "kind": "state", "why": "a system note, refusal, quota or failure shown in the thread with a way forward", "match": ["system message", "error", "guardrail", "quota"]},
+  {"id": "generated-image", "name": "Generated image", "kind": "structure", "why": "an image the model made or returned, with loading and full view", "match": ["image"]},
+  {"id": "ask-user", "name": "Asks you a question", "kind": "structure", "why": "the agent pauses to ask: options, a short form or a few questions", "match": ["ask question", "option list", "elicitation"]},
+  {"id": "structured-answer", "name": "Structured answer", "kind": "structure", "why": "an answer drawn as a card: a comparison, a score, a spec sheet", "match": ["comparison card", "score", "spec sheet"]},
+  {"id": "diagram-math", "name": "Diagram and maths", "kind": "structure", "why": "Mermaid diagrams and rendered maths inside an answer", "match": ["mermaid", "diagram", "math"]},
+  {"id": "settings", "name": "Agent settings", "kind": "structure", "why": "model, prompt, tools, MCP servers and keys the agent runs with", "match": ["settings", "mcp", "environment variables"]},
+  {"id": "agents", "name": "Agent card and handoff", "kind": "structure", "why": "who the agent is, and work passing between agents or subagents", "match": ["agent card", "handoff", "subagent"]},
+  {"id": "transcript", "name": "Transcript and read aloud", "kind": "structure", "why": "speech turned to text, or an answer read back with words lit", "match": ["transcription", "read aloud"]},
+  {"id": "memory", "name": "Memory", "kind": "structure", "why": "what the agent remembers about you, removable", "match": ["memory"]},
+  {"id": "computer-use", "name": "Computer use", "kind": "structure", "why": "the screen the agent is driving, with its cursor", "match": ["computer use"]}
+ ]},
+ "component/message": {"variations": [
+  {"id": "markdown", "name": "Markdown answer", "kind": "structure", "why": "the reply rendered as headings, lists, links and code", "match": ["markdown"]},
+  {"id": "actions-feedback", "name": "Actions and feedback", "kind": "structure", "why": "copy, rate, regenerate and thumbs-down-with-a-reason under a reply", "match": ["message actions", "feedback"]},
+  {"id": "branches-edit", "name": "Branches and edit", "kind": "structure", "why": "edit a turn, flip between regenerated versions, fork to another model", "match": ["branch", "edit message", "regenerate"]}
+ ]},
+ "component/composer": {"variations": [
+  {"id": "queue", "name": "Queued prompts", "kind": "state", "why": "messages typed while the agent is busy wait in a cancelable queue", "match": ["queue"]},
+  {"id": "voice-input", "name": "Voice input", "kind": "structure", "why": "speak instead of type: mic button, mic and voice pickers", "match": ["speech input", "mic"]},
+  {"id": "mentions-commands", "name": "Mentions and commands", "kind": "structure", "why": "@ mentions and / commands that pop a picker and render as chips", "match": ["mention", "trigger", "directive"]},
+  {"id": "quote-reply", "name": "Quote and reply", "kind": "structure", "why": "select text in an answer and quote it into the composer", "match": ["quote"]}
+ ]},
+ "component/code": {"variations": [
+  {"id": "run-results", "name": "Run results", "kind": "structure", "why": "what running code produced: output, stack trace, test results", "match": ["stack trace", "test results", "code runner"]},
+  {"id": "schema", "name": "API schema", "kind": "structure", "why": "an endpoint's parameters and body laid out to read", "match": ["schema"]}
+ ]},
+ "section/chat": {"variations": [
+  {"id": "widget", "name": "Floating widget", "kind": "structure", "why": "a chat bubble in the corner that opens into a panel (support, help desk)", "match": ["modal", "launcher", "bubble"]},
+  {"id": "side-panel", "name": "Side panel", "kind": "structure", "why": "a copilot docked beside the app's own page", "match": ["sidebar", "side panel"]},
+  {"id": "history-list", "name": "Conversation list", "kind": "structure", "why": "past conversations to switch between, with search", "match": ["thread list", "thread search"]},
+  {"id": "thread-nav", "name": "Find in thread", "kind": "structure", "why": "a map or search of one long conversation", "match": ["conversation map", "conversation search"]},
+  {"id": "jump-to-latest", "name": "Jump to latest", "kind": "state", "why": "streaming keeps your place; a button takes you back down", "match": ["scroll button", "scroll anchor"]}
+ ]}
+}

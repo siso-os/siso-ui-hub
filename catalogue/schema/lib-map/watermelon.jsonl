@@ -1,0 +1,685 @@
+{"id": "watermelon:aave-swap-component", "node": "component/form", "variation": null, "job": "Crypto token swap form with animated amount inputs and quotes.", "edge": "token-swap-form"}
+{"id": "watermelon:aave-swap-component-base", "node": "component/form", "variation": null, "job": "Theme-ready base of the crypto token swap form.", "edge": "token-swap-form"}
+{"id": "watermelon:accordion", "node": "component/accordion", "variation": "standard-accordion", "job": "Stacked panels that expand to reveal content on click."}
+{"id": "watermelon:accordion-multiselect", "node": "component/accordion", "variation": "standard-accordion", "job": "Accordion where several panels can stay open together."}
+{"id": "watermelon:activities-card", "node": "component/card", "variation": "standard-card", "job": "Expandable card listing activities with spring animations."}
+{"id": "watermelon:activities-card-base", "node": "component/card", "variation": "standard-card", "job": "Theme-ready base of the expandable activities card."}
+{"id": "watermelon:adaptive-slider", "node": "atom/slider", "variation": "slider", "job": "Colour-shifting slider tracking caloric value."}
+{"id": "watermelon:adaptive-slider-base", "node": "atom/slider", "variation": "slider", "job": "Theme-ready base of the colour-shifting slider."}
+{"id": "watermelon:add-cash-disclosure", "node": "component/accordion", "variation": "collapsible", "job": "Expandable panel explaining add-cash limits, fees and confirmation."}
+{"id": "watermelon:add-cash-disclosure-base", "node": "component/accordion", "variation": "collapsible", "job": "Theme-ready base of the add-cash disclosure panel."}
+{"id": "watermelon:agndex-dashboard", "node": "page/dashboard", "variation": "dashboard-overview", "job": "Full dashboard page with overview widgets."}
+{"id": "watermelon:ai-input-001", "node": "component/composer", "variation": "chat-composer", "job": "AI prompt input box for sending messages to a model."}
+{"id": "watermelon:ai-input-002", "node": "component/composer", "variation": "chat-composer", "job": "AI prompt input box for sending messages to a model."}
+{"id": "watermelon:ai-input-003", "node": "component/composer", "variation": "chat-composer", "job": "AI prompt input box for sending messages to a model."}
+{"id": "watermelon:ai-input-004", "node": "component/composer", "variation": "chat-composer", "job": "AI prompt input box for sending messages to a model."}
+{"id": "watermelon:ai-input-005", "node": "component/composer", "variation": "chat-composer", "job": "AI prompt input box for sending messages to a model."}
+{"id": "watermelon:alert", "node": "component/alert", "variation": "inline-alert", "job": "Inline alert message highlighting a status or warning."}
+{"id": "watermelon:alert-dialog", "node": "component/dialog", "variation": "confirm-alert", "job": "Dialog asking the user to confirm a risky action."}
+{"id": "watermelon:alphine-booking-form", "node": "component/form", "variation": null, "job": "Booking form combining date selection and guest details.", "edge": "booking-form"}
+{"id": "watermelon:alphine-login-form", "node": "component/form", "variation": "sign-in", "job": "Login form asking for credentials to sign in."}
+{"id": "watermelon:animate-button", "node": "atom/button", "variation": "primary", "job": "Animated call-to-action button with hover motion."}
+{"id": "watermelon:animated-accordion", "node": "component/accordion", "variation": "standard-accordion", "job": "Accordion with animated open and close transitions."}
+{"id": "watermelon:animated-button", "node": "atom/button", "variation": "primary", "job": "Animated button with hover and press motion."}
+{"id": "watermelon:announcement-1", "node": "section/announcement", "variation": "text-link", "job": "Announcement bar linking to a news item or update."}
+{"id": "watermelon:announcement-2", "node": "section/announcement", "variation": "text-link", "job": "Announcement bar linking to a news item or update."}
+{"id": "watermelon:announcement-3", "node": "section/announcement", "variation": "text-link", "job": "Announcement bar linking to a news item or update."}
+{"id": "watermelon:announcement-4", "node": "section/announcement", "variation": "text-link", "job": "Announcement bar linking to a news item or update."}
+{"id": "watermelon:announcement-5", "node": "section/announcement", "variation": "text-link", "job": "Announcement bar linking to a news item or update."}
+{"id": "watermelon:announcement-6", "node": "section/announcement", "variation": "text-link", "job": "Announcement bar linking to a news item or update."}
+{"id": "watermelon:announcement-7", "node": "section/announcement", "variation": "text-link", "job": "Announcement bar linking to a news item or update."}
+{"id": "watermelon:announcement-8", "node": "section/announcement", "variation": "text-link", "job": "Announcement bar linking to a news item or update."}
+{"id": "watermelon:announcement-9", "node": "section/announcement", "variation": "text-link", "job": "Announcement bar linking to a news item or update."}
+{"id": "watermelon:astrix-dashboard", "node": "page/dashboard", "variation": "dashboard-overview", "job": "Full dashboard page with overview widgets."}
+{"id": "watermelon:audio-player", "node": "component/player", "variation": "audio-player", "job": "Audio player with play, pause and progress controls."}
+{"id": "watermelon:audio-player-with-waveform", "node": "component/player", "variation": "waveform-visualizer", "job": "Audio player showing a waveform with playback controls."}
+{"id": "watermelon:auth-01", "node": "section/auth", "variation": "sign-in", "job": "Sign-in section with email and password fields."}
+{"id": "watermelon:auth-02", "node": "section/auth", "variation": "sign-in", "job": "Sign-in section with email and password fields."}
+{"id": "watermelon:auth-03", "node": "section/auth", "variation": "sign-in", "job": "Sign-in section with email and password fields."}
+{"id": "watermelon:auth-04", "node": "section/auth", "variation": "sign-in", "job": "Sign-in section with email and password fields."}
+{"id": "watermelon:auth-05", "node": "section/auth", "variation": "sign-in", "job": "Sign-in section with email and password fields."}
+{"id": "watermelon:auth-06", "node": "section/auth", "variation": "sign-in", "job": "Sign-in section with email and password fields."}
+{"id": "watermelon:auth-07", "node": "section/auth", "variation": "sign-in", "job": "Sign-in section with email and password fields."}
+{"id": "watermelon:auth-08", "node": "section/auth", "variation": "sign-in", "job": "Sign-in section with email and password fields."}
+{"id": "watermelon:auth-09", "node": "section/auth", "variation": "sign-in", "job": "Sign-in section with email and password fields."}
+{"id": "watermelon:auth-10", "node": "section/auth", "variation": "sign-in", "job": "Sign-in section with email and password fields."}
+{"id": "watermelon:auth-11", "node": "section/auth", "variation": "sign-in", "job": "Sign-in section with email and password fields."}
+{"id": "watermelon:auth-12", "node": "section/auth", "variation": "sign-in", "job": "Sign-in section with email and password fields."}
+{"id": "watermelon:auth-13", "node": "section/auth", "variation": "sign-in", "job": "Sign-in section with email and password fields."}
+{"id": "watermelon:availability", "node": "component/stat", "variation": "kpi-card", "job": "Stat card showing availability figures at a glance."}
+{"id": "watermelon:avatar", "node": "atom/avatar", "variation": "standard", "job": "Round image or initials standing for a person."}
+{"id": "watermelon:avatar-group", "node": "atom/avatar", "variation": "avatar-group", "job": "Overlapping avatars showing a group of people."}
+{"id": "watermelon:award", "node": "atom/badge", "variation": "icon-badge", "job": "Icon badge marking an award or achievement."}
+{"id": "watermelon:badge", "node": "atom/badge", "variation": "badge", "job": "Small label marking a status or category."}
+{"id": "watermelon:bento-01", "node": "section/features", "variation": "bento", "job": "Bento grid of feature tiles showing product highlights."}
+{"id": "watermelon:bento-02", "node": "section/features", "variation": "bento", "job": "Bento grid of feature tiles showing product highlights."}
+{"id": "watermelon:bento-1", "node": "section/features", "variation": "bento", "job": "Bento grid of feature tiles showing product highlights."}
+{"id": "watermelon:bento-10", "node": "section/features", "variation": "bento", "job": "Bento grid of feature tiles showing product highlights."}
+{"id": "watermelon:bento-11", "node": "section/features", "variation": "bento", "job": "Bento grid of feature tiles showing product highlights."}
+{"id": "watermelon:bento-12", "node": "section/features", "variation": "bento", "job": "Bento grid of feature tiles showing product highlights."}
+{"id": "watermelon:bento-13", "node": "section/features", "variation": "bento", "job": "Bento grid of feature tiles showing product highlights."}
+{"id": "watermelon:bento-14", "node": "section/features", "variation": "bento", "job": "Bento grid of feature tiles showing product highlights."}
+{"id": "watermelon:bento-15", "node": "section/features", "variation": "bento", "job": "Bento grid of feature tiles showing product highlights."}
+{"id": "watermelon:bento-16", "node": "section/features", "variation": "bento", "job": "Bento grid of feature tiles showing product highlights."}
+{"id": "watermelon:bento-17", "node": "section/features", "variation": "bento", "job": "Bento grid of feature tiles showing product highlights."}
+{"id": "watermelon:bento-2", "node": "section/features", "variation": "bento", "job": "Bento grid of feature tiles showing product highlights."}
+{"id": "watermelon:bento-3", "node": "section/features", "variation": "bento", "job": "Bento grid of feature tiles showing product highlights."}
+{"id": "watermelon:bento-4", "node": "section/features", "variation": "bento", "job": "Bento grid of feature tiles showing product highlights."}
+{"id": "watermelon:bento-5", "node": "section/features", "variation": "bento", "job": "Bento grid of feature tiles showing product highlights."}
+{"id": "watermelon:bento-6", "node": "section/features", "variation": "bento", "job": "Bento grid of feature tiles showing product highlights."}
+{"id": "watermelon:bento-7", "node": "section/features", "variation": "bento", "job": "Bento grid of feature tiles showing product highlights."}
+{"id": "watermelon:bento-8", "node": "section/features", "variation": "bento", "job": "Bento grid of feature tiles showing product highlights."}
+{"id": "watermelon:bento-9", "node": "section/features", "variation": "bento", "job": "Bento grid of feature tiles showing product highlights."}
+{"id": "watermelon:bionis-dashboard", "node": "page/dashboard", "variation": "dashboard-overview", "job": "Full dashboard page with overview widgets."}
+{"id": "watermelon:blog-1", "node": "section/blog", "variation": "list", "job": "Blog section listing posts with title, excerpt and link."}
+{"id": "watermelon:blog-2", "node": "section/blog", "variation": "list", "job": "Blog section listing posts with title, excerpt and link."}
+{"id": "watermelon:blog-3", "node": "section/blog", "variation": "list", "job": "Blog section listing posts with title, excerpt and link."}
+{"id": "watermelon:blog-4", "node": "section/blog", "variation": "list", "job": "Blog section listing posts with title, excerpt and link."}
+{"id": "watermelon:book", "node": "component/mockup", "variation": "interactive-frame", "job": "Interactive open-book frame showing content inside."}
+{"id": "watermelon:breadcrumb", "node": "component/breadcrumb", "variation": "text-breadcrumb", "job": "Trail of links showing the current page location."}
+{"id": "watermelon:browser", "node": "component/mockup", "variation": "device-mockup", "job": "Browser window frame wrapping a screenshot or demo."}
+{"id": "watermelon:budget-card", "node": "component/stat", "variation": "progress-stat", "job": "Budget card showing spending against limit and balance."}
+{"id": "watermelon:budget-card-base", "node": "component/stat", "variation": "progress-stat", "job": "Theme-ready base of the budget overview card."}
+{"id": "watermelon:business-management", "node": "page/dashboard", "variation": "dashboard-operations", "job": "Dashboard page for managing business operations."}
+{"id": "watermelon:business-operations-dashboard", "node": "page/dashboard", "variation": "dashboard-operations", "job": "Dashboard page for monitoring business operations."}
+{"id": "watermelon:button", "node": "atom/button", "variation": "primary", "job": "Standard button triggering an action."}
+{"id": "watermelon:calendar", "node": "component/calendar", "variation": "month-calendar", "job": "Month calendar for viewing and picking dates."}
+{"id": "watermelon:calendar-widget", "node": "component/calendar", "variation": "month-calendar", "job": "Animated calendar widget with a progressive blur effect."}
+{"id": "watermelon:calendar-widget-base", "node": "component/calendar", "variation": "month-calendar", "job": "Theme-ready base of the animated calendar widget."}
+{"id": "watermelon:capitalio-dashboard", "node": "page/dashboard", "variation": "dashboard-analytics", "job": "Finance dashboard page with analytics and KPIs."}
+{"id": "watermelon:card", "node": "component/card", "variation": "standard-card", "job": "Standard card grouping content with header and body."}
+{"id": "watermelon:card-cue", "node": "component/card", "variation": "standard-card", "job": "Card with a micro-interaction cue on interaction."}
+{"id": "watermelon:card-cue-base", "node": "component/card", "variation": "standard-card", "job": "Theme-ready base of the card micro-interaction."}
+{"id": "watermelon:card-split-accordian", "node": "component/accordion", "variation": "card-style", "job": "Card split into panels that expand to show details."}
+{"id": "watermelon:card-split-accordian-base", "node": "component/accordion", "variation": "card-style", "job": "Theme-ready base of the split card accordion."}
+{"id": "watermelon:card-split-accordion", "node": "component/accordion", "variation": "card-style", "job": "Card accordion that splits to reveal more details."}
+{"id": "watermelon:card-split-accordion-base", "node": "component/accordion", "variation": "card-style", "job": "Theme-ready base of the split card accordion."}
+{"id": "watermelon:card-swipe", "node": "component/carousel", "variation": "swipeable", "job": "Swipeable card stack with velocity-based paging."}
+{"id": "watermelon:card-swipe-base", "node": "component/carousel", "variation": "swipeable", "job": "Theme-ready base of the swipeable card stack."}
+{"id": "watermelon:career-1", "node": "section/data-view", "variation": "list", "job": "Lists open career positions for applicants to browse."}
+{"id": "watermelon:career-2", "node": "section/data-view", "variation": "list", "job": "Lists open career positions for applicants to browse."}
+{"id": "watermelon:career-3", "node": "section/data-view", "variation": "list", "job": "Lists open career positions for applicants to browse."}
+{"id": "watermelon:career-4", "node": "section/data-view", "variation": "list", "job": "Lists open career positions for applicants to browse."}
+{"id": "watermelon:carousel-navigator", "node": "component/carousel", "variation": "slider-carousel", "job": "Carousel with theme-adaptive backgrounds and synced progress."}
+{"id": "watermelon:carousel-navigator-base", "node": "component/carousel", "variation": "slider-carousel", "job": "Theme-ready base of the carousel navigator."}
+{"id": "watermelon:carousel-slider", "node": "component/carousel", "variation": "cards-carousel", "job": "Gesture-driven card carousel with spring rotation."}
+{"id": "watermelon:carousel-slider-base", "node": "component/carousel", "variation": "cards-carousel", "job": "Theme-ready base of the card carousel slider."}
+{"id": "watermelon:changeable-pricing-section", "node": "section/pricing", "variation": "billing-toggle", "job": "Pricing section with billing toggle and plan details."}
+{"id": "watermelon:changeable-pricing-section-base", "node": "section/pricing", "variation": "billing-toggle", "job": "Theme-ready base of the pricing section."}
+{"id": "watermelon:chart", "node": "component/chart", "variation": "bar-chart", "job": "Generic chart component plotting data series."}
+{"id": "watermelon:checkbox", "node": "atom/choice", "variation": "checkbox", "job": "Checkbox for selecting one or more options."}
+{"id": "watermelon:code", "node": "component/code", "variation": "highlighted-code", "job": "Syntax-highlighted code block."}
+{"id": "watermelon:code-block", "node": "component/code", "variation": "highlighted-code", "job": "Code block with syntax highlighting."}
+{"id": "watermelon:code-tabs", "node": "component/code", "variation": "highlighted-code", "job": "Tabbed code snippets switching between languages."}
+{"id": "watermelon:collapsible", "node": "component/accordion", "variation": "collapsible", "job": "Single panel that collapses and expands its content."}
+{"id": "watermelon:collection-grid-disclosure", "node": "component/accordion", "variation": "card-style", "job": "Grid of collections that expands to reveal more content."}
+{"id": "watermelon:collection-grid-disclosure-base", "node": "component/accordion", "variation": "card-style", "job": "Theme-ready base of the collection grid disclosure."}
+{"id": "watermelon:color-watch-selector", "node": "component/picker", "variation": "color-picker", "job": "Colour selector for picking a swatch."}
+{"id": "watermelon:combobox-1", "node": "component/select", "variation": "combobox", "job": "Combobox choosing one option from a searchable list."}
+{"id": "watermelon:combobox-10", "node": "component/select", "variation": "combobox", "job": "Combobox choosing one option from a searchable list."}
+{"id": "watermelon:combobox-11", "node": "component/select", "variation": "combobox", "job": "Combobox choosing one option from a searchable list."}
+{"id": "watermelon:combobox-12", "node": "component/select", "variation": "combobox", "job": "Combobox choosing one option from a searchable list."}
+{"id": "watermelon:combobox-2", "node": "component/select", "variation": "combobox", "job": "Combobox choosing one option from a searchable list."}
+{"id": "watermelon:combobox-3", "node": "component/select", "variation": "combobox", "job": "Combobox choosing one option from a searchable list."}
+{"id": "watermelon:combobox-4", "node": "component/select", "variation": "combobox", "job": "Combobox choosing one option from a searchable list."}
+{"id": "watermelon:combobox-5", "node": "component/select", "variation": "combobox", "job": "Combobox choosing one option from a searchable list."}
+{"id": "watermelon:combobox-6", "node": "component/select", "variation": "combobox", "job": "Combobox choosing one option from a searchable list."}
+{"id": "watermelon:combobox-7", "node": "component/select", "variation": "combobox", "job": "Combobox choosing one option from a searchable list."}
+{"id": "watermelon:combobox-8", "node": "component/select", "variation": "combobox", "job": "Combobox choosing one option from a searchable list."}
+{"id": "watermelon:combobox-9", "node": "component/select", "variation": "combobox", "job": "Combobox choosing one option from a searchable list."}
+{"id": "watermelon:command-search", "node": "component/command", "variation": "command-palette", "job": "Command palette with sectioned results and keyboard navigation."}
+{"id": "watermelon:command-search-base", "node": "component/command", "variation": "command-palette", "job": "Theme-ready base of the command palette."}
+{"id": "watermelon:compose-email-card", "node": "component/composer", "variation": "standard-composer", "job": "Compact card for composing an email with recipients."}
+{"id": "watermelon:compose-email-card-base", "node": "component/composer", "variation": "standard-composer", "job": "Theme-ready base of the compose email card."}
+{"id": "watermelon:contact-1", "node": "section/contact", "variation": "form", "job": "Contact section with a form for enquiries."}
+{"id": "watermelon:contact-2", "node": "section/contact", "variation": "form", "job": "Contact section with a form for enquiries."}
+{"id": "watermelon:contact-3", "node": "section/contact", "variation": "form", "job": "Contact section with a form for enquiries."}
+{"id": "watermelon:contact-4", "node": "section/contact", "variation": "form", "job": "Contact section with a form for enquiries."}
+{"id": "watermelon:contact-5", "node": "section/contact", "variation": "form", "job": "Contact section with a form for enquiries."}
+{"id": "watermelon:contact-6", "node": "section/contact", "variation": "form", "job": "Contact section with a form for enquiries."}
+{"id": "watermelon:contact-7", "node": "section/contact", "variation": "form", "job": "Contact section with a form for enquiries."}
+{"id": "watermelon:contextual-ai-bar", "node": "component/composer", "variation": "prompt-inputs", "job": "Adaptive AI action bar switching between tool icons."}
+{"id": "watermelon:contextual-ai-bar-base", "node": "component/composer", "variation": "prompt-inputs", "job": "Theme-ready base of the contextual AI bar."}
+{"id": "watermelon:continuous-pagination", "node": "component/pagination", "variation": "numbered-pages", "job": "Responsive pagination moving through pages continuously."}
+{"id": "watermelon:continuous-pagination-base", "node": "component/pagination", "variation": "numbered-pages", "job": "Theme-ready base of the continuous pagination."}
+{"id": "watermelon:continuous-tabs", "node": "component/tabs", "variation": "pill-segmented", "job": "Button-like tabs with a sliding pill background."}
+{"id": "watermelon:continuous-tabs-base", "node": "component/tabs", "variation": "pill-segmented", "job": "Theme-ready base of the continuous tabs."}
+{"id": "watermelon:copy", "node": "atom/button", "variation": "copy-share", "job": "Button that copies text to the clipboard."}
+{"id": "watermelon:copy-confirm", "node": "atom/button", "variation": "copy-share", "job": "Copy button with a confirmation micro-interaction."}
+{"id": "watermelon:copy-confirm-base", "node": "atom/button", "variation": "copy-share", "job": "Theme-ready base of the copy confirm button."}
+{"id": "watermelon:create-community", "node": "component/dialog", "variation": "form-dialog", "job": "Dialog form for creating a community."}
+{"id": "watermelon:create-community-base", "node": "component/dialog", "variation": "form-dialog", "job": "Theme-ready base of the create community dialog."}
+{"id": "watermelon:create-new-disclosure", "node": "component/accordion", "variation": "collapsible", "job": "Create-new disclosure that expands to reveal options."}
+{"id": "watermelon:create-new-disclosure-base", "node": "component/accordion", "variation": "collapsible", "job": "Theme-ready base of the create new disclosure."}
+{"id": "watermelon:credit-usage-card", "node": "component/stat", "variation": "progress-stat", "job": "Card showing credit usage against limits."}
+{"id": "watermelon:credit-usage-card-base", "node": "component/stat", "variation": "progress-stat", "job": "Theme-ready base of the credit usage card."}
+{"id": "watermelon:cta-1", "node": "section/cta", "variation": "centered-banner", "job": "Call-to-action section prompting a next step."}
+{"id": "watermelon:cta-2", "node": "section/cta", "variation": "centered-banner", "job": "Call-to-action section prompting a next step."}
+{"id": "watermelon:cta-3", "node": "section/cta", "variation": "centered-banner", "job": "Call-to-action section prompting a next step."}
+{"id": "watermelon:cta-4", "node": "section/cta", "variation": "centered-banner", "job": "Call-to-action section prompting a next step."}
+{"id": "watermelon:cta-5", "node": "section/cta", "variation": "centered-banner", "job": "Call-to-action section prompting a next step."}
+{"id": "watermelon:cursor", "node": "atom/icon", "variation": "animated", "job": "Animated cursor decoration following the pointer."}
+{"id": "watermelon:data-table", "node": "component/table", "variation": "data-table", "job": "Table displaying rows and columns of data."}
+{"id": "watermelon:date-picker-1", "node": "component/picker", "variation": "date-picker", "job": "Date picker for selecting a date."}
+{"id": "watermelon:date-picker-10", "node": "component/picker", "variation": "date-picker", "job": "Date picker for selecting a date."}
+{"id": "watermelon:date-picker-11", "node": "component/picker", "variation": "date-picker", "job": "Date picker for selecting a date."}
+{"id": "watermelon:date-picker-12", "node": "component/picker", "variation": "date-picker", "job": "Date picker for selecting a date."}
+{"id": "watermelon:date-picker-13", "node": "component/picker", "variation": "date-picker", "job": "Date picker for selecting a date."}
+{"id": "watermelon:date-picker-2", "node": "component/picker", "variation": "date-picker", "job": "Date picker for selecting a date."}
+{"id": "watermelon:date-picker-3", "node": "component/picker", "variation": "date-picker", "job": "Date picker for selecting a date."}
+{"id": "watermelon:date-picker-4", "node": "component/picker", "variation": "date-picker", "job": "Date picker for selecting a date."}
+{"id": "watermelon:date-picker-5", "node": "component/picker", "variation": "date-picker", "job": "Date picker for selecting a date."}
+{"id": "watermelon:date-picker-6", "node": "component/picker", "variation": "date-picker", "job": "Date picker for selecting a date."}
+{"id": "watermelon:date-picker-7", "node": "component/picker", "variation": "date-picker", "job": "Date picker for selecting a date."}
+{"id": "watermelon:date-picker-8", "node": "component/picker", "variation": "date-picker", "job": "Date picker for selecting a date."}
+{"id": "watermelon:date-picker-9", "node": "component/picker", "variation": "date-picker", "job": "Date picker for selecting a date."}
+{"id": "watermelon:demostack-dashboard", "node": "page/dashboard", "variation": "dashboard-overview", "job": "Dashboard page with overview widgets for a demo stack."}
+{"id": "watermelon:deployment-card", "node": "component/card", "variation": "standard-card", "job": "Card showing deployment status, progress and logs."}
+{"id": "watermelon:deployment-card-base", "node": "component/card", "variation": "standard-card", "job": "Theme-ready base of the deployment card."}
+{"id": "watermelon:device", "node": "component/mockup", "variation": "device-mockup", "job": "Device frame wrapping a screenshot or demo."}
+{"id": "watermelon:dialog", "node": "component/dialog", "variation": "modal-dialog", "job": "Modal dialog overlaying content for a focused action."}
+{"id": "watermelon:dialog-stack", "node": "component/dialog", "variation": "modal-dialog", "job": "Layered modal stacking multiple dialogs."}
+{"id": "watermelon:dialog-stack-base", "node": "component/dialog", "variation": "modal-dialog", "job": "Theme-ready base of the layered dialog stack."}
+{"id": "watermelon:discrete-tabs", "node": "component/tabs", "variation": "indicator", "job": "Animated tabs with a morphing transition indicator."}
+{"id": "watermelon:discrete-tabs-base", "node": "component/tabs", "variation": "indicator", "job": "Theme-ready base of the animated tabs."}
+{"id": "watermelon:dock", "node": "component/dock", "variation": "macos-magnifying", "job": "Dock with magnifying macOS-style icon animation."}
+{"id": "watermelon:dock-base", "node": "component/dock", "variation": "macos-magnifying", "job": "Theme-ready base of the animated dock."}
+{"id": "watermelon:draw-signature", "node": "component/field", "variation": null, "job": "Captures a hand-drawn signature with fluid strokes.", "edge": "signature-pad"}
+{"id": "watermelon:draw-signature-base", "node": "component/field", "variation": null, "job": "Theme-ready base of the signature capture.", "edge": "signature-pad"}
+{"id": "watermelon:drawer", "node": "component/sheet", "variation": "side-sheet", "job": "Side sheet sliding in from the edge with content."}
+{"id": "watermelon:dropdown-disclosure", "node": "component/menu", "variation": "dropdown-menu", "job": "Dropdown menu expanding from a disclosure trigger."}
+{"id": "watermelon:dropdown-disclosure-base", "node": "component/menu", "variation": "dropdown-menu", "job": "Theme-ready base of the dropdown disclosure."}
+{"id": "watermelon:dropdown-menu", "node": "component/menu", "variation": "dropdown-menu", "job": "Dropdown menu of actions or options."}
+{"id": "watermelon:e-commerce-dashboard", "node": "page/dashboard", "variation": "dashboard-analytics", "job": "Commerce dashboard page with analytics and sales KPIs."}
+{"id": "watermelon:edit-badge", "node": "atom/badge", "variation": "badge", "job": "Badge that edits its label inline."}
+{"id": "watermelon:edit-badge-base", "node": "atom/badge", "variation": "badge", "job": "Theme-ready base of the editable badge."}
+{"id": "watermelon:edit-profile", "node": "component/dialog", "variation": "form-dialog", "job": "Dialog form for editing a profile with validation."}
+{"id": "watermelon:edit-profile-base", "node": "component/dialog", "variation": "form-dialog", "job": "Theme-ready base of the edit profile dialog."}
+{"id": "watermelon:editable-chip", "node": "component/tags", "variation": "basic-tag-input", "job": "Chip that can be edited inline."}
+{"id": "watermelon:editable-chip-base", "node": "component/tags", "variation": "basic-tag-input", "job": "Theme-ready base of the editable chip."}
+{"id": "watermelon:emoji-spree-choice-chips", "node": "atom/choice", "variation": "group", "job": "Multi-select chip group with emoji animations."}
+{"id": "watermelon:emoji-spree-choice-chips-base", "node": "atom/choice", "variation": "group", "job": "Theme-ready base of the emoji choice chips."}
+{"id": "watermelon:erp-dashboard", "node": "page/dashboard", "variation": "dashboard-operations", "job": "ERP dashboard page for operations overview."}
+{"id": "watermelon:error-1", "node": "page/not-found", "variation": "notfound-404", "job": "Error page shown for a missing or failed route."}
+{"id": "watermelon:error-2", "node": "component/empty", "variation": "error-state", "job": "Empty-state panel shown when something fails."}
+{"id": "watermelon:error-3", "node": "page/not-found", "variation": "notfound-404", "job": "Error page shown for a missing or failed route."}
+{"id": "watermelon:error-4", "node": "page/not-found", "variation": "notfound-404", "job": "Error page shown for a missing or failed route."}
+{"id": "watermelon:error-5", "node": "page/not-found", "variation": "notfound-404", "job": "Error page shown for a missing or failed route."}
+{"id": "watermelon:error-6", "node": "component/empty", "variation": "error-state", "job": "Empty-state panel shown when something fails."}
+{"id": "watermelon:error-7", "node": "page/not-found", "variation": "notfound-404", "job": "Error page shown for a missing or failed route."}
+{"id": "watermelon:event-reminders", "node": "component/picker", "variation": null, "job": "Sets and manages event reminders with lightweight controls.", "edge": "reminder-scheduler"}
+{"id": "watermelon:event-reminders-base", "node": "component/picker", "variation": null, "job": "Theme-ready base of the event reminders.", "edge": "reminder-scheduler"}
+{"id": "watermelon:expand-details", "node": "component/accordion", "variation": "collapsible", "job": "Micro-interaction that expands to show details."}
+{"id": "watermelon:expand-details-base", "node": "component/accordion", "variation": "collapsible", "job": "Theme-ready base of the expand details control."}
+{"id": "watermelon:expandable-event-card", "node": "component/accordion", "variation": "card-style", "job": "Animated event card expanding to a full view."}
+{"id": "watermelon:expandable-event-card-base", "node": "component/accordion", "variation": "card-style", "job": "Theme-ready base of the expandable event card."}
+{"id": "watermelon:expandable-profile-card", "node": "component/card", "variation": "profile-card", "job": "Profile card expanding to a detailed side panel."}
+{"id": "watermelon:expandable-profile-card-base", "node": "component/card", "variation": "profile-card", "job": "Theme-ready base of the expandable profile card."}
+{"id": "watermelon:extended-toolbar", "node": "component/dock", "variation": "action-toolbar", "job": "Responsive toolbar with extended action controls."}
+{"id": "watermelon:extended-toolbar-base", "node": "component/dock", "variation": "action-toolbar", "job": "Theme-ready base of the extended toolbar."}
+{"id": "watermelon:family-receive-button", "node": "atom/button", "variation": "toggle", "job": "Toggle button that opens a confirmation step."}
+{"id": "watermelon:family-receive-button-base", "node": "atom/button", "variation": "toggle", "job": "Theme-ready base of the family receive button."}
+{"id": "watermelon:family-receive-component", "node": "component/dialog", "variation": "modal-dialog", "job": "Dialog for receiving money in a family wallet."}
+{"id": "watermelon:family-receive-component-base", "node": "component/card", "variation": "standard-card", "job": "Theme-ready base of the family receive component."}
+{"id": "watermelon:family-wallet", "node": "component/card", "variation": "stack-flip", "job": "Animated wallet card interface for family accounts."}
+{"id": "watermelon:family-wallet-base", "node": "component/card", "variation": "stack-flip", "job": "Theme-ready base of the family wallet card."}
+{"id": "watermelon:faq-1", "node": "section/faq", "variation": "accordion", "job": "FAQ section with expandable questions and answers."}
+{"id": "watermelon:faq-2", "node": "section/faq", "variation": "accordion", "job": "FAQ section with expandable questions and answers."}
+{"id": "watermelon:faq-3", "node": "section/faq", "variation": "accordion", "job": "FAQ section with expandable questions and answers."}
+{"id": "watermelon:faq-4", "node": "section/faq", "variation": "accordion", "job": "FAQ section with expandable questions and answers."}
+{"id": "watermelon:faq-5", "node": "section/faq", "variation": "accordion", "job": "FAQ section with expandable questions and answers."}
+{"id": "watermelon:faq-6", "node": "section/faq", "variation": "accordion", "job": "FAQ section with expandable questions and answers."}
+{"id": "watermelon:feature-1", "node": "section/features", "variation": "card-grid", "job": "Feature section showing product features as cards."}
+{"id": "watermelon:feature-2", "node": "section/features", "variation": "card-grid", "job": "Feature section showing product features as cards."}
+{"id": "watermelon:feature-3", "node": "section/features", "variation": "card-grid", "job": "Feature section showing product features as cards."}
+{"id": "watermelon:feature-4", "node": "section/features", "variation": "card-grid", "job": "Feature section showing product features as cards."}
+{"id": "watermelon:feature-5", "node": "section/features", "variation": "card-grid", "job": "Feature section showing product features as cards."}
+{"id": "watermelon:feature-tour", "node": "section/onboarding", "variation": "wizard", "job": "Guided tour stepping through product features."}
+{"id": "watermelon:feature-tour-base", "node": "section/onboarding", "variation": "wizard", "job": "Theme-ready base of the guided feature tour."}
+{"id": "watermelon:feedback", "node": "atom/slider", "variation": "rating", "job": "Feedback control with morphing icons for rating."}
+{"id": "watermelon:feedback-action", "node": "atom/button", "variation": "group", "job": "Button group triggering quick user feedback actions."}
+{"id": "watermelon:feedback-action-base", "node": "atom/button", "variation": null, "job": "Quick feedback trigger with subtle animated interactions", "edge": "quick feedback reaction"}
+{"id": "watermelon:feedback-base", "node": "atom/icon", "variation": "animated", "job": "Feedback indicator with morphing icons and smooth transitions"}
+{"id": "watermelon:file-upload", "node": "component/upload", "variation": "dropzone", "job": "File picker control for choosing and dropping files"}
+{"id": "watermelon:files", "node": "component/list", "variation": "file-list", "job": "List of files with per-file actions"}
+{"id": "watermelon:filter-disclosure", "node": "component/accordion", "variation": "collapsible", "job": "Expandable filter panel showing active filter state"}
+{"id": "watermelon:filter-disclosure-base", "node": "component/accordion", "variation": "collapsible", "job": "Expandable filter panel showing active filter state"}
+{"id": "watermelon:flip", "node": null, "variation": null, "job": "Flip background motion; decoration only"}
+{"id": "watermelon:flip-card", "node": "component/card", "variation": "stack-flip", "job": "Card that flips to reveal its back face"}
+{"id": "watermelon:flip-clock", "node": "component/stat", "variation": "counter", "job": "Flip-digit clock showing the time as a counter"}
+{"id": "watermelon:floating-disclosure", "node": "component/dock", "variation": "expandable", "job": "Floating expandable action menu with close button"}
+{"id": "watermelon:floating-disclosure-base", "node": "component/dock", "variation": "expandable", "job": "Floating expandable action menu with close button"}
+{"id": "watermelon:floating-input", "node": "component/field", "variation": "floating-label", "job": "Text input whose label floats when focused"}
+{"id": "watermelon:floating-input-base", "node": "component/field", "variation": "floating-label", "job": "Text input whose label floats when focused"}
+{"id": "watermelon:fluid-tabs", "node": "component/tabs", "variation": "indicator", "job": "Spring-animated tabs with a floating active indicator"}
+{"id": "watermelon:fluid-tabs-base", "node": "component/tabs", "variation": "indicator", "job": "Spring-animated tabs with a floating active indicator"}
+{"id": "watermelon:footer-1", "node": "section/footer", "variation": null, "job": "Site footer section; numbered variant, no description"}
+{"id": "watermelon:footer-10", "node": "section/footer", "variation": null, "job": "Site footer section; numbered variant, no description"}
+{"id": "watermelon:footer-11", "node": "section/footer", "variation": null, "job": "Site footer section; numbered variant, no description"}
+{"id": "watermelon:footer-12", "node": "section/footer", "variation": null, "job": "Site footer section; numbered variant, no description"}
+{"id": "watermelon:footer-13", "node": "section/footer", "variation": null, "job": "Site footer section; numbered variant, no description"}
+{"id": "watermelon:footer-14", "node": "section/footer", "variation": null, "job": "Site footer section; numbered variant, no description"}
+{"id": "watermelon:footer-15", "node": "section/footer", "variation": null, "job": "Site footer section; numbered variant, no description"}
+{"id": "watermelon:footer-16", "node": "section/footer", "variation": null, "job": "Site footer section; numbered variant, no description"}
+{"id": "watermelon:footer-17", "node": "section/footer", "variation": null, "job": "Site footer section; numbered variant, no description"}
+{"id": "watermelon:footer-18", "node": "section/footer", "variation": null, "job": "Site footer section; numbered variant, no description"}
+{"id": "watermelon:footer-19", "node": "section/footer", "variation": null, "job": "Site footer section; numbered variant, no description"}
+{"id": "watermelon:footer-2", "node": "section/footer", "variation": null, "job": "Site footer section; numbered variant, no description"}
+{"id": "watermelon:footer-20", "node": "section/footer", "variation": null, "job": "Site footer section; numbered variant, no description"}
+{"id": "watermelon:footer-21", "node": "section/footer", "variation": null, "job": "Site footer section; numbered variant, no description"}
+{"id": "watermelon:footer-22", "node": "section/footer", "variation": null, "job": "Site footer section; numbered variant, no description"}
+{"id": "watermelon:footer-23", "node": "section/footer", "variation": null, "job": "Site footer section; numbered variant, no description"}
+{"id": "watermelon:footer-24", "node": "section/footer", "variation": null, "job": "Site footer section; numbered variant, no description"}
+{"id": "watermelon:footer-25", "node": "section/footer", "variation": null, "job": "Site footer section; numbered variant, no description"}
+{"id": "watermelon:footer-26", "node": "section/footer", "variation": null, "job": "Site footer section; numbered variant, no description"}
+{"id": "watermelon:footer-27", "node": "section/footer", "variation": null, "job": "Site footer section; numbered variant, no description"}
+{"id": "watermelon:footer-28", "node": "section/footer", "variation": null, "job": "Site footer section; numbered variant, no description"}
+{"id": "watermelon:footer-29", "node": "section/footer", "variation": null, "job": "Site footer section; numbered variant, no description"}
+{"id": "watermelon:footer-3", "node": "section/footer", "variation": null, "job": "Site footer section; numbered variant, no description"}
+{"id": "watermelon:footer-30", "node": "section/footer", "variation": null, "job": "Site footer section; numbered variant, no description"}
+{"id": "watermelon:footer-31", "node": "section/footer", "variation": null, "job": "Site footer section; numbered variant, no description"}
+{"id": "watermelon:footer-4", "node": "section/footer", "variation": null, "job": "Site footer section; numbered variant, no description"}
+{"id": "watermelon:footer-5", "node": "section/footer", "variation": null, "job": "Site footer section; numbered variant, no description"}
+{"id": "watermelon:footer-6", "node": "section/footer", "variation": null, "job": "Site footer section; numbered variant, no description"}
+{"id": "watermelon:footer-7", "node": "section/footer", "variation": null, "job": "Site footer section; numbered variant, no description"}
+{"id": "watermelon:footer-8", "node": "section/footer", "variation": null, "job": "Site footer section; numbered variant, no description"}
+{"id": "watermelon:footer-9", "node": "section/footer", "variation": null, "job": "Site footer section; numbered variant, no description"}
+{"id": "watermelon:form-1", "node": "component/form", "variation": null, "job": "Input fields and actions for capturing and submitting user data"}
+{"id": "watermelon:form-10", "node": "component/form", "variation": null, "job": "Input fields and actions for capturing and submitting user data"}
+{"id": "watermelon:form-2", "node": "component/form", "variation": null, "job": "Input fields and actions for capturing and submitting user data"}
+{"id": "watermelon:form-3", "node": "component/form", "variation": null, "job": "Input fields and actions for capturing and submitting user data"}
+{"id": "watermelon:form-4", "node": "component/form", "variation": null, "job": "Input fields and actions for capturing and submitting user data"}
+{"id": "watermelon:form-5", "node": "component/form", "variation": null, "job": "Input fields and actions for capturing and submitting user data"}
+{"id": "watermelon:form-6", "node": "component/form", "variation": null, "job": "Input fields and actions for capturing and submitting user data"}
+{"id": "watermelon:form-7", "node": "component/form", "variation": null, "job": "Input fields and actions for capturing and submitting user data"}
+{"id": "watermelon:form-8", "node": "component/form", "variation": null, "job": "Input fields and actions for capturing and submitting user data"}
+{"id": "watermelon:form-9", "node": "component/form", "variation": null, "job": "Input fields and actions for capturing and submitting user data"}
+{"id": "watermelon:fractional-picker", "node": "atom/slider", "variation": "with-ticks", "job": "Draggable ruler picker for numeric values with spring snapping"}
+{"id": "watermelon:fractional-picker-base", "node": "atom/slider", "variation": "with-ticks", "job": "Draggable ruler picker for numeric values with spring snapping"}
+{"id": "watermelon:frequency-selector", "node": "component/picker", "variation": "segmented-input", "job": "Recurring interval selector using animated segmented tabs and sub-options"}
+{"id": "watermelon:frequency-selector-base", "node": "component/picker", "variation": "segmented-input", "job": "Recurring interval selector using animated segmented tabs and sub-options"}
+{"id": "watermelon:fund-widget", "node": "component/card", "variation": "stat-card", "job": "Animated fund card with 3D transforms and progressive blur"}
+{"id": "watermelon:fund-widget-base", "node": "component/card", "variation": "stat-card", "job": "Animated fund card with 3D transforms and progressive blur"}
+{"id": "watermelon:gauge", "node": "atom/progress", "variation": "meter-gauge", "job": "Gauge showing a measured value on a dial"}
+{"id": "watermelon:get-strict-context", "node": null, "variation": null, "job": "Non-visual utility for strict context lookup"}
+{"id": "watermelon:github-stars", "node": "atom/button", "variation": "social-brand", "job": "Star-on-GitHub button showing an animated star count"}
+{"id": "watermelon:github-stars-wheel", "node": "atom/badge", "variation": "count", "job": "Rolling wheel display of a GitHub star count"}
+{"id": "watermelon:gooey-menu", "node": "component/dock", "variation": "expandable", "job": "Gooey logo menu that expands to show framework information"}
+{"id": "watermelon:gooey-menu-base", "node": "component/dock", "variation": "expandable", "job": "Gooey logo menu that expands to show framework information"}
+{"id": "watermelon:gridline-dashboard", "node": "page/dashboard", "variation": null, "job": "Dashboard screen with a visible grid-line layout"}
+{"id": "watermelon:hero-1", "node": "section/hero", "variation": null, "job": "Hero section; numbered variant, no description"}
+{"id": "watermelon:hero-10", "node": "section/hero", "variation": null, "job": "Hero section; numbered variant, no description"}
+{"id": "watermelon:hero-11", "node": "section/hero", "variation": null, "job": "Hero section; numbered variant, no description"}
+{"id": "watermelon:hero-12", "node": "section/hero", "variation": null, "job": "Hero section; numbered variant, no description"}
+{"id": "watermelon:hero-13", "node": "section/hero", "variation": null, "job": "Hero section; numbered variant, no description"}
+{"id": "watermelon:hero-14", "node": "section/hero", "variation": null, "job": "Hero section; numbered variant, no description"}
+{"id": "watermelon:hero-15", "node": "section/hero", "variation": null, "job": "Hero section; numbered variant, no description"}
+{"id": "watermelon:hero-16", "node": "section/hero", "variation": null, "job": "Hero section; numbered variant, no description"}
+{"id": "watermelon:hero-17", "node": "section/hero", "variation": null, "job": "Hero section; numbered variant, no description"}
+{"id": "watermelon:hero-18", "node": "section/hero", "variation": null, "job": "Hero section; numbered variant, no description"}
+{"id": "watermelon:hero-19", "node": "section/hero", "variation": null, "job": "Hero section; numbered variant, no description"}
+{"id": "watermelon:hero-2", "node": "section/hero", "variation": null, "job": "Hero section; numbered variant, no description"}
+{"id": "watermelon:hero-20", "node": "section/hero", "variation": null, "job": "Hero section; numbered variant, no description"}
+{"id": "watermelon:hero-21", "node": "section/hero", "variation": null, "job": "Hero section; numbered variant, no description"}
+{"id": "watermelon:hero-22", "node": "section/hero", "variation": null, "job": "Hero section; numbered variant, no description"}
+{"id": "watermelon:hero-23", "node": "section/hero", "variation": null, "job": "Hero section; numbered variant, no description"}
+{"id": "watermelon:hero-24", "node": "section/hero", "variation": null, "job": "Hero section; numbered variant, no description"}
+{"id": "watermelon:hero-25", "node": "section/hero", "variation": null, "job": "Hero section; numbered variant, no description"}
+{"id": "watermelon:hero-26", "node": "section/hero", "variation": null, "job": "Hero section; numbered variant, no description"}
+{"id": "watermelon:hero-27", "node": "section/hero", "variation": null, "job": "Hero section; numbered variant, no description"}
+{"id": "watermelon:hero-28", "node": "section/hero", "variation": null, "job": "Hero section; numbered variant, no description"}
+{"id": "watermelon:hero-29", "node": "section/hero", "variation": null, "job": "Hero section; numbered variant, no description"}
+{"id": "watermelon:hero-3", "node": "section/hero", "variation": null, "job": "Hero section; numbered variant, no description"}
+{"id": "watermelon:hero-30", "node": "section/hero", "variation": null, "job": "Hero section; numbered variant, no description"}
+{"id": "watermelon:hero-31", "node": "section/hero", "variation": null, "job": "Hero section; numbered variant, no description"}
+{"id": "watermelon:hero-32", "node": "section/hero", "variation": null, "job": "Hero section; numbered variant, no description"}
+{"id": "watermelon:hero-33", "node": "section/hero", "variation": null, "job": "Hero section; numbered variant, no description"}
+{"id": "watermelon:hero-34", "node": "section/hero", "variation": null, "job": "Hero section; numbered variant, no description"}
+{"id": "watermelon:hero-35", "node": "section/hero", "variation": null, "job": "Hero section; numbered variant, no description"}
+{"id": "watermelon:hero-36", "node": "section/hero", "variation": null, "job": "Hero section; numbered variant, no description"}
+{"id": "watermelon:hero-37", "node": "section/hero", "variation": null, "job": "Hero section; numbered variant, no description"}
+{"id": "watermelon:hero-38", "node": "section/hero", "variation": null, "job": "Hero section; numbered variant, no description"}
+{"id": "watermelon:hero-39", "node": "section/hero", "variation": null, "job": "Hero section; numbered variant, no description"}
+{"id": "watermelon:hero-4", "node": "section/hero", "variation": null, "job": "Hero section; numbered variant, no description"}
+{"id": "watermelon:hero-40", "node": "section/hero", "variation": null, "job": "Hero section; numbered variant, no description"}
+{"id": "watermelon:hero-41", "node": "section/hero", "variation": null, "job": "Hero section; numbered variant, no description"}
+{"id": "watermelon:hero-42", "node": "section/hero", "variation": null, "job": "Hero section; numbered variant, no description"}
+{"id": "watermelon:hero-43", "node": "section/hero", "variation": null, "job": "Hero section; numbered variant, no description"}
+{"id": "watermelon:hero-5", "node": "section/hero", "variation": null, "job": "Hero section; numbered variant, no description"}
+{"id": "watermelon:hero-6", "node": "section/hero", "variation": null, "job": "Hero section; numbered variant, no description"}
+{"id": "watermelon:hero-7", "node": "section/hero", "variation": null, "job": "Hero section; numbered variant, no description"}
+{"id": "watermelon:hero-8", "node": "section/hero", "variation": null, "job": "Hero section; numbered variant, no description"}
+{"id": "watermelon:hero-9", "node": "section/hero", "variation": null, "job": "Hero section; numbered variant, no description"}
+{"id": "watermelon:hero1", "node": "section/hero", "variation": null, "job": "Hero section; numbered variant, no description"}
+{"id": "watermelon:hover-card", "node": "component/popover", "variation": "hover-card", "job": "Popover card that appears on hover"}
+{"id": "watermelon:hrm", "node": "section/sidebar", "variation": null, "job": "Sidebar navigation for an HR management product"}
+{"id": "watermelon:icon", "node": "atom/icon", "variation": null, "job": "Icon asset shown at small size; no description"}
+{"id": "watermelon:incident-management", "node": "page/home", "variation": "home-product-launch", "job": "Marketing page launching an incident management product"}
+{"id": "watermelon:inline-action", "node": "atom/button", "variation": "group", "job": "Inline action buttons for quick edits in place"}
+{"id": "watermelon:inline-action-base", "node": "atom/button", "variation": "group", "job": "Inline action buttons for quick edits in place"}
+{"id": "watermelon:inline-disclosure-menu", "node": "component/menu", "variation": "dropdown-menu", "job": "Animated inline action menu with options and delete confirmation"}
+{"id": "watermelon:inline-disclosure-menu-base", "node": "component/menu", "variation": "dropdown-menu", "job": "Animated inline action menu with options and delete confirmation"}
+{"id": "watermelon:inline-edit", "node": "atom/text-input", "variation": "textarea", "job": "Inline editor switching between display and edit modes"}
+{"id": "watermelon:inline-edit-base", "node": "atom/text-input", "variation": "textarea", "job": "Inline editor switching between display and edit modes"}
+{"id": "watermelon:inline-overflow", "node": "component/menu", "variation": "dropdown-menu", "job": "Inline overflow menu revealing extra actions with spring animation"}
+{"id": "watermelon:inline-overflow-base", "node": "component/menu", "variation": "dropdown-menu", "job": "Inline overflow menu revealing extra actions with spring animation"}
+{"id": "watermelon:inline-table-control", "node": "component/table", "variation": "editable-grid", "job": "Inline controls for editing table rows in place"}
+{"id": "watermelon:inline-table-control-base", "node": "component/table", "variation": "editable-grid", "job": "Inline controls for editing table rows in place"}
+{"id": "watermelon:inline-toast", "node": "component/toast", "variation": "action-toast", "job": "Animated inline toast with instant feedback and copy action"}
+{"id": "watermelon:inline-toast-base", "node": "component/toast", "variation": "action-toast", "job": "Animated inline toast with instant feedback and copy action"}
+{"id": "watermelon:input", "node": "atom/text-input", "variation": "text-input", "job": "Single-line text field for entering a value"}
+{"id": "watermelon:input-otp-1", "node": "atom/text-input", "variation": "otp", "job": "Set of input fields for one-time password codes"}
+{"id": "watermelon:input-otp-10", "node": "atom/text-input", "variation": "otp", "job": "Set of input fields for one-time password codes"}
+{"id": "watermelon:input-otp-2", "node": "atom/text-input", "variation": "otp", "job": "Set of input fields for one-time password codes"}
+{"id": "watermelon:input-otp-3", "node": "atom/text-input", "variation": "otp", "job": "Set of input fields for one-time password codes"}
+{"id": "watermelon:input-otp-4", "node": "atom/text-input", "variation": "otp", "job": "Set of input fields for one-time password codes"}
+{"id": "watermelon:input-otp-5", "node": "atom/text-input", "variation": "otp", "job": "Set of input fields for one-time password codes"}
+{"id": "watermelon:input-otp-6", "node": "atom/text-input", "variation": "otp", "job": "Set of input fields for one-time password codes"}
+{"id": "watermelon:input-otp-7", "node": "atom/text-input", "variation": "otp", "job": "Set of input fields for one-time password codes"}
+{"id": "watermelon:input-otp-8", "node": "atom/text-input", "variation": "otp", "job": "Set of input fields for one-time password codes"}
+{"id": "watermelon:input-otp-9", "node": "atom/text-input", "variation": "otp", "job": "Set of input fields for one-time password codes"}
+{"id": "watermelon:integration-card", "node": "component/card", "variation": null, "job": "Card showing a connected service's status and actions", "edge": "integration status card"}
+{"id": "watermelon:integration-card-base", "node": "component/card", "variation": null, "job": "Card showing a connected service's status and actions", "edge": "integration status card"}
+{"id": "watermelon:integrations-1", "node": "section/logos", "variation": "integration-cards", "job": "Integrations section of connected service cards; numbered variant"}
+{"id": "watermelon:integrations-2", "node": "section/logos", "variation": "integration-cards", "job": "Integrations section of connected service cards; numbered variant"}
+{"id": "watermelon:integrations-3", "node": "section/logos", "variation": "integration-cards", "job": "Integrations section of connected service cards; numbered variant"}
+{"id": "watermelon:integrations-4", "node": "section/logos", "variation": "integration-cards", "job": "Integrations section of connected service cards; numbered variant"}
+{"id": "watermelon:integrations-5", "node": "section/logos", "variation": "integration-cards", "job": "Integrations section of connected service cards; numbered variant"}
+{"id": "watermelon:invite-disclosure", "node": "component/accordion", "variation": "collapsible", "job": "Morphing disclosure for invitations with a badge count"}
+{"id": "watermelon:invite-disclosure-base", "node": "component/accordion", "variation": "collapsible", "job": "Morphing disclosure for invitations with a badge count"}
+{"id": "watermelon:invoice-generator-dashboard", "node": "page/dashboard", "variation": null, "job": "Dashboard screen for generating invoices; no description"}
+{"id": "watermelon:invoice-manager-dashboard", "node": "page/dashboard", "variation": null, "job": "Dashboard screen for managing invoices; no description"}
+{"id": "watermelon:issue-tracking", "node": "page/dashboard", "variation": null, "job": "Issue tracking dashboard screen; no description"}
+{"id": "watermelon:jobtracker-dashboard", "node": "page/dashboard", "variation": null, "job": "Dashboard screen for tracking jobs; no description"}
+{"id": "watermelon:journal-navigation", "node": "section/sidebar", "variation": "grouped", "job": "Grouped journal sidebar for quick section switching"}
+{"id": "watermelon:journal-navigation-base", "node": "section/sidebar", "variation": "grouped", "job": "Grouped journal sidebar for quick section switching"}
+{"id": "watermelon:knob-slider", "node": "atom/slider", "variation": "dial-knob", "job": "Radial dial slider with tactile feedback and blur"}
+{"id": "watermelon:knob-slider-base", "node": "atom/slider", "variation": "dial-knob", "job": "Radial dial slider with tactile feedback and blur"}
+{"id": "watermelon:label", "node": "component/field", "variation": null, "job": "Form label for a field; no description"}
+{"id": "watermelon:label-selector", "node": "component/tags", "variation": "with-suggestions", "job": "Selector for choosing labels with suggestions"}
+{"id": "watermelon:labeled-progress-indicator", "node": "atom/progress", "variation": "linear", "job": "Animated progress bar with dynamic labels"}
+{"id": "watermelon:labeled-progress-indicator-base", "node": "atom/progress", "variation": "linear", "job": "Animated progress bar with dynamic labels"}
+{"id": "watermelon:landing-01", "node": "section/features", "variation": "bento", "job": "Bento-grid landing layout; numbered variant, no description"}
+{"id": "watermelon:layered-progressive-disclosure", "node": "component/accordion", "variation": "feature-disclosure", "job": "Layered panel of animated feature toggles and disclosures"}
+{"id": "watermelon:layered-progressive-disclosure-base", "node": "component/accordion", "variation": "feature-disclosure", "job": "Layered panel of animated feature toggles and disclosures"}
+{"id": "watermelon:lead-dashboard", "node": "page/dashboard", "variation": null, "job": "Dashboard screen for managing leads; no description"}
+{"id": "watermelon:library-dashboard", "node": "page/dashboard", "variation": null, "job": "Dashboard screen for a library; no description"}
+{"id": "watermelon:licence-key", "node": "atom/button", "variation": "copy-share", "job": "Interactive licence key display with copy feedback"}
+{"id": "watermelon:licence-key-base", "node": "atom/button", "variation": "copy-share", "job": "Interactive licence key display with copy feedback"}
+{"id": "watermelon:license-key", "node": "atom/button", "variation": "copy-share", "job": "License key display with copy action; no description"}
+{"id": "watermelon:license-key-base", "node": "atom/button", "variation": "copy-share", "job": "License key display with copy action; no description"}
+{"id": "watermelon:liquid", "node": null, "variation": null, "job": "Liquid shader background; decoration only"}
+{"id": "watermelon:list-stack", "node": "component/list", "variation": "standard-list", "job": "Animated stacked list that expands and collapses items"}
+{"id": "watermelon:list-stack-base", "node": "component/list", "variation": "standard-list", "job": "Animated stacked list that expands and collapses items"}
+{"id": "watermelon:luminia-luxe-realestate", "node": "page/home", "variation": null, "job": "Real estate landing page template; no description"}
+{"id": "watermelon:macos-sidebar", "node": "section/sidebar", "variation": "collapsible", "job": "Collapsible macOS-style sidebar with spring width transitions"}
+{"id": "watermelon:macos-sidebar-base", "node": "section/sidebar", "variation": "collapsible", "job": "Collapsible macOS-style sidebar with spring width transitions"}
+{"id": "watermelon:mail-dashboard", "node": "page/dashboard", "variation": null, "job": "Mail dashboard screen; no description"}
+{"id": "watermelon:management-bar", "node": "section/top-bar", "variation": "simple-bar", "job": "Top bar for management actions; no description"}
+{"id": "watermelon:marquee", "node": "atom/layout", "variation": "horizontal-scroll", "job": "Continuously scrolling marquee strip"}
+{"id": "watermelon:medesk-dashboard", "node": "page/dashboard", "variation": null, "job": "Medesk dashboard screen; no description"}
+{"id": "watermelon:meeting-card", "node": "component/card", "variation": "standard-card", "job": "Card summarising meeting details with quick actions"}
+{"id": "watermelon:meeting-card-base", "node": "component/card", "variation": "standard-card", "job": "Card summarising meeting details with quick actions"}
+{"id": "watermelon:meetings-dashboard", "node": "page/dashboard", "variation": null, "job": "Meetings dashboard screen; no description"}
+{"id": "watermelon:minimal-carousel", "node": "component/carousel", "variation": "cards-carousel", "job": "Carousel of wallet cards that expand with layout animation"}
+{"id": "watermelon:minimal-carousel-base", "node": "component/carousel", "variation": "cards-carousel", "job": "Carousel of wallet cards that expand with layout animation"}
+{"id": "watermelon:mobile-video-player", "node": "component/player", "variation": "video-player", "job": "Mobile video player for playing video content"}
+{"id": "watermelon:morphing-button", "node": "atom/button", "variation": null, "job": "Button that morphs into an expanded interactive state", "edge": "morphing expanding button"}
+{"id": "watermelon:morphing-button-base", "node": "atom/button", "variation": null, "job": "Button that morphs into an expanded interactive state", "edge": "morphing expanding button"}
+{"id": "watermelon:morphing-discovery-bar", "node": "component/tabs", "variation": "indicator", "job": "Category tab bar that morphs into a search field"}
+{"id": "watermelon:morphing-discovery-bar-base", "node": "component/tabs", "variation": "indicator", "job": "Category tab bar that morphs into a search field"}
+{"id": "watermelon:morphing-sidebar-controls", "node": "section/settings-panel", "variation": "sidebar", "job": "Sidebar control panel for progressive configuration and motion presets"}
+{"id": "watermelon:morphing-sidebar-controls-base", "node": "section/settings-panel", "variation": "sidebar", "job": "Sidebar control panel for progressive configuration and motion presets"}
+{"id": "watermelon:motion-carousel", "node": "component/carousel", "variation": null, "job": "Motion carousel; no description"}
+{"id": "watermelon:navigation-1", "node": "component/menu", "variation": "navigation-menu", "job": "Navigation menu; numbered variant, no description"}
+{"id": "watermelon:navigation-2", "node": "section/nav", "variation": null, "job": "Navigation bar; numbered variant, no description"}
+{"id": "watermelon:navigation-3", "node": "section/nav", "variation": null, "job": "Navigation bar; numbered variant, no description"}
+{"id": "watermelon:navigation-4", "node": "section/nav", "variation": null, "job": "Navigation bar; numbered variant, no description"}
+{"id": "watermelon:navigation-5", "node": "component/menu", "variation": "navigation-menu", "job": "Navigation menu; numbered variant, no description"}
+{"id": "watermelon:navigation-6", "node": "section/nav", "variation": null, "job": "Navigation bar; numbered variant, no description"}
+{"id": "watermelon:navigation-7", "node": "section/nav", "variation": null, "job": "Navigation bar; numbered variant, no description"}
+{"id": "watermelon:newsletter-1", "node": "section/cta", "variation": "email-form", "job": "Newsletter signup call to action; numbered variant"}
+{"id": "watermelon:newsletter-2", "node": "section/cta", "variation": "email-form", "job": "Newsletter signup call to action; numbered variant"}
+{"id": "watermelon:newsletter-3", "node": "section/cta", "variation": "email-form", "job": "Newsletter signup call to action; numbered variant"}
+{"id": "watermelon:newsletter-4", "node": "section/cta", "variation": "email-form", "job": "Newsletter signup call to action; numbered variant"}
+{"id": "watermelon:newsletter-5", "node": "section/cta", "variation": "email-form", "job": "Newsletter signup call to action; numbered variant"}
+{"id": "watermelon:notification-1", "node": "component/inbox", "variation": null, "job": "Notification panel; numbered variant, no description"}
+{"id": "watermelon:notification-2", "node": "component/inbox", "variation": null, "job": "Notification panel; numbered variant, no description"}
+{"id": "watermelon:notification-3", "node": "component/inbox", "variation": null, "job": "Notification panel; numbered variant, no description"}
+{"id": "watermelon:notification-4", "node": "component/inbox", "variation": null, "job": "Notification panel; numbered variant, no description"}
+{"id": "watermelon:notification-list", "node": "component/inbox", "variation": "notification-inbox", "job": "Notification list; no description"}
+{"id": "watermelon:onboarding-checklist", "node": "section/onboarding", "variation": "checklist", "job": "Step-by-step onboarding checklist with progress tracking"}
+{"id": "watermelon:onboarding-checklist-base", "node": "section/onboarding", "variation": "checklist", "job": "Step-by-step onboarding checklist with progress tracking"}
+{"id": "watermelon:onboarding-screen", "node": "page/onboarding-flow", "variation": "onboarding-stepper", "job": "Onboarding screen guiding setup through visual steps"}
+{"id": "watermelon:onboarding-screen-base", "node": "page/onboarding-flow", "variation": "onboarding-stepper", "job": "Onboarding screen guiding setup through visual steps"}
+{"id": "watermelon:onboarding-setup", "node": "component/steps", "variation": "onboarding-flow", "job": "Setup card guiding users through initial configuration steps"}
+{"id": "watermelon:onboarding-setup-base", "node": "component/steps", "variation": "onboarding-flow", "job": "Setup card guiding users through initial configuration steps"}
+{"id": "watermelon:option-list", "node": "component/list", "variation": "standard-list", "job": "List of selectable options; no description"}
+{"id": "watermelon:option-picker", "node": "component/select", "variation": "standard-select", "job": "Picker for choosing one option from a list"}
+{"id": "watermelon:pagination", "node": "component/pagination", "variation": "page-counter", "job": "Animated pagination control with previous and next arrows"}
+{"id": "watermelon:pagination-animated", "node": "component/pagination", "variation": null, "job": "Animated pagination control; no description"}
+{"id": "watermelon:pagination-base", "node": "component/pagination", "variation": "page-counter", "job": "Animated pagination control with previous and next arrows"}
+{"id": "watermelon:payment-operations-dashboard", "node": "page/dashboard", "variation": null, "job": "Payment operations dashboard screen; no description"}
+{"id": "watermelon:pin-item", "node": "component/list", "variation": "sortable", "job": "List with shared-layout transitions for pinning items"}
+{"id": "watermelon:pin-item-base", "node": "component/list", "variation": "sortable", "job": "List with shared-layout transitions for pinning items"}
+{"id": "watermelon:pin-list", "node": "component/list", "variation": "sortable", "job": "List of pinned items; no description"}
+{"id": "watermelon:playful-todolist", "node": "component/list", "variation": "standard-list", "job": "Playful to-do list of tasks"}
+{"id": "watermelon:pop-stepper", "node": "component/steps", "variation": "horizontal-stepper", "job": "Stepper with interactive micro-interactions"}
+{"id": "watermelon:pop-stepper-base", "node": "component/steps", "variation": "horizontal-stepper", "job": "Stepper with interactive micro-interactions"}
+{"id": "watermelon:popover", "node": "component/popover", "variation": "standard-popover", "job": "Popover panel anchored to a trigger; no description"}
+{"id": "watermelon:portfolio-dashboard", "node": "page/dashboard", "variation": null, "job": "Portfolio dashboard screen; no description"}
+{"id": "watermelon:predictive-text", "node": "atom/text-input", "variation": null, "job": "Suggests next words in real time while typing", "edge": "predictive next-word suggestions"}
+{"id": "watermelon:predictive-text-base", "node": "atom/text-input", "variation": null, "job": "Suggests next words in real time while typing", "edge": "predictive next-word suggestions"}
+{"id": "watermelon:pricing-1", "node": "section/pricing", "variation": null, "job": "Pricing section; numbered variant, no description"}
+{"id": "watermelon:pricing-2", "node": "section/pricing", "variation": null, "job": "Pricing section; numbered variant, no description"}
+{"id": "watermelon:pricing-3", "node": "section/pricing", "variation": null, "job": "Pricing section; numbered variant, no description"}
+{"id": "watermelon:pricing-4", "node": "section/pricing", "variation": null, "job": "Pricing section; numbered variant, no description"}
+{"id": "watermelon:pricing-5", "node": "section/pricing", "variation": "tier-cards", "job": "Pricing tiers shown as a whole section"}
+{"id": "watermelon:pricing-widget", "node": "section/pricing", "variation": "usage-slider", "job": "Animated pricing widget updating values as usage changes"}
+{"id": "watermelon:pricing-widget-base", "node": "section/pricing", "variation": "usage-slider", "job": "Base variant: animated pricing widget with dynamic values"}
+{"id": "watermelon:primary-button", "node": "atom/button", "variation": "primary", "job": "Primary call-to-action button"}
+{"id": "watermelon:profile-card", "node": "component/card", "variation": "profile-card", "job": "Compact card showing user details with quick actions"}
+{"id": "watermelon:profile-card-base", "node": "component/card", "variation": "profile-card", "job": "Base variant: compact user profile card"}
+{"id": "watermelon:progress", "node": "atom/progress", "variation": "linear", "job": "Shows linear progress toward completion"}
+{"id": "watermelon:progressive-input-stack", "node": "component/form", "variation": "multi-step", "job": "Form fields layer in progressively as each step completes"}
+{"id": "watermelon:progressive-input-stack-base", "node": "component/form", "variation": "multi-step", "job": "Base variant: progressive form field stack"}
+{"id": "watermelon:project-management-dashboard", "node": "page/dashboard", "variation": "dashboard-overview", "job": "Project management overview dashboard page"}
+{"id": "watermelon:quick-feedback", "node": "component/dialog", "variation": "form-dialog", "job": "Quick feedback dialog for instant user responses"}
+{"id": "watermelon:quick-feedback-base", "node": "component/dialog", "variation": "form-dialog", "job": "Base variant: quick feedback dialog"}
+{"id": "watermelon:quick-option-picker", "node": "component/select", "variation": "standard-select", "job": "Animated roll picker choosing one option from a list"}
+{"id": "watermelon:quick-option-picker-base", "node": "component/select", "variation": "standard-select", "job": "Base variant: animated option roll picker"}
+{"id": "watermelon:quick-paste", "node": "component/popover", "variation": "standard-popover", "job": "Shortcut-triggered floating panel to paste copied content"}
+{"id": "watermelon:quick-paste-base", "node": "component/popover", "variation": "standard-popover", "job": "Base variant: shortcut paste panel"}
+{"id": "watermelon:quick-switcher", "node": "component/dock", "variation": null, "job": "Action bar switching quickly between two modes", "edge": "dual-mode action switcher"}
+{"id": "watermelon:quick-switcher-base", "node": "component/dock", "variation": null, "job": "Base variant: two-mode action switcher bar", "edge": "dual-mode action switcher"}
+{"id": "watermelon:radial-carousel", "node": "component/carousel", "variation": null, "job": "Rotating radial carousel with drag and spring motion", "edge": "radial rotating carousel"}
+{"id": "watermelon:radial-carousel-base", "node": "component/carousel", "variation": null, "job": "Base variant: radial carousel rotating on drag", "edge": "radial rotating carousel"}
+{"id": "watermelon:radial-intro", "node": null, "variation": null, "job": "Decorative radial background, no job"}
+{"id": "watermelon:radial-nav", "node": "component/menu", "variation": "radial-menu", "job": "Radial menu for navigating between sections"}
+{"id": "watermelon:radio-group", "node": "atom/choice", "variation": "radio", "job": "Choose one option from a radio set"}
+{"id": "watermelon:radiogroup-1", "node": "atom/choice", "variation": "radio", "job": "Choose one option from a radio group"}
+{"id": "watermelon:radiogroup-10", "node": "atom/choice", "variation": "radio", "job": "Choose one option from a radio group"}
+{"id": "watermelon:radiogroup-11", "node": "atom/choice", "variation": "radio", "job": "Choose one option from a radio group"}
+{"id": "watermelon:radiogroup-12", "node": "atom/choice", "variation": "radio", "job": "Choose one option from a radio group"}
+{"id": "watermelon:radiogroup-13", "node": "atom/choice", "variation": "radio", "job": "Choose one option from a radio group"}
+{"id": "watermelon:radiogroup-2", "node": "atom/choice", "variation": "radio", "job": "Choose one option from a radio group"}
+{"id": "watermelon:radiogroup-3", "node": "atom/choice", "variation": "radio", "job": "Choose one option from a radio group"}
+{"id": "watermelon:radiogroup-4", "node": "atom/choice", "variation": "radio", "job": "Choose one option from a radio group"}
+{"id": "watermelon:radiogroup-5", "node": "atom/choice", "variation": "radio", "job": "Choose one option from a radio group"}
+{"id": "watermelon:radiogroup-6", "node": "atom/choice", "variation": "radio", "job": "Choose one option from a radio group"}
+{"id": "watermelon:radiogroup-7", "node": "atom/choice", "variation": "radio", "job": "Choose one option from a radio group"}
+{"id": "watermelon:radiogroup-8", "node": "atom/choice", "variation": "radio", "job": "Choose one option from a radio group"}
+{"id": "watermelon:radiogroup-9", "node": "atom/choice", "variation": "radio", "job": "Choose one option from a radio group"}
+{"id": "watermelon:range-selection-slider", "node": "atom/slider", "variation": "range", "job": "Pick a value range on a slider"}
+{"id": "watermelon:range-selection-slider-base", "node": "atom/slider", "variation": "range", "job": "Base variant: range selection slider"}
+{"id": "watermelon:returns-calculator-snippet", "node": "component/card", "variation": "standard-card", "job": "Card that estimates investment returns for users"}
+{"id": "watermelon:returns-calculator-snippet-base", "node": "component/card", "variation": "standard-card", "job": "Base variant: investment returns calculator card"}
+{"id": "watermelon:reveal-copy", "node": "atom/text", "variation": "body", "job": "Animated text reveal that uncovers copy on interaction"}
+{"id": "watermelon:reveal-copy-base", "node": "atom/text", "variation": "body", "job": "Base variant: animated copy reveal"}
+{"id": "watermelon:revealing-cards", "node": "component/card", "variation": "stack-flip", "job": "Cards reveal their content on micro-interaction"}
+{"id": "watermelon:revealing-cards-base", "node": "component/card", "variation": "stack-flip", "job": "Base variant: revealing cards"}
+{"id": "watermelon:ripple", "node": null, "variation": null, "job": "Decorative ripple background, no job"}
+{"id": "watermelon:run-action-button", "node": "atom/button", "variation": "loading", "job": "Action button running a multi-step sequence with states"}
+{"id": "watermelon:run-action-button-base", "node": "atom/button", "variation": "loading", "job": "Base variant: sequence-running action button"}
+{"id": "watermelon:run-widget", "node": "component/stat", "variation": "counter", "job": "Running distance shown as an animated counter"}
+{"id": "watermelon:run-widget-base", "node": "component/stat", "variation": "counter", "job": "Base variant: animated distance counter"}
+{"id": "watermelon:sales-dashboard", "node": "page/dashboard", "variation": "dashboard-analytics", "job": "Sales dashboard page with analytics"}
+{"id": "watermelon:save-toggle", "node": "atom/button", "variation": "toggle", "job": "Save button toggling across multiple states"}
+{"id": "watermelon:save-toggle-base", "node": "atom/button", "variation": "toggle", "job": "Base variant: multi-state save toggle"}
+{"id": "watermelon:schedule-button", "node": "component/picker", "variation": "date-picker", "job": "Button that opens date and time scheduling for posts"}
+{"id": "watermelon:schedule-button-base", "node": "component/picker", "variation": "date-picker", "job": "Base variant: schedule post button"}
+{"id": "watermelon:schedule-date", "node": "component/dialog", "variation": "form-dialog", "job": "Dialog to pick a date, time and confirm schedule"}
+{"id": "watermelon:schedule-date-base", "node": "component/dialog", "variation": "form-dialog", "job": "Base variant: date scheduling dialog"}
+{"id": "watermelon:scroll-fade", "node": "atom/layout", "variation": "scroll-area", "job": "Fades scroll area edges to hint more content"}
+{"id": "watermelon:scroll-island", "node": "component/dock", "variation": "floating-nav-pill", "job": "Floating island showing scroll progress and actions"}
+{"id": "watermelon:scroll-island-base", "node": "component/dock", "variation": "floating-nav-pill", "job": "Base variant: floating scroll progress island"}
+{"id": "watermelon:scrub-slider", "node": "atom/slider", "variation": "slider", "job": "Slider responding to drag and scrub interactions"}
+{"id": "watermelon:scrub-slider-base", "node": "atom/slider", "variation": "slider", "job": "Base variant: scrub slider"}
+{"id": "watermelon:select", "node": "component/select", "variation": "standard-select", "job": "Choose one option from a dropdown list"}
+{"id": "watermelon:select-ai-agent", "node": "component/agent-parts", "variation": "agents", "job": "Choose an AI agent from quick options"}
+{"id": "watermelon:select-ai-agent-base", "node": "component/agent-parts", "variation": "agents", "job": "Base variant: AI agent selector"}
+{"id": "watermelon:send-money", "node": "component/dialog", "variation": "form-dialog", "job": "Send-money dialog with confirmation and status states"}
+{"id": "watermelon:send-money-base", "node": "component/dialog", "variation": "form-dialog", "job": "Base variant: send-money dialog"}
+{"id": "watermelon:separator", "node": "atom/layout", "variation": null, "job": "Separates content with a divider rule", "edge": "plain divider line"}
+{"id": "watermelon:share-button", "node": "atom/button", "variation": "copy-share", "job": "Button that opens share options"}
+{"id": "watermelon:share-sheet", "node": "component/sheet", "variation": "bottom-sheet", "job": "Sheet expanding to list users for quick sharing"}
+{"id": "watermelon:share-sheet-base", "node": "component/sheet", "variation": "bottom-sheet", "job": "Base variant: share sheet"}
+{"id": "watermelon:sheet", "node": "component/sheet", "variation": "side-sheet", "job": "Sheet overlay panel showing extra content"}
+{"id": "watermelon:shimmer-button", "node": "atom/button", "variation": "primary", "job": "Primary button with shimmer effect on hover"}
+{"id": "watermelon:shimmer-button-base", "node": "atom/button", "variation": "primary", "job": "Base variant: shimmer primary button"}
+{"id": "watermelon:show-qr", "node": "component/card", "variation": "standard-card", "job": "Card showing a QR code"}
+{"id": "watermelon:show-qr-base", "node": "component/card", "variation": "standard-card", "job": "Base variant: QR code card"}
+{"id": "watermelon:shuffle-pinned-item", "node": "component/list", "variation": "sortable", "job": "List promoting pinned items to a shuffleable header"}
+{"id": "watermelon:shuffle-pinned-item-base", "node": "component/list", "variation": "sortable", "job": "Base variant: shuffleable pinned list"}
+{"id": "watermelon:sidebar", "node": "section/sidebar", "variation": "grouped", "job": "App sidebar navigation with grouped links"}
+{"id": "watermelon:skeleton", "node": "atom/loader", "variation": "skeleton", "job": "Placeholder skeleton shown while content loads"}
+{"id": "watermelon:slot-picker", "node": "component/picker", "variation": "time-picker", "job": "Time slot picker with spring animations"}
+{"id": "watermelon:slot-picker-base", "node": "component/picker", "variation": "time-picker", "job": "Base variant: time slot picker"}
+{"id": "watermelon:sonner-1", "node": "component/toast", "variation": "basic-toast", "job": "Toast notification with a brief feedback message"}
+{"id": "watermelon:sonner-10", "node": "component/toast", "variation": "basic-toast", "job": "Toast notification with a brief feedback message"}
+{"id": "watermelon:sonner-11", "node": "component/toast", "variation": "basic-toast", "job": "Toast notification with a brief feedback message"}
+{"id": "watermelon:sonner-12", "node": "component/toast", "variation": "basic-toast", "job": "Toast notification with a brief feedback message"}
+{"id": "watermelon:sonner-13", "node": "component/toast", "variation": "basic-toast", "job": "Toast notification with a brief feedback message"}
+{"id": "watermelon:sonner-14", "node": "component/toast", "variation": "basic-toast", "job": "Toast notification with a brief feedback message"}
+{"id": "watermelon:sonner-15", "node": "component/toast", "variation": "basic-toast", "job": "Toast notification with a brief feedback message"}
+{"id": "watermelon:sonner-16", "node": "component/toast", "variation": "basic-toast", "job": "Toast notification with a brief feedback message"}
+{"id": "watermelon:sonner-17", "node": "component/toast", "variation": "basic-toast", "job": "Toast notification with a brief feedback message"}
+{"id": "watermelon:sonner-18", "node": "component/toast", "variation": "basic-toast", "job": "Toast notification with a brief feedback message"}
+{"id": "watermelon:sonner-19", "node": "component/toast", "variation": "basic-toast", "job": "Toast notification with a brief feedback message"}
+{"id": "watermelon:sonner-2", "node": "component/toast", "variation": "basic-toast", "job": "Toast notification with a brief feedback message"}
+{"id": "watermelon:sonner-20", "node": "component/toast", "variation": "basic-toast", "job": "Toast notification with a brief feedback message"}
+{"id": "watermelon:sonner-3", "node": "component/toast", "variation": "basic-toast", "job": "Toast notification with a brief feedback message"}
+{"id": "watermelon:sonner-4", "node": "component/toast", "variation": "basic-toast", "job": "Toast notification with a brief feedback message"}
+{"id": "watermelon:sonner-5", "node": "component/toast", "variation": "basic-toast", "job": "Toast notification with a brief feedback message"}
+{"id": "watermelon:sonner-6", "node": "component/toast", "variation": "basic-toast", "job": "Toast notification with a brief feedback message"}
+{"id": "watermelon:sonner-7", "node": "component/toast", "variation": "basic-toast", "job": "Toast notification with a brief feedback message"}
+{"id": "watermelon:sonner-8", "node": "component/toast", "variation": "basic-toast", "job": "Toast notification with a brief feedback message"}
+{"id": "watermelon:sonner-9", "node": "component/toast", "variation": "basic-toast", "job": "Toast notification with a brief feedback message"}
+{"id": "watermelon:spinner", "node": "atom/loader", "variation": "spinner", "job": "Spinning loader showing work in progress"}
+{"id": "watermelon:split-actions", "node": "atom/button", "variation": "group", "job": "Split buttons grouping a primary action with related actions"}
+{"id": "watermelon:split-actions-base", "node": "atom/button", "variation": "group", "job": "Base variant: split action buttons"}
+{"id": "watermelon:split-button", "node": "atom/button", "variation": "group", "job": "Split button pairing a main action with a dropdown"}
+{"id": "watermelon:split-button-base", "node": "atom/button", "variation": "group", "job": "Base variant: split button"}
+{"id": "watermelon:split-to-edit", "node": "atom/text-input", "variation": "with-slots", "job": "Input splitting into editable segments on interaction"}
+{"id": "watermelon:split-to-edit-base", "node": "atom/text-input", "variation": "with-slots", "job": "Base variant: segmented editable input"}
+{"id": "watermelon:stats-1", "node": "component/stat", "variation": "stats-row", "job": "Row of headline figures summarising key numbers"}
+{"id": "watermelon:stats-2", "node": "component/stat", "variation": "stats-row", "job": "Row of headline figures summarising key numbers"}
+{"id": "watermelon:stats-3", "node": "component/stat", "variation": "stats-row", "job": "Row of headline figures summarising key numbers"}
+{"id": "watermelon:stats-4", "node": "component/stat", "variation": "stats-row", "job": "Row of headline figures summarising key numbers"}
+{"id": "watermelon:status-indicator", "node": "atom/status-dot", "variation": "standard", "job": "Dot showing live status state"}
+{"id": "watermelon:status-picker", "node": "component/select", "variation": "with-icons", "job": "Picker choosing among selectable status states"}
+{"id": "watermelon:status-picker-base", "node": "component/select", "variation": "with-icons", "job": "Base variant: status state picker"}
+{"id": "watermelon:step-indicator", "node": "component/steps", "variation": "progress-steps", "job": "Step indicator with tooltip showing current progress stage"}
+{"id": "watermelon:step-indicator-base", "node": "component/steps", "variation": "progress-steps", "job": "Base variant: step indicator with tooltip"}
+{"id": "watermelon:step-pager", "node": "component/steps", "variation": "progress-steps", "job": "Pager highlighting the current step with icon transitions"}
+{"id": "watermelon:step-pager-base", "node": "component/steps", "variation": "progress-steps", "job": "Base variant: step pager with icon transitions"}
+{"id": "watermelon:stepper", "node": "atom/text-input", "variation": "stepper", "job": "Numeric stepper with plus and minus controls"}
+{"id": "watermelon:stepper-base", "node": "atom/text-input", "variation": "stepper", "job": "Base variant: numeric stepper"}
+{"id": "watermelon:subscription-calendar", "node": "component/calendar", "variation": "event-calendar", "job": "Calendar showing subscription cycles and renewal dates"}
+{"id": "watermelon:subscription-calendar-base", "node": "component/calendar", "variation": "event-calendar", "job": "Base variant: subscription renewal calendar"}
+{"id": "watermelon:swap-currency-card", "node": "component/card", "variation": "standard-card", "job": "Card to swap between two currency amounts"}
+{"id": "watermelon:swap-currency-card-base", "node": "component/card", "variation": "standard-card", "job": "Base variant: currency swap card"}
+{"id": "watermelon:swap-form", "node": "component/form", "variation": "sign-in", "job": "Auth form toggling between sign-in and sign-up modes"}
+{"id": "watermelon:swap-form-base", "node": "component/form", "variation": "sign-in", "job": "Base variant: sign-in and sign-up toggle form"}
+{"id": "watermelon:switch", "node": "atom/switch", "variation": "standard", "job": "Switch turning a setting on or off"}
+{"id": "watermelon:switch-disclosure", "node": "component/accordion", "variation": "collapsible", "job": "Switch that reveals nested settings when turned on"}
+{"id": "watermelon:switch-disclosure-base", "node": "component/accordion", "variation": "collapsible", "job": "Base variant: switch-driven disclosure"}
+{"id": "watermelon:switch-mode", "node": "atom/switch", "variation": "theme-toggle", "job": "Animated theme toggle switching light and dark mode"}
+{"id": "watermelon:switch-mode-base", "node": "atom/switch", "variation": "theme-toggle", "job": "Base variant: animated theme toggle switch"}
+{"id": "watermelon:table", "node": "component/table", "variation": "standard-table", "job": "Table showing rows of structured data"}
+{"id": "watermelon:tabs", "node": "component/tabs", "variation": "underline", "job": "Tabs switching between related panels"}
+{"id": "watermelon:tags", "node": "component/tags", "variation": "basic-tag-input", "job": "Tag management with shared-layout add and remove"}
+{"id": "watermelon:tags-base", "node": "component/tags", "variation": "basic-tag-input", "job": "Base variant: tag management input"}
+{"id": "watermelon:tallie-dashboard", "node": "page/dashboard", "variation": "dashboard-overview", "job": "Tallie overview dashboard page"}
+{"id": "watermelon:task-management-dashboard", "node": "page/dashboard", "variation": "dashboard-operations", "job": "Task management dashboard for tracking work"}
+{"id": "watermelon:task-widget-disclosure", "node": "component/accordion", "variation": "card-style", "job": "Task widget that expands to show progress detail"}
+{"id": "watermelon:task-widget-disclosure-base", "node": "component/accordion", "variation": "card-style", "job": "Base variant: expandable task progress widget"}
+{"id": "watermelon:team-1", "node": "section/team", "variation": "card-grid", "job": "Team members shown as a card grid"}
+{"id": "watermelon:team-2", "node": "section/team", "variation": "card-grid", "job": "Team members shown as a card grid"}
+{"id": "watermelon:team-3", "node": "section/team", "variation": "card-grid", "job": "Team members shown as a card grid"}
+{"id": "watermelon:team-4", "node": "section/team", "variation": "card-grid", "job": "Team members shown as a card grid"}
+{"id": "watermelon:team-5", "node": "section/team", "variation": "card-grid", "job": "Team members shown as a card grid"}
+{"id": "watermelon:terminal", "node": "component/code", "variation": "terminal", "job": "Terminal window displaying command output"}
+{"id": "watermelon:testimonials-1", "node": "section/testimonials", "variation": "card-grid", "job": "Customer testimonials shown as a card grid"}
+{"id": "watermelon:testimonials-2", "node": "section/testimonials", "variation": "card-grid", "job": "Customer testimonials shown as a card grid"}
+{"id": "watermelon:testimonials-3", "node": "section/testimonials", "variation": "card-grid", "job": "Customer testimonials shown as a card grid"}
+{"id": "watermelon:testimonials-4", "node": "section/testimonials", "variation": "card-grid", "job": "Customer testimonials shown as a card grid"}
+{"id": "watermelon:text-gradient", "node": null, "variation": null, "job": "Decorative gradient text styling, no job"}
+{"id": "watermelon:textarea", "node": "atom/text-input", "variation": "textarea", "job": "Multi-line text entry field"}
+{"id": "watermelon:theme-toggler", "node": "atom/switch", "variation": "theme-toggle", "job": "Toggle switching the site theme"}
+{"id": "watermelon:time-undo-action", "node": "atom/button", "variation": null, "job": "Button with countdown to undo before finalising", "edge": "timed undo countdown"}
+{"id": "watermelon:time-undo-action-base", "node": "atom/button", "variation": null, "job": "Base variant: timed undo countdown button", "edge": "timed undo countdown"}
+{"id": "watermelon:timed-undo-action", "node": "atom/button", "variation": null, "job": "Button with countdown to undo before finalising", "edge": "timed undo countdown"}
+{"id": "watermelon:timed-undo-action-base", "node": "atom/button", "variation": null, "job": "Base variant: timed undo countdown button", "edge": "timed undo countdown"}
+{"id": "watermelon:timeline", "node": "component/timeline", "variation": "vertical-timeline", "job": "Vertical timeline of events in order"}
+{"id": "watermelon:toggle", "node": "atom/button", "variation": "toggle", "job": "Button toggling a state on and off"}
+{"id": "watermelon:toggle-group", "node": "atom/switch", "variation": "toggle-group", "job": "Group of toggles selecting one or several options"}
+{"id": "watermelon:tooltip", "node": "atom/tooltip", "variation": "standard", "job": "Hover tooltip showing a short label"}
+{"id": "watermelon:tooltip-animated", "node": "atom/tooltip", "variation": "standard", "job": "Animated hover tooltip showing a short label"}
+{"id": "watermelon:tooltip-navbar", "node": "section/nav", "variation": "simple-bar", "job": "Navigation bar with hover tooltips on each item"}
+{"id": "watermelon:tooltip-navbar-base", "node": "section/nav", "variation": "simple-bar", "job": "Base variant: navigation bar with hover tooltips"}
+{"id": "watermelon:tooltip-radix", "node": "atom/tooltip", "variation": "standard", "job": "Hover tooltip built on Radix primitives"}
+{"id": "watermelon:trade-summary", "node": "component/card", "variation": "stat-card", "job": "Card summarising trade positions, performance and metrics"}
+{"id": "watermelon:trade-summary-base", "node": "component/card", "variation": "stat-card", "job": "Base variant: trade summary card"}
+{"id": "watermelon:transaction-list", "node": "component/list", "variation": "standard-list", "job": "Animated list of transactions that expand for detail"}
+{"id": "watermelon:transaction-list-base", "node": "component/list", "variation": "standard-list", "job": "Base variant: transaction list with expand and collapse"}
+{"id": "watermelon:transcribe-voice-message", "node": "component/agent-parts", "variation": "transcript", "job": "Converts a voice message into text"}
+{"id": "watermelon:tree-menu", "node": "component/tree", "variation": "hierarchical", "job": "Nested tree navigation with animated level transitions"}
+{"id": "watermelon:tree-menu-base", "node": "component/tree", "variation": "hierarchical", "job": "Base variant: nested tree navigation menu"}
+{"id": "watermelon:uniswap-dialog", "node": "component/dialog", "variation": "modal-dialog", "job": "Dialog picking a region from a searchable country list"}
+{"id": "watermelon:uniswap-dialog-base", "node": "component/dialog", "variation": "modal-dialog", "job": "Base variant: region selector dialog"}
+{"id": "watermelon:use-auto-height", "node": null, "variation": null, "job": "Hook measuring element height automatically"}
+{"id": "watermelon:use-controlled-state", "node": null, "variation": null, "job": "Hook managing controlled and uncontrolled state"}
+{"id": "watermelon:use-data-state", "node": null, "variation": null, "job": "Hook exposing element data-state attributes"}
+{"id": "watermelon:use-is-in-view", "node": null, "variation": null, "job": "Hook reporting whether an element is in view"}
+{"id": "watermelon:use-mobile", "node": null, "variation": null, "job": "Hook reporting whether viewport is mobile"}
+{"id": "watermelon:user-presence-avatar", "node": "atom/avatar", "variation": "with-status", "job": "Avatar showing the user's live presence status"}
+{"id": "watermelon:utils", "node": null, "variation": null, "job": "Shared utility functions, no visual job"}
+{"id": "watermelon:vertical-tooltip-navbar", "node": "section/sidebar", "variation": "icon-rail", "job": "Vertical icon rail with tooltips revealed on hover"}
+{"id": "watermelon:vertical-tooltip-navbar-base", "node": "section/sidebar", "variation": "icon-rail", "job": "Base variant: vertical icon rail with tooltips"}
+{"id": "watermelon:view-on-map", "node": "component/map", "variation": "pin-map", "job": "Map showing locations with zoom, pins and directions"}
+{"id": "watermelon:view-on-map-base", "node": "component/map", "variation": "pin-map", "job": "Base variant: map of locations with pins"}
+{"id": "watermelon:voice-chat-disclosure", "node": "component/agent-parts", "variation": "voice-orb", "job": "Expandable voice chat pill with avatars and voice indicator"}
+{"id": "watermelon:voice-chat-disclosure-base", "node": "component/agent-parts", "variation": "voice-orb", "job": "Base variant: expandable voice chat pill"}
+{"id": "watermelon:voice-note", "node": "component/player", "variation": "audio-player", "job": "Records, previews and manages short audio voice notes"}
+{"id": "watermelon:voice-note-base", "node": "component/player", "variation": "audio-player", "job": "Base variant: voice note recording and preview"}
+{"id": "watermelon:voice-transcribe", "node": "component/agent-parts", "variation": "transcript", "job": "Converts speech into text in real time"}
+{"id": "watermelon:voice-transcribe-base", "node": "component/agent-parts", "variation": "transcript", "job": "Base variant: speech-to-text transcription display"}
+{"id": "watermelon:waveform-scrub", "node": "component/player", "variation": "waveform-visualizer", "job": "Waveform scrubber for precise audio navigation and playback"}
+{"id": "watermelon:waveform-scrub-base", "node": "component/player", "variation": "waveform-visualizer", "job": "Base variant: waveform audio scrubber"}
+{"id": "watermelon:web3-dashboard", "node": "page/dashboard", "variation": "dashboard-overview", "job": "Web3 overview dashboard page"}
+{"id": "watermelon:weight-widget", "node": "atom/slider", "variation": "with-ticks", "job": "Sliding weight scale with ticks for precise input"}
+{"id": "watermelon:weight-widget-base", "node": "atom/slider", "variation": "with-ticks", "job": "Base variant: weight sliding scale input"}
+{"id": "watermelon:widget-1", "node": "component/card", "variation": "standard-card", "job": "Generic widget card, no description given"}
+{"id": "watermelon:widget-2", "node": "component/card", "variation": "standard-card", "job": "Generic widget card, no description given"}
+{"id": "watermelon:widget-3", "node": "component/card", "variation": "standard-card", "job": "Generic widget card, no description given"}
+{"id": "watermelon:widget-4", "node": "component/card", "variation": "standard-card", "job": "Generic widget card, no description given"}
+{"id": "watermelon:widget-5", "node": "component/card", "variation": "standard-card", "job": "Generic widget card, no description given"}
+{"id": "watermelon:widget-6", "node": "component/card", "variation": "standard-card", "job": "Generic widget card, no description given"}
+{"id": "watermelon:widget-7", "node": "component/card", "variation": "standard-card", "job": "Generic widget card, no description given"}
+{"id": "watermelon:widget-8", "node": "component/card", "variation": "standard-card", "job": "Generic widget card, no description given"}
+{"id": "watermelon:widget-9", "node": "component/card", "variation": "standard-card", "job": "Generic widget card, no description given"}
+{"id": "watermelon:wiggling-cards", "node": "component/carousel", "variation": "cards-carousel", "job": "Card carousel with playful wiggle during navigation"}
+{"id": "watermelon:wiggling-cards-base", "node": "component/carousel", "variation": "cards-carousel", "job": "Base variant: wiggling card carousel"}
+{"id": "watermelon:workflow-management-dashboard", "node": "page/dashboard", "variation": "dashboard-operations", "job": "Workflow management dashboard page"}
+{"id": "watermelon:x-post", "node": "component/card", "variation": "standard-card", "job": "Card displaying an X social post"}

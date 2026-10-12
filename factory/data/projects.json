@@ -1,0 +1,80 @@
+{
+ "_about": "Built by factory/bin/build-data from inventory/ (the UI Hub's nightly census).",
+ "projects": [
+  {
+   "id": "halo-crm",
+   "name": "HALO CRM",
+   "about": "Cam's agency CRM (names only: his code stays his)",
+   "components": 723,
+   "pages": 85,
+   "picked": 0,
+   "needsPick": 0,
+   "ours": 0,
+   "dead": 0,
+   "weak": 0,
+   "sha": "a14fdfee8b",
+   "ref": "origin/cam/widgets-v3",
+   "namesOnly": true
+  },
+  {
+   "id": "model-app",
+   "name": "Model app",
+   "about": "HALO Oracle: the models' app",
+   "components": 389,
+   "pages": 35,
+   "picked": 43,
+   "needsPick": 60,
+   "ours": 264,
+   "dead": 22,
+   "weak": 7,
+   "sha": "fec17b5b3c",
+   "ref": "origin/streaming/rc-first-model-20261006",
+   "namesOnly": false
+  },
+  {
+   "id": "operator-redesign",
+   "name": "Operator redesign",
+   "about": "HALO Oracle: the operator app's redesign",
+   "components": 268,
+   "pages": 52,
+   "picked": 72,
+   "needsPick": 30,
+   "ours": 141,
+   "dead": 25,
+   "weak": 15,
+   "sha": "3187deb8e6",
+   "ref": "origin/operator-ui/opus-20261006",
+   "namesOnly": false
+  },
+  {
+   "id": "agent-base",
+   "name": "Agent Base",
+   "about": "SISO Labs, the app you live in",
+   "components": 173,
+   "pages": 27,
+   "picked": 0,
+   "needsPick": 27,
+   "ours": 130,
+   "dead": 16,
+   "weak": 10,
+   "sha": "58b48c6801",
+   "ref": "origin/main",
+   "namesOnly": false
+  },
+  {
+   "id": "operator",
+   "name": "Operator app",
+   "about": "HALO Oracle: the streaming operator dashboard",
+   "components": 157,
+   "pages": 30,
+   "picked": 14,
+   "needsPick": 24,
+   "ours": 99,
+   "dead": 20,
+   "weak": 15,
+   "sha": "fce0976671",
+   "ref": "main",
+   "namesOnly": false
+  }
+ ]
+}

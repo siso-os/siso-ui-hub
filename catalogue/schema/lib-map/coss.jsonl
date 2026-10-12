@@ -1,0 +1,576 @@
+{"id": "coss:accordion", "node": "component/accordion", "variation": "standard-accordion", "job": "Stacked sections that expand on click"}
+{"id": "coss:alert", "node": "component/alert", "variation": "inline-alert", "job": "Inline message for status or feedback"}
+{"id": "coss:alert-dialog", "node": "component/dialog", "variation": "confirm-alert", "job": "Confirmation dialog before a destructive action"}
+{"id": "coss:autocomplete", "node": "component/select", "variation": "combobox", "job": "Typed input with suggestions to pick from"}
+{"id": "coss:avatar", "node": "atom/avatar", "variation": "standard", "job": "Person or organisation image or initials"}
+{"id": "coss:badge", "node": "atom/badge", "variation": "badge", "job": "Small label showing status or a count"}
+{"id": "coss:breadcrumb", "node": "component/breadcrumb", "variation": "text-breadcrumb", "job": "Trail of links showing location in the hierarchy"}
+{"id": "coss:button", "node": "atom/button", "variation": "primary", "job": "Clickable button that triggers an action"}
+{"id": "coss:calendar", "node": "component/calendar", "variation": "month-calendar", "job": "Month grid for viewing and selecting dates"}
+{"id": "coss:card", "node": "component/card", "variation": "standard-card", "job": "Container grouping related content together"}
+{"id": "coss:checkbox", "node": "atom/choice", "variation": "checkbox", "job": "Tick an option on or off"}
+{"id": "coss:checkbox-group", "node": "atom/choice", "variation": "group", "job": "Set of checkboxes selecting several options"}
+{"id": "coss:collapsible", "node": "component/accordion", "variation": "collapsible", "job": "Single section that expands and collapses"}
+{"id": "coss:colors-neutral", "node": null, "variation": null, "job": "Neutral colour palette tokens for the theme"}
+{"id": "coss:combobox", "node": "component/select", "variation": "combobox", "job": "Searchable dropdown to choose one option"}
+{"id": "coss:command", "node": "component/command", "variation": "command-palette", "job": "Keyboard-driven menu to search and run actions"}
+{"id": "coss:context-menu", "node": "component/menu", "variation": "context-menu", "job": "Right-click menu of actions for the target"}
+{"id": "coss:csp-provider", "node": null, "variation": null, "job": "Provider setting content security policy nonce"}
+{"id": "coss:dialog", "node": "component/dialog", "variation": "modal-dialog", "job": "Modal window overlaying the page for a task"}
+{"id": "coss:direction-provider", "node": null, "variation": null, "job": "Provider setting text direction for the app"}
+{"id": "coss:drawer", "node": "component/sheet", "variation": "side-sheet", "job": "Edge-anchored overlay panel sliding in from a side"}
+{"id": "coss:empty", "node": "component/empty", "variation": "icon-text", "job": "Placeholder with icon and text when nothing exists"}
+{"id": "coss:field", "node": "component/field", "variation": "text-input", "job": "Labelled input wrapper with description and errors"}
+{"id": "coss:fieldset", "node": "component/field", "variation": null, "job": "Group related form fields under one legend", "edge": "field group fieldset"}
+{"id": "coss:font-heading", "node": null, "variation": null, "job": "Heading font asset setup"}
+{"id": "coss:font-mono", "node": null, "variation": null, "job": "Monospace font asset setup"}
+{"id": "coss:font-sans", "node": null, "variation": null, "job": "Sans-serif font asset setup"}
+{"id": "coss:fonts", "node": null, "variation": null, "job": "Font set loading for the theme"}
+{"id": "coss:form", "node": "component/form", "variation": "with-validation", "job": "Form wrapper with validation and submit handling"}
+{"id": "coss:frame", "node": "atom/layout", "variation": null, "job": "Bordered container framing a group of content", "edge": "framed content container"}
+{"id": "coss:group", "node": "atom/layout", "variation": null, "job": "Joins adjacent controls into one visual group", "edge": "joined control group"}
+{"id": "coss:input", "node": "atom/text-input", "variation": "text-input", "job": "Single-line text entry field"}
+{"id": "coss:kbd", "node": "atom/text", "variation": "keyboard", "job": "Styled keyboard key glyph for shortcuts"}
+{"id": "coss:label", "node": "atom/text", "variation": null, "job": "Caption naming a form control for accessibility", "edge": "form label"}
+{"id": "coss:menu", "node": "component/menu", "variation": "dropdown-menu", "job": "Button-triggered menu listing actions or options"}
+{"id": "coss:merge-props", "node": null, "variation": null, "job": "Utility merging component props together"}
+{"id": "coss:meter", "node": "atom/progress", "variation": "meter-gauge", "job": "Gauge showing a value within a known range"}
+{"id": "coss:number-field", "node": "component/field", "variation": "number-stepper", "job": "Numeric input with increment and decrement controls"}
+{"id": "coss:otp-field", "node": "atom/text-input", "variation": "otp", "job": "Segmented boxes for entering a one-time code"}
+{"id": "coss:p-accordion-1", "node": "component/accordion", "variation": "standard-accordion", "job": "Basic accordion with expandable sections"}
+{"id": "coss:p-accordion-2", "node": "component/accordion", "variation": "standard-accordion", "job": "Accordion showing one panel open by default"}
+{"id": "coss:p-accordion-3", "node": "component/accordion", "variation": "standard-accordion", "job": "Accordion letting several panels open together"}
+{"id": "coss:p-accordion-4", "node": "component/accordion", "variation": "standard-accordion", "job": "Controlled accordion whose open state code sets"}
+{"id": "coss:p-alert-1", "node": "component/alert", "variation": "inline-alert", "job": "Basic inline alert message"}
+{"id": "coss:p-alert-2", "node": "component/alert", "variation": "inline-alert", "job": "Inline alert with an icon for status"}
+{"id": "coss:p-alert-3", "node": "component/alert", "variation": "inline-alert", "job": "Inline alert with icon and action buttons"}
+{"id": "coss:p-alert-4", "node": "component/alert", "variation": "inline-alert", "job": "Informational inline alert message"}
+{"id": "coss:p-alert-5", "node": "component/alert", "variation": "inline-alert", "job": "Success inline alert message"}
+{"id": "coss:p-alert-6", "node": "component/alert", "variation": "inline-alert", "job": "Warning inline alert message"}
+{"id": "coss:p-alert-7", "node": "component/alert", "variation": "inline-alert", "job": "Error inline alert message"}
+{"id": "coss:p-alert-dialog-1", "node": "component/dialog", "variation": "confirm-alert", "job": "Alert dialog asking the user to confirm"}
+{"id": "coss:p-alert-dialog-2", "node": "component/dialog", "variation": "confirm-alert", "job": "Alert dialog with a bare footer"}
+{"id": "coss:p-autocomplete-1", "node": "component/select", "variation": "combobox", "job": "Basic autocomplete suggesting matching options"}
+{"id": "coss:p-autocomplete-10", "node": "component/select", "variation": "combobox", "job": "Autocomplete with options grouped under headings"}
+{"id": "coss:p-autocomplete-11", "node": "component/select", "variation": "combobox", "job": "Autocomplete with a limited number of results"}
+{"id": "coss:p-autocomplete-12", "node": "component/select", "variation": "combobox", "job": "Autocomplete loading async items as user types"}
+{"id": "coss:p-autocomplete-13", "node": "component/select", "variation": "combobox", "job": "Autocomplete inside a form"}
+{"id": "coss:p-autocomplete-14", "node": "component/select", "variation": "combobox", "job": "Autocomplete inside a form"}
+{"id": "coss:p-autocomplete-15", "node": "component/select", "variation": "combobox", "job": "Pill-shaped autocomplete input"}
+{"id": "coss:p-autocomplete-16", "node": "component/select", "variation": "combobox", "job": "Address autocomplete using Google Places suggestions"}
+{"id": "coss:p-autocomplete-2", "node": "component/select", "variation": "combobox", "job": "Disabled autocomplete input"}
+{"id": "coss:p-autocomplete-3", "node": "component/select", "variation": "combobox", "job": "Small autocomplete input"}
+{"id": "coss:p-autocomplete-4", "node": "component/select", "variation": "combobox", "job": "Large autocomplete input"}
+{"id": "coss:p-autocomplete-5", "node": "component/select", "variation": "combobox", "job": "Autocomplete with a visible label"}
+{"id": "coss:p-autocomplete-6", "node": "component/select", "variation": "combobox", "job": "Autocomplete filling input with highlighted item"}
+{"id": "coss:p-autocomplete-7", "node": "component/select", "variation": "combobox", "job": "Autocomplete auto-highlighting the first option"}
+{"id": "coss:p-autocomplete-8", "node": "component/select", "variation": "combobox", "job": "Autocomplete with a clear button"}
+{"id": "coss:p-autocomplete-9", "node": "component/select", "variation": "combobox", "job": "Autocomplete with trigger and clear buttons"}
+{"id": "coss:p-avatar-1", "node": "atom/avatar", "variation": "standard", "job": "Avatar with image and fallback initials"}
+{"id": "coss:p-avatar-10", "node": "atom/avatar", "variation": "standard", "job": "Avatar with notification badge"}
+{"id": "coss:p-avatar-11", "node": "atom/avatar", "variation": "standard", "job": "Rounded avatar with notification badge"}
+{"id": "coss:p-avatar-12", "node": "atom/avatar", "variation": "standard", "job": "Avatar with verified badge"}
+{"id": "coss:p-avatar-13", "node": "atom/avatar", "variation": "avatar-group", "job": "Small overlapping avatar group"}
+{"id": "coss:p-avatar-14", "node": "atom/avatar", "variation": "avatar-group", "job": "Large overlapping avatar group"}
+{"id": "coss:p-avatar-2", "node": "atom/avatar", "variation": "fallback", "job": "Avatar showing fallback only"}
+{"id": "coss:p-avatar-3", "node": "atom/avatar", "variation": "standard", "job": "Avatars in different sizes"}
+{"id": "coss:p-avatar-4", "node": "atom/avatar", "variation": "standard", "job": "Avatars with different corner radii"}
+{"id": "coss:p-avatar-5", "node": "atom/avatar", "variation": "avatar-group", "job": "Overlapping avatar group"}
+{"id": "coss:p-avatar-6", "node": "atom/avatar", "variation": "fallback", "job": "Avatar with user icon fallback"}
+{"id": "coss:p-avatar-7", "node": "atom/avatar", "variation": "with-status", "job": "Avatar with emerald online status dot"}
+{"id": "coss:p-avatar-8", "node": "atom/avatar", "variation": "with-status", "job": "Avatar with muted status dot"}
+{"id": "coss:p-avatar-9", "node": "atom/avatar", "variation": "with-status", "job": "Rounded avatar with top-right status dot"}
+{"id": "coss:p-badge-1", "node": "atom/badge", "variation": "badge", "job": "Basic badge label"}
+{"id": "coss:p-badge-10", "node": "atom/badge", "variation": "badge", "job": "Large badge label"}
+{"id": "coss:p-badge-11", "node": "atom/badge", "variation": "icon-badge", "job": "Badge with an icon"}
+{"id": "coss:p-badge-12", "node": "atom/badge", "variation": "badge", "job": "Badge that links somewhere"}
+{"id": "coss:p-badge-13", "node": "atom/badge", "variation": "count", "job": "Badge showing a count"}
+{"id": "coss:p-badge-14", "node": "atom/badge", "variation": "badge", "job": "Full rounded pill badge"}
+{"id": "coss:p-badge-15", "node": "atom/badge", "variation": "count", "job": "Badge with a number after text"}
+{"id": "coss:p-badge-16", "node": "atom/badge", "variation": "badge", "job": "Paid status badge"}
+{"id": "coss:p-badge-17", "node": "atom/badge", "variation": "badge", "job": "Pending status badge"}
+{"id": "coss:p-badge-18", "node": "atom/badge", "variation": "badge", "job": "Failed status badge"}
+{"id": "coss:p-badge-19", "node": "atom/badge", "variation": "tag-chip", "job": "Selectable badge with a checkbox"}
+{"id": "coss:p-badge-2", "node": "atom/badge", "variation": "badge", "job": "Outline badge label"}
+{"id": "coss:p-badge-20", "node": "atom/badge", "variation": "tag-chip", "job": "Removable badge with close button"}
+{"id": "coss:p-badge-3", "node": "atom/badge", "variation": "badge", "job": "Secondary styled badge"}
+{"id": "coss:p-badge-4", "node": "atom/badge", "variation": "badge", "job": "Destructive styled badge"}
+{"id": "coss:p-badge-5", "node": "atom/badge", "variation": "badge", "job": "Info styled badge"}
+{"id": "coss:p-badge-6", "node": "atom/badge", "variation": "badge", "job": "Success styled badge"}
+{"id": "coss:p-badge-7", "node": "atom/badge", "variation": "badge", "job": "Warning styled badge"}
+{"id": "coss:p-badge-8", "node": "atom/badge", "variation": "badge", "job": "Error styled badge"}
+{"id": "coss:p-badge-9", "node": "atom/badge", "variation": "badge", "job": "Small badge label"}
+{"id": "coss:p-breadcrumb-1", "node": "component/breadcrumb", "variation": "with-dropdown", "job": "Breadcrumb with a dropdown menu example"}
+{"id": "coss:p-breadcrumb-2", "node": "component/breadcrumb", "variation": "text-breadcrumb", "job": "Breadcrumb with custom separator"}
+{"id": "coss:p-breadcrumb-3", "node": "component/breadcrumb", "variation": "with-icons", "job": "Breadcrumb with a home icon on the home link"}
+{"id": "coss:p-breadcrumb-4", "node": "component/breadcrumb", "variation": "with-dropdown", "job": "Breadcrumb with a folders icon opening a menu"}
+{"id": "coss:p-breadcrumb-5", "node": "component/breadcrumb", "variation": "with-icons", "job": "Breadcrumb with icons placed before each label"}
+{"id": "coss:p-breadcrumb-6", "node": "component/breadcrumb", "variation": "text-breadcrumb", "job": "Breadcrumb with dot separators between links"}
+{"id": "coss:p-breadcrumb-7", "node": "component/breadcrumb", "variation": "with-dropdown", "job": "Breadcrumb with a select dropdown for navigation"}
+{"id": "coss:p-button-1", "node": "atom/button", "variation": "primary", "job": "Default primary button triggering an action"}
+{"id": "coss:p-button-10", "node": "atom/button", "variation": "primary", "job": "Large button triggering an action"}
+{"id": "coss:p-button-11", "node": "atom/button", "variation": "primary", "job": "Extra-large button triggering an action"}
+{"id": "coss:p-button-12", "node": "atom/button", "variation": "primary", "job": "Disabled button showing an unavailable action"}
+{"id": "coss:p-button-13", "node": "atom/button", "variation": "icon-button", "job": "Icon-only button triggering an action"}
+{"id": "coss:p-button-14", "node": "atom/button", "variation": "icon-button", "job": "Small icon-only button triggering an action"}
+{"id": "coss:p-button-15", "node": "atom/button", "variation": "icon-button", "job": "Large icon-only button triggering an action"}
+{"id": "coss:p-button-16", "node": "atom/button", "variation": "primary", "job": "Button with an icon beside its label"}
+{"id": "coss:p-button-17", "node": "atom/link", "variation": "standard", "job": "Link element styled to look like a button"}
+{"id": "coss:p-button-18", "node": "atom/button", "variation": "loading", "job": "Loading button with a manually added spinner"}
+{"id": "coss:p-button-19", "node": "atom/button", "variation": "toggle", "job": "Toggle button switching between show more and less"}
+{"id": "coss:p-button-2", "node": "atom/button", "variation": "primary", "job": "Outline button triggering an action"}
+{"id": "coss:p-button-20", "node": "atom/link", "variation": "navigation", "job": "Back link with chevron returning to previous page"}
+{"id": "coss:p-button-21", "node": "atom/button", "variation": null, "job": "Card-like button with heading and description that triggers an action", "edge": "card-style action button"}
+{"id": "coss:p-button-22", "node": "atom/button", "variation": "group", "job": "Directional pad of control buttons"}
+{"id": "coss:p-button-23", "node": "atom/button", "variation": "toggle", "job": "Like toggle button showing a count"}
+{"id": "coss:p-button-24", "node": "atom/button", "variation": "social-brand", "job": "Social login icon buttons"}
+{"id": "coss:p-button-26", "node": "atom/button", "variation": "toggle", "job": "Star toggle button with a count badge"}
+{"id": "coss:p-button-27", "node": "atom/button", "variation": "group", "job": "Button group with QR code icon and sign-in action"}
+{"id": "coss:p-button-28", "node": "atom/button", "variation": "primary", "job": "Button with an avatar beside its label"}
+{"id": "coss:p-button-29", "node": "atom/button", "variation": "primary", "job": "Pill-shaped button triggering an action"}
+{"id": "coss:p-button-3", "node": "atom/button", "variation": "primary", "job": "Secondary button triggering an action"}
+{"id": "coss:p-button-30", "node": "atom/button", "variation": "primary", "job": "Button with an arrow that animates on hover"}
+{"id": "coss:p-button-31", "node": "atom/button", "variation": "primary", "job": "Button showing a keyboard shortcut hint"}
+{"id": "coss:p-button-32", "node": "atom/button", "variation": "primary", "job": "Button with a notification badge"}
+{"id": "coss:p-button-33", "node": "atom/button", "variation": "group", "job": "Paired Cancel and Save buttons"}
+{"id": "coss:p-button-34", "node": "atom/button", "variation": "primary", "job": "Button with an animated status dot"}
+{"id": "coss:p-button-35", "node": "atom/button", "variation": "copy-share", "job": "Icon-only copy button with feedback on click"}
+{"id": "coss:p-button-36", "node": "atom/button", "variation": "copy-share", "job": "Copy button with feedback on click"}
+{"id": "coss:p-button-37", "node": "atom/button", "variation": "toggle", "job": "Rotating icon button toggling a floating action menu"}
+{"id": "coss:p-button-38", "node": "atom/button", "variation": "social-brand", "job": "Social login buttons for Google, X and GitHub"}
+{"id": "coss:p-button-39", "node": "atom/button", "variation": "toggle", "job": "Hamburger button animating into a close icon"}
+{"id": "coss:p-button-4", "node": "atom/button", "variation": "primary", "job": "Destructive button for irreversible actions"}
+{"id": "coss:p-button-40", "node": "atom/button", "variation": "loading", "job": "Download button showing progress with cancel"}
+{"id": "coss:p-button-41", "node": "atom/button", "variation": "loading", "job": "Button using the built-in loading prop"}
+{"id": "coss:p-button-5", "node": "atom/button", "variation": "primary", "job": "Destructive outline button for risky actions"}
+{"id": "coss:p-button-6", "node": "atom/button", "variation": "primary", "job": "Ghost button with no background until hover"}
+{"id": "coss:p-button-7", "node": "atom/button", "variation": "primary", "job": "Link-styled button triggering an action"}
+{"id": "coss:p-button-8", "node": "atom/button", "variation": "primary", "job": "Extra-small button triggering an action"}
+{"id": "coss:p-button-9", "node": "atom/button", "variation": "primary", "job": "Small button triggering an action"}
+{"id": "coss:p-calendar-1", "node": "component/calendar", "variation": "date-picker", "job": "Basic calendar for selecting a single date"}
+{"id": "coss:p-calendar-10", "node": "component/calendar", "variation": "range-picker", "job": "Calendar with rounded range selection styling"}
+{"id": "coss:p-calendar-11", "node": "component/calendar", "variation": "date-picker", "job": "Calendar with right-aligned month navigation"}
+{"id": "coss:p-calendar-12", "node": "component/calendar", "variation": "date-picker", "job": "Calendar showing week numbers beside rows"}
+{"id": "coss:p-calendar-13", "node": "component/calendar", "variation": "date-picker", "job": "Calendar with a year dropdown combobox"}
+{"id": "coss:p-calendar-14", "node": "component/calendar", "variation": "date-picker", "job": "Calendar navigated by dropdowns, no arrows"}
+{"id": "coss:p-calendar-15", "node": "component/calendar", "variation": "date-picker", "job": "Calendar with a button jumping to current month"}
+{"id": "coss:p-calendar-16", "node": "component/calendar", "variation": "date-picker", "job": "Calendar with a button jumping to today"}
+{"id": "coss:p-calendar-17", "node": "component/calendar", "variation": "date-picker", "job": "Calendar paired with a typed date input"}
+{"id": "coss:p-calendar-18", "node": "component/calendar", "variation": "date-picker", "job": "Calendar paired with a time input for date and time"}
+{"id": "coss:p-calendar-19", "node": "component/calendar", "variation": null, "job": "Pick a date, then a bookable time slot", "edge": "appointment slot picker"}
+{"id": "coss:p-calendar-2", "node": "component/calendar", "variation": "month-calendar", "job": "Month calendar with custom-sized day cells"}
+{"id": "coss:p-calendar-20", "node": "component/picker", "variation": "presets", "job": "Calendar picker with quick date presets"}
+{"id": "coss:p-calendar-21", "node": "component/picker", "variation": "presets", "job": "Range calendar picker with quick date presets"}
+{"id": "coss:p-calendar-22", "node": "component/calendar", "variation": "month-calendar", "job": "Two-month calendar for browsing dates"}
+{"id": "coss:p-calendar-23", "node": "component/calendar", "variation": "month-calendar", "job": "Three-month calendar for browsing dates"}
+{"id": "coss:p-calendar-24", "node": "component/calendar", "variation": "month-calendar", "job": "Pricing calendar with custom day buttons"}
+{"id": "coss:p-calendar-25", "node": "component/calendar", "variation": "month-calendar", "job": "Calendar with 24-hour time autocomplete input"}
+{"id": "coss:p-calendar-3", "node": "component/calendar", "variation": "range-picker", "job": "Calendar for selecting a date range"}
+{"id": "coss:p-calendar-4", "node": "component/calendar", "variation": "month-calendar", "job": "Calendar with month and year dropdown navigation"}
+{"id": "coss:p-calendar-5", "node": "component/calendar", "variation": "month-calendar", "job": "Calendar with Select dropdowns for month and year"}
+{"id": "coss:p-calendar-6", "node": "component/calendar", "variation": "month-calendar", "job": "Calendar with Combobox dropdowns for month and year"}
+{"id": "coss:p-calendar-7", "node": "component/calendar", "variation": "month-calendar", "job": "Calendar with disabled dates"}
+{"id": "coss:p-calendar-8", "node": "component/calendar", "variation": "month-calendar", "job": "Calendar allowing multiple date selection"}
+{"id": "coss:p-calendar-9", "node": "component/calendar", "variation": "month-calendar", "job": "Calendar with rounded day buttons"}
+{"id": "coss:p-card-1", "node": "component/card", "variation": "standard-card", "job": "Basic card with header and footer"}
+{"id": "coss:p-card-10", "node": "component/card", "variation": "standard-card", "job": "Card inside a frame with header and footer"}
+{"id": "coss:p-card-11", "node": "component/card", "variation": "standard-card", "job": "Card frame with header action"}
+{"id": "coss:p-card-2", "node": "component/form", "variation": "sign-in", "job": "Sign-in card with actions"}
+{"id": "coss:p-card-3", "node": "component/form", "variation": "sign-in", "job": "Sign-in card with separators"}
+{"id": "coss:p-card-4", "node": "component/card", "variation": "standard-card", "job": "Framed card with footer"}
+{"id": "coss:p-card-5", "node": "component/card", "variation": "standard-card", "job": "Framed card with header"}
+{"id": "coss:p-card-6", "node": "component/card", "variation": "standard-card", "job": "Framed card with header and footer"}
+{"id": "coss:p-card-7", "node": "component/card", "variation": "standard-card", "job": "Framed card without rounded bottom"}
+{"id": "coss:p-card-8", "node": "component/card", "variation": "standard-card", "job": "Card inside a frame with footer"}
+{"id": "coss:p-card-9", "node": "component/card", "variation": "standard-card", "job": "Card inside a frame with footer"}
+{"id": "coss:p-checkbox-1", "node": "atom/choice", "variation": "checkbox", "job": "Basic checkbox"}
+{"id": "coss:p-checkbox-2", "node": "atom/choice", "variation": "checkbox", "job": "Disabled checkbox"}
+{"id": "coss:p-checkbox-3", "node": "atom/choice", "variation": "with-description", "job": "Checkbox with description text"}
+{"id": "coss:p-checkbox-4", "node": "atom/choice", "variation": "card", "job": "Card-style checkbox option"}
+{"id": "coss:p-checkbox-5", "node": "component/form", "variation": "with-validation", "job": "Form with a checkbox input"}
+{"id": "coss:p-checkbox-group-1", "node": "atom/choice", "variation": "group", "job": "Basic checkbox group"}
+{"id": "coss:p-checkbox-group-2", "node": "atom/choice", "variation": "group", "job": "Checkbox group with disabled items"}
+{"id": "coss:p-checkbox-group-3", "node": "atom/choice", "variation": "group", "job": "Checkbox group with parent select-all checkbox"}
+{"id": "coss:p-checkbox-group-4", "node": "atom/choice", "variation": "group", "job": "Nested checkbox group under a parent"}
+{"id": "coss:p-checkbox-group-5", "node": "component/form", "variation": "with-validation", "job": "Form built from a checkbox group"}
+{"id": "coss:p-collapsible-1", "node": "component/accordion", "variation": "collapsible", "job": "Basic collapsible section that expands and collapses"}
+{"id": "coss:p-combobox-1", "node": "component/select", "variation": "combobox", "job": "Basic combobox select with search"}
+{"id": "coss:p-combobox-10", "node": "component/select", "variation": "combobox", "job": "Combobox with input inside the popup"}
+{"id": "coss:p-combobox-11", "node": "component/form", "variation": "with-validation", "job": "Form with a combobox field"}
+{"id": "coss:p-combobox-12", "node": "component/form", "variation": "with-validation", "job": "Form with a multiple-select combobox field"}
+{"id": "coss:p-combobox-13", "node": "component/select", "variation": "combobox", "job": "Combobox with start addon icon"}
+{"id": "coss:p-combobox-14", "node": "component/select", "variation": "multi-select", "job": "Multiple-select combobox with start addon"}
+{"id": "coss:p-combobox-15", "node": "component/select", "variation": "combobox", "job": "Pill-shaped combobox select"}
+{"id": "coss:p-combobox-16", "node": "component/select", "variation": "combobox", "job": "Timezone picker combobox"}
+{"id": "coss:p-combobox-17", "node": "component/select", "variation": "combobox", "job": "Timezone combobox with search input"}
+{"id": "coss:p-combobox-18", "node": "component/select", "variation": "combobox", "job": "Combobox with select-style trigger"}
+{"id": "coss:p-combobox-19", "node": "component/select", "variation": "multi-select", "job": "Multiple combobox with stacked chips"}
+{"id": "coss:p-combobox-2", "node": "component/select", "variation": "combobox", "job": "Disabled combobox"}
+{"id": "coss:p-combobox-20", "node": "component/select", "variation": "multi-select", "job": "Multiple combobox with stacked divided chips"}
+{"id": "coss:p-combobox-3", "node": "component/select", "variation": "combobox", "job": "Small combobox"}
+{"id": "coss:p-combobox-4", "node": "component/select", "variation": "combobox", "job": "Large combobox"}
+{"id": "coss:p-combobox-5", "node": "component/select", "variation": "combobox", "job": "Combobox with label"}
+{"id": "coss:p-combobox-6", "node": "component/select", "variation": "combobox", "job": "Combobox auto-highlighting the first option"}
+{"id": "coss:p-combobox-7", "node": "component/select", "variation": "combobox", "job": "Combobox with clear button"}
+{"id": "coss:p-combobox-8", "node": "component/select", "variation": "grouped", "job": "Combobox with grouped options"}
+{"id": "coss:p-combobox-9", "node": "component/select", "variation": "multi-select", "job": "Combobox with multiple selection"}
+{"id": "coss:p-command-1", "node": "component/command", "variation": "command-palette", "job": "Command palette opened in a dialog"}
+{"id": "coss:p-command-2", "node": "component/command", "variation": "command-palette", "job": "Command palette with AI assistant"}
+{"id": "coss:p-context-menu-1", "node": "component/menu", "variation": "context-menu", "job": "Basic right-click context menu"}
+{"id": "coss:p-context-menu-2", "node": "component/menu", "variation": "context-menu", "job": "Context menu with link items"}
+{"id": "coss:p-context-menu-3", "node": "component/menu", "variation": "context-menu", "job": "Nested context menu with submenus"}
+{"id": "coss:p-context-menu-4", "node": "component/menu", "variation": "context-menu", "job": "Context menu with checkbox items"}
+{"id": "coss:p-context-menu-5", "node": "component/menu", "variation": "context-menu", "job": "Context menu with group labels"}
+{"id": "coss:p-context-menu-6", "node": "component/menu", "variation": "context-menu", "job": "Context menu with icons"}
+{"id": "coss:p-context-menu-7", "node": "component/menu", "variation": "context-menu", "job": "Context menu with radio group"}
+{"id": "coss:p-context-menu-8", "node": "component/menu", "variation": "context-menu", "job": "Context menu with switch checkbox items"}
+{"id": "coss:p-date-picker-1", "node": "component/picker", "variation": "date-picker", "job": "Basic date picker"}
+{"id": "coss:p-date-picker-2", "node": "component/picker", "variation": "date-range", "job": "Date range picker"}
+{"id": "coss:p-date-picker-3", "node": "component/picker", "variation": "date-picker", "job": "Date picker with field and dropdown navigation"}
+{"id": "coss:p-date-picker-4", "node": "component/picker", "variation": "presets", "job": "Date picker with quick presets"}
+{"id": "coss:p-date-picker-5", "node": "component/picker", "variation": "date-picker", "job": "Date picker with text input"}
+{"id": "coss:p-date-picker-6", "node": "component/picker", "variation": "date-picker", "job": "Date picker that closes on select"}
+{"id": "coss:p-date-picker-7", "node": "component/picker", "variation": "date-picker", "job": "Multiple-date picker"}
+{"id": "coss:p-date-picker-8", "node": "component/picker", "variation": "date-picker", "job": "Date picker with select-style trigger"}
+{"id": "coss:p-date-picker-9", "node": "component/picker", "variation": "date-range", "job": "Two-month range date picker"}
+{"id": "coss:p-dialog-1", "node": "component/dialog", "variation": "form-dialog", "job": "Dialog containing a form"}
+{"id": "coss:p-dialog-2", "node": "component/dialog", "variation": "modal-dialog", "job": "Dialog opened from a menu"}
+{"id": "coss:p-dialog-3", "node": "component/dialog", "variation": "modal-dialog", "job": "Nested dialogs"}
+{"id": "coss:p-dialog-4", "node": "component/dialog", "variation": "confirm-alert", "job": "Dialog asking confirmation before closing"}
+{"id": "coss:p-dialog-5", "node": "component/dialog", "variation": "modal-dialog", "job": "Dialog with long scrolling content"}
+{"id": "coss:p-dialog-6", "node": "component/dialog", "variation": "modal-dialog", "job": "Dialog with bare footer actions"}
+{"id": "coss:p-drawer-1", "node": "component/sheet", "variation": "bottom-sheet", "job": "Bottom drawer with close button"}
+{"id": "coss:p-drawer-10", "node": "component/sheet", "variation": "form-sheet", "job": "Edit profile form in a drawer with footer variants"}
+{"id": "coss:p-drawer-11", "node": "section/nav", "variation": "mobile-drawer", "job": "Mobile menu drawer sliding in from the left"}
+{"id": "coss:p-drawer-12", "node": "component/sheet", "variation": "form-sheet", "job": "Edit profile form: dialog on desktop, drawer on mobile"}
+{"id": "coss:p-drawer-13", "node": "component/menu", "variation": "dropdown-menu", "job": "Actions menu: dropdown on desktop, drawer on mobile"}
+{"id": "coss:p-drawer-14", "node": "component/sheet", "variation": "side-sheet", "job": "Left drawer with swipe area"}
+{"id": "coss:p-drawer-2", "node": "component/sheet", "variation": "bottom-sheet", "job": "Bottom drawer without drag handle"}
+{"id": "coss:p-drawer-3", "node": "component/sheet", "variation": "side-sheet", "job": "Drawer with close button"}
+{"id": "coss:p-drawer-4", "node": "component/sheet", "variation": "side-sheet", "job": "Inset drawers on all four positions"}
+{"id": "coss:p-drawer-5", "node": "component/sheet", "variation": "side-sheet", "job": "Straight drawers on all four positions"}
+{"id": "coss:p-drawer-6", "node": "component/sheet", "variation": "detail-view", "job": "Scrollable drawer with terms and conditions"}
+{"id": "coss:p-drawer-7", "node": "component/sheet", "variation": "bottom-sheet", "job": "Nested bottom drawers with centered content"}
+{"id": "coss:p-drawer-8", "node": "component/sheet", "variation": "side-sheet", "job": "Nested right drawers with inset variant"}
+{"id": "coss:p-drawer-9", "node": "component/sheet", "variation": "bottom-sheet", "job": "Bottom drawer with snap points"}
+{"id": "coss:p-empty-1", "node": "component/empty", "variation": "with-action", "job": "Empty state with icon and action buttons"}
+{"id": "coss:p-field-1", "node": "component/field", "variation": "text-input", "job": "Labelled field with description text"}
+{"id": "coss:p-field-10", "node": "atom/text-input", "variation": "textarea", "job": "Labelled field wrapping a textarea"}
+{"id": "coss:p-field-11", "node": "component/select", "variation": "standard-select", "job": "Labelled field wrapping a select"}
+{"id": "coss:p-field-12", "node": "atom/choice", "variation": "checkbox", "job": "Labelled field wrapping a checkbox"}
+{"id": "coss:p-field-13", "node": "atom/choice", "variation": "group", "job": "Labelled field wrapping a checkbox group"}
+{"id": "coss:p-field-14", "node": "atom/choice", "variation": "radio", "job": "Labelled field wrapping a radio group"}
+{"id": "coss:p-field-15", "node": "atom/switch", "variation": "standard", "job": "Labelled field wrapping a toggle switch"}
+{"id": "coss:p-field-16", "node": "atom/slider", "variation": "slider", "job": "Labelled field wrapping a slider"}
+{"id": "coss:p-field-17", "node": "component/field", "variation": "number-stepper", "job": "Labelled field wrapping a number input"}
+{"id": "coss:p-field-18", "node": "component/form", "variation": "with-validation", "job": "Complete form built from field parts"}
+{"id": "coss:p-field-2", "node": "component/field", "variation": "text-input", "job": "Field with required indicator"}
+{"id": "coss:p-field-3", "node": "component/field", "variation": "text-input", "job": "Field in disabled state"}
+{"id": "coss:p-field-4", "node": "component/field", "variation": "validation-states", "job": "Field showing a validation error"}
+{"id": "coss:p-field-5", "node": "component/field", "variation": "validation-states", "job": "Field showing its validity state"}
+{"id": "coss:p-field-6", "node": "component/field", "variation": "with-addon", "job": "Input group wrapped in a labelled field"}
+{"id": "coss:p-field-7", "node": "component/search", "variation": "with-suggestions", "job": "Field with autocomplete suggestions"}
+{"id": "coss:p-field-8", "node": "component/select", "variation": "combobox", "job": "Field wrapping a combobox"}
+{"id": "coss:p-field-9", "node": "component/select", "variation": "multi-select", "job": "Field wrapping a multiple-selection combobox"}
+{"id": "coss:p-fieldset-1", "node": "component/form", "variation": null, "job": "Fieldset grouping several fields together", "edge": "fieldset of fields"}
+{"id": "coss:p-form-1", "node": "component/form", "variation": "with-validation", "job": "Form with a single input"}
+{"id": "coss:p-form-2", "node": "component/form", "variation": "with-validation", "job": "Form validated with a zod schema"}
+{"id": "coss:p-frame-1", "node": "component/card", "variation": "standard-card", "job": "Basic framed container"}
+{"id": "coss:p-frame-2", "node": "component/accordion", "variation": "card-style", "job": "Framed collapsible content with delete button"}
+{"id": "coss:p-frame-3", "node": "component/card", "variation": "standard-card", "job": "Frame holding multiple separated panels"}
+{"id": "coss:p-frame-4", "node": "component/card", "variation": "standard-card", "job": "Frame holding multiple stacked panels"}
+{"id": "coss:p-group-1", "node": "atom/layout", "variation": null, "job": "Basic group joining several controls", "edge": "control group"}
+{"id": "coss:p-group-10", "node": "atom/layout", "variation": null, "job": "Nested control groups", "edge": "control group"}
+{"id": "coss:p-group-11", "node": "atom/layout", "variation": null, "job": "Control group with a popup", "edge": "control group"}
+{"id": "coss:p-group-12", "node": "component/field", "variation": "with-addon", "job": "Group joining an input group"}
+{"id": "coss:p-group-13", "node": "component/menu", "variation": "dropdown-menu", "job": "Group joining a control with a menu"}
+{"id": "coss:p-group-14", "node": "component/select", "variation": "standard-select", "job": "Group joining an input with a select"}
+{"id": "coss:p-group-15", "node": "component/search", "variation": "search-field", "job": "Group joining a search field with a button"}
+{"id": "coss:p-group-16", "node": "component/field", "variation": "with-addon", "job": "Group joining an input with an add button"}
+{"id": "coss:p-group-17", "node": "component/field", "variation": "with-addon", "job": "Group joining an input with currency text"}
+{"id": "coss:p-group-18", "node": "component/select", "variation": "standard-select", "job": "Group joining a select with an input"}
+{"id": "coss:p-group-19", "node": "component/select", "variation": "standard-select", "job": "Group joining an input with a select"}
+{"id": "coss:p-group-2", "node": "component/field", "variation": "with-addon", "job": "Group joining an input with an addon"}
+{"id": "coss:p-group-20", "node": "component/field", "variation": "with-addon", "job": "Group joining an input with a text button"}
+{"id": "coss:p-group-22", "node": "component/field", "variation": "number-stepper", "job": "Two number inputs grouped as a numeric range"}
+{"id": "coss:p-group-23", "node": "component/search", "variation": "with-filters", "job": "Filter group with multi-select and remove button"}
+{"id": "coss:p-group-3", "node": "atom/layout", "variation": null, "job": "Small control group", "edge": "control group"}
+{"id": "coss:p-group-4", "node": "atom/layout", "variation": null, "job": "Large control group", "edge": "control group"}
+{"id": "coss:p-group-5", "node": "atom/button", "variation": "group", "job": "Button group with a disabled button"}
+{"id": "coss:p-group-6", "node": "atom/button", "variation": "group", "job": "Button group with a default button"}
+{"id": "coss:p-group-7", "node": "component/field", "variation": "with-addon", "job": "Group joining an input with start text"}
+{"id": "coss:p-group-8", "node": "component/field", "variation": "with-addon", "job": "Group joining an input with end text"}
+{"id": "coss:p-group-9", "node": "atom/layout", "variation": null, "job": "Vertical control group", "edge": "control group"}
+{"id": "coss:p-input-1", "node": "atom/text-input", "variation": "text-input", "job": "Basic text input"}
+{"id": "coss:p-input-10", "node": "component/field", "variation": "with-addon", "job": "Input group styled as a URL bar"}
+{"id": "coss:p-input-11", "node": "component/field", "variation": "with-addon", "job": "Input group with keyboard shortcut hint"}
+{"id": "coss:p-input-12", "node": "component/field", "variation": "with-addon", "job": "Input group with start loading spinner"}
+{"id": "coss:p-input-13", "node": "component/field", "variation": "text-input", "job": "Input with label and required indicator"}
+{"id": "coss:p-input-14", "node": "component/field", "variation": "text-input", "job": "Input with optional label"}
+{"id": "coss:p-input-15", "node": "atom/text-input", "variation": "text-input", "job": "Input with custom border and background"}
+{"id": "coss:p-input-16", "node": "component/field", "variation": "with-addon", "job": "Input group with end loading spinner"}
+{"id": "coss:p-input-17", "node": "atom/text-input", "variation": "text-input", "job": "Read-only text input"}
+{"id": "coss:p-input-18", "node": "atom/text-input", "variation": "textarea", "job": "Input with characters remaining counter"}
+{"id": "coss:p-input-19", "node": "atom/text-input", "variation": "text-input", "job": "Pill-shaped text input"}
+{"id": "coss:p-input-2", "node": "atom/text-input", "variation": "text-input", "job": "Small text input"}
+{"id": "coss:p-input-3", "node": "atom/text-input", "variation": "text-input", "job": "Large text input"}
+{"id": "coss:p-input-4", "node": "atom/text-input", "variation": "text-input", "job": "Disabled text input"}
+{"id": "coss:p-input-5", "node": "component/upload", "variation": "dropzone", "job": "File input for choosing files to upload"}
+{"id": "coss:p-input-6", "node": "component/field", "variation": "text-input", "job": "Labelled text input"}
+{"id": "coss:p-input-7", "node": "component/field", "variation": "with-addon", "job": "Input with button grouped together"}
+{"id": "coss:p-input-8", "node": "atom/text-input", "variation": "with-slots", "job": "Input with start text and end tooltip"}
+{"id": "coss:p-input-9", "node": "atom/text-input", "variation": "password", "job": "Password input with visibility toggle"}
+{"id": "coss:p-input-group-1", "node": "component/field", "variation": "with-addon", "job": "Basic input group joining input and addons"}
+{"id": "coss:p-input-group-10", "node": "component/field", "variation": "with-addon", "job": "Input group with attached badge"}
+{"id": "coss:p-input-group-11", "node": "component/field", "variation": "with-addon", "job": "Input group with keyboard shortcut hint"}
+{"id": "coss:p-input-group-12", "node": "component/field", "variation": "floating-label", "job": "Input group with label inside the field"}
+{"id": "coss:p-input-group-13", "node": "component/field", "variation": "with-addon", "job": "Small input group with addons"}
+{"id": "coss:p-input-group-14", "node": "component/field", "variation": "with-addon", "job": "Large input group with addons"}
+{"id": "coss:p-input-group-15", "node": "component/field", "variation": "with-addon", "job": "Disabled input group with addons"}
+{"id": "coss:p-input-group-16", "node": "component/field", "variation": "with-addon", "job": "Input group showing loading spinner"}
+{"id": "coss:p-input-group-17", "node": "atom/text-input", "variation": "textarea", "job": "Textarea inside an input group"}
+{"id": "coss:p-input-group-18", "node": "component/field", "variation": "with-addon", "job": "Input group with badge and menu button"}
+{"id": "coss:p-input-group-19", "node": "component/field", "variation": "with-addon", "job": "Mini editor: input group with toggle control"}
+{"id": "coss:p-input-group-2", "node": "component/field", "variation": "with-addon", "job": "Input group with end icon"}
+{"id": "coss:p-input-group-20", "node": "component/search", "variation": "search-field", "job": "Input group with search icon"}
+{"id": "coss:p-input-group-21", "node": "component/field", "variation": "with-addon", "job": "Input group with start tooltip"}
+{"id": "coss:p-input-group-22", "node": "component/field", "variation": "with-addon", "job": "Input group with clear button"}
+{"id": "coss:p-input-group-23", "node": "component/search", "variation": "search-field", "job": "Search input with loader and voice button"}
+{"id": "coss:p-input-group-24", "node": "component/field", "variation": "with-addon", "job": "Input group with character counter"}
+{"id": "coss:p-input-group-26", "node": "component/field", "variation": "password", "job": "Password field with strength indicator"}
+{"id": "coss:p-input-group-27", "node": "atom/text-input", "variation": "code-editor", "job": "Code snippet input with language selector"}
+{"id": "coss:p-input-group-28", "node": "component/composer", "variation": "with-attachments", "job": "Message composer with attachment buttons"}
+{"id": "coss:p-input-group-29", "node": "component/composer", "variation": "chat-composer", "job": "Chat input with voice and send buttons"}
+{"id": "coss:p-input-group-3", "node": "component/field", "variation": "with-addon", "job": "Input group with start text"}
+{"id": "coss:p-input-group-4", "node": "component/field", "variation": "with-addon", "job": "Input group with end text"}
+{"id": "coss:p-input-group-5", "node": "component/field", "variation": "with-addon", "job": "Input group with start and end text"}
+{"id": "coss:p-input-group-6", "node": "component/field", "variation": "number-stepper", "job": "Input group with number field"}
+{"id": "coss:p-input-group-7", "node": "component/field", "variation": "with-addon", "job": "Input group with end tooltip"}
+{"id": "coss:p-input-group-8", "node": "component/field", "variation": "with-addon", "job": "Input group with icon button"}
+{"id": "coss:p-input-group-9", "node": "component/field", "variation": "with-addon", "job": "Input group with attached button"}
+{"id": "coss:p-kbd-1", "node": "atom/text", "variation": "keyboard", "job": "Keyboard shortcuts display"}
+{"id": "coss:p-menu-1", "node": "component/menu", "variation": "dropdown-menu", "job": "Basic menu opened from a trigger"}
+{"id": "coss:p-menu-2", "node": "component/menu", "variation": "dropdown-menu", "job": "Menu opened on hover"}
+{"id": "coss:p-menu-3", "node": "component/menu", "variation": "dropdown-menu", "job": "Menu with checkbox items"}
+{"id": "coss:p-menu-4", "node": "component/menu", "variation": "dropdown-menu", "job": "Menu with radio group items"}
+{"id": "coss:p-menu-5", "node": "component/menu", "variation": "dropdown-menu", "job": "Menu with link items"}
+{"id": "coss:p-menu-6", "node": "component/menu", "variation": "dropdown-menu", "job": "Menu with labelled groups"}
+{"id": "coss:p-menu-7", "node": "component/menu", "variation": "dropdown-menu", "job": "Nested menu with submenus"}
+{"id": "coss:p-menu-8", "node": "component/menu", "variation": "dropdown-menu", "job": "Menu that closes on item click"}
+{"id": "coss:p-menu-9", "node": "component/menu", "variation": "dropdown-menu", "job": "Menu with checkbox items shown as switches"}
+{"id": "coss:p-meter-1", "node": "atom/progress", "variation": "meter-gauge", "job": "Basic meter showing a value"}
+{"id": "coss:p-meter-2", "node": "atom/progress", "variation": "meter-gauge", "job": "Simple meter showing a value"}
+{"id": "coss:p-meter-3", "node": "atom/progress", "variation": "meter-gauge", "job": "Meter with formatted value"}
+{"id": "coss:p-meter-4", "node": "atom/progress", "variation": "meter-gauge", "job": "Meter showing value within a range"}
+{"id": "coss:p-navigation-1", "node": "component/tabs", "variation": "pill-segmented", "job": "Segmented navigation of links"}
+{"id": "coss:p-navigation-2", "node": "component/tabs", "variation": "pill-segmented", "job": "Small segmented link navigation"}
+{"id": "coss:p-navigation-3", "node": "component/tabs", "variation": "pill-segmented", "job": "Large segmented link navigation"}
+{"id": "coss:p-number-field-1", "node": "component/field", "variation": "number-stepper", "job": "Basic number field"}
+{"id": "coss:p-number-field-10", "node": "component/field", "variation": "number-stepper", "job": "Number field inside a form"}
+{"id": "coss:p-number-field-11", "node": "component/field", "variation": "number-stepper", "job": "Pill-shaped number field"}
+{"id": "coss:p-number-field-2", "node": "component/field", "variation": "number-stepper", "job": "Small number field"}
+{"id": "coss:p-number-field-3", "node": "component/field", "variation": "number-stepper", "job": "Large number field"}
+{"id": "coss:p-number-field-4", "node": "component/field", "variation": "number-stepper", "job": "Disabled number field"}
+{"id": "coss:p-number-field-5", "node": "component/field", "variation": "number-stepper", "job": "Number field with label"}
+{"id": "coss:p-number-field-6", "node": "component/field", "variation": "number-stepper", "job": "Number field adjustable by scrubbing"}
+{"id": "coss:p-number-field-7", "node": "component/field", "variation": "number-stepper", "job": "Number field with minimum and maximum"}
+{"id": "coss:p-number-field-8", "node": "component/field", "variation": "number-stepper", "job": "Number field with formatted value"}
+{"id": "coss:p-number-field-9", "node": "component/field", "variation": "number-stepper", "job": "Number field with step size"}
+{"id": "coss:p-otp-field-1", "node": "atom/text-input", "variation": "otp", "job": "Basic one-time code input"}
+{"id": "coss:p-otp-field-10", "node": "atom/text-input", "variation": "otp", "job": "Masked one-time code input"}
+{"id": "coss:p-otp-field-2", "node": "atom/text-input", "variation": "otp", "job": "Large one-time code input"}
+{"id": "coss:p-otp-field-3", "node": "atom/text-input", "variation": "otp", "job": "One-time code input with separator"}
+{"id": "coss:p-otp-field-4", "node": "atom/text-input", "variation": "otp", "job": "One-time code input with label"}
+{"id": "coss:p-otp-field-6", "node": "atom/text-input", "variation": "otp", "job": "One-time code input with custom sanitization"}
+{"id": "coss:p-otp-field-7", "node": "atom/text-input", "variation": "otp", "job": "One-time code input validated automatically"}
+{"id": "coss:p-otp-field-8", "node": "atom/text-input", "variation": "otp", "job": "Alphanumeric one-time code input"}
+{"id": "coss:p-otp-field-9", "node": "atom/text-input", "variation": "otp", "job": "One-time code input with placeholder hints"}
+{"id": "coss:p-pagination-1", "node": "component/pagination", "variation": "numbered-pages", "job": "Pagination with page numbers"}
+{"id": "coss:p-pagination-2", "node": "component/pagination", "variation": "first-last-buttons", "job": "Pagination with previous and next only"}
+{"id": "coss:p-pagination-3", "node": "component/pagination", "variation": "with-page-size", "job": "Pagination with page size select and arrows"}
+{"id": "coss:p-popover-1", "node": "component/popover", "variation": "standard-popover", "job": "Popover holding a small form"}
+{"id": "coss:p-popover-2", "node": "component/popover", "variation": "standard-popover", "job": "Popover with close button"}
+{"id": "coss:p-popover-3", "node": "component/popover", "variation": "standard-popover", "job": "Animated popover"}
+{"id": "coss:p-popover-4", "node": "component/popover", "variation": "standard-popover", "job": "Split button popover confirming applying to all"}
+{"id": "coss:p-preview-card-1", "node": "component/popover", "variation": "hover-card", "job": "Hover card previewing a linked item"}
+{"id": "coss:p-progress-1", "node": "atom/progress", "variation": "linear", "job": "Basic progress bar"}
+{"id": "coss:p-progress-2", "node": "atom/progress", "variation": "linear", "job": "Progress bar with label and value"}
+{"id": "coss:p-progress-3", "node": "atom/progress", "variation": "linear", "job": "Progress bar with formatted value"}
+{"id": "coss:p-radio-group-1", "node": "atom/choice", "variation": "radio", "job": "Basic radio group"}
+{"id": "coss:p-radio-group-10", "node": "component/picker", "variation": "presets", "job": "Colour palette of radio cards in a grid"}
+{"id": "coss:p-radio-group-2", "node": "atom/choice", "variation": "radio", "job": "Disabled radio group"}
+{"id": "coss:p-radio-group-3", "node": "atom/choice", "variation": "with-description", "job": "Radio group with descriptions"}
+{"id": "coss:p-radio-group-4", "node": "atom/choice", "variation": "card", "job": "Radio group as selectable cards"}
+{"id": "coss:p-radio-group-5", "node": "atom/choice", "variation": "radio", "job": "Radio group inside a form"}
+{"id": "coss:p-radio-group-6", "node": "atom/choice", "variation": "card", "job": "Theme selector as image cards"}
+{"id": "coss:p-radio-group-7", "node": "atom/switch", "variation": "segmented", "job": "Small segmented control of options"}
+{"id": "coss:p-radio-group-8", "node": "atom/switch", "variation": "segmented", "job": "Segmented control of options"}
+{"id": "coss:p-radio-group-9", "node": "atom/switch", "variation": "segmented", "job": "Large segmented control of options"}
+{"id": "coss:p-scroll-area-1", "node": "atom/layout", "variation": "scroll-area", "job": "Basic scrolling area"}
+{"id": "coss:p-scroll-area-2", "node": "atom/layout", "variation": "horizontal-scroll", "job": "Horizontal scrolling area"}
+{"id": "coss:p-scroll-area-3", "node": "atom/layout", "variation": "scroll-area", "job": "Scrolling area in both directions"}
+{"id": "coss:p-scroll-area-4", "node": "atom/layout", "variation": "scroll-area", "job": "Scrolling area with fading edges"}
+{"id": "coss:p-scroll-area-5", "node": "atom/layout", "variation": "horizontal-scroll", "job": "Horizontal scroll area with scrollbar gutter"}
+{"id": "coss:p-select-1", "node": "component/select", "variation": "standard-select", "job": "Basic select"}
+{"id": "coss:p-select-10", "node": "component/select", "variation": "standard-select", "job": "Select with object values"}
+{"id": "coss:p-select-11", "node": "component/select", "variation": "standard-select", "job": "Select inside a form"}
+{"id": "coss:p-select-12", "node": "component/select", "variation": "standard-select", "job": "Select with disabled items"}
+{"id": "coss:p-select-13", "node": "component/select", "variation": "standard-select", "job": "Timezone select"}
+{"id": "coss:p-select-14", "node": "component/select", "variation": "with-icons", "job": "Status select with coloured dot"}
+{"id": "coss:p-select-15", "node": "component/select", "variation": "standard-select", "job": "Pill-shaped select trigger"}
+{"id": "coss:p-select-16", "node": "component/select", "variation": "standard-select", "job": "Select with left text label"}
+{"id": "coss:p-select-17", "node": "component/select", "variation": "with-icons", "job": "Select listing country flags"}
+{"id": "coss:p-select-18", "node": "component/select", "variation": "standard-select", "job": "Select with descriptions in options"}
+{"id": "coss:p-select-19", "node": "component/select", "variation": "with-icons", "job": "Select with avatars"}
+{"id": "coss:p-select-2", "node": "component/select", "variation": "standard-select", "job": "Small select"}
+{"id": "coss:p-select-20", "node": "component/select", "variation": "with-icons", "job": "Rich select with avatars and usernames"}
+{"id": "coss:p-select-21", "node": "component/select", "variation": "standard-select", "job": "Auto width select"}
+{"id": "coss:p-select-22", "node": "component/select", "variation": "standard-select", "job": "Select with custom border and background"}
+{"id": "coss:p-select-23", "node": "component/select", "variation": "standard-select", "job": "Select with label"}
+{"id": "coss:p-select-24", "node": "component/picker", "variation": "presets", "job": "Colour palette select with three swatches"}
+{"id": "coss:p-select-3", "node": "component/select", "variation": "standard-select", "job": "Large select"}
+{"id": "coss:p-select-4", "node": "component/select", "variation": "standard-select", "job": "Disabled select"}
+{"id": "coss:p-select-5", "node": "component/select", "variation": "standard-select", "job": "Select without item alignment"}
+{"id": "coss:p-select-6", "node": "component/select", "variation": "grouped", "job": "Select with grouped options"}
+{"id": "coss:p-select-7", "node": "component/select", "variation": "multi-select", "job": "Multiple selection select"}
+{"id": "coss:p-select-8", "node": "component/select", "variation": "with-icons", "job": "Select with icon"}
+{"id": "coss:p-select-9", "node": "component/select", "variation": "with-icons", "job": "Select options with icons"}
+{"id": "coss:p-separator-1", "node": "atom/layout", "variation": null, "job": "Horizontal and vertical separator lines", "edge": "separator line"}
+{"id": "coss:p-sheet-1", "node": "component/sheet", "variation": "side-sheet", "job": "Basic sheet from the side"}
+{"id": "coss:p-sheet-2", "node": "component/sheet", "variation": "side-sheet", "job": "Inset sheet"}
+{"id": "coss:p-sheet-3", "node": "component/sheet", "variation": "side-sheet", "job": "Sheet opening from any screen edge"}
+{"id": "coss:p-skeleton-1", "node": "atom/loader", "variation": "skeleton", "job": "Basic loading skeleton"}
+{"id": "coss:p-skeleton-2", "node": "atom/loader", "variation": "skeleton", "job": "Skeleton placeholder only"}
+{"id": "coss:p-slider-1", "node": "atom/slider", "variation": "slider", "job": "Basic slider"}
+{"id": "coss:p-slider-10", "node": "atom/slider", "variation": "range", "job": "Range slider with collision swap"}
+{"id": "coss:p-slider-11", "node": "atom/slider", "variation": "slider", "job": "Slider with icons"}
+{"id": "coss:p-slider-12", "node": "atom/slider", "variation": "slider", "job": "Slider with input"}
+{"id": "coss:p-slider-13", "node": "atom/slider", "variation": "range", "job": "Range slider with inputs"}
+{"id": "coss:p-slider-14", "node": "atom/slider", "variation": "slider", "job": "Slider with increment and decrement buttons"}
+{"id": "coss:p-slider-15", "node": "atom/slider", "variation": "range", "job": "Price range slider"}
+{"id": "coss:p-slider-16", "node": "atom/slider", "variation": "rating", "job": "Emoji rating slider"}
+{"id": "coss:p-slider-17", "node": "atom/slider", "variation": "vertical", "job": "Vertical slider"}
+{"id": "coss:p-slider-18", "node": "atom/slider", "variation": "vertical", "job": "Vertical range slider"}
+{"id": "coss:p-slider-19", "node": "atom/slider", "variation": "vertical", "job": "Vertical slider with input"}
+{"id": "coss:p-slider-2", "node": "atom/slider", "variation": "slider", "job": "Slider with label and value"}
+{"id": "coss:p-slider-20", "node": "atom/slider", "variation": "vertical", "job": "Equalizer with vertical sliders"}
+{"id": "coss:p-slider-21", "node": "atom/slider", "variation": "slider", "job": "Object position sliders with reset"}
+{"id": "coss:p-slider-22", "node": "atom/slider", "variation": "range", "job": "Price slider with histogram"}
+{"id": "coss:p-slider-23", "node": "atom/slider", "variation": "slider", "job": "Slider inside a form"}
+{"id": "coss:p-slider-3", "node": "atom/slider", "variation": "slider", "job": "Disabled slider"}
+{"id": "coss:p-slider-4", "node": "atom/slider", "variation": "with-ticks", "job": "Slider with reference labels"}
+{"id": "coss:p-slider-5", "node": "atom/slider", "variation": "with-ticks", "job": "Slider with ticks"}
+{"id": "coss:p-slider-6", "node": "atom/slider", "variation": "slider", "job": "Slider with labels above"}
+{"id": "coss:p-slider-7", "node": "atom/slider", "variation": "range", "job": "Range slider"}
+{"id": "coss:p-slider-8", "node": "atom/slider", "variation": "range", "job": "Slider with three thumbs"}
+{"id": "coss:p-slider-9", "node": "atom/slider", "variation": "range", "job": "Range slider with no collision"}
+{"id": "coss:p-spinner-1", "node": "atom/loader", "variation": "spinner", "job": "Basic spinner"}
+{"id": "coss:p-switch-1", "node": "atom/switch", "variation": "standard", "job": "Basic switch"}
+{"id": "coss:p-switch-2", "node": "atom/switch", "variation": "standard", "job": "Disabled switch"}
+{"id": "coss:p-switch-3", "node": "atom/switch", "variation": "standard", "job": "Switch with description"}
+{"id": "coss:p-switch-4", "node": "atom/switch", "variation": "standard", "job": "Switch card"}
+{"id": "coss:p-switch-5", "node": "atom/switch", "variation": "standard", "job": "Switch inside a form"}
+{"id": "coss:p-switch-6", "node": "atom/switch", "variation": "standard", "job": "Custom size switch"}
+{"id": "coss:p-switch-7", "node": "component/calendar", "variation": "week-schedule", "job": "Weekly availability editor with time range pickers"}
+{"id": "coss:p-switch-8", "node": "component/calendar", "variation": "week-schedule", "job": "Weekly availability editor with grouped time ranges"}
+{"id": "coss:p-switch-9", "node": "component/calendar", "variation": "week-schedule", "job": "Weekly availability editor with From and To times"}
+{"id": "coss:p-table-1", "node": "component/table", "variation": "standard-table", "job": "Basic table"}
+{"id": "coss:p-table-2", "node": "component/table", "variation": "standard-table", "job": "Table framed as a card"}
+{"id": "coss:p-table-3", "node": "component/table", "variation": "data-table", "job": "Table with row checkboxes"}
+{"id": "coss:p-table-4", "node": "component/table", "variation": "data-table", "job": "Table with sorting and pagination"}
+{"id": "coss:p-table-5", "node": "component/table", "variation": "standard-table", "job": "Card-style table in a framed layout"}
+{"id": "coss:p-table-6", "node": "component/table", "variation": "data-table", "job": "Framed table with row checkboxes"}
+{"id": "coss:p-table-7", "node": "component/table", "variation": "standard-table", "job": "Framed card-style table"}
+{"id": "coss:p-table-8", "node": "component/table", "variation": "data-table", "job": "Framed table with sorting and pagination"}
+{"id": "coss:p-tabs-1", "node": "component/tabs", "variation": "pill-segmented", "job": "Segmented control built from tabs"}
+{"id": "coss:p-tabs-10", "node": "component/tabs", "variation": "with-counts", "job": "Tabs with count badges"}
+{"id": "coss:p-tabs-11", "node": "component/tabs", "variation": "vertical", "job": "Vertical underlined tabs with icons"}
+{"id": "coss:p-tabs-12", "node": "component/tabs", "variation": "with-counts", "job": "Icon-only tabs with count badge"}
+{"id": "coss:p-tabs-13", "node": "component/tabs", "variation": "with-icons", "job": "Icon-only tabs with grouped tooltips"}
+{"id": "coss:p-tabs-14", "node": "component/tabs", "variation": "pill-segmented", "job": "Small segmented control built from tabs"}
+{"id": "coss:p-tabs-15", "node": "component/tabs", "variation": "pill-segmented", "job": "Large segmented control built from tabs"}
+{"id": "coss:p-tabs-2", "node": "component/tabs", "variation": "underline", "job": "Underlined tabs"}
+{"id": "coss:p-tabs-3", "node": "component/tabs", "variation": "vertical", "job": "Vertical tabs"}
+{"id": "coss:p-tabs-4", "node": "component/tabs", "variation": "vertical", "job": "Vertical underlined tabs"}
+{"id": "coss:p-tabs-5", "node": "component/tabs", "variation": "pill-segmented", "job": "Tabs with fully rounded triggers"}
+{"id": "coss:p-tabs-6", "node": "component/tabs", "variation": "with-icons", "job": "Tabs with icon before name"}
+{"id": "coss:p-tabs-7", "node": "component/tabs", "variation": "with-icons", "job": "Underlined tabs with icon before name"}
+{"id": "coss:p-tabs-8", "node": "component/tabs", "variation": "with-icons", "job": "Icon-only tabs"}
+{"id": "coss:p-tabs-9", "node": "component/tabs", "variation": "underline", "job": "Underlined tabs with icon on top"}
+{"id": "coss:p-textarea-1", "node": "atom/text-input", "variation": "textarea", "job": "Basic multi-line text area"}
+{"id": "coss:p-textarea-10", "node": "atom/text-input", "variation": "textarea", "job": "Read-only multi-line text area"}
+{"id": "coss:p-textarea-11", "node": "atom/text-input", "variation": "textarea", "job": "Textarea with characters remaining counter"}
+{"id": "coss:p-textarea-12", "node": "atom/text-input", "variation": "textarea", "job": "Textarea with required field indicator"}
+{"id": "coss:p-textarea-13", "node": "atom/text-input", "variation": "textarea", "job": "Shorter textarea with fixed height"}
+{"id": "coss:p-textarea-14", "node": "atom/text-input", "variation": "textarea", "job": "Textarea with button aligned right"}
+{"id": "coss:p-textarea-15", "node": "atom/text-input", "variation": "textarea", "job": "Textarea with button aligned left"}
+{"id": "coss:p-textarea-2", "node": "atom/text-input", "variation": "textarea", "job": "Small multi-line text area"}
+{"id": "coss:p-textarea-3", "node": "atom/text-input", "variation": "textarea", "job": "Large multi-line text area"}
+{"id": "coss:p-textarea-4", "node": "atom/text-input", "variation": "textarea", "job": "Disabled multi-line text area"}
+{"id": "coss:p-textarea-5", "node": "atom/text-input", "variation": "textarea", "job": "Labelled textarea"}
+{"id": "coss:p-textarea-6", "node": "atom/text-input", "variation": "textarea", "job": "Textarea used inside a form"}
+{"id": "coss:p-textarea-7", "node": "atom/text-input", "variation": "textarea", "job": "Labelled textarea with required indicator"}
+{"id": "coss:p-textarea-8", "node": "atom/text-input", "variation": "textarea", "job": "Labelled textarea with optional label"}
+{"id": "coss:p-textarea-9", "node": "atom/text-input", "variation": "textarea", "job": "Textarea with custom border and background"}
+{"id": "coss:p-toast-1", "node": "component/toast", "variation": "basic-toast", "job": "Default toast with title and description"}
+{"id": "coss:p-toast-10", "node": "component/toast", "variation": "basic-toast", "job": "Deduplicated success toast"}
+{"id": "coss:p-toast-11", "node": "component/toast", "variation": "basic-toast", "job": "Deduplicated error toast"}
+{"id": "coss:p-toast-12", "node": "component/toast", "variation": "basic-toast", "job": "Anchored deduplicated success toast"}
+{"id": "coss:p-toast-13", "node": "component/toast", "variation": "basic-toast", "job": "Anchored deduplicated error toast"}
+{"id": "coss:p-toast-2", "node": "component/toast", "variation": "stacked-toasts", "job": "Stacked toasts by semantic type"}
+{"id": "coss:p-toast-3", "node": "component/toast", "variation": "loading-toast", "job": "Loading-state stacked toast"}
+{"id": "coss:p-toast-4", "node": "component/toast", "variation": "action-toast", "job": "Stacked toast with undo action"}
+{"id": "coss:p-toast-5", "node": "component/toast", "variation": "loading-toast", "job": "Promise-based toast for async work"}
+{"id": "coss:p-toast-6", "node": "component/toast", "variation": "stacked-toasts", "job": "Stacked toasts with varying content height"}
+{"id": "coss:p-toast-7", "node": "component/toast", "variation": "basic-toast", "job": "Anchored copy confirmation toast"}
+{"id": "coss:p-toast-8", "node": "component/toast", "variation": "basic-toast", "job": "Anchored error toast after async failure"}
+{"id": "coss:p-toast-9", "node": "component/toast", "variation": "loading-toast", "job": "Long-running promise toast with cancel"}
+{"id": "coss:p-toggle-1", "node": "atom/switch", "variation": "toggle-button", "job": "Basic toggle button"}
+{"id": "coss:p-toggle-2", "node": "atom/switch", "variation": "toggle-button", "job": "Outlined toggle button"}
+{"id": "coss:p-toggle-3", "node": "atom/switch", "variation": "with-icons", "job": "Toggle button with icon"}
+{"id": "coss:p-toggle-4", "node": "atom/switch", "variation": "toggle-button", "job": "Small toggle button"}
+{"id": "coss:p-toggle-5", "node": "atom/switch", "variation": "toggle-button", "job": "Large toggle button"}
+{"id": "coss:p-toggle-6", "node": "atom/switch", "variation": "toggle-button", "job": "Disabled toggle button"}
+{"id": "coss:p-toggle-7", "node": "atom/switch", "variation": "toggle-group", "job": "Icon toggle group"}
+{"id": "coss:p-toggle-8", "node": "atom/switch", "variation": "with-icons", "job": "Bookmark toggle with tooltip and toast"}
+{"id": "coss:p-toggle-group-1", "node": "atom/switch", "variation": "toggle-group", "job": "Basic toggle group"}
+{"id": "coss:p-toggle-group-2", "node": "atom/switch", "variation": "toggle-group", "job": "Small toggle group"}
+{"id": "coss:p-toggle-group-3", "node": "atom/switch", "variation": "toggle-group", "job": "Large toggle group"}
+{"id": "coss:p-toggle-group-4", "node": "atom/switch", "variation": "toggle-group", "job": "Outlined toggle group"}
+{"id": "coss:p-toggle-group-5", "node": "atom/switch", "variation": "toggle-group", "job": "Vertical outlined toggle group"}
+{"id": "coss:p-toggle-group-6", "node": "atom/switch", "variation": "toggle-group", "job": "Disabled toggle group"}
+{"id": "coss:p-toggle-group-7", "node": "atom/switch", "variation": "toggle-group", "job": "Toggle group with a disabled item"}
+{"id": "coss:p-toggle-group-8", "node": "atom/switch", "variation": "toggle-group", "job": "Multiple selection toggle group"}
+{"id": "coss:p-toggle-group-9", "node": "atom/switch", "variation": "toggle-group", "job": "Toggle group with tooltips"}
+{"id": "coss:p-toolbar-1", "node": "component/dock", "variation": "action-toolbar", "job": "Toolbar with toggles, buttons and select"}
+{"id": "coss:p-tooltip-1", "node": "atom/tooltip", "variation": "standard", "job": "Basic tooltip"}
+{"id": "coss:p-tooltip-2", "node": "atom/tooltip", "variation": "grouped-delay", "job": "Grouped tooltips"}
+{"id": "coss:p-tooltip-3", "node": "atom/tooltip", "variation": "grouped-delay", "job": "Animated tooltip on a toggle group"}
+{"id": "coss:p-tooltip-4", "node": "atom/tooltip", "variation": "grouped-delay", "job": "Animated tooltip on a vertical group"}
+{"id": "coss:pagination", "node": "component/pagination", "variation": "numbered-pages", "job": "Pagination controls for moving through pages"}
+{"id": "coss:popover", "node": "component/popover", "variation": "standard-popover", "job": "Basic popover panel anchored to a trigger"}
+{"id": "coss:progress", "node": "atom/progress", "variation": "linear", "job": "Linear progress bar"}
+{"id": "coss:radio-group", "node": "atom/choice", "variation": "radio", "job": "Radio group to choose one option"}
+{"id": "coss:scroll-area", "node": "atom/layout", "variation": "scroll-area", "job": "Scrolling area with custom scrollbar"}
+{"id": "coss:segmented-control", "node": "atom/switch", "variation": "segmented", "job": "Segmented control choosing one option"}
+{"id": "coss:select", "node": "component/select", "variation": "standard-select", "job": "Basic select"}
+{"id": "coss:separator", "node": "atom/layout", "variation": null, "job": "Horizontal and vertical divider lines", "edge": "separator line"}
+{"id": "coss:sheet", "node": "component/sheet", "variation": "side-sheet", "job": "Sheet sliding in from the side"}
+{"id": "coss:sidebar", "node": "section/sidebar", "variation": "grouped", "job": "Grouped side navigation"}
+{"id": "coss:skeleton", "node": "atom/loader", "variation": "skeleton", "job": "Loading skeleton placeholder"}
+{"id": "coss:slider", "node": "atom/slider", "variation": "slider", "job": "Single-value slider for picking along a range"}
+{"id": "coss:spinner", "node": "atom/loader", "variation": "spinner", "job": "Spinning loader showing work in progress"}
+{"id": "coss:style", "node": null, "variation": null, "job": "Complete theme with colours, sidebar, fonts and base styles"}
+{"id": "coss:switch", "node": "atom/switch", "variation": "standard", "job": "On or off switch toggling a setting"}
+{"id": "coss:table", "node": "component/table", "variation": "standard-table", "job": "Basic table of rows and columns"}
+{"id": "coss:tabs", "node": "component/tabs", "variation": "underline", "job": "Basic tabs switching between panels"}
+{"id": "coss:textarea", "node": "atom/text-input", "variation": "textarea", "job": "Multi-line text entry field"}
+{"id": "coss:toast", "node": "component/toast", "variation": "basic-toast", "job": "Basic toast notification with title and description"}
+{"id": "coss:toggle", "node": "atom/switch", "variation": "toggle-button", "job": "Pressable on-off toggle button"}
+{"id": "coss:toolbar", "node": "component/dock", "variation": "action-toolbar", "job": "Toolbar grouping buttons, toggles and selects"}
+{"id": "coss:tooltip", "node": "atom/tooltip", "variation": "standard", "job": "Basic tooltip shown on hover or focus"}
+{"id": "coss:ui", "node": null, "variation": null, "job": "Index re-exporting the shared UI pieces"}
+{"id": "coss:use-copy-to-clipboard", "node": null, "variation": null, "job": "Hook that copies text to the clipboard"}
+{"id": "coss:use-media-query", "node": null, "variation": null, "job": "Hook reporting whether a media query matches"}
+{"id": "coss:use-render", "node": null, "variation": null, "job": "Helper that renders an element with merged props"}
+{"id": "coss:utils", "node": null, "variation": null, "job": "Class-merging and helper functions for components"}

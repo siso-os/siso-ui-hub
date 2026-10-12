@@ -1,0 +1,69 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "$id": "appfactory/0.1/pages",
+ "title": ".appfactory/ui/pages.json",
+ "type": "object",
+ "required": [
+  "pages"
+ ],
+ "additionalProperties": false,
+ "properties": {
+  "$schema": {
+   "type": "string"
+  },
+  "pages": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "required": [
+     "id",
+     "name",
+     "route",
+     "parent",
+     "purpose",
+     "widgets",
+     "status"
+    ],
+    "additionalProperties": false,
+    "properties": {
+     "id": {
+      "type": "string",
+      "pattern": "^P-[a-z0-9-]+$"
+     },
+     "name": {
+      "type": "string"
+     },
+     "route": {
+      "type": "string"
+     },
+     "parent": {
+      "type": [
+       "string",
+       "null"
+      ],
+      "pattern": "^P-[a-z0-9-]+$"
+     },
+     "purpose": {
+      "type": "string"
+     },
+     "widgets": {
+      "type": "array",
+      "items": {
+       "type": "string",
+       "pattern": "^W-[a-z0-9-]+$"
+      }
+     },
+     "status": {
+      "enum": [
+       "planned",
+       "built"
+      ]
+     },
+     "note": {
+      "type": "string"
+     }
+    }
+   }
+  }
+ }
+}

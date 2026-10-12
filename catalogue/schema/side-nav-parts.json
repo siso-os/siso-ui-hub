@@ -1,0 +1,960 @@
+{
+ "generated": "2026-10-11",
+ "source": "Great_Library_of_SISO/knowledge/design-system/systems/side-nav/",
+ "shells": [
+  {
+   "id": "rail",
+   "name": "Icon Rail",
+   "what": "Fixed column of icons on the left edge; clicking an icon swaps the panel beside it or highlights a destination.",
+   "apps": [
+    "agent-base",
+    "halo-oracle",
+    "siso-crm-additional"
+   ]
+  },
+  {
+   "id": "drill",
+   "name": "Drill-Down Panel",
+   "what": "One persistent side nav where clicking an item reveals nested children; lists slide in with direction-aware animations.",
+   "apps": [
+    "ui-hub",
+    "halo-inspiration",
+    "siso-crm"
+   ]
+  },
+  {
+   "id": "flat",
+   "name": "Flat Sidebar",
+   "what": "Vertical sidebar with sections and flat item lists; no nested drill-down; standard shadcn sidebar primitives.",
+   "apps": [
+    "halo-crm",
+    "siso-internal"
+   ]
+  }
+ ],
+ "parts": [
+  {
+   "id": "shell",
+   "name": "Shell",
+   "what": "The root layout container that holds all other parts; defines navigation pattern and geometry.",
+   "variants": [
+    {
+     "id": "agent-base-rail",
+     "app": "agent-base",
+     "what": "React component SideNav from @siso/side-nav package; two-column layout with icons left, panel right; supports domain and team nesting.",
+     "file": "agent-base/agent-base-Sidebar.tsx",
+     "symbol": "SideNav, Sidebar",
+     "has": true
+    },
+    {
+     "id": "ui-hub-drill",
+     "app": "ui-hub",
+     "what": "React Router v7 based; vertical list with Slide component that animates list exit/entry; shows cores at top, drill categories below.",
+     "file": "ui-hub/ui-hub-SideNav.tsx",
+     "symbol": "SideNav, Slide",
+     "has": true
+    },
+    {
+     "id": "halo-crm-flat",
+     "app": "halo-crm",
+     "what": "shadcn/ui Sidebar primitives (Sidebar, SidebarContent, SidebarTrigger); vertical layout with scrollable content area.",
+     "file": "halo-crm/Sidebar.tsx",
+     "symbol": "SidebarComponent, Sidebar",
+     "has": true
+    },
+    {
+     "id": "halo-oracle-rail",
+     "app": "halo-oracle",
+     "what": "Grouped rail with icon-based navigation; ported from SISOCRM's GroupedRail; URL-state driven navigation instead of React Router.",
+     "file": "halo-oracle/halo-oracle-GroupedRail.tsx",
+     "symbol": "GroupedRail",
+     "has": true
+    },
+    {
+     "id": "halo-inspiration-drill",
+     "app": "halo-inspiration",
+     "what": "IssoSidebarShell component; drill-down sections with ISSO-branded dashboard layout; framer-motion animations.",
+     "file": "halo-inspiration/halo-inspiration-IssoSidebarShell.tsx",
+     "symbol": "IssoSidebarShell",
+     "has": true
+    },
+    {
+     "id": "siso-internal-flat",
+     "app": "siso-internal",
+     "what": "shadcn sidebar with composable Sidebar, SidebarNavigation, SidebarSection components; modular architecture.",
+     "file": "siso-internal/Sidebar.tsx",
+     "symbol": "Sidebar, SidebarComponent",
+     "has": true
+    },
+    {
+     "id": "siso-crm-drill",
+     "app": "siso-crm",
+     "what": "Next.js app router with dynamic [workspaceSlug] segments; SidebarWrapper with menu items and project list; workspace-scoped routing.",
+     "file": "siso-crm/sidebar.tsx",
+     "symbol": "AppSidebar, SidebarWrapper",
+     "has": true
+    },
+    {
+     "id": "siso-crm-additional-rail",
+     "app": "siso-crm-additional",
+     "what": "Alternative GroupedRail component; icon-based grouped rail matching SISOCRM product-app implementation.",
+     "file": "siso-crm-additional/siso-crm-GroupedRail.tsx",
+     "symbol": "GroupedRail",
+     "has": true
+    }
+   ]
+  },
+  {
+   "id": "switcher",
+   "name": "Switcher (context/workspace/core)",
+   "what": "The affordance that changes the entire nav list or sidebar context; switches between domains, cores, workspaces, or tabs.",
+   "variants": [
+    {
+     "id": "agent-base-domain",
+     "app": "agent-base",
+     "what": "Space switcher showing 'Agent Base ▾' at top; clicks open domain/space menu; reorders by domain.",
+     "file": "agent-base/agent-base-Sidebar.tsx",
+     "symbol": "markOf, WORD, Sidebar props (domains)",
+     "has": true
+    },
+    {
+     "id": "ui-hub-core",
+     "app": "ui-hub",
+     "what": "Core switcher with SISO mark icon; switching between Components, Sites, Apps, Looks, Projects cores; click changes entire list.",
+     "file": "ui-hub/ui-hub-SideNav.tsx",
+     "symbol": "useTopTab, coreById, coreOf",
+     "has": true
+    },
+    {
+     "id": "halo-crm-none",
+     "app": "halo-crm",
+     "what": "none",
+     "file": "",
+     "symbol": "",
+     "has": false
+    },
+    {
+     "id": "halo-oracle-none",
+     "app": "halo-oracle",
+     "what": "Four icon tabs in a row under the search swap the groups below (the live operator, seen in SHEET.png; the copied GroupedRail.tsx predates them).",
+     "file": "SHEET.png",
+     "symbol": "",
+     "has": true
+    },
+    {
+     "id": "halo-inspiration-platform",
+     "app": "halo-inspiration",
+     "what": "Platform switcher (PERSISTENT_NAV, PLATFORMS_NAV); changes dashboard context between agency and gallery lanes.",
+     "file": "halo-inspiration/halo-inspiration-IssoSidebarShell.tsx",
+     "symbol": "PERSISTENT_NAV, PLATFORMS_NAV, ISSO_NAV_CONFIG",
+     "has": true
+    },
+    {
+     "id": "siso-internal-none",
+     "app": "siso-internal",
+     "what": "none",
+     "file": "",
+     "symbol": "",
+     "has": false
+    },
+    {
+     "id": "siso-crm-workspace",
+     "app": "siso-crm",
+     "what": "Workspace slug in Next.js URL path [workspaceSlug]; sidebar re-renders for each workspace context; no explicit switcher UI shown.",
+     "file": "siso-crm/sidebar.tsx",
+     "symbol": "workspaceSlug (Next.js route parameter)",
+     "has": true
+    },
+    {
+     "id": "siso-crm-additional-none",
+     "app": "siso-crm-additional",
+     "what": "none",
+     "file": "",
+     "symbol": "",
+     "has": false
+    }
+   ]
+  },
+  {
+   "id": "header",
+   "name": "Header (logo/brand/workspace info)",
+   "what": "The top section showing logo, app name, workspace name, or user info; sits above the nav list.",
+   "variants": [
+    {
+     "id": "agent-base-none",
+     "app": "agent-base",
+     "what": "none",
+     "file": "",
+     "symbol": "",
+     "has": false
+    },
+    {
+     "id": "ui-hub-core-badge",
+     "app": "ui-hub",
+     "what": "Core name with SISO mark icon displayed at top (showCores logic); visual indicator of current core context.",
+     "file": "ui-hub/ui-hub-SideNav.tsx",
+     "symbol": "sisoMark, coreOf",
+     "has": true
+    },
+    {
+     "id": "halo-crm-logo",
+     "app": "halo-crm",
+     "what": "SidebarLogo component; displays application branding at top of sidebar content.",
+     "file": "halo-crm/SidebarLogo.tsx",
+     "symbol": "SidebarLogo",
+     "has": true
+    },
+    {
+     "id": "halo-oracle-none",
+     "app": "halo-oracle",
+     "what": "none",
+     "file": "",
+     "symbol": "",
+     "has": false
+    },
+    {
+     "id": "halo-inspiration-header",
+     "app": "halo-inspiration",
+     "what": "SidebarProfileCard and SidebarContextCard at top; shows user profile and dashboard context; platform sprites.",
+     "file": "halo-inspiration/halo-inspiration-IssoSidebarShell.tsx",
+     "symbol": "SidebarProfileCard, SidebarContextCard",
+     "has": true
+    },
+    {
+     "id": "siso-internal-logo",
+     "app": "siso-internal",
+     "what": "SidebarLogo component at top; application branding.",
+     "file": "siso-internal/SidebarLogo.tsx",
+     "symbol": "SidebarLogo",
+     "has": true
+    },
+    {
+     "id": "siso-crm-none",
+     "app": "siso-crm",
+     "what": "none",
+     "file": "",
+     "symbol": "",
+     "has": false
+    },
+    {
+     "id": "siso-crm-additional-none",
+     "app": "siso-crm-additional",
+     "what": "none",
+     "file": "",
+     "symbol": "",
+     "has": false
+    }
+   ]
+  },
+  {
+   "id": "workspace-switcher",
+   "name": "Workspace/Domain Switcher UI",
+   "what": "An explicit UI control (dropdown, menu, or visual indicator) to change workspaces, domains, or teams.",
+   "variants": [
+    {
+     "id": "agent-base-space-menu",
+     "app": "agent-base",
+     "what": "Space switcher menu at top showing current space with chevron; used for domain/team switching.",
+     "file": "agent-base/agent-base-Sidebar.tsx",
+     "symbol": "domains (prop), MenuButton from @siso/shell",
+     "has": true
+    },
+    {
+     "id": "ui-hub-core-menu",
+     "app": "ui-hub",
+     "what": "Core switcher (visual only in code shown); props available for switching cores (Components, Sites, Apps, Looks, Projects).",
+     "file": "ui-hub/ui-hub-SideNav.tsx",
+     "symbol": "coreById, useProjects",
+     "has": true
+    },
+    {
+     "id": "halo-crm-none",
+     "app": "halo-crm",
+     "what": "none",
+     "file": "",
+     "symbol": "",
+     "has": false
+    },
+    {
+     "id": "halo-oracle-none",
+     "app": "halo-oracle",
+     "what": "none",
+     "file": "",
+     "symbol": "",
+     "has": false
+    },
+    {
+     "id": "halo-inspiration-role-switcher",
+     "app": "halo-inspiration",
+     "what": "RoleSwitcherConfig interface; dropdown to switch between role contexts (Creator, Chatter, Agency).",
+     "file": "halo-inspiration/halo-inspiration-IssoSidebarShell.tsx",
+     "symbol": "RoleSwitcherConfig",
+     "has": true
+    },
+    {
+     "id": "siso-internal-none",
+     "app": "siso-internal",
+     "what": "none",
+     "file": "",
+     "symbol": "",
+     "has": false
+    },
+    {
+     "id": "siso-crm-workspace-ui",
+     "app": "siso-crm",
+     "what": "Implicit via Next.js routing; workspace context passed through URL and layout context; no explicit dropdown shown.",
+     "file": "siso-crm/sidebar.tsx",
+     "symbol": "workspaceSlug",
+     "has": true
+    },
+    {
+     "id": "siso-crm-additional-none",
+     "app": "siso-crm-additional",
+     "what": "none",
+     "file": "",
+     "symbol": "",
+     "has": false
+    }
+   ]
+  },
+  {
+   "id": "search",
+   "name": "Search",
+   "what": "An input or button that opens search or command palette to find nav items.",
+   "variants": [
+    {
+     "id": "agent-base-none",
+     "app": "agent-base",
+     "what": "none",
+     "file": "",
+     "symbol": "",
+     "has": false
+    },
+    {
+     "id": "ui-hub-search-button",
+     "app": "ui-hub",
+     "what": "SearchButton component; opens ⌘K palette on click or '/' keypress; label varies by core.",
+     "file": "ui-hub/ui-hub-SideNav.tsx",
+     "symbol": "SearchButton, onSearch",
+     "has": true
+    },
+    {
+     "id": "halo-crm-none",
+     "app": "halo-crm",
+     "what": "none",
+     "file": "",
+     "symbol": "",
+     "has": false
+    },
+    {
+     "id": "halo-oracle-search",
+     "app": "halo-oracle",
+     "what": "SidebarSearch component; opens shell search on click; shows '⌘K' shortcut label when expanded.",
+     "file": "halo-oracle/halo-oracle-GroupedRail.tsx",
+     "symbol": "SidebarSearch",
+     "has": true
+    },
+    {
+     "id": "halo-inspiration-none",
+     "app": "halo-inspiration",
+     "what": "none",
+     "file": "",
+     "symbol": "",
+     "has": false
+    },
+    {
+     "id": "siso-internal-none",
+     "app": "siso-internal",
+     "what": "none",
+     "file": "",
+     "symbol": "",
+     "has": false
+    },
+    {
+     "id": "siso-crm-none",
+     "app": "siso-crm",
+     "what": "none",
+     "file": "",
+     "symbol": "",
+     "has": false
+    },
+    {
+     "id": "siso-crm-additional-none",
+     "app": "siso-crm-additional",
+     "what": "none",
+     "file": "",
+     "symbol": "",
+     "has": false
+    }
+   ]
+  },
+  {
+   "id": "groups",
+   "name": "Groups/Sections",
+   "what": "A container for organizing rows into categories or semantic sections; can be collapsible.",
+   "variants": [
+    {
+     "id": "agent-base-domain-folders",
+     "app": "agent-base",
+     "what": "SideSection component; domain folders that expand/collapse; each domain holds team leads and their crew; hierarchical grouping.",
+     "file": "agent-base/agent-base-Sidebar.tsx",
+     "symbol": "SideSection, ProjectGroup",
+     "has": true
+    },
+    {
+     "id": "ui-hub-job-groups",
+     "app": "ui-hub",
+     "what": "Job-based category groups (actions, inputs, navigation, overlays, data-display, data-viz, status, media, ai-agent, lib, other); each group collapsible with count badge.",
+     "file": "ui-hub/ui-hub-SideNav.tsx",
+     "symbol": "JOBS, JOB Map, groupLabel",
+     "has": true
+    },
+    {
+     "id": "halo-crm-sidebar-groups",
+     "app": "halo-crm",
+     "what": "SidebarGroup, SidebarGroupLabel, SidebarGroupContent from shadcn primitives; flat groups with label headers.",
+     "file": "halo-crm/SidebarNav.tsx",
+     "symbol": "SidebarGroup, SidebarGroupLabel, SidebarGroupContent, NavGroup",
+     "has": true
+    },
+    {
+     "id": "halo-oracle-rail-groups",
+     "app": "halo-oracle",
+     "what": "RailGroup interface with id (primary, context, models) and label; groups destinations with optional meta info.",
+     "file": "halo-oracle/halo-oracle-GroupedRail.tsx",
+     "symbol": "RailGroup, RailGroupId, PRIMARY_DESTINATIONS, CONTEXT_DESTINATIONS",
+     "has": true
+    },
+    {
+     "id": "halo-inspiration-sections",
+     "app": "halo-inspiration",
+     "what": "SectionConfig interface; collapsible section groups defined in ISSO_NAV_CONFIG; each section has items array.",
+     "file": "halo-inspiration/halo-inspiration-IssoSidebarShell.tsx",
+     "symbol": "SectionConfig, ISSO_NAV_CONFIG",
+     "has": true
+    },
+    {
+     "id": "siso-internal-sections",
+     "app": "siso-internal",
+     "what": "SidebarSection component; semantic grouping with SidebarSectionHeader; each section holds menu items.",
+     "file": "siso-internal/SidebarSection.tsx",
+     "symbol": "SidebarSection, SidebarSectionHeader",
+     "has": true
+    },
+    {
+     "id": "siso-crm-menu-items",
+     "app": "siso-crm",
+     "what": "SidebarMenuItems component; menu items grouped by context; SidebarProjectsList for projects; both held by SidebarWrapper.",
+     "file": "siso-crm/sidebar.tsx",
+     "symbol": "SidebarMenuItems, SidebarProjectsList, SidebarWrapper",
+     "has": true
+    },
+    {
+     "id": "siso-crm-additional-none",
+     "app": "siso-crm-additional",
+     "what": "none",
+     "file": "",
+     "symbol": "",
+     "has": false
+    }
+   ]
+  },
+  {
+   "id": "rows",
+   "name": "Rows (individual nav items)",
+   "what": "A single navigation item with icon, label, optional badge/count, and interaction affordances.",
+   "variants": [
+    {
+     "id": "agent-base-thread-row",
+     "app": "agent-base",
+     "what": "ThreadRow component; shows agent/team with icon, label, status mark, hover menu (⋯) with Pin/Move/Settle; supports drag-reorder.",
+     "file": "agent-base/agent-base-Sidebar.tsx",
+     "symbol": "ThreadRow, markOf, SortableItem",
+     "has": true
+    },
+    {
+     "id": "ui-hub-nav-row",
+     "app": "ui-hub",
+     "what": "NavRow component; Link-based with icon (via NavGlyph), label, optional count badge, optional dot indicator, active state.",
+     "file": "ui-hub/ui-hub-SideNav.tsx",
+     "symbol": "NavRow",
+     "has": true
+    },
+    {
+     "id": "halo-crm-menu-button",
+     "app": "halo-crm",
+     "what": "SidebarMenuButton from shadcn; uses NavLink or Link, shows icon and label, active state based on route.",
+     "file": "halo-crm/SidebarNav.tsx",
+     "symbol": "SidebarMenuButton, SidebarMenuItem",
+     "has": true
+    },
+    {
+     "id": "halo-oracle-nav-link",
+     "app": "halo-oracle",
+     "what": "NavLink component (button-based); shows RailIcon (custom or Lucide), label, active state; glyph animates on hover/active.",
+     "file": "halo-oracle/halo-oracle-GroupedRail.tsx",
+     "symbol": "NavLink, RailIcon",
+     "has": true
+    },
+    {
+     "id": "halo-inspiration-nav-item",
+     "app": "halo-inspiration",
+     "what": "NavItem link with icon, label, href; part of SectionConfig; click triggers route transition.",
+     "file": "halo-inspiration/halo-inspiration-IssoSidebarShell.tsx",
+     "symbol": "NavItem",
+     "has": true
+    },
+    {
+     "id": "siso-internal-menu-item",
+     "app": "siso-internal",
+     "what": "SidebarMenuItem component; holds SidebarMenuButton with icon and label; supports nesting under sections.",
+     "file": "siso-internal/SidebarMenuItem.tsx",
+     "symbol": "SidebarMenuItem, SidebarMenuButton",
+     "has": true
+    },
+    {
+     "id": "siso-crm-menu-link",
+     "app": "siso-crm",
+     "what": "Nav items rendered as menu buttons; integrated with Next.js Link and usePathname for active state detection.",
+     "file": "siso-crm/sidebar.tsx",
+     "symbol": "SidebarMenuItems (component)",
+     "has": true
+    },
+    {
+     "id": "siso-crm-additional-rail-dest",
+     "app": "siso-crm-additional",
+     "what": "RailDest interface items; button-based nav links with icon, label, active state; onClick triggers URL patch.",
+     "file": "siso-crm-additional/siso-crm-GroupedRail.tsx",
+     "symbol": "RailDest, NavLink",
+     "has": true
+    }
+   ]
+  },
+  {
+   "id": "status-marks",
+   "name": "Status Marks / Indicators on Rows",
+   "what": "Visual marks on rows showing work state (working, needs attention, failed, done, idle) or other status.",
+   "variants": [
+    {
+     "id": "agent-base-status-marks",
+     "app": "agent-base",
+     "what": "ThreadMark system (working, needs, failed, done, quiet); rotating ring for 'working', dot for others; marks bubble from crew to team leads.",
+     "file": "agent-base/agent-base-Sidebar.tsx",
+     "symbol": "ThreadMark, markOf, LOUD, teamMark, WORD",
+     "has": true
+    },
+    {
+     "id": "ui-hub-none",
+     "app": "ui-hub",
+     "what": "none",
+     "file": "",
+     "symbol": "",
+     "has": false
+    },
+    {
+     "id": "halo-crm-none",
+     "app": "halo-crm",
+     "what": "none",
+     "file": "",
+     "symbol": "",
+     "has": false
+    },
+    {
+     "id": "halo-oracle-none",
+     "app": "halo-oracle",
+     "what": "none",
+     "file": "",
+     "symbol": "",
+     "has": false
+    },
+    {
+     "id": "halo-inspiration-none",
+     "app": "halo-inspiration",
+     "what": "none",
+     "file": "",
+     "symbol": "",
+     "has": false
+    },
+    {
+     "id": "siso-internal-none",
+     "app": "siso-internal",
+     "what": "none",
+     "file": "",
+     "symbol": "",
+     "has": false
+    },
+    {
+     "id": "siso-crm-none",
+     "app": "siso-crm",
+     "what": "none",
+     "file": "",
+     "symbol": "",
+     "has": false
+    },
+    {
+     "id": "siso-crm-additional-none",
+     "app": "siso-crm-additional",
+     "what": "none",
+     "file": "",
+     "symbol": "",
+     "has": false
+    }
+   ]
+  },
+  {
+   "id": "counts",
+   "name": "Counts / Badges",
+   "what": "A numeric badge or count displayed on a row or group showing item quantity or notifications.",
+   "variants": [
+    {
+     "id": "agent-base-none",
+     "app": "agent-base",
+     "what": "none",
+     "file": "",
+     "symbol": "",
+     "has": false
+    },
+    {
+     "id": "ui-hub-count-badges",
+     "app": "ui-hub",
+     "what": "Count badges on category groups; displays groupN (sum of counts); optional dot indicator for 'has his picks'.",
+     "file": "ui-hub/ui-hub-SideNav.tsx",
+     "symbol": "count, groupN, dot (in NavRow)",
+     "has": true
+    },
+    {
+     "id": "halo-crm-none",
+     "app": "halo-crm",
+     "what": "none",
+     "file": "",
+     "symbol": "",
+     "has": false
+    },
+    {
+     "id": "halo-oracle-none",
+     "app": "halo-oracle",
+     "what": "none",
+     "file": "",
+     "symbol": "",
+     "has": false
+    },
+    {
+     "id": "halo-inspiration-none",
+     "app": "halo-inspiration",
+     "what": "none",
+     "file": "",
+     "symbol": "",
+     "has": false
+    },
+    {
+     "id": "siso-internal-none",
+     "app": "siso-internal",
+     "what": "none",
+     "file": "",
+     "symbol": "",
+     "has": false
+    },
+    {
+     "id": "siso-crm-none",
+     "app": "siso-crm",
+     "what": "none",
+     "file": "",
+     "symbol": "",
+     "has": false
+    },
+    {
+     "id": "siso-crm-additional-none",
+     "app": "siso-crm-additional",
+     "what": "none",
+     "file": "",
+     "symbol": "",
+     "has": false
+    }
+   ]
+  },
+  {
+   "id": "footer",
+   "name": "Footer (user/profile section)",
+   "what": "A section at the bottom of the sidebar showing user profile, account switcher, or logout.",
+   "variants": [
+    {
+     "id": "agent-base-none",
+     "app": "agent-base",
+     "what": "none",
+     "file": "",
+     "symbol": "",
+     "has": false
+    },
+    {
+     "id": "ui-hub-none",
+     "app": "ui-hub",
+     "what": "none",
+     "file": "",
+     "symbol": "",
+     "has": false
+    },
+    {
+     "id": "halo-crm-user-section",
+     "app": "halo-crm",
+     "what": "SidebarUserSection component; displays user info at bottom of sidebar content.",
+     "file": "halo-crm/SidebarUserSection.tsx",
+     "symbol": "SidebarUserSection",
+     "has": true
+    },
+    {
+     "id": "halo-oracle-none",
+     "app": "halo-oracle",
+     "what": "none",
+     "file": "",
+     "symbol": "",
+     "has": false
+    },
+    {
+     "id": "halo-inspiration-profile",
+     "app": "halo-inspiration",
+     "what": "SidebarProfileCard at bottom; user profile display.",
+     "file": "halo-inspiration/halo-inspiration-IssoSidebarShell.tsx",
+     "symbol": "SidebarProfileCard",
+     "has": true
+    },
+    {
+     "id": "siso-internal-footer",
+     "app": "siso-internal",
+     "what": "SidebarFooter component; holds user info, project dropdown menu, and account controls.",
+     "file": "siso-internal/Sidebar.tsx",
+     "symbol": "SidebarFooter",
+     "has": true
+    },
+    {
+     "id": "siso-crm-none",
+     "app": "siso-crm",
+     "what": "none",
+     "file": "",
+     "symbol": "",
+     "has": false
+    },
+    {
+     "id": "siso-crm-additional-none",
+     "app": "siso-crm-additional",
+     "what": "none",
+     "file": "",
+     "symbol": "",
+     "has": false
+    }
+   ]
+  },
+  {
+   "id": "transitions",
+   "name": "Transitions / Animations",
+   "what": "Motion effects when nav content changes, groups expand/collapse, or highlighting updates.",
+   "variants": [
+    {
+     "id": "agent-base-css-animations",
+     "app": "agent-base",
+     "what": "CSS rail animations via grouped-rail.css and rail-extras.css; smooth transitions for domain/section expand/collapse.",
+     "file": "agent-base/agent-base-grouped-rail.css, agent-base-rail-extras.css",
+     "symbol": "CSS animations (rail-specific classes)",
+     "has": true
+    },
+    {
+     "id": "ui-hub-slide-animations",
+     "app": "ui-hub",
+     "what": "Slide component with direction-aware enter/leave animations (siso-enter-in/out, siso-leave-in/out); lists slide across on level/tab/core change.",
+     "file": "ui-hub/ui-hub-SideNav.tsx",
+     "symbol": "Slide, siso-enter-in, siso-enter-out, siso-leave-in, siso-leave-out",
+     "has": true
+    },
+    {
+     "id": "halo-crm-none",
+     "app": "halo-crm",
+     "what": "none",
+     "file": "",
+     "symbol": "",
+     "has": false
+    },
+    {
+     "id": "halo-oracle-icon-animation",
+     "app": "halo-oracle",
+     "what": "RailIcon glyph animations on hover and active state; startAnimation/stopAnimation called on NavLink.",
+     "file": "halo-oracle/halo-oracle-GroupedRail.tsx",
+     "symbol": "RailIconHandle, glyph.current?.startAnimation()",
+     "has": true
+    },
+    {
+     "id": "halo-inspiration-framer",
+     "app": "halo-inspiration",
+     "what": "framer-motion animations for section expand/collapse and transitions; useReducedMotion respected.",
+     "file": "halo-inspiration/halo-inspiration-IssoSidebarShell.tsx",
+     "symbol": "motion, AnimatePresence, useReducedMotion",
+     "has": true
+    },
+    {
+     "id": "siso-internal-motion",
+     "app": "siso-internal",
+     "what": "framer-motion and CSS animations for sidebar expand/collapse behavior; hover expand with timing.",
+     "file": "siso-internal/Sidebar.tsx",
+     "symbol": "motion, AnimatePresence",
+     "has": true
+    },
+    {
+     "id": "siso-crm-none",
+     "app": "siso-crm",
+     "what": "none",
+     "file": "",
+     "symbol": "",
+     "has": false
+    },
+    {
+     "id": "siso-crm-additional-none",
+     "app": "siso-crm-additional",
+     "what": "none",
+     "file": "",
+     "symbol": "",
+     "has": false
+    }
+   ]
+  },
+  {
+   "id": "collapse",
+   "name": "Collapse / Expand",
+   "what": "The ability to expand or collapse groups, sections, or nested items to save space.",
+   "variants": [
+    {
+     "id": "agent-base-domain-collapse",
+     "app": "agent-base",
+     "what": "Domains are collapsible folders; SideSection supports expand/collapse; chevron icon indicates state.",
+     "file": "agent-base/agent-base-Sidebar.tsx",
+     "symbol": "SideSection (supports collapse)",
+     "has": true
+    },
+    {
+     "id": "ui-hub-group-collapse",
+     "app": "ui-hub",
+     "what": "Category groups collapsible via ChevronDown/ChevronRight icon; clicking group toggles nested items visibility.",
+     "file": "ui-hub/ui-hub-SideNav.tsx",
+     "symbol": "ChevronDown, ChevronRight (in group rows)",
+     "has": true
+    },
+    {
+     "id": "halo-crm-none",
+     "app": "halo-crm",
+     "what": "none",
+     "file": "",
+     "symbol": "",
+     "has": false
+    },
+    {
+     "id": "halo-oracle-collapse",
+     "app": "halo-oracle",
+     "what": "Collapse support for nested items; compact rail with collapsible groups.",
+     "file": "halo-oracle/halo-oracle-GroupedRail.tsx",
+     "symbol": "collapsed (state in NavLink)",
+     "has": true
+    },
+    {
+     "id": "halo-inspiration-collapse",
+     "app": "halo-inspiration",
+     "what": "Sections collapsible; click section header toggles items visibility.",
+     "file": "halo-inspiration/halo-inspiration-IssoSidebarShell.tsx",
+     "symbol": "collapsedSections (state)",
+     "has": true
+    },
+    {
+     "id": "siso-internal-collapse",
+     "app": "siso-internal",
+     "what": "Sections collapsible via state management; sidebar expands/collapses on hover/click; project menu collapsible.",
+     "file": "siso-internal/Sidebar.tsx",
+     "symbol": "isExpanded, setIsExpanded, SidebarSection",
+     "has": true
+    },
+    {
+     "id": "siso-crm-implicit",
+     "app": "siso-crm",
+     "what": "Implicit collapse via Next.js routing; route changes determine which nav items show.",
+     "file": "siso-crm/sidebar.tsx",
+     "symbol": "dynamic routing (implicit)",
+     "has": true
+    },
+    {
+     "id": "siso-crm-additional-none",
+     "app": "siso-crm-additional",
+     "what": "none",
+     "file": "",
+     "symbol": "",
+     "has": false
+    }
+   ]
+  },
+  {
+   "id": "mobile",
+   "name": "Mobile Responsiveness",
+   "what": "Behavior and layout adaptations for mobile/small screens; may hide sidebar, use drawer, or change geometry.",
+   "variants": [
+    {
+     "id": "agent-base-implicit",
+     "app": "agent-base",
+     "what": "unclear: nothing in the cited file handles small screens",
+     "file": "agent-base/agent-base-Sidebar.tsx",
+     "symbol": "SortableRail (implicit mobile support)",
+     "has": false
+    },
+    {
+     "id": "ui-hub-no-mobile",
+     "app": "ui-hub",
+     "what": "No explicit mobile handling visible in shown code; nav remains same layout on all screens.",
+     "file": "ui-hub/ui-hub-SideNav.tsx",
+     "symbol": "none visible",
+     "has": false
+    },
+    {
+     "id": "halo-crm-hidden",
+     "app": "halo-crm",
+     "what": "Mobile detection via useIsMobile hook; entire sidebar returns null on mobile (completely hidden).",
+     "file": "halo-crm/Sidebar.tsx",
+     "symbol": "useIsMobile, isMobile check",
+     "has": true
+    },
+    {
+     "id": "halo-oracle-responsive",
+     "app": "halo-oracle",
+     "what": "unclear: nothing in the cited file handles small screens",
+     "file": "halo-oracle/halo-oracle-GroupedRail.tsx",
+     "symbol": "responsive CSS (in GroupedRail.css)",
+     "has": false
+    },
+    {
+     "id": "halo-inspiration-responsive",
+     "app": "halo-inspiration",
+     "what": "unclear: nothing in the cited file handles small screens",
+     "file": "halo-inspiration/halo-inspiration-IssoSidebarShell.tsx",
+     "symbol": "responsive (implementation unclear)",
+     "has": false
+    },
+    {
+     "id": "siso-internal-mobile-menu",
+     "app": "siso-internal",
+     "what": "useIsMobile hook; different behavior on mobile (menu button shows/hides sidebar); isMobileMenuOpen state.",
+     "file": "siso-internal/Sidebar.tsx",
+     "symbol": "useIsMobile, isMobileMenuOpen, Menu/X icons",
+     "has": true
+    },
+    {
+     "id": "siso-crm-implicit",
+     "app": "siso-crm",
+     "what": "unclear: nothing in the cited file handles small screens",
+     "file": "siso-crm/sidebar.tsx",
+     "symbol": "responsive routes (implicit)",
+     "has": false
+    },
+    {
+     "id": "siso-crm-additional-responsive",
+     "app": "siso-crm-additional",
+     "what": "unclear: nothing in the cited file handles small screens",
+     "file": "siso-crm-additional/siso-crm-GroupedRail.tsx",
+     "symbol": "responsive (implementation unclear)",
+     "has": false
+    }
+   ]
+  }
+ ]
+}

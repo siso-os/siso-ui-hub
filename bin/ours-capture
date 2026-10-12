@@ -1,0 +1,108 @@
+#!/usr/bin/env python3
+"""Picture our own apps' components from their real screens (Shaan, 12 Oct: "pull out comps that I like from certain apps").
+
+Runs against an app already running in dev mode (component names survive on React's fiber tree). For each route: load it,
+screenshot the whole page, then for every DOM node climb its fiber to each named component above it and grow that
+component's box. A component named in inventory/<app>.jsonl gets its first, largest box cropped (16 px pad, at least 480 px
+wide) to <out>/<app>/<Name>.webp and a line in <out>/<app>.jsonl. Run it on the Mac mini, not the laptop.
+
+  bin/ours-capture <app> <base-url> <inventory.jsonl> <out-dir> [--routes /,/settings,...] [--steps states.json] [--wait 2500]
+--src DIR adds every component the app's own code exports (.tsx under DIR, not node_modules), for apps whose
+inventory has fallen behind their code. Routes default to "/" plus every same-origin link found on "/". --steps takes screens that need clicks (a dialog, a tab,
+a drawer): [{"route": "/app", "click": ["text=Settings", "[aria-label=Open chat]"]}, ...], each loaded fresh then clicked
+in order. Re-running adds to <out>/<app>.jsonl: a component keeps its largest box across runs."""
+import json, os, re, sys, io
+from urllib.parse import urljoin, urlparse
+from PIL import Image
+from playwright.sync_api import sync_playwright
+
+BOXES = """(want) => {
+  const W = new Set(want), box = {}
+  const nameOf = (t) => t && (t.displayName || t.name || (t.render && (t.render.displayName || t.render.name)) || (t.type && nameOf(t.type)))
+  for (const el of document.querySelectorAll('body *')) {
+    const k = Object.keys(el).find((x) => x.startsWith('__reactFiber$'))
+    if (!k) continue
+    const r = el.getBoundingClientRect()
+    if (r.width < 2 || r.height < 2) continue
+    const seen = new Set()
+    for (let f = el[k]; f; f = f.return) {
+      if (typeof f.type === 'string' || !f.type) continue
+      const n = nameOf(f.type)
+      if (!n || !W.has(n) || seen.has(n)) continue
+      seen.add(n)
+      const b = box[n] || (box[n] = { x0: 1e9, y0: 1e9, x1: -1e9, y1: -1e9 })
+      b.x0 = Math.min(b.x0, r.left + scrollX); b.y0 = Math.min(b.y0, r.top + scrollY)
+      b.x1 = Math.max(b.x1, r.right + scrollX); b.y1 = Math.max(b.y1, r.bottom + scrollY)
+    }
+  }
+  return box
+}"""
+
+
+def main():
+    a = sys.argv[1:]
+    app, base, inv, out = a[:4]
+    wait = int(a[a.index("--wait") + 1]) if "--wait" in a else 2500
+    rows = [json.loads(l) for l in open(inv)]
+    meta = {r["name"]: r for r in rows}
+    if "--src" in a:
+        src = a[a.index("--src") + 1]
+        for root, dirs, files in os.walk(src):
+            dirs[:] = [d for d in dirs if d not in ("node_modules", "dist", "_archive", ".git", "test", "__tests__")]
+            for fn in files:
+                if not fn.endswith(".tsx") or ".test." in fn or ".stories." in fn: continue
+                code = open(os.path.join(root, fn), errors="ignore").read()
+                for n in re.findall(r"export\s+(?:default\s+)?(?:function|const)\s+([A-Z][A-Za-z0-9]+)", code):
+                    meta.setdefault(n, {"name": n, "file": os.path.relpath(os.path.join(root, fn), src)})
+    os.makedirs(f"{out}/{app}", exist_ok=True)
+    prev = f"{out}/{app}.jsonl"
+    done = {d["name"]: d for d in map(json.loads, open(prev))} if os.path.exists(prev) else {}
+    with sync_playwright() as p:
+        b = p.chromium.launch()
+        pg = b.new_page(viewport={"width": 1440, "height": 900})
+        if "--steps" in a:
+            routes = json.load(open(a[a.index("--steps") + 1]))
+        elif "--routes" in a:
+            routes = a[a.index("--routes") + 1].split(",")
+        else:
+            pg.goto(base, wait_until="load", timeout=60000)
+            host = urlparse(base).netloc
+            links = pg.eval_on_selector_all("a[href]", "as => as.map(a => a.href)")
+            routes = ["/"] + sorted({urlparse(u).path for u in links if urlparse(u).netloc == host and urlparse(u).path not in ("", "/")})[:60]
+        for step in routes:
+            route, clicks = (step, []) if isinstance(step, str) else (step["route"], step.get("click", []))
+            try:
+                pg.goto(urljoin(base, route), wait_until="load", timeout=60000)
+                pg.wait_for_timeout(wait)
+                for c in clicks:
+                    pg.click(c, timeout=8000)
+                    pg.wait_for_timeout(1200)
+            except Exception as e:
+                print("skip", route, clicks, str(e)[:80]); continue
+            route = route + "".join(f" > {c}" for c in clicks)
+            shot = Image.open(io.BytesIO(pg.screenshot(full_page=True))).convert("RGB")
+            for n, bx in pg.evaluate(BOXES, list(meta)).items():
+                w, h = bx["x1"] - bx["x0"], bx["y1"] - bx["y0"]
+                if w < 24 or h < 16 or (n in done and done[n]["w"] * done[n]["h"] >= w * h):
+                    continue
+                l, t = max(0, bx["x0"] - 16), max(0, bx["y0"] - 16)
+                r, btm = min(shot.width, bx["x1"] + 16), min(shot.height, bx["y1"] + 16)
+                if r - l < 8 or btm - t < 8:
+                    continue
+                crop = shot.crop((int(l), int(t), int(r), int(btm)))
+                if crop.width < 480:
+                    crop = crop.resize((480, max(1, round(480 * crop.height / crop.width))), Image.LANCZOS)
+                crop.save(f"{out}/{app}/{n}.webp", "WEBP", quality=80)
+                m = meta[n]
+                done[n] = {"app": app, "name": n, "file": m.get("file"), "category": m.get("category"), "kind": m.get("kind"), "grade": m.get("grade"),
+                           "route": route, "w": round(w), "h": round(h), "pic": f"ours/{app}/{n}.webp"}
+            print(route, len(done), flush=True)
+        b.close()
+    with open(f"{out}/{app}.jsonl", "w") as f:
+        for d in done.values():
+            f.write(json.dumps(d) + "\n")
+    print(f"{len(done)} of {len(meta)} components pictured over {len(routes)} routes")
+
+
+if __name__ == "__main__":
+    main()

@@ -1,0 +1,1895 @@
+[
+ {
+  "key": "atom/layout",
+  "name": "Layout",
+  "group": "Atoms",
+  "job": "arrange other parts: stack, grid, divider, scroll area",
+  "made_of": null,
+  "sections": null,
+  "parts": 725,
+  "types": [
+   [
+    "standard scroll area",
+    200
+   ],
+   [
+    "vertical scroll",
+    142
+   ],
+   [
+    "parallax",
+    56
+   ],
+   [
+    "scroll reveal",
+    51
+   ],
+   [
+    "horizontal scroll",
+    33
+   ],
+   [
+    "sticky and stacking",
+    24
+   ],
+   [
+    "scroll progress",
+    12
+   ],
+   [
+    "scroll-driven animation",
+    12
+   ],
+   [
+    "infinite and velocity",
+    6
+   ],
+   [
+    "text scroll",
+    6
+   ],
+   [
+    "scroll fade",
+    1
+   ]
+  ],
+  "looks": [
+   [
+    "minimal",
+    399
+   ],
+   [
+    "clean",
+    64
+   ],
+   [
+    "dark",
+    54
+   ],
+   [
+    "3d",
+    37
+   ],
+   [
+    "gradient",
+    19
+   ],
+   [
+    "glass",
+    11
+   ],
+   [
+    "editorial",
+    7
+   ],
+   [
+    "playful",
+    5
+   ]
+  ],
+  "fits": [
+   [
+    "saas",
+    49
+   ],
+   [
+    "portfolio",
+    18
+   ],
+   [
+    "agency",
+    10
+   ],
+   [
+    "dev-tools",
+    10
+   ],
+   [
+    "media",
+    7
+   ],
+   [
+    "travel",
+    3
+   ],
+   [
+    "social",
+    3
+   ],
+   [
+    "ai",
+    2
+   ]
+  ]
+ },
+ {
+  "key": "atom/text",
+  "name": "Text",
+  "group": "Atoms",
+  "job": "say something: heading, body, label, quote, inline code, keyboard key",
+  "made_of": null,
+  "sections": null,
+  "parts": 279,
+  "types": [
+   [
+    "kbd or inline",
+    72
+   ],
+   [
+    "keyboard keys",
+    68
+   ],
+   [
+    "prose",
+    27
+   ],
+   [
+    "headings",
+    24
+   ],
+   [
+    "typography system",
+    12
+   ],
+   [
+    "prose section",
+    12
+   ],
+   [
+    "standard typography",
+    11
+   ],
+   [
+    "text primitives",
+    8
+   ],
+   [
+    "blockquote",
+    7
+   ],
+   [
+    "split letters",
+    4
+   ],
+   [
+    "text",
+    4
+   ],
+   [
+    "headings and prose",
+    2
+   ],
+   [
+    "lists",
+    2
+   ]
+  ],
+  "looks": [
+   [
+    "minimal",
+    108
+   ],
+   [
+    "clean",
+    64
+   ],
+   [
+    "dark",
+    59
+   ],
+   [
+    "editorial",
+    8
+   ],
+   [
+    "glass",
+    5
+   ],
+   [
+    "retro-hud",
+    4
+   ],
+   [
+    "brutalist",
+    4
+   ],
+   [
+    "3d",
+    4
+   ]
+  ],
+  "fits": [
+   [
+    "dev-tools",
+    15
+   ],
+   [
+    "media",
+    6
+   ],
+   [
+    "portfolio",
+    3
+   ],
+   [
+    "education",
+    2
+   ],
+   [
+    "ai",
+    2
+   ],
+   [
+    "saas",
+    2
+   ],
+   [
+    "agency",
+    1
+   ]
+  ]
+ },
+ {
+  "key": "atom/link",
+  "name": "Link",
+  "group": "Atoms",
+  "job": "go somewhere",
+  "made_of": null,
+  "sections": null,
+  "parts": 239,
+  "types": [
+   [
+    "standard link",
+    60
+   ],
+   [
+    "navigation",
+    51
+   ],
+   [
+    "social links",
+    44
+   ],
+   [
+    "preview on hover",
+    23
+   ],
+   [
+    "inline styled link",
+    17
+   ],
+   [
+    "github contribution calendar",
+    4
+   ]
+  ],
+  "looks": [
+   [
+    "minimal",
+    118
+   ],
+   [
+    "clean",
+    66
+   ],
+   [
+    "dark",
+    31
+   ],
+   [
+    "3d",
+    6
+   ],
+   [
+    "glass",
+    5
+   ],
+   [
+    "editorial",
+    4
+   ],
+   [
+    "playful",
+    4
+   ],
+   [
+    "illustrated",
+    2
+   ]
+  ],
+  "fits": [
+   [
+    "portfolio",
+    21
+   ],
+   [
+    "saas",
+    19
+   ],
+   [
+    "social",
+    10
+   ],
+   [
+    "dev-tools",
+    7
+   ],
+   [
+    "commerce",
+    6
+   ],
+   [
+    "ai",
+    4
+   ],
+   [
+    "health",
+    1
+   ]
+  ]
+ },
+ {
+  "key": "atom/button",
+  "name": "Button",
+  "group": "Atoms",
+  "job": "do something",
+  "made_of": null,
+  "sections": null,
+  "parts": 2938,
+  "types": [
+   [
+    "standard button",
+    1202
+   ],
+   [
+    "group or split",
+    345
+   ],
+   [
+    "loading",
+    156
+   ],
+   [
+    "icon button",
+    142
+   ],
+   [
+    "toggle or like",
+    113
+   ],
+   [
+    "social or brand",
+    79
+   ],
+   [
+    "pressable",
+    77
+   ],
+   [
+    "copy or share",
+    55
+   ],
+   [
+    "hold to confirm",
+    42
+   ],
+   [
+    "standard copy button",
+    31
+   ],
+   [
+    "icon state morph",
+    20
+   ],
+   [
+    "transition",
+    13
+   ],
+   [
+    "code block with copy",
+    12
+   ],
+   [
+    "feedback animation",
+    7
+   ],
+   [
+    "label",
+    4
+   ]
+  ],
+  "looks": [
+   [
+    "minimal",
+    1338
+   ],
+   [
+    "dark",
+    418
+   ],
+   [
+    "neon-glow",
+    215
+   ],
+   [
+    "clean",
+    214
+   ],
+   [
+    "gradient",
+    140
+   ],
+   [
+    "playful",
+    135
+   ],
+   [
+    "3d",
+    117
+   ],
+   [
+    "glass",
+    58
+   ]
+  ],
+  "fits": [
+   [
+    "saas",
+    212
+   ],
+   [
+    "dev-tools",
+    96
+   ],
+   [
+    "social",
+    89
+   ],
+   [
+    "gaming",
+    66
+   ],
+   [
+    "productivity",
+    49
+   ],
+   [
+    "ai",
+    36
+   ],
+   [
+    "crypto",
+    27
+   ],
+   [
+    "media",
+    24
+   ]
+  ]
+ },
+ {
+  "key": "atom/icon",
+  "name": "Icon",
+  "group": "Atoms",
+  "job": "name a thing at a glance",
+  "made_of": null,
+  "sections": null,
+  "parts": 17336,
+  "types": [],
+  "looks": [],
+  "fits": []
+ },
+ {
+  "key": "atom/image",
+  "name": "Image and video",
+  "group": "Atoms",
+  "job": "show a picture or clip",
+  "made_of": null,
+  "sections": null,
+  "parts": 22,
+  "types": [
+   [
+    "waveform visualizer",
+    6
+   ],
+   [
+    "audio mixer or controls",
+    6
+   ],
+   [
+    "video player",
+    4
+   ],
+   [
+    "audio player",
+    3
+   ],
+   [
+    "standard player",
+    3
+   ]
+  ],
+  "looks": [
+   [
+    "minimal",
+    12
+   ],
+   [
+    "dark",
+    8
+   ],
+   [
+    "clean",
+    2
+   ],
+   [
+    "gradient",
+    1
+   ]
+  ],
+  "fits": [
+   [
+    "media",
+    7
+   ],
+   [
+    "ai",
+    4
+   ],
+   [
+    "social",
+    1
+   ]
+  ]
+ },
+ {
+  "key": "atom/avatar",
+  "name": "Avatar",
+  "group": "Atoms",
+  "job": "stand for a person or org",
+  "made_of": null,
+  "sections": null,
+  "parts": 650,
+  "types": [
+   [
+    "standard avatar",
+    275
+   ],
+   [
+    "avatar group",
+    163
+   ],
+   [
+    "fallback",
+    75
+   ],
+   [
+    "application usage",
+    40
+   ]
+  ],
+  "looks": [
+   [
+    "minimal",
+    303
+   ],
+   [
+    "clean",
+    178
+   ],
+   [
+    "dark",
+    43
+   ],
+   [
+    "playful",
+    22
+   ],
+   [
+    "glass",
+    13
+   ],
+   [
+    "illustrated",
+    13
+   ],
+   [
+    "gradient",
+    8
+   ],
+   [
+    "retro-hud",
+    5
+   ]
+  ],
+  "fits": [
+   [
+    "saas",
+    50
+   ],
+   [
+    "social",
+    22
+   ],
+   [
+    "ai",
+    9
+   ],
+   [
+    "gaming",
+    8
+   ],
+   [
+    "dev-tools",
+    7
+   ],
+   [
+    "crypto",
+    2
+   ],
+   [
+    "productivity",
+    2
+   ],
+   [
+    "commerce",
+    2
+   ]
+  ]
+ },
+ {
+  "key": "atom/badge",
+  "name": "Badge",
+  "group": "Atoms",
+  "job": "label or count something",
+  "made_of": null,
+  "sections": null,
+  "parts": 1071,
+  "types": [
+   [
+    "standard badge",
+    518
+   ],
+   [
+    "tag or chip",
+    180
+   ],
+   [
+    "badge in context",
+    74
+   ],
+   [
+    "count",
+    65
+   ],
+   [
+    "dot",
+    60
+   ],
+   [
+    "icon badge",
+    14
+   ]
+  ],
+  "looks": [
+   [
+    "minimal",
+    580
+   ],
+   [
+    "dark",
+    221
+   ],
+   [
+    "clean",
+    183
+   ],
+   [
+    "neon-glow",
+    99
+   ],
+   [
+    "playful",
+    60
+   ],
+   [
+    "glass",
+    21
+   ],
+   [
+    "3d",
+    20
+   ],
+   [
+    "gradient",
+    11
+   ]
+  ],
+  "fits": [
+   [
+    "saas",
+    135
+   ],
+   [
+    "dev-tools",
+    68
+   ],
+   [
+    "ai",
+    39
+   ],
+   [
+    "commerce",
+    29
+   ],
+   [
+    "portfolio",
+    25
+   ],
+   [
+    "social",
+    20
+   ],
+   [
+    "productivity",
+    12
+   ],
+   [
+    "gaming",
+    11
+   ]
+  ]
+ },
+ {
+  "key": "atom/status-dot",
+  "name": "Status dot",
+  "group": "Atoms",
+  "job": "show live state",
+  "made_of": null,
+  "sections": null,
+  "parts": 111,
+  "types": [
+   [
+    "standard status dot",
+    47
+   ],
+   [
+    "ping",
+    14
+   ],
+   [
+    "bar",
+    8
+   ],
+   [
+    "presence wrapper",
+    7
+   ],
+   [
+    "avatar stack",
+    7
+   ]
+  ],
+  "looks": [
+   [
+    "minimal",
+    67
+   ],
+   [
+    "dark",
+    9
+   ],
+   [
+    "neon-glow",
+    2
+   ],
+   [
+    "retro-hud",
+    2
+   ],
+   [
+    "illustrated",
+    2
+   ],
+   [
+    "monochrome",
+    1
+   ],
+   [
+    "3d",
+    1
+   ],
+   [
+    "clean",
+    1
+   ]
+  ],
+  "fits": [
+   [
+    "saas",
+    18
+   ],
+   [
+    "dev-tools",
+    8
+   ],
+   [
+    "social",
+    5
+   ],
+   [
+    "productivity",
+    4
+   ],
+   [
+    "ai",
+    3
+   ],
+   [
+    "gaming",
+    2
+   ]
+  ]
+ },
+ {
+  "key": "atom/text-input",
+  "name": "Text input",
+  "group": "Atoms",
+  "job": "type a value",
+  "made_of": null,
+  "sections": null,
+  "parts": 2014,
+  "types": [
+   [
+    "text input",
+    441
+   ],
+   [
+    "standard textarea",
+    324
+   ],
+   [
+    "slots",
+    135
+   ],
+   [
+    "toolbar",
+    128
+   ],
+   [
+    "stepper",
+    101
+   ],
+   [
+    "standard form field",
+    75
+   ],
+   [
+    "code editor",
+    72
+   ],
+   [
+    "whole form",
+    62
+   ],
+   [
+    "label",
+    51
+   ],
+   [
+    "standard otp input",
+    50
+   ],
+   [
+    "field primitives",
+    38
+   ],
+   [
+    "password",
+    36
+   ],
+   [
+    "rich text editor",
+    35
+   ],
+   [
+    "verification form",
+    33
+   ],
+   [
+    "autosize",
+    32
+   ],
+   [
+    "validation",
+    29
+   ],
+   [
+    "floating label",
+    28
+   ],
+   [
+    "pin or 4-digit",
+    26
+   ],
+   [
+    "icon or addon",
+    23
+   ],
+   [
+    "counter",
+    16
+   ],
+   [
+    "system",
+    16
+   ],
+   [
+    "validation states",
+    16
+   ],
+   [
+    "save and export",
+    15
+   ],
+   [
+    "separators",
+    14
+   ],
+   [
+    "number stepper",
+    13
+   ]
+  ],
+  "looks": [
+   [
+    "minimal",
+    1152
+   ],
+   [
+    "dark",
+    497
+   ],
+   [
+    "clean",
+    239
+   ],
+   [
+    "editorial",
+    55
+   ],
+   [
+    "retro-hud",
+    43
+   ],
+   [
+    "brutalist",
+    30
+   ],
+   [
+    "skeuomorphic",
+    26
+   ],
+   [
+    "glass",
+    23
+   ]
+  ],
+  "fits": [
+   [
+    "dev-tools",
+    143
+   ],
+   [
+    "saas",
+    76
+   ],
+   [
+    "productivity",
+    31
+   ],
+   [
+    "commerce",
+    25
+   ],
+   [
+    "media",
+    24
+   ],
+   [
+    "fintech",
+    13
+   ],
+   [
+    "gaming",
+    10
+   ],
+   [
+    "education",
+    8
+   ]
+  ]
+ },
+ {
+  "key": "atom/choice",
+  "name": "Checkbox and radio",
+  "group": "Atoms",
+  "job": "choose one or several",
+  "made_of": null,
+  "sections": null,
+  "parts": 1132,
+  "types": [
+   [
+    "standard checkbox",
+    305
+   ],
+   [
+    "group",
+    233
+   ],
+   [
+    "standard radio",
+    213
+   ],
+   [
+    "card radio",
+    82
+   ],
+   [
+    "label and description",
+    42
+   ],
+   [
+    "indeterminate",
+    38
+   ],
+   [
+    "description",
+    35
+   ],
+   [
+    "card checkbox",
+    17
+   ],
+   [
+    "themed",
+    13
+   ],
+   [
+    "checklist",
+    9
+   ]
+  ],
+  "looks": [
+   [
+    "minimal",
+    492
+   ],
+   [
+    "dark",
+    250
+   ],
+   [
+    "clean",
+    238
+   ],
+   [
+    "playful",
+    36
+   ],
+   [
+    "glass",
+    21
+   ],
+   [
+    "light",
+    16
+   ],
+   [
+    "skeuomorphic",
+    13
+   ],
+   [
+    "retro-hud",
+    13
+   ]
+  ],
+  "fits": [
+   [
+    "saas",
+    123
+   ],
+   [
+    "dev-tools",
+    33
+   ],
+   [
+    "commerce",
+    33
+   ],
+   [
+    "productivity",
+    9
+   ],
+   [
+    "gaming",
+    8
+   ],
+   [
+    "fintech",
+    4
+   ],
+   [
+    "education",
+    2
+   ],
+   [
+    "crypto",
+    2
+   ]
+  ]
+ },
+ {
+  "key": "atom/switch",
+  "name": "Switch",
+  "group": "Atoms",
+  "job": "turn on or off",
+  "made_of": null,
+  "sections": null,
+  "parts": 1230,
+  "types": [
+   [
+    "standard switch",
+    368
+   ],
+   [
+    "theme toggle",
+    169
+   ],
+   [
+    "toggle button",
+    117
+   ],
+   [
+    "label",
+    110
+   ],
+   [
+    "segmented toggle",
+    77
+   ],
+   [
+    "on/off switch",
+    58
+   ],
+   [
+    "icons",
+    46
+   ],
+   [
+    "toggle group",
+    40
+   ],
+   [
+    "toggle or like",
+    12
+   ]
+  ],
+  "looks": [
+   [
+    "minimal",
+    608
+   ],
+   [
+    "dark",
+    304
+   ],
+   [
+    "clean",
+    171
+   ],
+   [
+    "playful",
+    33
+   ],
+   [
+    "glass",
+    31
+   ],
+   [
+    "skeuomorphic",
+    25
+   ],
+   [
+    "3d",
+    20
+   ],
+   [
+    "illustrated",
+    20
+   ]
+  ],
+  "fits": [
+   [
+    "saas",
+    71
+   ],
+   [
+    "dev-tools",
+    25
+   ],
+   [
+    "gaming",
+    24
+   ],
+   [
+    "ai",
+    9
+   ],
+   [
+    "commerce",
+    8
+   ],
+   [
+    "social",
+    8
+   ],
+   [
+    "productivity",
+    6
+   ],
+   [
+    "health",
+    3
+   ]
+  ]
+ },
+ {
+  "key": "atom/slider",
+  "name": "Slider and rating",
+  "group": "Atoms",
+  "job": "pick along a range",
+  "made_of": null,
+  "sections": null,
+  "parts": 984,
+  "types": [
+   [
+    "standard slider",
+    264
+   ],
+   [
+    "range",
+    109
+   ],
+   [
+    "star rating",
+    91
+   ],
+   [
+    "labels or ticks",
+    68
+   ],
+   [
+    "input",
+    40
+   ],
+   [
+    "specialized",
+    38
+   ],
+   [
+    "standard rating",
+    35
+   ],
+   [
+    "horizontal slider",
+    32
+   ],
+   [
+    "feedback widget",
+    31
+   ],
+   [
+    "vertical",
+    24
+   ],
+   [
+    "review list",
+    21
+   ],
+   [
+    "dial or knob",
+    18
+   ],
+   [
+    "elastic slider",
+    15
+   ],
+   [
+    "emoji or icon rating",
+    13
+   ],
+   [
+    "value input",
+    12
+   ]
+  ],
+  "looks": [
+   [
+    "minimal",
+    437
+   ],
+   [
+    "clean",
+    183
+   ],
+   [
+    "dark",
+    86
+   ],
+   [
+    "playful",
+    52
+   ],
+   [
+    "glass",
+    27
+   ],
+   [
+    "gradient",
+    25
+   ],
+   [
+    "retro-hud",
+    22
+   ],
+   [
+    "skeuomorphic",
+    22
+   ]
+  ],
+  "fits": [
+   [
+    "saas",
+    37
+   ],
+   [
+    "commerce",
+    32
+   ],
+   [
+    "media",
+    32
+   ],
+   [
+    "dev-tools",
+    26
+   ],
+   [
+    "fintech",
+    11
+   ],
+   [
+    "ai",
+    9
+   ],
+   [
+    "gaming",
+    5
+   ],
+   [
+    "crypto",
+    3
+   ]
+  ]
+ },
+ {
+  "key": "atom/loader",
+  "name": "Loader and skeleton",
+  "group": "Atoms",
+  "job": "say it is working",
+  "made_of": null,
+  "sections": null,
+  "parts": 2053,
+  "types": [
+   [
+    "spinner",
+    460
+   ],
+   [
+    "shapes or grid",
+    272
+   ],
+   [
+    "text lines",
+    129
+   ],
+   [
+    "pulse",
+    114
+   ],
+   [
+    "standard loader",
+    111
+   ],
+   [
+    "dots",
+    58
+   ],
+   [
+    "orbit",
+    57
+   ],
+   [
+    "rotating ring or arc",
+    52
+   ],
+   [
+    "shimmer",
+    51
+   ],
+   [
+    "spiral",
+    51
+   ],
+   [
+    "spin",
+    44
+   ],
+   [
+    "bars",
+    37
+   ],
+   [
+    "progress",
+    36
+   ],
+   [
+    "standard skeleton",
+    33
+   ],
+   [
+    "grid puzzle or scan",
+    32
+   ],
+   [
+    "sweep",
+    21
+   ],
+   [
+    "text or logo",
+    19
+   ],
+   [
+    "specialized or themed",
+    19
+   ],
+   [
+    "card skeleton",
+    18
+   ],
+   [
+    "cascade",
+    17
+   ],
+   [
+    "explosion",
+    17
+   ],
+   [
+    "shapes",
+    17
+   ],
+   [
+    "geometric shape loaders",
+    9
+   ],
+   [
+    "list skeleton",
+    4
+   ]
+  ],
+  "looks": [
+   [
+    "minimal",
+    1111
+   ],
+   [
+    "dark",
+    256
+   ],
+   [
+    "retro-hud",
+    138
+   ],
+   [
+    "clean",
+    39
+   ],
+   [
+    "playful",
+    34
+   ],
+   [
+    "3d",
+    24
+   ],
+   [
+    "gradient",
+    16
+   ],
+   [
+    "glass",
+    16
+   ]
+  ],
+  "fits": [
+   [
+    "dev-tools",
+    126
+   ],
+   [
+    "gaming",
+    122
+   ],
+   [
+    "saas",
+    38
+   ],
+   [
+    "ai",
+    26
+   ],
+   [
+    "media",
+    18
+   ],
+   [
+    "health",
+    15
+   ],
+   [
+    "commerce",
+    5
+   ],
+   [
+    "fintech",
+    2
+   ]
+  ]
+ },
+ {
+  "key": "atom/progress",
+  "name": "Progress",
+  "group": "Atoms",
+  "job": "say how far along",
+  "made_of": null,
+  "sections": null,
+  "parts": 859,
+  "types": [
+   [
+    "linear",
+    255
+   ],
+   [
+    "circular",
+    106
+   ],
+   [
+    "linear meter",
+    78
+   ],
+   [
+    "label",
+    62
+   ],
+   [
+    "standard progress bar",
+    55
+   ],
+   [
+    "stepped",
+    46
+   ],
+   [
+    "segmented",
+    34
+   ],
+   [
+    "scroll progress",
+    31
+   ],
+   [
+    "specialized gauge",
+    17
+   ],
+   [
+    "standard gauge",
+    17
+   ],
+   [
+    "strength meter",
+    6
+   ]
+  ],
+  "looks": [
+   [
+    "minimal",
+    322
+   ],
+   [
+    "clean",
+    238
+   ],
+   [
+    "dark",
+    89
+   ],
+   [
+    "retro-hud",
+    31
+   ],
+   [
+    "gradient",
+    30
+   ],
+   [
+    "monochrome",
+    19
+   ],
+   [
+    "playful",
+    15
+   ],
+   [
+    "glass",
+    13
+   ]
+  ],
+  "fits": [
+   [
+    "saas",
+    105
+   ],
+   [
+    "dev-tools",
+    45
+   ],
+   [
+    "ai",
+    29
+   ],
+   [
+    "gaming",
+    27
+   ],
+   [
+    "productivity",
+    13
+   ],
+   [
+    "portfolio",
+    13
+   ],
+   [
+    "fintech",
+    11
+   ],
+   [
+    "media",
+    11
+   ]
+  ]
+ },
+ {
+  "key": "atom/tooltip",
+  "name": "Tooltip",
+  "group": "Atoms",
+  "job": "explain on hover",
+  "made_of": null,
+  "sections": null,
+  "parts": 505,
+  "types": [
+   [
+    "standard tooltip",
+    318
+   ],
+   [
+    "rich tooltip",
+    56
+   ],
+   [
+    "arrow",
+    42
+   ],
+   [
+    "grouped or delay",
+    9
+   ]
+  ],
+  "looks": [
+   [
+    "minimal",
+    241
+   ],
+   [
+    "clean",
+    126
+   ],
+   [
+    "dark",
+    32
+   ],
+   [
+    "glass",
+    14
+   ],
+   [
+    "playful",
+    7
+   ],
+   [
+    "brutalist",
+    7
+   ],
+   [
+    "monochrome",
+    6
+   ],
+   [
+    "retro-hud",
+    4
+   ]
+  ],
+  "fits": [
+   [
+    "saas",
+    36
+   ],
+   [
+    "dev-tools",
+    14
+   ],
+   [
+    "ai",
+    8
+   ],
+   [
+    "productivity",
+    4
+   ],
+   [
+    "gaming",
+    3
+   ],
+   [
+    "social",
+    3
+   ],
+   [
+    "fintech",
+    1
+   ],
+   [
+    "commerce",
+    1
+   ]
+  ]
+ },
+ {
+  "key": "asset/logo",
+  "name": "logo",
+  "group": "Assets",
+  "job": null,
+  "made_of": null,
+  "sections": null,
+  "parts": 2416,
+  "types": [],
+  "looks": [],
+  "fits": []
+ },
+ {
+  "key": "asset/sound",
+  "name": "sound",
+  "group": "Assets",
+  "job": null,
+  "made_of": null,
+  "sections": null,
+  "parts": 837,
+  "types": [],
+  "looks": [],
+  "fits": []
+ },
+ {
+  "key": "asset/flag",
+  "name": "flag",
+  "group": "Assets",
+  "job": null,
+  "made_of": null,
+  "sections": null,
+  "parts": 322,
+  "types": [],
+  "looks": [],
+  "fits": []
+ },
+ {
+  "key": "asset/illustration",
+  "name": "illustration",
+  "group": "Assets",
+  "job": null,
+  "made_of": null,
+  "sections": null,
+  "parts": 238,
+  "types": [],
+  "looks": [],
+  "fits": []
+ },
+ {
+  "key": "asset/og-image",
+  "name": "og-image",
+  "group": "Assets",
+  "job": null,
+  "made_of": null,
+  "sections": null,
+  "parts": 163,
+  "types": [],
+  "looks": [],
+  "fits": []
+ },
+ {
+  "key": "asset/font",
+  "name": "font",
+  "group": "Assets",
+  "job": null,
+  "made_of": null,
+  "sections": null,
+  "parts": 121,
+  "types": [],
+  "looks": [],
+  "fits": []
+ },
+ {
+  "key": "asset/shape",
+  "name": "shape",
+  "group": "Assets",
+  "job": null,
+  "made_of": null,
+  "sections": null,
+  "parts": 86,
+  "types": [],
+  "looks": [],
+  "fits": []
+ },
+ {
+  "key": "asset/avatar",
+  "name": "avatar",
+  "group": "Assets",
+  "job": null,
+  "made_of": null,
+  "sections": null,
+  "parts": 61,
+  "types": [],
+  "looks": [],
+  "fits": []
+ }
+]

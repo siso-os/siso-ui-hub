@@ -2,8 +2,20 @@
 """uihub: the hub from a shell. Every agent runs `uihub brief` before UI work; CI runs `uihub check` before merge.
 
   uihub brief <surface|project|vertical>   the rules, what fits this surface, the picks with install lines, decided swaps
-  uihub find <words...>                    search the catalogue (picks, ours) and the 11 libraries' 1,182 items
-  uihub show <id>                          one item: why it is picked, install, licence, docs, code facts
+  uihub find <words...> [--kind K] [--source S] [--json]
+                                           search everything the hub holds (bin/hubindex.py): his 138 picks, the picks, ours,
+                                           the 11 libraries, the 21st.dev corpus, siso-shell's families, tools and RESEARCH's map
+  uihub show <id> [--json]                 one item: his note, why it is picked, install, licence, docs, code facts, code files
+  uihub stats [--json]                     the counts the site's home board shows (same function)
+  uihub bookmark <id> [--note "…"] [--signal love|star|good|maybe|meh] [--off]
+                                           bookmark an item for every agent (catalogue/bookmarks.json)
+  uihub sync [--url URL]                   pull bookmarks made on the hosted site into catalogue/bookmarks.json
+                                           (UIHUB_URL, UIHUB_PASSWORD from the environment; the password is never printed)
+  uihub export --out DIR [--no-assets] [--public]
+                                           write the site's data (and previews, live bundles) into DIR; --public writes the
+                                           public build (no notes, bookmarks, HALO or client text, no hosted 21st code) and
+                                           runs the privacy gate (exit 1 on any hit)
+  uihub privacy-check DIR                  the gate alone: any HALO/client term or any of his note texts in DIR
   uihub check <project> [--ref REF] [--base SHA] [--repo DIR --prefix src/]
                                            component files added since the baseline (inventory/baseline.json) must say where they came
                                            from: a line `uihub: <id>` naming a pick or one of ours (custom.json).
@@ -60,6 +72,56 @@ def brief(arg):
         print(f"\n## Decided swaps for {arg} (catalogue/swaps.json; for {sw['reader']})")
         for i, s in enumerate(sw["swaps"], 1): print(f"  {i}. {s['what']} ({s['effort']}): {', '.join(s['files'])} -> {s['to']}")
     print("\nThe rule: every component comes from the catalogue. Mark each file with a line `uihub: <id>`; register new ones of ours with `uihub add`.")
+
+import importlib.util as _ilu
+_spec = _ilu.spec_from_file_location("hubindex", f"{HUB}/bin/hubindex.py"); H = _ilu.module_from_spec(_spec); _spec.loader.exec_module(H)
+
+def find2(words, kind=None, source=None, as_json=False):
+    hits = H.search(H.build(), words, kind=kind, source=source, limit=20)
+    if as_json:
+        print(json.dumps([{k: h.get(k) for k in ("id", "title", "kind", "source", "category", "status", "install", "url", "desc")} | {"note": (h.get("curated") or {}).get("note")} for h in hits], ensure_ascii=False, indent=1)); return
+    for h in hits:
+        tag = {"curated": "HIS " + (h.get("curated") or {}).get("signal", ""), "picked": "PICK", "ours": "OURS"}.get(h["status"], h["status"])
+        print(f"{h['id'][:52]:52} {tag:10} {h['kind']:9} {(h.get('category') or '')[:26]:26} {' '.join(((h.get('curated') or {}).get('note') or h.get('desc') or '').split())[:80]}")
+
+def show2(i, as_json=False):
+    idx = H.build(); r = H.get(idx, i)
+    if not r: sys.exit(f"not found: {i} (try uihub find)")
+    files = H.files(r)
+    if as_json: print(json.dumps(r | {"files": files}, ensure_ascii=False, indent=1)); return
+    print(f"{r['id']}  {r.get('title')}  [{r['kind']} · {r.get('category')} · {r['status']}]  by {r.get('author')}")
+    if r.get("desc"): print(f"  {r['desc']}")
+    if r.get("curated"): c = r["curated"]; print(f"  HIS PICK ({c['signal']}, {c.get('session')}): \"{c['note']}\"  targets: {', '.join(c.get('targets') or [])}")
+    if r.get("bookmark"): print(f"  bookmarked: {r['bookmark']}")
+    if r.get("score"): print(f"  scout score {r['score']['bank']}/25 ({r['score']['lane']}): {r['score']['why']}")
+    for k in ("url", "install", "licence", "live", "bundle_url", "where"):
+        if r.get(k): print(f"  {k}: {r[k]}")
+    for f in files: print(f"  code: {f['file']} ({len(f['code'].splitlines())} lines; uihub show {r['id']} --json has it)")
+    if r["source"] not in ("21st", "research", "siso-shell"): show(r["id"])
+
+def bookmark(i, note=None, signal=None, off=False, by="cli"):
+    import datetime
+    r = H.get(H.build(), i)
+    if not r: sys.exit(f"not found: {i}")
+    p = f"{HUB}/catalogue/bookmarks.json"; d = json.load(open(p))
+    if off:  # kept as off, not deleted: his picks are bookmarks by default
+        d["items"][r["id"]] = {"by": by, "at": datetime.datetime.now().isoformat(timespec="seconds"), "off": True}; print(f"unbookmarked {r['id']}")
+    else:
+        d["items"][r["id"]] = {k: v for k, v in {"by": by, "at": datetime.datetime.now().isoformat(timespec="seconds"), "note": note, "signal": signal}.items() if v}
+        print(f"bookmarked {r['id']}")
+    json.dump(d, open(p, "w"), ensure_ascii=False, indent=1)
+
+def sync(url=None):
+    import base64, urllib.request
+    url = (url or os.environ.get("UIHUB_URL") or "").rstrip("/"); pw = os.environ.get("UIHUB_PASSWORD")
+    if not url or not pw: sys.exit("set UIHUB_URL and UIHUB_PASSWORD (see NOTES-FOR-AGENT-BASE.md)")
+    req = urllib.request.Request(f"{url}/api/bookmarks", headers={"authorization": "Basic " + base64.b64encode(f"shaan:{pw}".encode()).decode(), "user-agent": "uihub-sync/1"})  # Cloudflare refuses Python-urllib
+    remote = json.load(urllib.request.urlopen(req, timeout=20)).get("items", {})
+    p = f"{HUB}/catalogue/bookmarks.json"; d = json.load(open(p)); before = len(d["items"])
+    for k, v in remote.items():
+        mine = d["items"].get(k)
+        if not mine or (v.get("at") or "") >= (mine.get("at") or ""): d["items"][k] = v  # the newer mark wins
+    json.dump(d, open(p, "w"), ensure_ascii=False, indent=1); print(f"bookmarks: {before} -> {len(d['items'])} ({len(remote)} on the site)")
 
 def find(words):
     q = [w.lower() for w in words]; its = items(); hits = []
@@ -213,8 +275,22 @@ def opt(k):
 if not a or a[0] in ("-h", "--help"): print(__doc__); sys.exit(0)
 cmd = a.pop(0)
 if cmd == "brief" and a: brief(a[0])
-elif cmd == "find" and a: find(a)
-elif cmd == "show" and a: show(a[0])
+elif cmd == "find" and a:
+    kind, source = opt("--kind"), opt("--source"); js = "--json" in a; a = [x for x in a if x != "--json"]; find2(a, kind, source, js)
+elif cmd == "show" and a: show2(a[0], "--json" in a)
+elif cmd == "stats": st = H.stats(); print(json.dumps(st, indent=1) if "--json" in a else "\n".join(f"{k}: {v}" for k, v in st.items()))
+elif cmd == "export":
+    out = opt("--out") or sys.exit("--out DIR"); pub = "--public" in a
+    st = H.export(out, assets="--no-assets" not in a, public=pub); print(f"exported {st['total']} items to {out}{' (public)' if pub else ''}")
+    if pub:
+        hits = H.privacy_check(out)
+        if hits: print("PRIVACY GATE FAILED:", *hits[:20], sep="\n  "); sys.exit(1)
+        print("privacy gate: clean")
+elif cmd == "privacy-check" and a:
+    hits = H.privacy_check(a[0]); print("\n".join(hits[:40]) or "clean"); sys.exit(1 if hits else 0)
+elif cmd == "bookmark" and a:
+    note, sig = opt("--note"), opt("--signal"); bookmark(a[0], note, sig, "--off" in a, os.environ.get("UIHUB_BY", "cli"))
+elif cmd == "sync": sync(opt("--url"))
 elif cmd == "check" and a and re.match(r"https?://", a[0]):
     js, width, surface, out, wait = opt("--js"), opt("--width"), opt("--surface"), opt("--out"), opt("--wait"); check_url(a[0], js, int(width or 1440), surface or "dashboard", out, float(wait) if wait else None)
 elif cmd == "check" and a: ref, base, repo, prefix = opt("--ref"), opt("--base"), opt("--repo"), opt("--prefix"); check(a[0], ref, base, repo, prefix)

@@ -34,5 +34,60 @@
   "from": "operator ui/ (Popover, Tabs, HubTabs, ConfirmDialog, MonthCalendar)",
   "reason": "Thin token wrappers on Base UI; already what the catalogue asks for. Kept, not swapped.",
   "since": "2026-10-07"
+ },
+ "siso:type-city": {
+  "from": "app/src/components/TypeCity.tsx",
+  "reason": "Home's 3D top band: every type the libraries share as a city of towers on the landing page's isometric glass slab (UiHubIcon), height = parts, colour = SISO status; the search lives in it and lights the matching towers. Nothing in the 104k does a searchable map of a whole component corpus.",
+  "since": "2026-10-11"
+ },
+ "siso:page-siso-set": {
+  "from": "app/src/pages/Siso.tsx",
+  "reason": "The SISO side: shells taken apart into swappable parts with every app's way of doing each, then the map of every category with what our apps use and the best of the 104k; Take/Skip are bookmarks agents read.",
+  "since": "2026-10-11"
+ },
+ "siso:ontology": {
+  "from": "app/src/lib/ontology.ts",
+  "reason": "The library by scale: every part placed on one node of catalogue/schema/ontology.json (atoms, components, sections, pages, looks) when the index loads",
+  "since": "2026-10-11"
+ },
+ "siso:page-node": {
+  "from": "app/src/pages/Node.tsx",
+  "reason": "One node of the ontology at /x/<scale>/<node>: its job, made of, used in, a page's sections in order, then its parts with type, look and fit chips",
+  "since": "2026-10-11"
+ },
+ "siso:pick-deck": {
+  "from": "app/src/components/PickDeck.tsx",
+  "reason": "The pick deck: one SISO skeleton slot at a time, its candidates in a 3D row; arrows flip, Enter takes as SISO base, X skips",
+  "since": "2026-10-12"
+ },
+ "siso:knowledge": {
+  "from": "app/src/lib/knowledge.ts",
+  "reason": "No library pick loads the hub's own per-node knowledge file (variations, notes, taste, papers, use cases); it is hub plumbing, not a UI part",
+  "since": "2026-10-12"
+ },
+ "siso:page-papers": {
+  "from": "app/src/pages/Papers.tsx",
+  "reason": "No pick renders SISO's own white papers and research library; built from our list and link primitives in the hub's look",
+  "since": "2026-10-12"
+ },
+ "siso:start-here": {
+  "from": "app/src/components/StartHere.tsx",
+  "reason": "Home's start-here: how the scales fit together, where takes/skips/saves land, what the research taught us, use cases to pick from; no library block explains our own ontology and bookmarks",
+  "since": "2026-10-12"
+ },
+ "siso:page-ours": {
+  "from": "app/src/pages/Ours.tsx",
+  "reason": "Our own apps' parts pictured from their real screens, by app and slot, with a pick deck; no library has our apps",
+  "since": "2026-10-12"
+ },
+ "siso:page-map": {
+  "from": "app/src/pages/MapPage.tsx",
+  "reason": "The lay of the land: every part SISO needs by scale, lit by what a chosen library covers, with a second to compare; no library maps itself onto our ontology",
+  "since": "2026-10-12"
+ },
+ "siso:page-vs": {
+  "from": "app/src/pages/VsPage.tsx",
+  "reason": "Two libraries like for like: each part read for its job and placed on our skeleton; only jobs both do are questions; previews in place",
+  "since": "2026-10-12"
  }
 }

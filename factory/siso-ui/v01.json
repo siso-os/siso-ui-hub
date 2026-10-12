@@ -1,0 +1,84 @@
+{
+  "_about": "SISO UI v0.1 candidates, grouped by decision. kind=demo renders live from source (factory/render/demos/<id>.tsx); kind=bundle is 21st's own build of the component (siso-ui-base registry/21st/harvest/<id>/bundle.html); kind=missing is a pick we cannot show yet, with the reason. 'n' is the row in catalogue/curated/picks.jsonl, so his words come from there verbatim.",
+  "sections": [
+    {
+      "id": "nav", "title": "1 · Side nav",
+      "quote": "the side nav at the halo one with the four buttons and the search, their search with the pop-ups, really cool ... I would just want to redesign that comp so it's nicer and then the compress is good back arrows is good",
+      "options": [
+        {"id": "ab-rail", "kind": "demo", "title": "Agent Base GroupedRail (@siso/side-nav)", "src": "agent-base packages/siso-side-nav/src/GroupedRail.tsx", "note": "Lifted from the SISO CRM rail, which is where HALO's side nav came from: champagne glass, ⌘K search, groups, collapse. Holding the factory's cores in V1 §4a's groups.", "cost": "ours · lucide-react", "h": 640},
+        {"id": "manuarora700__sidebar", "kind": "bundle", "n": 115, "title": "Aceternity sidebar (manuarora700)", "cost": "+ framer-motion · next/link to shim", "h": 640},
+        {"id": "aymanch-03__user-dropdown", "kind": "bundle", "n": 133, "title": "User dropdown (aymanch-03)", "note": "For the project dropdown at the top of the side nav.", "cost": "+ framer-motion", "h": 520}
+      ]
+    },
+    {
+      "id": "tabs", "title": "2 · Page tabs up top",
+      "quote": "in our agent base, like, I really love how the pages ... you can have different tabs up top ... if you click on different pages Maybe they save up there, so you can easily navigate",
+      "options": [
+        {"id": "ab-tabs", "kind": "demo", "title": "Agent Base PillTabs (@siso/shell)", "src": "agent-base packages/siso-shell/src/PillTabs.tsx", "note": "Click to switch, × or middle-click to close. ★ marks a pinned page.", "cost": "ours · zero new deps", "h": 90}
+      ]
+    },
+    {
+      "id": "search", "title": "3 · Centre search (⌘K)",
+      "quote": "their search with the pop-ups, really cool, it's taken from Shadzi and UI to be fair, with the pop-up in the middle, that's nice",
+      "options": [
+        {"id": "samitkapoor__apple-spotlight", "kind": "bundle", "n": 30, "title": "Apple Spotlight (samitkapoor)", "cost": "+ framer-motion", "h": 520},
+        {"id": "ab-spotlight", "kind": "missing", "title": "Agent Base spotlight (branch feat/cmdk-spotlight-20261008 @ 6f67a7a)", "why": "Not on Agent Base's main yet, so it is not on disk to render. It is shadcn Command (cmdk) underneath. It gets a card once AGENT-BASE lands it, or I render it from the branch with git show next round."}
+      ]
+    },
+    {
+      "id": "bell", "title": "4 · One bell, and the toast",
+      "quote": "the versions and notifications can kind of be merged together because that's the same shit",
+      "options": [
+        {"id": "ahmedmayara__notifications-menu", "kind": "bundle", "n": 10, "title": "Notifications menu (ahmedmayara)", "cost": "shadcn avatar, badge, button, card, tabs", "h": 560},
+        {"id": "yadwinder__toast-save", "kind": "bundle", "n": 136, "title": "Toast save (yadwinder)", "cost": "shadcn button, spinner", "h": 300}
+      ]
+    },
+    {
+      "id": "cards", "title": "5 · Cards and stat tiles",
+      "quote": "this card 05 to be how I want it on its own. STANDARD not placement.",
+      "options": [
+        {"id": "ravikatiyar162__stats-card", "kind": "bundle", "n": 71, "title": "Stats card (ravikatiyar162)", "cost": "+ framer-motion", "h": 460},
+        {"id": "0xUrvish__bento-card", "kind": "bundle", "n": 47, "title": "Bento card (0xUrvish)", "cost": "+ framer-motion", "h": 560},
+        {"id": "trophyso__leaderboard-card", "kind": "bundle", "n": 78, "title": "Leaderboard card (trophyso)", "cost": "shadcn primitives", "h": 560},
+        {"id": "felipemenezes098__card-05", "kind": "missing", "n": 132, "title": "Card 05 (felipemenezes098)", "why": "Your standard card, and the one pick we hold nothing for: no source, no build, no preview on disk (21st returned nothing when the bank was harvested). Next step: fetch it through camofox and add it to the bank, then it renders here."}
+      ]
+    },
+    {
+      "id": "charts", "title": "6 · Charts",
+      "quote": "mini charts, exactly what we needed ... more charts, fucking beautiful, exactly what we wanted",
+      "finding": "Finding: the bank's saved source for these three is not the chart. area-charts-1's code.tsx is 21st's 17-line placeholder counter, and line-charts-1 and chart are copies of shadcn's chart.tsx wrapper, which draws nothing. The real charts are in each one's demo.tsx, on ReUI's primitives. The previews below are 21st's own builds, so they are the real charts; installing one means taking its demo.tsx, not its code.tsx.",
+      "options": [
+        {"id": "sean0205__line-charts-1", "kind": "bundle", "n": 55, "title": "Line chart 1 (ReUI, sean0205)", "cost": "+ recharts · ReUI card, badge, button", "h": 520},
+        {"id": "sean0205__area-charts-1", "kind": "bundle", "n": 54, "title": "Area chart 1 (ReUI, sean0205)", "cost": "+ recharts", "h": 520},
+        {"id": "sean0205__chart", "kind": "bundle", "n": 69, "title": "Streak chart (ReUI, sean0205)", "cost": "+ recharts", "h": 520},
+        {"id": "jatin-yadav05__mini-chart", "kind": "bundle", "n": 42, "title": "Mini chart (jatin-yadav05)", "cost": "+ framer-motion", "h": 420}
+      ]
+    },
+    {
+      "id": "inputs", "title": "7 · AI input and pickers",
+      "quote": "ask AI input. Really cool the way it pops up, then we're not always wasting space",
+      "options": [
+        {"id": "aghasisahakyan1__ai-input", "kind": "bundle", "n": 96, "title": "AI input (aghasisahakyan1)", "cost": "+ framer-motion", "h": 420},
+        {"id": "uplusion23__color-picker", "kind": "bundle", "n": 137, "title": "Colour picker (uplusion23)", "note": "For changing tokens on the component page (shadcn's Create).", "cost": "shadcn primitives", "h": 460},
+        {"id": "arunachalam__animated-file-tree", "kind": "bundle", "n": 123, "title": "Animated file tree (arunachalam)", "note": "For a project's pages, sub-pages and components.", "cost": "+ framer-motion", "h": 460}
+      ]
+    },
+    {
+      "id": "brand", "title": "8 · Ours: agents, marks, the landing's pieces",
+      "quote": "the token tracker on the main landing page the UI for each of those cards the two cards of the UI for the UI hub is so beautiful and all the 3D animations and stuff are quite cool ... the 3D logos",
+      "options": [
+        {"id": "ab-faces", "kind": "demo", "title": "HALO faces (@halo/agent-face)", "src": "agent-base packages/halo-face", "cost": "ours · zero deps", "h": 150},
+        {"id": "lp-marks", "kind": "demo", "title": "Living marks + lion (landing)", "src": "landing living/WorkspaceMark.tsx, ui/LionGlyph.tsx", "cost": "ours · zero deps", "h": 360},
+        {"id": "lp-tokendial", "kind": "demo", "title": "Token tracker (landing TokenDial)", "src": "landing home-hero/TokenDial.tsx · siso-stats.json", "cost": "ours · zero deps", "h": 300},
+        {"id": "lp-uihubcard", "kind": "demo", "title": "UI Hub card (landing UiHubCard)", "src": "landing home-products/ui-hub/UiHubCard.tsx", "note": "Rendered from its source without the landing's global stylesheet, so spacing is looser than on the site.", "cost": "ours · + framer-motion", "h": 460}
+      ]
+    },
+    {
+      "id": "look", "title": "9 · Colour and glow",
+      "quote": "I want to use that kind of UI theme for it ... UI is going to be blue ... I like the glowy effects of like the ARC, our browser and the agent base",
+      "options": [
+        {"id": "theme", "kind": "demo", "title": "Both schemes, read from the live CSS, and a colour per core", "src": "landing color-system.css · agent-base siso.css", "note": "The core colours other than UI blue are my placeholders: say which you want.", "cost": "tokens only", "h": 330}
+      ]
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+{"id": "cubby-ui:accordion", "node": "component/accordion", "variation": "standard-accordion", "job": "Expandable sections that reveal content on click"}
+{"id": "cubby-ui:alert", "node": "component/alert", "variation": "inline-alert", "job": "Inline alert message for status or feedback"}
+{"id": "cubby-ui:alert-dialog", "node": "component/dialog", "variation": "confirm-alert", "job": "Confirmation dialog that asks before a destructive action"}
+{"id": "cubby-ui:all", "node": null, "variation": null, "job": "Install command for all Cubby UI components"}
+{"id": "cubby-ui:aspect-ratio", "node": "atom/layout", "variation": null, "job": "Constrain a box to a fixed width-to-height ratio", "edge": "aspect ratio box"}
+{"id": "cubby-ui:autocomplete", "node": "component/select", "variation": "combobox", "job": "Typed input that filters and picks from suggestions"}
+{"id": "cubby-ui:avatar", "node": "atom/avatar", "variation": "standard", "job": "Show a person or organisation image or initials"}
+{"id": "cubby-ui:badge", "node": "atom/badge", "variation": "badge", "job": "Small label showing status or a count"}
+{"id": "cubby-ui:base-drawer", "node": "component/sheet", "variation": "side-sheet", "job": "Generic edge-anchored panel sliding in as an overlay"}
+{"id": "cubby-ui:breadcrumbs", "node": "component/breadcrumb", "variation": "text-breadcrumb", "job": "Trail of links showing location in the hierarchy"}
+{"id": "cubby-ui:button", "node": "atom/button", "variation": "primary", "job": "Plain clickable button that triggers an action"}
+{"id": "cubby-ui:button-group", "node": "atom/button", "variation": "group", "job": "Adjacent buttons acting together as one control"}
+{"id": "cubby-ui:calendar", "node": "component/calendar", "variation": "month-calendar", "job": "Month grid for viewing and selecting dates"}
+{"id": "cubby-ui:card", "node": "component/card", "variation": "standard-card", "job": "Container grouping related content with header and body"}
+{"id": "cubby-ui:carousel", "node": "component/carousel", "variation": "slider-carousel", "job": "Horizontal slider stepping through slides or items"}
+{"id": "cubby-ui:checkbox", "node": "atom/choice", "variation": "checkbox", "job": "Tick one option on or off"}
+{"id": "cubby-ui:checkbox-group", "node": "atom/choice", "variation": "group", "job": "Set of checkboxes selecting several options together"}
+{"id": "cubby-ui:circular-slider", "node": "atom/slider", "variation": "dial-knob", "job": "Round dial slider picking a value on a circle"}
+{"id": "cubby-ui:code-block", "node": "component/code", "variation": "highlighted-code", "job": "Syntax-highlighted code block with copy support"}
+{"id": "cubby-ui:collapsible", "node": "component/accordion", "variation": "collapsible", "job": "Single section that expands and collapses on click"}
+{"id": "cubby-ui:combobox", "node": "component/select", "variation": "combobox", "job": "Searchable dropdown to choose one option"}
+{"id": "cubby-ui:command", "node": "component/command", "variation": "command-palette", "job": "Keyboard-driven menu to search and run actions"}
+{"id": "cubby-ui:context-menu", "node": "component/menu", "variation": "context-menu", "job": "Right-click menu of actions for the target"}
+{"id": "cubby-ui:copy-button", "node": "atom/button", "variation": "copy-share", "job": "Button that copies text to the clipboard"}
+{"id": "cubby-ui:data-table", "node": "component/table", "variation": "data-table", "job": "Sortable, filterable table of rows and columns"}
+{"id": "cubby-ui:date-picker", "node": "component/picker", "variation": "date-picker", "job": "Pick a single date from a calendar popover"}
+{"id": "cubby-ui:date-range-picker", "node": "component/picker", "variation": "date-range", "job": "Pick a start and end date from a calendar"}
+{"id": "cubby-ui:date-utils", "node": null, "variation": null, "job": "Utility helpers for date handling"}
+{"id": "cubby-ui:dialog", "node": "component/dialog", "variation": "modal-dialog", "job": "Modal window overlaying the page for a focused task"}
+{"id": "cubby-ui:drawer", "node": "component/sheet", "variation": "side-sheet", "job": "Edge-anchored overlay panel sliding in from a side"}
+{"id": "cubby-ui:dropdown-menu", "node": "component/menu", "variation": "dropdown-menu", "job": "Button-triggered menu listing actions or options"}
+{"id": "cubby-ui:elevated", "node": null, "variation": null, "job": "Utility helper for elevated surface styling"}
+{"id": "cubby-ui:fancy-button", "node": "atom/button", "variation": "primary", "job": "Decorative button with animated visual effects"}
+{"id": "cubby-ui:field", "node": "component/field", "variation": "text-input", "job": "Labelled input wrapper with description and error text"}
+{"id": "cubby-ui:fieldset", "node": "component/field", "variation": null, "job": "Group related form fields under one labelled legend", "edge": "field group fieldset"}
+{"id": "cubby-ui:filters", "node": "section/filters", "variation": "filters", "job": "Sentence-style filter chips with operators and add menu"}
+{"id": "cubby-ui:form", "node": "component/form", "variation": "with-validation", "job": "Form wrapper with field validation and submit handling"}
+{"id": "cubby-ui:highlight-text", "node": null, "variation": null, "job": "Utility that highlights matched text in strings"}
+{"id": "cubby-ui:input", "node": "atom/text-input", "variation": "text-input", "job": "Single-line text entry field"}
+{"id": "cubby-ui:kbd", "node": "atom/text", "variation": "keyboard", "job": "Styled keyboard key glyph for shortcuts"}
+{"id": "cubby-ui:label", "node": "atom/text", "variation": null, "job": "Caption naming a form control for accessibility", "edge": "form label"}
+{"id": "cubby-ui:marching-border", "node": null, "variation": null, "job": "Animated decorative border around a container"}
+{"id": "cubby-ui:menubar", "node": "component/menu", "variation": "menubar", "job": "Horizontal bar of menus for app-level commands"}
+{"id": "cubby-ui:meter", "node": "atom/progress", "variation": "meter-gauge", "job": "Gauge showing a value within a known range"}
+{"id": "cubby-ui:navigation-menu", "node": "component/menu", "variation": "navigation-menu", "job": "Site navigation with dropdown panels of links"}
+{"id": "cubby-ui:number-field", "node": "component/field", "variation": "number-stepper", "job": "Numeric input with increment and decrement controls"}
+{"id": "cubby-ui:otp-field", "node": "atom/text-input", "variation": "otp", "job": "Segmented boxes for entering a one-time code"}
+{"id": "cubby-ui:pagination", "node": "component/pagination", "variation": "numbered-pages", "job": "Page numbers to move through paged results"}
+{"id": "cubby-ui:parse-date", "node": null, "variation": null, "job": "Utility that parses date strings"}
+{"id": "cubby-ui:popover", "node": "component/popover", "variation": "standard-popover", "job": "Floating panel anchored to a trigger element"}
+{"id": "cubby-ui:progress", "node": "atom/progress", "variation": "linear", "job": "Horizontal bar showing task completion"}
+{"id": "cubby-ui:qr-code", "node": "atom/image", "variation": null, "job": "Render a scannable QR code as scalable SVG", "edge": "qr code image"}
+{"id": "cubby-ui:radio-group", "node": "atom/choice", "variation": "radio", "job": "Pick one option from a set of radios"}
+{"id": "cubby-ui:resizable", "node": "section/detail", "variation": "resizable", "job": "Panels whose size the user drags to adjust"}
+{"id": "cubby-ui:scroll-area", "node": "atom/layout", "variation": "scroll-area", "job": "Container with custom-styled scrollable region"}
+{"id": "cubby-ui:scroll-fade", "node": "atom/layout", "variation": "scroll-area", "job": "Fade scroll container edges while the user scrolls"}
+{"id": "cubby-ui:select", "node": "component/select", "variation": "standard-select", "job": "Dropdown picker to choose one option"}
+{"id": "cubby-ui:separator", "node": "atom/layout", "variation": null, "job": "Thin line dividing content sections visually", "edge": "divider line"}
+{"id": "cubby-ui:sheet", "node": "component/sheet", "variation": "side-sheet", "job": "Overlay panel sliding from an edge with extra content"}
+{"id": "cubby-ui:shimmer", "node": "atom/loader", "variation": "pulse-shimmer", "job": "Animated sweep across text to show live status"}
+{"id": "cubby-ui:skeleton", "node": "atom/loader", "variation": "skeleton", "job": "Placeholder blocks shown while content loads"}
+{"id": "cubby-ui:slider", "node": "atom/slider", "variation": "slider", "job": "Drag handle to pick a value along a track"}
+{"id": "cubby-ui:style", "node": null, "variation": null, "job": "Theme setup with OKLCH colours and CSS variables"}
+{"id": "cubby-ui:switch", "node": "atom/switch", "variation": "standard", "job": "On or off toggle switch for a setting"}
+{"id": "cubby-ui:table", "node": "component/table", "variation": "standard-table", "job": "Static table of rows and columns of data"}
+{"id": "cubby-ui:tabs", "node": "component/tabs", "variation": "underline", "job": "Switch between panels of content using tabs"}
+{"id": "cubby-ui:text-morph", "node": "atom/text", "variation": null, "job": "Animate a label from one value to the next", "edge": "glyph text morph"}
+{"id": "cubby-ui:textarea", "node": "atom/text-input", "variation": "textarea", "job": "Multi-line text entry field"}
+{"id": "cubby-ui:timeline", "node": "component/timeline", "variation": "vertical-timeline", "job": "Dated sequence of events shown in order"}
+{"id": "cubby-ui:toast", "node": "component/toast", "variation": "basic-toast", "job": "Brief transient message after an action"}
+{"id": "cubby-ui:toggle", "node": "atom/button", "variation": "toggle", "job": "Button that stays pressed on or off"}
+{"id": "cubby-ui:toolbar", "node": "component/dock", "variation": "action-toolbar", "job": "Row of action buttons grouped for quick access"}
+{"id": "cubby-ui:tooltip", "node": "atom/tooltip", "variation": "standard", "job": "Short hint shown on hover or focus"}
+{"id": "cubby-ui:transition-panel", "node": "atom/layout", "variation": null, "job": "Animate swapping one panel's content for another", "edge": "animated panel swap"}
+{"id": "cubby-ui:tree", "node": "component/tree", "variation": "standard-tree", "job": "Nested tree of expandable items"}
+{"id": "cubby-ui:use-animated-height", "node": null, "variation": null, "job": "Hook animating an element's height changes"}
+{"id": "cubby-ui:use-controllable-state", "node": null, "variation": null, "job": "Hook for state that is controlled or uncontrolled"}
+{"id": "cubby-ui:use-fuzzy-filter", "node": null, "variation": null, "job": "Hook filtering items by fuzzy text matching"}
+{"id": "cubby-ui:use-list-virtualizer", "node": null, "variation": null, "job": "Hook rendering only visible rows of a long list"}

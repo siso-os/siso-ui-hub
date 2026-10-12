@@ -1,0 +1,119 @@
+#!/usr/bin/env python3
+"""Re-frame the code bank's drawings around the part (Shaan, 12 Oct: "some stuff doesn't show the inputs").
+
+bin/render (siso-ui-code) framed every part in at least 480 px of the page, so a button or an input was a speck on black:
+of 23,700 drawings scored, about 11,500 had under 2% of their pixels on the part. This finds what paints (pixels away
+from the commonest shade), frames it 4:3 with room around it, and writes the result to <thumbs>/_crop/<registry>/<key>.webp
+(at least 480x360, so a small part is shown large). The export takes a _crop picture over the original and gives it its
+own address. Originals are never touched. No new install: Pillow only.
+
+  bin/recrop [--limit N] [--dry]     scan <thumbs>/<registry>/*.webp drawn from code (_rendered.jsonl), write _crop/
+  bin/recrop --report                how many were re-framed, and how many drew nothing (to redraw on the mini)
+  bin/recrop --photos uiarc [--out DIR]   photos of a library's docs page (Arc: a Preview/Code bar over a big card with the
+                                     part small inside it): look only inside the card, frame the part, never show the bar"""
+import json, os, sys, collections
+from concurrent.futures import ProcessPoolExecutor
+from PIL import Image
+
+THUMBS = os.environ.get("UIHUB_THUMBS", os.path.expanduser("~/SISO_Workspace/_data/ui-hub/thumbs"))
+OUT = f"{THUMBS}/_crop"
+SMALL = 0.30  # the part fills under 30% of the frame's width and height: re-frame it
+
+
+def ink_box(im):
+    """the box of pixels more than 12 levels from the commonest shade, on a 4x smaller copy; None when nothing paints"""
+    g = im.convert("L")
+    sm = g.resize((max(1, g.width // 4), max(1, g.height // 4)))
+    px = sm.load()
+    c = collections.Counter(v // 6 for v in sm.getdata()).most_common(1)[0][0] * 6 + 3
+    xs, ys = [], []
+    for y in range(sm.height):
+        for x in range(sm.width):
+            if abs(px[x, y] - c) > 12:
+                xs.append(x); ys.append(y)
+    if len(xs) < 4:
+        return None
+    xs.sort(); ys.sort()
+    # the 1st to 99th percentile, so one stray pixel (a corner dot, a scrollbar) doesn't widen the frame
+    lo, hi = len(xs) // 100, len(xs) - 1 - len(xs) // 100
+    return xs[lo] * 4, ys[lo] * 4, xs[hi] * 4 + 4, ys[hi] * 4 + 4
+
+
+# where the part can be on a docs-page photo: (left, top, right, bottom) trimmed off; Arc's bar is 46 px, its card's edge ~8
+PAGE = {"uiarc": (16, 60, 16, 16)}
+
+
+def one(key, out=None):
+    src = f"{THUMBS}/{key}.webp"
+    dst = f"{out or OUT}/{key}.webp"
+    try:
+        im = Image.open(src).convert("RGB")
+    except Exception:
+        return key, "unreadable"
+    trim = PAGE.get(key.split("/")[0])
+    if trim:  # look inside the card only, and keep the frame inside it
+        l0, t0, r0, b0 = trim
+        im = im.crop((l0, t0, im.width - r0, im.height - b0))
+    b = ink_box(im)
+    if not b:
+        return key, "empty"
+    x0, y0, x1, y1 = b
+    w, h = x1 - x0, y1 - y0
+    # a docs photo is always re-framed (the bar and the empty card go); a drawing only when the part is small in it
+    if not trim and (w > im.width * SMALL * 2 or h > im.height * SMALL * 2 or (w > im.width * SMALL and h > im.height * SMALL)):
+        return key, "fills"
+    # room around it: nearly half its size each side (a photo's part is already large: an eighth), at least 24 px, then
+    # widened or heightened to 4:3, inside the picture
+    pad = max(24, int(max(w, h / 0.75) * (0.12 if trim else 0.45)))
+    cw = max(w + 2 * pad, (h + 2 * pad) * 4 / 3, 160)
+    ch = cw * 3 / 4
+    cx, cy = (x0 + x1) / 2, (y0 + y1) / 2
+    cw, ch = min(cw, im.width), min(ch, im.height)
+    l = max(0, min(im.width - cw, cx - cw / 2))
+    t = max(0, min(im.height - ch, cy - ch / 2))
+    crop = im.crop((round(l), round(t), round(l + cw), round(t + ch)))
+    if crop.width < 480:
+        crop = crop.resize((480, round(480 * crop.height / crop.width)), Image.LANCZOS)
+    os.makedirs(os.path.dirname(dst), exist_ok=True)
+    crop.save(dst + ".part", "WEBP", quality=80, method=4)
+    os.replace(dst + ".part", dst)
+    return key, "reframed"
+
+
+def keys():
+    seen = set()
+    for l in open(f"{THUMBS}/_rendered.jsonl"):
+        k = json.loads(l)["key"]
+        if k not in seen and os.path.exists(f"{THUMBS}/{k}.webp"):
+            seen.add(k)
+            yield k
+
+
+def main():
+    a = sys.argv[1:]
+    if "--report" in a:
+        r = json.load(open(f"{OUT}/_report.json"))
+        print(collections.Counter(r.values()))
+        return
+    todo = list(keys())
+    if "--limit" in a:
+        todo = todo[: int(a[a.index("--limit") + 1])]
+    if "--photos" in a:
+        reg = a[a.index("--photos") + 1]
+        out = a[a.index("--out") + 1] if "--out" in a else OUT
+        todo = sorted(f"{reg}/{f[:-5]}" for f in os.listdir(f"{THUMBS}/{reg}") if f.endswith(".webp"))
+        res = dict(one(k, out) for k in todo)
+        print(collections.Counter(res.values()))
+        return
+    if "--dry" in a:
+        print(len(todo), "drawings to look at")
+        return
+    with ProcessPoolExecutor(6) as ex:
+        res = dict(ex.map(one, todo, chunksize=100))
+    os.makedirs(OUT, exist_ok=True)
+    json.dump(res, open(f"{OUT}/_report.json", "w"))
+    print(collections.Counter(res.values()))
+
+
+if __name__ == "__main__":
+    main()

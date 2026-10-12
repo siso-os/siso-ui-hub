@@ -1,0 +1,50 @@
+#!/usr/bin/env python3
+"""variants: the demos (21st calls them variants) of his picks and the best-in-category picks, from each 21st.dev page.
+
+21st's component page embeds every demo of the component: id, name, slug, the live bundle and the preview, all on its CDN.
+We keep those links (never the code) in sources/21st/variants.jsonl; the index puts them on the item and the site shows
+them as a row of variants above the live preview. Public pages only, no login, one request at a time.
+
+Usage: bin/variants [--all-picks] [--force]   (default: items without a row yet; --force refetches)"""
+import json, os, re, sys, time, urllib.request
+sys.dont_write_bytecode = True
+HUB = os.path.dirname(os.path.dirname(os.path.realpath(__file__)))
+sys.path.insert(0, f"{HUB}/bin")
+import hubindex as H
+
+OUT = f"{HUB}/sources/21st/variants.jsonl"
+UA = {"user-agent": "Mozilla/5.0 (compatible; siso-ui-hub variants)"}
+DEMO = re.compile(r'\{"id":(\d+),"name":"((?:[^"\\]|\\.)*)","demo_slug":"([^"]+)","bundle_html_url":"([^"]+)"(.{0,1500}?)\}')
+
+def demos(html):
+    h = html.replace("\\/", "/").replace('\\"', '"'); out = {}
+    for m in DEMO.finditer(h):
+        rest = m.group(5); pv = re.search(r'"preview_url":"([^"]+)"', rest)
+        out.setdefault(m.group(3), {"slug": m.group(3), "name": m.group(2).replace('\\"', '"'), "bundle": m.group(4),
+                                    "preview": pv.group(1) if pv else None})
+    return list(out.values())
+
+def main():
+    force = "--force" in sys.argv
+    have = {json.loads(l)["id"]: json.loads(l) for l in open(OUT)} if os.path.exists(OUT) else {}
+    want = [i for i in H.build()["items"] if i["source"] == "21st" and i["id"].startswith("21st:")
+            and i["status"] in ("curated", "picked") and i.get("url")]
+    todo = [i for i in want if force or i["id"] not in have]
+    print(f"{len(want)} picks; fetching {len(todo)}", file=sys.stderr)
+    for n, i in enumerate(todo):
+        try:
+            html = urllib.request.urlopen(urllib.request.Request(i["url"], headers=UA), timeout=30).read().decode("utf-8", "replace")
+            d = demos(html); this = i["url"].rstrip("/").split("/")[-1]
+            have[i["id"]] = {"id": i["id"], "url": i["url"], "this": this if any(x["slug"] == this for x in d) else "default", "demos": d}
+        except Exception as e:
+            print(f"  {i['id']}: {e}", file=sys.stderr)
+        if n % 20 == 19: print(f"  {n + 1}/{len(todo)}", file=sys.stderr)
+        time.sleep(0.4)
+    tmp = OUT + ".tmp"
+    with open(tmp, "w") as f:
+        for k in sorted(have): f.write(json.dumps(have[k], ensure_ascii=False) + "\n")
+    os.replace(tmp, OUT)
+    multi = sum(1 for v in have.values() if len(v["demos"]) > 1)
+    print(f"{len(have)} rows; {multi} with more than one variant; {sum(len(v['demos']) for v in have.values())} demos")
+
+if __name__ == "__main__": main()

@@ -1,0 +1,1162 @@
+[
+ {
+  "id": "P0001",
+  "title": "Every control has all its states",
+  "rule": "Anything you can click or type into draws rest, hover, keyboard focus, pressed and disabled as five visibly different looks, all from tokens.",
+  "strength": "must",
+  "applies_to": [
+   "button",
+   "link",
+   "nav-item",
+   "row",
+   "input",
+   "toggle",
+   "tab",
+   "chip"
+  ]
+ },
+ {
+  "id": "P0002",
+  "title": "The shell loads once; each region fills on its own",
+  "rule": "Draw the frame (side nav, header, page title) at once and let each content region load and show its data independently, never one spinner for the whole page.",
+  "strength": "should",
+  "applies_to": [
+   "app-shell",
+   "side-nav",
+   "header",
+   "widget"
+  ]
+ },
+ {
+  "id": "P0003",
+  "title": "One persistent side nav for an app with five or more sections",
+  "rule": "Give an app with five or more top-level sections one persistent left side nav, grouped and labelled, that stays in place on every page; fewer sections can use a top or tab bar.",
+  "strength": "should",
+  "applies_to": [
+   "side-nav",
+   "app-shell"
+  ]
+ },
+ {
+  "id": "P0004",
+  "title": "Fixed anchors: the same things in the same place on every page",
+  "rule": "Keep the logo top-left, search and account top-right, and every page region in the same order on every page and screen size.",
+  "strength": "should",
+  "applies_to": [
+   "header",
+   "side-nav",
+   "app-shell",
+   "search",
+   "notifications"
+  ]
+ },
+ {
+  "id": "P0005",
+  "title": "Every screen says where you are and how to leave",
+  "rule": "Give every page a unique descriptive title, mark the current nav item, and add breadcrumbs only when the hierarchy is deeper than two levels.",
+  "strength": "must",
+  "applies_to": [
+   "page-title",
+   "side-nav",
+   "breadcrumb",
+   "tab"
+  ]
+ },
+ {
+  "id": "P0006",
+  "title": "Primary navigation is visible, not hidden behind a menu",
+  "rule": "Show primary destinations on screen; never hide them behind a hamburger or a More menu on screens wide enough to show them.",
+  "strength": "should",
+  "applies_to": [
+   "side-nav",
+   "tab-bar",
+   "header"
+  ]
+ },
+ {
+  "id": "P0007",
+  "title": "Search is a visible field, with recent and suggested queries",
+  "rule": "Show search as an open text field in the header, offer recent and suggested queries on focus, give it a clear button, and scope or filter results on the results view.",
+  "strength": "must",
+  "applies_to": [
+   "search",
+   "command-palette",
+   "header"
+  ]
+ },
+ {
+  "id": "P0008",
+  "title": "Links go somewhere; buttons do something",
+  "rule": "Use a link (an a element with href) for anything that navigates and a button for anything that acts, and style links so they read as links.",
+  "strength": "should",
+  "applies_to": [
+   "link",
+   "button",
+   "nav-item"
+  ]
+ },
+ {
+  "id": "P0009",
+  "title": "Back and the URL restore exactly what was open",
+  "rule": "Give every open state (tab, filter, sheet, expanded row) its own URL, and make Back return to the previous screen in the state it was left.",
+  "strength": "must",
+  "applies_to": [
+   "router",
+   "sheet",
+   "tab",
+   "filter",
+   "row-detail"
+  ]
+ },
+ {
+  "id": "P0010",
+  "title": "Everything works from the keyboard, with shortcuts shown where they apply",
+  "rule": "Make every action reachable by keyboard in a focus order that follows the layout, and show each shortcut next to its command.",
+  "strength": "must",
+  "applies_to": [
+   "command-palette",
+   "menu",
+   "table",
+   "form"
+  ]
+ },
+ {
+  "id": "P0011",
+  "title": "Most important first: top-left, then down",
+  "rule": "Order every page by importance: the one thing the page is for goes top-left, then the work, then detail.",
+  "strength": "must",
+  "applies_to": [
+   "page",
+   "dashboard",
+   "kpi-row"
+  ]
+ },
+ {
+  "id": "P0012",
+  "title": "Show only what this task needs",
+  "rule": "Remove anything the current task does not use; move the rest behind progressive disclosure, so the work area gets at least 55% of the first screen (hub-0002).",
+  "strength": "must",
+  "applies_to": [
+   "page",
+   "dashboard",
+   "list",
+   "card"
+  ]
+ },
+ {
+  "id": "P0013",
+  "title": "One spacing scale; proximity shows what belongs together",
+  "rule": "Take every gap from one 4 px based scale and put related items closer together than unrelated ones, with no box drawn inside another box.",
+  "strength": "should",
+  "applies_to": [
+   "page",
+   "card",
+   "form",
+   "list"
+  ]
+ },
+ {
+  "id": "P0014",
+  "title": "One primary action per view",
+  "rule": "Give each view, dialog or form at most one primary (filled) button; every other action is secondary or tertiary.",
+  "strength": "must",
+  "applies_to": [
+   "button",
+   "toolbar",
+   "dialog",
+   "form"
+  ]
+ },
+ {
+  "id": "P0015",
+  "title": "Layouts reflow to small screens without losing anything",
+  "rule": "Let layouts reflow from wide to narrow without horizontal scrolling of the page or loss of content or function, keeping regions in the same order.",
+  "strength": "must",
+  "applies_to": [
+   "page",
+   "app-shell",
+   "table",
+   "dashboard"
+  ]
+ },
+ {
+  "id": "P0016",
+  "title": "Open detail in place",
+  "rule": "Show detail next to where it was asked for (expanding row, side sheet, popover) and keep the list or chart visible, rather than sending people to a new page.",
+  "strength": "must",
+  "applies_to": [
+   "row-detail",
+   "sheet",
+   "popover",
+   "table",
+   "chart"
+  ]
+ },
+ {
+  "id": "P0017",
+  "title": "Use the conventions people already know",
+  "rule": "Use the platform's and the industry's standard patterns, words and positions unless a tested alternative is clearly better.",
+  "strength": "must",
+  "applies_to": [
+   "page",
+   "form",
+   "nav",
+   "icon"
+  ]
+ },
+ {
+  "id": "P0018",
+  "title": "Hierarchy from size, weight and order, with few sizes",
+  "rule": "Build hierarchy with order, size, weight and contrast from the type scale, using no more than three type sizes in one band (hub-0003).",
+  "strength": "should",
+  "applies_to": [
+   "heading",
+   "text",
+   "kpi",
+   "card"
+  ]
+ },
+ {
+  "id": "P0019",
+  "title": "Text is readable: line length and size",
+  "rule": "Keep reading text to about 60 to 80 characters per line, take body sizes from the type scale, and never shrink body text to fit more in.",
+  "strength": "should",
+  "applies_to": [
+   "text",
+   "paragraph",
+   "table",
+   "form"
+  ]
+ },
+ {
+  "id": "P0020",
+  "title": "Left-align text; right-align numbers in tabular figures",
+  "rule": "Left-align text, right-align numbers (and their column headers), and set numbers in tabular figures so digits line up.",
+  "strength": "should",
+  "applies_to": [
+   "table",
+   "kpi",
+   "list"
+  ]
+ },
+ {
+  "id": "P0021",
+  "title": "Text and controls meet contrast minimums",
+  "rule": "Give text at least 4.5:1 contrast with its background, and large text (24 px, or 19 px bold), icons and control boundaries at least 3:1, in light and dark themes.",
+  "strength": "must",
+  "applies_to": [
+   "text",
+   "icon",
+   "button",
+   "input",
+   "chart"
+  ]
+ },
+ {
+  "id": "P0022",
+  "title": "Never use colour alone to carry meaning",
+  "rule": "Pair every colour that carries meaning with a second cue: text, an icon, a shape, a pattern or position.",
+  "strength": "must",
+  "applies_to": [
+   "status",
+   "chart",
+   "form",
+   "badge",
+   "link"
+  ]
+ },
+ {
+  "id": "P0023",
+  "title": "Colour has a job: one accent for action, reserved colours for status",
+  "rule": "Use one accent colour for interactive emphasis and reserve red, amber and green for error, warning and success; everything else is neutral.",
+  "strength": "should",
+  "applies_to": [
+   "button",
+   "status",
+   "badge",
+   "chart",
+   "link"
+  ]
+ },
+ {
+  "id": "P0024",
+  "title": "Dark UI uses dark grey surfaces and softened colours",
+  "rule": "In dark themes use dark grey surfaces rather than pure black, show elevation with lighter surfaces, and desaturate accent and status colours while keeping contrast minimums.",
+  "strength": "should",
+  "applies_to": [
+   "theme",
+   "surface",
+   "text",
+   "chart"
+  ]
+ },
+ {
+  "id": "P0025",
+  "title": "Colours come from tokens, and selection is a tint",
+  "rule": "Take every colour from named semantic tokens, never raw hex in components, and show selected and hover states as a translucent tint rather than a solid fill or heavy border.",
+  "strength": "should",
+  "applies_to": [
+   "theme",
+   "button",
+   "nav-item",
+   "row",
+   "chip"
+  ]
+ },
+ {
+  "id": "P0026",
+  "title": "Targets are big enough to hit",
+  "rule": "Make every pointer target at least 24x24 CSS px (WCAG 2.2 AA) and every touch target at least 44x44 pt, with space between neighbours.",
+  "strength": "must",
+  "applies_to": [
+   "button",
+   "icon-button",
+   "link",
+   "checkbox",
+   "nav-item"
+  ]
+ },
+ {
+  "id": "P0027",
+  "title": "Icons carry a text label",
+  "rule": "Pair icons with a visible text label; icon-only is allowed only for universally known icons (close, search, menu) and then needs an accessible name and a tooltip.",
+  "strength": "must",
+  "applies_to": [
+   "icon",
+   "icon-button",
+   "nav-item",
+   "toolbar"
+  ]
+ },
+ {
+  "id": "P0028",
+  "title": "Pick the control that fits the choice",
+  "rule": "Use radios for one choice from up to six options, checkboxes for several, a select or typeahead combobox for long lists (typeahead past ten items), and a toggle only for a setting that takes effect at once.",
+  "strength": "must",
+  "applies_to": [
+   "radio",
+   "checkbox",
+   "select",
+   "toggle",
+   "combobox"
+  ]
+ },
+ {
+  "id": "P0029",
+  "title": "Buttons say what they do",
+  "rule": "Label buttons with a specific verb and object (Export CSV, Invite member), style buttons with the same function the same way, and end the label with an ellipsis when it opens a dialog that asks for more.",
+  "strength": "must",
+  "applies_to": [
+   "button",
+   "link",
+   "menu-item"
+  ]
+ },
+ {
+  "id": "P0030",
+  "title": "Hover shows more; it is never the only way in",
+  "rule": "Use hover for read-only previews that also open on keyboard focus and can be dismissed; anything needed to finish a task must also be reachable by click or tap.",
+  "strength": "must",
+  "applies_to": [
+   "tooltip",
+   "hover-card",
+   "row",
+   "chart"
+  ]
+ },
+ {
+  "id": "P0031",
+  "title": "Ask for less: every field earns its place",
+  "rule": "Remove every field you can, prefill what you already know, and defer optional questions until after the main task.",
+  "strength": "must",
+  "applies_to": [
+   "form",
+   "signup",
+   "checkout",
+   "filter"
+  ]
+ },
+ {
+  "id": "P0032",
+  "title": "Labels sit above fields and never vanish",
+  "rule": "Put a short visible label above every field, tied to it in code, and never use placeholder text as the only label.",
+  "strength": "must",
+  "applies_to": [
+   "input",
+   "select",
+   "textarea",
+   "form"
+  ]
+ },
+ {
+  "id": "P0033",
+  "title": "Validate on blur, next to the field, and keep what was typed",
+  "rule": "Validate a field when the user leaves it, show the message next to that field, list all errors in a summary on submit, and never clear what the user typed.",
+  "strength": "must",
+  "applies_to": [
+   "input",
+   "form",
+   "error-summary"
+  ]
+ },
+ {
+  "id": "P0034",
+  "title": "Good defaults and forgiving input",
+  "rule": "Prefill the most likely value, accept every reasonable format (spaces, dashes, case) and normalise it yourself, and size each input to the length of its expected answer.",
+  "strength": "must",
+  "applies_to": [
+   "input",
+   "date-picker",
+   "select",
+   "form"
+  ]
+ },
+ {
+  "id": "P0035",
+  "title": "One column, in the order people think",
+  "rule": "Lay out forms in a single column, in the order people think about the task, with related fields grouped under a heading.",
+  "strength": "must",
+  "applies_to": [
+   "form",
+   "settings"
+  ]
+ },
+ {
+  "id": "P0036",
+  "title": "Respond in 0.1 s; show progress past 1 s; show percent and cancel past 10 s",
+  "rule": "Acknowledge every action within 0.1 s; for waits of about 2 to 10 s show an indeterminate indicator; past 10 s show percent done, time left and a way to cancel.",
+  "strength": "should",
+  "applies_to": [
+   "button",
+   "spinner",
+   "progress-bar",
+   "toast"
+  ]
+ },
+ {
+  "id": "P0037",
+  "title": "Skeletons when the layout is known; spinners when it is not",
+  "rule": "Show a skeleton shaped like the final content when the layout is known, a spinner only when it is not, and wait about 200 ms before showing either so fast loads do not flicker.",
+  "strength": "must",
+  "applies_to": [
+   "skeleton",
+   "spinner",
+   "table",
+   "card",
+   "widget"
+  ]
+ },
+ {
+  "id": "P0038",
+  "title": "An empty state says why it is empty and offers the next step",
+  "rule": "When there is nothing to show, say why in a short title (five words or fewer), explain in one sentence, and offer one primary action that fills it.",
+  "strength": "should",
+  "applies_to": [
+   "empty-state",
+   "table",
+   "list",
+   "widget",
+   "search-results"
+  ]
+ },
+ {
+  "id": "P0039",
+  "title": "Errors say what happened and how to fix it, in plain words",
+  "rule": "Write every error in plain language: what happened, why if known, and what to do next; never show a raw code alone, never blame the user.",
+  "strength": "should",
+  "applies_to": [
+   "error",
+   "toast",
+   "form",
+   "widget",
+   "page"
+  ]
+ },
+ {
+  "id": "P0040",
+  "title": "Never say there is nothing while it is still loading",
+  "rule": "Keep loading, empty, error and stale as four distinct states, and never show an empty message until the data has actually arrived empty.",
+  "strength": "should",
+  "applies_to": [
+   "widget",
+   "table",
+   "list",
+   "status"
+  ]
+ },
+ {
+  "id": "P0041",
+  "title": "Prefer undo to are-you-sure; confirm only what cannot be undone",
+  "rule": "Make actions reversible and offer Undo after them; ask for confirmation only for destructive, financial or irreversible actions, naming exactly what will happen.",
+  "strength": "should",
+  "applies_to": [
+   "dialog",
+   "toast",
+   "button",
+   "row"
+  ]
+ },
+ {
+  "id": "P0042",
+  "title": "Every action gets feedback, sized to what happened",
+  "rule": "Show a visible result for every action, scaled to its weight: an inline change for small edits, a toast for background results, a page message for big outcomes; save automatically where you can.",
+  "strength": "should",
+  "applies_to": [
+   "button",
+   "toast",
+   "inline-status",
+   "form"
+  ]
+ },
+ {
+  "id": "P0043",
+  "title": "Motion is short and eased, scaled to distance",
+  "rule": "Animate with ease-out for entrances and ease-in for exits, at the durations of hub-0013 (entrances 150 to 250 ms, exits 100 to 150 ms, hover under 100 ms), longer only for larger or further moves.",
+  "strength": "should",
+  "applies_to": [
+   "transition",
+   "sheet",
+   "popover",
+   "toast",
+   "hover"
+  ]
+ },
+ {
+  "id": "P0044",
+  "title": "Respect reduced motion; never flash",
+  "rule": "Honour prefers-reduced-motion by replacing movement with fades or nothing, give users a pause control for anything that moves on its own, and never use flashing content.",
+  "strength": "must",
+  "applies_to": [
+   "transition",
+   "animation",
+   "video",
+   "chart"
+  ]
+ },
+ {
+  "id": "P0045",
+  "title": "Motion explains a change; it never competes for attention",
+  "rule": "Animate only to show where something came from, went to or changed into; never run several competing animations at once or loop decoration in a work area.",
+  "strength": "should",
+  "applies_to": [
+   "transition",
+   "animation",
+   "toast",
+   "chart"
+  ]
+ },
+ {
+  "id": "P0046",
+  "title": "Write for scanning: say it once, most important words first",
+  "rule": "Start headings, labels and messages with the words that matter, cut every word that does not change the meaning, and say each thing once.",
+  "strength": "must",
+  "applies_to": [
+   "heading",
+   "text",
+   "card",
+   "toast",
+   "empty-state"
+  ]
+ },
+ {
+  "id": "P0047",
+  "title": "Use the user's words, not the system's",
+  "rule": "Name things with the words your users use, in plain language, the same word for the same thing everywhere, and describe features by what they do for the user.",
+  "strength": "must",
+  "applies_to": [
+   "label",
+   "heading",
+   "error",
+   "nav-item"
+  ]
+ },
+ {
+  "id": "P0048",
+  "title": "A dashboard has one audience, one purpose and few views",
+  "rule": "Build each dashboard for one named audience and question, with two or three main views; split it when it grows beyond that.",
+  "strength": "must",
+  "applies_to": [
+   "dashboard",
+   "widget"
+  ]
+ },
+ {
+  "id": "P0049",
+  "title": "The key number is biggest and top-left",
+  "rule": "Put the dashboard's most important metric in the top-left of the glance band and give it the most visual weight; secondary metrics are smaller and follow.",
+  "strength": "should",
+  "applies_to": [
+   "dashboard",
+   "kpi",
+   "kpi-row"
+  ]
+ },
+ {
+  "id": "P0050",
+  "title": "A KPI shows its comparison, trend and timeframe",
+  "rule": "Show every KPI with its label, value, unit and timeframe, plus a comparison (target, previous period or normal range) and, where useful, a sparkline; never hide the label or value to save space.",
+  "strength": "should",
+  "applies_to": [
+   "kpi",
+   "metric-card",
+   "sparkline"
+  ]
+ },
+ {
+  "id": "P0051",
+  "title": "Pick the chart by the question; encode with position and length",
+  "rule": "Use a line for change over time, a bar for comparing categories, and a table for exact lookup; prefer position and length over angle, area and colour; avoid 3D and avoid pies beyond a few parts.",
+  "strength": "should",
+  "applies_to": [
+   "chart",
+   "dashboard"
+  ]
+ },
+ {
+  "id": "P0052",
+  "title": "Bars start at zero and are sorted",
+  "rule": "Start every bar and column axis at zero, and sort bars by value unless the categories have a natural order.",
+  "strength": "should",
+  "applies_to": [
+   "bar-chart",
+   "column-chart"
+  ]
+ },
+ {
+  "id": "P0053",
+  "title": "Every mark is data: label directly, few gridlines, no chart junk",
+  "rule": "Remove frames, backgrounds, heavy gridlines and decoration; keep a few light gridlines, label series directly instead of with a legend where possible, and keep detail in tooltips.",
+  "strength": "should",
+  "applies_to": [
+   "chart",
+   "sparkline",
+   "legend"
+  ]
+ },
+ {
+  "id": "P0054",
+  "title": "Highlight one thing in colour and grey the rest",
+  "rule": "Use few colours in charts: grey for context and one highlight colour for what matters, a colour-blind-safe categorical palette when categories need hues, and the same colour for the same thing on every chart.",
+  "strength": "must",
+  "applies_to": [
+   "chart",
+   "table",
+   "kpi"
+  ]
+ },
+ {
+  "id": "P0055",
+  "title": "Tables: numbers right, headers fixed, rows that respond",
+  "rule": "Right-align numeric columns, keep headers visible when scrolling, highlight the row under the pointer, keep column titles to one or two words, let people sort, and default to medium rows (about 40 px) with a denser option.",
+  "strength": "must",
+  "applies_to": [
+   "table",
+   "data-grid"
+  ]
+ },
+ {
+  "id": "P0056",
+  "title": "Repeated items are a list or table, not a pile of cards",
+  "rule": "Show many items of the same kind as a list or table; use cards only for a few different things that each stand on their own.",
+  "strength": "should",
+  "applies_to": [
+   "list",
+   "table",
+   "card"
+  ]
+ },
+ {
+  "id": "P0057",
+  "title": "Filters sit next to what they filter and show what is applied",
+  "rule": "Place filters beside or above the view they control, keep them visible, show every applied filter as a removable chip with a clear-all, and show result counts.",
+  "strength": "must",
+  "applies_to": [
+   "filter",
+   "table",
+   "dashboard",
+   "search-results"
+  ]
+ },
+ {
+  "id": "P0058",
+  "title": "Every number shows its source and how fresh it is",
+  "rule": "Show when each widget's data was last updated and where it comes from, and mark it stale or source-down when it is out of date.",
+  "strength": "must",
+  "applies_to": [
+   "widget",
+   "kpi",
+   "chart",
+   "table"
+  ]
+ },
+ {
+  "id": "P0059",
+  "title": "Every chart has a text title and a text alternative",
+  "rule": "Give every chart a title or caption that says what it shows (and the takeaway when there is one), plus a text alternative or data table for screen readers.",
+  "strength": "must",
+  "applies_to": [
+   "chart",
+   "dashboard"
+  ]
+ },
+ {
+  "id": "P0060",
+  "title": "The default is the choice most people should make",
+  "rule": "Preselect the option that serves most users best, because most people keep the default; never preselect an option that benefits the business at the user's cost.",
+  "strength": "must",
+  "applies_to": [
+   "form",
+   "settings",
+   "pricing",
+   "select"
+  ]
+ },
+ {
+  "id": "P0061",
+  "title": "Fewer choices, faster decisions",
+  "rule": "Show only the choices that matter at each step, mark the recommended one, and hide the rest behind More.",
+  "strength": "must",
+  "applies_to": [
+   "menu",
+   "pricing",
+   "settings",
+   "nav"
+  ]
+ },
+ {
+  "id": "P0062",
+  "title": "Show progress toward a goal",
+  "rule": "Show progress for any multi-step task or goal, start people with credit for steps already done, and keep the next step visible; progress shown must be true.",
+  "strength": "must",
+  "applies_to": [
+   "progress-bar",
+   "checklist",
+   "onboarding",
+   "stepper"
+  ]
+ },
+ {
+  "id": "P0063",
+  "title": "Proof is real: numbers, names and faces you can check",
+  "rule": "Back claims with verifiable proof: real usage numbers, named customers with role and photo, logos used with permission, and sources for statistics.",
+  "strength": "must",
+  "applies_to": [
+   "landing",
+   "pricing",
+   "testimonial",
+   "stats"
+  ]
+ },
+ {
+  "id": "P0064",
+  "title": "No dark patterns: decline is as easy as accept, prices are whole, urgency is true",
+  "rule": "Make declining as easy and as visible as accepting, show the full price before commitment, use only true urgency and scarcity, never shame a choice, and make leaving as easy as joining.",
+  "strength": "must",
+  "applies_to": [
+   "dialog",
+   "pricing",
+   "checkout",
+   "consent",
+   "cancel-flow"
+  ]
+ },
+ {
+  "id": "P0065",
+  "title": "Design the peak and the ending",
+  "rule": "Make the best moment and the last moment of a flow clear and good: confirm success with what happened and what comes next.",
+  "strength": "should",
+  "applies_to": [
+   "success-state",
+   "onboarding",
+   "checkout",
+   "toast"
+  ]
+ },
+ {
+  "id": "P0066",
+  "title": "Interrupt rarely: notify only when it matters to the user",
+  "rule": "Send a notification only when it is urgent or clearly valuable to the user, let them choose what they get, and collect the rest in one bell (hub-0015).",
+  "strength": "must",
+  "applies_to": [
+   "notification",
+   "toast",
+   "bell",
+   "email"
+  ]
+ },
+ {
+  "id": "P0067",
+  "title": "Polish matters, and it is tested",
+  "rule": "Invest in visual polish because people judge quality and usability by it within moments, but check that each visual change does not cost speed or task success.",
+  "strength": "must",
+  "applies_to": [
+   "page",
+   "landing",
+   "app-shell"
+  ]
+ },
+ {
+  "id": "P0068",
+  "title": "First run reaches value fast; teach in context, not upfront",
+  "rule": "Get new users to their first real result in as few steps as possible, skip upfront tutorials, and give guidance at the moment it is needed, introducing features one at a time.",
+  "strength": "must",
+  "applies_to": [
+   "onboarding",
+   "empty-state",
+   "checklist",
+   "tooltip"
+  ]
+ },
+ {
+  "id": "P0069",
+  "title": "Ask for data and permissions in context, after value, with a reason",
+  "rule": "Ask for personal data or a permission only when the feature needs it, after the user has seen value, and say why in one sentence; start with small asks.",
+  "strength": "must",
+  "applies_to": [
+   "permission",
+   "consent",
+   "form",
+   "onboarding"
+  ]
+ },
+ {
+  "id": "P0070",
+  "title": "Speed is a feature: meet Core Web Vitals and reserve space",
+  "rule": "Track Core Web Vitals (largest paint, interaction response, layout shift) on every page, treat a regression as a bug, and reserve space for everything that loads late.",
+  "strength": "must",
+  "applies_to": [
+   "page",
+   "app-shell",
+   "image",
+   "widget"
+  ]
+ },
+ {
+  "id": "P0071",
+  "title": "Say what the AI can do, and help people start",
+  "rule": "Tell people what the AI can and cannot do and how often it may be wrong, and replace the blank prompt with suggested tasks, templates or examples.",
+  "strength": "must",
+  "applies_to": [
+   "chat",
+   "assistant",
+   "prompt-input",
+   "agent"
+  ]
+ },
+ {
+  "id": "P0072",
+  "title": "AI answers show their sources and say they are AI",
+  "rule": "Attach sources to AI-generated claims, next to the claim they support, and label generated content as AI-generated.",
+  "strength": "must",
+  "applies_to": [
+   "chat",
+   "assistant",
+   "summary",
+   "agent"
+  ]
+ },
+ {
+  "id": "P0073",
+  "title": "An agent previews, asks before consequential acts, and can be undone",
+  "rule": "Show what an agent will change before it acts, require approval for consequential or irreversible actions, let people edit its context, and keep a log with undo.",
+  "strength": "should",
+  "applies_to": [
+   "agent",
+   "assistant",
+   "diff",
+   "approval"
+  ]
+ },
+ {
+  "id": "P0074",
+  "title": "Meet WCAG 2.2 AA, with semantic HTML first",
+  "rule": "Build every screen to WCAG 2.2 AA using native semantic elements first (headings, landmarks, button, table with th and scope, label) and ARIA only to fill gaps.",
+  "strength": "must",
+  "applies_to": [
+   "page",
+   "table",
+   "form",
+   "nav",
+   "dialog"
+  ]
+ },
+ {
+  "id": "P0075",
+  "title": "One system: take an existing component before building a new one",
+  "rule": "Build every screen from the shared component set and tokens, take an existing component before making a new one, and change a component in one place so every screen follows.",
+  "strength": "should",
+  "applies_to": [
+   "component",
+   "page",
+   "token"
+  ]
+ },
+ {
+  "id": "P0076",
+  "title": "The hero says the outcome, and its one action is above the fold",
+  "rule": "The hero headline names what the reader gets, in their words, and the primary action sits beside it above the fold; no full-height image pushes it down.",
+  "strength": "must",
+  "applies_to": [
+   "landing:hero",
+   "any:action"
+  ]
+ },
+ {
+  "id": "P0077",
+  "title": "One call to action, repeated down the page",
+  "rule": "A landing page asks for one action; repeat that same action after each proof section and at the bottom, and keep it reachable while scrolling on mobile.",
+  "strength": "should",
+  "applies_to": [
+   "landing:cta",
+   "landing:hero",
+   "any:action"
+  ]
+ },
+ {
+  "id": "P0078",
+  "title": "Proof sits beside the ask",
+  "rule": "Put customer logos, user counts, ratings and trust marks next to the action they support, not in a section far from any button.",
+  "strength": "should",
+  "applies_to": [
+   "landing:logos",
+   "landing:testimonials",
+   "landing:cta"
+  ]
+ },
+ {
+  "id": "P0079",
+  "title": "Pricing: a few plans side by side, each with its whole price",
+  "rule": "Show two to four plans side by side, each with its full price and what it includes; never hide fees until checkout.",
+  "strength": "should",
+  "applies_to": [
+   "landing:pricing"
+  ]
+ },
+ {
+  "id": "P0080",
+  "title": "Plans compare row by row",
+  "rule": "Lay plan features out in aligned rows, the same feature on the same line in every plan, with ticks for yes and the monthly equivalent for every billing period.",
+  "strength": "should",
+  "applies_to": [
+   "landing:pricing",
+   "landing:comparison"
+  ]
+ },
+ {
+  "id": "P0081",
+  "title": "The FAQ answers the last objections, near the action",
+  "rule": "Near the bottom of the page and beside long forms, answer the five to eight questions that stop people signing up, in their words, with short answers.",
+  "strength": "should",
+  "applies_to": [
+   "landing:faq"
+  ]
+ },
+ {
+  "id": "P0082",
+  "title": "Signup and checkout drop the site nav and footer",
+  "rule": "On signup, checkout and upgrade pages, remove the site navigation, footer links and promotions; leave the logo, help and the one way forward.",
+  "strength": "should",
+  "applies_to": [
+   "landing:nav",
+   "landing:footer",
+   "dashboard:auth"
+  ]
+ },
+ {
+  "id": "P0083",
+  "title": "The footer is the site map and the contact desk",
+  "rule": "The footer groups links under four to six headed columns, shows how to reach a person, carries the legal lines, and is marked as the page's contentinfo.",
+  "strength": "must",
+  "applies_to": [
+   "landing:footer"
+  ]
+ },
+ {
+  "id": "P0084",
+  "title": "At most one announcement, and it never looks like an ad",
+  "rule": "Show at most one announcement bar, only for news unrelated to the task at hand, styled like the product rather than a banner ad, and never on checkout.",
+  "strength": "must",
+  "applies_to": [
+   "landing:announcement"
+  ]
+ },
+ {
+  "id": "P0085",
+  "title": "How it works shows the few steps, and what happens after the click",
+  "rule": "Explain the product as three or four numbered steps from signup to first result, and after any form, say what happens next.",
+  "strength": "should",
+  "applies_to": [
+   "landing:how-it-works"
+  ]
+ },
+ {
+  "id": "P0086",
+  "title": "Features lead with the outcome, then the feature",
+  "rule": "Title each feature by what it does for the reader, with the feature name second, and make the headline, copy, image and button tell the same benefit.",
+  "strength": "should",
+  "applies_to": [
+   "landing:features",
+   "landing:hero"
+  ]
+ },
+ {
+  "id": "P0087",
+  "title": "Contact is a short form and a real address",
+  "rule": "Keep contact forms to three fields or fewer and show real ways to reach a person (email, phone or address), visible without signing in.",
+  "strength": "must",
+  "applies_to": [
+   "landing:contact",
+   "landing:footer"
+  ]
+ },
+ {
+  "id": "P0088",
+  "title": "Buttons come in three sizes, and the main action is the largest",
+  "rule": "Draw every button from one small size scale; give the main call to action the largest size that fits its context, make the whole button clickable, and stop before it dominates the page.",
+  "strength": "must",
+  "applies_to": [
+   "any:action"
+  ]
+ },
+ {
+  "id": "P0089",
+  "title": "Badges only for what changes a decision",
+  "rule": "Use a badge only for information that changes what someone does (status, bestseller, new, live), keep one or two per item, and say it in words.",
+  "strength": "should",
+  "applies_to": [
+   "any:feedback"
+  ]
+ },
+ {
+  "id": "P0090",
+  "title": "Tooltips add detail; they never hold what you need",
+  "rule": "Use a tooltip for a short definition or detail, never for required information; open it on keyboard focus as well as hover, close it on Escape, and keep focus on its trigger.",
+  "strength": "must",
+  "applies_to": [
+   "any:overlay"
+  ]
+ },
+ {
+  "id": "P0091",
+  "title": "A switch acts at once, and its label names the setting",
+  "rule": "A switch changes the setting the moment it is flipped, with no Save; its label names the setting and stays the same in both states, and the label is clickable too.",
+  "strength": "should",
+  "applies_to": [
+   "any:field"
+  ]
+ },
+ {
+  "id": "P0092",
+  "title": "Avatars come from one size scale and are named for screen readers",
+  "rule": "Draw avatars from one size scale, give each alt text (the person's name) when no name is shown beside it, and use neutral defaults.",
+  "strength": "should",
+  "applies_to": [
+   "any:media"
+  ]
+ },
+ {
+  "id": "hub-0001",
+  "title": "Hover shows more; click commits",
+  "rule": null,
+  "strength": null,
+  "applies_to": null
+ },
+ {
+  "id": "hub-0002",
+  "title": "Space comes before components",
+  "rule": null,
+  "strength": null,
+  "applies_to": null
+ },
+ {
+  "id": "hub-0003",
+  "title": "A page is bands: glance, then work, then detail",
+  "rule": null,
+  "strength": null,
+  "applies_to": null
+ },
+ {
+  "id": "hub-0004",
+  "title": "Widgets are data, drawn in one frame",
+  "rule": null,
+  "strength": null,
+  "applies_to": null
+ },
+ {
+  "id": "hub-0005",
+  "title": "Open detail in place",
+  "rule": null,
+  "strength": null,
+  "applies_to": null
+ },
+ {
+  "id": "hub-0006",
+  "title": "Say it once, in fewer words",
+  "rule": null,
+  "strength": null,
+  "applies_to": null
+ },
+ {
+  "id": "hub-0007",
+  "title": "Cards are for things, not for wrapping text",
+  "rule": null,
+  "strength": null,
+  "applies_to": null
+ },
+ {
+  "id": "hub-0008",
+  "title": "A list beats a pile of cards; what's live is on top",
+  "rule": null,
+  "strength": null,
+  "applies_to": null
+ },
+ {
+  "id": "hub-0009",
+  "title": "Tell the truth about state",
+  "rule": null,
+  "strength": null,
+  "applies_to": null
+ },
+ {
+  "id": "hub-0010",
+  "title": "The shell loads once; the data streams in",
+  "rule": null,
+  "strength": null,
+  "applies_to": null
+ },
+ {
+  "id": "hub-0011",
+  "title": "Take before you build",
+  "rule": null,
+  "strength": null,
+  "applies_to": null
+ },
+ {
+  "id": "hub-0012",
+  "title": "Decide; show only the real forks",
+  "rule": null,
+  "strength": null,
+  "applies_to": null
+ },
+ {
+  "id": "hub-0013",
+  "title": "Motion has a job",
+  "rule": null,
+  "strength": null,
+  "applies_to": null
+ },
+ {
+  "id": "hub-0014",
+  "title": "One set of tokens, real type, real icons",
+  "rule": null,
+  "strength": null,
+  "applies_to": null
+ },
+ {
+  "id": "hub-0015",
+  "title": "Fixed anchors, split buttons, one bell",
+  "rule": null,
+  "strength": null,
+  "applies_to": null
+ }
+]

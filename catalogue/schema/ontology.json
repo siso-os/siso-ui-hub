@@ -1,0 +1,1440 @@
+{
+ "about": "SISO's UI ontology (11 Oct 2026). Shaan: 'break down every single atomic type that you would need for any landing page ... any atom that comes from that component type ... so the infinite scales of creativity still has a base to come from ... well reasoned and will stand the test of time of 10-20 years'. Every part sits at one SCALE (how much of a screen it is) and does one JOB. Look, motion, content and use case are variations on it, never new places. 'cats' ties a node to the library's categories; the clean types under a category are its structural variations.",
+ "scales": [
+  {
+   "id": "foundation",
+   "name": "Foundations",
+   "job": "the decisions every part inherits: colour, type, space, radius, elevation, motion timing",
+   "cats": [
+    "themes/theme",
+    "themes/style"
+   ]
+  },
+  {
+   "id": "atom",
+   "name": "Atoms",
+   "job": "one element with one job that cannot be split further"
+  },
+  {
+   "id": "component",
+   "name": "Components",
+   "job": "atoms combined to do one job: pick a date, show a record, ask a question"
+  },
+  {
+   "id": "section",
+   "name": "Sections",
+   "job": "a full-width band of a page (site) or a region of a screen (app) with one purpose"
+  },
+  {
+   "id": "page",
+   "name": "Pages and screens",
+   "job": "one whole view a person lands on, made of sections",
+   "cats": [
+    "pages/templates"
+   ]
+  },
+  {
+   "id": "surface",
+   "name": "Surfaces",
+   "job": "a whole product: a shell plus its pages"
+  }
+ ],
+ "variation_axes": {
+  "type": "structure: how it is built or laid out (the clean types, e.g. sidebar: grouped sections, collapsible icon rail, nested tree)",
+  "look": "foundations applied: minimal, dark, glass, editorial, 3d, brutalist, neon-glow ...",
+  "motion": "none, micro, entrance, scroll, loop, interactive, 3d",
+  "density": "compact, comfortable, spacious",
+  "content": "what fills it: text, numbers, media, people, code",
+  "use": "the job in a domain (fits: saas, ai, commerce, fintech ...); a WIDGET is a component specialised for one use"
+ },
+ "cross_cutting": [
+  {
+   "id": "effects",
+   "name": "Motion and effects",
+   "job": "applied to any scale to animate or decorate it",
+   "cats": [
+    "motion/text-effect",
+    "motion/background",
+    "motion/cursor",
+    "motion/shader",
+    "motion/number-ticker",
+    "motion/marquee",
+    "motion/gradient",
+    "motion/globe",
+    "motion/ascii",
+    "motion/border",
+    "motion/tilt-3d"
+   ]
+  },
+  {
+   "id": "assets",
+   "name": "Assets",
+   "job": "what a design uses rather than what it is made of: icons, logos, images, illustrations, fonts, sounds",
+   "cats": [
+    "assets"
+   ]
+  },
+  {
+   "id": "behaviour",
+   "name": "Behaviour",
+   "job": "code with no look: hooks and utilities that make parts work",
+   "cats": [
+    "lib/hook",
+    "lib/utility"
+   ]
+  }
+ ],
+ "atoms": [
+  {
+   "id": "layout",
+   "name": "Layout",
+   "job": "arrange other parts: stack, grid, divider, scroll area",
+   "cats": [
+    "layout/scroll-area"
+   ]
+  },
+  {
+   "id": "text",
+   "name": "Text",
+   "job": "say something: heading, body, label, quote, inline code, keyboard key",
+   "cats": [
+    "data-display/typography"
+   ]
+  },
+  {
+   "id": "link",
+   "name": "Link",
+   "job": "go somewhere",
+   "cats": [
+    "actions/link"
+   ]
+  },
+  {
+   "id": "button",
+   "name": "Button",
+   "job": "do something",
+   "cats": [
+    "actions/button",
+    "actions/copy-button"
+   ]
+  },
+  {
+   "id": "icon",
+   "name": "Icon",
+   "job": "name a thing at a glance",
+   "cats": [
+    "assets/icon"
+   ]
+  },
+  {
+   "id": "image",
+   "name": "Image and video",
+   "job": "show a picture or clip",
+   "cats": [
+    "media/player"
+   ]
+  },
+  {
+   "id": "avatar",
+   "name": "Avatar",
+   "job": "stand for a person or org",
+   "cats": [
+    "data-display/avatar"
+   ]
+  },
+  {
+   "id": "badge",
+   "name": "Badge",
+   "job": "label or count something",
+   "cats": [
+    "data-display/badge"
+   ]
+  },
+  {
+   "id": "status-dot",
+   "name": "Status dot",
+   "job": "show live state",
+   "cats": [
+    "status/status-dot"
+   ]
+  },
+  {
+   "id": "text-input",
+   "name": "Text input",
+   "job": "type a value",
+   "cats": [
+    "inputs/form-field",
+    "inputs/textarea",
+    "inputs/number-input",
+    "inputs/otp-input"
+   ]
+  },
+  {
+   "id": "choice",
+   "name": "Checkbox and radio",
+   "job": "choose one or several",
+   "cats": [
+    "inputs/checkbox",
+    "inputs/radio"
+   ]
+  },
+  {
+   "id": "switch",
+   "name": "Switch",
+   "job": "turn on or off",
+   "cats": [
+    "actions/switch"
+   ]
+  },
+  {
+   "id": "slider",
+   "name": "Slider and rating",
+   "job": "pick along a range",
+   "cats": [
+    "inputs/slider",
+    "inputs/rating"
+   ]
+  },
+  {
+   "id": "loader",
+   "name": "Loader and skeleton",
+   "job": "say it is working",
+   "cats": [
+    "status/loader",
+    "status/skeleton"
+   ]
+  },
+  {
+   "id": "progress",
+   "name": "Progress",
+   "job": "say how far along",
+   "cats": [
+    "data-viz/progress-bar",
+    "data-viz/gauge"
+   ]
+  },
+  {
+   "id": "tooltip",
+   "name": "Tooltip",
+   "job": "explain on hover",
+   "cats": [
+    "overlays/tooltip"
+   ]
+  }
+ ],
+ "components": [
+  {
+   "group": "Input",
+   "items": [
+    {
+     "id": "field",
+     "name": "Form field",
+     "made_of": [
+      "text",
+      "text-input",
+      "badge"
+     ],
+     "cats": [
+      "inputs/form-field"
+     ]
+    },
+    {
+     "id": "select",
+     "name": "Select and combobox",
+     "made_of": [
+      "button",
+      "text-input",
+      "icon"
+     ],
+     "cats": [
+      "inputs/select",
+      "inputs/combobox"
+     ]
+    },
+    {
+     "id": "search",
+     "name": "Search box",
+     "made_of": [
+      "text-input",
+      "icon",
+      "button"
+     ],
+     "cats": [
+      "inputs/search"
+     ]
+    },
+    {
+     "id": "picker",
+     "name": "Date, time and colour pickers",
+     "made_of": [
+      "button",
+      "text-input"
+     ],
+     "cats": [
+      "inputs/date-picker",
+      "inputs/date-range",
+      "inputs/time-picker",
+      "inputs/color-picker"
+     ]
+    },
+    {
+     "id": "upload",
+     "name": "File upload",
+     "made_of": [
+      "button",
+      "icon",
+      "progress"
+     ],
+     "cats": [
+      "inputs/file-upload"
+     ]
+    },
+    {
+     "id": "tags",
+     "name": "Tag input",
+     "made_of": [
+      "text-input",
+      "badge"
+     ],
+     "cats": [
+      "inputs/tag-input"
+     ]
+    },
+    {
+     "id": "form",
+     "name": "Form",
+     "made_of": [
+      "field",
+      "choice",
+      "button"
+     ],
+     "cats": [
+      "inputs/form-field"
+     ],
+     "match": [
+      "whole form"
+     ]
+    }
+   ]
+  },
+  {
+   "group": "Navigation",
+   "items": [
+    {
+     "id": "menu",
+     "name": "Menu",
+     "made_of": [
+      "link",
+      "icon",
+      "text"
+     ],
+     "cats": [
+      "navigation/menu",
+      "overlays/context-menu"
+     ]
+    },
+    {
+     "id": "tabs",
+     "name": "Tabs and segmented control",
+     "made_of": [
+      "button",
+      "badge"
+     ],
+     "cats": [
+      "navigation/tabs",
+      "actions/segmented-control"
+     ]
+    },
+    {
+     "id": "breadcrumb",
+     "name": "Breadcrumb",
+     "made_of": [
+      "link",
+      "icon"
+     ],
+     "cats": [
+      "navigation/breadcrumb"
+     ]
+    },
+    {
+     "id": "pagination",
+     "name": "Pagination",
+     "made_of": [
+      "button"
+     ],
+     "cats": [
+      "navigation/pagination"
+     ]
+    },
+    {
+     "id": "steps",
+     "name": "Steps",
+     "made_of": [
+      "badge",
+      "text",
+      "progress"
+     ],
+     "cats": [
+      "navigation/wizard-steps"
+     ]
+    },
+    {
+     "id": "command",
+     "name": "Command palette",
+     "made_of": [
+      "search",
+      "menu"
+     ],
+     "cats": [
+      "navigation/command-palette"
+     ]
+    },
+    {
+     "id": "toc",
+     "name": "Table of contents",
+     "made_of": [
+      "link"
+     ],
+     "cats": [
+      "navigation/table-of-contents"
+     ]
+    },
+    {
+     "id": "dock",
+     "name": "Dock",
+     "made_of": [
+      "button",
+      "icon",
+      "tooltip"
+     ],
+     "cats": [
+      "navigation/dock"
+     ]
+    }
+   ]
+  },
+  {
+   "group": "Display",
+   "items": [
+    {
+     "id": "card",
+     "name": "Card",
+     "made_of": [
+      "text",
+      "image",
+      "button",
+      "badge"
+     ],
+     "cats": [
+      "data-display/card",
+      "data-display/profile"
+     ]
+    },
+    {
+     "id": "list",
+     "name": "List",
+     "made_of": [
+      "avatar",
+      "text",
+      "badge"
+     ],
+     "cats": [
+      "data-display/list"
+     ]
+    },
+    {
+     "id": "table",
+     "name": "Table",
+     "made_of": [
+      "text",
+      "badge",
+      "choice",
+      "pagination"
+     ],
+     "cats": [
+      "data-display/table"
+     ]
+    },
+    {
+     "id": "stat",
+     "name": "Stat",
+     "made_of": [
+      "text",
+      "badge",
+      "progress"
+     ],
+     "cats": [
+      "data-display/stat"
+     ]
+    },
+    {
+     "id": "chart",
+     "name": "Chart",
+     "made_of": [
+      "text"
+     ],
+     "cats": [
+      "data-viz/chart",
+      "data-viz/flow"
+     ]
+    },
+    {
+     "id": "map",
+     "name": "Map",
+     "made_of": [
+      "icon",
+      "tooltip"
+     ],
+     "cats": [
+      "data-viz/map"
+     ]
+    },
+    {
+     "id": "accordion",
+     "name": "Accordion",
+     "made_of": [
+      "button",
+      "text",
+      "icon"
+     ],
+     "cats": [
+      "data-display/accordion"
+     ]
+    },
+    {
+     "id": "tree",
+     "name": "Tree",
+     "made_of": [
+      "icon",
+      "text"
+     ],
+     "cats": [
+      "data-display/tree"
+     ]
+    },
+    {
+     "id": "timeline",
+     "name": "Timeline",
+     "made_of": [
+      "status-dot",
+      "text",
+      "avatar"
+     ],
+     "cats": [
+      "data-display/timeline"
+     ]
+    },
+    {
+     "id": "calendar",
+     "name": "Calendar",
+     "made_of": [
+      "button",
+      "text"
+     ],
+     "cats": [
+      "data-display/calendar"
+     ]
+    },
+    {
+     "id": "board",
+     "name": "Board",
+     "made_of": [
+      "card"
+     ],
+     "cats": [
+      "data-display/kanban"
+     ]
+    },
+    {
+     "id": "code",
+     "name": "Code block and diff",
+     "made_of": [
+      "text",
+      "button"
+     ],
+     "cats": [
+      "data-display/code-block",
+      "data-display/diff",
+      "data-display/json-viewer"
+     ]
+    },
+    {
+     "id": "empty",
+     "name": "Empty state",
+     "made_of": [
+      "icon",
+      "text",
+      "button"
+     ],
+     "cats": [
+      "data-display/empty-state"
+     ]
+    },
+    {
+     "id": "widget",
+     "name": "Widgets",
+     "made_of": [
+      "stat",
+      "chart",
+      "progress"
+     ],
+     "job": "a component specialised for one use",
+     "cats": [
+      "data-display/gamification"
+     ]
+    }
+   ]
+  },
+  {
+   "group": "Overlay",
+   "items": [
+    {
+     "id": "dialog",
+     "name": "Dialog",
+     "made_of": [
+      "text",
+      "button"
+     ],
+     "cats": [
+      "overlays/dialog"
+     ]
+    },
+    {
+     "id": "sheet",
+     "name": "Sheet and drawer",
+     "made_of": [
+      "text",
+      "button"
+     ],
+     "cats": [
+      "overlays/sheet"
+     ]
+    },
+    {
+     "id": "popover",
+     "name": "Popover and hover card",
+     "made_of": [
+      "text",
+      "avatar",
+      "button"
+     ],
+     "cats": [
+      "overlays/popover",
+      "overlays/hover-card"
+     ]
+    },
+    {
+     "id": "toast",
+     "name": "Toast",
+     "made_of": [
+      "icon",
+      "text",
+      "button"
+     ],
+     "cats": [
+      "overlays/toast"
+     ]
+    },
+    {
+     "id": "alert",
+     "name": "Alert banner",
+     "made_of": [
+      "icon",
+      "text",
+      "button"
+     ],
+     "cats": [
+      "overlays/alert-banner"
+     ]
+    },
+    {
+     "id": "inbox",
+     "name": "Notifications",
+     "made_of": [
+      "list",
+      "badge"
+     ],
+     "cats": [
+      "overlays/notifications"
+     ]
+    },
+    {
+     "id": "lightbox",
+     "name": "Lightbox",
+     "made_of": [
+      "image",
+      "button"
+     ],
+     "cats": [
+      "overlays/lightbox"
+     ]
+    }
+   ]
+  },
+  {
+   "group": "Media",
+   "items": [
+    {
+     "id": "gallery",
+     "name": "Gallery",
+     "made_of": [
+      "image"
+     ],
+     "cats": [
+      "media/gallery"
+     ]
+    },
+    {
+     "id": "carousel",
+     "name": "Carousel",
+     "made_of": [
+      "image",
+      "card",
+      "button"
+     ],
+     "cats": [
+      "media/carousel",
+      "media/card-stack"
+     ]
+    },
+    {
+     "id": "player",
+     "name": "Player",
+     "made_of": [
+      "image",
+      "button",
+      "slider"
+     ],
+     "cats": [
+      "media/player"
+     ]
+    },
+    {
+     "id": "compare",
+     "name": "Before and after",
+     "made_of": [
+      "image",
+      "slider"
+     ],
+     "cats": [
+      "media/image-compare"
+     ]
+    },
+    {
+     "id": "mockup",
+     "name": "Device mockup",
+     "made_of": [
+      "image"
+     ],
+     "cats": [
+      "media/mockup"
+     ]
+    }
+   ]
+  },
+  {
+   "group": "Conversation",
+   "items": [
+    {
+     "id": "message",
+     "name": "Message",
+     "made_of": [
+      "avatar",
+      "text"
+     ],
+     "cats": [
+      "ai-agent/ai-agent"
+     ],
+     "match": [
+      "message",
+      "bubble",
+      "chat thread",
+      "streaming"
+     ]
+    },
+    {
+     "id": "composer",
+     "name": "Composer",
+     "made_of": [
+      "text-input",
+      "button",
+      "upload"
+     ],
+     "cats": [
+      "ai-agent/composer",
+      "ai-agent/ai-agent"
+     ],
+     "match": [
+      "composer",
+      "model picker",
+      "suggestion"
+     ]
+    },
+    {
+     "id": "agent-parts",
+     "name": "Agent parts",
+     "job": "tool calls, sources, reasoning, model picker, voice orb, artifact",
+     "made_of": [
+      "card",
+      "loader",
+      "badge"
+     ],
+     "cats": [
+      "ai-agent/ai-agent"
+     ]
+    }
+   ]
+  }
+ ],
+ "sections": {
+  "site": [
+   {
+    "id": "announcement",
+    "name": "Announcement bar",
+    "made_of": [
+     "text",
+     "link",
+     "button"
+    ],
+    "cats": [
+     "marketing/announcement"
+    ]
+   },
+   {
+    "id": "nav",
+    "name": "Nav bar",
+    "made_of": [
+     "menu",
+     "button",
+     "link"
+    ],
+    "cats": [
+     "navigation/top-nav"
+    ]
+   },
+   {
+    "id": "hero",
+    "name": "Hero",
+    "made_of": [
+     "text",
+     "button",
+     "image",
+     "mockup"
+    ],
+    "cats": [
+     "marketing/hero"
+    ]
+   },
+   {
+    "id": "logos",
+    "name": "Logos and proof",
+    "made_of": [
+     "image"
+    ],
+    "cats": [
+     "marketing/logos"
+    ]
+   },
+   {
+    "id": "features",
+    "name": "Features",
+    "made_of": [
+     "card",
+     "icon",
+     "text"
+    ],
+    "cats": [
+     "marketing/features",
+     "layout/bento-grid"
+    ]
+   },
+   {
+    "id": "how",
+    "name": "How it works",
+    "made_of": [
+     "steps",
+     "text",
+     "image"
+    ],
+    "cats": [
+     "marketing/features"
+    ],
+    "match": [
+     "step",
+     "how it works",
+     "process"
+    ]
+   },
+   {
+    "id": "showcase",
+    "name": "Showcase",
+    "made_of": [
+     "gallery",
+     "carousel",
+     "mockup"
+    ],
+    "cats": [
+     "media/gallery",
+     "layout/bento-grid"
+    ],
+    "match": [
+     "image",
+     "collage",
+     "gallery"
+    ]
+   },
+   {
+    "id": "stats",
+    "name": "Stats",
+    "made_of": [
+     "stat"
+    ],
+    "cats": [
+     "data-display/stat",
+     "marketing/marketing"
+    ],
+    "match": [
+     "stats",
+     "counter"
+    ]
+   },
+   {
+    "id": "testimonials",
+    "name": "Testimonials",
+    "made_of": [
+     "card",
+     "avatar",
+     "text"
+    ],
+    "cats": [
+     "marketing/testimonials"
+    ]
+   },
+   {
+    "id": "pricing",
+    "name": "Pricing",
+    "made_of": [
+     "card",
+     "tabs",
+     "button",
+     "badge"
+    ],
+    "cats": [
+     "marketing/pricing"
+    ]
+   },
+   {
+    "id": "comparison",
+    "name": "Comparison",
+    "made_of": [
+     "table"
+    ],
+    "cats": [
+     "marketing/comparison"
+    ]
+   },
+   {
+    "id": "faq",
+    "name": "FAQ",
+    "made_of": [
+     "accordion"
+    ],
+    "cats": [
+     "marketing/faq"
+    ]
+   },
+   {
+    "id": "team",
+    "name": "Team",
+    "made_of": [
+     "card",
+     "avatar"
+    ],
+    "cats": [
+     "marketing/team"
+    ]
+   },
+   {
+    "id": "about",
+    "name": "About and story",
+    "made_of": [
+     "text",
+     "image",
+     "timeline"
+    ],
+    "cats": [
+     "marketing/about",
+     "marketing/marketing"
+    ],
+    "match": [
+     "about",
+     "case study"
+    ]
+   },
+   {
+    "id": "blog",
+    "name": "Blog list",
+    "made_of": [
+     "card"
+    ],
+    "cats": [
+     "marketing/marketing"
+    ]
+   },
+   {
+    "id": "cta",
+    "name": "Call to action",
+    "made_of": [
+     "text",
+     "button",
+     "field"
+    ],
+    "cats": [
+     "marketing/cta"
+    ]
+   },
+   {
+    "id": "contact",
+    "name": "Contact and newsletter",
+    "made_of": [
+     "form",
+     "map"
+    ],
+    "cats": [
+     "marketing/marketing"
+    ],
+    "match": [
+     "contact",
+     "form"
+    ]
+   },
+   {
+    "id": "footer",
+    "name": "Footer",
+    "made_of": [
+     "link",
+     "field",
+     "icon"
+    ],
+    "cats": [
+     "marketing/footer"
+    ]
+   }
+  ],
+  "app": [
+   {
+    "id": "shell",
+    "name": "App shell",
+    "made_of": [
+     "sidebar",
+     "top-bar"
+    ],
+    "cats": [
+     "layout/page-shell",
+     "layout/dashboard"
+    ]
+   },
+   {
+    "id": "sidebar",
+    "name": "Side nav",
+    "made_of": [
+     "menu",
+     "avatar",
+     "search",
+     "badge"
+    ],
+    "cats": [
+     "navigation/sidebar"
+    ]
+   },
+   {
+    "id": "top-bar",
+    "name": "Top bar",
+    "made_of": [
+     "breadcrumb",
+     "search",
+     "avatar",
+     "button"
+    ],
+    "cats": [
+     "navigation/top-nav"
+    ],
+    "match": [
+     "dashboard:",
+     "app"
+    ]
+   },
+   {
+    "id": "page-header",
+    "name": "Page header",
+    "made_of": [
+     "text",
+     "tabs",
+     "button"
+    ],
+    "cats": [
+     "layout/page-shell"
+    ],
+    "match": [
+     "page header",
+     "header"
+    ]
+   },
+   {
+    "id": "filters",
+    "name": "Filters bar",
+    "made_of": [
+     "search",
+     "select",
+     "badge"
+    ],
+    "cats": [
+     "inputs/search"
+    ]
+   },
+   {
+    "id": "kpis",
+    "name": "KPI row",
+    "made_of": [
+     "stat",
+     "chart"
+    ],
+    "cats": [
+     "data-display/stat",
+     "layout/bento-grid"
+    ],
+    "match": [
+     "kpi",
+     "metric",
+     "dashboard:",
+     "analytics"
+    ]
+   },
+   {
+    "id": "data-view",
+    "name": "Data view (table, list, board, calendar)",
+    "made_of": [
+     "table",
+     "list",
+     "board",
+     "calendar"
+    ],
+    "cats": [
+     "data-display/table",
+     "data-display/list",
+     "data-display/kanban",
+     "data-display/calendar"
+    ]
+   },
+   {
+    "id": "detail",
+    "name": "Detail and inspector",
+    "made_of": [
+     "text",
+     "timeline",
+     "tabs"
+    ],
+    "cats": [
+     "layout/split-pane"
+    ]
+   },
+   {
+    "id": "settings-panel",
+    "name": "Settings panel",
+    "made_of": [
+     "form",
+     "switch"
+    ],
+    "cats": [
+     "flows/settings"
+    ]
+   },
+   {
+    "id": "auth",
+    "name": "Sign in and sign up",
+    "made_of": [
+     "form",
+     "button"
+    ],
+    "cats": [
+     "flows/sign-in"
+    ]
+   },
+   {
+    "id": "onboarding",
+    "name": "Onboarding step",
+    "made_of": [
+     "steps",
+     "form"
+    ],
+    "cats": [
+     "navigation/wizard-steps"
+    ]
+   },
+   {
+    "id": "chat",
+    "name": "Chat thread",
+    "made_of": [
+     "message",
+     "composer"
+    ],
+    "cats": [
+     "ai-agent/ai-agent",
+     "ai-agent/composer"
+    ]
+   }
+  ]
+ },
+ "pages": {
+  "site": [
+   {
+    "id": "home",
+    "name": "Home",
+    "sections": [
+     "nav",
+     "hero",
+     "logos",
+     "features",
+     "how",
+     "testimonials",
+     "pricing",
+     "faq",
+     "cta",
+     "footer"
+    ],
+    "cats": [
+     "pages/templates"
+    ]
+   },
+   {
+    "id": "pricing-page",
+    "name": "Pricing",
+    "sections": [
+     "nav",
+     "pricing",
+     "comparison",
+     "faq",
+     "cta",
+     "footer"
+    ]
+   },
+   {
+    "id": "about-page",
+    "name": "About",
+    "sections": [
+     "nav",
+     "about",
+     "team",
+     "stats",
+     "cta",
+     "footer"
+    ]
+   },
+   {
+    "id": "blog-index",
+    "name": "Blog",
+    "sections": [
+     "nav",
+     "blog",
+     "cta",
+     "footer"
+    ]
+   },
+   {
+    "id": "article",
+    "name": "Article",
+    "sections": [
+     "nav",
+     "about",
+     "footer"
+    ],
+    "cats": [
+     "pages/templates"
+    ],
+    "match": [
+     "docs",
+     "article",
+     "blog"
+    ]
+   },
+   {
+    "id": "contact-page",
+    "name": "Contact",
+    "sections": [
+     "nav",
+     "contact",
+     "faq",
+     "footer"
+    ]
+   },
+   {
+    "id": "auth-page",
+    "name": "Sign in",
+    "sections": [
+     "auth"
+    ]
+   },
+   {
+    "id": "not-found",
+    "name": "404",
+    "sections": [
+     "nav",
+     "cta"
+    ],
+    "cats": [
+     "pages/templates"
+    ],
+    "match": [
+     "error",
+     "404",
+     "coming soon"
+    ]
+   }
+  ],
+  "app": [
+   {
+    "id": "dashboard",
+    "name": "Dashboard",
+    "sections": [
+     "shell",
+     "page-header",
+     "kpis",
+     "data-view"
+    ],
+    "cats": [
+     "layout/dashboard",
+     "layout/page-shell"
+    ]
+   },
+   {
+    "id": "index",
+    "name": "List or table",
+    "sections": [
+     "shell",
+     "page-header",
+     "filters",
+     "data-view"
+    ],
+    "cats": [
+     "data-display/table",
+     "data-display/list",
+     "data-display/kanban"
+    ]
+   },
+   {
+    "id": "record",
+    "name": "Detail",
+    "sections": [
+     "shell",
+     "page-header",
+     "detail"
+    ],
+    "cats": [
+     "layout/split-pane",
+     "data-display/profile"
+    ]
+   },
+   {
+    "id": "settings",
+    "name": "Settings",
+    "sections": [
+     "shell",
+     "page-header",
+     "settings-panel"
+    ],
+    "cats": [
+     "flows/settings"
+    ]
+   },
+   {
+    "id": "chat-screen",
+    "name": "Chat",
+    "sections": [
+     "shell",
+     "chat"
+    ],
+    "cats": [
+     "ai-agent/ai-agent",
+     "ai-agent/composer"
+    ]
+   },
+   {
+    "id": "onboarding-flow",
+    "name": "Onboarding",
+    "sections": [
+     "onboarding"
+    ],
+    "cats": [
+     "navigation/wizard-steps"
+    ]
+   },
+   {
+    "id": "auth-screen",
+    "name": "Sign in",
+    "sections": [
+     "auth"
+    ],
+    "cats": [
+     "flows/sign-in"
+    ]
+   }
+  ]
+ },
+ "surfaces": [
+  {
+   "id": "landing",
+   "name": "Landing site",
+   "pages": "site"
+  },
+  {
+   "id": "app",
+   "name": "Web app",
+   "pages": "app"
+  },
+  {
+   "id": "ai",
+   "name": "AI app",
+   "pages": [
+    "chat-screen",
+    "auth-screen",
+    "settings"
+   ]
+  },
+  {
+   "id": "mobile",
+   "name": "Mobile app",
+   "pages": [
+    "dashboard",
+    "index",
+    "record",
+    "settings",
+    "onboarding-flow"
+   ],
+   "note": "the same pages; the shell is a tab bar and app bar, and sheets replace dialogs (a gap in the library)"
+  },
+  {
+   "id": "store",
+   "name": "Store",
+   "pages": [
+    "home",
+    "index",
+    "record"
+   ]
+  },
+  {
+   "id": "docs",
+   "name": "Docs and content",
+   "pages": [
+    "article",
+    "blog-index"
+   ]
+  }
+ ],
+ "unsorted": {
+  "job": "parts no reader could place yet; each is re-read and moved onto a node",
+  "cats": [
+   "other/other"
+  ]
+ },
+ "placement": "each part sits on one node: its scale from the reader's level (primitive atom, component component, section section, page or shell page, effect or theme looks; logic and demo leave browsing), then the node at that scale whose cats hold its category, else the nearest scale. When nodes share a category, the first whose match words appear in the part's type or slots takes it; else the first without match words. Done in the app (src/lib/ontology.ts) when the index loads."
+}
