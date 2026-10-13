@@ -1,0 +1,282 @@
+{"id": "uitripled:about-us-page-shadcnui", "node": "page/about-page", "variation": "about-values", "job": "Company about page with mission, values, and leadership."}
+{"id": "uitripled:about-us-section-baseui", "node": "section/about", "variation": "mission-values", "job": "About section with mission, values, and value cards."}
+{"id": "uitripled:about-us-section-shadcnui", "node": "section/about", "variation": "mission-values", "job": "About section with mission, values, and value cards."}
+{"id": "uitripled:ai-chat-interface-shadcnui", "node": "component/composer", "variation": "chat-composer", "job": "Chat input with attachments, model selector, and controls."}
+{"id": "uitripled:ai-glow-input-shadcnui", "node": "atom/text-input", "variation": "text-input", "job": "Text input whose glow pulses with typing speed."}
+{"id": "uitripled:ai-loading-skeleton-shadcnui", "node": "atom/loader", "variation": "skeleton", "job": "Loading skeleton with shimmering placeholder blocks."}
+{"id": "uitripled:ai-response-typing-shadcnui", "node": "component/message", "variation": "streaming-text", "job": "AI reply text typing out character by character."}
+{"id": "uitripled:ai-unlock-animation-shadcnui", "node": "atom/loader", "variation": "specialized", "job": "Premium unlock animation with particles, ripples, and loading states."}
+{"id": "uitripled:animated-accordion-shadcnui", "node": "component/accordion", "variation": "standard-accordion", "job": "Accordion panels that expand and collapse smoothly."}
+{"id": "uitripled:animated-card-stack-baseui", "node": "component/card", "variation": "stack-flip", "job": "Stacked cards that expand on hover."}
+{"id": "uitripled:animated-card-stack-shadcnui", "node": "component/card", "variation": "stack-flip", "job": "Stacked cards that expand on hover."}
+{"id": "uitripled:animated-checkbox-shadcnui", "node": "atom/choice", "variation": "checkbox", "job": "Checkbox with an animated checkmark."}
+{"id": "uitripled:animated-dialog-shadcnui", "node": "component/dialog", "variation": "modal-dialog", "job": "Modal dialog with fading backdrop and spring animation."}
+{"id": "uitripled:animated-list-shadcnui", "node": "component/list", "variation": "standard-list", "job": "List whose items appear with staggered animation."}
+{"id": "uitripled:animated-navbar-shadcnui", "node": "section/nav", "variation": "simple-bar", "job": "Site navigation bar with animated underline indicator."}
+{"id": "uitripled:animated-pagination-shadcnui", "node": "component/pagination", "variation": "numbered-pages", "job": "Pagination with smooth animated page transitions."}
+{"id": "uitripled:animated-profile-menu-shadcnui", "node": "component/menu", "variation": "dropdown-menu", "job": "Avatar that opens quick action cards."}
+{"id": "uitripled:animated-progress-shadcnui", "node": "atom/progress", "variation": "linear", "job": "Progress bar that animates to its value."}
+{"id": "uitripled:animated-quote-block-shadcnui", "node": "atom/text", "variation": "blockquote", "job": "Quote that types itself in, then breathes."}
+{"id": "uitripled:animated-radio-shadcnui", "node": "atom/choice", "variation": "radio", "job": "Radio group with animated selection ripple."}
+{"id": "uitripled:animated-select-shadcnui", "node": "component/select", "variation": "standard-select", "job": "Select dropdown with smooth open and close animation."}
+{"id": "uitripled:animated-sidebar-shadcnui", "node": "section/sidebar", "variation": "mobile-drawer", "job": "Sidebar that slides in over content with overlay."}
+{"id": "uitripled:animated-tabs-shadcnui", "node": "component/tabs", "variation": "indicator", "job": "Tabs with a sliding active indicator."}
+{"id": "uitripled:animated-tooltip-shadcnui", "node": "atom/tooltip", "variation": "standard", "job": "Tooltip with delay and slide-in animation."}
+{"id": "uitripled:auto-revealing-heading-shadcnui", "node": "atom/text", "variation": "heading", "job": "Heading revealing letters on scroll with staggered motion."}
+{"id": "uitripled:avatar-group-shadcnui", "node": "atom/avatar", "variation": "avatar-group", "job": "Stacked avatars with hover reveal and tooltips."}
+{"id": "uitripled:bento-grid-block-baseui", "node": "section/features", "variation": "bento", "job": "Bento grid of features, imagery, and metrics."}
+{"id": "uitripled:bento-grid-block-shadcnui", "node": "section/features", "variation": "bento", "job": "Bento grid of features, imagery, and metrics."}
+{"id": "uitripled:blog-block-baseui", "node": "section/blog", "variation": "news-grid", "job": "Blog post grid with staggered cards and dates."}
+{"id": "uitripled:blog-block-shadcnui", "node": "section/blog", "variation": "news-grid", "job": "Blog post grid with staggered cards and dates."}
+{"id": "uitripled:blog-typography-shadcnui", "node": "atom/text", "variation": "body", "job": "Prose typography for blog text, links, quotes, and code."}
+{"id": "uitripled:bottom-modal", "node": "component/sheet", "variation": "bottom-sheet", "job": "Glassmorphic modal sliding up from the bottom."}
+{"id": "uitripled:browse-folder-baseui", "node": "component/tree", "variation": "file-tree", "job": "Folder browser with animated tabs and content."}
+{"id": "uitripled:browse-folder-shadcnui", "node": "component/tree", "variation": "file-tree", "job": "Folder browser with animated tabs and content."}
+{"id": "uitripled:cards-slider-shadcnui", "node": "component/carousel", "variation": "cards-carousel", "job": "Draggable slider showing a row of cards."}
+{"id": "uitripled:cash-flow-chart", "node": "component/chart", "variation": "bar-chart", "job": "Accessible bar chart of cash flow with tooltips."}
+{"id": "uitripled:chat-app-shadcnui", "node": "section/chat", "variation": "full-app", "job": "Full chat app with animated message thread."}
+{"id": "uitripled:cinema-ticket-baseui", "node": "component/card", "variation": null, "job": "Cinema ticket card with rip effect and barcode.", "edge": "event-ticket"}
+{"id": "uitripled:cinema-ticket-shadcnui", "node": "component/card", "variation": null, "job": "Cinema ticket card with rip effect and barcode.", "edge": "event-ticket"}
+{"id": "uitripled:command-palette-shadcnui", "node": "component/command", "variation": "command-palette", "job": "Keyboard-driven command palette with search."}
+{"id": "uitripled:comment-thread-shadcnui", "node": "component/message", "variation": null, "job": "Nested comment thread with replies and reactions.", "edge": "comment-thread"}
+{"id": "uitripled:conference-ticket-baseui", "node": "component/card", "variation": null, "job": "Conference ticket card with glass and holographic details.", "edge": "event-ticket"}
+{"id": "uitripled:conference-ticket-shadcnui", "node": "component/card", "variation": null, "job": "Conference ticket card with glass and holographic details.", "edge": "event-ticket"}
+{"id": "uitripled:contact-block-baseui", "node": "section/contact", "variation": "split", "job": "Contact form beside info cards and working hours."}
+{"id": "uitripled:contact-block-shadcnui", "node": "section/contact", "variation": "split", "job": "Contact form beside info cards and working hours."}
+{"id": "uitripled:contact-form-section-baseui", "node": "section/contact", "variation": "form", "job": "Contact form with animated inputs and validation."}
+{"id": "uitripled:contact-form-section-shadcnui", "node": "section/contact", "variation": "form", "job": "Contact form with animated inputs and validation."}
+{"id": "uitripled:context-menu-bubble-shadcnui", "node": "component/menu", "variation": "radial-menu", "job": "Right-click radial menu with expanding icons."}
+{"id": "uitripled:context-menu-shadcnui", "node": "component/menu", "variation": "context-menu", "job": "Right-click context menu with nested items."}
+{"id": "uitripled:course-content-page-shadcnui", "node": "page/record", "variation": null, "job": "Course page with video, instructor, curriculum, and progress.", "edge": "course-content-page"}
+{"id": "uitripled:credit-card-baseui", "node": "component/card", "variation": "stack-flip", "job": "Credit card that flips in 3D to show CVV."}
+{"id": "uitripled:credit-card-shadcnui", "node": "component/card", "variation": "stack-flip", "job": "Credit card that flips in 3D to show CVV."}
+{"id": "uitripled:cta-banner-section-baseui", "node": "section/cta", "variation": "centered-banner", "job": "Centered call-to-action banner with gradient and buttons."}
+{"id": "uitripled:cta-banner-section-shadcnui", "node": "section/cta", "variation": "centered-banner", "job": "Centered call-to-action banner with gradient and buttons."}
+{"id": "uitripled:cta-block-baseui", "node": "section/cta", "variation": "full-bleed", "job": "Full-bleed gradient CTA with buttons and status."}
+{"id": "uitripled:cta-block-shadcnui", "node": "section/cta", "variation": "full-bleed", "job": "Full-bleed gradient CTA with buttons and status."}
+{"id": "uitripled:cta-hero-block-baseui", "node": "section/hero", "variation": "form", "job": "Hero with email signup, video preview, and social proof."}
+{"id": "uitripled:cta-hero-block-shadcnui", "node": "section/hero", "variation": "form", "job": "Hero with email signup, video preview, and social proof."}
+{"id": "uitripled:currency-converter-card-baseui", "node": "component/widget", "variation": null, "job": "Currency converter widget with animated inputs and rates.", "edge": "currency-converter"}
+{"id": "uitripled:currency-converter-card-shadcnui", "node": "component/widget", "variation": null, "job": "Currency converter widget with animated inputs and rates.", "edge": "currency-converter"}
+{"id": "uitripled:dashboard-baseui", "node": "page/dashboard", "variation": "dashboard-overview", "job": "Stock portfolio dashboard with status cards and table."}
+{"id": "uitripled:dashboard-shadcnui", "node": "page/dashboard", "variation": "dashboard-overview", "job": "Stock portfolio dashboard with status cards and table."}
+{"id": "uitripled:detail-task-card-baseui", "node": "section/detail", "variation": null, "job": "Task detail panel with assignee chips and editors.", "edge": "task-detail-panel"}
+{"id": "uitripled:detail-task-card-shadcnui", "node": "section/detail", "variation": null, "job": "Task detail panel with assignee chips and editors.", "edge": "task-detail-panel"}
+{"id": "uitripled:drag-to-confirm-slider-shadcnui", "node": "atom/button", "variation": "hold-confirm", "job": "Slider that confirms an action only when dragged fully."}
+{"id": "uitripled:draggable-list-shadcnui", "node": "component/list", "variation": "sortable", "job": "Reorderable list with drag and drop."}
+{"id": "uitripled:dynamic-spotlight-cta-shadcnui", "node": "section/cta", "variation": null, "job": "Cursor spotlight reveals gradient call-to-action text.", "edge": "spotlight-cta"}
+{"id": "uitripled:dynamic-tag-cloud-shadcnui", "node": "atom/badge", "variation": "tag-chip", "job": "Cluster of tags drifting and rearranging on hover."}
+{"id": "uitripled:ecommerce-highlight-card-baseui", "node": "component/card", "variation": "product-card", "job": "Product spotlight card with bundle selector and details."}
+{"id": "uitripled:ecommerce-highlight-card-shadcnui", "node": "component/card", "variation": "product-card", "job": "Product spotlight card with bundle selector and details."}
+{"id": "uitripled:elastic-switch-shadcnui", "node": "atom/switch", "variation": "standard", "job": "Toggle switch with elastic spring movement."}
+{"id": "uitripled:expanding-search-dock-shadcnui", "node": "component/search", "variation": "expanding-search", "job": "Search icon that expands into a full input."}
+{"id": "uitripled:fade-slide-modal-shadcnui", "node": "component/dialog", "variation": "modal-dialog", "job": "Modal with fading backdrop and sliding panel."}
+{"id": "uitripled:faq-accordion-block-baseui", "node": "section/faq", "variation": "accordion", "job": "FAQ questions that expand and collapse."}
+{"id": "uitripled:faq-accordion-block-shadcnui", "node": "section/faq", "variation": "accordion", "job": "FAQ questions that expand and collapse."}
+{"id": "uitripled:faq-section-baseui", "node": "section/faq", "variation": "accordion", "job": "FAQ section with expandable questions."}
+{"id": "uitripled:faq-section-shadcnui", "node": "section/faq", "variation": "accordion", "job": "FAQ section with expandable questions."}
+{"id": "uitripled:feature-cards-block-baseui", "node": "section/features", "variation": "card-grid", "job": "Grid of feature cards with icons and hover effects."}
+{"id": "uitripled:feature-cards-block-shadcnui", "node": "section/features", "variation": "card-grid", "job": "Grid of feature cards with icons and hover effects."}
+{"id": "uitripled:feature-comparison-block-baseui", "node": "section/comparison", "variation": "table", "job": "Table comparing plan features with checkmarks."}
+{"id": "uitripled:feature-comparison-block-shadcnui", "node": "section/comparison", "variation": "table", "job": "Table comparing plan features with checkmarks."}
+{"id": "uitripled:feature-grid-section-baseui", "node": "section/features", "variation": "icon-grid", "job": "Feature grid with staggered cards and icon reveals."}
+{"id": "uitripled:feature-grid-section-shadcnui", "node": "section/features", "variation": "icon-grid", "job": "Feature grid with staggered cards and icon reveals."}
+{"id": "uitripled:floating-chat-widget-shadcnui", "node": "section/chat", "variation": "widget", "job": "Floating chat bubble opening into a chat panel."}
+{"id": "uitripled:floating-gradient-shadcnui", "node": null, "variation": null, "job": "Decorative animated floating gradient background."}
+{"id": "uitripled:floating-info-panel-shadcnui", "node": "atom/tooltip", "variation": "standard", "job": "Info bubble that drifts and fades in and out."}
+{"id": "uitripled:floating-label-input-shadcnui", "node": "component/field", "variation": "floating-label", "job": "Input whose label floats above the field."}
+{"id": "uitripled:fluid-modal-transition-shadcnui", "node": "component/dialog", "variation": "modal-dialog", "job": "Modal expanding from the clicked trigger element."}
+{"id": "uitripled:folder-animation", "node": "atom/icon", "variation": "animated", "job": "Animated folder icon for file and loading states."}
+{"id": "uitripled:folder-animation-carbon", "node": "atom/icon", "variation": "animated", "job": "Animated folder icon for file and loading states."}
+{"id": "uitripled:footer-block-baseui", "node": "section/footer", "variation": "columns", "job": "Footer with link columns, newsletter, and social icons."}
+{"id": "uitripled:footer-block-shadcnui", "node": "section/footer", "variation": "columns", "job": "Footer with link columns, newsletter, and social icons."}
+{"id": "uitripled:gallery-grid-block-baseui", "node": "section/showcase", "variation": "grid", "job": "Filterable image gallery grid opening a lightbox."}
+{"id": "uitripled:gallery-grid-block-shadcnui", "node": "section/showcase", "variation": "grid", "job": "Filterable image gallery grid opening a lightbox."}
+{"id": "uitripled:glass-account-settings-card-shadcnui", "node": "section/settings-panel", "variation": null, "job": "Account card with subscription overview and billing actions.", "edge": "account-settings-card"}
+{"id": "uitripled:glass-blog-card-baseui", "node": "component/card", "variation": "article-card", "job": "Glass blog card with image zoom and author info."}
+{"id": "uitripled:glass-blog-card-shadcnui", "node": "component/card", "variation": "article-card", "job": "Glass blog card with image zoom and author info."}
+{"id": "uitripled:glass-checkout-card-baseui", "node": "section/pricing", "variation": "checkout", "job": "Checkout card with payment method and card fields."}
+{"id": "uitripled:glass-checkout-card-shadcnui", "node": "section/pricing", "variation": "checkout", "job": "Checkout card with payment method and card fields."}
+{"id": "uitripled:glass-forgot-password-card-shadcnui", "node": "section/auth", "variation": "forgot", "job": "Password reset screen with status messaging."}
+{"id": "uitripled:glass-order-summary-baseui", "node": "section/pricing", "variation": "checkout", "job": "Order summary with line items and checkout button."}
+{"id": "uitripled:glass-order-summary-shadcnui", "node": "section/pricing", "variation": "checkout", "job": "Order summary with line items and checkout button."}
+{"id": "uitripled:glass-profile-settings-card-shadcnui", "node": "section/settings-panel", "variation": "form-layout", "job": "Profile settings form with avatar upload and preferences."}
+{"id": "uitripled:glass-sign-in-card-shadcnui", "node": "section/auth", "variation": "sign-in", "job": "Sign-in panel with social buttons and email form."}
+{"id": "uitripled:glass-sign-up-card-shadcnui", "node": "section/auth", "variation": "sign-up", "job": "Sign-up flow with social providers and email fields."}
+{"id": "uitripled:glass-verification-code-card-shadcnui", "node": "section/auth", "variation": "2fa", "job": "Verification code entry with status messaging."}
+{"id": "uitripled:glass-wallet-card-baseui", "node": "component/card", "variation": "stat-card", "job": "Wallet card with balance, trend, and actions."}
+{"id": "uitripled:glass-wallet-card-shadcnui", "node": "component/card", "variation": "stat-card", "job": "Wallet card with balance, trend, and actions."}
+{"id": "uitripled:glassmorphism-cta-block-baseui", "node": "section/cta", "variation": "card", "job": "Glassy CTA card over a gradient background."}
+{"id": "uitripled:glassmorphism-cta-block-shadcnui", "node": "section/cta", "variation": "card", "job": "Glassy CTA card over a gradient background."}
+{"id": "uitripled:glassmorphism-hero-block-baseui", "node": "section/hero", "variation": "centered-text", "job": "Centered hero with glass effects and CTA buttons."}
+{"id": "uitripled:glassmorphism-hero-block-shadcnui", "node": "section/hero", "variation": "centered-text", "job": "Centered hero with glass effects and CTA buttons."}
+{"id": "uitripled:glassmorphism-launch-timeline-block-baseui", "node": "component/timeline", "variation": "steps-timeline", "job": "Launch roadmap milestones with paired CTA actions."}
+{"id": "uitripled:glassmorphism-launch-timeline-block-shadcnui", "node": "component/timeline", "variation": "steps-timeline", "job": "Launch roadmap milestones with paired CTA actions."}
+{"id": "uitripled:glassmorphism-listen-app-block-baseui", "node": "component/player", "variation": "audio-player", "job": "Music streaming block with player and curated highlights."}
+{"id": "uitripled:glassmorphism-listen-app-block-shadcnui", "node": "component/player", "variation": "audio-player", "job": "Music streaming block with player and curated highlights."}
+{"id": "uitripled:glassmorphism-logo-showcase-block-baseui", "node": "section/logos", "variation": "grid", "job": "Partner logo grid with floating motion and call-to-action."}
+{"id": "uitripled:glassmorphism-logo-showcase-block-shadcnui", "node": "section/logos", "variation": "grid", "job": "Partner logo grid with floating motion and call-to-action."}
+{"id": "uitripled:glassmorphism-minimal-metrics-block-baseui", "node": "section/kpis", "variation": "metric-cards", "job": "Metric cards with CTA banner on glass surfaces."}
+{"id": "uitripled:glassmorphism-minimal-metrics-block-shadcnui", "node": "section/kpis", "variation": "metric-cards", "job": "Metric cards with CTA banner on glass surfaces."}
+{"id": "uitripled:glassmorphism-portfolio-block-baseui", "node": "section/about", "variation": "story-photo", "job": "Portfolio spotlight with portrait, bio highlights and social links"}
+{"id": "uitripled:glassmorphism-portfolio-block-shadcnui", "node": "section/about", "variation": "story-photo", "job": "Portfolio spotlight with portrait, bio highlights and social links"}
+{"id": "uitripled:glassmorphism-pricing-block-baseui", "node": "section/pricing", "variation": "tier-cards", "job": "Glass pricing tiers with feature lists and hover lift"}
+{"id": "uitripled:glassmorphism-pricing-block-shadcnui", "node": "section/pricing", "variation": "tier-cards", "job": "Glass pricing tiers with feature lists and hover lift"}
+{"id": "uitripled:glassmorphism-product-update-block-baseui", "node": "section/blog", "variation": "changelog", "job": "Release cards with version badges, dates and GitHub banner"}
+{"id": "uitripled:glassmorphism-product-update-block-shadcnui", "node": "section/blog", "variation": "changelog", "job": "Release cards with version badges, dates and GitHub banner"}
+{"id": "uitripled:glassmorphism-statistics-card-baseui", "node": "component/card", "variation": "stat-card", "job": "Athlete statistics card with portrait and three metric tiles"}
+{"id": "uitripled:glassmorphism-statistics-card-shadcnui", "node": "component/card", "variation": "stat-card", "job": "Athlete statistics card with portrait and three metric tiles"}
+{"id": "uitripled:glassmorphism-testimonials-block-baseui", "node": "section/testimonials", "variation": "card-grid", "job": "Customer testimonial cards with star ratings"}
+{"id": "uitripled:glassmorphism-testimonials-block-shadcnui", "node": "section/testimonials", "variation": "card-grid", "job": "Customer testimonial cards with star ratings"}
+{"id": "uitripled:glowy-waves-hero-baseui", "node": "section/hero", "variation": "webgl", "job": "Canvas wave hero reacting to pointer, with headline and stats"}
+{"id": "uitripled:glowy-waves-hero-shadcnui", "node": "section/hero", "variation": "webgl", "job": "Canvas wave hero reacting to pointer, with headline and stats"}
+{"id": "uitripled:gradient-animation-shadcnui", "node": "atom/image", "variation": null, "job": "Animated multi-stop gradient backdrop panel", "edge": "gradient-backdrop"}
+{"id": "uitripled:heart-favorite-shadcnui", "node": "atom/icon", "variation": "animated", "job": "Heart icon that animates when favouriting"}
+{"id": "uitripled:hero-block-baseui", "node": "section/hero", "variation": "centered-text", "job": "Portfolio hero with avatar, staggered text and social links"}
+{"id": "uitripled:hero-block-shadcnui", "node": "section/hero", "variation": "centered-text", "job": "Portfolio hero with avatar, staggered text and social links"}
+{"id": "uitripled:hero-section-baseui", "node": "section/hero", "variation": "centered-text", "job": "Hero with staggered headline and button reveal"}
+{"id": "uitripled:hero-section-shadcnui", "node": "section/hero", "variation": "centered-text", "job": "Hero with staggered headline and button reveal"}
+{"id": "uitripled:holographic-wall-shadcnui", "node": "atom/image", "variation": null, "job": "Hieroglyph wall lit by a golden cursor light", "edge": "hieroglyph-wall"}
+{"id": "uitripled:hover-expand-card-baseui", "node": "component/card", "variation": null, "job": "Card that lifts and expands on hover", "edge": "hover-expand-card"}
+{"id": "uitripled:hover-expand-card-shadcnui", "node": "component/card", "variation": null, "job": "Card that lifts and expands on hover", "edge": "hover-expand-card"}
+{"id": "uitripled:image-slider-card-shadcnui", "node": "component/carousel", "variation": "slider-carousel", "job": "Accessible image slider card with arrows, dots and captions"}
+{"id": "uitripled:interactive-logs-table-baseui", "node": "component/table", "variation": "with-toolbar-filters", "job": "Log table with search, filter panel and expandable rows"}
+{"id": "uitripled:interactive-logs-table-shadcnui", "node": "component/table", "variation": "with-toolbar-filters", "job": "Log table with search, filter panel and expandable rows"}
+{"id": "uitripled:interactive-timeline-shadcnui", "node": "component/timeline", "variation": "vertical-timeline", "job": "Vertical timeline connecting entries with lines on scroll"}
+{"id": "uitripled:kanban-board-shadcnui", "node": "component/board", "variation": "kanban-drag-drop", "job": "Kanban columns with drag and drop task cards"}
+{"id": "uitripled:liquid-cursor-shadcnui", "node": "atom/image", "variation": null, "job": "Liquid colour trail following the pointer", "edge": "cursor-trail"}
+{"id": "uitripled:mac-searchbar-shadcnui", "node": "component/search", "variation": "with-suggestions", "job": "Mac-style search bar with animated suggestion dropdown"}
+{"id": "uitripled:magnetic-avatar-group-shadcnui", "node": "atom/avatar", "variation": "avatar-group", "job": "Stacked avatars spreading on hover to show names"}
+{"id": "uitripled:messenger-shadcnui", "node": "section/chat", "variation": "full-app", "job": "Two-pane messenger with conversation list and composer"}
+{"id": "uitripled:minimal-resume-baseui", "node": "page/article", "variation": null, "job": "Minimal resume document with contact, skills and experience", "edge": "resume-document"}
+{"id": "uitripled:minimal-resume-shadcnui", "node": "page/article", "variation": null, "job": "Minimal resume document with contact, skills and experience", "edge": "resume-document"}
+{"id": "uitripled:mood-gradient-button-shadcnui", "node": "atom/button", "variation": "primary", "job": "Button whose gradient shifts with the hover angle"}
+{"id": "uitripled:multiple-accounts-shadcnui", "node": "component/menu", "variation": "dropdown-menu", "job": "Account switcher dropdown listing signed-in accounts"}
+{"id": "uitripled:n8n-workflow-block-baseui", "node": "component/agent-parts", "variation": "workflow-graph", "job": "Draggable node graph canvas with animated connections"}
+{"id": "uitripled:n8n-workflow-block-shadcnui", "node": "component/agent-parts", "variation": "workflow-graph", "job": "Draggable node graph canvas with animated connections"}
+{"id": "uitripled:native-action-dropdown-baseui", "node": "component/menu", "variation": "dropdown-menu", "job": "Drill-down action menu with submenus and breadcrumb trail"}
+{"id": "uitripled:native-action-dropdown-shadcnui", "node": "component/menu", "variation": "dropdown-menu", "job": "Drill-down action menu with submenus and breadcrumb trail"}
+{"id": "uitripled:native-avatar-expand-baseui", "node": "atom/avatar", "variation": null, "job": "Avatar expanding to reveal the name on click", "edge": "expandable-avatar"}
+{"id": "uitripled:native-avatar-expand-shadcnui", "node": "atom/avatar", "variation": null, "job": "Avatar expanding to reveal the name on click", "edge": "expandable-avatar"}
+{"id": "uitripled:native-avatar-with-name-baseui", "node": "atom/avatar", "variation": null, "job": "Avatar revealing the name tooltip on hover", "edge": "avatar-name-tooltip"}
+{"id": "uitripled:native-avatar-with-name-shadcnui", "node": "atom/avatar", "variation": null, "job": "Avatar revealing the name tooltip on hover", "edge": "avatar-name-tooltip"}
+{"id": "uitripled:native-badge", "node": "atom/badge", "variation": "badge", "job": "Animated badge with glass, glow and outline variants"}
+{"id": "uitripled:native-badge-carbon", "node": "atom/badge", "variation": "badge", "job": "Animated badge with glass, glow and outline variants"}
+{"id": "uitripled:native-button-baseui", "node": "atom/button", "variation": "primary", "job": "Glass animated button supporting loading and link rendering"}
+{"id": "uitripled:native-button-shadcnui", "node": "atom/button", "variation": "primary", "job": "Glass animated button supporting loading and link rendering"}
+{"id": "uitripled:native-counter-up", "node": "component/stat", "variation": "counter", "job": "Number counts up with easing when scrolled into view"}
+{"id": "uitripled:native-counter-up-carbon", "node": "component/stat", "variation": "counter", "job": "Number counts up with easing when scrolled into view"}
+{"id": "uitripled:native-delete-baseui", "node": "atom/button", "variation": "hold-confirm", "job": "Delete button expanding into a confirmation action"}
+{"id": "uitripled:native-delete-shadcnui", "node": "atom/button", "variation": "hold-confirm", "job": "Delete button expanding into a confirmation action"}
+{"id": "uitripled:native-dialog-baseui", "node": "component/dialog", "variation": "modal-dialog", "job": "Glass modal dialog with blurred backdrop"}
+{"id": "uitripled:native-dialog-shadcnui", "node": "component/dialog", "variation": "modal-dialog", "job": "Glass modal dialog with blurred backdrop"}
+{"id": "uitripled:native-flip-text", "node": "atom/text", "variation": null, "job": "Words flip through with a 3D blur transition", "edge": "flip-text"}
+{"id": "uitripled:native-flip-text-baseui", "node": "atom/text", "variation": null, "job": "Words flip through with a 3D blur transition", "edge": "flip-text"}
+{"id": "uitripled:native-flip-text-carbon", "node": "atom/text", "variation": null, "job": "Words flip through with a 3D blur transition", "edge": "flip-text"}
+{"id": "uitripled:native-flip-text-shadcnui", "node": "atom/text", "variation": null, "job": "Words flip through with a 3D blur transition", "edge": "flip-text"}
+{"id": "uitripled:native-follow-cursor", "node": "atom/text", "variation": null, "job": "Label trailing the cursor with spring physics", "edge": "cursor-follow-label"}
+{"id": "uitripled:native-follow-cursor-carbon", "node": "atom/text", "variation": null, "job": "Label trailing the cursor with spring physics", "edge": "cursor-follow-label"}
+{"id": "uitripled:native-hover-card-baseui", "node": "component/popover", "variation": "hover-card", "job": "Avatar card expanding on hover to reveal profile details"}
+{"id": "uitripled:native-hover-card-shadcnui", "node": "component/popover", "variation": "hover-card", "job": "Avatar card expanding on hover to reveal profile details"}
+{"id": "uitripled:native-image-checkbox-baseui", "node": "atom/choice", "variation": "card", "job": "Image tile checkbox with grayscale and check indicator"}
+{"id": "uitripled:native-image-checkbox-carbon", "node": "atom/choice", "variation": "card", "job": "Image tile checkbox with grayscale and check indicator"}
+{"id": "uitripled:native-image-checkbox-shadcnui", "node": "atom/choice", "variation": "card", "job": "Image tile checkbox with grayscale and check indicator"}
+{"id": "uitripled:native-likes-counter-baseui", "node": "component/widget", "variation": null, "job": "Like button with count and popup list of likers", "edge": "likes-counter"}
+{"id": "uitripled:native-likes-counter-shadcnui", "node": "component/widget", "variation": null, "job": "Like button with count and popup list of likers", "edge": "likes-counter"}
+{"id": "uitripled:native-liquid-button-baseui", "node": "atom/button", "variation": "loading", "job": "Button filling with liquid progress while working"}
+{"id": "uitripled:native-liquid-button-shadcnui", "node": "atom/button", "variation": "loading", "job": "Button filling with liquid progress while working"}
+{"id": "uitripled:native-magnetic", "node": "atom/layout", "variation": null, "job": "Wrapper pulling its content toward the cursor", "edge": "magnetic-wrapper"}
+{"id": "uitripled:native-magnetic-baseui", "node": "atom/layout", "variation": null, "job": "Wrapper pulling its content toward the cursor", "edge": "magnetic-wrapper"}
+{"id": "uitripled:native-magnetic-carbon", "node": "atom/layout", "variation": null, "job": "Wrapper pulling its content toward the cursor", "edge": "magnetic-wrapper"}
+{"id": "uitripled:native-magnetic-shadcnui", "node": "atom/layout", "variation": null, "job": "Wrapper pulling its content toward the cursor", "edge": "magnetic-wrapper"}
+{"id": "uitripled:native-marquee-baseui", "node": "atom/layout", "variation": null, "job": "Infinite looping marquee that pauses on hover", "edge": "marquee-loop"}
+{"id": "uitripled:native-marquee-shadcnui", "node": "atom/layout", "variation": null, "job": "Infinite looping marquee that pauses on hover", "edge": "marquee-loop"}
+{"id": "uitripled:native-morphing-button-baseui", "node": "atom/button", "variation": null, "job": "Floating button morphing into a menu of actions", "edge": "morphing-fab"}
+{"id": "uitripled:native-morphing-button-carbon", "node": "atom/button", "variation": null, "job": "Floating button morphing into a menu of actions", "edge": "morphing-fab"}
+{"id": "uitripled:native-morphing-button-shadcnui", "node": "atom/button", "variation": null, "job": "Floating button morphing into a menu of actions", "edge": "morphing-fab"}
+{"id": "uitripled:native-nested-list-baseui", "node": "component/tree", "variation": "hierarchical", "job": "Nested list expanding and collapsing for navigation"}
+{"id": "uitripled:native-nested-list-shadcnui", "node": "component/tree", "variation": "hierarchical", "job": "Nested list expanding and collapsing for navigation"}
+{"id": "uitripled:native-notch-baseui", "node": "component/widget", "variation": null, "job": "Draggable notch pill expanding into a content panel", "edge": "dynamic-notch"}
+{"id": "uitripled:native-notch-shadcnui", "node": "component/widget", "variation": null, "job": "Draggable notch pill expanding into a content panel", "edge": "dynamic-notch"}
+{"id": "uitripled:native-notification-bell-baseui", "node": "component/inbox", "variation": "notification-center", "job": "Bell with unread badge and ringing animation"}
+{"id": "uitripled:native-notification-bell-carbon", "node": "component/inbox", "variation": "notification-center", "job": "Bell with unread badge and ringing animation"}
+{"id": "uitripled:native-notification-bell-shadcnui", "node": "component/inbox", "variation": "notification-center", "job": "Bell with unread badge and ringing animation"}
+{"id": "uitripled:native-profile-notch-baseui", "node": "component/widget", "variation": null, "job": "Expanding notch showing a user profile with actions", "edge": "profile-notch"}
+{"id": "uitripled:native-profile-notch-shadcnui", "node": "component/widget", "variation": null, "job": "Expanding notch showing a user profile with actions", "edge": "profile-notch"}
+{"id": "uitripled:native-start-now-baseui", "node": "atom/button", "variation": "primary", "job": "Start button with sparkle shine and loading states"}
+{"id": "uitripled:native-start-now-shadcnui", "node": "atom/button", "variation": "primary", "job": "Start button with sparkle shine and loading states"}
+{"id": "uitripled:native-tabs-baseui", "node": "component/tabs", "variation": "indicator", "job": "Tabs with a sliding background indicator"}
+{"id": "uitripled:native-tabs-carbon", "node": "component/tabs", "variation": "indicator", "job": "Tabs with a sliding background indicator"}
+{"id": "uitripled:native-tabs-shadcnui", "node": "component/tabs", "variation": "indicator", "job": "Tabs with a sliding background indicator"}
+{"id": "uitripled:native-tooltip-baseui", "node": "atom/tooltip", "variation": "standard", "job": "Glass tooltip with spring animation"}
+{"id": "uitripled:native-tooltip-shadcnui", "node": "atom/tooltip", "variation": "standard", "job": "Glass tooltip with spring animation"}
+{"id": "uitripled:native-typewriter", "node": "atom/text", "variation": null, "job": "Typewriter text with speed control and blinking cursor", "edge": "typewriter-text"}
+{"id": "uitripled:native-typewriter-baseui", "node": "atom/text", "variation": null, "job": "Typewriter text with speed control and blinking cursor", "edge": "typewriter-text"}
+{"id": "uitripled:native-typewriter-shadcnui", "node": "atom/text", "variation": null, "job": "Typewriter text with speed control and blinking cursor", "edge": "typewriter-text"}
+{"id": "uitripled:native-user-card-baseui", "node": "component/card", "variation": "profile-card", "job": "Compact user card with avatar, handle and action"}
+{"id": "uitripled:native-user-card-shadcnui", "node": "component/card", "variation": "profile-card", "job": "Compact user card with avatar, handle and action"}
+{"id": "uitripled:native-verified-badge-baseui", "node": "atom/badge", "variation": "icon-badge", "job": "Verified check badge in outline and shield styles"}
+{"id": "uitripled:native-verified-badge-shadcnui", "node": "atom/badge", "variation": "icon-badge", "job": "Verified check badge in outline and shield styles"}
+{"id": "uitripled:new-hero-section-baseui", "node": "section/hero", "variation": "centered-text", "job": "Hero with gradient background, animated stats and CTAs"}
+{"id": "uitripled:new-hero-section-shadcnui", "node": "section/hero", "variation": "centered-text", "job": "Hero with gradient background, animated stats and CTAs"}
+{"id": "uitripled:news-feed-shadcnui", "node": "section/blog", "variation": "news-grid", "job": "News cards filtered by category with search"}
+{"id": "uitripled:newsletter-signup-block-baseui", "node": "section/contact", "variation": "form", "job": "Newsletter signup form with idle and success states"}
+{"id": "uitripled:newsletter-signup-block-shadcnui", "node": "section/contact", "variation": "form", "job": "Newsletter signup form with idle and success states"}
+{"id": "uitripled:notification-center-shadcnui", "node": "component/inbox", "variation": "notification-center", "job": "Stacked notification banners with actions and dismiss"}
+{"id": "uitripled:notion-blog-page-baseui", "node": "page/article", "variation": "article-docs-style", "job": "Notion-style article with toggles and side notes"}
+{"id": "uitripled:notion-blog-page-shadcnui", "node": "page/article", "variation": "article-docs-style", "job": "Notion-style article with toggles and side notes"}
+{"id": "uitripled:our-services-section-baseui", "node": "section/features", "variation": "card-grid", "job": "Service cards with icons, badges and hover animation"}
+{"id": "uitripled:our-services-section-shadcnui", "node": "section/features", "variation": "card-grid", "job": "Service cards with icons, badges and hover animation"}
+{"id": "uitripled:password-input-shadcnui", "node": "component/field", "variation": "password", "job": "Password field with visibility toggle and strength meter"}
+{"id": "uitripled:preview-details-card-shadcnui", "node": "atom/link", "variation": "preview-hover", "job": "Link card revealing a detail preview on hover"}
+{"id": "uitripled:pricing-section-baseui", "node": "section/pricing", "variation": "tier-cards", "job": "Animated pricing tiers with feature lists"}
+{"id": "uitripled:pricing-section-shadcnui", "node": "section/pricing", "variation": "tier-cards", "job": "Animated pricing tiers with feature lists"}
+{"id": "uitripled:professional-resume-baseui", "node": "page/article", "variation": null, "job": "Formal resume document with experience, education and contact", "edge": "resume-document"}
+{"id": "uitripled:professional-resume-shadcnui", "node": "page/article", "variation": null, "job": "Formal resume document with experience, education and contact", "edge": "resume-document"}
+{"id": "uitripled:profile-page-shadcnui", "node": "page/record", "variation": "record-profile", "job": "User profile with cover, stats and posts feed"}
+{"id": "uitripled:project-card-baseui", "node": "component/card", "variation": null, "job": "Project card with image zoom, tags and repo links", "edge": "project-card"}
+{"id": "uitripled:project-card-shadcnui", "node": "component/card", "variation": null, "job": "Project card with image zoom, tags and repo links", "edge": "project-card"}
+{"id": "uitripled:projects-block-baseui", "node": "component/card", "variation": null, "job": "Animated project card with hover zoom and link buttons", "edge": "project-card"}
+{"id": "uitripled:projects-block-shadcnui", "node": "component/card", "variation": null, "job": "Animated project card with hover zoom and link buttons", "edge": "project-card"}
+{"id": "uitripled:reactive-background-grid-shadcnui", "node": "asset/shape", "variation": "pattern", "job": "Mouse-reactive dot grid background with click ripples"}
+{"id": "uitripled:resume-card-baseui", "node": "page/record", "variation": "record-profile", "job": "Animated resume document with avatar header and sections"}
+{"id": "uitripled:resume-card-shadcnui", "node": "page/record", "variation": "record-profile", "job": "Animated resume document with avatar header and sections"}
+{"id": "uitripled:ripple-click-button-shadcnui", "node": "atom/button", "variation": "primary", "job": "Button that shows a ripple where it is clicked"}
+{"id": "uitripled:scale-hover-button-shadcnui", "node": "atom/button", "variation": "primary", "job": "Button that scales up smoothly on hover"}
+{"id": "uitripled:scroll-progress-tracker-shadcnui", "node": "atom/progress", "variation": "scroll-progress", "job": "Fixed bar tracking scroll with section glow changes"}
+{"id": "uitripled:scroll-reveal-baseui", "node": "atom/layout", "variation": "scroll-reveal", "job": "Wraps a section so it animates in on scroll"}
+{"id": "uitripled:scroll-reveal-shadcnui", "node": "atom/layout", "variation": "scroll-reveal", "job": "Wraps a section so it animates in on scroll"}
+{"id": "uitripled:services-grid-block-baseui", "node": "section/features", "variation": "icon-grid", "job": "Services grid of icon cards with hover effects"}
+{"id": "uitripled:services-grid-block-shadcnui", "node": "section/features", "variation": "icon-grid", "job": "Services grid of icon cards with hover effects"}
+{"id": "uitripled:shimmer-button-shadcnui", "node": "atom/button", "variation": "primary", "job": "Button with a continuous shimmer sweeping across it"}
+{"id": "uitripled:simple-calendar-shadcnui", "node": "component/calendar", "variation": "month-calendar", "job": "Month grid for picking a single date"}
+{"id": "uitripled:smart-hover-card-shadcnui", "node": "component/card", "variation": null, "job": "Card revealing its content from the cursor entry side", "edge": "directional-reveal-card"}
+{"id": "uitripled:social-login-button-baseui", "node": "atom/button", "variation": "social-brand", "job": "Animated sign-in buttons for GitHub, Google, X, more"}
+{"id": "uitripled:social-login-button-shadcnui", "node": "atom/button", "variation": "social-brand", "job": "Animated sign-in buttons for GitHub, Google, X, more"}
+{"id": "uitripled:spotlight-section-shadcnui", "node": "atom/layout", "variation": null, "job": "Container whose background spotlight follows the cursor", "edge": "spotlight-container"}
+{"id": "uitripled:stacked-card-carousel-shadcnui", "node": "component/carousel", "variation": "cards-carousel", "job": "Three stacked cards that tilt and shift on hover"}
+{"id": "uitripled:staggered-dropdown-shadcnui", "node": "component/menu", "variation": "dropdown-menu", "job": "Dropdown menu with staggered item animations"}
+{"id": "uitripled:staggered-hero-shadcnui", "node": "section/hero", "variation": "text-only", "job": "Centered hero with staggered animated headline lines"}
+{"id": "uitripled:standard-resume-baseui", "node": "page/record", "variation": "record-profile", "job": "Standard resume document with sidebar and sections"}
+{"id": "uitripled:standard-resume-shadcnui", "node": "page/record", "variation": "record-profile", "job": "Standard resume document with sidebar and sections"}
+{"id": "uitripled:stats-counter-block-baseui", "node": "section/stats", "variation": "counter", "job": "Stat band with counters that count up in view"}
+{"id": "uitripled:stats-counter-block-shadcnui", "node": "section/stats", "variation": "counter", "job": "Stat band with counters that count up in view"}
+{"id": "uitripled:stats-section-baseui", "node": "section/stats", "variation": "grid", "job": "Stat cards in a grid with icons and context"}
+{"id": "uitripled:stats-section-shadcnui", "node": "section/stats", "variation": "grid", "job": "Stat cards in a grid with icons and context"}
+{"id": "uitripled:stocks-dashboard-shadcnui", "node": "page/dashboard", "variation": "dashboard-overview", "job": "Stock portfolio screen with cards, table, detail modal"}
+{"id": "uitripled:synced-lyric-captions-shadcnui", "node": "component/player", "variation": "audio-player", "job": "Audio player with timed lyrics, play, skip, volume"}
+{"id": "uitripled:team-section-block-baseui", "node": "section/team", "variation": "card-grid", "job": "Team member cards with avatars, roles, social links"}
+{"id": "uitripled:team-section-block-shadcnui", "node": "section/team", "variation": "card-grid", "job": "Team member cards with avatars, roles, social links"}
+{"id": "uitripled:testimonial-section-baseui", "node": "section/testimonials", "variation": "carousel", "job": "Testimonial carousel with prev and next controls"}
+{"id": "uitripled:testimonial-section-shadcnui", "node": "section/testimonials", "variation": "carousel", "job": "Testimonial carousel with prev and next controls"}
+{"id": "uitripled:testimonials-block-baseui", "node": "section/testimonials", "variation": "card-grid", "job": "Testimonial grid with star ratings and hover"}
+{"id": "uitripled:testimonials-block-shadcnui", "node": "section/testimonials", "variation": "card-grid", "job": "Testimonial grid with star ratings and hover"}
+{"id": "uitripled:theater-ticket-baseui", "node": "component/card", "variation": null, "job": "Theater ticket card with rip effect and barcode", "edge": "theater-ticket"}
+{"id": "uitripled:theater-ticket-shadcnui", "node": "component/card", "variation": null, "job": "Theater ticket card with rip effect and barcode", "edge": "theater-ticket"}
+{"id": "uitripled:timeline-block-baseui", "node": "component/timeline", "variation": "vertical-timeline", "job": "Vertical timeline with alternating cards and progress line"}
+{"id": "uitripled:timeline-block-shadcnui", "node": "component/timeline", "variation": "vertical-timeline", "job": "Vertical timeline with alternating cards and progress line"}
+{"id": "uitripled:toast-notification-shadcnui", "node": "component/toast", "variation": "basic-toast", "job": "Toast popup confirming changes were saved"}
+{"id": "uitripled:volume-component-shadcnui", "node": "atom/slider", "variation": "slider", "job": "Draggable volume slider with animated fill and handle"}
+{"id": "uitripled:weather-dashboard-shadcnui", "node": "page/dashboard", "variation": "dashboard-analytics", "job": "Weather screen with metrics, hourly chart, outlook"}
+{"id": "uitripled:web-performance-page-shadcnui", "node": "page/dashboard", "variation": "dashboard-analytics", "job": "Page of web vitals and performance metrics"}
+{"id": "uitripled:wizard-form-shadcnui", "node": "component/form", "variation": "multi-step", "job": "Multi-step account setup wizard with validation and progress"}

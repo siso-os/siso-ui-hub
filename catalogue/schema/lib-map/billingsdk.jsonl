@@ -1,0 +1,34 @@
+{"id": "billingsdk:banner", "node": "section/announcement", "variation": "dismissible", "job": "Show dismissible top banner with optional action"}
+{"id": "billingsdk:billing-screen", "node": "page/dashboard", "variation": "dashboard-overview", "job": "Full billing screen: plan, credits, card"}
+{"id": "billingsdk:billing-settings", "node": "section/settings-panel", "variation": "sections", "job": "Tabbed billing settings: methods, invoices, limits"}
+{"id": "billingsdk:billing-settings-2", "node": "section/settings-panel", "variation": "form-layout", "job": "Billing settings form with toggles and validation"}
+{"id": "billingsdk:cancel-subscription-card", "node": "component/card", "variation": null, "job": "Two-step card flow to cancel subscription", "edge": "cancel-subscription-card"}
+{"id": "billingsdk:cancel-subscription-dialog", "node": "component/dialog", "variation": "confirm-alert", "job": "Confirm subscription cancellation in warning dialog"}
+{"id": "billingsdk:detailed-usage-table", "node": "component/table", "variation": "data-table", "job": "Table of resource usage against plan limits"}
+{"id": "billingsdk:hello-world", "node": "atom/text", "variation": "heading", "job": "Render hello world heading and subtitle"}
+{"id": "billingsdk:index", "node": null, "variation": null, "job": "Provide shared config for BillingSDK components"}
+{"id": "billingsdk:invoice-history", "node": "component/table", "variation": "standard-table", "job": "Read-only invoice table with per-row downloads"}
+{"id": "billingsdk:limited-offer-dialog", "node": "component/dialog", "variation": "modal-dialog", "job": "Promote limited-time offer with claim action"}
+{"id": "billingsdk:payment-card", "node": "section/pricing", "variation": "checkout", "job": "Checkout: order summary and card payment form"}
+{"id": "billingsdk:payment-details", "node": "component/form", "variation": null, "job": "Payment form with card and billing address", "edge": "payment-form"}
+{"id": "billingsdk:payment-details-two", "node": "component/form", "variation": null, "job": "Validated payment form with card and address", "edge": "payment-form"}
+{"id": "billingsdk:payment-failure", "node": "component/empty", "variation": "error-state", "job": "Payment failure state with retry and support"}
+{"id": "billingsdk:payment-method-selector", "node": "atom/choice", "variation": "card", "job": "Pick payment method and enter its details"}
+{"id": "billingsdk:pricing-table-eight", "node": "section/pricing", "variation": "tier-cards", "job": "Show modern tiered pricing plan cards"}
+{"id": "billingsdk:pricing-table-five", "node": "section/pricing", "variation": "tier-cards", "job": "Show tiered plans with contact-us option"}
+{"id": "billingsdk:pricing-table-four", "node": "section/pricing", "variation": "tier-cards", "job": "Show gradient-styled tiered pricing plans"}
+{"id": "billingsdk:pricing-table-one", "node": "section/pricing", "variation": "tier-cards", "job": "Show tiered plans with monthly yearly switch"}
+{"id": "billingsdk:pricing-table-seven", "node": "section/pricing", "variation": "tier-cards", "job": "Show tiered plans with contact-us option"}
+{"id": "billingsdk:pricing-table-six", "node": "section/pricing", "variation": "tier-cards", "job": "Show tiered plans with contact-us option"}
+{"id": "billingsdk:pricing-table-three", "node": "section/pricing", "variation": "tier-cards", "job": "Show pricing plan cards listing features"}
+{"id": "billingsdk:pricing-table-two", "node": "section/pricing", "variation": "comparison-table", "job": "Compare plan features in a pricing table"}
+{"id": "billingsdk:proration-preview", "node": "section/pricing", "variation": null, "job": "Preview prorated charges when changing plans", "edge": "proration-preview"}
+{"id": "billingsdk:subscription-management", "node": "section/pricing", "variation": "single-plan", "job": "Manage current subscription with change and cancel"}
+{"id": "billingsdk:trial-expiry-card", "node": "component/card", "variation": null, "job": "Countdown card for trial expiry with upgrade CTA", "edge": "trial-expiry-card"}
+{"id": "billingsdk:upcoming-charges", "node": "component/list", "variation": "standard-list", "job": "List upcoming charges with total and breakdown"}
+{"id": "billingsdk:update-plan-card", "node": "section/pricing", "variation": "billing-toggle", "job": "Pick new plan with billing period toggle"}
+{"id": "billingsdk:update-plan-dialog", "node": "component/dialog", "variation": "modal-dialog", "job": "Choose and confirm a new plan in dialog"}
+{"id": "billingsdk:usage-based-pricing", "node": "section/pricing", "variation": "usage-slider", "job": "Slide usage to compute usage-based pricing"}
+{"id": "billingsdk:usage-meter-circle", "node": "atom/progress", "variation": "circular", "job": "Show resource usage as a circular meter"}
+{"id": "billingsdk:usage-meter-linear", "node": "atom/progress", "variation": "linear", "job": "Show resource usage as a linear meter"}
+{"id": "billingsdk:usage-table", "node": "component/table", "variation": "data-table", "job": "Table of resource usage with export action"}

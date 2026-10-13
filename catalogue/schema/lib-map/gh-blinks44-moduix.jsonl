@@ -1,0 +1,170 @@
+{"id": "gh-blinks44-moduix:a11y-labels", "node": null, "variation": null, "job": "Internal default accessible labels for components with text fallbacks"}
+{"id": "gh-blinks44-moduix:accordion", "node": "component/accordion", "variation": "standard-accordion", "job": "Stacked panels that expand to reveal one section"}
+{"id": "gh-blinks44-moduix:alert", "node": "component/alert", "variation": "inline-alert", "job": "Inline message banner for info, success, warning, error"}
+{"id": "gh-blinks44-moduix:angle-slider", "node": "atom/slider", "variation": "dial-knob", "job": "Circular dial for picking an angle by dragging"}
+{"id": "gh-blinks44-moduix:aspect-ratio", "node": "atom/layout", "variation": null, "job": "Hold content at a fixed width-to-height ratio", "edge": "aspect-ratio-box"}
+{"id": "gh-blinks44-moduix:avatar", "node": "atom/avatar", "variation": "standard", "job": "Show a person or org as image, initials, fallback"}
+{"id": "gh-blinks44-moduix:badge", "node": "atom/badge", "variation": "badge", "job": "Small label or count attached to something"}
+{"id": "gh-blinks44-moduix:bleed", "node": "atom/layout", "variation": null, "job": "Let content escape the container's horizontal padding", "edge": "bleed-out-content"}
+{"id": "gh-blinks44-moduix:breadcrumbs", "node": "component/breadcrumb", "variation": "text-breadcrumb", "job": "Trail of links showing where you are in a hierarchy"}
+{"id": "gh-blinks44-moduix:button", "node": "atom/button", "variation": "primary", "job": "Clickable control that triggers an action"}
+{"id": "gh-blinks44-moduix:card", "node": "component/card", "variation": "standard-card", "job": "Bordered surface grouping related content with header and body"}
+{"id": "gh-blinks44-moduix:carousel", "node": "component/carousel", "variation": "slider-carousel", "job": "Slide through items one at a time with controls"}
+{"id": "gh-blinks44-moduix:chart", "node": "component/chart", "variation": null, "job": "Composable chart frame: plot area, header, axes, tooltip", "edge": "chart-frame"}
+{"id": "gh-blinks44-moduix:checkbox", "node": "atom/choice", "variation": "checkbox", "job": "Toggle a single boolean option on or off"}
+{"id": "gh-blinks44-moduix:clipboard", "node": "atom/button", "variation": "copy-share", "job": "Copy a value to the clipboard with copied feedback"}
+{"id": "gh-blinks44-moduix:close-button", "node": "atom/button", "variation": "icon-button", "job": "Icon button that dismisses the surface it sits on"}
+{"id": "gh-blinks44-moduix:cn", "node": null, "variation": null, "job": "Internal utility merging conditional and conflicting Tailwind class names"}
+{"id": "gh-blinks44-moduix:collapsible", "node": "component/accordion", "variation": "collapsible", "job": "Show or hide one section of content on demand"}
+{"id": "gh-blinks44-moduix:color-picker", "node": "component/picker", "variation": "color-picker", "job": "Pick a colour from a wheel, swatch, or sliders"}
+{"id": "gh-blinks44-moduix:combobox", "node": "component/select", "variation": "combobox", "job": "Text field with a filterable list of options"}
+{"id": "gh-blinks44-moduix:command-palette", "node": "component/command", "variation": "command-palette", "job": "Searchable overlay of commands with keyboard shortcuts"}
+{"id": "gh-blinks44-moduix:container", "node": "atom/layout", "variation": null, "job": "Centre page content and cap its maximum width", "edge": "content-container"}
+{"id": "gh-blinks44-moduix:core", "node": null, "variation": null, "job": "Runtime style tokens and utilities every registry component needs"}
+{"id": "gh-blinks44-moduix:date-input", "node": "component/picker", "variation": "segmented-input", "job": "Segmented fields for typing day, month, and year"}
+{"id": "gh-blinks44-moduix:date-picker", "node": "component/picker", "variation": "date-picker", "job": "Calendar popup for choosing a single date"}
+{"id": "gh-blinks44-moduix:default-values", "node": null, "variation": null, "job": "Internal helpers forwarding default values to native form controls"}
+{"id": "gh-blinks44-moduix:dialog", "node": "component/dialog", "variation": "modal-dialog", "job": "Modal window that blocks the page behind it"}
+{"id": "gh-blinks44-moduix:drawer", "node": "component/sheet", "variation": "bottom-sheet", "job": "Panel that slides in from the screen edge"}
+{"id": "gh-blinks44-moduix:editable", "node": "atom/text-input", "variation": "text-input", "job": "Text that becomes an input when activated"}
+{"id": "gh-blinks44-moduix:empty", "node": "component/empty", "variation": "icon-text", "job": "Placeholder surface for no-results, no-data, first-run screens"}
+{"id": "gh-blinks44-moduix:event-handlers", "node": null, "variation": null, "job": "Internal invocation of native callback and bound event props"}
+{"id": "gh-blinks44-moduix:field", "node": "component/field", "variation": "text-input", "job": "Label, control, helper, and error around a form value"}
+{"id": "gh-blinks44-moduix:fieldset", "node": "component/field", "variation": null, "job": "Group related form fields under one legend", "edge": "fieldset-group"}
+{"id": "gh-blinks44-moduix:file-upload", "node": "component/upload", "variation": "dropzone", "job": "Dropzone for choosing and uploading files"}
+{"id": "gh-blinks44-moduix:floating-panel", "node": "component/sheet", "variation": null, "job": "Draggable, resizable panel floating above the page", "edge": "draggable-floating-panel"}
+{"id": "gh-blinks44-moduix:heading", "node": "atom/text", "variation": "heading", "job": "Semantic heading text at a chosen level"}
+{"id": "gh-blinks44-moduix:highlight", "node": "atom/text", "variation": null, "job": "Mark the query matches inside a string", "edge": "match-highlight"}
+{"id": "gh-blinks44-moduix:hover-card", "node": "component/popover", "variation": "hover-card", "job": "Rich preview card revealed on hover or focus"}
+{"id": "gh-blinks44-moduix:icons", "node": null, "variation": null, "job": "Internal icon set the registry components render themselves"}
+{"id": "gh-blinks44-moduix:image", "node": "atom/image", "variation": null, "job": "Responsive image with sources, fallback, and lazy loading", "edge": "responsive-image"}
+{"id": "gh-blinks44-moduix:image-cropper", "node": "atom/image", "variation": null, "job": "Crop and zoom an image inside a viewport", "edge": "image-cropper"}
+{"id": "gh-blinks44-moduix:input", "node": "atom/text-input", "variation": "text-input", "job": "Single-line text field for typing a value"}
+{"id": "gh-blinks44-moduix:input-group", "node": "component/field", "variation": "with-addon", "job": "Input with addons, buttons, and a clear trigger"}
+{"id": "gh-blinks44-moduix:json-tree-view", "node": "component/tree", "variation": "standard-tree", "job": "Collapsible tree for inspecting nested JSON data"}
+{"id": "gh-blinks44-moduix:kbd", "node": "atom/text", "variation": "keyboard", "job": "Show a keyboard key or shortcut combination"}
+{"id": "gh-blinks44-moduix:lightbox", "node": "component/lightbox", "variation": "standard-lightbox", "job": "Fullscreen media overlay opened from a trigger"}
+{"id": "gh-blinks44-moduix:list", "node": "component/list", "variation": "standard-list", "job": "Vertical list of items, optionally with dividers"}
+{"id": "gh-blinks44-moduix:listbox", "node": "component/select", "variation": "standard-select", "job": "Selectable list of options with keyboard support"}
+{"id": "gh-blinks44-moduix:marquee", "node": "atom/layout", "variation": "horizontal-scroll", "job": "Continuously scrolling strip of repeated content"}
+{"id": "gh-blinks44-moduix:menu", "node": "component/menu", "variation": "dropdown-menu", "job": "Dropdown list of actions anchored to a trigger"}
+{"id": "gh-blinks44-moduix:native-select", "node": "component/select", "variation": "native-select", "job": "Styled native select element for choosing an option"}
+{"id": "gh-blinks44-moduix:navigation-menu", "node": "component/menu", "variation": "navigation-menu", "job": "Site navigation with expandable dropdown panels"}
+{"id": "gh-blinks44-moduix:number-input", "node": "atom/text-input", "variation": "stepper", "job": "Numeric field with increment, decrement, and scrubber"}
+{"id": "gh-blinks44-moduix:overlay-portal", "node": null, "variation": null, "job": "Internal portal that renders overlay components outside the tree"}
+{"id": "gh-blinks44-moduix:pagination", "node": "component/pagination", "variation": "numbered-pages", "job": "Numbered page links for moving through results"}
+{"id": "gh-blinks44-moduix:password-input", "node": "atom/text-input", "variation": "password", "job": "Text field that hides and reveals a password"}
+{"id": "gh-blinks44-moduix:pin-input", "node": "atom/text-input", "variation": "otp", "job": "Separate boxes for entering a one-time code"}
+{"id": "gh-blinks44-moduix:popover", "node": "component/popover", "variation": "standard-popover", "job": "Anchored floating panel opened from a trigger"}
+{"id": "gh-blinks44-moduix:progress-circular", "node": "atom/progress", "variation": "circular", "job": "Ring that shows completion percentage"}
+{"id": "gh-blinks44-moduix:progress-linear", "node": "atom/progress", "variation": "linear", "job": "Bar that shows completion percentage with value text"}
+{"id": "gh-blinks44-moduix:qr-code", "node": "atom/image", "variation": null, "job": "Render a scannable QR code with frame and overlay", "edge": "qr-code-display"}
+{"id": "gh-blinks44-moduix:radio-group", "node": "atom/choice", "variation": "radio", "job": "Choose exactly one option from a visible set"}
+{"id": "gh-blinks44-moduix:rating-group", "node": "atom/slider", "variation": "rating", "job": "Pick a star rating with keyboard support"}
+{"id": "gh-blinks44-moduix:react-app-header", "node": "section/top-bar", "variation": "search", "job": "App header with navigation, command search, account menu"}
+{"id": "gh-blinks44-moduix:react-autoplay-gallery", "node": "component/carousel", "variation": "autoplay-carousel", "job": "Auto-advancing image carousel with arrows and indicators"}
+{"id": "gh-blinks44-moduix:react-data-table", "node": "component/table", "variation": "data-table", "job": "Payments table with search, sorting, selection, pagination"}
+{"id": "gh-blinks44-moduix:react-expandable-avatar-group", "node": "atom/avatar", "variation": "avatar-group", "job": "Overlapping avatars that expand on hover with tooltips"}
+{"id": "gh-blinks44-moduix:react-file-upload-manager", "node": "component/upload", "variation": "dropzone", "job": "Drag-and-drop file picker with validation and previews"}
+{"id": "gh-blinks44-moduix:react-forgot-password", "node": "section/auth", "variation": "forgot", "job": "Email form requesting a password reset link"}
+{"id": "gh-blinks44-moduix:react-login-simple", "node": "section/auth", "variation": "sign-in", "job": "Sign-in form with email, password, remember me"}
+{"id": "gh-blinks44-moduix:react-parallax-card", "node": "component/card", "variation": "spotlight", "job": "Image card that tilts toward the pointer"}
+{"id": "gh-blinks44-moduix:react-reset-password", "node": "section/auth", "variation": "forgot", "job": "Set a new password with a confirmation field"}
+{"id": "gh-blinks44-moduix:react-sidebar-dashboard", "node": "section/shell", "variation": "shell-rail", "job": "Dashboard shell with resizable sidebar and workspace menu"}
+{"id": "gh-blinks44-moduix:react-sign-up", "node": "section/auth", "variation": "sign-up", "job": "Registration form with email, password, and terms"}
+{"id": "gh-blinks44-moduix:react-tailwind-app-header", "node": "section/top-bar", "variation": "search", "job": "App header with navigation, command search, account menu"}
+{"id": "gh-blinks44-moduix:react-tailwind-autoplay-gallery", "node": "component/carousel", "variation": "autoplay-carousel", "job": "Auto-advancing image carousel with arrows and indicators"}
+{"id": "gh-blinks44-moduix:react-tailwind-data-table", "node": "component/table", "variation": "data-table", "job": "Payments table with search, sorting, selection, pagination"}
+{"id": "gh-blinks44-moduix:react-tailwind-expandable-avatar-group", "node": "atom/avatar", "variation": "avatar-group", "job": "Overlapping avatars that expand on hover with tooltips"}
+{"id": "gh-blinks44-moduix:react-tailwind-file-upload-manager", "node": "component/upload", "variation": "dropzone", "job": "Drag-and-drop file picker with validation and previews"}
+{"id": "gh-blinks44-moduix:react-tailwind-forgot-password", "node": "section/auth", "variation": "forgot", "job": "Email form requesting a password reset link"}
+{"id": "gh-blinks44-moduix:react-tailwind-login-simple", "node": "section/auth", "variation": "sign-in", "job": "Sign-in form with email, password, remember me"}
+{"id": "gh-blinks44-moduix:react-tailwind-parallax-card", "node": "component/card", "variation": "spotlight", "job": "Image card that tilts toward the pointer"}
+{"id": "gh-blinks44-moduix:react-tailwind-reset-password", "node": "section/auth", "variation": "forgot", "job": "Set a new password with a confirmation field"}
+{"id": "gh-blinks44-moduix:react-tailwind-sidebar-dashboard", "node": "section/shell", "variation": "shell-rail", "job": "Dashboard shell with resizable sidebar and workspace menu"}
+{"id": "gh-blinks44-moduix:react-tailwind-sign-up", "node": "section/auth", "variation": "sign-up", "job": "Registration form with email, password, and terms"}
+{"id": "gh-blinks44-moduix:react-tailwind-verification-code", "node": "section/auth", "variation": "2fa", "job": "Six-digit code entry with paste and keyboard support"}
+{"id": "gh-blinks44-moduix:react-verification-code", "node": "section/auth", "variation": "2fa", "job": "Six-digit code entry with paste and keyboard support"}
+{"id": "gh-blinks44-moduix:reset", "node": null, "variation": null, "job": "Optional global CSS reset for projects using moduix styles"}
+{"id": "gh-blinks44-moduix:scroll-area", "node": "atom/layout", "variation": "scroll-area", "job": "Custom scrollbar container for overflowing content"}
+{"id": "gh-blinks44-moduix:segment-group", "node": "component/tabs", "variation": "pill-segmented", "job": "Segmented control for switching between views"}
+{"id": "gh-blinks44-moduix:select", "node": "component/select", "variation": "standard-select", "job": "Choose one option from a dropdown list"}
+{"id": "gh-blinks44-moduix:separator", "node": "atom/layout", "variation": null, "job": "Divider line separating content regions", "edge": "divider"}
+{"id": "gh-blinks44-moduix:sidebar", "node": "section/sidebar", "variation": "collapsible", "job": "Collapsible side navigation with panel and inset content"}
+{"id": "gh-blinks44-moduix:signature-pad", "node": "component/field", "variation": null, "job": "Draw a handwritten signature on a canvas field", "edge": "signature-capture"}
+{"id": "gh-blinks44-moduix:simple-grid", "node": "atom/layout", "variation": null, "job": "Responsive grid laying children out in even columns", "edge": "responsive-grid"}
+{"id": "gh-blinks44-moduix:skeleton", "node": "atom/loader", "variation": "skeleton", "job": "Shimmering placeholder standing in for loading content"}
+{"id": "gh-blinks44-moduix:slider", "node": "atom/slider", "variation": "slider", "job": "Drag a handle to pick a value in a range"}
+{"id": "gh-blinks44-moduix:solid-app-header", "node": "section/top-bar", "variation": "search", "job": "App header with navigation, command search, account menu"}
+{"id": "gh-blinks44-moduix:solid-autoplay-gallery", "node": "component/carousel", "variation": "autoplay-carousel", "job": "Auto-advancing image carousel with arrows and indicators"}
+{"id": "gh-blinks44-moduix:solid-data-table", "node": "component/table", "variation": "data-table", "job": "Payments table with search, sorting, selection, pagination"}
+{"id": "gh-blinks44-moduix:solid-expandable-avatar-group", "node": "atom/avatar", "variation": "avatar-group", "job": "Overlapping avatars that expand on hover with tooltips"}
+{"id": "gh-blinks44-moduix:solid-file-upload-manager", "node": "component/upload", "variation": "dropzone", "job": "Drag-and-drop file picker with validation and previews"}
+{"id": "gh-blinks44-moduix:solid-forgot-password", "node": "section/auth", "variation": "forgot", "job": "Email form requesting a password reset link"}
+{"id": "gh-blinks44-moduix:solid-login-simple", "node": "section/auth", "variation": "sign-in", "job": "Sign-in form with email, password, remember me"}
+{"id": "gh-blinks44-moduix:solid-parallax-card", "node": "component/card", "variation": "spotlight", "job": "Image card that tilts toward the pointer"}
+{"id": "gh-blinks44-moduix:solid-reset-password", "node": "section/auth", "variation": "forgot", "job": "Set a new password with a confirmation field"}
+{"id": "gh-blinks44-moduix:solid-sidebar-dashboard", "node": "section/shell", "variation": "shell-rail", "job": "Dashboard shell with resizable sidebar and workspace menu"}
+{"id": "gh-blinks44-moduix:solid-sign-up", "node": "section/auth", "variation": "sign-up", "job": "Registration form with email, password, and terms"}
+{"id": "gh-blinks44-moduix:solid-tailwind-app-header", "node": "section/top-bar", "variation": "search", "job": "App header with navigation, command search, account menu"}
+{"id": "gh-blinks44-moduix:solid-tailwind-autoplay-gallery", "node": "component/carousel", "variation": "autoplay-carousel", "job": "Auto-advancing image carousel with arrows and indicators"}
+{"id": "gh-blinks44-moduix:solid-tailwind-data-table", "node": "component/table", "variation": "data-table", "job": "Payments table with search, sorting, selection, pagination"}
+{"id": "gh-blinks44-moduix:solid-tailwind-expandable-avatar-group", "node": "atom/avatar", "variation": "avatar-group", "job": "Overlapping avatars that expand on hover with tooltips"}
+{"id": "gh-blinks44-moduix:solid-tailwind-file-upload-manager", "node": "component/upload", "variation": "dropzone", "job": "Drag-and-drop file picker with validation and previews"}
+{"id": "gh-blinks44-moduix:solid-tailwind-forgot-password", "node": "section/auth", "variation": "forgot", "job": "Email form requesting a password reset link"}
+{"id": "gh-blinks44-moduix:solid-tailwind-login-simple", "node": "section/auth", "variation": "sign-in", "job": "Sign-in form with email, password, remember me"}
+{"id": "gh-blinks44-moduix:solid-tailwind-parallax-card", "node": "component/card", "variation": "spotlight", "job": "Image card that tilts toward the pointer"}
+{"id": "gh-blinks44-moduix:solid-tailwind-reset-password", "node": "section/auth", "variation": "forgot", "job": "Set a new password with a confirmation field"}
+{"id": "gh-blinks44-moduix:solid-tailwind-sidebar-dashboard", "node": "section/shell", "variation": "shell-rail", "job": "Dashboard shell with resizable sidebar and workspace menu"}
+{"id": "gh-blinks44-moduix:solid-tailwind-sign-up", "node": "section/auth", "variation": "sign-up", "job": "Registration form with email, password, and terms"}
+{"id": "gh-blinks44-moduix:solid-tailwind-verification-code", "node": "section/auth", "variation": "2fa", "job": "Six-digit code entry with paste and keyboard support"}
+{"id": "gh-blinks44-moduix:solid-verification-code", "node": "section/auth", "variation": "2fa", "job": "Six-digit code entry with paste and keyboard support"}
+{"id": "gh-blinks44-moduix:spinner", "node": "atom/loader", "variation": "spinner", "job": "Spinning indicator showing that something is loading"}
+{"id": "gh-blinks44-moduix:split-button", "node": "atom/button", "variation": "group", "job": "Primary action button with attached menu of related actions"}
+{"id": "gh-blinks44-moduix:splitter", "node": "atom/layout", "variation": null, "job": "Drag a divider to resize adjacent layout panels", "edge": "resizable-split-panels"}
+{"id": "gh-blinks44-moduix:stack", "node": "atom/layout", "variation": null, "job": "Lay children out in a column or row with spacing", "edge": "stack-layout"}
+{"id": "gh-blinks44-moduix:steps", "node": "component/steps", "variation": "horizontal-stepper", "job": "Guide a user through a numbered sequence of steps"}
+{"id": "gh-blinks44-moduix:swap", "node": "atom/icon", "variation": "animated", "job": "Animate between two icon or label states"}
+{"id": "gh-blinks44-moduix:switch", "node": "atom/switch", "variation": "standard", "job": "Flip a setting on or off with a sliding thumb"}
+{"id": "gh-blinks44-moduix:table", "node": "component/table", "variation": "standard-table", "job": "Present data in rows and columns with caption"}
+{"id": "gh-blinks44-moduix:tabs", "node": "component/tabs", "variation": "indicator", "job": "Switch between content panels with tab triggers"}
+{"id": "gh-blinks44-moduix:tag", "node": "atom/badge", "variation": "tag-chip", "job": "Compact token for a selected value, filter or label"}
+{"id": "gh-blinks44-moduix:tags-input", "node": "component/tags", "variation": "basic-tag-input", "job": "Type, edit and remove a list of short tags"}
+{"id": "gh-blinks44-moduix:text", "node": "atom/text", "variation": "body", "job": "Render body and inline copy with tone and size"}
+{"id": "gh-blinks44-moduix:textarea", "node": "atom/text-input", "variation": "textarea", "job": "Multi-line text field for longer written input"}
+{"id": "gh-blinks44-moduix:theme-contrast", "node": null, "variation": null, "job": "Token preset with stronger borders and focus for technical interfaces"}
+{"id": "gh-blinks44-moduix:theme-dense", "node": null, "variation": null, "job": "Compact token preset with a blue palette for admin data"}
+{"id": "gh-blinks44-moduix:theme-soft", "node": null, "variation": null, "job": "Rounded token preset with a warm violet product palette"}
+{"id": "gh-blinks44-moduix:timer", "node": "component/widget", "variation": null, "job": "Stopwatch and countdown with start, pause, reset controls", "edge": "countdown-timer"}
+{"id": "gh-blinks44-moduix:toast", "node": "component/toast", "variation": "rich-toast", "job": "Transient toast with title, description, action and close"}
+{"id": "gh-blinks44-moduix:toc", "node": "component/toc", "variation": "scroll-tracking", "job": "Side nav that tracks and highlights the visible heading"}
+{"id": "gh-blinks44-moduix:toggle", "node": "atom/switch", "variation": "toggle-button", "job": "Two-state action button that stays pressed when on"}
+{"id": "gh-blinks44-moduix:toggle-group", "node": "atom/switch", "variation": "toggle-group", "job": "Row of toggle buttons for one choice or several"}
+{"id": "gh-blinks44-moduix:tooltip", "node": "atom/tooltip", "variation": "standard", "job": "Explain a control with a label on hover or focus"}
+{"id": "gh-blinks44-moduix:tour", "node": "section/onboarding", "variation": "wizard", "job": "Guided product walkthrough pointing at each feature in turn"}
+{"id": "gh-blinks44-moduix:tree-view", "node": "component/tree", "variation": "standard-tree", "job": "Expand and collapse nodes of a hierarchical tree"}
+{"id": "gh-blinks44-moduix:typeset", "node": "atom/text", "variation": "body", "job": "Reading rhythm for rendered markdown and CMS content"}
+{"id": "gh-blinks44-moduix:vue-app-header", "node": "section/top-bar", "variation": "search", "job": "App header with navigation, command search, account menu"}
+{"id": "gh-blinks44-moduix:vue-autoplay-gallery", "node": "component/carousel", "variation": "autoplay-carousel", "job": "Auto-advancing image carousel with arrows and indicators"}
+{"id": "gh-blinks44-moduix:vue-data-table", "node": "component/table", "variation": "data-table", "job": "Payments table with search, sorting, selection, pagination"}
+{"id": "gh-blinks44-moduix:vue-expandable-avatar-group", "node": "atom/avatar", "variation": "avatar-group", "job": "Overlapping avatars that expand on hover with tooltips"}
+{"id": "gh-blinks44-moduix:vue-file-upload-manager", "node": "component/upload", "variation": "dropzone", "job": "Drag-and-drop file picker with validation and previews"}
+{"id": "gh-blinks44-moduix:vue-forgot-password", "node": "section/auth", "variation": "forgot", "job": "Email form requesting a password reset link"}
+{"id": "gh-blinks44-moduix:vue-login-simple", "node": "section/auth", "variation": "sign-in", "job": "Sign-in form with email, password, remember me"}
+{"id": "gh-blinks44-moduix:vue-parallax-card", "node": "component/card", "variation": "spotlight", "job": "Image card that tilts toward the pointer"}
+{"id": "gh-blinks44-moduix:vue-reset-password", "node": "section/auth", "variation": "forgot", "job": "Set a new password with a confirmation field"}
+{"id": "gh-blinks44-moduix:vue-sidebar-dashboard", "node": "section/shell", "variation": "shell-rail", "job": "Dashboard shell with resizable sidebar and workspace menu"}
+{"id": "gh-blinks44-moduix:vue-sign-up", "node": "section/auth", "variation": "sign-up", "job": "Registration form with email, password, and terms"}
+{"id": "gh-blinks44-moduix:vue-tailwind-app-header", "node": "section/top-bar", "variation": "search", "job": "App header with navigation, command search, account menu"}
+{"id": "gh-blinks44-moduix:vue-tailwind-autoplay-gallery", "node": "component/carousel", "variation": "autoplay-carousel", "job": "Auto-advancing image carousel with arrows and indicators"}
+{"id": "gh-blinks44-moduix:vue-tailwind-data-table", "node": "component/table", "variation": "data-table", "job": "Payments table with search, sorting, selection, pagination"}
+{"id": "gh-blinks44-moduix:vue-tailwind-expandable-avatar-group", "node": "atom/avatar", "variation": "avatar-group", "job": "Overlapping avatars that expand on hover with tooltips"}
+{"id": "gh-blinks44-moduix:vue-tailwind-file-upload-manager", "node": "component/upload", "variation": "dropzone", "job": "Drag-and-drop file picker with validation and previews"}
+{"id": "gh-blinks44-moduix:vue-tailwind-forgot-password", "node": "section/auth", "variation": "forgot", "job": "Email form requesting a password reset link"}
+{"id": "gh-blinks44-moduix:vue-tailwind-login-simple", "node": "section/auth", "variation": "sign-in", "job": "Sign-in form with email, password, remember me"}
+{"id": "gh-blinks44-moduix:vue-tailwind-parallax-card", "node": "component/card", "variation": "spotlight", "job": "Image card that tilts toward the pointer"}
+{"id": "gh-blinks44-moduix:vue-tailwind-reset-password", "node": "section/auth", "variation": "forgot", "job": "Set a new password with a confirmation field"}
+{"id": "gh-blinks44-moduix:vue-tailwind-sidebar-dashboard", "node": "section/shell", "variation": "shell-rail", "job": "Dashboard shell with resizable sidebar and workspace menu"}
+{"id": "gh-blinks44-moduix:vue-tailwind-sign-up", "node": "section/auth", "variation": "sign-up", "job": "Registration form with email, password, and terms"}
+{"id": "gh-blinks44-moduix:vue-tailwind-verification-code", "node": "section/auth", "variation": "2fa", "job": "Six-digit code entry with paste and keyboard support"}
+{"id": "gh-blinks44-moduix:vue-verification-code", "node": "section/auth", "variation": "2fa", "job": "Six-digit code entry with paste and keyboard support"}

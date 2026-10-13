@@ -1,0 +1,21 @@
+{"id": "sureui:agent-approval-01", "node": "component/agent-parts", "variation": "approval", "job": "agent turn where tool calls wait for approval"}
+{"id": "sureui:api-keys-01", "node": "section/settings-panel", "variation": "sections", "job": "list API keys, revoke on hold, create key dialog"}
+{"id": "sureui:bulk-actions-01", "node": "section/data-view", "variation": "list", "job": "bulk delete issues, confirmation escalates with selection size"}
+{"id": "sureui:cancel-subscription-01", "node": "section/pricing", "variation": "single-plan", "job": "plan card and dialog for cancelling a subscription"}
+{"id": "sureui:confirm-button", "node": "atom/button", "variation": "hold-confirm", "job": "button that confirms on click, second click or hold"}
+{"id": "sureui:confirm-dialog", "node": "component/dialog", "variation": "confirm-alert", "job": "alert dialog closing only after the async confirm settles"}
+{"id": "sureui:confirm-menu-item", "node": "component/menu", "variation": null, "job": "menu item that arms, holds or pends before confirming", "edge": "confirm-menu-item"}
+{"id": "sureui:confirm-popover", "node": "component/popover", "variation": null, "job": "popover with one consequence line and a confirm button", "edge": "confirm-popover"}
+{"id": "sureui:confirm-switch", "node": "atom/switch", "variation": null, "job": "switch that can be flipped back during the undo window", "edge": "confirm-switch"}
+{"id": "sureui:consequences", "node": "component/list", "variation": "standard-list", "job": "list what a confirmation removes, collapsing to and N more"}
+{"id": "sureui:danger-zone-01", "node": "section/settings-panel", "variation": null, "job": "project settings area to pause, transfer or delete", "edge": "danger-zone"}
+{"id": "sureui:delete-account-01", "node": "section/settings-panel", "variation": null, "job": "delete account after typing email and checking acknowledgements", "edge": "account-deletion"}
+{"id": "sureui:file-manager-01", "node": "section/data-view", "variation": "list", "job": "file list with trash, undo, and empty-trash dialog"}
+{"id": "sureui:inbox-01", "node": "section/detail", "variation": "two-pane", "job": "message list and reading pane with archive, delete, undo"}
+{"id": "sureui:settings-save-bar-01", "node": "section/settings-panel", "variation": "form-layout", "job": "settings form with save bar and unsaved-changes guard"}
+{"id": "sureui:team-members-01", "node": "section/settings-panel", "variation": "sections", "job": "team member list with remove and owner-transfer actions"}
+{"id": "sureui:tool-approval", "node": "component/agent-parts", "variation": "approval", "job": "approve or deny AI tool calls by risk gesture"}
+{"id": "sureui:type-to-confirm", "node": "component/form", "variation": null, "job": "inline form unlocked by exact phrase and acknowledgements", "edge": "type-to-confirm"}
+{"id": "sureui:undo-toast", "node": "component/toast", "variation": "action-toast", "job": "toast showing an Undo button for a pending action"}
+{"id": "sureui:undoable", "node": "component/list", "variation": null, "job": "wraps a list or table row that collapses to undo", "edge": "undoable-row"}
+{"id": "sureui:unsaved-changes", "node": "component/dialog", "variation": null, "job": "guard that asks before unsaved changes are lost", "edge": "unsaved-changes-guard"}

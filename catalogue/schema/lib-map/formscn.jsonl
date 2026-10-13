@@ -1,0 +1,30 @@
+{"id": "formscn:auth-client", "node": null, "variation": null, "job": "Better Auth client helpers, no UI"}
+{"id": "formscn:base-form", "node": null, "variation": null, "job": "Shared form utilities and dependencies"}
+{"id": "formscn:booking-request-form", "node": "component/form", "variation": null, "job": "Booking form picking a date and service", "edge": "booking-request-form"}
+{"id": "formscn:button", "node": "atom/button", "variation": "primary", "job": "Clickable button control"}
+{"id": "formscn:calendar", "node": "component/calendar", "variation": "month-calendar", "job": "Month grid calendar for picking dates"}
+{"id": "formscn:card", "node": "component/card", "variation": "standard-card", "job": "Bordered content container"}
+{"id": "formscn:checkbox", "node": "atom/choice", "variation": "checkbox", "job": "Checkbox to tick one or many"}
+{"id": "formscn:contact-form", "node": "component/form", "variation": "contact", "job": "Contact form with name, email, message"}
+{"id": "formscn:detailed-application-form", "node": "component/form", "variation": "multi-step", "job": "Multi-step application form across several screens"}
+{"id": "formscn:ecommerce-checkout-form", "node": "section/pricing", "variation": "checkout", "job": "Checkout form for shipping and payment"}
+{"id": "formscn:event-registration-form", "node": "component/form", "variation": null, "job": "Event signup form collecting attendee details", "edge": "event-registration-form"}
+{"id": "formscn:feedback-form", "node": "component/form", "variation": null, "job": "Feedback form with rating and comments", "edge": "feedback-form"}
+{"id": "formscn:field", "node": "component/field", "variation": "validation-states", "job": "Form field showing label, description and error"}
+{"id": "formscn:form-generator", "node": null, "variation": null, "job": "Utilities that generate form code"}
+{"id": "formscn:input", "node": "atom/text-input", "variation": "text-input", "job": "Single-line text input"}
+{"id": "formscn:job-application-form", "node": "component/form", "variation": null, "job": "Job application form with resume upload", "edge": "job-application-form"}
+{"id": "formscn:label", "node": "atom/text", "variation": null, "job": "Label naming a form control", "edge": "form-label"}
+{"id": "formscn:login-form", "node": "component/form", "variation": "sign-in", "job": "Email and password login form"}
+{"id": "formscn:newsletter-form", "node": "section/contact", "variation": "form", "job": "Newsletter signup with email frequency choice"}
+{"id": "formscn:onboarding-wizard-form", "node": "section/onboarding", "variation": "wizard", "job": "Multi-step onboarding wizard for new users"}
+{"id": "formscn:phone-input", "node": "component/field", "variation": "with-addon", "job": "Phone input with country code selector"}
+{"id": "formscn:popover", "node": "component/popover", "variation": "standard-popover", "job": "Anchored panel shown on click"}
+{"id": "formscn:progress", "node": "atom/progress", "variation": "linear", "job": "Bar showing completion progress"}
+{"id": "formscn:radio-group", "node": "atom/choice", "variation": "group", "job": "Group of radios picking one option"}
+{"id": "formscn:select", "node": "component/select", "variation": "standard-select", "job": "Dropdown selecting one value"}
+{"id": "formscn:signup-form", "node": "component/form", "variation": "sign-up", "job": "Registration form with email and password"}
+{"id": "formscn:support-ticket-form", "node": "component/form", "variation": null, "job": "Form submitting a support ticket", "edge": "support-ticket-form"}
+{"id": "formscn:switch", "node": "atom/switch", "variation": "standard", "job": "Toggle turning a setting on or off"}
+{"id": "formscn:textarea", "node": "atom/text-input", "variation": "textarea", "job": "Multi-line text input"}
+{"id": "formscn:waitlist-form", "node": "section/cta", "variation": "waitlist-form", "job": "Email form joining a product waitlist"}

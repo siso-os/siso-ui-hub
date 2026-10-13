@@ -1,0 +1,67 @@
+{"id": "scrimui:agent-console", "node": "page/dashboard", "variation": "dashboard-operations", "job": "Operations console: fleet roster, per-agent timeline, handoff, approvals, cost"}
+{"id": "scrimui:agent-handoff", "node": "component/agent-parts", "variation": "agents", "job": "One agent passing work to another, with a context receipt"}
+{"id": "scrimui:agent-plan", "node": "component/agent-parts", "variation": "plan-tasks", "job": "Agent's self-written checklist, edited mid-run without the list jumping"}
+{"id": "scrimui:agent-run-timeline", "node": "component/timeline", "variation": "activity-timeline", "job": "Collapsible activity log of a long agent run, with retries and approvals"}
+{"id": "scrimui:agent-status", "node": "component/agent-parts", "variation": "working-status", "job": "Live status card for an agent: running, waiting, done or failed"}
+{"id": "scrimui:ai-chat", "node": "section/chat", "variation": "full-app", "job": "Canonical chat app: sidebar, streaming replies, prompt input, citations"}
+{"id": "scrimui:approval-gate", "node": "component/agent-parts", "variation": "approval", "job": "Approval decision card that survives a closed tab and stays idempotent"}
+{"id": "scrimui:approval-request", "node": "component/agent-parts", "variation": "approval", "job": "Human-in-the-loop confirmation: what the agent will do, allow or deny"}
+{"id": "scrimui:artifact-preview", "node": "component/agent-parts", "variation": "artifact-display", "job": "Side panel for generated output: preview, copy, versions, error states"}
+{"id": "scrimui:artifact-workspace", "node": "page/chat-screen", "variation": "chat-with-artifact", "job": "Chat beside generated output; artifacts open, stream, version, fail"}
+{"id": "scrimui:citation-popover", "node": "component/popover", "variation": "hover-card", "job": "Citation marker revealing the passage it came from, positioned safely"}
+{"id": "scrimui:citation-ui", "node": "component/agent-parts", "variation": "citations", "job": "Inline numbered citation markers revealing their source in a hover card"}
+{"id": "scrimui:code-execution", "node": "component/code", "variation": "run-results", "job": "Code interpreter run in chat: snippet, streaming stdout, readable errors"}
+{"id": "scrimui:coding-agent", "node": "section/chat", "variation": "ai-response", "job": "Coding run: agent status, tool calls, diff and an approval gate"}
+{"id": "scrimui:confidence-answer", "node": "component/agent-parts", "variation": null, "job": "Answer card stating how sure it is, with a hedge", "edge": "confidence-annotated-answer"}
+{"id": "scrimui:context-files", "node": "component/list", "variation": "file-list", "job": "Files in the model's context, with token cost and removal"}
+{"id": "scrimui:context-picker", "node": "component/composer", "variation": "mentions-commands", "job": "@-mention menu adding files, pages and knowledge to the prompt"}
+{"id": "scrimui:context-usage", "node": "component/agent-parts", "variation": "usage-cost", "job": "Where the context window went, and what gets evicted first"}
+{"id": "scrimui:conversation-sidebar", "node": "section/chat", "variation": "history-list", "job": "Chat history sidebar: search, rename, pin, delete with undo"}
+{"id": "scrimui:cost-meter", "node": "component/agent-parts", "variation": "usage-cost", "job": "Live spend per message and conversation, cached input priced apart"}
+{"id": "scrimui:edit-diff-view", "node": "component/code", "variation": "diff-view", "job": "Streamed AI edit as hunks accepted or rejected one by one"}
+{"id": "scrimui:error-message", "node": "component/agent-parts", "variation": "notices", "job": "Generation failure notice with a reason, retry and rate-limit countdown"}
+{"id": "scrimui:eval-results", "node": "component/table", "variation": "standard-table", "job": "Pass rates per test case across two runs, regressions first"}
+{"id": "scrimui:extraction-review", "node": "page/record", "variation": "record-split-pane", "job": "Upload a document, review flagged extracted fields, then export"}
+{"id": "scrimui:file-upload", "node": "component/upload", "variation": "dropzone", "job": "Drag-and-drop upload zone with per-file progress and error states"}
+{"id": "scrimui:generated-media", "node": "component/agent-parts", "variation": "generated-image", "job": "Result card for generated image, audio or video, with variants"}
+{"id": "scrimui:generative-dashboard", "node": "page/dashboard", "variation": "dashboard-overview", "job": "Dashboard the model assembles from a controlled widget registry"}
+{"id": "scrimui:generative-ui", "node": "component/agent-parts", "variation": "live-preview", "job": "Render a React component from a tool result, in place"}
+{"id": "scrimui:image-studio", "node": "page/chat-screen", "variation": "chat-with-artifact", "job": "Generation studio: prompt and model picker beside media results"}
+{"id": "scrimui:inline-correction", "node": "component/message", "variation": "branches-edit", "job": "Correct a wrong answer in place, keeping the original beside it"}
+{"id": "scrimui:markdown-message", "node": "component/message", "variation": "markdown", "job": "Rendered markdown reply with highlighted code blocks and tables"}
+{"id": "scrimui:memory-chip", "node": "component/agent-parts", "variation": "memory", "job": "Inline chip confirming a fact was saved to memory"}
+{"id": "scrimui:memory-list", "node": "component/agent-parts", "variation": "memory", "job": "Memory panel listing saved facts, addable and forgettable"}
+{"id": "scrimui:memory-suggestion", "node": "component/agent-parts", "variation": "memory", "job": "Prompt asking to remember a fact, with keep or dismiss"}
+{"id": "scrimui:memory-toast", "node": "component/toast", "variation": "action-toast", "job": "Memory-updated receipt showing the saved fact, with one-tap undo"}
+{"id": "scrimui:message-actions", "node": "component/message", "variation": "actions-feedback", "job": "Hover actions under a reply: copy, regenerate, share, rate"}
+{"id": "scrimui:model-preferences", "node": "section/settings-panel", "variation": "sections", "job": "Preferences screen for model, reasoning, tools and persistent memory"}
+{"id": "scrimui:model-selector", "node": "component/composer", "variation": "with-model-picker", "job": "Standalone model picker dropdown with speed and context badges"}
+{"id": "scrimui:moderation-flag", "node": "component/agent-parts", "variation": "notices", "job": "Content filter notice keeping the partial text, with a false-positive path"}
+{"id": "scrimui:output-comparison", "node": "component/compare", "variation": "before-after", "job": "Two answers side by side; model names hidden until a winner"}
+{"id": "scrimui:prompt-editor", "node": "atom/text-input", "variation": "code-editor", "job": "Prompt template editor highlighting variables, with preview and diff"}
+{"id": "scrimui:prompt-input", "node": "component/composer", "variation": "chat-composer", "job": "Chat composer with attachments, model picker, tools, voice and stop"}
+{"id": "scrimui:prompt-input-attachments", "node": "component/composer", "variation": "with-attachments", "job": "Chat input accepting files, with attachment chips and progress"}
+{"id": "scrimui:prompt-input-model-selector", "node": "component/composer", "variation": "with-model-picker", "job": "Chat input with the model picker built in inline"}
+{"id": "scrimui:rag-workspace", "node": "section/chat", "variation": "sources", "job": "Ask your documents: upload, cited answers, not-found state, context budget"}
+{"id": "scrimui:reasoning", "node": "component/agent-parts", "variation": "reasoning-display", "job": "Collapsible chain-of-thought panel with elapsed time, folded by default"}
+{"id": "scrimui:reasoning-level", "node": "component/agent-parts", "variation": "settings", "job": "Choose light, balanced or deep thinking, with the tradeoff shown"}
+{"id": "scrimui:reasoning-steps", "node": "component/agent-parts", "variation": "reasoning-display", "job": "Multi-step reasoning trace where each step shows status and timer"}
+{"id": "scrimui:refusal-message", "node": "component/agent-parts", "variation": "notices", "job": "Refusal stating why, with one clickable safe redirect"}
+{"id": "scrimui:research-assistant", "node": "section/chat", "variation": "ai-response", "job": "Research flow: search calls, reasoning, sources and a cited answer"}
+{"id": "scrimui:response-rating", "node": "component/message", "variation": "actions-feedback", "job": "Thumbs rating that asks one follow-up and locks after sending"}
+{"id": "scrimui:response-versions", "node": "component/message", "variation": "branches-edit", "job": "Version pager after regenerating: branches, continue-from-here, honest states"}
+{"id": "scrimui:search-tool-call", "node": "component/agent-parts", "variation": "tool-calls", "job": "Web search the model ran, with query, count and source previews"}
+{"id": "scrimui:source-card", "node": "component/agent-parts", "variation": "sources-display", "job": "Cited source card: favicon, title, domain and the drawn snippet"}
+{"id": "scrimui:source-list", "node": "component/agent-parts", "variation": "sources-display", "job": "Retrieved passages with similarity scores and a visible relevance floor"}
+{"id": "scrimui:streaming-markdown", "node": "component/message", "variation": "streaming-text", "job": "Markdown rendering correctly while it is still arriving"}
+{"id": "scrimui:streaming-message", "node": "component/message", "variation": "streaming-text", "job": "Token-by-token reply with blinking cursor and stop button"}
+{"id": "scrimui:support-copilot", "node": "section/chat", "variation": "full-app", "job": "Support copilot drafting grounded replies with citations and approvals"}
+{"id": "scrimui:thinking-indicator", "node": "component/agent-parts", "variation": "working-status", "job": "Pre-token loading state: bouncing dots, caret or labelled pulse"}
+{"id": "scrimui:tool-call", "node": "component/agent-parts", "variation": "tool-calls", "job": "Function call in chat: arguments, result, status and expand"}
+{"id": "scrimui:tool-toggle", "node": "component/agent-parts", "variation": "settings", "job": "Switches for the tools a model may use"}
+{"id": "scrimui:user-message", "node": "component/message", "variation": "message-bubble", "job": "Right-aligned user bubble with copy, edit and regenerate actions"}
+{"id": "scrimui:voice-assistant", "node": "page/chat-screen", "variation": "chat-voice", "job": "Voice-first conversation with waveform, transcript and typed fallback"}
+{"id": "scrimui:voice-call-controls", "node": "component/dock", "variation": "floating-nav-pill", "job": "Call chrome: mute toggle, elapsed timer and always-visible end button"}
+{"id": "scrimui:voice-conversation", "node": "component/agent-parts", "variation": "transcript", "job": "Live voice transcript showing who spoke, with per-turn replay"}
+{"id": "scrimui:voice-input", "node": "component/composer", "variation": "voice-input", "job": "Mic button expanding into a recording panel with transcript"}
+{"id": "scrimui:voice-waveform", "node": "component/player", "variation": "waveform-visualizer", "job": "Animated waveform with distinct motion for listening, recording, speaking"}

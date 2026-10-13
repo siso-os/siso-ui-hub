@@ -1,0 +1,247 @@
+{"id": "7ovr:about-1", "node": "section/about", "variation": "mission-values", "job": "Centered about intro with mission statement and four stats"}
+{"id": "7ovr:about-2", "node": "section/about", "variation": "story-photo", "job": "Founding story beside team photo and metric row"}
+{"id": "7ovr:about-3", "node": "section/about", "variation": "mission-values", "job": "Company values grid of icon cards"}
+{"id": "7ovr:about-4", "node": "section/about", "variation": "mission-values", "job": "Mission, vision and values in three columns"}
+{"id": "7ovr:activity-1", "node": "component/list", "variation": "activity-feed", "job": "Recent activity card of avatar event rows"}
+{"id": "7ovr:activity-2", "node": "component/list", "variation": "activity-feed", "job": "Activity feed grouped under Today and Yesterday"}
+{"id": "7ovr:activity-3", "node": "component/list", "variation": "activity-feed", "job": "Audit log feed with action icon tiles"}
+{"id": "7ovr:activity-4", "node": "component/inbox", "variation": "notification-center", "job": "Tabbed activity panel with unread count badge"}
+{"id": "7ovr:ai-chat-1", "node": "section/chat", "variation": "thread", "job": "Assistant chat thread with bubbles and composer"}
+{"id": "7ovr:ai-chat-2", "node": "section/chat", "variation": "suggestions", "job": "Chat opening on suggested prompts, then a thread"}
+{"id": "7ovr:ai-chat-3", "node": "section/chat", "variation": "streaming", "job": "Live AI chat with typing indicator and chips"}
+{"id": "7ovr:announcement-1", "node": "section/announcement", "variation": "dismissible", "job": "Dismissible announcement bar above release callout"}
+{"id": "7ovr:announcement-2", "node": "section/announcement", "variation": "badge-icon", "job": "Product update card with version badge and link"}
+{"id": "7ovr:announcement-3", "node": "section/announcement", "variation": "dismissible", "job": "Banner remembering its dismissal in localStorage"}
+{"id": "7ovr:announcement-4", "node": "section/announcement", "variation": "ribbon", "job": "Sticky promo bar with live sale countdown"}
+{"id": "7ovr:app-shell-1", "node": "section/shell", "variation": "sidebar-top", "job": "Sidebar and top bar shell over dashboard"}
+{"id": "7ovr:app-shell-2", "node": "section/shell", "variation": "top-only", "job": "Sidebar-free shell with sticky top bar and tabs"}
+{"id": "7ovr:app-shell-3", "node": "section/shell", "variation": "shell-rail", "job": "Icon rail sidebar shell with search top bar"}
+{"id": "7ovr:article-1", "node": "page/article", "variation": "article-standard", "job": "Centered blog post with byline and tags"}
+{"id": "7ovr:article-2", "node": "page/article", "variation": "article-with-toc", "job": "Article with sticky scroll-spy table of contents"}
+{"id": "7ovr:article-3", "node": "page/article", "variation": "article-docs-style", "job": "Docs page with breadcrumb, code block, prev/next"}
+{"id": "7ovr:article-4", "node": "page/article", "variation": "article-standard", "job": "Magazine feature with drop cap and pull quote"}
+{"id": "7ovr:article-5", "node": "page/article", "variation": "article-with-related", "job": "Article with author bio and related posts sidebar"}
+{"id": "7ovr:auth-1", "node": "section/auth", "variation": "sign-in", "job": "Centered sign-in card with social buttons"}
+{"id": "7ovr:auth-2", "node": "section/auth", "variation": "split-image", "job": "Split sign-in with dark brand feature panel"}
+{"id": "7ovr:auth-3", "node": "section/auth", "variation": "sign-up", "job": "Sign-up form beside Free, Pro, Team tiers"}
+{"id": "7ovr:auth-4", "node": "section/auth", "variation": "fullpage", "job": "Full-height split-screen sign-in with grid backdrop"}
+{"id": "7ovr:auth-5", "node": "section/auth", "variation": null, "job": "Auth card toggling between sign-in and sign-up forms", "edge": "auth-tabs"}
+{"id": "7ovr:auth-6", "node": "section/auth", "variation": "forgot", "job": "Forgot-password request with check-your-inbox confirmation"}
+{"id": "7ovr:auth-7", "node": "section/auth", "variation": null, "job": "Set new password with live requirement checks", "edge": "reset-password"}
+{"id": "7ovr:auth-8", "node": "section/auth", "variation": "sign-up", "job": "Centered sign-up card with terms checkbox"}
+{"id": "7ovr:bento-1", "node": "section/features", "variation": "bento", "job": "Bento grid one hero tile spans"}
+{"id": "7ovr:bento-2", "node": "section/features", "variation": "bento", "job": "Four equal bento tiles under a heading"}
+{"id": "7ovr:bento-3", "node": "section/features", "variation": "bento", "job": "Divided bento led by a terminal snippet"}
+{"id": "7ovr:bento-4", "node": "section/features", "variation": "bento", "job": "Bento with chart, progress bars and numbers"}
+{"id": "7ovr:billing-1", "node": "section/pricing", "variation": "single-plan", "job": "Current plan card with seat usage and switch dialog"}
+{"id": "7ovr:billing-2", "node": "component/table", "variation": "data-table", "job": "Invoice table with selection and bulk download"}
+{"id": "7ovr:billing-3", "node": "page/dashboard", "variation": "dashboard-overview", "job": "Billing page of plan, usage, payment and invoices"}
+{"id": "7ovr:billing-4", "node": "component/stat", "variation": "progress-stat", "job": "Usage metering card with bars and cycle estimate"}
+{"id": "7ovr:billing-5", "node": "component/list", "variation": "standard-list", "job": "Saved payment cards with default and remove actions"}
+{"id": "7ovr:billing-6", "node": "component/form", "variation": null, "job": "Add card form with expiry, CVC and country", "edge": "payment-form"}
+{"id": "7ovr:blog-1", "node": "section/blog", "variation": "news-grid", "job": "Three post cards with covers and authors"}
+{"id": "7ovr:blog-2", "node": "section/blog", "variation": "list", "job": "Divider-separated blog post list with dates"}
+{"id": "7ovr:blog-3", "node": "section/blog", "variation": "topic-filter", "job": "Blog index with featured post and category filters"}
+{"id": "7ovr:blog-4", "node": "section/blog", "variation": "list", "job": "Horizontal media card blog archive list"}
+{"id": "7ovr:blog-5", "node": "section/blog", "variation": "topic-filter", "job": "Blog list beside sticky search and category sidebar"}
+{"id": "7ovr:booking-1", "node": "component/form", "variation": null, "job": "Reservation card for date, party size and time", "edge": "reservation-form"}
+{"id": "7ovr:booking-2", "node": "component/form", "variation": null, "job": "Split appointment request form with contact details", "edge": "appointment-form"}
+{"id": "7ovr:calendar-1", "node": "component/calendar", "variation": "month-calendar", "job": "Month grid with selectable days and day detail"}
+{"id": "7ovr:calendar-2", "node": "component/calendar", "variation": "week-schedule", "job": "Weekly agenda with time-slotted event rows"}
+{"id": "7ovr:calendar-3", "node": "component/calendar", "variation": "event-calendar", "job": "Calendar toggling month and week views"}
+{"id": "7ovr:careers-1", "node": "component/list", "variation": "standard-list", "job": "Open roles grouped by department with apply links"}
+{"id": "7ovr:careers-2", "node": "page/article", "variation": "article-standard", "job": "Job posting page with requirements and apply buttons"}
+{"id": "7ovr:careers-3", "node": "section/about", "variation": "mission-values", "job": "Culture page with photos, values and benefits"}
+{"id": "7ovr:careers-4", "node": "section/data-view", "variation": "list", "job": "Filterable jobs board with search and role list"}
+{"id": "7ovr:changelog-1", "node": "section/blog", "variation": "changelog", "job": "Release notes with version rail and change groups"}
+{"id": "7ovr:changelog-2", "node": "section/blog", "variation": "changelog", "job": "Changelog filtered by Added, Improved, Fixed tabs"}
+{"id": "7ovr:changelog-3", "node": "section/blog", "variation": "changelog", "job": "In-app what's new card with version pill"}
+{"id": "7ovr:changelog-4", "node": "component/timeline", "variation": "changelog", "job": "Release timeline on a connected dot rail"}
+{"id": "7ovr:changelog-5", "node": "section/blog", "variation": "changelog", "job": "Changelog with sticky version-jump sidebar"}
+{"id": "7ovr:charts-1", "node": "component/chart", "variation": "bar-chart", "job": "Monthly revenue bars with fiscal year select"}
+{"id": "7ovr:charts-2", "node": "component/chart", "variation": "area-chart", "job": "Gradient area chart of users with KPI row"}
+{"id": "7ovr:charts-3", "node": "component/chart", "variation": "area-chart", "job": "Stacked area chart with 7d/30d/90d switcher"}
+{"id": "7ovr:charts-4", "node": "component/chart", "variation": "line-chart", "job": "Line chart of monthly unique visitors"}
+{"id": "7ovr:charts-5", "node": "component/chart", "variation": "pie-donut", "job": "Donut chart of traffic sources with legend"}
+{"id": "7ovr:chat-1", "node": "section/chat", "variation": "thread", "job": "One-to-one chat thread with working composer"}
+{"id": "7ovr:chat-2", "node": "section/chat", "variation": "full-app", "job": "Two-pane messenger with conversation list"}
+{"id": "7ovr:chat-3", "node": "section/chat", "variation": "widget", "job": "Support chat widget with quick-reply chips"}
+{"id": "7ovr:chat-4", "node": "section/chat", "variation": "thread", "job": "Group chat with member stack and online indicator"}
+{"id": "7ovr:coming-soon-1", "node": "section/hero", "variation": "form", "job": "Centered waitlist email capture hero"}
+{"id": "7ovr:coming-soon-2", "node": "section/hero", "variation": "split-image", "job": "Split waitlist with browser mockup preview"}
+{"id": "7ovr:coming-soon-3", "node": "section/hero", "variation": null, "job": "Launch countdown tiles above an email notify form", "edge": "launch-countdown"}
+{"id": "7ovr:coming-soon-4", "node": "section/hero", "variation": "fullscreen", "job": "Full-bleed gradient launch hero with email capture"}
+{"id": "7ovr:coming-soon-5", "node": "component/steps", "variation": "progress-steps", "job": "Launch milestone progress above waitlist form"}
+{"id": "7ovr:command-palette-1", "node": "component/command", "variation": "dialog-based", "job": "Ctrl+K command dialog with shortcut hints"}
+{"id": "7ovr:command-palette-2", "node": "component/command", "variation": "command-palette", "job": "Palette with recent items above categories"}
+{"id": "7ovr:command-palette-3", "node": "component/command", "variation": "grouped-commands", "job": "Cmd+K searchable palette of grouped commands"}
+{"id": "7ovr:command-palette-4", "node": "component/command", "variation": "command-menu", "job": "Inline palette with live preview pane"}
+{"id": "7ovr:comparison-1", "node": "section/comparison", "variation": "table", "job": "Two-plan table with monthly and annual toggle"}
+{"id": "7ovr:comparison-2", "node": "section/comparison", "variation": "us-vs-them", "job": "Cards contrasting our wins against competitor pains"}
+{"id": "7ovr:comparison-3", "node": "section/comparison", "variation": "table", "job": "Three-plan feature matrix with sticky header"}
+{"id": "7ovr:comparison-4", "node": "section/comparison", "variation": "table", "job": "Comparison table against named competitors"}
+{"id": "7ovr:contact-1", "node": "section/contact", "variation": "form", "job": "Contact details beside a message form"}
+{"id": "7ovr:contact-2", "node": "section/contact", "variation": "centered", "job": "Centered contact form card with consent checkbox"}
+{"id": "7ovr:contact-3", "node": "section/contact", "variation": "split", "job": "Contact form beside map and office address cards"}
+{"id": "7ovr:cookie-consent-1", "node": "component/alert", "variation": "cookie-consent", "job": "Bottom cookie bar with accept and decline"}
+{"id": "7ovr:cookie-consent-2", "node": "component/alert", "variation": "cookie-consent", "job": "Corner consent card with preference actions"}
+{"id": "7ovr:cookie-consent-3", "node": "component/alert", "variation": "cookie-consent", "job": "Cookie preferences panel with category switches"}
+{"id": "7ovr:cookie-consent-4", "node": "component/alert", "variation": "cookie-consent", "job": "Blocking modal consent over a dimmed page"}
+{"id": "7ovr:cookie-consent-5", "node": "component/alert", "variation": "cookie-consent", "job": "Consent banner expanding to inline category switches"}
+{"id": "7ovr:cta-1", "node": "section/cta", "variation": "centered-banner", "job": "Centered CTA band with primary and secondary buttons"}
+{"id": "7ovr:cta-2", "node": "section/cta", "variation": "card", "job": "Compact CTA card with social proof line"}
+{"id": "7ovr:cta-3", "node": "section/cta", "variation": "full-bleed", "job": "Inverted full-width banner CTA with one button"}
+{"id": "7ovr:cta-4", "node": "section/cta", "variation": "email-form", "job": "Email capture CTA with submitted confirmation"}
+{"id": "7ovr:cta-5", "node": "section/cta", "variation": "split-image", "job": "Split CTA with wireframe app screenshot card"}
+{"id": "7ovr:cta-6", "node": "section/cta", "variation": null, "job": "App Store and Google Play download CTA", "edge": "app-download"}
+{"id": "7ovr:dashboard", "node": "page/dashboard", "variation": "dashboard-overview", "job": "Sidebar dashboard app template with command palette"}
+{"id": "7ovr:dashboard-1", "node": "page/dashboard", "variation": "dashboard-analytics", "job": "Range-driven stat cards above sessions bar chart"}
+{"id": "7ovr:dashboard-2", "node": "page/dashboard", "variation": "dashboard-overview", "job": "KPI cards beside a full-width activity feed"}
+{"id": "7ovr:dashboard-3", "node": "section/kpis", "variation": "metric-cards", "job": "Six metric tiles in a flush strip"}
+{"id": "7ovr:dashboard-4", "node": "page/dashboard", "variation": "dashboard-operations", "job": "KPI row above a recent orders table"}
+{"id": "7ovr:empty-states-1", "node": "component/empty", "variation": "icon-text", "job": "Cleared notifications empty state with view-all link"}
+{"id": "7ovr:empty-states-2", "node": "component/empty", "variation": "illustrated", "job": "Illustrated empty inbox panel with support footer"}
+{"id": "7ovr:empty-states-3", "node": "component/empty", "variation": "search-no-results", "job": "No search results with a clear filters action"}
+{"id": "7ovr:empty-states-4", "node": "component/empty", "variation": "error-state", "job": "Failed load error state with try again"}
+{"id": "7ovr:empty-states-5", "node": "component/empty", "variation": "with-action", "job": "First project prompt with create and import buttons"}
+{"id": "7ovr:error-1", "node": "page/not-found", "variation": "notfound-404", "job": "404 page with go home and go back"}
+{"id": "7ovr:error-2", "node": "page/not-found", "variation": "notfound-404", "job": "404 with docs search and popular page links"}
+{"id": "7ovr:error-3", "node": "page/not-found", "variation": "notfound-500", "job": "500 error page with retry and support actions"}
+{"id": "7ovr:error-4", "node": "page/not-found", "variation": "notfound-no-permission", "job": "403 access denied with request access action"}
+{"id": "7ovr:error-5", "node": "page/not-found", "variation": "notfound-maintenance", "job": "Maintenance page with return time and status link"}
+{"id": "7ovr:error-6", "node": "page/not-found", "variation": "notfound-404", "job": "Oversized 404 numeral page with two buttons"}
+{"id": "7ovr:faqs-1", "node": "section/faq", "variation": "accordion", "job": "Centered FAQ accordion of five questions"}
+{"id": "7ovr:faqs-2", "node": "section/faq", "variation": "two-column", "job": "Two-column FAQ accordion of eight questions"}
+{"id": "7ovr:faqs-3", "node": "section/faq", "variation": "contact-link", "job": "FAQ accordion with a contact support card"}
+{"id": "7ovr:faqs-4", "node": "section/faq", "variation": "contact-link", "job": "FAQ with sticky contact support sidebar"}
+{"id": "7ovr:faqs-5", "node": "section/faq", "variation": "search", "job": "Searchable FAQ with category tabs and counts"}
+{"id": "7ovr:features-1", "node": "section/features", "variation": "icon-grid", "job": "Six icon feature cards in three columns"}
+{"id": "7ovr:features-2", "node": "section/features", "variation": "split-text-image", "job": "Alternating feature rows with stats and avatars"}
+{"id": "7ovr:features-3", "node": "section/features", "variation": null, "job": "Two-column checklist of twelve capabilities", "edge": "feature-checklist"}
+{"id": "7ovr:features-4", "node": "section/features", "variation": "tabs", "job": "Feature tabs swapping a three-column icon card grid"}
+{"id": "7ovr:features-5", "node": "section/features", "variation": "split-text-image", "job": "Single security feature with checklist beside settings panel"}
+{"id": "7ovr:file-upload-1", "node": "component/upload", "variation": "progress-tracking", "job": "Dropzone with per-file upload progress in attachment list"}
+{"id": "7ovr:file-upload-2", "node": "component/upload", "variation": "attachment-list", "job": "Inline file field showing one selected attachment"}
+{"id": "7ovr:file-upload-3", "node": "component/upload", "variation": "dropzone", "job": "Dropzone enforcing size and type with upload toasts"}
+{"id": "7ovr:file-upload-4", "node": "component/upload", "variation": "with-previews", "job": "Image gallery uploader with thumbnail grid and cover badge"}
+{"id": "7ovr:file-upload-5", "node": "component/upload", "variation": "avatar-upload", "job": "Circular avatar uploader with preview, change and remove"}
+{"id": "7ovr:footer-1", "node": "section/footer", "variation": "columns", "job": "Footer with brand blurb and three link columns"}
+{"id": "7ovr:footer-2", "node": "section/footer", "variation": "minimal-row", "job": "Single slim footer bar with links and copyright"}
+{"id": "7ovr:footer-3", "node": "section/footer", "variation": "newsletter", "job": "Footer pairing newsletter signup with grouped nav columns"}
+{"id": "7ovr:footer-4", "node": "section/footer", "variation": "columns", "job": "Mega footer sitemap columns with locale and theme switchers"}
+{"id": "7ovr:footer-5", "node": "section/footer", "variation": "cta-focus", "job": "Footer led by call to action band"}
+{"id": "7ovr:gallery-1", "node": "component/gallery", "variation": "grid-gallery", "job": "Filterable photo grid with hover captions and lightbox"}
+{"id": "7ovr:gallery-2", "node": "section/showcase", "variation": "carousel", "job": "Product screenshots with featured frame and thumbnail strip"}
+{"id": "7ovr:gallery-3", "node": "component/gallery", "variation": "masonry-gallery", "job": "Masonry photo gallery with tag filters and lightbox"}
+{"id": "7ovr:gallery-4", "node": "component/gallery", "variation": "reveal-effects", "job": "Fixed grayscale mosaic revealing color on hover with lightbox"}
+{"id": "7ovr:header-1", "node": "section/nav", "variation": "simple-bar", "job": "Full width site header with nav, CTA, mobile sheet"}
+{"id": "7ovr:header-14", "node": "section/nav", "variation": null, "job": "Header with navigation collected into one muted capsule", "edge": "capsule-nav"}
+{"id": "7ovr:header-2", "node": "section/nav", "variation": "simple-bar", "job": "Header with centered navigation and sign-in CTA"}
+{"id": "7ovr:header-3", "node": "section/nav", "variation": "sticky-shrink", "job": "Sticky header with sign-in, CTA and mobile menu"}
+{"id": "7ovr:header-4", "node": "section/nav", "variation": "mega-menu", "job": "Header product dropdown with links, sign-in, CTA"}
+{"id": "7ovr:hero-1", "node": "section/hero", "variation": "centered-text", "job": "Centered hero with beta badge, CTAs, trust logos"}
+{"id": "7ovr:hero-2", "node": "section/hero", "variation": "split-image", "job": "Split hero with copy and dashboard mockup"}
+{"id": "7ovr:hero-3", "node": "section/hero", "variation": "text-only", "job": "Left-aligned hero with badge, CTAs and metric row"}
+{"id": "7ovr:hero-4", "node": "section/hero", "variation": "form", "job": "Centered hero with grid backdrop and email capture"}
+{"id": "7ovr:hero-5", "node": "section/hero", "variation": "centered-text", "job": "Centered hero with demo video dialog and trust strip"}
+{"id": "7ovr:hero-6", "node": "section/hero", "variation": "social-proof", "job": "Centered hero with announcement pill and avatar proof"}
+{"id": "7ovr:how-it-works-1", "node": "section/how", "variation": "numbered-steps", "job": "Three numbered step cards under a heading"}
+{"id": "7ovr:how-it-works-2", "node": "section/how", "variation": "numbered-steps", "job": "Four steps stacked down a vertical rail"}
+{"id": "7ovr:how-it-works-3", "node": "section/how", "variation": "numbered-steps", "job": "Clickable horizontal stepper along a progress line"}
+{"id": "7ovr:how-it-works-4", "node": "section/how", "variation": "alternating", "job": "Alternating step rows with mock UI previews"}
+{"id": "7ovr:integrations-1", "node": "section/logos", "variation": "integration-cards", "job": "Integration cards opening connect dialogs with settings"}
+{"id": "7ovr:integrations-2", "node": "section/logos", "variation": "grid", "job": "Dense logo tile grid with category filters"}
+{"id": "7ovr:integrations-3", "node": "section/logos", "variation": "directory", "job": "Searchable integrations directory with category filters"}
+{"id": "7ovr:integrations-4", "node": "section/settings-panel", "variation": "card-blocks", "job": "Settings grid connecting apps with per-card switches"}
+{"id": "7ovr:integrations-5", "node": "section/logos", "variation": "grid", "job": "Split headline and CTA beside six-logo grid"}
+{"id": "7ovr:kanban-1", "node": "component/board", "variation": "kanban-drag-drop", "job": "Three column kanban with drag and drop and dialog"}
+{"id": "7ovr:kanban-2", "node": "component/board", "variation": null, "job": "Single kanban lane of sortable rich task cards", "edge": "single-column-board"}
+{"id": "7ovr:kanban-3", "node": "component/board", "variation": "kanban-drag-drop", "job": "Four column kanban with counts and drag reordering"}
+{"id": "7ovr:kanban-4", "node": "component/board", "variation": "multi-column-board", "job": "Personal task lanes dragged to reprioritize"}
+{"id": "7ovr:location-1", "node": "component/map", "variation": "pin-map", "job": "Opening hours table beside embedded map and directions"}
+{"id": "7ovr:location-2", "node": "component/card", "variation": "feature-card", "job": "Three visit cards for address, hours, directions"}
+{"id": "7ovr:logo-cloud-1", "node": "section/logos", "variation": "grid", "job": "Trusted-by logo grid under a customer count line"}
+{"id": "7ovr:logo-cloud-2", "node": "section/logos", "variation": "integration-cards", "job": "Integration logo grid with icon and name cells"}
+{"id": "7ovr:logo-cloud-3", "node": "section/logos", "variation": "marquee", "job": "Auto-scrolling logo marquee with edge fade"}
+{"id": "7ovr:logo-cloud-4", "node": "section/logos", "variation": "grid", "job": "Logo grid brightening on hover with name tooltips"}
+{"id": "7ovr:logo-cloud-5", "node": "section/logos", "variation": "static-row", "job": "Single minimal trust strip of six wordmarks"}
+{"id": "7ovr:menu-1", "node": "component/list", "variation": "standard-list", "job": "Two column restaurant menu with leader-dot prices"}
+{"id": "7ovr:menu-2", "node": "component/card", "variation": "product-card", "job": "Photo card grid of dishes with prices and notes"}
+{"id": "7ovr:newsletter-1", "node": "section/contact", "variation": "centered", "job": "Centered newsletter signup with consent checkbox"}
+{"id": "7ovr:newsletter-2", "node": "section/contact", "variation": "split", "job": "Newsletter band with copy left and email form right"}
+{"id": "7ovr:newsletter-3", "node": "section/contact", "variation": "form", "job": "Newsletter signup card cycling idle, loading, success, error"}
+{"id": "7ovr:newsletter-4", "node": "component/form", "variation": "multi-step", "job": "Topic picker newsletter stepping to double opt-in confirmation"}
+{"id": "7ovr:newsletter-5", "node": "section/contact", "variation": "centered", "job": "Newsletter signup with subscriber avatars and star rating"}
+{"id": "7ovr:notifications-1", "node": "component/inbox", "variation": "notification-center", "job": "Notifications sheet listing unread items with mark all read"}
+{"id": "7ovr:notifications-2", "node": "component/inbox", "variation": "notification-center", "job": "Bell button with badge opening a notification popover"}
+{"id": "7ovr:notifications-3", "node": "component/inbox", "variation": "notification-center", "job": "Notification center card with All, Unread, Mentions tabs"}
+{"id": "7ovr:notifications-4", "node": "section/settings-panel", "variation": "form-layout", "job": "Notification preference rows with email and push toggles"}
+{"id": "7ovr:notifications-5", "node": "component/alert", "variation": "inline-alert", "job": "Stacked dismissible alerts in four severity variants"}
+{"id": "7ovr:onboarding-1", "node": "section/onboarding", "variation": "checklist", "job": "Welcome card with setup progress and three checkbox steps"}
+{"id": "7ovr:onboarding-2", "node": "section/onboarding", "variation": "checklist", "job": "Three numbered setup step cards toggling complete"}
+{"id": "7ovr:onboarding-3", "node": "section/onboarding", "variation": "wizard", "job": "Onboarding wizard stepping profile, workspace, invites, summary"}
+{"id": "7ovr:onboarding-4", "node": "section/onboarding", "variation": "welcome-screen", "job": "First-run welcome screen with rocket illustration and actions"}
+{"id": "7ovr:onboarding-5", "node": "section/onboarding", "variation": "stepper", "job": "Invite teammates step with email rows and roles"}
+{"id": "7ovr:onboarding-6", "node": "section/onboarding", "variation": "checklist", "job": "Dismissible getting started checklist widget with progress"}
+{"id": "7ovr:page-header-1", "node": "section/page-header", "variation": "title-only", "job": "Page header with title and export actions"}
+{"id": "7ovr:page-header-2", "node": "section/page-header", "variation": "title-only", "job": "Page header with breadcrumb, status badge and actions"}
+{"id": "7ovr:page-header-3", "node": "section/page-header", "variation": "title-tabs", "job": "Page header with tabs switching content below"}
+{"id": "7ovr:page-header-4", "node": "section/page-header", "variation": "title-only", "job": "Detail header with back link, status and avatars"}
+{"id": "7ovr:page-header-5", "node": "section/page-header", "variation": "title-only", "job": "List header with search, selects and view toggle"}
+{"id": "7ovr:page-header-6", "node": "section/page-header", "variation": "title-only", "job": "Header with eyebrow, actions and four metric stats"}
+{"id": "7ovr:pricing-1", "node": "section/pricing", "variation": "tier-cards", "job": "Three tier plan cards with billing toggle"}
+{"id": "7ovr:pricing-2", "node": "section/pricing", "variation": "tier-cards", "job": "Two plan split panel with billing toggle"}
+{"id": "7ovr:pricing-3", "node": "section/pricing", "variation": "single-plan", "job": "Single centered plan card with feature checklist"}
+{"id": "7ovr:pricing-4", "node": "section/pricing", "variation": "billing-toggle", "job": "Tier grid with annual savings toggle and billed totals"}
+{"id": "7ovr:pricing-5", "node": "section/pricing", "variation": "comparison-table", "job": "Pricing comparison table with grouped feature rows"}
+{"id": "7ovr:profile-1", "node": "page/record", "variation": "record-profile", "job": "Public profile with cover, follower stats and tabs"}
+{"id": "7ovr:profile-2", "node": "component/card", "variation": "profile-card", "job": "Compact profile card with stats and follow actions"}
+{"id": "7ovr:profile-3", "node": "component/card", "variation": "profile-card", "job": "Organization profile card with stats and member avatars"}
+{"id": "7ovr:roadmap-1", "node": "component/board", "variation": "multi-column-board", "job": "Roadmap board of planned, in progress, shipped columns"}
+{"id": "7ovr:roadmap-2", "node": "component/board", "variation": "multi-column-board", "job": "Roadmap phases Now, Next, Later with progress"}
+{"id": "7ovr:roadmap-3", "node": "component/list", "variation": "standard-list", "job": "Upvotable feature request rows with status badges"}
+{"id": "7ovr:roadmap-4", "node": "component/board", "variation": "multi-column-board", "job": "Quarterly roadmap columns of feature cards"}
+{"id": "7ovr:saas-landing", "node": "page/home", "variation": "home-saas", "job": "Full SaaS marketing homepage built from blocks"}
+{"id": "7ovr:saas-landing-2", "node": "page/home", "variation": "home-product-launch", "job": "Product-tour SaaS landing page template"}
+{"id": "7ovr:search-1", "node": "component/search", "variation": "with-filters", "job": "Faceted search panel narrowing results by type"}
+{"id": "7ovr:search-2", "node": "component/search", "variation": "results-display", "job": "Search results page with count and empty state"}
+{"id": "7ovr:search-3", "node": "component/search", "variation": "command-style", "job": "Grouped command palette for pages, people, files"}
+{"id": "7ovr:search-4", "node": "component/search", "variation": "with-suggestions", "job": "Search input with keyboard navigable autocomplete suggestions"}
+{"id": "7ovr:settings-1", "node": "section/settings-panel", "variation": "card-blocks", "job": "Settings cards for profile fields and notification switches"}
+{"id": "7ovr:settings-2", "node": "section/settings-panel", "variation": "form-layout", "job": "Compact account settings card with fields and toggles"}
+{"id": "7ovr:settings-3", "node": "page/settings", "variation": "settings-tabbed", "job": "Tabbed settings page for account, billing, team"}
+{"id": "7ovr:settings-4", "node": "page/settings", "variation": "settings-sidebar", "job": "Settings layout with section nav swapping form cards"}
+{"id": "7ovr:sidebar-1", "node": "section/shell", "variation": "shell-rail", "job": "App shell with collapsible icon sidebar and stats content"}
+{"id": "7ovr:sidebar-2", "node": "section/shell", "variation": "shell-flat", "job": "App shell with flat nav beside a task table"}
+{"id": "7ovr:sidebar-3", "node": "section/sidebar", "variation": "icon-rail", "job": "Sidebar collapsing to an icon rail with tooltips"}
+{"id": "7ovr:startup", "node": "page/home", "variation": "home-saas", "job": "Lean startup landing page for early products and waitlists"}
+{"id": "7ovr:stats-1", "node": "section/stats", "variation": "row", "job": "Four-up stat band with percentage change badges"}
+{"id": "7ovr:stats-2", "node": "section/stats", "variation": "row", "job": "Minimal oversized numbers band without decoration"}
+{"id": "7ovr:stats-3", "node": "section/kpis", "variation": "metric-cards", "job": "Four stat cards with metric trend arrows"}
+{"id": "7ovr:stats-4", "node": "section/stats", "variation": "counter", "job": "Stats counting up when scrolled into view"}
+{"id": "7ovr:stats-5", "node": "section/stats", "variation": "row", "job": "Inverted high-contrast stats panel of four figures"}
+{"id": "7ovr:status-1", "node": "component/list", "variation": "standard-list", "job": "Status summary banner with per-service uptime list"}
+{"id": "7ovr:status-2", "node": "component/timeline", "variation": "activity-timeline", "job": "Incident history grouped by date with update timeline"}
+{"id": "7ovr:status-3", "node": "component/chart", "variation": "bar-chart", "job": "Ninety day per-service uptime bars with legend"}
+{"id": "7ovr:steps-1", "node": "component/steps", "variation": "horizontal-stepper", "job": "Horizontal numbered stepper across completed, current, upcoming"}
+{"id": "7ovr:steps-2", "node": "component/steps", "variation": "vertical-stepper", "job": "Vertical stepper rail with step titles and descriptions"}
+{"id": "7ovr:steps-3", "node": "component/steps", "variation": "progress-steps", "job": "Wizard header with step counter, progress bar, buttons"}
+{"id": "7ovr:survey-1", "node": "component/form", "variation": "multi-step", "job": "Four-question feedback survey mixing choice and freeform"}
+{"id": "7ovr:survey-2", "node": "component/form", "variation": "multi-step", "job": "Net promoter survey with rating scale then comment"}
+{"id": "7ovr:survey-3", "node": "component/dialog", "variation": "form-dialog", "job": "Cancellation exit survey dialog with reason questions"}
+{"id": "7ovr:survey-4", "node": "component/form", "variation": null, "job": "Inline was this helpful rating with optional follow-up", "edge": "inline-feedback-survey"}
+{"id": "7ovr:survey-5", "node": "component/form", "variation": "multi-step", "job": "Full page survey showing one question per screen"}
+{"id": "7ovr:survey-6", "node": "component/form", "variation": "multi-step", "job": "Branching qualification survey disabling inapplicable questions"}
+{"id": "7ovr:table-1", "node": "component/table", "variation": "data-table", "job": "Team data table with search, selection and pagination"}
+{"id": "7ovr:table-2", "node": "component/table", "variation": "with-toolbar-filters", "job": "Invoices table with filters and bulk actions"}
+{"id": "7ovr:table-3", "node": "component/table", "variation": "standard-table", "job": "Invoice line items table summing subtotal, tax, total"}
+{"id": "7ovr:team-1", "node": "section/team", "variation": "card-grid", "job": "Team member cards with bios and social links"}
+{"id": "7ovr:team-2", "node": "section/team", "variation": "photo-grid", "job": "Divided team grid of avatars, roles, department badges"}
+{"id": "7ovr:team-3", "node": "section/team", "variation": "hover-details", "job": "Team cards revealing bio and links on hover"}
+{"id": "7ovr:testimonials-1", "node": "section/testimonials", "variation": "card-grid", "job": "Three customer quote cards in hairline-divided grid"}
+{"id": "7ovr:testimonials-2", "node": "section/testimonials", "variation": "big-quote", "job": "One oversized pull quote with three outcome metrics"}
+{"id": "7ovr:testimonials-3", "node": "section/testimonials", "variation": "card-grid", "job": "Seven-card wall of love quote grid"}
+{"id": "7ovr:testimonials-4", "node": "section/testimonials", "variation": "ratings", "job": "Review cards leading with five-star rating rows"}
+{"id": "7ovr:timeline-1", "node": "component/timeline", "variation": "vertical-timeline", "job": "Vertical milestone rail with status badge per node"}
+{"id": "7ovr:timeline-2", "node": "component/timeline", "variation": "vertical-timeline", "job": "Year entries alternating either side of centered spine"}
+{"id": "7ovr:timeline-3", "node": "component/timeline", "variation": "activity-timeline", "job": "Day-grouped activity feed with actor avatar rows"}

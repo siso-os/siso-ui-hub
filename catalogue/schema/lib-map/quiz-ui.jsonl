@@ -1,0 +1,15 @@
+{"id": "quiz-ui:quiz-choice", "node": "atom/choice", "variation": "card", "job": "Single- and multi-select answer cards for quiz questions"}
+{"id": "quiz-ui:quiz-cn", "node": null, "variation": null, "job": "className composition helper for every quiz-ui component"}
+{"id": "quiz-ui:quiz-core", "node": null, "variation": null, "job": "Headless quiz engine with branching and React hooks"}
+{"id": "quiz-ui:quiz-dialog", "node": "component/dialog", "variation": "onboarding-dialog", "job": "Modal dialog embedding the whole quiz funnel"}
+{"id": "quiz-ui:quiz-email-input", "node": "component/field", "variation": "validation-states", "job": "Email capture field with format validation"}
+{"id": "quiz-ui:quiz-image-choice", "node": "atom/choice", "variation": "card", "job": "Image-based single-select answer grid for quiz steps"}
+{"id": "quiz-ui:quiz-navigation", "node": "atom/button", "variation": "group", "job": "Back and next controls, next disabled until answered"}
+{"id": "quiz-ui:quiz-progress", "node": "atom/progress", "variation": "linear", "job": "Progress bar labelled with current step of total"}
+{"id": "quiz-ui:quiz-rating", "node": "atom/slider", "variation": "rating", "job": "Star or numeric rating scale for quiz answers"}
+{"id": "quiz-ui:quiz-result", "node": "component/widget", "variation": null, "job": "Render result content only once the funnel completes", "edge": "completion-gate"}
+{"id": "quiz-ui:quiz-root", "node": "section/onboarding", "variation": "wizard", "job": "Top-level funnel wrapper owning the quiz engine"}
+{"id": "quiz-ui:quiz-slider", "node": "atom/slider", "variation": "slider", "job": "Single-thumb slider for numeric quiz answers"}
+{"id": "quiz-ui:quiz-step", "node": "section/onboarding", "variation": null, "job": "Renders the active question heading and answer input", "edge": "question-step"}
+{"id": "quiz-ui:quiz-text-input", "node": "atom/text-input", "variation": "text-input", "job": "Free-text input for writing a quiz answer"}
+{"id": "quiz-ui:quiz-transition", "node": "atom/layout", "variation": null, "job": "Fade and slide transition wrapper for step changes", "edge": "step-transition"}

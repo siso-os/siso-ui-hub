@@ -1,0 +1,49 @@
+{"id": "audiocn:audio-device-select", "node": "component/select", "variation": "standard-select", "job": "Pick a microphone, speaker or source with device states"}
+{"id": "audiocn:audio-player", "node": "component/player", "variation": "audio-player", "job": "Composable audio player: transport, seek, volume, rate, loop, shortcuts"}
+{"id": "audiocn:bar-visualizer", "node": "component/player", "variation": "waveform-visualizer", "job": "Frequency-band bars for audio with idle and mirrored modes"}
+{"id": "audiocn:channel-strip", "node": "component/widget", "variation": null, "job": "One mixer channel: meter, fader, controls and master variant", "edge": "channel-strip"}
+{"id": "audiocn:channel-toggle", "node": "atom/button", "variation": "toggle", "job": "Mute, solo and monitor toggle buttons with pressed colours"}
+{"id": "audiocn:clip-indicator", "node": "atom/status-dot", "variation": "standard", "job": "Clip light that holds after clipping, click to reset"}
+{"id": "audiocn:core", "node": null, "variation": null, "job": "Decibel maths, ballistics, zones, tapers and frame loop utilities"}
+{"id": "audiocn:db-readout", "node": "atom/text", "variation": "body", "job": "Numeric dB level label updating at a readable rate"}
+{"id": "audiocn:db-scale", "node": "component/widget", "variation": null, "job": "Tick marks and labels for a decibel range", "edge": "db-scale"}
+{"id": "audiocn:electric", "node": null, "variation": null, "job": "Shared canvas drawing for the electric visualizers"}
+{"id": "audiocn:electric-bar-visualizer", "node": "component/player", "variation": "waveform-visualizer", "job": "Frequency bars drawn as crackling filaments with sparks"}
+{"id": "audiocn:electric-waveform", "node": "component/player", "variation": "waveform-visualizer", "job": "Crackling electric waveform trace following the frequency bands"}
+{"id": "audiocn:fader", "node": "atom/slider", "variation": "vertical", "job": "Vertical volume fader in decibels with scale and detents"}
+{"id": "audiocn:knob", "node": "atom/slider", "variation": "dial-knob", "job": "Rotary SVG knob with drag modes, fine adjust and reset"}
+{"id": "audiocn:level-meter", "node": "atom/progress", "variation": "meter-gauge", "job": "Peak and RMS level meter with zones and peak hold"}
+{"id": "audiocn:live-waveform", "node": "component/player", "variation": "waveform-visualizer", "job": "Canvas live-signal waveform: scrolling history, bars or line"}
+{"id": "audiocn:mic-setup", "node": "section/settings-panel", "variation": "form-layout", "job": "Choose and check a microphone with live preview"}
+{"id": "audiocn:mixer", "node": "component/widget", "variation": null, "job": "Container for channel strips with shared settings and master", "edge": "mixer"}
+{"id": "audiocn:music-player", "node": "component/player", "variation": "audio-player", "job": "Playlist player with waveform seek bar and shuffle"}
+{"id": "audiocn:pan-control", "node": "atom/slider", "variation": "slider", "job": "Left-right balance slider with centre detent and reset"}
+{"id": "audiocn:parameter-slider", "node": "atom/slider", "variation": "with-ticks", "job": "Labelled slider with numeric input, unit and marks"}
+{"id": "audiocn:quick-audio-popover", "node": "component/popover", "variation": "standard-popover", "job": "Compact mic and system audio controls behind a toolbar button"}
+{"id": "audiocn:smooth-waveform", "node": "component/player", "variation": "waveform-visualizer", "job": "Audio-following line, smooth wave or oscilloscope trace"}
+{"id": "audiocn:sound-pad", "node": "component/widget", "variation": null, "job": "Trigger pad with one-shot, toggle, hold and loop modes", "edge": "sound-pad"}
+{"id": "audiocn:soundboard", "node": "component/widget", "variation": null, "job": "Grid of sound pads with hotkeys and master volume", "edge": "soundboard"}
+{"id": "audiocn:spectrum", "node": "component/player", "variation": "waveform-visualizer", "job": "Frequency spectrum analyser with peak hold, grid and axes"}
+{"id": "audiocn:system-audio-mixer", "node": "component/widget", "variation": null, "job": "Full mixer: mic, system audio, music, pads and master", "edge": "audio-mixer"}
+{"id": "audiocn:system-audio-settings", "node": "section/settings-panel", "variation": "sections", "job": "Turn system audio capture on, set level, watch meter"}
+{"id": "audiocn:track-list", "node": "component/list", "variation": "standard-list", "job": "Track list with playing states and arrow-key navigation"}
+{"id": "audiocn:use-audio-analyser", "node": null, "variation": null, "job": "Meter and visual frame sources from a media source"}
+{"id": "audiocn:use-audio-config", "node": null, "variation": null, "job": "Context passing orientation, size, range and ballistics down"}
+{"id": "audiocn:use-audio-context", "node": null, "variation": null, "job": "Shared AudioContext that resumes on first user gesture"}
+{"id": "audiocn:use-audio-devices", "node": null, "variation": null, "job": "Audio device list with permission state and live updates"}
+{"id": "audiocn:use-audio-player", "node": null, "variation": null, "job": "Playback state for an audio element the hook owns"}
+{"id": "audiocn:use-clip-hold", "node": null, "variation": null, "job": "Clip detection with hold time, count and reset"}
+{"id": "audiocn:use-demo-signal", "node": null, "variation": null, "job": "Synthetic speech, music, tone or noise demo signals"}
+{"id": "audiocn:use-frame-source", "node": null, "variation": null, "job": "Subscribe a callback to a frame source with cleanup"}
+{"id": "audiocn:use-gain-node", "node": null, "variation": null, "job": "Gain node on the shared context with click-free changes"}
+{"id": "audiocn:use-level", "node": null, "variation": null, "job": "Read a meter source into React state at low rate"}
+{"id": "audiocn:use-microphone", "node": null, "variation": null, "job": "Open a microphone as a MediaStream with processing off"}
+{"id": "audiocn:use-mixer", "node": null, "variation": null, "job": "Mixer state without audio: gain, mute, solo, pan, master"}
+{"id": "audiocn:use-reduced-motion", "node": null, "variation": null, "job": "True when the user asked the system to reduce motion"}
+{"id": "audiocn:use-sound", "node": null, "variation": null, "job": "Low-latency playback of short decoded sounds with voices"}
+{"id": "audiocn:use-system-audio", "node": null, "variation": null, "job": "Capture system or tab audio via the screen-share picker"}
+{"id": "audiocn:use-visibility", "node": null, "variation": null, "job": "Whether an element is on screen, in a ref"}
+{"id": "audiocn:use-waveform-data", "node": null, "variation": null, "job": "Decode audio to cached waveform peaks"}
+{"id": "audiocn:use-web-audio-mixer", "node": null, "variation": null, "job": "Bind mixer state to a Web Audio graph with ducking"}
+{"id": "audiocn:volume-control", "node": "atom/slider", "variation": "slider", "job": "Volume slider with mute button and perceptual curve"}
+{"id": "audiocn:waveform", "node": "component/player", "variation": "waveform-visualizer", "job": "Static clip waveform with playhead, seeking and markers"}

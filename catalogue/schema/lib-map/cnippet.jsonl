@@ -1,0 +1,1125 @@
+{"id": "cnippet:accordion", "node": "component/accordion", "variation": "standard-accordion", "job": "Expandable collapsible content sections with triggers"}
+{"id": "cnippet:alert", "node": "component/alert", "variation": "inline-alert", "job": "Inline contextual feedback message block"}
+{"id": "cnippet:alert-dialog", "node": "component/dialog", "variation": "confirm-alert", "job": "Confirmation dialog requiring an explicit user action"}
+{"id": "cnippet:animated-number", "node": "component/stat", "variation": "counter", "job": "Number animates between values with spring interpolation"}
+{"id": "cnippet:autocomplete", "node": "component/select", "variation": "combobox", "job": "Text input with filtered suggestion dropdown"}
+{"id": "cnippet:avatar", "node": "atom/avatar", "variation": "standard", "job": "User profile image or initials"}
+{"id": "cnippet:badge", "node": "atom/badge", "variation": "badge", "job": "Small status label or count indicator"}
+{"id": "cnippet:breadcrumb", "node": "component/breadcrumb", "variation": "text-breadcrumb", "job": "Page hierarchy navigation trail"}
+{"id": "cnippet:breathing-text", "node": "atom/text", "variation": null, "job": "Characters pulse scale and opacity in a wave", "edge": "breathing-text"}
+{"id": "cnippet:button", "node": "atom/button", "variation": "primary", "job": "Primary action trigger button"}
+{"id": "cnippet:calendar", "node": "component/calendar", "variation": "month-calendar", "job": "Month grid for selecting a date"}
+{"id": "cnippet:card", "node": "component/card", "variation": "standard-card", "job": "Contained content surface with header and footer"}
+{"id": "cnippet:carousel", "node": "component/carousel", "variation": "slider-carousel", "job": "Sliding carousel of items with controls"}
+{"id": "cnippet:chart", "node": "component/chart", "variation": null, "job": "Chart wrapper rendering bar, line and area series", "edge": "chart-primitives"}
+{"id": "cnippet:checkbox", "node": "atom/choice", "variation": "checkbox", "job": "Single checkbox input for one option"}
+{"id": "cnippet:checkbox-group", "node": "atom/choice", "variation": "group", "job": "Group of related checkboxes"}
+{"id": "cnippet:collapsible", "node": "component/accordion", "variation": "collapsible", "job": "Show or hide content behind a trigger"}
+{"id": "cnippet:colorful-text", "node": "atom/text", "variation": null, "job": "Characters animate in with randomized vibrant colours", "edge": "colorful-text"}
+{"id": "cnippet:combobox", "node": "component/select", "variation": "combobox", "job": "Searchable select input with popup list"}
+{"id": "cnippet:command", "node": "component/command", "variation": "command-menu", "job": "Command menu listing searchable actions"}
+{"id": "cnippet:context-menu", "node": "component/menu", "variation": "context-menu", "job": "Right-click menu of contextual actions"}
+{"id": "cnippet:counting-number", "node": "component/stat", "variation": "counter", "job": "Number counts from start value to target value"}
+{"id": "cnippet:csp-provider", "node": null, "variation": null, "job": "Sets a content security policy for the app"}
+{"id": "cnippet:dialog", "node": "component/dialog", "variation": "modal-dialog", "job": "Modal dialog window overlaying the page"}
+{"id": "cnippet:direction-provider", "node": null, "variation": null, "job": "Provides text direction context to the tree"}
+{"id": "cnippet:drawer", "node": "component/sheet", "variation": "bottom-sheet", "job": "Bottom sheet panel sliding up from the edge"}
+{"id": "cnippet:empty", "node": "component/empty", "variation": "icon-text", "job": "Empty state placeholder with icon and text"}
+{"id": "cnippet:encrypted-text", "node": "atom/text", "variation": null, "job": "Text decrypts from gibberish character by character", "edge": "encrypted-text"}
+{"id": "cnippet:field", "node": "component/field", "variation": "text-input", "job": "Form field wrapper with label and error"}
+{"id": "cnippet:fieldset", "node": "component/field", "variation": null, "job": "Groups related form fields under a legend", "edge": "field-group"}
+{"id": "cnippet:flip-words", "node": "atom/text", "variation": null, "job": "Words flip in 3D on a timer", "edge": "flip-words"}
+{"id": "cnippet:form", "node": "component/form", "variation": "with-validation", "job": "Form container wiring fields and validation messages"}
+{"id": "cnippet:frame", "node": "component/card", "variation": null, "job": "Framed content panel with header, title and footer", "edge": "frame-panel"}
+{"id": "cnippet:group", "node": "atom/layout", "variation": null, "job": "Joins adjacent controls into one segmented unit", "edge": "control-group"}
+{"id": "cnippet:input", "node": "atom/text-input", "variation": "text-input", "job": "Text input field"}
+{"id": "cnippet:input-group", "node": "component/field", "variation": "with-addon", "job": "Input with prefix and suffix addons"}
+{"id": "cnippet:item", "node": "component/list", "variation": "standard-list", "job": "Row item with media, title, description and actions"}
+{"id": "cnippet:kbd", "node": "atom/text", "variation": "keyboard", "job": "Keyboard shortcut key display"}
+{"id": "cnippet:label", "node": "atom/text", "variation": null, "job": "Form field label text", "edge": "form-label"}
+{"id": "cnippet:letter-3d-swap", "node": "atom/text", "variation": null, "job": "Letters rotate in 3D on hover revealing second face", "edge": "letter-3d-swap"}
+{"id": "cnippet:letter-swap-hover", "node": "atom/text", "variation": null, "job": "Letters swap position vertically on hover", "edge": "letter-swap-hover"}
+{"id": "cnippet:m-animated-number-1", "node": "atom/text-input", "variation": "stepper", "job": "Stepper buttons spring a number between values"}
+{"id": "cnippet:m-animated-number-2", "node": "component/upload", "variation": "progress-tracking", "job": "Upload progress bar with animating percentage label"}
+{"id": "cnippet:m-animated-number-3", "node": "section/kpis", "variation": "metric-cards", "job": "Three dashboard KPI cards spring on multiplier toggle"}
+{"id": "cnippet:m-breathing-text-1", "node": "atom/text", "variation": null, "job": "Variable font weight and width axes breathe left to right", "edge": "breathing-text"}
+{"id": "cnippet:m-breathing-text-2", "node": "atom/text", "variation": null, "job": "Short logotype word pulses outward from the centre", "edge": "breathing-text"}
+{"id": "cnippet:m-breathing-text-3", "node": "atom/text", "variation": null, "job": "Heading and subtitle breathe with opposite stagger directions", "edge": "breathing-text"}
+{"id": "cnippet:m-colorful-text-1", "node": "section/hero", "variation": "centered-text", "job": "Hero headline reveals characters in random vibrant colours"}
+{"id": "cnippet:m-colorful-text-2", "node": "atom/text", "variation": null, "job": "Brand wordmark reveals characters in a custom palette", "edge": "colorful-text"}
+{"id": "cnippet:m-colorful-text-3", "node": "atom/text", "variation": null, "job": "Button replays colour animation across cycling phrases", "edge": "colorful-text"}
+{"id": "cnippet:m-counting-number-1", "node": "section/stats", "variation": "counter", "job": "Four counters animate a social-proof stats grid"}
+{"id": "cnippet:m-counting-number-2", "node": "section/kpis", "variation": "single-stat", "job": "Single full-width hero metric counts up on demand"}
+{"id": "cnippet:m-counting-number-3", "node": "section/kpis", "variation": "metric-cards", "job": "Three gradient counters inside bordered dashboard cards"}
+{"id": "cnippet:m-encrypted-text-1", "node": "section/hero", "variation": "centered-text", "job": "Hero headline decrypts left to right on mount"}
+{"id": "cnippet:m-encrypted-text-2", "node": "component/code", "variation": "terminal", "job": "Terminal commands decrypt sequentially on Enter"}
+{"id": "cnippet:m-encrypted-text-3", "node": "atom/switch", "variation": "toggle-group", "job": "Buttons replay the decrypt effect per reveal direction"}
+{"id": "cnippet:m-flip-words-1", "node": "section/hero", "variation": "centered-text", "job": "Adjectives flip inside a hero heading"}
+{"id": "cnippet:m-flip-words-2", "node": "atom/button", "variation": "primary", "job": "Full-width CTA button flips action verbs"}
+{"id": "cnippet:m-flip-words-3", "node": "section/testimonials", "variation": "big-quote", "job": "Testimonial pull-quote cycles the audience descriptor"}
+{"id": "cnippet:m-letter-3d-swap-1", "node": "atom/link", "variation": "navigation", "job": "Navigation links rotate letters in 3D on hover"}
+{"id": "cnippet:m-letter-3d-swap-2", "node": "atom/button", "variation": "group", "job": "Filled and outlined CTAs rotate letters opposite ways"}
+{"id": "cnippet:m-letter-3d-swap-3", "node": "atom/text", "variation": null, "job": "Four rows demonstrate letter rotation directions", "edge": "letter-3d-swap"}
+{"id": "cnippet:m-letter-swap-hover-1", "node": "atom/link", "variation": "navigation", "job": "Navigation links swap letters vertically on hover"}
+{"id": "cnippet:m-letter-swap-hover-2", "node": "atom/button", "variation": "group", "job": "Filled and outlined buttons swap letters opposite ways"}
+{"id": "cnippet:m-letter-swap-hover-3", "node": "section/stats", "variation": "row", "job": "Stats row labels swap in beneath stat figures"}
+{"id": "cnippet:m-morphing-text-1", "node": "section/hero", "variation": "centered-text", "job": "Hero action words morph in sequence"}
+{"id": "cnippet:m-morphing-text-2", "node": "component/card", "variation": "product-card", "job": "Tech stack names morph inside a product card"}
+{"id": "cnippet:m-morphing-text-3", "node": "section/hero", "variation": "centered-text", "job": "Hero headline morphs beneath a static eyebrow and body"}
+{"id": "cnippet:m-parallax-floating-1", "node": "atom/layout", "variation": "parallax", "job": "Geometric shapes drift at depths following the cursor"}
+{"id": "cnippet:m-parallax-floating-2", "node": "atom/layout", "variation": "parallax", "job": "Card with glow blobs floats on independent depth layers"}
+{"id": "cnippet:m-parallax-floating-3", "node": "atom/layout", "variation": "parallax", "job": "Abstract symbols drift at depths following the cursor"}
+{"id": "cnippet:m-progressive-blur-1", "node": "component/list", "variation": "standard-list", "job": "Content list fades out with progressive blur"}
+{"id": "cnippet:m-progressive-blur-2", "node": "component/carousel", "variation": "cards-carousel", "job": "Card row blurs at the left and right edges"}
+{"id": "cnippet:m-progressive-blur-3", "node": "section/nav", "variation": "simple-bar", "job": "Horizontal nav bar blurs overflow at the right edge"}
+{"id": "cnippet:m-random-letter-swap-1", "node": "atom/link", "variation": "navigation", "job": "Navigation links shuffle letters independently on hover"}
+{"id": "cnippet:m-random-letter-swap-2", "node": "atom/button", "variation": "group", "job": "CTA buttons shuffle letters with reversed contrast"}
+{"id": "cnippet:m-random-letter-swap-3", "node": "atom/badge", "variation": "tag-chip", "job": "Tag chips shuffle their letters on hover"}
+{"id": "cnippet:m-rolling-text-1", "node": "section/hero", "variation": "centered-text", "job": "Hero letters roll up with tight stagger on mount"}
+{"id": "cnippet:m-rolling-text-2", "node": "atom/text", "variation": "heading", "job": "Three display lines roll up with incremental delays"}
+{"id": "cnippet:m-rolling-text-3", "node": "atom/link", "variation": "navigation", "job": "Nav links roll down with per-item delay"}
+{"id": "cnippet:m-rotating-text-1", "node": "section/hero", "variation": "centered-text", "job": "Adjectives rotate inside a hero heading"}
+{"id": "cnippet:m-rotating-text-2", "node": "section/cta", "variation": "card", "job": "Action phrases rotate inside a bordered CTA card"}
+{"id": "cnippet:m-rotating-text-3", "node": "section/testimonials", "variation": "big-quote", "job": "Testimonial rotates the target audience descriptor"}
+{"id": "cnippet:m-scramble-hover-1", "node": "atom/link", "variation": "navigation", "job": "Navigation links scramble independently on hover"}
+{"id": "cnippet:m-scramble-hover-2", "node": "section/hero", "variation": "centered-text", "job": "Hero heading decodes outward from the centre"}
+{"id": "cnippet:m-scramble-hover-3", "node": "component/card", "variation": "standard-card", "job": "Repository card title and metadata scramble on hover"}
+{"id": "cnippet:m-scroll-progress-1", "node": "atom/progress", "variation": "scroll-progress", "job": "Fixed bar tracks the window scroll position"}
+{"id": "cnippet:m-scroll-progress-2", "node": "atom/progress", "variation": "linear", "job": "Gradient bar tracks scroll inside a container"}
+{"id": "cnippet:m-scroll-progress-3", "node": "atom/progress", "variation": "linear", "job": "Rounded progress bar shows live scroll percentage"}
+{"id": "cnippet:m-scroll-reveal-1", "node": "section/features", "variation": "card-grid", "job": "Feature cards slide up and fade in on scroll"}
+{"id": "cnippet:m-scroll-reveal-2", "node": "section/features", "variation": "split-text-image", "job": "Feature image and text slide in from opposite sides"}
+{"id": "cnippet:m-scroll-reveal-3", "node": "component/list", "variation": "standard-list", "job": "List items slide in with incrementing delay"}
+{"id": "cnippet:m-scroll-swap-text-1", "node": "component/list", "variation": "standard-list", "job": "Feature list items slide in as the container scrolls"}
+{"id": "cnippet:m-scroll-swap-text-2", "node": "section/how", "variation": "numbered-steps", "job": "Numbered process steps swap in at the scroll threshold"}
+{"id": "cnippet:m-scroll-swap-text-3", "node": "section/testimonials", "variation": "big-quote", "job": "Testimonial pull quotes appear one at a time"}
+{"id": "cnippet:m-scroll-velocity-text-1", "node": "section/logos", "variation": "marquee", "job": "Tech-stack word marquee speeds up on scroll"}
+{"id": "cnippet:m-scroll-velocity-text-2", "node": "section/logos", "variation": "marquee", "job": "Two word rows scroll opposite ways, velocity reactive"}
+{"id": "cnippet:m-scroll-velocity-text-3", "node": "section/logos", "variation": "marquee", "job": "Badge pills scroll continuously at fixed speed"}
+{"id": "cnippet:m-sliding-number-1", "node": "atom/text-input", "variation": "stepper", "job": "Plus and minus buttons drive an odometer display"}
+{"id": "cnippet:m-sliding-number-2", "node": "atom/text", "variation": null, "job": "Clock digits slide as hours, minutes and seconds", "edge": "live-clock"}
+{"id": "cnippet:m-sliding-number-3", "node": "section/pricing", "variation": "tier-cards", "job": "Price and seat count animate on pricing tier change"}
+{"id": "cnippet:m-spinning-text-1", "node": "atom/badge", "variation": "icon-badge", "job": "Spinning text ring orbits a centered icon"}
+{"id": "cnippet:m-spinning-text-2", "node": "atom/button", "variation": "icon-button", "job": "Ring of text orbits a clickable arrow button"}
+{"id": "cnippet:m-spinning-text-3", "node": "atom/text", "variation": null, "job": "Two text rings spin at different radii and speeds", "edge": "spinning-text"}
+{"id": "cnippet:m-splitting-text-1", "node": "section/hero", "variation": "centered-text", "job": "Hero headline words slide up with spring transition"}
+{"id": "cnippet:m-splitting-text-2", "node": "atom/text", "variation": null, "job": "Buttons switch all five character split presets", "edge": "splitting-text"}
+{"id": "cnippet:m-splitting-text-3", "node": "atom/text", "variation": null, "job": "Eyebrow, headline and body split with different presets", "edge": "splitting-text"}
+{"id": "cnippet:m-stacking-cards-1", "node": "section/features", "variation": "card-grid", "job": "Feature cards stack as you scroll through the section"}
+{"id": "cnippet:m-stacking-cards-2", "node": "section/testimonials", "variation": "card-grid", "job": "Testimonial cards stack on scroll with subtle scaling"}
+{"id": "cnippet:m-stacking-cards-3", "node": "section/how", "variation": "numbered-steps", "job": "Numbered process steps stack sequentially on scroll"}
+{"id": "cnippet:m-text-along-path-1", "node": "atom/text", "variation": null, "job": "Text loops continuously around a circular path", "edge": "text-on-path"}
+{"id": "cnippet:m-text-along-path-2", "node": "atom/text", "variation": null, "job": "Text flows along a sinusoidal wave automatically", "edge": "text-on-path"}
+{"id": "cnippet:m-text-along-path-3", "node": "atom/text", "variation": null, "job": "Text follows a cubic Bezier curve with visible stroke", "edge": "text-on-path"}
+{"id": "cnippet:m-text-cursor-proximity-1", "node": "atom/text", "variation": null, "job": "Characters scale up as the cursor approaches", "edge": "cursor-proximity-text"}
+{"id": "cnippet:m-text-cursor-proximity-2", "node": "atom/text", "variation": null, "job": "Hidden lines appear as the cursor sweeps past", "edge": "cursor-proximity-text"}
+{"id": "cnippet:m-text-cursor-proximity-3", "node": "atom/text", "variation": null, "job": "Characters grow and recolour near the cursor", "edge": "cursor-proximity-text"}
+{"id": "cnippet:m-text-generate-effect-1", "node": "section/hero", "variation": "centered-text", "job": "Words blur-fade in for a landing page headline"}
+{"id": "cnippet:m-text-generate-effect-2", "node": "component/message", "variation": "streaming-text", "job": "Assistant response card regenerates its text on demand"}
+{"id": "cnippet:m-text-generate-effect-3", "node": "atom/text", "variation": null, "job": "Eyebrow, headline and body blur-fade with stagger", "edge": "text-generate-effect"}
+{"id": "cnippet:m-text-gradient-1", "node": "section/hero", "variation": "centered-text", "job": "Hero heading sweeps a looping violet-to-cyan gradient"}
+{"id": "cnippet:v-toggle-group-1", "node": "atom/switch", "variation": "toggle-group", "job": "Default three-option toggle group with outline variant"}
+{"id": "cnippet:v-toggle-group-10", "node": "atom/switch", "variation": "toggle-group", "job": "Language toggle beside live code snippet preview"}
+{"id": "cnippet:v-toggle-group-11", "node": "atom/switch", "variation": "toggle-group", "job": "Sort direction toggle for a table column"}
+{"id": "cnippet:v-toggle-group-12", "node": "atom/switch", "variation": "toggle-group", "job": "Issue priority picker with colour-coded labels"}
+{"id": "cnippet:v-toggle-group-13", "node": "component/picker", "variation": "presets", "job": "Preset date-range toggles above a live stats grid"}
+{"id": "cnippet:v-toggle-group-14", "node": "component/dock", "variation": "action-toolbar", "job": "Code viewer toolbar with multi-select options"}
+{"id": "cnippet:v-toggle-group-15", "node": "atom/switch", "variation": "toggle-group", "job": "Zoom level toggle with live scale preview"}
+{"id": "cnippet:v-toggle-group-2", "node": "atom/switch", "variation": "toggle-group", "job": "Toggle groups shown in three sizes"}
+{"id": "cnippet:v-toggle-group-3", "node": "atom/switch", "variation": "toggle-group", "job": "Outlined toggle group options"}
+{"id": "cnippet:v-toggle-group-4", "node": "atom/switch", "variation": "toggle-group", "job": "Vertically stacked toggle group"}
+{"id": "cnippet:v-toggle-group-5", "node": "atom/switch", "variation": "toggle-group", "job": "Toggle group allowing several options at once"}
+{"id": "cnippet:v-toggle-group-6", "node": "atom/switch", "variation": "toggle-group", "job": "Text alignment options as an icon toggle group"}
+{"id": "cnippet:v-toggle-group-7", "node": "atom/switch", "variation": "toggle-group", "job": "Grid and list view mode switch"}
+{"id": "cnippet:v-toggle-group-8", "node": "atom/switch", "variation": "theme-toggle", "job": "Light, dark and system theme picker"}
+{"id": "cnippet:v-toggle-group-9", "node": "atom/switch", "variation": "toggle-group", "job": "Segmented picker switching pricing tier"}
+{"id": "cnippet:v-toolbar-1", "node": "component/dock", "variation": "action-toolbar", "job": "Default toolbar row of icon actions"}
+{"id": "cnippet:v-toolbar-10", "node": "component/dock", "variation": "action-toolbar", "job": "Basic toolbar of icon buttons"}
+{"id": "cnippet:v-toolbar-2", "node": "component/dock", "variation": "action-toolbar", "job": "Rich text toolbar with formatting and alignment controls"}
+{"id": "cnippet:v-toolbar-3", "node": "component/dock", "variation": "action-toolbar", "job": "Image editor toolbar for transform, zoom and export"}
+{"id": "cnippet:v-toolbar-4", "node": "component/table", "variation": "with-toolbar-filters", "job": "Table toolbar with search, filters and add row"}
+{"id": "cnippet:v-toolbar-5", "node": "component/dock", "variation": "action-toolbar", "job": "Code editor toolbar with language, wrap, copy, run"}
+{"id": "cnippet:v-toolbar-6", "node": "component/dock", "variation": "action-toolbar", "job": "Document toolbar with edit, preview and share"}
+{"id": "cnippet:v-toolbar-7", "node": "component/dock", "variation": "action-toolbar", "job": "Basic toolbar of action buttons"}
+{"id": "cnippet:v-toolbar-8", "node": "component/dock", "variation": "action-toolbar", "job": "Basic toolbar of action buttons"}
+{"id": "cnippet:v-toolbar-9", "node": "component/dock", "variation": "action-toolbar", "job": "Basic toolbar of action buttons"}
+{"id": "cnippet:v-tooltip-1", "node": "atom/tooltip", "variation": "standard", "job": "Plain hover tooltip on a button"}
+{"id": "cnippet:v-tooltip-10", "node": "component/picker", "variation": "color-picker", "job": "Palette swatches showing colour values on hover"}
+{"id": "cnippet:v-tooltip-11", "node": "atom/button", "variation": "copy-share", "job": "Copy button whose tooltip confirms the copy"}
+{"id": "cnippet:v-tooltip-12", "node": "atom/tooltip", "variation": "rich", "job": "Tooltip explaining why a feature is locked"}
+{"id": "cnippet:v-tooltip-13", "node": "component/field", "variation": "validation-states", "job": "Field validation hints via info-icon tooltips"}
+{"id": "cnippet:v-tooltip-14", "node": "atom/status-dot", "variation": "standard", "job": "Service status dots revealing uptime and latency"}
+{"id": "cnippet:v-tooltip-15", "node": "section/sidebar", "variation": "icon-rail", "job": "Icon-only nav rail naming items on hover"}
+{"id": "cnippet:v-tooltip-16", "node": "component/table", "variation": "standard-table", "job": "Permissions matrix revealing role access per cell"}
+{"id": "cnippet:v-tooltip-17", "node": "component/steps", "variation": "horizontal-stepper", "job": "Pipeline stages with status and detail per step"}
+{"id": "cnippet:v-tooltip-2", "node": "atom/tooltip", "variation": "grouped-delay", "job": "Row of tooltips sharing one hover delay"}
+{"id": "cnippet:v-tooltip-3", "node": "atom/tooltip", "variation": "standard", "job": "Tooltips with animated scale and fade entry"}
+{"id": "cnippet:v-tooltip-4", "node": "atom/tooltip", "variation": "standard", "job": "Tooltips placed on each side of a button"}
+{"id": "cnippet:v-tooltip-5", "node": "atom/tooltip", "variation": "standard", "job": "Info icon tooltip explaining a nearby field"}
+{"id": "cnippet:v-tooltip-6", "node": "atom/tooltip", "variation": "rich", "job": "Tooltip with title, body and shortcut key"}
+{"id": "cnippet:v-tooltip-7", "node": "component/dock", "variation": "action-toolbar", "job": "Icon toolbar revealing keyboard shortcuts on hover"}
+{"id": "cnippet:v-tooltip-8", "node": "atom/avatar", "variation": "avatar-group", "job": "Overlapping avatars revealing names on hover"}
+{"id": "cnippet:v-tooltip-9", "node": "atom/tooltip", "variation": "rich", "job": "Chart hover showing metric value and trend"}
+{"id": "cnippet:variable-font-cursor-proximity", "node": "atom/text", "variation": null, "job": "Font axes respond to cursor distance per letter", "edge": "cursor-proximity-text"}
+{"id": "cnippet:variable-font-hover", "node": "atom/text", "variation": null, "job": "Letter weight and width shift on hover", "edge": "font-hover-shift"}
+{"id": "cnippet:vertical-cut-reveal", "node": "atom/text", "variation": null, "job": "Text wipes in vertically per character, word or line", "edge": "text-reveal-wipe"}
+{"id": "cnippet:m-text-gradient-2", "node": "atom/text", "variation": "heading", "job": "Sweep a gradient across one word in a heading"}
+{"id": "cnippet:m-text-gradient-3", "node": "section/pricing", "variation": "tier-cards", "job": "Animate each pricing tier heading with its own gradient"}
+{"id": "cnippet:m-text-highlight-1", "node": "atom/text", "variation": null, "job": "Highlight a key phrase as it scrolls into view", "edge": "scroll-text-highlight"}
+{"id": "cnippet:m-text-highlight-2", "node": "atom/text", "variation": null, "job": "Fill a text highlight on hover and reset on leave", "edge": "hover-text-highlight"}
+{"id": "cnippet:m-text-highlight-3", "node": "atom/text", "variation": null, "job": "Demonstrate four highlight sweep directions from buttons", "edge": "text-highlight-directions"}
+{"id": "cnippet:m-text-loop-1", "node": "atom/text", "variation": null, "job": "Cycle benefit adjectives inline inside a heading", "edge": "looping-words"}
+{"id": "cnippet:m-text-loop-2", "node": "atom/badge", "variation": "badge", "job": "Cycle rich status content in a sliding pill badge"}
+{"id": "cnippet:m-text-loop-3", "node": "atom/text", "variation": null, "job": "Slide looping text left to right instead of fading", "edge": "sliding-text-loop"}
+{"id": "cnippet:m-text-morph-1", "node": "atom/text", "variation": null, "job": "Morph between words character by character from buttons", "edge": "word-morph-cycler"}
+{"id": "cnippet:m-text-morph-2", "node": "atom/text", "variation": null, "job": "Auto-cycle a plan name through strings on an interval", "edge": "auto-cycling-label"}
+{"id": "cnippet:m-text-morph-3", "node": "atom/text-input", "variation": "text-input", "job": "Morph an input placeholder as the user types"}
+{"id": "cnippet:m-text-reveal-1", "node": "atom/text", "variation": "heading", "job": "Reveal a hero headline word by word with blur"}
+{"id": "cnippet:m-text-reveal-2", "node": "atom/text", "variation": "heading", "job": "Scale in a short tagline letter by letter"}
+{"id": "cnippet:m-text-reveal-3", "node": "atom/text", "variation": "heading", "job": "Reveal eyebrow, headline and body in sequence"}
+{"id": "cnippet:m-text-roll-1", "node": "atom/text", "variation": "heading", "job": "Roll a hero headline in letter by letter in 3D"}
+{"id": "cnippet:m-text-roll-2", "node": "component/stat", "variation": "stats-row", "job": "Roll three key metrics into place in a stats row"}
+{"id": "cnippet:m-text-roll-3", "node": "atom/link", "variation": "navigation", "job": "Roll navigation links in with a stagger"}
+{"id": "cnippet:m-text-rotate-1", "node": "atom/text", "variation": "heading", "job": "Cycle an audience descriptor inline in a heading"}
+{"id": "cnippet:m-text-rotate-2", "node": "atom/text", "variation": null, "job": "Step word rotation with previous and next buttons", "edge": "text-rotate-controls"}
+{"id": "cnippet:m-text-rotate-3", "node": "atom/text", "variation": null, "job": "Rotate short feature strings with dot indicators", "edge": "feature-ticker"}
+{"id": "cnippet:m-text-scramble-1", "node": "atom/text", "variation": "heading", "job": "Scramble a hero headline then resolve it left to right"}
+{"id": "cnippet:m-text-scramble-2", "node": "atom/text", "variation": null, "job": "Replay a text scramble when clicked", "edge": "retriggerable-scramble"}
+{"id": "cnippet:m-text-scramble-3", "node": "component/stat", "variation": "counter", "job": "Scramble three metric values with staggered timing"}
+{"id": "cnippet:m-text-shimmer-1", "node": "atom/text", "variation": "heading", "job": "Sweep a slow shimmer across a large heading"}
+{"id": "cnippet:m-text-shimmer-2", "node": "atom/badge", "variation": "badge", "job": "Shimmer system-state and AI-processing status badges"}
+{"id": "cnippet:m-text-shimmer-3", "node": "atom/text", "variation": "heading", "job": "Shimmer a heading and three feature strings"}
+{"id": "cnippet:m-text-shimmer-wave-1", "node": "atom/text", "variation": "heading", "job": "Ripple a gentle shimmer wave across a hero heading"}
+{"id": "cnippet:m-text-shimmer-wave-2", "node": "atom/loader", "variation": "pulse-shimmer", "job": "Wave shimmer over short strings in loading states"}
+{"id": "cnippet:m-text-shimmer-wave-3", "node": "atom/text", "variation": null, "job": "Warp an all-caps logotype with an exaggerated wave", "edge": "shimmer-wave-logotype"}
+{"id": "cnippet:m-typewriter-1", "node": "atom/text", "variation": "heading", "job": "Type a hero headline once with a block cursor"}
+{"id": "cnippet:m-typewriter-2", "node": "atom/text", "variation": null, "job": "Loop phrases with typing and deleting", "edge": "looping-typewriter"}
+{"id": "cnippet:m-typewriter-3", "node": "component/code", "variation": "terminal", "job": "Type a monospace CLI prompt with a block cursor"}
+{"id": "cnippet:m-variable-font-cursor-proximity-1", "node": "atom/text", "variation": "heading", "job": "Thicken headline characters near the cursor"}
+{"id": "cnippet:m-variable-font-cursor-proximity-2", "node": "atom/text", "variation": null, "job": "Vary two lines of weight by cursor proximity", "edge": "cursor-proximity-weights"}
+{"id": "cnippet:m-variable-font-cursor-proximity-3", "node": "atom/link", "variation": "navigation", "job": "Weight nav items by cursor proximity"}
+{"id": "cnippet:m-variable-font-hover-1", "node": "atom/link", "variation": "navigation", "job": "Bold nav link letters outward from center on hover"}
+{"id": "cnippet:m-variable-font-hover-2", "node": "atom/text", "variation": "heading", "job": "Invert weight axes on a two-line hero heading on hover"}
+{"id": "cnippet:m-variable-font-hover-3", "node": "atom/link", "variation": "standard", "job": "Hover-weight three CTA links from different origins"}
+{"id": "cnippet:m-vertical-cut-reveal-1", "node": "atom/text", "variation": "heading", "job": "Clip a hero headline up word by word"}
+{"id": "cnippet:m-vertical-cut-reveal-2", "node": "atom/text", "variation": null, "job": "Clip-reveal a brand logotype from the center out", "edge": "cut-reveal-logotype"}
+{"id": "cnippet:m-vertical-cut-reveal-3", "node": "atom/text", "variation": "heading", "job": "Reveal stacked heading lines in alternating directions"}
+{"id": "cnippet:menu", "node": "component/menu", "variation": "dropdown-menu", "job": "Menu of actions opened from a trigger"}
+{"id": "cnippet:merge-props", "node": null, "variation": null, "job": "Utility merging props for polymorphic rendered elements"}
+{"id": "cnippet:meter", "node": "atom/progress", "variation": "meter-gauge", "job": "Gauge meter showing a value within a range"}
+{"id": "cnippet:morphing-text", "node": "atom/text", "variation": null, "job": "Morph smoothly between words with a blur", "edge": "word-morphing"}
+{"id": "cnippet:number-field", "node": "atom/text-input", "variation": "stepper", "job": "Number input with increment and decrement controls"}
+{"id": "cnippet:otp-field", "node": "atom/text-input", "variation": "otp", "job": "One-time-code input split into digit slots"}
+{"id": "cnippet:pagination", "node": "component/pagination", "variation": "numbered-pages", "job": "Numbered page links for paging through results"}
+{"id": "cnippet:parallax-floating", "node": "atom/layout", "variation": "parallax", "job": "Float layered elements at different speeds on cursor move"}
+{"id": "cnippet:popover", "node": "component/popover", "variation": "standard-popover", "job": "Anchored panel opened from a trigger"}
+{"id": "cnippet:preview-card", "node": "component/popover", "variation": "link-preview", "job": "Rich preview card shown when hovering a link"}
+{"id": "cnippet:progress", "node": "atom/progress", "variation": "linear", "job": "Linear bar showing how far along a task is"}
+{"id": "cnippet:progressive-blur", "node": "atom/layout", "variation": null, "job": "Fade content progressively at a container's edges with blur", "edge": "progressive-blur-edge-fade"}
+{"id": "cnippet:radio-group", "node": "atom/choice", "variation": "radio", "job": "Choose one option from a radio group"}
+{"id": "cnippet:random-letter-swap", "node": "atom/text", "variation": null, "job": "Swap letters in random order on hover", "edge": "random-letter-swap"}
+{"id": "cnippet:rolling-text", "node": "atom/text", "variation": null, "job": "Roll text in from top or bottom in 3D", "edge": "rolling-text"}
+{"id": "cnippet:rotating-text", "node": "atom/text", "variation": null, "job": "Rotate a single word slot with transitions", "edge": "rotating-text"}
+{"id": "cnippet:scramble-hover", "node": "atom/text", "variation": null, "job": "Scramble text on hover then resolve it", "edge": "scramble-hover"}
+{"id": "cnippet:scroll-area", "node": "atom/layout", "variation": "scroll-area", "job": "Custom scroll container with styled scrollbars"}
+{"id": "cnippet:scroll-progress", "node": "atom/progress", "variation": "scroll-progress", "job": "Bar tracking how far a page or container is scrolled"}
+{"id": "cnippet:scroll-reveal", "node": "atom/layout", "variation": "scroll-reveal", "job": "Animate children into view when they enter the viewport"}
+{"id": "cnippet:scroll-swap-text", "node": "atom/text", "variation": null, "job": "Swap and transform text tied to scroll position", "edge": "scroll-swap-text"}
+{"id": "cnippet:scroll-velocity-text", "node": "atom/text", "variation": null, "job": "Speed a text marquee up with scroll velocity", "edge": "scroll-velocity-marquee"}
+{"id": "cnippet:select", "node": "component/select", "variation": "standard-select", "job": "Choose one value from a dropdown list"}
+{"id": "cnippet:separator", "node": "atom/layout", "variation": null, "job": "Rule dividing content into sections"}
+{"id": "cnippet:sheet", "node": "component/sheet", "variation": "side-sheet", "job": "Panel sliding in from the screen edge"}
+{"id": "cnippet:sidebar", "node": "section/sidebar", "variation": null, "job": "Collapsible side navigation shell"}
+{"id": "cnippet:skeleton", "node": "atom/loader", "variation": "skeleton", "job": "Placeholder blocks shown while content loads"}
+{"id": "cnippet:slider", "node": "atom/slider", "variation": "slider", "job": "Drag a handle to pick a value along a range"}
+{"id": "cnippet:sliding-number", "node": "component/stat", "variation": "counter", "job": "Digits slide to a new value like an odometer"}
+{"id": "cnippet:spinner", "node": "atom/loader", "variation": "spinner", "job": "Spinning indicator showing work in progress"}
+{"id": "cnippet:spinning-text", "node": "atom/text", "variation": null, "job": "Rotate text arranged in a circle", "edge": "circular-spinning-text"}
+{"id": "cnippet:splitting-text", "node": "atom/text", "variation": null, "job": "Split text into characters or words to animate", "edge": "text-splitting"}
+{"id": "cnippet:stacking-cards", "node": "component/card", "variation": "stack-flip", "job": "Cards stack and scale as they scroll past"}
+{"id": "cnippet:switch", "node": "atom/switch", "variation": "standard", "job": "Toggle a setting on or off"}
+{"id": "cnippet:table", "node": "component/table", "variation": "standard-table", "job": "Rows and columns of tabular data"}
+{"id": "cnippet:tabs", "node": "component/tabs", "variation": "underline", "job": "Switch between related panels by tab"}
+{"id": "cnippet:text-along-path", "node": "atom/text", "variation": null, "job": "Lay text along an SVG path", "edge": "text-along-path"}
+{"id": "cnippet:text-cursor-proximity", "node": "atom/text", "variation": null, "job": "Scale characters by their distance from the cursor", "edge": "cursor-proximity-text"}
+{"id": "cnippet:text-generate-effect", "node": "atom/text", "variation": null, "job": "Fade words in one by one like generated output", "edge": "text-generate-effect"}
+{"id": "cnippet:text-gradient", "node": "atom/text", "variation": "heading", "job": "Flow an animated gradient through text"}
+{"id": "cnippet:text-highlight", "node": "atom/text", "variation": null, "job": "Animate a highlight behind text on scroll or hover", "edge": "animated-text-highlight"}
+{"id": "cnippet:text-loop", "node": "atom/text", "variation": null, "job": "Cycle through an array of strings", "edge": "text-loop"}
+{"id": "cnippet:text-morph", "node": "atom/text", "variation": null, "job": "Morph character by character between two strings", "edge": "text-morph"}
+{"id": "cnippet:text-reveal", "node": "atom/text", "variation": "heading", "job": "Reveal characters or words with stagger and blur"}
+{"id": "cnippet:text-roll", "node": "atom/text", "variation": null, "job": "Roll words in and out vertically like a slot machine", "edge": "text-roll"}
+{"id": "cnippet:text-rotate", "node": "atom/text", "variation": null, "job": "Rotate text in and out with configurable animation", "edge": "text-rotate"}
+{"id": "cnippet:text-scramble", "node": "atom/text", "variation": null, "job": "Scramble characters then resolve to final text", "edge": "text-scramble"}
+{"id": "cnippet:text-shimmer", "node": "atom/loader", "variation": "pulse-shimmer", "job": "Sweep a shimmer across text to show ongoing work"}
+{"id": "cnippet:text-shimmer-wave", "node": "atom/text", "variation": null, "job": "Ripple a shimmer wave across characters", "edge": "text-shimmer-wave"}
+{"id": "cnippet:textarea", "node": "atom/text-input", "variation": "textarea", "job": "Multi-line text entry field"}
+{"id": "cnippet:toast", "node": "component/toast", "variation": "basic-toast", "job": "Brief message appearing at the screen edge"}
+{"id": "cnippet:toggle", "node": "atom/button", "variation": "toggle", "job": "Button that stays pressed on or off"}
+{"id": "cnippet:toggle-group", "node": "atom/switch", "variation": "toggle-group", "job": "Row of toggle buttons with one or more on"}
+{"id": "cnippet:toolbar", "node": "component/dock", "variation": "action-toolbar", "job": "Row of controls for a surface's actions"}
+{"id": "cnippet:tooltip", "node": "atom/tooltip", "variation": "standard", "job": "Short label shown when hovering a control"}
+{"id": "cnippet:typewriter", "node": "atom/text", "variation": null, "job": "Type characters one by one with a cursor", "edge": "typewriter-text"}
+{"id": "cnippet:use-copy-to-clipboard", "node": null, "variation": null, "job": "Hook copying text to the clipboard"}
+{"id": "cnippet:use-media-query", "node": null, "variation": null, "job": "Hook reporting whether a media query matches"}
+{"id": "cnippet:use-render", "node": null, "variation": null, "job": "Base UI helper rendering props onto an element"}
+{"id": "cnippet:utils", "node": null, "variation": null, "job": "Shared class-name and style utility helpers"}
+{"id": "cnippet:v-accordion-1", "node": "component/accordion", "variation": "standard-accordion", "job": "Default expandable accordion sections"}
+{"id": "cnippet:v-accordion-10", "node": "component/accordion", "variation": "standard-accordion", "job": "Accordion of versioned release note entries"}
+{"id": "cnippet:v-accordion-11", "node": "component/accordion", "variation": "faq-accordion", "job": "Searchable FAQ accordion with live keyword filter"}
+{"id": "cnippet:v-accordion-12", "node": "component/accordion", "variation": "standard-accordion", "job": "Accordion settings navigation grouped by icon sections"}
+{"id": "cnippet:v-accordion-13", "node": "component/accordion", "variation": "standard-accordion", "job": "Job board listings with requirements and apply action"}
+{"id": "cnippet:v-accordion-14", "node": "component/accordion", "variation": "standard-accordion", "job": "Onboarding step tracker with completion state"}
+{"id": "cnippet:v-accordion-15", "node": "component/accordion", "variation": "standard-accordion", "job": "Product specifications grouped by category"}
+{"id": "cnippet:v-accordion-2", "node": "component/accordion", "variation": "standard-accordion", "job": "Single-item expandable accordion"}
+{"id": "cnippet:v-accordion-3", "node": "component/accordion", "variation": "standard-accordion", "job": "Accordion allowing several panels open at once"}
+{"id": "cnippet:v-accordion-4", "node": "component/accordion", "variation": "standard-accordion", "job": "Controlled accordion with open state set in code"}
+{"id": "cnippet:v-accordion-5", "node": "component/accordion", "variation": "standard-accordion", "job": "Accordion with plus and minus indicators"}
+{"id": "cnippet:v-accordion-6", "node": "component/accordion", "variation": "card-style", "job": "Bordered rounded accordion items"}
+{"id": "cnippet:v-accordion-7", "node": "component/accordion", "variation": "card-style", "job": "Accordion embedded inside a card"}
+{"id": "cnippet:v-accordion-8", "node": "component/accordion", "variation": "nested", "job": "Nested accordion with bordered items"}
+{"id": "cnippet:v-accordion-9", "node": "component/accordion", "variation": "standard-accordion", "job": "User list accordion with avatars and roles"}
+{"id": "cnippet:v-alert-1", "node": "component/alert", "variation": "inline-alert", "job": "Default inline alert message"}
+{"id": "cnippet:v-alert-10", "node": "component/alert", "variation": "announcement", "job": "Feature discovery alert highlighting a new feature"}
+{"id": "cnippet:v-alert-11", "node": "component/alert", "variation": "top-banner", "job": "Dismissible announcement banner with a call to action"}
+{"id": "cnippet:v-alert-12", "node": "component/alert", "variation": "cookie-consent", "job": "Cookie consent banner with accept and decline"}
+{"id": "cnippet:v-alert-13", "node": "component/alert", "variation": "inline-alert", "job": "Storage limit warning alert with a usage bar"}
+{"id": "cnippet:v-alert-14", "node": "component/alert", "variation": "inline-alert", "job": "Update available alert with async install action"}
+{"id": "cnippet:v-alert-15", "node": "component/alert", "variation": "inline-alert", "job": "Email verification alert with resend countdown"}
+{"id": "cnippet:v-alert-2", "node": "component/alert", "variation": "inline-alert", "job": "Inline alert with a leading status icon"}
+{"id": "cnippet:v-alert-3", "node": "component/alert", "variation": "inline-alert", "job": "Inline alert with icon and action buttons"}
+{"id": "cnippet:v-alert-4", "node": "component/alert", "variation": "inline-alert", "job": "Informational inline alert message"}
+{"id": "cnippet:v-alert-5", "node": "component/alert", "variation": "inline-alert", "job": "Success inline alert message"}
+{"id": "cnippet:v-alert-6", "node": "component/alert", "variation": "inline-alert", "job": "Warning inline alert message"}
+{"id": "cnippet:v-alert-7", "node": "component/alert", "variation": "inline-alert", "job": "Error inline alert message"}
+{"id": "cnippet:v-alert-8", "node": "component/alert", "variation": "inline-alert", "job": "Stacked inline alerts inside a framed panel"}
+{"id": "cnippet:v-alert-9", "node": "component/alert", "variation": "inline-alert", "job": "Alert with actions inside a framed panel"}
+{"id": "cnippet:v-alert-dialog-1", "node": "component/dialog", "variation": "confirm-alert", "job": "Default confirmation alert dialog"}
+{"id": "cnippet:v-alert-dialog-10", "node": "component/dialog", "variation": "confirm-alert", "job": "Logout confirmation alert dialog"}
+{"id": "cnippet:v-alert-dialog-11", "node": "component/dialog", "variation": "confirm-alert", "job": "File overwrite confirmation with three-way choice"}
+{"id": "cnippet:v-alert-dialog-12", "node": "component/dialog", "variation": "confirm-alert", "job": "Downgrade warning dialog listing lost features"}
+{"id": "cnippet:v-alert-dialog-13", "node": "component/dialog", "variation": "confirm-alert", "job": "Transfer ownership confirmation with typed name"}
+{"id": "cnippet:v-alert-dialog-14", "node": "component/dialog", "variation": "confirm-alert", "job": "Clear all data confirmation with consent checkbox"}
+{"id": "cnippet:v-alert-dialog-15", "node": "component/dialog", "variation": "confirm-alert", "job": "Rate limit dialog with a retry countdown"}
+{"id": "cnippet:v-alert-dialog-2", "node": "component/dialog", "variation": "confirm-alert", "job": "Small compact confirmation alert dialog"}
+{"id": "cnippet:v-alert-dialog-3", "node": "component/dialog", "variation": "confirm-alert", "job": "Alert dialog layered over a standard dialog"}
+{"id": "cnippet:v-alert-dialog-4", "node": "component/dialog", "variation": "confirm-alert", "job": "Task success confirmation dialog"}
+{"id": "cnippet:v-alert-dialog-5", "node": "component/dialog", "variation": "confirm-alert", "job": "Account deactivation confirmation dialog"}
+{"id": "cnippet:v-alert-dialog-6", "node": "component/dialog", "variation": "confirm-alert", "job": "Unsaved changes warning dialog"}
+{"id": "cnippet:v-alert-dialog-7", "node": "component/dialog", "variation": "confirm-alert", "job": "Event ticket registration confirmation dialog"}
+{"id": "cnippet:v-alert-dialog-8", "node": "component/dialog", "variation": "confirm-alert", "job": "System update notification dialog"}
+{"id": "cnippet:v-alert-dialog-9", "node": "component/dialog", "variation": "confirm-alert", "job": "Expired subscription billing warning dialog"}
+{"id": "cnippet:v-autocomplete-1", "node": "component/select", "variation": "combobox", "job": "Default combobox with a filtered suggestion list"}
+{"id": "cnippet:v-autocomplete-10", "node": "component/select", "variation": "grouped", "job": "Suggestions grouped by category in the list"}
+{"id": "cnippet:v-autocomplete-11", "node": "component/select", "variation": "combobox", "job": "Autocomplete limiting the number of shown results"}
+{"id": "cnippet:v-autocomplete-12", "node": "component/select", "variation": "combobox", "job": "Autocomplete loading suggestions asynchronously while typing"}
+{"id": "cnippet:v-autocomplete-13", "node": "component/select", "variation": "combobox", "job": "Autocomplete wired into a form submission"}
+{"id": "cnippet:v-autocomplete-14", "node": "component/select", "variation": "combobox", "job": "Searchable timezone picker showing the current zone"}
+{"id": "cnippet:v-autocomplete-15", "node": "component/select", "variation": "combobox", "job": "Searchable picker listing people with avatars"}
+{"id": "cnippet:v-autocomplete-16", "node": "component/select", "variation": "with-icons", "job": "Country picker with flag icon and ISO code"}
+{"id": "cnippet:v-autocomplete-17", "node": "component/select", "variation": "combobox", "job": "Repository picker with language and star count"}
+{"id": "cnippet:v-autocomplete-18", "node": "component/tags", "variation": "token-input", "job": "Multi-select tag input with dismissible chip pills"}
+{"id": "cnippet:v-autocomplete-19", "node": "component/select", "variation": "with-icons", "job": "Priority selector with icon and description"}
+{"id": "cnippet:v-autocomplete-2", "node": "component/select", "variation": "combobox", "job": "Disabled autocomplete input"}
+{"id": "cnippet:v-autocomplete-20", "node": "component/select", "variation": "grouped", "job": "Tech stack picker grouped by category"}
+{"id": "cnippet:v-autocomplete-3", "node": "component/select", "variation": "combobox", "job": "Autocomplete input shown in three sizes"}
+{"id": "cnippet:v-autocomplete-4", "node": "component/select", "variation": "combobox", "job": "Autocomplete with a field label"}
+{"id": "cnippet:v-autocomplete-5", "node": "component/select", "variation": "combobox", "job": "Autocomplete completing typed text inline"}
+{"id": "cnippet:v-autocomplete-6", "node": "component/select", "variation": "combobox", "job": "Autocomplete auto-highlighting the first suggestion"}
+{"id": "cnippet:v-autocomplete-7", "node": "component/select", "variation": "combobox", "job": "Autocomplete with a clear button"}
+{"id": "cnippet:v-autocomplete-8", "node": "component/select", "variation": "combobox", "job": "Autocomplete with trigger and clear buttons"}
+{"id": "cnippet:v-autocomplete-9", "node": "component/select", "variation": "combobox", "job": "Autocomplete with a leading search icon"}
+{"id": "cnippet:v-avatar-1", "node": "atom/avatar", "variation": "standard", "job": "Default avatar showing a profile image"}
+{"id": "cnippet:v-avatar-10", "node": "atom/avatar", "variation": "standard", "job": "Avatar with a hover interaction effect"}
+{"id": "cnippet:v-avatar-11", "node": "atom/avatar", "variation": "standard", "job": "Avatars revealing names in tooltips on hover"}
+{"id": "cnippet:v-avatar-12", "node": "component/empty", "variation": "icon-text", "job": "Empty state built around an avatar"}
+{"id": "cnippet:v-avatar-13", "node": "atom/avatar", "variation": "standard", "job": "Avatar with a loading spinner overlay"}
+{"id": "cnippet:v-avatar-14", "node": "atom/badge", "variation": "positioned", "job": "Custom badge positioned over an avatar"}
+{"id": "cnippet:v-avatar-15", "node": "atom/avatar", "variation": "standard", "job": "Avatar with an animated ring highlight"}
+{"id": "cnippet:v-avatar-16", "node": "component/menu", "variation": "dropdown-menu", "job": "Avatar button opening an account dropdown"}
+{"id": "cnippet:v-avatar-17", "node": "section/team", "variation": "photo-grid", "job": "Team grid of avatars with presence dots"}
+{"id": "cnippet:v-avatar-18", "node": "component/message", "variation": "chat-thread", "job": "Pull request comment thread of avatar comments"}
+{"id": "cnippet:v-avatar-19", "node": "component/select", "variation": "multi-select", "job": "Assignee picker with selectable avatar rows"}
+{"id": "cnippet:v-avatar-2", "node": "atom/avatar", "variation": "fallback", "job": "Avatar falling back to initials"}
+{"id": "cnippet:v-avatar-20", "node": "component/widget", "variation": "leaderboard", "job": "Contributor leaderboard with rank and commit counts"}
+{"id": "cnippet:v-avatar-21", "node": "component/card", "variation": "profile-card", "job": "Profile card with stats and action buttons"}
+{"id": "cnippet:v-avatar-3", "node": "atom/avatar", "variation": "standard", "job": "Avatar shown in several sizes"}
+{"id": "cnippet:v-avatar-4", "node": "atom/avatar", "variation": "standard", "job": "Avatar corners with different radii"}
+{"id": "cnippet:v-avatar-5", "node": "atom/avatar", "variation": "avatar-group", "job": "Overlapping group of avatars"}
+{"id": "cnippet:v-avatar-6", "node": "atom/avatar", "variation": "avatar-group", "job": "Avatar group with a numeric overflow count"}
+{"id": "cnippet:v-avatar-7", "node": "atom/avatar", "variation": "with-status", "job": "Avatar with user details and a badge"}
+{"id": "cnippet:v-avatar-8", "node": "atom/avatar", "variation": "avatar-group", "job": "Avatar stack with a social proof label"}
+{"id": "cnippet:v-avatar-9", "node": "atom/avatar", "variation": "avatar-group", "job": "Compact avatar stack showing initials"}
+{"id": "cnippet:v-badge-1", "node": "atom/badge", "variation": "badge", "job": "Default small status badge"}
+{"id": "cnippet:v-badge-10", "node": "atom/badge", "variation": "icon-badge", "job": "Badge with a leading icon"}
+{"id": "cnippet:v-badge-11", "node": "atom/badge", "variation": "badge", "job": "Badge rendered as a link"}
+{"id": "cnippet:v-badge-12", "node": "atom/badge", "variation": "count", "job": "Badge showing a numeric count"}
+{"id": "cnippet:v-badge-13", "node": "atom/status-dot", "variation": "standard", "job": "Online, busy, away and offline status dots"}
+{"id": "cnippet:v-badge-14", "node": "atom/badge", "variation": "tag-chip", "job": "Release channel chips for stable and beta"}
+{"id": "cnippet:v-badge-15", "node": "atom/badge", "variation": "badge", "job": "Plan tier badges showing name and price"}
+{"id": "cnippet:v-badge-16", "node": "atom/badge", "variation": "count", "job": "Notification category badges with unread counts"}
+{"id": "cnippet:v-badge-17", "node": "atom/badge", "variation": "badge", "job": "Priority labels in a task list"}
+{"id": "cnippet:v-badge-2", "node": "atom/badge", "variation": "badge", "job": "Outlined status badge"}
+{"id": "cnippet:v-badge-3", "node": "atom/badge", "variation": "badge", "job": "Secondary styled status badge"}
+{"id": "cnippet:v-badge-4", "node": "atom/badge", "variation": "badge", "job": "Destructive styled status badge"}
+{"id": "cnippet:v-badge-5", "node": "atom/badge", "variation": "badge", "job": "Informational styled status badge"}
+{"id": "cnippet:v-badge-6", "node": "atom/badge", "variation": "badge", "job": "Success styled status badge"}
+{"id": "cnippet:v-badge-7", "node": "atom/badge", "variation": "badge", "job": "Warning styled status badge"}
+{"id": "cnippet:v-badge-8", "node": "atom/badge", "variation": "badge", "job": "Error styled status badge"}
+{"id": "cnippet:v-badge-9", "node": "atom/badge", "variation": "badge", "job": "Badges shown in several sizes"}
+{"id": "cnippet:v-breadcrumb-1", "node": "component/breadcrumb", "variation": "text-breadcrumb", "job": "Default page hierarchy trail"}
+{"id": "cnippet:v-breadcrumb-10", "node": "component/breadcrumb", "variation": "text-breadcrumb", "job": "Trail showing project, user and document"}
+{"id": "cnippet:v-breadcrumb-11", "node": "component/breadcrumb", "variation": "with-icons", "job": "File path trail with folder and file icons"}
+{"id": "cnippet:v-breadcrumb-12", "node": "component/steps", "variation": "horizontal-stepper", "job": "Checkout step progress with numbered circles"}
+{"id": "cnippet:v-breadcrumb-13", "node": "component/breadcrumb", "variation": "with-icons", "job": "Admin hierarchy trail with coloured icon badges"}
+{"id": "cnippet:v-breadcrumb-14", "node": "section/page-header", "variation": "title-only", "job": "Page header with breadcrumb and edit, share actions"}
+{"id": "cnippet:v-breadcrumb-15", "node": "component/breadcrumb", "variation": "overflow-menu", "job": "Compact trail hiding items behind an ellipsis menu"}
+{"id": "cnippet:v-breadcrumb-2", "node": "component/breadcrumb", "variation": "text-breadcrumb", "job": "Breadcrumb with a custom separator"}
+{"id": "cnippet:v-breadcrumb-3", "node": "component/breadcrumb", "variation": "with-dropdown", "job": "Breadcrumb item opening a dropdown menu"}
+{"id": "cnippet:v-breadcrumb-4", "node": "component/breadcrumb", "variation": "text-breadcrumb", "job": "Breadcrumb trail built from Next.js links"}
+{"id": "cnippet:v-breadcrumb-5", "node": "component/breadcrumb", "variation": "with-icons", "job": "Breadcrumb items each carrying an icon"}
+{"id": "cnippet:v-breadcrumb-6", "node": "component/breadcrumb", "variation": "with-icons", "job": "Breadcrumb trail whose items carry avatars"}
+{"id": "cnippet:v-breadcrumb-7", "node": "component/breadcrumb", "variation": "text-breadcrumb", "job": "Breadcrumb trail placed inside a card"}
+{"id": "cnippet:v-breadcrumb-8", "node": "component/breadcrumb", "variation": "with-icons", "job": "Breadcrumb starting with a home icon"}
+{"id": "cnippet:v-breadcrumb-9", "node": "component/breadcrumb", "variation": "text-breadcrumb", "job": "Breadcrumb items styled as buttons"}
+{"id": "cnippet:v-button-1", "node": "atom/button", "variation": "primary", "job": "Default action button"}
+{"id": "cnippet:v-button-10", "node": "atom/button", "variation": "primary", "job": "Large size action button"}
+{"id": "cnippet:v-button-11", "node": "atom/button", "variation": "primary", "job": "Extra-large size action button"}
+{"id": "cnippet:v-button-12", "node": "atom/button", "variation": "primary", "job": "Disabled action button"}
+{"id": "cnippet:v-button-13", "node": "atom/button", "variation": "icon-button", "job": "Icon-only action button"}
+{"id": "cnippet:v-button-14", "node": "atom/button", "variation": "primary", "job": "Button with an icon on the right"}
+{"id": "cnippet:v-button-15", "node": "atom/button", "variation": "primary", "job": "Button with an icon on the left"}
+{"id": "cnippet:v-button-16", "node": "atom/button", "variation": "primary", "job": "Outline button with a leading icon"}
+{"id": "cnippet:v-button-17", "node": "atom/button", "variation": "primary", "job": "Ghost button with a trailing icon"}
+{"id": "cnippet:v-button-18", "node": "atom/button", "variation": "primary", "job": "Destructive button with a leading icon"}
+{"id": "cnippet:v-button-19", "node": "atom/button", "variation": "primary", "job": "Link-styled button with a trailing icon"}
+{"id": "cnippet:v-button-2", "node": "atom/button", "variation": "primary", "job": "Outline styled action button"}
+{"id": "cnippet:v-button-20", "node": "atom/button", "variation": "group", "job": "Star button with an adjacent count segment"}
+{"id": "cnippet:v-button-21", "node": "atom/button", "variation": "primary", "job": "Button carrying an unread count badge"}
+{"id": "cnippet:v-button-22", "node": "atom/button", "variation": "primary", "job": "Button with icon, label and shortcut keys"}
+{"id": "cnippet:v-button-23", "node": "atom/button", "variation": "copy-share", "job": "Icon-only copy button confirming the copy"}
+{"id": "cnippet:v-button-24", "node": "atom/button", "variation": "toggle", "job": "Animated hamburger button toggling a menu"}
+{"id": "cnippet:v-button-25", "node": "atom/button", "variation": "primary", "job": "Button whose label slides to reveal an icon"}
+{"id": "cnippet:v-button-26", "node": "atom/button", "variation": "social-brand", "job": "Social login buttons for GitHub, Google and email"}
+{"id": "cnippet:v-button-27", "node": "atom/button", "variation": "loading", "job": "Button animating between loading and success"}
+{"id": "cnippet:v-button-28", "node": "component/upload", "variation": "with-previews", "job": "File upload button with attachment preview and clear"}
+{"id": "cnippet:v-button-29", "node": "atom/button", "variation": "group", "job": "Primary action button split with dropdown menu"}
+{"id": "cnippet:v-button-3", "node": "atom/button", "variation": "primary", "job": "Secondary-styled action button"}
+{"id": "cnippet:v-button-30", "node": "atom/button", "variation": "group", "job": "Segmented button group switching list, table, board views"}
+{"id": "cnippet:v-button-4", "node": "atom/button", "variation": "primary", "job": "Destructive action button for deletions"}
+{"id": "cnippet:v-button-5", "node": "atom/button", "variation": "primary", "job": "Outlined destructive action button"}
+{"id": "cnippet:v-button-6", "node": "atom/button", "variation": "primary", "job": "Ghost button without background or border"}
+{"id": "cnippet:v-button-7", "node": "atom/button", "variation": "primary", "job": "Button styled as an inline text link"}
+{"id": "cnippet:v-button-8", "node": "atom/button", "variation": "primary", "job": "Extra-small compact action button"}
+{"id": "cnippet:v-button-9", "node": "atom/button", "variation": "primary", "job": "Small compact action button"}
+{"id": "cnippet:v-calendar-1", "node": "component/calendar", "variation": "month-calendar", "job": "Month grid picking a single date"}
+{"id": "cnippet:v-calendar-10", "node": "component/calendar", "variation": "event-calendar", "job": "Month calendar marking days that hold events"}
+{"id": "cnippet:v-calendar-11", "node": "component/calendar", "variation": "date-picker", "job": "Date picker with today and tomorrow presets"}
+{"id": "cnippet:v-calendar-12", "node": "component/calendar", "variation": "date-picker", "job": "Dropdown date picker asking for date of birth"}
+{"id": "cnippet:v-calendar-13", "node": "component/calendar", "variation": "week-schedule", "job": "Click a day to select its whole week"}
+{"id": "cnippet:v-calendar-14", "node": "component/calendar", "variation": "month-calendar", "job": "Month calendar labelling holiday dates"}
+{"id": "cnippet:v-calendar-15", "node": "component/calendar", "variation": "date-picker", "job": "Pick a check-out date with nights summary"}
+{"id": "cnippet:v-calendar-16", "node": "component/widget", "variation": "streak-tracker", "job": "Habit tracker month grid with streak counter"}
+{"id": "cnippet:v-calendar-17", "node": "component/calendar", "variation": "range-picker", "job": "Two-month picker selecting a date range"}
+{"id": "cnippet:v-calendar-18", "node": "component/calendar", "variation": "range-picker", "job": "Leave request form selecting a date range"}
+{"id": "cnippet:v-calendar-19", "node": "component/calendar", "variation": "month-calendar", "job": "Grid of twelve mini month calendars"}
+{"id": "cnippet:v-calendar-2", "node": "component/calendar", "variation": "month-calendar", "job": "Plain single-date month calendar"}
+{"id": "cnippet:v-calendar-20", "node": "component/calendar", "variation": "week-schedule", "job": "Book an available time slot and confirm"}
+{"id": "cnippet:v-calendar-3", "node": "component/calendar", "variation": "month-calendar", "job": "Month calendar shown at different cell sizes"}
+{"id": "cnippet:v-calendar-4", "node": "component/calendar", "variation": "month-calendar", "job": "Month calendar navigating through dropdown captions"}
+{"id": "cnippet:v-calendar-5", "node": "component/calendar", "variation": "month-calendar", "job": "Month calendar with a custom select caption"}
+{"id": "cnippet:v-calendar-6", "node": "component/calendar", "variation": "month-calendar", "job": "Month calendar with a combobox caption picker"}
+{"id": "cnippet:v-calendar-7", "node": "component/calendar", "variation": "month-calendar", "job": "Month calendar selecting several separate dates"}
+{"id": "cnippet:v-calendar-8", "node": "component/calendar", "variation": "date-picker", "job": "Date picker disabling booked days and weekends"}
+{"id": "cnippet:v-calendar-9", "node": "component/calendar", "variation": "range-picker", "job": "Side-by-side two-month range picker"}
+{"id": "cnippet:v-card-1", "node": "component/card", "variation": "standard-card", "job": "Default card container with header and content"}
+{"id": "cnippet:v-card-10", "node": "section/auth", "variation": "sign-in", "job": "Card with email and social sign-in form"}
+{"id": "cnippet:v-card-11", "node": "component/card", "variation": null, "job": "Card expanding to reveal billing usage details", "edge": "expandable-card"}
+{"id": "cnippet:v-card-12", "node": "component/card", "variation": "standard-card", "job": "Card with an overflow dropdown menu"}
+{"id": "cnippet:v-card-13", "node": "component/card", "variation": "standard-card", "job": "Card with header badge, avatar and actions"}
+{"id": "cnippet:v-card-14", "node": "component/card", "variation": "feature-card", "job": "Icon card with a title and view link"}
+{"id": "cnippet:v-card-15", "node": "component/card", "variation": "standard-card", "job": "Card with header label, icon and link"}
+{"id": "cnippet:v-card-16", "node": "component/card", "variation": "standard-card", "job": "Repository cards showing language, stars and forks"}
+{"id": "cnippet:v-card-17", "node": "section/settings-panel", "variation": "sidebar", "job": "Settings panel with sidebar navigation and panels"}
+{"id": "cnippet:v-card-18", "node": "section/pricing", "variation": "single-plan", "job": "Single pricing plan card with feature checklist"}
+{"id": "cnippet:v-card-19", "node": "component/card", "variation": null, "job": "Event card with date, venue, attendees and RSVP", "edge": "event-card"}
+{"id": "cnippet:v-card-2", "node": "component/card", "variation": "standard-card", "job": "Card with a visible border"}
+{"id": "cnippet:v-card-20", "node": "section/kpis", "variation": "metric-cards", "job": "Four metric tiles with trend indicators"}
+{"id": "cnippet:v-card-3", "node": "component/card", "variation": "standard-card", "job": "Card with separated header and footer borders"}
+{"id": "cnippet:v-card-4", "node": "component/card", "variation": "standard-card", "job": "Card linking out with a footer action"}
+{"id": "cnippet:v-card-5", "node": "component/card", "variation": "standard-card", "job": "Card with avatar and dropdown menu actions"}
+{"id": "cnippet:v-card-6", "node": "component/card", "variation": "article-card", "job": "Content card with image, badge and call to action"}
+{"id": "cnippet:v-card-7", "node": "component/card", "variation": "article-card", "job": "Image card zooming the photo on hover"}
+{"id": "cnippet:v-card-8", "node": "component/card", "variation": "article-card", "job": "Image card with author byline and shadow fade"}
+{"id": "cnippet:v-card-9", "node": "component/card", "variation": "stack-flip", "job": "Cards stacked with layered depth offset"}
+{"id": "cnippet:v-carousel-1", "node": "component/carousel", "variation": "slider-carousel", "job": "Default sliding carousel with previous and next"}
+{"id": "cnippet:v-carousel-10", "node": "component/gallery", "variation": "carousel-gallery", "job": "Photo gallery browsed through a thumbnail strip"}
+{"id": "cnippet:v-carousel-11", "node": "component/carousel", "variation": "cards-carousel", "job": "Carousel of testimonial cards with avatar quotes"}
+{"id": "cnippet:v-carousel-12", "node": "component/carousel", "variation": "cards-carousel", "job": "Carousel of pricing plans with arrow navigation"}
+{"id": "cnippet:v-carousel-13", "node": "component/gallery", "variation": "carousel-gallery", "job": "Media carousel with caption badge and progress dots"}
+{"id": "cnippet:v-carousel-14", "node": "component/carousel", "variation": "slider-carousel", "job": "Drag-free changelog slides with version tags"}
+{"id": "cnippet:v-carousel-15", "node": "component/carousel", "variation": "slider-carousel", "job": "Icon feature slides with previous and next controls"}
+{"id": "cnippet:v-carousel-2", "node": "component/carousel", "variation": "slider-carousel", "job": "Carousel showing several cards at once"}
+{"id": "cnippet:v-carousel-3", "node": "component/carousel", "variation": "slider-carousel", "job": "Carousel with adjustable gap between slides"}
+{"id": "cnippet:v-carousel-4", "node": "component/carousel", "variation": "slider-carousel", "job": "Carousel sliding vertically instead of horizontally"}
+{"id": "cnippet:v-carousel-5", "node": "component/carousel", "variation": "autoplay-carousel", "job": "Self-advancing carousel with slide indicators"}
+{"id": "cnippet:v-carousel-6", "node": "component/carousel", "variation": "cards-carousel", "job": "Looping carousel of customer testimonial cards"}
+{"id": "cnippet:v-carousel-7", "node": "component/carousel", "variation": "cards-carousel", "job": "Carousel of product cards with badges and price"}
+{"id": "cnippet:v-carousel-8", "node": "component/steps", "variation": "onboarding-flow", "job": "Stepped onboarding flow with progress and next"}
+{"id": "cnippet:v-carousel-9", "node": "component/carousel", "variation": "cards-carousel", "job": "Carousel of team member cards with roles"}
+{"id": "cnippet:v-chart-1", "node": "component/chart", "variation": "bar-chart", "job": "Multi-series monthly bar chart"}
+{"id": "cnippet:v-chart-10", "node": "component/chart", "variation": "bar-chart", "job": "Bar chart with a target reference line"}
+{"id": "cnippet:v-chart-11", "node": "component/chart", "variation": "area-chart", "job": "Stacked area chart of two revenue series"}
+{"id": "cnippet:v-chart-12", "node": "component/chart", "variation": "bar-chart", "job": "Horizontal bars ranking channels by sessions"}
+{"id": "cnippet:v-chart-13", "node": "component/chart", "variation": "pie-donut", "job": "Donut chart with a centered headcount label"}
+{"id": "cnippet:v-chart-14", "node": "component/chart", "variation": "line-chart", "job": "Multi-series line chart of response percentiles"}
+{"id": "cnippet:v-chart-15", "node": "component/chart", "variation": null, "job": "Bars overlaid with a growth line on dual axes", "edge": "composed-chart"}
+{"id": "cnippet:v-chart-2", "node": "component/chart", "variation": "area-chart", "job": "Area chart filling under the series line"}
+{"id": "cnippet:v-chart-3", "node": "component/chart", "variation": "bar-chart", "job": "Simple vertical bar chart"}
+{"id": "cnippet:v-chart-4", "node": "component/chart", "variation": "line-chart", "job": "Simple line chart of one series"}
+{"id": "cnippet:v-chart-5", "node": "component/chart", "variation": "pie-donut", "job": "Pie chart splitting a total into slices"}
+{"id": "cnippet:v-chart-6", "node": "component/chart", "variation": "radar-specialized", "job": "Radar chart comparing values across axes"}
+{"id": "cnippet:v-chart-7", "node": "component/chart", "variation": "radar-specialized", "job": "Radial bar chart of concentric rings"}
+{"id": "cnippet:v-chart-8", "node": "component/chart", "variation": "bar-chart", "job": "Monthly spending bars split by category"}
+{"id": "cnippet:v-chart-9", "node": "component/chart", "variation": null, "job": "Scatter chart plotting hours against score", "edge": "scatter-chart"}
+{"id": "cnippet:v-checkbox-1", "node": "atom/choice", "variation": "checkbox", "job": "Single checkbox for one option"}
+{"id": "cnippet:v-checkbox-10", "node": "atom/choice", "variation": "group", "job": "Consent checkboxes gating registration"}
+{"id": "cnippet:v-checkbox-11", "node": "atom/choice", "variation": "group", "job": "Day and time slot availability checkbox grid"}
+{"id": "cnippet:v-checkbox-12", "node": "atom/choice", "variation": "group", "job": "Role permission checkboxes with access level badges"}
+{"id": "cnippet:v-checkbox-13", "node": "atom/choice", "variation": "group", "job": "Notification preference matrix of events and channels"}
+{"id": "cnippet:v-checkbox-14", "node": "atom/choice", "variation": "card", "job": "Plan add-on checkboxes updating the price total"}
+{"id": "cnippet:v-checkbox-15", "node": "atom/choice", "variation": "group", "job": "Sprint task checklist with priority badges"}
+{"id": "cnippet:v-checkbox-2", "node": "atom/choice", "variation": "checkbox", "job": "Disabled checkbox"}
+{"id": "cnippet:v-checkbox-3", "node": "atom/choice", "variation": "with-description", "job": "Checkbox with a description line"}
+{"id": "cnippet:v-checkbox-4", "node": "atom/choice", "variation": "card", "job": "Checkbox styled as a selectable card"}
+{"id": "cnippet:v-checkbox-5", "node": "atom/choice", "variation": "checkbox", "job": "Checkbox wired into a form submission"}
+{"id": "cnippet:v-checkbox-6", "node": "atom/choice", "variation": "card", "job": "Payment method chosen by a card checkbox"}
+{"id": "cnippet:v-checkbox-7", "node": "atom/choice", "variation": "indeterminate", "job": "Select-all checkbox with indeterminate state"}
+{"id": "cnippet:v-checkbox-8", "node": "atom/choice", "variation": "group", "job": "Checkbox list picking issue labels"}
+{"id": "cnippet:v-checkbox-9", "node": "atom/choice", "variation": "group", "job": "Checkbox set choosing notification channels"}
+{"id": "cnippet:v-checkbox-group-1", "node": "atom/choice", "variation": "group", "job": "Default group of related checkboxes"}
+{"id": "cnippet:v-checkbox-group-10", "node": "atom/choice", "variation": "group", "job": "Basic checkbox group"}
+{"id": "cnippet:v-checkbox-group-11", "node": "atom/choice", "variation": "group", "job": "Nested checkbox groups for frontend and backend stack"}
+{"id": "cnippet:v-checkbox-group-12", "node": "atom/choice", "variation": "group", "job": "Weekday and weekend checkbox sub-groups with badge"}
+{"id": "cnippet:v-checkbox-group-13", "node": "atom/choice", "variation": "card", "job": "Integration rows with master enable-all checkbox"}
+{"id": "cnippet:v-checkbox-group-14", "node": "atom/choice", "variation": "group", "job": "Export section checkbox groups with item count"}
+{"id": "cnippet:v-checkbox-group-15", "node": "atom/choice", "variation": "group", "job": "Independent cuisine and dietary checkbox groups"}
+{"id": "cnippet:v-checkbox-group-2", "node": "atom/choice", "variation": "group", "job": "Checkbox group with one disabled item"}
+{"id": "cnippet:v-checkbox-group-3", "node": "atom/choice", "variation": "indeterminate", "job": "Parent checkbox controlling child checkboxes"}
+{"id": "cnippet:v-checkbox-group-4", "node": "atom/choice", "variation": "indeterminate", "job": "Nested parent checkbox with a child group"}
+{"id": "cnippet:v-checkbox-group-5", "node": "atom/choice", "variation": "group", "job": "Checkbox group inside a submitted form"}
+{"id": "cnippet:v-checkbox-group-6", "node": "atom/choice", "variation": "group", "job": "Basic group of weekday checkboxes"}
+{"id": "cnippet:v-checkbox-group-7", "node": "atom/choice", "variation": "group", "job": "Basic checkbox group with badges"}
+{"id": "cnippet:v-checkbox-group-8", "node": "atom/choice", "variation": "group", "job": "Basic checkbox group"}
+{"id": "cnippet:v-checkbox-group-9", "node": "atom/choice", "variation": "group", "job": "Basic checkbox group"}
+{"id": "cnippet:v-collapsible-1", "node": "component/accordion", "variation": "collapsible", "job": "Default collapsible panel with trigger"}
+{"id": "cnippet:v-collapsible-10", "node": "component/timeline", "variation": "activity-timeline", "job": "Incident status card revealing an update timeline"}
+{"id": "cnippet:v-collapsible-11", "node": "component/accordion", "variation": "faq-accordion", "job": "FAQ accordion with single-open behaviour"}
+{"id": "cnippet:v-collapsible-12", "node": "section/filters", "variation": "filters", "job": "Filter sidebar with collapsible facet groups"}
+{"id": "cnippet:v-collapsible-13", "node": "component/tree", "variation": "hierarchical", "job": "Grouped dependency list expanding to package names"}
+{"id": "cnippet:v-collapsible-14", "node": "section/team", "variation": "directory", "job": "Team directory grouped in collapsible sections"}
+{"id": "cnippet:v-collapsible-15", "node": "component/accordion", "variation": "card-style", "job": "Privacy policy card with accordion sections"}
+{"id": "cnippet:v-collapsible-2", "node": "component/accordion", "variation": "collapsible", "job": "Collapsible content panel"}
+{"id": "cnippet:v-collapsible-3", "node": "component/accordion", "variation": "card-style", "job": "Animated collapsible card"}
+{"id": "cnippet:v-collapsible-4", "node": "component/accordion", "variation": "card-style", "job": "Collapsible card with a bottom trigger"}
+{"id": "cnippet:v-collapsible-5", "node": "component/accordion", "variation": "collapsible", "job": "Collapsible form fields"}
+{"id": "cnippet:v-collapsible-6", "node": "component/tree", "variation": "hierarchical", "job": "Recursive multi-level collapsible navigation menu"}
+{"id": "cnippet:v-collapsible-7", "node": "component/tree", "variation": "file-tree", "job": "Folder tree with per-file download and delete actions"}
+{"id": "cnippet:v-collapsible-8", "node": "component/accordion", "variation": "collapsible", "job": "Read more expander revealing truncated product description"}
+{"id": "cnippet:v-collapsible-9", "node": "component/accordion", "variation": "card-style", "job": "Build step cards expanding to show log output"}
+{"id": "cnippet:v-combobox-1", "node": "component/select", "variation": "combobox", "job": "Searchable combobox with filtered item list"}
+{"id": "cnippet:v-combobox-10", "node": "component/select", "variation": "combobox", "job": "Combobox opened from a trigger button showing selection"}
+{"id": "cnippet:v-combobox-11", "node": "component/select", "variation": "combobox", "job": "Combobox with a select-style trigger button"}
+{"id": "cnippet:v-combobox-12", "node": "component/select", "variation": "combobox", "job": "Combobox inside a form with validation error"}
+{"id": "cnippet:v-combobox-13", "node": "component/select", "variation": "multi-select", "job": "Multi-select combobox chips inside a form"}
+{"id": "cnippet:v-combobox-14", "node": "component/select", "variation": "combobox", "job": "Combobox fetching and filtering remote results"}
+{"id": "cnippet:v-combobox-15", "node": "component/select", "variation": "combobox", "job": "Combobox items rendered with avatar, name and email"}
+{"id": "cnippet:v-combobox-16", "node": "component/select", "variation": "combobox", "job": "Controlled combobox setting a status badge"}
+{"id": "cnippet:v-combobox-17", "node": "component/select", "variation": "combobox", "job": "Stub block that only prints the word Combobox"}
+{"id": "cnippet:v-combobox-18", "node": "component/select", "variation": "combobox", "job": "City picker showing timezone and country per item"}
+{"id": "cnippet:v-combobox-19", "node": "component/select", "variation": "combobox", "job": "Sprint picker items showing status badge and dates"}
+{"id": "cnippet:v-combobox-2", "node": "component/select", "variation": "combobox", "job": "Disabled combobox"}
+{"id": "cnippet:v-combobox-20", "node": "component/select", "variation": "grouped", "job": "Font picker grouped by category with live preview"}
+{"id": "cnippet:v-combobox-21", "node": "component/select", "variation": "combobox", "job": "Timezone picker with UTC offset badge in trigger"}
+{"id": "cnippet:v-combobox-22", "node": "component/select", "variation": "with-icons", "job": "Currency picker with symbol icon and code suffix"}
+{"id": "cnippet:v-combobox-3", "node": "component/select", "variation": "combobox", "job": "Combobox trigger shown in several sizes"}
+{"id": "cnippet:v-combobox-4", "node": "component/select", "variation": "combobox", "job": "Combobox with an associated text label"}
+{"id": "cnippet:v-combobox-5", "node": "component/select", "variation": "combobox", "job": "Combobox auto-highlighting the first matching item"}
+{"id": "cnippet:v-combobox-6", "node": "component/select", "variation": "combobox", "job": "Combobox with a clear selection button"}
+{"id": "cnippet:v-combobox-7", "node": "component/select", "variation": "grouped", "job": "Combobox options organised into labelled tag groups"}
+{"id": "cnippet:v-combobox-8", "node": "component/select", "variation": "multi-select", "job": "Combobox selecting several items as removable chips"}
+{"id": "cnippet:v-combobox-9", "node": "component/select", "variation": "combobox", "job": "Combobox input with a leading search icon"}
+{"id": "cnippet:v-command-1", "node": "component/command", "variation": "dialog-based", "job": "Command palette dialog with grouped actions and footer"}
+{"id": "cnippet:v-command-10", "node": "component/command", "variation": "dialog-based", "job": "Palette applying labels to items from a list"}
+{"id": "cnippet:v-command-11", "node": "component/command", "variation": "dialog-based", "job": "Account settings palette with grouped actions"}
+{"id": "cnippet:v-command-12", "node": "component/command", "variation": "dialog-based", "job": "Repository search across issues, branches and files"}
+{"id": "cnippet:v-command-13", "node": "component/command", "variation": "dialog-based", "job": "Go-to-page palette with shortcut hints per item"}
+{"id": "cnippet:v-command-14", "node": "component/command", "variation": "dialog-based", "job": "Appearance palette switching theme and accent colour"}
+{"id": "cnippet:v-command-15", "node": "component/command", "variation": "dialog-based", "job": "Quick-open page palette with notification counts"}
+{"id": "cnippet:v-command-2", "node": "component/command", "variation": "command-menu", "job": "Simple command list with shortcut hints"}
+{"id": "cnippet:v-command-3", "node": "component/command", "variation": "grouped-commands", "job": "Command list split into separate labelled groups"}
+{"id": "cnippet:v-command-4", "node": "component/command", "variation": "dialog-based", "job": "File search palette showing matching files with badges"}
+{"id": "cnippet:v-command-5", "node": "component/command", "variation": "dialog-based", "job": "User search palette listing people with avatars"}
+{"id": "cnippet:v-command-6", "node": "component/command", "variation": "dialog-based", "job": "Action palette with keyboard shortcut labels"}
+{"id": "cnippet:v-command-7", "node": "component/command", "variation": "dialog-based", "job": "Palette with recent and favourite sections"}
+{"id": "cnippet:v-command-8", "node": "component/command", "variation": "dialog-based", "job": "Project switcher palette marking the current project"}
+{"id": "cnippet:v-command-9", "node": "component/command", "variation": "dialog-based", "job": "Invite members palette listing teammates with checkboxes"}
+{"id": "cnippet:v-context-menu-1", "node": "component/menu", "variation": "context-menu", "job": "Right-click menu with submenu, shortcuts and checkbox items"}
+{"id": "cnippet:v-context-menu-10", "node": "component/menu", "variation": "context-menu", "job": "Context menu beside a dialog trigger"}
+{"id": "cnippet:v-context-menu-11", "node": "component/menu", "variation": "context-menu", "job": "Bookmark rows with per-item star, copy and share actions"}
+{"id": "cnippet:v-context-menu-12", "node": "component/menu", "variation": "context-menu", "job": "Rich-text formatting context menu with alignment submenu"}
+{"id": "cnippet:v-context-menu-13", "node": "component/menu", "variation": "context-menu", "job": "File rows with rename, download and delete actions"}
+{"id": "cnippet:v-context-menu-14", "node": "component/menu", "variation": "context-menu", "job": "Post with upvote, downvote and report submenu"}
+{"id": "cnippet:v-context-menu-15", "node": "component/menu", "variation": "context-menu", "job": "Task card with status and priority context controls"}
+{"id": "cnippet:v-context-menu-2", "node": "component/menu", "variation": "context-menu", "job": "Basic right-click menu with shortcut hints"}
+{"id": "cnippet:v-context-menu-3", "node": "component/menu", "variation": "context-menu", "job": "Browser-style context menu of navigation actions"}
+{"id": "cnippet:v-context-menu-4", "node": "component/menu", "variation": "context-menu", "job": "Editor context menu for file, edit and clipboard"}
+{"id": "cnippet:v-context-menu-5", "node": "component/menu", "variation": "context-menu", "job": "Right-click menu with copy, cut, paste, delete"}
+{"id": "cnippet:v-context-menu-6", "node": "component/menu", "variation": "context-menu", "job": "Context menu of dismissible checkbox options"}
+{"id": "cnippet:v-context-menu-7", "node": "component/menu", "variation": "context-menu", "job": "Context menu of radio options choosing a theme"}
+{"id": "cnippet:v-context-menu-8", "node": "component/menu", "variation": "context-menu", "job": "Right-click menu with edit, share and delete"}
+{"id": "cnippet:v-context-menu-9", "node": "component/menu", "variation": "context-menu", "job": "Context menu triggered from four screen positions"}
+{"id": "cnippet:v-date-picker-1", "node": "component/picker", "variation": "date-picker", "job": "Button-triggered popover calendar picking a date"}
+{"id": "cnippet:v-date-picker-10", "node": "component/picker", "variation": "date-picker", "job": "Task deadline picker with assignees and rescheduled badge"}
+{"id": "cnippet:v-date-picker-11", "node": "component/picker", "variation": "presets", "job": "Report period range with quick preset buttons"}
+{"id": "cnippet:v-date-picker-12", "node": "component/picker", "variation": null, "job": "Date picker with daily, weekly or monthly recurrence", "edge": "recurring-date-picker"}
+{"id": "cnippet:v-date-picker-13", "node": "component/picker", "variation": "presets", "job": "Hotel stay range with duration shortcut buttons"}
+{"id": "cnippet:v-date-picker-14", "node": "component/picker", "variation": "date-picker", "job": "Birthday picker validating age between 18 and 100"}
+{"id": "cnippet:v-date-picker-15", "node": "component/picker", "variation": null, "job": "Availability selector picking several separate days", "edge": "multi-date-picker"}
+{"id": "cnippet:v-date-picker-2", "node": "component/picker", "variation": "date-range", "job": "Two-month calendar selecting a date range"}
+{"id": "cnippet:v-date-picker-3", "node": "component/picker", "variation": "date-picker", "job": "Date picker with dropdown month and year navigation"}
+{"id": "cnippet:v-date-picker-4", "node": "component/picker", "variation": "presets", "job": "Date picker with today, tomorrow and week presets"}
+{"id": "cnippet:v-date-picker-5", "node": "component/picker", "variation": "date-picker", "job": "Date picker with a typed text input"}
+{"id": "cnippet:v-date-picker-6", "node": "component/picker", "variation": "date-picker", "job": "Calendar closing automatically after a date is chosen"}
+{"id": "cnippet:v-date-picker-7", "node": "component/picker", "variation": "date-picker", "job": "Appointment booking picker showing doctor availability"}
+{"id": "cnippet:v-date-picker-8", "node": "component/picker", "variation": "date-picker", "job": "Meeting scheduler checking team availability for a date"}
+{"id": "cnippet:v-date-picker-9", "node": "component/picker", "variation": "date-picker", "job": "Delivery date picker with shipping method and estimated window"}
+{"id": "cnippet:v-dialog-1", "node": "component/dialog", "variation": "form-dialog", "job": "Edit profile form inside a modal dialog"}
+{"id": "cnippet:v-dialog-10", "node": "component/dialog", "variation": "form-dialog", "job": "Invite members dialog with email field and role select"}
+{"id": "cnippet:v-dialog-11", "node": "component/dialog", "variation": "modal-dialog", "job": "Share dialog copying the document link"}
+{"id": "cnippet:v-dialog-12", "node": "component/dialog", "variation": "form-dialog", "job": "Two-factor setup dialog entering a six-digit code"}
+{"id": "cnippet:v-dialog-13", "node": "component/dialog", "variation": "confirm-alert", "job": "Subscription cancellation dialog with a reason field"}
+{"id": "cnippet:v-dialog-14", "node": "component/dialog", "variation": "modal-dialog", "job": "API key dialog revealing and copying a new key"}
+{"id": "cnippet:v-dialog-15", "node": "component/dialog", "variation": "form-dialog", "job": "Feedback dialog rating a product with stars"}
+{"id": "cnippet:v-dialog-2", "node": "component/dialog", "variation": "modal-dialog", "job": "Settings dialog opened from a dropdown menu"}
+{"id": "cnippet:v-dialog-3", "node": "component/dialog", "variation": "form-dialog", "job": "Profile form dialog with a bare footer"}
+{"id": "cnippet:v-dialog-4", "node": "component/dialog", "variation": "modal-dialog", "job": "Terms dialog with scrolling content inside"}
+{"id": "cnippet:v-dialog-5", "node": "component/dialog", "variation": "modal-dialog", "job": "Nested dialog editing a team member"}
+{"id": "cnippet:v-dialog-6", "node": "component/dialog", "variation": "confirm-alert", "job": "Destructive delete confirmation dialog"}
+{"id": "cnippet:v-dialog-7", "node": "component/dialog", "variation": "modal-dialog", "job": "Cookie preferences dialog with per-category switches"}
+{"id": "cnippet:v-dialog-8", "node": "component/dialog", "variation": "modal-dialog", "job": "Session expired dialog prompting sign in again"}
+{"id": "cnippet:v-dialog-9", "node": "component/dialog", "variation": "form-dialog", "job": "Edit profile dialog with avatar, fields and bio"}
+{"id": "cnippet:v-drawer-1", "node": "component/sheet", "variation": "side-sheet", "job": "Side drawer with header, description and footer"}
+{"id": "cnippet:v-drawer-10", "node": "component/sheet", "variation": "form-sheet", "job": "Profile edit form inside a drawer"}
+{"id": "cnippet:v-drawer-11", "node": "section/settings-panel", "variation": "sections", "job": "Preferences drawer with theme, language and notification groups"}
+{"id": "cnippet:v-drawer-12", "node": "component/upload", "variation": "attachment-list", "job": "Drawer listing attachments with drop files upload area"}
+{"id": "cnippet:v-drawer-13", "node": "component/timeline", "variation": "activity-timeline", "job": "Drawer showing an activity log as a timeline"}
+{"id": "cnippet:v-drawer-14", "node": "section/faq", "variation": "search", "job": "Help centre drawer with FAQ search and answers"}
+{"id": "cnippet:v-drawer-15", "node": "component/sheet", "variation": "bottom-sheet", "job": "Bottom sheet holding a grid of quick actions"}
+{"id": "cnippet:v-drawer-2", "node": "component/sheet", "variation": "side-sheet", "job": "Inset drawer opened from all four edges"}
+{"id": "cnippet:v-drawer-3", "node": "component/sheet", "variation": "side-sheet", "job": "Straight drawer opened from all four edges"}
+{"id": "cnippet:v-drawer-4", "node": "component/sheet", "variation": "side-sheet", "job": "Multi-step wizard across nested drawers"}
+{"id": "cnippet:v-drawer-5", "node": "section/nav", "variation": "mobile-drawer", "job": "Drawer navigation menu with home, profile and settings"}
+{"id": "cnippet:v-drawer-6", "node": "section/filters", "variation": "filters", "job": "Drawer panel filtering and sorting a list"}
+{"id": "cnippet:v-drawer-7", "node": "component/sheet", "variation": "side-sheet", "job": "Cart drawer listing items, subtotal and checkout"}
+{"id": "cnippet:v-drawer-8", "node": "component/inbox", "variation": "notification-center", "job": "Notification centre drawer with mark all read"}
+{"id": "cnippet:v-drawer-9", "node": "component/sheet", "variation": "side-sheet", "job": "Delete account drawer with undo confirmation"}
+{"id": "cnippet:v-empty-1", "node": "component/empty", "variation": "with-action", "job": "No meetings empty state with create and docs buttons"}
+{"id": "cnippet:v-empty-10", "node": "component/empty", "variation": "with-action", "job": "No activity empty state with view all activity button"}
+{"id": "cnippet:v-empty-11", "node": "component/empty", "variation": "with-action", "job": "All caught up empty state with manage preferences action"}
+{"id": "cnippet:v-empty-12", "node": "component/empty", "variation": "with-action", "job": "Invite teammates empty state with email input and button"}
+{"id": "cnippet:v-empty-13", "node": "component/empty", "variation": "search-no-results", "job": "No matching results empty state with clear filters action"}
+{"id": "cnippet:v-empty-14", "node": "component/empty", "variation": "illustrated", "job": "Inbox zero empty state with illustration and compose button"}
+{"id": "cnippet:v-empty-15", "node": "component/empty", "variation": "error-state", "job": "Access restricted empty state with request access action"}
+{"id": "cnippet:v-empty-2", "node": "component/empty", "variation": "search-no-results", "job": "No results empty state with try again action"}
+{"id": "cnippet:v-empty-3", "node": "component/empty", "variation": null, "job": "Not found empty state prompting a page search", "edge": "empty-with-search"}
+{"id": "cnippet:v-empty-4", "node": "component/empty", "variation": "with-action", "job": "Empty state with icon and a new post button"}
+{"id": "cnippet:v-empty-5", "node": "component/empty", "variation": "with-action", "job": "Dashed upload empty state with browse files button"}
+{"id": "cnippet:v-empty-6", "node": "component/empty", "variation": "illustrated", "job": "No automations empty state with toggle illustration"}
+{"id": "cnippet:v-empty-7", "node": "component/empty", "variation": "illustrated", "job": "No products empty state with stacked card illustration"}
+{"id": "cnippet:v-empty-8", "node": "component/empty", "variation": "illustrated", "job": "No payment methods empty state with card illustration"}
+{"id": "cnippet:v-empty-9", "node": "component/empty", "variation": "illustrated", "job": "No events empty state with calendar illustration"}
+{"id": "cnippet:v-field-1", "node": "component/field", "variation": "text-input", "job": "Field with label, input and description"}
+{"id": "cnippet:v-field-10", "node": "component/field", "variation": "text-input", "job": "Field wrapping a textarea with label and description"}
+{"id": "cnippet:v-field-11", "node": "component/field", "variation": null, "job": "Field wrapping a select dropdown", "edge": "field-select"}
+{"id": "cnippet:v-field-12", "node": "component/field", "variation": null, "job": "Field with a checkbox and its label", "edge": "field-checkbox"}
+{"id": "cnippet:v-field-13", "node": "component/field", "variation": null, "job": "Labelled field wrapping a checkbox group", "edge": "field-checkbox-group"}
+{"id": "cnippet:v-field-14", "node": "component/field", "variation": null, "job": "Labelled field wrapping a radio group", "edge": "field-choice-group"}
+{"id": "cnippet:v-field-15", "node": "component/field", "variation": null, "job": "Labelled field wrapping a range slider", "edge": "field-slider"}
+{"id": "cnippet:v-field-16", "node": "component/field", "variation": "number-stepper", "job": "Labelled field with a number stepper input"}
+{"id": "cnippet:v-field-17", "node": "component/form", "variation": null, "job": "Complete form of several labelled fields", "edge": "multi-field-form"}
+{"id": "cnippet:v-field-18", "node": "component/field", "variation": null, "job": "Labelled field wrapping an on/off switch", "edge": "field-switch"}
+{"id": "cnippet:v-field-19", "node": "component/field", "variation": null, "job": "Labelled field wrapping a date input", "edge": "field-date-input"}
+{"id": "cnippet:v-field-2", "node": "component/field", "variation": "password", "job": "Required password field with label"}
+{"id": "cnippet:v-field-20", "node": "component/field", "variation": null, "job": "Labelled field with a one-time-code input", "edge": "field-otp"}
+{"id": "cnippet:v-field-21", "node": "component/field", "variation": null, "job": "Labelled field wrapping a file upload control", "edge": "field-upload"}
+{"id": "cnippet:v-field-22", "node": "component/field", "variation": "password", "job": "Password field with a strength meter"}
+{"id": "cnippet:v-field-3", "node": "component/field", "variation": null, "job": "Disabled, non-editable form field", "edge": "field-disabled"}
+{"id": "cnippet:v-field-4", "node": "component/field", "variation": "validation-states", "job": "Field showing a validation error message"}
+{"id": "cnippet:v-field-5", "node": "component/field", "variation": "validation-states", "job": "Field exposing its live validity state"}
+{"id": "cnippet:v-field-6", "node": "component/field", "variation": "with-addon", "job": "Field wrapping an input group with addons"}
+{"id": "cnippet:v-field-7", "node": "component/field", "variation": null, "job": "Field with an autocomplete text input", "edge": "field-autocomplete"}
+{"id": "cnippet:v-field-8", "node": "component/field", "variation": null, "job": "Field with a single-select combobox", "edge": "field-combobox"}
+{"id": "cnippet:v-field-9", "node": "component/field", "variation": null, "job": "Field with a multi-select chip combobox", "edge": "field-multiselect"}
+{"id": "cnippet:v-fieldset-1", "node": "component/field", "variation": null, "job": "Billing address fields grouped under a legend", "edge": "billing-fieldset"}
+{"id": "cnippet:v-fieldset-10", "node": "component/field", "variation": null, "job": "Basic fieldset grouping related fields", "edge": "field-group"}
+{"id": "cnippet:v-fieldset-2", "node": "component/field", "variation": null, "job": "Personal detail fields grouped under a legend", "edge": "personal-info-fieldset"}
+{"id": "cnippet:v-fieldset-3", "node": "component/field", "variation": null, "job": "Shipping address fields grouped under a legend", "edge": "shipping-address-fieldset"}
+{"id": "cnippet:v-fieldset-4", "node": "component/field", "variation": null, "job": "Notification preference switches grouped together", "edge": "notification-prefs-fieldset"}
+{"id": "cnippet:v-fieldset-5", "node": "component/field", "variation": null, "job": "Change-password fields grouped under a legend", "edge": "change-password-fieldset"}
+{"id": "cnippet:v-fieldset-6", "node": "component/field", "variation": null, "job": "Payment card fields grouped under a legend", "edge": "payment-info-fieldset"}
+{"id": "cnippet:v-fieldset-7", "node": "component/field", "variation": null, "job": "Basic fieldset grouping related fields", "edge": "field-group"}
+{"id": "cnippet:v-fieldset-8", "node": "component/field", "variation": null, "job": "Basic fieldset grouping related fields", "edge": "field-group"}
+{"id": "cnippet:v-fieldset-9", "node": "component/field", "variation": null, "job": "Basic fieldset grouping related fields", "edge": "field-group"}
+{"id": "cnippet:v-form-1", "node": "component/form", "variation": null, "job": "Default form submitting a few fields", "edge": "standard-form"}
+{"id": "cnippet:v-form-10", "node": "component/form", "variation": null, "job": "Feedback form with a star rating input", "edge": "feedback-rating-form"}
+{"id": "cnippet:v-form-11", "node": "component/form", "variation": null, "job": "Forgot-password form sending a reset email", "edge": "forgot-password-form"}
+{"id": "cnippet:v-form-12", "node": "component/form", "variation": null, "job": "Danger-zone form confirming account deletion", "edge": "delete-account-form"}
+{"id": "cnippet:v-form-13", "node": "component/form", "variation": null, "job": "Invite a teammate by email address", "edge": "invite-member-form"}
+{"id": "cnippet:v-form-2", "node": "component/form", "variation": "with-validation", "job": "Multi-field form with inline validation messages"}
+{"id": "cnippet:v-form-3", "node": "component/form", "variation": "sign-in", "job": "Email and password sign-in form"}
+{"id": "cnippet:v-form-4", "node": "component/form", "variation": null, "job": "Profile settings form editing account details", "edge": "profile-settings-form"}
+{"id": "cnippet:v-form-5", "node": "component/form", "variation": "contact", "job": "Contact form with name, email and message"}
+{"id": "cnippet:v-form-6", "node": "component/form", "variation": null, "job": "Change password form with confirmation field", "edge": "change-password-form"}
+{"id": "cnippet:v-form-7", "node": "component/form", "variation": null, "job": "Newsletter signup form capturing an email", "edge": "newsletter-signup-form"}
+{"id": "cnippet:v-form-8", "node": "component/form", "variation": "multi-step", "job": "Three-step onboarding wizard form"}
+{"id": "cnippet:v-form-9", "node": "component/form", "variation": "sign-up", "job": "Account registration form with confirm password"}
+{"id": "cnippet:v-frame-1", "node": "component/card", "variation": null, "job": "Framed panel with header, body and footer", "edge": "frame-panel"}
+{"id": "cnippet:v-frame-10", "node": "component/card", "variation": null, "job": "Basic framed panel wrapping content", "edge": "frame-panel"}
+{"id": "cnippet:v-frame-2", "node": "component/card", "variation": null, "job": "Frame split into separated header and body panels", "edge": "split-panel-frame"}
+{"id": "cnippet:v-frame-3", "node": "component/card", "variation": null, "job": "Frame whose body panel collapses on demand", "edge": "collapsible-panel-frame"}
+{"id": "cnippet:v-frame-4", "node": "component/card", "variation": null, "job": "Dense framed panel with tight spacing", "edge": "dense-frame"}
+{"id": "cnippet:v-frame-5", "node": "component/card", "variation": null, "job": "Framed panel with an action button in its header", "edge": "frame-header-action"}
+{"id": "cnippet:v-frame-6", "node": "component/stat", "variation": "stats-row", "job": "Framed panel displaying a row of metrics"}
+{"id": "cnippet:v-frame-7", "node": "component/card", "variation": null, "job": "Framed panel with a status badge in its header", "edge": "badge-status-frame"}
+{"id": "cnippet:v-frame-8", "node": "component/card", "variation": null, "job": "Read-only key and value pairs in a frame", "edge": "key-value-frame"}
+{"id": "cnippet:v-frame-9", "node": "component/card", "variation": null, "job": "Framed panel with call-to-action buttons in footer", "edge": "footer-cta-frame"}
+{"id": "cnippet:v-group-1", "node": "atom/layout", "variation": null, "job": "Default group joining adjacent controls", "edge": "control-group"}
+{"id": "cnippet:v-group-10", "node": "atom/layout", "variation": null, "job": "Groups nested inside other groups", "edge": "nested-control-groups"}
+{"id": "cnippet:v-group-11", "node": "atom/layout", "variation": null, "job": "Group with a popup trigger control", "edge": "group-with-popup"}
+{"id": "cnippet:v-group-12", "node": "atom/layout", "variation": null, "job": "Group containing an input group", "edge": "group-with-input-group"}
+{"id": "cnippet:v-group-13", "node": "atom/layout", "variation": null, "job": "Group with a dropdown menu control", "edge": "group-with-menu"}
+{"id": "cnippet:v-group-14", "node": "atom/layout", "variation": null, "job": "Group with a select control", "edge": "group-with-select"}
+{"id": "cnippet:v-group-15", "node": "component/dock", "variation": "action-toolbar", "job": "Text formatting toolbar of toggle buttons"}
+{"id": "cnippet:v-group-16", "node": "atom/layout", "variation": null, "job": "Thumbs up and down vote toggle buttons", "edge": "vote-buttons"}
+{"id": "cnippet:v-group-17", "node": "atom/layout", "variation": null, "job": "Media play, pause and volume control buttons", "edge": "media-controls"}
+{"id": "cnippet:v-group-18", "node": "atom/layout", "variation": null, "job": "Minimum and maximum price inputs with apply button", "edge": "price-range-group"}
+{"id": "cnippet:v-group-2", "node": "atom/layout", "variation": null, "job": "Group with an input joined between controls", "edge": "group-with-input"}
+{"id": "cnippet:v-group-3", "node": "atom/layout", "variation": null, "job": "Smaller-sized group of controls", "edge": "small-control-group"}
+{"id": "cnippet:v-group-4", "node": "atom/layout", "variation": null, "job": "Larger-sized group of controls", "edge": "large-control-group"}
+{"id": "cnippet:v-group-5", "node": "atom/layout", "variation": null, "job": "Group containing a disabled control", "edge": "group-with-disabled-control"}
+{"id": "cnippet:v-group-6", "node": "atom/layout", "variation": null, "job": "Group of default-styled controls", "edge": "control-group"}
+{"id": "cnippet:v-group-7", "node": "atom/layout", "variation": null, "job": "Group with a labelled text control at the start", "edge": "group-with-start-label"}
+{"id": "cnippet:v-group-8", "node": "atom/layout", "variation": null, "job": "Group with trailing text control", "edge": "group-with-end-label"}
+{"id": "cnippet:v-group-9", "node": "atom/layout", "variation": null, "job": "Vertically stacked group of controls", "edge": "vertical-control-group"}
+{"id": "cnippet:v-input-1", "node": "atom/text-input", "variation": "text-input", "job": "Default single-line text input"}
+{"id": "cnippet:v-input-10", "node": "atom/text-input", "variation": "text-input", "job": "Input using the date type"}
+{"id": "cnippet:v-input-11", "node": "atom/text-input", "variation": "text-input", "job": "Input using the file type"}
+{"id": "cnippet:v-input-12", "node": "atom/text-input", "variation": "text-input", "job": "Input marked with a required indicator"}
+{"id": "cnippet:v-input-13", "node": "atom/text-input", "variation": "text-input", "job": "Input using the time type"}
+{"id": "cnippet:v-input-14", "node": "atom/text-input", "variation": "text-input", "job": "Several inputs stacked as multiple fields"}
+{"id": "cnippet:v-input-15", "node": "atom/text-input", "variation": "text-input", "job": "Input label carrying an explanatory tooltip"}
+{"id": "cnippet:v-input-16", "node": "atom/text-input", "variation": "with-slots", "job": "Input with a badge inside its end slot"}
+{"id": "cnippet:v-input-17", "node": "atom/text-input", "variation": "with-slots", "job": "Input with an optional badge inside it"}
+{"id": "cnippet:v-input-18", "node": "atom/text-input", "variation": "password", "job": "Password input with reveal toggle and link"}
+{"id": "cnippet:v-input-19", "node": "atom/text-input", "variation": "with-error", "job": "Input listing several validation error messages"}
+{"id": "cnippet:v-input-2", "node": "atom/text-input", "variation": "text-input", "job": "Input rendered with a field label"}
+{"id": "cnippet:v-input-20", "node": "atom/text-input", "variation": "password", "job": "Password input with strength hint and icons"}
+{"id": "cnippet:v-input-21", "node": "atom/text-input", "variation": "password", "job": "Disabled input displaying a masked value"}
+{"id": "cnippet:v-input-22", "node": "atom/text-input", "variation": "with-slots", "job": "Read-only input with copy-to-clipboard button"}
+{"id": "cnippet:v-input-23", "node": "atom/text-input", "variation": "with-slots", "job": "Input with an inline icon at its start"}
+{"id": "cnippet:v-input-24", "node": "component/picker", "variation": "color-picker", "job": "Input and swatch for choosing a colour"}
+{"id": "cnippet:v-input-25", "node": "atom/text-input", "variation": "with-slots", "job": "Input with an inline clear button"}
+{"id": "cnippet:v-input-3", "node": "atom/text-input", "variation": "text-input", "job": "Input with a description below the label"}
+{"id": "cnippet:v-input-4", "node": "atom/text-input", "variation": "with-error", "job": "Input showing an error message below it"}
+{"id": "cnippet:v-input-5", "node": "atom/text-input", "variation": "with-slots", "job": "Input with a live character counter"}
+{"id": "cnippet:v-input-6", "node": "atom/text-input", "variation": "password", "job": "Input using the password type"}
+{"id": "cnippet:v-input-7", "node": "atom/text-input", "variation": "text-input", "job": "Input using the phone number type"}
+{"id": "cnippet:v-input-8", "node": "atom/text-input", "variation": "text-input", "job": "Input using the URL type"}
+{"id": "cnippet:v-input-9", "node": "atom/text-input", "variation": "text-input", "job": "Input using the number type"}
+{"id": "cnippet:v-input-group-1", "node": "component/field", "variation": "with-addon", "job": "Input group with default prefix and suffix addons"}
+{"id": "cnippet:v-input-group-10", "node": "component/field", "variation": "with-addon", "job": "Input group with a keyboard shortcut hint"}
+{"id": "cnippet:v-input-group-11", "node": "component/field", "variation": "with-addon", "job": "Input group with a label inside the field"}
+{"id": "cnippet:v-input-group-12", "node": "component/field", "variation": "with-addon", "job": "Input groups shown in three sizes"}
+{"id": "cnippet:v-input-group-13", "node": "component/field", "variation": "with-addon", "job": "Disabled input group with addons"}
+{"id": "cnippet:v-input-group-14", "node": "component/field", "variation": "with-addon", "job": "Input group showing a loading spinner addon"}
+{"id": "cnippet:v-input-group-15", "node": "component/field", "variation": "with-addon", "job": "Input group wrapping a number field"}
+{"id": "cnippet:v-input-group-16", "node": "component/field", "variation": "with-addon", "job": "Input group wrapping a textarea with addon"}
+{"id": "cnippet:v-input-group-17", "node": "component/field", "variation": "with-addon", "job": "Amount input with a currency select prefix"}
+{"id": "cnippet:v-input-group-18", "node": "component/field", "variation": "with-addon", "job": "Email field with arrow-shaped subscribe button"}
+{"id": "cnippet:v-input-group-19", "node": "component/field", "variation": "with-addon", "job": "Input group with an inline clear button"}
+{"id": "cnippet:v-input-group-2", "node": "component/field", "variation": "with-addon", "job": "Input group with an icon in its end slot"}
+{"id": "cnippet:v-input-group-20", "node": "component/composer", "variation": "chat-composer", "job": "Chat message input with an async send button"}
+{"id": "cnippet:v-input-group-21", "node": "component/field", "variation": "with-addon", "job": "Textarea input group with character countdown"}
+{"id": "cnippet:v-input-group-3", "node": "component/field", "variation": "with-addon", "job": "Input group with leading text addon"}
+{"id": "cnippet:v-input-group-4", "node": "component/field", "variation": "with-addon", "job": "Input group with trailing text addon"}
+{"id": "cnippet:v-input-group-5", "node": "component/field", "variation": "with-addon", "job": "Input group with both leading and trailing text"}
+{"id": "cnippet:v-input-group-6", "node": "component/field", "variation": "with-addon", "job": "Input group whose addon shows a tooltip"}
+{"id": "cnippet:v-input-group-7", "node": "component/field", "variation": "with-addon", "job": "Input group with an icon button addon"}
+{"id": "cnippet:v-input-group-8", "node": "component/field", "variation": "with-addon", "job": "Input group with a button addon"}
+{"id": "cnippet:v-input-group-9", "node": "component/field", "variation": "with-addon", "job": "Input group with a badge addon"}
+{"id": "cnippet:v-kbd-1", "node": "atom/text", "variation": "keyboard", "job": "Default keyboard shortcut key caps"}
+{"id": "cnippet:v-kbd-10", "node": "atom/text", "variation": "keyboard", "job": "Shortcut keys shown beside menu items"}
+{"id": "cnippet:v-kbd-11", "node": "atom/text", "variation": "keyboard", "job": "Key hints on command palette result rows"}
+{"id": "cnippet:v-kbd-2", "node": "atom/text", "variation": "keyboard", "job": "Shortcut key shown inside an input group"}
+{"id": "cnippet:v-kbd-3", "node": "atom/text", "variation": "keyboard", "job": "Several keys grouped into one shortcut"}
+{"id": "cnippet:v-kbd-4", "node": "atom/text", "variation": "keyboard", "job": "keyboard keys with icons in a key group"}
+{"id": "cnippet:v-kbd-5", "node": "atom/text", "variation": "keyboard", "job": "keyboard shortcut hint inside a tooltip"}
+{"id": "cnippet:v-kbd-6", "node": "atom/text", "variation": "keyboard", "job": "reference list of app keyboard shortcuts"}
+{"id": "cnippet:v-kbd-7", "node": "atom/text", "variation": "keyboard", "job": "keyboard shortcut badges shown inside buttons"}
+{"id": "cnippet:v-kbd-8", "node": "atom/text", "variation": "keyboard", "job": "arrow key navigation keys with labels"}
+{"id": "cnippet:v-kbd-9", "node": "atom/text", "variation": "keyboard", "job": "Mac versus Windows shortcut comparison rows"}
+{"id": "cnippet:v-label-1", "node": "component/field", "variation": "text-input", "job": "labelled email text field"}
+{"id": "cnippet:v-label-10", "node": "component/field", "variation": "text-input", "job": "field label with live status dot"}
+{"id": "cnippet:v-label-11", "node": "component/field", "variation": "text-input", "job": "field label showing keyboard shortcut"}
+{"id": "cnippet:v-label-12", "node": "component/field", "variation": "password", "job": "password field with forgot-password link"}
+{"id": "cnippet:v-label-13", "node": "component/field", "variation": "with-addon", "job": "field label with icon prefix"}
+{"id": "cnippet:v-label-14", "node": "component/form", "variation": "horizontal-layout", "job": "horizontal layout of labelled input fields"}
+{"id": "cnippet:v-label-15", "node": "component/field", "variation": "validation-states", "job": "email field showing taken error message"}
+{"id": "cnippet:v-label-2", "node": "component/field", "variation": null, "job": "checkbox with its form label", "edge": "checkbox-field"}
+{"id": "cnippet:v-label-3", "node": "component/field", "variation": null, "job": "labelled multi-line message textarea", "edge": "textarea-field"}
+{"id": "cnippet:v-label-4", "node": "component/field", "variation": "text-input", "job": "email field labelled as required"}
+{"id": "cnippet:v-label-5", "node": "component/field", "variation": "text-input", "job": "phone field labelled as optional"}
+{"id": "cnippet:v-label-6", "node": "component/field", "variation": "with-addon", "job": "field label with info tooltip icon"}
+{"id": "cnippet:v-label-7", "node": "component/field", "variation": "text-input", "job": "webhook URL field with status badge"}
+{"id": "cnippet:v-label-8", "node": "component/field", "variation": null, "job": "bio textarea with live character counter", "edge": "textarea-with-counter"}
+{"id": "cnippet:v-label-9", "node": "component/field", "variation": "text-input", "job": "field with helper description text"}
+{"id": "cnippet:v-menu-1", "node": "component/menu", "variation": "dropdown-menu", "job": "playback dropdown with groups and submenu"}
+{"id": "cnippet:v-menu-10", "node": "component/menu", "variation": "dropdown-menu", "job": "notification settings menu with switch items"}
+{"id": "cnippet:v-menu-11", "node": "component/menu", "variation": "dropdown-menu", "job": "account menu with user details"}
+{"id": "cnippet:v-menu-12", "node": "component/menu", "variation": "dropdown-menu", "job": "file actions dropdown with shortcuts"}
+{"id": "cnippet:v-menu-13", "node": "component/menu", "variation": "dropdown-menu", "job": "icon button opening a more-options menu"}
+{"id": "cnippet:v-menu-14", "node": "component/menu", "variation": "dropdown-menu", "job": "bell icon menu toggling notification channels"}
+{"id": "cnippet:v-menu-15", "node": "component/menu", "variation": "dropdown-menu", "job": "share menu with export submenu"}
+{"id": "cnippet:v-menu-2", "node": "component/menu", "variation": "dropdown-menu", "job": "menu that opens on hover"}
+{"id": "cnippet:v-menu-3", "node": "component/menu", "variation": "dropdown-menu", "job": "menu with checkbox items"}
+{"id": "cnippet:v-menu-4", "node": "component/menu", "variation": "dropdown-menu", "job": "menu with switch items"}
+{"id": "cnippet:v-menu-5", "node": "component/menu", "variation": "dropdown-menu", "job": "menu with radio group options"}
+{"id": "cnippet:v-menu-6", "node": "component/menu", "variation": "dropdown-menu", "job": "menu items that link to pages"}
+{"id": "cnippet:v-menu-7", "node": "component/menu", "variation": "dropdown-menu", "job": "menu with grouped items and labels"}
+{"id": "cnippet:v-menu-8", "node": "component/menu", "variation": "dropdown-menu", "job": "menu with a nested submenu"}
+{"id": "cnippet:v-menu-9", "node": "component/menu", "variation": "dropdown-menu", "job": "menu item that opens a dialog"}
+{"id": "cnippet:v-meter-1", "node": "atom/progress", "variation": "meter-gauge", "job": "storage usage meter with label and value"}
+{"id": "cnippet:v-meter-10", "node": "atom/progress", "variation": "meter-gauge", "job": "score out of 100 meter card"}
+{"id": "cnippet:v-meter-11", "node": "atom/progress", "variation": "meter-gauge", "job": "list of resource usage meters"}
+{"id": "cnippet:v-meter-12", "node": "atom/progress", "variation": "meter-gauge", "job": "metric meters coloured by threshold"}
+{"id": "cnippet:v-meter-13", "node": "atom/progress", "variation": "meter-gauge", "job": "storage breakdown meters with icons"}
+{"id": "cnippet:v-meter-14", "node": "atom/progress", "variation": "meter-gauge", "job": "file upload progress meter card"}
+{"id": "cnippet:v-meter-15", "node": "atom/progress", "variation": "meter-gauge", "job": "profile strength meter with checklist"}
+{"id": "cnippet:v-meter-2", "node": "atom/progress", "variation": "meter-gauge", "job": "meter with a text label"}
+{"id": "cnippet:v-meter-3", "node": "atom/progress", "variation": "meter-gauge", "job": "meter showing a formatted rating value"}
+{"id": "cnippet:v-meter-4", "node": "atom/progress", "variation": "meter-gauge", "job": "bandwidth meter with custom minimum and maximum"}
+{"id": "cnippet:v-meter-5", "node": "atom/progress", "variation": "meter-gauge", "job": "stacked resource meters with live deploy progress"}
+{"id": "cnippet:v-meter-6", "node": "atom/progress", "variation": "meter-gauge", "job": "skill meters with colour-coded severity"}
+{"id": "cnippet:v-meter-7", "node": "atom/progress", "variation": "meter-gauge", "job": "password strength meter from typed input"}
+{"id": "cnippet:v-meter-8", "node": "atom/progress", "variation": "meter-gauge", "job": "API usage meters per team member"}
+{"id": "cnippet:v-meter-9", "node": "atom/progress", "variation": "meter-gauge", "job": "quarterly budget meter with category breakdown"}
+{"id": "cnippet:v-number-field-1", "node": "component/field", "variation": "number-stepper", "job": "number field with increment and decrement buttons"}
+{"id": "cnippet:v-number-field-10", "node": "component/field", "variation": "number-stepper", "job": "font size number field with scrub area"}
+{"id": "cnippet:v-number-field-11", "node": "component/field", "variation": "number-stepper", "job": "opacity percentage number field with scrub"}
+{"id": "cnippet:v-number-field-12", "node": "component/field", "variation": "number-stepper", "job": "shopping cart quantity number stepper row"}
+{"id": "cnippet:v-number-field-13", "node": "component/field", "variation": "number-stepper", "job": "settings number fields with units and steps"}
+{"id": "cnippet:v-number-field-14", "node": "component/field", "variation": "number-stepper", "job": "minimum and maximum currency number fields"}
+{"id": "cnippet:v-number-field-15", "node": "component/field", "variation": "number-stepper", "job": "volume number field with reset button"}
+{"id": "cnippet:v-number-field-2", "node": "component/field", "variation": "number-stepper", "job": "small and large number field sizes"}
+{"id": "cnippet:v-number-field-3", "node": "component/field", "variation": "number-stepper", "job": "disabled number field"}
+{"id": "cnippet:v-number-field-4", "node": "component/field", "variation": "number-stepper", "job": "number field with external label"}
+{"id": "cnippet:v-number-field-5", "node": "component/field", "variation": "number-stepper", "job": "number field with drag scrub area"}
+{"id": "cnippet:v-number-field-6", "node": "component/field", "variation": "number-stepper", "job": "number field with minimum and maximum range"}
+{"id": "cnippet:v-number-field-7", "node": "component/field", "variation": "number-stepper", "job": "number field formatting currency values"}
+{"id": "cnippet:v-number-field-8", "node": "component/field", "variation": "number-stepper", "job": "number fields with custom step sizes"}
+{"id": "cnippet:v-number-field-9", "node": "component/field", "variation": "number-stepper", "job": "number field inside a validating form"}
+{"id": "cnippet:v-otp-field-1", "node": "atom/text-input", "variation": "otp", "job": "one-time password input slots"}
+{"id": "cnippet:v-otp-field-10", "node": "section/auth", "variation": "2fa", "job": "email verification card with code entry"}
+{"id": "cnippet:v-otp-field-11", "node": "section/auth", "variation": "2fa", "job": "check-your-email code entry card"}
+{"id": "cnippet:v-otp-field-12", "node": "section/auth", "variation": "2fa", "job": "authenticator app code entry card"}
+{"id": "cnippet:v-otp-field-13", "node": "atom/text-input", "variation": "otp", "job": "invite code entry split into groups"}
+{"id": "cnippet:v-otp-field-14", "node": "atom/text-input", "variation": "otp", "job": "code entry with success and error states"}
+{"id": "cnippet:v-otp-field-15", "node": "atom/text-input", "variation": "otp", "job": "basic code entry with resend countdown"}
+{"id": "cnippet:v-otp-field-2", "node": "atom/text-input", "variation": "otp", "job": "large sized one-time password input"}
+{"id": "cnippet:v-otp-field-3", "node": "atom/text-input", "variation": "otp", "job": "code input with separator between groups"}
+{"id": "cnippet:v-otp-field-4", "node": "atom/text-input", "variation": "otp", "job": "labelled code input with helper text"}
+{"id": "cnippet:v-otp-field-5", "node": "atom/text-input", "variation": "otp", "job": "code input with custom sanitization feedback"}
+{"id": "cnippet:v-otp-field-6", "node": "atom/text-input", "variation": "otp", "job": "code input validating automatically on completion"}
+{"id": "cnippet:v-otp-field-7", "node": "atom/text-input", "variation": "otp", "job": "alphanumeric recovery code input"}
+{"id": "cnippet:v-otp-field-8", "node": "atom/text-input", "variation": "otp", "job": "code slots with placeholder hints"}
+{"id": "cnippet:v-otp-field-9", "node": "atom/text-input", "variation": "otp", "job": "masked code entry for shared screens"}
+{"id": "cnippet:v-pagination-1", "node": "component/pagination", "variation": "numbered-pages", "job": "previous, next and numbered pages with ellipsis"}
+{"id": "cnippet:v-pagination-10", "node": "component/pagination", "variation": "numbered-pages", "job": "outlined bordered pagination button row"}
+{"id": "cnippet:v-pagination-11", "node": "component/pagination", "variation": "with-page-size", "job": "rows per page select with page dropdown"}
+{"id": "cnippet:v-pagination-12", "node": "component/pagination", "variation": "first-last-buttons", "job": "first and last page jumps with page select"}
+{"id": "cnippet:v-pagination-13", "node": "component/pagination", "variation": "with-ellipsis", "job": "numbered pages with page info and ellipsis"}
+{"id": "cnippet:v-pagination-14", "node": "component/pagination", "variation": "page-counter", "job": "compact page counter with previous and next pills"}
+{"id": "cnippet:v-pagination-15", "node": "component/pagination", "variation": "numbered-pages", "job": "numbered page window with results summary"}
+{"id": "cnippet:v-pagination-16", "node": "component/pagination", "variation": "page-counter", "job": "page of page counter with previous and next"}
+{"id": "cnippet:v-pagination-17", "node": "component/pagination", "variation": null, "job": "newer and older post navigation links", "edge": "older-newer-nav"}
+{"id": "cnippet:v-pagination-18", "node": "component/pagination", "variation": "with-ellipsis", "job": "disabled numbered pages with ellipsis links"}
+{"id": "cnippet:v-pagination-19", "node": "component/pagination", "variation": "page-counter", "job": "results summary with compact numbered navigation"}
+{"id": "cnippet:v-pagination-2", "node": "component/pagination", "variation": "numbered-pages", "job": "icon-only previous and next with numbered pages"}
+{"id": "cnippet:v-pagination-20", "node": "component/pagination", "variation": "numbered-pages", "job": "numbered pagination dimmed under a loading spinner"}
+{"id": "cnippet:v-pagination-3", "node": "component/pagination", "variation": "numbered-pages", "job": "numbered pages with hover border effect"}
+{"id": "cnippet:v-pagination-4", "node": "component/pagination", "variation": "numbered-pages", "job": "circular numbered page buttons"}
+{"id": "cnippet:v-pagination-5", "node": "component/pagination", "variation": "numbered-pages", "job": "numbered pages with go-to-page input"}
+{"id": "cnippet:v-pagination-6", "node": "component/pagination", "variation": "numbered-pages", "job": "numbered pagination inside a card"}
+{"id": "cnippet:v-pagination-7", "node": "component/pagination", "variation": null, "job": "previous and next text arrow buttons", "edge": "prev-next-nav"}
+{"id": "cnippet:v-pagination-8", "node": "component/pagination", "variation": "page-counter", "job": "centered page counter between previous and next"}
+{"id": "cnippet:v-pagination-9", "node": "component/pagination", "variation": "page-counter", "job": "left-aligned page counter with previous and next"}
+{"id": "cnippet:v-popover-1", "node": "component/popover", "variation": "standard-popover", "job": "feedback form inside a popover"}
+{"id": "cnippet:v-popover-10", "node": "component/popover", "variation": "standard-popover", "job": "share popover copying the page link"}
+{"id": "cnippet:v-popover-11", "node": "component/picker", "variation": "color-picker", "job": "accent colour swatch picker popover"}
+{"id": "cnippet:v-popover-12", "node": "component/popover", "variation": "standard-popover", "job": "keyboard shortcuts list popover"}
+{"id": "cnippet:v-popover-13", "node": "component/popover", "variation": "standard-popover", "job": "filter panel popover with checkboxes"}
+{"id": "cnippet:v-popover-14", "node": "component/popover", "variation": "standard-popover", "job": "reminder options popover with badge count"}
+{"id": "cnippet:v-popover-15", "node": "component/popover", "variation": "info-card", "job": "system status popover with service list"}
+{"id": "cnippet:v-popover-16", "node": "component/popover", "variation": "standard-popover", "job": "emoji picker grid popover"}
+{"id": "cnippet:v-popover-17", "node": "component/popover", "variation": "standard-popover", "job": "delete confirmation popover"}
+{"id": "cnippet:v-popover-18", "node": "component/popover", "variation": "standard-popover", "job": "inline tag editor popover with badges"}
+{"id": "cnippet:v-popover-19", "node": "component/inbox", "variation": "notification-center", "job": "bell popover listing unread notifications"}
+{"id": "cnippet:v-popover-2", "node": "component/popover", "variation": "standard-popover", "job": "popover with an explicit close button"}
+{"id": "cnippet:v-popover-20", "node": "component/popover", "variation": "standard-popover", "job": "inline edit field popover for team name"}
+{"id": "cnippet:v-popover-3", "node": "component/popover", "variation": "tooltip", "job": "tooltip-style popover explaining password rules"}
+{"id": "cnippet:v-popover-4", "node": "component/popover", "variation": "standard-popover", "job": "shared popover with two different triggers"}
+{"id": "cnippet:v-popover-5", "node": "component/popover", "variation": "standard-popover", "job": "popover placement on all four sides"}
+{"id": "cnippet:v-popover-6", "node": "component/popover", "variation": "hover-card", "job": "user profile card popover from an avatar"}
+{"id": "cnippet:v-popover-7", "node": "component/popover", "variation": "info-card", "job": "timestamp detail popover with deploy time"}
+{"id": "cnippet:v-popover-8", "node": "component/popover", "variation": "standard-popover", "job": "settings popover with volume slider and switches"}
+{"id": "cnippet:v-popover-9", "node": "component/popover", "variation": "standard-popover", "job": "popover showing a stepped product tour with next and back"}
+{"id": "cnippet:v-preview-card-1", "node": "component/popover", "variation": "link-preview", "job": "hover preview of a site link with tech metadata"}
+{"id": "cnippet:v-preview-card-10", "node": "component/popover", "variation": "link-preview", "job": "hover previews for a list of reference links"}
+{"id": "cnippet:v-preview-card-11", "node": "component/popover", "variation": "hover-card", "job": "hover card for a mentioned user profile"}
+{"id": "cnippet:v-preview-card-12", "node": "component/popover", "variation": "link-preview", "job": "hover preview of an article with read time"}
+{"id": "cnippet:v-preview-card-13", "node": "component/popover", "variation": "link-preview", "job": "hover preview of a product card with rating"}
+{"id": "cnippet:v-preview-card-14", "node": "component/popover", "variation": "link-preview", "job": "hover preview of a linked issue with labels"}
+{"id": "cnippet:v-preview-card-15", "node": "component/popover", "variation": "link-preview", "job": "hover preview of an npm package link"}
+{"id": "cnippet:v-preview-card-2", "node": "component/popover", "variation": "hover-card", "job": "hover card for a mentioned venue profile"}
+{"id": "cnippet:v-preview-card-3", "node": "component/popover", "variation": "link-preview", "job": "hover preview of an article link"}
+{"id": "cnippet:v-preview-card-4", "node": "component/popover", "variation": "link-preview", "job": "hover preview card for an event page"}
+{"id": "cnippet:v-preview-card-5", "node": "component/popover", "variation": "hover-card", "job": "hover card for a mentioned investor company"}
+{"id": "cnippet:v-preview-card-6", "node": "component/popover", "variation": "link-preview", "job": "hover preview of a repository link"}
+{"id": "cnippet:v-preview-card-7", "node": "component/popover", "variation": "link-preview", "job": "hover preview of a video link with play badge"}
+{"id": "cnippet:v-preview-card-8", "node": "component/popover", "variation": "link-preview", "job": "hover preview for a tag chip with post count"}
+{"id": "cnippet:v-preview-card-9", "node": "component/popover", "variation": "link-preview", "job": "hover preview of a product with price and rating"}
+{"id": "cnippet:v-progress-1", "node": "atom/progress", "variation": "linear", "job": "labelled progress bar for an export task"}
+{"id": "cnippet:v-progress-10", "node": "atom/progress", "variation": "segmented", "job": "API usage bar marked with tier milestones"}
+{"id": "cnippet:v-progress-11", "node": "atom/progress", "variation": "linear", "job": "survey progress bar with n of m counter"}
+{"id": "cnippet:v-progress-12", "node": "atom/progress", "variation": "linear", "job": "download progress bar with speed and time left"}
+{"id": "cnippet:v-progress-13", "node": "atom/progress", "variation": "meter-gauge", "job": "fundraiser bar showing raised against goal"}
+{"id": "cnippet:v-progress-14", "node": "atom/progress", "variation": "scroll-progress", "job": "reading progress bar tracking article scroll"}
+{"id": "cnippet:v-progress-15", "node": "atom/progress", "variation": "stepped", "job": "build pipeline bar with stage statuses"}
+{"id": "cnippet:v-progress-2", "node": "atom/progress", "variation": "linear", "job": "progress bar with formatted upload value"}
+{"id": "cnippet:v-progress-3", "node": "atom/progress", "variation": "linear", "job": "progress bar with changing status message"}
+{"id": "cnippet:v-progress-4", "node": "atom/progress", "variation": "linear", "job": "progress bar driven by a slider"}
+{"id": "cnippet:v-progress-5", "node": "atom/progress", "variation": "stepped", "job": "progress bar with step checklist below"}
+{"id": "cnippet:v-progress-6", "node": "atom/progress", "variation": "linear", "job": "several progress bars with custom colours"}
+{"id": "cnippet:v-progress-7", "node": "atom/progress", "variation": "meter-gauge", "job": "labelled skill proficiency bars with percentages"}
+{"id": "cnippet:v-progress-8", "node": "component/upload", "variation": "progress-tracking", "job": "upload queue rows with per-file progress and status"}
+{"id": "cnippet:v-progress-9", "node": "atom/progress", "variation": "meter-gauge", "job": "budget category bars of spent against budget"}
+{"id": "cnippet:v-radio-group-1", "node": "atom/choice", "variation": "group", "job": "radio group choosing a framework"}
+{"id": "cnippet:v-radio-group-10", "node": "atom/choice", "variation": "group", "job": "basic radio group"}
+{"id": "cnippet:v-radio-group-11", "node": "atom/choice", "variation": "group", "job": "radio group laid out horizontally"}
+{"id": "cnippet:v-radio-group-12", "node": "atom/choice", "variation": "card", "job": "shipping options as bordered radio cards with prices"}
+{"id": "cnippet:v-radio-group-13", "node": "atom/choice", "variation": "card", "job": "theme selector radio cards with icons"}
+{"id": "cnippet:v-radio-group-14", "node": "atom/choice", "variation": "with-description", "job": "availability radios with status dots and descriptions"}
+{"id": "cnippet:v-radio-group-15", "node": "atom/choice", "variation": "card", "job": "billing frequency radio cards with savings badges"}
+{"id": "cnippet:v-radio-group-2", "node": "atom/choice", "variation": "group", "job": "disabled radio group example"}
+{"id": "cnippet:v-radio-group-3", "node": "atom/choice", "variation": "with-description", "job": "radios with label and description"}
+{"id": "cnippet:v-radio-group-4", "node": "atom/choice", "variation": "card", "job": "bordered card rows with radio and description"}
+{"id": "cnippet:v-radio-group-5", "node": "atom/choice", "variation": "group", "job": "radio group with coloured items"}
+{"id": "cnippet:v-radio-group-6", "node": "atom/choice", "variation": "group", "job": "radio group under a fieldset legend"}
+{"id": "cnippet:v-radio-group-7", "node": "atom/choice", "variation": "card", "job": "card rows with radio label and description"}
+{"id": "cnippet:v-radio-group-8", "node": "atom/choice", "variation": "card", "job": "card rows with icons and radio picker"}
+{"id": "cnippet:v-radio-group-9", "node": "atom/choice", "variation": "group", "job": "radio group inside a submittable form"}
+{"id": "cnippet:v-scroll-area-1", "node": "atom/layout", "variation": "scroll-area", "job": "vertically scrolling list of version tags"}
+{"id": "cnippet:v-scroll-area-10", "node": "component/code", "variation": "highlighted-code", "job": "code snippet shown in a scrollable block"}
+{"id": "cnippet:v-scroll-area-11", "node": "section/chat", "variation": "thread", "job": "scrollable chat message feed with avatars"}
+{"id": "cnippet:v-scroll-area-12", "node": "component/inbox", "variation": "notification-center", "job": "scrollable notification list with read states"}
+{"id": "cnippet:v-scroll-area-13", "node": "section/sidebar", "variation": "grouped", "job": "scrollable sidebar navigation with section groups"}
+{"id": "cnippet:v-scroll-area-14", "node": "component/list", "variation": "activity-feed", "job": "scrollable server activity log entries"}
+{"id": "cnippet:v-scroll-area-15", "node": "component/tree", "variation": "file-tree", "job": "scrollable file tree of project files"}
+{"id": "cnippet:v-scroll-area-2", "node": "atom/layout", "variation": "scroll-area", "job": "scroll area with fade scrollbar variant"}
+{"id": "cnippet:v-scroll-area-3", "node": "atom/layout", "variation": "horizontal-scroll", "job": "horizontally scrolling row of cards"}
+{"id": "cnippet:v-scroll-area-4", "node": "atom/layout", "variation": "horizontal-scroll", "job": "horizontal scroll area keeping gutter space"}
+{"id": "cnippet:v-scroll-area-5", "node": "atom/layout", "variation": "scroll-area", "job": "scroll area containing a large grid"}
+{"id": "cnippet:v-scroll-area-6", "node": "atom/layout", "variation": "scroll-area", "job": "scrollable contact list grouped by letter"}
+{"id": "cnippet:v-scroll-area-7", "node": "atom/layout", "variation": "scroll-area", "job": "scrollable list of status tagged task cards"}
+{"id": "cnippet:v-scroll-area-8", "node": "atom/layout", "variation": "scroll-area", "job": "scrollable table of country revenue rows"}
+{"id": "cnippet:v-scroll-area-9", "node": "atom/layout", "variation": "scroll-area", "job": "scrollable grouped activity timeline"}
+{"id": "cnippet:v-select-1", "node": "component/select", "variation": "standard-select", "job": "select for choosing a timezone"}
+{"id": "cnippet:v-select-10", "node": "component/select", "variation": "standard-select", "job": "theme select with described options"}
+{"id": "cnippet:v-select-11", "node": "component/select", "variation": "standard-select", "job": "role select with disabled coming-soon options"}
+{"id": "cnippet:v-select-12", "node": "component/select", "variation": "grouped", "job": "region select with grouped country options"}
+{"id": "cnippet:v-select-13", "node": "component/select", "variation": "standard-select", "job": "controlled select mirrored to an external badge"}
+{"id": "cnippet:v-select-14", "node": "component/select", "variation": "standard-select", "job": "select options with label and description"}
+{"id": "cnippet:v-select-15", "node": "component/select", "variation": "with-icons", "job": "sort order select with icons"}
+{"id": "cnippet:v-select-2", "node": "component/select", "variation": "standard-select", "job": "two selects showing small and large sizes"}
+{"id": "cnippet:v-select-3", "node": "component/select", "variation": "grouped", "job": "select with option groups by stack category"}
+{"id": "cnippet:v-select-4", "node": "component/select", "variation": "multi-select", "job": "multi select for assigning permissions"}
+{"id": "cnippet:v-select-5", "node": "component/select", "variation": "with-icons", "job": "select whose options carry icons"}
+{"id": "cnippet:v-select-6", "node": "component/select", "variation": "standard-select", "job": "currency select with custom item layout"}
+{"id": "cnippet:v-select-7", "node": "component/select", "variation": "standard-select", "job": "select inside a field with description"}
+{"id": "cnippet:v-select-8", "node": "component/select", "variation": "standard-select", "job": "plan select with disabled options"}
+{"id": "cnippet:v-select-9", "node": "component/select", "variation": "grouped", "job": "country select grouped by continent with flags"}
+{"id": "cnippet:v-separator-1", "node": "atom/layout", "variation": null, "job": "horizontal and vertical rules between text groups", "edge": "divider"}
+{"id": "cnippet:v-separator-10", "node": "atom/layout", "variation": null, "job": "rule between profile card header and body", "edge": "divider"}
+{"id": "cnippet:v-separator-11", "node": "component/stat", "variation": "stats-row", "job": "stat row of followers, posts and likes"}
+{"id": "cnippet:v-separator-12", "node": "atom/text", "variation": "heading", "job": "section heading followed by a full-width rule"}
+{"id": "cnippet:v-separator-13", "node": "section/footer", "variation": "minimal-row", "job": "footer links row separated by pipes"}
+{"id": "cnippet:v-separator-14", "node": "atom/layout", "variation": null, "job": "dividers between stacked card sections", "edge": "divider"}
+{"id": "cnippet:v-separator-15", "node": "component/dock", "variation": "action-toolbar", "job": "toolbar of grouped icon buttons for text formatting"}
+{"id": "cnippet:v-separator-2", "node": "atom/layout", "variation": null, "job": "vertical rules dividing inline nav links", "edge": "divider"}
+{"id": "cnippet:v-separator-3", "node": "atom/layout", "variation": null, "job": "vertical rules between setting rows", "edge": "divider"}
+{"id": "cnippet:v-separator-4", "node": "atom/layout", "variation": null, "job": "rules between definition list rows", "edge": "divider"}
+{"id": "cnippet:v-separator-5", "node": "atom/layout", "variation": null, "job": "rule with overlapping label dividing auth options", "edge": "divider"}
+{"id": "cnippet:v-separator-6", "node": "atom/layout", "variation": null, "job": "rules separating order summary lines", "edge": "divider"}
+{"id": "cnippet:v-separator-7", "node": "atom/layout", "variation": null, "job": "rules separating breadcrumb trail items", "edge": "divider"}
+{"id": "cnippet:v-separator-8", "node": "atom/layout", "variation": null, "job": "rules separating onboarding step rows", "edge": "divider"}
+{"id": "cnippet:v-separator-9", "node": "atom/layout", "variation": null, "job": "rules between grouped menu sections", "edge": "divider"}
+{"id": "cnippet:v-sheet-1", "node": "component/sheet", "variation": "form-sheet", "job": "side sheet containing a short profile form"}
+{"id": "cnippet:v-sheet-10", "node": "component/sheet", "variation": "detail-view", "job": "issue detail sheet with comment composer"}
+{"id": "cnippet:v-sheet-11", "node": "component/sheet", "variation": "form-sheet", "job": "export options sheet choosing format and range"}
+{"id": "cnippet:v-sheet-12", "node": "component/sheet", "variation": "detail-view", "job": "user profile viewer sheet with links"}
+{"id": "cnippet:v-sheet-13", "node": "component/sheet", "variation": "form-sheet", "job": "support contact form sheet"}
+{"id": "cnippet:v-sheet-14", "node": "component/sheet", "variation": "detail-view", "job": "keyboard shortcuts reference sheet"}
+{"id": "cnippet:v-sheet-15", "node": "component/sheet", "variation": "side-sheet", "job": "API key manager sheet with rotate and revoke"}
+{"id": "cnippet:v-sheet-2", "node": "component/sheet", "variation": "form-sheet", "job": "inset sheet wrapping the same entry form"}
+{"id": "cnippet:v-sheet-3", "node": "component/sheet", "variation": "side-sheet", "job": "buttons opening sheets from each side"}
+{"id": "cnippet:v-sheet-4", "node": "component/sheet", "variation": "side-sheet", "job": "sheet with a scrollable content area"}
+{"id": "cnippet:v-sheet-5", "node": "component/sheet", "variation": "side-sheet", "job": "shopping cart panel with quantity controls"}
+{"id": "cnippet:v-sheet-6", "node": "component/inbox", "variation": "notification-center", "job": "sheet listing notifications with mark all read"}
+{"id": "cnippet:v-sheet-7", "node": "component/sheet", "variation": "form-sheet", "job": "team invite sheet with email rows"}
+{"id": "cnippet:v-sheet-8", "node": "component/list", "variation": "activity-feed", "job": "sheet showing deploy activity log entries"}
+{"id": "cnippet:v-sheet-9", "node": "section/sidebar", "variation": "mobile-drawer", "job": "drawer sheet with grouped app navigation"}
+{"id": "cnippet:v-skeleton-1", "node": "atom/loader", "variation": "skeleton", "job": "loading placeholders for a user list"}
+{"id": "cnippet:v-skeleton-10", "node": "atom/loader", "variation": "skeleton", "job": "skeleton placeholder for a settings page"}
+{"id": "cnippet:v-skeleton-11", "node": "atom/loader", "variation": "skeleton", "job": "skeleton placeholder for a product grid"}
+{"id": "cnippet:v-skeleton-12", "node": "atom/loader", "variation": "skeleton", "job": "skeleton placeholder for form fields"}
+{"id": "cnippet:v-skeleton-13", "node": "atom/loader", "variation": "skeleton", "job": "skeleton placeholder for an email inbox"}
+{"id": "cnippet:v-skeleton-14", "node": "atom/loader", "variation": "skeleton", "job": "skeleton placeholder for a kanban board"}
+{"id": "cnippet:v-skeleton-15", "node": "atom/loader", "variation": "skeleton", "job": "skeleton placeholder for a profile hero page"}
+{"id": "cnippet:v-skeleton-2", "node": "atom/loader", "variation": "skeleton", "job": "basic skeleton row of shapes"}
+{"id": "cnippet:v-skeleton-3", "node": "atom/loader", "variation": "skeleton", "job": "skeleton placeholder for a media card"}
+{"id": "cnippet:v-skeleton-4", "node": "atom/loader", "variation": "skeleton", "job": "skeleton placeholder for a dashboard stats row"}
+{"id": "cnippet:v-skeleton-5", "node": "atom/loader", "variation": "skeleton", "job": "skeleton rows for a list with actions"}
+{"id": "cnippet:v-skeleton-6", "node": "atom/loader", "variation": "skeleton", "job": "skeleton placeholder for a blog article"}
+{"id": "cnippet:v-skeleton-7", "node": "atom/loader", "variation": "skeleton", "job": "skeleton placeholder for a data table"}
+{"id": "cnippet:v-skeleton-8", "node": "atom/loader", "variation": "skeleton", "job": "skeleton placeholder for a sidebar dashboard shell"}
+{"id": "cnippet:v-skeleton-9", "node": "atom/loader", "variation": "skeleton", "job": "Loading placeholders shaped like a chat thread"}
+{"id": "cnippet:v-slider-1", "node": "atom/slider", "variation": "slider", "job": "Default single-handle slider picking a value"}
+{"id": "cnippet:v-slider-10", "node": "atom/slider", "variation": "slider", "job": "Minimal slider demonstrating default styling"}
+{"id": "cnippet:v-slider-11", "node": "atom/slider", "variation": "slider", "job": "Volume slider beside a mute toggle button"}
+{"id": "cnippet:v-slider-12", "node": "atom/slider", "variation": "range", "job": "Two thumbs set a minimum and maximum price"}
+{"id": "cnippet:v-slider-13", "node": "component/picker", "variation": "color-picker", "job": "Hue strip choosing a colour value"}
+{"id": "cnippet:v-slider-14", "node": "atom/slider", "variation": "slider", "job": "Thermostat slider setting a target temperature"}
+{"id": "cnippet:v-slider-15", "node": "atom/slider", "variation": "slider", "job": "Sliders adjusting display brightness and contrast"}
+{"id": "cnippet:v-slider-2", "node": "atom/slider", "variation": "slider", "job": "Slider with a label and live value"}
+{"id": "cnippet:v-slider-3", "node": "atom/slider", "variation": "slider", "job": "Disabled slider that cannot be dragged"}
+{"id": "cnippet:v-slider-4", "node": "atom/slider", "variation": "slider", "job": "Slider labelled with low and high references"}
+{"id": "cnippet:v-slider-5", "node": "atom/slider", "variation": "with-ticks", "job": "Slider marking each step with tick marks"}
+{"id": "cnippet:v-slider-6", "node": "atom/slider", "variation": "slider", "job": "Slider whose tooltip follows the dragged handle"}
+{"id": "cnippet:v-slider-7", "node": "atom/slider", "variation": "rating", "job": "Rating slider giving emoji feedback per value"}
+{"id": "cnippet:v-slider-8", "node": "atom/slider", "variation": "slider", "job": "Plain basic slider control"}
+{"id": "cnippet:v-slider-9", "node": "atom/slider", "variation": "slider", "job": "Basic slider shown without extra decoration"}
+{"id": "cnippet:v-spinner-1", "node": "atom/loader", "variation": "spinner", "job": "Default spinning indicator showing work"}
+{"id": "cnippet:v-spinner-10", "node": "atom/loader", "variation": "spinner", "job": "Plain default spinner indicator"}
+{"id": "cnippet:v-spinner-11", "node": "atom/loader", "variation": "specialized", "job": "Full screen overlay during a page transition"}
+{"id": "cnippet:v-spinner-12", "node": "component/upload", "variation": "progress-tracking", "job": "Per-file upload progress with a spinner"}
+{"id": "cnippet:v-spinner-13", "node": "component/table", "variation": "standard-table", "job": "Table rows showing spinners while data loads"}
+{"id": "cnippet:v-spinner-14", "node": "section/auth", "variation": "sign-in", "job": "Sign-in form whose submit button spins"}
+{"id": "cnippet:v-spinner-15", "node": "atom/loader", "variation": "spinner", "job": "Spinner shown in several sizes"}
+{"id": "cnippet:v-spinner-2", "node": "atom/text-input", "variation": "with-slots", "job": "Text input showing a spinner in its slot"}
+{"id": "cnippet:v-spinner-3", "node": "atom/button", "variation": "loading", "job": "Button showing a spinner while its action runs"}
+{"id": "cnippet:v-spinner-4", "node": "component/empty", "variation": null, "job": "Spinner centred in an empty state while loading", "edge": "loading-empty-state"}
+{"id": "cnippet:v-spinner-5", "node": "atom/loader", "variation": "spinner", "job": "Translucent overlay with a centred spinner"}
+{"id": "cnippet:v-spinner-6", "node": "atom/loader", "variation": "spinner", "job": "Full page loading screen with a centred spinner"}
+{"id": "cnippet:v-spinner-7", "node": "atom/loader", "variation": "spinner", "job": "Small spinner beside inline loading text"}
+{"id": "cnippet:v-spinner-8", "node": "atom/loader", "variation": "spinner", "job": "Spinner overlay dimming a card while it loads"}
+{"id": "cnippet:v-spinner-9", "node": "atom/loader", "variation": "spinner", "job": "Spinner shown in several colour variants"}
+{"id": "cnippet:v-switch-1", "node": "atom/switch", "variation": "standard", "job": "Default switch toggling a setting on"}
+{"id": "cnippet:v-switch-10", "node": "atom/switch", "variation": "standard", "job": "Switches for email, push and SMS delivery"}
+{"id": "cnippet:v-switch-11", "node": "atom/switch", "variation": "standard", "job": "Switches enabling features included in a plan"}
+{"id": "cnippet:v-switch-12", "node": "atom/switch", "variation": "with-icons", "job": "Privacy switches each with a leading icon"}
+{"id": "cnippet:v-switch-13", "node": "atom/switch", "variation": "theme-toggle", "job": "Card with a switch flipping dark mode"}
+{"id": "cnippet:v-switch-14", "node": "atom/switch", "variation": "standard", "job": "Agreement switch the user must accept"}
+{"id": "cnippet:v-switch-15", "node": "atom/switch", "variation": "standard", "job": "Switch turning do-not-disturb mode on"}
+{"id": "cnippet:v-switch-2", "node": "atom/switch", "variation": "standard", "job": "Switch with a description under its label"}
+{"id": "cnippet:v-switch-3", "node": "atom/switch", "variation": "standard", "job": "Switch shown in several sizes"}
+{"id": "cnippet:v-switch-4", "node": "atom/switch", "variation": "toggle-group", "job": "Group of switches stacked as options"}
+{"id": "cnippet:v-switch-5", "node": "atom/switch", "variation": "with-icons", "job": "Card listing icon switches for settings"}
+{"id": "cnippet:v-switch-6", "node": "atom/switch", "variation": "standard", "job": "Switch warning before a destructive change"}
+{"id": "cnippet:v-switch-7", "node": "atom/switch", "variation": "standard", "job": "Compact table of settings rows with switches"}
+{"id": "cnippet:v-switch-8", "node": "atom/switch", "variation": "standard", "job": "Card grid of switches each with a description"}
+{"id": "cnippet:v-switch-9", "node": "component/alert", "variation": "cookie-consent", "job": "Cookie categories each switched on or off"}
+{"id": "cnippet:v-table-1", "node": "component/table", "variation": "standard-table", "job": "Default table of rows and columns"}
+{"id": "cnippet:v-table-10", "node": "component/table", "variation": "standard-table", "job": "Audit log table of actions with timestamps"}
+{"id": "cnippet:v-table-11", "node": "component/table", "variation": "standard-table", "job": "Inventory table with stock badges and quantities"}
+{"id": "cnippet:v-table-12", "node": "component/table", "variation": "standard-table", "job": "Invoice history table with status badges and totals"}
+{"id": "cnippet:v-table-13", "node": "section/pricing", "variation": "comparison-table", "job": "Plan tiers compared by feature checkmarks"}
+{"id": "cnippet:v-table-14", "node": "component/table", "variation": "standard-table", "job": "Server health table with CPU and memory bars"}
+{"id": "cnippet:v-table-15", "node": "component/widget", "variation": "leaderboard", "job": "Contributor leaderboard with rank and change"}
+{"id": "cnippet:v-table-2", "node": "component/table", "variation": "standard-table", "job": "Table laid out in card style"}
+{"id": "cnippet:v-table-3", "node": "component/table", "variation": "standard-table", "job": "Table wrapped in a card frame"}
+{"id": "cnippet:v-table-4", "node": "component/table", "variation": "standard-table", "job": "Table inside a plain frame"}
+{"id": "cnippet:v-table-5", "node": "component/table", "variation": "standard-table", "job": "Orders table with customer info and payment status"}
+{"id": "cnippet:v-table-6", "node": "component/table", "variation": "standard-table", "job": "Team table with avatars, roles and status"}
+{"id": "cnippet:v-table-7", "node": "component/table", "variation": "standard-table", "job": "Subscriptions table with plan badges and billing dates"}
+{"id": "cnippet:v-table-8", "node": "component/table", "variation": "data-table", "job": "API endpoint table sortable by column"}
+{"id": "cnippet:v-table-9", "node": "component/table", "variation": "standard-table", "job": "Storage usage table with per-item progress bars"}
+{"id": "cnippet:v-tabs-1", "node": "component/tabs", "variation": "underline", "job": "Default tab strip switching between panels"}
+{"id": "cnippet:v-tabs-10", "node": "component/tabs", "variation": "with-counts", "job": "Tabs showing a badge count each"}
+{"id": "cnippet:v-tabs-11", "node": "component/tabs", "variation": "with-icons", "job": "Icon tabs using the line variant"}
+{"id": "cnippet:v-tabs-12", "node": "component/tabs", "variation": "pill-segmented", "job": "Segmented control acting as tabs"}
+{"id": "cnippet:v-tabs-13", "node": "section/settings-panel", "variation": "form-layout", "job": "Settings tabs beside a profile form"}
+{"id": "cnippet:v-tabs-14", "node": "component/code", "variation": "highlighted-code", "job": "Code viewer with per-file tabs and copy"}
+{"id": "cnippet:v-tabs-15", "node": "component/tabs", "variation": "with-counts", "job": "Tabs with count badges over repository listings"}
+{"id": "cnippet:v-tabs-16", "node": "section/pricing", "variation": "billing-toggle", "job": "Monthly and yearly billing toggle with plan cards"}
+{"id": "cnippet:v-tabs-17", "node": "component/tabs", "variation": "with-icons", "job": "Icon tabs switching between metric panels"}
+{"id": "cnippet:v-tabs-2", "node": "component/tabs", "variation": "underline", "job": "Tabs styled with an underline indicator"}
+{"id": "cnippet:v-tabs-3", "node": "component/tabs", "variation": "vertical", "job": "Tabs stacked vertically beside their panel"}
+{"id": "cnippet:v-tabs-4", "node": "component/tabs", "variation": "vertical", "job": "Vertical tabs with an underline indicator"}
+{"id": "cnippet:v-tabs-5", "node": "component/tabs", "variation": "underline", "job": "Tabs whose panel holds a card and input"}
+{"id": "cnippet:v-tabs-6", "node": "component/tabs", "variation": "underline", "job": "Tabs using the underline style"}
+{"id": "cnippet:v-tabs-7", "node": "component/tabs", "variation": "vertical", "job": "Tabs running in vertical orientation"}
+{"id": "cnippet:v-tabs-8", "node": "component/tabs", "variation": "vertical", "job": "Vertical tabs with underline styling"}
+{"id": "cnippet:v-tabs-9", "node": "component/tabs", "variation": "with-icons", "job": "Tab triggers each carrying an icon"}
+{"id": "cnippet:v-textarea-1", "node": "atom/text-input", "variation": "textarea", "job": "Default multi-line text entry box"}
+{"id": "cnippet:v-textarea-10", "node": "component/form", "variation": null, "job": "Support ticket form with category chips and message", "edge": "support-ticket-form"}
+{"id": "cnippet:v-textarea-11", "node": "component/composer", "variation": "chat-composer", "job": "Chat composer sending messages into a thread"}
+{"id": "cnippet:v-textarea-12", "node": "component/form", "variation": null, "job": "Editor form drafting release notes with a publish action", "edge": "release-notes-editor"}
+{"id": "cnippet:v-textarea-2", "node": "atom/text-input", "variation": "textarea", "job": "Textarea shown in several sizes"}
+{"id": "cnippet:v-textarea-3", "node": "atom/text-input", "variation": "textarea", "job": "Disabled multi-line text field"}
+{"id": "cnippet:v-textarea-4", "node": "atom/text-input", "variation": "textarea", "job": "Textarea with a label above it"}
+{"id": "cnippet:v-textarea-5", "node": "atom/text-input", "variation": "textarea", "job": "Textarea with a description under its label"}
+{"id": "cnippet:v-textarea-6", "node": "atom/text-input", "variation": "textarea", "job": "Textarea counting characters as you type"}
+{"id": "cnippet:v-textarea-7", "node": "component/form", "variation": null, "job": "Textareas wired into a form with submit", "edge": "textarea-form"}
+{"id": "cnippet:v-textarea-8", "node": "atom/text-input", "variation": "textarea", "job": "Auto-growing textarea with live word and character counts"}
+{"id": "cnippet:v-textarea-9", "node": "atom/text-input", "variation": "textarea", "job": "Markdown editor toggling write and preview modes"}
+{"id": "cnippet:v-toast-1", "node": "component/toast", "variation": "basic-toast", "job": "Default brief message at the screen edge"}
+{"id": "cnippet:v-toast-10", "node": "component/toast", "variation": "loading-toast", "job": "Toast tracking a deploy pipeline's progress"}
+{"id": "cnippet:v-toast-11", "node": "atom/button", "variation": "copy-share", "job": "Copy button confirming the copy with a toast"}
+{"id": "cnippet:v-toast-12", "node": "component/toast", "variation": "action-toast", "job": "Team invite rows each with an undo toast"}
+{"id": "cnippet:v-toast-13", "node": "component/toast", "variation": "action-toast", "job": "Export toast offering a download when finished"}
+{"id": "cnippet:v-toast-14", "node": "component/toast", "variation": "action-toast", "job": "Toast warning of session expiry with renew countdown"}
+{"id": "cnippet:v-toast-15", "node": "component/toast", "variation": "action-toast", "job": "Toast reminding of unsaved changes with save or discard"}
+{"id": "cnippet:v-toast-2", "node": "component/toast", "variation": "rich-toast", "job": "Toasts showing success, error and warning status"}
+{"id": "cnippet:v-toast-3", "node": "component/toast", "variation": "loading-toast", "job": "Toast showing a spinner while work runs"}
+{"id": "cnippet:v-toast-4", "node": "component/toast", "variation": "action-toast", "job": "Toast carrying an action button"}
+{"id": "cnippet:v-toast-5", "node": "component/toast", "variation": "loading-toast", "job": "Toast resolving from loading to success or error"}
+{"id": "cnippet:v-toast-6", "node": "component/toast", "variation": "stacked-toasts", "job": "Stacked toasts of varying heights"}
+{"id": "cnippet:v-toast-7", "node": "component/toast", "variation": "rich-toast", "job": "Submit button raising an error toast on failure"}
+{"id": "cnippet:v-toast-8", "node": "component/toast", "variation": "stacked-toasts", "job": "Several toasts arriving in a staggered burst"}
+{"id": "cnippet:v-toast-9", "node": "component/toast", "variation": "basic-toast", "job": "Toast whose auto-dismiss delay can be set"}
+{"id": "cnippet:v-toggle-1", "node": "atom/button", "variation": "toggle", "job": "Default button that stays pressed on or off"}
+{"id": "cnippet:v-toggle-10", "node": "section/filters", "variation": "filters", "job": "Toggle chips filtering records by role with counts"}
+{"id": "cnippet:v-toggle-11", "node": "atom/button", "variation": "toggle", "job": "Per-row bookmark toggle with a saved count"}
+{"id": "cnippet:v-toggle-12", "node": "component/dock", "variation": "action-toolbar", "job": "Rich-text toolbar formatting with markdown preview"}
+{"id": "cnippet:v-toggle-13", "node": "atom/button", "variation": "group", "job": "Like, repost and reply actions with live counts"}
+{"id": "cnippet:v-toggle-14", "node": "atom/button", "variation": "toggle", "job": "Server setting toggles swapping icon and status colour"}
+{"id": "cnippet:v-toggle-15", "node": "atom/button", "variation": "toggle", "job": "Task rows each with a priority flag toggle"}
+{"id": "cnippet:v-toggle-2", "node": "atom/button", "variation": "toggle", "job": "Outline styled toggle buttons"}
+{"id": "cnippet:v-toggle-3", "node": "atom/button", "variation": "toggle", "job": "Toggle buttons shown in several sizes"}
+{"id": "cnippet:v-toggle-4", "node": "atom/button", "variation": "toggle", "job": "Toggle button pairing an icon with a label"}
+{"id": "cnippet:v-toggle-5", "node": "atom/button", "variation": "toggle", "job": "Icon-only toggle button"}
+{"id": "cnippet:v-toggle-6", "node": "atom/button", "variation": "toggle", "job": "Toggle button carrying a notification count badge"}
+{"id": "cnippet:v-toggle-7", "node": "atom/button", "variation": "toggle", "job": "Toggle button swapping its icon when pressed"}
+{"id": "cnippet:v-toggle-8", "node": "atom/button", "variation": "toggle", "job": "Toggle button whose label changes when pressed"}
+{"id": "cnippet:v-toggle-9", "node": "component/dock", "variation": "action-toolbar", "job": "Video call bar toggling mic, camera and screen share"}

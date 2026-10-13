@@ -1,0 +1,118 @@
+#!/usr/bin/env python3
+"""libmap-prep: cut one or more code-bank libraries into mapping chunks, and write the skeleton the mapper reads.
+
+  libmap-prep LIB [LIB...] [--chunk N]
+
+For each LIB it reads banks/siso-ui-code/r/<LIB>/*.json (files starting with "_" skipped; each is a shadcn registry
+item: name, title, description, type, files[].path), sorts the parts by name and writes /tmp/lm/in-<LIB>-<n>.json
+(n from 1), each a JSON list of at most N parts (default 120) shaped {id, t, d, ty, f}:
+  id  "<LIB>:<name>"            t  title, else name        d  description, cut to 160 chars, else ""
+  ty  registry type, else ""    f  up to 4 file paths
+It also writes /tmp/lm/skeleton.txt: the node keys and their variation ids from catalogue/schema/variations.json
+(the file holds only ids), with each node's name and job looked up in catalogue/schema/ontology.json (the asset nodes
+live only in the code bank's categories, so those names come from a small map matching the site's labels).
+One line per node, then its variations indented:
+  atom/text | Text | say something: heading, body, label, quote, inline code, keyboard key
+     variations: heading, body, keyboard, ...
+Prints the part and chunk counts per library, and the skeleton's node and variation counts.
+"""
+import json, os, re, sys
+
+HUB = os.path.dirname(os.path.dirname(os.path.realpath(__file__)))  # the siso-ui-hub repo root
+BANK = os.path.join(os.path.dirname(HUB), "siso-ui-code", "r")  # the code bank, beside this repo
+OUT = "/tmp/lm"
+SCHEMA = os.path.join(HUB, "catalogue", "schema")
+# asset nodes exist only as code-bank categories (app/src/lib/data.ts BANK_LABELS names them on the site)
+ASSET_NAMES = {
+    "logo": "Logos", "sound": "Sounds", "flag": "Flags", "illustration": "Illustrations",
+    "og-image": "OG images", "font": "Fonts", "shape": "Shapes", "avatar": "Avatar art",
+}
+
+args = sys.argv[1:]
+chunk = 120
+if "--chunk" in args:
+    i = args.index("--chunk")
+    chunk = int(args[i + 1])
+    args = args[:i] + args[i + 2:]
+libs = args
+if not libs or chunk < 1:
+    print(__doc__)
+    sys.exit(64)
+
+
+def node_names():
+    """<scale>/<id> -> (name, job) from the ontology, plus the asset nodes the ontology builds from the bank."""
+    o = json.load(open(os.path.join(SCHEMA, "ontology.json")))
+    out = {}
+    for a in o.get("atoms", []):
+        out["atom/" + a["id"]] = (a.get("name") or a["id"], a.get("job") or "")
+    for g in o.get("components", []):
+        for n in g.get("items", []):
+            out["component/" + n["id"]] = (n.get("name") or n["id"], n.get("job") or "")
+    for scale, side in (("section", "sections"), ("page", "pages")):
+        for l in o.get(side, {}).values():
+            for n in l:
+                out.setdefault(scale + "/" + n["id"], (n.get("name") or n["id"], n.get("job") or ""))
+    for aid, name in ASSET_NAMES.items():
+        out["asset/" + aid] = (name, "")
+    return out
+
+
+def skeleton():
+    v = json.load(open(os.path.join(SCHEMA, "variations.json")))
+    names = node_names()
+    lines, nvars = [], 0
+    for key, node in v.items():
+        name, job = names.get(key, (key.split("/")[-1].replace("-", " ").title(), ""))
+        ids = [x.get("id") for x in node.get("variations", [])]
+        nvars += len(ids)
+        lines.append(f"{key} | {name} | {job}")
+        lines.append("   variations: " + ", ".join(ids))
+    return lines, len(v), nvars
+
+
+def parts(lib):
+    """The library's parts, sorted by name, one per registry item file."""
+    d = os.path.join(BANK, lib)
+    if not os.path.isdir(d):
+        sys.exit(f"no such library: {d}")
+    out, seen = [], set()
+    for f in sorted(os.listdir(d)):
+        if not f.endswith(".json") or f.startswith("_"):
+            continue
+        it = json.load(open(os.path.join(d, f)))
+        name = str(it.get("name") or f[:-5])
+        pid = f"{lib}:{name}"
+        if pid in seen:
+            continue
+        seen.add(pid)
+        files = [x.get("path") for x in it.get("files") or [] if x.get("path")]
+        out.append({
+            "id": pid,
+            "t": str(it.get("title") or name),
+            "d": str(it.get("description") or "")[:160],
+            "ty": str(it.get("type") or ""),
+            "f": files[:4],
+        })
+    out.sort(key=lambda p: p["id"])
+    return out
+
+
+os.makedirs(OUT, exist_ok=True)
+total = 0
+for lib in libs:
+    ps = parts(lib)
+    total += len(ps)
+    for old in os.listdir(OUT):  # a smaller --chunk would leave later chunks behind, so clear this lib's first
+        if re.match(rf"^in-{re.escape(lib)}-\d+\.json$", old):
+            os.remove(os.path.join(OUT, old))
+    n = 0
+    for n, start in enumerate(range(0, len(ps), chunk), 1):
+        with open(os.path.join(OUT, f"in-{lib}-{n}.json"), "w") as fh:
+            json.dump(ps[start:start + chunk], fh, indent=1)
+    print(f"{lib}: {len(ps)} parts -> {n} chunk{'s' if n != 1 else ''}")
+lines, nodes, nvars = skeleton()
+with open(os.path.join(OUT, "skeleton.txt"), "w") as fh:
+    fh.write("\n".join(lines) + "\n")
+print(f"skeleton: {nodes} nodes, {nvars} variations -> {OUT}/skeleton.txt")
+print(f"{total} parts in {len(libs)} libraries -> {OUT}/in-*.json")

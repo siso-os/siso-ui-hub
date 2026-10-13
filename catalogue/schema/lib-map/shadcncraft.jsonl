@@ -1,0 +1,22 @@
+{"id": "shadcncraft:avatar-stack", "node": "atom/avatar", "variation": "avatar-group", "job": "Overlapping avatar stack with an overflow count chip"}
+{"id": "shadcncraft:badge", "node": "atom/badge", "variation": "badge", "job": "Small status or category badge label"}
+{"id": "shadcncraft:banner-10", "node": "section/announcement", "variation": "text-link", "job": "Inline announcement text with icon, link and dismiss"}
+{"id": "shadcncraft:benefits-13", "node": "section/features", "variation": "card-grid", "job": "Section header above grid of equal-height icon cards"}
+{"id": "shadcncraft:contact-11", "node": "section/contact", "variation": "split", "job": "Centered contact form beside a supporting sidebar"}
+{"id": "shadcncraft:faqs-4", "node": "section/faq", "variation": "accordion", "job": "Centered FAQ accordion with a support link panel"}
+{"id": "shadcncraft:featured-icon", "node": "atom/icon", "variation": null, "job": "Icon inside a styled square or circle frame", "edge": "framed-icon"}
+{"id": "shadcncraft:footer-4", "node": "section/footer", "variation": "columns", "job": "Brand sitemap footer with link and legal columns"}
+{"id": "shadcncraft:image-zoom", "node": "component/lightbox", "variation": "fullscreen-viewer", "job": "Click an image to open a zoomable fullscreen viewer"}
+{"id": "shadcncraft:marquee", "node": "atom/layout", "variation": null, "job": "Endlessly looping strip that scrolls its children", "edge": "marquee-loop"}
+{"id": "shadcncraft:newsletter-signup-5", "node": "section/contact", "variation": "split", "job": "Inline newsletter callout with copy left, form right"}
+{"id": "shadcncraft:page-heading", "node": "section/hero", "variation": "text-only", "job": "Text hero: tagline, heading, description and actions"}
+{"id": "shadcncraft:placeholder-logo", "node": "asset/logo", "variation": "brand", "job": "Placeholder brand mark standing in for the real logo"}
+{"id": "shadcncraft:profile-card", "node": "component/card", "variation": "profile-card", "job": "Avatar with name and bio details in a card"}
+{"id": "shadcncraft:section-heading", "node": "atom/text", "variation": "heading", "job": "Standardized section heading with label, title and body"}
+{"id": "shadcncraft:star-rating", "node": "atom/slider", "variation": "rating", "job": "Star rating with partial fills and optional label"}
+{"id": "shadcncraft:tagline", "node": "atom/badge", "variation": "tag-chip", "job": "Small pill label acting as a section eyebrow"}
+{"id": "shadcncraft:testimonials-11", "node": "section/testimonials", "variation": "card-grid", "job": "Editorial grid of short customer quotes under a header"}
+{"id": "shadcncraft:top-navigation-5", "node": "section/nav", "variation": "simple-bar", "job": "Centered marketing nav with brand and login action"}
+{"id": "shadcncraft:use-carousel", "node": null, "variation": null, "job": "Hook holding carousel index and navigation state"}
+{"id": "shadcncraft:use-click-outside", "node": null, "variation": null, "job": "Hook detecting clicks outside a target element"}
+{"id": "shadcncraft:use-mobile", "node": null, "variation": null, "job": "Hook detecting viewport below the mobile breakpoint"}

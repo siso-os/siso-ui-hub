@@ -1,0 +1,17 @@
+{"id": "trophy-ui:achievement-badge", "node": "component/widget", "variation": "achievement", "job": "show one achievement badge, locked or unlocked, with progress ring"}
+{"id": "trophy-ui:achievement-card", "node": "component/widget", "variation": "achievement", "job": "card of badges unlocked, featured badges and full list"}
+{"id": "trophy-ui:achievement-grid", "node": "component/widget", "variation": "achievement", "job": "responsive grid of achievement badges with progress and rarity"}
+{"id": "trophy-ui:achievement-list", "node": "component/widget", "variation": "achievement", "job": "vertical list of achievements with icons, progress and lock states"}
+{"id": "trophy-ui:achievement-unlocked", "node": "component/dialog", "variation": "modal-dialog", "job": "celebratory modal shown when a new achievement unlocks"}
+{"id": "trophy-ui:leaderboard-card", "node": "component/widget", "variation": "leaderboard", "job": "leaderboard card with title, date range, podium and rankings"}
+{"id": "trophy-ui:leaderboard-podium", "node": "component/widget", "variation": "leaderboard", "job": "top-three podium with crowns, avatars and ranks"}
+{"id": "trophy-ui:leaderboard-rankings", "node": "component/widget", "variation": "leaderboard", "job": "ranked list of users with scores, movement and paging"}
+{"id": "trophy-ui:points-awards", "node": "component/widget", "variation": "gamification", "job": "dated points award history with totals and trigger tooltips"}
+{"id": "trophy-ui:points-badge", "node": "component/widget", "variation": "gamification", "job": "compact tile showing a user's total points"}
+{"id": "trophy-ui:points-boost", "node": "component/widget", "variation": "gamification", "job": "points multiplier callout with countdown and call to action"}
+{"id": "trophy-ui:points-chart", "node": "component/chart", "variation": "line-chart", "job": "line chart of points earned over time"}
+{"id": "trophy-ui:points-levels-list", "node": "component/widget", "variation": "gamification", "job": "levels list with progress bar toward the next level"}
+{"id": "trophy-ui:points-levels-timeline", "node": "component/timeline", "variation": "vertical-timeline", "job": "vertical timeline of level progression with thresholds"}
+{"id": "trophy-ui:streak-badge", "node": "component/widget", "variation": "streak-tracker", "job": "compact badge showing current streak length and frequency"}
+{"id": "trophy-ui:streak-calendar", "node": "component/widget", "variation": "streak-tracker", "job": "week and month streak grid with freeze days"}
+{"id": "trophy-ui:streak-card", "node": "component/widget", "variation": "streak-tracker", "job": "streak card with current run, longest record, rules"}

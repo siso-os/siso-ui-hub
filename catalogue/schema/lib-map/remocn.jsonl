@@ -1,0 +1,364 @@
+{"id": "remocn:accordion", "node": "component/accordion", "variation": "standard-accordion", "job": "Animated accordion panel expanding to reveal its content."}
+{"id": "remocn:agent-run", "node": "component/agent-parts", "variation": "tool-calls", "job": "Agent run: plan, tool calls closing to checks, answer."}
+{"id": "remocn:ai-prompt-flow", "node": "component/composer", "variation": "prompt-inputs", "job": "AI prompt field, Generate button, loading skeleton, then answer."}
+{"id": "remocn:alert-dialog", "node": "component/dialog", "variation": "confirm-alert", "job": "Modal alert dialog asking to confirm or cancel an action."}
+{"id": "remocn:animated-bar-chart", "node": "component/chart", "variation": "bar-chart", "job": "Bars spring up from the baseline in a staggered cascade."}
+{"id": "remocn:animated-line-chart", "node": "component/chart", "variation": "line-chart", "job": "Line path draws left to right with a leading dot."}
+{"id": "remocn:ascii-dissolve", "node": null, "variation": null, "job": "ASCII-glyph scene transition dissolving one clip into the next."}
+{"id": "remocn:ascii-render", "node": null, "variation": null, "job": "Renders a clip as ASCII glyph cells by brightness."}
+{"id": "remocn:backdrop", "node": null, "variation": null, "job": "Full-frame video background plate framing children with padding."}
+{"id": "remocn:bauhaus-build", "node": null, "variation": null, "job": "Bauhaus shapes tumbling into a decorative geometric frieze."}
+{"id": "remocn:blur-in", "node": "atom/layout", "variation": null, "job": "Wrapper revealing its child with blur, offset and fade.", "edge": "blur-in-reveal"}
+{"id": "remocn:blur-out-up", "node": "atom/text", "variation": null, "job": "Words arrive clean then blur upward out of frame.", "edge": "blur-out-text"}
+{"id": "remocn:bottom-up-letters", "node": "atom/text", "variation": null, "job": "Letters rise from below one at a time in a staircase.", "edge": "letter-rise-stagger"}
+{"id": "remocn:brand-guidelines", "node": null, "variation": null, "job": "Whole 17.9-second brand identity film, not a UI part."}
+{"id": "remocn:brush", "node": null, "variation": null, "job": "Brush-stroke geometry helpers shared by drawn ink marks."}
+{"id": "remocn:button", "node": "atom/button", "variation": "primary", "job": "Button with idle, hover, press, loading and success states."}
+{"id": "remocn:camera-lens", "node": null, "variation": null, "job": "Lens glass post-effect: corner falloff, bloom, colour fringing."}
+{"id": "remocn:canvas-presentation", "node": null, "variation": null, "job": "HTML-in-canvas WebGL scaffolding shared by canvas transitions."}
+{"id": "remocn:caption-active-pop", "node": "atom/text", "variation": null, "job": "Spoken caption word turns accent colour and springs up.", "edge": "active-word-pop"}
+{"id": "remocn:caption-blur-in", "node": "atom/text", "variation": null, "job": "Each caption word resolves out of a soft blur when spoken.", "edge": "caption-blur-reveal"}
+{"id": "remocn:caption-bounce-in", "node": "atom/text", "variation": null, "job": "Each caption word springs up with overshoot when spoken.", "edge": "caption-bounce-in"}
+{"id": "remocn:caption-core", "node": null, "variation": null, "job": "Caption timing engine paging a transcript; shared lib code."}
+{"id": "remocn:caption-cube", "node": "atom/text", "variation": null, "job": "Each caption phrase turns in as a 3D cube face.", "edge": "caption-cube-turn"}
+{"id": "remocn:caption-dim-progress", "node": "atom/text", "variation": null, "job": "Dimmed caption phrase brightens word by word as spoken.", "edge": "caption-dim-progress"}
+{"id": "remocn:caption-drop", "node": "atom/text", "variation": null, "job": "Captions drop in from above and bounce as they land.", "edge": "caption-word-drop"}
+{"id": "remocn:caption-emoji", "node": "atom/text", "variation": null, "job": "Emoji pops above a caption word when it is spoken.", "edge": "caption-emoji-pop"}
+{"id": "remocn:caption-handwrite", "node": "atom/text", "variation": null, "job": "Captions inked in by hand word by word as spoken.", "edge": "caption-handwrite"}
+{"id": "remocn:caption-highlight-box", "node": "atom/text", "variation": null, "job": "Box slides behind the caption word being spoken.", "edge": "caption-highlight-box"}
+{"id": "remocn:caption-karaoke", "node": "atom/text", "variation": null, "job": "Caption words fill with colour left to right as spoken.", "edge": "caption-karaoke-fill"}
+{"id": "remocn:caption-knockout", "node": "atom/text", "variation": null, "job": "Words punch through a solid plate as each is spoken.", "edge": "caption-knockout"}
+{"id": "remocn:caption-label-maker", "node": "atom/text", "variation": null, "job": "Phrases punched letter by letter into embossing tape.", "edge": "caption-label-maker"}
+{"id": "remocn:caption-marker", "node": "atom/text", "variation": null, "job": "Highlighter swipe marks the spoken caption words.", "edge": "caption-marker-swipe"}
+{"id": "remocn:caption-outline", "node": "atom/text", "variation": null, "job": "Heavy-stroked captions with spoken word in contrast colour.", "edge": "caption-outline"}
+{"id": "remocn:caption-prosody", "node": "atom/text", "variation": null, "job": "Caption word size follows the pace of the delivery.", "edge": "caption-prosody-size"}
+{"id": "remocn:caption-redact", "node": "atom/text", "variation": null, "job": "Phrase starts blacked out; bars pull away word by word.", "edge": "caption-redact"}
+{"id": "remocn:caption-rise", "node": "atom/text", "variation": null, "job": "Each caption word slides up out of a mask.", "edge": "caption-word-rise"}
+{"id": "remocn:caption-scramble", "node": "atom/text", "variation": null, "job": "Caption words decode from random glyphs when spoken.", "edge": "caption-scramble"}
+{"id": "remocn:caption-slice", "node": "atom/text", "variation": null, "job": "Caption words lock together from top and bottom halves.", "edge": "caption-slice"}
+{"id": "remocn:caption-slot", "node": "atom/text", "variation": null, "job": "Caption lines roll up one at a time as phrases change.", "edge": "caption-slot-roll"}
+{"id": "remocn:caption-speaker", "node": "atom/text", "variation": null, "job": "Dialogue captions coloured by whichever speaker is talking.", "edge": "caption-speaker-color"}
+{"id": "remocn:caption-split-flap", "node": "atom/text", "variation": null, "job": "Caption letters clatter on split-flap tiles before landing.", "edge": "caption-split-flap"}
+{"id": "remocn:caption-stack", "node": "atom/text", "variation": null, "job": "Kinetic captions stack lines with the keyword set large.", "edge": "caption-stack"}
+{"id": "remocn:caption-stamp", "node": "atom/text", "variation": null, "job": "Key caption words slam down like a rubber stamp.", "edge": "caption-stamp"}
+{"id": "remocn:caption-subtitle", "node": "atom/text", "variation": null, "job": "Broadcast subtitles on a plate, with no word animation.", "edge": "caption-subtitle-plate"}
+{"id": "remocn:caption-teleprompter", "node": "atom/text", "variation": null, "job": "Transcript scrolls with the current caption line centred.", "edge": "caption-teleprompter"}
+{"id": "remocn:caption-timeline", "node": "atom/text", "variation": null, "job": "Transcript on a scrolling time strip under a playhead.", "edge": "caption-timeline-strip"}
+{"id": "remocn:caption-typewriter", "node": "atom/text", "variation": null, "job": "Caption words type out character by character as spoken.", "edge": "caption-typewriter"}
+{"id": "remocn:caption-underline", "node": "atom/text", "variation": null, "job": "Bar slides under the caption word being spoken.", "edge": "caption-underline-bar"}
+{"id": "remocn:caption-weight", "node": "atom/text", "variation": null, "job": "Spoken caption word swells from light to heavy weight.", "edge": "caption-weight-swell"}
+{"id": "remocn:caption-word-pop", "node": "atom/text", "variation": null, "job": "One large caption word pops in on a spring.", "edge": "caption-word-pop"}
+{"id": "remocn:caret", "node": "atom/text", "variation": null, "job": "Blinking text caret bar driven by the timeline.", "edge": "blinking-caret"}
+{"id": "remocn:caret-swap", "node": "atom/text", "variation": null, "job": "Gradient caret wipes a phrase then types the next.", "edge": "caret-text-swap"}
+{"id": "remocn:caret-wipe", "node": null, "variation": null, "job": "Typing-caret sweep wiping one scene into the next."}
+{"id": "remocn:centered-word-build", "node": "atom/text", "variation": null, "job": "Words appear from below as the centred phrase pushes closer.", "edge": "centered-word-build"}
+{"id": "remocn:chat-flow", "node": "section/chat", "variation": "thread", "job": "Messaging thread: message types, sends, reply typing indicator."}
+{"id": "remocn:chat-gpt", "node": "component/composer", "variation": "chat-composer", "job": "ChatGPT-style composer with voice button and suggestion chips."}
+{"id": "remocn:chat-to-preview-layout", "node": "section/shell", "variation": "split-view", "job": "Split layout where chat shrinks and preview expands."}
+{"id": "remocn:check-list", "node": "component/list", "variation": null, "job": "Handwritten checklist that writes itself then ticks items off.", "edge": "animated-checklist"}
+{"id": "remocn:checkbox", "node": "atom/choice", "variation": "checkbox", "job": "Animated checkbox drawing its fill, border and checkmark."}
+{"id": "remocn:checkout-flow", "node": "section/pricing", "variation": "checkout", "job": "Checkout card: fields, billing toggle, card entry, terms, pay."}
+{"id": "remocn:chromatic-wave", "node": "atom/text", "variation": null, "job": "Wave through the type splits letters into RGB fringes.", "edge": "chromatic-wave-text"}
+{"id": "remocn:claude-chat", "node": "component/composer", "variation": "chat-composer", "job": "Claude chat input with prompt typing and send morph."}
+{"id": "remocn:claude-code", "node": "component/code", "variation": "terminal", "job": "Claude Code CLI terminal screen with a typing prompt."}
+{"id": "remocn:code-morph", "node": "component/code", "variation": "diff-view", "job": "Code editor morphing between file versions, token by token."}
+{"id": "remocn:combobox", "node": "component/select", "variation": "combobox", "job": "Combobox opening a filterable option panel from its trigger."}
+{"id": "remocn:command-menu", "node": "component/command", "variation": "command-palette", "job": "Command palette with search rows and dim backdrop."}
+{"id": "remocn:command-menu-item", "node": "component/command", "variation": null, "job": "Command palette row with icon, label and shortcut key.", "edge": "command-item-row"}
+{"id": "remocn:confetti", "node": null, "variation": null, "job": "Seeded confetti particle burst for celebratory moments."}
+{"id": "remocn:context-menu", "node": "component/menu", "variation": "context-menu", "job": "Right-click context menu scaling from the click point."}
+{"id": "remocn:crt-screen", "node": null, "variation": null, "job": "CRT glass post-effect with phosphor mask and scanlines."}
+{"id": "remocn:crumple-toss", "node": null, "variation": null, "job": "Crushes an element into a paper ball and throws it away."}
+{"id": "remocn:cursor", "node": "atom/icon", "variation": null, "job": "Cursor moving between waypoints, clicking and dragging.", "edge": "animated-cursor"}
+{"id": "remocn:cursor-gravity", "node": "atom/icon", "variation": null, "job": "Cursor elastically tugging a button out of the screen edge.", "edge": "cursor-gravity-pull"}
+{"id": "remocn:dialog", "node": "component/dialog", "variation": "modal-dialog", "job": "Modal dialog with backdrop dim, zoom and close button."}
+{"id": "remocn:displacement", "node": null, "variation": null, "job": "Shearing grid-of-cells scene transition with colour fringing."}
+{"id": "remocn:dither-dissolve", "node": null, "variation": null, "job": "Dithering shader transition dissolving one scene into the next."}
+{"id": "remocn:drawer", "node": "component/sheet", "variation": "bottom-sheet", "job": "Bottom drawer sliding up over the screen with drag handle."}
+{"id": "remocn:drift", "node": null, "variation": null, "job": "Slow camera push-in wrapper scaling the scene over time."}
+{"id": "remocn:dropdown-menu", "node": "component/menu", "variation": "dropdown-menu", "job": "Dropdown menu revealing an action panel from a button."}
+{"id": "remocn:dropdown-menu-item", "node": "component/menu", "variation": null, "job": "Dropdown action row with hover and press states.", "edge": "menu-item-row"}
+{"id": "remocn:echo-stack", "node": "atom/text", "variation": null, "job": "Word focuses centre while outline copies drift above and below.", "edge": "echo-stack-text"}
+{"id": "remocn:ecosystem-constellation", "node": "section/logos", "variation": null, "job": "Central logo orbited by integration marks and pulsing lines.", "edge": "logo-constellation"}
+{"id": "remocn:ember-burn", "node": null, "variation": null, "job": "Outgoing frame burns away as embers and sparks."}
+{"id": "remocn:extrude-pop", "node": "atom/text", "variation": null, "job": "Word pops out of the plane on a 3D coloured body.", "edge": "extrude-pop-text"}
+{"id": "remocn:fade-through", "node": null, "variation": null, "job": "Material-style fade transition between two scenes."}
+{"id": "remocn:field", "node": "component/field", "variation": null, "job": "Field family grouping label, control and description.", "edge": "field-layout"}
+{"id": "remocn:focus-blur-resolve", "node": "atom/text", "variation": null, "job": "Text focus pull from heavy blur to crisp, then out.", "edge": "focus-blur-resolve"}
+{"id": "remocn:focus-pull", "node": null, "variation": null, "job": "Rack-focus transition defocusing one scene into the next."}
+{"id": "remocn:fog-rise", "node": "atom/text", "variation": null, "job": "Display text sharpens out of fog with vertical streaks.", "edge": "fog-rise-text"}
+{"id": "remocn:fomo-limit-orders", "node": null, "variation": null, "job": "Whole 18-second trading-interface demo film, not a UI part."}
+{"id": "remocn:github-sponsors", "node": "section/logos", "variation": "grid", "job": "Sponsor avatars stagger into a grid with headline and CTA."}
+{"id": "remocn:github-stars", "node": "section/stats", "variation": "counter", "job": "Stargazer avatars fly past a count-up odometer total."}
+{"id": "remocn:glass-code-block", "node": "component/code", "variation": "highlighted-code", "job": "Frosted-glass code window with tokenizer and stagger reveal."}
+{"id": "remocn:glass-code-walk", "node": "component/code", "variation": "highlighted-code", "job": "Camera scans a glass code block as it types."}
+{"id": "remocn:glitch-cut", "node": null, "variation": null, "job": "Broadcast glitch hard cut between two scenes."}
+{"id": "remocn:glyph-anatomy", "node": "atom/text", "variation": null, "job": "Word builds like a font editor with guides and Bezier handles.", "edge": "glyph-anatomy"}
+{"id": "remocn:gooey-morph", "node": "atom/text", "variation": null, "job": "Bars fly in and melt into a word through gooey morph.", "edge": "gooey-word-morph"}
+{"id": "remocn:gradient-scale-cut-text", "node": "atom/text", "variation": null, "job": "Oversized gradient reveal snapping to a compact blurred line.", "edge": "gradient-scale-reveal"}
+{"id": "remocn:grain-dissolve", "node": null, "variation": null, "job": "Grain-gradient shader transition between two scenes."}
+{"id": "remocn:grid-wave", "node": null, "variation": null, "job": "Wave raises the picture into blocks carrying the next scene."}
+{"id": "remocn:halftone-print", "node": null, "variation": null, "job": "Halftone print post-effect separating a scene into ink dots."}
+{"id": "remocn:hand-count", "node": "atom/text", "variation": null, "job": "Number counts up in hand-drawn stop-motion poses.", "edge": "hand-drawn-count"}
+{"id": "remocn:handwrite", "node": "atom/text", "variation": null, "job": "Handwritten text drawn letter by letter with slanted wobble.", "edge": "handwritten-text"}
+{"id": "remocn:hologram", "node": null, "variation": null, "job": "Holographic projection post-effect with ghost double."}
+{"id": "remocn:icon-activity", "node": "atom/icon", "variation": "animated", "job": "Animated Lucide activity icon sweeping like an EKG."}
+{"id": "remocn:icon-alert-triangle", "node": "atom/icon", "variation": "animated", "job": "Animated Lucide alert triangle icon flagging a warning."}
+{"id": "remocn:icon-arrow-down", "node": "atom/icon", "variation": "animated", "job": "Animated Lucide arrow-down icon nudging downward."}
+{"id": "remocn:icon-arrow-left", "node": "atom/icon", "variation": "animated", "job": "Animated Lucide arrow-left icon nudging back."}
+{"id": "remocn:icon-arrow-right", "node": "atom/icon", "variation": "animated", "job": "Animated Lucide arrow-right icon nudging forward."}
+{"id": "remocn:icon-arrow-up", "node": "atom/icon", "variation": "animated", "job": "Animated Lucide arrow-up icon nudging upward."}
+{"id": "remocn:icon-at-sign", "node": "atom/icon", "variation": "animated", "job": "Animated Lucide at-sign icon tracing a mention."}
+{"id": "remocn:icon-award", "node": "atom/icon", "variation": "animated", "job": "Animated Lucide award medal with unfurling ribbon."}
+{"id": "remocn:icon-bar-chart-3", "node": "atom/icon", "variation": "animated", "job": "Animated Lucide bar-chart icon with rising bars."}
+{"id": "remocn:icon-bell", "node": "atom/icon", "variation": "animated", "job": "Animated Lucide bell icon swinging for a notification."}
+{"id": "remocn:icon-bookmark", "node": "atom/icon", "variation": "animated", "job": "Animated Lucide bookmark icon dropping into place."}
+{"id": "remocn:icon-calendar", "node": "atom/icon", "variation": "animated", "job": "Animated Lucide calendar icon snapping its page in."}
+{"id": "remocn:icon-camera", "node": "atom/icon", "variation": "animated", "job": "Animated Lucide camera icon blinking its shutter."}
+{"id": "remocn:icon-check", "node": "atom/icon", "variation": "animated", "job": "Animated Lucide check icon stamping a done mark."}
+{"id": "remocn:icon-check-circle", "node": "atom/icon", "variation": "animated", "job": "Animated Lucide circle-check icon confirming completion."}
+{"id": "remocn:icon-chevron-down", "node": "atom/icon", "variation": "animated", "job": "Animated Lucide chevron-down icon nudging downward."}
+{"id": "remocn:icon-chevron-left", "node": "atom/icon", "variation": "animated", "job": "Chevron arrow draws on then nudges left"}
+{"id": "remocn:icon-chevron-right", "node": "atom/icon", "variation": "animated", "job": "Chevron arrow draws on then nudges right"}
+{"id": "remocn:icon-chevron-up", "node": "atom/icon", "variation": "animated", "job": "Chevron arrow draws on then nudges upward"}
+{"id": "remocn:icon-clock", "node": "atom/icon", "variation": "animated", "job": "Clock face draws on then hands sweep through ticks"}
+{"id": "remocn:icon-cloud", "node": "atom/icon", "variation": "animated", "job": "Cloud draws on then floats in a soft bob"}
+{"id": "remocn:icon-code", "node": "atom/icon", "variation": "animated", "job": "Angle brackets draw, pull apart and snap back"}
+{"id": "remocn:icon-copy", "node": "atom/icon", "variation": "animated", "job": "Two sheets draw back to front, front lifts"}
+{"id": "remocn:icon-credit-card", "node": "atom/icon", "variation": "animated", "job": "Card draws then stripe swipes: payment accepted"}
+{"id": "remocn:icon-crown", "node": "atom/icon", "variation": "animated", "job": "Crown descends, lands with a pop, rocks to rest"}
+{"id": "remocn:icon-database", "node": "atom/icon", "variation": "animated", "job": "Cylinder draws, top disc pops, data settles"}
+{"id": "remocn:icon-dollar-sign", "node": "atom/icon", "variation": "animated", "job": "Dollar sign draws on then stretches tall"}
+{"id": "remocn:icon-download", "node": "atom/icon", "variation": "animated", "job": "Tray draws, arrow drops in with a squash"}
+{"id": "remocn:icon-external-link", "node": "atom/icon", "variation": "animated", "job": "Arrow darts out to the top right for links"}
+{"id": "remocn:icon-eye", "node": "atom/icon", "variation": "animated", "job": "Eye draws on then blinks and refocuses"}
+{"id": "remocn:icon-eye-off", "node": "atom/icon", "variation": "animated", "job": "Eye fragments draw then a slash cuts through"}
+{"id": "remocn:icon-file-text", "node": "atom/icon", "variation": "animated", "job": "Page draws on then text lines type in"}
+{"id": "remocn:icon-filter", "node": "atom/icon", "variation": "animated", "job": "Funnel draws on then shakes twice filtering"}
+{"id": "remocn:icon-flame", "node": "atom/icon", "variation": "animated", "job": "Flame draws on then flickers in a looping wobble"}
+{"id": "remocn:icon-folder", "node": "atom/icon", "variation": "animated", "job": "Folder draws on then tips open for a peek"}
+{"id": "remocn:icon-gem", "node": "atom/icon", "variation": "animated", "job": "Gem draws, facets re-trace, light catches it"}
+{"id": "remocn:icon-gift", "node": "atom/icon", "variation": "animated", "job": "Gift draws, lid lifts, ribbon pops"}
+{"id": "remocn:icon-globe", "node": "atom/icon", "variation": "animated", "job": "Globe draws then meridian sweeps west to east"}
+{"id": "remocn:icon-heart", "node": "atom/icon", "variation": "animated", "job": "Heart draws on then pulses a lub-dub beat"}
+{"id": "remocn:icon-help-circle", "node": "atom/icon", "variation": "animated", "job": "Ring draws then question mark tilts curiously"}
+{"id": "remocn:icon-home", "node": "atom/icon", "variation": "animated", "job": "House draws then the door opens: welcome home"}
+{"id": "remocn:icon-image", "node": "atom/icon", "variation": "animated", "job": "Frame draws then mountain and sun develop in"}
+{"id": "remocn:icon-inbox", "node": "atom/icon", "variation": "animated", "job": "Tray draws then dips under an arriving item"}
+{"id": "remocn:icon-info", "node": "atom/icon", "variation": "animated", "job": "Ring draws, dot pops, then bobs a note"}
+{"id": "remocn:icon-key", "node": "atom/icon", "variation": "animated", "job": "Key draws on then turns in an invisible lock"}
+{"id": "remocn:icon-layout-grid", "node": "atom/icon", "variation": "animated", "job": "Four tiles draw then re-pop clockwise as a dashboard"}
+{"id": "remocn:icon-link", "node": "atom/icon", "variation": "animated", "job": "Chain halves draw, pull apart and click together"}
+{"id": "remocn:icon-loader", "node": "atom/icon", "variation": "animated", "job": "Arc draws on then spins continuously while loading"}
+{"id": "remocn:icon-lock", "node": "atom/icon", "variation": "animated", "job": "Body draws then shackle lifts and slams shut"}
+{"id": "remocn:icon-log-out", "node": "atom/icon", "variation": "animated", "job": "Arrow draws then steps out through the door"}
+{"id": "remocn:icon-mail", "node": "atom/icon", "variation": "animated", "job": "Envelope draws, flap opens, then the letter pops"}
+{"id": "remocn:icon-maximize", "node": "atom/icon", "variation": "animated", "job": "Corner brackets draw then fly out fullscreen"}
+{"id": "remocn:icon-menu", "node": "atom/icon", "variation": "animated", "job": "Three bars slide in, overshooting into place"}
+{"id": "remocn:icon-message-circle", "node": "atom/icon", "variation": "animated", "job": "Bubble draws then inflates from its tail"}
+{"id": "remocn:icon-mic", "node": "atom/icon", "variation": "animated", "job": "Mic draws then bounces like a level meter"}
+{"id": "remocn:icon-monitor", "node": "atom/icon", "variation": "animated", "job": "Stand draws then screen powers on unsquashing"}
+{"id": "remocn:icon-moon", "node": "atom/icon", "variation": "animated", "job": "Moon draws on then rocks gently into place"}
+{"id": "remocn:icon-more-horizontal", "node": "atom/icon", "variation": "animated", "job": "Three dots pop in then do a thinking wave"}
+{"id": "remocn:icon-package", "node": "atom/icon", "variation": "animated", "job": "Box draws, lands with squash, tape seam seals"}
+{"id": "remocn:icon-party-popper", "node": "atom/icon", "variation": "animated", "job": "Cone draws then confetti bursts outward"}
+{"id": "remocn:icon-pause", "node": "atom/icon", "variation": "animated", "job": "Two bars draw then pinch and settle"}
+{"id": "remocn:icon-pencil", "node": "atom/icon", "variation": "animated", "job": "Pencil draws on then scribbles around its tip"}
+{"id": "remocn:icon-phone", "node": "atom/icon", "variation": "animated", "job": "Phone draws on then rings with decaying oscillations"}
+{"id": "remocn:icon-play", "node": "atom/icon", "variation": "animated", "job": "Triangle draws then presses in and springs forward"}
+{"id": "remocn:icon-plus", "node": "atom/icon", "variation": "animated", "job": "Two strokes draw then twirl ninety degrees"}
+{"id": "remocn:icon-plus-circle", "node": "atom/icon", "variation": "animated", "job": "Ring draws, plus crosses in, badge pops"}
+{"id": "remocn:icon-refresh-cw", "node": "atom/icon", "variation": "animated", "job": "Arcs draw, arrowheads pop, the mark spins in cycles"}
+{"id": "remocn:icon-rocket", "node": "atom/icon", "variation": "animated", "job": "Rocket draws then lifts off on a re-ignited flame"}
+{"id": "remocn:icon-save", "node": "atom/icon", "variation": "animated", "job": "Disk draws then presses down as data commits"}
+{"id": "remocn:icon-scatter", "node": "atom/layout", "variation": null, "job": "Icons scatter across the cut to hide a scene swap", "edge": "icon-scatter-transition"}
+{"id": "remocn:icon-search", "node": "atom/icon", "variation": "animated", "job": "Lens draws, handle extends, magnifier sweeps a scan"}
+{"id": "remocn:icon-send", "node": "atom/icon", "variation": "animated", "job": "Paper plane draws then darts forward and settles"}
+{"id": "remocn:icon-settings", "node": "atom/icon", "variation": "animated", "job": "Gear draws then turns exactly one tooth"}
+{"id": "remocn:icon-share-2", "node": "atom/icon", "variation": "animated", "job": "Nodes draw then connections re-trace as share lands"}
+{"id": "remocn:icon-shield", "node": "atom/icon", "variation": "animated", "job": "Shield draws then braces with a guard pulse"}
+{"id": "remocn:icon-shopping-cart", "node": "atom/icon", "variation": "animated", "job": "Cart draws then rolls forward, wheels popping"}
+{"id": "remocn:icon-skip-forward", "node": "atom/icon", "variation": "animated", "job": "Arrow dashes past centre and snaps to its bar"}
+{"id": "remocn:icon-smartphone", "node": "atom/icon", "variation": "animated", "job": "Phone draws on then buzzes three fast vibrations"}
+{"id": "remocn:icon-sparkles", "node": "atom/icon", "variation": "animated", "job": "Main sparkle draws then loops a twinkle"}
+{"id": "remocn:icon-star", "node": "atom/icon", "variation": "animated", "job": "Star draws then twinkles with a rotate pop"}
+{"id": "remocn:icon-sun", "node": "atom/icon", "variation": "animated", "job": "Core draws then eight rays fan out clockwise"}
+{"id": "remocn:icon-tag", "node": "atom/icon", "variation": "animated", "job": "Tag draws on then swings from its hole"}
+{"id": "remocn:icon-target", "node": "atom/icon", "variation": "animated", "job": "Rings draw inward then the bullseye pops"}
+{"id": "remocn:icon-terminal", "node": "atom/icon", "variation": "animated", "job": "Terminal draws, prompt nudges, cursor blinks twice"}
+{"id": "remocn:icon-thumbs-up", "node": "atom/icon", "variation": "animated", "job": "Hand draws then springs up approvingly"}
+{"id": "remocn:icon-timer", "node": "atom/icon", "variation": "animated", "job": "Start button clicks then the stopwatch hand sweeps"}
+{"id": "remocn:icon-trash", "node": "atom/icon", "variation": "animated", "job": "Can draws then lid flips and contents vanish"}
+{"id": "remocn:icon-trending-down", "node": "atom/icon", "variation": "animated", "job": "Line descends then the arrowhead lands with weight"}
+{"id": "remocn:icon-trending-up", "node": "atom/icon", "variation": "animated", "job": "Line climbs then the arrowhead pops at the peak"}
+{"id": "remocn:icon-trophy", "node": "atom/icon", "variation": "animated", "job": "Trophy draws then hoists with a pop"}
+{"id": "remocn:icon-upload", "node": "atom/icon", "variation": "animated", "job": "Tray draws, arrow launches upward with a spring"}
+{"id": "remocn:icon-user", "node": "atom/icon", "variation": "animated", "job": "Figure draws then nods with a presence dip"}
+{"id": "remocn:icon-user-plus", "node": "atom/icon", "variation": "animated", "job": "Figure draws then plus strokes pop: member added"}
+{"id": "remocn:icon-users", "node": "atom/icon", "variation": "animated", "job": "Front figure pops then a second slides in"}
+{"id": "remocn:icon-video", "node": "atom/icon", "variation": "animated", "job": "Lens wedge pans out then snaps back"}
+{"id": "remocn:icon-volume-2", "node": "atom/icon", "variation": "animated", "job": "Speaker draws then two waves ripple outward"}
+{"id": "remocn:icon-volume-x", "node": "atom/icon", "variation": "animated", "job": "Speaker draws then X slashes the sound off"}
+{"id": "remocn:icon-wallet", "node": "atom/icon", "variation": "animated", "job": "Wallet draws then thickens: money in"}
+{"id": "remocn:icon-x", "node": "atom/icon", "variation": "animated", "job": "Diagonals draw crosswise then the mark shakes"}
+{"id": "remocn:icon-x-circle", "node": "atom/icon", "variation": "animated", "job": "Ring draws, X slashes in, badge shakes once"}
+{"id": "remocn:icon-zap", "node": "atom/icon", "variation": "animated", "job": "Bolt draws fast then flashes a double blink"}
+{"id": "remocn:icons-core", "node": null, "variation": null, "job": "Shared animation timeline and SVG path-draw helpers"}
+{"id": "remocn:imessage-chat-flow", "node": "section/chat", "variation": "thread", "job": "iMessage-style bubble thread with typing and delivered labels"}
+{"id": "remocn:infinite-bento-pan", "node": "atom/layout", "variation": null, "job": "Camera drifts diagonally across an oversized bento grid", "edge": "bento-grid-pan"}
+{"id": "remocn:infinite-marquee", "node": "atom/text", "variation": null, "job": "Seamless looping horizontal text strip, stroke option", "edge": "text-marquee"}
+{"id": "remocn:ink-arrow", "node": "asset/shape", "variation": "decoration", "job": "Hand-drawn brush arrow sweeps between two points"}
+{"id": "remocn:ink-underline", "node": "atom/text", "variation": null, "job": "Hand-dragged brush underline sweeps under a phrase", "edge": "ink-underline"}
+{"id": "remocn:inline-highlight", "node": "atom/text", "variation": null, "job": "Animates one word from base to brand colour", "edge": "inline-highlight"}
+{"id": "remocn:inline-pill-takeover", "node": "atom/text", "variation": null, "job": "Pill expands inside a sentence and takes over the frame", "edge": "inline-pill-takeover"}
+{"id": "remocn:inline-word-roll", "node": "atom/text", "variation": null, "job": "Rolls words beside a fixed prefix with centred width", "edge": "inline-word-roll"}
+{"id": "remocn:input", "node": "atom/text-input", "variation": "text-input", "job": "Text input with keyframed focus, caret and error states"}
+{"id": "remocn:keystroke", "node": "atom/text", "variation": "keyboard", "job": "Physical keycaps press in real shortcut order"}
+{"id": "remocn:kinetic-center-build", "node": "atom/text", "variation": null, "job": "Words enter from the right until the phrase locks centered", "edge": "kinetic-center-build"}
+{"id": "remocn:kinetic-morph-text", "node": "atom/text", "variation": null, "job": "Letters lift, rotate and reshape into new phrases", "edge": "kinetic-morph-text"}
+{"id": "remocn:kinetic-warp", "node": "atom/text", "variation": null, "job": "Mesh warp bends a word one axis per beat", "edge": "kinetic-warp"}
+{"id": "remocn:launch-anything", "node": null, "variation": null, "job": "26-second editorial product launch film template with demos"}
+{"id": "remocn:lens-zoom", "node": "atom/layout", "variation": null, "job": "Lens punch-in with blur and shake hides a hard cut", "edge": "lens-zoom-transition"}
+{"id": "remocn:line-by-line-slide", "node": "atom/text", "variation": null, "job": "Lines slide in staggered from the left", "edge": "line-by-line-slide"}
+{"id": "remocn:live-code-compilation", "node": "component/code", "variation": null, "job": "Typed code on the left snaps a live preview right", "edge": "live-code-preview"}
+{"id": "remocn:logo-enter", "node": "section/logos", "variation": "static-row", "job": "Round brand chips spring in one by one and hold"}
+{"id": "remocn:marker-highlight", "node": "atom/text", "variation": null, "job": "Marker block draws behind a phrase as colour shifts", "edge": "marker-highlight"}
+{"id": "remocn:mask-reveal-up", "node": "atom/text", "variation": null, "job": "Lines reveal upward with a soft masked stagger", "edge": "mask-reveal-up"}
+{"id": "remocn:matrix-decode", "node": "atom/text", "variation": null, "job": "Scrambled characters resolve left to right into text", "edge": "matrix-decode"}
+{"id": "remocn:message-bubble", "node": "component/message", "variation": "message-bubble", "job": "Chat bubble whose hidden and visible states follow the timeline"}
+{"id": "remocn:micro-scale-fade", "node": "atom/layout", "variation": null, "job": "Tiny scale pop entrance wrap for labels and headings", "edge": "micro-scale-fade"}
+{"id": "remocn:mondrian-split", "node": "atom/layout", "variation": null, "job": "De Stijl grid cuts the frame and reflows between scenes", "edge": "mondrian-split"}
+{"id": "remocn:number-wheel", "node": "component/stat", "variation": "counter", "job": "Odometer rolls an integer up or down to target"}
+{"id": "remocn:onboarding-stepper-flow", "node": "section/onboarding", "variation": "stepper", "job": "Stepper advances through panels of fields to a finish"}
+{"id": "remocn:opencode", "node": "component/code", "variation": "terminal", "job": "Animated TUI welcome screen with a typing input box"}
+{"id": "remocn:outline-fill-track-text", "node": "atom/text", "variation": null, "job": "Outlined value fills left to right along one track", "edge": "outline-fill-track-text"}
+{"id": "remocn:outline-trace", "node": "atom/text", "variation": null, "job": "Glyph contours draw then fill wipes in letter by letter", "edge": "outline-trace"}
+{"id": "remocn:page-turn", "node": "atom/layout", "variation": null, "job": "Exiting scene swings away like a notebook page", "edge": "page-turn-transition"}
+{"id": "remocn:paper-sticker", "node": "asset/shape", "variation": "decoration", "job": "Taped paper chip slaps on with a hand-placed tilt"}
+{"id": "remocn:paper-wobble", "node": "atom/layout", "variation": null, "job": "Per-pose jitter that makes any content hand-placed", "edge": "paper-wobble"}
+{"id": "remocn:particle-dissolve", "node": "atom/layout", "variation": null, "job": "Frame dissolves to drifting dust, next scene reforms", "edge": "particle-dissolve-transition"}
+{"id": "remocn:path-ride", "node": "atom/text", "variation": null, "job": "Text rides a drawing curve then settles on baseline", "edge": "path-ride"}
+{"id": "remocn:per-character-rise", "node": "atom/text", "variation": null, "job": "Letters rise into place one by one without blur", "edge": "per-character-rise"}
+{"id": "remocn:per-word-crossfade", "node": "atom/text", "variation": null, "job": "Words drift and fade into place one after another", "edge": "per-word-crossfade"}
+{"id": "remocn:period-drop", "node": "atom/text", "variation": null, "job": "Word rises, then a coloured dot drops and settles as the period", "edge": "period-drop"}
+{"id": "remocn:perlin-dissolve", "node": "atom/layout", "variation": null, "job": "Perlin-noise shader transition dissolving one scene into the next", "edge": "perlin-dissolve-transition"}
+{"id": "remocn:perspective-marquee", "node": "atom/layout", "variation": null, "job": "Infinite 3D-tilted marquee with items rolling toward the horizon", "edge": "perspective-marquee-strip"}
+{"id": "remocn:perspective-squeeze", "node": "atom/text", "variation": null, "job": "Two lines of type trade height under corner-pinned perspective", "edge": "perspective-squeeze"}
+{"id": "remocn:pixelate-region", "node": "atom/image", "variation": null, "job": "Mosaic covers rectangles to redact private data in a scene", "edge": "redaction-mosaic"}
+{"id": "remocn:polaroid", "node": "atom/image", "variation": null, "job": "Instant-photo frame with handwritten caption around media", "edge": "polaroid-photo-frame"}
+{"id": "remocn:popover", "node": "component/popover", "variation": "standard-popover", "job": "Popover or hover card opening and closing on the timeline"}
+{"id": "remocn:progress", "node": "atom/progress", "variation": "linear", "job": "Progress bar eased between value steps on the timeline"}
+{"id": "remocn:push-through", "node": "atom/layout", "variation": null, "job": "Dolly transition blowing one scene past the camera into the next", "edge": "push-through-transition"}
+{"id": "remocn:radial-burst", "node": "asset/shape", "variation": "decoration", "job": "Ribbons twist into a ring and sweep outward for an intro"}
+{"id": "remocn:radio", "node": "atom/choice", "variation": "radio", "job": "Radio whose checked state eases on the timeline"}
+{"id": "remocn:reel", "node": "component/gallery", "variation": "reveal-effects", "job": "Stacked images bloom open one over the last"}
+{"id": "remocn:release-teaser", "node": null, "variation": null, "job": "Whole 16-second cinematic release teaser film, not a UI part"}
+{"id": "remocn:remocn-ui", "node": null, "variation": null, "job": "Shared timeline, theme and colour library code"}
+{"id": "remocn:resizable", "node": "atom/layout", "variation": null, "job": "Two panels split by a draggable handle with eased ratio", "edge": "resizable-split-panels"}
+{"id": "remocn:rgb-glitch-text", "node": "atom/text", "variation": null, "job": "Three RGB-offset text copies jitter briefly like a glitch", "edge": "rgb-glitch-text"}
+{"id": "remocn:ring-text", "node": "atom/text", "variation": null, "job": "Text runs around a spinning tilted 3D band", "edge": "ring-text"}
+{"id": "remocn:ripple-zoom", "node": "atom/layout", "variation": null, "job": "Camera flies through ripple rings into the next scene", "edge": "ripple-zoom-transition"}
+{"id": "remocn:rolling-number", "node": "component/stat", "variation": "counter", "job": "Odometer digits roll to a target value at their own speeds"}
+{"id": "remocn:rolodex-flip", "node": "atom/text", "variation": null, "job": "Cycles words with a 3D rolodex card flip", "edge": "rolodex-flip"}
+{"id": "remocn:rush-type", "node": "atom/text", "variation": null, "job": "Word blasts through vertical scale into RGB shutter trails", "edge": "rush-type"}
+{"id": "remocn:scale-down-fade", "node": "atom/layout", "variation": null, "job": "Content settles in and fades out with a restrained scale", "edge": "scale-down-fade"}
+{"id": "remocn:scene-motion", "node": null, "variation": null, "job": "Shared motion curve, opacity, spring and stagger vocabulary"}
+{"id": "remocn:scribble-circle", "node": "asset/shape", "variation": "decoration", "job": "Brush circle sweeps around a region of the frame"}
+{"id": "remocn:search-reveal", "node": "component/search", "variation": "expanding-search", "job": "Search pill builds from circles, types and reveals a panel"}
+{"id": "remocn:security-cam", "node": "atom/image", "variation": null, "job": "Cheap-recorder look: crushed blacks, macroblocks and crawling noise", "edge": "security-cam-filter"}
+{"id": "remocn:select", "node": "component/select", "variation": "standard-select", "job": "Select whose open panel and chevron ease on the timeline"}
+{"id": "remocn:select-item", "node": "component/select", "variation": "standard-select", "job": "Select option row with keyframed hover and selected presets"}
+{"id": "remocn:select-menu", "node": "component/select", "variation": "standard-select", "job": "Option list with a highlight bar sliding between rows"}
+{"id": "remocn:selection-snap", "node": "atom/text", "variation": null, "job": "Word thickens and snaps into a design-tool selection", "edge": "selection-snap"}
+{"id": "remocn:settings-toggle-flow", "node": "section/settings-panel", "variation": "card-blocks", "job": "Settings card where a cursor flips, drags, saves and toasts"}
+{"id": "remocn:shader-caustics", "node": "atom/image", "variation": null, "job": "Refracted light filaments moving through a rippling surface", "edge": "caustics-backdrop"}
+{"id": "remocn:shader-color-panels", "node": "atom/image", "variation": null, "job": "Translucent colour panels sliding over each other", "edge": "color-panels-backdrop"}
+{"id": "remocn:shader-dithering", "node": "atom/image", "variation": null, "job": "Ordered-dither shading over an animated gradient field", "edge": "dither-backdrop"}
+{"id": "remocn:shader-dot-orbit", "node": "atom/image", "variation": null, "job": "Dots orbiting along concentric paths across the frame", "edge": "dot-orbit-backdrop"}
+{"id": "remocn:shader-gem-smoke", "node": "atom/image", "variation": null, "job": "Smoke flowing behind and inside a glassy logo", "edge": "gem-smoke-backdrop"}
+{"id": "remocn:shader-god-rays", "node": "atom/image", "variation": null, "job": "Volumetric light rays radiating from an off-screen source", "edge": "god-rays-backdrop"}
+{"id": "remocn:shader-grain-gradient", "node": "atom/image", "variation": null, "job": "Grainy multi-stop gradient drifting under film grain", "edge": "grain-gradient-backdrop"}
+{"id": "remocn:shader-light-tunnel", "node": "atom/image", "variation": null, "job": "Flies through a tunnel of light shader rings", "edge": "light-tunnel-backdrop"}
+{"id": "remocn:shader-liquid-metal", "node": "atom/image", "variation": null, "job": "Molten metal surface with flowing specular highlights", "edge": "liquid-metal-backdrop"}
+{"id": "remocn:shader-mesh-gradient", "node": "atom/image", "variation": null, "job": "WebGL mesh gradient backdrop animated per frame", "edge": "mesh-gradient-backdrop"}
+{"id": "remocn:shader-metaballs", "node": "atom/image", "variation": null, "job": "Organic blobs merging and splitting like lava", "edge": "metaballs-backdrop"}
+{"id": "remocn:shader-neuro-noise", "node": "atom/image", "variation": null, "job": "Neural-web noise field slowly morphing across the frame", "edge": "neuro-noise-backdrop"}
+{"id": "remocn:shader-perlin-noise", "node": "atom/image", "variation": null, "job": "Classic Perlin noise clouds drifting across the frame", "edge": "perlin-noise-backdrop"}
+{"id": "remocn:shader-pulsing-border", "node": "atom/layout", "variation": null, "job": "Glowing border frame pulsing around the edges", "edge": "pulsing-border-frame"}
+{"id": "remocn:shader-seam", "node": "atom/layout", "variation": null, "job": "Dissolves a stationary material to uncover the next scene", "edge": "shader-seam-transition"}
+{"id": "remocn:shader-simplex-noise", "node": "atom/image", "variation": null, "job": "Simplex noise flow field, smoother than Perlin", "edge": "simplex-noise-backdrop"}
+{"id": "remocn:shader-smoke-ring", "node": "atom/image", "variation": null, "job": "Soft smoke ring curling and dissipating in place", "edge": "smoke-ring-backdrop"}
+{"id": "remocn:shader-spiral", "node": "atom/image", "variation": null, "job": "Rotating spiral arms radiating from the centre", "edge": "spiral-backdrop"}
+{"id": "remocn:shader-spiral-pass", "node": "atom/layout", "variation": null, "job": "Accelerates into a spiral and emerges into the next scene", "edge": "spiral-pass-transition"}
+{"id": "remocn:shader-strata", "node": "atom/image", "variation": null, "job": "Sediment layers displaced by noise, drifting at different depths", "edge": "strata-backdrop"}
+{"id": "remocn:shader-swirl", "node": "atom/image", "variation": null, "job": "Concentric bands swirling around a centre point", "edge": "swirl-backdrop"}
+{"id": "remocn:shader-text-reveal", "node": "atom/text", "variation": null, "job": "Words reveal through the hero shader, then settle white", "edge": "shader-text-reveal"}
+{"id": "remocn:shader-voronoi", "node": "atom/image", "variation": null, "job": "Animated Voronoi cells shifting and re-tessellating", "edge": "voronoi-backdrop"}
+{"id": "remocn:shader-warp", "node": "atom/image", "variation": null, "job": "Domain-warped colour field folding and stretching like liquid", "edge": "warp-backdrop"}
+{"id": "remocn:shader-water", "node": "atom/image", "variation": null, "job": "Caustic water-surface ripples with subtle refraction", "edge": "water-backdrop"}
+{"id": "remocn:shader-weave", "node": "atom/image", "variation": null, "job": "Woven warp and weft threads with a travelling sheen", "edge": "weave-backdrop"}
+{"id": "remocn:shadow-sweep-text", "node": "atom/text", "variation": null, "job": "A dark shadow uncovers the line, another sweeps it out", "edge": "shadow-sweep-text"}
+{"id": "remocn:shared-axis-y", "node": "atom/text", "variation": null, "job": "Per-word hard-cut swap with staircase timing", "edge": "shared-axis-word-swap"}
+{"id": "remocn:shared-axis-z", "node": "atom/layout", "variation": null, "job": "Scale-based shared-axis swap for focus and depth", "edge": "shared-axis-z-transition"}
+{"id": "remocn:sheen-slide-in", "node": "atom/text", "variation": null, "job": "Title glides in as a gradient sheen sweeps through", "edge": "sheen-slide-in"}
+{"id": "remocn:sheet", "node": "component/sheet", "variation": "side-sheet", "job": "Side panel sliding in with dimmed backdrop and action"}
+{"id": "remocn:shimmer-sweep", "node": "atom/text", "variation": null, "job": "Light shine sweeps across muted text", "edge": "shimmer-sweep"}
+{"id": "remocn:short-slide-down", "node": "atom/text", "variation": null, "job": "Each word drops in and pushes the stack downward", "edge": "short-slide-down"}
+{"id": "remocn:short-slide-right", "node": "atom/text", "variation": null, "job": "Phrase glides in from the left as words reveal", "edge": "short-slide-right"}
+{"id": "remocn:signup-flow", "node": "section/auth", "variation": "sign-up", "job": "Signup card filled by a cursor, then submitted with a toast"}
+{"id": "remocn:simulated-cursor", "node": "atom/icon", "variation": null, "job": "Cursor moves between waypoints with click ripples", "edge": "simulated-cursor"}
+{"id": "remocn:skeleton", "node": "atom/loader", "variation": "skeleton", "job": "Skeleton placeholders crossfade into loaded content"}
+{"id": "remocn:skeleton-block", "node": "atom/loader", "variation": "pulse-shimmer", "job": "Shimmer highlight sweeping across a placeholder block"}
+{"id": "remocn:slide-swap", "node": "atom/layout", "variation": null, "job": "Scenes shove off and spring in from opposite edges", "edge": "slide-swap-transition"}
+{"id": "remocn:slider", "node": "atom/slider", "variation": "slider", "job": "Slider fill and thumb easing between value steps"}
+{"id": "remocn:slot-machine-roll", "node": "atom/text", "variation": null, "job": "Vertical reel rolls characters from one value to the next", "edge": "slot-machine-roll"}
+{"id": "remocn:smoke-dissolve", "node": "atom/layout", "variation": null, "job": "Smoke ring expands outward to reveal the next scene", "edge": "smoke-dissolve-transition"}
+{"id": "remocn:soft-blur-in", "node": "atom/text", "variation": null, "job": "Per-character fade with gentle blur and upward motion", "edge": "soft-blur-in"}
+{"id": "remocn:speed-lines", "node": "asset/shape", "variation": "decoration", "job": "Streaks trail a flying element and land with a squash"}
+{"id": "remocn:spinner", "node": "atom/loader", "variation": "spinner", "job": "Deterministic spinning arc looping on the frame"}
+{"id": "remocn:spring-scale-in", "node": "atom/text", "variation": null, "job": "Words pop in with a soft overshoot scale", "edge": "spring-scale-in"}
+{"id": "remocn:spring-settle", "node": "atom/layout", "variation": null, "job": "Outgoing scene shrinks, then next items land staggered", "edge": "spring-settle-transition"}
+{"id": "remocn:squeeze-in", "node": "atom/text", "variation": null, "job": "Characters land on a tight stagger, then the word compresses", "edge": "squeeze-in"}
+{"id": "remocn:squiggle", "node": "asset/shape", "variation": "organic", "job": "Line draws itself as a travelling wave in several shapes"}
+{"id": "remocn:stage", "node": "atom/layout", "variation": null, "job": "Screenshots on a 3D plane with an animated camera", "edge": "perspective-camera-stage"}
+{"id": "remocn:staggered-fade-up", "node": "atom/text", "variation": null, "job": "Words fade in and slide up one after another", "edge": "staggered-fade-up"}
+{"id": "remocn:stepper", "node": "component/steps", "variation": "horizontal-stepper", "job": "Onboarding stepper progress eased between step indices"}
+{"id": "remocn:stop-motion", "node": null, "variation": null, "job": "Quantised stop-motion clock helpers for Remotion"}
+{"id": "remocn:stretch-in", "node": "atom/text", "variation": null, "job": "Letters fly in and smear horizontally on the way", "edge": "stretch-in"}
+{"id": "remocn:strikethrough-replace", "node": "atom/text", "variation": null, "job": "Strike line draws across old text, new text replaces it", "edge": "strikethrough-replace"}
+{"id": "remocn:stripe-type", "node": "atom/text", "variation": null, "job": "Horizontally banded word slides together from alternating sides", "edge": "stripe-type"}
+{"id": "remocn:sustained-glitch", "node": "atom/image", "variation": null, "job": "Broadcast corruption bursts held over a scene", "edge": "broadcast-glitch-filter"}
+{"id": "remocn:swirl-dissolve", "node": "atom/layout", "variation": null, "job": "Swirl shader unwinds open to reveal the next scene", "edge": "swirl-dissolve-transition"}
+{"id": "remocn:switch", "node": "atom/switch", "variation": "standard", "job": "Switch track fill and thumb easing on the timeline"}
+{"id": "remocn:tabs", "node": "component/tabs", "variation": "underline", "job": "Tabs with a sliding indicator and crossfading panels"}
+{"id": "remocn:telegram-chat-flow", "node": "section/chat", "variation": "thread", "job": "Telegram-style bubble thread with typing header and composer"}
+{"id": "remocn:terminal-cursor-zoom", "node": "atom/layout", "variation": null, "job": "Camera dollies across a terminal locked to the typing cursor", "edge": "terminal-camera-dolly"}
+{"id": "remocn:terminal-simulator", "node": "component/code", "variation": "terminal", "job": "Terminal window typing commands and rolling old lines off"}
+{"id": "remocn:toast", "node": "component/toast", "variation": "basic-toast", "job": "Toast sliding in and auto-dismissing on the timeline"}
+{"id": "remocn:toggle-group", "node": "atom/switch", "variation": "toggle-group", "job": "Segmented control with a thumb sliding between segments"}
+{"id": "remocn:tooltip", "node": "atom/tooltip", "variation": "with-arrow", "job": "Tooltip fading and scaling in beside its arrow"}
+{"id": "remocn:top-down-letters", "node": "atom/text", "variation": null, "job": "Letters descend from above in a pronounced staircase", "edge": "top-down-letters"}
+{"id": "remocn:tracking-in", "node": "atom/text", "variation": null, "job": "Letter-spacing collapses and blur clears springily", "edge": "tracking-in"}
+{"id": "remocn:trim-burst", "node": "asset/shape", "variation": "decoration", "job": "Ring of short strokes shoots out from a point"}
+{"id": "remocn:truchet-flip", "node": "asset/shape", "variation": "pattern", "job": "Truchet tiles snap a quarter turn as a wave crosses"}
+{"id": "remocn:tv-power-off", "node": "atom/layout", "variation": null, "job": "Picture collapses into a line and dies like a TV", "edge": "tv-power-off-transition"}
+{"id": "remocn:type-fossil", "node": "atom/text", "variation": null, "job": "Word carries contour layers, revises, then imprints cleanly", "edge": "type-fossil"}
+{"id": "remocn:type-repeater", "node": "atom/text", "variation": null, "job": "Copies of a word unfold into a tunnel or fan", "edge": "type-repeater"}
+{"id": "remocn:type-wall", "node": "atom/text", "variation": null, "job": "Rows of one word run in alternating directions", "edge": "type-wall"}
+{"id": "remocn:typed-split-wipe", "node": "atom/text", "variation": null, "job": "Type build exits through opposing glyph wipes", "edge": "typed-split-wipe"}
+{"id": "remocn:typewriter", "node": "atom/text", "variation": null, "job": "Types characters one by one with a blinking cursor", "edge": "typewriter-text"}
+{"id": "remocn:typing-indicator", "node": "atom/loader", "variation": "dots-bars", "job": "Dots bounce in a staggered wave while someone types"}
+{"id": "remocn:underwater-ripple", "node": "atom/image", "variation": null, "job": "Scene held under moving water refraction with colour fringing", "edge": "underwater-refraction"}
+{"id": "remocn:v0", "node": "component/composer", "variation": "prompt-inputs", "job": "v0 composer types a prompt and mic morphs into send"}
+{"id": "remocn:value-swap", "node": "atom/text", "variation": null, "job": "Value swaps in place with a vertical slide", "edge": "value-swap"}
+{"id": "remocn:vhs-filter", "node": "atom/image", "variation": null, "job": "Analog tape look: chroma bleed, wobble, tearing and noise", "edge": "vhs-tape-filter"}
+{"id": "remocn:warp-dissolve", "node": "atom/layout", "variation": null, "job": "Domain-warp melts a scene into the next", "edge": "warp-dissolve-transition"}
+{"id": "remocn:wave-wipe", "node": "atom/layout", "variation": null, "job": "Grain wave sweeps upward to reveal the next scene", "edge": "wave-wipe-transition"}
+{"id": "remocn:whip-pan", "node": "atom/layout", "variation": null, "job": "Whip pan flies both scenes through frame with blur", "edge": "whip-pan-transition"}
+{"id": "remocn:word-push", "node": "atom/text", "variation": null, "job": "Each word drives in and pushes the line left", "edge": "word-push"}
+{"id": "remocn:word-stream", "node": "atom/text", "variation": null, "job": "Voiceover-paced phrases build word by word", "edge": "word-stream"}
+{"id": "remocn:workflow-console", "node": null, "variation": null, "job": "Whole 46.8-second release automation demo film, not a UI part"}
+{"id": "remocn:x-follow-card", "node": "component/card", "variation": "profile-card", "job": "Animated X profile card whose Follow button flips to Following"}
+{"id": "remocn:x-followers-overview", "node": "component/stat", "variation": "counter", "job": "Follower total pops in after follow notifications cycle through"}
+{"id": "remocn:zoom-blur", "node": "atom/layout", "variation": null, "edge": "zoom-blur-transition", "job": "Scene transition that punches in through blur between clips"}
+{"id": "remocn:zoom-words", "node": "atom/text", "variation": null, "edge": "zoom-word-reveal", "job": "Huge words fade into a line under camera tracking"}
