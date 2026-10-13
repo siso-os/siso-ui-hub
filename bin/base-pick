@@ -48,7 +48,7 @@ def size(pid):
 
 cand = collections.defaultdict(list)  # (node, variation) -> [(lib, id)]
 pro = collections.defaultdict(list)
-for f in glob.glob(f"{HUB}/catalogue/schema/lib-map/*.jsonl"):
+for f in glob.glob(f"{HUB}/catalogue/schema/lib-map/[!_]*.jsonl"):
     for l in open(f):
         o = json.loads(l)
         if not o.get("node"):
@@ -73,18 +73,24 @@ for page, sec, pairs in [
     ("page/onboarding-flow", "section/onboarding", {"onboarding-welcome": "welcome-screen", "onboarding-checklist": "checklist", "onboarding-stepper": "stepper", "onboarding-multi-step": "wizard"}),
     ("page/blog-index", "section/blog", {"blog-grid": "news-grid", "blog-featured": "featured-carousel", "blog-list": "list", "blog-categories": "topic-filter"}),
     ("page/pricing-page", "section/pricing", {"pricing-tiered": "tier-cards", "pricing-toggle": "billing-toggle", "pricing-comparison": "comparison-table"}),
-    ("page/about-page", "section/about", {"about-timeline": "timeline", "about-team": "team-intro"})]:
+    ("page/about-page", "section/about", {"about-timeline": "timeline", })]:
     for pv, sv in pairs.items():
         ALIAS[(page, pv)] = (sec, sv)
 ALIAS.update({("component/code", "inline-code"): ("atom/text", "inline-code"), ("section/chat", "composer"): ("component/composer", "chat-composer"),
-              ("section/chat", "suggestions"): ("component/message", "suggestions"), ("section/filters", "search-field"): ("component/search", "search-field"),
+ ("section/filters", "search-field"): ("component/search", "search-field"),
               ("section/filters", "search-suggestions"): ("component/search", "with-suggestions"), ("section/filters", "command-style"): ("component/search", "command-style"),
               ("section/top-bar", "mega-menu"): ("section/nav", "mega-menu"), ("section/top-bar", "search"): ("section/nav", "search"),
-              ("section/nav", "announcement-bar"): ("section/announcement", ""), ("atom/loader", "progress-bar"): ("component/progress", ""),
-              ("section/shell", "shell-mobile-tabs"): ("component/tabs", "bottom-tabs"), ("section/sidebar", "search"): ("section/nav", "search")})
+              ("section/nav", "announcement-bar"): ("section/announcement", ""), ("atom/loader", "progress-bar"): ("atom/progress", "linear"),
+              ("section/shell", "shell-mobile-tabs"): ("component/tabs", "bottom-tabs"), ("section/sidebar", "search"): ("section/nav", "search"),
+              ("section/chat", "suggestions"): ("component/composer", "prompt-inputs"), ("page/about-page", "about-team"): ("section/team", "photo-grid"),
+              ("section/showcase", "lightbox"): ("component/lightbox", "standard-lightbox")})
 for k, src in ALIAS.items():
     if not cand.get(k):
         cand[k] = list(cand.get(src, []))
+gapfill = collections.defaultdict(list)
+for l in open(f"{HUB}/catalogue/schema/lib-map/_gapfill.jsonl"):
+    o = json.loads(l)
+    gapfill[(o["node"], o["variation"])].append(o["id"])
 out, summary = [], collections.Counter()
 for node in names:
     vs = [x["id"] for x in V.get(node, {}).get("variations", [])]
@@ -93,6 +99,8 @@ for node in names:
         order = CHARTS if node == "component/chart" else AGENT if node in AGENT_NODES else SITE if node in SITE_NODES else APP
         c = [(i, size(i)) for i in cand.get(k, []) if i.split(":")[0] in order]
         c.sort(key=lambda x: (order.index(x[0].split(":")[0]), -x[1]))
+        if not c and k[1]:  # last resort: a part found for this slot anywhere in the code bank (lib-map/_gapfill.jsonl, judged best first)
+            c = [(i, size(i)) for i in gapfill.get(k, [])]
         if not v and not c:
             continue  # the node's plain slot is optional when its variations are filled
         row = {"node": node, "name": names[node], "variation": v or None, "vname": next((x["name"] for x in V[node]["variations"] if x["id"] == v), None) if v else None}
