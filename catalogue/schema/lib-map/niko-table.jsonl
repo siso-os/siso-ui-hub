@@ -1,0 +1,34 @@
+{"id": "niko-table:data-table", "node": "component/table", "variation": "data-table", "job": "Owns full data table UI and chrome"}
+{"id": "niko-table:data-table-aside", "node": "section/detail", "variation": "two-pane", "job": "Row detail panel shown beside the table"}
+{"id": "niko-table:data-table-clear-filter", "node": "section/filters", "variation": null, "edge": "clear-filters", "job": "Button clearing all active table filters"}
+{"id": "niko-table:data-table-column-auto-fit", "node": "component/table", "variation": null, "edge": "column-auto-fit", "job": "Even-share width fill for resizable columns"}
+{"id": "niko-table:data-table-column-date-filter", "node": "component/picker", "variation": "date-picker", "job": "Column header date filter in a calendar dropdown"}
+{"id": "niko-table:data-table-column-dnd", "node": "component/table", "variation": null, "edge": "column-drag-reorder", "job": "Drag-and-drop column reordering primitives for tables"}
+{"id": "niko-table:data-table-column-faceted-filter", "node": "section/filters", "variation": null, "edge": "faceted-filter", "job": "Column dropdown multi-select filter with counts"}
+{"id": "niko-table:data-table-column-group", "node": "component/table", "variation": null, "edge": "group-by-column", "job": "Group table rows by column value"}
+{"id": "niko-table:data-table-column-hide", "node": "component/table", "variation": null, "edge": "column-visibility", "job": "Toggle visibility of individual table columns"}
+{"id": "niko-table:data-table-column-pin", "node": "component/table", "variation": null, "edge": "pin-columns", "job": "Pin table columns to left or right"}
+{"id": "niko-table:data-table-column-resize", "node": "component/table", "variation": null, "edge": "column-resize", "job": "Drag handles to resize table columns"}
+{"id": "niko-table:data-table-column-sizing-persistence", "node": null, "variation": null, "job": "Hook persisting column widths in localStorage"}
+{"id": "niko-table:data-table-column-slider-filter", "node": "atom/slider", "variation": "range", "job": "Range slider filter for numeric column values"}
+{"id": "niko-table:data-table-column-sort", "node": "component/table", "variation": null, "edge": "column-sort", "job": "Column header sort controls: ascending, descending, clear"}
+{"id": "niko-table:data-table-core", "node": "component/table", "variation": null, "edge": "table-core-structure", "job": "Shared table context, structure, types and config"}
+{"id": "niko-table:data-table-date-filter", "node": "component/picker", "variation": "date-range", "job": "Date and date-range filter for table rows"}
+{"id": "niko-table:data-table-export-button", "node": "component/table", "variation": null, "edge": "csv-export", "job": "Export table data to CSV"}
+{"id": "niko-table:data-table-faceted-filter", "node": "section/filters", "variation": null, "edge": "faceted-filter", "job": "Faceted filter with option counts and search"}
+{"id": "niko-table:data-table-filter-menu", "node": "component/command", "variation": "command-palette", "job": "Command palette for adding and managing column filters"}
+{"id": "niko-table:data-table-grid", "node": "component/table", "variation": "editable-grid", "job": "Editable spreadsheet grid with clipboard and undo"}
+{"id": "niko-table:data-table-grid-changes", "node": null, "variation": null, "job": "Hook turning grid edits into a change set"}
+{"id": "niko-table:data-table-inline-filter", "node": "section/filters", "variation": null, "edge": "inline-filter-chips", "job": "Toolbar showing active filters as editable chips"}
+{"id": "niko-table:data-table-pagination", "node": "component/pagination", "variation": "with-page-size", "job": "Page controls with page size and row count"}
+{"id": "niko-table:data-table-row-dnd", "node": "component/table", "variation": null, "edge": "row-drag-reorder", "job": "Drag-and-drop row reordering primitives"}
+{"id": "niko-table:data-table-search-filter", "node": "component/search", "variation": "search-field", "job": "Debounced search input filtering table data"}
+{"id": "niko-table:data-table-selection-bar", "node": "component/table", "variation": null, "edge": "selection-actions-bar", "job": "Bulk action bar for selected rows"}
+{"id": "niko-table:data-table-slider-filter", "node": "atom/slider", "variation": "range", "job": "Slider filter for numeric range filtering"}
+{"id": "niko-table:data-table-sort-menu", "node": "component/table", "variation": null, "edge": "sort-menu", "job": "Multi-column sort menu with drag reordering"}
+{"id": "niko-table:data-table-ui", "node": "component/table", "variation": "standard-table", "job": "Table markup primitive with focusable scroll container"}
+{"id": "niko-table:data-table-view-dnd-menu", "node": "component/table", "variation": null, "edge": "column-visibility-reorder", "job": "Column visibility menu with drag reorder"}
+{"id": "niko-table:data-table-view-menu", "node": "component/table", "variation": null, "edge": "column-visibility", "job": "Menu to show or hide table columns"}
+{"id": "niko-table:data-table-virtualized", "node": "component/table", "variation": "virtualized", "job": "Virtualized table structure for large datasets"}
+{"id": "niko-table:data-table-virtualized-column-dnd", "node": "component/table", "variation": null, "edge": "virtualized-column-dnd", "job": "Virtualized table column drag-and-drop header and body"}
+{"id": "niko-table:data-table-virtualized-row-dnd", "node": "component/table", "variation": null, "edge": "virtualized-row-dnd", "job": "Virtualized table row drag-and-drop body"}

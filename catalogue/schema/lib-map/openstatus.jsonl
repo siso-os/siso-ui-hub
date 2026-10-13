@@ -1,0 +1,23 @@
+{"id": "openstatus:status-banner", "node": "component/alert", "variation": "inline-alert", "job": "alert-style banner showing status with tabs and timestamp"}
+{"id": "openstatus:status-bar", "node": "component/timeline", "variation": "horizontal-timeline", "job": "interactive status timeline with hover, keyboard nav, events"}
+{"id": "openstatus:status-blank", "node": "component/empty", "variation": "icon-text", "job": "empty and skeleton states for loading or no data"}
+{"id": "openstatus:status-calendar", "node": "component/calendar", "variation": "month-calendar", "job": "monthly calendar of status history with day markers"}
+{"id": "openstatus:status-component", "node": "component/card", "variation": "standard-card", "job": "monitor card primitive for building status displays"}
+{"id": "openstatus:status-component-group", "node": "component/accordion", "variation": "collapsible", "job": "collapsible group wrapper around status components"}
+{"id": "openstatus:status-events", "node": "component/timeline", "variation": "activity-timeline", "job": "timeline of status reports and maintenance events"}
+{"id": "openstatus:status-feed", "node": "component/list", "variation": "activity-feed", "job": "unified feed of status reports and maintenance events"}
+{"id": "openstatus:status-i18n", "node": null, "variation": null, "job": "provide translated labels and locale formatters to blocks"}
+{"id": "openstatus:status-icon", "node": "atom/icon", "variation": "status-weather", "job": "status icon with variants per context"}
+{"id": "openstatus:status-layout", "node": "atom/layout", "variation": null, "job": "compose status page layout from primitives", "edge": "status-layout-primitives"}
+{"id": "openstatus:status-locale-switcher", "node": "component/select", "variation": "standard-select", "job": "picker to switch the displayed locale"}
+{"id": "openstatus:status-page-footer", "node": "section/footer", "variation": "minimal-row", "job": "footer chrome with powered-by and actions"}
+{"id": "openstatus:status-page-get-in-touch", "node": "atom/button", "variation": "group", "job": "contact button cluster with tooltip"}
+{"id": "openstatus:status-page-header", "node": "section/nav", "variation": "simple-bar", "job": "status page header with brand, nav, actions"}
+{"id": "openstatus:status-page-shell", "node": "section/shell", "variation": "top-only", "job": "outer chrome wrapping header, main and footer"}
+{"id": "openstatus:status-theme-switcher", "node": "atom/switch", "variation": "theme-toggle", "job": "light, dark or system theme switcher"}
+{"id": "openstatus:status-timestamp", "node": "atom/tooltip", "variation": "rich", "job": "timestamp that reveals timezone details on hover"}
+{"id": "openstatus:status-types", "node": null, "variation": null, "job": "declare TypeScript types for status components"}
+{"id": "openstatus:status-updates", "node": "component/popover", "variation": "standard-popover", "job": "popover of copyable subscription feed links"}
+{"id": "openstatus:status-utils", "node": null, "variation": null, "job": "format and display status data"}
+{"id": "openstatus:use-copy-to-clipboard", "node": null, "variation": null, "job": "copy text to clipboard with toast feedback"}
+{"id": "openstatus:use-media-query", "node": null, "variation": null, "job": "detect responsive media query matches"}

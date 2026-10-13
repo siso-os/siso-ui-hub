@@ -1,0 +1,20 @@
+{"id": "ecomcn:cart-line-item", "node": "component/list", "variation": "standard-list", "job": "One bag line: thumbnail, variant, quantity stepper, line total, remove"}
+{"id": "ecomcn:cart-sheet", "node": "component/sheet", "variation": "side-sheet", "job": "Mini cart in a side sheet, growing out of the bag button"}
+{"id": "ecomcn:checkout-stepper", "node": "component/steps", "variation": "horizontal-stepper", "job": "Checkout progress rail with completed, current and upcoming steps"}
+{"id": "ecomcn:empty-results", "node": "component/empty", "variation": "search-no-results", "job": "No-match state naming dead filters and offering one removal"}
+{"id": "ecomcn:filter-panel", "node": "section/filters", "variation": "filters", "job": "URL-backed faceted filters: chips, counts, price range, swatches"}
+{"id": "ecomcn:filter-sheet", "node": "component/sheet", "variation": "side-sheet", "job": "Mobile filter drawer staging choices, applying once with live count"}
+{"id": "ecomcn:load-more", "node": "component/pagination", "variation": "page-counter", "job": "Progressive list loading: shown count, progress rule, load-more button"}
+{"id": "ecomcn:order-summary", "node": "section/pricing", "variation": "checkout", "job": "Cart totals: shipping progress, promo code, itemised lines, checkout CTA"}
+{"id": "ecomcn:price-tag", "node": "atom/text", "variation": null, "job": "Price with compare-at strike, discount badge and screen-reader text", "edge": "price-display"}
+{"id": "ecomcn:product-buy-box", "node": "section/detail", "variation": null, "job": "Buy box: name, rating, price, variant swatches, quantity, add to cart", "edge": "buy-box"}
+{"id": "ecomcn:product-card", "node": "component/card", "variation": "product-card", "job": "Catalogue tile with badges, price, swatches, rating and quick-add"}
+{"id": "ecomcn:product-details-accordion", "node": "component/accordion", "variation": "standard-accordion", "job": "Product details accordion: materials, care, shipping, maker, first open"}
+{"id": "ecomcn:product-gallery", "node": "component/gallery", "variation": "carousel-gallery", "job": "Product photos: main image carousel with counter plus thumbnails"}
+{"id": "ecomcn:product-grid", "node": "section/showcase", "variation": "grid", "job": "Responsive product grid with skeletons, density switch, card slot"}
+{"id": "ecomcn:product-quick-view", "node": "component/dialog", "variation": "modal-dialog", "job": "Quick-view dialog with shared-element morph from the card image"}
+{"id": "ecomcn:related-products", "node": "section/showcase", "variation": "carousel", "job": "Pairs-well-with rail of product cards in a carousel"}
+{"id": "ecomcn:review-summary", "node": "section/testimonials", "variation": "ratings", "job": "Reviews: average, clickable star histogram, fit scores, filtered list"}
+{"id": "ecomcn:size-guide-dialog", "node": "component/dialog", "variation": "modal-dialog", "job": "Size chart table in a morphing dialog from the size link"}
+{"id": "ecomcn:sort-toolbar", "node": "section/filters", "variation": "results-count", "job": "Listing rule: announced result count, sort select, density switch"}
+{"id": "ecomcn:variant-swatches", "node": "atom/choice", "variation": "group", "job": "Colour swatches and size grid, stock-aware, unavailable struck out"}

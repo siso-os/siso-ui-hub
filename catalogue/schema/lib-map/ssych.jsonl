@@ -1,0 +1,133 @@
+{"id": "ssych:accordion", "node": "component/accordion", "variation": "standard-accordion", "job": "Expand rows to reveal feature and FAQ content"}
+{"id": "ssych:account-dropdown", "node": "component/menu", "variation": "dropdown-menu", "job": "Switch between crypto wallet accounts and their balances"}
+{"id": "ssych:agent-run-timeline", "node": "component/timeline", "variation": "steps-timeline", "job": "Show each agent run step, tool call and status"}
+{"id": "ssych:alert-stack", "node": "component/toast", "variation": "stacked-toasts", "job": "Stack price and margin alerts until dismissed"}
+{"id": "ssych:allocation-treemap", "node": "component/chart", "variation": null, "job": "Show holdings sized by portfolio weight", "edge": "allocation-treemap"}
+{"id": "ssych:amount", "node": "atom/text", "variation": null, "job": "Render currency and crypto amounts with sign colours", "edge": "currency-amount"}
+{"id": "ssych:amount-slider", "node": "atom/slider", "variation": "slider", "job": "Pick a share of balance with percent presets"}
+{"id": "ssych:analyst-radar", "node": "component/chart", "variation": "radar-specialized", "job": "Compare factor scores against the sector"}
+{"id": "ssych:approval-quorum", "node": "component/widget", "variation": null, "job": "Collect multisig sign-offs until the quorum is met", "edge": "approval-quorum"}
+{"id": "ssych:ascii-badge", "node": "atom/badge", "variation": "icon-badge", "job": "Draw an SVG mark as an ASCII character badge"}
+{"id": "ssych:ascii-scroll-morph", "node": "atom/icon", "variation": "animated", "job": "Morph ASCII art as the page scrolls"}
+{"id": "ssych:ascii-turntable", "node": "asset/logo", "variation": "brand", "job": "Turn a logo or token mark drawn in ASCII"}
+{"id": "ssych:asset-alerts", "node": "component/list", "variation": "standard-list", "job": "List assets with their price alerts"}
+{"id": "ssych:assets-balance-card", "node": "component/card", "variation": "stat-card", "job": "Portfolio balance card with odometer digits and chart"}
+{"id": "ssych:automation-builder", "node": "component/form", "variation": null, "job": "Build a trading strategy as editable sentences", "edge": "strategy-builder"}
+{"id": "ssych:avatar-stack", "node": "atom/avatar", "variation": "avatar-group", "job": "Overlapping avatars for teams, signers and holders"}
+{"id": "ssych:balance-chart", "node": "component/chart", "variation": "area-chart", "job": "Wallet balance area chart with timeframe ranges"}
+{"id": "ssych:balance-header", "node": "component/stat", "variation": "kpi-card", "job": "Show wallet total, 24h move and privacy toggle"}
+{"id": "ssych:bento-gallery", "node": "component/gallery", "variation": "grid-gallery", "job": "Draggable bento grid gallery opening into a lightbox"}
+{"id": "ssych:browser-window", "node": "component/mockup", "variation": "device-mockup", "job": "Browser window frame for showing a web app"}
+{"id": "ssych:business-balances", "node": "component/stat", "variation": "stats-row", "job": "Row of business account balances"}
+{"id": "ssych:candlestick", "node": "component/chart", "variation": null, "job": "Candlestick chart with volume histogram and OHLC legend", "edge": "candlestick-chart"}
+{"id": "ssych:card-grid", "node": "component/card", "variation": "standard-card", "job": "Responsive grid of product or case-study cards"}
+{"id": "ssych:card-list", "node": "component/list", "variation": "standard-list", "job": "Vertical media card list opening a detail modal"}
+{"id": "ssych:card-stack", "node": "component/carousel", "variation": "swipeable", "job": "Swipeable card stack showcasing products"}
+{"id": "ssych:comb-rows", "node": "component/chart", "variation": null, "job": "Compare peers as rulers of metric ticks", "edge": "peer-metric-comb"}
+{"id": "ssych:cross-chain-swap", "node": "component/form", "variation": null, "job": "Bridge and swap tokens between networks", "edge": "cross-chain-swap"}
+{"id": "ssych:crypto-fiat", "node": "component/field", "variation": "with-addon", "job": "Amount input switching between fiat and token units"}
+{"id": "ssych:cutout-card", "node": "component/card", "variation": "standard-card", "job": "Media card with scooped content tray and hover action"}
+{"id": "ssych:date-range-picker", "node": "component/picker", "variation": "date-range", "job": "Pick a date range from two months and presets"}
+{"id": "ssych:depth-chart", "node": "component/chart", "variation": "area-chart", "job": "Show bid and ask liquidity around mid price"}
+{"id": "ssych:dialog-stack", "node": "component/dialog", "variation": "modal-dialog", "job": "Stack dialogs for multi-step confirmations"}
+{"id": "ssych:discover-board", "node": "component/board", "variation": "visual-board", "job": "Browse markets on a discovery board"}
+{"id": "ssych:discover-screener", "node": "component/table", "variation": "with-toolbar-filters", "job": "Screen tokens against filter criteria"}
+{"id": "ssych:donut-chart", "node": "component/chart", "variation": "pie-donut", "job": "Portfolio allocation ring with highlighting legend"}
+{"id": "ssych:dotted-area-chart", "node": "component/chart", "variation": "area-chart", "job": "Scrub a price area chart on a dotted field"}
+{"id": "ssych:empty-state", "node": "component/empty", "variation": "with-action", "job": "Empty trading dashboard with one call to action"}
+{"id": "ssych:equity-drawdown", "node": "component/chart", "variation": "line-chart", "job": "Equity curve with synced drawdown and return readout"}
+{"id": "ssych:event-feed", "node": "component/list", "variation": "activity-feed", "job": "Market events grouped by day with prices"}
+{"id": "ssych:execution-controls", "node": "atom/button", "variation": "hold-confirm", "job": "Hold to confirm an order, then show its state"}
+{"id": "ssych:file-tree", "node": "component/tree", "variation": "file-tree", "job": "Foldable file tree with keyboard navigation and sizes"}
+{"id": "ssych:fills-blotter", "node": "component/table", "variation": "data-table", "job": "Live order fills blotter resolving to filled or rejected"}
+{"id": "ssych:flow-bars", "node": "component/chart", "variation": "bar-chart", "job": "Net inflow and outflow bars with drag to sum"}
+{"id": "ssych:gantt-mini", "node": "component/timeline", "variation": "gantt-chart", "job": "Compact Gantt with today line for sprint planning"}
+{"id": "ssych:glass-badge", "node": "atom/badge", "variation": "icon-badge", "job": "Render an SVG mark as a frosted glass badge"}
+{"id": "ssych:gold-badge", "node": "atom/badge", "variation": "icon-badge", "job": "Render an SVG mark as a brushed gold badge"}
+{"id": "ssych:gpu-pods", "node": "component/card", "variation": "product-card", "job": "Browse rentable GPU pods as product cards"}
+{"id": "ssych:graph-comparison", "node": "component/chart", "variation": "line-chart", "job": "Index up to four tickers to compare performance"}
+{"id": "ssych:health-gauge", "node": "atom/progress", "variation": "meter-gauge", "job": "Dial for margin ratio or sentiment scores"}
+{"id": "ssych:heat-calendar", "node": "component/chart", "variation": "heatmap", "job": "Calendar heatmap of daily activity and totals"}
+{"id": "ssych:historical-eps", "node": "component/chart", "variation": "bar-chart", "job": "Quarterly EPS forecast against reported with surprise"}
+{"id": "ssych:holdings-table", "node": "component/table", "variation": "data-table", "job": "Sortable fund holdings with values and weight bars"}
+{"id": "ssych:holo-badge", "node": "atom/badge", "variation": "icon-badge", "job": "Render an SVG mark as a holographic badge"}
+{"id": "ssych:inbox", "node": "component/inbox", "variation": "notification-inbox", "job": "Notification inbox with unread markers and clear all"}
+{"id": "ssych:index-card", "node": "component/card", "variation": "stat-card", "job": "Index card with tabs and scrubable intraday line"}
+{"id": "ssych:info-card", "node": "component/alert", "variation": "callout", "job": "Help or upsell callout with one action row"}
+{"id": "ssych:inline-slider", "node": "atom/slider", "variation": "slider", "job": "Range filter slider with value inside the track"}
+{"id": "ssych:kanban-board", "node": "component/board", "variation": "kanban-drag-drop", "job": "Kanban columns with counts and one-click moves"}
+{"id": "ssych:kpi-card-row", "node": "component/stat", "variation": "stats-row", "job": "KPI row with counting metrics over area charts"}
+{"id": "ssych:leverage-ticket", "node": "component/form", "variation": null, "job": "Futures order ticket with margin and leverage slider", "edge": "leverage-order-ticket"}
+{"id": "ssych:lightning-badge", "node": "atom/badge", "variation": "icon-badge", "job": "Render an SVG mark as a lightning glass badge"}
+{"id": "ssych:macbook-frame", "node": "component/mockup", "variation": "device-mockup", "job": "MacBook frame for screenshots and live embeds"}
+{"id": "ssych:macos-dock", "node": "component/dock", "variation": "macos-magnifying", "job": "macOS dock with magnifying icons and command menu"}
+{"id": "ssych:market-heatmap", "node": "component/chart", "variation": "heatmap", "job": "Market cap heatmap tinted by daily move"}
+{"id": "ssych:market-shelf", "node": "component/stat", "variation": "stats-row", "job": "Row of crypto market tiles with sparklines"}
+{"id": "ssych:market-snapshot", "node": "component/card", "variation": "stat-card", "job": "Stock price card with periods and scrub chart"}
+{"id": "ssych:market-watchlist", "node": "component/table", "variation": "data-table", "job": "Watchlist of markets with live prices"}
+{"id": "ssych:matrix-ticker-board", "node": "component/board", "variation": "visual-board", "job": "Dot-matrix board of live stock prices"}
+{"id": "ssych:metal-badge", "node": "atom/badge", "variation": "icon-badge", "job": "Render an SVG mark as a domed chrome badge"}
+{"id": "ssych:modal", "node": "component/dialog", "variation": "modal-dialog", "job": "Accessible confirmation modal with focus trap"}
+{"id": "ssych:model-comparison", "node": "component/table", "variation": "data-table", "job": "Compare LLM quality, latency, cost and context"}
+{"id": "ssych:money-account", "node": "component/card", "variation": "stat-card", "job": "Multi-currency account with balances per currency"}
+{"id": "ssych:morph-disclosure", "node": "component/accordion", "variation": "collapsible", "job": "Expand a listing row into summary and key facts"}
+{"id": "ssych:mouse-trail-cta", "node": "atom/button", "variation": "primary", "job": "Hero CTA button lit by a cursor trail"}
+{"id": "ssych:neon-badge", "node": "atom/badge", "variation": "icon-badge", "job": "Render an SVG mark as a glowing neon badge"}
+{"id": "ssych:new-items-pill", "node": "component/list", "variation": "activity-feed", "job": "Trade feed holding place and counting new rows"}
+{"id": "ssych:news-card", "node": "component/card", "variation": "article-card", "job": "Cycle market headlines with source and time"}
+{"id": "ssych:onboarding-checklist", "node": "section/onboarding", "variation": "checklist", "job": "Onboarding steps that check off with progress bar"}
+{"id": "ssych:order-book", "node": "component/table", "variation": "data-table", "job": "Bids and asks with cumulative depth bars"}
+{"id": "ssych:order-ticket", "node": "component/form", "variation": null, "job": "Buy and sell ticket keeping price, amount and total in sync", "edge": "order-ticket"}
+{"id": "ssych:payment-card", "node": "component/card", "variation": "standard-card", "job": "Saved payment card lifting out of its pocket"}
+{"id": "ssych:payout-balance", "node": "component/stat", "variation": "kpi-card", "job": "Balance available for payout with withdraw action"}
+{"id": "ssych:performance-chart", "node": "component/chart", "variation": "area-chart", "job": "Portfolio against benchmark with ahead or behind shading"}
+{"id": "ssych:portfolio-allocation", "node": "component/chart", "variation": "pie-donut", "job": "Portfolio allocation shares by holding"}
+{"id": "ssych:portfolio-book", "node": "component/table", "variation": "data-table", "job": "Portfolio overview listing holdings and values"}
+{"id": "ssych:portfolio-tiers", "node": "component/card", "variation": "standard-card", "job": "Multi-account portfolio shown as tiers"}
+{"id": "ssych:positions-table", "node": "component/table", "variation": "data-table", "job": "Open futures positions with P&L and hold to close"}
+{"id": "ssych:preferences-card", "node": "section/settings-panel", "variation": "card-blocks", "job": "Account settings rows for profile, payment and alerts"}
+{"id": "ssych:price-scrubber", "node": "component/chart", "variation": "line-chart", "job": "Scrub a stock price line with crosshair badges"}
+{"id": "ssych:price-target-fan", "node": "component/chart", "variation": "line-chart", "job": "Fan price history into analyst target projections"}
+{"id": "ssych:project-card", "node": "component/card", "variation": "product-card", "job": "Cutout project card with gradient media and hover ring"}
+{"id": "ssych:project-index", "node": "component/list", "variation": "standard-list", "job": "Company list showing each cover on hover"}
+{"id": "ssych:quick-ticket", "node": "component/form", "variation": null, "job": "Watchlist row expanding into a quick order ticket", "edge": "quick-order-ticket"}
+{"id": "ssych:radial-gauge", "node": "atom/progress", "variation": "meter-gauge", "job": "Gauge with fail, watch and pass bands"}
+{"id": "ssych:range-navigator", "node": "component/chart", "variation": "line-chart", "job": "Price chart with range minimap to pan and zoom"}
+{"id": "ssych:ratings-radar", "node": "component/chart", "variation": "radar-specialized", "job": "Analyst ratings spread on a consensus pentagon"}
+{"id": "ssych:release-feed", "node": "component/timeline", "variation": "changelog", "job": "Changelog grouped into added, changed and fixed"}
+{"id": "ssych:request-log", "node": "component/table", "variation": "expandable-rows", "job": "API request log with inline response bodies"}
+{"id": "ssych:returns-calendar", "node": "component/chart", "variation": "heatmap", "job": "Monthly returns heatmap with compounded yearly column"}
+{"id": "ssych:sankey-flow", "node": "component/chart", "variation": null, "job": "Show cash and fund flows as ribbons", "edge": "sankey-flow"}
+{"id": "ssych:scatter-plot", "node": "component/chart", "variation": null, "job": "Plot stocks by volatility against yearly return", "edge": "scatter-plot"}
+{"id": "ssych:screen-shuffle", "node": "component/carousel", "variation": "cards-carousel", "job": "Rotating stack of product screenshots"}
+{"id": "ssych:sectors-donut", "node": "component/chart", "variation": "pie-donut", "job": "Sector weights donut dimming on hover"}
+{"id": "ssych:segmented-control", "node": "component/tabs", "variation": "pill-segmented", "job": "Timeframe and view-mode segmented switcher"}
+{"id": "ssych:series-spotlight", "node": "component/chart", "variation": "line-chart", "job": "Twelve asset lines with one highlighted"}
+{"id": "ssych:setup-stepper", "node": "component/steps", "variation": "vertical-stepper", "job": "Setup steps down a rail with continue action"}
+{"id": "ssych:sidebar", "node": "section/sidebar", "variation": "collapsible", "job": "Collapsible sections nav with rail and mobile drawer"}
+{"id": "ssych:simple-chart", "node": "component/chart", "variation": "sparkline", "job": "Compact price line with one value on pointer"}
+{"id": "ssych:simple-landing", "node": "page/home", "variation": "home-saas", "job": "Developer tools landing page of library sections"}
+{"id": "ssych:sma-chart", "node": "component/chart", "variation": "line-chart", "job": "Price chart with 20 and 50 day moving averages"}
+{"id": "ssych:stablecoin-landing", "node": "page/home", "variation": "home-product-launch", "job": "Stablecoin product landing page"}
+{"id": "ssych:stacked-bars", "node": "component/chart", "variation": "bar-chart", "job": "Monthly totals stacked by series with hover share"}
+{"id": "ssych:stat-tile", "node": "component/stat", "variation": "kpi-sparkline", "job": "Trading metric tiles with scrubable sparklines"}
+{"id": "ssych:stone-badge", "node": "atom/badge", "variation": "icon-badge", "job": "Render an SVG mark as a carved stone badge"}
+{"id": "ssych:swap-confirm", "node": "component/dialog", "variation": "confirm-alert", "job": "Confirm a swap with rate and minimum received"}
+{"id": "ssych:swap-ticket", "node": "component/form", "variation": null, "job": "Swap tokens with flip, token picker and slippage", "edge": "token-swap-form"}
+{"id": "ssych:tape-flow", "node": "component/chart", "variation": "bar-chart", "job": "Recent trades as volume bars coloured by side"}
+{"id": "ssych:terminal-cex", "node": "section/shell", "variation": "split-view", "job": "Trading terminal shell of chart, book and ticket panes"}
+{"id": "ssych:ticker-tape", "node": "atom/layout", "variation": null, "job": "Scrolling quote tape paused on hover", "edge": "ticker-marquee-strip"}
+{"id": "ssych:tool-call-card", "node": "component/agent-parts", "variation": "tool-calls", "job": "Show one agent tool call's arguments, result and status"}
+{"id": "ssych:top-coins", "node": "component/widget", "variation": null, "job": "Crypto top coins with prices and scrubbable sparklines", "edge": "coin-price-sparklines"}
+{"id": "ssych:total-balance", "node": "component/chart", "variation": "area-chart", "job": "Balance chart with 24h to All windows and hover readout"}
+{"id": "ssych:trade-journal-table", "node": "component/table", "variation": "data-table", "job": "Trade journal table with open position and win/loss rows"}
+{"id": "ssych:trade-tape", "node": "component/list", "variation": "activity-feed", "job": "Live time and sales tape of streamed trade prints"}
+{"id": "ssych:tradeboard-landing", "node": "page/home", "variation": "home-saas", "job": "Marketing landing page for a trading platform"}
+{"id": "ssych:uptime-bars", "node": "component/chart", "variation": "bar-chart", "job": "Ninety day uptime status bars with per-day hover"}
+{"id": "ssych:view-switch", "node": "atom/switch", "variation": "toggle-group", "job": "Switcher between desktop, mobile and code previews"}
+{"id": "ssych:vitals-strip", "node": "component/stat", "variation": "stats-row", "job": "Key stats strip with figures revealing their formulas"}
+{"id": "ssych:volume-profile", "node": "component/chart", "variation": "bar-chart", "job": "Volume by price bars with point of control and value area"}
+{"id": "ssych:wallet-drawer", "node": "component/sheet", "variation": "side-sheet", "job": "Wallet drawer with holdings, DeFi positions and send views"}
+{"id": "ssych:wallet-home", "node": "page/dashboard", "variation": "dashboard-overview", "job": "Crypto wallet home screen over balances and holdings"}
+{"id": "ssych:watchlist-stack", "node": "component/widget", "variation": null, "job": "Stock watchlist rows with sparklines and daily moves", "edge": "ticker-watchlist-rows"}
+{"id": "ssych:wealth-invest", "node": "page/dashboard", "variation": "dashboard-overview", "job": "Wealth portfolio screen showing holdings and performance"}

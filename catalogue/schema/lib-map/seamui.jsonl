@@ -1,0 +1,305 @@
+{"id": "seamui:accordion", "node": "component/accordion", "variation": "standard-accordion", "job": "Expandable section list with eased height animation"}
+{"id": "seamui:accordion-demo", "node": "component/accordion", "variation": "standard-accordion", "job": "Accordion opening and closing its sections"}
+{"id": "seamui:accordion-disabled", "node": "component/accordion", "variation": "standard-accordion", "job": "Accordion with disabled sections"}
+{"id": "seamui:accordion-single", "node": "component/accordion", "variation": "standard-accordion", "job": "Accordion allowing only one open section"}
+{"id": "seamui:agent-status", "node": "component/agent-parts", "variation": "working-status", "job": "Agent state dot or chip for session rows"}
+{"id": "seamui:agent-status-demo", "node": "component/agent-parts", "variation": "working-status", "job": "Showcase of the five agent states"}
+{"id": "seamui:agent-status-dots", "node": "component/agent-parts", "variation": "working-status", "job": "Bare agent status dots for dense rows"}
+{"id": "seamui:agent-status-live", "node": "component/agent-parts", "variation": "working-status", "job": "Agent status cycling through the live states"}
+{"id": "seamui:alert", "node": "component/alert", "variation": "inline-alert", "job": "Static inline callout for persistent state"}
+{"id": "seamui:alert-demo", "node": "component/alert", "variation": "inline-alert", "job": "Inline alert examples"}
+{"id": "seamui:alert-destructive", "node": "component/alert", "variation": "inline-alert", "job": "Destructive inline alert for a failed action"}
+{"id": "seamui:alert-dialog", "node": "component/dialog", "variation": "confirm-alert", "job": "Modal confirmation dialog over a dimmed page"}
+{"id": "seamui:alert-dialog-demo", "node": "component/dialog", "variation": "confirm-alert", "job": "Confirmation dialog example"}
+{"id": "seamui:alert-dialog-discard", "node": "component/dialog", "variation": "confirm-alert", "job": "Confirm dialog before discarding unsaved changes"}
+{"id": "seamui:alert-dialog-signout", "node": "component/dialog", "variation": "confirm-alert", "job": "Confirm dialog before signing out"}
+{"id": "seamui:alert-title-only", "node": "component/alert", "variation": "inline-alert", "job": "Alert with a title and no body"}
+{"id": "seamui:aspect-ratio", "node": "atom/layout", "variation": null, "job": "Constrain content to a fixed aspect ratio", "edge": "aspect-ratio-box"}
+{"id": "seamui:aspect-ratio-demo", "node": "atom/layout", "variation": null, "job": "Aspect ratio box example", "edge": "aspect-ratio-box"}
+{"id": "seamui:auth-block", "node": "section/auth", "variation": "sign-in", "job": "Sign-in card that steps into OTP two-factor"}
+{"id": "seamui:avatar", "node": "atom/avatar", "variation": "standard", "job": "User image that fades in when loaded"}
+{"id": "seamui:avatar-demo", "node": "atom/avatar", "variation": "standard", "job": "Avatar example"}
+{"id": "seamui:avatar-group", "node": "atom/avatar", "variation": "avatar-group", "job": "Overlapping stack of avatars"}
+{"id": "seamui:avatar-sizes", "node": "atom/avatar", "variation": "standard", "job": "Avatar across the size scale"}
+{"id": "seamui:badge", "node": "atom/badge", "variation": "badge", "job": "Small embossed status chip"}
+{"id": "seamui:badge-demo", "node": "atom/badge", "variation": "badge", "job": "Badge examples"}
+{"id": "seamui:billing-block", "node": "section/pricing", "variation": "billing-toggle", "job": "Plan cards with monthly/annual toggle and usage meters"}
+{"id": "seamui:branch-chip", "node": "atom/badge", "variation": "tag-chip", "job": "Copyable branch pill with ahead/behind and PR state"}
+{"id": "seamui:branch-chip-demo", "node": "atom/badge", "variation": "tag-chip", "job": "Branch chip examples"}
+{"id": "seamui:branch-chip-pr", "node": "atom/badge", "variation": "tag-chip", "job": "Branch chip showing pull-request state"}
+{"id": "seamui:branch-chip-sync", "node": "atom/badge", "variation": "tag-chip", "job": "Branch chip with ahead and behind counts"}
+{"id": "seamui:breadcrumb", "node": "component/breadcrumb", "variation": "text-breadcrumb", "job": "Navigation trail showing the current page location"}
+{"id": "seamui:breadcrumb-demo", "node": "component/breadcrumb", "variation": "text-breadcrumb", "job": "Breadcrumb example"}
+{"id": "seamui:breadcrumb-ellipsis", "node": "component/breadcrumb", "variation": "overflow-menu", "job": "Breadcrumb with collapsed middle levels"}
+{"id": "seamui:button", "node": "atom/button", "variation": "primary", "job": "Button with spring depth press motion"}
+{"id": "seamui:button-demo", "node": "atom/button", "variation": "primary", "job": "Button examples"}
+{"id": "seamui:button-link", "node": "atom/button", "variation": null, "job": "Button rendered as an inline text link", "edge": "link-button"}
+{"id": "seamui:button-loading", "node": "atom/button", "variation": "loading", "job": "Button with a pending loading state"}
+{"id": "seamui:button-sizes", "node": "atom/button", "variation": "primary", "job": "Button across the size scale"}
+{"id": "seamui:button-variants", "node": "atom/button", "variation": "primary", "job": "Button in every visual variant"}
+{"id": "seamui:card", "node": "component/card", "variation": "standard-card", "job": "Raised card with header, content, and footer"}
+{"id": "seamui:card-demo", "node": "component/card", "variation": "standard-card", "job": "Card example"}
+{"id": "seamui:card-notification", "node": "component/card", "variation": null, "job": "Notification settings card with toggle and clear-all action", "edge": "notification-settings-card"}
+{"id": "seamui:card-stats", "node": "component/card", "variation": "stat-card", "job": "Card showing a key number with a delta"}
+{"id": "seamui:card-variants", "node": "component/card", "variation": "standard-card", "job": "Card in all its variants"}
+{"id": "seamui:chat-demo", "node": "section/chat", "variation": "full-app", "job": "Complete chat loop with composer and streaming reply"}
+{"id": "seamui:chat-timeline", "node": "section/chat", "variation": "thread", "job": "Thread grouped by day with sticky date headers"}
+{"id": "seamui:chat-timeline-demo", "node": "section/chat", "variation": "thread", "job": "Chat timeline example"}
+{"id": "seamui:chat-timeline-unread", "node": "section/chat", "variation": "thread", "job": "Thread with unread message markers"}
+{"id": "seamui:checkbox", "node": "atom/choice", "variation": "checkbox", "job": "Checkbox whose mark pops in with a spring"}
+{"id": "seamui:checkbox-demo", "node": "atom/choice", "variation": "checkbox", "job": "Checkbox example"}
+{"id": "seamui:checkbox-disabled", "node": "atom/choice", "variation": "checkbox", "job": "Disabled checkbox"}
+{"id": "seamui:checkbox-group", "node": "atom/choice", "variation": "group", "job": "Checkbox group with select-all parent support"}
+{"id": "seamui:checkbox-group-demo", "node": "atom/choice", "variation": "group", "job": "Checkbox group example"}
+{"id": "seamui:checkbox-group-disabled", "node": "atom/choice", "variation": "group", "job": "Disabled checkbox group"}
+{"id": "seamui:checkbox-group-parent", "node": "atom/choice", "variation": "group", "job": "Checkbox group with a select-all parent"}
+{"id": "seamui:checkbox-indeterminate", "node": "atom/choice", "variation": "indeterminate", "job": "Checkbox in the indeterminate state"}
+{"id": "seamui:checkbox-with-text", "node": "atom/choice", "variation": "with-description", "job": "Checkbox with label text beside it"}
+{"id": "seamui:checks-panel", "node": "component/list", "variation": null, "job": "CI check rows with expandable logs and merge action", "edge": "ci-checks-panel"}
+{"id": "seamui:checks-panel-demo", "node": "component/list", "variation": null, "job": "Checks panel example", "edge": "ci-checks-panel"}
+{"id": "seamui:checks-panel-failure", "node": "component/list", "variation": null, "job": "Checks panel showing a failed run", "edge": "ci-checks-panel"}
+{"id": "seamui:code-block", "node": "component/code", "variation": "highlighted-code", "job": "Highlighted code in a well with a copy key"}
+{"id": "seamui:code-block-copy", "node": "component/code", "variation": "snippet-copy", "job": "Code block with copy-to-clipboard key"}
+{"id": "seamui:code-block-demo", "node": "component/code", "variation": "highlighted-code", "job": "Code block example"}
+{"id": "seamui:code-block-long-lines", "node": "component/code", "variation": "highlighted-code", "job": "Code block scrolling long lines horizontally"}
+{"id": "seamui:collapsible", "node": "component/accordion", "variation": "collapsible", "job": "Single expandable panel with eased height animation"}
+{"id": "seamui:collapsible-demo", "node": "component/accordion", "variation": "collapsible", "job": "Collapsible panel example"}
+{"id": "seamui:combobox", "node": "component/select", "variation": "combobox", "job": "Filterable input bound to a listbox popup"}
+{"id": "seamui:combobox-clear", "node": "component/select", "variation": "combobox", "job": "Combobox with a clear affordance"}
+{"id": "seamui:combobox-custom", "node": "component/select", "variation": "combobox", "job": "Combobox with custom item rendering"}
+{"id": "seamui:combobox-demo", "node": "component/select", "variation": "combobox", "job": "Combobox example"}
+{"id": "seamui:combobox-disabled", "node": "component/select", "variation": "combobox", "job": "Disabled combobox"}
+{"id": "seamui:combobox-groups", "node": "component/select", "variation": "grouped", "job": "Combobox with grouped options"}
+{"id": "seamui:combobox-invalid", "node": "component/select", "variation": "combobox", "job": "Combobox in an invalid state"}
+{"id": "seamui:combobox-multiple", "node": "component/select", "variation": "multi-select", "job": "Combobox selecting several values"}
+{"id": "seamui:command-palette", "node": "component/command", "variation": "command-palette", "job": "Searchable command launcher opened with Cmd K"}
+{"id": "seamui:command-palette-demo", "node": "component/command", "variation": "command-palette", "job": "Command palette example"}
+{"id": "seamui:command-palette-flat", "node": "component/command", "variation": "command-menu", "job": "Flat command list without groups"}
+{"id": "seamui:composer", "node": "component/composer", "variation": "standard-composer", "job": "Prompt input with send, stop, and attachments"}
+{"id": "seamui:composer-attachments", "node": "component/composer", "variation": "with-attachments", "job": "Composer with attachment chips"}
+{"id": "seamui:composer-demo", "node": "component/composer", "variation": "standard-composer", "job": "Composer example"}
+{"id": "seamui:composer-streaming", "node": "component/composer", "variation": "chat-composer", "job": "Composer while a reply is streaming"}
+{"id": "seamui:connector-card", "node": "component/card", "variation": null, "job": "Integration card with OAuth state and tool disclosure", "edge": "connector-card"}
+{"id": "seamui:connector-card-states", "node": "component/card", "variation": null, "job": "Connector card across connection states", "edge": "connector-card"}
+{"id": "seamui:connector-card-tools", "node": "component/card", "variation": null, "job": "Connector card with discovered tools disclosure", "edge": "connector-card"}
+{"id": "seamui:connector-list-demo", "node": "component/list", "variation": null, "job": "List of connectors with enable switches", "edge": "connector-list"}
+{"id": "seamui:context-menu", "node": "component/menu", "variation": "context-menu", "job": "Right-click menu with overlay depth"}
+{"id": "seamui:context-menu-demo", "node": "component/menu", "variation": "context-menu", "job": "Context menu example"}
+{"id": "seamui:context-menu-destructive", "node": "component/menu", "variation": "context-menu", "job": "Right-click menu with destructive actions"}
+{"id": "seamui:context-menu-labelled", "node": "component/menu", "variation": "context-menu", "job": "Right-click menu with labelled groups"}
+{"id": "seamui:context-meter", "node": "component/agent-parts", "variation": "usage-cost", "job": "Context-window usage ring for composer footers"}
+{"id": "seamui:context-meter-critical", "node": "component/agent-parts", "variation": "usage-cost", "job": "Context meter past its critical threshold"}
+{"id": "seamui:context-meter-demo", "node": "component/agent-parts", "variation": "usage-cost", "job": "Context meter example"}
+{"id": "seamui:context-meter-sizes", "node": "component/agent-parts", "variation": "usage-cost", "job": "Context meter across the size scale"}
+{"id": "seamui:conversation", "node": "section/chat", "variation": "thread", "job": "Stick-to-bottom chat viewport with latest key"}
+{"id": "seamui:conversation-demo", "node": "section/chat", "variation": "thread", "job": "Conversation viewport example"}
+{"id": "seamui:conversation-scroll-button", "node": "section/chat", "variation": "jump-to-latest", "job": "Floating scroll-to-latest button"}
+{"id": "seamui:data-table", "node": "component/table", "variation": "data-table", "job": "TanStack table with filter, sort, edit, and actions"}
+{"id": "seamui:data-table-demo", "node": "component/table", "variation": "data-table", "job": "Data table example"}
+{"id": "seamui:data-table-editable", "node": "component/table", "variation": "editable-grid", "job": "Data table with inline editable cells"}
+{"id": "seamui:data-table-pagination", "node": "component/table", "variation": "data-table", "job": "Data table with pagination controls"}
+{"id": "seamui:data-table-sorting", "node": "component/table", "variation": "data-table", "job": "Data table with sortable columns"}
+{"id": "seamui:device-selector", "node": "component/select", "variation": null, "job": "Mic, camera, and output device picker menu", "edge": "device-picker"}
+{"id": "seamui:device-selector-demo", "node": "component/select", "variation": null, "job": "Device selector example", "edge": "device-picker"}
+{"id": "seamui:device-selector-live", "node": "component/select", "variation": null, "job": "Device picker wired to live media devices", "edge": "device-picker"}
+{"id": "seamui:device-selector-split", "node": "component/select", "variation": null, "job": "Split mic and camera device pickers", "edge": "device-picker"}
+{"id": "seamui:dialog", "node": "component/dialog", "variation": "modal-dialog", "job": "Modal surface rising over a dimmed page"}
+{"id": "seamui:dialog-demo", "node": "component/dialog", "variation": "modal-dialog", "job": "Dialog example"}
+{"id": "seamui:dialog-form", "node": "component/dialog", "variation": "form-dialog", "job": "Dialog holding a form"}
+{"id": "seamui:dialog-scroll", "node": "component/dialog", "variation": "modal-dialog", "job": "Dialog with a long scrollable body"}
+{"id": "seamui:dialog-sizes", "node": "component/dialog", "variation": "modal-dialog", "job": "Dialog across the size scale"}
+{"id": "seamui:dictation-card", "node": "component/composer", "variation": "voice-input", "job": "Dictation review card inside the composer well"}
+{"id": "seamui:dictation-card-demo", "node": "component/composer", "variation": "voice-input", "job": "Dictation card example"}
+{"id": "seamui:dictation-card-review", "node": "component/composer", "variation": "voice-input", "job": "Dictation transcript review before inserting"}
+{"id": "seamui:drawer", "node": "component/sheet", "variation": "bottom-sheet", "job": "Swipe-to-dismiss mobile bottom sheet"}
+{"id": "seamui:drawer-demo", "node": "component/sheet", "variation": "bottom-sheet", "job": "Drawer example"}
+{"id": "seamui:drawer-form", "node": "component/sheet", "variation": "form-sheet", "job": "Bottom sheet holding a form"}
+{"id": "seamui:drawer-menu", "node": "component/sheet", "variation": "bottom-sheet", "job": "Bottom drawer holding share actions"}
+{"id": "seamui:drawer-sizes", "node": "component/sheet", "variation": "bottom-sheet", "job": "Drawer across the size scale"}
+{"id": "seamui:dropdown-menu", "node": "component/menu", "variation": "dropdown-menu", "job": "Dropdown menu with overlay depth entrance"}
+{"id": "seamui:dropdown-menu-checkboxes", "node": "component/menu", "variation": "dropdown-menu", "job": "Dropdown with checkbox items"}
+{"id": "seamui:dropdown-menu-demo", "node": "component/menu", "variation": "dropdown-menu", "job": "Account actions menu opened from a trigger button"}
+{"id": "seamui:dropdown-menu-nested", "node": "component/menu", "variation": "dropdown-menu", "job": "Menu item opening a nested project submenu"}
+{"id": "seamui:dropdown-menu-radio", "node": "component/menu", "variation": "dropdown-menu", "job": "Menu whose items are a radio choice group"}
+{"id": "seamui:dropdown-menu-shortcuts", "node": "component/menu", "variation": "dropdown-menu", "job": "Menu items labelled with their keyboard shortcuts"}
+{"id": "seamui:dropdown-menu-submenu", "node": "component/menu", "variation": "dropdown-menu", "job": "Action menu with a Share submenu of items"}
+{"id": "seamui:empty-state", "node": "component/empty", "variation": "icon-text", "job": "Zero-data panel with icon, copy and action slots"}
+{"id": "seamui:empty-state-demo", "node": "component/empty", "variation": "with-action", "job": "No-projects state offering create and import buttons"}
+{"id": "seamui:empty-state-plain", "node": "component/empty", "variation": null, "job": "Empty state showing only a title and description", "edge": "plain-empty-state"}
+{"id": "seamui:empty-state-search", "node": "component/empty", "variation": "search-no-results", "job": "Empty state for a search that matched nothing"}
+{"id": "seamui:field", "node": "component/field", "variation": "text-input", "job": "Field wrapper wiring label, description and error to a control"}
+{"id": "seamui:field-demo", "node": "component/field", "variation": "text-input", "job": "Labelled email field with description and input"}
+{"id": "seamui:field-disabled", "node": "component/field", "variation": null, "job": "Field and its input shown in the disabled state", "edge": "field-disabled"}
+{"id": "seamui:field-fieldset", "node": "component/field", "variation": null, "job": "Radio choices grouped under a fieldset legend", "edge": "field-group"}
+{"id": "seamui:field-invalid", "node": "component/field", "variation": "validation-states", "job": "Field validating on change and shaking in an error"}
+{"id": "seamui:field-textarea", "node": "component/field", "variation": "text-input", "job": "Field wrapping a textarea with label and description"}
+{"id": "seamui:form", "node": "component/form", "variation": "with-validation", "job": "Native form consolidating field validation and server errors"}
+{"id": "seamui:form-demo", "node": "component/form", "variation": "with-validation", "job": "Sign-in form validating email and password on submit"}
+{"id": "seamui:form-errors", "node": "component/form", "variation": "with-validation", "job": "Form rendering server-side errors keyed by field name"}
+{"id": "seamui:haptics", "node": null, "variation": null, "job": "Haptic and click-audio feedback provider and hook"}
+{"id": "seamui:inline-citation-demo", "node": "component/agent-parts", "variation": "citations", "job": "Numbered citation in prose with a hover source preview"}
+{"id": "seamui:input", "node": "atom/text-input", "variation": "text-input", "job": "Single-line text input that knows its field"}
+{"id": "seamui:input-demo", "node": "atom/text-input", "variation": "text-input", "job": "Default email text input"}
+{"id": "seamui:input-disabled", "node": "atom/text-input", "variation": null, "job": "Text input shown in the disabled state", "edge": "input-disabled"}
+{"id": "seamui:input-file", "node": "component/upload", "variation": null, "job": "Native file picker input for choosing a file", "edge": "native-file-input"}
+{"id": "seamui:input-ghost", "node": "atom/text-input", "variation": null, "job": "Borderless input for editing in place until focus", "edge": "ghost-input"}
+{"id": "seamui:input-invalid", "node": "atom/text-input", "variation": "with-error", "job": "Text input showing a validation error message"}
+{"id": "seamui:kbd", "node": "atom/text", "variation": "keyboard", "job": "Shortcut keys rendered as small embossed keycaps"}
+{"id": "seamui:kbd-demo", "node": "atom/text", "variation": "keyboard", "job": "Keycap row showing a keyboard shortcut"}
+{"id": "seamui:label", "node": "atom/text", "variation": null, "job": "Accessible label naming a form control", "edge": "form-label"}
+{"id": "seamui:label-checkbox", "node": "atom/choice", "variation": "checkbox", "job": "Checkbox with its text as the clickable label"}
+{"id": "seamui:label-demo", "node": "component/field", "variation": "text-input", "job": "Labelled name field with an input beside it"}
+{"id": "seamui:media-toggle", "node": "atom/switch", "variation": "toggle-button", "job": "Round mic, camera or screen-share toggle key"}
+{"id": "seamui:media-toggle-custom-icons", "node": "atom/switch", "variation": "toggle-button", "job": "Media toggle given custom on and off icons"}
+{"id": "seamui:media-toggle-demo", "node": "atom/switch", "variation": "toggle-button", "job": "Mic, camera and screen-share toggles in a row"}
+{"id": "seamui:message", "node": "component/message", "variation": "message-bubble", "job": "Chat row: user as an embossed key, assistant as prose"}
+{"id": "seamui:message-actions", "node": "component/message", "variation": "actions-feedback", "job": "Hover actions on a message: copy, retry, like"}
+{"id": "seamui:message-avatar-fallback", "node": "component/message", "variation": "message-bubble", "job": "Message rows falling back to an initials avatar"}
+{"id": "seamui:message-demo", "node": "component/message", "variation": "message-bubble", "job": "User question and assistant answer rows"}
+{"id": "seamui:meter", "node": "atom/progress", "variation": "meter-gauge", "job": "Static measurement bar with label and value"}
+{"id": "seamui:meter-demo", "node": "atom/progress", "variation": "meter-gauge", "job": "Meter showing a labelled value within a range"}
+{"id": "seamui:meter-levels", "node": "atom/progress", "variation": "meter-gauge", "job": "CPU, memory and disk usage meters stacked"}
+{"id": "seamui:mode-selector", "node": "component/composer", "variation": null, "job": "Agent, plan and ask segmented control for composer footers", "edge": "mode-selector"}
+{"id": "seamui:mode-selector-demo", "node": "component/composer", "variation": null, "job": "Agent, plan and ask mode chips with icons", "edge": "mode-selector"}
+{"id": "seamui:mode-selector-permission", "node": "component/composer", "variation": null, "job": "Ask, auto-edit and full-auto permission mode chips", "edge": "mode-selector"}
+{"id": "seamui:model-picker", "node": "component/composer", "variation": "with-model-picker", "job": "Provider-grouped model dropdown for the composer footer"}
+{"id": "seamui:model-picker-connection", "node": "component/composer", "variation": "with-model-picker", "job": "Model picker listing each provider's connection state"}
+{"id": "seamui:model-picker-demo", "node": "component/composer", "variation": "with-model-picker", "job": "Choose a model from grouped providers"}
+{"id": "seamui:model-picker-footer", "node": "component/composer", "variation": null, "job": "Composer footer row: mode, model and context", "edge": "composer-footer"}
+{"id": "seamui:motion", "node": null, "variation": null, "job": "Spring presets and depth scale behind every animation"}
+{"id": "seamui:notifications-block", "node": "component/inbox", "variation": "notification-center", "job": "Bell with count opening a day-grouped notification feed"}
+{"id": "seamui:number-field", "node": "atom/text-input", "variation": "stepper", "job": "Number input with press-depth increment and decrement steppers"}
+{"id": "seamui:number-field-demo", "node": "atom/text-input", "variation": "stepper", "job": "Number field with stepper buttons"}
+{"id": "seamui:number-field-disabled", "node": "atom/text-input", "variation": null, "job": "Number field shown in the disabled state", "edge": "number-field-disabled"}
+{"id": "seamui:number-field-format", "node": "atom/text-input", "variation": "stepper", "job": "Number field formatting its value as currency"}
+{"id": "seamui:otp-field", "node": "atom/text-input", "variation": "otp", "job": "One-time code input split into digit slots"}
+{"id": "seamui:otp-field-demo", "node": "atom/text-input", "variation": "otp", "job": "Six-slot one-time code entry"}
+{"id": "seamui:otp-field-disabled", "node": "atom/text-input", "variation": null, "job": "One-time code slots shown in the disabled state", "edge": "otp-field-disabled"}
+{"id": "seamui:otp-field-four", "node": "atom/text-input", "variation": "otp", "job": "Four-slot one-time code entry"}
+{"id": "seamui:otp-field-invalid", "node": "atom/text-input", "variation": "otp", "job": "One-time code slots shaking over a wrong code"}
+{"id": "seamui:pagination", "node": "component/pagination", "variation": "numbered-pages", "job": "Page links with the active page raised as a key"}
+{"id": "seamui:pagination-demo", "node": "component/pagination", "variation": "numbered-pages", "job": "Controlled page links with a springing active key"}
+{"id": "seamui:pagination-links", "node": "component/pagination", "variation": "numbered-pages", "job": "Href page links for a server-rendered list page"}
+{"id": "seamui:pagination-simple", "node": "component/pagination", "variation": "page-counter", "job": "Prev and next paging with a page counter"}
+{"id": "seamui:permission-card", "node": "component/agent-parts", "variation": "approval", "job": "Inline allow, allow-session or deny approval prompt"}
+{"id": "seamui:permission-card-demo", "node": "component/agent-parts", "variation": "approval", "job": "Permission prompt that settles into a receipt"}
+{"id": "seamui:permission-card-receipts", "node": "component/agent-parts", "variation": "approval", "job": "Settled allow, deny and auto permission receipts"}
+{"id": "seamui:permission-card-stepper", "node": "component/agent-parts", "variation": "ask-user", "job": "Multi-question approval run answered one at a time"}
+{"id": "seamui:plan-card", "node": "component/agent-parts", "variation": "plan-tasks", "job": "Proposed plan with steps to approve or reject"}
+{"id": "seamui:plan-card-demo", "node": "component/agent-parts", "variation": "plan-tasks", "job": "Agent plan approval card with a step checklist"}
+{"id": "seamui:plan-card-progress", "node": "component/agent-parts", "variation": "plan-tasks", "job": "Executing plan with done steps and a checkpoint strip"}
+{"id": "seamui:popover", "node": "component/popover", "variation": "standard-popover", "job": "Floating panel anchored to a trigger"}
+{"id": "seamui:popover-align", "node": "component/popover", "variation": "standard-popover", "job": "Popover aligned to the start or end edge"}
+{"id": "seamui:popover-demo", "node": "component/popover", "variation": "standard-popover", "job": "Popover opening from a button"}
+{"id": "seamui:popover-form", "node": "component/popover", "variation": "standard-popover", "job": "Small settings form held inside a popover"}
+{"id": "seamui:preview-card", "node": "component/popover", "variation": "hover-card", "job": "Card previewing content on hover or focus"}
+{"id": "seamui:preview-card-demo", "node": "component/popover", "variation": "hover-card", "job": "Hover card revealing a preview of its trigger"}
+{"id": "seamui:preview-card-image", "node": "component/popover", "variation": "link-preview", "job": "Link hover card with an image and summary"}
+{"id": "seamui:preview-card-user", "node": "component/popover", "variation": "hover-card", "job": "Hover card showing a user's profile details"}
+{"id": "seamui:progress", "node": "atom/progress", "variation": "linear", "job": "Bar showing how far a task has got"}
+{"id": "seamui:progress-demo", "node": "atom/progress", "variation": "linear", "job": "Progress bar filling towards its value"}
+{"id": "seamui:progress-labeled", "node": "atom/progress", "variation": "linear", "job": "Upload progress bar with a percentage label"}
+{"id": "seamui:radio-group", "node": "atom/choice", "variation": "radio", "job": "Pick one option from a radio group"}
+{"id": "seamui:radio-group-demo", "node": "atom/choice", "variation": "radio", "job": "Radio group with a springing checked dot"}
+{"id": "seamui:radio-group-descriptions", "node": "atom/choice", "variation": "with-description", "job": "Radio options each carrying a description line"}
+{"id": "seamui:radio-group-disabled", "node": "atom/choice", "variation": null, "job": "Radio group shown in the disabled state", "edge": "radio-group-disabled"}
+{"id": "seamui:reasoning-demo", "node": "component/agent-parts", "variation": "reasoning-display", "job": "Collapsible reasoning block above the answer"}
+{"id": "seamui:response", "node": "component/message", "variation": "markdown", "job": "Markdown answer renderer hardened for half-arrived streams"}
+{"id": "seamui:response-code", "node": "component/message", "variation": "markdown", "job": "Markdown answer rendering fenced code and a table"}
+{"id": "seamui:response-demo", "node": "component/message", "variation": "markdown", "job": "Markdown answer with lists, code and a quote"}
+{"id": "seamui:response-streaming", "node": "component/message", "variation": "streaming-text", "job": "Answer rendered token by token while it streams"}
+{"id": "seamui:scroll-area", "node": "atom/layout", "variation": "scroll-area", "job": "Scroll container with a custom scrollbar"}
+{"id": "seamui:scroll-area-demo", "node": "atom/layout", "variation": "scroll-area", "job": "Long list scrolling inside a bordered box"}
+{"id": "seamui:select", "node": "component/select", "variation": "standard-select", "job": "Pick one value from a dropdown list"}
+{"id": "seamui:select-demo", "node": "component/select", "variation": "standard-select", "job": "Dropdown select of transition options"}
+{"id": "seamui:select-disabled", "node": "component/select", "variation": null, "job": "Select shown in the disabled state", "edge": "select-disabled"}
+{"id": "seamui:select-groups", "node": "component/select", "variation": "grouped", "job": "Select options grouped under section labels"}
+{"id": "seamui:separator", "node": "atom/layout", "variation": null, "job": "Rule dividing content into sections", "edge": "divider"}
+{"id": "seamui:separator-demo", "node": "atom/layout", "variation": null, "job": "Horizontal and vertical rules between blocks", "edge": "divider"}
+{"id": "seamui:separator-label", "node": "atom/layout", "variation": null, "job": "Rules with a centred label between them", "edge": "divider"}
+{"id": "seamui:session-item", "node": "section/chat", "variation": "history-list", "job": "Sidebar row for one chat session"}
+{"id": "seamui:session-item-demo", "node": "section/chat", "variation": "history-list", "job": "List of session rows with status and time"}
+{"id": "seamui:session-item-hover-card", "node": "component/popover", "variation": "hover-card", "job": "Hover card showing a session's status and next actions"}
+{"id": "seamui:session-item-unread", "node": "section/chat", "variation": "history-list", "job": "Session rows with unread counts on bold titles"}
+{"id": "seamui:settings-block", "node": "section/settings-panel", "variation": "sections", "job": "Tabbed settings page with forms and a danger zone"}
+{"id": "seamui:sidebar", "node": "section/sidebar", "variation": "collapsible", "job": "Collapsible app sidebar with a shortcut rail collapse"}
+{"id": "seamui:sidebar-collapse", "node": "section/sidebar", "variation": "icon-rail", "job": "Sidebar easing down to a slim icon rail"}
+{"id": "seamui:sidebar-demo", "node": "section/sidebar", "variation": "grouped", "job": "Sidebar with a grouped workspace navigation list"}
+{"id": "seamui:sidebar-sessions", "node": "section/sidebar", "variation": "grouped", "job": "Sidebar grouping session rows by agent status"}
+{"id": "seamui:skeleton", "node": "atom/loader", "variation": "skeleton", "job": "Loading placeholder blocks with an opacity-only pulse"}
+{"id": "seamui:skeleton-demo", "node": "atom/loader", "variation": "skeleton", "job": "Skeleton placeholders standing in for content"}
+{"id": "seamui:slider", "node": "atom/slider", "variation": "slider", "job": "Drag a thumb along a range to pick a value"}
+{"id": "seamui:slider-demo", "node": "atom/slider", "variation": "slider", "job": "Slider whose thumb swells while grabbed"}
+{"id": "seamui:slider-disabled", "node": "atom/slider", "variation": null, "job": "Slider shown in the disabled state", "edge": "slider-disabled"}
+{"id": "seamui:slider-steps", "node": "atom/slider", "variation": "with-ticks", "job": "Stepped slider with tick values printed beneath"}
+{"id": "seamui:sources", "node": "component/agent-parts", "variation": "sources-display", "job": "Used-N-sources disclosure with hoverable inline citations"}
+{"id": "seamui:sources-demo", "node": "component/agent-parts", "variation": "sources-display", "job": "List of the sources behind an answer"}
+{"id": "seamui:spinner", "node": "atom/loader", "variation": "spinner", "job": "Spinning indicator while work is in progress"}
+{"id": "seamui:spinner-demo", "node": "atom/loader", "variation": "spinner", "job": "Spinner falling back to an opacity pulse"}
+{"id": "seamui:suggestions", "node": "component/message", "variation": "suggestions", "job": "Scrollable row of prompt chips"}
+{"id": "seamui:suggestions-demo", "node": "component/message", "variation": "suggestions", "job": "Prompt chips that fill in the next question"}
+{"id": "seamui:suggestions-with-composer", "node": "component/message", "variation": "suggestions", "job": "Prompt chips that fill the composer when clicked"}
+{"id": "seamui:switch", "node": "atom/switch", "variation": "standard", "job": "Switch that springs between on and off"}
+{"id": "seamui:switch-demo", "node": "atom/switch", "variation": "standard", "job": "Switch example"}
+{"id": "seamui:switch-disabled", "node": "atom/switch", "variation": "standard", "job": "Switch shown in the disabled state"}
+{"id": "seamui:switch-settings", "node": "atom/switch", "variation": "standard", "job": "Switch rows for device settings"}
+{"id": "seamui:table", "node": "component/table", "variation": "standard-table", "job": "Semantic table primitives on a raised surface"}
+{"id": "seamui:table-demo", "node": "component/table", "variation": "standard-table", "job": "Table example"}
+{"id": "seamui:tabs", "node": "component/tabs", "variation": "indicator", "job": "Tabs whose indicator springs to the active tab"}
+{"id": "seamui:tabs-demo", "node": "component/tabs", "variation": "indicator", "job": "Tabs example"}
+{"id": "seamui:tabs-icons", "node": "component/tabs", "variation": "with-icons", "job": "Tabs with an icon in each trigger"}
+{"id": "seamui:tabs-small", "node": "component/tabs", "variation": "indicator", "job": "Compact tabs with the same spring indicator"}
+{"id": "seamui:team-block", "node": "section/team", "variation": "directory", "job": "Team member table with roles, invite and row actions"}
+{"id": "seamui:terminal-block", "node": "component/code", "variation": "terminal", "job": "Command output well with status chip and copy key"}
+{"id": "seamui:terminal-block-demo", "node": "component/code", "variation": "terminal", "job": "Terminal block example"}
+{"id": "seamui:terminal-block-states", "node": "component/code", "variation": "terminal", "job": "Terminal block in working, waiting and error states"}
+{"id": "seamui:textarea", "node": "atom/text-input", "variation": "textarea", "job": "Auto-growing multiline text field"}
+{"id": "seamui:textarea-demo", "node": "atom/text-input", "variation": "textarea", "job": "Textarea example"}
+{"id": "seamui:textarea-disabled", "node": "atom/text-input", "variation": "textarea", "job": "Textarea shown in the disabled state"}
+{"id": "seamui:textarea-ghost", "node": "atom/text-input", "variation": "textarea", "job": "Borderless textarea composing in place until focus"}
+{"id": "seamui:textarea-with-button", "node": "atom/text-input", "variation": "textarea", "job": "Textarea with a send button beneath it"}
+{"id": "seamui:theme", "node": null, "variation": null, "job": "Tailwind v4 tokens and the depth shadow scale"}
+{"id": "seamui:toast", "node": "component/toast", "variation": "basic-toast", "job": "Transient notification with a bouncy entrance"}
+{"id": "seamui:toast-demo", "node": "component/toast", "variation": "basic-toast", "job": "Button firing a saved toast"}
+{"id": "seamui:toggle", "node": "atom/switch", "variation": "toggle-button", "job": "Two-state button with press-depth motion"}
+{"id": "seamui:toggle-demo", "node": "atom/switch", "variation": "toggle-button", "job": "Toggle example"}
+{"id": "seamui:toggle-disabled", "node": "atom/switch", "variation": "toggle-button", "job": "Toggle shown in the disabled state"}
+{"id": "seamui:toggle-group", "node": "atom/switch", "variation": "toggle-group", "job": "Well of toggles, the pressed one raised"}
+{"id": "seamui:toggle-group-demo", "node": "atom/switch", "variation": "toggle-group", "job": "Toggle group example"}
+{"id": "seamui:toggle-group-disabled", "node": "atom/switch", "variation": "toggle-group", "job": "Toggle group shown in the disabled state"}
+{"id": "seamui:toggle-group-text", "node": "atom/switch", "variation": "toggle-group", "job": "Toggle group with icon and label items"}
+{"id": "seamui:toggle-outline", "node": "atom/switch", "variation": "toggle-button", "job": "Toggle in the outline variant"}
+{"id": "seamui:toggle-sizes", "node": "atom/switch", "variation": "toggle-button", "job": "Toggle across the size scale"}
+{"id": "seamui:toggle-with-text", "node": "atom/switch", "variation": "toggle-button", "job": "Toggle with an icon and label"}
+{"id": "seamui:tool", "node": "component/agent-parts", "variation": "tool-calls", "job": "Agent step row with status chip and collapsible result"}
+{"id": "seamui:tool-demo", "node": "component/agent-parts", "variation": "tool-calls", "job": "Tool steps in done, running and pending states"}
+{"id": "seamui:tool-error", "node": "component/agent-parts", "variation": "tool-calls", "job": "Failed tool call carrying its error message"}
+{"id": "seamui:toolbar", "node": "component/dock", "variation": "action-toolbar", "job": "Strip of controls with roving arrow-key focus"}
+{"id": "seamui:toolbar-demo", "node": "component/dock", "variation": "action-toolbar", "job": "Formatting toolbar with toggles and icon buttons"}
+{"id": "seamui:toolbar-input", "node": "component/dock", "variation": "action-toolbar", "job": "Toolbar holding a filter input and action keys"}
+{"id": "seamui:toolbar-vertical", "node": "component/dock", "variation": "action-toolbar", "job": "Vertical toolbar of canvas tool keys"}
+{"id": "seamui:tooltip", "node": "atom/tooltip", "variation": "standard", "job": "Label rising on hover over a trigger"}
+{"id": "seamui:tooltip-demo", "node": "atom/tooltip", "variation": "standard", "job": "Tooltip example"}
+{"id": "seamui:tooltip-icon", "node": "atom/tooltip", "variation": "standard", "job": "Tooltip labelling an icon button"}
+{"id": "seamui:tooltip-shortcut", "node": "atom/tooltip", "variation": "rich", "job": "Tooltip showing a button's keyboard shortcut"}
+{"id": "seamui:typing-indicator", "node": "component/agent-parts", "variation": "working-status", "job": "Bouncing dots before the assistant's first token"}
+{"id": "seamui:typing-indicator-demo", "node": "component/agent-parts", "variation": "working-status", "job": "Typing indicator example"}
+{"id": "seamui:typing-indicator-in-message", "node": "component/agent-parts", "variation": "working-status", "job": "Typing dots sitting where the reply will land"}
+{"id": "seamui:use-copy", "node": null, "variation": null, "job": "Copy-to-clipboard hook with a copied flag"}
+{"id": "seamui:utils", "node": null, "variation": null, "job": "Class-merge helper shared by component styles"}
+{"id": "seamui:voice-avatar", "node": "atom/avatar", "variation": "with-status", "job": "Avatar with a halo breathing with speech level"}
+{"id": "seamui:voice-avatar-demo", "node": "atom/avatar", "variation": "with-status", "job": "Voice avatar example"}
+{"id": "seamui:voice-avatar-fallback", "node": "atom/avatar", "variation": "fallback", "job": "Speaking avatar falling back to initials"}
+{"id": "seamui:voice-avatar-group", "node": "atom/avatar", "variation": "avatar-group", "job": "Call roster of avatars, active speaker lit"}
+{"id": "seamui:voice-control-bar", "node": "component/dock", "variation": "floating-nav-pill", "job": "Floating call pill that morphs into a chat panel"}
+{"id": "seamui:voice-control-bar-demo", "node": "component/dock", "variation": "floating-nav-pill", "job": "Resting call pill with mic, camera and hang-up keys"}
+{"id": "seamui:voice-control-bar-expand", "node": "component/dock", "variation": "floating-nav-pill", "job": "Call pill expanded into a message composer"}
+{"id": "seamui:voice-visualizer", "node": "component/agent-parts", "variation": "voice-orb", "job": "Agent-state dots breathing with the audio level"}
+{"id": "seamui:voice-visualizer-bars", "node": "component/player", "variation": "waveform-visualizer", "job": "Audio level drawn as a row of bars"}
+{"id": "seamui:voice-visualizer-caption", "node": "component/agent-parts", "variation": "voice-orb", "job": "Visualizer with a caption naming the agent state"}
+{"id": "seamui:voice-visualizer-demo", "node": "component/agent-parts", "variation": "voice-orb", "job": "Visualizer cycling through the agent voice states"}
+{"id": "seamui:voice-visualizer-mic", "node": "component/agent-parts", "variation": "voice-orb", "job": "Visualizer fed by a live microphone track"}
+{"id": "seamui:voice-widget-demo", "node": "section/chat", "variation": "widget", "job": "Voice agent widget with visualizer and expanding composer"}
+{"id": "seamui:workbench-header", "node": "section/page-header", "variation": "title-only", "job": "Bar over the thread: session title, telemetry, actions"}
+{"id": "seamui:workbench-header-demo", "node": "section/page-header", "variation": "title-only", "job": "Workbench header sitting above a thread"}
+{"id": "seamui:workbench-shell", "node": "section/shell", "variation": "sidebar-top", "job": "Sidebar and workbench header shell around a thread"}

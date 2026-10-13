@@ -1,0 +1,53 @@
+{"id": "pastaui:agent-activity", "node": "component/agent-parts", "variation": "tool-calls", "job": "The whole agent run as a live feed: reasoning, searches, terminal, tools."}
+{"id": "pastaui:agent-status", "node": "component/agent-parts", "variation": "working-status", "job": "A task summary chip: what it is doing now, and the tray."}
+{"id": "pastaui:approval-card", "node": "component/agent-parts", "variation": "approval", "job": "A human-in-the-loop decision: approve, revise or deny before the agent acts."}
+{"id": "pastaui:attachments", "node": "component/composer", "variation": "with-attachments", "job": "Files and images attached to a prompt or a reply."}
+{"id": "pastaui:audio-player", "node": "component/player", "variation": "audio-player", "job": "Plays audio the agent returned: speech, generated clips, tool output."}
+{"id": "pastaui:background-inbox", "node": "component/inbox", "variation": "notification-center", "job": "Work still running elsewhere, and finished results waiting to be collected."}
+{"id": "pastaui:background-runs", "node": "component/inbox", "variation": "notification-inbox", "job": "Ongoing and finished agent jobs in one panel, each cancellable."}
+{"id": "pastaui:citations", "node": "component/agent-parts", "variation": "sources-display", "job": "A compact source summary that opens into grounded references."}
+{"id": "pastaui:code-block", "node": "component/code", "variation": "highlighted-code", "job": "Code with line numbers, a filename, focused rows and copy."}
+{"id": "pastaui:color-picker", "node": "component/picker", "variation": "color-picker", "job": "Pick a colour from a palette, hex, opacity or gradient stops."}
+{"id": "pastaui:commit", "node": "component/code", "variation": "diff-view", "job": "A commit's changed files grouped by folder, with line counts."}
+{"id": "pastaui:connection-state", "node": "component/agent-parts", "variation": "notices", "job": "Connected, reconnecting, resumed or offline states of a resumable stream."}
+{"id": "pastaui:context-breakdown", "node": "component/agent-parts", "variation": "usage-cost", "job": "Where the context window went: prompt, tools, files, what is left."}
+{"id": "pastaui:cost-meter", "node": "component/agent-parts", "variation": "usage-cost", "job": "What the run cost, split by model, against a session budget."}
+{"id": "pastaui:data-table", "node": "component/table", "variation": "data-table", "job": "A virtualized table with sorting, resizable and pinned columns."}
+{"id": "pastaui:document-reference", "node": "component/agent-parts", "variation": "sources-display", "job": "A document the answer cites: title, location, excerpt, metadata."}
+{"id": "pastaui:edit-message", "node": "component/message", "variation": "branches-edit", "job": "Rewrite a message in place, with cancel and save."}
+{"id": "pastaui:email-composer", "node": "component/composer", "variation": "standard-composer", "job": "An email draft: recipients, subject, body, copy, expand, send."}
+{"id": "pastaui:environment-variables", "node": "component/agent-parts", "variation": "settings", "job": "Masked secrets with reveal and copy, for the agent's config."}
+{"id": "pastaui:feedback-dialog", "node": "component/message", "variation": "actions-feedback", "job": "Why the answer was wrong: a reason and a short note."}
+{"id": "pastaui:file-diff", "node": "component/code", "variation": "diff-view", "job": "A code change with old and new line numbers and counts."}
+{"id": "pastaui:file-tree", "node": "component/tree", "variation": "file-tree", "job": "A repository tree the agent touched, with per-file change status."}
+{"id": "pastaui:follow-up", "node": "component/message", "variation": "suggestions", "job": "Compact follow-up prompts that continue the conversation in one click."}
+{"id": "pastaui:follow-up-suggestions", "node": "component/message", "variation": "suggestions", "job": "Contextual next-step prompts offered after an answer."}
+{"id": "pastaui:image-generation-loader", "node": "component/agent-parts", "variation": "generated-image", "job": "An image resolving from a stream, with a playable wait."}
+{"id": "pastaui:inline-citation", "node": "component/agent-parts", "variation": "citations", "job": "A numbered reference in prose with a hover preview of its source."}
+{"id": "pastaui:job-progress", "node": "component/agent-parts", "variation": "plan-tasks", "job": "Weighted multi-stage progress for work that takes minutes."}
+{"id": "pastaui:link-preview", "node": "component/popover", "variation": "link-preview", "job": "A rich preview of a link: image, title, price, rating."}
+{"id": "pastaui:memory", "node": "component/agent-parts", "variation": "memory", "job": "Facts the agent remembers about you, shown and removable."}
+{"id": "pastaui:message-bubble", "node": "component/message", "variation": "message-bubble", "job": "One turn in the conversation, told apart by sender."}
+{"id": "pastaui:message-queue", "node": "component/composer", "variation": "queue", "job": "Turns typed while the agent is busy, kept and cancelable."}
+{"id": "pastaui:message-scroller", "node": "section/chat", "variation": "thread-nav", "job": "A conversation minimap that jumps between user turns."}
+{"id": "pastaui:model-picker", "node": "component/composer", "variation": "with-model-picker", "job": "Pick the model: descriptions, plan badges, effort levels."}
+{"id": "pastaui:permission-grant", "node": "component/agent-parts", "variation": "approval", "job": "Grant a capability, its reach and duration explained first."}
+{"id": "pastaui:plan-approval-card", "node": "component/agent-parts", "variation": "plan-tasks", "job": "A proposed plan with steps, Edit, Cancel and Start."}
+{"id": "pastaui:prompt-input", "node": "component/composer", "variation": "chat-composer", "job": "The agent composer: attachment, model, submit and stop controls."}
+{"id": "pastaui:quota-banner", "node": "component/agent-parts", "variation": "notices", "job": "How much is left, when it resets, and how to get more."}
+{"id": "pastaui:reasoning-effort", "node": "component/composer", "variation": null, "job": "Choose how much thinking effort the next answer gets.", "edge": "reasoning-effort-control"}
+{"id": "pastaui:reasoning-text", "node": "component/agent-parts", "variation": "reasoning-display", "job": "Reasoning that streams while it thinks, then folds into a duration."}
+{"id": "pastaui:research-report", "node": "component/agent-parts", "variation": "artifact-display", "job": "A structured research report, sections carrying their sources."}
+{"id": "pastaui:retrieval-chunks", "node": "component/agent-parts", "variation": "sources-display", "job": "Ranked passages a retrieval answer was built from."}
+{"id": "pastaui:schedule-card", "node": "component/agent-parts", "variation": "plan-tasks", "job": "A recurring agent job: cadence, next run, pause control."}
+{"id": "pastaui:search-results-tabs", "node": "component/search", "variation": "results-display", "job": "Ranked web, image and news results with category tabs."}
+{"id": "pastaui:task-card", "node": "component/agent-parts", "variation": "plan-tasks", "job": "One delegated task: state, timing, agent, and its result."}
+{"id": "pastaui:thinking-shimmer", "node": "component/agent-parts", "variation": "working-status", "job": "A quiet live status naming what the agent is doing now."}
+{"id": "pastaui:todo-list", "node": "component/agent-parts", "variation": "plan-tasks", "job": "The agent's working plan with states and completion counts."}
+{"id": "pastaui:tool-approval", "node": "component/agent-parts", "variation": "approval", "job": "Asks permission for one tool call, showing its command."}
+{"id": "pastaui:tool-error", "node": "component/agent-parts", "variation": "notices", "job": "A failed tool call, explained, with compact ways to recover."}
+{"id": "pastaui:tool-group", "node": "component/agent-parts", "variation": "tool-calls", "job": "Consecutive tool calls collapsed into one readable group."}
+{"id": "pastaui:tool-result", "node": "component/agent-parts", "variation": "tool-calls", "job": "One tool call opened: running, done or failed, with output."}
+{"id": "pastaui:tool-timeline", "node": "component/agent-parts", "variation": "tool-calls", "job": "A run summarized as verbs, targets, state and timing."}
+{"id": "pastaui:video-player", "node": "component/player", "variation": "video-player", "job": "Playback of a video the agent returned, with metadata."}
+{"id": "pastaui:voice-input", "node": "component/composer", "variation": "voice-input", "job": "Record a spoken prompt: mic, moving waveform, red playhead."}

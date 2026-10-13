@@ -1,0 +1,308 @@
+{"id": "dashboardblocks:activity-feed", "node": "component/list", "variation": "activity-feed", "job": "Activity feed primitives: connected items, toned icons and day grouping"}
+{"id": "dashboardblocks:activity-feed-01", "node": "component/list", "variation": "activity-feed", "job": "Day-grouped team activity list with avatars and times"}
+{"id": "dashboardblocks:activity-feed-02", "node": "component/list", "variation": "activity-feed", "job": "History feed with toned icons, connectors and status badge"}
+{"id": "dashboardblocks:activity-feed-03", "node": "component/inbox", "variation": "notification-center", "job": "Notification panel with all, mentions and unread tabs"}
+{"id": "dashboardblocks:activity-feed-04", "node": "component/stat", "variation": "stats-row", "job": "Weekly activity stats with change and most active people"}
+{"id": "dashboardblocks:activity-feed-05", "node": "component/list", "variation": "activity-feed", "job": "Combined Slack and GitHub social activity feed"}
+{"id": "dashboardblocks:ai-assistant", "node": "section/chat", "variation": "thread", "job": "AI chat primitives: messages, composer, prompts and streaming"}
+{"id": "dashboardblocks:ai-assistant-01", "node": "section/chat", "variation": "side-panel", "job": "Assistant side panel opening over a metrics dashboard"}
+{"id": "dashboardblocks:ai-assistant-02", "node": "section/chat", "variation": "thread", "job": "Analytics assistant chat card with follow-up questions"}
+{"id": "dashboardblocks:ai-assistant-03", "node": "section/chat", "variation": "suggestions", "job": "Token usage card with assistant and suggested questions"}
+{"id": "dashboardblocks:ai-assistant-04", "node": "section/chat", "variation": "thread", "job": "Ops assistant chat card answering about incidents and deploys"}
+{"id": "dashboardblocks:ai-usage", "node": "component/agent-parts", "variation": "usage-cost", "job": "LLM token cost, cache savings and model colour primitives"}
+{"id": "dashboardblocks:ai-usage-01", "node": "component/chart", "variation": "bar-chart", "job": "Tokens per day stacked by model"}
+{"id": "dashboardblocks:ai-usage-02", "node": "component/agent-parts", "variation": "usage-cost", "job": "Model spend by product feature with token split bars"}
+{"id": "dashboardblocks:ai-usage-03", "node": "component/table", "variation": "standard-table", "job": "Model performance table of latency, throughput and errors"}
+{"id": "dashboardblocks:ai-usage-04", "node": "component/agent-parts", "variation": "usage-cost", "job": "Prompt cache hit rate ring with savings and spend"}
+{"id": "dashboardblocks:alerts", "node": "atom/badge", "variation": "icon-badge", "job": "Alert severity icons, labels and relative time formatting"}
+{"id": "dashboardblocks:alerts-01", "node": "component/alert", "variation": "inline-alert", "job": "Alert rows with severity, source, time and acknowledge"}
+{"id": "dashboardblocks:alerts-02", "node": "component/alert", "variation": null, "job": "Alert detail with metric stats, threshold chart and acknowledge", "edge": "alert-detail"}
+{"id": "dashboardblocks:alerts-03", "node": "component/table", "variation": "data-table", "job": "Alert rules table with severity, channels and enable switches"}
+{"id": "dashboardblocks:alerts-04", "node": "component/alert", "variation": "inline-alert", "job": "Compact alert summary with severity counts and latest"}
+{"id": "dashboardblocks:animated-number", "node": "component/stat", "variation": "counter", "job": "Number counts up to a target with easing"}
+{"id": "dashboardblocks:animated-wave", "node": "asset/shape", "variation": "organic", "job": "Animated wave fill showing a percentage level"}
+{"id": "dashboardblocks:app-shell", "node": "section/shell", "variation": "sidebar-top", "job": "App shell primitives: sidebar nav, top bar and menus"}
+{"id": "dashboardblocks:app-shell-01", "node": "section/shell", "variation": "sidebar-top", "job": "Sidebar shell with header, breadcrumbs and nav sections"}
+{"id": "dashboardblocks:app-shell-02", "node": "section/shell", "variation": "shell-rail", "job": "Collapsible rail shell with nested project links"}
+{"id": "dashboardblocks:app-shell-03", "node": "section/shell", "variation": "sidebar-top", "job": "Sidebar shell with workspace switcher and plan usage"}
+{"id": "dashboardblocks:app-shell-04", "node": "section/shell", "variation": "top-only", "job": "Top navigation shell with search, notifications and user menu"}
+{"id": "dashboardblocks:area-chart-kpi-01", "node": "component/stat", "variation": "kpi-sparkline", "job": "KPI cards for revenue and profit with tiny area charts"}
+{"id": "dashboardblocks:area-chart-kpi-02", "node": "component/stat", "variation": "kpi-sparkline", "job": "Transaction volume KPI with tiny area trend"}
+{"id": "dashboardblocks:auth", "node": "section/auth", "variation": "fullpage", "job": "Auth page frame, one-time code input and workspace avatar"}
+{"id": "dashboardblocks:auth-01", "node": "section/auth", "variation": "sign-up", "job": "Accept workspace invite with role and members"}
+{"id": "dashboardblocks:auth-02", "node": "section/auth", "variation": null, "job": "Choose or find a workspace to join", "edge": "workspace-picker"}
+{"id": "dashboardblocks:auth-03", "node": "section/auth", "variation": "2fa", "job": "Two-factor code entry with recovery code fallback"}
+{"id": "dashboardblocks:auth-04", "node": "section/auth", "variation": "magic-link", "job": "Email verification code entry with resend and errors"}
+{"id": "dashboardblocks:bar-chart-kpi-01", "node": "component/stat", "variation": "kpi-sparkline", "job": "Revenue this week KPI with tiny bar chart"}
+{"id": "dashboardblocks:bar-chart-kpi-02", "node": "component/stat", "variation": "with-chart", "job": "Revenue against goal KPI with two-series bar chart"}
+{"id": "dashboardblocks:billing", "node": "component/chart", "variation": "bar-chart", "job": "MRR movement waterfall and billing metric primitives"}
+{"id": "dashboardblocks:billing-01", "node": "component/chart", "variation": "bar-chart", "job": "MRR movement waterfall with retention and step table"}
+{"id": "dashboardblocks:billing-02", "node": "section/pricing", "variation": "single-plan", "job": "Current plan card with payment method and next invoice"}
+{"id": "dashboardblocks:billing-03", "node": "component/table", "variation": "data-table", "job": "Invoice history table with status badges and downloads"}
+{"id": "dashboardblocks:billing-04", "node": "component/stat", "variation": "stats-row", "job": "MRR, ARPU and retention stats against last month"}
+{"id": "dashboardblocks:billing-05", "node": "section/pricing", "variation": "tier-cards", "job": "Plan picker with seats, billing period and change plan"}
+{"id": "dashboardblocks:block-state", "node": "atom/loader", "variation": "skeleton", "job": "Skeleton, busy frame and empty or error message primitives"}
+{"id": "dashboardblocks:breakdown", "node": "component/chart", "variation": "bar-chart", "job": "Part-to-whole share bar primitives with legend and shares"}
+{"id": "dashboardblocks:breakdown-01", "node": "component/chart", "variation": "bar-chart", "job": "MRR by plan share bar with key and value table"}
+{"id": "dashboardblocks:breakdown-02", "node": "component/chart", "variation": "bar-chart", "job": "Device mix share bars per region with legend"}
+{"id": "dashboardblocks:breakdown-03", "node": "component/chart", "variation": "bar-chart", "job": "Workspaces by plan as a segmented share bar"}
+{"id": "dashboardblocks:breakdown-04", "node": "component/chart", "variation": null, "job": "Channel share shift bars comparing two quarters", "edge": "share-change-bars"}
+{"id": "dashboardblocks:calendar", "node": "component/calendar", "variation": "event-calendar", "job": "Calendar primitives: toolbar, month, week and resource views"}
+{"id": "dashboardblocks:calendar-01", "node": "component/calendar", "variation": "month-calendar", "job": "Month calendar with legend and agenda rows below"}
+{"id": "dashboardblocks:calendar-02", "node": "component/calendar", "variation": "week-schedule", "job": "Week time grid with overlapping events and details"}
+{"id": "dashboardblocks:calendar-03", "node": "component/calendar", "variation": "event-calendar", "job": "Month and week calendar toggle with event list"}
+{"id": "dashboardblocks:calendar-04", "node": "component/calendar", "variation": null, "job": "Resource schedule placing events in columns per person", "edge": "resource-schedule"}
+{"id": "dashboardblocks:chart", "node": "component/chart", "variation": "sparkline", "job": "Tiny bar, line and area chart primitives"}
+{"id": "dashboardblocks:chart-panel", "node": "component/chart", "variation": null, "job": "Chart panel primitives: figure, legend, tooltip and table", "edge": "chart-panel"}
+{"id": "dashboardblocks:chart-panel-01", "node": "component/chart", "variation": "line-chart", "job": "Revenue line chart comparing two periods"}
+{"id": "dashboardblocks:chart-panel-02", "node": "component/chart", "variation": "area-chart", "job": "Area chart with traffic metric tabs"}
+{"id": "dashboardblocks:chart-panel-03", "node": "component/chart", "variation": "bar-chart", "job": "Signups per month stacked by plan"}
+{"id": "dashboardblocks:chart-panel-04", "node": "component/chart", "variation": "bar-chart", "job": "Monthly recurring revenue bars with value labels"}
+{"id": "dashboardblocks:chart-panel-05", "node": "component/chart", "variation": "pie-donut", "job": "Traffic sources donut with legend and share table"}
+{"id": "dashboardblocks:chart-panel-06", "node": "component/chart", "variation": "line-chart", "job": "Response time percentile lines over 24 hours"}
+{"id": "dashboardblocks:checklist", "node": "component/steps", "variation": "progress-steps", "job": "Checklist and stepper state primitives with progress maths"}
+{"id": "dashboardblocks:checklist-01", "node": "section/onboarding", "variation": "checklist", "job": "Getting-started steps with optional items and expandable detail"}
+{"id": "dashboardblocks:checklist-02", "node": "component/steps", "variation": "horizontal-stepper", "job": "Setup stages from choosing a source to review"}
+{"id": "dashboardblocks:checklist-03", "node": "section/onboarding", "variation": "checklist", "job": "Account setup checklist with progress and next task"}
+{"id": "dashboardblocks:checklist-04", "node": "component/list", "variation": "standard-list", "job": "Task checklist by team with owners, due dates and progress"}
+{"id": "dashboardblocks:command-menu", "node": "component/command", "variation": "command-palette", "job": "Command menu primitives: search dialog, trigger and shortcut"}
+{"id": "dashboardblocks:command-menu-01", "node": "component/command", "variation": "grouped-commands", "job": "Command palette grouping pages, actions and commands"}
+{"id": "dashboardblocks:command-menu-02", "node": "component/command", "variation": "command-palette", "job": "Palette searching customers and orders asynchronously"}
+{"id": "dashboardblocks:comments", "node": "component/message", "variation": "chat-thread", "job": "Comment thread primitives with mentions, reactions and menu"}
+{"id": "dashboardblocks:comments-01", "node": "component/message", "variation": "chat-thread", "job": "Discussion card with reply threads and composer"}
+{"id": "dashboardblocks:comments-02", "node": "component/composer", "variation": "mentions-commands", "job": "Update composer with write and preview tabs and mentions"}
+{"id": "dashboardblocks:comments-03", "node": "component/message", "variation": "chat-thread", "job": "Comments panel with open and resolved tabs"}
+{"id": "dashboardblocks:comments-04", "node": "component/message", "variation": "chat-thread", "job": "Support conversation with reply and internal note tabs"}
+{"id": "dashboardblocks:comparison", "node": "section/comparison", "variation": null, "job": "Delta, proportion test, diverging bar and dumbbell primitives", "edge": "comparison-metrics"}
+{"id": "dashboardblocks:comparison-01", "node": "section/comparison", "variation": "metric-table", "job": "Month-over-month metric table with differences and change"}
+{"id": "dashboardblocks:comparison-02", "node": "section/comparison", "variation": null, "job": "A/B test result with lift, interval and significance", "edge": "ab-test-result"}
+{"id": "dashboardblocks:comparison-03", "node": "component/chart", "variation": "bar-chart", "job": "Diverging bars of revenue change by channel"}
+{"id": "dashboardblocks:comparison-04", "node": "section/comparison", "variation": "before-after", "job": "Before and after page speed comparison with dumbbells"}
+{"id": "dashboardblocks:dashboard-01", "node": "page/dashboard", "variation": "dashboard-analytics", "job": "Store dashboard of revenue, channels, products and checkout funnel"}
+{"id": "dashboardblocks:dashboard-02", "node": "page/dashboard", "variation": "dashboard-overview", "job": "SaaS dashboard of metrics, heatmap, MRR and retention"}
+{"id": "dashboardblocks:dashboard-03", "node": "page/dashboard", "variation": "dashboard-analytics", "job": "Web analytics dashboard of traffic, pages and countries"}
+{"id": "dashboardblocks:dashboard-04", "node": "page/dashboard", "variation": "dashboard-operations", "job": "CRM dashboard of pipeline, bookings and forecast by rep"}
+{"id": "dashboardblocks:dashboard-05", "node": "page/dashboard", "variation": "dashboard-operations", "job": "DevOps dashboard of throughput, alerts, uptime and deployments"}
+{"id": "dashboardblocks:dashboard-header", "node": "section/filters", "variation": "filters", "job": "Dashboard header primitives: date range, filters and export"}
+{"id": "dashboardblocks:dashboard-header-01", "node": "section/filters", "variation": "filters", "job": "Dashboard header with date range, filters, chips and export"}
+{"id": "dashboardblocks:dashboard-header-02", "node": "section/filters", "variation": "filters", "job": "Minimal dashboard header with date range and export"}
+{"id": "dashboardblocks:dashboard-header-03", "node": "section/filters", "variation": "filters", "job": "Dashboard header with compare toggle and filter chips"}
+{"id": "dashboardblocks:dashboard-header-04", "node": "section/filters", "variation": "filters", "job": "Dashboard header with refresh, compare and plan toggle"}
+{"id": "dashboardblocks:data-table", "node": "component/table", "variation": "data-table", "job": "Dashboard table primitives: sorting, filters and pagination"}
+{"id": "dashboardblocks:data-table-01", "node": "component/table", "variation": "data-table", "job": "Top pages table with sort menu and stacked rows"}
+{"id": "dashboardblocks:data-table-02", "node": "component/table", "variation": "data-table", "job": "Revenue by product table with inline share bars"}
+{"id": "dashboardblocks:data-table-03", "node": "component/table", "variation": "data-table", "job": "Campaign table with spend, conversions and sparkline"}
+{"id": "dashboardblocks:data-table-04", "node": "component/table", "variation": "data-table", "job": "Service status table with inline error rate bars"}
+{"id": "dashboardblocks:data-table-05", "node": "component/table", "variation": "data-table", "job": "Recent orders table with status badges and pagination"}
+{"id": "dashboardblocks:data-table-06", "node": "component/table", "variation": "data-table", "job": "Customer table with search, facets, selection and view options"}
+{"id": "dashboardblocks:deployments", "node": "atom/status-dot", "variation": "standard", "job": "Deployment status labels, DORA bands and run history"}
+{"id": "dashboardblocks:deployments-01", "node": "component/list", "variation": "standard-list", "job": "Latest deployments with status, commit and duration"}
+{"id": "dashboardblocks:deployments-02", "node": "component/steps", "variation": "progress-steps", "job": "Environment promotion pipeline with commits ahead"}
+{"id": "dashboardblocks:deployments-03", "node": "component/stat", "variation": "stats-row", "job": "DORA delivery metrics with bands and change"}
+{"id": "dashboardblocks:deployments-04", "node": "component/chart", "variation": "bar-chart", "job": "Build health run strips per pipeline with pass rates"}
+{"id": "dashboardblocks:distribution", "node": "component/chart", "variation": null, "job": "Quantile, binning, histogram and box plot primitives", "edge": "distribution-plot"}
+{"id": "dashboardblocks:distribution-01", "node": "component/chart", "variation": "bar-chart", "job": "Response time histogram with percentile and threshold lines"}
+{"id": "dashboardblocks:distribution-02", "node": "component/chart", "variation": null, "job": "Resolution time box plots by team with legend", "edge": "box-plot"}
+{"id": "dashboardblocks:distribution-03", "node": "component/chart", "variation": null, "job": "Order value box plot with median, mean and axis", "edge": "box-plot"}
+{"id": "dashboardblocks:distribution-04", "node": "component/chart", "variation": "bar-chart", "job": "Page load time histograms for this week and last"}
+{"id": "dashboardblocks:error-pages", "node": "page/not-found", "variation": null, "job": "Error page frame primitives: brand, message and actions", "edge": "error-page-layout"}
+{"id": "dashboardblocks:error-pages-01", "node": "page/not-found", "variation": "notfound-404", "job": "Not found page with search and help links"}
+{"id": "dashboardblocks:error-pages-02", "node": "page/not-found", "variation": "notfound-no-permission", "job": "No access page requesting permission with a reason"}
+{"id": "dashboardblocks:error-pages-03", "node": "page/not-found", "variation": "notfound-500", "job": "Error page with error ID, retry and support link"}
+{"id": "dashboardblocks:error-pages-04", "node": "page/not-found", "variation": "notfound-maintenance", "job": "Maintenance page with progress and email updates"}
+{"id": "dashboardblocks:error-pages-05", "node": "page/not-found", "variation": null, "job": "Session ended page explaining why and signing in again", "edge": "session-expired"}
+{"id": "dashboardblocks:feedback", "node": "section/testimonials", "variation": "ratings", "job": "Rating summary, star rating and sentiment bar primitives"}
+{"id": "dashboardblocks:feedback-01", "node": "section/testimonials", "variation": "ratings", "job": "Average rating with star distribution and change"}
+{"id": "dashboardblocks:feedback-02", "node": "component/chart", "variation": "bar-chart", "job": "Sentiment by topic diverging bars with net scores"}
+{"id": "dashboardblocks:feedback-03", "node": "component/list", "variation": "standard-list", "job": "Recent reviews list with star ratings and reply state"}
+{"id": "dashboardblocks:feedback-04", "node": "component/chart", "variation": "line-chart", "job": "Weekly CSAT line against a target"}
+{"id": "dashboardblocks:files", "node": "component/upload", "variation": "dropzone", "job": "Dropzone, upload rows, file kinds and actions primitives"}
+{"id": "dashboardblocks:files-01", "node": "component/upload", "variation": "dropzone", "job": "Upload dropzone with validation errors and upload list"}
+{"id": "dashboardblocks:files-02", "node": "component/upload", "variation": "with-previews", "job": "Upload block with file previews and remove"}
+{"id": "dashboardblocks:files-03", "node": "component/upload", "variation": "progress-tracking", "job": "Upload queue rows with per-file progress"}
+{"id": "dashboardblocks:files-04", "node": "component/upload", "variation": "attachment-list", "job": "Attached files list with size and actions"}
+{"id": "dashboardblocks:flow", "node": "component/chart", "variation": null, "job": "Sankey layout placing flow nodes and link bands", "edge": "sankey-flow"}
+{"id": "dashboardblocks:flow-01", "node": "component/chart", "variation": null, "job": "Sankey diagram keeping each flow colour downstream", "edge": "sankey-flow"}
+{"id": "dashboardblocks:flow-02", "node": "component/chart", "variation": null, "job": "Multi-column flow diagram with muted drop-offs", "edge": "sankey-flow"}
+{"id": "dashboardblocks:flow-03", "node": "component/chart", "variation": null, "job": "Stage-to-stage flow bands with labelled nodes", "edge": "sankey-flow"}
+{"id": "dashboardblocks:flow-04", "node": "component/chart", "variation": null, "job": "Flow breakdown showing drop-off amounts per stage", "edge": "sankey-flow"}
+{"id": "dashboardblocks:forecast", "node": "component/chart", "variation": "line-chart", "job": "Forecast primitives with fit line and projection interval"}
+{"id": "dashboardblocks:forecast-01", "node": "component/chart", "variation": "line-chart", "job": "Line fit with prediction interval widening by horizon"}
+{"id": "dashboardblocks:forecast-02", "node": "component/chart", "variation": "line-chart", "job": "Run-rate projection to the end of period"}
+{"id": "dashboardblocks:forecast-03", "node": "component/chart", "variation": "line-chart", "job": "Projection chart solving the date a target is hit"}
+{"id": "dashboardblocks:forecast-04", "node": "component/chart", "variation": "line-chart", "job": "Projection line with striped confidence band"}
+{"id": "dashboardblocks:forms", "node": "component/form", "variation": "with-validation", "job": "Form state primitives with validation and server errors"}
+{"id": "dashboardblocks:forms-01", "node": "component/form", "variation": "with-validation", "job": "Form validating fields on blur and submit"}
+{"id": "dashboardblocks:forms-02", "node": "component/form", "variation": "with-validation", "job": "Form sections showing server errors and submitting state"}
+{"id": "dashboardblocks:forms-03", "node": "component/form", "variation": "horizontal-layout", "job": "Horizontally labelled form layout with titled sections"}
+{"id": "dashboardblocks:forms-04", "node": "component/form", "variation": "with-validation", "job": "Form tracking dirty state and disabling submit"}
+{"id": "dashboardblocks:funnel", "node": "component/chart", "variation": null, "job": "Conversion funnel primitives with step maths and bars", "edge": "funnel-chart"}
+{"id": "dashboardblocks:funnel-01", "node": "component/chart", "variation": null, "job": "Horizontal funnel stage bars with conversion rates", "edge": "funnel-chart"}
+{"id": "dashboardblocks:funnel-02", "node": "component/chart", "variation": null, "job": "Vertical funnel showing drop-off between stages", "edge": "funnel-chart"}
+{"id": "dashboardblocks:funnel-03", "node": "component/chart", "variation": null, "job": "Funnel stages with counts and percentages", "edge": "funnel-chart"}
+{"id": "dashboardblocks:funnel-04", "node": "component/chart", "variation": null, "job": "Funnel breakdown with lost volume per stage", "edge": "funnel-chart"}
+{"id": "dashboardblocks:gauge", "node": "atom/progress", "variation": "meter-gauge", "job": "Arc gauge primitives with labelled bands and target tick"}
+{"id": "dashboardblocks:gauge-01", "node": "atom/progress", "variation": "meter-gauge", "job": "Semicircle gauge with labelled bands"}
+{"id": "dashboardblocks:gauge-02", "node": "atom/progress", "variation": "meter-gauge", "job": "Three-quarter gauge with animated fill"}
+{"id": "dashboardblocks:gauge-03", "node": "atom/progress", "variation": "meter-gauge", "job": "Gauge showing score against a target tick"}
+{"id": "dashboardblocks:gauge-04", "node": "atom/progress", "variation": "meter-gauge", "job": "Band gauge labelling score ranges"}
+{"id": "dashboardblocks:geo", "node": "component/map", "variation": "world-map", "job": "Location metric primitives: tile map, world map, flags"}
+{"id": "dashboardblocks:geo-01", "node": "component/map", "variation": "world-map", "job": "Dotted world map with markers sized by value"}
+{"id": "dashboardblocks:geo-02", "node": "component/map", "variation": "choropleth", "job": "US state tile map shaded by metric value"}
+{"id": "dashboardblocks:geo-03", "node": "component/map", "variation": "pin-map", "job": "Map pins locating top countries"}
+{"id": "dashboardblocks:geo-04", "node": "component/list", "variation": "with-avatars", "job": "Country rows with flags and share bars"}
+{"id": "dashboardblocks:goals", "node": "atom/progress", "variation": "linear", "job": "Goal pace primitives with expected-by-now marker"}
+{"id": "dashboardblocks:goals-01", "node": "atom/progress", "variation": "linear", "job": "Progress bar with expected-by-now marker"}
+{"id": "dashboardblocks:goals-02", "node": "atom/progress", "variation": "linear", "job": "Target progress with pace badge"}
+{"id": "dashboardblocks:goals-03", "node": "atom/progress", "variation": "linear", "job": "Goal card showing percent of target reached"}
+{"id": "dashboardblocks:goals-04", "node": "atom/progress", "variation": "linear", "job": "Goal rows with pace status against target"}
+{"id": "dashboardblocks:heatmap", "node": "component/chart", "variation": "heatmap", "job": "Heatmap primitives with scale, legend and data table"}
+{"id": "dashboardblocks:heatmap-01", "node": "component/chart", "variation": "heatmap", "job": "Heatmap grid with colour legend"}
+{"id": "dashboardblocks:heatmap-02", "node": "component/chart", "variation": "heatmap", "job": "Keyboard-readable heatmap with readout line"}
+{"id": "dashboardblocks:heatmap-03", "node": "component/chart", "variation": "heatmap", "job": "Heatmap paired with an accessible data table"}
+{"id": "dashboardblocks:heatmap-04", "node": "component/chart", "variation": "heatmap", "job": "Calendar heatmap with single-hue intensity scale"}
+{"id": "dashboardblocks:icon", "node": "atom/icon", "variation": "ui-icons", "job": "Icon component"}
+{"id": "dashboardblocks:insights", "node": "component/alert", "variation": "callout", "job": "Insight primitives with kinds, icons and metric sentences"}
+{"id": "dashboardblocks:insights-01", "node": "component/alert", "variation": "callout", "job": "Insight callouts listing positive and negative findings"}
+{"id": "dashboardblocks:insights-02", "node": "component/alert", "variation": "callout", "job": "Anomaly insights with highlighted metrics"}
+{"id": "dashboardblocks:insights-03", "node": "component/alert", "variation": "callout", "job": "Insight list with why lines and drivers"}
+{"id": "dashboardblocks:insights-04", "node": "component/alert", "variation": "callout", "job": "Neutral and anomaly insight summary"}
+{"id": "dashboardblocks:inventory", "node": "atom/badge", "variation": "icon-badge", "job": "Stock status primitives: out, low, in, overstock"}
+{"id": "dashboardblocks:inventory-01", "node": "component/table", "variation": "data-table", "job": "Stock table with status badges and days of cover"}
+{"id": "dashboardblocks:inventory-02", "node": "component/table", "variation": "data-table", "job": "Low-stock rows measured against reorder points"}
+{"id": "dashboardblocks:inventory-03", "node": "component/list", "variation": "standard-list", "job": "Inventory list with status labels and stock bars"}
+{"id": "dashboardblocks:inventory-04", "node": "component/stat", "variation": "kpi-card", "job": "Inventory coverage KPI with reorder status"}
+{"id": "dashboardblocks:invoice", "node": "component/table", "variation": "standard-table", "job": "Printable invoice primitives with line items and totals"}
+{"id": "dashboardblocks:invoice-01", "node": "component/table", "variation": "standard-table", "job": "Invoice with line items, discounts and totals"}
+{"id": "dashboardblocks:invoice-02", "node": "component/table", "variation": "standard-table", "job": "Receipt document with tax per rate"}
+{"id": "dashboardblocks:invoice-03", "node": "component/table", "variation": "standard-table", "job": "Quote document with shipping and totals"}
+{"id": "dashboardblocks:invoice-04", "node": "component/table", "variation": "standard-table", "job": "Packing slip listing items to ship"}
+{"id": "dashboardblocks:kanban", "node": "component/board", "variation": "kanban-drag-drop", "job": "Kanban board primitives with drag and drop"}
+{"id": "dashboardblocks:kanban-01", "node": "component/board", "variation": "kanban-drag-drop", "job": "Kanban board with column counts and drag and drop"}
+{"id": "dashboardblocks:kanban-02", "node": "component/board", "variation": "kanban-drag-drop", "job": "Kanban board with WIP limit warnings"}
+{"id": "dashboardblocks:kanban-03", "node": "component/board", "variation": "kanban-drag-drop", "job": "Kanban board with keyboard moves and announcements"}
+{"id": "dashboardblocks:kpi", "node": "component/stat", "variation": "kpi-card", "job": "KPI card primitives with counting value and change"}
+{"id": "dashboardblocks:kpi-01", "node": "component/stat", "variation": "kpi-card", "job": "KPI card with counting value and delta"}
+{"id": "dashboardblocks:kpi-02", "node": "component/stat", "variation": "kpi-card", "job": "KPI card with change in percentage points"}
+{"id": "dashboardblocks:kpi-03", "node": "component/stat", "variation": "stats-row", "job": "Row of related KPI cards with period change"}
+{"id": "dashboardblocks:leaderboard", "node": "component/widget", "variation": "leaderboard", "job": "Ranked list primitives for leaderboards"}
+{"id": "dashboardblocks:leaderboard-01", "node": "component/widget", "variation": "leaderboard", "job": "Ranked leaderboard of names and scores"}
+{"id": "dashboardblocks:leaderboard-02", "node": "component/widget", "variation": "leaderboard", "job": "Leaderboard showing rank movement up and down"}
+{"id": "dashboardblocks:leaderboard-03", "node": "component/widget", "variation": "leaderboard", "job": "Leaderboard with avatars and values"}
+{"id": "dashboardblocks:leaderboard-04", "node": "component/widget", "variation": "leaderboard", "job": "Leaderboard rows with progress bars"}
+{"id": "dashboardblocks:leaderboard-05", "node": "component/widget", "variation": "leaderboard", "job": "Compact leaderboard of the top entries"}
+{"id": "dashboardblocks:line-chart-kpi-01", "node": "component/stat", "variation": "with-chart", "job": "KPI card with line chart and change"}
+{"id": "dashboardblocks:link", "node": null, "variation": null, "job": "Provider making primitives render router links"}
+{"id": "dashboardblocks:metric-list", "node": "component/stat", "variation": "kpi-sparkline", "job": "Metric row primitives with change and sparkline"}
+{"id": "dashboardblocks:metric-list-01", "node": "component/stat", "variation": "kpi-sparkline", "job": "Metric rows with value and sparkline"}
+{"id": "dashboardblocks:metric-list-02", "node": "component/stat", "variation": "kpi-sparkline", "job": "Metrics with bars measured against a target"}
+{"id": "dashboardblocks:metric-list-03", "node": "component/stat", "variation": "kpi-sparkline", "job": "Compact metric rows with direction-aware change"}
+{"id": "dashboardblocks:metric-list-04", "node": "component/stat", "variation": "kpi-sparkline", "job": "Metric list showing status against target"}
+{"id": "dashboardblocks:notifications", "node": "component/inbox", "variation": "notification-center", "job": "Notification primitives: bell, panel and rows"}
+{"id": "dashboardblocks:notifications-01", "node": "component/inbox", "variation": "notification-center", "job": "Bell with unread count opening a panel"}
+{"id": "dashboardblocks:notifications-02", "node": "component/inbox", "variation": "notification-inbox", "job": "Notification list with header action"}
+{"id": "dashboardblocks:notifications-03", "node": "component/inbox", "variation": "notification-card", "job": "Notification row with its own action"}
+{"id": "dashboardblocks:onboarding", "node": "section/onboarding", "variation": "wizard", "job": "First-run setup primitives with step progress"}
+{"id": "dashboardblocks:onboarding-01", "node": "section/onboarding", "variation": "wizard", "job": "Full-page setup wizard with Back and Skip"}
+{"id": "dashboardblocks:onboarding-02", "node": "section/onboarding", "variation": "wizard", "job": "Setup step with radio and checkbox choices"}
+{"id": "dashboardblocks:onboarding-03", "node": "section/onboarding", "variation": "checklist", "job": "First-run setup checklist of tasks"}
+{"id": "dashboardblocks:onboarding-04", "node": "section/onboarding", "variation": "welcome-screen", "job": "Welcome screen introducing setup steps"}
+{"id": "dashboardblocks:page-header", "node": "section/page-header", "variation": "title-tabs", "job": "Page header primitives: title, actions and tabs"}
+{"id": "dashboardblocks:page-header-01", "node": "section/page-header", "variation": "title-tabs", "job": "Page header with badge, description and actions"}
+{"id": "dashboardblocks:page-header-02", "node": "section/page-header", "variation": "title-tabs", "job": "Page header with media and wrapping actions"}
+{"id": "dashboardblocks:page-header-03", "node": "section/page-header", "variation": "title-tabs", "job": "Page header with section tabs and more menu"}
+{"id": "dashboardblocks:page-header-04", "node": "section/page-header", "variation": "title-only", "job": "Page header with back link and fact icons"}
+{"id": "dashboardblocks:pipeline", "node": "component/board", "variation": "multi-column-board", "job": "Pipeline stage primitives with counts and values"}
+{"id": "dashboardblocks:pipeline-01", "node": "component/board", "variation": "multi-column-board", "job": "Deal pipeline board of stage columns"}
+{"id": "dashboardblocks:pipeline-02", "node": "component/board", "variation": "multi-column-board", "job": "Pipeline stages with weighted values"}
+{"id": "dashboardblocks:pipeline-03", "node": "component/board", "variation": "multi-column-board", "job": "Pipeline item cards with days in stage"}
+{"id": "dashboardblocks:pipeline-04", "node": "component/board", "variation": "multi-column-board", "job": "Pipeline stage headers summarising each stage"}
+{"id": "dashboardblocks:progress-bar", "node": "atom/progress", "variation": "linear", "job": "Progress bar component"}
+{"id": "dashboardblocks:progress-kpi-01", "node": "component/stat", "variation": "progress-stat", "job": "KPI with progress bar toward target"}
+{"id": "dashboardblocks:progress-kpi-02", "node": "component/stat", "variation": "progress-stat", "job": "KPI card with segmented progress bar"}
+{"id": "dashboardblocks:progress-kpi-03", "node": "component/stat", "variation": "progress-stat", "job": "Goal KPI showing percent progress"}
+{"id": "dashboardblocks:realtime", "node": "atom/status-dot", "variation": "ping", "job": "Live badge with interval hook and rolling window"}
+{"id": "dashboardblocks:realtime-01", "node": "component/stat", "variation": "kpi-card", "job": "KPI card that updates as live data arrives"}
+{"id": "dashboardblocks:realtime-02", "node": "component/chart", "variation": "line-chart", "job": "Chart streaming live data points"}
+{"id": "dashboardblocks:realtime-03", "node": "component/stat", "variation": "counter", "job": "Live counter ticking as values arrive"}
+{"id": "dashboardblocks:realtime-04", "node": "component/list", "variation": "activity-feed", "job": "Live activity feed of streaming events"}
+{"id": "dashboardblocks:record-detail", "node": "section/detail", "variation": "two-pane", "job": "Record page primitives with details column"}
+{"id": "dashboardblocks:record-detail-01", "node": "section/detail", "variation": "two-pane", "job": "Record page with details beside main content"}
+{"id": "dashboardblocks:record-detail-02", "node": "section/detail", "variation": "two-pane", "job": "Record properties list with headline numbers"}
+{"id": "dashboardblocks:record-detail-03", "node": "section/detail", "variation": "tab-layout", "job": "Record detail with tabbed sections"}
+{"id": "dashboardblocks:retention", "node": "component/table", "variation": "data-table", "job": "Retention primitives: cohort rates and average curve"}
+{"id": "dashboardblocks:retention-01", "node": "component/table", "variation": "data-table", "job": "Cohort retention table shaded by rate"}
+{"id": "dashboardblocks:retention-02", "node": "component/chart", "variation": "line-chart", "job": "Retention curve averaging cohorts by size"}
+{"id": "dashboardblocks:retention-03", "node": "component/stat", "variation": "kpi-card", "job": "Growth accounting quick ratio KPI"}
+{"id": "dashboardblocks:retention-04", "node": "component/table", "variation": "data-table", "job": "Cohort table marking where the curve levels off"}
+{"id": "dashboardblocks:ring", "node": "atom/progress", "variation": "circular", "job": "Ring progress component"}
+{"id": "dashboardblocks:scatter", "node": "component/chart", "variation": null, "job": "Scatter primitives with fit line and median", "edge": "scatter-plot"}
+{"id": "dashboardblocks:scatter-01", "node": "component/chart", "variation": null, "job": "Scatter plot with least-squares fit line", "edge": "scatter-plot"}
+{"id": "dashboardblocks:scatter-02", "node": "component/chart", "variation": null, "job": "Quadrant scatter splitting features by usage and satisfaction", "edge": "scatter-plot"}
+{"id": "dashboardblocks:scatter-03", "node": "component/chart", "variation": null, "job": "Bubble scatter sizing campaigns by spend and efficiency", "edge": "scatter-plot"}
+{"id": "dashboardblocks:scatter-04", "node": "component/chart", "variation": null, "job": "Risk matrix grid counting likelihood against impact", "edge": "risk-matrix"}
+{"id": "dashboardblocks:schedule", "node": "component/calendar", "variation": "event-calendar", "job": "Schedule primitives: event rows, urgency badges, month calendar"}
+{"id": "dashboardblocks:schedule-01", "node": "component/list", "variation": "standard-list", "job": "Upcoming events grouped by day with times"}
+{"id": "dashboardblocks:schedule-02", "node": "component/calendar", "variation": "event-calendar", "job": "Month calendar marking event days beside selected day"}
+{"id": "dashboardblocks:schedule-03", "node": "component/list", "variation": "standard-list", "job": "Deadline rows with urgency badges and countdowns"}
+{"id": "dashboardblocks:schedule-04", "node": "component/calendar", "variation": "week-schedule", "job": "Week time grid placing events by hour"}
+{"id": "dashboardblocks:security", "node": "atom/badge", "variation": "icon-badge", "job": "Security primitives: severity icons, check results, device icons"}
+{"id": "dashboardblocks:security-01", "node": "component/chart", "variation": "bar-chart", "job": "Sign-in attempts per day as bars"}
+{"id": "dashboardblocks:security-02", "node": "component/list", "variation": "activity-feed", "job": "Audit log of access and key changes"}
+{"id": "dashboardblocks:security-03", "node": "component/list", "variation": "activity-feed", "job": "Signed-in devices with sign out action"}
+{"id": "dashboardblocks:security-04", "node": "atom/progress", "variation": "circular", "job": "Security score ring with failing checks"}
+{"id": "dashboardblocks:security-05", "node": "section/settings-panel", "variation": "sections", "job": "Two-factor setup with QR, code check and recovery codes"}
+{"id": "dashboardblocks:security-06", "node": "section/settings-panel", "variation": "form-layout", "job": "SAML single sign-on connection settings form"}
+{"id": "dashboardblocks:settings", "node": "section/settings-panel", "variation": "sections", "job": "Settings primitives: role menu, rows and status"}
+{"id": "dashboardblocks:settings-01", "node": "section/team", "variation": "directory", "job": "Member list with invite form and role menus"}
+{"id": "dashboardblocks:settings-02", "node": "section/settings-panel", "variation": null, "job": "API key list with scopes, copy and revoke", "edge": "api-keys"}
+{"id": "dashboardblocks:settings-03", "node": "section/settings-panel", "variation": null, "job": "Notification preferences matrix of events and channels", "edge": "notification-matrix"}
+{"id": "dashboardblocks:settings-04", "node": "section/settings-panel", "variation": "card-blocks", "job": "Integration cards with connect switches in tabs"}
+{"id": "dashboardblocks:settings-05", "node": "section/settings-panel", "variation": null, "job": "Webhook endpoints with delivery health and add", "edge": "webhooks"}
+{"id": "dashboardblocks:settings-06", "node": "section/settings-panel", "variation": null, "job": "Destructive account actions with inline confirmation", "edge": "danger-zone"}
+{"id": "dashboardblocks:settings-07", "node": "section/settings-panel", "variation": "form-layout", "job": "Profile form for avatar, contact details and theme"}
+{"id": "dashboardblocks:spend", "node": "atom/progress", "variation": "linear", "job": "Budget bar primitives with pace and projection"}
+{"id": "dashboardblocks:spend-01", "node": "atom/progress", "variation": "linear", "job": "Monthly budget spend with pace status badge"}
+{"id": "dashboardblocks:spend-02", "node": "atom/progress", "variation": "linear", "job": "Per-service budget bars against monthly limits"}
+{"id": "dashboardblocks:spend-03", "node": "component/chart", "variation": "bar-chart", "job": "Monthly spend bars against the budget line"}
+{"id": "dashboardblocks:spend-04", "node": "component/chart", "variation": "area-chart", "job": "Cash balance and runway against average burn"}
+{"id": "dashboardblocks:stat-group", "node": "component/stat", "variation": "stats-row", "job": "Row of stats with change versus previous period"}
+{"id": "dashboardblocks:stat-group-01", "node": "component/stat", "variation": "stats-row", "job": "Divided grid of stats with period change"}
+{"id": "dashboardblocks:stat-group-02", "node": "component/stat", "variation": "kpi-sparkline", "job": "Stat row with a sparkline per metric"}
+{"id": "dashboardblocks:stat-group-03", "node": "component/stat", "variation": "with-chart", "job": "Stat changes above line chart with metric tabs"}
+{"id": "dashboardblocks:stat-group-04", "node": "component/stat", "variation": "stats-row", "job": "Compact stat row of labelled values"}
+{"id": "dashboardblocks:stat-group-05", "node": "component/stat", "variation": "stats-row", "job": "Overview stat row comparing last two periods"}
+{"id": "dashboardblocks:states-01", "node": "atom/loader", "variation": "skeleton", "job": "Stat block skeleton placeholders while loading"}
+{"id": "dashboardblocks:states-02", "node": "atom/loader", "variation": "skeleton", "job": "Chart block skeleton with refreshing indicator"}
+{"id": "dashboardblocks:states-03", "node": "component/empty", "variation": "search-no-results", "job": "No orders match filters, with clear action"}
+{"id": "dashboardblocks:states-04", "node": "component/empty", "variation": "error-state", "job": "Failed block load with retry action"}
+{"id": "dashboardblocks:status", "node": "atom/status-dot", "variation": "standard", "job": "Service status primitives: levels, badges and uptime bar"}
+{"id": "dashboardblocks:status-01", "node": "component/list", "variation": "standard-list", "job": "Service rows each with a status indicator"}
+{"id": "dashboardblocks:status-02", "node": "component/chart", "variation": "bar-chart", "job": "Ninety-day uptime bars per service with legend"}
+{"id": "dashboardblocks:status-03", "node": "component/timeline", "variation": "activity-timeline", "job": "Incident card with an update timeline"}
+{"id": "dashboardblocks:status-04", "node": "component/card", "variation": "stat-card", "job": "Region health cards with latency and errors"}
+{"id": "dashboardblocks:status-05", "node": "component/stat", "variation": "stats-row", "job": "Uptime, incidents and downtime with 90-day bar"}
+{"id": "dashboardblocks:team", "node": "atom/avatar", "variation": "avatar-group", "job": "Avatars with presence dots and stacked overflow"}
+{"id": "dashboardblocks:team-01", "node": "section/team", "variation": "directory", "job": "Member rows with presence, roles and invite"}
+{"id": "dashboardblocks:team-02", "node": "component/list", "variation": "with-avatars", "job": "Workload rows with capacity bars per person"}
+{"id": "dashboardblocks:team-03", "node": "atom/avatar", "variation": "avatar-group", "job": "Online count with avatar stack and presence counts"}
+{"id": "dashboardblocks:team-04", "node": "component/list", "variation": "with-avatars", "job": "On-call rotation rows with avatars and progress"}
+{"id": "dashboardblocks:team-05", "node": "atom/choice", "variation": "group", "job": "Roles and permissions matrix of checkboxes"}
+{"id": "dashboardblocks:team-06", "node": "section/settings-panel", "variation": "sections", "job": "Share access list with roles and link access"}
+{"id": "dashboardblocks:timeline", "node": "component/timeline", "variation": "gantt-chart", "job": "Timeline primitives: axis, today line, gantt rows"}
+{"id": "dashboardblocks:timeline-01", "node": "component/timeline", "variation": "gantt-chart", "job": "Roadmap bars by team with status counts"}
+{"id": "dashboardblocks:timeline-02", "node": "component/timeline", "variation": "vertical-timeline", "job": "Milestone rail with statuses and overdue marks"}
+{"id": "dashboardblocks:timeline-03", "node": "component/timeline", "variation": "horizontal-timeline", "job": "Release cadence along a dated axis"}
+{"id": "dashboardblocks:timeline-04", "node": "component/timeline", "variation": "gantt-chart", "job": "Planned versus actual phase bars"}
+{"id": "dashboardblocks:trend", "node": "atom/badge", "variation": "icon-badge", "job": "Up, down or flat change indicator with arrow"}
+{"id": "dashboardblocks:usage-meter", "node": "atom/progress", "variation": "meter-gauge", "job": "Usage against limit primitives with status labels"}
+{"id": "dashboardblocks:usage-meter-01", "node": "atom/progress", "variation": "meter-gauge", "job": "API request usage bar against plan limit"}
+{"id": "dashboardblocks:usage-meter-02", "node": "atom/progress", "variation": "circular", "job": "Storage usage ring with percentage"}
+{"id": "dashboardblocks:usage-meter-03", "node": "atom/progress", "variation": "meter-gauge", "job": "Metered usage rows with overage costs"}
+{"id": "dashboardblocks:usage-meter-04", "node": "atom/progress", "variation": "meter-gauge", "job": "Credits usage bar with days left"}
+{"id": "dashboardblocks:usage-meter-05", "node": "atom/progress", "variation": "segmented", "job": "Storage usage as segmented bar by category"}
+{"id": "dashboardblocks:usage-meter-06", "node": "atom/progress", "variation": "meter-gauge", "job": "Plan limits list with per-limit usage bars"}
+{"id": "dashboardblocks:usage-meter-07", "node": "atom/progress", "variation": "meter-gauge", "job": "Wave-filled usage meter with remaining amount"}
+{"id": "dashboardblocks:usage-meter-08", "node": "atom/progress", "variation": "circular", "job": "Circular wave usage meter with summary stats"}
+{"id": "dashboardblocks:use-animated-number", "node": null, "variation": null, "job": "Hook animating a number up to its value"}
+{"id": "dashboardblocks:use-in-view", "node": null, "variation": null, "job": "Hook tracking whether an element is in view"}

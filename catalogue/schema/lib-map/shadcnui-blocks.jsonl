@@ -1,0 +1,542 @@
+{"id": "shadcnui-blocks:accordion-01", "node": "component/accordion", "variation": "standard-accordion", "job": "Default expandable FAQ-style accordion sections"}
+{"id": "shadcnui-blocks:accordion-02", "node": "component/accordion", "variation": "card-style", "job": "Accordion items with outlined rounded borders"}
+{"id": "shadcnui-blocks:accordion-03", "node": "component/accordion", "variation": "card-style", "job": "Bordered accordion items joined into one box"}
+{"id": "shadcnui-blocks:accordion-04", "node": "component/accordion", "variation": "card-style", "job": "Accordion items filled with secondary background"}
+{"id": "shadcnui-blocks:accordion-05", "node": "component/accordion", "variation": "card-style", "job": "Joined accordion items filled with muted background"}
+{"id": "shadcnui-blocks:accordion-06", "node": "component/accordion", "variation": "standard-accordion", "job": "Accordion whose open item fills like a tab"}
+{"id": "shadcnui-blocks:accordion-07", "node": "component/accordion", "variation": "standard-accordion", "job": "Accordion colouring the active open item"}
+{"id": "shadcnui-blocks:accordion-08", "node": "component/accordion", "variation": "standard-accordion", "job": "Accordion with several panels open at once"}
+{"id": "shadcnui-blocks:accordion-09", "node": "component/accordion", "variation": "standard-accordion", "job": "Accordion with a custom plus expand icon"}
+{"id": "shadcnui-blocks:accordion-10", "node": "component/accordion", "variation": "standard-accordion", "job": "Accordion triggers showing leading icons"}
+{"id": "shadcnui-blocks:accordion-11", "node": "component/accordion", "variation": "standard-accordion", "job": "Accordion with icons and dashed media placeholder"}
+{"id": "shadcnui-blocks:accordion-12", "node": "component/accordion", "variation": "standard-accordion", "job": "Accordion with disabled items"}
+{"id": "shadcnui-blocks:alert-01", "node": "component/alert", "variation": "inline-alert", "job": "Primary inline alert message"}
+{"id": "shadcnui-blocks:alert-02", "node": "component/alert", "variation": "inline-alert", "job": "Destructive inline alert message"}
+{"id": "shadcnui-blocks:alert-03", "node": "component/alert", "variation": "inline-alert", "job": "Success inline alert message"}
+{"id": "shadcnui-blocks:alert-04", "node": "component/alert", "variation": "inline-alert", "job": "Warning inline alert message"}
+{"id": "shadcnui-blocks:alert-05", "node": "component/alert", "variation": "inline-alert", "job": "Informational inline alert message"}
+{"id": "shadcnui-blocks:alert-06", "node": "component/alert", "variation": "inline-alert", "job": "Alert with tinted filled background"}
+{"id": "shadcnui-blocks:alert-07", "node": "component/alert", "variation": "inline-alert", "job": "Soft muted inline alert message"}
+{"id": "shadcnui-blocks:alert-08", "node": "component/alert", "variation": "inline-alert", "job": "Bootstrap-styled inline alert message"}
+{"id": "shadcnui-blocks:alert-09", "node": "component/alert", "variation": "callout", "job": "Left-bar callout alert for updates"}
+{"id": "shadcnui-blocks:alert-10", "node": "component/alert", "variation": "inline-alert", "job": "Dismissible alert with action buttons"}
+{"id": "shadcnui-blocks:alert-dialog-01", "node": "component/dialog", "variation": "confirm-alert", "job": "Confirmation dialog requiring an explicit action"}
+{"id": "shadcnui-blocks:alert-dialog-02", "node": "component/dialog", "variation": "confirm-alert", "job": "Confirmation dialog with a leading icon"}
+{"id": "shadcnui-blocks:alert-dialog-03", "node": "component/dialog", "variation": "confirm-alert", "job": "Destructive confirmation dialog before deleting"}
+{"id": "shadcnui-blocks:alert-dialog-04", "node": "component/dialog", "variation": "confirm-alert", "job": "Informational alert dialog"}
+{"id": "shadcnui-blocks:alert-dialog-05", "node": "component/dialog", "variation": "confirm-alert", "job": "Alert dialog with a customized header"}
+{"id": "shadcnui-blocks:alert-dialog-06", "node": "component/dialog", "variation": "confirm-alert", "job": "Alert dialog with a customized footer"}
+{"id": "shadcnui-blocks:animated-grid-pattern", "node": "asset/shape", "variation": "pattern", "job": "Animated grid background pattern with drifting squares"}
+{"id": "shadcnui-blocks:avatar-01", "node": "atom/avatar", "variation": "standard", "job": "Default avatar showing a profile image"}
+{"id": "shadcnui-blocks:avatar-02", "node": "atom/avatar", "variation": "standard", "job": "Clickable avatar button"}
+{"id": "shadcnui-blocks:avatar-03", "node": "atom/avatar", "variation": "standard", "job": "Avatar revealing a tooltip on hover"}
+{"id": "shadcnui-blocks:avatar-04", "node": "atom/avatar", "variation": "standard", "job": "Avatar shown beside text"}
+{"id": "shadcnui-blocks:avatar-05", "node": "atom/avatar", "variation": "standard", "job": "Avatar opening a hover card"}
+{"id": "shadcnui-blocks:avatar-06", "node": "atom/avatar", "variation": "standard", "job": "Avatar across several sizes"}
+{"id": "shadcnui-blocks:avatar-07", "node": "atom/avatar", "variation": "standard", "job": "Avatar in several colours"}
+{"id": "shadcnui-blocks:avatar-08", "node": "atom/avatar", "variation": "standard", "job": "Avatar in several shapes"}
+{"id": "shadcnui-blocks:avatar-09", "node": "atom/avatar", "variation": "fallback", "job": "Avatar falling back to initials"}
+{"id": "shadcnui-blocks:avatar-10", "node": "atom/avatar", "variation": "standard", "job": "Avatar with a ring outline"}
+{"id": "shadcnui-blocks:avatar-11", "node": "atom/avatar", "variation": "with-status", "job": "Avatar with a status indicator"}
+{"id": "shadcnui-blocks:avatar-12", "node": "atom/avatar", "variation": "avatar-group", "job": "Overlapping group of avatars"}
+{"id": "shadcnui-blocks:avatar-13", "node": "atom/avatar", "variation": "avatar-group", "job": "Avatar group capped with an overflow count"}
+{"id": "shadcnui-blocks:avatar-14", "node": "atom/avatar", "variation": "avatar-group", "job": "Avatar group with maximum and overflow"}
+{"id": "shadcnui-blocks:avatar-15", "node": "atom/avatar", "variation": "avatar-group", "job": "Avatar group showing the overflow count"}
+{"id": "shadcnui-blocks:avatar-16", "node": "component/menu", "variation": "dropdown-menu", "job": "Avatar trigger opening an account dropdown"}
+{"id": "shadcnui-blocks:badge-01", "node": "atom/badge", "variation": "badge", "job": "Default small status badge"}
+{"id": "shadcnui-blocks:badge-02", "node": "atom/badge", "variation": "badge", "job": "Secondary styled status badge"}
+{"id": "shadcnui-blocks:badge-03", "node": "atom/badge", "variation": "badge", "job": "Outlined status badge"}
+{"id": "shadcnui-blocks:badge-04", "node": "atom/badge", "variation": "badge", "job": "Destructive styled status badge"}
+{"id": "shadcnui-blocks:badge-05", "node": "atom/badge", "variation": "badge", "job": "Rounded pill status badge"}
+{"id": "shadcnui-blocks:badge-06", "node": "atom/badge", "variation": "badge", "job": "Gradient filled status badge"}
+{"id": "shadcnui-blocks:badge-07", "node": "atom/badge", "variation": "badge", "job": "Gradient outlined status badge"}
+{"id": "shadcnui-blocks:badge-08", "node": "atom/badge", "variation": "badge", "job": "Soft tinted status badge"}
+{"id": "shadcnui-blocks:badge-09", "node": "atom/badge", "variation": "badge", "job": "Badge showing a live status label"}
+{"id": "shadcnui-blocks:badge-10", "node": "atom/badge", "variation": "badge", "job": "Badge carrying a small image"}
+{"id": "shadcnui-blocks:badge-11", "node": "atom/badge", "variation": "icon-badge", "job": "Badge with a leading icon"}
+{"id": "shadcnui-blocks:badge-12", "node": "atom/badge", "variation": "badge", "job": "Clickable button badge"}
+{"id": "shadcnui-blocks:badge-13", "node": "atom/badge", "variation": "badge", "job": "Badge rendered as a link"}
+{"id": "shadcnui-blocks:badge-14", "node": "atom/badge", "variation": "count", "job": "Badge showing a numeric count"}
+{"id": "shadcnui-blocks:badge-15", "node": "atom/badge", "variation": "badge", "job": "Plan feature list marking New and Experimental items"}
+{"id": "shadcnui-blocks:badge-16", "node": "component/tabs", "variation": "with-counts", "job": "Tabs showing a badge count each"}
+{"id": "shadcnui-blocks:badge-17", "node": "atom/badge", "variation": "positioned", "job": "Notification badge positioned on an icon button"}
+{"id": "shadcnui-blocks:banner-01", "node": "section/announcement", "variation": "text-link", "job": "Top bar announcing trial end with upgrade link"}
+{"id": "shadcnui-blocks:banner-02", "node": "section/announcement", "variation": "dismissible", "job": "Dismissible release banner with check-it-out button"}
+{"id": "shadcnui-blocks:banner-03", "node": "section/announcement", "variation": "badge-icon", "job": "Announcement bar with icon badge and action"}
+{"id": "shadcnui-blocks:banner-04", "node": "section/announcement", "variation": "dismissible", "job": "Dismissible sign-up prompt banner"}
+{"id": "shadcnui-blocks:blog-01", "node": "section/blog", "variation": "news-grid", "job": "Post card grid with sort dropdown"}
+{"id": "shadcnui-blocks:blog-02", "node": "section/blog", "variation": "news-grid", "job": "Recommended post card grid with sort dropdown"}
+{"id": "shadcnui-blocks:blog-03", "node": "section/blog", "variation": "list", "job": "Horizontal media card blog list"}
+{"id": "shadcnui-blocks:blog-04", "node": "section/blog", "variation": "news-grid", "job": "Blog card grid with tags and images"}
+{"id": "shadcnui-blocks:blog-05", "node": "section/blog", "variation": "news-grid", "job": "Two-column blog card grid with images"}
+{"id": "shadcnui-blocks:blog-06", "node": "section/blog", "variation": "news-grid", "job": "Three-column blog card grid with tags"}
+{"id": "shadcnui-blocks:breadcrumb-01", "node": "component/breadcrumb", "variation": "text-breadcrumb", "job": "Default page hierarchy trail"}
+{"id": "shadcnui-blocks:breadcrumb-02", "node": "component/breadcrumb", "variation": "text-breadcrumb", "job": "Breadcrumb with slash separators"}
+{"id": "shadcnui-blocks:breadcrumb-03", "node": "component/breadcrumb", "variation": "text-breadcrumb", "job": "Breadcrumb with chevron separators"}
+{"id": "shadcnui-blocks:breadcrumb-04", "node": "component/breadcrumb", "variation": "text-breadcrumb", "job": "Breadcrumb with dot separators"}
+{"id": "shadcnui-blocks:breadcrumb-05", "node": "component/breadcrumb", "variation": "with-icons", "job": "Breadcrumb items each carrying an icon"}
+{"id": "shadcnui-blocks:breadcrumb-06", "node": "component/breadcrumb", "variation": "with-icons", "job": "Alternate breadcrumb with item icons"}
+{"id": "shadcnui-blocks:breadcrumb-07", "node": "component/breadcrumb", "variation": "with-icons", "job": "Breadcrumb pairing icons with labels"}
+{"id": "shadcnui-blocks:breadcrumb-08", "node": "component/breadcrumb", "variation": "with-icons", "job": "Alternate breadcrumb with icons and labels"}
+{"id": "shadcnui-blocks:breadcrumb-09", "node": "component/breadcrumb", "variation": "text-breadcrumb", "job": "Breadcrumb trail on a tinted background"}
+{"id": "shadcnui-blocks:breadcrumb-10", "node": "component/breadcrumb", "variation": "text-breadcrumb", "job": "Breadcrumb with the active tab highlighted"}
+{"id": "shadcnui-blocks:breadcrumb-11", "node": "component/breadcrumb", "variation": "text-breadcrumb", "job": "Breadcrumb items styled as tabs"}
+{"id": "shadcnui-blocks:breadcrumb-12", "node": "component/breadcrumb", "variation": "text-breadcrumb", "job": "Outlined tab-styled breadcrumb trail"}
+{"id": "shadcnui-blocks:breadcrumb-13", "node": "component/breadcrumb", "variation": "with-dropdown", "job": "Breadcrumb item opening a dropdown menu"}
+{"id": "shadcnui-blocks:breadcrumb-14", "node": "component/breadcrumb", "variation": "overflow-menu", "job": "Collapsed breadcrumb hiding levels behind ellipsis"}
+{"id": "shadcnui-blocks:breadcrumb-15", "node": "component/breadcrumb", "variation": "with-icons", "job": "Breadcrumb showing order steps with icons"}
+{"id": "shadcnui-blocks:button-01", "node": "atom/button", "variation": "primary", "job": "Primary action button"}
+{"id": "shadcnui-blocks:button-02", "node": "atom/button", "variation": "primary", "job": "Secondary styled action button"}
+{"id": "shadcnui-blocks:button-03", "node": "atom/button", "variation": "primary", "job": "Destructive action button"}
+{"id": "shadcnui-blocks:button-04", "node": "atom/button", "variation": "primary", "job": "Outlined action button"}
+{"id": "shadcnui-blocks:button-05", "node": "atom/button", "variation": "icon-button", "job": "Icon-only action button"}
+{"id": "shadcnui-blocks:button-06", "node": "atom/button", "variation": "loading", "job": "Button showing a loading spinner"}
+{"id": "shadcnui-blocks:button-07", "node": "atom/button", "variation": "group", "job": "Split button with an attached dropdown segment"}
+{"id": "shadcnui-blocks:button-08", "node": "atom/button", "variation": "primary", "job": "Ghost styled action button"}
+{"id": "shadcnui-blocks:button-09", "node": "atom/button", "variation": "primary", "job": "Gradient filled action button"}
+{"id": "shadcnui-blocks:button-10", "node": "atom/button", "variation": "primary", "job": "Link-styled action button"}
+{"id": "shadcnui-blocks:button-11", "node": "atom/button", "variation": "social-brand", "job": "Button with a social brand icon"}
+{"id": "shadcnui-blocks:button-12", "node": "atom/button", "variation": "social-brand", "job": "Social sign-in buttons for providers"}
+{"id": "shadcnui-blocks:button-13", "node": "atom/button", "variation": "primary", "job": "Neon glowing action button"}
+{"id": "shadcnui-blocks:button-14", "node": "atom/button", "variation": "primary", "job": "Fully rounded pill action button"}
+{"id": "shadcnui-blocks:button-15", "node": "atom/button", "variation": "toggle", "job": "Icon button toggling a like on and off"}
+{"id": "shadcnui-blocks:button-16", "node": "atom/button", "variation": "toggle", "job": "Icon button switching light and dark theme"}
+{"id": "shadcnui-blocks:button-17", "node": "atom/button", "variation": "primary", "job": "Full width action button"}
+{"id": "shadcnui-blocks:button-18", "node": "atom/button", "variation": "group", "job": "Group of joined action buttons"}
+{"id": "shadcnui-blocks:button-19", "node": "atom/button", "variation": "group", "job": "Second group of joined action buttons"}
+{"id": "shadcnui-blocks:button-20", "node": "atom/button", "variation": "copy-share", "job": "Copy button confirming the copied link"}
+{"id": "shadcnui-blocks:button-21", "node": "atom/button", "variation": "primary", "job": "Button carrying an unread count badge"}
+{"id": "shadcnui-blocks:button-22", "node": "atom/button", "variation": "primary", "job": "Buttons each revealing a tooltip"}
+{"id": "shadcnui-blocks:button-23", "node": "atom/button", "variation": "primary", "job": "Button with a press tap animation"}
+{"id": "shadcnui-blocks:card-01", "node": "component/card", "variation": "standard-card", "job": "Card containing a create-task form"}
+{"id": "shadcnui-blocks:card-02", "node": "component/card", "variation": "standard-card", "job": "Card with tinted background holding a form"}
+{"id": "shadcnui-blocks:card-03", "node": "section/auth", "variation": "sign-up", "job": "Sign-up card with email and social providers"}
+{"id": "shadcnui-blocks:card-04", "node": "section/cta", "variation": "card", "job": "Card CTA promoting a free sign-up"}
+{"id": "shadcnui-blocks:card-05", "node": "section/pricing", "variation": "single-plan", "job": "Single pricing plan card with price and features"}
+{"id": "shadcnui-blocks:card-06", "node": "component/card", "variation": "article-card", "job": "Social post card with image and reaction actions"}
+{"id": "shadcnui-blocks:card-07", "node": "component/card", "variation": "product-card", "job": "Product card with icon, copy and action"}
+{"id": "shadcnui-blocks:card-08", "node": "section/testimonials", "variation": "card-grid", "job": "Customer quote card with avatar and role"}
+{"id": "shadcnui-blocks:carousel-01", "node": "component/carousel", "variation": "slider-carousel", "job": "Default sliding image carousel with controls"}
+{"id": "shadcnui-blocks:carousel-02", "node": "component/carousel", "variation": "slider-carousel", "job": "Carousel showing several image slides at once"}
+{"id": "shadcnui-blocks:carousel-03", "node": "component/carousel", "variation": null, "job": "Vertical carousel sliding image cards up and down", "edge": "vertical-carousel"}
+{"id": "shadcnui-blocks:carousel-04", "node": "component/carousel", "variation": "slider-carousel", "job": "Image carousel showing current slide number below"}
+{"id": "shadcnui-blocks:carousel-05", "node": "component/carousel", "variation": "slider-carousel", "job": "Wide image carousel with slide count indicator"}
+{"id": "shadcnui-blocks:carousel-06", "node": "component/carousel", "variation": "slider-carousel", "job": "Image carousel navigated by dot buttons"}
+{"id": "shadcnui-blocks:carousel-07", "node": "component/carousel", "variation": "slider-carousel", "job": "Image carousel with dot controls in a footer"}
+{"id": "shadcnui-blocks:carousel-08", "node": "component/carousel", "variation": "slider-carousel", "job": "Image carousel tracked by a progress bar"}
+{"id": "shadcnui-blocks:carousel-09", "node": "component/carousel", "variation": null, "job": "Image carousel navigated by a thumbnail strip", "edge": "thumbnail-carousel"}
+{"id": "shadcnui-blocks:carousel-10", "node": "component/carousel", "variation": null, "job": "Carousel dimming the slides either side of active", "edge": "fade-carousel"}
+{"id": "shadcnui-blocks:carousel-11", "node": "component/carousel", "variation": null, "job": "Carousel scaling the active slide up on change", "edge": "scale-carousel"}
+{"id": "shadcnui-blocks:carousel-block-01", "node": "section/showcase", "variation": "carousel", "job": "Showcase carousel of 3D shape images with view-all link"}
+{"id": "shadcnui-blocks:carousel-block-02", "node": "section/showcase", "variation": "carousel", "job": "Carded showcase carousel with heading and controls"}
+{"id": "shadcnui-blocks:changelog-01", "node": "section/blog", "variation": "changelog", "job": "Dated release notes with sticky date column"}
+{"id": "shadcnui-blocks:changelog-02", "node": "section/blog", "variation": "changelog", "job": "Release notes rail with version markers per entry"}
+{"id": "shadcnui-blocks:changelog-03", "node": "section/blog", "variation": "changelog", "job": "Release notes as cards grouped by change type"}
+{"id": "shadcnui-blocks:checkbox-01", "node": "atom/choice", "variation": "checkbox", "job": "Checkbox with a text label beside it"}
+{"id": "shadcnui-blocks:checkbox-02", "node": "atom/choice", "variation": "checkbox", "job": "Disabled checkbox with a muted label"}
+{"id": "shadcnui-blocks:checkbox-03", "node": "atom/choice", "variation": "indeterminate", "job": "Parent checkbox showing partly-selected state for children"}
+{"id": "shadcnui-blocks:checkbox-04", "node": "atom/choice", "variation": "group", "job": "Horizontal row of checkbox options"}
+{"id": "shadcnui-blocks:checkbox-05", "node": "atom/choice", "variation": "group", "job": "Vertical column of checkboxes with icons"}
+{"id": "shadcnui-blocks:checkbox-06", "node": "atom/choice", "variation": "checkbox", "job": "Checkbox whose checked state is controlled by code"}
+{"id": "shadcnui-blocks:checkbox-07", "node": "atom/choice", "variation": "checkbox", "job": "Checkboxes tinted different colours when checked"}
+{"id": "shadcnui-blocks:checkbox-08", "node": "atom/choice", "variation": "checkbox", "job": "Checkboxes rendered at four different sizes"}
+{"id": "shadcnui-blocks:checkbox-09", "node": "atom/choice", "variation": "checkbox", "job": "Checkbox swapping in a heart, bookmark or star"}
+{"id": "shadcnui-blocks:checkbox-10", "node": "component/picker", "variation": "color-picker", "job": "Pick one or more colours from round swatches"}
+{"id": "shadcnui-blocks:checkbox-11", "node": "atom/choice", "variation": "card", "job": "Selectable card tiles marked with a hidden checkbox"}
+{"id": "shadcnui-blocks:checkbox-12", "node": "component/form", "variation": "with-validation", "job": "Form submitting one validated checkbox field"}
+{"id": "shadcnui-blocks:checkbox-13", "node": "atom/choice", "variation": "with-description", "job": "Role options listing label, description and access level"}
+{"id": "shadcnui-blocks:checkbox-14", "node": "atom/choice", "variation": "group", "job": "Scrollable list of country checkboxes"}
+{"id": "shadcnui-blocks:checkbox-15", "node": "atom/choice", "variation": "group", "job": "Working days chosen from chip-shaped checkboxes"}
+{"id": "shadcnui-blocks:checkbox-16", "node": "atom/choice", "variation": "group", "job": "Notification preference table of in-app and email checkboxes"}
+{"id": "shadcnui-blocks:code-block-01", "node": "component/code", "variation": "highlighted-code", "job": "Syntax-highlighted snippet under a title and caption"}
+{"id": "shadcnui-blocks:code-block-02", "node": "component/code", "variation": "snippet-copy", "job": "Code block with filename header and copy button"}
+{"id": "shadcnui-blocks:code-block-03", "node": "component/code", "variation": null, "job": "Code block with tabs switching between files", "edge": "code-file-tabs"}
+{"id": "shadcnui-blocks:collapsible-01", "node": "component/accordion", "variation": "collapsible", "job": "Panel toggled open and closed by a button"}
+{"id": "shadcnui-blocks:collapsible-02", "node": "component/accordion", "variation": "collapsible", "job": "Show more button revealing hidden list rows"}
+{"id": "shadcnui-blocks:collapsible-03", "node": "component/tree", "variation": "file-tree", "job": "Collapsible folders and files in a project tree"}
+{"id": "shadcnui-blocks:collapsible-04", "node": "section/filters", "variation": "filters", "job": "Collapsible filters for price, category and rating"}
+{"id": "shadcnui-blocks:contact-01", "node": "section/contact", "variation": "centered", "job": "Contact details for email, office and phone"}
+{"id": "shadcnui-blocks:contact-02", "node": "section/contact", "variation": "form", "job": "Contact form beside email, chat, office and phone cards"}
+{"id": "shadcnui-blocks:contact-03", "node": "section/contact", "variation": null, "job": "Contact methods laid out as a grid of cards", "edge": "contact-method-cards"}
+{"id": "shadcnui-blocks:cta-01", "node": "section/cta", "variation": "centered-banner", "job": "Centered call to action with heading and button"}
+{"id": "shadcnui-blocks:cta-02", "node": "section/cta", "variation": "card", "job": "Contained banner over a background photo"}
+{"id": "shadcnui-blocks:cta-03", "node": "section/cta", "variation": "split-image", "job": "Gradient banner with copy left and image right"}
+{"id": "shadcnui-blocks:cta-04", "node": "section/cta", "variation": "split-image", "job": "Framed call to action with copy and image columns"}
+{"id": "shadcnui-blocks:cta-05", "node": "section/cta", "variation": "card", "job": "Dark card call to action with dashed-line artwork"}
+{"id": "shadcnui-blocks:cta-06", "node": "section/cta", "variation": "card", "job": "Carded call to action over an animated noise field"}
+{"id": "shadcnui-blocks:cta-07", "node": "section/cta", "variation": "card", "job": "Rounded dark card with logo, heading and button"}
+{"id": "shadcnui-blocks:dot-pattern", "node": "asset/shape", "variation": "pattern", "job": "Svg dot grid used as a page background"}
+{"id": "shadcnui-blocks:dropdown-menu-01", "node": "component/menu", "variation": "dropdown-menu", "job": "Account menu with profile, settings and logout"}
+{"id": "shadcnui-blocks:dropdown-menu-02", "node": "component/menu", "variation": "dropdown-menu", "job": "Avatar button opening an icon account menu"}
+{"id": "shadcnui-blocks:dropdown-menu-03", "node": "component/menu", "variation": "dropdown-menu", "job": "Menu of checkbox items selecting tags"}
+{"id": "shadcnui-blocks:dropdown-menu-04", "node": "component/menu", "variation": "dropdown-menu", "job": "Menu of radio items choosing a priority"}
+{"id": "shadcnui-blocks:dropdown-menu-05", "node": "component/menu", "variation": "dropdown-menu", "job": "Menu with a copy submenu and row actions"}
+{"id": "shadcnui-blocks:dropdown-menu-06", "node": "component/menu", "variation": "dropdown-menu", "job": "Menu items labelled with keyboard shortcuts"}
+{"id": "shadcnui-blocks:dropdown-menu-07", "node": "component/menu", "variation": "dropdown-menu", "job": "Workspace menu with nested filter and admin submenus"}
+{"id": "shadcnui-blocks:dropdown-menu-08", "node": "component/menu", "variation": "dropdown-menu", "job": "Switch the active workspace from a menu"}
+{"id": "shadcnui-blocks:empty-state-01", "node": "component/empty", "variation": "with-action", "job": "No projects yet card with create and import buttons"}
+{"id": "shadcnui-blocks:empty-state-02", "node": "component/empty", "variation": "with-action", "job": "Empty invoices table offering create or import"}
+{"id": "shadcnui-blocks:empty-state-03", "node": "component/empty", "variation": "with-action", "job": "Tabs of empty invoice, payment and subscription states"}
+{"id": "shadcnui-blocks:empty-state-04", "node": "component/empty", "variation": "with-action", "job": "Empty projects state with animated placeholder cards"}
+{"id": "shadcnui-blocks:faq-01", "node": "section/faq", "variation": "accordion", "job": "Single-column accordion of questions and answers"}
+{"id": "shadcnui-blocks:faq-02", "node": "section/faq", "variation": "two-column", "job": "Heading beside an accordion of common questions"}
+{"id": "shadcnui-blocks:faq-03", "node": "section/faq", "variation": "grid", "job": "Two accordion columns of questions side by side"}
+{"id": "shadcnui-blocks:faq-04", "node": "section/faq", "variation": "grid", "job": "Grid of question cards with icon and answer"}
+{"id": "shadcnui-blocks:faq-05", "node": "section/faq", "variation": "grid", "job": "Two-column grid of questions in a bordered panel"}
+{"id": "shadcnui-blocks:faq-06", "node": "section/faq", "variation": "accordion", "job": "Boxed accordion of help questions"}
+{"id": "shadcnui-blocks:faq-07", "node": "section/faq", "variation": "accordion", "job": "Accordion of questions in separate muted panels"}
+{"id": "shadcnui-blocks:faq-08", "node": "section/faq", "variation": "accordion", "job": "Centered heading above a narrow question accordion"}
+{"id": "shadcnui-blocks:faq-09", "node": "section/faq", "variation": "accordion", "job": "Accordion of muted question panels led by icons"}
+{"id": "shadcnui-blocks:faq-10", "node": "section/faq", "variation": "two-column", "job": "Questions split across two accordion columns"}
+{"id": "shadcnui-blocks:faq-11", "node": "section/faq", "variation": "tabs", "job": "Topic list switching which questions are shown"}
+{"id": "shadcnui-blocks:faq-12", "node": "section/faq", "variation": "grid", "job": "Two-column grid of questions revealing answers on hover"}
+{"id": "shadcnui-blocks:faq-13", "node": "section/faq", "variation": "grid", "job": "Two-column grid of answers in bordered panels"}
+{"id": "shadcnui-blocks:faq-14", "node": "section/faq", "variation": "accordion", "job": "Accordion of answers with icons and dashed dividers"}
+{"id": "shadcnui-blocks:features-01", "node": "section/features", "variation": "card-grid", "job": "Three-column grid of feature cards with round icons"}
+{"id": "shadcnui-blocks:features-02", "node": "section/features", "variation": "card-grid", "job": "Grid of image-topped feature cards"}
+{"id": "shadcnui-blocks:features-03", "node": "section/features", "variation": "bento", "job": "Bento of feature panels beside product screenshots"}
+{"id": "shadcnui-blocks:features-04", "node": "section/features", "variation": "expandable", "job": "Accordion of features beside a product screenshot"}
+{"id": "shadcnui-blocks:features-05", "node": "section/features", "variation": "card-grid", "job": "Feature cards with illustrations tucked into a corner"}
+{"id": "shadcnui-blocks:features-06", "node": "section/features", "variation": "card-grid", "job": "Two-column feature panels with bold illustrations"}
+{"id": "shadcnui-blocks:features-07", "node": "section/features", "variation": "card-grid", "job": "Grid of linked feature rows with square images"}
+{"id": "shadcnui-blocks:features-08", "node": "section/features", "variation": "card-grid", "job": "Six bordered feature cards with tinted icon tiles"}
+{"id": "shadcnui-blocks:features-09", "node": "section/features", "variation": "card-grid", "job": "Feature cards pairing an icon with the title"}
+{"id": "shadcnui-blocks:features-10", "node": "section/features", "variation": "card-grid", "job": "Feature cards, one holding a revenue area chart"}
+{"id": "shadcnui-blocks:features-11", "node": "section/features", "variation": "card-grid", "job": "Feature cards each ending with a learn-more button"}
+{"id": "shadcnui-blocks:features-12", "node": "section/features", "variation": "bento", "job": "Mosaic feature grid with a decorative tile"}
+{"id": "shadcnui-blocks:features-13", "node": "section/features", "variation": "card-grid", "job": "Feature cards revealing an image on hover"}
+{"id": "shadcnui-blocks:features-14", "node": "section/features", "variation": "card-grid", "job": "Wrapped row of gradient feature cards with buttons"}
+{"id": "shadcnui-blocks:features-15", "node": "section/features", "variation": "card-grid", "job": "Feature cards with square images above the text"}
+{"id": "shadcnui-blocks:features-16", "node": "section/features", "variation": "card-grid", "job": "Feature cards with captions laid over tall images"}
+{"id": "shadcnui-blocks:features-17", "node": "section/features", "variation": "card-grid", "job": "Feature grid cells tagged with corner badges"}
+{"id": "shadcnui-blocks:features-18", "node": "section/features", "variation": "icon-grid", "job": "Icon-and-copy feature grid divided by dashed lines"}
+{"id": "shadcnui-blocks:features-19", "node": "section/features", "variation": "card-grid", "job": "Contained feature grid with a header call to action"}
+{"id": "shadcnui-blocks:footer-01", "node": "section/footer", "variation": "columns", "job": "Footer of five link columns above a logo row"}
+{"id": "shadcnui-blocks:footer-02", "node": "section/footer", "variation": "columns", "job": "Footer link columns beside brand blurb and social icons"}
+{"id": "shadcnui-blocks:footer-03", "node": "section/footer", "variation": "newsletter", "job": "Footer link columns with an email subscribe form"}
+{"id": "shadcnui-blocks:footer-04", "node": "section/footer", "variation": "newsletter", "job": "Footer with inline links and an email signup"}
+{"id": "shadcnui-blocks:footer-05", "node": "section/footer", "variation": "minimal-row", "job": "Centered footer with logo, link row and social icons"}
+{"id": "shadcnui-blocks:footer-06", "node": "section/footer", "variation": "minimal-row", "job": "Single-row footer with logo and copyright line"}
+{"id": "shadcnui-blocks:footer-07", "node": "section/footer", "variation": "minimal-row", "job": "Compact footer with legal links and social icons"}
+{"id": "shadcnui-blocks:hero-01", "node": "section/hero", "variation": "centered-text", "job": "Centered headline and buttons over an animated gradient"}
+{"id": "shadcnui-blocks:hero-02", "node": "section/hero", "variation": "split-image", "job": "Two-column hero with copy and a media panel"}
+{"id": "shadcnui-blocks:hero-03", "node": "section/hero", "variation": "centered-text", "job": "Centered hero with navbar, gradient heading and preview"}
+{"id": "shadcnui-blocks:hero-04", "node": "section/hero", "variation": "split-image", "job": "Split hero with copy beside a tall media panel"}
+{"id": "shadcnui-blocks:hero-05", "node": "section/hero", "variation": "split-image", "job": "Split hero with edge-to-edge media beside the copy"}
+{"id": "shadcnui-blocks:hero-06", "node": "section/hero", "variation": "centered-text", "job": "Centered hero over dot and particle background"}
+{"id": "shadcnui-blocks:hero-07", "node": "section/hero", "variation": "centered-text", "job": "Centered hero over an animated grid pattern"}
+{"id": "shadcnui-blocks:hero-08", "node": "section/hero", "variation": "social-proof", "job": "Hero buttons above a row of customer logos"}
+{"id": "shadcnui-blocks:input-01", "node": "atom/text-input", "variation": "text-input", "job": "Plain text field for entering an email address"}
+{"id": "shadcnui-blocks:input-02", "node": "atom/text-input", "variation": "text-input", "job": "Input whose focus ring colours the border blue"}
+{"id": "shadcnui-blocks:input-03", "node": "atom/text-input", "variation": "text-input", "job": "Input filled with a secondary background colour"}
+{"id": "shadcnui-blocks:input-04", "node": "atom/text-input", "variation": "text-input", "job": "Disabled input the user cannot edit"}
+{"id": "shadcnui-blocks:input-05", "node": "component/field", "variation": "text-input", "job": "Labelled email field with the input beneath"}
+{"id": "shadcnui-blocks:input-06", "node": "component/field", "variation": "with-addon", "job": "Email input with a subscribe button beside it"}
+{"id": "shadcnui-blocks:input-07", "node": "component/field", "variation": "with-addon", "job": "Login fields with icon addons and password reveal"}
+{"id": "shadcnui-blocks:input-08", "node": "component/field", "variation": "text-input", "job": "Labelled input with explanatory helper text"}
+{"id": "shadcnui-blocks:input-09", "node": "component/field", "variation": "validation-states", "job": "Email field showing an invalid message below"}
+{"id": "shadcnui-blocks:input-10", "node": "component/form", "variation": "with-validation", "job": "Form validating an email field before submit"}
+{"id": "shadcnui-blocks:input-11", "node": "component/upload", "variation": null, "job": "Native file picker for choosing a profile picture", "edge": "native-file-input"}
+{"id": "shadcnui-blocks:input-12", "node": "component/upload", "variation": "avatar-upload", "job": "Dropzone picking a profile picture with preview"}
+{"id": "shadcnui-blocks:input-otp-01", "node": "atom/text-input", "variation": "otp", "job": "Six-box one-time passcode entry with auto focus"}
+{"id": "shadcnui-blocks:input-otp-02", "node": "atom/text-input", "variation": "otp", "job": "OTP entry with no separator between digit boxes"}
+{"id": "shadcnui-blocks:input-otp-03", "node": "atom/text-input", "variation": "otp", "job": "OTP input with separated digit fields"}
+{"id": "shadcnui-blocks:input-otp-04", "node": "atom/text-input", "variation": "otp", "job": "Alternate separated OTP digit field styling"}
+{"id": "shadcnui-blocks:input-otp-05", "node": "atom/text-input", "variation": "otp", "job": "Secondary styled one-time passcode input"}
+{"id": "shadcnui-blocks:input-otp-06", "node": "atom/text-input", "variation": "otp", "job": "OTP input with a custom separator glyph"}
+{"id": "shadcnui-blocks:input-otp-07", "node": "atom/text-input", "variation": "otp", "job": "OTP input slots with inner shadow styling"}
+{"id": "shadcnui-blocks:integrations-01", "node": "section/logos", "variation": "integration-cards", "job": "Integration cards with logo, description and connect button"}
+{"id": "shadcnui-blocks:integrations-02", "node": "section/logos", "variation": "integration-cards", "job": "Compact integration list showing connected and connect states"}
+{"id": "shadcnui-blocks:integrations-03", "node": "section/logos", "variation": "integration-cards", "job": "Integration rows with inline connect button and status"}
+{"id": "shadcnui-blocks:integrations-04", "node": "section/logos", "variation": "integration-cards", "job": "Integration card grid with dashed decorative borders"}
+{"id": "shadcnui-blocks:integrations-05", "node": "section/logos", "variation": "integration-cards", "job": "Integration cards with glowing logo and hairline decoration"}
+{"id": "shadcnui-blocks:invite-member-01", "node": "component/dialog", "variation": "form-dialog", "job": "Dialog inviting a teammate by email and role"}
+{"id": "shadcnui-blocks:invite-member-02", "node": "component/dialog", "variation": "modal-dialog", "job": "Searchable people picker dialog for inviting members"}
+{"id": "shadcnui-blocks:invite-member-03", "node": "component/dialog", "variation": "modal-dialog", "job": "Compact member invite dialog with searchable list"}
+{"id": "shadcnui-blocks:keyboard-shortcuts-01", "node": "component/list", "variation": "standard-list", "job": "Card listing app keyboard shortcuts with key caps"}
+{"id": "shadcnui-blocks:keyboard-shortcuts-02", "node": "component/list", "variation": "standard-list", "job": "Grouped shortcut cards with circuit-board styling"}
+{"id": "shadcnui-blocks:keyboard-shortcuts-03", "node": "component/list", "variation": "standard-list", "job": "Two-column shortcut list grouped by category"}
+{"id": "shadcnui-blocks:keyboard-shortcuts-04", "node": "component/list", "variation": "standard-list", "job": "Bordered shortcut panel with categories in a grid"}
+{"id": "shadcnui-blocks:login-01", "node": "section/auth", "variation": "sign-in", "job": "Centered sign-in card over a grid pattern backdrop"}
+{"id": "shadcnui-blocks:login-02", "node": "section/auth", "variation": "sign-in", "job": "Sign-in form on a muted full-height background"}
+{"id": "shadcnui-blocks:login-03", "node": "section/auth", "variation": "split-image", "job": "Sign-in beside an empty bordered brand panel"}
+{"id": "shadcnui-blocks:login-04", "node": "section/auth", "variation": "split-image", "job": "Sign-in next to a full-bleed photo panel"}
+{"id": "shadcnui-blocks:login-05", "node": "section/auth", "variation": "split-image", "job": "Two-column sign-in with a muted side panel"}
+{"id": "shadcnui-blocks:login-06", "node": "section/auth", "variation": "sign-in", "job": "Centered card sign-in with logo above the form"}
+{"id": "shadcnui-blocks:login-07", "node": "section/auth", "variation": "split-image", "job": "Sign-in beside a customer testimonial panel"}
+{"id": "shadcnui-blocks:login-08", "node": "section/auth", "variation": "sign-in", "job": "Sign-in card over a decorative patterned backdrop"}
+{"id": "shadcnui-blocks:logo-cloud-01", "node": "section/logos", "variation": "static-row", "job": "Trusted-by line above a wrapped row of logos"}
+{"id": "shadcnui-blocks:logo-cloud-02", "node": "section/logos", "variation": "static-row", "job": "Trust statement above eight inline logos"}
+{"id": "shadcnui-blocks:logo-cloud-03", "node": "section/logos", "variation": "grid", "job": "Headline and CTA beside a floating logo grid"}
+{"id": "shadcnui-blocks:logo-cloud-04", "node": "section/logos", "variation": "grid", "job": "Four-column grid of company logos"}
+{"id": "shadcnui-blocks:logo-cloud-05", "node": "section/logos", "variation": "grid", "job": "Logo grid with heading and view-all action"}
+{"id": "shadcnui-blocks:logo-cloud-06", "node": "section/logos", "variation": "marquee", "job": "Single looping logo marquee with edge fade"}
+{"id": "shadcnui-blocks:logo-cloud-07", "node": "section/logos", "variation": "marquee", "job": "Two opposite-scrolling logo marquees"}
+{"id": "shadcnui-blocks:logo-cloud-08", "node": "section/logos", "variation": "grid", "job": "Dashed-cell logo grid under an uppercase label"}
+{"id": "shadcnui-blocks:logo-cloud-09", "node": "section/logos", "variation": "grid", "job": "Muted pill tiles each holding one logo"}
+{"id": "shadcnui-blocks:logo-cloud-10", "node": "section/logos", "variation": "grid", "job": "Bordered alternating-cell grid of logos"}
+{"id": "shadcnui-blocks:logo-cloud-11", "node": "section/logos", "variation": "grid", "job": "Dashed bordered grid of logo cells"}
+{"id": "shadcnui-blocks:logo-cloud-12", "node": "section/logos", "variation": "grid", "job": "Hairline-separated grid of logo cells"}
+{"id": "shadcnui-blocks:logo-cloud-13", "node": "section/logos", "variation": "marquee", "job": "Grayscale vertical marquee columns of logos"}
+{"id": "shadcnui-blocks:logo-cloud-14", "node": "section/logos", "variation": "grid", "job": "Bento grid mixing a text tile with logo tiles"}
+{"id": "shadcnui-blocks:logo-cloud-15", "node": "section/logos", "variation": "marquee", "job": "Logo marquee with animated border beam"}
+{"id": "shadcnui-blocks:marquee", "node": "atom/layout", "variation": "horizontal-scroll", "job": "Infinite horizontal scroll container repeating its children"}
+{"id": "shadcnui-blocks:members-01", "node": "section/team", "variation": "directory", "job": "Members table with avatars, roles and row actions"}
+{"id": "shadcnui-blocks:members-02", "node": "section/team", "variation": "directory", "job": "Member table with role icons and invite button"}
+{"id": "shadcnui-blocks:members-03", "node": "section/team", "variation": "photo-grid", "job": "Photo grid of team members with roles"}
+{"id": "shadcnui-blocks:navbar-01", "node": "section/nav", "variation": "simple-bar", "job": "Site navbar with links, CTA and mobile sheet"}
+{"id": "shadcnui-blocks:navbar-02", "node": "section/nav", "variation": "simple-bar", "job": "Navbar with grouped links, sign-in and CTA"}
+{"id": "shadcnui-blocks:navbar-03", "node": "section/nav", "variation": "mega-menu", "job": "Navbar with icon dropdown panels and mobile sheet"}
+{"id": "shadcnui-blocks:navbar-04", "node": "section/nav", "variation": "simple-bar", "job": "Floating capsule navbar with links and CTA"}
+{"id": "shadcnui-blocks:navbar-05", "node": "section/nav", "variation": "search", "job": "Floating nav with an inline search field"}
+{"id": "shadcnui-blocks:navigation-menu-01", "node": "component/menu", "variation": "navigation-menu", "job": "Horizontal menu of plain navigation links"}
+{"id": "shadcnui-blocks:navigation-menu-02", "node": "component/menu", "variation": "navigation-menu", "job": "Navigation menu with an icon beside each link"}
+{"id": "shadcnui-blocks:navigation-menu-03", "node": "component/menu", "variation": "mega-menu", "job": "Navigation menu opening a wide panel of links"}
+{"id": "shadcnui-blocks:navigation-menu-04", "node": "component/menu", "variation": "navigation-menu", "job": "Navigation menu with the active item highlighted"}
+{"id": "shadcnui-blocks:navigation-menu-05", "node": "component/menu", "variation": "navigation-menu", "job": "Underlined navigation menu links with active underline"}
+{"id": "shadcnui-blocks:navigation-menu-06", "node": "component/menu", "variation": "mega-menu", "job": "Rich three-column mega menu dropdown panel"}
+{"id": "shadcnui-blocks:navigation-menu-07", "node": "component/menu", "variation": "navigation-menu", "job": "Navigation menu with larger icons per item"}
+{"id": "shadcnui-blocks:navigation-menu-08", "node": "component/menu", "variation": "navigation-menu", "job": "Stacked icon-and-label mobile navigation menu"}
+{"id": "shadcnui-blocks:not-found-01", "node": "page/not-found", "variation": "notfound-404", "job": "Simple 404 page with message and home link"}
+{"id": "shadcnui-blocks:not-found-02", "node": "page/not-found", "variation": "notfound-404", "job": "404 with big text, suggestions and actions"}
+{"id": "shadcnui-blocks:not-found-03", "node": "page/not-found", "variation": "notfound-404", "job": "Split-layout 404 page with decorative blurred shapes"}
+{"id": "shadcnui-blocks:not-found-04", "node": "page/not-found", "variation": "notfound-404", "job": "404 page with a search input"}
+{"id": "shadcnui-blocks:not-found-05", "node": "page/not-found", "variation": "notfound-404", "job": "Minimal 404 page with just a message"}
+{"id": "shadcnui-blocks:not-found-06", "node": "page/not-found", "variation": "notfound-404", "job": "404 page with popular page cards"}
+{"id": "shadcnui-blocks:not-found-07", "node": "page/not-found", "variation": "notfound-404", "job": "Playful 404 page with glitching text"}
+{"id": "shadcnui-blocks:not-found-08", "node": "page/not-found", "variation": "notfound-404", "job": "404 page with full-page background text"}
+{"id": "shadcnui-blocks:og-01", "node": "asset/og-image", "variation": null, "job": "Blank OG card with one centered headline", "edge": "centered-text"}
+{"id": "shadcnui-blocks:og-02", "node": "asset/og-image", "variation": null, "job": "OG card with logo above centered title and description", "edge": "logo-title-description"}
+{"id": "shadcnui-blocks:og-03", "node": "asset/og-image", "variation": null, "job": "OG card with centered title and description above framed image", "edge": "image-below-text"}
+{"id": "shadcnui-blocks:og-04", "node": "asset/og-image", "variation": null, "job": "OG card with logo, title and description over gradient", "edge": "gradient-bg"}
+{"id": "shadcnui-blocks:og-05", "node": "asset/og-image", "variation": null, "job": "OG card over an aurora silk fade background", "edge": "aurora-bg"}
+{"id": "shadcnui-blocks:og-06", "node": "asset/og-image", "variation": null, "job": "OG card over a grid pattern background", "edge": "grid-pattern-bg"}
+{"id": "shadcnui-blocks:og-07", "node": "asset/og-image", "variation": null, "job": "OG card with warm orange glow behind centered text", "edge": "orange-glow-center"}
+{"id": "shadcnui-blocks:og-08", "node": "asset/og-image", "variation": null, "job": "OG card with title, description and author footer", "edge": "author-footer"}
+{"id": "shadcnui-blocks:og-09", "node": "asset/og-image", "variation": null, "job": "OG card with a spilling pattern background", "edge": "spill-pattern-bg"}
+{"id": "shadcnui-blocks:og-10", "node": "asset/og-image", "variation": null, "job": "Boxed OG card with author footer on bordered canvas", "edge": "box-layout"}
+{"id": "shadcnui-blocks:og-11", "node": "asset/og-image", "variation": null, "job": "OG card with headline left and photo panel right", "edge": "image-right"}
+{"id": "shadcnui-blocks:og-12", "node": "asset/og-image", "variation": null, "job": "OG card with headline left, image panel bottom right", "edge": "image-right"}
+{"id": "shadcnui-blocks:og-13", "node": "asset/og-image", "variation": null, "job": "OG card stacking logo, title and description left", "edge": "logo-title-description"}
+{"id": "shadcnui-blocks:og-14", "node": "asset/og-image", "variation": null, "job": "OG card with title, description and taught-by footer", "edge": "title-author-footer"}
+{"id": "shadcnui-blocks:og-15", "node": "asset/og-image", "variation": null, "job": "OG card with pill label above title and description", "edge": "pill-title-description"}
+{"id": "shadcnui-blocks:og-16", "node": "asset/og-image", "variation": null, "job": "OG card with module label, title and author footer", "edge": "label-title-author"}
+{"id": "shadcnui-blocks:og-17", "node": "asset/og-image", "variation": null, "job": "OG card with text left and image panel top right", "edge": "image-top-right"}
+{"id": "shadcnui-blocks:og-18", "node": "asset/og-image", "variation": null, "job": "OG card splitting text left and framed image right", "edge": "image-right"}
+{"id": "shadcnui-blocks:og-19", "node": "asset/og-image", "variation": null, "job": "OG card with centered logo, wordmark and description", "edge": "centered-wordmark"}
+{"id": "shadcnui-blocks:og-20", "node": "asset/og-image", "variation": null, "job": "Centered OG wordmark over a decorative full-bleed layer", "edge": "centered-wordmark-bg"}
+{"id": "shadcnui-blocks:og-21", "node": "asset/og-image", "variation": null, "job": "OG card with logo above left-aligned large title", "edge": "logo-title-description"}
+{"id": "shadcnui-blocks:og-22", "node": "asset/og-image", "variation": null, "job": "OG card with centered logo and wordmark only", "edge": "centered-wordmark"}
+{"id": "shadcnui-blocks:og-23", "node": "asset/og-image", "variation": null, "job": "OG card with logo and wordmark in rounded chips", "edge": "logo-wordmark-chips"}
+{"id": "shadcnui-blocks:og-24", "node": "asset/og-image", "variation": null, "job": "OG card with logo and wordmark split by divider", "edge": "logo-divider-wordmark"}
+{"id": "shadcnui-blocks:og-25", "node": "asset/og-image", "variation": null, "job": "OG card with logo and wordmark inside a border", "edge": "box-logo-wordmark"}
+{"id": "shadcnui-blocks:og-26", "node": "asset/og-image", "variation": null, "job": "OG card with centered logo above a large wordmark", "edge": "centered-wordmark"}
+{"id": "shadcnui-blocks:og-27", "node": "asset/og-image", "variation": null, "job": "Centered OG wordmark inside an oversized frame", "edge": "centered-wordmark-frame"}
+{"id": "shadcnui-blocks:og-28", "node": "asset/og-image", "variation": null, "job": "Centered OG wordmark inside a double border frame", "edge": "centered-wordmark-frame"}
+{"id": "shadcnui-blocks:og-29", "node": "asset/og-image", "variation": null, "job": "OG card with description above a wide image panel", "edge": "image-below-text"}
+{"id": "shadcnui-blocks:og-30", "node": "asset/og-image", "variation": null, "job": "Boxed OG card with description above bordered image", "edge": "image-below-text-box"}
+{"id": "shadcnui-blocks:og-31", "node": "asset/og-image", "variation": null, "job": "Centered OG wordmark, description and learner count", "edge": "centered-wordmark-stats"}
+{"id": "shadcnui-blocks:og-32", "node": "asset/og-image", "variation": null, "job": "OG card with logo, headline left and photo right", "edge": "image-right"}
+{"id": "shadcnui-blocks:order-confirmation-01", "node": "component/card", "variation": null, "job": "Card confirming the order with view and home actions", "edge": "order-confirmed-card"}
+{"id": "shadcnui-blocks:order-confirmation-02", "node": "component/card", "variation": null, "job": "Thank-you screen listing purchased items and order total", "edge": "order-receipt"}
+{"id": "shadcnui-blocks:pagination-01", "node": "component/pagination", "variation": "numbered-pages", "job": "Default numbered page links with prev and next"}
+{"id": "shadcnui-blocks:pagination-02", "node": "component/pagination", "variation": "numbered-pages", "job": "Numbered pagination with primary styled active page"}
+{"id": "shadcnui-blocks:pagination-03", "node": "component/pagination", "variation": "numbered-pages", "job": "Numbered pagination with secondary styled page buttons"}
+{"id": "shadcnui-blocks:pagination-04", "node": "component/pagination", "variation": "numbered-pages", "job": "Rounded numbered page buttons"}
+{"id": "shadcnui-blocks:pagination-05", "node": "component/pagination", "variation": "numbered-pages", "job": "Numbered pagination with icon-only prev and next"}
+{"id": "shadcnui-blocks:pagination-06", "node": "component/pagination", "variation": "first-last-buttons", "job": "Pagination with first and last page jumps"}
+{"id": "shadcnui-blocks:pagination-07", "node": "component/pagination", "variation": "numbered-pages", "job": "Bordered divided numbered pagination"}
+{"id": "shadcnui-blocks:pagination-08", "node": "component/pagination", "variation": "numbered-pages", "job": "Tab-styled page numbers with border outline"}
+{"id": "shadcnui-blocks:pagination-09", "node": "component/pagination", "variation": "numbered-pages", "job": "Secondary tab-styled page number navigation"}
+{"id": "shadcnui-blocks:pagination-10", "node": "component/pagination", "variation": "numbered-pages", "job": "Prev and next with icons, labels and page numbers"}
+{"id": "shadcnui-blocks:pagination-11", "node": "component/pagination", "variation": null, "job": "Numberless pagination with only previous and next", "edge": "prev-next-only"}
+{"id": "shadcnui-blocks:pagination-12", "node": "component/pagination", "variation": "page-counter", "job": "Pagination showing page one of twenty-one"}
+{"id": "shadcnui-blocks:pagination-13", "node": "component/pagination", "variation": "with-ellipsis", "job": "Pagination with ellipsis for long page ranges"}
+{"id": "shadcnui-blocks:pagination-14", "node": "component/pagination", "variation": "with-page-size", "job": "Table pagination with rows-per-page and item range"}
+{"id": "shadcnui-blocks:pagination-15", "node": "component/pagination", "variation": null, "job": "Previous and next beside a showing-results count", "edge": "results-count-pagination"}
+{"id": "shadcnui-blocks:particles", "node": "asset/shape", "variation": "decoration", "job": "Mouse-reactive canvas particles drifting behind content"}
+{"id": "shadcnui-blocks:pricing-01", "node": "section/pricing", "variation": "tier-cards", "job": "Three tier pricing cards with feature lists"}
+{"id": "shadcnui-blocks:pricing-02", "node": "section/pricing", "variation": "tier-cards", "job": "Three tiers with one marked most popular"}
+{"id": "shadcnui-blocks:pricing-03", "node": "section/pricing", "variation": "billing-toggle", "job": "Tier cards with monthly and yearly billing tabs"}
+{"id": "shadcnui-blocks:pricing-04", "node": "section/pricing", "variation": "billing-toggle", "job": "Three plan tiers with monthly and yearly toggle"}
+{"id": "shadcnui-blocks:pricing-05", "node": "section/pricing", "variation": "tier-cards", "job": "Three plan tier cards with feature checklists"}
+{"id": "shadcnui-blocks:pricing-06", "node": "section/pricing", "variation": "tier-cards", "job": "Three plan tiers with portrait-count descriptions"}
+{"id": "shadcnui-blocks:pricing-07", "node": "section/pricing", "variation": "billing-toggle", "job": "Basic, Pro and Team tiers with billing tabs"}
+{"id": "shadcnui-blocks:pricing-08", "node": "section/pricing", "variation": "tier-cards", "job": "Three subscription tiers with popular highlight"}
+{"id": "shadcnui-blocks:pricing-09", "node": "section/pricing", "variation": "tier-cards", "job": "Starter, Pro and Team plans with descriptions"}
+{"id": "shadcnui-blocks:pricing-10", "node": "section/pricing", "variation": "tier-cards", "job": "Three pricing tiers with most-popular badge"}
+{"id": "shadcnui-blocks:profile-01", "node": "component/card", "variation": "profile-card", "job": "Centered profile card with bio and social links"}
+{"id": "shadcnui-blocks:profile-02", "node": "component/card", "variation": "profile-card", "job": "Profile card with cover banner and social links"}
+{"id": "shadcnui-blocks:profile-03", "node": "component/card", "variation": "profile-card", "job": "Profile card with tabbed projects and contact"}
+{"id": "shadcnui-blocks:profile-04", "node": "page/record", "variation": "record-profile", "job": "Profile header with follower stats and tabs"}
+{"id": "shadcnui-blocks:progress-01", "node": "atom/progress", "variation": "linear", "job": "Default linear progress bar"}
+{"id": "shadcnui-blocks:progress-02", "node": "atom/progress", "variation": "linear", "job": "Linear progress bar with percentage label"}
+{"id": "shadcnui-blocks:progress-03", "node": "atom/progress", "variation": "linear", "job": "Linear progress bar with custom colour"}
+{"id": "shadcnui-blocks:progress-04", "node": "atom/progress", "variation": "linear", "job": "Rounded linear progress bar"}
+{"id": "shadcnui-blocks:progress-05", "node": "atom/progress", "variation": "linear", "job": "Gradient filled linear progress bar"}
+{"id": "shadcnui-blocks:progress-06", "node": "atom/progress", "variation": "linear", "job": "Progress bar with animated gradient fill"}
+{"id": "shadcnui-blocks:progress-07", "node": "atom/progress", "variation": "circular", "job": "Circular progress ring"}
+{"id": "shadcnui-blocks:progress-08", "node": "atom/progress", "variation": "circular", "job": "Circular progress ring with percentage label"}
+{"id": "shadcnui-blocks:progress-09", "node": "atom/progress", "variation": "circular", "job": "Circular progress ring with custom label"}
+{"id": "shadcnui-blocks:progress-10", "node": "atom/progress", "variation": "circular", "job": "Circular progress rings in custom colours"}
+{"id": "shadcnui-blocks:progress-11", "node": "atom/progress", "variation": "circular", "job": "Circular progress ring with custom shape"}
+{"id": "shadcnui-blocks:progress-12", "node": "atom/progress", "variation": "circular", "job": "Circular progress ring with custom stroke width"}
+{"id": "shadcnui-blocks:radio-group-01", "node": "atom/choice", "variation": "radio", "job": "Default radio group choosing a layout"}
+{"id": "shadcnui-blocks:radio-group-02", "node": "atom/choice", "variation": "radio", "job": "Horizontal radio group of options"}
+{"id": "shadcnui-blocks:radio-group-03", "node": "atom/choice", "variation": "radio", "job": "Radio group with a disabled option"}
+{"id": "shadcnui-blocks:radio-group-04", "node": "atom/choice", "variation": "radio", "job": "Radio group with custom colour indicators"}
+{"id": "shadcnui-blocks:radio-group-05", "node": "atom/choice", "variation": "radio", "job": "Radio group in several sizes"}
+{"id": "shadcnui-blocks:radio-group-06", "node": "atom/choice", "variation": "radio", "job": "Radio group with soft variant styling"}
+{"id": "shadcnui-blocks:radio-group-07", "node": "atom/choice", "variation": "card", "job": "Radio options shown as selectable cards"}
+{"id": "shadcnui-blocks:radio-group-08", "node": "atom/choice", "variation": "card", "job": "Radio cards with icon and description"}
+{"id": "shadcnui-blocks:radio-group-09", "node": "atom/choice", "variation": "card", "job": "Plan options as selectable radio cards"}
+{"id": "shadcnui-blocks:select-01", "node": "component/select", "variation": "standard-select", "job": "Default select choosing from a list"}
+{"id": "shadcnui-blocks:select-02", "node": "component/select", "variation": "standard-select", "job": "Select with custom background colour"}
+{"id": "shadcnui-blocks:select-03", "node": "component/select", "variation": "standard-select", "job": "Ghost styled select without border"}
+{"id": "shadcnui-blocks:select-04", "node": "component/select", "variation": "standard-select", "job": "Select with a custom dropdown icon"}
+{"id": "shadcnui-blocks:select-05", "node": "component/select", "variation": "standard-select", "job": "Selects with rounded and square shapes"}
+{"id": "shadcnui-blocks:select-06", "node": "component/select", "variation": "with-icons", "job": "Select with an icon beside each option"}
+{"id": "shadcnui-blocks:select-07", "node": "component/select", "variation": "standard-select", "job": "Select inside a validated form"}
+{"id": "shadcnui-blocks:select-08", "node": "component/select", "variation": "standard-select", "job": "Select for choosing light or dark theme"}
+{"id": "shadcnui-blocks:select-09", "node": "component/select", "variation": "standard-select", "job": "Select comparing popper and aligned positions"}
+{"id": "shadcnui-blocks:select-10", "node": "component/select", "variation": "grouped", "job": "Scrollable timezone select grouped by region"}
+{"id": "shadcnui-blocks:select-11", "node": "component/select", "variation": "standard-select", "job": "Controlled select driven by state"}
+{"id": "shadcnui-blocks:separator-01", "node": "atom/layout", "variation": null, "job": "Horizontal and vertical separators between content", "edge": "divider"}
+{"id": "shadcnui-blocks:separator-02", "node": "atom/layout", "variation": null, "job": "Labelled separator above sign-up form options", "edge": "labeled-divider"}
+{"id": "shadcnui-blocks:separator-03", "node": "atom/layout", "variation": null, "job": "Separator with a chip label in sign-up form", "edge": "chip-divider"}
+{"id": "shadcnui-blocks:separator-04", "node": "atom/layout", "variation": null, "job": "Dashed separator inside a sign-up form", "edge": "dashed-divider"}
+{"id": "shadcnui-blocks:separator-05", "node": "atom/layout", "variation": null, "job": "Vertical separator beside the sign-up form", "edge": "vertical-divider"}
+{"id": "shadcnui-blocks:separator-06", "node": "atom/layout", "variation": null, "job": "Vertical separator with chip in sign-up form", "edge": "vertical-chip-divider"}
+{"id": "shadcnui-blocks:separator-with-label-vertical", "node": "atom/layout", "variation": null, "job": "Vertical labelled separator inside a sign-up card", "edge": "vertical-labeled-divider"}
+{"id": "shadcnui-blocks:setup-guide-01", "node": "section/onboarding", "variation": "checklist", "job": "Setup checklist of portal steps with statuses"}
+{"id": "shadcnui-blocks:setup-guide-02", "node": "section/onboarding", "variation": "checklist", "job": "Card setup checklist with progress bar"}
+{"id": "shadcnui-blocks:setup-guide-03", "node": "section/onboarding", "variation": "checklist", "job": "Setup checklist of tracking steps"}
+{"id": "shadcnui-blocks:setup-guide-04", "node": "section/onboarding", "variation": "checklist", "job": "Setup checklist of support inbox tasks"}
+{"id": "shadcnui-blocks:signup-01", "node": "section/auth", "variation": "sign-up", "job": "Sign-up form with Google and email fields"}
+{"id": "shadcnui-blocks:signup-02", "node": "section/auth", "variation": "sign-up", "job": "Sign-up form with Google and email fields"}
+{"id": "shadcnui-blocks:signup-03", "node": "section/auth", "variation": "sign-up", "job": "Centered sign-up card with email and Google"}
+{"id": "shadcnui-blocks:signup-04", "node": "section/auth", "variation": "sign-up", "job": "Centered sign-up card with social and email"}
+{"id": "shadcnui-blocks:signup-05", "node": "section/auth", "variation": "split-image", "job": "Split sign-up with brand panel beside form"}
+{"id": "shadcnui-blocks:signup-06", "node": "section/auth", "variation": "sign-up", "job": "Sign-up card with Google and email form"}
+{"id": "shadcnui-blocks:signup-07", "node": "section/auth", "variation": "split-image", "job": "Split sign-up beside customer testimonials"}
+{"id": "shadcnui-blocks:signup-08", "node": "section/auth", "variation": "sign-up", "job": "Sign-up form over a decorative background"}
+{"id": "shadcnui-blocks:slider-01", "node": "atom/slider", "variation": "slider", "job": "Default range slider control"}
+{"id": "shadcnui-blocks:slider-02", "node": "atom/slider", "variation": "slider", "job": "Disabled slider control"}
+{"id": "shadcnui-blocks:slider-03", "node": "atom/slider", "variation": "slider", "job": "Sliders in several track sizes"}
+{"id": "shadcnui-blocks:slider-04", "node": "atom/slider", "variation": "slider", "job": "Sliders in several colours"}
+{"id": "shadcnui-blocks:slider-05", "node": "atom/slider", "variation": "slider", "job": "Sliders with rounded and square shapes"}
+{"id": "shadcnui-blocks:slider-06", "node": "atom/slider", "variation": "slider", "job": "Slider paired with a label"}
+{"id": "shadcnui-blocks:slider-07", "node": "atom/slider", "variation": "slider", "job": "Slider with a custom thumb icon"}
+{"id": "shadcnui-blocks:slider-08", "node": "atom/slider", "variation": "slider", "job": "Slider used for audio level control"}
+{"id": "shadcnui-blocks:slider-09", "node": "atom/slider", "variation": "with-ticks", "job": "Slider with marks at specific values"}
+{"id": "shadcnui-blocks:slider-10", "node": "atom/slider", "variation": "slider", "job": "Slider with a sticky value label"}
+{"id": "shadcnui-blocks:slider-11", "node": "atom/slider", "variation": "slider", "job": "Slider with sticky label shown on hover"}
+{"id": "shadcnui-blocks:slider-12", "node": "atom/slider", "variation": "slider", "job": "Slider with sticky label and arrow"}
+{"id": "shadcnui-blocks:slider-13", "node": "atom/slider", "variation": "vertical", "job": "Vertical slider control"}
+{"id": "shadcnui-blocks:slider-14", "node": "atom/slider", "variation": "range", "job": "Range slider with two thumbs"}
+{"id": "shadcnui-blocks:slider-15", "node": "atom/slider", "variation": "range", "job": "Slider with several thumbs"}
+{"id": "shadcnui-blocks:spinner-01", "node": "atom/loader", "variation": "spinner", "job": "Default spinning loading indicator"}
+{"id": "shadcnui-blocks:spinner-02", "node": "atom/loader", "variation": "spinner", "job": "Circular spinning indicator"}
+{"id": "shadcnui-blocks:spinner-03", "node": "atom/loader", "variation": "spinner", "job": "Pinwheel style spinning indicator"}
+{"id": "shadcnui-blocks:spinner-04", "node": "atom/loader", "variation": "spinner", "job": "Spinners in several colours"}
+{"id": "shadcnui-blocks:spinner-05", "node": "atom/loader", "variation": "spinner", "job": "Spinners in several sizes"}
+{"id": "shadcnui-blocks:spinner-06", "node": "atom/loader", "variation": "specialized", "job": "Swirling SVG loading indicator"}
+{"id": "shadcnui-blocks:spinner-07", "node": "atom/loader", "variation": "spinner", "job": "Circle spinner with single accent border"}
+{"id": "shadcnui-blocks:spinner-08", "node": "atom/loader", "variation": "spinner", "job": "Circle spinner with double accent border"}
+{"id": "shadcnui-blocks:spinner-09", "node": "atom/loader", "variation": "spinner", "job": "Circle spinner with secondary base ring"}
+{"id": "shadcnui-blocks:spinner-10", "node": "atom/loader", "variation": "spinner", "job": "Circle spinner with top and bottom accents"}
+{"id": "shadcnui-blocks:spinner-11", "node": "atom/loader", "variation": "spinner", "job": "Circle spinner with dual accent borders"}
+{"id": "shadcnui-blocks:stats-01", "node": "section/stats", "variation": "row", "job": "Three customer percentage figures with captions"}
+{"id": "shadcnui-blocks:stats-02", "node": "section/stats", "variation": "grid", "job": "Four-column metric grid with descriptions"}
+{"id": "shadcnui-blocks:stats-03", "node": "section/stats", "variation": "grid", "job": "Three bordered metric cards"}
+{"id": "shadcnui-blocks:stats-04", "node": "section/stats", "variation": "grid", "job": "Joined bordered cells of key metrics"}
+{"id": "shadcnui-blocks:stats-05", "node": "section/stats", "variation": "kpi-card", "job": "Metric cards pairing icon with figure"}
+{"id": "shadcnui-blocks:stats-06", "node": "section/stats", "variation": "with-chart", "job": "Metric cards with growth panel and illustration"}
+{"id": "shadcnui-blocks:stats-07", "node": "section/stats", "variation": "grid", "job": "Nested rounded grid of key metrics"}
+{"id": "shadcnui-blocks:stats-08", "node": "section/stats", "variation": "grid", "job": "Metrics with illustrated shape icons"}
+{"id": "shadcnui-blocks:stats-09", "node": "section/stats", "variation": "row", "job": "Divided row of three key metrics"}
+{"id": "shadcnui-blocks:stats-10", "node": "section/stats", "variation": "grid", "job": "Heading and stats list with view-all action"}
+{"id": "shadcnui-blocks:stats-11", "node": "section/stats", "variation": "row", "job": "Three percentage metrics on muted panel"}
+{"id": "shadcnui-blocks:switch-01", "node": "atom/switch", "variation": "standard", "job": "Default toggle switch"}
+{"id": "shadcnui-blocks:switch-02", "node": "atom/switch", "variation": "standard", "job": "Switch with an adjacent label"}
+{"id": "shadcnui-blocks:switch-03", "node": "atom/switch", "variation": "standard", "job": "Disabled switch"}
+{"id": "shadcnui-blocks:switch-04", "node": "atom/switch", "variation": "standard", "job": "Switches in several colours"}
+{"id": "shadcnui-blocks:switch-05", "node": "atom/switch", "variation": "standard", "job": "Switches in several sizes"}
+{"id": "shadcnui-blocks:switch-06", "node": "atom/switch", "variation": "standard", "job": "Controlled switch driven by state"}
+{"id": "shadcnui-blocks:switch-07", "node": "atom/switch", "variation": "theme-toggle", "job": "Switch toggling dark mode with sun and moon icons"}
+{"id": "shadcnui-blocks:table-01", "node": "component/table", "variation": "standard-table", "job": "Invoice table with status and amounts"}
+{"id": "shadcnui-blocks:table-02", "node": "component/table", "variation": "standard-table", "job": "Bordered invoice table"}
+{"id": "shadcnui-blocks:table-03", "node": "component/table", "variation": "standard-table", "job": "Table with striped rows"}
+{"id": "shadcnui-blocks:table-04", "node": "component/table", "variation": "standard-table", "job": "Table with rounded corner container"}
+{"id": "shadcnui-blocks:table-05", "node": "component/table", "variation": "standard-table", "job": "Table with pagination controls"}
+{"id": "shadcnui-blocks:table-06", "node": "component/table", "variation": "standard-table", "job": "Table with a sticky header"}
+{"id": "shadcnui-blocks:table-07", "node": "component/table", "variation": "standard-table", "job": "Table with sticky columns"}
+{"id": "shadcnui-blocks:table-08", "node": "component/table", "variation": "standard-table", "job": "Table scrolling in an overflow container"}
+{"id": "shadcnui-blocks:table-09", "node": "component/table", "variation": "data-table", "job": "Payment data table with filters and columns"}
+{"id": "shadcnui-blocks:table-10", "node": "component/table", "variation": "data-table", "job": "Data table with row density control"}
+{"id": "shadcnui-blocks:table-11", "node": "component/table", "variation": "data-table", "job": "Data table with column visibility toggles"}
+{"id": "shadcnui-blocks:tabs-01", "node": "component/tabs", "variation": "pill-segmented", "job": "Default tab list switching package manager commands"}
+{"id": "shadcnui-blocks:tabs-02", "node": "component/tabs", "variation": "underline", "job": "Underlined tabs marking the active item"}
+{"id": "shadcnui-blocks:tabs-03", "node": "component/tabs", "variation": "pill-segmented", "job": "Separated pill tabs with filled active item"}
+{"id": "shadcnui-blocks:tabs-04", "node": "component/tabs", "variation": null, "job": "Code-font tabs where only the active trigger is bordered", "edge": "bordered-tabs"}
+{"id": "shadcnui-blocks:tabs-05", "node": "component/tabs", "variation": "pill-segmented", "job": "Boxed tab bar filling the active trigger with colour"}
+{"id": "shadcnui-blocks:tabs-06", "node": "component/tabs", "variation": "underline", "job": "Bootstrap-style tab bar with a bordered active tab"}
+{"id": "shadcnui-blocks:tabs-07", "node": "component/tabs", "variation": "with-icons", "job": "Tab triggers each showing an icon before the label"}
+{"id": "shadcnui-blocks:tabs-08", "node": "component/tabs", "variation": null, "job": "Icon and label tab bar used for mobile navigation", "edge": "mobile-nav-tabs"}
+{"id": "shadcnui-blocks:tabs-09", "node": "component/tabs", "variation": "with-counts", "job": "Tabs showing a badge count on each trigger"}
+{"id": "shadcnui-blocks:tabs-10", "node": "component/tabs", "variation": null, "job": "Square-cornered tabs with a thick active border", "edge": "sharp-tabs"}
+{"id": "shadcnui-blocks:tabs-11", "node": "component/tabs", "variation": null, "job": "Tabs whose active trigger glows with a shadow", "edge": "shadow-tabs"}
+{"id": "shadcnui-blocks:tabs-12", "node": "component/tabs", "variation": null, "job": "Slanted skewed tab triggers in a bordered strip", "edge": "skewed-tabs"}
+{"id": "shadcnui-blocks:tabs-13", "node": "component/tabs", "variation": "vertical", "job": "Tabs stacked vertically beside their panel"}
+{"id": "shadcnui-blocks:tabs-14", "node": "component/tabs", "variation": "vertical", "job": "Vertical tabs with a left border marking the active one"}
+{"id": "shadcnui-blocks:tabs-15", "node": "component/tabs", "variation": "vertical", "job": "Vertical tabs with the active one filled solid"}
+{"id": "shadcnui-blocks:tabs-16", "node": "component/tabs", "variation": "vertical", "job": "Vertical square tabs with a thick active border"}
+{"id": "shadcnui-blocks:tabs-17", "node": "component/tabs", "variation": "vertical", "job": "Divided vertical tab list beside an icon panel"}
+{"id": "shadcnui-blocks:tabs-18", "node": "component/tabs", "variation": null, "job": "Tabs whose panel lists fade in with stagger", "edge": "animated-tabs"}
+{"id": "shadcnui-blocks:team-01", "node": "section/team", "variation": "photo-grid", "job": "Centred heading over a grid of round portraits"}
+{"id": "shadcnui-blocks:team-02", "node": "section/team", "variation": "photo-grid", "job": "Four-column portrait grid with names and bios"}
+{"id": "shadcnui-blocks:team-03", "node": "section/team", "variation": "split-layout", "job": "Team grid beside intro copy and action buttons"}
+{"id": "shadcnui-blocks:team-04", "node": "section/team", "variation": "card-grid", "job": "Centred intro above tinted team member cards"}
+{"id": "shadcnui-blocks:team-05", "node": "section/team", "variation": "photo-grid", "job": "Four-column square portraits with bios and socials"}
+{"id": "shadcnui-blocks:team-06", "node": "section/team", "variation": "photo-grid", "job": "Large square portraits with names and roles"}
+{"id": "shadcnui-blocks:team-07", "node": "section/team", "variation": "card-grid", "job": "Bordered team cells with round portraits and socials"}
+{"id": "shadcnui-blocks:team-08", "node": "section/team", "variation": "card-grid", "job": "Rounded team cards inside a muted bordered panel"}
+{"id": "shadcnui-blocks:team-09", "node": "section/team", "variation": "card-grid", "job": "Team cards with round portraits and social links"}
+{"id": "shadcnui-blocks:team-10", "node": "section/team", "variation": "carousel", "job": "Sliding carousel of team member cards with dots"}
+{"id": "shadcnui-blocks:team-11", "node": "section/team", "variation": "directory", "job": "Small-avatar team rows in a three-column grid"}
+{"id": "shadcnui-blocks:team-12", "node": "section/team", "variation": "directory", "job": "Bordered team directory including a hiring placeholder"}
+{"id": "shadcnui-blocks:team-13", "node": "section/team", "variation": "photo-grid", "job": "Portrait cards with gradient name overlays"}
+{"id": "shadcnui-blocks:testimonials-01", "node": "section/testimonials", "variation": "masonry", "job": "Masonry columns of muted quote cards"}
+{"id": "shadcnui-blocks:testimonials-02", "node": "section/testimonials", "variation": "masonry", "job": "Masonry columns of bordered quote cards"}
+{"id": "shadcnui-blocks:testimonials-03", "node": "section/testimonials", "variation": "masonry", "job": "Masonry quote cards with an oversized quote mark"}
+{"id": "shadcnui-blocks:testimonials-04", "node": "section/testimonials", "variation": "marquee", "job": "Two marquees of quote cards scrolling opposite ways"}
+{"id": "shadcnui-blocks:testimonials-05", "node": "section/testimonials", "variation": "ratings", "job": "Dashed grid of five-star customer quotes"}
+{"id": "shadcnui-blocks:testimonials-06", "node": "section/testimonials", "variation": "carousel", "job": "Carousel of quotes with portrait and star rating"}
+{"id": "shadcnui-blocks:testimonials-07", "node": "section/testimonials", "variation": "card-grid", "job": "Three-column quote cards with avatar footer rows"}
+{"id": "shadcnui-blocks:testimonials-08", "node": "section/testimonials", "variation": "card-grid", "job": "Quote cards each led by a large quotation mark"}
+{"id": "shadcnui-blocks:testimonials-09", "node": "section/testimonials", "variation": "masonry", "job": "Masonry columns of gradient quote cards"}
+{"id": "shadcnui-blocks:testimonials-10", "node": "section/testimonials", "variation": "masonry", "job": "Masonry quote cards with ringed avatars"}
+{"id": "shadcnui-blocks:testimonials-11", "node": "section/testimonials", "variation": "carousel", "job": "Carousel of large quotes with portrait beside"}
+{"id": "shadcnui-blocks:testimonials-12", "node": "section/testimonials", "variation": "masonry", "job": "Masonry quote cards inside a bordered panel"}
+{"id": "shadcnui-blocks:testimonials-13", "node": "section/testimonials", "variation": "marquee", "job": "Marquee of quotes paired with customer logos"}
+{"id": "shadcnui-blocks:textarea-01", "node": "atom/text-input", "variation": "textarea", "job": "Default multi-line text input"}
+{"id": "shadcnui-blocks:textarea-02", "node": "atom/text-input", "variation": "textarea", "job": "Multi-line text input on a muted background"}
+{"id": "shadcnui-blocks:textarea-03", "node": "atom/text-input", "variation": "textarea", "job": "Disabled multi-line text input"}
+{"id": "shadcnui-blocks:textarea-04", "node": "atom/text-input", "variation": "textarea", "job": "Textarea with a label above it"}
+{"id": "shadcnui-blocks:textarea-05", "node": "atom/text-input", "variation": "textarea", "job": "Textarea eight rows tall"}
+{"id": "shadcnui-blocks:textarea-06", "node": "atom/text-input", "variation": "textarea", "job": "Textarea with helper text beneath it"}
+{"id": "shadcnui-blocks:textarea-07", "node": "atom/text-input", "variation": "textarea", "job": "Textarea whose value is controlled by code"}
+{"id": "shadcnui-blocks:timeline-01", "node": "component/timeline", "variation": "vertical-timeline", "job": "Vertical work-experience timeline with dot markers"}
+{"id": "shadcnui-blocks:timeline-02", "node": "component/timeline", "variation": "vertical-timeline", "job": "Experience timeline drawing an icon per entry"}
+{"id": "shadcnui-blocks:timeline-03", "node": "component/timeline", "variation": "vertical-timeline", "job": "Experience timeline with custom icon nodes"}
+{"id": "shadcnui-blocks:timeline-04", "node": "component/timeline", "variation": "steps-timeline", "job": "Numbered vertical steps for a process timeline"}
+{"id": "shadcnui-blocks:timeline-05", "node": "component/timeline", "variation": "steps-timeline", "job": "Process timeline marking completed steps with checks"}
+{"id": "shadcnui-blocks:timeline-06", "node": "component/timeline", "variation": "changelog", "job": "Version changelog timeline with dates and notes"}
+{"id": "shadcnui-blocks:tooltip-01", "node": "atom/tooltip", "variation": "standard", "job": "Default tooltip shown when hovering a button"}
+{"id": "shadcnui-blocks:tooltip-02", "node": "atom/tooltip", "variation": "with-arrow", "job": "Tooltip with an arrow pointing at its trigger"}
+{"id": "shadcnui-blocks:tooltip-03", "node": "atom/tooltip", "variation": "standard", "job": "Tooltips placed on each of the four sides"}
+{"id": "shadcnui-blocks:tooltip-04", "node": "atom/tooltip", "variation": "standard", "job": "Tooltip whose content cannot be hovered"}
+{"id": "shadcnui-blocks:tooltip-05", "node": "atom/tooltip", "variation": "grouped-delay", "job": "Tooltip with an adjustable hover delay"}
+{"id": "shadcnui-blocks:tooltip-06", "node": "atom/tooltip", "variation": "grouped-delay", "job": "Neighbouring tooltips sharing a skip-delay window"}
+{"id": "shadcnui-blocks:tooltip-07", "node": "atom/tooltip", "variation": "standard", "job": "Tooltip force-mounted into a portal layer"}
+{"id": "shadcnui-blocks:verification-01", "node": "section/auth", "variation": "2fa", "job": "Email verification card with six-digit code entry"}

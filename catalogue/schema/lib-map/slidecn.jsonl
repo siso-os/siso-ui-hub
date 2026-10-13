@@ -1,0 +1,26 @@
+{"id": "slidecn:auto-animate-pair", "node": "atom/layout", "variation": null, "job": "pair two slides with an animated transition between states", "edge": "auto-animate-pair"}
+{"id": "slidecn:code-block", "node": "component/code", "variation": "highlighted-code", "job": "syntax-highlighted code block with filename, line numbers, copy button"}
+{"id": "slidecn:comparison-slide", "node": "section/comparison", "variation": "cards", "job": "side-by-side comparison slide with columns or table layout"}
+{"id": "slidecn:content-slide", "node": "atom/layout", "variation": null, "job": "general-purpose slide container arranging title and content", "edge": "content-slide"}
+{"id": "slidecn:fit-text", "node": "atom/text", "variation": null, "job": "resize text to fill the available space", "edge": "fit-text"}
+{"id": "slidecn:fragment-list", "node": "component/list", "variation": "standard-list", "job": "list whose items reveal one at a time"}
+{"id": "slidecn:fragment-reveal", "node": "atom/layout", "variation": null, "job": "reveal children one by one with fragment animations", "edge": "fragment-reveal"}
+{"id": "slidecn:image-slide", "node": "atom/image", "variation": null, "job": "show one image with stretch, contained or full-bleed modes", "edge": "image-slide"}
+{"id": "slidecn:list-slide", "node": "component/list", "variation": "standard-list", "job": "ordered or unordered list slide with optional reveal"}
+{"id": "slidecn:notes", "node": "atom/text", "variation": null, "job": "speaker notes hidden from the audience", "edge": "speaker-notes"}
+{"id": "slidecn:pitch-deck", "node": null, "variation": null, "job": "seven-slide pitch deck template covering problem to CTA"}
+{"id": "slidecn:product-demo", "node": null, "variation": null, "job": "six-slide product demo template with features and metrics"}
+{"id": "slidecn:quote-slide", "node": "atom/text", "variation": "blockquote", "job": "quote or citation slide with size variants"}
+{"id": "slidecn:section-slide", "node": "section/page-header", "variation": "title-only", "job": "chapter divider slide with label and title"}
+{"id": "slidecn:split-slide", "node": "atom/layout", "variation": null, "job": "two-column split layout slide with configurable ratio", "edge": "split-columns"}
+{"id": "slidecn:stack-reveal", "node": "atom/layout", "variation": null, "job": "group slides into a vertical stack of steps", "edge": "vertical-stack"}
+{"id": "slidecn:stat-slide", "node": "section/stats", "variation": "row", "job": "statistics slide with single, row or grid layouts"}
+{"id": "slidecn:team-slide", "node": "section/team", "variation": "card-grid", "job": "team member showcase with avatars, roles and bios"}
+{"id": "slidecn:tech-talk", "node": null, "variation": null, "job": "eight-slide technical talk template with code examples"}
+{"id": "slidecn:theme-brand", "node": null, "variation": null, "job": "brandable presentation theme with brand colour variables"}
+{"id": "slidecn:theme-dark", "node": null, "variation": null, "job": "dark presentation theme"}
+{"id": "slidecn:theme-default", "node": null, "variation": null, "job": "default light presentation theme with neutral tones"}
+{"id": "slidecn:theme-minimal", "node": null, "variation": null, "job": "minimal presentation theme with larger font and tight spacing"}
+{"id": "slidecn:timeline-slide", "node": "component/timeline", "variation": "horizontal-timeline", "job": "timeline slide in horizontal or vertical direction"}
+{"id": "slidecn:title-slide", "node": "section/hero", "variation": "centered-text", "job": "presentation title slide with eyebrow, author and date"}
+{"id": "slidecn:weekly-report", "node": null, "variation": null, "job": "five-slide weekly report template with KPIs and timeline"}

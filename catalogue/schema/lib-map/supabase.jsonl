@@ -1,0 +1,66 @@
+{"id": "supabase:current-user-avatar-nextjs", "node": "atom/avatar", "variation": "standard", "job": "Shows the signed-in user's avatar image or initials"}
+{"id": "supabase:current-user-avatar-nuxtjs", "node": "atom/avatar", "variation": "standard", "job": "Shows the signed-in user's avatar image or initials"}
+{"id": "supabase:current-user-avatar-react", "node": "atom/avatar", "variation": "standard", "job": "Shows the signed-in user's avatar image or initials"}
+{"id": "supabase:current-user-avatar-react-router", "node": "atom/avatar", "variation": "standard", "job": "Shows the signed-in user's avatar image or initials"}
+{"id": "supabase:current-user-avatar-tanstack", "node": "atom/avatar", "variation": "standard", "job": "Shows the signed-in user's avatar image or initials"}
+{"id": "supabase:current-user-avatar-vue", "node": "atom/avatar", "variation": "standard", "job": "Shows the signed-in user's avatar image or initials"}
+{"id": "supabase:dropzone-nextjs", "node": "component/upload", "variation": "dropzone", "job": "Drag-and-drop area uploading files to Supabase Storage"}
+{"id": "supabase:dropzone-nuxtjs", "node": "component/upload", "variation": "dropzone", "job": "Drag-and-drop area uploading files to Supabase Storage"}
+{"id": "supabase:dropzone-react", "node": "component/upload", "variation": "dropzone", "job": "Drag-and-drop area uploading files to Supabase Storage"}
+{"id": "supabase:dropzone-react-router", "node": "component/upload", "variation": "dropzone", "job": "Drag-and-drop area uploading files to Supabase Storage"}
+{"id": "supabase:dropzone-tanstack", "node": "component/upload", "variation": "dropzone", "job": "Drag-and-drop area uploading files to Supabase Storage"}
+{"id": "supabase:dropzone-vue", "node": "component/upload", "variation": "dropzone", "job": "Drag-and-drop area uploading files to Supabase Storage"}
+{"id": "supabase:headless-app-tanstack", "node": null, "variation": null, "job": "Agent-first starter app: auth, OAuth consent, MCP tools"}
+{"id": "supabase:infinite-query-composable", "node": null, "variation": null, "job": "Vue composable paging infinite Supabase lists"}
+{"id": "supabase:infinite-query-hook", "node": null, "variation": null, "job": "React hook paging infinite Supabase lists"}
+{"id": "supabase:mcp", "node": null, "variation": null, "job": "User-scoped MCP server exposing product tools"}
+{"id": "supabase:oauth-consent-nextjs", "node": "section/auth", "variation": null, "job": "OAuth consent screen: user approves an app's access", "edge": "oauth-consent"}
+{"id": "supabase:oauth-consent-react", "node": "section/auth", "variation": null, "job": "OAuth consent screen: user approves an app's access", "edge": "oauth-consent"}
+{"id": "supabase:oauth-consent-react-router", "node": "section/auth", "variation": null, "job": "OAuth consent screen: user approves an app's access", "edge": "oauth-consent"}
+{"id": "supabase:oauth-consent-tanstack", "node": "section/auth", "variation": null, "job": "OAuth consent screen: user approves an app's access", "edge": "oauth-consent"}
+{"id": "supabase:password-based-auth-nextjs", "node": "section/auth", "variation": "sign-in", "job": "Password sign-in, sign-up and password-reset forms"}
+{"id": "supabase:password-based-auth-nuxtjs", "node": "section/auth", "variation": "sign-in", "job": "Password sign-in, sign-up and password-reset forms"}
+{"id": "supabase:password-based-auth-react", "node": "section/auth", "variation": "sign-in", "job": "Password sign-in, sign-up and password-reset forms"}
+{"id": "supabase:password-based-auth-react-router", "node": "section/auth", "variation": "sign-in", "job": "Password sign-in, sign-up and password-reset forms"}
+{"id": "supabase:password-based-auth-tanstack", "node": "section/auth", "variation": "sign-in", "job": "Password sign-in, sign-up and password-reset forms"}
+{"id": "supabase:password-based-auth-vue", "node": "section/auth", "variation": "sign-in", "job": "Password sign-in, sign-up and password-reset forms"}
+{"id": "supabase:platform-kit-nextjs", "node": null, "variation": null, "job": "Admin console: manage Supabase projects, SQL, logs, secrets"}
+{"id": "supabase:realtime-avatar-stack-nextjs", "node": "atom/avatar", "variation": "avatar-group", "job": "Stack of avatars showing who is present, live"}
+{"id": "supabase:realtime-avatar-stack-nuxtjs", "node": "atom/avatar", "variation": "avatar-group", "job": "Stack of avatars showing who is present, live"}
+{"id": "supabase:realtime-avatar-stack-react", "node": "atom/avatar", "variation": "avatar-group", "job": "Stack of avatars showing who is present, live"}
+{"id": "supabase:realtime-avatar-stack-react-router", "node": "atom/avatar", "variation": "avatar-group", "job": "Stack of avatars showing who is present, live"}
+{"id": "supabase:realtime-avatar-stack-tanstack", "node": "atom/avatar", "variation": "avatar-group", "job": "Stack of avatars showing who is present, live"}
+{"id": "supabase:realtime-avatar-stack-vue", "node": "atom/avatar", "variation": "avatar-group", "job": "Stack of avatars showing who is present, live"}
+{"id": "supabase:realtime-chat-nextjs", "node": "section/chat", "variation": "thread", "job": "Realtime chat room: message list and input"}
+{"id": "supabase:realtime-chat-nuxtjs", "node": "section/chat", "variation": "thread", "job": "Realtime chat room: message list and input"}
+{"id": "supabase:realtime-chat-react", "node": "section/chat", "variation": "thread", "job": "Realtime chat room: message list and input"}
+{"id": "supabase:realtime-chat-react-router", "node": "section/chat", "variation": "thread", "job": "Realtime chat room: message list and input"}
+{"id": "supabase:realtime-chat-tanstack", "node": "section/chat", "variation": "thread", "job": "Realtime chat room: message list and input"}
+{"id": "supabase:realtime-chat-vue", "node": "section/chat", "variation": "thread", "job": "Realtime chat room: message list and input"}
+{"id": "supabase:realtime-cursor-nextjs", "node": "atom/status-dot", "variation": null, "job": "Overlay showing other users' live cursors in a room", "edge": "realtime-cursor-overlay"}
+{"id": "supabase:realtime-cursor-nuxtjs", "node": "atom/status-dot", "variation": null, "job": "Overlay showing other users' live cursors in a room", "edge": "realtime-cursor-overlay"}
+{"id": "supabase:realtime-cursor-react", "node": "atom/status-dot", "variation": null, "job": "Overlay showing other users' live cursors in a room", "edge": "realtime-cursor-overlay"}
+{"id": "supabase:realtime-cursor-react-router", "node": "atom/status-dot", "variation": null, "job": "Overlay showing other users' live cursors in a room", "edge": "realtime-cursor-overlay"}
+{"id": "supabase:realtime-cursor-tanstack", "node": "atom/status-dot", "variation": null, "job": "Overlay showing other users' live cursors in a room", "edge": "realtime-cursor-overlay"}
+{"id": "supabase:realtime-cursor-vue", "node": "atom/status-dot", "variation": null, "job": "Overlay showing other users' live cursors in a room", "edge": "realtime-cursor-overlay"}
+{"id": "supabase:realtime-flow-nextjs", "node": "component/board", "variation": null, "job": "Collaborative node-and-edge flow diagram editor", "edge": "flow-diagram-editor"}
+{"id": "supabase:realtime-flow-react", "node": "component/board", "variation": null, "job": "Collaborative node-and-edge flow diagram editor", "edge": "flow-diagram-editor"}
+{"id": "supabase:realtime-flow-react-router", "node": "component/board", "variation": null, "job": "Collaborative node-and-edge flow diagram editor", "edge": "flow-diagram-editor"}
+{"id": "supabase:realtime-flow-tanstack", "node": "component/board", "variation": null, "job": "Collaborative node-and-edge flow diagram editor", "edge": "flow-diagram-editor"}
+{"id": "supabase:realtime-monaco-nextjs", "node": "atom/text-input", "variation": "code-editor", "job": "Collaborative code editor synced across users"}
+{"id": "supabase:realtime-monaco-react", "node": "atom/text-input", "variation": "code-editor", "job": "Collaborative code editor synced across users"}
+{"id": "supabase:realtime-monaco-react-router", "node": "atom/text-input", "variation": "code-editor", "job": "Collaborative code editor synced across users"}
+{"id": "supabase:realtime-monaco-tanstack", "node": "atom/text-input", "variation": "code-editor", "job": "Collaborative code editor synced across users"}
+{"id": "supabase:safe-next-path", "node": null, "variation": null, "job": "Validates same-origin paths before redirecting"}
+{"id": "supabase:social-auth-nextjs", "node": "section/auth", "variation": "social", "job": "Social sign-in and logout flow with provider buttons"}
+{"id": "supabase:social-auth-nuxtjs", "node": "section/auth", "variation": "social", "job": "Social sign-in and logout flow with provider buttons"}
+{"id": "supabase:social-auth-react", "node": "section/auth", "variation": "social", "job": "Social sign-in and logout flow with provider buttons"}
+{"id": "supabase:social-auth-react-router", "node": "section/auth", "variation": "social", "job": "Social sign-in and logout flow with provider buttons"}
+{"id": "supabase:social-auth-tanstack", "node": "section/auth", "variation": "social", "job": "Social sign-in and logout flow with provider buttons"}
+{"id": "supabase:social-auth-vue", "node": "section/auth", "variation": "social", "job": "Social sign-in and logout flow with provider buttons"}
+{"id": "supabase:supabase-client-nextjs", "node": null, "variation": null, "job": "Supabase client, server and middleware setup"}
+{"id": "supabase:supabase-client-nuxtjs", "node": null, "variation": null, "job": "Supabase client, server and middleware setup"}
+{"id": "supabase:supabase-client-react", "node": null, "variation": null, "job": "Supabase client, server and middleware setup"}
+{"id": "supabase:supabase-client-react-router", "node": null, "variation": null, "job": "Supabase client, server and middleware setup"}
+{"id": "supabase:supabase-client-tanstack", "node": null, "variation": null, "job": "Supabase client, server and middleware setup"}
+{"id": "supabase:supabase-client-vue", "node": null, "variation": null, "job": "Supabase client, server and middleware setup"}

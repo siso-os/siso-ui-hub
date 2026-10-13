@@ -1,0 +1,27 @@
+{"id": "tool-ui:approval-card", "node": "component/agent-parts", "variation": "approval", "job": "Binary approval prompt for one agent action"}
+{"id": "tool-ui:audio", "node": "component/player", "variation": "audio-player", "job": "Play audio returned by a tool, with artwork"}
+{"id": "tool-ui:chart", "node": "component/chart", "variation": null, "job": "Render tool-result data as an interactive chart", "edge": "chart-primitives"}
+{"id": "tool-ui:citation", "node": "component/agent-parts", "variation": "sources-display", "job": "Source references with attribution behind an answer"}
+{"id": "tool-ui:code-block", "node": "component/code", "variation": "highlighted-code", "job": "Syntax-highlighted code snippet from a tool result"}
+{"id": "tool-ui:code-diff", "node": "component/code", "variation": "diff-view", "job": "Side-by-side code diff of a proposed change"}
+{"id": "tool-ui:data-table", "node": "component/table", "variation": "data-table", "job": "Sortable table of tool-call result rows"}
+{"id": "tool-ui:geo-map", "node": "component/map", "variation": "pin-map", "job": "Map of geolocated entities and fleet positions"}
+{"id": "tool-ui:image", "node": "atom/image", "variation": null, "job": "Show an image with caption, credit and metadata", "edge": "image-with-metadata"}
+{"id": "tool-ui:image-gallery", "node": "component/gallery", "variation": "grid-gallery", "job": "Grid of images browsed with a lightbox"}
+{"id": "tool-ui:instagram-post", "node": "component/card", "variation": null, "job": "Instagram post preview with author, media and caption", "edge": "instagram-post-preview"}
+{"id": "tool-ui:item-carousel", "node": "component/carousel", "variation": "cards-carousel", "job": "Horizontal carousel of browsable item cards"}
+{"id": "tool-ui:link-preview", "node": "component/popover", "variation": "link-preview", "job": "Rich link preview card built from Open Graph data"}
+{"id": "tool-ui:linkedin-post", "node": "component/card", "variation": null, "job": "LinkedIn post preview with author, media and caption", "edge": "linkedin-post-preview"}
+{"id": "tool-ui:message-draft", "node": "component/agent-parts", "variation": "approval", "job": "Review and confirm a drafted message before sending"}
+{"id": "tool-ui:option-list", "node": "component/agent-parts", "variation": "ask-user", "job": "Agent asks user to pick options, then confirm"}
+{"id": "tool-ui:order-summary", "node": "section/pricing", "variation": null, "job": "Itemized purchase summary with totals and confirm", "edge": "order-summary"}
+{"id": "tool-ui:parameter-slider", "node": "atom/slider", "variation": "slider", "job": "Sliders adjusting numeric tool parameters"}
+{"id": "tool-ui:plan", "node": "component/agent-parts", "variation": "plan-tasks", "job": "Step-by-step task plan with per-step status"}
+{"id": "tool-ui:preferences-panel", "node": "section/settings-panel", "variation": "form-layout", "job": "Compact panel of user preference controls and toggles"}
+{"id": "tool-ui:progress-tracker", "node": "component/agent-parts", "variation": "plan-tasks", "job": "Live progress of a running multi-step operation"}
+{"id": "tool-ui:question-flow", "node": "component/agent-parts", "variation": "ask-user", "job": "Branching multi-step questions the agent asks the user"}
+{"id": "tool-ui:stats-display", "node": "component/stat", "variation": "kpi-card", "job": "Compact cards showing key metric values"}
+{"id": "tool-ui:terminal", "node": "component/code", "variation": "terminal", "job": "Command-line output and logs from a tool run"}
+{"id": "tool-ui:video", "node": "component/player", "variation": "video-player", "job": "Video playback with controls and a poster frame"}
+{"id": "tool-ui:weather-widget", "node": "component/widget", "variation": null, "job": "Weather conditions and forecast in one widget", "edge": "weather-forecast"}
+{"id": "tool-ui:x-post", "node": "component/card", "variation": null, "job": "X post preview with author, media and caption", "edge": "x-post-preview"}

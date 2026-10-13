@@ -1,0 +1,1093 @@
+{"id": "spaceui:block-card-info-1", "node": "section/features", "variation": "card-grid", "job": "Service and audience craft cards in a two-column grid"}
+{"id": "spaceui:block-card-info-2", "node": "section/about", "variation": "mission-values", "job": "Philosophy and value cards with gradient icons"}
+{"id": "spaceui:block-dither-carousel", "node": "section/showcase", "variation": "carousel", "job": "3D dither carousel showcasing work images full-screen"}
+{"id": "spaceui:block-eleven-labs", "node": "page/home", "variation": "home-saas", "job": "ElevenLabs-style AI landing page with audio-reactive orb hero"}
+{"id": "spaceui:block-interactive-fun-facts", "node": "component/widget", "variation": "gamification", "job": "True and false quiz game with live score"}
+{"id": "spaceui:block-interactive-grid-hero-1", "node": "section/hero", "variation": "webgl", "job": "Hero filled by cursor-reactive proximity grid canvas"}
+{"id": "spaceui:block-sign-in", "node": "section/auth", "variation": "sign-in", "job": "Sign-in card with social buttons and remember me"}
+{"id": "spaceui:components-backgrounds-bubble", "node": "atom/image", "variation": null, "job": "Animated gradient bubbles as a page backdrop", "edge": "bubble-backdrop"}
+{"id": "spaceui:components-backgrounds-gradient", "node": "atom/image", "variation": null, "job": "Slowly shifting animated gradient page backdrop", "edge": "gradient-backdrop"}
+{"id": "spaceui:components-orb-bloop", "node": "component/agent-parts", "variation": "voice-orb", "job": "Compact audio-reactive bloop orb shader"}
+{"id": "spaceui:components-orb-loading", "node": "component/agent-parts", "variation": "working-status", "job": "Pixel grid loading orb with companion status banner"}
+{"id": "spaceui:components-orb-smooth", "node": "component/agent-parts", "variation": "voice-orb", "job": "Audio-reactive orb driven by WebGPU fluid simulation"}
+{"id": "spaceui:components-orb-thinking", "node": "component/agent-parts", "variation": "working-status", "job": "Particle orb showing nine cognitive working states"}
+{"id": "spaceui:components-shader-cloud", "node": "atom/image", "variation": null, "job": "Volumetric cloud material filling a surface", "edge": "cloud-backdrop"}
+{"id": "spaceui:components-shader-mesh-gradient", "node": "atom/image", "variation": null, "job": "WebGL mesh gradient with swirls and film grain", "edge": "mesh-gradient-backdrop"}
+{"id": "spaceui:components-shader-paper-shader", "node": "atom/image", "variation": null, "job": "Paper shaders WebGL2 canvas driven by live uniforms", "edge": "paper-shader-backdrop"}
+{"id": "spaceui:components-spaceui-adaptive-density-grid", "node": "atom/layout", "variation": null, "job": "Grid reflowing columns behind physics spring density tabs", "edge": "adaptive-density-grid"}
+{"id": "spaceui:components-spaceui-animoji", "node": "atom/icon", "variation": "animated", "job": "Animate every emoji in a string as images"}
+{"id": "spaceui:components-spaceui-avatar-extended", "node": "atom/avatar", "variation": "with-status", "job": "Avatars with badges, indicators and org logos"}
+{"id": "spaceui:components-spaceui-avatar-group", "node": "atom/avatar", "variation": "avatar-group", "job": "Stacking and overlapping avatar group system"}
+{"id": "spaceui:components-spaceui-badge-squircle", "node": "atom/badge", "variation": "badge", "job": "Tactile squircle badge with curvature morphing"}
+{"id": "spaceui:components-spaceui-blur-reveal-text", "node": "atom/text", "variation": null, "job": "Reveal text word by word with blur", "edge": "blur-reveal-text"}
+{"id": "spaceui:components-spaceui-bouncy-accordion", "node": "component/accordion", "variation": "standard-accordion", "job": "Spring accordion splitting rounded rows when opened"}
+{"id": "spaceui:components-spaceui-button-squircle", "node": "atom/button", "variation": "primary", "job": "Squircle button morphing curvature on hover"}
+{"id": "spaceui:components-spaceui-copy", "node": "atom/button", "variation": "copy-share", "job": "Copy to clipboard button with icon transition"}
+{"id": "spaceui:components-spaceui-data-grid", "node": "component/table", "variation": "data-table", "job": "Data grid shell with sorting, filtering and pagination"}
+{"id": "spaceui:components-spaceui-data-grid-column-filter", "node": "component/table", "variation": "with-toolbar-filters", "job": "Searchable popover filtering rows by column values"}
+{"id": "spaceui:components-spaceui-data-grid-column-header", "node": "component/table", "variation": null, "job": "Column header with sort, pin and resize menu", "edge": "column-header-controls"}
+{"id": "spaceui:components-spaceui-data-grid-column-visibility", "node": "component/table", "variation": null, "job": "Menu toggling which table columns are shown", "edge": "column-visibility-toggle"}
+{"id": "spaceui:components-spaceui-data-grid-pagination", "node": "component/pagination", "variation": "numbered-pages", "job": "Page through grid rows with numbered pages"}
+{"id": "spaceui:components-spaceui-data-grid-scroll-area", "node": "atom/layout", "variation": "scroll-area", "job": "Scroll container wrapping the data grid"}
+{"id": "spaceui:components-spaceui-data-grid-table", "node": "component/table", "variation": "data-table", "job": "Table markup with resizable and pinned columns"}
+{"id": "spaceui:components-spaceui-data-grid-table-dnd", "node": "component/table", "variation": null, "job": "Drag to reorder the table columns", "edge": "drag-reorder-table"}
+{"id": "spaceui:components-spaceui-data-grid-table-dnd-rows", "node": "component/table", "variation": null, "job": "Drag to reorder the table rows", "edge": "drag-reorder-rows"}
+{"id": "spaceui:components-spaceui-data-grid-table-virtual", "node": "component/table", "variation": "virtualized", "job": "Virtualized table rendering only visible rows"}
+{"id": "spaceui:components-spaceui-date-selector", "node": "component/picker", "variation": "date-picker", "job": "Pick a date or period with filter operators"}
+{"id": "spaceui:components-spaceui-detachable-accordion", "node": "component/accordion", "variation": "standard-accordion", "job": "Accordion rows detaching apart with spring gaps"}
+{"id": "spaceui:components-spaceui-dirt-carousel", "node": "component/carousel", "variation": "coverflow", "job": "3D ring carousel with drag snap and auto-rotate"}
+{"id": "spaceui:components-spaceui-doodle-callout", "node": "asset/shape", "variation": "decoration", "job": "Hand-drawn arrow and label drawing itself in"}
+{"id": "spaceui:components-spaceui-event-calendar", "node": "component/calendar", "variation": "event-calendar", "job": "Headless event calendar with month, week and agenda"}
+{"id": "spaceui:components-spaceui-event-calendar-agenda-view", "node": "component/calendar", "variation": null, "job": "Chronological agenda of events grouped by day", "edge": "calendar-agenda-view"}
+{"id": "spaceui:components-spaceui-event-calendar-content", "node": "component/calendar", "variation": null, "job": "Switches between the calendar view components", "edge": "calendar-view-switch"}
+{"id": "spaceui:components-spaceui-event-calendar-dnd", "node": null, "variation": null, "job": "Pointer gestures that move, resize and create events"}
+{"id": "spaceui:components-spaceui-event-calendar-event", "node": "component/calendar", "variation": null, "job": "Selectable draggable event chip in calendar views", "edge": "calendar-event-chip"}
+{"id": "spaceui:components-spaceui-event-calendar-i18n", "node": null, "variation": null, "job": "Default calendar texts, date formats and formatters"}
+{"id": "spaceui:components-spaceui-event-calendar-lib", "node": null, "variation": null, "job": "Pure calendar math for ranges, packing and segmentation"}
+{"id": "spaceui:components-spaceui-event-calendar-month-view", "node": "component/calendar", "variation": "month-calendar", "job": "Month grid with day cells and overflow counts"}
+{"id": "spaceui:components-spaceui-event-calendar-nav", "node": "component/calendar", "variation": null, "job": "Today, prev/next and view switcher toolbar", "edge": "calendar-nav"}
+{"id": "spaceui:components-spaceui-event-calendar-recurrence", "node": null, "variation": null, "job": "RFC 5545 recurrence rules expanded into occurrences"}
+{"id": "spaceui:components-spaceui-event-calendar-resource-view", "node": "component/calendar", "variation": null, "job": "Booking grid with one time column per resource", "edge": "resource-booking-grid"}
+{"id": "spaceui:components-spaceui-event-calendar-time-grid", "node": "component/calendar", "variation": "week-schedule", "job": "Week and day time grid with positioned events"}
+{"id": "spaceui:components-spaceui-event-calendar-types", "node": null, "variation": null, "job": "TypeScript contract for events, views and callbacks"}
+{"id": "spaceui:components-spaceui-filters", "node": "section/filters", "variation": "filters", "job": "Filter bar of menus, chips and search inputs"}
+{"id": "spaceui:components-spaceui-flip-text", "node": "atom/text", "variation": null, "job": "Characters flip in 3D with a staggered wave", "edge": "flip-text"}
+{"id": "spaceui:components-spaceui-fluid-countdown", "node": "component/widget", "variation": null, "job": "Countdown with rolling digits and play controls", "edge": "countdown-timer"}
+{"id": "spaceui:components-spaceui-frost-blurred", "node": "atom/layout", "variation": null, "job": "Stacked blur layers frosting content along an edge", "edge": "frost-blur-edge-fade"}
+{"id": "spaceui:components-spaceui-github-activity", "node": "component/chart", "variation": "heatmap", "job": "GitHub KPI cards with a 52-week contribution heatmap"}
+{"id": "spaceui:components-spaceui-glass-button", "node": "atom/button", "variation": "primary", "job": "Glassmorphic squircle button with hover shine"}
+{"id": "spaceui:components-spaceui-gooey-blobs", "node": "asset/shape", "variation": "organic", "job": "Draggable blobs merging through a gooey filter"}
+{"id": "spaceui:components-spaceui-gooey-text-reveal", "node": "atom/text", "variation": null, "job": "Line-by-line text reveal with gooey edges", "edge": "gooey-text-reveal"}
+{"id": "spaceui:components-spaceui-gooey-tooltip", "node": "atom/tooltip", "variation": "standard", "job": "Tooltip bubble gooey-connecting to its trigger"}
+{"id": "spaceui:components-spaceui-gradient-file-upload", "node": "component/upload", "variation": "dropzone", "job": "Glowing upload surface with progress and file badges"}
+{"id": "spaceui:components-spaceui-handle-reel", "node": "atom/text", "variation": null, "job": "Spinning handle reel decelerating onto a name", "edge": "handle-reel"}
+{"id": "spaceui:components-spaceui-icon-stack", "node": "asset/illustration", "variation": "icon-illustration", "job": "Layered icon illustration container with content slot"}
+{"id": "spaceui:components-spaceui-image-dark", "node": "atom/image", "variation": null, "job": "Image swapping source between light and dark themes", "edge": "theme-aware-image"}
+{"id": "spaceui:components-spaceui-interactive-checklist", "node": "atom/choice", "variation": "group", "job": "Tactile checklist with spring checks and progress"}
+{"id": "spaceui:components-spaceui-interest-picker", "node": "atom/choice", "variation": "group", "job": "Row-packed interest chips with emoji burst"}
+{"id": "spaceui:components-spaceui-item", "node": "component/list", "variation": "standard-list", "job": "List row primitive with media, title and description"}
+{"id": "spaceui:components-spaceui-kanban", "node": "component/board", "variation": "kanban-drag-drop", "job": "Drag and drop kanban board of cards"}
+{"id": "spaceui:components-spaceui-like-button", "node": "atom/button", "variation": "toggle", "job": "Heart toggle button with burst and count"}
+{"id": "spaceui:components-spaceui-liquid-metal-border", "node": "atom/layout", "variation": null, "job": "Liquid metal shader border wrapping any component", "edge": "liquid-metal-border-frame"}
+{"id": "spaceui:components-spaceui-liquid-sortable-list", "node": "component/list", "variation": "sortable", "job": "Drag-sortable team list with spring reordering"}
+{"id": "spaceui:components-spaceui-liquid-switch", "node": "atom/switch", "variation": "standard", "job": "Elastic toggle switch with spring return physics"}
+{"id": "spaceui:components-spaceui-member-selector", "node": "component/select", "variation": "multi-select", "job": "Member avatar selector with searchable popover"}
+{"id": "spaceui:components-spaceui-morph-icon", "node": "atom/icon", "variation": "animated", "job": "Icon morphing between shapes with motion presets"}
+{"id": "spaceui:components-spaceui-morphing-area", "node": "atom/layout", "variation": null, "job": "Frame morphing between aspect ratios around content", "edge": "morphing-aspect-frame"}
+{"id": "spaceui:components-spaceui-morphing-text", "node": "atom/text", "variation": null, "job": "Words morphing character by character between phrases", "edge": "text-morph"}
+{"id": "spaceui:components-spaceui-notification-list", "node": "component/inbox", "variation": "notification-center", "job": "Stacked notification cards expanding on interaction"}
+{"id": "spaceui:components-spaceui-phone-input", "node": "component/field", "variation": "with-addon", "job": "Phone text field with country code addon"}
+{"id": "spaceui:components-spaceui-pin-list", "node": "component/list", "variation": null, "job": "List pinning items into pinned and unpinned groups", "edge": "pin-toggle-list"}
+{"id": "spaceui:components-spaceui-rating", "node": "atom/slider", "variation": "rating", "job": "Star rating picking a score"}
+{"id": "spaceui:components-spaceui-resizable", "node": "atom/layout", "variation": null, "job": "Panels resized by dragging a divider handle", "edge": "resizable-panes"}
+{"id": "spaceui:components-spaceui-scroll-text-reveal", "node": "atom/layout", "variation": "scroll-reveal", "job": "Reveal text colour as the page scrolls"}
+{"id": "spaceui:components-spaceui-scrollspy", "node": "component/toc", "variation": "scroll-tracking", "job": "Track and highlight the section currently in view"}
+{"id": "spaceui:components-spaceui-section-scrollspy", "node": "component/toc", "variation": "minimap", "job": "Floating section bar tracking the active heading"}
+{"id": "spaceui:components-spaceui-slide-to-confirm", "node": "atom/button", "variation": "hold-confirm", "job": "Slide-to-confirm action control with spring inertia"}
+{"id": "spaceui:components-spaceui-sortable", "node": "component/list", "variation": "sortable", "job": "Drag to reorder list items"}
+{"id": "spaceui:components-spaceui-status-badge", "node": "atom/status-dot", "variation": "ping", "job": "Status badge with pulsing coloured indicator"}
+{"id": "spaceui:components-spaceui-team-roster-selector", "node": "component/select", "variation": "multi-select", "job": "Multi-select roster list of team members"}
+{"id": "spaceui:components-spaceui-textmoji", "node": "atom/text", "variation": null, "job": "Render emoji inside text as sized images", "edge": "emoji-text"}
+{"id": "spaceui:components-spaceui-theme-toggle", "node": "atom/switch", "variation": "theme-toggle", "job": "Theme toggle with view-transition reveals"}
+{"id": "spaceui:components-spaceui-tick-slider", "node": "atom/slider", "variation": "with-ticks", "job": "Scrubber drawn as a row of tick marks"}
+{"id": "spaceui:components-spaceui-timeline", "node": "component/timeline", "variation": "vertical-timeline", "job": "Vertical timeline of chronological entries"}
+{"id": "spaceui:components-spaceui-tournament-bracket", "node": "component/widget", "variation": null, "job": "Knockout bracket with round navigation and live matches", "edge": "tournament-bracket"}
+{"id": "spaceui:components-spaceui-user-presence-avatar", "node": "atom/avatar", "variation": "with-status", "job": "Avatar group showing online and offline presence"}
+{"id": "spaceui:components-spaceui-voice-chat-widget", "node": "section/chat", "variation": "voice", "job": "Expandable voice room pill with speaking participants"}
+{"id": "spaceui:components-spaceui-words-preloader", "node": "atom/loader", "variation": "specialized", "job": "Greeting words preloader wiping away with a mask"}
+{"id": "spaceui:demo-c-adaptive-density-grid-01", "node": "component/gallery", "variation": "grid-gallery", "job": "Image gallery with density pill and reflow columns"}
+{"id": "spaceui:demo-c-adaptive-density-grid-02", "node": "component/tabs", "variation": "pill-segmented", "job": "Category tabs reflowing a card grid"}
+{"id": "spaceui:demo-c-animoji-01", "node": "atom/icon", "variation": "animated", "job": "Inline text with animated emoji images"}
+{"id": "spaceui:demo-c-animoji-02", "node": "atom/icon", "variation": "animated", "job": "Same emoji through all three animated catalogs"}
+{"id": "spaceui:demo-c-animoji-03", "node": "atom/icon", "variation": "animated", "job": "Emoji from unicode escapes and flags"}
+{"id": "spaceui:demo-c-animoji-04", "node": "atom/icon", "variation": "animated", "job": "Animated emoji revealed through blur reveal text"}
+{"id": "spaceui:demo-c-aurora-glow-button-01", "node": "atom/button", "variation": "primary", "job": "Aurora glow button on a muted backdrop"}
+{"id": "spaceui:demo-c-autoscale-input-01", "node": "atom/text-input", "variation": "text-input", "job": "Amount field scaling its text to fit"}
+{"id": "spaceui:demo-c-backgrounds-bubble-01", "node": "atom/image", "variation": null, "job": "Demo of the animated bubble backdrop", "edge": "bubble-backdrop"}
+{"id": "spaceui:demo-c-backgrounds-gradient-01", "node": "atom/image", "variation": null, "job": "Demo of the animated gradient backdrop", "edge": "gradient-backdrop"}
+{"id": "spaceui:demo-c-badge-squircle-01", "node": "atom/badge", "variation": "badge", "job": "Visual style variants of the squircle badge"}
+{"id": "spaceui:demo-c-badge-squircle-02", "node": "atom/badge", "variation": "badge", "job": "Sizing scale for the squircle badge"}
+{"id": "spaceui:demo-c-badge-squircle-03", "node": "atom/badge", "variation": "icon-badge", "job": "Squircle badges with icons and link rendering"}
+{"id": "spaceui:demo-c-blur-reveal-text-01", "node": "atom/text", "variation": null, "job": "Playground tuning blur reveal split and stagger", "edge": "blur-reveal-text"}
+{"id": "spaceui:demo-c-bouncy-accordion-01", "node": "component/accordion", "variation": "standard-accordion", "job": "Spring accordion with icons and badge copy"}
+{"id": "spaceui:demo-c-button-squircle-01", "node": "atom/button", "variation": "primary", "job": "Squircle button variants with curvature morphing"}
+{"id": "spaceui:demo-c-button-squircle-02", "node": "atom/button", "variation": "primary", "job": "Squircle button sizing scale"}
+{"id": "spaceui:demo-c-button-squircle-03", "node": "atom/button", "variation": "icon-button", "job": "Squircle icon button sizing scale"}
+{"id": "spaceui:demo-c-chroma-palette-01", "node": "component/picker", "variation": "color-picker", "job": "Generate and pick from a colour swatch palette"}
+{"id": "spaceui:demo-c-cloud-01", "node": "atom/image", "variation": null, "job": "Demo of the interactive cloud material surface", "edge": "cloud-backdrop"}
+{"id": "spaceui:demo-c-data-grid-01", "node": "component/table", "variation": "data-table", "job": "Data grid demo with pagination"}
+{"id": "spaceui:demo-c-data-grid-02", "node": "component/table", "variation": "data-table", "job": "Data grid demo with cell borders"}
+{"id": "spaceui:demo-c-data-grid-03", "node": "component/table", "variation": "data-table", "job": "Data grid demo with dense layout"}
+{"id": "spaceui:primitives-slider", "node": "atom/slider", "variation": "slider", "job": "Drag a handle to pick a value along a range"}
+{"id": "spaceui:primitives-spinner", "node": "atom/loader", "variation": "spinner", "job": "Spinning icon showing that content is loading"}
+{"id": "spaceui:primitives-switch", "node": "atom/switch", "variation": "standard", "job": "Toggle a setting on or off"}
+{"id": "spaceui:primitives-table", "node": "component/table", "variation": "standard-table", "job": "Render rows and columns of tabular data"}
+{"id": "spaceui:primitives-tabs", "node": "component/tabs", "variation": "pill-segmented", "job": "Switch between panels with a segmented tab list"}
+{"id": "spaceui:primitives-textarea", "node": "atom/text-input", "variation": "textarea", "job": "Type multi-line text into a form field"}
+{"id": "spaceui:primitives-toast", "node": "component/toast", "variation": "basic-toast", "job": "Show a brief message that fades away"}
+{"id": "spaceui:primitives-toggle", "node": "atom/button", "variation": "toggle", "job": "Button that stays pressed to mark a state"}
+{"id": "spaceui:primitives-toggle-group", "node": "atom/switch", "variation": "toggle-group", "job": "Pick one or several options as toggle buttons"}
+{"id": "spaceui:primitives-toolbar", "node": "component/dock", "variation": "action-toolbar", "job": "Group toolbar buttons, links and inputs into one bar"}
+{"id": "spaceui:primitives-tooltip", "node": "atom/tooltip", "variation": "standard", "job": "Explain a control on hover or focus"}
+{"id": "spaceui:space-interactions", "node": null, "variation": null, "job": "Agent skill documenting Space UI styling rules and composition"}
+{"id": "spaceui:template-immersive-lens", "node": null, "variation": null, "job": "Full immersive photography portfolio demo app template"}
+{"id": "spaceui:demo-c-data-grid-04", "node": "component/table", "variation": "standard-table", "job": "data grid with no table borders"}
+{"id": "spaceui:demo-c-data-grid-05", "node": "component/table", "variation": "standard-table", "job": "data grid with striped rows"}
+{"id": "spaceui:demo-c-data-grid-06", "node": "component/table", "variation": "standard-table", "job": "data grid with auto-width table layout"}
+{"id": "spaceui:demo-c-data-grid-07", "node": "component/table", "variation": "data-table", "job": "data grid with row selection"}
+{"id": "spaceui:demo-c-data-grid-08", "node": "component/table", "variation": "expandable-rows", "job": "data grid with expandable rows"}
+{"id": "spaceui:demo-c-data-grid-09", "node": "component/table", "variation": "expandable-rows", "job": "data grid with a nested sub-table"}
+{"id": "spaceui:demo-c-data-grid-10", "node": "component/table", "variation": "standard-table", "job": "data grid with icons in column headers"}
+{"id": "spaceui:demo-c-data-grid-11", "node": "component/table", "variation": "data-table", "job": "data grid with sortable columns"}
+{"id": "spaceui:demo-c-data-grid-12", "node": "component/table", "variation": null, "job": "move columns to reorder the grid", "edge": "column-reorder"}
+{"id": "spaceui:demo-c-data-grid-13", "node": "component/table", "variation": null, "job": "drag columns to reorder the grid", "edge": "column-reorder"}
+{"id": "spaceui:demo-c-data-grid-14", "node": "component/table", "variation": null, "job": "drag rows to reorder the grid", "edge": "row-reorder"}
+{"id": "spaceui:demo-c-data-grid-15", "node": "component/table", "variation": null, "job": "drag column edges to resize them", "edge": "column-resize"}
+{"id": "spaceui:demo-c-data-grid-16", "node": "component/table", "variation": null, "job": "pin columns in place while scrolling", "edge": "pinned-columns"}
+{"id": "spaceui:demo-c-data-grid-17", "node": "component/table", "variation": "standard-table", "job": "data grid with a sticky header"}
+{"id": "spaceui:demo-c-data-grid-18", "node": "component/table", "variation": null, "job": "column controls menu in the grid header", "edge": "column-controls"}
+{"id": "spaceui:demo-c-data-grid-19", "node": "component/table", "variation": "standard-table", "job": "data grid inside a card container"}
+{"id": "spaceui:demo-c-data-grid-20", "node": "component/table", "variation": null, "job": "show or hide grid columns from a control", "edge": "column-visibility"}
+{"id": "spaceui:demo-c-data-grid-21", "node": "component/table", "variation": "standard-table", "job": "data grid with skeleton rows while loading"}
+{"id": "spaceui:demo-c-data-grid-22", "node": "component/table", "variation": "data-table", "job": "data grid with create, edit and delete actions"}
+{"id": "spaceui:demo-c-data-grid-23", "node": "component/table", "variation": "data-table", "job": "CRUD data grid inside a frame container"}
+{"id": "spaceui:demo-c-data-grid-24", "node": "component/table", "variation": null, "job": "data grid with a column totals footer", "edge": "column-totals"}
+{"id": "spaceui:demo-c-data-grid-25", "node": "component/table", "variation": null, "job": "data grid footer with summary statistics", "edge": "summary-stats-row"}
+{"id": "spaceui:demo-c-data-grid-26", "node": "component/table", "variation": null, "job": "per-column aggregate footer under the grid", "edge": "aggregate-footer"}
+{"id": "spaceui:demo-c-data-grid-27", "node": "component/table", "variation": "virtualized", "job": "data grid with local infinite scrolling"}
+{"id": "spaceui:demo-c-data-grid-28", "node": "component/table", "variation": "virtualized", "job": "data grid loading more rows from a server"}
+{"id": "spaceui:demo-c-data-grid-29", "node": "component/table", "variation": null, "job": "pin rows in place while scrolling", "edge": "pinned-rows"}
+{"id": "spaceui:demo-c-date-selector-01", "node": "component/picker", "variation": "date-picker", "job": "pick a single date from a calendar"}
+{"id": "spaceui:demo-c-date-selector-02", "node": "component/picker", "variation": "popover-layout", "job": "date picker opening inside a popover"}
+{"id": "spaceui:demo-c-date-selector-03", "node": "component/picker", "variation": "date-picker", "job": "pick a date inside a dialog"}
+{"id": "spaceui:demo-c-date-selector-04", "node": "component/picker", "variation": "date-picker", "job": "date selector opened from a dropdown menu"}
+{"id": "spaceui:demo-c-detachable-accordion-01", "node": "component/accordion", "variation": "standard-accordion", "job": "accordion whose open item detaches with gaps"}
+{"id": "spaceui:demo-c-dirt-carousel-01", "node": "component/carousel", "variation": "coverflow", "job": "3D ring carousel with drag and snap"}
+{"id": "spaceui:demo-c-doodle-callout-01", "node": "asset/shape", "variation": "decoration", "job": "hand-drawn arrow callout pointing at a plan"}
+{"id": "spaceui:demo-c-event-calendar-01", "node": "component/calendar", "variation": "event-calendar", "job": "event calendar with month, week and day views"}
+{"id": "spaceui:demo-c-event-calendar-02", "node": "component/calendar", "variation": null, "job": "book rooms on a resource calendar view", "edge": "resource-calendar"}
+{"id": "spaceui:demo-c-event-calendar-03", "node": "component/calendar", "variation": "event-calendar", "job": "create and edit events from one dialog"}
+{"id": "spaceui:demo-c-event-calendar-04", "node": "component/calendar", "variation": "event-calendar", "job": "event calendar with custom event chips"}
+{"id": "spaceui:demo-c-event-calendar-05", "node": "component/calendar", "variation": null, "job": "drag on the calendar to book a slot", "edge": "drag-to-book"}
+{"id": "spaceui:demo-c-file-upload-01", "node": "component/upload", "variation": "dropzone", "job": "basic file upload picker"}
+{"id": "spaceui:demo-c-file-upload-02", "node": "component/upload", "variation": "avatar-upload", "job": "upload and replace a profile avatar"}
+{"id": "spaceui:demo-c-file-upload-03", "node": "component/upload", "variation": "dropzone", "job": "drag and drop files to upload"}
+{"id": "spaceui:demo-c-file-upload-04", "node": "component/upload", "variation": "with-previews", "job": "upload images into a gallery grid"}
+{"id": "spaceui:demo-c-file-upload-05", "node": "component/upload", "variation": "progress-tracking", "job": "upload files with per-file progress bars"}
+{"id": "spaceui:demo-c-file-upload-06", "node": "component/upload", "variation": "attachment-list", "job": "uploaded files listed in a table"}
+{"id": "spaceui:demo-c-file-upload-07", "node": "component/upload", "variation": "with-previews", "job": "upload images with thumbnail previews"}
+{"id": "spaceui:demo-c-file-upload-08", "node": "component/upload", "variation": null, "job": "reorder uploaded images by dragging", "edge": "sortable-uploads"}
+{"id": "spaceui:demo-c-file-upload-09", "node": "component/upload", "variation": "attachment-list", "job": "uploaded files shown as cards"}
+{"id": "spaceui:demo-c-file-upload-10", "node": "component/upload", "variation": null, "job": "upload a cover banner image", "edge": "cover-image-upload"}
+{"id": "spaceui:demo-c-filters-01", "node": "section/filters", "variation": "filters", "job": "filter bar with several field types"}
+{"id": "spaceui:demo-c-filters-02", "node": "section/filters", "variation": "filters", "job": "filter fields showing input validation"}
+{"id": "spaceui:demo-c-filters-03", "node": "section/filters", "variation": "filters", "job": "filters opened from a custom trigger button"}
+{"id": "spaceui:demo-c-filters-04", "node": "section/filters", "variation": "filters", "job": "small-size filter controls"}
+{"id": "spaceui:demo-c-filters-05", "node": "section/filters", "variation": "filters", "job": "large-size filter controls"}
+{"id": "spaceui:demo-c-filters-06", "node": "section/filters", "variation": "filters", "job": "filter bar with custom control widgets"}
+{"id": "spaceui:demo-c-filters-07", "node": "section/filters", "variation": "filters", "job": "filter bar driving a data grid"}
+{"id": "spaceui:demo-c-filters-08", "node": "section/filters", "variation": "filters", "job": "filters and a data grid with async loading"}
+{"id": "spaceui:demo-c-filters-09", "node": "section/filters", "variation": "filters", "job": "filter bar with translated labels"}
+{"id": "spaceui:demo-c-filters-10", "node": "section/filters", "variation": "filters", "job": "filter options in a virtualized list"}
+{"id": "spaceui:demo-c-filters-11", "node": "section/filters", "variation": "filters", "job": "filter options prefetched asynchronously"}
+{"id": "spaceui:demo-c-filters-12", "node": "section/filters", "variation": "search-suggestions", "job": "filter search fetching options from the server"}
+{"id": "spaceui:demo-c-flip-text-01", "node": "atom/text", "variation": "heading", "job": "heading with a looping character flip wave"}
+{"id": "spaceui:demo-c-fluid-countdown-01", "node": "component/stat", "variation": "counter", "job": "countdown timer with fluid rolling digits"}
+{"id": "spaceui:demo-c-fluid-crossfade-01", "node": "asset/shape", "variation": "organic", "job": "fluid shader crossfade background effect"}
+{"id": "spaceui:demo-c-fluid-distortion-image-01", "node": "asset/shape", "variation": "organic", "job": "image rippled by cursor-driven fluid distortion"}
+{"id": "spaceui:demo-c-fluid-dither-crossfade-01", "node": "asset/shape", "variation": "organic", "job": "dithered fluid crossfade background effect"}
+{"id": "spaceui:demo-c-frost-blurred-01", "node": "asset/shape", "variation": "decoration", "job": "blur overlay frosting the edge of content"}
+{"id": "spaceui:demo-c-github-activity-01", "node": "component/chart", "variation": "heatmap", "job": "GitHub contribution activity heatmap"}
+{"id": "spaceui:demo-c-github-activity-02", "node": "component/stat", "variation": "with-chart", "job": "KPI stat cards above a contribution heatmap"}
+{"id": "spaceui:demo-c-github-activity-03", "node": "component/stat", "variation": "with-chart", "job": "contribution heatmap with KPI cards below"}
+{"id": "spaceui:demo-c-glass-button-icon-01", "node": "atom/button", "variation": "icon-button", "job": "icon-only glass buttons"}
+{"id": "spaceui:demo-c-glass-button-reveal-01", "node": "atom/button", "variation": "icon-button", "job": "glass icon button revealing its label on hover"}
+{"id": "spaceui:demo-c-glass-button-text-01", "node": "atom/button", "variation": "primary", "job": "glass CTA button with text and icon"}
+{"id": "spaceui:demo-c-gooey-blobs-01", "node": "asset/shape", "variation": "organic", "job": "draggable blobs that merge into one shape"}
+{"id": "spaceui:demo-c-gooey-info-popover-01", "node": "component/popover", "variation": "hover-card", "job": "info button morphing into a status card"}
+{"id": "spaceui:demo-c-gooey-slots-tooltip-01", "node": "component/popover", "variation": "info-card", "job": "hover button expanding into a rich content card"}
+{"id": "spaceui:demo-c-gooey-text-reveal-01", "node": "atom/text", "variation": "heading", "job": "heading revealed with a gooey blur"}
+{"id": "spaceui:demo-c-gooey-tooltip-01", "node": "component/popover", "variation": "tooltip", "job": "cursor-following tooltip with a gooey connector"}
+{"id": "spaceui:demo-c-gradient-file-upload-01", "node": "component/upload", "variation": "dropzone", "job": "drag and drop upload with a glowing border"}
+{"id": "spaceui:demo-c-handle-reel-01", "node": "component/field", "variation": "with-addon", "job": "handle reel settling on a prefixed username"}
+{"id": "spaceui:demo-c-handle-reel-02", "node": "component/field", "variation": "with-addon", "job": "handle reel rolled by a trigger button"}
+{"id": "spaceui:demo-c-heat-shade-01", "node": "asset/shape", "variation": "organic", "job": "climbing heat tongue shader effect"}
+{"id": "spaceui:demo-c-heat-shade-02", "node": "asset/shape", "variation": "organic", "job": "drifting heat field shader background"}
+{"id": "spaceui:demo-c-icon-stack-01", "node": "atom/icon", "variation": "ui-icons", "job": "layered isometric icon graphic"}
+{"id": "spaceui:demo-c-icon-stack-02", "node": "atom/icon", "variation": "ui-icons", "job": "icon stack at responsive sizes"}
+{"id": "spaceui:demo-c-icon-stack-03", "node": "atom/icon", "variation": "ui-icons", "job": "icon stack in semantic colors"}
+{"id": "spaceui:demo-c-icon-stack-04", "node": "atom/icon", "variation": "ui-icons", "job": "icon stack with a badge overlay"}
+{"id": "spaceui:demo-c-icon-stack-05", "node": "component/empty", "variation": "illustrated", "job": "empty state with a layered icon illustration"}
+{"id": "spaceui:demo-c-icon-stack-06", "node": "component/list", "variation": "standard-list", "job": "icon stack as media in a list item"}
+{"id": "spaceui:demo-c-image-dark-01", "node": "asset/logo", "variation": "brand", "job": "brand logo adapting to light and dark mode"}
+{"id": "spaceui:demo-c-image-dark-02", "node": "atom/image", "variation": null, "job": "image filling an aspect-ratio card", "edge": "fill-image"}
+{"id": "spaceui:demo-c-interactive-checklist-01", "node": "atom/choice", "variation": "group", "job": "tappable checklist with spring checkmarks and progress"}
+{"id": "spaceui:demo-c-interest-picker-01", "node": "atom/choice", "variation": "group", "job": "drag-scroll chip cloud toggling interests"}
+{"id": "spaceui:demo-c-kanban-01", "node": "component/board", "variation": "kanban-drag-drop", "job": "kanban board with a placeholder drop overlay"}
+{"id": "spaceui:demo-c-kanban-02", "node": "component/board", "variation": "kanban-drag-drop", "job": "kanban board with a dynamic drag overlay"}
+{"id": "spaceui:demo-c-kanban-03", "node": "component/board", "variation": "kanban-drag-drop", "job": "kanban board with framed columns"}
+{"id": "spaceui:demo-c-kanban-04", "node": "component/board", "variation": "multi-column-board", "job": "minimal kanban with a stacked frame"}
+{"id": "spaceui:demo-c-kanban-05", "node": "component/board", "variation": "kanban-drag-drop", "job": "feature roadmap kanban with progress"}
+{"id": "spaceui:demo-c-kanban-06", "node": "component/board", "variation": "kanban-drag-drop", "job": "kanban moves persisted with optimistic updates"}
+{"id": "spaceui:demo-c-like-button-01", "node": "atom/button", "variation": "toggle", "job": "like button with a count"}
+{"id": "spaceui:demo-c-liquid-mask-crossfade-01", "node": "asset/shape", "variation": "organic", "job": "cursor-trail liquid mask crossfade effect"}
+{"id": "spaceui:demo-c-liquid-mesh-blur-01", "node": "asset/shape", "variation": "organic", "job": "liquid mesh gradient shader background"}
+{"id": "spaceui:demo-c-liquid-mesh-blur-02", "node": "asset/shape", "variation": "decoration", "job": "ambient top glow behind a header"}
+{"id": "spaceui:demo-c-liquid-metal-border-01", "node": "atom/avatar", "variation": "standard", "job": "avatar wrapped in a liquid metal border"}
+{"id": "spaceui:demo-c-liquid-metal-border-02", "node": "atom/button", "variation": "primary", "job": "button wrapped in a liquid metal border"}
+{"id": "spaceui:demo-c-liquid-metal-border-03", "node": "component/card", "variation": "standard-card", "job": "card wrapped in a liquid metal border"}
+{"id": "spaceui:demo-c-liquid-metal-border-04", "node": "asset/avatar", "variation": "generated", "job": "liquid metal border presets around generative avatars"}
+{"id": "spaceui:demo-c-liquid-sortable-list-01", "node": "component/list", "variation": "sortable", "job": "drag to reorder a team list"}
+{"id": "spaceui:demo-c-liquid-switch-01", "node": "atom/switch", "variation": "standard", "job": "elastic toggle switch with spring physics"}
+{"id": "spaceui:demo-c-member-selector-01", "node": "component/select", "variation": "multi-select", "job": "search and pick several members"}
+{"id": "spaceui:demo-c-mesh-gradient-01", "node": "asset/shape", "variation": "organic", "job": "swirling mesh gradient shader background"}
+{"id": "spaceui:demo-c-morph-icon-01", "node": "atom/icon", "variation": "animated", "job": "morphing icon transition playground"}
+{"id": "spaceui:demo-c-morph-icon-02", "node": "atom/switch", "variation": "theme-toggle", "job": "theme toggle morphing sun, moon and system icons"}
+{"id": "spaceui:demo-c-morph-icon-03", "node": "atom/button", "variation": "toggle", "job": "like, mute and play toggle icons"}
+{"id": "spaceui:demo-c-morph-icon-04", "node": "atom/icon", "variation": "animated", "job": "morph icon animation presets side by side"}
+{"id": "spaceui:demo-c-morph-icon-05", "node": "atom/status-dot", "variation": "standard", "job": "morphing status icon for task lifecycle states"}
+{"id": "spaceui:demo-c-morph-icon-06", "node": "atom/icon", "variation": "animated", "job": "icons morphing for reveal and expand toggles"}
+{"id": "spaceui:demo-c-morphing-area-01", "node": "atom/layout", "variation": null, "job": "aspect-ratio frame morphing with equal area", "edge": "morphing-aspect-frame"}
+{"id": "spaceui:demo-c-morphing-command-bar-01", "node": "component/command", "variation": "command-menu", "job": "elastic command bar expanding into an active input"}
+{"id": "spaceui:demo-c-morphing-search-pill-01", "node": "component/search", "variation": "expanding-search", "job": "search pill expanding into a full input"}
+{"id": "spaceui:demo-c-morphing-text-01", "node": "atom/text", "variation": "heading", "job": "morphing between words in a heading"}
+{"id": "spaceui:demo-c-morphing-text-02", "node": "atom/text", "variation": null, "job": "animate text that morphs between phrases", "edge": "morphing-text"}
+{"id": "spaceui:demo-c-notification-list-01", "node": "component/inbox", "variation": "notification-inbox", "job": "notification list with animated stacking"}
+{"id": "spaceui:demo-c-orb-bloop-01", "node": "component/agent-parts", "variation": "voice-orb", "job": "compact audio-reactive blob orb"}
+{"id": "spaceui:demo-c-orb-loading-01", "node": "atom/loader", "variation": "spinner", "job": "orb loading indicator"}
+{"id": "spaceui:demo-c-orb-loading-02", "node": "atom/loader", "variation": "spinner", "job": "showcase of all orb loader states"}
+{"id": "spaceui:demo-c-orb-loading-03", "node": "atom/loader", "variation": "spinner", "job": "orb loader in Tailwind colours"}
+{"id": "spaceui:demo-c-orb-loading-04", "node": "component/agent-parts", "variation": "working-status", "job": "assistant loading status card with state switching"}
+{"id": "spaceui:demo-c-orb-smooth-01", "node": "component/agent-parts", "variation": "voice-orb", "job": "audio-reactive smooth voice orb"}
+{"id": "spaceui:demo-c-orb-thinking-01", "node": "component/agent-parts", "variation": "working-status", "job": "orb showing the agent working"}
+{"id": "spaceui:demo-c-orb-thinking-02", "node": "component/agent-parts", "variation": "working-status", "job": "orb showing the agent searching"}
+{"id": "spaceui:demo-c-orb-thinking-03", "node": "component/agent-parts", "variation": "working-status", "job": "orb showing the agent solving"}
+{"id": "spaceui:demo-c-orb-thinking-04", "node": "component/agent-parts", "variation": "working-status", "job": "orb showing the agent listening"}
+{"id": "spaceui:demo-c-orb-thinking-05", "node": "component/agent-parts", "variation": "working-status", "job": "orb showing the agent connecting"}
+{"id": "spaceui:demo-c-orb-thinking-06", "node": "component/agent-parts", "variation": "working-status", "job": "orb showing the agent weaving"}
+{"id": "spaceui:demo-c-orb-thinking-07", "node": "component/agent-parts", "variation": "working-status", "job": "orb showing the agent composing"}
+{"id": "spaceui:demo-c-orb-thinking-08", "node": "component/agent-parts", "variation": "working-status", "job": "orb showing the agent breathing"}
+{"id": "spaceui:demo-c-orb-thinking-09", "node": "component/agent-parts", "variation": "working-status", "job": "orb showing the agent shaping"}
+{"id": "spaceui:demo-c-paper-shader-01", "node": "asset/shape", "variation": "decoration", "job": "paper-texture WebGL background shader"}
+{"id": "spaceui:demo-c-phone-input-01", "node": "component/field", "variation": "with-addon", "job": "phone input with country dial code"}
+{"id": "spaceui:demo-c-phone-input-02", "node": "component/field", "variation": "with-addon", "job": "small phone input"}
+{"id": "spaceui:demo-c-phone-input-03", "node": "component/field", "variation": "with-addon", "job": "large phone input"}
+{"id": "spaceui:demo-c-phone-input-04", "node": "component/field", "variation": "with-addon", "job": "disabled phone input"}
+{"id": "spaceui:demo-c-phone-input-05", "node": "component/field", "variation": "with-addon", "job": "phone input with preset value"}
+{"id": "spaceui:demo-c-phone-input-06", "node": "component/field", "variation": "validation-states", "job": "phone input showing error state"}
+{"id": "spaceui:demo-c-phone-input-07", "node": "component/field", "variation": "with-addon", "job": "phone input with default country"}
+{"id": "spaceui:demo-c-phone-input-08", "node": "component/field", "variation": "with-addon", "job": "read-only phone input"}
+{"id": "spaceui:demo-c-phone-input-09", "node": "component/field", "variation": "validation-states", "job": "phone input validating format as you type"}
+{"id": "spaceui:demo-c-phone-input-10", "node": "component/field", "variation": "floating-label", "job": "phone input in labelled field with description"}
+{"id": "spaceui:demo-c-pin-list-01", "node": "component/list", "variation": null, "job": "list for pinning and unpinning items into groups", "edge": "pin-list"}
+{"id": "spaceui:demo-c-pixel-fill-button-01", "node": "atom/button", "variation": null, "job": "button with animated pixel fill", "edge": "pixel-fill-button"}
+{"id": "spaceui:demo-c-pixel-reveal-image-01", "node": "atom/image", "variation": null, "job": "image revealed by scroll pixel wavefront", "edge": "pixel-reveal-image"}
+{"id": "spaceui:demo-c-pixel-reveal-text-01", "node": "atom/text", "variation": null, "job": "text emerging from pixel matrix noise", "edge": "pixel-reveal-text"}
+{"id": "spaceui:demo-c-pixel-reveal-text-02", "node": "atom/text", "variation": null, "job": "pixel reveal cycling through phrases", "edge": "pixel-reveal-text"}
+{"id": "spaceui:demo-c-rainbow-glow-border-01", "node": "atom/avatar", "variation": null, "job": "avatar wrapped in rainbow glow border", "edge": "rainbow-glow-avatar"}
+{"id": "spaceui:demo-c-rainbow-glow-border-02", "node": "atom/button", "variation": null, "job": "button wrapped in rainbow glow border", "edge": "rainbow-glow-button"}
+{"id": "spaceui:demo-c-rainbow-glow-border-03", "node": "component/card", "variation": null, "job": "card wrapped in rainbow glow border", "edge": "rainbow-glow-card"}
+{"id": "spaceui:demo-c-rainbow-glow-border-04", "node": "asset/shape", "variation": "decoration", "job": "rainbow glow border colour presets"}
+{"id": "spaceui:demo-c-rainbow-glow-button-01", "node": "atom/button", "variation": null, "job": "button with orbiting rainbow glow orbs", "edge": "rainbow-glow-button"}
+{"id": "spaceui:demo-c-rating-01", "node": "atom/slider", "variation": "rating", "job": "star rating"}
+{"id": "spaceui:demo-c-rating-02", "node": "atom/slider", "variation": "rating", "job": "rating showing decimal value"}
+{"id": "spaceui:demo-c-rating-03", "node": "atom/slider", "variation": "rating", "job": "rating with numeric value shown"}
+{"id": "spaceui:demo-c-rating-04", "node": "atom/slider", "variation": "rating", "job": "editable star rating"}
+{"id": "spaceui:demo-c-rating-05", "node": "atom/slider", "variation": "rating", "job": "star rating in different sizes"}
+{"id": "spaceui:demo-c-rating-06", "node": "atom/slider", "variation": "rating", "job": "rating with review summary"}
+{"id": "spaceui:demo-c-rating-07", "node": "atom/slider", "variation": "rating", "job": "interactive half-star rating"}
+{"id": "spaceui:demo-c-rating-08", "node": "atom/slider", "variation": "rating", "job": "emoji reaction rating"}
+{"id": "spaceui:demo-c-rating-09", "node": "atom/slider", "variation": "rating", "job": "rating with review text input"}
+{"id": "spaceui:demo-c-resizable-01", "node": "atom/layout", "variation": null, "job": "two-pane horizontally resizable layout", "edge": "resizable-panels"}
+{"id": "spaceui:demo-c-resizable-02", "node": "atom/layout", "variation": null, "job": "vertically resizable split layout", "edge": "resizable-panels"}
+{"id": "spaceui:demo-c-resizable-03", "node": "atom/layout", "variation": null, "job": "nested mixed-direction resizable layout", "edge": "resizable-panels"}
+{"id": "spaceui:demo-c-resizable-04", "node": "atom/layout", "variation": null, "job": "nested resizable panels", "edge": "resizable-panels"}
+{"id": "spaceui:demo-c-resizable-05", "node": "atom/layout", "variation": null, "job": "resize handle with animated pill", "edge": "resizable-handle"}
+{"id": "spaceui:demo-c-resizable-06", "node": "atom/layout", "variation": null, "job": "resize handle pill with spring scale", "edge": "resizable-handle"}
+{"id": "spaceui:demo-c-resizable-07", "node": "atom/layout", "variation": null, "job": "resize handle expanding on drag", "edge": "resizable-handle"}
+{"id": "spaceui:demo-c-resizable-08", "node": "atom/layout", "variation": null, "job": "nested resizable layout with pill handles", "edge": "resizable-panels"}
+{"id": "spaceui:demo-c-resizable-09", "node": "atom/layout", "variation": null, "job": "three-panel layout with pill handles", "edge": "resizable-panels"}
+{"id": "spaceui:demo-c-resizable-10", "node": "atom/layout", "variation": null, "job": "state-tracked resizable layout", "edge": "resizable-panels"}
+{"id": "spaceui:demo-c-scatter-text-01", "node": "atom/text", "variation": null, "job": "email subscribe field scattering into grains", "edge": "scatter-text"}
+{"id": "spaceui:demo-c-scroll-manifesto-01", "node": "atom/text", "variation": null, "job": "mission statement revealed word by word", "edge": "scroll-manifesto"}
+{"id": "spaceui:demo-c-scroll-text-reveal-01", "node": "atom/text", "variation": null, "job": "text revealed progressively while scrolling", "edge": "scroll-text-reveal"}
+{"id": "spaceui:demo-c-scrollspy-01", "node": "component/toc", "variation": "scroll-tracking", "job": "highlight active section while scrolling"}
+{"id": "spaceui:demo-c-scrollspy-02", "node": "atom/layout", "variation": "scroll-area", "job": "scrollable content area"}
+{"id": "spaceui:demo-c-section-scrollspy-01", "node": "component/toc", "variation": "scroll-tracking", "job": "floating index following the active heading"}
+{"id": "spaceui:demo-c-silk-border-01", "node": "atom/avatar", "variation": null, "job": "avatar with animated silk border", "edge": "silk-border-avatar"}
+{"id": "spaceui:demo-c-silk-border-02", "node": "atom/button", "variation": null, "job": "button and badge with silk borders", "edge": "silk-border-button"}
+{"id": "spaceui:demo-c-silk-border-03", "node": "component/card", "variation": null, "job": "card framed by a silk border", "edge": "silk-border-card"}
+{"id": "spaceui:demo-c-silk-border-04", "node": "asset/shape", "variation": "decoration", "job": "silk border presets on a generative avatar"}
+{"id": "spaceui:demo-c-silk-flare-01", "node": "asset/shape", "variation": "decoration", "job": "silk mesh gradient background shader"}
+{"id": "spaceui:demo-c-silk-gradient-01", "node": "asset/shape", "variation": "decoration", "job": "warped silk gradient background shader"}
+{"id": "spaceui:demo-c-slide-to-confirm-01", "node": "atom/button", "variation": "hold-confirm", "job": "slide to confirm an action"}
+{"id": "spaceui:demo-c-slosh-slider-01", "node": "atom/slider", "variation": "slider", "job": "liquid slider with viscosity and tilt"}
+{"id": "spaceui:demo-c-smooth-slider-01", "node": "atom/slider", "variation": "slider", "job": "continuous slider with tick dots"}
+{"id": "spaceui:demo-c-sortable-01", "node": "component/list", "variation": "sortable", "job": "drag-and-drop sortable list"}
+{"id": "spaceui:demo-c-sortable-02", "node": "component/list", "variation": "sortable", "job": "sortable items in a grid"}
+{"id": "spaceui:demo-c-sortable-03", "node": "component/list", "variation": "sortable", "job": "nested sortable list"}
+{"id": "spaceui:demo-c-sortable-04", "node": "component/list", "variation": "sortable", "job": "sortable playlist"}
+{"id": "spaceui:demo-c-sortable-05", "node": "component/list", "variation": "sortable", "job": "reorder settings by priority"}
+{"id": "spaceui:demo-c-sortable-06", "node": "component/list", "variation": "sortable", "job": "reorder sidebar navigation items"}
+{"id": "spaceui:demo-c-sortable-07", "node": "component/list", "variation": "sortable", "job": "sortable image gallery grid"}
+{"id": "spaceui:demo-c-sortable-08", "node": "component/list", "variation": "sortable", "job": "sortable list persisted to a backend"}
+{"id": "spaceui:demo-c-squircle-01", "node": "asset/shape", "variation": "geometric", "job": "squircle versus rounded corner shapes"}
+{"id": "spaceui:demo-c-status-badge-01", "node": "atom/status-dot", "variation": "standard", "job": "status badges for online, busy, away, error"}
+{"id": "spaceui:demo-c-status-badge-02", "node": "atom/status-dot", "variation": "standard", "job": "status badge sizing scale"}
+{"id": "spaceui:demo-c-status-badge-03", "node": "atom/status-dot", "variation": "standard", "job": "status badge container style variants"}
+{"id": "spaceui:demo-c-status-badge-04", "node": "atom/status-dot", "variation": "ping", "job": "status badge with animated radar ping"}
+{"id": "spaceui:demo-c-status-badge-05", "node": "atom/status-dot", "variation": "standard", "job": "stacked multi-line status badge"}
+{"id": "spaceui:demo-c-status-badge-06", "node": "atom/status-dot", "variation": "standard", "job": "availability badge with booking link"}
+{"id": "spaceui:demo-c-status-badge-07", "node": "atom/status-dot", "variation": "standard", "job": "unavailable badge with resumption date"}
+{"id": "spaceui:demo-c-status-badge-08", "node": "atom/status-dot", "variation": "standard", "job": "availability badge with mission quota"}
+{"id": "spaceui:demo-c-status-badge-09", "node": "atom/status-dot", "variation": "standard", "job": "freelance presence badge with contact"}
+{"id": "spaceui:demo-c-team-roster-selector-01", "node": "component/list", "variation": "with-avatars", "job": "select team members from an avatar roster"}
+{"id": "spaceui:demo-c-textmoji-01", "node": "atom/text", "variation": null, "job": "inline text with emoji rendered as images", "edge": "textmoji"}
+{"id": "spaceui:demo-c-textmoji-02", "node": "atom/text", "variation": null, "job": "textmoji scaling with the surrounding font", "edge": "textmoji"}
+{"id": "spaceui:demo-c-textmoji-03", "node": "atom/text", "variation": null, "job": "textmoji across six emoji catalogues", "edge": "textmoji"}
+{"id": "spaceui:demo-c-textmoji-04", "node": "atom/text", "variation": null, "job": "textmoji written as unicode escapes", "edge": "textmoji"}
+{"id": "spaceui:demo-c-textmoji-05", "node": "atom/text", "variation": null, "job": "textmoji inside blur reveal text", "edge": "textmoji"}
+{"id": "spaceui:demo-c-theme-toggle-01", "node": "atom/switch", "variation": "theme-toggle", "job": "toggle light and dark theme"}
+{"id": "spaceui:demo-c-tick-slider-01", "node": "atom/slider", "variation": "with-ticks", "job": "tick-mark scrubber slider"}
+{"id": "spaceui:demo-c-timeline-01", "node": "component/timeline", "variation": "vertical-timeline", "job": "basic vertical event timeline"}
+{"id": "spaceui:demo-c-timeline-02", "node": "component/timeline", "variation": "vertical-timeline", "job": "roadmap timeline"}
+{"id": "spaceui:demo-c-timeline-03", "node": "component/timeline", "variation": "steps-timeline", "job": "order status timeline"}
+{"id": "spaceui:demo-c-timeline-04", "node": "component/timeline", "variation": "activity-timeline", "job": "git commit activity timeline"}
+{"id": "spaceui:demo-c-timeline-05", "node": "component/timeline", "variation": "vertical-timeline", "job": "timeline with milestones"}
+{"id": "spaceui:demo-c-timeline-06", "node": "component/timeline", "variation": "steps-timeline", "job": "pipeline step timeline"}
+{"id": "spaceui:demo-c-timeline-07", "node": "component/timeline", "variation": "vertical-timeline", "job": "timeline with roadmap items"}
+{"id": "spaceui:demo-c-timeline-08", "node": "component/timeline", "variation": "vertical-timeline", "job": "vertical timeline"}
+{"id": "spaceui:demo-c-timeline-09", "node": "component/timeline", "variation": "horizontal-timeline", "job": "horizontal timeline with leading labels"}
+{"id": "spaceui:demo-c-timeline-10", "node": "component/timeline", "variation": "activity-timeline", "job": "deployment log timeline"}
+{"id": "spaceui:demo-c-timeline-11", "node": "component/timeline", "variation": "activity-timeline", "job": "activity feed timeline with user avatars"}
+{"id": "spaceui:demo-c-timeline-12", "node": "component/timeline", "variation": "horizontal-timeline", "job": "compact horizontal milestone timeline"}
+{"id": "spaceui:demo-c-tournament-bracket-01", "node": "component/tree", "variation": "hierarchical", "job": "knockout bracket with round navigation"}
+{"id": "spaceui:demo-c-user-presence-avatar-01", "node": "atom/avatar", "variation": "with-status", "job": "avatar group showing online and offline users"}
+{"id": "spaceui:demo-c-velocity-hover-preview-01", "node": "component/popover", "variation": "link-preview", "job": "floating WebGL preview on service hover"}
+{"id": "spaceui:demo-c-voice-chat-widget-01", "node": "section/chat", "variation": "voice", "job": "collapsible voice chat participant widget"}
+{"id": "spaceui:demo-c-words-preloader-01", "node": "atom/loader", "variation": null, "job": "greeting words preloader", "edge": "words-preloader"}
+{"id": "spaceui:demo-h-auto-height-01", "node": null, "variation": null, "job": "hook animating container height changes"}
+{"id": "spaceui:demo-h-auto-height-02", "node": null, "variation": null, "job": "hook animating FAQ accordion height"}
+{"id": "spaceui:demo-h-battery-status-01", "node": null, "variation": null, "job": "hook reading battery level and charging state"}
+{"id": "spaceui:demo-h-cache-01", "node": null, "variation": null, "job": "memoization cache map utility"}
+{"id": "spaceui:demo-h-character-limit-01", "node": null, "variation": null, "job": "hook counting characters toward a limit"}
+{"id": "spaceui:demo-h-character-limit-02", "node": null, "variation": null, "job": "Count characters typed into a social post composer"}
+{"id": "spaceui:demo-h-class-01", "node": null, "variation": null, "job": "Wrapper component applying conditional class names"}
+{"id": "spaceui:demo-h-click-outside-01", "node": null, "variation": null, "job": "Run a callback when clicking outside an element"}
+{"id": "spaceui:demo-h-clipboard-01", "node": null, "variation": null, "job": "Copy text to clipboard with copied feedback"}
+{"id": "spaceui:demo-h-clipboard-02", "node": null, "variation": null, "job": "Code block with a quick copy button"}
+{"id": "spaceui:demo-h-clipboard-03", "node": null, "variation": null, "job": "Copy list of API credentials one by one"}
+{"id": "spaceui:demo-h-confirm-exit-01", "node": null, "variation": null, "job": "Guard unsaved changes when leaving an editor"}
+{"id": "spaceui:demo-h-controlled-state-01", "node": null, "variation": null, "job": "Synchronise controlled and uncontrolled state values"}
+{"id": "spaceui:demo-h-cookie-01", "node": null, "variation": null, "job": "Imperative read and write cookie helper"}
+{"id": "spaceui:demo-h-cookie-listener-01", "node": null, "variation": null, "job": "Observe cookie changes in real time"}
+{"id": "spaceui:demo-h-data-state-01", "node": null, "variation": null, "job": "Map state onto data attributes for styling"}
+{"id": "spaceui:demo-h-debounce-01", "node": null, "variation": null, "job": "Debounce fast state updates"}
+{"id": "spaceui:demo-h-debounce-02", "node": null, "variation": null, "job": "Filter a list with a debounced search query"}
+{"id": "spaceui:demo-h-device-os-01", "node": null, "variation": null, "job": "Detect the visitor's operating system"}
+{"id": "spaceui:demo-h-event-01", "node": null, "variation": null, "job": "Bind event listeners safely across browsers"}
+{"id": "spaceui:demo-h-event-callback-01", "node": null, "variation": null, "job": "Keep a stable callback reference across renders"}
+{"id": "spaceui:demo-h-event-listener-01", "node": null, "variation": null, "job": "Declaratively bind window and element events"}
+{"id": "spaceui:demo-h-favicon-01", "node": null, "variation": null, "job": "Swap the browser favicon dynamically"}
+{"id": "spaceui:demo-h-file-upload-01", "node": null, "variation": null, "job": "Drag and drop image upload engine with previews"}
+{"id": "spaceui:demo-h-file-upload-02", "node": null, "variation": null, "job": "Document uploader constrained to accepted file types"}
+{"id": "spaceui:demo-h-file-upload-03", "node": null, "variation": null, "job": "Profile picture drag and drop uploader"}
+{"id": "spaceui:demo-h-first-render-01", "node": null, "variation": null, "job": "Report whether this is the first render"}
+{"id": "spaceui:demo-h-first-visit-01", "node": null, "variation": null, "job": "Detect whether the user visited before"}
+{"id": "spaceui:demo-h-for-01", "node": null, "variation": null, "job": "Iterate a list declaratively with a fallback"}
+{"id": "spaceui:demo-h-for-02", "node": null, "variation": null, "job": "Map a product catalog list with search filter"}
+{"id": "spaceui:demo-h-format-bytes-01", "node": null, "variation": null, "job": "Format and parse file sizes in bytes"}
+{"id": "spaceui:demo-h-format-bytes-02", "node": null, "variation": null, "job": "Storage meter converting bytes into readable units"}
+{"id": "spaceui:demo-h-format-content-01", "node": null, "variation": null, "job": "Truncate and clean up text content"}
+{"id": "spaceui:demo-h-format-date-01", "node": null, "variation": null, "job": "Format dates in the local locale"}
+{"id": "spaceui:demo-h-format-text-01", "node": null, "variation": null, "job": "Slugify and convert text between cases"}
+{"id": "spaceui:demo-h-fullscreen-01", "node": null, "variation": null, "job": "Toggle an element into fullscreen"}
+{"id": "spaceui:demo-h-hold-01", "node": null, "variation": null, "job": "Detect a long-press hold gesture"}
+{"id": "spaceui:demo-h-hover-01", "node": null, "variation": null, "job": "Track mouse hover state on an element"}
+{"id": "spaceui:demo-h-hover-02", "node": null, "variation": null, "job": "Track hover state through an external ref"}
+{"id": "spaceui:demo-h-idle-01", "node": null, "variation": null, "job": "Detect when the user goes idle"}
+{"id": "spaceui:demo-h-if-01", "node": null, "variation": null, "job": "Render children on a boolean condition"}
+{"id": "spaceui:demo-h-image-01", "node": null, "variation": null, "job": "Responsive image with progressive loading"}
+{"id": "spaceui:demo-h-in-view-01", "node": null, "variation": null, "job": "Wrapper component firing when scrolled into view"}
+{"id": "spaceui:demo-h-input-value-01", "node": null, "variation": null, "job": "Bind input change events through one helper"}
+{"id": "spaceui:demo-h-intersection-observer-01", "node": null, "variation": null, "job": "Observe element intersection with options and callbacks"}
+{"id": "spaceui:demo-h-interval-01", "node": null, "variation": null, "job": "Run an interval that can be paused and started"}
+{"id": "spaceui:demo-h-interval-02", "node": null, "variation": null, "job": "Simulate server polling on a configurable delay"}
+{"id": "spaceui:demo-h-is-mac-01", "node": null, "variation": null, "job": "Detect whether the visitor uses macOS"}
+{"id": "spaceui:demo-h-is-mounted-01", "node": null, "variation": null, "job": "Check whether the component is still mounted"}
+{"id": "spaceui:demo-h-is-negative-01", "node": null, "variation": null, "job": "Check whether a number is negative"}
+{"id": "spaceui:demo-h-isomorphic-layout-effect-01", "node": null, "variation": null, "job": "Run layout effects safely during server rendering"}
+{"id": "spaceui:demo-h-key-press-01", "node": null, "variation": null, "job": "Detect which keyboard keys are pressed"}
+{"id": "spaceui:demo-h-leave-detection-01", "node": null, "variation": null, "job": "Detect the mouse leaving the window"}
+{"id": "spaceui:demo-h-load-more-01", "node": null, "variation": null, "job": "Trigger load-more on infinite scroll"}
+{"id": "spaceui:demo-h-local-storage-01", "node": null, "variation": null, "job": "Sync state into persistent local storage"}
+{"id": "spaceui:demo-h-local-storage-02", "node": null, "variation": null, "job": "Persist a form object in local storage"}
+{"id": "spaceui:demo-h-local-storage-03", "node": null, "variation": null, "job": "Todo list saved to local storage"}
+{"id": "spaceui:demo-h-lock-body-scroll-01", "node": null, "variation": null, "job": "Lock page scrolling without layout shift"}
+{"id": "spaceui:demo-h-logger-01", "node": null, "variation": null, "job": "Scoped development logger"}
+{"id": "spaceui:demo-h-map-01", "node": null, "variation": null, "job": "Reactive Map collection state manager"}
+{"id": "spaceui:demo-h-media-query-01", "node": null, "variation": null, "job": "Evaluate responsive media query breakpoints"}
+{"id": "spaceui:demo-h-motion-value-state-01", "node": null, "variation": null, "job": "Subscribe to Framer Motion value changes"}
+{"id": "spaceui:demo-h-mouse-position-01", "node": null, "variation": null, "job": "Track live mouse coordinates"}
+{"id": "spaceui:demo-h-mutation-01", "node": null, "variation": null, "job": "Run async actions with loading and error state"}
+{"id": "spaceui:demo-h-network-01", "node": null, "variation": null, "job": "Track live network connection state"}
+{"id": "spaceui:demo-h-orientation-01", "node": null, "variation": null, "job": "Listen for device screen orientation changes"}
+{"id": "spaceui:demo-h-pagination-01", "node": null, "variation": null, "job": "Slice pages with boundary and sibling controls"}
+{"id": "spaceui:demo-h-parse-markdown-01", "node": null, "variation": null, "job": "Compile markdown to HTML on the client"}
+{"id": "spaceui:demo-h-performance-mode-01", "node": null, "variation": null, "job": "Detect low-power mode and reduce animation work"}
+{"id": "spaceui:demo-h-prefers-theme-01", "node": null, "variation": null, "job": "Detect the system colour scheme preference"}
+{"id": "spaceui:demo-h-range-map-01", "node": null, "variation": null, "job": "Generate arrays and map over a range"}
+{"id": "spaceui:demo-h-range-map-02", "node": null, "variation": null, "job": "Interpolate values linearly between ranges"}
+{"id": "spaceui:demo-h-reading-time-01", "node": null, "variation": null, "job": "Estimate article reading time from word count"}
+{"id": "spaceui:demo-h-render-after-01", "node": null, "variation": null, "job": "Mount components lazily after a delay"}
+{"id": "spaceui:demo-h-sanitize-content-01", "node": null, "variation": null, "job": "Sanitize HTML against XSS on client and server"}
+{"id": "spaceui:demo-h-script-01", "node": null, "variation": null, "job": "Load an external script dynamically"}
+{"id": "spaceui:demo-h-scroll-device-01", "node": null, "variation": null, "job": "Detect wheel and touchpad scroll gestures"}
+{"id": "spaceui:demo-h-scroll-position-01", "node": null, "variation": null, "job": "Track the window scroll offset"}
+{"id": "spaceui:demo-h-scroll-to-01", "node": null, "variation": null, "job": "Scroll smoothly to a programmatic position"}
+{"id": "spaceui:demo-h-session-storage-01", "node": null, "variation": null, "job": "Sync state into session-scoped storage"}
+{"id": "spaceui:demo-h-share-01", "node": null, "variation": null, "job": "Call the native Web Share API"}
+{"id": "spaceui:demo-h-show-01", "node": null, "variation": null, "job": "Render children when a value is truthy"}
+{"id": "spaceui:demo-h-single-effect-01", "node": null, "variation": null, "job": "Run an effect exactly once"}
+{"id": "spaceui:demo-h-size-01", "node": null, "variation": null, "job": "Measure element width and height live"}
+{"id": "spaceui:demo-h-sleep-01", "node": null, "variation": null, "job": "Promise-based delay timer"}
+{"id": "spaceui:demo-h-switch-01", "node": null, "variation": null, "job": "Match branches with Case and Default components"}
+{"id": "spaceui:demo-h-switch-02", "node": null, "variation": null, "job": "Render one branch from a matched state"}
+{"id": "spaceui:demo-h-tab-notification-01", "node": null, "variation": null, "job": "Flash a badge count in the document title"}
+{"id": "spaceui:demo-h-title-01", "node": null, "variation": null, "job": "Set the document head title"}
+{"id": "spaceui:demo-h-toggle-01", "node": null, "variation": null, "job": "Toggle a boolean state value"}
+{"id": "spaceui:demo-h-update-effect-01", "node": null, "variation": null, "job": "Run an effect only after dependency updates"}
+{"id": "spaceui:demo-h-urgent-update-01", "node": null, "variation": null, "job": "Switch updates between transition priorities"}
+{"id": "spaceui:demo-h-use-cookie-01", "node": null, "variation": null, "job": "Read and write cookies as state"}
+{"id": "spaceui:demo-h-use-in-view-01", "node": null, "variation": null, "job": "Mark an element in view to trigger animations"}
+{"id": "spaceui:demo-h-window-size-01", "node": null, "variation": null, "job": "Track viewport width and height"}
+{"id": "spaceui:demo-p-accordion-01", "node": "component/accordion", "variation": "standard-accordion", "job": "Expandable accordion with one panel open at a time"}
+{"id": "spaceui:demo-p-accordion-02", "node": "component/accordion", "variation": "standard-accordion", "job": "Accordion allowing several panels open at once"}
+{"id": "spaceui:demo-p-accordion-03", "node": "component/accordion", "variation": "standard-accordion", "job": "Controlled accordion with open state set in code"}
+{"id": "spaceui:demo-p-alert-01", "node": "component/alert", "variation": "inline-alert", "job": "Plain inline alert message block"}
+{"id": "spaceui:demo-p-alert-02", "node": "component/alert", "variation": "inline-alert", "job": "Inline alert with a leading status icon"}
+{"id": "spaceui:demo-p-alert-03", "node": "component/alert", "variation": "inline-alert", "job": "Inline alert with icon and action buttons"}
+{"id": "spaceui:demo-p-alert-04", "node": "component/alert", "variation": "inline-alert", "job": "Inline alerts in info, success, warning and error variants"}
+{"id": "spaceui:demo-p-alert-dialog-01", "node": "component/dialog", "variation": "confirm-alert", "job": "Confirmation dialog requiring an explicit user choice"}
+{"id": "spaceui:demo-p-alert-dialog-02", "node": "component/dialog", "variation": "confirm-alert", "job": "Confirmation dialog with a bare footer row"}
+{"id": "spaceui:demo-p-aspect-ratio-01", "node": "atom/layout", "variation": null, "job": "Container locking a 16:9 widescreen aspect ratio", "edge": "aspect-ratio-box"}
+{"id": "spaceui:demo-p-aspect-ratio-02", "node": "atom/layout", "variation": null, "job": "Container locking a 4:3 standard aspect ratio", "edge": "aspect-ratio-box"}
+{"id": "spaceui:demo-p-aspect-ratio-03", "node": "atom/layout", "variation": null, "job": "Container locking a 1:1 square aspect ratio", "edge": "aspect-ratio-box"}
+{"id": "spaceui:demo-p-aspect-ratio-04", "node": "atom/layout", "variation": null, "job": "Container locking a 21:9 ultrawide aspect ratio", "edge": "aspect-ratio-box"}
+{"id": "spaceui:demo-p-aspect-ratio-05", "node": "atom/layout", "variation": null, "job": "Container locking a 9:16 portrait aspect ratio", "edge": "aspect-ratio-box"}
+{"id": "spaceui:demo-p-aspect-ratio-06", "node": "atom/layout", "variation": null, "job": "Container locking a 3:2 photography aspect ratio", "edge": "aspect-ratio-box"}
+{"id": "spaceui:demo-p-aspect-ratio-07", "node": "atom/layout", "variation": null, "job": "Container locking a 4:5 social portrait aspect ratio", "edge": "aspect-ratio-box"}
+{"id": "spaceui:demo-p-aspect-ratio-08", "node": "atom/layout", "variation": null, "job": "Container locking a 16:10 monitor aspect ratio", "edge": "aspect-ratio-box"}
+{"id": "spaceui:demo-p-autocomplete-01", "node": "component/select", "variation": "combobox", "job": "Text input with a filtered suggestion list"}
+{"id": "spaceui:demo-p-autocomplete-02", "node": "component/select", "variation": "combobox", "job": "Autocomplete input shown in three sizes"}
+{"id": "spaceui:demo-p-autocomplete-03", "node": "component/select", "variation": "combobox", "job": "Large autocomplete input"}
+{"id": "spaceui:demo-p-autocomplete-04", "node": "component/select", "variation": "combobox", "job": "Autocomplete with a field label"}
+{"id": "spaceui:demo-p-autocomplete-05", "node": "component/select", "variation": "combobox", "job": "Autocomplete filling the input with highlighted item"}
+{"id": "spaceui:demo-p-autocomplete-06", "node": "component/select", "variation": "combobox", "job": "Autocomplete auto-highlighting the first option"}
+{"id": "spaceui:demo-p-autocomplete-07", "node": "component/select", "variation": "combobox", "job": "Autocomplete with a clear button"}
+{"id": "spaceui:demo-p-autocomplete-08", "node": "component/select", "variation": "combobox", "job": "Autocomplete with trigger and clear buttons"}
+{"id": "spaceui:demo-p-autocomplete-09", "node": "component/select", "variation": "grouped", "job": "Autocomplete with suggestions grouped by category"}
+{"id": "spaceui:demo-p-autocomplete-10", "node": "component/select", "variation": "combobox", "job": "Autocomplete limiting the number of shown results"}
+{"id": "spaceui:demo-p-autocomplete-11", "node": "component/select", "variation": "combobox", "job": "Autocomplete loading suggestions asynchronously while typing"}
+{"id": "spaceui:demo-p-autocomplete-12", "node": "component/select", "variation": "combobox", "job": "Autocomplete field inside a submitted form"}
+{"id": "spaceui:demo-p-autocomplete-13", "node": "component/select", "variation": "combobox", "job": "Autocomplete form example"}
+{"id": "spaceui:demo-p-autocomplete-14", "node": "component/select", "variation": "combobox", "job": "pill-shaped autocomplete input with suggestion list"}
+{"id": "spaceui:demo-p-autocomplete-15", "node": "component/select", "variation": "combobox", "job": "address autocomplete backed by Google Maps Places"}
+{"id": "spaceui:demo-p-avatar-01", "node": "atom/avatar", "variation": "standard", "job": "avatar with image and text fallback"}
+{"id": "spaceui:demo-p-avatar-02", "node": "atom/avatar", "variation": "standard", "job": "avatar shown at several sizes"}
+{"id": "spaceui:demo-p-avatar-03", "node": "atom/avatar", "variation": "standard", "job": "avatar with offset decorative rings"}
+{"id": "spaceui:demo-p-avatar-04", "node": "atom/avatar", "variation": "fallback", "job": "avatar falling back to a user icon"}
+{"id": "spaceui:demo-p-avatar-05", "node": "atom/avatar", "variation": "with-status", "job": "avatar with live status dot"}
+{"id": "spaceui:demo-p-avatar-06", "node": "atom/avatar", "variation": null, "job": "avatar with verified badge overlay", "edge": "avatar-verified-badge"}
+{"id": "spaceui:demo-p-avatar-07", "node": "atom/avatar", "variation": "avatar-group", "job": "avatar group with overlapping edges"}
+{"id": "spaceui:demo-p-avatar-08", "node": "atom/avatar", "variation": null, "job": "avatar with notification badge", "edge": "avatar-notification-badge"}
+{"id": "spaceui:demo-p-avatar-09", "node": "atom/avatar", "variation": "avatar-group", "job": "avatar group with count and icon actions"}
+{"id": "spaceui:demo-p-avatar-10", "node": "atom/avatar", "variation": "fallback", "job": "procedural avatar generated from a name"}
+{"id": "spaceui:demo-p-avatar-11", "node": "atom/avatar", "variation": "fallback", "job": "showcase of procedural avatar fallback styles"}
+{"id": "spaceui:demo-p-badge-01", "node": "atom/badge", "variation": "badge", "job": "basic badge label"}
+{"id": "spaceui:demo-p-badge-02", "node": "atom/badge", "variation": "badge", "job": "outline badge"}
+{"id": "spaceui:demo-p-badge-03", "node": "atom/badge", "variation": "badge", "job": "secondary badge"}
+{"id": "spaceui:demo-p-badge-04", "node": "atom/badge", "variation": "icon-badge", "job": "badge with leading icon"}
+{"id": "spaceui:demo-p-badge-05", "node": "atom/badge", "variation": "badge", "job": "badge rendered as a link"}
+{"id": "spaceui:demo-p-badge-06", "node": "atom/badge", "variation": "count", "job": "badge showing a count"}
+{"id": "spaceui:demo-p-badge-07", "node": "atom/badge", "variation": "badge", "job": "pill-shaped fully rounded badge"}
+{"id": "spaceui:demo-p-badge-08", "node": "atom/badge", "variation": "count", "job": "badge with number after text"}
+{"id": "spaceui:demo-p-badge-09", "node": "atom/badge", "variation": "dot", "job": "status badges with indicator dots"}
+{"id": "spaceui:demo-p-breadcrumb-01", "node": "component/breadcrumb", "variation": "with-dropdown", "job": "breadcrumb with dropdown menu"}
+{"id": "spaceui:demo-p-breadcrumb-02", "node": "component/breadcrumb", "variation": "text-breadcrumb", "job": "breadcrumb with custom separator"}
+{"id": "spaceui:demo-p-breadcrumb-03", "node": "component/breadcrumb", "variation": "with-icons", "job": "breadcrumb with home icon link"}
+{"id": "spaceui:demo-p-breadcrumb-04", "node": "component/breadcrumb", "variation": "with-dropdown", "job": "breadcrumb with folder icon menu"}
+{"id": "spaceui:demo-p-breadcrumb-05", "node": "component/breadcrumb", "variation": "with-icons", "job": "breadcrumb with icons before text"}
+{"id": "spaceui:demo-p-breadcrumb-06", "node": "component/breadcrumb", "variation": "text-breadcrumb", "job": "breadcrumb with dot separators"}
+{"id": "spaceui:demo-p-breadcrumb-07", "node": "component/breadcrumb", "variation": "with-dropdown", "job": "breadcrumb with select dropdown"}
+{"id": "spaceui:demo-p-button-01", "node": "atom/button", "variation": "primary", "job": "default primary button"}
+{"id": "spaceui:demo-p-button-02", "node": "atom/button", "variation": "primary", "job": "extra-small button"}
+{"id": "spaceui:demo-p-button-03", "node": "atom/button", "variation": "primary", "job": "disabled button"}
+{"id": "spaceui:demo-p-button-04", "node": "atom/button", "variation": "icon-button", "job": "icon-only button"}
+{"id": "spaceui:demo-p-button-05", "node": "atom/button", "variation": "primary", "job": "button with leading icon"}
+{"id": "spaceui:demo-p-button-06", "node": "atom/button", "variation": "primary", "job": "link rendered as a button"}
+{"id": "spaceui:demo-p-button-07", "node": "atom/button", "variation": "loading", "job": "loading button with manual spinner"}
+{"id": "spaceui:demo-p-button-08", "node": "atom/button", "variation": "toggle", "job": "expandable show more or less button"}
+{"id": "spaceui:demo-p-button-09", "node": "atom/button", "variation": "primary", "job": "back link button with chevron"}
+{"id": "spaceui:demo-p-button-10", "node": "atom/button", "variation": null, "job": "card-style button with heading and description", "edge": "card-button"}
+{"id": "spaceui:demo-p-button-11", "node": "atom/button", "variation": "group", "job": "directional pad control buttons"}
+{"id": "spaceui:demo-p-button-12", "node": "atom/button", "variation": "primary", "job": "outline like button with count"}
+{"id": "spaceui:demo-p-button-13", "node": "atom/button", "variation": "social-brand", "job": "social login icon buttons"}
+{"id": "spaceui:demo-p-button-14", "node": "atom/button", "variation": "primary", "job": "star button with count"}
+{"id": "spaceui:demo-p-button-15", "node": "atom/button", "variation": "group", "job": "button group with QR icon and sign in"}
+{"id": "spaceui:demo-p-button-16", "node": "atom/button", "variation": "primary", "job": "button with avatar"}
+{"id": "spaceui:demo-p-button-17", "node": "atom/button", "variation": "primary", "job": "pill-shaped rounded-full button"}
+{"id": "spaceui:demo-p-button-18", "node": "atom/button", "variation": "primary", "job": "button with arrow animating on hover"}
+{"id": "spaceui:demo-p-button-19", "node": "atom/button", "variation": "primary", "job": "button showing keyboard shortcut"}
+{"id": "spaceui:demo-p-button-20", "node": "atom/button", "variation": "primary", "job": "button with notification badge"}
+{"id": "spaceui:demo-p-button-21", "node": "atom/button", "variation": "group", "job": "paired cancel and save buttons"}
+{"id": "spaceui:demo-p-button-22", "node": "atom/button", "variation": "primary", "job": "button with animated status dot"}
+{"id": "spaceui:demo-p-button-23", "node": "atom/button", "variation": "copy-share", "job": "icon-only copy button with feedback"}
+{"id": "spaceui:demo-p-button-24", "node": "atom/button", "variation": "copy-share", "job": "copy button with feedback"}
+{"id": "spaceui:demo-p-button-25", "node": "atom/button", "variation": "toggle", "job": "rotating icon FAB toggle button"}
+{"id": "spaceui:demo-p-button-26", "node": "atom/button", "variation": "social-brand", "job": "social login buttons for Google, X and GitHub"}
+{"id": "spaceui:demo-p-button-27", "node": "atom/button", "variation": "icon-button", "job": "hamburger menu button with animated icon"}
+{"id": "spaceui:demo-p-button-28", "node": "atom/button", "variation": "loading", "job": "download button with progress and cancel"}
+{"id": "spaceui:demo-p-button-29", "node": "atom/button", "variation": "loading", "job": "button using built-in loading prop"}
+{"id": "spaceui:demo-p-calendar-01", "node": "component/calendar", "variation": "month-calendar", "job": "basic month calendar"}
+{"id": "spaceui:demo-p-calendar-02", "node": "component/calendar", "variation": "month-calendar", "job": "month calendar with custom cell size"}
+{"id": "spaceui:demo-p-calendar-03", "node": "component/calendar", "variation": "range-picker", "job": "calendar selecting a date range"}
+{"id": "spaceui:demo-p-calendar-04", "node": "component/calendar", "variation": "month-calendar", "job": "calendar with month and year dropdowns"}
+{"id": "spaceui:demo-p-calendar-05", "node": "component/calendar", "variation": "month-calendar", "job": "calendar with select dropdown navigation"}
+{"id": "spaceui:demo-p-calendar-06", "node": "component/calendar", "variation": "month-calendar", "job": "calendar with combobox dropdown navigation"}
+{"id": "spaceui:demo-p-calendar-07", "node": "component/calendar", "variation": "month-calendar", "job": "calendar with disabled dates"}
+{"id": "spaceui:demo-p-calendar-08", "node": "component/calendar", "variation": "month-calendar", "job": "calendar with multiple date selection"}
+{"id": "spaceui:demo-p-calendar-09", "node": "component/calendar", "variation": "month-calendar", "job": "calendar with rounded day buttons"}
+{"id": "spaceui:demo-p-calendar-10", "node": "component/calendar", "variation": "range-picker", "job": "calendar with rounded range selection"}
+{"id": "spaceui:demo-p-calendar-11", "node": "component/calendar", "variation": "month-calendar", "job": "calendar with right-aligned navigation"}
+{"id": "spaceui:demo-p-calendar-12", "node": "component/calendar", "variation": "month-calendar", "job": "calendar showing week numbers"}
+{"id": "spaceui:demo-p-calendar-13", "node": "component/calendar", "variation": "month-calendar", "job": "calendar with year-only combobox dropdown"}
+{"id": "spaceui:demo-p-calendar-14", "node": "component/calendar", "variation": "month-calendar", "job": "calendar with dropdown navigation only"}
+{"id": "spaceui:demo-p-calendar-15", "node": "component/calendar", "variation": "month-calendar", "job": "calendar with current month button"}
+{"id": "spaceui:demo-p-calendar-16", "node": "component/calendar", "variation": "month-calendar", "job": "calendar with today button"}
+{"id": "spaceui:demo-p-calendar-17", "node": "component/calendar", "variation": "date-picker", "job": "calendar with a date input"}
+{"id": "spaceui:demo-p-calendar-18", "node": "component/picker", "variation": "time-picker", "job": "calendar with a time input"}
+{"id": "spaceui:demo-p-calendar-19", "node": "component/picker", "variation": "time-picker", "job": "calendar with appointment time slots"}
+{"id": "spaceui:demo-p-calendar-20", "node": "component/picker", "variation": "presets", "job": "calendar with date preset shortcuts"}
+{"id": "spaceui:demo-p-calendar-21", "node": "component/calendar", "variation": "range-picker", "job": "range calendar with date presets"}
+{"id": "spaceui:demo-p-calendar-22", "node": "component/calendar", "variation": "month-calendar", "job": "calendar showing two months"}
+{"id": "spaceui:demo-p-calendar-23", "node": "component/calendar", "variation": "month-calendar", "job": "calendar showing three months"}
+{"id": "spaceui:demo-p-calendar-24", "node": "component/calendar", "variation": "month-calendar", "job": "pricing calendar with custom day buttons"}
+{"id": "spaceui:demo-p-calendar-25", "node": "component/picker", "variation": "time-picker", "job": "calendar with 24-hour autocomplete time input"}
+{"id": "spaceui:demo-p-card-01", "node": "component/card", "variation": "standard-card", "job": "basic card with header and footer"}
+{"id": "spaceui:demo-p-card-02", "node": "component/card", "variation": "standard-card", "job": "authentication card with actions"}
+{"id": "spaceui:demo-p-card-03", "node": "component/card", "variation": "standard-card", "job": "authentication card with separators"}
+{"id": "spaceui:demo-p-card-04", "node": "component/card", "variation": "standard-card", "job": "framed card with footer"}
+{"id": "spaceui:demo-p-card-05", "node": "component/card", "variation": "standard-card", "job": "framed card with header"}
+{"id": "spaceui:demo-p-card-06", "node": "component/card", "variation": "standard-card", "job": "framed card with header and footer"}
+{"id": "spaceui:demo-p-card-07", "node": "component/card", "variation": "standard-card", "job": "framed card without rounded bottom"}
+{"id": "spaceui:demo-p-card-08", "node": "component/card", "variation": "standard-card", "job": "card within a frame, with footer"}
+{"id": "spaceui:demo-p-card-09", "node": "component/card", "variation": "standard-card", "job": "card within a frame, with footer"}
+{"id": "spaceui:demo-p-card-10", "node": "component/card", "variation": "standard-card", "job": "card within a frame with header and footer"}
+{"id": "spaceui:demo-p-card-11", "node": "component/card", "variation": "standard-card", "job": "card frame with header action"}
+{"id": "spaceui:demo-p-checkbox-01", "node": "atom/choice", "variation": "checkbox", "job": "basic checkbox"}
+{"id": "spaceui:demo-p-checkbox-02", "node": "atom/choice", "variation": "checkbox", "job": "checkboxes in small, default and large sizes"}
+{"id": "spaceui:demo-p-checkbox-03", "node": "atom/choice", "variation": "card", "job": "card-style checkbox"}
+{"id": "spaceui:demo-p-checkbox-04", "node": "atom/choice", "variation": "checkbox", "job": "checkbox inside a form"}
+{"id": "spaceui:demo-p-checkbox-group-01", "node": "atom/choice", "variation": "group", "job": "basic checkbox group"}
+{"id": "spaceui:demo-p-checkbox-group-02", "node": "atom/choice", "variation": "group", "job": "checkbox group with disabled items"}
+{"id": "spaceui:demo-p-checkbox-group-03", "node": "atom/choice", "variation": "indeterminate", "job": "checkbox group with parent checkbox"}
+{"id": "spaceui:demo-p-checkbox-group-04", "node": "atom/choice", "variation": "indeterminate", "job": "nested checkbox group with parent"}
+{"id": "spaceui:demo-p-checkbox-group-05", "node": "atom/choice", "variation": "group", "job": "checkbox group inside a form"}
+{"id": "spaceui:demo-p-collapsible-01", "node": "component/accordion", "variation": "collapsible", "job": "basic collapsible panel"}
+{"id": "spaceui:demo-p-combobox-01", "node": "component/select", "variation": "combobox", "job": "basic combobox"}
+{"id": "spaceui:demo-p-combobox-02", "node": "component/select", "variation": "combobox", "job": "combobox inputs in three sizes"}
+{"id": "spaceui:demo-p-combobox-03", "node": "component/select", "variation": "combobox", "job": "large combobox"}
+{"id": "spaceui:demo-p-combobox-04", "node": "component/select", "variation": "combobox", "job": "combobox with label"}
+{"id": "spaceui:demo-p-combobox-05", "node": "component/select", "variation": "combobox", "job": "combobox auto-highlighting first option"}
+{"id": "spaceui:demo-p-combobox-06", "node": "component/select", "variation": "combobox", "job": "combobox with clear button"}
+{"id": "spaceui:demo-p-combobox-07", "node": "component/select", "variation": "grouped", "job": "combobox with grouped items"}
+{"id": "spaceui:demo-p-combobox-08", "node": "component/select", "variation": "multi-select", "job": "combobox with multiple selection"}
+{"id": "spaceui:demo-p-combobox-09", "node": "component/select", "variation": "combobox", "job": "combobox with input inside popup"}
+{"id": "spaceui:demo-p-combobox-10", "node": "component/select", "variation": "combobox", "job": "combobox inside a form"}
+{"id": "spaceui:demo-p-combobox-11", "node": "component/select", "variation": "multi-select", "job": "multiple-select combobox inside a form"}
+{"id": "spaceui:demo-p-combobox-12", "node": "component/select", "variation": "combobox", "job": "combobox with start addon"}
+{"id": "spaceui:demo-p-combobox-13", "node": "component/select", "variation": "multi-select", "job": "multiple-select combobox with start addon"}
+{"id": "spaceui:demo-p-combobox-14", "node": "component/select", "variation": "combobox", "job": "pill-shaped combobox"}
+{"id": "spaceui:demo-p-combobox-15", "node": "component/select", "variation": "combobox", "job": "timezone combobox"}
+{"id": "spaceui:demo-p-combobox-16", "node": "component/select", "variation": "combobox", "job": "searchable timezone combobox"}
+{"id": "spaceui:demo-p-combobox-17", "node": "component/select", "variation": "combobox", "job": "Combobox opened from a select-style trigger with search"}
+{"id": "spaceui:demo-p-combobox-18", "node": "component/select", "variation": "multi-select", "job": "Multi-select combobox showing chosen teammates as stacked chips"}
+{"id": "spaceui:demo-p-combobox-19", "node": "component/select", "variation": "multi-select", "job": "Multi-select combobox with divided stacked chips"}
+{"id": "spaceui:demo-p-command-01", "node": "component/command", "variation": "dialog-based", "job": "Command palette dialog of grouped suggestions and commands"}
+{"id": "spaceui:demo-p-command-02", "node": "component/command", "variation": "dialog-based", "job": "AI assistant palette dialog searching pages and commands"}
+{"id": "spaceui:demo-p-context-menu-01", "node": "component/menu", "variation": "context-menu", "job": "Basic right-click menu of navigation actions"}
+{"id": "spaceui:demo-p-context-menu-02", "node": "component/menu", "variation": "context-menu", "job": "Context menu whose items render as links"}
+{"id": "spaceui:demo-p-context-menu-03", "node": "component/menu", "variation": "context-menu", "job": "Context menu with a nested share submenu"}
+{"id": "spaceui:demo-p-context-menu-04", "node": "component/menu", "variation": "context-menu", "job": "Context menu with checkbox items"}
+{"id": "spaceui:demo-p-context-menu-05", "node": "component/menu", "variation": "context-menu", "job": "Context menu items separated into labelled groups"}
+{"id": "spaceui:demo-p-context-menu-06", "node": "component/menu", "variation": "context-menu", "job": "Context menu with icons and shortcut hints"}
+{"id": "spaceui:demo-p-context-menu-07", "node": "component/menu", "variation": "context-menu", "job": "Context menu with a radio group choice"}
+{"id": "spaceui:demo-p-context-menu-08", "node": "component/menu", "variation": "context-menu", "job": "Context menu with switch-style checkbox items"}
+{"id": "spaceui:demo-p-date-picker-01", "node": "component/picker", "variation": "date-picker", "job": "Button-triggered popover calendar picking one date"}
+{"id": "spaceui:demo-p-date-picker-02", "node": "component/picker", "variation": "date-range", "job": "Popover calendar selecting a date range"}
+{"id": "spaceui:demo-p-date-picker-03", "node": "component/picker", "variation": "date-picker", "job": "Labelled date field with dropdown month navigation"}
+{"id": "spaceui:demo-p-date-picker-04", "node": "component/picker", "variation": "presets", "job": "Date picker offering today and tomorrow presets"}
+{"id": "spaceui:demo-p-date-picker-05", "node": "component/picker", "variation": "date-picker", "job": "Typed date input synced with a calendar popover"}
+{"id": "spaceui:demo-p-date-picker-06", "node": "component/picker", "variation": "date-picker", "job": "Date picker closing the popover after a selection"}
+{"id": "spaceui:demo-p-date-picker-07", "node": "component/picker", "variation": null, "job": "Pick several separate dates shown as badges", "edge": "multi-date-picker"}
+{"id": "spaceui:demo-p-date-picker-08", "node": "component/picker", "variation": "date-picker", "job": "Date picker using a select-style trigger"}
+{"id": "spaceui:demo-p-date-picker-09", "node": "component/picker", "variation": "date-range", "job": "Two months shown side by side for a date range"}
+{"id": "spaceui:demo-p-dialog-01", "node": "component/dialog", "variation": "form-dialog", "job": "Edit profile form inside a modal dialog"}
+{"id": "spaceui:demo-p-dialog-02", "node": "component/dialog", "variation": "modal-dialog", "job": "Plain dialog opened from a dropdown menu"}
+{"id": "spaceui:demo-p-dialog-03", "node": "component/dialog", "variation": "modal-dialog", "job": "Nested dialog editing a team member"}
+{"id": "spaceui:demo-p-dialog-04", "node": "component/dialog", "variation": "confirm-alert", "job": "Dialog confirming before closing unsaved content"}
+{"id": "spaceui:demo-p-dialog-05", "node": "component/dialog", "variation": "modal-dialog", "job": "Terms dialog with long scrolling content"}
+{"id": "spaceui:demo-p-dialog-06", "node": "component/dialog", "variation": "form-dialog", "job": "Edit profile form dialog with a bare footer"}
+{"id": "spaceui:demo-p-drawer-01", "node": "component/sheet", "variation": "bottom-sheet", "job": "Bottom drawer with drag bar and close button"}
+{"id": "spaceui:demo-p-drawer-02", "node": "component/sheet", "variation": "bottom-sheet", "job": "Bottom drawer without a drag bar"}
+{"id": "spaceui:demo-p-drawer-03", "node": "component/sheet", "variation": "side-sheet", "job": "Right-side drawer with a close button"}
+{"id": "spaceui:demo-p-drawer-04", "node": "component/sheet", "variation": "side-sheet", "job": "Inset drawers opened from all four edges"}
+{"id": "spaceui:demo-p-drawer-05", "node": "component/sheet", "variation": "side-sheet", "job": "Straight drawers opened from all four edges"}
+{"id": "spaceui:demo-p-drawer-06", "node": "component/sheet", "variation": "bottom-sheet", "job": "Bottom drawer holding long scrollable content"}
+{"id": "spaceui:demo-p-drawer-07", "node": "component/sheet", "variation": "bottom-sheet", "job": "Nested bottom drawers stepping through screens"}
+{"id": "spaceui:demo-p-drawer-08", "node": "component/sheet", "variation": "side-sheet", "job": "Nested right drawers editing team member details"}
+{"id": "spaceui:demo-p-drawer-09", "node": "component/sheet", "variation": "bottom-sheet", "job": "Bottom drawer snapping between peek and full height"}
+{"id": "spaceui:demo-p-drawer-10", "node": "component/sheet", "variation": "form-sheet", "job": "Edit profile form drawer with footer variants"}
+{"id": "spaceui:demo-p-drawer-11", "node": "section/nav", "variation": "mobile-drawer", "job": "Left drawer holding the mobile navigation menu"}
+{"id": "spaceui:demo-p-drawer-12", "node": "component/sheet", "variation": "form-sheet", "job": "Edit profile form as dialog or drawer by breakpoint"}
+{"id": "spaceui:demo-p-drawer-13", "node": "component/sheet", "variation": "bottom-sheet", "job": "Actions menu shown as a drawer on mobile"}
+{"id": "spaceui:demo-p-drawer-14", "node": "section/nav", "variation": "mobile-drawer", "job": "Left nav drawer opened by swiping the screen edge"}
+{"id": "spaceui:demo-p-empty-01", "node": "component/empty", "variation": "with-action", "job": "No meetings empty state with create and docs buttons"}
+{"id": "spaceui:demo-p-field-01", "node": "component/field", "variation": "text-input", "job": "Field with label, input and description"}
+{"id": "spaceui:demo-p-field-02", "node": "component/field", "variation": "password", "job": "Required password field with an error message"}
+{"id": "spaceui:demo-p-field-03", "node": "component/field", "variation": null, "job": "Disabled non-editable form field", "edge": "field-disabled"}
+{"id": "spaceui:demo-p-field-04", "node": "component/field", "variation": "validation-states", "job": "Field showing a validation error message"}
+{"id": "spaceui:demo-p-field-05", "node": "component/field", "variation": "validation-states", "job": "Field exposing its live validity state"}
+{"id": "spaceui:demo-p-field-06", "node": "component/field", "variation": "with-addon", "job": "Labelled field wrapping an input group with action"}
+{"id": "spaceui:demo-p-field-07", "node": "component/field", "variation": null, "job": "Field with an autocomplete text input", "edge": "field-autocomplete"}
+{"id": "spaceui:demo-p-field-08", "node": "component/field", "variation": null, "job": "Field with a single-select combobox", "edge": "field-combobox"}
+{"id": "spaceui:demo-p-field-09", "node": "component/field", "variation": null, "job": "Field with a multi-select chip combobox", "edge": "field-multiselect"}
+{"id": "spaceui:demo-p-field-10", "node": "component/field", "variation": "text-input", "job": "Field wrapping a textarea with description"}
+{"id": "spaceui:demo-p-field-11", "node": "component/field", "variation": null, "job": "Field wrapping a select dropdown", "edge": "field-select"}
+{"id": "spaceui:demo-p-field-12", "node": "component/field", "variation": null, "job": "Field wrapping a checkbox and its label", "edge": "field-checkbox"}
+{"id": "spaceui:demo-p-field-13", "node": "component/field", "variation": null, "job": "Field wrapping a checkbox group under a legend", "edge": "field-checkbox-group"}
+{"id": "spaceui:demo-p-field-14", "node": "component/field", "variation": null, "job": "Field wrapping a radio group under a legend", "edge": "field-choice-group"}
+{"id": "spaceui:demo-p-field-15", "node": "component/field", "variation": null, "job": "Field wrapping an on/off switch", "edge": "field-switch"}
+{"id": "spaceui:demo-p-field-16", "node": "component/field", "variation": null, "job": "Field wrapping a range slider", "edge": "field-slider"}
+{"id": "spaceui:demo-p-field-17", "node": "component/field", "variation": "number-stepper", "job": "Field wrapping a number field with scrub area"}
+{"id": "spaceui:demo-p-field-18", "node": "component/field", "variation": null, "job": "Complete form built from labelled fields", "edge": "multi-field-form"}
+{"id": "spaceui:demo-p-fieldset-01", "node": "component/field", "variation": null, "job": "Billing detail fields grouped under a legend", "edge": "billing-fieldset"}
+{"id": "spaceui:demo-p-form-01", "node": "component/form", "variation": null, "job": "Basic form submitting an email field", "edge": "standard-form"}
+{"id": "spaceui:demo-p-form-02", "node": "component/form", "variation": "with-validation", "job": "Form validating name and age with zod"}
+{"id": "spaceui:demo-p-frame-01", "node": "component/card", "variation": null, "job": "Framed panel with header, body and footer", "edge": "frame-panel"}
+{"id": "spaceui:demo-p-frame-02", "node": "component/card", "variation": null, "job": "Frame whose content panel collapses, with header action", "edge": "collapsible-panel-frame"}
+{"id": "spaceui:demo-p-frame-03", "node": "component/card", "variation": null, "job": "Frame split into separated panels", "edge": "split-panel-frame"}
+{"id": "spaceui:demo-p-frame-04", "node": "component/card", "variation": null, "job": "Frame of stacked panels divided by separators", "edge": "stacked-panel-frame"}
+{"id": "spaceui:demo-p-group-01", "node": "atom/layout", "variation": null, "job": "Group joining adjacent buttons with separators", "edge": "control-group"}
+{"id": "spaceui:demo-p-group-02", "node": "atom/layout", "variation": null, "job": "Group joining a url input with a copy button", "edge": "group-with-input"}
+{"id": "spaceui:demo-p-group-03", "node": "atom/layout", "variation": null, "job": "Small-sized group of joined controls", "edge": "small-control-group"}
+{"id": "spaceui:demo-p-group-04", "node": "atom/layout", "variation": null, "job": "Large-sized group of joined controls", "edge": "large-control-group"}
+{"id": "spaceui:demo-p-group-05", "node": "atom/layout", "variation": null, "job": "Group containing a disabled button", "edge": "group-with-disabled-control"}
+{"id": "spaceui:demo-p-group-06", "node": "atom/layout", "variation": null, "job": "Group of default-styled joined buttons", "edge": "control-group"}
+{"id": "spaceui:demo-p-group-07", "node": "atom/layout", "variation": null, "job": "Group with leading text before its input", "edge": "group-with-start-label"}
+{"id": "spaceui:demo-p-group-08", "node": "atom/layout", "variation": null, "job": "Group with trailing text after its input", "edge": "group-with-end-label"}
+{"id": "spaceui:demo-p-group-09", "node": "atom/layout", "variation": null, "job": "Vertically stacked zoom control buttons", "edge": "vertical-control-group"}
+{"id": "spaceui:demo-p-group-10", "node": "atom/layout", "variation": null, "job": "Nested groups for page numbers and navigation", "edge": "nested-control-groups"}
+{"id": "spaceui:demo-p-group-11", "node": "atom/layout", "variation": null, "job": "Group with a popover trigger beside its button", "edge": "group-with-popup"}
+{"id": "spaceui:demo-p-group-12", "node": "atom/layout", "variation": null, "job": "Message composer group wrapping an input group", "edge": "group-with-input-group"}
+{"id": "spaceui:demo-p-group-13", "node": "atom/layout", "variation": null, "job": "Subscribe button with an attached dropdown menu", "edge": "group-with-menu"}
+{"id": "spaceui:demo-p-group-14", "node": "atom/layout", "variation": null, "job": "Currency select and amount field in one group", "edge": "group-with-select"}
+{"id": "spaceui:demo-p-group-15", "node": "atom/layout", "variation": null, "job": "Url bar group of protocol, address and domain selects", "edge": "url-search-group"}
+{"id": "spaceui:demo-p-group-16", "node": "atom/layout", "variation": null, "job": "Add button joined with an item name input", "edge": "group-with-add-button"}
+{"id": "spaceui:demo-p-group-17", "node": "atom/layout", "variation": null, "job": "Amount input with a trailing currency label", "edge": "group-with-end-label"}
+{"id": "spaceui:demo-p-group-18", "node": "atom/layout", "variation": null, "job": "Protocol select joined with an ip address input", "edge": "group-with-select"}
+{"id": "spaceui:demo-p-group-19", "node": "atom/layout", "variation": null, "job": "Domain input joined with a domain suffix select", "edge": "group-with-select"}
+{"id": "spaceui:demo-p-group-20", "node": "atom/layout", "variation": null, "job": "Email input joined with a subscribe button", "edge": "group-with-input"}
+{"id": "spaceui:demo-p-group-21", "node": "atom/layout", "variation": null, "job": "Two number fields setting minimum and maximum", "edge": "range-input-group"}
+{"id": "spaceui:demo-p-group-22", "node": "atom/layout", "variation": null, "job": "Filter label, member combobox and remove button", "edge": "filter-chip-group"}
+{"id": "spaceui:demo-p-group-23", "node": "atom/layout", "variation": null, "job": "Grouped select choosing a teammate by avatar", "edge": "avatar-select-group"}
+{"id": "spaceui:demo-p-group-24", "node": "atom/layout", "variation": null, "job": "Publish split button with overflow menu and viewers", "edge": "split-button-group"}
+{"id": "spaceui:demo-p-group-25", "node": "atom/layout", "variation": null, "job": "Model buttons with tier badges and tooltips", "edge": "model-tier-selector"}
+{"id": "spaceui:demo-p-group-26", "node": "atom/layout", "variation": null, "job": "Status select joined with a task search input", "edge": "status-search-group"}
+{"id": "spaceui:demo-p-group-27", "node": "atom/layout", "variation": null, "job": "Recommendation scale of numbered rating buttons", "edge": "rating-scale-group"}
+{"id": "spaceui:demo-p-group-28", "node": "atom/layout", "variation": null, "job": "Team button, live avatars and collaboration actions", "edge": "team-presence-group"}
+{"id": "spaceui:demo-p-group-29", "node": "atom/layout", "variation": null, "job": "Draft, edit and upload buttons with a status badge", "edge": "badge-button-group"}
+{"id": "spaceui:demo-p-input-01", "node": "atom/text-input", "variation": "text-input", "job": "Single-line text input"}
+{"id": "spaceui:demo-p-input-02", "node": "atom/text-input", "variation": "text-input", "job": "Text inputs in small, default and large sizes"}
+{"id": "spaceui:demo-p-input-03", "node": "atom/text-input", "variation": "text-input", "job": "Disabled text input"}
+{"id": "spaceui:demo-p-input-04", "node": "atom/text-input", "variation": "text-input", "job": "Input using the file type"}
+{"id": "spaceui:demo-p-input-05", "node": "atom/text-input", "variation": "text-input", "job": "Labelled email input"}
+{"id": "spaceui:demo-p-input-06", "node": "component/field", "variation": "with-addon", "job": "Email input with an adjacent send button"}
+{"id": "spaceui:demo-p-input-07", "node": "component/field", "variation": "with-addon", "job": "Input group with leading text and info tooltip"}
+{"id": "spaceui:demo-p-input-08", "node": "atom/text-input", "variation": "password", "job": "Password input with a visibility toggle"}
+{"id": "spaceui:demo-p-input-09", "node": "component/field", "variation": "with-addon", "job": "Input group styled as a browser url bar"}
+{"id": "spaceui:demo-p-input-10", "node": "component/field", "variation": "with-addon", "job": "Search input group with a keyboard shortcut hint"}
+{"id": "spaceui:demo-p-input-11", "node": "component/field", "variation": "with-addon", "job": "Disabled input group showing a leading spinner"}
+{"id": "spaceui:demo-p-input-12", "node": "atom/text-input", "variation": "text-input", "job": "Input with a required label indicator"}
+{"id": "spaceui:demo-p-input-13", "node": "atom/text-input", "variation": "text-input", "job": "Input with an optional label"}
+{"id": "spaceui:demo-p-input-14", "node": "atom/text-input", "variation": "text-input", "job": "Input restyled with custom border and background"}
+{"id": "spaceui:demo-p-input-15", "node": "component/field", "variation": "with-addon", "job": "Input group showing a trailing spinner"}
+{"id": "spaceui:demo-p-input-16", "node": "atom/text-input", "variation": "text-input", "job": "Read-only text input"}
+{"id": "spaceui:demo-p-input-17", "node": "atom/text-input", "variation": "with-slots", "job": "Input counting how many characters remain"}
+{"id": "spaceui:demo-p-input-18", "node": "atom/text-input", "variation": "text-input", "job": "Pill-shaped rounded text input"}
+{"id": "spaceui:demo-p-input-group-01", "node": "component/field", "variation": "with-addon", "job": "Input group with a leading search icon"}
+{"id": "spaceui:demo-p-input-group-02", "node": "component/field", "variation": "with-addon", "job": "Input group with a trailing mail icon"}
+{"id": "spaceui:demo-p-input-group-03", "node": "component/field", "variation": "with-addon", "job": "Input group with leading url text"}
+{"id": "spaceui:demo-p-input-group-04", "node": "component/field", "variation": "with-addon", "job": "Input group with trailing domain text"}
+{"id": "spaceui:demo-p-input-group-05", "node": "component/field", "variation": "with-addon", "job": "Input group with text addons at both ends"}
+{"id": "spaceui:demo-p-input-group-06", "node": "component/field", "variation": "with-addon", "job": "Currency amount number field with prefix and suffix addons"}
+{"id": "spaceui:demo-p-input-group-07", "node": "component/field", "variation": "with-addon", "job": "Field whose end addon reveals a tooltip"}
+{"id": "spaceui:demo-p-input-group-08", "node": "component/field", "variation": "with-addon", "job": "Field with an icon button addon"}
+{"id": "spaceui:demo-p-input-group-09", "node": "component/field", "variation": "with-addon", "job": "Field with a button addon"}
+{"id": "spaceui:demo-p-input-group-10", "node": "component/field", "variation": "with-addon", "job": "Field with a badge addon"}
+{"id": "spaceui:demo-p-input-group-11", "node": "component/field", "variation": "with-addon", "job": "Field with a keyboard shortcut hint addon"}
+{"id": "spaceui:demo-p-input-group-12", "node": "component/field", "variation": "with-addon", "job": "Field with its label inside the group"}
+{"id": "spaceui:demo-p-input-group-13", "node": "component/field", "variation": "with-addon", "job": "Small-size field group with addons"}
+{"id": "spaceui:demo-p-input-group-14", "node": "component/field", "variation": "with-addon", "job": "Large-size field group with addons"}
+{"id": "spaceui:demo-p-input-group-15", "node": "component/field", "variation": "with-addon", "job": "Disabled field group with disabled addons"}
+{"id": "spaceui:demo-p-input-group-16", "node": "component/field", "variation": "with-addon", "job": "Field showing a loading spinner addon"}
+{"id": "spaceui:demo-p-input-group-17", "node": "component/field", "variation": "with-addon", "job": "Textarea group with a trailing addon"}
+{"id": "spaceui:demo-p-input-group-18", "node": "component/field", "variation": "with-addon", "job": "Field with badge and dropdown menu addons"}
+{"id": "spaceui:demo-p-input-group-19", "node": "component/field", "variation": "with-addon", "job": "Mini text editor with formatting toggle toolbar"}
+{"id": "spaceui:demo-p-input-group-20", "node": "component/search", "variation": "search-field", "job": "Search field with a leading search icon"}
+{"id": "spaceui:demo-p-input-group-21", "node": "component/field", "variation": "with-addon", "job": "Field whose start addon reveals a tooltip"}
+{"id": "spaceui:demo-p-input-group-22", "node": "component/field", "variation": "with-addon", "job": "Field with an addon clearing the value"}
+{"id": "spaceui:demo-p-input-group-23", "node": "component/search", "variation": "search-field", "job": "Search field with loader and voice button"}
+{"id": "spaceui:demo-p-input-group-24", "node": "component/field", "variation": "with-addon", "job": "Field with a live character counter addon"}
+{"id": "spaceui:demo-p-input-group-25", "node": "component/field", "variation": "password", "job": "Password field with a strength indicator"}
+{"id": "spaceui:demo-p-input-group-26", "node": "atom/text-input", "variation": "code-editor", "job": "Code textarea with language select and copy"}
+{"id": "spaceui:demo-p-input-group-27", "node": "component/composer", "variation": "with-attachments", "job": "Message composer with attachment buttons and send"}
+{"id": "spaceui:demo-p-input-group-28", "node": "component/composer", "variation": "chat-composer", "job": "Chat input with voice and send buttons"}
+{"id": "spaceui:demo-p-kbd-01", "node": "atom/text", "variation": "keyboard", "job": "Keyboard shortcut key caps"}
+{"id": "spaceui:demo-p-link-01", "node": "atom/link", "variation": "standard", "job": "Text link style variants"}
+{"id": "spaceui:demo-p-link-03", "node": "atom/link", "variation": "standard", "job": "Links styled as buttons"}
+{"id": "spaceui:demo-p-link-05", "node": "atom/link", "variation": "standard", "job": "External links carrying an icon"}
+{"id": "spaceui:demo-p-link-07", "node": "atom/link", "variation": "standard", "job": "Link rendering through a custom NextLink element"}
+{"id": "spaceui:demo-p-menu-01", "node": "component/menu", "variation": "dropdown-menu", "job": "Basic dropdown menu of actions"}
+{"id": "spaceui:demo-p-menu-02", "node": "component/menu", "variation": "dropdown-menu", "job": "Dropdown menu opened on hover"}
+{"id": "spaceui:demo-p-menu-03", "node": "component/menu", "variation": "dropdown-menu", "job": "Menu whose items are checkboxes"}
+{"id": "spaceui:demo-p-menu-04", "node": "component/menu", "variation": "dropdown-menu", "job": "Menu whose items are a radio group"}
+{"id": "spaceui:demo-p-menu-05", "node": "component/menu", "variation": "dropdown-menu", "job": "Menu whose items are links"}
+{"id": "spaceui:demo-p-menu-06", "node": "component/menu", "variation": "dropdown-menu", "job": "Menu items grouped under labels"}
+{"id": "spaceui:demo-p-menu-07", "node": "component/menu", "variation": "dropdown-menu", "job": "Menu with nested submenu"}
+{"id": "spaceui:demo-p-menu-08", "node": "component/menu", "variation": "dropdown-menu", "job": "Menu closing when an item is clicked"}
+{"id": "spaceui:demo-p-menu-09", "node": "component/menu", "variation": "dropdown-menu", "job": "Checkbox menu items drawn as switches"}
+{"id": "spaceui:demo-p-menubar-01", "node": "component/menu", "variation": "menubar", "job": "Horizontal menubar of dropdown menus"}
+{"id": "spaceui:demo-p-meter-01", "node": "atom/progress", "variation": "meter-gauge", "job": "Basic meter showing a value in range"}
+{"id": "spaceui:demo-p-meter-02", "node": "atom/progress", "variation": "meter-gauge", "job": "Simple meter with a label and value"}
+{"id": "spaceui:demo-p-meter-03", "node": "atom/progress", "variation": "meter-gauge", "job": "Meter showing a formatted value"}
+{"id": "spaceui:demo-p-meter-04", "node": "atom/progress", "variation": "meter-gauge", "job": "Meter with custom minimum and maximum"}
+{"id": "spaceui:demo-p-navigation-02", "node": "component/tabs", "variation": "pill-segmented", "job": "Links laid out as a segmented control"}
+{"id": "spaceui:demo-p-navigation-04", "node": "component/tabs", "variation": "pill-segmented", "job": "Small-size segmented navigation links"}
+{"id": "spaceui:demo-p-navigation-06", "node": "component/tabs", "variation": "pill-segmented", "job": "Large-size segmented navigation links"}
+{"id": "spaceui:demo-p-navigation-menu-01", "node": "component/menu", "variation": "navigation-menu", "job": "Navigation menu of site links"}
+{"id": "spaceui:demo-p-number-field-01", "node": "component/field", "variation": "number-stepper", "job": "Number field with increment and decrement buttons"}
+{"id": "spaceui:demo-p-number-field-02", "node": "component/field", "variation": "number-stepper", "job": "Small-size number field"}
+{"id": "spaceui:demo-p-number-field-03", "node": "component/field", "variation": "number-stepper", "job": "Large-size number field"}
+{"id": "spaceui:demo-p-number-field-04", "node": "component/field", "variation": "number-stepper", "job": "Disabled number field"}
+{"id": "spaceui:demo-p-number-field-05", "node": "component/field", "variation": "number-stepper", "job": "Number field with a label"}
+{"id": "spaceui:demo-p-number-field-06", "node": "component/field", "variation": "number-stepper", "job": "Number field scrubbed by dragging"}
+{"id": "spaceui:demo-p-number-field-07", "node": "component/field", "variation": "number-stepper", "job": "Number field bounded to a minimum and maximum"}
+{"id": "spaceui:demo-p-number-field-08", "node": "component/field", "variation": "number-stepper", "job": "Number field showing a formatted value"}
+{"id": "spaceui:demo-p-number-field-09", "node": "component/field", "variation": "number-stepper", "job": "Number field stepping by fixed increments"}
+{"id": "spaceui:demo-p-number-field-10", "node": "component/field", "variation": "number-stepper", "job": "Number field inside a submitted form"}
+{"id": "spaceui:demo-p-number-field-11", "node": "component/field", "variation": "number-stepper", "job": "Pill-shaped number field"}
+{"id": "spaceui:demo-p-otp-field-01", "node": "atom/text-input", "variation": "otp", "job": "One-time code input split into digit slots"}
+{"id": "spaceui:demo-p-otp-field-02", "node": "atom/text-input", "variation": "otp", "job": "Large one-time code input"}
+{"id": "spaceui:demo-p-otp-field-03", "node": "atom/text-input", "variation": "otp", "job": "One-time code input with group separators"}
+{"id": "spaceui:demo-p-otp-field-04", "node": "atom/text-input", "variation": "otp", "job": "Labelled one-time code input"}
+{"id": "spaceui:demo-p-otp-field-05", "node": "atom/text-input", "variation": "otp", "job": "One-time code input cleaning typed characters"}
+{"id": "spaceui:demo-p-otp-field-06", "node": "atom/text-input", "variation": "otp", "job": "One-time code input validating on completion"}
+{"id": "spaceui:demo-p-otp-field-07", "node": "atom/text-input", "variation": "otp", "job": "Alphanumeric one-time code input"}
+{"id": "spaceui:demo-p-otp-field-08", "node": "atom/text-input", "variation": "otp", "job": "One-time code input with per-slot placeholder hints"}
+{"id": "spaceui:demo-p-otp-field-09", "node": "atom/text-input", "variation": "otp", "job": "One-time code input masking entered digits"}
+{"id": "spaceui:demo-p-pagination-01", "node": "component/pagination", "variation": "numbered-pages", "job": "Numbered page links for paging results"}
+{"id": "spaceui:demo-p-pagination-02", "node": "component/pagination", "variation": null, "job": "Previous and next buttons only", "edge": "prev-next-only"}
+{"id": "spaceui:demo-p-pagination-03", "node": "component/pagination", "variation": "with-page-size", "job": "Result range select with previous and next"}
+{"id": "spaceui:demo-p-popover-01", "node": "component/popover", "variation": "standard-popover", "job": "Popover holding a short form"}
+{"id": "spaceui:demo-p-popover-02", "node": "component/popover", "variation": "standard-popover", "job": "Popover with an explicit close button"}
+{"id": "spaceui:demo-p-popover-03", "node": "component/popover", "variation": "standard-popover", "job": "Animated popovers placed on each side"}
+{"id": "spaceui:demo-p-popover-04", "node": "component/popover", "variation": "standard-popover", "job": "Split button popover confirming chosen occurrences"}
+{"id": "spaceui:demo-p-preview-card-01", "node": "component/popover", "variation": "hover-card", "job": "Hover card previewing a site's content"}
+{"id": "spaceui:demo-p-preview-link-card-01", "node": "component/popover", "variation": "link-preview", "job": "Hover preview popup for an external link"}
+{"id": "spaceui:demo-p-progress-01", "node": "atom/progress", "variation": "linear", "job": "Basic progress bar"}
+{"id": "spaceui:demo-p-progress-02", "node": "atom/progress", "variation": "linear", "job": "Progress bar with a label and value"}
+{"id": "spaceui:demo-p-progress-03", "node": "atom/progress", "variation": "linear", "job": "Progress bar showing a formatted value"}
+{"id": "spaceui:demo-p-radio-group-01", "node": "atom/choice", "variation": "group", "job": "Radio group choosing one option"}
+{"id": "spaceui:demo-p-radio-group-02", "node": "atom/choice", "variation": "group", "job": "Radio controls in small, default and large sizes"}
+{"id": "spaceui:demo-p-radio-group-03", "node": "atom/choice", "variation": "card", "job": "Radio options drawn as cards"}
+{"id": "spaceui:demo-p-radio-group-04", "node": "atom/choice", "variation": "group", "job": "Radio group inside a form"}
+{"id": "spaceui:demo-p-radio-group-05", "node": "atom/choice", "variation": "card", "job": "Theme picked from radio image cards"}
+{"id": "spaceui:demo-p-radio-group-06", "node": "component/tabs", "variation": "pill-segmented", "job": "Small segmented picker choosing one option"}
+{"id": "spaceui:demo-p-radio-group-07", "node": "component/tabs", "variation": "pill-segmented", "job": "Default segmented picker choosing one option"}
+{"id": "spaceui:demo-p-radio-group-08", "node": "component/tabs", "variation": "pill-segmented", "job": "Large segmented picker choosing one option"}
+{"id": "spaceui:demo-p-scroll-area-01", "node": "atom/layout", "variation": "scroll-area", "job": "Vertical scroll container with styled scrollbars"}
+{"id": "spaceui:demo-p-scroll-area-02", "node": "atom/layout", "variation": "horizontal-scroll", "job": "Horizontal scroll container"}
+{"id": "spaceui:demo-p-scroll-area-03", "node": "atom/layout", "variation": "scroll-area", "job": "Scroll container scrolling both directions"}
+{"id": "spaceui:demo-p-scroll-area-04", "node": "atom/layout", "variation": "scroll-area", "job": "Scroll container with fading edges"}
+{"id": "spaceui:demo-p-scroll-area-05", "node": "atom/layout", "variation": "horizontal-scroll", "job": "Horizontal scroll row keeping a scrollbar gutter"}
+{"id": "spaceui:demo-p-select-01", "node": "component/select", "variation": "standard-select", "job": "Basic select picking one item"}
+{"id": "spaceui:demo-p-select-02", "node": "component/select", "variation": "standard-select", "job": "Select triggers in three sizes"}
+{"id": "spaceui:demo-p-select-03", "node": "component/select", "variation": "standard-select", "job": "Disabled select"}
+{"id": "spaceui:demo-p-select-04", "node": "component/select", "variation": "standard-select", "job": "Select whose items skip alignment"}
+{"id": "spaceui:demo-p-select-05", "node": "component/select", "variation": "grouped", "job": "Select with grouped items"}
+{"id": "spaceui:demo-p-select-06", "node": "component/select", "variation": "multi-select", "job": "Select picking several items"}
+{"id": "spaceui:demo-p-select-07", "node": "component/select", "variation": "with-icons", "job": "Select trigger showing its selected icon"}
+{"id": "spaceui:demo-p-select-08", "node": "component/select", "variation": "with-icons", "job": "Select options carrying icons"}
+{"id": "spaceui:demo-p-select-09", "node": "component/select", "variation": "standard-select", "job": "Select holding object values"}
+{"id": "spaceui:demo-p-select-10", "node": "component/select", "variation": "standard-select", "job": "Select inside a submitted form"}
+{"id": "spaceui:demo-p-select-11", "node": "component/select", "variation": "standard-select", "job": "Select with disabled options"}
+{"id": "spaceui:demo-p-select-12", "node": "component/select", "variation": "standard-select", "job": "Select a timezone from the full offset list"}
+{"id": "spaceui:demo-p-select-13", "node": "component/select", "variation": "with-icons", "job": "Status select labelled by a coloured dot"}
+{"id": "spaceui:demo-p-select-14", "node": "component/select", "variation": "standard-select", "job": "Pill-shaped select trigger"}
+{"id": "spaceui:demo-p-select-15", "node": "component/select", "variation": "standard-select", "job": "Select preceded by a text label"}
+{"id": "spaceui:demo-p-select-16", "node": "component/select", "variation": "with-icons", "job": "Country select showing flags"}
+{"id": "spaceui:demo-p-select-17", "node": "component/select", "variation": "standard-select", "job": "Select whose options carry descriptions"}
+{"id": "spaceui:demo-p-select-18", "node": "component/select", "variation": "with-icons", "job": "Select options showing avatars"}
+{"id": "spaceui:demo-p-select-19", "node": "component/select", "variation": "with-icons", "job": "Team select showing avatars and usernames"}
+{"id": "spaceui:demo-p-select-20", "node": "component/select", "variation": "standard-select", "job": "Select sizing itself to its content"}
+{"id": "spaceui:demo-p-select-21", "node": "component/select", "variation": "standard-select", "job": "Select with custom border and background"}
+{"id": "spaceui:demo-p-select-22", "node": "component/select", "variation": "standard-select", "job": "Select under a field label"}
+{"id": "spaceui:demo-p-separator-01", "node": "atom/layout", "variation": null, "job": "Horizontal and vertical rules dividing content", "edge": "divider"}
+{"id": "spaceui:demo-p-sheet-01", "node": "component/sheet", "variation": "side-sheet", "job": "Panel sliding in from a screen edge"}
+{"id": "spaceui:demo-p-sheet-02", "node": "component/sheet", "variation": "form-sheet", "job": "Inset sheet holding an edit profile form"}
+{"id": "spaceui:demo-p-sheet-03", "node": "component/sheet", "variation": "side-sheet", "job": "Sheet opening from each screen side"}
+{"id": "spaceui:demo-p-sidebar-01", "node": "section/sidebar", "variation": "collapsible", "job": "Collapsible sidebar with navigation and header"}
+{"id": "spaceui:demo-p-skeleton-01", "node": "atom/loader", "variation": "skeleton", "job": "Placeholder blocks shown while content loads"}
+{"id": "spaceui:demo-p-skeleton-02", "node": "atom/loader", "variation": "skeleton", "job": "Skeleton placeholder shapes only"}
+{"id": "spaceui:demo-p-slider-01", "node": "atom/slider", "variation": "slider", "job": "Drag one handle to pick a value along a track"}
+{"id": "spaceui:demo-p-slider-02", "node": "atom/slider", "variation": "slider", "job": "Slider with a label and live value readout"}
+{"id": "spaceui:demo-p-slider-03", "node": "atom/slider", "variation": "slider", "job": "Disabled slider that cannot be dragged"}
+{"id": "spaceui:demo-p-slider-04", "node": "atom/slider", "variation": "slider", "job": "Slider with reference value labels underneath"}
+{"id": "spaceui:demo-p-slider-05", "node": "atom/slider", "variation": "with-ticks", "job": "Slider with evenly spaced tick marks and scale"}
+{"id": "spaceui:demo-p-slider-06", "node": "atom/slider", "variation": "slider", "job": "Slider with low and high labels above"}
+{"id": "spaceui:demo-p-slider-07", "node": "atom/slider", "variation": "range", "job": "Two thumbs pick a minimum and maximum value"}
+{"id": "spaceui:demo-p-slider-08", "node": "atom/slider", "variation": "range", "job": "Three thumbs pick points on one track"}
+{"id": "spaceui:demo-p-slider-09", "node": "atom/slider", "variation": "range", "job": "Range thumbs stop instead of crossing"}
+{"id": "spaceui:demo-p-slider-10", "node": "atom/slider", "variation": "range", "job": "Range thumbs swap when pushed past each other"}
+{"id": "spaceui:demo-p-slider-11", "node": "atom/slider", "variation": "slider", "job": "Volume slider with low and high speaker icons"}
+{"id": "spaceui:demo-p-slider-12", "node": "atom/slider", "variation": null, "job": "Slider paired with a number field for exact entry", "edge": "slider-number-field"}
+{"id": "spaceui:demo-p-slider-13", "node": "atom/slider", "variation": null, "job": "Range slider with a number field per thumb", "edge": "slider-number-field"}
+{"id": "spaceui:demo-p-slider-14", "node": "atom/slider", "variation": null, "job": "Slider with decrement and increment buttons either side", "edge": "slider-stepper"}
+{"id": "spaceui:demo-p-slider-15", "node": "atom/slider", "variation": "range", "job": "Price range slider showing selected from and to"}
+{"id": "spaceui:demo-p-slider-16", "node": "atom/slider", "variation": "rating", "job": "Emoji rating slider from awful to amazing"}
+{"id": "spaceui:demo-p-slider-17", "node": "atom/slider", "variation": "vertical", "job": "Vertical slider dragged up and down"}
+{"id": "spaceui:demo-p-slider-18", "node": "atom/slider", "variation": "vertical", "job": "Vertical slider with two thumbs selecting a range"}
+{"id": "spaceui:demo-p-slider-19", "node": "atom/slider", "variation": null, "job": "Vertical slider paired with a number field", "edge": "slider-number-field"}
+{"id": "spaceui:demo-p-slider-20", "node": "atom/slider", "variation": "vertical", "job": "Five vertical band sliders forming an equalizer"}
+{"id": "spaceui:demo-p-slider-21", "node": "atom/slider", "variation": null, "job": "X, Y and Z sliders with number fields and reset", "edge": "object-position-control"}
+{"id": "spaceui:demo-p-slider-22", "node": "atom/slider", "variation": null, "job": "Price range slider with histogram of matching items", "edge": "histogram-range-slider"}
+{"id": "spaceui:demo-p-slider-23", "node": "atom/slider", "variation": "range", "job": "Range slider submitting a volume value in a form"}
+{"id": "spaceui:demo-p-spinner-01", "node": "atom/loader", "variation": "spinner", "job": "Spinning indicator showing that content is loading"}
+{"id": "spaceui:demo-p-switch-01", "node": "atom/switch", "variation": "standard", "job": "Toggle a single setting on or off"}
+{"id": "spaceui:demo-p-switch-02", "node": "atom/switch", "variation": "standard", "job": "Switch shown in small, default and large sizes"}
+{"id": "spaceui:demo-p-switch-03", "node": "atom/switch", "variation": null, "job": "Card row with a setting description and switch", "edge": "switch-setting-row"}
+{"id": "spaceui:demo-p-switch-04", "node": "atom/switch", "variation": "standard", "job": "Switch submitting its value inside a form"}
+{"id": "spaceui:demo-p-switch-05", "node": "atom/switch", "variation": "standard", "job": "Switch with an overridden custom thumb size"}
+{"id": "spaceui:demo-p-switch-06", "node": "atom/switch", "variation": null, "job": "Business hours per day edited with time comboboxes", "edge": "weekly-availability-editor"}
+{"id": "spaceui:demo-p-switch-07", "node": "atom/switch", "variation": null, "job": "Business hours edited with grouped time range controls", "edge": "weekly-availability-editor"}
+{"id": "spaceui:demo-p-switch-08", "node": "atom/switch", "variation": null, "job": "Business hours edited with From and To time fields", "edge": "weekly-availability-editor"}
+{"id": "spaceui:demo-p-table-01", "node": "component/table", "variation": "standard-table", "job": "Plain table of rows and columns with caption"}
+{"id": "spaceui:demo-p-table-02", "node": "component/table", "variation": "standard-table", "job": "Card-style table inside a frame container"}
+{"id": "spaceui:demo-p-table-03", "node": "component/table", "variation": "data-table", "job": "TanStack table with row checkbox selection"}
+{"id": "spaceui:demo-p-table-04", "node": "component/table", "variation": "data-table", "job": "Sortable paginated table driven by TanStack"}
+{"id": "spaceui:demo-p-table-05", "node": "component/table", "variation": "standard-table", "job": "Table rendered in card style"}
+{"id": "spaceui:demo-p-table-06", "node": "component/table", "variation": "data-table", "job": "Card-framed table with checkboxes and sorting"}
+{"id": "spaceui:demo-p-table-07", "node": "component/table", "variation": "standard-table", "job": "Card-framed table in card style"}
+{"id": "spaceui:demo-p-table-08", "node": "component/table", "variation": "data-table", "job": "Card-framed sortable and paginated flight table"}
+{"id": "spaceui:demo-p-table-09", "node": "component/table", "variation": "standard-table", "job": "Issue table with badges and assignee avatars"}
+{"id": "spaceui:demo-p-tabs-01", "node": "component/tabs", "variation": "pill-segmented", "job": "Rounded and underline tab list variants"}
+{"id": "spaceui:demo-p-tabs-02", "node": "component/tabs", "variation": "pill-segmented", "job": "Tab list in small, default and large sizes"}
+{"id": "spaceui:demo-p-tabs-03", "node": "component/tabs", "variation": "pill-segmented", "job": "Tabs with fully rounded trigger pills"}
+{"id": "spaceui:demo-p-tabs-04", "node": "component/tabs", "variation": "with-icons", "job": "Tabs with an icon before each label"}
+{"id": "spaceui:demo-p-tabs-05", "node": "component/tabs", "variation": "underline", "job": "Underline tabs with an icon before each label"}
+{"id": "spaceui:demo-p-tabs-06", "node": "component/tabs", "variation": "with-icons", "job": "Icon-only tabs labelled for screen readers"}
+{"id": "spaceui:demo-p-tabs-07", "node": "component/tabs", "variation": "underline", "job": "Underline tabs with icon above the label"}
+{"id": "spaceui:demo-p-tabs-08", "node": "component/tabs", "variation": "with-counts", "job": "Tabs each showing a count badge"}
+{"id": "spaceui:demo-p-tabs-09", "node": "component/tabs", "variation": "vertical", "job": "Vertical underline tabs with icons before labels"}
+{"id": "spaceui:demo-p-tabs-10", "node": "component/tabs", "variation": "with-counts", "job": "Icon-only tabs with a count badge"}
+{"id": "spaceui:demo-p-tabs-11", "node": "component/tabs", "variation": "with-icons", "job": "Icon-only tabs with grouped tooltips on hover"}
+{"id": "spaceui:demo-p-tabs-12", "node": "component/tabs", "variation": "pill-segmented", "job": "Small sized tab list"}
+{"id": "spaceui:demo-p-tabs-13", "node": "component/tabs", "variation": "pill-segmented", "job": "Large sized tab list"}
+{"id": "spaceui:demo-p-textarea-01", "node": "atom/text-input", "variation": "textarea", "job": "Plain multi-line text input"}
+{"id": "spaceui:demo-p-textarea-02", "node": "atom/text-input", "variation": "textarea", "job": "Textarea in small, default and large sizes"}
+{"id": "spaceui:demo-p-textarea-03", "node": "atom/text-input", "variation": "textarea", "job": "Disabled multi-line text input"}
+{"id": "spaceui:demo-p-textarea-04", "node": "atom/text-input", "variation": "textarea", "job": "Textarea with a label above it"}
+{"id": "spaceui:demo-p-textarea-05", "node": "atom/text-input", "variation": "textarea", "job": "Textarea submitted in a form with validation message"}
+{"id": "spaceui:demo-p-textarea-06", "node": "atom/text-input", "variation": "textarea", "job": "Textarea with label and required asterisk"}
+{"id": "spaceui:demo-p-textarea-07", "node": "atom/text-input", "variation": "textarea", "job": "Textarea with an optional label hint"}
+{"id": "spaceui:demo-p-textarea-08", "node": "atom/text-input", "variation": "textarea", "job": "Textarea with custom border and muted background"}
+{"id": "spaceui:demo-p-textarea-09", "node": "atom/text-input", "variation": "textarea", "job": "Read-only textarea showing fixed content"}
+{"id": "spaceui:demo-p-textarea-10", "node": "atom/text-input", "variation": "textarea", "job": "Textarea with a characters remaining counter"}
+{"id": "spaceui:demo-p-textarea-11", "node": "atom/text-input", "variation": "with-error", "job": "Required textarea field with an error message"}
+{"id": "spaceui:demo-p-textarea-12", "node": "atom/text-input", "variation": "textarea", "job": "Short textarea with a fixed two-row height"}
+{"id": "spaceui:demo-p-textarea-13", "node": "atom/text-input", "variation": "textarea", "job": "Textarea with a Send button aligned right"}
+{"id": "spaceui:demo-p-textarea-14", "node": "atom/text-input", "variation": "textarea", "job": "Textarea with a Send button aligned left"}
+{"id": "spaceui:demo-p-toast-01", "node": "component/toast", "variation": "basic-toast", "job": "Buttons firing default, success, info, warning and error toasts"}
+{"id": "spaceui:demo-p-toast-02", "node": "component/toast", "variation": "stacked-toasts", "job": "Stacked toasts with varying content heights"}
+{"id": "spaceui:demo-p-toast-03", "node": "component/toast", "variation": null, "job": "Tooltip-style toast anchored to the copy button", "edge": "anchored-toast"}
+{"id": "spaceui:demo-p-toast-04", "node": "component/toast", "variation": null, "job": "Anchored error toast after a failed async submit", "edge": "anchored-toast"}
+{"id": "spaceui:demo-p-toast-05", "node": "component/toast", "variation": "loading-toast", "job": "Long-running promise toast with progress and cancel"}
+{"id": "spaceui:demo-p-toast-06", "node": "component/toast", "variation": "basic-toast", "job": "Repeated clicks update one success toast"}
+{"id": "spaceui:demo-p-toast-07", "node": "component/toast", "variation": "basic-toast", "job": "Repeated clicks update one error toast"}
+{"id": "spaceui:demo-p-toast-08", "node": "component/toast", "variation": null, "job": "Anchored deduplicated draft-saved toast", "edge": "anchored-toast"}
+{"id": "spaceui:demo-p-toast-09", "node": "component/toast", "variation": null, "job": "Anchored deduplicated save-failed error toast", "edge": "anchored-toast"}
+{"id": "spaceui:demo-p-toggle-01", "node": "atom/button", "variation": "toggle", "job": "Pressed-state buttons in default and outline styles"}
+{"id": "spaceui:demo-p-toggle-02", "node": "atom/button", "variation": "toggle", "job": "Toggle buttons in small, default and large sizes"}
+{"id": "spaceui:demo-p-toggle-03", "node": "atom/button", "variation": "toggle", "job": "Large outline toggle button"}
+{"id": "spaceui:demo-p-toggle-04", "node": "atom/button", "variation": "toggle", "job": "Disabled toggle button"}
+{"id": "spaceui:demo-p-toggle-05", "node": "atom/button", "variation": "toggle", "job": "Row of outline icon toggle buttons"}
+{"id": "spaceui:demo-p-toggle-06", "node": "atom/button", "variation": "toggle", "job": "Bookmark toggle with tooltip and success toast"}
+{"id": "spaceui:demo-p-toggle-group-01", "node": "atom/switch", "variation": "toggle-group", "job": "Toggle group in default and outline styles"}
+{"id": "spaceui:demo-p-toggle-group-02", "node": "atom/switch", "variation": "toggle-group", "job": "Toggle groups in small, default and large sizes"}
+{"id": "spaceui:demo-p-toggle-group-03", "node": "atom/switch", "variation": "toggle-group", "job": "Vertical outline toggle group with separators"}
+{"id": "spaceui:demo-p-toggle-group-04", "node": "atom/switch", "variation": "toggle-group", "job": "Disabled toggle group"}
+{"id": "spaceui:demo-p-toggle-group-05", "node": "atom/switch", "variation": "toggle-group", "job": "Toggle group with one item disabled"}
+{"id": "spaceui:demo-p-toggle-group-06", "node": "atom/switch", "variation": "toggle-group", "job": "Toggle group allowing several items pressed"}
+{"id": "spaceui:demo-p-toggle-group-07", "node": "atom/switch", "variation": "toggle-group", "job": "Toggle group items each with a tooltip"}
+{"id": "spaceui:demo-p-toolbar-01", "node": "component/dock", "variation": "action-toolbar", "job": "Toolbar of toggles, buttons and a font select"}
+{"id": "spaceui:demo-p-tooltip-01", "node": "atom/tooltip", "variation": "standard", "job": "Hover tooltip explaining a button"}
+{"id": "spaceui:demo-p-tooltip-02", "node": "atom/tooltip", "variation": "grouped-delay", "job": "Tooltip per item in a toggle group"}
+{"id": "spaceui:demo-p-tooltip-03", "node": "atom/tooltip", "variation": "grouped-delay", "job": "Shared tooltip handle over a toggle group"}
+{"id": "spaceui:demo-p-tooltip-04", "node": "atom/tooltip", "variation": "grouped-delay", "job": "Shared tooltip handle over a vertical button group"}
+{"id": "spaceui:hooks-animation-use-auto-height", "node": null, "variation": null, "job": "Measure and animate a box to its content height"}
+{"id": "spaceui:hooks-animation-use-controlled-state", "node": null, "variation": null, "job": "Support controlled and uncontrolled state in one hook"}
+{"id": "spaceui:hooks-animation-use-data-state", "node": null, "variation": null, "job": "Toggle data attributes to drive element animations"}
+{"id": "spaceui:hooks-animation-use-in-view", "node": null, "variation": null, "job": "Detect when an element scrolls into view"}
+{"id": "spaceui:hooks-animation-use-motion-value-state", "node": null, "variation": null, "job": "Read Framer Motion values as React state"}
+{"id": "spaceui:hooks-browser-use-battery-status", "node": null, "variation": null, "job": "Read battery level and charging state"}
+{"id": "spaceui:hooks-browser-use-clipboard", "node": null, "variation": null, "job": "Copy text to the clipboard with copied feedback"}
+{"id": "spaceui:hooks-browser-use-cookie", "node": null, "variation": null, "job": "Read and write a browser cookie as state"}
+{"id": "spaceui:hooks-browser-use-cookie-listener", "node": null, "variation": null, "job": "Watch for changes to a browser cookie"}
+{"id": "spaceui:hooks-browser-use-device-os", "node": null, "variation": null, "job": "Detect the visitor's operating system"}
+{"id": "spaceui:hooks-browser-use-favicon", "node": null, "variation": null, "job": "Swap the browser tab favicon dynamically"}
+{"id": "spaceui:hooks-browser-use-fullscreen", "node": null, "variation": null, "job": "Enter and exit element fullscreen"}
+{"id": "spaceui:hooks-browser-use-is-mac", "node": null, "variation": null, "job": "Detect whether the visitor uses macOS"}
+{"id": "spaceui:hooks-browser-use-local-storage", "node": null, "variation": null, "job": "Persist state in local storage"}
+{"id": "spaceui:hooks-browser-use-media-query", "node": null, "variation": null, "job": "Evaluate a CSS media query in JavaScript"}
+{"id": "spaceui:hooks-browser-use-network", "node": null, "variation": null, "job": "Track online status and connection quality"}
+{"id": "spaceui:hooks-browser-use-orientation", "node": null, "variation": null, "job": "Track device screen orientation changes"}
+{"id": "spaceui:hooks-browser-use-prefers-theme", "node": null, "variation": null, "job": "Detect the system colour scheme preference"}
+{"id": "spaceui:hooks-browser-use-script", "node": null, "variation": null, "job": "Load an external script and report readiness"}
+{"id": "spaceui:hooks-browser-use-session-storage", "node": null, "variation": null, "job": "Persist state for the browser session only"}
+{"id": "spaceui:hooks-browser-use-share", "node": null, "variation": null, "job": "Share content through the native share sheet"}
+{"id": "spaceui:hooks-browser-use-tab-notification", "node": null, "variation": null, "job": "Show a notification count in the document title"}
+{"id": "spaceui:hooks-browser-use-title", "node": null, "variation": null, "job": "Set the document head title"}
+{"id": "spaceui:hooks-components-class", "node": null, "variation": null, "job": "Wrapper component applying conditional class names"}
+{"id": "spaceui:hooks-components-for", "node": null, "variation": null, "job": "Render a list from data with a fallback"}
+{"id": "spaceui:hooks-components-if", "node": null, "variation": null, "job": "Render children or fallback on a boolean condition"}
+{"id": "spaceui:hooks-components-image", "node": "atom/image", "variation": null, "job": "Show a picture, swapping in a fallback when broken", "edge": "image-with-fallback"}
+{"id": "spaceui:hooks-components-in-view", "node": "atom/layout", "variation": "scroll-reveal", "job": "Reveal a wrapper element when it scrolls into view"}
+{"id": "spaceui:hooks-components-render-after", "node": null, "variation": null, "job": "Delay rendering children by a set time"}
+{"id": "spaceui:hooks-components-show", "node": null, "variation": null, "job": "Render children only when a value is truthy"}
+{"id": "spaceui:hooks-components-switch", "node": null, "variation": null, "job": "Render the first matching case branch"}
+{"id": "spaceui:hooks-dom-use-click-outside", "node": null, "variation": null, "job": "Detect clicks outside an element"}
+{"id": "spaceui:hooks-dom-use-event-listener", "node": null, "variation": null, "job": "Attach a DOM event listener declaratively"}
+{"id": "spaceui:hooks-dom-use-hover", "node": null, "variation": null, "job": "Track whether the pointer hovers an element"}
+{"id": "spaceui:hooks-dom-use-intersection-observer", "node": null, "variation": null, "job": "Observe when an element enters the viewport"}
+{"id": "spaceui:hooks-dom-use-key-press", "node": null, "variation": null, "job": "Report whether a key is held down"}
+{"id": "spaceui:hooks-dom-use-lock-body-scroll", "node": null, "variation": null, "job": "Freeze page scrolling while an overlay is open"}
+{"id": "spaceui:hooks-dom-use-mouse-position", "node": null, "variation": null, "job": "Track live pointer coordinates"}
+{"id": "spaceui:hooks-dom-use-scroll-device", "node": null, "variation": null, "job": "Detect pointer and scroll device type"}
+{"id": "spaceui:hooks-dom-use-scroll-position", "node": null, "variation": null, "job": "Track the page scroll position"}
+{"id": "spaceui:hooks-dom-use-scroll-to", "node": null, "variation": null, "job": "Scroll to a target element or offset"}
+{"id": "spaceui:hooks-dom-use-size", "node": null, "variation": null, "job": "Measure an element's rendered size"}
+{"id": "spaceui:hooks-dom-use-window-size", "node": null, "variation": null, "job": "Track viewport width and height"}
+{"id": "spaceui:hooks-form-use-character-limit", "node": null, "variation": null, "job": "Count characters against a limit"}
+{"id": "spaceui:hooks-form-use-file-upload", "node": null, "variation": null, "job": "Manage selected files and their upload state"}
+{"id": "spaceui:hooks-form-use-input-value", "node": null, "variation": null, "job": "Hold a controlled input value"}
+{"id": "spaceui:hooks-form-use-load-more", "node": null, "variation": null, "job": "Load additional pages of items"}
+{"id": "spaceui:hooks-form-use-map", "node": null, "variation": null, "job": "Hold a Map in React state"}
+{"id": "spaceui:hooks-form-use-mutation", "node": null, "variation": null, "job": "Run a mutation and track its state"}
+{"id": "spaceui:hooks-form-use-pagination", "node": null, "variation": null, "job": "Page through a list of records"}
+{"id": "spaceui:hooks-form-use-parse-markdown", "node": null, "variation": null, "job": "Convert markdown text into renderable output"}
+{"id": "spaceui:hooks-form-use-reading-time", "node": null, "variation": null, "job": "Estimate reading time for a text"}
+{"id": "spaceui:hooks-form-use-sanitize-content", "node": null, "variation": null, "job": "Strip unsafe markup out of content"}
+{"id": "spaceui:hooks-lifecycle-use-confirm-exit", "node": null, "variation": null, "job": "Warn before leaving with unsaved changes"}
+{"id": "spaceui:hooks-lifecycle-use-debounce", "node": null, "variation": null, "job": "Debounce a rapidly changing value"}
+{"id": "spaceui:hooks-lifecycle-use-event-callback", "node": null, "variation": null, "job": "Stable callback that reads the latest props"}
+{"id": "spaceui:hooks-lifecycle-use-first-render", "node": null, "variation": null, "job": "Flag whether this is the first render"}
+{"id": "spaceui:hooks-lifecycle-use-first-visit", "node": null, "variation": null, "job": "Detect a visitor's first visit"}
+{"id": "spaceui:hooks-lifecycle-use-hold", "node": null, "variation": null, "job": "Track a press-and-hold gesture"}
+{"id": "spaceui:hooks-lifecycle-use-idle", "node": null, "variation": null, "job": "Detect when the user goes idle"}
+{"id": "spaceui:hooks-lifecycle-use-interval", "node": null, "variation": null, "job": "Run a callback on a repeating interval"}
+{"id": "spaceui:hooks-lifecycle-use-is-mounted", "node": null, "variation": null, "job": "Report whether the component is mounted"}
+{"id": "spaceui:hooks-lifecycle-use-isomorphic-layout-effect", "node": null, "variation": null, "job": "Layout effect that is safe on the server"}
+{"id": "spaceui:hooks-lifecycle-use-leave-detection", "node": null, "variation": null, "job": "Detect when the pointer leaves an element"}
+{"id": "spaceui:hooks-lifecycle-use-performance-mode", "node": null, "variation": null, "job": "Detect reduced performance or motion preferences"}
+{"id": "spaceui:hooks-lifecycle-use-single-effect", "node": null, "variation": null, "job": "Run an effect exactly once"}
+{"id": "spaceui:hooks-lifecycle-use-toggle", "node": null, "variation": null, "job": "Toggle a boolean state"}
+{"id": "spaceui:hooks-lifecycle-use-update-effect", "node": null, "variation": null, "job": "Run an effect only after updates"}
+{"id": "spaceui:hooks-lifecycle-use-urgent-update", "node": null, "variation": null, "job": "Force an urgent re-render"}
+{"id": "spaceui:hooks-utils-cache", "node": null, "variation": null, "job": "Cache values behind keys"}
+{"id": "spaceui:hooks-utils-cookie", "node": null, "variation": null, "job": "Read and write browser cookies"}
+{"id": "spaceui:hooks-utils-event", "node": null, "variation": null, "job": "Create and emit custom events"}
+{"id": "spaceui:hooks-utils-format-bytes", "node": null, "variation": null, "job": "Format byte sizes for display"}
+{"id": "spaceui:hooks-utils-format-content", "node": null, "variation": null, "job": "Format content strings for display"}
+{"id": "spaceui:hooks-utils-format-date", "node": null, "variation": null, "job": "Format dates for display"}
+{"id": "spaceui:hooks-utils-format-text", "node": null, "variation": null, "job": "Format and tidy text strings"}
+{"id": "spaceui:hooks-utils-is-negative", "node": null, "variation": null, "job": "Check whether a number is negative"}
+{"id": "spaceui:hooks-utils-logger", "node": null, "variation": null, "job": "Log messages with a severity level"}
+{"id": "spaceui:hooks-utils-range-map", "node": null, "variation": null, "job": "Map a value from one range onto another"}
+{"id": "spaceui:hooks-utils-sleep", "node": null, "variation": null, "job": "Pause execution for a given time"}
+{"id": "spaceui:hooks-utils-states-catch-error", "node": null, "variation": null, "job": "Catch and normalise a thrown error"}
+{"id": "spaceui:hooks-utils-states-create-error", "node": null, "variation": null, "job": "Build a structured error object"}
+{"id": "spaceui:interactions-agent-activity-feed", "node": "component/list", "variation": "activity-feed", "job": "Live agent activity feed with status filters"}
+{"id": "spaceui:lib-base-ui", "node": null, "variation": null, "job": "Base UI providers and render utilities"}
+{"id": "spaceui:lib-base-ui-csp-provider", "node": null, "variation": null, "job": "Provide a content security policy nonce"}
+{"id": "spaceui:lib-base-ui-direction-provider", "node": null, "variation": null, "job": "Provide text direction context to the tree"}
+{"id": "spaceui:lib-base-ui-merge-props", "node": null, "variation": null, "job": "Merge component props with render overrides"}
+{"id": "spaceui:lib-base-ui-use-render", "node": null, "variation": null, "job": "Render a component with custom element props"}
+{"id": "spaceui:lib-font-open-runde", "node": "asset/font", "variation": "ui-sans", "job": "Rounded sans font family in four weights"}
+{"id": "spaceui:lib-get-strict-context", "node": null, "variation": null, "job": "Create a context that throws when missing"}
+{"id": "spaceui:lib-gpu-runtime", "node": null, "variation": null, "job": "Drive a WebGPU canvas lifecycle and visibility"}
+{"id": "spaceui:lib-next-image-url", "node": null, "variation": null, "job": "Build Next.js optimized image URLs for textures"}
+{"id": "spaceui:lib-segmented-control", "node": null, "variation": null, "job": "Shared sizing and layout styles for segmented controls"}
+{"id": "spaceui:lib-three-types", "node": null, "variation": null, "job": "TypeScript declarations for Three.js shaders"}
+{"id": "spaceui:lib-utils", "node": null, "variation": null, "job": "Shared class name and helper utilities"}
+{"id": "spaceui:motion", "node": null, "variation": null, "job": "Agent skill for motion principles and video export"}
+{"id": "spaceui:primitives-accordion", "node": "component/accordion", "variation": "standard-accordion", "job": "Collapsible sections revealing one panel at a time"}
+{"id": "spaceui:primitives-alert", "node": "component/alert", "variation": "inline-alert", "job": "Inline message box for status and warnings"}
+{"id": "spaceui:primitives-alert-dialog", "node": "component/dialog", "variation": "confirm-alert", "job": "Modal asking the user to confirm an action"}
+{"id": "spaceui:primitives-aspect-ratio", "node": "atom/layout", "variation": null, "job": "Container locking media to a fixed aspect ratio", "edge": "aspect-ratio-box"}
+{"id": "spaceui:primitives-autocomplete", "node": "component/select", "variation": "combobox", "job": "Text input filtered against suggested options"}
+{"id": "spaceui:primitives-avatar", "node": "atom/avatar", "variation": "standard", "job": "Show a person or organisation's image"}
+{"id": "spaceui:primitives-badge", "node": "atom/badge", "variation": "badge", "job": "Small label marking status or category"}
+{"id": "spaceui:primitives-breadcrumb", "node": "component/breadcrumb", "variation": "text-breadcrumb", "job": "Trail of links showing where you are"}
+{"id": "spaceui:primitives-button", "node": "atom/button", "variation": "primary", "job": "Pressable control that triggers an action"}
+{"id": "spaceui:primitives-calendar", "node": "component/calendar", "variation": "month-calendar", "job": "Month grid for picking a date"}
+{"id": "spaceui:primitives-card", "node": "component/card", "variation": "standard-card", "job": "Bordered surface grouping related content"}
+{"id": "spaceui:primitives-checkbox", "node": "atom/choice", "variation": "checkbox", "job": "Tick one or more options"}
+{"id": "spaceui:primitives-checkbox-group", "node": "atom/choice", "variation": "group", "job": "Group of checkboxes sharing one value"}
+{"id": "spaceui:primitives-collapsible", "node": "component/accordion", "variation": "collapsible", "job": "Single section that expands and collapses"}
+{"id": "spaceui:primitives-combobox", "node": "component/select", "variation": "combobox", "job": "Pick an option from a searchable dropdown"}
+{"id": "spaceui:primitives-command", "node": "component/command", "variation": "dialog-based", "job": "Dialog command palette of searchable actions"}
+{"id": "spaceui:primitives-context-menu", "node": "component/menu", "variation": "context-menu", "job": "Menu of actions opened by right clicking"}
+{"id": "spaceui:primitives-dialog", "node": "component/dialog", "variation": "modal-dialog", "job": "Modal window overlaying the page"}
+{"id": "spaceui:primitives-direction", "node": null, "variation": null, "job": "Provide text direction context to the tree"}
+{"id": "spaceui:primitives-drawer", "node": "component/sheet", "variation": "bottom-sheet", "job": "Panel sliding in from a screen edge"}
+{"id": "spaceui:primitives-empty", "node": "component/empty", "variation": "icon-text", "job": "Placeholder panel for a view with no data"}
+{"id": "spaceui:primitives-field", "node": "component/field", "variation": "text-input", "job": "Form field with label, control and error"}
+{"id": "spaceui:primitives-fieldset", "node": "component/field", "variation": null, "job": "Group related form controls under a legend", "edge": "field-group"}
+{"id": "spaceui:primitives-form", "node": "component/form", "variation": null, "job": "Collect and submit a set of fields", "edge": "standard-form"}
+{"id": "spaceui:primitives-frame", "node": "component/card", "variation": null, "job": "Rounded panel grouping content with header and footer", "edge": "frame-panel"}
+{"id": "spaceui:primitives-group", "node": "atom/layout", "variation": null, "job": "Join adjacent controls into one bar", "edge": "control-group"}
+{"id": "spaceui:primitives-input", "node": "atom/text-input", "variation": "text-input", "job": "Single-line text entry control"}
+{"id": "spaceui:primitives-input-group", "node": "component/field", "variation": "with-addon", "job": "Input with attached prefix or suffix addons"}
+{"id": "spaceui:primitives-kbd", "node": "atom/text", "variation": "keyboard", "job": "Render a keyboard shortcut key"}
+{"id": "spaceui:primitives-label", "node": "atom/text", "variation": null, "job": "Caption naming a form control", "edge": "form-label"}
+{"id": "spaceui:primitives-link", "node": "atom/link", "variation": "standard", "job": "Text that navigates somewhere"}
+{"id": "spaceui:primitives-menu", "node": "component/menu", "variation": "dropdown-menu", "job": "Dropdown list of actions"}
+{"id": "spaceui:primitives-menubar", "node": "component/menu", "variation": "menubar", "job": "Horizontal bar of dropdown menus"}
+{"id": "spaceui:primitives-meter", "node": "atom/progress", "variation": "meter-gauge", "job": "Gauge showing a value within a range"}
+{"id": "spaceui:primitives-navigation-menu", "node": "component/menu", "variation": "navigation-menu", "job": "Site navigation with dropdown panels"}
+{"id": "spaceui:primitives-number-field", "node": "component/field", "variation": "number-stepper", "job": "Field for entering a number with steppers"}
+{"id": "spaceui:primitives-otp-field", "node": "atom/text-input", "variation": "otp", "job": "One-time code input split into slots"}
+{"id": "spaceui:primitives-pagination", "node": "component/pagination", "variation": "numbered-pages", "job": "Numbered links for moving between pages"}
+{"id": "spaceui:primitives-popover", "node": "component/popover", "variation": "standard-popover", "job": "Anchored floating panel opened from a trigger"}
+{"id": "spaceui:primitives-preview-card", "node": "component/popover", "variation": "hover-card", "job": "Card previewing content on hover"}
+{"id": "spaceui:primitives-preview-link-card", "node": "component/popover", "variation": "link-preview", "job": "Hover preview image for an external link"}
+{"id": "spaceui:primitives-progress", "node": "atom/progress", "variation": "linear", "job": "Bar showing how far a task has run"}
+{"id": "spaceui:primitives-radio-group", "node": "atom/choice", "variation": "group", "job": "Choose a single option from a set"}
+{"id": "spaceui:primitives-scroll-area", "node": "atom/layout", "variation": "scroll-area", "job": "Scrollable container with custom scrollbars"}
+{"id": "spaceui:primitives-select", "node": "component/select", "variation": "standard-select", "job": "Pick one value from a dropdown list"}
+{"id": "spaceui:primitives-separator", "node": "atom/layout", "variation": null, "job": "Thin line dividing content", "edge": "divider"}
+{"id": "spaceui:primitives-sheet", "node": "component/sheet", "variation": "side-sheet", "job": "Side panel sliding over the page"}
+{"id": "spaceui:primitives-sidebar", "node": "section/sidebar", "variation": "collapsible", "job": "Collapsible side navigation for an app"}
+{"id": "spaceui:primitives-skeleton", "node": "atom/loader", "variation": "skeleton", "job": "Grey placeholder shown while content loads"}

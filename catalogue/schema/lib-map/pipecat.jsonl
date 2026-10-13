@@ -1,0 +1,21 @@
+{"id": "pipecat:audio-visualizer-bar", "node": "component/player", "variation": "waveform-visualizer", "job": "Show audio spectrum bars reacting to live speech"}
+{"id": "pipecat:audio-visualizer-radial", "node": "component/agent-parts", "variation": "voice-orb", "job": "Show audio as radial ring of glowing spokes"}
+{"id": "pipecat:audio-visualizer-wave", "node": "component/player", "variation": "waveform-visualizer", "job": "Show audio as swirling shader aura ribbons"}
+{"id": "pipecat:bot-audio", "node": "component/player", "variation": "audio-player", "job": "Play bot audio with mute and volume control"}
+{"id": "pipecat:client-status", "node": "atom/status-dot", "variation": "presence-wrapper", "job": "Show client and agent connection status rows"}
+{"id": "pipecat:connect-button", "node": "atom/button", "variation": null, "job": "Toggle whole session lifecycle with one stateful button", "edge": "session-connect-button"}
+{"id": "pipecat:console", "node": "page/dashboard", "variation": "dashboard-operations", "job": "Debug workbench for testing Pipecat voice agents"}
+{"id": "pipecat:conversation", "node": "section/chat", "variation": "thread", "job": "Scrolling transcript of user and agent messages"}
+{"id": "pipecat:device-select", "node": "component/select", "variation": "standard-select", "job": "Pick microphone, speaker, or camera device"}
+{"id": "pipecat:dtmf-keypad", "node": "component/widget", "variation": null, "job": "Telephone keypad sending DTMF tone digits", "edge": "dtmf-keypad"}
+{"id": "pipecat:metric", "node": "component/stat", "variation": "kpi-card", "job": "Show one labelled datapoint as a metric tile"}
+{"id": "pipecat:metrics", "node": "section/kpis", "variation": "analytics", "job": "Dashboard of performance latency and usage metrics"}
+{"id": "pipecat:session-info", "node": "component/list", "variation": "standard-list", "job": "Show session transport, ids, and version rows"}
+{"id": "pipecat:text-input", "node": "component/composer", "variation": "chat-composer", "job": "Compose and send message into the conversation"}
+{"id": "pipecat:transcript-overlay", "node": "component/message", "variation": "streaming-text", "job": "Caption overlay showing bot speech word by word"}
+{"id": "pipecat:use-pipecat-app", "node": null, "variation": null, "job": "Hook bootstrapping Pipecat client transport lifecycle"}
+{"id": "pipecat:use-pipecat-event-stream", "node": null, "variation": null, "job": "Hook capturing and sharing the RTVI event log"}
+{"id": "pipecat:use-pipecat-metrics", "node": null, "variation": null, "job": "Hook storing and sharing RTVI metric series"}
+{"id": "pipecat:user-audio-control", "node": "atom/button", "variation": "toggle", "job": "Toggle microphone with visualizer and device picker"}
+{"id": "pipecat:user-screen-control", "node": "atom/button", "variation": "toggle", "job": "Toggle screen share with live preview tile"}
+{"id": "pipecat:user-video-control", "node": "atom/button", "variation": "toggle", "job": "Toggle camera with preview tile and picker"}

@@ -1,0 +1,52 @@
+{"id": "better-auth-ui:account-settings", "node": "section/settings-panel", "variation": "card-blocks", "job": "account settings cards: profile, email, appearance"}
+{"id": "better-auth-ui:active-sessions", "node": "component/list", "variation": "standard-list", "job": "active sessions list with revoke controls"}
+{"id": "better-auth-ui:additional-field", "node": "component/field", "variation": null, "job": "render a configured extra profile field of any type", "edge": "user-field-renderer"}
+{"id": "better-auth-ui:admin", "node": "page/dashboard", "variation": "dashboard-operations", "job": "admin console: user table, inspector and session controls"}
+{"id": "better-auth-ui:agent-auth", "node": "component/agent-parts", "variation": "approval", "job": "approve agent capability requests and revoke grants"}
+{"id": "better-auth-ui:anonymous", "node": "atom/button", "variation": "primary", "job": "continue as guest button on the sign-in form"}
+{"id": "better-auth-ui:api-key", "node": "section/settings-panel", "variation": "sections", "job": "list, create, copy and revoke API keys"}
+{"id": "better-auth-ui:auth", "node": "section/auth", "variation": null, "job": "render the right auth view from path or prop", "edge": "auth-view-router"}
+{"id": "better-auth-ui:auth-provider", "node": null, "variation": null, "job": "wrap the auth provider and toast query errors"}
+{"id": "better-auth-ui:auth-redirect", "node": null, "variation": null, "job": "redirect users to sign-in or their target"}
+{"id": "better-auth-ui:billing", "node": "section/settings-panel", "variation": "card-blocks", "job": "manage plan, subscription, seats, cancellation and usage"}
+{"id": "better-auth-ui:change-email", "node": "component/form", "variation": null, "job": "form to change email address with verification", "edge": "change-email-form"}
+{"id": "better-auth-ui:change-email-confirmation-email", "node": "component/inbox", "variation": "email-template", "job": "email template confirming an email address change"}
+{"id": "better-auth-ui:change-password", "node": "component/form", "variation": null, "job": "form to change password after entering the current one", "edge": "change-password-form"}
+{"id": "better-auth-ui:dash", "node": "component/list", "variation": "activity-feed", "job": "filtered personal, organization and admin audit logs"}
+{"id": "better-auth-ui:delete-account-verification-email", "node": "component/inbox", "variation": "email-template", "job": "email template verifying a permanent account deletion"}
+{"id": "better-auth-ui:delete-user", "node": "section/settings-panel", "variation": "card-blocks", "job": "danger zone card and dialog to delete account"}
+{"id": "better-auth-ui:device-authorization", "node": "section/auth", "variation": null, "job": "enter device code and approve or deny access", "edge": "device-code-approval"}
+{"id": "better-auth-ui:email-changed-email", "node": "component/inbox", "variation": "email-template", "job": "email template notifying the address was changed"}
+{"id": "better-auth-ui:email-otp", "node": "section/auth", "variation": "sign-in", "job": "passwordless sign-in with an emailed one-time code"}
+{"id": "better-auth-ui:email-verification-email", "node": "component/inbox", "variation": "email-template", "job": "email template sending the verification link"}
+{"id": "better-auth-ui:forgot-password", "node": "section/auth", "variation": "forgot", "job": "request a password reset link by email"}
+{"id": "better-auth-ui:last-login-method", "node": null, "variation": null, "job": "plugin tracking and showing the last sign-in method"}
+{"id": "better-auth-ui:linked-accounts", "node": "section/settings-panel", "variation": "sections", "job": "linked social accounts with unlink and connect actions"}
+{"id": "better-auth-ui:magic-link", "node": "section/auth", "variation": "magic-link", "job": "passwordless sign-in by emailed magic link"}
+{"id": "better-auth-ui:magic-link-email", "node": "component/inbox", "variation": "email-template", "job": "email template sending the magic link"}
+{"id": "better-auth-ui:multi-session", "node": "component/menu", "variation": "dropdown-menu", "job": "switch between concurrent signed-in accounts from a menu"}
+{"id": "better-auth-ui:new-device-email", "node": "component/inbox", "variation": "email-template", "job": "email template warning of a new device sign-in"}
+{"id": "better-auth-ui:oauth-provider", "node": "section/settings-panel", "variation": "sections", "job": "authorize apps and manage OAuth clients"}
+{"id": "better-auth-ui:organization", "node": "section/settings-panel", "variation": "sections", "job": "manage organization members, invitations and roles"}
+{"id": "better-auth-ui:organization-invitation-email", "node": "component/inbox", "variation": "email-template", "job": "email template inviting a user to an organization"}
+{"id": "better-auth-ui:otp-email", "node": "component/inbox", "variation": "email-template", "job": "email template sending a one-time code"}
+{"id": "better-auth-ui:passkey", "node": "section/auth", "variation": "sign-in", "job": "passkey sign-in button and passkeys management card"}
+{"id": "better-auth-ui:password-changed-email", "node": "component/inbox", "variation": "email-template", "job": "email template notifying the password was changed"}
+{"id": "better-auth-ui:phone-number", "node": "section/auth", "variation": "sign-in", "job": "phone sign-in by code or password"}
+{"id": "better-auth-ui:reset-password", "node": "section/auth", "variation": null, "job": "set a new password from a URL token", "edge": "reset-password-token"}
+{"id": "better-auth-ui:reset-password-email", "node": "component/inbox", "variation": "email-template", "job": "email template sending the password reset link"}
+{"id": "better-auth-ui:security-settings", "node": "section/settings-panel", "variation": "card-blocks", "job": "security settings cards: password, accounts, passkeys, sessions"}
+{"id": "better-auth-ui:settings", "node": "page/settings", "variation": "settings-tabbed", "job": "tabbed settings screen for account and security"}
+{"id": "better-auth-ui:sign-in", "node": "section/auth", "variation": "sign-in", "job": "email and password sign-in with social providers"}
+{"id": "better-auth-ui:sign-out", "node": null, "variation": null, "job": "sign the user out on mount with a loading state"}
+{"id": "better-auth-ui:sign-up", "node": "section/auth", "variation": "sign-up", "job": "sign-up with name, email, password and social providers"}
+{"id": "better-auth-ui:siwe", "node": "section/auth", "variation": "social", "job": "Ethereum wallet sign-in button and wallet accounts"}
+{"id": "better-auth-ui:sso", "node": "section/auth", "variation": "sign-in", "job": "email-first sign-in that discovers organization SSO"}
+{"id": "better-auth-ui:theme", "node": "atom/switch", "variation": "theme-toggle", "job": "theme picker card and theme toggle menu item"}
+{"id": "better-auth-ui:two-factor", "node": "section/auth", "variation": "2fa", "job": "two-factor challenge and backup-code settings card"}
+{"id": "better-auth-ui:user-avatar", "node": "atom/avatar", "variation": "standard", "job": "current user's avatar with initials fallback"}
+{"id": "better-auth-ui:user-button", "node": "component/menu", "variation": "dropdown-menu", "job": "avatar button opening user, settings and sign-out menu"}
+{"id": "better-auth-ui:user-profile", "node": "component/form", "variation": null, "job": "form editing the user's name and avatar", "edge": "profile-form"}
+{"id": "better-auth-ui:user-view", "node": "atom/avatar", "variation": "standard", "job": "avatar beside the user's name and email"}
+{"id": "better-auth-ui:username", "node": "section/auth", "variation": "sign-in", "job": "username or email sign-in with availability check"}
+{"id": "better-auth-ui:verify-email", "node": "page/auth-screen", "variation": "auth-verification", "job": "prompt to verify email with open-mail and resend"}

@@ -1,0 +1,317 @@
+{"id": "plate:ai-api", "node": null, "variation": null, "job": "Server API route handling editor AI command requests"}
+{"id": "plate:ai-docs", "node": null, "variation": null, "job": "Documentation for AI-powered editor writing assistance"}
+{"id": "plate:ai-kit", "node": null, "variation": null, "job": "Plugin kit wiring AI features into the editor"}
+{"id": "plate:ai-menu", "node": "component/menu", "variation": "dropdown-menu", "job": "Menu for AI content generation and insertion"}
+{"id": "plate:ai-node", "node": "atom/text", "variation": null, "job": "Inline highlight mark for AI-generated content", "edge": "ai-highlight"}
+{"id": "plate:ai-toolbar-button", "node": "atom/button", "variation": "icon-button", "job": "Toolbar button opening the editor AI features"}
+{"id": "plate:align-base-kit", "node": null, "variation": null, "job": "Base plugin kit for text alignment"}
+{"id": "plate:align-kit", "node": null, "variation": null, "job": "Plugin kit adding text alignment controls"}
+{"id": "plate:align-toolbar-button", "node": "component/menu", "variation": "dropdown-menu", "job": "Dropdown menu setting text alignment"}
+{"id": "plate:api-cn-docs", "node": null, "variation": null, "job": "API reference documentation for the cn utility"}
+{"id": "plate:api-core-docs", "node": null, "variation": null, "job": "API reference documentation for Plate core"}
+{"id": "plate:api-core-plate-components-docs", "node": null, "variation": null, "job": "API reference documentation for Plate React components"}
+{"id": "plate:api-core-plate-controller-docs", "node": null, "variation": null, "job": "API reference documentation for PlateController"}
+{"id": "plate:api-core-plate-editor-docs", "node": null, "variation": null, "job": "API reference documentation for the Plate editor runtime"}
+{"id": "plate:api-core-plate-plugin-docs", "node": null, "variation": null, "job": "API reference documentation for Plate plugins"}
+{"id": "plate:api-core-plate-store-docs", "node": null, "variation": null, "job": "API reference documentation for the Plate store"}
+{"id": "plate:api-floating-docs", "node": null, "variation": null, "job": "API reference documentation for the floating plugin"}
+{"id": "plate:api-plate-docs", "node": null, "variation": null, "job": "API reference documentation for the platejs package"}
+{"id": "plate:api-react-utils-docs", "node": null, "variation": null, "job": "API reference documentation for react-utils"}
+{"id": "plate:api-resizable-docs", "node": null, "variation": null, "job": "API reference documentation for the resizable plugin"}
+{"id": "plate:api-slate-docs", "node": null, "variation": null, "job": "API reference documentation for Slate"}
+{"id": "plate:api-slate-editor-api-docs", "node": null, "variation": null, "job": "API reference documentation for the Slate editor API"}
+{"id": "plate:api-slate-editor-transforms-docs", "node": null, "variation": null, "job": "API reference documentation for editor transforms"}
+{"id": "plate:api-slate-element-docs", "node": null, "variation": null, "job": "API reference documentation for Slate elements"}
+{"id": "plate:api-slate-location-docs", "node": null, "variation": null, "job": "API reference documentation for Slate locations"}
+{"id": "plate:api-slate-location-ref-docs", "node": null, "variation": null, "job": "API reference documentation for location references"}
+{"id": "plate:api-slate-node-docs", "node": null, "variation": null, "job": "API reference documentation for Slate nodes"}
+{"id": "plate:api-slate-operation-docs", "node": null, "variation": null, "job": "API reference documentation for Slate operations"}
+{"id": "plate:api-slate-path-docs", "node": null, "variation": null, "job": "API reference documentation for Slate paths"}
+{"id": "plate:api-slate-point-docs", "node": null, "variation": null, "job": "API reference documentation for Slate points"}
+{"id": "plate:api-slate-range-docs", "node": null, "variation": null, "job": "API reference documentation for Slate ranges"}
+{"id": "plate:api-slate-text-docs", "node": null, "variation": null, "job": "API reference documentation for Slate text nodes"}
+{"id": "plate:api-utils-docs", "node": null, "variation": null, "job": "API reference documentation for Plate utils"}
+{"id": "plate:autoformat-classic-kit", "node": null, "variation": null, "job": "Plugin kit for classic markdown autoformatting"}
+{"id": "plate:autoformat-docs", "node": null, "variation": null, "job": "Docs for markdown shortcut text substitutions"}
+{"id": "plate:autoformat-kit", "node": null, "variation": null, "job": "Plugin kit enabling markdown autoformat input rules"}
+{"id": "plate:basic-blocks-base-kit", "node": null, "variation": null, "job": "Base plugin kit for basic block elements"}
+{"id": "plate:basic-blocks-docs", "node": null, "variation": null, "job": "Docs for paragraphs, headings, blockquotes and rules"}
+{"id": "plate:basic-blocks-kit", "node": null, "variation": null, "job": "Plugin kit adding basic editor block elements"}
+{"id": "plate:basic-marks-base-kit", "node": null, "variation": null, "job": "Base plugin kit for inline text marks"}
+{"id": "plate:basic-marks-docs", "node": null, "variation": null, "job": "Docs for common inline text formatting marks"}
+{"id": "plate:basic-marks-kit", "node": null, "variation": null, "job": "Plugin kit adding inline text formatting marks"}
+{"id": "plate:basic-nodes-kit", "node": null, "variation": null, "job": "Plugin kit bundling the basic editor nodes"}
+{"id": "plate:block-context-menu", "node": "component/menu", "variation": "context-menu", "job": "Context menu with block-level editor actions"}
+{"id": "plate:block-discussion", "node": "component/popover", "variation": "standard-popover", "job": "Popover for comments, replies and suggestions"}
+{"id": "plate:block-draggable", "node": "component/list", "variation": "sortable", "job": "Draggable wrapper for reordering editor blocks"}
+{"id": "plate:block-list", "node": "component/list", "variation": "standard-list", "job": "Renders the editor list components"}
+{"id": "plate:block-menu-docs", "node": null, "variation": null, "job": "Docs for block context-menu actions"}
+{"id": "plate:block-menu-kit", "node": null, "variation": null, "job": "Plugin kit adding the block context menu"}
+{"id": "plate:block-placeholder-docs", "node": null, "variation": null, "job": "Docs for placeholder text on empty blocks"}
+{"id": "plate:block-placeholder-kit", "node": null, "variation": null, "job": "Plugin kit showing placeholder in empty blocks"}
+{"id": "plate:block-selection", "node": "atom/layout", "variation": null, "job": "Overlay highlighting blocks selected in the editor", "edge": "selection-overlay"}
+{"id": "plate:block-selection-docs", "node": null, "variation": null, "job": "Docs for editor block selection"}
+{"id": "plate:block-selection-kit", "node": null, "variation": null, "job": "Plugin kit enabling editor block selection"}
+{"id": "plate:blockquote-docs", "node": null, "variation": null, "job": "Docs for the blockquote element"}
+{"id": "plate:blockquote-node", "node": "atom/text", "variation": "blockquote", "job": "Quote component rendering block quotes"}
+{"id": "plate:bold-docs", "node": null, "variation": null, "job": "Docs for bold inline text formatting"}
+{"id": "plate:callout-base-kit", "node": null, "variation": null, "job": "Base plugin kit for callout elements"}
+{"id": "plate:callout-docs", "node": null, "variation": null, "job": "Docs for the callout element"}
+{"id": "plate:callout-kit", "node": null, "variation": null, "job": "Plugin kit adding callout elements"}
+{"id": "plate:callout-node", "node": "component/alert", "variation": "callout", "job": "Callout highlighting important information with an icon"}
+{"id": "plate:caption", "node": "component/field", "variation": "text-input", "job": "Text field adding captions to media elements"}
+{"id": "plate:caption-docs", "node": null, "variation": null, "job": "Docs for captions on media elements"}
+{"id": "plate:code-block-base-kit", "node": null, "variation": null, "job": "Base plugin kit for code blocks"}
+{"id": "plate:code-block-docs", "node": null, "variation": null, "job": "Docs for the code block element"}
+{"id": "plate:code-block-kit", "node": null, "variation": null, "job": "Plugin kit adding code blocks"}
+{"id": "plate:code-block-node", "node": "component/code", "variation": "highlighted-code", "job": "Code block with syntax highlighting and language picker"}
+{"id": "plate:code-docs", "node": null, "variation": null, "job": "Docs for inline code formatting"}
+{"id": "plate:code-drawing-base-kit", "node": null, "variation": null, "job": "Base plugin kit for code drawings"}
+{"id": "plate:code-drawing-docs", "node": null, "variation": null, "job": "Docs for the code drawing element"}
+{"id": "plate:code-drawing-kit", "node": null, "variation": null, "job": "Plugin kit adding code drawing elements"}
+{"id": "plate:code-drawing-node", "node": "component/code", "variation": null, "job": "Renders diagrams from code with Mermaid or Graphviz", "edge": "diagram-render"}
+{"id": "plate:code-node", "node": "atom/text", "variation": "inline-code", "job": "Inline component rendering code snippets"}
+{"id": "plate:collaboration-demo", "node": null, "variation": null, "job": "Demo app for real-time collaboration cursors"}
+{"id": "plate:column-base-kit", "node": null, "variation": null, "job": "Base plugin kit for column layouts"}
+{"id": "plate:column-docs", "node": null, "variation": null, "job": "Docs for the column element"}
+{"id": "plate:column-kit", "node": null, "variation": null, "job": "Plugin kit adding column layouts"}
+{"id": "plate:column-node", "node": "atom/layout", "variation": null, "job": "Resizable column components arranging editor content", "edge": "resizable-columns"}
+{"id": "plate:combobox-docs", "node": null, "variation": null, "job": "Docs for the editor combobox plugin"}
+{"id": "plate:comment-base-kit", "node": null, "variation": null, "job": "Base plugin kit for comments"}
+{"id": "plate:comment-docs", "node": null, "variation": null, "job": "Docs for the comment plugin"}
+{"id": "plate:comment-kit", "node": null, "variation": null, "job": "Plugin kit adding inline comments"}
+{"id": "plate:comment-node", "node": "atom/text", "variation": null, "job": "Text component marking commented text", "edge": "comment-highlight"}
+{"id": "plate:comment-toolbar-button", "node": "atom/button", "variation": "icon-button", "job": "Toolbar button adding inline comments"}
+{"id": "plate:controlled-demo", "node": null, "variation": null, "job": "Demo app controlling and persisting editor value"}
+{"id": "plate:controlled-docs", "node": null, "variation": null, "job": "Guide for controlling editor values"}
+{"id": "plate:copilot-api", "node": null, "variation": null, "job": "Server route generating AI copilot completions"}
+{"id": "plate:copilot-demo", "node": null, "variation": null, "job": "Demo app rendering AI ghost text at cursor"}
+{"id": "plate:copilot-docs", "node": null, "variation": null, "job": "Docs for AI text completion suggestions"}
+{"id": "plate:copilot-kit", "node": null, "variation": null, "job": "Plugin kit enabling AI copilot suggestions"}
+{"id": "plate:csv-docs", "node": null, "variation": null, "job": "Docs for serializing editor content to CSV"}
+{"id": "plate:cursor-overlay", "node": "atom/layout", "variation": null, "job": "Overlay drawing collaborator cursors and selections", "edge": "collab-cursors"}
+{"id": "plate:cursor-overlay-docs", "node": null, "variation": null, "job": "Docs for the cursor overlay plugin"}
+{"id": "plate:cursor-overlay-kit", "node": null, "variation": null, "job": "Plugin kit adding the cursor overlay"}
+{"id": "plate:date-base-kit", "node": null, "variation": null, "job": "Base plugin kit for inline dates"}
+{"id": "plate:date-docs", "node": null, "variation": null, "job": "Docs for inline date elements"}
+{"id": "plate:date-kit", "node": null, "variation": null, "job": "Plugin kit adding inline date elements"}
+{"id": "plate:date-node", "node": "component/picker", "variation": "date-picker", "job": "Inline date field with a calendar picker"}
+{"id": "plate:debugging-docs", "node": null, "variation": null, "job": "Guide for debugging Plate editors"}
+{"id": "plate:discussion-docs", "node": null, "variation": null, "job": "Docs for the discussion plugin"}
+{"id": "plate:discussion-kit", "node": null, "variation": null, "job": "Plugin kit enabling block discussions"}
+{"id": "plate:dnd-docs", "node": null, "variation": null, "job": "Docs for editor drag and drop"}
+{"id": "plate:dnd-kit", "node": null, "variation": null, "job": "Plugin kit enabling editor drag and drop"}
+{"id": "plate:docs-meta", "node": null, "variation": null, "job": "Fumadocs metadata for the documentation tree"}
+{"id": "plate:docx-docs", "node": null, "variation": null, "job": "Docs for pasting content from Microsoft Word"}
+{"id": "plate:docx-export-kit", "node": null, "variation": null, "job": "Plugin kit exporting editor content to DOCX"}
+{"id": "plate:docx-io-docs", "node": null, "variation": null, "job": "Docs for DOCX import and export"}
+{"id": "plate:docx-kit", "node": null, "variation": null, "job": "Plugin kit adding DOCX import and export"}
+{"id": "plate:editing-behavior-docs", "node": null, "variation": null, "job": "Guide for Plate editing and selection behavior"}
+{"id": "plate:editor", "node": "atom/text-input", "variation": null, "job": "Container holding the rich text editor content", "edge": "rich-text-editor"}
+{"id": "plate:editor-ai", "node": null, "variation": null, "job": "Whole AI editor page block"}
+{"id": "plate:editor-base-kit", "node": null, "variation": null, "job": "Base plugin kit for the editor"}
+{"id": "plate:editor-basic", "node": null, "variation": null, "job": "Whole basic editor page block"}
+{"id": "plate:editor-docs", "node": null, "variation": null, "job": "Guide for configuring the Plate editor"}
+{"id": "plate:editor-kit", "node": null, "variation": null, "job": "Plugin kit assembling the full editor"}
+{"id": "plate:editor-methods-docs", "node": null, "variation": null, "job": "Guide for reading and mutating editor instances"}
+{"id": "plate:editor-select", "node": null, "variation": null, "job": "Whole multi-select editor page block"}
+{"id": "plate:emoji-docs", "node": null, "variation": null, "job": "Docs for emoji search and picking"}
+{"id": "plate:emoji-kit", "node": null, "variation": null, "job": "Plugin kit adding emoji search"}
+{"id": "plate:emoji-node", "node": "component/select", "variation": "combobox", "job": "Inline input searching and inserting emoji"}
+{"id": "plate:emoji-toolbar-button", "node": "component/picker", "variation": null, "job": "Pick an emoji from a searchable categorised popover", "edge": "emoji-picker"}
+{"id": "plate:equation-docs", "node": null, "variation": null, "job": "Docs for block and inline LaTeX equations"}
+{"id": "plate:equation-node", "node": "atom/text", "variation": null, "job": "Render an editable LaTeX equation, block or inline", "edge": "math-equation"}
+{"id": "plate:equation-toolbar-button", "node": "atom/button", "variation": "icon-button", "job": "Toolbar button inserting and editing equations"}
+{"id": "plate:examples-collaboration-example-docs", "node": null, "variation": null, "job": "Docs example for real-time collaborative editing"}
+{"id": "plate:examples-editable-voids-docs", "node": null, "variation": null, "job": "Docs example nesting editable controls in voids"}
+{"id": "plate:examples-export-docs", "node": null, "variation": null, "job": "Docs example for exporting documents to other formats"}
+{"id": "plate:examples-huge-document-docs", "node": null, "variation": null, "job": "Docs example rendering a very large document"}
+{"id": "plate:examples-hundreds-editors-docs", "node": null, "variation": null, "job": "Docs example rendering many editors on one page"}
+{"id": "plate:examples-preview-markdown-docs", "node": null, "variation": null, "job": "Docs example previewing markdown syntax inline"}
+{"id": "plate:examples-version-history-docs", "node": null, "variation": null, "job": "Docs example diffing saved document snapshots"}
+{"id": "plate:excalidraw-docs", "node": null, "variation": null, "job": "Docs for the Excalidraw drawing element"}
+{"id": "plate:excalidraw-kit", "node": null, "variation": null, "job": "Plugin kit adding Excalidraw drawing blocks"}
+{"id": "plate:excalidraw-node", "node": "component/board", "variation": "visual-board", "job": "Embed an Excalidraw drawing canvas in the document"}
+{"id": "plate:exit-break-docs", "node": null, "variation": null, "job": "Docs for the exit-break keyboard plugin"}
+{"id": "plate:exit-break-kit", "node": null, "variation": null, "job": "Plugin kit adding exit-break keyboard behaviour"}
+{"id": "plate:export-toolbar-button", "node": "component/menu", "variation": "dropdown-menu", "job": "Export the document as HTML, PDF, image or Markdown"}
+{"id": "plate:feature-kits-docs", "node": null, "variation": null, "job": "Guide for grouping plugins into feature kits"}
+{"id": "plate:find-replace-docs", "node": null, "variation": null, "job": "Docs for highlighting search matches in the editor"}
+{"id": "plate:fixed-toolbar", "node": "component/dock", "variation": "action-toolbar", "job": "Keep editing actions in a toolbar stuck to the top"}
+{"id": "plate:fixed-toolbar-buttons", "node": "atom/button", "variation": "group", "job": "Group the editor's common formatting buttons"}
+{"id": "plate:fixed-toolbar-classic-buttons", "node": "atom/button", "variation": "group", "job": "Fixed toolbar button set with classic list controls"}
+{"id": "plate:fixed-toolbar-classic-kit", "node": null, "variation": null, "job": "Plugin kit for the fixed toolbar with classic lists"}
+{"id": "plate:fixed-toolbar-kit", "node": null, "variation": null, "job": "Plugin kit adding the fixed editor toolbar"}
+{"id": "plate:floating-toolbar", "node": "component/dock", "variation": "floating-nav-pill", "job": "Float formatting actions near the selected text"}
+{"id": "plate:floating-toolbar-buttons", "node": "atom/button", "variation": "group", "job": "Group formatting buttons for the floating toolbar"}
+{"id": "plate:floating-toolbar-classic-buttons", "node": "atom/button", "variation": "group", "job": "Floating toolbar buttons with classic list support"}
+{"id": "plate:floating-toolbar-classic-kit", "node": null, "variation": null, "job": "Plugin kit for the floating toolbar with classic lists"}
+{"id": "plate:floating-toolbar-kit", "node": null, "variation": null, "job": "Plugin kit adding the floating selection toolbar"}
+{"id": "plate:font-base-kit", "node": null, "variation": null, "job": "Base plugin kit for font styles"}
+{"id": "plate:font-color-toolbar-button", "node": "component/picker", "variation": "color-picker", "job": "Pick text and background colors from the toolbar"}
+{"id": "plate:font-docs", "node": null, "variation": null, "job": "Docs for extended font formatting options"}
+{"id": "plate:font-kit", "node": null, "variation": null, "job": "Plugin kit adding font formatting controls"}
+{"id": "plate:font-size-toolbar-button", "node": "atom/text-input", "variation": "stepper", "job": "Adjust font size with a stepper and presets"}
+{"id": "plate:footnote-base-kit", "node": null, "variation": null, "job": "Base plugin kit for footnotes"}
+{"id": "plate:footnote-docs", "node": null, "variation": null, "job": "Docs for the footnote element"}
+{"id": "plate:footnote-kit", "node": null, "variation": null, "job": "Plugin kit adding footnote references and definitions"}
+{"id": "plate:footnote-node", "node": "atom/text", "variation": null, "job": "Inline footnote reference with hover preview and definition", "edge": "footnote-reference"}
+{"id": "plate:forced-layout-docs", "node": null, "variation": null, "job": "Docs for enforcing required document structure"}
+{"id": "plate:form-docs", "node": null, "variation": null, "job": "Guide for using Plate inside react-hook-form"}
+{"id": "plate:fumadocs", "node": null, "variation": null, "job": "Whole Fumadocs documentation app using Plate"}
+{"id": "plate:ghost-text", "node": "atom/text", "variation": null, "job": "Show AI-suggested text inline ahead of the cursor", "edge": "ghost-text-suggestion"}
+{"id": "plate:heading-docs", "node": null, "variation": null, "job": "Docs for heading elements H1 to H6"}
+{"id": "plate:heading-node", "node": "atom/text", "variation": "heading", "job": "Render heading blocks with six levels"}
+{"id": "plate:highlight-docs", "node": null, "variation": null, "job": "Docs for the highlight mark"}
+{"id": "plate:highlight-node", "node": "atom/text", "variation": null, "job": "Highlight text with a colored background", "edge": "text-highlight"}
+{"id": "plate:history-toolbar-button", "node": "atom/button", "variation": "group", "job": "Undo and redo editor changes"}
+{"id": "plate:horizontal-rule-docs", "node": null, "variation": null, "job": "Docs for the horizontal rule element"}
+{"id": "plate:hr-node", "node": "atom/layout", "variation": null, "job": "Render a horizontal rule divider block", "edge": "horizontal-rule"}
+{"id": "plate:html-docs", "node": null, "variation": null, "job": "Docs for HTML serialization and deserialization"}
+{"id": "plate:huge-document-demo", "node": null, "variation": null, "job": "Demo app rendering a very large document"}
+{"id": "plate:hundreds-editors-demo", "node": null, "variation": null, "job": "Demo app rendering hundreds of editors on one page"}
+{"id": "plate:import-toolbar-button", "node": "component/upload", "variation": "dropzone", "job": "Import editor content from HTML, Markdown or Word"}
+{"id": "plate:indent-base-kit", "node": null, "variation": null, "job": "Base plugin kit for block indentation"}
+{"id": "plate:indent-docs", "node": null, "variation": null, "job": "Docs for the indent plugin"}
+{"id": "plate:indent-kit", "node": null, "variation": null, "job": "Plugin kit adding block indentation"}
+{"id": "plate:indent-toolbar-button", "node": "atom/button", "variation": "group", "job": "Indent and outdent editor blocks"}
+{"id": "plate:index-docs", "node": null, "variation": null, "job": "Introduction docs for building editors with Plate"}
+{"id": "plate:inline-combobox", "node": "component/select", "variation": "combobox", "job": "Suggest and insert items inline while typing"}
+{"id": "plate:insert-toolbar-button", "node": "component/menu", "variation": "dropdown-menu", "job": "Insert blocks from a grouped toolbar menu"}
+{"id": "plate:insert-toolbar-classic-button", "node": "component/menu", "variation": "dropdown-menu", "job": "Insert blocks from a toolbar menu with classic lists"}
+{"id": "plate:installation-docs", "node": null, "variation": null, "job": "Guide for choosing a Plate install path"}
+{"id": "plate:installation-docs-docs", "node": null, "variation": null, "job": "Guide for setting up Plate's docs locally"}
+{"id": "plate:installation-manual-docs", "node": null, "variation": null, "job": "Guide for installing Plate manually"}
+{"id": "plate:installation-mcp-docs", "node": null, "variation": null, "job": "Guide for using Plate's MCP server"}
+{"id": "plate:installation-next-demo", "node": null, "variation": null, "job": "Demo app for the Next.js installation guide"}
+{"id": "plate:installation-next-docs", "node": null, "variation": null, "job": "Guide for installing Plate in Next.js"}
+{"id": "plate:installation-node-docs", "node": null, "variation": null, "job": "Guide for installing Plate in Node.js"}
+{"id": "plate:installation-plate-ui-docs", "node": null, "variation": null, "job": "Guide for installing and syncing Plate UI"}
+{"id": "plate:installation-react-docs", "node": null, "variation": null, "job": "Guide for installing Plate in React"}
+{"id": "plate:installation-rsc-docs", "node": null, "variation": null, "job": "Guide for installing Plate in server components"}
+{"id": "plate:italic-docs", "node": null, "variation": null, "job": "Docs for the italic mark"}
+{"id": "plate:kbd-docs", "node": null, "variation": null, "job": "Docs for keyboard shortcut styling"}
+{"id": "plate:kbd-node", "node": "atom/text", "variation": "keyboard", "job": "Style keyboard shortcuts and key names"}
+{"id": "plate:line-height-base-kit", "node": null, "variation": null, "job": "Base plugin kit for line height"}
+{"id": "plate:line-height-docs", "node": null, "variation": null, "job": "Docs for the line height plugin"}
+{"id": "plate:line-height-kit", "node": null, "variation": null, "job": "Plugin kit adding line height control"}
+{"id": "plate:line-height-toolbar-button", "node": "component/menu", "variation": "dropdown-menu", "job": "Choose a line height from a dropdown menu"}
+{"id": "plate:link-base-kit", "node": null, "variation": null, "job": "Base plugin kit for links"}
+{"id": "plate:link-docs", "node": null, "variation": null, "job": "Docs for the link element"}
+{"id": "plate:link-kit", "node": null, "variation": null, "job": "Plugin kit adding hyperlink behaviour"}
+{"id": "plate:link-node", "node": "atom/link", "variation": "standard", "job": "Render a hyperlink with underline and hover styling"}
+{"id": "plate:link-toolbar", "node": "component/popover", "variation": "standard-popover", "job": "Edit a link's URL and label in a floating panel"}
+{"id": "plate:link-toolbar-button", "node": "atom/button", "variation": "toggle", "job": "Add or edit a link on the selection"}
+{"id": "plate:list-base-kit", "node": null, "variation": null, "job": "Base plugin kit for lists"}
+{"id": "plate:list-classic-docs", "node": null, "variation": null, "job": "Docs for the classic list elements"}
+{"id": "plate:list-classic-kit", "node": null, "variation": null, "job": "Plugin kit adding classic list elements"}
+{"id": "plate:list-classic-node", "node": "component/list", "variation": "standard-list", "job": "Render ordered, unordered and task list items"}
+{"id": "plate:list-classic-toolbar-button", "node": "atom/button", "variation": "toggle", "job": "Toggle bulleted, numbered and task lists"}
+{"id": "plate:list-docs", "node": null, "variation": null, "job": "Docs for the list plugin"}
+{"id": "plate:list-kit", "node": null, "variation": null, "job": "Plugin kit adding lists"}
+{"id": "plate:list-toolbar-button", "node": "component/menu", "variation": "dropdown-menu", "job": "Pick a list style to toggle bullets or numbers"}
+{"id": "plate:mark-toolbar-button", "node": "atom/button", "variation": "toggle", "job": "Toggle a text mark such as bold or italic"}
+{"id": "plate:markdown-docs", "node": null, "variation": null, "job": "Docs for Markdown serialization and deserialization"}
+{"id": "plate:markdown-joiner-transform", "node": null, "variation": null, "job": "Hook transforming streamed markdown into editor nodes"}
+{"id": "plate:markdown-kit", "node": null, "variation": null, "job": "Plugin kit enabling Markdown serialization"}
+{"id": "plate:markdown-streaming-demo", "node": null, "variation": null, "job": "Demo app streaming markdown into the editor"}
+{"id": "plate:markdown-to-slate-demo", "node": null, "variation": null, "job": "Demo app converting markdown to Slate nodes"}
+{"id": "plate:math-base-kit", "node": null, "variation": null, "job": "Base plugin kit for math elements"}
+{"id": "plate:math-kit", "node": null, "variation": null, "job": "Plugin kit adding equation elements"}
+{"id": "plate:media-audio-node", "node": "component/player", "variation": "audio-player", "job": "Play an audio file with a caption"}
+{"id": "plate:media-base-kit", "node": null, "variation": null, "job": "Base plugin kit for media elements"}
+{"id": "plate:media-docs", "node": null, "variation": null, "job": "Docs for media elements and uploads"}
+{"id": "plate:media-embed-node", "node": "atom/image", "variation": null, "job": "Embed external video and tweet content in a resizable frame", "edge": "embedded-media-frame"}
+{"id": "plate:media-file-node", "node": "component/list", "variation": "file-list", "job": "Show an attached file link with a caption"}
+{"id": "plate:media-image-node", "node": "atom/image", "variation": null, "job": "Show a resizable image with a caption", "edge": "resizable-image"}
+{"id": "plate:media-kit", "node": null, "variation": null, "job": "Plugin kit adding media elements and upload"}
+{"id": "plate:media-placeholder-node", "node": "component/upload", "variation": "progress-tracking", "job": "Placeholder showing media upload progress and picker"}
+{"id": "plate:media-preview-dialog", "node": "component/lightbox", "variation": "fullscreen-viewer", "job": "Preview images fullscreen with zoom, paging and download"}
+{"id": "plate:media-toolbar", "node": "component/popover", "variation": "standard-popover", "job": "Edit, caption or remove the selected media"}
+{"id": "plate:media-toolbar-button", "node": "component/upload", "variation": "dropzone", "job": "Insert media by upload or by URL"}
+{"id": "plate:media-upload-toast", "node": "component/toast", "variation": "basic-toast", "job": "Show upload error toasts when media fails"}
+{"id": "plate:media-uploadthing-api", "node": null, "variation": null, "job": "Server route handling media uploads with UploadThing"}
+{"id": "plate:media-video-node", "node": "component/player", "variation": "video-player", "job": "Play a video file, YouTube link or embed"}
+{"id": "plate:mention-base-kit", "node": null, "variation": null, "job": "Base plugin kit for mentions"}
+{"id": "plate:mention-docs", "node": null, "variation": null, "job": "Docs for the mention element and plugin"}
+{"id": "plate:mention-kit", "node": null, "variation": null, "job": "Plugin kit adding inline mentions"}
+{"id": "plate:mention-node", "node": "atom/badge", "variation": "tag-chip", "job": "Render an inline @mention chip with combobox suggestions"}
+{"id": "plate:migration-slate-to-plate-docs", "node": null, "variation": null, "job": "Guide for migrating a Slate editor to Plate"}
+{"id": "plate:migration-v48-docs", "node": null, "variation": null, "job": "Historical upgrade notes for Plate v48 and earlier"}
+{"id": "plate:mode-toolbar-button", "node": "component/menu", "variation": "dropdown-menu", "job": "Menu for switching between editor modes"}
+{"id": "plate:more-toolbar-button", "node": "component/menu", "variation": "dropdown-menu", "job": "Menu with extra text formatting options"}
+{"id": "plate:multi-select-docs", "node": null, "variation": null, "job": "Docs for the multi select editor plugin"}
+{"id": "plate:multiple-editors-demo", "node": null, "variation": null, "job": "Demo rendering several independent editors at once"}
+{"id": "plate:navigation-feedback-docs", "node": null, "variation": null, "job": "Docs for flashing navigation jump targets"}
+{"id": "plate:paragraph-node", "node": "atom/text", "variation": "body", "job": "Paragraph block with background colour support"}
+{"id": "plate:performance-docs", "node": null, "variation": null, "job": "Docs for the large document benchmark"}
+{"id": "plate:plate-types", "node": null, "variation": null, "job": "Type definitions for editor node values"}
+{"id": "plate:playwright-docs", "node": null, "variation": null, "job": "Guide to writing Playwright tests for editors"}
+{"id": "plate:plugin-components-docs", "node": null, "variation": null, "job": "Guide for rendering plugin nodes as components"}
+{"id": "plate:plugin-context-docs", "node": null, "variation": null, "job": "Guide for editor and plugin context hooks"}
+{"id": "plate:plugin-docs", "node": null, "variation": null, "job": "Guide to configuring and customizing plugins"}
+{"id": "plate:plugin-input-rules-docs", "node": null, "variation": null, "job": "Docs for typed markdown shortcut rules"}
+{"id": "plate:plugin-methods-docs", "node": null, "variation": null, "job": "Guide to extending and overriding plugin methods"}
+{"id": "plate:plugin-rules-docs", "node": null, "variation": null, "job": "Guide to configuring plugin editing rules"}
+{"id": "plate:plugin-shortcuts-docs", "node": null, "variation": null, "job": "Docs for plugin keyboard shortcuts"}
+{"id": "plate:preview-markdown-demo", "node": null, "variation": null, "job": "Demo previewing markdown syntax inline"}
+{"id": "plate:releases-index-docs", "node": null, "variation": null, "job": "Release index for the editor library"}
+{"id": "plate:remote-cursor-overlay", "node": "atom/layout", "variation": null, "job": "Overlay drawing remote collaborator cursors", "edge": "collab-cursors"}
+{"id": "plate:resize-handle", "node": "atom/layout", "variation": null, "job": "Drag handles resizing adjacent editor content", "edge": "resize-handle"}
+{"id": "plate:search-highlight-node", "node": "atom/text", "variation": null, "job": "Highlights matched search text in the editor", "edge": "search-highlight"}
+{"id": "plate:select-editor", "node": "component/select", "variation": "multi-select", "job": "Combobox picking and creating multiple tag labels"}
+{"id": "plate:select-editor-demo", "node": null, "variation": null, "job": "Demo form managing labels with a select editor"}
+{"id": "plate:settings-dialog", "node": "section/settings-panel", "variation": "dialog", "job": "Dialog editing AI model and API key settings"}
+{"id": "plate:single-block-docs", "node": null, "variation": null, "job": "Docs for restricting editors to a single block"}
+{"id": "plate:slash-command-docs", "node": null, "variation": null, "job": "Docs for the slash command plugin"}
+{"id": "plate:slash-kit", "node": null, "variation": null, "job": "Plugin kit adding the slash command"}
+{"id": "plate:slash-node", "node": "component/command", "variation": "command-menu", "job": "Slash menu inserting blocks and inline elements"}
+{"id": "plate:slate-to-html", "node": null, "variation": null, "job": "Whole page converting editor content to HTML"}
+{"id": "plate:static-docs", "node": null, "variation": null, "job": "Docs for memoized read-only static rendering"}
+{"id": "plate:strikethrough-docs", "node": null, "variation": null, "job": "Docs for strikethrough inline formatting"}
+{"id": "plate:subscript-docs", "node": null, "variation": null, "job": "Docs for subscript inline formatting"}
+{"id": "plate:suggestion", "node": null, "variation": null, "job": "Utilities behind suggestion insert and delete marks"}
+{"id": "plate:suggestion-base-kit", "node": null, "variation": null, "job": "Base plugin kit for suggestions"}
+{"id": "plate:suggestion-docs", "node": null, "variation": null, "job": "Docs for the suggestion plugin"}
+{"id": "plate:suggestion-kit", "node": null, "variation": null, "job": "Plugin kit enabling suggestion mode"}
+{"id": "plate:suggestion-node", "node": "atom/text", "variation": null, "job": "Text marks showing suggested insertions and deletions", "edge": "suggestion-mark"}
+{"id": "plate:suggestion-toolbar-button", "node": "atom/button", "variation": "toggle", "job": "Toolbar button toggling suggestion mode"}
+{"id": "plate:superscript-docs", "node": null, "variation": null, "job": "Docs for superscript inline formatting"}
+{"id": "plate:tabbable-demo", "node": null, "variation": null, "job": "Demo of tab-able editor nodes"}
+{"id": "plate:tabbable-docs", "node": null, "variation": null, "job": "Docs for the tabbable plugin"}
+{"id": "plate:tabbable-kit", "node": null, "variation": null, "job": "Plugin kit making editor nodes tabbable"}
+{"id": "plate:table-base-kit", "node": null, "variation": null, "job": "Base plugin kit for tables"}
+{"id": "plate:table-docs", "node": null, "variation": null, "job": "Docs for the table element"}
+{"id": "plate:table-kit", "node": null, "variation": null, "job": "Plugin kit adding table elements"}
+{"id": "plate:table-node", "node": "component/table", "variation": "editable-grid", "job": "Editable table block with floating toolbar"}
+{"id": "plate:table-toolbar-button", "node": "component/menu", "variation": "dropdown-menu", "job": "Menu inserting and editing table cells"}
+{"id": "plate:tag-node", "node": "atom/badge", "variation": "tag-chip", "job": "Inline tag chip with selection ring"}
+{"id": "plate:text-align-docs", "node": null, "variation": null, "job": "Docs for text alignment styles"}
+{"id": "plate:toc-base-kit", "node": null, "variation": null, "job": "Base plugin kit for the table of contents"}
+{"id": "plate:toc-docs", "node": null, "variation": null, "job": "Docs for the table of contents element"}
+{"id": "plate:toc-kit", "node": null, "variation": null, "job": "Plugin kit adding a table of contents"}
+{"id": "plate:toc-node", "node": "component/toc", "variation": "scroll-tracking", "job": "Table of contents tracking the active heading"}
+{"id": "plate:toggle-base-kit", "node": null, "variation": null, "job": "Base plugin kit for toggle blocks"}
+{"id": "plate:toggle-docs", "node": null, "variation": null, "job": "Docs for the toggle element"}
+{"id": "plate:toggle-kit", "node": null, "variation": null, "job": "Plugin kit adding toggle blocks"}
+{"id": "plate:toggle-node", "node": "component/accordion", "variation": "collapsible", "job": "Collapsible block hiding and showing content"}
+{"id": "plate:toggle-toolbar-button", "node": "atom/button", "variation": "toggle", "job": "Toolbar button collapsing and expanding blocks"}
+{"id": "plate:toolbar", "node": "component/dock", "variation": "action-toolbar", "job": "Toolbar holding grouped editor action buttons"}
+{"id": "plate:toolbar-docs", "node": null, "variation": null, "job": "Docs for fixed and floating editor toolbars"}
+{"id": "plate:trailing-block-docs", "node": null, "variation": null, "job": "Docs for keeping a required trailing block"}
+{"id": "plate:transforms", "node": null, "variation": null, "job": "Editor transforms inserting and converting blocks"}
+{"id": "plate:transforms-classic", "node": null, "variation": null, "job": "Classic list transforms for inserting blocks"}
+{"id": "plate:troubleshooting-docs", "node": null, "variation": null, "job": "Guide for diagnosing common editor setup problems"}
+{"id": "plate:turn-into-toolbar-button", "node": "component/menu", "variation": "dropdown-menu", "job": "Menu converting blocks between types"}
+{"id": "plate:turn-into-toolbar-classic-button", "node": "component/menu", "variation": "dropdown-menu", "job": "Menu converting block types with classic lists"}
+{"id": "plate:typescript-docs", "node": null, "variation": null, "job": "Guide to TypeScript configuration for Plate"}
+{"id": "plate:underline-docs", "node": null, "variation": null, "job": "Docs for underlined inline text"}
+{"id": "plate:unit-testing-docs", "node": null, "variation": null, "job": "Guide to unit testing editors and plugins"}
+{"id": "plate:uploadthing", "node": null, "variation": null, "job": "Hook and client for uploading media files"}
+{"id": "plate:use-chat", "node": null, "variation": null, "job": "Hook driving the editor AI chat"}
+{"id": "plate:use-debounce", "node": null, "variation": null, "job": "Hook debouncing a changing value"}
+{"id": "plate:use-is-touch-device", "node": null, "variation": null, "job": "Hook detecting touch input devices"}
+{"id": "plate:use-mobile", "node": null, "variation": null, "job": "Hook detecting a mobile viewport"}
+{"id": "plate:use-mounted", "node": null, "variation": null, "job": "Hook reporting whether the component mounted"}
+{"id": "plate:version-history-demo", "node": null, "variation": null, "job": "Demo saving and diffing editor snapshots"}
+{"id": "plate:yjs-docs", "node": null, "variation": null, "job": "Docs for real-time collaboration with Yjs"}

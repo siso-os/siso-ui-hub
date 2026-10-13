@@ -1,0 +1,626 @@
+{"id": "shadcn-ui-blocks:application-ai-prompt-welcome-page", "node": "section/chat", "variation": "suggestions", "job": "Welcome screen inviting first AI prompt with suggested actions"}
+{"id": "shadcn-ui-blocks:application-application-stats-simple-cards", "node": "section/kpis", "variation": "metric-cards", "job": "Metric cards with label and number side by side"}
+{"id": "shadcn-ui-blocks:application-application-stats-with-badges", "node": "section/kpis", "variation": "metric-cards", "job": "Stat cards with trend badge beside each number"}
+{"id": "shadcn-ui-blocks:application-application-stats-with-colored-icons", "node": "section/kpis", "variation": "metric-cards", "job": "Stat cards with tinted icon in a coloured circle"}
+{"id": "shadcn-ui-blocks:application-application-stats-with-description", "node": "section/kpis", "variation": "metric-cards", "job": "Stat cards with context line under each number"}
+{"id": "shadcn-ui-blocks:application-application-stats-with-icons", "node": "section/kpis", "variation": "metric-cards", "job": "Stat cards with small icon beside each value"}
+{"id": "shadcn-ui-blocks:application-application-stats-with-progress", "node": "component/stat", "variation": "progress-stat", "job": "Stat cards pairing number with progress toward target"}
+{"id": "shadcn-ui-blocks:application-form-layouts-complex-form", "node": "component/form", "variation": null, "job": "Dense grouped form with sticky action bar", "edge": "complex-form"}
+{"id": "shadcn-ui-blocks:application-form-layouts-stacked", "node": "component/form", "variation": null, "job": "Single-column form with labels above inputs", "edge": "stacked-form"}
+{"id": "shadcn-ui-blocks:application-form-layouts-two-column", "node": "component/form", "variation": "horizontal-layout", "job": "Two-column form with shared header and footer"}
+{"id": "shadcn-ui-blocks:application-login-split-with-image", "node": "section/auth", "variation": "split-image", "job": "Sign-in form paired with a side image panel"}
+{"id": "shadcn-ui-blocks:application-page-headings-simple-centered", "node": "section/page-header", "variation": "title-only", "job": "Centered page title with description text"}
+{"id": "shadcn-ui-blocks:application-page-headings-with-actions", "node": "section/page-header", "variation": "title-only", "job": "Page title with primary and secondary action buttons"}
+{"id": "shadcn-ui-blocks:application-page-headings-with-search-filters", "node": "section/page-header", "variation": "title-only", "job": "Page title above a search field and filters"}
+{"id": "shadcn-ui-blocks:application-page-headings-with-stats", "node": "section/page-header", "variation": "title-only", "job": "Page title above a row of key metrics"}
+{"id": "shadcn-ui-blocks:application-page-headings-with-steps", "node": "section/page-header", "variation": "title-only", "job": "Page title above a numbered step indicator"}
+{"id": "shadcn-ui-blocks:application-page-headings-with-tabs", "node": "section/page-header", "variation": "title-tabs", "job": "Page title with tabs switching sections below"}
+{"id": "shadcn-ui-blocks:application-reset-password-email-otp-reset", "node": "section/auth", "variation": null, "job": "Reset password using code emailed to the user", "edge": "reset-password-otp"}
+{"id": "shadcn-ui-blocks:application-reset-password-security-question-reset", "node": "section/auth", "variation": null, "job": "Reset password after answering a security question", "edge": "reset-password-security-question"}
+{"id": "shadcn-ui-blocks:application-reset-password-simple-reset", "node": "section/auth", "variation": null, "job": "Set a new password with confirm field", "edge": "reset-password"}
+{"id": "shadcn-ui-blocks:application-reset-password-token-reset", "node": "section/auth", "variation": null, "job": "Reset password using token from recovery link", "edge": "reset-password-token"}
+{"id": "shadcn-ui-blocks:application-user-profiles-billing", "node": "section/settings-panel", "variation": "card-blocks", "job": "Billing panel with plan, payment method, invoices"}
+{"id": "shadcn-ui-blocks:application-user-profiles-compact-list", "node": "component/list", "variation": "with-avatars", "job": "Dense user rows with avatar, name, role, actions"}
+{"id": "shadcn-ui-blocks:application-user-profiles-developer", "node": "section/settings-panel", "variation": "card-blocks", "job": "Developer profile with API keys and connected apps"}
+{"id": "shadcn-ui-blocks:application-user-profiles-onboarding", "node": "section/onboarding", "variation": "wizard", "job": "Guided profile setup through avatar, name, preferences"}
+{"id": "shadcn-ui-blocks:application-user-profiles-permissions", "node": "section/settings-panel", "variation": "form-layout", "job": "Member permissions list of roles and access toggles"}
+{"id": "shadcn-ui-blocks:application-user-profiles-security-logs", "node": "component/list", "variation": "activity-feed", "job": "Recent sign-ins with device, location and time"}
+{"id": "shadcn-ui-blocks:application-user-profiles-simple", "node": "component/card", "variation": "profile-card", "job": "Profile card with avatar, name and bio"}
+{"id": "shadcn-ui-blocks:application-user-profiles-tabbed", "node": "section/settings-panel", "variation": "sections", "job": "Profile split into account, security and notification tabs"}
+{"id": "shadcn-ui-blocks:application-user-profiles-team-grid", "node": "section/team", "variation": "card-grid", "job": "Teammate card grid with photos and contact buttons"}
+{"id": "shadcn-ui-blocks:application-user-profiles-with-stats", "node": "page/record", "variation": "record-profile", "job": "Profile header with follower, post and reputation stats"}
+{"id": "shadcn-ui-blocks:components-accordions-border-fade-accordion", "node": "component/accordion", "variation": "standard-accordion", "job": "Accordion whose item border fades when open"}
+{"id": "shadcn-ui-blocks:components-accordions-card-accordion", "node": "component/accordion", "variation": "card-style", "job": "Accordion of separated raised card panels"}
+{"id": "shadcn-ui-blocks:components-accordions-dash-line-accordion", "node": "component/accordion", "variation": "standard-accordion", "job": "Accordion divided by dashed separator lines"}
+{"id": "shadcn-ui-blocks:components-accordions-dotted-border-accordion", "node": "component/accordion", "variation": "standard-accordion", "job": "Accordion items framed by dotted borders"}
+{"id": "shadcn-ui-blocks:components-accordions-double-border-accordion", "node": "component/accordion", "variation": "standard-accordion", "job": "Accordion items framed by double borders"}
+{"id": "shadcn-ui-blocks:components-accordions-fade-in-content-accordion", "node": "component/accordion", "variation": "standard-accordion", "job": "Accordion answers fading in as panels open"}
+{"id": "shadcn-ui-blocks:components-accordions-floating-label-accordion", "node": "component/accordion", "variation": "standard-accordion", "job": "Accordion question label lifts as panel opens"}
+{"id": "shadcn-ui-blocks:components-accordions-glow-border-accordion", "node": "component/accordion", "variation": "standard-accordion", "job": "Accordion with glowing border on the open item"}
+{"id": "shadcn-ui-blocks:components-accordions-highlight-active-accordion", "node": "component/accordion", "variation": "standard-accordion", "job": "Accordion tinting the background of the open item"}
+{"id": "shadcn-ui-blocks:components-accordions-minimal-line-accordion", "node": "component/accordion", "variation": "standard-accordion", "job": "Accordion with thin dividers and no boxes"}
+{"id": "shadcn-ui-blocks:components-accordions-nested-border-accordion", "node": "component/accordion", "variation": "nested", "job": "Accordion with nested items inside bordered panels"}
+{"id": "shadcn-ui-blocks:components-accordions-numbered-accordion", "node": "component/accordion", "variation": "standard-accordion", "job": "Accordion numbering every question in order"}
+{"id": "shadcn-ui-blocks:components-accordions-shadow-reveal-accordion", "node": "component/accordion", "variation": "standard-accordion", "job": "Accordion lifting the open item with soft shadow"}
+{"id": "shadcn-ui-blocks:components-accordions-stepped-accordion", "node": "component/accordion", "variation": "standard-accordion", "job": "Accordion styled as numbered steps with connecting markers"}
+{"id": "shadcn-ui-blocks:components-accordions-thick-side-border-accordion", "node": "component/accordion", "variation": "standard-accordion", "job": "Accordion with bold accent bar down each item"}
+{"id": "shadcn-ui-blocks:components-accordions-underline-accordion", "node": "component/accordion", "variation": "standard-accordion", "job": "Accordion questions sitting above single underlines"}
+{"id": "shadcn-ui-blocks:components-alerts-accent-border-alerts", "node": "component/alert", "variation": "inline-alert", "job": "Alert with coloured bar on its left edge"}
+{"id": "shadcn-ui-blocks:components-alerts-all-sides-accent-alerts", "node": "component/alert", "variation": "inline-alert", "job": "Alert framed by coloured border on every side"}
+{"id": "shadcn-ui-blocks:components-alerts-basic-alerts", "node": "component/alert", "variation": "inline-alert", "job": "Plain alert with icon, title and message"}
+{"id": "shadcn-ui-blocks:components-alerts-bottom-accent-alerts", "node": "component/alert", "variation": "inline-alert", "job": "Alert with coloured underline along its bottom edge"}
+{"id": "shadcn-ui-blocks:components-alerts-compact-alerts", "node": "component/alert", "variation": "inline-alert", "job": "Slim alert with tight padding and one line"}
+{"id": "shadcn-ui-blocks:components-alerts-dashed-border-alerts", "node": "component/alert", "variation": "inline-alert", "job": "Alert outlined with a dashed border"}
+{"id": "shadcn-ui-blocks:components-alerts-dismissible-alerts", "node": "component/alert", "variation": "inline-alert", "job": "Alert with close button users can clear"}
+{"id": "shadcn-ui-blocks:components-alerts-dotted-border-alerts", "node": "component/alert", "variation": "inline-alert", "job": "Alert wrapped in a soft dotted border"}
+{"id": "shadcn-ui-blocks:components-alerts-double-border-alerts", "node": "component/alert", "variation": "inline-alert", "job": "Alert with layered double framed border"}
+{"id": "shadcn-ui-blocks:components-alerts-elevated-alerts", "node": "component/alert", "variation": "inline-alert", "job": "Alert raised with soft shadow above content"}
+{"id": "shadcn-ui-blocks:components-alerts-frosted-glass-alerts", "node": "component/alert", "variation": "inline-alert", "job": "Alert with blurred translucent glass backdrop"}
+{"id": "shadcn-ui-blocks:components-alerts-glow-border-alerts", "node": "component/alert", "variation": "inline-alert", "job": "Alert ringed by a soft glowing border"}
+{"id": "shadcn-ui-blocks:components-alerts-icon-only-alerts", "node": "component/alert", "variation": "inline-alert", "job": "Compact alert pairing status icon with short message"}
+{"id": "shadcn-ui-blocks:components-alerts-inset-alerts", "node": "component/alert", "variation": "inline-alert", "job": "Alert inset into the surface with inner shadow"}
+{"id": "shadcn-ui-blocks:components-alerts-monospace-alerts", "node": "component/alert", "variation": "inline-alert", "job": "Alert in monospace type for technical messages"}
+{"id": "shadcn-ui-blocks:components-alerts-outlined-alerts", "node": "component/alert", "variation": "inline-alert", "job": "Border-only alert with no filled background"}
+{"id": "shadcn-ui-blocks:components-alerts-paper-alerts", "node": "component/alert", "variation": "inline-alert", "job": "Alert styled like a textured paper card"}
+{"id": "shadcn-ui-blocks:components-alerts-pulse-border-alerts", "node": "component/alert", "variation": "inline-alert", "job": "Alert with border pulsing to catch attention"}
+{"id": "shadcn-ui-blocks:components-alerts-right-accent-alerts", "node": "component/alert", "variation": "inline-alert", "job": "Alert with coloured bar on its right edge"}
+{"id": "shadcn-ui-blocks:components-alerts-top-accent-alerts", "node": "component/alert", "variation": "inline-alert", "job": "Alert with coloured bar across its top"}
+{"id": "shadcn-ui-blocks:components-badges-3d-badge", "node": "atom/badge", "variation": "badge", "job": "Badge with layered shadows lifting off the surface"}
+{"id": "shadcn-ui-blocks:components-badges-bounce-badge", "node": "atom/badge", "variation": "badge", "job": "Badge that bounces on entry to draw attention"}
+{"id": "shadcn-ui-blocks:components-badges-dot-indicator-badge", "node": "atom/badge", "variation": "dot", "job": "Badge with coloured status dot beside the label"}
+{"id": "shadcn-ui-blocks:components-badges-elevated-badge", "node": "atom/badge", "variation": "badge", "job": "Badge raised above the surface with drop shadow"}
+{"id": "shadcn-ui-blocks:components-badges-extra-large-badge", "node": "atom/badge", "variation": "badge", "job": "Oversized badge with bold text read from distance"}
+{"id": "shadcn-ui-blocks:components-badges-gradient-border-badge", "node": "atom/badge", "variation": "badge", "job": "Badge wrapped in a colourful gradient outline"}
+{"id": "shadcn-ui-blocks:components-badges-hover-scale-badge", "node": "atom/badge", "variation": "badge", "job": "Badge that grows slightly on pointer hover"}
+{"id": "shadcn-ui-blocks:components-badges-icon-badge", "node": "atom/badge", "variation": "icon-badge", "job": "Badge pairing a small icon with its label"}
+{"id": "shadcn-ui-blocks:components-badges-large-badge", "node": "atom/badge", "variation": "badge", "job": "Roomy badge with extra padding and larger text"}
+{"id": "shadcn-ui-blocks:components-badges-pulse-badge", "node": "atom/badge", "variation": "badge", "job": "Badge with looping pulse ring for live activity"}
+{"id": "shadcn-ui-blocks:components-badges-ribbon-badge", "node": "atom/badge", "variation": "badge", "job": "Badge shaped as corner ribbon over a card"}
+{"id": "shadcn-ui-blocks:components-badges-square-badge", "node": "atom/badge", "variation": "badge", "job": "Badge with sharp square corners and compact footprint"}
+{"id": "shadcn-ui-blocks:components-breadcrumbs-background-breadcrumb", "node": "component/breadcrumb", "variation": "text-breadcrumb", "job": "Breadcrumb trail in a soft tinted background bar"}
+{"id": "shadcn-ui-blocks:components-breadcrumbs-bordered-breadcrumb", "node": "component/breadcrumb", "variation": "text-breadcrumb", "job": "Breadcrumb path inside a thin outlined container"}
+{"id": "shadcn-ui-blocks:components-breadcrumbs-card-breadcrumb", "node": "component/breadcrumb", "variation": "text-breadcrumb", "job": "Breadcrumb path housed in a rounded card"}
+{"id": "shadcn-ui-blocks:components-breadcrumbs-compact-breadcrumb", "node": "component/breadcrumb", "variation": "text-breadcrumb", "job": "Tightly spaced breadcrumb trail for crowded toolbars"}
+{"id": "shadcn-ui-blocks:components-breadcrumbs-dot-breadcrumb", "node": "component/breadcrumb", "variation": "text-breadcrumb", "job": "Breadcrumb trail separated by small round dots"}
+{"id": "shadcn-ui-blocks:components-breadcrumbs-icon-breadcrumb", "node": "component/breadcrumb", "variation": "with-icons", "job": "Breadcrumb links each paired with a leading icon"}
+{"id": "shadcn-ui-blocks:components-breadcrumbs-numbered-breadcrumb", "node": "component/breadcrumb", "variation": "text-breadcrumb", "job": "Breadcrumb numbering each step of the path"}
+{"id": "shadcn-ui-blocks:components-breadcrumbs-pill-breadcrumb", "node": "component/breadcrumb", "variation": "text-breadcrumb", "job": "Breadcrumb links sitting inside rounded pill shapes"}
+{"id": "shadcn-ui-blocks:components-breadcrumbs-progress-breadcrumb", "node": "component/breadcrumb", "variation": "text-breadcrumb", "job": "Breadcrumb with fill tracking progress through steps"}
+{"id": "shadcn-ui-blocks:components-breadcrumbs-slash-breadcrumb", "node": "component/breadcrumb", "variation": "text-breadcrumb", "job": "Breadcrumb trail divided by forward slashes"}
+{"id": "shadcn-ui-blocks:components-breadcrumbs-sticky-breadcrumb", "node": "component/breadcrumb", "variation": "text-breadcrumb", "job": "Breadcrumb pinned to top while the page scrolls"}
+{"id": "shadcn-ui-blocks:components-breadcrumbs-timeline-breadcrumb", "node": "component/breadcrumb", "variation": "text-breadcrumb", "job": "Breadcrumb laid out as a connected timeline of steps"}
+{"id": "shadcn-ui-blocks:components-buttons-border-animation-buttons", "node": "atom/button", "variation": "primary", "job": "Buttons whose borders animate around the edge on hover"}
+{"id": "shadcn-ui-blocks:components-buttons-cut-corners-buttons", "node": "atom/button", "variation": "primary", "job": "Buttons with angled clipped corners"}
+{"id": "shadcn-ui-blocks:components-buttons-extra-large-buttons", "node": "atom/button", "variation": "primary", "job": "Oversized buttons with generous padding and large type"}
+{"id": "shadcn-ui-blocks:components-buttons-extra-small-buttons", "node": "atom/button", "variation": "primary", "job": "Compact low-height buttons for dense toolbars"}
+{"id": "shadcn-ui-blocks:components-buttons-grow-buttons", "node": "atom/button", "variation": "primary", "job": "Buttons that scale up smoothly on hover"}
+{"id": "shadcn-ui-blocks:components-buttons-interactive-buttons", "node": "atom/button", "variation": "primary", "job": "Buttons reacting to hover and click with motion"}
+{"id": "shadcn-ui-blocks:components-buttons-liquid-buttons", "node": "atom/button", "variation": "primary", "job": "Buttons with liquid fill sweeping across on hover"}
+{"id": "shadcn-ui-blocks:components-buttons-morphing-buttons", "node": "atom/button", "variation": "primary", "job": "Buttons morphing shape, size or label between states"}
+{"id": "shadcn-ui-blocks:components-buttons-pixel-buttons", "node": "atom/button", "variation": "primary", "job": "Buttons with blocky pixel-art retro styling"}
+{"id": "shadcn-ui-blocks:components-buttons-pulse-buttons", "node": "atom/button", "variation": "primary", "job": "Buttons with a soft pulsing glow over time"}
+{"id": "shadcn-ui-blocks:components-buttons-rotate-buttons", "node": "atom/button", "variation": "primary", "job": "Buttons rotating icon or label on hover"}
+{"id": "shadcn-ui-blocks:components-buttons-shadow-buttons", "node": "atom/button", "variation": "primary", "job": "Buttons with layered shadows lifting on hover"}
+{"id": "shadcn-ui-blocks:components-buttons-skew-buttons", "node": "atom/button", "variation": "primary", "job": "Buttons with a skewed slanted shape"}
+{"id": "shadcn-ui-blocks:components-buttons-slide-buttons", "node": "atom/button", "variation": "primary", "job": "Buttons whose colour or label slides in on hover"}
+{"id": "shadcn-ui-blocks:components-buttons-social-buttons", "node": "atom/button", "variation": "social-brand", "job": "Buttons branded for Google, GitHub and Apple sign-in"}
+{"id": "shadcn-ui-blocks:components-buttons-squeeze-buttons", "node": "atom/button", "variation": "primary", "job": "Buttons that squeeze inward when pressed"}
+{"id": "shadcn-ui-blocks:components-buttons-underline-buttons", "node": "atom/button", "variation": "primary", "job": "Buttons with animated underline growing on hover"}
+{"id": "shadcn-ui-blocks:components-cards-border-accent-card", "node": "component/card", "variation": "standard-card", "job": "Card with coloured accent line along one edge"}
+{"id": "shadcn-ui-blocks:components-cards-border-animation-card", "node": "component/card", "variation": "standard-card", "job": "Card whose border traces a moving outline"}
+{"id": "shadcn-ui-blocks:components-cards-border-gradient-animation-card", "node": "component/card", "variation": "standard-card", "job": "Card framed by a flowing gradient border"}
+{"id": "shadcn-ui-blocks:components-cards-border-highlight-card", "node": "component/card", "variation": "standard-card", "job": "Card brightening its border on focus or hover"}
+{"id": "shadcn-ui-blocks:components-cards-corner-ribbon-card", "node": "component/card", "variation": "standard-card", "job": "Card with a diagonal ribbon pinned to its corner"}
+{"id": "shadcn-ui-blocks:components-cards-cutout-border-card", "node": "component/card", "variation": "standard-card", "job": "Card with notched cutout border like a ticket"}
+{"id": "shadcn-ui-blocks:components-cards-dashed-border-card", "node": "component/card", "variation": "standard-card", "job": "Card outlined with a light dashed border"}
+{"id": "shadcn-ui-blocks:components-cards-double-border-card", "node": "component/card", "variation": "standard-card", "job": "Card wrapped in two stacked outlines"}
+{"id": "shadcn-ui-blocks:components-cards-expandable-card", "node": "component/card", "variation": null, "job": "Card that expands to reveal more content", "edge": "expandable-card"}
+{"id": "shadcn-ui-blocks:components-cards-gradient-border-card", "node": "component/card", "variation": "standard-card", "job": "Card edged with a static gradient outline"}
+{"id": "shadcn-ui-blocks:components-cards-hover-effect-card", "node": "component/card", "variation": "standard-card", "job": "Card that lifts and scales on hover"}
+{"id": "shadcn-ui-blocks:components-cards-hover-reveal-card", "node": "component/card", "variation": "standard-card", "job": "Card revealing extra text or actions on hover"}
+{"id": "shadcn-ui-blocks:components-cards-icon-card", "node": "component/card", "variation": "feature-card", "job": "Card led by an icon, title, and short blurb"}
+{"id": "shadcn-ui-blocks:components-cards-magnetic-card", "node": "component/card", "variation": null, "job": "Card that drifts toward the cursor on hover", "edge": "magnetic-card"}
+{"id": "shadcn-ui-blocks:components-cards-neon-border-card", "node": "component/card", "variation": null, "job": "Card ringed by a glowing neon outline", "edge": "neon-border-card"}
+{"id": "shadcn-ui-blocks:components-cards-perspective-hover-card", "node": "component/card", "variation": null, "job": "Card that rotates in 3D as pointer crosses", "edge": "perspective-hover-card"}
+{"id": "shadcn-ui-blocks:components-cards-progress-card", "node": "component/stat", "variation": "progress-stat", "job": "Card showing progress bar with label and value"}
+{"id": "shadcn-ui-blocks:components-cards-pulse-border-card", "node": "component/card", "variation": null, "job": "Card whose border pulses to draw attention", "edge": "pulse-border-card"}
+{"id": "shadcn-ui-blocks:components-cards-shimmer-effect-card", "node": "component/card", "variation": null, "job": "Card with a light sweep across its surface", "edge": "shimmer-card"}
+{"id": "shadcn-ui-blocks:components-cards-stacked-card", "node": "component/card", "variation": "stack-flip", "job": "Card layered over offset copies, like a deck"}
+{"id": "shadcn-ui-blocks:components-cards-status-card", "node": "component/card", "variation": null, "job": "Card showing state badge, label, and note", "edge": "status-card"}
+{"id": "shadcn-ui-blocks:components-cards-tilt-effect-card", "node": "component/card", "variation": null, "job": "Card that tilts to follow the cursor", "edge": "tilt-card"}
+{"id": "shadcn-ui-blocks:components-collapsible-card-collapsible", "node": "component/accordion", "variation": "card-style", "job": "Card expanding to reveal detail when clicked"}
+{"id": "shadcn-ui-blocks:components-collapsible-grouped-collapsible", "node": "component/accordion", "variation": "standard-accordion", "job": "Stacked collapsible panels opened one at a time"}
+{"id": "shadcn-ui-blocks:components-collapsible-icon-collapsible", "node": "component/accordion", "variation": "collapsible", "job": "Collapsible row with rotating chevron icon"}
+{"id": "shadcn-ui-blocks:components-collapsible-shadowed-collapsible", "node": "component/accordion", "variation": "collapsible", "job": "Collapsible panel with soft shadow lift"}
+{"id": "shadcn-ui-blocks:components-collapsible-side-bordered-collapsible", "node": "component/accordion", "variation": "collapsible", "job": "Collapsible panel with colored side bar marking state"}
+{"id": "shadcn-ui-blocks:components-collapsible-stepped-collapsible", "node": "component/accordion", "variation": null, "job": "Numbered collapsible steps revealing instructions in order", "edge": "stepped-collapsible"}
+{"id": "shadcn-ui-blocks:components-pagination-bordered-pagination", "node": "component/pagination", "variation": "numbered-pages", "job": "Page numbers in outlined bordered buttons"}
+{"id": "shadcn-ui-blocks:components-pagination-card-pagination", "node": "component/pagination", "variation": "numbered-pages", "job": "Pagination wrapped in a raised card surface"}
+{"id": "shadcn-ui-blocks:components-pagination-compact-pagination", "node": "component/pagination", "variation": "numbered-pages", "job": "Tight pagination row for dense panels"}
+{"id": "shadcn-ui-blocks:components-pagination-dot-indicator-pagination", "node": "component/pagination", "variation": null, "job": "Dots marking the active page in a sequence", "edge": "dot-pagination"}
+{"id": "shadcn-ui-blocks:components-pagination-floating-pagination", "node": "component/pagination", "variation": "numbered-pages", "job": "Elevated pagination bar hovering above scrolling content"}
+{"id": "shadcn-ui-blocks:components-pagination-icon-only-pagination", "node": "component/pagination", "variation": null, "job": "Previous and next pagination using chevron icons only", "edge": "icon-only-pagination"}
+{"id": "shadcn-ui-blocks:components-pagination-mini-pagination", "node": "component/pagination", "variation": "page-counter", "job": "Small control showing current page with arrows"}
+{"id": "shadcn-ui-blocks:components-pagination-responsive-pagination", "node": "component/pagination", "variation": "numbered-pages", "job": "Pagination showing page numbers on desktop, arrows on mobile"}
+{"id": "shadcn-ui-blocks:components-pagination-rounded-pagination", "node": "component/pagination", "variation": "numbered-pages", "job": "Pagination with fully rounded pill page buttons"}
+{"id": "shadcn-ui-blocks:components-pagination-shadow-pagination", "node": "component/pagination", "variation": "numbered-pages", "job": "Pagination buttons lifted with subtle drop shadows"}
+{"id": "shadcn-ui-blocks:components-pagination-split-pagination", "node": "component/pagination", "variation": "numbered-pages", "job": "Prev and next at edges, page numbers centered"}
+{"id": "shadcn-ui-blocks:components-tabs-card-tabs", "node": "component/tabs", "variation": null, "job": "Tabs styled as raised cards with lifting active panel", "edge": "card-tabs"}
+{"id": "shadcn-ui-blocks:components-tabs-gradient-tabs", "node": "component/tabs", "variation": null, "job": "Tabs with gradient highlighted active trigger", "edge": "gradient-tabs"}
+{"id": "shadcn-ui-blocks:components-tabs-icon-tabs", "node": "component/tabs", "variation": "with-icons", "job": "Tabs pairing a small icon with each label"}
+{"id": "shadcn-ui-blocks:components-tabs-minimal-tabs", "node": "component/tabs", "variation": "underline", "job": "Tabs with thin underline marking the active item"}
+{"id": "shadcn-ui-blocks:components-tabs-outline-tabs", "node": "component/tabs", "variation": null, "job": "Tabs framed by a light border around triggers", "edge": "outline-tabs"}
+{"id": "shadcn-ui-blocks:components-tabs-pill-tabs", "node": "component/tabs", "variation": "pill-segmented", "job": "Rounded pill tabs with filled active background"}
+{"id": "shadcn-ui-blocks:components-tabs-shadow-tabs", "node": "component/tabs", "variation": null, "job": "Tabs where the selected trigger gains a shadow", "edge": "shadow-tabs"}
+{"id": "shadcn-ui-blocks:components-tabs-vertical-tabs", "node": "component/tabs", "variation": "vertical", "job": "Tabs stacked in sidebar with panels beside"}
+{"id": "shadcn-ui-blocks:ecommerce-category-filters-filter-demo", "node": "section/filters", "variation": "filters", "job": "Sidebar category filters beside a product grid"}
+{"id": "shadcn-ui-blocks:ecommerce-category-filters-filter-drawer", "node": "section/filters", "variation": null, "job": "Slide-in drawer holding filters for small screens", "edge": "filter-drawer"}
+{"id": "shadcn-ui-blocks:ecommerce-category-filters-horizontal-filters", "node": "section/filters", "variation": "filters", "job": "Row of filter dropdowns and chips above grid"}
+{"id": "shadcn-ui-blocks:ecommerce-category-preview-carousel-preview", "node": "section/showcase", "variation": "carousel", "job": "Category preview sliding products through horizontal carousel"}
+{"id": "shadcn-ui-blocks:ecommerce-category-preview-expandable-preview", "node": "section/showcase", "variation": null, "job": "Category tiles expanding on click to reveal products", "edge": "expandable-preview"}
+{"id": "shadcn-ui-blocks:ecommerce-category-preview-grid-preview", "node": "section/showcase", "variation": "grid", "job": "Collections arranged in an even grid of tiles"}
+{"id": "shadcn-ui-blocks:ecommerce-category-preview-magazine-preview", "node": "section/showcase", "variation": "bento", "job": "Magazine-style category preview mixing large and small tiles"}
+{"id": "shadcn-ui-blocks:ecommerce-category-preview-scrolling-preview", "node": "section/showcase", "variation": null, "job": "Category preview scrolling product cards in continuous strip", "edge": "scrolling-strip"}
+{"id": "shadcn-ui-blocks:ecommerce-category-preview-split-preview", "node": "section/showcase", "variation": null, "job": "Category preview split between featured image and product list", "edge": "split-preview"}
+{"id": "shadcn-ui-blocks:ecommerce-category-preview-three-column-preview", "node": "section/showcase", "variation": "grid", "job": "Category preview in three balanced columns of tiles"}
+{"id": "shadcn-ui-blocks:ecommerce-ecommerce-bundle-upsells-builder", "node": "section/pricing", "variation": null, "job": "Bundle builder updating total as shoppers pick add-ons", "edge": "bundle-builder"}
+{"id": "shadcn-ui-blocks:ecommerce-ecommerce-bundle-upsells-comparison", "node": "section/comparison", "variation": "us-vs-them", "job": "Single item compared against bundle with savings"}
+{"id": "shadcn-ui-blocks:ecommerce-ecommerce-bundle-upsells-minimalist-grid", "node": "section/showcase", "variation": "grid", "job": "Grid of bundle products with images, names, prices"}
+{"id": "shadcn-ui-blocks:ecommerce-ecommerce-bundle-upsells-side-by-side", "node": "section/pricing", "variation": null, "job": "Two product cards paired with plus and combined price", "edge": "bundle-pair"}
+{"id": "shadcn-ui-blocks:ecommerce-ecommerce-bundle-upsells-stack", "node": "section/pricing", "variation": null, "job": "Vertical stack of bundle items with running total", "edge": "bundle-stack"}
+{"id": "shadcn-ui-blocks:ecommerce-ecommerce-cross-sells-feature-icons", "node": "section/features", "variation": "icon-grid", "job": "Recommended products with icon, benefit, and price"}
+{"id": "shadcn-ui-blocks:ecommerce-ecommerce-cross-sells-simple-grid", "node": "section/showcase", "variation": "grid", "job": "Grid of related product cards below the cart"}
+{"id": "shadcn-ui-blocks:ecommerce-ecommerce-cross-sells-stacked-list", "node": "component/list", "variation": "standard-list", "job": "Suggested products in vertical stacked list with thumbnail"}
+{"id": "shadcn-ui-blocks:ecommerce-ecommerce-cross-sells-with-badges", "node": "section/showcase", "variation": "grid", "job": "Related product cards carrying sale and stock badges"}
+{"id": "shadcn-ui-blocks:ecommerce-ecommerce-cross-sells-with-ratings", "node": "section/showcase", "variation": "grid", "job": "Recommended products showing star ratings and review counts"}
+{"id": "shadcn-ui-blocks:ecommerce-ecommerce-customer-reviews-base", "node": "section/testimonials", "variation": "card-grid", "job": "Review layout with star ratings, names, and comments"}
+{"id": "shadcn-ui-blocks:ecommerce-ecommerce-customer-reviews-compact-review-list", "node": "section/testimonials", "variation": null, "job": "Tight vertical list of short customer reviews", "edge": "review-list"}
+{"id": "shadcn-ui-blocks:ecommerce-ecommerce-customer-reviews-review-cards-grid", "node": "section/testimonials", "variation": "card-grid", "job": "Grid of review cards with ratings and avatars"}
+{"id": "shadcn-ui-blocks:ecommerce-ecommerce-customer-reviews-review-comparison", "node": "section/testimonials", "variation": null, "job": "Best and worst reviews placed side by side", "edge": "review-pair"}
+{"id": "shadcn-ui-blocks:ecommerce-ecommerce-customer-reviews-review-stats-overview", "node": "section/testimonials", "variation": "ratings", "job": "Rating summary with average, count, and star breakdown"}
+{"id": "shadcn-ui-blocks:ecommerce-ecommerce-customer-reviews-social-proof-reviews", "node": "section/testimonials", "variation": "big-quote", "job": "Featured customer quotes with verified buyer badges"}
+{"id": "shadcn-ui-blocks:ecommerce-ecommerce-footers-muti-column", "node": "section/footer", "variation": "columns", "job": "Footer with grouped link columns for a large shop"}
+{"id": "shadcn-ui-blocks:ecommerce-ecommerce-footers-simple-links", "node": "section/footer", "variation": "minimal-row", "job": "Compact footer with single row of links"}
+{"id": "shadcn-ui-blocks:ecommerce-ecommerce-footers-with-newsletter", "node": "section/footer", "variation": "newsletter", "job": "Footer pairing link columns with email signup"}
+{"id": "shadcn-ui-blocks:ecommerce-ecommerce-footers-with-payments", "node": "section/footer", "variation": null, "job": "Footer showing accepted payment badges beside store links", "edge": "payment-badges"}
+{"id": "shadcn-ui-blocks:ecommerce-ecommerce-footers-with-socials", "node": "section/footer", "variation": "social-links", "job": "Footer with link columns plus social media icons"}
+{"id": "shadcn-ui-blocks:ecommerce-ecommerce-shipping-returns-accordion", "node": "component/accordion", "variation": "standard-accordion", "job": "Accordion collapsing shipping and returns policy text"}
+{"id": "shadcn-ui-blocks:ecommerce-ecommerce-shipping-returns-checklist", "node": "component/list", "variation": "standard-list", "job": "Checklist of shipping steps and return conditions"}
+{"id": "shadcn-ui-blocks:ecommerce-ecommerce-shipping-returns-full-text", "node": "atom/text", "variation": "body", "job": "Prose panel covering delivery times and returns"}
+{"id": "shadcn-ui-blocks:ecommerce-ecommerce-shipping-returns-split-columns", "node": "atom/layout", "variation": null, "job": "Split columns placing shipping beside returns", "edge": "two-column"}
+{"id": "shadcn-ui-blocks:ecommerce-ecommerce-shipping-returns-with-icons", "node": "section/features", "variation": "icon-grid", "job": "Shipping and return points each paired with icon"}
+{"id": "shadcn-ui-blocks:ecommerce-ecommerce-trust-guarantee-badge-row", "node": "section/logos", "variation": "static-row", "job": "Row of trust badges for payment, returns, warranty"}
+{"id": "shadcn-ui-blocks:ecommerce-ecommerce-trust-guarantee-checklist", "node": "component/list", "variation": "standard-list", "job": "Checklist of product promises with check icons"}
+{"id": "shadcn-ui-blocks:ecommerce-ecommerce-trust-guarantee-highlighted-quote", "node": "section/testimonials", "variation": "big-quote", "job": "Large pull quote with author name and rating"}
+{"id": "shadcn-ui-blocks:ecommerce-ecommerce-trust-guarantee-icon-list", "node": "component/list", "variation": "standard-list", "job": "Compact icon list of guarantee statements"}
+{"id": "shadcn-ui-blocks:ecommerce-ecommerce-trust-guarantee-three-pillars", "node": "section/features", "variation": "icon-grid", "job": "Three columns with icon, heading, and promise"}
+{"id": "shadcn-ui-blocks:ecommerce-product-features-3d-feature-carousel", "node": "section/features", "variation": "carousel", "job": "3D rotating carousel highlighting standout product features"}
+{"id": "shadcn-ui-blocks:ecommerce-product-features-alternating-features", "node": "section/features", "variation": "split-text-image", "job": "Rows alternating image and text down the page"}
+{"id": "shadcn-ui-blocks:ecommerce-product-features-animated-features-grid", "node": "section/features", "variation": "card-grid", "job": "Grid of feature cards animating into view"}
+{"id": "shadcn-ui-blocks:ecommerce-product-features-before-after-comparison", "node": "component/compare", "variation": "before-after", "job": "Slider wiping between two product images"}
+{"id": "shadcn-ui-blocks:ecommerce-product-features-carousel-feature-showcase", "node": "section/features", "variation": "carousel", "job": "Swipeable carousel stepping through product features"}
+{"id": "shadcn-ui-blocks:ecommerce-product-features-expandable-features-grid", "node": "section/features", "variation": "expandable", "job": "Feature cards opening to reveal more detail"}
+{"id": "shadcn-ui-blocks:ecommerce-product-features-feature-accordion", "node": "component/accordion", "variation": "feature-disclosure", "job": "Panels expanding one feature at a time"}
+{"id": "shadcn-ui-blocks:ecommerce-product-features-feature-comparison-table", "node": "section/comparison", "variation": "table", "job": "Table lining up features across products with checks"}
+{"id": "shadcn-ui-blocks:ecommerce-product-features-feature-tabs-navigation", "node": "section/features", "variation": "tabs", "job": "Tabs swapping feature content on click"}
+{"id": "shadcn-ui-blocks:ecommerce-product-features-feature-timeline", "node": "component/timeline", "variation": "vertical-timeline", "job": "Vertical timeline walking through features in sequence"}
+{"id": "shadcn-ui-blocks:ecommerce-product-features-features-testimonial-combo", "node": "section/features", "variation": null, "job": "Feature claims paired with a customer quote", "edge": "features-with-quote"}
+{"id": "shadcn-ui-blocks:ecommerce-product-features-horizontal-scrolling-features", "node": "section/features", "variation": "carousel", "job": "Feature panels scrolling sideways as page moves"}
+{"id": "shadcn-ui-blocks:ecommerce-product-features-image-hotspot-features", "node": "section/features", "variation": null, "job": "Product image hotspots revealing each feature in place", "edge": "image-hotspots"}
+{"id": "shadcn-ui-blocks:ecommerce-product-features-interactive-feature-tabs", "node": "section/features", "variation": "tabs", "job": "Tabs with live preview updating per feature"}
+{"id": "shadcn-ui-blocks:ecommerce-product-features-simple-feature-grid", "node": "section/features", "variation": "icon-grid", "job": "Grid of feature cards with icon and blurb"}
+{"id": "shadcn-ui-blocks:ecommerce-product-features-split-image-features", "node": "section/features", "variation": "split-text-image", "job": "Two columns with product photo beside feature copy"}
+{"id": "shadcn-ui-blocks:ecommerce-product-features-stats-feature-showcase", "node": "section/stats", "variation": null, "job": "Features paired with hard numbers and metrics", "edge": "feature-stats"}
+{"id": "shadcn-ui-blocks:ecommerce-product-features-timeline-feature-showcase", "node": "component/timeline", "variation": "vertical-timeline", "job": "Timeline revealing features step by step on scroll"}
+{"id": "shadcn-ui-blocks:ecommerce-product-features-video-feature-showcase", "node": "section/features", "variation": "split-text-image", "job": "Product video beside supporting feature copy"}
+{"id": "shadcn-ui-blocks:ecommerce-product-list-compact-list", "node": "component/list", "variation": "standard-list", "job": "Dense product rows with thumbnail, name, price"}
+{"id": "shadcn-ui-blocks:ecommerce-product-list-comparison-list", "node": "section/comparison", "variation": "table", "job": "Side by side products with specs and prices"}
+{"id": "shadcn-ui-blocks:ecommerce-product-list-featured-list", "node": "section/showcase", "variation": "grid", "job": "Spotlighted bestsellers with large imagery, descriptions, prices"}
+{"id": "shadcn-ui-blocks:ecommerce-product-list-filter-list", "node": "section/filters", "variation": "filters", "job": "Product list beside category, price, attribute filters"}
+{"id": "shadcn-ui-blocks:ecommerce-product-list-gallery-list", "node": "section/showcase", "variation": "grid", "job": "Image-first list of large product photo cards"}
+{"id": "shadcn-ui-blocks:ecommerce-product-list-grid-list", "node": "section/showcase", "variation": "grid", "job": "Responsive grid of product cards for catalogs"}
+{"id": "shadcn-ui-blocks:ecommerce-product-list-masonry-list", "node": "section/showcase", "variation": "masonry", "job": "Masonry grid fitting product cards of varying heights"}
+{"id": "shadcn-ui-blocks:ecommerce-product-list-table-list", "node": "component/table", "variation": "standard-table", "job": "Table listing products with image, stock, price"}
+{"id": "shadcn-ui-blocks:ecommerce-product-list-timeline-list", "node": "component/timeline", "variation": "vertical-timeline", "job": "Vertical timeline arranging product drops by date"}
+{"id": "shadcn-ui-blocks:ecommerce-product-overview-classic-overview", "node": "section/detail", "variation": "two-pane", "job": "Product page with image left, details and buy"}
+{"id": "shadcn-ui-blocks:ecommerce-product-overview-compact-overview", "node": "section/detail", "variation": "two-pane", "job": "Tight product layout fitting above the fold"}
+{"id": "shadcn-ui-blocks:ecommerce-product-overview-gallery-overview", "node": "section/detail", "variation": "two-pane", "job": "Product gallery with thumbnails beside the details"}
+{"id": "shadcn-ui-blocks:ecommerce-product-overview-immersive-overview", "node": "section/detail", "variation": null, "job": "Full-bleed product page with sticky buy bar", "edge": "immersive-product-overview"}
+{"id": "shadcn-ui-blocks:ecommerce-product-overview-minimal-overview", "node": "section/detail", "variation": "two-pane", "job": "Pared back product page with single image and button"}
+{"id": "shadcn-ui-blocks:ecommerce-product-overview-modern-overview", "node": "section/detail", "variation": "two-pane", "job": "Contemporary product page with bold image grid"}
+{"id": "shadcn-ui-blocks:ecommerce-promo-sections-centered-icon-promo", "node": "section/cta", "variation": "centered-banner", "job": "Centered promo with icon, headline, supporting copy"}
+{"id": "shadcn-ui-blocks:ecommerce-promo-sections-centered-image-grid", "node": "section/cta", "variation": null, "job": "Centered promo paired with grid of product images", "edge": "promo-image-grid"}
+{"id": "shadcn-ui-blocks:ecommerce-promo-sections-centered-simple-promo", "node": "section/cta", "variation": "centered-banner", "job": "Clean centered promo with headline, message, button"}
+{"id": "shadcn-ui-blocks:ecommerce-promo-sections-countdown-timer-promo", "node": "section/cta", "variation": null, "job": "Promo block with live countdown timer and CTA", "edge": "countdown-offer"}
+{"id": "shadcn-ui-blocks:ecommerce-promo-sections-fading-background-testimonial", "node": "section/testimonials", "variation": "big-quote", "job": "Testimonial promo over soft fading background"}
+{"id": "shadcn-ui-blocks:ecommerce-promo-sections-full-width-large-content", "node": "section/cta", "variation": "full-bleed", "job": "Full width promo with oversized type and button"}
+{"id": "shadcn-ui-blocks:ecommerce-promo-sections-image-aside", "node": "section/cta", "variation": "split-image", "job": "Promo copy beside a product image"}
+{"id": "shadcn-ui-blocks:ecommerce-promo-sections-large-image-split", "node": "section/cta", "variation": "split-image", "job": "Split promo with large image and offer"}
+{"id": "shadcn-ui-blocks:ecommerce-promo-sections-multi-column-cards", "node": "section/cta", "variation": "card", "job": "Promo cards in columns, each holding its own offer"}
+{"id": "shadcn-ui-blocks:ecommerce-promo-sections-simple-banner", "node": "section/announcement", "variation": "text-link", "job": "Slim top banner announcing sale or shipping"}
+{"id": "shadcn-ui-blocks:ecommerce-promo-sections-split-offers", "node": "section/cta", "variation": "card", "job": "Two promo panels each making its own offer"}
+{"id": "shadcn-ui-blocks:ecommerce-shopping-cart-compact-cart", "node": "section/pricing", "variation": null, "job": "Condensed cart lines with quantities and running total", "edge": "compact-cart"}
+{"id": "shadcn-ui-blocks:ecommerce-shopping-cart-floating-cart", "node": "section/pricing", "variation": null, "job": "Cart overlay floating above page with items and subtotal", "edge": "floating-cart"}
+{"id": "shadcn-ui-blocks:ecommerce-shopping-cart-mini-cart", "node": "section/pricing", "variation": "checkout", "job": "Mini cart popover with thumbnails, prices, checkout button"}
+{"id": "shadcn-ui-blocks:ecommerce-shopping-cart-modern-cart", "node": "section/pricing", "variation": "checkout", "job": "Full cart page with product images, steppers, order summary"}
+{"id": "shadcn-ui-blocks:ecommerce-shopping-cart-sidebar-cart", "node": "component/sheet", "variation": "side-sheet", "job": "Cart sliding in from the side with items and totals"}
+{"id": "shadcn-ui-blocks:ecommerce-shopping-cart-sticky-cart", "node": "section/pricing", "variation": "checkout", "job": "Cart summary pinned beside page with totals and checkout"}
+{"id": "shadcn-ui-blocks:marketing-about-sections-achievements", "node": "section/about", "variation": null, "job": "Grid of award and milestone cards with icons", "edge": "awards-grid"}
+{"id": "shadcn-ui-blocks:marketing-about-sections-animated-stats", "node": "section/stats", "variation": "counter", "job": "Headline metrics counting up as they scroll into view"}
+{"id": "shadcn-ui-blocks:marketing-about-sections-brand-values", "node": "section/about", "variation": "mission-values", "job": "Row of brand value cards with icon and principle"}
+{"id": "shadcn-ui-blocks:marketing-about-sections-company-culture", "node": "section/about", "variation": "mission-values", "job": "Photos and blurbs showing how the team works"}
+{"id": "shadcn-ui-blocks:marketing-about-sections-company-values", "node": "section/about", "variation": "mission-values", "job": "Grid of core values with icon, title, sentence"}
+{"id": "shadcn-ui-blocks:marketing-about-sections-diversity-inclusion", "node": "section/about", "variation": "mission-values", "job": "Belonging statement paired with supporting stats and imagery"}
+{"id": "shadcn-ui-blocks:marketing-about-sections-founders", "node": "section/team", "variation": "card-grid", "job": "Founder portrait cards with names, roles and bios"}
+{"id": "shadcn-ui-blocks:marketing-about-sections-mission-statement", "node": "section/about", "variation": "mission-values", "job": "Bold centred statement of company purpose"}
+{"id": "shadcn-ui-blocks:marketing-about-sections-press-recognitions", "node": "section/logos", "variation": "static-row", "job": "Press logos with pull quotes showing coverage"}
+{"id": "shadcn-ui-blocks:marketing-about-sections-process", "node": "section/how", "variation": "numbered-steps", "job": "Numbered steps from first contact to delivery"}
+{"id": "shadcn-ui-blocks:marketing-about-sections-simple", "node": "section/about", "variation": null, "job": "Minimal heading and paragraph of company background", "edge": "about-intro"}
+{"id": "shadcn-ui-blocks:marketing-about-sections-stats-grid", "node": "section/stats", "variation": "grid", "job": "Grid of key numbers with labels"}
+{"id": "shadcn-ui-blocks:marketing-about-sections-tabs", "node": "section/about", "variation": null, "job": "Tabbed panels splitting story into mission, team, history", "edge": "about-tabs"}
+{"id": "shadcn-ui-blocks:marketing-about-sections-team-grid", "node": "section/team", "variation": "card-grid", "job": "Grid of headshots with names, titles and social links"}
+{"id": "shadcn-ui-blocks:marketing-about-sections-timeline", "node": "section/about", "variation": "timeline", "job": "Vertical dated milestones showing how the company grew"}
+{"id": "shadcn-ui-blocks:marketing-about-sections-two-column", "node": "section/about", "variation": "story-photo", "job": "Company text beside an image in two columns"}
+{"id": "shadcn-ui-blocks:marketing-about-sections-values", "node": "section/about", "variation": "mission-values", "job": "Value cards each holding icon, title and one line"}
+{"id": "shadcn-ui-blocks:marketing-about-sections-with-image", "node": "section/about", "variation": "story-photo", "job": "About paragraph paired with a large photo"}
+{"id": "shadcn-ui-blocks:marketing-announcement-banners-floating", "node": "section/announcement", "variation": "dismissible", "job": "Floating rounded banner above content with dismiss button"}
+{"id": "shadcn-ui-blocks:marketing-announcement-banners-simple-centered", "node": "section/announcement", "variation": "dismissible", "job": "Slim bar with centred text and dismiss control"}
+{"id": "shadcn-ui-blocks:marketing-announcement-banners-with-action", "node": "section/announcement", "variation": "text-link", "job": "Banner with short message and action button"}
+{"id": "shadcn-ui-blocks:marketing-announcement-banners-with-countdown", "node": "section/announcement", "variation": null, "job": "Banner with live countdown beside the message", "edge": "countdown-banner"}
+{"id": "shadcn-ui-blocks:marketing-announcement-banners-with-image", "node": "section/announcement", "variation": "badge-icon", "job": "Banner pairing thumbnail with headline and link"}
+{"id": "shadcn-ui-blocks:marketing-announcement-banners-with-social-proof", "node": "section/announcement", "variation": null, "job": "Banner showing user counts, ratings and avatars", "edge": "social-proof-banner"}
+{"id": "shadcn-ui-blocks:marketing-blog-sections-author-spotlight", "node": "section/blog", "variation": null, "job": "Author photo, bio and their latest posts", "edge": "author-spotlight"}
+{"id": "shadcn-ui-blocks:marketing-blog-sections-carousel", "node": "section/blog", "variation": "featured-carousel", "job": "Horizontal slider of article cards with cover images"}
+{"id": "shadcn-ui-blocks:marketing-blog-sections-case-study-showcase", "node": "section/showcase", "variation": "grid", "job": "Grid of customer case study cards with results"}
+{"id": "shadcn-ui-blocks:marketing-blog-sections-category-filter", "node": "section/blog", "variation": "topic-filter", "job": "Post grid with category tabs filtering visible articles"}
+{"id": "shadcn-ui-blocks:marketing-blog-sections-compact-list", "node": "section/blog", "variation": "list", "job": "Dense list of posts with titles, dates, excerpts"}
+{"id": "shadcn-ui-blocks:marketing-blog-sections-expert-roundup", "node": "section/testimonials", "variation": "card-grid", "job": "Grid of contributor quotes with headshots"}
+{"id": "shadcn-ui-blocks:marketing-blog-sections-featured-list", "node": "section/blog", "variation": "post-layout", "job": "Large featured article above stacked smaller posts"}
+{"id": "shadcn-ui-blocks:marketing-blog-sections-featured-with-sidebar", "node": "section/blog", "variation": null, "job": "Article feed beside a sidebar of links and promos", "edge": "blog-with-sidebar"}
+{"id": "shadcn-ui-blocks:marketing-blog-sections-hero-focus", "node": "section/blog", "variation": null, "job": "Full width hero centred on one featured article", "edge": "featured-post-hero"}
+{"id": "shadcn-ui-blocks:marketing-blog-sections-interview-format", "node": "section/blog", "variation": "post-layout", "job": "Question and answer post layout with guest portrait"}
+{"id": "shadcn-ui-blocks:marketing-blog-sections-magazine-layout", "node": "section/blog", "variation": "news-grid", "job": "Editorial grid mixing large and small story cards"}
+{"id": "shadcn-ui-blocks:marketing-blog-sections-minimal-blog", "node": "section/blog", "variation": "list", "job": "Clean spaced list of post titles, dates, excerpts"}
+{"id": "shadcn-ui-blocks:marketing-blog-sections-newsletter-blog", "node": "section/blog", "variation": null, "job": "Article feed beside an email signup prompt", "edge": "blog-with-signup"}
+{"id": "shadcn-ui-blocks:marketing-blog-sections-podcast-list", "node": "component/player", "variation": "podcast-player", "job": "Episode list with cover art, titles and play controls"}
+{"id": "shadcn-ui-blocks:marketing-blog-sections-simple-grid", "node": "section/blog", "variation": "news-grid", "job": "Even grid of article cards with covers and dates"}
+{"id": "shadcn-ui-blocks:marketing-blog-sections-timeline-blog", "node": "section/blog", "variation": "changelog", "job": "Vertical timeline ordering posts by date"}
+{"id": "shadcn-ui-blocks:marketing-blog-sections-video-blog", "node": "section/blog", "variation": "news-grid", "job": "Grid of video cards with thumbnails and durations"}
+{"id": "shadcn-ui-blocks:marketing-careers-application-form", "node": "component/form", "variation": null, "job": "Job application form with details, resume and cover letter", "edge": "application-form"}
+{"id": "shadcn-ui-blocks:marketing-careers-career-path", "node": "component/timeline", "variation": "steps-timeline", "job": "Career ladder showing role levels and milestones"}
+{"id": "shadcn-ui-blocks:marketing-careers-company-benefits", "node": "section/features", "variation": "icon-grid", "job": "Benefits section with icons and short blurbs"}
+{"id": "shadcn-ui-blocks:marketing-careers-department-positions", "node": "component/list", "variation": "standard-list", "job": "Open roles grouped by department with locations"}
+{"id": "shadcn-ui-blocks:marketing-careers-department-showcase", "node": "section/features", "variation": "card-grid", "job": "Cards describing each team and its focus"}
+{"id": "shadcn-ui-blocks:marketing-careers-employee-benefits", "node": "section/features", "variation": "icon-grid", "job": "Benefits grid covering insurance, learning and flexible hours"}
+{"id": "shadcn-ui-blocks:marketing-careers-featured-job-slider", "node": "component/carousel", "variation": "cards-carousel", "job": "Slider of featured job cards with team and location"}
+{"id": "shadcn-ui-blocks:marketing-careers-interview-process", "node": "section/how", "variation": "numbered-steps", "job": "Hiring stages from application to final offer"}
+{"id": "shadcn-ui-blocks:marketing-careers-job-board", "node": "section/data-view", "variation": "list", "job": "Searchable job board filtered by team, location, type"}
+{"id": "shadcn-ui-blocks:marketing-careers-job-details", "node": "page/article", "variation": "article-standard", "job": "Job posting with description, responsibilities and apply button"}
+{"id": "shadcn-ui-blocks:marketing-careers-job-listings", "node": "component/list", "variation": "standard-list", "job": "List of open roles with location and apply link"}
+{"id": "shadcn-ui-blocks:marketing-careers-workplace-culture", "node": "section/about", "variation": "mission-values", "job": "Culture photos with short stories about daily life"}
+{"id": "shadcn-ui-blocks:marketing-changelogs-basic-changelog", "node": "section/blog", "variation": "changelog", "job": "Release list with versions, dates and bullet points"}
+{"id": "shadcn-ui-blocks:marketing-changelogs-categorized-changelog", "node": "section/blog", "variation": "changelog", "job": "Release notes split into added, fixed, changed groups"}
+{"id": "shadcn-ui-blocks:marketing-changelogs-compact-changelog", "node": "section/blog", "variation": "changelog", "job": "Dense changelog packing many versions into a column"}
+{"id": "shadcn-ui-blocks:marketing-changelogs-expandable-changelog", "node": "section/blog", "variation": "changelog", "job": "Collapsed version entries opening on click"}
+{"id": "shadcn-ui-blocks:marketing-changelogs-grid-changelog", "node": "section/blog", "variation": "changelog", "job": "Release entries as cards in a responsive grid"}
+{"id": "shadcn-ui-blocks:marketing-changelogs-grouped-changelog", "node": "section/blog", "variation": "changelog", "job": "Updates clustered by month or release"}
+{"id": "shadcn-ui-blocks:marketing-changelogs-interactive-changelog", "node": "section/blog", "variation": "changelog", "job": "Changelog with filters and expandable entries"}
+{"id": "shadcn-ui-blocks:marketing-changelogs-minimalist-changelog", "node": "section/blog", "variation": "changelog", "job": "Pared back changelog with one line per change"}
+{"id": "shadcn-ui-blocks:marketing-changelogs-tabbed-changelog", "node": "section/blog", "variation": "changelog", "job": "Release notes organised into tabs"}
+{"id": "shadcn-ui-blocks:marketing-changelogs-table-changelog", "node": "section/blog", "variation": "changelog", "job": "Changelog as table of version, date, notes"}
+{"id": "shadcn-ui-blocks:marketing-changelogs-timeline-changelog", "node": "component/timeline", "variation": "changelog", "job": "Vertical timeline plotting releases in date order"}
+{"id": "shadcn-ui-blocks:marketing-contact-sections-center-aligned", "node": "section/contact", "variation": "centered", "job": "Centre aligned contact form with heading and fields"}
+{"id": "shadcn-ui-blocks:marketing-contact-sections-split-with-details", "node": "section/contact", "variation": "split", "job": "Contact form beside email, phone and hours"}
+{"id": "shadcn-ui-blocks:marketing-contact-sections-with-map", "node": "section/contact", "variation": null, "job": "Contact form beside embedded location map", "edge": "contact-with-map"}
+{"id": "shadcn-ui-blocks:marketing-cta-sections-awards-cta", "node": "section/cta", "variation": null, "job": "Signup prompt beside award badges and recognition logos", "edge": "awards-cta"}
+{"id": "shadcn-ui-blocks:marketing-cta-sections-banner-with-background", "node": "section/cta", "variation": "full-bleed", "job": "Full width banner with background image and button"}
+{"id": "shadcn-ui-blocks:marketing-cta-sections-case-study-cta", "node": "section/cta", "variation": null, "job": "CTA framed around a customer story and result", "edge": "case-study-cta"}
+{"id": "shadcn-ui-blocks:marketing-cta-sections-countdown-timer", "node": "section/cta", "variation": null, "job": "Countdown clock beside headline and signup button", "edge": "countdown-offer"}
+{"id": "shadcn-ui-blocks:marketing-cta-sections-cta-with-testimonial", "node": "section/cta", "variation": null, "job": "Quote and avatar beside a signup button", "edge": "cta-testimonial"}
+{"id": "shadcn-ui-blocks:marketing-cta-sections-faq-cta", "node": "section/faq", "variation": "contact-link", "job": "Short FAQ list with closing prompt and button"}
+{"id": "shadcn-ui-blocks:marketing-cta-sections-feature-grid", "node": "section/cta", "variation": null, "job": "Free trial CTA above a grid of feature highlights", "edge": "cta-feature-grid"}
+{"id": "shadcn-ui-blocks:marketing-cta-sections-gradient-cta", "node": "section/cta", "variation": "centered-banner", "job": "Centred CTA on a vivid gradient panel"}
+{"id": "shadcn-ui-blocks:marketing-cta-sections-image-with-text", "node": "section/cta", "variation": "split-image", "job": "Image beside headline, body copy and button"}
+{"id": "shadcn-ui-blocks:marketing-cta-sections-integrations-cta", "node": "section/cta", "variation": null, "job": "Signup CTA surrounded by supported tool logos", "edge": "integrations-cta"}
+{"id": "shadcn-ui-blocks:marketing-cta-sections-newsletter-form", "node": "section/cta", "variation": "email-form", "job": "Email input and subscribe button under a short pitch"}
+{"id": "shadcn-ui-blocks:marketing-cta-sections-quick-contact-cta", "node": "section/contact", "variation": null, "job": "Compact prompt to reach the team from a footer", "edge": "quick-contact"}
+{"id": "shadcn-ui-blocks:marketing-cta-sections-simple-centered", "node": "section/cta", "variation": "centered-banner", "job": "Centred headline, supporting line and button"}
+{"id": "shadcn-ui-blocks:marketing-cta-sections-split-with-image", "node": "section/cta", "variation": "split-image", "job": "Two column CTA with copy and image"}
+{"id": "shadcn-ui-blocks:marketing-cta-sections-stats-cta", "node": "section/cta", "variation": null, "job": "Metrics led CTA ending in a signup button", "edge": "stats-cta"}
+{"id": "shadcn-ui-blocks:marketing-cta-sections-tab-cta", "node": "section/cta", "variation": null, "job": "Tabbed CTA swapping message by audience", "edge": "tabbed-cta"}
+{"id": "shadcn-ui-blocks:marketing-cta-sections-video-cta", "node": "section/cta", "variation": null, "job": "Embedded demo video above headline and button", "edge": "video-cta"}
+{"id": "shadcn-ui-blocks:marketing-cta-sections-zigzag-cta", "node": "section/cta", "variation": null, "job": "Alternating text and image rows ending in a CTA", "edge": "zigzag-cta"}
+{"id": "shadcn-ui-blocks:marketing-faq-sections-accordion-with-background", "node": "section/faq", "variation": "accordion", "job": "Accordion FAQ on a tinted background panel"}
+{"id": "shadcn-ui-blocks:marketing-faq-sections-card-grid", "node": "section/faq", "variation": "grid", "job": "Grid of question cards with answers inline"}
+{"id": "shadcn-ui-blocks:marketing-faq-sections-center-aligned", "node": "section/faq", "variation": "accordion", "job": "Centred FAQ column with heading and stacked questions"}
+{"id": "shadcn-ui-blocks:marketing-faq-sections-code-snippets", "node": "section/faq", "variation": "accordion", "job": "FAQ answers holding formatted code blocks"}
+{"id": "shadcn-ui-blocks:marketing-faq-sections-contact-form", "node": "section/faq", "variation": "contact-link", "job": "FAQ beside a contact form for unanswered questions"}
+{"id": "shadcn-ui-blocks:marketing-faq-sections-image-illustrated", "node": "section/faq", "variation": "two-column", "job": "FAQ list beside a supporting illustration"}
+{"id": "shadcn-ui-blocks:marketing-faq-sections-right-aligned", "node": "section/faq", "variation": "two-column", "job": "Heading and intro left, answers right"}
+{"id": "shadcn-ui-blocks:marketing-faq-sections-search-filter", "node": "section/faq", "variation": "search", "job": "FAQ with search field filtering questions as you type"}
+{"id": "shadcn-ui-blocks:marketing-faq-sections-sidebar-navigation", "node": "section/faq", "variation": "tabs", "job": "FAQ answers beside a sidebar of categories"}
+{"id": "shadcn-ui-blocks:marketing-faq-sections-simple-2-cols-grid", "node": "section/faq", "variation": "grid", "job": "Plain two column grid of questions and answers"}
+{"id": "shadcn-ui-blocks:marketing-faq-sections-simple-with-divider-and-icon", "node": "section/faq", "variation": "accordion", "job": "FAQ rows with icons and dividers between them"}
+{"id": "shadcn-ui-blocks:marketing-faq-sections-tabbed-categories", "node": "section/faq", "variation": "tabs", "job": "FAQ grouped into category tabs"}
+{"id": "shadcn-ui-blocks:marketing-faq-sections-timeline-faq", "node": "component/timeline", "variation": "vertical-timeline", "job": "FAQ questions laid out down a vertical timeline"}
+{"id": "shadcn-ui-blocks:marketing-feature-sections-3d-cards", "node": "section/features", "variation": "card-grid", "job": "Feature cards tilting in 3D with icon and copy"}
+{"id": "shadcn-ui-blocks:marketing-feature-sections-card-grid", "node": "section/features", "variation": "card-grid", "job": "Grid of feature cards with icon and description"}
+{"id": "shadcn-ui-blocks:marketing-feature-sections-feature-accordion", "node": "component/accordion", "variation": "feature-disclosure", "job": "Feature panels expanding to reveal detail and visual"}
+{"id": "shadcn-ui-blocks:marketing-feature-sections-feature-chat", "node": "section/chat", "variation": "thread", "job": "Chat thread of message bubbles beside feature copy"}
+{"id": "shadcn-ui-blocks:marketing-feature-sections-feature-comparison", "node": "section/comparison", "variation": "table", "job": "Two options side by side with checkmarks per row"}
+{"id": "shadcn-ui-blocks:marketing-feature-sections-feature-stats", "node": "section/stats", "variation": null, "job": "Feature copy paired with bold metrics", "edge": "feature-stats"}
+{"id": "shadcn-ui-blocks:marketing-feature-sections-feature-timeline", "node": "component/timeline", "variation": "vertical-timeline", "job": "Vertical timeline walking through features in sequence"}
+{"id": "shadcn-ui-blocks:marketing-feature-sections-feature-videos", "node": "section/features", "variation": null, "job": "Short video clips each captioned with a benefit", "edge": "feature-videos"}
+{"id": "shadcn-ui-blocks:marketing-feature-sections-feature-wizard", "node": "section/onboarding", "variation": "wizard", "job": "Guided multi step layout revealing features as you advance"}
+{"id": "shadcn-ui-blocks:marketing-feature-sections-grid-hover", "node": "section/features", "variation": "card-grid", "job": "Feature grid revealing copy and glow on hover"}
+{"id": "shadcn-ui-blocks:marketing-feature-sections-simple", "node": "section/features", "variation": null, "job": "Heading, supporting text and a short list of points", "edge": "feature-list"}
+{"id": "shadcn-ui-blocks:marketing-feature-sections-steps", "node": "section/how", "variation": "numbered-steps", "job": "Numbered steps laying out how the product works"}
+{"id": "shadcn-ui-blocks:marketing-feature-sections-terminal", "node": "component/code", "variation": "terminal", "job": "Mock terminal typing commands and printing output"}
+{"id": "shadcn-ui-blocks:marketing-feature-sections-with-carousel", "node": "section/features", "variation": "carousel", "job": "Swipeable carousel of feature highlights, one per slide"}
+{"id": "shadcn-ui-blocks:marketing-feature-sections-with-comparison", "node": "component/compare", "variation": "before-after", "job": "Before and after states placed side by side"}
+{"id": "shadcn-ui-blocks:marketing-feature-sections-with-images", "node": "section/features", "variation": "split-text-image", "job": "Alternating feature copy rows beside supporting images"}
+{"id": "shadcn-ui-blocks:marketing-feature-sections-with-stats", "node": "section/features", "variation": null, "job": "Feature copy interleaved with headline numbers and labels", "edge": "feature-stats"}
+{"id": "shadcn-ui-blocks:marketing-feature-sections-with-tabs", "node": "section/features", "variation": "tabs", "job": "Tabbed feature panels swapping content and visuals"}
+{"id": "shadcn-ui-blocks:marketing-footers-logo-cloud", "node": "section/footer", "variation": null, "job": "Footer with partner logos above navigation links", "edge": "logo-cloud"}
+{"id": "shadcn-ui-blocks:marketing-footers-minimal", "node": "section/footer", "variation": "minimal-row", "job": "Compact footer with copyright line and few links"}
+{"id": "shadcn-ui-blocks:marketing-footers-multi-column", "node": "section/footer", "variation": "columns", "job": "Footer with grouped link columns for site sections"}
+{"id": "shadcn-ui-blocks:marketing-footers-simple", "node": "section/footer", "variation": "minimal-row", "job": "Footer with logo, tagline, and row of links"}
+{"id": "shadcn-ui-blocks:marketing-footers-subscribe", "node": "section/footer", "variation": "newsletter", "job": "Footer with email newsletter form beside navigation links"}
+{"id": "shadcn-ui-blocks:marketing-gallery-carousel-gallery", "node": "section/showcase", "variation": "carousel", "job": "Swipeable carousel stepping through images one at a time"}
+{"id": "shadcn-ui-blocks:marketing-gallery-filmstrip-gallery", "node": "section/showcase", "variation": null, "job": "Thumbnail filmstrip driving a larger preview above", "edge": "filmstrip"}
+{"id": "shadcn-ui-blocks:marketing-gallery-fullscreen-gallery", "node": "section/showcase", "variation": null, "job": "Fullscreen gallery showing one image filling the viewport", "edge": "fullscreen"}
+{"id": "shadcn-ui-blocks:marketing-gallery-grid-gallery", "node": "section/showcase", "variation": "grid", "job": "Responsive grid of evenly sized image tiles"}
+{"id": "shadcn-ui-blocks:marketing-gallery-immersive-gallery", "node": "section/showcase", "variation": null, "job": "Edge to edge gallery of large visuals with smooth motion", "edge": "immersive"}
+{"id": "shadcn-ui-blocks:marketing-gallery-polaroid-gallery", "node": "section/showcase", "variation": null, "job": "Scattered tilted polaroid style cards with captions", "edge": "polaroid"}
+{"id": "shadcn-ui-blocks:marketing-gallery-portfolio-gallery", "node": "section/showcase", "variation": null, "job": "Project images paired with titles and short notes", "edge": "portfolio"}
+{"id": "shadcn-ui-blocks:marketing-hero-forms-booking-form", "node": "section/hero", "variation": "form", "job": "Hero with booking form for dates, times, guests"}
+{"id": "shadcn-ui-blocks:marketing-hero-forms-center-aligned-search-with-tags", "node": "section/hero", "variation": null, "job": "Centered hero built around search field and popular tags", "edge": "search-hero"}
+{"id": "shadcn-ui-blocks:marketing-hero-forms-center-aligned-with-a-form", "node": "section/hero", "variation": "form", "job": "Centered hero with headline and inline signup form"}
+{"id": "shadcn-ui-blocks:marketing-hero-forms-contact-form-with-background", "node": "section/hero", "variation": "form", "job": "Hero with full contact form over styled background"}
+{"id": "shadcn-ui-blocks:marketing-hero-forms-contest-entry-form", "node": "section/hero", "variation": "form", "job": "Hero with contest entry form for name and email"}
+{"id": "shadcn-ui-blocks:marketing-hero-forms-early-access-form", "node": "section/hero", "variation": "form", "job": "Hero with early access waitlist email form"}
+{"id": "shadcn-ui-blocks:marketing-hero-forms-event-registration-countdown", "node": "section/hero", "variation": "form", "job": "Hero with registration form and live countdown timer"}
+{"id": "shadcn-ui-blocks:marketing-hero-forms-feedback-survey-form", "node": "section/hero", "variation": "form", "job": "Hero with survey form using ratings and short answers"}
+{"id": "shadcn-ui-blocks:marketing-hero-forms-floating-card-with-gradient", "node": "section/hero", "variation": "form", "job": "Hero with floating signup card over gradient backdrop"}
+{"id": "shadcn-ui-blocks:marketing-hero-forms-free-ebook-form", "node": "section/hero", "variation": "form", "job": "Hero with ebook download form trading email"}
+{"id": "shadcn-ui-blocks:marketing-hero-forms-free-trial-signup-form", "node": "section/hero", "variation": "form", "job": "Hero with free trial signup for email and password"}
+{"id": "shadcn-ui-blocks:marketing-hero-forms-image-and-form", "node": "section/hero", "variation": "form", "job": "Split hero with product image and signup form"}
+{"id": "shadcn-ui-blocks:marketing-hero-forms-job-application-form", "node": "section/hero", "variation": "form", "job": "Hero with job application form and resume upload"}
+{"id": "shadcn-ui-blocks:marketing-hero-forms-newsletter-subscription", "node": "section/hero", "variation": "form", "job": "Hero with newsletter subscription field and pitch"}
+{"id": "shadcn-ui-blocks:marketing-hero-forms-newsletter-with-social-proof", "node": "section/hero", "variation": "form", "job": "Hero newsletter form with subscriber counts and logos"}
+{"id": "shadcn-ui-blocks:marketing-hero-forms-product-customizer-form", "node": "section/hero", "variation": "form", "job": "Hero with product customizer for size and color"}
+{"id": "shadcn-ui-blocks:marketing-hero-forms-quiz-assessment-form", "node": "section/hero", "variation": "form", "job": "Hero with scored quiz questions routing visitors onward"}
+{"id": "shadcn-ui-blocks:marketing-hero-forms-schedule-demo-form", "node": "section/hero", "variation": "form", "job": "Hero with demo booking form for name, company, time"}
+{"id": "shadcn-ui-blocks:marketing-hero-forms-sign-up-form", "node": "section/hero", "variation": "form", "job": "Hero with signup form for email and password"}
+{"id": "shadcn-ui-blocks:marketing-hero-forms-split-screen-multi-step", "node": "section/hero", "variation": "form", "job": "Split hero with multi step form and progress indicator"}
+{"id": "shadcn-ui-blocks:marketing-hero-forms-subscription-form-with-toggle", "node": "section/hero", "variation": "form", "job": "Hero subscription form with monthly and yearly toggle"}
+{"id": "shadcn-ui-blocks:marketing-hero-forms-two-factor-verification", "node": "section/hero", "variation": "form", "job": "Hero with two factor one time code verification form"}
+{"id": "shadcn-ui-blocks:marketing-hero-forms-user-feedback-form", "node": "section/hero", "variation": "form", "job": "Hero with feedback form for comments and ratings"}
+{"id": "shadcn-ui-blocks:marketing-hero-forms-webinar-registration-form", "node": "section/hero", "variation": "form", "job": "Hero with webinar registration form and session time"}
+{"id": "shadcn-ui-blocks:marketing-hero-sections-3d-isometric-hero", "node": "section/hero", "variation": "split-image", "job": "Hero with 3D isometric illustration beside headline"}
+{"id": "shadcn-ui-blocks:marketing-hero-sections-animated-features-hero", "node": "section/hero", "variation": null, "job": "Hero cycling key features beside headline and CTA", "edge": "animated-features"}
+{"id": "shadcn-ui-blocks:marketing-hero-sections-animated-gradient", "node": "section/hero", "variation": null, "job": "Centered hero on slowly shifting gradient backdrop", "edge": "animated-gradient"}
+{"id": "shadcn-ui-blocks:marketing-hero-sections-animated-text-hero", "node": "section/hero", "variation": null, "job": "Hero swapping headline words through phrases", "edge": "animated-text"}
+{"id": "shadcn-ui-blocks:marketing-hero-sections-centred-with-image", "node": "section/hero", "variation": "centered-text", "job": "Centered hero above a wide product image"}
+{"id": "shadcn-ui-blocks:marketing-hero-sections-chat-preview-hero", "node": "section/hero", "variation": null, "job": "Hero pairing headline with live chat conversation preview", "edge": "chat-preview"}
+{"id": "shadcn-ui-blocks:marketing-hero-sections-countdown-hero", "node": "section/hero", "variation": null, "job": "Hero with ticking countdown timer beside headline", "edge": "countdown-hero"}
+{"id": "shadcn-ui-blocks:marketing-hero-sections-gradient-background", "node": "section/hero", "variation": null, "job": "Hero on rich gradient background with centered headline", "edge": "gradient-background"}
+{"id": "shadcn-ui-blocks:marketing-hero-sections-gradient-mesh-hero", "node": "section/hero", "variation": null, "job": "Hero with soft mesh gradient behind centered headline", "edge": "gradient-mesh"}
+{"id": "shadcn-ui-blocks:marketing-hero-sections-image-carousel-hero", "node": "section/hero", "variation": null, "job": "Hero with rotating image carousel and headline", "edge": "image-carousel"}
+{"id": "shadcn-ui-blocks:marketing-hero-sections-image-with-reviews", "node": "section/hero", "variation": "social-proof", "job": "Hero pairing product image with short customer reviews"}
+{"id": "shadcn-ui-blocks:marketing-hero-sections-interactive-metrics", "node": "section/hero", "variation": null, "job": "Hero with live interactive stat counters beside headline", "edge": "interactive-metrics"}
+{"id": "shadcn-ui-blocks:marketing-hero-sections-mobile-app-hero", "node": "section/hero", "variation": null, "job": "Hero with phone mockup and app store badges", "edge": "app-download-hero"}
+{"id": "shadcn-ui-blocks:marketing-hero-sections-multi-step-cta-hero", "node": "section/hero", "variation": null, "job": "Hero guiding visitors through short multi step call to action", "edge": "multi-step-cta"}
+{"id": "shadcn-ui-blocks:marketing-hero-sections-particles-background-hero", "node": "section/hero", "variation": "webgl", "job": "Hero with animated particles drifting behind centered headline"}
+{"id": "shadcn-ui-blocks:marketing-hero-sections-product-carousel-hero", "node": "section/hero", "variation": null, "job": "Hero with swipeable product carousel beside headline", "edge": "product-carousel"}
+{"id": "shadcn-ui-blocks:marketing-hero-sections-progress-tracker-hero", "node": "section/hero", "variation": null, "job": "Hero with step progress tracker beside headline", "edge": "progress-tracker"}
+{"id": "shadcn-ui-blocks:marketing-hero-sections-search-bar", "node": "section/hero", "variation": null, "job": "Hero centered on prominent search bar below headline", "edge": "search-hero"}
+{"id": "shadcn-ui-blocks:marketing-hero-sections-simple-centred", "node": "section/hero", "variation": "centered-text", "job": "Clean centered hero with subtext and single CTA"}
+{"id": "shadcn-ui-blocks:marketing-hero-sections-social-proof-hero", "node": "section/hero", "variation": "social-proof", "job": "Hero with logos, ratings, and user counts"}
+{"id": "shadcn-ui-blocks:marketing-hero-sections-split-content-hero", "node": "section/hero", "variation": "split-image", "job": "Two column hero with text and CTA on one side"}
+{"id": "shadcn-ui-blocks:marketing-hero-sections-split-image-hero", "node": "section/hero", "variation": "split-image", "job": "Hero split between text column and full height image"}
+{"id": "shadcn-ui-blocks:marketing-hero-sections-split-with-video", "node": "section/hero", "variation": null, "job": "Hero split between headline and embedded product video", "edge": "split-video"}
+{"id": "shadcn-ui-blocks:marketing-hero-sections-testimonial-carousel", "node": "section/hero", "variation": null, "job": "Hero with rotating customer testimonial carousel", "edge": "testimonial-carousel"}
+{"id": "shadcn-ui-blocks:marketing-hero-sections-trust-indicators", "node": "section/hero", "variation": "social-proof", "job": "Hero leading with security badges and partner logos"}
+{"id": "shadcn-ui-blocks:marketing-hero-sections-video-background-hero", "node": "section/hero", "variation": null, "job": "Hero with looping video filling the background", "edge": "video-background"}
+{"id": "shadcn-ui-blocks:marketing-hero-sections-with-3d-mockup", "node": "section/hero", "variation": null, "job": "Hero with rotating 3D device mockup beside headline", "edge": "3d-mockup"}
+{"id": "shadcn-ui-blocks:marketing-hero-sections-with-api-preview", "node": "section/hero", "variation": null, "job": "Hero with live API request and response preview", "edge": "api-preview"}
+{"id": "shadcn-ui-blocks:marketing-hero-sections-with-app-showcase", "node": "section/hero", "variation": null, "job": "Hero with layered app screens beside headline", "edge": "app-showcase"}
+{"id": "shadcn-ui-blocks:marketing-hero-sections-with-bento-grid", "node": "section/hero", "variation": null, "job": "Hero with bento grid of feature tiles below headline", "edge": "bento-hero"}
+{"id": "shadcn-ui-blocks:marketing-hero-sections-with-code-preview", "node": "section/hero", "variation": null, "job": "Hero with syntax highlighted code snippet beside CTA", "edge": "code-preview"}
+{"id": "shadcn-ui-blocks:marketing-hero-sections-with-content-tabs", "node": "section/hero", "variation": null, "job": "Hero with tabbed panels swapping content below headline", "edge": "content-tabs"}
+{"id": "shadcn-ui-blocks:marketing-hero-sections-with-dashboard", "node": "section/hero", "variation": "split-image", "job": "Hero placing product dashboard screenshot beside headline"}
+{"id": "shadcn-ui-blocks:marketing-hero-sections-with-email-input", "node": "section/hero", "variation": "form", "job": "Hero centered on inline email capture form"}
+{"id": "shadcn-ui-blocks:marketing-hero-sections-with-feature-cards", "node": "section/hero", "variation": null, "job": "Hero with row of feature cards beneath headline", "edge": "feature-cards"}
+{"id": "shadcn-ui-blocks:marketing-hero-sections-with-feature-timeline", "node": "section/hero", "variation": null, "job": "Hero with feature timeline beside headline and CTA", "edge": "feature-timeline"}
+{"id": "shadcn-ui-blocks:marketing-hero-sections-with-integration-showcase", "node": "section/hero", "variation": null, "job": "Hero with grid of integration logos beside headline", "edge": "integration-showcase"}
+{"id": "shadcn-ui-blocks:marketing-hero-sections-with-product-screenshots", "node": "section/hero", "variation": "split-image", "job": "Hero with framed product screenshots next to headline"}
+{"id": "shadcn-ui-blocks:marketing-hero-sections-with-team-grid", "node": "section/hero", "variation": null, "job": "Hero pairing headline with grid of team photos", "edge": "team-grid"}
+{"id": "shadcn-ui-blocks:marketing-hero-sections-with-terminal", "node": "section/hero", "variation": null, "job": "Hero pairing headline with animated terminal window", "edge": "terminal-hero"}
+{"id": "shadcn-ui-blocks:marketing-icon-sections-2-cols-grid", "node": "section/features", "variation": "icon-grid", "job": "Two column grid pairing icons with headings and copy"}
+{"id": "shadcn-ui-blocks:marketing-icon-sections-animated-icon-grid", "node": "section/features", "variation": "icon-grid", "job": "Feature icon grid animating into view on scroll"}
+{"id": "shadcn-ui-blocks:marketing-icon-sections-centred-description-with-icon-blocks", "node": "section/features", "variation": "icon-grid", "job": "Centered intro paragraph above row of icon blocks"}
+{"id": "shadcn-ui-blocks:marketing-icon-sections-circle-icons-centre-aligned", "node": "section/features", "variation": "icon-grid", "job": "Center aligned circular icons with titles and captions"}
+{"id": "shadcn-ui-blocks:marketing-icon-sections-compact-metric-list", "node": "section/stats", "variation": "row", "job": "Compact vertical list of icon, number, and label"}
+{"id": "shadcn-ui-blocks:marketing-icon-sections-description-on-left-icon-blocks-on-right", "node": "section/features", "variation": "icon-grid", "job": "Section copy left with stacked icon blocks right"}
+{"id": "shadcn-ui-blocks:marketing-icon-sections-expandable-icon-cards", "node": "section/features", "variation": "expandable", "job": "Icon cards expanding on click to reveal detail"}
+{"id": "shadcn-ui-blocks:marketing-icon-sections-feature-icon-tabs", "node": "section/features", "variation": "tabs", "job": "Icon tabs switching between feature panels in place"}
+{"id": "shadcn-ui-blocks:marketing-icon-sections-horizontal-scrolling-icons", "node": "section/features", "variation": "carousel", "job": "Horizontal strip of icon cards users scroll through"}
+{"id": "shadcn-ui-blocks:marketing-icon-sections-icon-feature-carousel", "node": "section/features", "variation": "carousel", "job": "Carousel rotating through icon features one slide at a time"}
+{"id": "shadcn-ui-blocks:marketing-icon-sections-icon-stats-grid", "node": "section/stats", "variation": "grid", "job": "Grid of stat cards pairing icon, number, and label"}
+{"id": "shadcn-ui-blocks:marketing-icon-sections-icon-tabs-categories", "node": "section/features", "variation": "tabs", "job": "Category tabs filtering the features shown below"}
+{"id": "shadcn-ui-blocks:marketing-icon-sections-icon-timeline", "node": "section/how", "variation": null, "job": "Vertical timeline with an icon at each step", "edge": "icon-timeline"}
+{"id": "shadcn-ui-blocks:marketing-icon-sections-icons-with-tooltips", "node": "section/features", "variation": "icon-grid", "job": "Row of icons revealing short tooltips on hover"}
+{"id": "shadcn-ui-blocks:marketing-icon-sections-interactive-icon-showcase", "node": "section/features", "variation": null, "job": "Hovering an icon updates the description beside it", "edge": "icon-showcase"}
+{"id": "shadcn-ui-blocks:marketing-icon-sections-metric-cards", "node": "section/stats", "variation": "kpi-card", "job": "Cards pairing icon with headline metric and caption"}
+{"id": "shadcn-ui-blocks:marketing-icon-sections-minimal-stats-tiles", "node": "section/stats", "variation": "row", "job": "Clean tiles showing icon, number, and short label"}
+{"id": "shadcn-ui-blocks:marketing-icon-sections-radial-icon-layout", "node": "section/features", "variation": null, "job": "Icons arranged radially around a central label", "edge": "radial-icons"}
+{"id": "shadcn-ui-blocks:marketing-icon-sections-solid-icon-with-hover-effect", "node": "section/features", "variation": "icon-grid", "job": "Solid filled icons shifting colour on hover"}
+{"id": "shadcn-ui-blocks:marketing-icon-sections-stacked-cards", "node": "section/features", "variation": "card-grid", "job": "Vertically stacked icon cards with title and blurb"}
+{"id": "shadcn-ui-blocks:marketing-integrations-api-preview", "node": "section/features", "variation": null, "job": "Code sample panel beside copy explaining your API", "edge": "api-preview"}
+{"id": "shadcn-ui-blocks:marketing-integrations-carousel", "node": "section/logos", "variation": "marquee", "job": "Looping scrolling row of partner and app logos"}
+{"id": "shadcn-ui-blocks:marketing-integrations-category-tabs", "node": "section/logos", "variation": "directory", "job": "Tabs sorting connected apps by type"}
+{"id": "shadcn-ui-blocks:marketing-integrations-featured-showcase", "node": "section/logos", "variation": "integration-cards", "job": "Large card spotlighting one key integration"}
+{"id": "shadcn-ui-blocks:marketing-integrations-simple-grid", "node": "section/logos", "variation": "grid", "job": "Clean grid of integration logos in even rows"}
+{"id": "shadcn-ui-blocks:marketing-masonry-sections-cards-on-images", "node": "section/showcase", "variation": "masonry", "job": "Masonry grid of cards layered over images"}
+{"id": "shadcn-ui-blocks:marketing-pricing-sections-calculator", "node": "section/pricing", "variation": "usage-slider", "job": "Pricing calculator estimating cost from usage inputs"}
+{"id": "shadcn-ui-blocks:marketing-pricing-sections-cards", "node": "section/pricing", "variation": "tier-cards", "job": "Row of pricing cards with prices, features, and CTA"}
+{"id": "shadcn-ui-blocks:marketing-pricing-sections-custom-builder", "node": "section/pricing", "variation": null, "job": "Plan builder assembling a quote from chosen features", "edge": "plan-builder"}
+{"id": "shadcn-ui-blocks:marketing-pricing-sections-enterprise", "node": "section/pricing", "variation": null, "job": "Standard tiers paired with a contact sales panel", "edge": "contact-sales"}
+{"id": "shadcn-ui-blocks:marketing-pricing-sections-feature-grid", "node": "section/pricing", "variation": "comparison-table", "job": "Pricing table mapping every feature to each plan"}
+{"id": "shadcn-ui-blocks:marketing-pricing-sections-horizontal", "node": "section/pricing", "variation": "tier-cards", "job": "Wide pricing row laying plans side by side"}
+{"id": "shadcn-ui-blocks:marketing-pricing-sections-interactive", "node": "section/pricing", "variation": null, "job": "Pricing updating prices and highlights as options change", "edge": "interactive-pricing"}
+{"id": "shadcn-ui-blocks:marketing-pricing-sections-minimalist", "node": "section/pricing", "variation": "single-plan", "job": "Pared back pricing layout with one clear price"}
+{"id": "shadcn-ui-blocks:marketing-pricing-sections-modern", "node": "section/pricing", "variation": "tier-cards", "job": "Contemporary pricing cards with shadows and accent gradients"}
+{"id": "shadcn-ui-blocks:marketing-pricing-sections-seasonal", "node": "section/pricing", "variation": null, "job": "Pricing with promotional banners and limited time discounts", "edge": "seasonal-offers"}
+{"id": "shadcn-ui-blocks:marketing-pricing-sections-simple", "node": "section/pricing", "variation": "tier-cards", "job": "Clean pricing section showing a few plans"}
+{"id": "shadcn-ui-blocks:marketing-pricing-sections-stacked", "node": "section/pricing", "variation": null, "job": "Plan cards stacked vertically for narrow columns", "edge": "stacked-plans"}
+{"id": "shadcn-ui-blocks:marketing-pricing-sections-testimonial", "node": "section/pricing", "variation": null, "job": "Plan cards paired with customer quotes and logos", "edge": "pricing-testimonial"}
+{"id": "shadcn-ui-blocks:marketing-pricing-sections-toggle", "node": "section/pricing", "variation": "billing-toggle", "job": "Pricing with monthly and yearly switch updating prices"}
+{"id": "shadcn-ui-blocks:marketing-stats-achievement-bars", "node": "section/stats", "variation": "progress", "job": "Horizontal bars filling to show milestones against target"}
+{"id": "shadcn-ui-blocks:marketing-stats-card-group", "node": "section/stats", "variation": "grid", "job": "grid of stat cards with big numbers"}
+{"id": "shadcn-ui-blocks:marketing-stats-circular-progress", "node": "section/stats", "variation": "progress", "job": "ring progress dials animating to a percentage"}
+{"id": "shadcn-ui-blocks:marketing-stats-comparison-metrics", "node": "section/comparison", "variation": "before-after", "job": "two columns contrasting before and after numbers"}
+{"id": "shadcn-ui-blocks:marketing-stats-comparison-stats", "node": "section/comparison", "variation": "metric-table", "job": "paired figures weighing offering against a baseline"}
+{"id": "shadcn-ui-blocks:marketing-stats-customer-testimonial", "node": "section/testimonials", "variation": "big-quote", "job": "customer quote beside their team's results"}
+{"id": "shadcn-ui-blocks:marketing-stats-funnel-stats", "node": "section/stats", "variation": null, "job": "stepped funnel of conversion stages and drop-off", "edge": "funnel-stats"}
+{"id": "shadcn-ui-blocks:marketing-stats-gradient-grid", "node": "section/stats", "variation": "grid", "job": "grid of gradient-washed stat tiles"}
+{"id": "shadcn-ui-blocks:marketing-stats-growth-timeline", "node": "section/stats", "variation": null, "job": "vertical timeline pairing dates with growth numbers", "edge": "growth-timeline"}
+{"id": "shadcn-ui-blocks:marketing-stats-horizontal-with-dividers", "node": "section/stats", "variation": "row", "job": "single row of figures split by dividers"}
+{"id": "shadcn-ui-blocks:marketing-stats-impact-numbers", "node": "section/stats", "variation": "counter", "job": "oversized counters animating as the section scrolls"}
+{"id": "shadcn-ui-blocks:marketing-stats-interactive-hover", "node": "section/stats", "variation": null, "job": "stat cards revealing detail on hover", "edge": "hover-stat-cards"}
+{"id": "shadcn-ui-blocks:marketing-stats-metric-cards", "node": "section/stats", "variation": "kpi-card", "job": "bordered cards each holding one metric and trend"}
+{"id": "shadcn-ui-blocks:marketing-stats-one-main-with-three-follow-ups", "node": "section/stats", "variation": null, "job": "one headline number with three supporting stats", "edge": "one-main-three-follow-ups"}
+{"id": "shadcn-ui-blocks:marketing-stats-progress-bars", "node": "section/stats", "variation": "progress", "job": "labeled bars filling to a percentage"}
+{"id": "shadcn-ui-blocks:marketing-stats-simple-3-cols", "node": "section/stats", "variation": "row", "job": "three columns each with number and label"}
+{"id": "shadcn-ui-blocks:marketing-stats-sparkline-stats", "node": "section/stats", "variation": "with-chart", "job": "stat cards pairing value with inline trend chart"}
+{"id": "shadcn-ui-blocks:marketing-stats-stats-with-icons", "node": "section/stats", "variation": null, "job": "figures each beside an icon explaining the metric", "edge": "stats-with-icons"}
+{"id": "shadcn-ui-blocks:marketing-stats-timeline-stats", "node": "section/stats", "variation": null, "job": "key numbers plotted along a horizontal timeline", "edge": "timeline-stats"}
+{"id": "shadcn-ui-blocks:marketing-stats-trust-indicators", "node": "section/stats", "variation": null, "job": "band of proof points like uptime and ratings", "edge": "trust-indicators"}
+{"id": "shadcn-ui-blocks:marketing-subscribe-benefits-list", "node": "section/contact", "variation": null, "job": "signup form beside a bulleted benefits list", "edge": "benefits-list"}
+{"id": "shadcn-ui-blocks:marketing-subscribe-incentive-center-aligned", "node": "section/contact", "variation": "centered", "job": "centered signup block offering an incentive"}
+{"id": "shadcn-ui-blocks:marketing-subscribe-input-style", "node": "section/contact", "variation": null, "job": "compact email input with inline submit button", "edge": "inline-signup-input"}
+{"id": "shadcn-ui-blocks:marketing-subscribe-newsletter-preview", "node": "section/contact", "variation": "split", "job": "signup with newsletter preview beside the email field"}
+{"id": "shadcn-ui-blocks:marketing-subscribe-simple-center-aligned", "node": "section/contact", "variation": "centered", "job": "clean centered newsletter signup"}
+{"id": "shadcn-ui-blocks:marketing-subscribe-simple-right-aligned", "node": "section/contact", "variation": null, "job": "signup text left with email field right", "edge": "right-aligned-signup"}
+{"id": "shadcn-ui-blocks:marketing-subscribe-social-proof-center", "node": "section/contact", "variation": "centered", "job": "centered signup topped with subscriber social proof"}
+{"id": "shadcn-ui-blocks:marketing-subscribe-split-layout", "node": "section/contact", "variation": "split", "job": "two column signup pairing copy with email form"}
+{"id": "shadcn-ui-blocks:marketing-team-sections-alternating-sections", "node": "section/team", "variation": null, "job": "team layout alternating photos and bios left and right", "edge": "alternating-rows"}
+{"id": "shadcn-ui-blocks:marketing-team-sections-masonry-grid", "node": "section/team", "variation": null, "job": "masonry grid of team photos with varied heights", "edge": "masonry-grid"}
+{"id": "shadcn-ui-blocks:marketing-team-sections-simple-cards", "node": "section/team", "variation": "card-grid", "job": "grid of team cards with photo, name, role"}
+{"id": "shadcn-ui-blocks:marketing-team-sections-with-contact", "node": "section/team", "variation": "card-grid", "job": "team cards each pairing role with contact link"}
+{"id": "shadcn-ui-blocks:marketing-team-sections-with-filters", "node": "section/team", "variation": "directory", "job": "filterable team directory by department or location"}
+{"id": "shadcn-ui-blocks:marketing-team-sections-with-hover-cards", "node": "section/team", "variation": "hover-details", "job": "team grid revealing bio and links on hover"}
+{"id": "shadcn-ui-blocks:marketing-team-sections-with-large-images", "node": "section/team", "variation": "photo-grid", "job": "large full bleed team portraits with name and role"}
+{"id": "shadcn-ui-blocks:marketing-team-sections-with-skill-badges", "node": "section/team", "variation": "card-grid", "job": "team cards listing skill and tool badges"}
+{"id": "shadcn-ui-blocks:marketing-team-sections-with-testimonials", "node": "section/team", "variation": "card-grid", "job": "team profiles paired with short quotes"}
+{"id": "shadcn-ui-blocks:marketing-testimonials-base", "node": "section/testimonials", "variation": "big-quote", "job": "single customer quote with name, role and avatar"}
+{"id": "shadcn-ui-blocks:marketing-testimonials-big-image", "node": "section/testimonials", "variation": null, "job": "testimonial beside a large customer photo", "edge": "quote-with-large-image"}
+{"id": "shadcn-ui-blocks:marketing-testimonials-cards", "node": "section/testimonials", "variation": "card-grid", "job": "grid of testimonial cards with quote and avatar"}
+{"id": "shadcn-ui-blocks:marketing-testimonials-cards-with-stats", "node": "section/testimonials", "variation": "card-grid", "job": "testimonial cards joined by a row of metrics"}
+{"id": "shadcn-ui-blocks:marketing-testimonials-customer-story-showcase", "node": "section/testimonials", "variation": null, "job": "featured customer story with quote, logo and result", "edge": "customer-story-showcase"}
+{"id": "shadcn-ui-blocks:marketing-testimonials-mini-with-dividers-in-grid", "node": "section/testimonials", "variation": "card-grid", "job": "compact testimonials in a divided grid"}
+{"id": "shadcn-ui-blocks:marketing-testimonials-short-review-with-logo-and-stars", "node": "section/testimonials", "variation": "ratings", "job": "brief review with star rating and company logo"}
+{"id": "shadcn-ui-blocks:marketing-testimonials-simple-center-aligned-with-logo", "node": "section/testimonials", "variation": "big-quote", "job": "centered single quote topped with company logo"}
+{"id": "shadcn-ui-blocks:marketing-testimonials-small-image", "node": "section/testimonials", "variation": "big-quote", "job": "testimonial with small avatar beside a concise quote"}
+{"id": "shadcn-ui-blocks:marketing-testimonials-with-stats", "node": "section/testimonials", "variation": null, "job": "testimonial section blended with key metrics", "edge": "testimonial-with-stats"}
+{"id": "shadcn-ui-blocks:portfolio-portfolio-about-and-skills-about-me", "node": "section/about", "variation": "story-photo", "job": "portrait with short bio, role and contact links"}
+{"id": "shadcn-ui-blocks:portfolio-portfolio-about-and-skills-education-certifications", "node": "section/about", "variation": null, "job": "list of degrees and certifications with dates", "edge": "credentials-list"}
+{"id": "shadcn-ui-blocks:portfolio-portfolio-about-and-skills-resume-download", "node": "section/cta", "variation": null, "job": "compact call to action downloading a resume", "edge": "resume-download"}
+{"id": "shadcn-ui-blocks:portfolio-portfolio-about-and-skills-skills-display", "node": "section/about", "variation": null, "job": "grid of skill badges grouped by area", "edge": "skills-display"}
+{"id": "shadcn-ui-blocks:portfolio-portfolio-about-and-skills-timeline-category-skills", "node": "section/about", "variation": "timeline", "job": "vertical timeline of roles with tagged skills"}
+{"id": "shadcn-ui-blocks:portfolio-portfolio-awards-and-recognition-awards-timeline", "node": "section/about", "variation": "timeline", "job": "vertical timeline of awards by year"}
+{"id": "shadcn-ui-blocks:portfolio-portfolio-awards-and-recognition-badge-or-icon-grid", "node": "section/logos", "variation": "grid", "job": "grid of award badges with short captions"}
+{"id": "shadcn-ui-blocks:portfolio-portfolio-awards-and-recognition-carousel-of-certifications", "node": "section/logos", "variation": "carousel", "job": "carousel cycling through certification logos"}
+{"id": "shadcn-ui-blocks:portfolio-portfolio-awards-and-recognition-featured-award-highlight", "node": "section/about", "variation": null, "job": "spotlight block for one major award", "edge": "featured-award"}
+{"id": "shadcn-ui-blocks:portfolio-portfolio-awards-and-recognition-quote-award-combo", "node": "section/testimonials", "variation": null, "job": "quote paired with an award badge", "edge": "quote-with-award"}
+{"id": "shadcn-ui-blocks:portfolio-portfolio-blog-writing-and-previews-featured-article-list", "node": "section/blog", "variation": "list", "job": "featured article leading a list of posts"}
+{"id": "shadcn-ui-blocks:portfolio-portfolio-blog-writing-and-previews-grid-blog-cards", "node": "section/blog", "variation": "news-grid", "job": "responsive grid of blog cards with covers"}
+{"id": "shadcn-ui-blocks:portfolio-portfolio-blog-writing-and-previews-horizontal-blog-carousel", "node": "section/blog", "variation": "featured-carousel", "job": "horizontal carousel of recent blog cards"}
+{"id": "shadcn-ui-blocks:portfolio-portfolio-blog-writing-and-previews-masonry-layout-articles", "node": "section/blog", "variation": null, "job": "masonry grid of article cards with varied heights", "edge": "masonry-posts"}
+{"id": "shadcn-ui-blocks:portfolio-portfolio-blog-writing-and-previews-minimal-list-dates", "node": "section/blog", "variation": "list", "job": "plain list of post titles with dates"}
+{"id": "shadcn-ui-blocks:portfolio-portfolio-case-studies-accordion-expandable-case-studies", "node": "section/about", "variation": null, "job": "accordion expanding each case study story", "edge": "case-study-accordion"}
+{"id": "shadcn-ui-blocks:portfolio-portfolio-case-studies-grid-case-study-previews", "node": "section/showcase", "variation": "grid", "job": "grid of case study cards with thumbnail and summary"}
+{"id": "shadcn-ui-blocks:portfolio-portfolio-case-studies-large-visual-focus-case-study", "node": "section/about", "variation": "case-study", "job": "case study built around one large hero image"}
+{"id": "shadcn-ui-blocks:portfolio-portfolio-case-studies-side-by-side-image-story", "node": "section/about", "variation": "split-images", "job": "project image beside its written story"}
+{"id": "shadcn-ui-blocks:portfolio-portfolio-case-studies-timeline-style-case-study", "node": "section/about", "variation": "timeline", "job": "timeline mapping a project from brief to outcome"}
+{"id": "shadcn-ui-blocks:portfolio-portfolio-contact-sections-classic-contact-form", "node": "section/contact", "variation": "form", "job": "contact form with name, email and message"}
+{"id": "shadcn-ui-blocks:portfolio-portfolio-contact-sections-map-with-contact-info", "node": "section/contact", "variation": null, "job": "embedded map beside address and contact details", "edge": "map-with-contact-info"}
+{"id": "shadcn-ui-blocks:portfolio-portfolio-contact-sections-minimal-form-with-social", "node": "section/contact", "variation": "form", "job": "compact contact form beside social media icons"}
+{"id": "shadcn-ui-blocks:portfolio-portfolio-contact-sections-popup-trigger-contact", "node": "component/dialog", "variation": "form-dialog", "job": "button opening the contact form in a modal"}
+{"id": "shadcn-ui-blocks:portfolio-portfolio-contact-sections-split-layout", "node": "section/contact", "variation": "split", "job": "two column section with intro copy and contact form"}
+{"id": "shadcn-ui-blocks:portfolio-portfolio-core-services-overview-accordion-services", "node": "section/features", "variation": "expandable", "job": "accordion listing each service as an expandable row"}
+{"id": "shadcn-ui-blocks:portfolio-portfolio-core-services-overview-icon-list-overview", "node": "section/features", "variation": "icon-grid", "job": "list pairing each service icon with a title"}
+{"id": "shadcn-ui-blocks:portfolio-portfolio-core-services-overview-numbered-process-style-services", "node": "section/how", "variation": "numbered-steps", "job": "numbered sequence framing services as ordered steps"}
+{"id": "shadcn-ui-blocks:portfolio-portfolio-core-services-overview-service-cards-grid", "node": "section/features", "variation": "card-grid", "job": "grid of service cards with icon and description"}
+{"id": "shadcn-ui-blocks:portfolio-portfolio-core-services-overview-split-layout-feature", "node": "section/features", "variation": "split-text-image", "job": "split section spotlighting one service with an image"}
+{"id": "shadcn-ui-blocks:portfolio-portfolio-cta-banner-full-width-bold-banner", "node": "section/cta", "variation": "full-bleed", "job": "wide banner with large heading and one button"}
+{"id": "shadcn-ui-blocks:portfolio-portfolio-cta-banner-inline-cta", "node": "section/cta", "variation": null, "job": "slim call to action inside page content", "edge": "inline-cta"}
+{"id": "shadcn-ui-blocks:portfolio-portfolio-cta-banner-personal-photo-cta", "node": "section/cta", "variation": "split-image", "job": "banner pairing portrait with pitch and button"}
+{"id": "shadcn-ui-blocks:portfolio-portfolio-cta-banner-split-cta", "node": "section/cta", "variation": null, "job": "two column banner with message and action button", "edge": "split-cta"}
+{"id": "shadcn-ui-blocks:portfolio-portfolio-cta-banner-sticky-cta", "node": "section/cta", "variation": null, "job": "banner fixed on scroll keeping the button visible", "edge": "sticky-cta"}
+{"id": "shadcn-ui-blocks:portfolio-portfolio-email-signup-and-newsletter-card-style-signup", "node": "section/contact", "variation": null, "job": "bordered card inviting visitors to join the list", "edge": "card-signup"}
+{"id": "shadcn-ui-blocks:portfolio-portfolio-email-signup-and-newsletter-footer-integrated-signup", "node": "section/footer", "variation": "newsletter", "job": "email signup field built into the site footer"}
+{"id": "shadcn-ui-blocks:portfolio-portfolio-email-signup-and-newsletter-popup-signup-form", "node": "component/dialog", "variation": "form-dialog", "job": "modal surfacing an email field over the page"}
+{"id": "shadcn-ui-blocks:portfolio-portfolio-email-signup-and-newsletter-simple-inline-form", "node": "section/contact", "variation": null, "job": "single row email input with subscribe button", "edge": "inline-signup-form"}
+{"id": "shadcn-ui-blocks:portfolio-portfolio-email-signup-and-newsletter-split-section-signup", "node": "section/contact", "variation": "split", "job": "two column section with copy beside the signup form"}
+{"id": "shadcn-ui-blocks:portfolio-portfolio-event-speaking-and-workshops-event-cards-grid", "node": "section/blog", "variation": "news-grid", "job": "grid of event cards with title, date, venue"}
+{"id": "shadcn-ui-blocks:portfolio-portfolio-event-speaking-and-workshops-featured-talk", "node": "section/blog", "variation": "post-layout", "job": "spotlight section for one signature talk"}
+{"id": "shadcn-ui-blocks:portfolio-portfolio-event-speaking-and-workshops-featured-talk-highlight", "node": "section/blog", "variation": null, "job": "bold featured talk layout with imagery and facts", "edge": "featured-talk-highlight"}
+{"id": "shadcn-ui-blocks:portfolio-portfolio-event-speaking-and-workshops-timeline-speaking-engagements", "node": "component/timeline", "variation": "vertical-timeline", "job": "vertical timeline of talks in date order"}
+{"id": "shadcn-ui-blocks:portfolio-portfolio-event-speaking-and-workshops-video-recording-embed", "node": "component/player", "variation": "video-player", "job": "embedded recording of a talk with context"}
+{"id": "shadcn-ui-blocks:portfolio-portfolio-featured-work-highlights-carousel-of-featured-projects", "node": "section/showcase", "variation": "carousel", "job": "carousel sliding through featured projects"}
+{"id": "shadcn-ui-blocks:portfolio-portfolio-featured-work-highlights-interactive-hover-reveal", "node": "section/showcase", "variation": "grid", "job": "project thumbnails revealing detail on hover"}
+{"id": "shadcn-ui-blocks:portfolio-portfolio-featured-work-highlights-large-hero-project-display", "node": "section/showcase", "variation": null, "job": "full width hero framing one flagship project", "edge": "project-hero"}
+{"id": "shadcn-ui-blocks:portfolio-portfolio-featured-work-highlights-split-image-and-details-layout", "node": "section/showcase", "variation": null, "job": "project screenshot beside details and a link", "edge": "split-project-layout"}
+{"id": "shadcn-ui-blocks:portfolio-portfolio-featured-work-highlights-stacked-highlight-cards", "node": "section/showcase", "variation": null, "job": "vertical stack of project highlight cards", "edge": "stacked-project-cards"}
+{"id": "shadcn-ui-blocks:portfolio-portfolio-hero-showcases-carousel-slider", "node": "section/hero", "variation": null, "job": "hero sliding through images behind a headline", "edge": "carousel-hero"}
+{"id": "shadcn-ui-blocks:portfolio-portfolio-hero-showcases-floating-elements", "node": "section/hero", "variation": null, "job": "hero with shapes drifting around a centered headline", "edge": "floating-elements"}
+{"id": "shadcn-ui-blocks:portfolio-portfolio-hero-showcases-full-screen-centered", "node": "section/hero", "variation": "fullscreen", "job": "full screen hero with centered name and tagline"}
+{"id": "shadcn-ui-blocks:portfolio-portfolio-hero-showcases-minimalist-cta", "node": "section/hero", "variation": "text-only", "job": "spare hero with a headline and one action button"}
+{"id": "shadcn-ui-blocks:portfolio-portfolio-hero-showcases-split-layout", "node": "section/hero", "variation": "split-image", "job": "hero split into text and image columns"}
+{"id": "shadcn-ui-blocks:portfolio-portfolio-mission-and-values-grid-of-core-values", "node": "section/about", "variation": "mission-values", "job": "grid of cards naming each core value"}
+{"id": "shadcn-ui-blocks:portfolio-portfolio-mission-and-values-quote-values-combo", "node": "section/about", "variation": null, "job": "featured quote paired with supporting values", "edge": "quote-values"}
+{"id": "shadcn-ui-blocks:portfolio-portfolio-mission-and-values-story-first-narrative", "node": "section/about", "variation": null, "job": "reading focused section telling the origin story", "edge": "story-narrative"}
+{"id": "shadcn-ui-blocks:portfolio-portfolio-mission-and-values-three-pillars-layout", "node": "section/about", "variation": "mission-values", "job": "three columns each presenting one guiding pillar"}
+{"id": "shadcn-ui-blocks:portfolio-portfolio-mission-and-values-vertical-step-timeline", "node": "section/about", "variation": "timeline", "job": "vertical timeline marking milestones and values"}
+{"id": "shadcn-ui-blocks:portfolio-portfolio-process-and-approach-cycle-diagram", "node": "section/how", "variation": null, "job": "circular diagram of repeating process stages", "edge": "cycle-diagram"}
+{"id": "shadcn-ui-blocks:portfolio-portfolio-process-and-approach-horizontal-stepper", "node": "section/how", "variation": "numbered-steps", "job": "horizontal row of numbered process steps"}
+{"id": "shadcn-ui-blocks:portfolio-portfolio-process-and-approach-process-principles", "node": "section/how", "variation": null, "job": "list of principles guiding how each project runs", "edge": "process-principles"}
+{"id": "shadcn-ui-blocks:portfolio-portfolio-process-and-approach-stacked-cards", "node": "section/how", "variation": null, "job": "vertical stack of cards describing process phases", "edge": "stacked-phase-cards"}
+{"id": "shadcn-ui-blocks:portfolio-portfolio-process-and-approach-vertical-timeline", "node": "component/timeline", "variation": "vertical-timeline", "job": "vertical timeline mapping each process phase"}
+{"id": "shadcn-ui-blocks:portfolio-portfolio-project-displays-filterable-grid", "node": "section/showcase", "variation": null, "job": "project grid filterable by category tags", "edge": "filterable-grid"}
+{"id": "shadcn-ui-blocks:portfolio-portfolio-project-displays-quote-stack", "node": "section/testimonials", "variation": null, "job": "stacked client quotes paired with project names", "edge": "quote-stack"}
+{"id": "shadcn-ui-blocks:portfolio-portfolio-project-displays-standard-grid", "node": "section/showcase", "variation": "grid", "job": "even grid of project cards with captions"}
+{"id": "shadcn-ui-blocks:portfolio-portfolio-project-displays-stats-cards", "node": "section/stats", "variation": "kpi-card", "job": "row of cards calling out key numbers"}
+{"id": "shadcn-ui-blocks:portfolio-portfolio-project-displays-zigzag-layout", "node": "section/showcase", "variation": null, "job": "alternating rows flipping project image and text", "edge": "zigzag-layout"}
+{"id": "shadcn-ui-blocks:portfolio-portfolio-quote-and-feedback-base", "node": "section/testimonials", "variation": "big-quote", "job": "clean quote block with author name and role"}
+{"id": "shadcn-ui-blocks:portfolio-portfolio-quote-and-feedback-grid-of-quotes", "node": "section/testimonials", "variation": "card-grid", "job": "grid arranging several short client quotes"}
+{"id": "shadcn-ui-blocks:portfolio-portfolio-quote-and-feedback-quote-with-project-context", "node": "section/testimonials", "variation": null, "job": "testimonial paired with the project it praises", "edge": "quote-with-project"}
+{"id": "shadcn-ui-blocks:portfolio-portfolio-quote-and-feedback-scrollable-quote-carousel", "node": "section/testimonials", "variation": "carousel", "job": "carousel sliding through client quotes one at a time"}
+{"id": "shadcn-ui-blocks:portfolio-portfolio-quote-and-feedback-single-quote-highlight", "node": "section/testimonials", "variation": "big-quote", "job": "Large pull quote with author name and title"}
+{"id": "shadcn-ui-blocks:portfolio-portfolio-resource-download-sections-featured-resource-card", "node": "component/card", "variation": "product-card", "job": "Card spotlighting one downloadable resource with cover and button"}
+{"id": "shadcn-ui-blocks:portfolio-portfolio-resource-download-sections-gated-download", "node": "section/cta", "variation": "email-form", "job": "Download offer gated behind a short email capture form"}
+{"id": "shadcn-ui-blocks:portfolio-portfolio-resource-download-sections-inline-resource-callout", "node": "component/alert", "variation": "callout", "job": "Inline callout pointing readers to a related download"}
+{"id": "shadcn-ui-blocks:portfolio-portfolio-resource-download-sections-minimalist-resource-list", "node": "component/list", "variation": "standard-list", "job": "Plain vertical list of resources with download links"}
+{"id": "shadcn-ui-blocks:portfolio-portfolio-resource-download-sections-resources-grid", "node": "section/features", "variation": "card-grid", "job": "Grid of resource cards with icon, title and download"}
+{"id": "shadcn-ui-blocks:portfolio-portfolio-resume-and-downloads-branded-document-icons-grid", "node": "section/features", "variation": "icon-grid", "job": "Grid of labelled document icons linking to files"}
+{"id": "shadcn-ui-blocks:portfolio-portfolio-resume-and-downloads-resume-cover-letter-combo", "node": "section/cta", "variation": "card", "job": "Paired offer to download resume and cover letter together"}
+{"id": "shadcn-ui-blocks:portfolio-portfolio-resume-and-downloads-resume-with-short-bio-cta", "node": "section/cta", "variation": "split-image", "job": "Short bio beside a download resume call to action"}
+{"id": "shadcn-ui-blocks:portfolio-portfolio-resume-and-downloads-simple-download-button", "node": "atom/button", "variation": "primary", "job": "Single button that downloads the resume"}
+{"id": "shadcn-ui-blocks:portfolio-portfolio-resume-and-downloads-split-layout", "node": "section/cta", "variation": "split-image", "job": "Intro beside resume downloads in two columns"}
+{"id": "shadcn-ui-blocks:portfolio-portfolio-social-media-embeds-highlighted-post", "node": "component/card", "variation": "spotlight", "job": "Featured social post card with avatar and engagement counts"}
+{"id": "shadcn-ui-blocks:portfolio-portfolio-social-media-embeds-instagram-grid", "node": "component/gallery", "variation": "grid-gallery", "job": "Photo grid mirroring an Instagram profile feed"}
+{"id": "shadcn-ui-blocks:portfolio-portfolio-social-media-embeds-social-icons-feed", "node": "atom/link", "variation": "social", "job": "Row of platform icons linking to every profile"}
+{"id": "shadcn-ui-blocks:portfolio-portfolio-social-media-embeds-tweet-carousel", "node": "component/carousel", "variation": "swipeable", "job": "Swipeable carousel of tweet cards with authors"}
+{"id": "shadcn-ui-blocks:portfolio-portfolio-social-media-embeds-youtube-video-strip", "node": "component/carousel", "variation": "cards-carousel", "job": "Horizontal strip of YouTube video thumbnail cards"}
+{"id": "shadcn-ui-blocks:portfolio-portfolio-why-work-with-me-before-after-comparison", "node": "component/compare", "variation": "before-after", "job": "Draggable divider comparing a project before and after"}
+{"id": "shadcn-ui-blocks:portfolio-portfolio-why-work-with-me-bulleted-value-proposition", "node": "section/features", "variation": "icon-grid", "job": "Icon-led list of the value points you deliver"}
+{"id": "shadcn-ui-blocks:portfolio-portfolio-why-work-with-me-client-oriented-testimonials", "node": "section/testimonials", "variation": "card-grid", "job": "Stacked testimonial cards framed around client outcomes"}
+{"id": "shadcn-ui-blocks:portfolio-portfolio-why-work-with-me-storytelling-approach", "node": "section/how", "variation": "numbered-steps", "job": "Narrative walking through your process in ordered steps"}
+{"id": "shadcn-ui-blocks:portfolio-portfolio-why-work-with-me-why-me-vs-competition", "node": "section/comparison", "variation": "us-vs-them", "job": "Two column table contrasting your offer with alternatives"}
+{"id": "shadcn-ui-blocks:portfolio-portfolio-work-experience-cards-accordion-experience-cards", "node": "component/accordion", "variation": "card-style", "job": "Collapsible role cards revealing duties and achievements"}
+{"id": "shadcn-ui-blocks:portfolio-portfolio-work-experience-cards-card-with-project-showcase", "node": "component/card", "variation": "standard-card", "job": "Role card paired with a shipped project thumbnail"}
+{"id": "shadcn-ui-blocks:portfolio-portfolio-work-experience-cards-experience-quote-combo", "node": "component/card", "variation": "standard-card", "job": "Role card joined with a client or manager quote"}
+{"id": "shadcn-ui-blocks:portfolio-portfolio-work-experience-cards-logo-first-card-layout", "node": "component/card", "variation": "standard-card", "job": "Role card leading with the employer logo"}
+{"id": "shadcn-ui-blocks:portfolio-portfolio-work-experience-cards-minimalist-role-highlight", "node": "component/card", "variation": "standard-card", "job": "Pared back card with title, company and dates"}

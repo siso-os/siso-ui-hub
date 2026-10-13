@@ -1,0 +1,94 @@
+#!/usr/bin/env python3
+"""libmap-check: gate one mapper's output against its chunk and the SISO skeleton.
+
+  libmap-check FILE_IN FILE_OUT
+
+FILE_IN is a /tmp/lm/in-<LIB>-<n>.json chunk from bin/libmap-prep; FILE_OUT is the .jsonl the mapper wrote for it,
+one part per line: {"id": …, "node": …, "variation": …, "job": …[, "edge": …]}. It fails (exit 1, every problem
+printed) unless
+  - every input id appears exactly once and no id is extra;
+  - each line's keys are a subset of {id,node,variation,job,edge} and include id,node,variation,job;
+  - node is null or a node key of catalogue/schema/variations.json;
+  - variation is null or one of that node's variation ids;
+  - a null node has a null (or absent) variation and edge;
+  - job is a string under 14 words;
+  - edge, when present, is a short kebab-case string.
+Prints "ok N parts" when the chunk passes.
+"""
+import json, os, re, sys
+
+HUB = os.path.dirname(os.path.dirname(os.path.realpath(__file__)))  # the siso-ui-hub repo root
+VAR = os.path.join(HUB, "catalogue", "schema", "variations.json")
+KEYS = {"id", "node", "variation", "job", "edge"}
+NEED = {"id", "node", "variation", "job"}
+KEBAB = re.compile(r"^[a-z0-9]+(?:-[a-z0-9]+)*$")
+EDGE_MAX = 40  # chars; "short"
+JOB_MAX_WORDS = 13  # under 14
+
+if len(sys.argv) != 3:
+    print(__doc__)
+    sys.exit(64)
+fin, fout = sys.argv[1], sys.argv[2]
+
+nodes = {k: {v.get("id") for v in n.get("variations", [])} for k, n in json.load(open(VAR)).items()}
+want = [p.get("id") for p in json.load(open(fin))]
+
+bad = []
+seen = {}
+rows = []
+for i, line in enumerate(open(fout), 1):
+    line = line.strip()
+    if not line:
+        continue
+    try:
+        r = json.loads(line)
+    except ValueError as e:
+        bad.append(f"line {i}: not JSON ({e})")
+        continue
+    if not isinstance(r, dict):
+        bad.append(f"line {i}: not an object")
+        continue
+    rows.append((i, r))
+    pid = r.get("id")
+    if isinstance(pid, str):
+        seen[pid] = seen.get(pid, 0) + 1
+
+for pid in want:
+    if pid not in seen:
+        bad.append(f"missing id: {pid}")
+for pid, n in seen.items():
+    if n > 1:
+        bad.append(f"id {pid} appears {n} times")
+for pid in seen:
+    if pid not in want:
+        bad.append(f"extra id: {pid}")
+
+for i, r in rows:
+    pid = r.get("id", f"<line {i}>")
+    extra = set(r) - KEYS
+    if extra:
+        bad.append(f"{pid}: unknown keys {', '.join(sorted(extra))}")
+    missing = NEED - set(r)
+    if missing:
+        bad.append(f"{pid}: missing keys {', '.join(sorted(missing))}")
+        continue
+    node, var, job, edge = r.get("node"), r.get("variation"), r.get("job"), r.get("edge")
+    if node is not None and node not in nodes:
+        bad.append(f"{pid}: bad node {node!r}")
+    if node is None:
+        if var is not None:
+            bad.append(f"{pid}: null node with variation {var!r}")
+        if edge is not None:
+            bad.append(f"{pid}: null node with edge {edge!r}")
+    elif var is not None and var not in nodes.get(node, ()):
+        bad.append(f"{pid}: variation {var!r} is not one of {node}")
+    if not isinstance(job, str) or len(job.split()) > JOB_MAX_WORDS:
+        bad.append(f"{pid}: job must be a string under 14 words, got {job!r}")
+    if edge is not None and (not isinstance(edge, str) or len(edge) > EDGE_MAX or not KEBAB.match(edge)):
+        bad.append(f"{pid}: edge must be a short kebab-case string, got {edge!r}")
+
+if bad:
+    for b in bad:
+        print(b)
+    sys.exit(1)
+print(f"ok {len(rows)} parts")
