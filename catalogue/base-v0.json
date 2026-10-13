@@ -132,10 +132,23 @@
   "name": "Layout",
   "variation": "sticky-header",
   "vname": "Sticky and stacking",
-  "pick": null,
-  "pick_code": 0,
-  "also": [],
-  "dupes": 0
+  "pick": "gh-wmzy-haze-ui:anchor",
+  "pick_code": 1165,
+  "also": [
+   {
+    "id": "gh-tyrailleverett-nice-ui:feature-6",
+    "code": 12742
+   },
+   {
+    "id": "atroui:contextual-cta",
+    "code": 4291
+   }
+  ],
+  "dupes": 2,
+  "closer_look": [
+   "gh-tyrailleverett-nice-ui:feature-6",
+   "atroui:contextual-cta"
+  ]
  },
  {
   "node": "atom/layout",
@@ -795,20 +808,59 @@
   "name": "Icon",
   "variation": "brand-social",
   "vname": "Brand and social icons",
-  "pick": null,
-  "pick_code": 0,
-  "also": [],
-  "dupes": 0
+  "pick": "balick:social-icons",
+  "pick_code": 2271,
+  "also": [
+   {
+    "id": "gh-digitalnsw-nswds-ui:icon-brands",
+    "code": 7707
+   },
+   {
+    "id": "gh-arnaudvolp-shadcnship:social-icons",
+    "code": 48192
+   },
+   {
+    "id": "gh-ben-dev10-ndk:components-social-icons",
+    "code": 17043
+   },
+   {
+    "id": "gh-aryanbatras-100xsystems-design:social-icons",
+    "code": 12547
+   }
+  ],
+  "dupes": 4,
+  "closer_look": [
+   "gh-digitalnsw-nswds-ui:icon-brands",
+   "gh-arnaudvolp-shadcnship:social-icons",
+   "gh-ben-dev10-ndk:components-social-icons"
+  ]
  },
  {
   "node": "atom/icon",
   "name": "Icon",
   "variation": "file-type",
   "vname": "File type icons",
-  "pick": null,
-  "pick_code": 0,
-  "also": [],
-  "dupes": 0
+  "pick": "cult-ui:file-icons",
+  "pick_code": 20945,
+  "also": [
+   {
+    "id": "gh-miskibin-chat-components:file-icon",
+    "code": 25861
+   },
+   {
+    "id": "000h-cojeev:icon-file-type",
+    "code": 340
+   },
+   {
+    "id": "keyline:file-type",
+    "code": 861
+   },
+   {
+    "id": "hugeicons-animated-vue:file-type",
+    "code": 4294
+   }
+  ],
+  "dupes": 4
  },
  {
   "node": "atom/icon",
@@ -1506,10 +1558,31 @@
   "name": "Status dot",
   "variation": "bar",
   "vname": "Status bar",
-  "pick": null,
-  "pick_code": 0,
-  "also": [],
-  "dupes": 0
+  "pick": "balick:uptime-bar",
+  "pick_code": 2697,
+  "also": [
+   {
+    "id": "dashboardblocks:status",
+    "code": 9639
+   },
+   {
+    "id": "beui:status-bar",
+    "code": 52620
+   },
+   {
+    "id": "7ovr:status-3",
+    "code": 5343
+   },
+   {
+    "id": "amicro:uptime-chart",
+    "code": 3219
+   }
+  ],
+  "dupes": 4,
+  "closer_look": [
+   "dashboardblocks:status",
+   "beui:status-bar"
+  ]
  },
  {
   "node": "atom/status-dot",
@@ -2571,10 +2644,32 @@
   "name": "Loader and skeleton",
   "variation": "progress-bar",
   "vname": "Progress bar",
-  "pick": null,
-  "pick_code": 0,
-  "also": [],
-  "dupes": 0
+  "pick": "arc:progress",
+  "pick_code": 5349,
+  "also": [
+   {
+    "id": "shadcn-ui:progress",
+    "code": 1730
+   },
+   {
+    "id": "watermelon:labeled-progress-indicator",
+    "code": 2695
+   },
+   {
+    "id": "watermelon:labeled-progress-indicator-base",
+    "code": 2650
+   },
+   {
+    "id": "watermelon:progress",
+    "code": 2330
+   },
+   {
+    "id": "minidev:progress",
+    "code": 1922
+   }
+  ],
+  "dupes": 60,
+  "same_as": "atom/progress/linear"
  },
  {
   "node": "atom/loader",
@@ -5353,10 +5448,30 @@
   "name": "Table of contents",
   "variation": "sticky-sidebar",
   "vname": "Sticky sidebar",
-  "pick": null,
-  "pick_code": 0,
-  "also": [],
-  "dupes": 0
+  "pick": "7ovr:article-2",
+  "pick_code": 6317,
+  "also": [
+   {
+    "id": "gh-psc-imat-registry-unops:onu-sticky-toc",
+    "code": 2488
+   },
+   {
+    "id": "gh-sid9022-framekit-ui:reading-progress-toc",
+    "code": 6797
+   },
+   {
+    "id": "abui:toc",
+    "code": 19575
+   },
+   {
+    "id": "gh-codehagen-helpbase:help-center-toc",
+    "code": 3649
+   }
+  ],
+  "dupes": 4,
+  "closer_look": [
+   "abui:toc"
+  ]
  },
  {
   "node": "component/toc",
@@ -6963,10 +7078,26 @@
   "name": "Map",
   "variation": "route-map",
   "vname": "Route/directions",
-  "pick": null,
-  "pick_code": 0,
-  "also": [],
-  "dupes": 0
+  "pick": "assistant-ui:elements-geo-map",
+  "pick_code": 9793,
+  "also": [
+   {
+    "id": "assistant-ui:elements-map-answer",
+    "code": 4681
+   },
+   {
+    "id": "amap:amap",
+    "code": 41483
+   },
+   {
+    "id": "7ovr:location-1",
+    "code": 3104
+   }
+  ],
+  "dupes": 3,
+  "closer_look": [
+   "amap:amap"
+  ]
  },
  {
   "node": "component/map",
@@ -8054,10 +8185,30 @@
   "name": "Code block and diff",
   "variation": "split-view",
   "vname": "Split view",
-  "pick": null,
-  "pick_code": 0,
-  "also": [],
-  "dupes": 0
+  "pick": "magicui:code-comparison",
+  "pick_code": 6248,
+  "also": [
+   {
+    "id": "gh-matias-obezzi-uiness:code-comparison",
+    "code": 11888
+   },
+   {
+    "id": "elements:code-diff-viewer",
+    "code": 9368
+   },
+   {
+    "id": "gh-yousefkadah-react-animation-library:code-comparison",
+    "code": 6755
+   },
+   {
+    "id": "gh-b4r7x-diffgazer:diff-view",
+    "code": 20712
+   }
+  ],
+  "dupes": 4,
+  "closer_look": [
+   "gh-b4r7x-diffgazer:diff-view"
+  ]
  },
  {
   "node": "component/code",
@@ -9458,10 +9609,30 @@
   "name": "Lightbox",
   "variation": "thumbnail-viewer",
   "vname": "Thumbnail viewer",
-  "pick": null,
-  "pick_code": 0,
-  "also": [],
-  "dupes": 0
+  "pick": "beui:morphing-lightbox",
+  "pick_code": 31405,
+  "also": [
+   {
+    "id": "diklein:dk-media-viewer",
+    "code": 137282
+   },
+   {
+    "id": "gh-apix-js-shadix-ui:morph-image",
+    "code": 7899
+   },
+   {
+    "id": "gh-arunava-k-herald:media-viewer",
+    "code": 26950
+   },
+   {
+    "id": "assistant-ui:elements-image-gallery",
+    "code": 9113
+   }
+  ],
+  "dupes": 4,
+  "closer_look": [
+   "diklein:dk-media-viewer"
+  ]
  },
  {
   "node": "component/gallery",
@@ -9600,10 +9771,15 @@
   "name": "Gallery",
   "variation": "circular-gallery",
   "vname": "Circular gallery",
-  "pick": null,
-  "pick_code": 0,
-  "also": [],
-  "dupes": 0
+  "pick": "atelier:orbit-gallery",
+  "pick_code": 20783,
+  "also": [
+   {
+    "id": "000h-cojeev:orbit-images",
+    "code": 2969
+   }
+  ],
+  "dupes": 1
  },
  {
   "node": "component/carousel",
@@ -12782,10 +12958,19 @@
   "name": "How it works",
   "variation": "expandable",
   "vname": "Expandable steps",
-  "pick": null,
+  "pick": "catalogs:shadcnuiblocks/components-accordions-stepped-accordion",
   "pick_code": 0,
-  "also": [],
-  "dupes": 0
+  "also": [
+   {
+    "id": "catalogs:ibelick/steps-prompt-kit",
+    "code": 0
+   },
+   {
+    "id": "catalogs:keenthemes/c-accordion-11/base-nova",
+    "code": 0
+   }
+  ],
+  "dupes": 2
  },
  {
   "node": "section/how",
@@ -12932,20 +13117,50 @@
   "name": "Showcase",
   "variation": "collage",
   "vname": "Collage",
-  "pick": null,
-  "pick_code": 0,
-  "also": [],
-  "dupes": 0
+  "pick": "gh-marica05gabriel-tourism-ui:gallery-editorial-collage",
+  "pick_code": 4944,
+  "also": [
+   {
+    "id": "gh-sid9022-framekit-ui:scatter-desk-collage",
+    "code": 12428
+   },
+   {
+    "id": "shadcn-ui-blocks:marketing-gallery-polaroid-gallery",
+    "code": 6449
+   },
+   {
+    "id": "gh-ridh21-frisson:polaroid-gallery",
+    "code": 17364
+   },
+   {
+    "id": "gh-wuchendi-ikui:image-grid",
+    "code": 5674
+   }
+  ],
+  "dupes": 4,
+  "closer_look": [
+   "gh-sid9022-framekit-ui:scatter-desk-collage",
+   "gh-ridh21-frisson:polaroid-gallery"
+  ]
  },
  {
   "node": "section/showcase",
   "name": "Showcase",
   "variation": "lightbox",
   "vname": "Lightbox on click",
-  "pick": null,
-  "pick_code": 0,
-  "also": [],
-  "dupes": 0
+  "pick": "minidev:image-lightbox",
+  "pick_code": 1409,
+  "also": [
+   {
+    "id": "gh-blinks44-moduix:lightbox",
+    "code": 27720
+   }
+  ],
+  "dupes": 1,
+  "closer_look": [
+   "gh-blinks44-moduix:lightbox"
+  ],
+  "same_as": "component/lightbox/standard-lightbox"
  },
  {
   "node": "section/showcase",
@@ -13386,10 +13601,32 @@
   "name": "Testimonials",
   "variation": "logos",
   "vname": "Logo row with quote",
-  "pick": null,
-  "pick_code": 0,
-  "also": [],
-  "dupes": 0
+  "pick": "gh-lema-ufpb-lema-design-system:ds-logo-cloud-quotes",
+  "pick_code": 1314,
+  "also": [
+   {
+    "id": "shadcn-ui-blocks:marketing-testimonials-simple-center-aligned-with-logo",
+    "code": 9088
+   },
+   {
+    "id": "shadcn-ui-blocks:marketing-about-sections-press-recognitions",
+    "code": 30880
+   },
+   {
+    "id": "hirael:logo-cloud-03",
+    "code": 3128
+   },
+   {
+    "id": "minidev:social-proof-wall",
+    "code": 5842
+   }
+  ],
+  "dupes": 4,
+  "closer_look": [
+   "shadcn-ui-blocks:marketing-testimonials-simple-center-aligned-with-logo",
+   "shadcn-ui-blocks:marketing-about-sections-press-recognitions",
+   "minidev:social-proof-wall"
+  ]
  },
  {
   "node": "section/testimonials",
@@ -13705,10 +13942,27 @@
   "name": "Pricing",
   "variation": "comparison-toggle",
   "vname": "Plan comparison toggle",
-  "pick": null,
-  "pick_code": 0,
-  "also": [],
-  "dupes": 0
+  "pick": "7ovr:comparison-1",
+  "pick_code": 8966,
+  "also": [
+   {
+    "id": "gh-tyrailleverett-nice-ui:pricing-2",
+    "code": 11428
+   },
+   {
+    "id": "gh-craftwell-ai-mantis:plan-matrix",
+    "code": 7644
+   },
+   {
+    "id": "gh-mreimitz-elabs-components:marketing-pricing-02",
+    "code": 16477
+   },
+   {
+    "id": "gh-mreimitz-elabs-components:pricing-page",
+    "code": 1433
+   }
+  ],
+  "dupes": 4
  },
  {
   "node": "section/comparison",
@@ -14441,10 +14695,31 @@
   "name": "About and story",
   "variation": "team-intro",
   "vname": "Team intro",
-  "pick": null,
-  "pick_code": 0,
-  "also": [],
-  "dupes": 0
+  "pick": "shadcnblocks:team1",
+  "pick_code": 2771,
+  "also": [
+   {
+    "id": "shadcn-ui-blocks:marketing-about-sections-team-grid",
+    "code": 10559
+   },
+   {
+    "id": "shadcnblocks:team2",
+    "code": 4536
+   },
+   {
+    "id": "hirael:team-01",
+    "code": 12607
+   },
+   {
+    "id": "facade:team",
+    "code": 5693
+   }
+  ],
+  "dupes": 4,
+  "closer_look": [
+   "shadcn-ui-blocks:marketing-about-sections-team-grid",
+   "hirael:team-01"
+  ]
  },
  {
   "node": "section/blog",
@@ -15077,10 +15352,30 @@
   "name": "Contact and newsletter",
   "variation": "tabs",
   "vname": "Multiple options",
-  "pick": null,
-  "pick_code": 0,
-  "also": [],
-  "dupes": 0
+  "pick": "payload-components:contact-routing-form",
+  "pick_code": 16226,
+  "also": [
+   {
+    "id": "akoder:contact-channels",
+    "code": 7323
+   },
+   {
+    "id": "gh-kuratlielia-arc-library:contact-section",
+    "code": 97862
+   },
+   {
+    "id": "balick:contact-01",
+    "code": 3814
+   },
+   {
+    "id": "hirael:contact-04",
+    "code": 21941
+   }
+  ],
+  "dupes": 4,
+  "closer_look": [
+   "gh-kuratlielia-arc-library:contact-section"
+  ]
  },
  {
   "node": "section/contact",
@@ -15406,10 +15701,30 @@
   "name": "App shell",
   "variation": "fullscreen",
   "vname": "Fullscreen",
-  "pick": null,
-  "pick_code": 0,
-  "also": [],
-  "dupes": 0
+  "pick": "gh-buildqube-papyra:pdf-viewer-layout",
+  "pick_code": 10313,
+  "also": [
+   {
+    "id": "gh-cambridgemonorail-wallrun:signage-container",
+    "code": 4796
+   },
+   {
+    "id": "cult-ui:expandable-screen",
+    "code": 5652
+   },
+   {
+    "id": "agents-ui:agent-session-view-01",
+    "code": 22322
+   },
+   {
+    "id": "gh-cambridgemonorail-wallrun:menu-board",
+    "code": 8697
+   }
+  ],
+  "dupes": 4,
+  "closer_look": [
+   "agents-ui:agent-session-view-01"
+  ]
  },
  {
   "node": "section/shell",
@@ -15463,10 +15778,31 @@
   "name": "App shell",
   "variation": "shell-drill",
   "vname": "Drill-down nav",
-  "pick": null,
-  "pick_code": 0,
-  "also": [],
-  "dupes": 0
+  "pick": "dgit:sidebar-layout",
+  "pick_code": 15090,
+  "also": [
+   {
+    "id": "hirael:app-shell-06",
+    "code": 10735
+   },
+   {
+    "id": "gh-blamy-ui:apple-settings",
+    "code": 76002
+   },
+   {
+    "id": "gh-digitalnsw-nswds-ui:push-menu",
+    "code": 36220
+   },
+   {
+    "id": "ns-ui:drill-down-spines",
+    "code": 15562
+   }
+  ],
+  "dupes": 4,
+  "closer_look": [
+   "gh-blamy-ui:apple-settings",
+   "gh-digitalnsw-nswds-ui:push-menu"
+  ]
  },
  {
   "node": "section/shell",
@@ -15496,10 +15832,28 @@
   "name": "App shell",
   "variation": "shell-mobile-tabs",
   "vname": "Mobile tabs",
-  "pick": null,
-  "pick_code": 0,
-  "also": [],
-  "dupes": 0
+  "pick": "gh-cascivo-cascivo:dock",
+  "pick_code": 8296,
+  "also": [
+   {
+    "id": "gh-blamy-ui:tab-bar",
+    "code": 1176
+   },
+   {
+    "id": "gh-arunava-k-herald:mobile-tab-bar",
+    "code": 8170
+   },
+   {
+    "id": "gh-intellihelper-intellihelper-ui:bottom-navigation",
+    "code": 5010
+   },
+   {
+    "id": "gh-lucasbassetti-godui:tab-bar",
+    "code": 4131
+   }
+  ],
+  "dupes": 4,
+  "same_as": "component/tabs/bottom-tabs"
  },
  {
   "node": "section/shell",
@@ -15834,10 +16188,32 @@
   "name": "Top bar",
   "variation": "responsive",
   "vname": "Responsive",
-  "pick": null,
-  "pick_code": 0,
-  "also": [],
-  "dupes": 0
+  "pick": "gh-utk2602-chadcn-ui:header",
+  "pick_code": 830,
+  "also": [
+   {
+    "id": "reactframe:header-simple",
+    "code": 9380
+   },
+   {
+    "id": "efferd:header-2",
+    "code": 3297
+   },
+   {
+    "id": "gh-cascivo-cascivo:shell-header",
+    "code": 25066
+   },
+   {
+    "id": "launchui:navbar",
+    "code": 26513
+   }
+  ],
+  "dupes": 4,
+  "closer_look": [
+   "reactframe:header-simple",
+   "gh-cascivo-cascivo:shell-header",
+   "launchui:navbar"
+  ]
  },
  {
   "node": "section/page-header",
@@ -16123,10 +16499,30 @@
   "name": "KPI row",
   "variation": "bento",
   "vname": "Bento grid",
-  "pick": null,
-  "pick_code": 0,
-  "also": [],
-  "dupes": 0
+  "pick": "ui-layouts:stats-bento",
+  "pick_code": 4481,
+  "also": [
+   {
+    "id": "uiception:stats-section-v6",
+    "code": 9562
+   },
+   {
+    "id": "gh-tyrailleverett-nice-ui:bento-4",
+    "code": 3368
+   },
+   {
+    "id": "gh-arnaudvolp-shadcnship:stat-03",
+    "code": 3974
+   },
+   {
+    "id": "gh-lema-ufpb-lema-design-system:ds-bento-metrics",
+    "code": 1743
+   }
+  ],
+  "dupes": 4,
+  "closer_look": [
+   "uiception:stats-section-v6"
+  ]
  },
  {
   "node": "section/kpis",
@@ -16309,10 +16705,32 @@
   "name": "Data view (table, list, board, calendar)",
   "variation": "expandable",
   "vname": "Expandable rows",
-  "pick": null,
-  "pick_code": 0,
-  "also": [],
-  "dupes": 0
+  "pick": "flx:table-19",
+  "pick_code": 3646,
+  "also": [
+   {
+    "id": "gh-coros-hq-shadcn-table-library:tree-table",
+    "code": 7692
+   },
+   {
+    "id": "stealth:expandable-rows",
+    "code": 14475
+   },
+   {
+    "id": "reactframe:tree-table",
+    "code": 15321
+   },
+   {
+    "id": "shadcn-studio:data-table-09",
+    "code": 8791
+   }
+  ],
+  "dupes": 4,
+  "closer_look": [
+   "gh-coros-hq-shadcn-table-library:tree-table",
+   "stealth:expandable-rows",
+   "reactframe:tree-table"
+  ]
  },
  {
   "node": "section/data-view",
@@ -16450,20 +16868,63 @@
   "name": "Detail and inspector",
   "variation": "modal",
   "vname": "Modal drawer",
-  "pick": null,
-  "pick_code": 0,
-  "also": [],
-  "dupes": 0
+  "pick": "gh-polyoraceuphoria-m1k3d0w-design-clean-one:detail-panel",
+  "pick_code": 7379,
+  "also": [
+   {
+    "id": "gh-timbal-ai-blueprint-ui-simple-chat:event-details-modal",
+    "code": 10783
+   },
+   {
+    "id": "gh-sid9022-framekit-ui:project-lightbox",
+    "code": 9345
+   },
+   {
+    "id": "data-table-filters:data-table-sheet",
+    "code": 25353
+   },
+   {
+    "id": "gh-plivo-labs-agent-observability:eval-case-detail-page",
+    "code": 71674
+   }
+  ],
+  "dupes": 4,
+  "closer_look": [
+   "data-table-filters:data-table-sheet",
+   "gh-plivo-labs-agent-observability:eval-case-detail-page"
+  ]
  },
  {
   "node": "section/detail",
   "name": "Detail and inspector",
   "variation": "nested",
   "vname": "Nested panels",
-  "pick": null,
-  "pick_code": 0,
-  "also": [],
-  "dupes": 0
+  "pick": "gh-s5sajid-unofficial-medusa-ui-registry:stacked-drawer",
+  "pick_code": 1951,
+  "also": [
+   {
+    "id": "hextaui:drawer",
+    "code": 15018
+   },
+   {
+    "id": "gh-edwardastill-edcn:nested-search",
+    "code": 5186
+   },
+   {
+    "id": "iandefined:drawer",
+    "code": 44711
+   },
+   {
+    "id": "gh-carlosfengv-zeron-ui:file-manager-01",
+    "code": 66463
+   }
+  ],
+  "dupes": 4,
+  "closer_look": [
+   "hextaui:drawer",
+   "gh-edwardastill-edcn:nested-search",
+   "iandefined:drawer"
+  ]
  },
  {
   "node": "section/settings-panel",
@@ -17585,10 +18046,31 @@
   "name": "Home",
   "variation": "home-app-download",
   "vname": "App download",
-  "pick": null,
-  "pick_code": 0,
-  "also": [],
-  "dupes": 0
+  "pick": "7ovr:cta-6",
+  "pick_code": 3604,
+  "also": [
+   {
+    "id": "shadcn-ui-blocks:marketing-hero-sections-mobile-app-hero",
+    "code": 32754
+   },
+   {
+    "id": "shadcnblocks:download1",
+    "code": 5324
+   },
+   {
+    "id": "shadcn-studio:cta-section-01",
+    "code": 2433
+   },
+   {
+    "id": "smoothui:app-download-stack",
+    "code": 15092
+   }
+  ],
+  "dupes": 4,
+  "closer_look": [
+   "shadcn-ui-blocks:marketing-hero-sections-mobile-app-hero",
+   "smoothui:app-download-stack"
+  ]
  },
  {
   "node": "page/pricing-page",
@@ -17675,10 +18157,26 @@
   "name": "Pricing",
   "variation": "pricing-faq",
   "vname": "With FAQ",
-  "pick": null,
-  "pick_code": 0,
-  "also": [],
-  "dupes": 0
+  "pick": "nusaiba:faqs-7",
+  "pick_code": 7995,
+  "also": [
+   {
+    "id": "shadcn-studio:pricing-page-16",
+    "code": 19611
+   },
+   {
+    "id": "minidev:pricing-page",
+    "code": 2778
+   },
+   {
+    "id": "designali:faqs-01",
+    "code": 3264
+   }
+  ],
+  "dupes": 3,
+  "closer_look": [
+   "shadcn-studio:pricing-page-16"
+  ]
  },
  {
   "node": "page/about-page",
@@ -17695,10 +18193,35 @@
   "name": "About",
   "variation": "about-team",
   "vname": "With team",
-  "pick": null,
-  "pick_code": 0,
-  "also": [],
-  "dupes": 0
+  "pick": "efferd:team-1",
+  "pick_code": 4109,
+  "also": [
+   {
+    "id": "cnippet:v-avatar-17",
+    "code": 2776
+   },
+   {
+    "id": "shadcn-ui-blocks:marketing-team-sections-with-large-images",
+    "code": 9537
+   },
+   {
+    "id": "shadcnblocks:team2",
+    "code": 4536
+   },
+   {
+    "id": "shadcnblocks:team1",
+    "code": 2771
+   },
+   {
+    "id": "7ovr:team-2",
+    "code": 4143
+   }
+  ],
+  "dupes": 11,
+  "closer_look": [
+   "shadcn-ui-blocks:marketing-team-sections-with-large-images"
+  ],
+  "same_as": "section/team/photo-grid"
  },
  {
   "node": "page/about-page",
@@ -18567,10 +19090,30 @@
   "name": "List or table",
   "variation": "index-empty",
   "vname": "Empty state",
-  "pick": null,
-  "pick_code": 0,
-  "also": [],
-  "dupes": 0
+  "pick": "corsair-ui:empty-state",
+  "pick_code": 3422,
+  "also": [
+   {
+    "id": "7ovr:empty-states-5",
+    "code": 2987
+   },
+   {
+    "id": "aicanvas:andromeda-pro-empty-state",
+    "code": 526
+   },
+   {
+    "id": "boldkit:empty-state",
+    "code": 12346
+   },
+   {
+    "id": "flx:empty-01",
+    "code": 531
+   }
+  ],
+  "dupes": 4,
+  "closer_look": [
+   "boldkit:empty-state"
+  ]
  },
  {
   "node": "page/index",
@@ -18841,10 +19384,31 @@
   "name": "Settings",
   "variation": "settings-danger-zone",
   "vname": "Danger zone",
-  "pick": null,
-  "pick_code": 0,
-  "also": [],
-  "dupes": 0
+  "pick": "minidev:danger-zone",
+  "pick_code": 629,
+  "also": [
+   {
+    "id": "sureui:danger-zone-01",
+    "code": 4533
+   },
+   {
+    "id": "gh-polyoraceuphoria-m1k3d0w-design-clean-one:danger-zone",
+    "code": 1363
+   },
+   {
+    "id": "better-auth-ui:delete-user",
+    "code": 41029
+   },
+   {
+    "id": "gh-tyrailleverett-nice-ui:settings-danger-zone",
+    "code": 2506
+   }
+  ],
+  "dupes": 4,
+  "closer_look": [
+   "sureui:danger-zone-01",
+   "better-auth-ui:delete-user"
+  ]
  },
  {
   "node": "page/settings",
