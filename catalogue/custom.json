@@ -209,5 +209,135 @@
   "from": "halo-streaming v2/ui/src/segmented/segmented.tsx (her quiet row)",
   "reason": "Her quiet toggle row keeps its own look in Phase A; folds onto arc:segmented-control in Phase B.",
   "since": "2026-10-15"
+ },
+ "siso:landing": {
+  "from": "app/src/kit/siso-landing/",
+  "reason": "The SISO landing's own helpers and data (glyphs, laser beam, living marks, stats JSON) that its heroes import, copied in so the heroes render in the kit",
+  "since": "2026-10-16"
+ },
+ "siso:landing-agent-base-hero": {
+  "from": "app/src/kit/siso-landing/demos/agent-base-hero.tsx",
+  "reason": "Agent Base hero: SISO's own hero from the landing, kept as a SISO part so every page hero comes from the kit",
+  "since": "2026-10-16"
+ },
+ "siso:landing-blog-header": {
+  "from": "app/src/kit/siso-landing/demos/blog-header.tsx",
+  "reason": "Blog header: SISO's own hero from the landing, kept as a SISO part so every page hero comes from the kit",
+  "since": "2026-10-16"
+ },
+ "siso:landing-brand-hero": {
+  "from": "app/src/kit/siso-landing/demos/brand-hero.tsx",
+  "reason": "Brand hero: SISO's own hero from the landing, kept as a SISO part so every page hero comes from the kit",
+  "since": "2026-10-16"
+ },
+ "siso:landing-home-hero": {
+  "from": "app/src/kit/siso-landing/demos/home-hero.tsx",
+  "reason": "Home hero: SISO's own hero from the landing, kept as a SISO part so every page hero comes from the kit",
+  "since": "2026-10-16"
+ },
+ "siso:landing-home-hero-classic": {
+  "from": "app/src/kit/siso-landing/demos/home-hero-classic.tsx",
+  "reason": "Home hero, classic: SISO's own hero from the landing, kept as a SISO part so every page hero comes from the kit",
+  "since": "2026-10-16"
+ },
+ "siso:landing-industries-hero": {
+  "from": "app/src/kit/siso-landing/demos/industries-hero.tsx",
+  "reason": "Industries hub hero: SISO's own hero from the landing, kept as a SISO part so every page hero comes from the kit",
+  "since": "2026-10-16"
+ },
+ "siso:landing-industry-hero": {
+  "from": "app/src/kit/siso-landing/demos/industry-hero.tsx",
+  "reason": "Industry page hero: SISO's own hero from the landing, kept as a SISO part so every page hero comes from the kit",
+  "since": "2026-10-16"
+ },
+ "siso:landing-library-hero": {
+  "from": "app/src/kit/siso-landing/demos/library-hero.tsx",
+  "reason": "Library hero: SISO's own hero from the landing, kept as a SISO part so every page hero comes from the kit",
+  "since": "2026-10-16"
+ },
+ "siso:landing-live-hero": {
+  "from": "app/src/kit/siso-landing/demos/live-hero.tsx",
+  "reason": "Live hero: SISO's own hero from the landing, kept as a SISO part so every page hero comes from the kit",
+  "since": "2026-10-16"
+ },
+ "siso:landing-os-hero": {
+  "from": "app/src/kit/siso-landing/demos/os-hero.tsx",
+  "reason": "SISO OS hero: SISO's own hero from the landing, kept as a SISO part so every page hero comes from the kit",
+  "since": "2026-10-16"
+ },
+ "siso:landing-skills-hero": {
+  "from": "app/src/kit/siso-landing/demos/skills-hero.tsx",
+  "reason": "Skills hero: SISO's own hero from the landing, kept as a SISO part so every page hero comes from the kit",
+  "since": "2026-10-16"
+ },
+ "siso:landing-stack-hero": {
+  "from": "app/src/kit/siso-landing/demos/stack-hero.tsx",
+  "reason": "Stack hero: SISO's own hero from the landing, kept as a SISO part so every page hero comes from the kit",
+  "since": "2026-10-16"
+ },
+ "siso:landing-ui-hub-hero": {
+  "from": "app/src/kit/siso-landing/demos/ui-hub-hero.tsx",
+  "reason": "UI hub hero: SISO's own hero from the landing, kept as a SISO part so every page hero comes from the kit",
+  "since": "2026-10-16"
+ },
+ "siso:landing-voice-hero": {
+  "from": "app/src/kit/siso-landing/demos/voice-hero.tsx",
+  "reason": "Voice hero: SISO's own hero from the landing, kept as a SISO part so every page hero comes from the kit",
+  "since": "2026-10-16"
+ },
+ "siso:landing-work-with-us-hero": {
+  "from": "app/src/kit/siso-landing/demos/work-with-us-hero.tsx",
+  "reason": "Work with us hero: SISO's own hero from the landing, kept as a SISO part so every page hero comes from the kit",
+  "since": "2026-10-16"
+ },
+ "siso:landing-labs-hero": {
+  "from": "app/src/kit/siso-landing/demos/labs-hero.tsx",
+  "reason": "SISO Labs hero: SISO's own hero from the landing, kept as a SISO part so every page hero comes from the kit",
+  "since": "2026-10-16"
+ },
+ "siso:set-phone": {
+  "from": "app/src/kit/siso-set/phone.tsx",
+  "reason": "The phone frame the SISO set's native-app screens are shown in",
+  "since": "2026-10-16"
+ },
+ "siso:set-comments": {
+  "from": "app/src/kit/siso-set/comments.tsx",
+  "reason": "Comments were a gap in the SISO set (ECOSYSTEM, 15 Oct); no library thread did composer, one-deep replies and author marks in our look",
+  "since": "2026-10-16"
+ },
+ "siso:set-mobile-settings": {
+  "from": "app/src/kit/siso-set/mobile-settings.tsx",
+  "reason": "Mobile settings were a gap in the SISO set (ECOSYSTEM, 15 Oct); grouped rows at thumb height in our tokens",
+  "since": "2026-10-16"
+ },
+ "siso:set-mobile-onboarding": {
+  "from": "app/src/kit/siso-set/mobile-onboarding.tsx",
+  "reason": "Mobile onboarding and sign-in were a gap in the SISO set (ECOSYSTEM, 15 Oct); slides, ways in and an email code in one flow",
+  "since": "2026-10-16"
+ },
+ "siso:landing-blog-card": {
+  "from": "app/src/kit/siso-landing/demos/blog-card.tsx",
+  "reason": "Blog card: SISO's own, from the landing; fills a gap in the SISO set (ECOSYSTEM, 15 Oct)",
+  "since": "2026-10-16"
+ },
+ "siso:landing-blog-index": {
+  "from": "app/src/kit/siso-landing/demos/blog-index.tsx",
+  "reason": "Blog index: SISO's own, from the landing; fills a gap in the SISO set (ECOSYSTEM, 15 Oct)",
+  "since": "2026-10-16"
+ },
+ "siso:landing-changelog-page": {
+  "from": "app/src/kit/siso-landing/demos/changelog-page.tsx",
+  "reason": "Changelog page: SISO's own, from the landing; fills a gap in the SISO set (ECOSYSTEM, 15 Oct)",
+  "since": "2026-10-16"
+ },
+ "siso:landing-shipped-timeline": {
+  "from": "app/src/kit/siso-landing/demos/shipped-timeline.tsx",
+  "reason": "Shipped timeline: SISO's own, from the landing; fills a gap in the SISO set (ECOSYSTEM, 15 Oct)",
+  "since": "2026-10-16"
+ },
+ "siso:landing-welcome-sign-in": {
+  "from": "app/src/kit/siso-landing/demos/welcome-sign-in.tsx",
+  "reason": "Welcome and sign in: SISO's own, from the landing; fills a gap in the SISO set (ECOSYSTEM, 15 Oct)",
+  "since": "2026-10-16"
  }
 }

@@ -1,0 +1,658 @@
+{
+ "_source": "siso-os/siso-skills-hub registry/skills_registry.json (GitHub, commit 09f4b3c, 9 Oct 2026); skills naming a private partner or private data left out of the list, still counted",
+ "repo": "https://github.com/siso-os/siso-skills-hub",
+ "total_in_registry": 54,
+ "shown": 52,
+ "categories": {
+  "code": 10,
+  "devops": 10,
+  "communication": 4,
+  "data": 3,
+  "testing": 3,
+  "system": 4,
+  "global": 16,
+  "pipeline": 4
+ },
+ "cli": [
+  "python3 scripts/skills list",
+  "python3 scripts/skills search github",
+  "python3 scripts/skills info gitsearch",
+  "python3 scripts/skills install gitsearch"
+ ],
+ "skills": [
+  {
+   "skill_id": "component-review-gallery",
+   "name": "Component review gallery",
+   "description": "Build a client-facing web gallery that shows several design options for one component using the client's real brand assets, and publishes it to a shareable URL they can open on a phone.",
+   "category": "code",
+   "tags": [
+    "frontend",
+    "design-review",
+    "client-work",
+    "cloudflare-pages"
+   ]
+  },
+  {
+   "skill_id": "bounded-tool-output",
+   "name": "Bounded tool output",
+   "description": "Keep diagnostic results small and recover precisely from truncated logs, broad searches and oversized API responses.",
+   "category": "code",
+   "tags": [
+    "context",
+    "diagnostics",
+    "efficiency"
+   ]
+  },
+  {
+   "skill_id": "trace-to-regression",
+   "name": "Trace to regression",
+   "description": "Convert observed agent failures into source-linked regression cases and scoped skill or harness corrections.",
+   "category": "code",
+   "tags": [
+    "evals",
+    "skills",
+    "efficiency"
+   ]
+  },
+  {
+   "skill_id": "chat-on-steroids",
+   "name": "Chat On Steroids desktop bridge",
+   "description": "Use an explicitly configured local Desktop MCP bridge for authorized browser work, with OS-consent gates and fresh window identities; no cookie extraction or automatic chat loops.",
+   "category": "devops",
+   "tags": [
+    "desktop",
+    "browser",
+    "mcp",
+    "chatgpt",
+    "macos"
+   ]
+  },
+  {
+   "skill_id": "siso-workspace",
+   "name": "SISO Workspace",
+   "description": "Use SISO Workspace MCP apps for machine metrics, permitted filesystem operations, shell/Python execution and durable remote jobs.",
+   "category": "devops",
+   "tags": [
+    "mcp",
+    "remote-execution",
+    "metrics",
+    "durable-jobs"
+   ]
+  },
+  {
+   "skill_id": "publish",
+   "name": "Publish static site",
+   "description": "Publish a reviewed static directory or HTML file to an authorized public Cloudflare Pages project with exact readback and a caller handoff receipt.",
+   "category": "devops",
+   "tags": [
+    "static",
+    "cloudflare",
+    "publication"
+   ]
+  },
+  {
+   "skill_id": "agent-builder",
+   "name": "Agent Builder",
+   "description": "Route bounded work through current Agent Zero ownership; retired template setup is not executed",
+   "category": "code",
+   "tags": [
+    "agent",
+    "routing",
+    "compatibility"
+   ]
+  },
+  {
+   "skill_id": "agent-commander",
+   "name": "Agent Commander",
+   "description": "Create workspaces, start agents, and communicate with them via CMUX",
+   "category": "communication",
+   "tags": [
+    "workspace",
+    "cmux",
+    "agent",
+    "messaging"
+   ]
+  },
+  {
+   "skill_id": "analyze_task",
+   "name": "Analyze Task",
+   "description": "Analyze a task and decompose into user stories",
+   "category": "code",
+   "tags": [
+    "task",
+    "analysis",
+    "stories",
+    "decomposition"
+   ]
+  },
+  {
+   "skill_id": "cli-runner",
+   "name": "CLI Runner",
+   "description": "Run SISO CLI commands and interact with agents",
+   "category": "communication",
+   "tags": [
+    "cli",
+    "command",
+    "agent",
+    "execution"
+   ]
+  },
+  {
+   "skill_id": "cmux",
+   "name": "CMUX",
+   "description": "Terminal multiplexer for Claude Code with socket API for workspace control and browser automation",
+   "category": "devops",
+   "tags": [
+    "terminal",
+    "multiplexer",
+    "workspace",
+    "automation",
+    "cmux"
+   ]
+  },
+  {
+   "skill_id": "cmux-browser",
+   "name": "CMUX Browser",
+   "description": "Control CMUX browser for automated testing and browser interactions",
+   "category": "devops",
+   "tags": [
+    "browser",
+    "automation",
+    "testing",
+    "cmux",
+    "ui"
+   ]
+  },
+  {
+   "skill_id": "github",
+   "name": "GitHub",
+   "description": "Complete GitHub workflow for SISO codebase - branch, commit, push, merge",
+   "category": "devops",
+   "tags": [
+    "git",
+    "github",
+    "workflow",
+    "version-control",
+    "ci-cd"
+   ]
+  },
+  {
+   "skill_id": "gitsearch",
+   "name": "GitHub Search",
+   "description": "Search GitHub for code, repos, issues, and PRs",
+   "category": "devops",
+   "tags": [
+    "search",
+    "github",
+    "code-discovery",
+    "research"
+   ]
+  },
+  {
+   "skill_id": "implement_story",
+   "name": "Implement Story",
+   "description": "Implement a single user story with tests",
+   "category": "code",
+   "tags": [
+    "implementation",
+    "story",
+    "coding",
+    "tests"
+   ]
+  },
+  {
+   "skill_id": "meta-commander",
+   "name": "Meta Commander",
+   "description": "Communicate with META agents in the SISO ecosystem",
+   "category": "communication",
+   "tags": [
+    "messaging",
+    "meta",
+    "agent",
+    "communication"
+   ]
+  },
+  {
+   "skill_id": "multisearch",
+   "name": "Multi-Search",
+   "description": "Run web, GitHub, and X searches in parallel for comprehensive research",
+   "category": "data",
+   "tags": [
+    "search",
+    "research",
+    "discovery",
+    "parallel"
+   ]
+  },
+  {
+   "skill_id": "playwright",
+   "name": "Playwright",
+   "description": "Automated browser testing for SISO Internal Lab",
+   "category": "testing",
+   "tags": [
+    "testing",
+    "browser",
+    "automation",
+    "qa",
+    "playwright"
+   ]
+  },
+  {
+   "skill_id": "pm-tasks",
+   "name": "PM Tasks",
+   "description": "Simple PM task manager - create, list, update tasks",
+   "category": "system",
+   "tags": [
+    "task",
+    "management",
+    "pm",
+    "database"
+   ]
+  },
+  {
+   "skill_id": "task-commander",
+   "name": "Task Commander",
+   "description": "Log tasks and communicate with agents using the SISO task database",
+   "category": "system",
+   "tags": [
+    "task",
+    "messaging",
+    "agent",
+    "database"
+   ]
+  },
+  {
+   "skill_id": "task-manager",
+   "name": "Task Manager",
+   "description": "Full task pipeline system with steps, artifacts, and execution logging",
+   "category": "system",
+   "tags": [
+    "task",
+    "pipeline",
+    "workflow",
+    "database",
+    "execution"
+   ]
+  },
+  {
+   "skill_id": "vercel",
+   "name": "Vercel",
+   "description": "Deploy SISO Internal Lab to Vercel",
+   "category": "devops",
+   "tags": [
+    "deployment",
+    "vercel",
+    "ci-cd",
+    "infrastructure"
+   ]
+  },
+  {
+   "skill_id": "verify_story",
+   "name": "Verify Story",
+   "description": "Verify a story implementation meets acceptance criteria",
+   "category": "testing",
+   "tags": [
+    "verification",
+    "testing",
+    "qa",
+    "acceptance-criteria"
+   ]
+  },
+  {
+   "skill_id": "websearch",
+   "name": "Web Search",
+   "description": "Search the web using Perplexity Sonar via OpenRouter",
+   "category": "data",
+   "tags": [
+    "search",
+    "web",
+    "research",
+    "perplexity"
+   ]
+  },
+  {
+   "skill_id": "workspace",
+   "name": "Workspace",
+   "description": "Understand and navigate the SISO workspace",
+   "category": "system",
+   "tags": [
+    "workspace",
+    "navigation",
+    "structure",
+    "organization"
+   ]
+  },
+  {
+   "skill_id": "xsearch",
+   "name": "X Search",
+   "description": "Search X (Twitter) for discussions, opinions, and latest updates",
+   "category": "data",
+   "tags": [
+    "search",
+    "twitter",
+    "x",
+    "social",
+    "trends"
+   ]
+  },
+  {
+   "skill_id": "agent-setup",
+   "name": "Agent Setup",
+   "description": "Route bounded work through current Agent Zero ownership; retired template setup is not executed",
+   "category": "code",
+   "tags": [
+    "agent",
+    "routing",
+    "compatibility"
+   ]
+  },
+  {
+   "skill_id": "os-database",
+   "name": "OS Database",
+   "description": "Core Agent OS Database for telemetry, tasks, and timeline tracking",
+   "category": "global",
+   "tags": [
+    "database",
+    "os",
+    "telemetry",
+    "tasks",
+    "timeline"
+   ]
+  },
+  {
+   "skill_id": "subagents",
+   "name": "Subagents",
+   "description": "Spawn and manage parallel subagents for concurrent task execution",
+   "category": "global",
+   "tags": [
+    "subagent",
+    "parallel",
+    "spawn",
+    "execution"
+   ]
+  },
+  {
+   "skill_id": "skills-hub-usage",
+   "name": "Skills Hub Usage",
+   "description": "Navigate, discover, install, and use skills from the SISO Skills Hub",
+   "category": "global",
+   "tags": [
+    "skills-hub",
+    "discovery",
+    "navigation",
+    "self-help"
+   ]
+  },
+  {
+   "skill_id": "check_status",
+   "name": "Check Status",
+   "description": "Check the current status of a pipeline run by reading progress files",
+   "category": "pipeline",
+   "tags": [
+    "pipeline",
+    "status",
+    "progress",
+    "workflow"
+   ]
+  },
+  {
+   "skill_id": "create_progress",
+   "name": "Create Progress",
+   "description": "Initialize or update progress.md for a pipeline run",
+   "category": "pipeline",
+   "tags": [
+    "pipeline",
+    "progress",
+    "logging",
+    "workflow"
+   ]
+  },
+  {
+   "skill_id": "read_job_ticket",
+   "name": "Read JobTicket",
+   "description": "Read and validate a JobTicket JSON file from inbox",
+   "category": "pipeline",
+   "tags": [
+    "pipeline",
+    "jobticket",
+    "inbox",
+    "workflow"
+   ]
+  },
+  {
+   "skill_id": "pass_to_next",
+   "name": "Pass to Next",
+   "description": "Pass context to the next agent in the pipeline by writing output files",
+   "category": "pipeline",
+   "tags": [
+    "pipeline",
+    "handoff",
+    "workflow",
+    "agent-communication"
+   ]
+  },
+  {
+   "skill_id": "classify-by-reading",
+   "name": "Classify By Reading",
+   "description": "Classify files from their content before assigning consequential current/stale/dead/duplicate/archive verdicts.",
+   "category": "global",
+   "tags": [
+    "safety",
+    "classification",
+    "cleanup",
+    "evidence"
+   ]
+  },
+  {
+   "skill_id": "prove-before-claim",
+   "name": "Prove Before Claim",
+   "description": "Verify live-state, completion, and changed-contract claims with the smallest applicable probe while reusing existing evidence.",
+   "category": "global",
+   "tags": [
+    "verification",
+    "evidence",
+    "claims",
+    "safety"
+   ]
+  },
+  {
+   "skill_id": "skills-catalog",
+   "name": "Skills Catalog",
+   "description": "Locate the current skill or router for a capability without relying on a stale duplicated inventory.",
+   "category": "global",
+   "tags": [
+    "skills",
+    "discovery",
+    "routing",
+    "catalog"
+   ]
+  },
+  {
+   "skill_id": "unified-code-search",
+   "name": "Unified Code Search",
+   "description": "Navigate a local codebase through native Serena symbol, reference, outline, and call-hierarchy queries.",
+   "category": "code",
+   "tags": [
+    "code-navigation",
+    "serena",
+    "symbols",
+    "references"
+   ]
+  },
+  {
+   "skill_id": "skill-author",
+   "name": "Skill Author",
+   "description": "Author, register, validate and safely install one reviewed skill from its owning source.",
+   "category": "global",
+   "tags": [
+    "authoring",
+    "installation",
+    "provenance"
+   ]
+  },
+  {
+   "skill_id": "owner-writeback",
+   "name": "Owner Writeback",
+   "description": "Persist owned material state and append an index pointer through the consuming project's existing adapter.",
+   "category": "global",
+   "tags": [
+    "writeback",
+    "continuity",
+    "evidence"
+   ]
+  },
+  {
+   "skill_id": "owner-handoff",
+   "name": "Owner Handoff",
+   "description": "Use the owning Playbook's preservation, cold-read and single-writer handoff gate.",
+   "category": "global",
+   "tags": [
+    "handoff",
+    "continuity",
+    "evidence"
+   ]
+  },
+  {
+   "skill_id": "writeback",
+   "name": "Owner Log Mirror",
+   "description": "Append one material owner line to a repository log and mirror it to the existing Agent Zero ledger, with safe retries.",
+   "category": "global",
+   "tags": [
+    "owner",
+    "writeback",
+    "continuity"
+   ]
+  },
+  {
+   "skill_id": "contabo-vps",
+   "name": "Contabo VPS",
+   "description": "Connect to, provision and debug a Contabo VPS. Encodes the reinstall-is-the-fix rule and the host-key diagnosis.",
+   "category": "devops",
+   "tags": [
+    "infrastructure",
+    "vps",
+    "contabo",
+    "ssh",
+    "provisioning"
+   ]
+  },
+  {
+   "skill_id": "jev-judgment",
+   "name": "Jev agent checks",
+   "description": "Optional intent, completion and progress checks; eligible model/skill/tool selection; bounded Camofox search/navigation; and shadow-only context relevance through the existing OpenRouter transport.",
+   "category": "global",
+   "tags": [
+    "verification",
+    "intent",
+    "completion",
+    "routing",
+    "jev",
+    "decision-model",
+    "browser",
+    "camofox",
+    "context"
+   ]
+  },
+  {
+   "skill_id": "ui-pick",
+   "name": "UI pick",
+   "description": "Rank the 137 curated UI components against a stated need in one ~1.5s parallel Jev call for $0.0006. Reads the curator's verbatim note as intent. Ranks only; design-lab decides by looking.",
+   "category": "global",
+   "tags": [
+    "ui",
+    "components",
+    "ranking",
+    "jev",
+    "21st",
+    "design"
+   ]
+  },
+  {
+   "skill_id": "ui-iteration-round",
+   "name": "UI iteration round",
+   "description": "Run one round of UI iteration on pages or widgets Shaan has seen: his words first, shots before at his ratio, at least five specified improvement ideas per item (his own first, additive, never removing what he picked), one coder, shots after, and a before/after page with Added / Changed / Kept bullets per item.",
+   "category": "code",
+   "tags": [
+    "frontend",
+    "design-review",
+    "ui-iteration",
+    "before-after"
+   ]
+  },
+  {
+   "skill_id": "estate-keeper",
+   "name": "Estate Keeper",
+   "description": "Keep Shaan's laptop estate clean while working: look before making anything, put new things in their district, one command per move, keys and big files out of git, other agents' work untouched, and report messes to the Estate Manager's inbox.",
+   "category": "global",
+   "tags": [
+    "estate",
+    "filesystem",
+    "cleanup",
+    "layout",
+    "keys"
+   ]
+  },
+  {
+   "skill_id": "laptop-health",
+   "name": "Laptop Health",
+   "description": "Diagnose and fix a slow or overloaded MacBook with the laptop-health command: power and Low Power Mode first, then CPU speed, RAM, who makes the load, what keeps spawning processes, and leftover servers and browsers. Never kills agents.",
+   "category": "global",
+   "tags": [
+    "laptop",
+    "performance",
+    "load",
+    "memory",
+    "processes",
+    "cleanup"
+   ]
+  },
+  {
+   "skill_id": "self-compact",
+   "name": "Self-compact",
+   "description": "A long-running Claude agent in a herdr pane checkpoints its state, tells Agent Zero, and arms a one-shot waiter that types /compact into its own pane once idle and then the resume prompt, so the seat carries on without anyone typing.",
+   "category": "global",
+   "tags": [
+    "context",
+    "compaction",
+    "herdr",
+    "checkpoint",
+    "long-running"
+   ]
+  },
+  {
+   "skill_id": "machine-reach",
+   "name": "Machine Reach",
+   "description": "Reach any SISO machine over ssh by the right alias, with fallbacks in order (Tailscale, home LAN, Cloudflare WARP) and a debug ladder when one is down.",
+   "category": "global",
+   "tags": [
+    "ssh",
+    "network",
+    "tailscale",
+    "fleet",
+    "machines"
+   ]
+  },
+  {
+   "skill_id": "agent-widgets",
+   "name": "Agent widgets",
+   "description": "Publish bounded data-only agent widgets from explicit operational sources and verify same-data fallback migration.",
+   "category": "code",
+   "tags": [
+    "agent-base",
+    "widgets",
+    "migration"
+   ]
+  },
+  {
+   "skill_id": "gls",
+   "name": "Register in the Great Library",
+   "description": "Add reviewed Work, Release, Source Inventory and question metadata through the Library's schema and full verification gate.",
+   "category": "devops",
+   "tags": [
+    "registry",
+    "metadata",
+    "publication"
+   ]
+  }
+ ]
+}
