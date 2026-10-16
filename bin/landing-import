@@ -1,0 +1,241 @@
+#!/usr/bin/env python3
+"""Copy the landing's 16 heroes, with every local file they import, into app/src/kit/siso-landing/.
+usage: bin/landing-import [--write]   (PRIVATE_PATHS=<file>: harvest paths flagged private; SCRUB_FILE=<file>: private renames)   (without --write: report only)"""
+import json, os, re, shutil, sys
+
+WRITE = "--write" in sys.argv
+L = os.path.expanduser("~/SISO_Workspace/_data/worktrees/siso-agency-lp")
+HUB = os.path.expanduser("~/SISO_Workspace/Great_Library_of_SISO/banks/siso-ui-hub")
+KIT = f"{HUB}/app/src/kit"
+OUT = f"{KIT}/siso-landing"
+ROOTS = {"eco": f"{L}/siso-ecosystem/src", "labs": f"{L}/sisolabs-landing/src"}
+SISO = "features/marketing/components/siso"
+HEROES = [  # (id, title, root, src-relative file, export name or None = find it)
+    ("agent-base-hero", "Agent Base hero", "eco", f"{SISO}/agent-base-page/Hero.tsx"),
+    ("blog-header", "Blog header", "eco", f"{SISO}/blog/BlogHeader.tsx"),
+    ("brand-hero", "Brand hero", "eco", f"{SISO}/brand-page/Hero.tsx"),
+    ("home-hero", "Home hero", "eco", f"{SISO}/home-hero/SisoHomeHero.tsx"),
+    ("home-hero-classic", "Home hero, classic", "eco", f"{SISO}/home-hero/SisoHomeHeroClassic.tsx"),
+    ("industries-hero", "Industries hub hero", "eco", f"{SISO}/industries/hub/Hero.tsx"),
+    ("industry-hero", "Industry page hero", "eco", f"{SISO}/industry-page/Hero.tsx"),
+    ("library-hero", "Library hero", "eco", f"{SISO}/library-page/Hero.tsx"),
+    ("live-hero", "Live hero", "eco", f"{SISO}/live-page/Hero.tsx"),
+    ("os-hero", "SISO OS hero", "eco", f"{SISO}/os-top/SisoOsTop.tsx"),
+    ("skills-hero", "Skills hero", "eco", f"{SISO}/skills-page/Hero.tsx"),
+    ("stack-hero", "Stack hero", "eco", f"{SISO}/stack-page/Hero.tsx"),
+    ("ui-hub-hero", "UI hub hero", "eco", f"{SISO}/ui-hub-page/Hero.tsx"),
+    ("voice-hero", "Voice hero", "eco", f"{SISO}/voice-page/Hero.tsx"),
+    ("work-with-us-hero", "Work with us hero", "eco", f"{SISO}/work-with-us/Hero.tsx"),
+    ("labs-hero", "SISO Labs hero", "labs", "features/siso/Sections.tsx"),
+    # set pieces the SISO set lacked (ECOSYSTEM, 15 Oct): blog cards, changelog, sign-in
+    ("blog-card", "Blog card", "eco", f"{SISO}/blog/BlogCard.tsx", "marketing/blog"),
+    ("blog-index", "Blog index", "eco", f"{SISO}/blog/SisoBlogIndex.tsx", "pages/blog-index"),
+    ("changelog-page", "Changelog page", "eco", f"{SISO}/changelog-page/ChangelogPage.tsx", "pages/changelog"),
+    ("shipped-timeline", "Shipped timeline", "eco", f"{SISO}/live-page/Shipped.tsx", "marketing/changelog"),
+    ("welcome-sign-in", "Welcome and sign in", "eco", f"{SISO}/welcome/WelcomePage.tsx", "flows/sign-in"),
+]
+PRIVATE = [l.strip() for l in open(os.environ.get("PRIVATE_PATHS", "/dev/null")) if l.strip()]  # harvest rows flagged private, one path per line
+WORDS = re.compile(os.environ.get("PRIVATE_WORDS", r"(/Users/)"), re.I)  # a regex with one group: words to report, e.g. client names
+# renames: private ones (client names) from SCRUB_FILE, one "regex<TAB>replacement" per line, kept out of git; public ones here
+SCRUB = [tuple(l.rstrip("\n").split("\t", 1)) for l in open(os.environ.get("SCRUB_FILE", "/dev/null")) if "\t" in l] + [
+    (r"process\.env\.NEXT_PUBLIC_\w+", "undefined"),
+    (r"\b(pk_(?:live|test)_)[A-Za-z0-9]+", r"\1placeholder"),  # Clerk keys: public by design, still not ours to copy
+    (r"\bapp_[A-Za-z0-9]{20,}\b", "app_placeholder"),
+]
+# per-file cuts: the partner workspace's brand mark rides along in the shared mark; the public hub never carries it
+CUTS = {
+    "living/WorkspaceMark.tsx": [(r" \| 'halo'", ""), (r"\n  halo: \{[^\n]*\},", ""), (r"brand==='halo'\?'halo':'lion'", "'lion'"),
+                                 (r"brand==='halo'\?\{[^}]*\}:", "")],
+    "living/mark-geometry.ts": [(r",\n  \"halo\": \{[^}]*\}", "")],
+    "living/workspace-mark.css": [(r"\.wm\[data-brand=halo\] \.wm-float\{[^}]*\}", "")],
+    "living/living-assets.ts": [(r" no legacy HaloFace global controller", " no legacy global face controller")],
+}
+# Next.js and Clerk, which the landing runs on and the hub does not: small stand-ins, signed out
+SHIMS = {
+    "next/link": ("next-link.tsx", """import type { AnchorHTMLAttributes, ReactNode } from "react"
+type Href = string | { pathname?: string; hash?: string }
+export default function Link({ href, children, prefetch: _p, scroll: _s, replace: _r, ...rest }: Omit<AnchorHTMLAttributes<HTMLAnchorElement>, "href"> & { href: Href; children?: ReactNode; prefetch?: boolean; scroll?: boolean; replace?: boolean }) {
+  return <a href={typeof href === "string" ? href : `${href.pathname ?? ""}${href.hash ? `#${href.hash}` : ""}`} {...rest}>{children}</a>
+}
+"""),
+    "next/navigation": ("next-navigation.ts", """export const usePathname = () => "/"
+export const useSearchParams = () => new URLSearchParams()
+export const useRouter = () => ({ push() {}, replace() {}, back() {}, forward() {}, refresh() {}, prefetch() {} })
+export const useParams = () => ({})
+export function notFound(): never { throw new Error("not found") }
+export function redirect(_to: string): never { throw new Error("redirect") }
+"""),
+    "next/dynamic": ("next-dynamic.tsx", """import { lazy, Suspense, type ComponentType, type ReactNode } from "react"
+type Loaded = ComponentType<any> | { default: ComponentType<any> }
+export default function dynamic(load: () => Promise<Loaded>, opts?: { loading?: () => ReactNode; ssr?: boolean }) {
+  const C = lazy(async () => { const m = await load(); return { default: "default" in m ? m.default : m } })
+  return function Dynamic(props: Record<string, unknown>) {
+    return <Suspense fallback={opts?.loading?.() ?? null}><C {...props} /></Suspense>
+  }
+}
+"""),
+    "@clerk/clerk-react": ("clerk.tsx", """export const useUser = () => ({ isLoaded: true, isSignedIn: false, user: null })
+export const useAuth = () => ({ isLoaded: true, isSignedIn: false, userId: null, getToken: async () => null })
+export const UserButton = () => null
+export const SignedIn = (_: { children?: unknown }) => null
+export const SignedOut = ({ children }: { children?: React.ReactNode }) => <>{children}</>
+export const ClerkProvider = ({ children }: { children?: React.ReactNode; [k: string]: unknown }) => <>{children}</>
+"""),
+}
+EXTS = ["", ".tsx", ".ts", ".jsx", ".js", "/index.tsx", "/index.ts", "/index.js"]
+SPEC = re.compile(r"""(\bfrom\s*|\bimport\s*\(?\s*|\brequire\s*\(\s*)(["'])([^"']+)\2""")
+
+def resolve(root, frm, spec):
+    if spec.startswith("@/"):
+        base = f"{ROOTS[root]}/{spec[2:]}"
+    elif spec.startswith("."):
+        base = os.path.normpath(os.path.join(os.path.dirname(frm), spec))
+    else:
+        return None
+    for e in EXTS:
+        if os.path.isfile(base + e):
+            return base + e
+    return "MISSING:" + base
+
+files, deps, missing, priv, hits = {}, set(), [], [], {}
+def walk(root, path):
+    if path in files:
+        return
+    rel = os.path.relpath(path, ROOTS[root])
+    if any(rel.endswith(p) or p in rel for p in PRIVATE if "/" in p) or any(rel == f"{SISO}/{p}" for p in PRIVATE):
+        priv.append(rel)
+    files[path] = (root, rel)
+    if not re.search(r"\.(tsx?|jsx?|mjs)$", path):
+        return
+    src = open(path, encoding="utf-8").read()
+    for m in WORDS.finditer(src):
+        hits.setdefault(rel, set()).add(m.group(1).lower())
+    for m in SPEC.finditer(src):
+        s = m.group(3)
+        r = resolve(root, path, s)
+        if r is None and s in SHIMS:
+            continue
+        if r is None:
+            if re.fullmatch(r"[@a-z][\w./@-]*", s):
+                deps.add(s)
+        elif r.startswith("MISSING:"):
+            missing.append(f"{rel} -> {s}")
+        else:
+            walk(root, r)
+
+for _id, _t, root, f, *_ in HEROES:
+    walk(root, f"{ROOTS[root]}/{f}")
+if not WRITE:
+    for f in files:
+        if re.search(r"\.(json)$", f):
+            for m in WORDS.finditer(open(f, encoding="utf-8").read()):
+                hits.setdefault(files[f][1], set()).add(m.group(1).lower())
+
+def pkg(s):
+    p = s.split("/")
+    return "/".join(p[:2]) if s.startswith("@") else p[0]
+have = json.load(open(f"{HUB}/app/package.json"))
+have = set(have.get("dependencies", {})) | set(have.get("devDependencies", {}))
+need = sorted({pkg(d) for d in deps} - have - {"react", "react-dom"})
+print(f"files {len(files)}  (ts/tsx {sum(1 for f in files if re.search(r'\\.tsx?$', f))}, json {sum(1 for f in files if f.endswith('.json'))}, other {sum(1 for f in files if not re.search(r'\\.(tsx?|json)$', f))})")
+print("bare imports:", sorted(deps))
+print("packages missing from the hub:", need)
+print("unresolved:", missing[:20])
+print("private-listed files reached:", priv)
+print("private words:", {k: sorted(v) for k, v in hits.items()})
+
+if not WRITE:
+    sys.exit(0)
+
+def dest(root, rel):
+    return f"{OUT}/{root}/{rel}"
+
+def relspec(frm_dest, to_dest):
+    r = os.path.relpath(to_dest, os.path.dirname(frm_dest))
+    r = re.sub(r"\.(tsx|ts|jsx|js)$", "", r)
+    r = re.sub(r"/index$", "", r) if False else r
+    return r if r.startswith(".") else "./" + r
+
+for path, (root, rel) in files.items():
+    d = dest(root, rel)
+    os.makedirs(os.path.dirname(d), exist_ok=True)
+    if not re.search(r"\.(tsx?|jsx?|mjs)$", path):
+        if path.endswith((".json", ".css")):
+            t = open(path, encoding="utf-8").read()
+            for a, b in SCRUB:
+                t = re.sub(a, b, t)
+            for suffix, cuts in CUTS.items():
+                if rel.endswith(suffix):
+                    for a, b in cuts:
+                        t, n = re.subn(a, b, t)
+                        if not n:
+                            sys.exit(f"cut not applied in {rel}: {a}")
+            open(d, "w", encoding="utf-8").write(t)
+        else:
+            shutil.copyfile(path, d)
+        continue
+    src = open(path, encoding="utf-8").read()
+    def sub(m):
+        if m.group(3) in SHIMS:
+            return f"{m.group(1)}{m.group(2)}{relspec(d, f'{OUT}/shims/{SHIMS[m.group(3)][0]}')}{m.group(2)}"
+        r = resolve(root, path, m.group(3))
+        if r is None or r.startswith("MISSING:"):
+            return m.group(0)
+        return f"{m.group(1)}{m.group(2)}{relspec(d, dest(*files[r]))}{m.group(2)}"
+    out = SPEC.sub(sub, src)
+    for a, b in SCRUB:
+        out = re.sub(a, b, out)
+    for suffix, cuts in CUTS.items():
+        if rel.endswith(suffix):
+            for a, b in cuts:
+                out, n = re.subn(a, b, out)
+                if not n:
+                    sys.exit(f"cut not applied in {rel}: {a}")
+    if not out.startswith("// uihub"):
+        out = f"// uihub: siso:landing (copied from the SISO landing, {root}/{rel})\n" + out
+    open(d, "w", encoding="utf-8").write(out)
+
+B = f"{SISO}/blog"
+DEMOS = {  # heroes that take props: imported data, then the JSX ({H} = the hero)
+    "blog-header": ([("{ posts }", "eco", f"{B}/posts.ts"), ("{ postTopic }", "eco", f"{B}/topics.ts")],
+                    "const p = posts[0]", '<{H} title={p.title} topic={postTopic(p)} slug={p.slug} variant="hero" eager />'),
+    "blog-card": ([("{ posts }", "eco", f"{B}/posts.ts")], "", '<div className="max-w-md"><{H} post={posts[0]} featured /></div>'),
+    "industry-hero": ([("DATA", "eco", "features/marketing/data/industry-pages.json")],
+                      "", '<{H} slug="cafes" group={(DATA.groups as Record<string, never>).cafes} />'),
+}
+os.makedirs(f"{OUT}/shims", exist_ok=True)
+for spec, (name, code) in SHIMS.items():
+    open(f"{OUT}/shims/{name}", "w").write(f"// uihub: siso:landing (a stand-in for {spec}, which the landing runs on and the hub does not)\n{code}")
+# one demo file per hero: renders it with no props, so the kit's picker finds it
+parts = []
+os.makedirs(f"{OUT}/demos", exist_ok=True)
+for pid, title, root, f, *cat in HEROES:
+    src = open(f"{ROOTS[root]}/{f}", encoding="utf-8").read()
+    names = re.findall(r"export\s+(?:default\s+)?(?:function|const)\s+([A-Z]\w*)", src)
+    dflt = re.findall(r"export\s+default\s+(?:function|const)\s+([A-Z]\w*)", src)
+    hero = next((n for n in names if "Hero" in n or "Header" in n), dflt[0] if dflt else names[0] if names else None)
+    is_default = bool(re.search(rf"export\s+default\s+(?:function\s+)?{hero}\b", src)) or not names
+    imp = relspec(f"{OUT}/demos/{pid}.tsx", dest(root, f))
+    line = f'import {hero} from "{imp}"' if is_default else f'import {{ {hero} }} from "{imp}"'
+    extra, pre, jsx = DEMOS.get(pid, ([], "", "<{H} />"))
+    for clause, r2, f2 in extra:
+        sp = relspec(f"{OUT}/demos/{pid}.tsx", dest(r2, f2))
+        line += f'\nimport {clause} from "{sp}{".json" if f2.endswith(".json") and not sp.endswith(".json") else ""}"'
+    open(f"{OUT}/demos/{pid}.tsx", "w").write(
+        f"// uihub: siso:landing-{pid}\n// {title}: the SISO landing's own hero ({root}/{f}), shown with its own data.\n{line}\n\n"
+        + (f"{pre}\n\n" if pre else "") + f"export default function Demo() {{\n  return {jsx.replace('{H}', hero)}\n}}\n")
+    parts.append({"id": f"siso-landing/{pid}", "title": title, "cat": cat[0] if cat else "marketing/hero", "type": "page" if cat and cat[0].startswith(("pages", "flows")) else "block", "file": f"demos/{pid}.tsx", "files": [f"demos/{pid}.tsx", f"{root}/{f}"],
+                  "web": 1, "player": "", "description": f"{title} from the SISO landing ({os.path.basename(f)}), with its own helpers and data copied in."})
+    print(pid, "->", hero, "default" if is_default else "named")
+
+json.dump({"lib": "siso-landing", "homepage": "https://sisolabs.space", "description": "SISO's own landing parts: the hero of every page on the SISO landing, plus its blog cards, changelog and sign-in, copied in with their helpers and data.",
+           "items": len(parts), "parts": parts}, open(f"{OUT}/parts.json", "w"), indent=1)
+
+libs, rows = [], []
+for f in sorted(__import__("glob").glob(f"{KIT}/*/parts.json")):
+    m = json.load(open(f))
+    libs.append({"lib": m["lib"], "homepage": m.get("homepage"), "description": m.get("description"), "items": m["items"], "parts": len(m["parts"])})
+    for p in m["parts"]:
+        rows.append([p["id"], p["title"], p["cat"], p["type"], p["file"], int(p["web"]), p.get("player") or "", p["description"][:140]])
+json.dump({"libs": libs, "parts": rows}, open(f"{KIT}/index.json", "w"), separators=(",", ":"))
+print("index:", len(libs), "libs,", len(rows), "parts")

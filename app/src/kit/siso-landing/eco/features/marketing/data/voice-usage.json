@@ -1,0 +1,33 @@
+{
+  "_readme": "SISO Voice's own numbers for /voice/. Every figure carries its source; they describe our own use of Voice, not other users. Same figures as the blog post 'What we took from 25 voice apps' (siso/blog/posts.ts).",
+  "history": {
+    "from": "2026-08-13",
+    "to": "2026-10-06",
+    "weeks": 8,
+    "dictations": 8590,
+    "into_agents": 6805,
+    "into_agents_pct": 79,
+    "hours": 97.6,
+    "words_about": 792000,
+    "transcribed_pct": 99.8,
+    "failed": 18,
+    "source": "PipelineHistory.sqlite, 13 Aug to 6 Oct 2026: our own dictations (claim ledger voiceuse, voiceagt, OBS). Internal usage, not a survey."
+  },
+  "research": {
+    "repos_checked": 25,
+    "dictation": 16,
+    "voice_to_agent": 9,
+    "teardown": "Aqua Voice",
+    "date": "2026-09-23",
+    "source": "Voice repository research, 23 Sep 2026: 16 dictation and 9 voice-to-agent repos on GitHub, plus an Aqua Voice teardown (claim ledger voicecmp, OBS)."
+  },
+  "lineage": [
+    { "name": "FreeFlow", "repo": "zachlatta/freeflow", "licence": "MIT", "role": "The base", "took": "Hold a key, talk, and the words are typed where your cursor is." },
+    { "name": "voicemode", "repo": "mbailey/voicemode", "licence": "MIT", "role": "Talk-back", "took": "The idea of the agent talking back to you." },
+    { "name": "FluidVoice", "licence": "idea", "role": "Live captions", "took": "Live captions, rebuilt on Apple's recognizer." }
+  ],
+  "lineage_source": "Claim ledger voicelin (OBS): base zachlatta/freeflow (MIT), talk-back from mbailey/voicemode (MIT), live captions rebuilt from FluidVoice's idea.",
+  "repo": { "name": "siso-voice", "owner": "siso-os", "public": true, "stars": 0, "licence": "MIT", "pushed": "2026-10-10", "source": "gh repo view siso-os/siso-voice: PUBLIC, 0 stars, MIT, published 10 Oct 2026 from the private sisodias/freeflow (a fork of zachlatta/freeflow)" },
+  "engine": { "name": "Groq Whisper", "model": "whisper-large-v3-turbo", "backup": "Apple on-device", "source": "functions/api/transcribe.js (the live try-out) and the old /voice/ FAQ" },
+  "blog": "/blog/what-we-took-from-25-voice-apps/"
+}

@@ -1,0 +1,229 @@
+// uihub: siso:landing (copied from the SISO landing, eco/features/marketing/components/siso/ProductGlyph.tsx)
+'use client';
+
+// The five SISO product icons, drawn in code: a coloured glass tile and a glass object whose parts move on hover.
+// UI Hub (cards fan, toggle flips) · Great Library (a page turns) · SISO OS (a light orbits, the prompt types)
+// Research (bubbles rise, liquid moves) · Agency (the shop window lights gold: a business SISO has lit)
+// Voice (the level bars dance beside the mic) · All projects (four tiles spread and the last one lights).
+
+import { useId, useState } from 'react';
+
+export type Product = 'ui-hub' | 'library' | 'os' | 'research' | 'agency' | 'voice' | 'all';
+
+// Foreplay's sprite keys map onto ours, so existing nav and footer data keep working.
+export const SPRITE_TO_PRODUCT: Record<string, Product> = {
+  'swipe-file': 'ui-hub', library: 'ui-hub', discovery: 'library', spyder: 'os', lens: 'research', briefs: 'agency',
+  'ui-hub': 'ui-hub', os: 'os', research: 'research', agency: 'agency', voice: 'voice', all: 'all',
+};
+
+const TILE: Record<Product, { top: string; bottom: string; tint: string }> = {
+  'ui-hub': { top: '#06123a', bottom: '#1f69ff', tint: '#9cc0ff' },
+  library: { top: '#170a2e', bottom: '#7540b7', tint: '#d2b6ff' },
+  os: { top: '#260b0a', bottom: '#ed615a', tint: '#ffc0b8' },
+  research: { top: '#0b0e14', bottom: '#41567a', tint: '#bfe6ff' },
+  agency: { top: '#03180f', bottom: '#00a879', tint: '#9ff0cf' },
+  voice: { top: '#24050f', bottom: '#e0336a', tint: '#ffb3cb' },
+  all: { top: '#241002', bottom: '#ff6a1a', tint: '#ffd59a' },
+};
+
+const CSS = `
+.pg{display:block;flex-shrink:0;overflow:visible}
+.pg *{transform-box:fill-box;transform-origin:center}
+.pg .pg-obj{transition:transform .5s cubic-bezier(.19,1,.22,1)}
+.pg[data-on="true"] .pg-obj{transform:translateY(-3px) scale(1.04)}
+.pg .pg-halo{opacity:.55;transition:opacity .5s ease}
+.pg[data-on="true"] .pg-halo{opacity:1}
+.pg .pg-c1,.pg .pg-c2,.pg .pg-c3,.pg .pg-knob{transition:transform .55s cubic-bezier(.19,1,.22,1)}
+.pg .pg-c3{transform:rotate(-7deg)}.pg .pg-c2{transform:rotate(-2deg)}.pg .pg-c1{transform:rotate(2deg)}
+.pg[data-on="true"] .pg-c3{transform:translate(-7px,-7px) rotate(-16deg)}
+.pg[data-on="true"] .pg-c2{transform:translate(-2px,-4px) rotate(-5deg)}
+.pg[data-on="true"] .pg-c1{transform:translate(5px,3px) rotate(7deg)}
+.pg[data-on="true"] .pg-knob{transform:translateX(10px)}
+.pg .pg-track{transition:fill .4s ease}
+.pg .pg-flip{transform-box:view-box;transform-origin:80px 86px;transition:transform .8s cubic-bezier(.65,0,.35,1)}
+.pg[data-on="true"] .pg-flip{transform:scaleX(-1)}
+.pg .pg-spark{opacity:0;transition:opacity .4s ease .3s}
+.pg[data-on="true"] .pg-spark{opacity:1}
+.pg .pg-orbit{stroke-dasharray:9 91;stroke-dashoffset:0}
+.pg[data-on="true"] .pg-orbit{animation:pg-orbit 1.6s linear infinite}
+@keyframes pg-orbit{to{stroke-dashoffset:-100}}
+.pg .pg-type{transform-origin:left center;transform:scaleX(.25);transition:transform .9s steps(6)}
+.pg[data-on="true"] .pg-type{transform:scaleX(1)}
+.pg[data-on="true"] .pg-caret{animation:pg-blink .8s steps(1) infinite}
+@keyframes pg-blink{50%{opacity:0}}
+.pg .pg-wave{transform-box:view-box;transition:transform .6s ease}
+.pg[data-on="true"] .pg-wave{animation:pg-wave 1.4s linear infinite}
+@keyframes pg-wave{to{transform:translateX(-40px)}}
+.pg .pg-bubble{opacity:0}
+.pg[data-on="true"] .pg-bubble{animation:pg-rise 1.3s ease-in infinite}
+.pg[data-on="true"] .pg-bubble.b2{animation-delay:.45s}.pg[data-on="true"] .pg-bubble.b3{animation-delay:.85s}
+@keyframes pg-rise{0%{opacity:0;transform:translateY(0)}20%{opacity:.95}100%{opacity:0;transform:translateY(-34px)}}
+.pg .pg-window{transition:fill .45s ease,filter .45s ease}
+.pg[data-on="true"] .pg-window{fill:#ffc24b;filter:drop-shadow(0 0 6px rgba(255,194,75,.9))}
+.pg .pg-spill{opacity:0;transition:opacity .45s ease}
+.pg[data-on="true"] .pg-spill{opacity:.55}
+.pg .pg-bar{transform:scaleY(.45);transition:transform .4s ease}
+.pg[data-on="true"] .pg-bar{animation:pg-level .7s ease-in-out infinite alternate}
+.pg[data-on="true"] .pg-bar.l2{animation-delay:.18s}.pg[data-on="true"] .pg-bar.l3{animation-delay:.36s}.pg[data-on="true"] .pg-bar.l4{animation-delay:.09s}
+@keyframes pg-level{from{transform:scaleY(.35)}to{transform:scaleY(1.15)}}
+.pg .pg-t1,.pg .pg-t2,.pg .pg-t3,.pg .pg-t4{transition:transform .55s cubic-bezier(.19,1,.22,1)}
+.pg[data-on="true"] .pg-t1{transform:translate(-5px,-5px)}.pg[data-on="true"] .pg-t2{transform:translate(5px,-5px)}
+.pg[data-on="true"] .pg-t3{transform:translate(-5px,5px)}.pg[data-on="true"] .pg-t4{transform:translate(5px,5px)}
+.pg .pg-lit{transition:fill .45s ease .15s,filter .45s ease .15s}
+.pg[data-on="true"] .pg-lit{fill:#ffc24b;filter:drop-shadow(0 0 6px rgba(255,194,75,.9))}
+@media (prefers-reduced-motion:reduce){.pg *{transition:none!important;animation:none!important}}
+`;
+
+function Glass({ id }: { id: string }) {
+  return <>
+    <linearGradient id={`${id}-glass`} x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stopColor="#fff" stopOpacity=".62" />
+      <stop offset=".5" stopColor="#fff" stopOpacity=".2" />
+      <stop offset="1" stopColor="#fff" stopOpacity=".34" />
+    </linearGradient>
+    <filter id={`${id}-glow`} x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="3.2" result="blur" />
+      <feMerge><feMergeNode in="blur" /><feMergeNode in="SourceGraphic" /></feMerge>
+    </filter>
+  </>;
+}
+
+function UiHub({ g, tint }: { g: string; tint: string }) {
+  const card = { fill: g, stroke: 'rgba(255,255,255,.9)', strokeWidth: 1.6 };
+  return <>
+    <rect className="pg-c3" x="52" y="36" width="64" height="46" rx="9" {...card} opacity=".7" />
+    <rect className="pg-c2" x="47" y="50" width="66" height="48" rx="9" {...card} opacity=".85" />
+    <g className="pg-c1">
+      <rect x="42" y="64" width="72" height="52" rx="10" {...card} />
+      <rect x="52" y="75" width="32" height="9" rx="4.5" fill="#fff" opacity=".9" />
+      <rect className="pg-track" x="52" y="93" width="24" height="13" rx="6.5" fill="rgba(255,255,255,.28)" stroke="rgba(255,255,255,.8)" strokeWidth="1" />
+      <circle className="pg-knob" cx="58.5" cy="99.5" r="4.6" fill="#fff" />
+      <rect x="84" y="95" width="20" height="4" rx="2" fill={tint} opacity=".8" />
+    </g>
+  </>;
+}
+
+function Library({ g, tint }: { g: string; tint: string }) {
+  const page = { fill: g, stroke: 'rgba(255,255,255,.9)', strokeWidth: 1.6, strokeLinejoin: 'round' as const };
+  const right = 'M80 58 C90 49 108 47 123 51 L123 108 C108 104 90 106 80 114 Z';
+  return <>
+    <path d="M80 58 C70 49 52 47 37 51 L37 108 C52 104 70 106 80 114 Z" {...page} />
+    <path d={right} {...page} />
+    {[64, 74, 84].map(y => <path key={y} d={`M47 ${y} q14 -3 26 2`} stroke="#fff" strokeOpacity=".55" strokeWidth="1.6" strokeLinecap="round" fill="none" />)}
+    {[64, 74, 84].map(y => <path key={`r${y}`} d={`M87 ${y + 2} q12 -5 26 -2`} stroke="#fff" strokeOpacity=".55" strokeWidth="1.6" strokeLinecap="round" fill="none" />)}
+    <path className="pg-flip" d={right} {...page} opacity=".85" />
+    <circle className="pg-spark" cx="80" cy="44" r="3" fill={tint} />
+    <circle className="pg-spark" cx="92" cy="38" r="1.8" fill="#fff" />
+  </>;
+}
+
+function Os({ g, tint }: { g: string; tint: string }) {
+  return <>
+    <ellipse cx="80" cy="80" rx="64" ry="19" transform="rotate(-16 80 80)" fill="none" stroke="#fff" strokeOpacity=".35" strokeWidth="1.4" />
+    <rect x="36" y="46" width="88" height="66" rx="12" fill={g} stroke="rgba(255,255,255,.9)" strokeWidth="1.6" />
+    <path d="M36 62 H124" stroke="#fff" strokeOpacity=".45" strokeWidth="1.2" />
+    {[47, 55, 63].map(x => <circle key={x} cx={x} cy="54" r="2.6" fill="#fff" opacity=".85" />)}
+    <path d="M50 74 l9 7 -9 7" fill="none" stroke="#fff" strokeWidth="3.2" strokeLinecap="round" strokeLinejoin="round" />
+    <rect className="pg-caret" x="64" y="85" width="13" height="3.4" rx="1.7" fill="#fff" />
+    <rect className="pg-type" x="50" y="97" width="46" height="3.4" rx="1.7" fill={tint} opacity=".85" />
+    <ellipse className="pg-orbit" pathLength="100" cx="80" cy="80" rx="64" ry="19" transform="rotate(-16 80 80)" fill="none" stroke="#fff" strokeWidth="3" strokeLinecap="round" />
+  </>;
+}
+
+function Research({ g, tint, id }: { g: string; tint: string; id: string }) {
+  const flask = 'M69 38 H91 V44 H88 V66 L111 104 A9 9 0 0 1 103 118 H57 A9 9 0 0 1 49 104 L72 66 V44 H69 Z';
+  return <>
+    <clipPath id={`${id}-flask`}><path d={flask} /></clipPath>
+    <g clipPath={`url(#${id}-flask)`}>
+      <path className="pg-wave" d="M30 92 q10 -6 20 0 t20 0 t20 0 t20 0 t20 0 t20 0 V130 H30 Z" fill={tint} opacity=".55" />
+    </g>
+    <path d={flask} fill={g} stroke="rgba(255,255,255,.9)" strokeWidth="1.6" strokeLinejoin="round" />
+    <path d="M66 38 H94" stroke="#fff" strokeWidth="3" strokeLinecap="round" />
+    <circle className="pg-bubble" cx="74" cy="108" r="3" fill="#fff" />
+    <circle className="pg-bubble b2" cx="86" cy="104" r="2.2" fill="#fff" />
+    <circle className="pg-bubble b3" cx="93" cy="110" r="2.6" fill="#fff" />
+    <path d="M76 50 V64" stroke="#fff" strokeOpacity=".7" strokeWidth="1.6" strokeLinecap="round" />
+  </>;
+}
+
+function Agency({ g }: { g: string }) {
+  const glass = { fill: g, stroke: 'rgba(255,255,255,.9)', strokeWidth: 1.6, strokeLinejoin: 'round' as const };
+  return <>
+    <ellipse className="pg-spill" cx="67" cy="122" rx="22" ry="4" fill="#ffc24b" />
+    <rect x="42" y="66" width="76" height="52" rx="6" {...glass} />
+    <path d="M38 52 H122 V64 q-5.25 7 -10.5 0 q-5.25 7 -10.5 0 q-5.25 7 -10.5 0 q-5.25 7 -10.5 0 q-5.25 7 -10.5 0 q-5.25 7 -10.5 0 q-5.25 7 -10.5 0 q-5.25 7 -10.5 0 Z" {...glass} />
+    {[48.5, 69.5, 90.5, 111.5].map(x => <rect key={x} x={x - 5.25} y="52" width="10.5" height="12" fill="#fff" opacity=".3" />)}
+    <rect className="pg-window" x="51" y="78" width="32" height="24" rx="3" fill="rgba(255,255,255,.22)" stroke="rgba(255,255,255,.85)" strokeWidth="1.2" />
+    <rect x="91" y="80" width="18" height="38" rx="3" {...glass} />
+    <circle cx="104" cy="100" r="1.8" fill="#fff" />
+  </>;
+}
+
+function Voice({ g, tint }: { g: string; tint: string }) {
+  const glass = { fill: g, stroke: 'rgba(255,255,255,.9)', strokeWidth: 1.6 };
+  return <>
+    {[[34, 'l2', 22], [46, '', 34], [114, 'l3', 34], [126, 'l4', 22]].map(([x, c, h]) => (
+      <rect key={x as number} className={`pg-bar ${c}`} x={(x as number) - 3} y={80 - (h as number) / 2} width="6" height={h as number} rx="3" fill={tint} opacity=".9" />
+    ))}
+    <rect x="62" y="34" width="36" height="58" rx="18" {...glass} />
+    {[50, 60, 70].map(y => <path key={y} d={`M70 ${y} H90`} stroke="#fff" strokeOpacity=".5" strokeWidth="1.6" strokeLinecap="round" />)}
+    <path d="M52 78 a28 28 0 0 0 56 0" fill="none" stroke="#fff" strokeOpacity=".85" strokeWidth="3" strokeLinecap="round" />
+    <path d="M80 106 V120 M68 122 H92" stroke="#fff" strokeOpacity=".85" strokeWidth="3" strokeLinecap="round" />
+  </>;
+}
+
+function All({ g }: { g: string }) {
+  const glass = { fill: g, stroke: 'rgba(255,255,255,.9)', strokeWidth: 1.6 };
+  return <>
+    <rect className="pg-t1" x="40" y="40" width="36" height="36" rx="9" {...glass} />
+    <rect className="pg-t2" x="84" y="40" width="36" height="36" rx="9" {...glass} />
+    <rect className="pg-t3" x="40" y="84" width="36" height="36" rx="9" {...glass} />
+    <g className="pg-t4">
+      <rect x="84" y="84" width="36" height="36" rx="9" {...glass} />
+      <path className="pg-lit" d="M102 93 V111 M93 102 H111" stroke="#fff" strokeWidth="3.2" strokeLinecap="round" fill="rgba(255,255,255,.2)" />
+    </g>
+    {[[52, 52], [96, 52], [52, 96]].map(([x, y]) => <rect key={`${x}${y}`} x={x} y={y} width="12" height="12" rx="3" fill="#fff" opacity=".55" />)}
+  </>;
+}
+
+export function ProductGlyph({ product, size = 80, playing, label }: { product: Product; size?: number; playing?: boolean; label?: string }) {
+  const id = `pg${useId().replace(/[^a-zA-Z0-9]/g, '')}`;
+  const [hover, setHover] = useState(false);
+  const on = playing ?? hover;
+  const tile = TILE[product];
+  const g = `url(#${id}-glass)`;
+  return (
+    <svg className="pg" data-on={on} width={size} height={size} viewBox="0 0 160 160" role={label ? 'img' : undefined} aria-label={label} aria-hidden={label ? undefined : true}
+      onMouseEnter={playing === undefined ? () => setHover(true) : undefined} onMouseLeave={playing === undefined ? () => setHover(false) : undefined}>
+      <style>{CSS}</style>
+      <defs>
+        <Glass id={id} />
+        <linearGradient id={`${id}-tile`} x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stopColor={tile.top} />
+          <stop offset="1" stopColor={tile.bottom} />
+        </linearGradient>
+        <radialGradient id={`${id}-halo`} cx=".5" cy=".5" r=".5">
+          <stop offset="0" stopColor={tile.tint} stopOpacity=".55" />
+          <stop offset="1" stopColor={tile.tint} stopOpacity="0" />
+        </radialGradient>
+        <clipPath id={`${id}-clip`}><rect width="160" height="160" rx="36" /></clipPath>
+      </defs>
+      <g clipPath={`url(#${id}-clip)`}>
+        <rect width="160" height="160" fill={`url(#${id}-tile)`} />
+        {[53, 107].map(x => <path key={x} d={`M${x} 92 V160`} stroke="#fff" strokeOpacity=".12" />)}
+        {[112, 136].map(y => <path key={y} d={`M0 ${y} H160`} stroke="#fff" strokeOpacity=".12" />)}
+        <circle className="pg-halo" cx="80" cy="80" r="58" fill={`url(#${id}-halo)`} />
+      </g>
+      <rect x=".75" y=".75" width="158.5" height="158.5" rx="35.5" fill="none" stroke="#fff" strokeOpacity=".16" strokeWidth="1.5" />
+      <g className="pg-obj" filter={`url(#${id}-glow)`}>
+        {product === 'ui-hub' && <UiHub g={g} tint={tile.tint} />}
+        {product === 'library' && <Library g={g} tint={tile.tint} />}
+        {product === 'os' && <Os g={g} tint={tile.tint} />}
+        {product === 'research' && <Research g={g} tint={tile.tint} id={id} />}
+        {product === 'agency' && <Agency g={g} />}
+        {product === 'voice' && <Voice g={g} tint={tile.tint} />}
+        {product === 'all' && <All g={g} />}
+      </g>
+    </svg>
+  );
+}
