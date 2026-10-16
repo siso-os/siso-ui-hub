@@ -89,5 +89,125 @@
   "from": "app/src/pages/VsPage.tsx",
   "reason": "Two libraries like for like: each part read for its job and placed on our skeleton; only jobs both do are questions; previews in place",
   "since": "2026-10-12"
+ },
+ "siso:app-frame": {
+  "from": "app/src/kitv1/siso/app-frame.tsx",
+  "reason": "One SISO app frame instead of 87 near-identical sidebars and app shells. Always there: search with a ⌘K palette, counts on items, the collapse button up top, animated icons on every row. 8 choices: layout (sidebar or rail + panel), look, collapse, switcher (workspaces or views), tools (none/4/6, each swaps the nav), nav, bottom, top bar; rail + panel rules out the bad pairs (no tools strip, switcher or bottom in the panel; it only slides away). Style tokens (scheme, matte or glass, font, radius) in frame-tokens.ts. 54 named variations in catalogue/app-frame.json; starts from SISO, HALO CRM, SISO CRM, Agent Base or Custom",
+  "since": "2026-10-14"
+ },
+ "siso:page-wire": {
+  "from": "app/src/components/kit/PageWire.tsx",
+  "reason": "A page type drawn as a wireframe from its recipe (shell, header, blocks, overlays), each block lit on hover; no library draws a page skeleton from a recipe list",
+  "since": "2026-10-15"
+ },
+ "siso:page-kit-map": {
+  "from": "app/src/pages/KitMap.tsx",
+  "reason": "The kit map as one screen: the which-level ladder, families as columns that scroll sideways, the kind under the pointer read out at the foot",
+  "since": "2026-10-15"
+ },
+ "siso:page-kit-pages": {
+  "from": "app/src/pages/KitPages.tsx",
+  "reason": "Page types as wire cards you click into; the detail page lights each recipe block and lists our pages of that type",
+  "since": "2026-10-15"
+ },
+ "siso:facet-menu": {
+  "from": "app/src/components/FacetMenu.tsx",
+  "reason": "One filter as one button with its value and a clear x; open, the choices with counts, biggest first, found by typing (Arc popover + the hub's command list). Replaces rows of filter chips that pushed parts off the first screen",
+  "since": "2026-10-15"
+ },
+ "siso:page-kit-dashboard": {
+  "from": "app/src/pages/KitDashboard.tsx",
+  "reason": "Dashboard kit: every chart, stat and data part live, one row per kind, Keep/Skip saved as bookmarks agents read with uihub kit",
+  "since": "2026-10-15"
+ },
+ "siso:kit-slot": {
+  "from": "app/src/lib/kitSlot.ts",
+  "reason": "The slot a library node page is filling; cards under it get Add to kit, writing the same siso/base pick as the SISO set",
+  "since": "2026-10-15"
+ },
+ "siso:families": {
+  "from": "app/src/lib/families.ts",
+  "reason": "Taxonomy v2: Layer > Family > Kind > Variation over the ontology's node keys (catalogue/schema/families.json), stub kinds for wants the library has no category for, and the kit dot state per kind",
+  "since": "2026-10-15"
+ },
+ "siso:kit-dot": {
+  "from": "app/src/components/KitDot.tsx",
+  "reason": "One mark for how full a kind is in the SISO kit (full, base picked, gap), used in the side nav, kind tiles and crumbs (spec C2)",
+  "since": "2026-10-15"
+ },
+ "siso:stage": {
+  "from": "app/src/components/Stage.tsx",
+  "reason": "One part live at real size with width, reload, fullscreen and sound/image/video modes; the component page and the kind page's kit pick both use it (spec C3)",
+  "since": "2026-10-15"
+ },
+ "siso:slot-strip": {
+  "from": "app/src/components/SlotStrip.tsx",
+  "reason": "A kind's base and variation slots, filled or a gap, in the sisolabs landing's tab rail; the selected slot is where Add to kit writes (spec C4)",
+  "since": "2026-10-15"
+ },
+ "siso:part-code": {
+  "from": "app/src/components/PartCode.tsx",
+  "reason": "A part's install lines and code under the Stage on a kind page, with line counts and copy (specs C9, C10)",
+  "since": "2026-10-15"
+ },
+ "siso:kind-tile": {
+  "from": "app/src/components/KindTile.tsx",
+  "reason": "One kind as a tile: a real screen of the kit's pick (or a strong library part while it is a gap), kit dot, name, part count (spec C7)",
+  "since": "2026-10-15"
+ },
+ "siso:family-band": {
+  "from": "app/src/components/FamilyBand.tsx",
+  "reason": "One family on a layer page: overline with how full it is in the kit, its job, its kinds as tiles (spec C6)",
+  "since": "2026-10-15"
+ },
+ "siso:layer-band": {
+  "from": "app/src/components/LayerBand.tsx",
+  "reason": "The kit home's first row: each layer of the SISO kit with four real screens and kinds in the kit (spec T1)",
+  "since": "2026-10-15"
+ },
+ "siso:page-kit-layer": {
+  "from": "app/src/pages/KitLayer.tsx",
+  "reason": "A layer of the SISO kit: every family as a band of kind tiles with real screens, how full each is, and Shuffle for the gaps (spec T2)",
+  "since": "2026-10-15"
+ },
+ "siso:widget-board": {
+  "from": "halo-streaming v2/ui/src/widgets (her Dashboard boards, the Operator's Performance grid)",
+  "reason": "The hub has no widget board: cards a person arranges, sizes and folds, kept per page (LANE-6-UI section 3).",
+  "since": "2026-10-15"
+ },
+ "siso:platform-glyph": {
+  "from": "halo-streaming v2/ui/src/icons/platform-glyph.tsx",
+  "reason": "Each cam site's own mark (Chaturbate, Stripchat, CamSoda and the rest): brand marks no icon library carries.",
+  "since": "2026-10-15"
+ },
+ "siso:ok-card": {
+  "from": "halo-streaming v2/ui/src/card/ok-card.tsx (the Operator's ok/Card)",
+  "reason": "The Operator's default, accent and flat card API; one Card API with hers waits for Phase B.",
+  "since": "2026-10-15"
+ },
+ "siso:list-row": {
+  "from": "halo-streaming v2/ui/src/item/list-row.tsx",
+  "reason": "Her list row over the item parts: a leading mark, two lines and a trailing value, across her Dashboard.",
+  "since": "2026-10-15"
+ },
+ "siso:seg": {
+  "from": "halo-streaming v2/ui/src/segmented/seg.tsx (the Operator's Direction B Seg)",
+  "reason": "The Operator's count switch with key caps and a priority tag; folds onto arc:segmented-control in Phase B.",
+  "since": "2026-10-15"
+ },
+ "siso:percent-slider": {
+  "from": "halo-streaming v2/ui/src/slider/percent-slider.tsx",
+  "reason": "A 0-100 split slider with its value label, a thin wrapper over the slider.",
+  "since": "2026-10-15"
+ },
+ "siso:page-tabs": {
+  "from": "halo-streaming v2/ui/src/tabs/page-tabs.tsx",
+  "reason": "Her page tab bar on Base UI Tabs with its sliding pill; arc:tabs's look waits for Phase B.",
+  "since": "2026-10-15"
+ },
+ "siso:quiet-segmented": {
+  "from": "halo-streaming v2/ui/src/segmented/segmented.tsx (her quiet row)",
+  "reason": "Her quiet toggle row keeps its own look in Phase A; folds onto arc:segmented-control in Phase B.",
+  "since": "2026-10-15"
  }
 }

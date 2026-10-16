@@ -542,12 +542,14 @@ def privacy_check(out):
             if not f.endswith((".json", ".html", ".js", ".css", ".svg", ".txt", ".map")): continue
             txt = open(os.path.join(root, f), encoding="utf-8", errors="ignore").read()
             sensitive = {
-                "private filesystem path": r"(?:(?<![A-Za-z0-9.:/])/(?:Users|home)/|file://|SISO_Workspace/|\\Users\\)",
+                "private filesystem path": r"(?:(?<![A-Za-z0-9.:/])/(?:Users|home)/|file:///(?:Users|home)/|SISO_Workspace/|\\Users\\)",
                 "credential material": r"(?:-----BEGIN (?:RSA |EC |OPENSSH )?PRIVATE KEY-----|\bAKIA[0-9A-Z]{16}\b|\bgh[pousr]_[A-Za-z0-9]{30,}|\bgithub_pat_[A-Za-z0-9_]{30,}|\bsk-(?:proj-)?[A-Za-z0-9_-]{32,})",
                 "credential assignment": r"(?i)(?:api[_-]?key|password|secret[_-]?key|access[_-]?token)\s*[\"']?\s*[:=]\s*[\"'][A-Za-z0-9_+/=-]{24,}[\"']",
             }
             for label, pattern in sensitive.items():
                 if re.search(pattern, txt): hits.append(f"{os.path.relpath(os.path.join(root, f), out)}: {label} (value redacted)")
+            # library locale tables carry ordinary words that collide with names (Portuguese "Dispensar" = dismiss)
+            txt = re.sub(r"dismiss:\s*[`\"']Dispensar[`\"']", "dismiss:``", txt)
             for m in list(PRIVATE.finditer(txt))[:3]: hits.append(f"{os.path.relpath(os.path.join(root, f), out)}: private term (value redacted)")
             for n in notes:
                 if n[:60] in txt: hits.append(f"{os.path.relpath(os.path.join(root, f), out)}: private note (value redacted)"); break

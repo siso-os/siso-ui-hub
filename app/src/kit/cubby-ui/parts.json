@@ -1,0 +1,1418 @@
+{
+"lib": "cubby-ui",
+"source": "cubby-ui",
+"homepage": "https://www.cubby-ui.dev",
+"description": "An opinionated component library with curated styling and simplified patterns for common use cases. Built on Base UI and Tailwind CSS 4.",
+"items": 80,
+"parts": [
+{
+"id": "cubby-ui/accordion",
+"name": "accordion",
+"title": "Accordion",
+"description": "A accordion component.",
+"type": "ui",
+"cat": "data-display/accordion",
+"domain": [],
+"file": "accordion/accordion.tsx",
+"files": [
+"accordion/accordion.tsx"
+],
+"deps": [
+"@hugeicons/react",
+"@hugeicons/core-free-icons"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://www.cubby-ui.dev/r/accordion.json"
+},
+{
+"id": "cubby-ui/alert-dialog",
+"name": "alert-dialog",
+"title": "Alert-dialog",
+"description": "A alert-dialog component.",
+"type": "ui",
+"cat": "overlays/dialog",
+"domain": [
+"dev tools"
+],
+"file": "alert-dialog/alert-dialog.tsx",
+"files": [
+"alert-dialog/alert-dialog.tsx"
+],
+"deps": [
+"@hugeicons/react",
+"@hugeicons/core-free-icons"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://www.cubby-ui.dev/r/alert-dialog.json"
+},
+{
+"id": "cubby-ui/alert",
+"name": "alert",
+"title": "Alert",
+"description": "A alert component.",
+"type": "ui",
+"cat": "overlays/alert-banner",
+"domain": [],
+"file": "alert/alert.tsx",
+"files": [
+"alert/alert.tsx"
+],
+"deps": [
+"class-variance-authority"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://www.cubby-ui.dev/r/alert.json"
+},
+{
+"id": "cubby-ui/aspect-ratio",
+"name": "aspect-ratio",
+"title": "Aspect-ratio",
+"description": "A aspect-ratio component.",
+"type": "ui",
+"cat": "layout/page-shell",
+"domain": [],
+"file": "aspect-ratio/aspect-ratio.tsx",
+"files": [
+"aspect-ratio/aspect-ratio.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://www.cubby-ui.dev/r/aspect-ratio.json"
+},
+{
+"id": "cubby-ui/autocomplete",
+"name": "autocomplete",
+"title": "Autocomplete",
+"description": "A autocomplete component.",
+"type": "ui",
+"cat": "inputs/combobox",
+"domain": [],
+"file": "autocomplete/autocomplete.tsx",
+"files": [
+"autocomplete/autocomplete.tsx"
+],
+"deps": [
+"@hugeicons/react",
+"@hugeicons/core-free-icons"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://www.cubby-ui.dev/r/autocomplete.json"
+},
+{
+"id": "cubby-ui/avatar",
+"name": "avatar",
+"title": "Avatar",
+"description": "A avatar component.",
+"type": "ui",
+"cat": "data-display/avatar",
+"domain": [],
+"file": "avatar/avatar.tsx",
+"files": [
+"avatar/avatar.tsx"
+],
+"deps": [
+"class-variance-authority"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://www.cubby-ui.dev/r/avatar.json"
+},
+{
+"id": "cubby-ui/badge",
+"name": "badge",
+"title": "Badge",
+"description": "A badge component.",
+"type": "ui",
+"cat": "data-display/badge",
+"domain": [],
+"file": "badge/badge.tsx",
+"files": [
+"badge/badge.tsx"
+],
+"deps": [
+"class-variance-authority"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://www.cubby-ui.dev/r/badge.json"
+},
+{
+"id": "cubby-ui/base-drawer",
+"name": "base-drawer",
+"title": "Base Drawer",
+"description": "A base-drawer component.",
+"type": "ui",
+"cat": "overlays/sheet",
+"domain": [],
+"file": "base-drawer/base-drawer.tsx",
+"files": [
+"base-drawer/base-drawer.tsx"
+],
+"deps": [
+"@hugeicons/react",
+"@hugeicons/core-free-icons"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://www.cubby-ui.dev/r/base-drawer.json"
+},
+{
+"id": "cubby-ui/breadcrumbs",
+"name": "breadcrumbs",
+"title": "Breadcrumbs",
+"description": "A breadcrumbs component.",
+"type": "ui",
+"cat": "navigation/breadcrumb",
+"domain": [],
+"file": "breadcrumbs/breadcrumbs.tsx",
+"files": [
+"breadcrumbs/breadcrumbs.tsx"
+],
+"deps": [
+"@hugeicons/react",
+"@hugeicons/core-free-icons"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://www.cubby-ui.dev/r/breadcrumbs.json"
+},
+{
+"id": "cubby-ui/button-group",
+"name": "button-group",
+"title": "Button Group",
+"description": "A button-group component.",
+"type": "ui",
+"cat": "actions/button",
+"domain": [],
+"file": "button-group/button-group.tsx",
+"files": [
+"button-group/button-group.tsx",
+"button-group/button-group.css"
+],
+"deps": [
+"class-variance-authority"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://www.cubby-ui.dev/r/button-group.json"
+},
+{
+"id": "cubby-ui/button",
+"name": "button",
+"title": "Button",
+"description": "A simple button component.",
+"type": "ui",
+"cat": "actions/button",
+"domain": [],
+"file": "button/button.tsx",
+"files": [
+"button/button.tsx"
+],
+"deps": [
+"class-variance-authority",
+"@hugeicons/react",
+"@hugeicons/core-free-icons"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://www.cubby-ui.dev/r/button.json"
+},
+{
+"id": "cubby-ui/calendar",
+"name": "calendar",
+"title": "Calendar",
+"description": "A calendar component.",
+"type": "ui",
+"cat": "data-display/calendar",
+"domain": [],
+"file": "calendar/calendar.tsx",
+"files": [
+"calendar/calendar.tsx",
+"calendar/calendar-picker.tsx",
+"calendar/calendar.css"
+],
+"deps": [
+"react-day-picker",
+"@hugeicons/react",
+"@hugeicons/core-free-icons"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://www.cubby-ui.dev/r/calendar.json"
+},
+{
+"id": "cubby-ui/card",
+"name": "card",
+"title": "Card",
+"description": "A card component.",
+"type": "ui",
+"cat": "data-display/card",
+"domain": [],
+"file": "card/card.tsx",
+"files": [
+"card/card.tsx"
+],
+"deps": [
+"class-variance-authority"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://www.cubby-ui.dev/r/card.json"
+},
+{
+"id": "cubby-ui/carousel",
+"name": "carousel",
+"title": "Carousel",
+"description": "A carousel component.",
+"type": "ui",
+"cat": "media/carousel",
+"domain": [],
+"file": "carousel/carousel.tsx",
+"files": [
+"carousel/carousel.tsx"
+],
+"deps": [
+"embla-carousel-react",
+"@hugeicons/react",
+"@hugeicons/core-free-icons"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://www.cubby-ui.dev/r/carousel.json"
+},
+{
+"id": "cubby-ui/checkbox-group",
+"name": "checkbox-group",
+"title": "Checkbox-group",
+"description": "A checkbox-group component.",
+"type": "ui",
+"cat": "inputs/checkbox",
+"domain": [],
+"file": "checkbox-group/checkbox-group.tsx",
+"files": [
+"checkbox-group/checkbox-group.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://www.cubby-ui.dev/r/checkbox-group.json"
+},
+{
+"id": "cubby-ui/checkbox",
+"name": "checkbox",
+"title": "Checkbox",
+"description": "A checkbox component.",
+"type": "ui",
+"cat": "inputs/checkbox",
+"domain": [],
+"file": "checkbox/checkbox.tsx",
+"files": [
+"checkbox/checkbox.tsx"
+],
+"deps": [
+"@hugeicons/react",
+"@hugeicons/core-free-icons"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://www.cubby-ui.dev/r/checkbox.json"
+},
+{
+"id": "cubby-ui/circular-slider",
+"name": "circular-slider",
+"title": "Circular Slider",
+"description": "A circular-slider component.",
+"type": "ui",
+"cat": "inputs/slider",
+"domain": [
+"maps"
+],
+"file": "circular-slider/circular-slider.tsx",
+"files": [
+"circular-slider/circular-slider.tsx",
+"circular-slider/lib/geometry.ts"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://www.cubby-ui.dev/r/circular-slider.json"
+},
+{
+"id": "cubby-ui/code-block",
+"name": "code-block",
+"title": "Code-block",
+"description": "A code-block component.",
+"type": "ui",
+"cat": "data-display/code-block",
+"domain": [
+"dev tools"
+],
+"file": "code-block/code-block.tsx",
+"files": [
+"code-block/code-block.tsx",
+"code-block/lib/shiki-shared.ts",
+"code-block/lib/transformers/diff.ts",
+"code-block/lib/transformers/focus.ts",
+"code-block/lib/transformers/highlight-lines.ts",
+"code-block/lib/transformers/utils.ts"
+],
+"deps": [
+"@icons-pack/react-simple-icons",
+"shiki",
+"@hugeicons/react",
+"@hugeicons/core-free-icons",
+"hast-util-to-jsx-runtime"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://www.cubby-ui.dev/r/code-block.json"
+},
+{
+"id": "cubby-ui/collapsible",
+"name": "collapsible",
+"title": "Collapsible",
+"description": "A collapsible component.",
+"type": "ui",
+"cat": "data-display/accordion",
+"domain": [],
+"file": "collapsible/collapsible.tsx",
+"files": [
+"collapsible/collapsible.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://www.cubby-ui.dev/r/collapsible.json"
+},
+{
+"id": "cubby-ui/combobox",
+"name": "combobox",
+"title": "Combobox",
+"description": "A combobox component.",
+"type": "ui",
+"cat": "inputs/combobox",
+"domain": [],
+"file": "combobox/combobox.tsx",
+"files": [
+"combobox/combobox.tsx",
+"combobox/hooks/use-async-combobox.ts",
+"combobox/hooks/use-creatable-combobox.ts"
+],
+"deps": [
+"@hugeicons/react",
+"@hugeicons/core-free-icons"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://www.cubby-ui.dev/r/combobox.json"
+},
+{
+"id": "cubby-ui/command",
+"name": "command",
+"title": "Command",
+"description": "A command component.",
+"type": "ui",
+"cat": "navigation/command-palette",
+"domain": [],
+"file": "command/command.tsx",
+"files": [
+"command/command.tsx"
+],
+"deps": [
+"@hugeicons/react",
+"@hugeicons/core-free-icons"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://www.cubby-ui.dev/r/command.json"
+},
+{
+"id": "cubby-ui/context-menu",
+"name": "context-menu",
+"title": "Context-menu",
+"description": "A context-menu component.",
+"type": "ui",
+"cat": "overlays/context-menu",
+"domain": [],
+"file": "context-menu/context-menu.tsx",
+"files": [
+"context-menu/context-menu.tsx"
+],
+"deps": [
+"@hugeicons/react",
+"@hugeicons/core-free-icons"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://www.cubby-ui.dev/r/context-menu.json"
+},
+{
+"id": "cubby-ui/copy-button",
+"name": "copy-button",
+"title": "Copy Button",
+"description": "A copy-button component.",
+"type": "ui",
+"cat": "actions/copy-button",
+"domain": [
+"dev tools"
+],
+"file": "copy-button/copy-button.tsx",
+"files": [
+"copy-button/copy-button.tsx",
+"copy-button/hooks/use-copy-to-clipboard.ts"
+],
+"deps": [
+"@hugeicons/react",
+"@hugeicons/core-free-icons"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://www.cubby-ui.dev/r/copy-button.json"
+},
+{
+"id": "cubby-ui/data-table",
+"name": "data-table",
+"title": "Data Table",
+"description": "A data-table component.",
+"type": "ui",
+"cat": "data-display/table",
+"domain": [],
+"file": "data-table/data-table.tsx",
+"files": [
+"data-table/data-table.tsx",
+"data-table/data-table-column-toggle.tsx",
+"data-table/data-table-context.tsx",
+"data-table/data-table-pagination.tsx",
+"data-table/data-table-search.tsx"
+],
+"deps": [
+"@tanstack/react-table",
+"@hugeicons/react",
+"@hugeicons/core-free-icons"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://www.cubby-ui.dev/r/data-table.json"
+},
+{
+"id": "cubby-ui/date-picker",
+"name": "date-picker",
+"title": "Date-picker",
+"description": "A date-picker component.",
+"type": "ui",
+"cat": "inputs/date-picker",
+"domain": [],
+"file": "date-picker/date-picker.tsx",
+"files": [
+"date-picker/date-picker.tsx",
+"date-picker/date-picker-parts.tsx"
+],
+"deps": [
+"react-day-picker",
+"class-variance-authority",
+"@hugeicons/react",
+"@hugeicons/core-free-icons"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://www.cubby-ui.dev/r/date-picker.json"
+},
+{
+"id": "cubby-ui/date-range-picker",
+"name": "date-range-picker",
+"title": "Date-range-picker",
+"description": "A date-range-picker component.",
+"type": "ui",
+"cat": "inputs/date-range",
+"domain": [],
+"file": "date-range-picker/date-range-picker.tsx",
+"files": [
+"date-range-picker/date-range-picker.tsx"
+],
+"deps": [
+"react-day-picker",
+"class-variance-authority"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://www.cubby-ui.dev/r/date-range-picker.json"
+},
+{
+"id": "cubby-ui/dialog",
+"name": "dialog",
+"title": "Dialog",
+"description": "A dialog component.",
+"type": "ui",
+"cat": "overlays/dialog",
+"domain": [
+"dev tools"
+],
+"file": "dialog/dialog.tsx",
+"files": [
+"dialog/dialog.tsx"
+],
+"deps": [
+"@hugeicons/react",
+"@hugeicons/core-free-icons"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://www.cubby-ui.dev/r/dialog.json"
+},
+{
+"id": "cubby-ui/drawer",
+"name": "drawer",
+"title": "Drawer",
+"description": "A drawer component.",
+"type": "ui",
+"cat": "overlays/sheet",
+"domain": [],
+"file": "drawer/drawer.tsx",
+"files": [
+"drawer/drawer.tsx",
+"drawer/lib/drawer-utils.ts",
+"drawer/hooks/use-scroll-snap.ts",
+"drawer/hooks/use-virtual-keyboard.ts",
+"drawer/hooks/use-visual-viewport-height.ts",
+"drawer/drawer.css"
+],
+"deps": [
+"class-variance-authority",
+"@hugeicons/react",
+"@hugeicons/core-free-icons"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://www.cubby-ui.dev/r/drawer.json"
+},
+{
+"id": "cubby-ui/dropdown-menu",
+"name": "dropdown-menu",
+"title": "Dropdown-menu",
+"description": "A dropdown-menu component.",
+"type": "ui",
+"cat": "navigation/menu",
+"domain": [],
+"file": "dropdown-menu/dropdown-menu.tsx",
+"files": [
+"dropdown-menu/dropdown-menu.tsx"
+],
+"deps": [
+"@hugeicons/react",
+"@hugeicons/core-free-icons"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://www.cubby-ui.dev/r/dropdown-menu.json"
+},
+{
+"id": "cubby-ui/fancy-button",
+"name": "fancy-button",
+"title": "Fancy Button",
+"description": "A fancy-button component.",
+"type": "ui",
+"cat": "actions/button",
+"domain": [],
+"file": "fancy-button/fancy-button.tsx",
+"files": [
+"fancy-button/fancy-button.tsx"
+],
+"deps": [
+"class-variance-authority"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://www.cubby-ui.dev/r/fancy-button.json"
+},
+{
+"id": "cubby-ui/field",
+"name": "field",
+"title": "Field",
+"description": "A field component.",
+"type": "ui",
+"cat": "inputs/form-field",
+"domain": [],
+"file": "field/field.tsx",
+"files": [
+"field/field.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://www.cubby-ui.dev/r/field.json"
+},
+{
+"id": "cubby-ui/fieldset",
+"name": "fieldset",
+"title": "Fieldset",
+"description": "A fieldset component.",
+"type": "ui",
+"cat": "inputs/form-field",
+"domain": [],
+"file": "fieldset/fieldset.tsx",
+"files": [
+"fieldset/fieldset.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://www.cubby-ui.dev/r/fieldset.json"
+},
+{
+"id": "cubby-ui/filters",
+"name": "filters",
+"title": "Filters",
+"description": "A filter bar of sentence-like chips with per-field operators and a two-step add menu.",
+"type": "ui",
+"cat": "data-display/badge",
+"domain": [],
+"file": "filters/filters.tsx",
+"files": [
+"filters/filters.tsx",
+"filters/lib/filters-types.ts",
+"filters/lib/filters-utils.ts",
+"filters/lib/flow-presence.ts",
+"filters/filters-add-menu.tsx",
+"filters/filters-context.tsx",
+"filters/filters-value-controls.tsx"
+],
+"deps": [
+"@hugeicons/react",
+"@hugeicons/core-free-icons"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://www.cubby-ui.dev/r/filters.json"
+},
+{
+"id": "cubby-ui/form",
+"name": "form",
+"title": "Form",
+"description": "A form component.",
+"type": "ui",
+"cat": "inputs/form-field",
+"domain": [],
+"file": "form/form.tsx",
+"files": [
+"form/form.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://www.cubby-ui.dev/r/form.json"
+},
+{
+"id": "cubby-ui/input-group",
+"name": "input-group",
+"title": "Input Group",
+"description": "A input-group component.",
+"type": "ui",
+"cat": "inputs/form-field",
+"domain": [],
+"file": "input-group/input-group.tsx",
+"files": [
+"input-group/input-group.tsx"
+],
+"deps": [
+"class-variance-authority"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://www.cubby-ui.dev/r/input-group.json"
+},
+{
+"id": "cubby-ui/input",
+"name": "input",
+"title": "Input",
+"description": "A input component.",
+"type": "ui",
+"cat": "inputs/form-field",
+"domain": [],
+"file": "input/input.tsx",
+"files": [
+"input/input.tsx"
+],
+"deps": [
+"class-variance-authority"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://www.cubby-ui.dev/r/input.json"
+},
+{
+"id": "cubby-ui/kbd",
+"name": "kbd",
+"title": "Kbd",
+"description": "A kbd component.",
+"type": "ui",
+"cat": "data-display/typography",
+"domain": [],
+"file": "kbd/kbd.tsx",
+"files": [
+"kbd/kbd.tsx"
+],
+"deps": [
+"class-variance-authority"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://www.cubby-ui.dev/r/kbd.json"
+},
+{
+"id": "cubby-ui/label",
+"name": "label",
+"title": "Label",
+"description": "A label component.",
+"type": "ui",
+"cat": "inputs/form-field",
+"domain": [],
+"file": "label/label.tsx",
+"files": [
+"label/label.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://www.cubby-ui.dev/r/label.json"
+},
+{
+"id": "cubby-ui/marching-border",
+"name": "marching-border",
+"title": "Marching Border",
+"description": "A marching-border component.",
+"type": "ui",
+"cat": "motion/border",
+"domain": [
+"commerce"
+],
+"file": "marching-border/marching-border.tsx",
+"files": [
+"marching-border/marching-border.tsx",
+"marching-border/marching-border.css"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://www.cubby-ui.dev/r/marching-border.json"
+},
+{
+"id": "cubby-ui/menubar",
+"name": "menubar",
+"title": "Menubar",
+"description": "A menubar component.",
+"type": "ui",
+"cat": "navigation/top-nav",
+"domain": [],
+"file": "menubar/menubar.tsx",
+"files": [
+"menubar/menubar.tsx"
+],
+"deps": [
+"@hugeicons/react",
+"@hugeicons/core-free-icons"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://www.cubby-ui.dev/r/menubar.json"
+},
+{
+"id": "cubby-ui/meter",
+"name": "meter",
+"title": "Meter",
+"description": "A meter component.",
+"type": "ui",
+"cat": "data-viz/gauge",
+"domain": [],
+"file": "meter/meter.tsx",
+"files": [
+"meter/meter.tsx",
+"meter/lib/meter-thresholds.ts"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://www.cubby-ui.dev/r/meter.json"
+},
+{
+"id": "cubby-ui/navigation-menu",
+"name": "navigation-menu",
+"title": "Navigation-menu",
+"description": "A navigation-menu component.",
+"type": "ui",
+"cat": "navigation/top-nav",
+"domain": [],
+"file": "navigation-menu/navigation-menu.tsx",
+"files": [
+"navigation-menu/navigation-menu.tsx"
+],
+"deps": [
+"class-variance-authority"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://www.cubby-ui.dev/r/navigation-menu.json"
+},
+{
+"id": "cubby-ui/number-field",
+"name": "number-field",
+"title": "Number Field",
+"description": "A number-field component.",
+"type": "ui",
+"cat": "inputs/number-input",
+"domain": [],
+"file": "number-field/number-field.tsx",
+"files": [
+"number-field/number-field.tsx"
+],
+"deps": [
+"class-variance-authority",
+"@hugeicons/react",
+"@hugeicons/core-free-icons"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://www.cubby-ui.dev/r/number-field.json"
+},
+{
+"id": "cubby-ui/otp-field",
+"name": "otp-field",
+"title": "Otp Field",
+"description": "A otp-field component.",
+"type": "ui",
+"cat": "inputs/otp-input",
+"domain": [],
+"file": "otp-field/otp-field.tsx",
+"files": [
+"otp-field/otp-field.tsx",
+"otp-field/hooks/use-invalid-feedback.ts",
+"otp-field/otp-field.css"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://www.cubby-ui.dev/r/otp-field.json"
+},
+{
+"id": "cubby-ui/pagination",
+"name": "pagination",
+"title": "Pagination",
+"description": "A pagination component.",
+"type": "ui",
+"cat": "navigation/pagination",
+"domain": [],
+"file": "pagination/pagination.tsx",
+"files": [
+"pagination/pagination.tsx",
+"pagination/lib/range.ts",
+"pagination/pagination.css"
+],
+"deps": [
+"class-variance-authority",
+"@hugeicons/react",
+"@hugeicons/core-free-icons"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://www.cubby-ui.dev/r/pagination.json"
+},
+{
+"id": "cubby-ui/popover",
+"name": "popover",
+"title": "Popover",
+"description": "A popover component.",
+"type": "ui",
+"cat": "overlays/popover",
+"domain": [],
+"file": "popover/popover.tsx",
+"files": [
+"popover/popover.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://www.cubby-ui.dev/r/popover.json"
+},
+{
+"id": "cubby-ui/preview-card",
+"name": "preview-card",
+"title": "Preview-card",
+"description": "A preview-card component.",
+"type": "ui",
+"cat": "data-display/card",
+"domain": [],
+"file": "preview-card/preview-card.tsx",
+"files": [
+"preview-card/preview-card.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://www.cubby-ui.dev/r/preview-card.json"
+},
+{
+"id": "cubby-ui/progress",
+"name": "progress",
+"title": "Progress",
+"description": "A progress component.",
+"type": "ui",
+"cat": "data-viz/progress-bar",
+"domain": [],
+"file": "progress/progress.tsx",
+"files": [
+"progress/progress.tsx",
+"progress/progress.css"
+],
+"deps": [
+"class-variance-authority"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://www.cubby-ui.dev/r/progress.json"
+},
+{
+"id": "cubby-ui/qr-code",
+"name": "qr-code",
+"title": "QR Code",
+"description": "A from-scratch, zero-dependency QR code generator rendered as pure scalable SVG.",
+"type": "ui",
+"cat": "data-display/code-block",
+"domain": [
+"dev tools"
+],
+"file": "qr-code/qr-code.tsx",
+"files": [
+"qr-code/qr-code.tsx",
+"qr-code/lib/bit-buffer.ts",
+"qr-code/lib/encoder.ts",
+"qr-code/lib/export.ts",
+"qr-code/lib/galois.ts",
+"qr-code/lib/index.ts",
+"qr-code/lib/mask.ts",
+"qr-code/lib/matrix.ts",
+"qr-code/lib/mode.ts",
+"qr-code/lib/path-builders.ts",
+"qr-code/lib/reed-solomon.ts",
+"qr-code/lib/rounded.ts",
+"qr-code/lib/svg-builder.ts",
+"qr-code/lib/tables.ts",
+"qr-code/lib/types.ts"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://www.cubby-ui.dev/r/qr-code.json"
+},
+{
+"id": "cubby-ui/radio-group",
+"name": "radio-group",
+"title": "Radio-group",
+"description": "A radio-group component.",
+"type": "ui",
+"cat": "inputs/radio",
+"domain": [],
+"file": "radio-group/radio-group.tsx",
+"files": [
+"radio-group/radio-group.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://www.cubby-ui.dev/r/radio-group.json"
+},
+{
+"id": "cubby-ui/resizable",
+"name": "resizable",
+"title": "Resizable",
+"description": "A resizable component.",
+"type": "ui",
+"cat": "layout/split-pane",
+"domain": [],
+"file": "resizable/resizable.tsx",
+"files": [
+"resizable/resizable.tsx"
+],
+"deps": [
+"class-variance-authority",
+"react-resizable-panels"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://www.cubby-ui.dev/r/resizable.json"
+},
+{
+"id": "cubby-ui/scroll-area",
+"name": "scroll-area",
+"title": "Scroll-area",
+"description": "A scroll-area component.",
+"type": "ui",
+"cat": "layout/scroll-area",
+"domain": [],
+"file": "scroll-area/scroll-area.tsx",
+"files": [
+"scroll-area/scroll-area.tsx",
+"scroll-area/scroll-area.css"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://www.cubby-ui.dev/r/scroll-area.json"
+},
+{
+"id": "cubby-ui/select",
+"name": "select",
+"title": "Select",
+"description": "A select component.",
+"type": "ui",
+"cat": "inputs/select",
+"domain": [],
+"file": "select/select.tsx",
+"files": [
+"select/select.tsx"
+],
+"deps": [
+"class-variance-authority",
+"@hugeicons/react",
+"@hugeicons/core-free-icons"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://www.cubby-ui.dev/r/select.json"
+},
+{
+"id": "cubby-ui/separator",
+"name": "separator",
+"title": "Separator",
+"description": "A separator component.",
+"type": "ui",
+"cat": "layout/page-shell",
+"domain": [],
+"file": "separator/separator.tsx",
+"files": [
+"separator/separator.tsx"
+],
+"deps": [
+"class-variance-authority"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://www.cubby-ui.dev/r/separator.json"
+},
+{
+"id": "cubby-ui/sheet",
+"name": "sheet",
+"title": "Sheet",
+"description": "A sheet component.",
+"type": "ui",
+"cat": "overlays/sheet",
+"domain": [],
+"file": "sheet/sheet.tsx",
+"files": [
+"sheet/sheet.tsx"
+],
+"deps": [
+"class-variance-authority",
+"@hugeicons/react",
+"@hugeicons/core-free-icons"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://www.cubby-ui.dev/r/sheet.json"
+},
+{
+"id": "cubby-ui/skeleton",
+"name": "skeleton",
+"title": "Skeleton",
+"description": "A skeleton component.",
+"type": "ui",
+"cat": "status/skeleton",
+"domain": [],
+"file": "skeleton/skeleton.tsx",
+"files": [
+"skeleton/skeleton.tsx",
+"skeleton/skeleton.css"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://www.cubby-ui.dev/r/skeleton.json"
+},
+{
+"id": "cubby-ui/slider",
+"name": "slider",
+"title": "Slider",
+"description": "A slider component.",
+"type": "ui",
+"cat": "inputs/slider",
+"domain": [],
+"file": "slider/slider.tsx",
+"files": [
+"slider/slider.tsx"
+],
+"deps": [
+"class-variance-authority"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://www.cubby-ui.dev/r/slider.json"
+},
+{
+"id": "cubby-ui/switch",
+"name": "switch",
+"title": "Switch",
+"description": "A switch component.",
+"type": "ui",
+"cat": "actions/switch",
+"domain": [],
+"file": "switch/switch.tsx",
+"files": [
+"switch/switch.tsx",
+"switch/switch.css"
+],
+"deps": [
+"class-variance-authority"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://www.cubby-ui.dev/r/switch.json"
+},
+{
+"id": "cubby-ui/table",
+"name": "table",
+"title": "Table",
+"description": "A table component.",
+"type": "ui",
+"cat": "data-display/table",
+"domain": [],
+"file": "table/table.tsx",
+"files": [
+"table/table.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://www.cubby-ui.dev/r/table.json"
+},
+{
+"id": "cubby-ui/tabs",
+"name": "tabs",
+"title": "Tabs",
+"description": "A tabs component.",
+"type": "ui",
+"cat": "navigation/tabs",
+"domain": [],
+"file": "tabs/tabs.tsx",
+"files": [
+"tabs/tabs.tsx"
+],
+"deps": [
+"class-variance-authority"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://www.cubby-ui.dev/r/tabs.json"
+},
+{
+"id": "cubby-ui/text-morph",
+"name": "text-morph",
+"title": "Text Morph",
+"description": "Animates a label from one value to the next, glyph by glyph.",
+"type": "ui",
+"cat": "motion/text-effect",
+"domain": [],
+"file": "text-morph/text-morph.tsx",
+"files": [
+"text-morph/text-morph.tsx",
+"text-morph/lib/anchors.ts",
+"text-morph/lib/edges.ts",
+"text-morph/lib/match.ts",
+"text-morph/lib/measure.ts",
+"text-morph/lib/options.ts",
+"text-morph/lib/ride.ts",
+"text-morph/lib/scheduler.ts",
+"text-morph/lib/shapes.ts",
+"text-morph/lib/timing.ts",
+"text-morph/text-morph.css"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://www.cubby-ui.dev/r/text-morph.json"
+},
+{
+"id": "cubby-ui/textarea",
+"name": "textarea",
+"title": "Textarea",
+"description": "A textarea component.",
+"type": "ui",
+"cat": "inputs/textarea",
+"domain": [],
+"file": "textarea/textarea.tsx",
+"files": [
+"textarea/textarea.tsx"
+],
+"deps": [
+"class-variance-authority"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://www.cubby-ui.dev/r/textarea.json"
+},
+{
+"id": "cubby-ui/timeline",
+"name": "timeline",
+"title": "Timeline",
+"description": "A timeline component.",
+"type": "ui",
+"cat": "data-display/timeline",
+"domain": [],
+"file": "timeline/timeline.tsx",
+"files": [
+"timeline/timeline.tsx"
+],
+"deps": [
+"class-variance-authority"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://www.cubby-ui.dev/r/timeline.json"
+},
+{
+"id": "cubby-ui/toast",
+"name": "toast",
+"title": "Toast",
+"description": "A toast component.",
+"type": "ui",
+"cat": "overlays/toast",
+"domain": [],
+"file": "toast/toast.tsx",
+"files": [
+"toast/toast.tsx",
+"toast/toast.css"
+],
+"deps": [
+"class-variance-authority",
+"motion",
+"@hugeicons/react",
+"@hugeicons/core-free-icons"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://www.cubby-ui.dev/r/toast.json"
+},
+{
+"id": "cubby-ui/toggle-group",
+"name": "toggle-group",
+"title": "Toggle-group",
+"description": "A toggle-group component.",
+"type": "ui",
+"cat": "actions/switch",
+"domain": [],
+"file": "toggle-group/toggle-group.tsx",
+"files": [
+"toggle-group/toggle-group.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://www.cubby-ui.dev/r/toggle-group.json"
+},
+{
+"id": "cubby-ui/toggle",
+"name": "toggle",
+"title": "Toggle",
+"description": "A toggle component.",
+"type": "ui",
+"cat": "actions/switch",
+"domain": [],
+"file": "toggle/toggle.tsx",
+"files": [
+"toggle/toggle.tsx"
+],
+"deps": [
+"class-variance-authority"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://www.cubby-ui.dev/r/toggle.json"
+},
+{
+"id": "cubby-ui/toolbar",
+"name": "toolbar",
+"title": "Toolbar",
+"description": "A toolbar component.",
+"type": "ui",
+"cat": "navigation/menu",
+"domain": [],
+"file": "toolbar/toolbar.tsx",
+"files": [
+"toolbar/toolbar.tsx"
+],
+"deps": [
+"class-variance-authority"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://www.cubby-ui.dev/r/toolbar.json"
+},
+{
+"id": "cubby-ui/tooltip",
+"name": "tooltip",
+"title": "Tooltip",
+"description": "A tooltip component.",
+"type": "ui",
+"cat": "overlays/tooltip",
+"domain": [],
+"file": "tooltip/tooltip.tsx",
+"files": [
+"tooltip/tooltip.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://www.cubby-ui.dev/r/tooltip.json"
+},
+{
+"id": "cubby-ui/transition-panel",
+"name": "transition-panel",
+"title": "Transition Panel",
+"description": "A transition-panel component.",
+"type": "ui",
+"cat": "data-display/card",
+"domain": [],
+"file": "transition-panel/transition-panel.tsx",
+"files": [
+"transition-panel/transition-panel.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://www.cubby-ui.dev/r/transition-panel.json"
+},
+{
+"id": "cubby-ui/tree",
+"name": "tree",
+"title": "Tree",
+"description": "A tree component.",
+"type": "ui",
+"cat": "data-display/tree",
+"domain": [],
+"file": "tree/tree.tsx",
+"files": [
+"tree/tree.tsx",
+"tree/lib/tree-utils.ts"
+],
+"deps": [
+"@hugeicons/react",
+"@hugeicons/core-free-icons"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://www.cubby-ui.dev/r/tree.json"
+}
+]
+}

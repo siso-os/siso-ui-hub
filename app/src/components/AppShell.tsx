@@ -10,10 +10,9 @@ import { Tooltip, TooltipContent, TooltipTrigger } from "@/components/ui/tooltip
 import { useBookmarks } from "@/lib/bookmarks"
 import { useIndex } from "@/lib/data"
 import { SideNav } from "./SideNav"
-import { SearchDeck } from "./SearchDeck"
 import { CommandSearch } from "./CommandSearch"
 import { PillSwitch } from "@/components/ui/pill-switch"
-import { setTopTab, tabOf, topTabs, useTopTab } from "@/lib/tab"
+import { setTopTab, tabOf, topTabs, useTopTab, type TopTab } from "@/lib/tab"
 import { coreOf } from "@/lib/factory"
 import { Me } from "@/lib/auth"
 
@@ -36,6 +35,15 @@ const NOTICE_KEY = "uihub.localNotice"
 function LocalNotice() {
   const { store } = useBookmarks()
   const [hidden, setHidden] = useState(() => localStorage.getItem(NOTICE_KEY) === "1")
+  // said once, then it goes by itself: it never sits over the page
+  useEffect(() => {
+    if (store !== "local" || hidden) return
+    const t = setTimeout(() => {
+      localStorage.setItem(NOTICE_KEY, "1")
+      setHidden(true)
+    }, 6000)
+    return () => clearTimeout(t)
+  }, [store, hidden])
   if (store !== "local" || hidden) return null
   return (
     <div role="status" data-verify-bookmark-store="local" className="siso-rim is-idle siso-rise fixed right-4 bottom-4 z-50 flex max-w-sm items-start gap-3 p-3 text-sm">
@@ -114,6 +122,8 @@ export function AppShell() {
   const unspot = () => frame.current?.style.setProperty("--spot", "0")
   // the UI Hub's tabs show in the UI Hub; the factory's home and the other cores have none yet
   const inUi = !!idx?.public || coreOf(loc.pathname) === "ui"
+  // the whole kit's pages belong to no one scale, so no pill is lit there
+  const wholeKit = ["/kit", "/kit/map", "/ours", "/bookmarks"].includes(loc.pathname) || (loc.pathname === "/siso" && !new URLSearchParams(loc.search).get("scale"))
 
   const toggleCollapsed = () =>
     setCollapsed((c) => {
@@ -190,7 +200,7 @@ export function AppShell() {
             {/* the top tabs, a pill switch: the chosen one shows its name, and it changes the side nav */}
             {inUi && (
               <div className={cn("hidden lg:flex", collapsed && "ml-1")} data-verify-topnav="desktop">
-                <PillSwitch label="Top" options={topTabs(idx?.public)} value={tab} onChange={setTopTab} />
+                <PillSwitch label="Top" options={topTabs(idx?.public)} value={wholeKit ? ("" as TopTab) : tab} onChange={setTopTab} />
               </div>
             )}
           </div>
@@ -218,9 +228,8 @@ export function AppShell() {
         <TopLinks className="sticky top-14 z-20 flex gap-1 overflow-x-auto border-b bg-background/85 px-3 py-1.5 backdrop-blur [scrollbar-width:none] supports-[backdrop-filter]:bg-background/70 lg:hidden" />
         <div className="siso-sheet" onMouseMove={spot} onMouseLeave={unspot}>
           <main id="main-content" tabIndex={-1} className="mx-auto w-full max-w-[1600px] px-4 py-6 lg:px-8 lg:py-8">
-            {/* the search deck tops most pages (Shaan, 11 Oct: "a search 3d bar ... at the top of most pages") */}
-            {/* Home carries it inside its 3D band (components/TypeCity.tsx) */}
-            {idx && loc.pathname !== "/" && !/^\/(c|projects|factory|cores)(\/|$)/.test(loc.pathname) && <SearchDeck className="mx-auto mb-7 max-w-3xl" />}
+            {/* no search card on top of the pages (Shaan, 15 Oct: "I don't like how it's got the search up top always ... the
+                search UI is already ... in the side nav"); the side nav's bar and ⌘K are the one search */}
             {idx ? (
               <div key={loc.pathname} className="siso-page">
                 <Outlet />

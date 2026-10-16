@@ -1,0 +1,1884 @@
+{
+"lib": "shark",
+"source": "shark",
+"homepage": "https://shark.vini.one",
+"description": "shadcn/ui-style components built on Ark UI.",
+"items": 95,
+"parts": [
+{
+"id": "shark/accordion",
+"name": "accordion",
+"title": "Accordion",
+"description": "",
+"type": "ui",
+"cat": "data-display/accordion",
+"domain": [],
+"file": "react/components/accordion.tsx",
+"files": [
+"react/components/accordion.tsx"
+],
+"deps": [
+"@ark-ui/react",
+"lucide-react"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://shark.vini.one/r/accordion.json"
+},
+{
+"id": "shark/action-bar",
+"name": "action-bar",
+"title": "Action bar",
+"description": "",
+"type": "ui",
+"cat": "other/other",
+"domain": [],
+"file": "react/components/action-bar.tsx",
+"files": [
+"react/components/action-bar.tsx"
+],
+"deps": [
+"@ark-ui/react",
+"tailwind-variants"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://shark.vini.one/r/action-bar.json"
+},
+{
+"id": "shark/alert-dialog",
+"name": "alert-dialog",
+"title": "Alert dialog",
+"description": "",
+"type": "ui",
+"cat": "overlays/dialog",
+"domain": [
+"dev tools"
+],
+"file": "react/components/alert-dialog.tsx",
+"files": [
+"react/components/alert-dialog.tsx"
+],
+"deps": [
+"@ark-ui/react",
+"tailwind-variants",
+"lucide-react"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://shark.vini.one/r/alert-dialog.json"
+},
+{
+"id": "shark/alert",
+"name": "alert",
+"title": "Alert",
+"description": "",
+"type": "ui",
+"cat": "overlays/alert-banner",
+"domain": [],
+"file": "react/components/alert.tsx",
+"files": [
+"react/components/alert.tsx"
+],
+"deps": [
+"@ark-ui/react",
+"tailwind-variants"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://shark.vini.one/r/alert.json"
+},
+{
+"id": "shark/announcement",
+"name": "announcement",
+"title": "Announcement",
+"description": "",
+"type": "ui",
+"cat": "marketing/announcement",
+"domain": [],
+"file": "react/components/announcement.tsx",
+"files": [
+"react/components/announcement.tsx"
+],
+"deps": [
+"@ark-ui/react",
+"tailwind-variants"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://shark.vini.one/r/announcement.json"
+},
+{
+"id": "shark/aspect-ratio",
+"name": "aspect-ratio",
+"title": "Aspect ratio",
+"description": "",
+"type": "ui",
+"cat": "other/other",
+"domain": [],
+"file": "react/components/aspect-ratio.tsx",
+"files": [
+"react/components/aspect-ratio.tsx"
+],
+"deps": [
+"@ark-ui/react"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://shark.vini.one/r/aspect-ratio.json"
+},
+{
+"id": "shark/autocomplete",
+"name": "autocomplete",
+"title": "Autocomplete",
+"description": "",
+"type": "ui",
+"cat": "inputs/combobox",
+"domain": [],
+"file": "react/components/autocomplete.tsx",
+"files": [
+"react/components/autocomplete.tsx"
+],
+"deps": [
+"@ark-ui/react",
+"lucide-react",
+"tailwind-variants"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://shark.vini.one/r/autocomplete.json"
+},
+{
+"id": "shark/avatar",
+"name": "avatar",
+"title": "Avatar",
+"description": "",
+"type": "ui",
+"cat": "data-display/avatar",
+"domain": [],
+"file": "react/components/avatar.tsx",
+"files": [
+"react/components/avatar.tsx"
+],
+"deps": [
+"@ark-ui/react",
+"tailwind-variants"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://shark.vini.one/r/avatar.json"
+},
+{
+"id": "shark/badge",
+"name": "badge",
+"title": "Badge",
+"description": "",
+"type": "ui",
+"cat": "data-display/badge",
+"domain": [],
+"file": "react/components/badge.tsx",
+"files": [
+"react/components/badge.tsx"
+],
+"deps": [
+"@ark-ui/react",
+"tailwind-variants"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://shark.vini.one/r/badge.json"
+},
+{
+"id": "shark/bottom-navigation",
+"name": "bottom-navigation",
+"title": "Bottom navigation",
+"description": "",
+"type": "ui",
+"cat": "other/other",
+"domain": [],
+"file": "react/components/bottom-navigation.tsx",
+"files": [
+"react/components/bottom-navigation.tsx"
+],
+"deps": [
+"@ark-ui/react"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://shark.vini.one/r/bottom-navigation.json"
+},
+{
+"id": "shark/breadcrumb",
+"name": "breadcrumb",
+"title": "Breadcrumb",
+"description": "",
+"type": "ui",
+"cat": "navigation/breadcrumb",
+"domain": [],
+"file": "react/components/breadcrumb.tsx",
+"files": [
+"react/components/breadcrumb.tsx"
+],
+"deps": [
+"@ark-ui/react",
+"lucide-react"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://shark.vini.one/r/breadcrumb.json"
+},
+{
+"id": "shark/button-group",
+"name": "button-group",
+"title": "Button group",
+"description": "",
+"type": "ui",
+"cat": "actions/button",
+"domain": [],
+"file": "react/components/button-group.tsx",
+"files": [
+"react/components/button-group.tsx"
+],
+"deps": [
+"@ark-ui/react",
+"tailwind-variants"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://shark.vini.one/r/button-group.json"
+},
+{
+"id": "shark/button",
+"name": "button",
+"title": "Button",
+"description": "",
+"type": "ui",
+"cat": "actions/button",
+"domain": [],
+"file": "react/components/button.tsx",
+"files": [
+"react/components/button.tsx"
+],
+"deps": [
+"@ark-ui/react",
+"tailwind-variants"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://shark.vini.one/r/button.json"
+},
+{
+"id": "shark/calendar",
+"name": "calendar",
+"title": "Calendar",
+"description": "",
+"type": "ui",
+"cat": "data-display/calendar",
+"domain": [],
+"file": "react/components/calendar.tsx",
+"files": [
+"react/components/calendar.tsx"
+],
+"deps": [
+"@ark-ui/react",
+"lucide-react"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://shark.vini.one/r/calendar.json"
+},
+{
+"id": "shark/card",
+"name": "card",
+"title": "Card",
+"description": "",
+"type": "ui",
+"cat": "data-display/card",
+"domain": [],
+"file": "react/components/card.tsx",
+"files": [
+"react/components/card.tsx"
+],
+"deps": [
+"@ark-ui/react",
+"tailwind-variants"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://shark.vini.one/r/card.json"
+},
+{
+"id": "shark/carousel",
+"name": "carousel",
+"title": "Carousel",
+"description": "",
+"type": "ui",
+"cat": "media/carousel",
+"domain": [],
+"file": "react/components/carousel.tsx",
+"files": [
+"react/components/carousel.tsx"
+],
+"deps": [
+"@ark-ui/react",
+"lucide-react"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://shark.vini.one/r/carousel.json"
+},
+{
+"id": "shark/chart",
+"name": "chart",
+"title": "Chart",
+"description": "",
+"type": "ui",
+"cat": "data-viz/chart",
+"domain": [],
+"file": "react/components/chart.tsx",
+"files": [
+"react/components/chart.tsx"
+],
+"deps": [
+"recharts"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://shark.vini.one/r/chart.json"
+},
+{
+"id": "shark/checkbox",
+"name": "checkbox",
+"title": "Checkbox",
+"description": "",
+"type": "ui",
+"cat": "inputs/checkbox",
+"domain": [],
+"file": "react/components/checkbox.tsx",
+"files": [
+"react/components/checkbox.tsx"
+],
+"deps": [
+"@ark-ui/react",
+"lucide-react",
+"tailwind-variants"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://shark.vini.one/r/checkbox.json"
+},
+{
+"id": "shark/circular-progress",
+"name": "circular-progress",
+"title": "Circular progress",
+"description": "",
+"type": "ui",
+"cat": "data-viz/progress-bar",
+"domain": [],
+"file": "react/components/circular-progress.tsx",
+"files": [
+"react/components/circular-progress.tsx"
+],
+"deps": [
+"@ark-ui/react"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://shark.vini.one/r/circular-progress.json"
+},
+{
+"id": "shark/circular-slider",
+"name": "circular-slider",
+"title": "Circular slider",
+"description": "",
+"type": "ui",
+"cat": "inputs/slider",
+"domain": [],
+"file": "react/components/circular-slider.tsx",
+"files": [
+"react/components/circular-slider.tsx"
+],
+"deps": [
+"@ark-ui/react"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://shark.vini.one/r/circular-slider.json"
+},
+{
+"id": "shark/client-only",
+"name": "client-only",
+"title": "Client only",
+"description": "",
+"type": "ui",
+"cat": "other/other",
+"domain": [
+"dev tools"
+],
+"file": "react/components/client-only.tsx",
+"files": [
+"react/components/client-only.tsx"
+],
+"deps": [
+"@ark-ui/react"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://shark.vini.one/r/client-only.json"
+},
+{
+"id": "shark/clipboard",
+"name": "clipboard",
+"title": "Clipboard",
+"description": "",
+"type": "ui",
+"cat": "actions/copy-button",
+"domain": [
+"dev tools"
+],
+"file": "react/components/clipboard.tsx",
+"files": [
+"react/components/clipboard.tsx"
+],
+"deps": [
+"@ark-ui/react",
+"lucide-react",
+"tailwind-variants"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://shark.vini.one/r/clipboard.json"
+},
+{
+"id": "shark/collapsible",
+"name": "collapsible",
+"title": "Collapsible",
+"description": "",
+"type": "ui",
+"cat": "data-display/accordion",
+"domain": [],
+"file": "react/components/collapsible.tsx",
+"files": [
+"react/components/collapsible.tsx"
+],
+"deps": [
+"@ark-ui/react",
+"lucide-react"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://shark.vini.one/r/collapsible.json"
+},
+{
+"id": "shark/color-picker",
+"name": "color-picker",
+"title": "Color picker",
+"description": "",
+"type": "ui",
+"cat": "inputs/color-picker",
+"domain": [],
+"file": "react/components/color-picker.tsx",
+"files": [
+"react/components/color-picker.tsx"
+],
+"deps": [
+"@ark-ui/react",
+"lucide-react"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://shark.vini.one/r/color-picker.json"
+},
+{
+"id": "shark/combobox",
+"name": "combobox",
+"title": "Combobox",
+"description": "",
+"type": "ui",
+"cat": "inputs/combobox",
+"domain": [],
+"file": "react/components/combobox.tsx",
+"files": [
+"react/components/combobox.tsx"
+],
+"deps": [
+"@ark-ui/react",
+"tailwind-variants",
+"lucide-react"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://shark.vini.one/r/combobox.json"
+},
+{
+"id": "shark/command",
+"name": "command",
+"title": "Command",
+"description": "",
+"type": "ui",
+"cat": "navigation/command-palette",
+"domain": [],
+"file": "react/components/command.tsx",
+"files": [
+"react/components/command.tsx"
+],
+"deps": [
+"@ark-ui/react",
+"lucide-react"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://shark.vini.one/r/command.json"
+},
+{
+"id": "shark/context-menu",
+"name": "context-menu",
+"title": "Context menu",
+"description": "",
+"type": "ui",
+"cat": "overlays/context-menu",
+"domain": [],
+"file": "react/components/context-menu.tsx",
+"files": [
+"react/components/context-menu.tsx"
+],
+"deps": [
+"@ark-ui/react",
+"lucide-react",
+"tailwind-variants"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://shark.vini.one/r/context-menu.json"
+},
+{
+"id": "shark/data-list",
+"name": "data-list",
+"title": "Data list",
+"description": "",
+"type": "ui",
+"cat": "data-display/list",
+"domain": [],
+"file": "react/components/data-list.tsx",
+"files": [
+"react/components/data-list.tsx"
+],
+"deps": [
+"@ark-ui/react"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://shark.vini.one/r/data-list.json"
+},
+{
+"id": "shark/date-input",
+"name": "date-input",
+"title": "Date input",
+"description": "",
+"type": "ui",
+"cat": "inputs/date-picker",
+"domain": [],
+"file": "react/components/date-input.tsx",
+"files": [
+"react/components/date-input.tsx"
+],
+"deps": [
+"@ark-ui/react",
+"lucide-react"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://shark.vini.one/r/date-input.json"
+},
+{
+"id": "shark/date-picker",
+"name": "date-picker",
+"title": "Date picker",
+"description": "",
+"type": "ui",
+"cat": "inputs/date-picker",
+"domain": [],
+"file": "react/components/date-picker.tsx",
+"files": [
+"react/components/date-picker.tsx"
+],
+"deps": [
+"@ark-ui/react",
+"lucide-react"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://shark.vini.one/r/date-picker.json"
+},
+{
+"id": "shark/dialog",
+"name": "dialog",
+"title": "Dialog",
+"description": "",
+"type": "ui",
+"cat": "overlays/dialog",
+"domain": [
+"dev tools"
+],
+"file": "react/components/dialog.tsx",
+"files": [
+"react/components/dialog.tsx"
+],
+"deps": [
+"@ark-ui/react",
+"tailwind-variants",
+"lucide-react"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://shark.vini.one/r/dialog.json"
+},
+{
+"id": "shark/download-trigger",
+"name": "download-trigger",
+"title": "Download trigger",
+"description": "",
+"type": "ui",
+"cat": "other/other",
+"domain": [],
+"file": "react/components/download-trigger.tsx",
+"files": [
+"react/components/download-trigger.tsx"
+],
+"deps": [
+"@ark-ui/react"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://shark.vini.one/r/download-trigger.json"
+},
+{
+"id": "shark/drawer",
+"name": "drawer",
+"title": "Drawer",
+"description": "",
+"type": "ui",
+"cat": "overlays/sheet",
+"domain": [],
+"file": "react/components/drawer.tsx",
+"files": [
+"react/components/drawer.tsx"
+],
+"deps": [
+"@ark-ui/react",
+"tailwind-variants"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://shark.vini.one/r/drawer.json"
+},
+{
+"id": "shark/editable",
+"name": "editable",
+"title": "Editable",
+"description": "",
+"type": "ui",
+"cat": "other/other",
+"domain": [],
+"file": "react/components/editable.tsx",
+"files": [
+"react/components/editable.tsx"
+],
+"deps": [
+"@ark-ui/react"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://shark.vini.one/r/editable.json"
+},
+{
+"id": "shark/field",
+"name": "field",
+"title": "Field",
+"description": "",
+"type": "ui",
+"cat": "inputs/form-field",
+"domain": [],
+"file": "react/components/field.tsx",
+"files": [
+"react/components/field.tsx"
+],
+"deps": [
+"@ark-ui/react",
+"tailwind-variants"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://shark.vini.one/r/field.json"
+},
+{
+"id": "shark/file-upload",
+"name": "file-upload",
+"title": "File upload",
+"description": "",
+"type": "ui",
+"cat": "inputs/file-upload",
+"domain": [],
+"file": "react/components/file-upload.tsx",
+"files": [
+"react/components/file-upload.tsx"
+],
+"deps": [
+"@ark-ui/react",
+"lucide-react"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://shark.vini.one/r/file-upload.json"
+},
+{
+"id": "shark/float",
+"name": "float",
+"title": "Float",
+"description": "",
+"type": "ui",
+"cat": "other/other",
+"domain": [],
+"file": "react/components/float.tsx",
+"files": [
+"react/components/float.tsx"
+],
+"deps": [
+"@ark-ui/react",
+"tailwind-variants"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://shark.vini.one/r/float.json"
+},
+{
+"id": "shark/floating-panel",
+"name": "floating-panel",
+"title": "Floating panel",
+"description": "",
+"type": "ui",
+"cat": "overlays/popover",
+"domain": [],
+"file": "react/components/floating-panel.tsx",
+"files": [
+"react/components/floating-panel.tsx"
+],
+"deps": [
+"@ark-ui/react",
+"lucide-react"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://shark.vini.one/r/floating-panel.json"
+},
+{
+"id": "shark/format",
+"name": "format",
+"title": "Format",
+"description": "",
+"type": "ui",
+"cat": "other/other",
+"domain": [],
+"file": "react/components/format.tsx",
+"files": [
+"react/components/format.tsx"
+],
+"deps": [
+"@ark-ui/react"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://shark.vini.one/r/format.json"
+},
+{
+"id": "shark/frame",
+"name": "frame",
+"title": "Frame",
+"description": "",
+"type": "ui",
+"cat": "other/other",
+"domain": [],
+"file": "react/components/frame.tsx",
+"files": [
+"react/components/frame.tsx"
+],
+"deps": [
+"@ark-ui/react"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://shark.vini.one/r/frame.json"
+},
+{
+"id": "shark/highlight",
+"name": "highlight",
+"title": "Highlight",
+"description": "",
+"type": "ui",
+"cat": "other/other",
+"domain": [],
+"file": "react/components/highlight.tsx",
+"files": [
+"react/components/highlight.tsx"
+],
+"deps": [
+"@ark-ui/react"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://shark.vini.one/r/highlight.json"
+},
+{
+"id": "shark/hint",
+"name": "hint",
+"title": "Hint",
+"description": "",
+"type": "ui",
+"cat": "overlays/tooltip",
+"domain": [],
+"file": "react/components/hint.tsx",
+"files": [
+"react/components/hint.tsx"
+],
+"deps": [
+"@ark-ui/react",
+"tailwind-variants"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://shark.vini.one/r/hint.json"
+},
+{
+"id": "shark/hover-card",
+"name": "hover-card",
+"title": "Hover card",
+"description": "",
+"type": "ui",
+"cat": "overlays/hover-card",
+"domain": [],
+"file": "react/components/hover-card.tsx",
+"files": [
+"react/components/hover-card.tsx"
+],
+"deps": [
+"@ark-ui/react"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://shark.vini.one/r/hover-card.json"
+},
+{
+"id": "shark/image-cropper",
+"name": "image-cropper",
+"title": "Image cropper",
+"description": "",
+"type": "ui",
+"cat": "media/gallery",
+"domain": [],
+"file": "react/components/image-cropper.tsx",
+"files": [
+"react/components/image-cropper.tsx"
+],
+"deps": [
+"@ark-ui/react"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://shark.vini.one/r/image-cropper.json"
+},
+{
+"id": "shark/input-group",
+"name": "input-group",
+"title": "Input group",
+"description": "",
+"type": "ui",
+"cat": "inputs/form-field",
+"domain": [],
+"file": "react/components/input-group.tsx",
+"files": [
+"react/components/input-group.tsx"
+],
+"deps": [
+"@ark-ui/react",
+"tailwind-variants"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://shark.vini.one/r/input-group.json"
+},
+{
+"id": "shark/input-otp",
+"name": "input-otp",
+"title": "Input otp",
+"description": "",
+"type": "ui",
+"cat": "inputs/otp-input",
+"domain": [],
+"file": "react/components/input-otp.tsx",
+"files": [
+"react/components/input-otp.tsx"
+],
+"deps": [
+"@ark-ui/react"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://shark.vini.one/r/input-otp.json"
+},
+{
+"id": "shark/input",
+"name": "input",
+"title": "Input",
+"description": "",
+"type": "ui",
+"cat": "inputs/form-field",
+"domain": [],
+"file": "react/components/input.tsx",
+"files": [
+"react/components/input.tsx"
+],
+"deps": [
+"@ark-ui/react",
+"tailwind-variants"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://shark.vini.one/r/input.json"
+},
+{
+"id": "shark/item",
+"name": "item",
+"title": "Item",
+"description": "",
+"type": "ui",
+"cat": "data-display/list",
+"domain": [],
+"file": "react/components/item.tsx",
+"files": [
+"react/components/item.tsx"
+],
+"deps": [
+"@ark-ui/react",
+"tailwind-variants"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://shark.vini.one/r/item.json"
+},
+{
+"id": "shark/json-tree-view",
+"name": "json-tree-view",
+"title": "Json tree view",
+"description": "",
+"type": "ui",
+"cat": "data-display/tree",
+"domain": [],
+"file": "react/components/json-tree-view.tsx",
+"files": [
+"react/components/json-tree-view.tsx"
+],
+"deps": [
+"@ark-ui/react",
+"lucide-react"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://shark.vini.one/r/json-tree-view.json"
+},
+{
+"id": "shark/kbd",
+"name": "kbd",
+"title": "Kbd",
+"description": "",
+"type": "ui",
+"cat": "data-display/typography",
+"domain": [],
+"file": "react/components/kbd.tsx",
+"files": [
+"react/components/kbd.tsx"
+],
+"deps": [
+"@ark-ui/react",
+"tailwind-variants"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://shark.vini.one/r/kbd.json"
+},
+{
+"id": "shark/link-overlay",
+"name": "link-overlay",
+"title": "Link overlay",
+"description": "",
+"type": "ui",
+"cat": "actions/link",
+"domain": [],
+"file": "react/components/link-overlay.tsx",
+"files": [
+"react/components/link-overlay.tsx"
+],
+"deps": [
+"@ark-ui/react"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://shark.vini.one/r/link-overlay.json"
+},
+{
+"id": "shark/listbox",
+"name": "listbox",
+"title": "Listbox",
+"description": "",
+"type": "ui",
+"cat": "inputs/select",
+"domain": [],
+"file": "react/components/listbox.tsx",
+"files": [
+"react/components/listbox.tsx"
+],
+"deps": [
+"@ark-ui/react",
+"lucide-react",
+"tailwind-variants"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://shark.vini.one/r/listbox.json"
+},
+{
+"id": "shark/marquee",
+"name": "marquee",
+"title": "Marquee",
+"description": "",
+"type": "ui",
+"cat": "motion/marquee",
+"domain": [],
+"file": "react/components/marquee.tsx",
+"files": [
+"react/components/marquee.tsx"
+],
+"deps": [
+"@ark-ui/react"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://shark.vini.one/r/marquee.json"
+},
+{
+"id": "shark/menu",
+"name": "menu",
+"title": "Menu",
+"description": "",
+"type": "ui",
+"cat": "navigation/menu",
+"domain": [],
+"file": "react/components/menu.tsx",
+"files": [
+"react/components/menu.tsx"
+],
+"deps": [
+"@ark-ui/react",
+"tailwind-variants",
+"lucide-react"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://shark.vini.one/r/menu.json"
+},
+{
+"id": "shark/native-select",
+"name": "native-select",
+"title": "Native select",
+"description": "",
+"type": "ui",
+"cat": "inputs/select",
+"domain": [],
+"file": "react/components/native-select.tsx",
+"files": [
+"react/components/native-select.tsx"
+],
+"deps": [
+"@ark-ui/react",
+"lucide-react",
+"tailwind-variants"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://shark.vini.one/r/native-select.json"
+},
+{
+"id": "shark/number-input",
+"name": "number-input",
+"title": "Number input",
+"description": "",
+"type": "ui",
+"cat": "inputs/number-input",
+"domain": [],
+"file": "react/components/number-input.tsx",
+"files": [
+"react/components/number-input.tsx"
+],
+"deps": [
+"@ark-ui/react",
+"lucide-react"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://shark.vini.one/r/number-input.json"
+},
+{
+"id": "shark/pagination",
+"name": "pagination",
+"title": "Pagination",
+"description": "",
+"type": "ui",
+"cat": "navigation/pagination",
+"domain": [],
+"file": "react/components/pagination.tsx",
+"files": [
+"react/components/pagination.tsx"
+],
+"deps": [
+"@ark-ui/react",
+"lucide-react"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://shark.vini.one/r/pagination.json"
+},
+{
+"id": "shark/password-input",
+"name": "password-input",
+"title": "Password input",
+"description": "",
+"type": "ui",
+"cat": "inputs/form-field",
+"domain": [
+"auth"
+],
+"file": "react/components/password-input.tsx",
+"files": [
+"react/components/password-input.tsx"
+],
+"deps": [
+"@ark-ui/react",
+"lucide-react"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://shark.vini.one/r/password-input.json"
+},
+{
+"id": "shark/popover",
+"name": "popover",
+"title": "Popover",
+"description": "",
+"type": "ui",
+"cat": "overlays/popover",
+"domain": [],
+"file": "react/components/popover.tsx",
+"files": [
+"react/components/popover.tsx"
+],
+"deps": [
+"@ark-ui/react",
+"lucide-react"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://shark.vini.one/r/popover.json"
+},
+{
+"id": "shark/presence",
+"name": "presence",
+"title": "Presence",
+"description": "",
+"type": "ui",
+"cat": "status/status-dot",
+"domain": [],
+"file": "react/components/presence.tsx",
+"files": [
+"react/components/presence.tsx"
+],
+"deps": [
+"@ark-ui/react"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://shark.vini.one/r/presence.json"
+},
+{
+"id": "shark/progress",
+"name": "progress",
+"title": "Progress",
+"description": "",
+"type": "ui",
+"cat": "data-viz/progress-bar",
+"domain": [],
+"file": "react/components/progress.tsx",
+"files": [
+"react/components/progress.tsx"
+],
+"deps": [
+"@ark-ui/react"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://shark.vini.one/r/progress.json"
+},
+{
+"id": "shark/prose",
+"name": "prose",
+"title": "Prose",
+"description": "",
+"type": "ui",
+"cat": "data-display/typography",
+"domain": [],
+"file": "react/components/prose.tsx",
+"files": [
+"react/components/prose.tsx"
+],
+"deps": [
+"@ark-ui/react"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://shark.vini.one/r/prose.json"
+},
+{
+"id": "shark/qr-code",
+"name": "qr-code",
+"title": "Qr code",
+"description": "",
+"type": "ui",
+"cat": "other/other",
+"domain": [
+"dev tools"
+],
+"file": "react/components/qr-code.tsx",
+"files": [
+"react/components/qr-code.tsx"
+],
+"deps": [
+"@ark-ui/react"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://shark.vini.one/r/qr-code.json"
+},
+{
+"id": "shark/radio-group",
+"name": "radio-group",
+"title": "Radio group",
+"description": "",
+"type": "ui",
+"cat": "inputs/radio",
+"domain": [],
+"file": "react/components/radio-group.tsx",
+"files": [
+"react/components/radio-group.tsx"
+],
+"deps": [
+"@ark-ui/react",
+"lucide-react"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://shark.vini.one/r/radio-group.json"
+},
+{
+"id": "shark/rating",
+"name": "rating",
+"title": "Rating",
+"description": "",
+"type": "ui",
+"cat": "inputs/rating",
+"domain": [],
+"file": "react/components/rating.tsx",
+"files": [
+"react/components/rating.tsx"
+],
+"deps": [
+"@ark-ui/react",
+"lucide-react"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://shark.vini.one/r/rating.json"
+},
+{
+"id": "shark/resizable",
+"name": "resizable",
+"title": "Resizable",
+"description": "",
+"type": "ui",
+"cat": "layout/split-pane",
+"domain": [],
+"file": "react/components/resizable.tsx",
+"files": [
+"react/components/resizable.tsx"
+],
+"deps": [
+"@ark-ui/react",
+"lucide-react"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://shark.vini.one/r/resizable.json"
+},
+{
+"id": "shark/scroll-area",
+"name": "scroll-area",
+"title": "Scroll area",
+"description": "",
+"type": "ui",
+"cat": "layout/scroll-area",
+"domain": [],
+"file": "react/components/scroll-area.tsx",
+"files": [
+"react/components/scroll-area.tsx"
+],
+"deps": [
+"@ark-ui/react",
+"tailwind-variants"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://shark.vini.one/r/scroll-area.json"
+},
+{
+"id": "shark/segment-group",
+"name": "segment-group",
+"title": "Segment group",
+"description": "",
+"type": "ui",
+"cat": "other/other",
+"domain": [],
+"file": "react/components/segment-group.tsx",
+"files": [
+"react/components/segment-group.tsx"
+],
+"deps": [
+"@ark-ui/react"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://shark.vini.one/r/segment-group.json"
+},
+{
+"id": "shark/select",
+"name": "select",
+"title": "Select",
+"description": "",
+"type": "ui",
+"cat": "inputs/select",
+"domain": [],
+"file": "react/components/select.tsx",
+"files": [
+"react/components/select.tsx"
+],
+"deps": [
+"@ark-ui/react",
+"tailwind-variants",
+"lucide-react"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://shark.vini.one/r/select.json"
+},
+{
+"id": "shark/separator",
+"name": "separator",
+"title": "Separator",
+"description": "",
+"type": "ui",
+"cat": "other/other",
+"domain": [],
+"file": "react/components/separator.tsx",
+"files": [
+"react/components/separator.tsx"
+],
+"deps": [
+"@ark-ui/react"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://shark.vini.one/r/separator.json"
+},
+{
+"id": "shark/sheet",
+"name": "sheet",
+"title": "Sheet",
+"description": "",
+"type": "ui",
+"cat": "overlays/sheet",
+"domain": [],
+"file": "react/components/sheet.tsx",
+"files": [
+"react/components/sheet.tsx"
+],
+"deps": [
+"@ark-ui/react",
+"tailwind-variants",
+"lucide-react"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://shark.vini.one/r/sheet.json"
+},
+{
+"id": "shark/show",
+"name": "show",
+"title": "Show",
+"description": "",
+"type": "ui",
+"cat": "other/other",
+"domain": [],
+"file": "react/components/show.tsx",
+"files": [
+"react/components/show.tsx"
+],
+"deps": [
+"@ark-ui/react"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://shark.vini.one/r/show.json"
+},
+{
+"id": "shark/sidebar",
+"name": "sidebar",
+"title": "Sidebar",
+"description": "",
+"type": "ui",
+"cat": "navigation/sidebar",
+"domain": [],
+"file": "react/components/sidebar.tsx",
+"files": [
+"react/components/sidebar.tsx"
+],
+"deps": [
+"@ark-ui/react",
+"tailwind-variants",
+"lucide-react"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://shark.vini.one/r/sidebar.json"
+},
+{
+"id": "shark/signature-pad",
+"name": "signature-pad",
+"title": "Signature pad",
+"description": "",
+"type": "ui",
+"cat": "other/other",
+"domain": [],
+"file": "react/components/signature-pad.tsx",
+"files": [
+"react/components/signature-pad.tsx"
+],
+"deps": [
+"@ark-ui/react",
+"lucide-react"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://shark.vini.one/r/signature-pad.json"
+},
+{
+"id": "shark/skeleton",
+"name": "skeleton",
+"title": "Skeleton",
+"description": "",
+"type": "ui",
+"cat": "status/skeleton",
+"domain": [],
+"file": "react/components/skeleton.tsx",
+"files": [
+"react/components/skeleton.tsx"
+],
+"deps": [
+"@ark-ui/react"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://shark.vini.one/r/skeleton.json"
+},
+{
+"id": "shark/skip-nav",
+"name": "skip-nav",
+"title": "Skip nav",
+"description": "",
+"type": "ui",
+"cat": "navigation/top-nav",
+"domain": [],
+"file": "react/components/skip-nav.tsx",
+"files": [
+"react/components/skip-nav.tsx"
+],
+"deps": [
+"@ark-ui/react"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://shark.vini.one/r/skip-nav.json"
+},
+{
+"id": "shark/slider",
+"name": "slider",
+"title": "Slider",
+"description": "",
+"type": "ui",
+"cat": "inputs/slider",
+"domain": [],
+"file": "react/components/slider.tsx",
+"files": [
+"react/components/slider.tsx"
+],
+"deps": [
+"@ark-ui/react"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://shark.vini.one/r/slider.json"
+},
+{
+"id": "shark/spinner",
+"name": "spinner",
+"title": "Spinner",
+"description": "",
+"type": "ui",
+"cat": "status/loader",
+"domain": [],
+"file": "react/components/spinner.tsx",
+"files": [
+"react/components/spinner.tsx"
+],
+"deps": [
+"lucide-react"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://shark.vini.one/r/spinner.json"
+},
+{
+"id": "shark/status",
+"name": "status",
+"title": "Status",
+"description": "",
+"type": "ui",
+"cat": "other/other",
+"domain": [],
+"file": "react/components/status.tsx",
+"files": [
+"react/components/status.tsx"
+],
+"deps": [
+"@ark-ui/react",
+"tailwind-variants"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://shark.vini.one/r/status.json"
+},
+{
+"id": "shark/steps",
+"name": "steps",
+"title": "Steps",
+"description": "",
+"type": "ui",
+"cat": "navigation/wizard-steps",
+"domain": [],
+"file": "react/components/steps.tsx",
+"files": [
+"react/components/steps.tsx"
+],
+"deps": [
+"@ark-ui/react",
+"lucide-react"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://shark.vini.one/r/steps.json"
+},
+{
+"id": "shark/swap",
+"name": "swap",
+"title": "Swap",
+"description": "",
+"type": "ui",
+"cat": "other/other",
+"domain": [
+"crypto"
+],
+"file": "react/components/swap.tsx",
+"files": [
+"react/components/swap.tsx"
+],
+"deps": [
+"@ark-ui/react",
+"tailwind-variants"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://shark.vini.one/r/swap.json"
+},
+{
+"id": "shark/switch",
+"name": "switch",
+"title": "Switch",
+"description": "",
+"type": "ui",
+"cat": "actions/switch",
+"domain": [],
+"file": "react/components/switch.tsx",
+"files": [
+"react/components/switch.tsx"
+],
+"deps": [
+"@ark-ui/react"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://shark.vini.one/r/switch.json"
+},
+{
+"id": "shark/table",
+"name": "table",
+"title": "Table",
+"description": "",
+"type": "ui",
+"cat": "data-display/table",
+"domain": [],
+"file": "react/components/table.tsx",
+"files": [
+"react/components/table.tsx"
+],
+"deps": [
+"@ark-ui/react"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://shark.vini.one/r/table.json"
+},
+{
+"id": "shark/tabs",
+"name": "tabs",
+"title": "Tabs",
+"description": "",
+"type": "ui",
+"cat": "navigation/tabs",
+"domain": [],
+"file": "react/components/tabs.tsx",
+"files": [
+"react/components/tabs.tsx"
+],
+"deps": [
+"@ark-ui/react",
+"tailwind-variants"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://shark.vini.one/r/tabs.json"
+},
+{
+"id": "shark/tags-input",
+"name": "tags-input",
+"title": "Tags input",
+"description": "",
+"type": "ui",
+"cat": "inputs/form-field",
+"domain": [],
+"file": "react/components/tags-input.tsx",
+"files": [
+"react/components/tags-input.tsx"
+],
+"deps": [
+"@ark-ui/react",
+"lucide-react"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://shark.vini.one/r/tags-input.json"
+},
+{
+"id": "shark/textarea",
+"name": "textarea",
+"title": "Textarea",
+"description": "",
+"type": "ui",
+"cat": "inputs/textarea",
+"domain": [],
+"file": "react/components/textarea.tsx",
+"files": [
+"react/components/textarea.tsx"
+],
+"deps": [
+"@ark-ui/react"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://shark.vini.one/r/textarea.json"
+},
+{
+"id": "shark/timer",
+"name": "timer",
+"title": "Timer",
+"description": "",
+"type": "ui",
+"cat": "motion/number-ticker",
+"domain": [],
+"file": "react/components/timer.tsx",
+"files": [
+"react/components/timer.tsx"
+],
+"deps": [
+"@ark-ui/react"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://shark.vini.one/r/timer.json"
+},
+{
+"id": "shark/toast",
+"name": "toast",
+"title": "Toast",
+"description": "",
+"type": "ui",
+"cat": "overlays/toast",
+"domain": [],
+"file": "react/components/toast.tsx",
+"files": [
+"react/components/toast.tsx"
+],
+"deps": [
+"@ark-ui/react",
+"tailwind-variants",
+"lucide-react"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://shark.vini.one/r/toast.json"
+},
+{
+"id": "shark/toggle-group",
+"name": "toggle-group",
+"title": "Toggle group",
+"description": "",
+"type": "ui",
+"cat": "actions/switch",
+"domain": [],
+"file": "react/components/toggle-group.tsx",
+"files": [
+"react/components/toggle-group.tsx"
+],
+"deps": [
+"@ark-ui/react",
+"tailwind-variants"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://shark.vini.one/r/toggle-group.json"
+},
+{
+"id": "shark/toggle-tooltip",
+"name": "toggle-tooltip",
+"title": "Toggle tooltip",
+"description": "",
+"type": "ui",
+"cat": "overlays/tooltip",
+"domain": [],
+"file": "react/components/toggle-tooltip.tsx",
+"files": [
+"react/components/toggle-tooltip.tsx"
+],
+"deps": [
+"@ark-ui/react"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://shark.vini.one/r/toggle-tooltip.json"
+},
+{
+"id": "shark/toggle",
+"name": "toggle",
+"title": "Toggle",
+"description": "",
+"type": "ui",
+"cat": "actions/switch",
+"domain": [],
+"file": "react/components/toggle.tsx",
+"files": [
+"react/components/toggle.tsx"
+],
+"deps": [
+"@ark-ui/react",
+"tailwind-variants"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://shark.vini.one/r/toggle.json"
+},
+{
+"id": "shark/tooltip",
+"name": "tooltip",
+"title": "Tooltip",
+"description": "",
+"type": "ui",
+"cat": "overlays/tooltip",
+"domain": [],
+"file": "react/components/tooltip.tsx",
+"files": [
+"react/components/tooltip.tsx"
+],
+"deps": [
+"@ark-ui/react"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://shark.vini.one/r/tooltip.json"
+},
+{
+"id": "shark/tour",
+"name": "tour",
+"title": "Tour",
+"description": "",
+"type": "ui",
+"cat": "other/other",
+"domain": [],
+"file": "react/components/tour.tsx",
+"files": [
+"react/components/tour.tsx"
+],
+"deps": [
+"@ark-ui/react",
+"lucide-react"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://shark.vini.one/r/tour.json"
+},
+{
+"id": "shark/tree-view",
+"name": "tree-view",
+"title": "Tree view",
+"description": "",
+"type": "ui",
+"cat": "data-display/tree",
+"domain": [],
+"file": "react/components/tree-view.tsx",
+"files": [
+"react/components/tree-view.tsx"
+],
+"deps": [
+"@ark-ui/react",
+"lucide-react",
+"tailwind-variants"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://shark.vini.one/r/tree-view.json"
+}
+]
+}

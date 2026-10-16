@@ -1,0 +1,72 @@
+/* GravityMenu — items are absolutely placed at the ring's centre and moved
+   only by transform, so the ring never reflows. The frame loop runs while the
+   ring is turning or something is still settling, and stops when it is not. */
+
+.gravity-menu {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.gravity-menu__item {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  /* The ring at phase zero, in the stylesheet: server-rendered markup and the
+     first paint already have every item on its slot. The loop writes the same
+     transform inline from then on. */
+  transform:
+    rotate(var(--gravity-menu-angle, 0deg))
+    translateX(var(--gravity-menu-orbit, 130px))
+    rotate(calc(var(--gravity-menu-angle, 0deg) * -1))
+    translate(-50%, -50%);
+  padding: 8px 16px;
+  border: 1px solid currentColor;
+  border-radius: 999px;
+  background: none;
+  color: inherit;
+  font: inherit;
+  font-size: 13px;
+  line-height: 1;
+  white-space: nowrap;
+  cursor: pointer;
+  opacity: 0.72;
+  will-change: transform;
+  /* A tap is a tap: no double-tap zoom delay, and no grey flash over the
+     press state below. Panning and pinching the page still work from here. */
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+  /* Leaving is the slow direction; arriving shortens it below. The press is
+     not here: the loop draws it, as a scale at the end of its own transform,
+     so the item dips about its centre wherever the ring has put it. */
+  transition:
+    opacity 0.2s ease-out,
+    background-color 0.2s ease-out;
+}
+
+/* The pill is 31 px tall. This pads the target out to 44 px in whichever
+   direction falls short, without changing how it looks. */
+.gravity-menu__item::before {
+  content: '';
+  position: absolute;
+  inset: min(0px, calc(50% - 22px));
+}
+
+.gravity-menu__item.is-near,
+.gravity-menu__item:focus-visible,
+.gravity-menu__item[aria-current] { opacity: 1; }
+
+.gravity-menu__item.is-near { transition-duration: 0.09s, 0.2s; }
+
+.gravity-menu__item[aria-current] {
+  background-color: color-mix(in srgb, currentColor 14%, transparent);
+}
+
+.gravity-menu__item:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .gravity-menu__item { will-change: auto; transition: none; }
+}

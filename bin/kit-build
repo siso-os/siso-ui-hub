@@ -1,0 +1,63 @@
+#!/usr/bin/env python3
+"""Bring a library from the code bank (r/<lib>) into the SISO kit as real source under app/src/kit/<lib>/, so the hub
+renders every part live the way the Arc browser does. Only libraries whose licence allows copying
+(.local/licences-charts-icons.jsonl, catalogue notes) are brought in. Writes app/src/kit/<lib>/manifest.json.
+
+  bin/kit-build evilcharts            # chart blocks: each block is its own demo, with its sample data
+  bin/kit-build lucide-animated icons # icons: one file each, animate on hover"""
+import json, os, re, sys, glob, posixpath
+
+HUB = os.path.dirname(os.path.dirname(os.path.realpath(__file__)))
+lib = sys.argv[1]
+mode = sys.argv[2] if len(sys.argv) > 2 else "blocks"
+BANK = os.path.expanduser(f"~/SISO_Workspace/Great_Library_of_SISO/banks/siso-ui-code/r/{lib}")
+OUT = f"{HUB}/app/src/kit/{lib}"
+
+
+def dest(path):
+    p = re.sub(r"^src/", "", path)
+    p = re.sub(r"^registry/", "", p)
+    return p if "/" in p else f"icons/{p}"
+
+
+def fix(p, code):
+    """@/registry/x points inside this library's copy; @/lib/utils stays (the hub has cn)"""
+    def sub(m):
+        t = re.sub(r"^registry/", "", m.group(2)[2:])
+        r = posixpath.relpath(t, posixpath.dirname(p))
+        return m.group(1) + (r if r.startswith(".") else "./" + r) + m.group(3)
+    code = re.sub(r"""((?:from|import)\s*\(?\s*["'])(@/registry/[^"']+)(["'])""", sub, code)
+    # recharts/types/* holds types only; a plain import of it fails in the browser
+    return re.sub(r"""import\s+\{([^}]*)\}\s+from\s+(["']recharts/types/[^"']+["'])""", r"import type {\1} from \2", code)
+
+
+def title(name):
+    t = re.sub(r"^(ex|b)-", "", name)
+    return re.sub(r"\s+", " ", re.sub(r"\b(echarts|recharts)\b", "", t.replace("-", " "))).strip().capitalize()
+
+
+manifest, files = [], 0
+for f in sorted(glob.glob(f"{BANK}/*.json")):
+    if os.path.basename(f).startswith("_"):
+        continue
+    it = json.load(open(f))
+    main = None
+    for x in it.get("files", []):
+        p = dest(x["path"])
+        os.makedirs(os.path.dirname(f"{OUT}/{p}"), exist_ok=True)
+        open(f"{OUT}/{p}", "w").write(fix(p, x.get("content", "")))
+        files += 1
+        main = main or p
+    if mode == "icons":
+        manifest.append({"name": it["name"], "file": main})
+        continue
+    if it.get("type") != "registry:block":
+        continue
+    reg = " ".join(it.get("registryDependencies") or [])
+    fam = re.search(r"(?:echarts|recharts)-([a-z]+)-chart", reg)
+    eng = "echarts" if "echarts" in reg or "echarts" in it["name"] else "recharts"
+    manifest.append({"name": it["name"], "title": it.get("title") or title(it["name"]), "description": it.get("description", ""),
+                     "family": fam.group(1) if fam else "other", "engine": eng, "file": main,
+                     "install": f"npx shadcn@latest add @{lib}/{it['name']}"})
+json.dump(manifest, open(f"{OUT}/manifest.json", "w"), indent=1)
+print(f"{lib}: {len(manifest)} parts, {files} files -> app/src/kit/{lib}")

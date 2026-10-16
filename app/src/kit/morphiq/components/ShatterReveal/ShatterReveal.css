@@ -1,0 +1,57 @@
+/* ShatterReveal — content in normal flow sets the size; the canvas and the
+   strike target sit over it. The canvas never takes the pointer. */
+
+.shatter-reveal {
+  position: relative;
+  overflow: hidden;
+}
+
+.shatter-reveal__content {
+  position: relative;
+  height: 100%;
+}
+
+/* Focus is handed here when the cover is struck from the keyboard, so Tab
+   carries on into what was revealed. It is a place to stand, not a control. */
+.shatter-reveal__content:focus {
+  outline: none;
+}
+
+.shatter-reveal__canvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  pointer-events: none;
+}
+
+/* A finger that lands here can still scroll and pinch the page; a tap strikes
+   without the double-tap wait. The cracks are the press state, so the
+   platform's own tap flash is turned off. */
+.shatter-reveal__cover {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  border-radius: inherit;
+  background: transparent;
+  cursor: crosshair;
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* The ring sits on a photograph, so it carries its own contrast: a light line
+   with a dark one outside it reads whatever the image is doing underneath. */
+.shatter-reveal__cover:focus-visible {
+  outline: 2px solid var(--shatter-reveal-ring, #fff);
+  outline-offset: -5px;
+  box-shadow: inset 0 0 0 3px rgba(0, 0, 0, 0.55);
+}
+
+@media (forced-colors: active) {
+  .shatter-reveal__cover:focus-visible { outline-color: CanvasText; box-shadow: none; }
+}

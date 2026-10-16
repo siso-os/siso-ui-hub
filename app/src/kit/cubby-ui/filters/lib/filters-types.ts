@@ -1,0 +1,208 @@
+import type * as React from "react";
+
+/** Size of the filter bar and its chips. */
+export type FilterSize = "sm" | "default" | "lg";
+
+/** Built-in field types. `custom` renders its own value control. */
+export type FilterFieldType =
+  | "select"
+  | "multiselect"
+  | "text"
+  | "number"
+  | "custom";
+
+/** A selectable option for `select` / `multiselect` fields. */
+export interface FilterOption {
+  value: string;
+  label: string;
+  icon?: React.ReactNode;
+}
+
+/** Value shape an operator expects: `"none"` (no value), `"scalar"` (one control), `"range"` (number min/max). */
+export type FilterOperatorShape = "none" | "scalar" | "range";
+
+/** An operator shown in the middle segment of a pill (`is`, `contains`, ...). */
+export interface FilterOperator {
+  id: string;
+  label: string;
+  /** Value shape this operator expects. Defaults to `"scalar"`. */
+  shape?: FilterOperatorShape;
+  /** Sugar for `shape: "none"`, e.g. `is empty` / `is not empty`. */
+  valueless?: boolean;
+}
+
+interface FilterFieldBase {
+  /** Stable key stored on each filter as `FilterValue.field`. */
+  id: string;
+  label: string;
+  icon?: React.ReactNode;
+  /** Override the default operators for this field's type. */
+  operators?: FilterOperator[];
+  /** Hide specific default operators by id. */
+  disabledOperators?: string[];
+}
+
+export interface SelectFilterField extends FilterFieldBase {
+  type: "select";
+  options: FilterOption[];
+  placeholder?: string;
+}
+
+export interface MultiSelectFilterField extends FilterFieldBase {
+  type: "multiselect";
+  options: FilterOption[];
+  placeholder?: string;
+  /** Maximum number of options that can be selected. */
+  maxSelections?: number;
+}
+
+export interface TextFilterField extends FilterFieldBase {
+  type: "text";
+  placeholder?: string;
+  /** Content shown before the input, e.g. `@` or an icon. */
+  prefix?: React.ReactNode;
+  /** Content shown after the input, e.g. a unit label. */
+  suffix?: React.ReactNode;
+}
+
+export interface NumberFilterField extends FilterFieldBase {
+  type: "number";
+  placeholder?: string;
+  step?: number;
+  /** Content shown before the input, e.g. `$`. */
+  prefix?: React.ReactNode;
+  /** Content shown after the input, e.g. `%` or `hrs`. */
+  suffix?: React.ReactNode;
+}
+
+export interface CustomFilterField extends FilterFieldBase {
+  type: "custom";
+  /** Renders the value segment and reports changes back to the filter. */
+  renderValue: (props: FilterValueControlProps) => React.ReactNode;
+  /** Seed value for a fresh filter of this field. */
+  defaultValue?: unknown;
+  /**
+   * Value as text, for the accessible name and completeness (`""` = no value).
+   * Defaults handle only strings, numbers and booleans; required for objects.
+   */
+  formatValue?: (value: unknown) => string;
+}
+
+export type FilterField =
+  | SelectFilterField
+  | MultiSelectFilterField
+  | TextFilterField
+  | NumberFilterField
+  | CustomFilterField;
+
+/** Props passed to a `custom` field's `renderValue`. */
+export interface FilterValueControlProps {
+  value: unknown;
+  operator: string;
+  onValueChange: (value: unknown) => void;
+  size: FilterSize;
+  field: CustomFilterField;
+}
+
+/** Value shape for a `number` field when the operator is `between`. */
+export interface NumberRange {
+  min: number | null;
+  max: number | null;
+}
+
+/**
+ * A single active filter. `value` by field type: `select → string | null`,
+ * `multiselect → string[]`, `text → string`,
+ * `number → number | null | NumberRange`, `custom → unknown`.
+ */
+export interface FilterValue {
+  id: string;
+  field: string;
+  operator: string;
+  value: unknown;
+}
+
+/** Copy overrides for the bar's chrome. */
+export interface FiltersLabels {
+  add: string;
+  /** Tooltip on the add button once it has folded down to its icon. */
+  addTooltip: string;
+  clear: string;
+  searchFields: string;
+  searchValues: string;
+  noFields: string;
+  noResults: string;
+  selectValue: string;
+  enterValue: string;
+  value: string;
+  min: string;
+  max: string;
+  /** Joins the two bounds of a range, as in "between 2 and 8". */
+  and: string;
+  /** Group heading for fields in the add menu while searching. */
+  fields: string;
+  /** Group heading for matching values in the add menu while searching. */
+  values: string;
+  /** Accessible name of the add menu's back button. */
+  back: string;
+  /** Closes the add menu after picking several values of a multiselect. */
+  done: string;
+  /** Hint under a number the add menu can't read, e.g. "12a". */
+  invalidNumber: string;
+  /** Announced to screen readers when every filter is cleared. */
+  filtersCleared: string;
+  /** Word used in the operator trigger's accessible name. */
+  operator: string;
+  /** Operator label overrides by id, e.g. `{ is_not: "n'est pas" }`. */
+  operators: Partial<Record<string, string>>;
+  /** The active-filter count, e.g. "3 active". */
+  activeCount: (count: number) => string;
+  /** Summary for a multiselect value with two or more options picked. */
+  selectedCount: (count: number, field: FilterField) => string;
+  /** Builds the accessible label for a pill's remove button. */
+  removeFilter: (fieldLabel: string) => string;
+  /** Announced when a filter is added; gets e.g. "Status is Done". */
+  filterAdded: (description: string) => string;
+  /** Announced when a filter is removed; gets e.g. "Status is Done". */
+  filterRemoved: (description: string) => string;
+}
+
+export interface FiltersProviderProps {
+  /** Field definitions the bar can filter on. */
+  fields: FilterField[];
+  /** Controlled list of active filters. */
+  value?: FilterValue[];
+  /** Initial filters in uncontrolled mode. */
+  defaultValue?: FilterValue[];
+  onValueChange?: (value: FilterValue[]) => void;
+  size?: FilterSize;
+  /** Allow the same field to be added more than once. Defaults to `false`. */
+  allowDuplicateFields?: boolean;
+  labels?: Partial<FiltersLabels>;
+  children?: React.ReactNode;
+}
+
+export interface FiltersBarProps extends Omit<
+  React.ComponentProps<"div">,
+  "onChange" | "defaultValue"
+> {
+  /** Key that opens the add-filter menu, forwarded to the default `FilterAddButton`. */
+  shortcut?: string;
+  /** Chip overflow: `"scroll"` (default) scrolls one row behind edge fades; `"wrap"` adds rows. */
+  overflow?: FiltersOverflow;
+}
+
+/** How a bar handles more chips than fit on one row. */
+export type FiltersOverflow = "scroll" | "wrap";
+
+export interface FiltersProps
+  extends Omit<FiltersProviderProps, "children">, FiltersBarProps {}
+
+export interface FilterChipProps extends Omit<
+  React.ComponentProps<"div">,
+  "onChange"
+> {
+  filter: FilterValue;
+  /** Field definition. Resolved from the `Filters` context when omitted. */
+  field?: FilterField;
+}

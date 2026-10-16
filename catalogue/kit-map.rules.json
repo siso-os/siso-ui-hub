@@ -1,0 +1,1604 @@
+{
+ "frames": {
+  "flow": {
+   "show": "storyboard",
+   "why": "several screens in order, toward one goal; seen as a strip of screens you click through",
+   "families": {
+    "account": [
+     {
+      "kind": "sign-up-flow",
+      "job": "new account: details, verify, welcome",
+      "re": "sign.?up.?flow|registration.?flow|verify.?email",
+      "made_of": [
+       "auth-page",
+       "otp",
+       "onboarding-flow"
+      ]
+     },
+     {
+      "kind": "sign-in-flow",
+      "job": "sign in, 2FA, forgot password",
+      "re": "two.?factor|2fa|magic.?link|sign.?in.?flow",
+      "made_of": [
+       "auth-page",
+       "otp",
+       "reset-password-flow"
+      ]
+     },
+     {
+      "kind": "reset-password-flow",
+      "job": "forgot, email, new password",
+      "re": "forgot|reset.?password|recover",
+      "made_of": [
+       "auth-card",
+       "password"
+      ]
+     },
+     {
+      "kind": "onboarding-flow",
+      "job": "first run: set up, invite, tour",
+      "re": "onboard|welcome.?flow|getting.?started|tour",
+      "made_of": [
+       "stepper",
+       "form",
+       "choice-card"
+      ]
+     },
+     {
+      "kind": "invite-flow",
+      "job": "bring a teammate in",
+      "re": "invite",
+      "made_of": [
+       "dialog",
+       "tag-input",
+       "select"
+      ]
+     }
+    ],
+    "money": [
+     {
+      "kind": "checkout-flow",
+      "job": "cart, details, pay, done",
+      "re": "checkout|payment.?flow|cart",
+      "made_of": [
+       "form",
+       "stepper",
+       "phone-money"
+      ]
+     },
+     {
+      "kind": "upgrade-flow",
+      "job": "pick a plan and pay",
+      "re": "upgrade|plan.?select|subscribe.?flow",
+      "made_of": [
+       "pricing",
+       "segmented",
+       "checkout-flow"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "kind": "create-flow",
+      "job": "make a new thing in steps",
+      "re": "wizard|multi.?step|create.?flow|new.?project",
+      "made_of": [
+       "stepper",
+       "form",
+       "dialog"
+      ]
+     },
+     {
+      "kind": "import-flow",
+      "job": "bring data in: upload, map, check",
+      "re": "import|csv|mapping",
+      "made_of": [
+       "file-upload",
+       "table",
+       "stepper"
+      ]
+     }
+    ]
+   }
+  },
+  "page": {
+   "show": "screen",
+   "why": "owns a whole screen (a URL); seen full size, desktop and mobile",
+   "families": {
+    "screens": [
+     {
+      "kind": "dashboard-page",
+      "job": "numbers and lists at a glance",
+      "re": "dashboard|overview|analytics.?page",
+      "made_of": [
+       "app-shell",
+       "stat",
+       "bar",
+       "table"
+      ]
+     },
+     {
+      "kind": "auth-page",
+      "job": "the screen around the sign-in box",
+      "re": "(login|sign.?in|sign.?up|signin|signup|register|auth).?(page|screen)|(login|signin|signup)-\\d+",
+      "made_of": [
+       "auth-card"
+      ]
+     },
+     {
+      "kind": "settings-page",
+      "job": "all settings, grouped",
+      "re": "settings|preferences|account.?page",
+      "made_of": [
+       "app-shell",
+       "tabs",
+       "settings-row"
+      ]
+     },
+     {
+      "kind": "profile-page",
+      "job": "one person",
+      "re": "profile",
+      "made_of": [
+       "avatar",
+       "stat",
+       "tabs",
+       "list"
+      ]
+     },
+     {
+      "kind": "inbox-page",
+      "job": "a list beside the open item",
+      "re": "inbox|mail",
+      "made_of": [
+       "split-pane",
+       "list",
+       "comments"
+      ]
+     },
+     {
+      "kind": "list-page",
+      "job": "many things: filter, sort, open",
+      "re": "(list|table|directory|catalog).?page",
+      "made_of": [
+       "page-header",
+       "toolbar",
+       "table",
+       "pagination"
+      ]
+     },
+     {
+      "kind": "detail-page",
+      "job": "one thing, all of it",
+      "re": "(detail|item|product).?page",
+      "made_of": [
+       "page-header",
+       "tabs",
+       "card"
+      ]
+     },
+     {
+      "kind": "error-page",
+      "job": "404, 500, no access",
+      "re": "404|not.?found|error.?page|500|maintenance",
+      "made_of": [
+       "empty-state",
+       "button"
+      ]
+     },
+     {
+      "kind": "page",
+      "job": "any other whole page or template",
+      "cats": [
+       "pages/"
+      ]
+     }
+    ]
+   }
+  },
+  "shell": {
+   "show": "device",
+   "why": "frames the whole app; seen in a device frame at one size, desktop and mobile, swiped side by side",
+   "families": {
+    "app-frame": [
+     {
+      "kind": "sidebar",
+      "job": "the app's main nav down the side",
+      "cats": [
+       "navigation/sidebar"
+      ]
+     },
+     {
+      "kind": "top-bar",
+      "job": "the app's bar across the top",
+      "cats": [
+       "navigation/top-nav"
+      ]
+     },
+     {
+      "kind": "dock",
+      "job": "a row of apps or tools",
+      "cats": [
+       "navigation/dock"
+      ]
+     },
+     {
+      "kind": "bottom-bar",
+      "job": "the phone's tab bar along the bottom",
+      "cats": [
+       "navigation/"
+      ],
+      "re": "bottom.?(nav|bar|tab)|tab.?bar|mobile.?nav"
+     },
+     {
+      "kind": "app-shell",
+      "job": "sidebar plus top bar plus content",
+      "cats": [
+       "layout/page-shell",
+       "layout/dashboard"
+      ]
+     },
+     {
+      "kind": "page-header",
+      "job": "a page's title row with its actions",
+      "cats": [
+       "layout/page-shell"
+      ],
+      "re": "page.?header|title bar"
+     },
+     {
+      "kind": "user-menu",
+      "job": "you, your account, sign out",
+      "cats": [
+       "navigation/menu"
+      ],
+      "re": "user.?menu|account menu|profile menu"
+     }
+    ]
+   }
+  },
+  "part": {
+   "show": "card",
+   "why": "sits in a slot inside a screen; seen in a card, at its own size",
+   "families": {
+    "layout": [
+     {
+      "kind": "separator",
+      "job": "a line between groups",
+      "cats": [
+       "layout/",
+       "other/"
+      ],
+      "re": "separator|divider"
+     },
+     {
+      "kind": "aspect-ratio",
+      "job": "keep a shape",
+      "cats": [
+       "layout/",
+       "media/"
+      ],
+      "re": "aspect.?ratio"
+     },
+     {
+      "kind": "split-pane",
+      "job": "panes you can resize",
+      "cats": [
+       "layout/split-pane"
+      ]
+     },
+     {
+      "kind": "scroll-area",
+      "job": "a box that scrolls",
+      "cats": [
+       "layout/scroll-area"
+      ]
+     }
+    ],
+    "actions": [
+     {
+      "kind": "toolbar",
+      "job": "a bar of tools or filters",
+      "cats": [
+       "actions/button",
+       "navigation/menu"
+      ],
+      "re": "toolbar|filter bar|filters"
+     },
+     {
+      "kind": "swipe-actions",
+      "job": "actions revealed by a swipe",
+      "cats": [
+       "actions/button",
+       "data-display/list"
+      ],
+      "re": "swipe"
+     },
+     {
+      "kind": "copy-button",
+      "job": "copy a value",
+      "cats": [
+       "actions/copy-button",
+       "actions/button",
+       "data-display/code-block"
+      ],
+      "re": "\\bcopy|clipboard"
+     },
+     {
+      "kind": "hold-to-confirm",
+      "job": "confirm by holding or sliding",
+      "cats": [
+       "actions/button"
+      ],
+      "re": "\\bhold|long.?press|slide to"
+     },
+     {
+      "kind": "button-group",
+      "job": "related actions joined",
+      "cats": [
+       "actions/button"
+      ],
+      "re": "button.?group|split.?button|grouped"
+     },
+     {
+      "kind": "like-button",
+      "job": "a toggle with a count: like, star, upvote",
+      "cats": [
+       "actions/button"
+      ],
+      "re": "\\blike\\b|heart|upvote|star button|favou?rite"
+     },
+     {
+      "kind": "button",
+      "job": "do one thing",
+      "cats": [
+       "actions/button"
+      ],
+      "re": "button|btn|cta|action"
+     },
+     {
+      "kind": "theme-switch",
+      "job": "light or dark",
+      "cats": [
+       "actions/switch"
+      ],
+      "re": "theme|dark|light|day.?night|sky"
+     },
+     {
+      "kind": "segmented",
+      "job": "pick one of a few, inline",
+      "cats": [
+       "actions/segmented-control",
+       "actions/switch"
+      ],
+      "re": "segment|billing|toggle.?group"
+     },
+     {
+      "kind": "switch",
+      "job": "on or off",
+      "cats": [
+       "actions/switch"
+      ],
+      "re": "switch"
+     },
+     {
+      "kind": "toggle",
+      "job": "a pressed state",
+      "cats": [
+       "actions/switch"
+      ]
+     },
+     {
+      "kind": "link",
+      "job": "go somewhere",
+      "cats": [
+       "actions/link"
+      ]
+     }
+    ],
+    "inputs": [
+     {
+      "kind": "rich-text",
+      "job": "write formatted text",
+      "cats": [
+       "inputs/textarea",
+       "ai-agent/composer"
+      ],
+      "re": "rich.?text|editor|wysiwyg|markdown"
+     },
+     {
+      "kind": "inline-edit",
+      "job": "edit text where it sits",
+      "cats": [
+       "inputs/form-field",
+       "inputs/textarea"
+      ],
+      "re": "inline.?edit|click to edit|editable"
+     },
+     {
+      "kind": "password",
+      "job": "type a secret",
+      "cats": [
+       "inputs/form-field"
+      ],
+      "re": "password"
+     },
+     {
+      "kind": "otp",
+      "job": "type a code",
+      "cats": [
+       "inputs/otp-input"
+      ],
+      "re": "\\botp\\b|one.?time|pin code|verification code"
+     },
+     {
+      "kind": "number-field",
+      "job": "type a number",
+      "cats": [
+       "inputs/number-input"
+      ],
+      "re": "number|stepper|quantity|counter input"
+     },
+     {
+      "kind": "search",
+      "job": "search as you type",
+      "cats": [
+       "inputs/search",
+       "inputs/form-field"
+      ],
+      "re": "search"
+     },
+     {
+      "kind": "tag-input",
+      "job": "type several values as tags",
+      "cats": [
+       "inputs/tag-input"
+      ],
+      "re": "tag|chips? input|token"
+     },
+     {
+      "kind": "textarea",
+      "job": "type a lot",
+      "cats": [
+       "inputs/textarea"
+      ]
+     },
+     {
+      "kind": "phone-money",
+      "job": "typed values with a format: phone, money, card",
+      "cats": [
+       "inputs/form-field"
+      ],
+      "re": "phone|money|currency|credit card|card number|iban"
+     },
+     {
+      "kind": "signature",
+      "job": "draw a signature",
+      "cats": [
+       "inputs/form-field"
+      ],
+      "re": "signature"
+     },
+     {
+      "kind": "input",
+      "job": "type a line",
+      "cats": [
+       "inputs/form-field"
+      ],
+      "re": "input|field|text box"
+     },
+     {
+      "kind": "label-and-help",
+      "job": "name a field, help or error under it",
+      "cats": [
+       "inputs/form-field"
+      ],
+      "re": "label|helper|hint|error|description|validation"
+     }
+    ],
+    "pickers": [
+     {
+      "kind": "chips",
+      "job": "pick filters as chips",
+      "cats": [
+       "data-display/badge",
+       "inputs/tag-input"
+      ],
+      "re": "chip|filter pill"
+     },
+     {
+      "kind": "color-picker",
+      "job": "pick a colour",
+      "cats": [
+       "inputs/color-picker"
+      ],
+      "re": "colou?r"
+     },
+     {
+      "kind": "date-range",
+      "job": "pick a range of dates",
+      "cats": [
+       "inputs/date-range"
+      ],
+      "re": "range"
+     },
+     {
+      "kind": "date-picker",
+      "job": "pick a date",
+      "cats": [
+       "inputs/date-picker",
+       "inputs/date-range"
+      ],
+      "re": "date|calendar"
+     },
+     {
+      "kind": "time-picker",
+      "job": "pick a time",
+      "cats": [
+       "inputs/time-picker"
+      ],
+      "re": "time|clock"
+     },
+     {
+      "kind": "file-upload",
+      "job": "pick files",
+      "cats": [
+       "inputs/file-upload"
+      ],
+      "re": "upload|drop|file|attach"
+     },
+     {
+      "kind": "combobox",
+      "job": "pick from many, by typing",
+      "cats": [
+       "inputs/combobox"
+      ],
+      "re": "combo|autocomplete|command|mention"
+     },
+     {
+      "kind": "multi-select",
+      "job": "pick several from many",
+      "cats": [
+       "inputs/select",
+       "inputs/combobox"
+      ],
+      "re": "multi"
+     },
+     {
+      "kind": "select",
+      "job": "pick one from many",
+      "cats": [
+       "inputs/select",
+       "inputs/combobox"
+      ]
+     },
+     {
+      "kind": "choice-card",
+      "job": "pick by card",
+      "cats": [
+       "inputs/radio",
+       "inputs/checkbox"
+      ],
+      "re": "(radio|choice|option|plan|select\\w*).?cards?|cards?.?(radio|select|choice)"
+     },
+     {
+      "kind": "checkbox",
+      "job": "tick on or off",
+      "cats": [
+       "inputs/checkbox"
+      ]
+     },
+     {
+      "kind": "radio",
+      "job": "pick one, all visible",
+      "cats": [
+       "inputs/radio"
+      ]
+     },
+     {
+      "kind": "knob",
+      "job": "turn a dial",
+      "cats": [
+       "inputs/slider"
+      ],
+      "re": "knob|rotary|angle|circular.?slider|volume.?dial"
+     },
+     {
+      "kind": "slider",
+      "job": "drag to a value",
+      "cats": [
+       "inputs/slider"
+      ]
+     },
+     {
+      "kind": "rating",
+      "job": "give stars",
+      "cats": [
+       "inputs/rating"
+      ]
+     }
+    ],
+    "forms": [
+     {
+      "kind": "auth-card",
+      "job": "the sign-in or sign-up box itself",
+      "cats": [
+       "flows/sign-in"
+      ],
+      "re": "login|sign.?in|sign.?up|signin|signup|register|auth",
+      "made_of": [
+       "input",
+       "password",
+       "button",
+       "checkbox",
+       "link"
+      ]
+     },
+     {
+      "kind": "stepper",
+      "job": "shows which step you are on",
+      "cats": [
+       "navigation/wizard-steps"
+      ],
+      "re": "step|stepper|progress.?steps"
+     },
+     {
+      "kind": "settings-row",
+      "job": "one setting: label, help, control",
+      "cats": [
+       "flows/settings"
+      ],
+      "re": "setting|preference"
+     },
+     {
+      "kind": "form",
+      "job": "a whole form",
+      "cats": [
+       "inputs/form-field",
+       "flows/"
+      ],
+      "re": "form|survey|questionnaire|feedback"
+     }
+    ],
+    "display": [
+     {
+      "kind": "quote",
+      "job": "someone's words, set apart",
+      "re": "quote|blockquote|pull.?quote"
+     },
+     {
+      "kind": "callout",
+      "job": "a boxed note: tip, warning, answer",
+      "re": "callout|admonition|note.?box|tip.?box"
+     },
+     {
+      "kind": "diagram",
+      "job": "boxes and lines: a map, a flow, a mind map",
+      "re": "diagram|flow.?chart|mind.?map|node.?graph|org.?chart|xyflow|react.?flow"
+     },
+     {
+      "kind": "comments",
+      "job": "comments and threads on a thing",
+      "cats": [
+       "data-display/list"
+      ],
+      "re": "comment|thread|reply"
+     },
+     {
+      "kind": "kbd",
+      "job": "a key or shortcut",
+      "cats": [
+       "data-display/typography",
+       "other/"
+      ],
+      "re": "\\bkbd\\b|keyboard|shortcut"
+     },
+     {
+      "kind": "code",
+      "job": "code, inline or a block",
+      "cats": [
+       "data-display/code-block",
+       "data-display/diff",
+       "data-display/json-viewer"
+      ]
+     },
+     {
+      "kind": "text",
+      "job": "text styles",
+      "cats": [
+       "data-display/typography"
+      ]
+     },
+     {
+      "kind": "avatar-group",
+      "job": "many people, stacked",
+      "cats": [
+       "data-display/avatar"
+      ],
+      "re": "avatar.?(group|stack)|facepile|avatars|overlap"
+     },
+     {
+      "kind": "avatar",
+      "job": "a person",
+      "cats": [
+       "data-display/avatar",
+       "data-display/profile"
+      ]
+     },
+     {
+      "kind": "status-dot",
+      "job": "online, live, busy",
+      "cats": [
+       "status/status-dot"
+      ]
+     },
+     {
+      "kind": "badge",
+      "job": "a label or status",
+      "cats": [
+       "data-display/badge"
+      ]
+     },
+     {
+      "kind": "stat",
+      "job": "a number that matters",
+      "cats": [
+       "data-display/stat"
+      ]
+     },
+     {
+      "kind": "card",
+      "job": "a box of related content",
+      "cats": [
+       "data-display/card"
+      ]
+     },
+     {
+      "kind": "table",
+      "job": "rows and columns",
+      "cats": [
+       "data-display/table"
+      ]
+     },
+     {
+      "kind": "list",
+      "job": "a list of things",
+      "cats": [
+       "data-display/list"
+      ]
+     },
+     {
+      "kind": "tree",
+      "job": "nested items",
+      "cats": [
+       "data-display/tree"
+      ]
+     },
+     {
+      "kind": "timeline",
+      "job": "things in time order",
+      "cats": [
+       "data-display/timeline"
+      ]
+     },
+     {
+      "kind": "kanban",
+      "job": "cards in columns",
+      "cats": [
+       "data-display/kanban"
+      ]
+     },
+     {
+      "kind": "calendar",
+      "job": "a month or week of events",
+      "cats": [
+       "data-display/calendar"
+      ]
+     },
+     {
+      "kind": "accordion",
+      "job": "reveal in place",
+      "cats": [
+       "data-display/accordion"
+      ]
+     },
+     {
+      "kind": "empty-state",
+      "job": "nothing here yet",
+      "cats": [
+       "data-display/empty-state"
+      ]
+     },
+     {
+      "kind": "gamification",
+      "job": "streaks, badges, levels",
+      "cats": [
+       "data-display/gamification"
+      ]
+     }
+    ],
+    "feedback": [
+     {
+      "kind": "spinner",
+      "job": "busy, no idea how long",
+      "cats": [
+       "status/loader"
+      ],
+      "re": "spin|loader|loading|dots"
+     },
+     {
+      "kind": "skeleton",
+      "job": "busy, shape known",
+      "cats": [
+       "status/skeleton"
+      ]
+     },
+     {
+      "kind": "ring",
+      "job": "progress in a circle",
+      "cats": [
+       "data-viz/progress-bar",
+       "status/loader"
+      ],
+      "re": "circ|ring|radial"
+     },
+     {
+      "kind": "meter",
+      "job": "how full",
+      "cats": [
+       "data-viz/progress-bar",
+       "data-viz/gauge"
+      ],
+      "re": "meter|usage|gauge|quota"
+     },
+     {
+      "kind": "progress",
+      "job": "how far along",
+      "cats": [
+       "data-viz/progress-bar",
+       "status/loader"
+      ]
+     },
+     {
+      "kind": "toast",
+      "job": "a passing message",
+      "cats": [
+       "overlays/toast"
+      ]
+     },
+     {
+      "kind": "alert",
+      "job": "a message that stays",
+      "cats": [
+       "overlays/alert-banner"
+      ]
+     }
+    ],
+    "overlays": [
+     {
+      "kind": "tooltip",
+      "job": "a hint on hover",
+      "cats": [
+       "overlays/tooltip"
+      ]
+     },
+     {
+      "kind": "hover-card",
+      "job": "a preview on hover",
+      "cats": [
+       "overlays/hover-card"
+      ]
+     },
+     {
+      "kind": "command-palette",
+      "job": "search everything, act",
+      "cats": [
+       "navigation/command-palette"
+      ]
+     },
+     {
+      "kind": "context-menu",
+      "job": "right-click actions",
+      "cats": [
+       "overlays/context-menu"
+      ]
+     },
+     {
+      "kind": "menu",
+      "job": "a list of actions from a button",
+      "cats": [
+       "navigation/menu"
+      ],
+      "re": "dropdown|menu|user"
+     },
+     {
+      "kind": "notifications",
+      "job": "what happened, in a list",
+      "cats": [
+       "overlays/notifications",
+       "overlays/popover"
+      ],
+      "re": "notif|inbox|activity"
+     },
+     {
+      "kind": "popover",
+      "job": "content from a trigger",
+      "cats": [
+       "overlays/popover"
+      ]
+     },
+     {
+      "kind": "sheet",
+      "job": "a panel from the edge",
+      "cats": [
+       "overlays/sheet"
+      ]
+     },
+     {
+      "kind": "dialog",
+      "job": "stop and decide",
+      "cats": [
+       "overlays/dialog"
+      ]
+     },
+     {
+      "kind": "lightbox",
+      "job": "a picture full screen",
+      "cats": [
+       "overlays/lightbox"
+      ]
+     }
+    ],
+    "in-page-nav": [
+     {
+      "kind": "tabs",
+      "job": "switch views in place",
+      "cats": [
+       "navigation/tabs"
+      ]
+     },
+     {
+      "kind": "breadcrumb",
+      "job": "where you are",
+      "cats": [
+       "navigation/breadcrumb"
+      ]
+     },
+     {
+      "kind": "pagination",
+      "job": "page through",
+      "cats": [
+       "navigation/pagination"
+      ]
+     },
+     {
+      "kind": "table-of-contents",
+      "job": "jump within a page",
+      "cats": [
+       "navigation/table-of-contents"
+      ]
+     }
+    ],
+    "charts": [
+     {
+      "kind": "sparkline",
+      "job": "a tiny trend",
+      "cats": [
+       "data-viz/chart"
+      ],
+      "re": "spark|mini|micro|kpi"
+     },
+     {
+      "kind": "pie",
+      "job": "parts of a whole",
+      "cats": [
+       "data-viz/chart"
+      ],
+      "re": "pie|donut|doughnut"
+     },
+     {
+      "kind": "radial",
+      "job": "values on a circle",
+      "cats": [
+       "data-viz/chart"
+      ],
+      "re": "radial|polar|rose"
+     },
+     {
+      "kind": "radar",
+      "job": "many measures at once",
+      "cats": [
+       "data-viz/chart"
+      ],
+      "re": "radar|spider"
+     },
+     {
+      "kind": "heatmap",
+      "job": "intensity on a grid",
+      "cats": [
+       "data-viz/chart"
+      ],
+      "re": "heat|calendar|contribution|waffle"
+     },
+     {
+      "kind": "bar",
+      "job": "compare amounts",
+      "cats": [
+       "data-viz/chart"
+      ],
+      "re": "bar|column|histogram|waterfall|stack"
+     },
+     {
+      "kind": "area",
+      "job": "amounts over time",
+      "cats": [
+       "data-viz/chart"
+      ],
+      "re": "area|stream"
+     },
+     {
+      "kind": "line",
+      "job": "change over time",
+      "cats": [
+       "data-viz/chart"
+      ],
+      "re": "line|trend|time.?series|slope"
+     },
+     {
+      "kind": "scatter",
+      "job": "two measures per point",
+      "cats": [
+       "data-viz/chart"
+      ],
+      "re": "scatter|bubble|dot plot"
+     },
+     {
+      "kind": "treemap",
+      "job": "sizes nested",
+      "cats": [
+       "data-viz/chart"
+      ],
+      "re": "treemap|sunburst|icicle"
+     },
+     {
+      "kind": "funnel-sankey",
+      "job": "flows between stages",
+      "cats": [
+       "data-viz/chart",
+       "data-viz/flow"
+      ],
+      "re": "funnel|sankey|flow"
+     },
+     {
+      "kind": "gauge",
+      "job": "one value against a range",
+      "cats": [
+       "data-viz/gauge"
+      ]
+     },
+     {
+      "kind": "map",
+      "job": "values on a map",
+      "cats": [
+       "data-viz/map"
+      ]
+     },
+     {
+      "kind": "chart-other",
+      "job": "other charts",
+      "cats": [
+       "data-viz/chart"
+      ]
+     }
+    ],
+    "media": [
+     {
+      "kind": "carousel",
+      "job": "slide through",
+      "cats": [
+       "media/carousel"
+      ]
+     },
+     {
+      "kind": "gallery",
+      "job": "many pictures",
+      "cats": [
+       "media/gallery"
+      ]
+     },
+     {
+      "kind": "player",
+      "job": "play audio or video",
+      "cats": [
+       "media/player"
+      ]
+     },
+     {
+      "kind": "image-compare",
+      "job": "before and after",
+      "cats": [
+       "media/image-compare"
+      ]
+     },
+     {
+      "kind": "mockup",
+      "job": "a device or browser frame",
+      "cats": [
+       "media/mockup"
+      ]
+     },
+     {
+      "kind": "card-stack",
+      "job": "cards to swipe",
+      "cats": [
+       "media/card-stack"
+      ]
+     }
+    ],
+    "ai": [
+     {
+      "kind": "composer",
+      "job": "write to the AI",
+      "cats": [
+       "ai-agent/composer"
+      ]
+     },
+     {
+      "kind": "chat",
+      "job": "messages back and forth",
+      "cats": [
+       "ai-agent/ai-agent"
+      ],
+      "re": "chat|message|conversation|thread"
+     },
+     {
+      "kind": "ai-status",
+      "job": "thinking, tools, voice",
+      "cats": [
+       "ai-agent/ai-agent"
+      ]
+     }
+    ],
+    "widgets": [
+     {
+      "kind": "widget-shell",
+      "job": "one dashboard card: grip, title, figures, door, states",
+      "cats": [
+       "data-display/card"
+      ],
+      "re": "widget|dashboard.?card|kpi.?card",
+      "made_of": [
+       "card",
+       "skeleton",
+       "empty-state",
+       "menu"
+      ]
+     },
+     {
+      "kind": "widget-board",
+      "job": "the grid of widgets: sizes, drag, presets",
+      "cats": [
+       "layout/dashboard",
+       "layout/grid"
+      ],
+      "re": "widget.?(board|grid)|dashboard.?grid|bento.?grid|draggable.?grid",
+      "made_of": [
+       "widget-shell"
+      ]
+     },
+     {
+      "kind": "widget-gallery",
+      "job": "pick widgets to add, with live thumbnails",
+      "re": "widget.?(gallery|picker|library)|add.?widget",
+      "made_of": [
+       "dialog",
+       "card",
+       "switch"
+      ]
+     }
+    ]
+   }
+  },
+  "section": {
+   "show": "wide",
+   "why": "a full-width band of a page; seen full width, desktop and mobile",
+   "families": {
+    "marketing": [
+     {
+      "kind": "changelog",
+      "job": "what changed",
+      "cats": [
+       "marketing/"
+      ],
+      "re": "changelog|release notes|what.?s new"
+     },
+     {
+      "kind": "blog-grid",
+      "job": "posts in a grid",
+      "cats": [
+       "marketing/"
+      ],
+      "re": "blog|posts|articles"
+     },
+     {
+      "kind": "contact",
+      "job": "get in touch",
+      "cats": [
+       "marketing/"
+      ],
+      "re": "contact"
+     },
+     {
+      "kind": "newsletter",
+      "job": "sign up for updates",
+      "cats": [
+       "marketing/cta"
+      ],
+      "re": "newsletter|subscribe"
+     },
+     {
+      "kind": "stats-band",
+      "job": "numbers in a band",
+      "cats": [
+       "marketing/"
+      ],
+      "re": "stats|numbers|metrics"
+     },
+     {
+      "kind": "site-header",
+      "job": "a site's top nav",
+      "cats": [
+       "marketing/"
+      ],
+      "re": "site.?header|navbar|header"
+     },
+     {
+      "kind": "hero",
+      "job": "the first band",
+      "cats": [
+       "marketing/hero"
+      ]
+     },
+     {
+      "kind": "features",
+      "job": "what it does",
+      "cats": [
+       "marketing/features"
+      ]
+     },
+     {
+      "kind": "bento",
+      "job": "a grid of feature tiles",
+      "cats": [
+       "layout/bento-grid"
+      ]
+     },
+     {
+      "kind": "pricing",
+      "job": "what it costs",
+      "cats": [
+       "marketing/pricing"
+      ]
+     },
+     {
+      "kind": "comparison",
+      "job": "us against them",
+      "cats": [
+       "marketing/comparison"
+      ]
+     },
+     {
+      "kind": "testimonials",
+      "job": "what people say",
+      "cats": [
+       "marketing/testimonials"
+      ]
+     },
+     {
+      "kind": "logos",
+      "job": "who uses it",
+      "cats": [
+       "marketing/logos"
+      ]
+     },
+     {
+      "kind": "cta",
+      "job": "the ask",
+      "cats": [
+       "marketing/cta"
+      ]
+     },
+     {
+      "kind": "faq",
+      "job": "questions",
+      "cats": [
+       "marketing/faq"
+      ]
+     },
+     {
+      "kind": "team",
+      "job": "the people",
+      "cats": [
+       "marketing/team"
+      ]
+     },
+     {
+      "kind": "about",
+      "job": "the story",
+      "cats": [
+       "marketing/about"
+      ]
+     },
+     {
+      "kind": "announcement",
+      "job": "a bar with news",
+      "cats": [
+       "marketing/announcement"
+      ]
+     },
+     {
+      "kind": "footer",
+      "job": "the bottom of a site",
+      "cats": [
+       "marketing/footer"
+      ]
+     },
+     {
+      "kind": "marketing-other",
+      "job": "other bands",
+      "cats": [
+       "marketing/marketing"
+      ]
+     }
+    ]
+   }
+  },
+  "set": {
+   "show": "grid",
+   "why": "not parts: what parts are made of or move with",
+   "families": {
+    "motion": [
+     {
+      "kind": "text-effect",
+      "job": "text that moves",
+      "cats": [
+       "motion/text-effect"
+      ]
+     },
+     {
+      "kind": "counter",
+      "job": "numbers that roll",
+      "cats": [
+       "motion/number-ticker"
+      ]
+     },
+     {
+      "kind": "border",
+      "job": "moving edges",
+      "cats": [
+       "motion/border"
+      ]
+     },
+     {
+      "kind": "background",
+      "job": "moving backgrounds",
+      "cats": [
+       "motion/background",
+       "motion/gradient",
+       "motion/shader",
+       "motion/globe"
+      ]
+     },
+     {
+      "kind": "cursor",
+      "job": "cursor effects",
+      "cats": [
+       "motion/cursor"
+      ]
+     },
+     {
+      "kind": "marquee",
+      "job": "things that scroll by",
+      "cats": [
+       "motion/marquee"
+      ]
+     },
+     {
+      "kind": "tilt",
+      "job": "3D tilt",
+      "cats": [
+       "motion/tilt-3d"
+      ]
+     }
+    ],
+    "code": [
+     {
+      "kind": "hooks-utils",
+      "job": "hooks and helpers",
+      "cats": [
+       "lib/"
+      ]
+     }
+    ],
+    "assets": [
+     {
+      "kind": "icons",
+      "job": "icon sets",
+      "cats": []
+     }
+    ]
+   }
+  }
+ },
+ "icon_libs": [
+  "animateicons",
+  "lucide-animated",
+  "heroicons-animated",
+  "hugeicons-animated",
+  "phosphor-animated",
+  "hemaaanth-icons"
+ ],
+ "arc": {
+  "accordion": "accordion",
+  "action-button": "button",
+  "activity-heatmap": "heatmap",
+  "alert": "alert",
+  "animated-counter": "counter",
+  "announcement-bar": "announcement",
+  "avatar-group": "avatar-group",
+  "avatar": "avatar",
+  "badge": "badge",
+  "bar-chart": "bar",
+  "billing-toggle": "segmented",
+  "blog-grid": "blog-grid",
+  "bottom-sheet": "sheet",
+  "breadcrumb": "breadcrumb",
+  "brush-chart": "line",
+  "button-group": "button-group",
+  "button": "button",
+  "calendar": "date-picker",
+  "card-stack": "card-stack",
+  "card": "card",
+  "carousel": "carousel",
+  "changelog-feed": "changelog",
+  "chat-thread": "chat",
+  "checkbox": "checkbox",
+  "chip-group": "chips",
+  "code-block": "code",
+  "color-picker": "color-picker",
+  "combobox": "combobox",
+  "command-palette": "command-palette",
+  "comment-thread": "comments",
+  "comparison-table": "comparison",
+  "confirm-morph": "hold-to-confirm",
+  "contact-section": "contact",
+  "context-menu": "context-menu",
+  "copy-button": "copy-button",
+  "countdown": "counter",
+  "cta-section": "cta",
+  "date-picker": "date-picker",
+  "date-range-picker": "date-range",
+  "dialog": "dialog",
+  "donut-chart": "pie",
+  "drawer": "sheet",
+  "dropdown-menu": "menu",
+  "elastic-slider": "slider",
+  "empty-state": "empty-state",
+  "empty-states": "empty-state",
+  "expandable-card": "card",
+  "expanding-button-group": "button-group",
+  "expanding-search": "search",
+  "faq-section": "faq",
+  "file-dropzone": "file-upload",
+  "file-upload": "file-upload",
+  "filter-toolbar": "toolbar",
+  "floating-button-group": "button-group",
+  "gauge": "meter",
+  "hero-section": "hero",
+  "hold-to-confirm": "hold-to-confirm",
+  "hover-card": "hover-card",
+  "image-compare": "image-compare",
+  "in-view-title": "text-effect",
+  "inline-edit": "inline-edit",
+  "input": "input",
+  "json-viewer": "code",
+  "line-chart": "line",
+  "login-centered": "auth-page",
+  "logo-marquee": "logos",
+  "mention-input": "combobox",
+  "metric-card": "stat",
+  "money-input": "phone-money",
+  "morph-select": "select",
+  "multi-select": "multi-select",
+  "newsletter-signup": "newsletter",
+  "notification-center": "notifications",
+  "number-field": "number-field",
+  "otp-input": "otp",
+  "page-header": "page-header",
+  "pagination": "pagination",
+  "password-field": "password",
+  "password-strength": "password",
+  "phone-input": "phone-money",
+  "plan-comparison": "pricing",
+  "popover": "popover",
+  "progress": "progress",
+  "radio-cards": "choice-card",
+  "radio-group": "radio",
+  "resizable-panels": "split-pane",
+  "rich-text-editor": "rich-text",
+  "ridgeline": "area",
+  "scroll-area": "scroll-area",
+  "search-field": "search",
+  "segmented-control": "segmented",
+  "shortcut-recorder": "kbd",
+  "sign-in": "auth-card",
+  "signup-form": "auth-card",
+  "signature-pad": "signature",
+  "site-footer": "footer",
+  "site-header": "site-header",
+  "skeleton": "skeleton",
+  "slider": "slider",
+  "slope-chart": "line",
+  "slot-text": "text-effect",
+  "sortable-data-table": "table",
+  "sparkline": "sparkline",
+  "split-button": "button-group",
+  "stats-band": "stats-band",
+  "stepper": "number-field",
+  "streamgraph": "area",
+  "swipe-actions": "swipe-actions",
+  "switch": "switch",
+  "tabs": "tabs",
+  "tag-input": "tag-input",
+  "text-morph": "text-effect",
+  "text-reveal": "text-effect",
+  "text-shimmer": "text-effect",
+  "textarea": "textarea",
+  "theme-switch-eclipse": "theme-switch",
+  "theme-switch-rise": "theme-switch",
+  "theme-switch-split": "theme-switch",
+  "theme-switch": "theme-switch",
+  "time-picker": "time-picker",
+  "timeline": "timeline",
+  "toast-stack": "toast",
+  "toast": "toast",
+  "tooltip": "tooltip",
+  "tree-view": "tree",
+  "treemap": "treemap",
+  "usage-meter": "meter",
+  "user-menu": "user-menu",
+  "waffle-chart": "pie"
+ },
+ "levels": [
+  [
+   "flow",
+   "Does it go through several screens toward one goal?",
+   "sign up, check out, onboard"
+  ],
+  [
+   "page",
+   "Does it own a whole screen, its own URL?",
+   "the sign-in page, settings, a dashboard"
+  ],
+  [
+   "shell",
+   "Does it stay put while the screens inside it change?",
+   "sidebar, top bar, dock"
+  ],
+  [
+   "section",
+   "Is it a full-width band on a site page?",
+   "hero, pricing, FAQ"
+  ],
+  [
+   "part",
+   "Otherwise it sits in a slot on a screen.",
+   "the sign-in box, a button, a chart"
+  ],
+  [
+   "set",
+   "Is it a style applied to anything, or a collection?",
+   "text effects, backgrounds, icons"
+  ]
+ ]
+}

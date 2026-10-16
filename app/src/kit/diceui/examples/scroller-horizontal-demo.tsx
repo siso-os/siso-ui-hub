@@ -1,0 +1,21 @@
+import { Scroller } from "../ui/scroller";
+
+export default function ScrollerHorizontalDemo() {
+  return (
+    <Scroller orientation="horizontal" className="w-full p-4">
+      <div className="flex items-center gap-2.5">
+        {Array.from({ length: 10 }).map((_, index) => (
+          <div
+            key={index}
+            className="flex h-32 w-[180px] shrink-0 flex-col items-center justify-center rounded-md bg-accent p-4"
+          >
+            <div className="text-lg font-medium">Card {index + 1}</div>
+            <span className="text-sm text-muted-foreground">
+              Scroll horizontally
+            </span>
+          </div>
+        ))}
+      </div>
+    </Scroller>
+  );
+}

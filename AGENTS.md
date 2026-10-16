@@ -36,6 +36,6 @@
 
 ## Rules for this repo
 
-- HALO CRM is Cam's: record names and usage only, never read its code, and keep its census out of git.
+- HALO CRM is Cam's repo. Reading and analysing its code is fine (Shaan, 14 Oct: "it's not off limits for code"); its code stays in his repo, never copied into this one.
 - Respect licences: install only what a licence allows (Arc Pro, Kobra, Kinetics are reference only).
 - Nothing is deleted: move it under `_archive/`.

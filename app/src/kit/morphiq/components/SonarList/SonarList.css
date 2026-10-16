@@ -1,0 +1,20 @@
+/* SonarList — JS writes one `translate` per ringing row (not `transform`, so a
+   row's own transform, and any transition on it, are left alone), promotes a
+   row to its own layer only while it rings, and paints the wavefront into
+   ::after through --sonar-front. Rows keep their own layout; nothing here
+   positions them. */
+
+/* Zero specificity: the front needs a containing block, but any position the
+   host gives the list wins. */
+:where(.sonar-list) {
+  position: relative;
+}
+
+.sonar-list::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  pointer-events: none;
+  background-image: var(--sonar-front, none);
+}

@@ -1,0 +1,23 @@
+#!/usr/bin/env python3
+"""Shell kinds for the device-frame pages (/kit/shells/<kind>): every sidebar, top bar, dock and app shell we own,
+ranked so whole demos and blocks come first and bare primitives (which need children to draw) come last.
+Reads catalogue/kit-map.json and the kit index; writes catalogue/kit-shells.json. No model."""
+import json, os, re
+HUB = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+m = json.load(open(f"{HUB}/catalogue/kit-map.json"))
+P = {r[0]: r for r in json.load(open(f"{HUB}/app/src/kit/index.json"))["parts"]}
+BLOCK_LIBS = {"shadcn-ui-blocks", "shadcnblocks", "shadcn-space", "shadcn-dashboard", "shadcnuikit", "taki", "reui", "zaidan"}
+def score(pid, r):
+    lib, name = pid.split("/", 1)
+    s = 0
+    if lib in BLOCK_LIBS: s += 2
+    if re.search(r"demo|example|block|dashboard|\d+$", name): s += 3
+    if re.search(r"(^|/)(components/ui|ui)/|^components-|primitives", r[4] + " " + name) and "demo" not in name: s -= 4
+    return s
+out = {}
+for k in m["tree"]["shell"]["families"]["app-frame"]:
+    rows = [P[i] for i in k["ids"] if i in P and P[i][5]]
+    rows.sort(key=lambda r: -score(r[0], r))
+    out[k["kind"]] = {"job": k["job"], "parts": [{"id": r[0], "title": r[1], "file": r[4], "about": r[7]} for r in rows]}
+json.dump(out, open(f"{HUB}/catalogue/kit-shells.json", "w"), indent=1)
+print({k: len(v["parts"]) for k, v in out.items()})

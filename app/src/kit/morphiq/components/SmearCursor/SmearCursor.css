@@ -1,0 +1,32 @@
+/* SmearCursor — the canvas covers the host and never takes the pointer, so
+   whatever sits underneath stays clickable. */
+
+.smear-cursor {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.smear-cursor__canvas {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+/* Opt-in (hideNative): replacing the system cursor is a real accessibility
+   cost, so it is never the default — and the script sets data-bare only while
+   it is drawing the disc that stands in for it. With no script, before the
+   pointer has been seen, and under reduced motion, the system cursor stays. */
+.smear-cursor[data-bare] { cursor: none; }
+
+/* A reader who has asked the system for forced colours or more contrast keeps
+   the system's cursor, which follows those settings; a painted disc cannot.
+   The disc steps aside by itself wherever a cursor is showing. */
+@media (forced-colors: active), (prefers-contrast: more) {
+  .smear-cursor[data-bare] { cursor: auto; }
+}
+
+/* Opt-in (touch): a drag that sets off sideways belongs to the smear; one that
+   sets off up or down still scrolls the page, and pinch-zoom stays with the
+   reader. */
+.smear-cursor.is-touch { touch-action: pan-y pinch-zoom; }

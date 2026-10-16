@@ -1,0 +1,17 @@
+/* DepthOfField — JS writes filter and translate per card. The stack itself is
+   the host's layout; nothing here positions the children, and a card's own
+   transform is left alone. */
+
+.depth-of-field { position: relative; }
+.depth-of-field > * { will-change: filter, translate; }
+
+/* Following the pointer, a finger dragged sideways is followed from card to
+   card. A vertical swipe is still the page's and so is a pinch, so the stack
+   never traps a scroll or a zoom. */
+.depth-of-field--follow { touch-action: pan-y pinch-zoom; }
+
+@media (prefers-reduced-motion: reduce) {
+  /* Focus still goes where you point, at once, and nothing parallaxes, so
+     there is nothing to keep a layer warm for. */
+  .depth-of-field > * { will-change: auto; }
+}

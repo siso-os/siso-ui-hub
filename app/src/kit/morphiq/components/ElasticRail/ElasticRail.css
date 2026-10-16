@@ -1,0 +1,22 @@
+/* ElasticRail — the SVG overflows on purpose: the string bows past the rail's
+   own box when the page is pushed past its end, and swings as far the other
+   way on its way back, so leave it room where it is mounted — give × reach
+   either side covers every push the rail stands in for. It takes no pointer:
+   it reports the page's position, it is not a control. */
+
+.elastic-rail {
+  position: relative;
+  width: 100%;
+  height: 14px;
+  pointer-events: none;
+}
+
+.elastic-rail.is-vertical { width: 14px; height: 100%; }
+
+.elastic-rail__svg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+}

@@ -1,0 +1,886 @@
+{
+"lib": "plotcn",
+"source": "plotcn",
+"homepage": "https://plotcn.vercel.app",
+"description": "Source-first React visualization components for Recharts, D3.js, and Google Charts",
+"items": 49,
+"parts": [
+{
+"id": "plotcn/area-baseline",
+"name": "area-baseline",
+"title": "Baseline Area",
+"description": "Single-series area visualization showing values above and below an explicit quantitative reference baseline with truthful deviation semantics.",
+"type": "component",
+"cat": "data-viz/chart",
+"domain": [
+"dev tools"
+],
+"file": "components/charts/recharts/area-baseline.tsx",
+"files": [
+"components/charts/recharts/area-baseline.tsx"
+],
+"deps": [
+"recharts"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://plotcn.vercel.app/r/area-baseline.json"
+},
+{
+"id": "plotcn/area-basic",
+"name": "area-basic",
+"title": "Basic Area Chart",
+"description": "Gradient area chart with smooth monotone interpolation.",
+"type": "component",
+"cat": "data-viz/chart",
+"domain": [],
+"file": "components/charts/recharts/area-basic.tsx",
+"files": [
+"components/charts/recharts/area-basic.tsx"
+],
+"deps": [
+"recharts"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://plotcn.vercel.app/r/area-basic.json"
+},
+{
+"id": "plotcn/area-comparison",
+"name": "area-comparison",
+"title": "Comparison Area",
+"description": "Two-series area visualization for comparing a primary magnitude against a reference magnitude across an ordered domain, using restrained overlap, deterministic semantic identity, and shared Y-scale.",
+"type": "component",
+"cat": "marketing/comparison",
+"domain": [
+"commerce"
+],
+"file": "components/charts/recharts/area-comparison.tsx",
+"files": [
+"components/charts/recharts/area-comparison.tsx"
+],
+"deps": [
+"recharts"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://plotcn.vercel.app/r/area-comparison.json"
+},
+{
+"id": "plotcn/area-gradient-depth",
+"name": "area-gradient-depth",
+"title": "Gradient Depth Area",
+"description": "Single-series area visualization with a semantic fade-to-surface fill that adds restrained depth without encoding an additional variable.",
+"type": "component",
+"cat": "motion/gradient",
+"domain": [],
+"file": "components/charts/recharts/area-gradient-depth.tsx",
+"files": [
+"components/charts/recharts/area-gradient-depth.tsx"
+],
+"deps": [
+"recharts"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://plotcn.vercel.app/r/area-gradient-depth.json"
+},
+{
+"id": "plotcn/area-interactive",
+"name": "area-interactive",
+"title": "Interactive Area",
+"description": "Inspection-first area visualization with nearest-X selection, observation-aligned crosshair, keyboard navigation, and a persistent lockable tooltip.",
+"type": "component",
+"cat": "data-viz/chart",
+"domain": [],
+"file": "components/charts/recharts/area-interactive.tsx",
+"files": [
+"components/charts/recharts/area-interactive.tsx"
+],
+"deps": [
+"recharts",
+"@hugeicons/react",
+"@hugeicons/core-free-icons"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://plotcn.vercel.app/r/area-interactive.json"
+},
+{
+"id": "plotcn/area-percent-stream",
+"name": "area-percent-stream",
+"title": "Percent Stream Area",
+"description": "100% normalized stacked area chart for tracking how each contributor's share of the visible whole evolves over an ordered domain.",
+"type": "component",
+"cat": "data-viz/chart",
+"domain": [
+"commerce"
+],
+"file": "components/charts/recharts/area-percent-stream.tsx",
+"files": [
+"components/charts/recharts/area-percent-stream.tsx"
+],
+"deps": [
+"recharts"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://plotcn.vercel.app/r/area-percent-stream.json"
+},
+{
+"id": "plotcn/area-prism",
+"name": "area-prism",
+"title": "Prism Area",
+"description": "Single-series magnitude area chart with restrained semantic fill, explicit baseline semantics, and Plotcn shared inspection.",
+"type": "component",
+"cat": "data-viz/chart",
+"domain": [],
+"file": "components/charts/recharts/area-prism.tsx",
+"files": [
+"components/charts/recharts/area-prism.tsx"
+],
+"deps": [
+"recharts"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://plotcn.vercel.app/r/area-prism.json"
+},
+{
+"id": "plotcn/area-range",
+"name": "area-range",
+"title": "Range Area",
+"description": "Bounded area visualization for showing a lower/upper envelope across an ordered domain, with optional central trend, truthful interval semantics, and explicit missing-bound behavior.",
+"type": "component",
+"cat": "inputs/slider",
+"domain": [
+"commerce"
+],
+"file": "components/charts/recharts/area-range.tsx",
+"files": [
+"components/charts/recharts/area-range.tsx"
+],
+"deps": [
+"recharts"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://plotcn.vercel.app/r/area-range.json"
+},
+{
+"id": "plotcn/area-stack-flow",
+"name": "area-stack-flow",
+"title": "Stack Flow Area",
+"description": "Additive multi-series stacked area chart with deterministic stack identity, truthful missing-value semantics, and contribution inspection.",
+"type": "component",
+"cat": "data-viz/chart",
+"domain": [],
+"file": "components/charts/recharts/area-stack-flow.tsx",
+"files": [
+"components/charts/recharts/area-stack-flow.tsx"
+],
+"deps": [
+"recharts"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://plotcn.vercel.app/r/area-stack-flow.json"
+},
+{
+"id": "plotcn/bar-basic",
+"name": "bar-basic",
+"title": "Basic Bar Chart",
+"description": "Categorical vertical bar chart with rounded caps and responsive tooltips.",
+"type": "component",
+"cat": "data-viz/chart",
+"domain": [],
+"file": "components/charts/recharts/bar-basic.tsx",
+"files": [
+"components/charts/recharts/bar-basic.tsx"
+],
+"deps": [
+"recharts"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://plotcn.vercel.app/r/bar-basic.json"
+},
+{
+"id": "plotcn/bar-bullet",
+"name": "bar-bullet",
+"title": "Bullet Bars",
+"description": "Compact actual-versus-target bars for operational scorecards, with per-category target markers, truthful delta semantics, and responsive row-based inspection.",
+"type": "component",
+"cat": "data-viz/chart",
+"domain": [],
+"file": "components/charts/recharts/bar-bullet.tsx",
+"files": [
+"components/charts/recharts/bar-bullet.tsx"
+],
+"deps": [
+"recharts"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://plotcn.vercel.app/r/bar-bullet.json"
+},
+{
+"id": "plotcn/bar-diverging",
+"name": "bar-diverging",
+"title": "Diverging Bars",
+"description": "Signed categorical comparison around an explicit neutral reference, with truthful deviation geometry, symmetric scaling, touch-safe inspection, and neutral above/below semantics.",
+"type": "component",
+"cat": "data-viz/chart",
+"domain": [
+"dev tools",
+"maps"
+],
+"file": "components/charts/recharts/bar-diverging.tsx",
+"files": [
+"components/charts/recharts/bar-diverging.tsx"
+],
+"deps": [
+"recharts"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://plotcn.vercel.app/r/bar-diverging.json"
+},
+{
+"id": "plotcn/bar-group-compare",
+"name": "bar-group-compare",
+"title": "Group Compare Bars",
+"description": "Side-by-side peer measures within stable categorical groups, with shared quantitative scaling, deterministic series identity, and category-centric inspection.",
+"type": "component",
+"cat": "marketing/comparison",
+"domain": [],
+"file": "components/charts/recharts/bar-group-compare.tsx",
+"files": [
+"components/charts/recharts/bar-group-compare.tsx"
+],
+"deps": [
+"recharts"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://plotcn.vercel.app/r/bar-group-compare.json"
+},
+{
+"id": "plotcn/bar-interactive",
+"name": "bar-interactive",
+"title": "Interactive Bars",
+"description": "Category-first bar inspection with a responsive band cursor, persistent touch locking, single-tab keyboard navigation, and controlled multi-series tooltip readout.",
+"type": "component",
+"cat": "data-viz/chart",
+"domain": [],
+"file": "components/charts/recharts/bar-interactive.tsx",
+"files": [
+"components/charts/recharts/bar-interactive.tsx"
+],
+"deps": [
+"recharts"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://plotcn.vercel.app/r/bar-interactive.json"
+},
+{
+"id": "plotcn/bar-interval",
+"name": "bar-interval",
+"title": "Interval Bars",
+"description": "Floating range bars with explicit start and end bounds along a shared quantitative or temporal domain, truthful zero-width markers, and container-clamped tooltips.",
+"type": "component",
+"cat": "data-viz/chart",
+"domain": [],
+"file": "components/charts/recharts/bar-interval.tsx",
+"files": [
+"components/charts/recharts/bar-interval.tsx"
+],
+"deps": [
+"recharts"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://plotcn.vercel.app/r/bar-interval.json"
+},
+{
+"id": "plotcn/bar-percent-stack",
+"name": "bar-percent-stack",
+"title": "Percent Stack Bars",
+"description": "100% normalized stacked bars for comparing categorical composition while preserving raw contributor values, truthful zero/missing semantics, and stable stack identity.",
+"type": "component",
+"cat": "data-viz/chart",
+"domain": [],
+"file": "components/charts/recharts/bar-percent-stack.tsx",
+"files": [
+"components/charts/recharts/bar-percent-stack.tsx"
+],
+"deps": [
+"recharts"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://plotcn.vercel.app/r/bar-percent-stack.json"
+},
+{
+"id": "plotcn/bar-signal",
+"name": "bar-signal",
+"title": "Signal Bars",
+"description": "Canonical zero-anchored bars for discrete categorical comparison with stable ordering, grouped series, and category-centric inspection.",
+"type": "component",
+"cat": "data-viz/chart",
+"domain": [
+"commerce"
+],
+"file": "components/charts/recharts/bar-signal.tsx",
+"files": [
+"components/charts/recharts/bar-signal.tsx"
+],
+"deps": [
+"recharts"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://plotcn.vercel.app/r/bar-signal.json"
+},
+{
+"id": "plotcn/bar-stack-ledger",
+"name": "bar-stack-ledger",
+"title": "Stack Ledger Bars",
+"description": "Additive stacked bars for multi-series categorical composition with stable contributor identity, truthful totals, and category-centric inspection.",
+"type": "component",
+"cat": "data-viz/chart",
+"domain": [],
+"file": "components/charts/recharts/bar-stack-ledger.tsx",
+"files": [
+"components/charts/recharts/bar-stack-ledger.tsx"
+],
+"deps": [
+"recharts"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://plotcn.vercel.app/r/bar-stack-ledger.json"
+},
+{
+"id": "plotcn/bar-variance",
+"name": "bar-variance",
+"title": "Variance Bars",
+"description": "Actual-versus-plan delta bars centered on a truthful zero-variance baseline, with neutral signed semantics and auditable source values.",
+"type": "component",
+"cat": "data-viz/chart",
+"domain": [
+"billing"
+],
+"file": "components/charts/recharts/bar-variance.tsx",
+"files": [
+"components/charts/recharts/bar-variance.tsx"
+],
+"deps": [
+"recharts"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://plotcn.vercel.app/r/bar-variance.json"
+},
+{
+"id": "plotcn/block-frame",
+"name": "block-frame",
+"title": "Dashboard frame",
+"description": "Local panel isolation, metrics and honest dashboard states.",
+"type": "component",
+"cat": "layout/dashboard",
+"domain": [],
+"file": "components/charts/blocks/block-frame.tsx",
+"files": [
+"components/charts/blocks/block-frame.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://plotcn.vercel.app/r/block-frame.json"
+},
+{
+"id": "plotcn/chart-accessibility",
+"name": "chart-accessibility",
+"title": "Accessible Chart Shell",
+"description": "Screen-reader descriptions, live regions, and accessible data disclosure tables.",
+"type": "ui",
+"cat": "data-viz/chart",
+"domain": [],
+"file": "components/charts/shared/chart-accessibility.tsx",
+"files": [
+"components/charts/shared/chart-accessibility.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://plotcn.vercel.app/r/chart-accessibility.json"
+},
+{
+"id": "plotcn/chart-container",
+"name": "chart-container",
+"title": "Chart Container Primitive",
+"description": "Shared responsive container, ResizeObserver, and CSS token bridge.",
+"type": "ui",
+"cat": "data-viz/chart",
+"domain": [
+"crypto"
+],
+"file": "components/charts/shared/chart-container.tsx",
+"files": [
+"components/charts/shared/chart-container.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://plotcn.vercel.app/r/chart-container.json"
+},
+{
+"id": "plotcn/chart-legend",
+"name": "chart-legend",
+"title": "Chart Legend Primitive",
+"description": "Series-aware line, area, bar, and point legend treatment.",
+"type": "ui",
+"cat": "data-viz/chart",
+"domain": [],
+"file": "components/charts/shared/chart-legend.tsx",
+"files": [
+"components/charts/shared/chart-legend.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://plotcn.vercel.app/r/chart-legend.json"
+},
+{
+"id": "plotcn/chart-state",
+"name": "chart-state",
+"title": "Chart State Fallbacks",
+"description": "Truthful loading, empty, and error fallback states with glassmorphic styling.",
+"type": "ui",
+"cat": "data-viz/chart",
+"domain": [],
+"file": "components/charts/shared/chart-state.tsx",
+"files": [
+"components/charts/shared/chart-state.tsx"
+],
+"deps": [
+"@hugeicons/react",
+"@hugeicons/core-free-icons"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://plotcn.vercel.app/r/chart-state.json"
+},
+{
+"id": "plotcn/chart-tooltip",
+"name": "chart-tooltip",
+"title": "Chart Tooltip Primitive",
+"description": "High-contrast developer tooltip with tabular numbers and semantic token mapping.",
+"type": "ui",
+"cat": "overlays/tooltip",
+"domain": [
+"crypto",
+"dev tools",
+"maps"
+],
+"file": "components/charts/shared/chart-tooltip.tsx",
+"files": [
+"components/charts/shared/chart-tooltip.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://plotcn.vercel.app/r/chart-tooltip.json"
+},
+{
+"id": "plotcn/d3-animated-line",
+"name": "d3-animated-line",
+"title": "D3 Animated Line",
+"description": "Continuous scales, monotone curves, and data points computed with D3 and rendered via React SVG.",
+"type": "component",
+"cat": "data-viz/chart",
+"domain": [],
+"file": "components/charts/d3/d3-animated-line.tsx",
+"files": [
+"components/charts/d3/d3-animated-line.tsx"
+],
+"deps": [
+"d3-scale",
+"d3-shape",
+"d3-array"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://plotcn.vercel.app/r/d3-animated-line.json"
+},
+{
+"id": "plotcn/d3-force-network",
+"name": "d3-force-network",
+"title": "D3 Force-Directed Network",
+"description": "Physics-based node simulation with link springs and repulsion forces.",
+"type": "component",
+"cat": "data-viz/chart",
+"domain": [],
+"file": "components/charts/d3/d3-force-network.tsx",
+"files": [
+"components/charts/d3/d3-force-network.tsx"
+],
+"deps": [
+"d3-force"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://plotcn.vercel.app/r/d3-force-network.json"
+},
+{
+"id": "plotcn/donut-basic",
+"name": "donut-basic",
+"title": "Basic Donut Chart",
+"description": "Proportional breakdown with optional legend and pointer tooltips.",
+"type": "component",
+"cat": "data-viz/chart",
+"domain": [],
+"file": "components/charts/recharts/donut-basic.tsx",
+"files": [
+"components/charts/recharts/donut-basic.tsx"
+],
+"deps": [
+"recharts"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://plotcn.vercel.app/r/donut-basic.json"
+},
+{
+"id": "plotcn/google-bar",
+"name": "google-bar",
+"title": "Google Bar Chart",
+"description": "Categorical column chart rendered with Google Charts corechart package.",
+"type": "component",
+"cat": "data-viz/chart",
+"domain": [],
+"file": "components/charts/google/google-bar.tsx",
+"files": [
+"components/charts/google/google-bar.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://plotcn.vercel.app/r/google-bar.json"
+},
+{
+"id": "plotcn/google-chart-container",
+"name": "google-chart-container",
+"title": "Google Chart Container",
+"description": "Lifecycle wrapper managing ResizeObserver and fallback states for Google Charts.",
+"type": "ui",
+"cat": "data-viz/chart",
+"domain": [],
+"file": "components/charts/google/google-chart-container.tsx",
+"files": [
+"components/charts/google/google-chart-container.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://plotcn.vercel.app/r/google-chart-container.json"
+},
+{
+"id": "plotcn/google-geochart",
+"name": "google-geochart",
+"title": "Google GeoChart Choropleth",
+"description": "World, country, and regional statistical choropleths via Google Charts hosted geochart package.",
+"type": "component",
+"cat": "data-viz/map",
+"domain": [
+"maps"
+],
+"file": "components/charts/google/google-geochart.tsx",
+"files": [
+"components/charts/google/google-geochart.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://plotcn.vercel.app/r/google-geochart.json"
+},
+{
+"id": "plotcn/google-line",
+"name": "google-line",
+"title": "Google Line Chart",
+"description": "Smooth 2D Cartesian line chart rendered with Google Charts corechart package.",
+"type": "component",
+"cat": "data-viz/chart",
+"domain": [
+"commerce"
+],
+"file": "components/charts/google/google-line.tsx",
+"files": [
+"components/charts/google/google-line.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://plotcn.vercel.app/r/google-line.json"
+},
+{
+"id": "plotcn/line-basic",
+"name": "line-basic",
+"title": "Basic Line Chart",
+"description": "Approachable Cartesian line chart built with Recharts and theme tokens.",
+"type": "component",
+"cat": "data-viz/chart",
+"domain": [
+"commerce",
+"crypto"
+],
+"file": "components/charts/recharts/line-basic.tsx",
+"files": [
+"components/charts/recharts/line-basic.tsx"
+],
+"deps": [
+"recharts"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://plotcn.vercel.app/r/line-basic.json"
+},
+{
+"id": "plotcn/line-focus",
+"name": "line-focus",
+"title": "Focus Line",
+"description": "An interaction-first time-series line optimized for precise keyboard focus, pointer/touch scrubbing, crosshair inspection, and persistent locked tooltips.",
+"type": "component",
+"cat": "data-viz/chart",
+"domain": [],
+"file": "components/charts/recharts/line-focus.tsx",
+"files": [
+"components/charts/recharts/line-focus.tsx"
+],
+"deps": [
+"recharts",
+"@hugeicons/react",
+"@hugeicons/core-free-icons"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://plotcn.vercel.app/r/line-focus.json"
+},
+{
+"id": "plotcn/line-forecast",
+"name": "line-forecast",
+"title": "Forecast Line",
+"description": "Observed-versus-forecast time-series visualization with explicit prediction semantics, non-color line encoding, and optional uncertainty treatment.",
+"type": "component",
+"cat": "data-viz/chart",
+"domain": [],
+"file": "components/charts/recharts/line-forecast.tsx",
+"files": [
+"components/charts/recharts/line-forecast.tsx"
+],
+"deps": [
+"recharts"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://plotcn.vercel.app/r/line-forecast.json"
+},
+{
+"id": "plotcn/line-milestones",
+"name": "line-milestones",
+"title": "Milestone Line",
+"description": "Time-series trend with sparse event annotations and milestone pins for releases, incidents, launches, and policy changes.",
+"type": "component",
+"cat": "data-viz/chart",
+"domain": [],
+"file": "components/charts/recharts/line-milestones.tsx",
+"files": [
+"components/charts/recharts/line-milestones.tsx"
+],
+"deps": [
+"recharts"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://plotcn.vercel.app/r/line-milestones.json"
+},
+{
+"id": "plotcn/line-multi-signal",
+"name": "line-multi-signal",
+"title": "Multi-Signal Line",
+"description": "Multi-series time-series visualization with deterministic series identity, shared nearest-X inspection, and responsive interactive legend controls.",
+"type": "component",
+"cat": "data-viz/chart",
+"domain": [],
+"file": "components/charts/recharts/line-multi-signal.tsx",
+"files": [
+"components/charts/recharts/line-multi-signal.tsx"
+],
+"deps": [
+"recharts"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://plotcn.vercel.app/r/line-multi-signal.json"
+},
+{
+"id": "plotcn/line-multiple",
+"name": "line-multiple",
+"title": "Multi-Series Line Chart",
+"description": "Multi-series line chart comparing current vs previous periods.",
+"type": "component",
+"cat": "data-viz/chart",
+"domain": [],
+"file": "components/charts/recharts/line-multiple.tsx",
+"files": [
+"components/charts/recharts/line-multiple.tsx"
+],
+"deps": [
+"recharts"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://plotcn.vercel.app/r/line-multiple.json"
+},
+{
+"id": "plotcn/line-pulse",
+"name": "line-pulse",
+"title": "Pulse Line",
+"description": "High-frequency operational trend visualization for rapidly changing metrics, rolling windows, and live telemetry surfaces.",
+"type": "component",
+"cat": "data-viz/chart",
+"domain": [
+"dev tools"
+],
+"file": "components/charts/recharts/line-pulse.tsx",
+"files": [
+"components/charts/recharts/line-pulse.tsx"
+],
+"deps": [
+"recharts"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://plotcn.vercel.app/r/line-pulse.json"
+},
+{
+"id": "plotcn/line-range",
+"name": "line-range",
+"title": "Range Line",
+"description": "Visualizes a central trend alongside a lower-to-upper interval envelope for forecasts, confidence intervals, and operational tolerance bands.",
+"type": "component",
+"cat": "inputs/slider",
+"domain": [],
+"file": "components/charts/recharts/line-range.tsx",
+"files": [
+"components/charts/recharts/line-range.tsx"
+],
+"deps": [
+"recharts"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://plotcn.vercel.app/r/line-range.json"
+},
+{
+"id": "plotcn/line-signal",
+"name": "line-signal",
+"title": "Signal Line",
+"description": "Focused single-series time-series or ordered categorical line visualization with restrained active-point emphasis.",
+"type": "component",
+"cat": "data-viz/chart",
+"domain": [
+"commerce"
+],
+"file": "components/charts/recharts/line-signal.tsx",
+"files": [
+"components/charts/recharts/line-signal.tsx"
+],
+"deps": [
+"recharts"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://plotcn.vercel.app/r/line-signal.json"
+},
+{
+"id": "plotcn/line-step-signal",
+"name": "line-step-signal",
+"title": "Step Signal",
+"description": "Stepped visualization for discrete changes that remain in effect until the next observation, communicating quotas, pricing plans, and configuration states.",
+"type": "component",
+"cat": "data-viz/chart",
+"domain": [
+"billing"
+],
+"file": "components/charts/recharts/line-step-signal.tsx",
+"files": [
+"components/charts/recharts/line-step-signal.tsx"
+],
+"deps": [
+"recharts"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://plotcn.vercel.app/r/line-step-signal.json"
+},
+{
+"id": "plotcn/line-threshold",
+"name": "line-threshold",
+"title": "Threshold Line",
+"description": "Quantitative time-series trend evaluated against horizontal reference boundaries and bounded operating regions.",
+"type": "component",
+"cat": "data-viz/chart",
+"domain": [],
+"file": "components/charts/recharts/line-threshold.tsx",
+"files": [
+"components/charts/recharts/line-threshold.tsx"
+],
+"deps": [
+"recharts"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://plotcn.vercel.app/r/line-threshold.json"
+},
+{
+"id": "plotcn/line-twin-compare",
+"name": "line-twin-compare",
+"title": "Twinline Compare",
+"description": "Comparative time-series line visualization contrasting a primary series against a reference series with synchronized inspection and truthful delta context.",
+"type": "component",
+"cat": "marketing/comparison",
+"domain": [],
+"file": "components/charts/recharts/line-twin-compare.tsx",
+"files": [
+"components/charts/recharts/line-twin-compare.tsx"
+],
+"deps": [
+"recharts"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://plotcn.vercel.app/r/line-twin-compare.json"
+},
+{
+"id": "plotcn/revenue-dashboard",
+"name": "revenue-dashboard",
+"title": "Revenue Dashboard",
+"description": "Revenue trend, channel comparison and contribution with real period and channel filters.",
+"type": "block",
+"cat": "layout/dashboard",
+"domain": [],
+"file": "components/charts/blocks/revenue-dashboard.tsx",
+"files": [
+"components/charts/blocks/revenue-dashboard.tsx",
+"components/charts/blocks/revenue-dashboard-data.ts"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://plotcn.vercel.app/r/revenue-dashboard.json"
+}
+]
+}

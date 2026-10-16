@@ -1,0 +1,162 @@
+#!/usr/bin/env python3
+"""Put every kit part we own (app/src/kit, plus Arc) under a kit v1 kind, rank each kind's parts, and write
+catalogue/kit-v1-contenders.json. Ranking: the code-read rating in the code bank's types.jsonl (1-5), then
+level (a reusable component beats a demo), with near-copies (near.jsonl, dupes.jsonl) folded into one."""
+import json, os, re, collections
+HUB = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+CODE = os.path.expanduser("~/SISO_Workspace/Great_Library_of_SISO/banks/siso-ui-code")
+idx = json.load(open(f"{HUB}/app/src/kit/index.json"))["parts"]
+types = {}
+for l in open(f"{CODE}/types.jsonl"):
+    r = json.loads(l); types[r["id"]] = r
+arc = [p for p in json.load(open(f"{HUB}/app/src/arc/manifest.json")) if p.get("kind") == "component"]
+
+# kind: (categories it can come from, words that must appear in title/pattern/what; None = any part of the category)
+K = [
+ ("label", ["inputs/form-field", "data-display/typography"], r"\blabel\b(?!.*(input|field|form))|form label"),
+ ("field-message", ["inputs/form-field"], r"helper text|hint text|error message|field error|field description|validation message"),
+ ("highlight", ["motion/text-effect", "data-display/typography"], r"highlight|marker|\bmark\b|underline"),
+ ("text-effect", ["motion/text-effect"], None),
+ ("counter", ["motion/number-ticker", "data-display/stat"], r"ticker|counter|count.?up|odometer|countdown|number (roll|flow|animation)|slot"),
+ ("sparkline", ["data-viz/chart", "data-display/stat"], r"sparkline|mini.?chart|micro.?chart|tiny chart|trend line"),
+ ("timestamp", ["data-display/typography", "data-display/list", "other/"], r"relative time|time.?ago|timestamp|\bago\b"),
+ ("swatch", ["inputs/color-picker", "themes/"], r"swatch|colou?r (chip|dot|sample)"),
+ ("dots", ["navigation/pagination", "navigation/wizard-steps", "media/carousel"], r"\bdots?\b|page indicator|step indicator"),
+ ("drag-handle", ["data-display/list", "data-display/kanban", "layout/", "other/"], r"drag handle|grip|drag to reorder|sortable handle"),
+ ("border-effect", ["motion/border"], None),
+ ("separator", ["layout/", "data-display/typography", "other/"], r"\bseparator|divider"),
+ ("aspect-ratio", ["layout/", "media/", "other/"], r"aspect.?ratio"),
+ ("scroll-area", ["layout/scroll-area"], r"scroll"),
+ ("kbd", ["data-display/typography", "other/", "navigation/command"], r"\bkbd\b|keyboard key|shortcut key|\bkeys?\b.*(hint|combo)"),
+ ("inline-code", ["data-display/typography", "data-display/code-block"], r"inline code|code span"),
+ ("text", ["data-display/typography"], None),
+ ("link-preview", ["actions/link", "overlays/hover-card"], r"preview|hover"),
+ ("link", ["actions/link"], None),
+ ("copy-button", ["actions/copy-button", "actions/button"], r"\bcopy|clipboard"),
+ ("hold-to-confirm", ["actions/button"], r"\bhold|long.?press|press and hold"),
+ ("button-group", ["actions/button"], r"button.?group|split button|grouped buttons"),
+ ("button", ["actions/button"], None),
+ ("avatar-group", ["data-display/avatar"], r"group|stack|overlap"),
+ ("avatar", ["data-display/avatar"], None),
+ ("chip", ["data-display/badge", "inputs/tag-input"], r"\bchip|tag|removable|dismiss"),
+ ("badge", ["data-display/badge"], None),
+ ("status-dot", ["status/status-dot", "data-display/badge", "data-display/avatar"], r"status (dot|indicator)|presence|online|\bping"),
+ ("otp", ["inputs/otp-input"], None),
+ ("password", ["inputs/form-field"], r"password"),
+ ("number-field", ["inputs/number-input"], None),
+ ("inline-edit", ["inputs/form-field", "inputs/textarea"], r"inline.?edit|click to edit|editable text"),
+ ("textarea", ["inputs/textarea"], None),
+ ("input", ["inputs/form-field"], r"\binput\b|text field"),
+ ("choice-card", ["inputs/radio", "inputs/checkbox"], r"\bcard"),
+ ("checkbox", ["inputs/checkbox"], None),
+ ("radio-group", ["inputs/radio"], None),
+ ("theme-switch", ["actions/switch"], r"theme|dark mode|light.?dark"),
+ ("segmented", ["actions/segmented-control", "actions/switch", "navigation/tabs"], r"segment"),
+ ("toggle", ["actions/switch", "actions/button"], r"\btoggle\b(?!.*group)|pressed"),
+ ("switch", ["actions/switch"], r"switch"),
+ ("knob", ["inputs/slider"], r"knob|dial|angle|circular"),
+ ("rating", ["inputs/rating"], None),
+ ("slider", ["inputs/slider"], None),
+ ("skeleton", ["status/skeleton"], None),
+ ("spinner", ["status/loader"], r"spin|loader|loading"),
+ ("ring", ["status/loader", "data-viz/", "data-display/stat"], r"circular progress|progress ring|radial progress|ring"),
+ ("meter", ["data-viz/", "data-display/stat"], r"meter|gauge|usage"),
+ ("progress", ["status/loader", "data-display/stat", "other/"], r"progress"),
+ ("tooltip", ["overlays/tooltip"], None),
+ ("brand-icons", ["assets/"], r"brand|logo|social"),
+ ("file-icons", ["assets/"], r"\bfile"),
+]
+LEVEL = {"component": 2, "primitive": 2, "logic": 1, "section": 0, "effect": 0, "demo": -1, "page": -2}
+
+
+def facts(paths):
+    src = ""
+    for f in paths:
+        try: src += open(f, errors="ignore").read()
+        except OSError: pass
+    return {
+        "loc": src.count("\n"),
+        "aria": len(re.findall(r"aria-[a-z]+|role=", src)),
+        "keys": bool(re.search(r"onKey(Down|Up)|useKeyboard|ArrowLeft|ArrowRight|key ===", src)),
+        "prim": "radix" if re.search(r"radix-ui|@radix-ui", src) else "base-ui" if "@base-ui" in src else "react-aria" if "react-aria" in src else "",
+        "variants": len(re.findall(r"^\s+(?:variant|size|tone|intent)\s*:", src, re.M)),
+        "states": sorted(set(re.findall(r"\b(disabled|loading|invalid|error|indeterminate|readOnly|required)\b", src)))[:6],
+        "reduced": "prefers-reduced-motion" in src or "useReducedMotion" in src or "motion-reduce" in src,
+        "demo_data": bool(re.search(r"(Lorem|John Doe|Jane|example\.com|@shadcn)", src)),
+    }
+
+def score(x):
+    f = x.get("facts") or {}
+    rd = x.get("read")
+    if rd: f = {**f, "keys": f.get("keys") or rd.get("keyboard"), "aria": max(f.get("aria", 0), (rd.get("a11y") or 0) * 2), "states": rd.get("states") or f.get("states", [])}
+    return (x["rating"] or 0) + min(f.get("aria", 0), 6) / 6 + f.get("keys", 0) * 0.5 + bool(f.get("prim")) * 0.5 + min(len(f.get("states", [])), 3) / 6 + f.get("reduced", 0) * 0.3 - f.get("demo_data", 0) * 0.3 + LEVEL.get(x["level"], 0) * 0.25
+
+def kind_of(cat, text):
+    for k, cats, rx in K:
+        if any(cat.startswith(c) for c in cats) and (rx is None or re.search(rx, text, re.I)):
+            return k
+
+# near-copies: map each id to one representative
+parent = {}
+def find(x):
+    while parent.get(x, x) != x: x = parent[x]
+    return x
+for f in ("dupes.jsonl", "near.jsonl"):
+    for l in open(f"{CODE}/{f}"):
+        r = json.loads(l)
+        ids = r.get("ids") or [r.get("a"), r.get("b")] or []
+        ids = [i for i in ids if i]
+        for i in ids[1:]: parent[find(i)] = find(ids[0])
+
+
+READS = {}
+for f in sorted(__import__("glob").glob("/tmp/kitv1/out/*.jsonl")) + [f"{HUB}/catalogue/kit-v1-evidence/reads.jsonl"]:
+    if not os.path.exists(f): continue
+    for l in open(f):
+        l = l.strip()
+        if not l.startswith("{"): continue
+        try: r = json.loads(l)
+        except ValueError: continue
+        READS[r.get("id")] = r
+KINDS = {k for k, _, _ in K}
+
+rows = collections.defaultdict(list)
+for r in idx:
+    id_, title, cat, typ, file, web = r[:6]
+    t = types.get(id_, {})
+    text = " ".join([id_.split("/")[-1], title, t.get("pattern", "")])  # name and the earlier read's pattern; "what" mentions too much
+    rd = READS.get(id_)
+    k = (rd["kind"] if rd["kind"] in KINDS else None) if rd else kind_of(cat, text)
+    if not k: continue
+    lib = id_.split("/")[0]
+    rows[k].append({"facts": facts([f"{HUB}/app/src/kit/{lib}/{file}"]), "file": file, "id": id_, "title": title, "rating": (rd or {}).get("quality") or t.get("rating"), "level": {"component": "component", "demo": "demo", "block": "section"}.get((rd or {}).get("reusable"), t.get("level")),
+                    "pattern": (rd or {}).get("does") or t.get("pattern"), "why": (rd or {}).get("why") or t.get("why"), "read": rd, "web": bool(web), "group": find(id_)})
+ARC = {"scroll-area": "scroll-area", "shortcut-recorder": "kbd", "hover-card": "link-preview", "copy-button": "copy-button",
+       "hold-to-confirm": "hold-to-confirm", "button-group": "button-group", "split-button": "button-group", "button": "button",
+       "avatar-group": "avatar-group", "avatar": "avatar", "chip-group": "chip", "badge": "badge", "password-field": "password",
+       "password-strength": "password", "number-field": "number-field", "inline-edit": "inline-edit", "textarea": "textarea",
+       "input": "input", "radio-cards": "choice-card", "checkbox": "checkbox", "radio-group": "radio-group", "theme-switch": "theme-switch",
+       "theme-switch-eclipse": "theme-switch", "theme-switch-rise": "theme-switch", "theme-switch-split": "theme-switch",
+       "segmented-control": "segmented", "billing-toggle": "segmented", "switch": "switch", "slider": "slider", "elastic-slider": "slider",
+       "skeleton": "skeleton", "progress": "progress", "gauge": "meter", "usage-meter": "meter", "tooltip": "tooltip"}
+for p in arc:
+    k = ARC.get(p["name"])
+    if not k: continue
+    rows[k].append({"arc": p.get("demo"), "id": f"arc/{p['name']}", "title": p["title"], "rating": 5, "level": "component", "pattern": None, "why": "Arc", "web": True,
+                    "facts": facts([f"{HUB}/app/src/arc/{f}" for f in p["files"] if f.endswith((".tsx", ".ts"))]), "group": f"arc/{p['name']}"})
+
+out = {}
+for k, _, _ in K:
+    rs = rows.get(k, [])
+    rs.sort(key=lambda x: (-score(x), not x["web"], x["id"]))
+    for x in rs: x["score"] = round(score(x), 2)
+    seen, uniq = set(), []
+    for x in rs:
+        if x["group"] in seen: continue
+        seen.add(x["group"]); uniq.append({kk: v for kk, v in x.items() if kk not in ("group", "read", "facts")} | {"look": (x.get("read") or {}).get("look"), "states": (x.get("read") or {}).get("states") or (x.get("facts") or {}).get("states")})
+    out[k] = {"parts": len(rs), "distinct": len(uniq), "rated": sum(1 for x in rs if x["rating"]), "top": uniq[:30]}
+json.dump(out, open(f"{HUB}/catalogue/kit-v1-contenders.json", "w"), indent=1)
+tot = sum(v["parts"] for v in out.values())
+print(f"{tot} parts filed under {len(out)} atom kinds")
+for k, v in out.items():
+    print(f"{k:16} {v['parts']:4} parts {v['distinct']:4} distinct  top: " + ", ".join(f"{x['id']}({x['rating']})" for x in v["top"][:3]))

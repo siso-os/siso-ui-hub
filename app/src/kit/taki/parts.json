@@ -1,0 +1,7643 @@
+{
+"lib": "taki",
+"source": "taki",
+"homepage": "https://taki-ui.com",
+"description": "Beautifully designed, accessible components that you can copy and paste into your apps. Made with React Aria Components and Shadcn tokens.",
+"items": 533,
+"parts": [
+{
+"id": "taki/actions-demo",
+"name": "actions-demo",
+"title": "Actions demo",
+"description": "",
+"type": "example",
+"cat": "ai-agent/ai-agent",
+"domain": [],
+"file": "examples/actions-demo.tsx",
+"files": [
+"examples/actions-demo.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/actions-demo.json"
+},
+{
+"id": "taki/alert-demo",
+"name": "alert-demo",
+"title": "Alert demo",
+"description": "",
+"type": "example",
+"cat": "overlays/alert-banner",
+"domain": [],
+"file": "examples/alert-demo.tsx",
+"files": [
+"examples/alert-demo.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/alert-demo.json"
+},
+{
+"id": "taki/alert-destructive",
+"name": "alert-destructive",
+"title": "Alert destructive",
+"description": "",
+"type": "example",
+"cat": "overlays/alert-banner",
+"domain": [],
+"file": "examples/alert-destructive.tsx",
+"files": [
+"examples/alert-destructive.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/alert-destructive.json"
+},
+{
+"id": "taki/artifact-demo",
+"name": "artifact-demo",
+"title": "Artifact demo",
+"description": "",
+"type": "example",
+"cat": "ai-agent/ai-agent",
+"domain": [],
+"file": "examples/artifact-demo.tsx",
+"files": [
+"examples/artifact-demo.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/artifact-demo.json"
+},
+{
+"id": "taki/avatar-demo",
+"name": "avatar-demo",
+"title": "Avatar demo",
+"description": "",
+"type": "example",
+"cat": "data-display/avatar",
+"domain": [],
+"file": "examples/avatar-demo.tsx",
+"files": [
+"examples/avatar-demo.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/avatar-demo.json"
+},
+{
+"id": "taki/badge-demo",
+"name": "badge-demo",
+"title": "Badge demo",
+"description": "",
+"type": "example",
+"cat": "data-display/badge",
+"domain": [],
+"file": "examples/badge-demo.tsx",
+"files": [
+"examples/badge-demo.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/badge-demo.json"
+},
+{
+"id": "taki/badge-destructive",
+"name": "badge-destructive",
+"title": "Badge destructive",
+"description": "",
+"type": "example",
+"cat": "data-display/badge",
+"domain": [],
+"file": "examples/badge-destructive.tsx",
+"files": [
+"examples/badge-destructive.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/badge-destructive.json"
+},
+{
+"id": "taki/badge-link",
+"name": "badge-link",
+"title": "Badge link",
+"description": "",
+"type": "example",
+"cat": "data-display/badge",
+"domain": [],
+"file": "examples/badge-link.tsx",
+"files": [
+"examples/badge-link.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/badge-link.json"
+},
+{
+"id": "taki/badge-outline",
+"name": "badge-outline",
+"title": "Badge outline",
+"description": "",
+"type": "example",
+"cat": "data-display/badge",
+"domain": [],
+"file": "examples/badge-outline.tsx",
+"files": [
+"examples/badge-outline.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/badge-outline.json"
+},
+{
+"id": "taki/badge-secondary",
+"name": "badge-secondary",
+"title": "Badge secondary",
+"description": "",
+"type": "example",
+"cat": "data-display/badge",
+"domain": [],
+"file": "examples/badge-secondary.tsx",
+"files": [
+"examples/badge-secondary.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/badge-secondary.json"
+},
+{
+"id": "taki/branch-demo",
+"name": "branch-demo",
+"title": "Branch demo",
+"description": "",
+"type": "example",
+"cat": "ai-agent/ai-agent",
+"domain": [],
+"file": "examples/branch-demo.tsx",
+"files": [
+"examples/branch-demo.tsx"
+],
+"deps": [
+"ai"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/branch-demo.json"
+},
+{
+"id": "taki/breadcrumb-demo",
+"name": "breadcrumb-demo",
+"title": "Breadcrumb demo",
+"description": "",
+"type": "example",
+"cat": "navigation/breadcrumb",
+"domain": [],
+"file": "examples/breadcrumb-demo.tsx",
+"files": [
+"examples/breadcrumb-demo.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/breadcrumb-demo.json"
+},
+{
+"id": "taki/breadcrumb-dropdown",
+"name": "breadcrumb-dropdown",
+"title": "Breadcrumb dropdown",
+"description": "",
+"type": "example",
+"cat": "navigation/breadcrumb",
+"domain": [],
+"file": "examples/breadcrumb-dropdown.tsx",
+"files": [
+"examples/breadcrumb-dropdown.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/breadcrumb-dropdown.json"
+},
+{
+"id": "taki/breadcrumb-ellipsis",
+"name": "breadcrumb-ellipsis",
+"title": "Breadcrumb ellipsis",
+"description": "",
+"type": "example",
+"cat": "navigation/breadcrumb",
+"domain": [],
+"file": "examples/breadcrumb-ellipsis.tsx",
+"files": [
+"examples/breadcrumb-ellipsis.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/breadcrumb-ellipsis.json"
+},
+{
+"id": "taki/breadcrumb-link",
+"name": "breadcrumb-link",
+"title": "Breadcrumb link",
+"description": "",
+"type": "example",
+"cat": "navigation/breadcrumb",
+"domain": [],
+"file": "examples/breadcrumb-link.tsx",
+"files": [
+"examples/breadcrumb-link.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/breadcrumb-link.json"
+},
+{
+"id": "taki/breadcrumb-responsive",
+"name": "breadcrumb-responsive",
+"title": "Breadcrumb responsive",
+"description": "",
+"type": "example",
+"cat": "navigation/breadcrumb",
+"domain": [],
+"file": "examples/breadcrumb-responsive.tsx",
+"files": [
+"examples/breadcrumb-responsive.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/breadcrumb-responsive.json"
+},
+{
+"id": "taki/breadcrumb-separator",
+"name": "breadcrumb-separator",
+"title": "Breadcrumb separator",
+"description": "",
+"type": "example",
+"cat": "navigation/breadcrumb",
+"domain": [],
+"file": "examples/breadcrumb-separator.tsx",
+"files": [
+"examples/breadcrumb-separator.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/breadcrumb-separator.json"
+},
+{
+"id": "taki/button-as-child",
+"name": "button-as-child",
+"title": "Button as child",
+"description": "",
+"type": "example",
+"cat": "actions/button",
+"domain": [],
+"file": "examples/button-as-child.tsx",
+"files": [
+"examples/button-as-child.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/button-as-child.json"
+},
+{
+"id": "taki/button-default",
+"name": "button-default",
+"title": "Button default",
+"description": "",
+"type": "example",
+"cat": "actions/button",
+"domain": [],
+"file": "examples/button-default.tsx",
+"files": [
+"examples/button-default.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/button-default.json"
+},
+{
+"id": "taki/button-demo",
+"name": "button-demo",
+"title": "Button demo",
+"description": "",
+"type": "example",
+"cat": "actions/button",
+"domain": [],
+"file": "examples/button-demo.tsx",
+"files": [
+"examples/button-demo.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/button-demo.json"
+},
+{
+"id": "taki/button-destructive",
+"name": "button-destructive",
+"title": "Button destructive",
+"description": "",
+"type": "example",
+"cat": "actions/button",
+"domain": [],
+"file": "examples/button-destructive.tsx",
+"files": [
+"examples/button-destructive.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/button-destructive.json"
+},
+{
+"id": "taki/button-ghost",
+"name": "button-ghost",
+"title": "Button ghost",
+"description": "",
+"type": "example",
+"cat": "actions/button",
+"domain": [],
+"file": "examples/button-ghost.tsx",
+"files": [
+"examples/button-ghost.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/button-ghost.json"
+},
+{
+"id": "taki/button-group-demo",
+"name": "button-group-demo",
+"title": "Button group demo",
+"description": "",
+"type": "example",
+"cat": "actions/button",
+"domain": [],
+"file": "examples/button-group-demo.tsx",
+"files": [
+"examples/button-group-demo.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/button-group-demo.json"
+},
+{
+"id": "taki/button-group-dropdown",
+"name": "button-group-dropdown",
+"title": "Button group dropdown",
+"description": "",
+"type": "example",
+"cat": "actions/button",
+"domain": [],
+"file": "examples/button-group-dropdown.tsx",
+"files": [
+"examples/button-group-dropdown.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/button-group-dropdown.json"
+},
+{
+"id": "taki/button-group-input-group",
+"name": "button-group-input-group",
+"title": "Button group input group",
+"description": "",
+"type": "example",
+"cat": "actions/button",
+"domain": [],
+"file": "examples/button-group-input-group.tsx",
+"files": [
+"examples/button-group-input-group.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/button-group-input-group.json"
+},
+{
+"id": "taki/button-group-input",
+"name": "button-group-input",
+"title": "Button group input",
+"description": "",
+"type": "example",
+"cat": "actions/button",
+"domain": [],
+"file": "examples/button-group-input.tsx",
+"files": [
+"examples/button-group-input.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/button-group-input.json"
+},
+{
+"id": "taki/button-group-label",
+"name": "button-group-label",
+"title": "Button group label",
+"description": "",
+"type": "example",
+"cat": "actions/button",
+"domain": [],
+"file": "examples/button-group-label.tsx",
+"files": [
+"examples/button-group-label.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/button-group-label.json"
+},
+{
+"id": "taki/button-group-nested",
+"name": "button-group-nested",
+"title": "Button group nested",
+"description": "",
+"type": "example",
+"cat": "actions/button",
+"domain": [],
+"file": "examples/button-group-nested.tsx",
+"files": [
+"examples/button-group-nested.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/button-group-nested.json"
+},
+{
+"id": "taki/button-group-orientation",
+"name": "button-group-orientation",
+"title": "Button group orientation",
+"description": "",
+"type": "example",
+"cat": "actions/button",
+"domain": [],
+"file": "examples/button-group-orientation.tsx",
+"files": [
+"examples/button-group-orientation.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/button-group-orientation.json"
+},
+{
+"id": "taki/button-group-popover",
+"name": "button-group-popover",
+"title": "Button group popover",
+"description": "",
+"type": "example",
+"cat": "actions/button",
+"domain": [],
+"file": "examples/button-group-popover.tsx",
+"files": [
+"examples/button-group-popover.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/button-group-popover.json"
+},
+{
+"id": "taki/button-group-select",
+"name": "button-group-select",
+"title": "Button group select",
+"description": "",
+"type": "example",
+"cat": "actions/button",
+"domain": [],
+"file": "examples/button-group-select.tsx",
+"files": [
+"examples/button-group-select.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/button-group-select.json"
+},
+{
+"id": "taki/button-group-separator",
+"name": "button-group-separator",
+"title": "Button group separator",
+"description": "",
+"type": "example",
+"cat": "actions/button",
+"domain": [],
+"file": "examples/button-group-separator.tsx",
+"files": [
+"examples/button-group-separator.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/button-group-separator.json"
+},
+{
+"id": "taki/button-group-size",
+"name": "button-group-size",
+"title": "Button group size",
+"description": "",
+"type": "example",
+"cat": "actions/button",
+"domain": [],
+"file": "examples/button-group-size.tsx",
+"files": [
+"examples/button-group-size.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/button-group-size.json"
+},
+{
+"id": "taki/button-group-split",
+"name": "button-group-split",
+"title": "Button group split",
+"description": "",
+"type": "example",
+"cat": "actions/button",
+"domain": [],
+"file": "examples/button-group-split.tsx",
+"files": [
+"examples/button-group-split.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/button-group-split.json"
+},
+{
+"id": "taki/button-icon",
+"name": "button-icon",
+"title": "Button icon",
+"description": "",
+"type": "example",
+"cat": "actions/button",
+"domain": [],
+"file": "examples/button-icon.tsx",
+"files": [
+"examples/button-icon.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/button-icon.json"
+},
+{
+"id": "taki/button-link",
+"name": "button-link",
+"title": "Button link",
+"description": "",
+"type": "example",
+"cat": "actions/button",
+"domain": [],
+"file": "examples/button-link.tsx",
+"files": [
+"examples/button-link.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/button-link.json"
+},
+{
+"id": "taki/button-loading",
+"name": "button-loading",
+"title": "Button loading",
+"description": "",
+"type": "example",
+"cat": "actions/button",
+"domain": [],
+"file": "examples/button-loading.tsx",
+"files": [
+"examples/button-loading.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/button-loading.json"
+},
+{
+"id": "taki/button-outline",
+"name": "button-outline",
+"title": "Button outline",
+"description": "",
+"type": "example",
+"cat": "actions/button",
+"domain": [],
+"file": "examples/button-outline.tsx",
+"files": [
+"examples/button-outline.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/button-outline.json"
+},
+{
+"id": "taki/button-rounded",
+"name": "button-rounded",
+"title": "Button rounded",
+"description": "",
+"type": "example",
+"cat": "actions/button",
+"domain": [],
+"file": "examples/button-rounded.tsx",
+"files": [
+"examples/button-rounded.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/button-rounded.json"
+},
+{
+"id": "taki/button-secondary",
+"name": "button-secondary",
+"title": "Button secondary",
+"description": "",
+"type": "example",
+"cat": "actions/button",
+"domain": [],
+"file": "examples/button-secondary.tsx",
+"files": [
+"examples/button-secondary.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/button-secondary.json"
+},
+{
+"id": "taki/button-size",
+"name": "button-size",
+"title": "Button size",
+"description": "",
+"type": "example",
+"cat": "actions/button",
+"domain": [],
+"file": "examples/button-size.tsx",
+"files": [
+"examples/button-size.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/button-size.json"
+},
+{
+"id": "taki/button-with-icon",
+"name": "button-with-icon",
+"title": "Button with icon",
+"description": "",
+"type": "example",
+"cat": "actions/button",
+"domain": [],
+"file": "examples/button-with-icon.tsx",
+"files": [
+"examples/button-with-icon.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/button-with-icon.json"
+},
+{
+"id": "taki/calendar-demo",
+"name": "calendar-demo",
+"title": "Calendar demo",
+"description": "",
+"type": "example",
+"cat": "data-display/calendar",
+"domain": [],
+"file": "examples/calendar-demo.tsx",
+"files": [
+"examples/calendar-demo.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/calendar-demo.json"
+},
+{
+"id": "taki/calendar-form",
+"name": "calendar-form",
+"title": "Calendar form",
+"description": "",
+"type": "example",
+"cat": "actions/button",
+"domain": [],
+"file": "examples/calendar-form.tsx",
+"files": [
+"examples/calendar-form.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/calendar-form.json"
+},
+{
+"id": "taki/calendar-hijri",
+"name": "calendar-hijri",
+"title": "Calendar hijri",
+"description": "A Persian calendar.",
+"type": "example",
+"cat": "data-display/calendar",
+"domain": [],
+"file": "examples/calendar-hijri.tsx",
+"files": [
+"examples/calendar-hijri.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/calendar-hijri.json"
+},
+{
+"id": "taki/canvas",
+"name": "canvas",
+"title": "Canvas",
+"description": "",
+"type": "ui",
+"cat": "ai-agent/ai-agent",
+"domain": [
+"AI"
+],
+"file": "ai-elements/canvas.tsx",
+"files": [
+"ai-elements/canvas.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/canvas.json"
+},
+{
+"id": "taki/card-demo",
+"name": "card-demo",
+"title": "Card demo",
+"description": "",
+"type": "example",
+"cat": "data-display/card",
+"domain": [],
+"file": "examples/card-demo.tsx",
+"files": [
+"examples/card-demo.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/card-demo.json"
+},
+{
+"id": "taki/card-with-form",
+"name": "card-with-form",
+"title": "Card with form",
+"description": "",
+"type": "example",
+"cat": "actions/button",
+"domain": [],
+"file": "examples/card-with-form.tsx",
+"files": [
+"examples/card-with-form.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/card-with-form.json"
+},
+{
+"id": "taki/carousel-api",
+"name": "carousel-api",
+"title": "Carousel api",
+"description": "",
+"type": "example",
+"cat": "media/carousel",
+"domain": [
+"dev tools"
+],
+"file": "examples/carousel-api.tsx",
+"files": [
+"examples/carousel-api.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/carousel-api.json"
+},
+{
+"id": "taki/carousel-demo",
+"name": "carousel-demo",
+"title": "Carousel demo",
+"description": "",
+"type": "example",
+"cat": "media/carousel",
+"domain": [],
+"file": "examples/carousel-demo.tsx",
+"files": [
+"examples/carousel-demo.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/carousel-demo.json"
+},
+{
+"id": "taki/carousel-orientation",
+"name": "carousel-orientation",
+"title": "Carousel orientation",
+"description": "",
+"type": "example",
+"cat": "media/carousel",
+"domain": [],
+"file": "examples/carousel-orientation.tsx",
+"files": [
+"examples/carousel-orientation.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/carousel-orientation.json"
+},
+{
+"id": "taki/carousel-plugin",
+"name": "carousel-plugin",
+"title": "Carousel plugin",
+"description": "",
+"type": "example",
+"cat": "media/carousel",
+"domain": [],
+"file": "examples/carousel-plugin.tsx",
+"files": [
+"examples/carousel-plugin.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/carousel-plugin.json"
+},
+{
+"id": "taki/carousel-size",
+"name": "carousel-size",
+"title": "Carousel size",
+"description": "",
+"type": "example",
+"cat": "media/carousel",
+"domain": [],
+"file": "examples/carousel-size.tsx",
+"files": [
+"examples/carousel-size.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/carousel-size.json"
+},
+{
+"id": "taki/carousel-spacing",
+"name": "carousel-spacing",
+"title": "Carousel spacing",
+"description": "",
+"type": "example",
+"cat": "media/carousel",
+"domain": [],
+"file": "examples/carousel-spacing.tsx",
+"files": [
+"examples/carousel-spacing.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/carousel-spacing.json"
+},
+{
+"id": "taki/chain-of-thought-demo",
+"name": "chain-of-thought-demo",
+"title": "Chain of thought demo",
+"description": "",
+"type": "example",
+"cat": "ai-agent/ai-agent",
+"domain": [],
+"file": "examples/chain-of-thought-demo.tsx",
+"files": [
+"examples/chain-of-thought-demo.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/chain-of-thought-demo.json"
+},
+{
+"id": "taki/chart-area-axes",
+"name": "chart-area-axes",
+"title": "Chart area axes",
+"description": "",
+"type": "block",
+"cat": "data-viz/chart",
+"domain": [],
+"file": "charts/chart-area-axes.tsx",
+"files": [
+"charts/chart-area-axes.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/chart-area-axes.json"
+},
+{
+"id": "taki/chart-area-default",
+"name": "chart-area-default",
+"title": "Chart area default",
+"description": "",
+"type": "block",
+"cat": "data-display/card",
+"domain": [],
+"file": "charts/chart-area-default.tsx",
+"files": [
+"charts/chart-area-default.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/chart-area-default.json"
+},
+{
+"id": "taki/chart-area-gradient",
+"name": "chart-area-gradient",
+"title": "Chart area gradient",
+"description": "",
+"type": "block",
+"cat": "data-viz/chart",
+"domain": [],
+"file": "charts/chart-area-gradient.tsx",
+"files": [
+"charts/chart-area-gradient.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/chart-area-gradient.json"
+},
+{
+"id": "taki/chart-area-icons",
+"name": "chart-area-icons",
+"title": "Chart area icons",
+"description": "",
+"type": "block",
+"cat": "data-viz/chart",
+"domain": [],
+"file": "charts/chart-area-icons.tsx",
+"files": [
+"charts/chart-area-icons.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/chart-area-icons.json"
+},
+{
+"id": "taki/chart-area-interactive",
+"name": "chart-area-interactive",
+"title": "Chart area interactive",
+"description": "",
+"type": "block",
+"cat": "data-viz/chart",
+"domain": [],
+"file": "charts/chart-area-interactive.tsx",
+"files": [
+"charts/chart-area-interactive.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/chart-area-interactive.json"
+},
+{
+"id": "taki/chart-area-legend",
+"name": "chart-area-legend",
+"title": "Chart area legend",
+"description": "",
+"type": "block",
+"cat": "data-viz/chart",
+"domain": [],
+"file": "charts/chart-area-legend.tsx",
+"files": [
+"charts/chart-area-legend.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/chart-area-legend.json"
+},
+{
+"id": "taki/chart-area-linear",
+"name": "chart-area-linear",
+"title": "Chart area linear",
+"description": "",
+"type": "block",
+"cat": "data-viz/chart",
+"domain": [],
+"file": "charts/chart-area-linear.tsx",
+"files": [
+"charts/chart-area-linear.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/chart-area-linear.json"
+},
+{
+"id": "taki/chart-area-stacked-expand",
+"name": "chart-area-stacked-expand",
+"title": "Chart area stacked expand",
+"description": "",
+"type": "block",
+"cat": "data-viz/chart",
+"domain": [],
+"file": "charts/chart-area-stacked-expand.tsx",
+"files": [
+"charts/chart-area-stacked-expand.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/chart-area-stacked-expand.json"
+},
+{
+"id": "taki/chart-area-stacked",
+"name": "chart-area-stacked",
+"title": "Chart area stacked",
+"description": "",
+"type": "block",
+"cat": "data-viz/chart",
+"domain": [],
+"file": "charts/chart-area-stacked.tsx",
+"files": [
+"charts/chart-area-stacked.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/chart-area-stacked.json"
+},
+{
+"id": "taki/chart-area-step",
+"name": "chart-area-step",
+"title": "Chart area step",
+"description": "",
+"type": "block",
+"cat": "data-viz/chart",
+"domain": [],
+"file": "charts/chart-area-step.tsx",
+"files": [
+"charts/chart-area-step.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/chart-area-step.json"
+},
+{
+"id": "taki/chart-bar-active",
+"name": "chart-bar-active",
+"title": "Chart bar active",
+"description": "",
+"type": "block",
+"cat": "data-viz/chart",
+"domain": [],
+"file": "charts/chart-bar-active.tsx",
+"files": [
+"charts/chart-bar-active.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/chart-bar-active.json"
+},
+{
+"id": "taki/chart-bar-default",
+"name": "chart-bar-default",
+"title": "Chart bar default",
+"description": "",
+"type": "block",
+"cat": "data-display/card",
+"domain": [],
+"file": "charts/chart-bar-default.tsx",
+"files": [
+"charts/chart-bar-default.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/chart-bar-default.json"
+},
+{
+"id": "taki/chart-bar-demo-axis",
+"name": "chart-bar-demo-axis",
+"title": "Chart bar demo axis",
+"description": "",
+"type": "example",
+"cat": "data-viz/chart",
+"domain": [],
+"file": "examples/chart-bar-demo-axis.tsx",
+"files": [
+"examples/chart-bar-demo-axis.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/chart-bar-demo-axis.json"
+},
+{
+"id": "taki/chart-bar-demo-grid",
+"name": "chart-bar-demo-grid",
+"title": "Chart bar demo grid",
+"description": "",
+"type": "example",
+"cat": "data-viz/chart",
+"domain": [],
+"file": "examples/chart-bar-demo-grid.tsx",
+"files": [
+"examples/chart-bar-demo-grid.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/chart-bar-demo-grid.json"
+},
+{
+"id": "taki/chart-bar-demo-legend",
+"name": "chart-bar-demo-legend",
+"title": "Chart bar demo legend",
+"description": "",
+"type": "example",
+"cat": "data-viz/chart",
+"domain": [],
+"file": "examples/chart-bar-demo-legend.tsx",
+"files": [
+"examples/chart-bar-demo-legend.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/chart-bar-demo-legend.json"
+},
+{
+"id": "taki/chart-bar-demo-tooltip",
+"name": "chart-bar-demo-tooltip",
+"title": "Chart bar demo tooltip",
+"description": "",
+"type": "example",
+"cat": "overlays/tooltip",
+"domain": [],
+"file": "examples/chart-bar-demo-tooltip.tsx",
+"files": [
+"examples/chart-bar-demo-tooltip.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/chart-bar-demo-tooltip.json"
+},
+{
+"id": "taki/chart-bar-demo",
+"name": "chart-bar-demo",
+"title": "Chart bar demo",
+"description": "",
+"type": "example",
+"cat": "data-viz/chart",
+"domain": [],
+"file": "examples/chart-bar-demo.tsx",
+"files": [
+"examples/chart-bar-demo.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/chart-bar-demo.json"
+},
+{
+"id": "taki/chart-bar-horizontal",
+"name": "chart-bar-horizontal",
+"title": "Chart bar horizontal",
+"description": "",
+"type": "block",
+"cat": "data-viz/chart",
+"domain": [],
+"file": "charts/chart-bar-horizontal.tsx",
+"files": [
+"charts/chart-bar-horizontal.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/chart-bar-horizontal.json"
+},
+{
+"id": "taki/chart-bar-interactive",
+"name": "chart-bar-interactive",
+"title": "Chart bar interactive",
+"description": "",
+"type": "block",
+"cat": "data-viz/chart",
+"domain": [],
+"file": "charts/chart-bar-interactive.tsx",
+"files": [
+"charts/chart-bar-interactive.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/chart-bar-interactive.json"
+},
+{
+"id": "taki/chart-bar-label-custom",
+"name": "chart-bar-label-custom",
+"title": "Chart bar label custom",
+"description": "",
+"type": "block",
+"cat": "data-viz/chart",
+"domain": [],
+"file": "charts/chart-bar-label-custom.tsx",
+"files": [
+"charts/chart-bar-label-custom.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/chart-bar-label-custom.json"
+},
+{
+"id": "taki/chart-bar-label",
+"name": "chart-bar-label",
+"title": "Chart bar label",
+"description": "",
+"type": "block",
+"cat": "data-viz/chart",
+"domain": [],
+"file": "charts/chart-bar-label.tsx",
+"files": [
+"charts/chart-bar-label.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/chart-bar-label.json"
+},
+{
+"id": "taki/chart-bar-mixed",
+"name": "chart-bar-mixed",
+"title": "Chart bar mixed",
+"description": "",
+"type": "block",
+"cat": "data-viz/chart",
+"domain": [],
+"file": "charts/chart-bar-mixed.tsx",
+"files": [
+"charts/chart-bar-mixed.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/chart-bar-mixed.json"
+},
+{
+"id": "taki/chart-bar-multiple",
+"name": "chart-bar-multiple",
+"title": "Chart bar multiple",
+"description": "",
+"type": "block",
+"cat": "data-viz/chart",
+"domain": [],
+"file": "charts/chart-bar-multiple.tsx",
+"files": [
+"charts/chart-bar-multiple.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/chart-bar-multiple.json"
+},
+{
+"id": "taki/chart-bar-negative",
+"name": "chart-bar-negative",
+"title": "Chart bar negative",
+"description": "",
+"type": "block",
+"cat": "data-viz/chart",
+"domain": [],
+"file": "charts/chart-bar-negative.tsx",
+"files": [
+"charts/chart-bar-negative.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/chart-bar-negative.json"
+},
+{
+"id": "taki/chart-bar-stacked",
+"name": "chart-bar-stacked",
+"title": "Chart bar stacked",
+"description": "",
+"type": "block",
+"cat": "data-viz/chart",
+"domain": [],
+"file": "charts/chart-bar-stacked.tsx",
+"files": [
+"charts/chart-bar-stacked.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/chart-bar-stacked.json"
+},
+{
+"id": "taki/chart-line-default",
+"name": "chart-line-default",
+"title": "Chart line default",
+"description": "",
+"type": "block",
+"cat": "data-display/card",
+"domain": [],
+"file": "charts/chart-line-default.tsx",
+"files": [
+"charts/chart-line-default.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/chart-line-default.json"
+},
+{
+"id": "taki/chart-line-dots-colors",
+"name": "chart-line-dots-colors",
+"title": "Chart line dots colors",
+"description": "",
+"type": "block",
+"cat": "data-viz/chart",
+"domain": [],
+"file": "charts/chart-line-dots-colors.tsx",
+"files": [
+"charts/chart-line-dots-colors.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/chart-line-dots-colors.json"
+},
+{
+"id": "taki/chart-line-dots-custom",
+"name": "chart-line-dots-custom",
+"title": "Chart line dots custom",
+"description": "",
+"type": "block",
+"cat": "data-viz/chart",
+"domain": [],
+"file": "charts/chart-line-dots-custom.tsx",
+"files": [
+"charts/chart-line-dots-custom.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/chart-line-dots-custom.json"
+},
+{
+"id": "taki/chart-line-dots",
+"name": "chart-line-dots",
+"title": "Chart line dots",
+"description": "",
+"type": "block",
+"cat": "data-viz/chart",
+"domain": [],
+"file": "charts/chart-line-dots.tsx",
+"files": [
+"charts/chart-line-dots.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/chart-line-dots.json"
+},
+{
+"id": "taki/chart-line-interactive",
+"name": "chart-line-interactive",
+"title": "Chart line interactive",
+"description": "",
+"type": "block",
+"cat": "data-viz/chart",
+"domain": [],
+"file": "charts/chart-line-interactive.tsx",
+"files": [
+"charts/chart-line-interactive.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/chart-line-interactive.json"
+},
+{
+"id": "taki/chart-line-label-custom",
+"name": "chart-line-label-custom",
+"title": "Chart line label custom",
+"description": "",
+"type": "block",
+"cat": "data-viz/chart",
+"domain": [],
+"file": "charts/chart-line-label-custom.tsx",
+"files": [
+"charts/chart-line-label-custom.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/chart-line-label-custom.json"
+},
+{
+"id": "taki/chart-line-label",
+"name": "chart-line-label",
+"title": "Chart line label",
+"description": "",
+"type": "block",
+"cat": "data-viz/chart",
+"domain": [],
+"file": "charts/chart-line-label.tsx",
+"files": [
+"charts/chart-line-label.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/chart-line-label.json"
+},
+{
+"id": "taki/chart-line-linear",
+"name": "chart-line-linear",
+"title": "Chart line linear",
+"description": "",
+"type": "block",
+"cat": "data-viz/chart",
+"domain": [],
+"file": "charts/chart-line-linear.tsx",
+"files": [
+"charts/chart-line-linear.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/chart-line-linear.json"
+},
+{
+"id": "taki/chart-line-multiple",
+"name": "chart-line-multiple",
+"title": "Chart line multiple",
+"description": "",
+"type": "block",
+"cat": "data-viz/chart",
+"domain": [],
+"file": "charts/chart-line-multiple.tsx",
+"files": [
+"charts/chart-line-multiple.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/chart-line-multiple.json"
+},
+{
+"id": "taki/chart-line-step",
+"name": "chart-line-step",
+"title": "Chart line step",
+"description": "",
+"type": "block",
+"cat": "data-viz/chart",
+"domain": [],
+"file": "charts/chart-line-step.tsx",
+"files": [
+"charts/chart-line-step.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/chart-line-step.json"
+},
+{
+"id": "taki/chart-pie-donut-active",
+"name": "chart-pie-donut-active",
+"title": "Chart pie donut active",
+"description": "",
+"type": "block",
+"cat": "data-viz/chart",
+"domain": [],
+"file": "charts/chart-pie-donut-active.tsx",
+"files": [
+"charts/chart-pie-donut-active.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/chart-pie-donut-active.json"
+},
+{
+"id": "taki/chart-pie-donut-text",
+"name": "chart-pie-donut-text",
+"title": "Chart pie donut text",
+"description": "",
+"type": "block",
+"cat": "data-viz/chart",
+"domain": [],
+"file": "charts/chart-pie-donut-text.tsx",
+"files": [
+"charts/chart-pie-donut-text.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/chart-pie-donut-text.json"
+},
+{
+"id": "taki/chart-pie-donut",
+"name": "chart-pie-donut",
+"title": "Chart pie donut",
+"description": "",
+"type": "block",
+"cat": "data-viz/chart",
+"domain": [],
+"file": "charts/chart-pie-donut.tsx",
+"files": [
+"charts/chart-pie-donut.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/chart-pie-donut.json"
+},
+{
+"id": "taki/chart-pie-interactive",
+"name": "chart-pie-interactive",
+"title": "Chart pie interactive",
+"description": "",
+"type": "block",
+"cat": "data-viz/chart",
+"domain": [],
+"file": "charts/chart-pie-interactive.tsx",
+"files": [
+"charts/chart-pie-interactive.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/chart-pie-interactive.json"
+},
+{
+"id": "taki/chart-pie-label-custom",
+"name": "chart-pie-label-custom",
+"title": "Chart pie label custom",
+"description": "",
+"type": "block",
+"cat": "data-viz/chart",
+"domain": [],
+"file": "charts/chart-pie-label-custom.tsx",
+"files": [
+"charts/chart-pie-label-custom.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/chart-pie-label-custom.json"
+},
+{
+"id": "taki/chart-pie-label-list",
+"name": "chart-pie-label-list",
+"title": "Chart pie label list",
+"description": "",
+"type": "block",
+"cat": "data-viz/chart",
+"domain": [],
+"file": "charts/chart-pie-label-list.tsx",
+"files": [
+"charts/chart-pie-label-list.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/chart-pie-label-list.json"
+},
+{
+"id": "taki/chart-pie-label",
+"name": "chart-pie-label",
+"title": "Chart pie label",
+"description": "",
+"type": "block",
+"cat": "data-viz/chart",
+"domain": [],
+"file": "charts/chart-pie-label.tsx",
+"files": [
+"charts/chart-pie-label.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/chart-pie-label.json"
+},
+{
+"id": "taki/chart-pie-legend",
+"name": "chart-pie-legend",
+"title": "Chart pie legend",
+"description": "",
+"type": "block",
+"cat": "data-viz/chart",
+"domain": [],
+"file": "charts/chart-pie-legend.tsx",
+"files": [
+"charts/chart-pie-legend.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/chart-pie-legend.json"
+},
+{
+"id": "taki/chart-pie-separator-none",
+"name": "chart-pie-separator-none",
+"title": "Chart pie separator none",
+"description": "",
+"type": "block",
+"cat": "data-viz/chart",
+"domain": [],
+"file": "charts/chart-pie-separator-none.tsx",
+"files": [
+"charts/chart-pie-separator-none.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/chart-pie-separator-none.json"
+},
+{
+"id": "taki/chart-pie-simple",
+"name": "chart-pie-simple",
+"title": "Chart pie simple",
+"description": "",
+"type": "block",
+"cat": "data-viz/chart",
+"domain": [],
+"file": "charts/chart-pie-simple.tsx",
+"files": [
+"charts/chart-pie-simple.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/chart-pie-simple.json"
+},
+{
+"id": "taki/chart-pie-stacked",
+"name": "chart-pie-stacked",
+"title": "Chart pie stacked",
+"description": "",
+"type": "block",
+"cat": "data-viz/chart",
+"domain": [],
+"file": "charts/chart-pie-stacked.tsx",
+"files": [
+"charts/chart-pie-stacked.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/chart-pie-stacked.json"
+},
+{
+"id": "taki/chart-radar-default",
+"name": "chart-radar-default",
+"title": "Chart radar default",
+"description": "",
+"type": "block",
+"cat": "data-display/card",
+"domain": [],
+"file": "charts/chart-radar-default.tsx",
+"files": [
+"charts/chart-radar-default.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/chart-radar-default.json"
+},
+{
+"id": "taki/chart-radar-dots",
+"name": "chart-radar-dots",
+"title": "Chart radar dots",
+"description": "",
+"type": "block",
+"cat": "data-viz/chart",
+"domain": [],
+"file": "charts/chart-radar-dots.tsx",
+"files": [
+"charts/chart-radar-dots.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/chart-radar-dots.json"
+},
+{
+"id": "taki/chart-radar-grid-circle-fill",
+"name": "chart-radar-grid-circle-fill",
+"title": "Chart radar grid circle fill",
+"description": "",
+"type": "block",
+"cat": "data-viz/chart",
+"domain": [],
+"file": "charts/chart-radar-grid-circle-fill.tsx",
+"files": [
+"charts/chart-radar-grid-circle-fill.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/chart-radar-grid-circle-fill.json"
+},
+{
+"id": "taki/chart-radar-grid-circle-no-lines",
+"name": "chart-radar-grid-circle-no-lines",
+"title": "Chart radar grid circle no lines",
+"description": "",
+"type": "block",
+"cat": "data-viz/chart",
+"domain": [],
+"file": "charts/chart-radar-grid-circle-no-lines.tsx",
+"files": [
+"charts/chart-radar-grid-circle-no-lines.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/chart-radar-grid-circle-no-lines.json"
+},
+{
+"id": "taki/chart-radar-grid-circle",
+"name": "chart-radar-grid-circle",
+"title": "Chart radar grid circle",
+"description": "",
+"type": "block",
+"cat": "data-viz/chart",
+"domain": [],
+"file": "charts/chart-radar-grid-circle.tsx",
+"files": [
+"charts/chart-radar-grid-circle.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/chart-radar-grid-circle.json"
+},
+{
+"id": "taki/chart-radar-grid-custom",
+"name": "chart-radar-grid-custom",
+"title": "Chart radar grid custom",
+"description": "",
+"type": "block",
+"cat": "data-viz/chart",
+"domain": [],
+"file": "charts/chart-radar-grid-custom.tsx",
+"files": [
+"charts/chart-radar-grid-custom.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/chart-radar-grid-custom.json"
+},
+{
+"id": "taki/chart-radar-grid-fill",
+"name": "chart-radar-grid-fill",
+"title": "Chart radar grid fill",
+"description": "",
+"type": "block",
+"cat": "data-viz/chart",
+"domain": [],
+"file": "charts/chart-radar-grid-fill.tsx",
+"files": [
+"charts/chart-radar-grid-fill.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/chart-radar-grid-fill.json"
+},
+{
+"id": "taki/chart-radar-grid-none",
+"name": "chart-radar-grid-none",
+"title": "Chart radar grid none",
+"description": "",
+"type": "block",
+"cat": "data-viz/chart",
+"domain": [],
+"file": "charts/chart-radar-grid-none.tsx",
+"files": [
+"charts/chart-radar-grid-none.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/chart-radar-grid-none.json"
+},
+{
+"id": "taki/chart-radar-icons",
+"name": "chart-radar-icons",
+"title": "Chart radar icons",
+"description": "",
+"type": "block",
+"cat": "data-viz/chart",
+"domain": [],
+"file": "charts/chart-radar-icons.tsx",
+"files": [
+"charts/chart-radar-icons.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/chart-radar-icons.json"
+},
+{
+"id": "taki/chart-radar-label-custom",
+"name": "chart-radar-label-custom",
+"title": "Chart radar label custom",
+"description": "",
+"type": "block",
+"cat": "data-viz/chart",
+"domain": [],
+"file": "charts/chart-radar-label-custom.tsx",
+"files": [
+"charts/chart-radar-label-custom.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/chart-radar-label-custom.json"
+},
+{
+"id": "taki/chart-radar-legend",
+"name": "chart-radar-legend",
+"title": "Chart radar legend",
+"description": "",
+"type": "block",
+"cat": "data-viz/chart",
+"domain": [],
+"file": "charts/chart-radar-legend.tsx",
+"files": [
+"charts/chart-radar-legend.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/chart-radar-legend.json"
+},
+{
+"id": "taki/chart-radar-lines-only",
+"name": "chart-radar-lines-only",
+"title": "Chart radar lines only",
+"description": "",
+"type": "block",
+"cat": "data-viz/chart",
+"domain": [],
+"file": "charts/chart-radar-lines-only.tsx",
+"files": [
+"charts/chart-radar-lines-only.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/chart-radar-lines-only.json"
+},
+{
+"id": "taki/chart-radar-multiple",
+"name": "chart-radar-multiple",
+"title": "Chart radar multiple",
+"description": "",
+"type": "block",
+"cat": "data-viz/chart",
+"domain": [],
+"file": "charts/chart-radar-multiple.tsx",
+"files": [
+"charts/chart-radar-multiple.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/chart-radar-multiple.json"
+},
+{
+"id": "taki/chart-radar-radius",
+"name": "chart-radar-radius",
+"title": "Chart radar radius",
+"description": "",
+"type": "block",
+"cat": "data-viz/chart",
+"domain": [],
+"file": "charts/chart-radar-radius.tsx",
+"files": [
+"charts/chart-radar-radius.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/chart-radar-radius.json"
+},
+{
+"id": "taki/chart-radial-grid",
+"name": "chart-radial-grid",
+"title": "Chart radial grid",
+"description": "",
+"type": "block",
+"cat": "data-viz/chart",
+"domain": [],
+"file": "charts/chart-radial-grid.tsx",
+"files": [
+"charts/chart-radial-grid.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/chart-radial-grid.json"
+},
+{
+"id": "taki/chart-radial-label",
+"name": "chart-radial-label",
+"title": "Chart radial label",
+"description": "",
+"type": "block",
+"cat": "data-viz/chart",
+"domain": [],
+"file": "charts/chart-radial-label.tsx",
+"files": [
+"charts/chart-radial-label.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/chart-radial-label.json"
+},
+{
+"id": "taki/chart-radial-shape",
+"name": "chart-radial-shape",
+"title": "Chart radial shape",
+"description": "",
+"type": "block",
+"cat": "data-viz/chart",
+"domain": [],
+"file": "charts/chart-radial-shape.tsx",
+"files": [
+"charts/chart-radial-shape.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/chart-radial-shape.json"
+},
+{
+"id": "taki/chart-radial-simple",
+"name": "chart-radial-simple",
+"title": "Chart radial simple",
+"description": "",
+"type": "block",
+"cat": "data-viz/chart",
+"domain": [],
+"file": "charts/chart-radial-simple.tsx",
+"files": [
+"charts/chart-radial-simple.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/chart-radial-simple.json"
+},
+{
+"id": "taki/chart-radial-stacked",
+"name": "chart-radial-stacked",
+"title": "Chart radial stacked",
+"description": "",
+"type": "block",
+"cat": "data-viz/chart",
+"domain": [],
+"file": "charts/chart-radial-stacked.tsx",
+"files": [
+"charts/chart-radial-stacked.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/chart-radial-stacked.json"
+},
+{
+"id": "taki/chart-radial-text",
+"name": "chart-radial-text",
+"title": "Chart radial text",
+"description": "",
+"type": "block",
+"cat": "data-viz/chart",
+"domain": [],
+"file": "charts/chart-radial-text.tsx",
+"files": [
+"charts/chart-radial-text.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/chart-radial-text.json"
+},
+{
+"id": "taki/chart-tooltip-advanced",
+"name": "chart-tooltip-advanced",
+"title": "Chart tooltip advanced",
+"description": "",
+"type": "block",
+"cat": "data-viz/chart",
+"domain": [],
+"file": "charts/chart-tooltip-advanced.tsx",
+"files": [
+"charts/chart-tooltip-advanced.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/chart-tooltip-advanced.json"
+},
+{
+"id": "taki/chart-tooltip-default",
+"name": "chart-tooltip-default",
+"title": "Chart tooltip default",
+"description": "",
+"type": "block",
+"cat": "data-display/card",
+"domain": [],
+"file": "charts/chart-tooltip-default.tsx",
+"files": [
+"charts/chart-tooltip-default.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/chart-tooltip-default.json"
+},
+{
+"id": "taki/chart-tooltip-demo",
+"name": "chart-tooltip-demo",
+"title": "Chart tooltip demo",
+"description": "",
+"type": "example",
+"cat": "overlays/tooltip",
+"domain": [],
+"file": "examples/chart-tooltip-demo.tsx",
+"files": [
+"examples/chart-tooltip-demo.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/chart-tooltip-demo.json"
+},
+{
+"id": "taki/chart-tooltip-formatter",
+"name": "chart-tooltip-formatter",
+"title": "Chart tooltip formatter",
+"description": "",
+"type": "block",
+"cat": "data-viz/chart",
+"domain": [],
+"file": "charts/chart-tooltip-formatter.tsx",
+"files": [
+"charts/chart-tooltip-formatter.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/chart-tooltip-formatter.json"
+},
+{
+"id": "taki/chart-tooltip-icons",
+"name": "chart-tooltip-icons",
+"title": "Chart tooltip icons",
+"description": "",
+"type": "block",
+"cat": "data-viz/chart",
+"domain": [],
+"file": "charts/chart-tooltip-icons.tsx",
+"files": [
+"charts/chart-tooltip-icons.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/chart-tooltip-icons.json"
+},
+{
+"id": "taki/chart-tooltip-indicator-line",
+"name": "chart-tooltip-indicator-line",
+"title": "Chart tooltip indicator line",
+"description": "",
+"type": "block",
+"cat": "data-viz/chart",
+"domain": [],
+"file": "charts/chart-tooltip-indicator-line.tsx",
+"files": [
+"charts/chart-tooltip-indicator-line.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/chart-tooltip-indicator-line.json"
+},
+{
+"id": "taki/chart-tooltip-indicator-none",
+"name": "chart-tooltip-indicator-none",
+"title": "Chart tooltip indicator none",
+"description": "",
+"type": "block",
+"cat": "data-viz/chart",
+"domain": [],
+"file": "charts/chart-tooltip-indicator-none.tsx",
+"files": [
+"charts/chart-tooltip-indicator-none.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/chart-tooltip-indicator-none.json"
+},
+{
+"id": "taki/chart-tooltip-label-custom",
+"name": "chart-tooltip-label-custom",
+"title": "Chart tooltip label custom",
+"description": "",
+"type": "block",
+"cat": "data-viz/chart",
+"domain": [],
+"file": "charts/chart-tooltip-label-custom.tsx",
+"files": [
+"charts/chart-tooltip-label-custom.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/chart-tooltip-label-custom.json"
+},
+{
+"id": "taki/chart-tooltip-label-formatter",
+"name": "chart-tooltip-label-formatter",
+"title": "Chart tooltip label formatter",
+"description": "",
+"type": "block",
+"cat": "data-viz/chart",
+"domain": [],
+"file": "charts/chart-tooltip-label-formatter.tsx",
+"files": [
+"charts/chart-tooltip-label-formatter.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/chart-tooltip-label-formatter.json"
+},
+{
+"id": "taki/chart-tooltip-label-none",
+"name": "chart-tooltip-label-none",
+"title": "Chart tooltip label none",
+"description": "",
+"type": "block",
+"cat": "data-viz/chart",
+"domain": [],
+"file": "charts/chart-tooltip-label-none.tsx",
+"files": [
+"charts/chart-tooltip-label-none.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/chart-tooltip-label-none.json"
+},
+{
+"id": "taki/chart",
+"name": "chart",
+"title": "Chart",
+"description": "",
+"type": "ui",
+"cat": "data-viz/chart",
+"domain": [],
+"file": "ui/chart.tsx",
+"files": [
+"ui/chart.tsx"
+],
+"deps": [
+"recharts"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/chart.json"
+},
+{
+"id": "taki/checkbox-demo",
+"name": "checkbox-demo",
+"title": "Checkbox demo",
+"description": "",
+"type": "example",
+"cat": "inputs/checkbox",
+"domain": [],
+"file": "examples/checkbox-demo.tsx",
+"files": [
+"examples/checkbox-demo.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/checkbox-demo.json"
+},
+{
+"id": "taki/checkbox-disabled",
+"name": "checkbox-disabled",
+"title": "Checkbox disabled",
+"description": "",
+"type": "example",
+"cat": "inputs/checkbox",
+"domain": [],
+"file": "examples/checkbox-disabled.tsx",
+"files": [
+"examples/checkbox-disabled.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/checkbox-disabled.json"
+},
+{
+"id": "taki/checkbox-form-multiple",
+"name": "checkbox-form-multiple",
+"title": "Checkbox form multiple",
+"description": "",
+"type": "example",
+"cat": "actions/button",
+"domain": [],
+"file": "examples/checkbox-form-multiple.tsx",
+"files": [
+"examples/checkbox-form-multiple.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/checkbox-form-multiple.json"
+},
+{
+"id": "taki/checkbox-form-single",
+"name": "checkbox-form-single",
+"title": "Checkbox form single",
+"description": "",
+"type": "example",
+"cat": "actions/button",
+"domain": [],
+"file": "examples/checkbox-form-single.tsx",
+"files": [
+"examples/checkbox-form-single.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/checkbox-form-single.json"
+},
+{
+"id": "taki/checkbox-group-demo",
+"name": "checkbox-group-demo",
+"title": "Checkbox group demo",
+"description": "",
+"type": "example",
+"cat": "inputs/checkbox",
+"domain": [],
+"file": "examples/checkbox-group-demo.tsx",
+"files": [
+"examples/checkbox-group-demo.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/checkbox-group-demo.json"
+},
+{
+"id": "taki/checkbox-with-text",
+"name": "checkbox-with-text",
+"title": "Checkbox with text",
+"description": "",
+"type": "example",
+"cat": "inputs/checkbox",
+"domain": [],
+"file": "examples/checkbox-with-text.tsx",
+"files": [
+"examples/checkbox-with-text.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/checkbox-with-text.json"
+},
+{
+"id": "taki/code-block-custom-theme",
+"name": "code-block-custom-theme",
+"title": "Code block custom theme",
+"description": "",
+"type": "example",
+"cat": "ai-agent/ai-agent",
+"domain": [
+"dev tools"
+],
+"file": "examples/code-block-custom-theme.tsx",
+"files": [
+"examples/code-block-custom-theme.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/code-block-custom-theme.json"
+},
+{
+"id": "taki/code-block-demo",
+"name": "code-block-demo",
+"title": "Code block demo",
+"description": "",
+"type": "example",
+"cat": "ai-agent/ai-agent",
+"domain": [
+"dev tools"
+],
+"file": "examples/code-block-demo.tsx",
+"files": [
+"examples/code-block-demo.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/code-block-demo.json"
+},
+{
+"id": "taki/code-block-diff",
+"name": "code-block-diff",
+"title": "Code block diff",
+"description": "",
+"type": "example",
+"cat": "ai-agent/ai-agent",
+"domain": [
+"dev tools"
+],
+"file": "examples/code-block-diff.tsx",
+"files": [
+"examples/code-block-diff.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/code-block-diff.json"
+},
+{
+"id": "taki/code-block-focus",
+"name": "code-block-focus",
+"title": "Code block focus",
+"description": "",
+"type": "example",
+"cat": "ai-agent/ai-agent",
+"domain": [
+"dev tools"
+],
+"file": "examples/code-block-focus.tsx",
+"files": [
+"examples/code-block-focus.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/code-block-focus.json"
+},
+{
+"id": "taki/code-block-highlight-word",
+"name": "code-block-highlight-word",
+"title": "Code block highlight word",
+"description": "",
+"type": "example",
+"cat": "ai-agent/ai-agent",
+"domain": [
+"dev tools"
+],
+"file": "examples/code-block-highlight-word.tsx",
+"files": [
+"examples/code-block-highlight-word.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/code-block-highlight-word.json"
+},
+{
+"id": "taki/code-block-highlight",
+"name": "code-block-highlight",
+"title": "Code block highlight",
+"description": "",
+"type": "example",
+"cat": "ai-agent/ai-agent",
+"domain": [
+"dev tools"
+],
+"file": "examples/code-block-highlight.tsx",
+"files": [
+"examples/code-block-highlight.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/code-block-highlight.json"
+},
+{
+"id": "taki/code-block-multiple-files",
+"name": "code-block-multiple-files",
+"title": "Code block multiple files",
+"description": "",
+"type": "example",
+"cat": "ai-agent/ai-agent",
+"domain": [
+"dev tools"
+],
+"file": "examples/code-block-multiple-files.tsx",
+"files": [
+"examples/code-block-multiple-files.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/code-block-multiple-files.json"
+},
+{
+"id": "taki/code-block-no-header",
+"name": "code-block-no-header",
+"title": "Code block no header",
+"description": "",
+"type": "example",
+"cat": "ai-agent/ai-agent",
+"domain": [
+"dev tools"
+],
+"file": "examples/code-block-no-header.tsx",
+"files": [
+"examples/code-block-no-header.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/code-block-no-header.json"
+},
+{
+"id": "taki/code-block-no-line-numbers",
+"name": "code-block-no-line-numbers",
+"title": "Code block no line numbers",
+"description": "",
+"type": "example",
+"cat": "ai-agent/ai-agent",
+"domain": [
+"dev tools"
+],
+"file": "examples/code-block-no-line-numbers.tsx",
+"files": [
+"examples/code-block-no-line-numbers.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/code-block-no-line-numbers.json"
+},
+{
+"id": "taki/code-block-no-syntax",
+"name": "code-block-no-syntax",
+"title": "Code block no syntax",
+"description": "",
+"type": "example",
+"cat": "ai-agent/ai-agent",
+"domain": [
+"dev tools"
+],
+"file": "examples/code-block-no-syntax.tsx",
+"files": [
+"examples/code-block-no-syntax.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/code-block-no-syntax.json"
+},
+{
+"id": "taki/combobox-controlled",
+"name": "combobox-controlled",
+"title": "Combobox controlled",
+"description": "",
+"type": "example",
+"cat": "inputs/combobox",
+"domain": [],
+"file": "examples/combobox-controlled.tsx",
+"files": [
+"examples/combobox-controlled.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/combobox-controlled.json"
+},
+{
+"id": "taki/combobox-demo",
+"name": "combobox-demo",
+"title": "Combobox demo",
+"description": "",
+"type": "example",
+"cat": "inputs/combobox",
+"domain": [],
+"file": "examples/combobox-demo.tsx",
+"files": [
+"examples/combobox-demo.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/combobox-demo.json"
+},
+{
+"id": "taki/combobox-description",
+"name": "combobox-description",
+"title": "Combobox description",
+"description": "",
+"type": "example",
+"cat": "inputs/combobox",
+"domain": [],
+"file": "examples/combobox-description.tsx",
+"files": [
+"examples/combobox-description.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/combobox-description.json"
+},
+{
+"id": "taki/combobox-disabled",
+"name": "combobox-disabled",
+"title": "Combobox disabled",
+"description": "",
+"type": "example",
+"cat": "inputs/combobox",
+"domain": [],
+"file": "examples/combobox-disabled.tsx",
+"files": [
+"examples/combobox-disabled.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/combobox-disabled.json"
+},
+{
+"id": "taki/combobox-dropdown-menu",
+"name": "combobox-dropdown-menu",
+"title": "Combobox dropdown menu",
+"description": "",
+"type": "example",
+"cat": "navigation/command-palette",
+"domain": [],
+"file": "examples/combobox-dropdown-menu.tsx",
+"files": [
+"examples/combobox-dropdown-menu.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/combobox-dropdown-menu.json"
+},
+{
+"id": "taki/combobox-form",
+"name": "combobox-form",
+"title": "Combobox form",
+"description": "",
+"type": "example",
+"cat": "actions/button",
+"domain": [],
+"file": "examples/combobox-form.tsx",
+"files": [
+"examples/combobox-form.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/combobox-form.json"
+},
+{
+"id": "taki/combobox-popover",
+"name": "combobox-popover",
+"title": "Combobox popover",
+"description": "",
+"type": "example",
+"cat": "inputs/combobox",
+"domain": [],
+"file": "examples/combobox-popover.tsx",
+"files": [
+"examples/combobox-popover.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/combobox-popover.json"
+},
+{
+"id": "taki/combobox-responsive",
+"name": "combobox-responsive",
+"title": "Combobox responsive",
+"description": "",
+"type": "example",
+"cat": "inputs/combobox",
+"domain": [],
+"file": "examples/combobox-responsive.tsx",
+"files": [
+"examples/combobox-responsive.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/combobox-responsive.json"
+},
+{
+"id": "taki/combobox-sections",
+"name": "combobox-sections",
+"title": "Combobox sections",
+"description": "",
+"type": "example",
+"cat": "inputs/combobox",
+"domain": [],
+"file": "examples/combobox-sections.tsx",
+"files": [
+"examples/combobox-sections.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/combobox-sections.json"
+},
+{
+"id": "taki/combobox-validation",
+"name": "combobox-validation",
+"title": "Combobox validation",
+"description": "",
+"type": "example",
+"cat": "inputs/combobox",
+"domain": [],
+"file": "examples/combobox-validation.tsx",
+"files": [
+"examples/combobox-validation.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/combobox-validation.json"
+},
+{
+"id": "taki/command-demo",
+"name": "command-demo",
+"title": "Command demo",
+"description": "",
+"type": "example",
+"cat": "navigation/command-palette",
+"domain": [],
+"file": "examples/command-demo.tsx",
+"files": [
+"examples/command-demo.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/command-demo.json"
+},
+{
+"id": "taki/command-dialog",
+"name": "command-dialog",
+"title": "Command dialog",
+"description": "",
+"type": "example",
+"cat": "navigation/command-palette",
+"domain": [
+"dev tools"
+],
+"file": "examples/command-dialog.tsx",
+"files": [
+"examples/command-dialog.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/command-dialog.json"
+},
+{
+"id": "taki/connection",
+"name": "connection",
+"title": "Connection",
+"description": "",
+"type": "ui",
+"cat": "ai-agent/ai-agent",
+"domain": [
+"AI"
+],
+"file": "ai-elements/connection.tsx",
+"files": [
+"ai-elements/connection.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/connection.json"
+},
+{
+"id": "taki/context-demo",
+"name": "context-demo",
+"title": "Context demo",
+"description": "",
+"type": "example",
+"cat": "ai-agent/ai-agent",
+"domain": [],
+"file": "examples/context-demo.tsx",
+"files": [
+"examples/context-demo.tsx"
+],
+"deps": [
+"ai",
+"tokenlens"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/context-demo.json"
+},
+{
+"id": "taki/controls",
+"name": "controls",
+"title": "Controls",
+"description": "",
+"type": "ui",
+"cat": "ai-agent/ai-agent",
+"domain": [
+"AI"
+],
+"file": "ai-elements/controls.tsx",
+"files": [
+"ai-elements/controls.tsx"
+],
+"deps": [
+"@xyflow/react"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/controls.json"
+},
+{
+"id": "taki/conversation-demo",
+"name": "conversation-demo",
+"title": "Conversation demo",
+"description": "",
+"type": "example",
+"cat": "ai-agent/ai-agent",
+"domain": [],
+"file": "examples/conversation-demo.tsx",
+"files": [
+"examples/conversation-demo.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/conversation-demo.json"
+},
+{
+"id": "taki/data-table-demo",
+"name": "data-table-demo",
+"title": "Data table demo",
+"description": "",
+"type": "example",
+"cat": "data-display/table",
+"domain": [],
+"file": "examples/data-table-demo.tsx",
+"files": [
+"examples/data-table-demo.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/data-table-demo.json"
+},
+{
+"id": "taki/date-field-controlled",
+"name": "date-field-controlled",
+"title": "Date field controlled",
+"description": "",
+"type": "example",
+"cat": "inputs/date-picker",
+"domain": [],
+"file": "examples/date-field-controlled.tsx",
+"files": [
+"examples/date-field-controlled.tsx"
+],
+"deps": [
+"@internationalized/date"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/date-field-controlled.json"
+},
+{
+"id": "taki/date-field-demo",
+"name": "date-field-demo",
+"title": "Date field demo",
+"description": "",
+"type": "example",
+"cat": "inputs/date-picker",
+"domain": [],
+"file": "examples/date-field-demo.tsx",
+"files": [
+"examples/date-field-demo.tsx"
+],
+"deps": [
+"@internationalized/date"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/date-field-demo.json"
+},
+{
+"id": "taki/date-field-disabled",
+"name": "date-field-disabled",
+"title": "Date field disabled",
+"description": "",
+"type": "example",
+"cat": "inputs/date-picker",
+"domain": [],
+"file": "examples/date-field-disabled.tsx",
+"files": [
+"examples/date-field-disabled.tsx"
+],
+"deps": [
+"@internationalized/date"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/date-field-disabled.json"
+},
+{
+"id": "taki/date-field-granularity",
+"name": "date-field-granularity",
+"title": "Date field granularity",
+"description": "",
+"type": "example",
+"cat": "inputs/date-picker",
+"domain": [],
+"file": "examples/date-field-granularity.tsx",
+"files": [
+"examples/date-field-granularity.tsx"
+],
+"deps": [
+"@internationalized/date"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/date-field-granularity.json"
+},
+{
+"id": "taki/date-field-min-max",
+"name": "date-field-min-max",
+"title": "Date field min max",
+"description": "",
+"type": "example",
+"cat": "inputs/date-picker",
+"domain": [],
+"file": "examples/date-field-min-max.tsx",
+"files": [
+"examples/date-field-min-max.tsx"
+],
+"deps": [
+"@internationalized/date"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/date-field-min-max.json"
+},
+{
+"id": "taki/date-field-validation",
+"name": "date-field-validation",
+"title": "Date field validation",
+"description": "",
+"type": "example",
+"cat": "inputs/date-picker",
+"domain": [],
+"file": "examples/date-field-validation.tsx",
+"files": [
+"examples/date-field-validation.tsx"
+],
+"deps": [
+"@internationalized/date"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/date-field-validation.json"
+},
+{
+"id": "taki/date-picker-controlled",
+"name": "date-picker-controlled",
+"title": "Date picker controlled",
+"description": "",
+"type": "example",
+"cat": "inputs/date-picker",
+"domain": [],
+"file": "examples/date-picker-controlled.tsx",
+"files": [
+"examples/date-picker-controlled.tsx"
+],
+"deps": [
+"@internationalized/date"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/date-picker-controlled.json"
+},
+{
+"id": "taki/date-picker-demo",
+"name": "date-picker-demo",
+"title": "Date picker demo",
+"description": "",
+"type": "example",
+"cat": "inputs/date-picker",
+"domain": [],
+"file": "examples/date-picker-demo.tsx",
+"files": [
+"examples/date-picker-demo.tsx"
+],
+"deps": [
+"@internationalized/date"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/date-picker-demo.json"
+},
+{
+"id": "taki/date-picker-disabled",
+"name": "date-picker-disabled",
+"title": "Date picker disabled",
+"description": "",
+"type": "example",
+"cat": "inputs/date-picker",
+"domain": [],
+"file": "examples/date-picker-disabled.tsx",
+"files": [
+"examples/date-picker-disabled.tsx"
+],
+"deps": [
+"@internationalized/date"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/date-picker-disabled.json"
+},
+{
+"id": "taki/date-picker-granularity",
+"name": "date-picker-granularity",
+"title": "Date picker granularity",
+"description": "",
+"type": "example",
+"cat": "inputs/date-picker",
+"domain": [],
+"file": "examples/date-picker-granularity.tsx",
+"files": [
+"examples/date-picker-granularity.tsx"
+],
+"deps": [
+"@internationalized/date"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/date-picker-granularity.json"
+},
+{
+"id": "taki/date-picker-min-max",
+"name": "date-picker-min-max",
+"title": "Date picker min max",
+"description": "",
+"type": "example",
+"cat": "inputs/date-picker",
+"domain": [],
+"file": "examples/date-picker-min-max.tsx",
+"files": [
+"examples/date-picker-min-max.tsx"
+],
+"deps": [
+"@internationalized/date"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/date-picker-min-max.json"
+},
+{
+"id": "taki/date-picker-unavailable-dates",
+"name": "date-picker-unavailable-dates",
+"title": "Date picker unavailable dates",
+"description": "",
+"type": "example",
+"cat": "inputs/date-picker",
+"domain": [],
+"file": "examples/date-picker-unavailable-dates.tsx",
+"files": [
+"examples/date-picker-unavailable-dates.tsx"
+],
+"deps": [
+"@internationalized/date"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/date-picker-unavailable-dates.json"
+},
+{
+"id": "taki/date-picker-validation",
+"name": "date-picker-validation",
+"title": "Date picker validation",
+"description": "",
+"type": "example",
+"cat": "inputs/date-picker",
+"domain": [],
+"file": "examples/date-picker-validation.tsx",
+"files": [
+"examples/date-picker-validation.tsx"
+],
+"deps": [
+"@internationalized/date"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/date-picker-validation.json"
+},
+{
+"id": "taki/date-range-picker-controlled",
+"name": "date-range-picker-controlled",
+"title": "Date range picker controlled",
+"description": "",
+"type": "example",
+"cat": "inputs/date-range",
+"domain": [],
+"file": "examples/date-range-picker-controlled.tsx",
+"files": [
+"examples/date-range-picker-controlled.tsx"
+],
+"deps": [
+"@internationalized/date"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/date-range-picker-controlled.json"
+},
+{
+"id": "taki/date-range-picker-demo",
+"name": "date-range-picker-demo",
+"title": "Date range picker demo",
+"description": "",
+"type": "example",
+"cat": "inputs/date-range",
+"domain": [],
+"file": "examples/date-range-picker-demo.tsx",
+"files": [
+"examples/date-range-picker-demo.tsx"
+],
+"deps": [
+"@internationalized/date"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/date-range-picker-demo.json"
+},
+{
+"id": "taki/date-range-picker-disabled",
+"name": "date-range-picker-disabled",
+"title": "Date range picker disabled",
+"description": "",
+"type": "example",
+"cat": "inputs/date-range",
+"domain": [],
+"file": "examples/date-range-picker-disabled.tsx",
+"files": [
+"examples/date-range-picker-disabled.tsx"
+],
+"deps": [
+"@internationalized/date"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/date-range-picker-disabled.json"
+},
+{
+"id": "taki/date-range-picker-min-max",
+"name": "date-range-picker-min-max",
+"title": "Date range picker min max",
+"description": "",
+"type": "example",
+"cat": "inputs/date-range",
+"domain": [],
+"file": "examples/date-range-picker-min-max.tsx",
+"files": [
+"examples/date-range-picker-min-max.tsx"
+],
+"deps": [
+"@internationalized/date"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/date-range-picker-min-max.json"
+},
+{
+"id": "taki/date-range-picker-unavailable-dates",
+"name": "date-range-picker-unavailable-dates",
+"title": "Date range picker unavailable dates",
+"description": "",
+"type": "example",
+"cat": "inputs/date-range",
+"domain": [],
+"file": "examples/date-range-picker-unavailable-dates.tsx",
+"files": [
+"examples/date-range-picker-unavailable-dates.tsx"
+],
+"deps": [
+"@internationalized/date"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/date-range-picker-unavailable-dates.json"
+},
+{
+"id": "taki/date-range-picker-validation",
+"name": "date-range-picker-validation",
+"title": "Date range picker validation",
+"description": "",
+"type": "example",
+"cat": "inputs/date-range",
+"domain": [],
+"file": "examples/date-range-picker-validation.tsx",
+"files": [
+"examples/date-range-picker-validation.tsx"
+],
+"deps": [
+"@internationalized/date"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/date-range-picker-validation.json"
+},
+{
+"id": "taki/description",
+"name": "description",
+"title": "Description",
+"description": "",
+"type": "ui",
+"cat": "other/other",
+"domain": [],
+"file": "ui/description.tsx",
+"files": [
+"ui/description.tsx"
+],
+"deps": [
+"react-aria-components"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/description.json"
+},
+{
+"id": "taki/dialog-alert",
+"name": "dialog-alert",
+"title": "Dialog alert",
+"description": "",
+"type": "example",
+"cat": "overlays/dialog",
+"domain": [
+"dev tools"
+],
+"file": "examples/dialog-alert.tsx",
+"files": [
+"examples/dialog-alert.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/dialog-alert.json"
+},
+{
+"id": "taki/dialog-close-button",
+"name": "dialog-close-button",
+"title": "Dialog close button",
+"description": "",
+"type": "example",
+"cat": "overlays/dialog",
+"domain": [
+"dev tools"
+],
+"file": "examples/dialog-close-button.tsx",
+"files": [
+"examples/dialog-close-button.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/dialog-close-button.json"
+},
+{
+"id": "taki/dialog-demo",
+"name": "dialog-demo",
+"title": "Dialog demo",
+"description": "",
+"type": "example",
+"cat": "overlays/dialog",
+"domain": [
+"dev tools"
+],
+"file": "examples/dialog-demo.tsx",
+"files": [
+"examples/dialog-demo.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/dialog-demo.json"
+},
+{
+"id": "taki/disclosure-demo",
+"name": "disclosure-demo",
+"title": "Disclosure demo",
+"description": "",
+"type": "example",
+"cat": "data-display/accordion",
+"domain": [],
+"file": "examples/disclosure-demo.tsx",
+"files": [
+"examples/disclosure-demo.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/disclosure-demo.json"
+},
+{
+"id": "taki/disclosure-group-controlled",
+"name": "disclosure-group-controlled",
+"title": "Disclosure group controlled",
+"description": "",
+"type": "example",
+"cat": "data-display/accordion",
+"domain": [],
+"file": "examples/disclosure-group-controlled.tsx",
+"files": [
+"examples/disclosure-group-controlled.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/disclosure-group-controlled.json"
+},
+{
+"id": "taki/disclosure-group-default-expanded",
+"name": "disclosure-group-default-expanded",
+"title": "Disclosure group default expanded",
+"description": "",
+"type": "example",
+"cat": "data-display/accordion",
+"domain": [],
+"file": "examples/disclosure-group-default-expanded.tsx",
+"files": [
+"examples/disclosure-group-default-expanded.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/disclosure-group-default-expanded.json"
+},
+{
+"id": "taki/disclosure-group-demo",
+"name": "disclosure-group-demo",
+"title": "Disclosure group demo",
+"description": "",
+"type": "example",
+"cat": "data-display/accordion",
+"domain": [],
+"file": "examples/disclosure-group-demo.tsx",
+"files": [
+"examples/disclosure-group-demo.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/disclosure-group-demo.json"
+},
+{
+"id": "taki/disclosure-group-disabled",
+"name": "disclosure-group-disabled",
+"title": "Disclosure group disabled",
+"description": "",
+"type": "example",
+"cat": "data-display/accordion",
+"domain": [],
+"file": "examples/disclosure-group-disabled.tsx",
+"files": [
+"examples/disclosure-group-disabled.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/disclosure-group-disabled.json"
+},
+{
+"id": "taki/disclosure-group-multiple",
+"name": "disclosure-group-multiple",
+"title": "Disclosure group multiple",
+"description": "",
+"type": "example",
+"cat": "data-display/accordion",
+"domain": [],
+"file": "examples/disclosure-group-multiple.tsx",
+"files": [
+"examples/disclosure-group-multiple.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/disclosure-group-multiple.json"
+},
+{
+"id": "taki/drawer-demo",
+"name": "drawer-demo",
+"title": "Drawer demo",
+"description": "",
+"type": "example",
+"cat": "overlays/sheet",
+"domain": [],
+"file": "examples/drawer-demo.tsx",
+"files": [
+"examples/drawer-demo.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/drawer-demo.json"
+},
+{
+"id": "taki/drawer-dialog",
+"name": "drawer-dialog",
+"title": "Drawer dialog",
+"description": "",
+"type": "example",
+"cat": "overlays/sheet",
+"domain": [
+"dev tools"
+],
+"file": "examples/drawer-dialog.tsx",
+"files": [
+"examples/drawer-dialog.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/drawer-dialog.json"
+},
+{
+"id": "taki/edge",
+"name": "edge",
+"title": "Edge",
+"description": "",
+"type": "ui",
+"cat": "ai-agent/ai-agent",
+"domain": [
+"AI"
+],
+"file": "ai-elements/edge.tsx",
+"files": [
+"ai-elements/edge.tsx"
+],
+"deps": [
+"@xyflow/react"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/edge.json"
+},
+{
+"id": "taki/empty-avatar-group",
+"name": "empty-avatar-group",
+"title": "Empty avatar group",
+"description": "",
+"type": "example",
+"cat": "data-display/empty-state",
+"domain": [],
+"file": "examples/empty-avatar-group.tsx",
+"files": [
+"examples/empty-avatar-group.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/empty-avatar-group.json"
+},
+{
+"id": "taki/empty-avatar",
+"name": "empty-avatar",
+"title": "Empty avatar",
+"description": "",
+"type": "example",
+"cat": "data-display/empty-state",
+"domain": [],
+"file": "examples/empty-avatar.tsx",
+"files": [
+"examples/empty-avatar.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/empty-avatar.json"
+},
+{
+"id": "taki/empty-background",
+"name": "empty-background",
+"title": "Empty background",
+"description": "",
+"type": "example",
+"cat": "data-display/empty-state",
+"domain": [],
+"file": "examples/empty-background.tsx",
+"files": [
+"examples/empty-background.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/empty-background.json"
+},
+{
+"id": "taki/empty-demo",
+"name": "empty-demo",
+"title": "Empty demo",
+"description": "",
+"type": "example",
+"cat": "data-display/empty-state",
+"domain": [],
+"file": "examples/empty-demo.tsx",
+"files": [
+"examples/empty-demo.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/empty-demo.json"
+},
+{
+"id": "taki/empty-icon",
+"name": "empty-icon",
+"title": "Empty icon",
+"description": "",
+"type": "example",
+"cat": "data-display/empty-state",
+"domain": [],
+"file": "examples/empty-icon.tsx",
+"files": [
+"examples/empty-icon.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/empty-icon.json"
+},
+{
+"id": "taki/empty-input-group",
+"name": "empty-input-group",
+"title": "Empty input group",
+"description": "",
+"type": "example",
+"cat": "data-display/empty-state",
+"domain": [],
+"file": "examples/empty-input-group.tsx",
+"files": [
+"examples/empty-input-group.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/empty-input-group.json"
+},
+{
+"id": "taki/empty-outline",
+"name": "empty-outline",
+"title": "Empty outline",
+"description": "",
+"type": "example",
+"cat": "data-display/empty-state",
+"domain": [],
+"file": "examples/empty-outline.tsx",
+"files": [
+"examples/empty-outline.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/empty-outline.json"
+},
+{
+"id": "taki/field-checkbox",
+"name": "field-checkbox",
+"title": "Field checkbox",
+"description": "",
+"type": "example",
+"cat": "inputs/form-field",
+"domain": [],
+"file": "examples/field-checkbox.tsx",
+"files": [
+"examples/field-checkbox.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/field-checkbox.json"
+},
+{
+"id": "taki/field-choice-card",
+"name": "field-choice-card",
+"title": "Field choice card",
+"description": "",
+"type": "example",
+"cat": "inputs/form-field",
+"domain": [],
+"file": "examples/field-choice-card.tsx",
+"files": [
+"examples/field-choice-card.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/field-choice-card.json"
+},
+{
+"id": "taki/field-demo",
+"name": "field-demo",
+"title": "Field demo",
+"description": "",
+"type": "example",
+"cat": "inputs/form-field",
+"domain": [],
+"file": "examples/field-demo.tsx",
+"files": [
+"examples/field-demo.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/field-demo.json"
+},
+{
+"id": "taki/field-fieldset",
+"name": "field-fieldset",
+"title": "Field fieldset",
+"description": "",
+"type": "example",
+"cat": "inputs/form-field",
+"domain": [],
+"file": "examples/field-fieldset.tsx",
+"files": [
+"examples/field-fieldset.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/field-fieldset.json"
+},
+{
+"id": "taki/field-group",
+"name": "field-group",
+"title": "Field group",
+"description": "",
+"type": "example",
+"cat": "inputs/form-field",
+"domain": [],
+"file": "examples/field-group.tsx",
+"files": [
+"examples/field-group.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/field-group.json"
+},
+{
+"id": "taki/field-input",
+"name": "field-input",
+"title": "Field input",
+"description": "",
+"type": "example",
+"cat": "inputs/form-field",
+"domain": [],
+"file": "examples/field-input.tsx",
+"files": [
+"examples/field-input.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/field-input.json"
+},
+{
+"id": "taki/field-radio",
+"name": "field-radio",
+"title": "Field radio",
+"description": "",
+"type": "example",
+"cat": "inputs/form-field",
+"domain": [],
+"file": "examples/field-radio.tsx",
+"files": [
+"examples/field-radio.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/field-radio.json"
+},
+{
+"id": "taki/field-responsive",
+"name": "field-responsive",
+"title": "Field responsive",
+"description": "",
+"type": "example",
+"cat": "inputs/form-field",
+"domain": [],
+"file": "examples/field-responsive.tsx",
+"files": [
+"examples/field-responsive.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/field-responsive.json"
+},
+{
+"id": "taki/field-select",
+"name": "field-select",
+"title": "Field select",
+"description": "",
+"type": "example",
+"cat": "inputs/form-field",
+"domain": [],
+"file": "examples/field-select.tsx",
+"files": [
+"examples/field-select.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/field-select.json"
+},
+{
+"id": "taki/field-slider",
+"name": "field-slider",
+"title": "Field slider",
+"description": "",
+"type": "example",
+"cat": "inputs/form-field",
+"domain": [],
+"file": "examples/field-slider.tsx",
+"files": [
+"examples/field-slider.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/field-slider.json"
+},
+{
+"id": "taki/field-switch",
+"name": "field-switch",
+"title": "Field switch",
+"description": "",
+"type": "example",
+"cat": "inputs/form-field",
+"domain": [],
+"file": "examples/field-switch.tsx",
+"files": [
+"examples/field-switch.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/field-switch.json"
+},
+{
+"id": "taki/field-textarea",
+"name": "field-textarea",
+"title": "Field textarea",
+"description": "",
+"type": "example",
+"cat": "inputs/form-field",
+"domain": [],
+"file": "examples/field-textarea.tsx",
+"files": [
+"examples/field-textarea.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/field-textarea.json"
+},
+{
+"id": "taki/file-trigger-camera",
+"name": "file-trigger-camera",
+"title": "File trigger camera",
+"description": "",
+"type": "example",
+"cat": "inputs/file-upload",
+"domain": [],
+"file": "examples/file-trigger-camera.tsx",
+"files": [
+"examples/file-trigger-camera.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/file-trigger-camera.json"
+},
+{
+"id": "taki/file-trigger-demo",
+"name": "file-trigger-demo",
+"title": "File trigger demo",
+"description": "",
+"type": "example",
+"cat": "inputs/file-upload",
+"domain": [],
+"file": "examples/file-trigger-demo.tsx",
+"files": [
+"examples/file-trigger-demo.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/file-trigger-demo.json"
+},
+{
+"id": "taki/file-trigger-directory",
+"name": "file-trigger-directory",
+"title": "File trigger directory",
+"description": "",
+"type": "example",
+"cat": "inputs/file-upload",
+"domain": [],
+"file": "examples/file-trigger-directory.tsx",
+"files": [
+"examples/file-trigger-directory.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/file-trigger-directory.json"
+},
+{
+"id": "taki/file-trigger-image",
+"name": "file-trigger-image",
+"title": "File trigger image",
+"description": "",
+"type": "example",
+"cat": "inputs/file-upload",
+"domain": [],
+"file": "examples/file-trigger-image.tsx",
+"files": [
+"examples/file-trigger-image.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/file-trigger-image.json"
+},
+{
+"id": "taki/file-trigger-multiple",
+"name": "file-trigger-multiple",
+"title": "File trigger multiple",
+"description": "",
+"type": "example",
+"cat": "inputs/file-upload",
+"domain": [],
+"file": "examples/file-trigger-multiple.tsx",
+"files": [
+"examples/file-trigger-multiple.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/file-trigger-multiple.json"
+},
+{
+"id": "taki/form-rhf-array",
+"name": "form-rhf-array",
+"title": "Form rhf array",
+"description": "",
+"type": "example",
+"cat": "inputs/form-field",
+"domain": [],
+"file": "examples/form-rhf-array.tsx",
+"files": [
+"examples/form-rhf-array.tsx"
+],
+"deps": [
+"react-hook-form",
+"@hookform/resolvers",
+"zod"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/form-rhf-array.json"
+},
+{
+"id": "taki/form-rhf-checkbox",
+"name": "form-rhf-checkbox",
+"title": "Form rhf checkbox",
+"description": "",
+"type": "example",
+"cat": "inputs/form-field",
+"domain": [],
+"file": "examples/form-rhf-checkbox.tsx",
+"files": [
+"examples/form-rhf-checkbox.tsx"
+],
+"deps": [
+"react-hook-form",
+"@hookform/resolvers",
+"zod"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/form-rhf-checkbox.json"
+},
+{
+"id": "taki/form-rhf-complex",
+"name": "form-rhf-complex",
+"title": "Form rhf complex",
+"description": "",
+"type": "example",
+"cat": "inputs/form-field",
+"domain": [],
+"file": "examples/form-rhf-complex.tsx",
+"files": [
+"examples/form-rhf-complex.tsx"
+],
+"deps": [
+"react-hook-form",
+"@hookform/resolvers",
+"zod"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/form-rhf-complex.json"
+},
+{
+"id": "taki/form-rhf-input",
+"name": "form-rhf-input",
+"title": "Form rhf input",
+"description": "",
+"type": "example",
+"cat": "inputs/form-field",
+"domain": [],
+"file": "examples/form-rhf-input.tsx",
+"files": [
+"examples/form-rhf-input.tsx"
+],
+"deps": [
+"react-hook-form",
+"@hookform/resolvers",
+"zod"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/form-rhf-input.json"
+},
+{
+"id": "taki/form-rhf-password",
+"name": "form-rhf-password",
+"title": "Form rhf password",
+"description": "",
+"type": "example",
+"cat": "inputs/form-field",
+"domain": [
+"auth"
+],
+"file": "examples/form-rhf-password.tsx",
+"files": [
+"examples/form-rhf-password.tsx"
+],
+"deps": [
+"react-hook-form",
+"@hookform/resolvers",
+"zod"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/form-rhf-password.json"
+},
+{
+"id": "taki/form-rhf-radiogroup",
+"name": "form-rhf-radiogroup",
+"title": "Form rhf radiogroup",
+"description": "",
+"type": "example",
+"cat": "inputs/form-field",
+"domain": [],
+"file": "examples/form-rhf-radiogroup.tsx",
+"files": [
+"examples/form-rhf-radiogroup.tsx"
+],
+"deps": [
+"react-hook-form",
+"@hookform/resolvers",
+"zod"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/form-rhf-radiogroup.json"
+},
+{
+"id": "taki/form-rhf-select",
+"name": "form-rhf-select",
+"title": "Form rhf select",
+"description": "",
+"type": "example",
+"cat": "inputs/form-field",
+"domain": [],
+"file": "examples/form-rhf-select.tsx",
+"files": [
+"examples/form-rhf-select.tsx"
+],
+"deps": [
+"react-hook-form",
+"@hookform/resolvers",
+"zod"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/form-rhf-select.json"
+},
+{
+"id": "taki/form-rhf-switch",
+"name": "form-rhf-switch",
+"title": "Form rhf switch",
+"description": "",
+"type": "example",
+"cat": "inputs/form-field",
+"domain": [],
+"file": "examples/form-rhf-switch.tsx",
+"files": [
+"examples/form-rhf-switch.tsx"
+],
+"deps": [
+"react-hook-form",
+"@hookform/resolvers",
+"zod"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/form-rhf-switch.json"
+},
+{
+"id": "taki/form-rhf-textarea",
+"name": "form-rhf-textarea",
+"title": "Form rhf textarea",
+"description": "",
+"type": "example",
+"cat": "inputs/form-field",
+"domain": [],
+"file": "examples/form-rhf-textarea.tsx",
+"files": [
+"examples/form-rhf-textarea.tsx"
+],
+"deps": [
+"react-hook-form",
+"@hookform/resolvers",
+"zod"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/form-rhf-textarea.json"
+},
+{
+"id": "taki/form-tanstack-array",
+"name": "form-tanstack-array",
+"title": "Form tanstack array",
+"description": "",
+"type": "example",
+"cat": "inputs/form-field",
+"domain": [],
+"file": "examples/form-tanstack-array.tsx",
+"files": [
+"examples/form-tanstack-array.tsx"
+],
+"deps": [
+"@tanstack/react-form",
+"zod"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/form-tanstack-array.json"
+},
+{
+"id": "taki/form-tanstack-checkbox",
+"name": "form-tanstack-checkbox",
+"title": "Form tanstack checkbox",
+"description": "",
+"type": "example",
+"cat": "inputs/form-field",
+"domain": [],
+"file": "examples/form-tanstack-checkbox.tsx",
+"files": [
+"examples/form-tanstack-checkbox.tsx"
+],
+"deps": [
+"@tanstack/react-form",
+"zod"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/form-tanstack-checkbox.json"
+},
+{
+"id": "taki/form-tanstack-complex",
+"name": "form-tanstack-complex",
+"title": "Form tanstack complex",
+"description": "",
+"type": "example",
+"cat": "inputs/form-field",
+"domain": [],
+"file": "examples/form-tanstack-complex.tsx",
+"files": [
+"examples/form-tanstack-complex.tsx"
+],
+"deps": [
+"@tanstack/react-form",
+"zod"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/form-tanstack-complex.json"
+},
+{
+"id": "taki/form-tanstack-demo",
+"name": "form-tanstack-demo",
+"title": "Form tanstack demo",
+"description": "",
+"type": "example",
+"cat": "inputs/form-field",
+"domain": [],
+"file": "examples/form-tanstack-demo.tsx",
+"files": [
+"examples/form-tanstack-demo.tsx"
+],
+"deps": [
+"@tanstack/react-form",
+"zod"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/form-tanstack-demo.json"
+},
+{
+"id": "taki/form-tanstack-input",
+"name": "form-tanstack-input",
+"title": "Form tanstack input",
+"description": "",
+"type": "example",
+"cat": "inputs/form-field",
+"domain": [],
+"file": "examples/form-tanstack-input.tsx",
+"files": [
+"examples/form-tanstack-input.tsx"
+],
+"deps": [
+"@tanstack/react-form",
+"zod"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/form-tanstack-input.json"
+},
+{
+"id": "taki/form-tanstack-radiogroup",
+"name": "form-tanstack-radiogroup",
+"title": "Form tanstack radiogroup",
+"description": "",
+"type": "example",
+"cat": "inputs/form-field",
+"domain": [],
+"file": "examples/form-tanstack-radiogroup.tsx",
+"files": [
+"examples/form-tanstack-radiogroup.tsx"
+],
+"deps": [
+"@tanstack/react-form",
+"zod"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/form-tanstack-radiogroup.json"
+},
+{
+"id": "taki/form-tanstack-select",
+"name": "form-tanstack-select",
+"title": "Form tanstack select",
+"description": "",
+"type": "example",
+"cat": "inputs/form-field",
+"domain": [],
+"file": "examples/form-tanstack-select.tsx",
+"files": [
+"examples/form-tanstack-select.tsx"
+],
+"deps": [
+"@tanstack/react-form",
+"zod"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/form-tanstack-select.json"
+},
+{
+"id": "taki/form-tanstack-switch",
+"name": "form-tanstack-switch",
+"title": "Form tanstack switch",
+"description": "",
+"type": "example",
+"cat": "inputs/form-field",
+"domain": [],
+"file": "examples/form-tanstack-switch.tsx",
+"files": [
+"examples/form-tanstack-switch.tsx"
+],
+"deps": [
+"@tanstack/react-form",
+"zod"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/form-tanstack-switch.json"
+},
+{
+"id": "taki/form-tanstack-textarea",
+"name": "form-tanstack-textarea",
+"title": "Form tanstack textarea",
+"description": "",
+"type": "example",
+"cat": "inputs/form-field",
+"domain": [],
+"file": "examples/form-tanstack-textarea.tsx",
+"files": [
+"examples/form-tanstack-textarea.tsx"
+],
+"deps": [
+"@tanstack/react-form",
+"zod"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/form-tanstack-textarea.json"
+},
+{
+"id": "taki/grid-list-actions",
+"name": "grid-list-actions",
+"title": "Grid list actions",
+"description": "",
+"type": "example",
+"cat": "data-display/list",
+"domain": [],
+"file": "examples/grid-list-actions.tsx",
+"files": [
+"examples/grid-list-actions.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/grid-list-actions.json"
+},
+{
+"id": "taki/grid-list-demo",
+"name": "grid-list-demo",
+"title": "Grid list demo",
+"description": "",
+"type": "example",
+"cat": "data-display/list",
+"domain": [],
+"file": "examples/grid-list-demo.tsx",
+"files": [
+"examples/grid-list-demo.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/grid-list-demo.json"
+},
+{
+"id": "taki/grid-list-disabled",
+"name": "grid-list-disabled",
+"title": "Grid list disabled",
+"description": "",
+"type": "example",
+"cat": "data-display/list",
+"domain": [],
+"file": "examples/grid-list-disabled.tsx",
+"files": [
+"examples/grid-list-disabled.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/grid-list-disabled.json"
+},
+{
+"id": "taki/grid-list-empty",
+"name": "grid-list-empty",
+"title": "Grid list empty",
+"description": "",
+"type": "example",
+"cat": "data-display/list",
+"domain": [],
+"file": "examples/grid-list-empty.tsx",
+"files": [
+"examples/grid-list-empty.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/grid-list-empty.json"
+},
+{
+"id": "taki/grid-list-links",
+"name": "grid-list-links",
+"title": "Grid list links",
+"description": "",
+"type": "example",
+"cat": "data-display/list",
+"domain": [],
+"file": "examples/grid-list-links.tsx",
+"files": [
+"examples/grid-list-links.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/grid-list-links.json"
+},
+{
+"id": "taki/grid-list-selection",
+"name": "grid-list-selection",
+"title": "Grid list selection",
+"description": "",
+"type": "example",
+"cat": "data-display/list",
+"domain": [],
+"file": "examples/grid-list-selection.tsx",
+"files": [
+"examples/grid-list-selection.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/grid-list-selection.json"
+},
+{
+"id": "taki/hover-card-demo",
+"name": "hover-card-demo",
+"title": "Hover card demo",
+"description": "",
+"type": "example",
+"cat": "overlays/hover-card",
+"domain": [],
+"file": "examples/hover-card-demo.tsx",
+"files": [
+"examples/hover-card-demo.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/hover-card-demo.json"
+},
+{
+"id": "taki/image-demo",
+"name": "image-demo",
+"title": "Image demo",
+"description": "",
+"type": "example",
+"cat": "media/gallery",
+"domain": [],
+"file": "examples/image-demo.tsx",
+"files": [
+"examples/image-demo.tsx"
+],
+"deps": [
+"ai"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/image-demo.json"
+},
+{
+"id": "taki/inline-citation-demo",
+"name": "inline-citation-demo",
+"title": "Inline citation demo",
+"description": "",
+"type": "example",
+"cat": "ai-agent/ai-agent",
+"domain": [],
+"file": "examples/inline-citation-demo.tsx",
+"files": [
+"examples/inline-citation-demo.tsx"
+],
+"deps": [
+"ai"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/inline-citation-demo.json"
+},
+{
+"id": "taki/input-demo",
+"name": "input-demo",
+"title": "Input demo",
+"description": "",
+"type": "example",
+"cat": "inputs/form-field",
+"domain": [],
+"file": "examples/input-demo.tsx",
+"files": [
+"examples/input-demo.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/input-demo.json"
+},
+{
+"id": "taki/input-disabled",
+"name": "input-disabled",
+"title": "Input disabled",
+"description": "",
+"type": "example",
+"cat": "inputs/form-field",
+"domain": [],
+"file": "examples/input-disabled.tsx",
+"files": [
+"examples/input-disabled.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/input-disabled.json"
+},
+{
+"id": "taki/input-file",
+"name": "input-file",
+"title": "Input file",
+"description": "",
+"type": "example",
+"cat": "inputs/form-field",
+"domain": [],
+"file": "examples/input-file.tsx",
+"files": [
+"examples/input-file.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/input-file.json"
+},
+{
+"id": "taki/input-form",
+"name": "input-form",
+"title": "Input form",
+"description": "",
+"type": "example",
+"cat": "actions/button",
+"domain": [],
+"file": "examples/input-form.tsx",
+"files": [
+"examples/input-form.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/input-form.json"
+},
+{
+"id": "taki/input-group-button-group",
+"name": "input-group-button-group",
+"title": "Input group button group",
+"description": "",
+"type": "example",
+"cat": "inputs/form-field",
+"domain": [],
+"file": "examples/input-group-button-group.tsx",
+"files": [
+"examples/input-group-button-group.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/input-group-button-group.json"
+},
+{
+"id": "taki/input-group-button",
+"name": "input-group-button",
+"title": "Input group button",
+"description": "",
+"type": "example",
+"cat": "inputs/form-field",
+"domain": [],
+"file": "examples/input-group-button.tsx",
+"files": [
+"examples/input-group-button.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/input-group-button.json"
+},
+{
+"id": "taki/input-group-custom",
+"name": "input-group-custom",
+"title": "Input group custom",
+"description": "",
+"type": "example",
+"cat": "inputs/form-field",
+"domain": [],
+"file": "examples/input-group-custom.tsx",
+"files": [
+"examples/input-group-custom.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/input-group-custom.json"
+},
+{
+"id": "taki/input-group-demo",
+"name": "input-group-demo",
+"title": "Input group demo",
+"description": "",
+"type": "example",
+"cat": "inputs/form-field",
+"domain": [],
+"file": "examples/input-group-demo.tsx",
+"files": [
+"examples/input-group-demo.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/input-group-demo.json"
+},
+{
+"id": "taki/input-group-dropdown",
+"name": "input-group-dropdown",
+"title": "Input group dropdown",
+"description": "",
+"type": "example",
+"cat": "inputs/form-field",
+"domain": [],
+"file": "examples/input-group-dropdown.tsx",
+"files": [
+"examples/input-group-dropdown.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/input-group-dropdown.json"
+},
+{
+"id": "taki/input-group-icon",
+"name": "input-group-icon",
+"title": "Input group icon",
+"description": "",
+"type": "example",
+"cat": "inputs/form-field",
+"domain": [],
+"file": "examples/input-group-icon.tsx",
+"files": [
+"examples/input-group-icon.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/input-group-icon.json"
+},
+{
+"id": "taki/input-group-label",
+"name": "input-group-label",
+"title": "Input group label",
+"description": "",
+"type": "example",
+"cat": "inputs/form-field",
+"domain": [],
+"file": "examples/input-group-label.tsx",
+"files": [
+"examples/input-group-label.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/input-group-label.json"
+},
+{
+"id": "taki/input-group-spinner",
+"name": "input-group-spinner",
+"title": "Input group spinner",
+"description": "",
+"type": "example",
+"cat": "inputs/form-field",
+"domain": [],
+"file": "examples/input-group-spinner.tsx",
+"files": [
+"examples/input-group-spinner.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/input-group-spinner.json"
+},
+{
+"id": "taki/input-group-text",
+"name": "input-group-text",
+"title": "Input group text",
+"description": "",
+"type": "example",
+"cat": "inputs/form-field",
+"domain": [],
+"file": "examples/input-group-text.tsx",
+"files": [
+"examples/input-group-text.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/input-group-text.json"
+},
+{
+"id": "taki/input-group-textarea",
+"name": "input-group-textarea",
+"title": "Input group textarea",
+"description": "",
+"type": "example",
+"cat": "inputs/form-field",
+"domain": [],
+"file": "examples/input-group-textarea.tsx",
+"files": [
+"examples/input-group-textarea.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/input-group-textarea.json"
+},
+{
+"id": "taki/input-group-tooltip",
+"name": "input-group-tooltip",
+"title": "Input group tooltip",
+"description": "",
+"type": "example",
+"cat": "inputs/form-field",
+"domain": [],
+"file": "examples/input-group-tooltip.tsx",
+"files": [
+"examples/input-group-tooltip.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/input-group-tooltip.json"
+},
+{
+"id": "taki/input-otp-controlled",
+"name": "input-otp-controlled",
+"title": "Input otp controlled",
+"description": "",
+"type": "example",
+"cat": "inputs/otp-input",
+"domain": [],
+"file": "examples/input-otp-controlled.tsx",
+"files": [
+"examples/input-otp-controlled.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/input-otp-controlled.json"
+},
+{
+"id": "taki/input-otp-demo",
+"name": "input-otp-demo",
+"title": "Input otp demo",
+"description": "",
+"type": "example",
+"cat": "inputs/otp-input",
+"domain": [],
+"file": "examples/input-otp-demo.tsx",
+"files": [
+"examples/input-otp-demo.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/input-otp-demo.json"
+},
+{
+"id": "taki/input-otp-form",
+"name": "input-otp-form",
+"title": "Input otp form",
+"description": "",
+"type": "example",
+"cat": "actions/button",
+"domain": [],
+"file": "examples/input-otp-form.tsx",
+"files": [
+"examples/input-otp-form.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/input-otp-form.json"
+},
+{
+"id": "taki/input-otp-pattern",
+"name": "input-otp-pattern",
+"title": "Input otp pattern",
+"description": "",
+"type": "example",
+"cat": "inputs/otp-input",
+"domain": [],
+"file": "examples/input-otp-pattern.tsx",
+"files": [
+"examples/input-otp-pattern.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/input-otp-pattern.json"
+},
+{
+"id": "taki/input-otp-separator",
+"name": "input-otp-separator",
+"title": "Input otp separator",
+"description": "",
+"type": "example",
+"cat": "inputs/otp-input",
+"domain": [],
+"file": "examples/input-otp-separator.tsx",
+"files": [
+"examples/input-otp-separator.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/input-otp-separator.json"
+},
+{
+"id": "taki/input-with-button",
+"name": "input-with-button",
+"title": "Input with button",
+"description": "",
+"type": "example",
+"cat": "inputs/form-field",
+"domain": [],
+"file": "examples/input-with-button.tsx",
+"files": [
+"examples/input-with-button.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/input-with-button.json"
+},
+{
+"id": "taki/input-with-label",
+"name": "input-with-label",
+"title": "Input with label",
+"description": "",
+"type": "example",
+"cat": "inputs/form-field",
+"domain": [],
+"file": "examples/input-with-label.tsx",
+"files": [
+"examples/input-with-label.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/input-with-label.json"
+},
+{
+"id": "taki/input-with-text",
+"name": "input-with-text",
+"title": "Input with text",
+"description": "",
+"type": "example",
+"cat": "inputs/form-field",
+"domain": [],
+"file": "examples/input-with-text.tsx",
+"files": [
+"examples/input-with-text.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/input-with-text.json"
+},
+{
+"id": "taki/item-avatar",
+"name": "item-avatar",
+"title": "Item avatar",
+"description": "",
+"type": "example",
+"cat": "data-display/list",
+"domain": [],
+"file": "examples/item-avatar.tsx",
+"files": [
+"examples/item-avatar.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/item-avatar.json"
+},
+{
+"id": "taki/item-demo",
+"name": "item-demo",
+"title": "Item demo",
+"description": "",
+"type": "example",
+"cat": "data-display/list",
+"domain": [],
+"file": "examples/item-demo.tsx",
+"files": [
+"examples/item-demo.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/item-demo.json"
+},
+{
+"id": "taki/item-dropdown",
+"name": "item-dropdown",
+"title": "Item dropdown",
+"description": "",
+"type": "example",
+"cat": "data-display/list",
+"domain": [],
+"file": "examples/item-dropdown.tsx",
+"files": [
+"examples/item-dropdown.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/item-dropdown.json"
+},
+{
+"id": "taki/item-group",
+"name": "item-group",
+"title": "Item group",
+"description": "",
+"type": "example",
+"cat": "data-display/list",
+"domain": [],
+"file": "examples/item-group.tsx",
+"files": [
+"examples/item-group.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/item-group.json"
+},
+{
+"id": "taki/item-header",
+"name": "item-header",
+"title": "Item header",
+"description": "",
+"type": "example",
+"cat": "data-display/list",
+"domain": [],
+"file": "examples/item-header.tsx",
+"files": [
+"examples/item-header.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/item-header.json"
+},
+{
+"id": "taki/item-icon",
+"name": "item-icon",
+"title": "Item icon",
+"description": "",
+"type": "example",
+"cat": "data-display/list",
+"domain": [],
+"file": "examples/item-icon.tsx",
+"files": [
+"examples/item-icon.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/item-icon.json"
+},
+{
+"id": "taki/item-image",
+"name": "item-image",
+"title": "Item image",
+"description": "",
+"type": "example",
+"cat": "data-display/list",
+"domain": [],
+"file": "examples/item-image.tsx",
+"files": [
+"examples/item-image.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/item-image.json"
+},
+{
+"id": "taki/item-link",
+"name": "item-link",
+"title": "Item link",
+"description": "",
+"type": "example",
+"cat": "data-display/list",
+"domain": [],
+"file": "examples/item-link.tsx",
+"files": [
+"examples/item-link.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/item-link.json"
+},
+{
+"id": "taki/item-size",
+"name": "item-size",
+"title": "Item size",
+"description": "",
+"type": "example",
+"cat": "data-display/list",
+"domain": [],
+"file": "examples/item-size.tsx",
+"files": [
+"examples/item-size.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/item-size.json"
+},
+{
+"id": "taki/item-variant",
+"name": "item-variant",
+"title": "Item variant",
+"description": "",
+"type": "example",
+"cat": "data-display/list",
+"domain": [],
+"file": "examples/item-variant.tsx",
+"files": [
+"examples/item-variant.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/item-variant.json"
+},
+{
+"id": "taki/kbd-button",
+"name": "kbd-button",
+"title": "Kbd button",
+"description": "",
+"type": "example",
+"cat": "data-display/typography",
+"domain": [],
+"file": "examples/kbd-button.tsx",
+"files": [
+"examples/kbd-button.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/kbd-button.json"
+},
+{
+"id": "taki/kbd-demo",
+"name": "kbd-demo",
+"title": "Kbd demo",
+"description": "",
+"type": "example",
+"cat": "data-display/typography",
+"domain": [],
+"file": "examples/kbd-demo.tsx",
+"files": [
+"examples/kbd-demo.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/kbd-demo.json"
+},
+{
+"id": "taki/kbd-group",
+"name": "kbd-group",
+"title": "Kbd group",
+"description": "",
+"type": "example",
+"cat": "data-display/typography",
+"domain": [],
+"file": "examples/kbd-group.tsx",
+"files": [
+"examples/kbd-group.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/kbd-group.json"
+},
+{
+"id": "taki/kbd-input-group",
+"name": "kbd-input-group",
+"title": "Kbd input group",
+"description": "",
+"type": "example",
+"cat": "data-display/typography",
+"domain": [],
+"file": "examples/kbd-input-group.tsx",
+"files": [
+"examples/kbd-input-group.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/kbd-input-group.json"
+},
+{
+"id": "taki/kbd-tooltip",
+"name": "kbd-tooltip",
+"title": "Kbd tooltip",
+"description": "",
+"type": "example",
+"cat": "data-display/typography",
+"domain": [],
+"file": "examples/kbd-tooltip.tsx",
+"files": [
+"examples/kbd-tooltip.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/kbd-tooltip.json"
+},
+{
+"id": "taki/label-demo",
+"name": "label-demo",
+"title": "Label demo",
+"description": "",
+"type": "example",
+"cat": "inputs/form-field",
+"domain": [],
+"file": "examples/label-demo.tsx",
+"files": [
+"examples/label-demo.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/label-demo.json"
+},
+{
+"id": "taki/link-button",
+"name": "link-button",
+"title": "Link button",
+"description": "",
+"type": "ui",
+"cat": "actions/button",
+"domain": [],
+"file": "ui/link-button.tsx",
+"files": [
+"ui/link-button.tsx"
+],
+"deps": [
+"react-aria-components",
+"tailwind-variants"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/link-button.json"
+},
+{
+"id": "taki/list-box-demo",
+"name": "list-box-demo",
+"title": "List box demo",
+"description": "",
+"type": "example",
+"cat": "data-display/list",
+"domain": [],
+"file": "examples/list-box-demo.tsx",
+"files": [
+"examples/list-box-demo.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/list-box-demo.json"
+},
+{
+"id": "taki/list-box-disabled",
+"name": "list-box-disabled",
+"title": "List box disabled",
+"description": "",
+"type": "example",
+"cat": "data-display/list",
+"domain": [],
+"file": "examples/list-box-disabled.tsx",
+"files": [
+"examples/list-box-disabled.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/list-box-disabled.json"
+},
+{
+"id": "taki/list-box-dynamic",
+"name": "list-box-dynamic",
+"title": "List box dynamic",
+"description": "",
+"type": "example",
+"cat": "data-display/list",
+"domain": [],
+"file": "examples/list-box-dynamic.tsx",
+"files": [
+"examples/list-box-dynamic.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/list-box-dynamic.json"
+},
+{
+"id": "taki/list-box-empty",
+"name": "list-box-empty",
+"title": "List box empty",
+"description": "",
+"type": "example",
+"cat": "data-display/list",
+"domain": [],
+"file": "examples/list-box-empty.tsx",
+"files": [
+"examples/list-box-empty.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/list-box-empty.json"
+},
+{
+"id": "taki/list-box-links",
+"name": "list-box-links",
+"title": "List box links",
+"description": "",
+"type": "example",
+"cat": "data-display/list",
+"domain": [],
+"file": "examples/list-box-links.tsx",
+"files": [
+"examples/list-box-links.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/list-box-links.json"
+},
+{
+"id": "taki/list-box-multiple",
+"name": "list-box-multiple",
+"title": "List box multiple",
+"description": "",
+"type": "example",
+"cat": "data-display/list",
+"domain": [],
+"file": "examples/list-box-multiple.tsx",
+"files": [
+"examples/list-box-multiple.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/list-box-multiple.json"
+},
+{
+"id": "taki/list-box-sections",
+"name": "list-box-sections",
+"title": "List box sections",
+"description": "",
+"type": "example",
+"cat": "data-display/list",
+"domain": [],
+"file": "examples/list-box-sections.tsx",
+"files": [
+"examples/list-box-sections.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/list-box-sections.json"
+},
+{
+"id": "taki/loader-demo",
+"name": "loader-demo",
+"title": "Loader demo",
+"description": "",
+"type": "example",
+"cat": "status/loader",
+"domain": [],
+"file": "examples/loader-demo.tsx",
+"files": [
+"examples/loader-demo.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/loader-demo.json"
+},
+{
+"id": "taki/menu-command",
+"name": "menu-command",
+"title": "Menu command",
+"description": "",
+"type": "example",
+"cat": "navigation/menu",
+"domain": [],
+"file": "examples/menu-command.tsx",
+"files": [
+"examples/menu-command.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/menu-command.json"
+},
+{
+"id": "taki/menu-demo",
+"name": "menu-demo",
+"title": "Menu demo",
+"description": "",
+"type": "example",
+"cat": "navigation/menu",
+"domain": [],
+"file": "examples/menu-demo.tsx",
+"files": [
+"examples/menu-demo.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/menu-demo.json"
+},
+{
+"id": "taki/menu-submenu",
+"name": "menu-submenu",
+"title": "Menu submenu",
+"description": "",
+"type": "example",
+"cat": "navigation/menu",
+"domain": [],
+"file": "examples/menu-submenu.tsx",
+"files": [
+"examples/menu-submenu.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/menu-submenu.json"
+},
+{
+"id": "taki/message-demo",
+"name": "message-demo",
+"title": "Message demo",
+"description": "",
+"type": "example",
+"cat": "ai-agent/ai-agent",
+"domain": [],
+"file": "examples/message-demo.tsx",
+"files": [
+"examples/message-demo.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/message-demo.json"
+},
+{
+"id": "taki/message-flat",
+"name": "message-flat",
+"title": "Message flat",
+"description": "",
+"type": "example",
+"cat": "ai-agent/ai-agent",
+"domain": [],
+"file": "examples/message-flat.tsx",
+"files": [
+"examples/message-flat.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/message-flat.json"
+},
+{
+"id": "taki/mode-toggle",
+"name": "mode-toggle",
+"title": "Mode toggle",
+"description": "",
+"type": "example",
+"cat": "actions/switch",
+"domain": [],
+"file": "examples/mode-toggle.tsx",
+"files": [
+"examples/mode-toggle.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/mode-toggle.json"
+},
+{
+"id": "taki/node",
+"name": "node",
+"title": "Node",
+"description": "",
+"type": "ui",
+"cat": "ai-agent/ai-agent",
+"domain": [
+"AI"
+],
+"file": "ai-elements/node.tsx",
+"files": [
+"ai-elements/node.tsx"
+],
+"deps": [
+"@xyflow/react"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/node.json"
+},
+{
+"id": "taki/number-field-custom-steppers",
+"name": "number-field-custom-steppers",
+"title": "Number field custom steppers",
+"description": "",
+"type": "example",
+"cat": "inputs/number-input",
+"domain": [],
+"file": "examples/number-field-custom-steppers.tsx",
+"files": [
+"examples/number-field-custom-steppers.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/number-field-custom-steppers.json"
+},
+{
+"id": "taki/number-field-demo",
+"name": "number-field-demo",
+"title": "Number field demo",
+"description": "",
+"type": "example",
+"cat": "inputs/number-input",
+"domain": [],
+"file": "examples/number-field-demo.tsx",
+"files": [
+"examples/number-field-demo.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/number-field-demo.json"
+},
+{
+"id": "taki/number-field-disabled",
+"name": "number-field-disabled",
+"title": "Number field disabled",
+"description": "",
+"type": "example",
+"cat": "inputs/number-input",
+"domain": [],
+"file": "examples/number-field-disabled.tsx",
+"files": [
+"examples/number-field-disabled.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/number-field-disabled.json"
+},
+{
+"id": "taki/number-field-percentage",
+"name": "number-field-percentage",
+"title": "Number field percentage",
+"description": "",
+"type": "example",
+"cat": "inputs/number-input",
+"domain": [],
+"file": "examples/number-field-percentage.tsx",
+"files": [
+"examples/number-field-percentage.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/number-field-percentage.json"
+},
+{
+"id": "taki/number-field-validation",
+"name": "number-field-validation",
+"title": "Number field validation",
+"description": "",
+"type": "example",
+"cat": "inputs/number-input",
+"domain": [],
+"file": "examples/number-field-validation.tsx",
+"files": [
+"examples/number-field-validation.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/number-field-validation.json"
+},
+{
+"id": "taki/number-field-with-description",
+"name": "number-field-with-description",
+"title": "Number field with description",
+"description": "",
+"type": "example",
+"cat": "inputs/number-input",
+"domain": [],
+"file": "examples/number-field-with-description.tsx",
+"files": [
+"examples/number-field-with-description.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/number-field-with-description.json"
+},
+{
+"id": "taki/open-in-chat-demo",
+"name": "open-in-chat-demo",
+"title": "Open in chat demo",
+"description": "",
+"type": "example",
+"cat": "ai-agent/ai-agent",
+"domain": [
+"AI"
+],
+"file": "examples/open-in-chat-demo.tsx",
+"files": [
+"examples/open-in-chat-demo.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/open-in-chat-demo.json"
+},
+{
+"id": "taki/pagination-demo",
+"name": "pagination-demo",
+"title": "Pagination demo",
+"description": "",
+"type": "example",
+"cat": "navigation/pagination",
+"domain": [],
+"file": "examples/pagination-demo.tsx",
+"files": [
+"examples/pagination-demo.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/pagination-demo.json"
+},
+{
+"id": "taki/panel",
+"name": "panel",
+"title": "Panel",
+"description": "",
+"type": "ui",
+"cat": "data-display/card",
+"domain": [
+"AI"
+],
+"file": "ai-elements/panel.tsx",
+"files": [
+"ai-elements/panel.tsx"
+],
+"deps": [
+"@xyflow/react"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/panel.json"
+},
+{
+"id": "taki/plan-demo",
+"name": "plan-demo",
+"title": "Plan demo",
+"description": "",
+"type": "example",
+"cat": "marketing/pricing",
+"domain": [
+"billing"
+],
+"file": "examples/plan-demo.tsx",
+"files": [
+"examples/plan-demo.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/plan-demo.json"
+},
+{
+"id": "taki/popover-demo",
+"name": "popover-demo",
+"title": "Popover demo",
+"description": "",
+"type": "example",
+"cat": "overlays/popover",
+"domain": [],
+"file": "examples/popover-demo.tsx",
+"files": [
+"examples/popover-demo.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/popover-demo.json"
+},
+{
+"id": "taki/progress-bar-demo",
+"name": "progress-bar-demo",
+"title": "Progress bar demo",
+"description": "",
+"type": "example",
+"cat": "data-viz/progress-bar",
+"domain": [],
+"file": "examples/progress-bar-demo.tsx",
+"files": [
+"examples/progress-bar-demo.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/progress-bar-demo.json"
+},
+{
+"id": "taki/progress-bar-indeterminate",
+"name": "progress-bar-indeterminate",
+"title": "Progress bar indeterminate",
+"description": "",
+"type": "example",
+"cat": "data-viz/progress-bar",
+"domain": [],
+"file": "examples/progress-bar-indeterminate.tsx",
+"files": [
+"examples/progress-bar-indeterminate.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/progress-bar-indeterminate.json"
+},
+{
+"id": "taki/progress-bar-label",
+"name": "progress-bar-label",
+"title": "Progress bar label",
+"description": "",
+"type": "example",
+"cat": "data-viz/progress-bar",
+"domain": [],
+"file": "examples/progress-bar-label.tsx",
+"files": [
+"examples/progress-bar-label.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/progress-bar-label.json"
+},
+{
+"id": "taki/progress-bar-value-scale",
+"name": "progress-bar-value-scale",
+"title": "Progress bar value scale",
+"description": "",
+"type": "example",
+"cat": "data-viz/progress-bar",
+"domain": [],
+"file": "examples/progress-bar-value-scale.tsx",
+"files": [
+"examples/progress-bar-value-scale.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/progress-bar-value-scale.json"
+},
+{
+"id": "taki/prompt-input-demo",
+"name": "prompt-input-demo",
+"title": "Prompt input demo",
+"description": "",
+"type": "example",
+"cat": "ai-agent/composer",
+"domain": [
+"AI"
+],
+"file": "examples/prompt-input-demo.tsx",
+"files": [
+"examples/prompt-input-demo.tsx"
+],
+"deps": [
+"ai",
+"nanoid"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/prompt-input-demo.json"
+},
+{
+"id": "taki/queue-demo",
+"name": "queue-demo",
+"title": "Queue demo",
+"description": "",
+"type": "example",
+"cat": "ai-agent/ai-agent",
+"domain": [],
+"file": "examples/queue-demo.tsx",
+"files": [
+"examples/queue-demo.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/queue-demo.json"
+},
+{
+"id": "taki/radio-group-demo",
+"name": "radio-group-demo",
+"title": "Radio group demo",
+"description": "",
+"type": "example",
+"cat": "inputs/radio",
+"domain": [],
+"file": "examples/radio-group-demo.tsx",
+"files": [
+"examples/radio-group-demo.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/radio-group-demo.json"
+},
+{
+"id": "taki/radio-group-form",
+"name": "radio-group-form",
+"title": "Radio group form",
+"description": "",
+"type": "example",
+"cat": "actions/button",
+"domain": [],
+"file": "examples/radio-group-form.tsx",
+"files": [
+"examples/radio-group-form.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/radio-group-form.json"
+},
+{
+"id": "taki/range-calendar-controlled",
+"name": "range-calendar-controlled",
+"title": "Range calendar controlled",
+"description": "",
+"type": "example",
+"cat": "data-display/calendar",
+"domain": [],
+"file": "examples/range-calendar-controlled.tsx",
+"files": [
+"examples/range-calendar-controlled.tsx"
+],
+"deps": [
+"@internationalized/date"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/range-calendar-controlled.json"
+},
+{
+"id": "taki/range-calendar-demo",
+"name": "range-calendar-demo",
+"title": "Range calendar demo",
+"description": "",
+"type": "example",
+"cat": "data-display/calendar",
+"domain": [],
+"file": "examples/range-calendar-demo.tsx",
+"files": [
+"examples/range-calendar-demo.tsx"
+],
+"deps": [
+"@internationalized/date"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/range-calendar-demo.json"
+},
+{
+"id": "taki/range-calendar-disabled",
+"name": "range-calendar-disabled",
+"title": "Range calendar disabled",
+"description": "",
+"type": "example",
+"cat": "data-display/calendar",
+"domain": [],
+"file": "examples/range-calendar-disabled.tsx",
+"files": [
+"examples/range-calendar-disabled.tsx"
+],
+"deps": [
+"@internationalized/date"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/range-calendar-disabled.json"
+},
+{
+"id": "taki/range-calendar-min-max",
+"name": "range-calendar-min-max",
+"title": "Range calendar min max",
+"description": "",
+"type": "example",
+"cat": "data-display/calendar",
+"domain": [],
+"file": "examples/range-calendar-min-max.tsx",
+"files": [
+"examples/range-calendar-min-max.tsx"
+],
+"deps": [
+"@internationalized/date"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/range-calendar-min-max.json"
+},
+{
+"id": "taki/range-calendar-non-contiguous",
+"name": "range-calendar-non-contiguous",
+"title": "Range calendar non contiguous",
+"description": "",
+"type": "example",
+"cat": "data-display/calendar",
+"domain": [],
+"file": "examples/range-calendar-non-contiguous.tsx",
+"files": [
+"examples/range-calendar-non-contiguous.tsx"
+],
+"deps": [
+"@internationalized/date"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/range-calendar-non-contiguous.json"
+},
+{
+"id": "taki/range-calendar-unavailable-dates",
+"name": "range-calendar-unavailable-dates",
+"title": "Range calendar unavailable dates",
+"description": "",
+"type": "example",
+"cat": "data-display/calendar",
+"domain": [],
+"file": "examples/range-calendar-unavailable-dates.tsx",
+"files": [
+"examples/range-calendar-unavailable-dates.tsx"
+],
+"deps": [
+"@internationalized/date"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/range-calendar-unavailable-dates.json"
+},
+{
+"id": "taki/reasoning-demo",
+"name": "reasoning-demo",
+"title": "Reasoning demo",
+"description": "",
+"type": "example",
+"cat": "ai-agent/ai-agent",
+"domain": [
+"AI"
+],
+"file": "examples/reasoning-demo.tsx",
+"files": [
+"examples/reasoning-demo.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/reasoning-demo.json"
+},
+{
+"id": "taki/resizable-demo-with-handle",
+"name": "resizable-demo-with-handle",
+"title": "Resizable demo with handle",
+"description": "",
+"type": "example",
+"cat": "layout/split-pane",
+"domain": [],
+"file": "examples/resizable-demo-with-handle.tsx",
+"files": [
+"examples/resizable-demo-with-handle.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/resizable-demo-with-handle.json"
+},
+{
+"id": "taki/resizable-demo",
+"name": "resizable-demo",
+"title": "Resizable demo",
+"description": "",
+"type": "example",
+"cat": "layout/split-pane",
+"domain": [],
+"file": "examples/resizable-demo.tsx",
+"files": [
+"examples/resizable-demo.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/resizable-demo.json"
+},
+{
+"id": "taki/resizable-handle",
+"name": "resizable-handle",
+"title": "Resizable handle",
+"description": "",
+"type": "example",
+"cat": "layout/split-pane",
+"domain": [],
+"file": "examples/resizable-handle.tsx",
+"files": [
+"examples/resizable-handle.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/resizable-handle.json"
+},
+{
+"id": "taki/resizable-vertical",
+"name": "resizable-vertical",
+"title": "Resizable vertical",
+"description": "",
+"type": "example",
+"cat": "layout/split-pane",
+"domain": [],
+"file": "examples/resizable-vertical.tsx",
+"files": [
+"examples/resizable-vertical.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/resizable-vertical.json"
+},
+{
+"id": "taki/response-demo",
+"name": "response-demo",
+"title": "Response demo",
+"description": "",
+"type": "example",
+"cat": "ai-agent/ai-agent",
+"domain": [],
+"file": "examples/response-demo.tsx",
+"files": [
+"examples/response-demo.tsx"
+],
+"deps": [
+"streamdown"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/response-demo.json"
+},
+{
+"id": "taki/search-field-controlled",
+"name": "search-field-controlled",
+"title": "Search field controlled",
+"description": "",
+"type": "example",
+"cat": "inputs/search",
+"domain": [],
+"file": "examples/search-field-controlled.tsx",
+"files": [
+"examples/search-field-controlled.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/search-field-controlled.json"
+},
+{
+"id": "taki/search-field-demo",
+"name": "search-field-demo",
+"title": "Search field demo",
+"description": "",
+"type": "example",
+"cat": "inputs/search",
+"domain": [],
+"file": "examples/search-field-demo.tsx",
+"files": [
+"examples/search-field-demo.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/search-field-demo.json"
+},
+{
+"id": "taki/search-field-disabled",
+"name": "search-field-disabled",
+"title": "Search field disabled",
+"description": "",
+"type": "example",
+"cat": "inputs/search",
+"domain": [],
+"file": "examples/search-field-disabled.tsx",
+"files": [
+"examples/search-field-disabled.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/search-field-disabled.json"
+},
+{
+"id": "taki/search-field-with-button",
+"name": "search-field-with-button",
+"title": "Search field with button",
+"description": "",
+"type": "example",
+"cat": "inputs/search",
+"domain": [],
+"file": "examples/search-field-with-button.tsx",
+"files": [
+"examples/search-field-with-button.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/search-field-with-button.json"
+},
+{
+"id": "taki/search-field-with-description",
+"name": "search-field-with-description",
+"title": "Search field with description",
+"description": "",
+"type": "example",
+"cat": "inputs/search",
+"domain": [],
+"file": "examples/search-field-with-description.tsx",
+"files": [
+"examples/search-field-with-description.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/search-field-with-description.json"
+},
+{
+"id": "taki/select-demo",
+"name": "select-demo",
+"title": "Select demo",
+"description": "",
+"type": "example",
+"cat": "inputs/select",
+"domain": [],
+"file": "examples/select-demo.tsx",
+"files": [
+"examples/select-demo.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/select-demo.json"
+},
+{
+"id": "taki/select-form",
+"name": "select-form",
+"title": "Select form",
+"description": "",
+"type": "example",
+"cat": "inputs/select",
+"domain": [],
+"file": "examples/select-form.tsx",
+"files": [
+"examples/select-form.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/select-form.json"
+},
+{
+"id": "taki/select-scrollable",
+"name": "select-scrollable",
+"title": "Select scrollable",
+"description": "",
+"type": "example",
+"cat": "inputs/select",
+"domain": [],
+"file": "examples/select-scrollable.tsx",
+"files": [
+"examples/select-scrollable.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/select-scrollable.json"
+},
+{
+"id": "taki/separator-demo",
+"name": "separator-demo",
+"title": "Separator demo",
+"description": "",
+"type": "example",
+"cat": "layout/page-shell",
+"domain": [],
+"file": "examples/separator-demo.tsx",
+"files": [
+"examples/separator-demo.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/separator-demo.json"
+},
+{
+"id": "taki/sheet-demo",
+"name": "sheet-demo",
+"title": "Sheet demo",
+"description": "",
+"type": "example",
+"cat": "overlays/sheet",
+"domain": [],
+"file": "examples/sheet-demo.tsx",
+"files": [
+"examples/sheet-demo.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/sheet-demo.json"
+},
+{
+"id": "taki/sheet-side",
+"name": "sheet-side",
+"title": "Sheet side",
+"description": "",
+"type": "example",
+"cat": "overlays/sheet",
+"domain": [],
+"file": "examples/sheet-side.tsx",
+"files": [
+"examples/sheet-side.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/sheet-side.json"
+},
+{
+"id": "taki/shimmer-demo",
+"name": "shimmer-demo",
+"title": "Shimmer demo",
+"description": "",
+"type": "example",
+"cat": "ai-agent/ai-agent",
+"domain": [],
+"file": "examples/shimmer-demo.tsx",
+"files": [
+"examples/shimmer-demo.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/shimmer-demo.json"
+},
+{
+"id": "taki/sidebar",
+"name": "sidebar",
+"title": "Sidebar",
+"description": "",
+"type": "ui",
+"cat": "navigation/sidebar",
+"domain": [],
+"file": "ui/sidebar.tsx",
+"files": [
+"ui/sidebar.tsx"
+],
+"deps": [
+"lucide-react",
+"react-aria-components",
+"tailwind-variants"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/sidebar.json"
+},
+{
+"id": "taki/skeleton-card",
+"name": "skeleton-card",
+"title": "Skeleton card",
+"description": "",
+"type": "example",
+"cat": "status/skeleton",
+"domain": [],
+"file": "examples/skeleton-card.tsx",
+"files": [
+"examples/skeleton-card.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/skeleton-card.json"
+},
+{
+"id": "taki/skeleton-demo",
+"name": "skeleton-demo",
+"title": "Skeleton demo",
+"description": "",
+"type": "example",
+"cat": "status/skeleton",
+"domain": [],
+"file": "examples/skeleton-demo.tsx",
+"files": [
+"examples/skeleton-demo.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/skeleton-demo.json"
+},
+{
+"id": "taki/slider-demo",
+"name": "slider-demo",
+"title": "Slider demo",
+"description": "",
+"type": "example",
+"cat": "inputs/slider",
+"domain": [],
+"file": "examples/slider-demo.tsx",
+"files": [
+"examples/slider-demo.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/slider-demo.json"
+},
+{
+"id": "taki/sonner-demo",
+"name": "sonner-demo",
+"title": "Sonner demo",
+"description": "",
+"type": "example",
+"cat": "overlays/toast",
+"domain": [],
+"file": "examples/sonner-demo.tsx",
+"files": [
+"examples/sonner-demo.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/sonner-demo.json"
+},
+{
+"id": "taki/sonner-types",
+"name": "sonner-types",
+"title": "Sonner types",
+"description": "",
+"type": "example",
+"cat": "overlays/toast",
+"domain": [],
+"file": "examples/sonner-types.tsx",
+"files": [
+"examples/sonner-types.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/sonner-types.json"
+},
+{
+"id": "taki/sources-demo",
+"name": "sources-demo",
+"title": "Sources demo",
+"description": "",
+"type": "example",
+"cat": "ai-agent/ai-agent",
+"domain": [],
+"file": "examples/sources-demo.tsx",
+"files": [
+"examples/sources-demo.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/sources-demo.json"
+},
+{
+"id": "taki/spinner-badge",
+"name": "spinner-badge",
+"title": "Spinner badge",
+"description": "",
+"type": "example",
+"cat": "status/loader",
+"domain": [],
+"file": "examples/spinner-badge.tsx",
+"files": [
+"examples/spinner-badge.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/spinner-badge.json"
+},
+{
+"id": "taki/spinner-basic",
+"name": "spinner-basic",
+"title": "Spinner basic",
+"description": "",
+"type": "example",
+"cat": "status/loader",
+"domain": [],
+"file": "examples/spinner-basic.tsx",
+"files": [
+"examples/spinner-basic.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/spinner-basic.json"
+},
+{
+"id": "taki/spinner-button",
+"name": "spinner-button",
+"title": "Spinner button",
+"description": "",
+"type": "example",
+"cat": "status/loader",
+"domain": [],
+"file": "examples/spinner-button.tsx",
+"files": [
+"examples/spinner-button.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/spinner-button.json"
+},
+{
+"id": "taki/spinner-color",
+"name": "spinner-color",
+"title": "Spinner color",
+"description": "",
+"type": "example",
+"cat": "status/loader",
+"domain": [],
+"file": "examples/spinner-color.tsx",
+"files": [
+"examples/spinner-color.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/spinner-color.json"
+},
+{
+"id": "taki/spinner-custom",
+"name": "spinner-custom",
+"title": "Spinner custom",
+"description": "",
+"type": "example",
+"cat": "status/loader",
+"domain": [],
+"file": "examples/spinner-custom.tsx",
+"files": [
+"examples/spinner-custom.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/spinner-custom.json"
+},
+{
+"id": "taki/spinner-demo",
+"name": "spinner-demo",
+"title": "Spinner demo",
+"description": "",
+"type": "example",
+"cat": "status/loader",
+"domain": [],
+"file": "examples/spinner-demo.tsx",
+"files": [
+"examples/spinner-demo.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/spinner-demo.json"
+},
+{
+"id": "taki/spinner-empty",
+"name": "spinner-empty",
+"title": "Spinner empty",
+"description": "",
+"type": "example",
+"cat": "status/loader",
+"domain": [],
+"file": "examples/spinner-empty.tsx",
+"files": [
+"examples/spinner-empty.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/spinner-empty.json"
+},
+{
+"id": "taki/spinner-input-group",
+"name": "spinner-input-group",
+"title": "Spinner input group",
+"description": "",
+"type": "example",
+"cat": "status/loader",
+"domain": [],
+"file": "examples/spinner-input-group.tsx",
+"files": [
+"examples/spinner-input-group.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/spinner-input-group.json"
+},
+{
+"id": "taki/spinner-item",
+"name": "spinner-item",
+"title": "Spinner item",
+"description": "",
+"type": "example",
+"cat": "status/loader",
+"domain": [],
+"file": "examples/spinner-item.tsx",
+"files": [
+"examples/spinner-item.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/spinner-item.json"
+},
+{
+"id": "taki/spinner-size",
+"name": "spinner-size",
+"title": "Spinner size",
+"description": "",
+"type": "example",
+"cat": "status/loader",
+"domain": [],
+"file": "examples/spinner-size.tsx",
+"files": [
+"examples/spinner-size.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/spinner-size.json"
+},
+{
+"id": "taki/suggestion-demo",
+"name": "suggestion-demo",
+"title": "Suggestion demo",
+"description": "",
+"type": "example",
+"cat": "ai-agent/ai-agent",
+"domain": [],
+"file": "examples/suggestion-demo.tsx",
+"files": [
+"examples/suggestion-demo.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/suggestion-demo.json"
+},
+{
+"id": "taki/switch-demo",
+"name": "switch-demo",
+"title": "Switch demo",
+"description": "",
+"type": "example",
+"cat": "actions/switch",
+"domain": [],
+"file": "examples/switch-demo.tsx",
+"files": [
+"examples/switch-demo.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/switch-demo.json"
+},
+{
+"id": "taki/switch-form",
+"name": "switch-form",
+"title": "Switch form",
+"description": "",
+"type": "example",
+"cat": "actions/button",
+"domain": [],
+"file": "examples/switch-form.tsx",
+"files": [
+"examples/switch-form.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/switch-form.json"
+},
+{
+"id": "taki/table-demo",
+"name": "table-demo",
+"title": "Table demo",
+"description": "",
+"type": "example",
+"cat": "data-display/table",
+"domain": [],
+"file": "examples/table-demo.tsx",
+"files": [
+"examples/table-demo.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/table-demo.json"
+},
+{
+"id": "taki/tabs-controlled",
+"name": "tabs-controlled",
+"title": "Tabs controlled",
+"description": "",
+"type": "example",
+"cat": "navigation/tabs",
+"domain": [],
+"file": "examples/tabs-controlled.tsx",
+"files": [
+"examples/tabs-controlled.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/tabs-controlled.json"
+},
+{
+"id": "taki/tabs-demo",
+"name": "tabs-demo",
+"title": "Tabs demo",
+"description": "",
+"type": "example",
+"cat": "navigation/tabs",
+"domain": [],
+"file": "examples/tabs-demo.tsx",
+"files": [
+"examples/tabs-demo.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/tabs-demo.json"
+},
+{
+"id": "taki/tabs-disabled",
+"name": "tabs-disabled",
+"title": "Tabs disabled",
+"description": "",
+"type": "example",
+"cat": "navigation/tabs",
+"domain": [],
+"file": "examples/tabs-disabled.tsx",
+"files": [
+"examples/tabs-disabled.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/tabs-disabled.json"
+},
+{
+"id": "taki/tabs-icons",
+"name": "tabs-icons",
+"title": "Tabs icons",
+"description": "",
+"type": "example",
+"cat": "navigation/tabs",
+"domain": [],
+"file": "examples/tabs-icons.tsx",
+"files": [
+"examples/tabs-icons.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/tabs-icons.json"
+},
+{
+"id": "taki/tabs-orientation",
+"name": "tabs-orientation",
+"title": "Tabs orientation",
+"description": "",
+"type": "example",
+"cat": "navigation/tabs",
+"domain": [],
+"file": "examples/tabs-orientation.tsx",
+"files": [
+"examples/tabs-orientation.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/tabs-orientation.json"
+},
+{
+"id": "taki/tag-group-demo",
+"name": "tag-group-demo",
+"title": "Tag group demo",
+"description": "",
+"type": "example",
+"cat": "data-display/badge",
+"domain": [],
+"file": "examples/tag-group-demo.tsx",
+"files": [
+"examples/tag-group-demo.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/tag-group-demo.json"
+},
+{
+"id": "taki/tag-group-disabled",
+"name": "tag-group-disabled",
+"title": "Tag group disabled",
+"description": "",
+"type": "example",
+"cat": "data-display/badge",
+"domain": [],
+"file": "examples/tag-group-disabled.tsx",
+"files": [
+"examples/tag-group-disabled.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/tag-group-disabled.json"
+},
+{
+"id": "taki/tag-group-empty",
+"name": "tag-group-empty",
+"title": "Tag group empty",
+"description": "",
+"type": "example",
+"cat": "data-display/badge",
+"domain": [],
+"file": "examples/tag-group-empty.tsx",
+"files": [
+"examples/tag-group-empty.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/tag-group-empty.json"
+},
+{
+"id": "taki/tag-group-links",
+"name": "tag-group-links",
+"title": "Tag group links",
+"description": "",
+"type": "example",
+"cat": "data-display/badge",
+"domain": [],
+"file": "examples/tag-group-links.tsx",
+"files": [
+"examples/tag-group-links.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/tag-group-links.json"
+},
+{
+"id": "taki/tag-group-removable",
+"name": "tag-group-removable",
+"title": "Tag group removable",
+"description": "",
+"type": "example",
+"cat": "data-display/badge",
+"domain": [],
+"file": "examples/tag-group-removable.tsx",
+"files": [
+"examples/tag-group-removable.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/tag-group-removable.json"
+},
+{
+"id": "taki/tag-group-selection",
+"name": "tag-group-selection",
+"title": "Tag group selection",
+"description": "",
+"type": "example",
+"cat": "data-display/badge",
+"domain": [],
+"file": "examples/tag-group-selection.tsx",
+"files": [
+"examples/tag-group-selection.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/tag-group-selection.json"
+},
+{
+"id": "taki/tag-group-variants",
+"name": "tag-group-variants",
+"title": "Tag group variants",
+"description": "",
+"type": "example",
+"cat": "data-display/badge",
+"domain": [],
+"file": "examples/tag-group-variants.tsx",
+"files": [
+"examples/tag-group-variants.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/tag-group-variants.json"
+},
+{
+"id": "taki/task-demo",
+"name": "task-demo",
+"title": "Task demo",
+"description": "",
+"type": "example",
+"cat": "ai-agent/ai-agent",
+"domain": [],
+"file": "examples/task-demo.tsx",
+"files": [
+"examples/task-demo.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/task-demo.json"
+},
+{
+"id": "taki/text-field-demo",
+"name": "text-field-demo",
+"title": "Text field demo",
+"description": "",
+"type": "example",
+"cat": "inputs/form-field",
+"domain": [],
+"file": "examples/text-field-demo.tsx",
+"files": [
+"examples/text-field-demo.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/text-field-demo.json"
+},
+{
+"id": "taki/text-field-disabled",
+"name": "text-field-disabled",
+"title": "Text field disabled",
+"description": "",
+"type": "example",
+"cat": "inputs/form-field",
+"domain": [],
+"file": "examples/text-field-disabled.tsx",
+"files": [
+"examples/text-field-disabled.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/text-field-disabled.json"
+},
+{
+"id": "taki/text-field-readonly",
+"name": "text-field-readonly",
+"title": "Text field readonly",
+"description": "",
+"type": "example",
+"cat": "inputs/form-field",
+"domain": [],
+"file": "examples/text-field-readonly.tsx",
+"files": [
+"examples/text-field-readonly.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/text-field-readonly.json"
+},
+{
+"id": "taki/text-field-types",
+"name": "text-field-types",
+"title": "Text field types",
+"description": "",
+"type": "example",
+"cat": "inputs/form-field",
+"domain": [],
+"file": "examples/text-field-types.tsx",
+"files": [
+"examples/text-field-types.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/text-field-types.json"
+},
+{
+"id": "taki/text-field-validation",
+"name": "text-field-validation",
+"title": "Text field validation",
+"description": "",
+"type": "example",
+"cat": "inputs/form-field",
+"domain": [],
+"file": "examples/text-field-validation.tsx",
+"files": [
+"examples/text-field-validation.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/text-field-validation.json"
+},
+{
+"id": "taki/text-field-with-description",
+"name": "text-field-with-description",
+"title": "Text field with description",
+"description": "",
+"type": "example",
+"cat": "inputs/form-field",
+"domain": [],
+"file": "examples/text-field-with-description.tsx",
+"files": [
+"examples/text-field-with-description.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/text-field-with-description.json"
+},
+{
+"id": "taki/textarea-demo",
+"name": "textarea-demo",
+"title": "Textarea demo",
+"description": "",
+"type": "example",
+"cat": "inputs/textarea",
+"domain": [],
+"file": "examples/textarea-demo.tsx",
+"files": [
+"examples/textarea-demo.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/textarea-demo.json"
+},
+{
+"id": "taki/textarea-disabled",
+"name": "textarea-disabled",
+"title": "Textarea disabled",
+"description": "",
+"type": "example",
+"cat": "inputs/textarea",
+"domain": [],
+"file": "examples/textarea-disabled.tsx",
+"files": [
+"examples/textarea-disabled.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/textarea-disabled.json"
+},
+{
+"id": "taki/textarea-form",
+"name": "textarea-form",
+"title": "Textarea form",
+"description": "",
+"type": "example",
+"cat": "actions/button",
+"domain": [],
+"file": "examples/textarea-form.tsx",
+"files": [
+"examples/textarea-form.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/textarea-form.json"
+},
+{
+"id": "taki/textarea-with-button",
+"name": "textarea-with-button",
+"title": "Textarea with button",
+"description": "",
+"type": "example",
+"cat": "inputs/textarea",
+"domain": [],
+"file": "examples/textarea-with-button.tsx",
+"files": [
+"examples/textarea-with-button.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/textarea-with-button.json"
+},
+{
+"id": "taki/textarea-with-label",
+"name": "textarea-with-label",
+"title": "Textarea with label",
+"description": "",
+"type": "example",
+"cat": "inputs/textarea",
+"domain": [],
+"file": "examples/textarea-with-label.tsx",
+"files": [
+"examples/textarea-with-label.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/textarea-with-label.json"
+},
+{
+"id": "taki/textarea-with-text",
+"name": "textarea-with-text",
+"title": "Textarea with text",
+"description": "",
+"type": "example",
+"cat": "inputs/textarea",
+"domain": [],
+"file": "examples/textarea-with-text.tsx",
+"files": [
+"examples/textarea-with-text.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/textarea-with-text.json"
+},
+{
+"id": "taki/time-field-controlled",
+"name": "time-field-controlled",
+"title": "Time field controlled",
+"description": "",
+"type": "example",
+"cat": "inputs/time-picker",
+"domain": [],
+"file": "examples/time-field-controlled.tsx",
+"files": [
+"examples/time-field-controlled.tsx"
+],
+"deps": [
+"@internationalized/date"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/time-field-controlled.json"
+},
+{
+"id": "taki/time-field-demo",
+"name": "time-field-demo",
+"title": "Time field demo",
+"description": "",
+"type": "example",
+"cat": "inputs/time-picker",
+"domain": [],
+"file": "examples/time-field-demo.tsx",
+"files": [
+"examples/time-field-demo.tsx"
+],
+"deps": [
+"@internationalized/date"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/time-field-demo.json"
+},
+{
+"id": "taki/time-field-description",
+"name": "time-field-description",
+"title": "Time field description",
+"description": "",
+"type": "example",
+"cat": "inputs/time-picker",
+"domain": [],
+"file": "examples/time-field-description.tsx",
+"files": [
+"examples/time-field-description.tsx"
+],
+"deps": [
+"@internationalized/date"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/time-field-description.json"
+},
+{
+"id": "taki/time-field-disabled",
+"name": "time-field-disabled",
+"title": "Time field disabled",
+"description": "",
+"type": "example",
+"cat": "inputs/time-picker",
+"domain": [],
+"file": "examples/time-field-disabled.tsx",
+"files": [
+"examples/time-field-disabled.tsx"
+],
+"deps": [
+"@internationalized/date"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/time-field-disabled.json"
+},
+{
+"id": "taki/time-field-granularity",
+"name": "time-field-granularity",
+"title": "Time field granularity",
+"description": "",
+"type": "example",
+"cat": "inputs/time-picker",
+"domain": [],
+"file": "examples/time-field-granularity.tsx",
+"files": [
+"examples/time-field-granularity.tsx"
+],
+"deps": [
+"@internationalized/date"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/time-field-granularity.json"
+},
+{
+"id": "taki/time-field-hour-cycle",
+"name": "time-field-hour-cycle",
+"title": "Time field hour cycle",
+"description": "",
+"type": "example",
+"cat": "inputs/time-picker",
+"domain": [],
+"file": "examples/time-field-hour-cycle.tsx",
+"files": [
+"examples/time-field-hour-cycle.tsx"
+],
+"deps": [
+"@internationalized/date"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/time-field-hour-cycle.json"
+},
+{
+"id": "taki/time-field-validation",
+"name": "time-field-validation",
+"title": "Time field validation",
+"description": "",
+"type": "example",
+"cat": "inputs/time-picker",
+"domain": [],
+"file": "examples/time-field-validation.tsx",
+"files": [
+"examples/time-field-validation.tsx"
+],
+"deps": [
+"@internationalized/date"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/time-field-validation.json"
+},
+{
+"id": "taki/toggle-button-controlled",
+"name": "toggle-button-controlled",
+"title": "Toggle button controlled",
+"description": "",
+"type": "example",
+"cat": "actions/button",
+"domain": [],
+"file": "examples/toggle-button-controlled.tsx",
+"files": [
+"examples/toggle-button-controlled.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/toggle-button-controlled.json"
+},
+{
+"id": "taki/toggle-button-default",
+"name": "toggle-button-default",
+"title": "Toggle button default",
+"description": "",
+"type": "example",
+"cat": "actions/button",
+"domain": [],
+"file": "examples/toggle-button-default.tsx",
+"files": [
+"examples/toggle-button-default.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/toggle-button-default.json"
+},
+{
+"id": "taki/toggle-button-demo",
+"name": "toggle-button-demo",
+"title": "Toggle button demo",
+"description": "",
+"type": "example",
+"cat": "actions/button",
+"domain": [],
+"file": "examples/toggle-button-demo.tsx",
+"files": [
+"examples/toggle-button-demo.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/toggle-button-demo.json"
+},
+{
+"id": "taki/toggle-button-disabled",
+"name": "toggle-button-disabled",
+"title": "Toggle button disabled",
+"description": "",
+"type": "example",
+"cat": "actions/button",
+"domain": [],
+"file": "examples/toggle-button-disabled.tsx",
+"files": [
+"examples/toggle-button-disabled.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/toggle-button-disabled.json"
+},
+{
+"id": "taki/toggle-button-group-default",
+"name": "toggle-button-group-default",
+"title": "Toggle button group default",
+"description": "",
+"type": "example",
+"cat": "actions/button",
+"domain": [],
+"file": "examples/toggle-button-group-default.tsx",
+"files": [
+"examples/toggle-button-group-default.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/toggle-button-group-default.json"
+},
+{
+"id": "taki/toggle-button-group-demo",
+"name": "toggle-button-group-demo",
+"title": "Toggle button group demo",
+"description": "",
+"type": "example",
+"cat": "actions/button",
+"domain": [],
+"file": "examples/toggle-button-group-demo.tsx",
+"files": [
+"examples/toggle-button-group-demo.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/toggle-button-group-demo.json"
+},
+{
+"id": "taki/toggle-button-group-size",
+"name": "toggle-button-group-size",
+"title": "Toggle button group size",
+"description": "",
+"type": "example",
+"cat": "actions/button",
+"domain": [],
+"file": "examples/toggle-button-group-size.tsx",
+"files": [
+"examples/toggle-button-group-size.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/toggle-button-group-size.json"
+},
+{
+"id": "taki/toggle-button-outline",
+"name": "toggle-button-outline",
+"title": "Toggle button outline",
+"description": "",
+"type": "example",
+"cat": "actions/button",
+"domain": [],
+"file": "examples/toggle-button-outline.tsx",
+"files": [
+"examples/toggle-button-outline.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/toggle-button-outline.json"
+},
+{
+"id": "taki/toggle-button-size",
+"name": "toggle-button-size",
+"title": "Toggle button size",
+"description": "",
+"type": "example",
+"cat": "actions/button",
+"domain": [],
+"file": "examples/toggle-button-size.tsx",
+"files": [
+"examples/toggle-button-size.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/toggle-button-size.json"
+},
+{
+"id": "taki/tool-demo",
+"name": "tool-demo",
+"title": "Tool demo",
+"description": "",
+"type": "example",
+"cat": "ai-agent/ai-agent",
+"domain": [],
+"file": "examples/tool-demo.tsx",
+"files": [
+"examples/tool-demo.tsx"
+],
+"deps": [
+"ai"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/tool-demo.json"
+},
+{
+"id": "taki/toolbar",
+"name": "toolbar",
+"title": "Toolbar",
+"description": "",
+"type": "ui",
+"cat": "navigation/menu",
+"domain": [
+"AI"
+],
+"file": "ai-elements/toolbar.tsx",
+"files": [
+"ai-elements/toolbar.tsx"
+],
+"deps": [
+"@xyflow/react"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/toolbar.json"
+},
+{
+"id": "taki/tooltip-delay",
+"name": "tooltip-delay",
+"title": "Tooltip delay",
+"description": "",
+"type": "example",
+"cat": "overlays/tooltip",
+"domain": [],
+"file": "examples/tooltip-delay.tsx",
+"files": [
+"examples/tooltip-delay.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/tooltip-delay.json"
+},
+{
+"id": "taki/tooltip-demo",
+"name": "tooltip-demo",
+"title": "Tooltip demo",
+"description": "",
+"type": "example",
+"cat": "overlays/tooltip",
+"domain": [],
+"file": "examples/tooltip-demo.tsx",
+"files": [
+"examples/tooltip-demo.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/tooltip-demo.json"
+},
+{
+"id": "taki/tooltip-icon",
+"name": "tooltip-icon",
+"title": "Tooltip icon",
+"description": "",
+"type": "example",
+"cat": "overlays/tooltip",
+"domain": [],
+"file": "examples/tooltip-icon.tsx",
+"files": [
+"examples/tooltip-icon.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/tooltip-icon.json"
+},
+{
+"id": "taki/tooltip-placement",
+"name": "tooltip-placement",
+"title": "Tooltip placement",
+"description": "",
+"type": "example",
+"cat": "overlays/tooltip",
+"domain": [],
+"file": "examples/tooltip-placement.tsx",
+"files": [
+"examples/tooltip-placement.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/tooltip-placement.json"
+},
+{
+"id": "taki/tree-actions",
+"name": "tree-actions",
+"title": "Tree actions",
+"description": "",
+"type": "example",
+"cat": "data-display/tree",
+"domain": [],
+"file": "examples/tree-actions.tsx",
+"files": [
+"examples/tree-actions.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/tree-actions.json"
+},
+{
+"id": "taki/tree-demo",
+"name": "tree-demo",
+"title": "Tree demo",
+"description": "",
+"type": "example",
+"cat": "data-display/tree",
+"domain": [],
+"file": "examples/tree-demo.tsx",
+"files": [
+"examples/tree-demo.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/tree-demo.json"
+},
+{
+"id": "taki/tree-disabled",
+"name": "tree-disabled",
+"title": "Tree disabled",
+"description": "",
+"type": "example",
+"cat": "data-display/tree",
+"domain": [],
+"file": "examples/tree-disabled.tsx",
+"files": [
+"examples/tree-disabled.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/tree-disabled.json"
+},
+{
+"id": "taki/tree-dynamic",
+"name": "tree-dynamic",
+"title": "Tree dynamic",
+"description": "",
+"type": "example",
+"cat": "data-display/tree",
+"domain": [],
+"file": "examples/tree-dynamic.tsx",
+"files": [
+"examples/tree-dynamic.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/tree-dynamic.json"
+},
+{
+"id": "taki/tree-links",
+"name": "tree-links",
+"title": "Tree links",
+"description": "",
+"type": "example",
+"cat": "data-display/tree",
+"domain": [],
+"file": "examples/tree-links.tsx",
+"files": [
+"examples/tree-links.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/tree-links.json"
+},
+{
+"id": "taki/tree-selection",
+"name": "tree-selection",
+"title": "Tree selection",
+"description": "",
+"type": "example",
+"cat": "data-display/tree",
+"domain": [],
+"file": "examples/tree-selection.tsx",
+"files": [
+"examples/tree-selection.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/tree-selection.json"
+},
+{
+"id": "taki/tree-single-selection",
+"name": "tree-single-selection",
+"title": "Tree single selection",
+"description": "",
+"type": "example",
+"cat": "data-display/tree",
+"domain": [],
+"file": "examples/tree-single-selection.tsx",
+"files": [
+"examples/tree-single-selection.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/tree-single-selection.json"
+},
+{
+"id": "taki/typography-blockquote",
+"name": "typography-blockquote",
+"title": "Typography blockquote",
+"description": "",
+"type": "example",
+"cat": "data-display/typography",
+"domain": [],
+"file": "examples/typography-blockquote.tsx",
+"files": [
+"examples/typography-blockquote.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/typography-blockquote.json"
+},
+{
+"id": "taki/typography-demo",
+"name": "typography-demo",
+"title": "Typography demo",
+"description": "",
+"type": "example",
+"cat": "data-display/typography",
+"domain": [],
+"file": "examples/typography-demo.tsx",
+"files": [
+"examples/typography-demo.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/typography-demo.json"
+},
+{
+"id": "taki/typography-h1",
+"name": "typography-h1",
+"title": "Typography h1",
+"description": "",
+"type": "example",
+"cat": "data-display/typography",
+"domain": [],
+"file": "examples/typography-h1.tsx",
+"files": [
+"examples/typography-h1.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/typography-h1.json"
+},
+{
+"id": "taki/typography-h2",
+"name": "typography-h2",
+"title": "Typography h2",
+"description": "",
+"type": "example",
+"cat": "data-display/typography",
+"domain": [],
+"file": "examples/typography-h2.tsx",
+"files": [
+"examples/typography-h2.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/typography-h2.json"
+},
+{
+"id": "taki/typography-h3",
+"name": "typography-h3",
+"title": "Typography h3",
+"description": "",
+"type": "example",
+"cat": "data-display/typography",
+"domain": [],
+"file": "examples/typography-h3.tsx",
+"files": [
+"examples/typography-h3.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/typography-h3.json"
+},
+{
+"id": "taki/typography-h4",
+"name": "typography-h4",
+"title": "Typography h4",
+"description": "",
+"type": "example",
+"cat": "data-display/typography",
+"domain": [],
+"file": "examples/typography-h4.tsx",
+"files": [
+"examples/typography-h4.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/typography-h4.json"
+},
+{
+"id": "taki/typography-inline-code",
+"name": "typography-inline-code",
+"title": "Typography inline code",
+"description": "",
+"type": "example",
+"cat": "data-display/typography",
+"domain": [
+"dev tools"
+],
+"file": "examples/typography-inline-code.tsx",
+"files": [
+"examples/typography-inline-code.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/typography-inline-code.json"
+},
+{
+"id": "taki/typography-large",
+"name": "typography-large",
+"title": "Typography large",
+"description": "",
+"type": "example",
+"cat": "data-display/typography",
+"domain": [],
+"file": "examples/typography-large.tsx",
+"files": [
+"examples/typography-large.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/typography-large.json"
+},
+{
+"id": "taki/typography-lead",
+"name": "typography-lead",
+"title": "Typography lead",
+"description": "",
+"type": "example",
+"cat": "data-display/typography",
+"domain": [],
+"file": "examples/typography-lead.tsx",
+"files": [
+"examples/typography-lead.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/typography-lead.json"
+},
+{
+"id": "taki/typography-list",
+"name": "typography-list",
+"title": "Typography list",
+"description": "",
+"type": "example",
+"cat": "data-display/typography",
+"domain": [],
+"file": "examples/typography-list.tsx",
+"files": [
+"examples/typography-list.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/typography-list.json"
+},
+{
+"id": "taki/typography-muted",
+"name": "typography-muted",
+"title": "Typography muted",
+"description": "",
+"type": "example",
+"cat": "data-display/typography",
+"domain": [],
+"file": "examples/typography-muted.tsx",
+"files": [
+"examples/typography-muted.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/typography-muted.json"
+},
+{
+"id": "taki/typography-p",
+"name": "typography-p",
+"title": "Typography p",
+"description": "",
+"type": "example",
+"cat": "data-display/typography",
+"domain": [],
+"file": "examples/typography-p.tsx",
+"files": [
+"examples/typography-p.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/typography-p.json"
+},
+{
+"id": "taki/typography-small",
+"name": "typography-small",
+"title": "Typography small",
+"description": "",
+"type": "example",
+"cat": "data-display/typography",
+"domain": [],
+"file": "examples/typography-small.tsx",
+"files": [
+"examples/typography-small.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/typography-small.json"
+},
+{
+"id": "taki/typography-table",
+"name": "typography-table",
+"title": "Typography table",
+"description": "",
+"type": "example",
+"cat": "data-display/typography",
+"domain": [],
+"file": "examples/typography-table.tsx",
+"files": [
+"examples/typography-table.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/typography-table.json"
+},
+{
+"id": "taki/web-preview-demo",
+"name": "web-preview-demo",
+"title": "Web preview demo",
+"description": "",
+"type": "example",
+"cat": "actions/button",
+"domain": [],
+"file": "examples/web-preview-demo.tsx",
+"files": [
+"examples/web-preview-demo.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://taki-ui.com/r/web-preview-demo.json"
+}
+]
+}

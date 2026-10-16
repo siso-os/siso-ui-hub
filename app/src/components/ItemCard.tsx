@@ -1,9 +1,13 @@
 // uihub: siso:item-card
 // 21st's card: a rounded, bordered preview; under it the title and "by author", a muted uses count at the right.
 // His picks get a neon dot and the signal word; the bookmark toggle shows on hover. Source and status live on the item page.
+import { alikeKey } from "@/lib/alike"
 import { memo, useState, type ReactNode } from "react"
 import { Link } from "react-router-dom"
+import { Check, Plus, X } from "lucide-react"
 import { cn } from "@/lib/utils"
+import { setBookmark } from "@/lib/bookmarks"
+import { useKitSlot, type KitSlot } from "@/lib/kitSlot"
 import { fmtNum, itemHref, usePublic, type Row } from "@/lib/data"
 import { BookmarkToggle, KindIcon } from "./bits"
 import { SoundTile } from "./Sound"
@@ -29,12 +33,47 @@ export function Stars({ n, className }: { n: number; className?: string }) {
   )
 }
 
+/** "Add to kit" on a card under a node page: makes this part the pick for the slot the page is filling; the picked one
+ *  keeps its badge in view, the rest show the button on hover */
+function KitButton({ row, kit }: { row: Row; kit: KitSlot }) {
+  const mine = kit.picked === row.id
+  const tool = "inline-flex h-7 items-center gap-1.5 rounded-lg border px-2 text-[11.5px] font-medium backdrop-blur-md"
+  // Add to kit fills the slot you are on; Use as puts it in another of the kind's slots; Skip hides it from this kind
+  return (
+    <div className={cn("absolute top-2 left-2 z-[3] flex items-center gap-1 transition-[opacity,transform] duration-200", mine ? "opacity-100" : "opacity-0 group-hover:-translate-y-0.5 group-hover:opacity-100 focus-within:opacity-100")}>
+      <button
+        type="button"
+        onClick={() => setBookmark(kit.key, !mine, mine ? {} : { note: row.id })}
+        title={mine ? `In the SISO kit as ${kit.label}: click to take it out` : `Make this the SISO kit's ${kit.label}`}
+        aria-pressed={mine}
+        data-verify-kit-add={row.id}
+        className={cn(tool, mine ? "border-neon/50 bg-neon/20 text-neon-ink" : "bg-background/80 text-foreground/85 hover:text-foreground")}
+      >
+        {mine ? <Check className="size-3.5" /> : <Plus className="size-3.5" />}
+        {mine ? "In the kit" : "Add to kit"}
+      </button>
+      {!mine && kit.others && kit.others.length > 0 && (
+        <select aria-label="Use as another slot" value="" onChange={(e) => e.target.value && setBookmark(e.target.value, true, { note: row.id })} className={cn(tool, "max-w-[7.5rem] bg-background/80 text-foreground/85")} data-verify-kit-as={row.id}>
+          <option value="">Use as…</option>
+          {kit.others.map((o) => <option key={o.key} value={o.key}>{o.label}</option>)}
+        </select>
+      )}
+      {!mine && kit.skip && (
+        <button type="button" onClick={() => setBookmark(`${kit.skip}/${row.id}`, true)} title="Skip: not for the kit, hide it from this kind" aria-label="Skip" className={cn(tool, "bg-background/80 text-muted-foreground hover:text-foreground")} data-verify-kit-skip={row.id}>
+          <X className="size-3.5" />
+        </button>
+      )}
+    </div>
+  )
+}
+
 export const ItemCard = memo(function ItemCard({ row, note, extra, priority = false, wide, tile }: { row: Row; note?: ReactNode; extra?: ReactNode; priority?: boolean; wide?: boolean; tile?: boolean }) {
   const [broken, setBroken] = useState(false)
   const pub = usePublic()
   const wideCard = !tile && (wide ?? isWide(row))
   const drawn = isDrawn(row)
   const sourcePreview = (!row.p || broken) && row.pl
+  const kit = useKitSlot()
   return (
     <div className="group relative flex flex-col gap-2" data-verify-card={row.id}>
       {row.au ? (
@@ -63,6 +102,12 @@ export const ItemCard = memo(function ItemCard({ row, note, extra, priority = fa
         )}
       </Link>
       )}
+      {kit && <KitButton row={row} kit={kit} />}
+      {row._al ? (
+        <Link to={`/compare/${row.c}?k=${encodeURIComponent(alikeKey(row))}`} title="Look-alikes from other libraries, folded under this one: compare them" className="absolute top-2 right-11 z-[3] rounded-lg border bg-background/80 px-2 py-1 font-mono text-[10.5px] text-muted-foreground backdrop-blur-md hover:text-foreground" data-verify-alikes-chip>
+          +{row._al} look-alike{row._al > 1 ? "s" : ""}
+        </Link>
+      ) : null}
       <BookmarkToggle
         row={row}
         className="absolute top-2 right-2 z-[3] size-7 rounded-lg border bg-background/75 opacity-0 backdrop-blur-md transition-[opacity,transform] duration-200 group-hover:-translate-y-0.5 group-hover:opacity-100 focus-visible:opacity-100"

@@ -9,8 +9,10 @@
   uihub stats [--json]                     the counts the site's home board shows (same function)
   uihub bookmark <id> [--note "…"] [--signal love|star|good|maybe|meh] [--off]
                                            bookmark an item for every agent (catalogue/bookmarks.json)
+  uihub kit [board] [--json]               the curated SISO kit: every part Shaan kept on /kit/<board> (default dashboard),
+                                           by row, with the file to copy, its install line and what it needs (`uihub sync` first)
   uihub sync [--url URL]                   pull bookmarks made on the hosted site into catalogue/bookmarks.json
-                                           (UIHUB_URL, UIHUB_PASSWORD from the environment; the password is never printed)
+                                           (read from the site's KV store with the Cloudflare deploy key; never printed)
   uihub export --out DIR [--no-assets] [--public]
                                            write the site's data (and previews, live bundles) into DIR; --public writes the
                                            public build (no notes, bookmarks, HALO or client text, no hosted 21st code) and
@@ -112,16 +114,51 @@ def bookmark(i, note=None, signal=None, off=False, by="cli"):
     json.dump(d, open(p, "w"), ensure_ascii=False, indent=1)
 
 def sync(url=None):
-    import base64, urllib.request
-    url = (url or os.environ.get("UIHUB_URL") or "").rstrip("/"); pw = os.environ.get("UIHUB_PASSWORD")
-    if not url or not pw: sys.exit("set UIHUB_URL and UIHUB_PASSWORD (see NOTES-FOR-AGENT-BASE.md)")
-    req = urllib.request.Request(f"{url}/api/bookmarks", headers={"authorization": "Basic " + base64.b64encode(f"shaan:{pw}".encode()).decode(), "user-agent": "uihub-sync/1"})  # Cloudflare refuses Python-urllib
-    remote = json.load(urllib.request.urlopen(req, timeout=20)).get("items", {})
+    """his keeps and bookmarks from the hosted hub's KV store (the site signs in with Clerk, so read the store with the deploy key)"""
+    import urllib.request
+    env = dict(l.strip().split("=", 1) for l in open(os.path.expanduser("~/SISO_Workspace/.credentials/projects/sisolabs-cloudflare.env")) if "=" in l and not l.startswith("#"))
+    tok, acct = env["CLOUDFLARE_API_TOKEN"].strip('"'), env["CLOUDFLARE_ACCOUNT_ID"].strip('"')
+    req = urllib.request.Request(f"https://api.cloudflare.com/client/v4/accounts/{acct}/storage/kv/namespaces/58d068dda8c0466bbf29ee64d38fba27/values/items", headers={"authorization": f"Bearer {tok}", "user-agent": "uihub-sync/2"})
+    remote = json.load(urllib.request.urlopen(req, timeout=20))
     p = f"{HUB}/catalogue/bookmarks.json"; d = json.load(open(p)); before = len(d["items"])
     for k, v in remote.items():
         mine = d["items"].get(k)
         if not mine or (v.get("at") or "") >= (mine.get("at") or ""): d["items"][k] = v  # the newer mark wins
     json.dump(d, open(p, "w"), ensure_ascii=False, indent=1); print(f"bookmarks: {before} -> {len(d['items'])} ({len(remote)} on the site)")
+
+def kit(board="dashboard", as_json=False):
+    """what Shaan kept on /kit/<board> (bookmarks siso/kit/<board>/<part>, the row in the note): the curated SISO kit"""
+    marks = json.load(open(f"{HUB}/catalogue/bookmarks.json"))["items"]
+    pre = f"siso/kit/{board}/"
+    kept = {k[len(pre):]: v for k, v in marks.items() if k.startswith(pre) and not v.get("off")}
+    parts = {r[0]: r for r in json.load(open(f"{HUB}/app/src/kit/index.json"))["parts"]}
+    arc = {f"arc/{x['name']}": x for x in json.load(open(f"{HUB}/app/src/arc/manifest.json"))}
+    details = {}
+    def detail(lib):
+        if lib not in details:
+            f = f"{HUB}/app/src/kit/{lib}/parts.json"
+            details[lib] = {d["id"]: d for d in json.load(open(f))["parts"]} if os.path.exists(f) else {}
+        return details[lib]
+    rows = []
+    for pid, m in sorted(kept.items(), key=lambda kv: (kv[1].get("note") or "~", kv[0])):
+        row = {"id": pid, "row": m.get("note"), "kept": m.get("at")}
+        if pid in arc:
+            x = arc[pid]; row.update(title=x["title"], lib="arc", file=f"app/src/arc/{x['files'][0]}", demo=f"app/src/arc/{x['demo']}" if x.get("demo") else None,
+                                     install="copy app/src/arc/" + x["files"][0].split("/")[0] + "/ and app/src/arc/foundation.css")
+        elif pid in parts:
+            r = parts[pid]; lib = pid.split("/")[0]; d = detail(lib).get(pid, {})
+            row.update(title=r[1], lib=lib, file=f"app/src/kit/{lib}/{r[4]}", install=d.get("install"), deps=d.get("deps") or [])
+        else:
+            row.update(title=pid, lib="?", file=None)
+        rows.append(row)
+    if as_json: print(json.dumps(rows, indent=1, ensure_ascii=False)); return
+    if not rows: print(f"nothing kept on /kit/{board} yet (run `uihub sync` to bring the site's keeps home)"); return
+    print(f"{len(rows)} kept on /kit/{board}")
+    cur = 0
+    for r in rows:
+        if r["row"] != cur: cur = r["row"]; print(f"\n{cur or 'other'}")
+        print(f"  {r['title'][:38]:38} {r['lib']:16} {r['file'] or ''}")
+        if r.get("install"): print(f"  {'':38} {'':16} {r['install']}")
 
 def find(words):
     q = [w.lower() for w in words]; its = items(); hits = []
@@ -213,7 +250,7 @@ PAGE_RULES = [("box_in_box", "a framed box inside another", "rule 7, FIT-RULES: 
 def check_url(url, js=None, width=1440, surface="dashboard", out=None, wait=None):
     """Open url in a headless tab (camofox, through bin/shoot's shared slots), run bin/pagecheck.js, take one shot."""
     import importlib.machinery, time, urllib.parse
-    S = importlib.machinery.SourceFileLoader("shoot", f"{HUB}/bin/shoot").load_module()
+    _ld = importlib.machinery.SourceFileLoader("shoot", f"{HUB}/bin/shoot"); S = importlib.util.module_from_spec(importlib.util.spec_from_loader("shoot", _ld)); _ld.exec_module(S)  # load_module is gone in Python 3.12
     code = open(f"{HUB}/bin/pagecheck.js").read()
     slug = re.sub(r"[^\w]+", "-", re.sub(r"^https?://", "", url)).strip("-")[:60]
     out = out or f"{HUB}/inventory/shots/check-{slug}-{width}.jpg"; os.makedirs(os.path.dirname(out), exist_ok=True)
@@ -291,6 +328,7 @@ elif cmd == "privacy-check" and a:
 elif cmd == "bookmark" and a:
     note, sig = opt("--note"), opt("--signal"); bookmark(a[0], note, sig, "--off" in a, os.environ.get("UIHUB_BY", "cli"))
 elif cmd == "sync": sync(opt("--url"))
+elif cmd == "kit": kit(next((x for x in a if not x.startswith("-")), "dashboard"), "--json" in a)
 elif cmd == "check" and a and re.match(r"https?://", a[0]):
     js, width, surface, out, wait = opt("--js"), opt("--width"), opt("--surface"), opt("--out"), opt("--wait"); check_url(a[0], js, int(width or 1440), surface or "dashboard", out, float(wait) if wait else None)
 elif cmd == "check" and a: ref, base, repo, prefix = opt("--ref"), opt("--base"), opt("--repo"), opt("--prefix"); check(a[0], ref, base, repo, prefix)

@@ -1,0 +1,699 @@
+"use client";
+
+import * as React from "react";
+import { cn } from "@/arc-shims/kit-utils";
+import {
+  elevatedSurface,
+  type SurfaceLevel,
+} from "../lib/elevated";
+import { Label } from "../label/label";
+import {
+  ScrollArea,
+  type ScrollAreaProps,
+} from "../scroll-area/scroll-area";
+import { Combobox as BaseCombobox } from "@base-ui/react/combobox";
+
+import { HugeiconsIcon } from "@hugeicons/react";
+import {
+  Cancel01Icon,
+  CheckIcon,
+  ChevronDownIcon,
+} from "@hugeicons/core-free-icons";
+const useComboboxFilter = BaseCombobox.useFilter;
+const useComboboxFilteredItems = BaseCombobox.useFilteredItems;
+const createComboboxItems = BaseCombobox.createItems;
+
+// Shared styling for the start/end addon containers. `pointer-events-none` lets
+// clicks on decorative content (icons, spinners) fall through to the InputGroup,
+// whose Base UI mousedown handler focuses the input; interactive children opt
+// back in so buttons/links inside an addon still receive their own clicks.
+const comboboxAddonClassName = cn(
+  "text-muted-foreground pointer-events-none flex shrink-0 items-center",
+  "[&_svg:not([class*='size-'])]:size-4",
+  "[&_:is(button,a,input,select,textarea,label,[role=button])]:pointer-events-auto",
+);
+
+const ComboboxContext = React.createContext<{
+  id: string;
+  /** The mounted ComboboxChips element, if any, used to anchor the popup. */
+  chipsElement: HTMLDivElement | null;
+  setChipsElement: (element: HTMLDivElement | null) => void;
+} | null>(null);
+
+// `Item` lets `items` accept a `createComboboxItems()` collection, whose
+// rendered item type differs from its selection value.
+function Combobox<
+  Value,
+  Multiple extends boolean | undefined = false,
+  Item = Value,
+>(props: BaseCombobox.Root.Props<Value, Multiple, Item>): React.JSX.Element {
+  const id = React.useId();
+  const [chipsElement, setChipsElement] = React.useState<HTMLDivElement | null>(
+    null,
+  );
+
+  const contextValue = React.useMemo(
+    () => ({ id, chipsElement, setChipsElement }),
+    [id, chipsElement],
+  );
+
+  return (
+    <ComboboxContext.Provider value={contextValue}>
+      <BaseCombobox.Root data-slot="combobox" {...props} />
+    </ComboboxContext.Provider>
+  );
+}
+
+function ComboboxInput({
+  id: idProp,
+  className,
+  inputClassName,
+  showTrigger = true,
+  showClear = true,
+  variant = "default",
+  start,
+  end,
+  ...props
+}: BaseCombobox.Input.Props & {
+  showTrigger?: boolean;
+  showClear?: boolean;
+  variant?: "default" | "elevated";
+  /** Content pinned to the start (leading edge) of the field, e.g. a search icon. */
+  start?: React.ReactNode;
+  /** Content pinned to the end of the field, before Clear and Trigger, e.g. a loading spinner. */
+  end?: React.ReactNode;
+  /** Class applied to the inner `<input>`. `className` styles the field wrapper. */
+  inputClassName?: string;
+}) {
+  const context = React.use(ComboboxContext);
+  const id = idProp ?? context?.id;
+
+  return (
+    // The wrapper carries the field chrome (border, bg, height, focus ring) so
+    // start/end/clear/trigger lay out as flex siblings instead of overlapping
+    // the input via absolute positioning + hand-tuned padding.
+    <BaseCombobox.InputGroup
+      data-slot="combobox-input-group"
+      className={cn(
+        "flex h-10 w-full min-w-0 cursor-text items-center gap-2 rounded-lg border bg-clip-padding px-3 sm:h-9",
+        variant === "default" ? "bg-input" : "bg-input-elevated",
+        // Focus ring follows the input via focus-within (same pattern as ComboboxChips).
+        "focus-within:outline-ring/50 outline-0 outline-offset-0 outline-transparent transition-[outline-width,outline-offset,outline-color] duration-100 ease-out outline-solid focus-within:outline-2 focus-within:outline-offset-2",
+        // Disabled state (input or field-level) dims and locks the whole field.
+        "has-[input:disabled]:pointer-events-none has-[input:disabled]:cursor-not-allowed has-[input:disabled]:opacity-60",
+        className,
+      )}
+    >
+      {start != null && (
+        <div
+          data-slot="combobox-input-start"
+          className={comboboxAddonClassName}
+        >
+          {start}
+        </div>
+      )}
+      <BaseCombobox.Input
+        id={id}
+        data-slot="combobox-input"
+        className={cn(
+          "placeholder:text-muted-foreground selection:bg-primary selection:text-primary-foreground h-full min-w-0 flex-1 border-none bg-transparent p-0 text-base font-normal shadow-none outline-none disabled:cursor-not-allowed md:text-sm",
+          "file:text-foreground file:inline-flex file:h-7 file:rounded-md file:border-0 file:bg-transparent file:text-sm file:font-medium",
+          inputClassName,
+        )}
+        {...props}
+      />
+      {end != null && (
+        <div data-slot="combobox-input-end" className={comboboxAddonClassName}>
+          {end}
+        </div>
+      )}
+      {(showClear || showTrigger) && (
+        <div className="flex shrink-0 items-center gap-2">
+          {showClear && <ComboboxClear />}
+          {showTrigger && <ComboboxTrigger />}
+        </div>
+      )}
+    </BaseCombobox.InputGroup>
+  );
+}
+
+function ComboboxChipInput({
+  id: idProp,
+  className,
+  ...props
+}: BaseCombobox.Input.Props) {
+  const context = React.use(ComboboxContext);
+  const id = idProp ?? context?.id;
+
+  return (
+    <BaseCombobox.Input
+      id={id}
+      data-slot="combobox-input"
+      className={cn(
+        "placeholder:text-muted-foreground selection:bg-primary selection:text-primary-foreground h-7 min-w-12 flex-1 rounded-none border-none bg-transparent p-0 pl-1.5 text-base font-normal shadow-none outline-none focus-visible:ring-0 focus-visible:ring-offset-0 disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-60 sm:h-6 md:text-sm",
+
+        className,
+      )}
+      {...props}
+    />
+  );
+}
+
+function ComboboxTrigger({
+  className,
+  children,
+  ...props
+}: BaseCombobox.Trigger.Props) {
+  return (
+    <BaseCombobox.Trigger
+      data-slot="combobox-trigger"
+      aria-label="Open popup"
+      className={cn(
+        "inline-flex size-4 cursor-pointer items-center justify-center rounded-md border-none bg-transparent p-0 text-sm font-medium transition-colors disabled:pointer-events-none disabled:opacity-60",
+        "focus-visible:ring-ring/70 outline-none focus-visible:ring-2",
+        className,
+      )}
+      {...props}
+    >
+      {children ?? (
+        <HugeiconsIcon
+          icon={ChevronDownIcon}
+          className="h-4 w-4"
+          strokeWidth={2}
+        />
+      )}
+    </BaseCombobox.Trigger>
+  );
+}
+
+function ComboboxIcon({
+  className,
+  ...props
+}: React.ComponentProps<typeof BaseCombobox.Icon>) {
+  return (
+    <BaseCombobox.Icon
+      data-slot="combobox-icon"
+      className={cn("ml-2 h-4 w-4 shrink-0 opacity-50", className)}
+      {...props}
+    />
+  );
+}
+
+function ComboboxClear({ className, ...props }: BaseCombobox.Clear.Props) {
+  return (
+    <BaseCombobox.Clear
+      data-slot="combobox-clear"
+      aria-label="Clear selection"
+      className={cn(
+        "inline-flex h-4 w-4 cursor-pointer items-center justify-center rounded-sm opacity-70 transition-[opacity,scale,transform,translate] hover:opacity-100 disabled:pointer-events-none",
+        "focus-visible:ring-ring/70 duration-100 outline-none focus-visible:ring-2",
+        "data-ending-style:translate-x-1 data-ending-style:opacity-0 data-starting-style:translate-x-1 data-starting-style:opacity-0",
+        className,
+      )}
+      {...props}
+    >
+      <HugeiconsIcon icon={Cancel01Icon} className="h-4 w-4" strokeWidth={2} />
+    </BaseCombobox.Clear>
+  );
+}
+
+function ComboboxValue({ ...props }: BaseCombobox.Value.Props) {
+  return <BaseCombobox.Value data-slot="combobox-value" {...props} />;
+}
+
+function ComboboxPortal({ ...props }: BaseCombobox.Portal.Props) {
+  return <BaseCombobox.Portal data-slot="combobox-portal" {...props} />;
+}
+
+function ComboboxBackdrop({
+  className,
+  ...props
+}: BaseCombobox.Backdrop.Props) {
+  return (
+    <BaseCombobox.Backdrop
+      data-slot="combobox-backdrop"
+      className={cn(
+        "fixed inset-0 z-30 bg-black/50 data-ending-style:opacity-0 data-starting-style:opacity-0",
+        className,
+      )}
+      {...props}
+    />
+  );
+}
+
+function ComboboxPositioner({
+  className,
+  ...props
+}: BaseCombobox.Positioner.Props) {
+  return (
+    <BaseCombobox.Positioner
+      data-slot="combobox-positioner"
+      sideOffset={6}
+      // z-50 (matching Select's positioner) keeps the portaled popup above
+      // overlay surfaces it's opened from — e.g. the mobile Drawer, whose
+      // viewport is z-50. Without it the popup renders behind the drawer.
+      className={cn("z-50", className)}
+      {...props}
+    />
+  );
+}
+
+function ComboboxPopupPrimitive({
+  className,
+  level = 3,
+  shadowLevel = 3,
+  ...props
+}: BaseCombobox.Popup.Props & {
+  /** Surface elevation level for the popup bg (1-8). Bump when nesting inside a Dialog. Defaults to 3. */
+  level?: SurfaceLevel;
+  /** Shadow weight (1-8). Pinned to 3 by default so the combobox reads the same regardless of nesting depth. */
+  shadowLevel?: SurfaceLevel;
+}) {
+  return (
+    <BaseCombobox.Popup
+      data-slot="combobox-popup"
+      data-level={level}
+      className={cn(
+        "text-popover-foreground ease-out-expo flex max-h-(--available-height) w-(--anchor-width) max-w-(--available-width) origin-(--transform-origin) flex-col overflow-clip overscroll-contain rounded-xl transition-[transform,scale,opacity] duration-100 data-ending-style:scale-95 data-ending-style:opacity-0 data-starting-style:scale-95 data-starting-style:opacity-0",
+        // Use elevatedSurface (rim on ::after) because combobox group labels are
+        // often sticky and would otherwise hide the rim where they sit.
+        elevatedSurface(level, shadowLevel),
+        className,
+      )}
+      {...props}
+    />
+  );
+}
+
+function ComboboxArrow({ className, ...props }: BaseCombobox.Arrow.Props) {
+  return (
+    <BaseCombobox.Arrow
+      data-slot="combobox-arrow"
+      className={cn(
+        "data-[side=bottom]:top-[-8px] data-[side=left]:right-[-13px] data-[side=left]:rotate-90 data-[side=right]:left-[-13px] data-[side=right]:-rotate-90 data-[side=top]:bottom-[-8px] data-[side=top]:rotate-180",
+        className,
+      )}
+      {...props}
+    >
+      <svg width="20" height="10" viewBox="0 0 20 10" fill="none">
+        <path
+          d="M9.66437 2.60207L4.80758 6.97318C4.07308 7.63423 3.11989 8 2.13172 8H0V9H20V8H18.5349C17.5468 8 16.5936 7.63423 15.8591 6.97318L11.0023 2.60207C10.622 2.2598 10.0447 2.25979 9.66437 2.60207Z"
+          className="fill-(--popup-surface,var(--popover))"
+        />
+        <path
+          d="M10.3333 3.34539L5.47654 7.71648C4.55842 8.54279 3.36693 9 2.13172 9H0V8H2.13172C3.11989 8 4.07308 7.63423 4.80758 6.97318L9.66437 2.60207C10.0447 2.25979 10.622 2.2598 11.0023 2.60207L15.8591 6.97318C16.5936 7.63423 17.5468 8 18.5349 8H20V9H18.5349C17.2998 9 16.1083 8.54278 15.1901 7.71648L10.3333 3.34539Z"
+          className="fill-border/70"
+        />
+      </svg>
+    </BaseCombobox.Arrow>
+  );
+}
+
+function ComboboxStatus({ className, ...props }: BaseCombobox.Status.Props) {
+  return (
+    <BaseCombobox.Status
+      data-slot="combobox-status"
+      className={cn(
+        "text-muted-foreground px-3 py-2.5 text-sm leading-5 empty:m-0 empty:p-0",
+        className,
+      )}
+      {...props}
+    />
+  );
+}
+
+function ComboboxEmpty({ className, ...props }: BaseCombobox.Empty.Props) {
+  return (
+    <BaseCombobox.Empty
+      data-slot="combobox-empty"
+      className={cn(
+        "text-muted-foreground px-3 py-2.5 text-sm empty:m-0 empty:p-0",
+        className,
+      )}
+      {...props}
+    />
+  );
+}
+
+function ComboboxList({
+  className,
+  nativeScroll = false,
+  fadeEdges = true,
+  scrollbarGutter = false,
+  persistScrollbar,
+  hideScrollbar,
+  ...props
+}: BaseCombobox.List.Props &
+  Pick<
+    ScrollAreaProps,
+    | "nativeScroll"
+    | "fadeEdges"
+    | "scrollbarGutter"
+    | "persistScrollbar"
+    | "hideScrollbar"
+  >) {
+  return (
+    <ScrollArea
+      nativeScroll={nativeScroll}
+      fadeEdges={fadeEdges}
+      scrollbarGutter={scrollbarGutter}
+      persistScrollbar={persistScrollbar}
+      hideScrollbar={hideScrollbar}
+      className={cn("max-h-80", className)}
+    >
+      <BaseCombobox.List
+        data-slot="combobox-list"
+        className="rounded-xl"
+        {...props}
+      />
+    </ScrollArea>
+  );
+}
+
+function ComboboxVirtualizedList({
+  className,
+  children,
+  scrollRef,
+  totalSize,
+  emptyMessage = "No results found.",
+  fadeEdges = "y",
+  nativeScroll = false,
+  ...props
+}: Omit<React.ComponentProps<"div">, "ref"> &
+  Pick<ScrollAreaProps, "fadeEdges" | "nativeScroll"> & {
+    scrollRef: (element: HTMLDivElement | null) => void;
+    totalSize: number;
+    emptyMessage?: React.ReactNode;
+  }) {
+  return (
+    <>
+      <BaseCombobox.Empty
+        data-slot="combobox-empty"
+        className="text-muted-foreground px-3 py-2.5 text-sm empty:m-0 empty:p-0"
+      >
+        {emptyMessage}
+      </BaseCombobox.Empty>
+      <BaseCombobox.List
+        data-slot="combobox-list"
+        className="w-full flex-1 overflow-hidden rounded-xl p-0 outline-hidden empty:m-0 empty:p-0"
+      >
+        <ScrollArea
+          viewportRef={scrollRef}
+          viewportClassName={cn("scroll-py-2", className)}
+          fadeEdges={fadeEdges}
+          nativeScroll={nativeScroll}
+          className="h-auto max-h-80 w-full"
+          {...props}
+        >
+          <div
+            role="presentation"
+            className="relative w-full"
+            style={{ height: totalSize }}
+          >
+            {children}
+          </div>
+        </ScrollArea>
+      </BaseCombobox.List>
+    </>
+  );
+}
+
+function ComboboxCollection({ ...props }: BaseCombobox.Collection.Props) {
+  return <BaseCombobox.Collection data-slot="combobox-collection" {...props} />;
+}
+
+function ComboboxRow({ className, ...props }: BaseCombobox.Row.Props) {
+  return (
+    <BaseCombobox.Row
+      data-slot="combobox-row"
+      className={cn("flex", className)}
+      {...props}
+    />
+  );
+}
+
+function ComboboxItem({
+  className,
+  children,
+  ref,
+  ...props
+}: BaseCombobox.Item.Props & {
+  ref?: React.Ref<HTMLDivElement>;
+}) {
+  return (
+    <BaseCombobox.Item
+      ref={ref}
+      data-slot="combobox-item"
+      className={cn(
+        "data-highlighted:text-accent-foreground data-highlighted:bg-surface-hover relative grid cursor-default grid-cols-[1fr_1rem] items-center gap-2 rounded-md px-2.5 py-2 pr-2 text-sm outline-none select-none data-disabled:pointer-events-none data-disabled:opacity-60",
+        // Spacing from list edges
+        "mx-1 first:mt-1 last:mb-1",
+        className,
+      )}
+      {...props}
+    >
+      <div className="break-all">{children}</div>
+      <BaseCombobox.ItemIndicator
+        render={
+          <HugeiconsIcon icon={CheckIcon} className="size-4" strokeWidth={2} />
+        }
+      />
+    </BaseCombobox.Item>
+  );
+}
+
+function ComboboxItemIndicator({
+  className,
+  ...props
+}: BaseCombobox.ItemIndicator.Props) {
+  return (
+    <BaseCombobox.ItemIndicator
+      data-slot="combobox-item-indicator"
+      className={cn("", className)}
+      {...props}
+    />
+  );
+}
+
+function ComboboxGroup({ className, ...props }: BaseCombobox.Group.Props) {
+  return (
+    <BaseCombobox.Group
+      data-slot="combobox-group"
+      className={cn("text-foreground block", className)}
+      {...props}
+    />
+  );
+}
+
+function ComboboxGroupLabel({
+  className,
+  ...props
+}: BaseCombobox.GroupLabel.Props) {
+  return (
+    <BaseCombobox.GroupLabel
+      data-slot="combobox-group-label"
+      className={cn(
+        "text-muted-foreground bg-(--popup-surface,var(--popover)) px-3.5 py-1.5 pt-2.5 text-xs font-semibold",
+        className,
+      )}
+      {...props}
+    />
+  );
+}
+
+function ComboboxSeparator({
+  className,
+  ...props
+}: BaseCombobox.Separator.Props) {
+  return (
+    <BaseCombobox.Separator
+      data-slot="combobox-separator"
+      className={cn("bg-border mx-1 my-1 h-px min-h-px", className)}
+      {...props}
+    />
+  );
+}
+
+function ComboboxChips({
+  className,
+  variant = "default",
+  ...props
+}: BaseCombobox.Chips.Props & { variant?: "default" | "elevated" }) {
+  const context = React.use(ComboboxContext);
+
+  return (
+    <BaseCombobox.Chips
+      ref={context?.setChipsElement}
+      data-slot="combobox-chips"
+      className={cn(
+        "flex min-h-9 w-full flex-wrap items-center gap-1.5 rounded-lg border bg-clip-padding px-1.5 py-1.5",
+        variant === "default" ? "bg-input" : "bg-input-elevated",
+        "focus-within:outline-ring/50 outline-0 outline-offset-0 outline-transparent transition-[outline-width,outline-offset,outline-color] duration-100 ease-out outline-solid focus-within:outline-2 focus-within:outline-offset-2",
+
+        className,
+      )}
+      {...props}
+    />
+  );
+}
+
+function ComboboxChip({ className, ...props }: BaseCombobox.Chip.Props) {
+  return (
+    <BaseCombobox.Chip
+      data-slot="combobox-chip"
+      className={cn(
+        "bg-surface-selected text-accent-foreground flex items-center gap-1 rounded-sm px-2 py-1 text-sm font-medium break-all sm:text-xs",
+        // Ring (not outline) avoids clipping neighbors in the packed chip row;
+        // outline-none suppresses the browser default (currentColor → white in dark mode).
+        "focus-visible:ring-ring/70 outline-none focus-visible:ring-2",
+        className,
+      )}
+      {...props}
+    />
+  );
+}
+
+function ComboboxChipRemove({
+  className,
+  ...props
+}: BaseCombobox.ChipRemove.Props) {
+  return (
+    <BaseCombobox.ChipRemove
+      data-slot="combobox-chip-remove"
+      className={cn(
+        "ml-1 inline-flex h-4 w-4 items-center justify-center rounded-sm opacity-70 transition-opacity hover:opacity-100 disabled:pointer-events-none",
+        "focus-visible:ring-ring/70 cursor-pointer outline-none focus-visible:ring-2",
+        className,
+      )}
+      {...props}
+    />
+  );
+}
+
+function ComboboxPopup({
+  className,
+  children,
+  side,
+  align,
+  sideOffset = 6,
+  alignOffset,
+  collisionBoundary,
+  collisionPadding,
+  sticky,
+  positionMethod,
+  backdrop = false,
+  level,
+  shadowLevel,
+  ...props
+}: BaseCombobox.Popup.Props & {
+  /** Which side of the anchor to align against. Defaults to Base UI's "bottom". */
+  side?: BaseCombobox.Positioner.Props["side"];
+  /** Alignment of the popup relative to its anchor. Defaults to Base UI's "center". */
+  align?: BaseCombobox.Positioner.Props["align"];
+  sideOffset?: BaseCombobox.Positioner.Props["sideOffset"];
+  alignOffset?: BaseCombobox.Positioner.Props["alignOffset"];
+  collisionBoundary?: BaseCombobox.Positioner.Props["collisionBoundary"];
+  collisionPadding?: BaseCombobox.Positioner.Props["collisionPadding"];
+  sticky?: BaseCombobox.Positioner.Props["sticky"];
+  positionMethod?: BaseCombobox.Positioner.Props["positionMethod"];
+  backdrop?: boolean;
+  /** Surface elevation level for the popup bg (1-8). Defaults to 3. */
+  level?: SurfaceLevel;
+  /** Shadow weight (1-8). Defaults to 3. */
+  shadowLevel?: SurfaceLevel;
+}) {
+  const context = React.use(ComboboxContext);
+
+  return (
+    <ComboboxPortal>
+      {backdrop && <ComboboxBackdrop />}
+      {/*
+       * Only anchor to the chips wrapper when chips are actually mounted.
+       * Otherwise pass no anchor so Base UI uses its default: the InputGroup
+       * (full field width) for a standard input, or the trigger for the
+       * input-inside-popup pattern. Forcing an anchor here would pin the popup
+       * to the narrower inner <input>.
+       */}
+      <ComboboxPositioner
+        anchor={context?.chipsElement ?? undefined}
+        side={side}
+        align={align}
+        sideOffset={sideOffset}
+        alignOffset={alignOffset}
+        collisionBoundary={collisionBoundary}
+        collisionPadding={collisionPadding}
+        sticky={sticky}
+        positionMethod={positionMethod}
+      >
+        <ComboboxPopupPrimitive
+          className={className}
+          level={level}
+          shadowLevel={shadowLevel}
+          {...props}
+        >
+          {children}
+        </ComboboxPopupPrimitive>
+      </ComboboxPositioner>
+    </ComboboxPortal>
+  );
+}
+
+function ComboboxLabel({
+  className,
+  ...props
+}: React.ComponentProps<typeof Label>) {
+  const context = React.use(ComboboxContext);
+
+  return <Label htmlFor={context?.id} className={className} {...props} />;
+}
+
+function ComboboxTriggerLabel({
+  className,
+  ...props
+}: BaseCombobox.Label.Props) {
+  return (
+    <BaseCombobox.Label
+      data-slot="combobox-trigger-label"
+      className={cn(
+        "text-foreground text-sm leading-5 font-medium select-none group-data-[disabled=true]:pointer-events-none group-data-[disabled=true]:opacity-60 peer-disabled:cursor-not-allowed peer-disabled:opacity-60",
+        className,
+      )}
+      {...props}
+    />
+  );
+}
+
+export {
+  Combobox,
+  ComboboxInput,
+  ComboboxChipInput,
+  ComboboxTrigger,
+  ComboboxIcon,
+  ComboboxClear,
+  ComboboxValue,
+  ComboboxPortal,
+  ComboboxBackdrop,
+  ComboboxPositioner,
+  ComboboxPopupPrimitive,
+  ComboboxPopup,
+  ComboboxArrow,
+  ComboboxStatus,
+  ComboboxEmpty,
+  ComboboxList,
+  ComboboxCollection,
+  ComboboxRow,
+  ComboboxItem,
+  ComboboxItemIndicator,
+  ComboboxGroup,
+  ComboboxGroupLabel,
+  ComboboxSeparator,
+  ComboboxChips,
+  ComboboxChip,
+  ComboboxChipRemove,
+  ComboboxVirtualizedList,
+  ComboboxLabel,
+  ComboboxTriggerLabel,
+  useComboboxFilter,
+  useComboboxFilteredItems,
+  createComboboxItems,
+};

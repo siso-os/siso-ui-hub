@@ -1,0 +1,81 @@
+/* FocusPeaking — the canvas draws the picture itself, peaking included. Where
+   WebGL2 is unavailable the plain image stands in, without the peaking. */
+
+.focus-peaking {
+  position: relative;
+  overflow: hidden;
+}
+
+/* While peaking follows the user, a finger rested on the picture peaks it. A
+   long press is how it is held there, so it must not also select the page
+   around it or raise a callout. Every drag is still the page's. */
+.focus-peaking--live {
+  -webkit-user-select: none;
+  user-select: none;
+  -webkit-touch-callout: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Except on a picture that is a link: its long press is the link's, and the
+   callout (open in a new tab, copy the address) stays. */
+a[href] .focus-peaking--live {
+  -webkit-touch-callout: default;
+}
+
+/* A crosshair promises that where the pointer is matters, and it only does
+   with a reach. Without one the cursor is left to whatever the picture sits
+   in, so a picture inside a link still shows the link's hand. With one there
+   is a disc for a finger to carry, and only then is a sideways drag taken
+   from the page; dragged up or down first it still scrolls, and two fingers
+   still zoom. */
+.focus-peaking--aim {
+  cursor: crosshair;
+  touch-action: pan-y pinch-zoom;
+}
+
+.focus-peaking__canvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+/* Keyboard focus on the picture itself — it takes some only when given a
+   tabIndex — is drawn inside it, where a clipping ancestor cannot cut it off:
+   a rule in the peaking colour on a dark keyline, so a light picture does not
+   swallow a light colour. The colour goes through `color`, so one the browser
+   cannot read leaves the rule in the text colour and not gone altogether. The
+   transparent outline is what forced colours draw instead, since they drop
+   box-shadow. */
+.focus-peaking:focus-visible {
+  outline: 2px solid transparent;
+  outline-offset: -2px;
+}
+
+.focus-peaking:focus-visible::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  pointer-events: none;
+  color: var(--peaking-color, #ff3b30);
+  box-shadow:
+    inset 0 0 0 2px currentColor,
+    inset 0 0 0 3px rgb(0 0 0 / 0.55);
+}
+
+/* No peaking to hold, so every gesture is the page's again. The image keeps
+   the fit and alignment the canvas would have given it. */
+.focus-peaking.is-fallback {
+  background: var(--peaking-src) var(--peaking-position, 50% 50%) / var(--peaking-fit, cover) no-repeat;
+  cursor: inherit;
+  touch-action: auto;
+  -webkit-user-select: auto;
+  user-select: auto;
+  -webkit-touch-callout: default;
+}
+
+.focus-peaking.is-fallback .focus-peaking__canvas {
+  display: none;
+}

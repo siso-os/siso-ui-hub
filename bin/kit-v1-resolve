@@ -1,0 +1,56 @@
+#!/usr/bin/env python3
+"""Point every pick in catalogue/kit-v1.json at something the deck can render: an Arc demo, a kit part file,
+a set of kit parts (icon sets), or a local demo in app/src/kitv1/demos.tsx. Rerun after editing picks."""
+import json, os, re
+HUB = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+P = f"{HUB}/catalogue/kit-v1.json"
+idx = json.load(open(f"{HUB}/app/src/kit/index.json"))["parts"]
+man = {p["name"]: p for p in json.load(open(f"{HUB}/app/src/arc/manifest.json"))}
+local = set(re.findall(r'^  "?([\w:*./-]+)"?: \(\)', open(f"{HUB}/app/src/kitv1/demos.tsx").read(), re.M))
+libs = {r[0].split("/")[0] for r in idx}
+
+def resolve(ref):
+    if not ref: return None
+    if ref in local: return {"local": ref}
+    lib, _, name = ref.partition(":")
+    name = name.split("#")[0]
+    if lib == "arc" and name in man and man[name].get("demo"):
+        return {"arc": man[name]["demo"], "title": man[name]["title"]}
+    if not name and lib in libs:  # a whole set: show its first dozen
+        return {"set": [[r[0], r[4]] for r in idx if r[0].split("/")[0] == lib and r[5]][:12]}
+    for r in idx:
+        if r[0] == f"{lib}/{name}" or (r[0].startswith(lib + "/") and r[0].endswith("/" + name)):
+            return {"kit": r[0], "file": r[4], "title": r[1]}
+    return {"missing": "not in the kit yet" if lib in ("import", "watermelon", "diceui") else "no demo found"}
+
+k = json.load(open(P))
+for a in k["atoms"] + k.get("assets", []):
+    a["show"] = {f: resolve(a.get(f)) for f in ("default", "backup")}
+    for v in a.get("variations", []): v["show"] = resolve(v["ref"])
+json.dump(k, open(P, "w"), indent=1)
+
+# the atom pages: per kind, every Arc part that does this job with its docs (when to use, variant props, related parts)
+import ast
+ARC = ast.literal_eval(re.search(r"^ARC = (\{.*?\})$", open(f"{HUB}/bin/kit-v1-rank").read(), re.M | re.S).group(1))
+docs = json.load(open(f"{HUB}/catalogue/kit-v1-arc.json"))
+def arc_part(n):
+    m, d = man.get(n), docs.get(n)
+    if not m: return None
+    comp = (d or {}).get("components") or [{}]
+    return {"name": n, "title": m["title"], "about": m.get("description"), "demo": m.get("demo"), "install": m.get("install"),
+            "file": next((f for f in m["files"] if f.endswith(".tsx")), None), "export": comp[0].get("export"),
+            "use": (d or {}).get("use") or m.get("use") or [], "avoid": (d or {}).get("avoid") or m.get("avoid") or [],
+            "keyboard": (d or {}).get("keyboard", []), "a11y": (d or {}).get("a11y", []),
+            "variants": [{"prop": p["prop"], "values": p["values"], "default": p["default"].strip('"'), "desc": p["desc"]}
+                         for p in comp[0].get("props", []) if len(p["values"]) > 1],
+            "booleans": [p["prop"] for p in comp[0].get("props", []) if p["type"] == "boolean"],
+            "siblings": [s | {"demo": (man.get(s["name"]) or {}).get("demo")} for s in (d or {}).get("siblings", [])]}
+pages = {}
+for a in k["atoms"]:
+    refs = [a.get("default"), a.get("backup")] + [v["ref"] for v in a.get("variations", [])]
+    names = [r.split(":")[1].split("#")[0] for r in refs if r and r.startswith("arc:")] + [n for n, kk in ARC.items() if kk == a["kind"]]
+    pages[a["kind"]] = [x for x in (arc_part(n) for n in dict.fromkeys(names)) if x]
+json.dump(pages, open(f"{HUB}/catalogue/kit-v1-atoms-arc.json", "w"), indent=1)
+print(sum(len(v) for v in pages.values()), "Arc parts across", sum(1 for v in pages.values() if v), "atom kinds")
+bad = [(a["kind"], f, a.get(f)) for a in k["atoms"] for f, s in a["show"].items() if s and "missing" in s] + [(a["kind"], v["ref"]) for a in k["atoms"] for v in a.get("variations", []) if "missing" in v["show"]]
+print(len(k["atoms"]), "kinds;", len(bad), "unrenderable:", bad)

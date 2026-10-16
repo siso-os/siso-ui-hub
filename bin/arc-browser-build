@@ -1,0 +1,148 @@
+#!/usr/bin/env python3
+"""The Arc browser's parts: every item in Arc's registry (the code bank's r/uiarc) written as real source under
+app/src/arc/, plus the usage example from Arc's own docs page (uiarc.dev/components/<name>/markdown) as its demo, so the
+hub renders each part from its real code the way Arc's component browser does. Docs pages are cached in
+~/SISO_Workspace/_data/ui-hub/arc-md (network only for a page not cached yet). Writes app/src/arc/manifest.json.
+
+  bin/arc-browser-build"""
+import json, os, re, glob, posixpath, urllib.request, concurrent.futures
+
+HUB = os.path.dirname(os.path.dirname(os.path.realpath(__file__)))
+BANK = os.path.expanduser("~/SISO_Workspace/Great_Library_of_SISO/banks/siso-ui-code/r/uiarc")
+CACHE = os.path.expanduser("~/SISO_Workspace/_data/ui-hub/arc-md")
+OUT = f"{HUB}/app/src/arc"
+os.makedirs(CACHE, exist_ok=True)
+
+items = []
+for f in sorted(glob.glob(f"{BANK}/*.json")):
+    if os.path.basename(f).startswith("_"):
+        continue
+    items.append(json.load(open(f)))
+
+
+def md(name):
+    p = f"{CACHE}/{name}.md"
+    if not os.path.exists(p):
+        try:
+            req = urllib.request.Request(f"https://uiarc.dev/components/{name}/markdown", headers={"user-agent": "siso-ui-hub/arc-browser"})
+            body = urllib.request.urlopen(req, timeout=30).read().decode()
+        except Exception:
+            try:
+                req = urllib.request.Request(f"https://uiarc.dev/blocks/{name}/markdown", headers={"user-agent": "siso-ui-hub/arc-browser"})
+                body = urllib.request.urlopen(req, timeout=30).read().decode()
+            except Exception:
+                body = ""
+        open(p, "w").write(body)
+    return open(p).read()
+
+
+with concurrent.futures.ThreadPoolExecutor(8) as ex:
+    docs = dict(zip([i["name"] for i in items], ex.map(md, [i["name"] for i in items])))
+
+
+def rel(src_file, target):
+    """an import of `target` (a path under the registry root, no extension) from `src_file`, as a relative path"""
+    r = posixpath.relpath(target, posixpath.dirname(src_file))
+    return r if r.startswith(".") else "./" + r
+
+
+def fix(path, code):
+    """rewrite @/ imports (Arc's alias for registry/ and lib/) to relative paths inside app/src/arc"""
+    def sub(m):
+        spec = m.group(2)
+        t = spec[2:]
+        t = re.sub(r"^registry/components/", "", t)
+        t = re.sub(r"^registry/", "", t)
+        t = re.sub(r"^components/arc/", "", t)
+        return m.group(1) + rel(path, t) + m.group(3)
+    return re.sub(r"""((?:from|import)\s*\(?\s*["'])(@/[^"']+)(["'])""", sub, code)
+
+
+written = 0
+manifest = []
+for it in items:
+    files = []
+    for f in it.get("files", []):
+        # where Arc's installer puts the file (its target under components/arc/), so the parts' relative imports resolve
+        t = f.get("target") or ""
+        if t.startswith("~"):
+            continue  # the agent skill installs into ~/.claude, not the app
+        p = t.split("@components/arc/", 1)[1] if t.startswith("@components/arc/") else re.sub(r"^registry/(components/)?", "", f["path"])
+        dst = f"{OUT}/{p}"
+        os.makedirs(os.path.dirname(dst), exist_ok=True)
+        open(dst, "w").write(fix(p, f["content"]))
+        files.append(p)
+        written += 1
+    body = docs.get(it["name"], "")
+    m = re.search(r"## Usage\s+```tsx\n(.*?)```", body, re.S)
+    demo = None
+    if m:
+        demo = f"demos/{it['name']}.tsx"
+        os.makedirs(f"{OUT}/demos", exist_ok=True)
+        own = os.path.join(os.path.dirname(os.path.abspath(__file__)), "arc-demos", f"{it['name']}.tsx")
+        if os.path.exists(own):  # Arc's example is a bare snippet; bin/arc-demos holds a wired copy
+            open(f"{OUT}/{demo}", "w").write(open(own).read())
+        else:
+            code = fix(demo, m.group(1))
+            # the docs snippets often use React hooks without importing them
+            hooks = sorted(h for h in ("useState", "useEffect", "useRef", "useMemo", "useCallback", "useId", "useTransition") if re.search(rf"\b{h}[<(]", code))
+            have = re.search(r"import\s*\{([^}]*)\}\s*from\s*[\"']react[\"']", code)
+            need = [h for h in hooks if not have or not re.search(rf"\b{h}\b", have.group(1))]
+            if need:
+                code = f"import {{ {', '.join(need)} }} from \"react\";\n" + code
+            open(f"{OUT}/{demo}", "w").write("// From Arc's docs page (Usage), imports pointed at the copied source\n" + code)
+    def section(title):
+        s = re.search(rf"## {title}\s+(.*?)(?=\n## |\Z)", body, re.S)
+        return [l[2:].strip() for l in s.group(1).splitlines() if l.startswith("- ")] if s else []
+    meta = it.get("meta") or {}
+    manifest.append({"name": it["name"], "title": it.get("title") or it["name"], "description": it.get("description", ""),
+                     "kind": meta.get("kind"), "categories": it.get("categories") or [], "tags": meta.get("tags") or [],
+                     "files": files, "demo": demo, "use": section("When to use"), "avoid": section("When not to use"),
+                     "install": f"npx shadcn@latest add https://uiarc.dev/r/{it['name']}.json"})
+json.dump(manifest, open(f"{OUT}/manifest.json", "w"), indent=1)
+# Arc's foundation sets its variables on :root; the hub has its own, so the browser scopes Arc's to .arc-scope
+css = open(f"{OUT}/foundation.css").read()
+css = re.sub(r":root\b", ".arc-scope", css)
+css = re.sub(r"(^|[},]\s*)(html|body)(?=\s*[{,])", r"\1.arc-scope", css, flags=re.M)
+open(f"{OUT}/foundation.scoped.css", "w").write(css)
+
+# Arc's examples point at images only its own site serves (/block-logos/x.svg, /harbour.jpg ...). Each one is fetched
+# from uiarc.dev into app/src/arc/media when the site has it; a photo it does not have gets a stand-in from picsum
+# (a "raw"/"before" photo is the same picture in grey, so image-compare still compares). Paths become Vite asset URLs.
+MEDIA = f"{OUT}/media"
+IMG = re.compile(r"""(src=)?(["'])(/[A-Za-z0-9/_.-]+\.(?:jpg|jpeg|png|webp|svg|avif))\2""")
+def fetch_media(path):
+    dst = f"{MEDIA}{path}"
+    if os.path.exists(dst):
+        return
+    os.makedirs(os.path.dirname(dst), exist_ok=True)
+    stem = os.path.splitext(os.path.basename(path))[0]
+    urls = [f"https://uiarc.dev{path}"]
+    if not path.endswith(".svg"):
+        seed = re.sub(r"-(raw|edit|before|after)$", "", stem)
+        urls.append(f"https://picsum.photos/seed/arc-{seed}/1200/800" + ("?grayscale" if re.search(r"raw|before", stem) else ""))
+    for u in urls:
+        try:
+            r = urllib.request.urlopen(urllib.request.Request(u, headers={"user-agent": "siso-ui-hub/arc-browser"}), timeout=30)
+            body = r.read()
+            if r.status == 200 and not r.headers.get("content-type", "").startswith("text/html"):
+                open(dst, "wb").write(body)
+                return
+        except Exception:
+            pass
+media_n = 0
+for f in glob.glob(f"{OUT}/**/*.ts*", recursive=True):
+    code = open(f).read()
+    if not IMG.search(code):
+        continue
+    def sub(m):
+        global media_n
+        fetch_media(m.group(3))
+        if not os.path.exists(f"{MEDIA}{m.group(3)}"):
+            return m.group(0)
+        media_n += 1
+        url = f'new URL("{posixpath.relpath(MEDIA + m.group(3), os.path.dirname(f))}", import.meta.url).href'
+        return f"src={{{url}}}" if m.group(1) else url
+    open(f, "w").write(IMG.sub(sub, code))
+print(f"media: {media_n} image references now point at app/src/arc/media")
+print(f"arc: {len(manifest)} items, {written} files, {sum(1 for m in manifest if m['demo'])} with a demo from Arc's docs")

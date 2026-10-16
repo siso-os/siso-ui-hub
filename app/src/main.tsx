@@ -1,5 +1,5 @@
 // uihub: siso:hub-app
-import { StrictMode } from "react"
+import { StrictMode, Suspense, lazy } from "react"
 import { createRoot } from "react-dom/client"
 import { createBrowserRouter, RouterProvider } from "react-router-dom"
 import "@fontsource/geist-sans/latin-400.css"
@@ -11,6 +11,20 @@ import { TooltipProvider } from "@/components/ui/tooltip"
 import { AppShell } from "@/components/AppShell"
 import { loadIndex, loadMeta } from "@/lib/data"
 import Home from "@/pages/Home"
+import Arc from "@/pages/Arc"
+import KitCharts from "@/pages/KitCharts"
+// the kit page carries a map of 10,000 parts: it loads only when opened
+const Kit = lazy(() => import("@/pages/Kit"))
+const KitLayer = lazy(() => import("./pages/KitLayer"))
+const KitV1 = lazy(() => import("@/pages/KitV1"))
+const KitAtom = lazy(() => import("@/pages/KitAtom"))
+const KitMap = lazy(() => import("@/pages/KitMap"))
+const KitDashboard = lazy(() => import("@/pages/KitDashboard"))
+const KitShell = lazy(() => import("@/pages/KitShell"))
+const KitPages = lazy(() => import("@/pages/KitPages"))
+const KitAppFrame = lazy(() => import("@/pages/KitAppFrame"))
+const KitFrame = lazy(() => import("@/pages/KitFrame"))
+import KitIcons from "@/pages/KitIcons"
 import Browse from "@/pages/Browse"
 import ComponentPage from "@/pages/ComponentPage"
 import Bookmarks from "@/pages/Bookmarks"
@@ -46,10 +60,26 @@ if (!hosted) {
 }
 
 const router = createBrowserRouter([
+  // one part alone, no hub chrome: the device frames on /kit/shells load this in an iframe
+  { path: "/frame", element: <Suspense fallback={null}><KitFrame /></Suspense> },
   {
     element: <AppShell />,
     children: [
-      { path: "/", element: <Home /> },
+      { path: "/", element: <Arc /> },
+      { path: "/arc", element: <Arc /> },
+      { path: "/kit", element: <Suspense fallback={null}><Kit /></Suspense> },
+      { path: "/kit/l/:tab", element: <Suspense fallback={null}><KitLayer /></Suspense> },
+      { path: "/kit/v1", element: <Suspense fallback={null}><KitV1 /></Suspense> },
+      { path: "/kit/map", element: <Suspense fallback={null}><KitMap /></Suspense> },
+      { path: "/kit/app-frame", element: <Suspense fallback={null}><KitAppFrame /></Suspense> },
+      { path: "/kit/pages", element: <Suspense fallback={null}><KitPages /></Suspense> },
+      { path: "/kit/pages/:type", element: <Suspense fallback={null}><KitPages /></Suspense> },
+      { path: "/kit/shells/:kind", element: <Suspense fallback={null}><KitShell /></Suspense> },
+      { path: "/kit/atoms/:kind", element: <Suspense fallback={null}><KitAtom /></Suspense> },
+      { path: "/kit/charts", element: <KitCharts /> },
+      { path: "/kit/dashboard", element: <Suspense fallback={null}><KitDashboard /></Suspense> },
+      { path: "/kit/icons", element: <KitIcons /> },
+      { path: "/home", element: <Home /> },
       { path: "/browse", element: <Browse /> },
       { path: "/browse/s/:slug", element: <Browse /> },
       { path: "/browse/:group", element: <Browse /> },

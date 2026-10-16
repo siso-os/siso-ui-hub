@@ -1,0 +1,62 @@
+#!/usr/bin/env python3
+"""The SISO app frame's choices and its named variations. Shaan, 15 Oct: "some of the options are just stupid ... from
+first principles we might have just over complicated the fuck out of this". So search with ⌘K, counts on items and the
+collapse button up top are always there, the projects list and the icon rail are gone, and what is left changes the
+shell itself, two ways where two will do. Retired switches move to "retired" (nothing is deleted). Each variation has a
+stable id and the settings to rebuild it, so a person clicks one and an agent asks for one by id. No model."""
+import json, os, itertools
+HUB = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+P = f"{HUB}/catalogue/app-frame.json"
+spec = json.load(open(P))
+old = {o["key"]: {str(x["value"]): x for x in o["opts"]} for o in spec["options"] + spec.get("retired", [])}
+
+def opt(key, value, short, label=None, does=None, frm=None):
+    was = old.get(key, {}).get(str(value), {})
+    return {"value": value, "label": label or was.get("label", short), "short": short, "count": was.get("count"),
+            "examples": was.get("examples", []), "from": frm if frm is not None else was.get("from"), "does": does or was.get("does", "")}
+
+T = "HALO CRM: Dashboard, Docs, Sheets, Chat"
+options = [
+    {"key": "layout", "title": "Layout", "opts": [opt("layout", "sidebar", "Sidebar"), opt("layout", "rail-panel", "Rail + panel")]},
+    {"key": "look", "title": "Look", "opts": [opt("look", "plain", "Flush"), opt("look", "inset", "Inset"), opt("look", "floating", "Floating")]},
+    {"key": "collapse", "title": "Collapse", "opts": [opt("collapse", "icon", "To icons"), opt("collapse", "offcanvas", "Slides away")]},
+    {"key": "header", "title": "Switcher", "opts": [opt("header", "workspace", "Workspaces", "Workspace switcher"), opt("header", "views", "Views", "View switcher")]},
+    {"key": "tools", "title": "Tools", "opts": [
+        opt("tools", 0, "None", "No tools", "No tool icons; the nav is the view's own pages.", ""),
+        opt("tools", 4, "4", "Four tools", "Four tool icons across, as HALO: Dashboard, Docs, Sheets, Chat; each has its own nav.", T),
+        opt("tools", 6, "6", "Six tools", "Six tool icons across (adds Calendar and People); each has its own nav.", T)]},
+    {"key": "nav", "title": "Nav", "opts": [opt("nav", "grouped", "Grouped", "Grouped with labels"), opt("nav", "dropdowns", "Drop down", "Groups that drop down")]},
+    {"key": "footer", "title": "Bottom", "opts": [opt("footer", "user", "User"), opt("footer", "upgrade", "Upgrade + user")]},
+    {"key": "topbar", "title": "Top bar", "opts": [opt("topbar", True, "On", "Top bar"), opt("topbar", False, "Off", "No top bar")]},
+]
+keep = {o["key"] for o in options}
+spec["retired"] = [o for o in spec["options"] if o["key"] not in keep] + [o for o in spec.get("retired", []) if o["key"] not in keep]
+spec["always"] = ["Search box with a ⌘K palette (an icon when collapsed)", "Counts on items", "Collapse button up top, beside the brand",
+                  "Menus open inside the frame", "Tools swap the nav below them"]
+spec["options"] = options
+# our apps, read as the slim choices
+for o in spec["ours"]:
+    c = o["cfg"]
+    c.pop("search", None); c.pop("badges", None); c.pop("projects", None); c.pop("toggle", None)
+    if isinstance(c.get("tools"), bool): c["tools"] = 4 if c["tools"] else 0
+    if c.get("nav") == "flat": c["nav"] = "grouped"
+    if c.get("footer") == "links": c["footer"] = "user"
+
+W = {"plain": "Flush", "inset": "Inset", "floating": "Floating", "workspace": "workspaces", "views": "views",
+     "grouped": "grouped", "dropdowns": "drop down", "user": "user", "upgrade": "upgrade"}
+out = []
+def add(cfg, name):
+    code = "-".join(str(v)[:3] for v in cfg.values())
+    out.append({"id": f"af-{code}", "name": name, "cfg": cfg})
+# look and header vary fastest, so neighbours look different
+for footer, tools, nav, header, look in itertools.product(["user", "upgrade"], [4, 0], ["dropdowns", "grouped"], ["workspace", "views"], ["inset", "plain", "floating"]):
+    add({"layout": "sidebar", "look": look, "header": header, "nav": nav, "tools": tools, "footer": footer},
+        f"Sidebar · {W[look]} · {W[header]} · {W[nav]}" + (f" · {tools} tools" if tools else "") + f" · {W[footer]}")
+# rail plus panel: the rail is the switcher, the tools and the profile, and the panel slides away (Shaan, 15 Oct: "some
+# of the options shouldn't even be available together"), so only look and nav vary
+for nav, look in itertools.product(["dropdowns", "grouped"], ["inset", "plain", "floating"]):
+    add({"layout": "rail-panel", "look": look, "nav": nav, "tools": 0, "collapse": "offcanvas"}, f"Rail + panel · {W[look]} · {W[nav]}")
+spec["rules"] = ["Rail + panel: the panel only slides away; no tools strip, switcher or bottom in the panel (the rail has them)"]
+spec["variations"] = out
+json.dump(spec, open(P, "w"), indent=1, ensure_ascii=False)
+print(len(options), "choices;", len(out), "variations;", len({v["id"] for v in out}), "distinct ids")

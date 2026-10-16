@@ -1,0 +1,108 @@
+/* FerrofluidNav — the blob is painted on a canvas underneath the buttons, so
+   the labels stay real text: selectable, translatable, and readable by a
+   screen reader. Nothing here animates; JS owns the motion, the label inks
+   and the focus ring, so every part of it runs on one clock. */
+
+.ferrofluid-nav {
+  --ffn-fill: #639aff;
+  --ffn-ink: #f4f7ff;
+  --ffn-ink-dim: #9db4dd;
+
+  position: relative;
+  display: inline-block;
+  isolation: isolate;
+}
+
+/* The canvas bleeds past the bar by the blob's overhang (JS sets its box), so
+   the pill's rounded ends are drawn whole rather than cut flat at the edge of
+   the buttons. It never takes pointer events or layout space. */
+.ferrofluid-nav__fluid {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.ferrofluid-nav__list {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.ferrofluid-nav__item {
+  padding: 10px 18px;
+  border: 0;
+  border-radius: 999px;
+  background: none;
+  color: var(--ffn-ink-dim);
+  font: inherit;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1;
+  white-space: nowrap;
+  cursor: pointer;
+  /* Taps respond at once and never zoom; a horizontal swipe still scrolls a
+     bar that overflows its container. The fluid is the press feedback, so
+     the platform's grey tap flash would only compete with it. */
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+  transition: color 0.18s ease;
+}
+
+.ferrofluid-nav__item[data-active='true'] {
+  color: var(--ffn-ink);
+}
+
+/* Where the browser can mix colours, each label is inked by how much of it
+   the liquid covers (--ffn-cover, written per frame). The stylesheet value
+   only covers the first paint, before the loop has written anything. */
+@supports (color: color-mix(in srgb, red 50%, blue)) {
+  .ferrofluid-nav__item {
+    --ffn-cover: 0;
+    color: color-mix(
+      in srgb,
+      var(--ffn-ink) calc(var(--ffn-cover) * 100%),
+      var(--ffn-ink-dim)
+    );
+    transition: none;
+  }
+
+  .ferrofluid-nav__item[data-active='true'] {
+    --ffn-cover: 1;
+    color: color-mix(
+      in srgb,
+      var(--ffn-ink) calc(var(--ffn-cover) * 100%),
+      var(--ffn-ink-dim)
+    );
+  }
+}
+
+/* The selected item is where you already are. */
+.ferrofluid-nav__item[aria-selected='true'] {
+  cursor: default;
+}
+
+.ferrofluid-nav__item:focus {
+  outline: none;
+}
+
+/* Focus on an item the liquid is not sitting on gets a ring of its own. On
+   the item it is sitting on, the canvas draws the ring as an isoline of the
+   same field, so it follows the fluid (data-ring). */
+.ferrofluid-nav__item:focus-visible:not([data-ring='fluid']) {
+  outline: 2px solid var(--ffn-fill);
+  outline-offset: 2px;
+}
+
+@media (forced-colors: active) {
+  .ferrofluid-nav__item:focus-visible {
+    outline: 2px solid CanvasText;
+    outline-offset: 2px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ferrofluid-nav__item { transition: none; }
+}

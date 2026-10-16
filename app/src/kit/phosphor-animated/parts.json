@@ -1,0 +1,3176 @@
+{
+"lib": "phosphor-animated",
+"source": "gh-theoluciano-phosphor-animated",
+"homepage": null,
+"description": null,
+"items": 164,
+"parts": [
+{
+"id": "phosphor-animated/alarm",
+"name": "alarm",
+"title": "Alarm",
+"description": "Rattles \u2014 the whole clock rocks gently side to side while the bells flick.",
+"type": "component",
+"cat": "assets/icon",
+"domain": [],
+"file": "components/icons/alarm.tsx",
+"files": [
+"components/icons/alarm.tsx"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add @phosphor-animated/alarm"
+},
+{
+"id": "phosphor-animated/anchor",
+"name": "anchor",
+"title": "Anchor",
+"description": "Sways from its ring, the way a moored anchor rides the swell.",
+"type": "component",
+"cat": "assets/icon",
+"domain": [],
+"file": "components/icons/anchor.tsx",
+"files": [
+"components/icons/anchor.tsx"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add @phosphor-animated/anchor"
+},
+{
+"id": "phosphor-animated/animated-icon",
+"name": "animated-icon",
+"title": "Animated Icon runtime",
+"description": "Shared runtime for phosphor-animated icons: weight resolution, triggers, and reduced-motion handling. Installed automatically with any icon.",
+"type": "component",
+"cat": "assets/icon",
+"domain": [],
+"file": "components/icons/animated-icon.tsx",
+"files": [
+"components/icons/animated-icon.tsx"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add @phosphor-animated/animated-icon"
+},
+{
+"id": "phosphor-animated/archive",
+"name": "archive",
+"title": "Archive",
+"description": "Opens \u2014 the lid pops clear, hangs a beat, then drops shut.",
+"type": "component",
+"cat": "assets/icon",
+"domain": [],
+"file": "components/icons/archive.tsx",
+"files": [
+"components/icons/archive.tsx"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add @phosphor-animated/archive"
+},
+{
+"id": "phosphor-animated/arrow-clockwise",
+"name": "arrow-clockwise",
+"title": "ArrowClockwise",
+"description": "Refreshes \u2014 one clockwise turn, away fast and easing home.",
+"type": "component",
+"cat": "assets/icon",
+"domain": [],
+"file": "components/icons/arrow-clockwise.tsx",
+"files": [
+"components/icons/arrow-clockwise.tsx"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add @phosphor-animated/arrow-clockwise"
+},
+{
+"id": "phosphor-animated/arrow-counter-clockwise",
+"name": "arrow-counter-clockwise",
+"title": "ArrowCounterClockwise",
+"description": "Undoes \u2014 one turn back, away fast and easing home.",
+"type": "component",
+"cat": "assets/icon",
+"domain": [],
+"file": "components/icons/arrow-counter-clockwise.tsx",
+"files": [
+"components/icons/arrow-counter-clockwise.tsx"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add @phosphor-animated/arrow-counter-clockwise"
+},
+{
+"id": "phosphor-animated/arrow-down",
+"name": "arrow-down",
+"title": "ArrowDown",
+"description": "Recoils upward \u2014 shaft retracting \u2014 then strikes back down.",
+"type": "component",
+"cat": "assets/icon",
+"domain": [],
+"file": "components/icons/arrow-down.tsx",
+"files": [
+"components/icons/arrow-down.tsx"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add @phosphor-animated/arrow-down"
+},
+{
+"id": "phosphor-animated/arrow-left",
+"name": "arrow-left",
+"title": "ArrowLeft",
+"description": "Recoils \u2014 shaft retracting \u2014 then strikes back to the left.",
+"type": "component",
+"cat": "assets/icon",
+"domain": [],
+"file": "components/icons/arrow-left.tsx",
+"files": [
+"components/icons/arrow-left.tsx"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add @phosphor-animated/arrow-left"
+},
+{
+"id": "phosphor-animated/arrow-right",
+"name": "arrow-right",
+"title": "ArrowRight",
+"description": "Recoils \u2014 the arrow draws back, then springs home.",
+"type": "component",
+"cat": "assets/icon",
+"domain": [],
+"file": "components/icons/arrow-right.tsx",
+"files": [
+"components/icons/arrow-right.tsx"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add @phosphor-animated/arrow-right"
+},
+{
+"id": "phosphor-animated/arrow-square-out",
+"name": "arrow-square-out",
+"title": "ArrowSquareOut",
+"description": "Slips out \u2014 the arrow drifts toward the corner and recedes.",
+"type": "component",
+"cat": "assets/icon",
+"domain": [],
+"file": "components/icons/arrow-square-out.tsx",
+"files": [
+"components/icons/arrow-square-out.tsx"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add @phosphor-animated/arrow-square-out"
+},
+{
+"id": "phosphor-animated/arrow-up",
+"name": "arrow-up",
+"title": "ArrowUp",
+"description": "Crouches \u2014 the arrow dips down, then springs back up.",
+"type": "component",
+"cat": "assets/icon",
+"domain": [],
+"file": "components/icons/arrow-up.tsx",
+"files": [
+"components/icons/arrow-up.tsx"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add @phosphor-animated/arrow-up"
+},
+{
+"id": "phosphor-animated/at",
+"name": "at",
+"title": "At",
+"description": "Writes itself \u2014 the centre loops first, then the spiral sweeps around.",
+"type": "component",
+"cat": "assets/icon",
+"domain": [],
+"file": "components/icons/at.tsx",
+"files": [
+"components/icons/at.tsx"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add @phosphor-animated/at"
+},
+{
+"id": "phosphor-animated/battery-charging",
+"name": "battery-charging",
+"title": "BatteryCharging",
+"description": "Charging \u2014 the bolt pulses twice as the current lands.",
+"type": "component",
+"cat": "assets/icon",
+"domain": [],
+"file": "components/icons/battery-charging.tsx",
+"files": [
+"components/icons/battery-charging.tsx"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add @phosphor-animated/battery-charging"
+},
+{
+"id": "phosphor-animated/battery-full",
+"name": "battery-full",
+"title": "BatteryFull",
+"description": "Recharges \u2014 the bars blank out, then refill from the left.",
+"type": "component",
+"cat": "assets/icon",
+"domain": [],
+"file": "components/icons/battery-full.tsx",
+"files": [
+"components/icons/battery-full.tsx"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add @phosphor-animated/battery-full"
+},
+{
+"id": "phosphor-animated/bell-ringing",
+"name": "bell-ringing",
+"title": "BellRinging",
+"description": "Rings out loud \u2014 the bell whips from its mount and sound draws off both sides.",
+"type": "component",
+"cat": "assets/icon",
+"domain": [],
+"file": "components/icons/bell-ringing.tsx",
+"files": [
+"components/icons/bell-ringing.tsx"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add @phosphor-animated/bell-ringing"
+},
+{
+"id": "phosphor-animated/bell-slash",
+"name": "bell-slash",
+"title": "BellSlash",
+"description": "Silenced \u2014 a token shake dies as the slash strikes through.",
+"type": "component",
+"cat": "assets/icon",
+"domain": [
+"crypto"
+],
+"file": "components/icons/bell-slash.tsx",
+"files": [
+"components/icons/bell-slash.tsx"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add @phosphor-animated/bell-slash"
+},
+{
+"id": "phosphor-animated/bell",
+"name": "bell",
+"title": "Bell",
+"description": "Rings \u2014 the whole bell swings wide from its mount, left first.",
+"type": "component",
+"cat": "assets/icon",
+"domain": [],
+"file": "components/icons/bell.tsx",
+"files": [
+"components/icons/bell.tsx"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add @phosphor-animated/bell"
+},
+{
+"id": "phosphor-animated/bluetooth",
+"name": "bluetooth",
+"title": "Bluetooth",
+"description": "Reconnects \u2014 the whole glyph redraws itself like a signal coming back.",
+"type": "component",
+"cat": "assets/icon",
+"domain": [],
+"file": "components/icons/bluetooth.tsx",
+"files": [
+"components/icons/bluetooth.tsx"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add @phosphor-animated/bluetooth"
+},
+{
+"id": "phosphor-animated/bookmark-simple",
+"name": "bookmark-simple",
+"title": "BookmarkSimple",
+"description": "Saved \u2014 stretches down, squashes, and settles into place.",
+"type": "component",
+"cat": "assets/icon",
+"domain": [],
+"file": "components/icons/bookmark-simple.tsx",
+"files": [
+"components/icons/bookmark-simple.tsx"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add @phosphor-animated/bookmark-simple"
+},
+{
+"id": "phosphor-animated/brain",
+"name": "brain",
+"title": "Brain",
+"description": "Thinks \u2014 one deep breath while the folds retract and redraw.",
+"type": "component",
+"cat": "assets/icon",
+"domain": [],
+"file": "components/icons/brain.tsx",
+"files": [
+"components/icons/brain.tsx"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add @phosphor-animated/brain"
+},
+{
+"id": "phosphor-animated/bug",
+"name": "bug",
+"title": "Bug",
+"description": "Skitters \u2014 mismatched legs twitch while the body shifts its weight.",
+"type": "component",
+"cat": "assets/icon",
+"domain": [],
+"file": "components/icons/bug.tsx",
+"files": [
+"components/icons/bug.tsx"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add @phosphor-animated/bug"
+},
+{
+"id": "phosphor-animated/camera",
+"name": "camera",
+"title": "Camera",
+"description": "Pulls focus \u2014 the lens breathes, then the body snaps the shot.",
+"type": "component",
+"cat": "assets/icon",
+"domain": [],
+"file": "components/icons/camera.tsx",
+"files": [
+"components/icons/camera.tsx"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add @phosphor-animated/camera"
+},
+{
+"id": "phosphor-animated/caret-down",
+"name": "caret-down",
+"title": "CaretDown",
+"description": "Nudges downward, the way it points.",
+"type": "component",
+"cat": "assets/icon",
+"domain": [],
+"file": "components/icons/caret-down.tsx",
+"files": [
+"components/icons/caret-down.tsx"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add @phosphor-animated/caret-down"
+},
+{
+"id": "phosphor-animated/caret-right",
+"name": "caret-right",
+"title": "CaretRight",
+"description": "Nudges forward, the way it points.",
+"type": "component",
+"cat": "assets/icon",
+"domain": [],
+"file": "components/icons/caret-right.tsx",
+"files": [
+"components/icons/caret-right.tsx"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add @phosphor-animated/caret-right"
+},
+{
+"id": "phosphor-animated/chart-bar",
+"name": "chart-bar",
+"title": "ChartBar",
+"description": "Redraws \u2014 the columns wipe away and rise again in turn.",
+"type": "component",
+"cat": "assets/icon",
+"domain": [],
+"file": "components/icons/chart-bar.tsx",
+"files": [
+"components/icons/chart-bar.tsx"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add @phosphor-animated/chart-bar"
+},
+{
+"id": "phosphor-animated/chart-line",
+"name": "chart-line",
+"title": "ChartLine",
+"description": "Replots \u2014 the trend line fades in as it draws across the axes.",
+"type": "component",
+"cat": "assets/icon",
+"domain": [],
+"file": "components/icons/chart-line.tsx",
+"files": [
+"components/icons/chart-line.tsx"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add @phosphor-animated/chart-line"
+},
+{
+"id": "phosphor-animated/chart-pie-slice",
+"name": "chart-pie-slice",
+"title": "ChartPieSlice",
+"description": "Breaks out \u2014 the slice springs free, hangs a beat, and rejoins.",
+"type": "component",
+"cat": "assets/icon",
+"domain": [],
+"file": "components/icons/chart-pie-slice.tsx",
+"files": [
+"components/icons/chart-pie-slice.tsx"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add @phosphor-animated/chart-pie-slice"
+},
+{
+"id": "phosphor-animated/chat-circle",
+"name": "chat-circle",
+"title": "ChatCircle",
+"description": "Perks up \u2014 the bubble swells and shakes on its tail.",
+"type": "component",
+"cat": "assets/icon",
+"domain": [
+"AI"
+],
+"file": "components/icons/chat-circle.tsx",
+"files": [
+"components/icons/chat-circle.tsx"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add @phosphor-animated/chat-circle"
+},
+{
+"id": "phosphor-animated/chat-teardrop-dots",
+"name": "chat-teardrop-dots",
+"title": "ChatTeardropDots",
+"description": "Typing \u2014 the dots blink out and back, left to right.",
+"type": "component",
+"cat": "assets/icon",
+"domain": [
+"AI"
+],
+"file": "components/icons/chat-teardrop-dots.tsx",
+"files": [
+"components/icons/chat-teardrop-dots.tsx"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add @phosphor-animated/chat-teardrop-dots"
+},
+{
+"id": "phosphor-animated/check-circle",
+"name": "check-circle",
+"title": "CheckCircle",
+"description": "Confirms \u2014 the check rewrites itself and the ring nods.",
+"type": "component",
+"cat": "assets/icon",
+"domain": [],
+"file": "components/icons/check-circle.tsx",
+"files": [
+"components/icons/check-circle.tsx"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add @phosphor-animated/check-circle"
+},
+{
+"id": "phosphor-animated/check",
+"name": "check",
+"title": "Check",
+"description": "Stamps in \u2014 the check draws on while scaling up to size.",
+"type": "component",
+"cat": "assets/icon",
+"domain": [],
+"file": "components/icons/check.tsx",
+"files": [
+"components/icons/check.tsx"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add @phosphor-animated/check"
+},
+{
+"id": "phosphor-animated/circle-notch",
+"name": "circle-notch",
+"title": "CircleNotch",
+"description": "Spins \u2014 one full turn, up to speed and easing home.",
+"type": "component",
+"cat": "assets/icon",
+"domain": [],
+"file": "components/icons/circle-notch.tsx",
+"files": [
+"components/icons/circle-notch.tsx"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add @phosphor-animated/circle-notch"
+},
+{
+"id": "phosphor-animated/clipboard",
+"name": "clipboard",
+"title": "Clipboard",
+"description": "Snaps \u2014 the clip pops up and claps back down; the board takes the hit.",
+"type": "component",
+"cat": "assets/icon",
+"domain": [
+"dev tools"
+],
+"file": "components/icons/clipboard.tsx",
+"files": [
+"components/icons/clipboard.tsx"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add @phosphor-animated/clipboard"
+},
+{
+"id": "phosphor-animated/clock",
+"name": "clock",
+"title": "Clock",
+"description": "Fast-forwards \u2014 the hands whip one brisk full turn.",
+"type": "component",
+"cat": "assets/icon",
+"domain": [],
+"file": "components/icons/clock.tsx",
+"files": [
+"components/icons/clock.tsx"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add @phosphor-animated/clock"
+},
+{
+"id": "phosphor-animated/cloud-arrow-up",
+"name": "cloud-arrow-up",
+"title": "CloudArrowUp",
+"description": "Uploads \u2014 the arrow dips, surges up, and the cloud lifts buoyantly with it.",
+"type": "component",
+"cat": "assets/icon",
+"domain": [],
+"file": "components/icons/cloud-arrow-up.tsx",
+"files": [
+"components/icons/cloud-arrow-up.tsx"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add @phosphor-animated/cloud-arrow-up"
+},
+{
+"id": "phosphor-animated/cloud",
+"name": "cloud",
+"title": "Cloud",
+"description": "Swells \u2014 a soft roll lifts the cloud and sets it back down.",
+"type": "component",
+"cat": "assets/icon",
+"domain": [],
+"file": "components/icons/cloud.tsx",
+"files": [
+"components/icons/cloud.tsx"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add @phosphor-animated/cloud"
+},
+{
+"id": "phosphor-animated/code",
+"name": "code",
+"title": "Code",
+"description": "Recompiles \u2014 the slash slips off down-left and a fresh one drops in from above.",
+"type": "component",
+"cat": "assets/icon",
+"domain": [
+"dev tools"
+],
+"file": "components/icons/code.tsx",
+"files": [
+"components/icons/code.tsx"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add @phosphor-animated/code"
+},
+{
+"id": "phosphor-animated/compass",
+"name": "compass",
+"title": "Compass",
+"description": "Finds north \u2014 the needle whips a full turn, overshoots, and settles.",
+"type": "component",
+"cat": "assets/icon",
+"domain": [],
+"file": "components/icons/compass.tsx",
+"files": [
+"components/icons/compass.tsx"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add @phosphor-animated/compass"
+},
+{
+"id": "phosphor-animated/confetti",
+"name": "confetti",
+"title": "Confetti",
+"description": "Pops \u2014 the cone recoils and the confetti kicks outward.",
+"type": "component",
+"cat": "assets/icon",
+"domain": [],
+"file": "components/icons/confetti.tsx",
+"files": [
+"components/icons/confetti.tsx"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add @phosphor-animated/confetti"
+},
+{
+"id": "phosphor-animated/copy",
+"name": "copy",
+"title": "Copy",
+"description": "Duplicates \u2014 the sheets spring apart, then snap back into a stack.",
+"type": "component",
+"cat": "assets/icon",
+"domain": [],
+"file": "components/icons/copy.tsx",
+"files": [
+"components/icons/copy.tsx"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add @phosphor-animated/copy"
+},
+{
+"id": "phosphor-animated/cow",
+"name": "cow",
+"title": "Cow",
+"description": "Cocks its head \u2014 a slow tilt, and a blink halfway through.",
+"type": "component",
+"cat": "assets/icon",
+"domain": [],
+"file": "components/icons/cow.tsx",
+"files": [
+"components/icons/cow.tsx"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add @phosphor-animated/cow"
+},
+{
+"id": "phosphor-animated/cpu",
+"name": "cpu",
+"title": "Cpu",
+"description": "Ticks \u2014 every pin stretches with the clock, twice.",
+"type": "component",
+"cat": "assets/icon",
+"domain": [],
+"file": "components/icons/cpu.tsx",
+"files": [
+"components/icons/cpu.tsx"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add @phosphor-animated/cpu"
+},
+{
+"id": "phosphor-animated/credit-card",
+"name": "credit-card",
+"title": "CreditCard",
+"description": "Swipes \u2014 the whole card slides through and the digits catch up.",
+"type": "component",
+"cat": "assets/icon",
+"domain": [
+"dev tools"
+],
+"file": "components/icons/credit-card.tsx",
+"files": [
+"components/icons/credit-card.tsx"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add @phosphor-animated/credit-card"
+},
+{
+"id": "phosphor-animated/crown",
+"name": "crown",
+"title": "Crown",
+"description": "Bows \u2014 one restrained dip and lift while the jewels flash in turn.",
+"type": "component",
+"cat": "assets/icon",
+"domain": [],
+"file": "components/icons/crown.tsx",
+"files": [
+"components/icons/crown.tsx"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add @phosphor-animated/crown"
+},
+{
+"id": "phosphor-animated/cube",
+"name": "cube",
+"title": "Cube",
+"description": "Draws itself \u2014 the outline first, then the folded inner edges.",
+"type": "component",
+"cat": "assets/icon",
+"domain": [],
+"file": "components/icons/cube.tsx",
+"files": [
+"components/icons/cube.tsx"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add @phosphor-animated/cube"
+},
+{
+"id": "phosphor-animated/currency-dollar",
+"name": "currency-dollar",
+"title": "CurrencyDollar",
+"description": "Draws itself \u2014 the curve sweeps through, then the bar strikes down.",
+"type": "component",
+"cat": "assets/icon",
+"domain": [],
+"file": "components/icons/currency-dollar.tsx",
+"files": [
+"components/icons/currency-dollar.tsx"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add @phosphor-animated/currency-dollar"
+},
+{
+"id": "phosphor-animated/database",
+"name": "database",
+"title": "Database",
+"description": "Scans \u2014 a pulse sweeps the platters, top to bottom.",
+"type": "component",
+"cat": "assets/icon",
+"domain": [],
+"file": "components/icons/database.tsx",
+"files": [
+"components/icons/database.tsx"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add @phosphor-animated/database"
+},
+{
+"id": "phosphor-animated/desktop",
+"name": "desktop",
+"title": "Desktop",
+"description": "Wakes \u2014 the screen lights and the stand takes the weight.",
+"type": "component",
+"cat": "assets/icon",
+"domain": [],
+"file": "components/icons/desktop.tsx",
+"files": [
+"components/icons/desktop.tsx"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add @phosphor-animated/desktop"
+},
+{
+"id": "phosphor-animated/device-mobile",
+"name": "device-mobile",
+"title": "DeviceMobile",
+"description": "Buzzes \u2014 the handset rattles, then settles.",
+"type": "component",
+"cat": "assets/icon",
+"domain": [
+"dev tools"
+],
+"file": "components/icons/device-mobile.tsx",
+"files": [
+"components/icons/device-mobile.tsx"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add @phosphor-animated/device-mobile"
+},
+{
+"id": "phosphor-animated/dots-three",
+"name": "dots-three",
+"title": "DotsThree",
+"description": "Hops \u2014 each dot pops up in turn, left to right.",
+"type": "component",
+"cat": "assets/icon",
+"domain": [],
+"file": "components/icons/dots-three.tsx",
+"files": [
+"components/icons/dots-three.tsx"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add @phosphor-animated/dots-three"
+},
+{
+"id": "phosphor-animated/download-simple",
+"name": "download-simple",
+"title": "DownloadSimple",
+"description": "Delivers \u2014 the arrow springs down and back while the tray dips to take it.",
+"type": "component",
+"cat": "assets/icon",
+"domain": [],
+"file": "components/icons/download-simple.tsx",
+"files": [
+"components/icons/download-simple.tsx"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add @phosphor-animated/download-simple"
+},
+{
+"id": "phosphor-animated/drop",
+"name": "drop",
+"title": "Drop",
+"description": "Draws itself \u2014 the outline traces on, then the sheen follows.",
+"type": "component",
+"cat": "assets/icon",
+"domain": [],
+"file": "components/icons/drop.tsx",
+"files": [
+"components/icons/drop.tsx"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add @phosphor-animated/drop"
+},
+{
+"id": "phosphor-animated/envelope-open",
+"name": "envelope-open",
+"title": "EnvelopeOpen",
+"description": "The letter inside pushes up \u2014 the pocket fold lifts, then settles shut.",
+"type": "component",
+"cat": "assets/icon",
+"domain": [],
+"file": "components/icons/envelope-open.tsx",
+"files": [
+"components/icons/envelope-open.tsx"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add @phosphor-animated/envelope-open"
+},
+{
+"id": "phosphor-animated/envelope",
+"name": "envelope",
+"title": "Envelope",
+"description": "Opens \u2014 the flap swings up, then snaps shut with a soft bounce.",
+"type": "component",
+"cat": "assets/icon",
+"domain": [],
+"file": "components/icons/envelope.tsx",
+"files": [
+"components/icons/envelope.tsx"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add @phosphor-animated/envelope"
+},
+{
+"id": "phosphor-animated/eye-slash",
+"name": "eye-slash",
+"title": "EyeSlash",
+"description": "Hidden \u2014 the slash draws itself across the eye.",
+"type": "component",
+"cat": "assets/icon",
+"domain": [],
+"file": "components/icons/eye-slash.tsx",
+"files": [
+"components/icons/eye-slash.tsx"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add @phosphor-animated/eye-slash"
+},
+{
+"id": "phosphor-animated/eye",
+"name": "eye",
+"title": "Eye",
+"description": "Blinks \u2014 the lid closes as the pupil contracts behind it.",
+"type": "component",
+"cat": "assets/icon",
+"domain": [],
+"file": "components/icons/eye.tsx",
+"files": [
+"components/icons/eye.tsx"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add @phosphor-animated/eye"
+},
+{
+"id": "phosphor-animated/file-text",
+"name": "file-text",
+"title": "FileText",
+"description": "Rewrites \u2014 the file perks up as its lines erase and retype.",
+"type": "component",
+"cat": "assets/icon",
+"domain": [],
+"file": "components/icons/file-text.tsx",
+"files": [
+"components/icons/file-text.tsx"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add @phosphor-animated/file-text"
+},
+{
+"id": "phosphor-animated/file",
+"name": "file",
+"title": "File",
+"description": "Hops \u2014 the page lifts with a small tilt while the corner fold flares.",
+"type": "component",
+"cat": "assets/icon",
+"domain": [],
+"file": "components/icons/file.tsx",
+"files": [
+"components/icons/file.tsx"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add @phosphor-animated/file"
+},
+{
+"id": "phosphor-animated/files",
+"name": "files",
+"title": "Files",
+"description": "Fans apart \u2014 the sheets slide diagonally away from each other and spring back.",
+"type": "component",
+"cat": "assets/icon",
+"domain": [],
+"file": "components/icons/files.tsx",
+"files": [
+"components/icons/files.tsx"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add @phosphor-animated/files"
+},
+{
+"id": "phosphor-animated/fire",
+"name": "fire",
+"title": "Fire",
+"description": "Ignites \u2014 the flame draws itself on, the inner tongue catching last.",
+"type": "component",
+"cat": "assets/icon",
+"domain": [],
+"file": "components/icons/fire.tsx",
+"files": [
+"components/icons/fire.tsx"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add @phosphor-animated/fire"
+},
+{
+"id": "phosphor-animated/flag",
+"name": "flag",
+"title": "Flag",
+"description": "Gusts \u2014 the cloth lifts from the pole, billows, and settles to rest.",
+"type": "component",
+"cat": "assets/icon",
+"domain": [],
+"file": "components/icons/flag.tsx",
+"files": [
+"components/icons/flag.tsx"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add @phosphor-animated/flag"
+},
+{
+"id": "phosphor-animated/floppy-disk",
+"name": "floppy-disk",
+"title": "FloppyDisk",
+"description": "Saves \u2014 the disk presses in with a click while label and door rewrite.",
+"type": "component",
+"cat": "assets/icon",
+"domain": [
+"dev tools"
+],
+"file": "components/icons/floppy-disk.tsx",
+"files": [
+"components/icons/floppy-disk.tsx"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add @phosphor-animated/floppy-disk"
+},
+{
+"id": "phosphor-animated/folder-open",
+"name": "folder-open",
+"title": "FolderOpen",
+"description": "Wobbles \u2014 the whole folder rocks on its base and settles.",
+"type": "component",
+"cat": "assets/icon",
+"domain": [],
+"file": "components/icons/folder-open.tsx",
+"files": [
+"components/icons/folder-open.tsx"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add @phosphor-animated/folder-open"
+},
+{
+"id": "phosphor-animated/folder",
+"name": "folder",
+"title": "Folder",
+"description": "Picked up \u2014 lifts with a small lean, then settles back with weight.",
+"type": "component",
+"cat": "assets/icon",
+"domain": [],
+"file": "components/icons/folder.tsx",
+"files": [
+"components/icons/folder.tsx"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add @phosphor-animated/folder"
+},
+{
+"id": "phosphor-animated/funnel",
+"name": "funnel",
+"title": "Funnel",
+"description": "Squeezes \u2014 pinches in and pushes down, forcing everything through.",
+"type": "component",
+"cat": "assets/icon",
+"domain": [],
+"file": "components/icons/funnel.tsx",
+"files": [
+"components/icons/funnel.tsx"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add @phosphor-animated/funnel"
+},
+{
+"id": "phosphor-animated/game-controller",
+"name": "game-controller",
+"title": "GameController",
+"description": "Rumbles \u2014 a quick vibration buzzes through the pad and dies out.",
+"type": "component",
+"cat": "assets/icon",
+"domain": [],
+"file": "components/icons/game-controller.tsx",
+"files": [
+"components/icons/game-controller.tsx"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add @phosphor-animated/game-controller"
+},
+{
+"id": "phosphor-animated/gear-six",
+"name": "gear-six",
+"title": "GearSix",
+"description": "Turns a tooth clockwise, overshoots, and clicks into place.",
+"type": "component",
+"cat": "assets/icon",
+"domain": [
+"dev tools"
+],
+"file": "components/icons/gear-six.tsx",
+"files": [
+"components/icons/gear-six.tsx"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add @phosphor-animated/gear-six"
+},
+{
+"id": "phosphor-animated/gear",
+"name": "gear",
+"title": "Gear",
+"description": "Winds up, then turns a tooth counter-clockwise and eases in.",
+"type": "component",
+"cat": "assets/icon",
+"domain": [],
+"file": "components/icons/gear.tsx",
+"files": [
+"components/icons/gear.tsx"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add @phosphor-animated/gear"
+},
+{
+"id": "phosphor-animated/gift",
+"name": "gift",
+"title": "Gift",
+"description": "What's inside? \u2014 the box rocks from its base while the bows flutter.",
+"type": "component",
+"cat": "assets/icon",
+"domain": [],
+"file": "components/icons/gift.tsx",
+"files": [
+"components/icons/gift.tsx"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add @phosphor-animated/gift"
+},
+{
+"id": "phosphor-animated/git-branch",
+"name": "git-branch",
+"title": "GitBranch",
+"description": "Draws itself \u2014 the new node pops in, the branch traces on, the tip lands.",
+"type": "component",
+"cat": "assets/icon",
+"domain": [
+"dev tools"
+],
+"file": "components/icons/git-branch.tsx",
+"files": [
+"components/icons/git-branch.tsx"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add @phosphor-animated/git-branch"
+},
+{
+"id": "phosphor-animated/globe",
+"name": "globe",
+"title": "Globe",
+"description": "Draws itself \u2014 the rim first, then the meridian and parallels trace on.",
+"type": "component",
+"cat": "assets/icon",
+"domain": [
+"maps"
+],
+"file": "components/icons/globe.tsx",
+"files": [
+"components/icons/globe.tsx"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add @phosphor-animated/globe"
+},
+{
+"id": "phosphor-animated/hammer",
+"name": "hammer",
+"title": "Hammer",
+"description": "Strikes \u2014 a slow windup, then the head snaps down and recoils.",
+"type": "component",
+"cat": "assets/icon",
+"domain": [],
+"file": "components/icons/hammer.tsx",
+"files": [
+"components/icons/hammer.tsx"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add @phosphor-animated/hammer"
+},
+{
+"id": "phosphor-animated/hand-waving",
+"name": "hand-waving",
+"title": "HandWaving",
+"description": "Waves hello, pivoting at the wrist.",
+"type": "component",
+"cat": "assets/icon",
+"domain": [],
+"file": "components/icons/hand-waving.tsx",
+"files": [
+"components/icons/hand-waving.tsx"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add @phosphor-animated/hand-waving"
+},
+{
+"id": "phosphor-animated/hard-drive",
+"name": "hard-drive",
+"title": "HardDrive",
+"description": "Reads \u2014 the activity light pops and blinks twice.",
+"type": "component",
+"cat": "assets/icon",
+"domain": [],
+"file": "components/icons/hard-drive.tsx",
+"files": [
+"components/icons/hard-drive.tsx"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add @phosphor-animated/hard-drive"
+},
+{
+"id": "phosphor-animated/headphones",
+"name": "headphones",
+"title": "Headphones",
+"description": "Thumps \u2014 the band flexes down onto the ears and springs back, twice.",
+"type": "component",
+"cat": "assets/icon",
+"domain": [],
+"file": "components/icons/headphones.tsx",
+"files": [
+"components/icons/headphones.tsx"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add @phosphor-animated/headphones"
+},
+{
+"id": "phosphor-animated/heart",
+"name": "heart",
+"title": "Heart",
+"description": "Lub-dub \u2014 a quick squeeze, then two beats, the second softer.",
+"type": "component",
+"cat": "assets/icon",
+"domain": [],
+"file": "components/icons/heart.tsx",
+"files": [
+"components/icons/heart.tsx"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add @phosphor-animated/heart"
+},
+{
+"id": "phosphor-animated/heartbeat",
+"name": "heartbeat",
+"title": "Heartbeat",
+"description": "The pulse sweeps through first, then the heart draws in and beats.",
+"type": "component",
+"cat": "assets/icon",
+"domain": [],
+"file": "components/icons/heartbeat.tsx",
+"files": [
+"components/icons/heartbeat.tsx"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add @phosphor-animated/heartbeat"
+},
+{
+"id": "phosphor-animated/hourglass",
+"name": "hourglass",
+"title": "Hourglass",
+"description": "Flips over with a springy half-turn \u2014 the sand starts again.",
+"type": "component",
+"cat": "assets/icon",
+"domain": [],
+"file": "components/icons/hourglass.tsx",
+"files": [
+"components/icons/hourglass.tsx"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add @phosphor-animated/hourglass"
+},
+{
+"id": "phosphor-animated/house",
+"name": "house",
+"title": "House",
+"description": "Hops once \u2014 a welcoming little bounce.",
+"type": "component",
+"cat": "assets/icon",
+"domain": [],
+"file": "components/icons/house.tsx",
+"files": [
+"components/icons/house.tsx"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add @phosphor-animated/house"
+},
+{
+"id": "phosphor-animated/image",
+"name": "image",
+"title": "Image",
+"description": "Lifts in hand \u2014 the sun and hills shift with shallow parallax.",
+"type": "component",
+"cat": "assets/icon",
+"domain": [],
+"file": "components/icons/image.tsx",
+"files": [
+"components/icons/image.tsx"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add @phosphor-animated/image"
+},
+{
+"id": "phosphor-animated/info",
+"name": "info",
+"title": "Info",
+"description": "The \"i\" bobs \u2014 the dot hops while the stem squashes and the ring breathes.",
+"type": "component",
+"cat": "assets/icon",
+"domain": [],
+"file": "components/icons/info.tsx",
+"files": [
+"components/icons/info.tsx"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add @phosphor-animated/info"
+},
+{
+"id": "phosphor-animated/key",
+"name": "key",
+"title": "Key",
+"description": "Turns in the lock \u2014 deep, a small rebound, then lets go.",
+"type": "component",
+"cat": "assets/icon",
+"domain": [],
+"file": "components/icons/key.tsx",
+"files": [
+"components/icons/key.tsx"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add @phosphor-animated/key"
+},
+{
+"id": "phosphor-animated/keyboard",
+"name": "keyboard",
+"title": "Keyboard",
+"description": "Types \u2014 key, key, spacebar, each blinking as it's struck.",
+"type": "component",
+"cat": "assets/icon",
+"domain": [],
+"file": "components/icons/keyboard.tsx",
+"files": [
+"components/icons/keyboard.tsx"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add @phosphor-animated/keyboard"
+},
+{
+"id": "phosphor-animated/laptop",
+"name": "laptop",
+"title": "Laptop",
+"description": "Nods \u2014 the lid dips shut a touch, then springs back open.",
+"type": "component",
+"cat": "assets/icon",
+"domain": [],
+"file": "components/icons/laptop.tsx",
+"files": [
+"components/icons/laptop.tsx"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add @phosphor-animated/laptop"
+},
+{
+"id": "phosphor-animated/leaf",
+"name": "leaf",
+"title": "Leaf",
+"description": "Drifts \u2014 tilting and travelling at once, the way a leaf falls.",
+"type": "component",
+"cat": "assets/icon",
+"domain": [],
+"file": "components/icons/leaf.tsx",
+"files": [
+"components/icons/leaf.tsx"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add @phosphor-animated/leaf"
+},
+{
+"id": "phosphor-animated/lightbulb",
+"name": "lightbulb",
+"title": "Lightbulb",
+"description": "An idea \u2014 the glass flexes as the shine redraws.",
+"type": "component",
+"cat": "assets/icon",
+"domain": [],
+"file": "components/icons/lightbulb.tsx",
+"files": [
+"components/icons/lightbulb.tsx"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add @phosphor-animated/lightbulb"
+},
+{
+"id": "phosphor-animated/lightning",
+"name": "lightning",
+"title": "Lightning",
+"description": "Strikes \u2014 the bolt draws itself on, strike-quick.",
+"type": "component",
+"cat": "assets/icon",
+"domain": [],
+"file": "components/icons/lightning.tsx",
+"files": [
+"components/icons/lightning.tsx"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add @phosphor-animated/lightning"
+},
+{
+"id": "phosphor-animated/link",
+"name": "link",
+"title": "Link",
+"description": "Tugs \u2014 the two halves pull apart, then snap back past centre.",
+"type": "component",
+"cat": "assets/icon",
+"domain": [],
+"file": "components/icons/link.tsx",
+"files": [
+"components/icons/link.tsx"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add @phosphor-animated/link"
+},
+{
+"id": "phosphor-animated/list",
+"name": "list",
+"title": "List",
+"description": "Scans \u2014 each row's right edge sweeps in and snaps back, top to bottom.",
+"type": "component",
+"cat": "assets/icon",
+"domain": [],
+"file": "components/icons/list.tsx",
+"files": [
+"components/icons/list.tsx"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add @phosphor-animated/list"
+},
+{
+"id": "phosphor-animated/lock-open",
+"name": "lock-open",
+"title": "LockOpen",
+"description": "Springs \u2014 the shackle flicks wider while the whole lock jolts.",
+"type": "component",
+"cat": "assets/icon",
+"domain": [],
+"file": "components/icons/lock-open.tsx",
+"files": [
+"components/icons/lock-open.tsx"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add @phosphor-animated/lock-open"
+},
+{
+"id": "phosphor-animated/lock",
+"name": "lock",
+"title": "Lock",
+"description": "Clicks shut \u2014 the shackle presses in and the body shudders tight.",
+"type": "component",
+"cat": "assets/icon",
+"domain": [
+"dev tools"
+],
+"file": "components/icons/lock.tsx",
+"files": [
+"components/icons/lock.tsx"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add @phosphor-animated/lock"
+},
+{
+"id": "phosphor-animated/magic-wand",
+"name": "magic-wand",
+"title": "MagicWand",
+"description": "Flicks \u2014 the wand snaps a small arc and the stars twinkle in turn.",
+"type": "component",
+"cat": "assets/icon",
+"domain": [],
+"file": "components/icons/magic-wand.tsx",
+"files": [
+"components/icons/magic-wand.tsx"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add @phosphor-animated/magic-wand"
+},
+{
+"id": "phosphor-animated/magnifying-glass",
+"name": "magnifying-glass",
+"title": "MagnifyingGlass",
+"description": "Sweeps a slow arc, the way you search a page.",
+"type": "component",
+"cat": "assets/icon",
+"domain": [],
+"file": "components/icons/magnifying-glass.tsx",
+"files": [
+"components/icons/magnifying-glass.tsx"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add @phosphor-animated/magnifying-glass"
+},
+{
+"id": "phosphor-animated/map-pin",
+"name": "map-pin",
+"title": "MapPin",
+"description": "Hops off the map and stamps back down \u2014 the dot draws in as it lands.",
+"type": "component",
+"cat": "assets/icon",
+"domain": [
+"maps"
+],
+"file": "components/icons/map-pin.tsx",
+"files": [
+"components/icons/map-pin.tsx"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add @phosphor-animated/map-pin"
+},
+{
+"id": "phosphor-animated/megaphone",
+"name": "megaphone",
+"title": "Megaphone",
+"description": "Shouts \u2014 rears up on its grip, then settles.",
+"type": "component",
+"cat": "assets/icon",
+"domain": [],
+"file": "components/icons/megaphone.tsx",
+"files": [
+"components/icons/megaphone.tsx"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add @phosphor-animated/megaphone"
+},
+{
+"id": "phosphor-animated/microphone-slash",
+"name": "microphone-slash",
+"title": "MicrophoneSlash",
+"description": "Muted \u2014 the slash draws itself across the capsule.",
+"type": "component",
+"cat": "assets/icon",
+"domain": [],
+"file": "components/icons/microphone-slash.tsx",
+"files": [
+"components/icons/microphone-slash.tsx"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add @phosphor-animated/microphone-slash"
+},
+{
+"id": "phosphor-animated/microphone",
+"name": "microphone",
+"title": "Microphone",
+"description": "Sound check \u2014 the capsule bobs one-two in its cradle.",
+"type": "component",
+"cat": "assets/icon",
+"domain": [],
+"file": "components/icons/microphone.tsx",
+"files": [
+"components/icons/microphone.tsx"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add @phosphor-animated/microphone"
+},
+{
+"id": "phosphor-animated/minus",
+"name": "minus",
+"title": "Minus",
+"description": "Pinches to the centre, then snaps back to full width.",
+"type": "component",
+"cat": "assets/icon",
+"domain": [],
+"file": "components/icons/minus.tsx",
+"files": [
+"components/icons/minus.tsx"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add @phosphor-animated/minus"
+},
+{
+"id": "phosphor-animated/moon",
+"name": "moon",
+"title": "Moon",
+"description": "Rocks side to side, a crescent settling into the night.",
+"type": "component",
+"cat": "assets/icon",
+"domain": [],
+"file": "components/icons/moon.tsx",
+"files": [
+"components/icons/moon.tsx"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add @phosphor-animated/moon"
+},
+{
+"id": "phosphor-animated/mouse",
+"name": "mouse",
+"title": "Mouse",
+"description": "Clicks \u2014 the whole mouse presses down and springs back, wheel first.",
+"type": "component",
+"cat": "assets/icon",
+"domain": [
+"dev tools"
+],
+"file": "components/icons/mouse.tsx",
+"files": [
+"components/icons/mouse.tsx"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add @phosphor-animated/mouse"
+},
+{
+"id": "phosphor-animated/music-note",
+"name": "music-note",
+"title": "MusicNote",
+"description": "Plays \u2014 the note sways to the beat while its head pulses.",
+"type": "component",
+"cat": "assets/icon",
+"domain": [
+"media"
+],
+"file": "components/icons/music-note.tsx",
+"files": [
+"components/icons/music-note.tsx"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add @phosphor-animated/music-note"
+},
+{
+"id": "phosphor-animated/note-pencil",
+"name": "note-pencil",
+"title": "NotePencil",
+"description": "Edits \u2014 the pencil scribbles a quick stroke against the note.",
+"type": "component",
+"cat": "assets/icon",
+"domain": [],
+"file": "components/icons/note-pencil.tsx",
+"files": [
+"components/icons/note-pencil.tsx"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add @phosphor-animated/note-pencil"
+},
+{
+"id": "phosphor-animated/package",
+"name": "package",
+"title": "Package",
+"description": "Draws itself \u2014 the box outlines first, then its seams.",
+"type": "component",
+"cat": "assets/icon",
+"domain": [],
+"file": "components/icons/package.tsx",
+"files": [
+"components/icons/package.tsx"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add @phosphor-animated/package"
+},
+{
+"id": "phosphor-animated/paper-plane-tilt",
+"name": "paper-plane-tilt",
+"title": "PaperPlaneTilt",
+"description": "Sends \u2014 flies out of frame and a fresh one arrives.",
+"type": "component",
+"cat": "assets/icon",
+"domain": [
+"billing"
+],
+"file": "components/icons/paper-plane-tilt.tsx",
+"files": [
+"components/icons/paper-plane-tilt.tsx"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add @phosphor-animated/paper-plane-tilt"
+},
+{
+"id": "phosphor-animated/pause",
+"name": "pause",
+"title": "Pause",
+"description": "Holds \u2014 the bars dip in turn, left then right, and spring back.",
+"type": "component",
+"cat": "assets/icon",
+"domain": [],
+"file": "components/icons/pause.tsx",
+"files": [
+"components/icons/pause.tsx"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add @phosphor-animated/pause"
+},
+{
+"id": "phosphor-animated/pencil-simple",
+"name": "pencil-simple",
+"title": "PencilSimple",
+"description": "Writes \u2014 the nib travels a quick scribble while the shaft tilts.",
+"type": "component",
+"cat": "assets/icon",
+"domain": [],
+"file": "components/icons/pencil-simple.tsx",
+"files": [
+"components/icons/pencil-simple.tsx"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add @phosphor-animated/pencil-simple"
+},
+{
+"id": "phosphor-animated/phone-call",
+"name": "phone-call",
+"title": "PhoneCall",
+"description": "Connects \u2014 the handset rocks while the signal waves blink out and pop back, inner first.",
+"type": "component",
+"cat": "assets/icon",
+"domain": [],
+"file": "components/icons/phone-call.tsx",
+"files": [
+"components/icons/phone-call.tsx"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add @phosphor-animated/phone-call"
+},
+{
+"id": "phosphor-animated/phone",
+"name": "phone",
+"title": "Phone",
+"description": "Rings \u2014 the handset rattles in decaying swings and settles home.",
+"type": "component",
+"cat": "assets/icon",
+"domain": [],
+"file": "components/icons/phone.tsx",
+"files": [
+"components/icons/phone.tsx"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add @phosphor-animated/phone"
+},
+{
+"id": "phosphor-animated/play",
+"name": "play",
+"title": "Play",
+"description": "Starts \u2014 the triangle coils back with a tilt, then springs forward.",
+"type": "component",
+"cat": "assets/icon",
+"domain": [],
+"file": "components/icons/play.tsx",
+"files": [
+"components/icons/play.tsx"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add @phosphor-animated/play"
+},
+{
+"id": "phosphor-animated/plug",
+"name": "plug",
+"title": "Plug",
+"description": "Connects \u2014 the plug snaps home, then current flickers through the prongs.",
+"type": "component",
+"cat": "assets/icon",
+"domain": [],
+"file": "components/icons/plug.tsx",
+"files": [
+"components/icons/plug.tsx"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add @phosphor-animated/plug"
+},
+{
+"id": "phosphor-animated/plus",
+"name": "plus",
+"title": "Plus",
+"description": "Stamps \u2014 each stroke overshoots long, pinches short, and settles.",
+"type": "component",
+"cat": "assets/icon",
+"domain": [],
+"file": "components/icons/plus.tsx",
+"files": [
+"components/icons/plus.tsx"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add @phosphor-animated/plus"
+},
+{
+"id": "phosphor-animated/power",
+"name": "power",
+"title": "Power",
+"description": "Presses \u2014 the whole switch dips in and pops back.",
+"type": "component",
+"cat": "assets/icon",
+"domain": [],
+"file": "components/icons/power.tsx",
+"files": [
+"components/icons/power.tsx"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add @phosphor-animated/power"
+},
+{
+"id": "phosphor-animated/printer",
+"name": "printer",
+"title": "Printer",
+"description": "Prints \u2014 the paper feeds through the body and the status light blinks.",
+"type": "component",
+"cat": "assets/icon",
+"domain": [],
+"file": "components/icons/printer.tsx",
+"files": [
+"components/icons/printer.tsx"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add @phosphor-animated/printer"
+},
+{
+"id": "phosphor-animated/question",
+"name": "question",
+"title": "Question",
+"description": "Wonders \u2014 the mark waggles side to side, dot in tow.",
+"type": "component",
+"cat": "assets/icon",
+"domain": [],
+"file": "components/icons/question.tsx",
+"files": [
+"components/icons/question.tsx"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add @phosphor-animated/question"
+},
+{
+"id": "phosphor-animated/rainbow",
+"name": "rainbow",
+"title": "Rainbow",
+"description": "Appears \u2014 the bands draw on, inner arc first.",
+"type": "component",
+"cat": "assets/icon",
+"domain": [],
+"file": "components/icons/rainbow.tsx",
+"files": [
+"components/icons/rainbow.tsx"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add @phosphor-animated/rainbow"
+},
+{
+"id": "phosphor-animated/receipt",
+"name": "receipt",
+"title": "Receipt",
+"description": "Itemises \u2014 the lines ink themselves in, top to bottom.",
+"type": "component",
+"cat": "assets/icon",
+"domain": [],
+"file": "components/icons/receipt.tsx",
+"files": [
+"components/icons/receipt.tsx"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add @phosphor-animated/receipt"
+},
+{
+"id": "phosphor-animated/repeat",
+"name": "repeat",
+"title": "Repeat",
+"description": "Loops \u2014 the cycle turns once around and springs into place.",
+"type": "component",
+"cat": "assets/icon",
+"domain": [],
+"file": "components/icons/repeat.tsx",
+"files": [
+"components/icons/repeat.tsx"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add @phosphor-animated/repeat"
+},
+{
+"id": "phosphor-animated/rocket",
+"name": "rocket",
+"title": "Rocket",
+"description": "Test-fires \u2014 hops off the pad, fins trailing, exhaust flaring beneath.",
+"type": "component",
+"cat": "assets/icon",
+"domain": [],
+"file": "components/icons/rocket.tsx",
+"files": [
+"components/icons/rocket.tsx"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add @phosphor-animated/rocket"
+},
+{
+"id": "phosphor-animated/share-network",
+"name": "share-network",
+"title": "ShareNetwork",
+"description": "Broadcasts \u2014 the hub pulses, the wires carry the signal, the nodes pop as it lands.",
+"type": "component",
+"cat": "assets/icon",
+"domain": [],
+"file": "components/icons/share-network.tsx",
+"files": [
+"components/icons/share-network.tsx"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add @phosphor-animated/share-network"
+},
+{
+"id": "phosphor-animated/shield-check",
+"name": "shield-check",
+"title": "ShieldCheck",
+"description": "Re-verifies \u2014 the shield braces while the check pops in and redraws.",
+"type": "component",
+"cat": "assets/icon",
+"domain": [],
+"file": "components/icons/shield-check.tsx",
+"files": [
+"components/icons/shield-check.tsx"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add @phosphor-animated/shield-check"
+},
+{
+"id": "phosphor-animated/shopping-bag",
+"name": "shopping-bag",
+"title": "ShoppingBag",
+"description": "Picked up \u2014 the handle lifts over the top edge as the bag rocks once and settles.",
+"type": "component",
+"cat": "assets/icon",
+"domain": [
+"commerce"
+],
+"file": "components/icons/shopping-bag.tsx",
+"files": [
+"components/icons/shopping-bag.tsx"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add @phosphor-animated/shopping-bag"
+},
+{
+"id": "phosphor-animated/shopping-cart",
+"name": "shopping-cart",
+"title": "ShoppingCart",
+"description": "Hops \u2014 added to the cart, so it bounces four times and lands on its wheels.",
+"type": "component",
+"cat": "assets/icon",
+"domain": [
+"commerce"
+],
+"file": "components/icons/shopping-cart.tsx",
+"files": [
+"components/icons/shopping-cart.tsx"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add @phosphor-animated/shopping-cart"
+},
+{
+"id": "phosphor-animated/shuffle",
+"name": "shuffle",
+"title": "Shuffle",
+"description": "Weaves \u2014 both tracks redraw through the crossing and the heads snap outward.",
+"type": "component",
+"cat": "assets/icon",
+"domain": [],
+"file": "components/icons/shuffle.tsx",
+"files": [
+"components/icons/shuffle.tsx"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add @phosphor-animated/shuffle"
+},
+{
+"id": "phosphor-animated/sign-in",
+"name": "sign-in",
+"title": "SignIn",
+"description": "Enters \u2014 the arrow lunges in through the door, which takes the bump.",
+"type": "component",
+"cat": "assets/icon",
+"domain": [
+"auth"
+],
+"file": "components/icons/sign-in.tsx",
+"files": [
+"components/icons/sign-in.tsx"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add @phosphor-animated/sign-in"
+},
+{
+"id": "phosphor-animated/sign-out",
+"name": "sign-out",
+"title": "SignOut",
+"description": "Leaves \u2014 the arrow winds up and lunges out, the door recoiling behind it.",
+"type": "component",
+"cat": "assets/icon",
+"domain": [],
+"file": "components/icons/sign-out.tsx",
+"files": [
+"components/icons/sign-out.tsx"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add @phosphor-animated/sign-out"
+},
+{
+"id": "phosphor-animated/skip-back",
+"name": "skip-back",
+"title": "SkipBack",
+"description": "Skips back \u2014 the triangle lunges at the start bar and knocks it.",
+"type": "component",
+"cat": "assets/icon",
+"domain": [],
+"file": "components/icons/skip-back.tsx",
+"files": [
+"components/icons/skip-back.tsx"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add @phosphor-animated/skip-back"
+},
+{
+"id": "phosphor-animated/skip-forward",
+"name": "skip-forward",
+"title": "SkipForward",
+"description": "Skips ahead \u2014 the triangle lunges at the end bar and knocks it.",
+"type": "component",
+"cat": "assets/icon",
+"domain": [],
+"file": "components/icons/skip-forward.tsx",
+"files": [
+"components/icons/skip-forward.tsx"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add @phosphor-animated/skip-forward"
+},
+{
+"id": "phosphor-animated/sliders",
+"name": "sliders",
+"title": "Sliders",
+"description": "Adjusts \u2014 the knobs take turns sliding along their tracks.",
+"type": "component",
+"cat": "assets/icon",
+"domain": [],
+"file": "components/icons/sliders.tsx",
+"files": [
+"components/icons/sliders.tsx"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add @phosphor-animated/sliders"
+},
+{
+"id": "phosphor-animated/smiley",
+"name": "smiley",
+"title": "Smiley",
+"description": "Beams \u2014 the face pops and tilts, the eyes widen and the grin deepens.",
+"type": "component",
+"cat": "assets/icon",
+"domain": [],
+"file": "components/icons/smiley.tsx",
+"files": [
+"components/icons/smiley.tsx"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add @phosphor-animated/smiley"
+},
+{
+"id": "phosphor-animated/snowflake",
+"name": "snowflake",
+"title": "Snowflake",
+"description": "Shivers \u2014 the whole flake flicks side to side and settles.",
+"type": "component",
+"cat": "assets/icon",
+"domain": [],
+"file": "components/icons/snowflake.tsx",
+"files": [
+"components/icons/snowflake.tsx"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add @phosphor-animated/snowflake"
+},
+{
+"id": "phosphor-animated/sparkle",
+"name": "sparkle",
+"title": "Sparkle",
+"description": "Lifts \u2014 the big sparkle bobs while the small stars blink in turn.",
+"type": "component",
+"cat": "assets/icon",
+"domain": [],
+"file": "components/icons/sparkle.tsx",
+"files": [
+"components/icons/sparkle.tsx"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add @phosphor-animated/sparkle"
+},
+{
+"id": "phosphor-animated/speaker-high",
+"name": "speaker-high",
+"title": "SpeakerHigh",
+"description": "Sounds \u2014 the cone pulses and the waves radiate out from it.",
+"type": "component",
+"cat": "assets/icon",
+"domain": [],
+"file": "components/icons/speaker-high.tsx",
+"files": [
+"components/icons/speaker-high.tsx"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add @phosphor-animated/speaker-high"
+},
+{
+"id": "phosphor-animated/speaker-x",
+"name": "speaker-x",
+"title": "SpeakerX",
+"description": "Muted \u2014 the cross draws itself in, stroke after stroke.",
+"type": "component",
+"cat": "assets/icon",
+"domain": [],
+"file": "components/icons/speaker-x.tsx",
+"files": [
+"components/icons/speaker-x.tsx"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add @phosphor-animated/speaker-x"
+},
+{
+"id": "phosphor-animated/spinner",
+"name": "spinner",
+"title": "Spinner",
+"description": "Spins \u2014 one full turn of the wheel, winding up and easing off.",
+"type": "component",
+"cat": "assets/icon",
+"domain": [],
+"file": "components/icons/spinner.tsx",
+"files": [
+"components/icons/spinner.tsx"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add @phosphor-animated/spinner"
+},
+{
+"id": "phosphor-animated/star",
+"name": "star",
+"title": "Star",
+"description": "Catches the light \u2014 stretches its points, settles, then glimmers once more.",
+"type": "component",
+"cat": "assets/icon",
+"domain": [],
+"file": "components/icons/star.tsx",
+"files": [
+"components/icons/star.tsx"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add @phosphor-animated/star"
+},
+{
+"id": "phosphor-animated/stop",
+"name": "stop",
+"title": "Stop",
+"description": "Presses in \u2014 the square dips like a struck button, then settles.",
+"type": "component",
+"cat": "assets/icon",
+"domain": [],
+"file": "components/icons/stop.tsx",
+"files": [
+"components/icons/stop.tsx"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add @phosphor-animated/stop"
+},
+{
+"id": "phosphor-animated/storefront",
+"name": "storefront",
+"title": "Storefront",
+"description": "Ripples \u2014 the awning scallops flap in turn, left to right.",
+"type": "component",
+"cat": "assets/icon",
+"domain": [
+"commerce"
+],
+"file": "components/icons/storefront.tsx",
+"files": [
+"components/icons/storefront.tsx"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add @phosphor-animated/storefront"
+},
+{
+"id": "phosphor-animated/sun",
+"name": "sun",
+"title": "Sun",
+"description": "Lights up \u2014 the core pops and the rays flare one by one, clockwise.",
+"type": "component",
+"cat": "assets/icon",
+"domain": [],
+"file": "components/icons/sun.tsx",
+"files": [
+"components/icons/sun.tsx"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add @phosphor-animated/sun"
+},
+{
+"id": "phosphor-animated/tag",
+"name": "tag",
+"title": "Tag",
+"description": "Swings \u2014 nudged, the tag rocks on its eyelet and settles.",
+"type": "component",
+"cat": "assets/icon",
+"domain": [],
+"file": "components/icons/tag.tsx",
+"files": [
+"components/icons/tag.tsx"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add @phosphor-animated/tag"
+},
+{
+"id": "phosphor-animated/target",
+"name": "target",
+"title": "Target",
+"description": "Hits \u2014 the arrow draws back, lands, and the rings ring outward from the centre.",
+"type": "component",
+"cat": "assets/icon",
+"domain": [],
+"file": "components/icons/target.tsx",
+"files": [
+"components/icons/target.tsx"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add @phosphor-animated/target"
+},
+{
+"id": "phosphor-animated/terminal-window",
+"name": "terminal-window",
+"title": "TerminalWindow",
+"description": "Types \u2014 the prompt pops and the line runs out after it.",
+"type": "component",
+"cat": "assets/icon",
+"domain": [
+"AI",
+"dev tools"
+],
+"file": "components/icons/terminal-window.tsx",
+"files": [
+"components/icons/terminal-window.tsx"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add @phosphor-animated/terminal-window"
+},
+{
+"id": "phosphor-animated/thumbs-down",
+"name": "thumbs-down",
+"title": "ThumbsDown",
+"description": "Rejects \u2014 the whole hand presses down and tips, with a little pop.",
+"type": "component",
+"cat": "assets/icon",
+"domain": [],
+"file": "components/icons/thumbs-down.tsx",
+"files": [
+"components/icons/thumbs-down.tsx"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add @phosphor-animated/thumbs-down"
+},
+{
+"id": "phosphor-animated/thumbs-up",
+"name": "thumbs-up",
+"title": "ThumbsUp",
+"description": "Approves \u2014 the whole hand lifts and tips back, with a little pop.",
+"type": "component",
+"cat": "assets/icon",
+"domain": [],
+"file": "components/icons/thumbs-up.tsx",
+"files": [
+"components/icons/thumbs-up.tsx"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add @phosphor-animated/thumbs-up"
+},
+{
+"id": "phosphor-animated/timer",
+"name": "timer",
+"title": "Timer",
+"description": "Starts \u2014 the crown presses down and the hand sweeps a full turn.",
+"type": "component",
+"cat": "assets/icon",
+"domain": [],
+"file": "components/icons/timer.tsx",
+"files": [
+"components/icons/timer.tsx"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add @phosphor-animated/timer"
+},
+{
+"id": "phosphor-animated/trash-simple",
+"name": "trash-simple",
+"title": "TrashSimple",
+"description": "Lifts \u2014 the lid and its handle hop straight off the bin and drop back.",
+"type": "component",
+"cat": "assets/icon",
+"domain": [],
+"file": "components/icons/trash-simple.tsx",
+"files": [
+"components/icons/trash-simple.tsx"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add @phosphor-animated/trash-simple"
+},
+{
+"id": "phosphor-animated/trash",
+"name": "trash",
+"title": "Trash",
+"description": "Opens \u2014 the lid lifts clear of the bin, which absorbs it on the way down.",
+"type": "component",
+"cat": "assets/icon",
+"domain": [],
+"file": "components/icons/trash.tsx",
+"files": [
+"components/icons/trash.tsx"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add @phosphor-animated/trash"
+},
+{
+"id": "phosphor-animated/tree",
+"name": "tree",
+"title": "Tree",
+"description": "Sways \u2014 the whole tree leans through a gust and settles on its roots.",
+"type": "component",
+"cat": "assets/icon",
+"domain": [],
+"file": "components/icons/tree.tsx",
+"files": [
+"components/icons/tree.tsx"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add @phosphor-animated/tree"
+},
+{
+"id": "phosphor-animated/trend-down",
+"name": "trend-down",
+"title": "TrendDown",
+"description": "Redraws \u2014 the line retraces its fall while the frame dips with it.",
+"type": "component",
+"cat": "assets/icon",
+"domain": [],
+"file": "components/icons/trend-down.tsx",
+"files": [
+"components/icons/trend-down.tsx"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add @phosphor-animated/trend-down"
+},
+{
+"id": "phosphor-animated/trend-up",
+"name": "trend-up",
+"title": "TrendUp",
+"description": "Redraws \u2014 the line retraces its climb while the frame lifts with it.",
+"type": "component",
+"cat": "assets/icon",
+"domain": [
+"dev tools"
+],
+"file": "components/icons/trend-up.tsx",
+"files": [
+"components/icons/trend-up.tsx"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add @phosphor-animated/trend-up"
+},
+{
+"id": "phosphor-animated/trophy",
+"name": "trophy",
+"title": "Trophy",
+"description": "Hoisted \u2014 the whole trophy is raised and set back down with weight.",
+"type": "component",
+"cat": "assets/icon",
+"domain": [],
+"file": "components/icons/trophy.tsx",
+"files": [
+"components/icons/trophy.tsx"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add @phosphor-animated/trophy"
+},
+{
+"id": "phosphor-animated/truck",
+"name": "truck",
+"title": "Truck",
+"description": "Jounces \u2014 the body bobs on its springs while the wheels stay planted.",
+"type": "component",
+"cat": "assets/icon",
+"domain": [
+"billing"
+],
+"file": "components/icons/truck.tsx",
+"files": [
+"components/icons/truck.tsx"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add @phosphor-animated/truck"
+},
+{
+"id": "phosphor-animated/umbrella",
+"name": "umbrella",
+"title": "Umbrella",
+"description": "Takes the weather \u2014 it rocks under the shaft while the canopy absorbs the hit.",
+"type": "component",
+"cat": "assets/icon",
+"domain": [],
+"file": "components/icons/umbrella.tsx",
+"files": [
+"components/icons/umbrella.tsx"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add @phosphor-animated/umbrella"
+},
+{
+"id": "phosphor-animated/upload-simple",
+"name": "upload-simple",
+"title": "UploadSimple",
+"description": "Sends \u2014 the arrow springs up and back while the tray dips to launch it.",
+"type": "component",
+"cat": "assets/icon",
+"domain": [],
+"file": "components/icons/upload-simple.tsx",
+"files": [
+"components/icons/upload-simple.tsx"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add @phosphor-animated/upload-simple"
+},
+{
+"id": "phosphor-animated/user",
+"name": "user",
+"title": "User",
+"description": "Draws itself \u2014 the head sketches in first, the shoulders follow.",
+"type": "component",
+"cat": "assets/icon",
+"domain": [],
+"file": "components/icons/user.tsx",
+"files": [
+"components/icons/user.tsx"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add @phosphor-animated/user"
+},
+{
+"id": "phosphor-animated/users",
+"name": "users",
+"title": "Users",
+"description": "Joins in \u2014 the second figure leans in behind the first and settles.",
+"type": "component",
+"cat": "assets/icon",
+"domain": [],
+"file": "components/icons/users.tsx",
+"files": [
+"components/icons/users.tsx"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add @phosphor-animated/users"
+},
+{
+"id": "phosphor-animated/video-camera",
+"name": "video-camera",
+"title": "VideoCamera",
+"description": "Rolls \u2014 the body breathes while the lens draws back and returns.",
+"type": "component",
+"cat": "assets/icon",
+"domain": [
+"media"
+],
+"file": "components/icons/video-camera.tsx",
+"files": [
+"components/icons/video-camera.tsx"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add @phosphor-animated/video-camera"
+},
+{
+"id": "phosphor-animated/wallet",
+"name": "wallet",
+"title": "Wallet",
+"description": "Hefts \u2014 the whole wallet lifts, tips back, and drops into place.",
+"type": "component",
+"cat": "assets/icon",
+"domain": [
+"crypto"
+],
+"file": "components/icons/wallet.tsx",
+"files": [
+"components/icons/wallet.tsx"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add @phosphor-animated/wallet"
+},
+{
+"id": "phosphor-animated/warning-circle",
+"name": "warning-circle",
+"title": "WarningCircle",
+"description": "Alerts \u2014 the ring squashes and the exclamation bounces back into place.",
+"type": "component",
+"cat": "assets/icon",
+"domain": [],
+"file": "components/icons/warning-circle.tsx",
+"files": [
+"components/icons/warning-circle.tsx"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add @phosphor-animated/warning-circle"
+},
+{
+"id": "phosphor-animated/warning",
+"name": "warning",
+"title": "Warning",
+"description": "Alerts \u2014 the triangle takes the knock and the exclamation snaps back up.",
+"type": "component",
+"cat": "assets/icon",
+"domain": [],
+"file": "components/icons/warning.tsx",
+"files": [
+"components/icons/warning.tsx"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add @phosphor-animated/warning"
+},
+{
+"id": "phosphor-animated/wifi-high",
+"name": "wifi-high",
+"title": "WifiHigh",
+"description": "Reconnects \u2014 the signal drops out and rebuilds outward from the dot.",
+"type": "component",
+"cat": "assets/icon",
+"domain": [],
+"file": "components/icons/wifi-high.tsx",
+"files": [
+"components/icons/wifi-high.tsx"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add @phosphor-animated/wifi-high"
+},
+{
+"id": "phosphor-animated/wind",
+"name": "wind",
+"title": "Wind",
+"description": "Blows through \u2014 each stream draws itself on, one gust behind the last.",
+"type": "component",
+"cat": "assets/icon",
+"domain": [],
+"file": "components/icons/wind.tsx",
+"files": [
+"components/icons/wind.tsx"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add @phosphor-animated/wind"
+},
+{
+"id": "phosphor-animated/wrench",
+"name": "wrench",
+"title": "Wrench",
+"description": "Ratchets \u2014 cranks the bolt in its jaws, then springs back.",
+"type": "component",
+"cat": "assets/icon",
+"domain": [],
+"file": "components/icons/wrench.tsx",
+"files": [
+"components/icons/wrench.tsx"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add @phosphor-animated/wrench"
+},
+{
+"id": "phosphor-animated/x-circle",
+"name": "x-circle",
+"title": "XCircle",
+"description": "Rejects \u2014 the cross twists in and pops while the ring pulses around it.",
+"type": "component",
+"cat": "assets/icon",
+"domain": [],
+"file": "components/icons/x-circle.tsx",
+"files": [
+"components/icons/x-circle.tsx"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add @phosphor-animated/x-circle"
+},
+{
+"id": "phosphor-animated/x",
+"name": "x",
+"title": "X",
+"description": "Struck out \u2014 two strokes cross in turn, and the pair lands with a snap.",
+"type": "component",
+"cat": "assets/icon",
+"domain": [],
+"file": "components/icons/x.tsx",
+"files": [
+"components/icons/x.tsx"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add @phosphor-animated/x"
+}
+]
+}

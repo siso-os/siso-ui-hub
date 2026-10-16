@@ -35,8 +35,12 @@ if [ "$BUILD" = 1 ]; then
     mv "$NEXT/pub" "$APP/public-pub"
     archive "$NEXT" "$APP"
   fi
+  python3 "$HUB/bin/kit-import" --code  # the kit's Code panel copies, kept out of git
   mkdir -p "$STAGE"; python3 "$APP/scripts/scrub-packages.py" "$HUB/bin/hubindex.py" "$APP/src/data/siso-packages.json" "$STAGE/siso-packages.public.json"
-  (cd "$APP" && HUB_PACKAGES="$STAGE/siso-packages.public.json" VITE_CLERK_PUBLISHABLE_KEY="$(val CLERK_LIVE_PUBLISHABLE_KEY "$CRED/siso-landing-clerk.env")" \
+  # the catalogue files the kit pages import, scrubbed the same way (15 Oct: HALO and client names had reached three kit pages)
+  CATS=$(cd "$APP" && grep -rhoE "from \"(\.\./)+catalogue/[^\"?]+" src | sed -E 's/^from "(\.\.\/)+catalogue\///' | sort -u)
+  python3 "$APP/scripts/scrub-packages.py" "$HUB/bin/hubindex.py" $(for c in $CATS; do printf '%s %s ' "$HUB/catalogue/$c" "$STAGE/catalogue/$c"; done)
+  (cd "$APP" && HUB_PACKAGES="$STAGE/siso-packages.public.json" HUB_SCRUBBED="$STAGE/catalogue" VITE_CLERK_PUBLISHABLE_KEY="$(val CLERK_LIVE_PUBLISHABLE_KEY "$CRED/siso-landing-clerk.env")" \
     VITE_THUMBS_BASE='https://siso-ui-thumbs-{n}.pages.dev' heavy -- npm run build)
 fi
 
@@ -56,9 +60,11 @@ def tree(src, dst, skip=()):
         rel = os.path.relpath(root, src)
         dirs[:] = [d for d in dirs if os.path.normpath(os.path.join(rel, d)) not in skip]
         for f in files: put(os.path.join(root, f), os.path.join(dst, rel, f))
-tree(f"{app}/dist", site, skip={"data", "a/t"})
+tree(f"{app}/dist", site, skip={"data", "a/t", "a/p"})
 tree(f"{app}/public-pub/data", f"{site}/data")
-if os.path.isdir(f"{app}/public-pub/a"): tree(f"{app}/public-pub/a", f"{site}/a", skip={"t"})
+if os.path.isdir(f"{app}/public-pub/a"): tree(f"{app}/public-pub/a", f"{site}/a", skip={"t", "p"})
+# 14 Oct: the kit's 13,000 code files left no room under 20,000 for the 10,000 part pictures; they live on siso-ui-pics
+open(f"{site}/_redirects", "w").write("/a/p/* https://siso-ui-pics.pages.dev/a/p/:splat 302\n")
 open(f"{site}/_headers", "w").write("/*\n  X-Robots-Tag: noindex\n  Referrer-Policy: strict-origin-when-cross-origin\n/assets/*\n  Cache-Control: public, max-age=31536000, immutable\n")
 open(f"{site}/_routes.json", "w").write('{"version": 1, "include": ["/data/*", "/me/*", "/api/*"], "exclude": []}\n')
 EOF
@@ -77,6 +83,17 @@ EOF
   n=$(find "$STAGE/site" -type f | wc -l | tr -d ' '); big=$(find "$STAGE/site" -type f -size +25M | head -1)
   [ "$n" -lt 20000 ] && [ -z "$big" ] || { echo "too many files ($n) or one over 25 MB ($big)"; exit 1; }
   echo "site: $n files"
+  # the part pictures (/a/p) as their own project, re-sent only when they change
+  if [ -d "$APP/public-pub/a/p" ]; then
+    sig=$(cd "$APP/public-pub/a/p" && ls -lR . | shasum | cut -c1-16)
+    if [ "$(cat "$STAGE/pics.sig" 2>/dev/null)" != "$sig" ]; then
+      archive "$STAGE/pics" "$STAGE"; mkdir -p "$STAGE/pics/a"
+      cp -Rl "$APP/public-pub/a/p" "$STAGE/pics/a/p" 2>/dev/null || cp -R "$APP/public-pub/a/p" "$STAGE/pics/a/p"
+      printf '/*\n  X-Robots-Tag: noindex\n  Cache-Control: public, max-age=86400\n  Access-Control-Allow-Origin: *\n' > "$STAGE/pics/_headers"
+      wrangler pages project create siso-ui-pics --production-branch main >/dev/null 2>&1 || true
+      wrangler pages deploy "$STAGE/pics" --project-name siso-ui-pics --branch main --commit-dirty=true 2>&1 | tail -2 && echo "$sig" > "$STAGE/pics.sig"
+    else echo "pics: unchanged, skipped"; fi
+  fi
   (cd "$APP" && wrangler pages deploy "$STAGE/site" --project-name siso-ui-hub --branch main --commit-dirty=true 2>&1 | tail -3)
 fi
 

@@ -1,0 +1,90 @@
+#!/usr/bin/env python3
+"""The SISO kit map: every part we own filed into one kind, by the frame it lives in (part, shell, section, page, set),
+then family, then kind. Size (atom or composed) is a property, not a layer. Rules: catalogue/kit-map.rules.json.
+Files the 10k kit parts from the code reads (types.jsonl cat + pattern) and their names; writes catalogue/kit-map.json
+with counts and the unfiled, so missing kinds show up as a number, not a guess. No model."""
+import json, os, re, collections
+HUB = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+CODE = os.path.join(os.path.dirname(HUB), "siso-ui-code")
+R = json.load(open(f"{HUB}/catalogue/kit-map.rules.json"))
+idx = json.load(open(f"{HUB}/app/src/kit/index.json"))["parts"]
+reads = {}
+for l in open(f"{CODE}/types.jsonl"):
+    try: t = json.loads(l)
+    except ValueError: continue
+    reads[t.get("id")] = t
+rules = []
+for frame, fams in R["frames"].items():
+    for fam, kinds in fams["families"].items():
+        for k in kinds:
+            # whole words only (an optional plural): "area" no longer files textarea, "drop" no longer files dropdown
+            rx = re.compile(r"(?<![a-z])(?:" + k["re"] + r")(?:e?s)?(?![a-z])", re.I) if k.get("re") else None
+            rules.append((frame, fam, k["kind"], k.get("cats", []), rx))
+KIND_AT = {k: (f, fa, k) for f, fa, k, _, _ in rules}
+ARC = R.get("arc", {})  # Arc filed by hand: its 129 parts are variants of 95 kinds
+# a name that says it is a part ("profile-card", "c-tooltip-10") is never a page or flow
+PART_WORD = re.compile(r"card|tooltip|collapsible|dropdown|menu|sonner|toast|progress|cascader|empty|player|button|badge|popover|dialog|item|transition|morph", re.I)
+CHART_WORD = re.compile(r"chart|graph|plot", re.I)
+ICON_LIBS = set(R["icon_libs"])
+out = collections.defaultdict(list); unfiled = []
+for r in idx:
+    pid, title = r[0], r[1]
+    lib, name = pid.split("/", 1)
+    t = reads.get(pid) or {}
+    cat = t.get("cat") or ""
+    text = f"{name} {title} {t.get('pattern') or ''} {t.get('what') or ''}"
+    hit = None
+    base = re.sub(r"[-_]?\d+$", "", name)
+    if lib in ICON_LIBS or re.match(r"(icons?|animated-icons?)-", name): hit = ("set", "assets", "icons")
+    elif lib == "arc" and ARC.get(name) in KIND_AT: hit = KIND_AT[ARC[name]]
+    elif base in KIND_AT: hit = KIND_AT[base]
+    else:
+        for frame, fam, kind, cats, rx in rules:
+            if cats and cat and not any(cat.startswith(c) for c in cats): continue
+            if not cats and not rx: continue
+            # a page or flow is judged by its own name, not by words in its description
+            if frame in ("flow", "page"):
+                if PART_WORD.search(name) or not (rx and rx.search(name)) and rx: continue
+            elif rx and not rx.search(text): continue
+            if not cat and not rx: continue
+            if fam == "charts" and not cat.startswith("data-viz") and not CHART_WORD.search(text): continue
+            hit = (frame, fam, kind); break
+    if not hit and cat:  # its read names a cat one kind owns: file it there even when no word matched
+        for frame, fam, kind, cats, rx in rules:
+            if cat in cats: hit = (frame, fam, kind); break
+    if hit: out[hit].append(pid)
+    else: unfiled.append((pid, cat))
+# Arc lives outside the kit index (app/src/arc); add its parts from the hand filing
+for name, kind in ARC.items(): out[KIND_AT[kind]].append(f"arc/{name}")
+TOTAL = len(idx) + len(ARC)
+tree = {}
+for frame, fams in R["frames"].items():
+    tree[frame] = {"show": fams["show"], "why": fams["why"], "families": {}}
+    for fam, kinds in fams["families"].items():
+        rows = []
+        for k in kinds:
+            ids = out[(frame, fam, k["kind"])]
+            libs = collections.Counter(i.split("/", 1)[0] for i in ids).most_common(6)
+            arc = sorted(i.split("/", 1)[1] for i in ids if i.startswith("arc/"))
+            rows.append({"kind": k["kind"], "job": k.get("job", ""), "made_of": k.get("made_of", []), "parts": len(ids), "libs": libs, "arc": arc, "ids": ids[:400]})
+        tree[frame]["families"][fam] = rows
+tree.setdefault("set", {"show": "grid", "why": "", "families": {}})["families"].setdefault("assets", [])
+if not any(k["kind"] == "icons" for k in tree["set"]["families"]["assets"]):
+    tree["set"]["families"]["assets"].append({"kind": "icons", "job": "icon sets", "parts": len(out[("set", "assets", "icons")]), "ids": []})
+filed = sum(len(v) for v in out.values())
+json.dump({"levels": R.get("levels", []), "total": TOTAL, "filed": filed, "unfiled": len(unfiled), "tree": tree,
+           "unfiled_by_cat": collections.Counter(c or "(no read)" for _, c in unfiled).most_common(),
+           "unfiled_sample": [p for p, _ in unfiled[:300]]}, open(f"{HUB}/catalogue/kit-map.json", "w"), indent=1)
+print(f"{filed} of {TOTAL} filed ({100*filed/TOTAL:.1f}%); kinds: {len(rules)}")
+for frame, v in tree.items():
+    n = sum(k["parts"] for ks in v["families"].values() for k in ks)
+    print(f"  {frame:8} {n:5}  " + "  ".join(f"{f}:{sum(k['parts'] for k in ks)}" for f, ks in v["families"].items()))
+print("unfiled by cat:", collections.Counter(c or "(no read)" for _, c in unfiled).most_common(15))
+print("empty kinds:", [k for (f, fa, k) in [(a, b, c) for a, b, c, _, _ in rules] if not out[(f, fa, k)]])
+# the page reads a copy without the part ids
+d = json.load(open(f"{HUB}/catalogue/kit-map.json"))
+for f in d["tree"].values():
+    for ks in f["families"].values():
+        for k in ks: k.pop("ids", None)
+d.pop("unfiled_sample", None)
+json.dump(d, open(f"{HUB}/catalogue/kit-map.slim.json", "w"))

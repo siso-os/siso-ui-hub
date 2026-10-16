@@ -12,12 +12,13 @@
 // Decisions are bookmarks (siso/base/<category>, siso/take/side-nav/<part>, siso/skip/<part id>), so they reach
 // catalogue/bookmarks.json and every agent the way his other bookmarks do. Private build only.
 import { useEffect, useMemo, useState } from "react"
-import { Link } from "react-router-dom"
+import { Link, useSearchParams } from "react-router-dom"
 import { Check, Layers, X } from "lucide-react"
 import { cn } from "@/lib/utils"
 import { catLink, catName, dataUrl, fmtInt, groupLabel, itemHref, useIndex, type Index, type Row } from "@/lib/data"
 import { setBookmark, useBookmarks, type Mark } from "@/lib/bookmarks"
-import { Stars } from "@/components/ItemCard"
+import { Stars, isDrawn } from "@/components/ItemCard"
+import { FacetMenu } from "@/components/FacetMenu"
 import { PickDeck, deckRows, typeId, type Slot } from "@/components/PickDeck"
 import { SCALES, type ONode, type Scale } from "@/lib/ontology"
 import { matchRows, useKnowledge, type Variation } from "@/lib/knowledge"
@@ -142,19 +143,15 @@ export default function Siso() {
   if (idx.public) return <p className="text-sm text-muted-foreground">The SISO set lives in the signed-in build.</p>
 
   return (
-    <div className="space-y-10" data-verify-siso={all.length}>
-      <header>
-        <p className="text-[11px] font-medium tracking-[0.14em] text-muted-foreground uppercase">The SISO set</p>
-        <h1 className="mt-1 text-[28px] leading-[1.1] font-semibold tracking-[-0.03em] lg:text-[32px]">One base for each part, chosen by you</h1>
-        <p className="mt-2 max-w-2xl text-sm text-muted-foreground">
-          Agents build from what you take here. The skeleton is every part at every scale, with the variations and edge cases SISO needs; pick a use case to see just
-          what one product needs, set a default library to fill the rest, and flip through each slot in the deck. Shells, part by part, are below.
-        </p>
-        <div className="mt-4 flex flex-wrap gap-2 text-[12.5px]">
-          <span className="siso-chip rounded-md px-2.5 py-1">
-            Shell parts taken <b className="font-mono tabular-nums">{partsTaken}</b> of {parts.length || "…"}
-          </span>
+    <div className="space-y-8" data-verify-siso={all.length}>
+      <header className="flex flex-wrap items-end justify-between gap-3">
+        <div>
+          <h1 className="text-2xl font-semibold tracking-tight">The SISO set</h1>
+          <p className="mt-1 text-sm text-muted-foreground">One base for each part. Agents build from what you take; your own pick always wins over the default library.</p>
         </div>
+        <a href="#shells" className="siso-chip inline-flex h-8 items-center gap-1.5 rounded-lg px-3 text-[12.5px]">
+          Shell parts taken <b className="font-mono tabular-nums">{partsTaken}</b> of {parts.length || "…"}
+        </a>
       </header>
 
       <Skeleton />
@@ -208,7 +205,7 @@ function Shells({ schema, marks }: { schema: Schema | null | undefined; marks: R
   if (schema === undefined) return <p className="text-sm text-muted-foreground">Loading the shell schema…</p>
   if (!schema) return <p className="text-sm text-muted-foreground">No shell schema in this build yet (catalogue/schema/side-nav-parts.json).</p>
   return (
-    <section data-verify-shells={schema.parts.length}>
+    <section id="shells" className="scroll-mt-4" data-verify-shells={schema.parts.length}>
       <h2 className="text-[20px] font-semibold">Shells, part by part</h2>
       <p className="mb-4 max-w-2xl text-sm text-muted-foreground">Every side nav we have, taken apart. Take the way you want each part done; a shell is then any mix of them.</p>
       <div className="mb-5 grid gap-3 md:grid-cols-3">
@@ -400,9 +397,20 @@ export function Skeleton() {
   const know = useKnowledge()
   const vars = know?.variations
   const ucs = know?.use_cases?.use_cases || []
-  // ?uc=<use case> and ?scale=<scale> open the skeleton there (Home's strip links in)
-  const [uc, setUc] = useState<string>(() => new URLSearchParams(location.search).get("uc") || "")
-  const [scale, setScale] = useState<Scale>(() => (new URLSearchParams(location.search).get("scale") as Scale) || "component")
+  // ?uc=<use case> and ?scale=<scale> are the URL's, so the side nav's "Pick atoms" rows and Home's strip land here
+  // even when the page is already open
+  const [sp, setSp] = useSearchParams()
+  const uc = sp.get("uc") || ""
+  const scale = (SCALES.some((s) => s.id === sp.get("scale")) ? sp.get("scale") : "component") as Scale
+  const go = (next: { scale?: Scale; uc?: string }) => {
+    const q = new URLSearchParams(sp)
+    if (next.scale) q.set("scale", next.scale)
+    if (next.uc !== undefined) {
+      if (next.uc) q.set("uc", next.uc)
+      else q.delete("uc")
+    }
+    setSp(q, { replace: true })
+  }
   const [deck, setDeck] = useState<{ slots: Slot[]; start: number } | null>(null)
   const o = idx.onto
   // the Assets banks: icons are the Icon atom, the rest one bank a kind
@@ -433,6 +441,8 @@ export function Skeleton() {
     return [...m.entries()].sort((a, b) => b[1] - a[1]).slice(0, 40)
   }, [flat])
   const fromLib = (s: Slot) => (lib ? deckRows(s.rows, marks).find((r) => r.s === lib && r.p) : undefined)
+  // the picture a card shows when nothing is taken yet: the deck's first candidate you can see
+  const firstSeen = useMemo(() => new Map(all.map(({ n, slots }) => [n.key, deckRows(slots[0].rows, marks).find((r) => r.p && !r.ph)])), [all, marks])
   const done = (sc: Scale) => nodesOf(sc).filter((n) => pickOf(idx, marks, { key: `siso/base/${n.key}`, title: "", sub: "the base", rows: [] }, n)).length
   const picked = flat.filter((s) => pickOf(idx, marks, s)).length
   const filled = lib ? flat.filter((s) => !pickOf(idx, marks, s) && fromLib(s)).length : 0
@@ -440,128 +450,125 @@ export function Skeleton() {
   const groupOf = (x: { n: ONode; must?: boolean }) => (useCase ? (x.must ? "Must have" : "Should have") : x.n.group || "")
   const groups: string[] = []
   for (const x of all) if (!groups.includes(groupOf(x))) groups.push(groupOf(x))
+  const pct = (x: number) => `${flat.length ? (x / flat.length) * 100 : 0}%`
   return (
     <section data-verify-skeleton={flat.length}>
-      <div className="mb-4 flex flex-wrap items-end justify-between gap-3">
-        <div>
-          <h2 className="text-[20px] font-semibold">The skeleton</h2>
-          <p className="max-w-2xl text-sm text-muted-foreground">
-            Every part SISO builds with, at every scale, with the variations and edge cases it needs. Take one base per slot: click a slot to flip through its candidates in the deck.
-          </p>
-          <p className="mt-1 text-[12.5px] text-muted-foreground" data-verify-skeleton-counts>
-            {fmtInt(picked)} picked · {lib ? `${fmtInt(filled)} filled by ${lib} · ` : ""}
-            {fmtInt(flat.length - picked - filled)} to go · {fmtInt(gaps)} gaps in the library
-          </p>
-        </div>
-        <div className="flex flex-wrap items-center gap-2">
-          <label className="flex items-center gap-1.5 text-[12.5px] text-muted-foreground">
-            Default library
-            <select
-              value={lib || ""}
-              onChange={(e) => setBookmark(LIB_KEY, !!e.target.value, e.target.value ? { note: e.target.value } : {})}
-              className="siso-chip h-8 rounded-lg px-2 text-[12.5px] text-foreground"
-              data-verify-default-lib
-            >
-              <option value="">none</option>
-              {libs.map(([s, n]) => (
-                <option key={s} value={s}>
-                  {s} ({n} of {flat.length})
-                </option>
-              ))}
-            </select>
-          </label>
-          <div className="siso-well flex gap-px p-[3px]" role="tablist">
-            {SCALES.map((s) => (
-              <button
-                key={s.id}
-                role="tab"
-                aria-selected={scale === s.id}
-                onClick={() => setScale(s.id)}
-                className={cn("siso-press rounded-[7px] px-3 py-1 text-[13px]", scale === s.id ? "siso-raised" : "text-muted-foreground hover:text-foreground")}
-              >
-                {s.label}{" "}
-                <span className="font-mono text-[11px] text-muted-foreground tabular-nums">
-                  {done(s.id)}/{nodesOf(s.id).length}
-                </span>
-              </button>
-            ))}
-          </div>
-        </div>
-      </div>
-      {ucs.length > 0 && (
-        <div className="mb-5 flex flex-wrap items-center gap-1.5" data-verify-use-cases={ucs.length}>
-          <span className="mr-1 text-xs text-muted-foreground">Use case</span>
-          <button onClick={() => setUc("")} className="siso-chip inline-flex h-7 items-center rounded-full px-3 text-xs" data-on={!uc || undefined}>
-            Every part, by scale
+      {/* which scale, then the two things that change what you see: a use case and a library to fill the gaps */}
+      <div className="-mx-1 flex gap-1 overflow-x-auto border-b px-1 pb-px" role="tablist" aria-label="Scale">
+        {SCALES.map((s) => (
+          <button
+            key={s.id}
+            role="tab"
+            aria-selected={!useCase && scale === s.id}
+            onClick={() => go({ scale: s.id, uc: "" })}
+            className={cn("siso-tab -mb-px shrink-0 px-2.5 py-2 text-sm whitespace-nowrap transition-colors", !useCase && scale === s.id ? "font-medium text-foreground" : "text-muted-foreground hover:text-foreground")}
+          >
+            {s.label}
+            <span className="ml-1.5 font-mono text-[11px] text-muted-foreground tabular-nums">
+              {done(s.id)}/{nodesOf(s.id).length}
+            </span>
           </button>
-          {ucs.map((u) => (
-            <button key={u.id} onClick={() => setUc(u.id)} title={u.about} className="siso-chip inline-flex h-7 items-center gap-1.5 rounded-full px-3 text-xs" data-on={uc === u.id || undefined}>
-              {u.name}
-              <span className="font-mono text-[10.5px] text-muted-foreground tabular-nums">{u.needs.length}</span>
-            </button>
-          ))}
-          {useCase?.about && <p className="w-full text-[12.5px] text-muted-foreground">{useCase.about}</p>}
+        ))}
+      </div>
+      <div className="mt-3 mb-5 flex flex-wrap items-center gap-2">
+        {ucs.length > 0 && <FacetMenu label="Use case" all="Every part, by scale" items={ucs.map((u) => [u.id, u.needs.length, u.name] as [string, number, string])} value={uc || "all"} onChange={(v) => go({ uc: v === "all" ? "" : v })} />}
+        <FacetMenu label="Default library" all="None" items={libs.map(([s, n]) => [s, n] as [string, number])} value={lib || "all"} onChange={(v) => setBookmark(LIB_KEY, v !== "all", v !== "all" ? { note: v } : {})} />
+        <div className="ml-auto flex min-w-64 items-center gap-3" data-verify-skeleton-counts>
+          <div className="flex h-1.5 w-40 overflow-hidden rounded-full bg-foreground/10" aria-hidden>
+            <span className="h-full bg-emerald-500" style={{ width: pct(picked) }} />
+            <span className="h-full bg-sky-500/70" style={{ width: pct(filled) }} />
+          </div>
+          <span className="text-[12.5px] whitespace-nowrap text-muted-foreground tabular-nums">
+            <b className="font-medium text-foreground">{fmtInt(picked)}</b> of {fmtInt(flat.length)} picked{lib ? ` · ${fmtInt(filled)} from ${lib}` : ""} · {fmtInt(gaps)} gaps
+          </span>
         </div>
-      )}
+        {useCase?.about && <p className="w-full text-[12.5px] text-muted-foreground">{useCase.about}</p>}
+      </div>
       {groups.map((g) => (
         <div key={g} className="mb-6">
           {groups.length > 1 && <p className="siso-nav-label mb-2 text-muted-foreground">{g}</p>}
-          <div className="grid gap-2 xl:grid-cols-2">
+          <div className="grid gap-3 [grid-template-columns:repeat(auto-fill,minmax(212px,1fr))]">
             {all
               .filter((x) => groupOf(x) === g)
-              .map(({ n, slots }) => {
-                const picks = slots.map((s) => pickOf(idx, marks, s, n))
-                const taken = picks.filter(Boolean).length
-                return (
-                  <div key={n.key} className="bg-card rounded-xl border p-3" data-verify-node={n.key}>
-                    <div className="mb-2 flex items-center gap-2">
-                      <span className={cn("size-2 shrink-0 rounded-full", picks[0] ? "bg-emerald-500" : slots[0].rows.length ? "bg-amber-400" : "bg-red-400")} />
-                      <Link to={`/x/${n.key}`} className="truncate text-[14px] font-medium hover:underline">
-                        {n.name}
-                      </Link>
-                      <span className="ml-auto font-mono text-[11px] text-muted-foreground tabular-nums">
-                        {taken}/{slots.length} · {fmtInt(rowsOf(n).length)}
-                      </span>
-                    </div>
-                    <div className="flex flex-wrap gap-1.5">
-                      {slots.map((s, k) => {
-                        const p = picks[k]
-                        const d = p ? undefined : fromLib(s)
-                        const shown = p || d
-                        return (
-                          <button
-                            key={s.key}
-                            type="button"
-                            disabled={!s.rows.length}
-                            onClick={() => setDeck({ slots: flat, start: flat.indexOf(s) })}
-                            className={cn(
-                              "siso-chip inline-flex h-8 items-center gap-1.5 rounded-lg pr-2.5 text-[12px] disabled:opacity-40",
-                              shown ? "pl-1" : "pl-2.5",
-                              p && "border-emerald-500/60",
-                              d && "border-sky-500/40",
-                              s.gap && !shown && "border-dashed",
-                            )}
-                            data-verify-slot={s.key}
-                            title={p ? `SISO base: ${p.t} (${p.s})` : d ? `From ${lib}: ${d.t}. Click to pick your own` : `${s.why || `Pick a base for ${s.title}`}${s.gap ? " (a gap: nothing typed this way yet)" : ""}`}
-                          >
-                            {shown?.p && <img src={shown.p} alt="" className={cn("size-6 rounded object-cover", d && "opacity-70")} />}
-                            {p && !p.p && <Check className="size-3.5 text-emerald-500" />}
-                            {k === 0 ? <Layers className="size-3.5 text-muted-foreground" /> : null}
-                            <span>{k === 0 ? "Base" : s.sub}</span>
-                            {s.kind && KIND_MARK[s.kind] && <span className="text-[10px] text-muted-foreground">{KIND_MARK[s.kind]}</span>}
-                            <span className="font-mono text-[10.5px] text-muted-foreground tabular-nums">{s.gap ? "gap" : fmtInt(s.rows.length)}</span>
-                          </button>
-                        )
-                      })}
-                    </div>
-                  </div>
-                )
-              })}
+              .map(({ n, slots }) => (
+                <BaseCard
+                  key={n.key}
+                  n={n}
+                  slots={slots}
+                  picks={slots.map((s) => pickOf(idx, marks, s, n))}
+                  fills={slots.map((s) => fromLib(s))}
+                  tryRow={firstSeen.get(n.key)}
+                  lib={lib}
+                  parts={rowsOf(n).length}
+                  onOpen={(k) => setDeck({ slots: flat, start: flat.indexOf(slots[k]) })}
+                />
+              ))}
           </div>
         </div>
       ))}
       {deck && <PickDeck slots={deck.slots} start={deck.start} onClose={() => setDeck(null)} />}
     </section>
+  )
+}
+
+/** one part of the SISO set as a picture (Shaan, 15 Oct: "picking our base somehow"): its base as it stands (his pick,
+ *  else the default library's, else the deck's first candidate, faded, to try), then its variations as a bar you click
+ *  into, with the next one to pick named */
+function BaseCard({ n, slots, picks, fills, tryRow, lib, parts, onOpen }: { n: ONode; slots: Slot[]; picks: (Row | undefined)[]; fills: (Row | undefined)[]; tryRow?: Row; lib?: string; parts: number; onOpen: (k: number) => void }) {
+  const base = picks[0] || fills[0]
+  const shown = base || tryRow
+  const [broken, setBroken] = useState(false)
+  const empty = !slots[0].rows.length
+  const vs = slots.slice(1)
+  const taken = picks.filter(Boolean).length
+  const next = vs.findIndex((_, k) => !picks[k + 1] && !fills[k + 1])
+  const state = picks[0] ? "picked" : fills[0] ? "filled" : empty ? "gap" : "open"
+  return (
+    <article className="group/base overflow-hidden rounded-xl border border-border/60 bg-card/50 transition-colors duration-150 hover:border-foreground/25" data-verify-node={n.key} data-state={state}>
+      <button type="button" disabled={empty} onClick={() => onOpen(0)} className="relative block aspect-[16/10] w-full overflow-hidden bg-foreground/[0.03] disabled:cursor-not-allowed" aria-label={`${n.name}: ${picks[0] ? "change the SISO base" : "pick a base"}`} data-verify-slot={slots[0].key}>
+        {shown?.p && !broken ? (
+          <img src={shown.p} alt="" loading="lazy" decoding="async" onError={() => setBroken(true)} className={cn("size-full transition-[opacity,transform] duration-300 group-hover/base:scale-[1.02]", isDrawn(shown) ? "object-contain p-[18%]" : "object-cover object-top", !base && "opacity-75 group-hover/base:opacity-100")} />
+        ) : (
+          <span className="grid size-full place-items-center text-xs text-muted-foreground/70">{empty ? "Nothing in the library yet" : "No picture yet"}</span>
+        )}
+        <span className={cn("absolute top-2 left-2 inline-flex h-5 items-center gap-1 rounded-md px-1.5 text-[10.5px] font-medium backdrop-blur-md", picks[0] ? "bg-emerald-500/20 text-emerald-300" : fills[0] ? "bg-sky-500/20 text-sky-300" : empty ? "bg-rose-500/20 text-rose-300" : "bg-background/70 text-amber-300")}>
+          {picks[0] ? <><Check className="size-3" /> SISO base</> : fills[0] ? `from ${lib}` : empty ? "gap" : "pick a base"}
+        </span>
+        {!empty && (
+          <span className="absolute right-2 bottom-2 inline-flex h-6 items-center gap-1 rounded-md bg-background/80 px-2 text-[11px] opacity-0 backdrop-blur-md transition-opacity duration-150 group-hover/base:opacity-100">
+            <Layers className="size-3" /> Flip through {fmtInt(slots[0].rows.length)}
+          </span>
+        )}
+      </button>
+      <div className="px-2.5 pt-2 pb-2.5">
+        <div className="flex items-baseline gap-2">
+          <Link to={`/x/${n.key}`} className="truncate text-[13.5px] font-medium hover:underline">{n.name}</Link>
+          <span className="ml-auto shrink-0 font-mono text-[10.5px] text-muted-foreground tabular-nums" title={`${taken} of ${slots.length} slots picked · ${fmtInt(parts)} parts`}>{taken}/{slots.length}</span>
+        </div>
+        <p className="mt-0.5 truncate text-[11px] text-muted-foreground">{base ? `${base.t} · ${base.s}` : tryRow ? `try: ${tryRow.t}` : " "}</p>
+        {vs.length > 0 && (
+          <>
+            <div className="mt-2 flex gap-[3px]" role="group" aria-label={`${n.name} variations`}>
+              {vs.map((s, k) => (
+                <button
+                  key={s.key}
+                  type="button"
+                  disabled={!s.rows.length}
+                  onClick={() => onOpen(k + 1)}
+                  title={`${s.sub}${picks[k + 1] ? ` · taken: ${picks[k + 1]!.t}` : fills[k + 1] ? ` · from ${lib}` : s.gap ? " · a gap: nothing typed this way yet" : ""}`}
+                  className={cn("h-1.5 flex-1 rounded-full transition-[transform,background-color] duration-150 hover:scale-y-[1.8]", picks[k + 1] ? "bg-emerald-500" : fills[k + 1] ? "bg-sky-500/70" : s.gap ? "bg-rose-400/40" : "bg-foreground/15 hover:bg-foreground/40")}
+                  data-verify-slot={s.key}
+                />
+              ))}
+            </div>
+            <button type="button" onClick={() => onOpen(next >= 0 ? next + 1 : 1)} className="mt-1.5 flex w-full items-baseline gap-1 text-left text-[11px] text-muted-foreground hover:text-foreground">
+              <span className="shrink-0 whitespace-nowrap tabular-nums">{vs.filter((_, k) => picks[k + 1]).length} of {vs.length} variations</span>
+              {next >= 0 && <span className="min-w-0 truncate">· next: <span className="text-foreground/85">{vs[next].sub}</span>{vs[next].kind && KIND_MARK[vs[next].kind!] ? ` (${KIND_MARK[vs[next].kind!]})` : ""}</span>}
+            </button>
+          </>
+        )}
+      </div>
+    </article>
   )
 }
 

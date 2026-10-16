@@ -1,0 +1,425 @@
+{
+"lib": "visx",
+"source": "gh-airbnb-visx",
+"homepage": null,
+"description": null,
+"items": 16,
+"parts": [
+{
+"id": "visx/area-chart",
+"name": "area-chart",
+"title": "Area Chart",
+"description": "Themed, responsive, accessible area chart built from visx primitives.",
+"type": "block",
+"cat": "data-viz/chart",
+"domain": [],
+"file": "charts/area-chart/area-chart.tsx",
+"files": [
+"charts/area-chart/area-chart.tsx"
+],
+"deps": [
+"@visx/a11y",
+"@visx/axis",
+"@visx/chart",
+"@visx/grid",
+"@visx/responsive",
+"@visx/scale",
+"@visx/shape",
+"@visx/theme"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add @visx/area-chart"
+},
+{
+"id": "visx/bar-chart",
+"name": "bar-chart",
+"title": "Bar Chart",
+"description": "Themed, responsive, accessible bar chart built from visx primitives.",
+"type": "block",
+"cat": "data-viz/chart",
+"domain": [],
+"file": "charts/bar-chart/bar-chart.tsx",
+"files": [
+"charts/bar-chart/bar-chart.tsx",
+"charts/bar-chart/chart-ui.tsx"
+],
+"deps": [
+"@visx/a11y",
+"@visx/axis",
+"@visx/chart",
+"@visx/grid",
+"@visx/responsive",
+"@visx/scale",
+"@visx/shape",
+"@visx/theme"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add @visx/bar-chart"
+},
+{
+"id": "visx/grouped-bar-chart",
+"name": "grouped-bar-chart",
+"title": "Grouped Bar Chart",
+"description": "Themed, responsive, accessible grouped bar chart built from visx primitives.",
+"type": "block",
+"cat": "data-viz/chart",
+"domain": [],
+"file": "charts/grouped-bar-chart/grouped-bar-chart.tsx",
+"files": [
+"charts/grouped-bar-chart/grouped-bar-chart.tsx",
+"charts/bar-chart/chart-ui.tsx"
+],
+"deps": [
+"@visx/a11y",
+"@visx/axis",
+"@visx/chart",
+"@visx/grid",
+"@visx/responsive",
+"@visx/scale",
+"@visx/shape",
+"@visx/theme"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add @visx/grouped-bar-chart"
+},
+{
+"id": "visx/heatmap-chart",
+"name": "heatmap-chart",
+"title": "Heatmap Chart",
+"description": "Themed, responsive, accessible heatmap chart built from visx primitives.",
+"type": "block",
+"cat": "data-viz/chart",
+"domain": [
+"maps"
+],
+"file": "charts/heatmap-chart/heatmap-chart.tsx",
+"files": [
+"charts/heatmap-chart/heatmap-chart.tsx"
+],
+"deps": [
+"@visx/a11y",
+"@visx/chart",
+"@visx/heatmap",
+"@visx/responsive",
+"@visx/scale",
+"@visx/theme"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add @visx/heatmap-chart"
+},
+{
+"id": "visx/histogram-chart",
+"name": "histogram-chart",
+"title": "Histogram Chart",
+"description": "Themed, responsive, accessible histogram chart built from visx primitives.",
+"type": "block",
+"cat": "data-viz/chart",
+"domain": [],
+"file": "charts/histogram-chart/histogram-chart.tsx",
+"files": [
+"charts/histogram-chart/histogram-chart.tsx"
+],
+"deps": [
+"@visx/a11y",
+"@visx/axis",
+"@visx/chart",
+"@visx/grid",
+"@visx/responsive",
+"@visx/scale",
+"@visx/shape",
+"@visx/theme"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add @visx/histogram-chart"
+},
+{
+"id": "visx/horizontal-stacked-bar-chart",
+"name": "horizontal-stacked-bar-chart",
+"title": "Horizontal Stacked Bar Chart",
+"description": "Themed, responsive, accessible horizontal stacked bar chart built from visx primitives.",
+"type": "block",
+"cat": "data-viz/chart",
+"domain": [],
+"file": "charts/horizontal-stacked-bar-chart/horizontal-stacked-bar-chart.tsx",
+"files": [
+"charts/horizontal-stacked-bar-chart/horizontal-stacked-bar-chart.tsx",
+"charts/bar-chart/chart-ui.tsx"
+],
+"deps": [
+"@visx/a11y",
+"@visx/axis",
+"@visx/chart",
+"@visx/grid",
+"@visx/responsive",
+"@visx/scale",
+"@visx/shape",
+"@visx/theme"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add @visx/horizontal-stacked-bar-chart"
+},
+{
+"id": "visx/line-chart",
+"name": "line-chart",
+"title": "Line Chart",
+"description": "Themed, responsive, accessible line chart built from visx primitives.",
+"type": "block",
+"cat": "data-viz/chart",
+"domain": [],
+"file": "charts/line-chart/line-chart.tsx",
+"files": [
+"charts/line-chart/line-chart.tsx"
+],
+"deps": [
+"@visx/a11y",
+"@visx/axis",
+"@visx/chart",
+"@visx/grid",
+"@visx/responsive",
+"@visx/scale",
+"@visx/shape",
+"@visx/theme"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add @visx/line-chart"
+},
+{
+"id": "visx/multi-series-line-chart",
+"name": "multi-series-line-chart",
+"title": "Multi-series Line Chart",
+"description": "Themed, responsive, accessible multi-series line chart built from visx primitives.",
+"type": "block",
+"cat": "data-viz/chart",
+"domain": [],
+"file": "charts/multi-series-line-chart/multi-series-line-chart.tsx",
+"files": [
+"charts/multi-series-line-chart/multi-series-line-chart.tsx",
+"charts/bar-chart/chart-ui.tsx"
+],
+"deps": [
+"@visx/a11y",
+"@visx/axis",
+"@visx/chart",
+"@visx/grid",
+"@visx/responsive",
+"@visx/scale",
+"@visx/shape",
+"@visx/theme"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add @visx/multi-series-line-chart"
+},
+{
+"id": "visx/pie-chart",
+"name": "pie-chart",
+"title": "Pie Chart",
+"description": "Themed, responsive, accessible pie chart built from visx primitives.",
+"type": "block",
+"cat": "data-viz/chart",
+"domain": [],
+"file": "charts/pie-chart/pie-chart.tsx",
+"files": [
+"charts/pie-chart/pie-chart.tsx"
+],
+"deps": [
+"@visx/a11y",
+"@visx/chart",
+"@visx/responsive",
+"@visx/shape",
+"@visx/theme"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add @visx/pie-chart"
+},
+{
+"id": "visx/radar-chart",
+"name": "radar-chart",
+"title": "Radar Chart",
+"description": "Themed, responsive, accessible radar chart built from visx primitives.",
+"type": "block",
+"cat": "data-viz/chart",
+"domain": [],
+"file": "charts/radar-chart/radar-chart.tsx",
+"files": [
+"charts/radar-chart/radar-chart.tsx"
+],
+"deps": [
+"@visx/a11y",
+"@visx/chart",
+"@visx/responsive",
+"@visx/scale",
+"@visx/theme"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add @visx/radar-chart"
+},
+{
+"id": "visx/radial-bar-chart",
+"name": "radial-bar-chart",
+"title": "Radial Bar Chart",
+"description": "Themed, responsive, accessible radial bar chart built from visx primitives.",
+"type": "block",
+"cat": "data-viz/chart",
+"domain": [],
+"file": "charts/radial-bar-chart/radial-bar-chart.tsx",
+"files": [
+"charts/radial-bar-chart/radial-bar-chart.tsx"
+],
+"deps": [
+"@visx/a11y",
+"@visx/chart",
+"@visx/responsive",
+"@visx/scale",
+"@visx/shape",
+"@visx/theme"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add @visx/radial-bar-chart"
+},
+{
+"id": "visx/scatter-chart",
+"name": "scatter-chart",
+"title": "Scatter Chart",
+"description": "Themed, responsive, accessible scatter chart built from visx primitives.",
+"type": "block",
+"cat": "data-viz/chart",
+"domain": [],
+"file": "charts/scatter-chart/scatter-chart.tsx",
+"files": [
+"charts/scatter-chart/scatter-chart.tsx"
+],
+"deps": [
+"@visx/a11y",
+"@visx/axis",
+"@visx/chart",
+"@visx/grid",
+"@visx/responsive",
+"@visx/scale",
+"@visx/shape",
+"@visx/theme"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add @visx/scatter-chart"
+},
+{
+"id": "visx/stacked-area-chart",
+"name": "stacked-area-chart",
+"title": "Stacked Area Chart",
+"description": "Themed, responsive, accessible stacked area chart built from visx primitives.",
+"type": "block",
+"cat": "data-viz/chart",
+"domain": [],
+"file": "charts/stacked-area-chart/stacked-area-chart.tsx",
+"files": [
+"charts/stacked-area-chart/stacked-area-chart.tsx",
+"charts/bar-chart/chart-ui.tsx"
+],
+"deps": [
+"@visx/a11y",
+"@visx/axis",
+"@visx/chart",
+"@visx/grid",
+"@visx/responsive",
+"@visx/scale",
+"@visx/shape",
+"@visx/theme"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add @visx/stacked-area-chart"
+},
+{
+"id": "visx/stacked-bar-chart",
+"name": "stacked-bar-chart",
+"title": "Stacked Bar Chart",
+"description": "Themed, responsive, accessible stacked bar chart built from visx primitives.",
+"type": "block",
+"cat": "data-viz/chart",
+"domain": [],
+"file": "charts/stacked-bar-chart/stacked-bar-chart.tsx",
+"files": [
+"charts/stacked-bar-chart/stacked-bar-chart.tsx",
+"charts/bar-chart/chart-ui.tsx"
+],
+"deps": [
+"@visx/a11y",
+"@visx/axis",
+"@visx/chart",
+"@visx/grid",
+"@visx/responsive",
+"@visx/scale",
+"@visx/shape",
+"@visx/theme"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add @visx/stacked-bar-chart"
+},
+{
+"id": "visx/threshold-chart",
+"name": "threshold-chart",
+"title": "Threshold Chart",
+"description": "Themed, responsive, accessible threshold chart built from visx primitives.",
+"type": "block",
+"cat": "data-viz/chart",
+"domain": [],
+"file": "charts/threshold-chart/threshold-chart.tsx",
+"files": [
+"charts/threshold-chart/threshold-chart.tsx",
+"charts/bar-chart/chart-ui.tsx"
+],
+"deps": [
+"@visx/a11y",
+"@visx/axis",
+"@visx/chart",
+"@visx/grid",
+"@visx/responsive",
+"@visx/scale",
+"@visx/shape",
+"@visx/threshold",
+"@visx/theme"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add @visx/threshold-chart"
+},
+{
+"id": "visx/treemap-chart",
+"name": "treemap-chart",
+"title": "Treemap Chart",
+"description": "Themed, responsive, accessible treemap chart built from visx primitives.",
+"type": "block",
+"cat": "data-viz/chart",
+"domain": [
+"maps"
+],
+"file": "charts/treemap-chart/treemap-chart.tsx",
+"files": [
+"charts/treemap-chart/treemap-chart.tsx"
+],
+"deps": [
+"@visx/a11y",
+"@visx/chart",
+"@visx/hierarchy",
+"@visx/responsive",
+"@visx/scale",
+"@visx/theme"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add @visx/treemap-chart"
+}
+]
+}

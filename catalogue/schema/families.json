@@ -1,0 +1,80 @@
+{
+  "about": "Taxonomy v2 (15 Oct 2026, .agents/plan/2026-10-15-sitemap-and-specs.md): Layer (top pill) > Family (side nav) > Kind (page) > Variation (slot). A kind is an ontology node, named by its key '<scale>/<id>' (catalogue/schema/ontology.json; looks and assets are built from the library's motion, themes and assets groups), so every part already placed on a node and every pick (siso/base/<key>) keeps its home. A kind may sit in a layer other than its scale (the app frame's parts are section nodes shown under Shells). Kinds with 'name' are the kit's own, with no library category yet: the sisolabs landing harvest and our apps fill them. A node no family names shows under 'More' in its scale's layer, so nothing is ever hidden.",
+  "layers": [
+    {
+      "id": "atoms", "name": "Atoms", "scale": "atom",
+      "families": [
+        { "id": "actions", "name": "Actions", "job": "press or follow", "kinds": ["atom/button", "atom/link"] },
+        { "id": "type", "name": "Type", "job": "words on the page", "kinds": ["atom/text"] },
+        { "id": "fields", "name": "Fields", "job": "type, tick, toggle or slide a value", "kinds": ["atom/text-input", "atom/choice", "atom/switch", "atom/slider"] },
+        { "id": "marks", "name": "Marks", "job": "small signs: who, what, which state", "kinds": ["atom/avatar", "atom/badge", "atom/status-dot"] },
+        { "id": "feedback", "name": "Feedback", "job": "waiting, progress and hints", "kinds": ["atom/loader", "atom/progress", "atom/tooltip"] },
+        { "id": "frame", "name": "Layout and media", "job": "space, scroll, pictures", "kinds": ["atom/layout", "atom/image"] }
+      ]
+    },
+    {
+      "id": "components", "name": "Components", "scale": "component",
+      "families": [
+        { "id": "input", "name": "Input", "job": "collect values", "kinds": ["component/field", "component/select", "component/search", "component/picker", "component/upload", "component/tags", "component/form"] },
+        { "id": "navigation", "name": "Navigation", "job": "move between places", "kinds": ["component/menu", "component/tabs", "component/breadcrumb", "component/pagination", "component/steps", "component/command", "component/toc", "component/dock"] },
+        { "id": "data", "name": "Data", "job": "rows, records and numbers", "kinds": ["component/table", "component/list", "component/tree", "component/board", "component/calendar", "component/timeline", "component/stat"] },
+        { "id": "charts", "name": "Charts and maps", "job": "numbers and places as pictures", "kinds": ["component/chart", "component/map"] },
+        { "id": "content", "name": "Content", "job": "blocks that hold things", "kinds": ["component/card", "component/accordion", "component/code", "component/empty"] },
+        { "id": "overlays", "name": "Overlays", "job": "float above the page", "kinds": ["component/dialog", "component/sheet", "component/popover", "component/lightbox"] },
+        { "id": "notices", "name": "Notices", "job": "tell the person something happened", "kinds": ["component/toast", "component/alert", "component/inbox"] },
+        { "id": "media", "name": "Media", "job": "pictures, video, devices", "kinds": ["component/gallery", "component/carousel", "component/player", "component/compare", "component/mockup"] },
+        { "id": "conversation", "name": "Conversation and AI", "job": "chat with people and agents", "kinds": ["component/message", "component/composer", "component/agent-parts"] },
+        { "id": "gamification", "name": "Gamification", "job": "streaks, badges, leaderboards", "kinds": ["component/widget"] }
+      ]
+    },
+    {
+      "id": "sections", "name": "Sections", "scale": "section",
+      "families": [
+        { "id": "top", "name": "Top of page", "job": "the first screen", "kinds": ["section/announcement", "section/nav", "section/hero"] },
+        { "id": "story", "name": "Story", "job": "what it is and how it works", "kinds": ["section/features", "section/how", "section/showcase", "section/about", "section/comparison"] },
+        { "id": "proof", "name": "Proof", "job": "why believe it", "kinds": ["section/logos", "section/testimonials", "section/stats", "section/team"] },
+        { "id": "convert", "name": "Convert", "job": "get the yes", "kinds": ["section/pricing", "section/faq", "section/cta", "section/contact"] },
+        { "id": "content", "name": "Content", "job": "blogs, docs, changelogs", "kinds": ["section/blog", { "key": "section/changelog", "name": "Changelog", "job": "what shipped, newest first" }, { "key": "section/docs-nav", "name": "Docs nav", "job": "a docs site's side tree and search" }] },
+        { "id": "bottom", "name": "Bottom", "job": "the end of a page", "kinds": ["section/footer"] },
+        { "id": "work", "name": "Work area", "job": "the inside of an app screen", "kinds": ["section/filters", "section/kpis", "section/data-view", "section/detail", "section/settings-panel", "section/chat"] },
+        { "id": "entry", "name": "Entry", "job": "getting in and set up", "kinds": ["section/auth", "section/onboarding"] }
+      ]
+    },
+    {
+      "id": "pages", "name": "Pages", "scale": "page",
+      "families": [
+        { "id": "marketing", "name": "Marketing pages", "job": "sell the product", "kinds": ["page/home", { "key": "page/product-page", "name": "Product", "job": "one product or feature, end to end" }, "page/pricing-page", "page/about-page", "page/contact-page"] },
+        { "id": "content", "name": "Content pages", "job": "read and learn", "kinds": ["page/blog-index", "page/article", { "key": "page/docs-page", "name": "Docs", "job": "a docs page: tree, article, on-this-page" }, { "key": "page/changelog-page", "name": "Changelog", "job": "every release, newest first" }] },
+        { "id": "utility", "name": "Utility pages", "job": "the pages every site needs", "kinds": ["page/auth-page", "page/not-found", { "key": "page/status-page", "name": "Status", "job": "is it up: systems, incidents, history" }] },
+        { "id": "work", "name": "App screens", "job": "where the work happens", "kinds": ["page/dashboard", "page/index", "page/record", "page/chat-screen"] },
+        { "id": "setup", "name": "Setup screens", "job": "account and first run", "kinds": ["page/settings", "page/onboarding-flow", "page/auth-screen"] }
+      ]
+    },
+    {
+      "id": "shells", "name": "Shells", "scale": "shell",
+      "families": [
+        { "id": "app-frame", "name": "App frame", "job": "the chrome around an app: side nav, top bar, page header", "kinds": ["section/shell", "section/sidebar", "section/top-bar", "section/page-header"] },
+        { "id": "site-frame", "name": "Site frame", "job": "the chrome around a site: top nav and footer", "kinds": [{ "key": "shell/site-frame", "name": "Site frame", "job": "top nav, page, footer; one per product, its icon and colour" }] },
+        { "id": "native-frame", "name": "Native app frame", "job": "a phone app's tab bar and stack", "kinds": [{ "key": "shell/native-frame", "name": "Native app frame", "job": "tab bar, screen stack, sheets" }] }
+      ]
+    },
+    {
+      "id": "style", "name": "Style", "scale": "look",
+      "families": [
+        { "id": "themes", "name": "Themes", "job": "colour, type and radius together", "kinds": ["look/theme", "look/style", { "key": "look/tokens", "name": "Tokens", "job": "the kit's colours, type, radii and motion; change one, see every part it touches" }] },
+        { "id": "text-motion", "name": "Text and numbers", "job": "words and figures that move", "kinds": ["look/text-effect", "look/number-ticker", "look/ascii"] },
+        { "id": "backgrounds", "name": "Backgrounds", "job": "what sits behind", "kinds": ["look/background", "look/shader", "look/gradient", "look/globe"] },
+        { "id": "interaction", "name": "Interaction", "job": "motion that answers the person", "kinds": ["look/cursor", "look/tilt-3d", "look/border", "look/marquee"] }
+      ]
+    },
+    {
+      "id": "assets", "name": "Assets", "scale": "asset",
+      "families": [
+        { "id": "icons", "name": "Icons", "job": "icon sets; the Icon atom draws them", "kinds": ["atom/icon"] },
+        { "id": "brand", "name": "Brand", "job": "logos and fonts", "kinds": ["asset/logo", "asset/font"] },
+        { "id": "images", "name": "Images", "job": "art, shapes, OG images, avatars, flags", "kinds": ["asset/illustration", "asset/shape", "asset/og-image", "asset/avatar", "asset/flag"] },
+        { "id": "sound", "name": "Sound", "job": "clicks, chimes, ambience", "kinds": ["asset/sound"] }
+      ]
+    }
+  ]
+}
