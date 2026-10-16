@@ -1,0 +1,42 @@
+/* ChannelSwitch — the screen is the content, transformed; the phosphor canvas
+   is the light, screened over it. While switching the box goes black behind
+   the picture, which is what shows through as the blanking bar during the
+   roll, and is isolated so the light blends with the tube and nothing else.
+   The picture refuses the pointer only while it is folded away. */
+
+.channel-switch {
+  position: relative;
+  overflow: hidden;
+}
+
+.channel-switch.is-switching {
+  background: #000;
+  isolation: isolate;
+}
+
+.channel-switch__screen {
+  position: relative;
+  height: 100%;
+  transform-origin: 50% 50%;
+}
+
+.channel-switch.is-switching .channel-switch__screen {
+  will-change: transform, filter, opacity;
+}
+
+.channel-switch.is-blanked .channel-switch__screen {
+  pointer-events: none;
+}
+
+.channel-switch__phosphor {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  pointer-events: none;
+}
+
+.channel-switch.is-switching .channel-switch__phosphor {
+  mix-blend-mode: screen;
+}

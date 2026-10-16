@@ -1,0 +1,64 @@
+"use client";
+
+/**
+ * SignOut — animated Phosphor icon.
+ *
+ * Leaves — the arrow winds up and lunges out, the door recoiling behind it.
+ *
+ * Geometry from Phosphor Icons (MIT, (c) 2023 Phosphor Icons). This file is yours:
+ * the keyframes below are ordinary data, so retune or replace them freely.
+ */
+
+import {
+  createAnimatedIcon,
+  type Choreography,
+  type IconGeometry,
+} from "./animated-icon";
+
+const GEOMETRY: IconGeometry = {
+  regular: [
+    ["polyline", { points: "112 40 48 40 48 216 112 216" }],
+    ["line", { x1: "112", y1: "128", x2: "224", y2: "128" }],
+    ["polyline", { points: "184 88 224 128 184 168" }],
+  ],
+  backdrop: {
+    duotone: [
+      ["path", { d: "M48,40H208a16,16,0,0,1,16,16V200a16,16,0,0,1-16,16H48a0,0,0,0,1,0,0V40A0,0,0,0,1,48,40Z", opacity: "0.2" }],
+    ],
+  },
+};
+
+const STROKE: Choreography = {
+  duration: 0.96,
+  parts: {
+    0: {
+      x: [0, 12, 0],
+      delay: 0.256,
+      duration: 0.6,
+      ease: ["easeIn", "easeOut"]
+    },
+    1: {
+      x: [0, 16, -5.2, 0],
+      y: [0, 0, 0, 0],
+      delay: 0,
+      duration: 0.6,
+      times: [0, 0.4, 0.72, 1],
+      ease: ["easeIn", "linear", "easeOut"]
+    },
+    2: {
+      x: [0, 20, -6.2, 0],
+      y: [0, 0, 0, 0],
+      duration: 0.6,
+      times: [0, 0.4, 0.72, 1],
+      ease: ["easeIn", "linear", "easeOut"]
+    }
+  }
+};
+
+export const SignOut = createAnimatedIcon(
+  "SignOut",
+  GEOMETRY,
+  STROKE,
+);
+
+export default SignOut;

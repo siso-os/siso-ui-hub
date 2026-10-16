@@ -1,0 +1,809 @@
+{
+ "sidebar": {
+  "job": "the app's main nav down the side",
+  "parts": [
+   {
+    "id": "reui/c-sidebar-1",
+    "title": "Application shell with a workspace switcher",
+    "file": "icons/c-sidebar-1.tsx",
+    "about": "Grouped navigation with count badges, row menus and a footer account menu."
+   },
+   {
+    "id": "reui/c-sidebar-2",
+    "title": "Icon rail that collapses",
+    "file": "icons/c-sidebar-2.tsx",
+    "about": "Labels give way to tooltips at 3rem, with a rail and a trigger to drive it."
+   },
+   {
+    "id": "reui/c-sidebar-3",
+    "title": "Documentation nav with sub-menus",
+    "file": "icons/c-sidebar-3.tsx",
+    "about": "A search field, sections that collapse and a sub-tree under the current page."
+   },
+   {
+    "id": "reui/c-sidebar-4",
+    "title": "Right-hand inspector panel",
+    "file": "icons/c-sidebar-4.tsx",
+    "about": "A floating off-canvas panel with row actions, linked counts and a status badge."
+   },
+   {
+    "id": "reui/c-sidebar-5",
+    "title": "Filtering, loading and empty states",
+    "file": "icons/c-sidebar-5.tsx",
+    "about": "A filter field, skeleton rows while a refresh runs, and a real empty state."
+   },
+   {
+    "id": "reui/c-sortable-6",
+    "title": "Sortable sidebar navigation with frame",
+    "file": "icons/c-sortable-6.tsx",
+    "about": "Sortable sidebar navigation with frame"
+   },
+   {
+    "id": "shadcn-dashboard/sidebar-01",
+    "title": "Sidebar 01 - Classic Admin Sidebar",
+    "file": "components/shadcn-dashboard/blocks/sidebar/sidebar-01/page.tsx",
+    "about": "Navigate dashboards with a clean vertical sidebar featuring grouped links for dashboards, pages, apps, and settings. Includes branding, a co"
+   },
+   {
+    "id": "shadcn-dashboard/sidebar-06",
+    "title": "Sidebar 06 - Card Layout Admin Dashboard Sidebar",
+    "file": "components/shadcn-dashboard/blocks/sidebar/sidebar-06/page.tsx",
+    "about": "Navigate large applications through collapsible menu groups, intuitive icons, and well-organized sections. Designed for admin interfaces tha"
+   },
+   {
+    "id": "shadcn-space/sidebar-01",
+    "title": "Sidebar 01 - Admin Dashboard Sidebar",
+    "file": "components/shadcn-space/blocks/sidebar-01/page.tsx",
+    "about": "A collapsible sidebar navigation with grouped menus, icons, and upgrade CTA, perfect for admin dashboards to organize pages, widgets, and ap"
+   },
+   {
+    "id": "shadcn-space/sidebar-06",
+    "title": "Sidebar 06 - Card Layout Admin Dashboard Sidebar",
+    "file": "components/shadcn-space/blocks/sidebar-06/page.tsx",
+    "about": "A responsive admin sidebar paired with a modern card-based dashboard layout. Features grouped navigation, icons, and collapsible menus, maki"
+   },
+   {
+    "id": "shadcnblocks/sidebar1",
+    "title": "Sidebar 1 - Basic Sidebar with Groups",
+    "file": "block/sidebar1/sidebar1.tsx",
+    "about": "A simple sidebar with logo header, labeled navigation groups, footer links, and main content area with breadcrumbs and toggle button."
+   },
+   {
+    "id": "animate-ui/demo-components-radix-sidebar",
+    "title": "Radix Sidebar Demo",
+    "file": "demo/components/radix/sidebar/index.tsx",
+    "about": "Demo showing a radix sidebar."
+   },
+   {
+    "id": "herocn/sidebar-01",
+    "title": "Sidebar 01",
+    "file": "_items/sidebar-01/icons/page.tsx",
+    "about": "A simple sidebar with navigation grouped by section."
+   },
+   {
+    "id": "herocn/sidebar-02",
+    "title": "Sidebar 02",
+    "file": "_items/sidebar-02/icons/page.tsx",
+    "about": "A sidebar with collapsible sections."
+   },
+   {
+    "id": "herocn/sidebar-03",
+    "title": "Sidebar 03",
+    "file": "_items/sidebar-03/icons/page.tsx",
+    "about": "A sidebar with submenus."
+   },
+   {
+    "id": "herocn/sidebar-04",
+    "title": "Sidebar 04",
+    "file": "_items/sidebar-04/icons/page.tsx",
+    "about": "A floating sidebar with submenus."
+   },
+   {
+    "id": "herocn/sidebar-05",
+    "title": "Sidebar 05",
+    "file": "_items/sidebar-05/icons/page.tsx",
+    "about": "A sidebar with collapsible submenus."
+   },
+   {
+    "id": "herocn/sidebar-06",
+    "title": "Sidebar 06",
+    "file": "_items/sidebar-06/icons/page.tsx",
+    "about": "A sidebar with submenus as dropdowns."
+   },
+   {
+    "id": "herocn/sidebar-07",
+    "title": "Sidebar 07",
+    "file": "_items/sidebar-07/icons/page.tsx",
+    "about": "A sidebar that collapses to icons."
+   },
+   {
+    "id": "herocn/sidebar-08",
+    "title": "Sidebar 08",
+    "file": "_items/sidebar-08/icons/page.tsx",
+    "about": "An inset sidebar with secondary navigation."
+   },
+   {
+    "id": "herocn/sidebar-09",
+    "title": "Sidebar 09",
+    "file": "_items/sidebar-09/icons/page.tsx",
+    "about": "Collapsible nested sidebars."
+   },
+   {
+    "id": "herocn/sidebar-10",
+    "title": "Sidebar 10",
+    "file": "_items/sidebar-10/icons/page.tsx",
+    "about": "A sidebar in a popover."
+   },
+   {
+    "id": "herocn/sidebar-11",
+    "title": "Sidebar 11",
+    "file": "_items/sidebar-11/icons/page.tsx",
+    "about": "A sidebar with a collapsible file tree."
+   },
+   {
+    "id": "herocn/sidebar-12",
+    "title": "Sidebar 12",
+    "file": "_items/sidebar-12/icons/page.tsx",
+    "about": "A sidebar with a calendar."
+   },
+   {
+    "id": "herocn/sidebar-13",
+    "title": "Sidebar 13",
+    "file": "_items/sidebar-13/icons/page.tsx",
+    "about": "A sidebar in a dialog."
+   },
+   {
+    "id": "herocn/sidebar-14",
+    "title": "Sidebar 14",
+    "file": "_items/sidebar-14/icons/page.tsx",
+    "about": "A sidebar on the right."
+   },
+   {
+    "id": "herocn/sidebar-15",
+    "title": "Sidebar 15",
+    "file": "_items/sidebar-15/icons/page.tsx",
+    "about": "A left and right sidebar."
+   },
+   {
+    "id": "herocn/sidebar-16",
+    "title": "Sidebar 16",
+    "file": "_items/sidebar-16/icons/page.tsx",
+    "about": "A sidebar with a sticky site header."
+   },
+   {
+    "id": "intentui/sidebar-01",
+    "title": "sidebar-01",
+    "file": "blocks/sidebar-01/page.tsx",
+    "about": "sidebar-01"
+   },
+   {
+    "id": "intentui/sidebar-02",
+    "title": "sidebar-02",
+    "file": "blocks/sidebar-02/page.tsx",
+    "about": "sidebar-02"
+   },
+   {
+    "id": "intentui/sidebar-03",
+    "title": "sidebar-03",
+    "file": "blocks/sidebar-03/page.tsx",
+    "about": "sidebar-03"
+   },
+   {
+    "id": "intentui/sidebar-04",
+    "title": "sidebar-04",
+    "file": "blocks/sidebar-04/page.tsx",
+    "about": "sidebar-04"
+   },
+   {
+    "id": "intentui/sidebar-05",
+    "title": "sidebar-05",
+    "file": "blocks/sidebar-05/page.tsx",
+    "about": "sidebar-05"
+   },
+   {
+    "id": "intentui/sidebar-06",
+    "title": "sidebar-06",
+    "file": "blocks/sidebar-06/page.tsx",
+    "about": "sidebar-06"
+   },
+   {
+    "id": "intentui/sidebar-07",
+    "title": "sidebar-07",
+    "file": "blocks/sidebar-07/page.tsx",
+    "about": "sidebar-07"
+   },
+   {
+    "id": "intentui/sidebar-08",
+    "title": "sidebar-08",
+    "file": "blocks/sidebar-08/page.tsx",
+    "about": "sidebar-08"
+   },
+   {
+    "id": "intentui/sidebar-09",
+    "title": "sidebar-09",
+    "file": "blocks/sidebar-09/page.tsx",
+    "about": "sidebar-09"
+   },
+   {
+    "id": "intentui/sidebar-12",
+    "title": "sidebar-12",
+    "file": "blocks/sidebar-12/page.tsx",
+    "about": "sidebar-12"
+   },
+   {
+    "id": "intentui/sidebar-15",
+    "title": "sidebar-15",
+    "file": "blocks/sidebar-15/page.tsx",
+    "about": "sidebar-15"
+   },
+   {
+    "id": "intentui/sidebar-16",
+    "title": "sidebar-16",
+    "file": "blocks/sidebar-16/page.tsx",
+    "about": "sidebar-16"
+   },
+   {
+    "id": "intentui/sidebar-17",
+    "title": "sidebar-17",
+    "file": "blocks/sidebar-17/page.tsx",
+    "about": "sidebar-17"
+   },
+   {
+    "id": "intentui/sidebar-18",
+    "title": "sidebar-18",
+    "file": "blocks/sidebar-18/page.tsx",
+    "about": "sidebar-18"
+   },
+   {
+    "id": "intentui/sidebar-19",
+    "title": "sidebar-19",
+    "file": "blocks/sidebar-19/page.tsx",
+    "about": "sidebar-19"
+   },
+   {
+    "id": "shadcn/sidebar-01",
+    "title": "Sidebar 01",
+    "file": "blocks/sidebar-01/page.tsx",
+    "about": "A simple sidebar with navigation grouped by section."
+   },
+   {
+    "id": "shadcn/sidebar-02",
+    "title": "Sidebar 02",
+    "file": "blocks/sidebar-02/page.tsx",
+    "about": "A sidebar with collapsible sections."
+   },
+   {
+    "id": "shadcn/sidebar-03",
+    "title": "Sidebar 03",
+    "file": "blocks/sidebar-03/page.tsx",
+    "about": "A sidebar with submenus."
+   },
+   {
+    "id": "shadcn/sidebar-04",
+    "title": "Sidebar 04",
+    "file": "blocks/sidebar-04/page.tsx",
+    "about": "A floating sidebar with submenus."
+   },
+   {
+    "id": "shadcn/sidebar-05",
+    "title": "Sidebar 05",
+    "file": "blocks/sidebar-05/page.tsx",
+    "about": "A sidebar with collapsible submenus."
+   },
+   {
+    "id": "shadcn/sidebar-06",
+    "title": "Sidebar 06",
+    "file": "blocks/sidebar-06/page.tsx",
+    "about": "A sidebar with submenus as dropdowns."
+   },
+   {
+    "id": "shadcn/sidebar-07",
+    "title": "Sidebar 07",
+    "file": "blocks/sidebar-07/page.tsx",
+    "about": "A sidebar that collapses to icons."
+   },
+   {
+    "id": "shadcn/sidebar-08",
+    "title": "Sidebar 08",
+    "file": "blocks/sidebar-08/page.tsx",
+    "about": "An inset sidebar with secondary navigation."
+   },
+   {
+    "id": "shadcn/sidebar-09",
+    "title": "Sidebar 09",
+    "file": "blocks/sidebar-09/page.tsx",
+    "about": "Collapsible nested sidebars."
+   },
+   {
+    "id": "shadcn/sidebar-10",
+    "title": "Sidebar 10",
+    "file": "blocks/sidebar-10/page.tsx",
+    "about": "A sidebar in a popover."
+   },
+   {
+    "id": "shadcn/sidebar-11",
+    "title": "Sidebar 11",
+    "file": "blocks/sidebar-11/page.tsx",
+    "about": "A sidebar with a collapsible file tree."
+   },
+   {
+    "id": "shadcn/sidebar-12",
+    "title": "Sidebar 12",
+    "file": "blocks/sidebar-12/page.tsx",
+    "about": "A sidebar with a calendar."
+   },
+   {
+    "id": "shadcn/sidebar-13",
+    "title": "Sidebar 13",
+    "file": "blocks/sidebar-13/page.tsx",
+    "about": "A sidebar in a dialog."
+   },
+   {
+    "id": "shadcn/sidebar-14",
+    "title": "Sidebar 14",
+    "file": "blocks/sidebar-14/page.tsx",
+    "about": "A sidebar on the right."
+   },
+   {
+    "id": "shadcn/sidebar-15",
+    "title": "Sidebar 15",
+    "file": "blocks/sidebar-15/page.tsx",
+    "about": "A left and right sidebar."
+   },
+   {
+    "id": "shadcn/sidebar-16",
+    "title": "Sidebar 16",
+    "file": "blocks/sidebar-16/page.tsx",
+    "about": "A sidebar with a sticky site header."
+   },
+   {
+    "id": "shadcnuikit/sidebar-layout",
+    "title": "Sidebar layouts",
+    "file": "contents/blocks/dashboard-ui/sidebar-layouts/1/components/app-header.tsx",
+    "about": "Full height sidebar layout with a brand button, scrollable Platform and Projects link groups and a header with a sidebar toggle and Dashboar"
+   },
+   {
+    "id": "animate-ui/components-radix-sidebar",
+    "title": "Sidebar",
+    "file": "components/radix/sidebar/index.tsx",
+    "about": "A composable, themeable and customizable sidebar component. Created by Shadcn and animated by Animate UI."
+   },
+   {
+    "id": "herocn/sidebar",
+    "title": "Sidebar",
+    "file": "icons/sidebar.tsx",
+    "about": ""
+   },
+   {
+    "id": "motion-lexicon/resizable-sidebar",
+    "title": "Resizable sidebar",
+    "file": "components/resizable-sidebar.tsx",
+    "about": "Preserves navigation context while a product sidebar resizes or collapses."
+   },
+   {
+    "id": "shark/sidebar",
+    "title": "Sidebar",
+    "file": "react/components/sidebar.tsx",
+    "about": ""
+   },
+   {
+    "id": "taki/sidebar",
+    "title": "Sidebar",
+    "file": "ui/sidebar.tsx",
+    "about": ""
+   },
+   {
+    "id": "intentui/sidebar",
+    "title": "sidebar",
+    "file": "components/ui/sidebar.tsx",
+    "about": "sidebar"
+   }
+  ]
+ },
+ "top-bar": {
+  "job": "the app's bar across the top",
+  "parts": [
+   {
+    "id": "reui/c-menubar-1",
+    "title": "Basic menubar.",
+    "file": "icons/c-menubar-1.tsx",
+    "about": "Basic menubar."
+   },
+   {
+    "id": "reui/c-menubar-2",
+    "title": "Menubar with dropdown submenus.",
+    "file": "icons/c-menubar-2.tsx",
+    "about": "Menubar with dropdown submenus."
+   },
+   {
+    "id": "reui/c-menubar-3",
+    "title": "Menubar with checkbox & radio items.",
+    "file": "icons/c-menubar-3.tsx",
+    "about": "Menubar with checkbox & radio items."
+   },
+   {
+    "id": "reui/c-menubar-4",
+    "title": "Menubar with icons.",
+    "file": "icons/c-menubar-4.tsx",
+    "about": "Menubar with icons."
+   },
+   {
+    "id": "reui/c-menubar-5",
+    "title": "Menubar for formatting and media.",
+    "file": "icons/c-menubar-5.tsx",
+    "about": "Menubar for formatting and media."
+   },
+   {
+    "id": "reui/c-navigation-menu-1",
+    "title": "Basic navigation menu.",
+    "file": "icons/c-navigation-menu-1.tsx",
+    "about": "Basic navigation menu."
+   },
+   {
+    "id": "reui/c-navigation-menu-2",
+    "title": "Navigation menu with grid layout.",
+    "file": "icons/c-navigation-menu-2.tsx",
+    "about": "Navigation menu with grid layout."
+   },
+   {
+    "id": "reui/c-navigation-menu-3",
+    "title": "Navigation menu with icons.",
+    "file": "icons/c-navigation-menu-3.tsx",
+    "about": "Navigation menu with icons."
+   },
+   {
+    "id": "reui/c-navigation-menu-4",
+    "title": "Navigation menu with grid layout and learn more button.",
+    "file": "icons/c-navigation-menu-4.tsx",
+    "about": "Navigation menu with grid layout and learn more button."
+   },
+   {
+    "id": "shadcn-space/navbar-01",
+    "title": "Navbar 01 - Minimal Agency Navbar",
+    "file": "components/shadcn-space/blocks/navbar-01/page.tsx",
+    "about": "A clean top navigation bar with logo, page links, and standout CTA button, ideal for agency or SaaS websites to guide users and drive collab"
+   },
+   {
+    "id": "shadcnblocks/navbar1",
+    "title": "Navbar 1 - Navbar with icon dropdown menus",
+    "file": "block/navbar1/navbar1.tsx",
+    "about": "A horizontal navbar with logo, navigation menu dropdowns showing icons and descriptions, login and signup buttons, and a mobile sheet with a"
+   },
+   {
+    "id": "shadcnblocks/navbar35",
+    "title": "Navbar 35 - Navbar with a centered icon menu",
+    "file": "block/navbar35/navbar35.tsx",
+    "about": "A horizontal navbar with the logo on the left, a centered menu of icon dropdowns and links, login and signup buttons on the right, and a mob"
+   },
+   {
+    "id": "shadcnblocks/navbar5",
+    "title": "Navbar 5 - Navbar with features dropdown grid",
+    "file": "block/navbar5/navbar5.tsx",
+    "about": "A compact navbar with logo, a two-column features dropdown, plain text links, sign-in and CTA buttons, and a top sheet mobile menu with acco"
+   },
+   {
+    "id": "animate-ui/demo-components-community-radial-nav",
+    "title": "Radial Nav Demo",
+    "file": "demo/components/community/radial-nav/index.tsx",
+    "about": "Demo Radial Nav."
+   },
+   {
+    "id": "intentui/navbar-01",
+    "title": "navbar-01",
+    "file": "blocks/navbar-01/page.tsx",
+    "about": "navbar-01"
+   },
+   {
+    "id": "intentui/navbar-02",
+    "title": "navbar-02",
+    "file": "blocks/navbar-02/page.tsx",
+    "about": "navbar-02"
+   },
+   {
+    "id": "intentui/navbar-03",
+    "title": "navbar-03",
+    "file": "blocks/navbar-03/page.tsx",
+    "about": "navbar-03"
+   },
+   {
+    "id": "intentui/navbar-04",
+    "title": "navbar-04",
+    "file": "blocks/navbar-04/page.tsx",
+    "about": "navbar-04"
+   },
+   {
+    "id": "intentui/navbar-05",
+    "title": "navbar-05",
+    "file": "blocks/navbar-05/page.tsx",
+    "about": "navbar-05"
+   },
+   {
+    "id": "reui/cascader-nav",
+    "title": "Cascader Nav",
+    "file": "icons/cascader-nav.tsx",
+    "about": ""
+   },
+   {
+    "id": "animate-ui/components-community-radial-nav",
+    "title": "Radial Nav",
+    "file": "components/community/radial-nav/index.tsx",
+    "about": "A circular navigation menu with animated pointer and expanding buttons for smooth interactive transitions."
+   },
+   {
+    "id": "cubby-ui/menubar",
+    "title": "Menubar",
+    "file": "menubar/menubar.tsx",
+    "about": "A menubar component."
+   },
+   {
+    "id": "cubby-ui/navigation-menu",
+    "title": "Navigation-menu",
+    "file": "navigation-menu/navigation-menu.tsx",
+    "about": "A navigation-menu component."
+   },
+   {
+    "id": "herocn/menubar",
+    "title": "Menubar",
+    "file": "icons/menubar.tsx",
+    "about": ""
+   },
+   {
+    "id": "herocn/navigation-menu",
+    "title": "Navigation menu",
+    "file": "icons/navigation-menu.tsx",
+    "about": ""
+   },
+   {
+    "id": "morphiq/ferrofluid-nav",
+    "title": "Ferrofluid Nav",
+    "file": "components/FerrofluidNav/FerrofluidNav.jsx",
+    "about": "A nav whose active pill stretches out of one item, thins to a neck and gathers into the next. Two capsule fields blended with a polynomial s"
+   },
+   {
+    "id": "motion-lexicon/mega-menu",
+    "title": "Mega menu",
+    "file": "components/mega-menu.tsx",
+    "about": "Keeps highlight, panel, and focus movement in one continuous navigation path."
+   },
+   {
+    "id": "shark/skip-nav",
+    "title": "Skip nav",
+    "file": "react/components/skip-nav.tsx",
+    "about": ""
+   },
+   {
+    "id": "tweenly/navbar",
+    "title": "Navbar",
+    "file": "navbar/navbar.tsx",
+    "about": "Five minimal, animated navigation bars: glass pill, scroll morph, sliding underline, dynamic island mega-menu and full-screen overlay."
+   },
+   {
+    "id": "intentui/navbar",
+    "title": "navbar",
+    "file": "components/ui/navbar.tsx",
+    "about": "navbar"
+   }
+  ]
+ },
+ "dock": {
+  "job": "a row of apps or tools",
+  "parts": [
+   {
+    "id": "shadcn-space/apple-dock-01",
+    "title": "Apple Dock 01 - Default",
+    "file": "components/shadcn-space/apple-dock/apple-dock-01.tsx",
+    "about": "Apple Dock component"
+   },
+   {
+    "id": "animbits/specials-reaction-dock-demo",
+    "title": "Reaction Dock Demo",
+    "file": "animations/specials/reaction-dock-demo.tsx",
+    "about": "Demo for the Reaction Dock component"
+   },
+   {
+    "id": "magicui/dock-demo-2",
+    "title": "Dock Demo 2",
+    "file": "example/dock-demo-2.tsx",
+    "about": "Second example showing a MacOS-style dock implementation."
+   },
+   {
+    "id": "magicui/dock-demo-3",
+    "title": "Dock Demo 3",
+    "file": "example/dock-demo-3.tsx",
+    "about": "Third example showing a MacOS-style dock implementation."
+   },
+   {
+    "id": "magicui/dock-demo",
+    "title": "Dock Demo",
+    "file": "example/dock-demo.tsx",
+    "about": "Example showing a MacOS-style dock implementation."
+   },
+   {
+    "id": "animbits/specials-reaction-dock",
+    "title": "Reaction Dock",
+    "file": "animations/specials/reaction-dock.tsx",
+    "about": "A smooth, scaling dock of reaction emojis with magnification effect"
+   },
+   {
+    "id": "morphiq/dock",
+    "title": "Magnifying Dock",
+    "file": "components/Dock/Dock.jsx",
+    "about": "A dock whose items swell as the pointer nears, on springs. Distance drives the scale, so the row breathes rather than one icon popping."
+   },
+   {
+    "id": "motion-lexicon/floating-dock",
+    "title": "Floating dock",
+    "file": "components/floating-dock.tsx",
+    "about": "Scales nearby destinations with restrained spring response to pointer distance."
+   },
+   {
+    "id": "motion-primitives/dock",
+    "title": "Dock",
+    "file": "icons/dock.tsx",
+    "about": ""
+   },
+   {
+    "id": "motiq/magnetic-dock",
+    "title": "Magnetic Dock",
+    "file": "cursor/magnetic-dock.tsx",
+    "about": "A launcher dock whose icons live inside one shared gaussian attraction field instead of per-icon hover states, so neighbours cascade and the"
+   },
+   {
+    "id": "tweenly/dock",
+    "title": "Dock",
+    "file": "dock/dock.tsx",
+    "about": "macOS-style dock with pointer-distance magnification, spring tooltips, active dots, badges and click bounce."
+   }
+  ]
+ },
+ "bottom-bar": {
+  "job": "the phone's tab bar along the bottom",
+  "parts": [
+   {
+    "id": "shark/bottom-navigation",
+    "title": "Bottom navigation",
+    "file": "react/components/bottom-navigation.tsx",
+    "about": ""
+   }
+  ]
+ },
+ "app-shell": {
+  "job": "sidebar plus top bar plus content",
+  "parts": [
+   {
+    "id": "shadcn-dashboard/application-shell-01",
+    "title": "Chat Application Shell 01",
+    "file": "components/shadcn-dashboard/blocks/application-shell/application-shell-01/page.tsx",
+    "about": "Create chat interfaces with a complete application layout including conversations, message area, and input sections. Save development time b"
+   },
+   {
+    "id": "shadcn-dashboard/application-shell-02",
+    "title": "Notes Application Shell 01",
+    "file": "components/shadcn-dashboard/blocks/application-shell/application-shell-02/page.tsx",
+    "about": "Organize note taking experiences with structured layouts for navigation, editing, and content management. Customize the shell to build docum"
+   },
+   {
+    "id": "shadcnblocks/application-shell1",
+    "title": "Application Shell 1 - Sidebar Shell with Breadcrumbs",
+    "file": "block/application-shell1/application-shell1.tsx",
+    "about": "A full application shell with collapsible sidebar, grouped navigation with submenus, user dropdown in footer, header with breadcrumbs, and p"
+   },
+   {
+    "id": "shadcnblocks/application-shell3",
+    "title": "Application Shell 3 - Top Navigation Bar Shell",
+    "file": "block/application-shell3/application-shell3.tsx",
+    "about": "An application shell with horizontal top navigation bar featuring dropdown menus, search input, user dropdown, and mobile sheet menu for res"
+   },
+   {
+    "id": "shadcnblocks/separator-separator-basic-4",
+    "title": "Separator Basic 4 - Section divider",
+    "file": "example/separator/separator-basic-4.tsx",
+    "about": "Section Divider."
+   },
+   {
+    "id": "shadcnblocks/separator-separator-spacing-2",
+    "title": "Separator Spacing 2 - Default spacing",
+    "file": "example/separator/separator-spacing-2.tsx",
+    "about": "Default Spacing."
+   },
+   {
+    "id": "taki/separator-demo",
+    "title": "Separator demo",
+    "file": "examples/separator-demo.tsx",
+    "about": ""
+   },
+   {
+    "id": "intentui/separator-example",
+    "title": "Separator",
+    "file": "components/examples/surfaces/separator/separator-example.tsx",
+    "about": "separator-example"
+   },
+   {
+    "id": "intentui/separator-orientation-example",
+    "title": "Separator Orientation",
+    "file": "components/examples/surfaces/separator/separator-orientation-example.tsx",
+    "about": "separator-orientation-example"
+   },
+   {
+    "id": "intentui/toggle-size-example",
+    "title": "Toggle Size",
+    "file": "components/examples/buttons/toggle/toggle-size-example.tsx",
+    "about": "toggle-size-example"
+   },
+   {
+    "id": "plotcn/block-frame",
+    "title": "Dashboard frame",
+    "file": "components/charts/blocks/block-frame.tsx",
+    "about": "Local panel isolation, metrics and honest dashboard states."
+   },
+   {
+    "id": "reui/frame",
+    "title": "Frame",
+    "file": "icons/frame.tsx",
+    "about": ""
+   },
+   {
+    "id": "shadcn-ui-blocks/portfolio-portfolio-project-displays-zigzag-layout",
+    "title": "Zigzag Layout",
+    "file": "components/blocks/portfolio/portfolio-project-displays/zigzag-layout.tsx",
+    "about": "Alternating rows that flip image and text side to side down the page. Use it to give each project room to breathe with a clear narrative flo"
+   },
+   {
+    "id": "shadcn-ui-blocks/portfolio-portfolio-resume-and-downloads-split-layout",
+    "title": "Split Layout",
+    "file": "components/blocks/portfolio/portfolio-resume-and-downloads/split-layout.tsx",
+    "about": "A two column block with your intro on one side and resume downloads on the other. Use it to balance a personal pitch with quick access to yo"
+   },
+   {
+    "id": "iconiq/b-separator",
+    "title": "Separator (Base UI)",
+    "file": "icons/b-separator.tsx",
+    "about": "Separator with line, dashed, and dotted variants layered over the Base UI primitive, supporting horizontal and vertical orientation with a d"
+   },
+   {
+    "id": "iconiq/r-separator",
+    "title": "Separator (Radix UI)",
+    "file": "icons/r-separator.tsx",
+    "about": "Separator with line, dashed, and dotted variants layered over the Radix UI primitive, supporting horizontal and vertical orientation with a "
+   },
+   {
+    "id": "motion-primitives/animated-group",
+    "title": "Animated group",
+    "file": "icons/animated-group.tsx",
+    "about": ""
+   },
+   {
+    "id": "motiq/data-motion-pack",
+    "title": "Data Motion Pack",
+    "file": "blocks/live-operations-dashboard.tsx",
+    "about": "The complete Data Motion Pack \u2014 installs the Live Operations Dashboard block and its four components (KPI Number Morph, Streaming Data Rows,"
+   },
+   {
+    "id": "shark/float",
+    "title": "Float",
+    "file": "react/components/float.tsx",
+    "about": ""
+   },
+   {
+    "id": "shark/frame",
+    "title": "Frame",
+    "file": "react/components/frame.tsx",
+    "about": ""
+   },
+   {
+    "id": "intentui/container",
+    "title": "container",
+    "file": "components/ui/container.tsx",
+    "about": "container"
+   }
+  ]
+ },
+ "page-header": {
+  "job": "a page's title row with its actions",
+  "parts": []
+ },
+ "user-menu": {
+  "job": "you, your account, sign out",
+  "parts": []
+ }
+}

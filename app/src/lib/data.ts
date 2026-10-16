@@ -81,6 +81,7 @@ export interface Row {
   _q: string
   /** derived: rank for "best first" */
   _r: number
+  _al?: number  // look-alikes folded under this card on a kind page
 }
 
 export interface Stats {

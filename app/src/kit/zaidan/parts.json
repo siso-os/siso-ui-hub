@@ -1,0 +1,2727 @@
+{
+"lib": "zaidan",
+"source": "gh-carere-zaidan",
+"homepage": null,
+"description": null,
+"items": 149,
+"parts": [
+{
+"id": "zaidan/accordion",
+"name": "accordion",
+"title": "Accordion",
+"description": "",
+"type": "ui",
+"cat": "data-display/accordion",
+"domain": [],
+"file": "kobalte/ui/accordion.tsx",
+"files": [
+"kobalte/ui/accordion.tsx"
+],
+"deps": [
+"@kobalte/core",
+"lucide-solid"
+],
+"web": false,
+"player": null,
+"install": "npx shadcn@latest add @zaidan/accordion"
+},
+{
+"id": "zaidan/alert-dialog",
+"name": "alert-dialog",
+"title": "Alert dialog",
+"description": "",
+"type": "ui",
+"cat": "overlays/dialog",
+"domain": [
+"dev tools"
+],
+"file": "kobalte/ui/alert-dialog.tsx",
+"files": [
+"kobalte/ui/alert-dialog.tsx"
+],
+"deps": [
+"@kobalte/core"
+],
+"web": false,
+"player": null,
+"install": "npx shadcn@latest add @zaidan/alert-dialog"
+},
+{
+"id": "zaidan/alert",
+"name": "alert",
+"title": "Alert",
+"description": "",
+"type": "ui",
+"cat": "overlays/alert-banner",
+"domain": [],
+"file": "kobalte/ui/alert.tsx",
+"files": [
+"kobalte/ui/alert.tsx"
+],
+"deps": [
+"@kobalte/core",
+"class-variance-authority"
+],
+"web": false,
+"player": null,
+"install": "npx shadcn@latest add @zaidan/alert"
+},
+{
+"id": "zaidan/aspect-ratio",
+"name": "aspect-ratio",
+"title": "Aspect ratio",
+"description": "",
+"type": "ui",
+"cat": "other/other",
+"domain": [],
+"file": "kobalte/ui/aspect-ratio.tsx",
+"files": [
+"kobalte/ui/aspect-ratio.tsx"
+],
+"deps": [],
+"web": false,
+"player": null,
+"install": "npx shadcn@latest add @zaidan/aspect-ratio"
+},
+{
+"id": "zaidan/attachment",
+"name": "attachment",
+"title": "Attachment",
+"description": "",
+"type": "ui",
+"cat": "inputs/file-upload",
+"domain": [],
+"file": "kobalte/ui/attachment.tsx",
+"files": [
+"kobalte/ui/attachment.tsx"
+],
+"deps": [
+"class-variance-authority"
+],
+"web": false,
+"player": null,
+"install": "npx shadcn@latest add @zaidan/attachment"
+},
+{
+"id": "zaidan/avatar",
+"name": "avatar",
+"title": "Avatar",
+"description": "",
+"type": "ui",
+"cat": "data-display/avatar",
+"domain": [],
+"file": "kobalte/ui/avatar.tsx",
+"files": [
+"kobalte/ui/avatar.tsx"
+],
+"deps": [
+"@kobalte/core"
+],
+"web": false,
+"player": null,
+"install": "npx shadcn@latest add @zaidan/avatar"
+},
+{
+"id": "zaidan/badge",
+"name": "badge",
+"title": "Badge",
+"description": "",
+"type": "ui",
+"cat": "data-display/badge",
+"domain": [],
+"file": "kobalte/ui/badge.tsx",
+"files": [
+"kobalte/ui/badge.tsx"
+],
+"deps": [
+"@kobalte/core",
+"class-variance-authority"
+],
+"web": false,
+"player": null,
+"install": "npx shadcn@latest add @zaidan/badge"
+},
+{
+"id": "zaidan/breadcrumb",
+"name": "breadcrumb",
+"title": "Breadcrumb",
+"description": "",
+"type": "ui",
+"cat": "navigation/breadcrumb",
+"domain": [],
+"file": "kobalte/ui/breadcrumb.tsx",
+"files": [
+"kobalte/ui/breadcrumb.tsx"
+],
+"deps": [
+"@kobalte/core",
+"lucide-solid"
+],
+"web": false,
+"player": null,
+"install": "npx shadcn@latest add @zaidan/breadcrumb"
+},
+{
+"id": "zaidan/bubble",
+"name": "bubble",
+"title": "Bubble",
+"description": "",
+"type": "ui",
+"cat": "ai-agent/ai-agent",
+"domain": [],
+"file": "kobalte/ui/bubble.tsx",
+"files": [
+"kobalte/ui/bubble.tsx"
+],
+"deps": [
+"class-variance-authority"
+],
+"web": false,
+"player": null,
+"install": "npx shadcn@latest add @zaidan/bubble"
+},
+{
+"id": "zaidan/button-group",
+"name": "button-group",
+"title": "Button group",
+"description": "",
+"type": "ui",
+"cat": "actions/button",
+"domain": [],
+"file": "kobalte/ui/button-group.tsx",
+"files": [
+"kobalte/ui/button-group.tsx"
+],
+"deps": [
+"class-variance-authority"
+],
+"web": false,
+"player": null,
+"install": "npx shadcn@latest add @zaidan/button-group"
+},
+{
+"id": "zaidan/button",
+"name": "button",
+"title": "Button",
+"description": "",
+"type": "ui",
+"cat": "actions/button",
+"domain": [],
+"file": "kobalte/ui/button.tsx",
+"files": [
+"kobalte/ui/button.tsx"
+],
+"deps": [
+"@kobalte/core",
+"class-variance-authority"
+],
+"web": false,
+"player": null,
+"install": "npx shadcn@latest add @zaidan/button"
+},
+{
+"id": "zaidan/calendar",
+"name": "calendar",
+"title": "Calendar",
+"description": "",
+"type": "ui",
+"cat": "data-display/calendar",
+"domain": [],
+"file": "kobalte/ui/calendar.tsx",
+"files": [
+"kobalte/ui/calendar.tsx"
+],
+"deps": [
+"@corvu/calendar",
+"@date-fns/tz",
+"date-fns",
+"lucide-solid"
+],
+"web": false,
+"player": null,
+"install": "npx shadcn@latest add @zaidan/calendar"
+},
+{
+"id": "zaidan/card",
+"name": "card",
+"title": "Card",
+"description": "",
+"type": "ui",
+"cat": "data-display/card",
+"domain": [],
+"file": "kobalte/ui/card.tsx",
+"files": [
+"kobalte/ui/card.tsx"
+],
+"deps": [],
+"web": false,
+"player": null,
+"install": "npx shadcn@latest add @zaidan/card"
+},
+{
+"id": "zaidan/carousel",
+"name": "carousel",
+"title": "Carousel",
+"description": "",
+"type": "ui",
+"cat": "media/carousel",
+"domain": [],
+"file": "kobalte/ui/carousel.tsx",
+"files": [
+"kobalte/ui/carousel.tsx"
+],
+"deps": [
+"embla-carousel",
+"embla-carousel-solid",
+"lucide-solid"
+],
+"web": false,
+"player": null,
+"install": "npx shadcn@latest add @zaidan/carousel"
+},
+{
+"id": "zaidan/chart-area-axes",
+"name": "chart-area-axes",
+"title": "Chart area axes",
+"description": "",
+"type": "block",
+"cat": "data-viz/chart",
+"domain": [],
+"file": "kobalte/charts/chart-area-axes.tsx",
+"files": [
+"kobalte/charts/chart-area-axes.tsx"
+],
+"deps": [
+"lucide-solid"
+],
+"web": false,
+"player": null,
+"install": "npx shadcn@latest add @zaidan/chart-area-axes"
+},
+{
+"id": "zaidan/chart-area-default",
+"name": "chart-area-default",
+"title": "Chart area default",
+"description": "",
+"type": "block",
+"cat": "data-display/card",
+"domain": [],
+"file": "kobalte/charts/chart-area-default.tsx",
+"files": [
+"kobalte/charts/chart-area-default.tsx"
+],
+"deps": [
+"lucide-solid"
+],
+"web": false,
+"player": null,
+"install": "npx shadcn@latest add @zaidan/chart-area-default"
+},
+{
+"id": "zaidan/chart-area-gradient",
+"name": "chart-area-gradient",
+"title": "Chart area gradient",
+"description": "",
+"type": "block",
+"cat": "data-viz/chart",
+"domain": [],
+"file": "kobalte/charts/chart-area-gradient.tsx",
+"files": [
+"kobalte/charts/chart-area-gradient.tsx"
+],
+"deps": [
+"lucide-solid"
+],
+"web": false,
+"player": null,
+"install": "npx shadcn@latest add @zaidan/chart-area-gradient"
+},
+{
+"id": "zaidan/chart-area-icons",
+"name": "chart-area-icons",
+"title": "Chart area icons",
+"description": "",
+"type": "block",
+"cat": "data-viz/chart",
+"domain": [],
+"file": "kobalte/charts/chart-area-icons.tsx",
+"files": [
+"kobalte/charts/chart-area-icons.tsx"
+],
+"deps": [
+"lucide-solid"
+],
+"web": false,
+"player": null,
+"install": "npx shadcn@latest add @zaidan/chart-area-icons"
+},
+{
+"id": "zaidan/chart-area-interactive",
+"name": "chart-area-interactive",
+"title": "Chart area interactive",
+"description": "",
+"type": "block",
+"cat": "data-viz/chart",
+"domain": [],
+"file": "kobalte/charts/chart-area-interactive.tsx",
+"files": [
+"kobalte/charts/chart-area-interactive.tsx"
+],
+"deps": [],
+"web": false,
+"player": null,
+"install": "npx shadcn@latest add @zaidan/chart-area-interactive"
+},
+{
+"id": "zaidan/chart-area-legend",
+"name": "chart-area-legend",
+"title": "Chart area legend",
+"description": "",
+"type": "block",
+"cat": "data-viz/chart",
+"domain": [],
+"file": "kobalte/charts/chart-area-legend.tsx",
+"files": [
+"kobalte/charts/chart-area-legend.tsx"
+],
+"deps": [
+"lucide-solid"
+],
+"web": false,
+"player": null,
+"install": "npx shadcn@latest add @zaidan/chart-area-legend"
+},
+{
+"id": "zaidan/chart-area-linear",
+"name": "chart-area-linear",
+"title": "Chart area linear",
+"description": "",
+"type": "block",
+"cat": "data-viz/chart",
+"domain": [],
+"file": "kobalte/charts/chart-area-linear.tsx",
+"files": [
+"kobalte/charts/chart-area-linear.tsx"
+],
+"deps": [
+"lucide-solid"
+],
+"web": false,
+"player": null,
+"install": "npx shadcn@latest add @zaidan/chart-area-linear"
+},
+{
+"id": "zaidan/chart-area-stacked-expand",
+"name": "chart-area-stacked-expand",
+"title": "Chart area stacked expand",
+"description": "",
+"type": "block",
+"cat": "data-viz/chart",
+"domain": [],
+"file": "kobalte/charts/chart-area-stacked-expand.tsx",
+"files": [
+"kobalte/charts/chart-area-stacked-expand.tsx"
+],
+"deps": [
+"lucide-solid"
+],
+"web": false,
+"player": null,
+"install": "npx shadcn@latest add @zaidan/chart-area-stacked-expand"
+},
+{
+"id": "zaidan/chart-area-stacked",
+"name": "chart-area-stacked",
+"title": "Chart area stacked",
+"description": "",
+"type": "block",
+"cat": "data-viz/chart",
+"domain": [],
+"file": "kobalte/charts/chart-area-stacked.tsx",
+"files": [
+"kobalte/charts/chart-area-stacked.tsx"
+],
+"deps": [
+"lucide-solid"
+],
+"web": false,
+"player": null,
+"install": "npx shadcn@latest add @zaidan/chart-area-stacked"
+},
+{
+"id": "zaidan/chart-area-step",
+"name": "chart-area-step",
+"title": "Chart area step",
+"description": "",
+"type": "block",
+"cat": "data-viz/chart",
+"domain": [],
+"file": "kobalte/charts/chart-area-step.tsx",
+"files": [
+"kobalte/charts/chart-area-step.tsx"
+],
+"deps": [
+"lucide-solid"
+],
+"web": false,
+"player": null,
+"install": "npx shadcn@latest add @zaidan/chart-area-step"
+},
+{
+"id": "zaidan/chart-bar-active",
+"name": "chart-bar-active",
+"title": "Chart bar active",
+"description": "",
+"type": "block",
+"cat": "data-viz/chart",
+"domain": [],
+"file": "kobalte/charts/chart-bar-active.tsx",
+"files": [
+"kobalte/charts/chart-bar-active.tsx"
+],
+"deps": [
+"lucide-solid"
+],
+"web": false,
+"player": null,
+"install": "npx shadcn@latest add @zaidan/chart-bar-active"
+},
+{
+"id": "zaidan/chart-bar-default",
+"name": "chart-bar-default",
+"title": "Chart bar default",
+"description": "",
+"type": "block",
+"cat": "data-display/card",
+"domain": [],
+"file": "kobalte/charts/chart-bar-default.tsx",
+"files": [
+"kobalte/charts/chart-bar-default.tsx"
+],
+"deps": [
+"lucide-solid"
+],
+"web": false,
+"player": null,
+"install": "npx shadcn@latest add @zaidan/chart-bar-default"
+},
+{
+"id": "zaidan/chart-bar-horizontal",
+"name": "chart-bar-horizontal",
+"title": "Chart bar horizontal",
+"description": "",
+"type": "block",
+"cat": "data-viz/chart",
+"domain": [],
+"file": "kobalte/charts/chart-bar-horizontal.tsx",
+"files": [
+"kobalte/charts/chart-bar-horizontal.tsx"
+],
+"deps": [
+"lucide-solid"
+],
+"web": false,
+"player": null,
+"install": "npx shadcn@latest add @zaidan/chart-bar-horizontal"
+},
+{
+"id": "zaidan/chart-bar-interactive",
+"name": "chart-bar-interactive",
+"title": "Chart bar interactive",
+"description": "",
+"type": "block",
+"cat": "data-viz/chart",
+"domain": [],
+"file": "kobalte/charts/chart-bar-interactive.tsx",
+"files": [
+"kobalte/charts/chart-bar-interactive.tsx"
+],
+"deps": [],
+"web": false,
+"player": null,
+"install": "npx shadcn@latest add @zaidan/chart-bar-interactive"
+},
+{
+"id": "zaidan/chart-bar-label-custom",
+"name": "chart-bar-label-custom",
+"title": "Chart bar label custom",
+"description": "",
+"type": "block",
+"cat": "data-viz/chart",
+"domain": [],
+"file": "kobalte/charts/chart-bar-label-custom.tsx",
+"files": [
+"kobalte/charts/chart-bar-label-custom.tsx"
+],
+"deps": [
+"lucide-solid"
+],
+"web": false,
+"player": null,
+"install": "npx shadcn@latest add @zaidan/chart-bar-label-custom"
+},
+{
+"id": "zaidan/chart-bar-label",
+"name": "chart-bar-label",
+"title": "Chart bar label",
+"description": "",
+"type": "block",
+"cat": "data-viz/chart",
+"domain": [],
+"file": "kobalte/charts/chart-bar-label.tsx",
+"files": [
+"kobalte/charts/chart-bar-label.tsx"
+],
+"deps": [
+"lucide-solid"
+],
+"web": false,
+"player": null,
+"install": "npx shadcn@latest add @zaidan/chart-bar-label"
+},
+{
+"id": "zaidan/chart-bar-mixed",
+"name": "chart-bar-mixed",
+"title": "Chart bar mixed",
+"description": "",
+"type": "block",
+"cat": "data-viz/chart",
+"domain": [],
+"file": "kobalte/charts/chart-bar-mixed.tsx",
+"files": [
+"kobalte/charts/chart-bar-mixed.tsx"
+],
+"deps": [
+"lucide-solid"
+],
+"web": false,
+"player": null,
+"install": "npx shadcn@latest add @zaidan/chart-bar-mixed"
+},
+{
+"id": "zaidan/chart-bar-multiple",
+"name": "chart-bar-multiple",
+"title": "Chart bar multiple",
+"description": "",
+"type": "block",
+"cat": "data-viz/chart",
+"domain": [],
+"file": "kobalte/charts/chart-bar-multiple.tsx",
+"files": [
+"kobalte/charts/chart-bar-multiple.tsx"
+],
+"deps": [
+"lucide-solid"
+],
+"web": false,
+"player": null,
+"install": "npx shadcn@latest add @zaidan/chart-bar-multiple"
+},
+{
+"id": "zaidan/chart-bar-negative",
+"name": "chart-bar-negative",
+"title": "Chart bar negative",
+"description": "",
+"type": "block",
+"cat": "data-viz/chart",
+"domain": [],
+"file": "kobalte/charts/chart-bar-negative.tsx",
+"files": [
+"kobalte/charts/chart-bar-negative.tsx"
+],
+"deps": [
+"lucide-solid"
+],
+"web": false,
+"player": null,
+"install": "npx shadcn@latest add @zaidan/chart-bar-negative"
+},
+{
+"id": "zaidan/chart-bar-stacked",
+"name": "chart-bar-stacked",
+"title": "Chart bar stacked",
+"description": "",
+"type": "block",
+"cat": "data-viz/chart",
+"domain": [],
+"file": "kobalte/charts/chart-bar-stacked.tsx",
+"files": [
+"kobalte/charts/chart-bar-stacked.tsx"
+],
+"deps": [
+"lucide-solid"
+],
+"web": false,
+"player": null,
+"install": "npx shadcn@latest add @zaidan/chart-bar-stacked"
+},
+{
+"id": "zaidan/chart-line-default",
+"name": "chart-line-default",
+"title": "Chart line default",
+"description": "",
+"type": "block",
+"cat": "data-display/card",
+"domain": [],
+"file": "kobalte/charts/chart-line-default.tsx",
+"files": [
+"kobalte/charts/chart-line-default.tsx"
+],
+"deps": [
+"lucide-solid"
+],
+"web": false,
+"player": null,
+"install": "npx shadcn@latest add @zaidan/chart-line-default"
+},
+{
+"id": "zaidan/chart-line-dots-colors",
+"name": "chart-line-dots-colors",
+"title": "Chart line dots colors",
+"description": "",
+"type": "block",
+"cat": "data-viz/chart",
+"domain": [],
+"file": "kobalte/charts/chart-line-dots-colors.tsx",
+"files": [
+"kobalte/charts/chart-line-dots-colors.tsx"
+],
+"deps": [
+"lucide-solid"
+],
+"web": false,
+"player": null,
+"install": "npx shadcn@latest add @zaidan/chart-line-dots-colors"
+},
+{
+"id": "zaidan/chart-line-dots-custom",
+"name": "chart-line-dots-custom",
+"title": "Chart line dots custom",
+"description": "",
+"type": "block",
+"cat": "data-viz/chart",
+"domain": [],
+"file": "kobalte/charts/chart-line-dots-custom.tsx",
+"files": [
+"kobalte/charts/chart-line-dots-custom.tsx"
+],
+"deps": [
+"lucide-solid"
+],
+"web": false,
+"player": null,
+"install": "npx shadcn@latest add @zaidan/chart-line-dots-custom"
+},
+{
+"id": "zaidan/chart-line-dots",
+"name": "chart-line-dots",
+"title": "Chart line dots",
+"description": "",
+"type": "block",
+"cat": "data-viz/chart",
+"domain": [],
+"file": "kobalte/charts/chart-line-dots.tsx",
+"files": [
+"kobalte/charts/chart-line-dots.tsx"
+],
+"deps": [
+"lucide-solid"
+],
+"web": false,
+"player": null,
+"install": "npx shadcn@latest add @zaidan/chart-line-dots"
+},
+{
+"id": "zaidan/chart-line-interactive",
+"name": "chart-line-interactive",
+"title": "Chart line interactive",
+"description": "",
+"type": "block",
+"cat": "data-viz/chart",
+"domain": [],
+"file": "kobalte/charts/chart-line-interactive.tsx",
+"files": [
+"kobalte/charts/chart-line-interactive.tsx"
+],
+"deps": [],
+"web": false,
+"player": null,
+"install": "npx shadcn@latest add @zaidan/chart-line-interactive"
+},
+{
+"id": "zaidan/chart-line-label-custom",
+"name": "chart-line-label-custom",
+"title": "Chart line label custom",
+"description": "",
+"type": "block",
+"cat": "data-viz/chart",
+"domain": [],
+"file": "kobalte/charts/chart-line-label-custom.tsx",
+"files": [
+"kobalte/charts/chart-line-label-custom.tsx"
+],
+"deps": [
+"lucide-solid"
+],
+"web": false,
+"player": null,
+"install": "npx shadcn@latest add @zaidan/chart-line-label-custom"
+},
+{
+"id": "zaidan/chart-line-label",
+"name": "chart-line-label",
+"title": "Chart line label",
+"description": "",
+"type": "block",
+"cat": "data-viz/chart",
+"domain": [],
+"file": "kobalte/charts/chart-line-label.tsx",
+"files": [
+"kobalte/charts/chart-line-label.tsx"
+],
+"deps": [
+"lucide-solid"
+],
+"web": false,
+"player": null,
+"install": "npx shadcn@latest add @zaidan/chart-line-label"
+},
+{
+"id": "zaidan/chart-line-linear",
+"name": "chart-line-linear",
+"title": "Chart line linear",
+"description": "",
+"type": "block",
+"cat": "data-viz/chart",
+"domain": [],
+"file": "kobalte/charts/chart-line-linear.tsx",
+"files": [
+"kobalte/charts/chart-line-linear.tsx"
+],
+"deps": [
+"lucide-solid"
+],
+"web": false,
+"player": null,
+"install": "npx shadcn@latest add @zaidan/chart-line-linear"
+},
+{
+"id": "zaidan/chart-line-multiple",
+"name": "chart-line-multiple",
+"title": "Chart line multiple",
+"description": "",
+"type": "block",
+"cat": "data-viz/chart",
+"domain": [],
+"file": "kobalte/charts/chart-line-multiple.tsx",
+"files": [
+"kobalte/charts/chart-line-multiple.tsx"
+],
+"deps": [
+"lucide-solid"
+],
+"web": false,
+"player": null,
+"install": "npx shadcn@latest add @zaidan/chart-line-multiple"
+},
+{
+"id": "zaidan/chart-line-step",
+"name": "chart-line-step",
+"title": "Chart line step",
+"description": "",
+"type": "block",
+"cat": "data-viz/chart",
+"domain": [],
+"file": "kobalte/charts/chart-line-step.tsx",
+"files": [
+"kobalte/charts/chart-line-step.tsx"
+],
+"deps": [
+"lucide-solid"
+],
+"web": false,
+"player": null,
+"install": "npx shadcn@latest add @zaidan/chart-line-step"
+},
+{
+"id": "zaidan/chart-pie-donut-active",
+"name": "chart-pie-donut-active",
+"title": "Chart pie donut active",
+"description": "",
+"type": "block",
+"cat": "data-viz/chart",
+"domain": [],
+"file": "kobalte/charts/chart-pie-donut-active.tsx",
+"files": [
+"kobalte/charts/chart-pie-donut-active.tsx"
+],
+"deps": [
+"lucide-solid"
+],
+"web": false,
+"player": null,
+"install": "npx shadcn@latest add @zaidan/chart-pie-donut-active"
+},
+{
+"id": "zaidan/chart-pie-donut-text",
+"name": "chart-pie-donut-text",
+"title": "Chart pie donut text",
+"description": "",
+"type": "block",
+"cat": "data-viz/chart",
+"domain": [],
+"file": "kobalte/charts/chart-pie-donut-text.tsx",
+"files": [
+"kobalte/charts/chart-pie-donut-text.tsx"
+],
+"deps": [
+"lucide-solid"
+],
+"web": false,
+"player": null,
+"install": "npx shadcn@latest add @zaidan/chart-pie-donut-text"
+},
+{
+"id": "zaidan/chart-pie-donut",
+"name": "chart-pie-donut",
+"title": "Chart pie donut",
+"description": "",
+"type": "block",
+"cat": "data-viz/chart",
+"domain": [],
+"file": "kobalte/charts/chart-pie-donut.tsx",
+"files": [
+"kobalte/charts/chart-pie-donut.tsx"
+],
+"deps": [
+"lucide-solid"
+],
+"web": false,
+"player": null,
+"install": "npx shadcn@latest add @zaidan/chart-pie-donut"
+},
+{
+"id": "zaidan/chart-pie-interactive",
+"name": "chart-pie-interactive",
+"title": "Chart pie interactive",
+"description": "",
+"type": "block",
+"cat": "data-viz/chart",
+"domain": [],
+"file": "kobalte/charts/chart-pie-interactive.tsx",
+"files": [
+"kobalte/charts/chart-pie-interactive.tsx"
+],
+"deps": [],
+"web": false,
+"player": null,
+"install": "npx shadcn@latest add @zaidan/chart-pie-interactive"
+},
+{
+"id": "zaidan/chart-pie-label-custom",
+"name": "chart-pie-label-custom",
+"title": "Chart pie label custom",
+"description": "",
+"type": "block",
+"cat": "data-viz/chart",
+"domain": [],
+"file": "kobalte/charts/chart-pie-label-custom.tsx",
+"files": [
+"kobalte/charts/chart-pie-label-custom.tsx"
+],
+"deps": [
+"lucide-solid"
+],
+"web": false,
+"player": null,
+"install": "npx shadcn@latest add @zaidan/chart-pie-label-custom"
+},
+{
+"id": "zaidan/chart-pie-label-list",
+"name": "chart-pie-label-list",
+"title": "Chart pie label list",
+"description": "",
+"type": "block",
+"cat": "data-viz/chart",
+"domain": [],
+"file": "kobalte/charts/chart-pie-label-list.tsx",
+"files": [
+"kobalte/charts/chart-pie-label-list.tsx"
+],
+"deps": [
+"lucide-solid"
+],
+"web": false,
+"player": null,
+"install": "npx shadcn@latest add @zaidan/chart-pie-label-list"
+},
+{
+"id": "zaidan/chart-pie-label",
+"name": "chart-pie-label",
+"title": "Chart pie label",
+"description": "",
+"type": "block",
+"cat": "data-viz/chart",
+"domain": [],
+"file": "kobalte/charts/chart-pie-label.tsx",
+"files": [
+"kobalte/charts/chart-pie-label.tsx"
+],
+"deps": [
+"lucide-solid"
+],
+"web": false,
+"player": null,
+"install": "npx shadcn@latest add @zaidan/chart-pie-label"
+},
+{
+"id": "zaidan/chart-pie-legend",
+"name": "chart-pie-legend",
+"title": "Chart pie legend",
+"description": "",
+"type": "block",
+"cat": "data-viz/chart",
+"domain": [],
+"file": "kobalte/charts/chart-pie-legend.tsx",
+"files": [
+"kobalte/charts/chart-pie-legend.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add @zaidan/chart-pie-legend"
+},
+{
+"id": "zaidan/chart-pie-separator-none",
+"name": "chart-pie-separator-none",
+"title": "Chart pie separator none",
+"description": "",
+"type": "block",
+"cat": "data-viz/chart",
+"domain": [],
+"file": "kobalte/charts/chart-pie-separator-none.tsx",
+"files": [
+"kobalte/charts/chart-pie-separator-none.tsx"
+],
+"deps": [
+"lucide-solid"
+],
+"web": false,
+"player": null,
+"install": "npx shadcn@latest add @zaidan/chart-pie-separator-none"
+},
+{
+"id": "zaidan/chart-pie-simple",
+"name": "chart-pie-simple",
+"title": "Chart pie simple",
+"description": "",
+"type": "block",
+"cat": "data-viz/chart",
+"domain": [],
+"file": "kobalte/charts/chart-pie-simple.tsx",
+"files": [
+"kobalte/charts/chart-pie-simple.tsx"
+],
+"deps": [
+"lucide-solid"
+],
+"web": false,
+"player": null,
+"install": "npx shadcn@latest add @zaidan/chart-pie-simple"
+},
+{
+"id": "zaidan/chart-pie-stacked",
+"name": "chart-pie-stacked",
+"title": "Chart pie stacked",
+"description": "",
+"type": "block",
+"cat": "data-viz/chart",
+"domain": [],
+"file": "kobalte/charts/chart-pie-stacked.tsx",
+"files": [
+"kobalte/charts/chart-pie-stacked.tsx"
+],
+"deps": [
+"lucide-solid"
+],
+"web": false,
+"player": null,
+"install": "npx shadcn@latest add @zaidan/chart-pie-stacked"
+},
+{
+"id": "zaidan/chart-radar-default",
+"name": "chart-radar-default",
+"title": "Chart radar default",
+"description": "",
+"type": "block",
+"cat": "data-display/card",
+"domain": [],
+"file": "kobalte/charts/chart-radar-default.tsx",
+"files": [
+"kobalte/charts/chart-radar-default.tsx"
+],
+"deps": [
+"lucide-solid"
+],
+"web": false,
+"player": null,
+"install": "npx shadcn@latest add @zaidan/chart-radar-default"
+},
+{
+"id": "zaidan/chart-radar-dots",
+"name": "chart-radar-dots",
+"title": "Chart radar dots",
+"description": "",
+"type": "block",
+"cat": "data-viz/chart",
+"domain": [],
+"file": "kobalte/charts/chart-radar-dots.tsx",
+"files": [
+"kobalte/charts/chart-radar-dots.tsx"
+],
+"deps": [
+"lucide-solid"
+],
+"web": false,
+"player": null,
+"install": "npx shadcn@latest add @zaidan/chart-radar-dots"
+},
+{
+"id": "zaidan/chart-radar-grid-circle-fill",
+"name": "chart-radar-grid-circle-fill",
+"title": "Chart radar grid circle fill",
+"description": "",
+"type": "block",
+"cat": "data-viz/chart",
+"domain": [],
+"file": "kobalte/charts/chart-radar-grid-circle-fill.tsx",
+"files": [
+"kobalte/charts/chart-radar-grid-circle-fill.tsx"
+],
+"deps": [
+"lucide-solid"
+],
+"web": false,
+"player": null,
+"install": "npx shadcn@latest add @zaidan/chart-radar-grid-circle-fill"
+},
+{
+"id": "zaidan/chart-radar-grid-circle-no-lines",
+"name": "chart-radar-grid-circle-no-lines",
+"title": "Chart radar grid circle no lines",
+"description": "",
+"type": "block",
+"cat": "data-viz/chart",
+"domain": [],
+"file": "kobalte/charts/chart-radar-grid-circle-no-lines.tsx",
+"files": [
+"kobalte/charts/chart-radar-grid-circle-no-lines.tsx"
+],
+"deps": [
+"lucide-solid"
+],
+"web": false,
+"player": null,
+"install": "npx shadcn@latest add @zaidan/chart-radar-grid-circle-no-lines"
+},
+{
+"id": "zaidan/chart-radar-grid-circle",
+"name": "chart-radar-grid-circle",
+"title": "Chart radar grid circle",
+"description": "",
+"type": "block",
+"cat": "data-viz/chart",
+"domain": [],
+"file": "kobalte/charts/chart-radar-grid-circle.tsx",
+"files": [
+"kobalte/charts/chart-radar-grid-circle.tsx"
+],
+"deps": [
+"lucide-solid"
+],
+"web": false,
+"player": null,
+"install": "npx shadcn@latest add @zaidan/chart-radar-grid-circle"
+},
+{
+"id": "zaidan/chart-radar-grid-custom",
+"name": "chart-radar-grid-custom",
+"title": "Chart radar grid custom",
+"description": "",
+"type": "block",
+"cat": "data-viz/chart",
+"domain": [],
+"file": "kobalte/charts/chart-radar-grid-custom.tsx",
+"files": [
+"kobalte/charts/chart-radar-grid-custom.tsx"
+],
+"deps": [
+"lucide-solid"
+],
+"web": false,
+"player": null,
+"install": "npx shadcn@latest add @zaidan/chart-radar-grid-custom"
+},
+{
+"id": "zaidan/chart-radar-grid-fill",
+"name": "chart-radar-grid-fill",
+"title": "Chart radar grid fill",
+"description": "",
+"type": "block",
+"cat": "data-viz/chart",
+"domain": [],
+"file": "kobalte/charts/chart-radar-grid-fill.tsx",
+"files": [
+"kobalte/charts/chart-radar-grid-fill.tsx"
+],
+"deps": [
+"lucide-solid"
+],
+"web": false,
+"player": null,
+"install": "npx shadcn@latest add @zaidan/chart-radar-grid-fill"
+},
+{
+"id": "zaidan/chart-radar-grid-none",
+"name": "chart-radar-grid-none",
+"title": "Chart radar grid none",
+"description": "",
+"type": "block",
+"cat": "data-viz/chart",
+"domain": [],
+"file": "kobalte/charts/chart-radar-grid-none.tsx",
+"files": [
+"kobalte/charts/chart-radar-grid-none.tsx"
+],
+"deps": [
+"lucide-solid"
+],
+"web": false,
+"player": null,
+"install": "npx shadcn@latest add @zaidan/chart-radar-grid-none"
+},
+{
+"id": "zaidan/chart-radar-icons",
+"name": "chart-radar-icons",
+"title": "Chart radar icons",
+"description": "",
+"type": "block",
+"cat": "data-viz/chart",
+"domain": [],
+"file": "kobalte/charts/chart-radar-icons.tsx",
+"files": [
+"kobalte/charts/chart-radar-icons.tsx"
+],
+"deps": [
+"lucide-solid"
+],
+"web": false,
+"player": null,
+"install": "npx shadcn@latest add @zaidan/chart-radar-icons"
+},
+{
+"id": "zaidan/chart-radar-label-custom",
+"name": "chart-radar-label-custom",
+"title": "Chart radar label custom",
+"description": "",
+"type": "block",
+"cat": "data-viz/chart",
+"domain": [],
+"file": "kobalte/charts/chart-radar-label-custom.tsx",
+"files": [
+"kobalte/charts/chart-radar-label-custom.tsx"
+],
+"deps": [
+"lucide-solid"
+],
+"web": false,
+"player": null,
+"install": "npx shadcn@latest add @zaidan/chart-radar-label-custom"
+},
+{
+"id": "zaidan/chart-radar-legend",
+"name": "chart-radar-legend",
+"title": "Chart radar legend",
+"description": "",
+"type": "block",
+"cat": "data-viz/chart",
+"domain": [],
+"file": "kobalte/charts/chart-radar-legend.tsx",
+"files": [
+"kobalte/charts/chart-radar-legend.tsx"
+],
+"deps": [
+"lucide-solid"
+],
+"web": false,
+"player": null,
+"install": "npx shadcn@latest add @zaidan/chart-radar-legend"
+},
+{
+"id": "zaidan/chart-radar-lines-only",
+"name": "chart-radar-lines-only",
+"title": "Chart radar lines only",
+"description": "",
+"type": "block",
+"cat": "data-viz/chart",
+"domain": [],
+"file": "kobalte/charts/chart-radar-lines-only.tsx",
+"files": [
+"kobalte/charts/chart-radar-lines-only.tsx"
+],
+"deps": [
+"lucide-solid"
+],
+"web": false,
+"player": null,
+"install": "npx shadcn@latest add @zaidan/chart-radar-lines-only"
+},
+{
+"id": "zaidan/chart-radar-multiple",
+"name": "chart-radar-multiple",
+"title": "Chart radar multiple",
+"description": "",
+"type": "block",
+"cat": "data-viz/chart",
+"domain": [],
+"file": "kobalte/charts/chart-radar-multiple.tsx",
+"files": [
+"kobalte/charts/chart-radar-multiple.tsx"
+],
+"deps": [
+"lucide-solid"
+],
+"web": false,
+"player": null,
+"install": "npx shadcn@latest add @zaidan/chart-radar-multiple"
+},
+{
+"id": "zaidan/chart-radar-radius",
+"name": "chart-radar-radius",
+"title": "Chart radar radius",
+"description": "",
+"type": "block",
+"cat": "data-viz/chart",
+"domain": [],
+"file": "kobalte/charts/chart-radar-radius.tsx",
+"files": [
+"kobalte/charts/chart-radar-radius.tsx"
+],
+"deps": [
+"lucide-solid"
+],
+"web": false,
+"player": null,
+"install": "npx shadcn@latest add @zaidan/chart-radar-radius"
+},
+{
+"id": "zaidan/chart-radial-grid",
+"name": "chart-radial-grid",
+"title": "Chart radial grid",
+"description": "",
+"type": "block",
+"cat": "data-viz/chart",
+"domain": [],
+"file": "kobalte/charts/chart-radial-grid.tsx",
+"files": [
+"kobalte/charts/chart-radial-grid.tsx"
+],
+"deps": [
+"lucide-solid"
+],
+"web": false,
+"player": null,
+"install": "npx shadcn@latest add @zaidan/chart-radial-grid"
+},
+{
+"id": "zaidan/chart-radial-label",
+"name": "chart-radial-label",
+"title": "Chart radial label",
+"description": "",
+"type": "block",
+"cat": "data-viz/chart",
+"domain": [],
+"file": "kobalte/charts/chart-radial-label.tsx",
+"files": [
+"kobalte/charts/chart-radial-label.tsx"
+],
+"deps": [
+"lucide-solid"
+],
+"web": false,
+"player": null,
+"install": "npx shadcn@latest add @zaidan/chart-radial-label"
+},
+{
+"id": "zaidan/chart-radial-shape",
+"name": "chart-radial-shape",
+"title": "Chart radial shape",
+"description": "",
+"type": "block",
+"cat": "data-viz/chart",
+"domain": [],
+"file": "kobalte/charts/chart-radial-shape.tsx",
+"files": [
+"kobalte/charts/chart-radial-shape.tsx"
+],
+"deps": [
+"lucide-solid"
+],
+"web": false,
+"player": null,
+"install": "npx shadcn@latest add @zaidan/chart-radial-shape"
+},
+{
+"id": "zaidan/chart-radial-simple",
+"name": "chart-radial-simple",
+"title": "Chart radial simple",
+"description": "",
+"type": "block",
+"cat": "data-viz/chart",
+"domain": [],
+"file": "kobalte/charts/chart-radial-simple.tsx",
+"files": [
+"kobalte/charts/chart-radial-simple.tsx"
+],
+"deps": [
+"lucide-solid"
+],
+"web": false,
+"player": null,
+"install": "npx shadcn@latest add @zaidan/chart-radial-simple"
+},
+{
+"id": "zaidan/chart-radial-stacked",
+"name": "chart-radial-stacked",
+"title": "Chart radial stacked",
+"description": "",
+"type": "block",
+"cat": "data-viz/chart",
+"domain": [],
+"file": "kobalte/charts/chart-radial-stacked.tsx",
+"files": [
+"kobalte/charts/chart-radial-stacked.tsx"
+],
+"deps": [
+"lucide-solid"
+],
+"web": false,
+"player": null,
+"install": "npx shadcn@latest add @zaidan/chart-radial-stacked"
+},
+{
+"id": "zaidan/chart-radial-text",
+"name": "chart-radial-text",
+"title": "Chart radial text",
+"description": "",
+"type": "block",
+"cat": "data-viz/chart",
+"domain": [],
+"file": "kobalte/charts/chart-radial-text.tsx",
+"files": [
+"kobalte/charts/chart-radial-text.tsx"
+],
+"deps": [
+"lucide-solid"
+],
+"web": false,
+"player": null,
+"install": "npx shadcn@latest add @zaidan/chart-radial-text"
+},
+{
+"id": "zaidan/chart-tooltip-advanced",
+"name": "chart-tooltip-advanced",
+"title": "Chart tooltip advanced",
+"description": "",
+"type": "block",
+"cat": "data-viz/chart",
+"domain": [],
+"file": "kobalte/charts/chart-tooltip-advanced.tsx",
+"files": [
+"kobalte/charts/chart-tooltip-advanced.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add @zaidan/chart-tooltip-advanced"
+},
+{
+"id": "zaidan/chart-tooltip-default",
+"name": "chart-tooltip-default",
+"title": "Chart tooltip default",
+"description": "",
+"type": "block",
+"cat": "data-display/card",
+"domain": [],
+"file": "kobalte/charts/chart-tooltip-default.tsx",
+"files": [
+"kobalte/charts/chart-tooltip-default.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add @zaidan/chart-tooltip-default"
+},
+{
+"id": "zaidan/chart-tooltip-formatter",
+"name": "chart-tooltip-formatter",
+"title": "Chart tooltip formatter",
+"description": "",
+"type": "block",
+"cat": "data-viz/chart",
+"domain": [],
+"file": "kobalte/charts/chart-tooltip-formatter.tsx",
+"files": [
+"kobalte/charts/chart-tooltip-formatter.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add @zaidan/chart-tooltip-formatter"
+},
+{
+"id": "zaidan/chart-tooltip-icons",
+"name": "chart-tooltip-icons",
+"title": "Chart tooltip icons",
+"description": "",
+"type": "block",
+"cat": "data-viz/chart",
+"domain": [],
+"file": "kobalte/charts/chart-tooltip-icons.tsx",
+"files": [
+"kobalte/charts/chart-tooltip-icons.tsx"
+],
+"deps": [
+"lucide-solid"
+],
+"web": false,
+"player": null,
+"install": "npx shadcn@latest add @zaidan/chart-tooltip-icons"
+},
+{
+"id": "zaidan/chart-tooltip-indicator-line",
+"name": "chart-tooltip-indicator-line",
+"title": "Chart tooltip indicator line",
+"description": "",
+"type": "block",
+"cat": "data-viz/chart",
+"domain": [],
+"file": "kobalte/charts/chart-tooltip-indicator-line.tsx",
+"files": [
+"kobalte/charts/chart-tooltip-indicator-line.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add @zaidan/chart-tooltip-indicator-line"
+},
+{
+"id": "zaidan/chart-tooltip-indicator-none",
+"name": "chart-tooltip-indicator-none",
+"title": "Chart tooltip indicator none",
+"description": "",
+"type": "block",
+"cat": "data-viz/chart",
+"domain": [],
+"file": "kobalte/charts/chart-tooltip-indicator-none.tsx",
+"files": [
+"kobalte/charts/chart-tooltip-indicator-none.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add @zaidan/chart-tooltip-indicator-none"
+},
+{
+"id": "zaidan/chart-tooltip-label-custom",
+"name": "chart-tooltip-label-custom",
+"title": "Chart tooltip label custom",
+"description": "",
+"type": "block",
+"cat": "data-viz/chart",
+"domain": [],
+"file": "kobalte/charts/chart-tooltip-label-custom.tsx",
+"files": [
+"kobalte/charts/chart-tooltip-label-custom.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add @zaidan/chart-tooltip-label-custom"
+},
+{
+"id": "zaidan/chart-tooltip-label-formatter",
+"name": "chart-tooltip-label-formatter",
+"title": "Chart tooltip label formatter",
+"description": "",
+"type": "block",
+"cat": "data-viz/chart",
+"domain": [],
+"file": "kobalte/charts/chart-tooltip-label-formatter.tsx",
+"files": [
+"kobalte/charts/chart-tooltip-label-formatter.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add @zaidan/chart-tooltip-label-formatter"
+},
+{
+"id": "zaidan/chart-tooltip-label-none",
+"name": "chart-tooltip-label-none",
+"title": "Chart tooltip label none",
+"description": "",
+"type": "block",
+"cat": "data-viz/chart",
+"domain": [],
+"file": "kobalte/charts/chart-tooltip-label-none.tsx",
+"files": [
+"kobalte/charts/chart-tooltip-label-none.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add @zaidan/chart-tooltip-label-none"
+},
+{
+"id": "zaidan/chart",
+"name": "chart",
+"title": "Chart",
+"description": "",
+"type": "ui",
+"cat": "data-viz/chart",
+"domain": [],
+"file": "kobalte/ui/chart.tsx",
+"files": [
+"kobalte/ui/chart.tsx"
+],
+"deps": [
+"solid-recharts@1.0.1"
+],
+"web": false,
+"player": null,
+"install": "npx shadcn@latest add @zaidan/chart"
+},
+{
+"id": "zaidan/checkbox",
+"name": "checkbox",
+"title": "Checkbox",
+"description": "",
+"type": "ui",
+"cat": "inputs/checkbox",
+"domain": [],
+"file": "kobalte/ui/checkbox.tsx",
+"files": [
+"kobalte/ui/checkbox.tsx"
+],
+"deps": [
+"@kobalte/core",
+"lucide-solid"
+],
+"web": false,
+"player": null,
+"install": "npx shadcn@latest add @zaidan/checkbox"
+},
+{
+"id": "zaidan/collapsible",
+"name": "collapsible",
+"title": "Collapsible",
+"description": "",
+"type": "ui",
+"cat": "data-display/accordion",
+"domain": [],
+"file": "kobalte/ui/collapsible.tsx",
+"files": [
+"kobalte/ui/collapsible.tsx"
+],
+"deps": [
+"@kobalte/core"
+],
+"web": false,
+"player": null,
+"install": "npx shadcn@latest add @zaidan/collapsible"
+},
+{
+"id": "zaidan/color-mode",
+"name": "color-mode",
+"title": "Color mode",
+"description": "",
+"type": "component",
+"cat": "other/other",
+"domain": [],
+"file": "kobalte/components/color-mode.tsx",
+"files": [
+"kobalte/components/color-mode.tsx"
+],
+"deps": [
+"solid-js"
+],
+"web": false,
+"player": null,
+"install": "npx shadcn@latest add @zaidan/color-mode"
+},
+{
+"id": "zaidan/combobox",
+"name": "combobox",
+"title": "Combobox",
+"description": "",
+"type": "ui",
+"cat": "inputs/combobox",
+"domain": [],
+"file": "kobalte/ui/combobox.tsx",
+"files": [
+"kobalte/ui/combobox.tsx"
+],
+"deps": [
+"@kobalte/core",
+"lucide-solid"
+],
+"web": false,
+"player": null,
+"install": "npx shadcn@latest add @zaidan/combobox"
+},
+{
+"id": "zaidan/command",
+"name": "command",
+"title": "Command",
+"description": "",
+"type": "ui",
+"cat": "navigation/command-palette",
+"domain": [],
+"file": "kobalte/ui/command.tsx",
+"files": [
+"kobalte/ui/command.tsx"
+],
+"deps": [
+"cmdk-solid",
+"lucide-solid"
+],
+"web": false,
+"player": null,
+"install": "npx shadcn@latest add @zaidan/command"
+},
+{
+"id": "zaidan/context-menu",
+"name": "context-menu",
+"title": "Context menu",
+"description": "",
+"type": "ui",
+"cat": "overlays/context-menu",
+"domain": [],
+"file": "kobalte/ui/context-menu.tsx",
+"files": [
+"kobalte/ui/context-menu.tsx"
+],
+"deps": [
+"@kobalte/core",
+"lucide-solid"
+],
+"web": false,
+"player": null,
+"install": "npx shadcn@latest add @zaidan/context-menu"
+},
+{
+"id": "zaidan/data-grid",
+"name": "data-grid",
+"title": "Data Grid",
+"description": "A TanStack Table v9 data grid with sorting, filtering, pagination, footer rows, drag-and-drop, virtualization, infinite scroll, row pinning, and tree rows.",
+"type": "block",
+"cat": "data-display/table",
+"domain": [],
+"file": "kobalte/blocks/data-grid/index.tsx",
+"files": [
+"kobalte/blocks/data-grid/index.tsx",
+"kobalte/blocks/data-grid/data-grid.tsx",
+"kobalte/blocks/data-grid/data-grid-column-filter.tsx",
+"kobalte/blocks/data-grid/data-grid-column-header.tsx",
+"kobalte/blocks/data-grid/data-grid-column-visibility.tsx",
+"kobalte/blocks/data-grid/data-grid-pagination.tsx",
+"kobalte/blocks/data-grid/data-grid-scroll-area.tsx",
+"kobalte/blocks/data-grid/data-grid-table.tsx",
+"kobalte/blocks/data-grid/data-grid-table-dnd.tsx",
+"kobalte/blocks/data-grid/data-grid-table-dnd-rows.tsx",
+"kobalte/blocks/data-grid/data-grid-table-virtual.tsx"
+],
+"deps": [
+"@tanstack/solid-table",
+"@tanstack/solid-virtual",
+"@dnd-kit/solid",
+"lucide-solid"
+],
+"web": false,
+"player": null,
+"install": "npx shadcn@latest add @zaidan/data-grid"
+},
+{
+"id": "zaidan/dialog",
+"name": "dialog",
+"title": "Dialog",
+"description": "",
+"type": "ui",
+"cat": "overlays/dialog",
+"domain": [
+"dev tools"
+],
+"file": "kobalte/ui/dialog.tsx",
+"files": [
+"kobalte/ui/dialog.tsx"
+],
+"deps": [
+"@kobalte/core",
+"lucide-solid"
+],
+"web": false,
+"player": null,
+"install": "npx shadcn@latest add @zaidan/dialog"
+},
+{
+"id": "zaidan/drawer",
+"name": "drawer",
+"title": "Drawer",
+"description": "",
+"type": "ui",
+"cat": "overlays/sheet",
+"domain": [],
+"file": "kobalte/ui/drawer.tsx",
+"files": [
+"kobalte/ui/drawer.tsx"
+],
+"deps": [
+"@corvu/drawer"
+],
+"web": false,
+"player": null,
+"install": "npx shadcn@latest add @zaidan/drawer"
+},
+{
+"id": "zaidan/dropdown-menu",
+"name": "dropdown-menu",
+"title": "Dropdown menu",
+"description": "",
+"type": "ui",
+"cat": "navigation/menu",
+"domain": [],
+"file": "kobalte/ui/dropdown-menu.tsx",
+"files": [
+"kobalte/ui/dropdown-menu.tsx"
+],
+"deps": [
+"@kobalte/core",
+"lucide-solid"
+],
+"web": false,
+"player": null,
+"install": "npx shadcn@latest add @zaidan/dropdown-menu"
+},
+{
+"id": "zaidan/empty",
+"name": "empty",
+"title": "Empty",
+"description": "",
+"type": "ui",
+"cat": "other/other",
+"domain": [],
+"file": "kobalte/ui/empty.tsx",
+"files": [
+"kobalte/ui/empty.tsx"
+],
+"deps": [
+"class-variance-authority"
+],
+"web": false,
+"player": null,
+"install": "npx shadcn@latest add @zaidan/empty"
+},
+{
+"id": "zaidan/event-calendar",
+"name": "event-calendar",
+"title": "Event Calendar",
+"description": "A headless-first event calendar with month, week, day, N-day, agenda and resource views, drag-and-drop scheduling, recurring events, time zones, and an external CRUD contract.",
+"type": "block",
+"cat": "data-display/calendar",
+"domain": [],
+"file": "kobalte/blocks/event-calendar/index.tsx",
+"files": [
+"kobalte/blocks/event-calendar/index.tsx",
+"kobalte/blocks/event-calendar/event-calendar.tsx",
+"kobalte/blocks/event-calendar/event-calendar-agenda-view.tsx",
+"kobalte/blocks/event-calendar/event-calendar-content.tsx",
+"kobalte/blocks/event-calendar/event-calendar-dnd.tsx",
+"kobalte/blocks/event-calendar/event-calendar-event.tsx",
+"kobalte/blocks/event-calendar/event-calendar-i18n.tsx",
+"kobalte/blocks/event-calendar/event-calendar-lib.tsx",
+"kobalte/blocks/event-calendar/event-calendar-month-view.tsx",
+"kobalte/blocks/event-calendar/event-calendar-nav.tsx",
+"kobalte/blocks/event-calendar/event-calendar-recurrence.tsx",
+"kobalte/blocks/event-calendar/event-calendar-resource-view.tsx",
+"kobalte/blocks/event-calendar/event-calendar-time-grid.tsx",
+"kobalte/blocks/event-calendar/event-calendar-types.tsx"
+],
+"deps": [
+"@date-fns/tz",
+"date-fns",
+"lucide-solid"
+],
+"web": false,
+"player": null,
+"install": "npx shadcn@latest add @zaidan/event-calendar"
+},
+{
+"id": "zaidan/field",
+"name": "field",
+"title": "Field",
+"description": "",
+"type": "ui",
+"cat": "inputs/form-field",
+"domain": [],
+"file": "kobalte/ui/field.tsx",
+"files": [
+"kobalte/ui/field.tsx"
+],
+"deps": [
+"class-variance-authority"
+],
+"web": false,
+"player": null,
+"install": "npx shadcn@latest add @zaidan/field"
+},
+{
+"id": "zaidan/filters",
+"name": "filters",
+"title": "Filters",
+"description": "A composable filter bar with an add-filter menu, per-field operators, and select, multiselect, text, and custom value editors.",
+"type": "block",
+"cat": "navigation/menu",
+"domain": [],
+"file": "kobalte/blocks/filters/index.tsx",
+"files": [
+"kobalte/blocks/filters/index.tsx",
+"kobalte/blocks/filters/context.ts",
+"kobalte/blocks/filters/filter-input.tsx",
+"kobalte/blocks/filters/filter-operator-dropdown.tsx",
+"kobalte/blocks/filters/filter-submenu-content.tsx",
+"kobalte/blocks/filters/filters.tsx",
+"kobalte/blocks/filters/i18n.ts",
+"kobalte/blocks/filters/select-options-popover.tsx",
+"kobalte/blocks/filters/types.ts",
+"kobalte/blocks/filters/use-field-options.ts",
+"kobalte/blocks/filters/utils.ts"
+],
+"deps": [
+"class-variance-authority",
+"lucide-solid"
+],
+"web": false,
+"player": null,
+"install": "npx shadcn@latest add @zaidan/filters"
+},
+{
+"id": "zaidan/gantt",
+"name": "gantt",
+"title": "Gantt",
+"description": "A headless-first gantt with split tree and timeline panes, day to year scales, zoom, drag and resize scheduling, progress, summary rollups, and an external CRUD contract.",
+"type": "block",
+"cat": "data-viz/progress-bar",
+"domain": [],
+"file": "kobalte/blocks/gantt/index.tsx",
+"files": [
+"kobalte/blocks/gantt/index.tsx",
+"kobalte/blocks/gantt/gantt-bar.tsx",
+"kobalte/blocks/gantt/gantt-dnd.tsx",
+"kobalte/blocks/gantt/gantt-i18n.ts",
+"kobalte/blocks/gantt/gantt-lib.ts",
+"kobalte/blocks/gantt/gantt-nav.tsx",
+"kobalte/blocks/gantt/gantt-recurrence.ts",
+"kobalte/blocks/gantt/gantt-types.ts",
+"kobalte/blocks/gantt/gantt-view-lib.ts",
+"kobalte/blocks/gantt/gantt-view-rows.tsx",
+"kobalte/blocks/gantt/gantt-view.tsx",
+"kobalte/blocks/gantt/gantt.tsx"
+],
+"deps": [
+"date-fns",
+"@date-fns/tz",
+"lucide-solid"
+],
+"web": false,
+"player": null,
+"install": "npx shadcn@latest add @zaidan/gantt"
+},
+{
+"id": "zaidan/hover-card",
+"name": "hover-card",
+"title": "Hover card",
+"description": "",
+"type": "ui",
+"cat": "overlays/hover-card",
+"domain": [],
+"file": "kobalte/ui/hover-card.tsx",
+"files": [
+"kobalte/ui/hover-card.tsx"
+],
+"deps": [
+"@kobalte/core"
+],
+"web": false,
+"player": null,
+"install": "npx shadcn@latest add @zaidan/hover-card"
+},
+{
+"id": "zaidan/icon-stack",
+"name": "icon-stack",
+"title": "Icon stack",
+"description": "",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [],
+"file": "kobalte/ui/icon-stack.tsx",
+"files": [
+"kobalte/ui/icon-stack.tsx"
+],
+"deps": [],
+"web": false,
+"player": null,
+"install": "npx shadcn@latest add @zaidan/icon-stack"
+},
+{
+"id": "zaidan/image-crop",
+"name": "image-crop",
+"title": "Image Crop",
+"description": "Composable image crop primitives with a provider, canvas, drag handles, and canvas export.",
+"type": "block",
+"cat": "media/gallery",
+"domain": [],
+"file": "kobalte/blocks/image-crop/index.tsx",
+"files": [
+"kobalte/blocks/image-crop/index.tsx",
+"kobalte/blocks/image-crop/canvas.tsx",
+"kobalte/blocks/image-crop/constants.ts",
+"kobalte/blocks/image-crop/context.ts",
+"kobalte/blocks/image-crop/geometry.ts",
+"kobalte/blocks/image-crop/image-utils.ts",
+"kobalte/blocks/image-crop/provider.tsx",
+"kobalte/blocks/image-crop/types.ts"
+],
+"deps": [],
+"web": false,
+"player": null,
+"install": "npx shadcn@latest add @zaidan/image-crop"
+},
+{
+"id": "zaidan/input-group",
+"name": "input-group",
+"title": "Input group",
+"description": "",
+"type": "ui",
+"cat": "inputs/form-field",
+"domain": [],
+"file": "kobalte/ui/input-group.tsx",
+"files": [
+"kobalte/ui/input-group.tsx"
+],
+"deps": [
+"class-variance-authority"
+],
+"web": false,
+"player": null,
+"install": "npx shadcn@latest add @zaidan/input-group"
+},
+{
+"id": "zaidan/input-otp",
+"name": "input-otp",
+"title": "Input otp",
+"description": "",
+"type": "ui",
+"cat": "inputs/otp-input",
+"domain": [],
+"file": "kobalte/ui/input-otp.tsx",
+"files": [
+"kobalte/ui/input-otp.tsx"
+],
+"deps": [
+"@corvu/otp-field",
+"lucide-solid"
+],
+"web": false,
+"player": null,
+"install": "npx shadcn@latest add @zaidan/input-otp"
+},
+{
+"id": "zaidan/input",
+"name": "input",
+"title": "Input",
+"description": "",
+"type": "ui",
+"cat": "inputs/form-field",
+"domain": [],
+"file": "kobalte/ui/input.tsx",
+"files": [
+"kobalte/ui/input.tsx"
+],
+"deps": [],
+"web": false,
+"player": null,
+"install": "npx shadcn@latest add @zaidan/input"
+},
+{
+"id": "zaidan/item",
+"name": "item",
+"title": "Item",
+"description": "",
+"type": "ui",
+"cat": "data-display/list",
+"domain": [],
+"file": "kobalte/ui/item.tsx",
+"files": [
+"kobalte/ui/item.tsx"
+],
+"deps": [
+"class-variance-authority"
+],
+"web": false,
+"player": null,
+"install": "npx shadcn@latest add @zaidan/item"
+},
+{
+"id": "zaidan/kanban",
+"name": "kanban",
+"title": "Kanban",
+"description": "A drag-and-drop kanban board for moving cards within and between columns, with column reordering, a drag overlay, and commit/rollback metadata. Built on @dnd-kit/solid.",
+"type": "block",
+"cat": "data-display/kanban",
+"domain": [
+"commerce"
+],
+"file": "kobalte/blocks/kanban/index.tsx",
+"files": [
+"kobalte/blocks/kanban/index.tsx",
+"kobalte/blocks/kanban/column.tsx",
+"kobalte/blocks/kanban/constants.ts",
+"kobalte/blocks/kanban/context.ts",
+"kobalte/blocks/kanban/item.tsx",
+"kobalte/blocks/kanban/kanban.tsx",
+"kobalte/blocks/kanban/overlay.tsx",
+"kobalte/blocks/kanban/sorting.ts",
+"kobalte/blocks/kanban/types.ts"
+],
+"deps": [
+"@dnd-kit/solid"
+],
+"web": false,
+"player": null,
+"install": "npx shadcn@latest add @zaidan/kanban"
+},
+{
+"id": "zaidan/kbd",
+"name": "kbd",
+"title": "Kbd",
+"description": "",
+"type": "ui",
+"cat": "data-display/typography",
+"domain": [],
+"file": "kobalte/ui/kbd.tsx",
+"files": [
+"kobalte/ui/kbd.tsx"
+],
+"deps": [],
+"web": false,
+"player": null,
+"install": "npx shadcn@latest add @zaidan/kbd"
+},
+{
+"id": "zaidan/label",
+"name": "label",
+"title": "Label",
+"description": "",
+"type": "ui",
+"cat": "inputs/form-field",
+"domain": [],
+"file": "kobalte/ui/label.tsx",
+"files": [
+"kobalte/ui/label.tsx"
+],
+"deps": [],
+"web": false,
+"player": null,
+"install": "npx shadcn@latest add @zaidan/label"
+},
+{
+"id": "zaidan/marker",
+"name": "marker",
+"title": "Marker",
+"description": "",
+"type": "ui",
+"cat": "other/other",
+"domain": [],
+"file": "kobalte/ui/marker.tsx",
+"files": [
+"kobalte/ui/marker.tsx"
+],
+"deps": [
+"class-variance-authority"
+],
+"web": false,
+"player": null,
+"install": "npx shadcn@latest add @zaidan/marker"
+},
+{
+"id": "zaidan/menubar",
+"name": "menubar",
+"title": "Menubar",
+"description": "",
+"type": "ui",
+"cat": "navigation/top-nav",
+"domain": [],
+"file": "kobalte/ui/menubar.tsx",
+"files": [
+"kobalte/ui/menubar.tsx"
+],
+"deps": [
+"@kobalte/core"
+],
+"web": false,
+"player": null,
+"install": "npx shadcn@latest add @zaidan/menubar"
+},
+{
+"id": "zaidan/message-scroller",
+"name": "message-scroller",
+"title": "Message Scroller",
+"description": "A chat scroll container that anchors turns, opens saved transcripts, follows streamed responses, loads history without jumping, and jumps to any message.",
+"type": "block",
+"cat": "ai-agent/ai-agent",
+"domain": [
+"AI"
+],
+"file": "kobalte/blocks/message-scroller/components.tsx",
+"files": [
+"kobalte/blocks/message-scroller/index.ts",
+"kobalte/blocks/message-scroller/components.tsx",
+"kobalte/blocks/message-scroller/geometry.ts",
+"kobalte/blocks/message-scroller/stores.ts",
+"kobalte/blocks/message-scroller/types.ts",
+"kobalte/blocks/message-scroller/use-message-scroller-commands.ts",
+"kobalte/blocks/message-scroller/use-message-scroller-controller.ts",
+"kobalte/blocks/message-scroller/use-message-scroller-refs.ts",
+"kobalte/blocks/message-scroller/utils.ts"
+],
+"deps": [
+"lucide-solid"
+],
+"web": false,
+"player": null,
+"install": "npx shadcn@latest add @zaidan/message-scroller"
+},
+{
+"id": "zaidan/message",
+"name": "message",
+"title": "Message",
+"description": "",
+"type": "ui",
+"cat": "ai-agent/ai-agent",
+"domain": [],
+"file": "kobalte/ui/message.tsx",
+"files": [
+"kobalte/ui/message.tsx"
+],
+"deps": [],
+"web": false,
+"player": null,
+"install": "npx shadcn@latest add @zaidan/message"
+},
+{
+"id": "zaidan/native-select",
+"name": "native-select",
+"title": "Native select",
+"description": "",
+"type": "ui",
+"cat": "inputs/select",
+"domain": [],
+"file": "kobalte/ui/native-select.tsx",
+"files": [
+"kobalte/ui/native-select.tsx"
+],
+"deps": [
+"lucide-solid"
+],
+"web": false,
+"player": null,
+"install": "npx shadcn@latest add @zaidan/native-select"
+},
+{
+"id": "zaidan/navigation-menu",
+"name": "navigation-menu",
+"title": "Navigation menu",
+"description": "",
+"type": "ui",
+"cat": "navigation/top-nav",
+"domain": [],
+"file": "kobalte/ui/navigation-menu.tsx",
+"files": [
+"kobalte/ui/navigation-menu.tsx"
+],
+"deps": [
+"@kobalte/core",
+"class-variance-authority",
+"lucide-solid"
+],
+"web": false,
+"player": null,
+"install": "npx shadcn@latest add @zaidan/navigation-menu"
+},
+{
+"id": "zaidan/pagination",
+"name": "pagination",
+"title": "Pagination",
+"description": "",
+"type": "ui",
+"cat": "navigation/pagination",
+"domain": [],
+"file": "kobalte/ui/pagination.tsx",
+"files": [
+"kobalte/ui/pagination.tsx"
+],
+"deps": [
+"lucide-solid"
+],
+"web": false,
+"player": null,
+"install": "npx shadcn@latest add @zaidan/pagination"
+},
+{
+"id": "zaidan/popover",
+"name": "popover",
+"title": "Popover",
+"description": "",
+"type": "ui",
+"cat": "overlays/popover",
+"domain": [],
+"file": "kobalte/ui/popover.tsx",
+"files": [
+"kobalte/ui/popover.tsx"
+],
+"deps": [
+"@kobalte/core"
+],
+"web": false,
+"player": null,
+"install": "npx shadcn@latest add @zaidan/popover"
+},
+{
+"id": "zaidan/progress",
+"name": "progress",
+"title": "Progress",
+"description": "",
+"type": "ui",
+"cat": "data-viz/progress-bar",
+"domain": [],
+"file": "kobalte/ui/progress.tsx",
+"files": [
+"kobalte/ui/progress.tsx"
+],
+"deps": [
+"@kobalte/core"
+],
+"web": false,
+"player": null,
+"install": "npx shadcn@latest add @zaidan/progress"
+},
+{
+"id": "zaidan/questionnaire",
+"name": "questionnaire",
+"title": "Questionnaire",
+"description": "A multi-step questionnaire with single-choice, multiple-choice, freeform, and skippable questions.",
+"type": "block",
+"cat": "navigation/wizard-steps",
+"domain": [],
+"file": "kobalte/blocks/questionnaire/index.tsx",
+"files": [
+"kobalte/blocks/questionnaire/index.tsx",
+"kobalte/blocks/questionnaire/collection.ts",
+"kobalte/blocks/questionnaire/components.tsx",
+"kobalte/blocks/questionnaire/context.ts",
+"kobalte/blocks/questionnaire/types.ts",
+"kobalte/blocks/questionnaire/use-questionnaire-choice.ts",
+"kobalte/blocks/questionnaire/use-questionnaire-input.ts",
+"kobalte/blocks/questionnaire/use-questionnaire-item.ts",
+"kobalte/blocks/questionnaire/use-questionnaire-root.ts",
+"kobalte/blocks/questionnaire/utils.ts"
+],
+"deps": [
+"lucide-solid"
+],
+"web": false,
+"player": null,
+"install": "npx shadcn@latest add @zaidan/questionnaire"
+},
+{
+"id": "zaidan/radio-group",
+"name": "radio-group",
+"title": "Radio group",
+"description": "",
+"type": "ui",
+"cat": "inputs/radio",
+"domain": [],
+"file": "kobalte/ui/radio-group.tsx",
+"files": [
+"kobalte/ui/radio-group.tsx"
+],
+"deps": [
+"@kobalte/core",
+"lucide-solid"
+],
+"web": false,
+"player": null,
+"install": "npx shadcn@latest add @zaidan/radio-group"
+},
+{
+"id": "zaidan/resizable",
+"name": "resizable",
+"title": "Resizable",
+"description": "",
+"type": "ui",
+"cat": "layout/split-pane",
+"domain": [],
+"file": "kobalte/ui/resizable.tsx",
+"files": [
+"kobalte/ui/resizable.tsx"
+],
+"deps": [
+"@corvu/resizable",
+"@kobalte/core"
+],
+"web": false,
+"player": null,
+"install": "npx shadcn@latest add @zaidan/resizable"
+},
+{
+"id": "zaidan/scroll-area",
+"name": "scroll-area",
+"title": "Scroll area",
+"description": "",
+"type": "ui",
+"cat": "layout/scroll-area",
+"domain": [],
+"file": "kobalte/ui/scroll-area.tsx",
+"files": [
+"kobalte/ui/scroll-area.tsx"
+],
+"deps": [],
+"web": false,
+"player": null,
+"install": "npx shadcn@latest add @zaidan/scroll-area"
+},
+{
+"id": "zaidan/select",
+"name": "select",
+"title": "Select",
+"description": "",
+"type": "ui",
+"cat": "inputs/select",
+"domain": [],
+"file": "kobalte/ui/select.tsx",
+"files": [
+"kobalte/ui/select.tsx"
+],
+"deps": [
+"@kobalte/core",
+"lucide-solid"
+],
+"web": false,
+"player": null,
+"install": "npx shadcn@latest add @zaidan/select"
+},
+{
+"id": "zaidan/separator",
+"name": "separator",
+"title": "Separator",
+"description": "",
+"type": "ui",
+"cat": "other/other",
+"domain": [],
+"file": "kobalte/ui/separator.tsx",
+"files": [
+"kobalte/ui/separator.tsx"
+],
+"deps": [
+"@kobalte/core"
+],
+"web": false,
+"player": null,
+"install": "npx shadcn@latest add @zaidan/separator"
+},
+{
+"id": "zaidan/sheet",
+"name": "sheet",
+"title": "Sheet",
+"description": "",
+"type": "ui",
+"cat": "overlays/sheet",
+"domain": [],
+"file": "kobalte/ui/sheet.tsx",
+"files": [
+"kobalte/ui/sheet.tsx"
+],
+"deps": [
+"@kobalte/core",
+"lucide-solid"
+],
+"web": false,
+"player": null,
+"install": "npx shadcn@latest add @zaidan/sheet"
+},
+{
+"id": "zaidan/sidebar",
+"name": "sidebar",
+"title": "Sidebar",
+"description": "",
+"type": "ui",
+"cat": "navigation/sidebar",
+"domain": [],
+"file": "kobalte/ui/sidebar.tsx",
+"files": [
+"kobalte/ui/sidebar.tsx"
+],
+"deps": [
+"@kobalte/core",
+"class-variance-authority",
+"lucide-solid"
+],
+"web": false,
+"player": null,
+"install": "npx shadcn@latest add @zaidan/sidebar"
+},
+{
+"id": "zaidan/skeleton",
+"name": "skeleton",
+"title": "Skeleton",
+"description": "",
+"type": "ui",
+"cat": "status/skeleton",
+"domain": [],
+"file": "kobalte/ui/skeleton.tsx",
+"files": [
+"kobalte/ui/skeleton.tsx"
+],
+"deps": [],
+"web": false,
+"player": null,
+"install": "npx shadcn@latest add @zaidan/skeleton"
+},
+{
+"id": "zaidan/slider",
+"name": "slider",
+"title": "Slider",
+"description": "",
+"type": "ui",
+"cat": "inputs/slider",
+"domain": [],
+"file": "kobalte/ui/slider.tsx",
+"files": [
+"kobalte/ui/slider.tsx"
+],
+"deps": [
+"@kobalte/core"
+],
+"web": false,
+"player": null,
+"install": "npx shadcn@latest add @zaidan/slider"
+},
+{
+"id": "zaidan/sortable",
+"name": "sortable",
+"title": "Sortable",
+"description": "A drag-and-drop sortable component for reordering items in vertical, grid, and nested layouts. Built on @dnd-kit/solid.",
+"type": "block",
+"cat": "data-display/list",
+"domain": [
+"commerce"
+],
+"file": "kobalte/blocks/sortable/index.tsx",
+"files": [
+"kobalte/blocks/sortable/index.tsx",
+"kobalte/blocks/sortable/context.ts",
+"kobalte/blocks/sortable/item.tsx",
+"kobalte/blocks/sortable/overlay.tsx",
+"kobalte/blocks/sortable/sortable.tsx"
+],
+"deps": [
+"@dnd-kit/solid"
+],
+"web": false,
+"player": null,
+"install": "npx shadcn@latest add @zaidan/sortable"
+},
+{
+"id": "zaidan/spinner",
+"name": "spinner",
+"title": "Spinner",
+"description": "",
+"type": "ui",
+"cat": "status/loader",
+"domain": [],
+"file": "kobalte/ui/spinner.tsx",
+"files": [
+"kobalte/ui/spinner.tsx"
+],
+"deps": [
+"lucide-solid"
+],
+"web": false,
+"player": null,
+"install": "npx shadcn@latest add @zaidan/spinner"
+},
+{
+"id": "zaidan/switch",
+"name": "switch",
+"title": "Switch",
+"description": "",
+"type": "ui",
+"cat": "actions/switch",
+"domain": [],
+"file": "kobalte/ui/switch.tsx",
+"files": [
+"kobalte/ui/switch.tsx"
+],
+"deps": [
+"@kobalte/core"
+],
+"web": false,
+"player": null,
+"install": "npx shadcn@latest add @zaidan/switch"
+},
+{
+"id": "zaidan/table",
+"name": "table",
+"title": "Table",
+"description": "",
+"type": "ui",
+"cat": "data-display/table",
+"domain": [],
+"file": "kobalte/ui/table.tsx",
+"files": [
+"kobalte/ui/table.tsx"
+],
+"deps": [],
+"web": false,
+"player": null,
+"install": "npx shadcn@latest add @zaidan/table"
+},
+{
+"id": "zaidan/tabs",
+"name": "tabs",
+"title": "Tabs",
+"description": "",
+"type": "ui",
+"cat": "navigation/tabs",
+"domain": [],
+"file": "kobalte/ui/tabs.tsx",
+"files": [
+"kobalte/ui/tabs.tsx"
+],
+"deps": [
+"@kobalte/core",
+"class-variance-authority"
+],
+"web": false,
+"player": null,
+"install": "npx shadcn@latest add @zaidan/tabs"
+},
+{
+"id": "zaidan/textarea",
+"name": "textarea",
+"title": "Textarea",
+"description": "",
+"type": "ui",
+"cat": "inputs/textarea",
+"domain": [],
+"file": "kobalte/ui/textarea.tsx",
+"files": [
+"kobalte/ui/textarea.tsx"
+],
+"deps": [],
+"web": false,
+"player": null,
+"install": "npx shadcn@latest add @zaidan/textarea"
+},
+{
+"id": "zaidan/toast",
+"name": "toast",
+"title": "Toast",
+"description": "",
+"type": "ui",
+"cat": "overlays/toast",
+"domain": [],
+"file": "kobalte/ui/toast.tsx",
+"files": [
+"kobalte/ui/toast.tsx"
+],
+"deps": [
+"lucide-solid",
+"solid-sonner"
+],
+"web": false,
+"player": null,
+"install": "npx shadcn@latest add @zaidan/toast"
+},
+{
+"id": "zaidan/toggle-group",
+"name": "toggle-group",
+"title": "Toggle group",
+"description": "",
+"type": "ui",
+"cat": "actions/switch",
+"domain": [],
+"file": "kobalte/ui/toggle-group.tsx",
+"files": [
+"kobalte/ui/toggle-group.tsx"
+],
+"deps": [
+"@kobalte/core",
+"class-variance-authority"
+],
+"web": false,
+"player": null,
+"install": "npx shadcn@latest add @zaidan/toggle-group"
+},
+{
+"id": "zaidan/toggle",
+"name": "toggle",
+"title": "Toggle",
+"description": "",
+"type": "ui",
+"cat": "actions/switch",
+"domain": [],
+"file": "kobalte/ui/toggle.tsx",
+"files": [
+"kobalte/ui/toggle.tsx"
+],
+"deps": [
+"@kobalte/core",
+"class-variance-authority"
+],
+"web": false,
+"player": null,
+"install": "npx shadcn@latest add @zaidan/toggle"
+},
+{
+"id": "zaidan/tooltip",
+"name": "tooltip",
+"title": "Tooltip",
+"description": "",
+"type": "ui",
+"cat": "overlays/tooltip",
+"domain": [],
+"file": "kobalte/ui/tooltip.tsx",
+"files": [
+"kobalte/ui/tooltip.tsx"
+],
+"deps": [
+"@kobalte/core"
+],
+"web": false,
+"player": null,
+"install": "npx shadcn@latest add @zaidan/tooltip"
+}
+]
+}

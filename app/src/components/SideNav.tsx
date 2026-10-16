@@ -4,22 +4,189 @@
 // is its own list. UI's list follows its top tab (Shaan, 10 Oct: "what pages go what … from first principles … use case
 // wise"): Components by the job a piece does, drilling into its kinds; Sites by section; Apps by screen and layout;
 // Looks by what moves and what sits behind; Projects by what each still needs picked.
-import { Fragment, useEffect, useLayoutEffect, useMemo, useRef, useState } from "react"
+import { useEffect, useLayoutEffect, useMemo, useRef, useState } from "react"
 import { Link, useLocation } from "react-router-dom"
-import { ArrowUpRight, Blocks, Bookmark, GitCompareArrows, Bell, BookOpen, Bot, Boxes, Building2, ChevronDown, ChevronLeft, ChevronRight, ClipboardCheck, Code2, Compass, Cpu, Crown, Flame, FolderKanban, Gauge, House, Image as ImageIcon, Keyboard, Layers, LayoutGrid, LayoutTemplate, Library, Map as MapIcon, Package, Palette, PanelLeftClose, PanelsTopLeft, Route, ScrollText, Search, Shapes, Sparkles, Star, Store, Users, Wrench, Zap, type LucideIcon } from "lucide-react"
+import { ArrowUpRight, Atom, Blocks, CheckSquare, CircleDot, CircleUser, FileText, FormInput, Link2, Loader, MessageSquare, MousePointerClick, SlidersHorizontal, Table, Tag, TextCursorInput, ToggleLeft, Type, Bookmark, GitCompareArrows, Bell, BookOpen, Bot, Boxes, Building2, ChartColumnIncreasing, ChevronDown, ChevronLeft, ChevronRight, ClipboardCheck, Code2, Compass, Cpu, Crown, Flame, FolderKanban, Gauge, House, Image as ImageIcon, Keyboard, Layers, LayoutGrid, LayoutTemplate, Library, Map as MapIcon, MapPinned, Package, Palette, PanelLeftClose, PanelsTopLeft, Route, ScrollText, Search, Shapes, Sparkles, Star, Store, Users, Wrench, Zap, type LucideIcon } from "lucide-react"
 import { surfaceOf } from "@/lib/surfaces"
+import { useBookmarks } from "@/lib/bookmarks"
 import { cn } from "@/lib/utils"
 import { catLink, catName, groupLabel, shortIndustry, useIndex, useMeta, type Index } from "@/lib/data"
 import { navIcon } from "./navIcons"
 import { NavGlyph } from "./NavGlyph"
-import { TAB_OF_SCALE, TOP_TABS, groupOf, topTabs, useTopTab } from "@/lib/tab"
-import { SCALES, nodeCount, type ONode } from "@/lib/ontology"
+import { TOP_TABS, groupOf, topTabs, useTopTab, type TopTab } from "@/lib/tab"
+import { nodeCount, type ONode } from "@/lib/ontology"
+import { familiesOf, familyById, homeOf, kitState } from "@/lib/families"
+import { KitDot } from "./KitDot"
 import { matchRows, useKnowledge } from "@/lib/knowledge"
 import { GROUPS, KITS, coreById, coreOf, useProjects } from "@/lib/factory"
 import { PKGS, releases } from "@/lib/packages"
 import { short } from "@/lib/short"
 import appPkg from "../../package.json"
 import sisoMark from "@/assets/siso-mark.png"
+import kitV1 from "../../../catalogue/kit-v1.json"
+
+type AtomRow = { node: string; kind: string; variations?: unknown[] }
+const ATOMS = (kitV1 as unknown as { atoms: AtomRow[] }).atoms
+const ASSET_KINDS = (kitV1 as unknown as { assets?: AtomRow[] }).assets ?? []
+// the library's nodes the kit already has a part for: the library list marks them, so you see what is brought in
+const ATOM_GROUPS = [...ATOMS.reduce((g, k) => g.set(k.node, [...(g.get(k.node) ?? []), k]), new Map<string, AtomRow[]>())]
+const nice = (s: string) => s.replace(/^\w+\//, "").replace(/-/g, " ").replace(/^ui /, "UI ")
+// each atom group's icon (catalogue/kit-v1.json's nodes)
+const ATOM_ICON: Record<string, LucideIcon> = {
+  "atom/layout": Layers, "atom/text": Type, "atom/field": FormInput, "atom/link": Link2, "atom/button": MousePointerClick, "atom/avatar": CircleUser,
+  "atom/badge": Tag, "atom/status-dot": CircleDot, "atom/text-input": TextCursorInput, "atom/choice": CheckSquare, "atom/switch": ToggleLeft,
+  "atom/slider": SlidersHorizontal, "atom/loader": Loader, "atom/progress": Gauge, "atom/data": Table, "atom/tooltip": MessageSquare, "atom/effect": Sparkles,
+}
+
+/** SISO's own assets, at the top of the Assets list (Shaan, 15 Oct: "why do we have assets here when they're supposed to
+ *  be in an assets icon"): the kit's asset kinds, then every animated icon live */
+function SisoAssets({ path, onNavigate }: { path: string; onNavigate?: () => void }) {
+  return (
+    <>
+      {ASSET_KINDS.map((k) => (
+        <NavRow key={k.kind} to={`/kit/atoms/${k.kind}`} icon={k.kind === "animated-icons" ? Sparkles : k.kind === "image" ? ImageIcon : k.kind === "file-icons" ? FileText : navIcon(nice(k.kind), [k.kind])} active={path === `/kit/atoms/${k.kind}`} count={k.variations?.length ? `+${k.variations.length}` : undefined} onNavigate={onNavigate}>
+          <span className="truncate first-letter:uppercase">{nice(k.kind)}</span>
+        </NavRow>
+      ))}
+      <NavRow to="/kit/icons" icon={Sparkles} active={path === "/kit/icons"} onNavigate={onNavigate} title="Every animated icon we hold, live">
+        Every animated icon
+      </NavRow>
+    </>
+  )
+}
+
+/** what the SISO kit holds at one scale, at the head of that scale's list (Shaan, 15 Oct: "slowly we're taking all of the
+ *  stuff we like from the larger library and we're bringing it into our SISO kit"): the kit first, the library under it.
+ *  Atom groups fold, and the group of the page you are on opens by itself. */
+function KitRows({ scale, path, search, factory, onNavigate, scaleN, doneN }: {
+  scale: "atom" | "component" | "section" | "page" | "shell" | "look" | "asset"
+  path: string
+  search: URLSearchParams
+  factory: boolean
+  onNavigate?: () => void
+  scaleN: (scale: string) => number | undefined
+  doneN: (scale: string) => number | undefined
+}) {
+  const here = path.startsWith("/kit/atoms/") ? path.slice(11) : ""
+  const hereNode = ATOMS.find((k) => k.kind === here)?.node
+  const [open, setOpen] = useState<Set<string>>(() => new Set(hereNode ? [hereNode] : []))
+  useEffect(() => {
+    if (hereNode) setOpen((o) => (o.has(hereNode) ? o : new Set(o).add(hereNode)))
+  }, [hereNode])
+  const flip = (n: string) => setOpen((o) => { const x = new Set(o); if (x.has(n)) x.delete(n); else x.add(n); return x })
+  const picking = path === "/siso" ? search.get("scale") : null
+  const pick = (label: string) =>
+    factory && (
+      <NavRow to={`/siso?scale=${scale}`} icon={ClipboardCheck} active={picking === scale && !search.get("uc")} count={`${doneN(scale) ?? 0}/${scaleN(scale) ?? 0}`} onNavigate={onNavigate} title={`Pick the base for each ${label} kind: ${doneN(scale) ?? 0} of ${scaleN(scale) ?? 0} picked`}>
+        Pick {label}
+      </NavRow>
+    )
+  if (scale === "asset") return <SisoAssets path={path} onNavigate={onNavigate} />
+  if (scale === "atom")
+    return (
+      <>
+        <NavRow to="/kit/v1" icon={Atom} active={path === "/kit/v1"} count={ATOMS.length} onNavigate={onNavigate} title="Every atom kind, live">
+          All atoms
+        </NavRow>
+        {/* the groups drop down on the kit's atom pages; on a library page the library stays in view */}
+        {(path === "/kit/v1" || !!hereNode) && ATOM_GROUPS.map(([n, ks]) => {
+          const on = open.has(n)
+          return (
+            <div key={n}>
+              <button onClick={() => flip(n)} aria-expanded={on} className="siso-nav-row flex h-8 w-full items-center gap-2.5 rounded-lg px-2 text-left text-[13.5px] text-sidebar-foreground/80 hover:bg-sidebar-accent hover:text-sidebar-foreground">
+                <NavGlyph icon={ATOM_ICON[n] ?? navIcon(nice(n), [n])} />
+                <span className={cn("truncate capitalize", n === hereNode && "font-medium text-sidebar-foreground")}>{nice(n)}</span>
+                <span className="ml-auto font-mono text-xs text-muted-foreground tabular-nums">{ks.length}</span>
+                <ChevronRight className={cn("size-3.5 shrink-0 text-muted-foreground transition-transform duration-150", on && "rotate-90")} />
+              </button>
+              {on && (
+                <div className="mb-1 ml-[15px] space-y-0.5 border-l border-border/60 pl-2">
+                  {ks.map((k) => (
+                    <NavRow key={k.kind} to={`/kit/atoms/${k.kind}`} active={here === k.kind} count={k.variations?.length ? `+${k.variations.length}` : undefined} onNavigate={onNavigate} className="h-7 text-[13px]">
+                      <span className="truncate capitalize">{nice(k.kind)}</span>
+                    </NavRow>
+                  ))}
+                </div>
+              )}
+            </div>
+          )
+        })}
+        {pick("atoms")}
+      </>
+    )
+  if (scale === "component")
+    return (
+      <>
+        <NavRow to="/kit/dashboard" icon={Gauge} active={path === "/kit/dashboard"} onNavigate={onNavigate} title="Every chart, stat and data part, live: keep or skip each one">
+          Dashboard parts
+        </NavRow>
+        <NavRow to="/kit/charts" icon={ChartColumnIncreasing} active={path === "/kit/charts"} onNavigate={onNavigate} title="Charts from every library we own, live">
+          Charts
+        </NavRow>
+        {pick("components")}
+      </>
+    )
+  if (scale === "section") return pick("sections") || null
+  if (scale === "shell")
+    return (
+      <>
+        <NavRow to="/kit/app-frame" icon={PanelsTopLeft} active={path === "/kit/app-frame" || path.startsWith("/kit/shells/")} onNavigate={onNavigate} title="The SISO app frame: sidebar, rail, top bar, a switch per part">
+          App frame
+        </NavRow>
+        {factory && (
+          <NavRow to="/cores/hub-kit" icon={Boxes} active={path === "/cores/hub-kit"} onNavigate={onNavigate} title="SISO's own: the shell and the five screens every hub is made from">
+            Hub Kit
+          </NavRow>
+        )}
+        <NavRow to="/shells" icon={PanelsTopLeft} active={path === "/shells" || path.startsWith("/shells/")} onNavigate={onNavigate} title="Shells from the library, side by side">
+          Library shells
+        </NavRow>
+        <NavRow to="/packages" icon={Package} active={path === "/packages" || path.startsWith("/packages/")} count={PKGS.packages.length} onNavigate={onNavigate} title="The shell's pieces, each with its versions">
+          Packages
+        </NavRow>
+      </>
+    )
+  if (scale === "page")
+    return (
+      <>
+        <NavRow to="/kit/pages" icon={LayoutTemplate} active={path === "/kit/pages" || path.startsWith("/kit/pages/")} onNavigate={onNavigate} title="Page types, worked back from the pages we run">
+          Page types
+        </NavRow>
+        {factory && (
+          <NavRow to="/cores/site-kit" icon={Store} active={path === "/cores/site-kit"} count={KITS.find((k) => k.id === "site-kit")?.n} onNavigate={onNavigate} title="SISO's own: the blocks and sections our sites are made from">
+            Site Kit
+          </NavRow>
+        )}
+        {pick("pages")}
+      </>
+    )
+  return pick("looks") || null
+}
+
+/** the places every list shares, as one strip at the foot instead of eleven rows at the top of every list (Shaan, 15 Oct:
+ *  "the side nav is just showing a lot of the same stuff ... arc start here for every single one of them") */
+function Places({ path, factory, onNavigate }: { path: string; factory: boolean; onNavigate?: () => void }) {
+  const places: [string, LucideIcon, string][] = [
+    ["/", Sparkles, "Start here: Arc"],
+    ["/home", House, "Home"],
+    ["/map", MapPinned, "The map: every part SISO needs, by scale"],
+    ["/vs", GitCompareArrows, "Head to head: two libraries like for like"],
+    ["/papers", ScrollText, "White papers"],
+    ...(factory ? ([["/bookmarks", Bookmark, "Saved"]] as [string, LucideIcon, string][]) : []),
+  ]
+  return (
+    <div className="mx-3 flex shrink-0 items-center justify-between border-t border-border/60 px-1 pt-2" data-verify-places>
+      {places.map(([to, icon, label]) => {
+        const on = to === "/" ? path === "/" || path === "/arc" : path === to || path.startsWith(to + "/")
+        return (
+          <Link key={to} to={to} onClick={onNavigate} title={label} aria-label={label} aria-current={on ? "page" : undefined} className={cn("siso-press grid size-8 place-items-center rounded-lg text-muted-foreground hover:bg-sidebar-accent hover:text-foreground", on && "bg-sidebar-accent text-foreground")}>
+            <NavGlyph icon={icon} active={on} />
+          </Link>
+        )
+      })}
+    </div>
+  )
+}
 
 type Row = { to: string; label: string; icon: LucideIcon }
 
@@ -239,6 +406,7 @@ export function SideNav({ onSearch, onNavigate, onFold }: { onSearch: () => void
   const projects = useProjects()
   const tab = useTopTab()
   const know = useKnowledge()
+  const { items: marks } = useBookmarks()
   // his build is the App Factory around UI; the public build is the UI Hub alone
   const factory = !idx?.public
   const cid = factory ? coreOf(path) : "ui"
@@ -256,11 +424,16 @@ export function SideNav({ onSearch, onNavigate, onFold }: { onSearch: () => void
   const [hubs, setHubs] = useState(false)
   // how many levels you've stepped back from the page's own (the way back over a job, or the public build's industries)
   const [up, setUp] = useState(0)
+  // the family the side nav is drilled into (taxonomy v2): the one you clicked, else the one the page's kind sits in
+  const [famOpen, setFamOpen] = useState<string | null>(null)
   useEffect(() => {
     setHubs(false)
     setUp(0)
+    setFamOpen(null)
   }, [loc.pathname])
-  const stack: string[] = cid === "ui" ? ["root", ...(job ? [`group:${job}`] : !factory && inInd ? ["industries"] : [])] : cid === null ? ["factory"] : [`core:${cid}`]
+  const kindHome = path.startsWith("/x/") ? homeOf(path.split("/").slice(2, 4).join("/")) : undefined
+  const fam = famOpen ?? (kindHome && kindHome.tab === tab ? kindHome.fam : null)
+  const stack: string[] = cid === "ui" ? ["root", ...(job ? [`group:${job}`] : fam ? [`fam:${fam}`] : !factory && inInd ? ["industries"] : [])] : cid === null ? ["factory"] : [`core:${cid}`]
   const at = Math.max(0, stack.length - 1 - up)
   const level = hubs ? "factory" : stack[at]
   const core = level.startsWith("core:") ? coreById(level.slice(5)) : undefined
@@ -292,6 +465,10 @@ export function SideNav({ onSearch, onNavigate, onFold }: { onSearch: () => void
     else if (p[1] === "c") activeCat = idx.byId.get(path.slice(3))?.c ?? null
   }
   const on = (to: string) => path === to || path.startsWith(to + "/")
+  // Home and Arc have the shared places as their list; every other page keeps its tab's
+  // the home list is also the whole kit's list: its overview pages belong to no one scale
+  const homeList = ["/", "/arc", "/home", "/kit", "/kit/map", "/ours", "/bookmarks"].includes(path) || (path === "/siso" && !params.get("scale"))
+  const tabLabel = (t: string) => TOP_TABS.find((x) => x.id === t)?.label ?? t
 
   const section = (title: string, rows: React.ReactNode, head = title) => (
     <div data-verify-nav-section={title}>
@@ -349,35 +526,7 @@ export function SideNav({ onSearch, onNavigate, onFold }: { onSearch: () => void
           </div>
         )
       })
-  // on every list: Home, then his own places and the white papers (Shaan, 12 Oct: "white papers should be somewhere else
-  // other than just the library")
-  const home = (
-    <>
-      <NavRow to="/" icon={House} active={path === "/"} onNavigate={onNavigate}>
-        Home
-      </NavRow>
-      {factory && (
-        <NavRow to="/siso" icon={Crown} active={path === "/siso"} onNavigate={onNavigate} title="One base for each part, chosen by you">
-          The SISO set
-          <span className="ml-auto text-[11px] text-muted-foreground">you pick</span>
-        </NavRow>
-      )}
-      <NavRow to="/map" icon={MapIcon} active={path === "/map"} onNavigate={onNavigate} title="Every part SISO needs, by scale; pick a library to see what it covers">
-        The map
-      </NavRow>
-      <NavRow to="/vs" icon={GitCompareArrows} active={path === "/vs"} onNavigate={onNavigate} title="Two libraries like for like: only the jobs both do are questions">
-        Head to head
-      </NavRow>
-      <NavRow to="/papers" icon={ScrollText} active={on("/papers")} onNavigate={onNavigate} title="What the research taught us, with the sources">
-        White papers
-      </NavRow>
-      {factory && (
-        <NavRow to="/bookmarks" icon={Bookmark} active={on("/bookmarks")} onNavigate={onNavigate}>
-          Saved
-        </NavRow>
-      )}
-    </>
-  )
+  // a scale's own SISO entry, first in its list (Shaan, 15 Oct: "surely SISO ... should just come to the top")
   const researched = section(
     "Researched",
     (meta?.industries || []).map((v) => {
@@ -393,71 +542,133 @@ export function SideNav({ onSearch, onNavigate, onFold }: { onSearch: () => void
     `Researched (${meta?.industries?.length ?? 0})`,
   )
 
-  // a scale's nodes (catalogue/schema/ontology.json), under their headings: a component's group, Site or App, Foundations
-  // or Effects (Shaan, 11 Oct: the pill switches the scale, the side nav drills it)
-  const nodeSections = (nodes: ONode[]) => {
+  // one kind's row: its kit dot, its name, its library count; the open kind drops down its variations
+  // (catalogue/schema/variations.json), each a filter on its page
+  const nodeRow = (n: ONode) => {
     if (!idx) return null
-    const heads: string[] = []
-    for (const n of nodes) if (!heads.includes(n.group || "")) heads.push(n.group || "")
-    return heads.map((h) => (
-      <Fragment key={h}>
-        {section(
-        h || "All",
-        nodes
-          .filter((n) => (n.group || "") === h)
-          .map((n) => {
-            const row = (
-              <NavRow key={n.key} to={`/x/${n.key}`} icon={navIcon(n.name, n.cats || [])} active={path === `/x/${n.key}`} count={nodeCount(idx.onto, n.key) || (n.sections ? undefined : 0)} onNavigate={onNavigate} title={n.sections ? `${n.job || n.name} · ${n.sections.length} sections` : n.job || n.name}>
-                <span className="truncate">{n.name}</span>
-              </NavRow>
-            )
-            // the open node drops down its variations (catalogue/schema/variations.json), each a filter on its page
-            const vs = path === `/x/${n.key}` ? know?.variations?.[n.key]?.variations || [] : []
-            if (!vs.length) return row
-            const rows = idx.onto.rows.get(n.key) || []
-            const cur = params.get("v")
+    const vars = know?.variations?.[n.key]?.variations || []
+    const libN = nodeCount(idx.onto, n.key)
+    const row = (
+      <NavRow key={n.key} to={`/x/${n.key}`} active={path === `/x/${n.key}`} count={libN || (n.cats?.length ? 0 : undefined)} onNavigate={onNavigate} title={(n.job || n.name) + (n.sections ? ` · ${n.sections.length} sections` : "") + (n.cats?.length ? "" : " · the kit's own: nothing in the library yet")}>
+        <KitDot state={kitState(n, marks, vars)} />
+        <span className="truncate">{n.name}</span>
+      </NavRow>
+    )
+    const vs = path === `/x/${n.key}` ? vars : []
+    if (!vs.length) return row
+    const rows = idx.onto.rows.get(n.key) || []
+    const cur = params.get("v")
+    return (
+      <div key={n.key}>
+        {row}
+        <div className="my-0.5 ml-[21px] space-y-px border-l border-border/70 pl-2" data-verify-nav-variations={n.key}>
+          {vs.map((v) => {
+            const c = matchRows(rows, v).length
+            const got = !!marks[`siso/base/${n.key}/${v.id}`] && !marks[`siso/base/${n.key}/${v.id}`]!.off
             return (
-              <div key={n.key}>
-                {row}
-                <div className="my-0.5 ml-[21px] space-y-px border-l border-border/70 pl-2" data-verify-nav-variations={n.key}>
-                  {vs.map((v) => {
-                    const c = matchRows(rows, v).length
-                    return (
-                      <Link
-                        key={v.id}
-                        to={`/x/${n.key}?v=${v.id}`}
-                        onClick={onNavigate}
-                        title={v.why}
-                        aria-current={cur === v.id ? "page" : undefined}
-                        className={cn("flex items-center gap-2 rounded-md px-2 py-1 text-[12.5px] text-muted-foreground hover:bg-foreground/[0.04] hover:text-foreground", cur === v.id && "bg-foreground/[0.06] text-foreground")}
-                      >
-                        <span className="truncate">{v.name}</span>
-                        <span className={cn("ml-auto font-mono text-[11px] tabular-nums", !c && "text-muted-foreground/60")}>{c ? c.toLocaleString("en-GB") : "gap"}</span>
-                      </Link>
-                    )
-                  })}
-                </div>
-              </div>
+              <Link
+                key={v.id}
+                to={`/x/${n.key}?v=${v.id}`}
+                onClick={onNavigate}
+                title={v.why}
+                aria-current={cur === v.id ? "page" : undefined}
+                className={cn("flex items-center gap-2 rounded-md px-2 py-1 text-[12.5px] text-muted-foreground hover:bg-foreground/[0.04] hover:text-foreground", cur === v.id && "bg-foreground/[0.06] text-foreground")}
+              >
+                <KitDot state={got ? "full" : "gap"} className="size-[7px]" />
+                <span className="truncate">{v.name}</span>
+                <span className={cn("ml-auto font-mono text-[11px] tabular-nums", !c && "text-muted-foreground/60")}>{c ? c.toLocaleString("en-GB") : "gap"}</span>
+              </Link>
             )
-          }),
-        )}
-      </Fragment>
-    ))
+          })}
+        </div>
+      </div>
+    )
   }
-  const scaleNodes = (sc: "atom" | "component" | "section" | "page" | "look") => idx?.onto.scales[sc] || []
+  // a layer's families (taxonomy v2, catalogue/schema/families.json): one row each, kinds picked of kinds; a click drills
+  // the side nav into the family, and its back row comes out again (Shaan, 15 Oct: "no way to go back ... like 21st.dev")
+  const familyRows = (t: TopTab) => {
+    if (!idx) return null
+    const fs = familiesOf(idx.onto, t)
+    if (!fs.length) return null
+    return section(
+      "Families",
+      fs.map((f) => {
+        const got = f.kinds.filter((n) => kitState(n, marks) !== "gap").length
+        return (
+          <button
+            key={f.id}
+            onClick={() => {
+              setFamOpen(f.id)
+              setUp(0)
+            }}
+            title={`${f.job ?? f.name}: ${got} of ${f.kinds.length} kinds in the SISO kit`}
+            className="siso-nav-row flex h-8 w-full items-center gap-2.5 rounded-lg px-2 text-left text-[13.5px] text-sidebar-foreground/80 hover:bg-sidebar-accent hover:text-sidebar-foreground"
+            data-verify-nav-family={f.id}
+          >
+            <KitDot state={got === 0 ? "gap" : got === f.kinds.length ? "full" : "base"} />
+            <span className="truncate">{f.name}</span>
+            <span className="ml-auto font-mono text-xs text-muted-foreground tabular-nums">
+              {got}/{f.kinds.length}
+            </span>
+            <ChevronRight className="size-3.5 shrink-0 text-muted-foreground" />
+          </button>
+        )
+      }),
+      `Families · ${fs.length}`,
+    )
+  }
+  // inside a family: its job, then each kind with its dot and library count
+  const famList = (id: string) => {
+    const f = familyById(idx?.onto, tab, id)
+    if (!f) return null
+    return (
+      <div data-verify-nav-family-open={f.id}>
+        {f.job && <div className="px-2 pb-1 text-[12px] leading-snug text-muted-foreground">{f.job}</div>}
+        <div className="space-y-0.5 pt-1">{f.kinds.map(nodeRow)}</div>
+        <div className="mx-2 mt-4 flex flex-wrap gap-x-3 gap-y-1 border-t border-border/60 pt-2 text-[11px] text-muted-foreground">
+          <span className="flex items-center gap-1"><KitDot state="full" className="size-[7px]" /> in the kit</span>
+          <span className="flex items-center gap-1"><KitDot state="base" className="size-[7px]" /> variations to pick</span>
+          <span className="flex items-center gap-1"><KitDot state="gap" className="size-[7px]" /> gap</span>
+        </div>
+      </div>
+    )
+  }
+  // every scale's list reads the same way down: the SISO kit at this scale, then the library to bring parts in from
+  const kit = (sc: "atom" | "component" | "section" | "page" | "shell" | "look" | "asset") => {
+    const rows = <KitRows scale={sc} path={path} search={params} factory={factory} onNavigate={onNavigate} scaleN={(x) => idx?.onto.scales[x as keyof typeof idx.onto.scales]?.length} doneN={(x) => idx?.onto.scales[x as keyof typeof idx.onto.scales]?.filter((d) => marks[`siso/base/${d.key}`] && !marks[`siso/base/${d.key}`].off).length} />
+    return (
+      <div data-verify-nav-section="SISO kit" data-verify-nav-kit={sc}>
+        <div className="flex items-center gap-1.5 px-2 pt-1 pb-1 text-[12px] font-semibold text-sidebar-foreground">
+          <img src={sisoMark} alt="" width={14} height={14} className="size-3.5" />
+          In the SISO kit
+        </div>
+        <div className="space-y-0.5">{rows}</div>
+      </div>
+    )
+  }
+  const libHead = (
+    <div className="mx-2 mt-6 mb-0.5 border-t border-border/60 pt-3" data-verify-nav-library>
+      <div className="flex items-center gap-1.5 text-[12px] font-semibold text-sidebar-foreground">
+        <Library className="size-3.5 text-muted-foreground" strokeWidth={1.75} />
+        From the library
+      </div>
+      <div className="mt-0.5 text-[11.5px] leading-snug text-muted-foreground">Everything we found. Pick the best and it joins the kit.</div>
+    </div>
+  )
 
   // UI's lists, one per top tab
   const lists: Record<string, () => React.ReactNode> = {
     atoms: () => (
       <>
-        <div className="space-y-0.5">{home}</div>
-        {nodeSections(scaleNodes("atom"))}
+        {kit("atom")}
+        {familyRows("atoms")}
       </>
     ),
     components: () => (
       <>
-        <div className="space-y-0.5">
-          {home}
+        {kit("component")}
+        {libHead}
+        <div className="space-y-0.5 pt-2">
           <NavRow to="/browse" icon={LayoutGrid} active={path === "/browse" && !loc.search} count={idx?.stats.ui_items} onNavigate={onNavigate}>
             Everything
           </NavRow>
@@ -483,7 +694,7 @@ export function SideNav({ onSearch, onNavigate, onFold }: { onSearch: () => void
             Ours
           </NavRow>
         </div>
-        {nodeSections(scaleNodes("component"))}
+        {familyRows("components")}
         {section(
           "The library",
           LIBRARY.map(({ to, label, icon }) => (
@@ -496,13 +707,9 @@ export function SideNav({ onSearch, onNavigate, onFold }: { onSearch: () => void
     ),
     pages: () => (
       <>
-        <div className="space-y-0.5">
-          {home}
-          {factory && (
-            <NavRow to="/cores/site-kit" icon={Store} active={path === "/cores/site-kit"} count={KITS.find((k) => k.id === "site-kit")?.n} onNavigate={onNavigate} title="SISO's own: the blocks and sections our sites are made from">
-              Site Kit
-            </NavRow>
-          )}
+        {kit("page")}
+        {libHead}
+        <div className="space-y-0.5 pt-2">
           <NavRow to="/templates" icon={LayoutTemplate} active={on("/templates")} count={idx?.byCategory.get("pages/templates")?.length} onNavigate={onNavigate}>
             Templates
           </NavRow>
@@ -512,24 +719,14 @@ export function SideNav({ onSearch, onNavigate, onFold }: { onSearch: () => void
             </NavRow>
           ))}
         </div>
-        {nodeSections(scaleNodes("page"))}
+        {familyRows("pages")}
       </>
     ),
     sections: () => (
       <>
-        <div className="space-y-0.5">
-          {home}
-          {factory && (
-            <NavRow to="/cores/hub-kit" icon={Boxes} active={path === "/cores/hub-kit"} onNavigate={onNavigate} title="SISO's own: the shell and the five screens every hub is made from">
-              Hub Kit
-            </NavRow>
-          )}
-          <NavRow to="/packages" icon={Package} active={on("/packages")} count={PKGS.packages.length} onNavigate={onNavigate} title="The shell's pieces, each with its versions">
-            Packages
-          </NavRow>
-          <NavRow to="/shells" icon={PanelsTopLeft} active={on("/shells")} onNavigate={onNavigate}>
-            Shells
-          </NavRow>
+        {kit("section")}
+        {libHead}
+        <div className="space-y-0.5 pt-2">
           {!factory && (
             <NavRow to="/industries" icon={Building2} active={false} onNavigate={drill}>
               By industry
@@ -537,31 +734,40 @@ export function SideNav({ onSearch, onNavigate, onFold }: { onSearch: () => void
             </NavRow>
           )}
         </div>
-        {nodeSections(scaleNodes("section"))}
+        {familyRows("sections")}
       </>
     ),
     looks: () => (
       <>
-        <div className="space-y-0.5">
-          {home}
+        {factory && kit("look")}
+        {factory && libHead}
+        <div className="space-y-0.5 pt-2">
           <NavRow to="/themes" icon={Palette} active={on("/themes")} count={idx?.byCategory.get("themes/shadcn")?.length} onNavigate={onNavigate}>
             Themes
           </NavRow>
         </div>
-        {nodeSections(scaleNodes("look"))}
+        {familyRows("looks")}
       </>
     ),
     // Assets: the parts that are pictures, sounds and type (icons, logos, flags, shapes, sounds, fonts, social images)
     assets: () => (
       <>
-        <div className="space-y-0.5">{home}</div>
-        {idx && section("Assets", cats(groupCats(idx, "assets")))}
+        {kit("asset")}
+        {familyRows("assets")}
+        {libHead}
+        {idx && <div className="space-y-0.5 pt-2">{cats(groupCats(idx, "assets"))}</div>}
+      </>
+    ),
+    // Shells: the frame around a product (taxonomy v2): the app frame, the site frame, the native frame
+    shells: () => (
+      <>
+        {kit("shell")}
+        {familyRows("shells")}
       </>
     ),
     projects: () => (
       <>
         <div className="space-y-0.5">
-          {home}
           <NavRow to="/projects" icon={LayoutGrid} active={path === "/projects"} count={projects?.length} onNavigate={onNavigate}>
             All projects
           </NavRow>
@@ -577,64 +783,69 @@ export function SideNav({ onSearch, onNavigate, onFold }: { onSearch: () => void
       </>
     ),
   }
-  // his own places: the SISO set (one base for each part), what he saved, ours and his picks
-  // his own places, then what to pick by: what he's making (the use cases) or a scale
-  lists.siso = () => (
-    <>
-      <div className="space-y-0.5">
-        {home}
-        <NavRow to="/browse?status=curated" icon={Star} active={path === "/browse" && params.get("status") === "curated"} onNavigate={onNavigate}>
-          His picks
-        </NavRow>
-        <NavRow to="/ours" icon={FolderKanban} active={path === "/ours"} onNavigate={onNavigate} title="Our apps' parts, pictured from their real screens">
-          From our apps
-        </NavRow>
-        <NavRow to="/browse?status=ours" icon={Package} active={path === "/browse" && params.get("status") === "ours"} onNavigate={onNavigate}>
-          Ours
-        </NavRow>
-      </div>
-      {section(
-        "Pick for what you're making",
-        (know?.use_cases?.use_cases || []).map((u) => (
-          <NavRow key={u.id} to={`/siso?uc=${u.id}`} icon={Blocks} active={path === "/siso" && params.get("uc") === u.id} count={u.needs.length} onNavigate={onNavigate} title={u.about}>
-            <span className="truncate">{u.name}</span>
-          </NavRow>
-        )),
-      )}
-      {section(
-        "Pick by scale",
-        SCALES.map((x) => (
-          <NavRow key={x.id} to={`/siso?scale=${x.id}`} icon={TOP_TABS.find((t) => t.id === TAB_OF_SCALE[x.id])?.icon} active={path === "/siso" && params.get("scale") === x.id && !params.get("uc")} count={idx?.onto.scales[x.id].length} onNavigate={onNavigate}>
-            {x.label}
-          </NavRow>
-        )),
-      )}
-    </>
-  )
   // Home: his places, the library by scale, and where it comes from
   lists.home = () => (
     <>
-      <div className="space-y-0.5">{home}</div>
+      <div data-verify-nav-section="SISO kit">
+        <div className="flex items-center gap-1.5 px-2 pt-1 pb-1 text-[12px] font-semibold text-sidebar-foreground">
+          <img src={sisoMark} alt="" width={14} height={14} className="size-3.5" />
+          The SISO kit
+        </div>
+        <div className="space-y-0.5">
+          {factory && (
+            <NavRow to="/siso" icon={Crown} active={path === "/siso" && !params.toString()} onNavigate={onNavigate} title="One base for each part, chosen by you">
+              The SISO set
+            </NavRow>
+          )}
+          <NavRow to="/kit/map" icon={MapIcon} active={path === "/kit/map"} onNavigate={onNavigate} title="Every kind, by frame and family">
+            Kit map
+          </NavRow>
+          <NavRow to="/kit" icon={Boxes} active={path === "/kit"} onNavigate={onNavigate} title="Every part we own, filed by job, live">
+            Everything we own
+          </NavRow>
+          {factory && (
+            <NavRow to="/ours" icon={FolderKanban} active={path === "/ours"} onNavigate={onNavigate} title="Our apps' parts, pictured from their real screens">
+              From our apps
+            </NavRow>
+          )}
+          {factory && (
+            <NavRow to="/bookmarks" icon={Bookmark} active={on("/bookmarks")} onNavigate={onNavigate}>
+              Saved
+            </NavRow>
+          )}
+        </div>
+      </div>
       {section(
         "Browse by scale",
-        SCALES.map((x) => {
-          const t = TOP_TABS.find((t) => t.id === TAB_OF_SCALE[x.id])
-          return (
-            t && (
-              <NavRow key={x.id} to={t.to} icon={t.icon} active={false} count={idx ? idx.onto.scales[x.id].reduce((n, d) => n + nodeCount(idx.onto, d.key), 0) : undefined} onNavigate={onNavigate}>
-                {x.label}
-              </NavRow>
-            )
-          )
-        }),
+        tabs
+          .filter((t) => t.id !== "projects")
+          .map((t) => (
+            <NavRow key={t.id} to={t.to} icon={t.icon} active={false} count={idx ? familiesOf(idx.onto, t.id).reduce((n, f) => n + f.kinds.reduce((m, d) => m + nodeCount(idx.onto, d.key), 0), 0) : undefined} onNavigate={onNavigate}>
+              {t.label}
+            </NavRow>
+          )),
       )}
       {section(
-        "The library",
-        LIBRARY.map(({ to, label, icon }) => (
-          <NavRow key={to} to={to} icon={icon} active={on(to)} onNavigate={onNavigate}>
-            {label}
-          </NavRow>
-        )),
+        "About the library",
+        [
+          <NavRow key="arc" to="/" icon={Sparkles} active={path === "/" || path === "/arc"} onNavigate={onNavigate} title="Every Arc part, live from its code">
+            Start here: Arc
+          </NavRow>,
+          <NavRow key="map" to="/map" icon={MapPinned} active={path === "/map"} onNavigate={onNavigate} title="Every part SISO needs, by scale; pick a library to see what it covers">
+            The map
+          </NavRow>,
+          <NavRow key="vs" to="/vs" icon={GitCompareArrows} active={path === "/vs"} onNavigate={onNavigate} title="Two libraries like for like: only the jobs both do are questions">
+            Head to head
+          </NavRow>,
+          <NavRow key="papers" to="/papers" icon={ScrollText} active={on("/papers")} onNavigate={onNavigate} title="What the research taught us, with the sources">
+            White papers
+          </NavRow>,
+          ...LIBRARY.map(({ to, label, icon }) => (
+            <NavRow key={to} to={to} icon={icon} active={on(to)} onNavigate={onNavigate}>
+              {label}
+            </NavRow>
+          )),
+        ],
       )}
     </>
   )
@@ -687,17 +898,25 @@ export function SideNav({ onSearch, onNavigate, onFold }: { onSearch: () => void
 
       <div className="px-3 pb-2">
         {!hubs && at > 0 && (
-          <button onClick={() => setUp(up + 1)} className="siso-press mb-2 flex h-8 w-full items-center gap-2 rounded-md px-1 text-sm font-medium hover:bg-sidebar-accent" aria-label="Back to UI">
+          <button onClick={() => setUp(up + 1)} className="siso-press mb-2 flex h-8 w-full items-center gap-2 rounded-md px-1 text-sm font-medium hover:bg-sidebar-accent" aria-label={level.startsWith("fam:") ? `Back to ${tabLabel(tab)}` : "Back to UI"} data-verify-nav-back={level}>
             <ChevronLeft className="size-4 text-muted-foreground" />
-            <span key={level} className="siso-title flex-1 pr-6 text-center">
-              {level === "industries" ? "Industries" : JOB.get(level.slice(6))?.label}
+            <span key={level} className="siso-title flex-1 truncate pr-6 text-center">
+              {level === "industries" ? "Industries" : level.startsWith("fam:") ? (familyById(idx?.onto, tab, level.slice(4))?.name ?? tabLabel(tab)) : JOB.get(level.slice(6))?.label}
             </span>
           </button>
+        )}
+        {!hubs && level === "root" && cid === "ui" && !homeList && tab !== "projects" && (
+          <Link to="/kit" onClick={onNavigate} className="siso-press mb-2 flex h-8 w-full items-center gap-2 rounded-md px-1 text-sm font-medium hover:bg-sidebar-accent" data-verify-nav-back="root">
+            <ChevronLeft className="size-4 text-muted-foreground" />
+            <span className="flex-1 truncate pr-6 text-center">
+              The SISO kit <span className="text-muted-foreground">· {tabLabel(tab)}</span>
+            </span>
+          </Link>
         )}
         <SearchButton onSearch={onSearch} label={level === "factory" ? "Search the App Factory" : cid === "ui" ? "Search UI" : `Search ${here}`} />
       </div>
 
-      <Slide k={level === "root" ? `root:${path === "/" ? "home" : tab}` : level} dir={dir}>
+      <Slide k={level === "root" ? `root:${homeList ? "home" : tab}` : level} dir={dir}>
         {level === "factory" ? (
           <div data-verify-hubs>
             <div className="space-y-0.5">
@@ -749,10 +968,13 @@ export function SideNav({ onSearch, onNavigate, onFold }: { onSearch: () => void
           </>
         ) : level.startsWith("group:") ? (
           jobList(level.slice(6))
+        ) : level.startsWith("fam:") ? (
+          famList(level.slice(4))
         ) : (
-          (lists[path === "/" ? "home" : factory || (tab !== "projects" && tab !== "siso") ? tab : "components"] ?? lists.components)()
+          (lists[homeList ? "home" : !factory && tab === "projects" ? "components" : tab] ?? lists.components)()
         )}
       </Slide>
+      {!(level === "root" && homeList) && level !== "factory" && <Places path={path} factory={factory} onNavigate={onNavigate} />}
       <Foot name={factory ? "App Factory" : "SISO UI Hub"} pub={!factory} />
     </nav>
   )

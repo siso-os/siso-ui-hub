@@ -1,0 +1,92 @@
+/* ThreadPull — only the thread takes the pointer. An invisible, wider copy of
+   it is the grab zone, so the cursor says grab exactly where a grab works, and
+   the text around it stays free to scroll under a finger. */
+
+.thread-pull {
+  position: relative;
+  display: inline-block;
+  padding-bottom: 22px;   /* the anchors sit 16px under the text; the rest is room for the stroke */
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.thread-pull.is-held,
+.thread-pull.is-held * { cursor: grabbing; }
+
+.thread-pull__line {
+  display: block;
+  position: relative;
+  z-index: 1;
+}
+
+.thread-pull__char {
+  display: inline-block;
+  transform-origin: 50% 100%;
+  will-change: transform;
+}
+
+.thread-pull__char.is-space { white-space: pre; }
+
+/* The rest sag, as a fraction of the width: percentage padding is measured
+   against the width, which is exactly what a catenary's sag scales with. */
+.thread-pull__hang {
+  display: block;
+  padding-top: calc(var(--thread-pull-hang, 0) * 100%);
+  pointer-events: none;
+}
+
+.thread-pull__svg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  overflow: visible;
+  pointer-events: none;
+}
+
+.thread-pull__hit {
+  stroke: transparent;
+  stroke-width: 28px;
+  stroke-linecap: round;
+  pointer-events: stroke;
+  cursor: grab;
+  touch-action: none;         /* for a browser that does not know the next line */
+  touch-action: pinch-zoom;   /* one finger pulls; two still zoom the page */
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* A finger needs more room than a cursor — and any-pointer, not pointer, so a
+   laptop with a touchscreen gets it too. */
+@media (any-pointer: coarse) {
+  .thread-pull__hit { stroke-width: 48px; }
+}
+
+/* Two steps, so each says something. Near the thread the stroke firms up a
+   quarter — it can be taken. Held, it firms up a half — it has been. In is
+   quick and decelerating (90 ms to hover, 120 ms to the grip), out is slower
+   (180 ms), so the thread seems to relax rather than switch off. Hover only
+   counts where a pointer can actually hover: a tapped thread on a phone would
+   otherwise stay firm. */
+.thread-pull__thread {
+  stroke-width: var(--thread-pull-w, 2px);
+  pointer-events: none;
+  transition: stroke-width 180ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media (hover: hover) {
+  .thread-pull__hit:hover + .thread-pull__thread {
+    stroke-width: calc(var(--thread-pull-w, 2px) * 1.25);
+    transition-duration: 90ms;
+    transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  }
+}
+
+.thread-pull.is-held .thread-pull__thread {
+  stroke-width: calc(var(--thread-pull-w, 2px) * 1.5);
+  transition-duration: 120ms;
+  transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .thread-pull__char { will-change: auto; }
+  .thread-pull__thread { transition: none; }
+}

@@ -1,0 +1,21 @@
+/* WetInk — the simulation runs at one cell per `cell` px and the canvas is
+   scaled up smoothly, which softens the grid the way paper softens ink. A box
+   without a height gets a wordmark's proportions. While the box is changing
+   size the picture already there is held whole, at its own proportions, on
+   paper of the same colour — never stretched to the new shape. */
+
+.wet-ink {
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 3.2 / 1;
+  background: var(--wet-ink-paper, #f3eee3);
+}
+
+.wet-ink__canvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: contain;
+}

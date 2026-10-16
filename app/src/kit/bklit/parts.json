@@ -1,0 +1,807 @@
+{
+"lib": "bklit",
+"source": "bklit",
+"homepage": "https://ui.bklit.com",
+"description": "Open-source composable chart components for React \u2014 line, area, bar, pie, radar, maps, and more. Built with Visx, Motion, and shadcn/ui.",
+"items": 56,
+"parts": [
+{
+"id": "bklit/area-chart-example",
+"name": "area-chart-example",
+"title": "Area Chart Example",
+"description": "Composable area-chart demo for Open in v0",
+"type": "example",
+"cat": "data-viz/chart",
+"domain": [],
+"file": "examples/area-chart.tsx",
+"files": [
+"examples/area-chart.tsx",
+"examples/area-chart-index.ts"
+],
+"deps": [
+"@visx/curve@4.0.0",
+"@visx/shape@4.0.0",
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://ui.bklit.com/r/area-chart-example.json"
+},
+{
+"id": "bklit/background",
+"name": "background",
+"title": "Chart Background",
+"description": "Pattern fill for the plot area when grid lines are hidden",
+"type": "component",
+"cat": "motion/background",
+"domain": [],
+"file": "charts/background.tsx",
+"files": [
+"charts/background.tsx",
+"charts/pattern-preset.tsx",
+"charts/visx-pattern.tsx"
+],
+"deps": [
+"@visx/pattern@4.0.0",
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://ui.bklit.com/r/background.json"
+},
+{
+"id": "bklit/bar-chart-example",
+"name": "bar-chart-example",
+"title": "Bar Chart Example",
+"description": "Composable bar-chart demo for Open in v0",
+"type": "example",
+"cat": "data-viz/chart",
+"domain": [],
+"file": "examples/bar-chart.tsx",
+"files": [
+"examples/bar-chart.tsx",
+"examples/bar-chart-index.ts"
+],
+"deps": [
+"@visx/gradient@4.0.0",
+"@visx/pattern@4.0.0",
+"@visx/shape@4.0.0",
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://ui.bklit.com/r/bar-chart-example.json"
+},
+{
+"id": "bklit/bar-depth",
+"name": "bar-depth",
+"title": "Bar Depth",
+"description": "3D depth and glossy glass surfaces for BarChart bars",
+"type": "component",
+"cat": "data-viz/chart",
+"domain": [],
+"file": "charts/bar-depth.tsx",
+"files": [
+"charts/bar-depth.tsx"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://ui.bklit.com/r/bar-depth.json"
+},
+{
+"id": "bklit/candlestick-chart-example",
+"name": "candlestick-chart-example",
+"title": "Candlestick Chart Example",
+"description": "Composable candlestick-chart demo for Open in v0",
+"type": "example",
+"cat": "data-viz/chart",
+"domain": [],
+"file": "examples/candlestick-chart.tsx",
+"files": [
+"examples/candlestick-chart.tsx",
+"examples/candlestick-chart-index.ts"
+],
+"deps": [
+"@visx/shape@4.0.0",
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://ui.bklit.com/r/candlestick-chart-example.json"
+},
+{
+"id": "bklit/chart-animation",
+"name": "chart-animation",
+"title": "Chart Animation",
+"description": "Shared motion helpers for chart enter transitions, clip reveals, and staggered animations",
+"type": "component",
+"cat": "data-viz/chart",
+"domain": [
+"dev tools"
+],
+"file": "charts/chart-reveal-clip.tsx",
+"files": [
+"charts/animation.ts",
+"charts/motion-utils.ts",
+"charts/use-mount-progress.ts",
+"charts/use-enter-complete.ts",
+"charts/chart-reveal-clip.tsx",
+"charts/static-chart-preview-context.tsx",
+"charts/chart-defs.ts"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://ui.bklit.com/r/chart-animation.json"
+},
+{
+"id": "bklit/chart-context",
+"name": "chart-context",
+"title": "Chart Context",
+"description": "Shared context and hooks for Bklit chart components",
+"type": "component",
+"cat": "data-viz/chart",
+"domain": [],
+"file": "charts/chart-context.tsx",
+"files": [
+"charts/chart-context.tsx",
+"charts/reference-area-config.ts",
+"charts/use-chart-interaction.ts",
+"charts/y-axis-scales.ts",
+"charts/y-axis-ticks.ts",
+"charts/chart-phase.ts",
+"charts/y-domain-utils.ts",
+"charts/filter-data-by-x-domain.ts",
+"charts/generate-chart-skeleton-data.ts",
+"charts/use-animated-y-domains.ts",
+"charts/use-chart-phase-orchestrator.ts",
+"charts/line-loading-timing.ts"
+],
+"deps": [
+"@visx/event@4.0.0",
+"@visx/responsive@4.0.0",
+"@visx/scale@4.0.0",
+"d3-array",
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://ui.bklit.com/r/chart-context.json"
+},
+{
+"id": "bklit/chart-series",
+"name": "chart-series",
+"title": "Chart Series Layer",
+"description": "Shared line and area series rendering helpers (paths, markers, highlights, dash tails)",
+"type": "component",
+"cat": "data-viz/chart",
+"domain": [],
+"file": "charts/highlight-segment.tsx",
+"files": [
+"charts/path-stroke-utils.ts",
+"charts/series-path-utils.ts",
+"charts/use-animated-series-path.ts",
+"charts/highlight-segment-bounds.ts",
+"charts/highlight-segment.tsx",
+"charts/dash-tail-stroke.tsx",
+"charts/series-dash-tail-overlay.tsx",
+"charts/series-highlight-layer.tsx",
+"charts/chart-legend-hover.tsx",
+"charts/series-hover-dim.tsx",
+"charts/series-point-marker.tsx",
+"charts/series-markers.tsx",
+"charts/use-highlight-segment.ts",
+"charts/area-gradient-defs.tsx",
+"charts/fade-edges.ts"
+],
+"deps": [
+"@visx/shape@4.0.0",
+"d3-shape",
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://ui.bklit.com/r/chart-series.json"
+},
+{
+"id": "bklit/chart-stat-flow",
+"name": "chart-stat-flow",
+"title": "Chart Stat Flow",
+"description": "Animated stat value and label for chart overlays",
+"type": "component",
+"cat": "data-display/stat",
+"domain": [],
+"file": "charts/chart-stat-flow.tsx",
+"files": [
+"charts/chart-stat-flow.tsx"
+],
+"deps": [
+"@number-flow/react",
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://ui.bklit.com/r/chart-stat-flow.json"
+},
+{
+"id": "bklit/choropleth-chart-example",
+"name": "choropleth-chart-example",
+"title": "Choropleth Chart Example",
+"description": "Composable choropleth-chart demo for Open in v0",
+"type": "example",
+"cat": "data-viz/chart",
+"domain": [],
+"file": "examples/choropleth-chart.tsx",
+"files": [
+"examples/choropleth-chart.tsx",
+"examples/choropleth-chart-index.ts"
+],
+"deps": [
+"@visx/geo@4.0.0",
+"d3-geo",
+"topojson-client"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://ui.bklit.com/r/choropleth-chart-example.json"
+},
+{
+"id": "bklit/composed-chart-example",
+"name": "composed-chart-example",
+"title": "Composed Chart Example",
+"description": "Composable composed-chart demo for Open in v0",
+"type": "example",
+"cat": "data-viz/chart",
+"domain": [],
+"file": "examples/composed-chart.tsx",
+"files": [
+"examples/composed-chart.tsx",
+"examples/composed-chart-index.ts"
+],
+"deps": [
+"@visx/curve@4.0.0",
+"@visx/shape@4.0.0",
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://ui.bklit.com/r/composed-chart-example.json"
+},
+{
+"id": "bklit/funnel-chart-example",
+"name": "funnel-chart-example",
+"title": "Funnel Chart Example",
+"description": "Composable funnel-chart demo for Open in v0",
+"type": "example",
+"cat": "data-viz/chart",
+"domain": [],
+"file": "examples/funnel-chart.tsx",
+"files": [
+"examples/funnel-chart.tsx",
+"examples/funnel-chart-index.ts"
+],
+"deps": [
+"@visx/shape@4.0.0",
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://ui.bklit.com/r/funnel-chart-example.json"
+},
+{
+"id": "bklit/gauge-chart-example",
+"name": "gauge-chart-example",
+"title": "Gauge Chart Example",
+"description": "Composable gauge-chart demo for Open in v0",
+"type": "example",
+"cat": "data-viz/chart",
+"domain": [],
+"file": "examples/gauge-chart.tsx",
+"files": [
+"examples/gauge-chart.tsx",
+"examples/gauge-chart-index.ts"
+],
+"deps": [
+"@visx/shape@4.0.0",
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://ui.bklit.com/r/gauge-chart-example.json"
+},
+{
+"id": "bklit/heatmap-chart-example",
+"name": "heatmap-chart-example",
+"title": "Heatmap Chart Example",
+"description": "Composable heatmap-chart demo for Open in v0",
+"type": "example",
+"cat": "data-viz/chart",
+"domain": [
+"maps"
+],
+"file": "examples/heatmap-chart.tsx",
+"files": [
+"examples/heatmap-chart.tsx",
+"examples/heatmap-chart-index.ts"
+],
+"deps": [
+"@visx/heatmap@4.0.0",
+"@visx/shape@4.0.0",
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://ui.bklit.com/r/heatmap-chart-example.json"
+},
+{
+"id": "bklit/legend",
+"name": "legend",
+"title": "Chart Legend",
+"description": "Composable legend components for charts",
+"type": "component",
+"cat": "data-viz/chart",
+"domain": [],
+"file": "charts/legend/legend.tsx",
+"files": [
+"charts/legend/legend.tsx",
+"charts/legend/legend-context.tsx",
+"charts/legend/legend-item.tsx",
+"charts/legend/legend-label.tsx",
+"charts/legend/legend-marker.tsx",
+"charts/legend/legend-progress.tsx",
+"charts/legend/legend-value.tsx",
+"charts/legend/index.ts"
+],
+"deps": [
+"@base-ui/react",
+"@number-flow/react"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://ui.bklit.com/r/legend.json"
+},
+{
+"id": "bklit/line-chart-example",
+"name": "line-chart-example",
+"title": "Line Chart Example",
+"description": "Composable line-chart demo for Open in v0",
+"type": "example",
+"cat": "data-viz/chart",
+"domain": [],
+"file": "examples/line-chart.tsx",
+"files": [
+"examples/line-chart.tsx",
+"examples/line-chart-index.ts"
+],
+"deps": [
+"@visx/curve@4.0.0",
+"@visx/shape@4.0.0",
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://ui.bklit.com/r/line-chart-example.json"
+},
+{
+"id": "bklit/live-line-chart-example",
+"name": "live-line-chart-example",
+"title": "Live Line Chart Example",
+"description": "Composable live-line-chart demo for Open in v0",
+"type": "example",
+"cat": "data-viz/chart",
+"domain": [],
+"file": "examples/live-line-chart.tsx",
+"files": [
+"examples/live-line-chart.tsx",
+"examples/live-line-chart-index.ts"
+],
+"deps": [
+"@visx/curve@4.0.0",
+"@visx/shape@4.0.0",
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://ui.bklit.com/r/live-line-chart-example.json"
+},
+{
+"id": "bklit/markers",
+"name": "markers",
+"title": "Chart Markers",
+"description": "Marker components for highlighting data points on charts",
+"type": "component",
+"cat": "data-viz/chart",
+"domain": [],
+"file": "charts/markers/chart-markers.tsx",
+"files": [
+"charts/markers/chart-markers.tsx",
+"charts/markers/marker-group.tsx",
+"charts/markers/index.ts"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://ui.bklit.com/r/markers.json"
+},
+{
+"id": "bklit/pie-chart-example",
+"name": "pie-chart-example",
+"title": "Pie Chart Example",
+"description": "Composable pie-chart demo for Open in v0",
+"type": "example",
+"cat": "data-viz/chart",
+"domain": [],
+"file": "examples/pie-chart.tsx",
+"files": [
+"examples/pie-chart.tsx",
+"examples/pie-chart-index.ts"
+],
+"deps": [
+"@visx/shape@4.0.0",
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://ui.bklit.com/r/pie-chart-example.json"
+},
+{
+"id": "bklit/profit-loss-line",
+"name": "profit-loss-line",
+"title": "Profit/Loss Line",
+"description": "Sign-colored line segments for profit and loss on LineChart",
+"type": "component",
+"cat": "data-viz/chart",
+"domain": [],
+"file": "charts/profit-loss-line.tsx",
+"files": [
+"charts/profit-loss-line.tsx",
+"charts/profit-loss-segments.ts",
+"charts/profit-loss-legend-hover.tsx",
+"charts/profit-loss-legend.tsx"
+],
+"deps": [
+"@visx/curve@4.0.0",
+"@visx/shape@4.0.0"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://ui.bklit.com/r/profit-loss-line.json"
+},
+{
+"id": "bklit/projection-line",
+"name": "projection-line",
+"title": "Projection Line",
+"description": "Forecast segment extending a line series past the last data point",
+"type": "component",
+"cat": "data-viz/chart",
+"domain": [],
+"file": "charts/projection-line.tsx",
+"files": [
+"charts/projection-line.tsx",
+"charts/projection-line-end-marker.tsx",
+"charts/projection-utils.ts",
+"charts/line-series-terminal-marker.tsx"
+],
+"deps": [
+"@visx/shape@4.0.0",
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://ui.bklit.com/r/projection-line.json"
+},
+{
+"id": "bklit/radar-chart-example",
+"name": "radar-chart-example",
+"title": "Radar Chart Example",
+"description": "Composable radar-chart demo for Open in v0",
+"type": "example",
+"cat": "data-viz/chart",
+"domain": [],
+"file": "examples/radar-chart.tsx",
+"files": [
+"examples/radar-chart.tsx",
+"examples/radar-chart-index.ts"
+],
+"deps": [
+"@visx/shape@4.0.0",
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://ui.bklit.com/r/radar-chart-example.json"
+},
+{
+"id": "bklit/reference-area",
+"name": "reference-area",
+"title": "Reference Area",
+"description": "Shaded data-coordinate band for target ranges and thresholds on time-series charts",
+"type": "component",
+"cat": "data-viz/chart",
+"domain": [
+"maps"
+],
+"file": "charts/reference-area.tsx",
+"files": [
+"charts/reference-area.tsx",
+"charts/reference-area-geometry.ts",
+"charts/reference-area-registration-context.tsx"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://ui.bklit.com/r/reference-area.json"
+},
+{
+"id": "bklit/ring-chart-example",
+"name": "ring-chart-example",
+"title": "Ring Chart Example",
+"description": "Composable ring-chart demo for Open in v0",
+"type": "example",
+"cat": "data-viz/chart",
+"domain": [],
+"file": "examples/ring-chart.tsx",
+"files": [
+"examples/ring-chart.tsx",
+"examples/ring-chart-index.ts"
+],
+"deps": [
+"@visx/shape@4.0.0",
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://ui.bklit.com/r/ring-chart-example.json"
+},
+{
+"id": "bklit/sankey-chart-example",
+"name": "sankey-chart-example",
+"title": "Sankey Chart Example",
+"description": "Composable sankey-chart demo for Open in v0",
+"type": "example",
+"cat": "data-viz/chart",
+"domain": [],
+"file": "examples/sankey-chart.tsx",
+"files": [
+"examples/sankey-chart.tsx",
+"examples/sankey-chart-index.ts"
+],
+"deps": [
+"@visx/sankey@4.0.0",
+"@visx/shape@4.0.0",
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://ui.bklit.com/r/sankey-chart-example.json"
+},
+{
+"id": "bklit/scatter-chart-example",
+"name": "scatter-chart-example",
+"title": "Scatter Chart Example",
+"description": "Composable scatter-chart demo for Open in v0",
+"type": "example",
+"cat": "data-viz/chart",
+"domain": [],
+"file": "examples/scatter-chart.tsx",
+"files": [
+"examples/scatter-chart.tsx",
+"examples/scatter-chart-index.ts"
+],
+"deps": [
+"d3-scale",
+"d3-array",
+"motion",
+"react-use-measure"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://ui.bklit.com/r/scatter-chart-example.json"
+},
+{
+"id": "bklit/shimmering-text",
+"name": "shimmering-text",
+"title": "Shimmering Text",
+"description": "Per-character shimmer animation for loading labels and badges",
+"type": "component",
+"cat": "motion/text-effect",
+"domain": [],
+"file": "components/shimmering-text.tsx",
+"files": [
+"components/shimmering-text.tsx"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://ui.bklit.com/r/shimmering-text.json"
+},
+{
+"id": "bklit/stat-card-area-01-example",
+"name": "stat-card-area-01-example",
+"title": "Stat Card Area Example",
+"description": "Revenue stat card with gradient area sparkline, NumberFlow, and trend badge \u2014 demo for Open in v0",
+"type": "example",
+"cat": "data-display/card",
+"domain": [],
+"file": "examples/stat-card-area-01.tsx",
+"files": [
+"examples/stat-card-area-01.tsx",
+"examples/stat-card-area-01-index.ts"
+],
+"deps": [
+"@visx/curve@4.0.0",
+"@visx/gradient@4.0.0",
+"@number-flow/react",
+"@central-icons-react/all"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://ui.bklit.com/r/stat-card-area-01-example.json"
+},
+{
+"id": "bklit/stat-card-area-01",
+"name": "stat-card-area-01",
+"title": "Stat Card Area",
+"description": "Revenue stat card with gradient area sparkline, NumberFlow, and trend badge",
+"type": "block",
+"cat": "data-display/card",
+"domain": [],
+"file": "blocks/stat-card-area-01/components/stat-card-area.tsx",
+"files": [
+"blocks/stat-card-area-01/components/stat-card-area.tsx",
+"blocks/stat-card-area-01/components/stat-card-chart.tsx",
+"blocks/stat-card-area-01/components/stat-card-hover-bridge.tsx",
+"blocks/stat-card-area-01/components/trend-badge.tsx",
+"blocks/stat-card-area-01/data/revenue-series.ts",
+"examples/stat-card-area-01-index.ts"
+],
+"deps": [
+"@visx/curve@4.0.0",
+"@visx/gradient@4.0.0",
+"@number-flow/react",
+"@central-icons-react/all"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://ui.bklit.com/r/stat-card-area-01.json"
+},
+{
+"id": "bklit/stat-card-choropleth-01-example",
+"name": "stat-card-choropleth-01-example",
+"title": "Stat Card Choropleth Example",
+"description": "Visitor map stat card with choropleth sparkline, NumberFlow, and trend badge \u2014 demo for Open in v0",
+"type": "example",
+"cat": "data-viz/map",
+"domain": [
+"maps"
+],
+"file": "examples/stat-card-choropleth-01.tsx",
+"files": [
+"examples/stat-card-choropleth-01.tsx",
+"examples/stat-card-choropleth-01-index.ts"
+],
+"deps": [
+"@number-flow/react",
+"@types/geojson",
+"@types/topojson-specification",
+"@central-icons-react/all",
+"topojson-client"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://ui.bklit.com/r/stat-card-choropleth-01-example.json"
+},
+{
+"id": "bklit/stat-card-choropleth-01",
+"name": "stat-card-choropleth-01",
+"title": "Stat Card Choropleth",
+"description": "Visitor map stat card with choropleth sparkline, NumberFlow, and trend badge",
+"type": "block",
+"cat": "data-viz/map",
+"domain": [
+"maps"
+],
+"file": "blocks/stat-card-choropleth-01/components/stat-card-choropleth.tsx",
+"files": [
+"blocks/stat-card-choropleth-01/components/stat-card-choropleth.tsx",
+"blocks/stat-card-choropleth-01/components/stat-card-choropleth-hover-bridge.tsx",
+"blocks/stat-card-choropleth-01/components/stat-card-chart.tsx",
+"blocks/stat-card-choropleth-01/components/trend-badge.tsx",
+"blocks/stat-card-choropleth-01/data/visitors.ts",
+"blocks/stat-card-choropleth-01/lib/use-world-data.tsx",
+"examples/stat-card-choropleth-01-index.ts"
+],
+"deps": [
+"@number-flow/react",
+"@types/geojson",
+"@types/topojson-specification",
+"@central-icons-react/all",
+"topojson-client"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://ui.bklit.com/r/stat-card-choropleth-01.json"
+},
+{
+"id": "bklit/stat-card-line-01-example",
+"name": "stat-card-line-01-example",
+"title": "Stat Card Line Example",
+"description": "Sessions stat card with line sparkline, overlaid NumberFlow, and trend badge \u2014 demo for Open in v0",
+"type": "example",
+"cat": "data-display/card",
+"domain": [
+"auth"
+],
+"file": "examples/stat-card-line-01.tsx",
+"files": [
+"examples/stat-card-line-01.tsx",
+"examples/stat-card-line-01-index.ts"
+],
+"deps": [
+"@visx/curve@4.0.0",
+"@number-flow/react",
+"@central-icons-react/all"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://ui.bklit.com/r/stat-card-line-01-example.json"
+},
+{
+"id": "bklit/stat-card-line-01",
+"name": "stat-card-line-01",
+"title": "Stat Card Line",
+"description": "Sessions stat card with line sparkline, overlaid NumberFlow, and trend badge",
+"type": "block",
+"cat": "data-display/card",
+"domain": [
+"auth"
+],
+"file": "blocks/stat-card-line-01/components/stat-card-line.tsx",
+"files": [
+"blocks/stat-card-line-01/components/stat-card-line.tsx",
+"blocks/stat-card-line-01/components/stat-card-chart.tsx",
+"blocks/stat-card-line-01/components/stat-card-hover-bridge.tsx",
+"blocks/stat-card-line-01/components/trend-badge.tsx",
+"blocks/stat-card-line-01/data/sessions-series.ts",
+"examples/stat-card-line-01-index.ts"
+],
+"deps": [
+"@visx/curve@4.0.0",
+"@number-flow/react",
+"@central-icons-react/all"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://ui.bklit.com/r/stat-card-line-01.json"
+},
+{
+"id": "bklit/sunburst-chart-example",
+"name": "sunburst-chart-example",
+"title": "Sunburst Chart Example",
+"description": "Composable sunburst-chart demo for Open in v0",
+"type": "example",
+"cat": "data-viz/chart",
+"domain": [],
+"file": "examples/sunburst-chart.tsx",
+"files": [
+"examples/sunburst-chart.tsx",
+"examples/sunburst-chart-index.ts"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://ui.bklit.com/r/sunburst-chart-example.json"
+}
+]
+}

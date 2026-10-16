@@ -1,0 +1,27 @@
+"use client";
+import * as React from "react";
+import { motion, HTMLMotionProps } from "motion/react";
+import { cn } from "@/arc-shims/kit-utils";
+export interface CardFadeInProps extends HTMLMotionProps<"div"> {
+  duration?: number;
+  delay?: number;
+}
+export function CardFadeIn({
+  children,
+  className,
+  duration = 0.5,
+  delay = 0,
+  ...props
+}: CardFadeInProps) {
+  return (
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration, delay }}
+      className={cn(className)}
+      {...props}
+    >
+      {children}
+    </motion.div>
+  );
+}

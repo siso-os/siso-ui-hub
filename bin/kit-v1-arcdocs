@@ -1,0 +1,43 @@
+#!/usr/bin/env python3
+"""Arc's docs pages (cached markdown) as data for the kit v1 atom pages: when to use and not, the props with their
+variant values, keyboard and accessibility notes, and Arc's own siblings. No model. Writes catalogue/kit-v1-arc.json."""
+import json, os, re, glob
+HUB = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+MD = os.path.expanduser("~/SISO_Workspace/_data/ui-hub/arc-md")
+
+def section(md, name):
+    m = re.search(rf"^## {name}\s*\n(.*?)(?=^## |\Z)", md, re.M | re.S)
+    return m.group(1).strip() if m else ""
+
+def bullets(txt):
+    return [re.sub(r"\[([^\]]+)\]\([^)]+\)", r"\1", l[2:]).strip() for l in txt.splitlines() if l.startswith("- ")]
+
+out = {}
+for f in sorted(glob.glob(f"{MD}/*.md")):
+    name = os.path.basename(f)[:-3]
+    md = open(f).read()
+    api = section(md, "API reference")
+    comps = []
+    for block in re.split(r"^### ", api, flags=re.M)[1:]:
+        title = block.splitlines()[0].strip()
+        props = []
+        for row in re.findall(r"^\| `([^`]+)` \| (.*?) \| (.*?) \| (.*?) \|$", block, re.M):
+            prop, typ, default, desc = row
+            vals = re.findall(r'"([^"\\]+)"', typ.replace("\\|", "|"))
+            props.append({"prop": prop, "type": typ.replace("\\|", "|").strip("`"), "default": default.strip("`"), "desc": desc, "values": vals})
+        comps.append({"export": title.replace(" ", ""), "props": props})
+    also = re.findall(r"^- \[([^\]]+)\]\(https://uiarc\.dev/components/([\w-]+)/markdown\): (.*)$", section(md, r"Also in [\w ]+") + "\n" + section(md, "Related"), re.M)
+    out[name] = {
+        "title": (re.search(r"^# (.+)$", md, re.M) or [None, name])[1],
+        "use": bullets(section(md, "When to use")),
+        "avoid": bullets(section(md, "When not to use")),
+        "keyboard": bullets(section(md, "Keyboard interactions")) or [l for l in section(md, "Keyboard interactions").splitlines() if l.startswith("|") and "---" not in l][1:],
+        "a11y": bullets(section(md, "Accessibility")),
+        "components": comps,
+        "siblings": [{"name": n, "title": t, "about": a} for t, n, a in also],
+    }
+json.dump(out, open(f"{HUB}/catalogue/kit-v1-arc.json", "w"), indent=1)
+vp = sum(1 for v in out.values() for c in v["components"] for p in c["props"] if len(p["values"]) > 1)
+print(len(out), "Arc parts;", vp, "variant props;", sum(len(v["siblings"]) for v in out.values()), "sibling links")
+print(json.dumps(out["button"]["components"][0]["props"][:2])[:300])
+print(json.dumps({k: out["button"][k] for k in ("use","siblings")})[:600])

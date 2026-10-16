@@ -1,0 +1,2521 @@
+{
+"lib": "iconiq",
+"source": "iconiq",
+"homepage": "https://iconiqui.com",
+"description": "Iconiq is a collection of icons designed for web applications. It is a modern, clean, and minimalistic icon set that is perfect for web applications.",
+"items": 120,
+"parts": [
+{
+"id": "iconiq/accordion",
+"name": "accordion",
+"title": "Accordion",
+"description": "Accordion with spring height, staggered text, default or quiet disclosure styles, and optional multi-open behavior. Built with Motion.",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [],
+"file": "icons/accordion.tsx",
+"files": [
+"icons/accordion.tsx"
+],
+"deps": [
+"@radix-ui/react-accordion",
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://iconiqui.com/r/accordion.json"
+},
+{
+"id": "iconiq/ai-input",
+"name": "ai-input",
+"title": "AI Input",
+"description": "Chat-style AI composer with agent and model chips, sent-message bubbles, and an Apple Intelligence-style gradient wave on send.",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [
+"AI"
+],
+"file": "icons/ai-input.tsx",
+"files": [
+"icons/ai-input.tsx"
+],
+"deps": [
+"@base-ui/react",
+"motion",
+"lucide-react"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://iconiqui.com/r/ai-input.json"
+},
+{
+"id": "iconiq/alert",
+"name": "alert",
+"title": "Alert",
+"description": "Compound Alert, AlertTitle, and AlertDescription parts with optional icons, legacy prop support, polite live announcements, and inline or toast behavior.",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [],
+"file": "icons/alert.tsx",
+"files": [
+"icons/alert.tsx"
+],
+"deps": [
+"motion",
+"class-variance-authority"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://iconiqui.com/r/alert.json"
+},
+{
+"id": "iconiq/avatar",
+"name": "avatar",
+"title": "Avatar",
+"description": "Compound Base UI avatar with image, fallback, variant status badge, grouped stack, overflow count, auto initials, and tooltip-enabled status hints.",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [],
+"file": "icons/avatar.tsx",
+"files": [
+"icons/avatar.tsx"
+],
+"deps": [
+"@base-ui/react",
+"@radix-ui/react-slot",
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://iconiqui.com/r/avatar.json"
+},
+{
+"id": "iconiq/b-accordion",
+"name": "b-accordion",
+"title": "Accordion (Base UI)",
+"description": "Compound Accordion, AccordionItem, AccordionTrigger, and AccordionContent parts layered over Base UI primitives with default and quiet variants.",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [],
+"file": "icons/b-accordion.tsx",
+"files": [
+"icons/b-accordion.tsx"
+],
+"deps": [
+"@base-ui/react",
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://iconiqui.com/r/b-accordion.json"
+},
+{
+"id": "iconiq/b-alert-dialog",
+"name": "b-alert-dialog",
+"title": "Alert Dialog (Base UI)",
+"description": "Alert dialog with asChild triggers, action variants, optional media, controlled async flows, and reduced-motion aware transitions layered over Base UI primitives.",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [
+"dev tools",
+"media"
+],
+"file": "icons/b-alert-dialog.tsx",
+"files": [
+"icons/b-alert-dialog.tsx"
+],
+"deps": [
+"@base-ui/react",
+"@radix-ui/react-slot",
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://iconiqui.com/r/b-alert-dialog.json"
+},
+{
+"id": "iconiq/b-autocomplete",
+"name": "b-autocomplete",
+"title": "Autocomplete (Base UI)",
+"description": "Base UI autocomplete with list filtering, suggestion highlight motion, and the same Iconiq input shell as the combobox install.",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [],
+"file": "icons/b-autocomplete.tsx",
+"files": [
+"icons/b-autocomplete.tsx"
+],
+"deps": [
+"@base-ui/react",
+"motion",
+"lucide-react"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://iconiqui.com/r/b-autocomplete.json"
+},
+{
+"id": "iconiq/b-avatar",
+"name": "b-avatar",
+"title": "Avatar (Base UI)",
+"description": "Avatar with the same single Iconiq API layered over Base UI primitives, keeping immediate fallback initials and a quiet image crossfade.",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [
+"dev tools",
+"media"
+],
+"file": "icons/b-avatar.tsx",
+"files": [
+"icons/b-avatar.tsx"
+],
+"deps": [
+"@base-ui/react",
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://iconiqui.com/r/b-avatar.json"
+},
+{
+"id": "iconiq/b-button",
+"name": "b-button",
+"title": "Button (Base UI)",
+"description": "Button with embedded Iconiq theme tokens, optional loading, href link rendering, ripple, press spring, hover lift, and intrinsic-width animation over the Base UI button primitive.",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [
+"crypto"
+],
+"file": "icons/b-button.tsx",
+"files": [
+"icons/b-button.tsx"
+],
+"deps": [
+"@base-ui/react",
+"class-variance-authority",
+"lucide-react",
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://iconiqui.com/r/b-button.json"
+},
+{
+"id": "iconiq/b-checkbox-group",
+"name": "b-checkbox-group",
+"title": "Checkbox Group (Base UI)",
+"description": "Checkbox group with the same Iconiq API layered over Base UI primitives, preserving the original row hover, tap spring, checkmark draw, and disclosure behavior.",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [
+"dev tools"
+],
+"file": "icons/b-checkbox-group.tsx",
+"files": [
+"icons/b-checkbox-group.tsx"
+],
+"deps": [
+"@base-ui/react",
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://iconiqui.com/r/b-checkbox-group.json"
+},
+{
+"id": "iconiq/b-checkbox",
+"name": "b-checkbox",
+"title": "Checkbox (Base UI)",
+"description": "Checkbox with the same Iconiq API layered over Base UI primitives, preserving the original fill spring, press scale, checkmark draw, and label fade.",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [
+"dev tools"
+],
+"file": "icons/b-checkbox.tsx",
+"files": [
+"icons/b-checkbox.tsx"
+],
+"deps": [
+"@base-ui/react",
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://iconiqui.com/r/b-checkbox.json"
+},
+{
+"id": "iconiq/b-collapsible",
+"name": "b-collapsible",
+"title": "Collapsible (Base UI)",
+"description": "Collapsible with the same Iconiq API layered over Base UI primitives, preserving the same height, icon, and content transitions as the Radix version.",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [
+"dev tools"
+],
+"file": "icons/b-collapsible.tsx",
+"files": [
+"icons/b-collapsible.tsx"
+],
+"deps": [
+"@base-ui/react",
+"motion",
+"lucide-react"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://iconiqui.com/r/b-collapsible.json"
+},
+{
+"id": "iconiq/b-combobox",
+"name": "b-combobox",
+"title": "Combobox (Base UI)",
+"description": "Compound Combobox parts layered over Base UI primitives, preserving the original input shell, clear action, item highlight, checkmark, and dropdown motion.",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [],
+"file": "icons/b-combobox.tsx",
+"files": [
+"icons/b-combobox.tsx"
+],
+"deps": [
+"@base-ui/react",
+"motion",
+"lucide-react"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://iconiqui.com/r/b-combobox.json"
+},
+{
+"id": "iconiq/b-context-menu",
+"name": "b-context-menu",
+"title": "Context Menu (Base UI)",
+"description": "Composable context menu layered over Base UI primitives, preserving the original panel spring, row entrance, active highlight, and shortcut layout.",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [],
+"file": "icons/b-context-menu.tsx",
+"files": [
+"icons/b-context-menu.tsx"
+],
+"deps": [
+"@base-ui/react",
+"motion",
+"lucide-react"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://iconiqui.com/r/b-context-menu.json"
+},
+{
+"id": "iconiq/b-dialog",
+"name": "b-dialog",
+"title": "Dialog (Base UI)",
+"description": "Dialog with the same exported Iconiq parts layered over Base UI primitives, preserving the original dialog springs while using the softer alert-dialog card styling and overlay treatment.",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [
+"dev tools"
+],
+"file": "icons/b-dialog.tsx",
+"files": [
+"icons/b-dialog.tsx"
+],
+"deps": [
+"@base-ui/react",
+"@radix-ui/react-slot",
+"motion",
+"lucide-react"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://iconiqui.com/r/b-dialog.json"
+},
+{
+"id": "iconiq/b-hover-card",
+"name": "b-hover-card",
+"title": "Hover Card (Base UI)",
+"description": "Hover card with the same Iconiq API layered over Base UI popover primitives, preserving delayed hover reveal, instant focus open, collision-aware placement, and spring-driven content motion.",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [
+"dev tools"
+],
+"file": "icons/b-hover-card.tsx",
+"files": [
+"icons/b-hover-card.tsx"
+],
+"deps": [
+"@base-ui/react",
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://iconiqui.com/r/b-hover-card.json"
+},
+{
+"id": "iconiq/b-popover",
+"name": "b-popover",
+"title": "Popover (Base UI)",
+"description": "Popover with the same Iconiq API layered over Base UI popover primitives, preserving side-aware panel motion, optional anchor support, and size-aware content transitions.",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [
+"dev tools"
+],
+"file": "icons/b-popover.tsx",
+"files": [
+"icons/b-popover.tsx"
+],
+"deps": [
+"@base-ui/react",
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://iconiqui.com/r/b-popover.json"
+},
+{
+"id": "iconiq/b-progress",
+"name": "b-progress",
+"title": "Progress (Base UI)",
+"description": "Progress bar with the same Iconiq API layered over Base UI primitives, preserving the spring-smoothed fill, restrained inline readout, and quiet indeterminate motion.",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [
+"dev tools"
+],
+"file": "icons/b-progress.tsx",
+"files": [
+"icons/b-progress.tsx"
+],
+"deps": [
+"@base-ui/react",
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://iconiqui.com/r/b-progress.json"
+},
+{
+"id": "iconiq/b-radio-group",
+"name": "b-radio-group",
+"title": "Radio Group (Base UI)",
+"description": "Radio group with the same Iconiq API layered over Base UI primitives, preserving the original shared highlight, spring-loaded ring and dot, and staggered row entrance.",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [
+"dev tools"
+],
+"file": "icons/b-radio-group.tsx",
+"files": [
+"icons/b-radio-group.tsx"
+],
+"deps": [
+"@base-ui/react",
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://iconiqui.com/r/b-radio-group.json"
+},
+{
+"id": "iconiq/b-select",
+"name": "b-select",
+"title": "Select (Base UI)",
+"description": "Compound Select parts layered over Base UI primitives, preserving the original trigger press, chevron rotation, grouped rows, and panel motion.",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [],
+"file": "icons/b-select.tsx",
+"files": [
+"icons/b-select.tsx"
+],
+"deps": [
+"@base-ui/react",
+"motion",
+"lucide-react"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://iconiqui.com/r/b-select.json"
+},
+{
+"id": "iconiq/b-selection-toolbar",
+"name": "b-selection-toolbar",
+"title": "Selection Toolbar (Base UI)",
+"description": "Floating selection toolbar with the same Iconiq API layered over Base UI toolbar primitives, including viewport-aware positioning, keyboard shortcuts, and fluid button motion.",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [
+"dev tools"
+],
+"file": "icons/b-selection-toolbar.tsx",
+"files": [
+"icons/b-selection-toolbar.tsx"
+],
+"deps": [
+"@base-ui/react",
+"lucide-react"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://iconiqui.com/r/b-selection-toolbar.json"
+},
+{
+"id": "iconiq/b-separator",
+"name": "b-separator",
+"title": "Separator (Base UI)",
+"description": "Separator with line, dashed, and dotted variants layered over the Base UI primitive, supporting horizontal and vertical orientation with a decorative default.",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [],
+"file": "icons/b-separator.tsx",
+"files": [
+"icons/b-separator.tsx"
+],
+"deps": [
+"@base-ui/react"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://iconiqui.com/r/b-separator.json"
+},
+{
+"id": "iconiq/b-slider",
+"name": "b-slider",
+"title": "Slider (Base UI)",
+"description": "Slider with the same Iconiq API layered over Base UI primitives, preserving the original spring-settled fill, active track height, and thumb scale motion.",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [
+"dev tools"
+],
+"file": "icons/b-slider.tsx",
+"files": [
+"icons/b-slider.tsx"
+],
+"deps": [
+"@base-ui/react",
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://iconiqui.com/r/b-slider.json"
+},
+{
+"id": "iconiq/b-switch",
+"name": "b-switch",
+"title": "Switch (Base UI)",
+"description": "Switch with the same Iconiq API layered over Base UI primitives, preserving the original spring thumb travel, pressure-like squash, and foreground fill sweep.",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [
+"dev tools"
+],
+"file": "icons/b-switch.tsx",
+"files": [
+"icons/b-switch.tsx"
+],
+"deps": [
+"@base-ui/react",
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://iconiqui.com/r/b-switch.json"
+},
+{
+"id": "iconiq/b-tabs",
+"name": "b-tabs",
+"title": "Tabs (Base UI)",
+"description": "Tabs with the same Iconiq API layered over Base UI primitives, preserving the measured underline, keyboard flow, and motion-smoothed panel shell from the core tabs component.",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [
+"dev tools"
+],
+"file": "icons/b-tabs.tsx",
+"files": [
+"icons/b-tabs.tsx"
+],
+"deps": [
+"@base-ui/react",
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://iconiqui.com/r/b-tabs.json"
+},
+{
+"id": "iconiq/b-toggle",
+"name": "b-toggle",
+"title": "Toggle (Base UI)",
+"description": "Two-state button with spring press feedback, a muted fill that bounces in when pressed, and a subtle content lift layered over Base UI toggle primitives.",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [],
+"file": "icons/b-toggle.tsx",
+"files": [
+"icons/b-toggle.tsx"
+],
+"deps": [
+"@base-ui/react",
+"class-variance-authority",
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://iconiqui.com/r/b-toggle.json"
+},
+{
+"id": "iconiq/b-togglegroup",
+"name": "b-togglegroup",
+"title": "Toggle Group (Base UI)",
+"description": "Segmented toggle group with the same fluid wipe fill, sheen sweep, and icon press feedback as the standalone toggle, over Base UI toggle-group primitives.",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [],
+"file": "icons/b-togglegroup.tsx",
+"files": [
+"icons/b-togglegroup.tsx"
+],
+"deps": [
+"@base-ui/react",
+"class-variance-authority",
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://iconiqui.com/r/b-togglegroup.json"
+},
+{
+"id": "iconiq/b-tooltip",
+"name": "b-tooltip",
+"title": "Tooltip (Base UI)",
+"description": "Tooltip with the same Iconiq API layered over Base UI primitives, preserving the original controlled delay timing, bubble shell, rotated-square arrow, and spring entrance motion.",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [
+"dev tools"
+],
+"file": "icons/b-tooltip.tsx",
+"files": [
+"icons/b-tooltip.tsx"
+],
+"deps": [
+"@base-ui/react",
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://iconiqui.com/r/b-tooltip.json"
+},
+{
+"id": "iconiq/badge",
+"name": "badge",
+"title": "Badge",
+"description": "Preset-color badge with tinted fills, semantic aliases, animated default shimmer, dot variant, dismiss controls, and reduced-motion aware motion. Motion + CVA + Slot.",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [],
+"file": "icons/badge.tsx",
+"files": [
+"icons/badge.tsx"
+],
+"deps": [
+"motion",
+"class-variance-authority",
+"@radix-ui/react-slot"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://iconiqui.com/r/badge.json"
+},
+{
+"id": "iconiq/banner",
+"name": "banner",
+"title": "Banner",
+"description": "Top-of-screen announcement banner with four gradient tones, a left-aligned ringed icon and message, a right-aligned outlined action, a dismiss collapse, and a fluid spring morph that melts the bar into a confirmation pill when its action is",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [
+"dev tools"
+],
+"file": "icons/banner.tsx",
+"files": [
+"icons/banner.tsx"
+],
+"deps": [
+"motion",
+"lucide-react"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://iconiqui.com/r/banner.json"
+},
+{
+"id": "iconiq/bento-builder",
+"name": "bento-builder",
+"title": "Bento Builder",
+"description": "Interactive bento-grid layout tool \u2014 drag tiles to reposition, tap to rename, drag a corner to resize, add tiles, then export the generated grid layout code to drop straight into your own project.",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [
+"dev tools"
+],
+"file": "icons/bento-builder.tsx",
+"files": [
+"icons/bento-builder.tsx"
+],
+"deps": [
+"motion",
+"lucide-react"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://iconiqui.com/r/bento-builder.json"
+},
+{
+"id": "iconiq/breadcrumbs",
+"name": "breadcrumbs",
+"title": "Breadcrumbs",
+"description": "Compound breadcrumb trail with Base UI render composition, subtle Motion transitions, and dedicated current-page and separator parts.",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [],
+"file": "icons/breadcrumbs.tsx",
+"files": [
+"icons/breadcrumbs.tsx"
+],
+"deps": [
+"@base-ui/react",
+"motion",
+"lucide-react"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://iconiqui.com/r/breadcrumbs.json"
+},
+{
+"id": "iconiq/button-group",
+"name": "button-group",
+"title": "Button Group",
+"description": "Grouped action buttons, text segments, separators, segmented button rows, and a selectable segmented control with spring-driven hover and active motion.",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [],
+"file": "icons/button-group.tsx",
+"files": [
+"icons/button-group.tsx"
+],
+"deps": [
+"@base-ui/react",
+"motion",
+"class-variance-authority"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://iconiqui.com/r/button-group.json"
+},
+{
+"id": "iconiq/button",
+"name": "button",
+"title": "Button",
+"description": "Primary action control with larger default hit targets, spring press feedback, optional intrinsic width animation, and Motion ripples. Forwards ref and native button props.",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [],
+"file": "icons/button.tsx",
+"files": [
+"icons/button.tsx"
+],
+"deps": [
+"motion",
+"class-variance-authority"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://iconiqui.com/r/button.json"
+},
+{
+"id": "iconiq/calendar",
+"name": "calendar",
+"title": "Calendar",
+"description": "shadcn-style monthly calendar with animated month/year transitions, selectable days, and date-fns-powered grid generation.",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [],
+"file": "icons/calendar.tsx",
+"files": [
+"icons/calendar.tsx"
+],
+"deps": [
+"motion",
+"lucide-react",
+"date-fns"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://iconiqui.com/r/calendar.json"
+},
+{
+"id": "iconiq/card",
+"name": "card",
+"title": "Card",
+"description": "Compound card surface with optional interactive lift, Motion-smoothed layout transitions, asChild link support, semantic title slots, and shared header, action, content, and footer slots.",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [],
+"file": "icons/card.tsx",
+"files": [
+"icons/card.tsx"
+],
+"deps": [
+"motion",
+"@radix-ui/react-slot"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://iconiqui.com/r/card.json"
+},
+{
+"id": "iconiq/carousel",
+"name": "carousel",
+"title": "Carousel",
+"description": "Embla-powered carousel with aspect-ratio presets, responsive navigation placement, and horizontal or vertical slides. Built with embla-carousel-react and Lucide.",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [],
+"file": "icons/carousel.tsx",
+"files": [
+"icons/carousel.tsx"
+],
+"deps": [
+"embla-carousel-react",
+"lucide-react"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://iconiqui.com/r/carousel.json"
+},
+{
+"id": "iconiq/charts",
+"name": "charts",
+"title": "Charts",
+"description": "Recharts shell with registry chart tokens, ease-out series growth, and calm tooltip and legend transitions.",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [
+"crypto"
+],
+"file": "icons/charts.tsx",
+"files": [
+"icons/charts.tsx"
+],
+"deps": [
+"recharts",
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://iconiqui.com/r/charts.json"
+},
+{
+"id": "iconiq/checkbox-group",
+"name": "checkbox-group",
+"title": "Checkbox group",
+"description": "Multi-select option list with bordered empty state and a primary tick only when checked, plus hover/tap motion on each row. Motion + Lucide.",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [
+"commerce"
+],
+"file": "icons/checkbox-group.tsx",
+"files": [
+"icons/checkbox-group.tsx"
+],
+"deps": [
+"motion",
+"lucide-react"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://iconiqui.com/r/checkbox-group.json"
+},
+{
+"id": "iconiq/checkbox",
+"name": "checkbox",
+"title": "Checkbox",
+"description": "Single checkbox with spring-pressed feedback, a line-drawn checkmark, and an optional inline label. Motion only.",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [],
+"file": "icons/checkbox.tsx",
+"files": [
+"icons/checkbox.tsx"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://iconiqui.com/r/checkbox.json"
+},
+{
+"id": "iconiq/code-block",
+"name": "code-block",
+"title": "Code Block",
+"description": "Editor-style code block with a filename tab, a top-right spring-crossfade copy button, a bottom status bar with language and line count, line numbers, built-in theme-aware syntax highlighting, and line emphasis.",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [
+"dev tools"
+],
+"file": "icons/code-block.tsx",
+"files": [
+"icons/code-block.tsx"
+],
+"deps": [
+"motion",
+"lucide-react"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://iconiqui.com/r/code-block.json"
+},
+{
+"id": "iconiq/color-picker",
+"name": "color-picker",
+"title": "Color Picker",
+"description": "HSV panel with saturation field, hue/alpha sliders, multi-format readouts, hex input, and EyeDropper.",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [],
+"file": "icons/color-picker.tsx",
+"files": [
+"icons/color-picker.tsx"
+],
+"deps": [
+"@base-ui/react",
+"lucide-react",
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://iconiqui.com/r/color-picker.json"
+},
+{
+"id": "iconiq/combobox",
+"name": "combobox",
+"title": "Combobox",
+"description": "Searchable single-select input with inline filtering, arrow-key navigation, animated dropdown motion, and an optional clear action.",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [],
+"file": "icons/combobox.tsx",
+"files": [
+"icons/combobox.tsx"
+],
+"deps": [
+"@base-ui/react",
+"motion",
+"lucide-react"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://iconiqui.com/r/combobox.json"
+},
+{
+"id": "iconiq/command-palette",
+"name": "command-palette",
+"title": "Command Palette",
+"description": "Radix dialog command menu with grouped search, keyboard shortcuts, navigation items, custom triggers, and optional theme switching.",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [
+"dev tools"
+],
+"file": "icons/command-palette.tsx",
+"files": [
+"icons/command-palette.tsx"
+],
+"deps": [
+"@radix-ui/react-dialog",
+"lucide-react",
+"motion",
+"next-themes"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://iconiqui.com/r/command-palette.json"
+},
+{
+"id": "iconiq/context-menu",
+"name": "context-menu",
+"title": "Context Menu",
+"description": "Native-feeling context menu with fixed-position viewport-aware placement, per-item icons and shortcuts, and spring entrance motion.",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [],
+"file": "icons/context-menu.tsx",
+"files": [
+"icons/context-menu.tsx"
+],
+"deps": [
+"@radix-ui/react-slot",
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://iconiqui.com/r/context-menu.json"
+},
+{
+"id": "iconiq/contribution-graph",
+"name": "contribution-graph",
+"title": "Contribution Graph",
+"description": "GitHub-style contribution calendar with compound calendar, block, total-count, and legend parts \u2014 pass raw Activity data or just a GitHub username and it fetches and caches the last year of contributions itself, shimmers a skeleton grid whi",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [
+"dev tools"
+],
+"file": "icons/contribution-graph.tsx",
+"files": [
+"icons/contribution-graph.tsx"
+],
+"deps": [
+"date-fns"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://iconiqui.com/r/contribution-graph.json"
+},
+{
+"id": "iconiq/date-picker",
+"name": "date-picker",
+"title": "Date Picker",
+"description": "Collapsible date picker trigger with the shared Iconiq Calendar panel, spring open motion, and month-aware selection.",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [],
+"file": "icons/date-picker.tsx",
+"files": [
+"icons/date-picker.tsx"
+],
+"deps": [
+"@base-ui/react/input",
+"motion",
+"lucide-react",
+"date-fns"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://iconiqui.com/r/date-picker.json"
+},
+{
+"id": "iconiq/dia-text",
+"name": "dia-text",
+"title": "Dia Text",
+"description": "Animated inline text reveal with a sweeping gradient band, repeat controls, and optional fixed-width rotation for motion-driven typography.",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [],
+"file": "icons/dia-text.tsx",
+"files": [
+"icons/dia-text.tsx"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://iconiqui.com/r/dia-text.json"
+},
+{
+"id": "iconiq/dialog",
+"name": "dialog",
+"title": "Dialog",
+"description": "Modal dialog on Radix Dialog with Motion overlay and content springs, staggered children, and an animated close control. Pass the same open boolean to DialogContent as the Dialog root for AnimatePresence.",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [
+"dev tools"
+],
+"file": "icons/dialog.tsx",
+"files": [
+"icons/dialog.tsx"
+],
+"deps": [
+"@radix-ui/react-dialog",
+"motion",
+"lucide-react"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://iconiqui.com/r/dialog.json"
+},
+{
+"id": "iconiq/drawer",
+"name": "drawer",
+"title": "Drawer",
+"description": "Compound Vaul drawer with direction-aware layout, drag gestures, snap points, size variants, styled footer actions, optional close button, and safe-area-aware panel geometry.",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [
+"maps"
+],
+"file": "icons/drawer.tsx",
+"files": [
+"icons/drawer.tsx"
+],
+"deps": [
+"vaul",
+"lucide-react"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://iconiqui.com/r/drawer.json"
+},
+{
+"id": "iconiq/dropdown",
+"name": "dropdown",
+"title": "Dropdown",
+"description": "Animated dropdown with a selectable value mode and an action-menu mode, plus chevron rotation and spring-driven menu entry.",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [],
+"file": "icons/dropdown.tsx",
+"files": [
+"icons/dropdown.tsx"
+],
+"deps": [
+"@base-ui/react",
+"motion",
+"lucide-react"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://iconiqui.com/r/dropdown.json"
+},
+{
+"id": "iconiq/faq-pro",
+"name": "faq-pro",
+"title": "FAQ Pro",
+"description": "Searchable FAQ accordion with rounded cards, animated panels, automatic match expansion, and inline query highlighting. Built with Base UI Accordion, Motion, and Lucide.",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [],
+"file": "icons/faq-pro.tsx",
+"files": [
+"icons/faq-pro.tsx"
+],
+"deps": [
+"@base-ui/react/accordion",
+"motion",
+"lucide-react"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://iconiqui.com/r/faq-pro.json"
+},
+{
+"id": "iconiq/favicon-badge",
+"name": "favicon-badge",
+"title": "Favicon Badge",
+"description": "Circular website favicon badge with optional label text, spring entrance animation, and Google favicon resolution.",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [],
+"file": "icons/favicon-badge.tsx",
+"files": [
+"icons/favicon-badge.tsx"
+],
+"deps": [
+"motion",
+"lucide-react"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://iconiqui.com/r/favicon-badge.json"
+},
+{
+"id": "iconiq/feedback",
+"name": "feedback",
+"title": "Feedback Form",
+"description": "Collapsed pill that morphs into an expanded feedback panel with a send button, loading state, and a textarea, driven by pure CSS transitions with asymmetric open/close easing.",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [],
+"file": "icons/feedback.tsx",
+"files": [
+"icons/feedback.tsx"
+],
+"deps": [
+"lucide-react",
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://iconiqui.com/r/feedback.json"
+},
+{
+"id": "iconiq/file-tree",
+"name": "file-tree",
+"title": "File Tree",
+"description": "Compound file tree with nested FileTreeItem rows, Base UI Button folder toggles, extension-aware icons, hover highlight tracking, and optional blue emphasis for new files.",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [],
+"file": "icons/file-tree.tsx",
+"files": [
+"icons/file-tree.tsx"
+],
+"deps": [
+"@base-ui/react",
+"motion",
+"lucide-react"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://iconiqui.com/r/file-tree.json"
+},
+{
+"id": "iconiq/file-upload",
+"name": "file-upload",
+"title": "File Upload",
+"description": "Drag-and-drop file uploader with click-to-browse fallback, queued file rows, image previews, built-in progress states, and optional change callbacks.",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [
+"dev tools"
+],
+"file": "icons/file-upload.tsx",
+"files": [
+"icons/file-upload.tsx"
+],
+"deps": [
+"motion",
+"lucide-react"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://iconiqui.com/r/file-upload.json"
+},
+{
+"id": "iconiq/flux-button",
+"name": "flux-button",
+"title": "Flux Button",
+"description": "Async button with idle, loading, and success states.",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [],
+"file": "icons/flux-button.tsx",
+"files": [
+"icons/flux-button.tsx"
+],
+"deps": [
+"@base-ui/react/button",
+"class-variance-authority",
+"lucide-react",
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://iconiqui.com/r/flux-button.json"
+},
+{
+"id": "iconiq/hover-card",
+"name": "hover-card",
+"title": "Hover Card",
+"description": "Inline hover card with hover-only timing delays, instant focus reveal, collision-aware Popover positioning, Slot-based custom triggers, and a spring-driven content panel.",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [],
+"file": "icons/hover-card.tsx",
+"files": [
+"icons/hover-card.tsx"
+],
+"deps": [
+"@radix-ui/react-popover",
+"@radix-ui/react-slot",
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://iconiqui.com/r/hover-card.json"
+},
+{
+"id": "iconiq/icon-bar",
+"name": "icon-bar",
+"title": "Icon Bar",
+"description": "Row of compact icon chips that expand on hover or focus and stay open when selected. Built with Base UI Toggle Group, Motion, and Lucide.",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [],
+"file": "icons/icon-bar.tsx",
+"files": [
+"icons/icon-bar.tsx"
+],
+"deps": [
+"@base-ui/react/toggle",
+"@base-ui/react/toggle-group",
+"motion",
+"lucide-react"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://iconiqui.com/r/icon-bar.json"
+},
+{
+"id": "iconiq/infiniteribbon",
+"name": "infiniteribbon",
+"title": "Infinite Ribbon",
+"description": "Full-width looping announcement ribbon with repeated content, optional reverse direction, and diagonal rotation controls.",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [],
+"file": "icons/infiniteribbon.tsx",
+"files": [
+"icons/infiniteribbon.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://iconiqui.com/r/infiniteribbon.json"
+},
+{
+"id": "iconiq/input-otp",
+"name": "input-otp",
+"title": "Input OTP",
+"description": "Animated one-time password field built on Base UI OTP Field with focus border motion, character entrance, caret pulse, and OTPSlots auto-layout.",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [
+"auth",
+"commerce"
+],
+"file": "icons/input-otp.tsx",
+"files": [
+"icons/input-otp.tsx"
+],
+"deps": [
+"@base-ui/react",
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://iconiqui.com/r/input-otp.json"
+},
+{
+"id": "iconiq/input",
+"name": "input",
+"title": "Input",
+"description": "Input with a spring-animated caret.",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [],
+"file": "icons/input.tsx",
+"files": [
+"icons/input.tsx"
+],
+"deps": [
+"@base-ui/react/input",
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://iconiqui.com/r/input.json"
+},
+{
+"id": "iconiq/logo-carousal",
+"name": "logo-carousal",
+"title": "Logo Carousel",
+"description": "Multi-column logo grid that cycles through sponsor logos with a staggered wave animation.",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [
+"dev tools"
+],
+"file": "icons/logo-carousal.tsx",
+"files": [
+"icons/logo-carousal.tsx"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://iconiqui.com/r/logo-carousal.json"
+},
+{
+"id": "iconiq/marker",
+"name": "marker",
+"title": "Marker",
+"description": "Hand-drawn text annotations \u2014 wavy, circle, highlight, underline, and more \u2014 that draw themselves in like ink as they scroll into view, with an optional animate prop for a fully static render.",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [],
+"file": "icons/marker.tsx",
+"files": [
+"icons/marker.tsx"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://iconiqui.com/r/marker.json"
+},
+{
+"id": "iconiq/message",
+"name": "message",
+"title": "Message",
+"description": "Composable chat message primitives \u2014 group, row, avatar, bubble, header, and footer \u2014 where each message slides in beside its composer with a bouncy spring: sent messages arrive from the right, received from the left, morphing up from the b",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [
+"AI"
+],
+"file": "icons/message.tsx",
+"files": [
+"icons/message.tsx"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://iconiqui.com/r/message.json"
+},
+{
+"id": "iconiq/morph-texts",
+"name": "morph-texts",
+"title": "Morph Text",
+"description": "Cycling headline words with a goo-filter morph transition powered by Motion.",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [
+"dev tools"
+],
+"file": "icons/morph-texts.tsx",
+"files": [
+"icons/morph-texts.tsx"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://iconiqui.com/r/morph-texts.json"
+},
+{
+"id": "iconiq/popover",
+"name": "popover",
+"title": "Popover",
+"description": "Popover built on Radix with portal-based positioning, optional anchor support, side-aware motion, and smooth size changes while content updates.",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [],
+"file": "icons/popover.tsx",
+"files": [
+"icons/popover.tsx"
+],
+"deps": [
+"@radix-ui/react-popover",
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://iconiqui.com/r/popover.json"
+},
+{
+"id": "iconiq/r-accordion",
+"name": "r-accordion",
+"title": "Accordion (Radix UI)",
+"description": "Compound Accordion, AccordionItem, AccordionTrigger, and AccordionContent parts layered over Radix UI primitives with Motion-heavy panel choreography.",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [],
+"file": "icons/r-accordion.tsx",
+"files": [
+"icons/r-accordion.tsx"
+],
+"deps": [
+"@radix-ui/react-accordion",
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://iconiqui.com/r/r-accordion.json"
+},
+{
+"id": "iconiq/r-alert-dialog",
+"name": "r-alert-dialog",
+"title": "Alert Dialog (Radix UI)",
+"description": "Alert dialog with asChild triggers, action variants, optional media, controlled async flows, and reduced-motion aware transitions layered over Radix UI primitives.",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [
+"dev tools",
+"media"
+],
+"file": "icons/r-alert-dialog.tsx",
+"files": [
+"icons/r-alert-dialog.tsx"
+],
+"deps": [
+"@radix-ui/react-alert-dialog",
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://iconiqui.com/r/r-alert-dialog.json"
+},
+{
+"id": "iconiq/r-avatar",
+"name": "r-avatar",
+"title": "Avatar (Radix UI)",
+"description": "Avatar with the same single Iconiq API layered over Radix UI primitives, preserving immediate fallback initials and the quiet image reveal.",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [
+"dev tools",
+"media"
+],
+"file": "icons/r-avatar.tsx",
+"files": [
+"icons/r-avatar.tsx"
+],
+"deps": [
+"@radix-ui/react-avatar",
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://iconiqui.com/r/r-avatar.json"
+},
+{
+"id": "iconiq/r-checkbox",
+"name": "r-checkbox",
+"title": "Checkbox (Radix UI)",
+"description": "Checkbox with the same Iconiq API layered over Radix UI primitives, preserving the original fill spring, press scale, checkmark draw, and label fade.",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [
+"dev tools"
+],
+"file": "icons/r-checkbox.tsx",
+"files": [
+"icons/r-checkbox.tsx"
+],
+"deps": [
+"@radix-ui/react-checkbox",
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://iconiqui.com/r/r-checkbox.json"
+},
+{
+"id": "iconiq/r-collapsible",
+"name": "r-collapsible",
+"title": "Collapsible (Radix UI)",
+"description": "Collapsible with the same Iconiq API layered over Radix UI primitives, preserving the same height, icon, and content transitions as the Base UI version.",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [
+"dev tools"
+],
+"file": "icons/r-collapsible.tsx",
+"files": [
+"icons/r-collapsible.tsx"
+],
+"deps": [
+"@radix-ui/react-collapsible",
+"motion",
+"lucide-react"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://iconiqui.com/r/r-collapsible.json"
+},
+{
+"id": "iconiq/r-dialog",
+"name": "r-dialog",
+"title": "Dialog (Radix UI)",
+"description": "Dialog with the same exported Iconiq parts layered over Radix UI primitives, preserving the original dialog springs while using the softer alert-dialog card styling and overlay treatment.",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [
+"dev tools"
+],
+"file": "icons/r-dialog.tsx",
+"files": [
+"icons/r-dialog.tsx"
+],
+"deps": [
+"@radix-ui/react-dialog",
+"motion",
+"lucide-react"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://iconiqui.com/r/r-dialog.json"
+},
+{
+"id": "iconiq/r-dropdown",
+"name": "r-dropdown",
+"title": "Dropdown (Radix UI)",
+"description": "Dropdown with the same Iconiq trigger, grouped rows, action and select variants, and exact panel motion layered over Radix Dropdown Menu primitives.",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [],
+"file": "icons/r-dropdown.tsx",
+"files": [
+"icons/r-dropdown.tsx"
+],
+"deps": [
+"@radix-ui/react-dropdown-menu",
+"@radix-ui/react-scroll-area",
+"motion",
+"lucide-react"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://iconiqui.com/r/r-dropdown.json"
+},
+{
+"id": "iconiq/r-hover-card",
+"name": "r-hover-card",
+"title": "Hover Card (Radix UI)",
+"description": "Hover card with the same Iconiq API layered over the dedicated Radix Hover Card primitive, preserving delayed hover reveal, instant focus open, collision-aware placement, and spring-driven content motion.",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [
+"dev tools"
+],
+"file": "icons/r-hover-card.tsx",
+"files": [
+"icons/r-hover-card.tsx"
+],
+"deps": [
+"@radix-ui/react-hover-card",
+"@radix-ui/react-slot",
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://iconiqui.com/r/r-hover-card.json"
+},
+{
+"id": "iconiq/r-popover",
+"name": "r-popover",
+"title": "Popover (Radix UI)",
+"description": "Popover with the same Iconiq API layered over Radix UI popover primitives, preserving side-aware panel motion, optional anchor support, and size-aware content transitions.",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [
+"dev tools"
+],
+"file": "icons/r-popover.tsx",
+"files": [
+"icons/r-popover.tsx"
+],
+"deps": [
+"@radix-ui/react-popover",
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://iconiqui.com/r/r-popover.json"
+},
+{
+"id": "iconiq/r-progress",
+"name": "r-progress",
+"title": "Progress (Radix UI)",
+"description": "Progress bar with the same Iconiq API layered over Radix UI primitives, preserving the spring-smoothed fill, restrained inline readout, and quiet indeterminate motion.",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [
+"dev tools"
+],
+"file": "icons/r-progress.tsx",
+"files": [
+"icons/r-progress.tsx"
+],
+"deps": [
+"@radix-ui/react-progress",
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://iconiqui.com/r/r-progress.json"
+},
+{
+"id": "iconiq/r-radio-group",
+"name": "r-radio-group",
+"title": "Radio Group (Radix UI)",
+"description": "Radio group with the same Iconiq API layered over Radix UI primitives, preserving the original shared highlight, spring-loaded ring and dot, and staggered row entrance.",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [
+"dev tools"
+],
+"file": "icons/r-radio-group.tsx",
+"files": [
+"icons/r-radio-group.tsx"
+],
+"deps": [
+"@radix-ui/react-radio-group",
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://iconiqui.com/r/r-radio-group.json"
+},
+{
+"id": "iconiq/r-select",
+"name": "r-select",
+"title": "Select (Radix UI)",
+"description": "Compound Select parts layered over Radix UI primitives, preserving the original trigger press, chevron rotation, grouped rows, and panel motion.",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [],
+"file": "icons/r-select.tsx",
+"files": [
+"icons/r-select.tsx"
+],
+"deps": [
+"@radix-ui/react-scroll-area",
+"@radix-ui/react-select",
+"motion",
+"lucide-react"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://iconiqui.com/r/r-select.json"
+},
+{
+"id": "iconiq/r-selection-toolbar",
+"name": "r-selection-toolbar",
+"title": "Selection Toolbar (Radix UI)",
+"description": "Floating selection toolbar with the same Iconiq API layered over Radix UI toolbar primitives, including viewport-aware positioning, keyboard shortcuts, and fluid button motion.",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [
+"dev tools"
+],
+"file": "icons/r-selection-toolbar.tsx",
+"files": [
+"icons/r-selection-toolbar.tsx"
+],
+"deps": [
+"@radix-ui/react-toolbar",
+"lucide-react"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://iconiqui.com/r/r-selection-toolbar.json"
+},
+{
+"id": "iconiq/r-separator",
+"name": "r-separator",
+"title": "Separator (Radix UI)",
+"description": "Separator with line, dashed, and dotted variants layered over the Radix UI primitive, supporting horizontal and vertical orientation with a decorative default.",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [],
+"file": "icons/r-separator.tsx",
+"files": [
+"icons/r-separator.tsx"
+],
+"deps": [
+"@radix-ui/react-separator"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://iconiqui.com/r/r-separator.json"
+},
+{
+"id": "iconiq/r-slider",
+"name": "r-slider",
+"title": "Slider (Radix UI)",
+"description": "Slider with the same Iconiq API layered over Radix UI primitives, preserving the original spring-settled fill, active track height, and thumb scale motion.",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [
+"dev tools"
+],
+"file": "icons/r-slider.tsx",
+"files": [
+"icons/r-slider.tsx"
+],
+"deps": [
+"@radix-ui/react-slider",
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://iconiqui.com/r/r-slider.json"
+},
+{
+"id": "iconiq/r-switch",
+"name": "r-switch",
+"title": "Switch (Radix UI)",
+"description": "Switch with the same Iconiq API layered over Radix UI primitives, preserving the original spring thumb travel, pressure-like squash, and foreground fill sweep.",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [
+"dev tools"
+],
+"file": "icons/r-switch.tsx",
+"files": [
+"icons/r-switch.tsx"
+],
+"deps": [
+"@radix-ui/react-switch",
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://iconiqui.com/r/r-switch.json"
+},
+{
+"id": "iconiq/r-tabs",
+"name": "r-tabs",
+"title": "Tabs (Radix UI)",
+"description": "Tabs with the same Iconiq API layered over Radix UI primitives, preserving the measured underline, keyboard flow, and motion-smoothed panel shell from the core tabs component.",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [
+"dev tools"
+],
+"file": "icons/r-tabs.tsx",
+"files": [
+"icons/r-tabs.tsx"
+],
+"deps": [
+"@radix-ui/react-tabs",
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://iconiqui.com/r/r-tabs.json"
+},
+{
+"id": "iconiq/r-toggle",
+"name": "r-toggle",
+"title": "Toggle (Radix UI)",
+"description": "Two-state button with spring press feedback, a muted fill that bounces in when pressed, and a subtle content lift layered over Radix UI toggle primitives.",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [],
+"file": "icons/r-toggle.tsx",
+"files": [
+"icons/r-toggle.tsx"
+],
+"deps": [
+"radix-ui",
+"class-variance-authority",
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://iconiqui.com/r/r-toggle.json"
+},
+{
+"id": "iconiq/r-togglegroup",
+"name": "r-togglegroup",
+"title": "Toggle Group (Radix UI)",
+"description": "Segmented toggle group with the same fluid wipe fill, sheen sweep, and icon press feedback as the standalone toggle, over Radix UI toggle-group primitives.",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [],
+"file": "icons/r-togglegroup.tsx",
+"files": [
+"icons/r-togglegroup.tsx"
+],
+"deps": [
+"radix-ui",
+"class-variance-authority",
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://iconiqui.com/r/r-togglegroup.json"
+},
+{
+"id": "iconiq/r-tooltip",
+"name": "r-tooltip",
+"title": "Tooltip (Radix UI)",
+"description": "Tooltip with the same Iconiq API layered over Radix Tooltip primitives, preserving the original controlled delay timing, bubble shell, rotated-square arrow, and spring entrance motion.",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [
+"dev tools"
+],
+"file": "icons/r-tooltip.tsx",
+"files": [
+"icons/r-tooltip.tsx"
+],
+"deps": [
+"@radix-ui/react-tooltip",
+"@radix-ui/react-slot",
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://iconiqui.com/r/r-tooltip.json"
+},
+{
+"id": "iconiq/radial-button",
+"name": "radial-button",
+"title": "Radial Button",
+"description": "Rounded action button with a radial foreground fill that spreads on hover or focus-visible. Built with Motion.",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [],
+"file": "icons/radial-button.tsx",
+"files": [
+"icons/radial-button.tsx"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://iconiqui.com/r/radial-button.json"
+},
+{
+"id": "iconiq/radiogroup",
+"name": "radiogroup",
+"title": "Radio group",
+"description": "Single-select option list with shared layoutId highlight, spring ring/dot on the control, staggered row entrance, and optional descriptions. Motion only \u2014 native button radios with role=radiogroup.",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [],
+"file": "icons/radiogroup.tsx",
+"files": [
+"icons/radiogroup.tsx"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://iconiqui.com/r/radiogroup.json"
+},
+{
+"id": "iconiq/rating",
+"name": "rating",
+"title": "Rating",
+"description": "Compound star rating built from Rating and RatingButton \u2014 hover to preview, click or use arrow keys to set the value, with configurable size on the root, a springy scale pop, and color fade that ripples across the stars.",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [
+"dev tools"
+],
+"file": "icons/rating.tsx",
+"files": [
+"icons/rating.tsx"
+],
+"deps": [
+"@radix-ui/react-use-controllable-state",
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://iconiqui.com/r/rating.json"
+},
+{
+"id": "iconiq/reasoning-steps",
+"name": "reasoning-steps",
+"title": "Reasoning Steps",
+"description": "Base UI collapsible reasoning trace for AI replies with a shimmering trigger label and no status icon, per-step dots that pop into checkmarks once done, a self-timing elapsed-seconds readout, a crossfading collapsed preview of the current s",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [
+"AI"
+],
+"file": "icons/reasoning-steps.tsx",
+"files": [
+"icons/reasoning-steps.tsx"
+],
+"deps": [
+"@base-ui/react",
+"motion",
+"lucide-react"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://iconiqui.com/r/reasoning-steps.json"
+},
+{
+"id": "iconiq/reveal-text",
+"name": "reveal-text",
+"title": "Reveal Text",
+"description": "Staggered word or character reveal with spring lift, blur fade, and optional scroll-triggered playback.",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [],
+"file": "icons/reveal-text.tsx",
+"files": [
+"icons/reveal-text.tsx"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://iconiqui.com/r/reveal-text.json"
+},
+{
+"id": "iconiq/rolling-digits",
+"name": "rolling-digits",
+"title": "Rolling Digits",
+"description": "Spring-animated digit counter with transform, opacity, and vertical motion.",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [
+"dev tools"
+],
+"file": "icons/rolling-digits.tsx",
+"files": [
+"icons/rolling-digits.tsx"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://iconiqui.com/r/rolling-digits.json"
+},
+{
+"id": "iconiq/scroll-progress",
+"name": "scroll-progress",
+"title": "Scroll Progress",
+"description": "Ruler-style scroll indicator with tick marks that fill in as the page scrolls and a live percentage readout, dockable to either side or bottom corner of the viewport or a scrollable container.",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [],
+"file": "icons/scroll-progress.tsx",
+"files": [
+"icons/scroll-progress.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://iconiqui.com/r/scroll-progress.json"
+},
+{
+"id": "iconiq/select",
+"name": "select",
+"title": "Select",
+"description": "Animated single-select dropdown with staggered options, chevron rotation, scaleY panel, row hover slide, and check mark on the active item. Motion + Lucide.",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [],
+"file": "icons/select.tsx",
+"files": [
+"icons/select.tsx"
+],
+"deps": [
+"@base-ui/react",
+"motion",
+"lucide-react"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://iconiqui.com/r/select.json"
+},
+{
+"id": "iconiq/selectiontoolbar",
+"name": "selectiontoolbar",
+"title": "Selection Toolbar",
+"description": "Floating inline formatting toolbar for editable text selections with viewport-aware positioning, keyboard shortcuts, theme tokens, and bold, italic, underline, link, copy, and strikethrough actions.",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [
+"crypto"
+],
+"file": "icons/selectiontoolbar.tsx",
+"files": [
+"icons/selectiontoolbar.tsx"
+],
+"deps": [
+"lucide-react"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://iconiqui.com/r/selectiontoolbar.json"
+},
+{
+"id": "iconiq/setup-checklist",
+"name": "setup-checklist",
+"title": "Setup Checklist",
+"description": "Animated onboarding checklist card with staggered task rows, a drawn checkmark badge, and a floating progress pill with a spring-smoothed pie.",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [],
+"file": "icons/setup-checklist.tsx",
+"files": [
+"icons/setup-checklist.tsx"
+],
+"deps": [
+"motion",
+"lucide-react"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://iconiqui.com/r/setup-checklist.json"
+},
+{
+"id": "iconiq/shimmer-text",
+"name": "shimmer-text",
+"title": "Shimmer Text",
+"description": "Animated shimmer text with a sweeping highlight band, adjustable spread, and configurable loop speed for emphasis-heavy copy.",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [],
+"file": "icons/shimmer-text.tsx",
+"files": [
+"icons/shimmer-text.tsx"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://iconiqui.com/r/shimmer-text.json"
+},
+{
+"id": "iconiq/skeleton",
+"name": "skeleton",
+"title": "Skeleton",
+"description": "Shimmer or fade loading placeholder with preset helpers, configurable radius, optional animation, and embedded theme tokens.",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [
+"crypto"
+],
+"file": "icons/skeleton.tsx",
+"files": [
+"icons/skeleton.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://iconiqui.com/r/skeleton.json"
+},
+{
+"id": "iconiq/slider",
+"name": "slider",
+"title": "Slider",
+"description": "Range control with spring-animated track and thumb, full-width pointer drag, and optional label and live value. Motion.",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [],
+"file": "icons/slider.tsx",
+"files": [
+"icons/slider.tsx"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://iconiqui.com/r/slider.json"
+},
+{
+"id": "iconiq/spinner",
+"name": "spinner",
+"title": "Spinner",
+"description": "Loading indicator with ring, bouncing dots, or dot-matrix sweep variants. Motion; uses primary and muted theme tokens.",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [
+"crypto"
+],
+"file": "icons/spinner.tsx",
+"files": [
+"icons/spinner.tsx"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://iconiqui.com/r/spinner.json"
+},
+{
+"id": "iconiq/status-dot",
+"name": "status-dot",
+"title": "Status Dot",
+"description": "Rippling inline status dot with deployment presets, generic tones, sizing, and dot-only accessibility defaults.",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [
+"dev tools"
+],
+"file": "icons/status-dot.tsx",
+"files": [
+"icons/status-dot.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://iconiqui.com/r/status-dot.json"
+},
+{
+"id": "iconiq/streaming-text",
+"name": "streaming-text",
+"title": "Streaming Text",
+"description": "Word-by-word AI text streaming where each word fades in crisply wearing a blue gradient, then crossfades into the theme foreground once settled \u2014 black in light mode, white in dark \u2014 with a pulsing gradient dot at the stream head, natural p",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [
+"AI"
+],
+"file": "icons/streaming-text.tsx",
+"files": [
+"icons/streaming-text.tsx"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://iconiqui.com/r/streaming-text.json"
+},
+{
+"id": "iconiq/switch",
+"name": "switch",
+"title": "Switch",
+"description": "Animated Radix switch with spring thumb travel, pressure-like thumb squash, foreground track fill, and optional inline label.",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [],
+"file": "icons/switch.tsx",
+"files": [
+"icons/switch.tsx"
+],
+"deps": [
+"@radix-ui/react-switch",
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://iconiqui.com/r/switch.json"
+},
+{
+"id": "iconiq/table",
+"name": "table",
+"title": "Table",
+"description": "Composable table primitives with grid-aligned rows, optional animated sort buttons, and layout-preserving row transitions.",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [],
+"file": "icons/table.tsx",
+"files": [
+"icons/table.tsx"
+],
+"deps": [
+"motion",
+"lucide-react"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://iconiqui.com/r/table.json"
+},
+{
+"id": "iconiq/tabs",
+"name": "tabs",
+"title": "Tabs",
+"description": "Segmented tabs with a sliding active pill, mix-blend label treatment, and Radix keyboard navigation.",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [],
+"file": "icons/tabs.tsx",
+"files": [
+"icons/tabs.tsx"
+],
+"deps": [
+"@radix-ui/react-tabs",
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://iconiqui.com/r/tabs.json"
+},
+{
+"id": "iconiq/team-invitation",
+"name": "team-invitation",
+"title": "Team Invitation",
+"description": "Team invitation block with fluid morphing variants for inviting members, managing the team, assigning roles, and tracking pending invites.",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [
+"auth"
+],
+"file": "icons/team-invitation.tsx",
+"files": [
+"icons/team-invitation.tsx"
+],
+"deps": [
+"motion",
+"lucide-react"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://iconiqui.com/r/team-invitation.json"
+},
+{
+"id": "iconiq/testimonials",
+"name": "testimonials",
+"title": "Testimonials",
+"description": "Inline testimonial wall where hovering one quote blurs and dims the rest while the author attribution reveals beside the highlighted quote. Pure CSS :has()-driven hover state \u2014 no per-frame JS animation.",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [
+"auth"
+],
+"file": "icons/testimonials.tsx",
+"files": [
+"icons/testimonials.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://iconiqui.com/r/testimonials.json"
+},
+{
+"id": "iconiq/text-inertia",
+"name": "text-inertia",
+"title": "Text Inertia",
+"description": "Pointer-reactive word treatment that maps cursor velocity into Motion-powered spring movement.",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [
+"maps"
+],
+"file": "icons/text-inertia.tsx",
+"files": [
+"icons/text-inertia.tsx"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://iconiqui.com/r/text-inertia.json"
+},
+{
+"id": "iconiq/text-loop",
+"name": "text-loop",
+"title": "Text Loop",
+"description": "Cycling text with vertical slide transitions\u2014pass your own items and interval for rotating headlines or status copy.",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [
+"dev tools"
+],
+"file": "icons/text-loop.tsx",
+"files": [
+"icons/text-loop.tsx"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://iconiqui.com/r/text-loop.json"
+},
+{
+"id": "iconiq/theme-toggle",
+"name": "theme-toggle",
+"title": "Theme Toggle",
+"description": "Animated light/dark switch with a sliding knob, sun and moon icons, and bouncy track transitions. Built with Base UI Toggle; toggles the document dark class.",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [],
+"file": "icons/theme-toggle.tsx",
+"files": [
+"icons/theme-toggle.tsx"
+],
+"deps": [
+"@base-ui/react/toggle",
+"lucide-react"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://iconiqui.com/r/theme-toggle.json"
+},
+{
+"id": "iconiq/thinking-indicator",
+"name": "thinking-indicator",
+"title": "Thinking Indicator",
+"description": "AI loading state with a sparkle glyph that wobbles through liquid blob keyframes into a circle while a companion twinkle blooms on the same timeline, cycling status words that slide through a soft blur, a per-word shimmer sweep, layout-stab",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [
+"AI",
+"dev tools"
+],
+"file": "icons/thinking-indicator.tsx",
+"files": [
+"icons/thinking-indicator.tsx"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://iconiqui.com/r/thinking-indicator.json"
+},
+{
+"id": "iconiq/timezone",
+"name": "timezone",
+"title": "Timezone",
+"description": "Inline live clock for city aliases or IANA timezones with fluid digit rolls, pulsing separators, and spring transitions.",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [
+"dev tools"
+],
+"file": "icons/timezone.tsx",
+"files": [
+"icons/timezone.tsx"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://iconiqui.com/r/timezone.json"
+},
+{
+"id": "iconiq/tooltip",
+"name": "tooltip",
+"title": "Tooltip",
+"description": "Animated hover/focus tooltip with collision-aware portaled positioning, Slot-based triggers, short-string content, and optional delay and side placement. Built with Motion and Radix Popover.",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [],
+"file": "icons/tooltip.tsx",
+"files": [
+"icons/tooltip.tsx"
+],
+"deps": [
+"@radix-ui/react-popover",
+"@radix-ui/react-slot",
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://iconiqui.com/r/tooltip.json"
+},
+{
+"id": "iconiq/typewriter",
+"name": "typewriter",
+"title": "Typewriter",
+"description": "Looping typewriter text effect with brief glitch substitutions and a blinking cursor.",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [],
+"file": "icons/typewriter.tsx",
+"files": [
+"icons/typewriter.tsx"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://iconiqui.com/r/typewriter.json"
+},
+{
+"id": "iconiq/typography",
+"name": "typography",
+"title": "Typography",
+"description": "Single typography primitive that maps the full heading, label, paragraph, subheading, and documentation scale through one variant prop.",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [
+"maps"
+],
+"file": "icons/typography.tsx",
+"files": [
+"icons/typography.tsx"
+],
+"deps": [
+"class-variance-authority"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://iconiqui.com/r/typography.json"
+},
+{
+"id": "iconiq/verified-badge",
+"name": "verified-badge",
+"title": "Verified Badge",
+"description": "X-style verified scallop with shimmer or static variants, size presets, brand/gold/neutral tones, and reduced-motion aware animation.",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [],
+"file": "icons/verified-badge.tsx",
+"files": [
+"icons/verified-badge.tsx"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://iconiqui.com/r/verified-badge.json"
+},
+{
+"id": "iconiq/week-calendar",
+"name": "week-calendar",
+"title": "Week Calendar",
+"description": "Week strip that morphs into a full month grid, with a shared-layout spring pill and a draggable grabber handle.",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [],
+"file": "icons/week-calendar.tsx",
+"files": [
+"icons/week-calendar.tsx"
+],
+"deps": [
+"motion",
+"lucide-react",
+"date-fns"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://iconiqui.com/r/week-calendar.json"
+},
+{
+"id": "iconiq/wheel-picker",
+"name": "wheel-picker",
+"title": "Wheel Picker",
+"description": "iOS-style wheel picker with a 3D barrel, drag and flick inertia, detent snapping, velocity-driven motion blur, a per-row emphasis morph into the selection lens, optional looping columns, and reduced-motion aware springs.",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [],
+"file": "icons/wheel-picker.tsx",
+"files": [
+"icons/wheel-picker.tsx"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://iconiqui.com/r/wheel-picker.json"
+}
+]
+}

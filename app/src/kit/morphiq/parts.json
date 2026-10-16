@@ -1,0 +1,626 @@
+{
+"lib": "morphiq",
+"source": "morphiq",
+"homepage": "https://morphiq.prathampatel.design",
+"description": "Interfaces that move. Refractive glass, motion and depth for React \u2014 a GPU-accelerated prism lens and a cursor-reactive ASCII field, with every setting exposed as a prop.",
+"items": 28,
+"parts": [
+{
+"id": "morphiq/ascii-field",
+"name": "ascii-field",
+"title": "ASCII Field",
+"description": "A canvas field of glyphs that scramble around the cursor and settle back to rest.",
+"type": "component",
+"cat": "inputs/form-field",
+"domain": [],
+"file": "components/AsciiField/AsciiField.jsx",
+"files": [
+"components/AsciiField/index.js",
+"components/AsciiField/AsciiField.jsx",
+"components/AsciiField/AsciiField.css",
+"components/AsciiField/AsciiField.d.ts"
+],
+"deps": [
+"gsap",
+"@gsap/react"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://morphiq.prathampatel.design/r/ascii-field.json"
+},
+{
+"id": "morphiq/bitmap-image",
+"name": "bitmap-image",
+"title": "Bitmap Image",
+"description": "Converts an image into a dithered bitmap \u2014 ordered Bayer or true error diffusion (Floyd-Steinberg, Atkinson, Jarvis), which no shader can do. Canvas 2D, no WebGL.",
+"type": "component",
+"cat": "media/gallery",
+"domain": [
+"commerce",
+"maps"
+],
+"file": "components/BitmapImage/BitmapImage.jsx",
+"files": [
+"components/BitmapImage/index.js",
+"components/BitmapImage/BitmapImage.jsx",
+"components/bitmap-core/engine.js",
+"components/bitmap-core/sources.js",
+"components/bitmap-core/dither.js",
+"components/bitmap-core/bitmap.css",
+"components/BitmapImage/BitmapImage.d.ts",
+"components/bitmap-core/bitmap.d.ts"
+],
+"deps": [
+"gsap",
+"@gsap/react"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://morphiq.prathampatel.design/r/bitmap-image.json"
+},
+{
+"id": "morphiq/bitmap-noise",
+"name": "bitmap-noise",
+"title": "Bitmap Noise",
+"description": "A self-generating dither field. Two drifting noise layers interfere to form patches of particles that appear, dissolve and reform in place. Canvas 2D, no WebGL.",
+"type": "component",
+"cat": "motion/background",
+"domain": [
+"maps"
+],
+"file": "components/BitmapNoise/BitmapNoise.jsx",
+"files": [
+"components/BitmapNoise/index.js",
+"components/BitmapNoise/BitmapNoise.jsx",
+"components/bitmap-core/engine.js",
+"components/bitmap-core/sources.js",
+"components/bitmap-core/dither.js",
+"components/bitmap-core/bitmap.css",
+"components/BitmapNoise/BitmapNoise.d.ts",
+"components/bitmap-core/bitmap.d.ts"
+],
+"deps": [
+"gsap",
+"@gsap/react"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://morphiq.prathampatel.design/r/bitmap-noise.json"
+},
+{
+"id": "morphiq/bitmap-text",
+"name": "bitmap-text",
+"title": "Bitmap Text",
+"description": "Type rasterised and dithered into particles. A grain control decides whether the letterforms read as solid or as a cloud that still resolves as words. Canvas 2D, no WebGL.",
+"type": "component",
+"cat": "motion/text-effect",
+"domain": [
+"maps"
+],
+"file": "components/BitmapText/BitmapText.jsx",
+"files": [
+"components/BitmapText/index.js",
+"components/BitmapText/BitmapText.jsx",
+"components/bitmap-core/engine.js",
+"components/bitmap-core/sources.js",
+"components/bitmap-core/dither.js",
+"components/bitmap-core/bitmap.css",
+"components/BitmapText/BitmapText.d.ts",
+"components/bitmap-core/bitmap.d.ts"
+],
+"deps": [
+"gsap",
+"@gsap/react"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://morphiq.prathampatel.design/r/bitmap-text.json"
+},
+{
+"id": "morphiq/brushed-metal",
+"name": "brushed-metal",
+"title": "Brushed Metal",
+"description": "A brushed metal panel under a light at the pointer, shaded with anisotropic GGX so the highlight streaks across the grain. Colour is the metal's F0; anisotropy 0 is polished. WebGL2.",
+"type": "component",
+"cat": "data-display/card",
+"domain": [],
+"file": "components/BrushedMetal/BrushedMetal.jsx",
+"files": [
+"components/BrushedMetal/index.js",
+"components/BrushedMetal/BrushedMetal.jsx",
+"components/BrushedMetal/BrushedMetal.css",
+"components/gl-core/gl.js",
+"components/BrushedMetal/BrushedMetal.d.ts"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://morphiq.prathampatel.design/r/brushed-metal.json"
+},
+{
+"id": "morphiq/caustic-surface",
+"name": "caustic-surface",
+"title": "Caustic Surface",
+"description": "The net of light on a pool floor, lit by conservation of light rather than a texture: brightness is 1/|det(I + D(1 \u2212 1/n)H)| of the refraction map, so the lines are where the surface folds the light. Pointer ripples bend the net. WebGL2.",
+"type": "component",
+"cat": "data-viz/map",
+"domain": [
+"maps"
+],
+"file": "components/CausticSurface/CausticSurface.jsx",
+"files": [
+"components/CausticSurface/index.js",
+"components/CausticSurface/CausticSurface.jsx",
+"components/CausticSurface/CausticSurface.css",
+"components/gl-core/gl.js",
+"components/CausticSurface/CausticSurface.d.ts"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://morphiq.prathampatel.design/r/caustic-surface.json"
+},
+{
+"id": "morphiq/channel-switch",
+"name": "channel-switch",
+"title": "Channel Switch",
+"description": "Content changes like a CRT changing channel \u2014 collapse to a line and a dot, a phosphor feedback buffer decaying as e^(\u2212\u0394t/\u03c4), and a damped vertical hold rolling the new picture into lock. Children stay live DOM.",
+"type": "component",
+"cat": "actions/switch",
+"domain": [],
+"file": "components/ChannelSwitch/ChannelSwitch.jsx",
+"files": [
+"components/ChannelSwitch/index.js",
+"components/ChannelSwitch/ChannelSwitch.jsx",
+"components/ChannelSwitch/ChannelSwitch.css",
+"components/ChannelSwitch/ChannelSwitch.d.ts"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://morphiq.prathampatel.design/r/channel-switch.json"
+},
+{
+"id": "morphiq/depth-of-field",
+"name": "depth-of-field",
+"title": "Depth of Field",
+"description": "A card stack blurred by a real circle of confusion, so the near side defocuses harder than the far side \u2014 the asymmetry that makes a photograph read as one. The focal plane racks with the pointer.",
+"type": "component",
+"cat": "inputs/form-field",
+"domain": [
+"billing"
+],
+"file": "components/DepthOfField/DepthOfField.jsx",
+"files": [
+"components/DepthOfField/index.js",
+"components/DepthOfField/DepthOfField.jsx",
+"components/DepthOfField/DepthOfField.css",
+"components/DepthOfField/DepthOfField.d.ts"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://morphiq.prathampatel.design/r/depth-of-field.json"
+},
+{
+"id": "morphiq/dock",
+"name": "dock",
+"title": "Magnifying Dock",
+"description": "A dock whose items swell as the pointer nears, on springs. Distance drives the scale, so the row breathes rather than one icon popping.",
+"type": "component",
+"cat": "navigation/dock",
+"domain": [],
+"file": "components/Dock/Dock.jsx",
+"files": [
+"components/Dock/index.js",
+"components/Dock/Dock.jsx",
+"components/Dock/Icons.jsx",
+"components/Dock/Dock.css",
+"components/Dock/Dock.d.ts"
+],
+"deps": [
+"framer-motion",
+"gsap",
+"@gsap/react"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://morphiq.prathampatel.design/r/dock.json"
+},
+{
+"id": "morphiq/elastic-headline",
+"name": "elastic-headline",
+"title": "Elastic Headline",
+"description": "A headline strung on an elastic. Letters are nodes on a mass-spring chain pinned at both ends and coupled by the discrete Laplacian, so a pull travels outward and reflects off the ends \u2014 grab one and the whole line deforms, then rings out.",
+"type": "component",
+"cat": "motion/text-effect",
+"domain": [],
+"file": "components/ElasticHeadline/ElasticHeadline.jsx",
+"files": [
+"components/ElasticHeadline/index.js",
+"components/ElasticHeadline/ElasticHeadline.jsx",
+"components/ElasticHeadline/ElasticHeadline.css",
+"components/ElasticHeadline/ElasticHeadline.d.ts"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://morphiq.prathampatel.design/r/elastic-headline.json"
+},
+{
+"id": "morphiq/elastic-rail",
+"name": "elastic-rail",
+"title": "Elastic Rail",
+"description": "A scroll progress rail that bulges with overscroll and twangs back. It obeys the wave equation, so its pitch follows f = (1/2L)\u00b7\u221a(T/\u03bc) \u2014 a longer rail rings lower, with nothing tuned per page.",
+"type": "component",
+"cat": "data-viz/progress-bar",
+"domain": [],
+"file": "components/ElasticRail/ElasticRail.jsx",
+"files": [
+"components/ElasticRail/index.js",
+"components/ElasticRail/ElasticRail.jsx",
+"components/ElasticRail/ElasticRail.css",
+"components/ElasticRail/ElasticRail.d.ts"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://morphiq.prathampatel.design/r/elastic-rail.json"
+},
+{
+"id": "morphiq/ferrofluid-nav",
+"name": "ferrofluid-nav",
+"title": "Ferrofluid Nav",
+"description": "A nav whose active pill stretches out of one item, thins to a neck and gathers into the next. Two capsule fields blended with a polynomial smooth-minimum, evaluated per pixel \u2014 the neck is surface tension, not a translate.",
+"type": "component",
+"cat": "navigation/top-nav",
+"domain": [],
+"file": "components/FerrofluidNav/FerrofluidNav.jsx",
+"files": [
+"components/FerrofluidNav/index.js",
+"components/FerrofluidNav/FerrofluidNav.jsx",
+"components/FerrofluidNav/FerrofluidNav.css",
+"components/FerrofluidNav/FerrofluidNav.d.ts"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://morphiq.prathampatel.design/r/ferrofluid-nav.json"
+},
+{
+"id": "morphiq/focus-peaking",
+"name": "focus-peaking",
+"title": "Focus Peaking",
+"description": "Lights an image's in-focus edges on hover, like a camera monitor: the Sobel gradient of luma, thresholded with a soft knee and tinted over a dimmed picture. WebGL2.",
+"type": "component",
+"cat": "media/gallery",
+"domain": [],
+"file": "components/FocusPeaking/FocusPeaking.jsx",
+"files": [
+"components/FocusPeaking/index.js",
+"components/FocusPeaking/FocusPeaking.jsx",
+"components/FocusPeaking/FocusPeaking.css",
+"components/gl-core/gl.js",
+"components/FocusPeaking/FocusPeaking.d.ts"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://morphiq.prathampatel.design/r/focus-peaking.json"
+},
+{
+"id": "morphiq/folding-panel",
+"name": "folding-panel",
+"title": "Folding Panel",
+"description": "A panel that folds along real crease lines. Facets are placed by walking the fold outward so the paper stays connected, the panel foreshortens by cos \u03b8 as it closes, and each facet shades by Lambert's cosine law from its own normal.",
+"type": "component",
+"cat": "data-display/card",
+"domain": [],
+"file": "components/FoldingPanel/FoldingPanel.jsx",
+"files": [
+"components/FoldingPanel/index.js",
+"components/FoldingPanel/FoldingPanel.jsx",
+"components/FoldingPanel/FoldingPanel.css",
+"components/FoldingPanel/FoldingPanel.d.ts"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://morphiq.prathampatel.design/r/folding-panel.json"
+},
+{
+"id": "morphiq/gravity-menu",
+"name": "gravity-menu",
+"title": "Gravity Menu",
+"description": "Menu items on stable orbits, bent past the pointer by a softened inverse-square attraction. The softening term is what stops an item crossing the cursor being flung off screen in a single frame.",
+"type": "component",
+"cat": "navigation/menu",
+"domain": [],
+"file": "components/GravityMenu/GravityMenu.jsx",
+"files": [
+"components/GravityMenu/index.js",
+"components/GravityMenu/GravityMenu.jsx",
+"components/GravityMenu/GravityMenu.css",
+"components/GravityMenu/GravityMenu.d.ts"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://morphiq.prathampatel.design/r/gravity-menu.json"
+},
+{
+"id": "morphiq/halftone-screen",
+"name": "halftone-screen",
+"title": "Halftone Screen",
+"description": "Four-colour process halftone as a press prints it: CMYK screened at 15/75/0/45\u00b0, grey-component replacement, and dot area \u2014 not radius \u2014 matched to ink coverage, including where dots merge. A loupe under the pointer. WebGL2.",
+"type": "component",
+"cat": "marketing/features",
+"domain": [],
+"file": "components/HalftoneScreen/HalftoneScreen.jsx",
+"files": [
+"components/HalftoneScreen/index.js",
+"components/HalftoneScreen/HalftoneScreen.jsx",
+"components/HalftoneScreen/HalftoneScreen.css",
+"components/gl-core/gl.js",
+"components/HalftoneScreen/HalftoneScreen.d.ts"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://morphiq.prathampatel.design/r/halftone-screen.json"
+},
+{
+"id": "morphiq/liquid-transition",
+"name": "liquid-transition",
+"title": "Liquid Transition",
+"description": "A fluid front that sweeps over changing content: the middle leads by a Poiseuille profile, the edge rings under tension by the damped wave equation, and droplets trail the drain. Canvas 2D.",
+"type": "component",
+"cat": "motion/shader",
+"domain": [],
+"file": "components/LiquidTransition/LiquidTransition.jsx",
+"files": [
+"components/LiquidTransition/index.js",
+"components/LiquidTransition/LiquidTransition.jsx",
+"components/LiquidTransition/LiquidTransition.css",
+"components/LiquidTransition/LiquidTransition.d.ts"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://morphiq.prathampatel.design/r/liquid-transition.json"
+},
+{
+"id": "morphiq/magnetic-field",
+"name": "magnetic-field",
+"title": "Magnetic Field",
+"description": "Iron filings aligning to a dipole under the cursor. B proportional to (3(m\u00b7r\u0302)r\u0302 \u2212 m)/r\u00b3, so the pattern has two lobes and the loops between them \u2014 a radial fan has neither.",
+"type": "component",
+"cat": "inputs/form-field",
+"domain": [],
+"file": "components/MagneticField/MagneticField.jsx",
+"files": [
+"components/MagneticField/index.js",
+"components/MagneticField/MagneticField.jsx",
+"components/MagneticField/MagneticField.css",
+"components/MagneticField/MagneticField.d.ts"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://morphiq.prathampatel.design/r/magnetic-field.json"
+},
+{
+"id": "morphiq/pressure-text",
+"name": "pressure-text",
+"title": "Pressure Text",
+"description": "Type that reacts to the cursor. Letters thicken and widen under the pointer while their neighbours give up the space, so the word keeps its overall width. Both axes are synthesised from a single cut, so it morphs rather than cross-dissolvin",
+"type": "component",
+"cat": "motion/text-effect",
+"domain": [],
+"file": "components/PressureText/PressureText.jsx",
+"files": [
+"components/PressureText/index.js",
+"components/PressureText/PressureText.jsx",
+"components/PressureText/PressureText.css",
+"components/PressureText/PressureText.d.ts"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://morphiq.prathampatel.design/r/pressure-text.json"
+},
+{
+"id": "morphiq/prism-glass",
+"name": "prism-glass",
+"title": "Prism Glass",
+"description": "A GPU-accelerated refractive lens for images and rendered textures. Spectral dispersion, uniform frost and a directional rim light, from an SDF-defined shape \u2014 no 3D model required. It refracts the texture you give it, not the DOM behind it",
+"type": "component",
+"cat": "media/gallery",
+"domain": [
+"AI",
+"crypto"
+],
+"file": "packages/prism-glass/src/PrismGlass.jsx",
+"files": [
+"packages/prism-glass/src/index.js",
+"packages/prism-glass/src/PrismGlass.jsx",
+"packages/prism-glass/src/shader.js",
+"packages/prism-glass/src/sdf.js",
+"packages/prism-glass/types/index.d.ts"
+],
+"deps": [
+"three",
+"@react-three/fiber",
+"@react-three/drei",
+"maath"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://morphiq.prathampatel.design/r/prism-glass.json"
+},
+{
+"id": "morphiq/scroll-expand",
+"name": "scroll-expand",
+"title": "Scroll Expand",
+"description": "A framed panel pinned to the viewport that opens out to full bleed as you scroll past it, with the media inside settling back from a slight push-in. Progress is published as two CSS custom properties, so anything you drop inside can join th",
+"type": "component",
+"cat": "layout/scroll-area",
+"domain": [
+"media"
+],
+"file": "components/ScrollExpand/ScrollExpand.jsx",
+"files": [
+"components/ScrollExpand/index.js",
+"components/ScrollExpand/ScrollExpand.jsx",
+"components/ScrollExpand/ScrollExpand.css",
+"components/ScrollExpand/ScrollExpand.d.ts"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://morphiq.prathampatel.design/r/scroll-expand.json"
+},
+{
+"id": "morphiq/shatter-reveal",
+"name": "shatter-reveal",
+"title": "Shatter Reveal",
+"description": "An image that breaks into Lloyd-relaxed Voronoi shards when struck, each a rigid body with its own mass and polygon inertia, spun by the strike and slowed by quadratic drag. Reveals the content underneath. Canvas 2D.",
+"type": "component",
+"cat": "media/gallery",
+"domain": [],
+"file": "components/ShatterReveal/ShatterReveal.jsx",
+"files": [
+"components/ShatterReveal/index.js",
+"components/ShatterReveal/ShatterReveal.jsx",
+"components/ShatterReveal/ShatterReveal.css",
+"components/ShatterReveal/ShatterReveal.d.ts"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://morphiq.prathampatel.design/r/shatter-reveal.json"
+},
+{
+"id": "morphiq/smear-cursor",
+"name": "smear-cursor",
+"title": "Smear Cursor",
+"description": "A cursor trail that is motion blur rather than a string of dots. Ribbon width falls as 1/(1+speed\u00b7k), the way a camera spreads the same exposure over more ground the faster the subject moves.",
+"type": "component",
+"cat": "motion/cursor",
+"domain": [],
+"file": "components/SmearCursor/SmearCursor.jsx",
+"files": [
+"components/SmearCursor/index.js",
+"components/SmearCursor/SmearCursor.jsx",
+"components/SmearCursor/SmearCursor.css",
+"components/SmearCursor/SmearCursor.d.ts"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://morphiq.prathampatel.design/r/smear-cursor.json"
+},
+{
+"id": "morphiq/sonar-list",
+"name": "sonar-list",
+"title": "Sonar List",
+"description": "A ping leaves the click and sweeps outward; each row rings as the wavefront reaches it. Arrival is d/c, a real propagation time, so rows near the click ring first whatever their index \u2014 and each row is its own damped oscillator, evaluated i",
+"type": "component",
+"cat": "data-display/list",
+"domain": [
+"dev tools"
+],
+"file": "components/SonarList/SonarList.jsx",
+"files": [
+"components/SonarList/index.js",
+"components/SonarList/SonarList.jsx",
+"components/SonarList/SonarList.css",
+"components/SonarList/SonarList.d.ts"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://morphiq.prathampatel.design/r/sonar-list.json"
+},
+{
+"id": "morphiq/thread-pull",
+"name": "thread-pull",
+"title": "Thread Pull",
+"description": "A thread strung under a line of text that hangs in a real catenary when you pull it. Length is conserved, so dragging to one side starves that segment and floods the other; the parameter is solved by Newton each frame.",
+"type": "component",
+"cat": "motion/text-effect",
+"domain": [],
+"file": "components/ThreadPull/ThreadPull.jsx",
+"files": [
+"components/ThreadPull/index.js",
+"components/ThreadPull/ThreadPull.jsx",
+"components/ThreadPull/ThreadPull.css",
+"components/ThreadPull/ThreadPull.d.ts"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://morphiq.prathampatel.design/r/thread-pull.json"
+},
+{
+"id": "morphiq/thrown-marquee",
+"name": "thrown-marquee",
+"title": "Thrown Marquee",
+"description": "A marquee you can grab and throw. Velocity decays exponentially toward the idle drift rather than toward zero, so a hard throw drops fast then creeps and the band returns to its resting speed with no special case.",
+"type": "component",
+"cat": "motion/marquee",
+"domain": [],
+"file": "components/ThrownMarquee/ThrownMarquee.jsx",
+"files": [
+"components/ThrownMarquee/index.js",
+"components/ThrownMarquee/ThrownMarquee.jsx",
+"components/ThrownMarquee/ThrownMarquee.css",
+"components/ThrownMarquee/ThrownMarquee.d.ts"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://morphiq.prathampatel.design/r/thrown-marquee.json"
+},
+{
+"id": "morphiq/weight-grid",
+"name": "weight-grid",
+"title": "Weight Grid",
+"description": "A bento grid where the cell under the cursor takes area from its neighbours and the total never changes. Track weights are renormalised against their axis sum, so growing a cell is taking space off the ones beside it \u2014 not growing the grid.",
+"type": "component",
+"cat": "layout/bento-grid",
+"domain": [],
+"file": "components/WeightGrid/WeightGrid.jsx",
+"files": [
+"components/WeightGrid/index.js",
+"components/WeightGrid/WeightGrid.jsx",
+"components/WeightGrid/WeightGrid.css",
+"components/WeightGrid/WeightGrid.d.ts"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://morphiq.prathampatel.design/r/weight-grid.json"
+},
+{
+"id": "morphiq/wet-ink",
+"name": "wet-ink",
+"title": "Wet Ink",
+"description": "A word written in ink that bleeds along the paper's fibres by anisotropic diffusion and dries darker at its rim, stepped under the explicit stability limit. Canvas 2D.",
+"type": "component",
+"cat": "motion/text-effect",
+"domain": [],
+"file": "components/WetInk/WetInk.jsx",
+"files": [
+"components/WetInk/index.js",
+"components/WetInk/WetInk.jsx",
+"components/WetInk/WetInk.css",
+"components/WetInk/WetInk.d.ts"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://morphiq.prathampatel.design/r/wet-ink.json"
+}
+]
+}

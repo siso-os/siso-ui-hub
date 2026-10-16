@@ -1,5 +1,5 @@
 // uihub: siso:browse-view
-import { useMemo, useState, type ReactNode } from "react"
+import { useMemo, type ReactNode } from "react"
 import { useSearchParams } from "react-router-dom"
 import { X } from "lucide-react"
 import { cn } from "@/lib/utils"
@@ -10,6 +10,7 @@ import { Button } from "@/components/ui/button"
 import { ICON_GRID_CLS, ItemGrid, WIDE_GRID_CLS } from "./ItemGrid"
 import { ICON_CATS, isDrawn, isWide } from "./ItemCard"
 import { PageHeader } from "./bits"
+import { FacetMenu } from "./FacetMenu"
 
 const STATUS_CHIPS: { key: string; label: string; test: (r: Row) => boolean }[] = [
   { key: "all", label: "All", test: () => true },
@@ -21,13 +22,14 @@ const STATUS_CHIPS: { key: string; label: string; test: (r: Row) => boolean }[] 
   { key: "indexed", label: "Unreviewed", test: (r) => r.st === "indexed" },
 ]
 
-/** 21st's browse: title + count, filter row (kind tabs, status chips, source, sort), grid. Filters live in the URL. */
+/** 21st's browse: title + count, kind tabs, one toolbar (each filter a menu, then text, source, sort), grid. Filters
+ *  live in the URL. The filters were rows of chips that pushed the parts off the first screen (Shaan, 15 Oct: "fix the
+ *  bare pills at the tops of pages"); each is one button now, and the parts start on the first screen. */
 // ordered: base already comes in its best order (a Build slot: its own kind first), which "Best first" keeps
-export function BrowseView({ title, sub, base, hideKinds, actions, ordered }: { title: string; sub?: ReactNode; base: Row[]; hideKinds?: boolean; actions?: ReactNode; ordered?: boolean }) {
+// extra sits under the header (a node's About); tabs replace the kind tabs (a node's variations)
+export function BrowseView({ title, sub, base, hideKinds, actions, ordered, extra, tabs }: { title: string; sub?: ReactNode; base: Row[]; hideKinds?: boolean; actions?: ReactNode; ordered?: boolean; extra?: ReactNode; tabs?: ReactNode }) {
   const idx = useIndex()
   const [sp, setSp] = useSearchParams()
-  // long chip rows (a slot spans many categories: 100+ types) show the biggest first, the rest behind "more"
-  const [allChips, setAllChips] = useState(false)
   const kind = sp.get("kind") || "all"
   const status = sp.get("status") || "all"
   const source = sp.get("source") || "all"
@@ -86,13 +88,12 @@ export function BrowseView({ title, sub, base, hideKinds, actions, ordered }: { 
   const facet = (key: "looks" | "fits") => {
     const m = new Map<string, number>()
     for (const r of textRows) if ((showCopies || !r.cp) && (showDemos || !tucked(r))) for (const w of r[key] || []) m.set(w, (m.get(w) || 0) + 1)
-    return [...m.entries()].filter(([w, n]) => n > 2 && w !== "minimal" && w !== "clean").sort((a, b) => b[1] - a[1]).slice(0, 12)
+    return [...m.entries()].filter(([w, n]) => n > 2 && w !== "minimal" && w !== "clean").sort((a, b) => b[1] - a[1])
   }
   // eslint-disable-next-line react-hooks/exhaustive-deps
   const looks = useMemo(() => facet("looks"), [textRows, showCopies, showDemos])
   // eslint-disable-next-line react-hooks/exhaustive-deps
   const fits = useMemo(() => facet("fits"), [textRows, showCopies, showDemos])
-  const typed = useMemo(() => textRows.reduce((n, r) => n + (r.ty ? 1 : 0), 0), [textRows])
 
   const copyCount = useMemo(() => textRows.reduce((n, r) => n + (r.cp ? 1 : 0), 0), [textRows])
   const nearCount = useMemo(() => textRows.reduce((n, r) => n + (r.cp === 2 ? 1 : 0), 0), [textRows])
@@ -107,20 +108,22 @@ export function BrowseView({ title, sub, base, hideKinds, actions, ordered }: { 
   }, [textRows, kind, source, status, sort, subcat, showCopies, showDemos, pattern, look, fit, ordered])
 
   const kinds = (idx?.kinds || []).filter((k) => kindCounts.get(k))
+  // each status with how many of these carry it (the other filters held), so an empty one is not offered
+  const statuses = useMemo(() => {
+    const m = new Map<string, number>()
+    for (const r of textRows) if ((showCopies || !r.cp) && (showDemos || !tucked(r))) m.set(r.st, (m.get(r.st) || 0) + 1)
+    return STATUS_CHIPS.filter((c) => c.key !== "all" && !(idx?.public && c.key === "curated") && (m.get(c.key) || c.key === status)).map((c) => [c.key, m.get(c.key) || 0, c.label] as [string, number, string])
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [textRows, showCopies, showDemos, status, idx?.public])
+  const shown = showCopies ? textRows.length : textRows.length - copyCount
 
-  const CHIPS = 14
-  const clip = (list: [string, number][], on: string) => (allChips || list.length <= CHIPS + 2 ? list : list.slice(0, CHIPS).concat(list.slice(CHIPS).filter(([id]) => id === on)))
-  const more = (list: [string, number][]) =>
-    list.length > CHIPS + 2 && (
-      <button onClick={() => setAllChips((v) => !v)} className="inline-flex h-7 items-center rounded-full px-2.5 text-xs text-muted-foreground hover:text-foreground" data-verify-more-chips>
-        {allChips ? "fewer" : `${(list.length - CHIPS).toLocaleString("en-GB")} more`}
-      </button>
-    )
   return (
     <div>
       <PageHeader title={title} count={rows.length} sub={sub}>
         {actions}
       </PageHeader>
+      {extra}
+      {tabs}
 
       {!hideKinds && kinds.length > 1 && (
         <div className="-mx-1 mb-3 flex gap-1 overflow-x-auto border-b px-1 pb-px" role="tablist" aria-label="Kinds">
@@ -142,85 +145,12 @@ export function BrowseView({ title, sub, base, hideKinds, actions, ordered }: { 
         </div>
       )}
 
-      {subs.length > 1 && patterns.length <= 1 && (
-        <div className="mb-3 flex flex-wrap gap-1.5" role="group" aria-label="Subcategories" data-verify-subs>
-          {[["all", showCopies ? textRows.length : textRows.length - copyCount] as [string, number], ...clip(subs, subcat)].map(([id, n]) => (
-            <button key={id} onClick={() => upd("sub", id)} aria-pressed={subcat === id} className="siso-chip inline-flex h-7 items-center gap-1.5 rounded-full px-3 text-xs" data-on={subcat === id || undefined}>
-              {id === "all" ? "All kinds" : id}
-              <span className="text-muted-foreground tabular-nums">{n.toLocaleString("en-GB")}</span>
-            </button>
-          ))}
-          {more(subs)}
-        </div>
-      )}
-
-      {patterns.length > 1 && (
-        <div className="mb-3 flex flex-wrap items-center gap-1.5" role="group" aria-label="Types" data-verify-types={patterns.length}>
-          <span className="mr-1 text-[11px] font-medium tracking-wide text-muted-foreground uppercase" title={`${typed.toLocaleString("en-GB")} of these have been read and typed`}>Types</span>
-          {[["all", 0] as [string, number], ...clip(patterns, pattern)].map(([id, n]) => (
-            <button key={id} onClick={() => upd("type", id)} aria-pressed={pattern === id} className="siso-chip inline-flex h-7 items-center gap-1.5 rounded-full px-3 text-xs" data-on={pattern === id || undefined}>
-              {id === "all" ? "Every type" : id}
-              {n > 0 && <span className="text-muted-foreground tabular-nums">{n.toLocaleString("en-GB")}</span>}
-            </button>
-          ))}
-          {more(patterns)}
-        </div>
-      )}
-
-      {(looks.length > 1 || fits.length > 1) && (
-        <div className="mb-3 flex flex-wrap items-center gap-1.5" role="group" aria-label="Look and fit" data-verify-facets>
-          {(
-            [
-              ["look", "Look", looks, look],
-              ["fit", "Fits", fits, fit],
-            ] as const
-          ).map(([key, label, list, on]) =>
-            list.length > 1 ? (
-              <span key={key} className="mr-3 inline-flex flex-wrap items-center gap-1.5">
-                <span className="mr-1 text-[11px] font-medium tracking-wide text-muted-foreground uppercase">{label}</span>
-                {list.map(([w, n]) => (
-                  <button key={w} onClick={() => upd(key, on === w ? "all" : w)} aria-pressed={on === w} className="siso-chip inline-flex h-7 items-center gap-1.5 rounded-full px-3 text-xs" data-on={on === w || undefined}>
-                    {w}
-                    <span className="text-muted-foreground tabular-nums">{n.toLocaleString("en-GB")}</span>
-                  </button>
-                ))}
-              </span>
-            ) : null,
-          )}
-        </div>
-      )}
-
-      {demoCount > 0 && (
-        <button onClick={() => upd("demos", showDemos ? "" : "show", "")} className="mb-3 mr-4 inline-block text-xs text-muted-foreground hover:text-foreground" data-verify-demos={demoCount}>
-          {showDemos ? `Showing ${demoCount.toLocaleString("en-GB")} demos and code snippets · hide` : `${demoCount.toLocaleString("en-GB")} demos and code snippets hidden (a disabled input, a hook) · show`}
-        </button>
-      )}
-
-      {copyCount > 0 && (
-        <button onClick={() => upd("copies", showCopies ? "" : "show", "")} className="mb-3 inline-block text-xs text-muted-foreground hover:text-foreground" data-verify-copies={copyCount}>
-          {(() => {
-            const what = `${copyCount.toLocaleString("en-GB")} ${nearCount ? "" : "exact "}${copyCount === 1 ? "copy" : "copies"} of other libraries' parts`
-            const split = nearCount && nearCount < copyCount ? ` (${(copyCount - nearCount).toLocaleString("en-GB")} exact, ${nearCount.toLocaleString("en-GB")} nearly)` : nearCount ? " (nearly the same code)" : ""
-            return showCopies ? `Showing ${what}${split} · hide` : `${what} hidden${split} · show`
-          })()}
-        </button>
-      )}
-
-      <div className="mb-5 flex flex-wrap items-center gap-2">
-        <div className="flex flex-wrap gap-1.5">
-          {STATUS_CHIPS.filter((c) => !(idx?.public && c.key === "curated")).map((c) => (
-            <button
-              key={c.key}
-              onClick={() => upd("status", c.key)}
-              aria-pressed={status === c.key}
-              className={cn(
-                "siso-chip h-7 rounded-full px-3 text-xs",
-              )}
-            >
-              {c.label}
-            </button>
-          ))}
-        </div>
+      <div className="mb-2 flex flex-wrap items-center gap-2" data-verify-toolbar>
+        {subs.length > 1 && patterns.length <= 1 && <FacetMenu label="Kind" all="All kinds" items={subs} value={subcat} onChange={(v) => upd("sub", v)} total={shown} />}
+        {patterns.length > 1 && <FacetMenu label="Type" all="Every type" items={patterns} value={pattern} onChange={(v) => upd("type", v)} total={shown} />}
+        {looks.length > 1 && <FacetMenu label="Look" all="Any look" items={looks} value={look} onChange={(v) => upd("look", v)} />}
+        {fits.length > 1 && <FacetMenu label="Fits" all="Any industry" items={fits} value={fit} onChange={(v) => upd("fit", v)} />}
+        {(statuses.length > 1 || status !== "all") && <FacetMenu label="Status" all="Any status" items={statuses} value={status} onChange={(v) => upd("status", v)} />}
         <div className="flex w-full flex-wrap items-center gap-2 sm:ml-auto sm:w-auto">
           <div className="relative min-w-0 flex-1 sm:flex-none">
             <Input value={q} onChange={(e) => upd("q", e.target.value, "")} placeholder="Filter…" className="h-8 w-full pr-7 text-xs sm:w-40" aria-label="Filter by text" />
@@ -258,6 +188,25 @@ export function BrowseView({ title, sub, base, hideKinds, actions, ordered }: { 
           </Select>
         </div>
       </div>
+      {(demoCount > 0 || copyCount > 0) && (
+        <p className="mb-4 flex flex-wrap gap-x-4 gap-y-1 text-[11.5px] text-muted-foreground">
+          {demoCount > 0 && (
+            <button onClick={() => upd("demos", showDemos ? "" : "show", "")} className="hover:text-foreground" data-verify-demos={demoCount}>
+              {showDemos ? `Showing ${demoCount.toLocaleString("en-GB")} demos and code snippets · hide` : `${demoCount.toLocaleString("en-GB")} demos and code snippets hidden · show`}
+            </button>
+          )}
+          {copyCount > 0 && (
+            <button onClick={() => upd("copies", showCopies ? "" : "show", "")} className="hover:text-foreground" data-verify-copies={copyCount}>
+              {(() => {
+                const what = `${copyCount.toLocaleString("en-GB")} ${nearCount ? "" : "exact "}${copyCount === 1 ? "copy" : "copies"} of other libraries' parts`
+                const split = nearCount && nearCount < copyCount ? ` (${(copyCount - nearCount).toLocaleString("en-GB")} exact, ${nearCount.toLocaleString("en-GB")} nearly)` : nearCount ? " (nearly the same code)" : ""
+                return showCopies ? `Showing ${what}${split} · hide` : `${what} hidden${split} · show`
+              })()}
+            </button>
+          )}
+        </p>
+      )}
+      {demoCount === 0 && copyCount === 0 && <div className="mb-3" />}
 
       <ItemGrid
         rows={rows}

@@ -1,0 +1,173 @@
+{
+"lib": "slither-charts",
+"source": "gh-amanvarshney01-slither-charts",
+"homepage": null,
+"description": null,
+"items": 10,
+"parts": [
+{
+"id": "slither-charts/boa-meter",
+"name": "boa-meter",
+"title": "BoaMeter (gauge)",
+"description": "Gauge chart: a progress snake chasing its own tail around a dashed track. At 100% it catches it and becomes a full ouroboros. This is called shipping.",
+"type": "component",
+"cat": "data-viz/gauge",
+"domain": [],
+"file": "packages/slither-charts/src/boa-meter.tsx",
+"files": [
+"packages/slither-charts/src/boa-meter.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add @slither-charts/boa-meter"
+},
+{
+"id": "slither-charts/cobra-chart",
+"name": "cobra-chart",
+"title": "Cobra Chart (bar)",
+"description": "Bar chart where every bar is a cobra rearing to the exact height of your KPI, hood flared. Grouped series, staggered rise-in. An unhinged homage to dither-kit.",
+"type": "component",
+"cat": "data-viz/chart",
+"domain": [],
+"file": "packages/slither-charts/src/cobra-chart.tsx",
+"files": [
+"packages/slither-charts/src/cobra-chart.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add @slither-charts/cobra-chart"
+},
+{
+"id": "slither-charts/core",
+"name": "core",
+"title": "slither-charts \u2014 Core",
+"description": "Shared engine for slither-charts: the canvas snake painter (traveling-wave slither, species skins, blinking eyes, forked tongues), scales, contexts, and the grid/axes/legend/HissTip chrome. Installed automatically by every chart. Zero depen",
+"type": "component",
+"cat": "data-viz/chart",
+"domain": [],
+"file": "packages/slither-charts/src/chart-context.tsx",
+"files": [
+"packages/slither-charts/src/species.ts",
+"packages/slither-charts/src/scales.ts",
+"packages/slither-charts/src/snake-paint.ts",
+"packages/slither-charts/src/use-chart.ts",
+"packages/slither-charts/src/chart-context.tsx",
+"packages/slither-charts/src/cartesian-root.tsx",
+"packages/slither-charts/src/grid.tsx",
+"packages/slither-charts/src/axes.tsx",
+"packages/slither-charts/src/legend.tsx",
+"packages/slither-charts/src/hiss-tip.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add @slither-charts/core"
+},
+{
+"id": "slither-charts/medusa-chart",
+"name": "medusa-chart",
+"title": "Medusa Chart (radial bars)",
+"description": "Radial bar chart: snakes radiating from one center, each as long as its value, labels around the rim. An unhinged homage to dither-kit.",
+"type": "component",
+"cat": "data-viz/chart",
+"domain": [],
+"file": "packages/slither-charts/src/medusa-chart.tsx",
+"files": [
+"packages/slither-charts/src/medusa-chart.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add @slither-charts/medusa-chart"
+},
+{
+"id": "slither-charts/nest-chart",
+"name": "nest-chart",
+"title": "Nest Chart (scatter)",
+"description": "Scatter plot where every point is a baby snake coiled up at its coordinates \u2014 bubble size makes the coil bigger. Hover a nest to wake one. An unhinged homage to dither-kit.",
+"type": "component",
+"cat": "data-viz/chart",
+"domain": [],
+"file": "packages/slither-charts/src/nest-chart.tsx",
+"files": [
+"packages/slither-charts/src/nest-chart.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add @slither-charts/nest-chart"
+},
+{
+"id": "slither-charts/ouroboros-chart",
+"name": "ouroboros-chart",
+"title": "Ouroboros Chart (pie)",
+"description": "Pie chart as a ring of snakes, each politely biting the next one's tail \u2014 the circle that eats itself. Hover to make a slice rear up. An unhinged homage to dither-kit.",
+"type": "component",
+"cat": "data-viz/chart",
+"domain": [],
+"file": "packages/slither-charts/src/ouroboros-chart.tsx",
+"files": [
+"packages/slither-charts/src/ouroboros-chart.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add @slither-charts/ouroboros-chart"
+},
+{
+"id": "slither-charts/slither-chart",
+"name": "slither-chart",
+"title": "Slither Chart (line)",
+"description": "Line chart where every series is a live snake slithering along the data, head resting on the latest value. Scrub tooltip with a crosshair mouse the snakes never catch. An unhinged homage to dither-kit.",
+"type": "component",
+"cat": "data-viz/chart",
+"domain": [],
+"file": "packages/slither-charts/src/slither-chart.tsx",
+"files": [
+"packages/slither-charts/src/slither-chart.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add @slither-charts/slither-chart"
+},
+{
+"id": "slither-charts/viperstick-chart",
+"name": "viperstick-chart",
+"title": "Viperstick Chart (candlestick)",
+"description": "Candlestick chart for the finance reptiles: one snake per candle (wicks are tails, the fat mid-body spans open\u2192close), volume lane of juveniles, a moving-average trend snake, last-price tag, and a live mode where the newest candle hasn't sl",
+"type": "component",
+"cat": "data-viz/chart",
+"domain": [
+"finance"
+],
+"file": "packages/slither-charts/src/viperstick-chart.tsx",
+"files": [
+"packages/slither-charts/src/viperstick-chart.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add @slither-charts/viperstick-chart"
+},
+{
+"id": "slither-charts/worm",
+"name": "worm",
+"title": "Worm (sparkline)",
+"description": "Sparkline. Legally a snake, spiritually a worm. Fits in a stat tile, points at your KPI, occasionally flicks its tongue at it. An unhinged homage to dither-kit.",
+"type": "component",
+"cat": "data-viz/chart",
+"domain": [],
+"file": "packages/slither-charts/src/worm.tsx",
+"files": [
+"packages/slither-charts/src/worm.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add @slither-charts/worm"
+}
+]
+}

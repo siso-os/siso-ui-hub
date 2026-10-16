@@ -1,0 +1,3844 @@
+[
+ {
+  "name": "accordion",
+  "title": "Accordion",
+  "description": "Progressively reveal supporting information in place.",
+  "kind": "component",
+  "categories": [
+   "disclosure"
+  ],
+  "tags": [
+   "disclosure",
+   "layout"
+  ],
+  "files": [
+   "accordion/accordion.tsx",
+   "accordion/accordion.module.css"
+  ],
+  "demo": "demos/accordion.tsx",
+  "use": [
+   "FAQ sections where only one answer should be open at a time.",
+   "Settings or help pages that group long content under short, scannable questions.",
+   "Page-level FAQs that need larger type, via size=\"lg\"."
+  ],
+  "avoid": [
+   "Use expandable-card for a single standalone disclosure such as a plan or order summary.",
+   "Use tabs when sections are peer views that people switch between.",
+   "Use onboarding-checklist when the rows are setup tasks to complete."
+  ],
+  "install": "npx shadcn@latest add https://uiarc.dev/r/accordion.json"
+ },
+ {
+  "name": "action-button",
+  "title": "Action button",
+  "description": "A compact button for frequent toolbar actions.",
+  "kind": "component",
+  "categories": [
+   "actions"
+  ],
+  "tags": [
+   "action",
+   "toolbar"
+  ],
+  "files": [
+   "action-button/action-button.tsx",
+   "action-button/action-button.module.css"
+  ],
+  "demo": "demos/action-button.tsx",
+  "use": [
+   "A single async commit such as Save, Publish, or Submit where the result should appear on the button.",
+   "Call-to-action buttons where a trailing arrow invites the next step.",
+   "Flows where the button should reset to idle on its own after success, via resetAfterMs."
+  ],
+  "avoid": [
+   "Use button with loading for plain form submits that do not need a success state.",
+   "Use action-swap when the control toggles between lasting states.",
+   "Use hold-to-confirm when the action is destructive and needs a deliberate press."
+  ],
+  "install": "npx shadcn@latest add https://uiarc.dev/r/action-button.json"
+ },
+ {
+  "name": "activity-heatmap",
+  "title": "Activity heatmap",
+  "description": "See a year of activity at a glance, one square per day.",
+  "kind": "component",
+  "categories": [
+   "data"
+  ],
+  "tags": [
+   "data",
+   "chart",
+   "calendar"
+  ],
+  "files": [
+   "activity-heatmap/activity-heatmap.tsx",
+   "activity-heatmap/activity-heatmap.module.css"
+  ],
+  "demo": "demos/activity-heatmap.tsx",
+  "use": [
+   "Daily rhythm over a long range, like contributions or workouts.",
+   "Views where streaks and quiet weeks matter more than exact comparison."
+  ],
+  "avoid": [
+   "Use bar-chart when the exact comparison is the point.",
+   "Use calendar to pick dates."
+  ],
+  "install": "npx shadcn@latest add https://uiarc.dev/r/activity-heatmap.json"
+ },
+ {
+  "name": "alert",
+  "title": "Alert",
+  "description": "A persistent message that helps people recover or continue.",
+  "kind": "component",
+  "categories": [
+   "feedback"
+  ],
+  "tags": [
+   "status",
+   "message"
+  ],
+  "files": [
+   "alert/alert.tsx",
+   "alert/alert.module.css"
+  ],
+  "demo": "demos/alert.tsx",
+  "use": [
+   "Persistent, in-flow messages about a page or form, such as an expiring card.",
+   "Status that changes over time, where one alert should morph between tones.",
+   "Dismissible notices that should collapse and close the gap below them."
+  ],
+  "avoid": [
+   "Use toast or toast-stack for transient results of an action.",
+   "Use empty-state when there is no content to show.",
+   "Use dialog when people must respond before continuing."
+  ],
+  "install": "npx shadcn@latest add https://uiarc.dev/r/alert.json"
+ },
+ {
+  "name": "animated-counter",
+  "title": "Animated counter",
+  "description": "Give changing totals a clear sense of movement.",
+  "kind": "component",
+  "categories": [
+   "data"
+  ],
+  "tags": [
+   "data",
+   "motion"
+  ],
+  "files": [
+   "animated-counter/animated-counter.tsx",
+   "animated-counter/animated-counter.module.css"
+  ],
+  "demo": "demos/animated-counter.tsx",
+  "use": [
+   "Standalone numbers that change, such as totals, prices, or live counts.",
+   "Hero stats that roll up from zero when they scroll into view, via animateOnView."
+  ],
+  "avoid": [
+   "Use metric-card or stat-card when the number needs a card around it.",
+   "Use text-morph for words rather than numbers."
+  ],
+  "install": "npx shadcn@latest add https://uiarc.dev/r/animated-counter.json"
+ },
+ {
+  "name": "announcement-bar",
+  "title": "Announcement bar",
+  "description": "A top banner that rotates messages, counts down, and collapses smoothly when dismissed.",
+  "kind": "component",
+  "categories": [
+   "feedback"
+  ],
+  "tags": [
+   "feedback",
+   "new"
+  ],
+  "files": [
+   "announcement-bar/announcement-bar.tsx",
+   "announcement-bar/announcement-bar.module.css"
+  ],
+  "demo": "demos/announcement-bar.tsx",
+  "use": [
+   "Site-wide promotions, launches, or maintenance notices at the top of every page.",
+   "Rotating two to four short announcements in one slim bar.",
+   "A sale banner with a live countdown to its end."
+  ],
+  "avoid": [
+   "Use alert for a message tied to one section or form.",
+   "Use toast for feedback on something the visitor just did.",
+   "Use cookie-consent for consent choices."
+  ],
+  "install": "npx shadcn@latest add https://uiarc.dev/r/announcement-bar.json"
+ },
+ {
+  "name": "arc-foundation",
+  "title": "Arc foundation",
+  "description": "Arc design tokens (color, surface, radius, shadow, accent, focus, light and dark themes), plus the shared motion presets. Install once per app.",
+  "kind": "foundation",
+  "categories": [
+   "foundation"
+  ],
+  "tags": [],
+  "files": [
+   "foundation.css"
+  ],
+  "demo": null,
+  "use": [],
+  "avoid": [],
+  "install": "npx shadcn@latest add https://uiarc.dev/r/arc-foundation.json"
+ },
+ {
+  "name": "arc-motion-tokens",
+  "title": "Arc motion tokens",
+  "description": "The shared motion presets (durations, easings, springs, staggers) Arc components import. Installed automatically with any item that uses them.",
+  "kind": "foundation",
+  "categories": [
+   "foundation"
+  ],
+  "tags": [],
+  "files": [
+   "motion-tokens.ts",
+   "lib/motion-tokens.ts"
+  ],
+  "demo": null,
+  "use": [],
+  "avoid": [],
+  "install": "npx shadcn@latest add https://uiarc.dev/r/arc-motion-tokens.json"
+ },
+ {
+  "name": "arc-skill",
+  "title": "Arc agent skill",
+  "description": "An Agent Skill that teaches Claude Code and other agents how to choose, install, and compose Arc components, with rule files for design, components, motion, accessibility, composition, and responsive layout.",
+  "kind": "skill",
+  "categories": [
+   "ai"
+  ],
+  "tags": [],
+  "files": [],
+  "demo": null,
+  "use": [],
+  "avoid": [],
+  "install": "npx shadcn@latest add https://uiarc.dev/r/arc-skill.json"
+ },
+ {
+  "name": "avatar-group",
+  "title": "Avatar group",
+  "description": "Show a team or set of contributors in a small space.",
+  "kind": "component",
+  "categories": [
+   "data"
+  ],
+  "tags": [
+   "identity",
+   "people"
+  ],
+  "files": [
+   "avatar-group/avatar-group.tsx",
+   "avatar-group/avatar-group.module.css"
+  ],
+  "demo": "demos/avatar-group.tsx",
+  "use": [
+   "Showing who owns or edits something in a header, card, or table cell.",
+   "Collaborator stacks where people join and leave while the page is open.",
+   "Long member lists that should collapse into a +N chip."
+  ],
+  "avoid": [
+   "Use avatar for a single person.",
+   "Use a list or sortable-data-table when people need to see every name and role."
+  ],
+  "install": "npx shadcn@latest add https://uiarc.dev/r/avatar-group.json"
+ },
+ {
+  "name": "avatar",
+  "title": "Avatar",
+  "description": "A compact identity marker for people and accounts.",
+  "kind": "component",
+  "categories": [
+   "data"
+  ],
+  "tags": [
+   "identity",
+   "people"
+  ],
+  "files": [
+   "avatar/avatar.tsx",
+   "avatar/avatar.module.css",
+   "lib/arc-provider.tsx"
+  ],
+  "demo": "demos/avatar.tsx",
+  "use": [
+   "Showing one person next to their name, comment, or record.",
+   "Presence in a header or list, via the online or offline status dot.",
+   "Places where a photo may be missing and initials should stand in."
+  ],
+  "avoid": [
+   "Use avatar-group for several people with an overflow count.",
+   "Use user-menu when the avatar is the trigger for account actions."
+  ],
+  "install": "npx shadcn@latest add https://uiarc.dev/r/avatar.json"
+ },
+ {
+  "name": "badge",
+  "title": "Badge",
+  "description": "A small label for status, category, or metadata.",
+  "kind": "component",
+  "categories": [
+   "data"
+  ],
+  "tags": [
+   "label",
+   "status"
+  ],
+  "files": [
+   "badge/badge.tsx",
+   "badge/badge.module.css"
+  ],
+  "demo": "demos/badge.tsx",
+  "use": [
+   "Short statuses next to titles or in table cells, such as Live, Draft, or Failed.",
+   "Counts or states that change in place and should morph instead of jump.",
+   "Tagging a row with one tone plus an optional icon."
+  ],
+  "avoid": [
+   "Use alert or toast when the message needs a full sentence.",
+   "Use chip-group when people toggle the values.",
+   "Use stat-card for a headline number with a trend."
+  ],
+  "install": "npx shadcn@latest add https://uiarc.dev/r/badge.json"
+ },
+ {
+  "name": "bar-chart",
+  "title": "Bar chart",
+  "description": "Compare one measure across days and scrub any bar for its value.",
+  "kind": "component",
+  "categories": [
+   "data"
+  ],
+  "tags": [
+   "chart",
+   "bar",
+   "data"
+  ],
+  "files": [
+   "bar-chart/bar-chart.tsx",
+   "bar-chart/bar-chart.module.css"
+  ],
+  "demo": "demos/bar-chart.tsx",
+  "use": [
+   "One measure across days, weeks, or months, with an average line.",
+   "Charts with a range switch, where stable keys let bars morph between ranges."
+  ],
+  "avoid": [
+   "Use sparkline for a compact trend.",
+   "Use activity-heatmap for daily rhythm over a year."
+  ],
+  "install": "npx shadcn@latest add https://uiarc.dev/r/bar-chart.json"
+ },
+ {
+  "name": "billing-toggle",
+  "title": "Billing toggle",
+  "description": "A monthly and yearly switch with a savings badge and prices that roll to the new amount.",
+  "kind": "component",
+  "categories": [
+   "inputs"
+  ],
+  "tags": [
+   "inputs",
+   "new"
+  ],
+  "files": [
+   "billing-toggle/billing-toggle.tsx",
+   "billing-toggle/billing-toggle.module.css"
+  ],
+  "demo": "demos/billing-toggle.tsx",
+  "use": [
+   "The billing period switch at the top of a pricing page.",
+   "Any price display that should roll to a new amount when a period or plan changes, using BillingPrice.",
+   "A small plan picker with a savings note, such as yearly versus lifetime."
+  ],
+  "avoid": [
+   "Use segmented-control for switching views or filters with no pricing meaning.",
+   "Use radio-group when options need descriptions or a vertical layout.",
+   "Use switch for a single on or off setting."
+  ],
+  "install": "npx shadcn@latest add https://uiarc.dev/r/billing-toggle.json"
+ },
+ {
+  "name": "blog-grid",
+  "title": "Blog grid",
+  "description": "A blog index with a featured post, category filter, post cards, pagination and an in-place reader.",
+  "kind": "block",
+  "categories": [
+   "blocks"
+  ],
+  "tags": [],
+  "files": [
+   "blocks/blog-grid/blog-grid.tsx",
+   "blocks/blog-grid/blog-grid-data.ts",
+   "blocks/blog-grid/blog-grid.module.css"
+  ],
+  "demo": "demos/blog-grid.tsx",
+  "use": [
+   "A marketing site blog or journal index.",
+   "Resource hubs with a few categories and a featured story."
+  ],
+  "avoid": [
+   "Use changelog-page for release notes with versions.",
+   "Use a data table for large archives that need sorting and search."
+  ],
+  "install": "npx shadcn@latest add https://uiarc.dev/r/blog-grid.json"
+ },
+ {
+  "name": "bottom-sheet",
+  "title": "Bottom sheet",
+  "description": "A sheet that rests at a peek or full height and follows your finger.",
+  "kind": "component",
+  "categories": [
+   "disclosure"
+  ],
+  "tags": [
+   "overlay",
+   "gesture",
+   "motion"
+  ],
+  "files": [
+   "bottom-sheet/bottom-sheet.tsx",
+   "bottom-sheet/bottom-sheet.module.css"
+  ],
+  "demo": "demos/bottom-sheet.tsx",
+  "use": [
+   "Mobile-first secondary tasks such as details, filters, or share options.",
+   "Content that benefits from a peek height before expanding to nearly full screen.",
+   "Maps and media views where the sheet should be dragged between detents."
+  ],
+  "avoid": [
+   "Use dialog for interrupting decisions on any screen size.",
+   "Use drawer for side panels on wide desktop layouts.",
+   "Use popover for small anchored content that should not dim the page."
+  ],
+  "install": "npx shadcn@latest add https://uiarc.dev/r/bottom-sheet.json"
+ },
+ {
+  "name": "breadcrumb",
+  "title": "Breadcrumb",
+  "description": "Show where a page sits in a hierarchy.",
+  "kind": "component",
+  "categories": [
+   "disclosure"
+  ],
+  "tags": [
+   "navigation",
+   "wayfinding"
+  ],
+  "files": [
+   "breadcrumb/breadcrumb.tsx",
+   "breadcrumb/breadcrumb.module.css",
+   "lib/arc-provider.tsx"
+  ],
+  "demo": "demos/breadcrumb.tsx",
+  "use": [
+   "Showing where a page sits in a hierarchy, such as Workspace, Settings, Billing.",
+   "Client-side paths like a file browser, where crumbs call onClick instead of navigating.",
+   "Paths that grow as people drill in, where new crumbs should slide in."
+  ],
+  "avoid": [
+   "Use tree-view when people need to browse the whole hierarchy.",
+   "Use tabs for switching between sibling views.",
+   "Use pagination for moving through pages of a list."
+  ],
+  "install": "npx shadcn@latest add https://uiarc.dev/r/breadcrumb.json"
+ },
+ {
+  "name": "brush-chart",
+  "title": "Brush chart",
+  "description": "A dense time series with an overview strip: drag a window to zoom, resize it by its handles, and read events in place.",
+  "kind": "component",
+  "categories": [
+   "data"
+  ],
+  "tags": [
+   "data",
+   "chart",
+   "new"
+  ],
+  "files": [
+   "brush-chart/brush-chart.tsx",
+   "brush-chart/brush-chart.module.css"
+  ],
+  "demo": "demos/brush-chart.tsx",
+  "use": [
+   "Product analytics with a year or more of daily data.",
+   "Incident reviews where events need to be read against a metric.",
+   "Any chart where people ask to zoom into a stretch without losing context."
+  ],
+  "avoid": [
+   "Use line-chart for a few weeks of data or several series.",
+   "Use sparkline for a small inline trend without interaction.",
+   "Avoid it for data that dips below zero or needs a log scale."
+  ],
+  "install": "npx shadcn@latest add https://uiarc.dev/r/brush-chart.json"
+ },
+ {
+  "name": "button-group",
+  "title": "Button group",
+  "description": "Related actions joined into one surface with hairline dividers: a hover highlight glides between segments, the pressed one answers in place, and an attached menu can close the row.",
+  "kind": "component",
+  "categories": [
+   "actions"
+  ],
+  "tags": [
+   "action",
+   "group",
+   "toolbar",
+   "new"
+  ],
+  "files": [
+   "button-group/button-group.tsx",
+   "button-group/button-group.module.css"
+  ],
+  "demo": "demos/button-group.tsx",
+  "use": [
+   "A small set of related actions on the same object, shown together in a header, toolbar or card footer.",
+   "Compact tool clusters such as zoom out, the current level and zoom in, or stacked map controls.",
+   "A primary action row, such as Reply, Reply all and Forward on a message."
+  ],
+  "avoid": [
+   "Use toggle-group or segmented-control when the segments are options that stay selected.",
+   "Use split-button when there is one main action and a few variants of it.",
+   "Use separate buttons when the actions are unrelated or one of them is much more important than the rest.",
+   "Use tabs for switching between views."
+  ],
+  "install": "npx shadcn@latest add https://uiarc.dev/r/button-group.json"
+ },
+ {
+  "name": "button",
+  "title": "Button",
+  "description": "A clear, responsive action with quiet secondary states.",
+  "kind": "component",
+  "categories": [
+   "actions"
+  ],
+  "tags": [
+   "action",
+   "control"
+  ],
+  "files": [
+   "button/button.tsx",
+   "button/button.module.css"
+  ],
+  "demo": "demos/button.tsx",
+  "use": [
+   "Any single action on a page, form, or dialog, such as Save, Continue, or Cancel.",
+   "Actions whose label changes in place, like Save to Saved, where the width should spring instead of jump.",
+   "Short async work where a spinner on the button is enough feedback, via loading."
+  ],
+  "avoid": [
+   "Use action-button when the button itself should show pending and success states after an async commit.",
+   "Use split-button when one default action has two to five close variants.",
+   "Use hold-to-confirm for destructive actions that need more than a single click."
+  ],
+  "install": "npx shadcn@latest add https://uiarc.dev/r/button.json"
+ },
+ {
+  "name": "calendar",
+  "title": "Calendar",
+  "description": "Browse dates in a clear, compact month view.",
+  "kind": "component",
+  "categories": [
+   "inputs"
+  ],
+  "tags": [
+   "date",
+   "field"
+  ],
+  "files": [
+   "calendar/calendar.tsx",
+   "lib/use-today.ts",
+   "calendar/calendar.module.css"
+  ],
+  "demo": "demos/calendar.tsx",
+  "use": [
+   "Inline date picking where the month should stay visible, such as booking pages.",
+   "Picking one date with blocked days via minDate, maxDate, and disabledDates."
+  ],
+  "avoid": [
+   "Use date-picker for a form field that opens a calendar popover.",
+   "Use time-picker for times of day.",
+   "Use booking-pill for a full compact booking flow."
+  ],
+  "install": "npx shadcn@latest add https://uiarc.dev/r/calendar.json"
+ },
+ {
+  "name": "card-stack",
+  "title": "Card stack",
+  "description": "Review a deck one card at a time, with a throw and an undo.",
+  "kind": "component",
+  "categories": [
+   "data"
+  ],
+  "tags": [
+   "gesture",
+   "motion",
+   "triage"
+  ],
+  "files": [
+   "card-stack/card-stack.tsx",
+   "card-stack/card-stack.module.css"
+  ],
+  "demo": "demos/card-stack.tsx",
+  "use": [
+   "One-by-one triage such as shortlisting, review queues, or onboarding picks.",
+   "Decks where swiping left or right should be undoable."
+  ],
+  "avoid": [
+   "Use a list or sortable-data-table when people compare items side by side.",
+   "Use carousel to browse items without deciding.",
+   "Use swipe-actions for quick actions on rows in a list."
+  ],
+  "install": "npx shadcn@latest add https://uiarc.dev/r/card-stack.json"
+ },
+ {
+  "name": "card",
+  "title": "Card",
+  "description": "A contained group of related content and actions.",
+  "kind": "component",
+  "categories": [
+   "data"
+  ],
+  "tags": [
+   "surface",
+   "layout"
+  ],
+  "files": [
+   "card/card.tsx",
+   "card/card.module.css"
+  ],
+  "demo": "demos/card.tsx",
+  "use": [
+   "Browsable items in a grid, such as projects, listings, or posts.",
+   "Items that should open into a larger quick look dialog without leaving the page, via details.",
+   "Content with media, an owner byline, and a status line that updates in place."
+  ],
+  "avoid": [
+   "Use expandable-card for inline disclosure without a dialog.",
+   "Use stat-card or metric-card for numbers.",
+   "Use dialog when the content has no card to grow from."
+  ],
+  "install": "npx shadcn@latest add https://uiarc.dev/r/card.json"
+ },
+ {
+  "name": "carousel",
+  "title": "Carousel",
+  "description": "Browse a row of slides by dragging, flicking, or arrowing through them.",
+  "kind": "component",
+  "categories": [
+   "data"
+  ],
+  "tags": [
+   "carousel",
+   "slider",
+   "gallery"
+  ],
+  "files": [
+   "carousel/carousel.tsx",
+   "carousel/carousel.module.css"
+  ],
+  "demo": "demos/carousel.tsx",
+  "use": [
+   "A short set of peer items where neighbouring slides hint at more.",
+   "Galleries browsed by drag, flick, trackpad swipe, or keys.",
+   "Rotating highlights with a visible pause control, via interval."
+  ],
+  "avoid": [
+   "Use cover-flow for a showpiece gallery and photo-grid to show everything at once.",
+   "Use card-stack for deciding on items one at a time."
+  ],
+  "install": "npx shadcn@latest add https://uiarc.dev/r/carousel.json"
+ },
+ {
+  "name": "changelog-feed",
+  "title": "Changelog feed",
+  "description": "Release notes you can filter, open in place, and scroll through month by month.",
+  "kind": "block",
+  "categories": [
+   "blocks"
+  ],
+  "tags": [],
+  "files": [
+   "blocks/changelog-feed/changelog-feed.tsx",
+   "blocks/changelog-feed/changelog-feed.module.css",
+   "lib/media.ts"
+  ],
+  "demo": "demos/changelog-feed.tsx",
+  "use": [
+   "A product changelog or release notes page grouped by month.",
+   "Release notes with type filters such as features, fixes, and improvements.",
+   "Changelogs that should offer an email subscribe action in the header."
+  ],
+  "avoid": [
+   "Use timeline for a short vertical list of events without filters.",
+   "Use accordion for plain expandable content that is not dated."
+  ],
+  "install": "npx shadcn@latest add https://uiarc.dev/r/changelog-feed.json"
+ },
+ {
+  "name": "chat-thread",
+  "title": "Chat thread",
+  "description": "A chat thread with grouped messages, reactions, read receipts, typing, and a composer with attachments.",
+  "kind": "component",
+  "categories": [
+   "data"
+  ],
+  "tags": [
+   "data",
+   "new"
+  ],
+  "files": [
+   "chat-thread/chat-thread.tsx",
+   "chat-thread/chat-thread.module.css"
+  ],
+  "demo": "demos/chat-thread.tsx",
+  "use": [
+   "Customer support or in-app messaging with read receipts and typing state.",
+   "Team or DM threads that need reactions and image or file attachments.",
+   "Comment threads on an object where replies arrive live."
+  ],
+  "avoid": [
+   "Use log-stream for streaming system or build output.",
+   "Use timeline for an activity history rather than a two-way conversation.",
+   "Use textarea or mention-input when you only need the input box inside your own layout."
+  ],
+  "install": "npx shadcn@latest add https://uiarc.dev/r/chat-thread.json"
+ },
+ {
+  "name": "checkbox",
+  "title": "Checkbox",
+  "description": "A binary choice with a precise, legible state.",
+  "kind": "component",
+  "categories": [
+   "inputs"
+  ],
+  "tags": [
+   "field",
+   "form"
+  ],
+  "files": [
+   "checkbox/checkbox.tsx",
+   "checkbox/checkbox.module.css"
+  ],
+  "demo": "demos/checkbox.tsx",
+  "use": [
+   "Independent on and off choices confirmed by a submit, such as accepting terms.",
+   "Parent rows that show a partial selection through the indeterminate state."
+  ],
+  "avoid": [
+   "Use switch for settings that apply immediately.",
+   "Use radio-group when only one option can be chosen.",
+   "Use chip-group for filter facets people toggle often."
+  ],
+  "install": "npx shadcn@latest add https://uiarc.dev/r/checkbox.json"
+ },
+ {
+  "name": "chip-group",
+  "title": "Chip group",
+  "description": "Filter by a few facets with chips that morph as you pick them.",
+  "kind": "component",
+  "categories": [
+   "inputs"
+  ],
+  "tags": [
+   "chips",
+   "filter",
+   "toggle"
+  ],
+  "files": [
+   "chip-group/chip-group.tsx",
+   "chip-group/chip-group.module.css"
+  ],
+  "demo": "demos/chip-group.tsx",
+  "use": [
+   "Facet filters people toggle often, like topics or categories.",
+   "Single clearable choices shown as chips, via multiple={false}.",
+   "Long option sets folded behind a +N more chip with maxVisible."
+  ],
+  "avoid": [
+   "Use multi-select when space is tight.",
+   "Use checkbox in forms.",
+   "Use segmented-control for one choice among a few views."
+  ],
+  "install": "npx shadcn@latest add https://uiarc.dev/r/chip-group.json"
+ },
+ {
+  "name": "code-block",
+  "title": "Code block",
+  "description": "Present code with legible hierarchy and copy access.",
+  "kind": "component",
+  "categories": [
+   "data"
+  ],
+  "tags": [
+   "content",
+   "developer"
+  ],
+  "files": [
+   "code-block/code-block.tsx",
+   "code-block/code-block.module.css"
+  ],
+  "demo": "demos/code-block.tsx",
+  "use": [
+   "Documentation snippets and install commands with a copy button.",
+   "Long files that should collapse to a few lines with Show all, via maxLines."
+  ],
+  "avoid": [
+   "Use copy-button alone for a one-line value such as an API key.",
+   "Use text-stream for code arriving from an AI response in progress.",
+   "Use a full highlighter library when you need many languages."
+  ],
+  "install": "npx shadcn@latest add https://uiarc.dev/r/code-block.json"
+ },
+ {
+  "name": "color-picker",
+  "title": "Color picker",
+  "description": "A swatch that grows into a picker with format morphing, eyedropper, saved swatches, and contrast readout.",
+  "kind": "component",
+  "categories": [
+   "inputs"
+  ],
+  "tags": [
+   "inputs",
+   "new"
+  ],
+  "files": [
+   "color-picker/color-picker.tsx",
+   "color-picker/color-picker.module.css"
+  ],
+  "demo": "demos/color-picker.tsx",
+  "use": [
+   "Theme editors and brand settings where users choose an exact color.",
+   "Design tools that need hex, RGB, HSL, and OKLCH input plus opacity.",
+   "Any color choice where contrast against a background should be visible while picking."
+  ],
+  "avoid": [
+   "Use segmented-control or radio-group when the choice is between a few fixed colors.",
+   "Use input for a plain hex field with no visual picking.",
+   "Use chip-group for tagging items with a small preset palette."
+  ],
+  "install": "npx shadcn@latest add https://uiarc.dev/r/color-picker.json"
+ },
+ {
+  "name": "combobox",
+  "title": "Combobox",
+  "description": "Search and select from a list without leaving the field.",
+  "kind": "component",
+  "categories": [
+   "inputs"
+  ],
+  "tags": [
+   "field",
+   "search"
+  ],
+  "files": [
+   "combobox/combobox.tsx",
+   "combobox/combobox.module.css"
+  ],
+  "demo": "demos/combobox.tsx",
+  "use": [
+   "Single-choice fields with long lists, such as time zones or countries.",
+   "Lists where people know the name and want to type, including aliases via keywords."
+  ],
+  "avoid": [
+   "Use select for a short list where typing adds nothing.",
+   "Use multi-select when several values can be chosen.",
+   "Use expanding-search when the search navigates instead of setting a value."
+  ],
+  "install": "npx shadcn@latest add https://uiarc.dev/r/combobox.json"
+ },
+ {
+  "name": "command-palette",
+  "title": "Command palette",
+  "description": "A complete keyboard driven action surface with search, grouped results, and shortcuts.",
+  "kind": "block",
+  "categories": [
+   "blocks"
+  ],
+  "tags": [],
+  "files": [
+   "command-palette/command-palette.tsx",
+   "command-palette/command-palette.module.css"
+  ],
+  "demo": "demos/command-palette.tsx",
+  "use": [
+   "App-wide command search opened with Cmd or Ctrl plus K.",
+   "Jumping to pages, creating items, and running actions from one input.",
+   "Inline search panels that group results with shortcuts."
+  ],
+  "avoid": [
+   "Use combobox to pick a value inside a form.",
+   "Use dropdown-menu for a short list of actions.",
+   "Use expanding-search or search-field to search page content."
+  ],
+  "install": "npx shadcn@latest add https://uiarc.dev/r/command-palette.json"
+ },
+ {
+  "name": "comment-thread",
+  "title": "Comment thread",
+  "description": "Threaded comments with replies, reactions, mentions, inline edit, and resolve.",
+  "kind": "component",
+  "categories": [
+   "data"
+  ],
+  "tags": [
+   "data",
+   "new"
+  ],
+  "files": [
+   "comment-thread/comment-thread.tsx",
+   "comment-thread/comment-thread.module.css"
+  ],
+  "demo": "demos/comment-thread.tsx",
+  "use": [
+   "Review threads on documents, designs, tickets, or pull requests.",
+   "Discussions that need replies, reactions, mentions, and a resolved state.",
+   "Sidebars of feedback attached to one object."
+  ],
+  "avoid": [
+   "Use chat-thread for real-time back-and-forth conversation.",
+   "Use ai-chat for assistant conversations with streaming replies.",
+   "Use mention-input alone when you only need a composer."
+  ],
+  "install": "npx shadcn@latest add https://uiarc.dev/r/comment-thread.json"
+ },
+ {
+  "name": "comparison-table",
+  "title": "Comparison table",
+  "description": "An us versus them table with a sticky header, a highlighted column, and a stacked phone view.",
+  "kind": "block",
+  "categories": [
+   "blocks"
+  ],
+  "tags": [],
+  "files": [
+   "blocks/comparison-table/comparison-table.tsx",
+   "blocks/comparison-table/comparison-table-data.ts",
+   "blocks/comparison-table/comparison-table.module.css"
+  ],
+  "demo": "demos/comparison-table.tsx",
+  "use": [
+   "Showing how your product stacks up against named alternatives.",
+   "Feature matrices with three to five columns and grouped rows."
+  ],
+  "avoid": [
+   "Use plan-comparison to compare your own pricing tiers.",
+   "Use a sortable data table for large datasets."
+  ],
+  "install": "npx shadcn@latest add https://uiarc.dev/r/comparison-table.json"
+ },
+ {
+  "name": "confirm-morph",
+  "title": "Confirm morph",
+  "description": "A destructive button that morphs into an inline confirmation, a spinner, and a result with undo.",
+  "kind": "component",
+  "categories": [
+   "actions"
+  ],
+  "tags": [
+   "actions",
+   "new"
+  ],
+  "files": [
+   "confirm-morph/confirm-morph.tsx",
+   "confirm-morph/confirm-morph.module.css"
+  ],
+  "demo": "demos/confirm-morph.tsx",
+  "use": [
+   "Deleting a selection in a table or file list, right where the button sits.",
+   "Revoking access, removing a member, or discarding a draft.",
+   "Actions that should offer Undo in place after they finish."
+  ],
+  "avoid": [
+   "Use dialog when the consequence needs more than one line, or when typing a name to confirm is required.",
+   "Use action-button for safe async actions that need no question.",
+   "Use hold-to-confirm when an accidental tap must be nearly impossible."
+  ],
+  "install": "npx shadcn@latest add https://uiarc.dev/r/confirm-morph.json"
+ },
+ {
+  "name": "contact-section",
+  "title": "Contact section",
+  "description": "A validated contact form that morphs into a confirmation, support channels, and office cards with local times.",
+  "kind": "block",
+  "categories": [
+   "blocks"
+  ],
+  "tags": [],
+  "files": [
+   "blocks/contact-section/contact-section.tsx",
+   "blocks/contact-section/contact-section.module.css",
+   "lib/media.ts"
+  ],
+  "demo": "demos/contact-section.tsx",
+  "use": [
+   "Contact pages and sections on marketing sites.",
+   "Sales or support pages that list several channels with response times.",
+   "Companies with offices in several time zones."
+  ],
+  "avoid": [
+   "Use support-widget for an in-app help launcher.",
+   "Use signup-form or login blocks for account flows."
+  ],
+  "install": "npx shadcn@latest add https://uiarc.dev/r/contact-section.json"
+ },
+ {
+  "name": "context-menu",
+  "title": "Context menu",
+  "description": "Secondary actions kept close to the selected object.",
+  "kind": "component",
+  "categories": [
+   "actions"
+  ],
+  "tags": [
+   "menu",
+   "action"
+  ],
+  "files": [
+   "context-menu/context-menu.tsx",
+   "context-menu/context-menu.module.css"
+  ],
+  "demo": "demos/context-menu.tsx",
+  "use": [
+   "Secondary actions on a file, card, or row where a visible menu button would add clutter.",
+   "Desktop-style right-click menus that also open from the keyboard with Shift+F10 or the ContextMenu key.",
+   "Short flat lists of item actions with one destructive option."
+  ],
+  "avoid": [
+   "Use dropdown-menu when the actions deserve a visible trigger.",
+   "Use swipe-actions for touch-first lists like an inbox.",
+   "Avoid it on targets that need their own click action, since a plain click on the target also opens the menu."
+  ],
+  "install": "npx shadcn@latest add https://uiarc.dev/r/context-menu.json"
+ },
+ {
+  "name": "copy-button",
+  "title": "Copy button",
+  "description": "Copy a value with immediate confirmation.",
+  "kind": "component",
+  "categories": [
+   "actions"
+  ],
+  "tags": [
+   "action",
+   "utility"
+  ],
+  "files": [
+   "copy-button/copy-button.tsx",
+   "copy-button/copy-button.module.css",
+   "lib/use-copy-feedback.ts"
+  ],
+  "demo": "demos/copy-button.tsx",
+  "use": [
+   "Next to API keys, install commands, links, or code snippets.",
+   "Icon-only copy controls in dense rows, with an accessible label.",
+   "Any copy action that should confirm Copied or Could not copy in place."
+  ],
+  "avoid": [
+   "Use split-button when copying has alternatives, such as Copy link and Copy as Markdown.",
+   "Use code-block for full code samples, which include their own copy control."
+  ],
+  "install": "npx shadcn@latest add https://uiarc.dev/r/copy-button.json"
+ },
+ {
+  "name": "countdown",
+  "title": "Countdown",
+  "description": "A launch countdown with rolling digits that morphs into a live state at zero.",
+  "kind": "component",
+  "categories": [
+   "feedback"
+  ],
+  "tags": [
+   "feedback",
+   "new"
+  ],
+  "files": [
+   "countdown/countdown.tsx",
+   "countdown/countdown.module.css"
+  ],
+  "demo": "demos/countdown.tsx",
+  "use": [
+   "A launch page or event hero counting to a keynote.",
+   "A compact deadline pill in a table row or banner.",
+   "Sale or registration windows that should flip to a Live now state on their own."
+  ],
+  "avoid": [
+   "Use stopwatch for time counting up from a start.",
+   "Use announcement-bar when the countdown sits inside a site-wide banner with a call to action."
+  ],
+  "install": "npx shadcn@latest add https://uiarc.dev/r/countdown.json"
+ },
+ {
+  "name": "cta-section",
+  "title": "CTA section",
+  "description": "A call to action as a centered closing section, a split beside a setup card that completes itself, or a dismissible banner.",
+  "kind": "block",
+  "categories": [
+   "blocks"
+  ],
+  "tags": [],
+  "files": [
+   "blocks/cta-section/cta-section.tsx",
+   "blocks/cta-section/cta-section-data.ts",
+   "lib/media.ts",
+   "blocks/cta-section/cta-section.module.css"
+  ],
+  "demo": "demos/cta-section.tsx",
+  "use": [
+   "The last section of a landing page, asking for a trial or demo.",
+   "An in-page prompt beside a product visual that shows the outcome.",
+   "A slim promotional banner above content."
+  ],
+  "avoid": [
+   "The first screen of a page. Use Hero section.",
+   "Collecting an email. Use Newsletter signup.",
+   "A persistent site-wide notice. Use Announcement bar."
+  ],
+  "install": "npx shadcn@latest add https://uiarc.dev/r/cta-section.json"
+ },
+ {
+  "name": "date-picker",
+  "title": "Date picker",
+  "description": "Choose a date without losing context.",
+  "kind": "component",
+  "categories": [
+   "inputs"
+  ],
+  "tags": [
+   "date",
+   "field"
+  ],
+  "files": [
+   "date-picker/date-picker.tsx",
+   "date-picker/date-picker.module.css"
+  ],
+  "demo": "demos/date-picker.tsx",
+  "use": [
+   "A date field in a form, such as a start or due date.",
+   "Dates with limits or blocked days, shown in a locale format."
+  ],
+  "avoid": [
+   "Use calendar inline when the grid should stay visible.",
+   "Use time-picker for times, and pair it with this for a full timestamp."
+  ],
+  "install": "npx shadcn@latest add https://uiarc.dev/r/date-picker.json"
+ },
+ {
+  "name": "date-range-picker",
+  "title": "Date range picker",
+  "description": "A range picker that grows from its trigger into two months with presets and a stretching range highlight.",
+  "kind": "component",
+  "categories": [
+   "inputs"
+  ],
+  "tags": [
+   "inputs",
+   "new"
+  ],
+  "files": [
+   "date-range-picker/date-range-picker.tsx",
+   "lib/use-today.ts",
+   "date-range-picker/date-range-picker.module.css"
+  ],
+  "demo": "demos/date-range-picker.tsx",
+  "use": [
+   "Analytics and reporting filters that need presets like Last 7 days or This quarter.",
+   "Booking or leave requests where a start and end day are picked together.",
+   "Toolbars where the picker must stay compact until opened."
+  ],
+  "avoid": [
+   "Use date-picker for a single date.",
+   "Use calendar when the month should stay visible on the page.",
+   "Use time-picker when the user chooses a time of day rather than days."
+  ],
+  "install": "npx shadcn@latest add https://uiarc.dev/r/date-range-picker.json"
+ },
+ {
+  "name": "dialog",
+  "title": "Dialog",
+  "description": "A focused surface for decisions that need attention.",
+  "kind": "component",
+  "categories": [
+   "disclosure"
+  ],
+  "tags": [
+   "modal",
+   "overlay"
+  ],
+  "files": [
+   "dialog/dialog.tsx",
+   "dialog/dialog.module.css"
+  ],
+  "demo": "demos/dialog.tsx",
+  "use": [
+   "Confirmations and decisions that must interrupt, such as Delete project.",
+   "Short forms like rename or invite that fit in one focused panel.",
+   "Flows where the dialog title changes between steps and should crossfade in place."
+  ],
+  "avoid": [
+   "Use drawer for long forms or detail panels that keep the page in context.",
+   "Use bottom-sheet for mobile-first secondary tasks with snap heights.",
+   "Use popover for light, non-modal content anchored to a trigger."
+  ],
+  "install": "npx shadcn@latest add https://uiarc.dev/r/dialog.json"
+ },
+ {
+  "name": "donut-chart",
+  "title": "Donut chart",
+  "description": "A donut whose arcs morph between datasets, with the active value rolling into the center.",
+  "kind": "component",
+  "categories": [
+   "data"
+  ],
+  "tags": [
+   "data",
+   "new"
+  ],
+  "files": [
+   "donut-chart/donut-chart.tsx",
+   "donut-chart/donut-chart.module.css"
+  ],
+  "demo": "demos/donut-chart.tsx",
+  "use": [
+   "Traffic by source, spend by category, or storage by file type.",
+   "A dashboard card where the total and one highlighted share matter most.",
+   "Switching between datasets, such as this month and last month, with the same categories."
+  ],
+  "avoid": [
+   "Use bar-chart when precise comparison between parts matters or there are many parts.",
+   "Use gauge or usage-meter for a single value against a limit.",
+   "Use line-chart for change over time."
+  ],
+  "install": "npx shadcn@latest add https://uiarc.dev/r/donut-chart.json"
+ },
+ {
+  "name": "drawer",
+  "title": "Drawer",
+  "description": "A temporary side surface for focused work.",
+  "kind": "component",
+  "categories": [
+   "disclosure"
+  ],
+  "tags": [
+   "overlay",
+   "surface"
+  ],
+  "files": [
+   "drawer/drawer.tsx",
+   "drawer/drawer.module.css"
+  ],
+  "demo": "demos/drawer.tsx",
+  "use": [
+   "Side panels for filters, settings, or record details that keep the page in context.",
+   "Forms that are too long for a dialog but should not leave the current view.",
+   "Panels from any edge, via side, with drag-to-dismiss on the header."
+  ],
+  "avoid": [
+   "Use dialog for short decisions and confirmations.",
+   "Use bottom-sheet for mobile-first sheets with snap points.",
+   "Use popover for small anchored content that does not need a modal overlay."
+  ],
+  "install": "npx shadcn@latest add https://uiarc.dev/r/drawer.json"
+ },
+ {
+  "name": "dropdown-menu",
+  "title": "Dropdown menu",
+  "description": "A focused list of actions anchored to a trigger.",
+  "kind": "component",
+  "categories": [
+   "actions"
+  ],
+  "tags": [
+   "menu",
+   "action"
+  ],
+  "files": [
+   "dropdown-menu/dropdown-menu.tsx",
+   "dropdown-menu/dropdown-menu.module.css"
+  ],
+  "demo": "demos/dropdown-menu.tsx",
+  "use": [
+   "A list of commands behind a labelled button, such as Rename, Duplicate, and Delete.",
+   "Row or card actions where a visible trigger is clearer than right-click.",
+   "Short grouped menus with separators and one destructive item at the end."
+  ],
+  "avoid": [
+   "Use split-button when one command is the default.",
+   "Use context-menu for right-click actions on content.",
+   "Use user-menu for the account menu, and command-palette for searching many commands."
+  ],
+  "install": "npx shadcn@latest add https://uiarc.dev/r/dropdown-menu.json"
+ },
+ {
+  "name": "elastic-slider",
+  "title": "Elastic slider",
+  "description": "A slider that stretches like rubber past its ends, with a swaying value tag and detents the thumb clicks into.",
+  "kind": "component",
+  "categories": [
+   "inputs"
+  ],
+  "tags": [
+   "inputs",
+   "new"
+  ],
+  "files": [
+   "elastic-slider/elastic-slider.tsx",
+   "elastic-slider/elastic-slider.module.css"
+  ],
+  "demo": "demos/elastic-slider.tsx",
+  "use": [
+   "A single setting people drag to taste, such as volume, brightness, or opacity.",
+   "Media and creative tools where a physical, tactile control fits the product.",
+   "Values with a few common stops that should feel like detents."
+  ],
+  "avoid": [
+   "Use slider for dense forms and settings pages where a quiet control fits better.",
+   "Use range-histogram-slider to pick a min and max over data.",
+   "Use number-field or ruler-slider when the exact number matters more than the feel."
+  ],
+  "install": "npx shadcn@latest add https://uiarc.dev/r/elastic-slider.json"
+ },
+ {
+  "name": "empty-state",
+  "title": "Empty state",
+  "description": "A useful next step when there is nothing to show yet.",
+  "kind": "component",
+  "categories": [
+   "data"
+  ],
+  "tags": [
+   "data",
+   "guidance"
+  ],
+  "files": [
+   "empty-state/empty-state.tsx",
+   "empty-state/empty-state.module.css"
+  ],
+  "demo": "demos/empty-state.tsx",
+  "use": [
+   "Empty lists, zero search results, and first-run views.",
+   "A view that should morph between states, such as empty and success, by changing props."
+  ],
+  "avoid": [
+   "Use skeleton while data is still loading.",
+   "Use alert for errors inside a page that still has content.",
+   "Use onboarding-checklist when first-run needs several steps."
+  ],
+  "install": "npx shadcn@latest add https://uiarc.dev/r/empty-state.json"
+ },
+ {
+  "name": "empty-states",
+  "title": "Empty states",
+  "description": "Four empty states in one illustration whose shapes morph between scenes as you switch tabs.",
+  "kind": "block",
+  "categories": [
+   "blocks"
+  ],
+  "tags": [],
+  "files": [
+   "blocks/empty-states/empty-states.tsx",
+   "blocks/empty-states/empty-states.module.css",
+   "blocks/empty-states/empty-states-art.ts"
+  ],
+  "demo": "demos/empty-states.tsx",
+  "use": [
+   "A reference for no results, offline, inbox zero, and 404 moments with one shared illustration style.",
+   "Extracting one scene as a richer empty state for a key screen."
+  ],
+  "avoid": [
+   "Use empty-state for a simple empty state with an icon, text, and action.",
+   "Use onboarding-illustration for first-run screens that teach the product.",
+   "Use skeleton while content is still loading."
+  ],
+  "install": "npx shadcn@latest add https://uiarc.dev/r/empty-states.json"
+ },
+ {
+  "name": "expandable-card",
+  "title": "Expandable card",
+  "description": "Give a dense card more room when requested.",
+  "kind": "component",
+  "categories": [
+   "disclosure"
+  ],
+  "tags": [
+   "disclosure",
+   "layout"
+  ],
+  "files": [
+   "expandable-card/expandable-card.tsx",
+   "expandable-card/expandable-card.module.css"
+  ],
+  "demo": "demos/expandable-card.tsx",
+  "use": [
+   "A single summary card with optional details, like a plan, order, or log entry.",
+   "Cards whose summary line updates and should roll changed words in place."
+  ],
+  "avoid": [
+   "Use accordion for a list of mutually exclusive sections.",
+   "Use card when there is nothing to reveal.",
+   "Use card-stack for browsing several cards in one spot."
+  ],
+  "install": "npx shadcn@latest add https://uiarc.dev/r/expandable-card.json"
+ },
+ {
+  "name": "expanding-button-group",
+  "title": "Expanding button group",
+  "description": "Icon buttons in a compact group: the one you point at or focus grows to reveal its label while its neighbours slide aside, and an action confirms in place.",
+  "kind": "component",
+  "categories": [
+   "actions"
+  ],
+  "tags": [
+   "action",
+   "group",
+   "toolbar",
+   "new"
+  ],
+  "files": [
+   "expanding-button-group/expanding-button-group.tsx",
+   "expanding-button-group/expanding-button-group.module.css"
+  ],
+  "demo": "demos/expanding-button-group.tsx",
+  "use": [
+   "A compact action bar on a message, file, or card where space is tight but labels should be one glance away.",
+   "Toolbars where actions finish in place and deserve a confirmation without a toast, such as Archive or Copy link."
+  ],
+  "avoid": [
+   "Use toggle-group or segmented-control when the buttons select a value instead of running an action.",
+   "Use plain labelled buttons when there are only one or two actions and space allows; hiding labels then costs clarity.",
+   "Use a dropdown menu for more than about six actions, or for actions that need descriptions."
+  ],
+  "install": "npx shadcn@latest add https://uiarc.dev/r/expanding-button-group.json"
+ },
+ {
+  "name": "expanding-search",
+  "title": "Expanding search",
+  "description": "An icon that morphs into a search field with results beneath it.",
+  "kind": "component",
+  "categories": [
+   "inputs"
+  ],
+  "tags": [
+   "search",
+   "field",
+   "motion"
+  ],
+  "files": [
+   "expanding-search/expanding-search.tsx",
+   "expanding-search/expanding-search.module.css"
+  ],
+  "demo": "demos/expanding-search.tsx",
+  "use": [
+   "Header or toolbar search where a full field would crowd the layout.",
+   "Quick navigation across local items with grouped results and recent suggestions."
+  ],
+  "avoid": [
+   "Use search-field to filter a visible list in place.",
+   "Use combobox to set a form value.",
+   "Use command-palette for searching commands across the app."
+  ],
+  "install": "npx shadcn@latest add https://uiarc.dev/r/expanding-search.json"
+ },
+ {
+  "name": "faq-section",
+  "title": "FAQ section",
+  "description": "FAQs as an accordion, a topic rail, or a searchable list that highlights matches.",
+  "kind": "block",
+  "categories": [
+   "blocks"
+  ],
+  "tags": [],
+  "files": [
+   "blocks/faq-section/faq-section.tsx",
+   "blocks/faq-section/faq-section.module.css"
+  ],
+  "demo": "demos/faq-section.tsx",
+  "use": [
+   "FAQ sections on pricing, product, and support pages.",
+   "Long FAQs that benefit from categories or live search."
+  ],
+  "avoid": [
+   "Use accordion for generic collapsible content that is not a question list.",
+   "Use a docs page when answers need code, images, or long structure."
+  ],
+  "install": "npx shadcn@latest add https://uiarc.dev/r/faq-section.json"
+ },
+ {
+  "name": "file-dropzone",
+  "title": "File dropzone",
+  "description": "A generous target for dropping one or more files.",
+  "kind": "component",
+  "categories": [
+   "inputs"
+  ],
+  "tags": [
+   "field",
+   "files"
+  ],
+  "files": [
+   "file-dropzone/file-dropzone.tsx",
+   "file-dropzone/file-dropzone.module.css"
+  ],
+  "demo": "demos/file-dropzone.tsx",
+  "use": [
+   "Attachments and uploads with drag and drop plus a file picker.",
+   "Uploads that need per-file progress, retry, and cancel through onUpload."
+  ],
+  "avoid": [
+   "Use input with type file only when a native picker with no list is enough.",
+   "Use empty-state when the drop area is the only thing on an empty page and needs a larger call to action."
+  ],
+  "install": "npx shadcn@latest add https://uiarc.dev/r/file-dropzone.json"
+ },
+ {
+  "name": "file-upload",
+  "title": "File upload",
+  "description": "A complete file selection flow with constraints, progress, and error feedback.",
+  "kind": "block",
+  "categories": [
+   "blocks"
+  ],
+  "tags": [],
+  "files": [
+   "file-upload/file-upload.tsx",
+   "file-upload/file-upload.module.css"
+  ],
+  "demo": "demos/file-upload.tsx",
+  "use": [
+   "Uploading files with per-file progress, retry, and remove.",
+   "Attachments that must be validated by type and size before upload.",
+   "Uploads that should abort when a file is removed, via the AbortSignal."
+  ],
+  "avoid": [
+   "Use file-dropzone when you only need to pick files without upload state.",
+   "Use import-mapper when uploaded data needs column mapping."
+  ],
+  "install": "npx shadcn@latest add https://uiarc.dev/r/file-upload.json"
+ },
+ {
+  "name": "filter-toolbar",
+  "title": "Filter toolbar",
+  "description": "Keep collection filters close and easy to reset.",
+  "kind": "component",
+  "categories": [
+   "data"
+  ],
+  "tags": [
+   "data",
+   "filter"
+  ],
+  "files": [
+   "filter-toolbar/filter-toolbar.tsx",
+   "filter-toolbar/filter-toolbar.module.css"
+  ],
+  "demo": "demos/filter-toolbar.tsx",
+  "use": [
+   "Faceted filtering above tables and lists, with removable chips.",
+   "Adding filters through a two step field then value menu.",
+   "Views that pair with sortable-data-table and pagination for a full list page."
+  ],
+  "avoid": [
+   "Use chip-group for a fixed set of toggles.",
+   "Use search-field for free text search.",
+   "Use multi-select when one field takes several values in a form."
+  ],
+  "install": "npx shadcn@latest add https://uiarc.dev/r/filter-toolbar.json"
+ },
+ {
+  "name": "floating-button-group",
+  "title": "Floating button group",
+  "description": "Separate soft buttons in a quiet tray, with one shared highlight that morphs from button to button as you move, and a pressed state that settles in place.",
+  "kind": "component",
+  "categories": [
+   "actions"
+  ],
+  "tags": [
+   "action",
+   "group",
+   "toolbar",
+   "new"
+  ],
+  "files": [
+   "floating-button-group/floating-button-group.tsx",
+   "floating-button-group/floating-button-group.module.css"
+  ],
+  "demo": "demos/floating-button-group.tsx",
+  "use": [
+   "A floating editor or canvas toolbar with undo, redo, share and present.",
+   "A selection toolbar that appears over text or objects.",
+   "A vertical tools rail with zoom and insert actions."
+  ],
+  "avoid": [
+   "Use toggle-group for formatting toggles or alignment where the choice stays pressed.",
+   "Use segmented-control to switch between views.",
+   "Use split-button when there is one main action with a few alternatives.",
+   "Use a dropdown menu when there are more actions than fit in one row."
+  ],
+  "install": "npx shadcn@latest add https://uiarc.dev/r/floating-button-group.json"
+ },
+ {
+  "name": "gauge",
+  "title": "Gauge",
+  "description": "Show a value against a known range.",
+  "kind": "component",
+  "categories": [
+   "data"
+  ],
+  "tags": [
+   "data",
+   "chart"
+  ],
+  "files": [
+   "gauge/gauge.tsx",
+   "gauge/gauge.module.css"
+  ],
+  "demo": "demos/gauge.tsx",
+  "use": [
+   "One value against a known range, such as disk quota or health score.",
+   "Values with labelled bands, like Healthy, Filling up, and Critical."
+  ],
+  "avoid": [
+   "Use progress for task completion.",
+   "Use usage-meter for plan limits and activity-rings for several goals at once."
+  ],
+  "install": "npx shadcn@latest add https://uiarc.dev/r/gauge.json"
+ },
+ {
+  "name": "hero-section",
+  "title": "Hero section",
+  "description": "Three full screen SaaS heroes: a live dashboard rising from the bottom edge over a drifting mesh, a workflow graph that routes sample events node by node, and editorial type over a mesh gradient.",
+  "kind": "block",
+  "categories": [
+   "blocks"
+  ],
+  "tags": [],
+  "files": [
+   "blocks/hero-section/hero-section.tsx",
+   "blocks/hero-section/hero-section.module.css",
+   "blocks/hero-section/hero-content.tsx",
+   "blocks/hero-section/hero-content.module.css",
+   "blocks/hero-section/hero-motion.ts",
+   "blocks/hero-section/hero-mesh.tsx",
+   "blocks/hero-section/hero-mesh.module.css",
+   "blocks/hero-section/hero-cadence.tsx",
+   "blocks/hero-section/hero-cadence.module.css",
+   "blocks/hero-section/hero-relay.tsx",
+   "blocks/hero-section/hero-relay.module.css",
+   "blocks/hero-section/hero-lumen.tsx",
+   "blocks/hero-section/hero-lumen.module.css",
+   "blocks/hero-section/hero-lumen-data.ts",
+   "lib/media.ts"
+  ],
+  "demo": "demos/hero-section.tsx",
+  "use": [
+   "The first section of a SaaS landing page, when the product screen is the pitch (Screenshot).",
+   "Developer tools, automation, and infrastructure products, where showing the product working is the pitch (Workflow).",
+   "A launch or download page that wants one confident line and a sense of atmosphere (Mesh)."
+  ],
+  "avoid": [
+   "Use page-header for titles inside app screens.",
+   "Use hero-signup when the goal is collecting an email in the first section."
+  ],
+  "install": "npx shadcn@latest add https://uiarc.dev/r/hero-section.json"
+ },
+ {
+  "name": "hold-to-confirm",
+  "title": "Hold to confirm",
+  "description": "Confirm a destructive action by holding, not tapping.",
+  "kind": "component",
+  "categories": [
+   "actions"
+  ],
+  "tags": [
+   "hold",
+   "long press",
+   "confirm"
+  ],
+  "files": [
+   "hold-to-confirm/hold-to-confirm.tsx",
+   "hold-to-confirm/hold-to-confirm.module.css"
+  ],
+  "demo": "demos/hold-to-confirm.tsx",
+  "use": [
+   "Destructive actions like delete or revoke where the consequence is already visible on screen.",
+   "Replacing a confirm dialog with a deliberate press in compact settings rows.",
+   "Actions that should not fire on an accidental tap on touch devices."
+  ],
+  "avoid": [
+   "Use dialog when people need to read what will happen before confirming.",
+   "Use button or action-button for safe, easily undone actions.",
+   "Use swipe-actions for delete in touch lists."
+  ],
+  "install": "npx shadcn@latest add https://uiarc.dev/r/hold-to-confirm.json"
+ },
+ {
+  "name": "hover-card",
+  "title": "Hover card",
+  "description": "Preview a person or link on hover or focus without leaving the page.",
+  "kind": "component",
+  "categories": [
+   "disclosure"
+  ],
+  "tags": [
+   "preview",
+   "people",
+   "popover"
+  ],
+  "files": [
+   "hover-card/hover-card.tsx",
+   "hover-card/hover-card.module.css"
+  ],
+  "demo": "demos/hover-card.tsx",
+  "use": [
+   "Previews of people behind mentions, avatars, or author names.",
+   "Link or reference previews where the click must stay free for navigation.",
+   "Dense lists where moving between triggers should open cards almost instantly."
+  ],
+  "avoid": [
+   "Use tooltip for a plain text label.",
+   "Use popover when the content has buttons or inputs.",
+   "Use user-menu for the account menu on your own avatar."
+  ],
+  "install": "npx shadcn@latest add https://uiarc.dev/r/hover-card.json"
+ },
+ {
+  "name": "image-compare",
+  "title": "Image compare",
+  "description": "Drag a divider across two images to see what changed.",
+  "kind": "component",
+  "categories": [
+   "data"
+  ],
+  "tags": [
+   "before after",
+   "comparison",
+   "image"
+  ],
+  "files": [
+   "image-compare/image-compare.tsx",
+   "image-compare/image-compare.module.css"
+  ],
+  "demo": "demos/image-compare.tsx",
+  "use": [
+   "Before and after visuals such as photo edits, redesigns, or cleanup results.",
+   "Top and bottom comparisons, via orientation vertical."
+  ],
+  "avoid": [
+   "Use carousel to browse many images.",
+   "Use resizable-panels to split live content rather than images."
+  ],
+  "install": "npx shadcn@latest add https://uiarc.dev/r/image-compare.json"
+ },
+ {
+  "name": "in-view-title",
+  "title": "In-view title",
+  "description": "Bring a section title in as it scrolls into view.",
+  "kind": "component",
+  "categories": [
+   "text"
+  ],
+  "tags": [
+   "text",
+   "motion",
+   "heading"
+  ],
+  "files": [
+   "in-view-title/in-view-title.tsx",
+   "in-view-title/in-view-title.module.css"
+  ],
+  "demo": "demos/in-view-title.tsx",
+  "use": [
+   "Section headings that should animate once they scroll into view.",
+   "Feature pages where each section title needs a consistent entrance style.",
+   "Headings that should replay on each entry, via once={false}."
+  ],
+  "avoid": [
+   "Use text-reveal for hero copy that animates on load.",
+   "Use scroll-highlight for a paragraph that follows scroll progress.",
+   "Use text-shimmer for status lines, not headings."
+  ],
+  "install": "npx shadcn@latest add https://uiarc.dev/r/in-view-title.json"
+ },
+ {
+  "name": "inline-edit",
+  "title": "Inline edit",
+  "description": "Rename in place: the text becomes a field without moving.",
+  "kind": "component",
+  "categories": [
+   "inputs"
+  ],
+  "tags": [
+   "inline edit",
+   "rename",
+   "click to edit"
+  ],
+  "files": [
+   "inline-edit/inline-edit.tsx",
+   "inline-edit/inline-edit.module.css"
+  ],
+  "demo": "demos/inline-edit.tsx",
+  "use": [
+   "Titles and descriptions read far more often than edited, like a project name.",
+   "Single fields that save on their own with optimistic updates and rollback."
+  ],
+  "avoid": [
+   "Use input or textarea in a form when several fields save together.",
+   "Use input when the field should always look editable."
+  ],
+  "install": "npx shadcn@latest add https://uiarc.dev/r/inline-edit.json"
+ },
+ {
+  "name": "input",
+  "title": "Input",
+  "description": "A single line field with clear labels and useful states.",
+  "kind": "component",
+  "categories": [
+   "inputs"
+  ],
+  "tags": [
+   "field",
+   "form"
+  ],
+  "files": [
+   "input/input.tsx",
+   "input/input.module.css"
+  ],
+  "demo": "demos/input.tsx",
+  "use": [
+   "Any single-line text value in a form, such as name, email, or URL.",
+   "Fields whose helper or error copy changes as the person types, where the message should reword in place.",
+   "Plain form posts, since it forwards name and every native input attribute."
+  ],
+  "avoid": [
+   "Use textarea for multi-line text.",
+   "Use password-field, search-field, or number-field when the value has that shape.",
+   "Use inline-edit for a value shown as page text and edited in place."
+  ],
+  "install": "npx shadcn@latest add https://uiarc.dev/r/input.json"
+ },
+ {
+  "name": "json-viewer",
+  "title": "JSON viewer",
+  "description": "A collapsible JSON tree with search, paging for long arrays, and copy value or path.",
+  "kind": "component",
+  "categories": [
+   "data"
+  ],
+  "tags": [
+   "data",
+   "new"
+  ],
+  "files": [
+   "json-viewer/json-viewer.tsx",
+   "json-viewer/json-viewer.module.css"
+  ],
+  "demo": "demos/json-viewer.tsx",
+  "use": [
+   "Inspecting a JSON payload in a developer dashboard, such as webhooks or API logs.",
+   "Large nested objects where search and copy path save time.",
+   "Arrays with hundreds of items, which load in pages of pageSize."
+  ],
+  "avoid": [
+   "Use code-block to show JSON as formatted source for copying whole.",
+   "Use tree-view for folders, navigation, or other non-JSON hierarchies.",
+   "Use data-grid when the data is a flat list of records."
+  ],
+  "install": "npx shadcn@latest add https://uiarc.dev/r/json-viewer.json"
+ },
+ {
+  "name": "line-chart",
+  "title": "Line chart",
+  "description": "A multi-series line chart with a gliding crosshair, legend toggles, and paths that morph between ranges.",
+  "kind": "component",
+  "categories": [
+   "data"
+  ],
+  "tags": [
+   "data",
+   "new"
+  ],
+  "files": [
+   "line-chart/line-chart.tsx",
+   "line-chart/line-chart.module.css"
+  ],
+  "demo": "demos/line-chart.tsx",
+  "use": [
+   "Traffic, revenue, or latency over days or weeks in a dashboard card.",
+   "Comparing this period against a previous period or target with a dashed series.",
+   "Charts that switch ranges (7d, 30d, 90d) and should morph rather than redraw."
+  ],
+  "avoid": [
+   "Use sparkline for a tiny inline trend with no axes or tooltip.",
+   "Use bar-chart for discrete categories or counts per bucket.",
+   "Use donut-chart when the question is the share of a whole, not change over time."
+  ],
+  "install": "npx shadcn@latest add https://uiarc.dev/r/line-chart.json"
+ },
+ {
+  "name": "login-centered",
+  "title": "Centered login",
+  "description": "A passkey-first login card on a quiet ring backdrop that morphs through email and code.",
+  "kind": "block",
+  "categories": [
+   "blocks"
+  ],
+  "tags": [],
+  "files": [
+   "blocks/login-centered/login-centered.tsx",
+   "blocks/login-centered/login-centered.module.css"
+  ],
+  "demo": "demos/login-centered.tsx",
+  "use": [
+   "The entry screen of an app with email code sign in.",
+   "Sign in cards that also offer passkeys and single sign-on.",
+   "Passwordless flows that should confirm the account before continuing.",
+   "Use login-centered, login-split, or login-immersive for password based layouts.",
+   "Use signup-form to create an account.",
+   "Use otp-input on its own when the code step lives in your own form.",
+   "Single sign-on providers are a labelled group of buttons with visible names.",
+   "Step changes and errors are announced through a visually hidden role=\"status\" region.",
+   "Provider marks are aria-hidden SVGs next to text labels.",
+   "The card morphs its height between the email, code, and done steps, sliding content in the direction of travel.",
+   "Reduced motion swaps the slide for a plain fade.",
+   "The card is a container; below 380px its padding and heading shrink, and the provider buttons tighten.",
+   "Below a 480px viewport the card corners soften to the panel radius.",
+   "A ResizeObserver drives the height morph between steps.",
+   "The signed in avatar reuses the same image through a layoutId, so the morph does not wait on a second image.",
+   "Use as the entry screen of an app.",
+   "Send and verify codes through your auth provider instead of demoCode, connect the passkey button to WebAuthn, and the provider buttons to OAuth.",
+   "Composes Arc input, otp-input, button, and avatar; exports SignInAccount and SignInMethod types.",
+   "[OTP input](https://uiarc.dev/components/blocks/otp-input/markdown): A six digit verification flow with paste support and keyboard navigation.",
+   "[Login and sign up: Centered](https://uiarc.dev/components/blocks/login/markdown): A passkey-first login card on a quiet ring backdrop that morphs through email and code.",
+   "[Login and sign up: Split](https://uiarc.dev/components/blocks/login/markdown): A full screen split login: an email-first form that morphs into a password step beside a photo.",
+   "[Login and sign up: Sign up](https://uiarc.dev/components/blocks/login/markdown): An account creation flow with field validation, password strength, and a clear completion state.",
+   "[Password field](https://uiarc.dev/components/password-field/markdown): Capture sensitive text with a visible reveal control."
+  ],
+  "avoid": [
+   "Use login-centered, login-split, or login-immersive for password based layouts.",
+   "Use signup-form to create an account.",
+   "Use otp-input on its own when the code step lives in your own form.",
+   "Single sign-on providers are a labelled group of buttons with visible names.",
+   "Step changes and errors are announced through a visually hidden role=\"status\" region.",
+   "Provider marks are aria-hidden SVGs next to text labels.",
+   "The card morphs its height between the email, code, and done steps, sliding content in the direction of travel.",
+   "Reduced motion swaps the slide for a plain fade.",
+   "The card is a container; below 380px its padding and heading shrink, and the provider buttons tighten.",
+   "Below a 480px viewport the card corners soften to the panel radius.",
+   "A ResizeObserver drives the height morph between steps.",
+   "The signed in avatar reuses the same image through a layoutId, so the morph does not wait on a second image.",
+   "Use as the entry screen of an app.",
+   "Send and verify codes through your auth provider instead of demoCode, connect the passkey button to WebAuthn, and the provider buttons to OAuth.",
+   "Composes Arc input, otp-input, button, and avatar; exports SignInAccount and SignInMethod types.",
+   "[OTP input](https://uiarc.dev/components/blocks/otp-input/markdown): A six digit verification flow with paste support and keyboard navigation.",
+   "[Login and sign up: Centered](https://uiarc.dev/components/blocks/login/markdown): A passkey-first login card on a quiet ring backdrop that morphs through email and code.",
+   "[Login and sign up: Split](https://uiarc.dev/components/blocks/login/markdown): A full screen split login: an email-first form that morphs into a password step beside a photo.",
+   "[Login and sign up: Sign up](https://uiarc.dev/components/blocks/login/markdown): An account creation flow with field validation, password strength, and a clear completion state.",
+   "[Password field](https://uiarc.dev/components/password-field/markdown): Capture sensitive text with a visible reveal control."
+  ],
+  "install": "npx shadcn@latest add https://uiarc.dev/r/login-centered.json"
+ },
+ {
+  "name": "logo-marquee",
+  "title": "Logo marquee",
+  "description": "A quiet, continuously moving row of brand marks with a pause control.",
+  "kind": "block",
+  "categories": [
+   "blocks"
+  ],
+  "tags": [],
+  "files": [
+   "blocks/logo-marquee/logo-marquee.tsx",
+   "blocks/logo-marquee/logo-marquee.module.css"
+  ],
+  "demo": "demos/logo-marquee.tsx",
+  "use": [
+   "A customer or integration logo strip on a landing page.",
+   "Social proof sections with a heading and a short supporting line."
+  ],
+  "avoid": [
+   "Use integrations when each logo needs a description or a connect action.",
+   "Use testimonial-stage when quotes matter more than logos.",
+   "Use carousel when people should browse items by hand."
+  ],
+  "install": "npx shadcn@latest add https://uiarc.dev/r/logo-marquee.json"
+ },
+ {
+  "name": "mention-input",
+  "title": "Mention input",
+  "description": "A textarea with @people and #channel mentions that act as single tokens, with suggestions at the caret.",
+  "kind": "component",
+  "categories": [
+   "inputs"
+  ],
+  "tags": [
+   "inputs",
+   "new"
+  ],
+  "files": [
+   "mention-input/mention-input.tsx",
+   "mention-input/mention-input.module.css"
+  ],
+  "demo": "demos/mention-input.tsx",
+  "use": [
+   "Comment and reply boxes where people are tagged with @ and should be notified by id.",
+   "Chat or task composers that link #channels or projects inline.",
+   "Any text field whose stored value needs structured references alongside the plain text."
+  ],
+  "avoid": [
+   "Use textarea for plain notes with no references.",
+   "Use tag-input when the tokens are a separate list rather than part of a sentence.",
+   "Use rich-text-editor when the text also needs headings, lists, or links."
+  ],
+  "install": "npx shadcn@latest add https://uiarc.dev/r/mention-input.json"
+ },
+ {
+  "name": "metric-card",
+  "title": "Metric card",
+  "description": "A compact summary for a number that needs context.",
+  "kind": "component",
+  "categories": [
+   "data"
+  ],
+  "tags": [
+   "data",
+   "summary"
+  ],
+  "files": [
+   "metric-card/metric-card.tsx",
+   "metric-card/metric-card.module.css"
+  ],
+  "demo": "demos/metric-card.tsx",
+  "use": [
+   "A single plain number with odometer style rolling digits, such as uptime or orders.",
+   "Numbers that update live and should roll in the direction they moved."
+  ],
+  "avoid": [
+   "Use stat-card for preformatted strings, trend arrows, tones, and icons.",
+   "Use sparkline when the trend over time matters more than the latest value.",
+   "Use animated-counter for a number without a card around it."
+  ],
+  "install": "npx shadcn@latest add https://uiarc.dev/r/metric-card.json"
+ },
+ {
+  "name": "money-input",
+  "title": "Money input",
+  "description": "A currency field with live grouping, stable width, rolling digits, and minor-unit output.",
+  "kind": "component",
+  "categories": [
+   "inputs"
+  ],
+  "tags": [
+   "inputs",
+   "new"
+  ],
+  "files": [
+   "money-input/money-input.tsx",
+   "money-input/money-input.module.css"
+  ],
+  "demo": "demos/money-input.tsx",
+  "use": [
+   "Payment, tip, transfer, or budget amounts entered by hand.",
+   "Invoice and expense forms where the currency may change.",
+   "Amount fields that benefit from quick add chips such as +$10."
+  ],
+  "avoid": [
+   "Use number-field for quantities and non currency numbers.",
+   "Use slider or price-ladder when people pick from a range rather than type.",
+   "Use scrub-input for design tool style drag adjustments."
+  ],
+  "install": "npx shadcn@latest add https://uiarc.dev/r/money-input.json"
+ },
+ {
+  "name": "morph-select",
+  "title": "Morph select",
+  "description": "A select whose trigger grows into the list, with a gliding highlight and type-ahead.",
+  "kind": "component",
+  "categories": [
+   "inputs"
+  ],
+  "tags": [
+   "inputs",
+   "new"
+  ],
+  "files": [
+   "morph-select/morph-select.tsx",
+   "morph-select/morph-select.module.css"
+  ],
+  "demo": "demos/morph-select.tsx",
+  "use": [
+   "Form fields and property panels where one value is picked from a known list.",
+   "Grouped lists like time zones, assignees, or projects, with optional icons and meta.",
+   "Compact toolbars where the picker should look like a pill until opened."
+  ],
+  "avoid": [
+   "Use combobox when users type free text or the list is very long and remote.",
+   "Use multi-select when more than one value can be chosen.",
+   "Use dropdown-menu for actions rather than a stored value."
+  ],
+  "install": "npx shadcn@latest add https://uiarc.dev/r/morph-select.json"
+ },
+ {
+  "name": "multi-select",
+  "title": "Multi-select",
+  "description": "Select several values while keeping the field readable.",
+  "kind": "component",
+  "categories": [
+   "inputs"
+  ],
+  "tags": [
+   "field",
+   "choice"
+  ],
+  "files": [
+   "multi-select/multi-select.tsx",
+   "multi-select/multi-select.module.css"
+  ],
+  "demo": "demos/multi-select.tsx",
+  "use": [
+   "Picking several values from a fixed list in a compact field, such as labels or assignees.",
+   "Filters where the chosen values should show in the field with a +N overflow."
+  ],
+  "avoid": [
+   "Use chip-group when every option should stay visible.",
+   "Use tag-input for free-form values.",
+   "Use select for a single value."
+  ],
+  "install": "npx shadcn@latest add https://uiarc.dev/r/multi-select.json"
+ },
+ {
+  "name": "newsletter-signup",
+  "title": "Newsletter signup",
+  "description": "An email signup framed by a stack of past issues; subscribing drops the next issue, addressed to you, onto the front.",
+  "kind": "block",
+  "categories": [
+   "blocks"
+  ],
+  "tags": [],
+  "files": [
+   "blocks/newsletter-signup/newsletter-signup.tsx",
+   "blocks/newsletter-signup/newsletter-signup-data.ts",
+   "lib/media.ts",
+   "blocks/newsletter-signup/newsletter-signup.module.css"
+  ],
+  "demo": "demos/newsletter-signup.tsx",
+  "use": [
+   "Collecting emails for a newsletter, digest, or changelog that has real issues to show.",
+   "The end of a blog post or docs page."
+  ],
+  "avoid": [
+   "Account creation with a password. Use Signup form.",
+   "Longer forms with several fields. Use Contact section.",
+   "A launch waitlist at the top of a page. Use Hero signup."
+  ],
+  "install": "npx shadcn@latest add https://uiarc.dev/r/newsletter-signup.json"
+ },
+ {
+  "name": "notification-center",
+  "title": "Notification center",
+  "description": "A home for updates with read state, grouped information, and animated disclosure.",
+  "kind": "block",
+  "categories": [
+   "blocks"
+  ],
+  "tags": [],
+  "files": [
+   "notification-center/notification-center.tsx",
+   "notification-center/notification-center.module.css"
+  ],
+  "demo": "demos/notification-center.tsx",
+  "use": [
+   "A bell in the app header with an unread badge and an inbox of recent updates.",
+   "Notifications people can mark read, expand, and dismiss in bulk."
+  ],
+  "avoid": [
+   "Use toast-stack for transient messages that should disappear.",
+   "Use inbox-triage for a full-page inbox.",
+   "Use badge for a count without a panel."
+  ],
+  "install": "npx shadcn@latest add https://uiarc.dev/r/notification-center.json"
+ },
+ {
+  "name": "number-field",
+  "title": "Number field",
+  "description": "Enter a bounded number with clear increment controls.",
+  "kind": "component",
+  "categories": [
+   "inputs"
+  ],
+  "tags": [
+   "field",
+   "numeric"
+  ],
+  "files": [
+   "number-field/number-field.tsx",
+   "number-field/number-field.module.css"
+  ],
+  "demo": "demos/number-field.tsx",
+  "use": [
+   "Bounded quantities like seats, items, or prices where the exact number matters.",
+   "Values people nudge with steppers, arrow keys, or by dragging the label with scrub.",
+   "Numbers with units, using a prefix or a pluralizing suffix function."
+  ],
+  "avoid": [
+   "Use slider when the approximate position matters more than the exact number.",
+   "Use input for numeric strings like phone numbers or codes."
+  ],
+  "install": "npx shadcn@latest add https://uiarc.dev/r/number-field.json"
+ },
+ {
+  "name": "otp-input",
+  "title": "OTP input",
+  "description": "A six digit verification flow with paste support and keyboard navigation.",
+  "kind": "block",
+  "categories": [
+   "blocks"
+  ],
+  "tags": [],
+  "files": [
+   "otp-input/otp-input.tsx",
+   "otp-input/otp-input.module.css"
+  ],
+  "demo": "demos/otp-input.tsx",
+  "use": [
+   "Verification codes from email or SMS.",
+   "Two-factor authentication code entry."
+  ],
+  "avoid": [
+   "Use password-field for secrets people type from memory.",
+   "Use input for any other text."
+  ],
+  "install": "npx shadcn@latest add https://uiarc.dev/r/otp-input.json"
+ },
+ {
+  "name": "page-header",
+  "title": "Page header",
+  "description": "A project page header that folds into a compact bar as you scroll, with tabs whose counts roll.",
+  "kind": "block",
+  "categories": [
+   "blocks"
+  ],
+  "tags": [],
+  "files": [
+   "blocks/page-header/page-header.tsx",
+   "blocks/page-header/page-header.module.css"
+  ],
+  "demo": "demos/page-header.tsx",
+  "use": [
+   "The top of a project, repository, or record page with breadcrumbs, status, people, and tabs.",
+   "Detail pages with long content where the header should fold into a compact bar as people scroll.",
+   "Headers that need a few primary actions plus an overflow menu for the rest."
+  ],
+  "avoid": [
+   "Use tabs and breadcrumb on their own when the page only needs navigation, not status and people.",
+   "Use workspace-sidebar for app-level navigation between sections.",
+   "Use settings-page for settings screens that need a section nav rather than a record header."
+  ],
+  "install": "npx shadcn@latest add https://uiarc.dev/r/page-header.json"
+ },
+ {
+  "name": "pagination",
+  "title": "Pagination",
+  "description": "Move through a long collection with clear bounds.",
+  "kind": "component",
+  "categories": [
+   "data"
+  ],
+  "tags": [
+   "data",
+   "navigation"
+  ],
+  "files": [
+   "pagination/pagination.tsx",
+   "pagination/pagination.module.css"
+  ],
+  "demo": "demos/pagination.tsx",
+  "use": [
+   "Paged server results and long tables.",
+   "Lists where the page should live in the URL or state and fetch on change."
+  ],
+  "avoid": [
+   "Use carousel for browsing slides.",
+   "Use timeline with maxHeight for a scrolling feed instead of pages."
+  ],
+  "install": "npx shadcn@latest add https://uiarc.dev/r/pagination.json"
+ },
+ {
+  "name": "password-field",
+  "title": "Password field",
+  "description": "Capture sensitive text with a visible reveal control.",
+  "kind": "component",
+  "categories": [
+   "inputs"
+  ],
+  "tags": [
+   "field",
+   "security"
+  ],
+  "files": [
+   "password-field/password-field.tsx",
+   "password-field/password-field.module.css"
+  ],
+  "demo": "demos/password-field.tsx",
+  "use": [
+   "Sign in forms and password confirmation fields.",
+   "Any secret the person may want to check by revealing it."
+  ],
+  "avoid": [
+   "Use password-strength when creating or changing a password.",
+   "Use input for non-secret values."
+  ],
+  "install": "npx shadcn@latest add https://uiarc.dev/r/password-field.json"
+ },
+ {
+  "name": "password-strength",
+  "title": "Password strength",
+  "description": "Show how strong a new password is while it is typed.",
+  "kind": "component",
+  "categories": [
+   "inputs"
+  ],
+  "tags": [
+   "password",
+   "strength meter",
+   "validation"
+  ],
+  "files": [
+   "password-strength/password-strength.tsx",
+   "password-strength/password-strength.module.css"
+  ],
+  "demo": "demos/password-strength.tsx",
+  "use": [
+   "Sign up and change password forms.",
+   "Password rules that should check off live as the person types."
+  ],
+  "avoid": [
+   "Use password-field for sign in.",
+   "Use progress for measurable progress unrelated to passwords."
+  ],
+  "install": "npx shadcn@latest add https://uiarc.dev/r/password-strength.json"
+ },
+ {
+  "name": "phone-input",
+  "title": "Phone input",
+  "description": "A phone field with a country picker, formatting as you type, and E.164 output.",
+  "kind": "component",
+  "categories": [
+   "inputs"
+  ],
+  "tags": [
+   "inputs",
+   "new"
+  ],
+  "files": [
+   "phone-input/phone-input.tsx",
+   "phone-input/phone-input.module.css"
+  ],
+  "demo": "demos/phone-input.tsx",
+  "use": [
+   "Sign up, checkout, and contact forms that need a phone number in E.164.",
+   "International audiences where the country and calling code must be clear.",
+   "Two factor setup before sending an SMS code."
+  ],
+  "avoid": [
+   "Use input with type=\"tel\" when you only store free text and never dial or text the number.",
+   "Use otp-input for the verification code itself.",
+   "Use a full metadata library if you need carrier or number type validation beyond length."
+  ],
+  "install": "npx shadcn@latest add https://uiarc.dev/r/phone-input.json"
+ },
+ {
+  "name": "plan-comparison",
+  "title": "Plan comparison",
+  "description": "Compare meaningful differences between plans and billing periods.",
+  "kind": "block",
+  "categories": [
+   "blocks"
+  ],
+  "tags": [],
+  "files": [
+   "blocks/plan-comparison/plan-comparison.tsx",
+   "blocks/plan-comparison/plan-comparison.module.css"
+  ],
+  "demo": "demos/plan-comparison.tsx",
+  "use": [
+   "Comparing two tiers side by side with a feature matrix.",
+   "Pricing pages that switch between monthly and yearly prices.",
+   "Long feature lists where people want to see only the differences."
+  ],
+  "avoid": [
+   "Use usage-pricing when price depends on seats or volume.",
+   "Use segmented-control alone for a simple billing toggle.",
+   "Use cancel-flow for downgrade or cancellation decisions."
+  ],
+  "install": "npx shadcn@latest add https://uiarc.dev/r/plan-comparison.json"
+ },
+ {
+  "name": "popover",
+  "title": "Popover",
+  "description": "A small anchored surface for contextual information.",
+  "kind": "component",
+  "categories": [
+   "disclosure"
+  ],
+  "tags": [
+   "overlay",
+   "menu"
+  ],
+  "files": [
+   "popover/popover.tsx",
+   "popover/popover.module.css"
+  ],
+  "demo": "demos/popover.tsx",
+  "use": [
+   "Click-opened panels with interactive content, like share settings or a small filter form.",
+   "Non-modal helpers that should stay open while people interact with the rest of the page.",
+   "Custom pickers built from your own controls anchored to a button."
+  ],
+  "avoid": [
+   "Use tooltip for short hover labels.",
+   "Use hover-card for read-only previews that open on hover.",
+   "Use dialog when the choice must block the page, and dropdown-menu for a list of commands."
+  ],
+  "install": "npx shadcn@latest add https://uiarc.dev/r/popover.json"
+ },
+ {
+  "name": "progress",
+  "title": "Progress",
+  "description": "Show how much of a known task is complete.",
+  "kind": "component",
+  "categories": [
+   "feedback"
+  ],
+  "tags": [
+   "status",
+   "loading"
+  ],
+  "files": [
+   "progress/progress.tsx",
+   "progress/progress.module.css"
+  ],
+  "demo": "demos/progress.tsx",
+  "use": [
+   "Determinate progress for uploads, imports, or long tasks.",
+   "Progress with a visible percentage and a check at completion, via showValue."
+  ],
+  "avoid": [
+   "Use skeleton while content is loading with no progress to report.",
+   "Use usage-meter for quota against a limit, and gauge for dashboard metrics.",
+   "Use stepper to show position in a multi-step flow."
+  ],
+  "install": "npx shadcn@latest add https://uiarc.dev/r/progress.json"
+ },
+ {
+  "name": "radio-cards",
+  "title": "Radio cards",
+  "description": "Selectable option cards with a sliding selection ring, price and description slots, and radio keyboard behavior.",
+  "kind": "component",
+  "categories": [
+   "inputs"
+  ],
+  "tags": [
+   "inputs",
+   "new"
+  ],
+  "files": [
+   "radio-cards/radio-cards.tsx",
+   "radio-cards/radio-cards.module.css"
+  ],
+  "demo": "demos/radio-cards.tsx",
+  "use": [
+   "Choices where each option needs a description, price, or estimate to decide.",
+   "Plan, shipping, region, or size pickers inside checkout and setup flows.",
+   "Options that may be unavailable and need a visible reason."
+  ],
+  "avoid": [
+   "Use radio-group for short text-only options.",
+   "Use segmented-control for two to four view modes that switch content instantly.",
+   "Use select or combobox for long lists."
+  ],
+  "install": "npx shadcn@latest add https://uiarc.dev/r/radio-cards.json"
+ },
+ {
+  "name": "radio-group",
+  "title": "Radio group",
+  "description": "Choose one option from a visible set.",
+  "kind": "component",
+  "categories": [
+   "inputs"
+  ],
+  "tags": [
+   "field",
+   "choice"
+  ],
+  "files": [
+   "radio-group/radio-group.tsx",
+   "radio-group/radio-group.module.css"
+  ],
+  "demo": "demos/radio-group.tsx",
+  "use": [
+   "Two to six mutually exclusive options that need descriptions, such as plans.",
+   "Form choices that should submit natively through name."
+  ],
+  "avoid": [
+   "Use segmented-control for short inline view options.",
+   "Use select for longer lists.",
+   "Use checkbox when several options can be on at once."
+  ],
+  "install": "npx shadcn@latest add https://uiarc.dev/r/radio-group.json"
+ },
+ {
+  "name": "resizable-panels",
+  "title": "Resizable panels",
+  "description": "Trade space between panes by dragging the divider between them.",
+  "kind": "component",
+  "categories": [
+   "disclosure"
+  ],
+  "tags": [
+   "split view",
+   "resizable",
+   "panes"
+  ],
+  "files": [
+   "resizable-panels/resizable-panels.tsx",
+   "resizable-panels/resizable-panels.module.css"
+  ],
+  "demo": "demos/resizable-panels.tsx",
+  "use": [
+   "Editor, mail, or dashboard layouts where people trade space between side-by-side panes.",
+   "Sidebars that should collapse by dragging or flicking toward the edge.",
+   "Layouts whose pane sizes should persist between visits via onLayoutChange."
+  ],
+  "avoid": [
+   "Use drawer for a panel that slides over the page.",
+   "Use tabs when only one pane needs to be visible at a time.",
+   "Avoid it for vertical splits, since it is horizontal only."
+  ],
+  "install": "npx shadcn@latest add https://uiarc.dev/r/resizable-panels.json"
+ },
+ {
+  "name": "rich-text-editor",
+  "title": "Rich text editor",
+  "description": "A lightweight editor with markdown shortcuts, a floating toolbar, a slash menu, and HTML and markdown output.",
+  "kind": "component",
+  "categories": [
+   "inputs"
+  ],
+  "tags": [
+   "inputs",
+   "new"
+  ],
+  "files": [
+   "rich-text-editor/rich-text-editor.tsx",
+   "rich-text-editor/rich-text-editor.module.css"
+  ],
+  "demo": "demos/rich-text-editor.tsx",
+  "use": [
+   "Comments, notes, and posts where people expect markdown shortcuts and a selection toolbar.",
+   "Forms that need Markdown or clean HTML out without pulling in a full editor framework.",
+   "Short to medium documents with headings, lists, quotes, and code blocks."
+  ],
+  "avoid": [
+   "Use textarea for plain text, or mention-input when the only rich part is tagging people.",
+   "Use inline-edit for a single line edited in place.",
+   "Use code-block to display code, not to write prose."
+  ],
+  "install": "npx shadcn@latest add https://uiarc.dev/r/rich-text-editor.json"
+ },
+ {
+  "name": "ridgeline",
+  "title": "Ridgeline",
+  "description": "Overlapping distributions, one ridge per group: hover to lift a ridge and read its quartiles, switch datasets and every curve morphs.",
+  "kind": "component",
+  "categories": [
+   "data"
+  ],
+  "tags": [
+   "data",
+   "chart",
+   "new"
+  ],
+  "files": [
+   "ridgeline/ridgeline.tsx",
+   "ridgeline/ridgeline.module.css"
+  ],
+  "demo": "demos/ridgeline.tsx",
+  "use": [
+   "Seasonal or categorical distributions such as temperatures by month or response times by region.",
+   "Showing where two groups differ in shape, such as bimodal winters."
+  ],
+  "avoid": [
+   "Use beeswarm when each individual observation matters.",
+   "Use bar-chart when only one summary number per group matters."
+  ],
+  "install": "npx shadcn@latest add https://uiarc.dev/r/ridgeline.json"
+ },
+ {
+  "name": "scroll-area",
+  "title": "Scroll area",
+  "description": "A native scroll container with thin overlay scrollbars and edge fades that appear only when content overflows.",
+  "kind": "component",
+  "categories": [
+   "disclosure"
+  ],
+  "tags": [
+   "disclosure",
+   "new"
+  ],
+  "files": [
+   "scroll-area/scroll-area.tsx",
+   "scroll-area/scroll-area.module.css"
+  ],
+  "demo": "demos/scroll-area.tsx",
+  "use": [
+   "Panels, sidebars, and popovers whose content can outgrow their box.",
+   "Horizontal strips of cards or chips that need mouse-wheel scrolling and snap points.",
+   "Places where platform scrollbars look heavy but native scrolling must be kept."
+  ],
+  "avoid": [
+   "Use carousel when items should page one at a time with controls.",
+   "Do not wrap the whole page; let the document scroll natively.",
+   "Use data-grid for large tabular data; it virtualizes its own scroll."
+  ],
+  "install": "npx shadcn@latest add https://uiarc.dev/r/scroll-area.json"
+ },
+ {
+  "name": "search-field",
+  "title": "Search field",
+  "description": "A recognizable search entry point with clear affordances.",
+  "kind": "component",
+  "categories": [
+   "inputs"
+  ],
+  "tags": [
+   "field",
+   "search"
+  ],
+  "files": [
+   "search-field/search-field.tsx",
+   "search-field/search-field.module.css"
+  ],
+  "demo": "demos/search-field.tsx",
+  "use": [
+   "Filtering a visible list or table in place.",
+   "Toolbar search where the query should be clearable with one click."
+  ],
+  "avoid": [
+   "Use expanding-search for compact header search with results.",
+   "Use combobox when the search sets a form value.",
+   "Use filter-toolbar when search sits with other filters and sort."
+  ],
+  "install": "npx shadcn@latest add https://uiarc.dev/r/search-field.json"
+ },
+ {
+  "name": "segmented-control",
+  "title": "Segmented control",
+  "description": "Switch between a small set of related views.",
+  "kind": "component",
+  "categories": [
+   "inputs"
+  ],
+  "tags": [
+   "control",
+   "choice"
+  ],
+  "files": [
+   "segmented-control/segmented-control.tsx",
+   "segmented-control/segmented-control.module.css"
+  ],
+  "demo": "demos/segmented-control.tsx",
+  "use": [
+   "Two to five short view options like Day, Week, and Month.",
+   "Toolbar toggles between layouts or modes that apply immediately."
+  ],
+  "avoid": [
+   "Use tabs when each option swaps a panel of content.",
+   "Use radio-group in forms or when options need descriptions.",
+   "Use switch for a single on and off setting."
+  ],
+  "install": "npx shadcn@latest add https://uiarc.dev/r/segmented-control.json"
+ },
+ {
+  "name": "select",
+  "title": "Select",
+  "description": "A compact choice field with a keyboard friendly menu.",
+  "kind": "component",
+  "categories": [
+   "inputs"
+  ],
+  "tags": [
+   "field",
+   "form"
+  ],
+  "files": [
+   "select/select.tsx",
+   "select/select.module.css"
+  ],
+  "demo": "demos/select.tsx",
+  "use": [
+   "A short fixed list where typing is not needed, such as region or sort order.",
+   "Form fields that should submit natively through Radix's hidden select via name."
+  ],
+  "avoid": [
+   "Use combobox for long or searchable lists.",
+   "Use multi-select when several values can be chosen.",
+   "Use segmented-control for two to four choices that should stay visible."
+  ],
+  "install": "npx shadcn@latest add https://uiarc.dev/r/select.json"
+ },
+ {
+  "name": "shortcut-recorder",
+  "title": "Shortcut recorder",
+  "description": "Record key combinations into key caps, with conflict warnings, Kbd, and a searchable cheatsheet.",
+  "kind": "component",
+  "categories": [
+   "inputs"
+  ],
+  "tags": [
+   "inputs",
+   "new"
+  ],
+  "files": [
+   "shortcut-recorder/shortcut-recorder.tsx",
+   "shortcut-recorder/shortcut-recorder.module.css"
+  ],
+  "demo": "demos/shortcut-recorder.tsx",
+  "use": [
+   "Settings pages where people remap keyboard shortcuts.",
+   "A keyboard shortcut cheatsheet or help dialog, with ShortcutList.",
+   "Inline key hints in menus, tooltips, and docs, with ShortcutKbd or ShortcutKeys."
+  ],
+  "avoid": [
+   "Use ShortcutKbd alone when shortcuts are fixed and only need to be shown.",
+   "Use command-palette to let people run actions by name rather than bind keys.",
+   "Avoid it on touch-only products where no hardware keyboard is expected."
+  ],
+  "install": "npx shadcn@latest add https://uiarc.dev/r/shortcut-recorder.json"
+ },
+ {
+  "name": "sign-in",
+  "title": "Sign in",
+  "description": "A sign in card that morphs from email to a six digit code to your account.",
+  "kind": "block",
+  "categories": [
+   "blocks"
+  ],
+  "tags": [],
+  "files": [
+   "blocks/sign-in/sign-in.tsx",
+   "blocks/sign-in/sign-in.module.css",
+   "lib/media.ts"
+  ],
+  "demo": "demos/sign-in.tsx",
+  "use": [
+   "The entry screen of an app with email code sign in.",
+   "Sign in cards that also offer passkeys and single sign-on.",
+   "Passwordless flows that should confirm the account before continuing.",
+   "Use login-centered, login-split, or login-immersive for password based layouts.",
+   "Use signup-form to create an account.",
+   "Use otp-input on its own when the code step lives in your own form.",
+   "Single sign-on providers are a labelled group of buttons with visible names.",
+   "Step changes and errors are announced through a visually hidden role=\"status\" region.",
+   "Provider marks are aria-hidden SVGs next to text labels.",
+   "The card morphs its height between the email, code, and done steps, sliding content in the direction of travel.",
+   "Reduced motion swaps the slide for a plain fade.",
+   "The card is a container; below 380px its padding and heading shrink, and the provider buttons tighten.",
+   "Below a 480px viewport the card corners soften to the panel radius.",
+   "A ResizeObserver drives the height morph between steps.",
+   "The signed in avatar reuses the same image through a layoutId, so the morph does not wait on a second image.",
+   "Use as the entry screen of an app.",
+   "Send and verify codes through your auth provider instead of demoCode, connect the passkey button to WebAuthn, and the provider buttons to OAuth.",
+   "Composes Arc input, otp-input, button, and avatar; exports SignInAccount and SignInMethod types.",
+   "[OTP input](https://uiarc.dev/components/blocks/otp-input/markdown): A six digit verification flow with paste support and keyboard navigation.",
+   "[Login and sign up: Centered](https://uiarc.dev/components/blocks/login/markdown): A passkey-first login card on a quiet ring backdrop that morphs through email and code.",
+   "[Login and sign up: Split](https://uiarc.dev/components/blocks/login/markdown): A full screen split login: an email-first form that morphs into a password step beside a photo.",
+   "[Login and sign up: Sign up](https://uiarc.dev/components/blocks/login/markdown): An account creation flow with field validation, password strength, and a clear completion state.",
+   "[Password field](https://uiarc.dev/components/password-field/markdown): Capture sensitive text with a visible reveal control."
+  ],
+  "avoid": [
+   "Use login-centered, login-split, or login-immersive for password based layouts.",
+   "Use signup-form to create an account.",
+   "Use otp-input on its own when the code step lives in your own form.",
+   "Single sign-on providers are a labelled group of buttons with visible names.",
+   "Step changes and errors are announced through a visually hidden role=\"status\" region.",
+   "Provider marks are aria-hidden SVGs next to text labels.",
+   "The card morphs its height between the email, code, and done steps, sliding content in the direction of travel.",
+   "Reduced motion swaps the slide for a plain fade.",
+   "The card is a container; below 380px its padding and heading shrink, and the provider buttons tighten.",
+   "Below a 480px viewport the card corners soften to the panel radius.",
+   "A ResizeObserver drives the height morph between steps.",
+   "The signed in avatar reuses the same image through a layoutId, so the morph does not wait on a second image.",
+   "Use as the entry screen of an app.",
+   "Send and verify codes through your auth provider instead of demoCode, connect the passkey button to WebAuthn, and the provider buttons to OAuth.",
+   "Composes Arc input, otp-input, button, and avatar; exports SignInAccount and SignInMethod types.",
+   "[OTP input](https://uiarc.dev/components/blocks/otp-input/markdown): A six digit verification flow with paste support and keyboard navigation.",
+   "[Login and sign up: Centered](https://uiarc.dev/components/blocks/login/markdown): A passkey-first login card on a quiet ring backdrop that morphs through email and code.",
+   "[Login and sign up: Split](https://uiarc.dev/components/blocks/login/markdown): A full screen split login: an email-first form that morphs into a password step beside a photo.",
+   "[Login and sign up: Sign up](https://uiarc.dev/components/blocks/login/markdown): An account creation flow with field validation, password strength, and a clear completion state.",
+   "[Password field](https://uiarc.dev/components/password-field/markdown): Capture sensitive text with a visible reveal control."
+  ],
+  "install": "npx shadcn@latest add https://uiarc.dev/r/sign-in.json"
+ },
+ {
+  "name": "signature-pad",
+  "title": "Signature pad",
+  "description": "Smooth ink that thins with speed, with undo, replay, and PNG or SVG export.",
+  "kind": "component",
+  "categories": [
+   "inputs"
+  ],
+  "tags": [
+   "inputs",
+   "new"
+  ],
+  "files": [
+   "signature-pad/signature-pad.tsx",
+   "signature-pad/signature-pad.module.css"
+  ],
+  "demo": "demos/signature-pad.tsx",
+  "use": [
+   "Contracts, delivery confirmations, and consent forms that need a drawn signature.",
+   "Initials or quick sketches where pen pressure and natural stroke width matter.",
+   "Flows that need a clean, cropped PNG or SVG of the signature."
+  ],
+  "avoid": [
+   "Use input for a typed name when a legal drawn signature is not required.",
+   "Use file-upload when the user already has a scanned signature image.",
+   "Use hold-to-confirm for a simple deliberate confirmation without a signature artifact."
+  ],
+  "install": "npx shadcn@latest add https://uiarc.dev/r/signature-pad.json"
+ },
+ {
+  "name": "signup-form",
+  "title": "Sign up form",
+  "description": "An account creation flow with field validation, password strength, and a clear completion state.",
+  "kind": "block",
+  "categories": [
+   "blocks"
+  ],
+  "tags": [],
+  "files": [
+   "blocks/signup-form/signup-form.tsx",
+   "blocks/signup-form/signup-form.module.css"
+  ],
+  "demo": "demos/signup-form.tsx",
+  "use": [
+   "The entry screen of an app with email code sign in.",
+   "Sign in cards that also offer passkeys and single sign-on.",
+   "Passwordless flows that should confirm the account before continuing.",
+   "Use login-centered, login-split, or login-immersive for password based layouts.",
+   "Use signup-form to create an account.",
+   "Use otp-input on its own when the code step lives in your own form.",
+   "Single sign-on providers are a labelled group of buttons with visible names.",
+   "Step changes and errors are announced through a visually hidden role=\"status\" region.",
+   "Provider marks are aria-hidden SVGs next to text labels.",
+   "The card morphs its height between the email, code, and done steps, sliding content in the direction of travel.",
+   "Reduced motion swaps the slide for a plain fade.",
+   "The card is a container; below 380px its padding and heading shrink, and the provider buttons tighten.",
+   "Below a 480px viewport the card corners soften to the panel radius.",
+   "A ResizeObserver drives the height morph between steps.",
+   "The signed in avatar reuses the same image through a layoutId, so the morph does not wait on a second image.",
+   "Use as the entry screen of an app.",
+   "Send and verify codes through your auth provider instead of demoCode, connect the passkey button to WebAuthn, and the provider buttons to OAuth.",
+   "Composes Arc input, otp-input, button, and avatar; exports SignInAccount and SignInMethod types.",
+   "[OTP input](https://uiarc.dev/components/blocks/otp-input/markdown): A six digit verification flow with paste support and keyboard navigation.",
+   "[Login and sign up: Centered](https://uiarc.dev/components/blocks/login/markdown): A passkey-first login card on a quiet ring backdrop that morphs through email and code.",
+   "[Login and sign up: Split](https://uiarc.dev/components/blocks/login/markdown): A full screen split login: an email-first form that morphs into a password step beside a photo.",
+   "[Login and sign up: Sign up](https://uiarc.dev/components/blocks/login/markdown): An account creation flow with field validation, password strength, and a clear completion state.",
+   "[Password field](https://uiarc.dev/components/password-field/markdown): Capture sensitive text with a visible reveal control."
+  ],
+  "avoid": [
+   "Use login-centered, login-split, or login-immersive for password based layouts.",
+   "Use signup-form to create an account.",
+   "Use otp-input on its own when the code step lives in your own form.",
+   "Single sign-on providers are a labelled group of buttons with visible names.",
+   "Step changes and errors are announced through a visually hidden role=\"status\" region.",
+   "Provider marks are aria-hidden SVGs next to text labels.",
+   "The card morphs its height between the email, code, and done steps, sliding content in the direction of travel.",
+   "Reduced motion swaps the slide for a plain fade.",
+   "The card is a container; below 380px its padding and heading shrink, and the provider buttons tighten.",
+   "Below a 480px viewport the card corners soften to the panel radius.",
+   "A ResizeObserver drives the height morph between steps.",
+   "The signed in avatar reuses the same image through a layoutId, so the morph does not wait on a second image.",
+   "Use as the entry screen of an app.",
+   "Send and verify codes through your auth provider instead of demoCode, connect the passkey button to WebAuthn, and the provider buttons to OAuth.",
+   "Composes Arc input, otp-input, button, and avatar; exports SignInAccount and SignInMethod types.",
+   "[OTP input](https://uiarc.dev/components/blocks/otp-input/markdown): A six digit verification flow with paste support and keyboard navigation.",
+   "[Login and sign up: Centered](https://uiarc.dev/components/blocks/login/markdown): A passkey-first login card on a quiet ring backdrop that morphs through email and code.",
+   "[Login and sign up: Split](https://uiarc.dev/components/blocks/login/markdown): A full screen split login: an email-first form that morphs into a password step beside a photo.",
+   "[Login and sign up: Sign up](https://uiarc.dev/components/blocks/login/markdown): An account creation flow with field validation, password strength, and a clear completion state.",
+   "[Password field](https://uiarc.dev/components/password-field/markdown): Capture sensitive text with a visible reveal control."
+  ],
+  "install": "npx shadcn@latest add https://uiarc.dev/r/signup-form.json"
+ },
+ {
+  "name": "site-footer",
+  "title": "Site footer",
+  "description": "A website footer with link columns and newsletter, a minimal layout, and a large fading Arc mark.",
+  "kind": "block",
+  "categories": [
+   "blocks"
+  ],
+  "tags": [],
+  "files": [
+   "blocks/site-footer/site-footer.tsx",
+   "blocks/site-footer/site-footer.module.css"
+  ],
+  "demo": "demos/site-footer.tsx",
+  "use": [
+   "The closing section of a marketing, docs, or product site.",
+   "Footers that need a newsletter signup and a status link.",
+   "Minimal one-row footers for app shells and docs."
+  ],
+  "avoid": [
+   "Use a plain row with breadcrumb or links inside signed-in app screens.",
+   "Use contact-section when the main goal is to start a conversation."
+  ],
+  "install": "npx shadcn@latest add https://uiarc.dev/r/site-footer.json"
+ },
+ {
+  "name": "site-header",
+  "title": "Site header",
+  "description": "A sticky website header that turns solid on scroll, with a gliding active link, mega menu panels, and a mobile sheet.",
+  "kind": "block",
+  "categories": [
+   "blocks"
+  ],
+  "tags": [],
+  "files": [
+   "blocks/site-header/site-header.tsx",
+   "blocks/site-header/site-header.module.css",
+   "lib/media.ts"
+  ],
+  "demo": "demos/site-header.tsx",
+  "use": [
+   "The top bar of a marketing site, landing page, or docs site.",
+   "Product sites with grouped destinations that deserve a mega menu with a feature card.",
+   "Pages that need one clear sign-up action in the header."
+  ],
+  "avoid": [
+   "Use workspace-sidebar or sidebar-rail inside a signed-in app.",
+   "Use morph-nav for a single-surface animated navigation with built-in search.",
+   "Use menubar for application commands."
+  ],
+  "install": "npx shadcn@latest add https://uiarc.dev/r/site-header.json"
+ },
+ {
+  "name": "skeleton",
+  "title": "Skeleton",
+  "description": "Reserve space while content is still loading.",
+  "kind": "component",
+  "categories": [
+   "feedback"
+  ],
+  "tags": [
+   "loading",
+   "status"
+  ],
+  "files": [
+   "skeleton/skeleton.tsx",
+   "skeleton/skeleton.module.css"
+  ],
+  "demo": "demos/skeleton.tsx",
+  "use": [
+   "Loading states for content whose shape is known, like a profile or comment.",
+   "Swapping a placeholder into real content with a crossfade and height spring."
+  ],
+  "avoid": [
+   "Use progress when you can report a percentage.",
+   "Use empty-state when loading finished and there is nothing to show.",
+   "Use text-shimmer for an AI thinking or status line."
+  ],
+  "install": "npx shadcn@latest add https://uiarc.dev/r/skeleton.json"
+ },
+ {
+  "name": "slider",
+  "title": "Slider",
+  "description": "Pick a value or a range on a track that follows your finger.",
+  "kind": "component",
+  "categories": [
+   "inputs"
+  ],
+  "tags": [
+   "slider",
+   "range",
+   "input"
+  ],
+  "files": [
+   "slider/slider.tsx",
+   "slider/slider.module.css"
+  ],
+  "demo": "demos/slider.tsx",
+  "use": [
+   "Approximate values like volume, opacity, or a price range.",
+   "Ranges with two thumbs, labelled marks, and a formatted readout."
+  ],
+  "avoid": [
+   "Use number-field when the exact number matters.",
+   "Use progress to show a value people cannot change."
+  ],
+  "install": "npx shadcn@latest add https://uiarc.dev/r/slider.json"
+ },
+ {
+  "name": "slope-chart",
+  "title": "Slope chart",
+  "description": "Before and after on two axes: lines draw in, rank moves sit beside each value, and switching datasets slides every line to its new slope.",
+  "kind": "component",
+  "categories": [
+   "data"
+  ],
+  "tags": [
+   "data",
+   "chart",
+   "new"
+  ],
+  "files": [
+   "slope-chart/slope-chart.tsx",
+   "slope-chart/slope-chart.module.css"
+  ],
+  "demo": "demos/slope-chart.tsx",
+  "use": [
+   "Showing which items rose, which fell, and how the order changed between two periods.",
+   "Replacing a grouped bar chart when the change is the story."
+  ],
+  "avoid": [
+   "Use line-chart for three or more moments.",
+   "Use bar-chart when only the latest values matter.",
+   "Avoid more than about ten items; labels start to crowd."
+  ],
+  "install": "npx shadcn@latest add https://uiarc.dev/r/slope-chart.json"
+ },
+ {
+  "name": "slot-text",
+  "title": "Slot text",
+  "description": "Text and numbers that spin into their new value on staggered slot machine reels.",
+  "kind": "component",
+  "categories": [
+   "special"
+  ],
+  "tags": [
+   "special",
+   "text",
+   "numbers",
+   "new"
+  ],
+  "files": [
+   "slot-text/slot-text.tsx",
+   "slot-text/slot-text.module.css"
+  ],
+  "demo": "demos/slot-text.tsx",
+  "use": [
+   "Pricing toggles, KPI cards, dashboards changing period.",
+   "Launch moments, raffles, and reveals."
+  ],
+  "avoid": [
+   "Values that update several times a second.",
+   "Long sentences; reels are for short values."
+  ],
+  "install": "npx shadcn@latest add https://uiarc.dev/r/slot-text.json"
+ },
+ {
+  "name": "sortable-data-table",
+  "title": "Sortable data table",
+  "description": "Compare structured records with sortable columns.",
+  "kind": "component",
+  "categories": [
+   "data"
+  ],
+  "tags": [
+   "data",
+   "table"
+  ],
+  "files": [
+   "sortable-data-table/sortable-data-table.tsx",
+   "sortable-data-table/sortable-data-table.module.css"
+  ],
+  "demo": "demos/sortable-data-table.tsx",
+  "use": [
+   "Tabular records people sort and select, such as projects, invoices, or users.",
+   "Tables that need Shift-click range selection and a count line with Clear."
+  ],
+  "avoid": [
+   "Use data-grid when people edit cells like a spreadsheet.",
+   "Use timeline for chronological activity.",
+   "Use reorderable-list when people set the order by hand."
+  ],
+  "install": "npx shadcn@latest add https://uiarc.dev/r/sortable-data-table.json"
+ },
+ {
+  "name": "sparkline",
+  "title": "Sparkline",
+  "description": "Show a compact trend beside a value.",
+  "kind": "component",
+  "categories": [
+   "data"
+  ],
+  "tags": [
+   "data",
+   "chart"
+  ],
+  "files": [
+   "sparkline/sparkline.tsx",
+   "sparkline/sparkline.module.css"
+  ],
+  "demo": "demos/sparkline.tsx",
+  "use": [
+   "A compact trend inside a card, table row, or KPI tile.",
+   "Small charts people can scrub by pointer or keyboard to read past values."
+  ],
+  "avoid": [
+   "Use bar-chart for comparing discrete periods with axes.",
+   "Use stat-card or metric-card when only the latest value matters."
+  ],
+  "install": "npx shadcn@latest add https://uiarc.dev/r/sparkline.json"
+ },
+ {
+  "name": "split-button",
+  "title": "Split button",
+  "description": "A primary action with a menu of nearby alternatives.",
+  "kind": "component",
+  "categories": [
+   "actions"
+  ],
+  "tags": [
+   "action",
+   "menu"
+  ],
+  "files": [
+   "split-button/split-button.tsx",
+   "split-button/split-button.module.css"
+  ],
+  "demo": "demos/split-button.tsx",
+  "use": [
+   "One default action with a few close variants, like Merge with Squash and Rebase.",
+   "Export or share actions where one format is the usual pick and others sit behind the chevron.",
+   "Copy actions that swap the label to Copied in place while offering alternatives."
+  ],
+  "avoid": [
+   "Use dropdown-menu when there is no default action and every option is equal.",
+   "Use button when there are no alternatives.",
+   "Use context-menu for actions tied to a piece of content rather than a toolbar."
+  ],
+  "install": "npx shadcn@latest add https://uiarc.dev/r/split-button.json"
+ },
+ {
+  "name": "stats-band",
+  "title": "Stats band",
+  "description": "Headline numbers that count up in view, each with a tiny visual that proves it and a context line on hover, plain or in a hairline grid.",
+  "kind": "block",
+  "categories": [
+   "blocks"
+  ],
+  "tags": [],
+  "files": [
+   "blocks/stats-band/stats-band.tsx",
+   "blocks/stats-band/stats-band-data.ts",
+   "blocks/stats-band/stats-band.module.css",
+   "blocks/stats-band/stats-band-world.ts"
+  ],
+  "demo": "demos/stats-band.tsx",
+  "use": [
+   "Marketing pages that back a claim with a few numbers.",
+   "About and investor pages with headline metrics."
+  ],
+  "avoid": [
+   "Live product metrics with trends. Use Metric card or Metrics dashboard.",
+   "More than four numbers. Split them or use a table."
+  ],
+  "install": "npx shadcn@latest add https://uiarc.dev/r/stats-band.json"
+ },
+ {
+  "name": "stepper",
+  "title": "Stepper",
+  "description": "Show where a person is in a multi-step flow and what is done.",
+  "kind": "component",
+  "categories": [
+   "feedback"
+  ],
+  "tags": [
+   "motion",
+   "product"
+  ],
+  "files": [
+   "stepper/stepper.tsx",
+   "stepper/stepper.module.css"
+  ],
+  "demo": "demos/stepper.tsx",
+  "use": [
+   "Showing position in a strict multi-step flow like checkout or account setup.",
+   "Flows where people can jump back to completed steps, via onStepSelect.",
+   "Vertical timelines of steps with descriptions and error states."
+  ],
+  "avoid": [
+   "Use multi-step-form when you also want the step content, navigation, and success state.",
+   "Use onboarding-checklist for loosely ordered tasks.",
+   "Use progress when a single percentage is enough."
+  ],
+  "install": "npx shadcn@latest add https://uiarc.dev/r/stepper.json"
+ },
+ {
+  "name": "streamgraph",
+  "title": "Streamgraph",
+  "description": "Layered streams on a wiggle baseline that morph between ranges, with a layer you can isolate and read week by week.",
+  "kind": "component",
+  "categories": [
+   "data"
+  ],
+  "tags": [
+   "data",
+   "chart",
+   "new"
+  ],
+  "files": [
+   "streamgraph/streamgraph.tsx",
+   "streamgraph/streamgraph.module.css"
+  ],
+  "demo": "demos/streamgraph.tsx",
+  "use": [
+   "Showing the changing share of topics, channels, or genres week by week.",
+   "Storytelling dashboards where the shape of seasonality and spikes is the point.",
+   "Comparing ranges where a morph between them explains what changed."
+  ],
+  "avoid": [
+   "Use line-chart when exact values or comparisons between series matter.",
+   "Use bar-chart for a few periods or categories.",
+   "Avoid it for data with negative values; streams stack magnitudes."
+  ],
+  "install": "npx shadcn@latest add https://uiarc.dev/r/streamgraph.json"
+ },
+ {
+  "name": "swipe-actions",
+  "title": "Swipe actions",
+  "description": "Reveal row actions with a swipe, or from the same actions in a menu.",
+  "kind": "component",
+  "categories": [
+   "actions"
+  ],
+  "tags": [
+   "swipe",
+   "gesture",
+   "list"
+  ],
+  "files": [
+   "swipe-actions/swipe-actions.tsx",
+   "swipe-actions/swipe-actions.module.css"
+  ],
+  "demo": "demos/swipe-actions.tsx",
+  "use": [
+   "Touch-first triage lists such as mail, notifications, or tasks.",
+   "Rows with one or two quick actions per side, like Archive and Mark unread.",
+   "Lists where a full swipe should commit the main action and the row should animate away."
+  ],
+  "avoid": [
+   "Use context-menu or dropdown-menu for desktop-first tables.",
+   "Use reorderable-list when rows need to be dragged vertically.",
+   "Use hold-to-confirm for a single destructive action outside a list."
+  ],
+  "install": "npx shadcn@latest add https://uiarc.dev/r/swipe-actions.json"
+ },
+ {
+  "name": "switch",
+  "title": "Switch",
+  "description": "A tactile toggle for settings that take effect immediately.",
+  "kind": "component",
+  "categories": [
+   "inputs"
+  ],
+  "tags": [
+   "toggle",
+   "settings"
+  ],
+  "files": [
+   "switch/switch.tsx",
+   "switch/switch.module.css"
+  ],
+  "demo": "demos/switch.tsx",
+  "use": [
+   "Settings that take effect as soon as they are flipped, like notifications.",
+   "Settings lists where each row is one on and off preference."
+  ],
+  "avoid": [
+   "Use checkbox when the choice waits for a submit button.",
+   "Use segmented-control for a choice between named options.",
+   "Use theme-switch for a light and dark toggle."
+  ],
+  "install": "npx shadcn@latest add https://uiarc.dev/r/switch.json"
+ },
+ {
+  "name": "tabs",
+  "title": "Tabs",
+  "description": "Switch between related content in the same context.",
+  "kind": "component",
+  "categories": [
+   "disclosure"
+  ],
+  "tags": [
+   "navigation",
+   "layout"
+  ],
+  "files": [
+   "tabs/tabs.tsx",
+   "tabs/tabs.module.css"
+  ],
+  "demo": "demos/tabs.tsx",
+  "use": [
+   "Peer views of the same object, such as Overview, Activity, and Settings.",
+   "Panels with different heights, where the container should spring between them.",
+   "Long tab sets that need to scroll horizontally with edge buttons."
+  ],
+  "avoid": [
+   "Use segmented-control for a compact value toggle not tied to panels.",
+   "Use accordion for stacked sections people read in order.",
+   "Use liquid-tab-bar or morph-nav for app-level navigation between routes."
+  ],
+  "install": "npx shadcn@latest add https://uiarc.dev/r/tabs.json"
+ },
+ {
+  "name": "tag-input",
+  "title": "Tag input",
+  "description": "Turn short text values into removable tags.",
+  "kind": "component",
+  "categories": [
+   "inputs"
+  ],
+  "tags": [
+   "field",
+   "tags"
+  ],
+  "files": [
+   "tag-input/tag-input.tsx",
+   "tag-input/tag-input.module.css"
+  ],
+  "demo": "demos/tag-input.tsx",
+  "use": [
+   "Free-form lists of short values like tags, keywords, or emails.",
+   "Fields where people add values by pressing Enter or comma."
+  ],
+  "avoid": [
+   "Use multi-select or chip-group when values come from a fixed list.",
+   "Use input for a single value."
+  ],
+  "install": "npx shadcn@latest add https://uiarc.dev/r/tag-input.json"
+ },
+ {
+  "name": "text-morph",
+  "title": "Text morph",
+  "description": "Morph a label into its next state, letter by letter.",
+  "kind": "component",
+  "categories": [
+   "text"
+  ],
+  "tags": [
+   "text",
+   "motion",
+   "status"
+  ],
+  "files": [
+   "text-morph/text-morph.tsx",
+   "text-morph/text-morph.module.css"
+  ],
+  "demo": "demos/text-morph.tsx",
+  "use": [
+   "Status words that change a few letters at a time, such as Follow and Following.",
+   "Custom buttons or badges that need a morphing label without the rest of the button.",
+   "Inline counters or short state labels that should glide instead of jump."
+  ],
+  "avoid": [
+   "Use word-rotate for a sentence with one cycling word.",
+   "Use button or action-swap when you want the morph plus button behaviour.",
+   "Avoid it for text that wraps, since it always renders a single line."
+  ],
+  "install": "npx shadcn@latest add https://uiarc.dev/r/text-morph.json"
+ },
+ {
+  "name": "text-reveal",
+  "title": "Text reveal",
+  "description": "Reveal a short piece of content with restrained motion.",
+  "kind": "component",
+  "categories": [
+   "text"
+  ],
+  "tags": [
+   "text",
+   "motion",
+   "content"
+  ],
+  "files": [
+   "text-reveal/text-reveal.tsx",
+   "text-reveal/text-reveal.module.css"
+  ],
+  "demo": "demos/text-reveal.tsx",
+  "use": [
+   "Above-the-fold hero headlines that animate on page load.",
+   "Landing page intros where text must appear on first paint even if scripts are slow."
+  ],
+  "avoid": [
+   "Use in-view-title for section titles further down the page.",
+   "Use scroll-highlight for a key paragraph that reveals with scroll.",
+   "Use word-rotate when one word in the headline should cycle."
+  ],
+  "install": "npx shadcn@latest add https://uiarc.dev/r/text-reveal.json"
+ },
+ {
+  "name": "text-shimmer",
+  "title": "Text shimmer",
+  "description": "Show ongoing work with a calm light across the words.",
+  "kind": "component",
+  "categories": [
+   "text"
+  ],
+  "tags": [
+   "text",
+   "motion",
+   "loading"
+  ],
+  "files": [
+   "text-shimmer/text-shimmer.tsx",
+   "text-shimmer/text-shimmer.module.css"
+  ],
+  "demo": "demos/text-shimmer.tsx",
+  "use": [
+   "AI thinking or loading labels such as Generating summary.",
+   "Short status lines that should show ongoing work and settle when done."
+  ],
+  "avoid": [
+   "Use text-stream for the response text itself.",
+   "Use skeleton for content placeholders and progress for measurable progress."
+  ],
+  "install": "npx shadcn@latest add https://uiarc.dev/r/text-shimmer.json"
+ },
+ {
+  "name": "textarea",
+  "title": "Textarea",
+  "description": "A multiline field for notes, descriptions, and longer text.",
+  "kind": "component",
+  "categories": [
+   "inputs"
+  ],
+  "tags": [
+   "field",
+   "form"
+  ],
+  "files": [
+   "textarea/textarea.tsx",
+   "textarea/textarea.module.css"
+  ],
+  "demo": "demos/textarea.tsx",
+  "use": [
+   "Free-form multi-line text like bios, comments, or feedback.",
+   "Fields with a live character count, which rolls its digits in the helper row."
+  ],
+  "avoid": [
+   "Use input for single-line values.",
+   "Use inline-edit with multiline for a description edited in place on a page.",
+   "Use tag-input when the text is really a list of short values."
+  ],
+  "install": "npx shadcn@latest add https://uiarc.dev/r/textarea.json"
+ },
+ {
+  "name": "theme-switch-eclipse",
+  "title": "Eclipse",
+  "description": "The next appearance crosses the page like an eclipse.",
+  "kind": "component",
+  "categories": [
+   "actions"
+  ],
+  "tags": [
+   "theme",
+   "appearance",
+   "motion"
+  ],
+  "files": [
+   "theme-switch/theme-switch.tsx",
+   "theme-switch/theme-switch.module.css"
+  ],
+  "demo": "demos/theme-switch-eclipse.tsx",
+  "use": [
+   "Marketing or showcase pages where the theme change should feel like an event.",
+   "Layouts where a directional sweep across the page reads naturally."
+  ],
+  "avoid": [
+   "Use theme-switch-rise for everyday product chrome where a calmer change fits.",
+   "Use theme-switch-split when the button sits in the center and direction should not matter."
+  ],
+  "install": "npx shadcn@latest add https://uiarc.dev/r/theme-switch-eclipse.json"
+ },
+ {
+  "name": "theme-switch-rise",
+  "title": "Rise",
+  "description": "The next appearance rises into place.",
+  "kind": "component",
+  "categories": [
+   "actions"
+  ],
+  "tags": [
+   "theme",
+   "appearance",
+   "motion"
+  ],
+  "files": [
+   "theme-switch/theme-switch.tsx",
+   "theme-switch/theme-switch.module.css"
+  ],
+  "demo": "demos/theme-switch-rise.tsx",
+  "use": [
+   "Product chrome and dashboards where the theme change should be calm.",
+   "Icon-only toggles in a top bar, as the library's own header uses it."
+  ],
+  "avoid": [
+   "Use theme-switch-eclipse for a dramatic change on a showcase page.",
+   "Use user-menu when theme belongs with account settings."
+  ],
+  "install": "npx shadcn@latest add https://uiarc.dev/r/theme-switch-rise.json"
+ },
+ {
+  "name": "theme-switch-split",
+  "title": "Split",
+  "description": "The next appearance opens from a slim center seam.",
+  "kind": "component",
+  "categories": [
+   "actions"
+  ],
+  "tags": [
+   "theme",
+   "appearance",
+   "motion"
+  ],
+  "files": [
+   "theme-switch/theme-switch.tsx",
+   "theme-switch/theme-switch.module.css"
+  ],
+  "demo": "demos/theme-switch-split.tsx",
+  "use": [
+   "Centered layouts where the theme should open symmetrically from a middle seam.",
+   "Pages where the switch position varies, since the split does not depend on where the button sits."
+  ],
+  "avoid": [
+   "Use theme-switch for a reveal that grows from the button itself.",
+   "Use theme-switch-rise for the calmest option in product UI."
+  ],
+  "install": "npx shadcn@latest add https://uiarc.dev/r/theme-switch-split.json"
+ },
+ {
+  "name": "theme-switch",
+  "title": "Theme switcher",
+  "description": "Four smooth ways to move between light and dark appearance.",
+  "kind": "component",
+  "categories": [
+   "actions"
+  ],
+  "tags": [
+   "theme",
+   "appearance",
+   "motion"
+  ],
+  "files": [
+   "theme-switch/theme-switch.tsx",
+   "theme-switch/theme-switch.module.css"
+  ],
+  "demo": "demos/theme-switch.tsx",
+  "use": [
+   "A single light and dark toggle in an app or marketing top bar.",
+   "Pages that want to run their own view transition from the button's position."
+  ],
+  "avoid": [
+   "Use user-menu when theme choice, including system, belongs inside an account menu.",
+   "Use theme-switch-rise for quiet product chrome, or theme-switch-eclipse for a dramatic showcase change."
+  ],
+  "install": "npx shadcn@latest add https://uiarc.dev/r/theme-switch.json"
+ },
+ {
+  "name": "time-picker",
+  "title": "Time picker",
+  "description": "Choose a time with sensible keyboard behavior.",
+  "kind": "component",
+  "categories": [
+   "inputs"
+  ],
+  "tags": [
+   "time",
+   "field"
+  ],
+  "files": [
+   "time-picker/time-picker.tsx",
+   "time-picker/time-picker.module.css"
+  ],
+  "demo": "demos/time-picker.tsx",
+  "use": [
+   "Picking a time of day at a fixed interval, such as meetings or reminders.",
+   "Fields that show 12-hour times but store 24-hour HH:mm values."
+  ],
+  "avoid": [
+   "Use date-picker for dates, pairing the two for a timestamp.",
+   "Use time-dial for a more tactile, showcase time selection.",
+   "Use select when only a few named times are allowed."
+  ],
+  "install": "npx shadcn@latest add https://uiarc.dev/r/time-picker.json"
+ },
+ {
+  "name": "timeline",
+  "title": "Timeline",
+  "description": "Follow what happened, newest first, grouped by day.",
+  "kind": "component",
+  "categories": [
+   "data"
+  ],
+  "tags": [
+   "data",
+   "feed",
+   "activity"
+  ],
+  "files": [
+   "timeline/timeline.tsx",
+   "timeline/timeline.module.css"
+  ],
+  "demo": "demos/timeline.tsx",
+  "use": [
+   "Project history, audit logs, and deploy streams where recency matters.",
+   "Live feeds where new updates slide in at the top.",
+   "Rows that expand in place to show logs or detail."
+  ],
+  "avoid": [
+   "Use sortable-data-table when people sort or compare.",
+   "Use stepper for progress through fixed steps."
+  ],
+  "install": "npx shadcn@latest add https://uiarc.dev/r/timeline.json"
+ },
+ {
+  "name": "toast-stack",
+  "title": "Toast stack",
+  "description": "Stack short results at the edge until you reach for them.",
+  "kind": "component",
+  "categories": [
+   "feedback"
+  ],
+  "tags": [
+   "toast",
+   "notification",
+   "sonner"
+  ],
+  "files": [
+   "toast-stack/toast-stack.tsx",
+   "toast-stack/toast-stack.module.css"
+  ],
+  "demo": "demos/toast-stack.tsx",
+  "use": [
+   "App-wide notifications for async results, errors, and undo.",
+   "Loading toasts that morph into success or error when work finishes.",
+   "Toasts with an action button, like View or Undo."
+  ],
+  "avoid": [
+   "Use toast for a single locally controlled confirmation.",
+   "Use alert for persistent messages tied to a page.",
+   "Use notification-center for a history people can come back to."
+  ],
+  "install": "npx shadcn@latest add https://uiarc.dev/r/toast-stack.json"
+ },
+ {
+  "name": "toast",
+  "title": "Toast",
+  "description": "Brief confirmation for a completed background action.",
+  "kind": "component",
+  "categories": [
+   "feedback"
+  ],
+  "tags": [
+   "status",
+   "message"
+  ],
+  "files": [
+   "toast/toast.tsx",
+   "toast/toast.module.css"
+  ],
+  "demo": "demos/toast.tsx",
+  "use": [
+   "A single success confirmation, like Changes saved, controlled with local state.",
+   "Demos or small apps that do not need a toast queue."
+  ],
+  "avoid": [
+   "Use toast-stack for app-wide notifications with types, actions, updates, and stacking.",
+   "Use alert for persistent messages that should stay in the page flow."
+  ],
+  "install": "npx shadcn@latest add https://uiarc.dev/r/toast.json"
+ },
+ {
+  "name": "tooltip",
+  "title": "Tooltip",
+  "description": "Short supporting text for unfamiliar controls.",
+  "kind": "component",
+  "categories": [
+   "disclosure"
+  ],
+  "tags": [
+   "hint",
+   "overlay"
+  ],
+  "files": [
+   "tooltip/tooltip.tsx",
+   "tooltip/tooltip.module.css"
+  ],
+  "demo": "demos/tooltip.tsx",
+  "use": [
+   "One-line labels on icon-only buttons in toolbars.",
+   "Revealing the full text of truncated labels on hover or focus.",
+   "Dense toolbars where moving between icons should show labels instantly after the first one."
+  ],
+  "avoid": [
+   "Use popover for anything with links or controls inside.",
+   "Use hover-card for rich previews such as a person or link.",
+   "Avoid it for information people must see on touch devices, where hover does not exist."
+  ],
+  "install": "npx shadcn@latest add https://uiarc.dev/r/tooltip.json"
+ },
+ {
+  "name": "tree-view",
+  "title": "Tree view",
+  "description": "Navigate nested folders and structured content.",
+  "kind": "component",
+  "categories": [
+   "data"
+  ],
+  "tags": [
+   "data",
+   "navigation"
+  ],
+  "files": [
+   "tree-view/tree-view.tsx",
+   "tree-view/tree-view.module.css"
+  ],
+  "demo": "demos/tree-view.tsx",
+  "use": [
+   "Files, folders, and nested categories people expand and select.",
+   "Side panels next to code-block or a detail view where selection drives content.",
+   "Hierarchies that need full keyboard navigation with arrow keys."
+  ],
+  "avoid": [
+   "Use accordion for a few collapsible sections of content.",
+   "Use breadcrumb to show the path to the current page."
+  ],
+  "install": "npx shadcn@latest add https://uiarc.dev/r/tree-view.json"
+ },
+ {
+  "name": "treemap",
+  "title": "Treemap",
+  "description": "A squarified treemap: click to drill and the tiles grow to fill the view, with a breadcrumb back and metrics that morph every tile.",
+  "kind": "component",
+  "categories": [
+   "data"
+  ],
+  "tags": [
+   "data",
+   "chart",
+   "new"
+  ],
+  "files": [
+   "treemap/treemap.tsx",
+   "treemap/treemap.module.css"
+  ],
+  "demo": "demos/treemap.tsx",
+  "use": [
+   "Many parts where the biggest ones matter and people drill for detail.",
+   "Showing size and a second measure at once."
+  ],
+  "avoid": [
+   "Use bar-chart when exact comparisons between similar values matter.",
+   "Use sunburst when the depth of the hierarchy is the story."
+  ],
+  "install": "npx shadcn@latest add https://uiarc.dev/r/treemap.json"
+ },
+ {
+  "name": "usage-meter",
+  "title": "Usage meter",
+  "description": "Show what fills an allowance and how close it is to the limit.",
+  "kind": "component",
+  "categories": [
+   "feedback"
+  ],
+  "tags": [
+   "meter",
+   "usage",
+   "storage"
+  ],
+  "files": [
+   "usage-meter/usage-meter.tsx",
+   "usage-meter/usage-meter.module.css"
+  ],
+  "demo": "demos/usage-meter.tsx",
+  "use": [
+   "Quota against a fixed allowance, such as storage, seats, or API calls.",
+   "Billing pages that should show what takes the space and how close the plan is to full.",
+   "Plans that can go over the limit, where the overage should be clear without relying on color."
+  ],
+  "avoid": [
+   "Use progress for task completion.",
+   "Use bar-chart to compare categories without a limit.",
+   "Use gauge or stat-card for a single headline metric."
+  ],
+  "install": "npx shadcn@latest add https://uiarc.dev/r/usage-meter.json"
+ },
+ {
+  "name": "user-menu",
+  "title": "User menu",
+  "description": "Your account, settings, theme, and sign out behind the avatar. Opens as a bottom sheet on phones.",
+  "kind": "component",
+  "categories": [
+   "actions"
+  ],
+  "tags": [
+   "motion",
+   "product"
+  ],
+  "files": [
+   "user-menu/user-menu.tsx",
+   "user-menu/user-menu.module.css"
+  ],
+  "demo": "demos/user-menu.tsx",
+  "use": [
+   "The single account entry point in an app top bar.",
+   "Menus that combine presence status, theme preference, account links, and sign out.",
+   "Apps that want async sign out with a spinner in the menu."
+  ],
+  "avoid": [
+   "Use dropdown-menu for generic command lists.",
+   "Use theme-switch for a standalone light and dark toggle.",
+   "Use workspace-sidebar when account and workspace switching live in a side navigation."
+  ],
+  "install": "npx shadcn@latest add https://uiarc.dev/r/user-menu.json"
+ },
+ {
+  "name": "waffle-chart",
+  "title": "Waffle chart",
+  "description": "A ten by ten unit chart where every cell is one percent, and cells fly to their new group when the data changes.",
+  "kind": "component",
+  "categories": [
+   "data"
+  ],
+  "tags": [
+   "data",
+   "chart",
+   "new"
+  ],
+  "files": [
+   "waffle-chart/waffle-chart.tsx",
+   "waffle-chart/waffle-chart.module.css"
+  ],
+  "demo": "demos/waffle-chart.tsx",
+  "use": [
+   "Showing shares of one whole where people should be able to count units.",
+   "Comparing the same categories across a few datasets, such as countries or years.",
+   "Replacing a pie or donut when small shares need to stay visible."
+  ],
+  "avoid": [
+   "Use line-chart or streamgraph for how shares change over time.",
+   "Use bar-chart when exact comparison of many categories matters more than the whole.",
+   "Use sunburst for nested parts of a whole."
+  ],
+  "install": "npx shadcn@latest add https://uiarc.dev/r/waffle-chart.json"
+ }
+]

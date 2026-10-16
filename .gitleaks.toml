@@ -1,0 +1,19 @@
+# gitleaks reads this from the repo root (the public export scan, siso-os-release `oss export`).
+# Each path is a vendored public library demo whose "key" is placeholder copy, read and judged harmless on 16 Oct 2026.
+# Keep it to single files; a real key anywhere else still fails the scan.
+[extend]
+useDefault = true
+
+[allowlist]
+description = "placeholder keys in vendored public UI demos"
+paths = [
+  '''app/src/kit/animateicons/icons/linkedin-0-1-icon\.tsx$''',           # SVG path data, not a client id
+  '''app/src/kit/diceui/examples/key-value-paste-demo\.tsx$''',           # API_KEY=... sample paste
+  '''app/src/kit/shadcn-dashboard/components/shadcn-dashboard/collapsible/collapsible-03\.tsx$''',  # sk_test-style sample keys
+  '''app/src/kit/shadcn-space/components/shadcn-space/collapsible/collapsible-03\.tsx$''',          # the same demo, another library
+  '''app/src/kit/shadcn-ui-blocks/components/blocks/application/user-profiles/developer\.tsx$''',   # sample API key rows
+  '''app/src/kit/shadcn-ui-blocks/components/blocks/marketing/hero-sections/with-api-preview\.tsx$''',  # curl sample
+  '''app/src/kit/shadcn-ui-blocks/components/blocks/marketing/integrations/api-preview\.tsx$''',     # curl and client_secret sample
+  '''app/src/kit/diceui/code\.json$''',                                # the diceui demos' source as JSON (the same API_KEY sample)
+  '''app/src/kit/index\.json$''',                                      # the demo index naming "API Preview"
+]

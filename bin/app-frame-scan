@@ -1,0 +1,39 @@
+#!/usr/bin/env python3
+"""Reads the code of every sidebar and app shell we hold (catalogue/kit-shells.json) and counts which region choices each makes: frame, collapse, header, nav, footer, top bar. Library primitives are skipped. Usage: bin/app-frame-scan <hub dir>; writes /tmp/kitmap/shell-scan.json. No model."""
+import json,re,os,collections,sys
+HUB=sys.argv[1]; S=json.load(open(f"{HUB}/catalogue/kit-shells.json")); SRC=f"{HUB}/app/src"
+def read_with_locals(path,depth=2,seen=None):
+    seen=seen or set()
+    if path in seen or not os.path.exists(path): return ""
+    # skip the library primitives (ui/sidebar.tsx, ui/button.tsx...): they hold every option, not the choices a demo makes
+    if seen and re.search(r"/(ui|primitives)/[^/]+$", path): return ""
+    seen.add(path); code=open(path,errors="ignore").read(); out=code
+    if depth:
+        for s in re.findall(r'from\s+["\'](\.{1,2}/[^"\']+)["\']',code):
+            b=os.path.normpath(os.path.join(os.path.dirname(path),s))
+            for e in ("",".tsx",".ts","/index.tsx"):
+                if os.path.isfile(b+e): out+="\n"+read_with_locals(b+e,depth-1,seen); break
+    return out
+F={ # region -> variant -> regex
+ "frame":{"inset":r'variant=["\']inset',"floating":r'variant=["\']floating',"plain":r'<Sidebar\b(?![^>]*variant=)',"right side":r'side=["\']right',"two sidebars":r'(<Sidebar\b[\s\S]*){2,}'},
+ "collapse":{"to icons":r'collapsible=["\']icon',"off canvas":r'collapsible=["\']offcanvas',"fixed":r'collapsible=["\']none',"rail handle":r'SidebarRail',"trigger button":r'SidebarTrigger'},
+ "header":{"team/workspace switcher":r'TeamSwitcher|WorkspaceSwitcher|team-switcher|workspace|Workspace|OrgSwitcher|ProjectSwitcher',"version switcher":r'VersionSwitcher',"brand logo":r'SidebarHeader[\s\S]{0,600}(logo|Logo|brand|<svg|<img)',"search":r'SearchForm|SidebarInput|<Input\b|Search'},
+ "nav":{"grouped with labels":r'SidebarGroupLabel',"collapsible groups":r'Collapsible',"nested sub-items":r'SidebarMenuSub',"badges/counts":r'SidebarMenuBadge|<Badge',"item actions menu":r'SidebarMenuAction',"projects list":r'[Pp]rojects|NavProjects',"icon rail + panel":r'(rail|Rail)[\s\S]{0,2000}(panel|Panel)|icon.?rail|IconRail',"tabs inside":r'TabsList|<Tabs\b',"tree/files":r'[Tt]ree|FileTree|folder'},
+ "footer":{"user menu":r'NavUser|UserMenu|user-menu|DropdownMenu[\s\S]{0,800}(avatar|Avatar)',"upgrade/promo card":r'[Uu]pgrade|[Pp]romo|Card[\s\S]{0,200}(Pro|plan)',"settings/help links":r'SidebarFooter[\s\S]{0,800}(Settings|Help|Support)',"theme switch":r'ThemeToggle|theme-switch|ModeToggle|setTheme'},
+ "top bar":{"breadcrumb":r'Breadcrumb',"top bar":r'<header\b|SiteHeader|TopBar|Navbar',"command palette":r'Command(Dialog|Menu)|cmdk',"notifications":r'[Nn]otification|Bell'},
+}
+C={r:collections.Counter() for r in F}; per=[]
+for kind in ("sidebar","app-shell"):
+  for p in S[kind]["parts"]:
+    f=f"{SRC}/kit/{p['id'].split('/')[0]}/{p['file']}"; code=read_with_locals(f)
+    if not code: continue
+    uses_shadcn = bool(re.search(r'SidebarProvider|SidebarMenu|ui/sidebar',code))
+    hit={r:[v for v,rx in vs.items() if re.search(rx,code)] for r,vs in F.items()}
+    for r,vs in hit.items(): C[r].update(vs)
+    per.append({"id":p["id"],"kind":kind,"shadcn_sidebar":uses_shadcn,"loc":code.count("\n"),**hit})
+n=len(per); sh=sum(x["shadcn_sidebar"] for x in per)
+print(f"{n} parts read; built on shadcn's sidebar primitive: {sh}")
+for r,c in C.items(): print(f"{r:8}", ", ".join(f"{v} {k}" for v,k in [(k,v) for v,k in c.most_common()]))
+json.dump(per,open("/tmp/kitmap/shell-scan.json","w"),indent=0)
+sig=collections.Counter((tuple(x["frame"][:1]),tuple(x["collapse"][:1]),tuple(sorted(x["header"])[:1]),tuple(sorted(x["footer"])[:1])) for x in per)
+print("distinct frame/collapse/header/footer combos:",len(sig))

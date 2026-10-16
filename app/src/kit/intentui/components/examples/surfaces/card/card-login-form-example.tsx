@@ -1,0 +1,45 @@
+"use client"
+
+import { Form } from "react-aria-components/Form"
+import { Button } from "../../../ui/button"
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "../../../ui/card"
+import { Checkbox, CheckboxField } from "../../../ui/checkbox"
+import { Label } from "../../../ui/field"
+import { Input } from "../../../ui/input"
+import { Link } from "../../../ui/link"
+import { TextField } from "../../../ui/text-field"
+
+export default function CardLoginFormDemo() {
+  return (
+    <Card className="mx-auto w-full sm:min-w-sm max-w-sm">
+      <CardHeader>
+        <CardTitle>Login</CardTitle>
+        <CardDescription>Don't loose the level, just keep on going.</CardDescription>
+      </CardHeader>
+      <CardContent>
+        <Form className="space-y-6">
+          <TextField isRequired>
+            <Label>Email</Label>
+            <Input placeholder="Enter your email" />
+          </TextField>
+          <TextField isRequired>
+            <Label>Password</Label>
+            <Input type="password" placeholder="Enter your password" />
+          </TextField>
+          <div className="flex items-center justify-between">
+            <CheckboxField>
+              <Checkbox>Remember me</Checkbox>
+            </CheckboxField>
+            <Link
+              className="text-base/6 text-primary-subtle-fg hover:underline sm:text-sm/6"
+              href="#"
+            >
+              Forgot password?
+            </Link>
+          </div>
+          <Button className="w-full">Login</Button>
+        </Form>
+      </CardContent>
+    </Card>
+  )
+}

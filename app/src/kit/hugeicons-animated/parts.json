@@ -1,0 +1,3346 @@
+{
+"lib": "hugeicons-animated",
+"source": "hugeicons-animated",
+"homepage": "https://hugeicons-animated.com",
+"description": "An open-source collection of animated Hugeicons for React.",
+"items": 165,
+"parts": [
+{
+"id": "hugeicons-animated/add-circle",
+"name": "add-circle",
+"title": "add-circle",
+"description": "Animated add circle icon",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [],
+"file": "icons/add-circle.tsx",
+"files": [
+"icons/add-circle.tsx",
+"lib/use-icon-animation.ts"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://hugeicons-animated.com/r/add-circle.json"
+},
+{
+"id": "hugeicons-animated/airplane-take-off-01",
+"name": "airplane-take-off-01",
+"title": "airplane-take-off-01",
+"description": "Animated airplane take off icon",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [
+"billing"
+],
+"file": "icons/airplane-take-off-01.tsx",
+"files": [
+"icons/airplane-take-off-01.tsx",
+"lib/use-icon-animation.ts"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://hugeicons-animated.com/r/airplane-take-off-01.json"
+},
+{
+"id": "hugeicons-animated/alarm-clock",
+"name": "alarm-clock",
+"title": "alarm-clock",
+"description": "Animated alarm clock icon",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [],
+"file": "icons/alarm-clock.tsx",
+"files": [
+"icons/alarm-clock.tsx",
+"lib/use-icon-animation.ts"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://hugeicons-animated.com/r/alarm-clock.json"
+},
+{
+"id": "hugeicons-animated/alert-circle",
+"name": "alert-circle",
+"title": "alert-circle",
+"description": "Animated alert circle icon",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [],
+"file": "icons/alert-circle.tsx",
+"files": [
+"icons/alert-circle.tsx",
+"lib/use-icon-animation.ts"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://hugeicons-animated.com/r/alert-circle.json"
+},
+{
+"id": "hugeicons-animated/archive-02",
+"name": "archive-02",
+"title": "archive-02",
+"description": "Animated archive icon",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [],
+"file": "icons/archive-02.tsx",
+"files": [
+"icons/archive-02.tsx",
+"lib/use-icon-animation.ts"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://hugeicons-animated.com/r/archive-02.json"
+},
+{
+"id": "hugeicons-animated/arrow-down-02",
+"name": "arrow-down-02",
+"title": "arrow-down-02",
+"description": "Animated arrow down icon",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [],
+"file": "icons/arrow-down-02.tsx",
+"files": [
+"icons/arrow-down-02.tsx",
+"lib/use-icon-animation.ts"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://hugeicons-animated.com/r/arrow-down-02.json"
+},
+{
+"id": "hugeicons-animated/arrow-down-left-01",
+"name": "arrow-down-left-01",
+"title": "arrow-down-left-01",
+"description": "Animated arrow down left icon",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [],
+"file": "icons/arrow-down-left-01.tsx",
+"files": [
+"icons/arrow-down-left-01.tsx",
+"lib/use-icon-animation.ts"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://hugeicons-animated.com/r/arrow-down-left-01.json"
+},
+{
+"id": "hugeicons-animated/arrow-down-right-01",
+"name": "arrow-down-right-01",
+"title": "arrow-down-right-01",
+"description": "Animated arrow down right icon",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [],
+"file": "icons/arrow-down-right-01.tsx",
+"files": [
+"icons/arrow-down-right-01.tsx",
+"lib/use-icon-animation.ts"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://hugeicons-animated.com/r/arrow-down-right-01.json"
+},
+{
+"id": "hugeicons-animated/arrow-left-02",
+"name": "arrow-left-02",
+"title": "arrow-left-02",
+"description": "Animated arrow left icon",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [],
+"file": "icons/arrow-left-02.tsx",
+"files": [
+"icons/arrow-left-02.tsx",
+"lib/use-icon-animation.ts"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://hugeicons-animated.com/r/arrow-left-02.json"
+},
+{
+"id": "hugeicons-animated/arrow-right-02",
+"name": "arrow-right-02",
+"title": "arrow-right-02",
+"description": "Animated arrow right icon",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [],
+"file": "icons/arrow-right-02.tsx",
+"files": [
+"icons/arrow-right-02.tsx",
+"lib/use-icon-animation.ts"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://hugeicons-animated.com/r/arrow-right-02.json"
+},
+{
+"id": "hugeicons-animated/arrow-up-02",
+"name": "arrow-up-02",
+"title": "arrow-up-02",
+"description": "Animated arrow up icon",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [],
+"file": "icons/arrow-up-02.tsx",
+"files": [
+"icons/arrow-up-02.tsx",
+"lib/use-icon-animation.ts"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://hugeicons-animated.com/r/arrow-up-02.json"
+},
+{
+"id": "hugeicons-animated/arrow-up-left-01",
+"name": "arrow-up-left-01",
+"title": "arrow-up-left-01",
+"description": "Animated arrow up left icon",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [],
+"file": "icons/arrow-up-left-01.tsx",
+"files": [
+"icons/arrow-up-left-01.tsx",
+"lib/use-icon-animation.ts"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://hugeicons-animated.com/r/arrow-up-left-01.json"
+},
+{
+"id": "hugeicons-animated/arrow-up-right-01",
+"name": "arrow-up-right-01",
+"title": "arrow-up-right-01",
+"description": "Animated arrow up right icon",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [],
+"file": "icons/arrow-up-right-01.tsx",
+"files": [
+"icons/arrow-up-right-01.tsx",
+"lib/use-icon-animation.ts"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://hugeicons-animated.com/r/arrow-up-right-01.json"
+},
+{
+"id": "hugeicons-animated/attachment",
+"name": "attachment",
+"title": "attachment",
+"description": "Animated attachment icon",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [],
+"file": "icons/attachment.tsx",
+"files": [
+"icons/attachment.tsx",
+"lib/use-icon-animation.ts"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://hugeicons-animated.com/r/attachment.json"
+},
+{
+"id": "hugeicons-animated/battery-charging-01",
+"name": "battery-charging-01",
+"title": "battery-charging-01",
+"description": "Animated battery charging icon",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [],
+"file": "icons/battery-charging-01.tsx",
+"files": [
+"icons/battery-charging-01.tsx",
+"lib/use-icon-animation.ts"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://hugeicons-animated.com/r/battery-charging-01.json"
+},
+{
+"id": "hugeicons-animated/bluetooth",
+"name": "bluetooth",
+"title": "bluetooth",
+"description": "Animated bluetooth icon",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [],
+"file": "icons/bluetooth.tsx",
+"files": [
+"icons/bluetooth.tsx",
+"lib/use-icon-animation.ts"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://hugeicons-animated.com/r/bluetooth.json"
+},
+{
+"id": "hugeicons-animated/bookmark-01",
+"name": "bookmark-01",
+"title": "bookmark-01",
+"description": "Animated bookmark icon",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [],
+"file": "icons/bookmark-01.tsx",
+"files": [
+"icons/bookmark-01.tsx",
+"lib/use-icon-animation.ts"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://hugeicons-animated.com/r/bookmark-01.json"
+},
+{
+"id": "hugeicons-animated/bug-01",
+"name": "bug-01",
+"title": "bug-01",
+"description": "Animated bug icon",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [],
+"file": "icons/bug-01.tsx",
+"files": [
+"icons/bug-01.tsx",
+"lib/use-icon-animation.ts"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://hugeicons-animated.com/r/bug-01.json"
+},
+{
+"id": "hugeicons-animated/bulb",
+"name": "bulb",
+"title": "bulb",
+"description": "Animated bulb icon",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [],
+"file": "icons/bulb.tsx",
+"files": [
+"icons/bulb.tsx",
+"lib/use-icon-animation.ts"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://hugeicons-animated.com/r/bulb.json"
+},
+{
+"id": "hugeicons-animated/calendar-03",
+"name": "calendar-03",
+"title": "calendar-03",
+"description": "Animated calendar icon",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [],
+"file": "icons/calendar-03.tsx",
+"files": [
+"icons/calendar-03.tsx",
+"lib/use-icon-animation.ts"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://hugeicons-animated.com/r/calendar-03.json"
+},
+{
+"id": "hugeicons-animated/calendar-add-01",
+"name": "calendar-add-01",
+"title": "calendar-add-01",
+"description": "Animated calendar add icon",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [],
+"file": "icons/calendar-add-01.tsx",
+"files": [
+"icons/calendar-add-01.tsx",
+"lib/use-icon-animation.ts"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://hugeicons-animated.com/r/calendar-add-01.json"
+},
+{
+"id": "hugeicons-animated/call-02",
+"name": "call-02",
+"title": "call-02",
+"description": "Animated call icon",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [],
+"file": "icons/call-02.tsx",
+"files": [
+"icons/call-02.tsx",
+"lib/use-icon-animation.ts"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://hugeicons-animated.com/r/call-02.json"
+},
+{
+"id": "hugeicons-animated/call-incoming-01",
+"name": "call-incoming-01",
+"title": "call-incoming-01",
+"description": "Animated call incoming icon",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [],
+"file": "icons/call-incoming-01.tsx",
+"files": [
+"icons/call-incoming-01.tsx",
+"lib/use-icon-animation.ts"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://hugeicons-animated.com/r/call-incoming-01.json"
+},
+{
+"id": "hugeicons-animated/call-outgoing-01",
+"name": "call-outgoing-01",
+"title": "call-outgoing-01",
+"description": "Animated call outgoing icon",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [],
+"file": "icons/call-outgoing-01.tsx",
+"files": [
+"icons/call-outgoing-01.tsx",
+"lib/use-icon-animation.ts"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://hugeicons-animated.com/r/call-outgoing-01.json"
+},
+{
+"id": "hugeicons-animated/camera-01",
+"name": "camera-01",
+"title": "camera-01",
+"description": "Animated camera icon",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [],
+"file": "icons/camera-01.tsx",
+"files": [
+"icons/camera-01.tsx",
+"lib/use-icon-animation.ts"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://hugeicons-animated.com/r/camera-01.json"
+},
+{
+"id": "hugeicons-animated/cancel-01",
+"name": "cancel-01",
+"title": "cancel-01",
+"description": "Animated cancel icon",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [],
+"file": "icons/cancel-01.tsx",
+"files": [
+"icons/cancel-01.tsx",
+"lib/use-icon-animation.ts"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://hugeicons-animated.com/r/cancel-01.json"
+},
+{
+"id": "hugeicons-animated/chevron-down",
+"name": "chevron-down",
+"title": "chevron-down",
+"description": "Animated chevron down icon",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [],
+"file": "icons/chevron-down.tsx",
+"files": [
+"icons/chevron-down.tsx",
+"lib/use-icon-animation.ts"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://hugeicons-animated.com/r/chevron-down.json"
+},
+{
+"id": "hugeicons-animated/chevron-left",
+"name": "chevron-left",
+"title": "chevron-left",
+"description": "Animated chevron left icon",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [],
+"file": "icons/chevron-left.tsx",
+"files": [
+"icons/chevron-left.tsx",
+"lib/use-icon-animation.ts"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://hugeicons-animated.com/r/chevron-left.json"
+},
+{
+"id": "hugeicons-animated/chevron-right",
+"name": "chevron-right",
+"title": "chevron-right",
+"description": "Animated chevron right icon",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [],
+"file": "icons/chevron-right.tsx",
+"files": [
+"icons/chevron-right.tsx",
+"lib/use-icon-animation.ts"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://hugeicons-animated.com/r/chevron-right.json"
+},
+{
+"id": "hugeicons-animated/chevron-up",
+"name": "chevron-up",
+"title": "chevron-up",
+"description": "Animated chevron up icon",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [],
+"file": "icons/chevron-up.tsx",
+"files": [
+"icons/chevron-up.tsx",
+"lib/use-icon-animation.ts"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://hugeicons-animated.com/r/chevron-up.json"
+},
+{
+"id": "hugeicons-animated/circle-check",
+"name": "circle-check",
+"title": "circle-check",
+"description": "Animated circle check icon",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [],
+"file": "icons/circle-check.tsx",
+"files": [
+"icons/circle-check.tsx",
+"lib/use-icon-animation.ts"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://hugeicons-animated.com/r/circle-check.json"
+},
+{
+"id": "hugeicons-animated/circle-x",
+"name": "circle-x",
+"title": "circle-x",
+"description": "Animated circle x icon",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [],
+"file": "icons/circle-x.tsx",
+"files": [
+"icons/circle-x.tsx",
+"lib/use-icon-animation.ts"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://hugeicons-animated.com/r/circle-x.json"
+},
+{
+"id": "hugeicons-animated/clipboard-paste",
+"name": "clipboard-paste",
+"title": "clipboard-paste",
+"description": "Animated clipboard paste icon",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [
+"dev tools"
+],
+"file": "icons/clipboard-paste.tsx",
+"files": [
+"icons/clipboard-paste.tsx",
+"lib/use-icon-animation.ts"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://hugeicons-animated.com/r/clipboard-paste.json"
+},
+{
+"id": "hugeicons-animated/clipboard",
+"name": "clipboard",
+"title": "clipboard",
+"description": "Animated clipboard icon",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [
+"dev tools"
+],
+"file": "icons/clipboard.tsx",
+"files": [
+"icons/clipboard.tsx",
+"lib/use-icon-animation.ts"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://hugeicons-animated.com/r/clipboard.json"
+},
+{
+"id": "hugeicons-animated/clock-01",
+"name": "clock-01",
+"title": "clock-01",
+"description": "Animated clock icon",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [],
+"file": "icons/clock-01.tsx",
+"files": [
+"icons/clock-01.tsx",
+"lib/use-icon-animation.ts"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://hugeicons-animated.com/r/clock-01.json"
+},
+{
+"id": "hugeicons-animated/cloud-download",
+"name": "cloud-download",
+"title": "cloud-download",
+"description": "Animated cloud download icon",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [],
+"file": "icons/cloud-download.tsx",
+"files": [
+"icons/cloud-download.tsx",
+"lib/use-icon-animation.ts"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://hugeicons-animated.com/r/cloud-download.json"
+},
+{
+"id": "hugeicons-animated/cloud-lightning",
+"name": "cloud-lightning",
+"title": "cloud-lightning",
+"description": "Animated cloud lightning icon",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [],
+"file": "icons/cloud-lightning.tsx",
+"files": [
+"icons/cloud-lightning.tsx",
+"lib/use-icon-animation.ts"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://hugeicons-animated.com/r/cloud-lightning.json"
+},
+{
+"id": "hugeicons-animated/cloud-rain",
+"name": "cloud-rain",
+"title": "cloud-rain",
+"description": "Animated cloud rain icon",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [],
+"file": "icons/cloud-rain.tsx",
+"files": [
+"icons/cloud-rain.tsx",
+"lib/use-icon-animation.ts"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://hugeicons-animated.com/r/cloud-rain.json"
+},
+{
+"id": "hugeicons-animated/cloud-upload",
+"name": "cloud-upload",
+"title": "cloud-upload",
+"description": "Animated cloud upload icon",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [],
+"file": "icons/cloud-upload.tsx",
+"files": [
+"icons/cloud-upload.tsx",
+"lib/use-icon-animation.ts"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://hugeicons-animated.com/r/cloud-upload.json"
+},
+{
+"id": "hugeicons-animated/cloud",
+"name": "cloud",
+"title": "cloud",
+"description": "Animated cloud icon",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [],
+"file": "icons/cloud.tsx",
+"files": [
+"icons/cloud.tsx",
+"lib/use-icon-animation.ts"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://hugeicons-animated.com/r/cloud.json"
+},
+{
+"id": "hugeicons-animated/code-xml",
+"name": "code-xml",
+"title": "code-xml",
+"description": "Animated code xml icon",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [
+"dev tools"
+],
+"file": "icons/code-xml.tsx",
+"files": [
+"icons/code-xml.tsx",
+"lib/use-icon-animation.ts"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://hugeicons-animated.com/r/code-xml.json"
+},
+{
+"id": "hugeicons-animated/coffee-02",
+"name": "coffee-02",
+"title": "coffee-02",
+"description": "Animated coffee icon",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [],
+"file": "icons/coffee-02.tsx",
+"files": [
+"icons/coffee-02.tsx",
+"lib/use-icon-animation.ts"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://hugeicons-animated.com/r/coffee-02.json"
+},
+{
+"id": "hugeicons-animated/command",
+"name": "command",
+"title": "command",
+"description": "Animated command icon",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [],
+"file": "icons/command.tsx",
+"files": [
+"icons/command.tsx",
+"lib/use-icon-animation.ts"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://hugeicons-animated.com/r/command.json"
+},
+{
+"id": "hugeicons-animated/compass",
+"name": "compass",
+"title": "compass",
+"description": "Animated compass icon",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [],
+"file": "icons/compass.tsx",
+"files": [
+"icons/compass.tsx",
+"lib/use-icon-animation.ts"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://hugeicons-animated.com/r/compass.json"
+},
+{
+"id": "hugeicons-animated/copy-01",
+"name": "copy-01",
+"title": "copy-01",
+"description": "Animated copy icon",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [],
+"file": "icons/copy-01.tsx",
+"files": [
+"icons/copy-01.tsx",
+"lib/use-icon-animation.ts"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://hugeicons-animated.com/r/copy-01.json"
+},
+{
+"id": "hugeicons-animated/credit-card",
+"name": "credit-card",
+"title": "credit-card",
+"description": "Animated credit card icon",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [],
+"file": "icons/credit-card.tsx",
+"files": [
+"icons/credit-card.tsx",
+"lib/use-icon-animation.ts"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://hugeicons-animated.com/r/credit-card.json"
+},
+{
+"id": "hugeicons-animated/crown",
+"name": "crown",
+"title": "crown",
+"description": "Animated crown icon",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [],
+"file": "icons/crown.tsx",
+"files": [
+"icons/crown.tsx",
+"lib/use-icon-animation.ts"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://hugeicons-animated.com/r/crown.json"
+},
+{
+"id": "hugeicons-animated/cursor-pointer-01",
+"name": "cursor-pointer-01",
+"title": "cursor-pointer-01",
+"description": "Animated cursor pointer icon",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [],
+"file": "icons/cursor-pointer-01.tsx",
+"files": [
+"icons/cursor-pointer-01.tsx",
+"lib/use-icon-animation.ts"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://hugeicons-animated.com/r/cursor-pointer-01.json"
+},
+{
+"id": "hugeicons-animated/dashboard-square-01",
+"name": "dashboard-square-01",
+"title": "dashboard-square-01",
+"description": "Animated dashboard square icon",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [],
+"file": "icons/dashboard-square-01.tsx",
+"files": [
+"icons/dashboard-square-01.tsx",
+"lib/use-icon-animation.ts"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://hugeicons-animated.com/r/dashboard-square-01.json"
+},
+{
+"id": "hugeicons-animated/database",
+"name": "database",
+"title": "database",
+"description": "Animated database icon",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [],
+"file": "icons/database.tsx",
+"files": [
+"icons/database.tsx",
+"lib/use-icon-animation.ts"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://hugeicons-animated.com/r/database.json"
+},
+{
+"id": "hugeicons-animated/delete-02",
+"name": "delete-02",
+"title": "delete-02",
+"description": "Animated delete icon",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [],
+"file": "icons/delete-02.tsx",
+"files": [
+"icons/delete-02.tsx",
+"lib/use-icon-animation.ts"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://hugeicons-animated.com/r/delete-02.json"
+},
+{
+"id": "hugeicons-animated/diamond-02",
+"name": "diamond-02",
+"title": "diamond-02",
+"description": "Animated diamond icon",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [],
+"file": "icons/diamond-02.tsx",
+"files": [
+"icons/diamond-02.tsx",
+"lib/use-icon-animation.ts"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://hugeicons-animated.com/r/diamond-02.json"
+},
+{
+"id": "hugeicons-animated/document-attachment",
+"name": "document-attachment",
+"title": "document-attachment",
+"description": "Animated document attachment icon",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [],
+"file": "icons/document-attachment.tsx",
+"files": [
+"icons/document-attachment.tsx",
+"lib/use-icon-animation.ts"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://hugeicons-animated.com/r/document-attachment.json"
+},
+{
+"id": "hugeicons-animated/download-01",
+"name": "download-01",
+"title": "download-01",
+"description": "Animated download icon",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [],
+"file": "icons/download-01.tsx",
+"files": [
+"icons/download-01.tsx",
+"lib/use-icon-animation.ts"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://hugeicons-animated.com/r/download-01.json"
+},
+{
+"id": "hugeicons-animated/earth",
+"name": "earth",
+"title": "earth",
+"description": "Animated earth icon",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [],
+"file": "icons/earth.tsx",
+"files": [
+"icons/earth.tsx",
+"lib/use-icon-animation.ts"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://hugeicons-animated.com/r/earth.json"
+},
+{
+"id": "hugeicons-animated/edit-02",
+"name": "edit-02",
+"title": "edit-02",
+"description": "Animated edit icon",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [],
+"file": "icons/edit-02.tsx",
+"files": [
+"icons/edit-02.tsx",
+"lib/use-icon-animation.ts"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://hugeicons-animated.com/r/edit-02.json"
+},
+{
+"id": "hugeicons-animated/external-link",
+"name": "external-link",
+"title": "external-link",
+"description": "Animated external link icon",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [],
+"file": "icons/external-link.tsx",
+"files": [
+"icons/external-link.tsx",
+"lib/use-icon-animation.ts"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://hugeicons-animated.com/r/external-link.json"
+},
+{
+"id": "hugeicons-animated/eye-off",
+"name": "eye-off",
+"title": "eye-off",
+"description": "Animated eye off icon",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [],
+"file": "icons/eye-off.tsx",
+"files": [
+"icons/eye-off.tsx",
+"lib/use-icon-animation.ts"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://hugeicons-animated.com/r/eye-off.json"
+},
+{
+"id": "hugeicons-animated/eye",
+"name": "eye",
+"title": "eye",
+"description": "Animated eye icon",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [],
+"file": "icons/eye.tsx",
+"files": [
+"icons/eye.tsx",
+"lib/use-icon-animation.ts"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://hugeicons-animated.com/r/eye.json"
+},
+{
+"id": "hugeicons-animated/favourite",
+"name": "favourite",
+"title": "favourite",
+"description": "Animated favourite icon",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [],
+"file": "icons/favourite.tsx",
+"files": [
+"icons/favourite.tsx",
+"lib/use-icon-animation.ts"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://hugeicons-animated.com/r/favourite.json"
+},
+{
+"id": "hugeicons-animated/file-01",
+"name": "file-01",
+"title": "file-01",
+"description": "Animated file icon",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [],
+"file": "icons/file-01.tsx",
+"files": [
+"icons/file-01.tsx",
+"lib/use-icon-animation.ts"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://hugeicons-animated.com/r/file-01.json"
+},
+{
+"id": "hugeicons-animated/file-add",
+"name": "file-add",
+"title": "file-add",
+"description": "Animated file add icon",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [],
+"file": "icons/file-add.tsx",
+"files": [
+"icons/file-add.tsx",
+"lib/use-icon-animation.ts"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://hugeicons-animated.com/r/file-add.json"
+},
+{
+"id": "hugeicons-animated/file-download",
+"name": "file-download",
+"title": "file-download",
+"description": "Animated file download icon",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [],
+"file": "icons/file-download.tsx",
+"files": [
+"icons/file-download.tsx",
+"lib/use-icon-animation.ts"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://hugeicons-animated.com/r/file-download.json"
+},
+{
+"id": "hugeicons-animated/file-upload",
+"name": "file-upload",
+"title": "file-upload",
+"description": "Animated file upload icon",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [],
+"file": "icons/file-upload.tsx",
+"files": [
+"icons/file-upload.tsx",
+"lib/use-icon-animation.ts"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://hugeicons-animated.com/r/file-upload.json"
+},
+{
+"id": "hugeicons-animated/filter",
+"name": "filter",
+"title": "filter",
+"description": "Animated filter icon",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [],
+"file": "icons/filter.tsx",
+"files": [
+"icons/filter.tsx",
+"lib/use-icon-animation.ts"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://hugeicons-animated.com/r/filter.json"
+},
+{
+"id": "hugeicons-animated/fire",
+"name": "fire",
+"title": "fire",
+"description": "Animated fire icon",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [],
+"file": "icons/fire.tsx",
+"files": [
+"icons/fire.tsx",
+"lib/use-icon-animation.ts"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://hugeicons-animated.com/r/fire.json"
+},
+{
+"id": "hugeicons-animated/flash",
+"name": "flash",
+"title": "flash",
+"description": "Animated flash icon",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [],
+"file": "icons/flash.tsx",
+"files": [
+"icons/flash.tsx",
+"lib/use-icon-animation.ts"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://hugeicons-animated.com/r/flash.json"
+},
+{
+"id": "hugeicons-animated/flower",
+"name": "flower",
+"title": "flower",
+"description": "Animated flower icon",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [],
+"file": "icons/flower.tsx",
+"files": [
+"icons/flower.tsx",
+"lib/use-icon-animation.ts"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://hugeicons-animated.com/r/flower.json"
+},
+{
+"id": "hugeicons-animated/folder-01",
+"name": "folder-01",
+"title": "folder-01",
+"description": "Animated folder icon",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [],
+"file": "icons/folder-01.tsx",
+"files": [
+"icons/folder-01.tsx",
+"lib/use-icon-animation.ts"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://hugeicons-animated.com/r/folder-01.json"
+},
+{
+"id": "hugeicons-animated/folder-add",
+"name": "folder-add",
+"title": "folder-add",
+"description": "Animated folder add icon",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [],
+"file": "icons/folder-add.tsx",
+"files": [
+"icons/folder-add.tsx",
+"lib/use-icon-animation.ts"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://hugeicons-animated.com/r/folder-add.json"
+},
+{
+"id": "hugeicons-animated/folder-open",
+"name": "folder-open",
+"title": "folder-open",
+"description": "Animated folder open icon",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [],
+"file": "icons/folder-open.tsx",
+"files": [
+"icons/folder-open.tsx",
+"lib/use-icon-animation.ts"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://hugeicons-animated.com/r/folder-open.json"
+},
+{
+"id": "hugeicons-animated/full-screen",
+"name": "full-screen",
+"title": "full-screen",
+"description": "Animated full screen icon",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [],
+"file": "icons/full-screen.tsx",
+"files": [
+"icons/full-screen.tsx",
+"lib/use-icon-animation.ts"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://hugeicons-animated.com/r/full-screen.json"
+},
+{
+"id": "hugeicons-animated/ghost",
+"name": "ghost",
+"title": "ghost",
+"description": "Animated ghost icon",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [],
+"file": "icons/ghost.tsx",
+"files": [
+"icons/ghost.tsx",
+"lib/use-icon-animation.ts"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://hugeicons-animated.com/r/ghost.json"
+},
+{
+"id": "hugeicons-animated/gift",
+"name": "gift",
+"title": "gift",
+"description": "Animated gift icon",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [],
+"file": "icons/gift.tsx",
+"files": [
+"icons/gift.tsx",
+"lib/use-icon-animation.ts"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://hugeicons-animated.com/r/gift.json"
+},
+{
+"id": "hugeicons-animated/github",
+"name": "github",
+"title": "github",
+"description": "Animated github icon",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [
+"dev tools"
+],
+"file": "icons/github.tsx",
+"files": [
+"icons/github.tsx",
+"lib/use-icon-animation.ts"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://hugeicons-animated.com/r/github.json"
+},
+{
+"id": "hugeicons-animated/grid-view",
+"name": "grid-view",
+"title": "grid-view",
+"description": "Animated grid view icon",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [],
+"file": "icons/grid-view.tsx",
+"files": [
+"icons/grid-view.tsx",
+"lib/use-icon-animation.ts"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://hugeicons-animated.com/r/grid-view.json"
+},
+{
+"id": "hugeicons-animated/headphone-off",
+"name": "headphone-off",
+"title": "headphone-off",
+"description": "Animated headphone off icon",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [],
+"file": "icons/headphone-off.tsx",
+"files": [
+"icons/headphone-off.tsx",
+"lib/use-icon-animation.ts"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://hugeicons-animated.com/r/headphone-off.json"
+},
+{
+"id": "hugeicons-animated/headphones",
+"name": "headphones",
+"title": "headphones",
+"description": "Animated headphones icon",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [],
+"file": "icons/headphones.tsx",
+"files": [
+"icons/headphones.tsx",
+"lib/use-icon-animation.ts"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://hugeicons-animated.com/r/headphones.json"
+},
+{
+"id": "hugeicons-animated/help-circle",
+"name": "help-circle",
+"title": "help-circle",
+"description": "Animated help circle icon",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [],
+"file": "icons/help-circle.tsx",
+"files": [
+"icons/help-circle.tsx",
+"lib/use-icon-animation.ts"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://hugeicons-animated.com/r/help-circle.json"
+},
+{
+"id": "hugeicons-animated/history",
+"name": "history",
+"title": "history",
+"description": "Animated history icon",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [],
+"file": "icons/history.tsx",
+"files": [
+"icons/history.tsx",
+"lib/use-icon-animation.ts"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://hugeicons-animated.com/r/history.json"
+},
+{
+"id": "hugeicons-animated/home-01",
+"name": "home-01",
+"title": "home-01",
+"description": "Animated home icon",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [],
+"file": "icons/home-01.tsx",
+"files": [
+"icons/home-01.tsx",
+"lib/use-icon-animation.ts"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://hugeicons-animated.com/r/home-01.json"
+},
+{
+"id": "hugeicons-animated/image-01",
+"name": "image-01",
+"title": "image-01",
+"description": "Animated image icon",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [],
+"file": "icons/image-01.tsx",
+"files": [
+"icons/image-01.tsx",
+"lib/use-icon-animation.ts"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://hugeicons-animated.com/r/image-01.json"
+},
+{
+"id": "hugeicons-animated/inbox",
+"name": "inbox",
+"title": "inbox",
+"description": "Animated inbox icon",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [],
+"file": "icons/inbox.tsx",
+"files": [
+"icons/inbox.tsx",
+"lib/use-icon-animation.ts"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://hugeicons-animated.com/r/inbox.json"
+},
+{
+"id": "hugeicons-animated/information-circle",
+"name": "information-circle",
+"title": "information-circle",
+"description": "Animated information circle icon",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [],
+"file": "icons/information-circle.tsx",
+"files": [
+"icons/information-circle.tsx",
+"lib/use-icon-animation.ts"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://hugeicons-animated.com/r/information-circle.json"
+},
+{
+"id": "hugeicons-animated/key-01",
+"name": "key-01",
+"title": "key-01",
+"description": "Animated key icon",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [],
+"file": "icons/key-01.tsx",
+"files": [
+"icons/key-01.tsx",
+"lib/use-icon-animation.ts"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://hugeicons-animated.com/r/key-01.json"
+},
+{
+"id": "hugeicons-animated/leaf-01",
+"name": "leaf-01",
+"title": "leaf-01",
+"description": "Animated leaf icon",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [],
+"file": "icons/leaf-01.tsx",
+"files": [
+"icons/leaf-01.tsx",
+"lib/use-icon-animation.ts"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://hugeicons-animated.com/r/leaf-01.json"
+},
+{
+"id": "hugeicons-animated/link-01",
+"name": "link-01",
+"title": "link-01",
+"description": "Animated link icon",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [],
+"file": "icons/link-01.tsx",
+"files": [
+"icons/link-01.tsx",
+"lib/use-icon-animation.ts"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://hugeicons-animated.com/r/link-01.json"
+},
+{
+"id": "hugeicons-animated/link-square-02",
+"name": "link-square-02",
+"title": "link-square-02",
+"description": "Animated link square icon",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [],
+"file": "icons/link-square-02.tsx",
+"files": [
+"icons/link-square-02.tsx",
+"lib/use-icon-animation.ts"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://hugeicons-animated.com/r/link-square-02.json"
+},
+{
+"id": "hugeicons-animated/list-view",
+"name": "list-view",
+"title": "list-view",
+"description": "Animated list view icon",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [],
+"file": "icons/list-view.tsx",
+"files": [
+"icons/list-view.tsx",
+"lib/use-icon-animation.ts"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://hugeicons-animated.com/r/list-view.json"
+},
+{
+"id": "hugeicons-animated/loading-03",
+"name": "loading-03",
+"title": "loading-03",
+"description": "Animated loading icon",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [],
+"file": "icons/loading-03.tsx",
+"files": [
+"icons/loading-03.tsx",
+"lib/use-icon-animation.ts"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://hugeicons-animated.com/r/loading-03.json"
+},
+{
+"id": "hugeicons-animated/location-01",
+"name": "location-01",
+"title": "location-01",
+"description": "Animated location icon",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [
+"maps"
+],
+"file": "icons/location-01.tsx",
+"files": [
+"icons/location-01.tsx",
+"lib/use-icon-animation.ts"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://hugeicons-animated.com/r/location-01.json"
+},
+{
+"id": "hugeicons-animated/location-add-01",
+"name": "location-add-01",
+"title": "location-add-01",
+"description": "Animated location add icon",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [
+"maps"
+],
+"file": "icons/location-add-01.tsx",
+"files": [
+"icons/location-add-01.tsx",
+"lib/use-icon-animation.ts"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://hugeicons-animated.com/r/location-add-01.json"
+},
+{
+"id": "hugeicons-animated/lock",
+"name": "lock",
+"title": "lock",
+"description": "Animated lock icon",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [],
+"file": "icons/lock.tsx",
+"files": [
+"icons/lock.tsx",
+"lib/use-icon-animation.ts"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://hugeicons-animated.com/r/lock.json"
+},
+{
+"id": "hugeicons-animated/login-01",
+"name": "login-01",
+"title": "login-01",
+"description": "Animated login icon",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [
+"auth",
+"dev tools"
+],
+"file": "icons/login-01.tsx",
+"files": [
+"icons/login-01.tsx",
+"lib/use-icon-animation.ts"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://hugeicons-animated.com/r/login-01.json"
+},
+{
+"id": "hugeicons-animated/logout-01",
+"name": "logout-01",
+"title": "logout-01",
+"description": "Animated logout icon",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [
+"dev tools"
+],
+"file": "icons/logout-01.tsx",
+"files": [
+"icons/logout-01.tsx",
+"lib/use-icon-animation.ts"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://hugeicons-animated.com/r/logout-01.json"
+},
+{
+"id": "hugeicons-animated/magic-wand-01",
+"name": "magic-wand-01",
+"title": "magic-wand-01",
+"description": "Animated magic wand icon",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [],
+"file": "icons/magic-wand-01.tsx",
+"files": [
+"icons/magic-wand-01.tsx",
+"lib/use-icon-animation.ts"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://hugeicons-animated.com/r/magic-wand-01.json"
+},
+{
+"id": "hugeicons-animated/mail-01",
+"name": "mail-01",
+"title": "mail-01",
+"description": "Animated mail icon",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [
+"email"
+],
+"file": "icons/mail-01.tsx",
+"files": [
+"icons/mail-01.tsx",
+"lib/use-icon-animation.ts"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://hugeicons-animated.com/r/mail-01.json"
+},
+{
+"id": "hugeicons-animated/mail-open",
+"name": "mail-open",
+"title": "mail-open",
+"description": "Animated mail open icon",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [
+"email"
+],
+"file": "icons/mail-open.tsx",
+"files": [
+"icons/mail-open.tsx",
+"lib/use-icon-animation.ts"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://hugeicons-animated.com/r/mail-open.json"
+},
+{
+"id": "hugeicons-animated/maximize-screen",
+"name": "maximize-screen",
+"title": "maximize-screen",
+"description": "Animated maximize screen icon",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [],
+"file": "icons/maximize-screen.tsx",
+"files": [
+"icons/maximize-screen.tsx",
+"lib/use-icon-animation.ts"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://hugeicons-animated.com/r/maximize-screen.json"
+},
+{
+"id": "hugeicons-animated/menu-01",
+"name": "menu-01",
+"title": "menu-01",
+"description": "Animated menu icon",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [],
+"file": "icons/menu-01.tsx",
+"files": [
+"icons/menu-01.tsx",
+"lib/use-icon-animation.ts"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://hugeicons-animated.com/r/menu-01.json"
+},
+{
+"id": "hugeicons-animated/message-01",
+"name": "message-01",
+"title": "message-01",
+"description": "Animated message icon",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [],
+"file": "icons/message-01.tsx",
+"files": [
+"icons/message-01.tsx",
+"lib/use-icon-animation.ts"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://hugeicons-animated.com/r/message-01.json"
+},
+{
+"id": "hugeicons-animated/message-add-01",
+"name": "message-add-01",
+"title": "message-add-01",
+"description": "Animated message add icon",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [],
+"file": "icons/message-add-01.tsx",
+"files": [
+"icons/message-add-01.tsx",
+"lib/use-icon-animation.ts"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://hugeicons-animated.com/r/message-add-01.json"
+},
+{
+"id": "hugeicons-animated/mic-01",
+"name": "mic-01",
+"title": "mic-01",
+"description": "Animated mic icon",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [],
+"file": "icons/mic-01.tsx",
+"files": [
+"icons/mic-01.tsx",
+"lib/use-icon-animation.ts"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://hugeicons-animated.com/r/mic-01.json"
+},
+{
+"id": "hugeicons-animated/minimize-screen",
+"name": "minimize-screen",
+"title": "minimize-screen",
+"description": "Animated minimize screen icon",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [],
+"file": "icons/minimize-screen.tsx",
+"files": [
+"icons/minimize-screen.tsx",
+"lib/use-icon-animation.ts"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://hugeicons-animated.com/r/minimize-screen.json"
+},
+{
+"id": "hugeicons-animated/minus-sign-circle",
+"name": "minus-sign-circle",
+"title": "minus-sign-circle",
+"description": "Animated minus sign circle icon",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [],
+"file": "icons/minus-sign-circle.tsx",
+"files": [
+"icons/minus-sign-circle.tsx",
+"lib/use-icon-animation.ts"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://hugeicons-animated.com/r/minus-sign-circle.json"
+},
+{
+"id": "hugeicons-animated/minus-sign",
+"name": "minus-sign",
+"title": "minus-sign",
+"description": "Animated minus sign icon",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [],
+"file": "icons/minus-sign.tsx",
+"files": [
+"icons/minus-sign.tsx",
+"lib/use-icon-animation.ts"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://hugeicons-animated.com/r/minus-sign.json"
+},
+{
+"id": "hugeicons-animated/moon-02",
+"name": "moon-02",
+"title": "moon-02",
+"description": "Animated moon icon",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [],
+"file": "icons/moon-02.tsx",
+"files": [
+"icons/moon-02.tsx",
+"lib/use-icon-animation.ts"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://hugeicons-animated.com/r/moon-02.json"
+},
+{
+"id": "hugeicons-animated/more-horizontal",
+"name": "more-horizontal",
+"title": "more-horizontal",
+"description": "Animated more horizontal icon",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [],
+"file": "icons/more-horizontal.tsx",
+"files": [
+"icons/more-horizontal.tsx",
+"lib/use-icon-animation.ts"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://hugeicons-animated.com/r/more-horizontal.json"
+},
+{
+"id": "hugeicons-animated/more-vertical",
+"name": "more-vertical",
+"title": "more-vertical",
+"description": "Animated more vertical icon",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [],
+"file": "icons/more-vertical.tsx",
+"files": [
+"icons/more-vertical.tsx",
+"lib/use-icon-animation.ts"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://hugeicons-animated.com/r/more-vertical.json"
+},
+{
+"id": "hugeicons-animated/mouse-left-click-01",
+"name": "mouse-left-click-01",
+"title": "mouse-left-click-01",
+"description": "Animated mouse left click icon",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [
+"dev tools"
+],
+"file": "icons/mouse-left-click-01.tsx",
+"files": [
+"icons/mouse-left-click-01.tsx",
+"lib/use-icon-animation.ts"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://hugeicons-animated.com/r/mouse-left-click-01.json"
+},
+{
+"id": "hugeicons-animated/music-note-01",
+"name": "music-note-01",
+"title": "music-note-01",
+"description": "Animated music note icon",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [
+"media"
+],
+"file": "icons/music-note-01.tsx",
+"files": [
+"icons/music-note-01.tsx",
+"lib/use-icon-animation.ts"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://hugeicons-animated.com/r/music-note-01.json"
+},
+{
+"id": "hugeicons-animated/notification-03",
+"name": "notification-03",
+"title": "notification-03",
+"description": "Animated notification icon",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [],
+"file": "icons/notification-03.tsx",
+"files": [
+"icons/notification-03.tsx",
+"lib/use-icon-animation.ts"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://hugeicons-animated.com/r/notification-03.json"
+},
+{
+"id": "hugeicons-animated/notification-off-01",
+"name": "notification-off-01",
+"title": "notification-off-01",
+"description": "Animated notification off icon",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [],
+"file": "icons/notification-off-01.tsx",
+"files": [
+"icons/notification-off-01.tsx",
+"lib/use-icon-animation.ts"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://hugeicons-animated.com/r/notification-off-01.json"
+},
+{
+"id": "hugeicons-animated/paint-brush-02",
+"name": "paint-brush-02",
+"title": "paint-brush-02",
+"description": "Animated paint brush icon",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [],
+"file": "icons/paint-brush-02.tsx",
+"files": [
+"icons/paint-brush-02.tsx",
+"lib/use-icon-animation.ts"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://hugeicons-animated.com/r/paint-brush-02.json"
+},
+{
+"id": "hugeicons-animated/panel-left",
+"name": "panel-left",
+"title": "panel-left",
+"description": "Animated panel left icon",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [],
+"file": "icons/panel-left.tsx",
+"files": [
+"icons/panel-left.tsx",
+"lib/use-icon-animation.ts"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://hugeicons-animated.com/r/panel-left.json"
+},
+{
+"id": "hugeicons-animated/party",
+"name": "party",
+"title": "party",
+"description": "Animated party icon",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [],
+"file": "icons/party.tsx",
+"files": [
+"icons/party.tsx",
+"lib/use-icon-animation.ts"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://hugeicons-animated.com/r/party.json"
+},
+{
+"id": "hugeicons-animated/pause",
+"name": "pause",
+"title": "pause",
+"description": "Animated pause icon",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [],
+"file": "icons/pause.tsx",
+"files": [
+"icons/pause.tsx",
+"lib/use-icon-animation.ts"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://hugeicons-animated.com/r/pause.json"
+},
+{
+"id": "hugeicons-animated/pin",
+"name": "pin",
+"title": "pin",
+"description": "Animated pin icon",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [],
+"file": "icons/pin.tsx",
+"files": [
+"icons/pin.tsx",
+"lib/use-icon-animation.ts"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://hugeicons-animated.com/r/pin.json"
+},
+{
+"id": "hugeicons-animated/play",
+"name": "play",
+"title": "play",
+"description": "Animated play icon",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [],
+"file": "icons/play.tsx",
+"files": [
+"icons/play.tsx",
+"lib/use-icon-animation.ts"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://hugeicons-animated.com/r/play.json"
+},
+{
+"id": "hugeicons-animated/plus-sign",
+"name": "plus-sign",
+"title": "plus-sign",
+"description": "Animated plus sign icon",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [],
+"file": "icons/plus-sign.tsx",
+"files": [
+"icons/plus-sign.tsx",
+"lib/use-icon-animation.ts"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://hugeicons-animated.com/r/plus-sign.json"
+},
+{
+"id": "hugeicons-animated/printer",
+"name": "printer",
+"title": "printer",
+"description": "Animated printer icon",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [],
+"file": "icons/printer.tsx",
+"files": [
+"icons/printer.tsx",
+"lib/use-icon-animation.ts"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://hugeicons-animated.com/r/printer.json"
+},
+{
+"id": "hugeicons-animated/puzzle",
+"name": "puzzle",
+"title": "puzzle",
+"description": "Animated puzzle icon",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [],
+"file": "icons/puzzle.tsx",
+"files": [
+"icons/puzzle.tsx",
+"lib/use-icon-animation.ts"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://hugeicons-animated.com/r/puzzle.json"
+},
+{
+"id": "hugeicons-animated/qr-code-01",
+"name": "qr-code-01",
+"title": "qr-code-01",
+"description": "Animated qr code icon",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [
+"dev tools"
+],
+"file": "icons/qr-code-01.tsx",
+"files": [
+"icons/qr-code-01.tsx",
+"lib/use-icon-animation.ts"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://hugeicons-animated.com/r/qr-code-01.json"
+},
+{
+"id": "hugeicons-animated/redo",
+"name": "redo",
+"title": "redo",
+"description": "Animated redo icon",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [],
+"file": "icons/redo.tsx",
+"files": [
+"icons/redo.tsx",
+"lib/use-icon-animation.ts"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://hugeicons-animated.com/r/redo.json"
+},
+{
+"id": "hugeicons-animated/refresh",
+"name": "refresh",
+"title": "refresh",
+"description": "Animated refresh icon",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [],
+"file": "icons/refresh.tsx",
+"files": [
+"icons/refresh.tsx",
+"lib/use-icon-animation.ts"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://hugeicons-animated.com/r/refresh.json"
+},
+{
+"id": "hugeicons-animated/robot-01",
+"name": "robot-01",
+"title": "robot-01",
+"description": "Animated robot icon",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [],
+"file": "icons/robot-01.tsx",
+"files": [
+"icons/robot-01.tsx",
+"lib/use-icon-animation.ts"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://hugeicons-animated.com/r/robot-01.json"
+},
+{
+"id": "hugeicons-animated/rocket-01",
+"name": "rocket-01",
+"title": "rocket-01",
+"description": "Animated rocket icon",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [],
+"file": "icons/rocket-01.tsx",
+"files": [
+"icons/rocket-01.tsx",
+"lib/use-icon-animation.ts"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://hugeicons-animated.com/r/rocket-01.json"
+},
+{
+"id": "hugeicons-animated/save",
+"name": "save",
+"title": "save",
+"description": "Animated save icon",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [],
+"file": "icons/save.tsx",
+"files": [
+"icons/save.tsx",
+"lib/use-icon-animation.ts"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://hugeicons-animated.com/r/save.json"
+},
+{
+"id": "hugeicons-animated/scissor-01",
+"name": "scissor-01",
+"title": "scissor-01",
+"description": "Animated scissor icon",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [],
+"file": "icons/scissor-01.tsx",
+"files": [
+"icons/scissor-01.tsx",
+"lib/use-icon-animation.ts"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://hugeicons-animated.com/r/scissor-01.json"
+},
+{
+"id": "hugeicons-animated/search-01",
+"name": "search-01",
+"title": "search-01",
+"description": "Animated search icon",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [],
+"file": "icons/search-01.tsx",
+"files": [
+"icons/search-01.tsx",
+"lib/use-icon-animation.ts"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://hugeicons-animated.com/r/search-01.json"
+},
+{
+"id": "hugeicons-animated/sent",
+"name": "sent",
+"title": "sent",
+"description": "Animated sent icon",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [],
+"file": "icons/sent.tsx",
+"files": [
+"icons/sent.tsx",
+"lib/use-icon-animation.ts"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://hugeicons-animated.com/r/sent.json"
+},
+{
+"id": "hugeicons-animated/settings-01",
+"name": "settings-01",
+"title": "settings-01",
+"description": "Animated settings icon",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [],
+"file": "icons/settings-01.tsx",
+"files": [
+"icons/settings-01.tsx",
+"lib/use-icon-animation.ts"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://hugeicons-animated.com/r/settings-01.json"
+},
+{
+"id": "hugeicons-animated/share-08",
+"name": "share-08",
+"title": "share-08",
+"description": "Animated share icon",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [],
+"file": "icons/share-08.tsx",
+"files": [
+"icons/share-08.tsx",
+"lib/use-icon-animation.ts"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://hugeicons-animated.com/r/share-08.json"
+},
+{
+"id": "hugeicons-animated/shield-02",
+"name": "shield-02",
+"title": "shield-02",
+"description": "Animated shield icon",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [],
+"file": "icons/shield-02.tsx",
+"files": [
+"icons/shield-02.tsx",
+"lib/use-icon-animation.ts"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://hugeicons-animated.com/r/shield-02.json"
+},
+{
+"id": "hugeicons-animated/shopping-cart-01",
+"name": "shopping-cart-01",
+"title": "shopping-cart-01",
+"description": "Animated shopping cart icon",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [
+"commerce"
+],
+"file": "icons/shopping-cart-01.tsx",
+"files": [
+"icons/shopping-cart-01.tsx",
+"lib/use-icon-animation.ts"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://hugeicons-animated.com/r/shopping-cart-01.json"
+},
+{
+"id": "hugeicons-animated/shopping-cart-add-01",
+"name": "shopping-cart-add-01",
+"title": "shopping-cart-add-01",
+"description": "Animated shopping cart add icon",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [
+"commerce"
+],
+"file": "icons/shopping-cart-add-01.tsx",
+"files": [
+"icons/shopping-cart-add-01.tsx",
+"lib/use-icon-animation.ts"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://hugeicons-animated.com/r/shopping-cart-add-01.json"
+},
+{
+"id": "hugeicons-animated/sleeping",
+"name": "sleeping",
+"title": "sleeping",
+"description": "Animated sleeping icon",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [],
+"file": "icons/sleeping.tsx",
+"files": [
+"icons/sleeping.tsx",
+"lib/use-icon-animation.ts"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://hugeicons-animated.com/r/sleeping.json"
+},
+{
+"id": "hugeicons-animated/sliders-horizontal",
+"name": "sliders-horizontal",
+"title": "sliders-horizontal",
+"description": "Animated sliders horizontal icon",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [],
+"file": "icons/sliders-horizontal.tsx",
+"files": [
+"icons/sliders-horizontal.tsx",
+"lib/use-icon-animation.ts"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://hugeicons-animated.com/r/sliders-horizontal.json"
+},
+{
+"id": "hugeicons-animated/smile",
+"name": "smile",
+"title": "smile",
+"description": "Animated smile icon",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [],
+"file": "icons/smile.tsx",
+"files": [
+"icons/smile.tsx",
+"lib/use-icon-animation.ts"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://hugeicons-animated.com/r/smile.json"
+},
+{
+"id": "hugeicons-animated/snow",
+"name": "snow",
+"title": "snow",
+"description": "Animated snow icon",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [],
+"file": "icons/snow.tsx",
+"files": [
+"icons/snow.tsx",
+"lib/use-icon-animation.ts"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://hugeicons-animated.com/r/snow.json"
+},
+{
+"id": "hugeicons-animated/sort-by-down-01",
+"name": "sort-by-down-01",
+"title": "sort-by-down-01",
+"description": "Animated sort by down icon",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [],
+"file": "icons/sort-by-down-01.tsx",
+"files": [
+"icons/sort-by-down-01.tsx",
+"lib/use-icon-animation.ts"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://hugeicons-animated.com/r/sort-by-down-01.json"
+},
+{
+"id": "hugeicons-animated/sort-by-up-01",
+"name": "sort-by-up-01",
+"title": "sort-by-up-01",
+"description": "Animated sort by up icon",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [],
+"file": "icons/sort-by-up-01.tsx",
+"files": [
+"icons/sort-by-up-01.tsx",
+"lib/use-icon-animation.ts"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://hugeicons-animated.com/r/sort-by-up-01.json"
+},
+{
+"id": "hugeicons-animated/sparkles",
+"name": "sparkles",
+"title": "sparkles",
+"description": "Animated sparkles icon",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [],
+"file": "icons/sparkles.tsx",
+"files": [
+"icons/sparkles.tsx",
+"lib/use-icon-animation.ts"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://hugeicons-animated.com/r/sparkles.json"
+},
+{
+"id": "hugeicons-animated/square-lock-01",
+"name": "square-lock-01",
+"title": "square-lock-01",
+"description": "Animated square lock icon",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [],
+"file": "icons/square-lock-01.tsx",
+"files": [
+"icons/square-lock-01.tsx",
+"lib/use-icon-animation.ts"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://hugeicons-animated.com/r/square-lock-01.json"
+},
+{
+"id": "hugeicons-animated/star",
+"name": "star",
+"title": "star",
+"description": "Animated star icon",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [],
+"file": "icons/star.tsx",
+"files": [
+"icons/star.tsx",
+"lib/use-icon-animation.ts"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://hugeicons-animated.com/r/star.json"
+},
+{
+"id": "hugeicons-animated/sun-03",
+"name": "sun-03",
+"title": "sun-03",
+"description": "Animated sun icon",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [],
+"file": "icons/sun-03.tsx",
+"files": [
+"icons/sun-03.tsx",
+"lib/use-icon-animation.ts"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://hugeicons-animated.com/r/sun-03.json"
+},
+{
+"id": "hugeicons-animated/target-01",
+"name": "target-01",
+"title": "target-01",
+"description": "Animated target icon",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [],
+"file": "icons/target-01.tsx",
+"files": [
+"icons/target-01.tsx",
+"lib/use-icon-animation.ts"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://hugeicons-animated.com/r/target-01.json"
+},
+{
+"id": "hugeicons-animated/thumbs-up",
+"name": "thumbs-up",
+"title": "thumbs-up",
+"description": "Animated thumbs up icon",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [],
+"file": "icons/thumbs-up.tsx",
+"files": [
+"icons/thumbs-up.tsx",
+"lib/use-icon-animation.ts"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://hugeicons-animated.com/r/thumbs-up.json"
+},
+{
+"id": "hugeicons-animated/tick-02",
+"name": "tick-02",
+"title": "tick-02",
+"description": "Animated tick icon",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [],
+"file": "icons/tick-02.tsx",
+"files": [
+"icons/tick-02.tsx",
+"lib/use-icon-animation.ts"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://hugeicons-animated.com/r/tick-02.json"
+},
+{
+"id": "hugeicons-animated/umbrella",
+"name": "umbrella",
+"title": "umbrella",
+"description": "Animated umbrella icon",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [],
+"file": "icons/umbrella.tsx",
+"files": [
+"icons/umbrella.tsx",
+"lib/use-icon-animation.ts"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://hugeicons-animated.com/r/umbrella.json"
+},
+{
+"id": "hugeicons-animated/undo",
+"name": "undo",
+"title": "undo",
+"description": "Animated undo icon",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [],
+"file": "icons/undo.tsx",
+"files": [
+"icons/undo.tsx",
+"lib/use-icon-animation.ts"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://hugeicons-animated.com/r/undo.json"
+},
+{
+"id": "hugeicons-animated/upload-01",
+"name": "upload-01",
+"title": "upload-01",
+"description": "Animated upload icon",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [],
+"file": "icons/upload-01.tsx",
+"files": [
+"icons/upload-01.tsx",
+"lib/use-icon-animation.ts"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://hugeicons-animated.com/r/upload-01.json"
+},
+{
+"id": "hugeicons-animated/user-add-01",
+"name": "user-add-01",
+"title": "user-add-01",
+"description": "Animated user add icon",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [],
+"file": "icons/user-add-01.tsx",
+"files": [
+"icons/user-add-01.tsx",
+"lib/use-icon-animation.ts"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://hugeicons-animated.com/r/user-add-01.json"
+},
+{
+"id": "hugeicons-animated/user-check-01",
+"name": "user-check-01",
+"title": "user-check-01",
+"description": "Animated user check icon",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [],
+"file": "icons/user-check-01.tsx",
+"files": [
+"icons/user-check-01.tsx",
+"lib/use-icon-animation.ts"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://hugeicons-animated.com/r/user-check-01.json"
+},
+{
+"id": "hugeicons-animated/user-group",
+"name": "user-group",
+"title": "user-group",
+"description": "Animated user group icon",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [],
+"file": "icons/user-group.tsx",
+"files": [
+"icons/user-group.tsx",
+"lib/use-icon-animation.ts"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://hugeicons-animated.com/r/user-group.json"
+},
+{
+"id": "hugeicons-animated/user-multiple-02",
+"name": "user-multiple-02",
+"title": "user-multiple-02",
+"description": "Animated user multiple icon",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [],
+"file": "icons/user-multiple-02.tsx",
+"files": [
+"icons/user-multiple-02.tsx",
+"lib/use-icon-animation.ts"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://hugeicons-animated.com/r/user-multiple-02.json"
+},
+{
+"id": "hugeicons-animated/user-remove-01",
+"name": "user-remove-01",
+"title": "user-remove-01",
+"description": "Animated user remove icon",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [],
+"file": "icons/user-remove-01.tsx",
+"files": [
+"icons/user-remove-01.tsx",
+"lib/use-icon-animation.ts"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://hugeicons-animated.com/r/user-remove-01.json"
+},
+{
+"id": "hugeicons-animated/user",
+"name": "user",
+"title": "user",
+"description": "Animated user icon",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [],
+"file": "icons/user.tsx",
+"files": [
+"icons/user.tsx",
+"lib/use-icon-animation.ts"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://hugeicons-animated.com/r/user.json"
+},
+{
+"id": "hugeicons-animated/video-01",
+"name": "video-01",
+"title": "video-01",
+"description": "Animated video icon",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [
+"media"
+],
+"file": "icons/video-01.tsx",
+"files": [
+"icons/video-01.tsx",
+"lib/use-icon-animation.ts"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://hugeicons-animated.com/r/video-01.json"
+},
+{
+"id": "hugeicons-animated/volume-high",
+"name": "volume-high",
+"title": "volume-high",
+"description": "Animated volume high icon",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [],
+"file": "icons/volume-high.tsx",
+"files": [
+"icons/volume-high.tsx",
+"lib/use-icon-animation.ts"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://hugeicons-animated.com/r/volume-high.json"
+},
+{
+"id": "hugeicons-animated/volume-mute-01",
+"name": "volume-mute-01",
+"title": "volume-mute-01",
+"description": "Animated volume mute icon",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [],
+"file": "icons/volume-mute-01.tsx",
+"files": [
+"icons/volume-mute-01.tsx",
+"lib/use-icon-animation.ts"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://hugeicons-animated.com/r/volume-mute-01.json"
+},
+{
+"id": "hugeicons-animated/wallet-01",
+"name": "wallet-01",
+"title": "wallet-01",
+"description": "Animated wallet icon",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [
+"crypto"
+],
+"file": "icons/wallet-01.tsx",
+"files": [
+"icons/wallet-01.tsx",
+"lib/use-icon-animation.ts"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://hugeicons-animated.com/r/wallet-01.json"
+},
+{
+"id": "hugeicons-animated/wifi-01",
+"name": "wifi-01",
+"title": "wifi-01",
+"description": "Animated wifi icon",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [],
+"file": "icons/wifi-01.tsx",
+"files": [
+"icons/wifi-01.tsx",
+"lib/use-icon-animation.ts"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://hugeicons-animated.com/r/wifi-01.json"
+},
+{
+"id": "hugeicons-animated/zoom-in-area",
+"name": "zoom-in-area",
+"title": "zoom-in-area",
+"description": "Animated zoom in area icon",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [],
+"file": "icons/zoom-in-area.tsx",
+"files": [
+"icons/zoom-in-area.tsx",
+"lib/use-icon-animation.ts"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://hugeicons-animated.com/r/zoom-in-area.json"
+},
+{
+"id": "hugeicons-animated/zoom-out-area",
+"name": "zoom-out-area",
+"title": "zoom-out-area",
+"description": "Animated zoom out area icon",
+"type": "ui",
+"cat": "assets/icon",
+"domain": [],
+"file": "icons/zoom-out-area.tsx",
+"files": [
+"icons/zoom-out-area.tsx",
+"lib/use-icon-animation.ts"
+],
+"deps": [
+"motion"
+],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add https://hugeicons-animated.com/r/zoom-out-area.json"
+}
+]
+}

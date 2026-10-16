@@ -1,0 +1,1641 @@
+{
+ "version": "0.1-draft",
+ "date": "2026-10-14",
+ "rules": {
+  "layers": [
+   "foundation",
+   "atom",
+   "control",
+   "widget",
+   "section",
+   "page",
+   "shell"
+  ],
+  "sets": [
+   "motion",
+   "charts",
+   "icons"
+  ],
+  "layer_meaning": {
+   "foundation": "tokens: colour, type, space, radius, motion timing",
+   "atom": "one element, no inner layout: button, input, badge",
+   "control": "atoms joined to do one job with data: select, date picker, tabs, table",
+   "widget": "a control bound to one data shape and drawn in the widget frame (ADR 0004): stat, chart card, inbox",
+   "section": "a band of a page (ADR 0003): hero, pricing, kpis, data view",
+   "page": "bands in order for one job: dashboard, settings, pricing page",
+   "shell": "what outlives pages: sidebar, top bar, command bar, the frame"
+  },
+  "kind_rule": "A new kind only when the interaction or the data shape differs. Looks, sizes and states are props of the kind's default, never separate parts.",
+  "states_rule": "State, edge and platform variations from schema/variations.json are requirements the default must meet (loading, error, disabled, keyboard, reduced motion), not parts.",
+  "pick_rule": "One default and one backup per kind. Arc is the default wherever it has the kind; shadcn (new-york-v4) is the usual backup; other libraries only fill a kind neither has. Shaan's verdicts override.",
+  "explore": "Every other part stays in /kit as Explore, reachable from its kind via 'show alternatives'.",
+  "assets_note": "Icons, images and other files are assets (their own layer), not atoms (Shaan 14 Oct)."
+ },
+ "atoms": [
+  {
+   "node": "atom/layout",
+   "kind": "separator",
+   "why": "a line between groups",
+   "default": "build:siso:separator",
+   "backup": "shadcn:separator",
+   "show": {
+    "default": {
+     "local": "build:siso:separator"
+    },
+    "backup": {
+     "local": "shadcn:separator"
+    }
+   },
+   "variations": [
+    {
+     "ref": "herocn:marker",
+     "why": "labelled divider with an icon slot",
+     "show": {
+      "kit": "herocn/marker",
+      "file": "icons/marker.tsx",
+      "title": "Marker"
+     }
+    }
+   ],
+   "note": "Shaan 14 Oct: the separators were bad; ours has fade, dashed, dotted and labelled looks"
+  },
+  {
+   "node": "atom/layout",
+   "kind": "scroll-area",
+   "why": "a box that scrolls with styled bars",
+   "default": "arc:scroll-area",
+   "backup": "shadcn:scroll-area",
+   "show": {
+    "default": {
+     "arc": "demos/scroll-area.tsx",
+     "title": "Scroll area"
+    },
+    "backup": {
+     "local": "shadcn:scroll-area"
+    }
+   }
+  },
+  {
+   "node": "atom/layout",
+   "kind": "aspect-ratio",
+   "why": "holds media at a fixed shape",
+   "default": "shadcn:aspect-ratio",
+   "backup": "shadcn:aspect-ratio",
+   "show": {
+    "default": {
+     "local": "shadcn:aspect-ratio"
+    },
+    "backup": {
+     "local": "shadcn:aspect-ratio"
+    }
+   },
+   "variations": [
+    {
+     "ref": "shadcn-space:aspect-ratio-02",
+     "why": "ratio grid (Shaan: 'good, low-key')",
+     "show": {
+      "kit": "shadcn-space/aspect-ratio-02",
+      "file": "components/shadcn-space/aspect-ratio/aspect-ratio-02.tsx",
+      "title": "Aspect Ratio 02 - Square Grid"
+     }
+    },
+    {
+     "ref": "shadcn-space:aspect-ratio-04",
+     "why": "video thumbnail",
+     "show": {
+      "kit": "shadcn-space/aspect-ratio-04",
+      "file": "components/shadcn-space/aspect-ratio/aspect-ratio-04.tsx",
+      "title": "Aspect Ratio 04 - Video Thumbnail"
+     }
+    }
+   ]
+  },
+  {
+   "node": "atom/layout",
+   "kind": "drag-handle",
+   "why": "the grip you grab to reorder or move",
+   "default": "build:siso:drag-handle",
+   "backup": null,
+   "show": {
+    "default": {
+     "local": "build:siso:drag-handle"
+    },
+    "backup": null
+   }
+  },
+  {
+   "node": "atom/text",
+   "kind": "text",
+   "why": "headings, body, muted, all as props",
+   "default": "shadcn:typography",
+   "backup": null,
+   "show": {
+    "default": {
+     "local": "shadcn:typography"
+    },
+    "backup": null
+   },
+   "variations": [
+    {
+     "ref": "taki:typography-table",
+     "why": "a styled table in running text (Shaan: useful)",
+     "show": {
+      "kit": "taki/typography-table",
+      "file": "examples/typography-table.tsx",
+      "title": "Typography table"
+     }
+    },
+    {
+     "ref": "taki:typography-demo",
+     "why": "a whole prose section",
+     "show": {
+      "kit": "taki/typography-demo",
+      "file": "examples/typography-demo.tsx",
+      "title": "Typography demo"
+     }
+    }
+   ]
+  },
+  {
+   "node": "atom/text",
+   "kind": "kbd",
+   "why": "a keyboard key",
+   "default": "shadcn:kbd",
+   "backup": "intentui:keyboard",
+   "show": {
+    "default": {
+     "local": "shadcn:kbd"
+    },
+    "backup": {
+     "kit": "intentui/keyboard",
+     "file": "components/ui/keyboard.tsx",
+     "title": "keyboard"
+    }
+   }
+  },
+  {
+   "node": "atom/text",
+   "kind": "inline-code",
+   "why": "code inside a sentence",
+   "default": "reui:c-code-block-10",
+   "backup": "intentui:text#Code",
+   "show": {
+    "default": {
+     "kit": "reui/c-code-block-10",
+     "file": "icons/c-code-block-10.tsx",
+     "title": "Long file with expand"
+    },
+    "backup": {
+     "kit": "intentui/text",
+     "file": "components/ui/text.tsx",
+     "title": "text"
+    }
+   },
+   "note": "Shaan 14 Oct: reui's inline code is pretty good",
+   "variations": [
+    {
+     "ref": "intentui:text#Code",
+     "why": "plain inline code, the old default",
+     "show": {
+      "kit": "intentui/text",
+      "file": "components/ui/text.tsx",
+      "title": "text"
+     }
+    }
+   ]
+  },
+  {
+   "node": "atom/text",
+   "kind": "highlight",
+   "why": "marks words inside running text",
+   "default": "animbits:text-highlight",
+   "backup": "remotionui:marker-highlight",
+   "variations": [
+    {
+     "ref": "magicui:highlighter-demo",
+     "why": "hand-drawn marker that draws in",
+     "show": {
+      "kit": "magicui/highlighter-demo",
+      "file": "example/highlighter-demo.tsx",
+      "title": "Highlighter Demo"
+     }
+    },
+    {
+     "ref": "animate-ui:primitives-effects-highlight",
+     "why": "highlight that follows hover across items",
+     "show": {
+      "kit": "animate-ui/primitives-effects-highlight",
+      "file": "primitives/effects/highlight/index.tsx",
+      "title": "Highlight"
+     }
+    }
+   ],
+   "show": {
+    "default": {
+     "kit": "animbits/text-highlight",
+     "file": "animations/text/text-highlight.tsx",
+     "title": "Text Highlight"
+    },
+    "backup": {
+     "kit": "remotionui/marker-highlight",
+     "file": "bases/default/primitives/marker-highlight.tsx",
+     "title": "Marker highlight"
+    }
+   }
+  },
+  {
+   "node": "atom/text",
+   "kind": "text-effect",
+   "why": "text that moves: shimmer, reveal, morph, scramble",
+   "default": "arc:text-shimmer",
+   "backup": "arc:text-reveal",
+   "note": "the motion set's biggest family (3,023 code reads); atoms keep the text-level ones",
+   "variations": [
+    {
+     "ref": "arc:text-morph",
+     "why": "one word morphs into the next",
+     "show": {
+      "arc": "demos/text-morph.tsx",
+      "title": "Text morph"
+     }
+    },
+    {
+     "ref": "arc:in-view-title",
+     "why": "title that writes in when scrolled to",
+     "show": {
+      "arc": "demos/in-view-title.tsx",
+      "title": "In-view title"
+     }
+    },
+    {
+     "ref": "arc:slot-text",
+     "why": "letters roll like a slot machine",
+     "show": {
+      "arc": "demos/slot-text.tsx",
+      "title": "Slot text"
+     }
+    },
+    {
+     "ref": "motiq:decrypt-text",
+     "why": "scramble then resolve",
+     "show": {
+      "kit": "motiq/decrypt-text",
+      "file": "text/decrypt-text.tsx",
+      "title": "Decrypt Text"
+     }
+    },
+    {
+     "ref": "motiq:split-flap",
+     "why": "airport split-flap board",
+     "show": {
+      "kit": "motiq/split-flap",
+      "file": "text/split-flap.tsx",
+      "title": "Split Flap"
+     }
+    },
+    {
+     "ref": "cubby-ui:text-morph",
+     "why": "rotating words",
+     "show": {
+      "kit": "cubby-ui/text-morph",
+      "file": "text-morph/text-morph.tsx",
+      "title": "Text Morph"
+     }
+    },
+    {
+     "ref": "shadcn-dashboard:animated-text-01",
+     "why": "shadcn-dashboard's animated text",
+     "show": {
+      "kit": "shadcn-dashboard/animated-text-01",
+      "file": "components/shadcn-dashboard/animated-text/animated-text-01.tsx",
+      "title": "Animated Text-01 - Shiny Text"
+     }
+    }
+   ],
+   "show": {
+    "default": {
+     "arc": "demos/text-shimmer.tsx",
+     "title": "Text shimmer"
+    },
+    "backup": {
+     "arc": "demos/text-reveal.tsx",
+     "title": "Text reveal"
+    }
+   }
+  },
+  {
+   "node": "atom/field",
+   "kind": "label",
+   "why": "names a control; clicking it focuses the control",
+   "default": "shadcn:label",
+   "backup": "shadcn-dashboard:label-06",
+   "variations": [
+    {
+     "ref": "shadcn-dashboard:label-01",
+     "why": "label with optional and required marks",
+     "show": {
+      "kit": "shadcn-dashboard/label-01",
+      "file": "components/shadcn-dashboard/label/label-01.tsx",
+      "title": "Label 01 - With Checkbox"
+     }
+    }
+   ],
+   "show": {
+    "default": {
+     "local": "shadcn:label"
+    },
+    "backup": {
+     "kit": "shadcn-dashboard/label-06",
+     "file": "components/shadcn-dashboard/label/label-06.tsx",
+     "title": "Label 06 - Floating Label"
+    }
+   }
+  },
+  {
+   "node": "atom/field",
+   "kind": "field-message",
+   "why": "help under a field, or the error when it is wrong",
+   "default": "shadcn:field",
+   "backup": "reui:c-input-21",
+   "show": {
+    "default": {
+     "local": "shadcn:field"
+    },
+    "backup": {
+     "kit": "reui/c-input-21",
+     "file": "icons/c-input-21.tsx",
+     "title": "Input with multiple error messages"
+    }
+   }
+  },
+  {
+   "node": "atom/link",
+   "kind": "link",
+   "why": "a text link; nav and external as props",
+   "default": "intentui:link",
+   "backup": null,
+   "note": "react-aria anchor with disabled and focus states",
+   "show": {
+    "default": {
+     "kit": "intentui/link",
+     "file": "components/ui/link.tsx",
+     "title": "link"
+    },
+    "backup": null
+   }
+  },
+  {
+   "node": "atom/link",
+   "kind": "link-preview",
+   "why": "shows the page on hover",
+   "default": "arc:hover-card",
+   "backup": "animate-ui:primitives-base-preview-link-card",
+   "note": "Arc has hover-card; the backup fetches a page preview",
+   "show": {
+    "default": {
+     "arc": "demos/hover-card.tsx",
+     "title": "Hover card"
+    },
+    "backup": {
+     "kit": "animate-ui/primitives-base-preview-link-card",
+     "file": "primitives/base/preview-link-card/index.tsx",
+     "title": "Base Preview Link Card"
+    }
+   }
+  },
+  {
+   "node": "atom/button",
+   "kind": "button",
+   "why": "every look, size, icon-only and loading as props",
+   "default": "arc:button",
+   "backup": "shadcn:button",
+   "show": {
+    "default": {
+     "arc": "demos/button.tsx",
+     "title": "Button"
+    },
+    "backup": {
+     "local": "shadcn:button"
+    }
+   },
+   "variations": [
+    {
+     "ref": "tweenly:slide-button",
+     "why": "slide to confirm: drag with a shimmer label (Shaan: 'kind of cool')",
+     "show": {
+      "kit": "tweenly/slide-button",
+      "file": "slide-button/slide-button.tsx",
+      "title": "Slide Button"
+     }
+    },
+    {
+     "ref": "tweenly:download-button",
+     "why": "progress fill then a drawn tick",
+     "show": {
+      "kit": "tweenly/download-button",
+      "file": "download-button/download-button.tsx",
+      "title": "Download Button"
+     }
+    },
+    {
+     "ref": "tweenly:like-button",
+     "why": "toggle with a particle burst and a rolling count",
+     "show": {
+      "kit": "tweenly/like-button",
+      "file": "like-button/like-button.tsx",
+      "title": "Like Button"
+     }
+    }
+   ]
+  },
+  {
+   "node": "atom/button",
+   "kind": "button-group",
+   "why": "joined buttons, including split",
+   "default": "arc:button-group",
+   "backup": "arc:split-button",
+   "show": {
+    "default": {
+     "arc": "demos/button-group.tsx",
+     "title": "Button group"
+    },
+    "backup": {
+     "arc": "demos/split-button.tsx",
+     "title": "Split button"
+    }
+   },
+   "variations": [
+    {
+     "ref": "arc:split-button",
+     "why": "main action plus a menu of the rest",
+     "show": {
+      "arc": "demos/split-button.tsx",
+      "title": "Split button"
+     }
+    }
+   ]
+  },
+  {
+   "node": "atom/button",
+   "kind": "copy-button",
+   "why": "copies and confirms",
+   "default": "arc:copy-button",
+   "backup": null,
+   "show": {
+    "default": {
+     "arc": "demos/copy-button.tsx",
+     "title": "Copy button"
+    },
+    "backup": null
+   },
+   "variations": [
+    {
+     "ref": "shadcn-dashboard:button-18",
+     "why": "copy with a progress fill as feedback (Shaan: 'pretty cool')",
+     "show": {
+      "kit": "shadcn-dashboard/button-18",
+      "file": "components/shadcn-dashboard/button/button-18.tsx",
+      "title": "Button-18 - Promo Code Copy"
+     }
+    },
+    {
+     "ref": "reui:c-code-block-2",
+     "why": "copy pinned to a code header",
+     "show": {
+      "kit": "reui/c-code-block-2",
+      "file": "icons/c-code-block-2.tsx",
+      "title": "Pinned copy button"
+     }
+    }
+   ]
+  },
+  {
+   "node": "atom/button",
+   "kind": "hold-to-confirm",
+   "why": "press and hold for risky actions",
+   "default": "arc:hold-to-confirm",
+   "backup": null,
+   "show": {
+    "default": {
+     "arc": "demos/hold-to-confirm.tsx",
+     "title": "Hold to confirm"
+    },
+    "backup": null
+   }
+  },
+  {
+   "node": "atom/avatar",
+   "kind": "avatar",
+   "why": "image or initials; status ring as a prop",
+   "default": "arc:avatar",
+   "backup": "shadcn:avatar",
+   "show": {
+    "default": {
+     "arc": "demos/avatar.tsx",
+     "title": "Avatar"
+    },
+    "backup": {
+     "local": "shadcn:avatar"
+    }
+   }
+  },
+  {
+   "node": "atom/avatar",
+   "kind": "avatar-group",
+   "why": "overlapping stack with +N",
+   "default": "arc:avatar-group",
+   "backup": null,
+   "show": {
+    "default": {
+     "arc": "demos/avatar-group.tsx",
+     "title": "Avatar group"
+    },
+    "backup": null
+   },
+   "variations": [
+    {
+     "ref": "reui:c-avatar-22",
+     "why": "stack that lifts with a tooltip on hover",
+     "show": {
+      "kit": "reui/c-avatar-22",
+      "file": "icons/c-avatar-22.tsx",
+      "title": "Avatar group with hover tooltips and lift effect"
+     }
+    }
+   ]
+  },
+  {
+   "node": "atom/badge",
+   "kind": "badge",
+   "why": "a label; dot and count as props",
+   "default": "arc:badge",
+   "backup": "shadcn:badge",
+   "show": {
+    "default": {
+     "arc": "demos/badge.tsx",
+     "title": "Badge"
+    },
+    "backup": {
+     "local": "shadcn:badge"
+    }
+   }
+  },
+  {
+   "node": "atom/badge",
+   "kind": "chip",
+   "why": "removable or pickable tag",
+   "default": "arc:chip-group",
+   "backup": null,
+   "show": {
+    "default": {
+     "arc": "demos/chip-group.tsx",
+     "title": "Chip group"
+    },
+    "backup": null
+   }
+  },
+  {
+   "node": "atom/status-dot",
+   "kind": "status-dot",
+   "why": "online/away/offline; ping as a prop",
+   "default": "build:siso:status-dot",
+   "backup": "reui:c-avatar-6",
+   "note": "no candidate pings; build one with ping as a prop",
+   "show": {
+    "default": {
+     "local": "build:siso:status-dot"
+    },
+    "backup": {
+     "kit": "reui/c-avatar-6",
+     "file": "icons/c-avatar-6.tsx",
+     "title": "Avatar with an online status badge"
+    }
+   },
+   "variations": [
+    {
+     "ref": "monocharts:pulse",
+     "why": "two staggered ping rings: live",
+     "show": {
+      "kit": "monocharts/pulse",
+      "file": "ui/loading/pulse.tsx",
+      "title": "Pulse"
+     }
+    },
+    {
+     "ref": "monocharts:pulse-dot",
+     "why": "one ring pulsing out",
+     "show": {
+      "kit": "monocharts/pulse-dot",
+      "file": "ui/loading/pulse-dot.tsx",
+      "title": "Pulse Dot"
+     }
+    },
+    {
+     "ref": "motiq:typing-and-presence",
+     "why": "presence plus a typing indicator",
+     "show": {
+      "kit": "motiq/typing-and-presence",
+      "file": "communication/typing-and-presence.tsx",
+      "title": "Typing and Presence"
+     }
+    }
+   ]
+  },
+  {
+   "node": "atom/text-input",
+   "kind": "input",
+   "why": "one line; prefix, suffix and error as props",
+   "default": "arc:input",
+   "backup": "shadcn:input",
+   "show": {
+    "default": {
+     "arc": "demos/input.tsx",
+     "title": "Input"
+    },
+    "backup": {
+     "local": "shadcn:input"
+    }
+   },
+   "variations": [
+    {
+     "ref": "tweenly:expand-input",
+     "why": "morphs open, success feedback",
+     "show": {
+      "kit": "tweenly/expand-input",
+      "file": "expand-input/expand-input.tsx",
+      "title": "Expand Input"
+     }
+    }
+   ]
+  },
+  {
+   "node": "atom/text-input",
+   "kind": "textarea",
+   "why": "many lines, grows",
+   "default": "arc:textarea",
+   "backup": "shadcn:textarea",
+   "show": {
+    "default": {
+     "arc": "demos/textarea.tsx",
+     "title": "Textarea"
+    },
+    "backup": {
+     "local": "shadcn:textarea"
+    }
+   }
+  },
+  {
+   "node": "atom/text-input",
+   "kind": "number-field",
+   "why": "number with steppers",
+   "default": "arc:number-field",
+   "backup": null,
+   "show": {
+    "default": {
+     "arc": "demos/number-field.tsx",
+     "title": "Number field"
+    },
+    "backup": null
+   },
+   "variations": [
+    {
+     "ref": "tweenly:number-stepper",
+     "why": "digits roll and hold-to-repeat (Shaan: 'nice')",
+     "show": {
+      "kit": "tweenly/number-stepper",
+      "file": "number-stepper/number-stepper.tsx",
+      "title": "Number Stepper"
+     }
+    }
+   ]
+  },
+  {
+   "node": "atom/text-input",
+   "kind": "otp",
+   "why": "code boxes",
+   "default": "shadcn:input-otp",
+   "backup": "motion-lexicon:otp-input",
+   "show": {
+    "default": {
+     "local": "shadcn:input-otp"
+    },
+    "backup": {
+     "kit": "motion-lexicon/otp-input",
+     "file": "components/otp-input.tsx",
+     "title": "OTP input"
+    }
+   },
+   "variations": [
+    {
+     "ref": "tweenly:otp-input",
+     "why": "springy entrance, 5/5 from the code read",
+     "show": {
+      "kit": "tweenly/otp-input",
+      "file": "otp-input/otp-input.tsx",
+      "title": "OTP Input"
+     }
+    }
+   ]
+  },
+  {
+   "node": "atom/text-input",
+   "kind": "password",
+   "why": "show/hide and strength",
+   "default": "arc:password-field",
+   "backup": "arc:password-strength",
+   "show": {
+    "default": {
+     "arc": "demos/password-field.tsx",
+     "title": "Password field"
+    },
+    "backup": {
+     "arc": "demos/password-strength.tsx",
+     "title": "Password strength"
+    }
+   },
+   "variations": [
+    {
+     "ref": "arc:password-strength",
+     "why": "strength meter under the field",
+     "show": {
+      "arc": "demos/password-strength.tsx",
+      "title": "Password strength"
+     }
+    },
+    {
+     "ref": "reui:c-input-23",
+     "why": "requirement list that ticks off as you type",
+     "show": {
+      "kit": "reui/c-input-23",
+      "file": "icons/c-input-23.tsx",
+      "title": "Advanced password strength indicator with progress"
+     }
+    },
+    {
+     "ref": "shadcn-dashboard:input-04",
+     "why": "rules shown up front",
+     "show": {
+      "kit": "shadcn-dashboard/input-04",
+      "file": "components/shadcn-dashboard/input/input-04.tsx",
+      "title": "Input-04 - Real Time Validation"
+     }
+    }
+   ]
+  },
+  {
+   "node": "atom/text-input",
+   "kind": "inline-edit",
+   "why": "text that turns into a field on click",
+   "default": "arc:inline-edit",
+   "backup": null,
+   "show": {
+    "default": {
+     "arc": "demos/inline-edit.tsx",
+     "title": "Inline edit"
+    },
+    "backup": null
+   }
+  },
+  {
+   "node": "atom/choice",
+   "kind": "checkbox",
+   "why": "many of; indeterminate and description as props",
+   "default": "arc:checkbox",
+   "backup": "shadcn:checkbox",
+   "show": {
+    "default": {
+     "arc": "demos/checkbox.tsx",
+     "title": "Checkbox"
+    },
+    "backup": {
+     "local": "shadcn:checkbox"
+    }
+   }
+  },
+  {
+   "node": "atom/choice",
+   "kind": "radio-group",
+   "why": "one of",
+   "default": "arc:radio-group",
+   "backup": "shadcn:radio-group",
+   "show": {
+    "default": {
+     "arc": "demos/radio-group.tsx",
+     "title": "Radio group"
+    },
+    "backup": {
+     "local": "shadcn:radio-group"
+    }
+   }
+  },
+  {
+   "node": "atom/choice",
+   "kind": "choice-card",
+   "why": "one of, as cards",
+   "default": "arc:radio-cards",
+   "backup": null,
+   "show": {
+    "default": {
+     "arc": "demos/radio-cards.tsx",
+     "title": "Radio cards"
+    },
+    "backup": null
+   }
+  },
+  {
+   "node": "atom/switch",
+   "kind": "switch",
+   "why": "on or off",
+   "default": "arc:switch",
+   "backup": "shadcn:switch",
+   "show": {
+    "default": {
+     "arc": "demos/switch.tsx",
+     "title": "Switch"
+    },
+    "backup": {
+     "local": "shadcn:switch"
+    }
+   }
+  },
+  {
+   "node": "atom/switch",
+   "kind": "toggle",
+   "why": "a button that stays pressed",
+   "default": "shadcn:toggle",
+   "backup": "iconiq:b-toggle",
+   "show": {
+    "default": {
+     "local": "shadcn:toggle"
+    },
+    "backup": {
+     "kit": "iconiq/b-toggle",
+     "file": "icons/b-toggle.tsx",
+     "title": "Toggle (Base UI)"
+    }
+   }
+  },
+  {
+   "node": "atom/switch",
+   "kind": "segmented",
+   "why": "one of, as a joined row",
+   "default": "arc:segmented-control",
+   "backup": "shadcn:toggle-group",
+   "show": {
+    "default": {
+     "arc": "demos/segmented-control.tsx",
+     "title": "Segmented control"
+    },
+    "backup": {
+     "local": "shadcn:toggle-group"
+    }
+   }
+  },
+  {
+   "node": "atom/switch",
+   "kind": "theme-switch",
+   "why": "light and dark",
+   "default": "arc:theme-switch",
+   "backup": "arc:theme-switch-eclipse",
+   "show": {
+    "default": {
+     "arc": "demos/theme-switch.tsx",
+     "title": "Theme switcher"
+    },
+    "backup": {
+     "arc": "demos/theme-switch-eclipse.tsx",
+     "title": "Eclipse"
+    }
+   }
+  },
+  {
+   "node": "atom/slider",
+   "kind": "slider",
+   "why": "one value or a range; ticks and vertical as props",
+   "default": "arc:slider",
+   "backup": "shadcn:slider",
+   "show": {
+    "default": {
+     "arc": "demos/slider.tsx",
+     "title": "Slider"
+    },
+    "backup": {
+     "local": "shadcn:slider"
+    }
+   },
+   "variations": [
+    {
+     "ref": "arc:elastic-slider",
+     "why": "rubber-bands past the ends",
+     "show": {
+      "arc": "demos/elastic-slider.tsx",
+      "title": "Elastic slider"
+     }
+    },
+    {
+     "ref": "cubby-ui:slider",
+     "why": "three looks: default, contained, square thumb",
+     "show": {
+      "kit": "cubby-ui/slider",
+      "file": "slider/slider.tsx",
+      "title": "Slider"
+     }
+    },
+    {
+     "ref": "herocn:slider",
+     "why": "chunky track, pill thumb that squeezes when held",
+     "show": {
+      "kit": "herocn/slider",
+      "file": "icons/slider.tsx",
+      "title": "Slider"
+     }
+    }
+   ]
+  },
+  {
+   "node": "atom/slider",
+   "kind": "knob",
+   "why": "a dial you turn",
+   "default": "diceui:angle-slider-demo",
+   "backup": "cubby-ui:circular-slider",
+   "note": "diceui's angle slider: keyboard, range and form support",
+   "show": {
+    "default": {
+     "kit": "diceui/angle-slider-demo",
+     "file": "examples/angle-slider-demo.tsx",
+     "title": "Angle slider demo"
+    },
+    "backup": {
+     "kit": "cubby-ui/circular-slider",
+     "file": "circular-slider/circular-slider.tsx",
+     "title": "Circular Slider"
+    }
+   }
+  },
+  {
+   "node": "atom/slider",
+   "kind": "rating",
+   "why": "stars",
+   "default": "iconiq:rating",
+   "backup": "reui:rating",
+   "note": "arrow keys and radio semantics",
+   "show": {
+    "default": {
+     "kit": "iconiq/rating",
+     "file": "icons/rating.tsx",
+     "title": "Rating"
+    },
+    "backup": {
+     "kit": "reui/rating",
+     "file": "icons/rating.tsx",
+     "title": "Rating"
+    }
+   }
+  },
+  {
+   "node": "atom/loader",
+   "kind": "spinner",
+   "why": "busy, no shape known",
+   "default": "shadcn:spinner",
+   "backup": "intentui:loader",
+   "show": {
+    "default": {
+     "local": "shadcn:spinner"
+    },
+    "backup": {
+     "kit": "intentui/loader",
+     "file": "components/ui/loader.tsx",
+     "title": "loader"
+    }
+   },
+   "variations": [
+    {
+     "ref": "herocn:spinner",
+     "why": "gradient ring, sizes and colours",
+     "show": {
+      "kit": "herocn/spinner",
+      "file": "icons/spinner.tsx",
+      "title": "Spinner"
+     }
+    },
+    {
+     "ref": "kibo-ui:spinner",
+     "why": "throbber, pinwheel, dots and more in one",
+     "show": {
+      "kit": "kibo-ui/spinner",
+      "file": "_items/spinner/icons/index.tsx",
+      "title": "spinner"
+     }
+    },
+    {
+     "ref": "monocharts:ios-spinner",
+     "why": "twelve bars, iOS style",
+     "show": {
+      "kit": "monocharts/ios-spinner",
+      "file": "ui/loading/ios-spinner.tsx",
+      "title": "Ios Spinner"
+     }
+    },
+    {
+     "ref": "intentui:loader",
+     "why": "ring and spoke",
+     "show": {
+      "kit": "intentui/loader",
+      "file": "components/ui/loader.tsx",
+      "title": "loader"
+     }
+    },
+    {
+     "ref": "shadcn-space:spinner-10",
+     "why": "spinner with morphing text",
+     "show": {
+      "kit": "shadcn-space/spinner-10",
+      "file": "components/shadcn-space/spinner/spinner-10.tsx",
+      "title": "Spinner 10 - Liquid Wave"
+     }
+    }
+   ]
+  },
+  {
+   "node": "atom/loader",
+   "kind": "skeleton",
+   "why": "busy, shape known",
+   "default": "arc:skeleton",
+   "backup": "shadcn:skeleton",
+   "show": {
+    "default": {
+     "arc": "demos/skeleton.tsx",
+     "title": "Skeleton"
+    },
+    "backup": {
+     "local": "shadcn:skeleton"
+    }
+   },
+   "variations": [
+    {
+     "ref": "cubby-ui:skeleton",
+     "why": "shimmer that wraps real content and reveals it",
+     "show": {
+      "kit": "cubby-ui/skeleton",
+      "file": "skeleton/skeleton.tsx",
+      "title": "Skeleton"
+     }
+    },
+    {
+     "ref": "motion-lexicon:skeleton-reveal",
+     "why": "skeleton that cross-fades into content",
+     "show": {
+      "kit": "motion-lexicon/skeleton-reveal",
+      "file": "components/skeleton-reveal.tsx",
+      "title": "Skeleton reveal"
+     }
+    }
+   ]
+  },
+  {
+   "node": "atom/progress",
+   "kind": "progress",
+   "why": "a bar; segments and steps as props",
+   "default": "arc:progress",
+   "backup": "shadcn:progress",
+   "show": {
+    "default": {
+     "arc": "demos/progress.tsx",
+     "title": "Progress"
+    },
+    "backup": {
+     "local": "shadcn:progress"
+    }
+   }
+  },
+  {
+   "node": "atom/progress",
+   "kind": "ring",
+   "why": "a circle",
+   "default": "build:siso:progress-ring",
+   "backup": "shadcn:chart-radial-text",
+   "note": "nothing small exists; the backup is a chart",
+   "show": {
+    "default": {
+     "local": "build:siso:progress-ring"
+    },
+    "backup": {
+     "kit": "shadcn/chart-radial-text",
+     "file": "charts/chart-radial-text.tsx",
+     "title": "Chart radial text"
+    }
+   },
+   "variations": [
+    {
+     "ref": "shadcn-dashboard:radial-chart-04",
+     "why": "shadcn-dashboard's radial (Shaan: cool, especially for the ring)",
+     "show": {
+      "kit": "shadcn-dashboard/radial-chart-04",
+      "file": "components/shadcn-dashboard/radial-chart/radial-chart-04.tsx",
+      "title": "Radial Chart 04- KPI Rings"
+     }
+    },
+    {
+     "ref": "tweenly:chart-rings",
+     "why": "nested activity rings",
+     "show": {
+      "kit": "tweenly/chart-rings",
+      "file": "chart-rings/chart-rings.tsx",
+      "title": "Chart Rings"
+     }
+    },
+    {
+     "ref": "magicui:animated-circular-progress-bar-demo",
+     "why": "animated count-up ring",
+     "show": {
+      "kit": "magicui/animated-circular-progress-bar-demo",
+      "file": "example/animated-circular-progress-bar-demo.tsx",
+      "title": "Animated Circular Progress Bar Demo"
+     }
+    }
+   ]
+  },
+  {
+   "node": "atom/progress",
+   "kind": "meter",
+   "why": "a value against limits (storage, CPU)",
+   "default": "arc:usage-meter",
+   "backup": "arc:gauge",
+   "show": {
+    "default": {
+     "arc": "demos/usage-meter.tsx",
+     "title": "Usage meter"
+    },
+    "backup": {
+     "arc": "demos/gauge.tsx",
+     "title": "Gauge"
+    }
+   },
+   "variations": [
+    {
+     "ref": "shadcn-dashboard:radial-chart-05",
+     "why": "radial gauge",
+     "show": {
+      "kit": "shadcn-dashboard/radial-chart-05",
+      "file": "components/shadcn-dashboard/radial-chart/radial-chart-05.tsx",
+      "title": "Radial Chart 05- Gauge"
+     }
+    }
+   ]
+  },
+  {
+   "node": "atom/progress",
+   "kind": "dots",
+   "why": "where you are in a few steps or slides",
+   "default": "shadcn-dashboard:dots-01",
+   "backup": "shadcn-ui-blocks:components-pagination-dot-indicator-pagination",
+   "variations": [
+    {
+     "ref": "shadcn-dashboard:dots-02",
+     "why": "dots that stretch on the active one",
+     "show": {
+      "kit": "shadcn-dashboard/dots-02",
+      "file": "components/shadcn-dashboard/dots/dots-02.tsx",
+      "title": "Dots 02 - Eared Blob"
+     }
+    },
+    {
+     "ref": "shadcn-dashboard:dots-03",
+     "why": "numbered dots",
+     "show": {
+      "kit": "shadcn-dashboard/dots-03",
+      "file": "components/shadcn-dashboard/dots/dots-03.tsx",
+      "title": "Dots 03 - Scalloped"
+     }
+    },
+    {
+     "ref": "reui:c-carousel-11",
+     "why": "dots driving a carousel",
+     "show": {
+      "kit": "reui/c-carousel-11",
+      "file": "icons/c-carousel-11.tsx",
+      "title": "Carousel with dots navigation and content overlays"
+     }
+    }
+   ],
+   "show": {
+    "default": {
+     "kit": "shadcn-dashboard/dots-01",
+     "file": "components/shadcn-dashboard/dots/dots-01.tsx",
+     "title": "Dots 01 - Flower"
+    },
+    "backup": {
+     "kit": "shadcn-ui-blocks/components-pagination-dot-indicator-pagination",
+     "file": "components/blocks/components/pagination/dot-indicator-pagination.tsx",
+     "title": "Dot Indicator Pagination"
+    }
+   }
+  },
+  {
+   "node": "atom/data",
+   "kind": "counter",
+   "why": "a number that counts or rolls to its value",
+   "default": "arc:animated-counter",
+   "backup": "tweenly:number-ticker",
+   "variations": [
+    {
+     "ref": "shadcn-dashboard:number-ticker-01",
+     "why": "shadcn-dashboard's ticker",
+     "show": {
+      "kit": "shadcn-dashboard/number-ticker-01",
+      "file": "components/shadcn-dashboard/number-ticker/number-ticker-01.tsx",
+      "title": "Number Ticker-01 - Default"
+     }
+    },
+    {
+     "ref": "aniui:rolling-counter",
+     "why": "odometer digits",
+     "show": {
+      "kit": "aniui/rolling-counter",
+      "file": "components/ui/rolling-counter.tsx",
+      "title": "RollingCounter"
+     }
+    },
+    {
+     "ref": "arc:countdown",
+     "why": "counts down to a time",
+     "show": {
+      "arc": "demos/countdown.tsx",
+      "title": "Countdown"
+     }
+    },
+    {
+     "ref": "motion-lexicon:primitive-number-ticker",
+     "why": "rolling digits primitive",
+     "show": {
+      "kit": "motion-lexicon/primitive-number-ticker",
+      "file": "primitives/number-ticker.tsx",
+      "title": "Number ticker"
+     }
+    }
+   ],
+   "show": {
+    "default": {
+     "arc": "demos/animated-counter.tsx",
+     "title": "Animated counter"
+    },
+    "backup": {
+     "kit": "tweenly/number-ticker",
+     "file": "number-ticker/number-ticker.tsx",
+     "title": "Number Ticker"
+    }
+   }
+  },
+  {
+   "node": "atom/data",
+   "kind": "sparkline",
+   "why": "a tiny trend line beside a number",
+   "default": "arc:sparkline",
+   "backup": "shadcnblocks:sparkline",
+   "variations": [
+    {
+     "ref": "tweenly:chart-kpi",
+     "why": "KPI with its sparkline",
+     "show": {
+      "kit": "tweenly/chart-kpi",
+      "file": "chart-kpi/chart-kpi.tsx",
+      "title": "Chart KPI"
+     }
+    },
+    {
+     "ref": "plotcn:line-pulse",
+     "why": "line with a live pulse at the end",
+     "show": {
+      "kit": "plotcn/line-pulse",
+      "file": "components/charts/recharts/line-pulse.tsx",
+      "title": "Pulse Line"
+     }
+    }
+   ],
+   "show": {
+    "default": {
+     "arc": "demos/sparkline.tsx",
+     "title": "Sparkline"
+    },
+    "backup": {
+     "kit": "shadcnblocks/sparkline",
+     "file": "components/shadcnblocks/sparkline.tsx",
+     "title": "Sparkline - Compact line, bar, or area sparkline"
+    }
+   }
+  },
+  {
+   "node": "atom/data",
+   "kind": "timestamp",
+   "why": "when something happened: '3 minutes ago', exact on hover",
+   "default": "build:siso:relative-time",
+   "backup": null,
+   "show": {
+    "default": {
+     "local": "build:siso:relative-time"
+    },
+    "backup": null
+   }
+  },
+  {
+   "node": "atom/data",
+   "kind": "swatch",
+   "why": "one colour as a chip; a row is a palette",
+   "default": "build:siso:swatch",
+   "backup": null,
+   "show": {
+    "default": {
+     "local": "build:siso:swatch"
+    },
+    "backup": null
+   }
+  },
+  {
+   "node": "atom/tooltip",
+   "kind": "tooltip",
+   "why": "a short hint; arrow and delay as props",
+   "default": "arc:tooltip",
+   "backup": "shadcn:tooltip",
+   "show": {
+    "default": {
+     "arc": "demos/tooltip.tsx",
+     "title": "Tooltip"
+    },
+    "backup": {
+     "local": "shadcn:tooltip"
+    }
+   }
+  },
+  {
+   "node": "atom/effect",
+   "kind": "border-effect",
+   "why": "a moving edge that draws the eye to one card",
+   "default": "shadcn-dashboard:shine-border-03",
+   "backup": "shadcn-space:shine-border-03",
+   "note": "the motion set holds the rest: backgrounds, cursors, gradients, shaders",
+   "variations": [
+    {
+     "ref": "shadcn-dashboard:shine-border-01",
+     "why": "slow shine",
+     "show": {
+      "kit": "shadcn-dashboard/shine-border-01",
+      "file": "components/shadcn-dashboard/shine-border/shine-border-01.tsx",
+      "title": "Shine Border-01 - Card"
+     }
+    },
+    {
+     "ref": "shadcn-dashboard:shine-border-02",
+     "why": "multi-colour shine",
+     "show": {
+      "kit": "shadcn-dashboard/shine-border-02",
+      "file": "components/shadcn-dashboard/shine-border/shine-border-02.tsx",
+      "title": "Shine Border-02 - Security Card"
+     }
+    }
+   ],
+   "show": {
+    "default": {
+     "kit": "shadcn-dashboard/shine-border-03",
+     "file": "components/shadcn-dashboard/shine-border/shine-border-03.tsx",
+     "title": "Shine Border-03 - Feature Card"
+    },
+    "backup": {
+     "kit": "shadcn-space/shine-border-03",
+     "file": "components/shadcn-space/shine-border/shine-border-03.tsx",
+     "title": "Shine Border 03 - Feature Card"
+    }
+   }
+  }
+ ],
+ "assets": [
+  {
+   "node": "asset/icon",
+   "kind": "ui-icons",
+   "why": "lucide, the house set",
+   "default": "lucide",
+   "backup": "phosphor-animated",
+   "show": {
+    "default": {
+     "local": "lucide"
+    },
+    "backup": {
+     "set": [
+      [
+       "phosphor-animated/alarm",
+       "components/icons/alarm.tsx"
+      ],
+      [
+       "phosphor-animated/anchor",
+       "components/icons/anchor.tsx"
+      ],
+      [
+       "phosphor-animated/animated-icon",
+       "components/icons/animated-icon.tsx"
+      ],
+      [
+       "phosphor-animated/archive",
+       "components/icons/archive.tsx"
+      ],
+      [
+       "phosphor-animated/arrow-clockwise",
+       "components/icons/arrow-clockwise.tsx"
+      ],
+      [
+       "phosphor-animated/arrow-counter-clockwise",
+       "components/icons/arrow-counter-clockwise.tsx"
+      ],
+      [
+       "phosphor-animated/arrow-down",
+       "components/icons/arrow-down.tsx"
+      ],
+      [
+       "phosphor-animated/arrow-left",
+       "components/icons/arrow-left.tsx"
+      ],
+      [
+       "phosphor-animated/arrow-right",
+       "components/icons/arrow-right.tsx"
+      ],
+      [
+       "phosphor-animated/arrow-square-out",
+       "components/icons/arrow-square-out.tsx"
+      ],
+      [
+       "phosphor-animated/arrow-up",
+       "components/icons/arrow-up.tsx"
+      ],
+      [
+       "phosphor-animated/at",
+       "components/icons/at.tsx"
+      ]
+     ]
+    }
+   },
+   "note": "Shaan 14 Oct: icons and images are assets, not atoms"
+  },
+  {
+   "node": "asset/icon",
+   "kind": "animated-icons",
+   "why": "icons that move on hover or state",
+   "default": "lucide-animated",
+   "backup": "animateicons",
+   "show": {
+    "default": {
+     "set": [
+      [
+       "lucide-animated/a-arrow-down",
+       "icons/a-arrow-down.tsx"
+      ],
+      [
+       "lucide-animated/a-arrow-up",
+       "icons/a-arrow-up.tsx"
+      ],
+      [
+       "lucide-animated/accessibility",
+       "icons/accessibility.tsx"
+      ],
+      [
+       "lucide-animated/activity",
+       "icons/activity.tsx"
+      ],
+      [
+       "lucide-animated/air-vent",
+       "icons/air-vent.tsx"
+      ],
+      [
+       "lucide-animated/airplane",
+       "icons/airplane.tsx"
+      ],
+      [
+       "lucide-animated/airplay",
+       "icons/airplay.tsx"
+      ],
+      [
+       "lucide-animated/alarm-clock-check",
+       "icons/alarm-clock-check.tsx"
+      ],
+      [
+       "lucide-animated/alarm-clock-minus",
+       "icons/alarm-clock-minus.tsx"
+      ],
+      [
+       "lucide-animated/alarm-clock-plus",
+       "icons/alarm-clock-plus.tsx"
+      ],
+      [
+       "lucide-animated/alarm-clock",
+       "icons/alarm-clock.tsx"
+      ],
+      [
+       "lucide-animated/alarm-smoke",
+       "icons/alarm-smoke.tsx"
+      ]
+     ]
+    },
+    "backup": {
+     "set": [
+      [
+       "animateicons/activity",
+       "icons/activity-icon.tsx"
+      ],
+      [
+       "animateicons/add-0-1",
+       "icons/add-0-1-icon.tsx"
+      ],
+      [
+       "animateicons/add-circle",
+       "icons/add-circle-icon.tsx"
+      ],
+      [
+       "animateicons/add-square",
+       "icons/add-square-icon.tsx"
+      ],
+      [
+       "animateicons/alert-0-2",
+       "icons/alert-0-2-icon.tsx"
+      ],
+      [
+       "animateicons/alert-circle",
+       "icons/alert-circle-icon.tsx"
+      ],
+      [
+       "animateicons/alert-diamond",
+       "icons/alert-diamond-icon.tsx"
+      ],
+      [
+       "animateicons/alert-square",
+       "icons/alert-square-icon.tsx"
+      ],
+      [
+       "animateicons/analytics-0-1",
+       "icons/analytics-0-1-icon.tsx"
+      ],
+      [
+       "animateicons/analytics-down",
+       "icons/analytics-down-icon.tsx"
+      ],
+      [
+       "animateicons/analytics-up",
+       "icons/analytics-up-icon.tsx"
+      ],
+      [
+       "animateicons/angry",
+       "icons/angry-icon.tsx"
+      ]
+     ]
+    }
+   },
+   "note": "Shaan 14 Oct: icons and images are assets, not atoms"
+  },
+  {
+   "node": "asset/icon",
+   "kind": "brand-icons",
+   "why": "logos of services",
+   "default": "simple-icons",
+   "backup": "shadcnblocks:logo",
+   "note": "a set, not a part; CC0 \u00b7 Shaan 14 Oct: icons and images are assets, not atoms",
+   "show": {
+    "default": {
+     "local": "simple-icons"
+    },
+    "backup": {
+     "kit": "shadcnblocks/logo",
+     "file": "components/shadcnblocks/logo.tsx",
+     "title": "Logo - Responsive logo with wordmark"
+    }
+   }
+  },
+  {
+   "node": "asset/icon",
+   "kind": "file-icons",
+   "why": "file types",
+   "default": "lucide:file-*",
+   "backup": "animateicons:file-type",
+   "note": "lucide already has the file types \u00b7 Shaan 14 Oct: icons and images are assets, not atoms",
+   "show": {
+    "default": {
+     "local": "lucide:file-*"
+    },
+    "backup": {
+     "kit": "animateicons/file-type",
+     "file": "icons/file-type-icon.tsx",
+     "title": "File type"
+    }
+   }
+  },
+  {
+   "node": "asset/image",
+   "kind": "image",
+   "why": "an image with loading and fallback",
+   "default": "build:siso:image",
+   "backup": null,
+   "note": "no library has an image with loading and a fallback; small to build \u00b7 Shaan 14 Oct: icons and images are assets, not atoms",
+   "show": {
+    "default": {
+     "local": "build:siso:image"
+    },
+    "backup": null
+   }
+  }
+ ]
+}

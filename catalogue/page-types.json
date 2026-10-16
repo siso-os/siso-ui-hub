@@ -1,0 +1,34 @@
+{
+ "why": "Pages, worked backwards from the pages we already run (catalogue/page-anatomy/: our sites, our apps, HALO CRM). Complementary to the kit map: the map says what parts we hold, page types say what a page needs; where they meet, the slot names a kind. Built 14 Oct from 93 real pages.",
+ "types": [
+  {"type": "landing", "group": "site", "match": "landing|home|one-pager|claim|library landing", "recipe": ["site-header", "hero", "features", "card", "cta", "testimonials", "footer"], "switch": "none; a mobile bottom bar and a detail dialog sit outside the flow", "states": "static", "gaps": ["contact form (today a newsletter box)", "mobile bottom bar"]},
+  {"type": "docs", "group": "site", "match": "docs|how it works|guide|question", "recipe": ["site-header", "sidebar", "hero", "features", "code", "diagram", "faq"], "switch": "side list of pages, table of contents", "states": "static", "gaps": ["diagram", "callout"]},
+  {"type": "blog", "group": "site", "match": "blog|post|article|decision record", "recipe": ["site-header", "hero", "blog-grid", "newsletter", "footer"], "switch": "index, then post", "states": "static", "gaps": ["we run no blog yet: recipe from the kit's sections"]},
+  {"type": "pricing", "group": "site", "match": "pricing|plans", "recipe": ["site-header", "hero", "pricing", "comparison", "faq", "cta", "footer"], "switch": "monthly or yearly (segmented)", "states": "static", "gaps": ["we run no pricing page yet"]},
+  {"type": "gallery", "group": "site", "match": "gallery|template index|industry|work page|seat page|activity", "recipe": ["site-header", "hero", "stats-band", "card", "timeline", "cta"], "switch": "filter chips", "states": "static", "gaps": ["quote list (his words, not testimonials)"]},
+  {"type": "error", "group": "both", "match": "404|error|not found|failed", "recipe": ["empty-state", "button"], "switch": "none", "states": "retry, back, home", "gaps": []},
+  {"type": "auth", "group": "app", "match": "auth|sign|login", "recipe": ["auth-card"], "switch": "sign in, sign up, forgot (flow)", "states": "error inline, redirect when signed in", "gaps": []},
+  {"type": "onboarding", "group": "app", "match": "onboard|tour|setup|wizard", "recipe": ["stepper", "form", "choice-card", "button"], "switch": "steps, prev and next", "states": "can close and come back", "gaps": ["coach-mark tour"]},
+  {"type": "dashboard", "group": "app", "match": "dashboard|scorecard|stats|usage|overview|hub", "recipe": ["sidebar", "top-bar", "page-header", "tabs", "stats-band", "toolbar", "widget-board"], "switch": "URL per tab; period controls", "states": "per widget: skeleton, empty, error with retry, unavailable", "gaps": ["widget shell", "widget board", "widget gallery"]},
+  {"type": "list", "group": "app", "match": "list|table|contacts|directory|pipeline|hub-list", "recipe": ["sidebar", "page-header", "toolbar", "stat", "table", "pagination", "empty-state"], "switch": "filter chips, saved views, tabs", "states": "skeleton rows, empty with one action", "gaps": ["inline-expanding row"]},
+  {"type": "detail", "group": "app", "match": "detail|profile|entity|reader|vault", "recipe": ["sidebar", "breadcrumb", "page-header", "tabs", "card", "timeline"], "switch": "tabs, or a side list beside it", "states": "loading, not found", "gaps": ["provenance timeline"]},
+  {"type": "inbox", "group": "app", "match": "inbox|messages|chat|thread", "recipe": ["sidebar", "chips", "list", "chat", "composer", "card"], "switch": "three panes: list, thread, info", "states": "empty inbox, sending, failed", "gaps": []},
+  {"type": "board", "group": "app", "match": "board|kanban|workflow|stage", "recipe": ["sidebar", "page-header", "toolbar", "kanban", "sheet"], "switch": "board or list toggle", "states": "drag, empty column", "gaps": []},
+  {"type": "calendar", "group": "app", "match": "calendar", "recipe": ["sidebar", "page-header", "segmented", "calendar", "popover"], "switch": "month, week, day", "states": "empty day", "gaps": []},
+  {"type": "settings", "group": "app", "match": "settings|admin|voice|preferences", "recipe": ["sidebar", "page-header", "tabs", "settings-row", "switch", "dialog"], "switch": "tabs or a section list", "states": "saving, saved, error", "gaps": ["settings row"]},
+  {"type": "search", "group": "app", "match": "search|palette", "recipe": ["command-palette", "search", "tabs", "card"], "switch": "kind tabs", "states": "no results", "gaps": []},
+  {"type": "canvas", "group": "app", "match": "canvas|map|embedded|frame|shell", "recipe": ["sidebar", "toolbar", "card"], "switch": "zoom and pan", "states": "empty canvas", "gaps": ["diagram"]}
+ ],
+ "every_app": ["sidebar", "top-bar", "breadcrumb", "notifications", "user-menu", "command-palette", "toast", "dialog", "sheet", "empty-state", "skeleton"],
+ "widget_system": {
+  "source": "HALO CRM (cam/widgets-v3), read for structure only",
+  "definition": "one object per card: id, label, hint, defaultOn, span, fill, kind, source, renderer, sizes allowed, locked, about (mine or team), slot, door path, minWidth",
+  "kinds": ["band (figures, does not expand)", "chart (expands to a room)", "table (expands to rows)", "panel (expands to its page)"],
+  "sizes": "of 12 columns: S 3, S-wide 4, M 6, L 8, XL or band 12; content changes with size, never scales",
+  "fill": "fluid, fixed, atomic, natural, fit",
+  "layout": "measured 12-column grid; designer pairings kept (8+4); a card under its minimum borrows from its row-mate; drag or keys reorder; handle menu sets size, moves, folds, hides",
+  "persist": "per page, per person; local copy plus a server row; stored choice merges over defaults so new widgets appear",
+  "states": "loading skeleton at the size's height; empty line with an action only when one exists; error with retry for that widget only; crash boundary; unavailable greyed with the reason",
+  "chrome": "grip, icon, title, grey sub line, figures, door arrow, optional footer"
+ }
+}

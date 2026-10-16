@@ -1,0 +1,252 @@
+{
+"lib": "mariocharts",
+"source": "gh-yuribodo-mariocharts",
+"homepage": null,
+"description": null,
+"items": 12,
+"parts": [
+{
+"id": "mariocharts/bar-chart",
+"name": "bar-chart",
+"title": "Bar Chart",
+"description": "A customizable bar chart component with animations, hover effects, responsive design, and support for both vertical and horizontal orientations with filled or outline variants",
+"type": "component",
+"cat": "data-viz/chart",
+"domain": [],
+"file": "bar-chart/index.tsx",
+"files": [
+"bar-chart/index.tsx",
+"bar-chart/utils.ts",
+"bar-chart/tooltip.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add @mariocharts/bar-chart"
+},
+{
+"id": "mariocharts/funnel-chart",
+"name": "funnel-chart",
+"title": "Funnel Chart",
+"description": "A five-variant funnel with faithful stage values, conversion and drop-off metrics, growing geometry, and keyboard and touch inspection",
+"type": "component",
+"cat": "data-viz/chart",
+"domain": [
+"AI",
+"maps"
+],
+"file": "funnel-chart/index.tsx",
+"files": [
+"funnel-chart/index.tsx",
+"funnel-chart/model.ts",
+"funnel-chart/geometry.ts"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add @mariocharts/funnel-chart"
+},
+{
+"id": "mariocharts/gauge-chart",
+"name": "gauge-chart",
+"title": "Gauge Chart",
+"description": "A 270-degree arc gauge with truthful range limits, nonoverlapping color zones, animated value updates, and keyboard and touch inspection",
+"type": "component",
+"cat": "data-viz/chart",
+"domain": [],
+"file": "gauge-chart/index.tsx",
+"files": [
+"gauge-chart/index.tsx",
+"gauge-chart/utils.ts"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add @mariocharts/gauge-chart"
+},
+{
+"id": "mariocharts/heatmap",
+"name": "heatmap",
+"title": "Heatmap Chart",
+"description": "A grid, radial and stock heatmap with explicit missing values, faithful color scales, weighted areas, and keyboard and touch inspection",
+"type": "component",
+"cat": "data-viz/chart",
+"domain": [
+"AI",
+"finance",
+"maps"
+],
+"file": "heatmap/index.tsx",
+"files": [
+"heatmap/index.tsx",
+"heatmap/model.ts",
+"heatmap/colors.ts",
+"heatmap/geometry.ts",
+"heatmap/stock-label.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add @mariocharts/heatmap"
+},
+{
+"id": "mariocharts/line-chart",
+"name": "line-chart",
+"title": "Line Chart",
+"description": "A line chart with multiple series, faithful gap handling, four curve interpolations, accessible inspection, gradient areas, and geometry-matched loading states",
+"type": "component",
+"cat": "data-viz/chart",
+"domain": [
+"maps"
+],
+"file": "line-chart/index.tsx",
+"files": [
+"line-chart/index.tsx",
+"line-chart/utils.ts",
+"line-chart/tooltip.tsx"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add @mariocharts/line-chart"
+},
+{
+"id": "mariocharts/pie-chart",
+"name": "pie-chart",
+"title": "Pie Chart",
+"description": "A customizable pie and donut chart component with animated segments, interactive hover effects, center labels, and responsive design",
+"type": "component",
+"cat": "data-viz/chart",
+"domain": [],
+"file": "pie-chart/index.tsx",
+"files": [
+"pie-chart/index.tsx",
+"pie-chart/utils.ts"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add @mariocharts/pie-chart"
+},
+{
+"id": "mariocharts/radar-chart",
+"name": "radar-chart",
+"title": "Radar Chart",
+"description": "A multi-axis radar chart with explicit axis ranges, polygons that grow from the center, keyboard and touch inspection, and responsive labels",
+"type": "component",
+"cat": "data-viz/chart",
+"domain": [],
+"file": "radar-chart/index.tsx",
+"files": [
+"radar-chart/index.tsx",
+"radar-chart/types.ts",
+"radar-chart/geometry.ts",
+"radar-chart/scales.ts"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add @mariocharts/radar-chart"
+},
+{
+"id": "mariocharts/sankey-chart",
+"name": "sankey-chart",
+"title": "Sankey Chart",
+"description": "A Sankey chart for branching and converging flows with proportional ribbons, reachable-path highlighting, keyboard and touch inspection, and a left-to-right reveal",
+"type": "component",
+"cat": "data-viz/chart",
+"domain": [],
+"file": "sankey-chart/index.tsx",
+"files": [
+"sankey-chart/index.tsx",
+"sankey-chart/types.ts",
+"sankey-chart/model.ts",
+"sankey-chart/geometry.ts"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add @mariocharts/sankey-chart"
+},
+{
+"id": "mariocharts/scatter-plot",
+"name": "scatter-plot",
+"title": "Scatter Plot",
+"description": "A scatter and bubble chart with area-scaled bubbles, clipped viewports and trends, keyboard and touch inspection, and points that grow at fixed coordinates",
+"type": "component",
+"cat": "data-viz/chart",
+"domain": [
+"dev tools"
+],
+"file": "scatter-plot/index.tsx",
+"files": [
+"scatter-plot/index.tsx",
+"scatter-plot/types.ts",
+"scatter-plot/scales.ts",
+"scatter-plot/regression.ts"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add @mariocharts/scatter-plot"
+},
+{
+"id": "mariocharts/stacked-bar-chart",
+"name": "stacked-bar-chart",
+"title": "Stacked Bar Chart",
+"description": "A stacked bar chart with faithful signed stacks, growth from zero, segment inspection by keyboard and touch, and vertical or horizontal layouts",
+"type": "component",
+"cat": "data-viz/chart",
+"domain": [],
+"file": "stacked-bar-chart/index.tsx",
+"files": [
+"stacked-bar-chart/index.tsx",
+"stacked-bar-chart/utils.ts"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add @mariocharts/stacked-bar-chart"
+},
+{
+"id": "mariocharts/treemap-chart",
+"name": "treemap-chart",
+"title": "Treemap Chart",
+"description": "A treemap with three proportional layouts, nested or flat views, group navigation, contrast-aware labels, growing tiles, and keyboard and touch inspection",
+"type": "component",
+"cat": "data-viz/chart",
+"domain": [
+"maps"
+],
+"file": "treemap-chart/index.tsx",
+"files": [
+"treemap-chart/index.tsx",
+"treemap-chart/layout.ts",
+"treemap-chart/model.ts",
+"treemap-chart/ink.ts"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add @mariocharts/treemap-chart"
+},
+{
+"id": "mariocharts/waterfall-chart",
+"name": "waterfall-chart",
+"title": "Waterfall Chart",
+"description": "A waterfall chart with absolute balances, computed sums and period subtotals, vertical and horizontal layouts, filled or outline bars, growth animations, and keyboard and touch inspection",
+"type": "component",
+"cat": "data-viz/chart",
+"domain": [],
+"file": "waterfall-chart/index.tsx",
+"files": [
+"waterfall-chart/index.tsx",
+"waterfall-chart/utils.ts"
+],
+"deps": [],
+"web": true,
+"player": null,
+"install": "npx shadcn@latest add @mariocharts/waterfall-chart"
+}
+]
+}

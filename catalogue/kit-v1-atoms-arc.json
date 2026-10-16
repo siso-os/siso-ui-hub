@@ -1,0 +1,3567 @@
+{
+ "separator": [],
+ "scroll-area": [
+  {
+   "name": "scroll-area",
+   "title": "Scroll area",
+   "about": "A native scroll container with thin overlay scrollbars and edge fades that appear only when content overflows.",
+   "demo": "demos/scroll-area.tsx",
+   "install": "npx shadcn@latest add https://uiarc.dev/r/scroll-area.json",
+   "file": "scroll-area/scroll-area.tsx",
+   "export": "ScrollArea",
+   "use": [
+    "Panels, sidebars, and popovers whose content can outgrow their box.",
+    "Horizontal strips of cards or chips that need mouse-wheel scrolling and snap points.",
+    "Places where platform scrollbars look heavy but native scrolling must be kept."
+   ],
+   "avoid": [
+    "Use carousel when items should page one at a time with controls.",
+    "Do not wrap the whole page; let the document scroll natively.",
+    "Use data-grid for large tabular data; it virtualizes its own scroll."
+   ],
+   "keyboard": [
+    "| Tab | The viewport is focusable (tabIndex 0). |",
+    "| Arrow keys / Page Up / Page Down / Home / End / Space | Scroll natively once the viewport has focus. |"
+   ],
+   "a11y": [
+    "Scrolling stays native, so keyboard, screen reader, and touch behavior match the platform.",
+    "With label, the viewport is a named region; without one, give it context another way.",
+    "The overlay tracks and thumbs are aria-hidden; the hidden native scrollbar remains the real control."
+   ],
+   "variants": [
+    {
+     "prop": "orientation",
+     "values": [
+      "vertical",
+      "horizontal",
+      "both"
+     ],
+     "default": "vertical",
+     "desc": "Axes that scroll."
+    },
+    {
+     "prop": "scrollbars",
+     "values": [
+      "auto",
+      "always"
+     ],
+     "default": "auto",
+     "desc": "\"auto\" shows scrollbars while scrolling or hovering; \"always\" keeps them visible when content overflows."
+    }
+   ],
+   "booleans": [
+    "wheelToHorizontal"
+   ],
+   "siblings": [
+    {
+     "name": "accordion",
+     "title": "Accordion",
+     "about": "Progressively reveal supporting information in place.",
+     "demo": "demos/accordion.tsx"
+    },
+    {
+     "name": "expandable-card",
+     "title": "Expandable card",
+     "about": "Give a dense card more room when requested.",
+     "demo": "demos/expandable-card.tsx"
+    },
+    {
+     "name": "resizable-panels",
+     "title": "Resizable panels",
+     "about": "Trade space between panes by dragging the divider between them.",
+     "demo": "demos/resizable-panels.tsx"
+    },
+    {
+     "name": "carousel",
+     "title": "Carousel",
+     "about": "Browse a row of slides by dragging, flicking, or arrowing through them.",
+     "demo": "demos/carousel.tsx"
+    },
+    {
+     "name": "data-grid",
+     "title": "Data grid",
+     "about": "A spreadsheet grid with range selection, inline editing, a fill handle, and animated sorting.",
+     "demo": null
+    },
+    {
+     "name": "tree-view",
+     "title": "Tree view",
+     "about": "Navigate nested folders and structured content.",
+     "demo": "demos/tree-view.tsx"
+    }
+   ]
+  }
+ ],
+ "aspect-ratio": [],
+ "drag-handle": [],
+ "text": [],
+ "kbd": [
+  {
+   "name": "shortcut-recorder",
+   "title": "Shortcut recorder",
+   "about": "Record key combinations into key caps, with conflict warnings, Kbd, and a searchable cheatsheet.",
+   "demo": "demos/shortcut-recorder.tsx",
+   "install": "npx shadcn@latest add https://uiarc.dev/r/shortcut-recorder.json",
+   "file": "shortcut-recorder/shortcut-recorder.tsx",
+   "export": "ShortcutRecorder",
+   "use": [
+    "Settings pages where people remap keyboard shortcuts.",
+    "A keyboard shortcut cheatsheet or help dialog, with ShortcutList.",
+    "Inline key hints in menus, tooltips, and docs, with ShortcutKbd or ShortcutKeys."
+   ],
+   "avoid": [
+    "Use ShortcutKbd alone when shortcuts are fixed and only need to be shown.",
+    "Use command-palette to let people run actions by name rather than bind keys.",
+    "Avoid it on touch-only products where no hardware keyboard is expected."
+   ],
+   "keyboard": [
+    "| Enter / Space | Starts recording. |",
+    "| Any combination (while recording) | Records it; held modifiers show as caps as you build the chord. |",
+    "| Escape (while recording) | Cancels recording. |",
+    "| Backspace / Delete | Clears the shortcut, while recording or while the field has focus. |",
+    "| Tab (while recording) | Stops recording and moves on without recording Tab. |",
+    "| Escape (in list search) | Clears the ShortcutList search. |"
+   ],
+   "a11y": [
+    "The recorder is a button with aria-pressed while recording, named by the label plus the spoken shortcut, such as \"Command Shift K\".",
+    "Recording, results, conflicts, and clears are announced through a polite live region; the message row is linked with aria-describedby.",
+    "Key caps are aria-hidden inside the recorder; ShortcutKeys uses role=\"img\" with a spoken aria-label.",
+    "Conflicts offer Use anyway and Cancel as real buttons, and focus returns to the recorder after either."
+   ],
+   "variants": [
+    {
+     "prop": "platform",
+     "values": [
+      "mac",
+      "other"
+     ],
+     "default": "\u2013",
+     "desc": "Overrides the detected platform."
+    }
+   ],
+   "booleans": [
+    "hideLabel",
+    "warnReserved",
+    "requireModifier",
+    "disabled"
+   ],
+   "siblings": [
+    {
+     "name": "number-field",
+     "title": "Number field",
+     "about": "Enter a bounded number with clear increment controls.",
+     "demo": "demos/number-field.tsx"
+    },
+    {
+     "name": "money-input",
+     "title": "Money input",
+     "about": "A currency field with live grouping, stable width, rolling digits, and minor-unit output.",
+     "demo": "demos/money-input.tsx"
+    },
+    {
+     "name": "phone-input",
+     "title": "Phone input",
+     "about": "A phone field with a country picker, formatting as you type, and E.164 output.",
+     "demo": "demos/phone-input.tsx"
+    },
+    {
+     "name": "tag-input",
+     "title": "Tag input",
+     "about": "Turn short text values into removable tags.",
+     "demo": "demos/tag-input.tsx"
+    },
+    {
+     "name": "mention-input",
+     "title": "Mention input",
+     "about": "A textarea with @people and #channel mentions that act as single tokens, with suggestions at the caret.",
+     "demo": "demos/mention-input.tsx"
+    },
+    {
+     "name": "input",
+     "title": "Input",
+     "about": "A single line field with clear labels and useful states.",
+     "demo": "demos/input.tsx"
+    },
+    {
+     "name": "tooltip",
+     "title": "Tooltip",
+     "about": "Short supporting text for unfamiliar controls.",
+     "demo": "demos/tooltip.tsx"
+    },
+    {
+     "name": "dropdown-menu",
+     "title": "Dropdown menu",
+     "about": "A focused list of actions anchored to a trigger.",
+     "demo": "demos/dropdown-menu.tsx"
+    }
+   ]
+  }
+ ],
+ "inline-code": [],
+ "highlight": [],
+ "text-effect": [
+  {
+   "name": "text-shimmer",
+   "title": "Text shimmer",
+   "about": "Show ongoing work with a calm light across the words.",
+   "demo": "demos/text-shimmer.tsx",
+   "install": "npx shadcn@latest add https://uiarc.dev/r/text-shimmer.json",
+   "file": "text-shimmer/text-shimmer.tsx",
+   "export": "TextShimmer",
+   "use": [
+    "AI thinking or loading labels such as Generating summary.",
+    "Short status lines that should show ongoing work and settle when done."
+   ],
+   "avoid": [
+    "Use text-stream for the response text itself.",
+    "Use skeleton for content placeholders and progress for measurable progress."
+   ],
+   "keyboard": [],
+   "a11y": [
+    "Sets aria-busy while active; the text itself stays real, readable text.",
+    "Announce completion from your own aria-live region; the component does not."
+   ],
+   "variants": [
+    {
+     "prop": "as",
+     "values": [
+      "span",
+      "p",
+      "div",
+      "h2",
+      "h3",
+      "h4"
+     ],
+     "default": "span",
+     "desc": "Rendered element."
+    }
+   ],
+   "booleans": [
+    "active"
+   ],
+   "siblings": [
+    {
+     "name": "text-reveal",
+     "title": "Text reveal",
+     "about": "Reveal a short piece of content with restrained motion.",
+     "demo": "demos/text-reveal.tsx"
+    },
+    {
+     "name": "in-view-title",
+     "title": "In-view title",
+     "about": "Bring a section title in as it scrolls into view.",
+     "demo": "demos/in-view-title.tsx"
+    },
+    {
+     "name": "text-morph",
+     "title": "Text morph",
+     "about": "Morph a label into its next state, letter by letter.",
+     "demo": "demos/text-morph.tsx"
+    },
+    {
+     "name": "skeleton",
+     "title": "Skeleton",
+     "about": "Reserve space while content is still loading.",
+     "demo": "demos/skeleton.tsx"
+    },
+    {
+     "name": "progress",
+     "title": "Progress",
+     "about": "Show how much of a known task is complete.",
+     "demo": "demos/progress.tsx"
+    }
+   ]
+  },
+  {
+   "name": "text-reveal",
+   "title": "Text reveal",
+   "about": "Reveal a short piece of content with restrained motion.",
+   "demo": "demos/text-reveal.tsx",
+   "install": "npx shadcn@latest add https://uiarc.dev/r/text-reveal.json",
+   "file": "text-reveal/text-reveal.tsx",
+   "export": "TextReveal",
+   "use": [
+    "Above-the-fold hero headlines that animate on page load.",
+    "Landing page intros where text must appear on first paint even if scripts are slow."
+   ],
+   "avoid": [
+    "Use in-view-title for section titles further down the page.",
+    "Use scroll-highlight for a key paragraph that reveals with scroll.",
+    "Use word-rotate when one word in the headline should cycle."
+   ],
+   "keyboard": [],
+   "a11y": [
+    "A heading carries the full text as its aria-label and the animated words are aria-hidden, so screen readers and crawlers read one clean sentence. A p keeps a visually hidden copy instead, since a paragraph cannot take a label.",
+    "Line breaks are read as spaces.",
+    "Pick the heading level with as so the page outline stays correct."
+   ],
+   "variants": [
+    {
+     "prop": "as",
+     "values": [
+      "h1",
+      "h2",
+      "h3",
+      "p"
+     ],
+     "default": "h2",
+     "desc": "Rendered element. p uses a softer blur."
+    }
+   ],
+   "booleans": [],
+   "siblings": [
+    {
+     "name": "text-shimmer",
+     "title": "Text shimmer",
+     "about": "Show ongoing work with a calm light across the words.",
+     "demo": "demos/text-shimmer.tsx"
+    },
+    {
+     "name": "in-view-title",
+     "title": "In-view title",
+     "about": "Bring a section title in as it scrolls into view.",
+     "demo": "demos/in-view-title.tsx"
+    },
+    {
+     "name": "text-morph",
+     "title": "Text morph",
+     "about": "Morph a label into its next state, letter by letter.",
+     "demo": "demos/text-morph.tsx"
+    }
+   ]
+  },
+  {
+   "name": "text-morph",
+   "title": "Text morph",
+   "about": "Morph a label into its next state, letter by letter.",
+   "demo": "demos/text-morph.tsx",
+   "install": "npx shadcn@latest add https://uiarc.dev/r/text-morph.json",
+   "file": "text-morph/text-morph.tsx",
+   "export": "TextMorph",
+   "use": [
+    "Status words that change a few letters at a time, such as Follow and Following.",
+    "Custom buttons or badges that need a morphing label without the rest of the button.",
+    "Inline counters or short state labels that should glide instead of jump."
+   ],
+   "avoid": [
+    "Use word-rotate for a sentence with one cycling word.",
+    "Use button or action-swap when you want the morph plus button behaviour.",
+    "Avoid it for text that wraps, since it always renders a single line."
+   ],
+   "keyboard": [],
+   "a11y": [
+    "The plain label is in a visually hidden span; the animated glyphs are aria-hidden.",
+    "It does not announce changes. Wrap it in your own aria-live region if a status change must be announced."
+   ],
+   "variants": [
+    {
+     "prop": "as",
+     "values": [
+      "span",
+      "div",
+      "p",
+      "strong",
+      "h1",
+      "h2",
+      "h3"
+     ],
+     "default": "span",
+     "desc": "Rendered element."
+    }
+   ],
+   "booleans": [],
+   "siblings": [
+    {
+     "name": "text-reveal",
+     "title": "Text reveal",
+     "about": "Reveal a short piece of content with restrained motion.",
+     "demo": "demos/text-reveal.tsx"
+    },
+    {
+     "name": "in-view-title",
+     "title": "In-view title",
+     "about": "Bring a section title in as it scrolls into view.",
+     "demo": "demos/in-view-title.tsx"
+    },
+    {
+     "name": "button",
+     "title": "Button",
+     "about": "A clear, responsive action with quiet secondary states.",
+     "demo": "demos/button.tsx"
+    },
+    {
+     "name": "text-shimmer",
+     "title": "Text shimmer",
+     "about": "Show ongoing work with a calm light across the words.",
+     "demo": "demos/text-shimmer.tsx"
+    }
+   ]
+  },
+  {
+   "name": "in-view-title",
+   "title": "In-view title",
+   "about": "Bring a section title in as it scrolls into view.",
+   "demo": "demos/in-view-title.tsx",
+   "install": "npx shadcn@latest add https://uiarc.dev/r/in-view-title.json",
+   "file": "in-view-title/in-view-title.tsx",
+   "export": "InViewTitle",
+   "use": [
+    "Section headings that should animate once they scroll into view.",
+    "Feature pages where each section title needs a consistent entrance style.",
+    "Headings that should replay on each entry, via once={false}."
+   ],
+   "avoid": [
+    "Use text-reveal for hero copy that animates on load.",
+    "Use scroll-highlight for a paragraph that follows scroll progress.",
+    "Use text-shimmer for status lines, not headings."
+   ],
+   "keyboard": [],
+   "a11y": [
+    "The heading carries aria-label with the full text; the animated parts are aria-hidden.",
+    "Titles already scrolled past show immediately, and server-rendered titles appear on their own if scripts are slow.",
+    "Choose as to match the page's heading outline."
+   ],
+   "variants": [
+    {
+     "prop": "variant",
+     "values": [
+      "word",
+      "line",
+      "blur",
+      "tracking",
+      "wipe"
+     ],
+     "default": "blur",
+     "desc": "Reveal style. blur suits most headings; word and line rise from a clip; tracking opens letter spacing; wipe uncovers left to right."
+    },
+    {
+     "prop": "as",
+     "values": [
+      "h1",
+      "h2",
+      "h3"
+     ],
+     "default": "h2",
+     "desc": "Heading level."
+    }
+   ],
+   "booleans": [
+    "once"
+   ],
+   "siblings": [
+    {
+     "name": "text-morph",
+     "title": "Text morph",
+     "about": "Morph a label into its next state, letter by letter.",
+     "demo": "demos/text-morph.tsx"
+    },
+    {
+     "name": "text-reveal",
+     "title": "Text reveal",
+     "about": "Reveal a short piece of content with restrained motion.",
+     "demo": "demos/text-reveal.tsx"
+    },
+    {
+     "name": "text-shimmer",
+     "title": "Text shimmer",
+     "about": "Show ongoing work with a calm light across the words.",
+     "demo": "demos/text-shimmer.tsx"
+    }
+   ]
+  },
+  {
+   "name": "slot-text",
+   "title": "Slot text",
+   "about": "Text and numbers that spin into their new value on staggered slot machine reels.",
+   "demo": "demos/slot-text.tsx",
+   "install": "npx shadcn@latest add https://uiarc.dev/r/slot-text.json",
+   "file": "slot-text/slot-text.tsx",
+   "export": "SlotText",
+   "use": [
+    "Pricing toggles, KPI cards, dashboards changing period.",
+    "Launch moments, raffles, and reveals."
+   ],
+   "avoid": [
+    "Values that update several times a second.",
+    "Long sentences; reels are for short values."
+   ],
+   "keyboard": [],
+   "a11y": [
+    "The full value is real text in a visually hidden span; the reels are aria-hidden.",
+    "announce adds a polite live region for values that change without user action."
+   ],
+   "variants": [
+    {
+     "prop": "align",
+     "values": [
+      "start",
+      "end"
+     ],
+     "default": "\u2013",
+     "desc": "Which end reels are matched from when the length changes. Numbers default to end, strings to start."
+    }
+   ],
+   "booleans": [
+    "announce"
+   ],
+   "siblings": [
+    {
+     "name": "keycap-keyboard",
+     "title": "Keycap keyboard",
+     "about": "Mechanical keycaps that sink and light up as you type, with the text above the board.",
+     "demo": null
+    },
+    {
+     "name": "sand-text",
+     "title": "Sand text",
+     "about": "A headline made of sand that pours into the letters, crumbles where the cursor digs, and heals itself.",
+     "demo": null
+    },
+    {
+     "name": "typewriter-terminal",
+     "title": "Typewriter terminal",
+     "about": "A terminal that types a scripted CLI session with a seeded human cadence, colors the shell syntax, and streams output lines, progress bars and spinners, with a scrubber, play/pause and replay controls.",
+     "demo": null
+    },
+    {
+     "name": "animated-counter",
+     "title": "Animated counter",
+     "about": "Give changing totals a clear sense of movement.",
+     "demo": "demos/animated-counter.tsx"
+    },
+    {
+     "name": "countdown",
+     "title": "Countdown",
+     "about": "A launch countdown with rolling digits that morphs into a live state at zero.",
+     "demo": "demos/countdown.tsx"
+    },
+    {
+     "name": "text-morph",
+     "title": "Text morph",
+     "about": "Morph a label into its next state, letter by letter.",
+     "demo": "demos/text-morph.tsx"
+    },
+    {
+     "name": "billing-toggle",
+     "title": "Billing toggle",
+     "about": "A monthly and yearly switch with a savings badge and prices that roll to the new amount.",
+     "demo": "demos/billing-toggle.tsx"
+    }
+   ]
+  }
+ ],
+ "label": [],
+ "field-message": [],
+ "link": [],
+ "link-preview": [
+  {
+   "name": "hover-card",
+   "title": "Hover card",
+   "about": "Preview a person or link on hover or focus without leaving the page.",
+   "demo": "demos/hover-card.tsx",
+   "install": "npx shadcn@latest add https://uiarc.dev/r/hover-card.json",
+   "file": "hover-card/hover-card.tsx",
+   "export": "HoverCard",
+   "use": [
+    "Previews of people behind mentions, avatars, or author names.",
+    "Link or reference previews where the click must stay free for navigation.",
+    "Dense lists where moving between triggers should open cards almost instantly."
+   ],
+   "avoid": [
+    "Use tooltip for a plain text label.",
+    "Use popover when the content has buttons or inputs.",
+    "Use user-menu for the account menu on your own avatar."
+   ],
+   "keyboard": [
+    "| Tab | Keyboard focus on the trigger opens the card immediately. |",
+    "| Enter | Opens the card without the hover delay. |",
+    "| Escape | Closes the card and keeps it closed while the pointer rests on the trigger. |"
+   ],
+   "a11y": [
+    "The card has role=\"tooltip\" and the trigger gets aria-describedby while it is open.",
+    "Focus never moves into the card, so keep its content read only.",
+    "On touch, a tap toggles the card instead of relying on hover."
+   ],
+   "variants": [
+    {
+     "prop": "side",
+     "values": [
+      "top",
+      "bottom",
+      "left",
+      "right"
+     ],
+     "default": "bottom",
+     "desc": "Preferred side of the trigger."
+    },
+    {
+     "prop": "align",
+     "values": [
+      "start",
+      "center",
+      "end"
+     ],
+     "default": "start",
+     "desc": "Alignment against the trigger."
+    }
+   ],
+   "booleans": [],
+   "siblings": [
+    {
+     "name": "dialog",
+     "title": "Dialog",
+     "about": "A focused surface for decisions that need attention.",
+     "demo": "demos/dialog.tsx"
+    },
+    {
+     "name": "drawer",
+     "title": "Drawer",
+     "about": "A temporary side surface for focused work.",
+     "demo": "demos/drawer.tsx"
+    },
+    {
+     "name": "bottom-sheet",
+     "title": "Bottom sheet",
+     "about": "A sheet that rests at a peek or full height and follows your finger.",
+     "demo": "demos/bottom-sheet.tsx"
+    },
+    {
+     "name": "share-access",
+     "title": "Share access",
+     "about": "A share panel: invite people as validated email chips with suggestions, change roles from a compact menu, remove with undo, switch link access and copy the link, with every change landing in place.",
+     "demo": null
+    },
+    {
+     "name": "tooltip",
+     "title": "Tooltip",
+     "about": "Short supporting text for unfamiliar controls.",
+     "demo": "demos/tooltip.tsx"
+    },
+    {
+     "name": "popover",
+     "title": "Popover",
+     "about": "A small anchored surface for contextual information.",
+     "demo": "demos/popover.tsx"
+    },
+    {
+     "name": "avatar",
+     "title": "Avatar",
+     "about": "A compact identity marker for people and accounts.",
+     "demo": "demos/avatar.tsx"
+    },
+    {
+     "name": "user-menu",
+     "title": "User menu",
+     "about": "Your account, settings, theme, and sign out behind the avatar. Opens as a bottom sheet on phones.",
+     "demo": "demos/user-menu.tsx"
+    }
+   ]
+  }
+ ],
+ "button": [
+  {
+   "name": "button",
+   "title": "Button",
+   "about": "A clear, responsive action with quiet secondary states.",
+   "demo": "demos/button.tsx",
+   "install": "npx shadcn@latest add https://uiarc.dev/r/button.json",
+   "file": "button/button.tsx",
+   "export": "Button",
+   "use": [
+    "Any single action on a page, form, or dialog, such as Save, Continue, or Cancel.",
+    "Actions whose label changes in place, like Save to Saved, where the width should spring instead of jump.",
+    "Short async work where a spinner on the button is enough feedback, via loading."
+   ],
+   "avoid": [
+    "Use action-button when the button itself should show pending and success states after an async commit.",
+    "Use split-button when one default action has two to five close variants.",
+    "Use hold-to-confirm for destructive actions that need more than a single click."
+   ],
+   "keyboard": [
+    "| Enter / Space | Activates the button. |"
+   ],
+   "a11y": [
+    "Renders a native button, so role and focus come for free.",
+    "Loading uses aria-busy and aria-disabled instead of disabled, so keyboard focus is not lost mid-action.",
+    "Icon-only buttons need an aria-label.",
+    "Disabled primary buttons fade as a whole. Disabled secondary and danger buttons keep their border and take a muted fill and label, and disabled ghost buttons take a muted label, so an unavailable action still reads as a button."
+   ],
+   "variants": [
+    {
+     "prop": "variant",
+     "values": [
+      "primary",
+      "secondary",
+      "ghost",
+      "danger"
+     ],
+     "default": "primary",
+     "desc": "Visual weight. Use one primary action per surface."
+    },
+    {
+     "prop": "size",
+     "values": [
+      "sm",
+      "md",
+      "lg"
+     ],
+     "default": "md",
+     "desc": "Height and padding."
+    }
+   ],
+   "booleans": [
+    "loading"
+   ],
+   "siblings": [
+    {
+     "name": "button-group",
+     "title": "Button group",
+     "about": "Related actions joined into one surface with hairline dividers: a hover highlight glides between segments, the pressed one answers in place, and an attached menu can close the row.",
+     "demo": "demos/button-group.tsx"
+    },
+    {
+     "name": "floating-button-group",
+     "title": "Floating button group",
+     "about": "Separate soft buttons in a quiet tray, with one shared highlight that morphs from button to button as you move, and a pressed state that settles in place.",
+     "demo": "demos/floating-button-group.tsx"
+    },
+    {
+     "name": "expanding-button-group",
+     "title": "Expanding button group",
+     "about": "Icon buttons in a compact group: the one you point at or focus grows to reveal its label while its neighbours slide aside, and an action confirms in place.",
+     "demo": "demos/expanding-button-group.tsx"
+    },
+    {
+     "name": "icon-morph",
+     "title": "Icon morph",
+     "about": "Icons that morph between states: menu to close, play to pause, copy to check, and more.",
+     "demo": null
+    },
+    {
+     "name": "confirm-morph",
+     "title": "Confirm morph",
+     "about": "A destructive button that morphs into an inline confirmation, a spinner, and a result with undo.",
+     "demo": "demos/confirm-morph.tsx"
+    },
+    {
+     "name": "action-button",
+     "title": "Action button",
+     "about": "A compact button for frequent toolbar actions.",
+     "demo": "demos/action-button.tsx"
+    },
+    {
+     "name": "split-button",
+     "title": "Split button",
+     "about": "A primary action with a menu of nearby alternatives.",
+     "demo": "demos/split-button.tsx"
+    },
+    {
+     "name": "copy-button",
+     "title": "Copy button",
+     "about": "Copy a value with immediate confirmation.",
+     "demo": "demos/copy-button.tsx"
+    },
+    {
+     "name": "hold-to-confirm",
+     "title": "Hold to confirm",
+     "about": "Confirm a destructive action by holding, not tapping.",
+     "demo": "demos/hold-to-confirm.tsx"
+    }
+   ]
+  }
+ ],
+ "button-group": [
+  {
+   "name": "button-group",
+   "title": "Button group",
+   "about": "Related actions joined into one surface with hairline dividers: a hover highlight glides between segments, the pressed one answers in place, and an attached menu can close the row.",
+   "demo": "demos/button-group.tsx",
+   "install": "npx shadcn@latest add https://uiarc.dev/r/button-group.json",
+   "file": "button-group/button-group.tsx",
+   "export": "ButtonGroup",
+   "use": [
+    "A small set of related actions on the same object, shown together in a header, toolbar or card footer.",
+    "Compact tool clusters such as zoom out, the current level and zoom in, or stacked map controls.",
+    "A primary action row, such as Reply, Reply all and Forward on a message."
+   ],
+   "avoid": [
+    "Use toggle-group or segmented-control when the segments are options that stay selected.",
+    "Use split-button when there is one main action and a few variants of it.",
+    "Use separate buttons when the actions are unrelated or one of them is much more important than the rest.",
+    "Use tabs for switching between views."
+   ],
+   "keyboard": [
+    "| Tab / Shift+Tab | Moves into, through and out of the group. Every segment is a tab stop, so the group behaves like the buttons it replaces. |",
+    "| Arrow right / Arrow left | Also moves between segments in a horizontal group, wrapping at the ends (mirrored in right to left layouts). |",
+    "| Arrow down / Arrow up | Moves between segments in a vertical group. On the chevron segment, Arrow down opens the menu instead. |",
+    "| Home / End | Moves to the first or last segment. |",
+    "| Enter / Space | Activates the focused segment. Link segments follow the link with Enter. |",
+    "| Enter / Space / Arrow down | On the chevron segment: opens the menu with the first item highlighted. |",
+    "| Arrow keys / Home / End | In the menu: moves between items, looping at the ends; disabled items are skipped. |",
+    "| Escape | Closes the menu and returns focus to the chevron. |",
+    "| Tab (menu open) | Closes the menu and moves on, since the menu is non-modal. |"
+   ],
+   "a11y": [
+    "The root is a div with role=\"group\" named by label. Segments are native buttons (or links with href), so they keep their own roles and activation keys.",
+    "Disabled segments use aria-disabled instead of the disabled attribute, so they stay focusable and are read as dimmed; their onSelect never runs. A disabled whole group uses the disabled attribute.",
+    "Icon-only segments, segments with content and collapsed segments take their label as aria-label and as a tooltip; icons are hidden from assistive technology.",
+    "When a segment's label changes within a second of its press, such as \"Share\" to \"Copied\", a polite live region in the group announces the new label once; the quiet return to \"Share\" is not announced.",
+    "The chevron segment is a Radix dropdown trigger named by menu.label, with aria-expanded and aria-haspopup. The menu manages focus, typeahead, Escape and outside clicks, and returns focus to the chevron. It is non-modal, so opening it never locks scroll or shifts the page.",
+    "Keyboard focus moves the same highlight the pointer does; pointer focus draws no ring and keyboard focus shows Arc's shared focus ring. A mouse click focuses without the highlight, so nothing stays lit after the pointer leaves.",
+    "State is never carried by color alone: confirmations change the label and icon, and disabled segments are dimmed and announced."
+   ],
+   "variants": [
+    {
+     "prop": "variant",
+     "values": [
+      "outline",
+      "solid"
+     ],
+     "default": "outline",
+     "desc": "outline sits on a neutral surface with a quiet border. solid takes the primary button's fill, for the main actions of a view."
+    },
+    {
+     "prop": "size",
+     "values": [
+      "sm",
+      "md"
+     ],
+     "default": "md",
+     "desc": "Matches the small and medium button heights."
+    },
+    {
+     "prop": "orientation",
+     "values": [
+      "horizontal",
+      "vertical"
+     ],
+     "default": "horizontal",
+     "desc": "Vertical stacks the segments, such as zoom controls on a canvas; arrow up and down then move between them."
+    }
+   ],
+   "booleans": [
+    "collapseLabels",
+    "disabled"
+   ],
+   "siblings": [
+    {
+     "name": "action-button",
+     "title": "Action button",
+     "about": "A compact button for frequent toolbar actions.",
+     "demo": "demos/action-button.tsx"
+    },
+    {
+     "name": "copy-button",
+     "title": "Copy button",
+     "about": "Copy a value with immediate confirmation.",
+     "demo": "demos/copy-button.tsx"
+    },
+    {
+     "name": "icon-morph",
+     "title": "Icon morph",
+     "about": "Icons that morph between states: menu to close, play to pause, copy to check, and more.",
+     "demo": null
+    },
+    {
+     "name": "confirm-morph",
+     "title": "Confirm morph",
+     "about": "A destructive button that morphs into an inline confirmation, a spinner, and a result with undo.",
+     "demo": "demos/confirm-morph.tsx"
+    },
+    {
+     "name": "button",
+     "title": "Button",
+     "about": "A clear, responsive action with quiet secondary states.",
+     "demo": "demos/button.tsx"
+    },
+    {
+     "name": "split-button",
+     "title": "Split button",
+     "about": "A primary action with a menu of nearby alternatives.",
+     "demo": "demos/split-button.tsx"
+    },
+    {
+     "name": "segmented-control",
+     "title": "Segmented control",
+     "about": "Switch between a small set of related views.",
+     "demo": "demos/segmented-control.tsx"
+    },
+    {
+     "name": "floating-button-group",
+     "title": "Floating button group",
+     "about": "Separate soft buttons in a quiet tray, with one shared highlight that morphs from button to button as you move, and a pressed state that settles in place.",
+     "demo": "demos/floating-button-group.tsx"
+    },
+    {
+     "name": "expanding-button-group",
+     "title": "Expanding button group",
+     "about": "Icon buttons in a compact group: the one you point at or focus grows to reveal its label while its neighbours slide aside, and an action confirms in place.",
+     "demo": "demos/expanding-button-group.tsx"
+    }
+   ]
+  },
+  {
+   "name": "split-button",
+   "title": "Split button",
+   "about": "A primary action with a menu of nearby alternatives.",
+   "demo": "demos/split-button.tsx",
+   "install": "npx shadcn@latest add https://uiarc.dev/r/split-button.json",
+   "file": "split-button/split-button.tsx",
+   "export": "SplitButton",
+   "use": [
+    "One default action with a few close variants, like Merge with Squash and Rebase.",
+    "Export or share actions where one format is the usual pick and others sit behind the chevron.",
+    "Copy actions that swap the label to Copied in place while offering alternatives."
+   ],
+   "avoid": [
+    "Use dropdown-menu when there is no default action and every option is equal.",
+    "Use button when there are no alternatives.",
+    "Use context-menu for actions tied to a piece of content rather than a toolbar."
+   ],
+   "keyboard": [
+    "| Enter / Space | Runs the main action, or opens the menu from the chevron. |",
+    "| ArrowDown / ArrowUp | Moves between menu items, looping at the ends. |",
+    "| Escape | Closes the menu and returns focus to the chevron. |"
+   ],
+   "a11y": [
+    "Two native buttons; the chevron is labelled \"<label> more actions\".",
+    "The menu is a Radix DropdownMenu with menu and menuitem roles and focus management.",
+    "The main label is announced through a polite live region when it changes."
+   ],
+   "variants": [
+    {
+     "prop": "variant",
+     "values": [
+      "primary",
+      "secondary"
+     ],
+     "default": "primary",
+     "desc": "Visual weight of both halves."
+    }
+   ],
+   "booleans": [
+    "disabled"
+   ],
+   "siblings": [
+    {
+     "name": "button-group",
+     "title": "Button group",
+     "about": "Related actions joined into one surface with hairline dividers: a hover highlight glides between segments, the pressed one answers in place, and an attached menu can close the row.",
+     "demo": "demos/button-group.tsx"
+    },
+    {
+     "name": "floating-button-group",
+     "title": "Floating button group",
+     "about": "Separate soft buttons in a quiet tray, with one shared highlight that morphs from button to button as you move, and a pressed state that settles in place.",
+     "demo": "demos/floating-button-group.tsx"
+    },
+    {
+     "name": "expanding-button-group",
+     "title": "Expanding button group",
+     "about": "Icon buttons in a compact group: the one you point at or focus grows to reveal its label while its neighbours slide aside, and an action confirms in place.",
+     "demo": "demos/expanding-button-group.tsx"
+    },
+    {
+     "name": "icon-morph",
+     "title": "Icon morph",
+     "about": "Icons that morph between states: menu to close, play to pause, copy to check, and more.",
+     "demo": null
+    },
+    {
+     "name": "confirm-morph",
+     "title": "Confirm morph",
+     "about": "A destructive button that morphs into an inline confirmation, a spinner, and a result with undo.",
+     "demo": "demos/confirm-morph.tsx"
+    },
+    {
+     "name": "button",
+     "title": "Button",
+     "about": "A clear, responsive action with quiet secondary states.",
+     "demo": "demos/button.tsx"
+    },
+    {
+     "name": "dropdown-menu",
+     "title": "Dropdown menu",
+     "about": "A focused list of actions anchored to a trigger.",
+     "demo": "demos/dropdown-menu.tsx"
+    },
+    {
+     "name": "action-button",
+     "title": "Action button",
+     "about": "A compact button for frequent toolbar actions.",
+     "demo": "demos/action-button.tsx"
+    },
+    {
+     "name": "copy-button",
+     "title": "Copy button",
+     "about": "Copy a value with immediate confirmation.",
+     "demo": "demos/copy-button.tsx"
+    }
+   ]
+  }
+ ],
+ "copy-button": [
+  {
+   "name": "copy-button",
+   "title": "Copy button",
+   "about": "Copy a value with immediate confirmation.",
+   "demo": "demos/copy-button.tsx",
+   "install": "npx shadcn@latest add https://uiarc.dev/r/copy-button.json",
+   "file": "copy-button/copy-button.tsx",
+   "export": "CopyButton",
+   "use": [
+    "Next to API keys, install commands, links, or code snippets.",
+    "Icon-only copy controls in dense rows, with an accessible label.",
+    "Any copy action that should confirm Copied or Could not copy in place."
+   ],
+   "avoid": [
+    "Use split-button when copying has alternatives, such as Copy link and Copy as Markdown.",
+    "Use code-block for full code samples, which include their own copy control."
+   ],
+   "keyboard": [
+    "| Enter / Space | Copies the value. |"
+   ],
+   "a11y": [
+    "Native button named by label, including when iconOnly.",
+    "A polite role=\"status\" region announces \"<label>: Copied\" or \"<label>: Could not copy\".",
+    "The label cell reserves the widest of its three states, so the layout never shifts."
+   ],
+   "variants": [
+    {
+     "prop": "variant",
+     "values": [
+      "outline",
+      "plain"
+     ],
+     "default": "outline",
+     "desc": "Bordered or borderless."
+    }
+   ],
+   "booleans": [
+    "iconOnly",
+    "disabled"
+   ],
+   "siblings": [
+    {
+     "name": "button-group",
+     "title": "Button group",
+     "about": "Related actions joined into one surface with hairline dividers: a hover highlight glides between segments, the pressed one answers in place, and an attached menu can close the row.",
+     "demo": "demos/button-group.tsx"
+    },
+    {
+     "name": "floating-button-group",
+     "title": "Floating button group",
+     "about": "Separate soft buttons in a quiet tray, with one shared highlight that morphs from button to button as you move, and a pressed state that settles in place.",
+     "demo": "demos/floating-button-group.tsx"
+    },
+    {
+     "name": "expanding-button-group",
+     "title": "Expanding button group",
+     "about": "Icon buttons in a compact group: the one you point at or focus grows to reveal its label while its neighbours slide aside, and an action confirms in place.",
+     "demo": "demos/expanding-button-group.tsx"
+    },
+    {
+     "name": "icon-morph",
+     "title": "Icon morph",
+     "about": "Icons that morph between states: menu to close, play to pause, copy to check, and more.",
+     "demo": null
+    },
+    {
+     "name": "confirm-morph",
+     "title": "Confirm morph",
+     "about": "A destructive button that morphs into an inline confirmation, a spinner, and a result with undo.",
+     "demo": "demos/confirm-morph.tsx"
+    },
+    {
+     "name": "button",
+     "title": "Button",
+     "about": "A clear, responsive action with quiet secondary states.",
+     "demo": "demos/button.tsx"
+    },
+    {
+     "name": "code-block",
+     "title": "Code block",
+     "about": "Present code with legible hierarchy and copy access.",
+     "demo": "demos/code-block.tsx"
+    },
+    {
+     "name": "split-button",
+     "title": "Split button",
+     "about": "A primary action with a menu of nearby alternatives.",
+     "demo": "demos/split-button.tsx"
+    },
+    {
+     "name": "action-button",
+     "title": "Action button",
+     "about": "A compact button for frequent toolbar actions.",
+     "demo": "demos/action-button.tsx"
+    }
+   ]
+  }
+ ],
+ "hold-to-confirm": [
+  {
+   "name": "hold-to-confirm",
+   "title": "Hold to confirm",
+   "about": "Confirm a destructive action by holding, not tapping.",
+   "demo": "demos/hold-to-confirm.tsx",
+   "install": "npx shadcn@latest add https://uiarc.dev/r/hold-to-confirm.json",
+   "file": "hold-to-confirm/hold-to-confirm.tsx",
+   "export": "HoldToConfirm",
+   "use": [
+    "Destructive actions like delete or revoke where the consequence is already visible on screen.",
+    "Replacing a confirm dialog with a deliberate press in compact settings rows.",
+    "Actions that should not fire on an accidental tap on touch devices."
+   ],
+   "avoid": [
+    "Use dialog when people need to read what will happen before confirming.",
+    "Use button or action-button for safe, easily undone actions.",
+    "Use swipe-actions for delete in touch lists."
+   ],
+   "keyboard": [
+    "| Space / Enter (hold) | Fills the button; releasing early rewinds it. |",
+    "| Tab away | Cancels an active hold. |"
+   ],
+   "a11y": [
+    "aria-describedby points to a hidden hint: \"Press and hold for N seconds to confirm. With a keyboard, hold Space or Enter.\"",
+    "aria-label tracks the visible label; a role=\"status\" region announces confirmedLabel.",
+    "Once done the button sets aria-disabled; the text is drawn twice so it changes color exactly at the fill edge."
+   ],
+   "variants": [
+    {
+     "prop": "tone",
+     "values": [
+      "danger",
+      "neutral"
+     ],
+     "default": "danger",
+     "desc": "Fill color."
+    }
+   ],
+   "booleans": [
+    "confirmed"
+   ],
+   "siblings": [
+    {
+     "name": "button",
+     "title": "Button",
+     "about": "A clear, responsive action with quiet secondary states.",
+     "demo": "demos/button.tsx"
+    },
+    {
+     "name": "action-button",
+     "title": "Action button",
+     "about": "A compact button for frequent toolbar actions.",
+     "demo": "demos/action-button.tsx"
+    },
+    {
+     "name": "dialog",
+     "title": "Dialog",
+     "about": "A focused surface for decisions that need attention.",
+     "demo": "demos/dialog.tsx"
+    },
+    {
+     "name": "swipe-actions",
+     "title": "Swipe actions",
+     "about": "Reveal row actions with a swipe, or from the same actions in a menu.",
+     "demo": "demos/swipe-actions.tsx"
+    }
+   ]
+  }
+ ],
+ "avatar": [
+  {
+   "name": "avatar",
+   "title": "Avatar",
+   "about": "A compact identity marker for people and accounts.",
+   "demo": "demos/avatar.tsx",
+   "install": "npx shadcn@latest add https://uiarc.dev/r/avatar.json",
+   "file": "avatar/avatar.tsx",
+   "export": "Avatar",
+   "use": [
+    "Showing one person next to their name, comment, or record.",
+    "Presence in a header or list, via the online or offline status dot.",
+    "Places where a photo may be missing and initials should stand in."
+   ],
+   "avoid": [
+    "Use avatar-group for several people with an overflow count.",
+    "Use user-menu when the avatar is the trigger for account actions."
+   ],
+   "keyboard": [],
+   "a11y": [
+    "The root is role=\"img\" with an aria-label of the name plus status, such as \"Maya Chen, online\".",
+    "The image and initials are decorative, so the name is read once.",
+    "The status dot is hidden from assistive tech; the label carries the state."
+   ],
+   "variants": [
+    {
+     "prop": "size",
+     "values": [
+      "sm",
+      "md",
+      "lg",
+      "xl"
+     ],
+     "default": "md",
+     "desc": "Diameter, from 28px to 88px."
+    },
+    {
+     "prop": "status",
+     "values": [
+      "online",
+      "offline"
+     ],
+     "default": "\u2013",
+     "desc": "Adds a presence dot and appends the status to the label."
+    }
+   ],
+   "booleans": [],
+   "siblings": [
+    {
+     "name": "badge",
+     "title": "Badge",
+     "about": "A small label for status, category, or metadata.",
+     "demo": "demos/badge.tsx"
+    },
+    {
+     "name": "avatar-group",
+     "title": "Avatar group",
+     "about": "Show a team or set of contributors in a small space.",
+     "demo": "demos/avatar-group.tsx"
+    },
+    {
+     "name": "user-menu",
+     "title": "User menu",
+     "about": "Your account, settings, theme, and sign out behind the avatar. Opens as a bottom sheet on phones.",
+     "demo": "demos/user-menu.tsx"
+    },
+    {
+     "name": "card",
+     "title": "Card",
+     "about": "A contained group of related content and actions.",
+     "demo": "demos/card.tsx"
+    },
+    {
+     "name": "timeline",
+     "title": "Timeline",
+     "about": "Follow what happened, newest first, grouped by day.",
+     "demo": "demos/timeline.tsx"
+    }
+   ]
+  }
+ ],
+ "avatar-group": [
+  {
+   "name": "avatar-group",
+   "title": "Avatar group",
+   "about": "Show a team or set of contributors in a small space.",
+   "demo": "demos/avatar-group.tsx",
+   "install": "npx shadcn@latest add https://uiarc.dev/r/avatar-group.json",
+   "file": "avatar-group/avatar-group.tsx",
+   "export": "AvatarGroup",
+   "use": [
+    "Showing who owns or edits something in a header, card, or table cell.",
+    "Collaborator stacks where people join and leave while the page is open.",
+    "Long member lists that should collapse into a +N chip."
+   ],
+   "avoid": [
+    "Use avatar for a single person.",
+    "Use a list or sortable-data-table when people need to see every name and role."
+   ],
+   "keyboard": [],
+   "a11y": [
+    "Renders role=\"group\" with the label as its name.",
+    "The overflow chip is role=\"img\" labelled like \"2 more editors\".",
+    "Each avatar keeps its own name and status label."
+   ],
+   "variants": [
+    {
+     "prop": "size",
+     "values": [
+      "sm",
+      "md",
+      "lg"
+     ],
+     "default": "md",
+     "desc": "Size passed to each avatar and the overflow chip."
+    }
+   ],
+   "booleans": [],
+   "siblings": [
+    {
+     "name": "badge",
+     "title": "Badge",
+     "about": "A small label for status, category, or metadata.",
+     "demo": "demos/badge.tsx"
+    },
+    {
+     "name": "avatar",
+     "title": "Avatar",
+     "about": "A compact identity marker for people and accounts.",
+     "demo": "demos/avatar.tsx"
+    },
+    {
+     "name": "card",
+     "title": "Card",
+     "about": "A contained group of related content and actions.",
+     "demo": "demos/card.tsx"
+    },
+    {
+     "name": "user-menu",
+     "title": "User menu",
+     "about": "Your account, settings, theme, and sign out behind the avatar. Opens as a bottom sheet on phones.",
+     "demo": "demos/user-menu.tsx"
+    }
+   ]
+  }
+ ],
+ "badge": [
+  {
+   "name": "badge",
+   "title": "Badge",
+   "about": "A small label for status, category, or metadata.",
+   "demo": "demos/badge.tsx",
+   "install": "npx shadcn@latest add https://uiarc.dev/r/badge.json",
+   "file": "badge/badge.tsx",
+   "export": "Badge",
+   "use": [
+    "Short statuses next to titles or in table cells, such as Live, Draft, or Failed.",
+    "Counts or states that change in place and should morph instead of jump.",
+    "Tagging a row with one tone plus an optional icon."
+   ],
+   "avoid": [
+    "Use alert or toast when the message needs a full sentence.",
+    "Use chip-group when people toggle the values.",
+    "Use stat-card for a headline number with a trend."
+   ],
+   "keyboard": [],
+   "a11y": [
+    "Renders a plain span, so it is read inline with surrounding text.",
+    "The icon is aria-hidden; the label must state the status on its own, not rely on tone color.",
+    "Outgoing labels are hidden from assistive tech while they fade, so only the current text is read.",
+    "It does not announce changes. Put it inside a live region if a status update must be spoken."
+   ],
+   "variants": [
+    {
+     "prop": "tone",
+     "values": [
+      "neutral",
+      "success",
+      "info",
+      "warning",
+      "danger"
+     ],
+     "default": "neutral",
+     "desc": "Color of the pill."
+    },
+    {
+     "prop": "size",
+     "values": [
+      "sm",
+      "md"
+     ],
+     "default": "md",
+     "desc": "Height and text size."
+    }
+   ],
+   "booleans": [],
+   "siblings": [
+    {
+     "name": "avatar",
+     "title": "Avatar",
+     "about": "A compact identity marker for people and accounts.",
+     "demo": "demos/avatar.tsx"
+    },
+    {
+     "name": "avatar-group",
+     "title": "Avatar group",
+     "about": "Show a team or set of contributors in a small space.",
+     "demo": "demos/avatar-group.tsx"
+    },
+    {
+     "name": "alert",
+     "title": "Alert",
+     "about": "A persistent message that helps people recover or continue.",
+     "demo": "demos/alert.tsx"
+    },
+    {
+     "name": "sortable-data-table",
+     "title": "Sortable data table",
+     "about": "Compare structured records with sortable columns.",
+     "demo": "demos/sortable-data-table.tsx"
+    }
+   ]
+  }
+ ],
+ "chip": [
+  {
+   "name": "chip-group",
+   "title": "Chip group",
+   "about": "Filter by a few facets with chips that morph as you pick them.",
+   "demo": "demos/chip-group.tsx",
+   "install": "npx shadcn@latest add https://uiarc.dev/r/chip-group.json",
+   "file": "chip-group/chip-group.tsx",
+   "export": "ChipGroup",
+   "use": [
+    "Facet filters people toggle often, like topics or categories.",
+    "Single clearable choices shown as chips, via multiple={false}.",
+    "Long option sets folded behind a +N more chip with maxVisible."
+   ],
+   "avoid": [
+    "Use multi-select when space is tight.",
+    "Use checkbox in forms.",
+    "Use segmented-control for one choice among a few views."
+   ],
+   "keyboard": [
+    "| Arrow keys | Move focus between chips and the more chip, wrapping. |",
+    "| Home / End | Focus the first or last chip. |",
+    "| Enter / Space | Toggles the focused chip or opens the overflow. |"
+   ],
+   "a11y": [
+    "The group has role=\"group\" and aria-label; each chip is a button with aria-pressed.",
+    "Roving tabindex keeps one chip in the tab order; the more chip uses aria-expanded.",
+    "Check icons and surfaces are aria-hidden."
+   ],
+   "variants": [],
+   "booleans": [
+    "multiple"
+   ],
+   "siblings": [
+    {
+     "name": "select",
+     "title": "Select",
+     "about": "A compact choice field with a keyboard friendly menu.",
+     "demo": "demos/select.tsx"
+    },
+    {
+     "name": "combobox",
+     "title": "Combobox",
+     "about": "Search and select from a list without leaving the field.",
+     "demo": "demos/combobox.tsx"
+    },
+    {
+     "name": "morph-select",
+     "title": "Morph select",
+     "about": "A select whose trigger grows into the list, with a gliding highlight and type-ahead.",
+     "demo": "demos/morph-select.tsx"
+    },
+    {
+     "name": "multi-select",
+     "title": "Multi-select",
+     "about": "Select several values while keeping the field readable.",
+     "demo": "demos/multi-select.tsx"
+    },
+    {
+     "name": "filter-toolbar",
+     "title": "Filter toolbar",
+     "about": "Keep collection filters close and easy to reset.",
+     "demo": "demos/filter-toolbar.tsx"
+    },
+    {
+     "name": "segmented-control",
+     "title": "Segmented control",
+     "about": "Switch between a small set of related views.",
+     "demo": "demos/segmented-control.tsx"
+    },
+    {
+     "name": "tag-input",
+     "title": "Tag input",
+     "about": "Turn short text values into removable tags.",
+     "demo": "demos/tag-input.tsx"
+    }
+   ]
+  }
+ ],
+ "status-dot": [],
+ "input": [
+  {
+   "name": "input",
+   "title": "Input",
+   "about": "A single line field with clear labels and useful states.",
+   "demo": "demos/input.tsx",
+   "install": "npx shadcn@latest add https://uiarc.dev/r/input.json",
+   "file": "input/input.tsx",
+   "export": "Input",
+   "use": [
+    "Any single-line text value in a form, such as name, email, or URL.",
+    "Fields whose helper or error copy changes as the person types, where the message should reword in place.",
+    "Plain form posts, since it forwards name and every native input attribute."
+   ],
+   "avoid": [
+    "Use textarea for multi-line text.",
+    "Use password-field, search-field, or number-field when the value has that shape.",
+    "Use inline-edit for a value shown as page text and edited in place."
+   ],
+   "keyboard": [],
+   "a11y": [
+    "Renders a native input with a real label, so focus and form behavior are native.",
+    "Description and error ids are merged into aria-describedby alongside any caller value.",
+    "Errors set aria-invalid and announce through role=\"alert\"; animated words are aria-hidden with a plain screen reader copy."
+   ],
+   "variants": [],
+   "booleans": [],
+   "siblings": [
+    {
+     "name": "password-strength",
+     "title": "Password strength",
+     "about": "Show how strong a new password is while it is typed.",
+     "demo": "demos/password-strength.tsx"
+    },
+    {
+     "name": "expanding-search",
+     "title": "Expanding search",
+     "about": "An icon that morphs into a search field with results beneath it.",
+     "demo": "demos/expanding-search.tsx"
+    },
+    {
+     "name": "inline-edit",
+     "title": "Inline edit",
+     "about": "Rename in place: the text becomes a field without moving.",
+     "demo": "demos/inline-edit.tsx"
+    },
+    {
+     "name": "textarea",
+     "title": "Textarea",
+     "about": "A multiline field for notes, descriptions, and longer text.",
+     "demo": "demos/textarea.tsx"
+    },
+    {
+     "name": "password-field",
+     "title": "Password field",
+     "about": "Capture sensitive text with a visible reveal control.",
+     "demo": "demos/password-field.tsx"
+    },
+    {
+     "name": "search-field",
+     "title": "Search field",
+     "about": "A recognizable search entry point with clear affordances.",
+     "demo": "demos/search-field.tsx"
+    },
+    {
+     "name": "number-field",
+     "title": "Number field",
+     "about": "Enter a bounded number with clear increment controls.",
+     "demo": "demos/number-field.tsx"
+    }
+   ]
+  }
+ ],
+ "textarea": [
+  {
+   "name": "textarea",
+   "title": "Textarea",
+   "about": "A multiline field for notes, descriptions, and longer text.",
+   "demo": "demos/textarea.tsx",
+   "install": "npx shadcn@latest add https://uiarc.dev/r/textarea.json",
+   "file": "textarea/textarea.tsx",
+   "export": "Textarea",
+   "use": [
+    "Free-form multi-line text like bios, comments, or feedback.",
+    "Fields with a live character count, which rolls its digits in the helper row."
+   ],
+   "avoid": [
+    "Use input for single-line values.",
+    "Use inline-edit with multiline for a description edited in place on a page.",
+    "Use tag-input when the text is really a list of short values."
+   ],
+   "keyboard": [],
+   "a11y": [
+    "Native textarea with a real label.",
+    "Description and error ids are merged into aria-describedby; errors set aria-invalid and use role=\"alert\".",
+    "Animated copy is aria-hidden and mirrored in a visually hidden plain-text span."
+   ],
+   "variants": [],
+   "booleans": [],
+   "siblings": [
+    {
+     "name": "password-field",
+     "title": "Password field",
+     "about": "Capture sensitive text with a visible reveal control.",
+     "demo": "demos/password-field.tsx"
+    },
+    {
+     "name": "password-strength",
+     "title": "Password strength",
+     "about": "Show how strong a new password is while it is typed.",
+     "demo": "demos/password-strength.tsx"
+    },
+    {
+     "name": "search-field",
+     "title": "Search field",
+     "about": "A recognizable search entry point with clear affordances.",
+     "demo": "demos/search-field.tsx"
+    },
+    {
+     "name": "expanding-search",
+     "title": "Expanding search",
+     "about": "An icon that morphs into a search field with results beneath it.",
+     "demo": "demos/expanding-search.tsx"
+    },
+    {
+     "name": "input",
+     "title": "Input",
+     "about": "A single line field with clear labels and useful states.",
+     "demo": "demos/input.tsx"
+    },
+    {
+     "name": "inline-edit",
+     "title": "Inline edit",
+     "about": "Rename in place: the text becomes a field without moving.",
+     "demo": "demos/inline-edit.tsx"
+    },
+    {
+     "name": "tag-input",
+     "title": "Tag input",
+     "about": "Turn short text values into removable tags.",
+     "demo": "demos/tag-input.tsx"
+    }
+   ]
+  }
+ ],
+ "number-field": [
+  {
+   "name": "number-field",
+   "title": "Number field",
+   "about": "Enter a bounded number with clear increment controls.",
+   "demo": "demos/number-field.tsx",
+   "install": "npx shadcn@latest add https://uiarc.dev/r/number-field.json",
+   "file": "number-field/number-field.tsx",
+   "export": "NumberField",
+   "use": [
+    "Bounded quantities like seats, items, or prices where the exact number matters.",
+    "Values people nudge with steppers, arrow keys, or by dragging the label with scrub.",
+    "Numbers with units, using a prefix or a pluralizing suffix function."
+   ],
+   "avoid": [
+    "Use slider when the approximate position matters more than the exact number.",
+    "Use input for numeric strings like phone numbers or codes."
+   ],
+   "keyboard": [
+    "| ArrowUp / ArrowDown | Steps by step; holding repeats and speeds up, and keeps pushing at a limit. |",
+    "| Shift + Arrow / PageUp / PageDown | Steps by largeStep. |",
+    "| Home / End | Jumps to min or max when not typing. |",
+    "| Enter | Commits a typed draft, clamped to min and max, or selects the value. |",
+    "| Escape | Reverts a typed draft to the value before editing. |"
+   ],
+   "a11y": [
+    "The input has role=\"spinbutton\" with aria-valuenow, aria-valuemin, aria-valuemax, and aria-valuetext including prefix and suffix.",
+    "Stepper buttons are labelled \"Increase <label>\" and \"Decrease <label>\" and marked aria-disabled at a limit.",
+    "Changes are announced through a polite aria-live region, and a clamp says which limit it met (\"10 seats, maximum\"); rolling digits are aria-hidden.",
+    "A typed value past a limit sets aria-invalid and adds the limit note to aria-describedby until it commits. The warning also uses copy, never color alone.",
+    "Pointer focus draws no ring; keyboard focus shows Arc's shared focus ring. Focus darkens the shell border, and a focused stepper button takes its hover fill."
+   ],
+   "variants": [
+    {
+     "prop": "size",
+     "values": [
+      "sm",
+      "md",
+      "lg"
+     ],
+     "default": "md",
+     "desc": "Control height, type size, and default width (164, 196, or 228px)."
+    },
+    {
+     "prop": "limitHint",
+     "values": [
+      "min",
+      "max"
+     ],
+     "default": "true",
+     "desc": "Note beside the label when a press meets a limit (about 1.5s) or a typed value passes one. Defaults to \"Max 10 seats\" using the prefix and suffix; false hides it."
+    }
+   ],
+   "booleans": [
+    "disabled",
+    "scrub"
+   ],
+   "siblings": [
+    {
+     "name": "money-input",
+     "title": "Money input",
+     "about": "A currency field with live grouping, stable width, rolling digits, and minor-unit output.",
+     "demo": "demos/money-input.tsx"
+    },
+    {
+     "name": "phone-input",
+     "title": "Phone input",
+     "about": "A phone field with a country picker, formatting as you type, and E.164 output.",
+     "demo": "demos/phone-input.tsx"
+    },
+    {
+     "name": "tag-input",
+     "title": "Tag input",
+     "about": "Turn short text values into removable tags.",
+     "demo": "demos/tag-input.tsx"
+    },
+    {
+     "name": "mention-input",
+     "title": "Mention input",
+     "about": "A textarea with @people and #channel mentions that act as single tokens, with suggestions at the caret.",
+     "demo": "demos/mention-input.tsx"
+    },
+    {
+     "name": "shortcut-recorder",
+     "title": "Shortcut recorder",
+     "about": "Record key combinations into key caps, with conflict warnings, Kbd, and a searchable cheatsheet.",
+     "demo": "demos/shortcut-recorder.tsx"
+    },
+    {
+     "name": "slider",
+     "title": "Slider",
+     "about": "Pick a value or a range on a track that follows your finger.",
+     "demo": "demos/slider.tsx"
+    },
+    {
+     "name": "input",
+     "title": "Input",
+     "about": "A single line field with clear labels and useful states.",
+     "demo": "demos/input.tsx"
+    },
+    {
+     "name": "animated-counter",
+     "title": "Animated counter",
+     "about": "Give changing totals a clear sense of movement.",
+     "demo": "demos/animated-counter.tsx"
+    }
+   ]
+  }
+ ],
+ "otp": [],
+ "password": [
+  {
+   "name": "password-field",
+   "title": "Password field",
+   "about": "Capture sensitive text with a visible reveal control.",
+   "demo": "demos/password-field.tsx",
+   "install": "npx shadcn@latest add https://uiarc.dev/r/password-field.json",
+   "file": "password-field/password-field.tsx",
+   "export": "PasswordField",
+   "use": [
+    "Sign in forms and password confirmation fields.",
+    "Any secret the person may want to check by revealing it."
+   ],
+   "avoid": [
+    "Use password-strength when creating or changing a password.",
+    "Use input for non-secret values."
+   ],
+   "keyboard": [
+    "| Enter / Space | On the toggle button, shows or hides the password. |"
+   ],
+   "a11y": [
+    "Toggle is a native button with aria-pressed and a label that switches between \"Show password\" and \"Hide password\" (messages.showPassword and messages.hidePassword).",
+    "Description is linked through aria-describedby.",
+    "Set autoComplete to current-password or new-password so password managers work."
+   ],
+   "variants": [],
+   "booleans": [],
+   "siblings": [
+    {
+     "name": "textarea",
+     "title": "Textarea",
+     "about": "A multiline field for notes, descriptions, and longer text.",
+     "demo": "demos/textarea.tsx"
+    },
+    {
+     "name": "search-field",
+     "title": "Search field",
+     "about": "A recognizable search entry point with clear affordances.",
+     "demo": "demos/search-field.tsx"
+    },
+    {
+     "name": "expanding-search",
+     "title": "Expanding search",
+     "about": "An icon that morphs into a search field with results beneath it.",
+     "demo": "demos/expanding-search.tsx"
+    },
+    {
+     "name": "inline-edit",
+     "title": "Inline edit",
+     "about": "Rename in place: the text becomes a field without moving.",
+     "demo": "demos/inline-edit.tsx"
+    },
+    {
+     "name": "password-strength",
+     "title": "Password strength",
+     "about": "Show how strong a new password is while it is typed.",
+     "demo": "demos/password-strength.tsx"
+    },
+    {
+     "name": "input",
+     "title": "Input",
+     "about": "A single line field with clear labels and useful states.",
+     "demo": "demos/input.tsx"
+    }
+   ]
+  },
+  {
+   "name": "password-strength",
+   "title": "Password strength",
+   "about": "Show how strong a new password is while it is typed.",
+   "demo": "demos/password-strength.tsx",
+   "install": "npx shadcn@latest add https://uiarc.dev/r/password-strength.json",
+   "file": "password-strength/password-strength.tsx",
+   "export": "PasswordStrength",
+   "use": [
+    "Sign up and change password forms.",
+    "Password rules that should check off live as the person types."
+   ],
+   "avoid": [
+    "Use password-field for sign in.",
+    "Use progress for measurable progress unrelated to passwords."
+   ],
+   "keyboard": [
+    "| Enter / Space | On the reveal button, shows or hides the password. |"
+   ],
+   "a11y": [
+    "The meter is role=\"meter\" with aria-valuenow 0 to 4 and aria-valuetext set to the strength word.",
+    "The rules list is linked to the input through aria-describedby along with any error; errors set aria-invalid.",
+    "A role=\"status\" region summarizes strength and rules met; the reveal button uses aria-pressed and aria-controls."
+   ],
+   "variants": [
+    {
+     "prop": "...props",
+     "values": [
+      "type",
+      "value",
+      "defaultValue",
+      "children"
+     ],
+     "default": "\u2013",
+     "desc": "Forwarded to the input, including ref, name, autoComplete, and onChange."
+    }
+   ],
+   "booleans": [
+    "revealed"
+   ],
+   "siblings": [
+    {
+     "name": "textarea",
+     "title": "Textarea",
+     "about": "A multiline field for notes, descriptions, and longer text.",
+     "demo": "demos/textarea.tsx"
+    },
+    {
+     "name": "search-field",
+     "title": "Search field",
+     "about": "A recognizable search entry point with clear affordances.",
+     "demo": "demos/search-field.tsx"
+    },
+    {
+     "name": "expanding-search",
+     "title": "Expanding search",
+     "about": "An icon that morphs into a search field with results beneath it.",
+     "demo": "demos/expanding-search.tsx"
+    },
+    {
+     "name": "inline-edit",
+     "title": "Inline edit",
+     "about": "Rename in place: the text becomes a field without moving.",
+     "demo": "demos/inline-edit.tsx"
+    },
+    {
+     "name": "password-field",
+     "title": "Password field",
+     "about": "Capture sensitive text with a visible reveal control.",
+     "demo": "demos/password-field.tsx"
+    },
+    {
+     "name": "input",
+     "title": "Input",
+     "about": "A single line field with clear labels and useful states.",
+     "demo": "demos/input.tsx"
+    },
+    {
+     "name": "progress",
+     "title": "Progress",
+     "about": "Show how much of a known task is complete.",
+     "demo": "demos/progress.tsx"
+    }
+   ]
+  }
+ ],
+ "inline-edit": [
+  {
+   "name": "inline-edit",
+   "title": "Inline edit",
+   "about": "Rename in place: the text becomes a field without moving.",
+   "demo": "demos/inline-edit.tsx",
+   "install": "npx shadcn@latest add https://uiarc.dev/r/inline-edit.json",
+   "file": "inline-edit/inline-edit.tsx",
+   "export": "InlineEdit",
+   "use": [
+    "Titles and descriptions read far more often than edited, like a project name.",
+    "Single fields that save on their own with optimistic updates and rollback."
+   ],
+   "avoid": [
+    "Use input or textarea in a form when several fields save together.",
+    "Use input when the field should always look editable."
+   ],
+   "keyboard": [
+    "| Enter / Space | On the text, starts editing. |",
+    "| Enter | Saves the draft. In multiline mode, Shift+Enter inserts a line break. |",
+    "| Escape | Cancels and rolls the text back. |",
+    "| Tab | Leaving the component saves, the way a rename does. |"
+   ],
+   "a11y": [
+    "The resting text is a native button labelled \"<label>: <value>\", so it is focusable and announced as editable.",
+    "The field has aria-label and aria-invalid; validation and save errors render in a polite live region linked through aria-describedby.",
+    "Save progress and results are announced through a role=\"status\" region; save and cancel buttons are labelled."
+   ],
+   "variants": [
+    {
+     "prop": "variant",
+     "values": [
+      "title",
+      "body"
+     ],
+     "default": "title",
+     "desc": "Type style: title for names and headings, body for descriptions."
+    },
+    {
+     "prop": "as",
+     "values": [
+      "span",
+      "p",
+      "h1",
+      "h2",
+      "h3"
+     ],
+     "default": "span",
+     "desc": "Element that holds the text, so a title can stay a heading."
+    }
+   ],
+   "booleans": [
+    "multiline"
+   ],
+   "siblings": [
+    {
+     "name": "password-field",
+     "title": "Password field",
+     "about": "Capture sensitive text with a visible reveal control.",
+     "demo": "demos/password-field.tsx"
+    },
+    {
+     "name": "password-strength",
+     "title": "Password strength",
+     "about": "Show how strong a new password is while it is typed.",
+     "demo": "demos/password-strength.tsx"
+    },
+    {
+     "name": "search-field",
+     "title": "Search field",
+     "about": "A recognizable search entry point with clear affordances.",
+     "demo": "demos/search-field.tsx"
+    },
+    {
+     "name": "expanding-search",
+     "title": "Expanding search",
+     "about": "An icon that morphs into a search field with results beneath it.",
+     "demo": "demos/expanding-search.tsx"
+    },
+    {
+     "name": "input",
+     "title": "Input",
+     "about": "A single line field with clear labels and useful states.",
+     "demo": "demos/input.tsx"
+    },
+    {
+     "name": "textarea",
+     "title": "Textarea",
+     "about": "A multiline field for notes, descriptions, and longer text.",
+     "demo": "demos/textarea.tsx"
+    },
+    {
+     "name": "toast",
+     "title": "Toast",
+     "about": "Brief confirmation for a completed background action.",
+     "demo": "demos/toast.tsx"
+    }
+   ]
+  }
+ ],
+ "checkbox": [
+  {
+   "name": "checkbox",
+   "title": "Checkbox",
+   "about": "A binary choice with a precise, legible state.",
+   "demo": "demos/checkbox.tsx",
+   "install": "npx shadcn@latest add https://uiarc.dev/r/checkbox.json",
+   "file": "checkbox/checkbox.tsx",
+   "export": "Checkbox",
+   "use": [
+    "Independent on and off choices confirmed by a submit, such as accepting terms.",
+    "Parent rows that show a partial selection through the indeterminate state."
+   ],
+   "avoid": [
+    "Use switch for settings that apply immediately.",
+    "Use radio-group when only one option can be chosen.",
+    "Use chip-group for filter facets people toggle often."
+   ],
+   "keyboard": [
+    "| Space | Toggles the checkbox. |"
+   ],
+   "a11y": [
+    "Radix renders a button with role=\"checkbox\" and aria-checked, including \"mixed\" for indeterminate.",
+    "The label is a real label element tied by id; description is linked through aria-describedby.",
+    "The drawn mark is aria-hidden."
+   ],
+   "variants": [],
+   "booleans": [],
+   "siblings": [
+    {
+     "name": "radio-cards",
+     "title": "Radio cards",
+     "about": "Selectable option cards with a sliding selection ring, price and description slots, and radio keyboard behavior.",
+     "demo": "demos/radio-cards.tsx"
+    },
+    {
+     "name": "billing-toggle",
+     "title": "Billing toggle",
+     "about": "A monthly and yearly switch with a savings badge and prices that roll to the new amount.",
+     "demo": "demos/billing-toggle.tsx"
+    },
+    {
+     "name": "segmented-control",
+     "title": "Segmented control",
+     "about": "Switch between a small set of related views.",
+     "demo": "demos/segmented-control.tsx"
+    },
+    {
+     "name": "switch",
+     "title": "Switch",
+     "about": "A tactile toggle for settings that take effect immediately.",
+     "demo": "demos/switch.tsx"
+    },
+    {
+     "name": "radio-group",
+     "title": "Radio group",
+     "about": "Choose one option from a visible set.",
+     "demo": "demos/radio-group.tsx"
+    },
+    {
+     "name": "chip-group",
+     "title": "Chip group",
+     "about": "Filter by a few facets with chips that morph as you pick them.",
+     "demo": "demos/chip-group.tsx"
+    }
+   ]
+  }
+ ],
+ "radio-group": [
+  {
+   "name": "radio-group",
+   "title": "Radio group",
+   "about": "Choose one option from a visible set.",
+   "demo": "demos/radio-group.tsx",
+   "install": "npx shadcn@latest add https://uiarc.dev/r/radio-group.json",
+   "file": "radio-group/radio-group.tsx",
+   "export": "RadioGroup",
+   "use": [
+    "Two to six mutually exclusive options that need descriptions, such as plans.",
+    "Form choices that should submit natively through name."
+   ],
+   "avoid": [
+    "Use segmented-control for short inline view options.",
+    "Use select for longer lists.",
+    "Use checkbox when several options can be on at once."
+   ],
+   "keyboard": [
+    "| Arrow keys | Move the selection between options (native radio behavior). |",
+    "| Tab | Enters and leaves the group at the selected option. |"
+   ],
+   "a11y": [
+    "Uses a fieldset and legend with native radio inputs wrapped in labels.",
+    "The highlight and dot are aria-hidden decoration."
+   ],
+   "variants": [],
+   "booleans": [],
+   "siblings": [
+    {
+     "name": "radio-cards",
+     "title": "Radio cards",
+     "about": "Selectable option cards with a sliding selection ring, price and description slots, and radio keyboard behavior.",
+     "demo": "demos/radio-cards.tsx"
+    },
+    {
+     "name": "billing-toggle",
+     "title": "Billing toggle",
+     "about": "A monthly and yearly switch with a savings badge and prices that roll to the new amount.",
+     "demo": "demos/billing-toggle.tsx"
+    },
+    {
+     "name": "switch",
+     "title": "Switch",
+     "about": "A tactile toggle for settings that take effect immediately.",
+     "demo": "demos/switch.tsx"
+    },
+    {
+     "name": "segmented-control",
+     "title": "Segmented control",
+     "about": "Switch between a small set of related views.",
+     "demo": "demos/segmented-control.tsx"
+    },
+    {
+     "name": "select",
+     "title": "Select",
+     "about": "A compact choice field with a keyboard friendly menu.",
+     "demo": "demos/select.tsx"
+    },
+    {
+     "name": "checkbox",
+     "title": "Checkbox",
+     "about": "A binary choice with a precise, legible state.",
+     "demo": "demos/checkbox.tsx"
+    }
+   ]
+  }
+ ],
+ "choice-card": [
+  {
+   "name": "radio-cards",
+   "title": "Radio cards",
+   "about": "Selectable option cards with a sliding selection ring, price and description slots, and radio keyboard behavior.",
+   "demo": "demos/radio-cards.tsx",
+   "install": "npx shadcn@latest add https://uiarc.dev/r/radio-cards.json",
+   "file": "radio-cards/radio-cards.tsx",
+   "export": "RadioCards",
+   "use": [
+    "Choices where each option needs a description, price, or estimate to decide.",
+    "Plan, shipping, region, or size pickers inside checkout and setup flows.",
+    "Options that may be unavailable and need a visible reason."
+   ],
+   "avoid": [
+    "Use radio-group for short text-only options.",
+    "Use segmented-control for two to four view modes that switch content instantly.",
+    "Use select or combobox for long lists."
+   ],
+   "keyboard": [
+    "| Tab | Focuses the selected card, or the first enabled one. One tab stop for the group. |",
+    "| Arrow keys | Move to the next or previous enabled card and select it, wrapping. Left and right flip in RTL. |",
+    "| Home / End | Select the first or last enabled card. |",
+    "| Enter / Space | Selects the focused card. |"
+   ],
+   "a11y": [
+    "role=\"radiogroup\" with role=\"radio\" cards, aria-checked, and aria-disabled; give the group an aria-label or aria-labelledby.",
+    "Each card is labelled by its label and described by its description, or by disabledReason when disabled.",
+    "Selection is shown by a ring and a filled indicator dot, not color alone."
+   ],
+   "variants": [
+    {
+     "prop": "layout",
+     "values": [
+      "grid",
+      "list"
+     ],
+     "default": "grid",
+     "desc": "\"grid\" places cards in responsive columns; \"list\" stacks full-width rows with meta at the end."
+    }
+   ],
+   "booleans": [
+    "required",
+    "disabled"
+   ],
+   "siblings": [
+    {
+     "name": "checkbox",
+     "title": "Checkbox",
+     "about": "A binary choice with a precise, legible state.",
+     "demo": "demos/checkbox.tsx"
+    },
+    {
+     "name": "switch",
+     "title": "Switch",
+     "about": "A tactile toggle for settings that take effect immediately.",
+     "demo": "demos/switch.tsx"
+    },
+    {
+     "name": "radio-group",
+     "title": "Radio group",
+     "about": "Choose one option from a visible set.",
+     "demo": "demos/radio-group.tsx"
+    },
+    {
+     "name": "segmented-control",
+     "title": "Segmented control",
+     "about": "Switch between a small set of related views.",
+     "demo": "demos/segmented-control.tsx"
+    },
+    {
+     "name": "billing-toggle",
+     "title": "Billing toggle",
+     "about": "A monthly and yearly switch with a savings badge and prices that roll to the new amount.",
+     "demo": "demos/billing-toggle.tsx"
+    }
+   ]
+  }
+ ],
+ "switch": [
+  {
+   "name": "switch",
+   "title": "Switch",
+   "about": "A tactile toggle for settings that take effect immediately.",
+   "demo": "demos/switch.tsx",
+   "install": "npx shadcn@latest add https://uiarc.dev/r/switch.json",
+   "file": "switch/switch.tsx",
+   "export": "Switch",
+   "use": [
+    "Settings that take effect as soon as they are flipped, like notifications.",
+    "Settings lists where each row is one on and off preference."
+   ],
+   "avoid": [
+    "Use checkbox when the choice waits for a submit button.",
+    "Use segmented-control for a choice between named options.",
+    "Use theme-switch for a light and dark toggle."
+   ],
+   "keyboard": [
+    "| Space / Enter | Toggles the switch. Holding Space stretches the thumb until release. |"
+   ],
+   "a11y": [
+    "Radix renders a button with role=\"switch\" and aria-checked.",
+    "The label prop becomes aria-label unless one is passed; icon-only usage needs an aria-label."
+   ],
+   "variants": [],
+   "booleans": [
+    "checked",
+    "defaultChecked"
+   ],
+   "siblings": [
+    {
+     "name": "radio-cards",
+     "title": "Radio cards",
+     "about": "Selectable option cards with a sliding selection ring, price and description slots, and radio keyboard behavior.",
+     "demo": "demos/radio-cards.tsx"
+    },
+    {
+     "name": "billing-toggle",
+     "title": "Billing toggle",
+     "about": "A monthly and yearly switch with a savings badge and prices that roll to the new amount.",
+     "demo": "demos/billing-toggle.tsx"
+    },
+    {
+     "name": "radio-group",
+     "title": "Radio group",
+     "about": "Choose one option from a visible set.",
+     "demo": "demos/radio-group.tsx"
+    },
+    {
+     "name": "checkbox",
+     "title": "Checkbox",
+     "about": "A binary choice with a precise, legible state.",
+     "demo": "demos/checkbox.tsx"
+    },
+    {
+     "name": "segmented-control",
+     "title": "Segmented control",
+     "about": "Switch between a small set of related views.",
+     "demo": "demos/segmented-control.tsx"
+    },
+    {
+     "name": "theme-switch",
+     "title": "Theme switcher",
+     "about": "Four smooth ways to move between light and dark appearance.",
+     "demo": "demos/theme-switch.tsx"
+    }
+   ]
+  }
+ ],
+ "toggle": [],
+ "segmented": [
+  {
+   "name": "segmented-control",
+   "title": "Segmented control",
+   "about": "Switch between a small set of related views.",
+   "demo": "demos/segmented-control.tsx",
+   "install": "npx shadcn@latest add https://uiarc.dev/r/segmented-control.json",
+   "file": "segmented-control/segmented-control.tsx",
+   "export": "SegmentedControl",
+   "use": [
+    "Two to five short view options like Day, Week, and Month.",
+    "Toolbar toggles between layouts or modes that apply immediately."
+   ],
+   "avoid": [
+    "Use tabs when each option swaps a panel of content.",
+    "Use radio-group in forms or when options need descriptions.",
+    "Use switch for a single on and off setting."
+   ],
+   "keyboard": [
+    "| Tab | Moves focus into the control, onto the selected segment, and out again. |",
+    "| Arrow keys | Select and focus the previous or next segment, wrapping at the ends. |",
+    "| Home / End | Select the first or last segment. |"
+   ],
+   "a11y": [
+    "Renders role=\"group\" labelled by label, with native buttons using aria-pressed for the selected segment. Only the selected segment is a tab stop.",
+    "The sliding pill is aria-hidden."
+   ],
+   "variants": [],
+   "booleans": [],
+   "siblings": [
+    {
+     "name": "radio-cards",
+     "title": "Radio cards",
+     "about": "Selectable option cards with a sliding selection ring, price and description slots, and radio keyboard behavior.",
+     "demo": "demos/radio-cards.tsx"
+    },
+    {
+     "name": "billing-toggle",
+     "title": "Billing toggle",
+     "about": "A monthly and yearly switch with a savings badge and prices that roll to the new amount.",
+     "demo": "demos/billing-toggle.tsx"
+    },
+    {
+     "name": "checkbox",
+     "title": "Checkbox",
+     "about": "A binary choice with a precise, legible state.",
+     "demo": "demos/checkbox.tsx"
+    },
+    {
+     "name": "tabs",
+     "title": "Tabs",
+     "about": "Switch between related content in the same context.",
+     "demo": "demos/tabs.tsx"
+    },
+    {
+     "name": "radio-group",
+     "title": "Radio group",
+     "about": "Choose one option from a visible set.",
+     "demo": "demos/radio-group.tsx"
+    },
+    {
+     "name": "switch",
+     "title": "Switch",
+     "about": "A tactile toggle for settings that take effect immediately.",
+     "demo": "demos/switch.tsx"
+    },
+    {
+     "name": "liquid-tab-bar",
+     "title": "Liquid tab bar",
+     "about": "Tabs with a lens selection that slides between them, swaps labels cleanly, and fills in icons as it passes.",
+     "demo": null
+    }
+   ]
+  },
+  {
+   "name": "billing-toggle",
+   "title": "Billing toggle",
+   "about": "A monthly and yearly switch with a savings badge and prices that roll to the new amount.",
+   "demo": "demos/billing-toggle.tsx",
+   "install": "npx shadcn@latest add https://uiarc.dev/r/billing-toggle.json",
+   "file": "billing-toggle/billing-toggle.tsx",
+   "export": "BillingToggle",
+   "use": [
+    "The billing period switch at the top of a pricing page.",
+    "Any price display that should roll to a new amount when a period or plan changes, using BillingPrice.",
+    "A small plan picker with a savings note, such as yearly versus lifetime."
+   ],
+   "avoid": [
+    "Use segmented-control for switching views or filters with no pricing meaning.",
+    "Use radio-group when options need descriptions or a vertical layout.",
+    "Use switch for a single on or off setting."
+   ],
+   "keyboard": [
+    "| Tab | Moves focus to the selected option only (roving tabindex). |",
+    "| Arrow Right / Arrow Down | Selects and focuses the next option, wrapping at the end. |",
+    "| Arrow Left / Arrow Up | Selects and focuses the previous option, wrapping at the start. |",
+    "| Home / End | Selects the first or last option. |"
+   ],
+   "a11y": [
+    "The toggle is role=\"radiogroup\" labelled by label. Each option is a button with role=\"radio\" and aria-checked.",
+    "Badges are part of the option text, so the saving is read with the option name.",
+    "The sliding thumb is aria-hidden.",
+    "BillingPrice uses del for the old price. The rolling digits come from AnimatedCounter."
+   ],
+   "variants": [
+    {
+     "prop": "size",
+     "values": [
+      "md",
+      "lg"
+     ],
+     "default": "md",
+     "desc": "md is 36px tall per option, lg is 44px with larger text."
+    }
+   ],
+   "booleans": [],
+   "siblings": [
+    {
+     "name": "radio-cards",
+     "title": "Radio cards",
+     "about": "Selectable option cards with a sliding selection ring, price and description slots, and radio keyboard behavior.",
+     "demo": "demos/radio-cards.tsx"
+    },
+    {
+     "name": "checkbox",
+     "title": "Checkbox",
+     "about": "A binary choice with a precise, legible state.",
+     "demo": "demos/checkbox.tsx"
+    },
+    {
+     "name": "switch",
+     "title": "Switch",
+     "about": "A tactile toggle for settings that take effect immediately.",
+     "demo": "demos/switch.tsx"
+    },
+    {
+     "name": "segmented-control",
+     "title": "Segmented control",
+     "about": "Switch between a small set of related views.",
+     "demo": "demos/segmented-control.tsx"
+    },
+    {
+     "name": "animated-counter",
+     "title": "Animated counter",
+     "about": "Give changing totals a clear sense of movement.",
+     "demo": "demos/animated-counter.tsx"
+    },
+    {
+     "name": "radio-group",
+     "title": "Radio group",
+     "about": "Choose one option from a visible set.",
+     "demo": "demos/radio-group.tsx"
+    }
+   ]
+  }
+ ],
+ "theme-switch": [
+  {
+   "name": "theme-switch",
+   "title": "Theme switcher",
+   "about": "Four smooth ways to move between light and dark appearance.",
+   "demo": "demos/theme-switch.tsx",
+   "install": "npx shadcn@latest add https://uiarc.dev/r/theme-switch.json",
+   "file": "theme-switch/theme-switch.tsx",
+   "export": "ThemeSwitch",
+   "use": [
+    "A single light and dark toggle in an app or marketing top bar.",
+    "Pages that want to run their own view transition from the button's position."
+   ],
+   "avoid": [
+    "Use user-menu when theme choice, including system, belongs inside an account menu.",
+    "Use theme-switch-rise for quiet product chrome, or theme-switch-eclipse for a dramatic showcase change."
+   ],
+   "keyboard": [
+    "| Enter / Space | Toggles the theme. |"
+   ],
+   "a11y": [
+    "Renders the library Button with aria-pressed set when the theme is dark.",
+    "aria-label defaults to \"Switch to dark mode\" or \"Switch to light mode\"; pass label to override.",
+    "The icons are aria-hidden."
+   ],
+   "variants": [
+    {
+     "prop": "variant",
+     "values": [
+      "reveal",
+      "eclipse",
+      "split",
+      "rise"
+     ],
+     "default": "reveal",
+     "desc": "Names the page transition and sets the small icon nudge that matches it."
+    }
+   ],
+   "booleans": [
+    "iconOnly"
+   ],
+   "siblings": [
+    {
+     "name": "theme-switch-eclipse",
+     "title": "Eclipse",
+     "about": "The next appearance crosses the page like an eclipse.",
+     "demo": "demos/theme-switch-eclipse.tsx"
+    },
+    {
+     "name": "theme-switch-split",
+     "title": "Split",
+     "about": "The next appearance opens from a slim center seam.",
+     "demo": "demos/theme-switch-split.tsx"
+    },
+    {
+     "name": "theme-switch-rise",
+     "title": "Rise",
+     "about": "The next appearance rises into place.",
+     "demo": "demos/theme-switch-rise.tsx"
+    },
+    {
+     "name": "user-menu",
+     "title": "User menu",
+     "about": "Your account, settings, theme, and sign out behind the avatar. Opens as a bottom sheet on phones.",
+     "demo": "demos/user-menu.tsx"
+    },
+    {
+     "name": "button",
+     "title": "Button",
+     "about": "A clear, responsive action with quiet secondary states.",
+     "demo": "demos/button.tsx"
+    }
+   ]
+  },
+  {
+   "name": "theme-switch-eclipse",
+   "title": "Eclipse",
+   "about": "The next appearance crosses the page like an eclipse.",
+   "demo": "demos/theme-switch-eclipse.tsx",
+   "install": "npx shadcn@latest add https://uiarc.dev/r/theme-switch-eclipse.json",
+   "file": "theme-switch/theme-switch.tsx",
+   "export": "ThemeSwitch",
+   "use": [
+    "Marketing or showcase pages where the theme change should feel like an event.",
+    "Layouts where a directional sweep across the page reads naturally."
+   ],
+   "avoid": [
+    "Use theme-switch-rise for everyday product chrome where a calmer change fits.",
+    "Use theme-switch-split when the button sits in the center and direction should not matter."
+   ],
+   "keyboard": [
+    "| Enter / Space | Toggles the theme. |"
+   ],
+   "a11y": [
+    "Same button as theme-switch: aria-pressed reflects dark mode and the label names the next theme.",
+    "Keep the eclipse sweep off for reduced motion and swap the theme directly."
+   ],
+   "variants": [
+    {
+     "prop": "variant",
+     "values": [
+      "reveal",
+      "eclipse",
+      "split",
+      "rise"
+     ],
+     "default": "reveal",
+     "desc": "Names the page transition and sets the small icon nudge that matches it."
+    }
+   ],
+   "booleans": [
+    "iconOnly"
+   ],
+   "siblings": [
+    {
+     "name": "theme-switch",
+     "title": "Theme switcher",
+     "about": "Four smooth ways to move between light and dark appearance.",
+     "demo": "demos/theme-switch.tsx"
+    },
+    {
+     "name": "theme-switch-split",
+     "title": "Split",
+     "about": "The next appearance opens from a slim center seam.",
+     "demo": "demos/theme-switch-split.tsx"
+    },
+    {
+     "name": "theme-switch-rise",
+     "title": "Rise",
+     "about": "The next appearance rises into place.",
+     "demo": "demos/theme-switch-rise.tsx"
+    }
+   ]
+  },
+  {
+   "name": "theme-switch-rise",
+   "title": "Rise",
+   "about": "The next appearance rises into place.",
+   "demo": "demos/theme-switch-rise.tsx",
+   "install": "npx shadcn@latest add https://uiarc.dev/r/theme-switch-rise.json",
+   "file": "theme-switch/theme-switch.tsx",
+   "export": "ThemeSwitch",
+   "use": [
+    "Product chrome and dashboards where the theme change should be calm.",
+    "Icon-only toggles in a top bar, as the library's own header uses it."
+   ],
+   "avoid": [
+    "Use theme-switch-eclipse for a dramatic change on a showcase page.",
+    "Use user-menu when theme belongs with account settings."
+   ],
+   "keyboard": [
+    "| Enter / Space | Toggles the theme. |"
+   ],
+   "a11y": [
+    "Same button as theme-switch: aria-pressed reflects dark mode and the label names the next theme.",
+    "Keep the rise off for reduced motion and swap the theme directly."
+   ],
+   "variants": [
+    {
+     "prop": "variant",
+     "values": [
+      "reveal",
+      "eclipse",
+      "split",
+      "rise"
+     ],
+     "default": "reveal",
+     "desc": "Names the page transition and sets the small icon nudge that matches it."
+    }
+   ],
+   "booleans": [
+    "iconOnly"
+   ],
+   "siblings": [
+    {
+     "name": "theme-switch",
+     "title": "Theme switcher",
+     "about": "Four smooth ways to move between light and dark appearance.",
+     "demo": "demos/theme-switch.tsx"
+    },
+    {
+     "name": "theme-switch-eclipse",
+     "title": "Eclipse",
+     "about": "The next appearance crosses the page like an eclipse.",
+     "demo": "demos/theme-switch-eclipse.tsx"
+    },
+    {
+     "name": "theme-switch-split",
+     "title": "Split",
+     "about": "The next appearance opens from a slim center seam.",
+     "demo": "demos/theme-switch-split.tsx"
+    }
+   ]
+  },
+  {
+   "name": "theme-switch-split",
+   "title": "Split",
+   "about": "The next appearance opens from a slim center seam.",
+   "demo": "demos/theme-switch-split.tsx",
+   "install": "npx shadcn@latest add https://uiarc.dev/r/theme-switch-split.json",
+   "file": "theme-switch/theme-switch.tsx",
+   "export": "ThemeSwitch",
+   "use": [
+    "Centered layouts where the theme should open symmetrically from a middle seam.",
+    "Pages where the switch position varies, since the split does not depend on where the button sits."
+   ],
+   "avoid": [
+    "Use theme-switch for a reveal that grows from the button itself.",
+    "Use theme-switch-rise for the calmest option in product UI."
+   ],
+   "keyboard": [
+    "| Enter / Space | Toggles the theme. |"
+   ],
+   "a11y": [
+    "Same button as theme-switch: aria-pressed reflects dark mode and the label names the next theme.",
+    "Keep the split reveal off for reduced motion and swap the theme directly."
+   ],
+   "variants": [
+    {
+     "prop": "variant",
+     "values": [
+      "reveal",
+      "eclipse",
+      "split",
+      "rise"
+     ],
+     "default": "reveal",
+     "desc": "Names the page transition and sets the small icon nudge that matches it."
+    }
+   ],
+   "booleans": [
+    "iconOnly"
+   ],
+   "siblings": [
+    {
+     "name": "theme-switch",
+     "title": "Theme switcher",
+     "about": "Four smooth ways to move between light and dark appearance.",
+     "demo": "demos/theme-switch.tsx"
+    },
+    {
+     "name": "theme-switch-eclipse",
+     "title": "Eclipse",
+     "about": "The next appearance crosses the page like an eclipse.",
+     "demo": "demos/theme-switch-eclipse.tsx"
+    },
+    {
+     "name": "theme-switch-rise",
+     "title": "Rise",
+     "about": "The next appearance rises into place.",
+     "demo": "demos/theme-switch-rise.tsx"
+    }
+   ]
+  }
+ ],
+ "slider": [
+  {
+   "name": "slider",
+   "title": "Slider",
+   "about": "Pick a value or a range on a track that follows your finger.",
+   "demo": "demos/slider.tsx",
+   "install": "npx shadcn@latest add https://uiarc.dev/r/slider.json",
+   "file": "slider/slider.tsx",
+   "export": "Slider",
+   "use": [
+    "Approximate values like volume, opacity, or a price range.",
+    "Ranges with two thumbs, labelled marks, and a formatted readout."
+   ],
+   "avoid": [
+    "Use number-field when the exact number matters.",
+    "Use progress to show a value people cannot change."
+   ],
+   "keyboard": [
+    "| ArrowRight / ArrowUp | Increases by step. |",
+    "| ArrowLeft / ArrowDown | Decreases by step. |",
+    "| Shift + Arrow / PageUp / PageDown | Moves by largeStep. |",
+    "| Home / End | Moves to the lowest or highest allowed value for that thumb. |"
+   ],
+   "a11y": [
+    "Each thumb is role=\"slider\" with aria-valuemin, aria-valuemax, aria-valuenow, aria-valuetext from format, and aria-orientation.",
+    "Thumbs are named by label, or by thumbLabels for ranges.",
+    "The readout, bubble, and marks are aria-hidden because the thumbs carry the value."
+   ],
+   "variants": [],
+   "booleans": [
+    "showValue",
+    "disabled"
+   ],
+   "siblings": [
+    {
+     "name": "elastic-slider",
+     "title": "Elastic slider",
+     "about": "A slider that stretches like rubber past its ends, with a swaying value tag and detents the thumb clicks into.",
+     "demo": "demos/elastic-slider.tsx"
+    },
+    {
+     "name": "number-field",
+     "title": "Number field",
+     "about": "Enter a bounded number with clear increment controls.",
+     "demo": "demos/number-field.tsx"
+    },
+    {
+     "name": "progress",
+     "title": "Progress",
+     "about": "Show how much of a known task is complete.",
+     "demo": "demos/progress.tsx"
+    },
+    {
+     "name": "filter-toolbar",
+     "title": "Filter toolbar",
+     "about": "Keep collection filters close and easy to reset.",
+     "demo": "demos/filter-toolbar.tsx"
+    }
+   ]
+  },
+  {
+   "name": "elastic-slider",
+   "title": "Elastic slider",
+   "about": "A slider that stretches like rubber past its ends, with a swaying value tag and detents the thumb clicks into.",
+   "demo": "demos/elastic-slider.tsx",
+   "install": "npx shadcn@latest add https://uiarc.dev/r/elastic-slider.json",
+   "file": "elastic-slider/elastic-slider.tsx",
+   "export": "ElasticSlider",
+   "use": [
+    "A single setting people drag to taste, such as volume, brightness, or opacity.",
+    "Media and creative tools where a physical, tactile control fits the product.",
+    "Values with a few common stops that should feel like detents."
+   ],
+   "avoid": [
+    "Use slider for dense forms and settings pages where a quiet control fits better.",
+    "Use range-histogram-slider to pick a min and max over data.",
+    "Use number-field or ruler-slider when the exact number matters more than the feel."
+   ],
+   "keyboard": [
+    "| ArrowRight / ArrowUp | Increases by one step. |",
+    "| ArrowLeft / ArrowDown | Decreases by one step. |",
+    "| Shift + Arrow / PageUp / PageDown | Moves by largeStep. |",
+    "| Home / End | Goes to min or max. At a limit, the track stretches toward the press and snaps back. |"
+   ],
+   "a11y": [
+    "The thumb is role=\"slider\" with aria-valuemin, aria-valuemax, aria-valuenow, and aria-valuetext from format.",
+    "The thumb is labelled by the visible label through aria-labelledby.",
+    "The readout, value tag, icons, and mark labels are aria-hidden; the slider carries the value for assistive tech.",
+    "Clicking a mark label is a pointer shortcut; the same values are reachable with keys."
+   ],
+   "variants": [],
+   "booleans": [
+    "showValue",
+    "disabled"
+   ],
+   "siblings": [
+    {
+     "name": "slider",
+     "title": "Slider",
+     "about": "Pick a value or a range on a track that follows your finger.",
+     "demo": "demos/slider.tsx"
+    },
+    {
+     "name": "number-field",
+     "title": "Number field",
+     "about": "Enter a bounded number with clear increment controls.",
+     "demo": "demos/number-field.tsx"
+    }
+   ]
+  }
+ ],
+ "knob": [],
+ "rating": [],
+ "spinner": [],
+ "skeleton": [
+  {
+   "name": "skeleton",
+   "title": "Skeleton",
+   "about": "Reserve space while content is still loading.",
+   "demo": "demos/skeleton.tsx",
+   "install": "npx shadcn@latest add https://uiarc.dev/r/skeleton.json",
+   "file": "skeleton/skeleton.tsx",
+   "export": "Skeleton",
+   "use": [
+    "Loading states for content whose shape is known, like a profile or comment.",
+    "Swapping a placeholder into real content with a crossfade and height spring."
+   ],
+   "avoid": [
+    "Use progress when you can report a percentage.",
+    "Use empty-state when loading finished and there is nothing to show.",
+    "Use text-shimmer for an AI thinking or status line."
+   ],
+   "keyboard": [],
+   "a11y": [
+    "The placeholder is role=\"status\" with aria-busy and an aria-label; its shapes are aria-hidden.",
+    "With children, the wrapper sets aria-busy while loading."
+   ],
+   "variants": [],
+   "booleans": [
+    "avatar",
+    "loading"
+   ],
+   "siblings": [
+    {
+     "name": "stepper",
+     "title": "Stepper",
+     "about": "Show where a person is in a multi-step flow and what is done.",
+     "demo": "demos/stepper.tsx"
+    },
+    {
+     "name": "countdown",
+     "title": "Countdown",
+     "about": "A launch countdown with rolling digits that morphs into a live state at zero.",
+     "demo": "demos/countdown.tsx"
+    },
+    {
+     "name": "usage-meter",
+     "title": "Usage meter",
+     "about": "Show what fills an allowance and how close it is to the limit.",
+     "demo": "demos/usage-meter.tsx"
+    },
+    {
+     "name": "progress",
+     "title": "Progress",
+     "about": "Show how much of a known task is complete.",
+     "demo": "demos/progress.tsx"
+    },
+    {
+     "name": "empty-state",
+     "title": "Empty state",
+     "about": "A useful next step when there is nothing to show yet.",
+     "demo": "demos/empty-state.tsx"
+    },
+    {
+     "name": "card",
+     "title": "Card",
+     "about": "A contained group of related content and actions.",
+     "demo": "demos/card.tsx"
+    }
+   ]
+  }
+ ],
+ "progress": [
+  {
+   "name": "progress",
+   "title": "Progress",
+   "about": "Show how much of a known task is complete.",
+   "demo": "demos/progress.tsx",
+   "install": "npx shadcn@latest add https://uiarc.dev/r/progress.json",
+   "file": "progress/progress.tsx",
+   "export": "Progress",
+   "use": [
+    "Determinate progress for uploads, imports, or long tasks.",
+    "Progress with a visible percentage and a check at completion, via showValue."
+   ],
+   "avoid": [
+    "Use skeleton while content is loading with no progress to report.",
+    "Use usage-meter for quota against a limit, and gauge for dashboard metrics.",
+    "Use stepper to show position in a multi-step flow."
+   ],
+   "keyboard": [],
+   "a11y": [
+    "Renders role=\"progressbar\" with aria-valuemin, aria-valuemax, aria-valuenow, and a percentage aria-valuetext.",
+    "Label changes crossfade; outgoing copies are aria-hidden while they fade.",
+    "It is not a live region; announce completion separately if it matters."
+   ],
+   "variants": [],
+   "booleans": [
+    "showValue"
+   ],
+   "siblings": [
+    {
+     "name": "countdown",
+     "title": "Countdown",
+     "about": "A launch countdown with rolling digits that morphs into a live state at zero.",
+     "demo": "demos/countdown.tsx"
+    },
+    {
+     "name": "usage-meter",
+     "title": "Usage meter",
+     "about": "Show what fills an allowance and how close it is to the limit.",
+     "demo": "demos/usage-meter.tsx"
+    },
+    {
+     "name": "skeleton",
+     "title": "Skeleton",
+     "about": "Reserve space while content is still loading.",
+     "demo": "demos/skeleton.tsx"
+    },
+    {
+     "name": "gauge",
+     "title": "Gauge",
+     "about": "Show a value against a known range.",
+     "demo": "demos/gauge.tsx"
+    },
+    {
+     "name": "stepper",
+     "title": "Stepper",
+     "about": "Show where a person is in a multi-step flow and what is done.",
+     "demo": "demos/stepper.tsx"
+    }
+   ]
+  }
+ ],
+ "ring": [],
+ "meter": [
+  {
+   "name": "usage-meter",
+   "title": "Usage meter",
+   "about": "Show what fills an allowance and how close it is to the limit.",
+   "demo": "demos/usage-meter.tsx",
+   "install": "npx shadcn@latest add https://uiarc.dev/r/usage-meter.json",
+   "file": "usage-meter/usage-meter.tsx",
+   "export": "UsageMeter",
+   "use": [
+    "Quota against a fixed allowance, such as storage, seats, or API calls.",
+    "Billing pages that should show what takes the space and how close the plan is to full.",
+    "Plans that can go over the limit, where the overage should be clear without relying on color."
+   ],
+   "avoid": [
+    "Use progress for task completion.",
+    "Use bar-chart to compare categories without a limit.",
+    "Use gauge or stat-card for a single headline metric."
+   ],
+   "keyboard": [
+    "| ArrowLeft / ArrowRight / ArrowUp / ArrowDown | Moves between legend items (roving tab stop). |",
+    "| Home / End | Jumps to the first or last legend item. |",
+    "| Enter / Space | Pins or unpins the focused category. |",
+    "| Escape | Clears the pinned category. |"
+   ],
+   "a11y": [
+    "The meter is a role=\"group\" labelled by its title; the bar is role=\"img\" with a full text summary of every segment and the status.",
+    "Rolling numbers are aria-hidden with screen-reader-only text alongside.",
+    "Status changes (near limit, over limit, growing overage) are announced in a polite live region.",
+    "Legend items are buttons with aria-pressed and labels like \"Media, 14.2 GB\"."
+   ],
+   "variants": [],
+   "booleans": [],
+   "siblings": [
+    {
+     "name": "skeleton",
+     "title": "Skeleton",
+     "about": "Reserve space while content is still loading.",
+     "demo": "demos/skeleton.tsx"
+    },
+    {
+     "name": "stepper",
+     "title": "Stepper",
+     "about": "Show where a person is in a multi-step flow and what is done.",
+     "demo": "demos/stepper.tsx"
+    },
+    {
+     "name": "countdown",
+     "title": "Countdown",
+     "about": "A launch countdown with rolling digits that morphs into a live state at zero.",
+     "demo": "demos/countdown.tsx"
+    },
+    {
+     "name": "progress",
+     "title": "Progress",
+     "about": "Show how much of a known task is complete.",
+     "demo": "demos/progress.tsx"
+    },
+    {
+     "name": "bar-chart",
+     "title": "Bar chart",
+     "about": "Compare one measure across days and scrub any bar for its value.",
+     "demo": "demos/bar-chart.tsx"
+    },
+    {
+     "name": "gauge",
+     "title": "Gauge",
+     "about": "Show a value against a known range.",
+     "demo": "demos/gauge.tsx"
+    }
+   ]
+  },
+  {
+   "name": "gauge",
+   "title": "Gauge",
+   "about": "Show a value against a known range.",
+   "demo": "demos/gauge.tsx",
+   "install": "npx shadcn@latest add https://uiarc.dev/r/gauge.json",
+   "file": "gauge/gauge.tsx",
+   "export": "Gauge",
+   "use": [
+    "One value against a known range, such as disk quota or health score.",
+    "Values with labelled bands, like Healthy, Filling up, and Critical."
+   ],
+   "avoid": [
+    "Use progress for task completion.",
+    "Use usage-meter for plan limits and activity-rings for several goals at once."
+   ],
+   "keyboard": [],
+   "a11y": [
+    "The ring is role=\"meter\" with aria-valuemin, aria-valuemax, aria-valuenow, and an aria-valuetext including the band label.",
+    "Threshold labels name the state in text, so it never rests on color alone.",
+    "The SVG and animated readout are aria-hidden."
+   ],
+   "variants": [
+    {
+     "prop": "tone",
+     "values": [
+      "accent",
+      "success",
+      "warning",
+      "danger"
+     ],
+     "default": "accent",
+     "desc": "Ring color when no threshold applies."
+    },
+    {
+     "prop": "thresholds",
+     "values": [
+      "accent",
+      "success",
+      "warning",
+      "danger"
+     ],
+     "default": "\u2013",
+     "desc": "Bands by starting value. The highest band reached sets the tone and shows its label."
+    }
+   ],
+   "booleans": [],
+   "siblings": [
+    {
+     "name": "line-chart",
+     "title": "Line chart",
+     "about": "A multi-series line chart with a gliding crosshair, legend toggles, and paths that morph between ranges.",
+     "demo": "demos/line-chart.tsx"
+    },
+    {
+     "name": "bar-chart",
+     "title": "Bar chart",
+     "about": "Compare one measure across days and scrub any bar for its value.",
+     "demo": "demos/bar-chart.tsx"
+    },
+    {
+     "name": "donut-chart",
+     "title": "Donut chart",
+     "about": "A donut whose arcs morph between datasets, with the active value rolling into the center.",
+     "demo": "demos/donut-chart.tsx"
+    },
+    {
+     "name": "streamgraph",
+     "title": "Streamgraph",
+     "about": "Layered streams on a wiggle baseline that morph between ranges, with a layer you can isolate and read week by week.",
+     "demo": "demos/streamgraph.tsx"
+    },
+    {
+     "name": "brush-chart",
+     "title": "Brush chart",
+     "about": "A dense time series with an overview strip: drag a window to zoom, resize it by its handles, and read events in place.",
+     "demo": "demos/brush-chart.tsx"
+    },
+    {
+     "name": "waffle-chart",
+     "title": "Waffle chart",
+     "about": "A ten by ten unit chart where every cell is one percent, and cells fly to their new group when the data changes.",
+     "demo": "demos/waffle-chart.tsx"
+    },
+    {
+     "name": "slope-chart",
+     "title": "Slope chart",
+     "about": "Before and after on two axes: lines draw in, rank moves sit beside each value, and switching datasets slides every line to its new slope.",
+     "demo": "demos/slope-chart.tsx"
+    },
+    {
+     "name": "sparkline",
+     "title": "Sparkline",
+     "about": "Show a compact trend beside a value.",
+     "demo": "demos/sparkline.tsx"
+    },
+    {
+     "name": "activity-heatmap",
+     "title": "Activity heatmap",
+     "about": "See a year of activity at a glance, one square per day.",
+     "demo": "demos/activity-heatmap.tsx"
+    },
+    {
+     "name": "animated-counter",
+     "title": "Animated counter",
+     "about": "Give changing totals a clear sense of movement.",
+     "demo": "demos/animated-counter.tsx"
+    },
+    {
+     "name": "ridgeline",
+     "title": "Ridgeline",
+     "about": "Overlapping distributions, one ridge per group: hover to lift a ridge and read its quartiles, switch datasets and every curve morphs.",
+     "demo": "demos/ridgeline.tsx"
+    },
+    {
+     "name": "treemap",
+     "title": "Treemap",
+     "about": "A squarified treemap: click to drill and the tiles grow to fill the view, with a breadcrumb back and metrics that morph every tile.",
+     "demo": "demos/treemap.tsx"
+    },
+    {
+     "name": "split-bar",
+     "title": "Split bar",
+     "about": "A single 100% bar split into shares: rest on a segment to widen it and read its exact figures, toggle segments from the legend and the rest reflow, with labels inside when they fit and on leader lines when they don't.",
+     "demo": null
+    },
+    {
+     "name": "progress",
+     "title": "Progress",
+     "about": "Show how much of a known task is complete.",
+     "demo": "demos/progress.tsx"
+    },
+    {
+     "name": "usage-meter",
+     "title": "Usage meter",
+     "about": "Show what fills an allowance and how close it is to the limit.",
+     "demo": "demos/usage-meter.tsx"
+    },
+    {
+     "name": "activity-rings",
+     "title": "Activity rings",
+     "about": "Daily goals as tick rings that sweep, count up, and trace a second lap past 100%.",
+     "demo": null
+    }
+   ]
+  }
+ ],
+ "dots": [],
+ "counter": [
+  {
+   "name": "animated-counter",
+   "title": "Animated counter",
+   "about": "Give changing totals a clear sense of movement.",
+   "demo": "demos/animated-counter.tsx",
+   "install": "npx shadcn@latest add https://uiarc.dev/r/animated-counter.json",
+   "file": "animated-counter/animated-counter.tsx",
+   "export": "AnimatedCounter",
+   "use": [
+    "Standalone numbers that change, such as totals, prices, or live counts.",
+    "Hero stats that roll up from zero when they scroll into view, via animateOnView."
+   ],
+   "avoid": [
+    "Use metric-card or stat-card when the number needs a card around it.",
+    "Use text-morph for words rather than numbers."
+   ],
+   "keyboard": [],
+   "a11y": [
+    "A visually hidden copy holds the full formatted text; the rolling digits are aria-hidden.",
+    "It does not announce changes; wrap it in a live region if updates must be spoken."
+   ],
+   "variants": [],
+   "booleans": [
+    "animateOnView"
+   ],
+   "siblings": [
+    {
+     "name": "line-chart",
+     "title": "Line chart",
+     "about": "A multi-series line chart with a gliding crosshair, legend toggles, and paths that morph between ranges.",
+     "demo": "demos/line-chart.tsx"
+    },
+    {
+     "name": "bar-chart",
+     "title": "Bar chart",
+     "about": "Compare one measure across days and scrub any bar for its value.",
+     "demo": "demos/bar-chart.tsx"
+    },
+    {
+     "name": "donut-chart",
+     "title": "Donut chart",
+     "about": "A donut whose arcs morph between datasets, with the active value rolling into the center.",
+     "demo": "demos/donut-chart.tsx"
+    },
+    {
+     "name": "streamgraph",
+     "title": "Streamgraph",
+     "about": "Layered streams on a wiggle baseline that morph between ranges, with a layer you can isolate and read week by week.",
+     "demo": "demos/streamgraph.tsx"
+    },
+    {
+     "name": "brush-chart",
+     "title": "Brush chart",
+     "about": "A dense time series with an overview strip: drag a window to zoom, resize it by its handles, and read events in place.",
+     "demo": "demos/brush-chart.tsx"
+    },
+    {
+     "name": "waffle-chart",
+     "title": "Waffle chart",
+     "about": "A ten by ten unit chart where every cell is one percent, and cells fly to their new group when the data changes.",
+     "demo": "demos/waffle-chart.tsx"
+    },
+    {
+     "name": "slope-chart",
+     "title": "Slope chart",
+     "about": "Before and after on two axes: lines draw in, rank moves sit beside each value, and switching datasets slides every line to its new slope.",
+     "demo": "demos/slope-chart.tsx"
+    },
+    {
+     "name": "sparkline",
+     "title": "Sparkline",
+     "about": "Show a compact trend beside a value.",
+     "demo": "demos/sparkline.tsx"
+    },
+    {
+     "name": "gauge",
+     "title": "Gauge",
+     "about": "Show a value against a known range.",
+     "demo": "demos/gauge.tsx"
+    },
+    {
+     "name": "activity-heatmap",
+     "title": "Activity heatmap",
+     "about": "See a year of activity at a glance, one square per day.",
+     "demo": "demos/activity-heatmap.tsx"
+    },
+    {
+     "name": "ridgeline",
+     "title": "Ridgeline",
+     "about": "Overlapping distributions, one ridge per group: hover to lift a ridge and read its quartiles, switch datasets and every curve morphs.",
+     "demo": "demos/ridgeline.tsx"
+    },
+    {
+     "name": "treemap",
+     "title": "Treemap",
+     "about": "A squarified treemap: click to drill and the tiles grow to fill the view, with a breadcrumb back and metrics that morph every tile.",
+     "demo": "demos/treemap.tsx"
+    },
+    {
+     "name": "split-bar",
+     "title": "Split bar",
+     "about": "A single 100% bar split into shares: rest on a segment to widen it and read its exact figures, toggle segments from the legend and the rest reflow, with labels inside when they fit and on leader lines when they don't.",
+     "demo": null
+    },
+    {
+     "name": "metric-card",
+     "title": "Metric card",
+     "about": "A compact summary for a number that needs context.",
+     "demo": "demos/metric-card.tsx"
+    },
+    {
+     "name": "text-morph",
+     "title": "Text morph",
+     "about": "Morph a label into its next state, letter by letter.",
+     "demo": "demos/text-morph.tsx"
+    }
+   ]
+  },
+  {
+   "name": "countdown",
+   "title": "Countdown",
+   "about": "A launch countdown with rolling digits that morphs into a live state at zero.",
+   "demo": "demos/countdown.tsx",
+   "install": "npx shadcn@latest add https://uiarc.dev/r/countdown.json",
+   "file": "countdown/countdown.tsx",
+   "export": "Countdown",
+   "use": [
+    "A launch page or event hero counting to a keynote.",
+    "A compact deadline pill in a table row or banner.",
+    "Sale or registration windows that should flip to a Live now state on their own."
+   ],
+   "avoid": [
+    "Use stopwatch for time counting up from a start.",
+    "Use announcement-bar when the countdown sits inside a site-wide banner with a call to action."
+   ],
+   "keyboard": [],
+   "a11y": [
+    "The root is role=\"timer\" named by label; the visible digits are aria-hidden.",
+    "A hidden text reads the remaining time in words, dropping seconds until under a minute so it does not chatter.",
+    "When complete, a string completeLabel is read; other nodes read as Complete."
+   ],
+   "variants": [
+    {
+     "prop": "variant",
+     "values": [
+      "large",
+      "compact"
+     ],
+     "default": "large",
+     "desc": "Large digits with unit labels, or one compact line for banners and table cells."
+    }
+   ],
+   "booleans": [],
+   "siblings": [
+    {
+     "name": "progress",
+     "title": "Progress",
+     "about": "Show how much of a known task is complete.",
+     "demo": "demos/progress.tsx"
+    },
+    {
+     "name": "skeleton",
+     "title": "Skeleton",
+     "about": "Reserve space while content is still loading.",
+     "demo": "demos/skeleton.tsx"
+    },
+    {
+     "name": "stepper",
+     "title": "Stepper",
+     "about": "Show where a person is in a multi-step flow and what is done.",
+     "demo": "demos/stepper.tsx"
+    },
+    {
+     "name": "usage-meter",
+     "title": "Usage meter",
+     "about": "Show what fills an allowance and how close it is to the limit.",
+     "demo": "demos/usage-meter.tsx"
+    },
+    {
+     "name": "animated-counter",
+     "title": "Animated counter",
+     "about": "Give changing totals a clear sense of movement.",
+     "demo": "demos/animated-counter.tsx"
+    },
+    {
+     "name": "announcement-bar",
+     "title": "Announcement bar",
+     "about": "A top banner that rotates messages, counts down, and collapses smoothly when dismissed.",
+     "demo": "demos/announcement-bar.tsx"
+    },
+    {
+     "name": "badge",
+     "title": "Badge",
+     "about": "A small label for status, category, or metadata.",
+     "demo": "demos/badge.tsx"
+    }
+   ]
+  }
+ ],
+ "sparkline": [
+  {
+   "name": "sparkline",
+   "title": "Sparkline",
+   "about": "Show a compact trend beside a value.",
+   "demo": "demos/sparkline.tsx",
+   "install": "npx shadcn@latest add https://uiarc.dev/r/sparkline.json",
+   "file": "sparkline/sparkline.tsx",
+   "export": "Sparkline",
+   "use": [
+    "A compact trend inside a card, table row, or KPI tile.",
+    "Small charts people can scrub by pointer or keyboard to read past values."
+   ],
+   "avoid": [
+    "Use bar-chart for comparing discrete periods with axes.",
+    "Use stat-card or metric-card when only the latest value matters."
+   ],
+   "keyboard": [
+    "| ArrowLeft / ArrowRight | Moves the cursor one point back or forward (ArrowDown and ArrowUp too). |",
+    "| PageDown / PageUp | Moves about a sixth of the series. |",
+    "| Home / End | Jumps to the first or last point. |",
+    "| Escape | Stops scrubbing and returns to the latest value. |"
+   ],
+   "a11y": [
+    "The figure has an aria-label describing the series; the SVG is hidden.",
+    "When interactive, the plot is a focusable role=\"slider\" whose aria-valuetext reads the point label and value.",
+    "Pass labels so scrubbed points read as dates rather than positions."
+   ],
+   "variants": [
+    {
+     "prop": "tone",
+     "values": [
+      "accent",
+      "success",
+      "warning",
+      "danger"
+     ],
+     "default": "accent",
+     "desc": "Line and change color."
+    }
+   ],
+   "booleans": [
+    "area",
+    "interactive"
+   ],
+   "siblings": [
+    {
+     "name": "line-chart",
+     "title": "Line chart",
+     "about": "A multi-series line chart with a gliding crosshair, legend toggles, and paths that morph between ranges.",
+     "demo": "demos/line-chart.tsx"
+    },
+    {
+     "name": "donut-chart",
+     "title": "Donut chart",
+     "about": "A donut whose arcs morph between datasets, with the active value rolling into the center.",
+     "demo": "demos/donut-chart.tsx"
+    },
+    {
+     "name": "streamgraph",
+     "title": "Streamgraph",
+     "about": "Layered streams on a wiggle baseline that morph between ranges, with a layer you can isolate and read week by week.",
+     "demo": "demos/streamgraph.tsx"
+    },
+    {
+     "name": "brush-chart",
+     "title": "Brush chart",
+     "about": "A dense time series with an overview strip: drag a window to zoom, resize it by its handles, and read events in place.",
+     "demo": "demos/brush-chart.tsx"
+    },
+    {
+     "name": "waffle-chart",
+     "title": "Waffle chart",
+     "about": "A ten by ten unit chart where every cell is one percent, and cells fly to their new group when the data changes.",
+     "demo": "demos/waffle-chart.tsx"
+    },
+    {
+     "name": "slope-chart",
+     "title": "Slope chart",
+     "about": "Before and after on two axes: lines draw in, rank moves sit beside each value, and switching datasets slides every line to its new slope.",
+     "demo": "demos/slope-chart.tsx"
+    },
+    {
+     "name": "activity-heatmap",
+     "title": "Activity heatmap",
+     "about": "See a year of activity at a glance, one square per day.",
+     "demo": "demos/activity-heatmap.tsx"
+    },
+    {
+     "name": "animated-counter",
+     "title": "Animated counter",
+     "about": "Give changing totals a clear sense of movement.",
+     "demo": "demos/animated-counter.tsx"
+    },
+    {
+     "name": "ridgeline",
+     "title": "Ridgeline",
+     "about": "Overlapping distributions, one ridge per group: hover to lift a ridge and read its quartiles, switch datasets and every curve morphs.",
+     "demo": "demos/ridgeline.tsx"
+    },
+    {
+     "name": "treemap",
+     "title": "Treemap",
+     "about": "A squarified treemap: click to drill and the tiles grow to fill the view, with a breadcrumb back and metrics that morph every tile.",
+     "demo": "demos/treemap.tsx"
+    },
+    {
+     "name": "split-bar",
+     "title": "Split bar",
+     "about": "A single 100% bar split into shares: rest on a segment to widen it and read its exact figures, toggle segments from the legend and the rest reflow, with labels inside when they fit and on leader lines when they don't.",
+     "demo": null
+    },
+    {
+     "name": "bar-chart",
+     "title": "Bar chart",
+     "about": "Compare one measure across days and scrub any bar for its value.",
+     "demo": "demos/bar-chart.tsx"
+    },
+    {
+     "name": "metric-card",
+     "title": "Metric card",
+     "about": "A compact summary for a number that needs context.",
+     "demo": "demos/metric-card.tsx"
+    },
+    {
+     "name": "gauge",
+     "title": "Gauge",
+     "about": "Show a value against a known range.",
+     "demo": "demos/gauge.tsx"
+    }
+   ]
+  }
+ ],
+ "timestamp": [],
+ "swatch": [],
+ "tooltip": [
+  {
+   "name": "tooltip",
+   "title": "Tooltip",
+   "about": "Short supporting text for unfamiliar controls.",
+   "demo": "demos/tooltip.tsx",
+   "install": "npx shadcn@latest add https://uiarc.dev/r/tooltip.json",
+   "file": "tooltip/tooltip.tsx",
+   "export": "Tooltip",
+   "use": [
+    "One-line labels on icon-only buttons in toolbars.",
+    "Revealing the full text of truncated labels on hover or focus.",
+    "Dense toolbars where moving between icons should show labels instantly after the first one."
+   ],
+   "avoid": [
+    "Use popover for anything with links or controls inside.",
+    "Use hover-card for rich previews such as a person or link.",
+    "Avoid it for information people must see on touch devices, where hover does not exist."
+   ],
+   "keyboard": [
+    "| Tab | Focusing the trigger opens the tooltip. |",
+    "| Escape | Closes the tooltip. |"
+   ],
+   "a11y": [
+    "Radix links the content to the trigger with aria-describedby and renders role=\"tooltip\".",
+    "Content is supplemental: icon-only triggers still need their own aria-label.",
+    "Do not put interactive elements inside; use popover instead."
+   ],
+   "variants": [
+    {
+     "prop": "side",
+     "values": [
+      "top",
+      "bottom"
+     ],
+     "default": "top",
+     "desc": "Preferred side of the trigger."
+    }
+   ],
+   "booleans": [],
+   "siblings": [
+    {
+     "name": "dialog",
+     "title": "Dialog",
+     "about": "A focused surface for decisions that need attention.",
+     "demo": "demos/dialog.tsx"
+    },
+    {
+     "name": "drawer",
+     "title": "Drawer",
+     "about": "A temporary side surface for focused work.",
+     "demo": "demos/drawer.tsx"
+    },
+    {
+     "name": "bottom-sheet",
+     "title": "Bottom sheet",
+     "about": "A sheet that rests at a peek or full height and follows your finger.",
+     "demo": "demos/bottom-sheet.tsx"
+    },
+    {
+     "name": "share-access",
+     "title": "Share access",
+     "about": "A share panel: invite people as validated email chips with suggestions, change roles from a compact menu, remove with undo, switch link access and copy the link, with every change landing in place.",
+     "demo": null
+    },
+    {
+     "name": "popover",
+     "title": "Popover",
+     "about": "A small anchored surface for contextual information.",
+     "demo": "demos/popover.tsx"
+    },
+    {
+     "name": "hover-card",
+     "title": "Hover card",
+     "about": "Preview a person or link on hover or focus without leaving the page.",
+     "demo": "demos/hover-card.tsx"
+    },
+    {
+     "name": "action-button",
+     "title": "Action button",
+     "about": "A compact button for frequent toolbar actions.",
+     "demo": "demos/action-button.tsx"
+    }
+   ]
+  }
+ ],
+ "border-effect": []
+}

@@ -1,0 +1,259 @@
+#!/usr/bin/env python3
+"""Bring whole libraries from the code bank (siso-ui-code r/<lib>) into the SISO kit as real source under
+app/src/kit/<slug>/, so the hub's kit page renders every part live (Shaan, 14 Oct: "bring them all in for me").
+
+Each library gets parts.json (one row per part the page shows, filed by job from siso-ui-code's classified.jsonl)
+and code.json (every copied file, for the Code panel, loaded only when asked). Imports are pointed at the copied
+files: the item's own files first, then the library's, then the shared shadcn base (kit/shadcn). Anything still
+missing is stubbed by the vite plugin, so the part shows a failure card instead of breaking the build.
+
+  bin/kit-import shadcn magicui reui ...   # shadcn = _reference/shadcn (the base every library leans on)
+  bin/kit-import --all                     # every library in bin/kit-libs.txt"""
+import json, os, re, sys, glob, posixpath, collections
+
+HUB = os.path.dirname(os.path.dirname(os.path.realpath(__file__)))
+CODE = os.path.expanduser("~/SISO_Workspace/Great_Library_of_SISO/banks/siso-ui-code")
+SHADCN = f"{HUB}/_reference/shadcn"  # base-nova snapshot plus new-york-v4 (fetched from ui.shadcn.com, MIT)
+KIT = f"{HUB}/app/src/kit"
+
+# folder name in the kit: the library's own name, without the gh-<owner>- prefix the code bank adds
+SLUG = {"gh-airbnb-visx": "visx", "gh-yuribodo-mariocharts": "mariocharts", "gh-imaimai17468-typechart": "typechart",
+        "gh-amanvarshney01-slither-charts": "slither-charts", "gh-mnhtng-shadcn-chart": "shadcn-chart",
+        "gh-vedantlamba-zenin-charts": "zenin-charts", "gh-subhan-code-monocharts": "monocharts",
+        "gh-theoluciano-phosphor-animated": "phosphor-animated", "gh-hemaaanth-icons": "hemaaanth-icons",
+        "gh-yousefkadah-react-animation-library": "react-animation-library", "gh-rafoxme-uix": "uix",
+        "gh-carere-zaidan": "zaidan"}
+ICON_SETS = {"hugeicons-animated", "heroicons-animated", "iconiq", "gh-theoluciano-phosphor-animated", "gh-hemaaanth-icons",
+             "animate-ui-icons", "lucide-animated", "animateicons"}
+NOT_WEB = re.compile(r"^(react-native|expo|@rn-primitives|@shopify/react-native|@gorhom|solid-|solid$|@corvu|@kobalte|lucide-solid|lucide-react-native|@dnd-kit/solid|@tanstack/solid|embla-carousel-solid|cmdk-solid|solid-recharts|solid-sonner)")
+SHOW = {"registry:example", "registry:block", "registry:page", "registry:component", "registry:ui"}
+
+
+def classified():
+    want = set(LIBS)
+    out = {}
+    for line in open(f"{CODE}/classified.jsonl"):
+        reg = line[8:line.find("/", 8)]
+        if reg in want:
+            r = json.loads(line)
+            out[r["id"]] = r
+    return out
+
+
+def registries():
+    try:
+        return {r["name"].lstrip("@"): r for r in json.load(open(f"{CODE}/registries.json"))}
+    except Exception:
+        return {}
+
+
+def items(lib):
+    if lib == "shadcn":
+        # the shared base is shadcn's standard (new-york-v4, Radix) parts, which nearly every library is written against;
+        # charts and blocks come from the base-nova snapshot
+        for f in sorted(glob.glob(f"{SHADCN}/new-york-v4/*.json")):
+            yield json.load(open(f))
+        for f in sorted(glob.glob(f"{SHADCN}/*/*/item.json")):
+            if "/ui/" in f:
+                continue
+            it = json.load(open(f))
+            it.setdefault("name", os.path.basename(os.path.dirname(f)))
+            d = os.path.dirname(f)  # the snapshot keeps file paths in item.json and the code beside it
+            it["files"] = [{"path": x, "content": open(f"{d}/{x}").read()} for x in it.get("files") or [] if isinstance(x, str) and os.path.exists(f"{d}/{x}")]
+            yield it
+        return
+    for f in sorted(glob.glob(f"{CODE}/r/{lib}/*.json")):
+        if os.path.basename(f).startswith("_"):
+            continue
+        try:
+            yield json.load(open(f))
+        except Exception:
+            continue
+
+
+def dest(path, lib):
+    p = re.sub(r"^~?/", "", path)
+    p = re.sub(r"^(src|app)/", "", p)
+    p = re.sub(r"^registry/(new-york-v4|new-york|default|base-nova|base-[a-z]+|radix-[a-z]+)/", "", p)
+    p = re.sub(r"^registry/", "", p)
+    if lib == "shadcn":  # the shared base: ui/<x>.tsx, hooks/<x>.ts, lib/<x>.ts; charts and blocks keep their folders
+        p = re.sub(r"^components/ui/", "ui/", p)
+    return p if "/" in p else f"icons/{p}"
+
+
+def strip_ext(p):
+    return re.sub(r"(/index)?\.(tsx|ts|jsx|js|mjs)$", "", p)
+
+
+IMPORT = re.compile(r"""((?:from|import)\s*\(?\s*["'])([^"'\n]+)(["'])""")
+
+
+class Lib:
+    def __init__(self, lib):
+        self.lib, self.slug = lib, SLUG.get(lib, lib)
+        self.out = f"{KIT}/{self.slug}"
+        self.files = {}  # dest -> content
+        self.by_tail = collections.defaultdict(list)  # extension-less path suffixes -> dests
+
+    def index(self, d, alias=None):
+        """d is reachable by any suffix of its own path, and of its install target (how the library's imports name it)"""
+        for name in filter(None, [d, alias]):
+            segs = strip_ext(name).split("/")
+            for i in range(len(segs)):
+                self.by_tail["/".join(segs[i:])].append(d)
+
+
+SHARED = None  # the shadcn base, for imports a library does not ship itself
+
+
+def resolve(spec, frm, own, lib):
+    """point an alias import at a copied file; None leaves it for the stub plugin"""
+    if spec == "cn":
+        return "@/arc-shims/kit-utils"  # a few registries list cn as if it were a package
+    if spec.startswith(".") or not re.match(r"^(@/|~/|@registry/|@components/|@ui/)", spec):
+        return None
+    tail = re.sub(r"^(@/|~/|@registry/|@)", "", spec)
+    tail = re.sub(r"^registry/(new-york-v4|new-york|default|base-nova|[a-z-]+/)?", "", tail)
+    segs = [s for s in tail.split("/") if s]
+    if tail in ("lib/utils", "utils", "lib/cn", "utils/cn") and not any(lib.by_tail.get(tail, [])):
+        return "@/arc-shims/kit-utils"
+    if tail.endswith("components/icon-placeholder"):
+        return "@/arc-shims/icon-placeholder"
+    # the longest matching path suffix wins across all pools (own item, then library, then shadcn on a tie);
+    # a bare name only when it is unique, and never the importing file itself
+    pools = [(own, lib), (lib.by_tail, lib)] + ([(SHARED.by_tail, SHARED)] if SHARED and SHARED is not lib else [])
+    for i in range(len(segs)):
+        for pool, base in pools:
+            hits = [h for h in dict.fromkeys(pool.get("/".join(segs[i:])) or []) if not (base is lib and h == frm)]
+            if hits and (len(segs) - i > 1 or len(hits) == 1):
+                abs_t = f"{base.slug}/{strip_ext(hits[0])}"
+                rel = posixpath.relpath(abs_t, posixpath.dirname(f"{lib.slug}/{frm}"))
+                return rel if rel.startswith(".") else "./" + rel
+    return None
+
+
+def fix(code, frm, own, lib):
+    def sub(m):
+        r = resolve(m.group(2), frm, own, lib)
+        return m.group(1) + (r or m.group(2)) + m.group(3)
+    code = IMPORT.sub(sub, code)
+    code = re.sub(r"/(home|Users)/user/", "~/", code)  # demo terminals print a fake home folder; the privacy gate reads any as private
+    code = re.sub(r"""import\s+\{([^}]*)\}\s+from\s+(["']recharts/types/[^"']+["'])""", r"import type {\1} from \2", code)
+    return code
+
+
+def build(libname, cls, regs):
+    global SHARED
+    lib = Lib(libname)
+    its = list(items(libname))
+    placed = []  # (item, [(dest, src content)])
+    aliases = {}  # dest -> install target
+    for it in its:
+        mine = []
+        for x in it.get("files") or []:
+            c = x.get("content")
+            if c is None:
+                continue
+            d = dest(x["path"], libname)
+            if d in lib.files and lib.files[d] != c:
+                d = f"_items/{it['name']}/{d}"  # same path, different file: keep it with its own item
+            lib.files[d] = c
+            mine.append(d)
+            if x.get("target"):
+                aliases[d] = re.sub(r"^~?/?((src|app)/)?", "", x["target"])
+        placed.append((it, mine))
+        for d in mine:
+            lib.index(d, aliases.get(d))
+    if libname == "shadcn":
+        SHARED = lib
+    code = {}
+    for it, mine in placed:
+        own = collections.defaultdict(list)
+        for d in mine:
+            for name in filter(None, [d, aliases.get(d)]):
+                segs = strip_ext(name).split("/")
+                for i in range(len(segs)):
+                    own["/".join(segs[i:])].append(d)
+        for d in mine:
+            src = fix(lib.files[d], d, own, lib) if re.search(r"\.(tsx|ts|jsx|js)$", d) else lib.files[d]
+            os.makedirs(os.path.dirname(f"{lib.out}/{d}"), exist_ok=True)
+            open(f"{lib.out}/{d}", "w").write(src)
+            code[d] = src
+    # which components already have an example that shows them
+    shown_by = {}
+    for it, mine in placed:
+        if it.get("type") in ("registry:example",) and mine:
+            for dep in it.get("registryDependencies") or []:
+                shown_by.setdefault(re.sub(r"^.*[/@]", "", dep).replace(".json", ""), it["name"])
+            base = re.sub(r"-(demo|example|preview)(-\d+)?$", "", it["name"])
+            shown_by.setdefault(base, it["name"])
+    reg = regs.get(libname, {})
+    url = reg.get("url")
+    parts = []
+    icons = libname in ICON_SETS or (libname == "animate-ui")
+    for it, mine in placed:
+        t = it.get("type", "")
+        tsx = [d for d in mine if re.search(r"\.(tsx|jsx)$", d)]
+        if t not in SHOW or not tsx:
+            continue
+        if libname == "shadcn" and t == "registry:ui":
+            continue  # the base ui shows through charts, blocks and the hub's own pages
+        name = it["name"]
+        if t in ("registry:ui", "registry:component") and name in shown_by and shown_by[name] != name:
+            continue  # its example shows it
+        c = cls.get(f"{libname}/{name}", {})
+        deps = it.get("dependencies") or []
+        is_icon = icons and t in ("registry:ui", "registry:component") and (libname in ICON_SETS or "/icons/" in tsx[0] or name.endswith("-icon"))
+        cat = c.get("cat") or ("assets/icon" if is_icon else "other/other")
+        web = not any(NOT_WEB.match(d) for d in deps) and c.get("fw", "React") in ("React", "", None) \
+            and not any(re.search(r"""from\s+["'](react-native|expo-|solid-js)""", lib.files[d]) for d in mine if d in lib.files)
+        main = next((d for d in tsx if not d.startswith("ui/") and "/ui/" not in d), tsx[0]) if t in ("registry:block", "registry:page") else tsx[0]
+        parts.append({"id": f"{lib.slug}/{name}", "name": name, "title": it.get("title") or name.replace("-", " ").capitalize(),
+                      "description": (it.get("description") or "")[:240], "type": t.replace("registry:", ""),
+                      "cat": "assets/icon" if is_icon else cat, "domain": c.get("domain") or [], "file": main, "files": mine,
+                      "deps": deps, "web": web, "player": "remotion" if any(d == "remotion" or d.startswith("@remotion/") for d in deps) else None,
+                      "install": f"npx shadcn@latest add {url.replace('{name}', name)}" if url else f"npx shadcn@latest add @{lib.slug}/{name}"})
+    os.makedirs(lib.out, exist_ok=True)
+    json.dump({"lib": lib.slug, "source": libname, "homepage": reg.get("homepage"), "description": reg.get("description"),
+               "items": len(its), "parts": parts}, open(f"{lib.out}/parts.json", "w"), indent=0)
+    json.dump(code, open(f"{lib.out}/code.json", "w"))
+    deps = collections.Counter(d for it, _ in placed for d in (it.get("dependencies") or []))
+    print(f"{lib.slug:26} items {len(its):5}  parts {len(parts):5}  files {len(lib.files):5}  not-web {sum(not p['web'] for p in parts)}")
+    return deps
+
+
+if "--code" in sys.argv:
+    # code.json (the Code panel's copy of every file) is not in git: rebuilt from the copied source before a build
+    for f in sorted(glob.glob(f"{KIT}/*/parts.json")):
+        d = os.path.dirname(f)
+        files = {x for p in json.load(open(f))["parts"] for x in p["files"]}
+        json.dump({x: open(f"{d}/{x}").read() for x in sorted(files) if os.path.exists(f"{d}/{x}")}, open(f"{d}/code.json", "w"))
+    print("code.json rebuilt")
+    sys.exit(0)
+
+LIBS = [l for l in sys.argv[1:] if not l.startswith("--")]
+if "--all" in sys.argv:
+    LIBS = ["shadcn"] + [l.strip() for l in open(f"{HUB}/bin/kit-libs.txt") if l.strip() and not l.startswith("#")]
+if "shadcn" in LIBS:
+    LIBS.remove("shadcn")
+    LIBS.insert(0, "shadcn")
+elif os.path.exists(f"{KIT}/shadcn/parts.json"):
+    # the shared base, for resolving imports, without rewriting it
+    SHARED = Lib("shadcn")
+    for f in glob.glob(f"{KIT}/shadcn/**/*.*", recursive=True):
+        SHARED.index(os.path.relpath(f, SHARED.out))
+CLS, REGS = classified(), registries()
+alldeps = collections.Counter()
+for l in LIBS:
+    alldeps.update(build(l, CLS, REGS))
+json.dump(sorted(alldeps), open("/tmp/kitimp/deps.json", "w"))
+
+# the kit page's index: one short row per part across every library, so it can file them by job without loading them
+libs, rows = [], []
+for f in sorted(glob.glob(f"{KIT}/*/parts.json")):
+    m = json.load(open(f))
+    libs.append({"lib": m["lib"], "homepage": m.get("homepage"), "description": m.get("description"), "items": m["items"], "parts": len(m["parts"])})
+    for p in m["parts"]:
+        rows.append([p["id"], p["title"], p["cat"], p["type"], p["file"], int(p["web"]), p.get("player") or "", p["description"][:140]])
+json.dump({"libs": libs, "parts": rows}, open(f"{KIT}/index.json", "w"), separators=(",", ":"))
+print(f"index: {len(rows)} parts from {len(libs)} libraries")

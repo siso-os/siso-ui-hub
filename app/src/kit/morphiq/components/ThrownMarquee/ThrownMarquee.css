@@ -1,0 +1,75 @@
+/* ThrownMarquee — one transform on the track, nothing else. The band is
+   repeated enough times to cover the box plus a copy either side, and the
+   offset wraps by whole copies, so the seam never enters the visible box. */
+
+.thrown-marquee {
+  overflow: hidden;
+  cursor: grab;
+  -webkit-user-select: none;
+  user-select: none;
+  -webkit-touch-callout: none;  /* no link/image callout while a finger holds the band */
+  /* The band listens for clicks (to swallow the one a drag ends with), and a
+     touch browser flashes its tap highlight over anything that does: the
+     whole band would blink like a pressed button at every touch. */
+  -webkit-tap-highlight-color: transparent;
+  /* Horizontal drags are ours. Vertical scroll and a pinch to zoom are the
+     page's, and a touch that turns into either lets go of the band. */
+  touch-action: pan-y pinch-zoom;
+}
+
+/* The band fills its container. Without this it shrinks to its content in
+   any centring grid or flex parent, and then the copies run out on screen.
+   The zero minimum is the other half: a grid or flex item is otherwise at
+   least as wide as its content, which here is every copy end to end.
+   :where() keeps both at zero specificity, so any width you set wins. */
+:where(.thrown-marquee) {
+  width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
+}
+
+/* A press closes the hand at once. Over a link the pointer stays a pointer
+   while the press could still be a click, and closes once it is a drag. */
+.thrown-marquee.is-held,
+.thrown-marquee.is-dragging * { cursor: grabbing; }
+
+/* Keyboard focus pauses the drift and the arrow keys step it, so the ring
+   says the band is listening. It stands a little off the band, clear of the
+   type moving under it. Pointer focus draws nothing. */
+.thrown-marquee:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 4px;
+}
+
+/* The band is only as tall as its content, so the focus ring of a link
+   inside it is cut off top and bottom, leaving two short ticks at its sides.
+   While keyboard focus is inside, the band clips sideways only. (A box that
+   clips is not a scroll container, which is why the minimum above is set
+   outright and not left to `overflow: hidden` to imply.) */
+@supports (overflow: clip) {
+  .thrown-marquee:has(:focus-visible) {
+    overflow-x: clip;
+    overflow-y: visible;
+  }
+}
+
+.thrown-marquee__track {
+  display: flex;
+  width: max-content;
+  will-change: transform;
+}
+
+.thrown-marquee__copy {
+  display: flex;
+  align-items: center;
+  flex: none;
+  /* The tap highlight is inherited: hand the default back to the content, so
+     a link inside still answers a tap the way links do. */
+  -webkit-tap-highlight-color: initial;
+}
+
+/* Reduced motion keeps the band where your hand leaves it: no drift and no
+   throw, but dragging, the wheel and the arrow keys still move it. */
+@media (prefers-reduced-motion: reduce) {
+  .thrown-marquee__track { will-change: auto; }
+}

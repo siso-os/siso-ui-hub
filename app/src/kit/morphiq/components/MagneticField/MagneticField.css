@@ -1,0 +1,17 @@
+/* MagneticField — filings never move, only rotate, so the grid is built once
+   and the loop writes nothing but a stroke per frame.
+
+   The root is its own stacking context so the canvas can sit under the
+   children (z-index −1) without dropping behind the root's own background:
+   an absolutely positioned canvas otherwise paints over in-flow children and
+   takes their clicks. pan-y lets a vertical drag scroll the page while a
+   sideways one steers the magnet; pinch-zoom stays with the reader. */
+
+.magnetic-field {
+  position: relative;
+  isolation: isolate;
+  width: 100%;
+  height: 100%;
+  touch-action: pan-y pinch-zoom;
+}
+.magnetic-field__canvas { position: absolute; inset: 0; z-index: -1; }

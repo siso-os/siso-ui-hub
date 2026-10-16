@@ -1,0 +1,2270 @@
+[
+ {
+  "name": "allocation-echarts-sankey-chart",
+  "title": "Allocation sankey chart",
+  "description": "Fund allocation flow with labelled nodes and a stat row",
+  "family": "sankey",
+  "engine": "echarts",
+  "file": "blocks/echarts/b-allocation-echarts-sankey-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/allocation-echarts-sankey-chart"
+ },
+ {
+  "name": "audience-echarts-area-chart",
+  "title": "Audience area chart",
+  "description": "Audience growth card with a multi-stop gradient line and faded wash",
+  "family": "area",
+  "engine": "echarts",
+  "file": "blocks/echarts/b-audience-echarts-area-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/audience-echarts-area-chart"
+ },
+ {
+  "name": "benchmark-echarts-area-chart",
+  "title": "Benchmark area chart",
+  "description": "Growth against a dashed benchmark \u2014 hatched lead area, rounded step plateaus",
+  "family": "area",
+  "engine": "echarts",
+  "file": "blocks/echarts/b-benchmark-echarts-area-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/benchmark-echarts-area-chart"
+ },
+ {
+  "name": "budget-echarts-radial-chart",
+  "title": "Budget radial chart",
+  "description": "Budget breakdown card with four gauges and a value list, on the radial chart",
+  "family": "radial",
+  "engine": "echarts",
+  "file": "blocks/echarts/b-budget-echarts-radial-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/budget-echarts-radial-chart"
+ },
+ {
+  "name": "cache-tiers-echarts-radial-chart",
+  "title": "Cache tiers radial chart",
+  "description": "Semi-circle multi-ring gauge with a stat grid and a share legend",
+  "family": "radial",
+  "engine": "echarts",
+  "file": "blocks/echarts/b-cache-tiers-echarts-radial-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/cache-tiers-echarts-radial-chart"
+ },
+ {
+  "name": "ex-animated-dashed-stroke-area-chart",
+  "title": "Animated dashed stroke area chart",
+  "description": "",
+  "family": "area",
+  "engine": "echarts",
+  "file": "examples/recharts/ex-animated-dashed-stroke-area-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/ex-animated-dashed-stroke-area-chart"
+ },
+ {
+  "name": "ex-animated-dashed-stroke-composed-chart",
+  "title": "Animated dashed stroke composed chart",
+  "description": "",
+  "family": "composed",
+  "engine": "echarts",
+  "file": "examples/recharts/ex-animated-dashed-stroke-composed-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/ex-animated-dashed-stroke-composed-chart"
+ },
+ {
+  "name": "ex-animated-dashed-stroke-echarts-area-chart",
+  "title": "Animated dashed stroke area chart",
+  "description": "",
+  "family": "area",
+  "engine": "echarts",
+  "file": "examples/echarts/ex-animated-dashed-stroke-echarts-area-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/ex-animated-dashed-stroke-echarts-area-chart"
+ },
+ {
+  "name": "ex-animated-dashed-stroke-echarts-composed-chart",
+  "title": "Animated dashed stroke composed chart",
+  "description": "",
+  "family": "composed",
+  "engine": "echarts",
+  "file": "examples/echarts/ex-animated-dashed-stroke-echarts-composed-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/ex-animated-dashed-stroke-echarts-composed-chart"
+ },
+ {
+  "name": "ex-animated-dashed-stroke-echarts-line-chart",
+  "title": "Animated dashed stroke line chart",
+  "description": "",
+  "family": "line",
+  "engine": "echarts",
+  "file": "examples/echarts/ex-animated-dashed-stroke-echarts-line-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/ex-animated-dashed-stroke-echarts-line-chart"
+ },
+ {
+  "name": "ex-animated-dashed-stroke-line-chart",
+  "title": "Animated dashed stroke line chart",
+  "description": "",
+  "family": "line",
+  "engine": "echarts",
+  "file": "examples/recharts/ex-animated-dashed-stroke-line-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/ex-animated-dashed-stroke-line-chart"
+ },
+ {
+  "name": "ex-area-chart",
+  "title": "Area chart",
+  "description": "",
+  "family": "area",
+  "engine": "echarts",
+  "file": "examples/recharts/ex-area-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/ex-area-chart"
+ },
+ {
+  "name": "ex-bar-chart",
+  "title": "Bar chart",
+  "description": "",
+  "family": "bar",
+  "engine": "echarts",
+  "file": "examples/recharts/ex-bar-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/ex-bar-chart"
+ },
+ {
+  "name": "ex-bg-4-pointed-star-line-chart",
+  "title": "Bg 4 pointed star line chart",
+  "description": "",
+  "family": "line",
+  "engine": "echarts",
+  "file": "examples/recharts/ex-bg-4-pointed-star-line-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/ex-bg-4-pointed-star-line-chart"
+ },
+ {
+  "name": "ex-bg-bubbles-line-chart",
+  "title": "Bg bubbles line chart",
+  "description": "",
+  "family": "line",
+  "engine": "echarts",
+  "file": "examples/recharts/ex-bg-bubbles-line-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/ex-bg-bubbles-line-chart"
+ },
+ {
+  "name": "ex-bg-cross-hatch-line-chart",
+  "title": "Bg cross hatch line chart",
+  "description": "",
+  "family": "line",
+  "engine": "echarts",
+  "file": "examples/recharts/ex-bg-cross-hatch-line-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/ex-bg-cross-hatch-line-chart"
+ },
+ {
+  "name": "ex-bg-diagonal-lines-line-chart",
+  "title": "Bg diagonal lines line chart",
+  "description": "",
+  "family": "line",
+  "engine": "echarts",
+  "file": "examples/recharts/ex-bg-diagonal-lines-line-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/ex-bg-diagonal-lines-line-chart"
+ },
+ {
+  "name": "ex-bg-dots-line-chart",
+  "title": "Bg dots line chart",
+  "description": "",
+  "family": "line",
+  "engine": "echarts",
+  "file": "examples/recharts/ex-bg-dots-line-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/ex-bg-dots-line-chart"
+ },
+ {
+  "name": "ex-bg-falling-triangles-line-chart",
+  "title": "Bg falling triangles line chart",
+  "description": "",
+  "family": "line",
+  "engine": "echarts",
+  "file": "examples/recharts/ex-bg-falling-triangles-line-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/ex-bg-falling-triangles-line-chart"
+ },
+ {
+  "name": "ex-bg-grid-line-chart",
+  "title": "Bg grid line chart",
+  "description": "",
+  "family": "line",
+  "engine": "echarts",
+  "file": "examples/recharts/ex-bg-grid-line-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/ex-bg-grid-line-chart"
+ },
+ {
+  "name": "ex-bg-overlapping-circles-line-chart",
+  "title": "Bg overlapping circles line chart",
+  "description": "",
+  "family": "line",
+  "engine": "echarts",
+  "file": "examples/recharts/ex-bg-overlapping-circles-line-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/ex-bg-overlapping-circles-line-chart"
+ },
+ {
+  "name": "ex-bg-plus-line-chart",
+  "title": "Bg plus line chart",
+  "description": "",
+  "family": "line",
+  "engine": "echarts",
+  "file": "examples/recharts/ex-bg-plus-line-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/ex-bg-plus-line-chart"
+ },
+ {
+  "name": "ex-bg-tiny-checkers-line-chart",
+  "title": "Bg tiny checkers line chart",
+  "description": "",
+  "family": "line",
+  "engine": "echarts",
+  "file": "examples/recharts/ex-bg-tiny-checkers-line-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/ex-bg-tiny-checkers-line-chart"
+ },
+ {
+  "name": "ex-bg-wiggle-lines-line-chart",
+  "title": "Bg wiggle lines line chart",
+  "description": "",
+  "family": "line",
+  "engine": "echarts",
+  "file": "examples/recharts/ex-bg-wiggle-lines-line-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/ex-bg-wiggle-lines-line-chart"
+ },
+ {
+  "name": "ex-blocks-variant-echarts-bar-chart",
+  "title": "Blocks variant bar chart",
+  "description": "",
+  "family": "bar",
+  "engine": "echarts",
+  "file": "examples/echarts/ex-blocks-variant-echarts-bar-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/ex-blocks-variant-echarts-bar-chart"
+ },
+ {
+  "name": "ex-brush-area-chart",
+  "title": "Brush area chart",
+  "description": "",
+  "family": "area",
+  "engine": "echarts",
+  "file": "examples/recharts/ex-brush-area-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/ex-brush-area-chart"
+ },
+ {
+  "name": "ex-brush-echarts-area-chart",
+  "title": "Brush area chart",
+  "description": "",
+  "family": "area",
+  "engine": "echarts",
+  "file": "examples/echarts/ex-brush-echarts-area-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/ex-brush-echarts-area-chart"
+ },
+ {
+  "name": "ex-buffer-bar-chart",
+  "title": "Buffer bar chart",
+  "description": "",
+  "family": "bar",
+  "engine": "echarts",
+  "file": "examples/recharts/ex-buffer-bar-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/ex-buffer-bar-chart"
+ },
+ {
+  "name": "ex-buffer-echarts-area-chart",
+  "title": "Buffer area chart",
+  "description": "",
+  "family": "area",
+  "engine": "echarts",
+  "file": "examples/echarts/ex-buffer-echarts-area-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/ex-buffer-echarts-area-chart"
+ },
+ {
+  "name": "ex-buffer-echarts-bar-chart",
+  "title": "Buffer bar chart",
+  "description": "",
+  "family": "bar",
+  "engine": "echarts",
+  "file": "examples/echarts/ex-buffer-echarts-bar-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/ex-buffer-echarts-bar-chart"
+ },
+ {
+  "name": "ex-buffer-echarts-line-chart",
+  "title": "Buffer line chart",
+  "description": "",
+  "family": "line",
+  "engine": "echarts",
+  "file": "examples/echarts/ex-buffer-echarts-line-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/ex-buffer-echarts-line-chart"
+ },
+ {
+  "name": "ex-buffer-line-chart",
+  "title": "Buffer line chart",
+  "description": "",
+  "family": "line",
+  "engine": "echarts",
+  "file": "examples/recharts/ex-buffer-line-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/ex-buffer-line-chart"
+ },
+ {
+  "name": "ex-bump-curve-composed-chart",
+  "title": "Bump curve composed chart",
+  "description": "",
+  "family": "composed",
+  "engine": "echarts",
+  "file": "examples/recharts/ex-bump-curve-composed-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/ex-bump-curve-composed-chart"
+ },
+ {
+  "name": "ex-bump-curve-echarts-composed-chart",
+  "title": "Bump curve composed chart",
+  "description": "",
+  "family": "composed",
+  "engine": "echarts",
+  "file": "examples/echarts/ex-bump-curve-echarts-composed-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/ex-bump-curve-echarts-composed-chart"
+ },
+ {
+  "name": "ex-bump-curve-type-area-chart",
+  "title": "Bump curve type area chart",
+  "description": "",
+  "family": "area",
+  "engine": "echarts",
+  "file": "examples/recharts/ex-bump-curve-type-area-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/ex-bump-curve-type-area-chart"
+ },
+ {
+  "name": "ex-bump-curve-type-echarts-area-chart",
+  "title": "Bump curve type area chart",
+  "description": "",
+  "family": "area",
+  "engine": "echarts",
+  "file": "examples/echarts/ex-bump-curve-type-echarts-area-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/ex-bump-curve-type-echarts-area-chart"
+ },
+ {
+  "name": "ex-bump-curve-type-echarts-line-chart",
+  "title": "Bump curve type line chart",
+  "description": "",
+  "family": "line",
+  "engine": "echarts",
+  "file": "examples/echarts/ex-bump-curve-type-echarts-line-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/ex-bump-curve-type-echarts-line-chart"
+ },
+ {
+  "name": "ex-bump-curve-type-line-chart",
+  "title": "Bump curve type line chart",
+  "description": "",
+  "family": "line",
+  "engine": "echarts",
+  "file": "examples/recharts/ex-bump-curve-type-line-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/ex-bump-curve-type-line-chart"
+ },
+ {
+  "name": "ex-chart-config-default-bar-chart",
+  "title": "Chart config default bar chart",
+  "description": "",
+  "family": "bar",
+  "engine": "echarts",
+  "file": "examples/recharts/ex-chart-config-default-bar-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/ex-chart-config-default-bar-chart"
+ },
+ {
+  "name": "ex-chart-config-default-echarts-bar-chart",
+  "title": "Chart config default bar chart",
+  "description": "",
+  "family": "bar",
+  "engine": "echarts",
+  "file": "examples/echarts/ex-chart-config-default-echarts-bar-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/ex-chart-config-default-echarts-bar-chart"
+ },
+ {
+  "name": "ex-chart-config-icons-bar-chart",
+  "title": "Chart config icons bar chart",
+  "description": "",
+  "family": "bar",
+  "engine": "echarts",
+  "file": "examples/recharts/ex-chart-config-icons-bar-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/ex-chart-config-icons-bar-chart"
+ },
+ {
+  "name": "ex-chart-config-icons-echarts-bar-chart",
+  "title": "Chart config icons bar chart",
+  "description": "",
+  "family": "bar",
+  "engine": "echarts",
+  "file": "examples/echarts/ex-chart-config-icons-echarts-bar-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/ex-chart-config-icons-echarts-bar-chart"
+ },
+ {
+  "name": "ex-circle-grid-echarts-radar-chart",
+  "title": "Circle grid radar chart",
+  "description": "",
+  "family": "radar",
+  "engine": "echarts",
+  "file": "examples/echarts/ex-circle-grid-echarts-radar-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/ex-circle-grid-echarts-radar-chart"
+ },
+ {
+  "name": "ex-circle-grid-radar-chart",
+  "title": "Circle grid radar chart",
+  "description": "",
+  "family": "radar",
+  "engine": "echarts",
+  "file": "examples/recharts/ex-circle-grid-radar-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/ex-circle-grid-radar-chart"
+ },
+ {
+  "name": "ex-composed-chart",
+  "title": "Composed chart",
+  "description": "",
+  "family": "composed",
+  "engine": "echarts",
+  "file": "examples/recharts/ex-composed-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/ex-composed-chart"
+ },
+ {
+  "name": "ex-dashed-stroke-area-chart",
+  "title": "Dashed stroke area chart",
+  "description": "",
+  "family": "area",
+  "engine": "echarts",
+  "file": "examples/recharts/ex-dashed-stroke-area-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/ex-dashed-stroke-area-chart"
+ },
+ {
+  "name": "ex-dashed-stroke-composed-chart",
+  "title": "Dashed stroke composed chart",
+  "description": "",
+  "family": "composed",
+  "engine": "echarts",
+  "file": "examples/recharts/ex-dashed-stroke-composed-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/ex-dashed-stroke-composed-chart"
+ },
+ {
+  "name": "ex-dashed-stroke-echarts-area-chart",
+  "title": "Dashed stroke area chart",
+  "description": "",
+  "family": "area",
+  "engine": "echarts",
+  "file": "examples/echarts/ex-dashed-stroke-echarts-area-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/ex-dashed-stroke-echarts-area-chart"
+ },
+ {
+  "name": "ex-dashed-stroke-echarts-composed-chart",
+  "title": "Dashed stroke composed chart",
+  "description": "",
+  "family": "composed",
+  "engine": "echarts",
+  "file": "examples/echarts/ex-dashed-stroke-echarts-composed-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/ex-dashed-stroke-echarts-composed-chart"
+ },
+ {
+  "name": "ex-dashed-stroke-echarts-line-chart",
+  "title": "Dashed stroke line chart",
+  "description": "",
+  "family": "line",
+  "engine": "echarts",
+  "file": "examples/echarts/ex-dashed-stroke-echarts-line-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/ex-dashed-stroke-echarts-line-chart"
+ },
+ {
+  "name": "ex-dashed-stroke-line-chart",
+  "title": "Dashed stroke line chart",
+  "description": "",
+  "family": "line",
+  "engine": "echarts",
+  "file": "examples/recharts/ex-dashed-stroke-line-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/ex-dashed-stroke-line-chart"
+ },
+ {
+  "name": "ex-default-type-area-chart",
+  "title": "Default type area chart",
+  "description": "",
+  "family": "area",
+  "engine": "echarts",
+  "file": "examples/recharts/ex-default-type-area-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/ex-default-type-area-chart"
+ },
+ {
+  "name": "ex-default-type-echarts-area-chart",
+  "title": "Default type area chart",
+  "description": "",
+  "family": "area",
+  "engine": "echarts",
+  "file": "examples/echarts/ex-default-type-echarts-area-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/ex-default-type-echarts-area-chart"
+ },
+ {
+  "name": "ex-default-variant-bar-chart",
+  "title": "Default variant bar chart",
+  "description": "",
+  "family": "bar",
+  "engine": "echarts",
+  "file": "examples/recharts/ex-default-variant-bar-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/ex-default-variant-bar-chart"
+ },
+ {
+  "name": "ex-default-variant-echarts-bar-chart",
+  "title": "Default variant bar chart",
+  "description": "",
+  "family": "bar",
+  "engine": "echarts",
+  "file": "examples/echarts/ex-default-variant-echarts-bar-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/ex-default-variant-echarts-bar-chart"
+ },
+ {
+  "name": "ex-donut-echarts-pie-chart",
+  "title": "Donut pie chart",
+  "description": "",
+  "family": "pie",
+  "engine": "echarts",
+  "file": "examples/echarts/ex-donut-echarts-pie-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/ex-donut-echarts-pie-chart"
+ },
+ {
+  "name": "ex-donut-pie-chart",
+  "title": "Donut pie chart",
+  "description": "",
+  "family": "pie",
+  "engine": "echarts",
+  "file": "examples/recharts/ex-donut-pie-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/ex-donut-pie-chart"
+ },
+ {
+  "name": "ex-dot-border-echarts-line-chart",
+  "title": "Dot border line chart",
+  "description": "",
+  "family": "line",
+  "engine": "echarts",
+  "file": "examples/echarts/ex-dot-border-echarts-line-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/ex-dot-border-echarts-line-chart"
+ },
+ {
+  "name": "ex-dot-border-line-chart",
+  "title": "Dot border line chart",
+  "description": "",
+  "family": "line",
+  "engine": "echarts",
+  "file": "examples/recharts/ex-dot-border-line-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/ex-dot-border-line-chart"
+ },
+ {
+  "name": "ex-dot-colored-border-echarts-line-chart",
+  "title": "Dot colored border line chart",
+  "description": "",
+  "family": "line",
+  "engine": "echarts",
+  "file": "examples/echarts/ex-dot-colored-border-echarts-line-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/ex-dot-colored-border-echarts-line-chart"
+ },
+ {
+  "name": "ex-dot-colored-border-line-chart",
+  "title": "Dot colored border line chart",
+  "description": "",
+  "family": "line",
+  "engine": "echarts",
+  "file": "examples/recharts/ex-dot-colored-border-line-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/ex-dot-colored-border-line-chart"
+ },
+ {
+  "name": "ex-dot-default-echarts-line-chart",
+  "title": "Dot default line chart",
+  "description": "",
+  "family": "line",
+  "engine": "echarts",
+  "file": "examples/echarts/ex-dot-default-echarts-line-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/ex-dot-default-echarts-line-chart"
+ },
+ {
+  "name": "ex-dot-default-line-chart",
+  "title": "Dot default line chart",
+  "description": "",
+  "family": "line",
+  "engine": "echarts",
+  "file": "examples/recharts/ex-dot-default-line-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/ex-dot-default-line-chart"
+ },
+ {
+  "name": "ex-dot-ping-echarts-line-chart",
+  "title": "Dot ping line chart",
+  "description": "",
+  "family": "line",
+  "engine": "echarts",
+  "file": "examples/echarts/ex-dot-ping-echarts-line-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/ex-dot-ping-echarts-line-chart"
+ },
+ {
+  "name": "ex-dots-composed-chart",
+  "title": "Dots composed chart",
+  "description": "",
+  "family": "composed",
+  "engine": "echarts",
+  "file": "examples/recharts/ex-dots-composed-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/ex-dots-composed-chart"
+ },
+ {
+  "name": "ex-dots-echarts-composed-chart",
+  "title": "Dots composed chart",
+  "description": "",
+  "family": "composed",
+  "engine": "echarts",
+  "file": "examples/echarts/ex-dots-echarts-composed-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/ex-dots-echarts-composed-chart"
+ },
+ {
+  "name": "ex-dotted-area-variant-area-chart",
+  "title": "Dotted area variant area chart",
+  "description": "",
+  "family": "area",
+  "engine": "echarts",
+  "file": "examples/recharts/ex-dotted-area-variant-area-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/ex-dotted-area-variant-area-chart"
+ },
+ {
+  "name": "ex-dotted-area-variant-echarts-area-chart",
+  "title": "Dotted area variant area chart",
+  "description": "",
+  "family": "area",
+  "engine": "echarts",
+  "file": "examples/echarts/ex-dotted-area-variant-echarts-area-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/ex-dotted-area-variant-echarts-area-chart"
+ },
+ {
+  "name": "ex-duotone-reverse-variant-bar-chart",
+  "title": "Duotone reverse variant bar chart",
+  "description": "",
+  "family": "bar",
+  "engine": "echarts",
+  "file": "examples/recharts/ex-duotone-reverse-variant-bar-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/ex-duotone-reverse-variant-bar-chart"
+ },
+ {
+  "name": "ex-duotone-reverse-variant-echarts-bar-chart",
+  "title": "Duotone reverse variant bar chart",
+  "description": "",
+  "family": "bar",
+  "engine": "echarts",
+  "file": "examples/echarts/ex-duotone-reverse-variant-echarts-bar-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/ex-duotone-reverse-variant-echarts-bar-chart"
+ },
+ {
+  "name": "ex-duotone-variant-bar-chart",
+  "title": "Duotone variant bar chart",
+  "description": "",
+  "family": "bar",
+  "engine": "echarts",
+  "file": "examples/recharts/ex-duotone-variant-bar-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/ex-duotone-variant-bar-chart"
+ },
+ {
+  "name": "ex-duotone-variant-composed-chart",
+  "title": "Duotone variant composed chart",
+  "description": "",
+  "family": "composed",
+  "engine": "echarts",
+  "file": "examples/recharts/ex-duotone-variant-composed-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/ex-duotone-variant-composed-chart"
+ },
+ {
+  "name": "ex-duotone-variant-echarts-bar-chart",
+  "title": "Duotone variant bar chart",
+  "description": "",
+  "family": "bar",
+  "engine": "echarts",
+  "file": "examples/echarts/ex-duotone-variant-echarts-bar-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/ex-duotone-variant-echarts-bar-chart"
+ },
+ {
+  "name": "ex-duotone-variant-echarts-composed-chart",
+  "title": "Duotone variant composed chart",
+  "description": "",
+  "family": "composed",
+  "engine": "echarts",
+  "file": "examples/echarts/ex-duotone-variant-echarts-composed-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/ex-duotone-variant-echarts-composed-chart"
+ },
+ {
+  "name": "ex-echarts-area-chart",
+  "title": "Area chart",
+  "description": "",
+  "family": "area",
+  "engine": "echarts",
+  "file": "examples/echarts/ex-echarts-area-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/ex-echarts-area-chart"
+ },
+ {
+  "name": "ex-echarts-bar-chart",
+  "title": "Bar chart",
+  "description": "",
+  "family": "bar",
+  "engine": "echarts",
+  "file": "examples/echarts/ex-echarts-bar-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/ex-echarts-bar-chart"
+ },
+ {
+  "name": "ex-echarts-composed-chart",
+  "title": "Composed chart",
+  "description": "",
+  "family": "composed",
+  "engine": "echarts",
+  "file": "examples/echarts/ex-echarts-composed-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/ex-echarts-composed-chart"
+ },
+ {
+  "name": "ex-echarts-line-chart",
+  "title": "Line chart",
+  "description": "",
+  "family": "line",
+  "engine": "echarts",
+  "file": "examples/echarts/ex-echarts-line-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/ex-echarts-line-chart"
+ },
+ {
+  "name": "ex-echarts-pie-chart",
+  "title": "Pie chart",
+  "description": "",
+  "family": "pie",
+  "engine": "echarts",
+  "file": "examples/echarts/ex-echarts-pie-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/ex-echarts-pie-chart"
+ },
+ {
+  "name": "ex-echarts-radar-chart",
+  "title": "Radar chart",
+  "description": "",
+  "family": "radar",
+  "engine": "echarts",
+  "file": "examples/echarts/ex-echarts-radar-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/ex-echarts-radar-chart"
+ },
+ {
+  "name": "ex-echarts-radial-chart",
+  "title": "Radial chart",
+  "description": "",
+  "family": "radial",
+  "engine": "echarts",
+  "file": "examples/echarts/ex-echarts-radial-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/ex-echarts-radial-chart"
+ },
+ {
+  "name": "ex-echarts-sankey-chart",
+  "title": "Sankey chart",
+  "description": "",
+  "family": "sankey",
+  "engine": "echarts",
+  "file": "examples/echarts/ex-echarts-sankey-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/ex-echarts-sankey-chart"
+ },
+ {
+  "name": "ex-expandable-variant-echarts-bar-chart",
+  "title": "Expandable variant bar chart",
+  "description": "",
+  "family": "bar",
+  "engine": "echarts",
+  "file": "examples/echarts/ex-expandable-variant-echarts-bar-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/ex-expandable-variant-echarts-bar-chart"
+ },
+ {
+  "name": "ex-expanded-type-area-chart",
+  "title": "Expanded type area chart",
+  "description": "",
+  "family": "area",
+  "engine": "echarts",
+  "file": "examples/recharts/ex-expanded-type-area-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/ex-expanded-type-area-chart"
+ },
+ {
+  "name": "ex-expanded-type-echarts-area-chart",
+  "title": "Expanded type area chart",
+  "description": "",
+  "family": "area",
+  "engine": "echarts",
+  "file": "examples/echarts/ex-expanded-type-echarts-area-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/ex-expanded-type-echarts-area-chart"
+ },
+ {
+  "name": "ex-glowing-composed-chart",
+  "title": "Glowing composed chart",
+  "description": "",
+  "family": "composed",
+  "engine": "echarts",
+  "file": "examples/recharts/ex-glowing-composed-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/ex-glowing-composed-chart"
+ },
+ {
+  "name": "ex-glowing-desktop-bar-chart",
+  "title": "Glowing desktop bar chart",
+  "description": "",
+  "family": "bar",
+  "engine": "echarts",
+  "file": "examples/recharts/ex-glowing-desktop-bar-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/ex-glowing-desktop-bar-chart"
+ },
+ {
+  "name": "ex-glowing-desktop-echarts-bar-chart",
+  "title": "Glowing desktop bar chart",
+  "description": "",
+  "family": "bar",
+  "engine": "echarts",
+  "file": "examples/echarts/ex-glowing-desktop-echarts-bar-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/ex-glowing-desktop-echarts-bar-chart"
+ },
+ {
+  "name": "ex-glowing-desktop-echarts-line-chart",
+  "title": "Glowing desktop line chart",
+  "description": "",
+  "family": "line",
+  "engine": "echarts",
+  "file": "examples/echarts/ex-glowing-desktop-echarts-line-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/ex-glowing-desktop-echarts-line-chart"
+ },
+ {
+  "name": "ex-glowing-desktop-line-chart",
+  "title": "Glowing desktop line chart",
+  "description": "",
+  "family": "line",
+  "engine": "echarts",
+  "file": "examples/recharts/ex-glowing-desktop-line-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/ex-glowing-desktop-line-chart"
+ },
+ {
+  "name": "ex-glowing-echarts-composed-chart",
+  "title": "Glowing composed chart",
+  "description": "",
+  "family": "composed",
+  "engine": "echarts",
+  "file": "examples/echarts/ex-glowing-echarts-composed-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/ex-glowing-echarts-composed-chart"
+ },
+ {
+  "name": "ex-glowing-mobile-bar-chart",
+  "title": "Glowing mobile bar chart",
+  "description": "",
+  "family": "bar",
+  "engine": "echarts",
+  "file": "examples/recharts/ex-glowing-mobile-bar-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/ex-glowing-mobile-bar-chart"
+ },
+ {
+  "name": "ex-glowing-mobile-echarts-bar-chart",
+  "title": "Glowing mobile bar chart",
+  "description": "",
+  "family": "bar",
+  "engine": "echarts",
+  "file": "examples/echarts/ex-glowing-mobile-echarts-bar-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/ex-glowing-mobile-echarts-bar-chart"
+ },
+ {
+  "name": "ex-glowing-mobile-echarts-line-chart",
+  "title": "Glowing mobile line chart",
+  "description": "",
+  "family": "line",
+  "engine": "echarts",
+  "file": "examples/echarts/ex-glowing-mobile-echarts-line-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/ex-glowing-mobile-echarts-line-chart"
+ },
+ {
+  "name": "ex-glowing-mobile-line-chart",
+  "title": "Glowing mobile line chart",
+  "description": "",
+  "family": "line",
+  "engine": "echarts",
+  "file": "examples/recharts/ex-glowing-mobile-line-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/ex-glowing-mobile-line-chart"
+ },
+ {
+  "name": "ex-glowing-pie-chart",
+  "title": "Glowing pie chart",
+  "description": "",
+  "family": "pie",
+  "engine": "echarts",
+  "file": "examples/recharts/ex-glowing-pie-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/ex-glowing-pie-chart"
+ },
+ {
+  "name": "ex-glowing-radar-chart",
+  "title": "Glowing radar chart",
+  "description": "",
+  "family": "radar",
+  "engine": "echarts",
+  "file": "examples/recharts/ex-glowing-radar-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/ex-glowing-radar-chart"
+ },
+ {
+  "name": "ex-gradient-area-variant-area-chart",
+  "title": "Gradient area variant area chart",
+  "description": "",
+  "family": "area",
+  "engine": "echarts",
+  "file": "examples/recharts/ex-gradient-area-variant-area-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/ex-gradient-area-variant-area-chart"
+ },
+ {
+  "name": "ex-gradient-area-variant-echarts-area-chart",
+  "title": "Gradient area variant area chart",
+  "description": "",
+  "family": "area",
+  "engine": "echarts",
+  "file": "examples/echarts/ex-gradient-area-variant-echarts-area-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/ex-gradient-area-variant-echarts-area-chart"
+ },
+ {
+  "name": "ex-gradient-colors-area-chart",
+  "title": "Gradient colors area chart",
+  "description": "",
+  "family": "area",
+  "engine": "echarts",
+  "file": "examples/recharts/ex-gradient-colors-area-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/ex-gradient-colors-area-chart"
+ },
+ {
+  "name": "ex-gradient-colors-bar-chart",
+  "title": "Gradient colors bar chart",
+  "description": "",
+  "family": "bar",
+  "engine": "echarts",
+  "file": "examples/recharts/ex-gradient-colors-bar-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/ex-gradient-colors-bar-chart"
+ },
+ {
+  "name": "ex-gradient-colors-bump-area-chart",
+  "title": "Gradient colors bump area chart",
+  "description": "",
+  "family": "area",
+  "engine": "echarts",
+  "file": "examples/recharts/ex-gradient-colors-bump-area-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/ex-gradient-colors-bump-area-chart"
+ },
+ {
+  "name": "ex-gradient-colors-bump-echarts-area-chart",
+  "title": "Gradient colors bump area chart",
+  "description": "",
+  "family": "area",
+  "engine": "echarts",
+  "file": "examples/echarts/ex-gradient-colors-bump-echarts-area-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/ex-gradient-colors-bump-echarts-area-chart"
+ },
+ {
+  "name": "ex-gradient-colors-bump-echarts-line-chart",
+  "title": "Gradient colors bump line chart",
+  "description": "",
+  "family": "line",
+  "engine": "echarts",
+  "file": "examples/echarts/ex-gradient-colors-bump-echarts-line-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/ex-gradient-colors-bump-echarts-line-chart"
+ },
+ {
+  "name": "ex-gradient-colors-bump-line-chart",
+  "title": "Gradient colors bump line chart",
+  "description": "",
+  "family": "line",
+  "engine": "echarts",
+  "file": "examples/recharts/ex-gradient-colors-bump-line-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/ex-gradient-colors-bump-line-chart"
+ },
+ {
+  "name": "ex-gradient-colors-composed-chart",
+  "title": "Gradient colors composed chart",
+  "description": "",
+  "family": "composed",
+  "engine": "echarts",
+  "file": "examples/recharts/ex-gradient-colors-composed-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/ex-gradient-colors-composed-chart"
+ },
+ {
+  "name": "ex-gradient-colors-echarts-area-chart",
+  "title": "Gradient colors area chart",
+  "description": "",
+  "family": "area",
+  "engine": "echarts",
+  "file": "examples/echarts/ex-gradient-colors-echarts-area-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/ex-gradient-colors-echarts-area-chart"
+ },
+ {
+  "name": "ex-gradient-colors-echarts-bar-chart",
+  "title": "Gradient colors bar chart",
+  "description": "",
+  "family": "bar",
+  "engine": "echarts",
+  "file": "examples/echarts/ex-gradient-colors-echarts-bar-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/ex-gradient-colors-echarts-bar-chart"
+ },
+ {
+  "name": "ex-gradient-colors-echarts-composed-chart",
+  "title": "Gradient colors composed chart",
+  "description": "",
+  "family": "composed",
+  "engine": "echarts",
+  "file": "examples/echarts/ex-gradient-colors-echarts-composed-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/ex-gradient-colors-echarts-composed-chart"
+ },
+ {
+  "name": "ex-gradient-colors-echarts-line-chart",
+  "title": "Gradient colors line chart",
+  "description": "",
+  "family": "line",
+  "engine": "echarts",
+  "file": "examples/echarts/ex-gradient-colors-echarts-line-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/ex-gradient-colors-echarts-line-chart"
+ },
+ {
+  "name": "ex-gradient-colors-echarts-pie-chart",
+  "title": "Gradient colors pie chart",
+  "description": "",
+  "family": "pie",
+  "engine": "echarts",
+  "file": "examples/echarts/ex-gradient-colors-echarts-pie-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/ex-gradient-colors-echarts-pie-chart"
+ },
+ {
+  "name": "ex-gradient-colors-echarts-radar-chart",
+  "title": "Gradient colors radar chart",
+  "description": "",
+  "family": "radar",
+  "engine": "echarts",
+  "file": "examples/echarts/ex-gradient-colors-echarts-radar-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/ex-gradient-colors-echarts-radar-chart"
+ },
+ {
+  "name": "ex-gradient-colors-echarts-radial-chart",
+  "title": "Gradient colors radial chart",
+  "description": "",
+  "family": "radial",
+  "engine": "echarts",
+  "file": "examples/echarts/ex-gradient-colors-echarts-radial-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/ex-gradient-colors-echarts-radial-chart"
+ },
+ {
+  "name": "ex-gradient-colors-echarts-sankey-chart",
+  "title": "Gradient colors sankey chart",
+  "description": "",
+  "family": "sankey",
+  "engine": "echarts",
+  "file": "examples/echarts/ex-gradient-colors-echarts-sankey-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/ex-gradient-colors-echarts-sankey-chart"
+ },
+ {
+  "name": "ex-gradient-colors-line-chart",
+  "title": "Gradient colors line chart",
+  "description": "",
+  "family": "line",
+  "engine": "echarts",
+  "file": "examples/recharts/ex-gradient-colors-line-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/ex-gradient-colors-line-chart"
+ },
+ {
+  "name": "ex-gradient-colors-pie-chart",
+  "title": "Gradient colors pie chart",
+  "description": "",
+  "family": "pie",
+  "engine": "echarts",
+  "file": "examples/recharts/ex-gradient-colors-pie-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/ex-gradient-colors-pie-chart"
+ },
+ {
+  "name": "ex-gradient-colors-radar-chart",
+  "title": "Gradient colors radar chart",
+  "description": "",
+  "family": "radar",
+  "engine": "echarts",
+  "file": "examples/recharts/ex-gradient-colors-radar-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/ex-gradient-colors-radar-chart"
+ },
+ {
+  "name": "ex-gradient-colors-radial-chart",
+  "title": "Gradient colors radial chart",
+  "description": "",
+  "family": "radial",
+  "engine": "echarts",
+  "file": "examples/recharts/ex-gradient-colors-radial-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/ex-gradient-colors-radial-chart"
+ },
+ {
+  "name": "ex-gradient-colors-sankey-chart",
+  "title": "Gradient colors sankey chart",
+  "description": "",
+  "family": "sankey",
+  "engine": "echarts",
+  "file": "examples/recharts/ex-gradient-colors-sankey-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/ex-gradient-colors-sankey-chart"
+ },
+ {
+  "name": "ex-gradient-reverse-area-variant-area-chart",
+  "title": "Gradient reverse area variant area chart",
+  "description": "",
+  "family": "area",
+  "engine": "echarts",
+  "file": "examples/recharts/ex-gradient-reverse-area-variant-area-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/ex-gradient-reverse-area-variant-area-chart"
+ },
+ {
+  "name": "ex-gradient-reverse-area-variant-echarts-area-chart",
+  "title": "Gradient reverse area variant area chart",
+  "description": "",
+  "family": "area",
+  "engine": "echarts",
+  "file": "examples/echarts/ex-gradient-reverse-area-variant-echarts-area-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/ex-gradient-reverse-area-variant-echarts-area-chart"
+ },
+ {
+  "name": "ex-gradient-variant-bar-chart",
+  "title": "Gradient variant bar chart",
+  "description": "",
+  "family": "bar",
+  "engine": "echarts",
+  "file": "examples/recharts/ex-gradient-variant-bar-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/ex-gradient-variant-bar-chart"
+ },
+ {
+  "name": "ex-gradient-variant-composed-chart",
+  "title": "Gradient variant composed chart",
+  "description": "",
+  "family": "composed",
+  "engine": "echarts",
+  "file": "examples/recharts/ex-gradient-variant-composed-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/ex-gradient-variant-composed-chart"
+ },
+ {
+  "name": "ex-gradient-variant-echarts-bar-chart",
+  "title": "Gradient variant bar chart",
+  "description": "",
+  "family": "bar",
+  "engine": "echarts",
+  "file": "examples/echarts/ex-gradient-variant-echarts-bar-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/ex-gradient-variant-echarts-bar-chart"
+ },
+ {
+  "name": "ex-gradient-variant-echarts-composed-chart",
+  "title": "Gradient variant composed chart",
+  "description": "",
+  "family": "composed",
+  "engine": "echarts",
+  "file": "examples/echarts/ex-gradient-variant-echarts-composed-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/ex-gradient-variant-echarts-composed-chart"
+ },
+ {
+  "name": "ex-hatched-area-variant-area-chart",
+  "title": "Hatched area variant area chart",
+  "description": "",
+  "family": "area",
+  "engine": "echarts",
+  "file": "examples/recharts/ex-hatched-area-variant-area-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/ex-hatched-area-variant-area-chart"
+ },
+ {
+  "name": "ex-hatched-area-variant-echarts-area-chart",
+  "title": "Hatched area variant area chart",
+  "description": "",
+  "family": "area",
+  "engine": "echarts",
+  "file": "examples/echarts/ex-hatched-area-variant-echarts-area-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/ex-hatched-area-variant-echarts-area-chart"
+ },
+ {
+  "name": "ex-hatched-variant-bar-chart",
+  "title": "Hatched variant bar chart",
+  "description": "",
+  "family": "bar",
+  "engine": "echarts",
+  "file": "examples/recharts/ex-hatched-variant-bar-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/ex-hatched-variant-bar-chart"
+ },
+ {
+  "name": "ex-hatched-variant-composed-chart",
+  "title": "Hatched variant composed chart",
+  "description": "",
+  "family": "composed",
+  "engine": "echarts",
+  "file": "examples/recharts/ex-hatched-variant-composed-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/ex-hatched-variant-composed-chart"
+ },
+ {
+  "name": "ex-hatched-variant-echarts-bar-chart",
+  "title": "Hatched variant bar chart",
+  "description": "",
+  "family": "bar",
+  "engine": "echarts",
+  "file": "examples/echarts/ex-hatched-variant-echarts-bar-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/ex-hatched-variant-echarts-bar-chart"
+ },
+ {
+  "name": "ex-hatched-variant-echarts-composed-chart",
+  "title": "Hatched variant composed chart",
+  "description": "",
+  "family": "composed",
+  "engine": "echarts",
+  "file": "examples/echarts/ex-hatched-variant-echarts-composed-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/ex-hatched-variant-echarts-composed-chart"
+ },
+ {
+  "name": "ex-horizontal-layout-bar-chart",
+  "title": "Horizontal layout bar chart",
+  "description": "",
+  "family": "bar",
+  "engine": "echarts",
+  "file": "examples/recharts/ex-horizontal-layout-bar-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/ex-horizontal-layout-bar-chart"
+ },
+ {
+  "name": "ex-horizontal-layout-echarts-bar-chart",
+  "title": "Horizontal layout bar chart",
+  "description": "",
+  "family": "bar",
+  "engine": "echarts",
+  "file": "examples/echarts/ex-horizontal-layout-echarts-bar-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/ex-horizontal-layout-echarts-bar-chart"
+ },
+ {
+  "name": "ex-hover-highlight-bar-chart",
+  "title": "Hover highlight bar chart",
+  "description": "",
+  "family": "bar",
+  "engine": "echarts",
+  "file": "examples/recharts/ex-hover-highlight-bar-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/ex-hover-highlight-bar-chart"
+ },
+ {
+  "name": "ex-hover-highlight-composed-chart",
+  "title": "Hover highlight composed chart",
+  "description": "",
+  "family": "composed",
+  "engine": "echarts",
+  "file": "examples/recharts/ex-hover-highlight-composed-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/ex-hover-highlight-composed-chart"
+ },
+ {
+  "name": "ex-hover-highlight-echarts-area-chart",
+  "title": "Hover highlight area chart",
+  "description": "",
+  "family": "area",
+  "engine": "echarts",
+  "file": "examples/echarts/ex-hover-highlight-echarts-area-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/ex-hover-highlight-echarts-area-chart"
+ },
+ {
+  "name": "ex-hover-highlight-echarts-bar-chart",
+  "title": "Hover highlight bar chart",
+  "description": "",
+  "family": "bar",
+  "engine": "echarts",
+  "file": "examples/echarts/ex-hover-highlight-echarts-bar-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/ex-hover-highlight-echarts-bar-chart"
+ },
+ {
+  "name": "ex-hover-highlight-echarts-composed-chart",
+  "title": "Hover highlight composed chart",
+  "description": "",
+  "family": "composed",
+  "engine": "echarts",
+  "file": "examples/echarts/ex-hover-highlight-echarts-composed-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/ex-hover-highlight-echarts-composed-chart"
+ },
+ {
+  "name": "ex-hover-reveal-echarts-area-chart",
+  "title": "Hover reveal area chart",
+  "description": "",
+  "family": "area",
+  "engine": "echarts",
+  "file": "examples/echarts/ex-hover-reveal-echarts-area-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/ex-hover-reveal-echarts-area-chart"
+ },
+ {
+  "name": "ex-hover-reveal-echarts-line-chart",
+  "title": "Hover reveal line chart",
+  "description": "",
+  "family": "line",
+  "engine": "echarts",
+  "file": "examples/echarts/ex-hover-reveal-echarts-line-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/ex-hover-reveal-echarts-line-chart"
+ },
+ {
+  "name": "ex-labeled-nodes-echarts-sankey-chart",
+  "title": "Labeled nodes sankey chart",
+  "description": "",
+  "family": "sankey",
+  "engine": "echarts",
+  "file": "examples/echarts/ex-labeled-nodes-echarts-sankey-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/ex-labeled-nodes-echarts-sankey-chart"
+ },
+ {
+  "name": "ex-labeled-nodes-sankey-chart",
+  "title": "Labeled nodes sankey chart",
+  "description": "",
+  "family": "sankey",
+  "engine": "echarts",
+  "file": "examples/recharts/ex-labeled-nodes-sankey-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/ex-labeled-nodes-sankey-chart"
+ },
+ {
+  "name": "ex-labels-echarts-pie-chart",
+  "title": "Labels pie chart",
+  "description": "",
+  "family": "pie",
+  "engine": "echarts",
+  "file": "examples/echarts/ex-labels-echarts-pie-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/ex-labels-echarts-pie-chart"
+ },
+ {
+  "name": "ex-labels-pie-chart",
+  "title": "Labels pie chart",
+  "description": "",
+  "family": "pie",
+  "engine": "echarts",
+  "file": "examples/recharts/ex-labels-pie-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/ex-labels-pie-chart"
+ },
+ {
+  "name": "ex-legend-circle-echarts-line-chart",
+  "title": "Legend circle line chart",
+  "description": "",
+  "family": "line",
+  "engine": "echarts",
+  "file": "examples/echarts/ex-legend-circle-echarts-line-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/ex-legend-circle-echarts-line-chart"
+ },
+ {
+  "name": "ex-legend-circle-line-chart",
+  "title": "Legend circle line chart",
+  "description": "",
+  "family": "line",
+  "engine": "echarts",
+  "file": "examples/recharts/ex-legend-circle-line-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/ex-legend-circle-line-chart"
+ },
+ {
+  "name": "ex-legend-circle-outline-echarts-line-chart",
+  "title": "Legend circle outline line chart",
+  "description": "",
+  "family": "line",
+  "engine": "echarts",
+  "file": "examples/echarts/ex-legend-circle-outline-echarts-line-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/ex-legend-circle-outline-echarts-line-chart"
+ },
+ {
+  "name": "ex-legend-circle-outline-line-chart",
+  "title": "Legend circle outline line chart",
+  "description": "",
+  "family": "line",
+  "engine": "echarts",
+  "file": "examples/recharts/ex-legend-circle-outline-line-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/ex-legend-circle-outline-line-chart"
+ },
+ {
+  "name": "ex-legend-horizontal-bar-echarts-line-chart",
+  "title": "Legend horizontal bar line chart",
+  "description": "",
+  "family": "line",
+  "engine": "echarts",
+  "file": "examples/echarts/ex-legend-horizontal-bar-echarts-line-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/ex-legend-horizontal-bar-echarts-line-chart"
+ },
+ {
+  "name": "ex-legend-horizontal-bar-line-chart",
+  "title": "Legend horizontal bar line chart",
+  "description": "",
+  "family": "line",
+  "engine": "echarts",
+  "file": "examples/recharts/ex-legend-horizontal-bar-line-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/ex-legend-horizontal-bar-line-chart"
+ },
+ {
+  "name": "ex-legend-rounded-square-echarts-line-chart",
+  "title": "Legend rounded square line chart",
+  "description": "",
+  "family": "line",
+  "engine": "echarts",
+  "file": "examples/echarts/ex-legend-rounded-square-echarts-line-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/ex-legend-rounded-square-echarts-line-chart"
+ },
+ {
+  "name": "ex-legend-rounded-square-line-chart",
+  "title": "Legend rounded square line chart",
+  "description": "",
+  "family": "line",
+  "engine": "echarts",
+  "file": "examples/recharts/ex-legend-rounded-square-line-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/ex-legend-rounded-square-line-chart"
+ },
+ {
+  "name": "ex-legend-rounded-square-outline-echarts-line-chart",
+  "title": "Legend rounded square outline line chart",
+  "description": "",
+  "family": "line",
+  "engine": "echarts",
+  "file": "examples/echarts/ex-legend-rounded-square-outline-echarts-line-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/ex-legend-rounded-square-outline-echarts-line-chart"
+ },
+ {
+  "name": "ex-legend-rounded-square-outline-line-chart",
+  "title": "Legend rounded square outline line chart",
+  "description": "",
+  "family": "line",
+  "engine": "echarts",
+  "file": "examples/recharts/ex-legend-rounded-square-outline-line-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/ex-legend-rounded-square-outline-line-chart"
+ },
+ {
+  "name": "ex-legend-square-echarts-line-chart",
+  "title": "Legend square line chart",
+  "description": "",
+  "family": "line",
+  "engine": "echarts",
+  "file": "examples/echarts/ex-legend-square-echarts-line-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/ex-legend-square-echarts-line-chart"
+ },
+ {
+  "name": "ex-legend-square-line-chart",
+  "title": "Legend square line chart",
+  "description": "",
+  "family": "line",
+  "engine": "echarts",
+  "file": "examples/recharts/ex-legend-square-line-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/ex-legend-square-line-chart"
+ },
+ {
+  "name": "ex-legend-vertical-bar-echarts-line-chart",
+  "title": "Legend vertical bar line chart",
+  "description": "",
+  "family": "line",
+  "engine": "echarts",
+  "file": "examples/echarts/ex-legend-vertical-bar-echarts-line-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/ex-legend-vertical-bar-echarts-line-chart"
+ },
+ {
+  "name": "ex-legend-vertical-bar-line-chart",
+  "title": "Legend vertical bar line chart",
+  "description": "",
+  "family": "line",
+  "engine": "echarts",
+  "file": "examples/recharts/ex-legend-vertical-bar-line-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/ex-legend-vertical-bar-line-chart"
+ },
+ {
+  "name": "ex-line-chart",
+  "title": "Line chart",
+  "description": "",
+  "family": "line",
+  "engine": "echarts",
+  "file": "examples/recharts/ex-line-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/ex-line-chart"
+ },
+ {
+  "name": "ex-lines-area-variant-area-chart",
+  "title": "Lines area variant area chart",
+  "description": "",
+  "family": "area",
+  "engine": "echarts",
+  "file": "examples/recharts/ex-lines-area-variant-area-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/ex-lines-area-variant-area-chart"
+ },
+ {
+  "name": "ex-lines-area-variant-echarts-area-chart",
+  "title": "Lines area variant area chart",
+  "description": "",
+  "family": "area",
+  "engine": "echarts",
+  "file": "examples/echarts/ex-lines-area-variant-echarts-area-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/ex-lines-area-variant-echarts-area-chart"
+ },
+ {
+  "name": "ex-lines-variant-echarts-radar-chart",
+  "title": "Lines variant radar chart",
+  "description": "",
+  "family": "radar",
+  "engine": "echarts",
+  "file": "examples/echarts/ex-lines-variant-echarts-radar-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/ex-lines-variant-echarts-radar-chart"
+ },
+ {
+  "name": "ex-lines-variant-radar-chart",
+  "title": "Lines variant radar chart",
+  "description": "",
+  "family": "radar",
+  "engine": "echarts",
+  "file": "examples/recharts/ex-lines-variant-radar-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/ex-lines-variant-radar-chart"
+ },
+ {
+  "name": "ex-loading-state-area-chart",
+  "title": "Loading state area chart",
+  "description": "",
+  "family": "area",
+  "engine": "echarts",
+  "file": "examples/recharts/ex-loading-state-area-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/ex-loading-state-area-chart"
+ },
+ {
+  "name": "ex-loading-state-bar-chart",
+  "title": "Loading state bar chart",
+  "description": "",
+  "family": "bar",
+  "engine": "echarts",
+  "file": "examples/recharts/ex-loading-state-bar-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/ex-loading-state-bar-chart"
+ },
+ {
+  "name": "ex-loading-state-composed-chart",
+  "title": "Loading state composed chart",
+  "description": "",
+  "family": "composed",
+  "engine": "echarts",
+  "file": "examples/recharts/ex-loading-state-composed-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/ex-loading-state-composed-chart"
+ },
+ {
+  "name": "ex-loading-state-echarts-area-chart",
+  "title": "Loading state area chart",
+  "description": "",
+  "family": "area",
+  "engine": "echarts",
+  "file": "examples/echarts/ex-loading-state-echarts-area-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/ex-loading-state-echarts-area-chart"
+ },
+ {
+  "name": "ex-loading-state-echarts-bar-chart",
+  "title": "Loading state bar chart",
+  "description": "",
+  "family": "bar",
+  "engine": "echarts",
+  "file": "examples/echarts/ex-loading-state-echarts-bar-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/ex-loading-state-echarts-bar-chart"
+ },
+ {
+  "name": "ex-loading-state-echarts-composed-chart",
+  "title": "Loading state composed chart",
+  "description": "",
+  "family": "composed",
+  "engine": "echarts",
+  "file": "examples/echarts/ex-loading-state-echarts-composed-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/ex-loading-state-echarts-composed-chart"
+ },
+ {
+  "name": "ex-loading-state-echarts-line-chart",
+  "title": "Loading state line chart",
+  "description": "",
+  "family": "line",
+  "engine": "echarts",
+  "file": "examples/echarts/ex-loading-state-echarts-line-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/ex-loading-state-echarts-line-chart"
+ },
+ {
+  "name": "ex-loading-state-echarts-pie-chart",
+  "title": "Loading state pie chart",
+  "description": "",
+  "family": "pie",
+  "engine": "echarts",
+  "file": "examples/echarts/ex-loading-state-echarts-pie-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/ex-loading-state-echarts-pie-chart"
+ },
+ {
+  "name": "ex-loading-state-echarts-radar-chart",
+  "title": "Loading state radar chart",
+  "description": "",
+  "family": "radar",
+  "engine": "echarts",
+  "file": "examples/echarts/ex-loading-state-echarts-radar-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/ex-loading-state-echarts-radar-chart"
+ },
+ {
+  "name": "ex-loading-state-echarts-radial-chart",
+  "title": "Loading state radial chart",
+  "description": "",
+  "family": "radial",
+  "engine": "echarts",
+  "file": "examples/echarts/ex-loading-state-echarts-radial-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/ex-loading-state-echarts-radial-chart"
+ },
+ {
+  "name": "ex-loading-state-echarts-sankey-chart",
+  "title": "Loading state sankey chart",
+  "description": "",
+  "family": "sankey",
+  "engine": "echarts",
+  "file": "examples/echarts/ex-loading-state-echarts-sankey-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/ex-loading-state-echarts-sankey-chart"
+ },
+ {
+  "name": "ex-loading-state-line-chart",
+  "title": "Loading state line chart",
+  "description": "",
+  "family": "line",
+  "engine": "echarts",
+  "file": "examples/recharts/ex-loading-state-line-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/ex-loading-state-line-chart"
+ },
+ {
+  "name": "ex-loading-state-pie-chart",
+  "title": "Loading state pie chart",
+  "description": "",
+  "family": "pie",
+  "engine": "echarts",
+  "file": "examples/recharts/ex-loading-state-pie-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/ex-loading-state-pie-chart"
+ },
+ {
+  "name": "ex-loading-state-radar-chart",
+  "title": "Loading state radar chart",
+  "description": "",
+  "family": "radar",
+  "engine": "echarts",
+  "file": "examples/recharts/ex-loading-state-radar-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/ex-loading-state-radar-chart"
+ },
+ {
+  "name": "ex-loading-state-radial-chart",
+  "title": "Loading state radial chart",
+  "description": "",
+  "family": "radial",
+  "engine": "echarts",
+  "file": "examples/recharts/ex-loading-state-radial-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/ex-loading-state-radial-chart"
+ },
+ {
+  "name": "ex-loading-state-sankey-chart",
+  "title": "Loading state sankey chart",
+  "description": "",
+  "family": "sankey",
+  "engine": "echarts",
+  "file": "examples/recharts/ex-loading-state-sankey-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/ex-loading-state-sankey-chart"
+ },
+ {
+  "name": "ex-max-highlight-echarts-bar-chart",
+  "title": "Max highlight bar chart",
+  "description": "",
+  "family": "bar",
+  "engine": "echarts",
+  "file": "examples/echarts/ex-max-highlight-echarts-bar-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/ex-max-highlight-echarts-bar-chart"
+ },
+ {
+  "name": "ex-monotoney-curve-type-area-chart",
+  "title": "Monotoney curve type area chart",
+  "description": "",
+  "family": "area",
+  "engine": "echarts",
+  "file": "examples/recharts/ex-monotoney-curve-type-area-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/ex-monotoney-curve-type-area-chart"
+ },
+ {
+  "name": "ex-monotoney-curve-type-echarts-area-chart",
+  "title": "Monotoney curve type area chart",
+  "description": "",
+  "family": "area",
+  "engine": "echarts",
+  "file": "examples/echarts/ex-monotoney-curve-type-echarts-area-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/ex-monotoney-curve-type-echarts-area-chart"
+ },
+ {
+  "name": "ex-monotoney-curve-type-echarts-line-chart",
+  "title": "Monotoney curve type line chart",
+  "description": "",
+  "family": "line",
+  "engine": "echarts",
+  "file": "examples/echarts/ex-monotoney-curve-type-echarts-line-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/ex-monotoney-curve-type-echarts-line-chart"
+ },
+ {
+  "name": "ex-monotoney-curve-type-line-chart",
+  "title": "Monotoney curve type line chart",
+  "description": "",
+  "family": "line",
+  "engine": "echarts",
+  "file": "examples/recharts/ex-monotoney-curve-type-line-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/ex-monotoney-curve-type-line-chart"
+ },
+ {
+  "name": "ex-outside-labels-echarts-pie-chart",
+  "title": "Outside labels pie chart",
+  "description": "",
+  "family": "pie",
+  "engine": "echarts",
+  "file": "examples/echarts/ex-outside-labels-echarts-pie-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/ex-outside-labels-echarts-pie-chart"
+ },
+ {
+  "name": "ex-outside-labels-echarts-sankey-chart",
+  "title": "Outside labels sankey chart",
+  "description": "",
+  "family": "sankey",
+  "engine": "echarts",
+  "file": "examples/echarts/ex-outside-labels-echarts-sankey-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/ex-outside-labels-echarts-sankey-chart"
+ },
+ {
+  "name": "ex-outside-labels-sankey-chart",
+  "title": "Outside labels sankey chart",
+  "description": "",
+  "family": "sankey",
+  "engine": "echarts",
+  "file": "examples/recharts/ex-outside-labels-sankey-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/ex-outside-labels-sankey-chart"
+ },
+ {
+  "name": "ex-overlapping-padded-echarts-pie-chart",
+  "title": "Overlapping padded pie chart",
+  "description": "",
+  "family": "pie",
+  "engine": "echarts",
+  "file": "examples/echarts/ex-overlapping-padded-echarts-pie-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/ex-overlapping-padded-echarts-pie-chart"
+ },
+ {
+  "name": "ex-overlapping-padded-pie-chart",
+  "title": "Overlapping padded pie chart",
+  "description": "",
+  "family": "pie",
+  "engine": "echarts",
+  "file": "examples/recharts/ex-overlapping-padded-pie-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/ex-overlapping-padded-pie-chart"
+ },
+ {
+  "name": "ex-padded-echarts-pie-chart",
+  "title": "Padded pie chart",
+  "description": "",
+  "family": "pie",
+  "engine": "echarts",
+  "file": "examples/echarts/ex-padded-echarts-pie-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/ex-padded-echarts-pie-chart"
+ },
+ {
+  "name": "ex-padded-pie-chart",
+  "title": "Padded pie chart",
+  "description": "",
+  "family": "pie",
+  "engine": "echarts",
+  "file": "examples/recharts/ex-padded-pie-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/ex-padded-pie-chart"
+ },
+ {
+  "name": "ex-percent-type-bar-chart",
+  "title": "Percent type bar chart",
+  "description": "",
+  "family": "bar",
+  "engine": "echarts",
+  "file": "examples/recharts/ex-percent-type-bar-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/ex-percent-type-bar-chart"
+ },
+ {
+  "name": "ex-percent-type-echarts-bar-chart",
+  "title": "Percent type bar chart",
+  "description": "",
+  "family": "bar",
+  "engine": "echarts",
+  "file": "examples/echarts/ex-percent-type-echarts-bar-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/ex-percent-type-echarts-bar-chart"
+ },
+ {
+  "name": "ex-pie-chart",
+  "title": "Pie chart",
+  "description": "",
+  "family": "pie",
+  "engine": "echarts",
+  "file": "examples/recharts/ex-pie-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/ex-pie-chart"
+ },
+ {
+  "name": "ex-radar-chart",
+  "title": "Radar chart",
+  "description": "",
+  "family": "radar",
+  "engine": "echarts",
+  "file": "examples/recharts/ex-radar-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/ex-radar-chart"
+ },
+ {
+  "name": "ex-radial-chart",
+  "title": "Radial chart",
+  "description": "",
+  "family": "radial",
+  "engine": "echarts",
+  "file": "examples/recharts/ex-radial-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/ex-radial-chart"
+ },
+ {
+  "name": "ex-sankey-chart",
+  "title": "Sankey chart",
+  "description": "",
+  "family": "sankey",
+  "engine": "echarts",
+  "file": "examples/recharts/ex-sankey-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/ex-sankey-chart"
+ },
+ {
+  "name": "ex-semi-variant-echarts-radial-chart",
+  "title": "Semi variant radial chart",
+  "description": "",
+  "family": "radial",
+  "engine": "echarts",
+  "file": "examples/echarts/ex-semi-variant-echarts-radial-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/ex-semi-variant-echarts-radial-chart"
+ },
+ {
+  "name": "ex-semi-variant-radial-chart",
+  "title": "Semi variant radial chart",
+  "description": "",
+  "family": "radial",
+  "engine": "echarts",
+  "file": "examples/recharts/ex-semi-variant-radial-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/ex-semi-variant-radial-chart"
+ },
+ {
+  "name": "ex-solid-area-variant-area-chart",
+  "title": "Solid area variant area chart",
+  "description": "",
+  "family": "area",
+  "engine": "echarts",
+  "file": "examples/recharts/ex-solid-area-variant-area-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/ex-solid-area-variant-area-chart"
+ },
+ {
+  "name": "ex-solid-area-variant-echarts-area-chart",
+  "title": "Solid area variant area chart",
+  "description": "",
+  "family": "area",
+  "engine": "echarts",
+  "file": "examples/echarts/ex-solid-area-variant-echarts-area-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/ex-solid-area-variant-echarts-area-chart"
+ },
+ {
+  "name": "ex-solid-labeled-nodes-echarts-sankey-chart",
+  "title": "Solid labeled nodes sankey chart",
+  "description": "",
+  "family": "sankey",
+  "engine": "echarts",
+  "file": "examples/echarts/ex-solid-labeled-nodes-echarts-sankey-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/ex-solid-labeled-nodes-echarts-sankey-chart"
+ },
+ {
+  "name": "ex-solid-labeled-nodes-sankey-chart",
+  "title": "Solid labeled nodes sankey chart",
+  "description": "",
+  "family": "sankey",
+  "engine": "echarts",
+  "file": "examples/recharts/ex-solid-labeled-nodes-sankey-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/ex-solid-labeled-nodes-sankey-chart"
+ },
+ {
+  "name": "ex-solid-link-variant-echarts-sankey-chart",
+  "title": "Solid link variant sankey chart",
+  "description": "",
+  "family": "sankey",
+  "engine": "echarts",
+  "file": "examples/echarts/ex-solid-link-variant-echarts-sankey-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/ex-solid-link-variant-echarts-sankey-chart"
+ },
+ {
+  "name": "ex-solid-link-variant-sankey-chart",
+  "title": "Solid link variant sankey chart",
+  "description": "",
+  "family": "sankey",
+  "engine": "echarts",
+  "file": "examples/recharts/ex-solid-link-variant-sankey-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/ex-solid-link-variant-sankey-chart"
+ },
+ {
+  "name": "ex-solid-stroke-area-chart",
+  "title": "Solid stroke area chart",
+  "description": "",
+  "family": "area",
+  "engine": "echarts",
+  "file": "examples/recharts/ex-solid-stroke-area-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/ex-solid-stroke-area-chart"
+ },
+ {
+  "name": "ex-solid-stroke-echarts-area-chart",
+  "title": "Solid stroke area chart",
+  "description": "",
+  "family": "area",
+  "engine": "echarts",
+  "file": "examples/echarts/ex-solid-stroke-echarts-area-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/ex-solid-stroke-echarts-area-chart"
+ },
+ {
+  "name": "ex-solid-stroke-echarts-line-chart",
+  "title": "Solid stroke line chart",
+  "description": "",
+  "family": "line",
+  "engine": "echarts",
+  "file": "examples/echarts/ex-solid-stroke-echarts-line-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/ex-solid-stroke-echarts-line-chart"
+ },
+ {
+  "name": "ex-solid-stroke-line-chart",
+  "title": "Solid stroke line chart",
+  "description": "",
+  "family": "line",
+  "engine": "echarts",
+  "file": "examples/recharts/ex-solid-stroke-line-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/ex-solid-stroke-line-chart"
+ },
+ {
+  "name": "ex-source-link-variant-echarts-sankey-chart",
+  "title": "Source link variant sankey chart",
+  "description": "",
+  "family": "sankey",
+  "engine": "echarts",
+  "file": "examples/echarts/ex-source-link-variant-echarts-sankey-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/ex-source-link-variant-echarts-sankey-chart"
+ },
+ {
+  "name": "ex-source-link-variant-sankey-chart",
+  "title": "Source link variant sankey chart",
+  "description": "",
+  "family": "sankey",
+  "engine": "echarts",
+  "file": "examples/recharts/ex-source-link-variant-sankey-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/ex-source-link-variant-sankey-chart"
+ },
+ {
+  "name": "ex-stacked-type-area-chart",
+  "title": "Stacked type area chart",
+  "description": "",
+  "family": "area",
+  "engine": "echarts",
+  "file": "examples/recharts/ex-stacked-type-area-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/ex-stacked-type-area-chart"
+ },
+ {
+  "name": "ex-stacked-type-bar-chart",
+  "title": "Stacked type bar chart",
+  "description": "",
+  "family": "bar",
+  "engine": "echarts",
+  "file": "examples/recharts/ex-stacked-type-bar-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/ex-stacked-type-bar-chart"
+ },
+ {
+  "name": "ex-stacked-type-echarts-area-chart",
+  "title": "Stacked type area chart",
+  "description": "",
+  "family": "area",
+  "engine": "echarts",
+  "file": "examples/echarts/ex-stacked-type-echarts-area-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/ex-stacked-type-echarts-area-chart"
+ },
+ {
+  "name": "ex-stacked-type-echarts-bar-chart",
+  "title": "Stacked type bar chart",
+  "description": "",
+  "family": "bar",
+  "engine": "echarts",
+  "file": "examples/echarts/ex-stacked-type-echarts-bar-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/ex-stacked-type-echarts-bar-chart"
+ },
+ {
+  "name": "ex-step-curve-type-area-chart",
+  "title": "Step curve type area chart",
+  "description": "",
+  "family": "area",
+  "engine": "echarts",
+  "file": "examples/recharts/ex-step-curve-type-area-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/ex-step-curve-type-area-chart"
+ },
+ {
+  "name": "ex-step-curve-type-echarts-area-chart",
+  "title": "Step curve type area chart",
+  "description": "",
+  "family": "area",
+  "engine": "echarts",
+  "file": "examples/echarts/ex-step-curve-type-echarts-area-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/ex-step-curve-type-echarts-area-chart"
+ },
+ {
+  "name": "ex-step-curve-type-echarts-line-chart",
+  "title": "Step curve type line chart",
+  "description": "",
+  "family": "line",
+  "engine": "echarts",
+  "file": "examples/echarts/ex-step-curve-type-echarts-line-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/ex-step-curve-type-echarts-line-chart"
+ },
+ {
+  "name": "ex-step-curve-type-line-chart",
+  "title": "Step curve type line chart",
+  "description": "",
+  "family": "line",
+  "engine": "echarts",
+  "file": "examples/recharts/ex-step-curve-type-line-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/ex-step-curve-type-line-chart"
+ },
+ {
+  "name": "ex-stripped-variant-bar-chart",
+  "title": "Stripped variant bar chart",
+  "description": "",
+  "family": "bar",
+  "engine": "echarts",
+  "file": "examples/recharts/ex-stripped-variant-bar-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/ex-stripped-variant-bar-chart"
+ },
+ {
+  "name": "ex-stripped-variant-composed-chart",
+  "title": "Stripped variant composed chart",
+  "description": "",
+  "family": "composed",
+  "engine": "echarts",
+  "file": "examples/recharts/ex-stripped-variant-composed-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/ex-stripped-variant-composed-chart"
+ },
+ {
+  "name": "ex-stripped-variant-echarts-bar-chart",
+  "title": "Stripped variant bar chart",
+  "description": "",
+  "family": "bar",
+  "engine": "echarts",
+  "file": "examples/echarts/ex-stripped-variant-echarts-bar-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/ex-stripped-variant-echarts-bar-chart"
+ },
+ {
+  "name": "ex-stripped-variant-echarts-composed-chart",
+  "title": "Stripped variant composed chart",
+  "description": "",
+  "family": "composed",
+  "engine": "echarts",
+  "file": "examples/echarts/ex-stripped-variant-echarts-composed-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/ex-stripped-variant-echarts-composed-chart"
+ },
+ {
+  "name": "ex-svg-renderer-echarts-area-chart",
+  "title": "Svg renderer area chart",
+  "description": "",
+  "family": "area",
+  "engine": "echarts",
+  "file": "examples/echarts/ex-svg-renderer-echarts-area-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/ex-svg-renderer-echarts-area-chart"
+ },
+ {
+  "name": "ex-svg-renderer-echarts-bar-chart",
+  "title": "Svg renderer bar chart",
+  "description": "",
+  "family": "bar",
+  "engine": "echarts",
+  "file": "examples/echarts/ex-svg-renderer-echarts-bar-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/ex-svg-renderer-echarts-bar-chart"
+ },
+ {
+  "name": "ex-svg-renderer-echarts-composed-chart",
+  "title": "Svg renderer composed chart",
+  "description": "",
+  "family": "composed",
+  "engine": "echarts",
+  "file": "examples/echarts/ex-svg-renderer-echarts-composed-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/ex-svg-renderer-echarts-composed-chart"
+ },
+ {
+  "name": "ex-svg-renderer-echarts-line-chart",
+  "title": "Svg renderer line chart",
+  "description": "",
+  "family": "line",
+  "engine": "echarts",
+  "file": "examples/echarts/ex-svg-renderer-echarts-line-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/ex-svg-renderer-echarts-line-chart"
+ },
+ {
+  "name": "ex-svg-renderer-echarts-pie-chart",
+  "title": "Svg renderer pie chart",
+  "description": "",
+  "family": "pie",
+  "engine": "echarts",
+  "file": "examples/echarts/ex-svg-renderer-echarts-pie-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/ex-svg-renderer-echarts-pie-chart"
+ },
+ {
+  "name": "ex-svg-renderer-echarts-radar-chart",
+  "title": "Svg renderer radar chart",
+  "description": "",
+  "family": "radar",
+  "engine": "echarts",
+  "file": "examples/echarts/ex-svg-renderer-echarts-radar-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/ex-svg-renderer-echarts-radar-chart"
+ },
+ {
+  "name": "ex-svg-renderer-echarts-radial-chart",
+  "title": "Svg renderer radial chart",
+  "description": "",
+  "family": "radial",
+  "engine": "echarts",
+  "file": "examples/echarts/ex-svg-renderer-echarts-radial-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/ex-svg-renderer-echarts-radial-chart"
+ },
+ {
+  "name": "ex-svg-renderer-echarts-sankey-chart",
+  "title": "Svg renderer sankey chart",
+  "description": "",
+  "family": "sankey",
+  "engine": "echarts",
+  "file": "examples/echarts/ex-svg-renderer-echarts-sankey-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/ex-svg-renderer-echarts-sankey-chart"
+ },
+ {
+  "name": "ex-tooltip-default-bar-chart",
+  "title": "Tooltip default bar chart",
+  "description": "",
+  "family": "bar",
+  "engine": "echarts",
+  "file": "examples/recharts/ex-tooltip-default-bar-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/ex-tooltip-default-bar-chart"
+ },
+ {
+  "name": "ex-tooltip-default-echarts-bar-chart",
+  "title": "Tooltip default bar chart",
+  "description": "",
+  "family": "bar",
+  "engine": "echarts",
+  "file": "examples/echarts/ex-tooltip-default-echarts-bar-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/ex-tooltip-default-echarts-bar-chart"
+ },
+ {
+  "name": "ex-tooltip-frosted-glass-bar-chart",
+  "title": "Tooltip frosted glass bar chart",
+  "description": "",
+  "family": "bar",
+  "engine": "echarts",
+  "file": "examples/recharts/ex-tooltip-frosted-glass-bar-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/ex-tooltip-frosted-glass-bar-chart"
+ },
+ {
+  "name": "ex-tooltip-frosted-glass-echarts-bar-chart",
+  "title": "Tooltip frosted glass bar chart",
+  "description": "",
+  "family": "bar",
+  "engine": "echarts",
+  "file": "examples/echarts/ex-tooltip-frosted-glass-echarts-bar-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/ex-tooltip-frosted-glass-echarts-bar-chart"
+ },
+ {
+  "name": "grid-bar-chart",
+  "title": "Grid bar chart",
+  "description": "Bar chart where each bar is composed of stacked 10x10px squares",
+  "family": "other",
+  "engine": "echarts",
+  "file": "blocks/recharts/b-grid-bar-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/grid-bar-chart"
+ },
+ {
+  "name": "grid-echarts-bar-chart",
+  "title": "Grid bar chart",
+  "description": "Bar chart whose columns are stacks of blocks, on the ECharts blocks variant",
+  "family": "bar",
+  "engine": "echarts",
+  "file": "blocks/echarts/b-grid-echarts-bar-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/grid-echarts-bar-chart"
+ },
+ {
+  "name": "hover-trace-bar-chart",
+  "title": "Hover trace bar chart",
+  "description": "Bar chart with active value line and animated marker",
+  "family": "other",
+  "engine": "echarts",
+  "file": "blocks/recharts/b-hover-trace-bar-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/hover-trace-bar-chart"
+ },
+ {
+  "name": "isometric-bar-chart",
+  "title": "Isometric bar chart",
+  "description": "Bar chart with isometric 3D-extruded bars and a highlighted max value",
+  "family": "other",
+  "engine": "echarts",
+  "file": "blocks/recharts/b-isometric-bar-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/isometric-bar-chart"
+ },
+ {
+  "name": "latency-echarts-area-chart",
+  "title": "Latency area chart",
+  "description": "Latency percentile monitor with an HTML stat row, on the ECharts area chart",
+  "family": "area",
+  "engine": "echarts",
+  "file": "blocks/echarts/b-latency-echarts-area-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/latency-echarts-area-chart"
+ },
+ {
+  "name": "market-share-echarts-pie-chart",
+  "title": "Market share pie chart",
+  "description": "Grayscale donut with a center total and a two-column value legend",
+  "family": "pie",
+  "engine": "echarts",
+  "file": "blocks/echarts/b-market-share-echarts-pie-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/market-share-echarts-pie-chart"
+ },
+ {
+  "name": "monospace-bar-chart",
+  "title": "Monospace bar chart",
+  "description": "Monospace bar chart component",
+  "family": "other",
+  "engine": "echarts",
+  "file": "blocks/recharts/b-monospace-bar-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/monospace-bar-chart"
+ },
+ {
+  "name": "monospace-echarts-bar-chart",
+  "title": "Monospace bar chart",
+  "description": "Monospace sales card whose hairline bars expand on hover, on the ECharts bar chart",
+  "family": "bar",
+  "engine": "echarts",
+  "file": "blocks/echarts/b-monospace-echarts-bar-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/monospace-echarts-bar-chart"
+ },
+ {
+  "name": "payouts-echarts-line-chart",
+  "title": "Payouts line chart",
+  "description": "Payout trend card with a glowing gradient line and stat rows",
+  "family": "line",
+  "engine": "echarts",
+  "file": "blocks/echarts/b-payouts-echarts-line-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/payouts-echarts-line-chart"
+ },
+ {
+  "name": "peak-echarts-bar-chart",
+  "title": "Peak bar chart",
+  "description": "Stacked weekly signups with only the best week in color",
+  "family": "bar",
+  "engine": "echarts",
+  "file": "blocks/echarts/b-peak-echarts-bar-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/peak-echarts-bar-chart"
+ },
+ {
+  "name": "pipeline-echarts-sankey-chart",
+  "title": "Pipeline sankey chart",
+  "description": "Revenue sources converging through a hub and fanning back out, with a centered total",
+  "family": "sankey",
+  "engine": "echarts",
+  "file": "blocks/echarts/b-pipeline-echarts-sankey-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/pipeline-echarts-sankey-chart"
+ },
+ {
+  "name": "portfolio-echarts-area-chart",
+  "title": "Portfolio area chart",
+  "description": "Portfolio comparison card with hover-reveal, on the ECharts area chart",
+  "family": "area",
+  "engine": "echarts",
+  "file": "blocks/echarts/b-portfolio-echarts-area-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/portfolio-echarts-area-chart"
+ },
+ {
+  "name": "progress-rings-echarts-pie-chart",
+  "title": "Progress rings pie chart",
+  "description": "Dotted progress rings with a centered stat, built from per-dot pie sectors",
+  "family": "pie",
+  "engine": "echarts",
+  "file": "blocks/echarts/b-progress-rings-echarts-pie-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/progress-rings-echarts-pie-chart"
+ },
+ {
+  "name": "reliability-score-echarts-pie-chart",
+  "title": "Reliability score pie chart",
+  "description": "Banded score arc with a range scale, built from pie sectors",
+  "family": "pie",
+  "engine": "echarts",
+  "file": "blocks/echarts/b-reliability-score-echarts-pie-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/reliability-score-echarts-pie-chart"
+ },
+ {
+  "name": "revenue-mix-echarts-pie-chart",
+  "title": "Revenue mix pie chart",
+  "description": "Gapped donut with a center total and a side legend of amounts",
+  "family": "pie",
+  "engine": "echarts",
+  "file": "blocks/echarts/b-revenue-mix-echarts-pie-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/revenue-mix-echarts-pie-chart"
+ },
+ {
+  "name": "ride-echarts-radial-chart",
+  "title": "Ride radial chart",
+  "description": "Activity summary card with a distance goal bar and three metric gauges",
+  "family": "radial",
+  "engine": "echarts",
+  "file": "blocks/echarts/b-ride-echarts-radial-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/ride-echarts-radial-chart"
+ },
+ {
+  "name": "shipments-echarts-line-chart",
+  "title": "Shipments line chart",
+  "description": "Week-over-week comparison with a solid and a dashed grayscale line",
+  "family": "line",
+  "engine": "echarts",
+  "file": "blocks/echarts/b-shipments-echarts-line-chart.tsx",
+  "install": "npx shadcn@latest add @evilcharts/shipments-echarts-line-chart"
+ }
+]
