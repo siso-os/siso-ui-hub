@@ -3,152 +3,152 @@
   "reason": "Promoted production Hub primitives without changing their API or classes. Products import the canonical kit.",
   "files": [
     {
-      "source": "hubs/ui/src/components/ui/badge.tsx",
+      "source": "apps/ui/src/components/ui/badge.tsx",
       "sourceSha256": "140add51ff1384bad7ce5e0929809f5acb523b876298bba4ffb8a71f5357a552",
-      "target": "platform/ui/packages/siso-atoms/src/hub/badge.tsx",
+      "target": "packages/ui/packages/siso-atoms/src/hub/badge.tsx",
       "adaptedSha256": "ce6edbfcebb78489411d4a8a855970b8f17f349d4b8dcbf8c1ed0d8520ab1c9d",
       "adaptations": [
         "package-relative imports; catalogue marker when absent"
       ]
     },
     {
-      "source": "hubs/ui/src/components/ui/button.tsx",
+      "source": "apps/ui/src/components/ui/button.tsx",
       "sourceSha256": "3ee67af6ea92f69c9f6bc0f37d8542b60411a13d96e701b73b59ad726b78de7a",
-      "target": "platform/ui/packages/siso-atoms/src/hub/button.tsx",
+      "target": "packages/ui/packages/siso-atoms/src/hub/button.tsx",
       "adaptedSha256": "f7911dd77ab4919fa50f4c92f3df8162f887c2dc65305515bd8b72d65b52689a",
       "adaptations": [
         "package-relative imports; catalogue marker when absent"
       ]
     },
     {
-      "source": "hubs/ui/src/components/ui/card.tsx",
+      "source": "apps/ui/src/components/ui/card.tsx",
       "sourceSha256": "a9a47559f3c012e54feef59004a28a3e8c201ec0a7b34e92ae291267def6991a",
-      "target": "platform/ui/packages/siso-atoms/src/hub/card.tsx",
+      "target": "packages/ui/packages/siso-atoms/src/hub/card.tsx",
       "adaptedSha256": "84afb8017660c1e32262aa206cf98fbe38f40a74a78d236f493c6a85ab267355",
       "adaptations": [
         "package-relative imports; catalogue marker when absent"
       ]
     },
     {
-      "source": "hubs/ui/src/components/ui/command.tsx",
+      "source": "apps/ui/src/components/ui/command.tsx",
       "sourceSha256": "dc709fdcbac822e0ec724df718d24b2cf5b345de7cd0095dac3c15bb2b667af1",
-      "target": "platform/ui/packages/siso-atoms/src/hub/command.tsx",
+      "target": "packages/ui/packages/siso-atoms/src/hub/command.tsx",
       "adaptedSha256": "630dcc61501ccdf61c6bf632c91df3c37c7c05f2aba6a7d55b003a6a683b4ffb",
       "adaptations": [
         "package-relative imports; catalogue marker when absent"
       ]
     },
     {
-      "source": "hubs/ui/src/components/ui/dialog.tsx",
+      "source": "apps/ui/src/components/ui/dialog.tsx",
       "sourceSha256": "b06751aace5b17ce8e44caf23bfa597b47d4967e48ad9e91105a1febc7450b1f",
-      "target": "platform/ui/packages/siso-atoms/src/hub/dialog.tsx",
+      "target": "packages/ui/packages/siso-atoms/src/hub/dialog.tsx",
       "adaptedSha256": "b7fff43c5fbd5c98395db875d7b214763f21082bdbfcea2b6d985d703209b748",
       "adaptations": [
         "package-relative imports; catalogue marker when absent"
       ]
     },
     {
-      "source": "hubs/ui/src/components/ui/dropdown-menu.tsx",
+      "source": "apps/ui/src/components/ui/dropdown-menu.tsx",
       "sourceSha256": "835e47877e28af20206b61a9e3aba374e6b63792548e839b7dcf3396a0acfecb",
-      "target": "platform/ui/packages/siso-atoms/src/hub/dropdown-menu.tsx",
+      "target": "packages/ui/packages/siso-atoms/src/hub/dropdown-menu.tsx",
       "adaptedSha256": "f6aca6154cfd5459738faeea4a411dd5a461cd9adb8871c4929e8d62d40ae88e",
       "adaptations": [
         "package-relative imports; catalogue marker when absent"
       ]
     },
     {
-      "source": "hubs/ui/src/components/ui/input.tsx",
+      "source": "apps/ui/src/components/ui/input.tsx",
       "sourceSha256": "ab6398767456a8dd7c1fb03aeb75c402e9448abdc5784aca464eafa60b028944",
-      "target": "platform/ui/packages/siso-atoms/src/hub/input.tsx",
+      "target": "packages/ui/packages/siso-atoms/src/hub/input.tsx",
       "adaptedSha256": "b980aa63446ca57f6cb7af822c7d04eaab644f3edcc7325f76bc41241d2dac4f",
       "adaptations": [
         "package-relative imports; catalogue marker when absent"
       ]
     },
     {
-      "source": "hubs/ui/src/components/ui/scroll-area.tsx",
+      "source": "apps/ui/src/components/ui/scroll-area.tsx",
       "sourceSha256": "a16819ab1d69f65c7c89f93e14a05ac991aa50b164f794f40388d2c9c2996b9e",
-      "target": "platform/ui/packages/siso-atoms/src/hub/scroll-area.tsx",
+      "target": "packages/ui/packages/siso-atoms/src/hub/scroll-area.tsx",
       "adaptedSha256": "8d43b4ac1e33bdf57f5ce962e07967dddbbaea64f58ac52334e9077056199fd2",
       "adaptations": [
         "package-relative imports; catalogue marker when absent"
       ]
     },
     {
-      "source": "hubs/ui/src/components/ui/select.tsx",
+      "source": "apps/ui/src/components/ui/select.tsx",
       "sourceSha256": "ba00879b8532354b5376c029b9df197798d76d4271fdd22ba5e6aa9a6cdc4559",
-      "target": "platform/ui/packages/siso-atoms/src/hub/select.tsx",
+      "target": "packages/ui/packages/siso-atoms/src/hub/select.tsx",
       "adaptedSha256": "c633e8a780cb31c94e65702edd3ac2d30b79643cf9ee36d98d05df04c606749a",
       "adaptations": [
         "package-relative imports; catalogue marker when absent"
       ]
     },
     {
-      "source": "hubs/ui/src/components/ui/separator.tsx",
+      "source": "apps/ui/src/components/ui/separator.tsx",
       "sourceSha256": "af6bb1db88ab712f50d73a7880eda921250e4f2ac17616a8d9210405373f3357",
-      "target": "platform/ui/packages/siso-atoms/src/hub/separator.tsx",
+      "target": "packages/ui/packages/siso-atoms/src/hub/separator.tsx",
       "adaptedSha256": "2b82cb3ecdf4e8cbcfab1115cdf486397083381b600129f99837b3be289c19c3",
       "adaptations": [
         "package-relative imports; catalogue marker when absent"
       ]
     },
     {
-      "source": "hubs/ui/src/components/ui/sheet.tsx",
+      "source": "apps/ui/src/components/ui/sheet.tsx",
       "sourceSha256": "03840d1d9b648c6e44b2bf9f4090728df7bab4f7729f07023d6ddd88ae17d052",
-      "target": "platform/ui/packages/siso-atoms/src/hub/sheet.tsx",
+      "target": "packages/ui/packages/siso-atoms/src/hub/sheet.tsx",
       "adaptedSha256": "2dfcb4b01e5bc9d67c3790626a8853c1f1dfe6195a5741d9e464fff971e86cba",
       "adaptations": [
         "package-relative imports; catalogue marker when absent"
       ]
     },
     {
-      "source": "hubs/ui/src/components/ui/skeleton.tsx",
+      "source": "apps/ui/src/components/ui/skeleton.tsx",
       "sourceSha256": "16d06996d3f5e8471daebd167bc509a125a70ed7effbe11329e8b279899fedeb",
-      "target": "platform/ui/packages/siso-atoms/src/hub/skeleton.tsx",
+      "target": "packages/ui/packages/siso-atoms/src/hub/skeleton.tsx",
       "adaptedSha256": "dc957c9d5bd75798f06beb77e3af663267e1c820d561f0792f19307cb1641b19",
       "adaptations": [
         "package-relative imports; catalogue marker when absent"
       ]
     },
     {
-      "source": "hubs/ui/src/components/ui/tabs.tsx",
+      "source": "apps/ui/src/components/ui/tabs.tsx",
       "sourceSha256": "ba9e1188d6124dd15c167e2f092b53215cc64d591ccac7b4d31beefe7c16c0d7",
-      "target": "platform/ui/packages/siso-atoms/src/hub/tabs.tsx",
+      "target": "packages/ui/packages/siso-atoms/src/hub/tabs.tsx",
       "adaptedSha256": "d3bf68548eb6f5eff14dbf4bbc92149a1a7b7a99cf3db5253449b22b2a3d6967",
       "adaptations": [
         "package-relative imports; catalogue marker when absent"
       ]
     },
     {
-      "source": "hubs/ui/src/components/ui/toggle-group.tsx",
+      "source": "apps/ui/src/components/ui/toggle-group.tsx",
       "sourceSha256": "dcd56767afcd704ab3457522a9a02462911e2ebade05e8c87de5a747f994f02b",
-      "target": "platform/ui/packages/siso-atoms/src/hub/toggle-group.tsx",
+      "target": "packages/ui/packages/siso-atoms/src/hub/toggle-group.tsx",
       "adaptedSha256": "2e8a83fb7d863408537f2cc5782562bb7fc11d71d8c29ce9ad87048d6ddb1b08",
       "adaptations": [
         "package-relative imports; catalogue marker when absent"
       ]
     },
     {
-      "source": "hubs/ui/src/components/ui/toggle.tsx",
+      "source": "apps/ui/src/components/ui/toggle.tsx",
       "sourceSha256": "a858a94f22da4f63746afbaf1ae32c97a0eb39ed105f1df78140692887d75e75",
-      "target": "platform/ui/packages/siso-atoms/src/hub/toggle.tsx",
+      "target": "packages/ui/packages/siso-atoms/src/hub/toggle.tsx",
       "adaptedSha256": "22b64f14d428829bd650a82fef72ead97fecabffcf1bb42ba6bda8e9be5be36f",
       "adaptations": [
         "package-relative imports; catalogue marker when absent"
       ]
     },
     {
-      "source": "hubs/ui/src/components/ui/tooltip.tsx",
+      "source": "apps/ui/src/components/ui/tooltip.tsx",
       "sourceSha256": "d53325085d2d7487947571b923ddda18bd14cde39b784956ae84ebff1a69ce68",
-      "target": "platform/ui/packages/siso-atoms/src/hub/tooltip.tsx",
+      "target": "packages/ui/packages/siso-atoms/src/hub/tooltip.tsx",
       "adaptedSha256": "a5c4f0559d7e077672da2b4c47f8b9823e703b2640efffd3414116ed6cae4d4d",
       "adaptations": [
         "package-relative imports; catalogue marker when absent"
       ]
     },
     {
-      "source": "hubs/ui/src/lib/utils.ts",
-      "target": "platform/ui/packages/siso-atoms/src/hub/utils.ts",
+      "source": "apps/ui/src/lib/utils.ts",
+      "target": "packages/ui/packages/siso-atoms/src/hub/utils.ts",
       "sourceSha256": "805bdeef300f9de6da71c80af4adf119c5a013820d22d7345b04251dcc50d5ae",
       "adaptedSha256": "805bdeef300f9de6da71c80af4adf119c5a013820d22d7345b04251dcc50d5ae",
       "adaptations": []

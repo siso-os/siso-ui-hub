@@ -19,9 +19,9 @@ script is not a consumer.
 
 | Consumer | Reads | Status after v2 |
 |---|---|---|
-| `platform/ui/blocks/_schema/validate-block.mjs` | the whole grammar | mine; authoritative |
-| `platform/ui/blocks/affine-workspace/scripts/{validate,bind}.mjs` | `schema_version`, `block_id`, `version`, `capability_id`, `reuse.*`, `authorization.*`, `lifecycle.*`, `interfaces.*`, `fixture.host`, `records.*` | migrated |
-| `platform/ui/blocks/teable-data-grid/tools/teable-block.mjs` | same set plus `theme.*`, `runbook`, `verification.negative_fixtures` | migrated |
+| `packages/ui/blocks/_schema/validate-block.mjs` | the whole grammar | mine; authoritative |
+| `packages/ui/blocks/affine-workspace/scripts/{validate,bind}.mjs` | `schema_version`, `block_id`, `version`, `capability_id`, `reuse.*`, `authorization.*`, `lifecycle.*`, `interfaces.*`, `fixture.host`, `records.*` | migrated |
+| `packages/ui/blocks/teable-data-grid/tools/teable-block.mjs` | same set plus `theme.*`, `runbook`, `verification.negative_fixtures` | migrated |
 | `site/system-map/scripts/derive-state.mjs` | `block_id`, `display_name`, `reuse.shape`, `lifecycle.admission_status`, `lifecycle.admission_scope`, `lifecycle.proof_status`, `reuse.donor.immutable_revision`, donor identity | **repaired by another lane; re-verified here** |
 | `research/workstreams/2026-08-29-qualify/verify-finding.mjs` | opens `blocks/teable-data-grid` | reads records, not manifest field names |
 
@@ -67,13 +67,13 @@ gap, stated rather than papered over.
 ## Invoking `validate-block.mjs` — the argument contract
 
 ```bash
-node platform/ui/blocks/_schema/validate-block.mjs affine-workspace          # bare NAME  -> resolved under platform/ui/blocks/, from any cwd
-node platform/ui/blocks/_schema/validate-block.mjs ./some/dir                # PATH       -> cwd-relative, as typed
-node platform/ui/blocks/_schema/validate-block.mjs platform/ui/blocks/teable-data-grid   # PATH       -> cwd-relative
+node packages/ui/blocks/_schema/validate-block.mjs affine-workspace          # bare NAME  -> resolved under packages/ui/blocks/, from any cwd
+node packages/ui/blocks/_schema/validate-block.mjs ./some/dir                # PATH       -> cwd-relative, as typed
+node packages/ui/blocks/_schema/validate-block.mjs packages/ui/blocks/teable-data-grid   # PATH       -> cwd-relative
 ```
 
 A **bare name** is a block name and resolves against `blocks/` computed from the script's own
-location, so it means the same thing whether you run it from the repo root, from `platform/ui/blocks/`, or
+location, so it means the same thing whether you run it from the repo root, from `packages/ui/blocks/`, or
 from `/tmp`. Anything containing a separator is a **path** and stays cwd-relative.
 
 **Both behaviours are proven** in `research/workstreams/2026-08-29-schema/prove.mjs`

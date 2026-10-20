@@ -12,7 +12,7 @@
       "source_bytes": 34303,
       "source_url": "https://github.com/sisodias/siso-ui-render/blob/2f9bb0af24e22bf181e51a57c994d40f41f0d01a/bin/render",
       "source_mode": "100755",
-      "destination": "platform/ui/ui-code/bin/render",
+      "destination": "packages/ui/ui-code/bin/render",
       "destination_blob": "de16c78791127220906b2ac72c3ecb252abd25c6",
       "destination_sha256": "310ec3626425de3f3510526e16585816f542e1befd8bc59dca203be57999a033",
       "destination_mode": "100755",
@@ -24,7 +24,7 @@
       "source_bytes": 7628,
       "source_url": "https://github.com/sisodias/siso-ui-render/blob/2f9bb0af24e22bf181e51a57c994d40f41f0d01a/bin/render-bundle.mjs",
       "source_mode": "100644",
-      "destination": "platform/ui/ui-code/bin/render-bundle.mjs",
+      "destination": "packages/ui/ui-code/bin/render-bundle.mjs",
       "destination_blob": "4f2b24ffd0e7198d89ca40c85863633f3b1d1f70",
       "destination_sha256": "af1c0ca9bd9497e29d94eb6fdb6e4778290b1dd09b0b42418cb232495f1769df",
       "destination_mode": "100644",
@@ -47,7 +47,7 @@
     "required": "Record canonical-existing disposition, not a second code import. Link both pinned source files to existing canonical files and preserve their current destination blobs.",
     "source": "sisodias/siso-ui-render",
     "source_sha": "2f9bb0af24e22bf181e51a57c994d40f41f0d01a",
-    "path": "platform/ui/ui-code/bin",
+    "path": "packages/ui/ui-code/bin",
     "module_id": "siso.packages.ui",
     "allowlist": [
       "bin/render",
@@ -81,7 +81,7 @@
   "runtime_inputs": {
     "python": "Python 3; full run additionally needs Pillow and playwright.async_api",
     "node": "Node.js plus existing external sandbox node_modules/esbuild, React/ReactDOM, Tailwind v4 and the PACKAGES list in bin/render; each component may require additional packages",
-    "selection": "--print-jsonl reads classified.jsonl, catalog.jsonl, optional dupes.jsonl and code JSON paths relative to platform/ui/ui-code. Not exercised with corpus.",
+    "selection": "--print-jsonl reads classified.jsonl, catalog.jsonl, optional dupes.jsonl and code JSON paths relative to packages/ui/ui-code. Not exercised with corpus.",
     "bundle": "run inside isolated pre-existing sandbox: render-bundle.mjs jobs.json results.json; jobs provide key, dir and entry or entries, with source files already held locally",
     "full_run": "stdin part JSONL with key, files, deps and renderer metadata; external DIR contains prepared shims/src/theme.css/node_modules; UI_THUMBS writable external output; PW_SHELL existing compatible headless executable or Playwright browser cache",
     "setup": "setup DIR fetches shadcn registries and invokes npm install; not run or required for this code-only import. No missing-file shims were introduced or exercised."

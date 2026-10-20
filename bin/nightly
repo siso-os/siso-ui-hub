@@ -3,9 +3,19 @@
 # Re-inventories every project from local git refs (no fetch, no checkout), checks for component files added since the
 # baseline that are from neither a pick nor our register (inventory/checks.json), rewrites the reader hand-off files,
 # and commits the inventory here. It never pushes: hub changes reach GitHub by branch and PR.
-set -u
+set -uo pipefail
 export PATH="/opt/homebrew/bin:/usr/local/bin:$HOME/.local/bin:/usr/bin:/bin:$PATH"
 HUB=$(cd "$(dirname "$(realpath "$0")")/.." && pwd)
+# Imported automation must never commit into or dirty the stable live checkout.
+MONO_ROOT=$(git -C "$HUB" rev-parse --show-toplevel 2>/dev/null || true)
+if [ -f "$HUB/module.json" ] && [ -n "$MONO_ROOT" ] && [ "$MONO_ROOT" != "$HUB" ] && [ "${UIHUB_NIGHTLY_RUNTIME:-0}" != 1 ]; then
+  RUNTIME_HOME="${UIHUB_NIGHTLY_HOME:-$HOME/.local/state/siso-ui/nightly}"
+  mkdir -p "$RUNTIME_HOME"
+  RUN=$(mktemp -d "$RUNTIME_HOME/run-XXXXXXXX")
+  git -C "$MONO_ROOT" archive "HEAD:${HUB#"$MONO_ROOT"/}" | tar -x -C "$RUN" || exit 1
+  export UIHUB_NIGHTLY_RUNTIME=1
+  exec /bin/bash "$RUN/bin/nightly"
+fi
 cd "$HUB" || exit 1
 mkdir -p inventory/raw
 exec >> inventory/raw/nightly.log 2>&1
@@ -31,5 +41,9 @@ CRED=~/SISO_Workspace/.credentials/projects/SISO_Agents/siso-estate/world-worker
 if [ -f "$CRED" ]; then
   UIHUB_URL=https://siso-ui-hub.dtc-storefront.workers.dev UIHUB_PASSWORD="$(grep '^WORLD_PASSWORD=' "$CRED" | cut -d= -f2-)" bin/uihub sync || echo "bookmark sync failed"
 fi
-git add inventory catalogue/bookmarks.json && { git diff --cached --quiet || git commit -qm "nightly: inventory, checks and bookmarks $(date +%F)"; } || echo "inventory not committed"
+if [ "${UIHUB_NIGHTLY_RUNTIME:-0}" != 1 ]; then
+  git add inventory catalogue/bookmarks.json && { git diff --cached --quiet || git commit -qm "nightly: inventory, checks and bookmarks $(date +%F)"; } || echo "inventory not committed"
+else
+  echo "inventory retained outside the source checkout: $HUB"
+fi
 echo "=== $(date '+%F %T') ui-hub nightly end"

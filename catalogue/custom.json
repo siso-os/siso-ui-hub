@@ -381,7 +381,7 @@
     "since": "2026-10-16"
   },
   "siso:ui": {
-    "from": "platform/ui/packages/siso-ui",
+    "from": "packages/ui/packages/siso-ui",
     "reason": "Private umbrella exports and one stylesheet for the SISO UI suite.",
     "since": "2026-10-16"
   },
@@ -416,42 +416,42 @@
     "since": "2026-10-16"
   },
   "siso:hub-primitives": {
-    "from": "platform/ui/packages/siso-atoms/src/hub",
+    "from": "packages/ui/packages/siso-atoms/src/hub",
     "reason": "Promote the existing Hub primitives so Hub consumers retain their production APIs while importing the canonical kit.",
     "since": "2026-10-17"
   },
   "siso:site": {
-    "from": "platform/ui/packages/siso-site/src/index.ts",
+    "from": "packages/ui/packages/siso-site/src/index.ts",
     "reason": "The actual SISO Labs footer, blog parts, docs skin and product glyphs, preserving their source styles, motion and assets for reuse.",
     "since": "2026-10-16"
   },
   "siso:hub-side-nav": {
-    "from": "platform/ui/packages/siso-navigation/src/hub/HubSideNav.tsx",
+    "from": "packages/ui/packages/siso-navigation/src/hub/HubSideNav.tsx",
     "reason": "The approved Hub v8\u2013v11 navigation presentation extracted with original rows, glyphs, core switcher and CSS for controlled reuse.",
     "since": "2026-10-16"
   },
   "siso:pill-switch": {
-    "from": "platform/ui/packages/siso-navigation/src/hub/PillSwitch.tsx",
+    "from": "packages/ui/packages/siso-navigation/src/hub/PillSwitch.tsx",
     "reason": "Original Hub page and mode pill switch, preserved with native links and controlled callbacks for reuse.",
     "since": "2026-10-16"
   },
   "siso:nav-glyph": {
-    "from": "platform/ui/packages/siso-navigation/src/hub/NavGlyph.tsx",
+    "from": "packages/ui/packages/siso-navigation/src/hub/NavGlyph.tsx",
     "reason": "The original Hub navigation glyph driver and animated source icon mapping retained for the extracted side nav.",
     "since": "2026-10-16"
   },
   "siso:nav-icons": {
-    "from": "platform/ui/packages/siso-navigation/src/hub/navIcons.tsx",
+    "from": "packages/ui/packages/siso-navigation/src/hub/navIcons.tsx",
     "reason": "Original Hub glyph selection table reused by the source side nav; no replacement icon drawings.",
     "since": "2026-10-16"
   },
   "siso:agent": {
-    "from": "platform/ui/packages/siso-agent/src/index.ts",
+    "from": "packages/ui/packages/siso-agent/src/index.ts",
     "reason": "Agent Base's composer, voice surfaces, agent face and workspace marks, 55 animated icons and OS pieces, moved into the one kit so every project takes them from @siso/ui/agent.",
     "since": "2026-10-17"
   },
   "siso:markdown": {
-    "from": "hubs/industries/site/src/md.tsx",
+    "from": "apps/industries/site/src/md.tsx",
     "reason": "Small markdown reader (headings, lists, bold, code, links) so a hub can render a pack's README instead of showing raw text; first used by Industries Hub.",
     "since": "2026-10-17"
   },
