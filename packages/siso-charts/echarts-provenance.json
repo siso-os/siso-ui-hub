@@ -1,0 +1,1522 @@
+{
+  "sourceRepository": "https://github.com/legions-developer/evilcharts",
+  "heldSourceCommit": "3e1596aa3e99e343320511d55c8db638b4d3342d",
+  "upstreamSourceCommit": null,
+  "upstreamCommitNote": "Held app source is recorded; no upstream commit-to-file match was verified.",
+  "license": {
+    "name": "MIT",
+    "source": "existing packages/siso-charts/source-provenance.json (Evil Charts attribution)"
+  },
+  "echartsDependency": {
+    "package": "echarts",
+    "version": "6.1.0",
+    "upstreamRepository": "https://github.com/apache/echarts",
+    "upstreamLicenseCommit": "c5a48f5f97d23e5379720870b8444cd05b50ffb4",
+    "license": "Apache-2.0",
+    "licenseFile": "packages/siso-charts/licenses/echarts-Apache-2.0.txt",
+    "licenseFileSha256": "634293835b43a6dd2094fa39182a3d9a6b9ca43b7fdb9ac354e8037af2a3093a"
+  },
+  "files": [
+    {
+      "sourcePath": "../../hubs/ui/src/kit/evilcharts/charts/echarts-area-chart.tsx",
+      "sourceSha256": "4c14d6882dd16c8969f77fc85f61b1977d508353ebd9da2fe2fc6f667d5ee6f7",
+      "targetPath": "packages/siso-charts/src/echarts/charts/echarts-area-chart.tsx",
+      "adaptedSha256": "016b2a8e56c053bb5cd5af9418895225d7751b5ae663e284635a42f43d4c7d7a",
+      "adaptations": [
+        "append uihub marker"
+      ],
+      "originalSourcePath": "app/src/kit/evilcharts/charts/echarts-area-chart.tsx"
+    },
+    {
+      "sourcePath": "../../hubs/ui/src/kit/evilcharts/charts/echarts-bar-chart.tsx",
+      "sourceSha256": "e22bf81adaaf0575d76336cd06cf9281d2dcfa60a91f1f3d580b6d6fef8ad248",
+      "targetPath": "packages/siso-charts/src/echarts/charts/echarts-bar-chart.tsx",
+      "adaptedSha256": "ea4597880eb2929463845bdd9b98ba24334bd8f6ecc9f1a913974f7cc4617ac8",
+      "adaptations": [
+        "append uihub marker"
+      ],
+      "originalSourcePath": "app/src/kit/evilcharts/charts/echarts-bar-chart.tsx"
+    },
+    {
+      "sourcePath": "../../hubs/ui/src/kit/evilcharts/charts/echarts-composed-chart.tsx",
+      "sourceSha256": "4fdcdca549c33c9e966684fba78d2c0007c5b61ea153db20d36de5c1e96f4d65",
+      "targetPath": "packages/siso-charts/src/echarts/charts/echarts-composed-chart.tsx",
+      "adaptedSha256": "0bde1ab9589d32fbd877bf4946edcbd743dbee1aacf2c6e6c5702f08d62b4e54",
+      "adaptations": [
+        "append uihub marker"
+      ],
+      "originalSourcePath": "app/src/kit/evilcharts/charts/echarts-composed-chart.tsx"
+    },
+    {
+      "sourcePath": "../../hubs/ui/src/kit/evilcharts/charts/echarts-line-chart.tsx",
+      "sourceSha256": "62fa8a54ef651a213372348b2b15bbaa1f10a2fa6a6ebce59ba7ec158613cd7a",
+      "targetPath": "packages/siso-charts/src/echarts/charts/echarts-line-chart.tsx",
+      "adaptedSha256": "88d3d97b90bc62fdcd8217591af82313e85490143961e4f90bf8df74a7bd87cd",
+      "adaptations": [
+        "append uihub marker"
+      ],
+      "originalSourcePath": "app/src/kit/evilcharts/charts/echarts-line-chart.tsx"
+    },
+    {
+      "sourcePath": "../../hubs/ui/src/kit/evilcharts/charts/echarts-pie-chart.tsx",
+      "sourceSha256": "303870a632072a58756bc9ab03b6e2e97da74f106d5eb6c9add999b7e683bfb6",
+      "targetPath": "packages/siso-charts/src/echarts/charts/echarts-pie-chart.tsx",
+      "adaptedSha256": "7c3953cad04093a66cf4084d343d4c9d9bba9378b9f340fc5755f37cfad2d8dd",
+      "adaptations": [
+        "append uihub marker"
+      ],
+      "originalSourcePath": "app/src/kit/evilcharts/charts/echarts-pie-chart.tsx"
+    },
+    {
+      "sourcePath": "../../hubs/ui/src/kit/evilcharts/charts/echarts-radar-chart.tsx",
+      "sourceSha256": "929eac70e9fa7945dea3fab8000a98ea1a49b4e8daec5614942bb8a67d9fb351",
+      "targetPath": "packages/siso-charts/src/echarts/charts/echarts-radar-chart.tsx",
+      "adaptedSha256": "0c971a3ef19c646b09fa3b3b2c50599002a19d02c332b0c711b808548cbfe644",
+      "adaptations": [
+        "append uihub marker"
+      ],
+      "originalSourcePath": "app/src/kit/evilcharts/charts/echarts-radar-chart.tsx"
+    },
+    {
+      "sourcePath": "../../hubs/ui/src/kit/evilcharts/charts/echarts-radial-chart.tsx",
+      "sourceSha256": "bb22bfcbc90e2e5fc8e94136c435c05525b563b8b8a81ebb1abd4aa01b4cb2bb",
+      "targetPath": "packages/siso-charts/src/echarts/charts/echarts-radial-chart.tsx",
+      "adaptedSha256": "fe1ba880d95f2c7763089de76f9a8d1c44c84c80f47dc7514df5d7389b95293b",
+      "adaptations": [
+        "append uihub marker"
+      ],
+      "originalSourcePath": "app/src/kit/evilcharts/charts/echarts-radial-chart.tsx"
+    },
+    {
+      "sourcePath": "../../hubs/ui/src/kit/evilcharts/charts/echarts-sankey-chart.tsx",
+      "sourceSha256": "ebb33c625bf788a0674a0754f0c0cc25ee0b159be0f20bded8ebdfd195f2ee5d",
+      "targetPath": "packages/siso-charts/src/echarts/charts/echarts-sankey-chart.tsx",
+      "adaptedSha256": "bc250479803ed9e24d42b05c6c6249f2535a7bbfdb87c3198177676a198fbad1",
+      "adaptations": [
+        "append uihub marker"
+      ],
+      "originalSourcePath": "app/src/kit/evilcharts/charts/echarts-sankey-chart.tsx"
+    },
+    {
+      "sourcePath": "../../hubs/ui/src/kit/evilcharts/ui/echarts-brush.tsx",
+      "sourceSha256": "9b07d179eefad50a4368d2088a9f260b2551ceba3927dafd78c832dcef216d72",
+      "targetPath": "packages/siso-charts/src/echarts/ui/echarts-brush.tsx",
+      "adaptedSha256": "c9a3d46d07e40e87cfe4882ff5863ddcd28eac8ea50c3ddb15686eb3008b19c4",
+      "adaptations": [
+        "append uihub marker"
+      ],
+      "originalSourcePath": "app/src/kit/evilcharts/ui/echarts-brush.tsx"
+    },
+    {
+      "sourcePath": "../../hubs/ui/src/kit/evilcharts/ui/echarts-chart.tsx",
+      "sourceSha256": "c0cfe2bcb6dd9c3ed8f2e29d372a073c9cd324811a8d4bcb4e12bf43707e12f3",
+      "targetPath": "packages/siso-charts/src/echarts/ui/echarts-chart.tsx",
+      "adaptedSha256": "8503aeedcd00beb8d8eda4e8498bbb67cd02c3f51efd715e4f25d810a993f2f7",
+      "adaptations": [
+        "append uihub marker"
+      ],
+      "originalSourcePath": "app/src/kit/evilcharts/ui/echarts-chart.tsx"
+    },
+    {
+      "sourcePath": "../../hubs/ui/src/kit/evilcharts/ui/echarts-dot.tsx",
+      "sourceSha256": "27258e7e3072ca8163e266e42b3073a5cadf382d415bc2410cb09f4b3fbc3cdd",
+      "targetPath": "packages/siso-charts/src/echarts/ui/echarts-dot.tsx",
+      "adaptedSha256": "37050c5426cc534bd599a6b8baeb9f9d8c1c46c35a74f8a2cef8082ad6d1a8c9",
+      "adaptations": [
+        "append uihub marker"
+      ],
+      "originalSourcePath": "app/src/kit/evilcharts/ui/echarts-dot.tsx"
+    },
+    {
+      "sourcePath": "../../hubs/ui/src/kit/evilcharts/ui/echarts-legend.tsx",
+      "sourceSha256": "b63635945294d3204dca58a766a2aa7722f527b1f3af78d2d0f81c8886abc20d",
+      "targetPath": "packages/siso-charts/src/echarts/ui/echarts-legend.tsx",
+      "adaptedSha256": "377c55f53d5d38cbbc5910dc7b9cca26e0bc1dbb98737a286f4ddbbb3ddfcf10",
+      "adaptations": [
+        "append uihub marker"
+      ],
+      "originalSourcePath": "app/src/kit/evilcharts/ui/echarts-legend.tsx"
+    },
+    {
+      "sourcePath": "../../hubs/ui/src/kit/evilcharts/ui/echarts-tooltip.tsx",
+      "sourceSha256": "aa4ede621989d2eb3e8c4ea676cf2f789e5e6d02811ccb5c46c578acd1088860",
+      "targetPath": "packages/siso-charts/src/echarts/ui/echarts-tooltip.tsx",
+      "adaptedSha256": "7d5959a52541b21bfc18a622def34ad05bba42d23083b4d8d4c8228328298007",
+      "adaptations": [
+        "append uihub marker"
+      ],
+      "originalSourcePath": "app/src/kit/evilcharts/ui/echarts-tooltip.tsx"
+    },
+    {
+      "sourcePath": "../../hubs/ui/src/kit/evilcharts/examples/echarts/ex-animated-dashed-stroke-echarts-area-chart.tsx",
+      "sourceSha256": "102ad0c8a81ab9da40f3ca3dbe2b8fddd6d3ca02897c73c0f524fe52388fba65",
+      "targetPath": "packages/siso-charts/src/echarts/examples/echarts/ex-animated-dashed-stroke-echarts-area-chart.tsx",
+      "adaptedSha256": "499d37b11ed8322281c3171c85b30383f8c058790a1800d4ab0d75a3bafaf82a",
+      "adaptations": [
+        "append uihub marker"
+      ],
+      "originalSourcePath": "app/src/kit/evilcharts/examples/echarts/ex-animated-dashed-stroke-echarts-area-chart.tsx"
+    },
+    {
+      "sourcePath": "../../hubs/ui/src/kit/evilcharts/examples/echarts/ex-animated-dashed-stroke-echarts-composed-chart.tsx",
+      "sourceSha256": "87618a253cc3fc60661fa4f9944338b3c74f2730f0fd77325e527b65cc3408e3",
+      "targetPath": "packages/siso-charts/src/echarts/examples/echarts/ex-animated-dashed-stroke-echarts-composed-chart.tsx",
+      "adaptedSha256": "92dcd46b44925b43f8677319208adc142a91f23878795f9c6e046b7cae68b137",
+      "adaptations": [
+        "append uihub marker"
+      ],
+      "originalSourcePath": "app/src/kit/evilcharts/examples/echarts/ex-animated-dashed-stroke-echarts-composed-chart.tsx"
+    },
+    {
+      "sourcePath": "../../hubs/ui/src/kit/evilcharts/examples/echarts/ex-animated-dashed-stroke-echarts-line-chart.tsx",
+      "sourceSha256": "ffaeff6c6612f868a621da20a11d5ce3edfc3c55952da18386dd8361c5447463",
+      "targetPath": "packages/siso-charts/src/echarts/examples/echarts/ex-animated-dashed-stroke-echarts-line-chart.tsx",
+      "adaptedSha256": "c02274137ab1a5d6dc8a3275f09611c76775a460c67d5225376e28819b4d38d5",
+      "adaptations": [
+        "append uihub marker"
+      ],
+      "originalSourcePath": "app/src/kit/evilcharts/examples/echarts/ex-animated-dashed-stroke-echarts-line-chart.tsx"
+    },
+    {
+      "sourcePath": "../../hubs/ui/src/kit/evilcharts/examples/echarts/ex-blocks-variant-echarts-bar-chart.tsx",
+      "sourceSha256": "a0854762e48c2dca48ec525488ab8ea1c4db2e22db4a9bafffca23ebb32e8f4e",
+      "targetPath": "packages/siso-charts/src/echarts/examples/echarts/ex-blocks-variant-echarts-bar-chart.tsx",
+      "adaptedSha256": "8b73b3b76a827d76a80e2a1d6f4ca2feba655e8c1d446dd186b837a88cf39987",
+      "adaptations": [
+        "append uihub marker"
+      ],
+      "originalSourcePath": "app/src/kit/evilcharts/examples/echarts/ex-blocks-variant-echarts-bar-chart.tsx"
+    },
+    {
+      "sourcePath": "../../hubs/ui/src/kit/evilcharts/examples/echarts/ex-brush-echarts-area-chart.tsx",
+      "sourceSha256": "12ff5cfe9efd05670d3e633e2ab3aee73bc7cd6176910cfc9e4c367c25bb5f3b",
+      "targetPath": "packages/siso-charts/src/echarts/examples/echarts/ex-brush-echarts-area-chart.tsx",
+      "adaptedSha256": "b525448afc5812c9d70a54c8d196952b60cf4f4278769cce3a828d438c6057be",
+      "adaptations": [
+        "append uihub marker"
+      ],
+      "originalSourcePath": "app/src/kit/evilcharts/examples/echarts/ex-brush-echarts-area-chart.tsx"
+    },
+    {
+      "sourcePath": "../../hubs/ui/src/kit/evilcharts/examples/echarts/ex-buffer-echarts-area-chart.tsx",
+      "sourceSha256": "7a33747c7d1a081e299c91619d91dbf903f930795121d4504887d478bcdb5b29",
+      "targetPath": "packages/siso-charts/src/echarts/examples/echarts/ex-buffer-echarts-area-chart.tsx",
+      "adaptedSha256": "95d915a0a02a04eb49dfd1ff7725452e43297f7afbefa451298fff37557def26",
+      "adaptations": [
+        "append uihub marker"
+      ],
+      "originalSourcePath": "app/src/kit/evilcharts/examples/echarts/ex-buffer-echarts-area-chart.tsx"
+    },
+    {
+      "sourcePath": "../../hubs/ui/src/kit/evilcharts/examples/echarts/ex-buffer-echarts-bar-chart.tsx",
+      "sourceSha256": "6c0de1c4970b69139328ab3ea9ddb5970b8a01c0c6a6264e2815e3da0f58000e",
+      "targetPath": "packages/siso-charts/src/echarts/examples/echarts/ex-buffer-echarts-bar-chart.tsx",
+      "adaptedSha256": "575ad31cc365942b25dd945e7a9feb588323ae33f0b29092bc3737bf625b6bd7",
+      "adaptations": [
+        "append uihub marker"
+      ],
+      "originalSourcePath": "app/src/kit/evilcharts/examples/echarts/ex-buffer-echarts-bar-chart.tsx"
+    },
+    {
+      "sourcePath": "../../hubs/ui/src/kit/evilcharts/examples/echarts/ex-buffer-echarts-line-chart.tsx",
+      "sourceSha256": "49824e804d5ea7ef3849835bb70ad672dfe6f476d9cd1e499e353a3f6b1fcdbc",
+      "targetPath": "packages/siso-charts/src/echarts/examples/echarts/ex-buffer-echarts-line-chart.tsx",
+      "adaptedSha256": "083d9a291f54ced2f912bae9543389aa641006b546808a1635543ebdab25aae3",
+      "adaptations": [
+        "append uihub marker"
+      ],
+      "originalSourcePath": "app/src/kit/evilcharts/examples/echarts/ex-buffer-echarts-line-chart.tsx"
+    },
+    {
+      "sourcePath": "../../hubs/ui/src/kit/evilcharts/examples/echarts/ex-bump-curve-echarts-composed-chart.tsx",
+      "sourceSha256": "f467190277ef581492eeb063d94798d169708b066c7d992205370eee157d358e",
+      "targetPath": "packages/siso-charts/src/echarts/examples/echarts/ex-bump-curve-echarts-composed-chart.tsx",
+      "adaptedSha256": "fb9026c76beb045223c605ff7383cf0fb322f749c9783983b1bf3b2e735e928a",
+      "adaptations": [
+        "append uihub marker"
+      ],
+      "originalSourcePath": "app/src/kit/evilcharts/examples/echarts/ex-bump-curve-echarts-composed-chart.tsx"
+    },
+    {
+      "sourcePath": "../../hubs/ui/src/kit/evilcharts/examples/echarts/ex-bump-curve-type-echarts-area-chart.tsx",
+      "sourceSha256": "df662f509065b903f50ac3a14bf594e6127ea7e5996f52c80c5fbc1b0e732065",
+      "targetPath": "packages/siso-charts/src/echarts/examples/echarts/ex-bump-curve-type-echarts-area-chart.tsx",
+      "adaptedSha256": "ff59ebd16e31d1b243d07e44a1a4bd9fdc81e58444bfafada21b5d7e424407b7",
+      "adaptations": [
+        "append uihub marker"
+      ],
+      "originalSourcePath": "app/src/kit/evilcharts/examples/echarts/ex-bump-curve-type-echarts-area-chart.tsx"
+    },
+    {
+      "sourcePath": "../../hubs/ui/src/kit/evilcharts/examples/echarts/ex-bump-curve-type-echarts-line-chart.tsx",
+      "sourceSha256": "141c6643ff1a710c693cd6e7316f533c9ea3e3efb3c94557876798303b1098db",
+      "targetPath": "packages/siso-charts/src/echarts/examples/echarts/ex-bump-curve-type-echarts-line-chart.tsx",
+      "adaptedSha256": "bac08f400e452a563db1c7938452ef0ac85c4af8ce82652b1ac5d9abc9a814d1",
+      "adaptations": [
+        "append uihub marker"
+      ],
+      "originalSourcePath": "app/src/kit/evilcharts/examples/echarts/ex-bump-curve-type-echarts-line-chart.tsx"
+    },
+    {
+      "sourcePath": "../../hubs/ui/src/kit/evilcharts/examples/echarts/ex-chart-config-default-echarts-bar-chart.tsx",
+      "sourceSha256": "3825e5106a059dcf52099320f950fb3682ad96a372bf56782a7ab4496d42c9cc",
+      "targetPath": "packages/siso-charts/src/echarts/examples/echarts/ex-chart-config-default-echarts-bar-chart.tsx",
+      "adaptedSha256": "0b8e78dfdf05cb67e0357893eec0c40073418df70b0ab6b4736cbad812d35b88",
+      "adaptations": [
+        "append uihub marker"
+      ],
+      "originalSourcePath": "app/src/kit/evilcharts/examples/echarts/ex-chart-config-default-echarts-bar-chart.tsx"
+    },
+    {
+      "sourcePath": "../../hubs/ui/src/kit/evilcharts/examples/echarts/ex-chart-config-icons-echarts-bar-chart.tsx",
+      "sourceSha256": "ddab1194c71ba389d43d546087cfb7bac240ac8004a7cf61aa8953450fb8cf6a",
+      "targetPath": "packages/siso-charts/src/echarts/examples/echarts/ex-chart-config-icons-echarts-bar-chart.tsx",
+      "adaptedSha256": "5502c6fb1980efb35732f41387da33651863b08172e7ed4905e5ee262c958516",
+      "adaptations": [
+        "append uihub marker"
+      ],
+      "originalSourcePath": "app/src/kit/evilcharts/examples/echarts/ex-chart-config-icons-echarts-bar-chart.tsx"
+    },
+    {
+      "sourcePath": "../../hubs/ui/src/kit/evilcharts/examples/echarts/ex-circle-grid-echarts-radar-chart.tsx",
+      "sourceSha256": "e3d015ed230a0aece8e0a4496208d3f135dbacd69d3d56bcb409f4fbc52aadd6",
+      "targetPath": "packages/siso-charts/src/echarts/examples/echarts/ex-circle-grid-echarts-radar-chart.tsx",
+      "adaptedSha256": "13eac5a2163d650c99fc816566d5646de09d9d45e1a5239add699a4dc0151fe7",
+      "adaptations": [
+        "append uihub marker"
+      ],
+      "originalSourcePath": "app/src/kit/evilcharts/examples/echarts/ex-circle-grid-echarts-radar-chart.tsx"
+    },
+    {
+      "sourcePath": "../../hubs/ui/src/kit/evilcharts/examples/echarts/ex-dashed-stroke-echarts-area-chart.tsx",
+      "sourceSha256": "40b677b95256b41516e904494277aa971daad1577b973db0c72a19e2d6ad2db7",
+      "targetPath": "packages/siso-charts/src/echarts/examples/echarts/ex-dashed-stroke-echarts-area-chart.tsx",
+      "adaptedSha256": "c92869339a3dc4904c4fa6a7d6c37b98fc3eb26811cfeb9274215f11305ccaea",
+      "adaptations": [
+        "append uihub marker"
+      ],
+      "originalSourcePath": "app/src/kit/evilcharts/examples/echarts/ex-dashed-stroke-echarts-area-chart.tsx"
+    },
+    {
+      "sourcePath": "../../hubs/ui/src/kit/evilcharts/examples/echarts/ex-dashed-stroke-echarts-composed-chart.tsx",
+      "sourceSha256": "e54a828f8b1fd40004f214e8d2aa7230260908ef260e1ad4833ef3ec320ec037",
+      "targetPath": "packages/siso-charts/src/echarts/examples/echarts/ex-dashed-stroke-echarts-composed-chart.tsx",
+      "adaptedSha256": "624f70fb7633a97c608ae5b70e287bfc8178ec28d9a684e67567889638555187",
+      "adaptations": [
+        "append uihub marker"
+      ],
+      "originalSourcePath": "app/src/kit/evilcharts/examples/echarts/ex-dashed-stroke-echarts-composed-chart.tsx"
+    },
+    {
+      "sourcePath": "../../hubs/ui/src/kit/evilcharts/examples/echarts/ex-dashed-stroke-echarts-line-chart.tsx",
+      "sourceSha256": "705cfd33c8db642a7cf9764686e86680fdade2f7686a1162a924c5b10613c163",
+      "targetPath": "packages/siso-charts/src/echarts/examples/echarts/ex-dashed-stroke-echarts-line-chart.tsx",
+      "adaptedSha256": "34cbad32af8a9b8e51f0b2fa131b56121e203f02f36bb08c760a3e660febf90a",
+      "adaptations": [
+        "append uihub marker"
+      ],
+      "originalSourcePath": "app/src/kit/evilcharts/examples/echarts/ex-dashed-stroke-echarts-line-chart.tsx"
+    },
+    {
+      "sourcePath": "../../hubs/ui/src/kit/evilcharts/examples/echarts/ex-default-type-echarts-area-chart.tsx",
+      "sourceSha256": "52803f3a8acc4a8e2c72da03658cd4459033cef5157f1054221996c8be7059a1",
+      "targetPath": "packages/siso-charts/src/echarts/examples/echarts/ex-default-type-echarts-area-chart.tsx",
+      "adaptedSha256": "c54d35a7b53913ce5835dcadbff5a780aaf4c95cd3c972024814b67cd9673269",
+      "adaptations": [
+        "append uihub marker"
+      ],
+      "originalSourcePath": "app/src/kit/evilcharts/examples/echarts/ex-default-type-echarts-area-chart.tsx"
+    },
+    {
+      "sourcePath": "../../hubs/ui/src/kit/evilcharts/examples/echarts/ex-default-variant-echarts-bar-chart.tsx",
+      "sourceSha256": "24a51d1cda1a8c1956a7e8b5861eb729e4faf78b11871004ee99b40d13c5caa8",
+      "targetPath": "packages/siso-charts/src/echarts/examples/echarts/ex-default-variant-echarts-bar-chart.tsx",
+      "adaptedSha256": "b777e4b62aa68bea3c7eec129472a560214729607cc5e6f6af91d58f781f4446",
+      "adaptations": [
+        "append uihub marker"
+      ],
+      "originalSourcePath": "app/src/kit/evilcharts/examples/echarts/ex-default-variant-echarts-bar-chart.tsx"
+    },
+    {
+      "sourcePath": "../../hubs/ui/src/kit/evilcharts/examples/echarts/ex-donut-echarts-pie-chart.tsx",
+      "sourceSha256": "f68e63be63cb330bdd66f43148cdcab75eb40b4cd6cda87e316021daedc37e9b",
+      "targetPath": "packages/siso-charts/src/echarts/examples/echarts/ex-donut-echarts-pie-chart.tsx",
+      "adaptedSha256": "d3d81b13c546fbf2575a1208098abe4c064d55a3d75e2675687b3699929a60b3",
+      "adaptations": [
+        "append uihub marker"
+      ],
+      "originalSourcePath": "app/src/kit/evilcharts/examples/echarts/ex-donut-echarts-pie-chart.tsx"
+    },
+    {
+      "sourcePath": "../../hubs/ui/src/kit/evilcharts/examples/echarts/ex-dot-border-echarts-line-chart.tsx",
+      "sourceSha256": "a9b3f609ee6c0cc86a4f38d4ab9ca696e677d0f755cd33bdae1cd665a0fdb2c7",
+      "targetPath": "packages/siso-charts/src/echarts/examples/echarts/ex-dot-border-echarts-line-chart.tsx",
+      "adaptedSha256": "c2a17f00dbda622e636bd30deff0fb45cf9b9c0523daa7489bbbac9f35a34977",
+      "adaptations": [
+        "append uihub marker"
+      ],
+      "originalSourcePath": "app/src/kit/evilcharts/examples/echarts/ex-dot-border-echarts-line-chart.tsx"
+    },
+    {
+      "sourcePath": "../../hubs/ui/src/kit/evilcharts/examples/echarts/ex-dot-colored-border-echarts-line-chart.tsx",
+      "sourceSha256": "30748a37a562f1fdc89d15cf1f7947171ad88b15e180c071a48d1ec93b0c0511",
+      "targetPath": "packages/siso-charts/src/echarts/examples/echarts/ex-dot-colored-border-echarts-line-chart.tsx",
+      "adaptedSha256": "7cf793f5bc87c0e718c184deb839b64942679a9a7218745efdcb1179c93d7f45",
+      "adaptations": [
+        "append uihub marker"
+      ],
+      "originalSourcePath": "app/src/kit/evilcharts/examples/echarts/ex-dot-colored-border-echarts-line-chart.tsx"
+    },
+    {
+      "sourcePath": "../../hubs/ui/src/kit/evilcharts/examples/echarts/ex-dot-default-echarts-line-chart.tsx",
+      "sourceSha256": "ed7333e1083562c0d9979d9e6bd00c349f5a5fb5e33cbf4212fac65fdeea013a",
+      "targetPath": "packages/siso-charts/src/echarts/examples/echarts/ex-dot-default-echarts-line-chart.tsx",
+      "adaptedSha256": "d1fb8e9e158b2d29979778c844eb8659f1c68c37be5d4a80e242e0276b015a18",
+      "adaptations": [
+        "append uihub marker"
+      ],
+      "originalSourcePath": "app/src/kit/evilcharts/examples/echarts/ex-dot-default-echarts-line-chart.tsx"
+    },
+    {
+      "sourcePath": "../../hubs/ui/src/kit/evilcharts/examples/echarts/ex-dot-ping-echarts-line-chart.tsx",
+      "sourceSha256": "63542d8d781ba9eb7893d309b709d6cd4b4faeb000628965168e926f1865fae9",
+      "targetPath": "packages/siso-charts/src/echarts/examples/echarts/ex-dot-ping-echarts-line-chart.tsx",
+      "adaptedSha256": "20a8b850deb19040275c99fbffc62b4a469873138a4c2c18f987776083fc9171",
+      "adaptations": [
+        "append uihub marker"
+      ],
+      "originalSourcePath": "app/src/kit/evilcharts/examples/echarts/ex-dot-ping-echarts-line-chart.tsx"
+    },
+    {
+      "sourcePath": "../../hubs/ui/src/kit/evilcharts/examples/echarts/ex-dots-echarts-composed-chart.tsx",
+      "sourceSha256": "05d078564ed7258bdd4301c1ba985a70f406ac6c436fb257eba7a627c318175c",
+      "targetPath": "packages/siso-charts/src/echarts/examples/echarts/ex-dots-echarts-composed-chart.tsx",
+      "adaptedSha256": "67d5d7cab4cd13605b9edb48caeedf112f4e9aae51e34062efb2c2acac6c9ced",
+      "adaptations": [
+        "append uihub marker"
+      ],
+      "originalSourcePath": "app/src/kit/evilcharts/examples/echarts/ex-dots-echarts-composed-chart.tsx"
+    },
+    {
+      "sourcePath": "../../hubs/ui/src/kit/evilcharts/examples/echarts/ex-dotted-area-variant-echarts-area-chart.tsx",
+      "sourceSha256": "fcf792b1fd14cca5b36c7ba87d88ddc906f0e4cae6c5d1f9f742dcb3e005ea00",
+      "targetPath": "packages/siso-charts/src/echarts/examples/echarts/ex-dotted-area-variant-echarts-area-chart.tsx",
+      "adaptedSha256": "65c636b217934ec556ca548e4d479e8ea1f20eee0d2d51919d8cb1f06eb54ff3",
+      "adaptations": [
+        "append uihub marker"
+      ],
+      "originalSourcePath": "app/src/kit/evilcharts/examples/echarts/ex-dotted-area-variant-echarts-area-chart.tsx"
+    },
+    {
+      "sourcePath": "../../hubs/ui/src/kit/evilcharts/examples/echarts/ex-duotone-reverse-variant-echarts-bar-chart.tsx",
+      "sourceSha256": "2f09639f54ec189bb6c08279c5e2def5ea3a0b8fcd97d37a9b6964fefc946f8b",
+      "targetPath": "packages/siso-charts/src/echarts/examples/echarts/ex-duotone-reverse-variant-echarts-bar-chart.tsx",
+      "adaptedSha256": "4f31d075b538a27c08db0d89862ebbaee6d30c2eb88b0ff9c50bfa76d5b290d8",
+      "adaptations": [
+        "append uihub marker"
+      ],
+      "originalSourcePath": "app/src/kit/evilcharts/examples/echarts/ex-duotone-reverse-variant-echarts-bar-chart.tsx"
+    },
+    {
+      "sourcePath": "../../hubs/ui/src/kit/evilcharts/examples/echarts/ex-duotone-variant-echarts-bar-chart.tsx",
+      "sourceSha256": "fb581b254bfba03a57f329378206b8546cbd0860c3ed4b667698fbaba850cd20",
+      "targetPath": "packages/siso-charts/src/echarts/examples/echarts/ex-duotone-variant-echarts-bar-chart.tsx",
+      "adaptedSha256": "61382886f897b106f3c4069fbe806145b08c3bee679772fd516cf58cb23fa342",
+      "adaptations": [
+        "append uihub marker"
+      ],
+      "originalSourcePath": "app/src/kit/evilcharts/examples/echarts/ex-duotone-variant-echarts-bar-chart.tsx"
+    },
+    {
+      "sourcePath": "../../hubs/ui/src/kit/evilcharts/examples/echarts/ex-duotone-variant-echarts-composed-chart.tsx",
+      "sourceSha256": "ec1764192ca26682aeaa4493d0b4a00d06003c313af7b60b7af056a5187320c4",
+      "targetPath": "packages/siso-charts/src/echarts/examples/echarts/ex-duotone-variant-echarts-composed-chart.tsx",
+      "adaptedSha256": "5a0fcc43e80fd2bfb67a9e1249fda7c131e70b5d59994314cbb5c6af6695a297",
+      "adaptations": [
+        "append uihub marker"
+      ],
+      "originalSourcePath": "app/src/kit/evilcharts/examples/echarts/ex-duotone-variant-echarts-composed-chart.tsx"
+    },
+    {
+      "sourcePath": "../../hubs/ui/src/kit/evilcharts/examples/echarts/ex-echarts-area-chart.tsx",
+      "sourceSha256": "8c2def4f4ba8946c3877ac8aad6b9d411091b78f0284af3d3b2faa3981a855a9",
+      "targetPath": "packages/siso-charts/src/echarts/examples/echarts/ex-echarts-area-chart.tsx",
+      "adaptedSha256": "f48291c2ece3a7cfbd673fb0691a04fc4cd0a7ef3499f855bacc172f731b1e15",
+      "adaptations": [
+        "append uihub marker"
+      ],
+      "originalSourcePath": "app/src/kit/evilcharts/examples/echarts/ex-echarts-area-chart.tsx"
+    },
+    {
+      "sourcePath": "../../hubs/ui/src/kit/evilcharts/examples/echarts/ex-echarts-bar-chart.tsx",
+      "sourceSha256": "d0aa4cd695f35aa343fcebf844ef4a4308c5df9d703c0343249d1c3e51d0a5a9",
+      "targetPath": "packages/siso-charts/src/echarts/examples/echarts/ex-echarts-bar-chart.tsx",
+      "adaptedSha256": "f7044263e15a0c6181584c75048b54f1b2832042a60458e823d44a785548fd5d",
+      "adaptations": [
+        "append uihub marker"
+      ],
+      "originalSourcePath": "app/src/kit/evilcharts/examples/echarts/ex-echarts-bar-chart.tsx"
+    },
+    {
+      "sourcePath": "../../hubs/ui/src/kit/evilcharts/examples/echarts/ex-echarts-composed-chart.tsx",
+      "sourceSha256": "633459a45ec9899559a176118dec577aee3bebd3706f1cab5a80111b0b29f66c",
+      "targetPath": "packages/siso-charts/src/echarts/examples/echarts/ex-echarts-composed-chart.tsx",
+      "adaptedSha256": "ad74b0a010b32371e437e116f239d321b561b18cb111aecb2feda403ba40289b",
+      "adaptations": [
+        "append uihub marker"
+      ],
+      "originalSourcePath": "app/src/kit/evilcharts/examples/echarts/ex-echarts-composed-chart.tsx"
+    },
+    {
+      "sourcePath": "../../hubs/ui/src/kit/evilcharts/examples/echarts/ex-echarts-line-chart.tsx",
+      "sourceSha256": "ca9fae87999820e749b9ae67e4fa637657f9c0a290b82ada3ab0713d93e89afc",
+      "targetPath": "packages/siso-charts/src/echarts/examples/echarts/ex-echarts-line-chart.tsx",
+      "adaptedSha256": "c243cf02eac3208b456c3b361a47ef1ee0f479591193d4e7add1026ee60ebb37",
+      "adaptations": [
+        "append uihub marker"
+      ],
+      "originalSourcePath": "app/src/kit/evilcharts/examples/echarts/ex-echarts-line-chart.tsx"
+    },
+    {
+      "sourcePath": "../../hubs/ui/src/kit/evilcharts/examples/echarts/ex-echarts-pie-chart.tsx",
+      "sourceSha256": "d8836f83cdb5f1a012acf3371b5ef392681cc6e5be7bd671e9ee9d1de658bd66",
+      "targetPath": "packages/siso-charts/src/echarts/examples/echarts/ex-echarts-pie-chart.tsx",
+      "adaptedSha256": "d7bc0dda129b5cafffdde1fa120ef76617eda5385de9bfc3fd79fe94895c48fd",
+      "adaptations": [
+        "append uihub marker"
+      ],
+      "originalSourcePath": "app/src/kit/evilcharts/examples/echarts/ex-echarts-pie-chart.tsx"
+    },
+    {
+      "sourcePath": "../../hubs/ui/src/kit/evilcharts/examples/echarts/ex-echarts-radar-chart.tsx",
+      "sourceSha256": "e39c4c19fb927182dfef5e8eef4033043b8956e6a3f39f423684dceff264c862",
+      "targetPath": "packages/siso-charts/src/echarts/examples/echarts/ex-echarts-radar-chart.tsx",
+      "adaptedSha256": "0853ebcf42c207fa98f63a3d2ed7937f70cbab5ecab23f20739cce5758c6976e",
+      "adaptations": [
+        "append uihub marker"
+      ],
+      "originalSourcePath": "app/src/kit/evilcharts/examples/echarts/ex-echarts-radar-chart.tsx"
+    },
+    {
+      "sourcePath": "../../hubs/ui/src/kit/evilcharts/examples/echarts/ex-echarts-radial-chart.tsx",
+      "sourceSha256": "a5d5176350621452979e5012da32275ad1cd3f246cf8d4ae1443346d4ec80ee2",
+      "targetPath": "packages/siso-charts/src/echarts/examples/echarts/ex-echarts-radial-chart.tsx",
+      "adaptedSha256": "1c1c2db02e37859247870d744b5189e46ba2cd1d03d9d77e4246d9fbe3ed6aad",
+      "adaptations": [
+        "append uihub marker"
+      ],
+      "originalSourcePath": "app/src/kit/evilcharts/examples/echarts/ex-echarts-radial-chart.tsx"
+    },
+    {
+      "sourcePath": "../../hubs/ui/src/kit/evilcharts/examples/echarts/ex-echarts-sankey-chart.tsx",
+      "sourceSha256": "782dbf02874f89ad6933c5e79864bda9c001f855a5fd1a9016a6a0fc96200795",
+      "targetPath": "packages/siso-charts/src/echarts/examples/echarts/ex-echarts-sankey-chart.tsx",
+      "adaptedSha256": "5b22a0ef8d974480862a4e8c07d421c92e804eac0649d0c86eb881c5ff886c3d",
+      "adaptations": [
+        "append uihub marker"
+      ],
+      "originalSourcePath": "app/src/kit/evilcharts/examples/echarts/ex-echarts-sankey-chart.tsx"
+    },
+    {
+      "sourcePath": "../../hubs/ui/src/kit/evilcharts/examples/echarts/ex-expandable-variant-echarts-bar-chart.tsx",
+      "sourceSha256": "3cf0804ef1215a7fd7d9c8dc3f41639a35519b7dd0ebee645d832a1d41cad31c",
+      "targetPath": "packages/siso-charts/src/echarts/examples/echarts/ex-expandable-variant-echarts-bar-chart.tsx",
+      "adaptedSha256": "11276b5ea399e4b00724a58524507aa96d3cac8232722e38780cf118faeda77d",
+      "adaptations": [
+        "append uihub marker"
+      ],
+      "originalSourcePath": "app/src/kit/evilcharts/examples/echarts/ex-expandable-variant-echarts-bar-chart.tsx"
+    },
+    {
+      "sourcePath": "../../hubs/ui/src/kit/evilcharts/examples/echarts/ex-expanded-type-echarts-area-chart.tsx",
+      "sourceSha256": "35487e0630f31857525745a0186e117595e152375e390c520f048b6f884b6fb0",
+      "targetPath": "packages/siso-charts/src/echarts/examples/echarts/ex-expanded-type-echarts-area-chart.tsx",
+      "adaptedSha256": "80f203452360684d23b9a63179a9afe0952938c382cfdf18c962eec8af4e6b3e",
+      "adaptations": [
+        "append uihub marker"
+      ],
+      "originalSourcePath": "app/src/kit/evilcharts/examples/echarts/ex-expanded-type-echarts-area-chart.tsx"
+    },
+    {
+      "sourcePath": "../../hubs/ui/src/kit/evilcharts/examples/echarts/ex-glowing-desktop-echarts-bar-chart.tsx",
+      "sourceSha256": "a69763ef988db7acea3f83249bf2502f79348107e93573401be7a7aa5571b252",
+      "targetPath": "packages/siso-charts/src/echarts/examples/echarts/ex-glowing-desktop-echarts-bar-chart.tsx",
+      "adaptedSha256": "f5ca609e885607911203a329995299b782b26ce7fbb4a625caf57040e4219441",
+      "adaptations": [
+        "append uihub marker"
+      ],
+      "originalSourcePath": "app/src/kit/evilcharts/examples/echarts/ex-glowing-desktop-echarts-bar-chart.tsx"
+    },
+    {
+      "sourcePath": "../../hubs/ui/src/kit/evilcharts/examples/echarts/ex-glowing-desktop-echarts-line-chart.tsx",
+      "sourceSha256": "93b5def2801442f31d4600fb9c1dcd4d2d57af9b7154c9fa22595abb14978430",
+      "targetPath": "packages/siso-charts/src/echarts/examples/echarts/ex-glowing-desktop-echarts-line-chart.tsx",
+      "adaptedSha256": "896a128998bd61455aae24c0040ffd470dcbf21953dfaed117319a434904f0ea",
+      "adaptations": [
+        "append uihub marker"
+      ],
+      "originalSourcePath": "app/src/kit/evilcharts/examples/echarts/ex-glowing-desktop-echarts-line-chart.tsx"
+    },
+    {
+      "sourcePath": "../../hubs/ui/src/kit/evilcharts/examples/echarts/ex-glowing-echarts-composed-chart.tsx",
+      "sourceSha256": "f8e26746f12ab87bcff628a102f2a3442ddd7447498e5b3bad1d5f2d2d1755be",
+      "targetPath": "packages/siso-charts/src/echarts/examples/echarts/ex-glowing-echarts-composed-chart.tsx",
+      "adaptedSha256": "528f7186c4b9dcffd366698ec32a2ad0c31008b409ad8f0ea5815e1c18389592",
+      "adaptations": [
+        "append uihub marker"
+      ],
+      "originalSourcePath": "app/src/kit/evilcharts/examples/echarts/ex-glowing-echarts-composed-chart.tsx"
+    },
+    {
+      "sourcePath": "../../hubs/ui/src/kit/evilcharts/examples/echarts/ex-glowing-mobile-echarts-bar-chart.tsx",
+      "sourceSha256": "09ac9667c617519f220941a1da71d146bdb5c034119159b62ad1808a1c3dc680",
+      "targetPath": "packages/siso-charts/src/echarts/examples/echarts/ex-glowing-mobile-echarts-bar-chart.tsx",
+      "adaptedSha256": "f6d9ad582bb1816d0e7240a958128c047953d98387f40a1c39fa4cf49b57b49a",
+      "adaptations": [
+        "append uihub marker"
+      ],
+      "originalSourcePath": "app/src/kit/evilcharts/examples/echarts/ex-glowing-mobile-echarts-bar-chart.tsx"
+    },
+    {
+      "sourcePath": "../../hubs/ui/src/kit/evilcharts/examples/echarts/ex-glowing-mobile-echarts-line-chart.tsx",
+      "sourceSha256": "f20257d557603ea65bd2f5462fd74b158469159c46c3259da193ba906e839456",
+      "targetPath": "packages/siso-charts/src/echarts/examples/echarts/ex-glowing-mobile-echarts-line-chart.tsx",
+      "adaptedSha256": "013bee27c2637ae45613558e27bddf99eb4193dd2e3ac3b044093aa1c4c4ec3f",
+      "adaptations": [
+        "append uihub marker"
+      ],
+      "originalSourcePath": "app/src/kit/evilcharts/examples/echarts/ex-glowing-mobile-echarts-line-chart.tsx"
+    },
+    {
+      "sourcePath": "../../hubs/ui/src/kit/evilcharts/examples/echarts/ex-gradient-area-variant-echarts-area-chart.tsx",
+      "sourceSha256": "a932b6bb0120d80293bafb1275703a8b50cdaf574c665000b3ae3d9a4288ab36",
+      "targetPath": "packages/siso-charts/src/echarts/examples/echarts/ex-gradient-area-variant-echarts-area-chart.tsx",
+      "adaptedSha256": "14bec5cca35a3b5815b0bd97701317238c996c6b3f51c4401ed0af761499232c",
+      "adaptations": [
+        "append uihub marker"
+      ],
+      "originalSourcePath": "app/src/kit/evilcharts/examples/echarts/ex-gradient-area-variant-echarts-area-chart.tsx"
+    },
+    {
+      "sourcePath": "../../hubs/ui/src/kit/evilcharts/examples/echarts/ex-gradient-colors-bump-echarts-area-chart.tsx",
+      "sourceSha256": "543f3c4417814eeac70db3c8151e1b7bd187bc333bb0ebc2dc0f13e9e55738c2",
+      "targetPath": "packages/siso-charts/src/echarts/examples/echarts/ex-gradient-colors-bump-echarts-area-chart.tsx",
+      "adaptedSha256": "e94f58c90648d95e28aab5f36f1cf9067969548693e2bd9d4cbdf19d0c426f8e",
+      "adaptations": [
+        "append uihub marker"
+      ],
+      "originalSourcePath": "app/src/kit/evilcharts/examples/echarts/ex-gradient-colors-bump-echarts-area-chart.tsx"
+    },
+    {
+      "sourcePath": "../../hubs/ui/src/kit/evilcharts/examples/echarts/ex-gradient-colors-bump-echarts-line-chart.tsx",
+      "sourceSha256": "c0205174996fdfc90099e8c2ed2d0aca8aea47739fa4a018b0f08a4f1b105b45",
+      "targetPath": "packages/siso-charts/src/echarts/examples/echarts/ex-gradient-colors-bump-echarts-line-chart.tsx",
+      "adaptedSha256": "e1de8bbcb1a1b767dd5e93734613ee1359df979112505361f1327375593136ae",
+      "adaptations": [
+        "append uihub marker"
+      ],
+      "originalSourcePath": "app/src/kit/evilcharts/examples/echarts/ex-gradient-colors-bump-echarts-line-chart.tsx"
+    },
+    {
+      "sourcePath": "../../hubs/ui/src/kit/evilcharts/examples/echarts/ex-gradient-colors-echarts-area-chart.tsx",
+      "sourceSha256": "ed26644c98c004073270649020199830566031be765010eaab3d380620ab2306",
+      "targetPath": "packages/siso-charts/src/echarts/examples/echarts/ex-gradient-colors-echarts-area-chart.tsx",
+      "adaptedSha256": "f192153ee120311ade7a50264bdf8b6474dd57b09fb010157083caf55fc9ba8c",
+      "adaptations": [
+        "append uihub marker"
+      ],
+      "originalSourcePath": "app/src/kit/evilcharts/examples/echarts/ex-gradient-colors-echarts-area-chart.tsx"
+    },
+    {
+      "sourcePath": "../../hubs/ui/src/kit/evilcharts/examples/echarts/ex-gradient-colors-echarts-bar-chart.tsx",
+      "sourceSha256": "1d4b0369aca6b3221cae9fb486b670e3c1c14391beea59cca56569bdef45c622",
+      "targetPath": "packages/siso-charts/src/echarts/examples/echarts/ex-gradient-colors-echarts-bar-chart.tsx",
+      "adaptedSha256": "117a035d5c3fe6b25baded43b49e83ad21918737d8d30f84511f98da31dccd5e",
+      "adaptations": [
+        "append uihub marker"
+      ],
+      "originalSourcePath": "app/src/kit/evilcharts/examples/echarts/ex-gradient-colors-echarts-bar-chart.tsx"
+    },
+    {
+      "sourcePath": "../../hubs/ui/src/kit/evilcharts/examples/echarts/ex-gradient-colors-echarts-composed-chart.tsx",
+      "sourceSha256": "d91577fad04985a87e39bb56d35292619b55a689c3b43ab2360c759a3e20637a",
+      "targetPath": "packages/siso-charts/src/echarts/examples/echarts/ex-gradient-colors-echarts-composed-chart.tsx",
+      "adaptedSha256": "00cb7cc40ee623656a751483a33c44e44a3d34efd8959537f8abfc1e53f0a1c0",
+      "adaptations": [
+        "append uihub marker"
+      ],
+      "originalSourcePath": "app/src/kit/evilcharts/examples/echarts/ex-gradient-colors-echarts-composed-chart.tsx"
+    },
+    {
+      "sourcePath": "../../hubs/ui/src/kit/evilcharts/examples/echarts/ex-gradient-colors-echarts-line-chart.tsx",
+      "sourceSha256": "774b6ada6c3306f03df80baad811e5e44e432a9831a9d021a56f8bcc85bc5d28",
+      "targetPath": "packages/siso-charts/src/echarts/examples/echarts/ex-gradient-colors-echarts-line-chart.tsx",
+      "adaptedSha256": "ff09caa92c2f751f0e81719569ad8d8563deafe9810ccf864600fc8f25cf25d2",
+      "adaptations": [
+        "append uihub marker"
+      ],
+      "originalSourcePath": "app/src/kit/evilcharts/examples/echarts/ex-gradient-colors-echarts-line-chart.tsx"
+    },
+    {
+      "sourcePath": "../../hubs/ui/src/kit/evilcharts/examples/echarts/ex-gradient-colors-echarts-pie-chart.tsx",
+      "sourceSha256": "ee44147583da84dcdbad69d266000ec0a7bcd5da9b26c764790b63876491840c",
+      "targetPath": "packages/siso-charts/src/echarts/examples/echarts/ex-gradient-colors-echarts-pie-chart.tsx",
+      "adaptedSha256": "1c39235957515b42d2b3cb735376cb8fa2825fcde7e02659ca1b6744ce346b00",
+      "adaptations": [
+        "append uihub marker"
+      ],
+      "originalSourcePath": "app/src/kit/evilcharts/examples/echarts/ex-gradient-colors-echarts-pie-chart.tsx"
+    },
+    {
+      "sourcePath": "../../hubs/ui/src/kit/evilcharts/examples/echarts/ex-gradient-colors-echarts-radar-chart.tsx",
+      "sourceSha256": "e99aaac500a12d42eee71b522cf7fc09841bec8ec46d6f008059a16b71a4fdd6",
+      "targetPath": "packages/siso-charts/src/echarts/examples/echarts/ex-gradient-colors-echarts-radar-chart.tsx",
+      "adaptedSha256": "9b748215b112790085a1363765a231921e7abbc679a07f0891cf6506ab049cfc",
+      "adaptations": [
+        "append uihub marker"
+      ],
+      "originalSourcePath": "app/src/kit/evilcharts/examples/echarts/ex-gradient-colors-echarts-radar-chart.tsx"
+    },
+    {
+      "sourcePath": "../../hubs/ui/src/kit/evilcharts/examples/echarts/ex-gradient-colors-echarts-radial-chart.tsx",
+      "sourceSha256": "dcb50a4c699f796319c9b04b3aa236865a1b9b684d7b5b48b1770d0e86ebf5b2",
+      "targetPath": "packages/siso-charts/src/echarts/examples/echarts/ex-gradient-colors-echarts-radial-chart.tsx",
+      "adaptedSha256": "38b0d502052d16a0a1a931a390b56c40a5009a03e271d90c00f59b9950c51059",
+      "adaptations": [
+        "append uihub marker"
+      ],
+      "originalSourcePath": "app/src/kit/evilcharts/examples/echarts/ex-gradient-colors-echarts-radial-chart.tsx"
+    },
+    {
+      "sourcePath": "../../hubs/ui/src/kit/evilcharts/examples/echarts/ex-gradient-colors-echarts-sankey-chart.tsx",
+      "sourceSha256": "facbe9d480f135f6c052975a79d1eb91f4f99570f0790bade04f124b58beea5c",
+      "targetPath": "packages/siso-charts/src/echarts/examples/echarts/ex-gradient-colors-echarts-sankey-chart.tsx",
+      "adaptedSha256": "0631c9cb13555f96fb88e5020476f9d9a494888778a1d2c6a079644287e9c296",
+      "adaptations": [
+        "append uihub marker"
+      ],
+      "originalSourcePath": "app/src/kit/evilcharts/examples/echarts/ex-gradient-colors-echarts-sankey-chart.tsx"
+    },
+    {
+      "sourcePath": "../../hubs/ui/src/kit/evilcharts/examples/echarts/ex-gradient-reverse-area-variant-echarts-area-chart.tsx",
+      "sourceSha256": "5357a3125b4a9f665a619ab191ab691d1de5c64840e04f20e9629c4295972ab3",
+      "targetPath": "packages/siso-charts/src/echarts/examples/echarts/ex-gradient-reverse-area-variant-echarts-area-chart.tsx",
+      "adaptedSha256": "81622a986d0320995c1bf06156fafe0af51ac87ce18ffe901dcc9bb8f7eaf6ce",
+      "adaptations": [
+        "append uihub marker"
+      ],
+      "originalSourcePath": "app/src/kit/evilcharts/examples/echarts/ex-gradient-reverse-area-variant-echarts-area-chart.tsx"
+    },
+    {
+      "sourcePath": "../../hubs/ui/src/kit/evilcharts/examples/echarts/ex-gradient-variant-echarts-bar-chart.tsx",
+      "sourceSha256": "b4a4027095442407e283c7d640be55fcfbee04cb33d489c206157e0f56ced462",
+      "targetPath": "packages/siso-charts/src/echarts/examples/echarts/ex-gradient-variant-echarts-bar-chart.tsx",
+      "adaptedSha256": "073ade721b7813134d3031045e80a08ee7a4617fa3d887beb3f075112c20214e",
+      "adaptations": [
+        "append uihub marker"
+      ],
+      "originalSourcePath": "app/src/kit/evilcharts/examples/echarts/ex-gradient-variant-echarts-bar-chart.tsx"
+    },
+    {
+      "sourcePath": "../../hubs/ui/src/kit/evilcharts/examples/echarts/ex-gradient-variant-echarts-composed-chart.tsx",
+      "sourceSha256": "193f8b4fd1705ca5a0f51e412a9224b089395f5e82f983b7cc4c6e263059c529",
+      "targetPath": "packages/siso-charts/src/echarts/examples/echarts/ex-gradient-variant-echarts-composed-chart.tsx",
+      "adaptedSha256": "c94b6057cf8063221672ad4811e695351e1d7d9dc60d5fb274ad135cda505302",
+      "adaptations": [
+        "append uihub marker"
+      ],
+      "originalSourcePath": "app/src/kit/evilcharts/examples/echarts/ex-gradient-variant-echarts-composed-chart.tsx"
+    },
+    {
+      "sourcePath": "../../hubs/ui/src/kit/evilcharts/examples/echarts/ex-hatched-area-variant-echarts-area-chart.tsx",
+      "sourceSha256": "41c2b123387a0e2fa9b1f1d711b391d1e1fdc8581d3023c9841c0b29b9448a2f",
+      "targetPath": "packages/siso-charts/src/echarts/examples/echarts/ex-hatched-area-variant-echarts-area-chart.tsx",
+      "adaptedSha256": "ed7c9310e0f2e295dd8819b2236e1e93173ba0d89477f3db76ec984cc5e3d391",
+      "adaptations": [
+        "append uihub marker"
+      ],
+      "originalSourcePath": "app/src/kit/evilcharts/examples/echarts/ex-hatched-area-variant-echarts-area-chart.tsx"
+    },
+    {
+      "sourcePath": "../../hubs/ui/src/kit/evilcharts/examples/echarts/ex-hatched-variant-echarts-bar-chart.tsx",
+      "sourceSha256": "c26734f8e636e8cc097143ac4c62fe50065a1e58f36b4c56b2119cf56fafbbd1",
+      "targetPath": "packages/siso-charts/src/echarts/examples/echarts/ex-hatched-variant-echarts-bar-chart.tsx",
+      "adaptedSha256": "10e1042a575ab9ebde60c71bc28b946d1ec71d209acca10d63c8767554f37100",
+      "adaptations": [
+        "append uihub marker"
+      ],
+      "originalSourcePath": "app/src/kit/evilcharts/examples/echarts/ex-hatched-variant-echarts-bar-chart.tsx"
+    },
+    {
+      "sourcePath": "../../hubs/ui/src/kit/evilcharts/examples/echarts/ex-hatched-variant-echarts-composed-chart.tsx",
+      "sourceSha256": "e595786db773fabf36b8d0646a11b75caef54a27b46f431ce06fe5dd37e80431",
+      "targetPath": "packages/siso-charts/src/echarts/examples/echarts/ex-hatched-variant-echarts-composed-chart.tsx",
+      "adaptedSha256": "49c516e5db03056e28495bb563febe272eafdf81ffe9ae9d936d4b0d197149e6",
+      "adaptations": [
+        "append uihub marker"
+      ],
+      "originalSourcePath": "app/src/kit/evilcharts/examples/echarts/ex-hatched-variant-echarts-composed-chart.tsx"
+    },
+    {
+      "sourcePath": "../../hubs/ui/src/kit/evilcharts/examples/echarts/ex-horizontal-layout-echarts-bar-chart.tsx",
+      "sourceSha256": "899f787b8bdc79e0bef90fbb95dba6926a5422347fea1f7c4a883d588bd5c454",
+      "targetPath": "packages/siso-charts/src/echarts/examples/echarts/ex-horizontal-layout-echarts-bar-chart.tsx",
+      "adaptedSha256": "4ae025a5c851ba8ae06091334826b97014fc94fbef8310179dca1229c2e61b60",
+      "adaptations": [
+        "append uihub marker"
+      ],
+      "originalSourcePath": "app/src/kit/evilcharts/examples/echarts/ex-horizontal-layout-echarts-bar-chart.tsx"
+    },
+    {
+      "sourcePath": "../../hubs/ui/src/kit/evilcharts/examples/echarts/ex-hover-highlight-echarts-area-chart.tsx",
+      "sourceSha256": "91d7359a92ef054234aae65fc446794d43f1987d4375d7625174f47bfbf9e755",
+      "targetPath": "packages/siso-charts/src/echarts/examples/echarts/ex-hover-highlight-echarts-area-chart.tsx",
+      "adaptedSha256": "59c66d780a14e0939ab3a6babad4a6ae70478fbb18ac8541426a7f05149097c1",
+      "adaptations": [
+        "append uihub marker"
+      ],
+      "originalSourcePath": "app/src/kit/evilcharts/examples/echarts/ex-hover-highlight-echarts-area-chart.tsx"
+    },
+    {
+      "sourcePath": "../../hubs/ui/src/kit/evilcharts/examples/echarts/ex-hover-highlight-echarts-bar-chart.tsx",
+      "sourceSha256": "94970668bf76ee983d7c91610fe9ca6256602cb9fdc25303a01d4ae53c777d40",
+      "targetPath": "packages/siso-charts/src/echarts/examples/echarts/ex-hover-highlight-echarts-bar-chart.tsx",
+      "adaptedSha256": "a7606c80928d16ff26f2db73d5b19b0009f6c0b9b317cad225e586ba50c2f0aa",
+      "adaptations": [
+        "append uihub marker"
+      ],
+      "originalSourcePath": "app/src/kit/evilcharts/examples/echarts/ex-hover-highlight-echarts-bar-chart.tsx"
+    },
+    {
+      "sourcePath": "../../hubs/ui/src/kit/evilcharts/examples/echarts/ex-hover-highlight-echarts-composed-chart.tsx",
+      "sourceSha256": "08a10cb1e6a482a4fbd6aeba1fa67545d30cbc9b5dc6255c3c6bdb904ea2d061",
+      "targetPath": "packages/siso-charts/src/echarts/examples/echarts/ex-hover-highlight-echarts-composed-chart.tsx",
+      "adaptedSha256": "58539560f63235714c21f2aba00e5e230dd1c558ea2d1e7684815da4f5cdcfd4",
+      "adaptations": [
+        "append uihub marker"
+      ],
+      "originalSourcePath": "app/src/kit/evilcharts/examples/echarts/ex-hover-highlight-echarts-composed-chart.tsx"
+    },
+    {
+      "sourcePath": "../../hubs/ui/src/kit/evilcharts/examples/echarts/ex-hover-reveal-echarts-area-chart.tsx",
+      "sourceSha256": "9884a2fc8011c5a5e7b0b825179d4db1f02370afea9bf33a8888a8cbfe836fef",
+      "targetPath": "packages/siso-charts/src/echarts/examples/echarts/ex-hover-reveal-echarts-area-chart.tsx",
+      "adaptedSha256": "097fd154145c94e7bf483c4d6243dcc5f6ee6299d01016f46eb92ad0b07470ff",
+      "adaptations": [
+        "append uihub marker"
+      ],
+      "originalSourcePath": "app/src/kit/evilcharts/examples/echarts/ex-hover-reveal-echarts-area-chart.tsx"
+    },
+    {
+      "sourcePath": "../../hubs/ui/src/kit/evilcharts/examples/echarts/ex-hover-reveal-echarts-line-chart.tsx",
+      "sourceSha256": "d6c8953c9904eb16d2a9fbd35d141787f4913a0aec4aa46d74af941560c78f1d",
+      "targetPath": "packages/siso-charts/src/echarts/examples/echarts/ex-hover-reveal-echarts-line-chart.tsx",
+      "adaptedSha256": "15b70bec453e6b70c4cbeb12a111c61698b0a9968f1dd8a6557d19c3f40949b1",
+      "adaptations": [
+        "append uihub marker"
+      ],
+      "originalSourcePath": "app/src/kit/evilcharts/examples/echarts/ex-hover-reveal-echarts-line-chart.tsx"
+    },
+    {
+      "sourcePath": "../../hubs/ui/src/kit/evilcharts/examples/echarts/ex-labeled-nodes-echarts-sankey-chart.tsx",
+      "sourceSha256": "21a310e0a3c6aadfb98248b19cd430c1fe4f8ded6b286aa87fff34520ebb3704",
+      "targetPath": "packages/siso-charts/src/echarts/examples/echarts/ex-labeled-nodes-echarts-sankey-chart.tsx",
+      "adaptedSha256": "ecec9ea7b7d81a8af71cf9b4642247625fcad18a09e303388cce21905ca6ee2c",
+      "adaptations": [
+        "append uihub marker"
+      ],
+      "originalSourcePath": "app/src/kit/evilcharts/examples/echarts/ex-labeled-nodes-echarts-sankey-chart.tsx"
+    },
+    {
+      "sourcePath": "../../hubs/ui/src/kit/evilcharts/examples/echarts/ex-labels-echarts-pie-chart.tsx",
+      "sourceSha256": "750b76767cbc8406b534156930a3372b5748f43f20dd495ada951bfbe9ea4421",
+      "targetPath": "packages/siso-charts/src/echarts/examples/echarts/ex-labels-echarts-pie-chart.tsx",
+      "adaptedSha256": "c82b25fb128e79af6f7e90bb3d9d61d1312297965c334190e485bc914aa3092d",
+      "adaptations": [
+        "append uihub marker"
+      ],
+      "originalSourcePath": "app/src/kit/evilcharts/examples/echarts/ex-labels-echarts-pie-chart.tsx"
+    },
+    {
+      "sourcePath": "../../hubs/ui/src/kit/evilcharts/examples/echarts/ex-legend-circle-echarts-line-chart.tsx",
+      "sourceSha256": "c11bbc0a87be3b701843dd454a05a587018f4faf215f51dbd28e93d4476e0c20",
+      "targetPath": "packages/siso-charts/src/echarts/examples/echarts/ex-legend-circle-echarts-line-chart.tsx",
+      "adaptedSha256": "856e008a1d501e283a72d361a07d0ef62bdcc2233cd0935df12cf3099b1e691f",
+      "adaptations": [
+        "append uihub marker"
+      ],
+      "originalSourcePath": "app/src/kit/evilcharts/examples/echarts/ex-legend-circle-echarts-line-chart.tsx"
+    },
+    {
+      "sourcePath": "../../hubs/ui/src/kit/evilcharts/examples/echarts/ex-legend-circle-outline-echarts-line-chart.tsx",
+      "sourceSha256": "4731904a244edd135bda2998cd34b2a2a0a8c8a15992213a7b56606b994c413b",
+      "targetPath": "packages/siso-charts/src/echarts/examples/echarts/ex-legend-circle-outline-echarts-line-chart.tsx",
+      "adaptedSha256": "81d41a04e1f5c89bacb620adece600c5eb706085e45c60eef9e9100866c8c576",
+      "adaptations": [
+        "append uihub marker"
+      ],
+      "originalSourcePath": "app/src/kit/evilcharts/examples/echarts/ex-legend-circle-outline-echarts-line-chart.tsx"
+    },
+    {
+      "sourcePath": "../../hubs/ui/src/kit/evilcharts/examples/echarts/ex-legend-horizontal-bar-echarts-line-chart.tsx",
+      "sourceSha256": "6a3c3638872477d5af54c84c35bb4c9dde636d0520758d68977148acd85b764c",
+      "targetPath": "packages/siso-charts/src/echarts/examples/echarts/ex-legend-horizontal-bar-echarts-line-chart.tsx",
+      "adaptedSha256": "e714d16ce6ba58f0c918655bd9f17d8ba42a31ca37f01e07f1f3414322d4ae40",
+      "adaptations": [
+        "append uihub marker"
+      ],
+      "originalSourcePath": "app/src/kit/evilcharts/examples/echarts/ex-legend-horizontal-bar-echarts-line-chart.tsx"
+    },
+    {
+      "sourcePath": "../../hubs/ui/src/kit/evilcharts/examples/echarts/ex-legend-rounded-square-echarts-line-chart.tsx",
+      "sourceSha256": "7ab952387b8f8acc7303c92f36755b6ec95069ee9784cb6a1caa1cc5a992cc4b",
+      "targetPath": "packages/siso-charts/src/echarts/examples/echarts/ex-legend-rounded-square-echarts-line-chart.tsx",
+      "adaptedSha256": "a20beec8e87c146db1578bab9ae6cd966ec9aa2732c4c2a05f206b442e5e08b8",
+      "adaptations": [
+        "append uihub marker"
+      ],
+      "originalSourcePath": "app/src/kit/evilcharts/examples/echarts/ex-legend-rounded-square-echarts-line-chart.tsx"
+    },
+    {
+      "sourcePath": "../../hubs/ui/src/kit/evilcharts/examples/echarts/ex-legend-rounded-square-outline-echarts-line-chart.tsx",
+      "sourceSha256": "db9e5c0b7db6ea0662aea4cdf2e58257383a47b1cc468f72c33ccfea2265a837",
+      "targetPath": "packages/siso-charts/src/echarts/examples/echarts/ex-legend-rounded-square-outline-echarts-line-chart.tsx",
+      "adaptedSha256": "115250e4924467d1080e1b4cd7ab8ac87019a1e6009a6db4bb86b1bb48541f85",
+      "adaptations": [
+        "append uihub marker"
+      ],
+      "originalSourcePath": "app/src/kit/evilcharts/examples/echarts/ex-legend-rounded-square-outline-echarts-line-chart.tsx"
+    },
+    {
+      "sourcePath": "../../hubs/ui/src/kit/evilcharts/examples/echarts/ex-legend-square-echarts-line-chart.tsx",
+      "sourceSha256": "6e2bc7db125607e32f905392532783c22975136df76f6617d5ba35d95514eced",
+      "targetPath": "packages/siso-charts/src/echarts/examples/echarts/ex-legend-square-echarts-line-chart.tsx",
+      "adaptedSha256": "761a7d1dccbbadc2561ac4c114aaa2823b5eb782552fa2a18f8d6122cfcef7ed",
+      "adaptations": [
+        "append uihub marker"
+      ],
+      "originalSourcePath": "app/src/kit/evilcharts/examples/echarts/ex-legend-square-echarts-line-chart.tsx"
+    },
+    {
+      "sourcePath": "../../hubs/ui/src/kit/evilcharts/examples/echarts/ex-legend-vertical-bar-echarts-line-chart.tsx",
+      "sourceSha256": "ac4b5b66c7f8e55699472b47634ccf56230994797c00cc642d2d06c275fb0bcb",
+      "targetPath": "packages/siso-charts/src/echarts/examples/echarts/ex-legend-vertical-bar-echarts-line-chart.tsx",
+      "adaptedSha256": "01300cf2fec33f29b952955c08d90c1ef9c5fbb0b0d0f0174f34ff37c3836b22",
+      "adaptations": [
+        "append uihub marker"
+      ],
+      "originalSourcePath": "app/src/kit/evilcharts/examples/echarts/ex-legend-vertical-bar-echarts-line-chart.tsx"
+    },
+    {
+      "sourcePath": "../../hubs/ui/src/kit/evilcharts/examples/echarts/ex-lines-area-variant-echarts-area-chart.tsx",
+      "sourceSha256": "215add79876eda4731f341a51e19bd8026f61ada7d5dfd57e6bba5692a0ea112",
+      "targetPath": "packages/siso-charts/src/echarts/examples/echarts/ex-lines-area-variant-echarts-area-chart.tsx",
+      "adaptedSha256": "45d39a7bec2ade5cce35110c54c30fc1d54e936388dd153847c2f2f561c79002",
+      "adaptations": [
+        "append uihub marker"
+      ],
+      "originalSourcePath": "app/src/kit/evilcharts/examples/echarts/ex-lines-area-variant-echarts-area-chart.tsx"
+    },
+    {
+      "sourcePath": "../../hubs/ui/src/kit/evilcharts/examples/echarts/ex-lines-variant-echarts-radar-chart.tsx",
+      "sourceSha256": "6ec94af65eaf68a12c53b629807f530feb2998f02a67a2b8e091222f7ee4aed4",
+      "targetPath": "packages/siso-charts/src/echarts/examples/echarts/ex-lines-variant-echarts-radar-chart.tsx",
+      "adaptedSha256": "cd2c884268a5fbf18bd4803a3fce4ce22571149f769e721d6cac7580299e104f",
+      "adaptations": [
+        "append uihub marker"
+      ],
+      "originalSourcePath": "app/src/kit/evilcharts/examples/echarts/ex-lines-variant-echarts-radar-chart.tsx"
+    },
+    {
+      "sourcePath": "../../hubs/ui/src/kit/evilcharts/examples/echarts/ex-loading-state-echarts-area-chart.tsx",
+      "sourceSha256": "65aa414e0b87fc16426ae927548b2d72a710450bf9010ea371da7d674fa22b25",
+      "targetPath": "packages/siso-charts/src/echarts/examples/echarts/ex-loading-state-echarts-area-chart.tsx",
+      "adaptedSha256": "2fc824ccbcf03969fa48584028944e028234518845ad7943487a3b794a73828d",
+      "adaptations": [
+        "append uihub marker"
+      ],
+      "originalSourcePath": "app/src/kit/evilcharts/examples/echarts/ex-loading-state-echarts-area-chart.tsx"
+    },
+    {
+      "sourcePath": "../../hubs/ui/src/kit/evilcharts/examples/echarts/ex-loading-state-echarts-bar-chart.tsx",
+      "sourceSha256": "911a060168769e6d3535b265bc5368867f584d55743c84dff7bb0939f4c4ea2f",
+      "targetPath": "packages/siso-charts/src/echarts/examples/echarts/ex-loading-state-echarts-bar-chart.tsx",
+      "adaptedSha256": "0a068ca9c7d88abc875ace9af8b8160fa56d95a8ec355f1bdb3a061f4b491e70",
+      "adaptations": [
+        "append uihub marker"
+      ],
+      "originalSourcePath": "app/src/kit/evilcharts/examples/echarts/ex-loading-state-echarts-bar-chart.tsx"
+    },
+    {
+      "sourcePath": "../../hubs/ui/src/kit/evilcharts/examples/echarts/ex-loading-state-echarts-composed-chart.tsx",
+      "sourceSha256": "fec0c64dd7ab946e789f3fd8c0b6cbb2388581cd0353cd7c9de6ad3c5c9795f4",
+      "targetPath": "packages/siso-charts/src/echarts/examples/echarts/ex-loading-state-echarts-composed-chart.tsx",
+      "adaptedSha256": "cd5e81ee3828f505e0c7d8b018847f47989d2743ac43d9dd45ccf012fde17018",
+      "adaptations": [
+        "append uihub marker"
+      ],
+      "originalSourcePath": "app/src/kit/evilcharts/examples/echarts/ex-loading-state-echarts-composed-chart.tsx"
+    },
+    {
+      "sourcePath": "../../hubs/ui/src/kit/evilcharts/examples/echarts/ex-loading-state-echarts-line-chart.tsx",
+      "sourceSha256": "150c3261d9b7244ec6352083e4f04f3f179281e58a8fb7582f830cce305469a2",
+      "targetPath": "packages/siso-charts/src/echarts/examples/echarts/ex-loading-state-echarts-line-chart.tsx",
+      "adaptedSha256": "ab038feb44f9cfe9ad5ff7ab5854311653c9353d8e6f2ad32d3f1473436165a1",
+      "adaptations": [
+        "append uihub marker"
+      ],
+      "originalSourcePath": "app/src/kit/evilcharts/examples/echarts/ex-loading-state-echarts-line-chart.tsx"
+    },
+    {
+      "sourcePath": "../../hubs/ui/src/kit/evilcharts/examples/echarts/ex-loading-state-echarts-pie-chart.tsx",
+      "sourceSha256": "7a41e3642101a9bca43ea27a18e755bab0c3f3fb40979c8008371cc1dc7ff191",
+      "targetPath": "packages/siso-charts/src/echarts/examples/echarts/ex-loading-state-echarts-pie-chart.tsx",
+      "adaptedSha256": "7abeda0bc23b205c93ba02ad9b3c5f2c1f049496da8e6df09f58e6d1af8da455",
+      "adaptations": [
+        "append uihub marker"
+      ],
+      "originalSourcePath": "app/src/kit/evilcharts/examples/echarts/ex-loading-state-echarts-pie-chart.tsx"
+    },
+    {
+      "sourcePath": "../../hubs/ui/src/kit/evilcharts/examples/echarts/ex-loading-state-echarts-radar-chart.tsx",
+      "sourceSha256": "e0cbabab2fe2960dfeefa9817ad54fdbbdb70aca11122ad44ae8a6b127eebbfd",
+      "targetPath": "packages/siso-charts/src/echarts/examples/echarts/ex-loading-state-echarts-radar-chart.tsx",
+      "adaptedSha256": "586629048e4525b0e3b7873423732d29f5cdd2a189a2cdc02c34f1cc993c9457",
+      "adaptations": [
+        "append uihub marker"
+      ],
+      "originalSourcePath": "app/src/kit/evilcharts/examples/echarts/ex-loading-state-echarts-radar-chart.tsx"
+    },
+    {
+      "sourcePath": "../../hubs/ui/src/kit/evilcharts/examples/echarts/ex-loading-state-echarts-radial-chart.tsx",
+      "sourceSha256": "40d4d668fc1391093d53975b31eb976c269e311683ddaf2c30b27ce1453b14f9",
+      "targetPath": "packages/siso-charts/src/echarts/examples/echarts/ex-loading-state-echarts-radial-chart.tsx",
+      "adaptedSha256": "b629a24c649f23f126efd555110af560825e758754de459a0eff6a3bc1e90345",
+      "adaptations": [
+        "append uihub marker"
+      ],
+      "originalSourcePath": "app/src/kit/evilcharts/examples/echarts/ex-loading-state-echarts-radial-chart.tsx"
+    },
+    {
+      "sourcePath": "../../hubs/ui/src/kit/evilcharts/examples/echarts/ex-loading-state-echarts-sankey-chart.tsx",
+      "sourceSha256": "8e57e36b572538bd0c05d88a46683fb257ddf07adb5819d336b17665e6df95e7",
+      "targetPath": "packages/siso-charts/src/echarts/examples/echarts/ex-loading-state-echarts-sankey-chart.tsx",
+      "adaptedSha256": "8010c29f5b2414946ac825a3648eda43f2bf97c55965327edd922bda8aad734d",
+      "adaptations": [
+        "append uihub marker"
+      ],
+      "originalSourcePath": "app/src/kit/evilcharts/examples/echarts/ex-loading-state-echarts-sankey-chart.tsx"
+    },
+    {
+      "sourcePath": "../../hubs/ui/src/kit/evilcharts/examples/echarts/ex-max-highlight-echarts-bar-chart.tsx",
+      "sourceSha256": "4afac76dbc3d56251fe5f66903ecb89365d0559cc010f02738f49bb0772842cc",
+      "targetPath": "packages/siso-charts/src/echarts/examples/echarts/ex-max-highlight-echarts-bar-chart.tsx",
+      "adaptedSha256": "4feaa95fe9e17930c4fda42013071eec2a4af0f33dd81e6e45c906e880c56d54",
+      "adaptations": [
+        "append uihub marker"
+      ],
+      "originalSourcePath": "app/src/kit/evilcharts/examples/echarts/ex-max-highlight-echarts-bar-chart.tsx"
+    },
+    {
+      "sourcePath": "../../hubs/ui/src/kit/evilcharts/examples/echarts/ex-monotoney-curve-type-echarts-area-chart.tsx",
+      "sourceSha256": "9bfe924fbfd1df6ceb845c88e651d82c3e3c142d41c2cedca57f687bdfe2c72f",
+      "targetPath": "packages/siso-charts/src/echarts/examples/echarts/ex-monotoney-curve-type-echarts-area-chart.tsx",
+      "adaptedSha256": "721d611a7baebee32730359e0c3b3b42526ed2211a345f2d69a5b9b31f24f6c6",
+      "adaptations": [
+        "append uihub marker"
+      ],
+      "originalSourcePath": "app/src/kit/evilcharts/examples/echarts/ex-monotoney-curve-type-echarts-area-chart.tsx"
+    },
+    {
+      "sourcePath": "../../hubs/ui/src/kit/evilcharts/examples/echarts/ex-monotoney-curve-type-echarts-line-chart.tsx",
+      "sourceSha256": "6a6e3a04356497df9e5c9b0ec8ed79b5714f025043d951ac4960d410dce38dd8",
+      "targetPath": "packages/siso-charts/src/echarts/examples/echarts/ex-monotoney-curve-type-echarts-line-chart.tsx",
+      "adaptedSha256": "240ab0d28319d396aac3c100ae02c179c001b8bcf5df1364e66bfe1aaa3d6426",
+      "adaptations": [
+        "append uihub marker"
+      ],
+      "originalSourcePath": "app/src/kit/evilcharts/examples/echarts/ex-monotoney-curve-type-echarts-line-chart.tsx"
+    },
+    {
+      "sourcePath": "../../hubs/ui/src/kit/evilcharts/examples/echarts/ex-outside-labels-echarts-pie-chart.tsx",
+      "sourceSha256": "4380b85395a8447088af0dc917ee0c6ad54decbb1c201ef94753ce0b0c3d9a79",
+      "targetPath": "packages/siso-charts/src/echarts/examples/echarts/ex-outside-labels-echarts-pie-chart.tsx",
+      "adaptedSha256": "be035628822796ac93bf1f1a46d0804231516b41c6e24bcaba44d9b5e8fe48d7",
+      "adaptations": [
+        "append uihub marker"
+      ],
+      "originalSourcePath": "app/src/kit/evilcharts/examples/echarts/ex-outside-labels-echarts-pie-chart.tsx"
+    },
+    {
+      "sourcePath": "../../hubs/ui/src/kit/evilcharts/examples/echarts/ex-outside-labels-echarts-sankey-chart.tsx",
+      "sourceSha256": "c8df64394d3bdcdb4890a54fe499bed1366ef3e30bf5a27f6c6e8dd69dea052d",
+      "targetPath": "packages/siso-charts/src/echarts/examples/echarts/ex-outside-labels-echarts-sankey-chart.tsx",
+      "adaptedSha256": "245dab247dd9ef082da638263eb38185341ce95a319c2128358f2c908c7f3914",
+      "adaptations": [
+        "append uihub marker"
+      ],
+      "originalSourcePath": "app/src/kit/evilcharts/examples/echarts/ex-outside-labels-echarts-sankey-chart.tsx"
+    },
+    {
+      "sourcePath": "../../hubs/ui/src/kit/evilcharts/examples/echarts/ex-overlapping-padded-echarts-pie-chart.tsx",
+      "sourceSha256": "b9d8de271af6eb23d0cdf1b71f8d396cc473c0d566cdcc840e71a97761684edf",
+      "targetPath": "packages/siso-charts/src/echarts/examples/echarts/ex-overlapping-padded-echarts-pie-chart.tsx",
+      "adaptedSha256": "6184a77f28dda881db0acbf2bf76d560e216caf0ea41f85c15ab97f78ea36677",
+      "adaptations": [
+        "append uihub marker"
+      ],
+      "originalSourcePath": "app/src/kit/evilcharts/examples/echarts/ex-overlapping-padded-echarts-pie-chart.tsx"
+    },
+    {
+      "sourcePath": "../../hubs/ui/src/kit/evilcharts/examples/echarts/ex-padded-echarts-pie-chart.tsx",
+      "sourceSha256": "030753680cd5ed070d351b926a36ab70cd6f5c16b00eda75d0f6e643c6843315",
+      "targetPath": "packages/siso-charts/src/echarts/examples/echarts/ex-padded-echarts-pie-chart.tsx",
+      "adaptedSha256": "729410101068303b297e3af7db621d3a216e9c51eab895c7a0f84f766a01d083",
+      "adaptations": [
+        "append uihub marker"
+      ],
+      "originalSourcePath": "app/src/kit/evilcharts/examples/echarts/ex-padded-echarts-pie-chart.tsx"
+    },
+    {
+      "sourcePath": "../../hubs/ui/src/kit/evilcharts/examples/echarts/ex-percent-type-echarts-bar-chart.tsx",
+      "sourceSha256": "086a3522f58e8f16030afa95e7f0454c92a3120609c5f82efeaa23eb53ccf48a",
+      "targetPath": "packages/siso-charts/src/echarts/examples/echarts/ex-percent-type-echarts-bar-chart.tsx",
+      "adaptedSha256": "ee081a33f6d06bfda0d32d8e3722a60b1826f555632452e545049653dcea857e",
+      "adaptations": [
+        "append uihub marker"
+      ],
+      "originalSourcePath": "app/src/kit/evilcharts/examples/echarts/ex-percent-type-echarts-bar-chart.tsx"
+    },
+    {
+      "sourcePath": "../../hubs/ui/src/kit/evilcharts/examples/echarts/ex-semi-variant-echarts-radial-chart.tsx",
+      "sourceSha256": "1efea8d731d60c5fd766c4a0e10135d7c19e2ca4014efc47ff174b8f702a426b",
+      "targetPath": "packages/siso-charts/src/echarts/examples/echarts/ex-semi-variant-echarts-radial-chart.tsx",
+      "adaptedSha256": "c0901550f4be4e7086d1db7caf9ad4f587ee931db00093fe99583674831b8bed",
+      "adaptations": [
+        "append uihub marker"
+      ],
+      "originalSourcePath": "app/src/kit/evilcharts/examples/echarts/ex-semi-variant-echarts-radial-chart.tsx"
+    },
+    {
+      "sourcePath": "../../hubs/ui/src/kit/evilcharts/examples/echarts/ex-solid-area-variant-echarts-area-chart.tsx",
+      "sourceSha256": "fd5c926349e13d5c23114b872ee8478e5fe0c115acd40205c89e9c727d7e71fc",
+      "targetPath": "packages/siso-charts/src/echarts/examples/echarts/ex-solid-area-variant-echarts-area-chart.tsx",
+      "adaptedSha256": "3be2799752af3d4418dba84fb17960edc28d08b59177a4d1ca432b066f6ee3c8",
+      "adaptations": [
+        "append uihub marker"
+      ],
+      "originalSourcePath": "app/src/kit/evilcharts/examples/echarts/ex-solid-area-variant-echarts-area-chart.tsx"
+    },
+    {
+      "sourcePath": "../../hubs/ui/src/kit/evilcharts/examples/echarts/ex-solid-labeled-nodes-echarts-sankey-chart.tsx",
+      "sourceSha256": "381d8ac1dd476a3d8c8974915a8a9cb835b5eb83ba1556b634c7de9eb7ca7859",
+      "targetPath": "packages/siso-charts/src/echarts/examples/echarts/ex-solid-labeled-nodes-echarts-sankey-chart.tsx",
+      "adaptedSha256": "d66d8691b37a3e546b386314dbcc4fab4e667283cc57bb78356f6a990f6beccf",
+      "adaptations": [
+        "append uihub marker"
+      ],
+      "originalSourcePath": "app/src/kit/evilcharts/examples/echarts/ex-solid-labeled-nodes-echarts-sankey-chart.tsx"
+    },
+    {
+      "sourcePath": "../../hubs/ui/src/kit/evilcharts/examples/echarts/ex-solid-link-variant-echarts-sankey-chart.tsx",
+      "sourceSha256": "1f8431aa5cd2ee2b83b2197bcc6681ab3afe4fd986a5e100a90a8ba7771f4d99",
+      "targetPath": "packages/siso-charts/src/echarts/examples/echarts/ex-solid-link-variant-echarts-sankey-chart.tsx",
+      "adaptedSha256": "23bfe7d1e2b94f77930299e3ea33eb0de005a698757e95ef87585daa2bb98e1f",
+      "adaptations": [
+        "append uihub marker"
+      ],
+      "originalSourcePath": "app/src/kit/evilcharts/examples/echarts/ex-solid-link-variant-echarts-sankey-chart.tsx"
+    },
+    {
+      "sourcePath": "../../hubs/ui/src/kit/evilcharts/examples/echarts/ex-solid-stroke-echarts-area-chart.tsx",
+      "sourceSha256": "888dfa1dbbb02431c3655c17b31093ff746222cc71b65e5c10efbd5fb9d40fc3",
+      "targetPath": "packages/siso-charts/src/echarts/examples/echarts/ex-solid-stroke-echarts-area-chart.tsx",
+      "adaptedSha256": "5130aa942b131bcaaf45e3369bbcffbe0d5ef84ce030040d60b8dd1e01b6edf2",
+      "adaptations": [
+        "append uihub marker"
+      ],
+      "originalSourcePath": "app/src/kit/evilcharts/examples/echarts/ex-solid-stroke-echarts-area-chart.tsx"
+    },
+    {
+      "sourcePath": "../../hubs/ui/src/kit/evilcharts/examples/echarts/ex-solid-stroke-echarts-line-chart.tsx",
+      "sourceSha256": "f7163f32519d35d0e216575b2c7b0be3033222c813075d2cbd3300e7885256e3",
+      "targetPath": "packages/siso-charts/src/echarts/examples/echarts/ex-solid-stroke-echarts-line-chart.tsx",
+      "adaptedSha256": "d1a632c026f27080436a83b3461aab1c6dd24a170cf75479bd807ed78f4614d0",
+      "adaptations": [
+        "append uihub marker"
+      ],
+      "originalSourcePath": "app/src/kit/evilcharts/examples/echarts/ex-solid-stroke-echarts-line-chart.tsx"
+    },
+    {
+      "sourcePath": "../../hubs/ui/src/kit/evilcharts/examples/echarts/ex-source-link-variant-echarts-sankey-chart.tsx",
+      "sourceSha256": "d24468faf9d7b8ae12dbed87fe67d24ed83c0bf16ff1af7fda9cf12c86f2db4f",
+      "targetPath": "packages/siso-charts/src/echarts/examples/echarts/ex-source-link-variant-echarts-sankey-chart.tsx",
+      "adaptedSha256": "d75ba317f448039330dbde0f24bede05f1c0896cab13e9f5b94b270cb3fe845e",
+      "adaptations": [
+        "append uihub marker"
+      ],
+      "originalSourcePath": "app/src/kit/evilcharts/examples/echarts/ex-source-link-variant-echarts-sankey-chart.tsx"
+    },
+    {
+      "sourcePath": "../../hubs/ui/src/kit/evilcharts/examples/echarts/ex-stacked-type-echarts-area-chart.tsx",
+      "sourceSha256": "7023edd00867d2053a195bd436fa5330427e028c555328cbc37afc6bf1f1c491",
+      "targetPath": "packages/siso-charts/src/echarts/examples/echarts/ex-stacked-type-echarts-area-chart.tsx",
+      "adaptedSha256": "ce3183b7f63e77a4b3783cec8a32147b5bbf2131ddf7cd416eeb1791abb6b27d",
+      "adaptations": [
+        "append uihub marker"
+      ],
+      "originalSourcePath": "app/src/kit/evilcharts/examples/echarts/ex-stacked-type-echarts-area-chart.tsx"
+    },
+    {
+      "sourcePath": "../../hubs/ui/src/kit/evilcharts/examples/echarts/ex-stacked-type-echarts-bar-chart.tsx",
+      "sourceSha256": "6b76b2bcb4f7ac7af92a55d7b772fb818722d6a991719fa1f83b9978e57c9394",
+      "targetPath": "packages/siso-charts/src/echarts/examples/echarts/ex-stacked-type-echarts-bar-chart.tsx",
+      "adaptedSha256": "5c0b9cd65fbe5816bd431f29df379632754327c0e9815862e6d83bf877732958",
+      "adaptations": [
+        "append uihub marker"
+      ],
+      "originalSourcePath": "app/src/kit/evilcharts/examples/echarts/ex-stacked-type-echarts-bar-chart.tsx"
+    },
+    {
+      "sourcePath": "../../hubs/ui/src/kit/evilcharts/examples/echarts/ex-step-curve-type-echarts-area-chart.tsx",
+      "sourceSha256": "6759095c7c77aa00cc38fa6e2306a6f52159b84a0440cd9b07e78af0550cba3c",
+      "targetPath": "packages/siso-charts/src/echarts/examples/echarts/ex-step-curve-type-echarts-area-chart.tsx",
+      "adaptedSha256": "b032ff50f6b99427fd37c90a21b47819415726443f22e913fc550294b723fbc5",
+      "adaptations": [
+        "append uihub marker"
+      ],
+      "originalSourcePath": "app/src/kit/evilcharts/examples/echarts/ex-step-curve-type-echarts-area-chart.tsx"
+    },
+    {
+      "sourcePath": "../../hubs/ui/src/kit/evilcharts/examples/echarts/ex-step-curve-type-echarts-line-chart.tsx",
+      "sourceSha256": "5eefb68854f896472082537aa95f3655eba2c0901e5e6d1f9eb33ed68712e784",
+      "targetPath": "packages/siso-charts/src/echarts/examples/echarts/ex-step-curve-type-echarts-line-chart.tsx",
+      "adaptedSha256": "7ad2dccb7dfe40a4daa679de2ee92766cab1bc25b0cfde5d33b6f44ce849b43e",
+      "adaptations": [
+        "append uihub marker"
+      ],
+      "originalSourcePath": "app/src/kit/evilcharts/examples/echarts/ex-step-curve-type-echarts-line-chart.tsx"
+    },
+    {
+      "sourcePath": "../../hubs/ui/src/kit/evilcharts/examples/echarts/ex-stripped-variant-echarts-bar-chart.tsx",
+      "sourceSha256": "78abfe647d9eeab7e36d4734767928e55244e9838224729934be7463a3109b08",
+      "targetPath": "packages/siso-charts/src/echarts/examples/echarts/ex-stripped-variant-echarts-bar-chart.tsx",
+      "adaptedSha256": "2bc01ee482320ba4316c452b8389813868c03b526d8234a494ccc97696ea02c3",
+      "adaptations": [
+        "append uihub marker"
+      ],
+      "originalSourcePath": "app/src/kit/evilcharts/examples/echarts/ex-stripped-variant-echarts-bar-chart.tsx"
+    },
+    {
+      "sourcePath": "../../hubs/ui/src/kit/evilcharts/examples/echarts/ex-stripped-variant-echarts-composed-chart.tsx",
+      "sourceSha256": "3f565864f951fb17adcf5266c5a63c0185d8044f3d441d838ccd1db5d6834acf",
+      "targetPath": "packages/siso-charts/src/echarts/examples/echarts/ex-stripped-variant-echarts-composed-chart.tsx",
+      "adaptedSha256": "a80e483510c444f432a137e236e879d085bc287d11a921bd023e1c6e05a6373b",
+      "adaptations": [
+        "append uihub marker"
+      ],
+      "originalSourcePath": "app/src/kit/evilcharts/examples/echarts/ex-stripped-variant-echarts-composed-chart.tsx"
+    },
+    {
+      "sourcePath": "../../hubs/ui/src/kit/evilcharts/examples/echarts/ex-svg-renderer-echarts-area-chart.tsx",
+      "sourceSha256": "9a26c4707da8310dfbe5dade68791d641967b77594839a81cad2e951e6968590",
+      "targetPath": "packages/siso-charts/src/echarts/examples/echarts/ex-svg-renderer-echarts-area-chart.tsx",
+      "adaptedSha256": "1c1182f66b79796743c95569a775513528da7790262b43056efd3cdc9723545f",
+      "adaptations": [
+        "append uihub marker"
+      ],
+      "originalSourcePath": "app/src/kit/evilcharts/examples/echarts/ex-svg-renderer-echarts-area-chart.tsx"
+    },
+    {
+      "sourcePath": "../../hubs/ui/src/kit/evilcharts/examples/echarts/ex-svg-renderer-echarts-bar-chart.tsx",
+      "sourceSha256": "168419b98820ff23e2a8c71e5bd22f304360635d11c95f91762157a6e8b4eaf7",
+      "targetPath": "packages/siso-charts/src/echarts/examples/echarts/ex-svg-renderer-echarts-bar-chart.tsx",
+      "adaptedSha256": "ba51b0fa8eea8efcdb4a249d8eb0433da63b60366cdc4242eaa570152666f7aa",
+      "adaptations": [
+        "append uihub marker"
+      ],
+      "originalSourcePath": "app/src/kit/evilcharts/examples/echarts/ex-svg-renderer-echarts-bar-chart.tsx"
+    },
+    {
+      "sourcePath": "../../hubs/ui/src/kit/evilcharts/examples/echarts/ex-svg-renderer-echarts-composed-chart.tsx",
+      "sourceSha256": "f0efddc75dec672bbbca5cf1f801a90433ab6ab5c5d0371d5e3bdf72c858e53a",
+      "targetPath": "packages/siso-charts/src/echarts/examples/echarts/ex-svg-renderer-echarts-composed-chart.tsx",
+      "adaptedSha256": "4b2619b3bdbd4d291ceee5a05ef543221e2c2f8558bb7a6134ee64a3cab8950f",
+      "adaptations": [
+        "append uihub marker"
+      ],
+      "originalSourcePath": "app/src/kit/evilcharts/examples/echarts/ex-svg-renderer-echarts-composed-chart.tsx"
+    },
+    {
+      "sourcePath": "../../hubs/ui/src/kit/evilcharts/examples/echarts/ex-svg-renderer-echarts-line-chart.tsx",
+      "sourceSha256": "56c119ef13a0b305fcafbacbeec793a06d3093581def16408c5a0f736763ddb6",
+      "targetPath": "packages/siso-charts/src/echarts/examples/echarts/ex-svg-renderer-echarts-line-chart.tsx",
+      "adaptedSha256": "98572a043f012977f9cafe2ddc9ab5856101e4970e1890c5b7dc068f6f7bfed2",
+      "adaptations": [
+        "append uihub marker"
+      ],
+      "originalSourcePath": "app/src/kit/evilcharts/examples/echarts/ex-svg-renderer-echarts-line-chart.tsx"
+    },
+    {
+      "sourcePath": "../../hubs/ui/src/kit/evilcharts/examples/echarts/ex-svg-renderer-echarts-pie-chart.tsx",
+      "sourceSha256": "a63ed2207e30bb24570b5bf263496de088a5ebe6fffd5fb220de06b0197f6f6e",
+      "targetPath": "packages/siso-charts/src/echarts/examples/echarts/ex-svg-renderer-echarts-pie-chart.tsx",
+      "adaptedSha256": "af32bcef2e457a0b2248f82ab17a68580bc0a3ad6bed7f5131167ed9743db61d",
+      "adaptations": [
+        "append uihub marker"
+      ],
+      "originalSourcePath": "app/src/kit/evilcharts/examples/echarts/ex-svg-renderer-echarts-pie-chart.tsx"
+    },
+    {
+      "sourcePath": "../../hubs/ui/src/kit/evilcharts/examples/echarts/ex-svg-renderer-echarts-radar-chart.tsx",
+      "sourceSha256": "45f89f64ace1425d42fad4110bb36b3337c78cbc722217526b3e4206f055b805",
+      "targetPath": "packages/siso-charts/src/echarts/examples/echarts/ex-svg-renderer-echarts-radar-chart.tsx",
+      "adaptedSha256": "f6b4d6650b6afb7fd7735d4c3dfc112fd4987fcef5348d085952cd0333ba183e",
+      "adaptations": [
+        "append uihub marker"
+      ],
+      "originalSourcePath": "app/src/kit/evilcharts/examples/echarts/ex-svg-renderer-echarts-radar-chart.tsx"
+    },
+    {
+      "sourcePath": "../../hubs/ui/src/kit/evilcharts/examples/echarts/ex-svg-renderer-echarts-radial-chart.tsx",
+      "sourceSha256": "37bce610601a793bd933c70ea362dc192c34b7da850659a6efbd4511e20141eb",
+      "targetPath": "packages/siso-charts/src/echarts/examples/echarts/ex-svg-renderer-echarts-radial-chart.tsx",
+      "adaptedSha256": "79dbe3a95db4635dbf76b8b1861abd7f5acdf5ff53eaf3668700ae4d7e61a470",
+      "adaptations": [
+        "append uihub marker"
+      ],
+      "originalSourcePath": "app/src/kit/evilcharts/examples/echarts/ex-svg-renderer-echarts-radial-chart.tsx"
+    },
+    {
+      "sourcePath": "../../hubs/ui/src/kit/evilcharts/examples/echarts/ex-svg-renderer-echarts-sankey-chart.tsx",
+      "sourceSha256": "dcbca4d94ad9c2da604c6734622dafb3ae2306783f2bbe47fa556f751eda20c8",
+      "targetPath": "packages/siso-charts/src/echarts/examples/echarts/ex-svg-renderer-echarts-sankey-chart.tsx",
+      "adaptedSha256": "7873edefb33fb1f581d93764b9833c3e355fda7dfc02f03b8f90f88499500a53",
+      "adaptations": [
+        "append uihub marker"
+      ],
+      "originalSourcePath": "app/src/kit/evilcharts/examples/echarts/ex-svg-renderer-echarts-sankey-chart.tsx"
+    },
+    {
+      "sourcePath": "../../hubs/ui/src/kit/evilcharts/examples/echarts/ex-tooltip-default-echarts-bar-chart.tsx",
+      "sourceSha256": "398eec98ffbb71c00266e0dcdf6c72156d21f974d3761fde1faf205b4c90cb3c",
+      "targetPath": "packages/siso-charts/src/echarts/examples/echarts/ex-tooltip-default-echarts-bar-chart.tsx",
+      "adaptedSha256": "b5b94d166fa1b3f91ff8f4647e3470c68015c4c6ebf9acb1740d391b97d109d9",
+      "adaptations": [
+        "append uihub marker"
+      ],
+      "originalSourcePath": "app/src/kit/evilcharts/examples/echarts/ex-tooltip-default-echarts-bar-chart.tsx"
+    },
+    {
+      "sourcePath": "../../hubs/ui/src/kit/evilcharts/examples/echarts/ex-tooltip-frosted-glass-echarts-bar-chart.tsx",
+      "sourceSha256": "a6b4ffdb61d220ebd4b4d2739472a975f417492a863dd3896a5682e40517b322",
+      "targetPath": "packages/siso-charts/src/echarts/examples/echarts/ex-tooltip-frosted-glass-echarts-bar-chart.tsx",
+      "adaptedSha256": "a100489dfd8a5892d114f759a1469ba354be617e5134654318ade67344c11224",
+      "adaptations": [
+        "append uihub marker"
+      ],
+      "originalSourcePath": "app/src/kit/evilcharts/examples/echarts/ex-tooltip-frosted-glass-echarts-bar-chart.tsx"
+    },
+    {
+      "sourcePath": "../../hubs/ui/src/kit/evilcharts/blocks/echarts/b-allocation-echarts-sankey-chart.tsx",
+      "sourceSha256": "b259879dcd85523488fb57c494c83e3636aa365ecc1197d4aa258a76e6a6ffa5",
+      "targetPath": "packages/siso-charts/src/echarts/blocks/echarts/b-allocation-echarts-sankey-chart.tsx",
+      "adaptedSha256": "0aae34ded6c3fc1b02a3aa0b612676c6ea9ac1d8412839a360511dd92c813317",
+      "adaptations": [
+        "replace @/arc-shims/kit-utils with local cn helper",
+        "append uihub marker"
+      ],
+      "originalSourcePath": "app/src/kit/evilcharts/blocks/echarts/b-allocation-echarts-sankey-chart.tsx"
+    },
+    {
+      "sourcePath": "../../hubs/ui/src/kit/evilcharts/blocks/echarts/b-audience-echarts-area-chart.tsx",
+      "sourceSha256": "a5fb362dbaf60a91f098d2d1a8037d21963a5a230204de02e7a929b53002bca2",
+      "targetPath": "packages/siso-charts/src/echarts/blocks/echarts/b-audience-echarts-area-chart.tsx",
+      "adaptedSha256": "1574ea380644fbee5ba38504e879bbae7a27e94ff378eb78edb512139454d5c1",
+      "adaptations": [
+        "append uihub marker"
+      ],
+      "originalSourcePath": "app/src/kit/evilcharts/blocks/echarts/b-audience-echarts-area-chart.tsx"
+    },
+    {
+      "sourcePath": "../../hubs/ui/src/kit/evilcharts/blocks/echarts/b-benchmark-echarts-area-chart.tsx",
+      "sourceSha256": "9f436fd42300c8238b31a26438bfa88cc6c14c3af2138637c98c030ad5eee128",
+      "targetPath": "packages/siso-charts/src/echarts/blocks/echarts/b-benchmark-echarts-area-chart.tsx",
+      "adaptedSha256": "d938dc9ea10e52e4e37ce0c30db7dc6df6de6f580187c739e2450538a6890b3e",
+      "adaptations": [
+        "append uihub marker"
+      ],
+      "originalSourcePath": "app/src/kit/evilcharts/blocks/echarts/b-benchmark-echarts-area-chart.tsx"
+    },
+    {
+      "sourcePath": "../../hubs/ui/src/kit/evilcharts/blocks/echarts/b-budget-echarts-radial-chart.tsx",
+      "sourceSha256": "1ff1ef2198aa9601e383976238515d0619e51891e2364c2e2a3e52bba8726c19",
+      "targetPath": "packages/siso-charts/src/echarts/blocks/echarts/b-budget-echarts-radial-chart.tsx",
+      "adaptedSha256": "c35937e2216bf2e446e5aff267a27eda080358c95c55153e284b725e8b3c6df7",
+      "adaptations": [
+        "replace @/arc-shims/kit-utils with local cn helper",
+        "append uihub marker"
+      ],
+      "originalSourcePath": "app/src/kit/evilcharts/blocks/echarts/b-budget-echarts-radial-chart.tsx"
+    },
+    {
+      "sourcePath": "../../hubs/ui/src/kit/evilcharts/blocks/echarts/b-cache-tiers-echarts-radial-chart.tsx",
+      "sourceSha256": "4d5275f4628297c21d9d2daf7a650e3642bd9f00e5ff34b989df1299ad371b49",
+      "targetPath": "packages/siso-charts/src/echarts/blocks/echarts/b-cache-tiers-echarts-radial-chart.tsx",
+      "adaptedSha256": "f3ea7ac7d0c770195bdf89aecc4f9d155ed1777326a8f9d35d99b36a1038c074",
+      "adaptations": [
+        "replace @/arc-shims/kit-utils with local cn helper",
+        "append uihub marker"
+      ],
+      "originalSourcePath": "app/src/kit/evilcharts/blocks/echarts/b-cache-tiers-echarts-radial-chart.tsx"
+    },
+    {
+      "sourcePath": "../../hubs/ui/src/kit/evilcharts/blocks/echarts/b-grid-echarts-bar-chart.tsx",
+      "sourceSha256": "8652c812bc2e4ccae09e606c6389b679ecffdefdf9d06323d9ef0d90b7905da2",
+      "targetPath": "packages/siso-charts/src/echarts/blocks/echarts/b-grid-echarts-bar-chart.tsx",
+      "adaptedSha256": "a0115b1fe8562213fc125446b0b76a1ad92dd309032dccdc20960b86c3b77262",
+      "adaptations": [
+        "append uihub marker"
+      ],
+      "originalSourcePath": "app/src/kit/evilcharts/blocks/echarts/b-grid-echarts-bar-chart.tsx"
+    },
+    {
+      "sourcePath": "../../hubs/ui/src/kit/evilcharts/blocks/echarts/b-latency-echarts-area-chart.tsx",
+      "sourceSha256": "11f65636969abc40a438c3c4b851028b0214afb37fdfee941b7e240beabea2f7",
+      "targetPath": "packages/siso-charts/src/echarts/blocks/echarts/b-latency-echarts-area-chart.tsx",
+      "adaptedSha256": "5f06b500d0c5e8aa88f3d0c1867ee6bbb7894ae3ac2caa9d24f7f6423550b92a",
+      "adaptations": [
+        "replace @/arc-shims/kit-utils with local cn helper",
+        "append uihub marker"
+      ],
+      "originalSourcePath": "app/src/kit/evilcharts/blocks/echarts/b-latency-echarts-area-chart.tsx"
+    },
+    {
+      "sourcePath": "../../hubs/ui/src/kit/evilcharts/blocks/echarts/b-market-share-echarts-pie-chart.tsx",
+      "sourceSha256": "bd21cf2b4f50b5eb3587af0ba222d6c333b853df8810b628cfc0138cffd528db",
+      "targetPath": "packages/siso-charts/src/echarts/blocks/echarts/b-market-share-echarts-pie-chart.tsx",
+      "adaptedSha256": "964e1ccaa671ae618073efcab4583c9f97a2100954ced6bd589c1036c76c4940",
+      "adaptations": [
+        "replace @/arc-shims/kit-utils with local cn helper",
+        "append uihub marker"
+      ],
+      "originalSourcePath": "app/src/kit/evilcharts/blocks/echarts/b-market-share-echarts-pie-chart.tsx"
+    },
+    {
+      "sourcePath": "../../hubs/ui/src/kit/evilcharts/blocks/echarts/b-monospace-echarts-bar-chart.tsx",
+      "sourceSha256": "ca0b2f84aef7bb1d6bf2a102decd089084ce8b978c1e3c65a9bcd72be81eaa68",
+      "targetPath": "packages/siso-charts/src/echarts/blocks/echarts/b-monospace-echarts-bar-chart.tsx",
+      "adaptedSha256": "43c1b004713528bf6152e85c929482cd015164467c47c51afbf54d7466e0bb1e",
+      "adaptations": [
+        "append uihub marker"
+      ],
+      "originalSourcePath": "app/src/kit/evilcharts/blocks/echarts/b-monospace-echarts-bar-chart.tsx"
+    },
+    {
+      "sourcePath": "../../hubs/ui/src/kit/evilcharts/blocks/echarts/b-payouts-echarts-line-chart.tsx",
+      "sourceSha256": "718fbdda5a71f4034d0334e5c89abf800963791dcfbbb4cb271e4bffaba0d795",
+      "targetPath": "packages/siso-charts/src/echarts/blocks/echarts/b-payouts-echarts-line-chart.tsx",
+      "adaptedSha256": "01f174c78d22b451fc6e207210f2fb9f5370c113f07b5bd4f175db0c6be648df",
+      "adaptations": [
+        "replace @/arc-shims/kit-utils with local cn helper",
+        "append uihub marker"
+      ],
+      "originalSourcePath": "app/src/kit/evilcharts/blocks/echarts/b-payouts-echarts-line-chart.tsx"
+    },
+    {
+      "sourcePath": "../../hubs/ui/src/kit/evilcharts/blocks/echarts/b-peak-echarts-bar-chart.tsx",
+      "sourceSha256": "b99d4be0c94aa0ac98e9910a607e9c3ea4174d2342b09416dabd10dacf9b52e2",
+      "targetPath": "packages/siso-charts/src/echarts/blocks/echarts/b-peak-echarts-bar-chart.tsx",
+      "adaptedSha256": "aa8b7dd901c491365b43d2dd7a20f576241cc996d53a1ba3918e03ba6df05880",
+      "adaptations": [
+        "replace @/arc-shims/kit-utils with local cn helper",
+        "append uihub marker"
+      ],
+      "originalSourcePath": "app/src/kit/evilcharts/blocks/echarts/b-peak-echarts-bar-chart.tsx"
+    },
+    {
+      "sourcePath": "../../hubs/ui/src/kit/evilcharts/blocks/echarts/b-pipeline-echarts-sankey-chart.tsx",
+      "sourceSha256": "67c8e969a945c738350f4edc1296c2ec1e0955dbe0b393bb2302e7621d2f6bf7",
+      "targetPath": "packages/siso-charts/src/echarts/blocks/echarts/b-pipeline-echarts-sankey-chart.tsx",
+      "adaptedSha256": "f0826c98227c3da23f581cc03a4747d17203c90367679a230bcb73abeb963938",
+      "adaptations": [
+        "append uihub marker"
+      ],
+      "originalSourcePath": "app/src/kit/evilcharts/blocks/echarts/b-pipeline-echarts-sankey-chart.tsx"
+    },
+    {
+      "sourcePath": "../../hubs/ui/src/kit/evilcharts/blocks/echarts/b-portfolio-echarts-area-chart.tsx",
+      "sourceSha256": "a43594c0faa5c1b34e0b2b864528f10c69e2d2aa26d542b92e4da76fd69eb637",
+      "targetPath": "packages/siso-charts/src/echarts/blocks/echarts/b-portfolio-echarts-area-chart.tsx",
+      "adaptedSha256": "35a42a388e5a9845cb9489ceffeabadcc42a52906ca65dc21681e5a2db404e7b",
+      "adaptations": [
+        "append uihub marker"
+      ],
+      "originalSourcePath": "app/src/kit/evilcharts/blocks/echarts/b-portfolio-echarts-area-chart.tsx"
+    },
+    {
+      "sourcePath": "../../hubs/ui/src/kit/evilcharts/blocks/echarts/b-progress-rings-echarts-pie-chart.tsx",
+      "sourceSha256": "664cede2a68fb4fd52b85611b72ff394f96ac158778e35b1ee86eb75e22927c4",
+      "targetPath": "packages/siso-charts/src/echarts/blocks/echarts/b-progress-rings-echarts-pie-chart.tsx",
+      "adaptedSha256": "c8a01b41eadad0777a840855eaa0f520fe05da66e184ab7eade68960f21e8b60",
+      "adaptations": [
+        "append uihub marker"
+      ],
+      "originalSourcePath": "app/src/kit/evilcharts/blocks/echarts/b-progress-rings-echarts-pie-chart.tsx"
+    },
+    {
+      "sourcePath": "../../hubs/ui/src/kit/evilcharts/blocks/echarts/b-reliability-score-echarts-pie-chart.tsx",
+      "sourceSha256": "20cb3dda2b00509af2790738fc83282f3d46029f018a403168bc422bb97d8572",
+      "targetPath": "packages/siso-charts/src/echarts/blocks/echarts/b-reliability-score-echarts-pie-chart.tsx",
+      "adaptedSha256": "6fa750cf4fc7ce6781331514490e5a6ace3781c471c3b2a286d0d762f99bb7a5",
+      "adaptations": [
+        "replace @/arc-shims/kit-utils with local cn helper",
+        "append uihub marker"
+      ],
+      "originalSourcePath": "app/src/kit/evilcharts/blocks/echarts/b-reliability-score-echarts-pie-chart.tsx"
+    },
+    {
+      "sourcePath": "../../hubs/ui/src/kit/evilcharts/blocks/echarts/b-revenue-mix-echarts-pie-chart.tsx",
+      "sourceSha256": "6e91411ab6494b5f9559311eef9d0a9f9a9abccad7f36666e2426afed51ccefe",
+      "targetPath": "packages/siso-charts/src/echarts/blocks/echarts/b-revenue-mix-echarts-pie-chart.tsx",
+      "adaptedSha256": "c216abfb9275c862c506194bd0171c66ececc4b88334f46b3c9689563bced67e",
+      "adaptations": [
+        "replace @/arc-shims/kit-utils with local cn helper",
+        "append uihub marker"
+      ],
+      "originalSourcePath": "app/src/kit/evilcharts/blocks/echarts/b-revenue-mix-echarts-pie-chart.tsx"
+    },
+    {
+      "sourcePath": "../../hubs/ui/src/kit/evilcharts/blocks/echarts/b-ride-echarts-radial-chart.tsx",
+      "sourceSha256": "88f1fe316fbf16b0020882c9be153666036490b1dc9c4f75d0b40f8bc99df8f1",
+      "targetPath": "packages/siso-charts/src/echarts/blocks/echarts/b-ride-echarts-radial-chart.tsx",
+      "adaptedSha256": "2010a1dd62e1bfc1f59b486add0beea8beed1d6421c1dfd957dd3b2037f69d3d",
+      "adaptations": [
+        "replace @/arc-shims/kit-utils with local cn helper",
+        "append uihub marker"
+      ],
+      "originalSourcePath": "app/src/kit/evilcharts/blocks/echarts/b-ride-echarts-radial-chart.tsx"
+    },
+    {
+      "sourcePath": "../../hubs/ui/src/kit/evilcharts/blocks/echarts/b-shipments-echarts-line-chart.tsx",
+      "sourceSha256": "aeb50f96512c4a50a38be2ebd5dd1744713465cb39ae72a7bfea070aaf8e3acc",
+      "targetPath": "packages/siso-charts/src/echarts/blocks/echarts/b-shipments-echarts-line-chart.tsx",
+      "adaptedSha256": "e3af960c114aad60a30c40226eed78a86dd6e57e7bb936f68a026dd88956c550",
+      "adaptations": [
+        "replace @/arc-shims/kit-utils with local cn helper",
+        "append uihub marker"
+      ],
+      "originalSourcePath": "app/src/kit/evilcharts/blocks/echarts/b-shipments-echarts-line-chart.tsx"
+    },
+    {
+      "sourcePath": "../../hubs/ui/src/arc-shims/kit-utils.ts",
+      "sourceSha256": "e587cff8efc1424acb47aaa5aaac73d3a7d49fd84ad9c7d49bff6300f51f1ef8",
+      "targetPath": "packages/siso-charts/src/echarts/utils.ts",
+      "adaptedSha256": "58e1b6422e3e809495f7b5bee33a521773732072dab2be3d2519eef71a2d21c9",
+      "adaptations": [
+        "retain cn behavior using existing clsx and tailwind-merge peers"
+      ],
+      "originalSourcePath": "app/src/arc-shims/kit-utils.ts"
+    }
+  ]
+}

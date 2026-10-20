@@ -1,0 +1,1295 @@
+{
+  "license": "MIT",
+  "copyright": "Evil Charts contributors; original licence retained in packages/siso-charts/licenses",
+  "engine": "recharts",
+  "count": 117,
+  "files": [
+    {
+      "source": "../../hubs/ui/src/kit/evilcharts/blocks/recharts/b-grid-bar-chart.tsx",
+      "target": "packages/siso-charts/src/presets/b-grid-bar-chart.tsx",
+      "sourceSha256": "083e5963936fe7d9ccd4a87b73f4993a9518110e828ee728977e3c70eca03e7f",
+      "adaptedSha256": "eb841f84437efa106f32130a49614bbec6081f1c4cc2bb66faed501f5ee39825",
+      "changes": [
+        "catalogue marker",
+        "relative imports point at the actual packaged implementations; component identifiers retain aliases"
+      ],
+      "originalSource": "app/src/kit/evilcharts/blocks/recharts/b-grid-bar-chart.tsx"
+    },
+    {
+      "source": "../../hubs/ui/src/kit/evilcharts/blocks/recharts/b-hover-trace-bar-chart.tsx",
+      "target": "packages/siso-charts/src/presets/b-hover-trace-bar-chart.tsx",
+      "sourceSha256": "9bd0bc259de43a665d4b49376fa16226c66f47e7daea522c2cf6624f43a1ac67",
+      "adaptedSha256": "64d35ae612b36c4c86dc258d1d9382c821ad1a21b85a810ea20fea36bdf584d4",
+      "changes": [
+        "catalogue marker",
+        "relative imports point at the actual packaged implementations; component identifiers retain aliases"
+      ],
+      "originalSource": "app/src/kit/evilcharts/blocks/recharts/b-hover-trace-bar-chart.tsx"
+    },
+    {
+      "source": "../../hubs/ui/src/kit/evilcharts/blocks/recharts/b-isometric-bar-chart.tsx",
+      "target": "packages/siso-charts/src/presets/b-isometric-bar-chart.tsx",
+      "sourceSha256": "a656c4e828a0501d52475928eb7b6f546042c278197130fa8fcef75aa17d9370",
+      "adaptedSha256": "2e980b94d34c4f14bb12a1139282dec6bf2c87dd5e2b71652eaaf36a14e70df9",
+      "changes": [
+        "catalogue marker",
+        "relative imports point at the actual packaged implementations; component identifiers retain aliases"
+      ],
+      "originalSource": "app/src/kit/evilcharts/blocks/recharts/b-isometric-bar-chart.tsx"
+    },
+    {
+      "source": "../../hubs/ui/src/kit/evilcharts/blocks/recharts/b-monospace-bar-chart.tsx",
+      "target": "packages/siso-charts/src/presets/b-monospace-bar-chart.tsx",
+      "sourceSha256": "00973779afcdfceee4a505aea3bb2d0ce834c093a229c95f15e51de445d72127",
+      "adaptedSha256": "81c601f64d9ba8bf9bbb431ecdf5c69a4e73227f4720035bb1196beee93328d0",
+      "changes": [
+        "catalogue marker",
+        "relative imports point at the actual packaged implementations; component identifiers retain aliases"
+      ],
+      "originalSource": "app/src/kit/evilcharts/blocks/recharts/b-monospace-bar-chart.tsx"
+    },
+    {
+      "source": "../../hubs/ui/src/kit/evilcharts/examples/recharts/ex-animated-dashed-stroke-area-chart.tsx",
+      "target": "packages/siso-charts/src/presets/ex-animated-dashed-stroke-area-chart.tsx",
+      "sourceSha256": "c218d9afeeefd2103c87da46267e7d9454df9a081b455dde2f82e060a870b9c0",
+      "adaptedSha256": "8e023ecb56ccadc03f541b39ed818e0f3cd9fcab4c0801627e5272ed4eefe264",
+      "changes": [
+        "catalogue marker",
+        "relative imports point at the actual packaged implementations; component identifiers retain aliases"
+      ],
+      "originalSource": "app/src/kit/evilcharts/examples/recharts/ex-animated-dashed-stroke-area-chart.tsx"
+    },
+    {
+      "source": "../../hubs/ui/src/kit/evilcharts/examples/recharts/ex-animated-dashed-stroke-composed-chart.tsx",
+      "target": "packages/siso-charts/src/presets/ex-animated-dashed-stroke-composed-chart.tsx",
+      "sourceSha256": "a511b5b2119daf3c51358ee6477d0615533eb9df3d0a678423a8493813d18f2d",
+      "adaptedSha256": "7ee158128be8a054dafd702d420f2f57111f9b314a9a6d04bb64f95af7040c18",
+      "changes": [
+        "catalogue marker",
+        "relative imports point at the actual packaged implementations; component identifiers retain aliases"
+      ],
+      "originalSource": "app/src/kit/evilcharts/examples/recharts/ex-animated-dashed-stroke-composed-chart.tsx"
+    },
+    {
+      "source": "../../hubs/ui/src/kit/evilcharts/examples/recharts/ex-animated-dashed-stroke-line-chart.tsx",
+      "target": "packages/siso-charts/src/presets/ex-animated-dashed-stroke-line-chart.tsx",
+      "sourceSha256": "52937bc34912837bebcbd8282fe1de7c673f8860a0f5cb0a837c3079b859c6eb",
+      "adaptedSha256": "ad05cd29ab9e0d80da45ea81df6aab3d513e0f114c8db08a904b2886a530f6d3",
+      "changes": [
+        "catalogue marker",
+        "relative imports point at the actual packaged implementations; component identifiers retain aliases"
+      ],
+      "originalSource": "app/src/kit/evilcharts/examples/recharts/ex-animated-dashed-stroke-line-chart.tsx"
+    },
+    {
+      "source": "../../hubs/ui/src/kit/evilcharts/examples/recharts/ex-area-chart.tsx",
+      "target": "packages/siso-charts/src/presets/ex-area-chart.tsx",
+      "sourceSha256": "9e2278d88a5996fa6c1d22d08971e93cf5d8266a322507965d9fa7b43d0452f6",
+      "adaptedSha256": "fd508a91316689e9252322d7960a7c931987e22028c0235633ecb2f3dee6958f",
+      "changes": [
+        "catalogue marker",
+        "relative imports point at the actual packaged implementations; component identifiers retain aliases"
+      ],
+      "originalSource": "app/src/kit/evilcharts/examples/recharts/ex-area-chart.tsx"
+    },
+    {
+      "source": "../../hubs/ui/src/kit/evilcharts/examples/recharts/ex-bar-chart.tsx",
+      "target": "packages/siso-charts/src/presets/ex-bar-chart.tsx",
+      "sourceSha256": "7410a33176e69240a44f43ca92605f83d0dc36ca53516ffc0796c36377d0212b",
+      "adaptedSha256": "6cb1253e5fccbe7fb2fe93180e2ed9a27b7f7adca3728fb93fb1f2f6ab3d7a68",
+      "changes": [
+        "catalogue marker",
+        "relative imports point at the actual packaged implementations; component identifiers retain aliases"
+      ],
+      "originalSource": "app/src/kit/evilcharts/examples/recharts/ex-bar-chart.tsx"
+    },
+    {
+      "source": "../../hubs/ui/src/kit/evilcharts/examples/recharts/ex-bg-4-pointed-star-line-chart.tsx",
+      "target": "packages/siso-charts/src/presets/ex-bg-4-pointed-star-line-chart.tsx",
+      "sourceSha256": "1450dd5b183b6d11e8df08b20c2f3883353b51f07c3e084cade0b99cd560e643",
+      "adaptedSha256": "1370e8fe599d8f04a3a5acfb31a217ef2f613c156a1ca136d1a4b2f96b6e488d",
+      "changes": [
+        "catalogue marker",
+        "relative imports point at the actual packaged implementations; component identifiers retain aliases"
+      ],
+      "originalSource": "app/src/kit/evilcharts/examples/recharts/ex-bg-4-pointed-star-line-chart.tsx"
+    },
+    {
+      "source": "../../hubs/ui/src/kit/evilcharts/examples/recharts/ex-bg-bubbles-line-chart.tsx",
+      "target": "packages/siso-charts/src/presets/ex-bg-bubbles-line-chart.tsx",
+      "sourceSha256": "66e15f15ecaf845af2893b7901cbb70c27744ed223bd9e36085a2e3ac6a6964c",
+      "adaptedSha256": "462edaf3580fb043a5133563177765928b988df4dec7ee696142c21db85b5a59",
+      "changes": [
+        "catalogue marker",
+        "relative imports point at the actual packaged implementations; component identifiers retain aliases"
+      ],
+      "originalSource": "app/src/kit/evilcharts/examples/recharts/ex-bg-bubbles-line-chart.tsx"
+    },
+    {
+      "source": "../../hubs/ui/src/kit/evilcharts/examples/recharts/ex-bg-cross-hatch-line-chart.tsx",
+      "target": "packages/siso-charts/src/presets/ex-bg-cross-hatch-line-chart.tsx",
+      "sourceSha256": "b1905eed9412d78dd7c29e91cfacab3e7b9b89fada706925461392f97866d729",
+      "adaptedSha256": "e6f56918e59af57f410b27358cb9136ba924d678ab3519147a391b42ff401e1f",
+      "changes": [
+        "catalogue marker",
+        "relative imports point at the actual packaged implementations; component identifiers retain aliases"
+      ],
+      "originalSource": "app/src/kit/evilcharts/examples/recharts/ex-bg-cross-hatch-line-chart.tsx"
+    },
+    {
+      "source": "../../hubs/ui/src/kit/evilcharts/examples/recharts/ex-bg-diagonal-lines-line-chart.tsx",
+      "target": "packages/siso-charts/src/presets/ex-bg-diagonal-lines-line-chart.tsx",
+      "sourceSha256": "75f6fd39f2f862d82298c7d9e7638726d9e96ec5d958be0c28dde9b1b3444bcf",
+      "adaptedSha256": "a16d5d937cade2bec1136bbca538ed79956410edc8584198f1e60198e64a43b4",
+      "changes": [
+        "catalogue marker",
+        "relative imports point at the actual packaged implementations; component identifiers retain aliases"
+      ],
+      "originalSource": "app/src/kit/evilcharts/examples/recharts/ex-bg-diagonal-lines-line-chart.tsx"
+    },
+    {
+      "source": "../../hubs/ui/src/kit/evilcharts/examples/recharts/ex-bg-dots-line-chart.tsx",
+      "target": "packages/siso-charts/src/presets/ex-bg-dots-line-chart.tsx",
+      "sourceSha256": "d8d64f33c41cfdd941837735805246a512ff5cf65a0087516a136e324b2ef743",
+      "adaptedSha256": "d04a044fa07e9f5ea2fa5e0a9069103759a86ac942facee4ac1af695dbca12a0",
+      "changes": [
+        "catalogue marker",
+        "relative imports point at the actual packaged implementations; component identifiers retain aliases"
+      ],
+      "originalSource": "app/src/kit/evilcharts/examples/recharts/ex-bg-dots-line-chart.tsx"
+    },
+    {
+      "source": "../../hubs/ui/src/kit/evilcharts/examples/recharts/ex-bg-falling-triangles-line-chart.tsx",
+      "target": "packages/siso-charts/src/presets/ex-bg-falling-triangles-line-chart.tsx",
+      "sourceSha256": "a3c90d984515050ca0b6b337a88bc0378d5ed0cdcaaca3ceb9d313c9edb26802",
+      "adaptedSha256": "15985eb285e8193637de4e00f22fb652729eaa358675ee567dce9f2d72675817",
+      "changes": [
+        "catalogue marker",
+        "relative imports point at the actual packaged implementations; component identifiers retain aliases"
+      ],
+      "originalSource": "app/src/kit/evilcharts/examples/recharts/ex-bg-falling-triangles-line-chart.tsx"
+    },
+    {
+      "source": "../../hubs/ui/src/kit/evilcharts/examples/recharts/ex-bg-grid-line-chart.tsx",
+      "target": "packages/siso-charts/src/presets/ex-bg-grid-line-chart.tsx",
+      "sourceSha256": "a474eb811c9736b7077a7c2644648c33b8ab6a6688f368793d72a1e0f92751a6",
+      "adaptedSha256": "318e1442393286a811a24716bd22a1de8262087eae7717ff80cd6a8563f5bd80",
+      "changes": [
+        "catalogue marker",
+        "relative imports point at the actual packaged implementations; component identifiers retain aliases"
+      ],
+      "originalSource": "app/src/kit/evilcharts/examples/recharts/ex-bg-grid-line-chart.tsx"
+    },
+    {
+      "source": "../../hubs/ui/src/kit/evilcharts/examples/recharts/ex-bg-overlapping-circles-line-chart.tsx",
+      "target": "packages/siso-charts/src/presets/ex-bg-overlapping-circles-line-chart.tsx",
+      "sourceSha256": "c78474edc104c1af2960a27c4f8e3b9d9400174c4c1ca4301fdc85ecebdf207b",
+      "adaptedSha256": "016d22558660d45ebf9901faf91336a514b6062a58e812dca74a13e0f6ca92d7",
+      "changes": [
+        "catalogue marker",
+        "relative imports point at the actual packaged implementations; component identifiers retain aliases"
+      ],
+      "originalSource": "app/src/kit/evilcharts/examples/recharts/ex-bg-overlapping-circles-line-chart.tsx"
+    },
+    {
+      "source": "../../hubs/ui/src/kit/evilcharts/examples/recharts/ex-bg-plus-line-chart.tsx",
+      "target": "packages/siso-charts/src/presets/ex-bg-plus-line-chart.tsx",
+      "sourceSha256": "12dc8a4d8e90cc1dc27a1add0949862ef82485b183197576d24490fa8ab6ed2c",
+      "adaptedSha256": "25e2046074d31dea008d5d947a834490b347f9d9e9fbf75d70a5a68b91a044bf",
+      "changes": [
+        "catalogue marker",
+        "relative imports point at the actual packaged implementations; component identifiers retain aliases"
+      ],
+      "originalSource": "app/src/kit/evilcharts/examples/recharts/ex-bg-plus-line-chart.tsx"
+    },
+    {
+      "source": "../../hubs/ui/src/kit/evilcharts/examples/recharts/ex-bg-tiny-checkers-line-chart.tsx",
+      "target": "packages/siso-charts/src/presets/ex-bg-tiny-checkers-line-chart.tsx",
+      "sourceSha256": "1e4026a71b4084847acf750f0fe7019c49b32f401f38f037be8ceb80dfa1c3d8",
+      "adaptedSha256": "32a73479e47dec3d2b888d25bf728cd43d9cca6d33edb3617f6b11c2270b1cf6",
+      "changes": [
+        "catalogue marker",
+        "relative imports point at the actual packaged implementations; component identifiers retain aliases"
+      ],
+      "originalSource": "app/src/kit/evilcharts/examples/recharts/ex-bg-tiny-checkers-line-chart.tsx"
+    },
+    {
+      "source": "../../hubs/ui/src/kit/evilcharts/examples/recharts/ex-bg-wiggle-lines-line-chart.tsx",
+      "target": "packages/siso-charts/src/presets/ex-bg-wiggle-lines-line-chart.tsx",
+      "sourceSha256": "631402176c1cbb7954a55ffe5502b7a9f7ca7cf9ee32dceb91495f3f0615bc94",
+      "adaptedSha256": "e5745a5b5f092a1c8b87595ba3280a71af8365945e4ee0b5c3aa88853621591f",
+      "changes": [
+        "catalogue marker",
+        "relative imports point at the actual packaged implementations; component identifiers retain aliases"
+      ],
+      "originalSource": "app/src/kit/evilcharts/examples/recharts/ex-bg-wiggle-lines-line-chart.tsx"
+    },
+    {
+      "source": "../../hubs/ui/src/kit/evilcharts/examples/recharts/ex-brush-area-chart.tsx",
+      "target": "packages/siso-charts/src/presets/ex-brush-area-chart.tsx",
+      "sourceSha256": "b41f612790e3fc2aa1f61f80f202b151c09f8cef6588bc41f8b4049301997a34",
+      "adaptedSha256": "323681a78143ef96878e0165865e8fc1893e41802af4ff0cc487c8b3a22cdd79",
+      "changes": [
+        "catalogue marker",
+        "relative imports point at the actual packaged implementations; component identifiers retain aliases"
+      ],
+      "originalSource": "app/src/kit/evilcharts/examples/recharts/ex-brush-area-chart.tsx"
+    },
+    {
+      "source": "../../hubs/ui/src/kit/evilcharts/examples/recharts/ex-buffer-bar-chart.tsx",
+      "target": "packages/siso-charts/src/presets/ex-buffer-bar-chart.tsx",
+      "sourceSha256": "9b1dbbfcea33cf0c9e62ca616469e55b651cd971aaeb3a3ed5a7cc7e6f4e2077",
+      "adaptedSha256": "641e365f520061a9574b345086152f1998e554bb41c3b6b58246620476c1948f",
+      "changes": [
+        "catalogue marker",
+        "relative imports point at the actual packaged implementations; component identifiers retain aliases"
+      ],
+      "originalSource": "app/src/kit/evilcharts/examples/recharts/ex-buffer-bar-chart.tsx"
+    },
+    {
+      "source": "../../hubs/ui/src/kit/evilcharts/examples/recharts/ex-buffer-line-chart.tsx",
+      "target": "packages/siso-charts/src/presets/ex-buffer-line-chart.tsx",
+      "sourceSha256": "0bae5c2c7afcf24adb719abc89cbb24696fa45935608b18ffa2b2e62eb71e0c2",
+      "adaptedSha256": "d4fa1e04a034ed411a65d8323e585f1482570446e7503dc2db3b67acceed44ac",
+      "changes": [
+        "catalogue marker",
+        "relative imports point at the actual packaged implementations; component identifiers retain aliases"
+      ],
+      "originalSource": "app/src/kit/evilcharts/examples/recharts/ex-buffer-line-chart.tsx"
+    },
+    {
+      "source": "../../hubs/ui/src/kit/evilcharts/examples/recharts/ex-bump-curve-composed-chart.tsx",
+      "target": "packages/siso-charts/src/presets/ex-bump-curve-composed-chart.tsx",
+      "sourceSha256": "95dbb2b8ef1cb121639d4c4f067f1922dec462ad88a83ddc9e28db64d0e88e13",
+      "adaptedSha256": "d330dca156905af034655e99846aabbf1a9c90c141579b485e54730f71ef0de7",
+      "changes": [
+        "catalogue marker",
+        "relative imports point at the actual packaged implementations; component identifiers retain aliases"
+      ],
+      "originalSource": "app/src/kit/evilcharts/examples/recharts/ex-bump-curve-composed-chart.tsx"
+    },
+    {
+      "source": "../../hubs/ui/src/kit/evilcharts/examples/recharts/ex-bump-curve-type-area-chart.tsx",
+      "target": "packages/siso-charts/src/presets/ex-bump-curve-type-area-chart.tsx",
+      "sourceSha256": "5c71fa140780aee87409c4dd4f55b35f70993119c95637f5f9ca1c8ab2a0ba43",
+      "adaptedSha256": "cc3d4158047f6b82fb490ebea7aaf5250d8f83260ab35843057339ecf38be895",
+      "changes": [
+        "catalogue marker",
+        "relative imports point at the actual packaged implementations; component identifiers retain aliases"
+      ],
+      "originalSource": "app/src/kit/evilcharts/examples/recharts/ex-bump-curve-type-area-chart.tsx"
+    },
+    {
+      "source": "../../hubs/ui/src/kit/evilcharts/examples/recharts/ex-bump-curve-type-line-chart.tsx",
+      "target": "packages/siso-charts/src/presets/ex-bump-curve-type-line-chart.tsx",
+      "sourceSha256": "2b57c50f2737e70ceaec275cc1170be32c80b3fc51bd1b746096b430cd120ca2",
+      "adaptedSha256": "83f23fe03fa1ebe5282a1c6cf48a916668a7d60e5b36c4dd0fa7b7ccdbd301ce",
+      "changes": [
+        "catalogue marker",
+        "relative imports point at the actual packaged implementations; component identifiers retain aliases"
+      ],
+      "originalSource": "app/src/kit/evilcharts/examples/recharts/ex-bump-curve-type-line-chart.tsx"
+    },
+    {
+      "source": "../../hubs/ui/src/kit/evilcharts/examples/recharts/ex-chart-config-default-bar-chart.tsx",
+      "target": "packages/siso-charts/src/presets/ex-chart-config-default-bar-chart.tsx",
+      "sourceSha256": "660a17ad58f60d012947cd451da1aead99476351e813760cdedf783af0db216f",
+      "adaptedSha256": "805e4980d03692b6c2c1ba5b772e25a6f929bdba09c41889c3ecbaacc821f4ad",
+      "changes": [
+        "catalogue marker",
+        "relative imports point at the actual packaged implementations; component identifiers retain aliases"
+      ],
+      "originalSource": "app/src/kit/evilcharts/examples/recharts/ex-chart-config-default-bar-chart.tsx"
+    },
+    {
+      "source": "../../hubs/ui/src/kit/evilcharts/examples/recharts/ex-chart-config-icons-bar-chart.tsx",
+      "target": "packages/siso-charts/src/presets/ex-chart-config-icons-bar-chart.tsx",
+      "sourceSha256": "01faf63ba3134f1acd9b4af71ef53962d4c879c1550d079a32ad90229fd16d1c",
+      "adaptedSha256": "e37837f538259e1cebc8e4040fb0c33c5c74637a88004cc9c3cd902776b8594c",
+      "changes": [
+        "catalogue marker",
+        "relative imports point at the actual packaged implementations; component identifiers retain aliases"
+      ],
+      "originalSource": "app/src/kit/evilcharts/examples/recharts/ex-chart-config-icons-bar-chart.tsx"
+    },
+    {
+      "source": "../../hubs/ui/src/kit/evilcharts/examples/recharts/ex-circle-grid-radar-chart.tsx",
+      "target": "packages/siso-charts/src/presets/ex-circle-grid-radar-chart.tsx",
+      "sourceSha256": "7e5e034c495e268fb55ef388b9215c988f6eed9b35fa6a4b803e44f6b22f73b2",
+      "adaptedSha256": "1b87d90394a555d52274dcfcfbb4403018db91f96de8b48a92b5da0f87f8b21c",
+      "changes": [
+        "catalogue marker",
+        "relative imports point at the actual packaged implementations; component identifiers retain aliases"
+      ],
+      "originalSource": "app/src/kit/evilcharts/examples/recharts/ex-circle-grid-radar-chart.tsx"
+    },
+    {
+      "source": "../../hubs/ui/src/kit/evilcharts/examples/recharts/ex-composed-chart.tsx",
+      "target": "packages/siso-charts/src/presets/ex-composed-chart.tsx",
+      "sourceSha256": "7d2ff2f934395bc576eafb6cfc315a2df4863bf15aa6d5323a53b9802e2c5d7e",
+      "adaptedSha256": "d971f3bc7a25790ce9a851a44b83fdff03c380b665d922859318dbb874920e65",
+      "changes": [
+        "catalogue marker",
+        "relative imports point at the actual packaged implementations; component identifiers retain aliases"
+      ],
+      "originalSource": "app/src/kit/evilcharts/examples/recharts/ex-composed-chart.tsx"
+    },
+    {
+      "source": "../../hubs/ui/src/kit/evilcharts/examples/recharts/ex-dashed-stroke-area-chart.tsx",
+      "target": "packages/siso-charts/src/presets/ex-dashed-stroke-area-chart.tsx",
+      "sourceSha256": "c29cd81bf420bc6610dcd36324a1e0a5c215cd2b01a938b53431f4cb1ee625de",
+      "adaptedSha256": "e63841d3db2db94e8d7d99a4b2d5ef93a8ca6560a37d13951ff2c684c3f6f5ff",
+      "changes": [
+        "catalogue marker",
+        "relative imports point at the actual packaged implementations; component identifiers retain aliases"
+      ],
+      "originalSource": "app/src/kit/evilcharts/examples/recharts/ex-dashed-stroke-area-chart.tsx"
+    },
+    {
+      "source": "../../hubs/ui/src/kit/evilcharts/examples/recharts/ex-dashed-stroke-composed-chart.tsx",
+      "target": "packages/siso-charts/src/presets/ex-dashed-stroke-composed-chart.tsx",
+      "sourceSha256": "dfaebc7b035eaf392af524f1d322b42066cdc481a3defeadbda696599d67c4eb",
+      "adaptedSha256": "d457f06b8f1b52a58a9da4e27c57954192b0dbf78f0f74e32014990dfda20c2d",
+      "changes": [
+        "catalogue marker",
+        "relative imports point at the actual packaged implementations; component identifiers retain aliases"
+      ],
+      "originalSource": "app/src/kit/evilcharts/examples/recharts/ex-dashed-stroke-composed-chart.tsx"
+    },
+    {
+      "source": "../../hubs/ui/src/kit/evilcharts/examples/recharts/ex-dashed-stroke-line-chart.tsx",
+      "target": "packages/siso-charts/src/presets/ex-dashed-stroke-line-chart.tsx",
+      "sourceSha256": "d931cc10b37b301a9e59846c0a23192bad72f328f0d20b05d75702817cfb66fe",
+      "adaptedSha256": "bf31ab273f36fac67fd6749e89a51424590a7c49fbb830714c643b886de4c8ec",
+      "changes": [
+        "catalogue marker",
+        "relative imports point at the actual packaged implementations; component identifiers retain aliases"
+      ],
+      "originalSource": "app/src/kit/evilcharts/examples/recharts/ex-dashed-stroke-line-chart.tsx"
+    },
+    {
+      "source": "../../hubs/ui/src/kit/evilcharts/examples/recharts/ex-default-type-area-chart.tsx",
+      "target": "packages/siso-charts/src/presets/ex-default-type-area-chart.tsx",
+      "sourceSha256": "ea0205a2721c017d44fea4d2e4866bc400070262a2c1f1e5726e358b834c0b30",
+      "adaptedSha256": "9655f4963bbb109f4344971b016cd6138bdb7f9b33a81f06538542a8abfeae3a",
+      "changes": [
+        "catalogue marker",
+        "relative imports point at the actual packaged implementations; component identifiers retain aliases"
+      ],
+      "originalSource": "app/src/kit/evilcharts/examples/recharts/ex-default-type-area-chart.tsx"
+    },
+    {
+      "source": "../../hubs/ui/src/kit/evilcharts/examples/recharts/ex-default-variant-bar-chart.tsx",
+      "target": "packages/siso-charts/src/presets/ex-default-variant-bar-chart.tsx",
+      "sourceSha256": "199275cb227139c9574f7522ae5d49dfd6989ca8ebc227f868a27d302e9cf207",
+      "adaptedSha256": "3663ff1a1b567f47d0c10583e941dd0265d321197d41214f9d36edec4f65c2a0",
+      "changes": [
+        "catalogue marker",
+        "relative imports point at the actual packaged implementations; component identifiers retain aliases"
+      ],
+      "originalSource": "app/src/kit/evilcharts/examples/recharts/ex-default-variant-bar-chart.tsx"
+    },
+    {
+      "source": "../../hubs/ui/src/kit/evilcharts/examples/recharts/ex-donut-pie-chart.tsx",
+      "target": "packages/siso-charts/src/presets/ex-donut-pie-chart.tsx",
+      "sourceSha256": "8f5cd7af46fc3530355e0f6bf79ca9840db2d0b23690bbba18f3990c350a5b73",
+      "adaptedSha256": "32b601ea1d862a9de1557ae0f35b13fbc406c7a977798c151d82aa60b6c39580",
+      "changes": [
+        "catalogue marker",
+        "relative imports point at the actual packaged implementations; component identifiers retain aliases"
+      ],
+      "originalSource": "app/src/kit/evilcharts/examples/recharts/ex-donut-pie-chart.tsx"
+    },
+    {
+      "source": "../../hubs/ui/src/kit/evilcharts/examples/recharts/ex-dot-border-line-chart.tsx",
+      "target": "packages/siso-charts/src/presets/ex-dot-border-line-chart.tsx",
+      "sourceSha256": "8508d7dbad3280280ee51164cc197edf239feaddaa2d2f2cbebd9cfcc0b80194",
+      "adaptedSha256": "9b522dde0722e32c9a125d57d4a5a70ab4ba66cefeea85976044a1f9b24b7b74",
+      "changes": [
+        "catalogue marker",
+        "relative imports point at the actual packaged implementations; component identifiers retain aliases"
+      ],
+      "originalSource": "app/src/kit/evilcharts/examples/recharts/ex-dot-border-line-chart.tsx"
+    },
+    {
+      "source": "../../hubs/ui/src/kit/evilcharts/examples/recharts/ex-dot-colored-border-line-chart.tsx",
+      "target": "packages/siso-charts/src/presets/ex-dot-colored-border-line-chart.tsx",
+      "sourceSha256": "defdb9b029ef61ac80cc07125b25d3d93c321b71f5888acc3f741d62b1dc4974",
+      "adaptedSha256": "10272bf3f499661a876ca48b96aab2533b9307f4e04371f352a532399a269004",
+      "changes": [
+        "catalogue marker",
+        "relative imports point at the actual packaged implementations; component identifiers retain aliases"
+      ],
+      "originalSource": "app/src/kit/evilcharts/examples/recharts/ex-dot-colored-border-line-chart.tsx"
+    },
+    {
+      "source": "../../hubs/ui/src/kit/evilcharts/examples/recharts/ex-dot-default-line-chart.tsx",
+      "target": "packages/siso-charts/src/presets/ex-dot-default-line-chart.tsx",
+      "sourceSha256": "9b5a352287178cb7ac1a5d46d516192f0de93fc63e5ae3b056eb7c7feaa5e0e1",
+      "adaptedSha256": "7113a8bf3ec78d5bc0b354ca60f9140151cf85fedff97c10b96764c28bcb33cf",
+      "changes": [
+        "catalogue marker",
+        "relative imports point at the actual packaged implementations; component identifiers retain aliases"
+      ],
+      "originalSource": "app/src/kit/evilcharts/examples/recharts/ex-dot-default-line-chart.tsx"
+    },
+    {
+      "source": "../../hubs/ui/src/kit/evilcharts/examples/recharts/ex-dots-composed-chart.tsx",
+      "target": "packages/siso-charts/src/presets/ex-dots-composed-chart.tsx",
+      "sourceSha256": "c55f36a17c8a9ebbe13ff9a58462ae589ea396cd2136880d1e1c9d9b3fd6e6c2",
+      "adaptedSha256": "df7bb55e69c56fa36077323c13a70ef8530cf627e500b3881f3746bd4ab949ad",
+      "changes": [
+        "catalogue marker",
+        "relative imports point at the actual packaged implementations; component identifiers retain aliases"
+      ],
+      "originalSource": "app/src/kit/evilcharts/examples/recharts/ex-dots-composed-chart.tsx"
+    },
+    {
+      "source": "../../hubs/ui/src/kit/evilcharts/examples/recharts/ex-dotted-area-variant-area-chart.tsx",
+      "target": "packages/siso-charts/src/presets/ex-dotted-area-variant-area-chart.tsx",
+      "sourceSha256": "d5b0de8f43827dd3165b16467fc2d50a95c7e847e77da0a0afdde8db368e9bf2",
+      "adaptedSha256": "8dcbad0d36e9a1f3efbf8b16a0607abc092ca625150fa4ffa02dc2f7ec7da60e",
+      "changes": [
+        "catalogue marker",
+        "relative imports point at the actual packaged implementations; component identifiers retain aliases"
+      ],
+      "originalSource": "app/src/kit/evilcharts/examples/recharts/ex-dotted-area-variant-area-chart.tsx"
+    },
+    {
+      "source": "../../hubs/ui/src/kit/evilcharts/examples/recharts/ex-duotone-reverse-variant-bar-chart.tsx",
+      "target": "packages/siso-charts/src/presets/ex-duotone-reverse-variant-bar-chart.tsx",
+      "sourceSha256": "d4e9e0f71c81e324f4e22f8767fd850890fea80237343cb527bac8ef0524f71c",
+      "adaptedSha256": "209e73a4d74f641ba4dcdbe4a5eb29eb5730bbd937322d2085ef3d2d62c88f7f",
+      "changes": [
+        "catalogue marker",
+        "relative imports point at the actual packaged implementations; component identifiers retain aliases"
+      ],
+      "originalSource": "app/src/kit/evilcharts/examples/recharts/ex-duotone-reverse-variant-bar-chart.tsx"
+    },
+    {
+      "source": "../../hubs/ui/src/kit/evilcharts/examples/recharts/ex-duotone-variant-bar-chart.tsx",
+      "target": "packages/siso-charts/src/presets/ex-duotone-variant-bar-chart.tsx",
+      "sourceSha256": "0d27226984a67920de7fb1fac18b0d4293f84eb945f03384c749671416c2b3a3",
+      "adaptedSha256": "653643fe3b14713ea031644bfa333e322727d9f1e74be04a8d74fea1c0518f74",
+      "changes": [
+        "catalogue marker",
+        "relative imports point at the actual packaged implementations; component identifiers retain aliases"
+      ],
+      "originalSource": "app/src/kit/evilcharts/examples/recharts/ex-duotone-variant-bar-chart.tsx"
+    },
+    {
+      "source": "../../hubs/ui/src/kit/evilcharts/examples/recharts/ex-duotone-variant-composed-chart.tsx",
+      "target": "packages/siso-charts/src/presets/ex-duotone-variant-composed-chart.tsx",
+      "sourceSha256": "aa404e65547368b77e7cf6fc0ddf764bc07578166e12d82105f794fdcd5670b6",
+      "adaptedSha256": "6a81c41f891c0ade81c710c8c6fe2258a69ca105f708a67d3ec6bf2c8c6fee7b",
+      "changes": [
+        "catalogue marker",
+        "relative imports point at the actual packaged implementations; component identifiers retain aliases"
+      ],
+      "originalSource": "app/src/kit/evilcharts/examples/recharts/ex-duotone-variant-composed-chart.tsx"
+    },
+    {
+      "source": "../../hubs/ui/src/kit/evilcharts/examples/recharts/ex-expanded-type-area-chart.tsx",
+      "target": "packages/siso-charts/src/presets/ex-expanded-type-area-chart.tsx",
+      "sourceSha256": "95311e80c85619f8e7507b573f7b03ca6e15d49865646ef63039f9f9c016f54f",
+      "adaptedSha256": "a2d19c8639a5c92843e05a6b9f558a33ae73fddcc8414f0e992699b418e72dc6",
+      "changes": [
+        "catalogue marker",
+        "relative imports point at the actual packaged implementations; component identifiers retain aliases"
+      ],
+      "originalSource": "app/src/kit/evilcharts/examples/recharts/ex-expanded-type-area-chart.tsx"
+    },
+    {
+      "source": "../../hubs/ui/src/kit/evilcharts/examples/recharts/ex-glowing-composed-chart.tsx",
+      "target": "packages/siso-charts/src/presets/ex-glowing-composed-chart.tsx",
+      "sourceSha256": "1ba7145f8a6fdc77be82e6a34106cc1e4288b7ef5b095732bba93d36b72088a2",
+      "adaptedSha256": "3af13f5f960821b7841816df51e6f5bbf953f127769c06e19c525cfd2dfd7279",
+      "changes": [
+        "catalogue marker",
+        "relative imports point at the actual packaged implementations; component identifiers retain aliases"
+      ],
+      "originalSource": "app/src/kit/evilcharts/examples/recharts/ex-glowing-composed-chart.tsx"
+    },
+    {
+      "source": "../../hubs/ui/src/kit/evilcharts/examples/recharts/ex-glowing-desktop-bar-chart.tsx",
+      "target": "packages/siso-charts/src/presets/ex-glowing-desktop-bar-chart.tsx",
+      "sourceSha256": "3bfd6483f92a41f7c36c7603fa956046a516c7f8cc26ccdc9c727ca0521a6429",
+      "adaptedSha256": "97a3b429ef18bcd3a6a79ef2704448458d60814ffc3c0b56e85095ffe6631317",
+      "changes": [
+        "catalogue marker",
+        "relative imports point at the actual packaged implementations; component identifiers retain aliases"
+      ],
+      "originalSource": "app/src/kit/evilcharts/examples/recharts/ex-glowing-desktop-bar-chart.tsx"
+    },
+    {
+      "source": "../../hubs/ui/src/kit/evilcharts/examples/recharts/ex-glowing-desktop-line-chart.tsx",
+      "target": "packages/siso-charts/src/presets/ex-glowing-desktop-line-chart.tsx",
+      "sourceSha256": "293dee595b1b2f30022d675256f312891edb15f8a063193f070b982b82bbdc8e",
+      "adaptedSha256": "516fe7fe92876afc9e484aed0748de66dadf6fd66547aa23d6eb27c19670566b",
+      "changes": [
+        "catalogue marker",
+        "relative imports point at the actual packaged implementations; component identifiers retain aliases"
+      ],
+      "originalSource": "app/src/kit/evilcharts/examples/recharts/ex-glowing-desktop-line-chart.tsx"
+    },
+    {
+      "source": "../../hubs/ui/src/kit/evilcharts/examples/recharts/ex-glowing-mobile-bar-chart.tsx",
+      "target": "packages/siso-charts/src/presets/ex-glowing-mobile-bar-chart.tsx",
+      "sourceSha256": "1835cfc0ea3c20cae1932841e42678bc6e134329e94398d60d678e44ab78f00f",
+      "adaptedSha256": "74eafa9e058a02568d4b2f9840b31adb2ede377f983892a074f4bb9b6cecf6a7",
+      "changes": [
+        "catalogue marker",
+        "relative imports point at the actual packaged implementations; component identifiers retain aliases"
+      ],
+      "originalSource": "app/src/kit/evilcharts/examples/recharts/ex-glowing-mobile-bar-chart.tsx"
+    },
+    {
+      "source": "../../hubs/ui/src/kit/evilcharts/examples/recharts/ex-glowing-mobile-line-chart.tsx",
+      "target": "packages/siso-charts/src/presets/ex-glowing-mobile-line-chart.tsx",
+      "sourceSha256": "f5601775811c0c61b6d3fba2255841ade71692171212c24380069f4a4b6c27cc",
+      "adaptedSha256": "1c7408c65777ad96a25341fc3995eb1a3a591c39c41ce967c0ffe2b8049af098",
+      "changes": [
+        "catalogue marker",
+        "relative imports point at the actual packaged implementations; component identifiers retain aliases"
+      ],
+      "originalSource": "app/src/kit/evilcharts/examples/recharts/ex-glowing-mobile-line-chart.tsx"
+    },
+    {
+      "source": "../../hubs/ui/src/kit/evilcharts/examples/recharts/ex-glowing-pie-chart.tsx",
+      "target": "packages/siso-charts/src/presets/ex-glowing-pie-chart.tsx",
+      "sourceSha256": "9bee3e2d2fd42b269911220cd860e641ac83411783e18d83ee7a98dc6400e270",
+      "adaptedSha256": "a1ca927510873ec5a8707f57f9e28dd1b925bc5c94bdd62afbe256a8d9dc2294",
+      "changes": [
+        "catalogue marker",
+        "relative imports point at the actual packaged implementations; component identifiers retain aliases"
+      ],
+      "originalSource": "app/src/kit/evilcharts/examples/recharts/ex-glowing-pie-chart.tsx"
+    },
+    {
+      "source": "../../hubs/ui/src/kit/evilcharts/examples/recharts/ex-glowing-radar-chart.tsx",
+      "target": "packages/siso-charts/src/presets/ex-glowing-radar-chart.tsx",
+      "sourceSha256": "d3561d4ca2daee8a556b176f6eac84ce7595f6497b37c998b1b600c34fa63d2f",
+      "adaptedSha256": "35cf2b4930f7e6da7d282d4fce58d130ee9fdf8f3adf7c4bd697881de1952f49",
+      "changes": [
+        "catalogue marker",
+        "relative imports point at the actual packaged implementations; component identifiers retain aliases"
+      ],
+      "originalSource": "app/src/kit/evilcharts/examples/recharts/ex-glowing-radar-chart.tsx"
+    },
+    {
+      "source": "../../hubs/ui/src/kit/evilcharts/examples/recharts/ex-gradient-area-variant-area-chart.tsx",
+      "target": "packages/siso-charts/src/presets/ex-gradient-area-variant-area-chart.tsx",
+      "sourceSha256": "dcaf97bab55eac93a4d7f22c64aabf7c1a0a58f1b85ab835bac29973549d6619",
+      "adaptedSha256": "30b720d6fc05b99eb7546883b3606e284b1e7270f78a581b67f046221f37849c",
+      "changes": [
+        "catalogue marker",
+        "relative imports point at the actual packaged implementations; component identifiers retain aliases"
+      ],
+      "originalSource": "app/src/kit/evilcharts/examples/recharts/ex-gradient-area-variant-area-chart.tsx"
+    },
+    {
+      "source": "../../hubs/ui/src/kit/evilcharts/examples/recharts/ex-gradient-colors-area-chart.tsx",
+      "target": "packages/siso-charts/src/presets/ex-gradient-colors-area-chart.tsx",
+      "sourceSha256": "b1e9cc8dbd5d39e0b7965d96bd2f2d1dea6acd912b4127befe0ce0c49925d2e7",
+      "adaptedSha256": "73306252ffebe9a5f4a9736395df651edf309abad33a567c1367e7fcd89453a5",
+      "changes": [
+        "catalogue marker",
+        "relative imports point at the actual packaged implementations; component identifiers retain aliases"
+      ],
+      "originalSource": "app/src/kit/evilcharts/examples/recharts/ex-gradient-colors-area-chart.tsx"
+    },
+    {
+      "source": "../../hubs/ui/src/kit/evilcharts/examples/recharts/ex-gradient-colors-bar-chart.tsx",
+      "target": "packages/siso-charts/src/presets/ex-gradient-colors-bar-chart.tsx",
+      "sourceSha256": "91aa3b1c17b5e14b2888b50b61f5fccf6bad067e27d881b127cd364782042292",
+      "adaptedSha256": "be636e4146dffe0eda8a68e963746ec4f819416bc1335a5f9c8ea71a5c93dbf8",
+      "changes": [
+        "catalogue marker",
+        "relative imports point at the actual packaged implementations; component identifiers retain aliases"
+      ],
+      "originalSource": "app/src/kit/evilcharts/examples/recharts/ex-gradient-colors-bar-chart.tsx"
+    },
+    {
+      "source": "../../hubs/ui/src/kit/evilcharts/examples/recharts/ex-gradient-colors-bump-area-chart.tsx",
+      "target": "packages/siso-charts/src/presets/ex-gradient-colors-bump-area-chart.tsx",
+      "sourceSha256": "e5602894bff5f1a157a6754d8bf96294b88b75c8bd6c28979395e95ab612740b",
+      "adaptedSha256": "b384c721687c11b635b78636f06720715928b49b8fd908bce9f0d2c347d06d61",
+      "changes": [
+        "catalogue marker",
+        "relative imports point at the actual packaged implementations; component identifiers retain aliases"
+      ],
+      "originalSource": "app/src/kit/evilcharts/examples/recharts/ex-gradient-colors-bump-area-chart.tsx"
+    },
+    {
+      "source": "../../hubs/ui/src/kit/evilcharts/examples/recharts/ex-gradient-colors-bump-line-chart.tsx",
+      "target": "packages/siso-charts/src/presets/ex-gradient-colors-bump-line-chart.tsx",
+      "sourceSha256": "8d498783311c3262b32b51a4e0a436afeac47e8312d68f4097e1fcc76403e692",
+      "adaptedSha256": "5a93db32a56c470570a72722730cec7cf8e1c67204fe418d07b883a6cca53cba",
+      "changes": [
+        "catalogue marker",
+        "relative imports point at the actual packaged implementations; component identifiers retain aliases"
+      ],
+      "originalSource": "app/src/kit/evilcharts/examples/recharts/ex-gradient-colors-bump-line-chart.tsx"
+    },
+    {
+      "source": "../../hubs/ui/src/kit/evilcharts/examples/recharts/ex-gradient-colors-composed-chart.tsx",
+      "target": "packages/siso-charts/src/presets/ex-gradient-colors-composed-chart.tsx",
+      "sourceSha256": "d05807319de5f775f363c530a5abb3dccaa976cc67ca17aae668f7bd4406d30e",
+      "adaptedSha256": "64d4674783f0a8341d51d5412eac0a008a4a5970e0178863cab41d228213d9d2",
+      "changes": [
+        "catalogue marker",
+        "relative imports point at the actual packaged implementations; component identifiers retain aliases"
+      ],
+      "originalSource": "app/src/kit/evilcharts/examples/recharts/ex-gradient-colors-composed-chart.tsx"
+    },
+    {
+      "source": "../../hubs/ui/src/kit/evilcharts/examples/recharts/ex-gradient-colors-line-chart.tsx",
+      "target": "packages/siso-charts/src/presets/ex-gradient-colors-line-chart.tsx",
+      "sourceSha256": "9394c2b4995b564218afe17ed6b9738753e929282f054106b946c535fa21a78c",
+      "adaptedSha256": "d86177e5ae2052b0aba7cc93d4cc7ac0dc789d2cddc32ec0ba18381af2a036c5",
+      "changes": [
+        "catalogue marker",
+        "relative imports point at the actual packaged implementations; component identifiers retain aliases"
+      ],
+      "originalSource": "app/src/kit/evilcharts/examples/recharts/ex-gradient-colors-line-chart.tsx"
+    },
+    {
+      "source": "../../hubs/ui/src/kit/evilcharts/examples/recharts/ex-gradient-colors-pie-chart.tsx",
+      "target": "packages/siso-charts/src/presets/ex-gradient-colors-pie-chart.tsx",
+      "sourceSha256": "805e29f3e74420ec46a120573eb5345eac1795787a9e7e7797f16fb3f28bf3ff",
+      "adaptedSha256": "71209498f601221d78095565cf22059507f966da6552c26bbefcff473bb9330a",
+      "changes": [
+        "catalogue marker",
+        "relative imports point at the actual packaged implementations; component identifiers retain aliases"
+      ],
+      "originalSource": "app/src/kit/evilcharts/examples/recharts/ex-gradient-colors-pie-chart.tsx"
+    },
+    {
+      "source": "../../hubs/ui/src/kit/evilcharts/examples/recharts/ex-gradient-colors-radar-chart.tsx",
+      "target": "packages/siso-charts/src/presets/ex-gradient-colors-radar-chart.tsx",
+      "sourceSha256": "36e2ac2f83f327aa259b13ceb4095a13cad1b1360db39e95efeff880f30f5e51",
+      "adaptedSha256": "c33332f508666b9c846b0b8fc8e4b2fb5fa7f04b0bfcb7a86900986b7f04596b",
+      "changes": [
+        "catalogue marker",
+        "relative imports point at the actual packaged implementations; component identifiers retain aliases"
+      ],
+      "originalSource": "app/src/kit/evilcharts/examples/recharts/ex-gradient-colors-radar-chart.tsx"
+    },
+    {
+      "source": "../../hubs/ui/src/kit/evilcharts/examples/recharts/ex-gradient-colors-radial-chart.tsx",
+      "target": "packages/siso-charts/src/presets/ex-gradient-colors-radial-chart.tsx",
+      "sourceSha256": "0a1830b6af5a25b2192c16ecb98f63afe0611018adda212c14230703f3f39b42",
+      "adaptedSha256": "a8ecb3e4bea305a2298bf9d353521f8437a49ca273fde6e3a588ed46d5f721d5",
+      "changes": [
+        "catalogue marker",
+        "relative imports point at the actual packaged implementations; component identifiers retain aliases"
+      ],
+      "originalSource": "app/src/kit/evilcharts/examples/recharts/ex-gradient-colors-radial-chart.tsx"
+    },
+    {
+      "source": "../../hubs/ui/src/kit/evilcharts/examples/recharts/ex-gradient-colors-sankey-chart.tsx",
+      "target": "packages/siso-charts/src/presets/ex-gradient-colors-sankey-chart.tsx",
+      "sourceSha256": "763e925cc720cc412c55fa7c664b499f60d222c03358fcc48595527595854b09",
+      "adaptedSha256": "85ca8bb3ea10d8ca703a571e257db6813cd9998ce35c8cd2f6beeda8beeba7f0",
+      "changes": [
+        "catalogue marker",
+        "relative imports point at the actual packaged implementations; component identifiers retain aliases"
+      ],
+      "originalSource": "app/src/kit/evilcharts/examples/recharts/ex-gradient-colors-sankey-chart.tsx"
+    },
+    {
+      "source": "../../hubs/ui/src/kit/evilcharts/examples/recharts/ex-gradient-reverse-area-variant-area-chart.tsx",
+      "target": "packages/siso-charts/src/presets/ex-gradient-reverse-area-variant-area-chart.tsx",
+      "sourceSha256": "7c1674ea8f157c9eabe39a0e92042bd44160a1041db0a8c2b46f36034c2ca39e",
+      "adaptedSha256": "6144dff1d4a9a1e407ea52077cddb579d9cba1aae4074b7fb7244b4073e45cfe",
+      "changes": [
+        "catalogue marker",
+        "relative imports point at the actual packaged implementations; component identifiers retain aliases"
+      ],
+      "originalSource": "app/src/kit/evilcharts/examples/recharts/ex-gradient-reverse-area-variant-area-chart.tsx"
+    },
+    {
+      "source": "../../hubs/ui/src/kit/evilcharts/examples/recharts/ex-gradient-variant-bar-chart.tsx",
+      "target": "packages/siso-charts/src/presets/ex-gradient-variant-bar-chart.tsx",
+      "sourceSha256": "f2b85654c2ca474f232ad6a62e313c429ea75a6dd4539e9b5bf0afba58c3eba6",
+      "adaptedSha256": "7a487348e4c778d7f868f76feb430d8e7136f177cad5e260673e587c607f3880",
+      "changes": [
+        "catalogue marker",
+        "relative imports point at the actual packaged implementations; component identifiers retain aliases"
+      ],
+      "originalSource": "app/src/kit/evilcharts/examples/recharts/ex-gradient-variant-bar-chart.tsx"
+    },
+    {
+      "source": "../../hubs/ui/src/kit/evilcharts/examples/recharts/ex-gradient-variant-composed-chart.tsx",
+      "target": "packages/siso-charts/src/presets/ex-gradient-variant-composed-chart.tsx",
+      "sourceSha256": "bbb4a3a20a108704152dd62a335d60f5d522b061a32711094157888116088116",
+      "adaptedSha256": "33e5f6d84c4d8eaebc6874b2789b0d8568f23c69bc78e1cec626b9e3623b6009",
+      "changes": [
+        "catalogue marker",
+        "relative imports point at the actual packaged implementations; component identifiers retain aliases"
+      ],
+      "originalSource": "app/src/kit/evilcharts/examples/recharts/ex-gradient-variant-composed-chart.tsx"
+    },
+    {
+      "source": "../../hubs/ui/src/kit/evilcharts/examples/recharts/ex-hatched-area-variant-area-chart.tsx",
+      "target": "packages/siso-charts/src/presets/ex-hatched-area-variant-area-chart.tsx",
+      "sourceSha256": "9f9e948cec54c8277129634b8d35b2f738a2256aabac759c1047e3ba2319d1ac",
+      "adaptedSha256": "f57f1370a6d514165e90e8ba85bda2fe278fb4bb97961cdd214affdf70bd96ff",
+      "changes": [
+        "catalogue marker",
+        "relative imports point at the actual packaged implementations; component identifiers retain aliases"
+      ],
+      "originalSource": "app/src/kit/evilcharts/examples/recharts/ex-hatched-area-variant-area-chart.tsx"
+    },
+    {
+      "source": "../../hubs/ui/src/kit/evilcharts/examples/recharts/ex-hatched-variant-bar-chart.tsx",
+      "target": "packages/siso-charts/src/presets/ex-hatched-variant-bar-chart.tsx",
+      "sourceSha256": "c35373fcebf6a0bcbe036362c2e5a81f45d1feb8cd300cd4fcf18187737ccc6e",
+      "adaptedSha256": "18fea921437c904d218fdf3dc06e6b47084cf4d5b2dc4115a2a86788f68ee2fb",
+      "changes": [
+        "catalogue marker",
+        "relative imports point at the actual packaged implementations; component identifiers retain aliases"
+      ],
+      "originalSource": "app/src/kit/evilcharts/examples/recharts/ex-hatched-variant-bar-chart.tsx"
+    },
+    {
+      "source": "../../hubs/ui/src/kit/evilcharts/examples/recharts/ex-hatched-variant-composed-chart.tsx",
+      "target": "packages/siso-charts/src/presets/ex-hatched-variant-composed-chart.tsx",
+      "sourceSha256": "9dc63bbec5faa3a163a4c08f8c8812454e82df647dc601bf88f8ac0b1551e246",
+      "adaptedSha256": "1e14a573de75901690c40712f09d0552436a714a064319f801b2965d7198fc2d",
+      "changes": [
+        "catalogue marker",
+        "relative imports point at the actual packaged implementations; component identifiers retain aliases"
+      ],
+      "originalSource": "app/src/kit/evilcharts/examples/recharts/ex-hatched-variant-composed-chart.tsx"
+    },
+    {
+      "source": "../../hubs/ui/src/kit/evilcharts/examples/recharts/ex-horizontal-layout-bar-chart.tsx",
+      "target": "packages/siso-charts/src/presets/ex-horizontal-layout-bar-chart.tsx",
+      "sourceSha256": "dd47ab177dca1334d0bbf51af60f387d9738ca91a3419cb36e0853ce40792321",
+      "adaptedSha256": "33952812814f7da7815b80ffa4d3136b0589e47153b98c5ad85dc5dd854014d3",
+      "changes": [
+        "catalogue marker",
+        "relative imports point at the actual packaged implementations; component identifiers retain aliases"
+      ],
+      "originalSource": "app/src/kit/evilcharts/examples/recharts/ex-horizontal-layout-bar-chart.tsx"
+    },
+    {
+      "source": "../../hubs/ui/src/kit/evilcharts/examples/recharts/ex-hover-highlight-bar-chart.tsx",
+      "target": "packages/siso-charts/src/presets/ex-hover-highlight-bar-chart.tsx",
+      "sourceSha256": "ac75d73cacd813ad7963bc95df5c63a9de1e43b365cbbebd2ee6c18069eaa536",
+      "adaptedSha256": "0901d06b03ff0763651d139fbaec24bb72dff4988f75ff92d8546d9843af4014",
+      "changes": [
+        "catalogue marker",
+        "relative imports point at the actual packaged implementations; component identifiers retain aliases"
+      ],
+      "originalSource": "app/src/kit/evilcharts/examples/recharts/ex-hover-highlight-bar-chart.tsx"
+    },
+    {
+      "source": "../../hubs/ui/src/kit/evilcharts/examples/recharts/ex-hover-highlight-composed-chart.tsx",
+      "target": "packages/siso-charts/src/presets/ex-hover-highlight-composed-chart.tsx",
+      "sourceSha256": "795608aa7539cdcac3c173a632d156aba3bb5fec3d52054ae995cf1500ec2a17",
+      "adaptedSha256": "9493c2ae6b487a34daa4def105d4c8325f8fc8ea9c2ee5e9dcac9bda079d3f44",
+      "changes": [
+        "catalogue marker",
+        "relative imports point at the actual packaged implementations; component identifiers retain aliases"
+      ],
+      "originalSource": "app/src/kit/evilcharts/examples/recharts/ex-hover-highlight-composed-chart.tsx"
+    },
+    {
+      "source": "../../hubs/ui/src/kit/evilcharts/examples/recharts/ex-labeled-nodes-sankey-chart.tsx",
+      "target": "packages/siso-charts/src/presets/ex-labeled-nodes-sankey-chart.tsx",
+      "sourceSha256": "a49932b048fd95b1e9b1b11363dd860c14afbeb377e67ad74fa5423afe199d1e",
+      "adaptedSha256": "55cf0afbd7fdf980b6bc2e44b8b7d19f73e570398e01caac8c5e5a0a6fb136bf",
+      "changes": [
+        "catalogue marker",
+        "relative imports point at the actual packaged implementations; component identifiers retain aliases"
+      ],
+      "originalSource": "app/src/kit/evilcharts/examples/recharts/ex-labeled-nodes-sankey-chart.tsx"
+    },
+    {
+      "source": "../../hubs/ui/src/kit/evilcharts/examples/recharts/ex-labels-pie-chart.tsx",
+      "target": "packages/siso-charts/src/presets/ex-labels-pie-chart.tsx",
+      "sourceSha256": "bf9afa6d073865d9d3e2cfda0276bb146e215c0377dd15a724befba675c7bffa",
+      "adaptedSha256": "f14a8b7fe97aee103db66f8b199cd65ea0195edba91ecaf76bda428620da5ea4",
+      "changes": [
+        "catalogue marker",
+        "relative imports point at the actual packaged implementations; component identifiers retain aliases"
+      ],
+      "originalSource": "app/src/kit/evilcharts/examples/recharts/ex-labels-pie-chart.tsx"
+    },
+    {
+      "source": "../../hubs/ui/src/kit/evilcharts/examples/recharts/ex-legend-circle-line-chart.tsx",
+      "target": "packages/siso-charts/src/presets/ex-legend-circle-line-chart.tsx",
+      "sourceSha256": "e0bfff5845c4d928b849c40e31bb189b8378eb80cc4e7158f7d3cfc8cbd642aa",
+      "adaptedSha256": "69772fd631c7f3ae2bdf9ee69b813696c76ec3f23de8f9f5cf76348244d3f0b7",
+      "changes": [
+        "catalogue marker",
+        "relative imports point at the actual packaged implementations; component identifiers retain aliases"
+      ],
+      "originalSource": "app/src/kit/evilcharts/examples/recharts/ex-legend-circle-line-chart.tsx"
+    },
+    {
+      "source": "../../hubs/ui/src/kit/evilcharts/examples/recharts/ex-legend-circle-outline-line-chart.tsx",
+      "target": "packages/siso-charts/src/presets/ex-legend-circle-outline-line-chart.tsx",
+      "sourceSha256": "b4754c5edd8dd5ec7f4c04735e9c97a2bd3f83858da550b50a8aedceee1cdb26",
+      "adaptedSha256": "5543b90c9410b8dc7bd1db62a595c95ef8e78c2f1e6016874a3149c46fdeb1bc",
+      "changes": [
+        "catalogue marker",
+        "relative imports point at the actual packaged implementations; component identifiers retain aliases"
+      ],
+      "originalSource": "app/src/kit/evilcharts/examples/recharts/ex-legend-circle-outline-line-chart.tsx"
+    },
+    {
+      "source": "../../hubs/ui/src/kit/evilcharts/examples/recharts/ex-legend-horizontal-bar-line-chart.tsx",
+      "target": "packages/siso-charts/src/presets/ex-legend-horizontal-bar-line-chart.tsx",
+      "sourceSha256": "f77aadade24914bf59eea4ac4b2847cb7e78bdd69be54288ceafa7ca784d52cc",
+      "adaptedSha256": "4a06ee6cfd0e1c2091da8f8d842c6be0e03d506ca138f006d58da7a0d38aaa09",
+      "changes": [
+        "catalogue marker",
+        "relative imports point at the actual packaged implementations; component identifiers retain aliases"
+      ],
+      "originalSource": "app/src/kit/evilcharts/examples/recharts/ex-legend-horizontal-bar-line-chart.tsx"
+    },
+    {
+      "source": "../../hubs/ui/src/kit/evilcharts/examples/recharts/ex-legend-rounded-square-line-chart.tsx",
+      "target": "packages/siso-charts/src/presets/ex-legend-rounded-square-line-chart.tsx",
+      "sourceSha256": "7bdd5c0d1b3db5523267400bb7646a14d88182b190fc0bd543feaf841f8d842e",
+      "adaptedSha256": "3dbb8347d3616659feb764db31bcaefcf96101cea0f7260be654caceaf8d27a0",
+      "changes": [
+        "catalogue marker",
+        "relative imports point at the actual packaged implementations; component identifiers retain aliases"
+      ],
+      "originalSource": "app/src/kit/evilcharts/examples/recharts/ex-legend-rounded-square-line-chart.tsx"
+    },
+    {
+      "source": "../../hubs/ui/src/kit/evilcharts/examples/recharts/ex-legend-rounded-square-outline-line-chart.tsx",
+      "target": "packages/siso-charts/src/presets/ex-legend-rounded-square-outline-line-chart.tsx",
+      "sourceSha256": "16c3db7d27bcd86d471be97ac88313ddd9048444b8a0399864e1adb70ad7b909",
+      "adaptedSha256": "d2bf4387d66850f4b67a9020217bf3208bb6c4847075af41834c0138d3c46832",
+      "changes": [
+        "catalogue marker",
+        "relative imports point at the actual packaged implementations; component identifiers retain aliases"
+      ],
+      "originalSource": "app/src/kit/evilcharts/examples/recharts/ex-legend-rounded-square-outline-line-chart.tsx"
+    },
+    {
+      "source": "../../hubs/ui/src/kit/evilcharts/examples/recharts/ex-legend-square-line-chart.tsx",
+      "target": "packages/siso-charts/src/presets/ex-legend-square-line-chart.tsx",
+      "sourceSha256": "a6b43a0401808a50a55f3e8e90877b4e19e089f75a1efea6354e42deada76763",
+      "adaptedSha256": "59d5792ebf13724e7259be93a655a80bfb59dbcdbf40591fa9f5ff36618100a2",
+      "changes": [
+        "catalogue marker",
+        "relative imports point at the actual packaged implementations; component identifiers retain aliases"
+      ],
+      "originalSource": "app/src/kit/evilcharts/examples/recharts/ex-legend-square-line-chart.tsx"
+    },
+    {
+      "source": "../../hubs/ui/src/kit/evilcharts/examples/recharts/ex-legend-vertical-bar-line-chart.tsx",
+      "target": "packages/siso-charts/src/presets/ex-legend-vertical-bar-line-chart.tsx",
+      "sourceSha256": "96f70d0fc798d8e9e5d2dc6044f748959f259fa089b95840b2a6909f64fc9ee6",
+      "adaptedSha256": "d1493a14c769f9df3843dc5b46bde34188d2c45805ec7bb8dd3e61a74912be53",
+      "changes": [
+        "catalogue marker",
+        "relative imports point at the actual packaged implementations; component identifiers retain aliases"
+      ],
+      "originalSource": "app/src/kit/evilcharts/examples/recharts/ex-legend-vertical-bar-line-chart.tsx"
+    },
+    {
+      "source": "../../hubs/ui/src/kit/evilcharts/examples/recharts/ex-line-chart.tsx",
+      "target": "packages/siso-charts/src/presets/ex-line-chart.tsx",
+      "sourceSha256": "418a4950ea2200aa99055a3557c5e0733aee85063916854ef55dd65c56023820",
+      "adaptedSha256": "1fe6f47b2ab270ba2adbc4d2b9bc6b174dda43a8d71e7c55e61e23c817e57eac",
+      "changes": [
+        "catalogue marker",
+        "relative imports point at the actual packaged implementations; component identifiers retain aliases"
+      ],
+      "originalSource": "app/src/kit/evilcharts/examples/recharts/ex-line-chart.tsx"
+    },
+    {
+      "source": "../../hubs/ui/src/kit/evilcharts/examples/recharts/ex-lines-area-variant-area-chart.tsx",
+      "target": "packages/siso-charts/src/presets/ex-lines-area-variant-area-chart.tsx",
+      "sourceSha256": "157bb7ac2c2ba8fe1d8330d25381cdcaa977452c6f598803fa476797341f577f",
+      "adaptedSha256": "3fd3dae692eccf03be759a93d7114c4ef96af05d3298b4e8edab29bc64813056",
+      "changes": [
+        "catalogue marker",
+        "relative imports point at the actual packaged implementations; component identifiers retain aliases"
+      ],
+      "originalSource": "app/src/kit/evilcharts/examples/recharts/ex-lines-area-variant-area-chart.tsx"
+    },
+    {
+      "source": "../../hubs/ui/src/kit/evilcharts/examples/recharts/ex-lines-variant-radar-chart.tsx",
+      "target": "packages/siso-charts/src/presets/ex-lines-variant-radar-chart.tsx",
+      "sourceSha256": "92a433114d35ef09e00584bd9e2dacaa1ed358f76963e1598a757a1b10e608f3",
+      "adaptedSha256": "b122eebafc8e6592db92c015edfdee2a87797efb0c6dfe430ddab9d907bb6a40",
+      "changes": [
+        "catalogue marker",
+        "relative imports point at the actual packaged implementations; component identifiers retain aliases"
+      ],
+      "originalSource": "app/src/kit/evilcharts/examples/recharts/ex-lines-variant-radar-chart.tsx"
+    },
+    {
+      "source": "../../hubs/ui/src/kit/evilcharts/examples/recharts/ex-loading-state-area-chart.tsx",
+      "target": "packages/siso-charts/src/presets/ex-loading-state-area-chart.tsx",
+      "sourceSha256": "6629e93df62d75d28e7af8aa5c8a9edaa85e8c821eb5bdd3a472ededd17bb3e3",
+      "adaptedSha256": "6336e29b73202a029e07d570d6190e888b7c253e84b0e23141ac223874357fac",
+      "changes": [
+        "catalogue marker",
+        "relative imports point at the actual packaged implementations; component identifiers retain aliases"
+      ],
+      "originalSource": "app/src/kit/evilcharts/examples/recharts/ex-loading-state-area-chart.tsx"
+    },
+    {
+      "source": "../../hubs/ui/src/kit/evilcharts/examples/recharts/ex-loading-state-bar-chart.tsx",
+      "target": "packages/siso-charts/src/presets/ex-loading-state-bar-chart.tsx",
+      "sourceSha256": "7cfcfa20948e7cbbaf0182c6dc4854a37cf8e4e3fe7e68d6e7589c8c45892647",
+      "adaptedSha256": "cd3cfc843e18127a086059ac9f0ab5b3524f466b415ca21d6cf61862a8c65e6a",
+      "changes": [
+        "catalogue marker",
+        "relative imports point at the actual packaged implementations; component identifiers retain aliases"
+      ],
+      "originalSource": "app/src/kit/evilcharts/examples/recharts/ex-loading-state-bar-chart.tsx"
+    },
+    {
+      "source": "../../hubs/ui/src/kit/evilcharts/examples/recharts/ex-loading-state-composed-chart.tsx",
+      "target": "packages/siso-charts/src/presets/ex-loading-state-composed-chart.tsx",
+      "sourceSha256": "e5d9c1784b9f1e1995737109c7e6316c002bb138be6fa14bec3402b51e7eb8ac",
+      "adaptedSha256": "dcac96006b65efd764e08ce76dc37115439f02be813ea7d0f0006a6666a5699b",
+      "changes": [
+        "catalogue marker",
+        "relative imports point at the actual packaged implementations; component identifiers retain aliases"
+      ],
+      "originalSource": "app/src/kit/evilcharts/examples/recharts/ex-loading-state-composed-chart.tsx"
+    },
+    {
+      "source": "../../hubs/ui/src/kit/evilcharts/examples/recharts/ex-loading-state-line-chart.tsx",
+      "target": "packages/siso-charts/src/presets/ex-loading-state-line-chart.tsx",
+      "sourceSha256": "f9694ec92a0701363c19cd55130d89aa98c6008168ddda737e733458ad7f494b",
+      "adaptedSha256": "f73b4497a9527ecc8f71ef763b47bded76e6af74b54404546532ce601cfd6351",
+      "changes": [
+        "catalogue marker",
+        "relative imports point at the actual packaged implementations; component identifiers retain aliases"
+      ],
+      "originalSource": "app/src/kit/evilcharts/examples/recharts/ex-loading-state-line-chart.tsx"
+    },
+    {
+      "source": "../../hubs/ui/src/kit/evilcharts/examples/recharts/ex-loading-state-pie-chart.tsx",
+      "target": "packages/siso-charts/src/presets/ex-loading-state-pie-chart.tsx",
+      "sourceSha256": "060e4eb735c58201de9a784584acb0dc07385d14b0c3213950101c7d9370739c",
+      "adaptedSha256": "c591cf3e2ffa9247bd9bd95703111c13680369e3b8dca5c94bd2c0a9668b158a",
+      "changes": [
+        "catalogue marker",
+        "relative imports point at the actual packaged implementations; component identifiers retain aliases"
+      ],
+      "originalSource": "app/src/kit/evilcharts/examples/recharts/ex-loading-state-pie-chart.tsx"
+    },
+    {
+      "source": "../../hubs/ui/src/kit/evilcharts/examples/recharts/ex-loading-state-radar-chart.tsx",
+      "target": "packages/siso-charts/src/presets/ex-loading-state-radar-chart.tsx",
+      "sourceSha256": "2256783624bf6276e6195efecea48c7ed73cf0c8b35ce4763a880a4e5c788685",
+      "adaptedSha256": "53a41ad1c611be3519e10165a11357609b461da2e39fdce2c335130be01ee52f",
+      "changes": [
+        "catalogue marker",
+        "relative imports point at the actual packaged implementations; component identifiers retain aliases"
+      ],
+      "originalSource": "app/src/kit/evilcharts/examples/recharts/ex-loading-state-radar-chart.tsx"
+    },
+    {
+      "source": "../../hubs/ui/src/kit/evilcharts/examples/recharts/ex-loading-state-radial-chart.tsx",
+      "target": "packages/siso-charts/src/presets/ex-loading-state-radial-chart.tsx",
+      "sourceSha256": "b5e71b0cb0adab0a688682b0fdfc93ae211857aeded5fd02158718c48ac55de2",
+      "adaptedSha256": "3874e53828e7769aaed6e890fafc07fd4629bced61068ee35d041b9316e612fc",
+      "changes": [
+        "catalogue marker",
+        "relative imports point at the actual packaged implementations; component identifiers retain aliases"
+      ],
+      "originalSource": "app/src/kit/evilcharts/examples/recharts/ex-loading-state-radial-chart.tsx"
+    },
+    {
+      "source": "../../hubs/ui/src/kit/evilcharts/examples/recharts/ex-loading-state-sankey-chart.tsx",
+      "target": "packages/siso-charts/src/presets/ex-loading-state-sankey-chart.tsx",
+      "sourceSha256": "303c986a9d26dce94dd4ce49a8a0d4723c4db7458ff555c50bb1eab0d54a242a",
+      "adaptedSha256": "281dfce6f345ad9672de7f8ab8fc8a04fd5d31c02a6e7533bac29b2281c16a6d",
+      "changes": [
+        "catalogue marker",
+        "relative imports point at the actual packaged implementations; component identifiers retain aliases"
+      ],
+      "originalSource": "app/src/kit/evilcharts/examples/recharts/ex-loading-state-sankey-chart.tsx"
+    },
+    {
+      "source": "../../hubs/ui/src/kit/evilcharts/examples/recharts/ex-monotoney-curve-type-area-chart.tsx",
+      "target": "packages/siso-charts/src/presets/ex-monotoney-curve-type-area-chart.tsx",
+      "sourceSha256": "0686b6b83530c38e0b97059526c679cf93b0ea7b31f3c88e0842ed57ffd9358d",
+      "adaptedSha256": "a3d6ac015a396eebcf8f51a3027fb4b67b442fdca7b8178fff6da58127fbb9d1",
+      "changes": [
+        "catalogue marker",
+        "relative imports point at the actual packaged implementations; component identifiers retain aliases"
+      ],
+      "originalSource": "app/src/kit/evilcharts/examples/recharts/ex-monotoney-curve-type-area-chart.tsx"
+    },
+    {
+      "source": "../../hubs/ui/src/kit/evilcharts/examples/recharts/ex-monotoney-curve-type-line-chart.tsx",
+      "target": "packages/siso-charts/src/presets/ex-monotoney-curve-type-line-chart.tsx",
+      "sourceSha256": "ebe8d4a9995843c29b24ecc1ff28271975bce617e188b7f27e2d420c04cc01c6",
+      "adaptedSha256": "a2517a0b17a605b0499a736aad6487c3accdbccfc1e936d4266e7500869a1de1",
+      "changes": [
+        "catalogue marker",
+        "relative imports point at the actual packaged implementations; component identifiers retain aliases"
+      ],
+      "originalSource": "app/src/kit/evilcharts/examples/recharts/ex-monotoney-curve-type-line-chart.tsx"
+    },
+    {
+      "source": "../../hubs/ui/src/kit/evilcharts/examples/recharts/ex-outside-labels-sankey-chart.tsx",
+      "target": "packages/siso-charts/src/presets/ex-outside-labels-sankey-chart.tsx",
+      "sourceSha256": "a9400fc99dfcb6c66d2a0395650804f0e91a7da65fa12a06d7addde5a57d424b",
+      "adaptedSha256": "618c9bb17514bd774805f0d1ee4f3a44e03621c42bb8383418e90a992514a82c",
+      "changes": [
+        "catalogue marker",
+        "relative imports point at the actual packaged implementations; component identifiers retain aliases"
+      ],
+      "originalSource": "app/src/kit/evilcharts/examples/recharts/ex-outside-labels-sankey-chart.tsx"
+    },
+    {
+      "source": "../../hubs/ui/src/kit/evilcharts/examples/recharts/ex-overlapping-padded-pie-chart.tsx",
+      "target": "packages/siso-charts/src/presets/ex-overlapping-padded-pie-chart.tsx",
+      "sourceSha256": "cf169da39ca5dd218a82385d27729765c36cc786c1204650625827376778bbe5",
+      "adaptedSha256": "65870e430c699aeacb4a30fa21f3da051577f9748dc6494012e09fe11dfdc0d2",
+      "changes": [
+        "catalogue marker",
+        "relative imports point at the actual packaged implementations; component identifiers retain aliases"
+      ],
+      "originalSource": "app/src/kit/evilcharts/examples/recharts/ex-overlapping-padded-pie-chart.tsx"
+    },
+    {
+      "source": "../../hubs/ui/src/kit/evilcharts/examples/recharts/ex-padded-pie-chart.tsx",
+      "target": "packages/siso-charts/src/presets/ex-padded-pie-chart.tsx",
+      "sourceSha256": "03b70804d0017137d690c5bf6c13627a27947210584438c95a4a611ee09b57b7",
+      "adaptedSha256": "8b21662b9afb3d2e5d3c79ec8039b409de7973b6a09eec9b97cd3411027f05b8",
+      "changes": [
+        "catalogue marker",
+        "relative imports point at the actual packaged implementations; component identifiers retain aliases"
+      ],
+      "originalSource": "app/src/kit/evilcharts/examples/recharts/ex-padded-pie-chart.tsx"
+    },
+    {
+      "source": "../../hubs/ui/src/kit/evilcharts/examples/recharts/ex-percent-type-bar-chart.tsx",
+      "target": "packages/siso-charts/src/presets/ex-percent-type-bar-chart.tsx",
+      "sourceSha256": "2b35518fbb57b759306f9d615689bb5897d39379e9c939e98fd3b8b43ead6218",
+      "adaptedSha256": "66aa5e9621a60f85bceda484d6caddd41042e734408f34b02bd16b5e0676dea5",
+      "changes": [
+        "catalogue marker",
+        "relative imports point at the actual packaged implementations; component identifiers retain aliases"
+      ],
+      "originalSource": "app/src/kit/evilcharts/examples/recharts/ex-percent-type-bar-chart.tsx"
+    },
+    {
+      "source": "../../hubs/ui/src/kit/evilcharts/examples/recharts/ex-pie-chart.tsx",
+      "target": "packages/siso-charts/src/presets/ex-pie-chart.tsx",
+      "sourceSha256": "e81e6020977d0928f68b951a6c71f318d49a0d7694035ec06190caa1d1f0d689",
+      "adaptedSha256": "6be7f30408a6add123d01dcab6422f01b3618b307151e9ed4ecf8a6cd1873b28",
+      "changes": [
+        "catalogue marker",
+        "relative imports point at the actual packaged implementations; component identifiers retain aliases"
+      ],
+      "originalSource": "app/src/kit/evilcharts/examples/recharts/ex-pie-chart.tsx"
+    },
+    {
+      "source": "../../hubs/ui/src/kit/evilcharts/examples/recharts/ex-radar-chart.tsx",
+      "target": "packages/siso-charts/src/presets/ex-radar-chart.tsx",
+      "sourceSha256": "6b138b5db2fc96a614842740034066159ec778fd99b780f0cf55122634f00c42",
+      "adaptedSha256": "d983cfd1871c07516ed28299104b01ef5578cd933a78dba542c35c57fe083f55",
+      "changes": [
+        "catalogue marker",
+        "relative imports point at the actual packaged implementations; component identifiers retain aliases"
+      ],
+      "originalSource": "app/src/kit/evilcharts/examples/recharts/ex-radar-chart.tsx"
+    },
+    {
+      "source": "../../hubs/ui/src/kit/evilcharts/examples/recharts/ex-radial-chart.tsx",
+      "target": "packages/siso-charts/src/presets/ex-radial-chart.tsx",
+      "sourceSha256": "1c6d004b13aa087d589be6c380ce8d3ea4140593427668c43dfc6a8629b1415d",
+      "adaptedSha256": "7c01cbf02f47d6d35cff2e577e3934a60664bb836b8c8741318d6dfddb06a6bd",
+      "changes": [
+        "catalogue marker",
+        "relative imports point at the actual packaged implementations; component identifiers retain aliases"
+      ],
+      "originalSource": "app/src/kit/evilcharts/examples/recharts/ex-radial-chart.tsx"
+    },
+    {
+      "source": "../../hubs/ui/src/kit/evilcharts/examples/recharts/ex-sankey-chart.tsx",
+      "target": "packages/siso-charts/src/presets/ex-sankey-chart.tsx",
+      "sourceSha256": "dc402ac40fc91b061b934bcbb80987dca50a5bfd37248f749ad64628f50043fe",
+      "adaptedSha256": "8c42debd955bc13cf115483027d532038d18224017db722b545549646800a19f",
+      "changes": [
+        "catalogue marker",
+        "relative imports point at the actual packaged implementations; component identifiers retain aliases"
+      ],
+      "originalSource": "app/src/kit/evilcharts/examples/recharts/ex-sankey-chart.tsx"
+    },
+    {
+      "source": "../../hubs/ui/src/kit/evilcharts/examples/recharts/ex-semi-variant-radial-chart.tsx",
+      "target": "packages/siso-charts/src/presets/ex-semi-variant-radial-chart.tsx",
+      "sourceSha256": "31c06556032682eac62fdc1e257706c418a7ccbb82cb367c37b053eee194e025",
+      "adaptedSha256": "3a45466ca31ce65d78541ea187853ad574c9cd3d239827f4679eab99210494e4",
+      "changes": [
+        "catalogue marker",
+        "relative imports point at the actual packaged implementations; component identifiers retain aliases"
+      ],
+      "originalSource": "app/src/kit/evilcharts/examples/recharts/ex-semi-variant-radial-chart.tsx"
+    },
+    {
+      "source": "../../hubs/ui/src/kit/evilcharts/examples/recharts/ex-solid-area-variant-area-chart.tsx",
+      "target": "packages/siso-charts/src/presets/ex-solid-area-variant-area-chart.tsx",
+      "sourceSha256": "e809c8d3fcc59c9b46f33efa8d31d319c19becf0e2188114bc5713ea2afe5a09",
+      "adaptedSha256": "1ea80a2d2643f7d64a64ba3e797f965ee05229f96a1ab05c95452650f7982bf5",
+      "changes": [
+        "catalogue marker",
+        "relative imports point at the actual packaged implementations; component identifiers retain aliases"
+      ],
+      "originalSource": "app/src/kit/evilcharts/examples/recharts/ex-solid-area-variant-area-chart.tsx"
+    },
+    {
+      "source": "../../hubs/ui/src/kit/evilcharts/examples/recharts/ex-solid-labeled-nodes-sankey-chart.tsx",
+      "target": "packages/siso-charts/src/presets/ex-solid-labeled-nodes-sankey-chart.tsx",
+      "sourceSha256": "1e16494ef871c49137f740e4d9f4d51e315236bb9c9915b016b9e693a7328249",
+      "adaptedSha256": "388d2f6a9f7efa64dc72789a960f7eb2be26e76b9d30aa968521f57965fa000d",
+      "changes": [
+        "catalogue marker",
+        "relative imports point at the actual packaged implementations; component identifiers retain aliases"
+      ],
+      "originalSource": "app/src/kit/evilcharts/examples/recharts/ex-solid-labeled-nodes-sankey-chart.tsx"
+    },
+    {
+      "source": "../../hubs/ui/src/kit/evilcharts/examples/recharts/ex-solid-link-variant-sankey-chart.tsx",
+      "target": "packages/siso-charts/src/presets/ex-solid-link-variant-sankey-chart.tsx",
+      "sourceSha256": "5e4e8def66c144e054c583111128d7079105573bc1bfeb709be7dd7c5ac79bce",
+      "adaptedSha256": "98f3941bafa92c8882a1e755678cc1dfca8da63e7dfdf96e1ce86358207c7fd8",
+      "changes": [
+        "catalogue marker",
+        "relative imports point at the actual packaged implementations; component identifiers retain aliases"
+      ],
+      "originalSource": "app/src/kit/evilcharts/examples/recharts/ex-solid-link-variant-sankey-chart.tsx"
+    },
+    {
+      "source": "../../hubs/ui/src/kit/evilcharts/examples/recharts/ex-solid-stroke-area-chart.tsx",
+      "target": "packages/siso-charts/src/presets/ex-solid-stroke-area-chart.tsx",
+      "sourceSha256": "8bb87279301ab7aea9bdbf3da60f306356c3ec71cbdee7f082e48b0635f51381",
+      "adaptedSha256": "312fb09b4ba283613a3857f65d8a5f2946f17f8616f4104cd3d08523f8ef2c16",
+      "changes": [
+        "catalogue marker",
+        "relative imports point at the actual packaged implementations; component identifiers retain aliases"
+      ],
+      "originalSource": "app/src/kit/evilcharts/examples/recharts/ex-solid-stroke-area-chart.tsx"
+    },
+    {
+      "source": "../../hubs/ui/src/kit/evilcharts/examples/recharts/ex-solid-stroke-line-chart.tsx",
+      "target": "packages/siso-charts/src/presets/ex-solid-stroke-line-chart.tsx",
+      "sourceSha256": "ed819d3385709e99991e000d3f1932d52401efb055cc1f0f971b649ea1afec32",
+      "adaptedSha256": "5e399cfe9e670c2c8644928508086d650126d04e7bafb7d9c406bd1ba22db7d1",
+      "changes": [
+        "catalogue marker",
+        "relative imports point at the actual packaged implementations; component identifiers retain aliases"
+      ],
+      "originalSource": "app/src/kit/evilcharts/examples/recharts/ex-solid-stroke-line-chart.tsx"
+    },
+    {
+      "source": "../../hubs/ui/src/kit/evilcharts/examples/recharts/ex-source-link-variant-sankey-chart.tsx",
+      "target": "packages/siso-charts/src/presets/ex-source-link-variant-sankey-chart.tsx",
+      "sourceSha256": "5d07ae6dd7524dc86f877b3495faacdf8b13954d3a467266eaef7026f4740027",
+      "adaptedSha256": "ddf50ace4d9173ddce79baa11805b5235e0d6e1ae44faf7649413ebe94a6ade1",
+      "changes": [
+        "catalogue marker",
+        "relative imports point at the actual packaged implementations; component identifiers retain aliases"
+      ],
+      "originalSource": "app/src/kit/evilcharts/examples/recharts/ex-source-link-variant-sankey-chart.tsx"
+    },
+    {
+      "source": "../../hubs/ui/src/kit/evilcharts/examples/recharts/ex-stacked-type-area-chart.tsx",
+      "target": "packages/siso-charts/src/presets/ex-stacked-type-area-chart.tsx",
+      "sourceSha256": "0bfe7d9949539de31da8cb416eeeb6b6aee0c1c54dbfb773cf6aabd5da759e2f",
+      "adaptedSha256": "163a437ba7396ba4764b7db41c55016eaf9033603378b016750b7b45be47aa78",
+      "changes": [
+        "catalogue marker",
+        "relative imports point at the actual packaged implementations; component identifiers retain aliases"
+      ],
+      "originalSource": "app/src/kit/evilcharts/examples/recharts/ex-stacked-type-area-chart.tsx"
+    },
+    {
+      "source": "../../hubs/ui/src/kit/evilcharts/examples/recharts/ex-stacked-type-bar-chart.tsx",
+      "target": "packages/siso-charts/src/presets/ex-stacked-type-bar-chart.tsx",
+      "sourceSha256": "cbb5489da6d43cb434fe0b90726c8b3373ac8a493d14fc96d9969a5dbae135af",
+      "adaptedSha256": "ef85db7ff96b35be818098455d349b56c7bd990a3b4c5b23ac9008cf0314c1c6",
+      "changes": [
+        "catalogue marker",
+        "relative imports point at the actual packaged implementations; component identifiers retain aliases"
+      ],
+      "originalSource": "app/src/kit/evilcharts/examples/recharts/ex-stacked-type-bar-chart.tsx"
+    },
+    {
+      "source": "../../hubs/ui/src/kit/evilcharts/examples/recharts/ex-step-curve-type-area-chart.tsx",
+      "target": "packages/siso-charts/src/presets/ex-step-curve-type-area-chart.tsx",
+      "sourceSha256": "6b12073d232ff8c977e5f2b986082ed0a22bf254f754b63d4d1846f5afbf2cad",
+      "adaptedSha256": "22ed2c6cb92a338940d9d54dcfae78ff8cf08184307e56760d81ed5a8d3d0292",
+      "changes": [
+        "catalogue marker",
+        "relative imports point at the actual packaged implementations; component identifiers retain aliases"
+      ],
+      "originalSource": "app/src/kit/evilcharts/examples/recharts/ex-step-curve-type-area-chart.tsx"
+    },
+    {
+      "source": "../../hubs/ui/src/kit/evilcharts/examples/recharts/ex-step-curve-type-line-chart.tsx",
+      "target": "packages/siso-charts/src/presets/ex-step-curve-type-line-chart.tsx",
+      "sourceSha256": "22e4da0c5bd45a5c2135f2eba9824df813ef01d208026ab7b875a9d56a6b2da6",
+      "adaptedSha256": "6dc57665df939aac94e94cbd8d9590571d867724658bf1830200692e64b949ce",
+      "changes": [
+        "catalogue marker",
+        "relative imports point at the actual packaged implementations; component identifiers retain aliases"
+      ],
+      "originalSource": "app/src/kit/evilcharts/examples/recharts/ex-step-curve-type-line-chart.tsx"
+    },
+    {
+      "source": "../../hubs/ui/src/kit/evilcharts/examples/recharts/ex-stripped-variant-bar-chart.tsx",
+      "target": "packages/siso-charts/src/presets/ex-stripped-variant-bar-chart.tsx",
+      "sourceSha256": "49640675ccbecff95455ddd9e78ede100caacbd0556d381c3ff8690e1352411e",
+      "adaptedSha256": "95d804141b2185b5f65a248271683ec7f41f6fb1c0b7cd14450aa4d67dbcdd9d",
+      "changes": [
+        "catalogue marker",
+        "relative imports point at the actual packaged implementations; component identifiers retain aliases"
+      ],
+      "originalSource": "app/src/kit/evilcharts/examples/recharts/ex-stripped-variant-bar-chart.tsx"
+    },
+    {
+      "source": "../../hubs/ui/src/kit/evilcharts/examples/recharts/ex-stripped-variant-composed-chart.tsx",
+      "target": "packages/siso-charts/src/presets/ex-stripped-variant-composed-chart.tsx",
+      "sourceSha256": "90ebdfeb300f439237a997add071afe36e391f7e645a1dbe3202aff2fe9eeb1f",
+      "adaptedSha256": "2efcd41e158bac2cd1a6844e0ef86266f70e426fd5a70afa2d140464482e2fad",
+      "changes": [
+        "catalogue marker",
+        "relative imports point at the actual packaged implementations; component identifiers retain aliases"
+      ],
+      "originalSource": "app/src/kit/evilcharts/examples/recharts/ex-stripped-variant-composed-chart.tsx"
+    },
+    {
+      "source": "../../hubs/ui/src/kit/evilcharts/examples/recharts/ex-tooltip-default-bar-chart.tsx",
+      "target": "packages/siso-charts/src/presets/ex-tooltip-default-bar-chart.tsx",
+      "sourceSha256": "b46512880d8b6e364f7d76ca9c6355e8b5344977737822601ebcb49ad3780bb7",
+      "adaptedSha256": "e746a9de060827a7e2d54b722fa5ca436e418756d94a362ae7aff31f55493ab5",
+      "changes": [
+        "catalogue marker",
+        "relative imports point at the actual packaged implementations; component identifiers retain aliases"
+      ],
+      "originalSource": "app/src/kit/evilcharts/examples/recharts/ex-tooltip-default-bar-chart.tsx"
+    },
+    {
+      "source": "../../hubs/ui/src/kit/evilcharts/examples/recharts/ex-tooltip-frosted-glass-bar-chart.tsx",
+      "target": "packages/siso-charts/src/presets/ex-tooltip-frosted-glass-bar-chart.tsx",
+      "sourceSha256": "43fadfc444f2e8d6a96dbc4901e846f7edea9894ecac858363c28ba337f7e469",
+      "adaptedSha256": "e755b2523eace421afaca7562a46a16a230bf24ed94c4fc6d202a7c700390707",
+      "changes": [
+        "catalogue marker",
+        "relative imports point at the actual packaged implementations; component identifiers retain aliases"
+      ],
+      "originalSource": "app/src/kit/evilcharts/examples/recharts/ex-tooltip-frosted-glass-bar-chart.tsx"
+    }
+  ]
+}

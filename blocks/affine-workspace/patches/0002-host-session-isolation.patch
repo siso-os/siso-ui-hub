@@ -1,0 +1,32 @@
+diff --git a/backend/server/src/core/auth/host-session.ts b/backend/server/src/core/auth/host-session.ts
+--- a/backend/server/src/core/auth/host-session.ts
++++ b/backend/server/src/core/auth/host-session.ts
+@@ -53,4 +53,6 @@ export async function fetchHostSession(
+   if (!response.ok)
+     throw new Error(`SISO host session check failed: ${response.status}`);
+-  return HostSessionSchema.parse(await response.json());
++  const session = HostSessionSchema.parse(await response.json());
++  const expiresAt = Date.parse(session.expiresAt);
++  return Number.isFinite(expiresAt) && expiresAt > Date.now() ? session : null;
+ }
+diff --git a/backend/server/src/models/user.ts b/backend/server/src/models/user.ts
+--- a/backend/server/src/models/user.ts
++++ b/backend/server/src/models/user.ts
+@@ -74,16 +74,6 @@ export class UserModel extends BaseModel {
+     const created = !existing;
+     let user: User;
+     if (existing && existing.id !== input.id) {
+-      user = await this.db.user.update({
+-        where: { id: existing.id },
+-        data: {
+-          email: input.email,
+-          name: input.name,
+-          avatarUrl: input.avatarUrl ?? null,
+-          emailVerifiedAt: new Date(),
+-          registered: true,
+-          disabled: false,
+-        },
+-      });
++      throw new EmailAlreadyUsed();
+     } else {
+       user = await this.db.user.upsert({

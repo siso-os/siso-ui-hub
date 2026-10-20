@@ -1,0 +1,188 @@
+{
+  "record_type": "QualificationDossier",
+  "record_version": "1.0.0",
+  "record_id": "qualification.teable-data-grid.partial-fahmy-bykonz.v0.1.0",
+  "block_id": "actionist/teable-data-grid",
+  "version": "0.1.0",
+  "capability_id": "actionist/teable-data-grid",
+  "links": {
+    "manifest": "../actionist-block.json",
+    "capability": "capability.json",
+    "packaging": "packaging.json",
+    "host_requirements": "host-requirements.json",
+    "binding_plan": "binding-plan.json",
+    "registry": "registry.json",
+    "release": "release.json"
+  },
+  "status": "partial_local_proof_hold",
+  "artifact_digest": null,
+  "environment_digest": null,
+  "evidence_tier": "T0",
+  "tier_derivation": "Held at the lowest non-promotable tier because the required authenticated UI, mobile, attachment, restore and host-session families are absent or blocked; no family is averaged away.",
+  "families_reported": {
+    "F1_source_identity": {
+      "status": "pass",
+      "evidence_class": "E",
+      "note": "Immutable fork commit and git-archive digest recorded."
+    },
+    "F2_source_rights": {
+      "status": "deferred",
+      "evidence_class": "E",
+      "note": "AGPL and Section 7 boundary observed; corresponding-source/product attestation remains blocked."
+    },
+    "F3_shape_decision": {
+      "status": "pass",
+      "evidence_class": "D",
+      "note": "intact_service with sidecar/proxy binding selected."
+    },
+    "F4_dependency_closure": {
+      "status": "not_run",
+      "evidence_class": "U",
+      "note": "No independent transitive closure receipt captured by this package."
+    },
+    "F5_ports_and_binding": {
+      "status": "pass",
+      "evidence_class": "D",
+      "note": "Typed host seam and synthetic binding contract validate; donor session execution is not claimed."
+    },
+    "F6_build_runtime": {
+      "status": "pass",
+      "evidence_class": "E",
+      "note": "Historical pinned isolated build and backend health checks passed; this package does not rerun the donor."
+    },
+    "F7_authenticated_workflow_ui": {
+      "status": "deferred",
+      "evidence_class": "E",
+      "note": "Native authenticated desktop and mobile CRUD are explicitly blocked in the exact receipt."
+    },
+    "F8_persistence_and_tenancy": {
+      "status": "deferred",
+      "evidence_class": "E",
+      "note": "CRUD/reconnect and two-client denial passed in the candidate receipt, but the independent role/schema/restore boundary remains open in the isolation gate."
+    },
+    "F9_files_recovery_and_admission": {
+      "status": "deferred",
+      "evidence_class": "E",
+      "note": "Attachment namespace, rollback/restore and direct-denial/admission evidence remain blocked."
+    }
+  },
+  "receipts": [
+    {
+      "receipt_id": "teable-source-archive-digest-v0.1",
+      "receipt_type": "source_identity",
+      "status": "pass",
+      "evidence_class": "E",
+      "expected": "The package points at an immutable donor revision with a reproducible content digest.",
+      "observed": "b245a987f8bfb7411d4e2423907b9cbb0a1c9b6b; sha256:e41fe62b54c1d0c077a9c5a036f1b4e04016dcd0203396f943411e89e6e09fc6 from a git archive tar stream.",
+      "falsifier": "The revision cannot be resolved or the archive digest changes for the same commit.",
+      "limitations": "The existing checkout is dirty; uncommitted files are excluded from this identity.",
+      "owner": "actionist-block-teable",
+      "source_path": "packaging.json"
+    },
+    {
+      "receipt_id": "teable-shape-decision-v0.1",
+      "receipt_type": "shape_decision",
+      "status": "pass",
+      "evidence_class": "D",
+      "expected": "One bounded reuse shape is explicit and does not copy donor source.",
+      "observed": "intact_service + sidecar_service + host proxy; copied source files = 0.",
+      "falsifier": "The package needs donor source edits or a new runtime profile to bind.",
+      "limitations": "The host session exchange and proxy are interface-level only in this package.",
+      "owner": "operator",
+      "source_path": "packaging.json"
+    },
+    {
+      "receipt_id": "teable-pinned-build-and-isolation-v0.1",
+      "receipt_type": "build_runtime",
+      "status": "pass",
+      "evidence_class": "E",
+      "expected": "Pinned donor build/runtime and database-layer checks are represented without overstating UI proof.",
+      "observed": "Historical receipt reports isolated build, backend health, table CRUD/persistence and two-client isolation as pass.",
+      "falsifier": "The cited receipt is absent or its pass fields contradict the package summary.",
+      "limitations": "No donor execution is performed by this package smoke; native authenticated desktop/mobile and attachment proof are not covered.",
+      "owner": "historical Fahmy/Bykonz lane",
+      "source_path": "../../../../fahmy-2026-08/docs/client-platform/implementation-manager/evidence/teable-data-final/teable-data-final-receipt.json"
+    },
+    {
+      "receipt_id": "teable-authenticated-native-ui-hold-v0.1",
+      "receipt_type": "ui_accessibility",
+      "status": "deferred",
+      "evidence_class": "E",
+      "expected": "Authenticated native desktop and mobile CRUD are proved before qualification or release.",
+      "observed": "The exact receipt records authenticated-native-desktop-crud BLOCKED and authenticated-native-mobile-crud BLOCKED.",
+      "falsifier": "A fresh reproducible authenticated proof session covers both surfaces and is appended to a new dossier.",
+      "limitations": "This package must not use synthetic UI or the historical unauthenticated redirect as a substitute.",
+      "owner": "experiment",
+      "source_path": "../../../../fahmy-2026-08/docs/client-platform/implementation-manager/evidence/teable-data-final/teable-data-final-receipt.json"
+    },
+    {
+      "receipt_id": "teable-attachment-proof-hold-v0.1",
+      "receipt_type": "security_egress",
+      "status": "deferred",
+      "evidence_class": "E",
+      "expected": "Attachment reads/uploads are host-authorized, tenant/base namespaced and rollback-aware.",
+      "observed": "The receipt records blob namespace BLOCKED because no native authenticated attachment upload proof exists; the donor uses signed URLs.",
+      "falsifier": "An authenticated proof demonstrates upload, read authorization and cross-tenant denial for a namespaced object.",
+      "limitations": "A signed URL alone is not host permission proof.",
+      "owner": "experiment",
+      "source_path": "../../../../fahmy-2026-08/docs/client-platform/implementation-manager/evidence/teable-data-final/teable-data-final-receipt.json"
+    },
+    {
+      "receipt_id": "teable-independent-isolation-hold-v0.1",
+      "receipt_type": "tenancy_isolation",
+      "status": "deferred",
+      "evidence_class": "E",
+      "expected": "Two clients are isolated and the module has independent role/schema/restore boundaries.",
+      "observed": "Candidate receipt reports two-client row/DB isolation PASS; the isolation gate separately says the required per-client role/schema and independent restore boundary FAILS/does not close.",
+      "falsifier": "A new exact-pin run proves least-privilege role/schema, Redis namespace, attachment namespace, backup/restore and second-client denial together.",
+      "limitations": "The two historical artifacts are different scopes and must not be collapsed into a full admission pass.",
+      "owner": "experiment",
+      "source_path": "../../../../fahmy-2026-08/docs/client-platform/implementation-manager/evidence/data-visible/teable-isolation-admission-gate.json"
+    },
+    {
+      "receipt_id": "teable-package-contract-smoke-v0.1",
+      "receipt_type": "ports_contract",
+      "status": "pass",
+      "evidence_class": "D",
+      "expected": "Manifest, records, config, typed binding shape and scoped theme bridge pass deterministic local checks.",
+      "observed": "Package smoke runs green: 13 checks PASS, exit 0, with no network and no donor execution. Includes 3 fail-closed negative fixtures (missing_or_unverified_identity, missing_tenant, missing_migration_owner), each of which must REFUSE for the run to pass.",
+      "falsifier": "The package CLI reports a contract, link, refusal or theme-scope failure.",
+      "limitations": "A package smoke cannot qualify the donor runtime or grant admission. It proves the contract surface only: manifest, records, config, binding shape, theme scope and the refusal paths. The authenticated UI, mobile, attachment, isolation and Section 7 holds are untouched by it.",
+      "owner": "actionist-block-teable",
+      "source_path": "../tools/teable-block.mjs",
+      "observed_at": "2026-08-29",
+      "observed_by": "node tools/teable-block.mjs smoke"
+    },
+    {
+      "receipt_id": "teable-human-admission-v0.1",
+      "receipt_type": "human_admission",
+      "status": "not_run",
+      "evidence_class": "U",
+      "expected": "No release/admission is claimed from this prototype.",
+      "observed": "Registry and release records are held/not_released; admission_scope is empty for tenants and applications.",
+      "falsifier": "Any artifact or message asserts production qualification/admission.",
+      "limitations": "The next proof requires operator/experiment decisions outside this package.",
+      "owner": "operator",
+      "source_path": "registry.json"
+    }
+  ],
+  "historical_evidence_refs": [
+    "../../../../fahmy-2026-08/docs/client-platform/implementation-manager/evidence/teable-data-final/teable-data-final-receipt.json",
+    "../../../../fahmy-2026-08/docs/client-platform/implementation-manager/evidence/data-visible/TEABLE-DATA-CANDIDATE.md",
+    "../../../../fahmy-2026-08/docs/client-platform/implementation-manager/evidence/data-visible/teable-isolation-admission-gate.json"
+  ],
+  "promotion_decision": {
+    "qualification_status": "NOT_QUALIFIED",
+    "execution_status": "PARTIAL_LOCAL_EXECUTION",
+    "admission_status": "NOT_ADMITTED",
+    "verdict": "reusable_candidate_with_partial_bykonz_integration_proof",
+    "hold_reasons": [
+      "authenticated native desktop CRUD blocked",
+      "authenticated native mobile CRUD blocked",
+      "attachment namespace/upload proof blocked",
+      "host identity/session handoff not reproduced here",
+      "independent role/schema/restore boundary remains open",
+      "AGPL corresponding-source and Section 7 attestation gate remains blocked"
+    ]
+  }
+}

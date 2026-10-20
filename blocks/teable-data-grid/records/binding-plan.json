@@ -1,0 +1,287 @@
+{
+  "record_type": "BindingPlan",
+  "record_version": "1.0.0",
+  "record_id": "binding.teable-data-grid.synthetic-host.v0.1.0",
+  "block_id": "actionist/teable-data-grid",
+  "version": "0.1.0",
+  "capability_id": "actionist/teable-data-grid",
+  "links": {
+    "manifest": "../actionist-block.json",
+    "capability": "capability.json",
+    "packaging": "packaging.json",
+    "host_requirements": "host-requirements.json",
+    "qualification": "qualification.json",
+    "registry": "registry.json",
+    "release": "release.json",
+    "host_binding_interface": "../interfaces/host-binding.ts",
+    "host_binding_schema": "../schemas/host-binding.schema.json"
+  },
+  "status": "planned",
+  "binding_id": "binding.teable-data-grid.synthetic-host.v0.1.0",
+  "application_id": "host-supplied-application",
+  "host_contract_version": "actionist.host/v0.1.0",
+  "lifecycle_state": "planned",
+  "reuse_shape": "intact_service",
+  "runtime_profile": "sidecar_service",
+  "route": {
+    "host_path_template": "/workspaces/{workspaceSlug}/data-grid",
+    "donor_base_path": "/",
+    "host_owns_outer_url": true,
+    "donor_owns_internal_router": true,
+    "contextual_parameters": [
+      "tenantId",
+      "baseId",
+      "tableId",
+      "viewId"
+    ]
+  },
+  "port_wiring": [
+    {
+      "from_port": "host.identity.verified_context",
+      "to_port": "teable.session.exchange",
+      "schema_compatibility": "adapter_required",
+      "adapter": "host-side signed two-token handoff",
+      "browser_transport": "http_only_or_server_side; never query-string identity"
+    },
+    {
+      "from_port": "host.tenant.verified_claim",
+      "to_port": "teable.proxy.tenant_scope",
+      "schema_compatibility": "adapter_required",
+      "adapter": "host proxy derives and narrows tenant/base scope",
+      "client_header_policy": "untrusted"
+    },
+    {
+      "from_port": "teable.record.events",
+      "to_port": "host.events.capability_envelope",
+      "schema_compatibility": "adapter_required",
+      "adapter": "Actionist capability-event.v1 envelope"
+    }
+  ],
+  "data_binding": {
+    "topology": "one_server_separate_schemas",
+    "resources": [
+      {
+        "resource": "teable_metadata",
+        "owner": "teable-prisma",
+        "schema": "public",
+        "migration_system": "teable-db-main-prisma"
+      },
+      {
+        "resource": "teable_base_data",
+        "owner": "teable-data-plane-migrator",
+        "schema": "runtime-generated-per-base",
+        "migration_system": "__teable_data_schema_migrations"
+      },
+      {
+        "resource": "host_application_data",
+        "owner": "actionist-host",
+        "schema": "host-configured-non-public",
+        "migration_system": "host-migrations"
+      },
+      {
+        "resource": "teable_attachment_objects",
+        "owner": "teable-storage-adapter",
+        "schema": "object-store-namespace",
+        "migration_system": "none"
+      }
+    ],
+    "migration_authority": "named_per_resource_above",
+    "shared_resource_owners": [],
+    "cross_owner_reads": "event_fed_read_model",
+    "cross_owner_writes": "forbidden",
+    "database_privilege_requirement": "donor runtime needs CONNECT and CREATE/DDL rights required by its supported database path; host migrations do not own donor resources",
+    "compatibility_declaration": "one PostgreSQL server/database with separate donor-generated and host-owned schemas; Teable metadata remains public at the pinned V2 source because raw SQL assumes public"
+  },
+  "identity_binding": {
+    "source": "host_verified_context",
+    "mode": "signed_two_token",
+    "exchange_path": "/internal/teable/session",
+    "audience": "actionist-module:teable-data-grid",
+    "assertion_lifetime_seconds_max": 120,
+    "single_use": true,
+    "replay_key": "jti",
+    "donor_login_routes": "deny_and_do_not_proxy",
+    "session_provisioning": "just_in_time_when_donor_supports_the_handoff",
+    "implementation_status": "planned_not_proven_in_this_package"
+  },
+  "tenant_binding": {
+    "required": true,
+    "tenant_source": "verified_host_claim",
+    "tenant_key": "tenant_id",
+    "base_selection": "host_bound_allowlist",
+    "cross_tenant_policy": "deny_by_default",
+    "isolation_proof_required": true
+  },
+  "navigation_binding": {
+    "contribution_model": "deploy_time_manifest",
+    "label": "Data grid",
+    "visibility": "role_and_tenant_entitlement",
+    "cascading_emptiness": true,
+    "host_route_owner": "actionist-host"
+  },
+  "settings_binding": {
+    "policy": "donor_rendered_behind_host_nav",
+    "host_entry_path": "/settings/data-grid",
+    "host_rendered_settings": false,
+    "fallback": "Show host-owned health/support guidance when donor settings are unavailable; do not reimplement donor settings in v0.1."
+  },
+  "attachment_binding": {
+    "namespace_template": "tenant/{tenantId}/base/{baseId}",
+    "authorize_before_signed_url": true,
+    "upload_owner": "teable-storage-adapter",
+    "historical_proof_status": "blocked",
+    "binding_status": "held_until_authenticated_attachment_proof"
+  },
+  "events_binding": {
+    "envelope": "actionist.capability-event.v1",
+    "emits": [
+      "teable.record.created.v1",
+      "teable.record.updated.v1",
+      "teable.record.deleted.v1"
+    ],
+    "consumes": [
+      "actionist.tenant.disabled.v1"
+    ],
+    "tenant_field": "tenant_id",
+    "capability_field": "capability_id"
+  },
+  "observability_binding": {
+    "capability_id": "actionist/teable-data-grid",
+    "per_capability_release_correlation": true,
+    "trace_propagation": true,
+    "health_path": "/health",
+    "owner_metadata": "actionist-block-teable"
+  },
+  "normalization_surgeries": [
+    {
+      "surgery_id": "NS-IDENT-01",
+      "status": "planned",
+      "owner": "host-and-donor-adapter",
+      "irreversible": true
+    },
+    {
+      "surgery_id": "NS-TENANT-02",
+      "status": "planned",
+      "owner": "host-proxy",
+      "irreversible": false
+    },
+    {
+      "surgery_id": "NS-SETTINGS-02",
+      "status": "selected",
+      "owner": "host",
+      "irreversible": false
+    },
+    {
+      "surgery_id": "NS-NAV-01",
+      "status": "planned",
+      "owner": "host",
+      "irreversible": false
+    },
+    {
+      "surgery_id": "NS-NAV-02",
+      "status": "planned",
+      "owner": "host-and-donor-router",
+      "irreversible": false
+    },
+    {
+      "surgery_id": "NS-DATA-01",
+      "status": "declared",
+      "owner": "binding-owner",
+      "irreversible": true
+    },
+    {
+      "surgery_id": "NS-EVENT-01",
+      "status": "planned",
+      "owner": "host-observability",
+      "irreversible": false
+    },
+    {
+      "surgery_id": "NS-RUNTIME-01",
+      "status": "selected",
+      "owner": "operator",
+      "irreversible": true
+    },
+    {
+      "surgery_id": "NS-RUNTIME-02",
+      "status": "planned",
+      "owner": "donor-runtime-owner",
+      "irreversible": false
+    },
+    {
+      "surgery_id": "NS-UPGRADE-01",
+      "status": "declared",
+      "owner": "operator",
+      "irreversible": false
+    },
+    {
+      "surgery_id": "NS-ROLLBACK-01",
+      "status": "planned",
+      "owner": "release-owner",
+      "irreversible": false
+    },
+    {
+      "surgery_id": "NS-ROLLBACK-02",
+      "status": "held",
+      "owner": "release-owner",
+      "irreversible": false
+    }
+  ],
+  "glue_budget": {
+    "source_changes_allowed": 0,
+    "declared_max_changed_files": {
+      "cosmetic": 0,
+      "boundary": 12,
+      "architectural": 6
+    },
+    "declared_max_changed_lines": {
+      "cosmetic": 0,
+      "boundary": 240,
+      "architectural": 180
+    },
+    "actual": {
+      "status": "not_run",
+      "changed_files": null,
+      "changed_lines": null
+    },
+    "exceeded_action": "escalate_human_review",
+    "budget_basis": "proxy/binding seam only; exceeding it would indicate a fork or a different reuse shape"
+  },
+  "unresolved": [
+    {
+      "field": "host_identity_exchange_implementation",
+      "reason": "The historical Teable proof used donor auth or transitional host-cookie behavior; this block has no reproducible host assertion session proof.",
+      "must_be_supplied_by": "experiment",
+      "blocks": "qualification"
+    },
+    {
+      "field": "authenticated_native_ui_crud",
+      "reason": "The exact Bykonz/Fahmy receipt marks authenticated native desktop CRUD blocked.",
+      "must_be_supplied_by": "experiment",
+      "blocks": "qualification"
+    },
+    {
+      "field": "authenticated_native_mobile_crud",
+      "reason": "The exact Bykonz/Fahmy receipt marks authenticated native mobile CRUD blocked.",
+      "must_be_supplied_by": "experiment",
+      "blocks": "qualification"
+    },
+    {
+      "field": "attachment_read_and_upload_authorization",
+      "reason": "Teable attachment reads use signed URLs and the receipt has no authenticated attachment proof.",
+      "must_be_supplied_by": "experiment",
+      "blocks": "qualification"
+    },
+    {
+      "field": "independent_restore_boundary",
+      "reason": "The isolation gate requires a dedicated role/schema and independent restore proof that the receipt does not close.",
+      "must_be_supplied_by": "experiment",
+      "blocks": "release"
+    },
+    {
+      "field": "section7_corresponding_source_attestation",
+      "reason": "The receipt records the AGPL/Section 7 policy gate as blocked.",
+      "must_be_supplied_by": "operator",
+      "blocks": "release"
+    }
+  ]
+}

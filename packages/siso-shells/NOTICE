@@ -1,0 +1,22 @@
+SISO source-fidelity AppFrame extraction, 2026.
+
+src/source/kitv1/siso/app-frame.tsx and frame-tokens.ts are copied from the
+UI Hub's original source with import path changes and additive consumer slots.
+The existing legacy shell exports remain available and unchanged.
+source-provenance.json records every copied source path, SHA-256, package path,
+and adaptation; original options/72 variations come from catalogue/app-frame.json.
+
+src/source/kit/shadcn/ui/*: shadcn UI, MIT, Copyright (c) 2023 shadcn.
+Licence preserved from _reference/shadcn/LICENSE.md.
+https://github.com/shadcn-ui/ui
+
+src/source/kit/lucide-animated/icons/*: lucide-animated, MIT,
+Copyright (c) 2024-2026 pqoqubbw.
+https://github.com/pqoqubbw/icons
+Licence verified against https://raw.githubusercontent.com/pqoqubbw/icons/main/LICENSE
+on 2026-10-16 and preserved in LICENSE.
+
+src/source/arc-shims/kit-utils.ts is the hub's generic clsx/tailwind-merge
+utility shim; its directory name does not make it Arc Pro component source.
+No Arc Pro, Kobra, Kinetics or HALO CRM source is included.
+SISO-authored code remains proprietary; third-party MIT rights are preserved.

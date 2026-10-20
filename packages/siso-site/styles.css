@@ -1,0 +1,33 @@
+/* Source footer shared component rules. Footer/blog/glyph motion CSS is retained inline in source. */
+  .footer-label {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.75rem;
+    font-weight: 550;
+    line-height: 1;
+    letter-spacing: 0.166667em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.92);
+    margin-bottom: 0;
+  }
+
+  .footer-link {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.4;
+    color: rgba(255, 255, 255, 0.68) !important;
+    text-decoration: none !important;
+    display: inline-block !important;
+    margin: 0 !important;
+    transition: color 0.2s;
+  }
+
+  .footer-link:hover {
+    color: #fff !important;
+  }
+
+  .sf ul li {
+    padding-left: 0;
+    margin-left: 0;
+  }
+

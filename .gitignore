@@ -13,3 +13,7 @@ inventory/halo-crm.*
 catalogue/curated/rob/**/*.gif
 __pycache__/
 app/src/kit/*/code.json
+
+# Local automation evidence and language-server state
+.local/
+.serena/

@@ -1,0 +1,816 @@
+#!/usr/bin/env python3
+"""Sort every part: what it is (the UI Hub's group/category), a finer subcategory, and the facets beside it.
+
+Shaan, 10 Oct: "start going through them and re-categorizing them way more detailed … categories are pretty good maybe
+they should be broken up and subcategories more and rated as well and which ones are duplicates".
+
+From first principles (ECOSYSTEM read twenty parts by hand first, 10 Oct):
+- A part is a base or a variant of one. Examples, demos and numbered or styled variants ("alert-outlined-secondary",
+  "v-popover-4", "tooltip-placement") belong to their base, which shows them; they are not cards of their own.
+- What a part IS is one category from the hub's own taxonomy (group/category, so the hub's nav and crumbs keep working),
+  then a subcategory where a category is crowded (buttons: animated, icon, social; backgrounds: shader, particles…).
+- Beside that: the framework (React, Vue, Svelte, ReScript), the style (animated, 3D, WebGL, glass, HUD…) read from
+  dependencies and words, and the domain (AI, auth, billing, commerce, crypto, maps, email, dev tools).
+- Non-visual parts get their own places: hooks and utilities (lib), themes, and assets (icons, logos, sounds, fonts).
+- Numbered names ("Hero 6", "Glitch 002") get a display name from their category and library.
+- Copies: parts whose files are byte-identical after whitespace share a dup id (needs the code on disk; else skipped).
+
+  bin/classify                 # catalog.jsonl + sites.jsonl -> classified.jsonl, and taxonomy.json (the vocabulary with counts)
+  bin/classify --sample 40     # print 40 random rows, to read
+  overrides.jsonl              # a reader's call on one part ({"id", "cat", "sub"?, "by"}), applied over the rules
+
+How the rules read a name (ECOSYSTEM, 10 Oct, sixty parts read by hand, 13 of 20 right before, 19 of 20 after):
+- what a part is FOR outranks its shape: assets and AI words in the name or title win first;
+- then the head of the name: in English the last word names the thing ("accordion gallery" is a gallery), after the
+  words that say nothing (demo, 01, section, primary) are dropped; "X with Y" is an X; a repeated prefix
+  ("button-button-text-marquee", shadcnblocks) is the category; a compound the rules know whole wins ("context menu");
+  a container ("pricing card", "logo grid", "login form") is named by what it holds, but never by its look; a weak
+  head ("date range picker") takes its longest match; an effect on a thing ("footer brand backdrop") is the thing;
+- a section ("Items Section ... for features or benefits") is read as marketing first;
+- then the old reading (name, title, the registry's categories and file path, in rule order), then the description.
+"""
+import argparse, collections, hashlib, json, os, random, re, subprocess, sys
+
+ROOT = os.path.dirname(os.path.dirname(os.path.realpath(__file__)))
+
+# ---- what it is: (pattern over the part's name text, group/category); first match wins, specific before general ----
+RULES = [
+    # assets and non-visual first
+    (r"\b(sound|sfx|audio-?cue|chime|beep|click-?sound|notification-?sound)s?\b", "assets/sound"),
+    (r"\b(og-?image|open-?graph|social-?(card|image)|share-?image)\b", "assets/og-image"),
+    (r"\b(logo|brand-?mark|wordmark)s?\b(?!.*(cloud|marquee|wall|grid|strip|section|carousel|ticker))", "assets/logo"),
+    (r"\b(font|typeface)s?\b", "assets/font"),
+    (r"\billustration|\bspot-?art\b", "assets/illustration"),
+    # AI
+    (r"\b(prompt-?(input|box|area|kit)?|composer|chat-?input|message-?input)\b", "ai-agent/composer"),
+    (r"\b(assistant|copilot|agents?|ai|llm|reasoning|thinking|tool-?calls?|citations?|sources?-list|streaming-?(text|response)|voice-?(chat|input|agent)|model-?(select|picker)|orb|chatbot|chat-?bot)\b", "ai-agent/ai-agent"),
+    # decorative shapes (stars, blobs) and other picture parts
+    (r"\b(decorative-?shapes?|shapes?|blobs?|squiggles?)\b", "assets/shape"),
+    # flows and screens
+    (r"\b(sign-?in|sign-?up|log-?in|login|register|auth(entication)?|forgot-?password|reset-?password|two-?factor|2fa|verify-?email|magic-?link|oauth|sso)\b", "flows/sign-in"),
+    (r"\b(settings?|preferences|account-?settings|profile-?settings)\b(?!.*(icon))", "flows/settings"),
+    (r"\b(onboarding|wizard|stepper|steps?-?(form|indicator)|multi-?step|progress-?steps)\b", "navigation/wizard-steps"),
+    (r"\b(dashboard|admin-?panel|analytics-?page|app-?shell|layout-?shell)\b", "layout/dashboard"),
+    (r"\b(page-?shell|app-?layout|shell)\b", "layout/page-shell"),
+    (r"\b(404|not-?found|error-?page|maintenance|coming-?soon|under-?construction)\b", "pages/templates"),
+    (r"\b(template|landing-?page|full-?page|portfolio-?page|website)\b", "pages/templates"),
+    # marketing sections
+    (r"\bhero(es)?\b|\bheader-?section\b|\bjumbotron\b|\babove-?the-?fold\b", "marketing/hero"),
+    (r"\b(pricing|price-?(table|card|plan)|plans?|billing-?(plan|toggle)|subscription|checkout|paywall|usage-?based)\b", "marketing/pricing"),
+    (r"\b(testimonials?|reviews?-?(section|wall|grid|card|carousel)|social-?proof|wall-?of-?love|quotes?-?(section|card))\b", "marketing/testimonials"),
+    (r"\b(features?|benefits?|how-?it-?works|process|services?|value-?prop)\b", "marketing/features"),
+    (r"\b(ctas?|call-?to-?action|newsletter|waitlist|subscribe|signup-?section)\b", "marketing/cta"),
+    (r"\b(faqs?|questions)\b", "marketing/faq"),
+    (r"\bfooter\b", "marketing/footer"),
+    (r"\b(team|members|people|founders|about-?us|crew|staff)\b", "marketing/team"),
+    (r"\b(logos?-?(cloud|wall|grid|strip|marquee|carousel|ticker)|clients|partners|trusted-?by|customers|integrations?)\b", "marketing/logos"),
+    (r"\b(comparison|compare|vs|versus)\b", "marketing/comparison"),
+    (r"\b(announcement|banner-?top|promo|top-?bar|ribbon)\b", "marketing/announcement"),
+    (r"\b(stats?-?section|metrics-?section|numbers-?section|contact|blog|news|article|post-?(list|card)|changelog|careers?|jobs?-?board|case-?stud)", "marketing/marketing"),
+    # device frames: a phone, laptop or browser window drawn around content
+    (r"\b(mockups?|device-?frames?|iphone|ipad|macbook|imac|android-?(frame|mockup)|phone-?(frame|mockup)|browser-?(frame|mockup|window)|safari-?(frame|window)|laptop-?(frame|mockup))\b", "media/mockup"),
+    (r"\b(pipelines?|ci-?cd|workflow-?runs?|build-?steps)\b", "data-display/timeline"),
+    # navigation
+    (r"\b(command-?(palette|menu|k)|cmdk|spotlight-?search|search-?dialog|kbar)\b", "navigation/command-palette"),
+    (r"\bbreadcrumbs?\b", "navigation/breadcrumb"),
+    (r"\b(sidebar|side-?nav|side-?menu|nav-?rail|app-?sidebar)\b", "navigation/sidebar"),
+    (r"\b(dock|floating-?(nav|bar|toolbar)|mac-?dock|app-?dock)\b", "navigation/dock"),
+    (r"\bpaginat", "navigation/pagination"),
+    (r"\b(table-?of-?contents|toc)\b", "navigation/table-of-contents"),
+    (r"\b(navbar|nav-?bar|top-?nav|header|navigation-?menu|mega-?menu|menubar|app-?bar|top-?bar|nav)\b", "navigation/top-nav"),
+    (r"\b(tabs?|tab-?(bar|list|panel|switcher)|segmented)\b(?!le)", "navigation/tabs"),
+    (r"\b(context-?menu|right-?click)\b", "overlays/context-menu"),
+    (r"\b(dropdown|drop-?down|menu|kebab|actions?-?menu|overflow-?menu)\b", "navigation/menu"),
+    # overlays
+    (r"\b(hover-?card|preview-?card|link-?preview|peek)\b", "overlays/hover-card"),
+    (r"\b(tooltip|toggletip|hint)\b", "overlays/tooltip"),
+    (r"\b(popover|popup|pop-?up|floating-?panel)\b", "overlays/popover"),
+    (r"\b(alert-?dialog|confirm(ation)?-?(dialog|modal)?|dialog|modal|lightbox-?modal)\b", "overlays/dialog"),
+    (r"\b(sheet|drawer|slide-?over|side-?panel|bottom-?sheet|tray|flyout|vaul)\b", "overlays/sheet"),
+    (r"\b(toast|snackbar|sonner|notification-?toast)\b", "overlays/toast"),
+    (r"\b(notifications?|inbox|notification-?(center|panel|bell|list))\b", "overlays/notifications"),
+    (r"\b(alert|callout|banner|notice|admonition|cookies?-?(consent|banner|notice|popup)?)\b", "overlays/alert-banner"),
+    (r"\blightbox\b", "overlays/lightbox"),
+    # inputs
+    (r"\b(date-?range|range-?picker|period|date-?filter)\b", "inputs/date-range"),
+    (r"\b(date-?picker|datepicker|date-?input|date-?field|calendar-?input|day-?picker|month-?picker|year-?picker)\b", "inputs/date-picker"),
+    (r"\b(time-?picker|time-?input|time-?field|clock-?picker)\b", "inputs/time-picker"),
+    (r"\b(colou?r-?(picker|input|swatch|wheel|palette-?picker)|eye-?dropper)\b", "inputs/color-picker"),
+    (r"\b(file-?(upload|input|drop|picker|uploader)|dropzone|upload|attachment|image-?upload|avatar-?upload)\b", "inputs/file-upload"),
+    (r"\b(otp|one-?time|pin-?input|verification-?code|code-?input)\b", "inputs/otp-input"),
+    (r"\b(slider|range|scrubber|knob|dial)\b", "inputs/slider"),
+    (r"\b(combobox|combo-?box|autocomplete|auto-?complete|autosuggest|typeahead|mention)\b", "inputs/combobox"),
+    (r"\b(tag-?input|tags?-?field|chips?-?input|multi-?input|token-?input)\b", "inputs/tag-input"),
+    (r"\b(multi-?select|select|listbox|picker|native-?select)\b", "inputs/select"),
+    (r"\b(search|search-?(bar|input|box|field)|filter-?input|find)\b", "inputs/search"),
+    (r"\b(textarea|text-?area|rich-?text|editor|wysiwyg|markdown-?editor|code-?editor|prose-?mirror|tiptap|lexical|plate)\b", "inputs/textarea"),
+    (r"\b(checkbox|check-?box|checklist)\b", "inputs/checkbox"),
+    (r"\b(radio|radio-?group|choice-?(box|card|group)|option-?card)\b", "inputs/radio"),
+    (r"\b(number-?(input|field|stepper)|quantity|stepper|counter-?input|nudger)\b", "inputs/number-input"),
+    (r"\b(rating|stars?-?rating|review-?stars|feedback-?(widget|stars)|emoji-?rating|nps)\b", "inputs/rating"),
+    (r"\b(phone-?input|password-?(input|field|strength)|email-?input|credit-?card-?input|address-?input|currency-?input|input-?group|inputs?|fields?|forms?|fieldset|labels?)\b", "inputs/form-field"),
+    # actions
+    (r"\b(switch|toggle(?!-?group)|theme-?(toggle|switch|switcher)|dark-?mode-?toggle|light-?switch)\b", "actions/switch"),
+    (r"\b(segmented-?control|toggle-?group|button-?toggle-?group|radio-?buttons)\b", "actions/segmented-control"),
+    (r"\b(copy-?(button|to-?clipboard|code)|clipboard)\b", "actions/copy-button"),
+    (r"\b(link|anchor|hyperlink|underline-?link)\b", "actions/link"),
+    (r"\b(buttons?|btn|cta-?button|fab|icon-?button|button-?group|split-?button|like-?button|share-?button|social-?button)\b", "actions/button"),
+    # data viz
+    (r"\b(gauge|meter|speedometer|radial-?progress|dial-?chart)\b", "data-viz/gauge"),
+    (r"\b(progress|progress-?bar|loading-?bar|usage-?bar)\b", "data-viz/progress-bar"),
+    (r"\b(map|maps|globe-?map|world-?map|geo|choropleth|mapbox|leaflet|location)\b", "data-viz/map"),
+    (r"\b(chart|charts|graph|plot|sparkline|heatmap|treemap|sankey|funnel|candlestick|histogram|area-?chart|bar-?chart|line-?chart|pie|donut|radar|scatter|visuali[sz]ation)\b", "data-viz/chart"),
+    # data display
+    (r"\b(data-?table|table|data-?grid|grid-?table|spreadsheet)\b", "data-display/table"),
+    (r"\b(timeline|activity-?(feed|log)|history|changelog-?list|feed)\b", "data-display/timeline"),
+    (r"\b(kanban|board|task-?board|trello)\b", "data-display/kanban"),
+    (r"\b(calendar|schedule|scheduler|agenda|event-?calendar|booking)\b", "data-display/calendar"),
+    (r"\b(tree|tree-?view|file-?tree|file-?explorer|folder-?tree|hierarchy)\b", "data-display/tree"),
+    (r"\b(accordion|collapsible|disclosure|expandable|details)\b", "data-display/accordion"),
+    (r"\b(json-?viewer|json-?tree|object-?inspector)\b", "data-display/json-viewer"),
+    (r"\b(diff|code-?diff|compare-?code)\b", "data-display/diff"),
+    (r"\b(code-?(block|snippet|viewer|window|tabs)|snippet|terminal|syntax|shiki|console-?output)\b", "data-display/code-block"),
+    (r"\b(avatars?|avatar-?(group|stack)|user-?avatar|profile-?picture)\b", "data-display/avatar"),
+    (r"\b(badges?|chips?|tags?|pills?|labels?|status-?badge)\b", "data-display/badge"),
+    (r"\b(stats?|metrics?|kpi|statistic|number-?card|analytics-?card)\b", "data-display/stat"),
+    (r"\b(empty-?state|no-?(data|results)|blank-?state|zero-?state)\b", "data-display/empty-state"),
+    (r"\b(profile|user-?card|contact-?card|member-?card|vcard|bio)\b", "data-display/profile"),
+    (r"\b(achievements?|streak|leaderboard|xp|level-?up|gamif)", "data-display/gamification"),
+    (r"\b(list|list-?item|item|items|rows?|cards?-?list|feed-?list)\b", "data-display/list"),
+    (r"\b(card|cards|tile|panel|widget)\b", "data-display/card"),
+    # status
+    (r"\b(skeleton|shimmer-?placeholder|placeholder-?loading)\b", "status/skeleton"),
+    (r"\b(loaders?|loading|spinners?|preloader|activity-?indicator|throbber)\b", "status/loader"),
+    (r"\b(status-?(dot|indicator|light)|online-?indicator|presence|live-?dot|pulse-?dot)\b", "status/status-dot"),
+    # media
+    (r"\b(image-?compare|before-?after|compare-?slider|comparison-?slider)\b", "media/image-compare"),
+    (r"\b(carousel|slider-?(image|gallery)|slideshow|swiper|embla)\b", "media/carousel"),
+    (r"\b(card-?stack|stack(ed)?-?cards?|swipe-?cards?|tinder|deck)\b", "media/card-stack"),
+    (r"\b(video|audio|player|music|podcast|waveform|media-?player)\b", "media/player"),
+    (r"\b(gallery|masonry|photo|image|images|picture|lens|zoom)\b", "media/gallery"),
+    (r"\b(icons?|icon-?set)\b", "assets/icon"),  # one place for icons: the sets and the icons component libraries ship
+    # layout
+    (r"\b(bento|bento-?grid|grid-?layout|masonry-?grid)\b", "layout/bento-grid"),
+    (r"\b(resizable|split-?(pane|view)|panels?-?group)\b", "layout/split-pane"),
+    (r"\b(scroll-?area|scroll|virtual-?list|infinite-?scroll|parallax)\b", "layout/scroll-area"),
+    # motion and effects
+    (r"\b(cursor|pointer|mouse-?(trail|follow)|spotlight-?cursor|follow-?pointer)\b", "motion/cursor"),
+    (r"\b(marquee|ticker|infinite-?(slider|carousel)|scrolling-?text)\b", "motion/marquee"),
+    (r"\b(globe|earth|planet|world)\b", "motion/globe"),
+    (r"\b(number-?(ticker|roll|flow|counter|animation)|counter|count-?up|odometer|animated-?number|sliding-?number)\b", "motion/number-ticker"),
+    (r"\b(ascii|matrix-?rain|terminal-?art)\b", "motion/ascii"),
+    (r"\b(shader|webgl|glsl|three-?(js|fiber)|react-three|r3f|ogl|fluid|metaballs|raymarch)\b", "motion/shader"),
+    (r"\b(border-?(beam|glow|gradient|animation|trail)|shine-?border|moving-?border|glowing-?border|animated-?border|magic-?border)\b", "motion/border"),
+    (r"\b(tilt|3d-?card|parallax-?card|perspective|flip-?card|card-?3d)\b", "motion/tilt-3d"),
+    (r"\b(gradient|mesh-?gradient|aurora|blob)\b", "motion/gradient"),
+    (r"\b(text|typing|typewriter|word|words|letter|letters|headline|heading|title|scramble|decrypt|hyper-?text|glitch-?text|shimmer-?text|gradient-?text|morph|rotate|flip-?words|hello|handwriting|writing)\b", "motion/text-effect"),
+    (r"\b(chat|conversation|messages?|message-?(list|thread)|bubble)\b", "ai-agent/ai-agent"),
+    (r"\b(blockquote|typography|prose|heading|kbd|keyboard-?key|code-?inline|lead-?text)\b", "data-display/typography"),
+    (r"\btoolbar\b", "navigation/menu"),
+    (r"\b(background|backdrop|bg|particles?|stars|starfield|sparkles|confetti|snow|meteors?|beams?|lines|dots|grid-?pattern|noise|grain|waves?|ripple|vortex|lamp|spotlight|glow)\b", "motion/background"),
+]
+RULES = [(re.compile(p, re.I), c) for p, c in RULES]
+
+# ---- subcategories for the crowded categories: (pattern over name text + deps, subcategory) ----
+SUBS = {
+    "actions/button": [(r"social|google|github|apple|oauth|discord|twitter|x-login|facebook|wallet", "Social and sign-in"), (r"icon-?button|\bicon\b|fab", "Icon buttons"),
+                       (r"group|split|toolbar", "Groups and split"), (r"copy|clipboard|share|like|heart|bookmark|follow|subscribe", "Copy, share and like"),
+                       (r"load|async|submit|progress|confirm|hold|state|success", "Loading and states"),
+                       (r"shimmer|glow|shine|magnetic|ripple|rainbow|pulse|gradient|neon|3d|animated|motion|morph|liquid|glass|particle|spark|border|hover", "Animated")],
+    "motion/background": [(r"shader|webgl|glsl|three-?(js|fiber)|react-three|\bogl\b|fluid|r3f|raymarch", "Shaders and WebGL"), (r"particle|stars|starfield|snow|confetti|meteor|sparkle|firefly|bubbles", "Particles and stars"),
+                          (r"grid|dots?|pattern|checker|lines?-?pattern|graph-?paper", "Grids and patterns"), (r"aurora|gradient|mesh|blob|lava|glow|lamp", "Gradients and aurora"),
+                          (r"beam|ray|light|laser|spotlight|lines", "Beams and light"), (r"noise|grain|texture|paper|film", "Noise and texture"),
+                          (r"wave|ripple|water|liquid|vortex|tunnel|warp", "Waves and warps"), (r"video|image|parallax", "Image and video")],
+    "motion/text-effect": [(r"typ(e|ing)writer|typing|type-?on|terminal", "Typewriter"), (r"scramble|decrypt|hyper|glitch|cipher|hacker|matrix", "Scramble and glitch"),
+                           (r"reveal|fade|blur|slide|stagger|split|appear|entrance|scroll", "Reveal and entrance"), (r"gradient|shimmer|shine|rainbow|aurora|colou?r", "Gradient and shimmer"),
+                           (r"hand|writ|draw|svg|signature|stroke|hello", "Handwriting and SVG"), (r"rotat|flip|cycle|morph|swap|carousel|words", "Rotating words"),
+                           (r"3d|perspective|depth|extrude", "3D text"), (r"wavy|wave|bounce|jump|spring|elastic|jelly", "Bouncy and wavy")],
+    "data-display/card": [(r"product|shop|commerce|cart|item-?card", "Product"), (r"profile|user|author|member|contact|team", "Profile"),
+                          (r"spotlight|glow|tilt|3d|hover|magic|shine|border|gradient|glass|neon|evervault|pin", "Animated and glowing"),
+                          (r"blog|article|post|news|story", "Article"), (r"feature|benefit|service", "Feature"), (r"stat|metric|kpi|analytics|chart", "Metric"),
+                          (r"pricing|plan", "Pricing"), (r"credit|bank|payment|wallet", "Payment")],
+    "marketing/hero": [(r"video", "With video"), (r"3d|globe|shader|webgl|particle|aurora|gradient|beam|animated|motion|parallax|spotlight|lamp", "Animated background"),
+                       (r"image|screenshot|mockup|product|app|dashboard|device", "With product shot"), (r"split|two-?col|side", "Split"),
+                       (r"center|minimal|simple|text", "Centered and minimal"), (r"saas|startup|ai", "SaaS and AI")],
+    "data-viz/chart": [(r"area", "Area"), (r"bar|column|histogram", "Bar"), (r"line|trend|sparkline", "Line and sparkline"), (r"pie|donut|doughnut|radial|ring", "Pie, donut and radial"),
+                       (r"radar|spider", "Radar"), (r"scatter|bubble", "Scatter"), (r"heat|calendar-?chart|contribution", "Heatmap"), (r"candle|stock|financ|trading", "Financial"),
+                       (r"funnel|sankey|treemap|flow", "Flow and funnel")],
+    "status/loader": [(r"dots?|bounce|pulse|typing", "Dots and pulse"), (r"orbit|planet|atom|spiral|ring|circle|spin|rotat|wheel", "Spinners"),
+                      (r"bar|line|progress|stripe", "Bars"), (r"text|word|shimmer|letter", "Text loaders"), (r"grid|square|cube|box|block", "Shapes and grids"), (r"3d|wave|liquid|morph", "Liquid and 3D")],
+    "inputs/form-field": [(r"password", "Password"), (r"phone|tel", "Phone"), (r"email", "Email"), (r"credit|card-?number|payment", "Payment"), (r"address|location", "Address"),
+                          (r"input-?group|addon|prefix|suffix", "Input groups"), (r"form|contact|newsletter|survey|feedback|wizard", "Whole forms"), (r"floating|label|animated|glow|focus", "Animated fields")],
+    "navigation/menu": [(r"mega", "Mega menus"), (r"context|right-?click", "Context menus"), (r"dropdown|drop-?down|select", "Dropdowns"), (r"menubar|toolbar", "Menubars"), (r"radial|circular|pie", "Radial menus")],
+    "media/gallery": [(r"masonry", "Masonry"), (r"zoom|lens|magnif", "Zoom and lens"), (r"hover|tilt|3d|expand|accordion", "Hover effects"), (r"grid", "Grids"), (r"scroll|parallax", "Scroll")],
+    "assets/icon": [(r"animat|motion|lottie", "Animated"), (r"duotone|two-?tone|filled|solid|outline|stroke|line", "Styled sets")],
+    "ai-agent/ai-agent": [(r"chat|conversation|thread|message|bubble", "Chat"), (r"reason|thinking|plan|step|tool|run|task", "Reasoning and tools"),
+                          (r"voice|speech|audio|mic", "Voice"), (r"orb|avatar|face|presence", "Orbs and presence"), (r"citation|source|reference", "Sources")],
+}
+# 10 Oct, the next big categories with no finer places (Shaan: "maybe they should be broken up and subcategories more")
+SUBS.update({  # 10 Oct, late: five more big categories that had none
+    "inputs/select": [(r"multi|multiple|tags?\b|chips?", "Multi-select"), (r"search|combo|autocomplete|command|filter", "Searchable"),
+                      (r"emoji|icon|avatar|colou?r|flag|country", "Emoji, icon and colour"), (r"date|time|timezone|calendar", "Date and time"),
+                      (r"wheel|ios|drum|spinner", "Wheel"), (r"native", "Native"), (r"status|priority|assign|user|member", "Status and people")],
+    "data-display/stat": [(r"clock|timer|countdown|\btime\b", "Clocks and timers"), (r"chart|spark|trend|graph|progress|\bbar\b", "With a chart"),
+                          (r"flip|animated|count|ticker|roll|odometer", "Animated numbers"), (r"kpi|metric|dashboard|overview|summary|performance|analytics", "KPIs and metrics"),
+                          (r"grid|row|band|stacked|section|numbers|statistics", "Stat sections")],
+    "overlays/alert-banner": [(r"cookie|consent|gdpr|privacy|legal", "Cookie and consent"), (r"announce|promo|sale|top-?bar|launch|marquee", "Announcement bars"),
+                              (r"error|warning|success|info|danger|destructive|status", "Status alerts"), (r"callout|notice|inline|admonition|\bnote\b|\btip\b", "Callouts")],
+    "marketing/testimonials": [(r"marquee|scroll|infinite|wall|ticker", "Marquee and wall"), (r"carousel|slider|swipe", "Carousel"), (r"video", "With video"),
+                               (r"grid|masonry|bento|columns?", "Grid and masonry"), (r"tweet|twitter|social|review|rating|stars", "Social and reviews"),
+                               (r"case|logo|client|customer|company", "Case studies"), (r"single|centered|featured|spotlight|quote", "Single quote")],
+    "motion/cursor": [(r"trail|follow|particle|ribbon|smoke|ink", "Trails"), (r"magnet|proximity|attract", "Magnetic"),
+                      (r"spotlight|glow|highlight|torch|flashlight|reveal", "Spotlight and reveal"),
+                      (r"liquid|displacement|distort|cloth|peel|shatter|ripple|webgpu|shader|fluid|hex|pixel|asciify|clouds", "Distortion"),
+                      (r"text|label|name|tooltip|collab|multiplayer|presence", "Labels and multiplayer"), (r"custom|pointer|dot|ring|crosshair|blob", "Custom pointers")],
+})
+SUBS.update({
+    "marketing/marketing": [(r"blog|post|article|journal|news|story", "Blog and posts"), (r"career|job|hiring|role", "Careers"),
+                            (r"contact|support|help|location|map", "Contact"), (r"stat|metric|number|kpi|counter", "Stats"),
+                            (r"portfolio|project|case-?stud|work", "Portfolio"), (r"team|people|member|about", "Team and about"),
+                            (r"ecommerce|shop|product|store|cart|resale|order", "Shop sections"), (r"social|tweet|instagram|post", "Social")],
+    "marketing/features": [(r"bento", "Bento"), (r"tabs?\b", "Tabs"), (r"steps?|how-?it-?works|process|timeline|workflow", "Steps"),
+                           (r"compar|versus|\bvs\b|table", "Comparison"), (r"scroll|sticky|parallax", "Scroll"),
+                           (r"screenshot|showcase|image|preview|split|alternat|zig-?zag|media", "Showcase and split"),
+                           (r"grid|cards?", "Grid of cards"), (r"list|checklist", "Lists"), (r"icon", "Icons")],
+    "marketing/pricing": [(r"compar|table", "Comparison tables"), (r"toggle|switch|monthly|annual|yearly|billing", "With billing toggle"),
+                          (r"slider|calculat|usage|credit|seat", "Usage and sliders"), (r"single|simple|one-?plan", "Single plan"),
+                          (r"cards?|tiers?|plans?", "Plan cards")],
+    "marketing/cta": [(r"newsletter|subscribe|email|waitlist", "Newsletter and waitlist"), (r"download|app-?store|mobile|ios|android", "App download"),
+                      (r"banner|bar|strip", "Banners"), (r"card|box", "Cards")],
+    "data-display/list": [(r"todo|task|checklist", "Tasks and to-dos"), (r"timeline|activity|feed|log|history", "Activity and feeds"),
+                          (r"sortable|drag|reorder|dnd", "Sortable"), (r"file|folder|tree", "Files and trees"),
+                          (r"contact|people|user|member|team", "People"), (r"notification|inbox|message|mail", "Inbox"),
+                          (r"virtual|infinite", "Long lists"), (r"swipe|stack", "Swipe and stack"),
+                          (r"product|cart|ecommerce|shop|order", "Products and orders"), (r"award|achievement|portfolio|project", "Portfolio and awards"),
+                          (r"animated|motion|stagger", "Animated")],
+    "lib/utility": [(r"\bcn\b|utils?\b|class", "Class helpers"), (r"format|date|time|number|currency|locale", "Formatting"),
+                    (r"store|state|context|provider", "State"), (r"fetch|api|query|http|client", "Data fetching"),
+                    (r"theme|color|css|token", "Theme"), (r"anim|motion|spring|easing", "Motion helpers")],
+    "data-display/badge": [(r"status|dot|indicator|online", "Status"), (r"avatar|user", "User"), (r"count|number|notification", "Counts"),
+                           (r"animated|shine|glow|shimmer|gradient|sparkle", "Animated"), (r"new|beta|pro|premium|verified", "Labels"),
+                           (r"tag|chip|pill|label", "Tags and pills")],
+    "navigation/top-nav": [(r"mega|dropdown|menu", "Mega menus"), (r"mobile|hamburger|drawer|responsive", "Mobile"),
+                           (r"floating|pill|island|dock", "Floating"), (r"sticky|scroll|hide|shrink", "On scroll"),
+                           (r"search|command", "With search"), (r"glass|blur|transparent", "Glass")],
+    "overlays/dialog": [(r"confirm|delete|alert|warning|destructive", "Confirm"), (r"onboard|welcome|wizard|step|tour", "Onboarding"),
+                        (r"share|invite|team", "Share and invite"), (r"image|media|video|gallery|lightbox", "Media"),
+                        (r"command|search", "Search"), (r"form|login|sign|auth|edit|create", "Forms"),
+                        (r"animated|motion|morph|expand", "Animated")],
+    "flows/sign-in": [(r"otp|verify|code|2fa|mfa|magic", "Verification"), (r"forgot|reset|recover|password", "Password reset"),
+                      (r"sign-?up|register|create-?account|onboard", "Sign up"), (r"social|oauth|google|github|apple", "Social"),
+                      (r"split|image|illustration|side", "Split with image"), (r"login|sign-?in|auth", "Sign in")],
+    "actions/switch": [(r"theme|dark|light|mode|sun|moon", "Theme toggles"), (r"animated|motion|spring|bounce|morph|liquid", "Animated"),
+                       (r"3d|skeuo|neumorph|retro|ios", "Styled"), (r"icon|emoji", "With icons"), (r"label|text|description|form", "With labels")],
+    "data-display/table": [(r"pricing|compar", "Comparison"), (r"invoice|order|transaction|payment|billing", "Transactions"),
+                           (r"user|member|team|people|contact", "People"), (r"editable|spreadsheet|cell", "Editable"),
+                           (r"expand|nested|tree|collaps", "Expandable"), (r"data-?table|tanstack|sort|filter|paginat", "Data tables")],
+    "data-display/accordion": [(r"faq|question", "FAQ"), (r"nested|tree|multi", "Nested"), (r"animated|motion|smooth", "Animated"),
+                               (r"card|image|bordered", "Cards")],
+    "pages/templates": [(r"dashboard|admin|analytics", "Dashboards"), (r"404|error|not-?found|maintenance|coming-?soon", "Error and status pages"),
+                        (r"auth|login|sign", "Auth pages"), (r"portfolio|personal|resume|\bcv\b", "Portfolios"),
+                        (r"blog|article|docs|documentation", "Blogs and docs"), (r"shop|store|ecommerce|product|checkout", "Shops"),
+                        (r"landing|saas|startup|marketing|home", "Landing pages")],
+    "assets/logo": [(r"openai|anthropic|claude|gemini|mistral|llama|perplexity|hugging|ollama|deepseek|qwen|\bai\b", "AI"),
+                    (r"bitcoin|ethereum|solana|coin|polygon|binance|crypto|web3", "Crypto"),
+                    (r"stripe|paypal|visa|mastercard|klarna|wise|revolut|unionpay|amex|payments?|marketplace|commerce", "Payments"),
+                    (r"vercel|netlify|supabase|firebase|postgres|mysql|mongo|redis|cloudflare|heroku|aws|azure|neon|planetscale|cloud|hosting|"
+                     r"databases?|devops|monitoring|analytics|platforms?|\bcms\b|auth|authentication|secrets|\biac\b|cybersecurity|privacy|automation|\biot\b|hardware", "Cloud and data"),
+                    (r"react|vue|svelte|angular|next|nuxt|vite|node|deno|bun|python|rust|golang|typescript|javascript|tailwind|docker|kubernetes|git|github|gitlab|bitbucket|npm|"
+                     r"frameworks?|devtools?|librar(y|ies)|languages?|\bbuild\b|testing|editors?|compiler|browsers?|runtimes?|monorepo|config|\bui\b|voidzero", "Dev tools"),
+                    (r"figma|adobe|sketch|framer|canva\b|notion|linear|jira|trello|asana|airtable|miro|slack|design|productivity|communications?|learning|education", "Design and work"),
+                    (r"google|microsoft|apple|amazon|meta|facebook|instagram|twitter|linkedin|tiktok|youtube|discord|whatsapp|telegram|reddit|spotify|twitch|social|entertainment|media|gaming|music|community", "Big tech and social")],
+    # 11 Oct: soundcn's own sets (impact, warcraft, voiceover, jingles, footstep, laser...) name what a sound is for; "type"
+    # matched every soundcn part through its sound-types dependency and filed 721 game sounds under Keyboard
+    "assets/sound": [(r"^use-|\buse[- ]sound|\bhooks?\b|\blib\b", "Code to play them"),
+                     (r"voice-?over|\bvoices?\b|spoken|announcer|narrat|\bround\b|\bcombo|\btie\b|\bkill\b|\bplayer\b|\bwar\b|\bmode\b|fight|victory|prepare|choose|\bbegin\b|\bhold\b|loser|deathmatch|championship|question", "Voice and voiceover"),
+                     (r"jingles?|music|melod|\bloops?\b|ambien|\bbeats?\b|drone|soundtrack", "Jingles, music and ambient"),
+                     (r"notif|alert|\bding\b|bell|chime|\bping\b", "Notifications"),
+                     (r"success|error|fail|complete|\bwin\b|\blose\b|correct|wrong|confirm|deny", "Success and error"),
+                     (r"typing|typewriter|keyboard|keystroke|\bkeys?\b", "Typing and keyboard"),
+                     (r"swoosh|whoosh|transition|swipe|riser|rewind|cinematic", "Transitions and whooshes"),
+                     (r"click|\btap\b|button|\bui\b|toggle|switch|select|maximi[sz]e|minimi[sz]e|scroll|hover|\bpop\b", "UI clicks and taps"),
+                     (r"laser|space|phaser|\bzap\b|power|force|\bphase\b|engine|sci-?fi|robot|shield|thruster|computer|glitch", "Sci-fi and lasers"),
+                     (r"warcraft|\bquests?\b|craft|combat|magic|spell|sword|potion|fantasy|alchemy|slime|8-?bit|\bjump\b", "Fantasy and games"),
+                     (r"impact|\bhit\b|punch|boom|explo|thud|crash|smash", "Impacts and hits"),
+                     (r"\bcards?\b|chips?|dice|\bdie\b|casino|poker|coins?", "Cards, dice and coins"),
+                     (r"footsteps?|door|cloth|glass|metal|wood|book|scratch|drop|paper|foley|creak|belt|knife|shutter|chop|leather|handle", "Foley: steps, doors and things"),
+                     (r"\btones?\b|\bpep\b|blip|bong|\bhigh\b|\blow\b|pluck|\btick\b|\bback\b|\bclose\b|\bopen\b", "Tones and blips")],
+    # audio players beside video ones (audiocn's whole kit sits here: players, meters, mixers, waveforms)
+    "media/player": [(r"video|youtube|vimeo|\bhls\b|stream|reel", "Video"),
+                     (r"waveform|visuali[sz]er|spectrum|equali[sz]er|oscillo", "Waveforms and visualizers"),
+                     (r"meter|mixer|fader|knob|channel|\bpan\b|gain|decibel|\bdb\b|volume|level|clip", "Meters, mixers and controls"),
+                     (r"mic|microphone|record|capture|devices?", "Microphones and recording"),
+                     (r"audio|music|podcast|track|playlist|sound|song|spotify", "Audio players")],
+})
+# 10 Oct, late: finer places for six more big categories, after their first rules (the first match wins)
+for _c, _extra in {
+    "data-display/card": [(r"widget|weather|clock|music|battery|calendar", "Widgets"), (r"flip|stack|swap|reveal|drag|swipe", "Flip, stack and reveal"),
+                          (r"project|task|approval|event|folder|file|email|invoice", "Work items"), (r"social|tweet|post|share|comment", "Social posts"),
+                          (r"animated|motion", "Animated and glowing")],
+    "media/gallery": [(r"webgpu|webgl|shader|dither|glass|ink|liquid|object|pixel", "Image effects"), (r"crop|editor|upload|viewer", "Viewers and croppers"),
+                      (r"product|showcase|detail", "Product images"), (r"trail|reveal|hover", "Hover and reveal")],
+    "lib/utility": [(r"data|sample|mock|fixture", "Sample data"), (r"docs?\b|installation|examples?", "Docs"), (r"fonts?|typography", "Fonts"),
+                    (r"provider|context|adapter|kit|core|primitives|slot", "Providers and primitives"), (r"\bcn\b|utils?|helpers?|types", "Helpers")],
+    "data-display/accordion": [(r"collapsible|disclosure|expandable|details|show-?more", "Collapsibles")],
+    "marketing/cta": [(r"split", "Split"), (r"band|bar|banner|strip|inline", "Bands"), (r"image|photo|video", "With media"), (r"centered|center", "Centered"),
+                      (r"gradient|glow|glass|border", "Glowing and gradient"), (r"newsletter|subscribe|email", "Newsletter")],
+    "actions/switch": [(r"toggle-?group|group|segmented", "Toggle groups"), (r"pricing|billing|monthly|yearly|annual", "Billing period"),
+                       (r"theme|dark|light|mode", "Theme toggles"), (r"vhs|retro|webgpu|glass|3d|animated|motion|neon", "Animated"), (r"toggle", "Toggle buttons")],
+}.items():
+    SUBS[_c] = SUBS.get(_c, []) + _extra
+# shaders had no places of their own (only 21st's studio styles, 32% of 857 live): sorted by the look they make
+SUBS["motion/shader"] = [
+    (r"fluid|liquid|\bink\b|smoke|water|ripple|flow|melt|drip|cloth", "Fluid and liquid"),
+    (r"galax|nebula|\bstars?\b|space|cosmi|planet|black-?hole|orbit", "Space and stars"),
+    (r"fire|flame|plasma|lava|heat|ember|inferno|\bsun\b|solar", "Fire and plasma"),
+    (r"glass|refract|prism|crystal|lens|chrom|diamond|iridescen|holo", "Glass and prism"),
+    (r"particle|dust|sparkle|firefl|swarm|\bpoints?\b|boids|petals?", "Particles"),
+    (r"sphere|cube|torus|3d|raymarch|sdf|meta-?balls?|\bballs?\b|blob|\borb\b|knot|tunnel|terrain|hills?|mountain", "3D shapes"),
+    (r"spiral|swirl|vortex|twist|warp|symmetry|kaleido", "Swirls and spirals"),
+    (r"noise|grain|dither|static|perlin|simplex|fbm|halftone|pixel|crt|vhs|glitch|ma(r)?trix", "Noise, grain and pixels"),
+    (r"gradient|aurora|mesh|silk|wave|ribbon|veil|flux|colou?r|spectrum|rainbow", "Gradients and waves"),
+    (r"grid|pattern|\bdots?\b|\blines?\b|stripe|checker|moire|lattice|\bhex|voronoi|truchet|maze|geometr", "Patterns and grids"),
+    (r"light|glow|\brays?\b|beam|bloom|neon|laser|shine|spotlight|caustic", "Light and glow")]
+# 11 Oct: the 19 biggest places that had none, from the words their parts use most (the first match wins)
+SUBS.update({
+    "navigation/tabs": [(r"\bcode\b|install|terminal", "Code tabs"), (r"segment|control", "Segmented controls"), (r"vertical|side", "Vertical"),
+                        (r"feature|product|usecase|showcase|sections?|marketing|ecommerce|content|preview|tabbed", "Feature and product tabs"),
+                        (r"expand|collaps", "Expandable"), (r"animat|sliding|slide|motion|indicator|underline", "Animated and sliding"),
+                        (r"\bicons?\b", "With icons"), (r"glass|styled|pill", "Styled")],
+    "marketing/footer": [(r"newsletter|subscribe|email", "With newsletter"), (r"ecommerce|store|shop", "Shop footers"),
+                         (r"mega|columns?|multi|sitemap|links", "Multi-column"), (r"big|large|huge|giant|oversized|wordmark", "Big brand"),
+                         (r"social", "With social links"), (r"minimal|compact|simple|centered|row|bar", "Minimal")],
+    "layout/bento-grid": [(r"analytics|data|chart|stats?|dashboard|management|task", "Analytics and data"), (r"pricing|\bcta\b|promo", "Pricing and offers"),
+                          (r"editorial|collage|mosaic|gallery|media|image|photo", "Editorial and collage"),
+                          (r"feature|showcase|product|platform|developer|saas|enterprise", "Feature bentos"), (r"\btiles?\b", "Single tiles")],
+    "inputs/textarea": [(r"\bcode\b|json|syntax|monaco", "Code and JSON"), (r"markdown|\bmd\b", "Markdown"),
+                        (r"rich|editor|plate|tiptap|lexical|wysiwyg|html|nova|novel", "Rich text editors"),
+                        (r"autosize|auto-?grow|auto-?resize|expand", "Auto-growing"), (r"count|limit|character", "With a counter")],
+    "inputs/slider": [(r"range|dual|min-?max", "Range"), (r"dial|knob|rotary|circular|radial", "Dials and knobs"),
+                      (r"volume|scrub|seek|audio|video|player", "Volume and scrubbers"), (r"vertical", "Vertical"),
+                      (r"elastic|animat|spring|interactive|glass", "Elastic and animated"), (r"image|colou?r|hue", "Image and colour"),
+                      (r"number|input|field|value|marks?|ticks?|steps?", "With values and marks")],
+    "marketing/faq": [(r"search", "With search"), (r"\btab|categor", "By topic"), (r"two|columns?|split|side", "Two columns"),
+                      (r"cards?|grid", "Cards and grid"), (r"contact|support|help", "With contact"), (r"accordion|collaps|expand", "Accordion")],
+    "data-display/avatar": [(r"group|stack|pile|overlap", "Groups and stacks"), (r"presence|status|indicator|online|badge|dot|ring", "With status"),
+                            (r"animat|hover|motion", "Animated"), (r"square|border|rounded|shape", "Shapes and borders"),
+                            (r"fallback|initials|placeholder", "Fallbacks and initials")],
+    "overlays/sheet": [(r"cart|shopping|checkout|\bbag\b", "Carts"), (r"filter", "Filters"), (r"bottom|mobile|vaul|snap", "Bottom drawers"),
+                       (r"navigation|menu|\bnav\b", "Navigation"), (r"form|settings|edit|profile|details|feedback", "Forms and details"),
+                       (r"side|left|right|panel|top", "Side panels")],
+    "data-display/calendar": [(r"booking|availability|appointment|slot|reserv", "Booking"), (r"event|agenda|schedul|planner", "Events and agenda"),
+                              (r"week|\bday\b(?!-picker)|daily|hourly|time-?grid", "Week and day views"), (r"month", "Month views"), (r"mini|compact|small", "Mini calendars"),
+                              (r"picker|range|select|date", "Date pickers")],
+    "data-display/timeline": [(r"order|delivery|shipping|tracking|package", "Order tracking"), (r"roadmap|changelog|release|version", "Roadmaps and changelogs"),
+                              (r"feed|activity|log|social|notification|comment", "Activity feeds"),
+                              (r"history|experience|career|awards|about|story|milestone|journey", "History and experience"),
+                              (r"pipeline|workflow|process|steps?|status", "Workflows"), (r"vertical|sticky|scroll", "Vertical and scrolling")],
+    "data-viz/progress-bar": [(r"circular|circle|ring|radial|gauge|donut", "Circular"), (r"scroll|reading", "Scroll and reading"),
+                              (r"upload|file|download", "Upload and file"), (r"steps?|segment|tracker|multi", "Steps and segments"),
+                              (r"animat|glow|glass|gradient|shimmer|striped", "Animated and glowing"), (r"label|percent|value|stat", "With a label")],
+    "marketing/team": [(r"invite|roles?|permission", "Invite and roles"), (r"list|directory|table|row", "Lists and directories"),
+                       (r"hover|portrait|photo|image", "Portraits and hover"), (r"grid|cards?", "Grid of cards"), (r"about|split|story|studio", "Split and story")],
+    "marketing/logos": [(r"marquee|carousel|scroll|ticker|infinite|strip", "Marquees"), (r"integration|connect|api|hub|settings|dialog", "Integrations"),
+                        (r"cloud|trusted|clients|partners|customers|brands|grid", "Logo clouds")],
+    "layout/scroll-area": [(r"parallax", "Parallax"), (r"reveal|fade|appear|trigger|inview", "Reveal on scroll"), (r"sticky|stack|pin", "Sticky and stacking"),
+                           (r"horizontal|sideways", "Horizontal"), (r"infinite|velocity|loop|marquee", "Infinite and velocity"),
+                           (r"smooth|lenis|locomotive", "Smooth scroll"), (r"shadow|inset|area|container", "Scroll areas")],
+    "lib/hook": [(r"debounce|throttle|interval|timeout|timer", "Timing"), (r"motion|animation|reduced|spring", "Motion"),
+                 (r"mobile|touch|device|breakpoint", "Mobile and touch"),
+                 (r"browser|dom|window|document|media|query|clipboard|copy|resize|height|view|visible|intersection|scroll|event|key", "Browser and DOM"),
+                 (r"fetch|swr|async|request|mutation", "Data fetching"), (r"form|input|validation", "Forms"),
+                 (r"state|controll|value|toggle|boolean|storage", "State")],
+    "inputs/checkbox": [(r"todo|checklist|task|onboarding", "To-dos and checklists"), (r"card|tile", "Cards"),
+                        (r"group|list|multi|selection", "Groups and lists"), (r"animat|motion", "Animated"),
+                        (r"indeterminate|disabled|state", "States")],
+    "inputs/combobox": [(r"mention", "Mentions"), (r"timezone|country|locale|language|currency", "Timezones and countries"),
+                        (r"multi|multiple|tags?", "Multi-select"), (r"async|remote|load", "Async"), (r"group", "Grouped"),
+                        (r"autocomplete|search|suggest|typeahead|input", "Autocomplete")],
+    "layout/page-shell": [(r"separator|divider", "Separators"), (r"aspect|ratio", "Aspect ratio"),
+                          (r"application|app|dashboard|shells?|sidebar|analytics|email", "App shells"), (r"container|stack|frame|width|partition", "Containers")],
+    "navigation/wizard-steps": [(r"checklist", "Checklists"), (r"onboarding|welcome|setup|tour|questionnaire|survey", "Onboarding"),
+                                (r"multi|form|wizard", "Multi-step forms"), (r"stepper|steps?|indicator|numbered|progress", "Steppers")],
+})
+# 11 Oct, 01:00: the next 23 places with none (150 to 300 parts each)
+SUBS.update({
+    "media/carousel": [(r"coverflow|\b3d\b|cylinder|rotat|stack", "Coverflow and 3D"), (r"thumbnail", "With thumbnails"),
+                       (r"testimonial|review", "Testimonials"), (r"product|ecommerce|shop", "Products"), (r"portfolio|project|case", "Portfolio and projects"),
+                       (r"hero", "Hero"), (r"horizontal|scroll|marquee|infinite", "Horizontal scroll"), (r"cards?|feature", "Cards and features")],
+    "layout/dashboard": [(r"sales|revenue|paid|finance|billing|ecommerce|orders", "Sales and revenue"),
+                         (r"analytics|overview|usage|metrics|stats", "Analytics"), (r"project|operations|workspace|tasks?|hotel|admin|crm", "Projects and operations"),
+                         (r"app|shells?|sidebar|layout", "App shells")],
+    "inputs/file-upload": [(r"avatar|image|photo|picture", "Avatars and images"), (r"progress", "With progress"), (r"attachment", "Attachments"),
+                           (r"validation", "With validation"), (r"dropzone|\bdrop\b", "Dropzones"),
+                           (r"list|preview|viewer|gallery|documents|files", "File lists and previews")],
+    "overlays/toast": [(r"promise|loading|upload|async", "Promise and loading"), (r"stack|multi", "Stacked"), (r"success|error|status", "Success and error"),
+                       (r"action|button|undo|interactive", "With actions"), (r"rich|animat|gooey|glass|morph", "Rich and animated"), (r"sonner", "Sonner")],
+    "data-display/code-block": [(r"terminal|console|output", "Terminals"), (r"install|command|npm|\bcli\b", "Install commands"),
+                                (r"\btabs?\b|multi|files?", "Tabs and files"), (r"snippet", "Snippets"), (r"animat|typing|effect", "Animated"),
+                                (r"theme|viewer|glass", "Themes and viewers")],
+    "navigation/sidebar": [(r"collaps|\brail\b|mini|icon", "Collapsible and rail"), (r"inset|floating|edge", "Inset and floating"),
+                           (r"submenu|nested|tree|accordion", "With submenus"), (r"ecommerce|product|shop", "Shop"),
+                           (r"dashboard|admin|app|mail|project", "Dashboard and admin"), (r"sticky", "Sticky"), (r"animat", "Animated")],
+    "overlays/tooltip": [(r"chart", "Chart tooltips"), (r"shortcut|kbd|hint", "With shortcuts"), (r"content|card|rich|image", "Rich content"),
+                         (r"animat|motion|gooey|spring", "Animated"), (r"group|delay", "Groups and delay"), (r"arrow|glass", "Arrows and styles")],
+    "overlays/popover": [(r"picker|colou?r|date|emoji", "Pickers"), (r"form|feedback|input", "Forms and feedback"), (r"morph|gooey|motion", "Morphing"),
+                         (r"share|profile|user", "Share and profile"), (r"upload|image", "Upload and image"), (r"floating|panel|popup", "Floating panels")],
+    "data-display/typography": [(r"kbd|\bkeys?\b|keyboard|shortcut|pressed|\bmac\b", "Keyboard keys"), (r"blockquote|quote", "Quotes"),
+                                (r"prose|\barticles?\b|blog", "Prose and articles"), (r"heading|title|paragraph|lead", "Headings and text")],
+    "inputs/radio": [(r"card|choicebox|choice|tile|\bbox\b", "Choice cards"), (r"segment|control", "Segmented"), (r"colou?r|swatch", "Colour swatches"),
+                     (r"group|list|options|horizontal", "Groups and lists")],
+    "marketing/comparison": [(r"before|after|reveal|slider", "Before and after"), (r"table|matrix", "Comparison tables"), (r"plan|pricing", "Plans and pricing"),
+                             (r"versus|\bvs\b|competitor|model|product", "This versus that"), (r"\bwhy\b|cards?|feature|side|split", "Why us")],
+    "status/skeleton": [(r"card", "Cards"), (r"table|list|items", "Tables and lists"), (r"profile|avatar|user", "Profiles"), (r"form", "Forms"),
+                        (r"\barticles?\b|text|content", "Text and articles"), (r"shimmer|glass|animat", "Shimmer")],
+    "navigation/pagination": [(r"table|data|rows", "For tables"), (r"ellipsis", "With ellipsis"), (r"first|last|advanced", "First and last"),
+                              (r"compact|simple|only|minimal", "Compact"), (r"bordered|rounded|floating|glass|icon|buttons", "Styled")],
+    "navigation/breadcrumb": [(r"dropdown|select|menu|collapse", "With dropdowns"), (r"ellipsis|truncat|compact", "Truncated"),
+                              (r"separator|slash|\bdot\b|chevron|arrow", "Separators"), (r"icons?|home", "With icons"),
+                              (r"pill|glass|background|bordered|card", "Pills and styled")],
+    "navigation/command-palette": [(r"shortcut|keyboard|kbd", "Shortcuts"), (r"search|filter", "Search"), (r"dialog|modal|popover|overlay", "Dialogs"),
+                                   (r"action|menu|picker", "Actions and menus")],
+    "data-display/empty-state": [(r"result|search|filter", "No results"), (r"error|fail|access|denied|offline", "Errors"),
+                                 (r"first|\byet\b|onboard|invite|get-?started|project|team", "First use"), (r"ecommerce|cart|order", "Shop"),
+                                 (r"data|load", "No data")],
+    "inputs/search": [(r"filter", "With filters"), (r"result|highlight|suggest", "With results"), (r"expand|animat", "Expanding"),
+                      (r"command|selector|panel", "Command style"), (r"product|ecommerce", "Product search"), (r"bar|field|input", "Search bars")],
+    "inputs/otp-input": [(r"verification|verify|auth|email|login", "Verification"), (r"\bpin\b|digits", "PIN"), (r"separator", "With separator"),
+                         (r"animat|interactive", "Animated"), (r"state|validation|error", "States")],
+    "motion/number-ticker": [(r"countdown|timer|clock", "Countdowns and timers"), (r"sliding|roll|odometer|slot", "Sliding and rolling"),
+                             (r"currency|stat|price|money", "Money and stats"), (r"word|text", "Words"), (r"counter|count", "Counters")],
+    "ai-agent/composer": [(r"suggest", "With suggestions"), (r"attach|context|media|file", "With attachments"), (r"selector|model", "Model pickers"),
+                          (r"chat|message|comment", "Chat composers"), (r"prompt|input|bar", "Prompt inputs")],
+    "marketing/announcement": [(r"countdown|sale|discount|offer|coupon", "Sales and countdowns"), (r"topbar|top-?bar|bar|band|ribbon", "Top bars"),
+                               (r"banners?", "Banners"), (r"ecommerce|cart|shopping|product|promo", "Shop promos"), (r"card", "Cards")],
+    "overlays/notifications": [(r"email|mail|mjml", "Email"), (r"inbox|center|centre|list|feed", "Inbox and centre"), (r"bell|badge|count", "Bell and badge"),
+                               (r"settings|preferences", "Settings"), (r"empty", "Empty")],
+    "marketing/about": [(r"mission|values|vision|statement|principles", "Mission and values"), (r"founder|team|people", "Founders and team"),
+                        (r"story|timeline|history|journey", "Story"), (r"stats|numbers", "With stats"), (r"photo|image|gallery", "With photos"),
+                        (r"split|grid|columns|cards?", "Split and grid")],
+})
+# a short word inside a longer one is not that word: "ai" in "painted", "log" in "dialog", "pro" in "product", "ios" in
+# "scenarios", "ink" in "blink" (10 Oct: a hand-painted hero was "SaaS and AI"). These are matched whole, plurals allowed.
+SHORT = "ai|app|ray|pin|pie|tel|ink|mic|orb|ios|row|map|log|api|new|pro|tag|win|git|bun|dot|box|bar|run|kit|tap|sun|job"
+_whole = lambda p: re.sub(rf"(?:^|(?<=\|))({SHORT})(?=\||$)", r"\\b\1s?\\b", p)
+SUBS = {k: [(re.compile(_whole(p), re.I), s) for p, s in v] for k, v in SUBS.items()}
+
+STYLE = [(r"framer-motion|^motion$|motion/react|gsap|react-spring|@react-spring|auto-animate|lottie|motion-v", "animated"),
+         (r"three|@react-three|ogl|webgl|glsl|shader|regl|pixi", "webgl"), (r"\b3d\b|perspective|tilt|depth", "3d"), (r"glass|frost|blur-?card", "glass"),
+         (r"neon|glow|cyber|synthwave", "neon"), (r"hud|sci-?fi|terminal|retro|pixel|8-?bit|crt|ascii", "retro and HUD"), (r"gradient|aurora|mesh", "gradient"),
+         (r"minimal|simple|clean|basic", "minimal"), (r"brutal", "brutalist"), (r"playful|bouncy|fun|cartoon|doodle|sketch|hand-?drawn", "playful")]
+STYLE = [(re.compile(p, re.I), s) for p, s in STYLE]
+DOMAIN = [(r"\bai\b|agent|llm|chat|prompt|model|assistant|copilot|openai|anthropic|reason", "AI"), (r"auth|login|sign-?(in|up)|oidc|oauth|password|2fa|session", "auth"),
+          (r"pricing|billing|subscription|invoice|checkout|payment|stripe|plan|usage", "billing"), (r"cart|product|shop|store|commerce|order", "commerce"),
+          (r"crypto|wallet|token|swap|defi|web3|ethereum|solana|nft", "crypto"), (r"map|geo|location|globe", "maps"), (r"email|mail|newsletter", "email"),
+          (r"terminal|code|git|deploy|dev|api|cli|log", "dev tools"), (r"video|audio|music|podcast|media", "media"), (r"health|fitness|medical", "health"),
+          (r"finance|bank|stock|trading", "finance")]
+DOMAIN = [(re.compile(p, re.I), s) for p, s in DOMAIN]
+
+TYPE_CAT = {"registry:hook": "lib/hook", "registry:lib": "lib/utility", "registry:theme": "themes/theme", "registry:style": "themes/style",
+            "registry:font": "assets/font", "registry:base": "themes/style", "registry:file": "lib/utility"}
+NUMBERED = re.compile(r"^(.*?)[\s_-]*(v?\d{1,4}|[ivx]{1,4})$", re.I)
+VARIANT_PREFIX = re.compile(r"^(v|var|variant|demo|example|preview|ex)-", re.I)
+VARIANT_SUFFIX = re.compile(r"[-_](demo|example|examples|preview|usage|default|basic|story|stories)(-\d+)?$", re.I)
+FLAVOUR = re.compile(r"^(.*)-(JS|TS)-(CSS|TW)$")  # react-bits: each part four ways, JS or TS, CSS or Tailwind
+# canvas-ui and supabase: one part per framework (glyph-rain-react, glyph-rain-vue, glyph-rain-react-webgpu)
+FRAMEWORK = re.compile(r"^(.*)-(react|vue|svelte|solid|preact|vanilla|angular|lit|qwik)(-webgpu|-webgl)?$", re.I)
+
+
+def words(x):
+    """the part's name text: name, title, its registry categories and its file's folder and name (never the registry's
+    own name, which leaks: "shadcn-dashboard/select-01" is a select), kebab, camel and letter-digit split"""
+    reg = x["reg"].lower()
+    paths = []
+    for p in (x.get("files") or [])[:2]:
+        segs = [q for q in p.rsplit(".", 1)[0].split("/") if q.lower() not in (reg, "registry", "src", "components", "ui", "default", "new-york", "base", "blocks", "block", "lib", "registry-ui")]
+        paths.append(" ".join(segs[-2:]))
+    bits = [x.get("name") or "", x.get("title") or "", " ".join(x.get("categories") or [])] + paths
+    t = " ".join(bits)
+    t = re.sub(r"([a-z])([A-Z])", r"\1 \2", t)
+    t = re.sub(r"([A-Za-z])(\d)", r"\1 \2", t)
+    return re.sub(r"[_/.@]+", " ", t).lower().replace(reg, " ")
+
+
+def framework(x):
+    exts = {p.rsplit(".", 1)[-1].lower() for p in x.get("files") or [] if "." in p}
+    deps = " ".join(x.get("deps") or [])
+    if "vue" in exts or "motion-v" in deps or "vue" in deps.split():
+        return "Vue"
+    if "svelte" in exts:
+        return "Svelte"
+    if "res" in exts:
+        return "ReScript"
+    if "solid-js" in deps:
+        return "Solid"
+    if "@angular" in deps:
+        return "Angular"
+    if exts & {"tsx", "jsx", "ts", "js"}:
+        return "React"
+    if exts & {"css", "scss"}:
+        return "CSS"
+    return None
+
+
+KNOWN_ICON_SETS = {"keyline", "lucide-animated"}
+
+
+def icon_sets(rows):
+    """registries that are icon sets: named so, or nearly all their parts named or filed as icons (not "lexicon")"""
+    n, icons = collections.Counter(), collections.Counter()
+    for x in rows:
+        n[x["reg"]] += 1
+        s = (x["name"] + " " + (x.get("description") or "") + " " + " ".join(x.get("files") or [])[:300]).lower()
+        if re.search(r"\bicons?\b|icons/|-icon\b", s):
+            icons[x["reg"]] += 1
+    return {r for r in n if r in KNOWN_ICON_SETS or (n[r] >= 20 and (icons[r] >= 0.95 * n[r] or re.search(r"(^|-)icons|icons(-|$)", r)))}
+
+
+STRONG = RULES[:7]  # what a part is FOR (an asset, an AI part) outranks what it is shaped like
+# words that name a part only as its whole name or last word ("steps", "task-steps"); anywhere else in its text they
+# say too little (beste-ui's about12 mentions steps)
+HEAD_ONLY = [(re.compile(p), c) for p, c in [
+    (r"^icons-", "assets/icon"), (r"^icon-(?!.*\b(button|btn|picker|input|menu|toggle|cloud|set|grid)\b)", "assets/icon"),  # icon-timer is an icon, icon-swap-button a button
+    (r"^about(-?us)?(-|$)", "marketing/about"),  # an About section (shadcnblocks' about-31-story-with-avatar-profile), 174 spread over 8 places
+    (r"^(\w+-)?steps?$", "navigation/wizard-steps"), (r"^(\w+-)?crm$", "layout/dashboard"), (r"^(\w+-)?command$", "navigation/command-palette"),  # shadcn's Command
+    (r"^(\w+-)?(timer|countdown|count-down)$", "motion/number-ticker")]]
+ASSETS = 5  # the first five rules are assets: a "logo grid" is a section of logos, not a logo
+TAIL = {"demo", "demos", "example", "examples", "preview", "usage", "default", "basic", "story", "stories", "component",
+        "components", "block", "blocks", "section", "sections", "ui", "new", "simple", "variant", "variants", "primary",
+        "secondary", "custom", "base", "shadcnui", "shadcn"}
+TAIL |= {"sm", "md", "lg", "xl", "xs", "2xl", "3x", "2x"}  # a size (wigggle-ui's weather-sm-09) says nothing about what it is
+CONTAINER = {"card", "cards", "grid", "list", "item", "items", "wrapper", "container", "box", "group", "form", "tile",
+             "tiles", "widget", "view", "panel", "row", "table"}
+WEAK = {"picker", "input", "field", "selector", "select", "editor"}  # "date range picker" is a date range: longest first
+# the things an effect is put on: a "footer brand backdrop" is a footer, a "button text marquee" a button
+THING = [(rx, c) for rx, c in RULES[ASSETS:] if c.startswith(("marketing/", "actions/", "overlays/")) or c in ("data-display/card", "navigation/top-nav")]
+MARKETING = [(rx, c) for rx, c in RULES if c.startswith("marketing/")]
+# what a container holds is its purpose, never its look: a "spotlight card" is a card, a "pricing card" is pricing
+PURPOSE = [(rx, c) for rx, c in RULES[ASSETS:] if not c.startswith(("motion/", "themes/"))]
+
+
+def head_words(s):
+    """a name's words, without the trailing ones that say nothing about what it is (demo, 01, section, primary)"""
+    s = re.sub(r"([a-z])([A-Z])", r"\1 \2", s or "")
+    s = re.sub(r"([A-Za-z])(\d)", r"\1 \2", s)
+    ws = [w for w in re.split(r"[^A-Za-z0-9]+", s.lower()) if w]
+    if "with" in ws[1:]:  # "pricing with switch" is pricing
+        ws = ws[:ws.index("with", 1)]
+    for n in (3, 2, 1):  # "button-button-text-marquee" (shadcnblocks): the repeated prefix is the category
+        if len(ws) > 2 * n and ws[:n] == ws[n:2 * n]:
+            return ws[:n]
+    while len(ws) > 1 and (ws[-1] in TAIL or re.fullmatch(r"v?\d+", ws[-1])):
+        ws.pop()
+    return ws
+
+
+def singular(w):
+    """a plural head as the thing it names ("modals" is a modal, "heros" a hero); "status", "glass", "canvas" stay"""
+    if len(w) > 4 and w.endswith("ies"): return w[:-3] + "y"
+    if len(w) > 4 and re.search(r"(x|ch|sh)es$", w): return w[:-2]
+    if len(w) > 3 and w.endswith("s") and not re.search(r"(ss|us|is|as)$", w): return w[:-1]
+    return w
+
+
+# a library with no registry that is all one kind of thing (bin/sites); and where to put the parts of one whose
+# names say nothing ("sender", "think" in Ant Design X are AI chat parts)
+SITE_CAT = {"dicebear": "assets/avatar", "react-flow-xyflow": "data-viz/flow", "audiocn": "media/player"}  # audiocn: an audio UI kit, not sounds
+SITE_FALLBACK = {"ant-design-x": "ai-agent/ai-agent", "llm-ui": "ai-agent/ai-agent", "photocn": "media/gallery"}
+
+
+def by_head(ws):
+    """the rule that names the head: in English the last word names the thing ("accordion gallery" is a gallery, "icon
+    trail button" a button), so the last word, then the last two, and on. A container ("pricing card", "logo grid",
+    "login form") is named by what it holds, so its modifier goes first."""
+    first = lambda s, rules=RULES: next((c for rx, c in rules if rx.search(s)), None)
+    if len(ws) > 1 and ws[-1] in CONTAINER:
+        c = first("-".join(ws[:-1][-2:]), PURPOSE) or first("-".join(ws[-2:]), PURPOSE)
+        if c:
+            return c
+    for k in (3, 2):  # a compound name the rules know whole ("context menu", "hover card", "number ticker")
+        t = "-".join(ws[-k:]) if len(ws) >= k else ""
+        for rx, c in RULES if t else []:
+            m = rx.search(t)
+            if m and m.start() == 0 and m.end() == len(t):
+                return c
+    ks = range(len(ws), 0, -1) if ws and ws[-1] in WEAK else range(1, len(ws) + 1)
+    for k in ks:
+        c = first("-".join(ws[-k:]))
+        if c:
+            if c.startswith("motion/") and k < len(ws):
+                return first("-".join(ws[:-k]), THING) or c
+            return c
+    return None
+
+
+# A description's subject names the part; its later words name what it holds or does ("It features ...", "three
+# columns", "follows the cursor"). 10 Oct: of 30 parts where the subject and the first rule word anywhere disagreed, the
+# subject was right 18 times and the rule word 9.
+DESC_CUT = re.compile(r"\.\s|:\s|;\s|,\s| [—–-] | (?:that|which|with|for|where|using|built|featuring|powered|designed|"
+                      r"inspired|to|in|on|from|by)\s", re.I)
+
+
+def desc_head(d):
+    """a description's subject: from "A push-notification approval card that ...", the words push-notification approval card"""
+    d = re.sub(r"^\s*(this|a|an|the)\s+", "", d.strip(), flags=re.I)
+    return DESC_CUT.split(d, maxsplit=1)[0].strip()
+
+
+def sub_of(x, cat):
+    """a part's finer place in CAT: the first of the category's subcategories its words match"""
+    t = words(x) + " " + " ".join(x.get("deps") or [])
+    return next((s for rx, s in SUBS.get(cat, []) if rx.search(t)), None)
+
+
+def classify(x, icon_regs, sound_regs, logo_regs):
+    t = (x.get("type") or "")
+    text = words(x)
+    desc = (x.get("description") or "").lower()
+    cat = None
+    if x["reg"] in icon_regs:
+        cat = "assets/icon"
+    elif x["reg"] in sound_regs or re.search(r"/sounds?/", " ".join(x.get("files") or [])):
+        cat = "assets/sound"
+    elif re.search(r"og-?image", x["reg"]):
+        cat = "assets/og-image"
+    elif x["reg"] in logo_regs:
+        cat = "assets/logo"
+    elif re.search(r"flag", x["reg"]) or re.search(r"\bflag$", x.get("title") or "", re.I):
+        cat = "assets/flag"
+    elif x["reg"] in SITE_CAT:
+        cat = SITE_CAT[x["reg"]]
+    elif t in TYPE_CAT:
+        cat = TYPE_CAT[t]
+    nm, tt = (x.get("name") or "").split("/")[-1], (x.get("title") or "").split(" - ")[0]
+    if not cat and re.search(r"\bsections?\b", f"{nm} {tt}".replace("-", " "), re.I):
+        s = f"{nm} {tt} {desc}".lower()
+        cat = next((c for rx, c in MARKETING if rx.search(s)), None)
+    if not cat:
+        cat = next((c for rx, c in STRONG if rx.search(f"{nm} {tt}".lower())), None)
+    if not cat:
+        cat = next((c for rx, c in HEAD_ONLY if rx.search("-".join(head_words(nm)))), None)
+    if not cat:
+        cat = by_head(head_words(nm)) or by_head(head_words(tt)) or by_head([singular(w) for w in head_words(nm)])
+    if not cat:
+        for rx, c in RULES:
+            if rx.search(text):
+                cat = c
+                break
+    if not cat and desc:  # what the description says it is first ("A collapsible tree for ..." is a tree), then any rule's word
+        ws = head_words(desc_head(desc).replace(" ", "-"))
+        cat = (by_head(ws) or by_head([singular(w) for w in ws])) if ws else None
+    if not cat and desc:
+        for rx, c in RULES:
+            if rx.search(desc):
+                cat = c
+                break
+    if not cat:
+        cat = SITE_FALLBACK.get(x["reg"])
+    if not cat:
+        cat = "marketing/marketing" if t == "registry:block" else "pages/templates" if t == "registry:page" else "other/other"
+    # a block named like an element is that element's section form: keep the element's place
+    deps = " ".join(x.get("deps") or [])
+    sub = None
+    for rx, s in SUBS.get(cat, []):
+        if rx.search(text + " " + deps):
+            sub = s
+            break
+    style = sorted({s for rx, s in STYLE if rx.search(text + " " + deps + " " + desc)})
+    domain = sorted({s for rx, s in DOMAIN if rx.search(text + " " + desc)})
+    return cat, sub, style, domain
+
+
+def base_of(x, names):
+    """the base part a variant or example belongs to, within its own registry"""
+    n = x["name"]
+    leaf = n.split("/")[-1]
+    t = x.get("type") or ""
+    f = FLAVOUR.match(leaf)
+    if f:  # one part and three flavours of it: the first flavour held stands for all four
+        pre = n[: len(n) - len(leaf)]
+        first = next((pre + f"{f.group(1)}-{k}" for k in ("JS-CSS", "JS-TW", "TS-CSS", "TS-TW") if pre + f"{f.group(1)}-{k}" in names), None)
+        return first if first != n else None
+    g = FRAMEWORK.match(leaf)
+    if g:  # the same part for another framework or renderer: React's (else the first) stands for all of them
+        pre = n[: len(n) - len(leaf)]
+        same = lambda m: m.startswith(pre + g.group(1) + "-") and (FRAMEWORK.match(m[len(pre):]) or [None, None])[1] == g.group(1)
+        sibs = sorted(m for m in names if same(m))
+        if len(sibs) >= 2:
+            first = pre + g.group(1) + "-react" if pre + g.group(1) + "-react" in names else sibs[0]
+            return first if first != n else None
+    cand = []
+    stem = VARIANT_SUFFIX.sub("", VARIANT_PREFIX.sub("", leaf))
+    m = NUMBERED.match(stem)
+    stems = [stem] + ([m.group(1).rstrip("-_ ")] if m and m.group(1) else [])
+    for s in stems:
+        for prefix in ("", "/".join(n.split("/")[:-1]) + "/" if "/" in n else ""):
+            if prefix + s in names and prefix + s != n:
+                cand.append(prefix + s)
+    for u in x.get("uses") or []:
+        u = re.sub(r"\.json$", "", u.rsplit("/", 1)[-1].split(":")[-1].lstrip("@"))
+        if u in names and u != n and u not in cand:
+            cand.append(u)
+    is_variant = t == "registry:example" or bool(VARIANT_PREFIX.match(leaf) or VARIANT_SUFFIX.search(leaf))
+    # "alert-outlined-secondary" uses "@uiable/alert" and starts with it: a styled variant of its base
+    for c in cand:
+        if is_variant or leaf.startswith(c.split("/")[-1] + "-") or leaf.startswith(c.split("/")[-1] + "_"):
+            return c
+    return None
+
+
+def display_name(x, cat, labels):
+    raw = (x.get("title") or x["name"].split("/")[-1]).strip()
+    m = NUMBERED.match(raw.replace("_", "-"))
+    plain = re.sub(r"[-_]+", " ", raw).strip()
+    if m and (not m.group(1) or len(m.group(1).strip(" -_")) <= 14) and re.search(r"\d", m.group(2)):
+        what = (m.group(1) or "").strip(" -_")
+        what = re.sub(r"[-_]+", " ", what).strip() or labels.get(cat, cat.split("/")[-1])
+        return f"{what[:1].upper()}{what[1:]} #{int(re.sub(r'[^0-9]', '', m.group(2)) or 0)}"
+    return plain[:1].upper() + plain[1:] if plain.islower() else plain
+
+
+def main():
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--sample", type=int, default=0)
+    ap.add_argument("--catalog", default=os.path.join(ROOT, "catalog.jsonl"))
+    ap.add_argument("--out", default=os.path.join(ROOT, "classified.jsonl"))
+    args = ap.parse_args()
+    rows = [json.loads(l) for l in open(args.catalog)]
+    # the libraries with no registry: their parts are their pages (bin/sites), sorted by name like any other part
+    sites = os.path.join(ROOT, "sites.jsonl")
+    if args.catalog == os.path.join(ROOT, "catalog.jsonl") and os.path.exists(sites):
+        rows += [json.loads(l) for l in open(sites)]
+    rows = [x for x in rows if x["reg"] != "registrydirectory"]
+    # svgl's registry leaves out each logo's category; its API has it (svgl-categories.json, from https://api.svgl.app)
+    svgl = os.path.join(ROOT, "svgl-categories.json")
+    svgl = json.load(open(svgl)) if os.path.exists(svgl) else {}
+    for x in rows:
+        if x["reg"] == "svgl" and not x.get("categories") and svgl.get(x["name"]):
+            x["categories"] = svgl[x["name"]]
+    icon_regs = icon_sets(rows)
+    # a library of sound files by its name; "audio" also matched ramonclaudio-coderabbit (CodeRabbit's API client) and audiocn's players
+    sound_regs = {r for r in {x["reg"] for x in rows} if re.search(r"sound|sfx", r)}
+    logo_regs = {r for r in {x["reg"] for x in rows} if re.search(r"logo", r)} | {"svgl"}  # svgl: brand logos
+    names = collections.defaultdict(set)
+    for x in rows:
+        names[x["reg"]].add(x["name"])
+    # brand icons: a library whose icons mostly name brands (efferd: apple, discord, openai) files them with the logos.
+    # svgl's names are the brands; a library qualifies when 5+ of its icon parts and half of them name one.
+    stem = lambda n: re.sub(r"(^|-)(icons?|logos?|brand)(?=-|$)", "", n.split("/")[-1].lower()).strip("-")
+    brands = {stem(x["name"]) for x in rows if x["reg"] == "svgl"} - {""}
+    tally = collections.defaultdict(lambda: [0, 0])
+    for x in rows:
+        if x["reg"] not in icon_regs and re.search(r"(^|-)icons?(-|$)", x["name"].split("/")[-1].lower()):
+            tally[x["reg"]][0] += 1; tally[x["reg"]][1] += stem(x["name"]) in brands
+    brand_regs = {r for r, (n, b) in tally.items() if n >= 5 and b >= n / 2}
+    labels = {}
+    # a reader's call outranks the rules: overrides.jsonl, one {"id", "cat", "sub"?, "by"} or {"id", "junk": true, "by"} per line (Haiku agents and
+    # Shaan's own corrections; 10 Oct, the 2,776 parts no rule could place)
+    ov_path = os.path.join(ROOT, "overrides.jsonl")
+    ov = {o["id"]: o for o in (json.loads(l) for l in open(ov_path) if l.strip())} if os.path.exists(ov_path) else {}
+    out = []
+    counts = collections.Counter()
+    subs = collections.defaultdict(collections.Counter)
+    for x in rows:
+        cat, sub, style, domain = classify(x, icon_regs, sound_regs, logo_regs)
+        if cat == "assets/icon" and x["reg"] in brand_regs and stem(x["name"]) in brands:
+            cat, sub = "assets/logo", sub_of(x, "assets/logo")
+        o = ov.get(x["id"])
+        if o and o.get("cat") and o["cat"] != cat:
+            cat, sub = o["cat"], o.get("sub") or sub_of(x, o["cat"])  # a reader's place, and the sub its words name there
+        junk = bool(o and o.get("junk"))  # a reader found a test or gibberish: kept here, left out of the hub
+        base = base_of(x, names[x["reg"]])
+        fw = framework(x)
+        row = {"id": x["id"], "cat": cat, "sub": sub, "base": f"{x['reg']}/{base}" if base else None, "fw": fw, "style": style or None,
+               "domain": domain or None, "dn": display_name(x, cat, labels), "junk": junk}
+        out.append({k: v for k, v in row.items() if v})
+        if not base and not junk:
+            counts[cat] += 1
+            if sub:
+                subs[cat][sub] += 1
+    # a base inherits nothing, but a variant takes its base's category, so a base's variants sort with it
+    by_id = {r["id"]: r for r in out}
+    for r in out:
+        b = by_id.get(r.get("base") or "")
+        if b:
+            r["cat"] = b["cat"]
+            if b.get("sub"): r["sub"] = b["sub"]  # and its finer place: a variant's own words no longer pick a sub of a place it left
+            else: r.pop("sub", None)
+    if args.sample:
+        random.seed(7)
+        for r in random.sample(out, args.sample):
+            print(json.dumps(r, ensure_ascii=False))
+        return
+    with open(args.out, "w") as f:
+        for r in out:
+            f.write(json.dumps(r, ensure_ascii=False) + "\n")
+    tax = {"_about": "The parts' vocabulary: group/category as in the UI Hub, the subcategories bin/classify gives the crowded ones, and how many base parts (variants aside) each has.",
+           "icon_sets": sorted(icon_regs), "sound_sets": sorted(sound_regs), "logo_sets": sorted(logo_regs),
+           "categories": [{"category": c, "parts": n, "subs": dict(subs[c].most_common())} for c, n in counts.most_common()]}
+    json.dump(tax, open(os.path.join(os.path.dirname(args.out), "taxonomy.json"), "w"), indent=1, ensure_ascii=False)
+    nb = sum(1 for r in out if r.get("base"))
+    print(f"{len(out)} parts: {len(out) - nb} bases, {nb} variants or examples; {len(counts)} categories; "
+          f"other: {counts['other/other']}; icons {sum(1 for r in out if r['cat'] == 'assets/icon')}")
+
+
+if __name__ == "__main__":
+    sys.exit(main())

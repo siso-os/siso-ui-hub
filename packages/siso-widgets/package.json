@@ -1,0 +1,27 @@
+{
+  "name": "@siso/widgets",
+  "version": "0.4.1",
+  "type": "module",
+  "license": "MIT",
+  "sideEffects": [
+    "*.css"
+  ],
+  "files": [
+    "src",
+    "styles.css",
+    "README.md",
+    "NOTICE",
+    "LICENSE",
+    "inventory.json"
+  ],
+  "exports": {
+    ".": "./src/index.ts",
+    "./styles.css": "./styles.css"
+  },
+  "peerDependencies": {
+    "react": "^19.0.0"
+  },
+  "scripts": {
+    "test": "node --experimental-strip-types --test test/layout.test.ts"
+  }
+}

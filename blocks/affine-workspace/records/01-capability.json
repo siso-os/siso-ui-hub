@@ -1,0 +1,78 @@
+{
+  "record_type": "CapabilityContract",
+  "record_version": "1.0.0",
+  "record_id": "actionist/affine-workspace@0.2.0#CapabilityContract",
+  "block_id": "actionist/affine-workspace",
+  "version": "0.2.0",
+  "capability_id": "actionist/affine-workspace",
+  "links": {
+    "manifest": "../actionist-block.json",
+    "packaging": "02-packaging.json",
+    "host_requirements": "03-host-requirements.json",
+    "binding_plan": "04-binding-plan.json",
+    "qualification": "05-qualification.json",
+    "registry": "06-registry.json",
+    "release": "07-release.json"
+  },
+  "owner_domain": "D08",
+  "mutability_rule": "Changes only when the client-visible workspace capability changes; proof, host or donor pin changes do not edit this record.",
+  "outcome_statement": "A host user can open and edit an authenticated collaborative workspace inside the host's assigned documents destination.",
+  "capability_kind": "surface",
+  "provides": [
+    {
+      "port_id": "workspace.ui",
+      "port_kind": "ui",
+      "schema_ref": "actionist://ports/workspace-frame.v1",
+      "external_effect": "none"
+    },
+    {
+      "port_id": "workspace.session",
+      "port_kind": "input",
+      "schema_ref": "actionist://ports/host-session-assertion.v1",
+      "external_effect": "none"
+    },
+    {
+      "port_id": "workspace.navigation",
+      "port_kind": "output",
+      "schema_ref": "actionist://ports/navigation-intent.v1",
+      "external_effect": "none"
+    },
+    {
+      "port_id": "workspace.edit",
+      "port_kind": "action",
+      "schema_ref": "actionist://ports/donor-document-edit.v1",
+      "external_effect": "none"
+    },
+    {
+      "port_id": "workspace.lifecycle",
+      "port_kind": "event",
+      "schema_ref": "actionist://events/capability-envelope.v1",
+      "external_effect": "none"
+    }
+  ],
+  "requires_host": [
+    "identity",
+    "tenant",
+    "settings",
+    "navigation",
+    "files",
+    "events",
+    "secrets"
+  ],
+  "requires_capabilities": [],
+  "state_semantics": {
+    "state_classes": [
+      "donor_owned_intact",
+      "document_collaboration",
+      "files_objects",
+      "events"
+    ],
+    "authoritative_owner": "donor"
+  },
+  "authority_class": "tenant_scoped_write",
+  "limits": [
+    "The capability does not own host navigation position, tenant selection, credentials, migrations or release authority.",
+    "The assimilated package can consume host tokens only through its declared token bridge; visual parity remains qualification work.",
+    "A donor settings view remains behind the host settings entry; a unified settings surface is not provided."
+  ]
+}

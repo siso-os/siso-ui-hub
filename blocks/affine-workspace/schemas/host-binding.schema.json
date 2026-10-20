@@ -1,0 +1,80 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "actionist.affine.host-binding.v1",
+  "title": "Generated AFFiNE host binding",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "binding_id",
+    "capability_id",
+    "application_id",
+    "host_contract_version",
+    "status",
+    "ownership",
+    "identity_binding",
+    "workspace_binding",
+    "routes",
+    "navigation_contribution",
+    "settings",
+    "health",
+    "files",
+    "events",
+    "observability"
+  ],
+  "properties": {
+    "schema_version": {"const": "actionist.affine.binding.v1"},
+    "binding_id": {"type": "string"},
+    "capability_id": {"type": "string"},
+    "application_id": {"type": "string"},
+    "host_contract_version": {"const": "actionist.affine.host.v0.1"},
+    "status": {"const": "BOUND"},
+    "ownership": {"type": "object"},
+    "identity_binding": {
+      "type": "object",
+      "required": ["client_id", "user_id", "workspace_id", "session"],
+      "properties": {
+        "client_id": {"type": "string", "minLength": 1},
+        "user_id": {"type": "string", "minLength": 1},
+        "workspace_id": {"type": "string", "minLength": 1},
+        "session": {
+          "type": "object",
+          "required": ["transport", "assertion_ref", "audience", "audience_bound", "single_use", "expires_at"],
+          "properties": {
+            "transport": {"const": "postMessage+header"},
+            "assertion_ref": {"type": "string", "pattern": "^secret-ref:[A-Z0-9_]+$"},
+            "audience": {"type": "string", "minLength": 1},
+            "audience_bound": {"const": true},
+            "single_use": {"const": true},
+            "expires_at": {"type": "integer"}
+          },
+          "additionalProperties": true
+        }
+      },
+      "additionalProperties": true
+    },
+    "workspace_binding": {"type": "object"},
+    "routes": {
+      "type": "object",
+      "required": ["assigned_base_path", "workspace_url", "settings_url", "internal_router", "host_owns_url_space"],
+      "properties": {
+        "assigned_base_path": {"type": "string", "pattern": "^/"},
+        "workspace_url": {"type": "string", "pattern": "^https?://"},
+        "settings_url": {"type": "string", "pattern": "^/"},
+        "internal_router": {"const": "donor"},
+        "host_owns_url_space": {"const": true}
+      },
+      "additionalProperties": true
+    },
+    "navigation_contribution": {
+      "type": "object",
+      "required": ["intent", "label", "icon", "route_ref", "visibility_predicate"],
+      "not": {"required": ["position"]}
+    },
+    "settings": {"type": "object"},
+    "health": {"type": "object"},
+    "files": {"type": "object"},
+    "events": {"type": "object"},
+    "observability": {"type": "object"}
+  },
+  "additionalProperties": true
+}

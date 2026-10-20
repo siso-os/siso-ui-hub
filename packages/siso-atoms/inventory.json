@@ -1,0 +1,1324 @@
+{
+  "package": "@siso/atoms",
+  "version": "0.4.1",
+  "implementation": "Compatibility root: independent native React/MIT Radix. Separate source entry: actual MIT Arc free source.",
+  "familyCount": 35,
+  "exports": [
+    {
+      "family": "button",
+      "exports": [
+        "Button",
+        "IconButton"
+      ],
+      "variants": [
+        "primary",
+        "secondary",
+        "outline",
+        "ghost",
+        "danger",
+        "sm",
+        "md",
+        "lg",
+        "loading"
+      ],
+      "reference": "button",
+      "source": "independent native HTML / React / MIT Radix"
+    },
+    {
+      "family": "button-group",
+      "exports": [
+        "ButtonGroup"
+      ],
+      "variants": [
+        "composable"
+      ],
+      "reference": "button-group",
+      "source": "independent native HTML / React / MIT Radix"
+    },
+    {
+      "family": "split-button",
+      "exports": [
+        "SplitButton"
+      ],
+      "variants": [
+        "disabled actions",
+        "keyboard menu"
+      ],
+      "reference": "split-button",
+      "source": "independent native HTML / React / MIT Radix"
+    },
+    {
+      "family": "copy-button",
+      "exports": [
+        "CopyButton"
+      ],
+      "variants": [
+        "idle",
+        "copied",
+        "error"
+      ],
+      "reference": "copy-button",
+      "source": "independent native HTML / React / MIT Radix"
+    },
+    {
+      "family": "confirm-morph",
+      "exports": [
+        "ConfirmButton"
+      ],
+      "variants": [
+        "confirm",
+        "cancel",
+        "pending",
+        "retry"
+      ],
+      "reference": "confirm-morph",
+      "source": "independent native HTML / React / MIT Radix"
+    },
+    {
+      "family": "action-button",
+      "exports": [
+        "ToggleButton"
+      ],
+      "variants": [
+        "pressed",
+        "unpressed"
+      ],
+      "reference": "action-button",
+      "source": "independent native HTML / React / MIT Radix"
+    },
+    {
+      "family": "input",
+      "exports": [
+        "Input",
+        "Field",
+        "Label"
+      ],
+      "variants": [
+        "native input types",
+        "invalid",
+        "hint",
+        "error"
+      ],
+      "reference": "input",
+      "source": "independent native HTML / React / MIT Radix"
+    },
+    {
+      "family": "textarea",
+      "exports": [
+        "Textarea"
+      ],
+      "variants": [
+        "resizable"
+      ],
+      "reference": "textarea",
+      "source": "independent native HTML / React / MIT Radix"
+    },
+    {
+      "family": "search-field",
+      "exports": [
+        "SearchField"
+      ],
+      "variants": [
+        "native search"
+      ],
+      "reference": "search-field",
+      "source": "independent native HTML / React / MIT Radix"
+    },
+    {
+      "family": "password-field",
+      "exports": [
+        "PasswordField"
+      ],
+      "variants": [
+        "hidden",
+        "revealed"
+      ],
+      "reference": "password-field",
+      "source": "independent native HTML / React / MIT Radix"
+    },
+    {
+      "family": "number-field",
+      "exports": [
+        "NumberField"
+      ],
+      "variants": [
+        "controlled",
+        "empty",
+        "min/max/step"
+      ],
+      "reference": "number-field",
+      "source": "independent native HTML / React / MIT Radix"
+    },
+    {
+      "family": "otp-input",
+      "exports": [
+        "OTPInput"
+      ],
+      "variants": [
+        "numeric",
+        "paste",
+        "one-time-code"
+      ],
+      "reference": "otp-input",
+      "source": "independent native HTML / React / MIT Radix"
+    },
+    {
+      "family": "password-strength",
+      "exports": [
+        "PasswordStrength"
+      ],
+      "variants": [
+        "caller supplied score 0-4"
+      ],
+      "reference": "password-strength",
+      "source": "independent native HTML / React / MIT Radix"
+    },
+    {
+      "family": "inline-edit",
+      "exports": [
+        "InlineEdit"
+      ],
+      "variants": [
+        "edit",
+        "save",
+        "cancel",
+        "enter",
+        "escape"
+      ],
+      "reference": "inline-edit",
+      "source": "independent native HTML / React / MIT Radix"
+    },
+    {
+      "family": "tag-input",
+      "exports": [
+        "TagInput"
+      ],
+      "variants": [
+        "controlled",
+        "add",
+        "remove"
+      ],
+      "reference": "tag-input",
+      "source": "independent native HTML / React / MIT Radix"
+    },
+    {
+      "family": "checkbox",
+      "exports": [
+        "Checkbox"
+      ],
+      "variants": [
+        "checked",
+        "unchecked",
+        "indeterminate"
+      ],
+      "reference": "checkbox",
+      "source": "independent native HTML / React / MIT Radix"
+    },
+    {
+      "family": "switch",
+      "exports": [
+        "Switch"
+      ],
+      "variants": [
+        "checked",
+        "unchecked",
+        "disabled"
+      ],
+      "reference": "switch",
+      "source": "independent native HTML / React / MIT Radix"
+    },
+    {
+      "family": "slider",
+      "exports": [
+        "Slider"
+      ],
+      "variants": [
+        "native range"
+      ],
+      "reference": "slider",
+      "source": "independent native HTML / React / MIT Radix"
+    },
+    {
+      "family": "select",
+      "exports": [
+        "Select"
+      ],
+      "variants": [
+        "options",
+        "children",
+        "placeholder"
+      ],
+      "reference": "select",
+      "source": "independent native HTML / React / MIT Radix"
+    },
+    {
+      "family": "multi-select",
+      "exports": [
+        "MultiSelect"
+      ],
+      "variants": [
+        "native multiple"
+      ],
+      "reference": "multi-select",
+      "source": "independent native HTML / React / MIT Radix"
+    },
+    {
+      "family": "radio-group",
+      "exports": [
+        "RadioGroup"
+      ],
+      "variants": [
+        "native keyboard",
+        "disabled options"
+      ],
+      "reference": "radio-group",
+      "source": "independent native HTML / React / MIT Radix"
+    },
+    {
+      "family": "segmented-control",
+      "exports": [
+        "SegmentedControl"
+      ],
+      "variants": [
+        "radio segments"
+      ],
+      "reference": "segmented-control",
+      "source": "independent native HTML / React / MIT Radix"
+    },
+    {
+      "family": "tabs",
+      "exports": [
+        "Tabs",
+        "TabsList",
+        "TabsTrigger",
+        "TabsContent"
+      ],
+      "variants": [
+        "horizontal",
+        "vertical",
+        "controlled",
+        "uncontrolled"
+      ],
+      "reference": "tabs",
+      "source": "independent native HTML / React / MIT Radix"
+    },
+    {
+      "family": "badge",
+      "exports": [
+        "Badge"
+      ],
+      "variants": [
+        "neutral",
+        "success",
+        "warning",
+        "danger",
+        "info"
+      ],
+      "reference": "badge",
+      "source": "independent native HTML / React / MIT Radix"
+    },
+    {
+      "family": "avatar",
+      "exports": [
+        "Avatar"
+      ],
+      "variants": [
+        "image",
+        "fallback",
+        "failed image"
+      ],
+      "reference": "avatar",
+      "source": "independent native HTML / React / MIT Radix"
+    },
+    {
+      "family": "avatar-group",
+      "exports": [
+        "AvatarGroup"
+      ],
+      "variants": [
+        "stacked"
+      ],
+      "reference": "avatar-group",
+      "source": "independent native HTML / React / MIT Radix"
+    },
+    {
+      "family": "progress",
+      "exports": [
+        "Progress"
+      ],
+      "variants": [
+        "determinate",
+        "indeterminate"
+      ],
+      "reference": "progress",
+      "source": "independent native HTML / React / MIT Radix"
+    },
+    {
+      "family": "skeleton",
+      "exports": [
+        "Skeleton"
+      ],
+      "variants": [
+        "pulse",
+        "reduced motion"
+      ],
+      "reference": "skeleton",
+      "source": "independent native HTML / React / MIT Radix"
+    },
+    {
+      "family": "card",
+      "exports": [
+        "Card",
+        "CardHeader",
+        "CardTitle",
+        "CardContent",
+        "CardFooter"
+      ],
+      "variants": [
+        "composable slots"
+      ],
+      "reference": "card",
+      "source": "independent native HTML / React / MIT Radix"
+    },
+    {
+      "family": "separator",
+      "exports": [
+        "Separator"
+      ],
+      "variants": [
+        "horizontal",
+        "vertical",
+        "decorative",
+        "semantic"
+      ],
+      "reference": "separator",
+      "source": "independent native HTML / React / MIT Radix"
+    },
+    {
+      "family": "tooltip",
+      "exports": [
+        "TooltipProvider",
+        "Tooltip",
+        "TooltipTrigger",
+        "TooltipContent"
+      ],
+      "variants": [
+        "portal",
+        "keyboard",
+        "pointer"
+      ],
+      "reference": "tooltip",
+      "source": "independent native HTML / React / MIT Radix"
+    },
+    {
+      "family": "alert",
+      "exports": [
+        "Alert"
+      ],
+      "variants": [
+        "neutral",
+        "success",
+        "warning",
+        "danger",
+        "info"
+      ],
+      "reference": "alert",
+      "source": "independent native HTML / React / MIT Radix"
+    },
+    {
+      "family": "text",
+      "exports": [
+        "Text",
+        "Heading",
+        "Code",
+        "Kbd"
+      ],
+      "variants": [
+        "muted",
+        "heading",
+        "code",
+        "keyboard"
+      ],
+      "reference": "text",
+      "source": "independent native HTML / React / MIT Radix"
+    },
+    {
+      "family": "status",
+      "exports": [
+        "Status"
+      ],
+      "variants": [
+        "neutral",
+        "success",
+        "warning",
+        "danger",
+        "info"
+      ],
+      "reference": "status",
+      "source": "independent native HTML / React / MIT Radix"
+    },
+    {
+      "family": "spinner",
+      "exports": [
+        "Spinner"
+      ],
+      "variants": [
+        "label",
+        "reduced motion"
+      ],
+      "reference": "spinner",
+      "source": "independent native HTML / React / MIT Radix"
+    }
+  ],
+  "relatedFamilyCoverage": [],
+  "omittedFamilies": [],
+  "additionalExports": [
+    "sourceAtoms",
+    "hubPrimitives"
+  ],
+  "sourceEntry": {
+    "path": "@siso/atoms/source",
+    "families": 51,
+    "provenance": "source-provenance.json",
+    "exports": [
+      {
+        "family": "action-button",
+        "exports": [
+          "ActionButtonProps",
+          "ActionButton"
+        ],
+        "variants": [
+          "original source contract and documentation examples"
+        ]
+      },
+      {
+        "family": "alert",
+        "exports": [
+          "AlertTone",
+          "AlertProps",
+          "Alert"
+        ],
+        "variants": [
+          "original source contract and documentation examples"
+        ]
+      },
+      {
+        "family": "animated-counter",
+        "exports": [
+          "AnimatedCounterProps",
+          "AnimatedCounter"
+        ],
+        "variants": [
+          "original source contract and documentation examples"
+        ]
+      },
+      {
+        "family": "avatar-group",
+        "exports": [
+          "AvatarGroupMember",
+          "AvatarGroupProps",
+          "AvatarGroup"
+        ],
+        "variants": [
+          "original source contract and documentation examples"
+        ]
+      },
+      {
+        "family": "avatar",
+        "exports": [
+          "AvatarProps",
+          "Avatar"
+        ],
+        "variants": [
+          "original source contract and documentation examples"
+        ]
+      },
+      {
+        "family": "badge",
+        "exports": [
+          "BadgeTone",
+          "BadgeSize",
+          "BadgeProps",
+          "Badge"
+        ],
+        "variants": [
+          "original source contract and documentation examples"
+        ]
+      },
+      {
+        "family": "billing-toggle",
+        "exports": [
+          "BillingToggleOption",
+          "BillingToggleProps",
+          "BillingToggle",
+          "BillingPriceProps",
+          "BillingPrice"
+        ],
+        "variants": [
+          "original source contract and documentation examples"
+        ]
+      },
+      {
+        "family": "button-group",
+        "exports": [
+          "ButtonGroupVariant",
+          "ButtonGroupSize",
+          "ButtonGroupOrientation",
+          "ButtonGroupItem",
+          "ButtonGroupMenuItem",
+          "ButtonGroupMenu",
+          "ButtonGroupProps",
+          "ButtonGroup"
+        ],
+        "variants": [
+          "original source contract and documentation examples"
+        ]
+      },
+      {
+        "family": "button",
+        "exports": [
+          "ButtonVariant",
+          "ButtonSize",
+          "ButtonProps",
+          "Button"
+        ],
+        "variants": [
+          "original source contract and documentation examples"
+        ]
+      },
+      {
+        "family": "card",
+        "exports": [
+          "CardProps",
+          "Card"
+        ],
+        "variants": [
+          "original source contract and documentation examples"
+        ]
+      },
+      {
+        "family": "checkbox",
+        "exports": [
+          "CheckboxProps",
+          "Checkbox"
+        ],
+        "variants": [
+          "original source contract and documentation examples"
+        ]
+      },
+      {
+        "family": "chip-group",
+        "exports": [
+          "ChipOption",
+          "ChipGroupProps",
+          "ChipGroup"
+        ],
+        "variants": [
+          "original source contract and documentation examples"
+        ]
+      },
+      {
+        "family": "confirm-morph",
+        "exports": [
+          "ConfirmMorphState",
+          "ConfirmMorphMode",
+          "ConfirmMorphProps",
+          "ConfirmMorph"
+        ],
+        "variants": [
+          "original source contract and documentation examples"
+        ]
+      },
+      {
+        "family": "copy-button",
+        "exports": [
+          "CopyButtonProps",
+          "CopyButton"
+        ],
+        "variants": [
+          "original source contract and documentation examples"
+        ]
+      },
+      {
+        "family": "countdown",
+        "exports": [
+          "CountdownUnit",
+          "CountdownProps",
+          "toEpoch",
+          "Countdown"
+        ],
+        "variants": [
+          "original source contract and documentation examples"
+        ]
+      },
+      {
+        "family": "expanding-button-group",
+        "exports": [
+          "ExpandingButtonGroupSize",
+          "ExpandingButtonGroupTone",
+          "ExpandingButtonGroupItem",
+          "ExpandingButtonGroupProps",
+          "ExpandingButtonGroup"
+        ],
+        "variants": [
+          "original source contract and documentation examples"
+        ]
+      },
+      {
+        "family": "expanding-search",
+        "exports": [
+          "ExpandingSearchItem",
+          "ExpandingSearchProps",
+          "ExpandingSearch"
+        ],
+        "variants": [
+          "original source contract and documentation examples"
+        ]
+      },
+      {
+        "family": "floating-button-group",
+        "exports": [
+          "FloatingButtonGroupVariant",
+          "FloatingButtonGroupSize",
+          "FloatingButtonGroupOrientation",
+          "FloatingButtonGroupAction",
+          "FloatingButtonGroupSeparator",
+          "FloatingButtonGroupItem",
+          "FloatingButtonGroupProps",
+          "FloatingButtonGroup"
+        ],
+        "variants": [
+          "original source contract and documentation examples"
+        ]
+      },
+      {
+        "family": "hold-to-confirm",
+        "exports": [
+          "HoldToConfirmProps",
+          "HoldToConfirm"
+        ],
+        "variants": [
+          "original source contract and documentation examples"
+        ]
+      },
+      {
+        "family": "in-view-title",
+        "exports": [
+          "InViewTitleVariant",
+          "InViewTitleProps",
+          "InViewTitle"
+        ],
+        "variants": [
+          "original source contract and documentation examples"
+        ]
+      },
+      {
+        "family": "inline-edit",
+        "exports": [
+          "InlineEditProps",
+          "InlineEdit"
+        ],
+        "variants": [
+          "original source contract and documentation examples"
+        ]
+      },
+      {
+        "family": "input",
+        "exports": [
+          "InputProps",
+          "Input"
+        ],
+        "variants": [
+          "original source contract and documentation examples"
+        ]
+      },
+      {
+        "family": "money-input",
+        "exports": [
+          "MoneyInputDetails",
+          "MoneyInputProps",
+          "MoneyInput"
+        ],
+        "variants": [
+          "original source contract and documentation examples"
+        ]
+      },
+      {
+        "family": "multi-select",
+        "exports": [
+          "MultiSelectOption",
+          "MultiSelectProps",
+          "MultiSelect"
+        ],
+        "variants": [
+          "original source contract and documentation examples"
+        ]
+      },
+      {
+        "family": "number-field",
+        "exports": [
+          "NumberFieldAffix",
+          "NumberFieldProps",
+          "NumberFieldSize",
+          "NumberField"
+        ],
+        "variants": [
+          "original source contract and documentation examples"
+        ]
+      },
+      {
+        "family": "otp-input",
+        "exports": [
+          "OtpInputProps",
+          "OtpInput"
+        ],
+        "variants": [
+          "original source contract and documentation examples"
+        ]
+      },
+      {
+        "family": "password-field",
+        "exports": [
+          "PasswordFieldMessages",
+          "defaultPasswordFieldMessages",
+          "PasswordFieldProps",
+          "PasswordField"
+        ],
+        "variants": [
+          "original source contract and documentation examples"
+        ]
+      },
+      {
+        "family": "password-strength",
+        "exports": [
+          "PasswordRule",
+          "PasswordStrengthResult",
+          "PasswordStrengthLevels",
+          "PasswordStrengthMessages",
+          "defaultPasswordStrengthMessages",
+          "PasswordStrengthMessagesInput",
+          "PasswordStrengthProps",
+          "countCodePoints",
+          "PasswordRuleLabels",
+          "PasswordRuleOptions",
+          "createPasswordRules",
+          "defaultPasswordRules",
+          "EstimateStrengthOptions",
+          "estimateStrength",
+          "PasswordStrength"
+        ],
+        "variants": [
+          "original source contract and documentation examples"
+        ]
+      },
+      {
+        "family": "phone-input",
+        "exports": [
+          "PhoneCountry",
+          "PHONE_COUNTRIES",
+          "flagOf",
+          "formatNational",
+          "PhoneStatus",
+          "parsePhoneNumber",
+          "formatPhoneNumber",
+          "PhoneInputDetails",
+          "PhoneInputProps",
+          "PhoneInput"
+        ],
+        "variants": [
+          "original source contract and documentation examples"
+        ]
+      },
+      {
+        "family": "progress",
+        "exports": [
+          "ProgressProps",
+          "Progress"
+        ],
+        "variants": [
+          "original source contract and documentation examples"
+        ]
+      },
+      {
+        "family": "radio-cards",
+        "exports": [
+          "RadioCardOption",
+          "RadioCardsProps",
+          "RadioCards"
+        ],
+        "variants": [
+          "original source contract and documentation examples"
+        ]
+      },
+      {
+        "family": "radio-group",
+        "exports": [
+          "RadioGroupProps",
+          "RadioGroup"
+        ],
+        "variants": [
+          "original source contract and documentation examples"
+        ]
+      },
+      {
+        "family": "search-field",
+        "exports": [
+          "SearchFieldProps",
+          "SearchField"
+        ],
+        "variants": [
+          "original source contract and documentation examples"
+        ]
+      },
+      {
+        "family": "segmented-control",
+        "exports": [
+          "Segment",
+          "SegmentedControlProps",
+          "SegmentedControl"
+        ],
+        "variants": [
+          "original source contract and documentation examples"
+        ]
+      },
+      {
+        "family": "select",
+        "exports": [
+          "SelectProps",
+          "Select"
+        ],
+        "variants": [
+          "original source contract and documentation examples"
+        ]
+      },
+      {
+        "family": "shortcut-recorder",
+        "exports": [
+          "Platform",
+          "ShortcutToken",
+          "keyId",
+          "normalizeShortcut",
+          "shortcutFromEvent",
+          "matchesShortcut",
+          "shortcutTokens",
+          "formatShortcut",
+          "usePlatform",
+          "usePressedKeys",
+          "ShortcutKbdProps",
+          "ShortcutKbd",
+          "Kbd",
+          "KbdProps",
+          "ShortcutKeysProps",
+          "ShortcutKeys",
+          "ShortcutBinding",
+          "ShortcutRecorderProps",
+          "ShortcutRecorder",
+          "ShortcutListItem",
+          "ShortcutListGroup",
+          "ShortcutListProps",
+          "ShortcutList"
+        ],
+        "variants": [
+          "original source contract and documentation examples"
+        ]
+      },
+      {
+        "family": "skeleton",
+        "exports": [
+          "SkeletonProps",
+          "Skeleton"
+        ],
+        "variants": [
+          "original source contract and documentation examples"
+        ]
+      },
+      {
+        "family": "slider",
+        "exports": [
+          "SliderValue",
+          "SliderMark",
+          "SliderProps",
+          "Slider"
+        ],
+        "variants": [
+          "original source contract and documentation examples"
+        ]
+      },
+      {
+        "family": "slot-text",
+        "exports": [
+          "SlotTextProps",
+          "SlotText"
+        ],
+        "variants": [
+          "original source contract and documentation examples"
+        ]
+      },
+      {
+        "family": "split-button",
+        "exports": [
+          "SplitButtonAction",
+          "SplitButtonProps",
+          "SplitButton"
+        ],
+        "variants": [
+          "original source contract and documentation examples"
+        ]
+      },
+      {
+        "family": "stepper",
+        "exports": [
+          "StepperOrientation",
+          "StepperStatus",
+          "StepperStep",
+          "StepperProps",
+          "Stepper"
+        ],
+        "variants": [
+          "original source contract and documentation examples"
+        ]
+      },
+      {
+        "family": "switch",
+        "exports": [
+          "SwitchProps",
+          "Switch"
+        ],
+        "variants": [
+          "original source contract and documentation examples"
+        ]
+      },
+      {
+        "family": "tabs",
+        "exports": [
+          "Tabs",
+          "TabsList",
+          "TabsTrigger",
+          "TabsContent"
+        ],
+        "variants": [
+          "original source contract and documentation examples"
+        ]
+      },
+      {
+        "family": "tag-input",
+        "exports": [
+          "TagInputProps",
+          "TagInput"
+        ],
+        "variants": [
+          "original source contract and documentation examples"
+        ]
+      },
+      {
+        "family": "text-morph",
+        "exports": [
+          "TextMorphProps",
+          "TextMorph"
+        ],
+        "variants": [
+          "original source contract and documentation examples"
+        ]
+      },
+      {
+        "family": "text-reveal",
+        "exports": [
+          "TextRevealProps",
+          "TextReveal"
+        ],
+        "variants": [
+          "original source contract and documentation examples"
+        ]
+      },
+      {
+        "family": "text-shimmer",
+        "exports": [
+          "TextShimmerProps",
+          "TextShimmer"
+        ],
+        "variants": [
+          "original source contract and documentation examples"
+        ]
+      },
+      {
+        "family": "textarea",
+        "exports": [
+          "TextareaProps",
+          "Textarea"
+        ],
+        "variants": [
+          "original source contract and documentation examples"
+        ]
+      },
+      {
+        "family": "theme-switch-eclipse",
+        "exports": [
+          "ThemeSwitchVariant",
+          "Theme",
+          "ThemeSwitchProps",
+          "ThemeSwitch"
+        ],
+        "variants": [
+          "original source contract and documentation examples"
+        ]
+      },
+      {
+        "family": "theme-switch-rise",
+        "exports": [
+          "ThemeSwitchVariant",
+          "Theme",
+          "ThemeSwitchProps",
+          "ThemeSwitch"
+        ],
+        "variants": [
+          "original source contract and documentation examples"
+        ]
+      },
+      {
+        "family": "theme-switch-split",
+        "exports": [
+          "ThemeSwitchVariant",
+          "Theme",
+          "ThemeSwitchProps",
+          "ThemeSwitch"
+        ],
+        "variants": [
+          "original source contract and documentation examples"
+        ]
+      },
+      {
+        "family": "theme-switch",
+        "exports": [
+          "ThemeSwitchVariant",
+          "Theme",
+          "ThemeSwitchProps",
+          "ThemeSwitch"
+        ],
+        "variants": [
+          "original source contract and documentation examples"
+        ]
+      },
+      {
+        "family": "tooltip",
+        "exports": [
+          "TooltipProps",
+          "Tooltip"
+        ],
+        "variants": [
+          "original source contract and documentation examples"
+        ]
+      },
+      {
+        "family": "usage-meter",
+        "exports": [
+          "UsageMeterSegment",
+          "UsageMeterProps",
+          "UsageMeter"
+        ],
+        "variants": [
+          "original source contract and documentation examples"
+        ]
+      }
+    ],
+    "familyCount": 51,
+    "installTargetCount": 54,
+    "additionalExports": [
+      "ArcAnchor",
+      "ArcImage",
+      "ArcImageComponent",
+      "ArcImageProps",
+      "ArcImg",
+      "ArcLink",
+      "ArcLinkComponent",
+      "ArcLinkProps",
+      "ArcProvider",
+      "ArcProviderProps",
+      "SourceAtomPortal",
+      "SourceAtomScope",
+      "SourceAtomScopeProps",
+      "motionTokens",
+      "useArcImage",
+      "useArcLink",
+      "useSourceAtomPortalContainer"
+    ]
+  },
+  "installTargetCount": 54,
+  "typeExports": [
+    "ButtonProps",
+    "NumberFieldProps",
+    "SelectOption",
+    "SplitAction",
+    "Tone"
+  ],
+  "hubEntry": {
+    "path": "@siso/atoms/hub",
+    "namespace": "hubPrimitives",
+    "familyCount": 16,
+    "exports": [
+      {
+        "family": "badge",
+        "exports": [
+          "Badge",
+          "badgeVariants"
+        ]
+      },
+      {
+        "family": "button",
+        "exports": [
+          "Button",
+          "buttonVariants"
+        ]
+      },
+      {
+        "family": "card",
+        "exports": [
+          "Card",
+          "CardAction",
+          "CardContent",
+          "CardDescription",
+          "CardFooter",
+          "CardHeader",
+          "CardTitle"
+        ]
+      },
+      {
+        "family": "command",
+        "exports": [
+          "Command",
+          "CommandDialog",
+          "CommandEmpty",
+          "CommandGroup",
+          "CommandInput",
+          "CommandItem",
+          "CommandList",
+          "CommandSeparator",
+          "CommandShortcut"
+        ]
+      },
+      {
+        "family": "dialog",
+        "exports": [
+          "Dialog",
+          "DialogClose",
+          "DialogContent",
+          "DialogDescription",
+          "DialogFooter",
+          "DialogHeader",
+          "DialogOverlay",
+          "DialogPortal",
+          "DialogTitle",
+          "DialogTrigger"
+        ]
+      },
+      {
+        "family": "dropdown-menu",
+        "exports": [
+          "DropdownMenu",
+          "DropdownMenuCheckboxItem",
+          "DropdownMenuContent",
+          "DropdownMenuGroup",
+          "DropdownMenuItem",
+          "DropdownMenuLabel",
+          "DropdownMenuPortal",
+          "DropdownMenuRadioGroup",
+          "DropdownMenuRadioItem",
+          "DropdownMenuSeparator",
+          "DropdownMenuShortcut",
+          "DropdownMenuSub",
+          "DropdownMenuSubContent",
+          "DropdownMenuSubTrigger",
+          "DropdownMenuTrigger"
+        ]
+      },
+      {
+        "family": "input",
+        "exports": [
+          "Input"
+        ]
+      },
+      {
+        "family": "scroll-area",
+        "exports": [
+          "ScrollArea",
+          "ScrollBar"
+        ]
+      },
+      {
+        "family": "select",
+        "exports": [
+          "Select",
+          "SelectContent",
+          "SelectGroup",
+          "SelectItem",
+          "SelectLabel",
+          "SelectScrollDownButton",
+          "SelectScrollUpButton",
+          "SelectSeparator",
+          "SelectTrigger",
+          "SelectValue"
+        ]
+      },
+      {
+        "family": "separator",
+        "exports": [
+          "Separator"
+        ]
+      },
+      {
+        "family": "sheet",
+        "exports": [
+          "Sheet",
+          "SheetClose",
+          "SheetContent",
+          "SheetDescription",
+          "SheetFooter",
+          "SheetHeader",
+          "SheetTitle",
+          "SheetTrigger"
+        ]
+      },
+      {
+        "family": "skeleton",
+        "exports": [
+          "Skeleton"
+        ]
+      },
+      {
+        "family": "tabs",
+        "exports": [
+          "Tabs",
+          "TabsContent",
+          "TabsList",
+          "tabsListVariants",
+          "TabsTrigger"
+        ]
+      },
+      {
+        "family": "toggle-group",
+        "exports": [
+          "ToggleGroup",
+          "ToggleGroupItem"
+        ]
+      },
+      {
+        "family": "toggle",
+        "exports": [
+          "Toggle",
+          "toggleVariants"
+        ]
+      },
+      {
+        "family": "tooltip",
+        "exports": [
+          "Tooltip",
+          "TooltipContent",
+          "TooltipProvider",
+          "TooltipTrigger"
+        ]
+      }
+    ],
+    "additionalExports": [
+      "cn"
+    ]
+  }
+}

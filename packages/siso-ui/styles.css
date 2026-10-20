@@ -1,0 +1,11 @@
+/* Complete suite styles; import once for the umbrella package. */
+@import "@siso/tokens/styles.css";
+@import "@siso/atoms/styles.css";
+@import "@siso/blocks/styles.css";
+@import "@siso/navigation/styles.css";
+@import "@siso/shells/styles.css";
+@import "@siso/widgets/styles.css";
+@import "@siso/charts/styles.css";
+
+@import "@siso/site/styles.css";
+@import "@siso/agent/styles.css";

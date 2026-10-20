@@ -1,0 +1,149 @@
+{
+  "components": [
+    {
+      "export": "SisoTreemap",
+      "file": "treemap.tsx",
+      "variations": [
+        "proportional flat tiles",
+        "custom colors",
+        "formatted values"
+      ],
+      "provenance": "independent-siso",
+      "license": "MIT"
+    },
+    {
+      "export": "SisoCohortHeatmap",
+      "file": "cohort.tsx",
+      "variations": [
+        "cohort-relative normalization",
+        "unobserved periods",
+        "custom intensity color"
+      ],
+      "provenance": "independent-siso",
+      "license": "MIT"
+    },
+    {
+      "export": "SisoBulletChart",
+      "file": "bullet.tsx",
+      "variations": [
+        "range bands",
+        "actual values",
+        "target markers",
+        "explicit row domains"
+      ],
+      "provenance": "independent-siso",
+      "license": "MIT"
+    },
+    {
+      "export": "SisoWaffleChart",
+      "file": "waffle.tsx",
+      "variations": [
+        "category allocation",
+        "custom grid dimensions",
+        "largest remainder rounding"
+      ],
+      "provenance": "independent-siso",
+      "license": "MIT"
+    },
+    {
+      "export": "SisoSlopeChart",
+      "file": "slope.tsx",
+      "variations": [
+        "two-period comparison",
+        "signed domains",
+        "custom period labels"
+      ],
+      "provenance": "independent-siso",
+      "license": "MIT"
+    },
+    {
+      "export": "SisoCompactBars",
+      "file": "owned-basics.tsx",
+      "variations": [
+        "signed bars",
+        "optional average"
+      ],
+      "provenance": "independent-siso",
+      "license": "MIT"
+    },
+    {
+      "export": "SisoMultiLine",
+      "file": "owned-basics.tsx",
+      "variations": [
+        "multiple series",
+        "missing-value gaps",
+        "area",
+        "dashed"
+      ],
+      "provenance": "independent-siso",
+      "license": "MIT"
+    },
+    {
+      "export": "SisoDonutChart",
+      "file": "owned-basics.tsx",
+      "variations": [
+        "custom thickness",
+        "controlled hidden keys"
+      ],
+      "provenance": "independent-siso",
+      "license": "MIT"
+    },
+    {
+      "export": "SisoSparkline",
+      "file": "owned-basics.tsx",
+      "variations": [
+        "compact series",
+        "optional area",
+        "missing-value gaps"
+      ],
+      "provenance": "independent-siso",
+      "license": "MIT"
+    },
+    {
+      "export": "SisoGauge",
+      "file": "owned-basics.tsx",
+      "variations": [
+        "bounded semicircle",
+        "actual numeric value"
+      ],
+      "provenance": "independent-siso",
+      "license": "MIT"
+    },
+    {
+      "export": "SisoContributionHeatmap",
+      "file": "owned-basics.tsx",
+      "variations": [
+        "UTC week alignment",
+        "explicit missing dates",
+        "intensity levels"
+      ],
+      "provenance": "independent-siso",
+      "license": "MIT"
+    },
+    {
+      "export": "SisoGoalRing",
+      "file": "owned-basics.tsx",
+      "variations": [
+        "value/goal",
+        "clamped visual progress"
+      ],
+      "provenance": "independent-siso",
+      "license": "MIT"
+    },
+    {
+      "export": "SisoRadialSlices",
+      "file": "owned-basics.tsx",
+      "variations": [
+        "generic key mapping",
+        "pie",
+        "donut"
+      ],
+      "provenance": "independent-siso",
+      "license": "MIT"
+    }
+  ],
+  "runtimeDependencies": [
+    "react"
+  ],
+  "sourceCopied": false
+}

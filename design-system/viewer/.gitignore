@@ -1,0 +1,7 @@
+node_modules
+.next
+out
+.env*.local
+# Generated lazy-import map (F1 monolithic version — no longer emitted)
+/lib/preview-imports.generated.ts
+*.tsbuildinfo

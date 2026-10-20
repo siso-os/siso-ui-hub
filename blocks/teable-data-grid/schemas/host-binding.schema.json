@@ -1,0 +1,111 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://actionist.local/teable-data-grid/host-binding.schema.json",
+  "title": "Actionist Teable host binding",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "applicationId", "environment", "hostOrigin", "proxyBasePath", "identity", "tenant", "base", "migrationAuthority", "navigation", "settings", "attachments", "events", "observability"],
+  "properties": {
+    "schemaVersion": { "const": "1.0.0" },
+    "applicationId": { "type": "string", "pattern": "^[a-z][a-z0-9-]+$" },
+    "environment": { "enum": ["synthetic", "development", "staging", "production"] },
+    "hostOrigin": { "type": "string", "format": "uri" },
+    "proxyBasePath": { "type": "string", "pattern": "^/" },
+    "identity": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["source", "verified", "subjectRef", "audience", "assertionRef", "singleUse"],
+      "properties": {
+        "source": { "const": "host_verified_context" },
+        "verified": { "const": true },
+        "subjectRef": { "type": "string", "minLength": 1 },
+        "audience": { "const": "actionist-module:teable-data-grid" },
+        "assertionRef": { "type": "string", "minLength": 1 },
+        "singleUse": { "const": true }
+      }
+    },
+    "tenant": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["tenantId", "source", "verified", "baseId"],
+      "properties": {
+        "tenantId": { "type": "string", "pattern": "^[a-z][a-z0-9-]+$" },
+        "source": { "const": "verified_host_claim" },
+        "verified": { "const": true },
+        "baseId": { "type": "string", "pattern": "^[a-z][a-z0-9-]+$" }
+      }
+    },
+    "base": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["selectionMode", "baseId", "allowedByHost"],
+      "properties": {
+        "selectionMode": { "const": "host_bound" },
+        "baseId": { "type": "string", "pattern": "^[a-z][a-z0-9-]+$" },
+        "allowedByHost": { "const": true }
+      }
+    },
+    "migrationAuthority": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["teableMetadata", "teableBaseData", "hostOwned", "sharedResources"],
+      "properties": {
+        "teableMetadata": { "const": "teable-prisma" },
+        "teableBaseData": { "const": "teable-data-plane-migrator" },
+        "hostOwned": { "const": "actionist-host" },
+        "sharedResources": { "const": "none" }
+      }
+    },
+    "navigation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["contributionModel", "hostOwnsUrl", "label", "visibility"],
+      "properties": {
+        "contributionModel": { "const": "deploy_time_manifest" },
+        "hostOwnsUrl": { "const": true },
+        "label": { "const": "Data grid" },
+        "visibility": { "const": "tenant_entitlement_and_role" }
+      }
+    },
+    "settings": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["policy", "hostEntryPath"],
+      "properties": {
+        "policy": { "const": "donor_rendered_behind_host_nav" },
+        "hostEntryPath": { "type": "string", "pattern": "^/" }
+      }
+    },
+    "attachments": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["namespace", "hostAuthorizationRequired", "proofStatus"],
+      "properties": {
+        "namespace": { "type": "string", "minLength": 1 },
+        "hostAuthorizationRequired": { "const": true },
+        "proofStatus": { "const": "blocked" }
+      }
+    },
+    "events": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["envelope", "emits", "consumes"],
+      "properties": {
+        "envelope": { "const": "actionist.capability-event.v1" },
+        "emits": { "type": "array", "items": { "type": "string" }, "uniqueItems": true },
+        "consumes": { "type": "array", "items": { "type": "string" }, "uniqueItems": true }
+      }
+    },
+    "observability": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["capabilityId", "releaseCorrelation", "tracePropagation", "owner"],
+      "properties": {
+        "capabilityId": { "const": "actionist/teable-data-grid" },
+        "releaseCorrelation": { "const": true },
+        "tracePropagation": { "const": true },
+        "owner": { "type": "string", "minLength": 1 }
+      }
+    }
+  }
+}

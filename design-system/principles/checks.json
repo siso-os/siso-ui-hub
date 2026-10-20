@@ -1,0 +1,238 @@
+{
+ "version": 1,
+ "built": "2026-10-12",
+ "about": "Rules a script can test on a rendered page, for the UI hub page checker (bin/pagecheck.js). kind: dom = query the DOM; axe = run axe-core; perf = PerformanceObserver; viewport = load at fixed sizes. Selectors in quotes are suggestions; use the hub's own class or data-node conventions where they exist.",
+ "checks": [
+  {
+   "id": "P0005",
+   "strength": "must",
+   "title": "Every screen says where you are and how to leave",
+   "nodes": [
+    "section/page-header",
+    "atom/text",
+    "component/breadcrumb"
+   ],
+   "kind": "dom",
+   "test": "document.title is unique across routes and contains the H1 text; exactly one nav link has aria-current=\"page\".",
+   "rule": "principles/P0005-say-where-you-are.md"
+  },
+  {
+   "id": "P0014",
+   "strength": "must",
+   "title": "One primary action per view",
+   "nodes": [
+    "atom/button",
+    "component/dialog",
+    "component/form",
+    "section/hero",
+    "section/cta"
+   ],
+   "kind": "dom",
+   "test": "Within each view root and each [role=dialog], at most one button styled primary ([data-variant=\"primary\"] or the hub primary class).",
+   "rule": "principles/P0014-one-primary-action-per-view.md"
+  },
+  {
+   "id": "P0021",
+   "strength": "must",
+   "title": "Text and controls meet contrast minimums",
+   "nodes": [
+    "atom/text",
+    "atom/icon",
+    "atom/button",
+    "atom/text-input",
+    "component/chart",
+    "section/hero"
+   ],
+   "kind": "axe",
+   "test": "axe rule color-contrast: 0 violations, in light and dark theme.",
+   "rule": "principles/P0021-contrast-minimums.md"
+  },
+  {
+   "id": "P0026",
+   "strength": "must",
+   "title": "Targets are big enough to hit",
+   "nodes": [
+    "atom/button",
+    "atom/icon",
+    "atom/link",
+    "atom/choice",
+    "component/tabs"
+   ],
+   "kind": "axe",
+   "test": "axe rule target-size (24x24 CSS px) passes; at a 390 px viewport, buttons and links are at least 44x44.",
+   "rule": "principles/P0026-targets-big-enough.md"
+  },
+  {
+   "id": "P0027",
+   "strength": "must",
+   "title": "Icons carry a text label",
+   "nodes": [
+    "atom/icon",
+    "atom/button",
+    "component/tabs",
+    "component/menu"
+   ],
+   "kind": "dom",
+   "test": "Every button or link whose text content is empty has an aria-label or aria-labelledby.",
+   "rule": "principles/P0027-icons-carry-labels.md"
+  },
+  {
+   "id": "P0032",
+   "strength": "must",
+   "title": "Labels sit above fields and never vanish",
+   "nodes": [
+    "atom/text-input",
+    "component/select",
+    "component/field",
+    "component/form"
+   ],
+   "kind": "dom",
+   "test": "Every input, select and textarea has a label (for/id, wrapping label or aria-labelledby); a placeholder alone fails.",
+   "rule": "principles/P0032-labels-above-fields.md"
+  },
+  {
+   "id": "P0020",
+   "strength": "should",
+   "title": "Left-align text; right-align numbers in tabular figures",
+   "nodes": [
+    "component/table",
+    "component/stat",
+    "component/list"
+   ],
+   "kind": "dom",
+   "test": "In each table, columns whose cells parse as numbers compute text-align: right and font-variant-numeric containing tabular-nums.",
+   "rule": "principles/P0020-align-text-left-numbers-right.md"
+  },
+  {
+   "id": "P0046",
+   "strength": "must",
+   "title": "Write for scanning: say it once, most important words first",
+   "nodes": [
+    "atom/text",
+    "component/card",
+    "component/toast",
+    "component/empty"
+   ],
+   "kind": "dom",
+   "test": "No h1-h4, label or button text runs past 8 words; no visible string longer than 3 words appears twice in one view.",
+   "rule": "principles/P0046-write-for-scanning.md"
+  },
+  {
+   "id": "P0055",
+   "strength": "must",
+   "title": "Tables: numbers right, headers fixed, rows that respond",
+   "nodes": [
+    "component/table",
+    "component/list"
+   ],
+   "kind": "dom",
+   "test": "Data tables use table, thead and th[scope]; the thead is position: sticky inside a scrolling table.",
+   "rule": "principles/P0055-tables-built-for-scanning.md"
+  },
+  {
+   "id": "P0059",
+   "strength": "must",
+   "title": "Every chart has a text title and a text alternative",
+   "nodes": [
+    "component/chart",
+    "page/dashboard"
+   ],
+   "kind": "dom",
+   "test": "Each chart (svg[role=img], canvas, or [data-chart]) has a visible title and an aria-label, aria-describedby or adjacent table.",
+   "rule": "principles/P0059-chart-title-states-finding.md"
+  },
+  {
+   "id": "P0070",
+   "strength": "must",
+   "title": "Speed is a feature: meet Core Web Vitals and reserve space",
+   "nodes": [
+    "page/dashboard",
+    "section/shell",
+    "atom/image",
+    "page/home",
+    "section/hero"
+   ],
+   "kind": "perf",
+   "test": "PerformanceObserver layout-shift total under 0.05 over load plus 5 s (hub-0010); every img has width and height or aspect-ratio.",
+   "rule": "principles/P0070-speed-is-a-feature.md"
+  },
+  {
+   "id": "P0074",
+   "strength": "must",
+   "title": "Meet WCAG 2.2 AA, with semantic HTML first",
+   "nodes": [
+    "page/dashboard",
+    "component/table",
+    "component/form",
+    "section/nav",
+    "component/dialog",
+    "page/home"
+   ],
+   "kind": "axe",
+   "test": "axe-core: 0 serious or critical; exactly one main landmark and one h1.",
+   "rule": "principles/P0074-wcag-aa-semantic-html.md"
+  },
+  {
+   "id": "P0076",
+   "strength": "must",
+   "title": "The hero says the outcome, and its one action is above the fold",
+   "nodes": [
+    "section/hero",
+    "section/cta",
+    "atom/button",
+    "page/home"
+   ],
+   "kind": "viewport",
+   "test": "At 1280x800 and 390x844, on landing routes, the h1 and the first primary button are fully inside the first viewport.",
+   "rule": "principles/P0076-hero-says-the-outcome-cta-above-fold.md"
+  },
+  {
+   "id": "P0083",
+   "strength": "must",
+   "title": "The footer is the site map and the contact desk",
+   "nodes": [
+    "section/footer"
+   ],
+   "kind": "dom",
+   "test": "On site routes, exactly one footer or [role=contentinfo]; it contains a mailto:, tel: or contact link.",
+   "rule": "principles/P0083-footer-is-the-site-map.md"
+  },
+  {
+   "id": "P0084",
+   "strength": "must",
+   "title": "At most one announcement, and it never looks like an ad",
+   "nodes": [
+    "section/announcement"
+   ],
+   "kind": "dom",
+   "test": "At most one [data-node=\"section/announcement\"] (or role=region named announcement) per page; none on checkout or signup routes.",
+   "rule": "principles/P0084-one-announcement-never-like-an-ad.md"
+  },
+  {
+   "id": "P0089",
+   "strength": "should",
+   "title": "Badges only for what changes a decision",
+   "nodes": [
+    "atom/badge",
+    "atom/status-dot",
+    "component/list"
+   ],
+   "kind": "dom",
+   "test": "No list item or card holds more than 2 badges ([data-node=\"atom/badge\"] or the hub badge class); each badge has text content.",
+   "rule": "principles/P0089-badges-only-for-what-changes-a-decision.md"
+  },
+  {
+   "id": "P0090",
+   "strength": "must",
+   "title": "Tooltips add detail; they never hold what you need",
+   "nodes": [
+    "atom/tooltip",
+    "component/field",
+    "component/chart"
+   ],
+   "kind": "dom",
+   "test": "Every element with a tooltip (aria-describedby to [role=tooltip], or the hub tooltip trigger) is focusable (tabindex >= 0 or native control).",
+   "rule": "principles/P0090-tooltips-are-extra-never-vital.md"
+  }
+ ]
+}

@@ -1,0 +1,124 @@
+{
+  "record_type": "HostContract",
+  "record_version": "1.0.0",
+  "record_id": "host-contract.actionist-teable.v0.1.0",
+  "block_id": "actionist/teable-data-grid",
+  "version": "0.1.0",
+  "capability_id": "actionist/teable-data-grid",
+  "links": {
+    "manifest": "../actionist-block.json",
+    "capability": "capability.json",
+    "packaging": "packaging.json",
+    "binding_plan": "binding-plan.json",
+    "qualification": "qualification.json",
+    "registry": "registry.json",
+    "release": "release.json"
+  },
+  "status": "required_for_binding",
+  "host_contract_version": "actionist.host/v0.1.0",
+  "identity": {
+    "identity_source": "host_verified_context",
+    "assertion_algorithm": "host-selected-signed-assertion",
+    "token_model": "two_token",
+    "long_lived_credential_location": "host_backend_only",
+    "short_lived_assertion": {
+      "audience": "actionist-module:teable-data-grid",
+      "lifetime_seconds_max": 120,
+      "single_use": true,
+      "replay_key": "jti",
+      "transport": "server-side_exchange_or_http_only_cookie",
+      "query_parameter_identity": "forbidden"
+    },
+    "client_supplied_identity_headers": "untrusted_input",
+    "donor_login_route": "must_be_unreachable_through_host_binding"
+  },
+  "tenancy": {
+    "tenant_source": "verified_host_claim",
+    "tenant_key": "tenant_id",
+    "required": true,
+    "base_selection": "host_bound_allowlist",
+    "proxy_rule": "The host proxy may narrow donor access to the verified tenant/base; it may never widen it.",
+    "header_trust": "Only the host proxy may set the internal tenant context; donor-facing headers from a browser are never trusted.",
+    "isolation_evidence_required": "two_client_negative_isolation plus independent role/schema/restore boundary"
+  },
+  "settings": {
+    "combination_rule": "OVERRIDE_PARENT",
+    "scopes": [
+      "global",
+      "tenant",
+      "application",
+      "capability",
+      "user"
+    ],
+    "donor_settings_policy": "donor_rendered_behind_host_nav",
+    "fallback": "If the donor settings route is unavailable, host shows a bounded capability-settings entry with health and support guidance; it does not reimplement donor settings in v0.1."
+  },
+  "navigation": {
+    "contribution_model": "deploy_time_manifest",
+    "host_owns_url_space": true,
+    "host_mount_template": "/workspaces/{workspaceSlug}/data-grid",
+    "donor_internal_router": "owns_internal_routes behind the proxy mount",
+    "visibility_predicate": "role_and_tenant_entitlement",
+    "cascading_emptiness": true,
+    "contextual_use": "Prefer a workflow-context entry such as a deal or case grid; a global top-level Tables silo is not required by this block."
+  },
+  "data": {
+    "topology": "one_server_separate_schemas",
+    "donor_metadata_schema": "public_at_pinned_v2_source",
+    "donor_base_schema": "runtime_generated_per_base",
+    "host_schema": "host_owned_non_public_schema",
+    "cross_owner_reads": "event_fed_read_model",
+    "cross_owner_writes": "forbidden",
+    "create_database_permission": true,
+    "one_owner_per_table_and_migration": true
+  },
+  "files": {
+    "attachment_store": "donor_storage_adapter",
+    "namespace_template": "tenant/{tenantId}/base/{baseId}",
+    "host_authorization_before_signed_url": true,
+    "signed_url_is_not_host_authorization": true,
+    "proof_status": "blocked_in_historical_receipt"
+  },
+  "events": {
+    "envelope": "actionist.capability-event.v1",
+    "required_fields": [
+      "event_id",
+      "capability_id",
+      "tenant_id",
+      "subject",
+      "occurred_at",
+      "trace_id",
+      "payload"
+    ],
+    "attribution": "stable capability identifier on every donor-originated event"
+  },
+  "observability": {
+    "capability_identifier": "actionist/teable-data-grid",
+    "per_capability_release_correlation": true,
+    "trace_propagation": true,
+    "ownership_metadata": "actionist-block-teable",
+    "health": [
+      "donor /health",
+      "database write-read",
+      "redis/realtime",
+      "host proxy",
+      "attachment authorization"
+    ]
+  },
+  "runtime": {
+    "profile": "sidecar_service",
+    "dev_ports": {
+      "http": 3042,
+      "websocket": 3043
+    },
+    "production_port_rule": "one main port with realtime collapsed only in production; do not set SOCKET_PORT=PORT in development",
+    "dependencies": [
+      "PostgreSQL",
+      "Redis",
+      "SMTP when donor mail jobs are enabled",
+      "outbound HTTPS for URL imports",
+      "attachment storage",
+      "sharp for thumbnails"
+    ]
+  }
+}

@@ -1,0 +1,97 @@
+{
+  "record_type": "PackagingProfile",
+  "record_version": "1.0.0",
+  "record_id": "packaging.teable-data-grid.intact-service.v0.1.0",
+  "block_id": "actionist/teable-data-grid",
+  "version": "0.1.0",
+  "capability_id": "actionist/teable-data-grid",
+  "links": {
+    "manifest": "../actionist-block.json",
+    "capability": "capability.json",
+    "host_requirements": "host-requirements.json",
+    "binding_plan": "binding-plan.json",
+    "qualification": "qualification.json",
+    "registry": "registry.json",
+    "release": "release.json"
+  },
+  "status": "selected_for_prototype",
+  "reuse_shape": "intact_service",
+  "runtime_profile": "sidecar_service",
+  "rights_exposure": "none_network_only",
+  "source_identity": {
+    "purl": "pkg:github/sisodias/teable@b245a987f8bfb7411d4e2423907b9cbb0a1c9b6b",
+    "repository": "https://github.com/sisodias/teable.git",
+    "immutable_revision": "b245a987f8bfb7411d4e2423907b9cbb0a1c9b6b",
+    "upstream_repository": "https://github.com/teableio/teable.git",
+    "upstream_revision": "06a4461e2bc53055182d4df0a72dffa26fd99210",
+    "source_digest": "sha256:e41fe62b54c1d0c077a9c5a036f1b4e04016dcd0203396f943411e89e6e09fc6",
+    "source_digest_basis": "git archive tar stream at immutable revision",
+    "identity_status": "pinned",
+    "working_tree_note": "The existing donor checkout is dirty, but this package addresses the immutable commit archive and does not copy or rely on uncommitted files."
+  },
+  "rights_state": "declared",
+  "rights_boundary": {
+    "applications": "AGPL-3.0 with Teable Section 7 brand-protection terms",
+    "packages": "Retain each package's own notices; no package source is copied here",
+    "branding": "Teable name, logo, icons and visual identity remain unchanged",
+    "network_source_obligation": "Any network-served modified donor build needs a corresponding-source decision and applicable notices"
+  },
+  "dependency_closure_state": "unresolved",
+  "dependency_closure_note": "The pinned donor build was observed healthy, but this block has not independently captured a transitive dependency closure receipt; do not infer closure from the build receipt.",
+  "normalization_applied": [
+    "NS-IDENT-01",
+    "NS-TENANT-02",
+    "NS-SETTINGS-02",
+    "NS-NAV-01",
+    "NS-NAV-02",
+    "NS-DATA-01",
+    "NS-EVENT-01",
+    "NS-RUNTIME-01",
+    "NS-RUNTIME-02",
+    "NS-UPGRADE-01",
+    "NS-ROLLBACK-01",
+    "NS-ROLLBACK-02"
+  ],
+  "normalization_not_applied": [
+    "NS-TOKEN-01: not applicable to a cross-origin/intact service; a proxy cannot inherit donor CSS variables",
+    "NS-TENANT-01: not applicable to the donor service shape; the host proxy must enforce the verified tenant boundary",
+    "NS-MIGRATE-01: not applicable to source absorption; donor migration state remains donor-owned"
+  ],
+  "upstream_sync_model": "downstream_service",
+  "donor_migration_ownership": {
+    "metadata": {
+      "owner": "teable-prisma",
+      "resource": "Teable metadata tables",
+      "schema": "public at the pinned V2 source",
+      "migrationSystem": "Teable db-main-prisma"
+    },
+    "baseData": {
+      "owner": "teable-data-plane-migrator",
+      "resource": "per-base Teable schemas",
+      "schema": "runtime-generated bse* schema",
+      "migrationSystem": "__teable_data_schema_migrations with donor advisory lock"
+    },
+    "hostOwned": {
+      "owner": "actionist-host",
+      "resource": "host application tables",
+      "schema": "host-configured non-public schema",
+      "migrationSystem": "host migration system"
+    },
+    "invariant": "No two owners may migrate or mutate the same resource through separate histories."
+  },
+  "one_server_separate_schema_compatibility": {
+    "declaration": "compatible_with_one_postgresql_server_and_separate_ownership_boundaries",
+    "server": "one PostgreSQL server/database may host donor metadata, donor-generated base schemas and host-owned schemas",
+    "schema_separation": "Teable metadata stays in public at this pinned source because V2 raw SQL hard-codes public; host-owned data stays in a separate non-public schema; each Teable base owns its generated schema",
+    "required_privilege": "The donor role needs CONNECT and CREATE on the database plus ownership/DDL rights for donor-created schemas; do not grant the host migration role donor ownership",
+    "cross_owner_reads": "event_fed_read_model",
+    "cross_owner_writes": "forbidden",
+    "compatibility_status": "declared_for_prototype; privilege and independent restore proof remain open"
+  },
+  "source_handling": {
+    "vendored": false,
+    "copied_source_files": 0,
+    "fresh_clone": false,
+    "runtimeReference": "Existing SISOCRM Teable runtime/source precedent; host supplies the actual sidecar URL"
+  }
+}

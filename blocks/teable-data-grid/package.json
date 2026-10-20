@@ -1,0 +1,12 @@
+{
+  "name": "@siso/block-teable-data-grid",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Dependency-free Actionist Teable intact-service block contract and binding tooling",
+  "scripts": {
+    "validate": "node tools/teable-block.mjs validate",
+    "smoke": "node tools/teable-block.mjs smoke",
+    "test": "node tests/smoke.mjs"
+  }
+}

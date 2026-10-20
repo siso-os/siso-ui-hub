@@ -1,0 +1,60 @@
+{
+  "record_type": "PackagingProfile",
+  "record_version": "1.0.0",
+  "record_id": "actionist/affine-workspace@0.2.0#PackagingProfile",
+  "block_id": "actionist/affine-workspace",
+  "version": "0.2.0",
+  "capability_id": "actionist/affine-workspace",
+  "links": {
+    "manifest": "../actionist-block.json",
+    "capability": "01-capability.json",
+    "host_requirements": "03-host-requirements.json",
+    "binding_plan": "04-binding-plan.json",
+    "qualification": "05-qualification.json",
+    "registry": "06-registry.json",
+    "release": "07-release.json"
+  },
+  "owner_domain": "D07",
+  "mutability_rule": "A reuse-shape change restarts qualification; donor pin changes append a new qualification dossier.",
+  "reuse_shape": "assimilated_package",
+  "rights_exposure": "mixed",
+  "source_identity": {
+    "purl": "pkg:github/sisodias/siso-docs",
+    "immutable_revision": "837a5c285caf2078e340a6220de38bdd8ab1da9a",
+    "build_checkout_revision": "d1dca9fcfaf4395900aa0f37fc3cdd4435bf8ee9",
+    "build_checkout_layout": "frontend/ subproject",
+    "backend_purl": "pkg:github/sisodias/sisonotes-backend",
+    "backend_revision": "4b5d79282be91fd529dcff84b066f00b3784496a",
+    "identity_status": "PINNED",
+    "identity_note": "The adaptation base and donor-native backend pins are retained; this receipt was rebuilt from the later immutable package checkout d1dca9f after the repository layout moved under frontend/."
+  },
+  "rights_state": "declared",
+  "dependency_closure_state": "not_applicable",
+  "normalization_applied": [
+    "NS-IDENT-01",
+    "NS-SETTINGS-02",
+    "NS-NAV-01",
+    "NS-NAV-02",
+    "NS-EVENT-01",
+    "NS-ROLLBACK-02"
+  ],
+  "upstream_sync_model": "pinned-rebuild",
+  "mount_profile": "host_mounted_assimilated",
+  "mount_topology": "same_document",
+  "binding_class": "B4",
+  "coherence_ceiling": "bounded",
+  "ownership": {
+    "source": "owned-donor-forks",
+    "runtime": "donor-native-sidecar",
+    "host_adapter": "actionist",
+    "host_data_and_migrations": "donor owns knowledge schema migrations; host owns binding"
+  },
+  "source_boundary": {
+    "repository_copied": false,
+    "runtime_image_embedded": false,
+    "network_coordinate_only": false,
+    "official_artifact_reference": false,
+    "donor_tree_vendored": false,
+    "rebuild_recipe": "build/BLOCK-BUILD.md"
+  }
+}

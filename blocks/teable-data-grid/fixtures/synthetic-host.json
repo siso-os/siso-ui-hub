@@ -1,0 +1,58 @@
+{
+  "schemaVersion": "1.0.0",
+  "applicationId": "synthetic-grid-host",
+  "environment": "synthetic",
+  "hostOrigin": "http://127.0.0.1:4100",
+  "proxyBasePath": "/workspaces/demo/data-grid",
+  "identity": {
+    "source": "host_verified_context",
+    "verified": true,
+    "subjectRef": "fixture://identity/user-a",
+    "audience": "actionist-module:teable-data-grid",
+    "assertionRef": "fixture://identity/single-use-assertion",
+    "singleUse": true
+  },
+  "tenant": {
+    "tenantId": "tenant-a",
+    "source": "verified_host_claim",
+    "verified": true,
+    "baseId": "base-a"
+  },
+  "base": {
+    "selectionMode": "host_bound",
+    "baseId": "base-a",
+    "allowedByHost": true
+  },
+  "migrationAuthority": {
+    "teableMetadata": "teable-prisma",
+    "teableBaseData": "teable-data-plane-migrator",
+    "hostOwned": "actionist-host",
+    "sharedResources": "none"
+  },
+  "navigation": {
+    "contributionModel": "deploy_time_manifest",
+    "hostOwnsUrl": true,
+    "label": "Data grid",
+    "visibility": "tenant_entitlement_and_role"
+  },
+  "settings": {
+    "policy": "donor_rendered_behind_host_nav",
+    "hostEntryPath": "/settings/data-grid"
+  },
+  "attachments": {
+    "namespace": "tenant-a/base-a",
+    "hostAuthorizationRequired": true,
+    "proofStatus": "blocked"
+  },
+  "events": {
+    "envelope": "actionist.capability-event.v1",
+    "emits": ["teable.record.created.v1", "teable.record.updated.v1", "teable.record.deleted.v1"],
+    "consumes": ["actionist.tenant.disabled.v1"]
+  },
+  "observability": {
+    "capabilityId": "actionist/teable-data-grid",
+    "releaseCorrelation": true,
+    "tracePropagation": true,
+    "owner": "actionist-block-teable"
+  }
+}

@@ -1,0 +1,267 @@
+#!/usr/bin/env python3
+"""Find each part's own preview page on its library's site, so the UI Hub shows theirs and we host none.
+
+Shaan, 10 Oct: "leverage these guys for the preview urls and just take the code and own the code".
+
+For every registry with an index (r/<registry>/_index.json): read its site's sitemaps, match each part's name to a page
+whose last path segment is that name (a site with no sitemap is crawled from its home page), and learn the site's
+pattern (its most common page shape, the name as {name}). A part the site doesn't list gets the pattern only when most
+matches follow it and six probed pages under it load. One page per site is checked for whether it may be shown in a
+frame (X-Frame-Options, CSP frame-ancestors).
+
+  bin/previews                 # every registry: previews.jsonl (one row per site), previews/<registry>.json (part -> url)
+  bin/previews --only spaceui
+
+A site whose pages are not named like its parts (animate-ui's components-animate-code-tabs is /docs/components/animate/
+code-tabs) takes a reader's rule from page-rules.json: {"<registry>": [{"match": "<regex on the part's name>", "url":
+"<the page, with \\1 for its groups>"}]}, the first match winning. Each page a rule makes is loaded and kept only if it
+answers, on a site that answers a made-up name with an error; on a site that answers everything, the reader's checks
+stand.
+"""
+import argparse, collections, concurrent.futures as cf, gzip, json, os, re, sys, urllib.error, urllib.parse, urllib.request
+
+ROOT = os.path.dirname(os.path.dirname(os.path.realpath(__file__)))
+R = os.path.join(ROOT, "r")
+OUT = os.path.join(ROOT, "previews")
+UA = "Mozilla/5.0 (compatible; siso-ui-code previews)"
+# pages that are about a part rather than a listing, best first
+GOOD = ("components", "component", "docs", "blocks", "block", "ui", "preview", "view", "elements", "templates", "icons")
+
+
+def get(url, timeout=20):
+    try:
+        with urllib.request.urlopen(urllib.request.Request(url, headers={"User-Agent": UA}), timeout=timeout) as r:
+            body = r.read(30_000_000)
+            if body[:2] == b"\x1f\x8b":
+                body = gzip.decompress(body)
+            return r.status, body, dict(r.headers)
+    except urllib.error.HTTPError as e:
+        return e.code, b"", dict(e.headers or {})
+    except Exception:
+        return 0, b"", {}
+
+
+def sitemap_urls(home, cap=60):
+    """every page URL in a site's sitemaps (robots.txt's, else /sitemap.xml), following sitemap indexes"""
+    base = home.rstrip("/")
+    st, body, _ = get(base + "/robots.txt")
+    maps = re.findall(rb"(?im)^\s*sitemap:\s*(\S+)", body) if st == 200 else []
+    todo = [m.decode() for m in maps] or [base + "/sitemap.xml", base + "/sitemap-index.xml", base + "/sitemap_index.xml"]
+    seen, pages = set(), []
+    while todo and len(seen) < cap:
+        u = todo.pop(0)
+        if u in seen:
+            continue
+        seen.add(u)
+        st, body, _ = get(u)
+        if st != 200:
+            continue
+        locs = [x.decode().strip() for x in re.findall(rb"<loc>\s*(.*?)\s*</loc>", body)]
+        if b"<sitemapindex" in body:
+            todo += locs
+        else:
+            pages += locs
+    return pages
+
+
+def frameable(url):
+    st, _, h = get(url)
+    if st != 200:
+        return None
+    h = {k.lower(): v for k, v in h.items()}
+    xfo = (h.get("x-frame-options") or "").lower()
+    csp = (h.get("content-security-policy") or "").lower()
+    fa = re.search(r"frame-ancestors([^;]*)", csp)
+    if xfo in ("deny", "sameorigin") or (fa and "*" not in fa.group(1)):
+        return False
+    return True
+
+
+def crawl(home, cap=40):
+    """a site with no sitemap: its own links, breadth first from the home page, same host, part-ish paths first"""
+    host = urllib.parse.urlparse(home).netloc
+    todo, seen, pages = [home], set(), []
+    while todo and len(seen) < cap:
+        u = todo.pop(0)
+        if u in seen:
+            continue
+        seen.add(u)
+        st, body, _ = get(u)
+        if st != 200:
+            continue
+        for h in re.findall(rb'href="([^"#?]+)"', body):
+            v = urllib.parse.urljoin(u, h.decode(errors="ignore"))
+            if urllib.parse.urlparse(v).netloc == host and v not in pages:
+                pages.append(v)
+                if any(f"/{g}" in v.lower() for g in GOOD) and v not in seen:
+                    todo.append(v)
+    return pages
+
+
+def ok_page(url):
+    """a real page: 200, and not a redirect back to somewhere else"""
+    try:
+        with urllib.request.urlopen(urllib.request.Request(url, headers={"User-Agent": UA}), timeout=20) as r:
+            return r.status == 200 and urllib.parse.urlparse(r.geturl()).path.rstrip("/") == urllib.parse.urlparse(url).path.rstrip("/")
+    except Exception:
+        return False
+
+
+ASSET = re.compile(r"\.(png|jpe?g|webp|gif|svg)\b|open-?graph|og-?image|/images?/|/assets?/", re.I)  # a picture is not a page
+VARIANT = re.compile(r"-(js|ts)-(css|tw)$", re.I)  # react-bits ships each part four ways: AnimatedContent-TS-TW
+EXAMPLE = re.compile(r"^(react|vue|svelte|solid|preact|lit|vanilla)-examples?-", re.I)  # prosekit: react-example-block-handle
+
+
+def keys(x):
+    """the names a part's page may end with, best first: its own; kebab case without a variant suffix (react-bits'
+    AnimatedContent-JS-CSS is /animations/animated-content); without a framework's example prefix (prosekit's
+    react-example-block-handle is /examples/block-handle/); the file it is named by (shadcn-ui-blocks' part
+    application-pro-accessibility-a11y-checklist-panel is the file a11y-checklist-panel, its page
+    /blocks/application-pro/accessibility/a11y-checklist-panel). 10 Oct: 5,400 parts of these three had no page."""
+    leaf = x["name"].split("/")[-1]
+    out = [leaf.lower(), re.sub(r"([a-z0-9])([A-Z])", r"\1-\2", VARIANT.sub("", leaf)).lower(), EXAMPLE.sub("", leaf).lower()]
+    f = next((y.get("path") for y in x.get("files") or [] if isinstance(y, dict) and y.get("path")), "")
+    stem = os.path.splitext(f)[0].split("/")[-1].lower()
+    if stem and leaf.lower().endswith("-" + stem):  # only a file the part is named by: "blog.tsx" in blog-02 is any blog
+        out.append(stem)
+    return list(dict.fromkeys(k for k in out if k))
+
+
+def file_tail(x):
+    """the last two folders and name of a part's first file, which some sites use as the page's path"""
+    f = next((y.get("path") for y in x.get("files") or [] if isinstance(y, dict) and y.get("path")), "")
+    return "/".join(os.path.splitext(f)[0].split("/")[-3:]).lower() if f.count("/") >= 3 else None
+
+
+def one(name, home):
+    index = json.load(open(os.path.join(R, name, "_index.json")))
+    home = index.get("homepage") or home
+    parts = [x for x in index.get("items") or [] if isinstance(x, dict) and x.get("name")]
+    items = [x["name"] for x in parts]
+    if not home or not items:
+        return {"reg": name, "home": home, "parts": len(items), "matched": 0}, {}
+    pages = sitemap_urls(home)
+    how = "sitemap"
+    if not pages:
+        pages, how = crawl(home), "crawl"
+    by_last = collections.defaultdict(list)
+    for p in pages:
+        last = urllib.parse.urlparse(p).path.rstrip("/").split("/")[-1].lower()
+        if last:
+            by_last[last].append(p)
+    rank = lambda u: min([i for i, g in enumerate(GOOD) if f"/{g}/" in u.lower()] or [len(GOOD)])
+    key, tail = {}, {}
+    for x in parts:
+        ks = keys(x)
+        key[x["name"]] = next((k for k in ks if k in by_last), ks[0])
+        tail[x["name"]] = file_tail(x)
+    # the site's pattern: the most common page shape among every page whose last segment is a part's name
+    shapes = collections.Counter()
+    for n in items:
+        leaf = key[n]
+        for u in set(by_last.get(leaf, [])):
+            i = u.lower().rfind(leaf)
+            shapes[u[:i] + "{name}" + u[i + len(leaf):]] += 1
+    pattern = shapes.most_common(1)[0][0] if shapes else None
+    best = {}
+    for n in items:
+        leaf = key[n]
+        hits = by_last.get(leaf, [])
+        if tail[n]:  # the same name under two kinds (/ctas/inline-cta, /banners/inline-cta): the one its file's path names
+            hits = [u for u in hits if urllib.parse.urlparse(u).path.rstrip("/").lower().endswith(tail[n])] or hits
+        if hits:
+            on = [u for u in hits if pattern and u.lower() == pattern.replace("{name}", leaf).lower()]
+            best[n] = (on[0] if on else sorted(hits, key=lambda u: (rank(u), len(u)))[0], bool(on))
+    # off the site's pattern, a page counts when it is part-ish or one of a family of five or more part pages
+    # (/charts/x, /forms/y), never a listing (/categories/grid)
+    family = collections.Counter(u.rsplit("/", 1)[0] for u, _ in best.values())
+    listing = re.compile(r"categor|/tags?/|collection|search|blog|author|/page/", re.I)
+    found = {n: u for n, (u, on) in best.items() if on or ((rank(u) < len(GOOD) or family[u.rsplit("/", 1)[0]] >= 5) and not listing.search(u))}
+    seen_n = len(found)
+    guessed = 0
+    on_pattern = sum(1 for n, u in found.items() if pattern and u.lower() == pattern.replace("{name}", key[n]).lower())
+    if pattern and on_pattern >= 3 and on_pattern >= 0.8 * seen_n:
+        rest = [n for n in items if n not in found]
+        probe = rest[:: max(1, len(rest) // 6)][:6]
+        if probe and all(ok_page(pattern.replace("{name}", key[n])) for n in probe):
+            for n in rest:
+                found[n] = pattern.replace("{name}", key[n])
+                guessed += 1
+    rest = [n for n in items if n not in found]
+    if (pattern and on_pattern >= 50 and rest and not ASSET.search(pattern)
+            and not ok_page(pattern.replace("{name}", "no-such-part-zq7"))):
+        # a strong pattern (one of two on shadcnblocks: /block/ and /component/) with parts that are not pages
+        # (examples, hooks), so the six probes fail: each part is tried, three at a time, on a site that answers a
+        # made-up name with an error (10 Oct: 12,766 of 23,079 parts of 41 sites had a page before)
+        with cf.ThreadPoolExecutor(3) as ex:
+            oks = list(ex.map(lambda n: ok_page(pattern.replace("{name}", key[n])), rest[:4000]))
+        for n, ok in zip(rest, oks):
+            if ok:
+                found[n] = pattern.replace("{name}", key[n])
+                guessed += 1
+    by_rule = ruled(name, items, found)
+    sample = next((u for n, u in found.items() if pattern and u == pattern.replace("{name}", key[n])), next(iter(found.values()), None))
+    row = {"reg": name, "home": home, "parts": len(items), "pages": len(pages), "how": how, "matched": seen_n, "guessed": guessed + by_rule, "by_rule": by_rule,
+           "pattern": pattern, "frameable": frameable(sample) if sample else None, "sample": sample}
+    return row, found
+
+
+RULES = os.path.join(ROOT, "page-rules.json")
+
+
+def ruled(name, items, found):
+    """pages by a reader's rule (page-rules.json) for the parts nothing else found; returns how many were kept"""
+    rules = (json.load(open(RULES)) if os.path.exists(RULES) else {}).get(name) or []
+    comp = [(re.compile(r["match"]), r["url"]) for r in rules]
+    def url_of(n):
+        for rx, u in comp:
+            m = rx.search(n)
+            if m:
+                return m.expand(u)
+        return None
+    want = {n: url_of(n) for n in items if n not in found}
+    want = {n: u for n, u in want.items() if u}
+    if not want:
+        return 0
+    first = next(iter(want.values()))
+    strict = not ok_page(re.sub(r"[^/]+/?$", "no-such-part-zq7", first))
+    with cf.ThreadPoolExecutor(4) as ex:
+        oks = list(ex.map(ok_page, want.values())) if strict else [True] * len(want)
+    for (n, u), ok in zip(want.items(), oks):
+        if ok:
+            found[n] = u
+    return sum(oks)
+
+
+def main():
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--only", default="")
+    ap.add_argument("--jobs", type=int, default=16)
+    args = ap.parse_args()
+    regs = {r["name"].lstrip("@"): r.get("homepage") for r in json.load(open(os.path.join(ROOT, "registries.json")))}
+    only = {s.strip().lstrip("@") for s in args.only.split(",") if s.strip()}
+    names = [n for n in sorted(os.listdir(R)) if os.path.exists(os.path.join(R, n, "_index.json")) and (not only or n in only)]
+    os.makedirs(OUT, exist_ok=True)
+    rows = []
+    with cf.ThreadPoolExecutor(args.jobs) as ex:
+        for row, found in ex.map(lambda n: one(n, regs.get(n)), names):
+            rows.append(row)
+            if found:
+                with open(os.path.join(OUT, row["reg"] + ".json"), "w") as f:
+                    json.dump(found, f, indent=1, ensure_ascii=False)
+            print(f"{row['reg']}: {row.get('matched', 0)} seen + {row.get('guessed', 0)} by pattern of {row['parts']} · frame {row.get('frameable')}", flush=True)
+    # --only refreshes some sites and keeps the rest
+    keep = {}
+    if only and os.path.exists(os.path.join(ROOT, "previews.jsonl")):
+        keep = {r["reg"]: r for r in (json.loads(l) for l in open(os.path.join(ROOT, "previews.jsonl")))}
+    keep.update({r["reg"]: r for r in rows})
+    with open(os.path.join(ROOT, "previews.jsonl"), "w") as f:
+        for row in sorted(keep.values(), key=lambda r: r["reg"]):
+            f.write(json.dumps(row, ensure_ascii=False) + "\n")
+    tot = sum(r["parts"] for r in rows)
+    got = sum(r.get("matched", 0) + r.get("guessed", 0) for r in rows)
+    print(f"{got} of {tot} parts have a page on their own site; {sum(1 for r in rows if r.get('frameable'))} of {len(rows)} sites may be framed")
+
+
+if __name__ == "__main__":
+    sys.exit(main())

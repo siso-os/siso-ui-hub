@@ -1,0 +1,473 @@
+/* Actual UI Hub signature styles from app/src/index.css; global root/base and build imports are excluded. */
+
+/* a .light box inside the dark hub turns dark styles off and takes the light values (the app frame previews both themes in one page) */
+@custom-variant dark (&:is(.dark *):not(.light *));
+
+/* SISO reference values: Agent Base's @siso/tokens (siso.css, the CRM layer) and its Halo rim; landing DNA's Night,
+   Bone and Paper. Dark is Agent Base's warm night: a chrome frame, one inset sheet, warm surfaces, hairlines of light.
+   The lion's orange-to-red is the accent, used sparingly: focus, active, his picks, the primary action. Glow only when
+   something is alive (focused, active, hovered, a live render). Keep the neon aliases so every page inherits the brand
+   without changing its composition or state semantics. */
+
+
+
+
+
+
+
+/* ---------- the Halo rim (Agent Base @siso/shell, R1.19) ----------
+   A glass box whose 1.5 px rim is its own masked layer. idle: a resting diagonal gradient; working: a conic ring that
+   turns every 6 s. Shaan, 3 Oct: "that chat ui is perfect beautiful ... i would love to save how it works". */
+@property --siso-rim-ang {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+@keyframes siso-rim-spin {
+  to {
+    --siso-rim-ang: 360deg;
+  }
+}
+@keyframes siso-shimmer {
+  to {
+    background-position: -200% 0;
+  }
+}
+@keyframes siso-rise {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+}
+
+@layer components {
+  .siso-rim {
+    --rim-hue: var(--siso-orange);
+    --rim-cyan: var(--siso-cyan);
+    --rim-ring: conic-gradient(from var(--siso-rim-ang), var(--rim-hue), var(--rim-cyan), color-mix(in srgb, var(--rim-hue) 30%, transparent), color-mix(in srgb, var(--rim-hue) 60%, #6080ff), var(--rim-hue));
+    position: relative;
+    isolation: isolate;
+    border-radius: var(--siso-radius-panel);
+    background: color-mix(in srgb, var(--siso-rim-fill) 88%, transparent);
+    -webkit-backdrop-filter: blur(18px) saturate(140%);
+    backdrop-filter: blur(18px) saturate(140%);
+    box-shadow: 0 0 0 1px rgb(255 255 255 / 0.02), 0 14px 44px -14px color-mix(in srgb, var(--rim-hue) 45%, transparent), 0 0 34px -10px color-mix(in srgb, var(--rim-cyan) 35%, transparent);
+  }
+  .siso-rim::before,
+  .siso-glow-card::before,
+  .siso-field::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+    padding: 1.5px;
+    border-radius: inherit;
+    background: var(--rim-ring, var(--siso-rim-rest));
+    pointer-events: none;
+    -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+    -webkit-mask-composite: xor;
+    mask: linear-gradient(#000 0 0) content-box exclude, linear-gradient(#000 0 0);
+  }
+  .siso-rim.is-working::before {
+    animation: siso-rim-spin 6s linear infinite;
+  }
+  .siso-rim.is-idle {
+    --rim-ring: var(--siso-rim-rest);
+    box-shadow: 0 10px 32px -16px rgb(0 0 0 / 0.7);
+  }
+  .siso-rim.no-glow {
+    box-shadow: none;
+  }
+
+  /* A preview card: hairline at rest; hovered, the rim lights and it lifts; keyboard focus turns the ring. */
+  .siso-glow-card {
+    --rim-ring: var(--siso-rim-rest);
+    position: relative;
+    isolation: isolate;
+    border-radius: var(--siso-radius-card);
+    border-color: transparent;
+    background-color: var(--card);
+    box-shadow: 0 0 0 1px var(--border), var(--siso-lift);
+    transition: transform 0.28s var(--siso-ease), box-shadow 0.28s var(--siso-ease);
+  }
+  .siso-glow-card::before {
+    opacity: 0;
+    transition: opacity 0.28s var(--siso-ease);
+  }
+  .siso-glow-card > img {
+    transition: transform 0.6s var(--siso-ease);
+  }
+  .group:hover .siso-glow-card,
+  .siso-glow-card:hover,
+  .siso-glow-card:focus-visible {
+    transform: translateY(-2px);
+    box-shadow: 0 0 0 1px transparent, var(--siso-lift-hover);
+  }
+  .group:hover .siso-glow-card::before,
+  .siso-glow-card:hover::before,
+  .siso-glow-card:focus-visible::before {
+    opacity: 1;
+  }
+  .group:hover .siso-glow-card > img,
+  .siso-glow-card:hover > img {
+    transform: scale(1.015);
+  }
+  .siso-glow-card:focus-visible {
+    outline: none;
+    --rim-ring: conic-gradient(from var(--siso-rim-ang), var(--siso-orange), var(--siso-cyan), color-mix(in srgb, var(--siso-orange) 30%, transparent), var(--siso-red), var(--siso-orange));
+  }
+  .siso-glow-card:focus-visible::before {
+    animation: siso-rim-spin 6s linear infinite;
+  }
+
+  /* A field (search, filter): glass at rest; focused, the composer's turning rim and its light. */
+  .siso-field {
+    --rim-ring: conic-gradient(from var(--siso-rim-ang), var(--siso-orange), var(--siso-cyan), color-mix(in srgb, var(--siso-orange) 30%, transparent), var(--siso-red), var(--siso-orange));
+    position: relative;
+    isolation: isolate;
+    border-radius: 10px;
+    transition: box-shadow 0.25s var(--siso-ease);
+  }
+  .siso-field::before {
+    opacity: 0;
+    transition: opacity 0.25s var(--siso-ease);
+  }
+  .siso-field:focus-within {
+    box-shadow: 0 10px 30px -14px rgb(255 167 38 / 0.5), 0 0 26px -12px rgb(34 211 238 / 0.45);
+  }
+  .siso-field:focus-within::before {
+    opacity: 1;
+    animation: siso-rim-spin 6s linear infinite;
+  }
+  .siso-field :focus-visible {
+    outline: none;
+    box-shadow: none;
+  }
+
+  /* The main sheet: Agent Base's inset panel on the chrome frame (desktop only), with a low warm light at its top. */
+  .siso-sheet {
+    position: relative;
+    isolation: isolate;
+  }
+  @media (min-width: 1024px) {
+    .siso-sheet {
+      min-height: calc(100svh - 3.5rem - 8px);
+      margin: 0 8px 8px 0;
+      border: 1px solid var(--border);
+      border-radius: var(--siso-radius-panel);
+      background: var(--background);
+      box-shadow: inset 0 1px 0 rgb(255 255 255 / 0.03), 0 30px 60px -40px rgb(0 0 0 / 0.8);
+    }
+    .siso-sheet::before {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      top: -120px;
+      right: 4%;
+      width: min(760px, 60%);
+      height: 420px;
+      background: var(--siso-sheet-glow);
+      pointer-events: none;
+    }
+  }
+
+  /* A segmented well: the track sunk, the chosen one raised. */
+  .siso-well {
+    border-radius: 10px;
+    background: color-mix(in srgb, var(--foreground) 4%, transparent);
+    box-shadow: inset 0 0 0 1px var(--border);
+  }
+  .siso-raised {
+    background: var(--secondary);
+    color: var(--foreground);
+    box-shadow: inset 0 1px 0 rgb(255 255 255 / 0.06), 0 0 0 1px var(--border), 0 4px 12px -4px rgb(0 0 0 / 0.5);
+  }
+
+  /* A chip: hairline pill; on, a warm tint with a quiet orange rim. */
+  .siso-chip {
+    border: 1px solid var(--border);
+    background: color-mix(in srgb, var(--foreground) 2.5%, transparent);
+    color: var(--muted-foreground);
+    transition: color 0.2s, background-color 0.2s, border-color 0.2s, box-shadow 0.2s;
+  }
+  .siso-chip:hover {
+    color: var(--foreground);
+    border-color: color-mix(in srgb, var(--foreground) 22%, transparent);
+  }
+  .siso-chip[aria-pressed="true"],
+  .siso-chip[data-on="true"] {
+    color: var(--neon-ink);
+    border-color: color-mix(in srgb, var(--siso-orange) 45%, transparent);
+    background: color-mix(in srgb, var(--siso-orange) 10%, transparent);
+    box-shadow: 0 0 18px -8px rgb(255 167 38 / 0.6);
+  }
+
+  /* An underline tab row: the chosen tab carries the brand gradient and its light. */
+  .siso-tab {
+    position: relative;
+  }
+  .siso-tab[aria-selected="true"]::after {
+    content: "";
+    position: absolute;
+    inset: auto 8px -1px;
+    height: 2px;
+    border-radius: 2px;
+    background: var(--siso-gradient-brand);
+    box-shadow: 0 0 12px rgb(255 120 30 / 0.7);
+  }
+
+  /* Loading: a warm shimmer instead of a flat pulse. */
+  .siso-shimmer {
+    background: linear-gradient(100deg, color-mix(in srgb, var(--foreground) 4%, transparent) 30%, color-mix(in srgb, var(--foreground) 9%, transparent) 50%, color-mix(in srgb, var(--foreground) 4%, transparent) 70%) 0 0 / 200% 100%;
+    animation: siso-shimmer 1.6s linear infinite;
+  }
+
+  /* The mono label: every kicker, section label and source line. */
+  .siso-kicker {
+    font-family: var(--font-mono);
+    font-size: var(--siso-label-size);
+    letter-spacing: var(--siso-label-tracking);
+    text-transform: uppercase;
+    color: var(--muted-foreground);
+  }
+
+  .siso-rise {
+    animation: siso-rise 0.4s var(--siso-ease) both;
+  }
+}
+
+/* Quiet brand chrome; the page bands and preview surfaces retain their space. */
+.siso-topbar::after {
+  position: absolute;
+  inset: auto 0 -1px;
+  height: 1px;
+  background: var(--siso-topbar-line);
+  content: "";
+  pointer-events: none;
+}
+/* The active nav row: Agent Base's lit rail tile, a warm well with an orange hairline and a little light. */
+.siso-nav-row[aria-current="page"] {
+  background: rgb(var(--app-rgb) / 0.09);
+  color: var(--foreground);
+  box-shadow: inset 0 0 0 1.5px rgb(var(--app-rgb) / 0.7), 0 0 18px -6px rgb(var(--app-rgb) / 0.7);
+}
+.siso-nav-row[aria-current="page"]::before {
+  display: none;
+}
+.siso-nav-row[aria-current="page"] svg {
+  color: rgb(var(--app-rgb));
+  filter: drop-shadow(0 0 6px rgb(var(--app-rgb) / 0.55));
+}
+.siso-nav-label {
+  font-family: var(--font-mono);
+  font-size: var(--siso-label-size);
+  letter-spacing: var(--siso-label-tracking);
+  text-transform: uppercase;
+}
+
+/* The lion: a little of its own light. */
+.siso-mark {
+  filter: drop-shadow(0 0 10px rgb(255 87 34 / 0.35));
+}
+
+.neon-glow {
+  box-shadow: var(--siso-glow);
+}
+.neon-text {
+  color: var(--neon-ink);
+}
+
+/* Home widgets: cards on the sheet; a widget lights its rim while you hover or drag it. */
+[data-widget] > [data-slot="card"] {
+  transition: box-shadow 0.28s var(--siso-ease);
+}
+[data-widget]:hover > [data-slot="card"],
+.react-draggable-dragging > [data-slot="card"] {
+  box-shadow: 0 0 0 1px color-mix(in srgb, var(--siso-orange) 28%, var(--border)), var(--siso-lift-hover);
+}
+[data-widget] h2 {
+  font-family: var(--font-mono);
+  font-size: var(--siso-label-size);
+  font-weight: 500;
+  letter-spacing: var(--siso-label-tracking);
+  text-transform: uppercase;
+  color: var(--muted-foreground);
+}
+
+/* react-grid-layout: quiet placeholder and handle */
+.react-grid-item.react-grid-placeholder {
+  background: var(--neon);
+  opacity: 0.12;
+  border-radius: var(--siso-radius-card);
+}
+.react-grid-item > .react-resizable-handle::after {
+  border-color: var(--muted-foreground);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* ── looks v8 (ECOSYSTEM with Shaan, 10 Oct): the shell's motion, unlayered so it wins over utilities ── */
+/* the SISO press: a button gives a little under a click and springs back (a shell standard every app uses) */
+.siso-nav-row, .siso-top-tab, .siso-press, [data-slot="button"] {
+  transition-property: color, background-color, box-shadow, transform;
+  transition-duration: 0.2s, 0.2s, 0.2s, 0.34s;
+  transition-timing-function: ease, ease, ease, cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+:is(.siso-nav-row, .siso-top-tab, .siso-press, [data-slot="button"]):active { transform: scale(0.965); transition-duration: 0.07s; }
+.siso-glow-card:active { transform: scale(0.985); }
+/* the side nav slides across: in when you go deeper or right, out when you come back */
+@keyframes siso-enter-in { from { transform: translateX(100%); } to { transform: none; } }
+@keyframes siso-leave-in { from { transform: none; opacity: 1; } to { transform: translateX(-32%); opacity: 0; } }
+@keyframes siso-enter-out { from { transform: translateX(-32%); opacity: 0; } to { transform: none; opacity: 1; } }
+@keyframes siso-leave-out { from { transform: none; opacity: 1; } to { transform: translateX(100%); opacity: 0.2; } }
+.siso-enter-in { animation: siso-enter-in 0.38s cubic-bezier(0.22, 1, 0.36, 1) both; }
+.siso-leave-in { animation: siso-leave-in 0.38s cubic-bezier(0.22, 1, 0.36, 1) both; }
+.siso-enter-out { animation: siso-enter-out 0.38s cubic-bezier(0.22, 1, 0.36, 1) both; }
+.siso-leave-out { animation: siso-leave-out 0.38s cubic-bezier(0.22, 1, 0.36, 1) both; z-index: 2; }
+/* the box stays pinned: a frame over the page draws its edge, and the page scrolls inside it. Outside the frame, its
+   shadow is the frame's grey, so the page never shows past the box. The rim is the Halo rim in the app's colour (v7). */
+.siso-frame { display: none; }
+@media (min-width: 1024px) {
+  .siso-frame {
+    display: block; position: fixed; z-index: 15; top: 3.5rem; right: 8px; bottom: 8px; left: calc(var(--frame-l, 256px) + 1px); /* 1px in, so the side nav never covers the rim */
+    border-radius: var(--siso-radius-panel); pointer-events: none; transition: left 0.2s var(--siso-ease);
+    box-shadow: 0 0 34px -10px rgb(var(--app-rgb) / 0.45), 0 0 0 100vmax var(--siso-frame);
+  }
+  .siso-frame::after, .siso-frame-spot {
+    content: ""; position: absolute; inset: -1px; padding: 2px; border-radius: inherit; pointer-events: none;
+    -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0); -webkit-mask-composite: xor;
+    mask: linear-gradient(#000 0 0) content-box exclude, linear-gradient(#000 0 0);
+  }
+  .siso-frame::after {
+    background: conic-gradient(from var(--siso-rim-ang), rgb(var(--app-rgb)), var(--app-second), rgb(var(--app-rgb) / 0.3), color-mix(in srgb, rgb(var(--app-rgb)) 60%, #6080ff), rgb(var(--app-rgb)));
+    animation: siso-rim-spin 6s linear infinite;
+  }
+  .siso-frame-spot { opacity: var(--spot, 0); transition: opacity 0.35s ease; background: radial-gradient(220px circle at var(--mx, 50%) var(--my, 0px), #fff, rgb(var(--app-rgb)) 30%, transparent 62%); }
+  .siso-sheet { border-color: transparent; border-radius: 0; box-shadow: none; }
+}
+/* the app's dot: the foot's version and what's new */
+.siso-dot { background: rgb(var(--app-rgb)); box-shadow: 0 0 8px rgb(var(--app-rgb)); }
+/* clicking through (looks v7): a page rises in, a title slides in */
+@keyframes siso-page { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
+@keyframes siso-title { from { opacity: 0; transform: translateX(8px); } to { opacity: 1; transform: none; } }
+.siso-page { animation: siso-page 0.34s cubic-bezier(0.22, 1, 0.36, 1); }
+/* Agent Base bundles a global .siso-page surface; the Hub page is only a wrapper over its sheet. */
+.siso-hub-source #main-content > .siso-page { background: transparent; }
+.siso-title { animation: siso-title 0.3s cubic-bezier(0.22, 1, 0.36, 1); }
+/* the pill switch: icons in a pill, and the chosen one opens to show its name */
+.siso-pill-label { max-width: 0; margin-left: 0; opacity: 0; overflow: hidden; white-space: nowrap; transition: max-width 0.34s var(--siso-ease), margin 0.34s var(--siso-ease), opacity 0.2s ease; }
+.siso-pill-label[data-on] { max-width: 9rem; margin-left: 0.45rem; opacity: 1; }
+/* the side nav's edge: drag it to resize (it doesn't light up: Shaan, 10 Oct) */
+.siso-edge { position: absolute; top: 0; bottom: 0; right: -6px; z-index: 40; width: 12px; cursor: col-resize; }
+.siso-resizing, .siso-resizing * { cursor: col-resize !important; user-select: none; transition: none !important; }
+/* a widget's size and remove tools show while you hover it */
+.widget-tools { opacity: 0; transition: opacity 0.2s ease; }
+[data-widget]:hover .widget-tools, .widget-tools:focus-within { opacity: 1; }
+@media (hover: none) { .widget-tools { opacity: 1; } }
+@media (prefers-reduced-motion: reduce) {
+  .siso-enter-in, .siso-leave-in, .siso-enter-out, .siso-leave-out { animation: none; }
+  .siso-frame::after, .siso-page, .siso-title { animation: none; }
+  .siso-frame-spot { display: none; }
+}
+
+/* The chosen top tab (Shaan, 10 Oct: "when it highlighted like components sites maybe it could be the blue with the really
+   nice like neon colours going through it"): a blue pill whose rim is a neon gradient flowing round it, with a sheen
+   sweeping across. Still in reduced motion. */
+@property --siso-neon-a { syntax: "<angle>"; inherits: false; initial-value: 0deg; }
+.siso-neon {
+  position: relative;
+  isolation: isolate;
+  background: linear-gradient(180deg, rgb(59 130 246 / 0.42), rgb(29 78 216 / 0.34));
+  box-shadow: 0 0 16px -3px rgb(59 130 246 / 0.75), 0 0 32px -10px rgb(168 85 247 / 0.6), inset 0 1px 0 rgb(255 255 255 / 0.22);
+  text-shadow: 0 0 10px rgb(147 197 253 / 0.55);
+}
+.siso-neon::before {
+  content: "";
+  position: absolute;
+  inset: -1px;
+  z-index: -1;
+  border-radius: inherit;
+  padding: 1.5px;
+  background: conic-gradient(from var(--siso-neon-a), #22d3ee, #3b82f6, #8b5cf6, #ec4899, #f59e0b, #22d3ee);
+  -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  animation: siso-neon-spin 3.4s linear infinite;
+}
+.siso-neon::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  border-radius: inherit;
+  background: linear-gradient(105deg, transparent 25%, rgb(255 255 255 / 0.12) 45%, rgb(103 232 249 / 0.22) 50%, transparent 68%);
+  background-size: 260% 100%;
+  animation: siso-neon-sweep 2.8s ease-in-out infinite;
+}
+.siso-neon svg { filter: drop-shadow(0 0 4px rgb(125 211 252 / 0.8)); }
+:root:not(.dark) .siso-neon { background: linear-gradient(180deg, #3b82f6, #2563eb); }
+@keyframes siso-neon-spin { to { --siso-neon-a: 360deg; } }
+@keyframes siso-neon-sweep { 0% { background-position: 130% 0; } 100% { background-position: -130% 0; } }
+@media (prefers-reduced-motion: reduce) { .siso-neon::before, .siso-neon::after { animation: none; } }
+
+/* the search deck's panel (components/SearchDeck.tsx) swings down into place, like a card turned toward you */
+.siso-deck-in { animation: siso-deck-in 0.32s var(--siso-ease) both; transform-origin: 50% 0; }
+@keyframes siso-deck-in { from { opacity: 0; transform: rotateX(-16deg) translateY(-6px) scale(0.985); } to { opacity: 1; transform: none; } }
+@media (prefers-reduced-motion: reduce) { .siso-deck-in { animation: none; } }
+
+/* glass on plain black can't be seen: a glass part's picture sits on colour, lightened onto it (ItemCard glassy, 12 Oct) */
+.siso-glass-stage {
+  background:
+    radial-gradient(60% 70% at 25% 30%, oklch(0.55 0.2 285 / 0.85), transparent 65%),
+    radial-gradient(55% 65% at 80% 75%, oklch(0.62 0.13 190 / 0.7), transparent 65%),
+    #0b0b10;
+}
+.siso-glass-stage img {
+  mix-blend-mode: screen;
+}
+
+/* the app frame page's compare: the part of the frame the chosen choice changes stays sharp with a beam of the
+   scheme's two colours running round it; the rest of the frame blurs and dims, so the difference is the only clear thing */
+:is([data-mark-on="header"], [data-mark-on="tools"], [data-mark-on="nav"], [data-mark-on="footer"]) [data-slot="sidebar-inset"],
+:is([data-mark-on="tools"], [data-mark-on="nav"], [data-mark-on="footer"]) [data-slot="sidebar-header"],
+:is([data-mark-on="header"], [data-mark-on="tools"], [data-mark-on="nav"]) [data-slot="sidebar-footer"],
+:is([data-mark-on="header"], [data-mark-on="footer"]) [data-slot="sidebar-content"],
+[data-mark-on="tools"] [data-slot="sidebar-content"] > :not([data-mark="tools"]),
+[data-mark-on="nav"] [data-slot="sidebar-content"] > :not([data-mark="nav"]),
+[data-mark-on="topbar"] [data-slot="sidebar-container"],
+[data-mark-on="topbar"] [data-slot="sidebar-inset"] > :not([data-mark="topbar"]) { opacity: 0.35; filter: blur(2px); transition: opacity 0.2s, filter 0.2s; }
+@property --siso-beam { syntax: "<angle>"; inherits: false; initial-value: 0deg; }
+[data-mark-on="header"] [data-slot="sidebar-header"],
+[data-mark-on="footer"] [data-slot="sidebar-footer"],
+[data-mark-on="tools"] [data-mark="tools"],
+[data-mark-on="nav"] [data-mark="nav"],
+[data-mark-on="topbar"] [data-mark="topbar"] {
+  position: relative;
+  border-radius: calc(var(--radius) + 2px);
+  background-color: color-mix(in oklab, var(--primary) 7%, transparent);
+}
+[data-mark-on="header"] [data-slot="sidebar-header"]::after,
+[data-mark-on="footer"] [data-slot="sidebar-footer"]::after,
+[data-mark-on="tools"] [data-mark="tools"]::after,
+[data-mark-on="nav"] [data-mark="nav"]::after,
+[data-mark-on="topbar"] [data-mark="topbar"]::after {
+  content: ""; position: absolute; inset: 0; padding: 2px; border-radius: inherit; pointer-events: none;
+  background: conic-gradient(from var(--siso-beam), color-mix(in oklab, var(--primary) 35%, transparent) 0 55%, var(--primary) 70%, var(--siso-second, var(--primary)) 85%, color-mix(in oklab, var(--primary) 35%, transparent) 100%);
+  -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0); -webkit-mask-composite: xor;
+  mask: linear-gradient(#000 0 0) content-box exclude, linear-gradient(#000 0 0);
+  animation: siso-beam 3s linear infinite;
+}
+@keyframes siso-beam { to { --siso-beam: 360deg; } }
+@media (prefers-reduced-motion: reduce) { [data-mark-on] ::after { animation: none !important; } }
+/* glass surface (frame-tokens.ts): the sidebar and the page blur what is behind them */
+[data-surface="glass"] :is([data-slot="sidebar-inner"], [data-slot="sidebar-inset"], [data-mark="topbar"]) { backdrop-filter: blur(18px) saturate(1.3); }
+[data-surface="glass"] [data-slot="sidebar-inner"] { border-color: color-mix(in oklab, white 10%, transparent); }

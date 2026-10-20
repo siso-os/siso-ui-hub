@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "actionist.affine.environment.v1",
+  "title": "AFFiNE host environment configuration",
+  "type": "object",
+  "required": ["hostOrigin", "frameOrigin", "serverOrigin", "companionOrigin", "expectedClientId", "sessionAssertionRef"],
+  "properties": {
+    "hostOrigin": {"type": "string", "pattern": "^https?://[^\\s]+$"},
+    "frameOrigin": {"type": "string", "pattern": "^https?://[^\\s]+$"},
+    "serverOrigin": {"type": "string", "pattern": "^https?://[^\\s]+$"},
+    "companionOrigin": {"type": "string", "pattern": "^https?://[^\\s]+$"},
+    "expectedClientId": {"type": "string", "minLength": 1},
+    "sessionAssertionRef": {"type": "string", "pattern": "^secret-ref:[A-Z0-9_]+$"},
+    "workspaceRevision": {"type": "integer", "minimum": 1},
+    "healthPath": {"type": "string", "pattern": "^/"}
+  },
+  "additionalProperties": false
+}

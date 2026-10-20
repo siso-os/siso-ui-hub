@@ -5,7 +5,7 @@ import json, os, re, shutil, sys
 
 WRITE = "--write" in sys.argv
 L = os.path.expanduser("~/SISO_Workspace/_data/worktrees/siso-agency-lp")
-HUB = os.path.expanduser("~/SISO_Workspace/Great_Library_of_SISO/banks/siso-ui-hub")
+HUB = os.path.dirname(os.path.dirname(os.path.realpath(__file__)))
 KIT = f"{HUB}/app/src/kit"
 OUT = f"{KIT}/siso-landing"
 ROOTS = {"eco": f"{L}/siso-ecosystem/src", "labs": f"{L}/sisolabs-landing/src"}
@@ -33,6 +33,8 @@ HEROES = [  # (id, title, root, src-relative file, export name or None = find it
     ("changelog-page", "Changelog page", "eco", f"{SISO}/changelog-page/ChangelogPage.tsx", "pages/changelog"),
     ("shipped-timeline", "Shipped timeline", "eco", f"{SISO}/live-page/Shipped.tsx", "marketing/changelog"),
     ("welcome-sign-in", "Welcome and sign in", "eco", f"{SISO}/welcome/WelcomePage.tsx", "flows/sign-in"),
+    # the isometric contribution city (Shaan's 21st.dev pick, forked for the Agent Base page): a chart, named in the charts review of 16 Oct
+    ("contribution-city", "Contribution city (3D heatmap)", "eco", f"{SISO}/ui/ContributionCity.tsx", "data-viz/chart"),
 ]
 PRIVATE = [l.strip() for l in open(os.environ.get("PRIVATE_PATHS", "/dev/null")) if l.strip()]  # harvest rows flagged private, one path per line
 WORDS = re.compile(os.environ.get("PRIVATE_WORDS", r"(/Users/)"), re.I)  # a regex with one group: words to report, e.g. client names
@@ -200,6 +202,8 @@ DEMOS = {  # heroes that take props: imported data, then the JSX ({H} = the hero
     "blog-header": ([("{ posts }", "eco", f"{B}/posts.ts"), ("{ postTopic }", "eco", f"{B}/topics.ts")],
                     "const p = posts[0]", '<{H} title={p.title} topic={postTopic(p)} slug={p.slug} variant="hero" eager />'),
     "blog-card": ([("{ posts }", "eco", f"{B}/posts.ts")], "", '<div className="max-w-md"><{H} post={posts[0]} featured /></div>'),
+    "contribution-city": ([], "const days = Array.from({ length: 120 }, (_, i) => ({ date: new Date(Date.UTC(2026, 5, 19) + i * 864e5).toISOString().slice(0, 10), commits: ((i * 7) % 11) + (i % 7 === 0 ? 0 : 1) }))",
+                          '<div className="mx-auto max-w-3xl p-4"><{H} days={days} endDate={days[days.length - 1].date} title="Commits per day" /></div>'),
     "industry-hero": ([("DATA", "eco", "features/marketing/data/industry-pages.json")],
                       "", '<{H} slug="cafes" group={(DATA.groups as Record<string, never>).cafes} />'),
 }

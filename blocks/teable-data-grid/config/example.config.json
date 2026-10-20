@@ -1,0 +1,70 @@
+{
+  "schemaVersion": "1.0.0",
+  "blockId": "actionist/teable-data-grid",
+  "environment": "synthetic",
+  "host": {
+    "origin": "http://127.0.0.1:4100",
+    "proxyBasePath": "/workspaces/demo/data-grid",
+    "healthPath": "/health"
+  },
+  "donor": {
+    "baseUrlEnv": "ACTIONIST_TEABLE_BASE_URL",
+    "healthPath": "/health",
+    "runtimeProfile": "sidecar_service",
+    "sourceCommit": "b245a987f8bfb7411d4e2423907b9cbb0a1c9b6b"
+  },
+  "identity": {
+    "identitySource": "host_verified_context",
+    "handoffMode": "signed_two_token",
+    "audience": "actionist-module:teable-data-grid",
+    "exchangePath": "/internal/teable/session",
+    "credentialReferenceEnv": "ACTIONIST_TEABLE_CREDENTIAL_REF",
+    "assertionLifetimeSeconds": 60,
+    "singleUse": true,
+    "clientSuppliedHeadersTrusted": false
+  },
+  "tenant": {
+    "required": true,
+    "source": "verified_host_claim",
+    "claim": "tenant_id",
+    "baseSelection": "host_bound"
+  },
+  "database": {
+    "topology": "one_server_separate_schemas",
+    "connectionEnv": "ACTIONIST_DATABASE_URL",
+    "metadataSchema": "public",
+    "hostSchema": "actionist_host",
+    "requiresCreateDatabase": true,
+    "crossOwnerReads": "event_fed_read_model",
+    "crossOwnerWrites": "forbidden",
+    "migrationOwners": {
+      "teableMetadata": "teable-prisma",
+      "teableBaseData": "teable-data-plane-migrator",
+      "hostOwned": "actionist-host"
+    }
+  },
+  "redis": {
+    "required": true,
+    "connectionEnv": "ACTIONIST_REDIS_URL",
+    "databaseIndex": 15,
+    "namespacePrefix": "actionist:teable:"
+  },
+  "attachments": {
+    "mode": "s3",
+    "connectionEnv": "ACTIONIST_ATTACHMENT_STORE_URL",
+    "namespaceTemplate": "tenant/{tenantId}/base/{baseId}",
+    "hostAuthorizationRequired": true,
+    "signedUrlAllowed": true
+  },
+  "events": {
+    "envelope": "actionist.capability-event.v1",
+    "capabilityIdField": "capability_id",
+    "tenantField": "tenant_id"
+  },
+  "observability": {
+    "capabilityId": "actionist/teable-data-grid",
+    "perCapabilityReleaseCorrelation": true,
+    "tracePropagation": true,
+    "ownerMetadata": "actionist-block-teable"
+  }
+}

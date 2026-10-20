@@ -1,0 +1,95 @@
+{
+  "record_type": "CapabilityContract",
+  "record_version": "1.0.0",
+  "record_id": "capability.teable-data-grid.v0.1.0",
+  "block_id": "actionist/teable-data-grid",
+  "version": "0.1.0",
+  "capability_id": "actionist/teable-data-grid",
+  "links": {
+    "manifest": "../actionist-block.json",
+    "packaging": "packaging.json",
+    "host_requirements": "host-requirements.json",
+    "binding_plan": "binding-plan.json",
+    "qualification": "qualification.json",
+    "registry": "registry.json",
+    "release": "release.json"
+  },
+  "status": "prototype",
+  "capability_kind": "surface",
+  "outcome_statement": "A tenant-authorized operator can view and edit dense operational tables, filter/sort records, and use Teable views while the donor service keeps its own product workflow and data authority.",
+  "provides": [
+    {
+      "port_id": "teable.grid.query.v1",
+      "port_kind": "query",
+      "schema_ref": "schemas/ports/grid-query.v1.json",
+      "external_effect": "read_external",
+      "description": "Read a host-authorized Teable base, table, view and record projection."
+    },
+    {
+      "port_id": "teable.grid.mutate.v1",
+      "port_kind": "action",
+      "schema_ref": "schemas/ports/grid-mutate.v1.json",
+      "external_effect": "write_external",
+      "idempotency_key_source": "request.idempotency_key",
+      "description": "Create, update or delete records through the donor API after host policy checks."
+    },
+    {
+      "port_id": "teable.attachment.read.v1",
+      "port_kind": "query",
+      "schema_ref": "schemas/ports/attachment-read.v1.json",
+      "external_effect": "read_external",
+      "description": "Resolve a tenant/base-scoped donor attachment reference; host authorization remains required."
+    },
+    {
+      "port_id": "teable.record.events.v1",
+      "port_kind": "event",
+      "schema_ref": "schemas/ports/record-event.v1.json",
+      "external_effect": "none",
+      "description": "Emit record lifecycle events in the Actionist capability envelope."
+    }
+  ],
+  "requires_host": [
+    "identity",
+    "tenant",
+    "settings",
+    "navigation",
+    "data",
+    "files",
+    "events",
+    "secrets",
+    "jobs",
+    "audit"
+  ],
+  "requires_capabilities": [],
+  "state_semantics": {
+    "state_classes": [
+      "donor_owned_intact",
+      "files_objects",
+      "events",
+      "cache_ephemeral_local"
+    ],
+    "authoritative_owner": "donor",
+    "resource_owners": {
+      "teable_metadata": "teable-prisma",
+      "teable_base_data": "teable-data-plane-migrator",
+      "teable_attachments": "teable-storage-adapter",
+      "host_application_data": "actionist-host"
+    }
+  },
+  "authority_class": "tenant_scoped_write",
+  "acceptance_workflow": [
+    "host verifies identity and tenant context",
+    "host resolves an allowlisted base for that tenant",
+    "proxy establishes the donor session without exposing donor login",
+    "operator reads a grid and uses a view/filter/sort",
+    "operator creates, updates or deletes a record with an idempotency key",
+    "host records an attributable event and audit context"
+  ],
+  "exclusions": [
+    "Teable signup, signin, password reset and social-login surfaces",
+    "host-owned brokerage tables and migrations",
+    "cross-owner direct mutation or shared-table migration history",
+    "client-specific base IDs, credentials, cookies or secrets",
+    "production qualification, release and admission"
+  ]
+}

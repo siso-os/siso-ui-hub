@@ -23,7 +23,7 @@ from hubpreviews import PreviewDelivery, may_copy, archive_unused
 from library_inventory import load_inventory
 HUB = os.path.dirname(os.path.dirname(os.path.realpath(__file__)))
 ASSETS = os.environ.get("UIHUB_ASSETS", os.path.expanduser("~/SISO_Workspace/_data/ui-hub/21st"))
-FOUNDRY = os.environ.get("UIHUB_FOUNDRY", os.path.expanduser("~/SISO_Workspace/Great_Library_of_SISO/foundry"))
+FOUNDRY = os.environ.get("UIHUB_FOUNDRY", os.path.realpath(os.path.join(HUB, "../../library/foundry")))
 
 def _load(p): return json.load(open(f"{HUB}/{p}"))
 def _jl(p): return [json.loads(l) for l in open(f"{HUB}/{p}") if l.strip()]

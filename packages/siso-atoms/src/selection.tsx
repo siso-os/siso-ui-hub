@@ -1,0 +1,17 @@
+// uihub: siso:atoms
+"use client";
+import * as React from "react";
+import { Tabs as TabsPrimitive } from "radix-ui";
+import { cx } from "./shared";
+export function Checkbox({className,indeterminate=false,ref,...props}:Omit<React.ComponentPropsWithRef<"input">,"type">&{indeterminate?:boolean}) {const local=React.useRef<HTMLInputElement|null>(null);React.useEffect(()=>{if(local.current)local.current.indeterminate=indeterminate},[indeterminate]);return <input {...props} type="checkbox" ref={node=>{local.current=node;if(typeof ref==="function")ref(node);else if(ref)ref.current=node}} className={cx("siso-a-check",className)}/>}
+export function Switch({className,...props}:Omit<React.ComponentPropsWithRef<"input">,"type"|"role">) {return <input {...props} type="checkbox" role="switch" className={cx("siso-a-switch",className)}/>}
+export function Slider({className,...props}:Omit<React.ComponentPropsWithRef<"input">,"type">) {return <input {...props} type="range" className={cx("siso-a-slider",className)}/>}
+export type SelectOption={value:string;label:string;disabled?:boolean};
+export function Select({options,placeholder,className,...props}:React.ComponentPropsWithRef<"select">&{options?:SelectOption[];placeholder?:string}) {return <select {...props} className={cx("siso-a-input",className)}>{placeholder&&<option value="" disabled>{placeholder}</option>}{options?options.map(o=><option key={o.value} value={o.value} disabled={o.disabled}>{o.label}</option>):props.children}</select>}
+export function MultiSelect(props:Omit<React.ComponentPropsWithRef<"select">,"multiple">&{options:SelectOption[]}) {return <Select {...props} multiple/>}
+export function RadioGroup({value,onValueChange,options,label,name,disabled=false,className,...props}:Omit<React.ComponentPropsWithRef<"fieldset">,"onChange">&{value:string;onValueChange:(value:string)=>void;options:SelectOption[];label:string;name?:string;disabled?:boolean}) {const id=React.useId();return <fieldset {...props} disabled={disabled} className={cx("siso-a-radio-group",className)}><legend>{label}</legend>{options.map(o=><label key={o.value} className="siso-a-inline"><input type="radio" name={name??id} value={o.value} checked={value===o.value} disabled={o.disabled} onChange={()=>onValueChange(o.value)}/>{o.label}</label>)}</fieldset>}
+export function SegmentedControl({value,onValueChange,options,label,disabled=false}: {value:string;onValueChange:(value:string)=>void;options:SelectOption[];label:string;disabled?:boolean}) {return <RadioGroup className="siso-a-segmented" value={value} onValueChange={onValueChange} options={options} label={label} disabled={disabled}/>}
+export function Tabs({className,...props}:React.ComponentPropsWithRef<typeof TabsPrimitive.Root>) {return <TabsPrimitive.Root {...props} className={cx("siso-a-tabs",className)}/>}
+export function TabsList({className,...props}:React.ComponentPropsWithRef<typeof TabsPrimitive.List>) {return <TabsPrimitive.List {...props} className={cx("siso-a-tabs-list",className)}/>}
+export function TabsTrigger({className,...props}:React.ComponentPropsWithRef<typeof TabsPrimitive.Trigger>) {return <TabsPrimitive.Trigger {...props} className={cx("siso-a-tab",className)}/>}
+export function TabsContent({className,...props}:React.ComponentPropsWithRef<typeof TabsPrimitive.Content>) {return <TabsPrimitive.Content {...props} className={cx("siso-a-tabs-content",className)}/>}

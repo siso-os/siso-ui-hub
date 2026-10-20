@@ -1,0 +1,147 @@
+{
+  "record_type": "BindingPlan",
+  "record_version": "1.0.0",
+  "record_id": "actionist/affine-workspace@0.2.0#BindingPlan",
+  "block_id": "actionist/affine-workspace",
+  "version": "0.2.0",
+  "capability_id": "actionist/affine-workspace",
+  "links": {
+    "manifest": "../actionist-block.json",
+    "capability": "01-capability.json",
+    "packaging": "02-packaging.json",
+    "host_requirements": "03-host-requirements.json",
+    "qualification": "05-qualification.json",
+    "registry": "06-registry.json",
+    "release": "07-release.json"
+  },
+  "owner_domain": "D15",
+  "binding_id": "template-affine-workspace",
+  "application_id": "template:host.application_id",
+  "host_contract_version": "actionist.affine.host.v0.1",
+  "mutability_rule": "Generated per application and composition revision; never edits the capability contract.",
+  "port_wiring": [
+    {
+      "from_port": "host.identity",
+      "to_port": "workspace.session",
+      "schema_compatibility": "adapter_required",
+      "adapter": "host assertion plus identity projection"
+    },
+    {
+      "from_port": "host.tenant.workspace",
+      "to_port": "workspace.ui",
+      "schema_compatibility": "adapter_required",
+      "adapter": "workspace route segment and exact-origin frame URL"
+    },
+    {
+      "from_port": "workspace.navigation",
+      "to_port": "host.navigation.intent",
+      "schema_compatibility": "identical"
+    },
+    {
+      "from_port": "host.settings.entry",
+      "to_port": "workspace.settings",
+      "schema_compatibility": "adapter_required",
+      "adapter": "host settings route with donor settings mode"
+    }
+  ],
+  "data_binding": {
+    "resources": [
+      {
+        "resource_id": "affine.workspace",
+        "state_class": "donor_owned_intact",
+        "owner": "donor",
+        "migration_owner": "donor"
+      },
+      {
+        "resource_id": "affine.documents",
+        "state_class": "document_collaboration",
+        "owner": "donor",
+        "migration_owner": "donor"
+      },
+      {
+        "resource_id": "affine.files",
+        "state_class": "files_objects",
+        "owner": "donor",
+        "migration_owner": "donor"
+      }
+    ],
+    "migration_authority": "donor",
+    "cross_owner_reads": "forbidden",
+    "cross_owner_mutations": "forbidden"
+  },
+  "identity_binding": {
+    "host_is_single_issuer": true,
+    "assertion_transport": "postMessage_and_backend_header",
+    "assertion_query_parameter": false,
+    "audience_bound": true,
+    "single_use": true,
+    "maximum_lifetime_seconds": 120,
+    "refusal_codes": [
+      "client_mismatch",
+      "expired",
+      "workspace_mismatch",
+      "capability_denied",
+      "missing_identity"
+    ]
+  },
+  "navigation_binding": {
+    "host_base_path_source": "host",
+    "donor_internal_router": true,
+    "donor_position_field": false,
+    "deep_link_rewrite": true,
+    "contribution": {
+      "intent": "collaborative workspace",
+      "label_source": "host",
+      "icon": "file-text",
+      "route_ref": "host-assigned"
+    }
+  },
+  "settings_binding": {
+    "host_entry": "/settings?tab=documents",
+    "donor_mode_query": "siso_mode=settings",
+    "policy": "donor_rendered_behind_host_nav",
+    "unified_host_chrome": false
+  },
+  "runtime_binding": {
+    "profile": "assimilated-package-plus-sidecar",
+    "mount_topology": "same_document",
+    "frame_origin_is_configured": true,
+    "companion_origin_is_configured": true,
+    "backend_origin_is_configured": true,
+    "health_path": "/api/auth/session"
+  },
+  "files_events_observability": {
+    "files_authority": "donor",
+    "events_envelope": "actionist.capability-event.v1",
+    "observability_capability_id": "actionist/affine-workspace",
+    "trace_context": "host-provided at runtime"
+  },
+  "glue_budget": {
+    "declared_max_changed_files": 2,
+    "declared_max_changed_lines": 120,
+    "actual": {
+      "donor_files_changed": 0,
+      "donor_lines_changed": 0,
+      "host_adapter_files_generated": 1,
+      "host_adapter_lines_generated": "deterministic output varies by host"
+    },
+    "exceeded_action": "reshape"
+  },
+  "unresolved": [
+    {
+      "field": "PackagingProfile.source_identity.immutable_revision",
+      "reason": "The existing official CE receipt pins the release artifact and tag but does not resolve the tag to a source commit.",
+      "must_be_supplied_by": "operator"
+    },
+    {
+      "field": "HostContract.tenancy.host_workspace_switcher",
+      "reason": "The SISOCRM precedent threads workspaceId but has no host switcher UI; the donor switcher was retained as a temporary fallback.",
+      "must_be_supplied_by": "experiment"
+    },
+    {
+      "field": "QualificationDossier.tenancy_isolation",
+      "reason": "Existing receipt proves a named workspace flow, not a second-user or cross-tenant isolation run for this block.",
+      "must_be_supplied_by": "experiment"
+    }
+  ]
+}

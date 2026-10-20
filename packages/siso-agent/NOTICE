@@ -1,0 +1,10 @@
+@siso/agent 0.4.1
+Copyright (c) 2026 SISO
+
+Moved from Agent Base (sisodias/siso apps/agent-base/packages): siso-composer,
+siso-voice, halo-face, siso-icons and siso-os. Agent Base's own copies remain; this
+shard is now the kit's source. Agent Base's `@siso/shell` import in the voice area is
+replaced with `@siso/shells/agent-base` (same `cn`).
+
+The icon set in src/icons/pq adapts pqoqubbw's animated icons (MIT, see
+licenses/LICENSE-pqoqubbw).

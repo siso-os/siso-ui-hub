@@ -1,0 +1,43 @@
+/* Semantic aliases over the existing SISO token source. Import siso.css first. */
+:root, [data-siso-theme="dark"], [data-theme="dark"] {
+  color-scheme: dark;
+  --siso-background: var(--crm-color-canvas, #141514);
+  --siso-panel: var(--crm-color-surface, #202020);
+  --siso-raised: var(--crm-color-surface-raised, #2a2a2a);
+  --siso-foreground: var(--crm-color-text, #e0e0e0);
+  --siso-muted: var(--crm-color-text-muted, #9e9e9e);
+  --siso-line: var(--crm-color-line, #3a3a3a);
+  --siso-accent: var(--crm-color-brand, var(--siso-orange));
+  --siso-ring: var(--siso-accent);
+  --siso-accent-foreground: #1a1209;
+  --siso-font-sans: var(--font-sans, system-ui, sans-serif);
+  --siso-font-mono: var(--font-mono, ui-monospace, monospace);
+  --foreground: var(--siso-foreground);
+  --background: var(--siso-background);
+  --card: var(--siso-panel);
+  --muted-foreground: var(--siso-muted);
+  --border: var(--siso-line);
+  --sidebar: var(--siso-chrome);
+  --primary: var(--siso-accent);
+  --primary-foreground: var(--siso-accent-foreground);
+  --siso-radius: var(--radius-control, 10px);
+  --siso-font: var(--font-sans, system-ui, sans-serif);
+}
+[data-siso-theme="light"], [data-theme="light"] {
+  color-scheme: light;
+  --siso-background: #f3f2ee;
+  --siso-panel: #fbfaf7;
+  --siso-raised: #e2e0da;
+  --siso-foreground: #171715;
+  --siso-muted: #66635c;
+  --siso-line: #d8d5cc;
+  --siso-accent: #a8470b;
+  --siso-ring: #a8470b;
+  --siso-accent-foreground: #ffffff;
+  --siso-text: var(--siso-foreground);
+  --siso-text-muted: var(--siso-muted);
+  --siso-border: var(--siso-line);
+  --siso-surface: var(--siso-panel);
+  --siso-surface-raised: var(--siso-raised);
+  --siso-chrome: #e4e1da;
+}

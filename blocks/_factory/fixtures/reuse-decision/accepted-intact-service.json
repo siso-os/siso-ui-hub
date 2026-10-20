@@ -1,0 +1,35 @@
+{
+  "schema_version": "actionist.reuse-decision.v1",
+  "decision_id": "fixture.accepted.intact-service.v1",
+  "capability_id": "actionist/support-inbox",
+  "requested_disposition": "EVALUATE",
+  "capability_boundary": {
+    "outcome_statement": "A host user can triage and reply to support conversations.",
+    "included_responsibilities": ["conversation triage", "conversation reply"],
+    "excluded_responsibilities": ["host billing", "host identity issuance"],
+    "authoritative_state_owner": "donor service"
+  },
+  "selection": {
+    "selected_shape": "intact_service",
+    "candidate_shapes": ["intact_service", "embedded_module"],
+    "decision_authority": "fixture.named-reviewer"
+  },
+  "rights_exposure": "none_network_only",
+  "maintenance_model": "downstream_service",
+  "inputs": {
+    "source": {"status": "known", "summary": "Pinned synthetic source identity.", "evidence_refs": ["fixture://source-intake.json"]},
+    "rights": {"status": "known", "summary": "Synthetic rights review permits network operation.", "evidence_refs": ["fixture://rights-review.json"]},
+    "host": {"status": "known", "summary": "Synthetic host exposes the required service route.", "evidence_refs": ["fixture://host-contract.json"]},
+    "tenancy": {"status": "known", "summary": "Synthetic tenant boundary is declared.", "evidence_refs": ["fixture://tenancy.json"]},
+    "data": {"status": "known", "summary": "Donor service owns conversation state.", "evidence_refs": ["fixture://data-ownership.json"]},
+    "lifecycle": {"status": "known", "summary": "Downstream service upgrade and rollback are declared.", "evidence_refs": ["fixture://lifecycle.json"]},
+    "evidence": {"status": "known", "summary": "Fixture evidence set is complete for planning selection.", "evidence_refs": ["fixture://evidence-index.json"]}
+  },
+  "rejected_alternatives": [
+    {
+      "shape": "embedded_module",
+      "reason": "The capability owns a mature service runtime and data model behind a stable boundary.",
+      "evidence_refs": ["fixture://shape-comparison.json"]
+    }
+  ]
+}

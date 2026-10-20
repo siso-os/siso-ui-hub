@@ -1,0 +1,2793 @@
+{
+  "package": "@siso/blocks/source",
+  "license": "MIT",
+  "copyright": "Copyright (c) 2026 Elia Kuratli",
+  "licenseUrl": "https://uiarc.dev/license",
+  "licenseVerification": "Suite owner confirmed free MIT 2026-10-16; every copied component including Button/Avatar independently checked tier=free against sources/items.jsonl.",
+  "familyCount": 63,
+  "families": [
+    {
+      "id": "arc:accordion",
+      "tier": "free",
+      "source": "https://uiarc.dev/components/accordion",
+      "entry": "src/source/accordion/accordion.tsx",
+      "exports": [
+        "AccordionItem",
+        "AccordionProps",
+        "Accordion"
+      ]
+    },
+    {
+      "id": "arc:announcement-bar",
+      "tier": "free",
+      "source": "https://uiarc.dev/components/announcement-bar",
+      "entry": "src/source/announcement-bar/announcement-bar.tsx",
+      "exports": [
+        "AnnouncementAction",
+        "Announcement",
+        "AnnouncementBarProps",
+        "clearAnnouncementDismissal",
+        "AnnouncementBar"
+      ]
+    },
+    {
+      "id": "arc:blog-grid",
+      "tier": "free",
+      "source": "https://uiarc.dev/components/blocks/blog-grid",
+      "entry": "src/source/blocks/blog-grid/blog-grid.tsx",
+      "exports": [
+        "BlogGridProps",
+        "BlogGrid",
+        "BlogGridBlock"
+      ]
+    },
+    {
+      "id": "arc:bottom-sheet",
+      "tier": "free",
+      "source": "https://uiarc.dev/components/bottom-sheet",
+      "entry": "src/source/bottom-sheet/bottom-sheet.tsx",
+      "exports": [
+        "BottomSheetProps",
+        "BottomSheet",
+        "BottomSheetClose"
+      ]
+    },
+    {
+      "id": "arc:breadcrumb",
+      "tier": "free",
+      "source": "https://uiarc.dev/components/breadcrumb",
+      "entry": "src/source/breadcrumb/breadcrumb.tsx",
+      "exports": [
+        "BreadcrumbItem",
+        "BreadcrumbProps",
+        "Breadcrumb"
+      ]
+    },
+    {
+      "id": "arc:calendar",
+      "tier": "free",
+      "source": "https://uiarc.dev/components/calendar",
+      "entry": "src/source/calendar/calendar.tsx",
+      "exports": [
+        "CalendarDateMatcher",
+        "CalendarProps",
+        "Calendar"
+      ]
+    },
+    {
+      "id": "arc:card-stack",
+      "tier": "free",
+      "source": "https://uiarc.dev/components/card-stack",
+      "entry": "src/source/card-stack/card-stack.tsx",
+      "exports": [
+        "CardDecision",
+        "CardStackProps",
+        "CardStack"
+      ]
+    },
+    {
+      "id": "arc:carousel",
+      "tier": "free",
+      "source": "https://uiarc.dev/components/carousel",
+      "entry": "src/source/carousel/carousel.tsx",
+      "exports": [
+        "CarouselProps",
+        "Carousel"
+      ]
+    },
+    {
+      "id": "arc:changelog-feed",
+      "tier": "free",
+      "source": "https://uiarc.dev/components/blocks/changelog-feed",
+      "entry": "src/source/blocks/changelog-feed/changelog-feed.tsx",
+      "exports": [
+        "ChangelogKind",
+        "ChangelogMedia",
+        "ChangelogEntry",
+        "ChangelogMonth",
+        "ChangelogFeedProps",
+        "ChangelogFeed"
+      ]
+    },
+    {
+      "id": "arc:chat-thread",
+      "tier": "free",
+      "source": "https://uiarc.dev/components/chat-thread",
+      "entry": "src/source/chat-thread/chat-thread.tsx",
+      "motion": [
+        "New messages rise in from their own side with a small scale on a smooth spring, and the list glides up by the added height instead of jumping.",
+        "Reader avatars share a layoutId, so a receipt travels to the newly read message.",
+        "Reaction chips pop in, counts roll up or down, and the reaction row and attachment tray spring open.",
+        "The send arrow lifts out and a new one rises in on each send; the jump to latest pill springs in from below.",
+        "Reduced motion turns these into short fades, stops the typing dots, and scrolls to the bottom instantly."
+      ],
+      "exports": [
+        "ChatParticipant",
+        "ChatAttachment",
+        "ChatReaction",
+        "ChatMessageStatus",
+        "ChatMessage",
+        "ChatDraft",
+        "ChatComposerLabels",
+        "ChatThreadLabels",
+        "ChatThreadHandle",
+        "ChatThreadProps",
+        "formatBytes",
+        "ChatComposerProps",
+        "ChatComposerHandle",
+        "ChatComposer",
+        "ChatThread"
+      ]
+    },
+    {
+      "id": "arc:code-block",
+      "tier": "free",
+      "source": "https://uiarc.dev/components/code-block",
+      "entry": "src/source/code-block/code-block.tsx",
+      "exports": [
+        "CodeBlockProps",
+        "CodeBlock"
+      ]
+    },
+    {
+      "id": "arc:color-picker",
+      "tier": "free",
+      "source": "https://uiarc.dev/components/color-picker",
+      "entry": "src/source/color-picker/color-picker.tsx",
+      "exports": [
+        "ColorFormat",
+        "ColorSwatch",
+        "ColorPickerProps",
+        "Hsva",
+        "toHex",
+        "parseColor",
+        "ColorPicker"
+      ]
+    },
+    {
+      "id": "arc:combobox",
+      "tier": "free",
+      "source": "https://uiarc.dev/components/combobox",
+      "entry": "src/source/combobox/combobox.tsx",
+      "exports": [
+        "ComboboxOption",
+        "ComboboxProps",
+        "Combobox"
+      ]
+    },
+    {
+      "id": "arc:command-palette",
+      "tier": "free",
+      "source": "https://uiarc.dev/components/blocks/command-palette",
+      "entry": "src/source/command-palette/command-palette.tsx",
+      "motion": [
+        "The panel rises in on a spring; the results frame springs to the list height as the query filters.",
+        "Remaining rows glide into place when the shift is small and snap when it is a long jump; the highlight springs for pointer moves and slides in 70ms for arrow keys.",
+        "Reduced motion removes the entrance, glides, and highlight travel."
+      ],
+      "exports": [
+        "CommandItem",
+        "CommandPaletteProps",
+        "CommandPalette"
+      ]
+    },
+    {
+      "id": "arc:comment-thread",
+      "tier": "free",
+      "source": "https://uiarc.dev/components/comment-thread",
+      "entry": "src/source/comment-thread/comment-thread.tsx",
+      "motion": [
+        "The thread height springs when replies expand, comments arrive, or the thread folds into the resolved chip.",
+        "Reaction counts roll to the new value; chips move with layout animation as they are added or removed.",
+        "Edit, confirm, and picker rows slide in from the side.",
+        "Reduced motion swaps content without travel and turns off transitions."
+      ],
+      "exports": [
+        "CommentAuthor",
+        "CommentReaction",
+        "ThreadComment",
+        "CommentThreadEvent",
+        "CommentThreadLabels",
+        "CommentThreadProps",
+        "CommentThread"
+      ]
+    },
+    {
+      "id": "arc:comparison-table",
+      "tier": "free",
+      "source": "https://uiarc.dev/components/blocks/comparison-table",
+      "entry": "src/source/blocks/comparison-table/comparison-table.tsx",
+      "exports": [
+        "ComparisonTableProps",
+        "ComparisonTable",
+        "ComparisonTableBlock"
+      ]
+    },
+    {
+      "id": "arc:contact-section",
+      "tier": "free",
+      "source": "https://uiarc.dev/components/blocks/contact-section",
+      "entry": "src/source/blocks/contact-section/contact-section.tsx",
+      "exports": [
+        "ContactSectionVariant",
+        "ContactMessage",
+        "ContactChannel",
+        "ContactOffice",
+        "ContactSectionProps",
+        "contactExampleChannels",
+        "contactExampleOffices",
+        "ContactSection",
+        "ContactSectionBlock"
+      ]
+    },
+    {
+      "id": "arc:context-menu",
+      "tier": "free",
+      "source": "https://uiarc.dev/components/context-menu",
+      "entry": "src/source/context-menu/context-menu.tsx",
+      "exports": [
+        "ContextMenuItem",
+        "ContextMenuProps",
+        "ContextMenu",
+        "contextMenuExampleItems"
+      ]
+    },
+    {
+      "id": "arc:cta-section",
+      "tier": "free",
+      "source": "https://uiarc.dev/components/blocks/cta-section",
+      "entry": "src/source/blocks/cta-section/cta-section.tsx",
+      "exports": [
+        "CtaVariant",
+        "CtaSectionProps",
+        "CtaSection",
+        "CtaSectionBlock"
+      ]
+    },
+    {
+      "id": "arc:date-picker",
+      "tier": "free",
+      "source": "https://uiarc.dev/components/date-picker",
+      "entry": "src/source/date-picker/date-picker.tsx",
+      "exports": [
+        "DatePickerProps",
+        "DatePicker"
+      ]
+    },
+    {
+      "id": "arc:date-range-picker",
+      "tier": "free",
+      "source": "https://uiarc.dev/components/date-range-picker",
+      "entry": "src/source/date-range-picker/date-range-picker.tsx",
+      "exports": [
+        "DateRange",
+        "DateRangePreset",
+        "DateRangePickerProps",
+        "defaultDateRangePresets",
+        "DateRangePicker"
+      ]
+    },
+    {
+      "id": "arc:dialog",
+      "tier": "free",
+      "source": "https://uiarc.dev/components/dialog",
+      "entry": "src/source/dialog/dialog.tsx",
+      "motion": [
+        "The overlay fades while the panel rises 8px and scales from 0.96 on a smooth spring; closing is shorter and retargets from the current state.",
+        "Title and description changes rise in with a soft blur.",
+        "Reduced motion uses a plain opacity fade, including the CSS keyframe fallback for bare Radix roots."
+      ],
+      "exports": [
+        "Dialog",
+        "DialogTrigger",
+        "DialogClose",
+        "DialogContentProps",
+        "DialogContent"
+      ]
+    },
+    {
+      "id": "arc:drawer",
+      "tier": "free",
+      "source": "https://uiarc.dev/components/drawer",
+      "entry": "src/source/drawer/drawer.tsx",
+      "motion": [
+        "The panel springs in from its edge and leaves faster on a tween; a drag past a third of the panel or a quick flick closes it and keeps the release velocity.",
+        "Dragging the header away from the edge rubber-bands; the overlay fades in and out.",
+        "Reduced motion disables dragging and replaces the slide with a short opacity fade."
+      ],
+      "exports": [
+        "useDrawerItem",
+        "Drawer",
+        "DrawerTrigger",
+        "DrawerClose",
+        "DrawerContentProps",
+        "DrawerContent"
+      ]
+    },
+    {
+      "id": "arc:dropdown-menu",
+      "tier": "free",
+      "source": "https://uiarc.dev/components/dropdown-menu",
+      "entry": "src/source/dropdown-menu/dropdown-menu.tsx",
+      "exports": [
+        "DropdownItem",
+        "DropdownMenuProps",
+        "DropdownMenu"
+      ]
+    },
+    {
+      "id": "arc:empty-state",
+      "tier": "free",
+      "source": "https://uiarc.dev/components/empty-state",
+      "entry": "src/source/empty-state/empty-state.tsx",
+      "motion": [
+        "Changing title or description rolls the copy in place while the block height springs to fit.",
+        "A new icon pops in with a short blur.",
+        "Reduced motion swaps copy with a fade and snaps height; the icon's idle animation stops."
+      ],
+      "exports": [
+        "EmptyStateProps",
+        "EmptyState"
+      ]
+    },
+    {
+      "id": "arc:empty-states",
+      "tier": "free",
+      "source": "https://uiarc.dev/components/blocks/empty-states",
+      "entry": "src/source/blocks/empty-states/empty-states.tsx",
+      "exports": [
+        "EmptyStates"
+      ]
+    },
+    {
+      "id": "arc:expandable-card",
+      "tier": "free",
+      "source": "https://uiarc.dev/components/expandable-card",
+      "entry": "src/source/expandable-card/expandable-card.tsx",
+      "exports": [
+        "ExpandableCardProps",
+        "ExpandableCard"
+      ]
+    },
+    {
+      "id": "arc:faq-section",
+      "tier": "free",
+      "source": "https://uiarc.dev/components/blocks/faq-section",
+      "entry": "src/source/blocks/faq-section/faq-section.tsx",
+      "exports": [
+        "FaqSectionVariant",
+        "FaqItem",
+        "FaqSectionProps",
+        "faqExampleItems",
+        "FaqSection",
+        "FaqSectionBlock"
+      ]
+    },
+    {
+      "id": "arc:file-dropzone",
+      "tier": "free",
+      "source": "https://uiarc.dev/components/file-dropzone",
+      "entry": "src/source/file-dropzone/file-dropzone.tsx",
+      "motion": [
+        "The icon lifts while files hover, the edge animates, rows enter and collapse on a smooth spring, and progress bars ease toward their target.",
+        "Reduced motion replaces height and lift animations with short fades and keeps progress changes instant."
+      ],
+      "exports": [
+        "FileDropzoneStatus",
+        "FileDropzoneItem",
+        "FileDropzoneUpload",
+        "FileDropzoneProps",
+        "formatFileSize",
+        "FileDropzone"
+      ]
+    },
+    {
+      "id": "arc:file-upload",
+      "tier": "free",
+      "source": "https://uiarc.dev/components/blocks/file-upload",
+      "entry": "src/source/file-upload/file-upload.tsx",
+      "exports": [
+        "FileUploadItem",
+        "FileUploadProps",
+        "FileUpload"
+      ]
+    },
+    {
+      "id": "arc:filter-toolbar",
+      "tier": "free",
+      "source": "https://uiarc.dev/components/filter-toolbar",
+      "entry": "src/source/filter-toolbar/filter-toolbar.tsx",
+      "motion": [
+        "Chips open and close their slot on a spring so neighbors glide; values morph in place.",
+        "The Add filter trigger morphs into the menu surface and steps slide between fields and values.",
+        "Reduced motion replaces the morphs and slides with instant changes and short fades."
+      ],
+      "exports": [
+        "FilterChip",
+        "FilterOption",
+        "FilterField",
+        "FilterMenuProps",
+        "FilterToolbarProps",
+        "FilterMenu",
+        "FilterToolbar"
+      ]
+    },
+    {
+      "id": "arc:hero-section",
+      "tier": "free",
+      "source": "https://uiarc.dev/components/blocks/hero-section",
+      "entry": "src/source/blocks/hero-section/hero-section.tsx",
+      "exports": [
+        "HeroSectionVariant",
+        "HeroSectionProps",
+        "HeroSection",
+        "HeroSectionBlock"
+      ]
+    },
+    {
+      "id": "arc:hover-card",
+      "tier": "free",
+      "source": "https://uiarc.dev/components/hover-card",
+      "entry": "src/source/hover-card/hover-card.tsx",
+      "motion": [
+        "Grows from the trigger edge: scale from 0.96 and a 4px offset on a smooth spring, with a separate fade. Mid-exit returns retarget instead of jumping.",
+        "Within 300ms of another card, the next opens after 80ms with a fade only. Profile rows settle in with a small stagger.",
+        "Reduced motion drops scale and travel and keeps a short fade."
+      ],
+      "exports": [
+        "HoverCardProps",
+        "HoverCard",
+        "HoverCardStat",
+        "HoverCardProfileProps",
+        "HoverCardProfile"
+      ]
+    },
+    {
+      "id": "arc:image-compare",
+      "tier": "free",
+      "source": "https://uiarc.dev/components/image-compare",
+      "entry": "src/source/image-compare/image-compare.tsx",
+      "exports": [
+        "ImageCompareProps",
+        "ImageCompare"
+      ]
+    },
+    {
+      "id": "arc:json-viewer",
+      "tier": "free",
+      "source": "https://uiarc.dev/components/json-viewer",
+      "entry": "src/source/json-viewer/json-viewer.tsx",
+      "exports": [
+        "JsonValueType",
+        "JsonViewerCopyDetail",
+        "JsonViewerProps",
+        "JsonViewer"
+      ]
+    },
+    {
+      "id": "arc:login-centered",
+      "tier": "free",
+      "source": "https://uiarc.dev/components/blocks/login-centered",
+      "entry": "src/source/blocks/login-centered/login-centered.tsx",
+      "exports": [
+        "LoginMethod",
+        "LoginCenteredProps",
+        "LoginCentered"
+      ]
+    },
+    {
+      "id": "arc:logo-marquee",
+      "tier": "free",
+      "source": "https://uiarc.dev/components/blocks/logo-marquee",
+      "entry": "src/source/blocks/logo-marquee/logo-marquee.tsx",
+      "exports": [
+        "LogoMarqueeBrand",
+        "LogoMarqueeTone",
+        "LogoMarqueeProps",
+        "LogoMarquee"
+      ]
+    },
+    {
+      "id": "arc:mention-input",
+      "tier": "free",
+      "source": "https://uiarc.dev/components/mention-input",
+      "entry": "src/source/mention-input/mention-input.tsx",
+      "exports": [
+        "MentionKind",
+        "MentionPerson",
+        "MentionChannel",
+        "Mention",
+        "MentionValue",
+        "MentionInputHandle",
+        "MentionInputProps",
+        "mentionText",
+        "serializeMentions",
+        "MentionInput"
+      ]
+    },
+    {
+      "id": "arc:metric-card",
+      "tier": "free",
+      "source": "https://uiarc.dev/components/metric-card",
+      "entry": "src/source/metric-card/metric-card.tsx",
+      "exports": [
+        "MetricCardProps",
+        "MetricCard"
+      ]
+    },
+    {
+      "id": "arc:morph-select",
+      "tier": "free",
+      "source": "https://uiarc.dev/components/morph-select",
+      "entry": "src/source/morph-select/morph-select.tsx",
+      "exports": [
+        "MorphSelectOption",
+        "MorphSelectGroup",
+        "MorphSelectItem",
+        "MorphSelectProps",
+        "MorphSelect"
+      ]
+    },
+    {
+      "id": "arc:newsletter-signup",
+      "tier": "free",
+      "source": "https://uiarc.dev/components/blocks/newsletter-signup",
+      "entry": "src/source/blocks/newsletter-signup/newsletter-signup.tsx",
+      "exports": [
+        "NewsletterVariant",
+        "NewsletterSignupProps",
+        "NewsletterSignup",
+        "NewsletterSignupBlock"
+      ]
+    },
+    {
+      "id": "arc:notification-center",
+      "tier": "free",
+      "source": "https://uiarc.dev/components/blocks/notification-center",
+      "entry": "src/source/notification-center/notification-center.tsx",
+      "motion": [
+        "The bell tilts when open; counts roll like an odometer in the direction of change.",
+        "Rows open and collapse their own height on a spring, and bulk actions cascade down the list in under a quarter second.",
+        "Reduced motion replaces height, roll, and tilt with instant fades."
+      ],
+      "exports": [
+        "NotificationItem",
+        "NotificationCenterProps",
+        "NotificationCenter"
+      ]
+    },
+    {
+      "id": "arc:page-header",
+      "tier": "free",
+      "source": "https://uiarc.dev/components/blocks/page-header",
+      "entry": "src/source/blocks/page-header/page-header.tsx",
+      "exports": [
+        "PageHeader"
+      ]
+    },
+    {
+      "id": "arc:pagination",
+      "tier": "free",
+      "source": "https://uiarc.dev/components/pagination",
+      "entry": "src/source/pagination/pagination.tsx",
+      "motion": [
+        "The current page mark springs to the selected button.",
+        "When the window shifts, numbers slide like a belt by the number of slots moved.",
+        "Reduced motion jumps the mark and swaps numbers without sliding."
+      ],
+      "exports": [
+        "PaginationProps",
+        "Pagination"
+      ]
+    },
+    {
+      "id": "arc:plan-comparison",
+      "tier": "free",
+      "source": "https://uiarc.dev/components/blocks/plan-comparison",
+      "entry": "src/source/blocks/plan-comparison/plan-comparison.tsx",
+      "exports": [
+        "PlanComparison"
+      ]
+    },
+    {
+      "id": "arc:popover",
+      "tier": "free",
+      "source": "https://uiarc.dev/components/popover",
+      "entry": "src/source/popover/popover.tsx",
+      "motion": [
+        "CSS transitions: the panel fades and settles from 5px toward its trigger at 0.97 scale on a spring; it leaves in 140ms.",
+        "Transitions instead of keyframes, so a reopen mid-close reverses from where the panel is.",
+        "Reduced motion drops the transform and keeps a short opacity fade."
+      ],
+      "exports": [
+        "Popover",
+        "PopoverClose",
+        "PopoverTrigger",
+        "PopoverContent"
+      ]
+    },
+    {
+      "id": "arc:resizable-panels",
+      "tier": "free",
+      "source": "https://uiarc.dev/components/resizable-panels",
+      "entry": "src/source/resizable-panels/resizable-panels.tsx",
+      "exports": [
+        "ResizablePanelProps",
+        "ResizablePanelsProps",
+        "ResizablePanel",
+        "ResizablePanels"
+      ]
+    },
+    {
+      "id": "arc:rich-text-editor",
+      "tier": "free",
+      "source": "https://uiarc.dev/components/rich-text-editor",
+      "entry": "src/source/rich-text-editor/rich-text-editor.tsx",
+      "exports": [
+        "BlockType",
+        "normalizeUrl",
+        "markdownToHtml",
+        "htmlToMarkdown",
+        "sanitizeHtml",
+        "RichTextValue",
+        "RichTextEditorHandle",
+        "RichTextEditorProps",
+        "RichTextEditor"
+      ]
+    },
+    {
+      "id": "arc:scroll-area",
+      "tier": "free",
+      "source": "https://uiarc.dev/components/scroll-area",
+      "entry": "src/source/scroll-area/scroll-area.tsx",
+      "exports": [
+        "ScrollAreaEdges",
+        "ScrollAreaProps",
+        "ScrollArea"
+      ]
+    },
+    {
+      "id": "arc:sign-in",
+      "tier": "free",
+      "source": "https://uiarc.dev/components/blocks/sign-in",
+      "entry": "src/source/blocks/sign-in/sign-in.tsx",
+      "exports": [
+        "SignInMethod",
+        "SignInAccount",
+        "SignInProps",
+        "SignIn"
+      ]
+    },
+    {
+      "id": "arc:signature-pad",
+      "tier": "free",
+      "source": "https://uiarc.dev/components/signature-pad",
+      "entry": "src/source/signature-pad/signature-pad.tsx",
+      "exports": [
+        "InkPoint",
+        "InkColor",
+        "InkWidth",
+        "InkStroke",
+        "OutlineOptions",
+        "PAD_WIDTH",
+        "getStrokeOutline",
+        "outlineToPath",
+        "strokePath",
+        "signatureToSvg",
+        "signatureToPng",
+        "SignaturePadProps",
+        "SignaturePad"
+      ]
+    },
+    {
+      "id": "arc:signup-form",
+      "tier": "free",
+      "source": "https://uiarc.dev/components/blocks/signup-form",
+      "entry": "src/source/blocks/signup-form/signup-form.tsx",
+      "exports": [
+        "SignupDetails",
+        "SignupFormProps",
+        "SignupForm"
+      ]
+    },
+    {
+      "id": "arc:site-footer",
+      "tier": "free",
+      "source": "https://uiarc.dev/components/blocks/site-footer",
+      "entry": "src/source/blocks/site-footer/site-footer.tsx",
+      "exports": [
+        "SiteFooterVariant",
+        "SiteFooterLink",
+        "SiteFooterColumn",
+        "SiteFooterNewsletter",
+        "SiteFooterProps",
+        "siteFooterExampleColumns",
+        "SiteFooter",
+        "SiteFooterBlock"
+      ]
+    },
+    {
+      "id": "arc:site-header",
+      "tier": "free",
+      "source": "https://uiarc.dev/components/blocks/site-header",
+      "entry": "src/source/blocks/site-header/site-header.tsx",
+      "exports": [
+        "SiteHeaderVariant",
+        "SiteHeaderLink",
+        "SiteHeaderFeature",
+        "SiteHeaderItem",
+        "SiteHeaderAction",
+        "SiteHeaderDestination",
+        "SiteHeaderProps",
+        "ArcMark",
+        "siteHeaderExampleItems",
+        "SiteHeader",
+        "SiteHeaderBlock"
+      ]
+    },
+    {
+      "id": "arc:sortable-data-table",
+      "tier": "free",
+      "source": "https://uiarc.dev/components/sortable-data-table",
+      "entry": "src/source/sortable-data-table/sortable-data-table.tsx",
+      "motion": [
+        "Rows glide to their new positions on a spring when the sort changes; the sort arrow flips.",
+        "The selection count rolls and Clear fades in with a short blur.",
+        "Reduced motion reorders instantly and fades the count."
+      ],
+      "exports": [
+        "SortDirection",
+        "SortState",
+        "DataColumn",
+        "SortableDataTableProps",
+        "SortableDataTable"
+      ]
+    },
+    {
+      "id": "arc:stats-band",
+      "tier": "free",
+      "source": "https://uiarc.dev/components/blocks/stats-band",
+      "entry": "src/source/blocks/stats-band/stats-band.tsx",
+      "exports": [
+        "StatsBandLayout",
+        "StatsBandProps",
+        "StatsBand",
+        "StatsBandBlock"
+      ]
+    },
+    {
+      "id": "arc:swipe-actions",
+      "tier": "free",
+      "source": "https://uiarc.dev/components/swipe-actions",
+      "entry": "src/source/swipe-actions/swipe-actions.tsx",
+      "exports": [
+        "SwipeAction",
+        "SwipeActionsProps",
+        "SwipeActionsRowProps",
+        "SwipeActions",
+        "SwipeActionsRow"
+      ]
+    },
+    {
+      "id": "arc:time-picker",
+      "tier": "free",
+      "source": "https://uiarc.dev/components/time-picker",
+      "entry": "src/source/time-picker/time-picker.tsx",
+      "exports": [
+        "TimePickerProps",
+        "TimePicker"
+      ]
+    },
+    {
+      "id": "arc:timeline",
+      "tier": "free",
+      "source": "https://uiarc.dev/components/timeline",
+      "entry": "src/source/timeline/timeline.tsx",
+      "motion": [
+        "The connecting line draws as rows come into view and markers pop in.",
+        "New updates slide in at the top while the rest glide down; details expand on a spring.",
+        "Reduced motion replaces travel with short fades and instant height changes."
+      ],
+      "exports": [
+        "TimelineEvent",
+        "TimelineProps",
+        "Timeline"
+      ]
+    },
+    {
+      "id": "arc:toast-stack",
+      "tier": "free",
+      "source": "https://uiarc.dev/components/toast-stack",
+      "entry": "src/source/toast-stack/toast-stack.tsx",
+      "exports": [
+        "ToastType",
+        "ToastAction",
+        "ToastOptions",
+        "ToastStackApi",
+        "ToastStackProviderProps",
+        "ToastStackProps",
+        "ToastStackProvider",
+        "useToastStack",
+        "ToastStack"
+      ]
+    },
+    {
+      "id": "arc:toast",
+      "tier": "free",
+      "source": "https://uiarc.dev/components/toast",
+      "entry": "src/source/toast/toast.tsx",
+      "motion": [
+        "Enters rising 16px from 0.96 scale on a morph spring while the check draws in; a swipe past 80px or 480px/s throws it off with its release velocity.",
+        "Closing sinks it 8px and fades. Copy changes rise in while the height springs to fit.",
+        "Reduced motion uses opacity fades and disables dragging."
+      ],
+      "exports": [
+        "ToastProps",
+        "Toast"
+      ]
+    },
+    {
+      "id": "arc:tree-view",
+      "tier": "free",
+      "source": "https://uiarc.dev/components/tree-view",
+      "entry": "src/source/tree-view/tree-view.tsx",
+      "exports": [
+        "TreeNode",
+        "TreeViewProps",
+        "TreeView"
+      ]
+    },
+    {
+      "id": "arc:user-menu",
+      "tier": "free",
+      "source": "https://uiarc.dev/components/user-menu",
+      "entry": "src/source/user-menu/user-menu.tsx",
+      "exports": [
+        "UserStatus",
+        "ThemePreference",
+        "userStatuses",
+        "UserMenuUser",
+        "UserMenuItem",
+        "UserMenuProps",
+        "PresenceDot",
+        "UserMenu"
+      ]
+    }
+  ],
+  "supportingFamilies": [
+    "arc:button",
+    "arc:avatar"
+  ],
+  "files": [
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/avatar/avatar.module.css",
+      "target": "src/source/avatar/avatar.module.css",
+      "sourceSha256": "7a24bd77c83d3c14ac2c90905dc7d64eea7b60e8bf6eddd2e5d30dd6c96bd816",
+      "adaptedSha256": "7a24bd77c83d3c14ac2c90905dc7d64eea7b60e8bf6eddd2e5d30dd6c96bd816",
+      "changes": [],
+      "originalSource": "app/src/arc/avatar/avatar.module.css"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/avatar/avatar.tsx",
+      "target": "src/source/avatar/avatar.tsx",
+      "sourceSha256": "94c22aa1f558a72d3dae928b35516fe182c296636cc8c24ea9fee194718e166c",
+      "adaptedSha256": "990a8a66e0d3c3aae41bd3b18e7b0cf12574848422a8b20ed2bbb9a21fa40fc9",
+      "changes": [
+        "canonical siso:blocks marker"
+      ],
+      "originalSource": "app/src/arc/avatar/avatar.tsx"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/button/button.module.css",
+      "target": "src/source/button/button.module.css",
+      "sourceSha256": "77323140c3f9fbad7b08dddba0db7260aa233c34c39a9d24cfa646fea287e140",
+      "adaptedSha256": "77323140c3f9fbad7b08dddba0db7260aa233c34c39a9d24cfa646fea287e140",
+      "changes": [],
+      "originalSource": "app/src/arc/button/button.module.css"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/button/button.tsx",
+      "target": "src/source/button/button.tsx",
+      "sourceSha256": "6a56d78cb75a6fd5f5cfdd03be8b02bf96f0bc96790d3c81abeee10e089fecec",
+      "adaptedSha256": "8c8671e44d1574c217df4fc2c879ce57a968a48760d3d74a42a441fca1e32fe7",
+      "changes": [
+        "canonical siso:blocks marker"
+      ],
+      "originalSource": "app/src/arc/button/button.tsx"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/chat-thread/chat-thread.module.css",
+      "target": "src/source/chat-thread/chat-thread.module.css",
+      "sourceSha256": "31ea2e7d3e7593c5d191579e005fb1aa05bc92b541f8743eed2183171ef5a7e7",
+      "adaptedSha256": "31ea2e7d3e7593c5d191579e005fb1aa05bc92b541f8743eed2183171ef5a7e7",
+      "changes": [],
+      "originalSource": "app/src/arc/chat-thread/chat-thread.module.css"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/chat-thread/chat-thread.tsx",
+      "target": "src/source/chat-thread/chat-thread.tsx",
+      "sourceSha256": "dcef29b62c7e70cbc56a8a3de49e36a62285af8d72ebdaaa9d7a99461505bec9",
+      "adaptedSha256": "45787d43bb79ab1fa56cd151a474334be4f1aa8d31b5cb0defd3b48d872eaf87",
+      "changes": [
+        "canonical siso:blocks marker"
+      ],
+      "originalSource": "app/src/arc/chat-thread/chat-thread.tsx"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/command-palette/command-palette.module.css",
+      "target": "src/source/command-palette/command-palette.module.css",
+      "sourceSha256": "4eaff3df866b28b91f54adeb13e06f98f8753e69a3baff64287e6edd1e74ec52",
+      "adaptedSha256": "4eaff3df866b28b91f54adeb13e06f98f8753e69a3baff64287e6edd1e74ec52",
+      "changes": [],
+      "originalSource": "app/src/arc/command-palette/command-palette.module.css"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/command-palette/command-palette.tsx",
+      "target": "src/source/command-palette/command-palette.tsx",
+      "sourceSha256": "2a4bd0804f3be91c9bf3f900c6dc0e2f0c889ff5f37863cfcbc81fe7931f7dca",
+      "adaptedSha256": "8ec8547dc9b27268c96293abdba1d4ff27efd25f2de866f8e1a7f8e75139b4ef",
+      "changes": [
+        "canonical siso:blocks marker"
+      ],
+      "originalSource": "app/src/arc/command-palette/command-palette.tsx"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/comment-thread/comment-thread.module.css",
+      "target": "src/source/comment-thread/comment-thread.module.css",
+      "sourceSha256": "5bdcb52d70d94d701d77d20fcb020020007061888277c604abcfbc8c334d0829",
+      "adaptedSha256": "5bdcb52d70d94d701d77d20fcb020020007061888277c604abcfbc8c334d0829",
+      "changes": [],
+      "originalSource": "app/src/arc/comment-thread/comment-thread.module.css"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/comment-thread/comment-thread.tsx",
+      "target": "src/source/comment-thread/comment-thread.tsx",
+      "sourceSha256": "cd6a270befb55c8190bec700e23170ce360586b09ee55d71b972b0e15a0fc442",
+      "adaptedSha256": "1f8d29926058d3fd57756a07b8ce947ff5202c8d5bbe1af8d46dd86970f5bbc7",
+      "changes": [
+        "canonical siso:blocks marker"
+      ],
+      "originalSource": "app/src/arc/comment-thread/comment-thread.tsx"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/dialog/dialog.module.css",
+      "target": "src/source/dialog/dialog.module.css",
+      "sourceSha256": "b43cd10ab34fad31445686c5681e5938c2245c10c465a2b2e3774d802a81e603",
+      "adaptedSha256": "b43cd10ab34fad31445686c5681e5938c2245c10c465a2b2e3774d802a81e603",
+      "changes": [],
+      "originalSource": "app/src/arc/dialog/dialog.module.css"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/dialog/dialog.tsx",
+      "target": "src/source/dialog/dialog.tsx",
+      "sourceSha256": "eb84a7eb2ac864dc07f2825eab252eac78e9c6b889d0e9f00bf6b2b799975ade",
+      "adaptedSha256": "ceca41acc98aabd717c3bc1d6def823a332dac54a7942e239bd06ee015c62f28",
+      "changes": [
+        "canonical siso:blocks marker",
+        "portal container receives scoped theme; original motion/layout preserved"
+      ],
+      "originalSource": "app/src/arc/dialog/dialog.tsx"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/drawer/drawer.module.css",
+      "target": "src/source/drawer/drawer.module.css",
+      "sourceSha256": "92378d24196077625b36f742474740977ef181e496abdc5b6eb6230b15ec2eea",
+      "adaptedSha256": "92378d24196077625b36f742474740977ef181e496abdc5b6eb6230b15ec2eea",
+      "changes": [],
+      "originalSource": "app/src/arc/drawer/drawer.module.css"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/drawer/drawer.tsx",
+      "target": "src/source/drawer/drawer.tsx",
+      "sourceSha256": "eca310cb947c8da843f1128a77a2683c4e031519081da8c08d7ee405e5bbd87a",
+      "adaptedSha256": "7adcd5e6b5fea486a2ea595972c094d9fd0a178290e332698c1178decdeb8bf7",
+      "changes": [
+        "canonical siso:blocks marker",
+        "portal container receives scoped theme; original motion/layout preserved"
+      ],
+      "originalSource": "app/src/arc/drawer/drawer.tsx"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/empty-state/empty-state.module.css",
+      "target": "src/source/empty-state/empty-state.module.css",
+      "sourceSha256": "e65e4c4b6e3bd31b8925cb6a5d58e8c4826ffca6efb100f786c70428f98afc1a",
+      "adaptedSha256": "e65e4c4b6e3bd31b8925cb6a5d58e8c4826ffca6efb100f786c70428f98afc1a",
+      "changes": [],
+      "originalSource": "app/src/arc/empty-state/empty-state.module.css"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/empty-state/empty-state.tsx",
+      "target": "src/source/empty-state/empty-state.tsx",
+      "sourceSha256": "e99e39c02b03e77738e8e8a69d12f24b6e9d5b3b66f12f1425cec32700fa69ef",
+      "adaptedSha256": "256c4b08685b79c13971f33c7f89a3d94d5486ffdd19b235dbe269bee2aa96ba",
+      "changes": [
+        "canonical siso:blocks marker"
+      ],
+      "originalSource": "app/src/arc/empty-state/empty-state.tsx"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/file-dropzone/file-dropzone.module.css",
+      "target": "src/source/file-dropzone/file-dropzone.module.css",
+      "sourceSha256": "0d1cc9a41e724b04727f3392e29ef588c0211db4745bc87b784da999b03a2ef4",
+      "adaptedSha256": "0d1cc9a41e724b04727f3392e29ef588c0211db4745bc87b784da999b03a2ef4",
+      "changes": [],
+      "originalSource": "app/src/arc/file-dropzone/file-dropzone.module.css"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/file-dropzone/file-dropzone.tsx",
+      "target": "src/source/file-dropzone/file-dropzone.tsx",
+      "sourceSha256": "f160c1e56d39307af6bb0b9ad56a36ea3acef46b7b006218d2b26b1ce1ae0a24",
+      "adaptedSha256": "67f28cd58995c00c76c77133b1ecb2af71ad4d71e7b92c536cc446f70afd2580",
+      "changes": [
+        "canonical siso:blocks marker"
+      ],
+      "originalSource": "app/src/arc/file-dropzone/file-dropzone.tsx"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/filter-toolbar/filter-toolbar.module.css",
+      "target": "src/source/filter-toolbar/filter-toolbar.module.css",
+      "sourceSha256": "b24254c41e9113d0765773381a17c7eca246ed533bcb0c6e711d25e34746b250",
+      "adaptedSha256": "b24254c41e9113d0765773381a17c7eca246ed533bcb0c6e711d25e34746b250",
+      "changes": [],
+      "originalSource": "app/src/arc/filter-toolbar/filter-toolbar.module.css"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/filter-toolbar/filter-toolbar.tsx",
+      "target": "src/source/filter-toolbar/filter-toolbar.tsx",
+      "sourceSha256": "90fbd7b5dfca993bb6992cda514d7c17df406fcf63ecf2c04712a20c538ed1db",
+      "adaptedSha256": "2c84c89f3f613a722892960606237e1c662ff35bb08a333c2ff784ec2ad73408",
+      "changes": [
+        "canonical siso:blocks marker"
+      ],
+      "originalSource": "app/src/arc/filter-toolbar/filter-toolbar.tsx"
+    },
+    {
+      "source": "packages/siso-atoms/src/source/foundation.scoped.css",
+      "target": "src/source/foundation.scoped.css",
+      "sourceSha256": "a3bfd6bc2f7401d398e43915cd8e7471d424ad3b68302384f45f846b3ff8f1f8",
+      "adaptedSha256": "93b39c2ca9c29576556a074ecff97d12874d90e4c5d3624a2f4064791b34892c",
+      "changes": [
+        "local copy of verified Arc foundation",
+        "scope renamed to .siso-blocks-source",
+        "focus rules scoped"
+      ]
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/hover-card/hover-card.module.css",
+      "target": "src/source/hover-card/hover-card.module.css",
+      "sourceSha256": "2a847a6020215674247678354139cb7a9b7b5311f86f0a7d6403a3575c83ba2d",
+      "adaptedSha256": "2a847a6020215674247678354139cb7a9b7b5311f86f0a7d6403a3575c83ba2d",
+      "changes": [],
+      "originalSource": "app/src/arc/hover-card/hover-card.module.css"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/hover-card/hover-card.tsx",
+      "target": "src/source/hover-card/hover-card.tsx",
+      "sourceSha256": "8fe88d6df8541251d9827336614a5f7a87026992eb66a42d8f71679d274d89c2",
+      "adaptedSha256": "edae58edb99ab647680f328b76744ce4aabdf509410a48c73fba327780f2f5e8",
+      "changes": [
+        "canonical siso:blocks marker",
+        "portal container receives scoped theme; original motion/layout preserved"
+      ],
+      "originalSource": "app/src/arc/hover-card/hover-card.tsx"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/lib/arc-provider.tsx",
+      "target": "src/source/lib/arc-provider.tsx",
+      "sourceSha256": "da999c71ba5e56b85ed5cdbfd38d2bf0ccb40dc430e37fefbda4f02d3ed0062f",
+      "adaptedSha256": "91d57c1248552dbb48a4faac79fe51428d2f0f91ca3eca91fb34443ae67fd22b",
+      "changes": [
+        "canonical siso:blocks marker"
+      ],
+      "originalSource": "app/src/arc/lib/arc-provider.tsx"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/lib/motion-tokens.ts",
+      "target": "src/source/lib/motion-tokens.ts",
+      "sourceSha256": "bec65d2e1b180dd3c574edc60cf84e0fa336e7ff8640eba0c70bcf0ae765fb8a",
+      "adaptedSha256": "bec65d2e1b180dd3c574edc60cf84e0fa336e7ff8640eba0c70bcf0ae765fb8a",
+      "changes": [],
+      "originalSource": "app/src/arc/lib/motion-tokens.ts"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/motion-tokens.ts",
+      "target": "src/source/motion-tokens.ts",
+      "sourceSha256": "13af43b57ed38e5b72cfc06ff0ccc39b0593721f04840e73532893593cc61491",
+      "adaptedSha256": "13af43b57ed38e5b72cfc06ff0ccc39b0593721f04840e73532893593cc61491",
+      "changes": [],
+      "originalSource": "app/src/arc/motion-tokens.ts"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/notification-center/notification-center.module.css",
+      "target": "src/source/notification-center/notification-center.module.css",
+      "sourceSha256": "4411f6909360d67898017f266305e38e8a552f219cf5c33cf43b5bb6b872b7c9",
+      "adaptedSha256": "4411f6909360d67898017f266305e38e8a552f219cf5c33cf43b5bb6b872b7c9",
+      "changes": [],
+      "originalSource": "app/src/arc/notification-center/notification-center.module.css"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/notification-center/notification-center.tsx",
+      "target": "src/source/notification-center/notification-center.tsx",
+      "sourceSha256": "189f98adcdbb6fb398079409bcf62133dae18635e35c5eee4cc2d919306ee090",
+      "adaptedSha256": "ee17cfad8b28d124df19e95e0c301a0fff0a93f7a99ebec6bf234aa1dfe5bf10",
+      "changes": [
+        "canonical siso:blocks marker",
+        "portal container receives scoped theme; original motion/layout preserved"
+      ],
+      "originalSource": "app/src/arc/notification-center/notification-center.tsx"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/pagination/pagination.module.css",
+      "target": "src/source/pagination/pagination.module.css",
+      "sourceSha256": "9db319c0314c341b429210f8842f00d193eaa356c706ca1be2ebda32fcbea15c",
+      "adaptedSha256": "9db319c0314c341b429210f8842f00d193eaa356c706ca1be2ebda32fcbea15c",
+      "changes": [],
+      "originalSource": "app/src/arc/pagination/pagination.module.css"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/pagination/pagination.tsx",
+      "target": "src/source/pagination/pagination.tsx",
+      "sourceSha256": "c687e93ea563bd39d470dda1ba8b9ef9ad0b8132fc1593eb8361f3641d955a7e",
+      "adaptedSha256": "395433bd217bb239c9ae9b37a7a220b02d253449fd45b9bb8024b98bab9d0ba9",
+      "changes": [
+        "canonical siso:blocks marker"
+      ],
+      "originalSource": "app/src/arc/pagination/pagination.tsx"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/popover/popover.module.css",
+      "target": "src/source/popover/popover.module.css",
+      "sourceSha256": "6b92cdac211568a53a81b1d84bcbd0728cec93f741e64074f7e9f91f673702f6",
+      "adaptedSha256": "6b92cdac211568a53a81b1d84bcbd0728cec93f741e64074f7e9f91f673702f6",
+      "changes": [],
+      "originalSource": "app/src/arc/popover/popover.module.css"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/popover/popover.tsx",
+      "target": "src/source/popover/popover.tsx",
+      "sourceSha256": "c564d1974bc55e805cb92e37ab0d5dbf48b46429353981985f50adab2c93ff4c",
+      "adaptedSha256": "c7123cd6fcd98a93e4db22614f2952091b8c426361f0ffb810fdf02178ffe934",
+      "changes": [
+        "canonical siso:blocks marker",
+        "portal container receives scoped theme; original motion/layout preserved"
+      ],
+      "originalSource": "app/src/arc/popover/popover.tsx"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/sortable-data-table/sortable-data-table.module.css",
+      "target": "src/source/sortable-data-table/sortable-data-table.module.css",
+      "sourceSha256": "279624f7b4d1c0a1e765d5ae307b52eb5df80860e27704ead7b682579d1204b1",
+      "adaptedSha256": "279624f7b4d1c0a1e765d5ae307b52eb5df80860e27704ead7b682579d1204b1",
+      "changes": [],
+      "originalSource": "app/src/arc/sortable-data-table/sortable-data-table.module.css"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/sortable-data-table/sortable-data-table.tsx",
+      "target": "src/source/sortable-data-table/sortable-data-table.tsx",
+      "sourceSha256": "90350cd5d18abdd5fced97289482604fb48f2dfcf61ce82168697d7cef51e085",
+      "adaptedSha256": "731dc6644f03ed63d35abd742f596724a588d077bea1adfc81b225e57fc5f443",
+      "changes": [
+        "canonical siso:blocks marker"
+      ],
+      "originalSource": "app/src/arc/sortable-data-table/sortable-data-table.tsx"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/timeline/timeline.module.css",
+      "target": "src/source/timeline/timeline.module.css",
+      "sourceSha256": "34712f6b90d29cbc326f1115ee2588d330d729f63d661d7c2c80432b3585115c",
+      "adaptedSha256": "34712f6b90d29cbc326f1115ee2588d330d729f63d661d7c2c80432b3585115c",
+      "changes": [],
+      "originalSource": "app/src/arc/timeline/timeline.module.css"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/timeline/timeline.tsx",
+      "target": "src/source/timeline/timeline.tsx",
+      "sourceSha256": "71d91894d8337d7b163bb8b011fdc8d47039ae53e90b9e03afc01d845f76870c",
+      "adaptedSha256": "28ea2a0887e0440a0bae4d56e11f25f4d5e8b13f8ad3b4d829f6d4e905a86f27",
+      "changes": [
+        "canonical siso:blocks marker"
+      ],
+      "originalSource": "app/src/arc/timeline/timeline.tsx"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/toast/toast.module.css",
+      "target": "src/source/toast/toast.module.css",
+      "sourceSha256": "7c971d71804b5d4b10c876a08d8a5b3caa0ef19aa7d94d0ccfdb9e291d02fa1c",
+      "adaptedSha256": "7c971d71804b5d4b10c876a08d8a5b3caa0ef19aa7d94d0ccfdb9e291d02fa1c",
+      "changes": [],
+      "originalSource": "app/src/arc/toast/toast.module.css"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/toast/toast.tsx",
+      "target": "src/source/toast/toast.tsx",
+      "sourceSha256": "cc68a59e0db6f1f1a0c1b8ec6aaa7638c08be7e13367b370f8d3f44accddba7f",
+      "adaptedSha256": "a90e29ee4c57c6bbe2db4197ae6ae464528a5ee6b8328e80c18321517510b247",
+      "changes": [
+        "canonical siso:blocks marker"
+      ],
+      "originalSource": "app/src/arc/toast/toast.tsx"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/accordion/accordion.tsx",
+      "target": "src/source/accordion/accordion.tsx",
+      "sourceSha256": "4d24d519b511812da9dd2b5e2c7d696c0f849ac9ea391480927acf5cfaa3a977",
+      "adaptedSha256": "673c41cd574b0c236cd23e462bad5a5b23d493768f0cd54d558f9d50d16acf9e",
+      "changes": [
+        "catalogue marker; portable framework/media imports where present"
+      ],
+      "originalSource": "app/src/arc/accordion/accordion.tsx"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/accordion/accordion.module.css",
+      "target": "src/source/accordion/accordion.module.css",
+      "sourceSha256": "8a4fc9578571f3d7d2fe16998f7977f12671fcabcfc8d50a462c7bf9abd65243",
+      "adaptedSha256": "8a4fc9578571f3d7d2fe16998f7977f12671fcabcfc8d50a462c7bf9abd65243",
+      "changes": [],
+      "originalSource": "app/src/arc/accordion/accordion.module.css"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/announcement-bar/announcement-bar.tsx",
+      "target": "src/source/announcement-bar/announcement-bar.tsx",
+      "sourceSha256": "2183f6cc9b41c83d3078b521c3be57ccb6583f9fdf939751ad3d6d7ca716ae10",
+      "adaptedSha256": "c39a3c265939a1a00f0e0da2b4ad18a0e68486419f4a1e1d80ebbb898a42cea2",
+      "changes": [
+        "catalogue marker; portable framework/media imports where present"
+      ],
+      "originalSource": "app/src/arc/announcement-bar/announcement-bar.tsx"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/announcement-bar/announcement-bar.module.css",
+      "target": "src/source/announcement-bar/announcement-bar.module.css",
+      "sourceSha256": "d181f87bcab4aefb55f14cca268fba1c237b07bf81fb969b43f4019b7902b50c",
+      "adaptedSha256": "d181f87bcab4aefb55f14cca268fba1c237b07bf81fb969b43f4019b7902b50c",
+      "changes": [],
+      "originalSource": "app/src/arc/announcement-bar/announcement-bar.module.css"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/blocks/blog-grid/blog-grid.tsx",
+      "target": "src/source/blocks/blog-grid/blog-grid.tsx",
+      "sourceSha256": "73cd70f3ccd522c9918ffd0357dfe70169745750afe355770a584539c4b7aecb",
+      "adaptedSha256": "f88dcf31aaf8dfb44769b2edf8a3d1a257371e87dcc10856f56124495f2b3ee0",
+      "changes": [
+        "catalogue marker; portable framework/media imports where present",
+        "preserve source behavior under strict TypeScript and ES2022"
+      ],
+      "originalSource": "app/src/arc/blocks/blog-grid/blog-grid.tsx"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/blocks/blog-grid/blog-grid-data.ts",
+      "target": "src/source/blocks/blog-grid/blog-grid-data.ts",
+      "sourceSha256": "82a703a0769a1b1f90aa5fb871768660340e7a8b84617949953382548cadcc23",
+      "adaptedSha256": "89252780b50f65fcf6147f259692171c2c422aec7680900a3dfe9aef1039819d",
+      "changes": [
+        "catalogue marker; portable framework/media imports where present"
+      ],
+      "originalSource": "app/src/arc/blocks/blog-grid/blog-grid-data.ts"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/blocks/blog-grid/blog-grid.module.css",
+      "target": "src/source/blocks/blog-grid/blog-grid.module.css",
+      "sourceSha256": "618754a1f3c7c1b895a9cd49cb5e5e16e9c04d755ea2a2fd1747d19be0ed4743",
+      "adaptedSha256": "618754a1f3c7c1b895a9cd49cb5e5e16e9c04d755ea2a2fd1747d19be0ed4743",
+      "changes": [],
+      "originalSource": "app/src/arc/blocks/blog-grid/blog-grid.module.css"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/bottom-sheet/bottom-sheet.tsx",
+      "target": "src/source/bottom-sheet/bottom-sheet.tsx",
+      "sourceSha256": "c31e59f706c6da72acf78737c842fc58bf1e42d75002b89103914308d689d3f3",
+      "adaptedSha256": "315c860feab841a590490c399fc50f31b0df51f7524c2f1b3f4464808478df7f",
+      "changes": [
+        "catalogue marker; portable framework/media imports where present",
+        "theme-preserving source portal host"
+      ],
+      "originalSource": "app/src/arc/bottom-sheet/bottom-sheet.tsx"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/bottom-sheet/bottom-sheet.module.css",
+      "target": "src/source/bottom-sheet/bottom-sheet.module.css",
+      "sourceSha256": "7e7f5d9d09757b8c76afacd694bed8151fe48c9afe9e7a85a157361902275624",
+      "adaptedSha256": "7e7f5d9d09757b8c76afacd694bed8151fe48c9afe9e7a85a157361902275624",
+      "changes": [],
+      "originalSource": "app/src/arc/bottom-sheet/bottom-sheet.module.css"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/breadcrumb/breadcrumb.tsx",
+      "target": "src/source/breadcrumb/breadcrumb.tsx",
+      "sourceSha256": "e2431ed423d9cfd98286bab07054ac4cdf0e04c33eb5bbc79faed69010109f28",
+      "adaptedSha256": "64a4143dbf315d1acf12f4c7bf520037d94d95020a7378d33489537384706d4e",
+      "changes": [
+        "catalogue marker; portable framework/media imports where present"
+      ],
+      "originalSource": "app/src/arc/breadcrumb/breadcrumb.tsx"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/breadcrumb/breadcrumb.module.css",
+      "target": "src/source/breadcrumb/breadcrumb.module.css",
+      "sourceSha256": "e6357d15da3a9e2726016664fe2bcee0523a47f6c62eb0b9793c44407436ee19",
+      "adaptedSha256": "e6357d15da3a9e2726016664fe2bcee0523a47f6c62eb0b9793c44407436ee19",
+      "changes": [],
+      "originalSource": "app/src/arc/breadcrumb/breadcrumb.module.css"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/calendar/calendar.tsx",
+      "target": "src/source/calendar/calendar.tsx",
+      "sourceSha256": "cf09873e5d895e46129159e62f7e494f448cfd247aaddd6c9a54de45a5d6c108",
+      "adaptedSha256": "1668ec6db26644c7d7706d024c3f4575af4676652c1255a8ccb396e37d65cd2a",
+      "changes": [
+        "catalogue marker; portable framework/media imports where present"
+      ],
+      "originalSource": "app/src/arc/calendar/calendar.tsx"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/lib/use-today.ts",
+      "target": "src/source/lib/use-today.ts",
+      "sourceSha256": "069a833b34cb103040013346c07ad453d235da1096ea011d2c50bd148029a3af",
+      "adaptedSha256": "f45d1b65ddd0754efa894ad47416c9c2379f79a3329f6b3e752780424833036e",
+      "changes": [
+        "catalogue marker; portable framework/media imports where present"
+      ],
+      "originalSource": "app/src/arc/lib/use-today.ts"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/calendar/calendar.module.css",
+      "target": "src/source/calendar/calendar.module.css",
+      "sourceSha256": "2e019a6ca658f124c7ea0303aac46aa615a4e6bb3bc485c57d3b85acb0d26adc",
+      "adaptedSha256": "2e019a6ca658f124c7ea0303aac46aa615a4e6bb3bc485c57d3b85acb0d26adc",
+      "changes": [],
+      "originalSource": "app/src/arc/calendar/calendar.module.css"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/card-stack/card-stack.tsx",
+      "target": "src/source/card-stack/card-stack.tsx",
+      "sourceSha256": "dfab6b6961d0e53bda207c3c0267104875d44b16bedecd1e77f2461b23097b66",
+      "adaptedSha256": "963957d40ef07aeb9a914a651f2cd6851871bac0876c7b3c3cbd719bd5f4572c",
+      "changes": [
+        "catalogue marker; portable framework/media imports where present"
+      ],
+      "originalSource": "app/src/arc/card-stack/card-stack.tsx"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/card-stack/card-stack.module.css",
+      "target": "src/source/card-stack/card-stack.module.css",
+      "sourceSha256": "cc56bd67bcebd7c04440c7a474e98b2074dda8fcd9cea21d4381e6f16398f959",
+      "adaptedSha256": "cc56bd67bcebd7c04440c7a474e98b2074dda8fcd9cea21d4381e6f16398f959",
+      "changes": [],
+      "originalSource": "app/src/arc/card-stack/card-stack.module.css"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/carousel/carousel.tsx",
+      "target": "src/source/carousel/carousel.tsx",
+      "sourceSha256": "d6a10bf50641fec5b83197b917e272e5c0f74989cf7cf82001b622a84a5a693f",
+      "adaptedSha256": "40f559ee0d2b6ad1d1c39d2ad7f3b45dfe4ca0581be245deccaba7b6f344ea0d",
+      "changes": [
+        "catalogue marker; portable framework/media imports where present"
+      ],
+      "originalSource": "app/src/arc/carousel/carousel.tsx"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/carousel/carousel.module.css",
+      "target": "src/source/carousel/carousel.module.css",
+      "sourceSha256": "0ea3d62c03daf3a07bf7c591cc4402cbb518ae9e144b307cce8ae76ccacee035",
+      "adaptedSha256": "0ea3d62c03daf3a07bf7c591cc4402cbb518ae9e144b307cce8ae76ccacee035",
+      "changes": [],
+      "originalSource": "app/src/arc/carousel/carousel.module.css"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/blocks/changelog-feed/changelog-feed.tsx",
+      "target": "src/source/blocks/changelog-feed/changelog-feed.tsx",
+      "sourceSha256": "86bba12881fb6eabad79ddc8cb8543918a6d3b09d35287a1d6d3b2a9fd0332e1",
+      "adaptedSha256": "d822e64228360d58c5487937367ac8f4315807d35a6a29a17b3d81a8d89f19d6",
+      "changes": [
+        "catalogue marker; portable framework/media imports where present"
+      ],
+      "originalSource": "app/src/arc/blocks/changelog-feed/changelog-feed.tsx"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/copy-button/copy-button.tsx",
+      "target": "src/source/copy-button/copy-button.tsx",
+      "sourceSha256": "a6faac2922a48cc05ec72650ed63aee9b3871446df683cb7de6790f9bb19744a",
+      "adaptedSha256": "5bb400cd9d6f16122bdba2cf3cf0bc0c5d6342d7d5f0e8de44cf7d3c6a1f1c93",
+      "changes": [
+        "catalogue marker; portable framework/media imports where present"
+      ],
+      "originalSource": "app/src/arc/copy-button/copy-button.tsx"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/lib/use-copy-feedback.ts",
+      "target": "src/source/lib/use-copy-feedback.ts",
+      "sourceSha256": "88d0ae55bb3e241f529912a4802bbf014e4ba437025acc90ab13e012702273c5",
+      "adaptedSha256": "fa198de1c50e2ef1d7e0cd933f21b235f7df0d6b1c8f463bc25b0bcc7bc6afb4",
+      "changes": [
+        "catalogue marker; portable framework/media imports where present"
+      ],
+      "originalSource": "app/src/arc/lib/use-copy-feedback.ts"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/copy-button/copy-button.module.css",
+      "target": "src/source/copy-button/copy-button.module.css",
+      "sourceSha256": "090ea463f90ebe80e5fbe9abaa22b8c5ed1daec2068e7bcd18baab09e39dc08e",
+      "adaptedSha256": "090ea463f90ebe80e5fbe9abaa22b8c5ed1daec2068e7bcd18baab09e39dc08e",
+      "changes": [],
+      "originalSource": "app/src/arc/copy-button/copy-button.module.css"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/lib/media.ts",
+      "target": "src/source/lib/media.ts",
+      "sourceSha256": "0ce9a463e151116a4e1990ce0d68ed76ab4f7b1605a12a8996bc0040fdf369cc",
+      "adaptedSha256": "4b6c91cf37e413ed8c4e84faf24fb233d18ef5e72e2369bfc4dc3c8de5e23caf",
+      "changes": [
+        "catalogue marker; portable framework/media imports where present"
+      ],
+      "originalSource": "app/src/arc/lib/media.ts"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/blocks/changelog-feed/changelog-feed.module.css",
+      "target": "src/source/blocks/changelog-feed/changelog-feed.module.css",
+      "sourceSha256": "84b99e472af69d1452c3e012d1f7a499dc904fe629ea698576ebf974f7924abb",
+      "adaptedSha256": "84b99e472af69d1452c3e012d1f7a499dc904fe629ea698576ebf974f7924abb",
+      "changes": [],
+      "originalSource": "app/src/arc/blocks/changelog-feed/changelog-feed.module.css"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/code-block/code-block.tsx",
+      "target": "src/source/code-block/code-block.tsx",
+      "sourceSha256": "af1c47e8f90e1287c4f26c30354250746809ddb97a3a4a30f8d83f0260c59379",
+      "adaptedSha256": "d84be811baf6bfb73ca1c27906b02c57dbcef76949dd790a7c3a9ec2bbcdf7b8",
+      "changes": [
+        "catalogue marker; portable framework/media imports where present"
+      ],
+      "originalSource": "app/src/arc/code-block/code-block.tsx"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/code-block/code-block.module.css",
+      "target": "src/source/code-block/code-block.module.css",
+      "sourceSha256": "a76414fc4141b0b76836cdddc8b59d15a7ab94c52e9222a26a8bdf98c96b1a1d",
+      "adaptedSha256": "a76414fc4141b0b76836cdddc8b59d15a7ab94c52e9222a26a8bdf98c96b1a1d",
+      "changes": [],
+      "originalSource": "app/src/arc/code-block/code-block.module.css"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/color-picker/color-picker.tsx",
+      "target": "src/source/color-picker/color-picker.tsx",
+      "sourceSha256": "621d6f4a3feef414f8c506163ced908e3d4be37b66b1572debf229f7e9b6c3e1",
+      "adaptedSha256": "c3cb9849cc6764c4daf5456b43493afd3017d621c24e75177d65d0c8b6f31a0d",
+      "changes": [
+        "catalogue marker; portable framework/media imports where present"
+      ],
+      "originalSource": "app/src/arc/color-picker/color-picker.tsx"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/text-morph/text-morph.tsx",
+      "target": "src/source/text-morph/text-morph.tsx",
+      "sourceSha256": "24b6559369ab4e5ca84e4465f3c9e4a973f3c259e90a539f8778c0cc0b9042c2",
+      "adaptedSha256": "a98801ce12c75e20e2763236c8b82f4b22d143bcff554b24366c6f100d424f5a",
+      "changes": [
+        "catalogue marker; portable framework/media imports where present"
+      ],
+      "originalSource": "app/src/arc/text-morph/text-morph.tsx"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/text-morph/text-morph.module.css",
+      "target": "src/source/text-morph/text-morph.module.css",
+      "sourceSha256": "bd51e5ba739e7b7272ad4b46fb500617aaaefb2ae4303010edaea6057f975989",
+      "adaptedSha256": "bd51e5ba739e7b7272ad4b46fb500617aaaefb2ae4303010edaea6057f975989",
+      "changes": [],
+      "originalSource": "app/src/arc/text-morph/text-morph.module.css"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/color-picker/color-picker.module.css",
+      "target": "src/source/color-picker/color-picker.module.css",
+      "sourceSha256": "c5fd30e3c4c638197fc288b3711f317f8849ba90293dd6a364bc4ee71de55fec",
+      "adaptedSha256": "c5fd30e3c4c638197fc288b3711f317f8849ba90293dd6a364bc4ee71de55fec",
+      "changes": [],
+      "originalSource": "app/src/arc/color-picker/color-picker.module.css"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/combobox/combobox.tsx",
+      "target": "src/source/combobox/combobox.tsx",
+      "sourceSha256": "12ae9a73956f4d4854259396fd377aa63321db18198e8816db5b1791ff9a56b7",
+      "adaptedSha256": "c755e054f33318055a870e60e2d5ddc3db401afbd834f87984f0957b92e8fa87",
+      "changes": [
+        "catalogue marker; portable framework/media imports where present"
+      ],
+      "originalSource": "app/src/arc/combobox/combobox.tsx"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/combobox/combobox.module.css",
+      "target": "src/source/combobox/combobox.module.css",
+      "sourceSha256": "d6515c41a6d61e713100ae5f2723d50a6afa2622629d685728dcf13d85a8f896",
+      "adaptedSha256": "d6515c41a6d61e713100ae5f2723d50a6afa2622629d685728dcf13d85a8f896",
+      "changes": [],
+      "originalSource": "app/src/arc/combobox/combobox.module.css"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/blocks/comparison-table/comparison-table.tsx",
+      "target": "src/source/blocks/comparison-table/comparison-table.tsx",
+      "sourceSha256": "21e121691a7b7eba0aee957d9614e0d210e734c4af8a98bac9071466a14901e8",
+      "adaptedSha256": "79dd758ca6040ef70973b6e4df5f0d2361c82fa95dbce5056ebf9a86a0ff9874",
+      "changes": [
+        "catalogue marker; portable framework/media imports where present"
+      ],
+      "originalSource": "app/src/arc/blocks/comparison-table/comparison-table.tsx"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/blocks/comparison-table/comparison-table-data.ts",
+      "target": "src/source/blocks/comparison-table/comparison-table-data.ts",
+      "sourceSha256": "3410f9d5483fd7a84affbc5bf58fefad09a8b0ee035197131e65737477a1105a",
+      "adaptedSha256": "e7d44f0a3af449d77541400704c8dc68fd9bef3c4aef97c393e14137b098abab",
+      "changes": [
+        "catalogue marker; portable framework/media imports where present"
+      ],
+      "originalSource": "app/src/arc/blocks/comparison-table/comparison-table-data.ts"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/blocks/comparison-table/comparison-table.module.css",
+      "target": "src/source/blocks/comparison-table/comparison-table.module.css",
+      "sourceSha256": "bf60cab371cc1a504a80111c4eca824129d0ea4b15960403e6870caafc595672",
+      "adaptedSha256": "bf60cab371cc1a504a80111c4eca824129d0ea4b15960403e6870caafc595672",
+      "changes": [],
+      "originalSource": "app/src/arc/blocks/comparison-table/comparison-table.module.css"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/blocks/contact-section/contact-section.tsx",
+      "target": "src/source/blocks/contact-section/contact-section.tsx",
+      "sourceSha256": "93c074391b1da2acd688870e5607336cd144d892ea32dee7caaa1730e25990ed",
+      "adaptedSha256": "9ebe5067bc950947d4528733b59a124eb7b2678e1fa1d9fc43f55dab31962679",
+      "changes": [
+        "catalogue marker; portable framework/media imports where present"
+      ],
+      "originalSource": "app/src/arc/blocks/contact-section/contact-section.tsx"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/input/input.tsx",
+      "target": "src/source/input/input.tsx",
+      "sourceSha256": "16a4e761b51482e9c066f284a38171085e71ae390e4b26f9f0c18dd8af21c8f2",
+      "adaptedSha256": "609d34e90e8afcf3c8125a3ae02bf086fd945fda914fd00ab8d78070f963ad51",
+      "changes": [
+        "catalogue marker; portable framework/media imports where present"
+      ],
+      "originalSource": "app/src/arc/input/input.tsx"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/input/input.module.css",
+      "target": "src/source/input/input.module.css",
+      "sourceSha256": "ef6716aa7b9f45898859735f416ac932517b94e66bed6b3d23d7aed180529bdf",
+      "adaptedSha256": "ef6716aa7b9f45898859735f416ac932517b94e66bed6b3d23d7aed180529bdf",
+      "changes": [],
+      "originalSource": "app/src/arc/input/input.module.css"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/segmented-control/segmented-control.tsx",
+      "target": "src/source/segmented-control/segmented-control.tsx",
+      "sourceSha256": "9e1a4bc135246c86ed2d8875a3a1266490aa38a3d7800759db630e700188e840",
+      "adaptedSha256": "888e6a3d6d74107aef2827f5b9762890f21be6280ad6f529efdfce0ae3a77ed9",
+      "changes": [
+        "catalogue marker; portable framework/media imports where present"
+      ],
+      "originalSource": "app/src/arc/segmented-control/segmented-control.tsx"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/segmented-control/segmented-control.module.css",
+      "target": "src/source/segmented-control/segmented-control.module.css",
+      "sourceSha256": "029f038c7f03762cf386554f5e59768a95e6f5c8eb8b459bf3ef56cef35d1788",
+      "adaptedSha256": "029f038c7f03762cf386554f5e59768a95e6f5c8eb8b459bf3ef56cef35d1788",
+      "changes": [],
+      "originalSource": "app/src/arc/segmented-control/segmented-control.module.css"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/textarea/textarea.tsx",
+      "target": "src/source/textarea/textarea.tsx",
+      "sourceSha256": "1ed43b87e45b04180f1c6b8b3b7543e071bed3a6fcb2033e98015c77a8b7135a",
+      "adaptedSha256": "3ba5b8d8620d190ad19b90e84909b6922a85ee3bc6ada9b79e851a090e8ffdd0",
+      "changes": [
+        "catalogue marker; portable framework/media imports where present"
+      ],
+      "originalSource": "app/src/arc/textarea/textarea.tsx"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/textarea/textarea.module.css",
+      "target": "src/source/textarea/textarea.module.css",
+      "sourceSha256": "57a9294f6f7eea903296334bf1203982b41736aa1082a83af4dc2e8bbc6a144c",
+      "adaptedSha256": "57a9294f6f7eea903296334bf1203982b41736aa1082a83af4dc2e8bbc6a144c",
+      "changes": [],
+      "originalSource": "app/src/arc/textarea/textarea.module.css"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/blocks/contact-section/contact-section.module.css",
+      "target": "src/source/blocks/contact-section/contact-section.module.css",
+      "sourceSha256": "0afef3b39537f27d397dfa6be95cd64408b4f7bd9186443dd1347d11e9134ba9",
+      "adaptedSha256": "0afef3b39537f27d397dfa6be95cd64408b4f7bd9186443dd1347d11e9134ba9",
+      "changes": [],
+      "originalSource": "app/src/arc/blocks/contact-section/contact-section.module.css"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/context-menu/context-menu.tsx",
+      "target": "src/source/context-menu/context-menu.tsx",
+      "sourceSha256": "84301492fadf8cfb3dfa1682381932c4b986404b2adc2ef4e868de1582eb367e",
+      "adaptedSha256": "90e13eabbd26867909f4f79238c4e75363f1bb578aeb651fcc3ece2ca98de918",
+      "changes": [
+        "catalogue marker; portable framework/media imports where present",
+        "theme-preserving source portal host"
+      ],
+      "originalSource": "app/src/arc/context-menu/context-menu.tsx"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/context-menu/context-menu.module.css",
+      "target": "src/source/context-menu/context-menu.module.css",
+      "sourceSha256": "bde4e0d0430b1f6ae812515d9a2964fcb39944f61fc3c7a9a58852cd38fa4238",
+      "adaptedSha256": "bde4e0d0430b1f6ae812515d9a2964fcb39944f61fc3c7a9a58852cd38fa4238",
+      "changes": [],
+      "originalSource": "app/src/arc/context-menu/context-menu.module.css"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/blocks/cta-section/cta-section.tsx",
+      "target": "src/source/blocks/cta-section/cta-section.tsx",
+      "sourceSha256": "f81f3073cbe12191b81272ea0043fc9d7768f77c52ae3235adb1900107606d84",
+      "adaptedSha256": "e0e72315958ac484ab42ac1e6e2370a501d7e604cbabec8dd5bdbf7354eecfa4",
+      "changes": [
+        "catalogue marker; portable framework/media imports where present"
+      ],
+      "originalSource": "app/src/arc/blocks/cta-section/cta-section.tsx"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/blocks/cta-section/cta-section-data.ts",
+      "target": "src/source/blocks/cta-section/cta-section-data.ts",
+      "sourceSha256": "c66c14922ff9a3b99205352560aaef1e4dedc280dfe4644e611ab39d85dbd313",
+      "adaptedSha256": "70fb760d184d35920d8a8bdcfa19842a88a5061bd11a4783e452527eb3bd9582",
+      "changes": [
+        "catalogue marker; portable framework/media imports where present"
+      ],
+      "originalSource": "app/src/arc/blocks/cta-section/cta-section-data.ts"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/blocks/cta-section/cta-section.module.css",
+      "target": "src/source/blocks/cta-section/cta-section.module.css",
+      "sourceSha256": "44829bc68844a21a3ddb860ef69ffe9c018957bc513b69ad33c6431ce82f2742",
+      "adaptedSha256": "44829bc68844a21a3ddb860ef69ffe9c018957bc513b69ad33c6431ce82f2742",
+      "changes": [],
+      "originalSource": "app/src/arc/blocks/cta-section/cta-section.module.css"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/date-picker/date-picker.tsx",
+      "target": "src/source/date-picker/date-picker.tsx",
+      "sourceSha256": "996d6b6703f7478c9ce286a3bbcd49a10aac0cb489b0d8915dfd89dad9c4efb8",
+      "adaptedSha256": "b15485cd193b65546d53b508978a201edfaf3c4f84f9d501274a3df8533e104c",
+      "changes": [
+        "catalogue marker; portable framework/media imports where present"
+      ],
+      "originalSource": "app/src/arc/date-picker/date-picker.tsx"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/date-picker/date-picker.module.css",
+      "target": "src/source/date-picker/date-picker.module.css",
+      "sourceSha256": "fc3907dc484832ef441b367dd16135bf081ec77894ea1ae7c9c59508a2abe95a",
+      "adaptedSha256": "fc3907dc484832ef441b367dd16135bf081ec77894ea1ae7c9c59508a2abe95a",
+      "changes": [],
+      "originalSource": "app/src/arc/date-picker/date-picker.module.css"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/date-range-picker/date-range-picker.tsx",
+      "target": "src/source/date-range-picker/date-range-picker.tsx",
+      "sourceSha256": "ca4172b1125a3ac22ff06e17b599a6dbbe496247a75f7be46fa340de20d54a2f",
+      "adaptedSha256": "8e781fe74ec82c9f9227e02ee5357279b0ff57cef0ba64ffe302247f2a5ae858",
+      "changes": [
+        "catalogue marker; portable framework/media imports where present"
+      ],
+      "originalSource": "app/src/arc/date-range-picker/date-range-picker.tsx"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/date-range-picker/date-range-picker.module.css",
+      "target": "src/source/date-range-picker/date-range-picker.module.css",
+      "sourceSha256": "e83b9b26c0bc702dcfe613fe39b3a8cc75e44a5a354f5bca579bd36979e20597",
+      "adaptedSha256": "e83b9b26c0bc702dcfe613fe39b3a8cc75e44a5a354f5bca579bd36979e20597",
+      "changes": [],
+      "originalSource": "app/src/arc/date-range-picker/date-range-picker.module.css"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/dropdown-menu/dropdown-menu.tsx",
+      "target": "src/source/dropdown-menu/dropdown-menu.tsx",
+      "sourceSha256": "93bcd4952628899159bfe984c43d3d23d91aa2eddbaec2ee8bea864e67406981",
+      "adaptedSha256": "c19c174abd76d8596162a6a5cd2446faace4a21a8c6b535be27eb8b7035a8a42",
+      "changes": [
+        "catalogue marker; portable framework/media imports where present",
+        "theme-preserving source portal host"
+      ],
+      "originalSource": "app/src/arc/dropdown-menu/dropdown-menu.tsx"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/dropdown-menu/dropdown-menu.module.css",
+      "target": "src/source/dropdown-menu/dropdown-menu.module.css",
+      "sourceSha256": "4a1a34dbbb4f327cd9843ae8df2b9ce55c3cac979cc2d5d164bd960d5bdc02ab",
+      "adaptedSha256": "4a1a34dbbb4f327cd9843ae8df2b9ce55c3cac979cc2d5d164bd960d5bdc02ab",
+      "changes": [],
+      "originalSource": "app/src/arc/dropdown-menu/dropdown-menu.module.css"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/blocks/empty-states/empty-states.tsx",
+      "target": "src/source/blocks/empty-states/empty-states.tsx",
+      "sourceSha256": "5c24e909420b3874ca455d0f6364939de5f1700b17cfad3a1ae2f72a665a902c",
+      "adaptedSha256": "a53b5d4c27c10a4816380ded0182bbe279a8e25e7d0c00cc27bc881e314f4c90",
+      "changes": [
+        "catalogue marker; portable framework/media imports where present"
+      ],
+      "originalSource": "app/src/arc/blocks/empty-states/empty-states.tsx"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/blocks/empty-states/empty-states-art.ts",
+      "target": "src/source/blocks/empty-states/empty-states-art.ts",
+      "sourceSha256": "86c5c3d7630416831fd884f58e657f15ae36c9e8ccac21cdae06e1f1d79a7e2b",
+      "adaptedSha256": "7aac7b57c7692e6b3a6a2aa8974b493bd4b5039f86de03b6e19c8b4e64c18031",
+      "changes": [
+        "catalogue marker; portable framework/media imports where present"
+      ],
+      "originalSource": "app/src/arc/blocks/empty-states/empty-states-art.ts"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/blocks/empty-states/empty-states.module.css",
+      "target": "src/source/blocks/empty-states/empty-states.module.css",
+      "sourceSha256": "ff517745774f84eb030993650f9f60fe93b8f31fec581ec822974d7694d0775a",
+      "adaptedSha256": "ff517745774f84eb030993650f9f60fe93b8f31fec581ec822974d7694d0775a",
+      "changes": [],
+      "originalSource": "app/src/arc/blocks/empty-states/empty-states.module.css"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/expandable-card/expandable-card.tsx",
+      "target": "src/source/expandable-card/expandable-card.tsx",
+      "sourceSha256": "3373b065317869244a61c96760a21ed037c3177766f8bd54bca2336d82a698c8",
+      "adaptedSha256": "5aae0cfc5066bbcc870af62e2ac97cf568f53605d08a8abda95dcc096c2b020e",
+      "changes": [
+        "catalogue marker; portable framework/media imports where present"
+      ],
+      "originalSource": "app/src/arc/expandable-card/expandable-card.tsx"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/expandable-card/expandable-card.module.css",
+      "target": "src/source/expandable-card/expandable-card.module.css",
+      "sourceSha256": "f85ff47844ffd2c845c71fc10e4cf7872c00823dd54882b99ec3ea4515881d7e",
+      "adaptedSha256": "f85ff47844ffd2c845c71fc10e4cf7872c00823dd54882b99ec3ea4515881d7e",
+      "changes": [],
+      "originalSource": "app/src/arc/expandable-card/expandable-card.module.css"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/blocks/faq-section/faq-section.tsx",
+      "target": "src/source/blocks/faq-section/faq-section.tsx",
+      "sourceSha256": "c0695746816ebeda93f3f125180acbc04c8f6169cfadbfbf1000af2ec54b2157",
+      "adaptedSha256": "0f9814f097d1997ef6c3909829f25e11e6b00141764d0a9ca7a0c2f44b1ed312",
+      "changes": [
+        "catalogue marker; portable framework/media imports where present"
+      ],
+      "originalSource": "app/src/arc/blocks/faq-section/faq-section.tsx"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/search-field/search-field.tsx",
+      "target": "src/source/search-field/search-field.tsx",
+      "sourceSha256": "d93a8d0778c83d33793bf3fe7e5b206a5d0c6e50948b83f39777b89899392d93",
+      "adaptedSha256": "8693dc4191763fc03bcaf451cef00451f56ccf54ec9c50f37b35b2f86dbf0199",
+      "changes": [
+        "catalogue marker; portable framework/media imports where present"
+      ],
+      "originalSource": "app/src/arc/search-field/search-field.tsx"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/search-field/search-field.module.css",
+      "target": "src/source/search-field/search-field.module.css",
+      "sourceSha256": "3b74ebb74a675ab8a0202d9234b8865fdd0d26033f056aa6e3de9bc9bffacce2",
+      "adaptedSha256": "3b74ebb74a675ab8a0202d9234b8865fdd0d26033f056aa6e3de9bc9bffacce2",
+      "changes": [],
+      "originalSource": "app/src/arc/search-field/search-field.module.css"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/blocks/faq-section/faq-section.module.css",
+      "target": "src/source/blocks/faq-section/faq-section.module.css",
+      "sourceSha256": "3346449f678590ac4a0457594f5a99cffad7c15587cd0d1ea16f390f7e67da9f",
+      "adaptedSha256": "3346449f678590ac4a0457594f5a99cffad7c15587cd0d1ea16f390f7e67da9f",
+      "changes": [],
+      "originalSource": "app/src/arc/blocks/faq-section/faq-section.module.css"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/file-upload/file-upload.tsx",
+      "target": "src/source/file-upload/file-upload.tsx",
+      "sourceSha256": "f8614ef57455fe15f571367177edd911f11394de68b7a42ba0511f4a1918f1fd",
+      "adaptedSha256": "a557d1f74a0a9738bd4c64af09e6eaf01c8c677677fdfc2fd33acf0ffc41180f",
+      "changes": [
+        "catalogue marker; portable framework/media imports where present"
+      ],
+      "originalSource": "app/src/arc/file-upload/file-upload.tsx"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/file-upload/file-upload.module.css",
+      "target": "src/source/file-upload/file-upload.module.css",
+      "sourceSha256": "3a4ef30a0872ce36c9d0ed5cc792cdeb96349594d1a43b8f67fdd456f4c57153",
+      "adaptedSha256": "3a4ef30a0872ce36c9d0ed5cc792cdeb96349594d1a43b8f67fdd456f4c57153",
+      "changes": [],
+      "originalSource": "app/src/arc/file-upload/file-upload.module.css"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/blocks/hero-section/hero-section.tsx",
+      "target": "src/source/blocks/hero-section/hero-section.tsx",
+      "sourceSha256": "9d7a48244ac5238ecf0c46648d4a097e45cdf3e0fa3128cb1bacb09ed1e48cee",
+      "adaptedSha256": "f89fd8e2f4d09e3e032054d96552b25b6b4bcaed23504b9896280a9b6fe3e5fa",
+      "changes": [
+        "catalogue marker; portable framework/media imports where present"
+      ],
+      "originalSource": "app/src/arc/blocks/hero-section/hero-section.tsx"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/blocks/hero-section/hero-lumen.tsx",
+      "target": "src/source/blocks/hero-section/hero-lumen.tsx",
+      "sourceSha256": "fd2e51c7355954d5604a7fef885c58634174f050d64fc0d29592cc9464b0428a",
+      "adaptedSha256": "a1702542a9c32e57c087891041a66c3f13e981e98adb00f4fccd0cebf8adb4d8",
+      "changes": [
+        "catalogue marker; portable framework/media imports where present"
+      ],
+      "originalSource": "app/src/arc/blocks/hero-section/hero-lumen.tsx"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/line-chart/line-chart.tsx",
+      "target": "src/source/line-chart/line-chart.tsx",
+      "sourceSha256": "1276d1375167311ce564214905abbc484070a66b2bff0ca0ce567391f8ef19da",
+      "adaptedSha256": "d84bce73c58e61de701e18ff51baa4e834baf15bb49fa6ca4ee02ac9a81b7b21",
+      "changes": [
+        "catalogue marker; portable framework/media imports where present"
+      ],
+      "originalSource": "app/src/arc/line-chart/line-chart.tsx"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/line-chart/line-chart.module.css",
+      "target": "src/source/line-chart/line-chart.module.css",
+      "sourceSha256": "0a761cc358588f948f4a4689ccfc9f57f73b3f043f07599e0233e025f30a919f",
+      "adaptedSha256": "0a761cc358588f948f4a4689ccfc9f57f73b3f043f07599e0233e025f30a919f",
+      "changes": [],
+      "originalSource": "app/src/arc/line-chart/line-chart.module.css"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/sparkline/sparkline.tsx",
+      "target": "src/source/sparkline/sparkline.tsx",
+      "sourceSha256": "b61f2b54bac7774d7af8d3a0b0939584487d72c0f2d20131cc2f14e915b05859",
+      "adaptedSha256": "18caa7c45c33cb481e0244ae90ef84d7881e842f201724ac12e5d59659f26ba3",
+      "changes": [
+        "catalogue marker; portable framework/media imports where present"
+      ],
+      "originalSource": "app/src/arc/sparkline/sparkline.tsx"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/sparkline/sparkline.module.css",
+      "target": "src/source/sparkline/sparkline.module.css",
+      "sourceSha256": "0b7995379fb5a7955d48ff95871e06494a6092ca028c0c5d43aade2f364d844b",
+      "adaptedSha256": "0b7995379fb5a7955d48ff95871e06494a6092ca028c0c5d43aade2f364d844b",
+      "changes": [],
+      "originalSource": "app/src/arc/sparkline/sparkline.module.css"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/blocks/hero-section/hero-content.tsx",
+      "target": "src/source/blocks/hero-section/hero-content.tsx",
+      "sourceSha256": "bc1b5672c25bc4ae6c1785c3b98206ee38d275d9775f277bac4e1742d3e9abf5",
+      "adaptedSha256": "4e02dd4fd2e6aead0f710dc0aff08781138e5314277cc6d14d1a0999fe465e4e",
+      "changes": [
+        "catalogue marker; portable framework/media imports where present"
+      ],
+      "originalSource": "app/src/arc/blocks/hero-section/hero-content.tsx"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/blocks/hero-section/hero-motion.ts",
+      "target": "src/source/blocks/hero-section/hero-motion.ts",
+      "sourceSha256": "13b3c25c7316aa0f222a1ec393027ac02f20f59194d638d17961a59868a04a21",
+      "adaptedSha256": "7efef92206ebfb453647ed81f40cb815c0dd7dc3ba83ccda2e0a73fa62ad3d5d",
+      "changes": [
+        "catalogue marker; portable framework/media imports where present"
+      ],
+      "originalSource": "app/src/arc/blocks/hero-section/hero-motion.ts"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/blocks/hero-section/hero-section.module.css",
+      "target": "src/source/blocks/hero-section/hero-section.module.css",
+      "sourceSha256": "f95f31a08dad069cec388216233890b03c8584b75c6576083b82c2b6dd405a67",
+      "adaptedSha256": "f95f31a08dad069cec388216233890b03c8584b75c6576083b82c2b6dd405a67",
+      "changes": [],
+      "originalSource": "app/src/arc/blocks/hero-section/hero-section.module.css"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/blocks/hero-section/hero-content.module.css",
+      "target": "src/source/blocks/hero-section/hero-content.module.css",
+      "sourceSha256": "0fb963f57acb7e7f8104b8bbf69e52eb3460cd6379e646d1516fb4d15370017c",
+      "adaptedSha256": "0fb963f57acb7e7f8104b8bbf69e52eb3460cd6379e646d1516fb4d15370017c",
+      "changes": [],
+      "originalSource": "app/src/arc/blocks/hero-section/hero-content.module.css"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/blocks/hero-section/hero-mesh.tsx",
+      "target": "src/source/blocks/hero-section/hero-mesh.tsx",
+      "sourceSha256": "294ea55a1e55ed19162b62eac3f11fb4a5255a0ea5ee764369190b884da95cd5",
+      "adaptedSha256": "75e606de94c98ee17f44a7598564feb57c240f6a2da11e1b5576274b83afcabf",
+      "changes": [
+        "catalogue marker; portable framework/media imports where present"
+      ],
+      "originalSource": "app/src/arc/blocks/hero-section/hero-mesh.tsx"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/blocks/hero-section/hero-mesh.module.css",
+      "target": "src/source/blocks/hero-section/hero-mesh.module.css",
+      "sourceSha256": "bf374595c4b0aaf81330682d95bbfb1befaaefc558d9a4612c51527045ea0b7a",
+      "adaptedSha256": "bf374595c4b0aaf81330682d95bbfb1befaaefc558d9a4612c51527045ea0b7a",
+      "changes": [],
+      "originalSource": "app/src/arc/blocks/hero-section/hero-mesh.module.css"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/blocks/hero-section/hero-lumen-data.ts",
+      "target": "src/source/blocks/hero-section/hero-lumen-data.ts",
+      "sourceSha256": "8d07fa61422ab996596facb28e8cf58dc7159bfc3580cc21a759114467a206e3",
+      "adaptedSha256": "6ff1ba87c620c021697f984279c1f7434c156c626f1432b5235ec87bc0587c67",
+      "changes": [
+        "catalogue marker; portable framework/media imports where present"
+      ],
+      "originalSource": "app/src/arc/blocks/hero-section/hero-lumen-data.ts"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/blocks/hero-section/hero-lumen.module.css",
+      "target": "src/source/blocks/hero-section/hero-lumen.module.css",
+      "sourceSha256": "c61c36afeb17b90b3b15d99aafa89ff5cf204c175e5603dc660b28d248740b5d",
+      "adaptedSha256": "c61c36afeb17b90b3b15d99aafa89ff5cf204c175e5603dc660b28d248740b5d",
+      "changes": [],
+      "originalSource": "app/src/arc/blocks/hero-section/hero-lumen.module.css"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/blocks/hero-section/hero-relay.tsx",
+      "target": "src/source/blocks/hero-section/hero-relay.tsx",
+      "sourceSha256": "fd0b40a5c91c56b3b982bfd18215e4291dd8871890716d94230b5fead3a41a83",
+      "adaptedSha256": "28b9340cd48f616ceebf047186be5f24eb00bc8e095d6db4fa69ff65ace5410d",
+      "changes": [
+        "catalogue marker; portable framework/media imports where present"
+      ],
+      "originalSource": "app/src/arc/blocks/hero-section/hero-relay.tsx"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/blocks/hero-section/hero-relay.module.css",
+      "target": "src/source/blocks/hero-section/hero-relay.module.css",
+      "sourceSha256": "bef60949c8a63a7275d927b5e2943c8cab04a01367324a290262c37272a18ae7",
+      "adaptedSha256": "bef60949c8a63a7275d927b5e2943c8cab04a01367324a290262c37272a18ae7",
+      "changes": [],
+      "originalSource": "app/src/arc/blocks/hero-section/hero-relay.module.css"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/blocks/hero-section/hero-cadence.tsx",
+      "target": "src/source/blocks/hero-section/hero-cadence.tsx",
+      "sourceSha256": "7aacfa8a51ff2c7f4ce6bebe8a77a4ab4ed5181e4d9df08a98fd0d39e0396f14",
+      "adaptedSha256": "1f8bb5b445417c14436555da16880df2237fade72ffd3058de8a351b747528ea",
+      "changes": [
+        "catalogue marker; portable framework/media imports where present"
+      ],
+      "originalSource": "app/src/arc/blocks/hero-section/hero-cadence.tsx"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/blocks/hero-section/hero-cadence.module.css",
+      "target": "src/source/blocks/hero-section/hero-cadence.module.css",
+      "sourceSha256": "a922cd6e5059e0d8a0ed0a0a6ce6e373ffba8514d8eca9740fd5c572173de4dc",
+      "adaptedSha256": "a922cd6e5059e0d8a0ed0a0a6ce6e373ffba8514d8eca9740fd5c572173de4dc",
+      "changes": [],
+      "originalSource": "app/src/arc/blocks/hero-section/hero-cadence.module.css"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/image-compare/image-compare.tsx",
+      "target": "src/source/image-compare/image-compare.tsx",
+      "sourceSha256": "9f97bed616271952040f1845deeac711d3649f5c4e8e8e72bf88c8c9dee6977c",
+      "adaptedSha256": "fedc0afbdc8588c13426950cf809f71bc7348b3f3f17bce4a30b6b5cac1d60da",
+      "changes": [
+        "catalogue marker; portable framework/media imports where present"
+      ],
+      "originalSource": "app/src/arc/image-compare/image-compare.tsx"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/image-compare/image-compare.module.css",
+      "target": "src/source/image-compare/image-compare.module.css",
+      "sourceSha256": "d9538b7da60d8237136b9d277d3c63677f29af4397c547587b80e97d581e8e4c",
+      "adaptedSha256": "d9538b7da60d8237136b9d277d3c63677f29af4397c547587b80e97d581e8e4c",
+      "changes": [],
+      "originalSource": "app/src/arc/image-compare/image-compare.module.css"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/json-viewer/json-viewer.tsx",
+      "target": "src/source/json-viewer/json-viewer.tsx",
+      "sourceSha256": "993dde4169d8bfc53e44b678d3e4b0510470a2ee881548ced01cfe9988ef8866",
+      "adaptedSha256": "99c4cdc1b65ad62b3265729e0701567a4dbd79c4dd0d639368c62660f43f80ff",
+      "changes": [
+        "catalogue marker; portable framework/media imports where present"
+      ],
+      "originalSource": "app/src/arc/json-viewer/json-viewer.tsx"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/json-viewer/json-viewer.module.css",
+      "target": "src/source/json-viewer/json-viewer.module.css",
+      "sourceSha256": "c6ffedc6fb954166ddb5ba15eb911609f101031b26b3af6ef0b719db2a44ff95",
+      "adaptedSha256": "c6ffedc6fb954166ddb5ba15eb911609f101031b26b3af6ef0b719db2a44ff95",
+      "changes": [],
+      "originalSource": "app/src/arc/json-viewer/json-viewer.module.css"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/blocks/login-centered/login-centered.tsx",
+      "target": "src/source/blocks/login-centered/login-centered.tsx",
+      "sourceSha256": "2a4976fb83f34a8d904abed1b38693d0db4ffd380e6f4bdc18570f96f5f839e2",
+      "adaptedSha256": "0eb873594f46d149c4305e7028df7b6a62e05839b99ea8422b5cae9ec668b329",
+      "changes": [
+        "catalogue marker; portable framework/media imports where present"
+      ],
+      "originalSource": "app/src/arc/blocks/login-centered/login-centered.tsx"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/otp-input/otp-input.tsx",
+      "target": "src/source/otp-input/otp-input.tsx",
+      "sourceSha256": "9b7c948a73d93c2d31f1c031b70ba62c969689fe4625d1762d1e4418c39f30bf",
+      "adaptedSha256": "67dc15ec9ba5f4a800cffe6b7fefb3ba013f86d2c947fa7cef6da0ba025f2ef1",
+      "changes": [
+        "catalogue marker; portable framework/media imports where present"
+      ],
+      "originalSource": "app/src/arc/otp-input/otp-input.tsx"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/otp-input/otp-input.module.css",
+      "target": "src/source/otp-input/otp-input.module.css",
+      "sourceSha256": "4bcfd659a2d6597f558ae2d02214c1dabfcbc795fca8a664b1abda369a872640",
+      "adaptedSha256": "4bcfd659a2d6597f558ae2d02214c1dabfcbc795fca8a664b1abda369a872640",
+      "changes": [],
+      "originalSource": "app/src/arc/otp-input/otp-input.module.css"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/blocks/login-centered/login-centered.module.css",
+      "target": "src/source/blocks/login-centered/login-centered.module.css",
+      "sourceSha256": "a6d3716eca7851b9dfe136e63b45319cd41322541e49e0801fd85d119ba8e0e2",
+      "adaptedSha256": "a6d3716eca7851b9dfe136e63b45319cd41322541e49e0801fd85d119ba8e0e2",
+      "changes": [],
+      "originalSource": "app/src/arc/blocks/login-centered/login-centered.module.css"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/blocks/logo-marquee/logo-marquee.tsx",
+      "target": "src/source/blocks/logo-marquee/logo-marquee.tsx",
+      "sourceSha256": "9c82b72e9fa4d1fee6b45cf1c203a77c77a0ba2f9f3b82b719f8ca7974f46901",
+      "adaptedSha256": "51e0b94c00aa33c1a6b731184c9e6867eadc8a423ac6653f34122d41043c2827",
+      "changes": [
+        "catalogue marker; portable framework/media imports where present"
+      ],
+      "originalSource": "app/src/arc/blocks/logo-marquee/logo-marquee.tsx"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/blocks/logo-marquee/logo-marquee.module.css",
+      "target": "src/source/blocks/logo-marquee/logo-marquee.module.css",
+      "sourceSha256": "781d21f6299b7f1d729ffc8278e168da4abd19a2866d3531d1e2cdb4113d622c",
+      "adaptedSha256": "781d21f6299b7f1d729ffc8278e168da4abd19a2866d3531d1e2cdb4113d622c",
+      "changes": [],
+      "originalSource": "app/src/arc/blocks/logo-marquee/logo-marquee.module.css"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/mention-input/mention-input.tsx",
+      "target": "src/source/mention-input/mention-input.tsx",
+      "sourceSha256": "95f7f65640442b2f40b504bdf00b8b854df474080a98973a262aeb896a2c6744",
+      "adaptedSha256": "3de8459fa67a0c4f118f01b11260c44665abf1ad6b8f6b6cabf93c9be6a915cd",
+      "changes": [
+        "catalogue marker; portable framework/media imports where present"
+      ],
+      "originalSource": "app/src/arc/mention-input/mention-input.tsx"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/mention-input/mention-input.module.css",
+      "target": "src/source/mention-input/mention-input.module.css",
+      "sourceSha256": "ff715146d8d89a0bacf9dfb80747e53f243816a610dd9921637a1d594b718e72",
+      "adaptedSha256": "ff715146d8d89a0bacf9dfb80747e53f243816a610dd9921637a1d594b718e72",
+      "changes": [],
+      "originalSource": "app/src/arc/mention-input/mention-input.module.css"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/metric-card/metric-card.tsx",
+      "target": "src/source/metric-card/metric-card.tsx",
+      "sourceSha256": "ac550e49b6e9f680f32a694dd27cb42597795465d4709f2418230fbbde865906",
+      "adaptedSha256": "356c632f98e745138229af77196a56b4de0ed10c899e0b2b2aa0d7abc766c7c9",
+      "changes": [
+        "catalogue marker; portable framework/media imports where present"
+      ],
+      "originalSource": "app/src/arc/metric-card/metric-card.tsx"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/animated-counter/animated-counter.tsx",
+      "target": "src/source/animated-counter/animated-counter.tsx",
+      "sourceSha256": "2542f8bcd8a413c7a846d440d917a3c11a77f4e016014dfdd242c4549df01750",
+      "adaptedSha256": "1a1c6d5133dac005628c3611ccbe27ae8ac9466cd77d4746eeccb943dff81d6f",
+      "changes": [
+        "catalogue marker; portable framework/media imports where present"
+      ],
+      "originalSource": "app/src/arc/animated-counter/animated-counter.tsx"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/animated-counter/animated-counter.module.css",
+      "target": "src/source/animated-counter/animated-counter.module.css",
+      "sourceSha256": "33b7d7f0081f4fd3907a4fafcff64444581845a58cb7b0b7844c394a2e254adf",
+      "adaptedSha256": "33b7d7f0081f4fd3907a4fafcff64444581845a58cb7b0b7844c394a2e254adf",
+      "changes": [],
+      "originalSource": "app/src/arc/animated-counter/animated-counter.module.css"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/metric-card/metric-card.module.css",
+      "target": "src/source/metric-card/metric-card.module.css",
+      "sourceSha256": "733ad2b10292f583f11a7b4e21c09b0d9334bfff15c8abb52baab965dc851235",
+      "adaptedSha256": "733ad2b10292f583f11a7b4e21c09b0d9334bfff15c8abb52baab965dc851235",
+      "changes": [],
+      "originalSource": "app/src/arc/metric-card/metric-card.module.css"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/morph-select/morph-select.tsx",
+      "target": "src/source/morph-select/morph-select.tsx",
+      "sourceSha256": "e6919543ac6d1cd7414e72ef1e4354424ef178ea5612fd274c6562e60d9190eb",
+      "adaptedSha256": "0ce95a3bf632d57355e9c270fbd7962374ae7687f8b4cedefe3cd1a73570a420",
+      "changes": [
+        "catalogue marker; portable framework/media imports where present"
+      ],
+      "originalSource": "app/src/arc/morph-select/morph-select.tsx"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/morph-select/morph-select.module.css",
+      "target": "src/source/morph-select/morph-select.module.css",
+      "sourceSha256": "a04d516ec799568dc15a73a9a8b430ce837c5b69bf9069bde029e8b4be3a06d4",
+      "adaptedSha256": "a04d516ec799568dc15a73a9a8b430ce837c5b69bf9069bde029e8b4be3a06d4",
+      "changes": [],
+      "originalSource": "app/src/arc/morph-select/morph-select.module.css"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/blocks/newsletter-signup/newsletter-signup.tsx",
+      "target": "src/source/blocks/newsletter-signup/newsletter-signup.tsx",
+      "sourceSha256": "9b68c369f2ec093ebeb712c2ea3dc692c137f89948efed5ab0a39f2904bac4dd",
+      "adaptedSha256": "b84111d262cba63095faa1595caa215562087d41f543ef6b76ee84f89e7d03e4",
+      "changes": [
+        "catalogue marker; portable framework/media imports where present"
+      ],
+      "originalSource": "app/src/arc/blocks/newsletter-signup/newsletter-signup.tsx"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/switch/switch.tsx",
+      "target": "src/source/switch/switch.tsx",
+      "sourceSha256": "6ab95cb9c0aaa80599cdc0605abf959a20f5030fe4ecdf57f6894274a9c5d73b",
+      "adaptedSha256": "fc40bd8d3eb6e331271d04da382669f431dc50e602fa899a28c96a476d0a7aae",
+      "changes": [
+        "catalogue marker; portable framework/media imports where present"
+      ],
+      "originalSource": "app/src/arc/switch/switch.tsx"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/switch/switch.module.css",
+      "target": "src/source/switch/switch.module.css",
+      "sourceSha256": "3793e7ee1a4c2db46fce615c3fd76212c3c78ea005e23ae07c24b53453c1b6f7",
+      "adaptedSha256": "3793e7ee1a4c2db46fce615c3fd76212c3c78ea005e23ae07c24b53453c1b6f7",
+      "changes": [],
+      "originalSource": "app/src/arc/switch/switch.module.css"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/blocks/newsletter-signup/newsletter-signup-data.ts",
+      "target": "src/source/blocks/newsletter-signup/newsletter-signup-data.ts",
+      "sourceSha256": "c4644181d5a5e78ad0b882dc3377dab257866ab9c8231280e962cfb2ccbd5aa9",
+      "adaptedSha256": "d600a6b44bb6041b08736c74cc2a37de5a6ea9edf38d984866c4c596a4499f29",
+      "changes": [
+        "catalogue marker; portable framework/media imports where present"
+      ],
+      "originalSource": "app/src/arc/blocks/newsletter-signup/newsletter-signup-data.ts"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/blocks/newsletter-signup/newsletter-signup.module.css",
+      "target": "src/source/blocks/newsletter-signup/newsletter-signup.module.css",
+      "sourceSha256": "6192188b962b10a39092d5456b40fff7d00d41a058a62db17dac17daf405a568",
+      "adaptedSha256": "6192188b962b10a39092d5456b40fff7d00d41a058a62db17dac17daf405a568",
+      "changes": [],
+      "originalSource": "app/src/arc/blocks/newsletter-signup/newsletter-signup.module.css"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/blocks/page-header/page-header.tsx",
+      "target": "src/source/blocks/page-header/page-header.tsx",
+      "sourceSha256": "93006a634e19928b91cd21d56f97b1bc000a9c43dd8705fb9d52b77066ecb8b5",
+      "adaptedSha256": "384a10d3f7d5e61b7b68a30a9f5708e62387587357942646b73d84b674ab60ad",
+      "changes": [
+        "catalogue marker; portable framework/media imports where present",
+        "theme-preserving source portal host"
+      ],
+      "originalSource": "app/src/arc/blocks/page-header/page-header.tsx"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/avatar-group/avatar-group.tsx",
+      "target": "src/source/avatar-group/avatar-group.tsx",
+      "sourceSha256": "937f6581c5fc0f3f4e52c357ac6c59cb1a4bcba7221ddebf32d944219fcec62a",
+      "adaptedSha256": "075201b9fa2af18cd6c9e75dfb6d25a86187bfe4fdbc543971eeb79540413eac",
+      "changes": [
+        "catalogue marker; portable framework/media imports where present"
+      ],
+      "originalSource": "app/src/arc/avatar-group/avatar-group.tsx"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/avatar-group/avatar-group.module.css",
+      "target": "src/source/avatar-group/avatar-group.module.css",
+      "sourceSha256": "390515d480d1d441670087be4394db6bae9423e4cb1dcc269c83c25505c8c4fb",
+      "adaptedSha256": "390515d480d1d441670087be4394db6bae9423e4cb1dcc269c83c25505c8c4fb",
+      "changes": [],
+      "originalSource": "app/src/arc/avatar-group/avatar-group.module.css"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/badge/badge.tsx",
+      "target": "src/source/badge/badge.tsx",
+      "sourceSha256": "3c55d03480156cd7636e171ce8649ddc9616db7484dea50063d8b589810c4aad",
+      "adaptedSha256": "fd2df79013283be6bb95462a317c1a583ff7d1329bb9d3afdde1966877e75941",
+      "changes": [
+        "catalogue marker; portable framework/media imports where present"
+      ],
+      "originalSource": "app/src/arc/badge/badge.tsx"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/badge/badge.module.css",
+      "target": "src/source/badge/badge.module.css",
+      "sourceSha256": "3306e97600585992b6dbc19db1d55961cbfacd24f5942d80ac3078d6887b3644",
+      "adaptedSha256": "3306e97600585992b6dbc19db1d55961cbfacd24f5942d80ac3078d6887b3644",
+      "changes": [],
+      "originalSource": "app/src/arc/badge/badge.module.css"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/progress/progress.tsx",
+      "target": "src/source/progress/progress.tsx",
+      "sourceSha256": "53f96b8e42315c9c261338bd96f74d74f6db22b5de935ae3ec02e20cfb64ae1e",
+      "adaptedSha256": "08cdd034f21ef0a2ba3bf1ab361fcd426efc24d387471f249076f948afee72b7",
+      "changes": [
+        "catalogue marker; portable framework/media imports where present"
+      ],
+      "originalSource": "app/src/arc/progress/progress.tsx"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/progress/progress.module.css",
+      "target": "src/source/progress/progress.module.css",
+      "sourceSha256": "f0e527c419a7ebd3f9dd7faf49244fe87ea47e5153fed9f8e50fd83fd61d11a7",
+      "adaptedSha256": "f0e527c419a7ebd3f9dd7faf49244fe87ea47e5153fed9f8e50fd83fd61d11a7",
+      "changes": [],
+      "originalSource": "app/src/arc/progress/progress.module.css"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/blocks/page-header/page-header.module.css",
+      "target": "src/source/blocks/page-header/page-header.module.css",
+      "sourceSha256": "fe117fc7b586814614f2386135c84da505fc6309592a544aaa7ac655fbf882de",
+      "adaptedSha256": "fe117fc7b586814614f2386135c84da505fc6309592a544aaa7ac655fbf882de",
+      "changes": [],
+      "originalSource": "app/src/arc/blocks/page-header/page-header.module.css"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/blocks/plan-comparison/plan-comparison.tsx",
+      "target": "src/source/blocks/plan-comparison/plan-comparison.tsx",
+      "sourceSha256": "381004e6e9cfa1e60f3ac8b7b6781889d703b456a2aa128b809f04f776fd8b33",
+      "adaptedSha256": "bd046ff52d26428ddae954514e90078b7a80098a4330608f1c1e6d564504118c",
+      "changes": [
+        "catalogue marker; portable framework/media imports where present"
+      ],
+      "originalSource": "app/src/arc/blocks/plan-comparison/plan-comparison.tsx"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/blocks/plan-comparison/plan-comparison.module.css",
+      "target": "src/source/blocks/plan-comparison/plan-comparison.module.css",
+      "sourceSha256": "8554773b001e19d1a5a3b2604a38cf6d3b76a0c7a3f89c2f795514d895b880c2",
+      "adaptedSha256": "8554773b001e19d1a5a3b2604a38cf6d3b76a0c7a3f89c2f795514d895b880c2",
+      "changes": [],
+      "originalSource": "app/src/arc/blocks/plan-comparison/plan-comparison.module.css"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/resizable-panels/resizable-panels.tsx",
+      "target": "src/source/resizable-panels/resizable-panels.tsx",
+      "sourceSha256": "398523f0602c829ef3f2f3899a3b0ca673324dd6b41cf872450a59514e6e42bd",
+      "adaptedSha256": "33fe73dc8c3475ebf36527dcef17c8c429d52d1bca12469c8074adf09de73dff",
+      "changes": [
+        "catalogue marker; portable framework/media imports where present"
+      ],
+      "originalSource": "app/src/arc/resizable-panels/resizable-panels.tsx"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/resizable-panels/resizable-panels.module.css",
+      "target": "src/source/resizable-panels/resizable-panels.module.css",
+      "sourceSha256": "3d695c6a6a634b4422258005d230d3ae85dd0512966a01ff96f5d2b6575ae747",
+      "adaptedSha256": "3d695c6a6a634b4422258005d230d3ae85dd0512966a01ff96f5d2b6575ae747",
+      "changes": [],
+      "originalSource": "app/src/arc/resizable-panels/resizable-panels.module.css"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/rich-text-editor/rich-text-editor.tsx",
+      "target": "src/source/rich-text-editor/rich-text-editor.tsx",
+      "sourceSha256": "4cf2e618097d2f79434ca1f149f8f1100fd4ec478860a4b25d4a250742647c76",
+      "adaptedSha256": "83b9e3b54187f63d33f6784e63f613a5ad73a4bd16e1045e72c649ee30f11a1a",
+      "changes": [
+        "catalogue marker; portable framework/media imports where present"
+      ],
+      "originalSource": "app/src/arc/rich-text-editor/rich-text-editor.tsx"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/rich-text-editor/rich-text-editor.module.css",
+      "target": "src/source/rich-text-editor/rich-text-editor.module.css",
+      "sourceSha256": "6833c362e0f58e0dcd24705d9d378b4bc6745dd2faa25e22c41ffebe9b7ae05a",
+      "adaptedSha256": "6833c362e0f58e0dcd24705d9d378b4bc6745dd2faa25e22c41ffebe9b7ae05a",
+      "changes": [],
+      "originalSource": "app/src/arc/rich-text-editor/rich-text-editor.module.css"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/scroll-area/scroll-area.tsx",
+      "target": "src/source/scroll-area/scroll-area.tsx",
+      "sourceSha256": "82c53c56af335d0a6d808ecd4cbb3c97e8fa83ca56ccd35f71605ae8dd8b0891",
+      "adaptedSha256": "c9fad54d5e3ec7b3b26d929ad56cb211fb558d09d07bc38bc191b5b23846d34f",
+      "changes": [
+        "catalogue marker; portable framework/media imports where present"
+      ],
+      "originalSource": "app/src/arc/scroll-area/scroll-area.tsx"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/scroll-area/scroll-area.module.css",
+      "target": "src/source/scroll-area/scroll-area.module.css",
+      "sourceSha256": "904fdc63e0f818ad95ea148637dcbdd3e1a7c29408928fae2126f26abdf21bbb",
+      "adaptedSha256": "904fdc63e0f818ad95ea148637dcbdd3e1a7c29408928fae2126f26abdf21bbb",
+      "changes": [],
+      "originalSource": "app/src/arc/scroll-area/scroll-area.module.css"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/blocks/sign-in/sign-in.tsx",
+      "target": "src/source/blocks/sign-in/sign-in.tsx",
+      "sourceSha256": "c711c3f51ee7c82cea44aaa8bd842700283b96d90b21f6c5d177d9c2e17b1274",
+      "adaptedSha256": "debd3ecbd6b87e94f5af9a82c1a77fb70990d584d6ea6f766d93b08a998abc17",
+      "changes": [
+        "catalogue marker; portable framework/media imports where present"
+      ],
+      "originalSource": "app/src/arc/blocks/sign-in/sign-in.tsx"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/blocks/sign-in/sign-in.module.css",
+      "target": "src/source/blocks/sign-in/sign-in.module.css",
+      "sourceSha256": "30efd256b8d7bba067d188e4668e3a078fb5030e028f19acd89049d1f28646c3",
+      "adaptedSha256": "30efd256b8d7bba067d188e4668e3a078fb5030e028f19acd89049d1f28646c3",
+      "changes": [],
+      "originalSource": "app/src/arc/blocks/sign-in/sign-in.module.css"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/signature-pad/signature-pad.tsx",
+      "target": "src/source/signature-pad/signature-pad.tsx",
+      "sourceSha256": "59549b8aaac417b7bc987e459fa8c398ef813c60bcb4646750d8c446cefb56eb",
+      "adaptedSha256": "5dc5f2f363eb777137677b25850a8f56833d0c6a120d4c425f06f4e04005e5e0",
+      "changes": [
+        "catalogue marker; portable framework/media imports where present",
+        "preserve source behavior under strict TypeScript and ES2022"
+      ],
+      "originalSource": "app/src/arc/signature-pad/signature-pad.tsx"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/signature-pad/signature-pad.module.css",
+      "target": "src/source/signature-pad/signature-pad.module.css",
+      "sourceSha256": "b3ab146170d37529c118b881a13e46c9076066597f3bbb2cc0e88cb3ce191917",
+      "adaptedSha256": "b3ab146170d37529c118b881a13e46c9076066597f3bbb2cc0e88cb3ce191917",
+      "changes": [],
+      "originalSource": "app/src/arc/signature-pad/signature-pad.module.css"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/blocks/signup-form/signup-form.tsx",
+      "target": "src/source/blocks/signup-form/signup-form.tsx",
+      "sourceSha256": "85931dc6b748a80714751087cee06070a3a11ac99fc006ab3a22a24bc9875272",
+      "adaptedSha256": "edcef3a294158d829bda5cfcc20acaa8e9216cbfac0afb9586a88156cb11d6d6",
+      "changes": [
+        "catalogue marker; portable framework/media imports where present"
+      ],
+      "originalSource": "app/src/arc/blocks/signup-form/signup-form.tsx"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/checkbox/checkbox.tsx",
+      "target": "src/source/checkbox/checkbox.tsx",
+      "sourceSha256": "4759251a0b2a83320cb4078e840f61481a23be0b38b9aa7c077c2e85e6dde00d",
+      "adaptedSha256": "ae65c3dc14afe1338886d81bf6a1ee6274e4c83a2edf42c7c6585e1f2efcde21",
+      "changes": [
+        "catalogue marker; portable framework/media imports where present"
+      ],
+      "originalSource": "app/src/arc/checkbox/checkbox.tsx"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/checkbox/checkbox.module.css",
+      "target": "src/source/checkbox/checkbox.module.css",
+      "sourceSha256": "6cc8ae35edbd99dac2ea3768a6db0932429ecb06febab06e048a4b94974251b6",
+      "adaptedSha256": "6cc8ae35edbd99dac2ea3768a6db0932429ecb06febab06e048a4b94974251b6",
+      "changes": [],
+      "originalSource": "app/src/arc/checkbox/checkbox.module.css"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/password-field/password-field.tsx",
+      "target": "src/source/password-field/password-field.tsx",
+      "sourceSha256": "2064f0f2d6ab79aa34c82f67e6e68464ae062435cb69ede3314bd199ae84f35a",
+      "adaptedSha256": "727d055cba3af6eea0c85878def2c454e0dc493315a3f369dddd52e13273baf8",
+      "changes": [
+        "catalogue marker; portable framework/media imports where present"
+      ],
+      "originalSource": "app/src/arc/password-field/password-field.tsx"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/password-field/password-field.module.css",
+      "target": "src/source/password-field/password-field.module.css",
+      "sourceSha256": "75a61ff590b700812e5f62af47f7dc268b807e109ad570d4d990e7d62ed5204f",
+      "adaptedSha256": "75a61ff590b700812e5f62af47f7dc268b807e109ad570d4d990e7d62ed5204f",
+      "changes": [],
+      "originalSource": "app/src/arc/password-field/password-field.module.css"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/blocks/signup-form/signup-form.module.css",
+      "target": "src/source/blocks/signup-form/signup-form.module.css",
+      "sourceSha256": "d4f07da3bbb2d4b6f1a7b2af6a4a5af33652eabc06c855646346ac82d9b910ab",
+      "adaptedSha256": "d4f07da3bbb2d4b6f1a7b2af6a4a5af33652eabc06c855646346ac82d9b910ab",
+      "changes": [],
+      "originalSource": "app/src/arc/blocks/signup-form/signup-form.module.css"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/blocks/site-footer/site-footer.tsx",
+      "target": "src/source/blocks/site-footer/site-footer.tsx",
+      "sourceSha256": "46124b5a7831dee999b31c86611a5be0590d4d0db13168e86be39485baa46ea8",
+      "adaptedSha256": "2fc9dc64801b38d098c3b33a30dcbff7a4688596af5a7e7098a39872ba7db29b",
+      "changes": [
+        "catalogue marker; portable framework/media imports where present"
+      ],
+      "originalSource": "app/src/arc/blocks/site-footer/site-footer.tsx"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/blocks/site-footer/site-footer.module.css",
+      "target": "src/source/blocks/site-footer/site-footer.module.css",
+      "sourceSha256": "5ae615d3bd0013d6b660044ce744024749fcb89589471bffdca56ad678c8ab3d",
+      "adaptedSha256": "5ae615d3bd0013d6b660044ce744024749fcb89589471bffdca56ad678c8ab3d",
+      "changes": [],
+      "originalSource": "app/src/arc/blocks/site-footer/site-footer.module.css"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/blocks/site-header/site-header.tsx",
+      "target": "src/source/blocks/site-header/site-header.tsx",
+      "sourceSha256": "dc033ffa70e2eec76060a48b0baf10f5ca617a166d4d076a03f607a71d8f7c79",
+      "adaptedSha256": "4adeb6077f49aecf82487140b66e5216149bc0415c02681213c2468da19bc4d5",
+      "changes": [
+        "catalogue marker; portable framework/media imports where present"
+      ],
+      "originalSource": "app/src/arc/blocks/site-header/site-header.tsx"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/blocks/site-header/site-header.module.css",
+      "target": "src/source/blocks/site-header/site-header.module.css",
+      "sourceSha256": "3a47b072bd58364d6e8c2349a4ae4e8340b2371dc073aa3c8209e5834451d757",
+      "adaptedSha256": "3a47b072bd58364d6e8c2349a4ae4e8340b2371dc073aa3c8209e5834451d757",
+      "changes": [],
+      "originalSource": "app/src/arc/blocks/site-header/site-header.module.css"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/blocks/stats-band/stats-band.tsx",
+      "target": "src/source/blocks/stats-band/stats-band.tsx",
+      "sourceSha256": "0d6a2042c103ce57617d299869770077f30121aeeec9ce4d01af9306f517bc0e",
+      "adaptedSha256": "798ceeed6d17ec1ccc0b30281c02ab4766b8b464ef12769f731e593770d0ae6e",
+      "changes": [
+        "catalogue marker; portable framework/media imports where present"
+      ],
+      "originalSource": "app/src/arc/blocks/stats-band/stats-band.tsx"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/blocks/stats-band/stats-band-data.ts",
+      "target": "src/source/blocks/stats-band/stats-band-data.ts",
+      "sourceSha256": "e0cc847732c8d3bd64a81299a1199c03136525b71d7c8854c1ccb7c3f2ef70a4",
+      "adaptedSha256": "15ada6e422780e9c12d0057fd8d22bbeda716e37bdb04706020767b0bb10e2dd",
+      "changes": [
+        "catalogue marker; portable framework/media imports where present"
+      ],
+      "originalSource": "app/src/arc/blocks/stats-band/stats-band-data.ts"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/blocks/stats-band/stats-band-world.ts",
+      "target": "src/source/blocks/stats-band/stats-band-world.ts",
+      "sourceSha256": "ffb88c3b89a1f4aec5842980eb8442b101f804c7e3f2405dae73c2428d3d9eec",
+      "adaptedSha256": "2b5e7437505ae13ba2b57f5edb704f225e9f6333664f03c86abe832c13dc17fd",
+      "changes": [
+        "catalogue marker; portable framework/media imports where present"
+      ],
+      "originalSource": "app/src/arc/blocks/stats-band/stats-band-world.ts"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/blocks/stats-band/stats-band.module.css",
+      "target": "src/source/blocks/stats-band/stats-band.module.css",
+      "sourceSha256": "43121f42f3140161871f1425274f8d1a491616f4bf30839e9f7e5ed08b19fc62",
+      "adaptedSha256": "43121f42f3140161871f1425274f8d1a491616f4bf30839e9f7e5ed08b19fc62",
+      "changes": [],
+      "originalSource": "app/src/arc/blocks/stats-band/stats-band.module.css"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/swipe-actions/swipe-actions.tsx",
+      "target": "src/source/swipe-actions/swipe-actions.tsx",
+      "sourceSha256": "44636a22e832e09a3ac30f42dbcfb2674a930127e4b288bfc5078b094a1888c0",
+      "adaptedSha256": "13aad1d79c15510cccae907a1e73d54e948606b81c877db28ba5ed1b34d7b16c",
+      "changes": [
+        "catalogue marker; portable framework/media imports where present",
+        "theme-preserving source portal host"
+      ],
+      "originalSource": "app/src/arc/swipe-actions/swipe-actions.tsx"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/swipe-actions/swipe-actions.module.css",
+      "target": "src/source/swipe-actions/swipe-actions.module.css",
+      "sourceSha256": "2acdbeda8ff1c228fcece9b19d90b740a69af9e99892217c10146348220002b7",
+      "adaptedSha256": "2acdbeda8ff1c228fcece9b19d90b740a69af9e99892217c10146348220002b7",
+      "changes": [],
+      "originalSource": "app/src/arc/swipe-actions/swipe-actions.module.css"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/time-picker/time-picker.tsx",
+      "target": "src/source/time-picker/time-picker.tsx",
+      "sourceSha256": "0acb7e628b37a1e9eff3039ce93aab24e14cb71cec4ba25ea3c684c4d9448ccf",
+      "adaptedSha256": "4f9c76cf49fabd8f76cc7eb047cca82b62d62a07aa1c88859bcd12532437396b",
+      "changes": [
+        "catalogue marker; portable framework/media imports where present"
+      ],
+      "originalSource": "app/src/arc/time-picker/time-picker.tsx"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/time-picker/time-picker.module.css",
+      "target": "src/source/time-picker/time-picker.module.css",
+      "sourceSha256": "571d5dd081caa1bb5903278489aa4c4daba9e7077a58f33b12ad0f08d1826812",
+      "adaptedSha256": "571d5dd081caa1bb5903278489aa4c4daba9e7077a58f33b12ad0f08d1826812",
+      "changes": [],
+      "originalSource": "app/src/arc/time-picker/time-picker.module.css"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/toast-stack/toast-stack.tsx",
+      "target": "src/source/toast-stack/toast-stack.tsx",
+      "sourceSha256": "ba422f5d6e330c49b9f2a110af7cf91e46e20697490ef7f103909e982adde49a",
+      "adaptedSha256": "84a7073324bebdad642a80ab3812f4234781130dd6799607257b379cf91d8377",
+      "changes": [
+        "catalogue marker; portable framework/media imports where present"
+      ],
+      "originalSource": "app/src/arc/toast-stack/toast-stack.tsx"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/toast-stack/toast-stack.module.css",
+      "target": "src/source/toast-stack/toast-stack.module.css",
+      "sourceSha256": "68ea14b271d2af559f90dd2e972b20591092b1dff9ef5e6a408f6082c015379a",
+      "adaptedSha256": "68ea14b271d2af559f90dd2e972b20591092b1dff9ef5e6a408f6082c015379a",
+      "changes": [],
+      "originalSource": "app/src/arc/toast-stack/toast-stack.module.css"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/tree-view/tree-view.tsx",
+      "target": "src/source/tree-view/tree-view.tsx",
+      "sourceSha256": "f7233c6349a4d9fb232860458dd89ca29dea8f85bd063eca511068e34d4e5774",
+      "adaptedSha256": "ce5141c34518ec921846ec8d74dc7420e80205e03ed840c4ee4c2188cdc8a18d",
+      "changes": [
+        "catalogue marker; portable framework/media imports where present"
+      ],
+      "originalSource": "app/src/arc/tree-view/tree-view.tsx"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/tree-view/tree-view.module.css",
+      "target": "src/source/tree-view/tree-view.module.css",
+      "sourceSha256": "6b8917e2411181874d1efc760fbd3904cfbfc46732771e12c847d0305f3c6897",
+      "adaptedSha256": "6b8917e2411181874d1efc760fbd3904cfbfc46732771e12c847d0305f3c6897",
+      "changes": [],
+      "originalSource": "app/src/arc/tree-view/tree-view.module.css"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/user-menu/user-menu.tsx",
+      "target": "src/source/user-menu/user-menu.tsx",
+      "sourceSha256": "ea41adfd5ef81396d4044a8d9d06759cd4628adcb7cd4e74c6cc6dfb98313c8f",
+      "adaptedSha256": "696f62caf3612788564da28af66fed024e7318e11850900021d4ee0634890241",
+      "changes": [
+        "catalogue marker; portable framework/media imports where present",
+        "theme-preserving source portal host"
+      ],
+      "originalSource": "app/src/arc/user-menu/user-menu.tsx"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/user-menu/user-menu.module.css",
+      "target": "src/source/user-menu/user-menu.module.css",
+      "sourceSha256": "765627540a3767d9bffc86b1cb3be2154975e41d9a561fef9cabe6dd74d0027a",
+      "adaptedSha256": "765627540a3767d9bffc86b1cb3be2154975e41d9a561fef9cabe6dd74d0027a",
+      "changes": [],
+      "originalSource": "app/src/arc/user-menu/user-menu.module.css"
+    }
+  ],
+  "dependencies": [
+    "react",
+    "react-dom",
+    "motion",
+    "lucide-react",
+    "@radix-ui/react-dialog",
+    "@radix-ui/react-popover"
+  ],
+  "demoAdaptations": [
+    {
+      "source": "../../hubs/ui/src/arc/demos/chat-thread.tsx",
+      "target": "examples/package-suite/block-demos/chat-thread.tsx",
+      "sourceSha256": "458f076fc15284fcf738cd2a0ae9d54b7382a3eb70434e43c7356018f568690e",
+      "adaptedSha256": "8329d44ba2b573ddcd9e2607af7255fb4395743c753dc0f7499c851536e5ca9e",
+      "changes": [
+        "installed @siso/blocks/source imports",
+        "canonical workbench marker",
+        "owned /brand/siso-mark.png replaces unlicensed portrait"
+      ],
+      "originalSource": "app/src/arc/demos/chat-thread.tsx"
+    },
+    {
+      "source": "../../hubs/ui/src/arc/demos/command-palette.tsx",
+      "target": "examples/package-suite/block-demos/command-palette.tsx",
+      "sourceSha256": "b559524612a8453d566f74aee3556f1560f10ccb5c77d89876c3cd08d0c6aefb",
+      "adaptedSha256": "4a4c4156dcfe9f9899869e06e2789fc6f8859da39636ff151f2a98a595acc5b0",
+      "changes": [
+        "installed @siso/blocks/source imports",
+        "canonical workbench marker"
+      ],
+      "originalSource": "app/src/arc/demos/command-palette.tsx"
+    },
+    {
+      "source": "../../hubs/ui/src/arc/demos/comment-thread.tsx",
+      "target": "examples/package-suite/block-demos/comment-thread.tsx",
+      "sourceSha256": "ef7f349c0811ca4b723e7d9580b4e9fac14bc2f815a75b0feede0019016a5d4e",
+      "adaptedSha256": "53e64c1ba894784c310f7c60e88a5d7a7f7b1378648c7032184a44747c9d660f",
+      "changes": [
+        "installed @siso/blocks/source imports",
+        "canonical workbench marker"
+      ],
+      "originalSource": "app/src/arc/demos/comment-thread.tsx"
+    },
+    {
+      "source": "../../hubs/ui/src/arc/demos/dialog.tsx",
+      "target": "examples/package-suite/block-demos/dialog.tsx",
+      "sourceSha256": "ac05587c18e9608ab3a38b46eb75315ca7a8f74999fec2a030ffb770f16d5314",
+      "adaptedSha256": "95d6ff4d4f4330b1761903f5cc7b34b7b1ebb24ed591c9bc935e49b4cb0f674c",
+      "changes": [
+        "installed @siso/blocks/source imports",
+        "canonical workbench marker"
+      ],
+      "originalSource": "app/src/arc/demos/dialog.tsx"
+    },
+    {
+      "source": "../../hubs/ui/src/arc/demos/drawer.tsx",
+      "target": "examples/package-suite/block-demos/drawer.tsx",
+      "sourceSha256": "aeaf328ccbe9c048e0c02e9986a7005e4fa25c05cce1c4f5b05b57ededef4598",
+      "adaptedSha256": "ef4c6145dc0178791dab6bed43421f837d62b9ec65d88ef17855f6ff197a2f26",
+      "changes": [
+        "installed @siso/blocks/source imports",
+        "canonical workbench marker"
+      ],
+      "originalSource": "app/src/arc/demos/drawer.tsx"
+    },
+    {
+      "source": "../../hubs/ui/src/arc/demos/empty-state.tsx",
+      "target": "examples/package-suite/block-demos/empty-state.tsx",
+      "sourceSha256": "8b645de56176f2fd410ee4ee35377034ee7e711cfc6bae6a6c7289cc59677510",
+      "adaptedSha256": "2a7cbe8834b93bb9da8ea48888977a3951b6c28596598bb3731e93bed4bba764",
+      "changes": [
+        "installed @siso/blocks/source imports",
+        "canonical workbench marker"
+      ],
+      "originalSource": "app/src/arc/demos/empty-state.tsx"
+    },
+    {
+      "source": "../../hubs/ui/src/arc/demos/file-dropzone.tsx",
+      "target": "examples/package-suite/block-demos/file-dropzone.tsx",
+      "sourceSha256": "505a82cb6453a0acc6a209290b751b1d5ff9408a3ef385c3396ecb7a0b3756d4",
+      "adaptedSha256": "f307886187e7527bd706e4fe645aace70fde9967d97db604226b7a450137f9fe",
+      "changes": [
+        "installed @siso/blocks/source imports",
+        "canonical workbench marker",
+        "undefined uploadFile helper completed as explicit browser-only progress demonstration with abort cleanup"
+      ],
+      "originalSource": "app/src/arc/demos/file-dropzone.tsx"
+    },
+    {
+      "source": "../../hubs/ui/src/arc/demos/filter-toolbar.tsx",
+      "target": "examples/package-suite/block-demos/filter-toolbar.tsx",
+      "sourceSha256": "d7d993617f7b10ed368ddd830f025de1a72fd2c1b56acec543c28a561f038f53",
+      "adaptedSha256": "30e1b633c5a13108d3c10ae7ad40c745e31cfe29e917a9afc48e61bbd75cbeec",
+      "changes": [
+        "installed @siso/blocks/source imports",
+        "canonical workbench marker"
+      ],
+      "originalSource": "app/src/arc/demos/filter-toolbar.tsx"
+    },
+    {
+      "source": "../../hubs/ui/src/arc/demos/hover-card.tsx",
+      "target": "examples/package-suite/block-demos/hover-card.tsx",
+      "sourceSha256": "59a81aa1c351d621f5c7e17898b4d34f632780dfe9a4059623de34cabb268516",
+      "adaptedSha256": "06b71f1029b4bf676436291d743b179bb604deebf906259f002773b962e5be8c",
+      "changes": [
+        "installed @siso/blocks/source imports",
+        "canonical workbench marker"
+      ],
+      "originalSource": "app/src/arc/demos/hover-card.tsx"
+    },
+    {
+      "source": "../../hubs/ui/src/arc/demos/notification-center.tsx",
+      "target": "examples/package-suite/block-demos/notification-center.tsx",
+      "sourceSha256": "47ff770a5e6ff94d4f2ffe63203798c5ee38a1351ac25340880d76f91e6529fe",
+      "adaptedSha256": "52789de3a49410415d0ba1d9c73e9d6f29a371d269622b9dcba21d3db1568c31",
+      "changes": [
+        "installed @siso/blocks/source imports",
+        "canonical workbench marker",
+        "owned /brand/siso-mark.png replaces unlicensed portrait",
+        "undefined markRead/dismiss helpers completed with visible local action state"
+      ],
+      "originalSource": "app/src/arc/demos/notification-center.tsx"
+    },
+    {
+      "source": "../../hubs/ui/src/arc/demos/pagination.tsx",
+      "target": "examples/package-suite/block-demos/pagination.tsx",
+      "sourceSha256": "38546e1cac41ffce7b4a9446f7ee099cf3550c20b55252351ea19af7ad43423e",
+      "adaptedSha256": "f53cfb49e0afda37d9bf1e82d7e1ead1220bdc561955c97f8fd91fba14d9391e",
+      "changes": [
+        "installed @siso/blocks/source imports",
+        "canonical workbench marker"
+      ],
+      "originalSource": "app/src/arc/demos/pagination.tsx"
+    },
+    {
+      "source": "../../hubs/ui/src/arc/demos/popover.tsx",
+      "target": "examples/package-suite/block-demos/popover.tsx",
+      "sourceSha256": "9d52b9b556a6445889f985faf3748e61b10624f47b1705c956b21c6f1ad55082",
+      "adaptedSha256": "f76e63c43928a621f4cebe2a9489953e798f13bf291a543ac97a42df088ddca7",
+      "changes": [
+        "installed @siso/blocks/source imports",
+        "canonical workbench marker"
+      ],
+      "originalSource": "app/src/arc/demos/popover.tsx"
+    },
+    {
+      "source": "../../hubs/ui/src/arc/demos/sortable-data-table.tsx",
+      "target": "examples/package-suite/block-demos/sortable-data-table.tsx",
+      "sourceSha256": "b439f573bf548fd4fd67702025037c9a74cd4c3644bfc89059f7a9694f1b31a0",
+      "adaptedSha256": "50ef521cda222db66d86aabdba85db2783664d08bb50e86528de4872696b3ae6",
+      "changes": [
+        "installed @siso/blocks/source imports",
+        "canonical workbench marker"
+      ],
+      "originalSource": "app/src/arc/demos/sortable-data-table.tsx"
+    },
+    {
+      "source": "../../hubs/ui/src/arc/demos/timeline.tsx",
+      "target": "examples/package-suite/block-demos/timeline.tsx",
+      "sourceSha256": "392f2a6be5fc5f3d2afdadab8b11a78e9bd5d88fcb0036cc3e68c9e6a982b911",
+      "adaptedSha256": "fc991899d61f1b00d66c27c47dce8f3b66165fece2aed10290b6249353bafa1c",
+      "changes": [
+        "installed @siso/blocks/source imports",
+        "canonical workbench marker"
+      ],
+      "originalSource": "app/src/arc/demos/timeline.tsx"
+    },
+    {
+      "source": "../../hubs/ui/src/arc/demos/toast.tsx",
+      "target": "examples/package-suite/block-demos/toast.tsx",
+      "sourceSha256": "7c5d388d682812f683c247b0462cce1fdfbf53a823b7bc6dc6b731f6a4af8b9d",
+      "adaptedSha256": "486b8aede9861a2093f0d8c2838b5a7bc482c3f7e5666ad5392334acfb9e199f",
+      "changes": [
+        "installed @siso/blocks/source imports",
+        "canonical workbench marker"
+      ],
+      "originalSource": "app/src/arc/demos/toast.tsx"
+    }
+  ],
+  "scopeAdapter": "src/source/lib/source-block-scope.tsx; theme-preserving portal host created/removed with scope lifecycle",
+  "adapters": [
+    {
+      "file": "src/source/lib/source-block-scope.tsx",
+      "sha256": "78da87fc50170c41121982b735f68f158a7c97477dc20c597332ad2b8ca41f72",
+      "source": "SISO-owned scoped portal adapter"
+    }
+  ],
+  "upstreamSnapshot": {
+    "uiSourceCommit": "75964144e29ecc9efa6b7d2b3866a1c2167fdb0e",
+    "directory": "_reference/ui-suite-v0.4.0/arc",
+    "use": "Immutable provenance input only; not an importable kit or product implementation."
+  }
+}

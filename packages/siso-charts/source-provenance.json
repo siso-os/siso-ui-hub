@@ -1,0 +1,110 @@
+{
+  "license": "MIT",
+  "copyright": "Copyright (c) 2026 Elia Kuratli",
+  "licenseUrl": "https://uiarc.dev/license",
+  "verifiedOn": "2026-10-16",
+  "components": [
+    {
+      "name": "activity-heatmap",
+      "tier": "free",
+      "url": "https://uiarc.dev/components/activity-heatmap",
+      "install": "npx shadcn@latest add https://uiarc.dev/r/activity-heatmap.json"
+    },
+    {
+      "name": "bar-chart",
+      "tier": "free",
+      "url": "https://uiarc.dev/components/bar-chart",
+      "install": "npx shadcn@latest add https://uiarc.dev/r/bar-chart.json"
+    },
+    {
+      "name": "brush-chart",
+      "tier": "free",
+      "url": "https://uiarc.dev/components/brush-chart",
+      "install": "npx shadcn@latest add https://uiarc.dev/r/brush-chart.json"
+    },
+    {
+      "name": "donut-chart",
+      "tier": "free",
+      "url": "https://uiarc.dev/components/donut-chart",
+      "install": "npx shadcn@latest add https://uiarc.dev/r/donut-chart.json"
+    },
+    {
+      "name": "gauge",
+      "tier": "free",
+      "url": "https://uiarc.dev/components/gauge",
+      "install": "npx shadcn@latest add https://uiarc.dev/r/gauge.json"
+    },
+    {
+      "name": "line-chart",
+      "tier": "free",
+      "url": "https://uiarc.dev/components/line-chart",
+      "install": "npx shadcn@latest add https://uiarc.dev/r/line-chart.json"
+    },
+    {
+      "name": "ridgeline",
+      "tier": "free",
+      "url": "https://uiarc.dev/components/ridgeline",
+      "install": "npx shadcn@latest add https://uiarc.dev/r/ridgeline.json"
+    },
+    {
+      "name": "slope-chart",
+      "tier": "free",
+      "url": "https://uiarc.dev/components/slope-chart",
+      "install": "npx shadcn@latest add https://uiarc.dev/r/slope-chart.json"
+    },
+    {
+      "name": "sparkline",
+      "tier": "free",
+      "url": "https://uiarc.dev/components/sparkline",
+      "install": "npx shadcn@latest add https://uiarc.dev/r/sparkline.json"
+    },
+    {
+      "name": "streamgraph",
+      "tier": "free",
+      "url": "https://uiarc.dev/components/streamgraph",
+      "install": "npx shadcn@latest add https://uiarc.dev/r/streamgraph.json"
+    },
+    {
+      "name": "treemap",
+      "tier": "free",
+      "url": "https://uiarc.dev/components/treemap",
+      "install": "npx shadcn@latest add https://uiarc.dev/r/treemap.json"
+    },
+    {
+      "name": "waffle-chart",
+      "tier": "free",
+      "url": "https://uiarc.dev/components/waffle-chart",
+      "install": "npx shadcn@latest add https://uiarc.dev/r/waffle-chart.json"
+    }
+  ],
+  "files": {
+    "src/arc/activity-heatmap/activity-heatmap.module.css": "897c966e8a069bc9663386219e1eed90e19f771a00936d8ff2cd3f04acbff093",
+    "src/arc/activity-heatmap/activity-heatmap.tsx": "53cf4095b94b80758619a5677bd24b744e83540453c5ef9d89a9239b625fe2ea",
+    "src/arc/bar-chart/bar-chart.module.css": "cfa61a42289d9a6f54e1cdee9563ae9378f8b6475b70c5d4fb56ebb52182b2ce",
+    "src/arc/bar-chart/bar-chart.tsx": "50037747733f76ac28642f41aabd153c79fe6be5b2c66d33773a45db9948cedd",
+    "src/arc/donut-chart/donut-chart.module.css": "4adac4950f4168cfee46177440c1e8d311bb4a764cd18afc37beafbe243a6f09",
+    "src/arc/donut-chart/donut-chart.tsx": "f6317896cb3e9e4b95c2afb4d3e9ce58c20184375ad1c6c80c441224b65d3c60",
+    "src/arc/gauge/gauge.module.css": "523456638d3edcb059c858c732bd7b9a264848da72f6b99838c3c089c335238c",
+    "src/arc/gauge/gauge.tsx": "37aa8d63b2bbdb180d005ab071fcf0dca0477f910da0ccf07ff1c8fa16c4ed6a",
+    "src/arc/index.tsx": "5e5756c68a644a96ed64a3e35c29f7c3a90c9dab0071e8f32e6dc9db71642226",
+    "src/arc/lib/motion-tokens.ts": "ac3831e137555f6b18be4572cc2103ec42cf6f70d5748af5ad5a356287952549",
+    "src/arc/line-chart/line-chart.module.css": "0a761cc358588f948f4a4689ccfc9f57f73b3f043f07599e0233e025f30a919f",
+    "src/arc/line-chart/line-chart.tsx": "8099777a9b8670fe617edb9dc45be38c4a6737c67f9d06898927f6ef970eb9db",
+    "src/arc/slope-chart/slope-chart.module.css": "de9db30d2c637664a937b99cb31d6451b45b3567783cd919598ac8003f69914f",
+    "src/arc/slope-chart/slope-chart.tsx": "bbcb8c971214af213f4203ce1e27a65ea4176a76725bcfddf6f0ae582c7e36b3",
+    "src/arc/sparkline/sparkline.module.css": "0b7995379fb5a7955d48ff95871e06494a6092ca028c0c5d43aade2f364d844b",
+    "src/arc/sparkline/sparkline.tsx": "76e28aac871128cb1d265c1ba3c7b3c71ead89417b53b0255fc4e389594e86ee",
+    "src/arc/tokens.ts": "5203a8e18189117506e31b711e687023a2b029c1b8270160fa7e620d253cedc6",
+    "src/arc/treemap/treemap.module.css": "5c619a046f32a6186a39b928f13140730a1931c25006026704ad3e0ce4ac25a1",
+    "src/arc/treemap/treemap.tsx": "ffcb1481f44e6943ce36665ebee80f261dccfbed23227b986bf4eb489cff9a4a",
+    "src/arc/waffle-chart/waffle-chart.module.css": "55213a52b0b2b1a1080d65f095753c24015b6a9c713080d4736ddbf48a6a9f82",
+    "src/arc/waffle-chart/waffle-chart.tsx": "9b6053825583ca6e9e13938442e9a87eaae6044e1daf854070d73f4e5b923be2",
+    "src/arc/motion-tokens.ts": "ab1e994b78a3857e75cb90a4db5381a96c0f41ed9039d061afb4e7e0ba30f070",
+    "src/arc/brush-chart/brush-chart.tsx": "4ec74c2cbd6ce6643df5eb03b2d38d5a88550bd1291a78ce951c7fced386246e",
+    "src/arc/brush-chart/brush-chart.module.css": "de7ee8510ef381ef28a527642b918c89109a4e41d2b6ed768f5b25c3a39073fe",
+    "src/arc/ridgeline/ridgeline.tsx": "f1e08b5dd2f28653d1b67628749a6ba8afd98780fb4fbac18aef70bd762fad7f",
+    "src/arc/ridgeline/ridgeline.module.css": "5f05deb648fea914e894ee3c3025c987c19bef4d0b1eeeb30c0ce63210edefa9",
+    "src/arc/streamgraph/streamgraph.tsx": "ba982c22d2eaaf205a0b843c2f3991dd476b4f98517c90edfe68f29acc354b9e",
+    "src/arc/streamgraph/streamgraph.module.css": "63f6baa58b07997af11faba22ac3ed269e7643981121424e65e77f751618b5eb"
+  }
+}

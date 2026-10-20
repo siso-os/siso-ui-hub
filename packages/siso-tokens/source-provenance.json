@@ -1,0 +1,123 @@
+{
+  "sourceFiles": [
+    {
+      "source": "ui-hub/app/src/index.css",
+      "sha256": "a7d33e5860b0ae081763f9c19d0e364695dbaa020dca438d857f5dd55f9297dc",
+      "sourceProof": {
+        "repository": "https://github.com/sisodias/siso-ui-hub",
+        "ref": "043813a98064a722d260a71b033245ad7e38a7f1",
+        "path": "app/src/index.css",
+        "snapshot": "scripts/fixtures/source-proof/a7d33e5860b0ae081763f9c19d0e364695dbaa020dca438d857f5dd55f9297dc.txt"
+      }
+    },
+    {
+      "source": "ui-hub/app/src/kitv1/siso/frame-tokens.ts",
+      "sha256": "399c1a423ac1efbb325dda830e75baaec4950ca693bcf082f2b4147905c36fae",
+      "sourceProof": {
+        "repository": "https://github.com/sisodias/siso-ui-hub",
+        "ref": "043813a98064a722d260a71b033245ad7e38a7f1",
+        "path": "app/src/kitv1/siso/frame-tokens.ts",
+        "snapshot": "scripts/fixtures/source-proof/399c1a423ac1efbb325dda830e75baaec4950ca693bcf082f2b4147905c36fae.txt"
+      }
+    },
+    {
+      "source": "sisolabs-landing/src/features/siso/siso.css",
+      "sha256": "a0df269f540a66b4cfddc4fd48d57a29c50ceae5eec661bb93cda4776c5ee7d6",
+      "sourceProof": {
+        "repository": "https://github.com/sisodias/siso-agency-lp",
+        "ref": "723a19d6636cdf4e011d4f3bb7da6bfcfbc94308",
+        "path": "src/features/siso/siso.css",
+        "snapshot": "scripts/fixtures/source-proof/a0df269f540a66b4cfddc4fd48d57a29c50ceae5eec661bb93cda4776c5ee7d6.txt"
+      }
+    },
+    {
+      "source": "siso-ecosystem/docs-site/app/global.css",
+      "sha256": "a89effc761025ee4a973b4f89b79f045124c40b3e50aa6c61359bbf5a4b07ebc",
+      "sourceProof": {
+        "repository": "https://github.com/sisodias/siso",
+        "ref": "e2d3d783e8694dec9e6dfee9f4b390b3aa0283c8",
+        "path": "agency/hq/site/docs-site/app/global.css",
+        "snapshot": "scripts/fixtures/source-proof/a89effc761025ee4a973b4f89b79f045124c40b3e50aa6c61359bbf5a4b07ebc.txt"
+      }
+    },
+    {
+      "source": "siso-ecosystem/src/features/marketing/components/siso/ProductGlyph.tsx",
+      "sha256": "330e640808ef0f4b5d3b476075f38f55e280d5d06c40a25f023b3952ede97120",
+      "sourceProof": {
+        "repository": "https://github.com/sisodias/siso",
+        "ref": "e2d3d783e8694dec9e6dfee9f4b390b3aa0283c8",
+        "path": "agency/hq/site/src/features/marketing/components/siso/ProductGlyph.tsx",
+        "snapshot": "scripts/fixtures/source-proof/330e640808ef0f4b5d3b476075f38f55e280d5d06c40a25f023b3952ede97120.txt"
+      }
+    }
+  ],
+  "sets": [
+    {
+      "id": "hub",
+      "source": "../../hubs/ui/src/index.css",
+      "darkVariables": 62,
+      "lightVariables": 62,
+      "originalSource": "app/src/index.css"
+    },
+    {
+      "id": "landing",
+      "source": "sisolabs-landing/src/features/siso/siso.css",
+      "darkVariables": 19,
+      "lightVariables": 19
+    },
+    {
+      "id": "docs",
+      "source": "siso-ecosystem/docs-site/app/global.css",
+      "darkVariables": 50,
+      "lightVariables": 50
+    }
+  ],
+  "productPalettes": [
+    {
+      "id": "ui-hub",
+      "top": "#06123a",
+      "accent": "#1f69ff",
+      "tint": "#9cc0ff"
+    },
+    {
+      "id": "library",
+      "top": "#170a2e",
+      "accent": "#7540b7",
+      "tint": "#d2b6ff"
+    },
+    {
+      "id": "os",
+      "top": "#260b0a",
+      "accent": "#ed615a",
+      "tint": "#ffc0b8"
+    },
+    {
+      "id": "research",
+      "top": "#0b0e14",
+      "accent": "#41567a",
+      "tint": "#bfe6ff"
+    },
+    {
+      "id": "agency",
+      "top": "#03180f",
+      "accent": "#00a879",
+      "tint": "#9ff0cf"
+    },
+    {
+      "id": "voice",
+      "top": "#24050f",
+      "accent": "#e0336a",
+      "tint": "#ffb3cb"
+    },
+    {
+      "id": "all",
+      "top": "#241002",
+      "accent": "#ff6a1a",
+      "tint": "#ffd59a"
+    }
+  ],
+  "frameSchemes": 8,
+  "adaptations": [
+    "The landing paper background/ink use its source values; additional paper surfaces reuse UI Hub light tokens. Semantic aliases map each source layer without replacing the original variables."
+  ]
+}

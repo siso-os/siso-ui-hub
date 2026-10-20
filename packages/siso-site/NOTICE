@@ -1,0 +1,33 @@
+SISO source-fidelity extraction, 16 October 2026.
+
+Original source repository: siso-ecosystem. Original file and adapted file hashes
+are in source-manifest.json. This is the accepted Footer/index.tsx composition,
+not the later footer A/B/C prototypes. Original source comments and attribution
+are retained. The landing ProductGlyph came from the privacy-clean hub copy;
+no WorkspaceMark geometry, private partner brand or client content is included.
+
+RuixenGradientFooter: source comments credit 21st.dev / Ruixen UI and inspiration
+from Dia Browser. Upstream MIT licence verified at
+https://github.com/ruixenui/ruixen.com/blob/main/LICENSE.md
+Copyright (c) 2025 Ruixen UI. Full notice in licenses/ruixen-MIT.md.
+
+LaserBeam: the original SISO component explicitly states its shader is copied
+unchanged from React Bits LaserFlow; SISO replaced the three.js wrapper with
+plain WebGL1. Current upstream licence was verified at
+https://github.com/DavidHDev/react-bits/blob/main/LICENSE.md
+Copyright (c) 2026 David Haz. MIT + Commons Clause restriction prohibits selling,
+sublicensing or redistributing the components themselves, including bundles or
+ports. Full notice in licenses/react-bits-LICENSE.md. The shader and its wrapper
+are excluded from this package graph and tarball. The signature exposes a beam
+slot for a licensed host application effect. The workbench website supplies the
+original effect under its application-use terms. Do not relabel that shader as MIT
+or include it in a downloadable component archive. This SISO package stays private.
+
+Lucide icons are supplied by lucide-react and retain their upstream ISC notices.
+Public profile images, brand marks and SISO-generated artwork remain associated
+assets, with source hashes in assets.json; no asset ownership is transferred.
+
+Next Link was replaced with an actual native anchor, not a router shim. Production
+post records and siso-stats.json were not copied. Footer statistics/social counts
+and optional extrapolation are caller-provided; no API/auth or data-fetch coupling
+remains. Docs framework/routing/search/OpenAPI/MDX runtime are not redistributed.

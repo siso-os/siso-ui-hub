@@ -1,0 +1,11 @@
+@siso/widgets 0.1.0
+Copyright (c) 2026 SISO
+
+All implementation in this package was independently written for SISO.
+Behavioral references: SISO UI hub ADRs 0003, 0004, 0005, 0009 and HALO CRM
+project-base commit a31e3b820b51c5eec474f5b74c56a4e4188d01c9,
+src/widgets/engine/{WidgetDef.ts,WidgetGrid.tsx,WidgetBoard.tsx,
+WidgetShell.tsx,useWidgetLayout.ts}.
+No source code, assets, private records or dependency implementations from HALO
+CRM were copied or redistributed. This is not a HALO package or wire format.
+React is a peer dependency licensed separately under MIT.

@@ -1,0 +1,110 @@
+{
+  "record_type": "ReleaseManifest",
+  "record_version": "1.0.0",
+  "record_id": "release.actionist-teable-data-grid.prototype-v0.1.0",
+  "block_id": "actionist/teable-data-grid",
+  "version": "0.1.0",
+  "capability_id": "actionist/teable-data-grid",
+  "links": {
+    "manifest": "../actionist-block.json",
+    "capability": "capability.json",
+    "packaging": "packaging.json",
+    "host_requirements": "host-requirements.json",
+    "binding_plan": "binding-plan.json",
+    "qualification": "qualification.json",
+    "registry": "registry.json"
+  },
+  "status": "not_released",
+  "release_id": "actionist-teable-data-grid-prototype-v0.1.0",
+  "application_id": "synthetic-host-only",
+  "release_status": "not_released",
+  "pinned_bindings": [
+    "binding-plan.json"
+  ],
+  "pinned_source_revision": "b245a987f8bfb7411d4e2423907b9cbb0a1c9b6b",
+  "runtime_profile": "sidecar_service",
+  "qualification_ref": "qualification.json",
+  "registry_ref": "registry.json",
+  "upstream_sync_model": "downstream_service",
+  "rollback_plan": {
+    "objects": [
+      {
+        "object_kind": "code_artifact",
+        "restore_procedure": "Restore the host package and proxy artifact by content digest.",
+        "recovery_horizon_seconds": 0,
+        "owner": "actionist-host",
+        "status": "not_run"
+      },
+      {
+        "object_kind": "configuration",
+        "restore_procedure": "Restore the prior validated host configuration snapshot without logging secret values.",
+        "recovery_horizon_seconds": 0,
+        "owner": "actionist-host",
+        "status": "not_run"
+      },
+      {
+        "object_kind": "secrets",
+        "restore_procedure": "Restore host secret references through the host secret manager; no secret is stored in this package.",
+        "recovery_horizon_seconds": 0,
+        "owner": "host-operator",
+        "status": "not_run"
+      },
+      {
+        "object_kind": "database_schema",
+        "restore_procedure": "Run the donor-approved metadata/data-plane rollback procedure owned by Teable; never run host migrations against donor resources.",
+        "recovery_horizon_seconds": 0,
+        "owner": "teable-runtime-owner",
+        "status": "not_run"
+      },
+      {
+        "object_kind": "data",
+        "restore_procedure": "Restore the pre-change donor backup and compare counts/IDs in a disposable drill.",
+        "recovery_horizon_seconds": 0,
+        "owner": "teable-runtime-owner",
+        "status": "not_run"
+      },
+      {
+        "object_kind": "donor_revision",
+        "restore_procedure": "Re-select the pinned donor revision and verify its archive digest before restart.",
+        "recovery_horizon_seconds": 0,
+        "owner": "teable-runtime-owner",
+        "status": "not_run"
+      },
+      {
+        "object_kind": "surface_route",
+        "restore_procedure": "Switch the host route to the last validated binding or disable the route by entitlement.",
+        "recovery_horizon_seconds": 0,
+        "owner": "actionist-host",
+        "status": "not_run"
+      },
+      {
+        "object_kind": "connector_credential_state",
+        "restore_procedure": "Revoke/restore donor connector state through the host-owned credential boundary if connectors are enabled.",
+        "recovery_horizon_seconds": 0,
+        "owner": "host-operator",
+        "status": "not_applicable_for_v0.1"
+      }
+    ],
+    "composition_horizon_rule": "minimum_required_object_horizon",
+    "drill_status": "not_run"
+  },
+  "recovery_horizon_seconds": 0,
+  "artifact_retention": {
+    "pinned_by_digest": true,
+    "retained_in_actionist_storage": false,
+    "note": "The package records the donor archive digest but does not retain a donor artifact; therefore this prototype cannot be released or admitted."
+  },
+  "release_decision": {
+    "decision": "hold",
+    "reason": "recovery horizon is 0 and qualification is not complete",
+    "deployment_performed": false,
+    "admission_claimed": false
+  },
+  "holds": [
+    "authenticated native UI and mobile CRUD proof",
+    "attachment proof",
+    "independent restore drill",
+    "host identity/session exchange proof",
+    "corresponding-source and Section 7 attestation"
+  ]
+}

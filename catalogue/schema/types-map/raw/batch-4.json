@@ -1,0 +1,6696 @@
+{
+  "actions/segmented-control": {
+    "types": [
+      {
+        "id": "pill-toggle",
+        "name": "Pill toggle",
+        "what": "Rounded pill with sliding thumb indicator"
+      },
+      {
+        "id": "button-segments",
+        "name": "Button segments",
+        "what": "Individual button-like segments"
+      },
+      {
+        "id": "toggle-group",
+        "name": "Toggle group",
+        "what": "Radio or toggle button group"
+      }
+    ],
+    "map": {
+      "pill toggle with sliding thumb": {
+        "to": "pill-toggle",
+        "look": null,
+        "motion": null
+      },
+      "basic segmented": {
+        "to": "button-segments",
+        "look": null,
+        "motion": null
+      },
+      "pill or segmented": {
+        "to": "pill-toggle",
+        "look": null,
+        "motion": null
+      },
+      "sliding pill": {
+        "to": "pill-toggle",
+        "look": null,
+        "motion": null
+      },
+      "button segments": {
+        "to": "button-segments",
+        "look": null,
+        "motion": null
+      },
+      "rubber segment": {
+        "to": "button-segments",
+        "look": null,
+        "motion": null
+      },
+      "segmented toggle": {
+        "to": "button-segments",
+        "look": null,
+        "motion": null
+      },
+      "sliding thumb": {
+        "to": "pill-toggle",
+        "look": null,
+        "motion": null
+      },
+      "toggle group or radio buttons": {
+        "to": "button-segments",
+        "look": null,
+        "motion": null
+      },
+      "mode selector": {
+        "to": "toggle-group",
+        "look": null,
+        "motion": null
+      },
+      "specialty styling": {
+        "to": "toggle-group",
+        "look": null,
+        "motion": null
+      },
+      "segmented buttons": {
+        "to": "button-segments",
+        "look": null,
+        "motion": null
+      },
+      "fluid wipe": {
+        "to": "toggle-group",
+        "look": null,
+        "motion": null
+      },
+      "glass themed": {
+        "to": "toggle-group",
+        "look": null,
+        "motion": null
+      },
+      "motion animated": {
+        "to": "toggle-group",
+        "look": null,
+        "motion": null
+      },
+      "multi select": {
+        "to": "toggle-group",
+        "look": null,
+        "motion": null
+      },
+      "tone colored": {
+        "to": "toggle-group",
+        "look": null,
+        "motion": null
+      },
+      "vertical layout": {
+        "to": "toggle-group",
+        "look": null,
+        "motion": null
+      },
+      "premium locked": {
+        "to": "toggle-group",
+        "look": null,
+        "motion": null
+      },
+      "ios style segmented control": {
+        "to": "button-segments",
+        "look": null,
+        "motion": null
+      },
+      "radio button group": {
+        "to": "button-segments",
+        "look": null,
+        "motion": null
+      },
+      "animated badge": {
+        "to": "toggle-group",
+        "look": null,
+        "motion": null
+      },
+      "env switcher": {
+        "to": "toggle-group",
+        "look": null,
+        "motion": null
+      },
+      "raised spring thumb": {
+        "to": "pill-toggle",
+        "look": null,
+        "motion": null
+      },
+      "shared highlight": {
+        "to": "toggle-group",
+        "look": null,
+        "motion": null
+      },
+      "toggle group": {
+        "to": "toggle-group",
+        "look": null,
+        "motion": null
+      },
+      "basic switch": {
+        "to": "toggle-group",
+        "look": null,
+        "motion": null
+      },
+      "time selector": {
+        "to": "toggle-group",
+        "look": null,
+        "motion": null
+      },
+      "inchworm pill": {
+        "to": "pill-toggle",
+        "look": null,
+        "motion": null
+      },
+      "workspace switcher": {
+        "to": "toggle-group",
+        "look": null,
+        "motion": null
+      }
+    }
+  },
+  "actions/switch": {
+    "types": [
+      {
+        "id": "basic-switch",
+        "name": "Basic switch",
+        "what": "Standard on/off toggle"
+      },
+      {
+        "id": "theme-toggle",
+        "name": "Theme toggle",
+        "what": "Theme or mode switcher"
+      },
+      {
+        "id": "toggle-button",
+        "name": "Toggle button",
+        "what": "Rectangular toggle button"
+      },
+      {
+        "id": "with-label",
+        "name": "With label",
+        "what": "Switch with text label"
+      },
+      {
+        "id": "animated",
+        "name": "Animated",
+        "what": "Special animation or motion"
+      },
+      {
+        "id": "group",
+        "name": "Group",
+        "what": "Multiple switches together"
+      },
+      {
+        "id": "specialty",
+        "name": "Specialty",
+        "what": "Domain-specific variant"
+      }
+    ],
+    "map": {
+      "basic switch": {
+        "to": "basic-switch",
+        "look": null,
+        "motion": null
+      },
+      "theme toggle": {
+        "to": "theme-toggle",
+        "look": null,
+        "motion": null
+      },
+      "toggle button": {
+        "to": "toggle-button",
+        "look": null,
+        "motion": null
+      },
+      "with label": {
+        "to": "with-label",
+        "look": null,
+        "motion": null
+      },
+      "animated": {
+        "to": "basic-switch",
+        "look": null,
+        "motion": null
+      },
+      "segmented toggle": {
+        "to": "basic-switch",
+        "look": null,
+        "motion": null
+      },
+      "with icons": {
+        "to": "basic-switch",
+        "look": null,
+        "motion": null
+      },
+      "toggle group": {
+        "to": "group",
+        "look": null,
+        "motion": null
+      },
+      "basic on/off switch": {
+        "to": "basic-switch",
+        "look": null,
+        "motion": null
+      },
+      "toggle": {
+        "to": "basic-switch",
+        "look": null,
+        "motion": null
+      },
+      "toggle or like": {
+        "to": "basic-switch",
+        "look": null,
+        "motion": null
+      },
+      "animated switch": {
+        "to": "animated",
+        "look": null,
+        "motion": null
+      },
+      "3d or skeuomorphic": {
+        "to": "specialty",
+        "look": null,
+        "motion": null
+      },
+      "theme or mode toggle": {
+        "to": "theme-toggle",
+        "look": null,
+        "motion": null
+      },
+      "illustrated or decorative": {
+        "to": "basic-switch",
+        "look": null,
+        "motion": null
+      },
+      "vhs effect": {
+        "to": "basic-switch",
+        "look": null,
+        "motion": null
+      },
+      "with label and description": {
+        "to": "with-label",
+        "look": null,
+        "motion": null
+      },
+      "specialized use": {
+        "to": "basic-switch",
+        "look": null,
+        "motion": null
+      },
+      "animated toggle": {
+        "to": "basic-switch",
+        "look": null,
+        "motion": null
+      },
+      "ios or skeuomorphic": {
+        "to": "specialty",
+        "look": null,
+        "motion": null
+      },
+      "theme switcher": {
+        "to": "theme-toggle",
+        "look": null,
+        "motion": null
+      },
+      "schedule editor": {
+        "to": "basic-switch",
+        "look": null,
+        "motion": null
+      },
+      "group": {
+        "to": "group",
+        "look": null,
+        "motion": null
+      },
+      "8-bit switch": {
+        "to": "specialty",
+        "look": null,
+        "motion": null
+      },
+      "8-bit toggle": {
+        "to": "specialty",
+        "look": null,
+        "motion": null
+      },
+      "glass toggle": {
+        "to": "basic-switch",
+        "look": null,
+        "motion": null
+      },
+      "ios toggle": {
+        "to": "specialty",
+        "look": null,
+        "motion": null
+      },
+      "spring switch": {
+        "to": "specialty",
+        "look": null,
+        "motion": null
+      },
+      "brutalist switch": {
+        "to": "basic-switch",
+        "look": null,
+        "motion": null
+      },
+      "form switch": {
+        "to": "basic-switch",
+        "look": null,
+        "motion": null
+      },
+      "native switch": {
+        "to": "basic-switch",
+        "look": null,
+        "motion": null
+      },
+      "halo toggle": {
+        "to": "basic-switch",
+        "look": null,
+        "motion": null
+      },
+      "halo switch": {
+        "to": "basic-switch",
+        "look": null,
+        "motion": null
+      },
+      "pricing toggle": {
+        "to": "basic-switch",
+        "look": null,
+        "motion": null
+      },
+      "rocker switch": {
+        "to": "specialty",
+        "look": null,
+        "motion": null
+      },
+      "3d toggle": {
+        "to": "specialty",
+        "look": null,
+        "motion": null
+      },
+      "liquid toggle": {
+        "to": "basic-switch",
+        "look": null,
+        "motion": null
+      },
+      "neon toggle": {
+        "to": "specialty",
+        "look": null,
+        "motion": null
+      },
+      "themed toggle": {
+        "to": "theme-toggle",
+        "look": null,
+        "motion": null
+      },
+      "blind pull toggle": {
+        "to": "basic-switch",
+        "look": null,
+        "motion": null
+      },
+      "playful toggle": {
+        "to": "basic-switch",
+        "look": null,
+        "motion": null
+      },
+      "premium toggle": {
+        "to": "basic-switch",
+        "look": null,
+        "motion": null
+      },
+      "view toggle": {
+        "to": "basic-switch",
+        "look": null,
+        "motion": null
+      },
+      "swap control": {
+        "to": "basic-switch",
+        "look": null,
+        "motion": null
+      },
+      "adaptive theme": {
+        "to": "theme-toggle",
+        "look": null,
+        "motion": null
+      },
+      "theme picker": {
+        "to": "theme-toggle",
+        "look": null,
+        "motion": null
+      },
+      "billing toggle": {
+        "to": "basic-switch",
+        "look": null,
+        "motion": null
+      },
+      "cross-platform switch": {
+        "to": "basic-switch",
+        "look": null,
+        "motion": null
+      },
+      "native toggle": {
+        "to": "basic-switch",
+        "look": null,
+        "motion": null
+      },
+      "modern toggle": {
+        "to": "theme-toggle",
+        "look": null,
+        "motion": null
+      },
+      "shader toggle": {
+        "to": "basic-switch",
+        "look": null,
+        "motion": null
+      },
+      "toggle card": {
+        "to": "basic-switch",
+        "look": null,
+        "motion": null
+      },
+      "disabled switch": {
+        "to": "basic-switch",
+        "look": null,
+        "motion": null
+      },
+      "switch card": {
+        "to": "basic-switch",
+        "look": null,
+        "motion": null
+      },
+      "sized switch": {
+        "to": "basic-switch",
+        "look": null,
+        "motion": null
+      },
+      "bookmark toggle": {
+        "to": "basic-switch",
+        "look": null,
+        "motion": null
+      },
+      "validation states": {
+        "to": "basic-switch",
+        "look": null,
+        "motion": null
+      }
+    }
+  },
+  "data-display/diff": {
+    "types": [
+      {
+        "id": "split-view",
+        "name": "Split view",
+        "what": "Side-by-side comparison"
+      },
+      {
+        "id": "inline-diff",
+        "name": "Inline diff",
+        "what": "Inline change highlighting"
+      },
+      {
+        "id": "code-diff",
+        "name": "Code diff",
+        "what": "Code/file comparison"
+      },
+      {
+        "id": "review",
+        "name": "Review",
+        "what": "Code review interface"
+      }
+    ],
+    "map": {
+      "split view": {
+        "to": "split-view",
+        "look": null,
+        "motion": null
+      },
+      "with decisions": {
+        "to": "review",
+        "look": null,
+        "motion": null
+      },
+      "basic diff": {
+        "to": "review",
+        "look": null,
+        "motion": null
+      },
+      "file diff": {
+        "to": "code-diff",
+        "look": null,
+        "motion": null
+      },
+      "code review": {
+        "to": "code-diff",
+        "look": null,
+        "motion": null
+      },
+      "inline diff": {
+        "to": "inline-diff",
+        "look": null,
+        "motion": null
+      },
+      "code file diff": {
+        "to": "code-diff",
+        "look": null,
+        "motion": null
+      },
+      "diff": {
+        "to": "review",
+        "look": null,
+        "motion": null
+      },
+      "code comparison": {
+        "to": "code-diff",
+        "look": null,
+        "motion": null
+      },
+      "table row diff": {
+        "to": "review",
+        "look": null,
+        "motion": null
+      },
+      "review interface": {
+        "to": "review",
+        "look": null,
+        "motion": null
+      },
+      "state hook": {
+        "to": "review",
+        "look": null,
+        "motion": null
+      },
+      "animation overlay": {
+        "to": "review",
+        "look": null,
+        "motion": null
+      },
+      "unified vs split view": {
+        "to": "split-view",
+        "look": null,
+        "motion": null
+      },
+      "full editor environment": {
+        "to": "review",
+        "look": null,
+        "motion": null
+      },
+      "file browser": {
+        "to": "code-diff",
+        "look": null,
+        "motion": null
+      },
+      "diff provider": {
+        "to": "review",
+        "look": null,
+        "motion": null
+      },
+      "full ide": {
+        "to": "review",
+        "look": null,
+        "motion": null
+      },
+      "merge editor": {
+        "to": "review",
+        "look": null,
+        "motion": null
+      },
+      "ledger style": {
+        "to": "review",
+        "look": null,
+        "motion": null
+      },
+      "record or object diff": {
+        "to": "review",
+        "look": null,
+        "motion": null
+      },
+      "before and after": {
+        "to": "review",
+        "look": null,
+        "motion": null
+      },
+      "streaming diff": {
+        "to": "review",
+        "look": null,
+        "motion": null
+      }
+    }
+  },
+  "data-display/gamification": {
+    "types": [
+      {
+        "id": "leaderboard",
+        "name": "Leaderboard",
+        "what": "Ranked scoring display"
+      },
+      {
+        "id": "achievement",
+        "name": "Achievement",
+        "what": "Badge and unlock system"
+      },
+      {
+        "id": "progress",
+        "name": "Progress tracker",
+        "what": "Streak or level display"
+      },
+      {
+        "id": "interactive",
+        "name": "Interactive",
+        "what": "Playable game or simulator"
+      },
+      {
+        "id": "effect",
+        "name": "Visual effect",
+        "what": "Animation and particle effects"
+      }
+    ],
+    "map": {
+      "leaderboard table": {
+        "to": "leaderboard",
+        "look": null,
+        "motion": null
+      },
+      "achievement collection": {
+        "to": "achievement",
+        "look": null,
+        "motion": null
+      },
+      "playable game": {
+        "to": "interactive",
+        "look": null,
+        "motion": null
+      },
+      "animated background": {
+        "to": "effect",
+        "look": null,
+        "motion": null
+      },
+      "streak tracker": {
+        "to": "progress",
+        "look": null,
+        "motion": null
+      },
+      "rank badges": {
+        "to": "achievement",
+        "look": null,
+        "motion": null
+      },
+      "interactive element": {
+        "to": "effect",
+        "look": null,
+        "motion": null
+      },
+      "leaderboard with ranking": {
+        "to": "leaderboard",
+        "look": null,
+        "motion": null
+      },
+      "progress bar": {
+        "to": "progress",
+        "look": null,
+        "motion": null
+      },
+      "achievement unlock": {
+        "to": "achievement",
+        "look": null,
+        "motion": null
+      },
+      "leaderboard podium": {
+        "to": "leaderboard",
+        "look": null,
+        "motion": null
+      },
+      "warp tunnel": {
+        "to": "effect",
+        "look": null,
+        "motion": null
+      },
+      "progress tracking": {
+        "to": "progress",
+        "look": null,
+        "motion": null
+      },
+      "ranking or leaderboard": {
+        "to": "leaderboard",
+        "look": null,
+        "motion": null
+      },
+      "progress bar with marks": {
+        "to": "progress",
+        "look": null,
+        "motion": null
+      },
+      "physics simulator": {
+        "to": "effect",
+        "look": null,
+        "motion": null
+      },
+      "game hud": {
+        "to": "interactive",
+        "look": null,
+        "motion": null
+      },
+      "achievement wall": {
+        "to": "achievement",
+        "look": null,
+        "motion": null
+      },
+      "feature description": {
+        "to": "effect",
+        "look": null,
+        "motion": null
+      },
+      "leaderboard with top three": {
+        "to": "leaderboard",
+        "look": null,
+        "motion": null
+      },
+      "kpi with streak grid": {
+        "to": "progress",
+        "look": null,
+        "motion": null
+      },
+      "leaderboard with metrics": {
+        "to": "leaderboard",
+        "look": null,
+        "motion": null
+      },
+      "level up splash": {
+        "to": "progress",
+        "look": null,
+        "motion": null
+      },
+      "leaderboard binding": {
+        "to": "leaderboard",
+        "look": null,
+        "motion": null
+      },
+      "activity grid calendar": {
+        "to": "effect",
+        "look": null,
+        "motion": null
+      },
+      "rain effect": {
+        "to": "effect",
+        "look": null,
+        "motion": null
+      },
+      "particle streaks": {
+        "to": "progress",
+        "look": null,
+        "motion": null
+      },
+      "live leaderboard with springs": {
+        "to": "leaderboard",
+        "look": null,
+        "motion": null
+      },
+      "podium with medal morphing": {
+        "to": "effect",
+        "look": null,
+        "motion": null
+      },
+      "cursor blade effect": {
+        "to": "effect",
+        "look": null,
+        "motion": null
+      },
+      "utility functions": {
+        "to": "effect",
+        "look": null,
+        "motion": null
+      },
+      "layout utility": {
+        "to": "effect",
+        "look": null,
+        "motion": null
+      },
+      "animated loader": {
+        "to": "effect",
+        "look": null,
+        "motion": null
+      },
+      "biometric unlock": {
+        "to": "effect",
+        "look": null,
+        "motion": null
+      },
+      "interactive poll": {
+        "to": "effect",
+        "look": null,
+        "motion": null
+      },
+      "interactive ticket": {
+        "to": "effect",
+        "look": null,
+        "motion": null
+      },
+      "interactive simulator": {
+        "to": "effect",
+        "look": null,
+        "motion": null
+      }
+    }
+  },
+  "data-display/kanban": {
+    "types": [
+      {
+        "id": "multi-column",
+        "name": "Multi-column board",
+        "what": "Drag-drop status columns"
+      },
+      {
+        "id": "single-column",
+        "name": "Single column",
+        "what": "List in one column"
+      },
+      {
+        "id": "specialized",
+        "name": "Specialized",
+        "what": "Domain-specific board"
+      }
+    ],
+    "map": {
+      "multi-column board": {
+        "to": "multi-column",
+        "look": null,
+        "motion": null
+      },
+      "board with columns": {
+        "to": "specialized",
+        "look": null,
+        "motion": null
+      },
+      "visual display": {
+        "to": "specialized",
+        "look": null,
+        "motion": null
+      },
+      "drag and drop board": {
+        "to": "multi-column",
+        "look": null,
+        "motion": null
+      },
+      "kanban": {
+        "to": "specialized",
+        "look": null,
+        "motion": null
+      },
+      "column-based board": {
+        "to": "specialized",
+        "look": null,
+        "motion": null
+      },
+      "roadmap board": {
+        "to": "specialized",
+        "look": null,
+        "motion": null
+      },
+      "canvas": {
+        "to": "specialized",
+        "look": null,
+        "motion": null
+      },
+      "single column": {
+        "to": "single-column",
+        "look": null,
+        "motion": null
+      },
+      "specialized domain": {
+        "to": "specialized",
+        "look": null,
+        "motion": null
+      },
+      "status board": {
+        "to": "specialized",
+        "look": null,
+        "motion": null
+      },
+      "sales pipeline": {
+        "to": "specialized",
+        "look": null,
+        "motion": null
+      },
+      "task board": {
+        "to": "specialized",
+        "look": null,
+        "motion": null
+      },
+      "decorative divider": {
+        "to": "specialized",
+        "look": null,
+        "motion": null
+      },
+      "grid layout": {
+        "to": "specialized",
+        "look": null,
+        "motion": null
+      },
+      "split-flap character display": {
+        "to": "specialized",
+        "look": null,
+        "motion": null
+      },
+      "dnd columns with cards": {
+        "to": "multi-column",
+        "look": null,
+        "motion": null
+      },
+      "dnd-kit sortable board": {
+        "to": "multi-column",
+        "look": null,
+        "motion": null
+      },
+      "accessible drag board": {
+        "to": "multi-column",
+        "look": null,
+        "motion": null
+      },
+      "dnd sortable board": {
+        "to": "multi-column",
+        "look": null,
+        "motion": null
+      },
+      "score board divider": {
+        "to": "specialized",
+        "look": null,
+        "motion": null
+      },
+      "kanban primitives": {
+        "to": "specialized",
+        "look": null,
+        "motion": null
+      },
+      "dnd with state machine": {
+        "to": "multi-column",
+        "look": null,
+        "motion": null
+      },
+      "kanban wrapper": {
+        "to": "specialized",
+        "look": null,
+        "motion": null
+      },
+      "board list viewer": {
+        "to": "specialized",
+        "look": null,
+        "motion": null
+      },
+      "dnd with form input": {
+        "to": "multi-column",
+        "look": null,
+        "motion": null
+      },
+      "markdown board parser": {
+        "to": "specialized",
+        "look": null,
+        "motion": null
+      },
+      "custom dnd no deps": {
+        "to": "multi-column",
+        "look": null,
+        "motion": null
+      },
+      "status counter board": {
+        "to": "specialized",
+        "look": null,
+        "motion": null
+      },
+      "profile widget bento": {
+        "to": "specialized",
+        "look": null,
+        "motion": null
+      },
+      "rough-styled dnd board": {
+        "to": "multi-column",
+        "look": null,
+        "motion": null
+      },
+      "dnd with sensors": {
+        "to": "multi-column",
+        "look": null,
+        "motion": null
+      },
+      "virtualized dnd with criteria": {
+        "to": "multi-column",
+        "look": null,
+        "motion": null
+      },
+      "game board": {
+        "to": "specialized",
+        "look": null,
+        "motion": null
+      },
+      "sticky note board": {
+        "to": "specialized",
+        "look": null,
+        "motion": null
+      },
+      "admin dnd board": {
+        "to": "multi-column",
+        "look": null,
+        "motion": null
+      },
+      "saas work board": {
+        "to": "specialized",
+        "look": null,
+        "motion": null
+      },
+      "feedback product board": {
+        "to": "specialized",
+        "look": null,
+        "motion": null
+      },
+      "split-flap animation": {
+        "to": "specialized",
+        "look": null,
+        "motion": null
+      },
+      "swimlane board": {
+        "to": "specialized",
+        "look": null,
+        "motion": null
+      }
+    }
+  },
+  "data-viz/chart": {
+    "types": [
+      {
+        "id": "bar",
+        "name": "Bar chart",
+        "what": "Horizontal/vertical bars"
+      },
+      {
+        "id": "line",
+        "name": "Line chart",
+        "what": "Line trend graph"
+      },
+      {
+        "id": "area",
+        "name": "Area chart",
+        "what": "Filled area chart"
+      },
+      {
+        "id": "pie-donut",
+        "name": "Pie/donut",
+        "what": "Circular part division"
+      },
+      {
+        "id": "heatmap",
+        "name": "Heatmap",
+        "what": "Color-coded grid"
+      },
+      {
+        "id": "scatter",
+        "name": "Scatter",
+        "what": "Point relationship plot"
+      },
+      {
+        "id": "gauge-radial",
+        "name": "Gauge/radial",
+        "what": "Circular gauge or radar"
+      },
+      {
+        "id": "combo",
+        "name": "Combo",
+        "what": "Multiple chart types"
+      },
+      {
+        "id": "sparkline",
+        "name": "Sparkline",
+        "what": "Inline mini chart"
+      },
+      {
+        "id": "funnel-sankey",
+        "name": "Funnel/sankey",
+        "what": "Flow visualization"
+      }
+    ],
+    "map": {
+      "chart kit": {
+        "to": "funnel-sankey",
+        "look": null,
+        "motion": null
+      },
+      "bar": {
+        "to": "bar",
+        "look": null,
+        "motion": null
+      },
+      "line": {
+        "to": "line",
+        "look": null,
+        "motion": null
+      },
+      "area": {
+        "to": "area",
+        "look": null,
+        "motion": null
+      },
+      "heatmap": {
+        "to": "heatmap",
+        "look": null,
+        "motion": null
+      },
+      "pie or donut": {
+        "to": "pie-donut",
+        "look": null,
+        "motion": null
+      },
+      "radar": {
+        "to": "gauge-radial",
+        "look": null,
+        "motion": null
+      },
+      "combo": {
+        "to": "combo",
+        "look": null,
+        "motion": null
+      },
+      "scatter": {
+        "to": "scatter",
+        "look": null,
+        "motion": null
+      },
+      "radial": {
+        "to": "funnel-sankey",
+        "look": null,
+        "motion": null
+      },
+      "sparkline": {
+        "to": "sparkline",
+        "look": null,
+        "motion": null
+      },
+      "funnel": {
+        "to": "funnel-sankey",
+        "look": null,
+        "motion": null
+      },
+      "gauge": {
+        "to": "gauge-radial",
+        "look": null,
+        "motion": null
+      },
+      "line and sparkline": {
+        "to": "sparkline",
+        "look": null,
+        "motion": null
+      },
+      "chart story": {
+        "to": "funnel-sankey",
+        "look": null,
+        "motion": null
+      },
+      "chart utility": {
+        "to": "funnel-sankey",
+        "look": null,
+        "motion": null
+      },
+      "candlestick": {
+        "to": "funnel-sankey",
+        "look": null,
+        "motion": null
+      },
+      "sankey": {
+        "to": "funnel-sankey",
+        "look": null,
+        "motion": null
+      },
+      "flow and funnel": {
+        "to": "funnel-sankey",
+        "look": null,
+        "motion": null
+      },
+      "pie, donut and radial": {
+        "to": "pie-donut",
+        "look": null,
+        "motion": null
+      },
+      "bar chart": {
+        "to": "bar",
+        "look": null,
+        "motion": null
+      },
+      "line chart": {
+        "to": "line",
+        "look": null,
+        "motion": null
+      },
+      "graph": {
+        "to": "funnel-sankey",
+        "look": null,
+        "motion": null
+      },
+      "flow": {
+        "to": "funnel-sankey",
+        "look": null,
+        "motion": null
+      },
+      "scatter or bubble": {
+        "to": "scatter",
+        "look": null,
+        "motion": null
+      },
+      "flow chart": {
+        "to": "funnel-sankey",
+        "look": null,
+        "motion": null
+      },
+      "counter": {
+        "to": "funnel-sankey",
+        "look": null,
+        "motion": null
+      },
+      "3d or circular": {
+        "to": "funnel-sankey",
+        "look": null,
+        "motion": null
+      },
+      "area chart": {
+        "to": "area",
+        "look": null,
+        "motion": null
+      },
+      "treemap": {
+        "to": "funnel-sankey",
+        "look": null,
+        "motion": null
+      },
+      "3d or webgl scene": {
+        "to": "funnel-sankey",
+        "look": null,
+        "motion": null
+      },
+      "count or pill badge": {
+        "to": "funnel-sankey",
+        "look": null,
+        "motion": null
+      },
+      "chart": {
+        "to": "funnel-sankey",
+        "look": null,
+        "motion": null
+      },
+      "background": {
+        "to": "funnel-sankey",
+        "look": null,
+        "motion": null
+      }
+    }
+  },
+  "data-viz/progress-bar": {
+    "types": [
+      {
+        "id": "linear",
+        "name": "Linear",
+        "what": "Horizontal/vertical bar"
+      },
+      {
+        "id": "circular",
+        "name": "Circular",
+        "what": "Ring or circular progress"
+      },
+      {
+        "id": "stepped",
+        "name": "Stepped",
+        "what": "Milestone steps"
+      },
+      {
+        "id": "labeled",
+        "name": "Labeled",
+        "what": "With percentage or text"
+      },
+      {
+        "id": "scroll",
+        "name": "Scroll-linked",
+        "what": "Tied to scroll position"
+      }
+    ],
+    "map": {
+      "linear": {
+        "to": "linear",
+        "look": null,
+        "motion": null
+      },
+      "circular": {
+        "to": "circular",
+        "look": null,
+        "motion": null
+      },
+      "with label": {
+        "to": "labeled",
+        "look": null,
+        "motion": null
+      },
+      "stepped": {
+        "to": "stepped",
+        "look": null,
+        "motion": null
+      },
+      "scroll progress": {
+        "to": "scroll",
+        "look": null,
+        "motion": null
+      },
+      "animated": {
+        "to": "linear",
+        "look": null,
+        "motion": null
+      },
+      "segmented": {
+        "to": "linear",
+        "look": null,
+        "motion": null
+      },
+      "scroll indicator": {
+        "to": "scroll",
+        "look": null,
+        "motion": null
+      },
+      "indeterminate": {
+        "to": "linear",
+        "look": null,
+        "motion": null
+      },
+      "scroll-driven": {
+        "to": "scroll",
+        "look": null,
+        "motion": null
+      },
+      "step": {
+        "to": "stepped",
+        "look": null,
+        "motion": null
+      },
+      "upload progress": {
+        "to": "linear",
+        "look": null,
+        "motion": null
+      },
+      "upload": {
+        "to": "linear",
+        "look": null,
+        "motion": null
+      },
+      "gantt timeline": {
+        "to": "linear",
+        "look": null,
+        "motion": null
+      },
+      "gauge": {
+        "to": "linear",
+        "look": null,
+        "motion": null
+      },
+      "progress": {
+        "to": "linear",
+        "look": null,
+        "motion": null
+      },
+      "stacked": {
+        "to": "linear",
+        "look": null,
+        "motion": null
+      },
+      "basic badge": {
+        "to": "linear",
+        "look": null,
+        "motion": null
+      },
+      "interactive": {
+        "to": "linear",
+        "look": null,
+        "motion": null
+      },
+      "single": {
+        "to": "linear",
+        "look": null,
+        "motion": null
+      },
+      "range": {
+        "to": "linear",
+        "look": null,
+        "motion": null
+      }
+    }
+  },
+  "inputs/rating": {
+    "types": [
+      {
+        "id": "star",
+        "name": "Star rating",
+        "what": "Clickable star input/display"
+      },
+      {
+        "id": "emoji",
+        "name": "Emoji rating",
+        "what": "Emoji or icon feedback"
+      },
+      {
+        "id": "feedback",
+        "name": "Feedback",
+        "what": "Form or comment collection"
+      },
+      {
+        "id": "survey",
+        "name": "Survey",
+        "what": "NPS or scale survey"
+      },
+      {
+        "id": "read-only",
+        "name": "Read-only",
+        "what": "Display-only rating"
+      }
+    ],
+    "map": {
+      "star rating": {
+        "to": "star",
+        "look": null,
+        "motion": null
+      },
+      "feedback widget": {
+        "to": "feedback",
+        "look": null,
+        "motion": null
+      },
+      "review list": {
+        "to": "read-only",
+        "look": null,
+        "motion": null
+      },
+      "emoji or icon rating": {
+        "to": "emoji",
+        "look": null,
+        "motion": null
+      },
+      "star input": {
+        "to": "star",
+        "look": null,
+        "motion": null
+      },
+      "demo": {
+        "to": "read-only",
+        "look": null,
+        "motion": null
+      },
+      "basic radio": {
+        "to": "read-only",
+        "look": null,
+        "motion": null
+      },
+      "with label and description": {
+        "to": "read-only",
+        "look": null,
+        "motion": null
+      },
+      "basic checkbox": {
+        "to": "read-only",
+        "look": null,
+        "motion": null
+      },
+      "with summary": {
+        "to": "read-only",
+        "look": null,
+        "motion": null
+      },
+      "basic input": {
+        "to": "read-only",
+        "look": null,
+        "motion": null
+      },
+      "with labels or ticks": {
+        "to": "read-only",
+        "look": null,
+        "motion": null
+      },
+      "basic": {
+        "to": "read-only",
+        "look": null,
+        "motion": null
+      },
+      "half-star": {
+        "to": "star",
+        "look": null,
+        "motion": null
+      },
+      "basic rating": {
+        "to": "read-only",
+        "look": null,
+        "motion": null
+      },
+      "nps survey": {
+        "to": "survey",
+        "look": null,
+        "motion": null
+      },
+      "display only": {
+        "to": "read-only",
+        "look": null,
+        "motion": null
+      },
+      "interactive": {
+        "to": "read-only",
+        "look": null,
+        "motion": null
+      },
+      "custom icon": {
+        "to": "emoji",
+        "look": null,
+        "motion": null
+      },
+      "read-only": {
+        "to": "read-only",
+        "look": null,
+        "motion": null
+      },
+      "with label": {
+        "to": "read-only",
+        "look": null,
+        "motion": null
+      },
+      "review component": {
+        "to": "read-only",
+        "look": null,
+        "motion": null
+      },
+      "half-star or decimal": {
+        "to": "star",
+        "look": null,
+        "motion": null
+      },
+      "size variants": {
+        "to": "read-only",
+        "look": null,
+        "motion": null
+      },
+      "alternative icons": {
+        "to": "emoji",
+        "look": null,
+        "motion": null
+      },
+      "feedback form": {
+        "to": "feedback",
+        "look": null,
+        "motion": null
+      },
+      "with feedback": {
+        "to": "feedback",
+        "look": null,
+        "motion": null
+      },
+      "stats row": {
+        "to": "read-only",
+        "look": null,
+        "motion": null
+      },
+      "emoji or smiley": {
+        "to": "emoji",
+        "look": null,
+        "motion": null
+      },
+      "with review or text": {
+        "to": "read-only",
+        "look": null,
+        "motion": null
+      },
+      "with preview": {
+        "to": "read-only",
+        "look": null,
+        "motion": null
+      },
+      "interactive stars": {
+        "to": "star",
+        "look": null,
+        "motion": null
+      }
+    }
+  },
+  "layout/dashboard": {
+    "types": [
+      {
+        "id": "analytics",
+        "name": "Analytics",
+        "what": "Metrics and chart dashboard"
+      },
+      {
+        "id": "admin",
+        "name": "Admin panel",
+        "what": "Administrative interface"
+      },
+      {
+        "id": "operations",
+        "name": "Operations",
+        "what": "Real-time operations display"
+      },
+      {
+        "id": "app-shell",
+        "name": "App shell",
+        "what": "Navigation structure"
+      },
+      {
+        "id": "sales",
+        "name": "Sales",
+        "what": "Revenue/pipeline metrics"
+      }
+    ],
+    "map": {
+      "app shell": {
+        "to": "app-shell",
+        "look": null,
+        "motion": null
+      },
+      "full dashboard page": {
+        "to": "sales",
+        "look": null,
+        "motion": null
+      },
+      "analytics dashboard": {
+        "to": "analytics",
+        "look": null,
+        "motion": null
+      },
+      "operations dashboard": {
+        "to": "operations",
+        "look": null,
+        "motion": null
+      },
+      "sales/revenue dashboard": {
+        "to": "sales",
+        "look": null,
+        "motion": null
+      },
+      "analytics": {
+        "to": "analytics",
+        "look": null,
+        "motion": null
+      },
+      "admin overview": {
+        "to": "admin",
+        "look": null,
+        "motion": null
+      },
+      "admin shell": {
+        "to": "admin",
+        "look": null,
+        "motion": null
+      },
+      "finance": {
+        "to": "sales",
+        "look": null,
+        "motion": null
+      },
+      "admin page": {
+        "to": "admin",
+        "look": null,
+        "motion": null
+      },
+      "dashboard": {
+        "to": "sales",
+        "look": null,
+        "motion": null
+      },
+      "full dashboard": {
+        "to": "sales",
+        "look": null,
+        "motion": null
+      },
+      "settings and admin": {
+        "to": "admin",
+        "look": null,
+        "motion": null
+      },
+      "project management": {
+        "to": "sales",
+        "look": null,
+        "motion": null
+      },
+      "crm": {
+        "to": "sales",
+        "look": null,
+        "motion": null
+      },
+      "content shell": {
+        "to": "app-shell",
+        "look": null,
+        "motion": null
+      },
+      "crm dashboard": {
+        "to": "sales",
+        "look": null,
+        "motion": null
+      },
+      "admin panel": {
+        "to": "admin",
+        "look": null,
+        "motion": null
+      },
+      "split view": {
+        "to": "sales",
+        "look": null,
+        "motion": null
+      },
+      "admin dashboard": {
+        "to": "admin",
+        "look": null,
+        "motion": null
+      },
+      "sales dashboard": {
+        "to": "sales",
+        "look": null,
+        "motion": null
+      },
+      "workspace dashboard": {
+        "to": "sales",
+        "look": null,
+        "motion": null
+      },
+      "metric strip": {
+        "to": "sales",
+        "look": null,
+        "motion": null
+      },
+      "payment integration": {
+        "to": "sales",
+        "look": null,
+        "motion": null
+      },
+      "file manager": {
+        "to": "sales",
+        "look": null,
+        "motion": null
+      },
+      "finance dashboard": {
+        "to": "sales",
+        "look": null,
+        "motion": null
+      },
+      "campaign dashboard": {
+        "to": "sales",
+        "look": null,
+        "motion": null
+      },
+      "project dashboard": {
+        "to": "sales",
+        "look": null,
+        "motion": null
+      },
+      "wallet provider": {
+        "to": "sales",
+        "look": null,
+        "motion": null
+      },
+      "status dashboard": {
+        "to": "sales",
+        "look": null,
+        "motion": null
+      },
+      "api metrics": {
+        "to": "sales",
+        "look": null,
+        "motion": null
+      },
+      "status page": {
+        "to": "sales",
+        "look": null,
+        "motion": null
+      },
+      "mail layout": {
+        "to": "sales",
+        "look": null,
+        "motion": null
+      },
+      "resource dashboard": {
+        "to": "sales",
+        "look": null,
+        "motion": null
+      },
+      "editor": {
+        "to": "sales",
+        "look": null,
+        "motion": null
+      },
+      "form in dialog": {
+        "to": "sales",
+        "look": null,
+        "motion": null
+      },
+      "grid": {
+        "to": "sales",
+        "look": null,
+        "motion": null
+      },
+      "commerce": {
+        "to": "sales",
+        "look": null,
+        "motion": null
+      }
+    }
+  },
+  "layout/page-shell": {
+    "types": [
+      {
+        "id": "container",
+        "name": "Container",
+        "what": "Content wrapper"
+      },
+      {
+        "id": "separator",
+        "name": "Separator",
+        "what": "Visual divider"
+      },
+      {
+        "id": "app-shell",
+        "name": "App shell",
+        "what": "Navigation and layout"
+      },
+      {
+        "id": "sidebar",
+        "name": "Sidebar",
+        "what": "Two-column with sidebar"
+      },
+      {
+        "id": "variant",
+        "name": "Variant",
+        "what": "Specialized shell"
+      }
+    ],
+    "map": {
+      "separator": {
+        "to": "separator",
+        "look": null,
+        "motion": null
+      },
+      "container": {
+        "to": "container",
+        "look": null,
+        "motion": null
+      },
+      "separators": {
+        "to": "separator",
+        "look": null,
+        "motion": null
+      },
+      "hairline separator": {
+        "to": "separator",
+        "look": null,
+        "motion": null
+      },
+      "ratio container": {
+        "to": "container",
+        "look": null,
+        "motion": null
+      },
+      "app shell": {
+        "to": "app-shell",
+        "look": null,
+        "motion": null
+      },
+      "containers": {
+        "to": "container",
+        "look": null,
+        "motion": null
+      },
+      "page header": {
+        "to": "variant",
+        "look": null,
+        "motion": null
+      },
+      "aspect ratio": {
+        "to": "variant",
+        "look": null,
+        "motion": null
+      },
+      "page shell": {
+        "to": "app-shell",
+        "look": null,
+        "motion": null
+      },
+      "app shells": {
+        "to": "app-shell",
+        "look": null,
+        "motion": null
+      },
+      "layout helper": {
+        "to": "variant",
+        "look": null,
+        "motion": null
+      },
+      "split view": {
+        "to": "variant",
+        "look": null,
+        "motion": null
+      },
+      "sidebar dashboard": {
+        "to": "sidebar",
+        "look": null,
+        "motion": null
+      },
+      "shader effect": {
+        "to": "variant",
+        "look": null,
+        "motion": null
+      },
+      "decorative divider": {
+        "to": "separator",
+        "look": null,
+        "motion": null
+      },
+      "sidebar shell": {
+        "to": "sidebar",
+        "look": null,
+        "motion": null
+      },
+      "full dashboard shell": {
+        "to": "app-shell",
+        "look": null,
+        "motion": null
+      },
+      "animated divider": {
+        "to": "separator",
+        "look": null,
+        "motion": null
+      },
+      "svg mascot": {
+        "to": "variant",
+        "look": null,
+        "motion": null
+      },
+      "icon rail shell": {
+        "to": "app-shell",
+        "look": null,
+        "motion": null
+      },
+      "text divider": {
+        "to": "separator",
+        "look": null,
+        "motion": null
+      },
+      "resizable panels": {
+        "to": "variant",
+        "look": null,
+        "motion": null
+      },
+      "topbar shell": {
+        "to": "app-shell",
+        "look": null,
+        "motion": null
+      },
+      "two-pane shell": {
+        "to": "app-shell",
+        "look": null,
+        "motion": null
+      },
+      "editor shell": {
+        "to": "app-shell",
+        "look": null,
+        "motion": null
+      },
+      "dual sidebar shell": {
+        "to": "sidebar",
+        "look": null,
+        "motion": null
+      },
+      "floating sidebar": {
+        "to": "sidebar",
+        "look": null,
+        "motion": null
+      },
+      "stack container": {
+        "to": "container",
+        "look": null,
+        "motion": null
+      },
+      "workspace shell": {
+        "to": "app-shell",
+        "look": null,
+        "motion": null
+      },
+      "auth card": {
+        "to": "variant",
+        "look": null,
+        "motion": null
+      },
+      "interactive tool": {
+        "to": "variant",
+        "look": null,
+        "motion": null
+      },
+      "tool interface": {
+        "to": "variant",
+        "look": null,
+        "motion": null
+      },
+      "three-pane shell": {
+        "to": "app-shell",
+        "look": null,
+        "motion": null
+      },
+      "dashed divider": {
+        "to": "separator",
+        "look": null,
+        "motion": null
+      },
+      "docs shell": {
+        "to": "app-shell",
+        "look": null,
+        "motion": null
+      },
+      "full-bleed shell": {
+        "to": "app-shell",
+        "look": null,
+        "motion": null
+      },
+      "centered shell": {
+        "to": "app-shell",
+        "look": null,
+        "motion": null
+      },
+      "tabbed shell": {
+        "to": "app-shell",
+        "look": null,
+        "motion": null
+      },
+      "chat shell": {
+        "to": "app-shell",
+        "look": null,
+        "motion": null
+      },
+      "topbar dashboard": {
+        "to": "variant",
+        "look": null,
+        "motion": null
+      },
+      "split letters": {
+        "to": "variant",
+        "look": null,
+        "motion": null
+      },
+      "mobile shell": {
+        "to": "app-shell",
+        "look": null,
+        "motion": null
+      },
+      "auth shell": {
+        "to": "app-shell",
+        "look": null,
+        "motion": null
+      },
+      "dialog shell": {
+        "to": "app-shell",
+        "look": null,
+        "motion": null
+      },
+      "keybinding reference": {
+        "to": "variant",
+        "look": null,
+        "motion": null
+      },
+      "canvas shell": {
+        "to": "app-shell",
+        "look": null,
+        "motion": null
+      },
+      "html shell": {
+        "to": "app-shell",
+        "look": null,
+        "motion": null
+      },
+      "doc shell": {
+        "to": "app-shell",
+        "look": null,
+        "motion": null
+      },
+      "page structure": {
+        "to": "variant",
+        "look": null,
+        "motion": null
+      },
+      "api docs shell": {
+        "to": "app-shell",
+        "look": null,
+        "motion": null
+      },
+      "mobile frame": {
+        "to": "variant",
+        "look": null,
+        "motion": null
+      },
+      "site shell": {
+        "to": "app-shell",
+        "look": null,
+        "motion": null
+      },
+      "retro desktop shell": {
+        "to": "app-shell",
+        "look": null,
+        "motion": null
+      },
+      "code block shell": {
+        "to": "app-shell",
+        "look": null,
+        "motion": null
+      },
+      "full-page shell": {
+        "to": "app-shell",
+        "look": null,
+        "motion": null
+      },
+      "onboarding shell": {
+        "to": "app-shell",
+        "look": null,
+        "motion": null
+      },
+      "command shell": {
+        "to": "app-shell",
+        "look": null,
+        "motion": null
+      },
+      "dashboard home": {
+        "to": "variant",
+        "look": null,
+        "motion": null
+      },
+      "empty state shell": {
+        "to": "app-shell",
+        "look": null,
+        "motion": null
+      },
+      "banner shell": {
+        "to": "app-shell",
+        "look": null,
+        "motion": null
+      },
+      "three-column shell": {
+        "to": "app-shell",
+        "look": null,
+        "motion": null
+      },
+      "settings shell": {
+        "to": "app-shell",
+        "look": null,
+        "motion": null
+      },
+      "split shell": {
+        "to": "app-shell",
+        "look": null,
+        "motion": null
+      },
+      "toolbar shell": {
+        "to": "app-shell",
+        "look": null,
+        "motion": null
+      },
+      "wizard shell": {
+        "to": "app-shell",
+        "look": null,
+        "motion": null
+      },
+      "admin shell": {
+        "to": "app-shell",
+        "look": null,
+        "motion": null
+      },
+      "help shell": {
+        "to": "app-shell",
+        "look": null,
+        "motion": null
+      },
+      "project shell": {
+        "to": "app-shell",
+        "look": null,
+        "motion": null
+      },
+      "analytics shell": {
+        "to": "app-shell",
+        "look": null,
+        "motion": null
+      },
+      "support shell": {
+        "to": "app-shell",
+        "look": null,
+        "motion": null
+      },
+      "media shell": {
+        "to": "app-shell",
+        "look": null,
+        "motion": null
+      },
+      "trading shell": {
+        "to": "app-shell",
+        "look": null,
+        "motion": null
+      },
+      "inset sidebar": {
+        "to": "sidebar",
+        "look": null,
+        "motion": null
+      },
+      "right sidebar": {
+        "to": "sidebar",
+        "look": null,
+        "motion": null
+      },
+      "collapsible sidebar": {
+        "to": "sidebar",
+        "look": null,
+        "motion": null
+      },
+      "calendar sidebar": {
+        "to": "sidebar",
+        "look": null,
+        "motion": null
+      },
+      "module sidebar": {
+        "to": "sidebar",
+        "look": null,
+        "motion": null
+      },
+      "email shell": {
+        "to": "app-shell",
+        "look": null,
+        "motion": null
+      },
+      "ide shell": {
+        "to": "app-shell",
+        "look": null,
+        "motion": null
+      },
+      "vertical divider": {
+        "to": "separator",
+        "look": null,
+        "motion": null
+      },
+      "presentation shell": {
+        "to": "app-shell",
+        "look": null,
+        "motion": null
+      },
+      "tab-bar shell": {
+        "to": "app-shell",
+        "look": null,
+        "motion": null
+      }
+    }
+  },
+  "marketing/footer": {
+    "types": [
+      {
+        "id": "link-columns",
+        "name": "Link columns",
+        "what": "Multi-column footer"
+      },
+      {
+        "id": "newsletter",
+        "name": "Newsletter",
+        "what": "Newsletter signup footer"
+      },
+      {
+        "id": "minimal",
+        "name": "Minimal",
+        "what": "Simple one-row footer"
+      },
+      {
+        "id": "brand",
+        "name": "Brand",
+        "what": "Logo-focused footer"
+      },
+      {
+        "id": "cta",
+        "name": "CTA",
+        "what": "Call-to-action footer"
+      }
+    ],
+    "map": {
+      "link columns": {
+        "to": "link-columns",
+        "look": null,
+        "motion": null
+      },
+      "multi-column links": {
+        "to": "link-columns",
+        "look": null,
+        "motion": null
+      },
+      "with newsletter": {
+        "to": "newsletter",
+        "look": null,
+        "motion": null
+      },
+      "one row minimal": {
+        "to": "minimal",
+        "look": null,
+        "motion": null
+      },
+      "minimal single row": {
+        "to": "minimal",
+        "look": null,
+        "motion": null
+      },
+      "with call to action": {
+        "to": "cta",
+        "look": null,
+        "motion": null
+      },
+      "big wordmark": {
+        "to": "brand",
+        "look": null,
+        "motion": null
+      },
+      "with newsletter form": {
+        "to": "newsletter",
+        "look": null,
+        "motion": null
+      },
+      "mega sitemap": {
+        "to": "cta",
+        "look": null,
+        "motion": null
+      },
+      "contact focused": {
+        "to": "cta",
+        "look": null,
+        "motion": null
+      },
+      "cta panel": {
+        "to": "cta",
+        "look": null,
+        "motion": null
+      },
+      "email template": {
+        "to": "cta",
+        "look": null,
+        "motion": null
+      },
+      "shop specific": {
+        "to": "cta",
+        "look": null,
+        "motion": null
+      },
+      "animated interactive": {
+        "to": "cta",
+        "look": null,
+        "motion": null
+      },
+      "with social icons": {
+        "to": "cta",
+        "look": null,
+        "motion": null
+      },
+      "with animation": {
+        "to": "cta",
+        "look": null,
+        "motion": null
+      },
+      "with social links": {
+        "to": "cta",
+        "look": null,
+        "motion": null
+      }
+    }
+  },
+  "marketing/logos": {
+    "types": [
+      {
+        "id": "grid",
+        "name": "Grid",
+        "what": "Logo grid display"
+      },
+      {
+        "id": "marquee",
+        "name": "Marquee",
+        "what": "Scrolling logo carousel"
+      },
+      {
+        "id": "integration",
+        "name": "Integration",
+        "what": "Partner/tool grid"
+      },
+      {
+        "id": "directory",
+        "name": "Directory",
+        "what": "Searchable listing"
+      }
+    ],
+    "map": {
+      "grid": {
+        "to": "grid",
+        "look": null,
+        "motion": null
+      },
+      "marquee": {
+        "to": "marquee",
+        "look": null,
+        "motion": null
+      },
+      "integration card grid": {
+        "to": "integration",
+        "look": null,
+        "motion": null
+      },
+      "static row": {
+        "to": "grid",
+        "look": null,
+        "motion": null
+      },
+      "simple grid": {
+        "to": "grid",
+        "look": null,
+        "motion": null
+      },
+      "integrations": {
+        "to": "integration",
+        "look": null,
+        "motion": null
+      },
+      "carousel": {
+        "to": "grid",
+        "look": null,
+        "motion": null
+      },
+      "directory grid": {
+        "to": "directory",
+        "look": null,
+        "motion": null
+      },
+      "with copy": {
+        "to": "grid",
+        "look": null,
+        "motion": null
+      },
+      "integration hub": {
+        "to": "integration",
+        "look": null,
+        "motion": null
+      },
+      "partner grid": {
+        "to": "grid",
+        "look": null,
+        "motion": null
+      },
+      "with stats": {
+        "to": "grid",
+        "look": null,
+        "motion": null
+      },
+      "integration list": {
+        "to": "integration",
+        "look": null,
+        "motion": null
+      },
+      "hub diagram": {
+        "to": "grid",
+        "look": null,
+        "motion": null
+      },
+      "search directory": {
+        "to": "directory",
+        "look": null,
+        "motion": null
+      },
+      "with testimonial": {
+        "to": "grid",
+        "look": null,
+        "motion": null
+      },
+      "integration connector": {
+        "to": "integration",
+        "look": null,
+        "motion": null
+      },
+      "setup steps": {
+        "to": "grid",
+        "look": null,
+        "motion": null
+      },
+      "api preview": {
+        "to": "grid",
+        "look": null,
+        "motion": null
+      },
+      "featured showcase": {
+        "to": "grid",
+        "look": null,
+        "motion": null
+      },
+      "location cards": {
+        "to": "grid",
+        "look": null,
+        "motion": null
+      },
+      "with code": {
+        "to": "grid",
+        "look": null,
+        "motion": null
+      },
+      "settings toggle": {
+        "to": "grid",
+        "look": null,
+        "motion": null
+      },
+      "icon tiles": {
+        "to": "grid",
+        "look": null,
+        "motion": null
+      },
+      "metrics chart": {
+        "to": "grid",
+        "look": null,
+        "motion": null
+      },
+      "dense wall": {
+        "to": "grid",
+        "look": null,
+        "motion": null
+      },
+      "orbit": {
+        "to": "grid",
+        "look": null,
+        "motion": null
+      },
+      "with team": {
+        "to": "grid",
+        "look": null,
+        "motion": null
+      },
+      "comparison table": {
+        "to": "grid",
+        "look": null,
+        "motion": null
+      },
+      "request board": {
+        "to": "grid",
+        "look": null,
+        "motion": null
+      },
+      "security panel": {
+        "to": "grid",
+        "look": null,
+        "motion": null
+      }
+    }
+  },
+  "marketing/marketing": {
+    "types": [
+      {
+        "id": "blog",
+        "name": "Blog",
+        "what": "Post, list, or article"
+      },
+      {
+        "id": "contact",
+        "name": "Contact",
+        "what": "Contact form"
+      },
+      {
+        "id": "case-study",
+        "name": "Case study",
+        "what": "Success story"
+      },
+      {
+        "id": "stats",
+        "name": "Stats",
+        "what": "Metrics and timeline"
+      },
+      {
+        "id": "features",
+        "name": "Features",
+        "what": "How it works or benefits"
+      },
+      {
+        "id": "commerce",
+        "name": "Commerce",
+        "what": "Pricing, checkout, products"
+      },
+      {
+        "id": "team",
+        "name": "Team",
+        "what": "Careers and about"
+      },
+      {
+        "id": "changelog",
+        "name": "Changelog",
+        "what": "Updates and releases"
+      }
+    ],
+    "map": {
+      "blog list": {
+        "to": "blog",
+        "look": null,
+        "motion": null
+      },
+      "contact form": {
+        "to": "contact",
+        "look": null,
+        "motion": null
+      },
+      "blog post": {
+        "to": "blog",
+        "look": null,
+        "motion": null
+      },
+      "changelog": {
+        "to": "changelog",
+        "look": null,
+        "motion": null
+      },
+      "case study": {
+        "to": "case-study",
+        "look": null,
+        "motion": null
+      },
+      "how it works": {
+        "to": "features",
+        "look": null,
+        "motion": null
+      },
+      "blog grid": {
+        "to": "blog",
+        "look": null,
+        "motion": null
+      },
+      "news grid": {
+        "to": "changelog",
+        "look": null,
+        "motion": null
+      },
+      "stats row": {
+        "to": "stats",
+        "look": null,
+        "motion": null
+      },
+      "stats or metrics": {
+        "to": "stats",
+        "look": null,
+        "motion": null
+      },
+      "help card": {
+        "to": "changelog",
+        "look": null,
+        "motion": null
+      },
+      "timeline or history": {
+        "to": "stats",
+        "look": null,
+        "motion": null
+      },
+      "about": {
+        "to": "changelog",
+        "look": null,
+        "motion": null
+      },
+      "about section": {
+        "to": "changelog",
+        "look": null,
+        "motion": null
+      },
+      "blog featured": {
+        "to": "blog",
+        "look": null,
+        "motion": null
+      },
+      "contact split": {
+        "to": "contact",
+        "look": null,
+        "motion": null
+      },
+      "icon grid": {
+        "to": "features",
+        "look": null,
+        "motion": null
+      },
+      "release feed": {
+        "to": "changelog",
+        "look": null,
+        "motion": null
+      },
+      "content block": {
+        "to": "changelog",
+        "look": null,
+        "motion": null
+      },
+      "version list": {
+        "to": "changelog",
+        "look": null,
+        "motion": null
+      },
+      "dense changelog": {
+        "to": "changelog",
+        "look": null,
+        "motion": null
+      },
+      "stat card": {
+        "to": "changelog",
+        "look": null,
+        "motion": null
+      },
+      "stats display": {
+        "to": "stats",
+        "look": null,
+        "motion": null
+      },
+      "cms integration": {
+        "to": "changelog",
+        "look": null,
+        "motion": null
+      },
+      "news ticker": {
+        "to": "changelog",
+        "look": null,
+        "motion": null
+      },
+      "careers section": {
+        "to": "team",
+        "look": null,
+        "motion": null
+      },
+      "checkout": {
+        "to": "changelog",
+        "look": null,
+        "motion": null
+      },
+      "ad display": {
+        "to": "changelog",
+        "look": null,
+        "motion": null
+      },
+      "experience list": {
+        "to": "changelog",
+        "look": null,
+        "motion": null
+      },
+      "product grid": {
+        "to": "commerce",
+        "look": null,
+        "motion": null
+      },
+      "list beside image": {
+        "to": "changelog",
+        "look": null,
+        "motion": null
+      },
+      "download": {
+        "to": "changelog",
+        "look": null,
+        "motion": null
+      },
+      "platform adapter": {
+        "to": "changelog",
+        "look": null,
+        "motion": null
+      },
+      "security helper": {
+        "to": "changelog",
+        "look": null,
+        "motion": null
+      },
+      "case study grid": {
+        "to": "case-study",
+        "look": null,
+        "motion": null
+      },
+      "newsletter": {
+        "to": "changelog",
+        "look": null,
+        "motion": null
+      },
+      "blog special": {
+        "to": "blog",
+        "look": null,
+        "motion": null
+      },
+      "awards or press": {
+        "to": "changelog",
+        "look": null,
+        "motion": null
+      },
+      "billing setup": {
+        "to": "changelog",
+        "look": null,
+        "motion": null
+      },
+      "data management": {
+        "to": "changelog",
+        "look": null,
+        "motion": null
+      },
+      "utility module": {
+        "to": "changelog",
+        "look": null,
+        "motion": null
+      },
+      "career section": {
+        "to": "team",
+        "look": null,
+        "motion": null
+      },
+      "card": {
+        "to": "changelog",
+        "look": null,
+        "motion": null
+      },
+      "gallery": {
+        "to": "changelog",
+        "look": null,
+        "motion": null
+      },
+      "configuration helper": {
+        "to": "changelog",
+        "look": null,
+        "motion": null
+      },
+      "demo pages": {
+        "to": "changelog",
+        "look": null,
+        "motion": null
+      },
+      "careers": {
+        "to": "team",
+        "look": null,
+        "motion": null
+      },
+      "contact page": {
+        "to": "contact",
+        "look": null,
+        "motion": null
+      },
+      "feature grid": {
+        "to": "features",
+        "look": null,
+        "motion": null
+      },
+      "portfolio grid": {
+        "to": "case-study",
+        "look": null,
+        "motion": null
+      },
+      "tabs or switcher": {
+        "to": "changelog",
+        "look": null,
+        "motion": null
+      },
+      "timeline": {
+        "to": "stats",
+        "look": null,
+        "motion": null
+      },
+      "changelog with image": {
+        "to": "changelog",
+        "look": null,
+        "motion": null
+      },
+      "provider integration": {
+        "to": "changelog",
+        "look": null,
+        "motion": null
+      },
+      "section divider": {
+        "to": "changelog",
+        "look": null,
+        "motion": null
+      },
+      "contact panel": {
+        "to": "contact",
+        "look": null,
+        "motion": null
+      },
+      "progress tracker": {
+        "to": "changelog",
+        "look": null,
+        "motion": null
+      },
+      "help center": {
+        "to": "changelog",
+        "look": null,
+        "motion": null
+      },
+      "technical changelog": {
+        "to": "changelog",
+        "look": null,
+        "motion": null
+      },
+      "monitoring setup": {
+        "to": "changelog",
+        "look": null,
+        "motion": null
+      },
+      "blog carousel": {
+        "to": "blog",
+        "look": null,
+        "motion": null
+      },
+      "product showcase": {
+        "to": "case-study",
+        "look": null,
+        "motion": null
+      },
+      "blog page": {
+        "to": "blog",
+        "look": null,
+        "motion": null
+      },
+      "guide section": {
+        "to": "changelog",
+        "look": null,
+        "motion": null
+      },
+      "process flow": {
+        "to": "changelog",
+        "look": null,
+        "motion": null
+      },
+      "event card": {
+        "to": "changelog",
+        "look": null,
+        "motion": null
+      },
+      "featured section": {
+        "to": "features",
+        "look": null,
+        "motion": null
+      },
+      "job board": {
+        "to": "changelog",
+        "look": null,
+        "motion": null
+      },
+      "with dropdown menu": {
+        "to": "changelog",
+        "look": null,
+        "motion": null
+      },
+      "features": {
+        "to": "features",
+        "look": null,
+        "motion": null
+      },
+      "accordion changelog": {
+        "to": "changelog",
+        "look": null,
+        "motion": null
+      },
+      "author card": {
+        "to": "changelog",
+        "look": null,
+        "motion": null
+      },
+      "blog layout": {
+        "to": "blog",
+        "look": null,
+        "motion": null
+      },
+      "blog timeline": {
+        "to": "blog",
+        "look": null,
+        "motion": null
+      },
+      "careers form": {
+        "to": "team",
+        "look": null,
+        "motion": null
+      },
+      "careers page": {
+        "to": "team",
+        "look": null,
+        "motion": null
+      },
+      "newsletter or signup": {
+        "to": "changelog",
+        "look": null,
+        "motion": null
+      },
+      "editorial section": {
+        "to": "changelog",
+        "look": null,
+        "motion": null
+      },
+      "stats with animation": {
+        "to": "stats",
+        "look": null,
+        "motion": null
+      },
+      "document viewer": {
+        "to": "changelog",
+        "look": null,
+        "motion": null
+      },
+      "comparison chart": {
+        "to": "changelog",
+        "look": null,
+        "motion": null
+      },
+      "stats band": {
+        "to": "stats",
+        "look": null,
+        "motion": null
+      },
+      "contact grid": {
+        "to": "contact",
+        "look": null,
+        "motion": null
+      },
+      "date highlight": {
+        "to": "changelog",
+        "look": null,
+        "motion": null
+      },
+      "gallery section": {
+        "to": "changelog",
+        "look": null,
+        "motion": null
+      },
+      "changelog page": {
+        "to": "changelog",
+        "look": null,
+        "motion": null
+      },
+      "changelog card": {
+        "to": "changelog",
+        "look": null,
+        "motion": null
+      },
+      "shop page": {
+        "to": "commerce",
+        "look": null,
+        "motion": null
+      },
+      "blog author": {
+        "to": "blog",
+        "look": null,
+        "motion": null
+      },
+      "split text and image": {
+        "to": "changelog",
+        "look": null,
+        "motion": null
+      },
+      "blog card": {
+        "to": "blog",
+        "look": null,
+        "motion": null
+      },
+      "hero": {
+        "to": "changelog",
+        "look": null,
+        "motion": null
+      },
+      "carousel": {
+        "to": "changelog",
+        "look": null,
+        "motion": null
+      },
+      "timeline changelog": {
+        "to": "stats",
+        "look": null,
+        "motion": null
+      },
+      "two column changelog": {
+        "to": "changelog",
+        "look": null,
+        "motion": null
+      },
+      "featured case study": {
+        "to": "case-study",
+        "look": null,
+        "motion": null
+      },
+      "card carousel": {
+        "to": "changelog",
+        "look": null,
+        "motion": null
+      },
+      "story with photo": {
+        "to": "changelog",
+        "look": null,
+        "motion": null
+      },
+      "error page": {
+        "to": "changelog",
+        "look": null,
+        "motion": null
+      },
+      "contact options": {
+        "to": "contact",
+        "look": null,
+        "motion": null
+      },
+      "mission and values": {
+        "to": "changelog",
+        "look": null,
+        "motion": null
+      },
+      "blog featured rail": {
+        "to": "blog",
+        "look": null,
+        "motion": null
+      },
+      "contact variants": {
+        "to": "contact",
+        "look": null,
+        "motion": null
+      },
+      "blog layouts": {
+        "to": "blog",
+        "look": null,
+        "motion": null
+      },
+      "changelog timeline": {
+        "to": "stats",
+        "look": null,
+        "motion": null
+      },
+      "contact band": {
+        "to": "contact",
+        "look": null,
+        "motion": null
+      },
+      "blog utilities": {
+        "to": "blog",
+        "look": null,
+        "motion": null
+      },
+      "embed": {
+        "to": "changelog",
+        "look": null,
+        "motion": null
+      },
+      "portfolio showcase": {
+        "to": "case-study",
+        "look": null,
+        "motion": null
+      },
+      "contact card": {
+        "to": "contact",
+        "look": null,
+        "motion": null
+      },
+      "article reader": {
+        "to": "changelog",
+        "look": null,
+        "motion": null
+      },
+      "navigation rail": {
+        "to": "changelog",
+        "look": null,
+        "motion": null
+      },
+      "accessibility statement": {
+        "to": "changelog",
+        "look": null,
+        "motion": null
+      },
+      "financial display": {
+        "to": "changelog",
+        "look": null,
+        "motion": null
+      },
+      "content index": {
+        "to": "changelog",
+        "look": null,
+        "motion": null
+      },
+      "email template": {
+        "to": "changelog",
+        "look": null,
+        "motion": null
+      },
+      "resource page": {
+        "to": "changelog",
+        "look": null,
+        "motion": null
+      },
+      "process display": {
+        "to": "changelog",
+        "look": null,
+        "motion": null
+      },
+      "location page": {
+        "to": "changelog",
+        "look": null,
+        "motion": null
+      },
+      "features grid": {
+        "to": "features",
+        "look": null,
+        "motion": null
+      },
+      "before and after": {
+        "to": "changelog",
+        "look": null,
+        "motion": null
+      },
+      "resume": {
+        "to": "changelog",
+        "look": null,
+        "motion": null
+      },
+      "faq": {
+        "to": "changelog",
+        "look": null,
+        "motion": null
+      },
+      "hero variant": {
+        "to": "changelog",
+        "look": null,
+        "motion": null
+      },
+      "numbered steps": {
+        "to": "changelog",
+        "look": null,
+        "motion": null
+      },
+      "portfolio": {
+        "to": "case-study",
+        "look": null,
+        "motion": null
+      },
+      "integrations": {
+        "to": "changelog",
+        "look": null,
+        "motion": null
+      }
+    }
+  },
+  "marketing/pricing": {
+    "types": [
+      {
+        "id": "tier-cards",
+        "name": "Tier cards",
+        "what": "Plan cards and CTA"
+      },
+      {
+        "id": "comparison",
+        "name": "Comparison",
+        "what": "Feature matrix"
+      },
+      {
+        "id": "billing-toggle",
+        "name": "Billing toggle",
+        "what": "Annual/monthly switch"
+      },
+      {
+        "id": "checkout",
+        "name": "Checkout",
+        "what": "Payment flow"
+      },
+      {
+        "id": "usage",
+        "name": "Usage slider",
+        "what": "Dynamic pricing"
+      }
+    ],
+    "map": {
+      "tier cards": {
+        "to": "tier-cards",
+        "look": null,
+        "motion": null
+      },
+      "tier cards with billing toggle": {
+        "to": "tier-cards",
+        "look": null,
+        "motion": null
+      },
+      "comparison table": {
+        "to": "comparison",
+        "look": null,
+        "motion": null
+      },
+      "pricing card": {
+        "to": "usage",
+        "look": null,
+        "motion": null
+      },
+      "checkout": {
+        "to": "checkout",
+        "look": null,
+        "motion": null
+      },
+      "single plan": {
+        "to": "tier-cards",
+        "look": null,
+        "motion": null
+      },
+      "plan card": {
+        "to": "tier-cards",
+        "look": null,
+        "motion": null
+      },
+      "usage slider": {
+        "to": "usage",
+        "look": null,
+        "motion": null
+      },
+      "pricing transparency": {
+        "to": "usage",
+        "look": null,
+        "motion": null
+      },
+      "checkout flow": {
+        "to": "checkout",
+        "look": null,
+        "motion": null
+      },
+      "usage and sliders": {
+        "to": "usage",
+        "look": null,
+        "motion": null
+      },
+      "subscription management": {
+        "to": "usage",
+        "look": null,
+        "motion": null
+      },
+      "plan cards": {
+        "to": "tier-cards",
+        "look": null,
+        "motion": null
+      },
+      "carousel": {
+        "to": "usage",
+        "look": null,
+        "motion": null
+      },
+      "billing console": {
+        "to": "usage",
+        "look": null,
+        "motion": null
+      },
+      "billing toggle": {
+        "to": "billing-toggle",
+        "look": null,
+        "motion": null
+      },
+      "pricing calculator": {
+        "to": "usage",
+        "look": null,
+        "motion": null
+      },
+      "single": {
+        "to": "usage",
+        "look": null,
+        "motion": null
+      },
+      "locked plan": {
+        "to": "tier-cards",
+        "look": null,
+        "motion": null
+      },
+      "plan grid": {
+        "to": "tier-cards",
+        "look": null,
+        "motion": null
+      },
+      "checkout or payment flow": {
+        "to": "checkout",
+        "look": null,
+        "motion": null
+      },
+      "plan features": {
+        "to": "tier-cards",
+        "look": null,
+        "motion": null
+      },
+      "checkout form": {
+        "to": "checkout",
+        "look": null,
+        "motion": null
+      }
+    }
+  },
+  "media/card-stack": {
+    "types": [
+      {
+        "id": "swipeable",
+        "name": "Swipeable",
+        "what": "Swipe/drag cards"
+      },
+      {
+        "id": "deck",
+        "name": "Deck carousel",
+        "what": "Card carousel"
+      },
+      {
+        "id": "3d",
+        "name": "3D effect",
+        "what": "3D perspective"
+      }
+    ],
+    "map": {
+      "swipeable": {
+        "to": "swipeable",
+        "look": null,
+        "motion": null
+      },
+      "stack or deck": {
+        "to": "deck",
+        "look": null,
+        "motion": null
+      },
+      "draggable": {
+        "to": "swipeable",
+        "look": null,
+        "motion": null
+      },
+      "3d or perspective": {
+        "to": "3d",
+        "look": null,
+        "motion": null
+      },
+      "3d or circular": {
+        "to": "3d",
+        "look": null,
+        "motion": null
+      },
+      "auto-rotating": {
+        "to": "deck",
+        "look": null,
+        "motion": null
+      },
+      "testimonial deck": {
+        "to": "deck",
+        "look": null,
+        "motion": null
+      },
+      "flip stack": {
+        "to": "deck",
+        "look": null,
+        "motion": null
+      },
+      "slide deck": {
+        "to": "deck",
+        "look": null,
+        "motion": null
+      },
+      "cards carousel": {
+        "to": "deck",
+        "look": null,
+        "motion": null
+      }
+    }
+  },
+  "media/image-compare": {
+    "types": [
+      {
+        "id": "slider",
+        "name": "Slider",
+        "what": "Draggable comparison slider"
+      },
+      {
+        "id": "before-after",
+        "name": "Before/after",
+        "what": "Reveal comparison"
+      },
+      {
+        "id": "hover",
+        "name": "Hover reveal",
+        "what": "Hover to compare"
+      }
+    ],
+    "map": {
+      "draggable slider": {
+        "to": "slider",
+        "look": null,
+        "motion": null
+      },
+      "before and after": {
+        "to": "before-after",
+        "look": null,
+        "motion": null
+      },
+      "draggable clip-path slider": {
+        "to": "slider",
+        "look": null,
+        "motion": null
+      },
+      "comparison layout": {
+        "to": "before-after",
+        "look": null,
+        "motion": null
+      },
+      "slider": {
+        "to": "slider",
+        "look": null,
+        "motion": null
+      },
+      "image compare": {
+        "to": "before-after",
+        "look": null,
+        "motion": null
+      },
+      "code comparison": {
+        "to": "before-after",
+        "look": null,
+        "motion": null
+      },
+      "slope chart comparison": {
+        "to": "before-after",
+        "look": null,
+        "motion": null
+      },
+      "hover reveal": {
+        "to": "hover",
+        "look": null,
+        "motion": null
+      },
+      "specialized": {
+        "to": "before-after",
+        "look": null,
+        "motion": null
+      },
+      "draggable liquid effect": {
+        "to": "slider",
+        "look": null,
+        "motion": null
+      },
+      "chart comparison": {
+        "to": "before-after",
+        "look": null,
+        "motion": null
+      },
+      "design change table": {
+        "to": "before-after",
+        "look": null,
+        "motion": null
+      },
+      "card pair": {
+        "to": "before-after",
+        "look": null,
+        "motion": null
+      },
+      "result card": {
+        "to": "before-after",
+        "look": null,
+        "motion": null
+      },
+      "3d slider": {
+        "to": "slider",
+        "look": null,
+        "motion": null
+      }
+    }
+  },
+  "media/mockup": {
+    "types": [
+      {
+        "id": "device",
+        "name": "Device frame",
+        "what": "Phone/tablet mockup"
+      },
+      {
+        "id": "multi-device",
+        "name": "Multi-device",
+        "what": "Multiple devices"
+      },
+      {
+        "id": "interactive",
+        "name": "Interactive",
+        "what": "Animated mockup"
+      }
+    ],
+    "map": {
+      "device frame": {
+        "to": "device",
+        "look": null,
+        "motion": null
+      },
+      "device mockup": {
+        "to": "device",
+        "look": null,
+        "motion": null
+      },
+      "slide gesture": {
+        "to": "interactive",
+        "look": null,
+        "motion": null
+      },
+      "animated or interactive frame": {
+        "to": "interactive",
+        "look": null,
+        "motion": null
+      },
+      "specialized hardware frame": {
+        "to": "device",
+        "look": null,
+        "motion": null
+      },
+      "product screenshot mockup": {
+        "to": "device",
+        "look": null,
+        "motion": null
+      },
+      "multi-device stack": {
+        "to": "multi-device",
+        "look": null,
+        "motion": null
+      },
+      "social post mockup": {
+        "to": "device",
+        "look": null,
+        "motion": null
+      },
+      "mockup": {
+        "to": "device",
+        "look": null,
+        "motion": null
+      },
+      "interactive canvas or interactive compon": {
+        "to": "interactive",
+        "look": null,
+        "motion": null
+      },
+      "phone frame": {
+        "to": "device",
+        "look": null,
+        "motion": null
+      },
+      "with previews": {
+        "to": "device",
+        "look": null,
+        "motion": null
+      },
+      "3d device mockup": {
+        "to": "device",
+        "look": null,
+        "motion": null
+      },
+      "3d or circular": {
+        "to": "device",
+        "look": null,
+        "motion": null
+      },
+      "browser frame": {
+        "to": "device",
+        "look": null,
+        "motion": null
+      },
+      "laptop frame": {
+        "to": "device",
+        "look": null,
+        "motion": null
+      },
+      "mockup showcase": {
+        "to": "device",
+        "look": null,
+        "motion": null
+      },
+      "device gesture mockup": {
+        "to": "interactive",
+        "look": null,
+        "motion": null
+      }
+    }
+  },
+  "motion/background": {
+    "types": [
+      {
+        "id": "particle",
+        "name": "Particle",
+        "what": "Particles and stars"
+      },
+      {
+        "id": "grid",
+        "name": "Grid",
+        "what": "Grid or dots pattern"
+      },
+      {
+        "id": "wave",
+        "name": "Wave",
+        "what": "Waves and ripples"
+      },
+      {
+        "id": "shader",
+        "name": "Shader",
+        "what": "Complex shader effect"
+      },
+      {
+        "id": "gradient",
+        "name": "Gradient",
+        "what": "Gradient or mesh"
+      },
+      {
+        "id": "light",
+        "name": "Light",
+        "what": "Spotlight or beams"
+      },
+      {
+        "id": "3d",
+        "name": "3D scene",
+        "what": "3D objects"
+      },
+      {
+        "id": "ambient",
+        "name": "Ambient",
+        "what": "Aurora/blobs/noise"
+      }
+    ],
+    "map": {
+      "particles or stars": {
+        "to": "particle",
+        "look": null,
+        "motion": null
+      },
+      "grid or dots": {
+        "to": "grid",
+        "look": null,
+        "motion": null
+      },
+      "beams or lines": {
+        "to": "light",
+        "look": null,
+        "motion": null
+      },
+      "waves": {
+        "to": "wave",
+        "look": null,
+        "motion": null
+      },
+      "shader": {
+        "to": "shader",
+        "look": null,
+        "motion": null
+      },
+      "3d scene": {
+        "to": "3d",
+        "look": null,
+        "motion": null
+      },
+      "noise or grain": {
+        "to": "ambient",
+        "look": null,
+        "motion": null
+      },
+      "spotlight": {
+        "to": "light",
+        "look": null,
+        "motion": null
+      },
+      "grid pattern": {
+        "to": "grid",
+        "look": null,
+        "motion": null
+      },
+      "gradient mesh": {
+        "to": "gradient",
+        "look": null,
+        "motion": null
+      },
+      "wave or ripple": {
+        "to": "wave",
+        "look": null,
+        "motion": null
+      },
+      "landscape or scene": {
+        "to": "3d",
+        "look": null,
+        "motion": null
+      },
+      "aurora": {
+        "to": "ambient",
+        "look": null,
+        "motion": null
+      },
+      "blobs": {
+        "to": "ambient",
+        "look": null,
+        "motion": null
+      },
+      "particle tunnel or field": {
+        "to": "particle",
+        "look": null,
+        "motion": null
+      },
+      "beam or light effect": {
+        "to": "light",
+        "look": null,
+        "motion": null
+      },
+      "gradient background": {
+        "to": "gradient",
+        "look": null,
+        "motion": null
+      },
+      "mascot or creature": {
+        "to": "ambient",
+        "look": null,
+        "motion": null
+      },
+      "noise field": {
+        "to": "ambient",
+        "look": null,
+        "motion": null
+      },
+      "light and beams": {
+        "to": "light",
+        "look": null,
+        "motion": null
+      },
+      "spotlight accent": {
+        "to": "light",
+        "look": null,
+        "motion": null
+      },
+      "text effect": {
+        "to": "ambient",
+        "look": null,
+        "motion": null
+      },
+      "wave and ripple effects": {
+        "to": "wave",
+        "look": null,
+        "motion": null
+      },
+      "3d text": {
+        "to": "3d",
+        "look": null,
+        "motion": null
+      },
+      "physics simulation": {
+        "to": "ambient",
+        "look": null,
+        "motion": null
+      },
+      "gradient shader": {
+        "to": "shader",
+        "look": null,
+        "motion": null
+      },
+      "entrance": {
+        "to": "ambient",
+        "look": null,
+        "motion": null
+      },
+      "grid and dots": {
+        "to": "grid",
+        "look": null,
+        "motion": null
+      },
+      "reveal masks": {
+        "to": "ambient",
+        "look": null,
+        "motion": null
+      },
+      "shader effect": {
+        "to": "shader",
+        "look": null,
+        "motion": null
+      },
+      "texture overlays": {
+        "to": "ambient",
+        "look": null,
+        "motion": null
+      },
+      "3d or complex transform": {
+        "to": "3d",
+        "look": null,
+        "motion": null
+      },
+      "particles": {
+        "to": "particle",
+        "look": null,
+        "motion": null
+      },
+      "distortion effects": {
+        "to": "ambient",
+        "look": null,
+        "motion": null
+      },
+      "glass or refraction": {
+        "to": "ambient",
+        "look": null,
+        "motion": null
+      },
+      "overlay": {
+        "to": "ambient",
+        "look": null,
+        "motion": null
+      },
+      "shape animations": {
+        "to": "ambient",
+        "look": null,
+        "motion": null
+      },
+      "animation helper": {
+        "to": "ambient",
+        "look": null,
+        "motion": null
+      },
+      "blur": {
+        "to": "ambient",
+        "look": null,
+        "motion": null
+      },
+      "animated badge": {
+        "to": "ambient",
+        "look": null,
+        "motion": null
+      },
+      "shapes or grid": {
+        "to": "grid",
+        "look": null,
+        "motion": null
+      },
+      "text effect or draw": {
+        "to": "ambient",
+        "look": null,
+        "motion": null
+      },
+      "decorative shapes": {
+        "to": "ambient",
+        "look": null,
+        "motion": null
+      },
+      "dither": {
+        "to": "ambient",
+        "look": null,
+        "motion": null
+      },
+      "gradient": {
+        "to": "gradient",
+        "look": null,
+        "motion": null
+      },
+      "gradient or shimmer": {
+        "to": "gradient",
+        "look": null,
+        "motion": null
+      },
+      "orbit": {
+        "to": "ambient",
+        "look": null,
+        "motion": null
+      },
+      "animated background": {
+        "to": "ambient",
+        "look": null,
+        "motion": null
+      },
+      "text effect or banner": {
+        "to": "ambient",
+        "look": null,
+        "motion": null
+      },
+      "interactive": {
+        "to": "ambient",
+        "look": null,
+        "motion": null
+      },
+      "3d tilt": {
+        "to": "3d",
+        "look": null,
+        "motion": null
+      },
+      "scramble or glitch": {
+        "to": "ambient",
+        "look": null,
+        "motion": null
+      },
+      "blur in": {
+        "to": "ambient",
+        "look": null,
+        "motion": null
+      },
+      "3d or webgl scene": {
+        "to": "3d",
+        "look": null,
+        "motion": null
+      },
+      "beams or light": {
+        "to": "light",
+        "look": null,
+        "motion": null
+      },
+      "text-effect": {
+        "to": "ambient",
+        "look": null,
+        "motion": null
+      },
+      "flip": {
+        "to": "ambient",
+        "look": null,
+        "motion": null
+      },
+      "scroll": {
+        "to": "ambient",
+        "look": null,
+        "motion": null
+      },
+      "neon-glow": {
+        "to": "ambient",
+        "look": null,
+        "motion": null
+      },
+      "physics or 3d": {
+        "to": "3d",
+        "look": null,
+        "motion": null
+      }
+    }
+  },
+  "motion/marquee": {
+    "types": [
+      {
+        "id": "horizontal",
+        "name": "Horizontal",
+        "what": "Left-right scroll"
+      },
+      {
+        "id": "vertical",
+        "name": "Vertical",
+        "what": "Top-bottom scroll"
+      },
+      {
+        "id": "ticker",
+        "name": "Ticker",
+        "what": "Ticker-style feed"
+      }
+    ],
+    "map": {
+      "horizontal scroll": {
+        "to": "horizontal",
+        "look": null,
+        "motion": null
+      },
+      "basic marquee": {
+        "to": "horizontal",
+        "look": null,
+        "motion": null
+      },
+      "seamless scrolling": {
+        "to": "horizontal",
+        "look": null,
+        "motion": null
+      },
+      "ticker style": {
+        "to": "ticker",
+        "look": null,
+        "motion": null
+      },
+      "marquee": {
+        "to": "horizontal",
+        "look": null,
+        "motion": null
+      },
+      "3d perspective": {
+        "to": "horizontal",
+        "look": null,
+        "motion": null
+      },
+      "velocity or interactive": {
+        "to": "horizontal",
+        "look": null,
+        "motion": null
+      },
+      "vertical scroll": {
+        "to": "vertical",
+        "look": null,
+        "motion": null
+      },
+      "infinite scroll": {
+        "to": "horizontal",
+        "look": null,
+        "motion": null
+      },
+      "ticker": {
+        "to": "ticker",
+        "look": null,
+        "motion": null
+      },
+      "carousel": {
+        "to": "horizontal",
+        "look": null,
+        "motion": null
+      },
+      "dual direction": {
+        "to": "horizontal",
+        "look": null,
+        "motion": null
+      },
+      "velocity marquee": {
+        "to": "horizontal",
+        "look": null,
+        "motion": null
+      },
+      "gradient or effect": {
+        "to": "horizontal",
+        "look": null,
+        "motion": null
+      },
+      "seamless scroll": {
+        "to": "horizontal",
+        "look": null,
+        "motion": null
+      },
+      "svg path or curve": {
+        "to": "horizontal",
+        "look": null,
+        "motion": null
+      },
+      "brand marquee": {
+        "to": "horizontal",
+        "look": null,
+        "motion": null
+      },
+      "pause on hover": {
+        "to": "horizontal",
+        "look": null,
+        "motion": null
+      },
+      "edge fading": {
+        "to": "horizontal",
+        "look": null,
+        "motion": null
+      },
+      "text marquee": {
+        "to": "horizontal",
+        "look": null,
+        "motion": null
+      },
+      "bidirectional rails": {
+        "to": "horizontal",
+        "look": null,
+        "motion": null
+      }
+    }
+  },
+  "navigation/dock": {
+    "types": [
+      {
+        "id": "macos",
+        "name": "macOS dock",
+        "what": "App launcher with magnify"
+      },
+      {
+        "id": "magnetic",
+        "name": "Magnetic",
+        "what": "Magnetic dock items"
+      },
+      {
+        "id": "toolbar",
+        "name": "Toolbar",
+        "what": "Action toolbar"
+      }
+    ],
+    "map": {
+      "macos magnifying": {
+        "to": "macos",
+        "look": null,
+        "motion": null
+      },
+      "macos-style dock": {
+        "to": "macos",
+        "look": null,
+        "motion": null
+      },
+      "magnetic dock": {
+        "to": "magnetic",
+        "look": null,
+        "motion": null
+      },
+      "action toolbar": {
+        "to": "toolbar",
+        "look": null,
+        "motion": null
+      },
+      "floating nav pill": {
+        "to": "toolbar",
+        "look": null,
+        "motion": null
+      },
+      "app launcher": {
+        "to": "toolbar",
+        "look": null,
+        "motion": null
+      },
+      "glass style": {
+        "to": "toolbar",
+        "look": null,
+        "motion": null
+      },
+      "action bar": {
+        "to": "toolbar",
+        "look": null,
+        "motion": null
+      },
+      "floating toolbar": {
+        "to": "toolbar",
+        "look": null,
+        "motion": null
+      },
+      "expandable": {
+        "to": "toolbar",
+        "look": null,
+        "motion": null
+      },
+      "magnetic effects": {
+        "to": "magnetic",
+        "look": null,
+        "motion": null
+      },
+      "glass dock": {
+        "to": "toolbar",
+        "look": null,
+        "motion": null
+      },
+      "animated magnification": {
+        "to": "toolbar",
+        "look": null,
+        "motion": null
+      },
+      "expandable dock": {
+        "to": "toolbar",
+        "look": null,
+        "motion": null
+      },
+      "bottom navigation bar": {
+        "to": "toolbar",
+        "look": null,
+        "motion": null
+      },
+      "draggable dock": {
+        "to": "magnetic",
+        "look": null,
+        "motion": null
+      },
+      "magnetic magnification": {
+        "to": "magnetic",
+        "look": null,
+        "motion": null
+      },
+      "floating or inset": {
+        "to": "toolbar",
+        "look": null,
+        "motion": null
+      },
+      "cursor-responsive": {
+        "to": "toolbar",
+        "look": null,
+        "motion": null
+      },
+      "index or jump rail": {
+        "to": "toolbar",
+        "look": null,
+        "motion": null
+      },
+      "workspace layout": {
+        "to": "toolbar",
+        "look": null,
+        "motion": null
+      },
+      "mobile dock": {
+        "to": "toolbar",
+        "look": null,
+        "motion": null
+      },
+      "glass morphism": {
+        "to": "toolbar",
+        "look": null,
+        "motion": null
+      },
+      "desktop simulation": {
+        "to": "toolbar",
+        "look": null,
+        "motion": null
+      },
+      "dynamic island": {
+        "to": "toolbar",
+        "look": null,
+        "motion": null
+      }
+    }
+  },
+  "navigation/pagination": {
+    "types": [
+      {
+        "id": "numbered",
+        "name": "Numbered",
+        "what": "Page numbers"
+      },
+      {
+        "id": "compact",
+        "name": "Compact",
+        "what": "Prev/next only"
+      },
+      {
+        "id": "dots",
+        "name": "Dots",
+        "what": "Dot indicators"
+      },
+      {
+        "id": "table",
+        "name": "Table",
+        "what": "Row and page controls"
+      }
+    ],
+    "map": {
+      "numbered pages": {
+        "to": "numbered",
+        "look": null,
+        "motion": null
+      },
+      "styled variants": {
+        "to": "compact",
+        "look": null,
+        "motion": null
+      },
+      "numbered pages with ellipsis": {
+        "to": "numbered",
+        "look": null,
+        "motion": null
+      },
+      "with ellipsis": {
+        "to": "numbered",
+        "look": null,
+        "motion": null
+      },
+      "numbered pagination": {
+        "to": "numbered",
+        "look": null,
+        "motion": null
+      },
+      "pagination": {
+        "to": "compact",
+        "look": null,
+        "motion": null
+      },
+      "page counter": {
+        "to": "compact",
+        "look": null,
+        "motion": null
+      },
+      "page size selector": {
+        "to": "table",
+        "look": null,
+        "motion": null
+      },
+      "with page size dropdown": {
+        "to": "table",
+        "look": null,
+        "motion": null
+      },
+      "table pagination": {
+        "to": "table",
+        "look": null,
+        "motion": null
+      },
+      "simple": {
+        "to": "compact",
+        "look": null,
+        "motion": null
+      },
+      "previous and next only": {
+        "to": "compact",
+        "look": null,
+        "motion": null
+      },
+      "numbered buttons": {
+        "to": "numbered",
+        "look": null,
+        "motion": null
+      },
+      "with first and last": {
+        "to": "compact",
+        "look": null,
+        "motion": null
+      },
+      "jump to page": {
+        "to": "compact",
+        "look": null,
+        "motion": null
+      },
+      "compact": {
+        "to": "compact",
+        "look": null,
+        "motion": null
+      },
+      "with first/last buttons": {
+        "to": "compact",
+        "look": null,
+        "motion": null
+      },
+      "minimal button group": {
+        "to": "compact",
+        "look": null,
+        "motion": null
+      },
+      "dots or circles": {
+        "to": "dots",
+        "look": null,
+        "motion": null
+      },
+      "with page size selector": {
+        "to": "table",
+        "look": null,
+        "motion": null
+      },
+      "page indicator input": {
+        "to": "compact",
+        "look": null,
+        "motion": null
+      },
+      "with page info": {
+        "to": "compact",
+        "look": null,
+        "motion": null
+      },
+      "horizontal stepper": {
+        "to": "compact",
+        "look": null,
+        "motion": null
+      },
+      "animated indicator": {
+        "to": "compact",
+        "look": null,
+        "motion": null
+      },
+      "arrows only": {
+        "to": "compact",
+        "look": null,
+        "motion": null
+      },
+      "with size selector": {
+        "to": "table",
+        "look": null,
+        "motion": null
+      },
+      "prev-next pagination": {
+        "to": "compact",
+        "look": null,
+        "motion": null
+      },
+      "with icons": {
+        "to": "compact",
+        "look": null,
+        "motion": null
+      },
+      "with dropdown": {
+        "to": "compact",
+        "look": null,
+        "motion": null
+      },
+      "card or bordered": {
+        "to": "compact",
+        "look": null,
+        "motion": null
+      },
+      "basic slider": {
+        "to": "compact",
+        "look": null,
+        "motion": null
+      },
+      "article navigation": {
+        "to": "compact",
+        "look": null,
+        "motion": null
+      },
+      "with input field": {
+        "to": "compact",
+        "look": null,
+        "motion": null
+      },
+      "cursor based prev/next": {
+        "to": "compact",
+        "look": null,
+        "motion": null
+      },
+      "prev/next only": {
+        "to": "compact",
+        "look": null,
+        "motion": null
+      },
+      "icon indicators": {
+        "to": "compact",
+        "look": null,
+        "motion": null
+      },
+      "with rows select": {
+        "to": "compact",
+        "look": null,
+        "motion": null
+      },
+      "composable parts": {
+        "to": "compact",
+        "look": null,
+        "motion": null
+      },
+      "prev and next only": {
+        "to": "compact",
+        "look": null,
+        "motion": null
+      },
+      "sized prev and next": {
+        "to": "table",
+        "look": null,
+        "motion": null
+      },
+      "compact pager": {
+        "to": "compact",
+        "look": null,
+        "motion": null
+      },
+      "load more": {
+        "to": "compact",
+        "look": null,
+        "motion": null
+      },
+      "infinite scroll": {
+        "to": "compact",
+        "look": null,
+        "motion": null
+      },
+      "pill or rounded": {
+        "to": "compact",
+        "look": null,
+        "motion": null
+      },
+      "with first/last": {
+        "to": "compact",
+        "look": null,
+        "motion": null
+      },
+      "with counts": {
+        "to": "compact",
+        "look": null,
+        "motion": null
+      }
+    }
+  },
+  "navigation/sidebar": {
+    "types": [
+      {
+        "id": "grouped",
+        "name": "Grouped",
+        "what": "Grouped link sections"
+      },
+      {
+        "id": "icon-rail",
+        "name": "Icon rail",
+        "what": "Icon-only collapsible"
+      },
+      {
+        "id": "tree",
+        "name": "Tree",
+        "what": "Nested tree navigation"
+      },
+      {
+        "id": "mobile",
+        "name": "Mobile drawer",
+        "what": "Slide-out drawer"
+      },
+      {
+        "id": "docs",
+        "name": "Docs nav",
+        "what": "Documentation hierarchy"
+      }
+    ],
+    "map": {
+      "grouped sections": {
+        "to": "grouped",
+        "look": null,
+        "motion": null
+      },
+      "collapsible icon rail": {
+        "to": "icon-rail",
+        "look": null,
+        "motion": null
+      },
+      "nested tree": {
+        "to": "tree",
+        "look": null,
+        "motion": null
+      },
+      "mobile drawer": {
+        "to": "mobile",
+        "look": null,
+        "motion": null
+      },
+      "floating or inset": {
+        "to": "grouped",
+        "look": null,
+        "motion": null
+      },
+      "collapsible sidebar": {
+        "to": "grouped",
+        "look": null,
+        "motion": null
+      },
+      "for docs": {
+        "to": "docs",
+        "look": null,
+        "motion": null
+      },
+      "simple collapsible": {
+        "to": "grouped",
+        "look": null,
+        "motion": null
+      },
+      "with animation": {
+        "to": "grouped",
+        "look": null,
+        "motion": null
+      },
+      "with workspace switcher": {
+        "to": "grouped",
+        "look": null,
+        "motion": null
+      },
+      "with user menu": {
+        "to": "grouped",
+        "look": null,
+        "motion": null
+      },
+      "animated indicator": {
+        "to": "grouped",
+        "look": null,
+        "motion": null
+      },
+      "filter sidebar": {
+        "to": "grouped",
+        "look": null,
+        "motion": null
+      },
+      "docs navigation": {
+        "to": "docs",
+        "look": null,
+        "motion": null
+      },
+      "admin sidebar": {
+        "to": "grouped",
+        "look": null,
+        "motion": null
+      },
+      "for chat apps": {
+        "to": "grouped",
+        "look": null,
+        "motion": null
+      },
+      "content sidebar": {
+        "to": "grouped",
+        "look": null,
+        "motion": null
+      },
+      "dashboard and admin": {
+        "to": "grouped",
+        "look": null,
+        "motion": null
+      },
+      "animated": {
+        "to": "grouped",
+        "look": null,
+        "motion": null
+      },
+      "with hover": {
+        "to": "grouped",
+        "look": null,
+        "motion": null
+      },
+      "for shopping": {
+        "to": "grouped",
+        "look": null,
+        "motion": null
+      },
+      "with pixel art": {
+        "to": "grouped",
+        "look": null,
+        "motion": null
+      },
+      "with drag and drop": {
+        "to": "grouped",
+        "look": null,
+        "motion": null
+      },
+      "with custom styling": {
+        "to": "grouped",
+        "look": null,
+        "motion": null
+      },
+      "for content": {
+        "to": "grouped",
+        "look": null,
+        "motion": null
+      },
+      "floating sidebar": {
+        "to": "grouped",
+        "look": null,
+        "motion": null
+      },
+      "app shell with sidebar": {
+        "to": "grouped",
+        "look": null,
+        "motion": null
+      },
+      "dropdown menu": {
+        "to": "grouped",
+        "look": null,
+        "motion": null
+      }
+    }
+  },
+  "navigation/table-of-contents": {
+    "types": [
+      {
+        "id": "scroll-track",
+        "name": "Scroll tracking",
+        "what": "With scroll indicator"
+      },
+      {
+        "id": "minimap",
+        "name": "Minimap",
+        "what": "Visual page map"
+      },
+      {
+        "id": "outline",
+        "name": "Outline",
+        "what": "Hierarchical outline"
+      }
+    ],
+    "map": {
+      "scroll tracking": {
+        "to": "scroll-track",
+        "look": null,
+        "motion": null
+      },
+      "vertical toc": {
+        "to": "outline",
+        "look": null,
+        "motion": null
+      },
+      "minimap variant": {
+        "to": "minimap",
+        "look": null,
+        "motion": null
+      },
+      "outline": {
+        "to": "outline",
+        "look": null,
+        "motion": null
+      },
+      "compact minimap": {
+        "to": "minimap",
+        "look": null,
+        "motion": null
+      },
+      "sticky sidebar toc": {
+        "to": "outline",
+        "look": null,
+        "motion": null
+      },
+      "auto-generated toc": {
+        "to": "outline",
+        "look": null,
+        "motion": null
+      },
+      "sticky aside": {
+        "to": "outline",
+        "look": null,
+        "motion": null
+      },
+      "floating or fixed": {
+        "to": "outline",
+        "look": null,
+        "motion": null
+      },
+      "with scroll-spy highlighting": {
+        "to": "scroll-track",
+        "look": null,
+        "motion": null
+      },
+      "scroll progress": {
+        "to": "scroll-track",
+        "look": null,
+        "motion": null
+      },
+      "animated indicator": {
+        "to": "outline",
+        "look": null,
+        "motion": null
+      },
+      "toc": {
+        "to": "outline",
+        "look": null,
+        "motion": null
+      },
+      "toc with tree or outline": {
+        "to": "outline",
+        "look": null,
+        "motion": null
+      },
+      "toc with preview or hover card": {
+        "to": "outline",
+        "look": null,
+        "motion": null
+      },
+      "minimap or visual scrubber": {
+        "to": "minimap",
+        "look": null,
+        "motion": null
+      },
+      "dynamic island or floating pill": {
+        "to": "outline",
+        "look": null,
+        "motion": null
+      },
+      "api reference page": {
+        "to": "outline",
+        "look": null,
+        "motion": null
+      },
+      "reading progress with toc": {
+        "to": "outline",
+        "look": null,
+        "motion": null
+      },
+      "animated cursor toc": {
+        "to": "outline",
+        "look": null,
+        "motion": null
+      },
+      "navigation menu": {
+        "to": "outline",
+        "look": null,
+        "motion": null
+      }
+    }
+  },
+  "navigation/tabs": {
+    "types": [
+      {
+        "id": "underline",
+        "name": "Underline",
+        "what": "Underline indicator"
+      },
+      {
+        "id": "pill",
+        "name": "Pill",
+        "what": "Rounded pills"
+      },
+      {
+        "id": "animated",
+        "name": "Animated",
+        "what": "Smooth indicator"
+      },
+      {
+        "id": "vertical",
+        "name": "Vertical",
+        "what": "Vertical layout"
+      },
+      {
+        "id": "segmented",
+        "name": "Segmented",
+        "what": "Segmented control"
+      }
+    ],
+    "map": {
+      "underline": {
+        "to": "underline",
+        "look": null,
+        "motion": null
+      },
+      "animated indicator": {
+        "to": "animated",
+        "look": null,
+        "motion": null
+      },
+      "pill or segmented": {
+        "to": "pill",
+        "look": null,
+        "motion": null
+      },
+      "basic switcher": {
+        "to": "segmented",
+        "look": null,
+        "motion": null
+      },
+      "with icons": {
+        "to": "segmented",
+        "look": null,
+        "motion": null
+      },
+      "underline or segment": {
+        "to": "underline",
+        "look": null,
+        "motion": null
+      },
+      "animated and sliding": {
+        "to": "animated",
+        "look": null,
+        "motion": null
+      },
+      "vertical": {
+        "to": "vertical",
+        "look": null,
+        "motion": null
+      },
+      "segmented controls": {
+        "to": "segmented",
+        "look": null,
+        "motion": null
+      },
+      "variant tabs": {
+        "to": "segmented",
+        "look": null,
+        "motion": null
+      },
+      "with counts": {
+        "to": "segmented",
+        "look": null,
+        "motion": null
+      },
+      "feature and product tabs": {
+        "to": "segmented",
+        "look": null,
+        "motion": null
+      },
+      "feature tabs": {
+        "to": "segmented",
+        "look": null,
+        "motion": null
+      },
+      "segmented control": {
+        "to": "segmented",
+        "look": null,
+        "motion": null
+      },
+      "special effects": {
+        "to": "segmented",
+        "look": null,
+        "motion": null
+      },
+      "expandable": {
+        "to": "segmented",
+        "look": null,
+        "motion": null
+      },
+      "form with tabs": {
+        "to": "segmented",
+        "look": null,
+        "motion": null
+      },
+      "code tabs": {
+        "to": "segmented",
+        "look": null,
+        "motion": null
+      },
+      "glass indicator": {
+        "to": "segmented",
+        "look": null,
+        "motion": null
+      },
+      "mobile tab bar": {
+        "to": "segmented",
+        "look": null,
+        "motion": null
+      },
+      "floating glass bar": {
+        "to": "segmented",
+        "look": null,
+        "motion": null
+      },
+      "bottom tab bar": {
+        "to": "segmented",
+        "look": null,
+        "motion": null
+      },
+      "filter tabs": {
+        "to": "segmented",
+        "look": null,
+        "motion": null
+      },
+      "with drag and drop": {
+        "to": "segmented",
+        "look": null,
+        "motion": null
+      },
+      "tab-bar": {
+        "to": "segmented",
+        "look": null,
+        "motion": null
+      },
+      "data tabs with table": {
+        "to": "segmented",
+        "look": null,
+        "motion": null
+      },
+      "with close or remove": {
+        "to": "segmented",
+        "look": null,
+        "motion": null
+      },
+      "brutalist": {
+        "to": "segmented",
+        "look": null,
+        "motion": null
+      },
+      "glass": {
+        "to": "segmented",
+        "look": null,
+        "motion": null
+      },
+      "page title decoration": {
+        "to": "segmented",
+        "look": null,
+        "motion": null
+      },
+      "with image beside text": {
+        "to": "segmented",
+        "look": null,
+        "motion": null
+      },
+      "3d effect tabs": {
+        "to": "segmented",
+        "look": null,
+        "motion": null
+      },
+      "command with tabs": {
+        "to": "segmented",
+        "look": null,
+        "motion": null
+      },
+      "segmented": {
+        "to": "segmented",
+        "look": null,
+        "motion": null
+      },
+      "block bar": {
+        "to": "segmented",
+        "look": null,
+        "motion": null
+      },
+      "radix ui wrapper": {
+        "to": "segmented",
+        "look": null,
+        "motion": null
+      },
+      "data dashboard with tabs": {
+        "to": "segmented",
+        "look": null,
+        "motion": null
+      },
+      "settings tabs": {
+        "to": "segmented",
+        "look": null,
+        "motion": null
+      },
+      "with colored headers": {
+        "to": "segmented",
+        "look": null,
+        "motion": null
+      },
+      "with 3d or pressable effect": {
+        "to": "segmented",
+        "look": null,
+        "motion": null
+      },
+      "ascii or retro style": {
+        "to": "segmented",
+        "look": null,
+        "motion": null
+      },
+      "with document tabs": {
+        "to": "segmented",
+        "look": null,
+        "motion": null
+      },
+      "with status badge": {
+        "to": "segmented",
+        "look": null,
+        "motion": null
+      },
+      "with top border accent": {
+        "to": "segmented",
+        "look": null,
+        "motion": null
+      },
+      "devtools style tabs": {
+        "to": "segmented",
+        "look": null,
+        "motion": null
+      },
+      "data converter tool tabs": {
+        "to": "segmented",
+        "look": null,
+        "motion": null
+      },
+      "data tabs": {
+        "to": "segmented",
+        "look": null,
+        "motion": null
+      },
+      "interactive demo": {
+        "to": "segmented",
+        "look": null,
+        "motion": null
+      },
+      "with carousel": {
+        "to": "segmented",
+        "look": null,
+        "motion": null
+      },
+      "expandable tabs": {
+        "to": "segmented",
+        "look": null,
+        "motion": null
+      },
+      "interactive": {
+        "to": "segmented",
+        "look": null,
+        "motion": null
+      }
+    }
+  },
+  "navigation/top-nav": {
+    "types": [
+      {
+        "id": "simple",
+        "name": "Simple bar",
+        "what": "Horizontal nav bar"
+      },
+      {
+        "id": "mega-menu",
+        "name": "Mega menu",
+        "what": "Large dropdown"
+      },
+      {
+        "id": "floating",
+        "name": "Floating pill",
+        "what": "Floating nav"
+      },
+      {
+        "id": "responsive",
+        "name": "Responsive",
+        "what": "Mobile drawer"
+      },
+      {
+        "id": "scroll",
+        "name": "Scroll behavior",
+        "what": "Scroll-triggered changes"
+      }
+    ],
+    "map": {
+      "simple bar": {
+        "to": "simple",
+        "look": null,
+        "motion": null
+      },
+      "with mega menu": {
+        "to": "mega-menu",
+        "look": null,
+        "motion": null
+      },
+      "floating pill": {
+        "to": "floating",
+        "look": null,
+        "motion": null
+      },
+      "shrinks on scroll": {
+        "to": "scroll",
+        "look": null,
+        "motion": null
+      },
+      "mobile drawer": {
+        "to": "responsive",
+        "look": null,
+        "motion": null
+      },
+      "with search": {
+        "to": "simple",
+        "look": null,
+        "motion": null
+      },
+      "responsive header": {
+        "to": "simple",
+        "look": null,
+        "motion": null
+      },
+      "mega menu or dropdown": {
+        "to": "mega-menu",
+        "look": null,
+        "motion": null
+      },
+      "menubar": {
+        "to": "simple",
+        "look": null,
+        "motion": null
+      },
+      "with announcement": {
+        "to": "simple",
+        "look": null,
+        "motion": null
+      },
+      "dock": {
+        "to": "simple",
+        "look": null,
+        "motion": null
+      },
+      "scroll-triggered changes": {
+        "to": "scroll",
+        "look": null,
+        "motion": null
+      },
+      "page header": {
+        "to": "simple",
+        "look": null,
+        "motion": null
+      },
+      "morphing active highlight": {
+        "to": "simple",
+        "look": null,
+        "motion": null
+      },
+      "floating pill nav": {
+        "to": "floating",
+        "look": null,
+        "motion": null
+      },
+      "animated underline": {
+        "to": "simple",
+        "look": null,
+        "motion": null
+      },
+      "gooey blur effect": {
+        "to": "simple",
+        "look": null,
+        "motion": null
+      },
+      "tooltip or radial": {
+        "to": "simple",
+        "look": null,
+        "motion": null
+      },
+      "section header": {
+        "to": "simple",
+        "look": null,
+        "motion": null
+      },
+      "glass or frosted": {
+        "to": "simple",
+        "look": null,
+        "motion": null
+      },
+      "underline": {
+        "to": "simple",
+        "look": null,
+        "motion": null
+      },
+      "animated indicator": {
+        "to": "simple",
+        "look": null,
+        "motion": null
+      },
+      "full-screen or overlay menu": {
+        "to": "simple",
+        "look": null,
+        "motion": null
+      },
+      "animated badge": {
+        "to": "simple",
+        "look": null,
+        "motion": null
+      },
+      "transparent over hero": {
+        "to": "simple",
+        "look": null,
+        "motion": null
+      }
+    }
+  },
+  "overlays/alert-banner": {
+    "types": [
+      {
+        "id": "inline",
+        "name": "Inline",
+        "what": "Inline status message"
+      },
+      {
+        "id": "banner",
+        "name": "Banner",
+        "what": "Top/bottom banner"
+      },
+      {
+        "id": "callout",
+        "name": "Callout",
+        "what": "Highlighted callout"
+      },
+      {
+        "id": "dismissible",
+        "name": "Dismissible",
+        "what": "With close button"
+      },
+      {
+        "id": "cookie",
+        "name": "Cookie",
+        "what": "Cookie consent"
+      }
+    ],
+    "map": {
+      "inline alert": {
+        "to": "inline",
+        "look": null,
+        "motion": null
+      },
+      "top banner": {
+        "to": "banner",
+        "look": null,
+        "motion": null
+      },
+      "cookie consent": {
+        "to": "cookie",
+        "look": null,
+        "motion": null
+      },
+      "callout": {
+        "to": "callout",
+        "look": null,
+        "motion": null
+      },
+      "status alert": {
+        "to": "inline",
+        "look": null,
+        "motion": null
+      },
+      "basic alert": {
+        "to": "inline",
+        "look": null,
+        "motion": null
+      },
+      "announcement": {
+        "to": "inline",
+        "look": null,
+        "motion": null
+      },
+      "status banner": {
+        "to": "banner",
+        "look": null,
+        "motion": null
+      },
+      "composed alert": {
+        "to": "inline",
+        "look": null,
+        "motion": null
+      },
+      "floating card": {
+        "to": "inline",
+        "look": null,
+        "motion": null
+      },
+      "banner": {
+        "to": "banner",
+        "look": null,
+        "motion": null
+      },
+      "dismissible alert": {
+        "to": "dismissible",
+        "look": null,
+        "motion": null
+      },
+      "operational notice": {
+        "to": "inline",
+        "look": null,
+        "motion": null
+      },
+      "announcement bars": {
+        "to": "inline",
+        "look": null,
+        "motion": null
+      },
+      "action alert": {
+        "to": "inline",
+        "look": null,
+        "motion": null
+      },
+      "dismissible banner": {
+        "to": "banner",
+        "look": null,
+        "motion": null
+      },
+      "sidebar banner": {
+        "to": "banner",
+        "look": null,
+        "motion": null
+      },
+      "cookie consent banner": {
+        "to": "banner",
+        "look": null,
+        "motion": null
+      },
+      "alert variant": {
+        "to": "inline",
+        "look": null,
+        "motion": null
+      },
+      "design system kit": {
+        "to": "inline",
+        "look": null,
+        "motion": null
+      },
+      "legal notice": {
+        "to": "inline",
+        "look": null,
+        "motion": null
+      },
+      "icon alert": {
+        "to": "inline",
+        "look": null,
+        "motion": null
+      },
+      "success alert": {
+        "to": "inline",
+        "look": null,
+        "motion": null
+      },
+      "warning alert": {
+        "to": "inline",
+        "look": null,
+        "motion": null
+      },
+      "promo banner": {
+        "to": "banner",
+        "look": null,
+        "motion": null
+      },
+      "announcement banner": {
+        "to": "banner",
+        "look": null,
+        "motion": null
+      },
+      "form validation": {
+        "to": "inline",
+        "look": null,
+        "motion": null
+      },
+      "error banner": {
+        "to": "banner",
+        "look": null,
+        "motion": null
+      },
+      "error alert": {
+        "to": "inline",
+        "look": null,
+        "motion": null
+      },
+      "basic banner": {
+        "to": "banner",
+        "look": null,
+        "motion": null
+      },
+      "cookie preferences": {
+        "to": "cookie",
+        "look": null,
+        "motion": null
+      },
+      "dialogue box": {
+        "to": "inline",
+        "look": null,
+        "motion": null
+      },
+      "system banner": {
+        "to": "banner",
+        "look": null,
+        "motion": null
+      },
+      "accent alert": {
+        "to": "inline",
+        "look": null,
+        "motion": null
+      },
+      "matrix alert": {
+        "to": "inline",
+        "look": null,
+        "motion": null
+      },
+      "system alert": {
+        "to": "inline",
+        "look": null,
+        "motion": null
+      },
+      "brutalist alert": {
+        "to": "inline",
+        "look": null,
+        "motion": null
+      },
+      "inverted alert": {
+        "to": "inline",
+        "look": null,
+        "motion": null
+      },
+      "message alert": {
+        "to": "inline",
+        "look": null,
+        "motion": null
+      },
+      "info alert": {
+        "to": "inline",
+        "look": null,
+        "motion": null
+      },
+      "admonition callout": {
+        "to": "callout",
+        "look": null,
+        "motion": null
+      },
+      "toned alert": {
+        "to": "inline",
+        "look": null,
+        "motion": null
+      },
+      "alert demo": {
+        "to": "inline",
+        "look": null,
+        "motion": null
+      },
+      "page component": {
+        "to": "inline",
+        "look": null,
+        "motion": null
+      },
+      "tone showcase": {
+        "to": "inline",
+        "look": null,
+        "motion": null
+      },
+      "action banner": {
+        "to": "banner",
+        "look": null,
+        "motion": null
+      },
+      "gradient banner": {
+        "to": "banner",
+        "look": null,
+        "motion": null
+      },
+      "release banner": {
+        "to": "banner",
+        "look": null,
+        "motion": null
+      },
+      "maintenance banner": {
+        "to": "banner",
+        "look": null,
+        "motion": null
+      },
+      "email banner": {
+        "to": "banner",
+        "look": null,
+        "motion": null
+      },
+      "notice list": {
+        "to": "inline",
+        "look": null,
+        "motion": null
+      },
+      "progress banner": {
+        "to": "banner",
+        "look": null,
+        "motion": null
+      },
+      "transaction status": {
+        "to": "inline",
+        "look": null,
+        "motion": null
+      },
+      "glass alert": {
+        "to": "inline",
+        "look": null,
+        "motion": null
+      },
+      "floating message": {
+        "to": "inline",
+        "look": null,
+        "motion": null
+      },
+      "callout box": {
+        "to": "callout",
+        "look": null,
+        "motion": null
+      },
+      "alert icon": {
+        "to": "inline",
+        "look": null,
+        "motion": null
+      },
+      "status indicator": {
+        "to": "inline",
+        "look": null,
+        "motion": null
+      },
+      "cookie consent card": {
+        "to": "cookie",
+        "look": null,
+        "motion": null
+      },
+      "blocking consent dialog": {
+        "to": "inline",
+        "look": null,
+        "motion": null
+      },
+      "expandable consent": {
+        "to": "inline",
+        "look": null,
+        "motion": null
+      },
+      "sticky announcement": {
+        "to": "inline",
+        "look": null,
+        "motion": null
+      },
+      "styled alert": {
+        "to": "inline",
+        "look": null,
+        "motion": null
+      },
+      "collapsible callout": {
+        "to": "callout",
+        "look": null,
+        "motion": null
+      },
+      "banner variant": {
+        "to": "banner",
+        "look": null,
+        "motion": null
+      },
+      "motion alert": {
+        "to": "inline",
+        "look": null,
+        "motion": null
+      },
+      "outline alert": {
+        "to": "inline",
+        "look": null,
+        "motion": null
+      },
+      "solid alert": {
+        "to": "inline",
+        "look": null,
+        "motion": null
+      },
+      "guardrail notice": {
+        "to": "inline",
+        "look": null,
+        "motion": null
+      },
+      "quota notice": {
+        "to": "inline",
+        "look": null,
+        "motion": null
+      },
+      "countdown banner": {
+        "to": "banner",
+        "look": null,
+        "motion": null
+      },
+      "maintenance notice": {
+        "to": "inline",
+        "look": null,
+        "motion": null
+      },
+      "region notice": {
+        "to": "inline",
+        "look": null,
+        "motion": null
+      },
+      "welcome discount": {
+        "to": "inline",
+        "look": null,
+        "motion": null
+      },
+      "legal banner": {
+        "to": "banner",
+        "look": null,
+        "motion": null
+      },
+      "legal form": {
+        "to": "inline",
+        "look": null,
+        "motion": null
+      },
+      "legal explainer": {
+        "to": "inline",
+        "look": null,
+        "motion": null
+      },
+      "medical notice": {
+        "to": "inline",
+        "look": null,
+        "motion": null
+      },
+      "cookie table": {
+        "to": "cookie",
+        "look": null,
+        "motion": null
+      },
+      "regulatory notice": {
+        "to": "inline",
+        "look": null,
+        "motion": null
+      },
+      "expert callout": {
+        "to": "callout",
+        "look": null,
+        "motion": null
+      },
+      "ops banner": {
+        "to": "banner",
+        "look": null,
+        "motion": null
+      },
+      "schedule banner": {
+        "to": "banner",
+        "look": null,
+        "motion": null
+      },
+      "alert system": {
+        "to": "inline",
+        "look": null,
+        "motion": null
+      },
+      "cta banner": {
+        "to": "banner",
+        "look": null,
+        "motion": null
+      },
+      "ethical cookie banner": {
+        "to": "banner",
+        "look": null,
+        "motion": null
+      },
+      "structured alert": {
+        "to": "inline",
+        "look": null,
+        "motion": null
+      },
+      "danger alert": {
+        "to": "inline",
+        "look": null,
+        "motion": null
+      },
+      "discount banner": {
+        "to": "banner",
+        "look": null,
+        "motion": null
+      },
+      "feature banner": {
+        "to": "banner",
+        "look": null,
+        "motion": null
+      },
+      "native alert": {
+        "to": "inline",
+        "look": null,
+        "motion": null
+      },
+      "mobile alert": {
+        "to": "inline",
+        "look": null,
+        "motion": null
+      },
+      "state alert": {
+        "to": "inline",
+        "look": null,
+        "motion": null
+      },
+      "frameless alert": {
+        "to": "inline",
+        "look": null,
+        "motion": null
+      },
+      "stacked alerts": {
+        "to": "inline",
+        "look": null,
+        "motion": null
+      },
+      "framed alert": {
+        "to": "inline",
+        "look": null,
+        "motion": null
+      },
+      "billing notice": {
+        "to": "inline",
+        "look": null,
+        "motion": null
+      },
+      "discovery alert": {
+        "to": "inline",
+        "look": null,
+        "motion": null
+      },
+      "destructive alert": {
+        "to": "inline",
+        "look": null,
+        "motion": null
+      },
+      "system notice": {
+        "to": "inline",
+        "look": null,
+        "motion": null
+      },
+      "aspect frame": {
+        "to": "inline",
+        "look": null,
+        "motion": null
+      },
+      "notification queue": {
+        "to": "inline",
+        "look": null,
+        "motion": null
+      },
+      "thin banner": {
+        "to": "banner",
+        "look": null,
+        "motion": null
+      },
+      "product banner": {
+        "to": "banner",
+        "look": null,
+        "motion": null
+      },
+      "shipping banner": {
+        "to": "banner",
+        "look": null,
+        "motion": null
+      },
+      "pastel alert": {
+        "to": "inline",
+        "look": null,
+        "motion": null
+      },
+      "stripe alert": {
+        "to": "inline",
+        "look": null,
+        "motion": null
+      },
+      "context warning": {
+        "to": "inline",
+        "look": null,
+        "motion": null
+      },
+      "fluent alert": {
+        "to": "inline",
+        "look": null,
+        "motion": null
+      },
+      "form alert": {
+        "to": "inline",
+        "look": null,
+        "motion": null
+      },
+      "status callout": {
+        "to": "callout",
+        "look": null,
+        "motion": null
+      },
+      "admonition": {
+        "to": "inline",
+        "look": null,
+        "motion": null
+      },
+      "compound alert": {
+        "to": "inline",
+        "look": null,
+        "motion": null
+      },
+      "themed alert": {
+        "to": "inline",
+        "look": null,
+        "motion": null
+      },
+      "testimonial banner": {
+        "to": "banner",
+        "look": null,
+        "motion": null
+      },
+      "collapsible banner": {
+        "to": "banner",
+        "look": null,
+        "motion": null
+      },
+      "campaign banner": {
+        "to": "banner",
+        "look": null,
+        "motion": null
+      },
+      "alert strip": {
+        "to": "inline",
+        "look": null,
+        "motion": null
+      },
+      "composed banner": {
+        "to": "banner",
+        "look": null,
+        "motion": null
+      },
+      "countdown notice": {
+        "to": "inline",
+        "look": null,
+        "motion": null
+      },
+      "expired notice": {
+        "to": "inline",
+        "look": null,
+        "motion": null
+      },
+      "revoked notice": {
+        "to": "inline",
+        "look": null,
+        "motion": null
+      },
+      "app banner": {
+        "to": "banner",
+        "look": null,
+        "motion": null
+      },
+      "cookie banner": {
+        "to": "banner",
+        "look": null,
+        "motion": null
+      },
+      "marquee banner": {
+        "to": "banner",
+        "look": null,
+        "motion": null
+      },
+      "severity alert": {
+        "to": "inline",
+        "look": null,
+        "motion": null
+      },
+      "complex alert": {
+        "to": "inline",
+        "look": null,
+        "motion": null
+      },
+      "security alert": {
+        "to": "inline",
+        "look": null,
+        "motion": null
+      },
+      "install banner": {
+        "to": "banner",
+        "look": null,
+        "motion": null
+      }
+    }
+  },
+  "overlays/notifications": {
+    "types": [
+      {
+        "id": "center",
+        "name": "Center",
+        "what": "Notification hub"
+      },
+      {
+        "id": "toast",
+        "name": "Toast",
+        "what": "Temporary popup"
+      },
+      {
+        "id": "inbox",
+        "name": "Inbox",
+        "what": "Persistent list"
+      },
+      {
+        "id": "email",
+        "name": "Email",
+        "what": "Email template"
+      }
+    ],
+    "map": {
+      "notification center": {
+        "to": "center",
+        "look": null,
+        "motion": null
+      },
+      "notification card": {
+        "to": "center",
+        "look": null,
+        "motion": null
+      },
+      "notification inbox": {
+        "to": "inbox",
+        "look": null,
+        "motion": null
+      },
+      "email template": {
+        "to": "email",
+        "look": null,
+        "motion": null
+      },
+      "notification template": {
+        "to": "center",
+        "look": null,
+        "motion": null
+      },
+      "email app": {
+        "to": "email",
+        "look": null,
+        "motion": null
+      },
+      "inbox and centre": {
+        "to": "inbox",
+        "look": null,
+        "motion": null
+      },
+      "bell and badge": {
+        "to": "center",
+        "look": null,
+        "motion": null
+      },
+      "expanding stack": {
+        "to": "center",
+        "look": null,
+        "motion": null
+      },
+      "component wrapper": {
+        "to": "center",
+        "look": null,
+        "motion": null
+      },
+      "empty state": {
+        "to": "center",
+        "look": null,
+        "motion": null
+      },
+      "settings matrix": {
+        "to": "center",
+        "look": null,
+        "motion": null
+      },
+      "bell animation": {
+        "to": "center",
+        "look": null,
+        "motion": null
+      },
+      "custom": {
+        "to": "center",
+        "look": null,
+        "motion": null
+      },
+      "notification list": {
+        "to": "inbox",
+        "look": null,
+        "motion": null
+      },
+      "basic toast": {
+        "to": "toast",
+        "look": null,
+        "motion": null
+      },
+      "inbox list": {
+        "to": "inbox",
+        "look": null,
+        "motion": null
+      },
+      "notification stack": {
+        "to": "center",
+        "look": null,
+        "motion": null
+      },
+      "notification panel": {
+        "to": "center",
+        "look": null,
+        "motion": null
+      },
+      "notification hook": {
+        "to": "center",
+        "look": null,
+        "motion": null
+      },
+      "notification system": {
+        "to": "center",
+        "look": null,
+        "motion": null
+      },
+      "fanned stack": {
+        "to": "center",
+        "look": null,
+        "motion": null
+      },
+      "glass notification": {
+        "to": "center",
+        "look": null,
+        "motion": null
+      },
+      "notification bell": {
+        "to": "center",
+        "look": null,
+        "motion": null
+      },
+      "dynamic island": {
+        "to": "center",
+        "look": null,
+        "motion": null
+      },
+      "notification settings": {
+        "to": "center",
+        "look": null,
+        "motion": null
+      },
+      "support inbox": {
+        "to": "inbox",
+        "look": null,
+        "motion": null
+      },
+      "activity feed": {
+        "to": "center",
+        "look": null,
+        "motion": null
+      },
+      "email inbox": {
+        "to": "inbox",
+        "look": null,
+        "motion": null
+      },
+      "background inbox": {
+        "to": "inbox",
+        "look": null,
+        "motion": null
+      },
+      "halo notification": {
+        "to": "center",
+        "look": null,
+        "motion": null
+      },
+      "deprecated alias": {
+        "to": "center",
+        "look": null,
+        "motion": null
+      },
+      "grouped toggles": {
+        "to": "center",
+        "look": null,
+        "motion": null
+      },
+      "frequency selector": {
+        "to": "center",
+        "look": null,
+        "motion": null
+      },
+      "messaging inbox": {
+        "to": "inbox",
+        "look": null,
+        "motion": null
+      },
+      "toast notification": {
+        "to": "toast",
+        "look": null,
+        "motion": null
+      },
+      "top banner": {
+        "to": "center",
+        "look": null,
+        "motion": null
+      },
+      "rich toast": {
+        "to": "toast",
+        "look": null,
+        "motion": null
+      },
+      "follower counter": {
+        "to": "center",
+        "look": null,
+        "motion": null
+      },
+      "snooze menu": {
+        "to": "center",
+        "look": null,
+        "motion": null
+      },
+      "settings form": {
+        "to": "center",
+        "look": null,
+        "motion": null
+      },
+      "terminal center": {
+        "to": "center",
+        "look": null,
+        "motion": null
+      },
+      "notification sheet": {
+        "to": "center",
+        "look": null,
+        "motion": null
+      },
+      "alert stack": {
+        "to": "center",
+        "look": null,
+        "motion": null
+      },
+      "swipe stack": {
+        "to": "center",
+        "look": null,
+        "motion": null
+      },
+      "grouped list": {
+        "to": "inbox",
+        "look": null,
+        "motion": null
+      },
+      "product alert": {
+        "to": "center",
+        "look": null,
+        "motion": null
+      },
+      "error message": {
+        "to": "center",
+        "look": null,
+        "motion": null
+      },
+      "incident alert": {
+        "to": "center",
+        "look": null,
+        "motion": null
+      },
+      "message inbox": {
+        "to": "inbox",
+        "look": null,
+        "motion": null
+      },
+      "workflow trail": {
+        "to": "center",
+        "look": null,
+        "motion": null
+      },
+      "retro notification": {
+        "to": "center",
+        "look": null,
+        "motion": null
+      },
+      "icon animation": {
+        "to": "center",
+        "look": null,
+        "motion": null
+      },
+      "mobile center": {
+        "to": "center",
+        "look": null,
+        "motion": null
+      },
+      "toast animation": {
+        "to": "toast",
+        "look": null,
+        "motion": null
+      },
+      "platform integration": {
+        "to": "center",
+        "look": null,
+        "motion": null
+      },
+      "badge indicator": {
+        "to": "center",
+        "look": null,
+        "motion": null
+      },
+      "live activity": {
+        "to": "center",
+        "look": null,
+        "motion": null
+      },
+      "responsive center": {
+        "to": "center",
+        "look": null,
+        "motion": null
+      },
+      "email preview": {
+        "to": "email",
+        "look": null,
+        "motion": null
+      },
+      "notification row": {
+        "to": "center",
+        "look": null,
+        "motion": null
+      },
+      "message list": {
+        "to": "inbox",
+        "look": null,
+        "motion": null
+      },
+      "expanding center": {
+        "to": "center",
+        "look": null,
+        "motion": null
+      },
+      "toast wrapper": {
+        "to": "toast",
+        "look": null,
+        "motion": null
+      },
+      "physical bell": {
+        "to": "center",
+        "look": null,
+        "motion": null
+      },
+      "glass banner": {
+        "to": "center",
+        "look": null,
+        "motion": null
+      },
+      "time formatter": {
+        "to": "center",
+        "look": null,
+        "motion": null
+      },
+      "toast stack": {
+        "to": "toast",
+        "look": null,
+        "motion": null
+      },
+      "comment inbox": {
+        "to": "inbox",
+        "look": null,
+        "motion": null
+      },
+      "error inbox": {
+        "to": "inbox",
+        "look": null,
+        "motion": null
+      },
+      "compose form": {
+        "to": "center",
+        "look": null,
+        "motion": null
+      },
+      "delivery tracking": {
+        "to": "center",
+        "look": null,
+        "motion": null
+      },
+      "email rules": {
+        "to": "email",
+        "look": null,
+        "motion": null
+      },
+      "message reader": {
+        "to": "center",
+        "look": null,
+        "motion": null
+      },
+      "quick reply": {
+        "to": "center",
+        "look": null,
+        "motion": null
+      },
+      "send queue": {
+        "to": "center",
+        "look": null,
+        "motion": null
+      },
+      "signature editor": {
+        "to": "center",
+        "look": null,
+        "motion": null
+      },
+      "spam quarantine": {
+        "to": "center",
+        "look": null,
+        "motion": null
+      },
+      "split inbox": {
+        "to": "inbox",
+        "look": null,
+        "motion": null
+      },
+      "email thread": {
+        "to": "email",
+        "look": null,
+        "motion": null
+      },
+      "unsubscribe mgr": {
+        "to": "center",
+        "look": null,
+        "motion": null
+      },
+      "vacation settings": {
+        "to": "center",
+        "look": null,
+        "motion": null
+      },
+      "digest preview": {
+        "to": "center",
+        "look": null,
+        "motion": null
+      },
+      "grouped inbox": {
+        "to": "inbox",
+        "look": null,
+        "motion": null
+      },
+      "rules manager": {
+        "to": "center",
+        "look": null,
+        "motion": null
+      },
+      "priority inbox": {
+        "to": "inbox",
+        "look": null,
+        "motion": null
+      },
+      "setup wizard": {
+        "to": "center",
+        "look": null,
+        "motion": null
+      },
+      "summary row": {
+        "to": "center",
+        "look": null,
+        "motion": null
+      },
+      "verify page": {
+        "to": "center",
+        "look": null,
+        "motion": null
+      },
+      "support app": {
+        "to": "center",
+        "look": null,
+        "motion": null
+      },
+      "email message": {
+        "to": "email",
+        "look": null,
+        "motion": null
+      },
+      "grouped settings": {
+        "to": "center",
+        "look": null,
+        "motion": null
+      },
+      "verify flow": {
+        "to": "center",
+        "look": null,
+        "motion": null
+      },
+      "connection status": {
+        "to": "center",
+        "look": null,
+        "motion": null
+      },
+      "toast": {
+        "to": "toast",
+        "look": null,
+        "motion": null
+      },
+      "time-grouped feed": {
+        "to": "center",
+        "look": null,
+        "motion": null
+      },
+      "comment widget": {
+        "to": "center",
+        "look": null,
+        "motion": null
+      }
+    }
+  },
+  "overlays/toast": {
+    "types": [
+      {
+        "id": "basic",
+        "name": "Basic",
+        "what": "Simple message"
+      },
+      {
+        "id": "action",
+        "name": "Action",
+        "what": "With action button"
+      },
+      {
+        "id": "rich",
+        "name": "Rich",
+        "what": "With rich content"
+      }
+    ],
+    "map": {
+      "basic toast": {
+        "to": "basic",
+        "look": null,
+        "motion": null
+      },
+      "with action": {
+        "to": "action",
+        "look": null,
+        "motion": null
+      },
+      "rich": {
+        "to": "rich",
+        "look": null,
+        "motion": null
+      },
+      "sonner wrapper": {
+        "to": "basic",
+        "look": null,
+        "motion": null
+      },
+      "stacked": {
+        "to": "basic",
+        "look": null,
+        "motion": null
+      },
+      "sonner": {
+        "to": "basic",
+        "look": null,
+        "motion": null
+      },
+      "promise or loading": {
+        "to": "rich",
+        "look": null,
+        "motion": null
+      },
+      "stacked toasts": {
+        "to": "basic",
+        "look": null,
+        "motion": null
+      },
+      "special effects": {
+        "to": "basic",
+        "look": null,
+        "motion": null
+      },
+      "toast with action": {
+        "to": "action",
+        "look": null,
+        "motion": null
+      },
+      "with actions": {
+        "to": "action",
+        "look": null,
+        "motion": null
+      },
+      "promise or loading toast": {
+        "to": "rich",
+        "look": null,
+        "motion": null
+      },
+      "transaction or special": {
+        "to": "action",
+        "look": null,
+        "motion": null
+      }
+    }
+  },
+  "themes/style": {
+    "types": [
+      {
+        "id": "kit",
+        "name": "Style kit",
+        "what": "Design system"
+      },
+      {
+        "id": "palette",
+        "name": "Palette",
+        "what": "Color scheme"
+      },
+      {
+        "id": "tokens",
+        "name": "Tokens",
+        "what": "Design variables"
+      },
+      {
+        "id": "theme",
+        "name": "Theme",
+        "what": "Alternative theme"
+      }
+    ],
+    "map": {
+      "style kit": {
+        "to": "kit",
+        "look": null,
+        "motion": null
+      },
+      "colour palette": {
+        "to": "palette",
+        "look": null,
+        "motion": null
+      },
+      "component styling": {
+        "to": "kit",
+        "look": null,
+        "motion": null
+      },
+      "design tokens": {
+        "to": "tokens",
+        "look": null,
+        "motion": null
+      },
+      "theme variant": {
+        "to": "theme",
+        "look": null,
+        "motion": null
+      },
+      "utility classes": {
+        "to": "tokens",
+        "look": null,
+        "motion": null
+      },
+      "styled example": {
+        "to": "theme",
+        "look": null,
+        "motion": null
+      },
+      "animation or motion": {
+        "to": "theme",
+        "look": null,
+        "motion": null
+      },
+      "base components": {
+        "to": "theme",
+        "look": null,
+        "motion": null
+      },
+      "icon or logo tokens": {
+        "to": "tokens",
+        "look": null,
+        "motion": null
+      },
+      "preset or init": {
+        "to": "theme",
+        "look": null,
+        "motion": null
+      },
+      "font pairing": {
+        "to": "theme",
+        "look": null,
+        "motion": null
+      },
+      "global styles": {
+        "to": "theme",
+        "look": null,
+        "motion": null
+      },
+      "tokens": {
+        "to": "tokens",
+        "look": null,
+        "motion": null
+      },
+      "radius and shadow": {
+        "to": "tokens",
+        "look": null,
+        "motion": null
+      },
+      "colour theme": {
+        "to": "theme",
+        "look": null,
+        "motion": null
+      }
+    }
+  }
+}

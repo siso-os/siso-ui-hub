@@ -1,0 +1,821 @@
+[
+  {
+    "id": "grid-bar-chart",
+    "export": "PresetGridBarChart",
+    "family": "bar",
+    "title": "Grid bar chart",
+    "source": "app/src/kit/evilcharts/blocks/recharts/b-grid-bar-chart.tsx"
+  },
+  {
+    "id": "hover-trace-bar-chart",
+    "export": "PresetHoverTraceBarChart",
+    "family": "bar",
+    "title": "Hover trace bar chart",
+    "source": "app/src/kit/evilcharts/blocks/recharts/b-hover-trace-bar-chart.tsx"
+  },
+  {
+    "id": "isometric-bar-chart",
+    "export": "PresetIsometricBarChart",
+    "family": "bar",
+    "title": "Isometric bar chart",
+    "source": "app/src/kit/evilcharts/blocks/recharts/b-isometric-bar-chart.tsx"
+  },
+  {
+    "id": "monospace-bar-chart",
+    "export": "PresetMonospaceBarChart",
+    "family": "bar",
+    "title": "Monospace bar chart",
+    "source": "app/src/kit/evilcharts/blocks/recharts/b-monospace-bar-chart.tsx"
+  },
+  {
+    "id": "animated-dashed-stroke-area-chart",
+    "export": "PresetAnimatedDashedStrokeAreaChart",
+    "family": "area",
+    "title": "Animated dashed stroke area chart",
+    "source": "app/src/kit/evilcharts/examples/recharts/ex-animated-dashed-stroke-area-chart.tsx"
+  },
+  {
+    "id": "animated-dashed-stroke-composed-chart",
+    "export": "PresetAnimatedDashedStrokeComposedChart",
+    "family": "composed",
+    "title": "Animated dashed stroke composed chart",
+    "source": "app/src/kit/evilcharts/examples/recharts/ex-animated-dashed-stroke-composed-chart.tsx"
+  },
+  {
+    "id": "animated-dashed-stroke-line-chart",
+    "export": "PresetAnimatedDashedStrokeLineChart",
+    "family": "line",
+    "title": "Animated dashed stroke line chart",
+    "source": "app/src/kit/evilcharts/examples/recharts/ex-animated-dashed-stroke-line-chart.tsx"
+  },
+  {
+    "id": "area-chart",
+    "export": "PresetAreaChart",
+    "family": "area",
+    "title": "Area chart",
+    "source": "app/src/kit/evilcharts/examples/recharts/ex-area-chart.tsx"
+  },
+  {
+    "id": "bar-chart",
+    "export": "PresetBarChart",
+    "family": "bar",
+    "title": "Bar chart",
+    "source": "app/src/kit/evilcharts/examples/recharts/ex-bar-chart.tsx"
+  },
+  {
+    "id": "bg-4-pointed-star-line-chart",
+    "export": "PresetBg4PointedStarLineChart",
+    "family": "line",
+    "title": "Bg 4 pointed star line chart",
+    "source": "app/src/kit/evilcharts/examples/recharts/ex-bg-4-pointed-star-line-chart.tsx"
+  },
+  {
+    "id": "bg-bubbles-line-chart",
+    "export": "PresetBgBubblesLineChart",
+    "family": "line",
+    "title": "Bg bubbles line chart",
+    "source": "app/src/kit/evilcharts/examples/recharts/ex-bg-bubbles-line-chart.tsx"
+  },
+  {
+    "id": "bg-cross-hatch-line-chart",
+    "export": "PresetBgCrossHatchLineChart",
+    "family": "line",
+    "title": "Bg cross hatch line chart",
+    "source": "app/src/kit/evilcharts/examples/recharts/ex-bg-cross-hatch-line-chart.tsx"
+  },
+  {
+    "id": "bg-diagonal-lines-line-chart",
+    "export": "PresetBgDiagonalLinesLineChart",
+    "family": "line",
+    "title": "Bg diagonal lines line chart",
+    "source": "app/src/kit/evilcharts/examples/recharts/ex-bg-diagonal-lines-line-chart.tsx"
+  },
+  {
+    "id": "bg-dots-line-chart",
+    "export": "PresetBgDotsLineChart",
+    "family": "line",
+    "title": "Bg dots line chart",
+    "source": "app/src/kit/evilcharts/examples/recharts/ex-bg-dots-line-chart.tsx"
+  },
+  {
+    "id": "bg-falling-triangles-line-chart",
+    "export": "PresetBgFallingTrianglesLineChart",
+    "family": "line",
+    "title": "Bg falling triangles line chart",
+    "source": "app/src/kit/evilcharts/examples/recharts/ex-bg-falling-triangles-line-chart.tsx"
+  },
+  {
+    "id": "bg-grid-line-chart",
+    "export": "PresetBgGridLineChart",
+    "family": "line",
+    "title": "Bg grid line chart",
+    "source": "app/src/kit/evilcharts/examples/recharts/ex-bg-grid-line-chart.tsx"
+  },
+  {
+    "id": "bg-overlapping-circles-line-chart",
+    "export": "PresetBgOverlappingCirclesLineChart",
+    "family": "line",
+    "title": "Bg overlapping circles line chart",
+    "source": "app/src/kit/evilcharts/examples/recharts/ex-bg-overlapping-circles-line-chart.tsx"
+  },
+  {
+    "id": "bg-plus-line-chart",
+    "export": "PresetBgPlusLineChart",
+    "family": "line",
+    "title": "Bg plus line chart",
+    "source": "app/src/kit/evilcharts/examples/recharts/ex-bg-plus-line-chart.tsx"
+  },
+  {
+    "id": "bg-tiny-checkers-line-chart",
+    "export": "PresetBgTinyCheckersLineChart",
+    "family": "line",
+    "title": "Bg tiny checkers line chart",
+    "source": "app/src/kit/evilcharts/examples/recharts/ex-bg-tiny-checkers-line-chart.tsx"
+  },
+  {
+    "id": "bg-wiggle-lines-line-chart",
+    "export": "PresetBgWiggleLinesLineChart",
+    "family": "line",
+    "title": "Bg wiggle lines line chart",
+    "source": "app/src/kit/evilcharts/examples/recharts/ex-bg-wiggle-lines-line-chart.tsx"
+  },
+  {
+    "id": "brush-area-chart",
+    "export": "PresetBrushAreaChart",
+    "family": "area",
+    "title": "Brush area chart",
+    "source": "app/src/kit/evilcharts/examples/recharts/ex-brush-area-chart.tsx"
+  },
+  {
+    "id": "buffer-bar-chart",
+    "export": "PresetBufferBarChart",
+    "family": "bar",
+    "title": "Buffer bar chart",
+    "source": "app/src/kit/evilcharts/examples/recharts/ex-buffer-bar-chart.tsx"
+  },
+  {
+    "id": "buffer-line-chart",
+    "export": "PresetBufferLineChart",
+    "family": "line",
+    "title": "Buffer line chart",
+    "source": "app/src/kit/evilcharts/examples/recharts/ex-buffer-line-chart.tsx"
+  },
+  {
+    "id": "bump-curve-composed-chart",
+    "export": "PresetBumpCurveComposedChart",
+    "family": "composed",
+    "title": "Bump curve composed chart",
+    "source": "app/src/kit/evilcharts/examples/recharts/ex-bump-curve-composed-chart.tsx"
+  },
+  {
+    "id": "bump-curve-type-area-chart",
+    "export": "PresetBumpCurveTypeAreaChart",
+    "family": "area",
+    "title": "Bump curve type area chart",
+    "source": "app/src/kit/evilcharts/examples/recharts/ex-bump-curve-type-area-chart.tsx"
+  },
+  {
+    "id": "bump-curve-type-line-chart",
+    "export": "PresetBumpCurveTypeLineChart",
+    "family": "line",
+    "title": "Bump curve type line chart",
+    "source": "app/src/kit/evilcharts/examples/recharts/ex-bump-curve-type-line-chart.tsx"
+  },
+  {
+    "id": "chart-config-default-bar-chart",
+    "export": "PresetChartConfigDefaultBarChart",
+    "family": "bar",
+    "title": "Chart config default bar chart",
+    "source": "app/src/kit/evilcharts/examples/recharts/ex-chart-config-default-bar-chart.tsx"
+  },
+  {
+    "id": "chart-config-icons-bar-chart",
+    "export": "PresetChartConfigIconsBarChart",
+    "family": "bar",
+    "title": "Chart config icons bar chart",
+    "source": "app/src/kit/evilcharts/examples/recharts/ex-chart-config-icons-bar-chart.tsx"
+  },
+  {
+    "id": "circle-grid-radar-chart",
+    "export": "PresetCircleGridRadarChart",
+    "family": "radar",
+    "title": "Circle grid radar chart",
+    "source": "app/src/kit/evilcharts/examples/recharts/ex-circle-grid-radar-chart.tsx"
+  },
+  {
+    "id": "composed-chart",
+    "export": "PresetComposedChart",
+    "family": "composed",
+    "title": "Composed chart",
+    "source": "app/src/kit/evilcharts/examples/recharts/ex-composed-chart.tsx"
+  },
+  {
+    "id": "dashed-stroke-area-chart",
+    "export": "PresetDashedStrokeAreaChart",
+    "family": "area",
+    "title": "Dashed stroke area chart",
+    "source": "app/src/kit/evilcharts/examples/recharts/ex-dashed-stroke-area-chart.tsx"
+  },
+  {
+    "id": "dashed-stroke-composed-chart",
+    "export": "PresetDashedStrokeComposedChart",
+    "family": "composed",
+    "title": "Dashed stroke composed chart",
+    "source": "app/src/kit/evilcharts/examples/recharts/ex-dashed-stroke-composed-chart.tsx"
+  },
+  {
+    "id": "dashed-stroke-line-chart",
+    "export": "PresetDashedStrokeLineChart",
+    "family": "line",
+    "title": "Dashed stroke line chart",
+    "source": "app/src/kit/evilcharts/examples/recharts/ex-dashed-stroke-line-chart.tsx"
+  },
+  {
+    "id": "default-type-area-chart",
+    "export": "PresetDefaultTypeAreaChart",
+    "family": "area",
+    "title": "Default type area chart",
+    "source": "app/src/kit/evilcharts/examples/recharts/ex-default-type-area-chart.tsx"
+  },
+  {
+    "id": "default-variant-bar-chart",
+    "export": "PresetDefaultVariantBarChart",
+    "family": "bar",
+    "title": "Default variant bar chart",
+    "source": "app/src/kit/evilcharts/examples/recharts/ex-default-variant-bar-chart.tsx"
+  },
+  {
+    "id": "donut-pie-chart",
+    "export": "PresetDonutPieChart",
+    "family": "pie",
+    "title": "Donut pie chart",
+    "source": "app/src/kit/evilcharts/examples/recharts/ex-donut-pie-chart.tsx"
+  },
+  {
+    "id": "dot-border-line-chart",
+    "export": "PresetDotBorderLineChart",
+    "family": "line",
+    "title": "Dot border line chart",
+    "source": "app/src/kit/evilcharts/examples/recharts/ex-dot-border-line-chart.tsx"
+  },
+  {
+    "id": "dot-colored-border-line-chart",
+    "export": "PresetDotColoredBorderLineChart",
+    "family": "line",
+    "title": "Dot colored border line chart",
+    "source": "app/src/kit/evilcharts/examples/recharts/ex-dot-colored-border-line-chart.tsx"
+  },
+  {
+    "id": "dot-default-line-chart",
+    "export": "PresetDotDefaultLineChart",
+    "family": "line",
+    "title": "Dot default line chart",
+    "source": "app/src/kit/evilcharts/examples/recharts/ex-dot-default-line-chart.tsx"
+  },
+  {
+    "id": "dots-composed-chart",
+    "export": "PresetDotsComposedChart",
+    "family": "composed",
+    "title": "Dots composed chart",
+    "source": "app/src/kit/evilcharts/examples/recharts/ex-dots-composed-chart.tsx"
+  },
+  {
+    "id": "dotted-area-variant-area-chart",
+    "export": "PresetDottedAreaVariantAreaChart",
+    "family": "area",
+    "title": "Dotted area variant area chart",
+    "source": "app/src/kit/evilcharts/examples/recharts/ex-dotted-area-variant-area-chart.tsx"
+  },
+  {
+    "id": "duotone-reverse-variant-bar-chart",
+    "export": "PresetDuotoneReverseVariantBarChart",
+    "family": "bar",
+    "title": "Duotone reverse variant bar chart",
+    "source": "app/src/kit/evilcharts/examples/recharts/ex-duotone-reverse-variant-bar-chart.tsx"
+  },
+  {
+    "id": "duotone-variant-bar-chart",
+    "export": "PresetDuotoneVariantBarChart",
+    "family": "bar",
+    "title": "Duotone variant bar chart",
+    "source": "app/src/kit/evilcharts/examples/recharts/ex-duotone-variant-bar-chart.tsx"
+  },
+  {
+    "id": "duotone-variant-composed-chart",
+    "export": "PresetDuotoneVariantComposedChart",
+    "family": "composed",
+    "title": "Duotone variant composed chart",
+    "source": "app/src/kit/evilcharts/examples/recharts/ex-duotone-variant-composed-chart.tsx"
+  },
+  {
+    "id": "expanded-type-area-chart",
+    "export": "PresetExpandedTypeAreaChart",
+    "family": "area",
+    "title": "Expanded type area chart",
+    "source": "app/src/kit/evilcharts/examples/recharts/ex-expanded-type-area-chart.tsx"
+  },
+  {
+    "id": "glowing-composed-chart",
+    "export": "PresetGlowingComposedChart",
+    "family": "composed",
+    "title": "Glowing composed chart",
+    "source": "app/src/kit/evilcharts/examples/recharts/ex-glowing-composed-chart.tsx"
+  },
+  {
+    "id": "glowing-desktop-bar-chart",
+    "export": "PresetGlowingDesktopBarChart",
+    "family": "bar",
+    "title": "Glowing desktop bar chart",
+    "source": "app/src/kit/evilcharts/examples/recharts/ex-glowing-desktop-bar-chart.tsx"
+  },
+  {
+    "id": "glowing-desktop-line-chart",
+    "export": "PresetGlowingDesktopLineChart",
+    "family": "line",
+    "title": "Glowing desktop line chart",
+    "source": "app/src/kit/evilcharts/examples/recharts/ex-glowing-desktop-line-chart.tsx"
+  },
+  {
+    "id": "glowing-mobile-bar-chart",
+    "export": "PresetGlowingMobileBarChart",
+    "family": "bar",
+    "title": "Glowing mobile bar chart",
+    "source": "app/src/kit/evilcharts/examples/recharts/ex-glowing-mobile-bar-chart.tsx"
+  },
+  {
+    "id": "glowing-mobile-line-chart",
+    "export": "PresetGlowingMobileLineChart",
+    "family": "line",
+    "title": "Glowing mobile line chart",
+    "source": "app/src/kit/evilcharts/examples/recharts/ex-glowing-mobile-line-chart.tsx"
+  },
+  {
+    "id": "glowing-pie-chart",
+    "export": "PresetGlowingPieChart",
+    "family": "pie",
+    "title": "Glowing pie chart",
+    "source": "app/src/kit/evilcharts/examples/recharts/ex-glowing-pie-chart.tsx"
+  },
+  {
+    "id": "glowing-radar-chart",
+    "export": "PresetGlowingRadarChart",
+    "family": "radar",
+    "title": "Glowing radar chart",
+    "source": "app/src/kit/evilcharts/examples/recharts/ex-glowing-radar-chart.tsx"
+  },
+  {
+    "id": "gradient-area-variant-area-chart",
+    "export": "PresetGradientAreaVariantAreaChart",
+    "family": "area",
+    "title": "Gradient area variant area chart",
+    "source": "app/src/kit/evilcharts/examples/recharts/ex-gradient-area-variant-area-chart.tsx"
+  },
+  {
+    "id": "gradient-colors-area-chart",
+    "export": "PresetGradientColorsAreaChart",
+    "family": "area",
+    "title": "Gradient colors area chart",
+    "source": "app/src/kit/evilcharts/examples/recharts/ex-gradient-colors-area-chart.tsx"
+  },
+  {
+    "id": "gradient-colors-bar-chart",
+    "export": "PresetGradientColorsBarChart",
+    "family": "bar",
+    "title": "Gradient colors bar chart",
+    "source": "app/src/kit/evilcharts/examples/recharts/ex-gradient-colors-bar-chart.tsx"
+  },
+  {
+    "id": "gradient-colors-bump-area-chart",
+    "export": "PresetGradientColorsBumpAreaChart",
+    "family": "area",
+    "title": "Gradient colors bump area chart",
+    "source": "app/src/kit/evilcharts/examples/recharts/ex-gradient-colors-bump-area-chart.tsx"
+  },
+  {
+    "id": "gradient-colors-bump-line-chart",
+    "export": "PresetGradientColorsBumpLineChart",
+    "family": "line",
+    "title": "Gradient colors bump line chart",
+    "source": "app/src/kit/evilcharts/examples/recharts/ex-gradient-colors-bump-line-chart.tsx"
+  },
+  {
+    "id": "gradient-colors-composed-chart",
+    "export": "PresetGradientColorsComposedChart",
+    "family": "composed",
+    "title": "Gradient colors composed chart",
+    "source": "app/src/kit/evilcharts/examples/recharts/ex-gradient-colors-composed-chart.tsx"
+  },
+  {
+    "id": "gradient-colors-line-chart",
+    "export": "PresetGradientColorsLineChart",
+    "family": "line",
+    "title": "Gradient colors line chart",
+    "source": "app/src/kit/evilcharts/examples/recharts/ex-gradient-colors-line-chart.tsx"
+  },
+  {
+    "id": "gradient-colors-pie-chart",
+    "export": "PresetGradientColorsPieChart",
+    "family": "pie",
+    "title": "Gradient colors pie chart",
+    "source": "app/src/kit/evilcharts/examples/recharts/ex-gradient-colors-pie-chart.tsx"
+  },
+  {
+    "id": "gradient-colors-radar-chart",
+    "export": "PresetGradientColorsRadarChart",
+    "family": "radar",
+    "title": "Gradient colors radar chart",
+    "source": "app/src/kit/evilcharts/examples/recharts/ex-gradient-colors-radar-chart.tsx"
+  },
+  {
+    "id": "gradient-colors-radial-chart",
+    "export": "PresetGradientColorsRadialChart",
+    "family": "radial",
+    "title": "Gradient colors radial chart",
+    "source": "app/src/kit/evilcharts/examples/recharts/ex-gradient-colors-radial-chart.tsx"
+  },
+  {
+    "id": "gradient-colors-sankey-chart",
+    "export": "PresetGradientColorsSankeyChart",
+    "family": "sankey",
+    "title": "Gradient colors sankey chart",
+    "source": "app/src/kit/evilcharts/examples/recharts/ex-gradient-colors-sankey-chart.tsx"
+  },
+  {
+    "id": "gradient-reverse-area-variant-area-chart",
+    "export": "PresetGradientReverseAreaVariantAreaChart",
+    "family": "area",
+    "title": "Gradient reverse area variant area chart",
+    "source": "app/src/kit/evilcharts/examples/recharts/ex-gradient-reverse-area-variant-area-chart.tsx"
+  },
+  {
+    "id": "gradient-variant-bar-chart",
+    "export": "PresetGradientVariantBarChart",
+    "family": "bar",
+    "title": "Gradient variant bar chart",
+    "source": "app/src/kit/evilcharts/examples/recharts/ex-gradient-variant-bar-chart.tsx"
+  },
+  {
+    "id": "gradient-variant-composed-chart",
+    "export": "PresetGradientVariantComposedChart",
+    "family": "composed",
+    "title": "Gradient variant composed chart",
+    "source": "app/src/kit/evilcharts/examples/recharts/ex-gradient-variant-composed-chart.tsx"
+  },
+  {
+    "id": "hatched-area-variant-area-chart",
+    "export": "PresetHatchedAreaVariantAreaChart",
+    "family": "area",
+    "title": "Hatched area variant area chart",
+    "source": "app/src/kit/evilcharts/examples/recharts/ex-hatched-area-variant-area-chart.tsx"
+  },
+  {
+    "id": "hatched-variant-bar-chart",
+    "export": "PresetHatchedVariantBarChart",
+    "family": "bar",
+    "title": "Hatched variant bar chart",
+    "source": "app/src/kit/evilcharts/examples/recharts/ex-hatched-variant-bar-chart.tsx"
+  },
+  {
+    "id": "hatched-variant-composed-chart",
+    "export": "PresetHatchedVariantComposedChart",
+    "family": "composed",
+    "title": "Hatched variant composed chart",
+    "source": "app/src/kit/evilcharts/examples/recharts/ex-hatched-variant-composed-chart.tsx"
+  },
+  {
+    "id": "horizontal-layout-bar-chart",
+    "export": "PresetHorizontalLayoutBarChart",
+    "family": "bar",
+    "title": "Horizontal layout bar chart",
+    "source": "app/src/kit/evilcharts/examples/recharts/ex-horizontal-layout-bar-chart.tsx"
+  },
+  {
+    "id": "hover-highlight-bar-chart",
+    "export": "PresetHoverHighlightBarChart",
+    "family": "bar",
+    "title": "Hover highlight bar chart",
+    "source": "app/src/kit/evilcharts/examples/recharts/ex-hover-highlight-bar-chart.tsx"
+  },
+  {
+    "id": "hover-highlight-composed-chart",
+    "export": "PresetHoverHighlightComposedChart",
+    "family": "composed",
+    "title": "Hover highlight composed chart",
+    "source": "app/src/kit/evilcharts/examples/recharts/ex-hover-highlight-composed-chart.tsx"
+  },
+  {
+    "id": "labeled-nodes-sankey-chart",
+    "export": "PresetLabeledNodesSankeyChart",
+    "family": "sankey",
+    "title": "Labeled nodes sankey chart",
+    "source": "app/src/kit/evilcharts/examples/recharts/ex-labeled-nodes-sankey-chart.tsx"
+  },
+  {
+    "id": "labels-pie-chart",
+    "export": "PresetLabelsPieChart",
+    "family": "pie",
+    "title": "Labels pie chart",
+    "source": "app/src/kit/evilcharts/examples/recharts/ex-labels-pie-chart.tsx"
+  },
+  {
+    "id": "legend-circle-line-chart",
+    "export": "PresetLegendCircleLineChart",
+    "family": "line",
+    "title": "Legend circle line chart",
+    "source": "app/src/kit/evilcharts/examples/recharts/ex-legend-circle-line-chart.tsx"
+  },
+  {
+    "id": "legend-circle-outline-line-chart",
+    "export": "PresetLegendCircleOutlineLineChart",
+    "family": "line",
+    "title": "Legend circle outline line chart",
+    "source": "app/src/kit/evilcharts/examples/recharts/ex-legend-circle-outline-line-chart.tsx"
+  },
+  {
+    "id": "legend-horizontal-bar-line-chart",
+    "export": "PresetLegendHorizontalBarLineChart",
+    "family": "bar",
+    "title": "Legend horizontal bar line chart",
+    "source": "app/src/kit/evilcharts/examples/recharts/ex-legend-horizontal-bar-line-chart.tsx"
+  },
+  {
+    "id": "legend-rounded-square-line-chart",
+    "export": "PresetLegendRoundedSquareLineChart",
+    "family": "line",
+    "title": "Legend rounded square line chart",
+    "source": "app/src/kit/evilcharts/examples/recharts/ex-legend-rounded-square-line-chart.tsx"
+  },
+  {
+    "id": "legend-rounded-square-outline-line-chart",
+    "export": "PresetLegendRoundedSquareOutlineLineChart",
+    "family": "line",
+    "title": "Legend rounded square outline line chart",
+    "source": "app/src/kit/evilcharts/examples/recharts/ex-legend-rounded-square-outline-line-chart.tsx"
+  },
+  {
+    "id": "legend-square-line-chart",
+    "export": "PresetLegendSquareLineChart",
+    "family": "line",
+    "title": "Legend square line chart",
+    "source": "app/src/kit/evilcharts/examples/recharts/ex-legend-square-line-chart.tsx"
+  },
+  {
+    "id": "legend-vertical-bar-line-chart",
+    "export": "PresetLegendVerticalBarLineChart",
+    "family": "bar",
+    "title": "Legend vertical bar line chart",
+    "source": "app/src/kit/evilcharts/examples/recharts/ex-legend-vertical-bar-line-chart.tsx"
+  },
+  {
+    "id": "line-chart",
+    "export": "PresetLineChart",
+    "family": "line",
+    "title": "Line chart",
+    "source": "app/src/kit/evilcharts/examples/recharts/ex-line-chart.tsx"
+  },
+  {
+    "id": "lines-area-variant-area-chart",
+    "export": "PresetLinesAreaVariantAreaChart",
+    "family": "line",
+    "title": "Lines area variant area chart",
+    "source": "app/src/kit/evilcharts/examples/recharts/ex-lines-area-variant-area-chart.tsx"
+  },
+  {
+    "id": "lines-variant-radar-chart",
+    "export": "PresetLinesVariantRadarChart",
+    "family": "radar",
+    "title": "Lines variant radar chart",
+    "source": "app/src/kit/evilcharts/examples/recharts/ex-lines-variant-radar-chart.tsx"
+  },
+  {
+    "id": "loading-state-area-chart",
+    "export": "PresetLoadingStateAreaChart",
+    "family": "area",
+    "title": "Loading state area chart",
+    "source": "app/src/kit/evilcharts/examples/recharts/ex-loading-state-area-chart.tsx"
+  },
+  {
+    "id": "loading-state-bar-chart",
+    "export": "PresetLoadingStateBarChart",
+    "family": "bar",
+    "title": "Loading state bar chart",
+    "source": "app/src/kit/evilcharts/examples/recharts/ex-loading-state-bar-chart.tsx"
+  },
+  {
+    "id": "loading-state-composed-chart",
+    "export": "PresetLoadingStateComposedChart",
+    "family": "composed",
+    "title": "Loading state composed chart",
+    "source": "app/src/kit/evilcharts/examples/recharts/ex-loading-state-composed-chart.tsx"
+  },
+  {
+    "id": "loading-state-line-chart",
+    "export": "PresetLoadingStateLineChart",
+    "family": "line",
+    "title": "Loading state line chart",
+    "source": "app/src/kit/evilcharts/examples/recharts/ex-loading-state-line-chart.tsx"
+  },
+  {
+    "id": "loading-state-pie-chart",
+    "export": "PresetLoadingStatePieChart",
+    "family": "pie",
+    "title": "Loading state pie chart",
+    "source": "app/src/kit/evilcharts/examples/recharts/ex-loading-state-pie-chart.tsx"
+  },
+  {
+    "id": "loading-state-radar-chart",
+    "export": "PresetLoadingStateRadarChart",
+    "family": "radar",
+    "title": "Loading state radar chart",
+    "source": "app/src/kit/evilcharts/examples/recharts/ex-loading-state-radar-chart.tsx"
+  },
+  {
+    "id": "loading-state-radial-chart",
+    "export": "PresetLoadingStateRadialChart",
+    "family": "radial",
+    "title": "Loading state radial chart",
+    "source": "app/src/kit/evilcharts/examples/recharts/ex-loading-state-radial-chart.tsx"
+  },
+  {
+    "id": "loading-state-sankey-chart",
+    "export": "PresetLoadingStateSankeyChart",
+    "family": "sankey",
+    "title": "Loading state sankey chart",
+    "source": "app/src/kit/evilcharts/examples/recharts/ex-loading-state-sankey-chart.tsx"
+  },
+  {
+    "id": "monotoney-curve-type-area-chart",
+    "export": "PresetMonotoneyCurveTypeAreaChart",
+    "family": "area",
+    "title": "Monotoney curve type area chart",
+    "source": "app/src/kit/evilcharts/examples/recharts/ex-monotoney-curve-type-area-chart.tsx"
+  },
+  {
+    "id": "monotoney-curve-type-line-chart",
+    "export": "PresetMonotoneyCurveTypeLineChart",
+    "family": "line",
+    "title": "Monotoney curve type line chart",
+    "source": "app/src/kit/evilcharts/examples/recharts/ex-monotoney-curve-type-line-chart.tsx"
+  },
+  {
+    "id": "outside-labels-sankey-chart",
+    "export": "PresetOutsideLabelsSankeyChart",
+    "family": "sankey",
+    "title": "Outside labels sankey chart",
+    "source": "app/src/kit/evilcharts/examples/recharts/ex-outside-labels-sankey-chart.tsx"
+  },
+  {
+    "id": "overlapping-padded-pie-chart",
+    "export": "PresetOverlappingPaddedPieChart",
+    "family": "pie",
+    "title": "Overlapping padded pie chart",
+    "source": "app/src/kit/evilcharts/examples/recharts/ex-overlapping-padded-pie-chart.tsx"
+  },
+  {
+    "id": "padded-pie-chart",
+    "export": "PresetPaddedPieChart",
+    "family": "pie",
+    "title": "Padded pie chart",
+    "source": "app/src/kit/evilcharts/examples/recharts/ex-padded-pie-chart.tsx"
+  },
+  {
+    "id": "percent-type-bar-chart",
+    "export": "PresetPercentTypeBarChart",
+    "family": "bar",
+    "title": "Percent type bar chart",
+    "source": "app/src/kit/evilcharts/examples/recharts/ex-percent-type-bar-chart.tsx"
+  },
+  {
+    "id": "pie-chart",
+    "export": "PresetPieChart",
+    "family": "pie",
+    "title": "Pie chart",
+    "source": "app/src/kit/evilcharts/examples/recharts/ex-pie-chart.tsx"
+  },
+  {
+    "id": "radar-chart",
+    "export": "PresetRadarChart",
+    "family": "radar",
+    "title": "Radar chart",
+    "source": "app/src/kit/evilcharts/examples/recharts/ex-radar-chart.tsx"
+  },
+  {
+    "id": "radial-chart",
+    "export": "PresetRadialChart",
+    "family": "radial",
+    "title": "Radial chart",
+    "source": "app/src/kit/evilcharts/examples/recharts/ex-radial-chart.tsx"
+  },
+  {
+    "id": "sankey-chart",
+    "export": "PresetSankeyChart",
+    "family": "sankey",
+    "title": "Sankey chart",
+    "source": "app/src/kit/evilcharts/examples/recharts/ex-sankey-chart.tsx"
+  },
+  {
+    "id": "semi-variant-radial-chart",
+    "export": "PresetSemiVariantRadialChart",
+    "family": "radial",
+    "title": "Semi variant radial chart",
+    "source": "app/src/kit/evilcharts/examples/recharts/ex-semi-variant-radial-chart.tsx"
+  },
+  {
+    "id": "solid-area-variant-area-chart",
+    "export": "PresetSolidAreaVariantAreaChart",
+    "family": "area",
+    "title": "Solid area variant area chart",
+    "source": "app/src/kit/evilcharts/examples/recharts/ex-solid-area-variant-area-chart.tsx"
+  },
+  {
+    "id": "solid-labeled-nodes-sankey-chart",
+    "export": "PresetSolidLabeledNodesSankeyChart",
+    "family": "sankey",
+    "title": "Solid labeled nodes sankey chart",
+    "source": "app/src/kit/evilcharts/examples/recharts/ex-solid-labeled-nodes-sankey-chart.tsx"
+  },
+  {
+    "id": "solid-link-variant-sankey-chart",
+    "export": "PresetSolidLinkVariantSankeyChart",
+    "family": "sankey",
+    "title": "Solid link variant sankey chart",
+    "source": "app/src/kit/evilcharts/examples/recharts/ex-solid-link-variant-sankey-chart.tsx"
+  },
+  {
+    "id": "solid-stroke-area-chart",
+    "export": "PresetSolidStrokeAreaChart",
+    "family": "area",
+    "title": "Solid stroke area chart",
+    "source": "app/src/kit/evilcharts/examples/recharts/ex-solid-stroke-area-chart.tsx"
+  },
+  {
+    "id": "solid-stroke-line-chart",
+    "export": "PresetSolidStrokeLineChart",
+    "family": "line",
+    "title": "Solid stroke line chart",
+    "source": "app/src/kit/evilcharts/examples/recharts/ex-solid-stroke-line-chart.tsx"
+  },
+  {
+    "id": "source-link-variant-sankey-chart",
+    "export": "PresetSourceLinkVariantSankeyChart",
+    "family": "sankey",
+    "title": "Source link variant sankey chart",
+    "source": "app/src/kit/evilcharts/examples/recharts/ex-source-link-variant-sankey-chart.tsx"
+  },
+  {
+    "id": "stacked-type-area-chart",
+    "export": "PresetStackedTypeAreaChart",
+    "family": "area",
+    "title": "Stacked type area chart",
+    "source": "app/src/kit/evilcharts/examples/recharts/ex-stacked-type-area-chart.tsx"
+  },
+  {
+    "id": "stacked-type-bar-chart",
+    "export": "PresetStackedTypeBarChart",
+    "family": "bar",
+    "title": "Stacked type bar chart",
+    "source": "app/src/kit/evilcharts/examples/recharts/ex-stacked-type-bar-chart.tsx"
+  },
+  {
+    "id": "step-curve-type-area-chart",
+    "export": "PresetStepCurveTypeAreaChart",
+    "family": "area",
+    "title": "Step curve type area chart",
+    "source": "app/src/kit/evilcharts/examples/recharts/ex-step-curve-type-area-chart.tsx"
+  },
+  {
+    "id": "step-curve-type-line-chart",
+    "export": "PresetStepCurveTypeLineChart",
+    "family": "line",
+    "title": "Step curve type line chart",
+    "source": "app/src/kit/evilcharts/examples/recharts/ex-step-curve-type-line-chart.tsx"
+  },
+  {
+    "id": "stripped-variant-bar-chart",
+    "export": "PresetStrippedVariantBarChart",
+    "family": "bar",
+    "title": "Stripped variant bar chart",
+    "source": "app/src/kit/evilcharts/examples/recharts/ex-stripped-variant-bar-chart.tsx"
+  },
+  {
+    "id": "stripped-variant-composed-chart",
+    "export": "PresetStrippedVariantComposedChart",
+    "family": "composed",
+    "title": "Stripped variant composed chart",
+    "source": "app/src/kit/evilcharts/examples/recharts/ex-stripped-variant-composed-chart.tsx"
+  },
+  {
+    "id": "tooltip-default-bar-chart",
+    "export": "PresetTooltipDefaultBarChart",
+    "family": "bar",
+    "title": "Tooltip default bar chart",
+    "source": "app/src/kit/evilcharts/examples/recharts/ex-tooltip-default-bar-chart.tsx"
+  },
+  {
+    "id": "tooltip-frosted-glass-bar-chart",
+    "export": "PresetTooltipFrostedGlassBarChart",
+    "family": "bar",
+    "title": "Tooltip frosted glass bar chart",
+    "source": "app/src/kit/evilcharts/examples/recharts/ex-tooltip-frosted-glass-bar-chart.tsx"
+  }
+]

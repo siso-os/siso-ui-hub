@@ -1,0 +1,352 @@
+{
+  "sourceRepo": "siso-ecosystem",
+  "entries": [
+    {
+      "source": "src/features/marketing/components/siso/ProductGlyph.tsx",
+      "target": "src/eco/features/marketing/components/siso/ProductGlyph.tsx",
+      "sourceSha256": "330e640808ef0f4b5d3b476075f38f55e280d5d06c40a25f023b3952ede97120",
+      "adaptedSha256": "7bcf9e0bb7cdfdbfb7f938cc16f4a41ff1e417923224f518fc2d183a1f75f446",
+      "changes": [
+        "local imports made package-relative",
+        "uihub source marker"
+      ],
+      "privacyCleanSource": "app/src/kit/siso-landing/eco/features/marketing/components/siso/ProductGlyph.tsx",
+      "privacyCleanSourceSha256": "1c94a10a5bd2aaa236ca3d2c2197b280080df2344cde74368e70112341c73427"
+    },
+    {
+      "source": "src/features/marketing/components/Footer/Products.tsx",
+      "target": "src/eco/features/marketing/components/Footer/Products.tsx",
+      "sourceSha256": "23f88a2255cb4e90a5be1e511e6286c1d9a45817d03ff242d030b08534a5fb2d",
+      "adaptedSha256": "391f94a5a69d99ad57bdb2aefb242a83451c523b57063ac7c3d622cc4fef4524",
+      "changes": [
+        "local imports made package-relative",
+        "uihub source marker",
+        "consumer configuration replaces factual data imports; source visuals retained"
+      ]
+    },
+    {
+      "source": "src/features/marketing/components/Footer/Signature.tsx",
+      "target": "src/eco/features/marketing/components/Footer/Signature.tsx",
+      "sourceSha256": "00445a76823e0c40742ce9c207996f2e99925f066f25fb1b7e5de7190652a942",
+      "adaptedSha256": "793fecb6f451113cbf3692348942fffb42148d88f3679a07861fa187345106ae",
+      "changes": [
+        "local imports made package-relative",
+        "uihub source marker",
+        "consumer configuration replaces factual data imports; source visuals retained",
+        "Beam is a host-provided slot; restricted application shader excluded from package distribution."
+      ]
+    },
+    {
+      "source": "src/features/marketing/components/Footer/ui/FooterLink.tsx",
+      "target": "src/eco/features/marketing/components/Footer/ui/FooterLink.tsx",
+      "sourceSha256": "1c09bd25cbf86f3cb1e9e7d296ba1044e8813537421b50b8033c12ff359e07ac",
+      "adaptedSha256": "5f3a315c4e1d7c87ae58756b40b2b014c9e2d7874b62a41af201e2ac38708a34",
+      "changes": [
+        "local imports made package-relative",
+        "uihub source marker",
+        "consumer configuration replaces factual data imports; source visuals retained"
+      ]
+    },
+    {
+      "source": "src/features/marketing/components/Footer/ui/CategorySection.tsx",
+      "target": "src/eco/features/marketing/components/Footer/ui/CategorySection.tsx",
+      "sourceSha256": "27ae2c3bbe64e9cd40410c7878b8a74772b2200062f75a6bb86cf5c8288929fb",
+      "adaptedSha256": "81ebd9b7e8865620389dd3ad636173bb1ceaab7a916cd1602a44a0187764e05b",
+      "changes": [
+        "local imports made package-relative",
+        "uihub source marker",
+        "consumer configuration replaces factual data imports; source visuals retained"
+      ]
+    },
+    {
+      "source": "src/features/marketing/components/Footer/Numbers.tsx",
+      "target": "src/eco/features/marketing/components/Footer/Numbers.tsx",
+      "sourceSha256": "21ca5122ff75766dbf0af3901bb184c8bde71e6f7d2029cee41e1f886a16eecc",
+      "adaptedSha256": "8d989c5b6bf59ae5cf6a5d422577f244eb176398bb443f5d49cc2507fa1c45ea",
+      "changes": [
+        "local imports made package-relative",
+        "uihub source marker",
+        "consumer configuration replaces factual data imports; source visuals retained"
+      ]
+    },
+    {
+      "source": "src/features/marketing/components/siso/ui/GitHubButton.tsx",
+      "target": "src/eco/features/marketing/components/siso/ui/GitHubButton.tsx",
+      "sourceSha256": "6e5739ede53a90bb99b5bfa4eef1c1bd17c5a927e2963638095de88176894e2b",
+      "adaptedSha256": "a21ab3767806084f6c611c6c44bf91c5d55d023084d514e62a17a8d0c889a9e2",
+      "changes": [
+        "local imports made package-relative",
+        "uihub source marker"
+      ]
+    },
+    {
+      "source": "src/features/marketing/components/Footer/Links.tsx",
+      "target": "src/eco/features/marketing/components/Footer/Links.tsx",
+      "sourceSha256": "b0caf6dfdceea3bc197232e598e55260da52e71ac827d67fc6cc2822f53ffcb9",
+      "adaptedSha256": "2b2e1c279916694d8ab608bc62975642fe35c5a268a5d9c059dc6e44e7902de1",
+      "changes": [
+        "local imports made package-relative",
+        "uihub source marker",
+        "consumer configuration replaces factual data imports; source visuals retained"
+      ]
+    },
+    {
+      "source": "src/features/marketing/components/Footer/Social.tsx",
+      "target": "src/eco/features/marketing/components/Footer/Social.tsx",
+      "sourceSha256": "c5cc760f7c1836622262d58324257bd013963c8c2951816be2204c944f30afbe",
+      "adaptedSha256": "477968b25891137b6699504b6cf204d0ed3f9c206f32aafb1be6d9bca81b982a",
+      "changes": [
+        "local imports made package-relative",
+        "uihub source marker",
+        "consumer configuration replaces factual data imports; source visuals retained"
+      ]
+    },
+    {
+      "source": "src/features/marketing/components/Footer/AskAI.tsx",
+      "target": "src/eco/features/marketing/components/Footer/AskAI.tsx",
+      "sourceSha256": "5b325de1b06fc4a5ecf31356746ec8cd2fdfb516ab5ccd0233593e9f674b0042",
+      "adaptedSha256": "eeda8d53d3cebe40036558811910f3c7195695fb83cfe754ad00681987ac2954",
+      "changes": [
+        "local imports made package-relative",
+        "uihub source marker",
+        "consumer configuration replaces factual data imports; source visuals retained"
+      ]
+    },
+    {
+      "source": "src/features/marketing/components/Footer/Lights.tsx",
+      "target": "src/eco/features/marketing/components/Footer/Lights.tsx",
+      "sourceSha256": "c7387be937a4d35695e4da7880716c9b81064ed9f29db47a8196d2187f15fae5",
+      "adaptedSha256": "7ac620534e4ad0e1d3ccbc2aaac30e6258fe137f3797c0e945b58fd68ff88d9a",
+      "changes": [
+        "local imports made package-relative",
+        "uihub source marker",
+        "consumer configuration replaces factual data imports; source visuals retained"
+      ]
+    },
+    {
+      "source": "src/components/ui/ruixen-gradient-footer.tsx",
+      "target": "src/eco/components/ui/ruixen-gradient-footer.tsx",
+      "sourceSha256": "781fef109139a58447c11d3cd2a102dfea49078574903d809cc90069108b0dbd",
+      "adaptedSha256": "f22d1c9b030a0625fa36b3b03db344fd6e739a028c4967445fd11bfbd273eb9d",
+      "changes": [
+        "local imports made package-relative",
+        "uihub source marker"
+      ]
+    },
+    {
+      "source": "src/features/marketing/components/Footer/index.tsx",
+      "target": "src/eco/features/marketing/components/Footer/index.tsx",
+      "sourceSha256": "bad070e57b85ca6a2c39a986b0a008e4e5f73a7987d291e44fff770e9c8bb734",
+      "adaptedSha256": "d14ba7060638030f1e41999de2e31fd25b092251cbec6c5823c60fd3c903602e",
+      "changes": [
+        "local imports made package-relative",
+        "uihub source marker",
+        "consumer configuration replaces factual data imports; source visuals retained"
+      ]
+    },
+    {
+      "source": "src/features/marketing/components/siso/blog/posts.ts",
+      "target": "src/eco/features/marketing/components/siso/blog/posts.ts",
+      "sourceSha256": "d482a5535f7ad9ffbc699acff242de1573c0835f02bc4d356ccc23d7d81219ef",
+      "adaptedSha256": "a82a1e826a2f7facfcbf7d90c67c72cfc02a4b84bcba6d748052aa828cb57d8b",
+      "changes": [
+        "type and readingMinutes function retained; all production post records removed; author generalized to string"
+      ]
+    },
+    {
+      "source": "src/features/marketing/components/siso/blog/topics.ts",
+      "target": "src/eco/features/marketing/components/siso/blog/topics.ts",
+      "sourceSha256": "fba24f0dec24d426c5d7a9d9c8391cbc0aac092095a6e3b6be7fcb086ab02b53",
+      "adaptedSha256": "c0f3c84768ff96465cdc1389dfe40864780aa3ac7a7699dd56a466891dadfbed",
+      "changes": [
+        "local imports made package-relative",
+        "uihub source marker",
+        "production post collection dependency removed"
+      ]
+    },
+    {
+      "source": "src/features/marketing/data/blog-backgrounds.json",
+      "target": "src/eco/features/marketing/data/blog-backgrounds.json",
+      "sourceSha256": "374e7ee6dc3d86d342c41ceceeaeff5e4eb44308aea2965a0cbeea6e35f8758e",
+      "adaptedSha256": "374e7ee6dc3d86d342c41ceceeaeff5e4eb44308aea2965a0cbeea6e35f8758e",
+      "changes": [
+        "local imports made package-relative",
+        "uihub source marker"
+      ]
+    },
+    {
+      "source": "src/features/marketing/components/siso/blog/BlogHeader.tsx",
+      "target": "src/eco/features/marketing/components/siso/blog/BlogHeader.tsx",
+      "sourceSha256": "2c9036dd32ec536493703fa7866fe59c9a9af14ed81f192345ac55954742e197",
+      "adaptedSha256": "7ddef5a864481846e451626fe5fc4f7034f60d4b1795f0f524c4393ef92a18f7",
+      "changes": [
+        "local imports made package-relative",
+        "uihub source marker"
+      ]
+    },
+    {
+      "source": "src/features/marketing/components/siso/blog/BlogCard.tsx",
+      "target": "src/eco/features/marketing/components/siso/blog/BlogCard.tsx",
+      "sourceSha256": "e8cb9a0e68863393b740f423a02fd9e66b22896e94d8f404ccbddaaab31a78ea",
+      "adaptedSha256": "1ee968310899c33c200a44507805f1d749e272264f8b5b9d73db95670c9bd0b4",
+      "changes": [
+        "local imports made package-relative",
+        "uihub source marker",
+        "optional href override"
+      ]
+    },
+    {
+      "source": "src/features/marketing/components/siso/blog/ArticleTools.tsx",
+      "target": "src/eco/features/marketing/components/siso/blog/ArticleTools.tsx",
+      "sourceSha256": "72ceb83afac9086ef8e99593f72e3c1ad4a47bfd7ae5e58654e06436ea5bfd4f",
+      "adaptedSha256": "5c7f8164a6bc9e1719e85c9685ce585d3b3152e6569f9b4a95dcf3543d216b24",
+      "changes": [
+        "local imports made package-relative",
+        "uihub source marker",
+        "relatedPosts/articleId/blogHref caller props replace global post collection/fixed article target"
+      ]
+    },
+    {
+      "source": "src/features/marketing/components/siso/blog/styles.ts",
+      "target": "src/eco/features/marketing/components/siso/blog/styles.ts",
+      "sourceSha256": "894b1b6741d4c64db218b32d21a7a9741a393e99166ad7ec08e42aea08e59c70",
+      "adaptedSha256": "1ca8910a02b54b45bf85fcc2fdab6a8de27a401028dd272d7e348284966ed5f8",
+      "changes": [
+        "local imports made package-relative",
+        "uihub source marker"
+      ]
+    },
+    {
+      "source": "docs-site/components/rail.tsx",
+      "target": "src/docs-site/components/rail.tsx",
+      "sourceSha256": "f5f5dec336a017f77bfa7d7c844fb9e4e0871d25afcbef811faf4b74453e88ca",
+      "adaptedSha256": "414e2fbc963573d4b8565bbee12166ad84663088f9992e64a34db9913b1d3901",
+      "changes": [
+        "local imports made package-relative",
+        "uihub source marker"
+      ]
+    },
+    {
+      "source": "docs-site/components/icons.tsx",
+      "target": "src/docs-site/components/icons.tsx",
+      "sourceSha256": "870dbbf257ff9c675eafc6e2908ebb309acc0b22e37d500f0927430a6a7426e4",
+      "adaptedSha256": "f31b3e0c6e5353f5ea95706c9199daa762445d7ad69fc995d49fd7cc2ddf0afc",
+      "changes": [
+        "local imports made package-relative",
+        "uihub source marker"
+      ]
+    },
+    {
+      "source": "docs-site/components/social.tsx",
+      "target": "src/docs-site/components/social.tsx",
+      "sourceSha256": "8b42b4754f96cc1a5e19031a2a87e91445d95890b52502dbb929eeafb6fe0a11",
+      "adaptedSha256": "2ccf1aac601ef7e020c9862eccb2e1484fbb521a251e1b75fd9ab28a92e64952",
+      "changes": [
+        "local imports made package-relative",
+        "uihub source marker",
+        "consumer configuration replaces factual data imports; source visuals retained"
+      ]
+    },
+    {
+      "source": "docs-site/components/live.tsx",
+      "target": "src/docs-site/components/live.tsx",
+      "sourceSha256": "06f41674cc972f784b210a6ca56d9021acabd5ea432aa40bdae314445c18112f",
+      "adaptedSha256": "8ab150bba3a7f51f6b692563ad95d826f26264558b690f9401536d2e92ad9de7",
+      "changes": [
+        "local imports made package-relative",
+        "uihub source marker"
+      ]
+    },
+    {
+      "source": "docs-site/components/ProductGlyph.tsx",
+      "target": "src/docs-site/components/ProductGlyph.tsx",
+      "sourceSha256": "05c460a91a1d707878f41bce8b4e18201168b6d73a007f7d99361f4340fe5a9e",
+      "adaptedSha256": "032d2edd642eb334a931104b5a470bc8170a93bb06643189b71d671c5125eb46",
+      "changes": [
+        "local imports made package-relative",
+        "uihub source marker"
+      ]
+    },
+    {
+      "source": "docs-site/lib/site.ts",
+      "target": "src/docs-site/lib/site.ts",
+      "sourceSha256": "75fa2b881e5844e887f35dae272fece3b3eed9601187521ea6265e4111be31f1",
+      "adaptedSha256": "3cf0dbd9b703475bf187979d26a20a102f5d563f4ab5cf7cf40aaa76873a5a23",
+      "changes": [
+        "local imports made package-relative",
+        "uihub source marker"
+      ]
+    },
+    {
+      "source": "docs-site/lib/products.ts",
+      "target": "src/docs-site/lib/products.ts",
+      "sourceSha256": "364ab24d6a985cc49c0119dc513761b1ed9fbf6802a260cebc22f3bd96a88524",
+      "adaptedSha256": "4fc11df07cede09e4b31300916d26d1b295722126ba26d75a4c1b8bece1c5f70",
+      "changes": [
+        "local imports made package-relative",
+        "uihub source marker"
+      ]
+    },
+    {
+      "source": "docs-site/components/footer.tsx",
+      "target": "src/docs-site/components/footer.tsx",
+      "sourceSha256": "c06d0a0e44763935697a82a4e4a12239fbaadf10ff98368707eb0420f5391b8e",
+      "adaptedSha256": "e2fcbc2ef0b49f74f27c47de2fbd9c85f47667b105b9db31fce89f54a7a24a21",
+      "changes": [
+        "local imports made package-relative",
+        "uihub source marker"
+      ]
+    },
+    {
+      "source": "docs-site/components/hero.tsx",
+      "target": "src/docs-site/components/hero.tsx",
+      "sourceSha256": "2e28ce7a3ce069d8c4106b9d403b89d552c918351a3a0b4e2738a506d8499a16",
+      "adaptedSha256": "c9908f328f4d0ed8a6f63a2210ada1d38ec3c9ce83dc62ef95498f972ee74083",
+      "changes": [
+        "local imports made package-relative",
+        "uihub source marker"
+      ]
+    },
+    {
+      "source": "docs-site/app/global.css",
+      "target": "docs.css",
+      "sourceSha256": "a89effc761025ee4a973b4f89b79f045124c40b3e50aa6c61359bbf5a4b07ebc",
+      "adaptedSha256": "9b9121e52306f6985996c647e34bec229215dba6c2e8f53e726b0fe2437c1149",
+      "changes": [
+        "source skin; framework imports removed, base/theme root scoped",
+        "Scope the complete source docs stylesheet to its docs root, including Fumadocs dialog selectors, so it cannot restyle other packages",
+        "Root selectors use :scope inside the stylesheet boundary, preserving both source theme palettes"
+      ]
+    },
+    {
+      "source": "src/app/globals.css",
+      "target": "styles.css",
+      "sourceSha256": "9e2ff1da90f4c20683b01410b8a5b3549f68503b7b4fe85f791aec851fec7c73",
+      "adaptedSha256": "c61cfcbece41987e6989b7a11cc29afec64f7a8a8bbaf887a1832112c3c77737",
+      "changes": [
+        "footer-label/footer-link shared rules extracted; footer list reset scoped"
+      ]
+    }
+  ],
+  "externalDependencies": [
+    "lucide-react",
+    "react"
+  ],
+  "distribution": "Private SISO package. Restricted shader excluded from all package graphs and tarballs; workbench application supplies it through the beam slot.",
+  "applicationEffects": [
+    {
+      "source": "src/features/marketing/components/siso/ui/LaserBeam.tsx",
+      "sourceSha256": "bc40844c1d256d08a850ccdf389e050f563ba0334e5e30847328ae9c40f0fc7e",
+      "applicationTarget": "examples/package-suite/site-effects/LaserBeam.tsx",
+      "applicationSha256": "a78e3292bcad008a767204c6ceae423bded4ddfd7ed1798f18623862d2a08214",
+      "distribution": "application only; excluded from package"
+    },
+    {
+      "source": "src/features/marketing/components/Footer/Beam.tsx",
+      "sourceSha256": "dda9074db40e044da8f3102543f8dfcefc87e54b1761cebb5932acb2da07ba01",
+      "applicationTarget": "examples/package-suite/site-effects/Beam.tsx",
+      "applicationSha256": "14ad0d812336d8528d6a61d8fe7ec3d070878d2b30ba1a72b9d64d9ac947a598",
+      "distribution": "application only; excluded from package"
+    }
+  ]
+}

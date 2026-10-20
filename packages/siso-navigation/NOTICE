@@ -1,0 +1,39 @@
+@siso/navigation 0.1.0
+Copyright (c) 2026 SISO
+
+SISO-authored implementation. Behavior and appearance informed by SISO-owned:
+- app/src/components/SideNav.tsx: grouped disclosure rows, active ancestors, counts, collapsed navigation.
+- app/src/components/AppShell.tsx: mobile menu, collapse control, breadcrumbs/page navigation.
+- app/src/kitv1/siso/app-frame.tsx: workspace selection, tool strip and rail behavior.
+
+Source app-frame uses shadcn sidebar (MIT), but this package does not copy that
+sidebar implementation or any third-party component source. Native HTML controls
+are independently implemented here. No HALO, Arc Pro, Kobra or Kinetics code is
+included. Consumer-provided icons retain the consumer's own licence obligations.
+
+Source-faithful Hub navigation addition:
+src/hub/HubSideNav.tsx extracts the original SideNav.tsx presentation;
+src/hub/NavGlyph.tsx, navIcons.tsx and icons/ retain the original Hub glyph
+mapping/animation implementations, adapted only to package-relative imports.
+src/hub/animated/* copies the source's referenced lucide-animated icons.
+assets/siso-mark.png is the SISO-owned mark from app/src/assets/siso-mark.png.
+hub.css preserves relevant source index.css declarations inside a nav scope.
+The earlier generic implementation notice applies only to src/navigation.tsx.
+
+Animated glyph source: pqoqubbw/icons and lucide-animated, MIT,
+Copyright (c) 2024-2026 pqoqubbw. Original full notice retained in
+src/hub/icons/LICENSE-pqoqubbw and appended to this package's LICENSE.
+Source SHA-256 and import/data adaptations: source-provenance.json.
+
+Agent Base / SISO CRM source navigation:
+src/agent-base/* copies the existing @siso/side-nav source from Agent Base
+queue-base ref 5ded8d644e29ffe5c63eb091cdbdd21beb963e53. Only imports of
+@siso/shell are changed to @siso/shells/agent-base. Public provider props,
+pointer drag sensors, sorting algorithms, persistence behavior, markup and
+source CSS are unchanged. The two original CSS files remain byte-identical.
+GroupedRail's source credits SISO CRM GroupedRail.tsx @552f83b.
+StatusRow's source credits T3 Code Sidebar.tsx @5cc99e1c (MIT).
+T3 Code MIT notice: Copyright (c) 2026 T3 Tools Inc., verified from
+https://raw.githubusercontent.com/pingdotgg/t3code/main/LICENSE on 2026-10-16;
+full notice retained in src/agent-base/LICENSE-T3-Code and package LICENSE.
+Source repository/path/ref and hashes are recorded in source-provenance.json.

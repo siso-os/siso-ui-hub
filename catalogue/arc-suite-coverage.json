@@ -1,0 +1,3467 @@
+{
+  "license": "MIT/free only; source tier gate",
+  "targets": 129,
+  "uniqueSourceFamilies": 126,
+  "packages": {
+    "atoms": 54,
+    "blocks": 63,
+    "charts": 12
+  },
+  "entries": [
+    {
+      "id": "accordion--Faq",
+      "family": "accordion",
+      "title": "Accordion",
+      "variant": "Faq",
+      "package": "blocks",
+      "scale": "component",
+      "description": "Progressively reveal supporting information in place.",
+      "categories": [
+        "disclosure"
+      ],
+      "source": "https://uiarc.dev/components/accordion",
+      "exports": [
+        "Accordion"
+      ],
+      "use": [
+        "FAQ sections where only one answer should be open at a time.",
+        "Settings or help pages that group long content under short, scannable questions.",
+        "Page-level FAQs that need larger type, via size=\"lg\"."
+      ],
+      "avoid": [
+        "Use expandable-card for a single standalone disclosure such as a plan or order summary.",
+        "Use tabs when sections are peer views that people switch between.",
+        "Use onboarding-checklist when the rows are setup tasks to complete."
+      ]
+    },
+    {
+      "id": "action-button--default",
+      "family": "action-button",
+      "title": "Action button",
+      "variant": "default",
+      "package": "atoms",
+      "scale": "atom",
+      "description": "A compact button for frequent toolbar actions.",
+      "categories": [
+        "actions"
+      ],
+      "source": "https://uiarc.dev/components/action-button",
+      "exports": [
+        "ActionButton"
+      ],
+      "use": [
+        "A single async commit such as Save, Publish, or Submit where the result should appear on the button.",
+        "Call-to-action buttons where a trailing arrow invites the next step.",
+        "Flows where the button should reset to idle on its own after success, via resetAfterMs."
+      ],
+      "avoid": [
+        "Use button with loading for plain form submits that do not need a success state.",
+        "Use action-swap when the control toggles between lasting states.",
+        "Use hold-to-confirm when the action is destructive and needs a deliberate press."
+      ]
+    },
+    {
+      "id": "activity-heatmap--default",
+      "family": "activity-heatmap",
+      "title": "Activity heatmap",
+      "variant": "default",
+      "package": "charts",
+      "scale": "chart",
+      "description": "See a year of activity at a glance, one square per day.",
+      "categories": [
+        "data"
+      ],
+      "source": "https://uiarc.dev/components/activity-heatmap",
+      "exports": [
+        "ActivityHeatmap"
+      ],
+      "use": [
+        "Daily rhythm over a long range, like contributions or workouts.",
+        "Views where streaks and quiet weeks matter more than exact comparison."
+      ],
+      "avoid": [
+        "Use bar-chart when the exact comparison is the point.",
+        "Use calendar to pick dates."
+      ]
+    },
+    {
+      "id": "alert--BillingNotice",
+      "family": "alert",
+      "title": "Alert",
+      "variant": "BillingNotice",
+      "package": "atoms",
+      "scale": "atom",
+      "description": "A persistent message that helps people recover or continue.",
+      "categories": [
+        "feedback"
+      ],
+      "source": "https://uiarc.dev/components/alert",
+      "exports": [
+        "Alert"
+      ],
+      "use": [
+        "Persistent, in-flow messages about a page or form, such as an expiring card.",
+        "Status that changes over time, where one alert should morph between tones.",
+        "Dismissible notices that should collapse and close the gap below them."
+      ],
+      "avoid": [
+        "Use toast or toast-stack for transient results of an action.",
+        "Use empty-state when there is no content to show.",
+        "Use dialog when people must respond before continuing."
+      ]
+    },
+    {
+      "id": "animated-counter--default",
+      "family": "animated-counter",
+      "title": "Animated counter",
+      "variant": "default",
+      "package": "atoms",
+      "scale": "atom",
+      "description": "Give changing totals a clear sense of movement.",
+      "categories": [
+        "data"
+      ],
+      "source": "https://uiarc.dev/components/animated-counter",
+      "exports": [
+        "AnimatedCounter"
+      ],
+      "use": [
+        "Standalone numbers that change, such as totals, prices, or live counts.",
+        "Hero stats that roll up from zero when they scroll into view, via animateOnView."
+      ],
+      "avoid": [
+        "Use metric-card or stat-card when the number needs a card around it.",
+        "Use text-morph for words rather than numbers."
+      ]
+    },
+    {
+      "id": "announcement-bar--SiteBanner",
+      "family": "announcement-bar",
+      "title": "Announcement bar",
+      "variant": "SiteBanner",
+      "package": "blocks",
+      "scale": "component",
+      "description": "A top banner that rotates messages, counts down, and collapses smoothly when dismissed.",
+      "categories": [
+        "feedback"
+      ],
+      "source": "https://uiarc.dev/components/announcement-bar",
+      "exports": [
+        "clearAnnouncementDismissal",
+        "AnnouncementBar"
+      ],
+      "use": [
+        "Site-wide promotions, launches, or maintenance notices at the top of every page.",
+        "Rotating two to four short announcements in one slim bar.",
+        "A sale banner with a live countdown to its end."
+      ],
+      "avoid": [
+        "Use alert for a message tied to one section or form.",
+        "Use toast for feedback on something the visitor just did.",
+        "Use cookie-consent for consent choices."
+      ]
+    },
+    {
+      "id": "avatar-group--Collaborators",
+      "family": "avatar-group",
+      "title": "Avatar group",
+      "variant": "Collaborators",
+      "package": "atoms",
+      "scale": "atom",
+      "description": "Show a team or set of contributors in a small space.",
+      "categories": [
+        "data"
+      ],
+      "source": "https://uiarc.dev/components/avatar-group",
+      "exports": [
+        "AvatarGroup"
+      ],
+      "use": [
+        "Showing who owns or edits something in a header, card, or table cell.",
+        "Collaborator stacks where people join and leave while the page is open.",
+        "Long member lists that should collapse into a +N chip."
+      ],
+      "avoid": [
+        "Use avatar for a single person.",
+        "Use a list or sortable-data-table when people need to see every name and role."
+      ]
+    },
+    {
+      "id": "avatar--Owner",
+      "family": "avatar",
+      "title": "Avatar",
+      "variant": "Owner",
+      "package": "atoms",
+      "scale": "atom",
+      "description": "A compact identity marker for people and accounts.",
+      "categories": [
+        "data"
+      ],
+      "source": "https://uiarc.dev/components/avatar",
+      "exports": [
+        "Avatar"
+      ],
+      "use": [
+        "Showing one person next to their name, comment, or record.",
+        "Presence in a header or list, via the online or offline status dot.",
+        "Places where a photo may be missing and initials should stand in."
+      ],
+      "avoid": [
+        "Use avatar-group for several people with an overflow count.",
+        "Use user-menu when the avatar is the trigger for account actions."
+      ]
+    },
+    {
+      "id": "badge--default",
+      "family": "badge",
+      "title": "Badge",
+      "variant": "default",
+      "package": "atoms",
+      "scale": "atom",
+      "description": "A small label for status, category, or metadata.",
+      "categories": [
+        "data"
+      ],
+      "source": "https://uiarc.dev/components/badge",
+      "exports": [
+        "Badge"
+      ],
+      "use": [
+        "Short statuses next to titles or in table cells, such as Live, Draft, or Failed.",
+        "Counts or states that change in place and should morph instead of jump.",
+        "Tagging a row with one tone plus an optional icon."
+      ],
+      "avoid": [
+        "Use alert or toast when the message needs a full sentence.",
+        "Use chip-group when people toggle the values.",
+        "Use stat-card for a headline number with a trend."
+      ]
+    },
+    {
+      "id": "bar-chart--ActiveMinutes",
+      "family": "bar-chart",
+      "title": "Bar chart",
+      "variant": "ActiveMinutes",
+      "package": "charts",
+      "scale": "chart",
+      "description": "Compare one measure across days and scrub any bar for its value.",
+      "categories": [
+        "data"
+      ],
+      "source": "https://uiarc.dev/components/bar-chart",
+      "exports": [
+        "BarChart"
+      ],
+      "use": [
+        "One measure across days, weeks, or months, with an average line.",
+        "Charts with a range switch, where stable keys let bars morph between ranges."
+      ],
+      "avoid": [
+        "Use sparkline for a compact trend.",
+        "Use activity-heatmap for daily rhythm over a year."
+      ]
+    },
+    {
+      "id": "billing-toggle--ProPrice",
+      "family": "billing-toggle",
+      "title": "Billing toggle",
+      "variant": "ProPrice",
+      "package": "atoms",
+      "scale": "atom",
+      "description": "A monthly and yearly switch with a savings badge and prices that roll to the new amount.",
+      "categories": [
+        "inputs"
+      ],
+      "source": "https://uiarc.dev/components/billing-toggle",
+      "exports": [
+        "BillingToggle",
+        "BillingPrice"
+      ],
+      "use": [
+        "The billing period switch at the top of a pricing page.",
+        "Any price display that should roll to a new amount when a period or plan changes, using BillingPrice.",
+        "A small plan picker with a savings note, such as yearly versus lifetime."
+      ],
+      "avoid": [
+        "Use segmented-control for switching views or filters with no pricing meaning.",
+        "Use radio-group when options need descriptions or a vertical layout.",
+        "Use switch for a single on or off setting."
+      ]
+    },
+    {
+      "id": "blog-grid--default",
+      "family": "blog-grid",
+      "title": "Blog grid",
+      "variant": "default",
+      "package": "blocks",
+      "scale": "section",
+      "description": "A blog index with a featured post, category filter, post cards, pagination and an in-place reader.",
+      "categories": [
+        "blocks"
+      ],
+      "source": "https://uiarc.dev/components/blocks/blog-grid",
+      "exports": [
+        "BlogGrid",
+        "BlogGridBlock"
+      ],
+      "use": [
+        "A marketing site blog or journal index.",
+        "Resource hubs with a few categories and a featured story."
+      ],
+      "avoid": [
+        "Use changelog-page for release notes with versions.",
+        "Use a data table for large archives that need sorting and search."
+      ]
+    },
+    {
+      "id": "bottom-sheet--TripSheet",
+      "family": "bottom-sheet",
+      "title": "Bottom sheet",
+      "variant": "TripSheet",
+      "package": "blocks",
+      "scale": "component",
+      "description": "A sheet that rests at a peek or full height and follows your finger.",
+      "categories": [
+        "disclosure"
+      ],
+      "source": "https://uiarc.dev/components/bottom-sheet",
+      "exports": [
+        "BottomSheet",
+        "BottomSheetClose"
+      ],
+      "use": [
+        "Mobile-first secondary tasks such as details, filters, or share options.",
+        "Content that benefits from a peek height before expanding to nearly full screen.",
+        "Maps and media views where the sheet should be dragged between detents."
+      ],
+      "avoid": [
+        "Use dialog for interrupting decisions on any screen size.",
+        "Use drawer for side panels on wide desktop layouts.",
+        "Use popover for small anchored content that should not dim the page."
+      ]
+    },
+    {
+      "id": "breadcrumb--SettingsPath",
+      "family": "breadcrumb",
+      "title": "Breadcrumb",
+      "variant": "SettingsPath",
+      "package": "blocks",
+      "scale": "component",
+      "description": "Show where a page sits in a hierarchy.",
+      "categories": [
+        "disclosure"
+      ],
+      "source": "https://uiarc.dev/components/breadcrumb",
+      "exports": [
+        "Breadcrumb"
+      ],
+      "use": [
+        "Showing where a page sits in a hierarchy, such as Workspace, Settings, Billing.",
+        "Client-side paths like a file browser, where crumbs call onClick instead of navigating.",
+        "Paths that grow as people drill in, where new crumbs should slide in."
+      ],
+      "avoid": [
+        "Use tree-view when people need to browse the whole hierarchy.",
+        "Use tabs for switching between sibling views.",
+        "Use pagination for moving through pages of a list."
+      ]
+    },
+    {
+      "id": "brush-chart--default",
+      "family": "brush-chart",
+      "title": "Brush chart",
+      "variant": "default",
+      "package": "charts",
+      "scale": "chart",
+      "description": "A dense time series with an overview strip: drag a window to zoom, resize it by its handles, and read events in place.",
+      "categories": [
+        "data"
+      ],
+      "source": "https://uiarc.dev/components/brush-chart",
+      "exports": [
+        "BrushChart"
+      ],
+      "use": [
+        "Product analytics with a year or more of daily data.",
+        "Incident reviews where events need to be read against a metric.",
+        "Any chart where people ask to zoom into a stretch without losing context."
+      ],
+      "avoid": [
+        "Use line-chart for a few weeks of data or several series.",
+        "Use sparkline for a small inline trend without interaction.",
+        "Avoid it for data that dips below zero or needs a log scale."
+      ]
+    },
+    {
+      "id": "button-group--default",
+      "family": "button-group",
+      "title": "Button group",
+      "variant": "default",
+      "package": "atoms",
+      "scale": "atom",
+      "description": "Related actions joined into one surface with hairline dividers: a hover highlight glides between segments, the pressed one answers in place, and an attached menu can close the row.",
+      "categories": [
+        "actions"
+      ],
+      "source": "https://uiarc.dev/components/button-group",
+      "exports": [
+        "ButtonGroup"
+      ],
+      "use": [
+        "A small set of related actions on the same object, shown together in a header, toolbar or card footer.",
+        "Compact tool clusters such as zoom out, the current level and zoom in, or stacked map controls.",
+        "A primary action row, such as Reply, Reply all and Forward on a message."
+      ],
+      "avoid": [
+        "Use toggle-group or segmented-control when the segments are options that stay selected.",
+        "Use split-button when there is one main action and a few variants of it.",
+        "Use separate buttons when the actions are unrelated or one of them is much more important than the rest.",
+        "Use tabs for switching between views."
+      ]
+    },
+    {
+      "id": "button--default",
+      "family": "button",
+      "title": "Button",
+      "variant": "default",
+      "package": "atoms",
+      "scale": "atom",
+      "description": "A clear, responsive action with quiet secondary states.",
+      "categories": [
+        "actions"
+      ],
+      "source": "https://uiarc.dev/components/button",
+      "exports": [
+        "Button"
+      ],
+      "use": [
+        "Any single action on a page, form, or dialog, such as Save, Continue, or Cancel.",
+        "Actions whose label changes in place, like Save to Saved, where the width should spring instead of jump.",
+        "Short async work where a spinner on the button is enough feedback, via loading."
+      ],
+      "avoid": [
+        "Use action-button when the button itself should show pending and success states after an async commit.",
+        "Use split-button when one default action has two to five close variants.",
+        "Use hold-to-confirm for destructive actions that need more than a single click."
+      ]
+    },
+    {
+      "id": "calendar--DeliveryDate",
+      "family": "calendar",
+      "title": "Calendar",
+      "variant": "DeliveryDate",
+      "package": "blocks",
+      "scale": "component",
+      "description": "Browse dates in a clear, compact month view.",
+      "categories": [
+        "inputs"
+      ],
+      "source": "https://uiarc.dev/components/calendar",
+      "exports": [
+        "Calendar"
+      ],
+      "use": [
+        "Inline date picking where the month should stay visible, such as booking pages.",
+        "Picking one date with blocked days via minDate, maxDate, and disabledDates."
+      ],
+      "avoid": [
+        "Use date-picker for a form field that opens a calendar popover.",
+        "Use time-picker for times of day.",
+        "Use booking-pill for a full compact booking flow."
+      ]
+    },
+    {
+      "id": "card-stack--Shortlist",
+      "family": "card-stack",
+      "title": "Card stack",
+      "variant": "Shortlist",
+      "package": "blocks",
+      "scale": "component",
+      "description": "Review a deck one card at a time, with a throw and an undo.",
+      "categories": [
+        "data"
+      ],
+      "source": "https://uiarc.dev/components/card-stack",
+      "exports": [
+        "CardStack"
+      ],
+      "use": [
+        "One-by-one triage such as shortlisting, review queues, or onboarding picks.",
+        "Decks where swiping left or right should be undoable."
+      ],
+      "avoid": [
+        "Use a list or sortable-data-table when people compare items side by side.",
+        "Use carousel to browse items without deciding.",
+        "Use swipe-actions for quick actions on rows in a list."
+      ]
+    },
+    {
+      "id": "card--ProjectCard",
+      "family": "card",
+      "title": "Card",
+      "variant": "ProjectCard",
+      "package": "atoms",
+      "scale": "atom",
+      "description": "A contained group of related content and actions.",
+      "categories": [
+        "data"
+      ],
+      "source": "https://uiarc.dev/components/card",
+      "exports": [
+        "Card"
+      ],
+      "use": [
+        "Browsable items in a grid, such as projects, listings, or posts.",
+        "Items that should open into a larger quick look dialog without leaving the page, via details.",
+        "Content with media, an owner byline, and a status line that updates in place."
+      ],
+      "avoid": [
+        "Use expandable-card for inline disclosure without a dialog.",
+        "Use stat-card or metric-card for numbers.",
+        "Use dialog when the content has no card to grow from."
+      ]
+    },
+    {
+      "id": "carousel--Suites",
+      "family": "carousel",
+      "title": "Carousel",
+      "variant": "Suites",
+      "package": "blocks",
+      "scale": "component",
+      "description": "Browse a row of slides by dragging, flicking, or arrowing through them.",
+      "categories": [
+        "data"
+      ],
+      "source": "https://uiarc.dev/components/carousel",
+      "exports": [
+        "Carousel"
+      ],
+      "use": [
+        "A short set of peer items where neighbouring slides hint at more.",
+        "Galleries browsed by drag, flick, trackpad swipe, or keys.",
+        "Rotating highlights with a visible pause control, via interval."
+      ],
+      "avoid": [
+        "Use cover-flow for a showpiece gallery and photo-grid to show everything at once.",
+        "Use card-stack for deciding on items one at a time."
+      ]
+    },
+    {
+      "id": "changelog-feed--default",
+      "family": "changelog-feed",
+      "title": "Changelog feed",
+      "variant": "default",
+      "package": "blocks",
+      "scale": "section",
+      "description": "Release notes you can filter, open in place, and scroll through month by month.",
+      "categories": [
+        "blocks"
+      ],
+      "source": "https://uiarc.dev/components/blocks/changelog-feed",
+      "exports": [
+        "ChangelogFeed"
+      ],
+      "use": [
+        "A product changelog or release notes page grouped by month.",
+        "Release notes with type filters such as features, fixes, and improvements.",
+        "Changelogs that should offer an email subscribe action in the header."
+      ],
+      "avoid": [
+        "Use timeline for a short vertical list of events without filters.",
+        "Use accordion for plain expandable content that is not dated."
+      ]
+    },
+    {
+      "id": "chat-thread--SupportChat",
+      "family": "chat-thread",
+      "title": "Chat thread",
+      "variant": "SupportChat",
+      "package": "blocks",
+      "scale": "component",
+      "description": "A chat thread with grouped messages, reactions, read receipts, typing, and a composer with attachments.",
+      "categories": [
+        "data"
+      ],
+      "source": "https://uiarc.dev/components/chat-thread",
+      "exports": [
+        "formatBytes",
+        "ChatComposer",
+        "ChatThread"
+      ],
+      "use": [
+        "Customer support or in-app messaging with read receipts and typing state.",
+        "Team or DM threads that need reactions and image or file attachments.",
+        "Comment threads on an object where replies arrive live."
+      ],
+      "avoid": [
+        "Use log-stream for streaming system or build output.",
+        "Use timeline for an activity history rather than a two-way conversation.",
+        "Use textarea or mention-input when you only need the input box inside your own layout."
+      ]
+    },
+    {
+      "id": "checkbox--TermsCheckbox",
+      "family": "checkbox",
+      "title": "Checkbox",
+      "variant": "TermsCheckbox",
+      "package": "atoms",
+      "scale": "atom",
+      "description": "A binary choice with a precise, legible state.",
+      "categories": [
+        "inputs"
+      ],
+      "source": "https://uiarc.dev/components/checkbox",
+      "exports": [
+        "Checkbox"
+      ],
+      "use": [
+        "Independent on and off choices confirmed by a submit, such as accepting terms.",
+        "Parent rows that show a partial selection through the indeterminate state."
+      ],
+      "avoid": [
+        "Use switch for settings that apply immediately.",
+        "Use radio-group when only one option can be chosen.",
+        "Use chip-group for filter facets people toggle often."
+      ]
+    },
+    {
+      "id": "chip-group--TopicFilter",
+      "family": "chip-group",
+      "title": "Chip group",
+      "variant": "TopicFilter",
+      "package": "atoms",
+      "scale": "atom",
+      "description": "Filter by a few facets with chips that morph as you pick them.",
+      "categories": [
+        "inputs"
+      ],
+      "source": "https://uiarc.dev/components/chip-group",
+      "exports": [
+        "ChipGroup"
+      ],
+      "use": [
+        "Facet filters people toggle often, like topics or categories.",
+        "Single clearable choices shown as chips, via multiple={false}.",
+        "Long option sets folded behind a +N more chip with maxVisible."
+      ],
+      "avoid": [
+        "Use multi-select when space is tight.",
+        "Use checkbox in forms.",
+        "Use segmented-control for one choice among a few views."
+      ]
+    },
+    {
+      "id": "code-block--Example",
+      "family": "code-block",
+      "title": "Code block",
+      "variant": "Example",
+      "package": "blocks",
+      "scale": "component",
+      "description": "Present code with legible hierarchy and copy access.",
+      "categories": [
+        "data"
+      ],
+      "source": "https://uiarc.dev/components/code-block",
+      "exports": [
+        "CodeBlock"
+      ],
+      "use": [
+        "Documentation snippets and install commands with a copy button.",
+        "Long files that should collapse to a few lines with Show all, via maxLines."
+      ],
+      "avoid": [
+        "Use copy-button alone for a one-line value such as an API key.",
+        "Use text-stream for code arriving from an AI response in progress.",
+        "Use a full highlighter library when you need many languages."
+      ]
+    },
+    {
+      "id": "color-picker--BrandColor",
+      "family": "color-picker",
+      "title": "Color picker",
+      "variant": "BrandColor",
+      "package": "blocks",
+      "scale": "component",
+      "description": "A swatch that grows into a picker with format morphing, eyedropper, saved swatches, and contrast readout.",
+      "categories": [
+        "inputs"
+      ],
+      "source": "https://uiarc.dev/components/color-picker",
+      "exports": [
+        "toHex",
+        "parseColor",
+        "ColorPicker"
+      ],
+      "use": [
+        "Theme editors and brand settings where users choose an exact color.",
+        "Design tools that need hex, RGB, HSL, and OKLCH input plus opacity.",
+        "Any color choice where contrast against a background should be visible while picking."
+      ],
+      "avoid": [
+        "Use segmented-control or radio-group when the choice is between a few fixed colors.",
+        "Use input for a plain hex field with no visual picking.",
+        "Use chip-group for tagging items with a small preset palette."
+      ]
+    },
+    {
+      "id": "combobox--TimezoneField",
+      "family": "combobox",
+      "title": "Combobox",
+      "variant": "TimezoneField",
+      "package": "blocks",
+      "scale": "component",
+      "description": "Search and select from a list without leaving the field.",
+      "categories": [
+        "inputs"
+      ],
+      "source": "https://uiarc.dev/components/combobox",
+      "exports": [
+        "Combobox"
+      ],
+      "use": [
+        "Single-choice fields with long lists, such as time zones or countries.",
+        "Lists where people know the name and want to type, including aliases via keywords."
+      ],
+      "avoid": [
+        "Use select for a short list where typing adds nothing.",
+        "Use multi-select when several values can be chosen.",
+        "Use expanding-search when the search navigates instead of setting a value."
+      ]
+    },
+    {
+      "id": "command-palette--default",
+      "family": "command-palette",
+      "title": "Command palette",
+      "variant": "default",
+      "package": "blocks",
+      "scale": "section",
+      "description": "A complete keyboard driven action surface with search, grouped results, and shortcuts.",
+      "categories": [
+        "blocks"
+      ],
+      "source": "https://uiarc.dev/components/blocks/command-palette",
+      "exports": [
+        "CommandPalette"
+      ],
+      "use": [
+        "App-wide command search opened with Cmd or Ctrl plus K.",
+        "Jumping to pages, creating items, and running actions from one input.",
+        "Inline search panels that group results with shortcuts."
+      ],
+      "avoid": [
+        "Use combobox to pick a value inside a form.",
+        "Use dropdown-menu for a short list of actions.",
+        "Use expanding-search or search-field to search page content."
+      ]
+    },
+    {
+      "id": "comment-thread--default",
+      "family": "comment-thread",
+      "title": "Comment thread",
+      "variant": "default",
+      "package": "blocks",
+      "scale": "component",
+      "description": "Threaded comments with replies, reactions, mentions, inline edit, and resolve.",
+      "categories": [
+        "data"
+      ],
+      "source": "https://uiarc.dev/components/comment-thread",
+      "exports": [
+        "CommentThread"
+      ],
+      "use": [
+        "Review threads on documents, designs, tickets, or pull requests.",
+        "Discussions that need replies, reactions, mentions, and a resolved state.",
+        "Sidebars of feedback attached to one object."
+      ],
+      "avoid": [
+        "Use chat-thread for real-time back-and-forth conversation.",
+        "Use ai-chat for assistant conversations with streaming replies.",
+        "Use mention-input alone when you only need a composer."
+      ]
+    },
+    {
+      "id": "comparison-table--Alternatives",
+      "family": "comparison-table",
+      "title": "Comparison table",
+      "variant": "Alternatives",
+      "package": "blocks",
+      "scale": "section",
+      "description": "An us versus them table with a sticky header, a highlighted column, and a stacked phone view.",
+      "categories": [
+        "blocks"
+      ],
+      "source": "https://uiarc.dev/components/blocks/comparison-table",
+      "exports": [
+        "ComparisonTable",
+        "ComparisonTableBlock"
+      ],
+      "use": [
+        "Showing how your product stacks up against named alternatives.",
+        "Feature matrices with three to five columns and grouped rows."
+      ],
+      "avoid": [
+        "Use plan-comparison to compare your own pricing tiers.",
+        "Use a sortable data table for large datasets."
+      ]
+    },
+    {
+      "id": "confirm-morph--default",
+      "family": "confirm-morph",
+      "title": "Confirm morph",
+      "variant": "default",
+      "package": "atoms",
+      "scale": "atom",
+      "description": "A destructive button that morphs into an inline confirmation, a spinner, and a result with undo.",
+      "categories": [
+        "actions"
+      ],
+      "source": "https://uiarc.dev/components/confirm-morph",
+      "exports": [
+        "ConfirmMorph"
+      ],
+      "use": [
+        "Deleting a selection in a table or file list, right where the button sits.",
+        "Revoking access, removing a member, or discarding a draft.",
+        "Actions that should offer Undo in place after they finish."
+      ],
+      "avoid": [
+        "Use dialog when the consequence needs more than one line, or when typing a name to confirm is required.",
+        "Use action-button for safe async actions that need no question.",
+        "Use hold-to-confirm when an accidental tap must be nearly impossible."
+      ]
+    },
+    {
+      "id": "contact-section--Contact",
+      "family": "contact-section",
+      "title": "Contact section",
+      "variant": "Contact",
+      "package": "blocks",
+      "scale": "section",
+      "description": "A validated contact form that morphs into a confirmation, support channels, and office cards with local times.",
+      "categories": [
+        "blocks"
+      ],
+      "source": "https://uiarc.dev/components/blocks/contact-section",
+      "exports": [
+        "contactExampleChannels",
+        "contactExampleOffices",
+        "ContactSection",
+        "ContactSectionBlock"
+      ],
+      "use": [
+        "Contact pages and sections on marketing sites.",
+        "Sales or support pages that list several channels with response times.",
+        "Companies with offices in several time zones."
+      ],
+      "avoid": [
+        "Use support-widget for an in-app help launcher.",
+        "Use signup-form or login blocks for account flows."
+      ]
+    },
+    {
+      "id": "context-menu--default",
+      "family": "context-menu",
+      "title": "Context menu",
+      "variant": "default",
+      "package": "blocks",
+      "scale": "component",
+      "description": "Secondary actions kept close to the selected object.",
+      "categories": [
+        "actions"
+      ],
+      "source": "https://uiarc.dev/components/context-menu",
+      "exports": [
+        "ContextMenu",
+        "contextMenuExampleItems"
+      ],
+      "use": [
+        "Secondary actions on a file, card, or row where a visible menu button would add clutter.",
+        "Desktop-style right-click menus that also open from the keyboard with Shift+F10 or the ContextMenu key.",
+        "Short flat lists of item actions with one destructive option."
+      ],
+      "avoid": [
+        "Use dropdown-menu when the actions deserve a visible trigger.",
+        "Use swipe-actions for touch-first lists like an inbox.",
+        "Avoid it on targets that need their own click action, since a plain click on the target also opens the menu."
+      ]
+    },
+    {
+      "id": "copy-button--default",
+      "family": "copy-button",
+      "title": "Copy button",
+      "variant": "default",
+      "package": "atoms",
+      "scale": "atom",
+      "description": "Copy a value with immediate confirmation.",
+      "categories": [
+        "actions"
+      ],
+      "source": "https://uiarc.dev/components/copy-button",
+      "exports": [
+        "CopyButton"
+      ],
+      "use": [
+        "Next to API keys, install commands, links, or code snippets.",
+        "Icon-only copy controls in dense rows, with an accessible label.",
+        "Any copy action that should confirm Copied or Could not copy in place."
+      ],
+      "avoid": [
+        "Use split-button when copying has alternatives, such as Copy link and Copy as Markdown.",
+        "Use code-block for full code samples, which include their own copy control."
+      ]
+    },
+    {
+      "id": "countdown--LaunchCountdown",
+      "family": "countdown",
+      "title": "Countdown",
+      "variant": "LaunchCountdown",
+      "package": "atoms",
+      "scale": "atom",
+      "description": "A launch countdown with rolling digits that morphs into a live state at zero.",
+      "categories": [
+        "feedback"
+      ],
+      "source": "https://uiarc.dev/components/countdown",
+      "exports": [
+        "toEpoch",
+        "Countdown"
+      ],
+      "use": [
+        "A launch page or event hero counting to a keynote.",
+        "A compact deadline pill in a table row or banner.",
+        "Sale or registration windows that should flip to a Live now state on their own."
+      ],
+      "avoid": [
+        "Use stopwatch for time counting up from a start.",
+        "Use announcement-bar when the countdown sits inside a site-wide banner with a call to action."
+      ]
+    },
+    {
+      "id": "cta-section--Closing",
+      "family": "cta-section",
+      "title": "CTA section",
+      "variant": "Closing",
+      "package": "blocks",
+      "scale": "section",
+      "description": "A call to action as a centered closing section, a split beside a setup card that completes itself, or a dismissible banner.",
+      "categories": [
+        "blocks"
+      ],
+      "source": "https://uiarc.dev/components/blocks/cta-section",
+      "exports": [
+        "CtaSection",
+        "CtaSectionBlock"
+      ],
+      "use": [
+        "The last section of a landing page, asking for a trial or demo.",
+        "An in-page prompt beside a product visual that shows the outcome.",
+        "A slim promotional banner above content."
+      ],
+      "avoid": [
+        "The first screen of a page. Use Hero section.",
+        "Collecting an email. Use Newsletter signup.",
+        "A persistent site-wide notice. Use Announcement bar."
+      ]
+    },
+    {
+      "id": "date-picker--StartDateField",
+      "family": "date-picker",
+      "title": "Date picker",
+      "variant": "StartDateField",
+      "package": "blocks",
+      "scale": "component",
+      "description": "Choose a date without losing context.",
+      "categories": [
+        "inputs"
+      ],
+      "source": "https://uiarc.dev/components/date-picker",
+      "exports": [
+        "DatePicker"
+      ],
+      "use": [
+        "A date field in a form, such as a start or due date.",
+        "Dates with limits or blocked days, shown in a locale format."
+      ],
+      "avoid": [
+        "Use calendar inline when the grid should stay visible.",
+        "Use time-picker for times, and pair it with this for a full timestamp."
+      ]
+    },
+    {
+      "id": "date-range-picker--ReportRange",
+      "family": "date-range-picker",
+      "title": "Date range picker",
+      "variant": "ReportRange",
+      "package": "blocks",
+      "scale": "component",
+      "description": "A range picker that grows from its trigger into two months with presets and a stretching range highlight.",
+      "categories": [
+        "inputs"
+      ],
+      "source": "https://uiarc.dev/components/date-range-picker",
+      "exports": [
+        "defaultDateRangePresets",
+        "DateRangePicker"
+      ],
+      "use": [
+        "Analytics and reporting filters that need presets like Last 7 days or This quarter.",
+        "Booking or leave requests where a start and end day are picked together.",
+        "Toolbars where the picker must stay compact until opened."
+      ],
+      "avoid": [
+        "Use date-picker for a single date.",
+        "Use calendar when the month should stay visible on the page.",
+        "Use time-picker when the user chooses a time of day rather than days."
+      ]
+    },
+    {
+      "id": "dialog--RenameProject",
+      "family": "dialog",
+      "title": "Dialog",
+      "variant": "RenameProject",
+      "package": "blocks",
+      "scale": "component",
+      "description": "A focused surface for decisions that need attention.",
+      "categories": [
+        "disclosure"
+      ],
+      "source": "https://uiarc.dev/components/dialog",
+      "exports": [
+        "Dialog",
+        "DialogTrigger",
+        "DialogClose",
+        "DialogContent"
+      ],
+      "use": [
+        "Confirmations and decisions that must interrupt, such as Delete project.",
+        "Short forms like rename or invite that fit in one focused panel.",
+        "Flows where the dialog title changes between steps and should crossfade in place."
+      ],
+      "avoid": [
+        "Use drawer for long forms or detail panels that keep the page in context.",
+        "Use bottom-sheet for mobile-first secondary tasks with snap heights.",
+        "Use popover for light, non-modal content anchored to a trigger."
+      ]
+    },
+    {
+      "id": "donut-chart--TrafficSources",
+      "family": "donut-chart",
+      "title": "Donut chart",
+      "variant": "TrafficSources",
+      "package": "charts",
+      "scale": "chart",
+      "description": "A donut whose arcs morph between datasets, with the active value rolling into the center.",
+      "categories": [
+        "data"
+      ],
+      "source": "https://uiarc.dev/components/donut-chart",
+      "exports": [
+        "DonutChart"
+      ],
+      "use": [
+        "Traffic by source, spend by category, or storage by file type.",
+        "A dashboard card where the total and one highlighted share matter most.",
+        "Switching between datasets, such as this month and last month, with the same categories."
+      ],
+      "avoid": [
+        "Use bar-chart when precise comparison between parts matters or there are many parts.",
+        "Use gauge or usage-meter for a single value against a limit.",
+        "Use line-chart for change over time."
+      ]
+    },
+    {
+      "id": "drawer--default",
+      "family": "drawer",
+      "title": "Drawer",
+      "variant": "default",
+      "package": "blocks",
+      "scale": "component",
+      "description": "A temporary side surface for focused work.",
+      "categories": [
+        "disclosure"
+      ],
+      "source": "https://uiarc.dev/components/drawer",
+      "exports": [
+        "useDrawerItem",
+        "Drawer",
+        "DrawerTrigger",
+        "DrawerClose",
+        "DrawerContent"
+      ],
+      "use": [
+        "Side panels for filters, settings, or record details that keep the page in context.",
+        "Forms that are too long for a dialog but should not leave the current view.",
+        "Panels from any edge, via side, with drag-to-dismiss on the header."
+      ],
+      "avoid": [
+        "Use dialog for short decisions and confirmations.",
+        "Use bottom-sheet for mobile-first sheets with snap points.",
+        "Use popover for small anchored content that does not need a modal overlay."
+      ]
+    },
+    {
+      "id": "dropdown-menu--default",
+      "family": "dropdown-menu",
+      "title": "Dropdown menu",
+      "variant": "default",
+      "package": "blocks",
+      "scale": "component",
+      "description": "A focused list of actions anchored to a trigger.",
+      "categories": [
+        "actions"
+      ],
+      "source": "https://uiarc.dev/components/dropdown-menu",
+      "exports": [
+        "DropdownMenu"
+      ],
+      "use": [
+        "A list of commands behind a labelled button, such as Rename, Duplicate, and Delete.",
+        "Row or card actions where a visible trigger is clearer than right-click.",
+        "Short grouped menus with separators and one destructive item at the end."
+      ],
+      "avoid": [
+        "Use split-button when one command is the default.",
+        "Use context-menu for right-click actions on content.",
+        "Use user-menu for the account menu, and command-palette for searching many commands."
+      ]
+    },
+    {
+      "id": "empty-state--default",
+      "family": "empty-state",
+      "title": "Empty state",
+      "variant": "default",
+      "package": "blocks",
+      "scale": "component",
+      "description": "A useful next step when there is nothing to show yet.",
+      "categories": [
+        "data"
+      ],
+      "source": "https://uiarc.dev/components/empty-state",
+      "exports": [
+        "EmptyState"
+      ],
+      "use": [
+        "Empty lists, zero search results, and first-run views.",
+        "A view that should morph between states, such as empty and success, by changing props."
+      ],
+      "avoid": [
+        "Use skeleton while data is still loading.",
+        "Use alert for errors inside a page that still has content.",
+        "Use onboarding-checklist when first-run needs several steps."
+      ]
+    },
+    {
+      "id": "empty-states--default",
+      "family": "empty-states",
+      "title": "Empty states",
+      "variant": "default",
+      "package": "blocks",
+      "scale": "section",
+      "description": "Four empty states in one illustration whose shapes morph between scenes as you switch tabs.",
+      "categories": [
+        "blocks"
+      ],
+      "source": "https://uiarc.dev/components/blocks/empty-states",
+      "exports": [
+        "EmptyStates"
+      ],
+      "use": [
+        "A reference for no results, offline, inbox zero, and 404 moments with one shared illustration style.",
+        "Extracting one scene as a richer empty state for a key screen."
+      ],
+      "avoid": [
+        "Use empty-state for a simple empty state with an icon, text, and action.",
+        "Use onboarding-illustration for first-run screens that teach the product.",
+        "Use skeleton while content is still loading."
+      ]
+    },
+    {
+      "id": "expandable-card--PlanDetails",
+      "family": "expandable-card",
+      "title": "Expandable card",
+      "variant": "PlanDetails",
+      "package": "blocks",
+      "scale": "component",
+      "description": "Give a dense card more room when requested.",
+      "categories": [
+        "disclosure"
+      ],
+      "source": "https://uiarc.dev/components/expandable-card",
+      "exports": [
+        "ExpandableCard"
+      ],
+      "use": [
+        "A single summary card with optional details, like a plan, order, or log entry.",
+        "Cards whose summary line updates and should roll changed words in place."
+      ],
+      "avoid": [
+        "Use accordion for a list of mutually exclusive sections.",
+        "Use card when there is nothing to reveal.",
+        "Use card-stack for browsing several cards in one spot."
+      ]
+    },
+    {
+      "id": "expanding-button-group--default",
+      "family": "expanding-button-group",
+      "title": "Expanding button group",
+      "variant": "default",
+      "package": "atoms",
+      "scale": "atom",
+      "description": "Icon buttons in a compact group: the one you point at or focus grows to reveal its label while its neighbours slide aside, and an action confirms in place.",
+      "categories": [
+        "actions"
+      ],
+      "source": "https://uiarc.dev/components/expanding-button-group",
+      "exports": [
+        "ExpandingButtonGroup"
+      ],
+      "use": [
+        "A compact action bar on a message, file, or card where space is tight but labels should be one glance away.",
+        "Toolbars where actions finish in place and deserve a confirmation without a toast, such as Archive or Copy link."
+      ],
+      "avoid": [
+        "Use toggle-group or segmented-control when the buttons select a value instead of running an action.",
+        "Use plain labelled buttons when there are only one or two actions and space allows; hiding labels then costs clarity.",
+        "Use a dropdown menu for more than about six actions, or for actions that need descriptions."
+      ]
+    },
+    {
+      "id": "expanding-search--default",
+      "family": "expanding-search",
+      "title": "Expanding search",
+      "variant": "default",
+      "package": "atoms",
+      "scale": "atom",
+      "description": "An icon that morphs into a search field with results beneath it.",
+      "categories": [
+        "inputs"
+      ],
+      "source": "https://uiarc.dev/components/expanding-search",
+      "exports": [
+        "ExpandingSearch"
+      ],
+      "use": [
+        "Header or toolbar search where a full field would crowd the layout.",
+        "Quick navigation across local items with grouped results and recent suggestions."
+      ],
+      "avoid": [
+        "Use search-field to filter a visible list in place.",
+        "Use combobox to set a form value.",
+        "Use command-palette for searching commands across the app."
+      ]
+    },
+    {
+      "id": "faq-section--PricingFaq",
+      "family": "faq-section",
+      "title": "FAQ section",
+      "variant": "PricingFaq",
+      "package": "blocks",
+      "scale": "section",
+      "description": "FAQs as an accordion, a topic rail, or a searchable list that highlights matches.",
+      "categories": [
+        "blocks"
+      ],
+      "source": "https://uiarc.dev/components/blocks/faq-section",
+      "exports": [
+        "faqExampleItems",
+        "FaqSection",
+        "FaqSectionBlock"
+      ],
+      "use": [
+        "FAQ sections on pricing, product, and support pages.",
+        "Long FAQs that benefit from categories or live search."
+      ],
+      "avoid": [
+        "Use accordion for generic collapsible content that is not a question list.",
+        "Use a docs page when answers need code, images, or long structure."
+      ]
+    },
+    {
+      "id": "file-dropzone--AttachmentUpload",
+      "family": "file-dropzone",
+      "title": "File dropzone",
+      "variant": "AttachmentUpload",
+      "package": "blocks",
+      "scale": "component",
+      "description": "A generous target for dropping one or more files.",
+      "categories": [
+        "inputs"
+      ],
+      "source": "https://uiarc.dev/components/file-dropzone",
+      "exports": [
+        "formatFileSize",
+        "FileDropzone"
+      ],
+      "use": [
+        "Attachments and uploads with drag and drop plus a file picker.",
+        "Uploads that need per-file progress, retry, and cancel through onUpload."
+      ],
+      "avoid": [
+        "Use input with type file only when a native picker with no list is enough.",
+        "Use empty-state when the drop area is the only thing on an empty page and needs a larger call to action."
+      ]
+    },
+    {
+      "id": "file-upload--Attachments",
+      "family": "file-upload",
+      "title": "File upload",
+      "variant": "Attachments",
+      "package": "blocks",
+      "scale": "section",
+      "description": "A complete file selection flow with constraints, progress, and error feedback.",
+      "categories": [
+        "blocks"
+      ],
+      "source": "https://uiarc.dev/components/blocks/file-upload",
+      "exports": [
+        "FileUpload"
+      ],
+      "use": [
+        "Uploading files with per-file progress, retry, and remove.",
+        "Attachments that must be validated by type and size before upload.",
+        "Uploads that should abort when a file is removed, via the AbortSignal."
+      ],
+      "avoid": [
+        "Use file-dropzone when you only need to pick files without upload state.",
+        "Use import-mapper when uploaded data needs column mapping."
+      ]
+    },
+    {
+      "id": "filter-toolbar--IssueFilters",
+      "family": "filter-toolbar",
+      "title": "Filter toolbar",
+      "variant": "IssueFilters",
+      "package": "blocks",
+      "scale": "component",
+      "description": "Keep collection filters close and easy to reset.",
+      "categories": [
+        "data"
+      ],
+      "source": "https://uiarc.dev/components/filter-toolbar",
+      "exports": [
+        "FilterMenu",
+        "FilterToolbar"
+      ],
+      "use": [
+        "Faceted filtering above tables and lists, with removable chips.",
+        "Adding filters through a two step field then value menu.",
+        "Views that pair with sortable-data-table and pagination for a full list page."
+      ],
+      "avoid": [
+        "Use chip-group for a fixed set of toggles.",
+        "Use search-field for free text search.",
+        "Use multi-select when one field takes several values in a form."
+      ]
+    },
+    {
+      "id": "floating-button-group--default",
+      "family": "floating-button-group",
+      "title": "Floating button group",
+      "variant": "default",
+      "package": "atoms",
+      "scale": "atom",
+      "description": "Separate soft buttons in a quiet tray, with one shared highlight that morphs from button to button as you move, and a pressed state that settles in place.",
+      "categories": [
+        "actions"
+      ],
+      "source": "https://uiarc.dev/components/floating-button-group",
+      "exports": [
+        "FloatingButtonGroup"
+      ],
+      "use": [
+        "A floating editor or canvas toolbar with undo, redo, share and present.",
+        "A selection toolbar that appears over text or objects.",
+        "A vertical tools rail with zoom and insert actions."
+      ],
+      "avoid": [
+        "Use toggle-group for formatting toggles or alignment where the choice stays pressed.",
+        "Use segmented-control to switch between views.",
+        "Use split-button when there is one main action with a few alternatives.",
+        "Use a dropdown menu when there are more actions than fit in one row."
+      ]
+    },
+    {
+      "id": "gauge--DiskUsage",
+      "family": "gauge",
+      "title": "Gauge",
+      "variant": "DiskUsage",
+      "package": "charts",
+      "scale": "chart",
+      "description": "Show a value against a known range.",
+      "categories": [
+        "data"
+      ],
+      "source": "https://uiarc.dev/components/gauge",
+      "exports": [
+        "Gauge"
+      ],
+      "use": [
+        "One value against a known range, such as disk quota or health score.",
+        "Values with labelled bands, like Healthy, Filling up, and Critical."
+      ],
+      "avoid": [
+        "Use progress for task completion.",
+        "Use usage-meter for plan limits and activity-rings for several goals at once."
+      ]
+    },
+    {
+      "id": "hero-section--Hero",
+      "family": "hero-section",
+      "title": "Hero section",
+      "variant": "Hero",
+      "package": "blocks",
+      "scale": "section",
+      "description": "Three full screen SaaS heroes: a live dashboard rising from the bottom edge over a drifting mesh, a workflow graph that routes sample events node by node, and editorial type over a mesh gradient.",
+      "categories": [
+        "blocks"
+      ],
+      "source": "https://uiarc.dev/components/blocks/hero-section",
+      "exports": [
+        "HeroSection",
+        "HeroSectionBlock"
+      ],
+      "use": [
+        "The first section of a SaaS landing page, when the product screen is the pitch (Screenshot).",
+        "Developer tools, automation, and infrastructure products, where showing the product working is the pitch (Workflow).",
+        "A launch or download page that wants one confident line and a sense of atmosphere (Mesh)."
+      ],
+      "avoid": [
+        "Use page-header for titles inside app screens.",
+        "Use hero-signup when the goal is collecting an email in the first section."
+      ]
+    },
+    {
+      "id": "hold-to-confirm--default",
+      "family": "hold-to-confirm",
+      "title": "Hold to confirm",
+      "variant": "default",
+      "package": "atoms",
+      "scale": "atom",
+      "description": "Confirm a destructive action by holding, not tapping.",
+      "categories": [
+        "actions"
+      ],
+      "source": "https://uiarc.dev/components/hold-to-confirm",
+      "exports": [
+        "HoldToConfirm"
+      ],
+      "use": [
+        "Destructive actions like delete or revoke where the consequence is already visible on screen.",
+        "Replacing a confirm dialog with a deliberate press in compact settings rows.",
+        "Actions that should not fire on an accidental tap on touch devices."
+      ],
+      "avoid": [
+        "Use dialog when people need to read what will happen before confirming.",
+        "Use button or action-button for safe, easily undone actions.",
+        "Use swipe-actions for delete in touch lists."
+      ]
+    },
+    {
+      "id": "hover-card--Mention",
+      "family": "hover-card",
+      "title": "Hover card",
+      "variant": "Mention",
+      "package": "blocks",
+      "scale": "component",
+      "description": "Preview a person or link on hover or focus without leaving the page.",
+      "categories": [
+        "disclosure"
+      ],
+      "source": "https://uiarc.dev/components/hover-card",
+      "exports": [
+        "HoverCard",
+        "HoverCardProfile"
+      ],
+      "use": [
+        "Previews of people behind mentions, avatars, or author names.",
+        "Link or reference previews where the click must stay free for navigation.",
+        "Dense lists where moving between triggers should open cards almost instantly."
+      ],
+      "avoid": [
+        "Use tooltip for a plain text label.",
+        "Use popover when the content has buttons or inputs.",
+        "Use user-menu for the account menu on your own avatar."
+      ]
+    },
+    {
+      "id": "image-compare--Retouch",
+      "family": "image-compare",
+      "title": "Image compare",
+      "variant": "Retouch",
+      "package": "blocks",
+      "scale": "component",
+      "description": "Drag a divider across two images to see what changed.",
+      "categories": [
+        "data"
+      ],
+      "source": "https://uiarc.dev/components/image-compare",
+      "exports": [
+        "ImageCompare"
+      ],
+      "use": [
+        "Before and after visuals such as photo edits, redesigns, or cleanup results.",
+        "Top and bottom comparisons, via orientation vertical."
+      ],
+      "avoid": [
+        "Use carousel to browse many images.",
+        "Use resizable-panels to split live content rather than images."
+      ]
+    },
+    {
+      "id": "in-view-title--FeaturesHeader",
+      "family": "in-view-title",
+      "title": "In-view title",
+      "variant": "FeaturesHeader",
+      "package": "atoms",
+      "scale": "atom",
+      "description": "Bring a section title in as it scrolls into view.",
+      "categories": [
+        "text"
+      ],
+      "source": "https://uiarc.dev/components/in-view-title",
+      "exports": [
+        "InViewTitle"
+      ],
+      "use": [
+        "Section headings that should animate once they scroll into view.",
+        "Feature pages where each section title needs a consistent entrance style.",
+        "Headings that should replay on each entry, via once={false}."
+      ],
+      "avoid": [
+        "Use text-reveal for hero copy that animates on load.",
+        "Use scroll-highlight for a paragraph that follows scroll progress.",
+        "Use text-shimmer for status lines, not headings."
+      ]
+    },
+    {
+      "id": "inline-edit--default",
+      "family": "inline-edit",
+      "title": "Inline edit",
+      "variant": "default",
+      "package": "atoms",
+      "scale": "atom",
+      "description": "Rename in place: the text becomes a field without moving.",
+      "categories": [
+        "inputs"
+      ],
+      "source": "https://uiarc.dev/components/inline-edit",
+      "exports": [
+        "InlineEdit"
+      ],
+      "use": [
+        "Titles and descriptions read far more often than edited, like a project name.",
+        "Single fields that save on their own with optimistic updates and rollback."
+      ],
+      "avoid": [
+        "Use input or textarea in a form when several fields save together.",
+        "Use input when the field should always look editable."
+      ]
+    },
+    {
+      "id": "input--EmailField",
+      "family": "input",
+      "title": "Input",
+      "variant": "EmailField",
+      "package": "atoms",
+      "scale": "atom",
+      "description": "A single line field with clear labels and useful states.",
+      "categories": [
+        "inputs"
+      ],
+      "source": "https://uiarc.dev/components/input",
+      "exports": [
+        "Input"
+      ],
+      "use": [
+        "Any single-line text value in a form, such as name, email, or URL.",
+        "Fields whose helper or error copy changes as the person types, where the message should reword in place.",
+        "Plain form posts, since it forwards name and every native input attribute."
+      ],
+      "avoid": [
+        "Use textarea for multi-line text.",
+        "Use password-field, search-field, or number-field when the value has that shape.",
+        "Use inline-edit for a value shown as page text and edited in place."
+      ]
+    },
+    {
+      "id": "json-viewer--default",
+      "family": "json-viewer",
+      "title": "JSON viewer",
+      "variant": "default",
+      "package": "blocks",
+      "scale": "component",
+      "description": "A collapsible JSON tree with search, paging for long arrays, and copy value or path.",
+      "categories": [
+        "data"
+      ],
+      "source": "https://uiarc.dev/components/json-viewer",
+      "exports": [
+        "JsonViewer"
+      ],
+      "use": [
+        "Inspecting a JSON payload in a developer dashboard, such as webhooks or API logs.",
+        "Large nested objects where search and copy path save time.",
+        "Arrays with hundreds of items, which load in pages of pageSize."
+      ],
+      "avoid": [
+        "Use code-block to show JSON as formatted source for copying whole.",
+        "Use tree-view for folders, navigation, or other non-JSON hierarchies.",
+        "Use data-grid when the data is a flat list of records."
+      ]
+    },
+    {
+      "id": "line-chart--SignupsChart",
+      "family": "line-chart",
+      "title": "Line chart",
+      "variant": "SignupsChart",
+      "package": "charts",
+      "scale": "chart",
+      "description": "A multi-series line chart with a gliding crosshair, legend toggles, and paths that morph between ranges.",
+      "categories": [
+        "data"
+      ],
+      "source": "https://uiarc.dev/components/line-chart",
+      "exports": [
+        "LineChart"
+      ],
+      "use": [
+        "Traffic, revenue, or latency over days or weeks in a dashboard card.",
+        "Comparing this period against a previous period or target with a dashed series.",
+        "Charts that switch ranges (7d, 30d, 90d) and should morph rather than redraw."
+      ],
+      "avoid": [
+        "Use sparkline for a tiny inline trend with no axes or tooltip.",
+        "Use bar-chart for discrete categories or counts per bucket.",
+        "Use donut-chart when the question is the share of a whole, not change over time."
+      ]
+    },
+    {
+      "id": "login-centered--default",
+      "family": "login-centered",
+      "title": "Centered login",
+      "variant": "default",
+      "package": "blocks",
+      "scale": "section",
+      "description": "A passkey-first login card on a quiet ring backdrop that morphs through email and code.",
+      "categories": [
+        "blocks"
+      ],
+      "source": "https://uiarc.dev/components/blocks/login-centered",
+      "exports": [
+        "LoginCentered"
+      ],
+      "use": [
+        "The entry screen of an app with email code sign in.",
+        "Sign in cards that also offer passkeys and single sign-on.",
+        "Passwordless flows that should confirm the account before continuing.",
+        "Use login-centered, login-split, or login-immersive for password based layouts.",
+        "Use signup-form to create an account.",
+        "Use otp-input on its own when the code step lives in your own form.",
+        "Single sign-on providers are a labelled group of buttons with visible names.",
+        "Step changes and errors are announced through a visually hidden role=\"status\" region.",
+        "Provider marks are aria-hidden SVGs next to text labels.",
+        "The card morphs its height between the email, code, and done steps, sliding content in the direction of travel.",
+        "Reduced motion swaps the slide for a plain fade.",
+        "The card is a container; below 380px its padding and heading shrink, and the provider buttons tighten.",
+        "Below a 480px viewport the card corners soften to the panel radius.",
+        "A ResizeObserver drives the height morph between steps.",
+        "The signed in avatar reuses the same image through a layoutId, so the morph does not wait on a second image.",
+        "Use as the entry screen of an app.",
+        "Send and verify codes through your auth provider instead of demoCode, connect the passkey button to WebAuthn, and the provider buttons to OAuth.",
+        "Composes Arc input, otp-input, button, and avatar; exports SignInAccount and SignInMethod types.",
+        "[OTP input](https://uiarc.dev/components/blocks/otp-input/markdown): A six digit verification flow with paste support and keyboard navigation.",
+        "[Login and sign up: Centered](https://uiarc.dev/components/blocks/login/markdown): A passkey-first login card on a quiet ring backdrop that morphs through email and code.",
+        "[Login and sign up: Split](https://uiarc.dev/components/blocks/login/markdown): A full screen split login: an email-first form that morphs into a password step beside a photo.",
+        "[Login and sign up: Sign up](https://uiarc.dev/components/blocks/login/markdown): An account creation flow with field validation, password strength, and a clear completion state.",
+        "[Password field](https://uiarc.dev/components/password-field/markdown): Capture sensitive text with a visible reveal control."
+      ],
+      "avoid": [
+        "Use login-centered, login-split, or login-immersive for password based layouts.",
+        "Use signup-form to create an account.",
+        "Use otp-input on its own when the code step lives in your own form.",
+        "Single sign-on providers are a labelled group of buttons with visible names.",
+        "Step changes and errors are announced through a visually hidden role=\"status\" region.",
+        "Provider marks are aria-hidden SVGs next to text labels.",
+        "The card morphs its height between the email, code, and done steps, sliding content in the direction of travel.",
+        "Reduced motion swaps the slide for a plain fade.",
+        "The card is a container; below 380px its padding and heading shrink, and the provider buttons tighten.",
+        "Below a 480px viewport the card corners soften to the panel radius.",
+        "A ResizeObserver drives the height morph between steps.",
+        "The signed in avatar reuses the same image through a layoutId, so the morph does not wait on a second image.",
+        "Use as the entry screen of an app.",
+        "Send and verify codes through your auth provider instead of demoCode, connect the passkey button to WebAuthn, and the provider buttons to OAuth.",
+        "Composes Arc input, otp-input, button, and avatar; exports SignInAccount and SignInMethod types.",
+        "[OTP input](https://uiarc.dev/components/blocks/otp-input/markdown): A six digit verification flow with paste support and keyboard navigation.",
+        "[Login and sign up: Centered](https://uiarc.dev/components/blocks/login/markdown): A passkey-first login card on a quiet ring backdrop that morphs through email and code.",
+        "[Login and sign up: Split](https://uiarc.dev/components/blocks/login/markdown): A full screen split login: an email-first form that morphs into a password step beside a photo.",
+        "[Login and sign up: Sign up](https://uiarc.dev/components/blocks/login/markdown): An account creation flow with field validation, password strength, and a clear completion state.",
+        "[Password field](https://uiarc.dev/components/password-field/markdown): Capture sensitive text with a visible reveal control."
+      ]
+    },
+    {
+      "id": "logo-marquee--Customers",
+      "family": "logo-marquee",
+      "title": "Logo marquee",
+      "variant": "Customers",
+      "package": "blocks",
+      "scale": "section",
+      "description": "A quiet, continuously moving row of brand marks with a pause control.",
+      "categories": [
+        "blocks"
+      ],
+      "source": "https://uiarc.dev/components/blocks/logo-marquee",
+      "exports": [
+        "LogoMarquee"
+      ],
+      "use": [
+        "A customer or integration logo strip on a landing page.",
+        "Social proof sections with a heading and a short supporting line."
+      ],
+      "avoid": [
+        "Use integrations when each logo needs a description or a connect action.",
+        "Use testimonial-stage when quotes matter more than logos.",
+        "Use carousel when people should browse items by hand."
+      ]
+    },
+    {
+      "id": "mention-input--default",
+      "family": "mention-input",
+      "title": "Mention input",
+      "variant": "default",
+      "package": "blocks",
+      "scale": "component",
+      "description": "A textarea with @people and #channel mentions that act as single tokens, with suggestions at the caret.",
+      "categories": [
+        "inputs"
+      ],
+      "source": "https://uiarc.dev/components/mention-input",
+      "exports": [
+        "mentionText",
+        "serializeMentions",
+        "MentionInput"
+      ],
+      "use": [
+        "Comment and reply boxes where people are tagged with @ and should be notified by id.",
+        "Chat or task composers that link #channels or projects inline.",
+        "Any text field whose stored value needs structured references alongside the plain text."
+      ],
+      "avoid": [
+        "Use textarea for plain notes with no references.",
+        "Use tag-input when the tokens are a separate list rather than part of a sentence.",
+        "Use rich-text-editor when the text also needs headings, lists, or links."
+      ]
+    },
+    {
+      "id": "metric-card--Uptime",
+      "family": "metric-card",
+      "title": "Metric card",
+      "variant": "Uptime",
+      "package": "blocks",
+      "scale": "component",
+      "description": "A compact summary for a number that needs context.",
+      "categories": [
+        "data"
+      ],
+      "source": "https://uiarc.dev/components/metric-card",
+      "exports": [
+        "MetricCard"
+      ],
+      "use": [
+        "A single plain number with odometer style rolling digits, such as uptime or orders.",
+        "Numbers that update live and should roll in the direction they moved."
+      ],
+      "avoid": [
+        "Use stat-card for preformatted strings, trend arrows, tones, and icons.",
+        "Use sparkline when the trend over time matters more than the latest value.",
+        "Use animated-counter for a number without a card around it."
+      ]
+    },
+    {
+      "id": "money-input--TipAmount",
+      "family": "money-input",
+      "title": "Money input",
+      "variant": "TipAmount",
+      "package": "atoms",
+      "scale": "atom",
+      "description": "A currency field with live grouping, stable width, rolling digits, and minor-unit output.",
+      "categories": [
+        "inputs"
+      ],
+      "source": "https://uiarc.dev/components/money-input",
+      "exports": [
+        "MoneyInput"
+      ],
+      "use": [
+        "Payment, tip, transfer, or budget amounts entered by hand.",
+        "Invoice and expense forms where the currency may change.",
+        "Amount fields that benefit from quick add chips such as +$10."
+      ],
+      "avoid": [
+        "Use number-field for quantities and non currency numbers.",
+        "Use slider or price-ladder when people pick from a range rather than type.",
+        "Use scrub-input for design tool style drag adjustments."
+      ]
+    },
+    {
+      "id": "morph-select--TimezoneField",
+      "family": "morph-select",
+      "title": "Morph select",
+      "variant": "TimezoneField",
+      "package": "blocks",
+      "scale": "component",
+      "description": "A select whose trigger grows into the list, with a gliding highlight and type-ahead.",
+      "categories": [
+        "inputs"
+      ],
+      "source": "https://uiarc.dev/components/morph-select",
+      "exports": [
+        "MorphSelect"
+      ],
+      "use": [
+        "Form fields and property panels where one value is picked from a known list.",
+        "Grouped lists like time zones, assignees, or projects, with optional icons and meta.",
+        "Compact toolbars where the picker should look like a pill until opened."
+      ],
+      "avoid": [
+        "Use combobox when users type free text or the list is very long and remote.",
+        "Use multi-select when more than one value can be chosen.",
+        "Use dropdown-menu for actions rather than a stored value."
+      ]
+    },
+    {
+      "id": "multi-select--LabelPicker",
+      "family": "multi-select",
+      "title": "Multi-select",
+      "variant": "LabelPicker",
+      "package": "atoms",
+      "scale": "atom",
+      "description": "Select several values while keeping the field readable.",
+      "categories": [
+        "inputs"
+      ],
+      "source": "https://uiarc.dev/components/multi-select",
+      "exports": [
+        "MultiSelect"
+      ],
+      "use": [
+        "Picking several values from a fixed list in a compact field, such as labels or assignees.",
+        "Filters where the chosen values should show in the field with a +N overflow."
+      ],
+      "avoid": [
+        "Use chip-group when every option should stay visible.",
+        "Use tag-input for free-form values.",
+        "Use select for a single value."
+      ]
+    },
+    {
+      "id": "newsletter-signup--Newsletter",
+      "family": "newsletter-signup",
+      "title": "Newsletter signup",
+      "variant": "Newsletter",
+      "package": "blocks",
+      "scale": "section",
+      "description": "An email signup framed by a stack of past issues; subscribing drops the next issue, addressed to you, onto the front.",
+      "categories": [
+        "blocks"
+      ],
+      "source": "https://uiarc.dev/components/blocks/newsletter-signup",
+      "exports": [
+        "NewsletterSignup",
+        "NewsletterSignupBlock"
+      ],
+      "use": [
+        "Collecting emails for a newsletter, digest, or changelog that has real issues to show.",
+        "The end of a blog post or docs page."
+      ],
+      "avoid": [
+        "Account creation with a password. Use Signup form.",
+        "Longer forms with several fields. Use Contact section.",
+        "A launch waitlist at the top of a page. Use Hero signup."
+      ]
+    },
+    {
+      "id": "notification-center--HeaderBell",
+      "family": "notification-center",
+      "title": "Notification center",
+      "variant": "HeaderBell",
+      "package": "blocks",
+      "scale": "section",
+      "description": "A home for updates with read state, grouped information, and animated disclosure.",
+      "categories": [
+        "blocks"
+      ],
+      "source": "https://uiarc.dev/components/blocks/notification-center",
+      "exports": [
+        "NotificationCenter"
+      ],
+      "use": [
+        "A bell in the app header with an unread badge and an inbox of recent updates.",
+        "Notifications people can mark read, expand, and dismiss in bulk."
+      ],
+      "avoid": [
+        "Use toast-stack for transient messages that should disappear.",
+        "Use inbox-triage for a full-page inbox.",
+        "Use badge for a count without a panel."
+      ]
+    },
+    {
+      "id": "number-field--SeatsField",
+      "family": "number-field",
+      "title": "Number field",
+      "variant": "SeatsField",
+      "package": "atoms",
+      "scale": "atom",
+      "description": "Enter a bounded number with clear increment controls.",
+      "categories": [
+        "inputs"
+      ],
+      "source": "https://uiarc.dev/components/number-field",
+      "exports": [
+        "NumberField"
+      ],
+      "use": [
+        "Bounded quantities like seats, items, or prices where the exact number matters.",
+        "Values people nudge with steppers, arrow keys, or by dragging the label with scrub.",
+        "Numbers with units, using a prefix or a pluralizing suffix function."
+      ],
+      "avoid": [
+        "Use slider when the approximate position matters more than the exact number.",
+        "Use input for numeric strings like phone numbers or codes."
+      ]
+    },
+    {
+      "id": "otp-input--VerifyCode",
+      "family": "otp-input",
+      "title": "OTP input",
+      "variant": "VerifyCode",
+      "package": "atoms",
+      "scale": "atom",
+      "description": "A six digit verification flow with paste support and keyboard navigation.",
+      "categories": [
+        "blocks"
+      ],
+      "source": "https://uiarc.dev/components/blocks/otp-input",
+      "exports": [
+        "OtpInput"
+      ],
+      "use": [
+        "Verification codes from email or SMS.",
+        "Two-factor authentication code entry."
+      ],
+      "avoid": [
+        "Use password-field for secrets people type from memory.",
+        "Use input for any other text."
+      ]
+    },
+    {
+      "id": "page-header--default",
+      "family": "page-header",
+      "title": "Page header",
+      "variant": "default",
+      "package": "blocks",
+      "scale": "section",
+      "description": "A project page header that folds into a compact bar as you scroll, with tabs whose counts roll.",
+      "categories": [
+        "blocks"
+      ],
+      "source": "https://uiarc.dev/components/blocks/page-header",
+      "exports": [
+        "PageHeader"
+      ],
+      "use": [
+        "The top of a project, repository, or record page with breadcrumbs, status, people, and tabs.",
+        "Detail pages with long content where the header should fold into a compact bar as people scroll.",
+        "Headers that need a few primary actions plus an overflow menu for the rest."
+      ],
+      "avoid": [
+        "Use tabs and breadcrumb on their own when the page only needs navigation, not status and people.",
+        "Use workspace-sidebar for app-level navigation between sections.",
+        "Use settings-page for settings screens that need a section nav rather than a record header."
+      ]
+    },
+    {
+      "id": "pagination--Results",
+      "family": "pagination",
+      "title": "Pagination",
+      "variant": "Results",
+      "package": "blocks",
+      "scale": "component",
+      "description": "Move through a long collection with clear bounds.",
+      "categories": [
+        "data"
+      ],
+      "source": "https://uiarc.dev/components/pagination",
+      "exports": [
+        "Pagination"
+      ],
+      "use": [
+        "Paged server results and long tables.",
+        "Lists where the page should live in the URL or state and fetch on change."
+      ],
+      "avoid": [
+        "Use carousel for browsing slides.",
+        "Use timeline with maxHeight for a scrolling feed instead of pages."
+      ]
+    },
+    {
+      "id": "password-field--SignInPassword",
+      "family": "password-field",
+      "title": "Password field",
+      "variant": "SignInPassword",
+      "package": "atoms",
+      "scale": "atom",
+      "description": "Capture sensitive text with a visible reveal control.",
+      "categories": [
+        "inputs"
+      ],
+      "source": "https://uiarc.dev/components/password-field",
+      "exports": [
+        "defaultPasswordFieldMessages",
+        "PasswordField"
+      ],
+      "use": [
+        "Sign in forms and password confirmation fields.",
+        "Any secret the person may want to check by revealing it."
+      ],
+      "avoid": [
+        "Use password-strength when creating or changing a password.",
+        "Use input for non-secret values."
+      ]
+    },
+    {
+      "id": "password-strength--NewPasswordField",
+      "family": "password-strength",
+      "title": "Password strength",
+      "variant": "NewPasswordField",
+      "package": "atoms",
+      "scale": "atom",
+      "description": "Show how strong a new password is while it is typed.",
+      "categories": [
+        "inputs"
+      ],
+      "source": "https://uiarc.dev/components/password-strength",
+      "exports": [
+        "defaultPasswordStrengthMessages",
+        "countCodePoints",
+        "createPasswordRules",
+        "defaultPasswordRules",
+        "estimateStrength",
+        "PasswordStrength"
+      ],
+      "use": [
+        "Sign up and change password forms.",
+        "Password rules that should check off live as the person types."
+      ],
+      "avoid": [
+        "Use password-field for sign in.",
+        "Use progress for measurable progress unrelated to passwords."
+      ]
+    },
+    {
+      "id": "phone-input--ContactPhone",
+      "family": "phone-input",
+      "title": "Phone input",
+      "variant": "ContactPhone",
+      "package": "atoms",
+      "scale": "atom",
+      "description": "A phone field with a country picker, formatting as you type, and E.164 output.",
+      "categories": [
+        "inputs"
+      ],
+      "source": "https://uiarc.dev/components/phone-input",
+      "exports": [
+        "PHONE_COUNTRIES",
+        "flagOf",
+        "formatNational",
+        "parsePhoneNumber",
+        "formatPhoneNumber",
+        "PhoneInput"
+      ],
+      "use": [
+        "Sign up, checkout, and contact forms that need a phone number in E.164.",
+        "International audiences where the country and calling code must be clear.",
+        "Two factor setup before sending an SMS code."
+      ],
+      "avoid": [
+        "Use input with type=\"tel\" when you only store free text and never dial or text the number.",
+        "Use otp-input for the verification code itself.",
+        "Use a full metadata library if you need carrier or number type validation beyond length."
+      ]
+    },
+    {
+      "id": "plan-comparison--PricingPage",
+      "family": "plan-comparison",
+      "title": "Plan comparison",
+      "variant": "PricingPage",
+      "package": "blocks",
+      "scale": "section",
+      "description": "Compare meaningful differences between plans and billing periods.",
+      "categories": [
+        "blocks"
+      ],
+      "source": "https://uiarc.dev/components/blocks/plan-comparison",
+      "exports": [
+        "PlanComparison"
+      ],
+      "use": [
+        "Comparing two tiers side by side with a feature matrix.",
+        "Pricing pages that switch between monthly and yearly prices.",
+        "Long feature lists where people want to see only the differences."
+      ],
+      "avoid": [
+        "Use usage-pricing when price depends on seats or volume.",
+        "Use segmented-control alone for a simple billing toggle.",
+        "Use cancel-flow for downgrade or cancellation decisions."
+      ]
+    },
+    {
+      "id": "popover--ShareMenu",
+      "family": "popover",
+      "title": "Popover",
+      "variant": "ShareMenu",
+      "package": "blocks",
+      "scale": "component",
+      "description": "A small anchored surface for contextual information.",
+      "categories": [
+        "disclosure"
+      ],
+      "source": "https://uiarc.dev/components/popover",
+      "exports": [
+        "Popover",
+        "PopoverClose",
+        "PopoverTrigger",
+        "PopoverContent"
+      ],
+      "use": [
+        "Click-opened panels with interactive content, like share settings or a small filter form.",
+        "Non-modal helpers that should stay open while people interact with the rest of the page.",
+        "Custom pickers built from your own controls anchored to a button."
+      ],
+      "avoid": [
+        "Use tooltip for short hover labels.",
+        "Use hover-card for read-only previews that open on hover.",
+        "Use dialog when the choice must block the page, and dropdown-menu for a list of commands."
+      ]
+    },
+    {
+      "id": "progress--default",
+      "family": "progress",
+      "title": "Progress",
+      "variant": "default",
+      "package": "atoms",
+      "scale": "atom",
+      "description": "Show how much of a known task is complete.",
+      "categories": [
+        "feedback"
+      ],
+      "source": "https://uiarc.dev/components/progress",
+      "exports": [
+        "Progress"
+      ],
+      "use": [
+        "Determinate progress for uploads, imports, or long tasks.",
+        "Progress with a visible percentage and a check at completion, via showValue."
+      ],
+      "avoid": [
+        "Use skeleton while content is loading with no progress to report.",
+        "Use usage-meter for quota against a limit, and gauge for dashboard metrics.",
+        "Use stepper to show position in a multi-step flow."
+      ]
+    },
+    {
+      "id": "radio-cards--ShippingSpeed",
+      "family": "radio-cards",
+      "title": "Radio cards",
+      "variant": "ShippingSpeed",
+      "package": "atoms",
+      "scale": "atom",
+      "description": "Selectable option cards with a sliding selection ring, price and description slots, and radio keyboard behavior.",
+      "categories": [
+        "inputs"
+      ],
+      "source": "https://uiarc.dev/components/radio-cards",
+      "exports": [
+        "RadioCards"
+      ],
+      "use": [
+        "Choices where each option needs a description, price, or estimate to decide.",
+        "Plan, shipping, region, or size pickers inside checkout and setup flows.",
+        "Options that may be unavailable and need a visible reason."
+      ],
+      "avoid": [
+        "Use radio-group for short text-only options.",
+        "Use segmented-control for two to four view modes that switch content instantly.",
+        "Use select or combobox for long lists."
+      ]
+    },
+    {
+      "id": "radio-group--PlanPicker",
+      "family": "radio-group",
+      "title": "Radio group",
+      "variant": "PlanPicker",
+      "package": "atoms",
+      "scale": "atom",
+      "description": "Choose one option from a visible set.",
+      "categories": [
+        "inputs"
+      ],
+      "source": "https://uiarc.dev/components/radio-group",
+      "exports": [
+        "RadioGroup"
+      ],
+      "use": [
+        "Two to six mutually exclusive options that need descriptions, such as plans.",
+        "Form choices that should submit natively through name."
+      ],
+      "avoid": [
+        "Use segmented-control for short inline view options.",
+        "Use select for longer lists.",
+        "Use checkbox when several options can be on at once."
+      ]
+    },
+    {
+      "id": "resizable-panels--default",
+      "family": "resizable-panels",
+      "title": "Resizable panels",
+      "variant": "default",
+      "package": "blocks",
+      "scale": "component",
+      "description": "Trade space between panes by dragging the divider between them.",
+      "categories": [
+        "disclosure"
+      ],
+      "source": "https://uiarc.dev/components/resizable-panels",
+      "exports": [
+        "ResizablePanel",
+        "ResizablePanels"
+      ],
+      "use": [
+        "Editor, mail, or dashboard layouts where people trade space between side-by-side panes.",
+        "Sidebars that should collapse by dragging or flicking toward the edge.",
+        "Layouts whose pane sizes should persist between visits via onLayoutChange."
+      ],
+      "avoid": [
+        "Use drawer for a panel that slides over the page.",
+        "Use tabs when only one pane needs to be visible at a time.",
+        "Avoid it for vertical splits, since it is horizontal only."
+      ]
+    },
+    {
+      "id": "rich-text-editor--PostEditor",
+      "family": "rich-text-editor",
+      "title": "Rich text editor",
+      "variant": "PostEditor",
+      "package": "blocks",
+      "scale": "component",
+      "description": "A lightweight editor with markdown shortcuts, a floating toolbar, a slash menu, and HTML and markdown output.",
+      "categories": [
+        "inputs"
+      ],
+      "source": "https://uiarc.dev/components/rich-text-editor",
+      "exports": [
+        "normalizeUrl",
+        "markdownToHtml",
+        "htmlToMarkdown",
+        "sanitizeHtml",
+        "RichTextEditor"
+      ],
+      "use": [
+        "Comments, notes, and posts where people expect markdown shortcuts and a selection toolbar.",
+        "Forms that need Markdown or clean HTML out without pulling in a full editor framework.",
+        "Short to medium documents with headings, lists, quotes, and code blocks."
+      ],
+      "avoid": [
+        "Use textarea for plain text, or mention-input when the only rich part is tagging people.",
+        "Use inline-edit for a single line edited in place.",
+        "Use code-block to display code, not to write prose."
+      ]
+    },
+    {
+      "id": "ridgeline--default",
+      "family": "ridgeline",
+      "title": "Ridgeline",
+      "variant": "default",
+      "package": "charts",
+      "scale": "chart",
+      "description": "Overlapping distributions, one ridge per group: hover to lift a ridge and read its quartiles, switch datasets and every curve morphs.",
+      "categories": [
+        "data"
+      ],
+      "source": "https://uiarc.dev/components/ridgeline",
+      "exports": [
+        "Ridgeline"
+      ],
+      "use": [
+        "Seasonal or categorical distributions such as temperatures by month or response times by region.",
+        "Showing where two groups differ in shape, such as bimodal winters."
+      ],
+      "avoid": [
+        "Use beeswarm when each individual observation matters.",
+        "Use bar-chart when only one summary number per group matters."
+      ]
+    },
+    {
+      "id": "scroll-area--default",
+      "family": "scroll-area",
+      "title": "Scroll area",
+      "variant": "default",
+      "package": "blocks",
+      "scale": "component",
+      "description": "A native scroll container with thin overlay scrollbars and edge fades that appear only when content overflows.",
+      "categories": [
+        "disclosure"
+      ],
+      "source": "https://uiarc.dev/components/scroll-area",
+      "exports": [
+        "ScrollArea"
+      ],
+      "use": [
+        "Panels, sidebars, and popovers whose content can outgrow their box.",
+        "Horizontal strips of cards or chips that need mouse-wheel scrolling and snap points.",
+        "Places where platform scrollbars look heavy but native scrolling must be kept."
+      ],
+      "avoid": [
+        "Use carousel when items should page one at a time with controls.",
+        "Do not wrap the whole page; let the document scroll natively.",
+        "Use data-grid for large tabular data; it virtualizes its own scroll."
+      ]
+    },
+    {
+      "id": "search-field--MemberFilter",
+      "family": "search-field",
+      "title": "Search field",
+      "variant": "MemberFilter",
+      "package": "atoms",
+      "scale": "atom",
+      "description": "A recognizable search entry point with clear affordances.",
+      "categories": [
+        "inputs"
+      ],
+      "source": "https://uiarc.dev/components/search-field",
+      "exports": [
+        "SearchField"
+      ],
+      "use": [
+        "Filtering a visible list or table in place.",
+        "Toolbar search where the query should be clearable with one click."
+      ],
+      "avoid": [
+        "Use expanding-search for compact header search with results.",
+        "Use combobox when the search sets a form value.",
+        "Use filter-toolbar when search sits with other filters and sort."
+      ]
+    },
+    {
+      "id": "segmented-control--RangeToggle",
+      "family": "segmented-control",
+      "title": "Segmented control",
+      "variant": "RangeToggle",
+      "package": "atoms",
+      "scale": "atom",
+      "description": "Switch between a small set of related views.",
+      "categories": [
+        "inputs"
+      ],
+      "source": "https://uiarc.dev/components/segmented-control",
+      "exports": [
+        "SegmentedControl"
+      ],
+      "use": [
+        "Two to five short view options like Day, Week, and Month.",
+        "Toolbar toggles between layouts or modes that apply immediately."
+      ],
+      "avoid": [
+        "Use tabs when each option swaps a panel of content.",
+        "Use radio-group in forms or when options need descriptions.",
+        "Use switch for a single on and off setting."
+      ]
+    },
+    {
+      "id": "select--RegionSelect",
+      "family": "select",
+      "title": "Select",
+      "variant": "RegionSelect",
+      "package": "atoms",
+      "scale": "atom",
+      "description": "A compact choice field with a keyboard friendly menu.",
+      "categories": [
+        "inputs"
+      ],
+      "source": "https://uiarc.dev/components/select",
+      "exports": [
+        "Select"
+      ],
+      "use": [
+        "A short fixed list where typing is not needed, such as region or sort order.",
+        "Form fields that should submit natively through Radix's hidden select via name."
+      ],
+      "avoid": [
+        "Use combobox for long or searchable lists.",
+        "Use multi-select when several values can be chosen.",
+        "Use segmented-control for two to four choices that should stay visible."
+      ]
+    },
+    {
+      "id": "shortcut-recorder--SearchShortcut",
+      "family": "shortcut-recorder",
+      "title": "Shortcut recorder",
+      "variant": "SearchShortcut",
+      "package": "atoms",
+      "scale": "atom",
+      "description": "Record key combinations into key caps, with conflict warnings, Kbd, and a searchable cheatsheet.",
+      "categories": [
+        "inputs"
+      ],
+      "source": "https://uiarc.dev/components/shortcut-recorder",
+      "exports": [
+        "keyId",
+        "normalizeShortcut",
+        "shortcutFromEvent",
+        "matchesShortcut",
+        "shortcutTokens",
+        "formatShortcut",
+        "usePlatform",
+        "usePressedKeys",
+        "ShortcutKbd",
+        "Kbd",
+        "ShortcutKeys",
+        "ShortcutRecorder",
+        "ShortcutList"
+      ],
+      "use": [
+        "Settings pages where people remap keyboard shortcuts.",
+        "A keyboard shortcut cheatsheet or help dialog, with ShortcutList.",
+        "Inline key hints in menus, tooltips, and docs, with ShortcutKbd or ShortcutKeys."
+      ],
+      "avoid": [
+        "Use ShortcutKbd alone when shortcuts are fixed and only need to be shown.",
+        "Use command-palette to let people run actions by name rather than bind keys.",
+        "Avoid it on touch-only products where no hardware keyboard is expected."
+      ]
+    },
+    {
+      "id": "sign-in--SignInPage",
+      "family": "sign-in",
+      "title": "Sign in",
+      "variant": "SignInPage",
+      "package": "blocks",
+      "scale": "section",
+      "description": "A sign in card that morphs from email to a six digit code to your account.",
+      "categories": [
+        "blocks"
+      ],
+      "source": "https://uiarc.dev/components/blocks/sign-in",
+      "exports": [
+        "SignIn"
+      ],
+      "use": [
+        "The entry screen of an app with email code sign in.",
+        "Sign in cards that also offer passkeys and single sign-on.",
+        "Passwordless flows that should confirm the account before continuing.",
+        "Use login-centered, login-split, or login-immersive for password based layouts.",
+        "Use signup-form to create an account.",
+        "Use otp-input on its own when the code step lives in your own form.",
+        "Single sign-on providers are a labelled group of buttons with visible names.",
+        "Step changes and errors are announced through a visually hidden role=\"status\" region.",
+        "Provider marks are aria-hidden SVGs next to text labels.",
+        "The card morphs its height between the email, code, and done steps, sliding content in the direction of travel.",
+        "Reduced motion swaps the slide for a plain fade.",
+        "The card is a container; below 380px its padding and heading shrink, and the provider buttons tighten.",
+        "Below a 480px viewport the card corners soften to the panel radius.",
+        "A ResizeObserver drives the height morph between steps.",
+        "The signed in avatar reuses the same image through a layoutId, so the morph does not wait on a second image.",
+        "Use as the entry screen of an app.",
+        "Send and verify codes through your auth provider instead of demoCode, connect the passkey button to WebAuthn, and the provider buttons to OAuth.",
+        "Composes Arc input, otp-input, button, and avatar; exports SignInAccount and SignInMethod types.",
+        "[OTP input](https://uiarc.dev/components/blocks/otp-input/markdown): A six digit verification flow with paste support and keyboard navigation.",
+        "[Login and sign up: Centered](https://uiarc.dev/components/blocks/login/markdown): A passkey-first login card on a quiet ring backdrop that morphs through email and code.",
+        "[Login and sign up: Split](https://uiarc.dev/components/blocks/login/markdown): A full screen split login: an email-first form that morphs into a password step beside a photo.",
+        "[Login and sign up: Sign up](https://uiarc.dev/components/blocks/login/markdown): An account creation flow with field validation, password strength, and a clear completion state.",
+        "[Password field](https://uiarc.dev/components/password-field/markdown): Capture sensitive text with a visible reveal control."
+      ],
+      "avoid": [
+        "Use login-centered, login-split, or login-immersive for password based layouts.",
+        "Use signup-form to create an account.",
+        "Use otp-input on its own when the code step lives in your own form.",
+        "Single sign-on providers are a labelled group of buttons with visible names.",
+        "Step changes and errors are announced through a visually hidden role=\"status\" region.",
+        "Provider marks are aria-hidden SVGs next to text labels.",
+        "The card morphs its height between the email, code, and done steps, sliding content in the direction of travel.",
+        "Reduced motion swaps the slide for a plain fade.",
+        "The card is a container; below 380px its padding and heading shrink, and the provider buttons tighten.",
+        "Below a 480px viewport the card corners soften to the panel radius.",
+        "A ResizeObserver drives the height morph between steps.",
+        "The signed in avatar reuses the same image through a layoutId, so the morph does not wait on a second image.",
+        "Use as the entry screen of an app.",
+        "Send and verify codes through your auth provider instead of demoCode, connect the passkey button to WebAuthn, and the provider buttons to OAuth.",
+        "Composes Arc input, otp-input, button, and avatar; exports SignInAccount and SignInMethod types.",
+        "[OTP input](https://uiarc.dev/components/blocks/otp-input/markdown): A six digit verification flow with paste support and keyboard navigation.",
+        "[Login and sign up: Centered](https://uiarc.dev/components/blocks/login/markdown): A passkey-first login card on a quiet ring backdrop that morphs through email and code.",
+        "[Login and sign up: Split](https://uiarc.dev/components/blocks/login/markdown): A full screen split login: an email-first form that morphs into a password step beside a photo.",
+        "[Login and sign up: Sign up](https://uiarc.dev/components/blocks/login/markdown): An account creation flow with field validation, password strength, and a clear completion state.",
+        "[Password field](https://uiarc.dev/components/password-field/markdown): Capture sensitive text with a visible reveal control."
+      ]
+    },
+    {
+      "id": "signature-pad--SignContract",
+      "family": "signature-pad",
+      "title": "Signature pad",
+      "variant": "SignContract",
+      "package": "blocks",
+      "scale": "component",
+      "description": "Smooth ink that thins with speed, with undo, replay, and PNG or SVG export.",
+      "categories": [
+        "inputs"
+      ],
+      "source": "https://uiarc.dev/components/signature-pad",
+      "exports": [
+        "PAD_WIDTH",
+        "getStrokeOutline",
+        "outlineToPath",
+        "strokePath",
+        "signatureToSvg",
+        "signatureToPng",
+        "SignaturePad"
+      ],
+      "use": [
+        "Contracts, delivery confirmations, and consent forms that need a drawn signature.",
+        "Initials or quick sketches where pen pressure and natural stroke width matter.",
+        "Flows that need a clean, cropped PNG or SVG of the signature."
+      ],
+      "avoid": [
+        "Use input for a typed name when a legal drawn signature is not required.",
+        "Use file-upload when the user already has a scanned signature image.",
+        "Use hold-to-confirm for a simple deliberate confirmation without a signature artifact."
+      ]
+    },
+    {
+      "id": "signup-form--default",
+      "family": "signup-form",
+      "title": "Sign up form",
+      "variant": "default",
+      "package": "blocks",
+      "scale": "section",
+      "description": "An account creation flow with field validation, password strength, and a clear completion state.",
+      "categories": [
+        "blocks"
+      ],
+      "source": "https://uiarc.dev/components/blocks/signup-form",
+      "exports": [
+        "SignupForm"
+      ],
+      "use": [
+        "The entry screen of an app with email code sign in.",
+        "Sign in cards that also offer passkeys and single sign-on.",
+        "Passwordless flows that should confirm the account before continuing.",
+        "Use login-centered, login-split, or login-immersive for password based layouts.",
+        "Use signup-form to create an account.",
+        "Use otp-input on its own when the code step lives in your own form.",
+        "Single sign-on providers are a labelled group of buttons with visible names.",
+        "Step changes and errors are announced through a visually hidden role=\"status\" region.",
+        "Provider marks are aria-hidden SVGs next to text labels.",
+        "The card morphs its height between the email, code, and done steps, sliding content in the direction of travel.",
+        "Reduced motion swaps the slide for a plain fade.",
+        "The card is a container; below 380px its padding and heading shrink, and the provider buttons tighten.",
+        "Below a 480px viewport the card corners soften to the panel radius.",
+        "A ResizeObserver drives the height morph between steps.",
+        "The signed in avatar reuses the same image through a layoutId, so the morph does not wait on a second image.",
+        "Use as the entry screen of an app.",
+        "Send and verify codes through your auth provider instead of demoCode, connect the passkey button to WebAuthn, and the provider buttons to OAuth.",
+        "Composes Arc input, otp-input, button, and avatar; exports SignInAccount and SignInMethod types.",
+        "[OTP input](https://uiarc.dev/components/blocks/otp-input/markdown): A six digit verification flow with paste support and keyboard navigation.",
+        "[Login and sign up: Centered](https://uiarc.dev/components/blocks/login/markdown): A passkey-first login card on a quiet ring backdrop that morphs through email and code.",
+        "[Login and sign up: Split](https://uiarc.dev/components/blocks/login/markdown): A full screen split login: an email-first form that morphs into a password step beside a photo.",
+        "[Login and sign up: Sign up](https://uiarc.dev/components/blocks/login/markdown): An account creation flow with field validation, password strength, and a clear completion state.",
+        "[Password field](https://uiarc.dev/components/password-field/markdown): Capture sensitive text with a visible reveal control."
+      ],
+      "avoid": [
+        "Use login-centered, login-split, or login-immersive for password based layouts.",
+        "Use signup-form to create an account.",
+        "Use otp-input on its own when the code step lives in your own form.",
+        "Single sign-on providers are a labelled group of buttons with visible names.",
+        "Step changes and errors are announced through a visually hidden role=\"status\" region.",
+        "Provider marks are aria-hidden SVGs next to text labels.",
+        "The card morphs its height between the email, code, and done steps, sliding content in the direction of travel.",
+        "Reduced motion swaps the slide for a plain fade.",
+        "The card is a container; below 380px its padding and heading shrink, and the provider buttons tighten.",
+        "Below a 480px viewport the card corners soften to the panel radius.",
+        "A ResizeObserver drives the height morph between steps.",
+        "The signed in avatar reuses the same image through a layoutId, so the morph does not wait on a second image.",
+        "Use as the entry screen of an app.",
+        "Send and verify codes through your auth provider instead of demoCode, connect the passkey button to WebAuthn, and the provider buttons to OAuth.",
+        "Composes Arc input, otp-input, button, and avatar; exports SignInAccount and SignInMethod types.",
+        "[OTP input](https://uiarc.dev/components/blocks/otp-input/markdown): A six digit verification flow with paste support and keyboard navigation.",
+        "[Login and sign up: Centered](https://uiarc.dev/components/blocks/login/markdown): A passkey-first login card on a quiet ring backdrop that morphs through email and code.",
+        "[Login and sign up: Split](https://uiarc.dev/components/blocks/login/markdown): A full screen split login: an email-first form that morphs into a password step beside a photo.",
+        "[Login and sign up: Sign up](https://uiarc.dev/components/blocks/login/markdown): An account creation flow with field validation, password strength, and a clear completion state.",
+        "[Password field](https://uiarc.dev/components/password-field/markdown): Capture sensitive text with a visible reveal control."
+      ]
+    },
+    {
+      "id": "site-footer--Footer",
+      "family": "site-footer",
+      "title": "Site footer",
+      "variant": "Footer",
+      "package": "blocks",
+      "scale": "section",
+      "description": "A website footer with link columns and newsletter, a minimal layout, and a large fading Arc mark.",
+      "categories": [
+        "blocks"
+      ],
+      "source": "https://uiarc.dev/components/blocks/site-footer",
+      "exports": [
+        "siteFooterExampleColumns",
+        "SiteFooter",
+        "SiteFooterBlock"
+      ],
+      "use": [
+        "The closing section of a marketing, docs, or product site.",
+        "Footers that need a newsletter signup and a status link.",
+        "Minimal one-row footers for app shells and docs."
+      ],
+      "avoid": [
+        "Use a plain row with breadcrumb or links inside signed-in app screens.",
+        "Use contact-section when the main goal is to start a conversation."
+      ]
+    },
+    {
+      "id": "site-header--default",
+      "family": "site-header",
+      "title": "Site header",
+      "variant": "default",
+      "package": "blocks",
+      "scale": "section",
+      "description": "A sticky website header that turns solid on scroll, with a gliding active link, mega menu panels, and a mobile sheet.",
+      "categories": [
+        "blocks"
+      ],
+      "source": "https://uiarc.dev/components/blocks/site-header",
+      "exports": [
+        "ArcMark",
+        "siteHeaderExampleItems",
+        "SiteHeader",
+        "SiteHeaderBlock"
+      ],
+      "use": [
+        "The top bar of a marketing site, landing page, or docs site.",
+        "Product sites with grouped destinations that deserve a mega menu with a feature card.",
+        "Pages that need one clear sign-up action in the header."
+      ],
+      "avoid": [
+        "Use workspace-sidebar or sidebar-rail inside a signed-in app.",
+        "Use morph-nav for a single-surface animated navigation with built-in search.",
+        "Use menubar for application commands."
+      ]
+    },
+    {
+      "id": "skeleton--default",
+      "family": "skeleton",
+      "title": "Skeleton",
+      "variant": "default",
+      "package": "atoms",
+      "scale": "atom",
+      "description": "Reserve space while content is still loading.",
+      "categories": [
+        "feedback"
+      ],
+      "source": "https://uiarc.dev/components/skeleton",
+      "exports": [
+        "Skeleton"
+      ],
+      "use": [
+        "Loading states for content whose shape is known, like a profile or comment.",
+        "Swapping a placeholder into real content with a crossfade and height spring."
+      ],
+      "avoid": [
+        "Use progress when you can report a percentage.",
+        "Use empty-state when loading finished and there is nothing to show.",
+        "Use text-shimmer for an AI thinking or status line."
+      ]
+    },
+    {
+      "id": "slider--PriceFilter",
+      "family": "slider",
+      "title": "Slider",
+      "variant": "PriceFilter",
+      "package": "atoms",
+      "scale": "atom",
+      "description": "Pick a value or a range on a track that follows your finger.",
+      "categories": [
+        "inputs"
+      ],
+      "source": "https://uiarc.dev/components/slider",
+      "exports": [
+        "Slider"
+      ],
+      "use": [
+        "Approximate values like volume, opacity, or a price range.",
+        "Ranges with two thumbs, labelled marks, and a formatted readout."
+      ],
+      "avoid": [
+        "Use number-field when the exact number matters.",
+        "Use progress to show a value people cannot change."
+      ]
+    },
+    {
+      "id": "slope-chart--Channels",
+      "family": "slope-chart",
+      "title": "Slope chart",
+      "variant": "Channels",
+      "package": "charts",
+      "scale": "chart",
+      "description": "Before and after on two axes: lines draw in, rank moves sit beside each value, and switching datasets slides every line to its new slope.",
+      "categories": [
+        "data"
+      ],
+      "source": "https://uiarc.dev/components/slope-chart",
+      "exports": [
+        "SlopeChart"
+      ],
+      "use": [
+        "Showing which items rose, which fell, and how the order changed between two periods.",
+        "Replacing a grouped bar chart when the change is the story."
+      ],
+      "avoid": [
+        "Use line-chart for three or more moments.",
+        "Use bar-chart when only the latest values matter.",
+        "Avoid more than about ten items; labels start to crowd."
+      ]
+    },
+    {
+      "id": "slot-text--default",
+      "family": "slot-text",
+      "title": "Slot text",
+      "variant": "default",
+      "package": "atoms",
+      "scale": "atom",
+      "description": "Text and numbers that spin into their new value on staggered slot machine reels.",
+      "categories": [
+        "special"
+      ],
+      "source": "https://uiarc.dev/components/slot-text",
+      "exports": [
+        "SlotText"
+      ],
+      "use": [
+        "Pricing toggles, KPI cards, dashboards changing period.",
+        "Launch moments, raffles, and reveals."
+      ],
+      "avoid": [
+        "Values that update several times a second.",
+        "Long sentences; reels are for short values."
+      ]
+    },
+    {
+      "id": "sortable-data-table--Projects",
+      "family": "sortable-data-table",
+      "title": "Sortable data table",
+      "variant": "Projects",
+      "package": "blocks",
+      "scale": "component",
+      "description": "Compare structured records with sortable columns.",
+      "categories": [
+        "data"
+      ],
+      "source": "https://uiarc.dev/components/sortable-data-table",
+      "exports": [
+        "SortableDataTable"
+      ],
+      "use": [
+        "Tabular records people sort and select, such as projects, invoices, or users.",
+        "Tables that need Shift-click range selection and a count line with Clear."
+      ],
+      "avoid": [
+        "Use data-grid when people edit cells like a spreadsheet.",
+        "Use timeline for chronological activity.",
+        "Use reorderable-list when people set the order by hand."
+      ]
+    },
+    {
+      "id": "sparkline--Signups",
+      "family": "sparkline",
+      "title": "Sparkline",
+      "variant": "Signups",
+      "package": "charts",
+      "scale": "chart",
+      "description": "Show a compact trend beside a value.",
+      "categories": [
+        "data"
+      ],
+      "source": "https://uiarc.dev/components/sparkline",
+      "exports": [
+        "Sparkline"
+      ],
+      "use": [
+        "A compact trend inside a card, table row, or KPI tile.",
+        "Small charts people can scrub by pointer or keyboard to read past values."
+      ],
+      "avoid": [
+        "Use bar-chart for comparing discrete periods with axes.",
+        "Use stat-card or metric-card when only the latest value matters."
+      ]
+    },
+    {
+      "id": "split-button--default",
+      "family": "split-button",
+      "title": "Split button",
+      "variant": "default",
+      "package": "atoms",
+      "scale": "atom",
+      "description": "A primary action with a menu of nearby alternatives.",
+      "categories": [
+        "actions"
+      ],
+      "source": "https://uiarc.dev/components/split-button",
+      "exports": [
+        "SplitButton"
+      ],
+      "use": [
+        "One default action with a few close variants, like Merge with Squash and Rebase.",
+        "Export or share actions where one format is the usual pick and others sit behind the chevron.",
+        "Copy actions that swap the label to Copied in place while offering alternatives."
+      ],
+      "avoid": [
+        "Use dropdown-menu when there is no default action and every option is equal.",
+        "Use button when there are no alternatives.",
+        "Use context-menu for actions tied to a piece of content rather than a toolbar."
+      ]
+    },
+    {
+      "id": "stats-band--Numbers",
+      "family": "stats-band",
+      "title": "Stats band",
+      "variant": "Numbers",
+      "package": "blocks",
+      "scale": "section",
+      "description": "Headline numbers that count up in view, each with a tiny visual that proves it and a context line on hover, plain or in a hairline grid.",
+      "categories": [
+        "blocks"
+      ],
+      "source": "https://uiarc.dev/components/blocks/stats-band",
+      "exports": [
+        "StatsBand",
+        "StatsBandBlock"
+      ],
+      "use": [
+        "Marketing pages that back a claim with a few numbers.",
+        "About and investor pages with headline metrics."
+      ],
+      "avoid": [
+        "Live product metrics with trends. Use Metric card or Metrics dashboard.",
+        "More than four numbers. Split them or use a table."
+      ]
+    },
+    {
+      "id": "stepper--default",
+      "family": "stepper",
+      "title": "Stepper",
+      "variant": "default",
+      "package": "atoms",
+      "scale": "atom",
+      "description": "Show where a person is in a multi-step flow and what is done.",
+      "categories": [
+        "feedback"
+      ],
+      "source": "https://uiarc.dev/components/stepper",
+      "exports": [
+        "Stepper"
+      ],
+      "use": [
+        "Showing position in a strict multi-step flow like checkout or account setup.",
+        "Flows where people can jump back to completed steps, via onStepSelect.",
+        "Vertical timelines of steps with descriptions and error states."
+      ],
+      "avoid": [
+        "Use multi-step-form when you also want the step content, navigation, and success state.",
+        "Use onboarding-checklist for loosely ordered tasks.",
+        "Use progress when a single percentage is enough."
+      ]
+    },
+    {
+      "id": "streamgraph--default",
+      "family": "streamgraph",
+      "title": "Streamgraph",
+      "variant": "default",
+      "package": "charts",
+      "scale": "chart",
+      "description": "Layered streams on a wiggle baseline that morph between ranges, with a layer you can isolate and read week by week.",
+      "categories": [
+        "data"
+      ],
+      "source": "https://uiarc.dev/components/streamgraph",
+      "exports": [
+        "Streamgraph"
+      ],
+      "use": [
+        "Showing the changing share of topics, channels, or genres week by week.",
+        "Storytelling dashboards where the shape of seasonality and spikes is the point.",
+        "Comparing ranges where a morph between them explains what changed."
+      ],
+      "avoid": [
+        "Use line-chart when exact values or comparisons between series matter.",
+        "Use bar-chart for a few periods or categories.",
+        "Avoid it for data with negative values; streams stack magnitudes."
+      ]
+    },
+    {
+      "id": "swipe-actions--default",
+      "family": "swipe-actions",
+      "title": "Swipe actions",
+      "variant": "default",
+      "package": "blocks",
+      "scale": "component",
+      "description": "Reveal row actions with a swipe, or from the same actions in a menu.",
+      "categories": [
+        "actions"
+      ],
+      "source": "https://uiarc.dev/components/swipe-actions",
+      "exports": [
+        "SwipeActions",
+        "SwipeActionsRow"
+      ],
+      "use": [
+        "Touch-first triage lists such as mail, notifications, or tasks.",
+        "Rows with one or two quick actions per side, like Archive and Mark unread.",
+        "Lists where a full swipe should commit the main action and the row should animate away."
+      ],
+      "avoid": [
+        "Use context-menu or dropdown-menu for desktop-first tables.",
+        "Use reorderable-list when rows need to be dragged vertically.",
+        "Use hold-to-confirm for a single destructive action outside a list."
+      ]
+    },
+    {
+      "id": "switch--NotificationsToggle",
+      "family": "switch",
+      "title": "Switch",
+      "variant": "NotificationsToggle",
+      "package": "atoms",
+      "scale": "atom",
+      "description": "A tactile toggle for settings that take effect immediately.",
+      "categories": [
+        "inputs"
+      ],
+      "source": "https://uiarc.dev/components/switch",
+      "exports": [
+        "Switch"
+      ],
+      "use": [
+        "Settings that take effect as soon as they are flipped, like notifications.",
+        "Settings lists where each row is one on and off preference."
+      ],
+      "avoid": [
+        "Use checkbox when the choice waits for a submit button.",
+        "Use segmented-control for a choice between named options.",
+        "Use theme-switch for a light and dark toggle."
+      ]
+    },
+    {
+      "id": "tabs--ProjectTabs",
+      "family": "tabs",
+      "title": "Tabs",
+      "variant": "ProjectTabs",
+      "package": "atoms",
+      "scale": "atom",
+      "description": "Switch between related content in the same context.",
+      "categories": [
+        "disclosure"
+      ],
+      "source": "https://uiarc.dev/components/tabs",
+      "exports": [
+        "Tabs",
+        "TabsList",
+        "TabsTrigger",
+        "TabsContent"
+      ],
+      "use": [
+        "Peer views of the same object, such as Overview, Activity, and Settings.",
+        "Panels with different heights, where the container should spring between them.",
+        "Long tab sets that need to scroll horizontally with edge buttons."
+      ],
+      "avoid": [
+        "Use segmented-control for a compact value toggle not tied to panels.",
+        "Use accordion for stacked sections people read in order.",
+        "Use liquid-tab-bar or morph-nav for app-level navigation between routes."
+      ]
+    },
+    {
+      "id": "tag-input--TopicsField",
+      "family": "tag-input",
+      "title": "Tag input",
+      "variant": "TopicsField",
+      "package": "atoms",
+      "scale": "atom",
+      "description": "Turn short text values into removable tags.",
+      "categories": [
+        "inputs"
+      ],
+      "source": "https://uiarc.dev/components/tag-input",
+      "exports": [
+        "TagInput"
+      ],
+      "use": [
+        "Free-form lists of short values like tags, keywords, or emails.",
+        "Fields where people add values by pressing Enter or comma."
+      ],
+      "avoid": [
+        "Use multi-select or chip-group when values come from a fixed list.",
+        "Use input for a single value."
+      ]
+    },
+    {
+      "id": "text-morph--default",
+      "family": "text-morph",
+      "title": "Text morph",
+      "variant": "default",
+      "package": "atoms",
+      "scale": "atom",
+      "description": "Morph a label into its next state, letter by letter.",
+      "categories": [
+        "text"
+      ],
+      "source": "https://uiarc.dev/components/text-morph",
+      "exports": [
+        "TextMorph"
+      ],
+      "use": [
+        "Status words that change a few letters at a time, such as Follow and Following.",
+        "Custom buttons or badges that need a morphing label without the rest of the button.",
+        "Inline counters or short state labels that should glide instead of jump."
+      ],
+      "avoid": [
+        "Use word-rotate for a sentence with one cycling word.",
+        "Use button or action-swap when you want the morph plus button behaviour.",
+        "Avoid it for text that wraps, since it always renders a single line."
+      ]
+    },
+    {
+      "id": "text-reveal--Hero",
+      "family": "text-reveal",
+      "title": "Text reveal",
+      "variant": "Hero",
+      "package": "atoms",
+      "scale": "atom",
+      "description": "Reveal a short piece of content with restrained motion.",
+      "categories": [
+        "text"
+      ],
+      "source": "https://uiarc.dev/components/text-reveal",
+      "exports": [
+        "TextReveal"
+      ],
+      "use": [
+        "Above-the-fold hero headlines that animate on page load.",
+        "Landing page intros where text must appear on first paint even if scripts are slow."
+      ],
+      "avoid": [
+        "Use in-view-title for section titles further down the page.",
+        "Use scroll-highlight for a key paragraph that reveals with scroll.",
+        "Use word-rotate when one word in the headline should cycle."
+      ]
+    },
+    {
+      "id": "text-shimmer--default",
+      "family": "text-shimmer",
+      "title": "Text shimmer",
+      "variant": "default",
+      "package": "atoms",
+      "scale": "atom",
+      "description": "Show ongoing work with a calm light across the words.",
+      "categories": [
+        "text"
+      ],
+      "source": "https://uiarc.dev/components/text-shimmer",
+      "exports": [
+        "TextShimmer"
+      ],
+      "use": [
+        "AI thinking or loading labels such as Generating summary.",
+        "Short status lines that should show ongoing work and settle when done."
+      ],
+      "avoid": [
+        "Use text-stream for the response text itself.",
+        "Use skeleton for content placeholders and progress for measurable progress."
+      ]
+    },
+    {
+      "id": "textarea--BioField",
+      "family": "textarea",
+      "title": "Textarea",
+      "variant": "BioField",
+      "package": "atoms",
+      "scale": "atom",
+      "description": "A multiline field for notes, descriptions, and longer text.",
+      "categories": [
+        "inputs"
+      ],
+      "source": "https://uiarc.dev/components/textarea",
+      "exports": [
+        "Textarea"
+      ],
+      "use": [
+        "Free-form multi-line text like bios, comments, or feedback.",
+        "Fields with a live character count, which rolls its digits in the helper row."
+      ],
+      "avoid": [
+        "Use input for single-line values.",
+        "Use inline-edit with multiline for a description edited in place on a page.",
+        "Use tag-input when the text is really a list of short values."
+      ]
+    },
+    {
+      "id": "theme-switch-eclipse--default",
+      "family": "theme-switch",
+      "title": "Eclipse",
+      "variant": "Eclipse",
+      "package": "atoms",
+      "scale": "atom",
+      "description": "The next appearance crosses the page like an eclipse.",
+      "categories": [
+        "actions"
+      ],
+      "source": "https://uiarc.dev/components/theme-switch-eclipse",
+      "exports": [
+        "ThemeSwitch"
+      ],
+      "use": [
+        "Marketing or showcase pages where the theme change should feel like an event.",
+        "Layouts where a directional sweep across the page reads naturally."
+      ],
+      "avoid": [
+        "Use theme-switch-rise for everyday product chrome where a calmer change fits.",
+        "Use theme-switch-split when the button sits in the center and direction should not matter."
+      ]
+    },
+    {
+      "id": "theme-switch-rise--default",
+      "family": "theme-switch",
+      "title": "Rise",
+      "variant": "Rise",
+      "package": "atoms",
+      "scale": "atom",
+      "description": "The next appearance rises into place.",
+      "categories": [
+        "actions"
+      ],
+      "source": "https://uiarc.dev/components/theme-switch-rise",
+      "exports": [
+        "ThemeSwitch"
+      ],
+      "use": [
+        "Product chrome and dashboards where the theme change should be calm.",
+        "Icon-only toggles in a top bar, as the library's own header uses it."
+      ],
+      "avoid": [
+        "Use theme-switch-eclipse for a dramatic change on a showcase page.",
+        "Use user-menu when theme belongs with account settings."
+      ]
+    },
+    {
+      "id": "theme-switch-split--default",
+      "family": "theme-switch",
+      "title": "Split",
+      "variant": "Split",
+      "package": "atoms",
+      "scale": "atom",
+      "description": "The next appearance opens from a slim center seam.",
+      "categories": [
+        "actions"
+      ],
+      "source": "https://uiarc.dev/components/theme-switch-split",
+      "exports": [
+        "ThemeSwitch"
+      ],
+      "use": [
+        "Centered layouts where the theme should open symmetrically from a middle seam.",
+        "Pages where the switch position varies, since the split does not depend on where the button sits."
+      ],
+      "avoid": [
+        "Use theme-switch for a reveal that grows from the button itself.",
+        "Use theme-switch-rise for the calmest option in product UI."
+      ]
+    },
+    {
+      "id": "theme-switch--default",
+      "family": "theme-switch",
+      "title": "Theme switcher",
+      "variant": "default",
+      "package": "atoms",
+      "scale": "atom",
+      "description": "Four smooth ways to move between light and dark appearance.",
+      "categories": [
+        "actions"
+      ],
+      "source": "https://uiarc.dev/components/theme-switch",
+      "exports": [
+        "ThemeSwitch"
+      ],
+      "use": [
+        "A single light and dark toggle in an app or marketing top bar.",
+        "Pages that want to run their own view transition from the button's position."
+      ],
+      "avoid": [
+        "Use user-menu when theme choice, including system, belongs inside an account menu.",
+        "Use theme-switch-rise for quiet product chrome, or theme-switch-eclipse for a dramatic showcase change."
+      ]
+    },
+    {
+      "id": "time-picker--MeetingTime",
+      "family": "time-picker",
+      "title": "Time picker",
+      "variant": "MeetingTime",
+      "package": "blocks",
+      "scale": "component",
+      "description": "Choose a time with sensible keyboard behavior.",
+      "categories": [
+        "inputs"
+      ],
+      "source": "https://uiarc.dev/components/time-picker",
+      "exports": [
+        "TimePicker"
+      ],
+      "use": [
+        "Picking a time of day at a fixed interval, such as meetings or reminders.",
+        "Fields that show 12-hour times but store 24-hour HH:mm values."
+      ],
+      "avoid": [
+        "Use date-picker for dates, pairing the two for a timestamp.",
+        "Use time-dial for a more tactile, showcase time selection.",
+        "Use select when only a few named times are allowed."
+      ]
+    },
+    {
+      "id": "timeline--default",
+      "family": "timeline",
+      "title": "Timeline",
+      "variant": "default",
+      "package": "blocks",
+      "scale": "component",
+      "description": "Follow what happened, newest first, grouped by day.",
+      "categories": [
+        "data"
+      ],
+      "source": "https://uiarc.dev/components/timeline",
+      "exports": [
+        "Timeline"
+      ],
+      "use": [
+        "Project history, audit logs, and deploy streams where recency matters.",
+        "Live feeds where new updates slide in at the top.",
+        "Rows that expand in place to show logs or detail."
+      ],
+      "avoid": [
+        "Use sortable-data-table when people sort or compare.",
+        "Use stepper for progress through fixed steps."
+      ]
+    },
+    {
+      "id": "toast-stack--App",
+      "family": "toast-stack",
+      "title": "Toast stack",
+      "variant": "App",
+      "package": "blocks",
+      "scale": "component",
+      "description": "Stack short results at the edge until you reach for them.",
+      "categories": [
+        "feedback"
+      ],
+      "source": "https://uiarc.dev/components/toast-stack",
+      "exports": [
+        "ToastStackProvider",
+        "useToastStack",
+        "ToastStack"
+      ],
+      "use": [
+        "App-wide notifications for async results, errors, and undo.",
+        "Loading toasts that morph into success or error when work finishes.",
+        "Toasts with an action button, like View or Undo."
+      ],
+      "avoid": [
+        "Use toast for a single locally controlled confirmation.",
+        "Use alert for persistent messages tied to a page.",
+        "Use notification-center for a history people can come back to."
+      ]
+    },
+    {
+      "id": "toast--SavedToast",
+      "family": "toast",
+      "title": "Toast",
+      "variant": "SavedToast",
+      "package": "blocks",
+      "scale": "component",
+      "description": "Brief confirmation for a completed background action.",
+      "categories": [
+        "feedback"
+      ],
+      "source": "https://uiarc.dev/components/toast",
+      "exports": [
+        "Toast"
+      ],
+      "use": [
+        "A single success confirmation, like Changes saved, controlled with local state.",
+        "Demos or small apps that do not need a toast queue."
+      ],
+      "avoid": [
+        "Use toast-stack for app-wide notifications with types, actions, updates, and stacking.",
+        "Use alert for persistent messages that should stay in the page flow."
+      ]
+    },
+    {
+      "id": "tooltip--default",
+      "family": "tooltip",
+      "title": "Tooltip",
+      "variant": "default",
+      "package": "atoms",
+      "scale": "atom",
+      "description": "Short supporting text for unfamiliar controls.",
+      "categories": [
+        "disclosure"
+      ],
+      "source": "https://uiarc.dev/components/tooltip",
+      "exports": [
+        "Tooltip"
+      ],
+      "use": [
+        "One-line labels on icon-only buttons in toolbars.",
+        "Revealing the full text of truncated labels on hover or focus.",
+        "Dense toolbars where moving between icons should show labels instantly after the first one."
+      ],
+      "avoid": [
+        "Use popover for anything with links or controls inside.",
+        "Use hover-card for rich previews such as a person or link.",
+        "Avoid it for information people must see on touch devices, where hover does not exist."
+      ]
+    },
+    {
+      "id": "tree-view--Files",
+      "family": "tree-view",
+      "title": "Tree view",
+      "variant": "Files",
+      "package": "blocks",
+      "scale": "component",
+      "description": "Navigate nested folders and structured content.",
+      "categories": [
+        "data"
+      ],
+      "source": "https://uiarc.dev/components/tree-view",
+      "exports": [
+        "TreeView"
+      ],
+      "use": [
+        "Files, folders, and nested categories people expand and select.",
+        "Side panels next to code-block or a detail view where selection drives content.",
+        "Hierarchies that need full keyboard navigation with arrow keys."
+      ],
+      "avoid": [
+        "Use accordion for a few collapsible sections of content.",
+        "Use breadcrumb to show the path to the current page."
+      ]
+    },
+    {
+      "id": "treemap--Revenue",
+      "family": "treemap",
+      "title": "Treemap",
+      "variant": "Revenue",
+      "package": "charts",
+      "scale": "chart",
+      "description": "A squarified treemap: click to drill and the tiles grow to fill the view, with a breadcrumb back and metrics that morph every tile.",
+      "categories": [
+        "data"
+      ],
+      "source": "https://uiarc.dev/components/treemap",
+      "exports": [
+        "Treemap"
+      ],
+      "use": [
+        "Many parts where the biggest ones matter and people drill for detail.",
+        "Showing size and a second measure at once."
+      ],
+      "avoid": [
+        "Use bar-chart when exact comparisons between similar values matter.",
+        "Use sunburst when the depth of the hierarchy is the story."
+      ]
+    },
+    {
+      "id": "usage-meter--StorageCard",
+      "family": "usage-meter",
+      "title": "Usage meter",
+      "variant": "StorageCard",
+      "package": "atoms",
+      "scale": "atom",
+      "description": "Show what fills an allowance and how close it is to the limit.",
+      "categories": [
+        "feedback"
+      ],
+      "source": "https://uiarc.dev/components/usage-meter",
+      "exports": [
+        "UsageMeter"
+      ],
+      "use": [
+        "Quota against a fixed allowance, such as storage, seats, or API calls.",
+        "Billing pages that should show what takes the space and how close the plan is to full.",
+        "Plans that can go over the limit, where the overage should be clear without relying on color."
+      ],
+      "avoid": [
+        "Use progress for task completion.",
+        "Use bar-chart to compare categories without a limit.",
+        "Use gauge or stat-card for a single headline metric."
+      ]
+    },
+    {
+      "id": "user-menu--default",
+      "family": "user-menu",
+      "title": "User menu",
+      "variant": "default",
+      "package": "blocks",
+      "scale": "component",
+      "description": "Your account, settings, theme, and sign out behind the avatar. Opens as a bottom sheet on phones.",
+      "categories": [
+        "actions"
+      ],
+      "source": "https://uiarc.dev/components/user-menu",
+      "exports": [
+        "userStatuses",
+        "PresenceDot",
+        "UserMenu"
+      ],
+      "use": [
+        "The single account entry point in an app top bar.",
+        "Menus that combine presence status, theme preference, account links, and sign out.",
+        "Apps that want async sign out with a spinner in the menu."
+      ],
+      "avoid": [
+        "Use dropdown-menu for generic command lists.",
+        "Use theme-switch for a standalone light and dark toggle.",
+        "Use workspace-sidebar when account and workspace switching live in a side navigation."
+      ]
+    },
+    {
+      "id": "waffle-chart--PowerMix",
+      "family": "waffle-chart",
+      "title": "Waffle chart",
+      "variant": "PowerMix",
+      "package": "charts",
+      "scale": "chart",
+      "description": "A ten by ten unit chart where every cell is one percent, and cells fly to their new group when the data changes.",
+      "categories": [
+        "data"
+      ],
+      "source": "https://uiarc.dev/components/waffle-chart",
+      "exports": [
+        "WaffleChart"
+      ],
+      "use": [
+        "Showing shares of one whole where people should be able to count units.",
+        "Comparing the same categories across a few datasets, such as countries or years.",
+        "Replacing a pie or donut when small shares need to stay visible."
+      ],
+      "avoid": [
+        "Use line-chart or streamgraph for how shares change over time.",
+        "Use bar-chart when exact comparison of many categories matters more than the whole.",
+        "Use sunburst for nested parts of a whole."
+      ]
+    }
+  ],
+  "withoutDemo": []
+}

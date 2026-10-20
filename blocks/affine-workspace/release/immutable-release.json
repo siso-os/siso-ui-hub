@@ -1,0 +1,315 @@
+{
+  "schema_version": "actionist.affine.immutable-release.v1",
+  "block_id": "actionist/affine-workspace",
+  "version": "0.2.0",
+  "release_id": "actionist/affine-workspace@0.2.0+sha256.677d11aadce8a11b2775d7853b8881b45fc1d30c09dc1678e2bfb3c621d934f0",
+  "payload_sha256": "677d11aadce8a11b2775d7853b8881b45fc1d30c09dc1678e2bfb3c621d934f0",
+  "source": {
+    "donor_checkout_revision": "a4a069626c9fd1fa0d2a88cd3fd12fb2b408ec1c",
+    "donor_checkout_tree": "ba2a868007d662a2b4b606c4c2c8d8383859d89f",
+    "frontend_revision": "837a5c285caf2078e340a6220de38bdd8ab1da9a",
+    "backend_revision": "4b5d79282be91fd529dcff84b066f00b3784496a"
+  },
+  "accepted_artifact": {
+    "availability": "NOT_VENDORED_RETRIEVE_OR_BUILD_REQUIRED",
+    "entry_sha256": "382721b5d0b92bb768e479397c6dc5d1f94d03ae72d15c7ea59ab1ee88fd971c",
+    "package_manifest_sha256": "0aa36f1078128cf7bd9dbdd41ff72a7923d4b825d745e6ae2f4659ed534ca7f7",
+    "files": 1007,
+    "bytes": 215080775,
+    "source_receipt": "actionist-base/evidence/affine-acceptance/acceptance.json"
+  },
+  "adaptation": {
+    "patch": "patches/0001-embed-guards.patch",
+    "patch_sha256": "eb3bf704d6e6c458ac6d0b665ed0688e9d526d3792af323ebcacaa7de2c47b76",
+    "build_transform": "build/package-build.mjs",
+    "build_transform_sha256": "0e9b4edda15e0151a32b565b5765e6468c2952cc553b991ee50fcd7c069b130b",
+    "backend_patch": "patches/0002-host-session-isolation.patch",
+    "backend_patch_sha256": "26c5799769bca10624a6b37cbc765ce42fe0696c26edb3343b649d3e97cbd84b",
+    "backend_patch_basis": "donor/backend root; from a donor Git root use --directory=backend"
+  },
+  "runtime": {
+    "profile": "assimilated-package-plus-donor-native-sidecar",
+    "mount_topology": "same_document",
+    "services": [
+      {
+        "id": "host",
+        "owner": "host",
+        "port": "configured",
+        "listener": "configured"
+      },
+      {
+        "id": "compiled-module-assets",
+        "owner": "actionist",
+        "port": "configured",
+        "listener": "loopback_for_acceptance_only"
+      },
+      {
+        "id": "knowledge-backend",
+        "owner": "donor",
+        "port": "configured",
+        "listener": "loopback_for_acceptance_only"
+      },
+      {
+        "id": "host-context-issuer",
+        "owner": "host",
+        "port": "configured",
+        "listener": "loopback_for_acceptance_only"
+      }
+    ],
+    "data_authority": {
+      "postgres_schema": "knowledge",
+      "redis_namespace": "knowledge",
+      "yjs_and_blobs": "knowledge",
+      "migration_owner": "donor-native-backend"
+    }
+  },
+  "configuration_schema": "config/environment.schema.json",
+  "rights_provenance": {
+    "status": "UNKNOWN_HELD_FOR_REVIEW",
+    "distribution_authorized": false,
+    "observed_license_files": [
+      {
+        "donor_path": "frontend/LICENSE",
+        "sha256": "c107c8088fe42bce6def95d313cfe7b5984d3bb2c1608b67f855327da45f497b"
+      },
+      {
+        "donor_path": "frontend/LICENSE-MIT",
+        "sha256": "1cdeca52d4f740361f103926144eb8b3f265975b2337d4e27b3313f72465897f"
+      },
+      {
+        "donor_path": "frontend/packages/backend/server/LICENSE",
+        "sha256": "5a644f9defc017ffd484413598d1edf65bc78718e4011ac33a0e1fcae629e25d"
+      }
+    ],
+    "note": "File presence and digests are provenance observations, not legal interpretation or distribution authority."
+  },
+  "installer": {
+    "command": "node scripts/install-release.mjs --app <empty-or-actionist-app> --host <host.json>",
+    "verify_command": "node scripts/verify-installed.mjs --app <actionist-app>",
+    "rollback_command": "node scripts/rollback-release.mjs --app <actionist-app> --to <release-id>",
+    "network_required": false,
+    "dependency_install_required": false
+  },
+  "evidence": {
+    "prior_acceptance": {
+      "path": "actionist-base/evidence/affine-acceptance/acceptance.json",
+      "sha256": "d25b1cafaf46c8f0e91fb46cd6eef0f987b865554f4ef50e64a7b9112d3ad569",
+      "artifact_checks_path": "actionist-base/evidence/affine-acceptance/artifact-checks.json",
+      "artifact_checks_sha256": "98671cc6ec643d855af36a119ecc5f1bdc1c13789c4dbe0f41cb2b81db62bf86",
+      "commands_path": "actionist-base/evidence/affine-acceptance/commands.md",
+      "commands_sha256": "d914375e9ba5075ad4812e2f0549fc093dd7763f628ae8d8d6070d6afcb58ce5",
+      "classification": "PRIOR_LOCAL_ACCEPTANCE_NOT_CLEAN_INSTALL_OR_QUALIFICATION"
+    },
+    "installer_checks": {
+      "path": "tests/release.test.mjs",
+      "classification": "DISPOSABLE_PACKAGE_INSTALL_UPGRADE_ROLLBACK_TESTS_NOT_DONOR_RUNTIME"
+    },
+    "isolated_native_acceptance": {
+      "path": "actionist-base/evidence/native-affine-slBdN0/receipt.json",
+      "sha256": "da7b5bb38c83ecd43c53a2f7d0d9ee429830e403aff209385ca557b071221b3f",
+      "network_path": "actionist-base/evidence/native-affine-slBdN0/browser-network.json",
+      "network_sha256": "b77975ed8f78721a3217d619c042c7056f41e6801ec024ae9115a326b093a06e",
+      "classification": "REAL_EDITOR_EMPTY_INDEXEDDB_AND_BACKEND_RESTART_READBACK_WITH_FIXTURE_HOST_SESSION",
+      "limitations": [
+        "Historical compiled artifact, not donor build replay",
+        "No production broker or cross-identity isolation",
+        "Text contrast is not complete theme/token/settings parity"
+      ]
+    },
+    "host_boundary": {
+      "path": "actionist-base/evidence/host-boundary-zJV9xy/receipt.json",
+      "sha256": "a2e1229d5de1a7ff039571482a40614805969298b62fd2ce0157a14b0f499b88",
+      "classification": "FIFTEEN_REAL_BROWSER_CASES_WITH_INTERCEPTED_ISSUER_BACKEND_MODULE"
+    },
+    "fresh_build": {
+      "path": "actionist-base/evidence/affine-build-ob0wXW/receipt.json",
+      "sha256": "57d65206496dc7cc9c8b1412e675af5840f8469a323f775762f3e1364154e4a8",
+      "classification": "DISPOSABLE_PATCH_AND_DONOR_BUILD_WITH_EXISTING_INSTALLED_DEPENDENCIES_NOT_FRESH_BOOTSTRAP"
+    },
+    "fresh_build_native_acceptance": {
+      "path": "actionist-base/evidence/native-affine-4Ss5nS/receipt.json",
+      "sha256": "abf15b64cc06019d701b3fc8ae82af0a9872c93950330170e880ed0f36948e8c",
+      "network_path": "actionist-base/evidence/native-affine-4Ss5nS/browser-network.json",
+      "network_sha256": "3cae94aaaceb2d73cdccf979a9a69b7d5529f5052f2c17988ee420db0f9a287e",
+      "classification": "NEWLY_BUILT_ARTIFACT_EDITOR_PERSISTENCE_AND_READABILITY_WITH_FIXTURE_HOST_SESSION"
+    },
+    "unpatched_identity_failures": {
+      "path": "actionist-base/evidence/native-affine-lQPCBy/receipt.json",
+      "sha256": "60a5a64595f4a52ec4fba43666bad18eb2c53630df07ac7b26b871962d8ed350",
+      "classification": "OBSERVED_EXPIRED_SESSION_ACCEPTANCE_AND_EMAIL_IDENTITY_MERGE_IN_UNPATCHED_DISPOSABLE_BACKEND"
+    },
+    "lifecycle_repack": {
+      "path": "actionist-base/evidence/affine-repack-alHWEo/receipt.json",
+      "sha256": "7e8616a5d33ca1f71d4461ee7da96e19ac750a9bc081a89436aae03570267381",
+      "classification": "REPACK_OF_RECORDED_COMPILER_OUTPUT_WITH_VERIFIED_REQUEST_BRIDGE_CLEANUP"
+    },
+    "identity_and_lifecycle_acceptance": {
+      "path": "actionist-base/evidence/native-affine-PKcRTg/receipt.json",
+      "sha256": "2b475dfa50ea329c89a4a84d2cb2575ffd8d4ee4771582e98ab1e57a51a42fbc",
+      "network_path": "actionist-base/evidence/native-affine-PKcRTg/browser-network.json",
+      "network_sha256": "865715da7769e56908bf02f36da6b47ba1230d5f9203a7a852fd6882c868c11e",
+      "classification": "TWENTY_ONE_NATIVE_CHECKS_WITH_TWO_FIXTURE_PRINCIPALS_BACKEND_PATCH_AND_PRIMARY_BROWSER_REMOUNT"
+    }
+  },
+  "gates": {
+    "release_publication": "HELD",
+    "qualification": "NOT_QUALIFIED",
+    "admission": "NOT_ADMITTED",
+    "donor_build_replay": "PASS_DISPOSABLE_PATCHED_SOURCE_WITH_EXISTING_DEPENDENCIES_NOT_FRESH_BOOTSTRAP",
+    "clean_runtime_replay": "PASS_REPACKED_ARTIFACT_PERSISTENCE_AND_LIFECYCLE_WITH_FIXTURE_ISSUER",
+    "identity_isolation": "TWO_FIXTURE_PRINCIPALS_NATIVE_API_PASS_WITH_BACKEND_PATCH",
+    "independent_verification": "INDEPENDENT_RUNTIME_QUALIFICATION_NOT_RUN"
+  },
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 12528,
+      "sha256": "3c48fd70a710ae90507ceadd2b5b2f86f74b5d84da02206c2514f7abb61a8aef"
+    },
+    {
+      "path": "actionist-block.json",
+      "bytes": 7469,
+      "sha256": "2189a607b11f409407771c2f67de41d400668eafa333059c7f34293952e9d09c"
+    },
+    {
+      "path": "build/BLOCK-BUILD.md",
+      "bytes": 5616,
+      "sha256": "d34924dcd0e754f4cc35fe3a0133dd4bdb1f10e378765f2161de5736ae58ce8d"
+    },
+    {
+      "path": "build/module-root.tsx",
+      "bytes": 1827,
+      "sha256": "43657cfdfb25261c2ea5fac6874d1639c161022a5d019efdb49e216f3beba208"
+    },
+    {
+      "path": "build/package-build.mjs",
+      "bytes": 14889,
+      "sha256": "0e9b4edda15e0151a32b565b5765e6468c2952cc553b991ee50fcd7c069b130b"
+    },
+    {
+      "path": "config/environment.schema.json",
+      "bytes": 910,
+      "sha256": "9e4a862c9a8378687afed5615279d8abff33b89a58f54c19a76829333db055a8"
+    },
+    {
+      "path": "config/example.json",
+      "bytes": 350,
+      "sha256": "7d639595bd86184784aac5376936278165b27d2be8898f0601294c05b62e6f04"
+    },
+    {
+      "path": "fixture/host.json",
+      "bytes": 1402,
+      "sha256": "05dc63d7b82ba049d03650a832805358c8030934a6e6c4482ab96dec21cd98f6"
+    },
+    {
+      "path": "host-binding/affine-workspace-host-binding.ts",
+      "bytes": 4765,
+      "sha256": "1b231cc110dd5ac536da7a486e3cb921d626110223a230c194653d727b4d62e3"
+    },
+    {
+      "path": "package.json",
+      "bytes": 804,
+      "sha256": "96dc9cc07f1cd8084ee72e3ea8e55299e7f74194474f81002f82ec0a4ab64a71"
+    },
+    {
+      "path": "patches/0001-embed-guards.patch",
+      "bytes": 34322,
+      "sha256": "eb3bf704d6e6c458ac6d0b665ed0688e9d526d3792af323ebcacaa7de2c47b76"
+    },
+    {
+      "path": "patches/0002-host-session-isolation.patch",
+      "bytes": 1366,
+      "sha256": "26c5799769bca10624a6b37cbc765ce42fe0696c26edb3343b649d3e97cbd84b"
+    },
+    {
+      "path": "records/01-capability.json",
+      "bytes": 2600,
+      "sha256": "c81b894cff8fb7989aa3ec13e71ef95d129758a67398e7688a88b0c14656da78"
+    },
+    {
+      "path": "records/02-packaging.json",
+      "bytes": 2320,
+      "sha256": "4aec1f644c51e018bbfb24f39c954effee69051a69b09083d4f8d58339abac07"
+    },
+    {
+      "path": "records/03-host-requirements.json",
+      "bytes": 3935,
+      "sha256": "36490fcd781139523f12a8a91a6a51c3b6116eb33637ebe7e4e9b2c5ba7d2112"
+    },
+    {
+      "path": "records/04-binding-plan.json",
+      "bytes": 4864,
+      "sha256": "2eb9c9f76abb801d05684b90fa524e039b7688bc95a7a8f5b834773ba46a829c"
+    },
+    {
+      "path": "records/05-qualification.json",
+      "bytes": 11680,
+      "sha256": "56b74e0655a5d48aa37b75dd4318f23fb3837a885dcf0179472d1288febda474"
+    },
+    {
+      "path": "records/06-registry.json",
+      "bytes": 1857,
+      "sha256": "b9b4f52bfd6722ac3300d953d783675cd0745a45d58c5a3e090a0ac02095888a"
+    },
+    {
+      "path": "records/07-release.json",
+      "bytes": 3845,
+      "sha256": "a358e8a0615ee4dd788d55935f6fcea461728c71ef22d5e700baee6a20ccd739"
+    },
+    {
+      "path": "release/release-spec.json",
+      "bytes": 8145,
+      "sha256": "2135119cb1b6f96bf5c37fc72ddadd7c33f194a2ba5668daf83c05dbe9ea5c32"
+    },
+    {
+      "path": "schemas/actionist-block.schema.json",
+      "bytes": 2190,
+      "sha256": "c5f1749f6a8efcb3bc17e3d0bb308abd6e8207e062d53d22c37d0864991cd105"
+    },
+    {
+      "path": "schemas/host-binding.schema.json",
+      "bytes": 2777,
+      "sha256": "1c4f5211b2cf4d9243fa7d44df0aaa7485a5f7e76c1c989458ee4789f0b9e583"
+    },
+    {
+      "path": "scripts/bind.mjs",
+      "bytes": 11285,
+      "sha256": "43c31b9402382c48d7b2c9be160b80a2e7cdafdbf3f9a061dc6b4a777a8fac25"
+    },
+    {
+      "path": "scripts/install-release.mjs",
+      "bytes": 7785,
+      "sha256": "185b8ca55f32e9eb310c8acdb76138b3117129ff678d336b48c589d16cd2a49d"
+    },
+    {
+      "path": "scripts/make-release.mjs",
+      "bytes": 647,
+      "sha256": "b2fa40a5d30c9ed9b207878069c579bef7be242fe634d2ee146d450d5c63a4e4"
+    },
+    {
+      "path": "scripts/release-lib.mjs",
+      "bytes": 6676,
+      "sha256": "79df329292eeb7046a7e3a6e2acf02848ee0ea10ebb2f2b5b5b32bdf341f6692"
+    },
+    {
+      "path": "scripts/rollback-release.mjs",
+      "bytes": 3389,
+      "sha256": "3ef4ee2c295f77efbf27a2bfe3746407cc1f257227a1ecd0e71d3b8d0d694597"
+    },
+    {
+      "path": "scripts/verify-installed.mjs",
+      "bytes": 2990,
+      "sha256": "0f7ab68aa4161497fbec231a142f6caf758bed69964e6fefb58f0e295ff408ae"
+    },
+    {
+      "path": "scripts/verify-release.mjs",
+      "bytes": 874,
+      "sha256": "43ec8449864d28271804b6ae556456bb74e3941e77d7dc6905ac76b69a90a745"
+    },
+    {
+      "path": "tests/release.test.mjs",
+      "bytes": 13939,
+      "sha256": "607b21e0a6e0d8d798239d961481a3a439c37b09b100dc8a1c94d7a74696dd4d"
+    }
+  ]
+}

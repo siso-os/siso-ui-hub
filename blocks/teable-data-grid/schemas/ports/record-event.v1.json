@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://actionist.local/teable-data-grid/ports/record-event.v1.json",
+  "title": "Teable record event port",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["event_id", "capability_id", "tenant_id", "subject", "occurred_at", "trace_id", "payload"],
+  "properties": {
+    "event_id": { "type": "string", "minLength": 1 },
+    "capability_id": { "const": "actionist/teable-data-grid" },
+    "tenant_id": { "type": "string", "minLength": 1 },
+    "subject": { "type": "string", "minLength": 1 },
+    "occurred_at": { "type": "string", "format": "date-time" },
+    "trace_id": { "type": "string", "minLength": 1 },
+    "payload": { "type": "object" }
+  }
+}

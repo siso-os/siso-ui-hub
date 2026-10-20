@@ -1,343 +1,468 @@
 {
- "_about": "Our own components, registered with a reason (the rule: every UI component comes from the catalogue; a custom one is added here before it ships). Library picks are in picks.json.",
- "siso:agent-notification-row": {
-  "from": "agent-base AgentNotificationStack",
-  "reason": "You asked for these owner pop-ups; approved bank 'good'. Face, title, the ask, react, reply in one row. No library row does this.",
-  "since": "2026-10-07"
- },
- "siso:person-card": {
-  "from": "agent-base AgentHoverCard",
-  "reason": "Who, state, what they hold, last report, plan progress: our domain. Rides on arc:hover-card timing.",
-  "since": "2026-10-07"
- },
- "siso:stat-tile": {
-  "from": "operator ui/StatTile",
-  "reason": "The S widget: value, unit, label, delta tone, and it is a button (a tile that filters). Token-based, 35 lines.",
-  "since": "2026-10-07"
- },
- "siso:status-badge": {
-  "from": "operator ui/StatusBadge",
-  "reason": "Live/idle/error with reduced-motion handled; on 42 Operator pages. ADR 9.",
-  "since": "2026-10-07"
- },
- "siso:empty-state": {
-  "from": "operator ui/EmptyState + EmptyArt",
-  "reason": "Whole-page empty with our own 13 drawings and one next step.",
-  "since": "2026-10-07"
- },
- "siso:segmented": {
-  "from": "operator ui/Segmented (ViewSwitch)",
-  "reason": "List/cards switch; small, token-based.",
-  "since": "2026-10-07"
- },
- "siso:kit-base-ui": {
-  "from": "operator ui/ (Popover, Tabs, HubTabs, ConfirmDialog, MonthCalendar)",
-  "reason": "Thin token wrappers on Base UI; already what the catalogue asks for. Kept, not swapped.",
-  "since": "2026-10-07"
- },
- "siso:type-city": {
-  "from": "app/src/components/TypeCity.tsx",
-  "reason": "Home's 3D top band: every type the libraries share as a city of towers on the landing page's isometric glass slab (UiHubIcon), height = parts, colour = SISO status; the search lives in it and lights the matching towers. Nothing in the 104k does a searchable map of a whole component corpus.",
-  "since": "2026-10-11"
- },
- "siso:page-siso-set": {
-  "from": "app/src/pages/Siso.tsx",
-  "reason": "The SISO side: shells taken apart into swappable parts with every app's way of doing each, then the map of every category with what our apps use and the best of the 104k; Take/Skip are bookmarks agents read.",
-  "since": "2026-10-11"
- },
- "siso:ontology": {
-  "from": "app/src/lib/ontology.ts",
-  "reason": "The library by scale: every part placed on one node of catalogue/schema/ontology.json (atoms, components, sections, pages, looks) when the index loads",
-  "since": "2026-10-11"
- },
- "siso:page-node": {
-  "from": "app/src/pages/Node.tsx",
-  "reason": "One node of the ontology at /x/<scale>/<node>: its job, made of, used in, a page's sections in order, then its parts with type, look and fit chips",
-  "since": "2026-10-11"
- },
- "siso:pick-deck": {
-  "from": "app/src/components/PickDeck.tsx",
-  "reason": "The pick deck: one SISO skeleton slot at a time, its candidates in a 3D row; arrows flip, Enter takes as SISO base, X skips",
-  "since": "2026-10-12"
- },
- "siso:knowledge": {
-  "from": "app/src/lib/knowledge.ts",
-  "reason": "No library pick loads the hub's own per-node knowledge file (variations, notes, taste, papers, use cases); it is hub plumbing, not a UI part",
-  "since": "2026-10-12"
- },
- "siso:page-papers": {
-  "from": "app/src/pages/Papers.tsx",
-  "reason": "No pick renders SISO's own white papers and research library; built from our list and link primitives in the hub's look",
-  "since": "2026-10-12"
- },
- "siso:start-here": {
-  "from": "app/src/components/StartHere.tsx",
-  "reason": "Home's start-here: how the scales fit together, where takes/skips/saves land, what the research taught us, use cases to pick from; no library block explains our own ontology and bookmarks",
-  "since": "2026-10-12"
- },
- "siso:page-ours": {
-  "from": "app/src/pages/Ours.tsx",
-  "reason": "Our own apps' parts pictured from their real screens, by app and slot, with a pick deck; no library has our apps",
-  "since": "2026-10-12"
- },
- "siso:page-map": {
-  "from": "app/src/pages/MapPage.tsx",
-  "reason": "The lay of the land: every part SISO needs by scale, lit by what a chosen library covers, with a second to compare; no library maps itself onto our ontology",
-  "since": "2026-10-12"
- },
- "siso:page-vs": {
-  "from": "app/src/pages/VsPage.tsx",
-  "reason": "Two libraries like for like: each part read for its job and placed on our skeleton; only jobs both do are questions; previews in place",
-  "since": "2026-10-12"
- },
- "siso:app-frame": {
-  "from": "app/src/kitv1/siso/app-frame.tsx",
-  "reason": "One SISO app frame instead of 87 near-identical sidebars and app shells. Always there: search with a ⌘K palette, counts on items, the collapse button up top, animated icons on every row. 8 choices: layout (sidebar or rail + panel), look, collapse, switcher (workspaces or views), tools (none/4/6, each swaps the nav), nav, bottom, top bar; rail + panel rules out the bad pairs (no tools strip, switcher or bottom in the panel; it only slides away). Style tokens (scheme, matte or glass, font, radius) in frame-tokens.ts. 54 named variations in catalogue/app-frame.json; starts from SISO, HALO CRM, SISO CRM, Agent Base or Custom",
-  "since": "2026-10-14"
- },
- "siso:page-wire": {
-  "from": "app/src/components/kit/PageWire.tsx",
-  "reason": "A page type drawn as a wireframe from its recipe (shell, header, blocks, overlays), each block lit on hover; no library draws a page skeleton from a recipe list",
-  "since": "2026-10-15"
- },
- "siso:page-kit-map": {
-  "from": "app/src/pages/KitMap.tsx",
-  "reason": "The kit map as one screen: the which-level ladder, families as columns that scroll sideways, the kind under the pointer read out at the foot",
-  "since": "2026-10-15"
- },
- "siso:page-kit-pages": {
-  "from": "app/src/pages/KitPages.tsx",
-  "reason": "Page types as wire cards you click into; the detail page lights each recipe block and lists our pages of that type",
-  "since": "2026-10-15"
- },
- "siso:facet-menu": {
-  "from": "app/src/components/FacetMenu.tsx",
-  "reason": "One filter as one button with its value and a clear x; open, the choices with counts, biggest first, found by typing (Arc popover + the hub's command list). Replaces rows of filter chips that pushed parts off the first screen",
-  "since": "2026-10-15"
- },
- "siso:page-kit-dashboard": {
-  "from": "app/src/pages/KitDashboard.tsx",
-  "reason": "Dashboard kit: every chart, stat and data part live, one row per kind, Keep/Skip saved as bookmarks agents read with uihub kit",
-  "since": "2026-10-15"
- },
- "siso:kit-slot": {
-  "from": "app/src/lib/kitSlot.ts",
-  "reason": "The slot a library node page is filling; cards under it get Add to kit, writing the same siso/base pick as the SISO set",
-  "since": "2026-10-15"
- },
- "siso:families": {
-  "from": "app/src/lib/families.ts",
-  "reason": "Taxonomy v2: Layer > Family > Kind > Variation over the ontology's node keys (catalogue/schema/families.json), stub kinds for wants the library has no category for, and the kit dot state per kind",
-  "since": "2026-10-15"
- },
- "siso:kit-dot": {
-  "from": "app/src/components/KitDot.tsx",
-  "reason": "One mark for how full a kind is in the SISO kit (full, base picked, gap), used in the side nav, kind tiles and crumbs (spec C2)",
-  "since": "2026-10-15"
- },
- "siso:stage": {
-  "from": "app/src/components/Stage.tsx",
-  "reason": "One part live at real size with width, reload, fullscreen and sound/image/video modes; the component page and the kind page's kit pick both use it (spec C3)",
-  "since": "2026-10-15"
- },
- "siso:slot-strip": {
-  "from": "app/src/components/SlotStrip.tsx",
-  "reason": "A kind's base and variation slots, filled or a gap, in the sisolabs landing's tab rail; the selected slot is where Add to kit writes (spec C4)",
-  "since": "2026-10-15"
- },
- "siso:part-code": {
-  "from": "app/src/components/PartCode.tsx",
-  "reason": "A part's install lines and code under the Stage on a kind page, with line counts and copy (specs C9, C10)",
-  "since": "2026-10-15"
- },
- "siso:kind-tile": {
-  "from": "app/src/components/KindTile.tsx",
-  "reason": "One kind as a tile: a real screen of the kit's pick (or a strong library part while it is a gap), kit dot, name, part count (spec C7)",
-  "since": "2026-10-15"
- },
- "siso:family-band": {
-  "from": "app/src/components/FamilyBand.tsx",
-  "reason": "One family on a layer page: overline with how full it is in the kit, its job, its kinds as tiles (spec C6)",
-  "since": "2026-10-15"
- },
- "siso:layer-band": {
-  "from": "app/src/components/LayerBand.tsx",
-  "reason": "The kit home's first row: each layer of the SISO kit with four real screens and kinds in the kit (spec T1)",
-  "since": "2026-10-15"
- },
- "siso:page-kit-layer": {
-  "from": "app/src/pages/KitLayer.tsx",
-  "reason": "A layer of the SISO kit: every family as a band of kind tiles with real screens, how full each is, and Shuffle for the gaps (spec T2)",
-  "since": "2026-10-15"
- },
- "siso:widget-board": {
-  "from": "halo-streaming v2/ui/src/widgets (her Dashboard boards, the Operator's Performance grid)",
-  "reason": "The hub has no widget board: cards a person arranges, sizes and folds, kept per page (LANE-6-UI section 3).",
-  "since": "2026-10-15"
- },
- "siso:platform-glyph": {
-  "from": "halo-streaming v2/ui/src/icons/platform-glyph.tsx",
-  "reason": "Each cam site's own mark (Chaturbate, Stripchat, CamSoda and the rest): brand marks no icon library carries.",
-  "since": "2026-10-15"
- },
- "siso:ok-card": {
-  "from": "halo-streaming v2/ui/src/card/ok-card.tsx (the Operator's ok/Card)",
-  "reason": "The Operator's default, accent and flat card API; one Card API with hers waits for Phase B.",
-  "since": "2026-10-15"
- },
- "siso:list-row": {
-  "from": "halo-streaming v2/ui/src/item/list-row.tsx",
-  "reason": "Her list row over the item parts: a leading mark, two lines and a trailing value, across her Dashboard.",
-  "since": "2026-10-15"
- },
- "siso:seg": {
-  "from": "halo-streaming v2/ui/src/segmented/seg.tsx (the Operator's Direction B Seg)",
-  "reason": "The Operator's count switch with key caps and a priority tag; folds onto arc:segmented-control in Phase B.",
-  "since": "2026-10-15"
- },
- "siso:percent-slider": {
-  "from": "halo-streaming v2/ui/src/slider/percent-slider.tsx",
-  "reason": "A 0-100 split slider with its value label, a thin wrapper over the slider.",
-  "since": "2026-10-15"
- },
- "siso:page-tabs": {
-  "from": "halo-streaming v2/ui/src/tabs/page-tabs.tsx",
-  "reason": "Her page tab bar on Base UI Tabs with its sliding pill; arc:tabs's look waits for Phase B.",
-  "since": "2026-10-15"
- },
- "siso:quiet-segmented": {
-  "from": "halo-streaming v2/ui/src/segmented/segmented.tsx (her quiet row)",
-  "reason": "Her quiet toggle row keeps its own look in Phase A; folds onto arc:segmented-control in Phase B.",
-  "since": "2026-10-15"
- },
- "siso:landing": {
-  "from": "app/src/kit/siso-landing/",
-  "reason": "The SISO landing's own helpers and data (glyphs, laser beam, living marks, stats JSON) that its heroes import, copied in so the heroes render in the kit",
-  "since": "2026-10-16"
- },
- "siso:landing-agent-base-hero": {
-  "from": "app/src/kit/siso-landing/demos/agent-base-hero.tsx",
-  "reason": "Agent Base hero: SISO's own hero from the landing, kept as a SISO part so every page hero comes from the kit",
-  "since": "2026-10-16"
- },
- "siso:landing-blog-header": {
-  "from": "app/src/kit/siso-landing/demos/blog-header.tsx",
-  "reason": "Blog header: SISO's own hero from the landing, kept as a SISO part so every page hero comes from the kit",
-  "since": "2026-10-16"
- },
- "siso:landing-brand-hero": {
-  "from": "app/src/kit/siso-landing/demos/brand-hero.tsx",
-  "reason": "Brand hero: SISO's own hero from the landing, kept as a SISO part so every page hero comes from the kit",
-  "since": "2026-10-16"
- },
- "siso:landing-home-hero": {
-  "from": "app/src/kit/siso-landing/demos/home-hero.tsx",
-  "reason": "Home hero: SISO's own hero from the landing, kept as a SISO part so every page hero comes from the kit",
-  "since": "2026-10-16"
- },
- "siso:landing-home-hero-classic": {
-  "from": "app/src/kit/siso-landing/demos/home-hero-classic.tsx",
-  "reason": "Home hero, classic: SISO's own hero from the landing, kept as a SISO part so every page hero comes from the kit",
-  "since": "2026-10-16"
- },
- "siso:landing-industries-hero": {
-  "from": "app/src/kit/siso-landing/demos/industries-hero.tsx",
-  "reason": "Industries hub hero: SISO's own hero from the landing, kept as a SISO part so every page hero comes from the kit",
-  "since": "2026-10-16"
- },
- "siso:landing-industry-hero": {
-  "from": "app/src/kit/siso-landing/demos/industry-hero.tsx",
-  "reason": "Industry page hero: SISO's own hero from the landing, kept as a SISO part so every page hero comes from the kit",
-  "since": "2026-10-16"
- },
- "siso:landing-library-hero": {
-  "from": "app/src/kit/siso-landing/demos/library-hero.tsx",
-  "reason": "Library hero: SISO's own hero from the landing, kept as a SISO part so every page hero comes from the kit",
-  "since": "2026-10-16"
- },
- "siso:landing-live-hero": {
-  "from": "app/src/kit/siso-landing/demos/live-hero.tsx",
-  "reason": "Live hero: SISO's own hero from the landing, kept as a SISO part so every page hero comes from the kit",
-  "since": "2026-10-16"
- },
- "siso:landing-os-hero": {
-  "from": "app/src/kit/siso-landing/demos/os-hero.tsx",
-  "reason": "SISO OS hero: SISO's own hero from the landing, kept as a SISO part so every page hero comes from the kit",
-  "since": "2026-10-16"
- },
- "siso:landing-skills-hero": {
-  "from": "app/src/kit/siso-landing/demos/skills-hero.tsx",
-  "reason": "Skills hero: SISO's own hero from the landing, kept as a SISO part so every page hero comes from the kit",
-  "since": "2026-10-16"
- },
- "siso:landing-stack-hero": {
-  "from": "app/src/kit/siso-landing/demos/stack-hero.tsx",
-  "reason": "Stack hero: SISO's own hero from the landing, kept as a SISO part so every page hero comes from the kit",
-  "since": "2026-10-16"
- },
- "siso:landing-ui-hub-hero": {
-  "from": "app/src/kit/siso-landing/demos/ui-hub-hero.tsx",
-  "reason": "UI hub hero: SISO's own hero from the landing, kept as a SISO part so every page hero comes from the kit",
-  "since": "2026-10-16"
- },
- "siso:landing-voice-hero": {
-  "from": "app/src/kit/siso-landing/demos/voice-hero.tsx",
-  "reason": "Voice hero: SISO's own hero from the landing, kept as a SISO part so every page hero comes from the kit",
-  "since": "2026-10-16"
- },
- "siso:landing-work-with-us-hero": {
-  "from": "app/src/kit/siso-landing/demos/work-with-us-hero.tsx",
-  "reason": "Work with us hero: SISO's own hero from the landing, kept as a SISO part so every page hero comes from the kit",
-  "since": "2026-10-16"
- },
- "siso:landing-labs-hero": {
-  "from": "app/src/kit/siso-landing/demos/labs-hero.tsx",
-  "reason": "SISO Labs hero: SISO's own hero from the landing, kept as a SISO part so every page hero comes from the kit",
-  "since": "2026-10-16"
- },
- "siso:set-phone": {
-  "from": "app/src/kit/siso-set/phone.tsx",
-  "reason": "The phone frame the SISO set's native-app screens are shown in",
-  "since": "2026-10-16"
- },
- "siso:set-comments": {
-  "from": "app/src/kit/siso-set/comments.tsx",
-  "reason": "Comments were a gap in the SISO set (ECOSYSTEM, 15 Oct); no library thread did composer, one-deep replies and author marks in our look",
-  "since": "2026-10-16"
- },
- "siso:set-mobile-settings": {
-  "from": "app/src/kit/siso-set/mobile-settings.tsx",
-  "reason": "Mobile settings were a gap in the SISO set (ECOSYSTEM, 15 Oct); grouped rows at thumb height in our tokens",
-  "since": "2026-10-16"
- },
- "siso:set-mobile-onboarding": {
-  "from": "app/src/kit/siso-set/mobile-onboarding.tsx",
-  "reason": "Mobile onboarding and sign-in were a gap in the SISO set (ECOSYSTEM, 15 Oct); slides, ways in and an email code in one flow",
-  "since": "2026-10-16"
- },
- "siso:landing-blog-card": {
-  "from": "app/src/kit/siso-landing/demos/blog-card.tsx",
-  "reason": "Blog card: SISO's own, from the landing; fills a gap in the SISO set (ECOSYSTEM, 15 Oct)",
-  "since": "2026-10-16"
- },
- "siso:landing-blog-index": {
-  "from": "app/src/kit/siso-landing/demos/blog-index.tsx",
-  "reason": "Blog index: SISO's own, from the landing; fills a gap in the SISO set (ECOSYSTEM, 15 Oct)",
-  "since": "2026-10-16"
- },
- "siso:landing-changelog-page": {
-  "from": "app/src/kit/siso-landing/demos/changelog-page.tsx",
-  "reason": "Changelog page: SISO's own, from the landing; fills a gap in the SISO set (ECOSYSTEM, 15 Oct)",
-  "since": "2026-10-16"
- },
- "siso:landing-shipped-timeline": {
-  "from": "app/src/kit/siso-landing/demos/shipped-timeline.tsx",
-  "reason": "Shipped timeline: SISO's own, from the landing; fills a gap in the SISO set (ECOSYSTEM, 15 Oct)",
-  "since": "2026-10-16"
- },
- "siso:landing-welcome-sign-in": {
-  "from": "app/src/kit/siso-landing/demos/welcome-sign-in.tsx",
-  "reason": "Welcome and sign in: SISO's own, from the landing; fills a gap in the SISO set (ECOSYSTEM, 15 Oct)",
-  "since": "2026-10-16"
- }
+  "_about": "Our own components, registered with a reason (the rule: every UI component comes from the catalogue; a custom one is added here before it ships). Library picks are in picks.json.",
+  "siso:agent-notification-row": {
+    "from": "agent-base AgentNotificationStack",
+    "reason": "You asked for these owner pop-ups; approved bank 'good'. Face, title, the ask, react, reply in one row. No library row does this.",
+    "since": "2026-10-07"
+  },
+  "siso:person-card": {
+    "from": "agent-base AgentHoverCard",
+    "reason": "Who, state, what they hold, last report, plan progress: our domain. Rides on arc:hover-card timing.",
+    "since": "2026-10-07"
+  },
+  "siso:stat-tile": {
+    "from": "operator ui/StatTile",
+    "reason": "The S widget: value, unit, label, delta tone, and it is a button (a tile that filters). Token-based, 35 lines.",
+    "since": "2026-10-07"
+  },
+  "siso:status-badge": {
+    "from": "operator ui/StatusBadge",
+    "reason": "Live/idle/error with reduced-motion handled; on 42 Operator pages. ADR 9.",
+    "since": "2026-10-07"
+  },
+  "siso:empty-state": {
+    "from": "operator ui/EmptyState + EmptyArt",
+    "reason": "Whole-page empty with our own 13 drawings and one next step.",
+    "since": "2026-10-07"
+  },
+  "siso:segmented": {
+    "from": "operator ui/Segmented (ViewSwitch)",
+    "reason": "List/cards switch; small, token-based.",
+    "since": "2026-10-07"
+  },
+  "siso:kit-base-ui": {
+    "from": "operator ui/ (Popover, Tabs, HubTabs, ConfirmDialog, MonthCalendar)",
+    "reason": "Thin token wrappers on Base UI; already what the catalogue asks for. Kept, not swapped.",
+    "since": "2026-10-07"
+  },
+  "siso:type-city": {
+    "from": "app/src/components/TypeCity.tsx",
+    "reason": "Home's 3D top band: every type the libraries share as a city of towers on the landing page's isometric glass slab (UiHubIcon), height = parts, colour = SISO status; the search lives in it and lights the matching towers. Nothing in the 104k does a searchable map of a whole component corpus.",
+    "since": "2026-10-11"
+  },
+  "siso:page-siso-set": {
+    "from": "app/src/pages/Siso.tsx",
+    "reason": "The SISO side: shells taken apart into swappable parts with every app's way of doing each, then the map of every category with what our apps use and the best of the 104k; Take/Skip are bookmarks agents read.",
+    "since": "2026-10-11"
+  },
+  "siso:ontology": {
+    "from": "app/src/lib/ontology.ts",
+    "reason": "The library by scale: every part placed on one node of catalogue/schema/ontology.json (atoms, components, sections, pages, looks) when the index loads",
+    "since": "2026-10-11"
+  },
+  "siso:page-node": {
+    "from": "app/src/pages/Node.tsx",
+    "reason": "One node of the ontology at /x/<scale>/<node>: its job, made of, used in, a page's sections in order, then its parts with type, look and fit chips",
+    "since": "2026-10-11"
+  },
+  "siso:pick-deck": {
+    "from": "app/src/components/PickDeck.tsx",
+    "reason": "The pick deck: one SISO skeleton slot at a time, its candidates in a 3D row; arrows flip, Enter takes as SISO base, X skips",
+    "since": "2026-10-12"
+  },
+  "siso:knowledge": {
+    "from": "app/src/lib/knowledge.ts",
+    "reason": "No library pick loads the hub's own per-node knowledge file (variations, notes, taste, papers, use cases); it is hub plumbing, not a UI part",
+    "since": "2026-10-12"
+  },
+  "siso:page-papers": {
+    "from": "app/src/pages/Papers.tsx",
+    "reason": "No pick renders SISO's own white papers and research library; built from our list and link primitives in the hub's look",
+    "since": "2026-10-12"
+  },
+  "siso:start-here": {
+    "from": "app/src/components/StartHere.tsx",
+    "reason": "Home's start-here: how the scales fit together, where takes/skips/saves land, what the research taught us, use cases to pick from; no library block explains our own ontology and bookmarks",
+    "since": "2026-10-12"
+  },
+  "siso:page-ours": {
+    "from": "app/src/pages/Ours.tsx",
+    "reason": "Our own apps' parts pictured from their real screens, by app and slot, with a pick deck; no library has our apps",
+    "since": "2026-10-12"
+  },
+  "siso:page-map": {
+    "from": "app/src/pages/MapPage.tsx",
+    "reason": "The lay of the land: every part SISO needs by scale, lit by what a chosen library covers, with a second to compare; no library maps itself onto our ontology",
+    "since": "2026-10-12"
+  },
+  "siso:page-vs": {
+    "from": "app/src/pages/VsPage.tsx",
+    "reason": "Two libraries like for like: each part read for its job and placed on our skeleton; only jobs both do are questions; previews in place",
+    "since": "2026-10-12"
+  },
+  "siso:app-frame": {
+    "from": "app/src/kitv1/siso/app-frame.tsx",
+    "reason": "One SISO app frame instead of 87 near-identical sidebars and app shells. Always there: search with a \u2318K palette, counts on items, the collapse button up top, animated icons on every row. 8 choices: layout (sidebar or rail + panel), look, collapse, switcher (workspaces or views), tools (none/4/6, each swaps the nav), nav, bottom, top bar; rail + panel rules out the bad pairs (no tools strip, switcher or bottom in the panel; it only slides away). Style tokens (scheme, matte or glass, font, radius) in frame-tokens.ts. 54 named variations in catalogue/app-frame.json; starts from SISO, HALO CRM, SISO CRM, Agent Base or Custom",
+    "since": "2026-10-14"
+  },
+  "siso:page-wire": {
+    "from": "app/src/components/kit/PageWire.tsx",
+    "reason": "A page type drawn as a wireframe from its recipe (shell, header, blocks, overlays), each block lit on hover; no library draws a page skeleton from a recipe list",
+    "since": "2026-10-15"
+  },
+  "siso:page-kit-map": {
+    "from": "app/src/pages/KitMap.tsx",
+    "reason": "The kit map as one screen: the which-level ladder, families as columns that scroll sideways, the kind under the pointer read out at the foot",
+    "since": "2026-10-15"
+  },
+  "siso:page-kit-pages": {
+    "from": "app/src/pages/KitPages.tsx",
+    "reason": "Page types as wire cards you click into; the detail page lights each recipe block and lists our pages of that type",
+    "since": "2026-10-15"
+  },
+  "siso:facet-menu": {
+    "from": "app/src/components/FacetMenu.tsx",
+    "reason": "One filter as one button with its value and a clear x; open, the choices with counts, biggest first, found by typing (Arc popover + the hub's command list). Replaces rows of filter chips that pushed parts off the first screen",
+    "since": "2026-10-15"
+  },
+  "siso:page-kit-dashboard": {
+    "from": "app/src/pages/KitDashboard.tsx",
+    "reason": "Dashboard kit: every chart, stat and data part live, one row per kind, Keep/Skip saved as bookmarks agents read with uihub kit",
+    "since": "2026-10-15"
+  },
+  "siso:kit-slot": {
+    "from": "app/src/lib/kitSlot.ts",
+    "reason": "The slot a library node page is filling; cards under it get Add to kit, writing the same siso/base pick as the SISO set",
+    "since": "2026-10-15"
+  },
+  "siso:families": {
+    "from": "app/src/lib/families.ts",
+    "reason": "Taxonomy v2: Layer > Family > Kind > Variation over the ontology's node keys (catalogue/schema/families.json), stub kinds for wants the library has no category for, and the kit dot state per kind",
+    "since": "2026-10-15"
+  },
+  "siso:kit-dot": {
+    "from": "app/src/components/KitDot.tsx",
+    "reason": "One mark for how full a kind is in the SISO kit (full, base picked, gap), used in the side nav, kind tiles and crumbs (spec C2)",
+    "since": "2026-10-15"
+  },
+  "siso:stage": {
+    "from": "app/src/components/Stage.tsx",
+    "reason": "One part live at real size with width, reload, fullscreen and sound/image/video modes; the component page and the kind page's kit pick both use it (spec C3)",
+    "since": "2026-10-15"
+  },
+  "siso:slot-strip": {
+    "from": "app/src/components/SlotStrip.tsx",
+    "reason": "A kind's base and variation slots, filled or a gap, in the sisolabs landing's tab rail; the selected slot is where Add to kit writes (spec C4)",
+    "since": "2026-10-15"
+  },
+  "siso:part-code": {
+    "from": "app/src/components/PartCode.tsx",
+    "reason": "A part's install lines and code under the Stage on a kind page, with line counts and copy (specs C9, C10)",
+    "since": "2026-10-15"
+  },
+  "siso:kind-tile": {
+    "from": "app/src/components/KindTile.tsx",
+    "reason": "One kind as a tile: a real screen of the kit's pick (or a strong library part while it is a gap), kit dot, name, part count (spec C7)",
+    "since": "2026-10-15"
+  },
+  "siso:family-band": {
+    "from": "app/src/components/FamilyBand.tsx",
+    "reason": "One family on a layer page: overline with how full it is in the kit, its job, its kinds as tiles (spec C6)",
+    "since": "2026-10-15"
+  },
+  "siso:layer-band": {
+    "from": "app/src/components/LayerBand.tsx",
+    "reason": "The kit home's first row: each layer of the SISO kit with four real screens and kinds in the kit (spec T1)",
+    "since": "2026-10-15"
+  },
+  "siso:page-kit-layer": {
+    "from": "app/src/pages/KitLayer.tsx",
+    "reason": "A layer of the SISO kit: every family as a band of kind tiles with real screens, how full each is, and Shuffle for the gaps (spec T2)",
+    "since": "2026-10-15"
+  },
+  "siso:widget-board": {
+    "from": "halo-streaming v2/ui/src/widgets (her Dashboard boards, the Operator's Performance grid)",
+    "reason": "The hub has no widget board: cards a person arranges, sizes and folds, kept per page (LANE-6-UI section 3).",
+    "since": "2026-10-15"
+  },
+  "siso:platform-glyph": {
+    "from": "halo-streaming v2/ui/src/icons/platform-glyph.tsx",
+    "reason": "Each cam site's own mark (Chaturbate, Stripchat, CamSoda and the rest): brand marks no icon library carries.",
+    "since": "2026-10-15"
+  },
+  "siso:ok-card": {
+    "from": "halo-streaming v2/ui/src/card/ok-card.tsx (the Operator's ok/Card)",
+    "reason": "The Operator's default, accent and flat card API; one Card API with hers waits for Phase B.",
+    "since": "2026-10-15"
+  },
+  "siso:list-row": {
+    "from": "halo-streaming v2/ui/src/item/list-row.tsx",
+    "reason": "Her list row over the item parts: a leading mark, two lines and a trailing value, across her Dashboard.",
+    "since": "2026-10-15"
+  },
+  "siso:seg": {
+    "from": "halo-streaming v2/ui/src/segmented/seg.tsx (the Operator's Direction B Seg)",
+    "reason": "The Operator's count switch with key caps and a priority tag; folds onto arc:segmented-control in Phase B.",
+    "since": "2026-10-15"
+  },
+  "siso:percent-slider": {
+    "from": "halo-streaming v2/ui/src/slider/percent-slider.tsx",
+    "reason": "A 0-100 split slider with its value label, a thin wrapper over the slider.",
+    "since": "2026-10-15"
+  },
+  "siso:page-tabs": {
+    "from": "halo-streaming v2/ui/src/tabs/page-tabs.tsx",
+    "reason": "Her page tab bar on Base UI Tabs with its sliding pill; arc:tabs's look waits for Phase B.",
+    "since": "2026-10-15"
+  },
+  "siso:quiet-segmented": {
+    "from": "halo-streaming v2/ui/src/segmented/segmented.tsx (her quiet row)",
+    "reason": "Her quiet toggle row keeps its own look in Phase A; folds onto arc:segmented-control in Phase B.",
+    "since": "2026-10-15"
+  },
+  "siso:landing": {
+    "from": "app/src/kit/siso-landing/",
+    "reason": "The SISO landing's own helpers and data (glyphs, laser beam, living marks, stats JSON) that its heroes import, copied in so the heroes render in the kit",
+    "since": "2026-10-16"
+  },
+  "siso:landing-agent-base-hero": {
+    "from": "app/src/kit/siso-landing/demos/agent-base-hero.tsx",
+    "reason": "Agent Base hero: SISO's own hero from the landing, kept as a SISO part so every page hero comes from the kit",
+    "since": "2026-10-16"
+  },
+  "siso:landing-blog-header": {
+    "from": "app/src/kit/siso-landing/demos/blog-header.tsx",
+    "reason": "Blog header: SISO's own hero from the landing, kept as a SISO part so every page hero comes from the kit",
+    "since": "2026-10-16"
+  },
+  "siso:landing-brand-hero": {
+    "from": "app/src/kit/siso-landing/demos/brand-hero.tsx",
+    "reason": "Brand hero: SISO's own hero from the landing, kept as a SISO part so every page hero comes from the kit",
+    "since": "2026-10-16"
+  },
+  "siso:landing-home-hero": {
+    "from": "app/src/kit/siso-landing/demos/home-hero.tsx",
+    "reason": "Home hero: SISO's own hero from the landing, kept as a SISO part so every page hero comes from the kit",
+    "since": "2026-10-16"
+  },
+  "siso:landing-home-hero-classic": {
+    "from": "app/src/kit/siso-landing/demos/home-hero-classic.tsx",
+    "reason": "Home hero, classic: SISO's own hero from the landing, kept as a SISO part so every page hero comes from the kit",
+    "since": "2026-10-16"
+  },
+  "siso:landing-industries-hero": {
+    "from": "app/src/kit/siso-landing/demos/industries-hero.tsx",
+    "reason": "Industries hub hero: SISO's own hero from the landing, kept as a SISO part so every page hero comes from the kit",
+    "since": "2026-10-16"
+  },
+  "siso:landing-industry-hero": {
+    "from": "app/src/kit/siso-landing/demos/industry-hero.tsx",
+    "reason": "Industry page hero: SISO's own hero from the landing, kept as a SISO part so every page hero comes from the kit",
+    "since": "2026-10-16"
+  },
+  "siso:landing-library-hero": {
+    "from": "app/src/kit/siso-landing/demos/library-hero.tsx",
+    "reason": "Library hero: SISO's own hero from the landing, kept as a SISO part so every page hero comes from the kit",
+    "since": "2026-10-16"
+  },
+  "siso:landing-live-hero": {
+    "from": "app/src/kit/siso-landing/demos/live-hero.tsx",
+    "reason": "Live hero: SISO's own hero from the landing, kept as a SISO part so every page hero comes from the kit",
+    "since": "2026-10-16"
+  },
+  "siso:landing-os-hero": {
+    "from": "app/src/kit/siso-landing/demos/os-hero.tsx",
+    "reason": "SISO OS hero: SISO's own hero from the landing, kept as a SISO part so every page hero comes from the kit",
+    "since": "2026-10-16"
+  },
+  "siso:landing-skills-hero": {
+    "from": "app/src/kit/siso-landing/demos/skills-hero.tsx",
+    "reason": "Skills hero: SISO's own hero from the landing, kept as a SISO part so every page hero comes from the kit",
+    "since": "2026-10-16"
+  },
+  "siso:landing-stack-hero": {
+    "from": "app/src/kit/siso-landing/demos/stack-hero.tsx",
+    "reason": "Stack hero: SISO's own hero from the landing, kept as a SISO part so every page hero comes from the kit",
+    "since": "2026-10-16"
+  },
+  "siso:landing-ui-hub-hero": {
+    "from": "app/src/kit/siso-landing/demos/ui-hub-hero.tsx",
+    "reason": "UI hub hero: SISO's own hero from the landing, kept as a SISO part so every page hero comes from the kit",
+    "since": "2026-10-16"
+  },
+  "siso:landing-voice-hero": {
+    "from": "app/src/kit/siso-landing/demos/voice-hero.tsx",
+    "reason": "Voice hero: SISO's own hero from the landing, kept as a SISO part so every page hero comes from the kit",
+    "since": "2026-10-16"
+  },
+  "siso:landing-work-with-us-hero": {
+    "from": "app/src/kit/siso-landing/demos/work-with-us-hero.tsx",
+    "reason": "Work with us hero: SISO's own hero from the landing, kept as a SISO part so every page hero comes from the kit",
+    "since": "2026-10-16"
+  },
+  "siso:landing-labs-hero": {
+    "from": "app/src/kit/siso-landing/demos/labs-hero.tsx",
+    "reason": "SISO Labs hero: SISO's own hero from the landing, kept as a SISO part so every page hero comes from the kit",
+    "since": "2026-10-16"
+  },
+  "siso:set-phone": {
+    "from": "app/src/kit/siso-set/phone.tsx",
+    "reason": "The phone frame the SISO set's native-app screens are shown in",
+    "since": "2026-10-16"
+  },
+  "siso:set-comments": {
+    "from": "app/src/kit/siso-set/comments.tsx",
+    "reason": "Comments were a gap in the SISO set (ECOSYSTEM, 15 Oct); no library thread did composer, one-deep replies and author marks in our look",
+    "since": "2026-10-16"
+  },
+  "siso:set-mobile-settings": {
+    "from": "app/src/kit/siso-set/mobile-settings.tsx",
+    "reason": "Mobile settings were a gap in the SISO set (ECOSYSTEM, 15 Oct); grouped rows at thumb height in our tokens",
+    "since": "2026-10-16"
+  },
+  "siso:set-mobile-onboarding": {
+    "from": "app/src/kit/siso-set/mobile-onboarding.tsx",
+    "reason": "Mobile onboarding and sign-in were a gap in the SISO set (ECOSYSTEM, 15 Oct); slides, ways in and an email code in one flow",
+    "since": "2026-10-16"
+  },
+  "siso:landing-blog-card": {
+    "from": "app/src/kit/siso-landing/demos/blog-card.tsx",
+    "reason": "Blog card: SISO's own, from the landing; fills a gap in the SISO set (ECOSYSTEM, 15 Oct)",
+    "since": "2026-10-16"
+  },
+  "siso:landing-blog-index": {
+    "from": "app/src/kit/siso-landing/demos/blog-index.tsx",
+    "reason": "Blog index: SISO's own, from the landing; fills a gap in the SISO set (ECOSYSTEM, 15 Oct)",
+    "since": "2026-10-16"
+  },
+  "siso:landing-changelog-page": {
+    "from": "app/src/kit/siso-landing/demos/changelog-page.tsx",
+    "reason": "Changelog page: SISO's own, from the landing; fills a gap in the SISO set (ECOSYSTEM, 15 Oct)",
+    "since": "2026-10-16"
+  },
+  "siso:landing-shipped-timeline": {
+    "from": "app/src/kit/siso-landing/demos/shipped-timeline.tsx",
+    "reason": "Shipped timeline: SISO's own, from the landing; fills a gap in the SISO set (ECOSYSTEM, 15 Oct)",
+    "since": "2026-10-16"
+  },
+  "siso:landing-welcome-sign-in": {
+    "from": "app/src/kit/siso-landing/demos/welcome-sign-in.tsx",
+    "reason": "Welcome and sign in: SISO's own, from the landing; fills a gap in the SISO set (ECOSYSTEM, 15 Oct)",
+    "since": "2026-10-16"
+  },
+  "siso:charts": {
+    "from": "packages/siso-charts/src/index.ts",
+    "reason": "SISO chart package: Evil Charts (MIT) recoded for recharts 3.8, React 19, Tailwind 4, framer-motion 12; hover card grows to fit its rows; the variants are options (palette, curve, fill, stroke, stack). Base for every chart a SISO project draws (Shaan, 16 Oct).",
+    "since": "2026-10-16"
+  },
+  "siso:landing-contribution-city": {
+    "from": "app/src/kit/siso-landing/demos/contribution-city.tsx",
+    "reason": "Contribution city: the isometric 3D heatmap from SISO's landing, the one Shaan asked for in the heatmaps (16 Oct)",
+    "since": "2026-10-16"
+  },
+  "siso:tokens": {
+    "from": "packages/siso-tokens/src/index.ts",
+    "reason": "Shared SISO theme and semantic token contract used by the standalone suite.",
+    "since": "2026-10-16"
+  },
+  "siso:siso-atoms": {
+    "from": "packages/siso-atoms/src/index.ts",
+    "reason": "35 independently authored control families selected from the Arc coverage inventory.",
+    "since": "2026-10-16"
+  },
+  "siso:siso-blocks": {
+    "from": "packages/siso-blocks/src/index.ts",
+    "reason": "Controlled interaction blocks for reusable dialogs, tables, files and conversations.",
+    "since": "2026-10-16"
+  },
+  "siso:siso-navigation": {
+    "from": "packages/siso-navigation/src/index.ts",
+    "reason": "Data-driven side navigation and page links without a product router.",
+    "since": "2026-10-16"
+  },
+  "siso:siso-shells": {
+    "from": "packages/siso-shells/src/index.ts",
+    "reason": "Reusable UI Hub and app frames with native resizing and mobile navigation.",
+    "since": "2026-10-16"
+  },
+  "siso:siso-widgets": {
+    "from": "packages/siso-widgets/src/index.ts",
+    "reason": "Independent SISO dashboard bands and 12-column fitting behavior informed by read-only HALO contracts.",
+    "since": "2026-10-16"
+  },
+  "siso:ui": {
+    "from": "platform/ui/packages/siso-ui",
+    "reason": "Private umbrella exports and one stylesheet for the SISO UI suite.",
+    "since": "2026-10-16"
+  },
+  "siso:package-workbench": {
+    "from": "examples/package-suite/main.tsx",
+    "reason": "External consumer workbench verifies installed package APIs and shows release inventory.",
+    "since": "2026-10-16"
+  },
+  "siso:atoms": {
+    "from": "packages/siso-atoms",
+    "reason": "Reusable independently authored core controls with native React and Radix semantics.",
+    "since": "2026-10-16"
+  },
+  "siso:blocks": {
+    "from": "packages/siso-blocks",
+    "reason": "Reusable SISO controlled interaction blocks; router and app data remain in the consumer.",
+    "since": "2026-10-16"
+  },
+  "siso:navigation": {
+    "from": "packages/siso-navigation",
+    "reason": "Generic side navigation, rail, mobile menu, tabs and switchers extracted from SISO-owned hub behavior.",
+    "since": "2026-10-16"
+  },
+  "siso:shells": {
+    "from": "packages/siso-shells",
+    "reason": "The UI Hub and app frames as standalone shells with slots, resizing and responsive navigation.",
+    "since": "2026-10-16"
+  },
+  "siso:widgets": {
+    "from": "packages/siso-widgets",
+    "reason": "Independent SISO dashboard widget contract, fit rules, placement, state and in-place detail.",
+    "since": "2026-10-16"
+  },
+  "siso:hub-primitives": {
+    "from": "platform/ui/packages/siso-atoms/src/hub",
+    "reason": "Promote the existing Hub primitives so Hub consumers retain their production APIs while importing the canonical kit.",
+    "since": "2026-10-17"
+  },
+  "siso:site": {
+    "from": "platform/ui/packages/siso-site/src/index.ts",
+    "reason": "The actual SISO Labs footer, blog parts, docs skin and product glyphs, preserving their source styles, motion and assets for reuse.",
+    "since": "2026-10-16"
+  },
+  "siso:hub-side-nav": {
+    "from": "platform/ui/packages/siso-navigation/src/hub/HubSideNav.tsx",
+    "reason": "The approved Hub v8\u2013v11 navigation presentation extracted with original rows, glyphs, core switcher and CSS for controlled reuse.",
+    "since": "2026-10-16"
+  },
+  "siso:pill-switch": {
+    "from": "platform/ui/packages/siso-navigation/src/hub/PillSwitch.tsx",
+    "reason": "Original Hub page and mode pill switch, preserved with native links and controlled callbacks for reuse.",
+    "since": "2026-10-16"
+  },
+  "siso:nav-glyph": {
+    "from": "platform/ui/packages/siso-navigation/src/hub/NavGlyph.tsx",
+    "reason": "The original Hub navigation glyph driver and animated source icon mapping retained for the extracted side nav.",
+    "since": "2026-10-16"
+  },
+  "siso:nav-icons": {
+    "from": "platform/ui/packages/siso-navigation/src/hub/navIcons.tsx",
+    "reason": "Original Hub glyph selection table reused by the source side nav; no replacement icon drawings.",
+    "since": "2026-10-16"
+  },
+  "siso:agent": {
+    "from": "platform/ui/packages/siso-agent/src/index.ts",
+    "reason": "Agent Base's composer, voice surfaces, agent face and workspace marks, 55 animated icons and OS pieces, moved into the one kit so every project takes them from @siso/ui/agent.",
+    "since": "2026-10-17"
+  },
+  "siso:markdown": {
+    "from": "hubs/industries/site/src/md.tsx",
+    "reason": "Small markdown reader (headings, lists, bold, code, links) so a hub can render a pack's README instead of showing raw text; first used by Industries Hub.",
+    "since": "2026-10-17"
+  },
+  "siso:page-skeleton": {
+    "from": "v2/model/src/page/PageSkeleton.tsx",
+    "reason": "House rule 10 skeletons at real size: a page's KPI strip and card rows (and a card's figure and chart) drawn at the spans and heights they will load at, with one line when the read failed; the hub's skeleton primitive has no page or widget-grid layout",
+    "since": "2026-10-19"
+  },
+  "siso:halo-kit-art": {
+    "from": "v2/model/src/page/KitArt.tsx",
+    "reason": "Draws HALO's own approved art kit (PICKS.md, 19 Oct): one-shot inline SVG with play, loops and stills as img, static twin under reduced motion; no catalogue pick loads a project's own SVG kit",
+    "since": "2026-10-19"
+  }
 }

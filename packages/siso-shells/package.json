@@ -1,0 +1,36 @@
+{
+  "name": "@siso/shells",
+  "version": "0.4.1",
+  "type": "module",
+  "license": "UNLICENSED",
+  "sideEffects": [
+    "./styles.css"
+  ],
+  "files": [
+    "src",
+    "styles.css",
+    "README.md",
+    "inventory.json",
+    "NOTICE",
+    "LICENSE",
+    "source-provenance.json"
+  ],
+  "exports": {
+    ".": "./src/index.ts",
+    "./styles.css": "./styles.css",
+    "./inventory.json": "./inventory.json",
+    "./agent-base": "./src/agent-base/index.ts",
+    "./agent-base.css": "./agent-base.css"
+  },
+  "peerDependencies": {
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "cmdk": "^1.1.1",
+    "lucide-react": ">=0.468.0",
+    "motion": "^12.0.0 || ^14.0.0",
+    "radix-ui": "^1.4.0",
+    "tailwind-merge": "^3.0.0"
+  }
+}

@@ -1,0 +1,23 @@
+# written by siso-estate houses.py
+node_modules/
+.next/
+.turbo/
+dist/
+build/
+.venv/
+__pycache__/
+.DS_Store
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# secret-bearing files: kept in ~/SISO_Workspace/.credentials/projects/_data/ui-render/ (siso-estate)
+/_archive/render_failed-run1a.jsonl
+/_archive/render_failed-run1c-1930.jsonl
+/_archive/thumbs-run1b-1927/_render_failed.jsonl
+/_archive/thumbs-run1b-1927/_rendered.jsonl
+/thumbs/_render_failed-pass1.jsonl
+/thumbs/_render_failed.jsonl
+/thumbs/_rendered.jsonl

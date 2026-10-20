@@ -1,0 +1,815 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://actionist.dev/schemas/block-manifest/v2",
+  "title": "Actionist block manifest, v2",
+  "description": "The single manifest grammar every Actionist block validates against. Replaces the two disjoint v1 schemas (actionist.affine.block-manifest.v1 and https://actionist.local/teable-data-grid/actionist-block.schema.json), which shared no identity grammar and could not be read by one validator. Identity is separated from version so a catalog can group versions of one block without parsing strings.",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "block_id",
+    "version",
+    "capability_id",
+    "display_name",
+    "outcome_statement",
+    "authorization",
+    "lifecycle",
+    "reuse",
+    "records",
+    "source_boundary",
+    "commands",
+    "verification"
+  ],
+  "properties": {
+    "$schema": {
+      "type": "string"
+    },
+    "schema_version": {
+      "const": "actionist.block-manifest.v2",
+      "description": "The ONLY compatibility switch. A validator dispatches on this and nothing else."
+    },
+    "block_id": {
+      "$ref": "#/$defs/namespacedId",
+      "description": "Identity WITHOUT version. Namespace is open: a fork of a donor may legitimately carry the donor's namespace (R4 makes donor-namespaced blocks inevitable). 'actionist' is the documented default, not a constraint."
+    },
+    "version": {
+      "$ref": "#/$defs/semver",
+      "description": "Separate from identity, so 'same block, new version' is expressible. No version digit ever appears in a pattern, which retires the @1. class of defect permanently."
+    },
+    "capability_id": {
+      "$ref": "#/$defs/namespacedId",
+      "description": "The capability this block realises. May differ from block_id; two blocks may realise one capability. Scalar today because nothing on disk exercises the many-to-many case; see the falsifier in the workstream README."
+    },
+    "display_name": {
+      "type": "string",
+      "minLength": 1
+    },
+    "outcome_statement": {
+      "type": "string",
+      "minLength": 1,
+      "description": "What a host user can do. Stated as an outcome, not a feature list."
+    },
+    "lifecycle": {
+      "type": "object",
+      "description": "Four INDEPENDENT axes, taken verbatim from knowledge/capability-shelf/foundry-state-machine.json. They are independent on purpose: collapsing them into one 'status' field loses information, which is exactly what teable v1 did. No axis may be derived from another.",
+      "required": [
+        "source_reusability",
+        "adaptation_status",
+        "proof_status",
+        "admission_status"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "source_reusability": {
+          "enum": [
+            "discovered",
+            "source_read",
+            "reusable_candidate",
+            "rejected_for_capability"
+          ]
+        },
+        "adaptation_status": {
+          "enum": [
+            "unplanned",
+            "surgery_planned",
+            "adapted",
+            "upstream_sync_declared"
+          ]
+        },
+        "proof_status": {
+          "enum": [
+            "unexecuted",
+            "partial_local_proof",
+            "locally_proven",
+            "qualified_for_host"
+          ]
+        },
+        "admission_status": {
+          "enum": [
+            "not_considered",
+            "held_for_decision",
+            "admitted_for_scope",
+            "retired"
+          ]
+        },
+        "admission_scope": {
+          "type": "object",
+          "description": "Admission is ALWAYS scoped to named tenants/applications/environments, never 'reusable on the internet'. Empty arrays mean admitted nowhere.",
+          "required": [
+            "tenants",
+            "applications",
+            "environments"
+          ],
+          "properties": {
+            "tenants": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "applications": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "environments": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          },
+          "additionalProperties": true
+        }
+      },
+      "allOf": [
+        {
+          "description": "Fail closed: a block may only claim admitted_for_scope if it also names a scope. An admitted block with an empty scope is a silent allow (R8).",
+          "if": {
+            "properties": {
+              "admission_status": {
+                "const": "admitted_for_scope"
+              }
+            },
+            "required": [
+              "admission_status"
+            ]
+          },
+          "then": {
+            "required": [
+              "admission_scope"
+            ]
+          }
+        },
+        {
+          "description": "Fail closed: admission cannot outrun proof. Admitting for a scope requires qualified_for_host.",
+          "if": {
+            "properties": {
+              "admission_status": {
+                "const": "admitted_for_scope"
+              }
+            },
+            "required": [
+              "admission_status"
+            ]
+          },
+          "then": {
+            "properties": {
+              "proof_status": {
+                "const": "qualified_for_host"
+              }
+            }
+          }
+        }
+      ]
+    },
+    "authorization": {
+      "type": "object",
+      "description": "The foundry's boundary block (knowledge/capability-shelf/foundry-state-machine.json .boundary), carried onto the block it governs. 'prototype' says this is an authored prototype rather than a released artifact; 'implementation_authorized' records whether anyone was authorized to implement against it. Both are preserved from v1 rather than dropped: a block that quietly loses its authorization boundary looks authorized.",
+      "required": [
+        "prototype",
+        "implementation_authorized"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "prototype": {
+          "type": "boolean"
+        },
+        "implementation_authorized": {
+          "type": "boolean"
+        }
+      }
+    },
+    "reuse": {
+      "type": "object",
+      "required": [
+        "shape",
+        "rights_exposure",
+        "mount_topology"
+      ],
+      "properties": {
+        "shape": {
+          "description": "The reuse shape. Not a label — the field that determines WHICH evidence the block owes (see required_evidence below). Bykonz mounted ten donors under one declared mode string, 'same-origin-full-page-proxy', whose implementations shared nothing: Chatwoot navigated off-origin, Plane rewrote the donor's JS bundle by hardcoded filename, Listmonk shipped as an opaque binary that could not take the approach at all. An undescribed shape name with no evidence requirement is how that happens. Each value carries what it means and what it must prove.\n\n• extracted_package — A permissively-licensed SUBSET of a donor is compiled into the host bundle; the rest of the donor is not taken. Distinct from absorbed_native, which takes the donor whole. The distinction is load-bearing when a donor is split-licensed: Teable's packages/* is MIT while apps/* is AGPL, so extracting the grid avoids a Section 7 corresponding-source obligation that vendoring the application would incur. Owes build-and-render evidence. Owes NO session, origin or replay evidence — it is not a service, and demanding an SSO receipt of a compiled component is ceremony.\n• absorbed_native — The donor's source is taken into the host and owned outright. Owes everything extracted_package owes, plus a rights posture permitting whole-donor redistribution under the host's terms.\n• preserved_framed — The donor runs as its own application, surfaced inside a host frame. Owes everything intact_service owes, plus a frame-origin policy and a navigation-intent contract, because the donor now controls a rectangle of the host's UI.\n• preserved_identity_erased — The donor runs intact with its branding and chrome suppressed so it reads as host surface. Owes everything preserved_framed owes, plus proof the erasure survives a donor upgrade — an unpinned donor can restore its own chrome in a point release.\n• intact_service — The donor runs as a separate service the host routes to. Owes the Bykonz acceptance contract, which is stricter than anything else in this schema: an authenticated flow proven to reach native donor UI, data isolation (own database, own cache namespace, own object storage), a wrong-origin request denied, a replayed token denied, and persistence across a donor restart.",
+          "enum": [
+            "extracted_package",
+            "absorbed_native",
+            "assimilated_package",
+            "preserved_framed",
+            "preserved_identity_erased",
+            "intact_service"
+          ]
+        },
+        "rights_exposure": {
+          "enum": [
+            "none_network_only",
+            "host_code",
+            "donor_code",
+            "mixed"
+          ]
+        },
+        "mount_topology": {
+          "enum": [
+            "same_document",
+            "iframe_same_origin",
+            "iframe_cross_origin",
+            "service_only"
+          ]
+        },
+        "mount_profile": {
+          "type": "string"
+        },
+        "runtime_profile": {
+          "type": "string"
+        },
+        "binding_class": {
+          "enum": [
+            "B1",
+            "B2",
+            "B3",
+            "B4",
+            "B5"
+          ]
+        },
+        "coherence_ceiling": {
+          "enum": [
+            "full",
+            "bounded",
+            "unknown"
+          ]
+        },
+        "build_evidence": {
+          "type": "object",
+          "description": "Required for extracted_package and absorbed_native. Every field is a claim a program can falsify — no field here is satisfied by an assertion.",
+          "required": [
+            "builds_in_isolation",
+            "excluded_licence_tree",
+            "imports_from_excluded_tree",
+            "renders_in_host_tree"
+          ],
+          "properties": {
+            "builds_in_isolation": {
+              "type": "boolean",
+              "description": "The extracted subset compiles with only its own declared dependencies, in a container with no access to the rest of the donor. False is a legitimate recorded state; absent is not."
+            },
+            "excluded_licence_tree": {
+              "type": "string",
+              "description": "The donor path deliberately NOT taken, e.g. 'apps/' for Teable. Names what the extraction is avoiding so the next field is checkable rather than rhetorical."
+            },
+            "imports_from_excluded_tree": {
+              "type": "integer",
+              "description": "Count of resolved imports crossing into excluded_licence_tree. Must be 0 for the extraction claim to hold. A non-zero count does not fail the schema — it fails the CLAIM, and is recorded rather than hidden."
+            },
+            "renders_in_host_tree": {
+              "type": "boolean",
+              "description": "The component mounts and paints inside the host's own React tree — not an iframe, not a separate origin."
+            },
+            "bundle_delta_bytes": {
+              "type": "integer",
+              "description": "Measured increase in host bundle size. Optional, because a first extraction may precede a host to measure against."
+            }
+          },
+          "additionalProperties": true
+        },
+        "service_evidence": {
+          "type": "object",
+          "description": "Required for the three service-shaped values. This is the Bykonz acceptance contract, carried over because it is the strictest thing either project produced. Its central rule — staticReachabilityNeverImpliesHealthy — is why authenticated_flow_proven exists as a separate field from any health check: at Bykonz every module reported healthy while the system-level acceptance failed with all four route-denial probes regressed to FAIL_200.",
+          "required": [
+            "authenticated_flow_proven",
+            "data_isolation",
+            "wrong_origin_denied",
+            "replay_denied"
+          ],
+          "properties": {
+            "authenticated_flow_proven": {
+              "type": "boolean",
+              "description": "A real login reached native donor UI, asserted on donor-specific markers. An HTTP 200 is never evidence of this."
+            },
+            "data_isolation": {
+              "type": "object",
+              "description": "The donor owns its own state. Bykonz's per-donor contract: own database, own cache namespace, own object storage — never shared with the host or another donor.",
+              "required": [
+                "database",
+                "cache_namespace",
+                "object_storage"
+              ],
+              "properties": {
+                "database": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "cache_namespace": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "object_storage": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              },
+              "additionalProperties": true
+            },
+            "wrong_origin_denied": {
+              "type": "boolean",
+              "description": "A request from an unexpected origin was refused. A negative probe that was never run is not a pass — R8."
+            },
+            "replay_denied": {
+              "type": "boolean",
+              "description": "A replayed session token was refused. Note the Bykonz implementation held nonces in process memory, so this did not survive restart or horizontal scale; record the mechanism, not just the boolean."
+            },
+            "restart_persistence": {
+              "type": "boolean",
+              "description": "State survived a donor restart."
+            }
+          },
+          "additionalProperties": true
+        },
+        "framing_debt": {
+          "type": "object",
+          "description": "R4: an iframe or intact-service mount is DEBT and requires written justification plus a named path to absorption. Required below by the conditional on reuse.shape.",
+          "required": [
+            "justification",
+            "absorption_path"
+          ],
+          "properties": {
+            "justification": {
+              "type": "string",
+              "minLength": 1
+            },
+            "absorption_path": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "additionalProperties": true
+        },
+        "donor": {
+          "type": "object",
+          "description": "Present when a donor exists. Pins identity by revision and digest, never by a floating branch.",
+          "properties": {
+            "repository": {
+              "type": "string"
+            },
+            "upstream_repository": {
+              "type": "string"
+            },
+            "immutable_revision": {
+              "type": "string",
+              "minLength": 1
+            },
+            "upstream_revision": {
+              "type": "string",
+              "pattern": "^[0-9a-f]{40}$"
+            },
+            "source_digest": {
+              "type": "string",
+              "pattern": "^sha256:[0-9a-f]{64}$"
+            },
+            "source_digest_basis": {
+              "type": "string",
+              "minLength": 1
+            },
+            "license": {
+              "type": "string",
+              "minLength": 1,
+              "description": "R1: metadata with ZERO selection weight. Recorded because rights matter at admission, never at selection. No scoring mechanism may read this field."
+            },
+            "runtime_reference": {
+              "type": "string"
+            }
+          },
+          "additionalProperties": true
+        },
+        "ownership": {
+          "type": "object",
+          "description": "Who owns what across the seam. Free-form values because ownership prose differs per donor; the KEYS are what the catalog joins on.",
+          "additionalProperties": true
+        }
+      },
+      "additionalProperties": true,
+      "allOf": [
+        {
+          "description": "R4: framing is debt. Any non-absorbed shape must carry a written justification and a named absorption path.",
+          "if": {
+            "properties": {
+              "shape": {
+                "enum": [
+                  "preserved_framed",
+                  "assimilated_package",
+                  "preserved_identity_erased",
+                  "intact_service"
+                ]
+              }
+            },
+            "required": [
+              "shape"
+            ]
+          },
+          "then": {
+            "required": [
+              "framing_debt"
+            ]
+          }
+        },
+        {
+          "description": "Shape-specific evidence. A service-shaped block must carry the Bykonz acceptance contract; a compiled-in block must not be asked for it. Asking every shape the same questions is how ceremony accumulates on the cheap shapes and how real gaps hide on the expensive ones.",
+          "if": {
+            "properties": {
+              "shape": {
+                "enum": [
+                  "preserved_framed",
+                  "preserved_identity_erased",
+                  "intact_service"
+                ]
+              }
+            },
+            "required": [
+              "shape"
+            ]
+          },
+          "then": {
+            "required": [
+              "service_evidence"
+            ]
+          }
+        },
+        {
+          "description": "A compiled-in block owes build-and-render proof instead.",
+          "if": {
+            "properties": {
+              "shape": {
+                "enum": [
+                  "extracted_package",
+                  "absorbed_native",
+                  "assimilated_package"
+                ]
+              }
+            },
+            "required": [
+              "shape"
+            ]
+          },
+          "then": {
+            "required": [
+              "build_evidence"
+            ]
+          }
+        }
+      ]
+    },
+    "records": {
+      "type": "object",
+      "description": "The seven linked records. Exactly seven, snake_case keys, each a package-relative path. The link structure is what makes record integrity checkable by a program rather than by reading.",
+      "required": [
+        "capability",
+        "packaging",
+        "host_requirements",
+        "binding_plan",
+        "qualification",
+        "registry",
+        "release"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "capability": {
+          "$ref": "#/$defs/recordPath"
+        },
+        "packaging": {
+          "$ref": "#/$defs/recordPath"
+        },
+        "host_requirements": {
+          "$ref": "#/$defs/recordPath"
+        },
+        "binding_plan": {
+          "$ref": "#/$defs/recordPath"
+        },
+        "qualification": {
+          "$ref": "#/$defs/recordPath"
+        },
+        "registry": {
+          "$ref": "#/$defs/recordPath"
+        },
+        "release": {
+          "$ref": "#/$defs/recordPath"
+        }
+      }
+    },
+    "interfaces": {
+      "type": "object",
+      "required": [
+        "host_binding",
+        "host_binding_schema"
+      ],
+      "properties": {
+        "host_binding": {
+          "$ref": "#/$defs/relativePath"
+        },
+        "host_binding_schema": {
+          "$ref": "#/$defs/relativePath"
+        },
+        "generated_binding_filename": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "additionalProperties": true
+    },
+    "configuration": {
+      "type": "object",
+      "required": [
+        "schema",
+        "example"
+      ],
+      "properties": {
+        "schema": {
+          "$ref": "#/$defs/relativePath"
+        },
+        "example": {
+          "$ref": "#/$defs/relativePath"
+        },
+        "secret_policy": {
+          "type": "string",
+          "minLength": 1
+        },
+        "required_environment_references": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "uniqueItems": true
+        }
+      },
+      "additionalProperties": true
+    },
+    "fixture": {
+      "type": "object",
+      "required": [
+        "host",
+        "purpose"
+      ],
+      "properties": {
+        "host": {
+          "$ref": "#/$defs/relativePath"
+        },
+        "config": {
+          "$ref": "#/$defs/relativePath"
+        },
+        "purpose": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "additionalProperties": true
+    },
+    "theme": {
+      "type": "object",
+      "description": "Absent when the reuse shape cannot inherit host tokens. A cross-origin frame HAS no theme bridge, and v2 does not let a block pretend otherwise: absence is a recorded consequence of the mount topology, checked by the conditional below.",
+      "required": [
+        "bridge",
+        "scope_selector",
+        "global_root_writes"
+      ],
+      "properties": {
+        "bridge": {
+          "$ref": "#/$defs/relativePath"
+        },
+        "scope_selector": {
+          "type": "string",
+          "minLength": 1
+        },
+        "variable_format": {
+          "type": "string"
+        },
+        "global_root_writes": {
+          "const": false,
+          "description": "A block may never write global :root; it would leak donor tokens into the host."
+        }
+      },
+      "additionalProperties": true
+    },
+    "commands": {
+      "type": "object",
+      "required": [
+        "validate",
+        "smoke"
+      ],
+      "properties": {
+        "validate": {
+          "type": "string",
+          "minLength": 1
+        },
+        "smoke": {
+          "type": "string",
+          "minLength": 1
+        },
+        "bind": {
+          "type": "string",
+          "minLength": 1
+        },
+        "install": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "additionalProperties": true
+    },
+    "verification": {
+      "type": "object",
+      "required": [
+        "command",
+        "required_evidence",
+        "negative_fixtures"
+      ],
+      "properties": {
+        "command": {
+          "type": "string",
+          "minLength": 1
+        },
+        "required_evidence": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string"
+          },
+          "uniqueItems": true
+        },
+        "negative_fixtures": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "description": "R8: a gate that has never been seen to fail is not a gate. Every block must name at least one input it REFUSES, with the refusal code it emits. A block claiming only positive checks is not verified.",
+          "items": {
+            "type": "object",
+            "required": [
+              "name",
+              "refusal_code"
+            ],
+            "properties": {
+              "name": {
+                "type": "string",
+                "minLength": 1
+              },
+              "refusal_code": {
+                "type": "string",
+                "pattern": "^[a-z][a-z0-9_]*$",
+                "description": "A named, stable refusal code. 'it threw an error' is not a refusal code."
+              }
+            },
+            "additionalProperties": true
+          }
+        }
+      },
+      "additionalProperties": true
+    },
+    "evidence": {
+      "type": "object",
+      "description": "Evidence binds by POINTER, never by copy (GQ-006 criterion 3). Corpora do not move into the block.\n\nPIN SHAPE - choose by asking 'does this artifact grow?', not 'is it big?':\n  * whole-file pin (sha256 of the file) is CORRECT for artifacts that do not grow: a schema, a manifest, a receipt, a pinned donor revision archive. It is the stronger check; keep using it there.\n  * row-selector pin (selector + row_sha256) is REQUIRED for append-only ledgers - .jsonl registries, inventories, event logs. Pinning the whole file means any unrelated append invalidates every block citing it. source-registry.jsonl grew 191 -> 3,010 rows and turned affine red for a row appended 3,000 lines from the evidence it cited; block-hub maps 80 blocks against that same ledger, so whole-file pinning would redden all 80 on one intake run (GQ-006 falsifier 2 at scale).\nResolver: blocks/_schema/evidence-pin.mjs, which reports ok / digest_drift / missing_row / ambiguous as DISTINCT states - 'the evidence is gone' and 'the evidence changed' are different facts.",
+      "properties": {
+        "index": {
+          "type": "string",
+          "minLength": 1
+        },
+        "current_interpretation": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "additionalProperties": true
+    },
+    "holds": {
+      "type": "array",
+      "description": "Open, named, owned questions. A block with unproven surfaces states them here rather than staying silent; silence reads as proof.",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "status",
+          "statement",
+          "owner"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "status": {
+            "enum": [
+              "OPEN",
+              "CLOSED"
+            ]
+          },
+          "statement": {
+            "type": "string",
+            "minLength": 1
+          },
+          "owner": {
+            "type": "string",
+            "minLength": 1
+          },
+          "next_gate": {
+            "type": "string"
+          }
+        },
+        "additionalProperties": true
+      }
+    },
+    "source_boundary": {
+      "type": "object",
+      "description": "Every field is pinned const:false. This is the pair's hardest-won invariant and v2 keeps it exactly: a block that copied donor source, embedded a secret, hard-coded a client path or performed a deployment CANNOT be spelled in this grammar. Not 'should not' — cannot.",
+      "required": [
+        "source_copied",
+        "donor_repository_vendored",
+        "secrets_embedded",
+        "absolute_client_paths_embedded",
+        "deployment_performed"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "source_copied": {
+          "const": false
+        },
+        "donor_repository_vendored": {
+          "const": false
+        },
+        "secrets_embedded": {
+          "const": false
+        },
+        "absolute_client_paths_embedded": {
+          "const": false
+        },
+        "deployment_performed": {
+          "const": false
+        }
+      }
+    },
+    "runbook": {
+      "$ref": "#/$defs/relativePath"
+    }
+  },
+  "additionalProperties": false,
+  "allOf": [
+    {
+      "description": "A cross-origin frame cannot inherit host semantic tokens, so it must NOT claim a theme bridge. R4's evidence: affine has no theme file at all and that is the honest state; teable, same-origin behind a proxy, does. The grammar enforces the difference instead of leaving it to prose.",
+      "if": {
+        "properties": {
+          "reuse": {
+            "properties": {
+              "mount_topology": {
+                "const": "iframe_cross_origin"
+              }
+            },
+            "required": [
+              "mount_topology"
+            ]
+          }
+        },
+        "required": [
+          "reuse"
+        ]
+      },
+      "then": {
+        "not": {
+          "required": [
+            "theme"
+          ]
+        }
+      }
+    }
+  ],
+  "$defs": {
+    "namespacedId": {
+      "type": "string",
+      "pattern": "^[a-z0-9][a-z0-9-]*/[a-z0-9][a-z0-9-]*$",
+      "description": "<namespace>/<name>, no version. Namespace open; both segments filesystem- and URL-safe. Deliberately contains no version digits."
+    },
+    "semver": {
+      "type": "string",
+      "pattern": "^(0|[1-9][0-9]*)\\.(0|[1-9][0-9]*)\\.(0|[1-9][0-9]*)(?:-[0-9A-Za-z.-]+)?$"
+    },
+    "relativePath": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Package-relative. Rejects absolute POSIX paths, Windows drive paths, and parent escapes.",
+      "allOf": [
+        {
+          "pattern": "^(?!/)"
+        },
+        {
+          "pattern": "^(?![A-Za-z]:[\\\\/])"
+        },
+        {
+          "pattern": "^(?!\\.\\./)"
+        },
+        {
+          "not": {
+            "pattern": "(?:^|/)\\.\\.(?:/|$)"
+          }
+        }
+      ]
+    },
+    "recordPath": {
+      "type": "string",
+      "pattern": "^records/[A-Za-z0-9._-]+\\.json$",
+      "description": "Records live in records/. Constrained tighter than relativePath so a record can never point outside its own directory."
+    }
+  }
+}

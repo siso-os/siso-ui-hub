@@ -1,0 +1,237 @@
+{
+  "package": "@siso/navigation",
+  "version": "0.4.1",
+  "license": "MIT",
+  "implementation": "Original UI Hub navigation presentation and animated icon sources extracted beside compatible generic navigation exports",
+  "componentCount": 32,
+  "components": [
+    {
+      "export": "SisoSideNav",
+      "variants": [
+        "grouped",
+        "nested-disclosure",
+        "collapsed-rail",
+        "counts",
+        "controlled-expansion"
+      ],
+      "source": [
+        "app/src/components/SideNav.tsx",
+        "app/src/kitv1/siso/app-frame.tsx"
+      ]
+    },
+    {
+      "export": "SisoMobileNav",
+      "variants": [
+        "native-modal",
+        "controlled",
+        "uncontrolled"
+      ],
+      "source": [
+        "app/src/components/AppShell.tsx"
+      ]
+    },
+    {
+      "export": "SisoNavSwitcher",
+      "variants": [
+        "workspace",
+        "tool",
+        "space"
+      ],
+      "source": [
+        "app/src/kitv1/siso/app-frame.tsx"
+      ]
+    },
+    {
+      "export": "SisoToolNav",
+      "variants": [
+        "horizontal",
+        "vertical"
+      ],
+      "source": [
+        "app/src/kitv1/siso/app-frame.tsx"
+      ]
+    },
+    {
+      "export": "SisoBreadcrumbs",
+      "variants": [
+        "page-links"
+      ],
+      "source": [
+        "app/src/components/AppShell.tsx"
+      ]
+    },
+    {
+      "export": "SisoPageTabs",
+      "variants": [
+        "page-links",
+        "counts"
+      ],
+      "source": [
+        "app/src/components/AppShell.tsx"
+      ]
+    },
+    {
+      "export": "SisoHubSideNav",
+      "variants": [
+        "factory-core-switcher",
+        "public-hub",
+        "grouped",
+        "drill-back",
+        "foldouts",
+        "source-counts",
+        "places-footer"
+      ],
+      "source": [
+        "app/src/components/SideNav.tsx"
+      ]
+    },
+    {
+      "export": "SisoHubNavRow",
+      "variants": [
+        "active-warm-well",
+        "count",
+        "pick-dot",
+        "animated-glyph"
+      ],
+      "source": [
+        "app/src/components/SideNav.tsx"
+      ]
+    },
+    {
+      "export": "SisoHubNavSlide",
+      "variants": [
+        "forward",
+        "back"
+      ],
+      "source": [
+        "app/src/components/SideNav.tsx"
+      ]
+    },
+    {
+      "export": "SisoHubSearchButton",
+      "variants": [
+        "click",
+        "slash",
+        "command-k"
+      ],
+      "source": [
+        "app/src/components/SideNav.tsx"
+      ]
+    },
+    {
+      "export": "SisoHubNavFoot",
+      "variants": [
+        "version",
+        "help-menu",
+        "releases",
+        "shortcuts"
+      ],
+      "source": [
+        "app/src/components/SideNav.tsx"
+      ]
+    },
+    {
+      "export": "SisoHubNavPlaces",
+      "variants": [
+        "source-icon-strip"
+      ],
+      "source": [
+        "app/src/components/SideNav.tsx"
+      ]
+    },
+    {
+      "export": "SisoHubNavGlyph",
+      "variants": [
+        "active",
+        "hover",
+        "reduced-motion"
+      ],
+      "source": [
+        "app/src/components/SideNav.tsx"
+      ]
+    }
+  ],
+  "types": [
+    "SisoNavItem",
+    "SisoNavGroup",
+    "SisoRenderLink",
+    "SisoNavigationProps",
+    "SisoSideNavProps",
+    "SisoMobileNavProps",
+    "SisoNavSwitcherProps",
+    "SisoToolNavProps",
+    "SisoBreadcrumbsProps",
+    "SisoPageTabsProps"
+  ],
+  "styles": "@siso/navigation/styles.css",
+  "dependencies": [
+    "react",
+    "react-dom",
+    "lucide-react",
+    "framer-motion",
+    "motion"
+  ],
+  "peers": [
+    "react@^19",
+    "react-dom@^19"
+  ],
+  "excluded": [
+    "hub ontology",
+    "catalogue stores",
+    "auth",
+    "router",
+    "HALO source",
+    "commercial reference-only source",
+    "icon packages"
+  ],
+  "browserRequirements": [
+    "HTMLDialogElement.showModal for SisoMobileNav"
+  ],
+  "sourceStyles": "@siso/navigation/hub.css",
+  "sourceRequires": "Original Tailwind utilities generated from package source, plus Hub theme tokens",
+  "helpers": [
+    "sisoHubNavIcon"
+  ],
+  "provenance": "source-provenance.json",
+  "subpaths": {
+    "./agent-base": {
+      "sourcePackage": "@siso/side-nav",
+      "components": [
+        "Duration",
+        "RowAction",
+        "StatusRow",
+        "StatusWord",
+        "NavHeading",
+        "Shelf",
+        "SideNav",
+        "SideSection",
+        "GroupedRail",
+        "RailCapsule",
+        "RailDock",
+        "RailGroup",
+        "RailIcon",
+        "RailRow",
+        "SortableItem",
+        "SortableRail",
+        "ProjectGroup",
+        "ThreadRow",
+        "StatusSlot"
+      ],
+      "helpers": [
+        "formatAge",
+        "formatDuration",
+        "SortableOn"
+      ],
+      "types": [
+        "RowStatus",
+        "Tone",
+        "ThreadMark",
+        "SlotState"
+      ],
+      "styles": "@siso/navigation/agent-base.css",
+      "sourceStylesByteIdentical": true,
+      "adaptation": "@siso/shell imports renamed to @siso/shells/agent-base; all providers, props, DnD sensors and state preserved"
+    }
+  },
+  "agentBaseComponentCount": 19
+}
