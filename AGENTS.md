@@ -1,6 +1,6 @@
 # siso-ui-hub
 
-**In one line:** SISO's shared UI kit, design rules and component catalogue. Owner: UI-HUB. Canonical source: `platform/ui` in `sisodias/siso`; the catalog application is `hubs/ui`. Follow root ADRs 0021–0022: products consume shared packages, and the old standalone repo is provenance rather than a second writable source.
+**In one line:** SISO's shared UI kit, design rules and component catalogue. Owner: UI-HUB. Canonical source: `packages/ui` in `sisodias/siso`; the catalog application is `apps/ui`. Follow root ADRs 0021–0022: products consume shared packages, and the old standalone repo is provenance rather than a second writable source.
 
 ## Before you build any UI (in any SISO project)
 

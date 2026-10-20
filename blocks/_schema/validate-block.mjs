@@ -2,7 +2,7 @@
 //
 // The v2 block-manifest validator. ONE validator that reads EVERY block.
 //
-// Usage:  node platform/ui/blocks/_schema/validate-block.mjs <block-directory> [...more]
+// Usage:  node packages/ui/blocks/_schema/validate-block.mjs <block-directory> [...more]
 // Exit:   0 = every block valid   1 = at least one violation   2 = could not run
 //
 // Design rules this file obeys, because each was already broken once:

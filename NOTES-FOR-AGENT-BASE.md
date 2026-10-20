@@ -1,8 +1,8 @@
 # Agent Base and the shared UI kit
 
 The canonical code now lives in this monorepo. The UI kit is
-[`platform/ui`](./); the catalog application is
-[`hubs/ui`](../../hubs/ui/); Agent Base is
+[`packages/ui`](./); the catalog application is
+[`apps/ui`](../../apps/ui/); Agent Base is
 [`apps/agent-base`](../../apps/agent-base/). This supersedes the former
 standalone submodule setup. Do not add another UI Hub checkout or copy its
 components into Agent Base.
@@ -30,9 +30,9 @@ product behavior with an older kit snapshot.
 ## Mount the catalog application separately
 
 The UI Hub application remains a product, not a component dependency. Its
-[`package.json`](../../hubs/ui/package.json),
-[`SPEC.md`](../../hubs/ui/SPEC.md) and
-[`serve.mjs`](../../hubs/ui/serve.mjs) define its build, data API and server.
+[`package.json`](../../apps/ui/package.json),
+[`SPEC.md`](../../apps/ui/SPEC.md) and
+[`serve.mjs`](../../apps/ui/serve.mjs) define its build, data API and server.
 Build the registered `@siso/ui-hub` workspace member from the root workspace.
 Its build exports catalog data before rendering and checks `dist/data/index.json`.
 
@@ -50,7 +50,7 @@ their absence must not be described as verified full-catalog availability.
 
 UI-HUB owns the shared parts and catalog. Agent Base owns its product integration,
 routes, services and terminal. Both work in the canonical tree through isolated
-branches; [ADR 0022](../../decisions/0022-hubs-are-products-one-workspace.md)
+branches; [ADR 0022](../../ops/decisions/0022-hubs-are-products-one-workspace.md)
 requires shared-code promotion and consumer adoption together.
 
 Verify the affected shared package and product build before landing an adoption.

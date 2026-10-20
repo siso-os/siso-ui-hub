@@ -260,10 +260,10 @@ function main() {
   console.log(`Scaffolded ${blockId} at ${dir}`);
   console.log('');
   console.log('This block does NOT validate yet, on purpose. Fill in every TODO, then:');
-  console.log('  Prepare the source-backed worker packet described in platform/ui/blocks/_factory/SOURCED-DECISIONS.md.');
-  console.log('  Direct check: node platform/ui/blocks/_factory/verify-sourced-decision.mjs --input <packaging.json> --sources <source-lock.json> --repo <owner/name>=<checkout>');
+  console.log('  Prepare the source-backed worker packet described in packages/ui/blocks/_factory/SOURCED-DECISIONS.md.');
+  console.log('  Direct check: node packages/ui/blocks/_factory/verify-sourced-decision.mjs --input <packaging.json> --sources <source-lock.json> --repo <owner/name>=<checkout>');
   console.log('  The historical reuse-decision.mjs command checks structure only, not source bytes.');
-  console.log(`  node platform/ui/blocks/_schema/validate-block.mjs ${dir}`);
+  console.log(`  node packages/ui/blocks/_schema/validate-block.mjs ${dir}`);
   console.log('');
   console.log('A reuse decision may select planning only. It never qualifies, admits or releases the block.');
   console.log('Before raising any lifecycle axis above its floor, have a receipt for it (R3, R5).');

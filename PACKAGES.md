@@ -1,6 +1,6 @@
 # SISO UI suite packages
 
-The canonical workspace source is `platform/ui/packages/siso-ui` (`@siso/ui`), backed by nine focused shards in this directory. Version **0.4.1** imports the verified 0.4 kit into the monorepo and connects the rendered hub consumers to it. All sibling dependencies in source use `workspace:*`; the packer converts them to exact release versions for external consumers.
+The canonical workspace source is `packages/ui/packages/siso-ui` (`@siso/ui`), backed by nine focused shards in this directory. Version **0.4.1** imports the verified 0.4 kit into the monorepo and connects the rendered hub consumers to it. All sibling dependencies in source use `workspace:*`; the packer converts them to exact release versions for external consumers.
 
 ## Monorepo consumers
 
@@ -8,7 +8,7 @@ UI Hub and Bench use the same source shell, navigation and pill switch. UI Hub's
 
 The products retain their routes, records, searches and content. Existing sidebar storage keys and skip-link targets are preserved. React hubs and the shared runtime use React/ReactDOM 19.2.7 to prevent separate hook runtimes. The workspace lock includes the existing external Teable build metadata required by Business OS; no Teable implementation is imported here. That product's vendor build remains outside Git as its README specifies.
 
-Use the root pnpm workspace and `platform/ui/check.sh` for the package check. `SISO_UI_TOOLCHAIN` still permits a matching preinstalled toolchain for bounded checks. Build artifacts and browser receipts belong in a dedicated `SISO_UI_OUTPUT` data directory. The 0.4 release below is the frozen predecessor; its evidence is not a claim that the new monorepo builds have passed.
+Use the root pnpm workspace and `packages/ui/check.sh` for the package check. `SISO_UI_TOOLCHAIN` still permits a matching preinstalled toolchain for bounded checks. Build artifacts and browser receipts belong in a dedicated `SISO_UI_OUTPUT` data directory. The 0.4 release below is the frozen predecessor; its evidence is not a claim that the new monorepo builds have passed.
 
 ## Version 0.4 ECharts expansion
 
