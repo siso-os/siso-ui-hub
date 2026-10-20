@@ -1,0 +1,66 @@
+{
+  "record_type": "RegistryRecord",
+  "record_version": "1.0.0",
+  "record_id": "registry.actionist-teable-data-grid.v0.1.0",
+  "block_id": "actionist/teable-data-grid",
+  "version": "0.1.0",
+  "capability_id": "actionist/teable-data-grid",
+  "links": {
+    "manifest": "../actionist-block.json",
+    "capability": "capability.json",
+    "packaging": "packaging.json",
+    "host_requirements": "host-requirements.json",
+    "binding_plan": "binding-plan.json",
+    "qualification": "qualification.json",
+    "release": "release.json"
+  },
+  "status": "held",
+  "scope_id": "actionist-teable-data-grid-prototype",
+  "lifecycle_status": "held_for_qualification",
+  "source_registry_id": "SRC-0003",
+  "source_registry_verdict": "reusable_candidate_with_partial_bykonz_integration_proof",
+  "reuse_shape": "intact_service",
+  "qualification_status": "NOT_QUALIFIED",
+  "execution_status": "PARTIAL_LOCAL_EXECUTION",
+  "admission_status": "NOT_ADMITTED",
+  "admission_scope": {
+    "tenants": [],
+    "applications": [],
+    "environments": [
+      "synthetic_fixture_only"
+    ],
+    "interpretation": "An empty tenant/application scope means admitted nowhere; synthetic fixture status is a test boundary, not an admission."
+  },
+  "supersedes": [],
+  "superseded_by": [],
+  "revocation_propagation": "reopen_all_composing_assemblies_to_held",
+  "projection_policy": {
+    "target": "Actionist capability shelf",
+    "lossy_flagged": true,
+    "refuse_projection_when": [
+      "rights_state:ambiguous",
+      "rights_state:incompatible"
+    ],
+    "current_rights_state": "declared",
+    "current_projection": "candidate_only; preserve falsifiers and limitations"
+  },
+  "compatibility": {
+    "host_contract": "actionist.host/v0.1.0",
+    "runtime_profile": "sidecar_service",
+    "one_server_separate_schema": "declared_compatible_with_pinned_public_metadata_constraint",
+    "requires_host_verified_identity": true,
+    "requires_tenant_context": true
+  },
+  "holds": [
+    "authenticated native desktop and mobile UI CRUD",
+    "attachment upload/read authorization and namespace proof",
+    "independent role/schema/restore proof",
+    "host identity handoff and direct-denial proof",
+    "AGPL corresponding-source and Section 7 product/legal attestation"
+  ],
+  "governance": {
+    "owner": "actionist-block-teable",
+    "decision_authority": "operator",
+    "release_requires": "all qualification families pass for a named host scope and a new immutable release manifest"
+  }
+}

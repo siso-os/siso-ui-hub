@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en" class="dark"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow"><title>SISO charts, curated</title>
+<link rel="stylesheet" href="app.css">
+<style>
+:root{--bg:#0d0d10;--panel:#16161b;--line:#26262e;--fg:#ececf1;--mut:#8b8b98;--acc:#f59e0b}
+html{background:var(--bg)}body{margin:0;font:14px/1.45 ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;color:var(--fg);background:var(--bg)}
+a{color:var(--acc)}
+.top{position:sticky;top:0;z-index:20;background:rgba(13,13,16,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);padding:10px 20px}
+.top h1{margin:0;font-size:17px}.top .sub{color:var(--mut);font-size:12px}
+.tabs{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}
+.tab{border:1px solid var(--line);background:var(--panel);color:var(--fg);padding:4px 10px;border-radius:999px;cursor:pointer;font-size:12px}
+.tab.on{background:var(--acc);color:#1a1000;border-color:var(--acc)}.tab small{opacity:.7;margin-left:4px}
+.wrap{padding:16px 20px 80px;max-width:1700px;margin:0 auto}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(400px,100%),1fr));gap:14px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:12px;overflow:hidden;display:flex;flex-direction:column}
+.card.fit{grid-column:1/-1;min-width:0}.card.fit .m{height:auto;display:block;overflow:visible}.card.fit .m>*{width:900px!important;max-width:none!important;margin-inline:auto;zoom:var(--chart-scale,1)}
+.card.named{border-color:var(--acc)}
+.card .hd{padding:8px 10px 0;display:flex;gap:6px;align-items:baseline;flex-wrap:wrap}
+.card .nm{font-weight:600;font-size:13px;word-break:break-all}
+.chip{font-size:10px;padding:1px 7px;border-radius:999px;border:1px solid var(--line);color:var(--mut);white-space:nowrap}
+.chip.v{border-color:#60a5fa;color:#60a5fa;cursor:pointer}.chip.mine{border-color:#34d399;color:#34d399}
+.card .m{padding:8px;height:300px;overflow:hidden;position:relative;display:flex;align-items:center;justify-content:center}
+.card .m.tall{height:480px;overflow:auto;align-items:flex-start}
+.card .m.p21{overflow:auto;align-items:flex-start;justify-content:flex-start;background:#1a1a20}
+.card .m.p21 .min-h-screen{min-height:0!important}.card .m.p21 .h-screen{height:auto!important}
+.card .m>*{max-width:100%}.card .m img{width:100%;height:100%;object-fit:contain;background:#0b0b0d}
+.card .why{padding:0 10px 4px;font-size:12px;color:var(--acc)}
+.card .ft{padding:0 10px 8px;color:var(--mut);font-size:11px}
+.vars{display:none;padding:6px 8px 8px;gap:6px;flex-wrap:wrap;border-top:1px solid var(--line)}.vars.on{display:flex}
+.vars figure{margin:0;width:120px;font-size:10px;color:var(--mut)}.vars img{width:120px;height:80px;object-fit:contain;background:#0b0b0d;border-radius:6px;display:block}
+.vars .lv{width:120px;height:80px;background:#0b0b0d;border-radius:6px;display:flex;align-items:center;justify-content:center;font-size:10px}
+.sec{margin:26px 0 8px;font-size:15px;font-weight:700}.sec small{color:var(--mut);font-weight:400;margin-left:8px}
+.lead{max-width:900px;color:var(--mut)}
+pre{background:#101014;border:1px solid var(--line);border-radius:8px;padding:10px;overflow:auto;font-size:12px}
+table{border-collapse:collapse;font-size:12px}td,th{border-bottom:1px solid var(--line);padding:5px 10px;text-align:left}
+</style></head><body>
+<div class="top"><h1>SISO charts, curated <span class="sub" id="sub"></span></h1><div class="tabs" id="tabs"></div></div>
+<div class="wrap" id="main"></div>
+<script>/*DATA*/</script>
+<script type="module">
+const D = window.DATA, $ = (s, e = document) => e.querySelector(s), esc = (s) => String(s ?? "").replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]))
+let host = null
+const loadHost = () => host ||= import("./d/host.js")
+$("#sub").textContent = `${(D.totals.parts - D.totals.ours).toLocaleString()} charts and visuals + ${D.totals.nonCharts.toLocaleString()} parts that are not charts (left out) = ${(D.totals.parts - D.totals.ours + D.totals.nonCharts).toLocaleString()} catalogued; the ${(D.totals.parts - D.totals.ours).toLocaleString()} fold into ${D.totals.families.toLocaleString()} distinct charts, plus ${D.totals.ours} of ours`
+// Keep the complete chart canvas visible, including headings, legends and every column.
+const fitKeys = new Set(["siso--funnel", "siso--heatmap-matrix-incidents", "siso--heatmap-matrix-tips", "siso--range-area"])
+const fitObserver = new ResizeObserver((entries) => entries.forEach(({ target, contentRect }) => target.style.setProperty("--chart-scale", Math.min(1, contentRect.width / 900))))
+const roots = new WeakMap()
+const io = new IntersectionObserver((es) => es.forEach((e) => {
+  const m = e.target, k = m.dataset.k
+  if (e.isIntersecting && !roots.has(m)) { roots.set(m, "pending"); loadHost().then((h) => h.mount(k, m)).then((r) => { roots.set(m, r || "failed"); setTimeout(() => { const er = m.querySelector(".desk-err"); if (er && m.dataset.thumb) { roots.set(m, "failed"); m.innerHTML = `<img loading="lazy" src="${m.dataset.thumb}" alt="">` } }, 1500) }) }
+  else if (!e.isIntersecting && roots.get(m) && roots.get(m) !== "pending") { const r = roots.get(m); roots.delete(m); try { r.unmount?.() } catch {} ; m.innerHTML = "" }
+}), { rootMargin: "700px" })
+const card = (i, big) => {
+  const el = document.createElement("div"); el.className = "card" + (i.why ? " named" : "")
+  const nv = i.variants?.length || 0
+  el.innerHTML = `<div class="hd"><span class="nm">${esc(i.name)}</span><span class="chip${/^(siso|landing)/.test(i.lib) ? " mine" : ""}">${esc(i.lib)}</span>${i.members > 1 ? `<span class="chip v">${i.members} versions folded${i.libs.length > 1 ? ` · ${i.libs.length} libraries` : ""}</span>` : ""}</div>${i.why ? `<div class="why">${esc(i.why)}</div>` : ""}<div class="m"></div><div class="ft">${esc(i.n).slice(0, 160)}</div><div class="vars"></div>`
+  const m = $(".m", el)
+  if (fitKeys.has(i.k)) { el.classList.add("fit"); fitObserver.observe(m) }
+  if (i.k) { m.dataset.k = i.k; if (i.thumb) m.dataset.thumb = i.thumb; if (i.lib === "21st.dev") m.classList.add("p21"); if (i.lib === "siso-landing") m.classList.add("tall"); io.observe(m) }
+  else if (i.thumb) m.innerHTML = `<img loading="lazy" src="${esc(i.thumb)}" alt="${esc(i.name)}">`
+  if (nv) $(".chip.v", el).onclick = () => {
+    const v = $(".vars", el); v.classList.toggle("on")
+    if (!v.dataset.d) { v.dataset.d = 1; v.innerHTML = i.variants.map((x) => `<figure>${x.thumb ? `<img loading="lazy" src="${esc(x.thumb)}">` : `<div class="lv">${x.k ? "live" : "no picture"}</div>`}<figcaption>${esc(x.lib)}/${esc(x.name)}</figcaption></figure>`).join("") }
+  }
+  return el
+}
+const tabs = [...D.groups.map((g) => [g.key, g.title, g.families]), ["pkg", "SISO package", ""]]
+const show = (t) => {
+  location.hash = t; document.querySelectorAll(".tab").forEach((b) => b.classList.toggle("on", b.dataset.t === t))
+  const main = $("#main"); fitObserver.disconnect(); main.innerHTML = ""
+  if (t === "pkg") {
+    main.innerHTML = `<div class="sec">@siso/charts</div><p class="lead">Evil Charts recoded into our own package (hover card fixed: it grows to fit its rows), with the variants as options. Lives in the hub repo at <code>packages/siso-charts</code>; the one-file guide is <code>charts/SISO-CHARTS.md</code>. Green cards on the other tabs are the package.</p><pre>import { SisoArea, SisoBars, SisoLine, SisoDonut, SisoRadial, SisoRadar, makeConfig } from "@siso/charts"
+
+&lt;SisoArea data={rows} keys={["desktop","mobile"]} palette="rainbow" curve="monotone" fill="gradient" stroke="dashed" stack="stacked" /&gt;</pre>`
+  } else {
+    const g = D.groups.find((x) => x.key === t)
+    main.innerHTML = `<div class="sec">${esc(g.title)} · the best<small>${g.parts} parts, ${g.families} distinct charts</small></div>`
+    const gr = document.createElement("div"); gr.className = "grid"; for (const i of g.top) gr.append(card(i)); main.append(gr)
+    if (g.more.length) { main.insertAdjacentHTML("beforeend", `<div class="sec">More ${esc(g.title.toLowerCase())}<small>${g.more_total} more distinct charts, ${g.more.length} shown</small></div>`); const g2 = document.createElement("div"); g2.className = "grid"; for (const i of g.more) g2.append(card(i)); main.append(g2) }
+  }
+}
+const tb = $("#tabs")
+for (const [id, label, n] of tabs) { const b = document.createElement("button"); b.className = "tab"; b.dataset.t = id; b.innerHTML = `${esc(label)}<small>${n}</small>`; b.onclick = () => show(id); tb.append(b) }
+show((location.hash || "#area").slice(1) || "area")
+</script></body></html>

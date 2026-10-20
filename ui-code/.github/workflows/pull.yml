@@ -1,0 +1,30 @@
+# Pull every registry's parts (bin/pull), commit each registry as it lands, push every few minutes.
+name: pull
+on:
+  workflow_dispatch:
+    inputs:
+      only:
+        description: "registries, comma-separated (empty: all)"
+        required: false
+        default: ""
+      limit:
+        description: "parts per registry (0: all)"
+        required: false
+        default: "0"
+  schedule:
+    - cron: "17 19 * * *" # 02:17 in Đà Nẵng
+permissions:
+  contents: write
+concurrency:
+  group: pull
+  cancel-in-progress: false
+jobs:
+  pull:
+    runs-on: ubuntu-latest
+    timeout-minutes: 340
+    steps:
+      - uses: actions/checkout@v4
+      - run: |
+          git config user.name "siso-ui-code"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          python3 bin/pull --commit --limit "${{ inputs.limit || '0' }}" ${{ inputs.only && format('--only {0}', inputs.only) || '' }}

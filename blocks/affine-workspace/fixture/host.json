@@ -1,0 +1,47 @@
+{
+  "host_contract_version": "actionist.affine.host.v0.1",
+  "application_id": "fixture-portal",
+  "host_origin": "http://127.0.0.1:4100",
+  "expected_client_id": "fixture-host",
+  "identity": {
+    "user_id": "fixture-user",
+    "email": "fixture@example.invalid",
+    "display_name": "Fixture User",
+    "client_id": "fixture-host",
+    "workspace_id": "workspace-fixture",
+    "expires_at": 4102444800000,
+    "capabilities": ["view", "edit", "share"]
+  },
+  "workspace": {
+    "workspace_id": "workspace-fixture",
+    "selection_authority": "host",
+    "switcher": "host"
+  },
+  "runtime": {
+    "frame_origin": "http://127.0.0.1:3020",
+    "server_origin": "http://127.0.0.1:3010",
+    "companion_origin": "http://127.0.0.1:3011",
+    "health_path": "/api/auth/session"
+  },
+  "session": {
+    "assertion_ref": "secret-ref:ACTIONIST_AFFINE_SESSION_ASSERTION",
+    "audience": "actionist/affine-workspace@0.1.0",
+    "transport": "postMessage+header",
+    "single_use": true,
+    "audience_bound": true
+  },
+  "routes": {
+    "base_path": "/documents",
+    "settings_path": "/settings?tab=documents",
+    "label": "Documents",
+    "icon": "file-text",
+    "internal_path": "/all",
+    "workspace_revision": 3
+  },
+  "observability": {
+    "capability_id": "actionist/affine-workspace",
+    "version": "0.1.0",
+    "release_id": "fixture-release-0.1.0",
+    "trace_propagation": "traceparent"
+  }
+}

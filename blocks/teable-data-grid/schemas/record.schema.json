@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://actionist.local/teable-data-grid/record.schema.json",
+  "title": "Actionist Teable data-grid linked record",
+  "type": "object",
+  "additionalProperties": true,
+  "required": ["recordType", "recordVersion", "recordId", "capabilityId", "status", "links"],
+  "properties": {
+    "recordType": { "enum": ["CapabilityContract", "PackagingProfile", "HostContract", "BindingPlan", "QualificationDossier", "RegistryRecord", "ReleaseManifest"] },
+    "recordVersion": { "const": "1.0.0" },
+    "recordId": { "type": "string", "minLength": 1 },
+    "capabilityId": { "const": "actionist/teable-data-grid" },
+    "status": { "type": "string", "minLength": 1 },
+    "links": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["manifest"],
+      "properties": {
+        "manifest": { "const": "../actionist-block.json" },
+        "records": { "type": "object", "additionalProperties": { "type": "string", "minLength": 1 } },
+        "hostBindingInterface": { "type": "string", "minLength": 1 },
+        "hostBindingSchema": { "type": "string", "minLength": 1 }
+      }
+    }
+  }
+}

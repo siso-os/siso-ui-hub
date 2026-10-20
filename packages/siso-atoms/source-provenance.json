@@ -1,0 +1,1818 @@
+{
+  "package": "@siso/atoms/source",
+  "license": "MIT",
+  "copyright": "Copyright (c) 2026 Elia Kuratli",
+  "licenseUrl": "https://uiarc.dev/license",
+  "licenseVerification": "Free MIT licence confirmed by suite owner 2026-10-16; each family tier independently checked against sources/items.jsonl",
+  "familyCount": 54,
+  "families": [
+    {
+      "id": "arc:action-button",
+      "tier": "free",
+      "source": "https://uiarc.dev/components/action-button",
+      "entry": "src/source/action-button/action-button.tsx",
+      "exports": [
+        "ActionButtonProps",
+        "ActionButton"
+      ],
+      "motion": [
+        "Changed letters rise from a soft blur while the width springs to fit; the arrow leaves forward and a check draws itself in.",
+        "Presses scale to about 0.97 on a snappy spring.",
+        "Reduced motion drops the press scale, width spring, and stroke draw, and swaps with an instant fade."
+      ]
+    },
+    {
+      "id": "arc:alert",
+      "tier": "free",
+      "source": "https://uiarc.dev/components/alert",
+      "entry": "src/source/alert/alert.tsx",
+      "exports": [
+        "AlertTone",
+        "AlertProps",
+        "Alert"
+      ],
+      "motion": [
+        "Presence collapses or expands the height on a smooth spring with a fade, so content below closes the gap.",
+        "Tone changes morph the icon through a small scale and blur; copy changes rise in while the height springs to fit.",
+        "Reduced motion swaps content with short fades and no height animation."
+      ]
+    },
+    {
+      "id": "arc:animated-counter",
+      "tier": "free",
+      "source": "https://uiarc.dev/components/animated-counter",
+      "entry": "src/source/animated-counter/animated-counter.tsx",
+      "exports": [
+        "AnimatedCounterProps",
+        "AnimatedCounter"
+      ]
+    },
+    {
+      "id": "arc:avatar-group",
+      "tier": "free",
+      "source": "https://uiarc.dev/components/avatar-group",
+      "entry": "src/source/avatar-group/avatar-group.tsx",
+      "exports": [
+        "AvatarGroupMember",
+        "AvatarGroupProps",
+        "AvatarGroup"
+      ],
+      "motion": [
+        "Joining or leaving members open and close their slot on a spring, so the stack slides instead of jumping.",
+        "The overflow count rolls up when it grows and down when it shrinks.",
+        "Hover fans the stack apart in CSS. Reduced motion removes the fan and swaps counts with a plain fade."
+      ]
+    },
+    {
+      "id": "arc:avatar",
+      "tier": "free",
+      "source": "https://uiarc.dev/components/avatar",
+      "entry": "src/source/avatar/avatar.tsx",
+      "exports": [
+        "AvatarProps",
+        "Avatar"
+      ],
+      "motion": [
+        "A photo still loading fades in from a soft blur; a cached one shows at once.",
+        "The status dot pops in and out on a snappy spring.",
+        "Reduced motion swaps the dot instantly and drops the image fade."
+      ]
+    },
+    {
+      "id": "arc:badge",
+      "tier": "free",
+      "source": "https://uiarc.dev/components/badge",
+      "entry": "src/source/badge/badge.tsx",
+      "exports": [
+        "BadgeTone",
+        "BadgeSize",
+        "BadgeProps",
+        "Badge"
+      ],
+      "motion": [
+        "A new label rises in with a short blur while the old one lifts away, and the pill width springs to fit.",
+        "Passive reflows such as font swaps resize instantly; only a content change springs.",
+        "Reduced motion swaps the label with a quick fade and snaps the width."
+      ]
+    },
+    {
+      "id": "arc:billing-toggle",
+      "tier": "free",
+      "source": "https://uiarc.dev/components/billing-toggle",
+      "entry": "src/source/billing-toggle/billing-toggle.tsx",
+      "exports": [
+        "BillingToggleOption",
+        "BillingToggleProps",
+        "BillingToggle",
+        "BillingPriceProps",
+        "BillingPrice"
+      ]
+    },
+    {
+      "id": "arc:button-group",
+      "tier": "free",
+      "source": "https://uiarc.dev/components/button-group",
+      "entry": "src/source/button-group/button-group.tsx",
+      "exports": [
+        "ButtonGroupVariant",
+        "ButtonGroupSize",
+        "ButtonGroupOrientation",
+        "ButtonGroupItem",
+        "ButtonGroupMenuItem",
+        "ButtonGroupMenu",
+        "ButtonGroupProps",
+        "ButtonGroup"
+      ],
+      "motion": [
+        "One highlight lives under all segments. Moving the pointer or keyboard focus to another segment carries it there on the snappy spring; arriving from outside the group it fades in where it lands, so it only travels between segments.",
+        "The hairline dividers on either side of the highlighted segment fade out, so the highlight reads as one soft shape inside the joined surface.",
+        "A press dips the segment's content to 0.97 (0.9 for icon-only) and springs back, while the highlight under it deepens. The group and its neighbours never move. The chevron anchors the menu, so it answers with the deeper highlight only.",
+        "On touch, the highlight appears under the finger while pressed and fades on release.",
+        "Nothing in the group moves or resizes on hover, focus, press, menu open or a label change: every reserved label sits invisibly in the segment, so a confirmation crossfades inside a fixed box. The new label rises in from a soft blur while the old one lifts away.",
+        "A label that was not reserved never snaps either: the segment springs to its width on the morph spring, and the highlight stays locked to it while it resizes.",
+        "The highlight is measured at sub-pixel precision, so it sits exactly on its segment at rest.",
+        "The menu grows from the group's edge with a short offset and scale and leaves faster than it arrives; the chevron turns over while it is open.",
+        "With reduced motion, the highlight jumps between segments, the press dip and chevron turn are removed, and labels and the menu crossfade."
+      ]
+    },
+    {
+      "id": "arc:button",
+      "tier": "free",
+      "source": "https://uiarc.dev/components/button",
+      "entry": "src/source/button/button.tsx",
+      "exports": [
+        "ButtonVariant",
+        "ButtonSize",
+        "ButtonProps",
+        "Button"
+      ],
+      "motion": [
+        "Presses scale to about 0.97 on a snappy spring; icon-sized buttons press slightly deeper.",
+        "A new label crossfades with a short blur while the width springs to fit.",
+        "Reduced motion drops the press scale and swaps labels with a plain fade."
+      ]
+    },
+    {
+      "id": "arc:card",
+      "tier": "free",
+      "source": "https://uiarc.dev/components/card",
+      "entry": "src/source/card/card.tsx",
+      "exports": [
+        "CardProps",
+        "Card"
+      ],
+      "motion": [
+        "Hover lifts the card 2px and slowly zooms the media.",
+        "The quick look shares layout ids with the card, so surface, photo, title, and byline travel on one spring; details fade in after.",
+        "Reduced motion drops the lift, zoom, and morph, and the dialog simply fades."
+      ]
+    },
+    {
+      "id": "arc:checkbox",
+      "tier": "free",
+      "source": "https://uiarc.dev/components/checkbox",
+      "entry": "src/source/checkbox/checkbox.tsx",
+      "exports": [
+        "CheckboxProps",
+        "Checkbox"
+      ],
+      "motion": [
+        "The fill scales in on a snappy spring while the check path draws; switching to indeterminate morphs the same path into a dash.",
+        "Reduced motion applies every state change instantly."
+      ]
+    },
+    {
+      "id": "arc:chip-group",
+      "tier": "free",
+      "source": "https://uiarc.dev/components/chip-group",
+      "entry": "src/source/chip-group/chip-group.tsx",
+      "exports": [
+        "ChipOption",
+        "ChipGroupProps",
+        "ChipGroup"
+      ]
+    },
+    {
+      "id": "arc:confirm-morph",
+      "tier": "free",
+      "source": "https://uiarc.dev/components/confirm-morph",
+      "entry": "src/source/confirm-morph/confirm-morph.tsx",
+      "exports": [
+        "ConfirmMorphState",
+        "ConfirmMorphMode",
+        "ConfirmMorphProps",
+        "ConfirmMorph"
+      ],
+      "motion": [
+        "The surface width springs to each face (a bouncier spring when growing, a critically damped one when shrinking), so nothing around it jumps.",
+        "Faces slide in from the right going forward and from the left going back, with a soft blur; the done check draws itself.",
+        "A thin bar drains along the bottom edge for the timeout.",
+        "Reduced motion removes the width spring, slide, blur, and draw; faces crossfade and the spinner slows."
+      ]
+    },
+    {
+      "id": "arc:copy-button",
+      "tier": "free",
+      "source": "https://uiarc.dev/components/copy-button",
+      "entry": "src/source/copy-button/copy-button.tsx",
+      "exports": [
+        "CopyButtonProps",
+        "CopyButton"
+      ],
+      "motion": [
+        "Icons trade places through a blur on a slow, nearly critically damped spring, and the check draws its stroke in.",
+        "Only the changed letters of the label move; the same motion plays in reverse on reset.",
+        "Reduced motion swaps icon and text with an instant fade and skips the stroke draw."
+      ]
+    },
+    {
+      "id": "arc:countdown",
+      "tier": "free",
+      "source": "https://uiarc.dev/components/countdown",
+      "entry": "src/source/countdown/countdown.tsx",
+      "exports": [
+        "CountdownUnit",
+        "CountdownProps",
+        "toEpoch",
+        "Countdown"
+      ]
+    },
+    {
+      "id": "arc:expanding-button-group",
+      "tier": "free",
+      "source": "https://uiarc.dev/components/expanding-button-group",
+      "entry": "src/source/expanding-button-group/expanding-button-group.tsx",
+      "exports": [
+        "ExpandingButtonGroupSize",
+        "ExpandingButtonGroupTone",
+        "ExpandingButtonGroupItem",
+        "ExpandingButtonGroupProps",
+        "ExpandingButtonGroup"
+      ]
+    },
+    {
+      "id": "arc:expanding-search",
+      "tier": "free",
+      "source": "https://uiarc.dev/components/expanding-search",
+      "entry": "src/source/expanding-search/expanding-search.tsx",
+      "exports": [
+        "ExpandingSearchItem",
+        "ExpandingSearchProps",
+        "ExpandingSearch"
+      ],
+      "motion": [
+        "The button morphs into the field on a spring, results unfold beneath with a panel that tracks the field width, and a highlight travels between options.",
+        "Reduced motion swaps states with fades and no width or position travel."
+      ]
+    },
+    {
+      "id": "arc:floating-button-group",
+      "tier": "free",
+      "source": "https://uiarc.dev/components/floating-button-group",
+      "entry": "src/source/floating-button-group/floating-button-group.tsx",
+      "exports": [
+        "FloatingButtonGroupVariant",
+        "FloatingButtonGroupSize",
+        "FloatingButtonGroupOrientation",
+        "FloatingButtonGroupAction",
+        "FloatingButtonGroupSeparator",
+        "FloatingButtonGroupItem",
+        "FloatingButtonGroupProps",
+        "FloatingButtonGroup"
+      ]
+    },
+    {
+      "id": "arc:hold-to-confirm",
+      "tier": "free",
+      "source": "https://uiarc.dev/components/hold-to-confirm",
+      "entry": "src/source/hold-to-confirm/hold-to-confirm.tsx",
+      "exports": [
+        "HoldToConfirmProps",
+        "HoldToConfirm"
+      ],
+      "motion": [
+        "The fill advances on a linear timeline while held, rewinds on a smooth spring when released, and resumes from where it was on a quick re-press.",
+        "The button presses to about 0.97; on completion the label morphs, the width springs, and a check draws itself in. Touch devices get a short vibration.",
+        "Reduced motion drops the press scale and rewind spring and swaps label and icon with a fade; the fill still tracks the hold."
+      ]
+    },
+    {
+      "id": "arc:in-view-title",
+      "tier": "free",
+      "source": "https://uiarc.dev/components/in-view-title",
+      "entry": "src/source/in-view-title/in-view-title.tsx",
+      "exports": [
+        "InViewTitleVariant",
+        "InViewTitleProps",
+        "InViewTitle"
+      ]
+    },
+    {
+      "id": "arc:inline-edit",
+      "tier": "free",
+      "source": "https://uiarc.dev/components/inline-edit",
+      "entry": "src/source/inline-edit/inline-edit.tsx",
+      "exports": [
+        "InlineEditProps",
+        "InlineEdit"
+      ],
+      "motion": [
+        "Text rolls between values, a check draws once a save lands, and multiline boxes follow their height; failed saves roll back with motion.",
+        "Reduced motion crossfades text, draws the check instantly, and replaces the spinner with a static mark."
+      ]
+    },
+    {
+      "id": "arc:input",
+      "tier": "free",
+      "source": "https://uiarc.dev/components/input",
+      "entry": "src/source/input/input.tsx",
+      "exports": [
+        "InputProps",
+        "Input"
+      ],
+      "motion": [
+        "Helper and error rows open their height on a smooth spring, then changed words rise in and unblur while numbers roll digit by digit.",
+        "Reduced motion mounts rows at full height and swaps words with an instant fade."
+      ]
+    },
+    {
+      "id": "arc:money-input",
+      "tier": "free",
+      "source": "https://uiarc.dev/components/money-input",
+      "entry": "src/source/money-input/money-input.tsx",
+      "exports": [
+        "MoneyInputDetails",
+        "MoneyInputProps",
+        "MoneyInput"
+      ]
+    },
+    {
+      "id": "arc:multi-select",
+      "tier": "free",
+      "source": "https://uiarc.dev/components/multi-select",
+      "entry": "src/source/multi-select/multi-select.tsx",
+      "exports": [
+        "MultiSelectOption",
+        "MultiSelectProps",
+        "MultiSelect"
+      ],
+      "motion": [
+        "Chips open their slot width on a smooth spring and grow in from 0.9 with a blur; the +N count rolls up or down.",
+        "Checks draw in the menu; the menu springs in from slightly above.",
+        "Reduced motion turns every change into a short crossfade with no scale or width travel."
+      ]
+    },
+    {
+      "id": "arc:number-field",
+      "tier": "free",
+      "source": "https://uiarc.dev/components/number-field",
+      "entry": "src/source/number-field/number-field.tsx",
+      "exports": [
+        "NumberFieldAffix",
+        "NumberFieldProps",
+        "NumberFieldSize",
+        "NumberField"
+      ],
+      "motion": [
+        "Digits roll on wheels in the direction of change (up rolls up, down rolls down) with tabular numerals, and affixes reword in place.",
+        "Holding a stepper repeats after 400ms and ramps from 150ms to 40ms per step.",
+        "At a limit the value strains a few pixels toward the press and springs home; pushes in a row strain a little further, capped like overscroll. The refused button shakes once and the limit note rises in beside the label.",
+        "A typed value past a limit tints the shell with the warning role; on Enter or blur it springs back to the limit with a digit roll.",
+        "Reduced motion changes the value at once and answers a press at a limit with a brief warning tint on the number instead of the strain and shake."
+      ]
+    },
+    {
+      "id": "arc:otp-input",
+      "tier": "free",
+      "source": "https://uiarc.dev/components/blocks/otp-input",
+      "entry": "src/source/otp-input/otp-input.tsx",
+      "exports": [
+        "OtpInputProps",
+        "OtpInput"
+      ],
+      "motion": [
+        "Typed characters rise into the slot and unblur; a paste lands as a short left-to-right wave.",
+        "One focus ring glides between slots, and a new error nudges the row side to side once.",
+        "Reduced motion removes the glide, shake, and blur and uses instant fades."
+      ]
+    },
+    {
+      "id": "arc:password-field",
+      "tier": "free",
+      "source": "https://uiarc.dev/components/password-field",
+      "entry": "src/source/password-field/password-field.tsx",
+      "exports": [
+        "PasswordFieldMessages",
+        "defaultPasswordFieldMessages",
+        "PasswordFieldProps",
+        "PasswordField"
+      ],
+      "motion": [
+        "A slash draws across the eye and masks the outline beneath it instead of swapping icons.",
+        "After the first toggle, the value resolves through a short CSS reveal on each change; reduced motion draws the slash instantly."
+      ]
+    },
+    {
+      "id": "arc:password-strength",
+      "tier": "free",
+      "source": "https://uiarc.dev/components/password-strength",
+      "entry": "src/source/password-strength/password-strength.tsx",
+      "exports": [
+        "PasswordRule",
+        "PasswordStrengthResult",
+        "PasswordStrengthLevels",
+        "PasswordStrengthMessages",
+        "defaultPasswordStrengthMessages",
+        "PasswordStrengthMessagesInput",
+        "PasswordStrengthProps",
+        "countCodePoints",
+        "PasswordRuleLabels",
+        "PasswordRuleOptions",
+        "createPasswordRules",
+        "defaultPasswordRules",
+        "EstimateStrengthOptions",
+        "estimateStrength",
+        "PasswordStrength"
+      ],
+      "motion": [
+        "Segments fill and change tone in a staggered wave, rules check off with drawn ticks, remaining counts roll, and the word morphs up or down with strength.",
+        "Reduced motion, applied after hydration, drops the shake, wave, and roll in favor of instant changes."
+      ]
+    },
+    {
+      "id": "arc:phone-input",
+      "tier": "free",
+      "source": "https://uiarc.dev/components/phone-input",
+      "entry": "src/source/phone-input/phone-input.tsx",
+      "exports": [
+        "PhoneCountry",
+        "PHONE_COUNTRIES",
+        "flagOf",
+        "formatNational",
+        "PhoneStatus",
+        "parsePhoneNumber",
+        "formatPhoneNumber",
+        "PhoneInputDetails",
+        "PhoneInputProps",
+        "PhoneInput"
+      ]
+    },
+    {
+      "id": "arc:progress",
+      "tier": "free",
+      "source": "https://uiarc.dev/components/progress",
+      "entry": "src/source/progress/progress.tsx",
+      "exports": [
+        "ProgressProps",
+        "Progress"
+      ],
+      "motion": [
+        "One smooth spring drives both the fill and the counted number, so they always agree. The fill slides in from the left to keep its rounded end.",
+        "At 100% the fill turns to the success colour and a check settles in beside the count.",
+        "Reduced motion jumps the fill and count to the new value."
+      ]
+    },
+    {
+      "id": "arc:radio-cards",
+      "tier": "free",
+      "source": "https://uiarc.dev/components/radio-cards",
+      "entry": "src/source/radio-cards/radio-cards.tsx",
+      "exports": [
+        "RadioCardOption",
+        "RadioCardsProps",
+        "RadioCards"
+      ],
+      "motion": [
+        "One ring springs to the selected card's box and its size; resizes snap it without replaying the glide.",
+        "The indicator dot scales in on the snappy spring.",
+        "Reduced motion jumps the ring and dot to their final state."
+      ]
+    },
+    {
+      "id": "arc:radio-group",
+      "tier": "free",
+      "source": "https://uiarc.dev/components/radio-group",
+      "entry": "src/source/radio-group/radio-group.tsx",
+      "exports": [
+        "RadioGroupProps",
+        "RadioGroup"
+      ],
+      "motion": [
+        "One highlight glides to the chosen row on the morph spring while the new dot springs in and the old one shrinks away.",
+        "Reduced motion places the highlight and dot instantly; resizes never animate."
+      ]
+    },
+    {
+      "id": "arc:search-field",
+      "tier": "free",
+      "source": "https://uiarc.dev/components/search-field",
+      "entry": "src/source/search-field/search-field.tsx",
+      "exports": [
+        "SearchFieldProps",
+        "SearchField"
+      ],
+      "motion": [
+        "The clear button scales in from 0.8 with a slight blur on a snappy spring and presses to 0.96.",
+        "Reduced motion fades it in and out without scale or blur; the reserved slot keeps the field width fixed either way."
+      ]
+    },
+    {
+      "id": "arc:segmented-control",
+      "tier": "free",
+      "source": "https://uiarc.dev/components/segmented-control",
+      "entry": "src/source/segmented-control/segmented-control.tsx",
+      "exports": [
+        "Segment",
+        "SegmentedControlProps",
+        "SegmentedControl"
+      ],
+      "motion": [
+        "A shared layoutId pill slides to the selected segment on the morph spring, scoped per instance by a LayoutGroup.",
+        "Reduced motion moves the pill instantly and disables button transitions."
+      ]
+    },
+    {
+      "id": "arc:select",
+      "tier": "free",
+      "source": "https://uiarc.dev/components/select",
+      "entry": "src/source/select/select.tsx",
+      "exports": [
+        "SelectProps",
+        "Select"
+      ],
+      "motion": [
+        "A later option rises in from below and an earlier one drops from above, with a soft blur.",
+        "Reduced motion swaps the value with an instant crossfade."
+      ]
+    },
+    {
+      "id": "arc:shortcut-recorder",
+      "tier": "free",
+      "source": "https://uiarc.dev/components/shortcut-recorder",
+      "entry": "src/source/shortcut-recorder/shortcut-recorder.tsx",
+      "exports": [
+        "Platform",
+        "ShortcutToken",
+        "keyId",
+        "normalizeShortcut",
+        "shortcutFromEvent",
+        "matchesShortcut",
+        "shortcutTokens",
+        "formatShortcut",
+        "usePlatform",
+        "usePressedKeys",
+        "ShortcutKbdProps",
+        "ShortcutKbd",
+        "Kbd",
+        "KbdProps",
+        "ShortcutKeysProps",
+        "ShortcutKeys",
+        "ShortcutBinding",
+        "ShortcutRecorderProps",
+        "ShortcutRecorder",
+        "ShortcutListItem",
+        "ShortcutListGroup",
+        "ShortcutListProps",
+        "ShortcutList"
+      ]
+    },
+    {
+      "id": "arc:skeleton",
+      "tier": "free",
+      "source": "https://uiarc.dev/components/skeleton",
+      "entry": "src/source/skeleton/skeleton.tsx",
+      "exports": [
+        "SkeletonProps",
+        "Skeleton"
+      ],
+      "motion": [
+        "Blocks pulse in a staggered wave, each a beat after the one above.",
+        "On load the placeholder fades out, content rises 4px into place, and the height springs from placeholder to content.",
+        "Reduced motion stops the pulse and swaps with short fades and no height animation."
+      ]
+    },
+    {
+      "id": "arc:slider",
+      "tier": "free",
+      "source": "https://uiarc.dev/components/slider",
+      "entry": "src/source/slider/slider.tsx",
+      "exports": [
+        "SliderValue",
+        "SliderMark",
+        "SliderProps",
+        "Slider"
+      ],
+      "motion": [
+        "Released drags carry a little momentum before snapping; the bubble springs up over an active thumb and digits roll in the readout. At a limit the thumb strains toward the key press and springs back.",
+        "Reduced motion removes momentum, the strain, and digit rolling, and turns off CSS transitions."
+      ]
+    },
+    {
+      "id": "arc:slot-text",
+      "tier": "free",
+      "source": "https://uiarc.dev/components/slot-text",
+      "entry": "src/source/slot-text/slot-text.tsx",
+      "exports": [
+        "SlotTextProps",
+        "SlotText"
+      ]
+    },
+    {
+      "id": "arc:split-button",
+      "tier": "free",
+      "source": "https://uiarc.dev/components/split-button",
+      "entry": "src/source/split-button/split-button.tsx",
+      "exports": [
+        "SplitButtonAction",
+        "SplitButtonProps",
+        "SplitButton"
+      ],
+      "motion": [
+        "The main label and icon morph in place while its width springs; the menu half never scales, so the menu opens from a still anchor.",
+        "Menu items fade in with a short stagger.",
+        "Reduced motion removes the press scale, width spring, and menu transform, leaving a quick opacity fade."
+      ]
+    },
+    {
+      "id": "arc:stepper",
+      "tier": "free",
+      "source": "https://uiarc.dev/components/stepper",
+      "entry": "src/source/stepper/stepper.tsx",
+      "exports": [
+        "StepperOrientation",
+        "StepperStatus",
+        "StepperStep",
+        "StepperProps",
+        "Stepper"
+      ]
+    },
+    {
+      "id": "arc:switch",
+      "tier": "free",
+      "source": "https://uiarc.dev/components/switch",
+      "entry": "src/source/switch/switch.tsx",
+      "exports": [
+        "SwitchProps",
+        "Switch"
+      ],
+      "motion": [
+        "Pressing stretches the thumb toward the other side like a held finger; releasing sends it across on a snappy spring.",
+        "Reduced motion removes the stretch and moves the thumb instantly; CSS transitions are also disabled."
+      ]
+    },
+    {
+      "id": "arc:tabs",
+      "tier": "free",
+      "source": "https://uiarc.dev/components/tabs",
+      "entry": "src/source/tabs/tabs.tsx",
+      "exports": [
+        "Tabs",
+        "TabsList",
+        "TabsTrigger",
+        "TabsContent"
+      ],
+      "motion": [
+        "The selection pill glides between triggers on a morph spring, scoped to one Tabs instance.",
+        "Panels slide 8px in the direction of travel while the height springs from the previous panel.",
+        "Reduced motion swaps the pill instantly and crossfades panels in place without height animation."
+      ]
+    },
+    {
+      "id": "arc:tag-input",
+      "tier": "free",
+      "source": "https://uiarc.dev/components/tag-input",
+      "entry": "src/source/tag-input/tag-input.tsx",
+      "exports": [
+        "TagInputProps",
+        "TagInput"
+      ],
+      "motion": [
+        "New tags blur and scale in where the text was typed; removed tags leave and the rest glide on the morph spring. The shell follows wrapped rows on a smooth spring.",
+        "A ring glides between picked tags. Reduced motion removes layout travel, scale, and blur, keeping fades."
+      ]
+    },
+    {
+      "id": "arc:text-morph",
+      "tier": "free",
+      "source": "https://uiarc.dev/components/text-morph",
+      "entry": "src/source/text-morph/text-morph.tsx",
+      "exports": [
+        "TextMorphProps",
+        "TextMorph"
+      ]
+    },
+    {
+      "id": "arc:text-reveal",
+      "tier": "free",
+      "source": "https://uiarc.dev/components/text-reveal",
+      "entry": "src/source/text-reveal/text-reveal.tsx",
+      "exports": [
+        "TextRevealProps",
+        "TextReveal"
+      ]
+    },
+    {
+      "id": "arc:text-shimmer",
+      "tier": "free",
+      "source": "https://uiarc.dev/components/text-shimmer",
+      "entry": "src/source/text-shimmer/text-shimmer.tsx",
+      "exports": [
+        "TextShimmerProps",
+        "TextShimmer"
+      ]
+    },
+    {
+      "id": "arc:textarea",
+      "tier": "free",
+      "source": "https://uiarc.dev/components/textarea",
+      "entry": "src/source/textarea/textarea.tsx",
+      "exports": [
+        "TextareaProps",
+        "Textarea"
+      ],
+      "motion": [
+        "Message rows open their height on a smooth spring; changed words rise in with a soft blur and counts roll only the digits that changed.",
+        "Reduced motion drops the roll, blur, and height spring for instant changes."
+      ]
+    },
+    {
+      "id": "arc:theme-switch-eclipse",
+      "tier": "free",
+      "source": "https://uiarc.dev/components/theme-switch-eclipse",
+      "entry": "src/source/theme-switch/theme-switch.tsx",
+      "exports": [
+        "ThemeSwitchVariant",
+        "Theme",
+        "ThemeSwitchProps",
+        "ThemeSwitch"
+      ]
+    },
+    {
+      "id": "arc:theme-switch-rise",
+      "tier": "free",
+      "source": "https://uiarc.dev/components/theme-switch-rise",
+      "entry": "src/source/theme-switch/theme-switch.tsx",
+      "exports": [
+        "ThemeSwitchVariant",
+        "Theme",
+        "ThemeSwitchProps",
+        "ThemeSwitch"
+      ]
+    },
+    {
+      "id": "arc:theme-switch-split",
+      "tier": "free",
+      "source": "https://uiarc.dev/components/theme-switch-split",
+      "entry": "src/source/theme-switch/theme-switch.tsx",
+      "exports": [
+        "ThemeSwitchVariant",
+        "Theme",
+        "ThemeSwitchProps",
+        "ThemeSwitch"
+      ]
+    },
+    {
+      "id": "arc:theme-switch",
+      "tier": "free",
+      "source": "https://uiarc.dev/components/theme-switch",
+      "entry": "src/source/theme-switch/theme-switch.tsx",
+      "exports": [
+        "ThemeSwitchVariant",
+        "Theme",
+        "ThemeSwitchProps",
+        "ThemeSwitch"
+      ]
+    },
+    {
+      "id": "arc:tooltip",
+      "tier": "free",
+      "source": "https://uiarc.dev/components/tooltip",
+      "entry": "src/source/tooltip/tooltip.tsx",
+      "exports": [
+        "TooltipProps",
+        "Tooltip"
+      ],
+      "motion": [
+        "Opens after 250ms with a 3px rise from 0.97 scale; within 300ms of another tooltip it opens instantly with a fade only.",
+        "Changing string content rises in with a blur while the bubble springs to the new size.",
+        "Reduced motion removes the transform and keeps a 90ms opacity fade."
+      ]
+    },
+    {
+      "id": "arc:usage-meter",
+      "tier": "free",
+      "source": "https://uiarc.dev/components/usage-meter",
+      "entry": "src/source/usage-meter/usage-meter.tsx",
+      "exports": [
+        "UsageMeterSegment",
+        "UsageMeterProps",
+        "UsageMeter"
+      ],
+      "motion": [
+        "Segments grow in left to right once scrolled into view, then re-flow on one spring each when values change; crossing the limit fades in a hatched overage and limit marker.",
+        "Digits roll like an odometer in the direction the number moved; the status badge springs to its new width.",
+        "Reduced motion jumps values and swaps text with short fades."
+      ]
+    }
+  ],
+  "files": [
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/button/button.tsx",
+      "target": "src/source/button/button.tsx",
+      "sourceSha256": "6a56d78cb75a6fd5f5cfdd03be8b02bf96f0bc96790d3c81abeee10e089fecec",
+      "adaptedSha256": "afd30ffce0198ed38450405b92e0293dfcdbc6e1ea08fee38c13a75e60849c05",
+      "changes": [
+        "appended catalogue marker"
+      ],
+      "originalSource": "app/src/arc/button/button.tsx"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/lib/motion-tokens.ts",
+      "target": "src/source/lib/motion-tokens.ts",
+      "sourceSha256": "bec65d2e1b180dd3c574edc60cf84e0fa336e7ff8640eba0c70bcf0ae765fb8a",
+      "adaptedSha256": "ebdfd1e060256207a3b3d899d2a017e2d1650ffe910bca77817394424fc7928e",
+      "changes": [
+        "appended catalogue marker"
+      ],
+      "originalSource": "app/src/arc/lib/motion-tokens.ts"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/motion-tokens.ts",
+      "target": "src/source/motion-tokens.ts",
+      "sourceSha256": "13af43b57ed38e5b72cfc06ff0ccc39b0593721f04840e73532893593cc61491",
+      "adaptedSha256": "68af0f2284fcdc33afb7cd5e59acfdba7561e8526db931e7a982defe4fc8cbcb",
+      "changes": [
+        "appended catalogue marker"
+      ],
+      "originalSource": "app/src/arc/motion-tokens.ts"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/button/button.module.css",
+      "target": "src/source/button/button.module.css",
+      "sourceSha256": "77323140c3f9fbad7b08dddba0db7260aa233c34c39a9d24cfa646fea287e140",
+      "adaptedSha256": "77323140c3f9fbad7b08dddba0db7260aa233c34c39a9d24cfa646fea287e140",
+      "changes": [],
+      "originalSource": "app/src/arc/button/button.module.css"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/action-button/action-button.tsx",
+      "target": "src/source/action-button/action-button.tsx",
+      "sourceSha256": "2196f6935ad5b54e086720cada8b8808166c14efc089d8eda8164d2df3254cad",
+      "adaptedSha256": "443e1938800f6c73f06b743363e62329f0a43169f3033e3c8d727f40f04e545f",
+      "changes": [
+        "appended catalogue marker"
+      ],
+      "originalSource": "app/src/arc/action-button/action-button.tsx"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/action-button/action-button.module.css",
+      "target": "src/source/action-button/action-button.module.css",
+      "sourceSha256": "b91e626431bf99ebccdf12263881bd3061a8faa8d45a5b8d0da361cc9a90b4fa",
+      "adaptedSha256": "b91e626431bf99ebccdf12263881bd3061a8faa8d45a5b8d0da361cc9a90b4fa",
+      "changes": [],
+      "originalSource": "app/src/arc/action-button/action-button.module.css"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/split-button/split-button.tsx",
+      "target": "src/source/split-button/split-button.tsx",
+      "sourceSha256": "fb9de18f553984b678694d5d69d788faee9c8bedb4ce149d4674783ef9261b12",
+      "adaptedSha256": "7b615fe20dc178bfd99120fbfc3428f691a9527751790a8f77294fedc99b4b45",
+      "changes": [
+        "appended catalogue marker",
+        "theme-preserving source portal host"
+      ],
+      "originalSource": "app/src/arc/split-button/split-button.tsx"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/split-button/split-button.module.css",
+      "target": "src/source/split-button/split-button.module.css",
+      "sourceSha256": "d558b41e31264911bd154004d0bb0c230d2768f9899a4b8ab77186127458d7c9",
+      "adaptedSha256": "d558b41e31264911bd154004d0bb0c230d2768f9899a4b8ab77186127458d7c9",
+      "changes": [],
+      "originalSource": "app/src/arc/split-button/split-button.module.css"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/button-group/button-group.tsx",
+      "target": "src/source/button-group/button-group.tsx",
+      "sourceSha256": "843ccf5fdec648e2045cf617286a2dca275282e2c605e1317fcd61984909396b",
+      "adaptedSha256": "c95153fc53c4c285d125713cb5e79377452f49606120a798cf27bdcc6b56ac80",
+      "changes": [
+        "appended catalogue marker",
+        "theme-preserving source portal host"
+      ],
+      "originalSource": "app/src/arc/button-group/button-group.tsx"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/button-group/button-group.module.css",
+      "target": "src/source/button-group/button-group.module.css",
+      "sourceSha256": "660ea137acde2f4fbde2f6678e8ac52ae4b6f9abad0f094af2f42de33cea74e9",
+      "adaptedSha256": "660ea137acde2f4fbde2f6678e8ac52ae4b6f9abad0f094af2f42de33cea74e9",
+      "changes": [],
+      "originalSource": "app/src/arc/button-group/button-group.module.css"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/copy-button/copy-button.tsx",
+      "target": "src/source/copy-button/copy-button.tsx",
+      "sourceSha256": "a6faac2922a48cc05ec72650ed63aee9b3871446df683cb7de6790f9bb19744a",
+      "adaptedSha256": "34a7f543df5249a04db61d892b9dc4ce1cf3b0194a1be990f39db5b43afeae7e",
+      "changes": [
+        "appended catalogue marker"
+      ],
+      "originalSource": "app/src/arc/copy-button/copy-button.tsx"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/lib/use-copy-feedback.ts",
+      "target": "src/source/lib/use-copy-feedback.ts",
+      "sourceSha256": "88d0ae55bb3e241f529912a4802bbf014e4ba437025acc90ab13e012702273c5",
+      "adaptedSha256": "eafd11a1a6a991733dc23e5c8e19fc4526de2a1517c2bd0ec88e4b457d1e579a",
+      "changes": [
+        "appended catalogue marker"
+      ],
+      "originalSource": "app/src/arc/lib/use-copy-feedback.ts"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/copy-button/copy-button.module.css",
+      "target": "src/source/copy-button/copy-button.module.css",
+      "sourceSha256": "090ea463f90ebe80e5fbe9abaa22b8c5ed1daec2068e7bcd18baab09e39dc08e",
+      "adaptedSha256": "090ea463f90ebe80e5fbe9abaa22b8c5ed1daec2068e7bcd18baab09e39dc08e",
+      "changes": [],
+      "originalSource": "app/src/arc/copy-button/copy-button.module.css"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/confirm-morph/confirm-morph.tsx",
+      "target": "src/source/confirm-morph/confirm-morph.tsx",
+      "sourceSha256": "151698eb1a316e38985d748f8e23b4e04d948a19a66212ef26de0b09fab2b563",
+      "adaptedSha256": "1b4f0fca3d985e7de4fd1b49292901d65f6479f8f184b0ec4adf4d7920262187",
+      "changes": [
+        "appended catalogue marker"
+      ],
+      "originalSource": "app/src/arc/confirm-morph/confirm-morph.tsx"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/confirm-morph/confirm-morph.module.css",
+      "target": "src/source/confirm-morph/confirm-morph.module.css",
+      "sourceSha256": "0117c11659e56d60b99e0e69fe042327a759d93d2b4db13164a6c1dcf93101fa",
+      "adaptedSha256": "0117c11659e56d60b99e0e69fe042327a759d93d2b4db13164a6c1dcf93101fa",
+      "changes": [],
+      "originalSource": "app/src/arc/confirm-morph/confirm-morph.module.css"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/hold-to-confirm/hold-to-confirm.tsx",
+      "target": "src/source/hold-to-confirm/hold-to-confirm.tsx",
+      "sourceSha256": "1d5905798dedde34e7bad029e1287a7a1620337fae3dfc3bd0d03101d06580ed",
+      "adaptedSha256": "bfc0384a3deddf0f7a4c6d1fda4e60b5ddcf9cbf6bc9474187a5a55053477ab0",
+      "changes": [
+        "appended catalogue marker"
+      ],
+      "originalSource": "app/src/arc/hold-to-confirm/hold-to-confirm.tsx"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/hold-to-confirm/hold-to-confirm.module.css",
+      "target": "src/source/hold-to-confirm/hold-to-confirm.module.css",
+      "sourceSha256": "1dd13d04ac68b87905adf0416c764bcd8dba0ec631a478d0fc54d3135adc335f",
+      "adaptedSha256": "1dd13d04ac68b87905adf0416c764bcd8dba0ec631a478d0fc54d3135adc335f",
+      "changes": [],
+      "originalSource": "app/src/arc/hold-to-confirm/hold-to-confirm.module.css"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/input/input.tsx",
+      "target": "src/source/input/input.tsx",
+      "sourceSha256": "16a4e761b51482e9c066f284a38171085e71ae390e4b26f9f0c18dd8af21c8f2",
+      "adaptedSha256": "36a921aef0538e5ef2b597ab2db43564c869f5794897d206935bfb68e131e5e2",
+      "changes": [
+        "appended catalogue marker"
+      ],
+      "originalSource": "app/src/arc/input/input.tsx"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/input/input.module.css",
+      "target": "src/source/input/input.module.css",
+      "sourceSha256": "ef6716aa7b9f45898859735f416ac932517b94e66bed6b3d23d7aed180529bdf",
+      "adaptedSha256": "ef6716aa7b9f45898859735f416ac932517b94e66bed6b3d23d7aed180529bdf",
+      "changes": [],
+      "originalSource": "app/src/arc/input/input.module.css"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/textarea/textarea.tsx",
+      "target": "src/source/textarea/textarea.tsx",
+      "sourceSha256": "1ed43b87e45b04180f1c6b8b3b7543e071bed3a6fcb2033e98015c77a8b7135a",
+      "adaptedSha256": "4fcd8f96e5f358a4b4f86b223ad1f316999c9f0641252566c22db1aef8349dbe",
+      "changes": [
+        "appended catalogue marker"
+      ],
+      "originalSource": "app/src/arc/textarea/textarea.tsx"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/textarea/textarea.module.css",
+      "target": "src/source/textarea/textarea.module.css",
+      "sourceSha256": "57a9294f6f7eea903296334bf1203982b41736aa1082a83af4dc2e8bbc6a144c",
+      "adaptedSha256": "57a9294f6f7eea903296334bf1203982b41736aa1082a83af4dc2e8bbc6a144c",
+      "changes": [],
+      "originalSource": "app/src/arc/textarea/textarea.module.css"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/search-field/search-field.tsx",
+      "target": "src/source/search-field/search-field.tsx",
+      "sourceSha256": "d93a8d0778c83d33793bf3fe7e5b206a5d0c6e50948b83f39777b89899392d93",
+      "adaptedSha256": "b373533dba59854459984f6d8c83d8879373d9c64516cedb56cf84c2814b1dc3",
+      "changes": [
+        "appended catalogue marker"
+      ],
+      "originalSource": "app/src/arc/search-field/search-field.tsx"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/search-field/search-field.module.css",
+      "target": "src/source/search-field/search-field.module.css",
+      "sourceSha256": "3b74ebb74a675ab8a0202d9234b8865fdd0d26033f056aa6e3de9bc9bffacce2",
+      "adaptedSha256": "3b74ebb74a675ab8a0202d9234b8865fdd0d26033f056aa6e3de9bc9bffacce2",
+      "changes": [],
+      "originalSource": "app/src/arc/search-field/search-field.module.css"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/password-field/password-field.tsx",
+      "target": "src/source/password-field/password-field.tsx",
+      "sourceSha256": "2064f0f2d6ab79aa34c82f67e6e68464ae062435cb69ede3314bd199ae84f35a",
+      "adaptedSha256": "cd767fe3fb8a09442a6241735c370fb8ba4fc48cf34ddf937cf5c2c15cbe70e8",
+      "changes": [
+        "appended catalogue marker"
+      ],
+      "originalSource": "app/src/arc/password-field/password-field.tsx"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/password-field/password-field.module.css",
+      "target": "src/source/password-field/password-field.module.css",
+      "sourceSha256": "75a61ff590b700812e5f62af47f7dc268b807e109ad570d4d990e7d62ed5204f",
+      "adaptedSha256": "75a61ff590b700812e5f62af47f7dc268b807e109ad570d4d990e7d62ed5204f",
+      "changes": [],
+      "originalSource": "app/src/arc/password-field/password-field.module.css"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/number-field/number-field.tsx",
+      "target": "src/source/number-field/number-field.tsx",
+      "sourceSha256": "ad4bba584f4626939c76e61d04eac1d20c2d33b46425df6406414a94a38237c2",
+      "adaptedSha256": "3d8002232893bd41d6e4203232a6057148b5093c6b88b0ad4992fdd0464d9c94",
+      "changes": [
+        "appended catalogue marker"
+      ],
+      "originalSource": "app/src/arc/number-field/number-field.tsx"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/number-field/number-field.module.css",
+      "target": "src/source/number-field/number-field.module.css",
+      "sourceSha256": "3898aa73a014b3f7aee2a7d0f99999ceaa95e789e8a299bcc5eaa0323f03702a",
+      "adaptedSha256": "3898aa73a014b3f7aee2a7d0f99999ceaa95e789e8a299bcc5eaa0323f03702a",
+      "changes": [],
+      "originalSource": "app/src/arc/number-field/number-field.module.css"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/otp-input/otp-input.tsx",
+      "target": "src/source/otp-input/otp-input.tsx",
+      "sourceSha256": "9b7c948a73d93c2d31f1c031b70ba62c969689fe4625d1762d1e4418c39f30bf",
+      "adaptedSha256": "4b277ac6fc5c6842bb1b2dd96b218e02dd0a38a46eac0908a5f5d6dc27858be7",
+      "changes": [
+        "appended catalogue marker"
+      ],
+      "originalSource": "app/src/arc/otp-input/otp-input.tsx"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/otp-input/otp-input.module.css",
+      "target": "src/source/otp-input/otp-input.module.css",
+      "sourceSha256": "4bcfd659a2d6597f558ae2d02214c1dabfcbc795fca8a664b1abda369a872640",
+      "adaptedSha256": "4bcfd659a2d6597f558ae2d02214c1dabfcbc795fca8a664b1abda369a872640",
+      "changes": [],
+      "originalSource": "app/src/arc/otp-input/otp-input.module.css"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/checkbox/checkbox.tsx",
+      "target": "src/source/checkbox/checkbox.tsx",
+      "sourceSha256": "4759251a0b2a83320cb4078e840f61481a23be0b38b9aa7c077c2e85e6dde00d",
+      "adaptedSha256": "84e143e02bdf3e0d58b98c0b0483456e360156ef2c5a2a24efe8d5ea10ea7175",
+      "changes": [
+        "appended catalogue marker"
+      ],
+      "originalSource": "app/src/arc/checkbox/checkbox.tsx"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/checkbox/checkbox.module.css",
+      "target": "src/source/checkbox/checkbox.module.css",
+      "sourceSha256": "6cc8ae35edbd99dac2ea3768a6db0932429ecb06febab06e048a4b94974251b6",
+      "adaptedSha256": "6cc8ae35edbd99dac2ea3768a6db0932429ecb06febab06e048a4b94974251b6",
+      "changes": [],
+      "originalSource": "app/src/arc/checkbox/checkbox.module.css"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/switch/switch.tsx",
+      "target": "src/source/switch/switch.tsx",
+      "sourceSha256": "6ab95cb9c0aaa80599cdc0605abf959a20f5030fe4ecdf57f6894274a9c5d73b",
+      "adaptedSha256": "f2d3fbfa273bc33782510ad5e94efbc8952a8682f5d70fc9d25e3c94b59d6e1c",
+      "changes": [
+        "appended catalogue marker"
+      ],
+      "originalSource": "app/src/arc/switch/switch.tsx"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/switch/switch.module.css",
+      "target": "src/source/switch/switch.module.css",
+      "sourceSha256": "3793e7ee1a4c2db46fce615c3fd76212c3c78ea005e23ae07c24b53453c1b6f7",
+      "adaptedSha256": "3793e7ee1a4c2db46fce615c3fd76212c3c78ea005e23ae07c24b53453c1b6f7",
+      "changes": [],
+      "originalSource": "app/src/arc/switch/switch.module.css"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/radio-group/radio-group.tsx",
+      "target": "src/source/radio-group/radio-group.tsx",
+      "sourceSha256": "b64932d460b1366d5bd057af9bb372003380da8afb3ec306754fafa025d8a3eb",
+      "adaptedSha256": "399ebe37f84931d05a4188d2ceb58a3c29ec02e2e0dd00e1b6848f2ff3373441",
+      "changes": [
+        "appended catalogue marker"
+      ],
+      "originalSource": "app/src/arc/radio-group/radio-group.tsx"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/radio-group/radio-group.module.css",
+      "target": "src/source/radio-group/radio-group.module.css",
+      "sourceSha256": "b5a7ececee88f400799ee00c1a710a278a776a5930f76388f8f0fe99c7602929",
+      "adaptedSha256": "b5a7ececee88f400799ee00c1a710a278a776a5930f76388f8f0fe99c7602929",
+      "changes": [],
+      "originalSource": "app/src/arc/radio-group/radio-group.module.css"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/segmented-control/segmented-control.tsx",
+      "target": "src/source/segmented-control/segmented-control.tsx",
+      "sourceSha256": "9e1a4bc135246c86ed2d8875a3a1266490aa38a3d7800759db630e700188e840",
+      "adaptedSha256": "fe9f705b8e60b50b6e8e7e407174c755809bdd7e4bf9882a0ce77127d033622c",
+      "changes": [
+        "appended catalogue marker"
+      ],
+      "originalSource": "app/src/arc/segmented-control/segmented-control.tsx"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/segmented-control/segmented-control.module.css",
+      "target": "src/source/segmented-control/segmented-control.module.css",
+      "sourceSha256": "029f038c7f03762cf386554f5e59768a95e6f5c8eb8b459bf3ef56cef35d1788",
+      "adaptedSha256": "029f038c7f03762cf386554f5e59768a95e6f5c8eb8b459bf3ef56cef35d1788",
+      "changes": [],
+      "originalSource": "app/src/arc/segmented-control/segmented-control.module.css"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/slider/slider.tsx",
+      "target": "src/source/slider/slider.tsx",
+      "sourceSha256": "4f460de666d2fb4cc7417abbbad69f3aab01afca41dafd5a4b5453fcc2506e0a",
+      "adaptedSha256": "5284ed2cabdea92c4bbb6e205d19a506d08ae87e7dea01a59b03708fb78bce57",
+      "changes": [
+        "appended catalogue marker"
+      ],
+      "originalSource": "app/src/arc/slider/slider.tsx"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/slider/slider.module.css",
+      "target": "src/source/slider/slider.module.css",
+      "sourceSha256": "d87a96b49a67a497450e89593f94abf65a9767d8b44156791d29d0547e3316d0",
+      "adaptedSha256": "d87a96b49a67a497450e89593f94abf65a9767d8b44156791d29d0547e3316d0",
+      "changes": [],
+      "originalSource": "app/src/arc/slider/slider.module.css"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/select/select.tsx",
+      "target": "src/source/select/select.tsx",
+      "sourceSha256": "673dc0c887a255c87bfbabd1835606d87cfbf59ed6fd4909a28038f00f673eaa",
+      "adaptedSha256": "f3938555ab462a47bf03998b323f19b619e78b0e522eb02b5f64ecef71e45465",
+      "changes": [
+        "appended catalogue marker",
+        "theme-preserving source portal host"
+      ],
+      "originalSource": "app/src/arc/select/select.tsx"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/select/select.module.css",
+      "target": "src/source/select/select.module.css",
+      "sourceSha256": "f700250cfa39db22e974f417d6d776e70b037e031500ca85c3c94e0c558a2b04",
+      "adaptedSha256": "f700250cfa39db22e974f417d6d776e70b037e031500ca85c3c94e0c558a2b04",
+      "changes": [],
+      "originalSource": "app/src/arc/select/select.module.css"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/multi-select/multi-select.tsx",
+      "target": "src/source/multi-select/multi-select.tsx",
+      "sourceSha256": "08fbcb055525cb74a24895fabb4ee20938764b08b177a5b24dc2e5704fff08ca",
+      "adaptedSha256": "9f93c92eaeee8ceb8d5f9a8f3a59155a413960064a4ebce5c3856f4a111aa8bb",
+      "changes": [
+        "appended catalogue marker"
+      ],
+      "originalSource": "app/src/arc/multi-select/multi-select.tsx"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/multi-select/multi-select.module.css",
+      "target": "src/source/multi-select/multi-select.module.css",
+      "sourceSha256": "6bf5c9137cc0816d5d2f27836a95cae9add60334d39865d9fceabeeb72c5a451",
+      "adaptedSha256": "6bf5c9137cc0816d5d2f27836a95cae9add60334d39865d9fceabeeb72c5a451",
+      "changes": [],
+      "originalSource": "app/src/arc/multi-select/multi-select.module.css"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/badge/badge.tsx",
+      "target": "src/source/badge/badge.tsx",
+      "sourceSha256": "3c55d03480156cd7636e171ce8649ddc9616db7484dea50063d8b589810c4aad",
+      "adaptedSha256": "2e5050d9275ca0fb1ed3776216922621f65eab012620be850bbe4ebe1ae29c5f",
+      "changes": [
+        "appended catalogue marker"
+      ],
+      "originalSource": "app/src/arc/badge/badge.tsx"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/badge/badge.module.css",
+      "target": "src/source/badge/badge.module.css",
+      "sourceSha256": "3306e97600585992b6dbc19db1d55961cbfacd24f5942d80ac3078d6887b3644",
+      "adaptedSha256": "3306e97600585992b6dbc19db1d55961cbfacd24f5942d80ac3078d6887b3644",
+      "changes": [],
+      "originalSource": "app/src/arc/badge/badge.module.css"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/avatar/avatar.tsx",
+      "target": "src/source/avatar/avatar.tsx",
+      "sourceSha256": "94c22aa1f558a72d3dae928b35516fe182c296636cc8c24ea9fee194718e166c",
+      "adaptedSha256": "d0b049e4b756466b06f27557f3ee4147f9fbbc3bf2517020291ae1e9d838f046",
+      "changes": [
+        "appended catalogue marker"
+      ],
+      "originalSource": "app/src/arc/avatar/avatar.tsx"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/lib/arc-provider.tsx",
+      "target": "src/source/lib/arc-provider.tsx",
+      "sourceSha256": "da999c71ba5e56b85ed5cdbfd38d2bf0ccb40dc430e37fefbda4f02d3ed0062f",
+      "adaptedSha256": "fdadd447edbe05dde607bbe8eaa91f61978afa5ef283bac54384436d6dc852a7",
+      "changes": [
+        "appended catalogue marker"
+      ],
+      "originalSource": "app/src/arc/lib/arc-provider.tsx"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/avatar/avatar.module.css",
+      "target": "src/source/avatar/avatar.module.css",
+      "sourceSha256": "7a24bd77c83d3c14ac2c90905dc7d64eea7b60e8bf6eddd2e5d30dd6c96bd816",
+      "adaptedSha256": "7a24bd77c83d3c14ac2c90905dc7d64eea7b60e8bf6eddd2e5d30dd6c96bd816",
+      "changes": [],
+      "originalSource": "app/src/arc/avatar/avatar.module.css"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/avatar-group/avatar-group.tsx",
+      "target": "src/source/avatar-group/avatar-group.tsx",
+      "sourceSha256": "937f6581c5fc0f3f4e52c357ac6c59cb1a4bcba7221ddebf32d944219fcec62a",
+      "adaptedSha256": "7e990dc141b48378a37f24045555a15c96efb3f5bc1be40ab261ec4441fa701d",
+      "changes": [
+        "appended catalogue marker"
+      ],
+      "originalSource": "app/src/arc/avatar-group/avatar-group.tsx"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/avatar-group/avatar-group.module.css",
+      "target": "src/source/avatar-group/avatar-group.module.css",
+      "sourceSha256": "390515d480d1d441670087be4394db6bae9423e4cb1dcc269c83c25505c8c4fb",
+      "adaptedSha256": "390515d480d1d441670087be4394db6bae9423e4cb1dcc269c83c25505c8c4fb",
+      "changes": [],
+      "originalSource": "app/src/arc/avatar-group/avatar-group.module.css"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/progress/progress.tsx",
+      "target": "src/source/progress/progress.tsx",
+      "sourceSha256": "53f96b8e42315c9c261338bd96f74d74f6db22b5de935ae3ec02e20cfb64ae1e",
+      "adaptedSha256": "329d585f4bc7a6268f3b352779bcd093b667983dfe5e81ced9b1adb32754d3ff",
+      "changes": [
+        "appended catalogue marker"
+      ],
+      "originalSource": "app/src/arc/progress/progress.tsx"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/progress/progress.module.css",
+      "target": "src/source/progress/progress.module.css",
+      "sourceSha256": "f0e527c419a7ebd3f9dd7faf49244fe87ea47e5153fed9f8e50fd83fd61d11a7",
+      "adaptedSha256": "f0e527c419a7ebd3f9dd7faf49244fe87ea47e5153fed9f8e50fd83fd61d11a7",
+      "changes": [],
+      "originalSource": "app/src/arc/progress/progress.module.css"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/skeleton/skeleton.tsx",
+      "target": "src/source/skeleton/skeleton.tsx",
+      "sourceSha256": "73b97715698fa54f6f0eaeefb6a8d795977297dd998439d1e595361e5da6d3b5",
+      "adaptedSha256": "38e2a6365a784478efec80bc482e6faba31863a37724fc8df2152d2fb07db42d",
+      "changes": [
+        "appended catalogue marker"
+      ],
+      "originalSource": "app/src/arc/skeleton/skeleton.tsx"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/skeleton/skeleton.module.css",
+      "target": "src/source/skeleton/skeleton.module.css",
+      "sourceSha256": "ba4b3fa1d7f9df341c4c3a5e302d43178015f15030715ddb3ced2116cecf0588",
+      "adaptedSha256": "ba4b3fa1d7f9df341c4c3a5e302d43178015f15030715ddb3ced2116cecf0588",
+      "changes": [],
+      "originalSource": "app/src/arc/skeleton/skeleton.module.css"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/tooltip/tooltip.tsx",
+      "target": "src/source/tooltip/tooltip.tsx",
+      "sourceSha256": "25ad5ea2b707da617e055f0c2fd9bcf8776775ad658e67f3e9176f3030855f9b",
+      "adaptedSha256": "943a3f71cacada192ab732d89bc7a85880eea93e856d22cf9d69b50832aebbb8",
+      "changes": [
+        "appended catalogue marker",
+        "theme-preserving source portal host"
+      ],
+      "originalSource": "app/src/arc/tooltip/tooltip.tsx"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/tooltip/tooltip.module.css",
+      "target": "src/source/tooltip/tooltip.module.css",
+      "sourceSha256": "a6126eda83bbbc1164018ad9df811f437098167077ca493ec5c06538e7f901f4",
+      "adaptedSha256": "a6126eda83bbbc1164018ad9df811f437098167077ca493ec5c06538e7f901f4",
+      "changes": [],
+      "originalSource": "app/src/arc/tooltip/tooltip.module.css"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/card/card.tsx",
+      "target": "src/source/card/card.tsx",
+      "sourceSha256": "1e82f064e152aefefb9b34e89e019cca31919ce9ddcd84b480a88775fd4ad638",
+      "adaptedSha256": "ecb316165491df89b26d056bf87638a17717f4284e3b37c85ab8e7ee18837150",
+      "changes": [
+        "appended catalogue marker",
+        "theme-preserving source portal host"
+      ],
+      "originalSource": "app/src/arc/card/card.tsx"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/card/card.module.css",
+      "target": "src/source/card/card.module.css",
+      "sourceSha256": "fc16b59deb8d1d3887f06e17eea063a5d6c6a2903999841f47e2dc80c30e8a9f",
+      "adaptedSha256": "fc16b59deb8d1d3887f06e17eea063a5d6c6a2903999841f47e2dc80c30e8a9f",
+      "changes": [],
+      "originalSource": "app/src/arc/card/card.module.css"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/tabs/tabs.tsx",
+      "target": "src/source/tabs/tabs.tsx",
+      "sourceSha256": "3b0aaf6f0c41ce486e697ee3c9c86ce874fb2a22b1dab433226027de7858af0a",
+      "adaptedSha256": "f7e6bbf3f3b4ba88186d1c697c9c1360766480e5fc9349399439b6ce16f58130",
+      "changes": [
+        "appended catalogue marker"
+      ],
+      "originalSource": "app/src/arc/tabs/tabs.tsx"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/tabs/tabs.module.css",
+      "target": "src/source/tabs/tabs.module.css",
+      "sourceSha256": "573e4a572e884b5f184efe731f2955341bb56f7ff640d2d01e3a409456ce4469",
+      "adaptedSha256": "573e4a572e884b5f184efe731f2955341bb56f7ff640d2d01e3a409456ce4469",
+      "changes": [],
+      "originalSource": "app/src/arc/tabs/tabs.module.css"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/tag-input/tag-input.tsx",
+      "target": "src/source/tag-input/tag-input.tsx",
+      "sourceSha256": "c17d9903f365a2901676d09692d93a283367825ae0aa53deb00d942e8440472c",
+      "adaptedSha256": "e5d76ba32a7c41f806177d2c68ae56095f2e071304119d90b91828f212a74f50",
+      "changes": [
+        "appended catalogue marker"
+      ],
+      "originalSource": "app/src/arc/tag-input/tag-input.tsx"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/tag-input/tag-input.module.css",
+      "target": "src/source/tag-input/tag-input.module.css",
+      "sourceSha256": "d6b84d67e6ff5626c50cff759decba51ce77197b09cd812c759ea47904b6074b",
+      "adaptedSha256": "d6b84d67e6ff5626c50cff759decba51ce77197b09cd812c759ea47904b6074b",
+      "changes": [],
+      "originalSource": "app/src/arc/tag-input/tag-input.module.css"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/inline-edit/inline-edit.tsx",
+      "target": "src/source/inline-edit/inline-edit.tsx",
+      "sourceSha256": "7040d60275c468ae819f9de96a4cf6e41d9c639fdeefe866953466afd15addb4",
+      "adaptedSha256": "9b141bac985f71f9568beb4d2b30f3f4684d01f983266dbe293e77deefe14621",
+      "changes": [
+        "appended catalogue marker"
+      ],
+      "originalSource": "app/src/arc/inline-edit/inline-edit.tsx"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/inline-edit/inline-edit.module.css",
+      "target": "src/source/inline-edit/inline-edit.module.css",
+      "sourceSha256": "c689027c6c24a43a7cc1de2edf99812c613b0a85ae008e08fdc76caf6d1083d9",
+      "adaptedSha256": "c689027c6c24a43a7cc1de2edf99812c613b0a85ae008e08fdc76caf6d1083d9",
+      "changes": [],
+      "originalSource": "app/src/arc/inline-edit/inline-edit.module.css"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/password-strength/password-strength.tsx",
+      "target": "src/source/password-strength/password-strength.tsx",
+      "sourceSha256": "1b33ae980f6d812aee8bd2a41af7aac33172afeb71b4dba0fc2caf3cce08b2e5",
+      "adaptedSha256": "891a465d00ca395e3aaefb83e079dbfc350e96c7ecd832076b54bc1e93d7795e",
+      "changes": [
+        "appended catalogue marker"
+      ],
+      "originalSource": "app/src/arc/password-strength/password-strength.tsx"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/password-strength/password-strength.module.css",
+      "target": "src/source/password-strength/password-strength.module.css",
+      "sourceSha256": "57080bc46186fa8643600e5ee609e63fc4b6c741ef23cf158f1abccc3747dd68",
+      "adaptedSha256": "57080bc46186fa8643600e5ee609e63fc4b6c741ef23cf158f1abccc3747dd68",
+      "changes": [],
+      "originalSource": "app/src/arc/password-strength/password-strength.module.css"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/usage-meter/usage-meter.tsx",
+      "target": "src/source/usage-meter/usage-meter.tsx",
+      "sourceSha256": "3dafab782abe29de6cdcb49cf0d4dfc1b31bddd0bf6c8aa7dad035bbbb461bbd",
+      "adaptedSha256": "cb9858ebba062e49408f412effdaf6cb89f9c28029a82cda4ca561788d10ef0e",
+      "changes": [
+        "appended catalogue marker"
+      ],
+      "originalSource": "app/src/arc/usage-meter/usage-meter.tsx"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/usage-meter/usage-meter.module.css",
+      "target": "src/source/usage-meter/usage-meter.module.css",
+      "sourceSha256": "a5570a22c9ec41d73ad088a6dc66b3b0199b1e53ccb2c46cca5d5e86143881d1",
+      "adaptedSha256": "a5570a22c9ec41d73ad088a6dc66b3b0199b1e53ccb2c46cca5d5e86143881d1",
+      "changes": [],
+      "originalSource": "app/src/arc/usage-meter/usage-meter.module.css"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/alert/alert.tsx",
+      "target": "src/source/alert/alert.tsx",
+      "sourceSha256": "ddcd481e2ebc6a1cbf6f053d6de1817d5dfd40b347e0bea561cc9fda2ea54950",
+      "adaptedSha256": "a13531c5293d3d718a9483c2b0c0dd51d33220462f1932fa5905abff940806c7",
+      "changes": [
+        "appended catalogue marker"
+      ],
+      "originalSource": "app/src/arc/alert/alert.tsx"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/alert/alert.module.css",
+      "target": "src/source/alert/alert.module.css",
+      "sourceSha256": "938cddc734989a721d38e92ed62c40df3a911cc3c6af6d9da313daaaf57965a6",
+      "adaptedSha256": "938cddc734989a721d38e92ed62c40df3a911cc3c6af6d9da313daaaf57965a6",
+      "changes": [],
+      "originalSource": "app/src/arc/alert/alert.module.css"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/expanding-search/expanding-search.tsx",
+      "target": "src/source/expanding-search/expanding-search.tsx",
+      "sourceSha256": "d76550fe9c4227e5329a14ae3dc7e419103f13e26408f057c04be47ea898e2a2",
+      "adaptedSha256": "a6042e98c1950a6e31406c2f9d125c535ad66857537a8f6f0400439eacfb52da",
+      "changes": [
+        "appended catalogue marker"
+      ],
+      "originalSource": "app/src/arc/expanding-search/expanding-search.tsx"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/expanding-search/expanding-search.module.css",
+      "target": "src/source/expanding-search/expanding-search.module.css",
+      "sourceSha256": "bd66136f51a698d3e5403ad69de96a3bad22b4c6f2d59ad00d3324d661a5a71a",
+      "adaptedSha256": "bd66136f51a698d3e5403ad69de96a3bad22b4c6f2d59ad00d3324d661a5a71a",
+      "changes": [],
+      "originalSource": "app/src/arc/expanding-search/expanding-search.module.css"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/radio-cards/radio-cards.tsx",
+      "target": "src/source/radio-cards/radio-cards.tsx",
+      "sourceSha256": "82084be52a5d5f9def1d517f3bcdbf8c26f046afc25b93d5dd8ff32543f8a8d4",
+      "adaptedSha256": "aae3d16ca8ae48ac1902ec3b01b9a71e9540e5a03585abe2d4575c5b424b3be3",
+      "changes": [
+        "appended catalogue marker"
+      ],
+      "originalSource": "app/src/arc/radio-cards/radio-cards.tsx"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/radio-cards/radio-cards.module.css",
+      "target": "src/source/radio-cards/radio-cards.module.css",
+      "sourceSha256": "5f6e5cd90a57fd7c31f301d6c1a9172b3386b2e4afdd0526573c4736836eca7a",
+      "adaptedSha256": "5f6e5cd90a57fd7c31f301d6c1a9172b3386b2e4afdd0526573c4736836eca7a",
+      "changes": [],
+      "originalSource": "app/src/arc/radio-cards/radio-cards.module.css"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/foundation.scoped.css",
+      "target": "src/source/foundation.scoped.css",
+      "sourceSha256": "a3bfd6bc2f7401d398e43915cd8e7471d424ad3b68302384f45f846b3ff8f1f8",
+      "adaptedSha256": "a3bfd6bc2f7401d398e43915cd8e7471d424ad3b68302384f45f846b3ff8f1f8",
+      "changes": [],
+      "originalSource": "app/src/arc/foundation.scoped.css"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/animated-counter/animated-counter.tsx",
+      "target": "src/source/animated-counter/animated-counter.tsx",
+      "sourceSha256": "2542f8bcd8a413c7a846d440d917a3c11a77f4e016014dfdd242c4549df01750",
+      "adaptedSha256": "956c059ef1e79c01d40cb4a25aca227542f4ae8fc1c623297c40716a08839898",
+      "changes": [
+        "catalogue marker; portable framework/media imports where present"
+      ],
+      "originalSource": "app/src/arc/animated-counter/animated-counter.tsx"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/animated-counter/animated-counter.module.css",
+      "target": "src/source/animated-counter/animated-counter.module.css",
+      "sourceSha256": "33b7d7f0081f4fd3907a4fafcff64444581845a58cb7b0b7844c394a2e254adf",
+      "adaptedSha256": "33b7d7f0081f4fd3907a4fafcff64444581845a58cb7b0b7844c394a2e254adf",
+      "changes": [],
+      "originalSource": "app/src/arc/animated-counter/animated-counter.module.css"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/billing-toggle/billing-toggle.tsx",
+      "target": "src/source/billing-toggle/billing-toggle.tsx",
+      "sourceSha256": "e17e3900f6c5efa2824b22b725c2d7501b2203491bd33b7c446fe817bf4fef20",
+      "adaptedSha256": "8c3f7d2be72af8c528524c399eb5f2446fb7f985de67d9cdfb22c289298bf7be",
+      "changes": [
+        "catalogue marker; portable framework/media imports where present"
+      ],
+      "originalSource": "app/src/arc/billing-toggle/billing-toggle.tsx"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/billing-toggle/billing-toggle.module.css",
+      "target": "src/source/billing-toggle/billing-toggle.module.css",
+      "sourceSha256": "0695e1f157d9a0b298ed84441a46c5f50577e7b7a82381bce7df6f6bf9c1227b",
+      "adaptedSha256": "0695e1f157d9a0b298ed84441a46c5f50577e7b7a82381bce7df6f6bf9c1227b",
+      "changes": [],
+      "originalSource": "app/src/arc/billing-toggle/billing-toggle.module.css"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/chip-group/chip-group.tsx",
+      "target": "src/source/chip-group/chip-group.tsx",
+      "sourceSha256": "18bd79ee819c6546b6f538bc1df5b2645e07093cb8eeb3637939087cd81b7bfd",
+      "adaptedSha256": "6305529de8ee5b437fb56a73e9c38b014c35ca500c4b5b7a0a7e77334dea5232",
+      "changes": [
+        "catalogue marker; portable framework/media imports where present"
+      ],
+      "originalSource": "app/src/arc/chip-group/chip-group.tsx"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/chip-group/chip-group.module.css",
+      "target": "src/source/chip-group/chip-group.module.css",
+      "sourceSha256": "cc8c6c63756b0dee42c97c55ede87074996628f237bc31ef32e3d64f8f72b928",
+      "adaptedSha256": "cc8c6c63756b0dee42c97c55ede87074996628f237bc31ef32e3d64f8f72b928",
+      "changes": [],
+      "originalSource": "app/src/arc/chip-group/chip-group.module.css"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/countdown/countdown.tsx",
+      "target": "src/source/countdown/countdown.tsx",
+      "sourceSha256": "41717eb6d74e220d6f7cb9bfd8c418c83666bac44e049a3c19eeb2562ff83d5b",
+      "adaptedSha256": "aa5a2158197e3b9daba1ad7891937c6697582026809c980e548dba3cb40cf506",
+      "changes": [
+        "catalogue marker; portable framework/media imports where present"
+      ],
+      "originalSource": "app/src/arc/countdown/countdown.tsx"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/countdown/countdown.module.css",
+      "target": "src/source/countdown/countdown.module.css",
+      "sourceSha256": "97b99d7435bd26f25a154e3cef9eb0f74edae3c50cac8c98cc6391602f00c59e",
+      "adaptedSha256": "97b99d7435bd26f25a154e3cef9eb0f74edae3c50cac8c98cc6391602f00c59e",
+      "changes": [],
+      "originalSource": "app/src/arc/countdown/countdown.module.css"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/expanding-button-group/expanding-button-group.tsx",
+      "target": "src/source/expanding-button-group/expanding-button-group.tsx",
+      "sourceSha256": "a41472ade73b7bd4ba8d528056791d5b997d937fb9b9caad8ce7c142b5b5536e",
+      "adaptedSha256": "aeadc4275d6f11326c8a17a9f4fa4b72e19142d6f3ea524eebbc9e1b4738c669",
+      "changes": [
+        "catalogue marker; portable framework/media imports where present"
+      ],
+      "originalSource": "app/src/arc/expanding-button-group/expanding-button-group.tsx"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/expanding-button-group/expanding-button-group.module.css",
+      "target": "src/source/expanding-button-group/expanding-button-group.module.css",
+      "sourceSha256": "86fb44cde48fa77b0785fe2e42c75880358eb1403879adf2d9a4349d361677c9",
+      "adaptedSha256": "86fb44cde48fa77b0785fe2e42c75880358eb1403879adf2d9a4349d361677c9",
+      "changes": [],
+      "originalSource": "app/src/arc/expanding-button-group/expanding-button-group.module.css"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/floating-button-group/floating-button-group.tsx",
+      "target": "src/source/floating-button-group/floating-button-group.tsx",
+      "sourceSha256": "2de3b52da32ed257e749b07971f7c3888dae127f7c1bafcbfdd7488a7b453d11",
+      "adaptedSha256": "c8ce46de72ae05f870f39d406b18faf1a433fe3eb34a04f4aa9a9b201d404f34",
+      "changes": [
+        "catalogue marker; portable framework/media imports where present",
+        "theme-preserving source portal host"
+      ],
+      "originalSource": "app/src/arc/floating-button-group/floating-button-group.tsx"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/floating-button-group/floating-button-group.module.css",
+      "target": "src/source/floating-button-group/floating-button-group.module.css",
+      "sourceSha256": "a79a1fa8cb57d963f66d61678c2ba76becd41bb169e7ded0b3054f125a4f9f6e",
+      "adaptedSha256": "a79a1fa8cb57d963f66d61678c2ba76becd41bb169e7ded0b3054f125a4f9f6e",
+      "changes": [],
+      "originalSource": "app/src/arc/floating-button-group/floating-button-group.module.css"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/in-view-title/in-view-title.tsx",
+      "target": "src/source/in-view-title/in-view-title.tsx",
+      "sourceSha256": "2046b2490078f2884fd15dba7e943ca6d13a69b1bd81e5087d7be1252e606681",
+      "adaptedSha256": "5c5b92e79c2a072a4480b8f8c5811338d48b03a42ae857a04a4ec47a0b16e4de",
+      "changes": [
+        "catalogue marker; portable framework/media imports where present"
+      ],
+      "originalSource": "app/src/arc/in-view-title/in-view-title.tsx"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/in-view-title/in-view-title.module.css",
+      "target": "src/source/in-view-title/in-view-title.module.css",
+      "sourceSha256": "7af8fbeef5d0d75b4d5853b88d0bd6cb6834073f6548746a6350183666ffac44",
+      "adaptedSha256": "7af8fbeef5d0d75b4d5853b88d0bd6cb6834073f6548746a6350183666ffac44",
+      "changes": [],
+      "originalSource": "app/src/arc/in-view-title/in-view-title.module.css"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/money-input/money-input.tsx",
+      "target": "src/source/money-input/money-input.tsx",
+      "sourceSha256": "c1e7e02920e8ffdfba05079ff20bae0974e181f39fae3105dd00cd7bb4a29c21",
+      "adaptedSha256": "44fdebd8b1de0e0ea671ed1ef3b34d7275ce868d26d2d663d48ad9fb0307d69d",
+      "changes": [
+        "catalogue marker; portable framework/media imports where present"
+      ],
+      "originalSource": "app/src/arc/money-input/money-input.tsx"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/money-input/money-input.module.css",
+      "target": "src/source/money-input/money-input.module.css",
+      "sourceSha256": "88559c08f38ebd4fbd2a9cc0c7fae0d2078ab018267ac907dab93586306fc0a7",
+      "adaptedSha256": "88559c08f38ebd4fbd2a9cc0c7fae0d2078ab018267ac907dab93586306fc0a7",
+      "changes": [],
+      "originalSource": "app/src/arc/money-input/money-input.module.css"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/phone-input/phone-input.tsx",
+      "target": "src/source/phone-input/phone-input.tsx",
+      "sourceSha256": "2998fd08f5e7982e045da70bb27f098a95eeb2ca79249d1711eabe2594a2cff7",
+      "adaptedSha256": "de241cb605ab8dfc857219f1dcdc19bfdc7b6f6590c87fccfca0df0c29c65e79",
+      "changes": [
+        "catalogue marker; portable framework/media imports where present"
+      ],
+      "originalSource": "app/src/arc/phone-input/phone-input.tsx"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/phone-input/phone-input.module.css",
+      "target": "src/source/phone-input/phone-input.module.css",
+      "sourceSha256": "d0f27fe2f5492773faae5f019b16295796e461dcfbca3ca4d3dc7f85069554c4",
+      "adaptedSha256": "d0f27fe2f5492773faae5f019b16295796e461dcfbca3ca4d3dc7f85069554c4",
+      "changes": [],
+      "originalSource": "app/src/arc/phone-input/phone-input.module.css"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/shortcut-recorder/shortcut-recorder.tsx",
+      "target": "src/source/shortcut-recorder/shortcut-recorder.tsx",
+      "sourceSha256": "e9941d875579297a4f666aa711e703f282d98759635e9da53090338e416b8f37",
+      "adaptedSha256": "cdd5025cced6d161b7f9fbc885d2c6d5c86db30e48ab860e4c4875ad6de9ce5a",
+      "changes": [
+        "catalogue marker; portable framework/media imports where present"
+      ],
+      "originalSource": "app/src/arc/shortcut-recorder/shortcut-recorder.tsx"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/shortcut-recorder/shortcut-recorder.module.css",
+      "target": "src/source/shortcut-recorder/shortcut-recorder.module.css",
+      "sourceSha256": "a658a5ccd0d5c3d372d778f73cfffe7f909350a8ee258c92c9a05c8ab31add2e",
+      "adaptedSha256": "a658a5ccd0d5c3d372d778f73cfffe7f909350a8ee258c92c9a05c8ab31add2e",
+      "changes": [],
+      "originalSource": "app/src/arc/shortcut-recorder/shortcut-recorder.module.css"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/slot-text/slot-text.tsx",
+      "target": "src/source/slot-text/slot-text.tsx",
+      "sourceSha256": "35ec44001e89ebdd707deb9a9bbbf1ebf099bc7728325e03f9754035d9e1fbc5",
+      "adaptedSha256": "cf96f42a069b9fb6c2a69084075c70fae49416a38dfb31f078aadd201d3fa3ad",
+      "changes": [
+        "catalogue marker; portable framework/media imports where present"
+      ],
+      "originalSource": "app/src/arc/slot-text/slot-text.tsx"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/slot-text/slot-text.module.css",
+      "target": "src/source/slot-text/slot-text.module.css",
+      "sourceSha256": "d72527fa79c320f29b9502891e5b04e12aa044bcd77754e598811853872b09a8",
+      "adaptedSha256": "d72527fa79c320f29b9502891e5b04e12aa044bcd77754e598811853872b09a8",
+      "changes": [],
+      "originalSource": "app/src/arc/slot-text/slot-text.module.css"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/stepper/stepper.tsx",
+      "target": "src/source/stepper/stepper.tsx",
+      "sourceSha256": "7b4034915b0902b16e6dd2e54dfae4ce40fd9b2d4fd09e736f9e196d97fc6c17",
+      "adaptedSha256": "15e3e7fd44659ace35496887910f8b7e61aa5a17ac18eee162fe74335cf9c5b8",
+      "changes": [
+        "catalogue marker; portable framework/media imports where present"
+      ],
+      "originalSource": "app/src/arc/stepper/stepper.tsx"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/stepper/stepper.module.css",
+      "target": "src/source/stepper/stepper.module.css",
+      "sourceSha256": "3762deb9d9cda692a33c81510c811cae11aebadcd82ce58d4ea3b84b3ed5c569",
+      "adaptedSha256": "3762deb9d9cda692a33c81510c811cae11aebadcd82ce58d4ea3b84b3ed5c569",
+      "changes": [],
+      "originalSource": "app/src/arc/stepper/stepper.module.css"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/text-morph/text-morph.tsx",
+      "target": "src/source/text-morph/text-morph.tsx",
+      "sourceSha256": "24b6559369ab4e5ca84e4465f3c9e4a973f3c259e90a539f8778c0cc0b9042c2",
+      "adaptedSha256": "63c9d314d2dfd394267eea802ac883c25ae9634fbe69fd1a91508493fd990ca5",
+      "changes": [
+        "catalogue marker; portable framework/media imports where present"
+      ],
+      "originalSource": "app/src/arc/text-morph/text-morph.tsx"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/text-morph/text-morph.module.css",
+      "target": "src/source/text-morph/text-morph.module.css",
+      "sourceSha256": "bd51e5ba739e7b7272ad4b46fb500617aaaefb2ae4303010edaea6057f975989",
+      "adaptedSha256": "bd51e5ba739e7b7272ad4b46fb500617aaaefb2ae4303010edaea6057f975989",
+      "changes": [],
+      "originalSource": "app/src/arc/text-morph/text-morph.module.css"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/text-reveal/text-reveal.tsx",
+      "target": "src/source/text-reveal/text-reveal.tsx",
+      "sourceSha256": "41446c73d91f070926e6deae7742dc36031b6766a86a2108bb354cb4334eff4c",
+      "adaptedSha256": "80cac167f0b7dc8c44a91344394c7a3a8b49a31de2ce8b3f9729c49a0af46bd9",
+      "changes": [
+        "catalogue marker; portable framework/media imports where present"
+      ],
+      "originalSource": "app/src/arc/text-reveal/text-reveal.tsx"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/text-reveal/text-reveal.module.css",
+      "target": "src/source/text-reveal/text-reveal.module.css",
+      "sourceSha256": "83a08d89b710a79bf93f535dabd486efd5b9c8a54a3efeffdd3be9e820fe69c0",
+      "adaptedSha256": "83a08d89b710a79bf93f535dabd486efd5b9c8a54a3efeffdd3be9e820fe69c0",
+      "changes": [],
+      "originalSource": "app/src/arc/text-reveal/text-reveal.module.css"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/text-shimmer/text-shimmer.tsx",
+      "target": "src/source/text-shimmer/text-shimmer.tsx",
+      "sourceSha256": "021bfe6d2ae791f2e4e3832473e2bb76b01e929aded277025810013045950236",
+      "adaptedSha256": "b99ca362a27975859c68361202d34ae777d58d65739e7f1e7ca5222720c03360",
+      "changes": [
+        "catalogue marker; portable framework/media imports where present"
+      ],
+      "originalSource": "app/src/arc/text-shimmer/text-shimmer.tsx"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/text-shimmer/text-shimmer.module.css",
+      "target": "src/source/text-shimmer/text-shimmer.module.css",
+      "sourceSha256": "a16da76e363bd7cec888c848b67043f5e1000f8bf9f1b3cc57a0dd01109ace4b",
+      "adaptedSha256": "a16da76e363bd7cec888c848b67043f5e1000f8bf9f1b3cc57a0dd01109ace4b",
+      "changes": [],
+      "originalSource": "app/src/arc/text-shimmer/text-shimmer.module.css"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/theme-switch/theme-switch.tsx",
+      "target": "src/source/theme-switch/theme-switch.tsx",
+      "sourceSha256": "ab77cf084065de4d4ad6a25d972c5242e39a704142b285f1ce56b7d82c22dafd",
+      "adaptedSha256": "800cf68cc3c6e381f7957c44fd5482b33516e7009964a9cda839e2f1a2691cb3",
+      "changes": [
+        "catalogue marker; portable framework/media imports where present"
+      ],
+      "originalSource": "app/src/arc/theme-switch/theme-switch.tsx"
+    },
+    {
+      "source": "_reference/ui-suite-v0.4.0/arc/theme-switch/theme-switch.module.css",
+      "target": "src/source/theme-switch/theme-switch.module.css",
+      "sourceSha256": "271d73fdd37bbcece5b4a1db2e94a97c3376f914e73ccf2e6a25dd2b14e26e7a",
+      "adaptedSha256": "271d73fdd37bbcece5b4a1db2e94a97c3376f914e73ccf2e6a25dd2b14e26e7a",
+      "changes": [],
+      "originalSource": "app/src/arc/theme-switch/theme-switch.module.css"
+    }
+  ],
+  "dependencies": [
+    "@radix-ui/react-checkbox",
+    "@radix-ui/react-dialog",
+    "@radix-ui/react-dropdown-menu",
+    "@radix-ui/react-select",
+    "@radix-ui/react-switch",
+    "@radix-ui/react-tabs",
+    "@radix-ui/react-tooltip",
+    "lucide-react",
+    "motion",
+    "react",
+    "react-dom"
+  ],
+  "excluded": "All Arc Pro source remains reference-only; none copied.",
+  "adapters": [
+    {
+      "file": "src/source/lib/source-atom-scope.tsx",
+      "sha256": "c50ef16456089f3c5d744cad0d9b70e9695c1dc440ea312a3345c9ef9284ebae",
+      "source": "SISO-owned scoped portal adapter"
+    }
+  ],
+  "upstreamSnapshot": {
+    "uiSourceCommit": "75964144e29ecc9efa6b7d2b3866a1c2167fdb0e",
+    "directory": "_reference/ui-suite-v0.4.0/arc",
+    "use": "Immutable provenance input only; not an importable kit or product implementation."
+  }
+}

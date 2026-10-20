@@ -9,7 +9,7 @@ A spec holds Shaan's words verbatim (the rule he set for UI, and the words behin
 swap means (files, catalogue target, install lines), and when it is done. A swap that already has an ask is skipped."""
 import datetime, json, os, re, subprocess, sys
 HUB = os.path.dirname(os.path.dirname(os.path.realpath(__file__)))
-ASK = os.path.expanduser("~/SISO_Workspace/SISO_Agents/agent-zero/siso-agent-zero/bin/ask")
+ASK = os.path.realpath(os.path.join(HUB, "../../agents/zero/bin/ask"))
 NAMES = {"agent-base": "Agent Base", "operator": "Operator", "model-app": "model app"}
 # the rule every swap serves (A0-NOTE-2), then the ADRs each kind of swap serves
 RULE = ("every comp comes from this list and if we make a new custom comp it gets noted down as a custom comp on this "

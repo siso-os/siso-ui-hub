@@ -1,0 +1,341 @@
+[
+  {
+    "id": "button",
+    "component": "ButtonDemo",
+    "default": true,
+    "upstreamSha256": "739c66c28973623a8e97428055d81ac644f10a70a2c349d56afaac5ee0a406e6",
+    "modifications": [
+      "local component imports rewritten to installed @siso/atoms/source"
+    ]
+  },
+  {
+    "id": "action-button",
+    "component": "ActionButtonDemo",
+    "default": true,
+    "upstreamSha256": "70d7d10f85201840925daa2c5f8364daf44e3102c42a506f008b743a659a2894",
+    "modifications": [
+      "local component imports rewritten to installed @siso/atoms/source"
+    ]
+  },
+  {
+    "id": "split-button",
+    "component": "SplitButtonDemo",
+    "default": true,
+    "upstreamSha256": "9bf04c8ee60a17535b450f1089da1465fdb7f3750a1d20fc8083199cbdf19242",
+    "modifications": [
+      "local component imports rewritten to installed @siso/atoms/source"
+    ]
+  },
+  {
+    "id": "button-group",
+    "component": "ButtonGroupDemo",
+    "default": true,
+    "upstreamSha256": "a2b0529ec4b41d64a7f258340af117c4449199f7a01b2db8570b6c667136ee8f",
+    "modifications": [
+      "local component imports rewritten to installed @siso/atoms/source"
+    ]
+  },
+  {
+    "id": "copy-button",
+    "component": "CopyButtonDemo",
+    "default": true,
+    "upstreamSha256": "ed8909b36eca79c85a28e7241aac321988dbd942ebd6590f4e76e10b7c2fcfbd",
+    "modifications": [
+      "local component imports rewritten to installed @siso/atoms/source"
+    ]
+  },
+  {
+    "id": "confirm-morph",
+    "component": "ConfirmMorphDemo",
+    "default": true,
+    "upstreamSha256": "ad2e468c71fc9a04a4d8d4a5b148ac3e5439bd6fc0f6a74c40ad2e0e38b411fd",
+    "modifications": [
+      "local component imports rewritten to installed @siso/atoms/source"
+    ]
+  },
+  {
+    "id": "hold-to-confirm",
+    "component": "HoldToConfirmDemo",
+    "default": true,
+    "upstreamSha256": "4644b40dee72d02ad75b3cda41b6f08469986db8a38a506737a64bf705f1b83e",
+    "modifications": [
+      "local component imports rewritten to installed @siso/atoms/source"
+    ]
+  },
+  {
+    "id": "input",
+    "component": "EmailField",
+    "default": false,
+    "upstreamSha256": "d4f53e00794482675361b2160214a17f6498968773a7487c5f1c560582950ac7",
+    "modifications": [
+      "local component imports rewritten to installed @siso/atoms/source"
+    ]
+  },
+  {
+    "id": "textarea",
+    "component": "BioField",
+    "default": false,
+    "upstreamSha256": "f50ba6d757ed6811d40574d92b03aaac986020b9e1d7ac60ccac933bd6821d1c",
+    "modifications": [
+      "local component imports rewritten to installed @siso/atoms/source"
+    ]
+  },
+  {
+    "id": "search-field",
+    "component": "MemberFilter",
+    "default": false,
+    "upstreamSha256": "1119c7618eb351cec47c70eadd8142a5167013c28c7ac4df6b830d0fe7461285",
+    "modifications": [
+      "local component imports rewritten to installed @siso/atoms/source"
+    ]
+  },
+  {
+    "id": "password-field",
+    "component": "SignInPassword",
+    "default": false,
+    "upstreamSha256": "d7bc5b3bd243544ef47373940029ab38544f955dec012231e2c5758db4e8d419",
+    "modifications": [
+      "local component imports rewritten to installed @siso/atoms/source"
+    ]
+  },
+  {
+    "id": "number-field",
+    "component": "SeatsField",
+    "default": false,
+    "upstreamSha256": "b6172080f9dbd261a658fb166e2a7823ac7af827c52bb0980355bb1d3d8dbd57",
+    "modifications": [
+      "local component imports rewritten to installed @siso/atoms/source"
+    ]
+  },
+  {
+    "id": "otp-input",
+    "component": "VerifyCode",
+    "default": false,
+    "upstreamSha256": "196619effc1d3b4412051cfa2f1b0a8b6bb24d8b474a7b7a6beee965c9c16c59",
+    "modifications": [
+      "local component imports rewritten to installed @siso/atoms/source",
+      "added missing local-only docs verify helper; never logs entered code"
+    ]
+  },
+  {
+    "id": "checkbox",
+    "component": "TermsCheckbox",
+    "default": false,
+    "upstreamSha256": "8dcc59446902324ef2ceaba901c5cce7793b851e0c3692f71a8e8637cf23fc49",
+    "modifications": [
+      "local component imports rewritten to installed @siso/atoms/source"
+    ]
+  },
+  {
+    "id": "switch",
+    "component": "NotificationsToggle",
+    "default": false,
+    "upstreamSha256": "2d0412c0588ce6c8e2c85bfa9067937c5ff27e8c000adaa771a15f27dadaa9fe",
+    "modifications": [
+      "local component imports rewritten to installed @siso/atoms/source"
+    ]
+  },
+  {
+    "id": "radio-group",
+    "component": "PlanPicker",
+    "default": false,
+    "upstreamSha256": "3affdc14d1a6bf35aa28803b3dace0e8a8490d3d491e66b9140f19275bb37a36",
+    "modifications": [
+      "local component imports rewritten to installed @siso/atoms/source"
+    ]
+  },
+  {
+    "id": "segmented-control",
+    "component": "RangeToggle",
+    "default": false,
+    "upstreamSha256": "7918535697a0695ba28e9b8158d552d9a16fd5d9808b404b633a1ca3ae960de6",
+    "modifications": [
+      "local component imports rewritten to installed @siso/atoms/source",
+      "default component import becomes named source-entry export"
+    ]
+  },
+  {
+    "id": "slider",
+    "component": "PriceFilter",
+    "default": false,
+    "upstreamSha256": "7d37d49af2944ddd2bedef3c6a2161ece8f9d5dffac1e7d09c0eb0a2853e320a",
+    "modifications": [
+      "local component imports rewritten to installed @siso/atoms/source"
+    ]
+  },
+  {
+    "id": "select",
+    "component": "RegionSelect",
+    "default": false,
+    "upstreamSha256": "ae36cc5283e4af644a6a461c687a4d7d91b4305bb5899b20ec882c5848a0a8cf",
+    "modifications": [
+      "local component imports rewritten to installed @siso/atoms/source"
+    ]
+  },
+  {
+    "id": "multi-select",
+    "component": "LabelPicker",
+    "default": false,
+    "upstreamSha256": "f83181bcdf4a377d204f8a76fed909a68eff6042159e992c015fb6a969bcc19b",
+    "modifications": [
+      "local component imports rewritten to installed @siso/atoms/source"
+    ]
+  },
+  {
+    "id": "badge",
+    "component": "BadgeDemo",
+    "default": true,
+    "upstreamSha256": "3e13d4d44cb9fd8d549d941d5b2e45bd1dfca784c559b2c6c9d16a7e817c9a36",
+    "modifications": [
+      "local component imports rewritten to installed @siso/atoms/source"
+    ]
+  },
+  {
+    "id": "avatar",
+    "component": "Owner",
+    "default": false,
+    "upstreamSha256": "b1cde58085bb853db8bed24e2642327ab2ac1f08b572f0e389c7d7b65971a876",
+    "modifications": [
+      "local component imports rewritten to installed @siso/atoms/source",
+      "original local demo media moved beside demo; excluded from npm package"
+    ],
+    "media": {
+      "upstreamPath": "app/src/arc/media/people/maya.jpg",
+      "demoPath": "examples/package-suite/atom-demos/assets/maya.jpg",
+      "sha256": "767b15ae42edf0d248439cb9c3ee9a0100d988dbcd687708dcc0ba1d3424f36d",
+      "licenseNote": "Existing hub documentation image; no new photo licence is asserted; not part of npm package."
+    }
+  },
+  {
+    "id": "avatar-group",
+    "component": "Collaborators",
+    "default": false,
+    "upstreamSha256": "90115c159bb49738b33243c2829db765d79739a1172b2a7e6e0a7be5628573a0",
+    "modifications": [
+      "local component imports rewritten to installed @siso/atoms/source",
+      "original local demo media moved beside demo; excluded from npm package"
+    ],
+    "media": {
+      "upstreamPath": "app/src/arc/media/people/maya.jpg",
+      "demoPath": "examples/package-suite/atom-demos/assets/maya.jpg",
+      "sha256": "767b15ae42edf0d248439cb9c3ee9a0100d988dbcd687708dcc0ba1d3424f36d",
+      "licenseNote": "Existing hub documentation image; no new photo licence is asserted; not part of npm package."
+    }
+  },
+  {
+    "id": "progress",
+    "component": "ProgressDemo",
+    "default": true,
+    "upstreamSha256": "1156ff78037817d9fec3d3ceb0a5ad46da0293b14875345ecf8309562c6b09a4",
+    "modifications": [
+      "local component imports rewritten to installed @siso/atoms/source"
+    ]
+  },
+  {
+    "id": "skeleton",
+    "component": "SkeletonDemo",
+    "default": true,
+    "upstreamSha256": "0383ffcd1e9ba13326acac2471f0d982f3f193507d80dde09087de98a509f467",
+    "modifications": [
+      "local component imports rewritten to installed @siso/atoms/source"
+    ]
+  },
+  {
+    "id": "tooltip",
+    "component": "TooltipDemo",
+    "default": true,
+    "upstreamSha256": "0dece4af43195a6629a113ac9a4331b3d3372bfe0c55287b8b99517923a0d164",
+    "modifications": [
+      "local component imports rewritten to installed @siso/atoms/source"
+    ]
+  },
+  {
+    "id": "card",
+    "component": "ProjectCard",
+    "default": false,
+    "upstreamSha256": "20ecec969a0ade8e8a439c4f060679a8d23530c291fd919bfff99add1c7f0746",
+    "modifications": [
+      "local component imports rewritten to installed @siso/atoms/source",
+      "original local demo media moved beside demo; excluded from npm package"
+    ],
+    "media": {
+      "upstreamPath": "app/src/arc/media/harbour.jpg",
+      "demoPath": "examples/package-suite/atom-demos/assets/harbour.jpg",
+      "sha256": "4fa8034e91c4dbcbba521ed6d73721f6250f5481bebb43e0fad7d5d03dbb20a4",
+      "licenseNote": "Existing hub documentation image; no new photo licence is asserted; not part of npm package."
+    }
+  },
+  {
+    "id": "tabs",
+    "component": "ProjectTabs",
+    "default": false,
+    "upstreamSha256": "9b2bd478bfa3169e86b9d657942b4b4093532638f82bc667731ce917c2b179da",
+    "modifications": [
+      "local component imports rewritten to installed @siso/atoms/source"
+    ]
+  },
+  {
+    "id": "tag-input",
+    "component": "TopicsField",
+    "default": false,
+    "upstreamSha256": "54a3dc9a0b729c88afaf174123b26e9072f6e62d658a03843f34b0eb8a544790",
+    "modifications": [
+      "local component imports rewritten to installed @siso/atoms/source"
+    ]
+  },
+  {
+    "id": "inline-edit",
+    "component": "InlineEditDemo",
+    "default": true,
+    "upstreamSha256": "37950f2d257b38fc8d594c7ef80273d0d598bef6856a5582f305498e2590f3f8",
+    "modifications": [
+      "local component imports rewritten to installed @siso/atoms/source"
+    ]
+  },
+  {
+    "id": "password-strength",
+    "component": "NewPasswordField",
+    "default": false,
+    "upstreamSha256": "4376cbafdade60f1e13c476557d7f409f6f77954d24b39407e4f8371bf95e612",
+    "modifications": [
+      "local component imports rewritten to installed @siso/atoms/source"
+    ]
+  },
+  {
+    "id": "usage-meter",
+    "component": "StorageCard",
+    "default": false,
+    "upstreamSha256": "f215e2215dc245171e9391d6af526016d5fbe2d0d2fa28cb12d2a662141788b0",
+    "modifications": [
+      "local component imports rewritten to installed @siso/atoms/source"
+    ]
+  },
+  {
+    "id": "alert",
+    "component": "BillingNotice",
+    "default": false,
+    "upstreamSha256": "87cf01ac7b7a4e6c74427f8cc505d408e78798e0b3a95eb331ed2e09160b8ff0",
+    "modifications": [
+      "local component imports rewritten to installed @siso/atoms/source",
+      "added missing docs track helper"
+    ]
+  },
+  {
+    "id": "expanding-search",
+    "component": "ExpandingSearchDemo",
+    "default": true,
+    "upstreamSha256": "44f7db99bf34fddf1c41a4ad503963be073aa74d32300c8a1c99e1c507e5df63",
+    "modifications": [
+      "local component imports rewritten to installed @siso/atoms/source"
+    ]
+  },
+  {
+    "id": "radio-cards",
+    "component": "ShippingSpeed",
+    "default": false,
+    "upstreamSha256": "49ba450a761de2438b7f023a7787467085d4e91ba219ac8b7a9b741e7b18f9fd",
+    "modifications": [
+      "local component imports rewritten to installed @siso/atoms/source"
+    ]
+  }
+]

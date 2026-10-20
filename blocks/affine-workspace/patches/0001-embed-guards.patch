@@ -1,0 +1,863 @@
+diff --git a/packages/frontend/component/src/components/affine-other-page-layout/layout.tsx b/packages/frontend/component/src/components/affine-other-page-layout/layout.tsx
+index 04c5eada9..447c45855 100644
+--- a/packages/frontend/component/src/components/affine-other-page-layout/layout.tsx
++++ b/packages/frontend/component/src/components/affine-other-page-layout/layout.tsx
+@@ -9,6 +9,7 @@ import dotBgLight from './assets/dot-bg.light.png';
+ import { DesktopNavbar } from './desktop-navbar';
+ import * as styles from './index.css';
+ import { MobileNavbar } from './mobile-navbar';
++import { isSisoEmbedded } from './siso-embed';
+ 
+ export const AffineOtherPageLayout = ({
+   children,
+@@ -21,6 +22,7 @@ export const AffineOtherPageLayout = ({
+     open(BUILD_CONFIG.downloadUrl, '_blank');
+   }, []);
+ 
++  const embedded = isSisoEmbedded();
+   const { resolvedTheme } = useTheme();
+   const backgroundImage =
+     resolvedTheme === 'dark' && dotBgDark ? dotBgDark : dotBgLight;
+@@ -30,7 +32,7 @@ export const AffineOtherPageLayout = ({
+       className={styles.root}
+       style={{ backgroundImage: `url(${backgroundImage})` }}
+     >
+-      {BUILD_CONFIG.isElectron ? (
++      {embedded ? null : BUILD_CONFIG.isElectron ? (
+         <div className={styles.draggableHeader} />
+       ) : (
+         <div className={styles.topNav}>
+diff --git a/packages/frontend/core/src/blocksuite/block-suite-header/menu/index.tsx b/packages/frontend/core/src/blocksuite/block-suite-header/menu/index.tsx
+index 756ee4b61..cc9056ef6 100644
+--- a/packages/frontend/core/src/blocksuite/block-suite-header/menu/index.tsx
++++ b/packages/frontend/core/src/blocksuite/block-suite-header/menu/index.tsx
+@@ -47,6 +47,7 @@ import {
+ import { useCallback, useState } from 'react';
+ 
+ import { HeaderDropDownButton } from '../../../components/pure/header-drop-down-button';
++import { getSisoEmbedConfig } from '../../../siso-bridge';
+ import { useFavorite } from '../favorite';
+ import { HistoryTipsModal } from './history-tips-modal';
+ import { shareMenu } from './style.css';
+@@ -447,7 +448,9 @@ const PageHeaderMenuItem = ({
+         onSelect={handleOpenTrashModal}
+         disabled={!canMoveToTrash}
+       />
+-      {BUILD_CONFIG.isWeb && workspace.flavour !== 'local' ? (
++      {BUILD_CONFIG.isWeb &&
++      workspace.flavour !== 'local' &&
++      !getSisoEmbedConfig().embedded ? (
+         <MenuItem
+           prefixIcon={<LocalWorkspaceIcon />}
+           data-testid="editor-option-menu-link"
+diff --git a/packages/frontend/core/src/components/root-app-sidebar/index.tsx b/packages/frontend/core/src/components/root-app-sidebar/index.tsx
+index e342a23e9..58a138b23 100644
+--- a/packages/frontend/core/src/components/root-app-sidebar/index.tsx
++++ b/packages/frontend/core/src/components/root-app-sidebar/index.tsx
+@@ -133,6 +133,7 @@ export const RootAppSidebar = memo((): ReactElement => {
+   );
+ 
+   const sessionStatus = useLiveData(authService.session.status$);
++  const { embedded } = getSisoEmbedConfig();
+   const t = useI18n();
+   const workspaceDialogService = useService(WorkspaceDialogService);
+   const workbench = workbenchService.workbench;
+@@ -165,11 +166,16 @@ export const RootAppSidebar = memo((): ReactElement => {
+     if (!embedded || !hostOrigin) return;
+     const onMessage = (event: MessageEvent) => {
+       if (!isSisoHostMessage(event, hostOrigin)) return;
+-      if (event.data.type === 'siso:open-settings') openNativeSettingModal();
++      if (event.data.type === 'siso:open-settings') {
++        navigateSisoHost('/settings?tab=docs');
++      }
++      if (event.data.type === 'siso:open-search') {
++        cMDKQuickSearchService.toggle();
++      }
+     };
+     window.addEventListener('message', onMessage);
+     return () => window.removeEventListener('message', onMessage);
+-  }, [openNativeSettingModal]);
++  }, [cMDKQuickSearchService, openNativeSettingModal]);
+ 
+   const handleOpenDocs = useCallback(
+     (result: {
+@@ -208,39 +214,47 @@ export const RootAppSidebar = memo((): ReactElement => {
+   return (
+     <AppSidebar>
+       <SidebarContainer>
+-        <div className={workspaceAndUserWrapper}>
+-          <div className={workspaceWrapper}>
+-            <WorkspaceNavigator
+-              showSyncStatus
+-              open={workspaceSelectorOpen}
+-              onOpenChange={onWorkspaceSelectorOpenChange}
+-              dense
+-            />
+-          </div>
+-          <UserInfo />
+-        </div>
+-        <div className={quickSearchAndNewPage}>
+-          <QuickSearchInput
+-            className={quickSearch}
+-            data-testid="slider-bar-quick-search-button"
+-            data-event-props="$.navigationPanel.$.quickSearch"
+-            onClick={onOpenQuickSearchModal}
+-          />
+-          <AddPageButton />
+-        </div>
++        {!embedded && (
++          <>
++            <div className={workspaceAndUserWrapper}>
++              <div className={workspaceWrapper}>
++                <WorkspaceNavigator
++                  showSyncStatus
++                  open={workspaceSelectorOpen}
++                  onOpenChange={onWorkspaceSelectorOpenChange}
++                  dense
++                />
++              </div>
++              <UserInfo />
++            </div>
++            <div className={quickSearchAndNewPage}>
++              <QuickSearchInput
++                className={quickSearch}
++                data-testid="slider-bar-quick-search-button"
++                data-event-props="$.navigationPanel.$.quickSearch"
++                onClick={onOpenQuickSearchModal}
++              />
++              <AddPageButton />
++            </div>
++          </>
++        )}
+         <AllDocsButton />
+         <AppSidebarJournalButton />
+-        {sessionStatus === 'authenticated' && <NotificationButton />}
+-        <AIChatButton />
+-        <MenuItem
+-          data-testid="slider-bar-workspace-setting-button"
+-          icon={<SettingsIcon />}
+-          onClick={onOpenSettingModal}
+-        >
+-          <span data-testid="settings-modal-trigger">
+-            {t['com.affine.settingSidebar.title']()}
+-          </span>
+-        </MenuItem>
++        {!embedded && sessionStatus === 'authenticated' && (
++          <NotificationButton />
++        )}
++        {!embedded && <AIChatButton />}
++        {!embedded && (
++          <MenuItem
++            data-testid="slider-bar-workspace-setting-button"
++            icon={<SettingsIcon />}
++            onClick={onOpenSettingModal}
++          >
++            <span data-testid="settings-modal-trigger">
++              {t['com.affine.settingSidebar.title']()}
++            </span>
++          </MenuItem>
++        )}
+       </SidebarContainer>
+       <SidebarScrollableContainer>
+         <NavigationPanelFavorites />
+@@ -261,7 +275,7 @@ export const RootAppSidebar = memo((): ReactElement => {
+           >
+             <span data-testid="import-modal-trigger">{t['Import']()}</span>
+           </MenuItem>
+-          <InviteMembersButton />
++          {!embedded && <InviteMembersButton />}
+           <TemplateDocEntrance />
+         </CollapsibleSection>
+       </SidebarScrollableContainer>
+diff --git a/packages/frontend/core/src/components/workspace-selector/index.tsx b/packages/frontend/core/src/components/workspace-selector/index.tsx
+index 06d800683..bb0d3e960 100644
+--- a/packages/frontend/core/src/components/workspace-selector/index.tsx
++++ b/packages/frontend/core/src/components/workspace-selector/index.tsx
+@@ -97,6 +97,27 @@ export const WorkspaceSelector = ({
+     }
+   }, [workspacesService, open]);
+ 
++  const workspaceCard = workspaceMetadata ? (
++    <WorkspaceCard
++      workspaceMetadata={workspaceMetadata}
++      onClick={disable ? undefined : openUserWorkspaceList}
++      showSyncStatus={showSyncStatus}
++      className={className}
++      showArrowDownIcon={showArrowDownIcon}
++      disable={disable}
++      hideCollaborationIcon={true}
++      hideTeamWorkspaceIcon={true}
++      data-testid="current-workspace-card"
++      dense={dense}
++      role={disable ? 'presentation' : 'button'}
++      tabIndex={disable ? -1 : 0}
++    />
++  ) : (
++    <span />
++  );
++
++  if (disable) return workspaceCard;
++
+   return (
+     <Menu
+       rootOptions={{
+@@ -125,22 +146,7 @@ export const WorkspaceSelector = ({
+         },
+       }}
+     >
+-      {workspaceMetadata ? (
+-        <WorkspaceCard
+-          workspaceMetadata={workspaceMetadata}
+-          onClick={openUserWorkspaceList}
+-          showSyncStatus={showSyncStatus}
+-          className={className}
+-          showArrowDownIcon={showArrowDownIcon}
+-          disable={disable}
+-          hideCollaborationIcon={true}
+-          hideTeamWorkspaceIcon={true}
+-          data-testid="current-workspace-card"
+-          dense={dense}
+-        />
+-      ) : (
+-        <span></span>
+-      )}
++      {workspaceCard}
+     </Menu>
+   );
+ };
+diff --git a/packages/frontend/core/src/desktop/components/app-container/index.tsx b/packages/frontend/core/src/desktop/components/app-container/index.tsx
+index 85c9d27dc..4e77cb49d 100644
+--- a/packages/frontend/core/src/desktop/components/app-container/index.tsx
++++ b/packages/frontend/core/src/desktop/components/app-container/index.tsx
+@@ -23,6 +23,7 @@ import {
+ } from 'react';
+ 
+ import * as styles from './styles.css';
++import { getSisoEmbedConfig } from '../../../siso-bridge';
+ 
+ export const AppContainer = ({
+   children,
+@@ -92,11 +93,19 @@ const BrowserLayout = ({
+ }: PropsWithChildren<{ fallback?: boolean }>) => {
+   const workspaceService = useServiceOptional(WorkspaceService);
+   const isInWorkspace = !!workspaceService;
++  const { embedded } = getSisoEmbedConfig();
++  const appSidebarService = useService(AppSidebarService).sidebar;
++  const sidebarOpen = useLiveData(appSidebarService.open$);
+ 
+   return (
+     <div className={styles.browserAppViewContainer}>
+-      <OpenInAppCard />
++      {!embedded && <OpenInAppCard />}
+       {fallback ? <AppSidebarFallback /> : isInWorkspace && <RootAppSidebar />}
++      {embedded && isInWorkspace && !sidebarOpen && (
++        <div className={styles.embeddedSidebarRestore}>
++          <SidebarSwitch show />
++        </div>
++      )}
+       <MainContainer>{children}</MainContainer>
+     </div>
+   );
+diff --git a/packages/frontend/core/src/desktop/components/app-container/styles.css.ts b/packages/frontend/core/src/desktop/components/app-container/styles.css.ts
+index 6b1327621..bd35d5771 100644
+--- a/packages/frontend/core/src/desktop/components/app-container/styles.css.ts
++++ b/packages/frontend/core/src/desktop/components/app-container/styles.css.ts
+@@ -71,6 +71,18 @@ export const desktopTabsHeader = style({
+   width: '100%',
+   overflow: 'hidden',
+ });
++export const embeddedSidebarRestore = style({
++  position: 'absolute',
++  top: 8,
++  left: 8,
++  zIndex: 10,
++  display: 'flex',
++  alignItems: 'center',
++  height: 36,
++  padding: '0 8px',
++  borderRadius: 8,
++  backgroundColor: cssVar('backgroundPrimaryColor'),
++});
+ 
+ export const mainContainerStyle = style({
+   position: 'relative',
+diff --git a/packages/frontend/core/src/desktop/pages/404/index.tsx b/packages/frontend/core/src/desktop/pages/404/index.tsx
+index ebcb7291e..e0702dc15 100644
+--- a/packages/frontend/core/src/desktop/pages/404/index.tsx
++++ b/packages/frontend/core/src/desktop/pages/404/index.tsx
+@@ -19,6 +19,7 @@ import {
+ } from '../../../components/hooks/use-navigate-helper';
+ import { ServersService } from '../../../modules/cloud';
+ import { SignIn } from '../auth/sign-in';
++import { getSisoEmbedConfig } from '../../../siso-bridge';
+ 
+ /**
+  * only for web, should not be used in electron
+@@ -53,6 +54,14 @@ export const PageNotFound = ({
+   // strip the origin
+   const currentUrl = window.location.href.replace(window.location.origin, '');
+ 
++  if (getSisoEmbedConfig().embedded) {
++    return (
++      <div style={{display:'flex',height:'100vh',alignItems:'center',justifyContent:'center',fontFamily:'var(--affine-font-family)',color:'var(--affine-text-secondary-color)'}}>
++        Workspace unavailable — host session required.
++      </div>
++    );
++  }
++
+   return (
+     <FrameworkScope scope={firstLogged?.server.scope}>
+       {noPermission ? (
+diff --git a/packages/frontend/core/src/desktop/pages/workspace/detail-page/detail-page.tsx b/packages/frontend/core/src/desktop/pages/workspace/detail-page/detail-page.tsx
+index f70bd5ca8..1cd3cf6bc 100644
+--- a/packages/frontend/core/src/desktop/pages/workspace/detail-page/detail-page.tsx
++++ b/packages/frontend/core/src/desktop/pages/workspace/detail-page/detail-page.tsx
+@@ -62,6 +62,7 @@ import { memo, useCallback, useEffect, useRef, useState } from 'react';
+ import { useParams } from 'react-router-dom';
+ import type { Subscription } from 'rxjs';
+ 
++import { getSisoEmbedConfig } from '../../../../siso-bridge';
+ import { PageNotFound } from '../../404';
+ import * as styles from './detail-page.css';
+ import { DetailPageHeader } from './detail-page-header';
+@@ -367,7 +368,7 @@ const DetailPageImpl = memo(function DetailPageImpl() {
+         </div>
+       </ViewBody>
+ 
+-      {enableAI && (
++      {enableAI && !getSisoEmbedConfig().embedded && (
+         <ViewSidebarTab
+           tabId="chat"
+           icon={<AiIcon />}
+diff --git a/packages/frontend/core/src/desktop/pages/workspace/layouts/workspace-layout.tsx b/packages/frontend/core/src/desktop/pages/workspace/layouts/workspace-layout.tsx
+index 28c50bb8b..abcfbdf2c 100644
+--- a/packages/frontend/core/src/desktop/pages/workspace/layouts/workspace-layout.tsx
++++ b/packages/frontend/core/src/desktop/pages/workspace/layouts/workspace-layout.tsx
+@@ -14,10 +14,13 @@ import { WorkspaceService } from '@affine/core/modules/workspace';
+ import { LiveData, useLiveData, useService } from '@toeverything/infra';
+ import type { PropsWithChildren } from 'react';
+ 
++import { getSisoEmbedConfig } from '../../../../siso-bridge';
++
+ export const WorkspaceLayout = function WorkspaceLayout({
+   children,
+ }: PropsWithChildren) {
+   const currentWorkspace = useService(WorkspaceService).workspace;
++  const { embedded } = getSisoEmbedConfig();
+   return (
+     <SWRConfigProvider>
+       <WorkspaceDialogs />
+@@ -34,7 +37,7 @@ export const WorkspaceLayout = function WorkspaceLayout({
+       <WorkspaceLayoutInner>{children}</WorkspaceLayoutInner>
+       {/* should show after workspace loaded */}
+       {/* FIXME: wait for better ai, <WorkspaceAIOnboarding /> */}
+-      <AIIsland />
++      {!embedded && <AIIsland />}
+       <uniReactRoot.Root />
+     </SWRConfigProvider>
+   );
+diff --git a/packages/frontend/core/src/desktop/pages/workspace/settings/index.tsx b/packages/frontend/core/src/desktop/pages/workspace/settings/index.tsx
+index 9bb7df904..2c3a49876 100644
+--- a/packages/frontend/core/src/desktop/pages/workspace/settings/index.tsx
++++ b/packages/frontend/core/src/desktop/pages/workspace/settings/index.tsx
+@@ -3,7 +3,8 @@ import type { SettingTab } from '@affine/core/modules/dialogs/constant';
+ import { WorkbenchService } from '@affine/core/modules/workbench';
+ import { useService } from '@toeverything/infra';
+ import { useEffect, useRef } from 'react';
+-import { useSearchParams } from 'react-router-dom';
++import { Navigate, useSearchParams } from 'react-router-dom';
++import { getSisoEmbedConfig } from '../../../../siso-bridge';
+ 
+ export const Component = () => {
+   const workbenchService = useService(WorkbenchService);
+@@ -15,8 +16,10 @@ export const Component = () => {
+   const scrollAnchor = searchParams.get('scrollAnchor') ?? undefined;
+ 
+   const isOpened = useRef(false);
++  const { embedded } = getSisoEmbedConfig();
+ 
+   useEffect(() => {
++    if (embedded) return;
+     if (isOpened.current) {
+       return;
+     }
+@@ -26,6 +29,10 @@ export const Component = () => {
+       activeTab: tab as SettingTab,
+       scrollAnchor,
+     });
+-  }, [scrollAnchor, tab, workbench, workspaceDialogService]);
++  }, [embedded, scrollAnchor, tab, workbench, workspaceDialogService]);
++
++  if (embedded) {
++    return <Navigate to="/all" replace />;
++  }
+   return null;
+ };
+diff --git a/packages/frontend/core/src/modules/app-sidebar/views/app-download-button/index.tsx b/packages/frontend/core/src/modules/app-sidebar/views/app-download-button/index.tsx
+index 6f39e9c17..7ac0e4b6a 100644
+--- a/packages/frontend/core/src/modules/app-sidebar/views/app-download-button/index.tsx
++++ b/packages/frontend/core/src/modules/app-sidebar/views/app-download-button/index.tsx
+@@ -4,6 +4,7 @@ import { CloseIcon, DownloadIcon } from '@blocksuite/icons/rc';
+ import clsx from 'clsx';
+ import { useCallback, useState } from 'react';
+ 
++import { getSisoEmbedConfig } from '../../../../siso-bridge';
+ import * as styles from './index.css';
+ 
+ export function AppDownloadButton({
+@@ -26,7 +27,7 @@ export function AppDownloadButton({
+     open(url, '_blank');
+   }, []);
+ 
+-  if (!show) {
++  if (!show || getSisoEmbedConfig().embedded) {
+     return null;
+   }
+   return (
+diff --git a/packages/frontend/core/src/modules/app-sidebar/views/index.css.ts b/packages/frontend/core/src/modules/app-sidebar/views/index.css.ts
+index 6c00178f8..0148f608e 100644
+--- a/packages/frontend/core/src/modules/app-sidebar/views/index.css.ts
++++ b/packages/frontend/core/src/modules/app-sidebar/views/index.css.ts
+@@ -72,6 +72,16 @@ export const navHeaderStyle = style({
+   justifyContent: 'space-between',
+   alignItems: 'center',
+ });
++export const embeddedHeaderContent = style({
++  display: 'flex',
++  alignItems: 'center',
++  gap: 8,
++  width: '100%',
++});
++export const embeddedWorkspace = style({
++  minWidth: 0,
++  flex: 1,
++});
+ 
+ export const navBodyStyle = style({
+   flex: '1 1 auto',
+diff --git a/packages/frontend/core/src/modules/app-sidebar/views/sidebar-header/index.tsx b/packages/frontend/core/src/modules/app-sidebar/views/sidebar-header/index.tsx
+index 0e873df20..c0bfd74a2 100644
+--- a/packages/frontend/core/src/modules/app-sidebar/views/sidebar-header/index.tsx
++++ b/packages/frontend/core/src/modules/app-sidebar/views/sidebar-header/index.tsx
+@@ -1,16 +1,34 @@
+ import { useLiveData, useService } from '@toeverything/infra';
+ 
++import { WorkspaceNavigator } from '@affine/core/components/workspace-selector';
++import { getSisoEmbedConfig } from '../../../../siso-bridge';
+ import { AppSidebarService } from '../../services/app-sidebar';
+-import { navHeaderStyle } from '../index.css';
++import { AddPageButton } from '../add-page-button';
++import {
++  embeddedHeaderContent,
++  embeddedWorkspace,
++  navHeaderStyle,
++} from '../index.css';
+ import { SidebarSwitch } from './sidebar-switch';
+ 
+ export const SidebarHeader = () => {
+   const appSidebarService = useService(AppSidebarService).sidebar;
+   const open = useLiveData(appSidebarService.open$);
++  const { embedded } = getSisoEmbedConfig();
+ 
+   return (
+     <div className={navHeaderStyle} data-open={open}>
+-      <SidebarSwitch show={open} />
++      {embedded ? (
++        <div className={embeddedHeaderContent}>
++          <SidebarSwitch show={open} />
++          <div className={embeddedWorkspace}>
++            <WorkspaceNavigator showSyncStatus dense disable />
++          </div>
++          <AddPageButton />
++        </div>
++      ) : (
++        <SidebarSwitch show={open} />
++      )}
+     </div>
+   );
+ };
+diff --git a/packages/frontend/core/src/modules/open-in-app/views/open-in-app-guard.tsx b/packages/frontend/core/src/modules/open-in-app/views/open-in-app-guard.tsx
+index 8116a48f0..2465db7d4 100644
+--- a/packages/frontend/core/src/modules/open-in-app/views/open-in-app-guard.tsx
++++ b/packages/frontend/core/src/modules/open-in-app/views/open-in-app-guard.tsx
+@@ -1,6 +1,7 @@
+ import { useLiveData, useService } from '@toeverything/infra';
+ import { Fragment, useCallback, useEffect } from 'react';
+ 
++import { getSisoEmbedConfig } from '../../../siso-bridge';
+ import { OpenInAppService } from '../services';
+ import { OpenInAppPage } from './open-in-app-page';
+ 
+@@ -13,10 +14,12 @@ const WebOpenInAppGuard = ({ children }: { children: React.ReactNode }) => {
+   }
+   const service = useService(OpenInAppService);
+   const shouldOpenInApp = useLiveData(service.showOpenInAppPage$);
++  const embedded = getSisoEmbedConfig().embedded;
+ 
+   useEffect(() => {
++    if (embedded) return;
+     service?.bootstrap();
+-  }, [service]);
++  }, [embedded, service]);
+ 
+   const onOpenHere = useCallback(
+     (e: React.MouseEvent) => {
+@@ -26,6 +29,10 @@ const WebOpenInAppGuard = ({ children }: { children: React.ReactNode }) => {
+     [service]
+   );
+ 
++  if (embedded) {
++    return children;
++  }
++
+   if (shouldOpenInApp === undefined) {
+     return null;
+   }
+diff --git a/packages/frontend/core/src/modules/open-in-app/views/open-in-app-page.tsx b/packages/frontend/core/src/modules/open-in-app/views/open-in-app-page.tsx
+index 4a8c48ad3..f8c3241d3 100644
+--- a/packages/frontend/core/src/modules/open-in-app/views/open-in-app-page.tsx
++++ b/packages/frontend/core/src/modules/open-in-app/views/open-in-app-page.tsx
+@@ -7,6 +7,7 @@ import { useServiceOptional } from '@toeverything/infra';
+ import type { MouseEvent } from 'react';
+ import { useCallback } from 'react';
+ 
++import { getSisoEmbedConfig } from '../../../siso-bridge';
+ import { getOpenUrlInDesktopAppLink } from '../utils';
+ import * as styles from './open-in-app-page.css';
+ 
+@@ -26,6 +27,10 @@ export const OpenInAppPage = ({
+   openHereClicked,
+   mode = 'auth',
+ }: OpenAppProps) => {
++  if (getSisoEmbedConfig().embedded) {
++    return null;
++  }
++
+   // default to open the current page in desktop app
+   urlToOpen ??= getOpenUrlInDesktopAppLink(window.location.href, true);
+   const workspaceDialogService = useServiceOptional(WorkspaceDialogService);
+diff --git a/packages/frontend/core/src/modules/share-menu/view/share-menu/share-menu.tsx b/packages/frontend/core/src/modules/share-menu/view/share-menu/share-menu.tsx
+index 7a134e3c0..0f8b25237 100644
+--- a/packages/frontend/core/src/modules/share-menu/view/share-menu/share-menu.tsx
++++ b/packages/frontend/core/src/modules/share-menu/view/share-menu/share-menu.tsx
+@@ -24,6 +24,7 @@ import {
+ 
+ import * as styles from './index.css';
+ import { InviteMemberEditor } from './invite-member-editor/invite-member-editor';
++import { getSisoEmbedConfig } from '../../../../siso-bridge';
+ import { MemberManagement } from './member-management';
+ import { ShareExport } from './share-export';
+ import { SharePage } from './share-page';
+@@ -48,6 +49,7 @@ export enum ShareMenuTab {
+ 
+ export const ShareMenuContent = (props: ShareMenuProps) => {
+   const t = useI18n();
++  const embedded = getSisoEmbedConfig().embedded;
+   const [currentTab, setCurrentTab] = useState(ShareMenuTab.Share);
+ 
+   const serverService = useService(ServerService);
+@@ -122,7 +124,7 @@ export const ShareMenuContent = (props: ShareMenuProps) => {
+     });
+   }, [isOwner, onConfirm, openConfirmModal, t]);
+ 
+-  if (currentTab === ShareMenuTab.Members) {
++  if (!embedded && currentTab === ShareMenuTab.Members) {
+     return (
+       <MemberManagement
+         openPaywallModal={openPaywallModal}
+@@ -136,7 +138,7 @@ export const ShareMenuContent = (props: ShareMenuProps) => {
+       />
+     );
+   }
+-  if (currentTab === ShareMenuTab.Invite) {
++  if (!embedded && currentTab === ShareMenuTab.Invite) {
+     return (
+       <InviteMemberEditor
+         openPaywallModal={openPaywallModal}
+@@ -182,10 +184,10 @@ export const ShareMenuContent = (props: ShareMenuProps) => {
+             hittingPaywall={!!hittingPaywall}
+             openPaywallModal={openPaywallModal}
+             onClickInvite={() => {
+-              setCurrentTab(ShareMenuTab.Invite);
++              if (!embedded) setCurrentTab(ShareMenuTab.Invite);
+             }}
+             onClickMembers={() => {
+-              setCurrentTab(ShareMenuTab.Members);
++              if (!embedded) setCurrentTab(ShareMenuTab.Members);
+             }}
+             {...props}
+           />
+diff --git a/packages/frontend/core/src/modules/share-menu/view/share-menu/share-page.tsx b/packages/frontend/core/src/modules/share-menu/view/share-menu/share-page.tsx
+index 349fd5556..2088754fd 100644
+--- a/packages/frontend/core/src/modules/share-menu/view/share-menu/share-page.tsx
++++ b/packages/frontend/core/src/modules/share-menu/view/share-menu/share-page.tsx
+@@ -16,6 +16,7 @@ import * as styles from './index.css';
+ import { InviteInput } from './invite-member-editor';
+ import { MembersRow } from './member-management';
+ import type { ShareMenuProps } from './share-menu';
++import { getSisoEmbedConfig } from '../../../../siso-bridge';
+ 
+ export const LocalSharePage = (props: ShareMenuProps) => {
+   const t = useI18n();
+@@ -93,8 +94,12 @@ export const AFFiNESharePage = (
+     <div className={styles.content}>
+       <div className={styles.columnContainerStyle}>
+         <div className={styles.memberRowsStyle}>
+-          {canManageUsers && <InviteInput onFocus={props.onClickInvite} />}
+-          <MembersRow onClick={props.onClickMembers} />
++          {!getSisoEmbedConfig().embedded && canManageUsers && (
++            <InviteInput onFocus={props.onClickInvite} />
++          )}
++          {!getSisoEmbedConfig().embedded && (
++            <MembersRow onClick={props.onClickMembers} />
++          )}
+         </div>
+ 
+         <div className={styles.generalAccessStyle}>
+diff --git a/packages/frontend/core/src/siso-bridge.spec.ts b/packages/frontend/core/src/siso-bridge.spec.ts
+index 7ba902999..aa1c81ca7 100644
+--- a/packages/frontend/core/src/siso-bridge.spec.ts
++++ b/packages/frontend/core/src/siso-bridge.spec.ts
+@@ -1,8 +1,19 @@
+-import { describe, expect, test } from 'vitest';
++import { beforeEach, describe, expect, test, vi } from 'vitest';
+ 
+ import { getSisoDocsServerOrigin, getSisoEmbedConfig } from './siso-bridge';
+ 
+ describe('SISO host bridge', () => {
++  const storage = new Map<string, string>();
++
++  beforeEach(() => {
++    storage.clear();
++    vi.stubGlobal('sessionStorage', {
++      getItem: (key: string) => storage.get(key) ?? null,
++      setItem: (key: string, value: string) => storage.set(key, value),
++      removeItem: (key: string) => storage.delete(key),
++    });
++  });
++
+   test('recognizes the explicit embedded host contract', () => {
+     expect(
+       getSisoEmbedConfig(
+@@ -31,4 +42,28 @@ describe('SISO host bridge', () => {
+       ).embedded
+     ).toBe(false);
+   });
++
++  test('persists a trusted embedded contract across queryless navigation', () => {
++    const initial = getSisoEmbedConfig(
++      'http://127.0.0.1:3020/?siso_embedded=1&siso_host_origin=http%3A%2F%2F127.0.0.1%3A4320&siso_mode=docs&siso_server_origin=http%3A%2F%2F127.0.0.1%3A3010'
++    );
++
++    expect(initial.embedded).toBe(true);
++    expect(
++      getSisoEmbedConfig('http://127.0.0.1:3020/workspace/ws/all')
++    ).toEqual(initial);
++  });
++
++  test('does not reuse the embedded contract after explicit non-embedded navigation', () => {
++    getSisoEmbedConfig(
++      'http://127.0.0.1:3020/?siso_embedded=1&siso_host_origin=http%3A%2F%2F127.0.0.1%3A4320'
++    );
++
++    expect(
++      getSisoEmbedConfig('http://127.0.0.1:3020/?siso_embedded=0').embedded
++    ).toBe(false);
++    expect(
++      getSisoEmbedConfig('http://127.0.0.1:3020/workspace/ws/all').embedded
++    ).toBe(false);
++  });
+ });
+diff --git a/packages/frontend/core/src/siso-bridge.ts b/packages/frontend/core/src/siso-bridge.ts
+index 5d94ddc82..771dfdc71 100644
+--- a/packages/frontend/core/src/siso-bridge.ts
++++ b/packages/frontend/core/src/siso-bridge.ts
+@@ -9,17 +9,72 @@ export interface SisoHostUser {
+ 
+ type SisoHostMessage =
+   | { type: 'siso:session'; user: SisoHostUser }
+-  | { type: 'siso:open-settings' };
++  | { type: 'siso:open-settings' }
++  | { type: 'siso:open-search' };
++
++const EMBED_CONFIG_STORAGE_KEY = 'siso:embedded-config';
++
++type SisoEmbedConfig = {
++  embedded: boolean;
++  hostOrigin: string | null;
++  mode: string | null;
++  serverOrigin: string | null;
++};
++
++const readStoredEmbedConfig = (): SisoEmbedConfig | null => {
++  try {
++    const value = globalThis.sessionStorage?.getItem(EMBED_CONFIG_STORAGE_KEY);
++    if (!value) return null;
++    const config = JSON.parse(value) as SisoEmbedConfig;
++    return config.embedded && config.hostOrigin ? config : null;
++  } catch {
++    return null;
++  }
++};
++
++const storeEmbedConfig = (config: SisoEmbedConfig) => {
++  try {
++    if (config.embedded && config.hostOrigin) {
++      globalThis.sessionStorage?.setItem(
++        EMBED_CONFIG_STORAGE_KEY,
++        JSON.stringify(config)
++      );
++    } else {
++      globalThis.sessionStorage?.removeItem(EMBED_CONFIG_STORAGE_KEY);
++    }
++  } catch {
++    // Storage can be unavailable in restricted browsing contexts.
++  }
++};
++
++const getTrustedOrigin = (value: string | null) => {
++  if (!value || !URL.canParse(value)) return null;
++  const parsed = new URL(value);
++  return ['http:', 'https:'].includes(parsed.protocol) ? parsed.origin : null;
++};
+ 
+ export function getSisoEmbedConfig(url = window.location.href) {
+   const parsed = new URL(url);
+-  const hostOrigin = parsed.searchParams.get('siso_host_origin');
+-  return {
++  const hasExplicitContract = [
++    'siso_embedded',
++    'siso_host_origin',
++    'siso_mode',
++    'siso_server_origin',
++  ].some(key => parsed.searchParams.has(key));
++  const hostOrigin = getTrustedOrigin(
++    parsed.searchParams.get('siso_host_origin')
++  );
++  const config: SisoEmbedConfig = {
+     embedded: parsed.searchParams.get('siso_embedded') === '1' && !!hostOrigin,
+     hostOrigin,
+     mode: parsed.searchParams.get('siso_mode'),
+     serverOrigin: parsed.searchParams.get('siso_server_origin'),
+   };
++  if (hasExplicitContract) {
++    storeEmbedConfig(config);
++    return config;
++  }
++  return readStoredEmbedConfig() ?? config;
+ }
+ 
+ export function getSisoDocsServerOrigin(url = window.location.href) {
+
+diff --git a/packages/frontend/component/src/components/affine-other-page-layout/siso-embed.ts b/packages/frontend/component/src/components/affine-other-page-layout/siso-embed.ts
+new file mode 100644
+index 0000000..83a65f2
+--- /dev/null
++++ b/packages/frontend/component/src/components/affine-other-page-layout/siso-embed.ts
+@@ -0,0 +1,31 @@
++const EMBED_CONFIG_STORAGE_KEY = 'siso:embedded-config';
++
++type StoredEmbedConfig = {
++  embedded?: boolean;
++  hostOrigin?: string | null;
++};
++
++function hasTrustedHostOrigin(value: string | null) {
++  if (!value || !URL.canParse(value)) return false;
++  const protocol = new URL(value).protocol;
++  return protocol === 'http:' || protocol === 'https:';
++}
++
++export function isSisoEmbedded() {
++  try {
++    const url = new URL(window.location.href);
++    if (
++      url.searchParams.get('siso_embedded') === '1' &&
++      hasTrustedHostOrigin(url.searchParams.get('siso_host_origin'))
++    ) {
++      return true;
++    }
++
++    const stored = globalThis.sessionStorage?.getItem(EMBED_CONFIG_STORAGE_KEY);
++    if (!stored) return false;
++    const config = JSON.parse(stored) as StoredEmbedConfig;
++    return config.embedded === true && hasTrustedHostOrigin(config.hostOrigin ?? null);
++  } catch {
++    return false;
++  }
++}
+
+diff --git a/packages/frontend/apps/web/src/index.tsx b/packages/frontend/apps/web/src/index.tsx
+index d75912c..b53477c 100644
+--- a/packages/frontend/apps/web/src/index.tsx
++++ b/packages/frontend/apps/web/src/index.tsx
+@@ -9,45 +9,6 @@ import { SisoKnowledgeModuleRoot } from './siso-module-contract';
+ 
+ type SisoMountHost = Parameters<typeof SisoKnowledgeModuleRoot>[0]['host'];
+ 
+-async function loadLocalHostContext(): Promise<{ host: SisoMountHost; backendBase: string } | null> {
+-  if (location.hostname !== '127.0.0.1' || location.port !== '3022') return null;
+-  // The host cookie is opaque to the browser and is only forwarded to the
+-  // issuer by the server. The signing secret never leaves the issuer.
+-  document.cookie = 'siso_host_session=knowledge-local-disposable-session; Path=/; SameSite=Lax';
+-  const response = await fetch('http://127.0.0.1:4320/api/siso/knowledge-context');
+-  if (!response.ok) throw new Error(`SISO local issuer unavailable (${response.status})`);
+-  const session = await response.json() as {
+-    userId: string; email: string; displayName?: string; clientId: string;
+-    workspaceId: string; expiresAt: string; capabilities: Array<'view' | 'edit' | 'share' | 'admin'>;
+-    token: string;
+-  };
+-  (window as any).__SISO_KNOWLEDGE_CONTEXT_TOKEN = session.token;
+-  const nativeFetch = window.fetch.bind(window);
+-  window.fetch = (input, init = {}) => {
+-    const request = new Request(input, init);
+-    if (request.url.startsWith(`${location.origin}/api`) || request.url.startsWith(`${location.origin}/graphql`)) {
+-      const backendUrl = new URL(request.url);
+-      backendUrl.port = '3012';
+-      const backendRequest = new Request(backendUrl, request);
+-      backendRequest.headers.set('x-siso-request-context', session.token);
+-      return nativeFetch(backendRequest, { ...init, credentials: 'include' });
+-    }
+-    if (request.url.startsWith('http://127.0.0.1:3012')) {
+-      request.headers.set('x-siso-request-context', session.token);
+-      return nativeFetch(request, { ...init, credentials: 'include' });
+-    }
+-    return nativeFetch(input, init);
+-  };
+-  return {
+-    host: {
+-      identity: session,
+-      database: { config: { schema: 'knowledge' as const, redisNamespace: 'knowledge' as const, yjsNamespace: 'knowledge' as const, blobNamespace: 'knowledge' as const } },
+-      tokens: { sisoRequestContext: session.token },
+-    },
+-    backendBase: 'http://127.0.0.1:3012',
+-  };
+-}
+-
+ export interface SisoKnowledgeMountOptions {
+   host: SisoMountHost;
+   backendBase?: string;
+@@ -90,17 +51,12 @@ export function mountSisoKnowledge(target: HTMLElement, options: SisoKnowledgeMountOptions) {
+ async function mountApp() {
+   const root = document.getElementById('app');
+   if (!root) return;
+-  const localHost = await loadLocalHostContext();
+-  if (localHost) {
+-    mountSisoKnowledge(root, localHost);
+-  } else {
+-    createRoot(root).render(
+-      <StrictMode>
+-        <Telemetry />
+-        <App />
+-      </StrictMode>
+-    );
+-  }
++  createRoot(root).render(
++    <StrictMode>
++      <Telemetry />
++      <App />
++    </StrictMode>
++  );
+ }
+ 
+ if (!(globalThis as typeof globalThis & { __SISO_KNOWLEDGE_COMPILED_PACKAGE__?: boolean }).__SISO_KNOWLEDGE_COMPILED_PACKAGE__) {

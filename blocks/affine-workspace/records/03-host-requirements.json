@@ -1,0 +1,124 @@
+{
+  "record_type": "HostContract",
+  "record_version": "1.0.0",
+  "record_id": "actionist/affine-workspace@0.2.0#HostContract",
+  "block_id": "actionist/affine-workspace",
+  "version": "0.2.0",
+  "capability_id": "actionist/affine-workspace",
+  "links": {
+    "manifest": "../actionist-block.json",
+    "capability": "01-capability.json",
+    "packaging": "02-packaging.json",
+    "binding_plan": "04-binding-plan.json",
+    "qualification": "05-qualification.json",
+    "registry": "06-registry.json",
+    "release": "07-release.json"
+  },
+  "owner_domain": "D16",
+  "host_contract_version": "actionist.affine.host.v0.1",
+  "mutability_rule": "Changes only on a host contract release; a module binding must pin the version it was generated against.",
+  "identity": {
+    "assertion_algorithm": "host-selected signed assertion; signing secret stays in the host backend",
+    "token_model": "two_token",
+    "lifetime_seconds": 120,
+    "audience_bound": true,
+    "single_use": true,
+    "long_lived_credential_owner": "host_backend",
+    "short_lived_assertion_transport": "runtime-only header and postMessage bootstrap",
+    "query_parameter_transport": false,
+    "donor_login_route": "forbidden",
+    "required_identity_fields": [
+      "user_id",
+      "email",
+      "client_id",
+      "workspace_id",
+      "expires_at",
+      "capabilities"
+    ]
+  },
+  "tenancy": {
+    "selection_authority": "host",
+    "workspace_id_required": true,
+    "workspace_id_route_segment": true,
+    "allowed_scope": "host-selected workspace only",
+    "donor_workspace_switcher": "retained only as a temporary fallback while the host has no switcher",
+    "cross_workspace_switch": "host_reissues_context; donor cannot widen scope"
+  },
+  "settings": {
+    "host_route": "/settings?tab=documents",
+    "combination_rule": "REQUIRE_PARENTAL_CONSENT_FOR_ALLOWS",
+    "scopes": [
+      "application",
+      "capability",
+      "user"
+    ],
+    "donor_settings_policy": "donor_rendered_behind_host_nav",
+    "fallback": "Host owns the entry and route; donor renders its own settings pane in settings mode.",
+    "host_rendered": false
+  },
+  "navigation": {
+    "contribution_model": "deploy_time_manifest",
+    "host_authors_rail_entry": true,
+    "donor_declares": [
+      "intent",
+      "label",
+      "icon",
+      "route_ref"
+    ],
+    "donor_may_assign_position": false,
+    "visibility_predicate": "host role and entitlement intersection",
+    "cascading_emptiness": true,
+    "assigned_base_path": "/documents",
+    "depth_limit": 2
+  },
+  "data": {
+    "workspace_and_document_owner": "donor",
+    "migration_authority": "donor",
+    "cross_owner_reads": "forbidden",
+    "cross_owner_mutations": "forbidden",
+    "host_read_model": "none in v0.1",
+    "one_owner_per_table_and_migration": true
+  },
+  "files": {
+    "owner": "donor",
+    "host_proxy": "not assumed",
+    "host_must_not_persist_donor_credentials": true,
+    "operations": [
+      "read",
+      "write",
+      "delete"
+    ],
+    "scope": "selected donor workspace"
+  },
+  "events": {
+    "envelope_version": "actionist.capability-event.v1",
+    "channel": "host event bus plus donor backend telemetry",
+    "inbound": [
+      "siso:ready",
+      "siso:navigate",
+      "siso:health"
+    ],
+    "outbound": [
+      "siso:session",
+      "siso:open-settings",
+      "siso:open-search",
+      "siso:mode"
+    ],
+    "origin_check": "exact configured donor origin and expected frame source",
+    "stable_capability_identifier": "actionist/affine-workspace"
+  },
+  "observability": {
+    "capability_identifier": "actionist/affine-workspace",
+    "per_capability_release_correlation": true,
+    "trace_propagation": true,
+    "ownership_metadata": [
+      "application_id",
+      "tenant_id",
+      "workspace_id",
+      "release_id",
+      "runtime_profile"
+    ],
+    "anonymous_capability": false
+  },
+  "url_authority": "host_owns_url_space_guest_owns_internal_router"
+}

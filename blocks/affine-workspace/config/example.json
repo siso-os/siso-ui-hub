@@ -1,0 +1,10 @@
+{
+  "hostOrigin": "http://127.0.0.1:4100",
+  "frameOrigin": "http://127.0.0.1:3020",
+  "serverOrigin": "http://127.0.0.1:3010",
+  "companionOrigin": "http://127.0.0.1:3011",
+  "expectedClientId": "example-host",
+  "sessionAssertionRef": "secret-ref:ACTIONIST_AFFINE_SESSION_ASSERTION",
+  "workspaceRevision": 3,
+  "healthPath": "/api/auth/session"
+}

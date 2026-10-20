@@ -1,0 +1,47 @@
+{
+  "name": "@siso/charts",
+  "version": "0.4.1",
+  "description": "The actual selected SISO, Evil Charts and MIT Arc implementations, with full styling, motion and interactions.",
+  "private": true,
+  "type": "module",
+  "main": "src/index.ts",
+  "types": "src/index.ts",
+  "sideEffects": [
+    "**/*.css"
+  ],
+  "peerDependencies": {
+    "react": "^19",
+    "react-dom": "^19",
+    "echarts": "6.1.0",
+    "recharts": "^3.8.0",
+    "framer-motion": "^12",
+    "clsx": "^2",
+    "tailwind-merge": "^3",
+    "motion": "^12.0.0 || ^14.0.0",
+    "lucide-react": "^0.468.0 || ^1.0.0"
+  },
+  "license": "MIT",
+  "exports": {
+    ".": "./src/index.ts",
+    "./styles.css": "./styles.css",
+    "./inventory.json": "./inventory.json",
+    "./basic": "./src/basic.ts",
+    "./series": "./src/series/index.ts",
+    "./special": "./src/special/index.ts",
+    "./source": "./src/arc/index.tsx",
+    "./echarts": {
+      "types": "./src/echarts/index.ts",
+      "import": "./src/echarts/index.ts",
+      "default": "./src/echarts/index.ts"
+    },
+    "./presets": "./src/presets/index.ts"
+  },
+  "peerDependenciesMeta": {
+    "echarts": {
+      "optional": true
+    }
+  },
+  "dependencies": {
+    "@number-flow/react": "0.6.2"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://actionist.local/teable-data-grid/ports/attachment-read.v1.json",
+  "title": "Teable attachment read port",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["tenant_id", "base_id", "attachment_id"],
+  "properties": {
+    "tenant_id": { "type": "string", "minLength": 1 },
+    "base_id": { "type": "string", "minLength": 1 },
+    "attachment_id": { "type": "string", "minLength": 1 },
+    "purpose": { "enum": ["preview", "download"] }
+  }
+}

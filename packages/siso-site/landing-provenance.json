@@ -1,0 +1,22 @@
+{
+  "sourceCommit": "291518e8fbda64dcb483da9768dafbd6883eefed",
+  "license": "SISO-owned",
+  "excludedApplicationEffect": "hubs/video/site/src/kit/LaserBeam.tsx",
+  "files": [
+    {
+      "source": "hubs/video/site/src/kit/page-kit.tsx",
+      "target": "platform/ui/packages/siso-site/src/landing/page-kit.tsx",
+      "sha256": "f84987b1285433c073f7531d37540fec710107db053f78a78d482693083f6503",
+      "sourceSha256": "f84987b1285433c073f7531d37540fec710107db053f78a78d482693083f6503",
+      "adaptedSha256": "1fb8d02c607254ebbb5bfbd228efa0caefd792e89f48c59e2d80d9c42b931d3c",
+      "adaptations": [
+        "Add the video product hue (#ff713d/#ffd2b8/#a52d15) for the video landing consumer. Resolve all four named HUES to equivalent data-hue CSS rules so named product colours are supplied by stylesheet selectors; retain inline CSS variables for custom hues. Reviewed against the pinned original: these are the only changes; no hooks, layout or other rendering logic changed."
+      ]
+    },
+    {
+      "source": "hubs/video/site/src/kit/LionGlyph.tsx",
+      "target": "platform/ui/packages/siso-site/src/landing/LionGlyph.tsx",
+      "sha256": "82698d6b707d16e168001ac406f95e327bddfaa6552801d5427af101c408a39b"
+    }
+  ]
+}

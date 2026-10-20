@@ -1,0 +1,113 @@
+{
+  "package": "@siso/widgets",
+  "version": "0.4.1",
+  "provenance": "Independent SISO implementation; HALO behavior read only; see NOTICE",
+  "components": [
+    {
+      "name": "WidgetFrame",
+      "variations": [
+        "ready",
+        "loading",
+        "empty",
+        "error",
+        "stale",
+        "inline-detail"
+      ]
+    },
+    {
+      "name": "SisoWidgetBand",
+      "variations": [
+        "glance",
+        "work",
+        "detail"
+      ]
+    },
+    {
+      "name": "SisoWidgetBoard",
+      "variations": [
+        "read-only",
+        "controlled-editing",
+        "responsive-stack",
+        "unavailable-gallery"
+      ]
+    }
+  ],
+  "functions": [
+    "defaultWidgetLayout",
+    "validateWidgetDefinitions",
+    "validateWidgetLayout",
+    "fitWidgetSpan",
+    "placeWidgets",
+    "exportWidgetLayout",
+    "importWidgetLayout",
+    "moveWidget"
+  ],
+  "constants": [
+    "WIDGET_BANDS",
+    "WIDGET_SIZE_SPANS"
+  ],
+  "sizes": {
+    "S": 3,
+    "S-wide": 4,
+    "M": 6,
+    "L": 8,
+    "XL": 12,
+    "band": 12
+  },
+  "fill": [
+    "fluid",
+    "fixed",
+    "atomic",
+    "natural",
+    "fit"
+  ],
+  "limits": [
+    "Host owns persistence, data fetching and URL state",
+    "No drag dependency",
+    "No cross-row spans",
+    "Browser acceptance delegated to suite integration"
+  ],
+  "familyCount": 3,
+  "exports": [
+    {
+      "family": "WidgetFrame",
+      "exports": [
+        "WidgetFrame"
+      ],
+      "variants": [
+        "ready",
+        "loading",
+        "empty",
+        "error",
+        "stale",
+        "inline-detail"
+      ],
+      "source": "independent SISO React implementation"
+    },
+    {
+      "family": "SisoWidgetBand",
+      "exports": [
+        "SisoWidgetBand"
+      ],
+      "variants": [
+        "glance",
+        "work",
+        "detail"
+      ],
+      "source": "independent SISO React implementation"
+    },
+    {
+      "family": "SisoWidgetBoard",
+      "exports": [
+        "SisoWidgetBoard"
+      ],
+      "variants": [
+        "read-only",
+        "controlled-editing",
+        "responsive-stack",
+        "unavailable-gallery"
+      ],
+      "source": "independent SISO React implementation"
+    }
+  ]
+}

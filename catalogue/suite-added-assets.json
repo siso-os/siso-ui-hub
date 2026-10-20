@@ -1,0 +1,1184 @@
+{
+  "sourceRepo": "siso-ecosystem",
+  "files": [
+    {
+      "url": "/brand/apple-touch-icon.png",
+      "source": "public/brand/apple-touch-icon.png",
+      "sha256": "f0d0d3346169f52467a83e95c9e6362f9be1a4cfb768711fd9a3b74a75b9547c",
+      "required": true
+    },
+    {
+      "url": "/brand/siso-icon-512.png",
+      "source": "public/brand/siso-icon-512.png",
+      "sha256": "dca06926be885b2ce0ef4987c373cc4746108f91b9dd19b86918a8845209bc37",
+      "required": true
+    },
+    {
+      "url": "/sprites/nav-spritesheet-160x160-discovery.png",
+      "source": "public/sprites/nav-spritesheet-160x160-discovery.png",
+      "sha256": "b9aabf2bedf25e82a46be2626686fe059b432998b379a10600b7edb5e02b9b46",
+      "required": true
+    },
+    {
+      "url": "/sprites/nav-spritesheet-160x160-briefs.png",
+      "source": "public/sprites/nav-spritesheet-160x160-briefs.png",
+      "sha256": "63ab4c8ac38344dc72750d2300b35cf702daee676fc2ccc5645fbb47c362222f",
+      "required": true
+    },
+    {
+      "url": "/sprites/nav-spritesheet-160x160-spyder.png",
+      "source": "public/sprites/nav-spritesheet-160x160-spyder.png",
+      "sha256": "ee578d5da5358e173b45968eb43e9a8237aaf9475425a5de53011598ee31cd7a",
+      "required": true
+    },
+    {
+      "url": "/sprites/nav-spritesheet-160x160-lens.png",
+      "source": "public/sprites/nav-spritesheet-160x160-lens.png",
+      "sha256": "28fe2bfd751595ea0d90633e8429a0d9c62562c8b5c72a7c7b3310ea65d02d84",
+      "required": true
+    },
+    {
+      "url": "/sprites/nav-spritesheet-160x160-library.png",
+      "source": "public/sprites/nav-spritesheet-160x160-library.png",
+      "sha256": "788416df28614277f9107aa5f09459fd4bdb6819660bf8f85e85a1d4efa659dd",
+      "required": true
+    },
+    {
+      "url": "/og/briefs.png",
+      "source": "public/og/briefs.png",
+      "sha256": "85c4c1e2d3b6a432cc9152dcd0e3b56e804c87f8e73a3f058655953c50274698",
+      "required": true
+    },
+    {
+      "url": "/og/lens.png",
+      "source": "public/og/lens.png",
+      "sha256": "95d89e927a94cf0c5eb454f70d2f0d4d5fae9a3a703e1bb86d30c9de7732e547",
+      "required": true
+    },
+    {
+      "url": "/og/pricing.png",
+      "source": "public/og/pricing.png",
+      "sha256": "ff7a3db39b844d1e56a68b20dfa0165506c845bfdf5f671a9a8627a1529b4a0b",
+      "required": true
+    },
+    {
+      "url": "/og/swipe-file.png",
+      "source": "public/og/swipe-file.png",
+      "sha256": "72069eca78848a174ccdc496159666d103390b2bdb4338e128409bbf6af46f3f",
+      "required": true
+    },
+    {
+      "url": "/og/industries.png",
+      "source": "public/og/industries.png",
+      "sha256": "b045d35ea6fbb7a8dfe972fb18805a6b3c13e9bb0707566aa451f7327d1c42ad",
+      "required": true
+    },
+    {
+      "url": "/og/home.png",
+      "source": "public/og/home.png",
+      "sha256": "b1f1d9c719a7fc32bb468fa97cd1e42831dcac27d5435a1c83d6ecd3d2a22496",
+      "required": true
+    },
+    {
+      "url": "/og/spyder.png",
+      "source": "public/og/spyder.png",
+      "sha256": "01530cf1dbbc6488e9d0ae2611b4379442812dd00872df0f2a77aa92a88c49ab",
+      "required": true
+    },
+    {
+      "url": "/og/contact.png",
+      "source": "public/og/contact.png",
+      "sha256": "5a52453bc9a3418db1626504e09e5a193f57e73e5df3cd84cbe1cbcb320d8cef",
+      "required": true
+    },
+    {
+      "url": "/og/discovery.png",
+      "source": "public/og/discovery.png",
+      "sha256": "dcbfcf07491bfa9b25846fefd724f1f2ec3cef1b9c808c2909d74abdf879c272",
+      "required": true
+    },
+    {
+      "url": "/og/blog.png",
+      "source": "public/og/blog.png",
+      "sha256": "c849fc90ede2b07a1ff6b41dfc68e71c3d887f38b4600896f373f65acbd833b0",
+      "required": true
+    },
+    {
+      "url": "/og/ecosystem.png",
+      "source": "public/og/ecosystem.png",
+      "sha256": "ccde25159d34c2a381ba866f5bdf62304e1951282793d8edb27182d9ec3fd279",
+      "required": true
+    },
+    {
+      "url": "/og/about.png",
+      "source": "public/og/about.png",
+      "sha256": "54ecba707daaaa9e98224814dccee58d143b96e906274f61bb7ca141672c7c2e",
+      "required": true
+    },
+    {
+      "url": "/og/voice.png",
+      "source": "public/og/voice.png",
+      "sha256": "5a6cfd67e0a7c0ca599f9dacbd9c62028683c2aa2ef36d9e4a0be3c92e03fa4b",
+      "required": true
+    },
+    {
+      "url": "/og/skills.png",
+      "source": "public/og/skills.png",
+      "sha256": "a378fa41458205444c917907af079266ff516810ee29064b14d3e244fb6cc9dc",
+      "required": true
+    },
+    {
+      "url": "/og/default.png",
+      "source": "public/og/default.png",
+      "sha256": "ad5e3d7f6294cafe7ec0d67f7c5151988059bff625a4bb07e4d28c1b41242fb6",
+      "required": true
+    },
+    {
+      "url": "/og/merch.png",
+      "source": "public/og/merch.png",
+      "sha256": "048635bf9bfc88612ffdca499616a310e138246d6085b8624e136a3b2b68c28f",
+      "required": true
+    },
+    {
+      "url": "/og/changelog.png",
+      "source": "public/og/changelog.png",
+      "sha256": "46b7a38fb3c99ac3dabc9f77ecac4f04ffc3c29f57aa823d40d520a64237047a",
+      "required": true
+    },
+    {
+      "url": "/siso-img/home/03-ipad-front.png",
+      "source": "public/siso-img/home/03-ipad-front.png",
+      "sha256": "5dc331da87672ceb1af2f8ea6a6a977b31ff13d42d1348ccfb3cdeff81e6ee75",
+      "required": true
+    },
+    {
+      "url": "/siso-img/home/10-hero-glow.png",
+      "source": "public/siso-img/home/10-hero-glow.png",
+      "sha256": "b9a8d7d9db896a85c76f66fcfb651ef201155cf5ba505c320572578907898939",
+      "required": true
+    },
+    {
+      "url": "/siso-img/home/09-blog-voice.png",
+      "source": "public/siso-img/home/09-blog-voice.png",
+      "sha256": "ad32374a2544a49d4828fe3014bb7651bb8d11a6d4c737ea7dac40f94c84cb02",
+      "required": true
+    },
+    {
+      "url": "/siso-img/home/06-blog-industries.png",
+      "source": "public/siso-img/home/06-blog-industries.png",
+      "sha256": "c6bef6ae304cb946bb80d93b3c44765476f2499f95b184bb9e5bad7c3601e11b",
+      "required": true
+    },
+    {
+      "url": "/siso-img/home/05-blog-repos.png",
+      "source": "public/siso-img/home/05-blog-repos.png",
+      "sha256": "7df30aa2a00b1f3ee11cb910036d6e2b7b5aa9211b951d077446d5689a05d339",
+      "required": true
+    },
+    {
+      "url": "/siso-img/home/04-phone-front.png",
+      "source": "public/siso-img/home/04-phone-front.png",
+      "sha256": "927894e2a0013d43ca7cd5a9618eb681e1414340d4f4e926545adcbeb9d0d88d",
+      "required": true
+    },
+    {
+      "url": "/siso-img/home/08-blog-open-source.png",
+      "source": "public/siso-img/home/08-blog-open-source.png",
+      "sha256": "087cd3fc5570c85cbd411870a69ee202b83e0bce7794fb4db1f356a66dc17457",
+      "required": true
+    },
+    {
+      "url": "/siso-img/home/02-cta-desk-wide.png",
+      "source": "public/siso-img/home/02-cta-desk-wide.png",
+      "sha256": "59e628a77122d2b8765033984927ac436cb754bb5f7a6ca4212f711948f6b46b",
+      "required": true
+    },
+    {
+      "url": "/siso-img/home/01-cta-desk.png",
+      "source": "public/siso-img/home/01-cta-desk.png",
+      "sha256": "097651b7d442c6851b03eaba633cb3ce50129d7f98990c8f1e3a98de93b42e56",
+      "required": true
+    },
+    {
+      "url": "/siso-img/home/07-blog-cafes.png",
+      "source": "public/siso-img/home/07-blog-cafes.png",
+      "sha256": "7eac2e145d6e1a63ec294b5fc9ab0960eadfe76de10ec1767d4db3bd59029514",
+      "required": true
+    },
+    {
+      "url": "/siso-img/products/10-bg-beam.png",
+      "source": "public/siso-img/products/10-bg-beam.png",
+      "sha256": "037309db9ca0699978580e165b638592ec8ada0258e3f405b7d84172fd7e17e7",
+      "required": true
+    },
+    {
+      "url": "/siso-img/products/06-skills-hero.png",
+      "source": "public/siso-img/products/06-skills-hero.png",
+      "sha256": "38c439bfc6e6c0291a852eff2f62f39dc7b0267b0b0ea32e93b994b982d2315c",
+      "required": true
+    },
+    {
+      "url": "/siso-img/products/12-bg-rings.png",
+      "source": "public/siso-img/products/12-bg-rings.png",
+      "sha256": "3dc9e3ea864797391150026f9d5f300718767bffbcbcacd4492d8e534efb0466",
+      "required": true
+    },
+    {
+      "url": "/siso-img/products/11-bg-particles.png",
+      "source": "public/siso-img/products/11-bg-particles.png",
+      "sha256": "f2689fc4b270dcc1e1d84a47ad4f443d1846fd5d6eaa83394111b4f784c7c26c",
+      "required": true
+    },
+    {
+      "url": "/siso-img/products/05-research-hero.png",
+      "source": "public/siso-img/products/05-research-hero.png",
+      "sha256": "dfc08c612aad64bd3505f93aa9cfdcd5e66c13baebe3303f8c0feec5ee149ff6",
+      "required": true
+    },
+    {
+      "url": "/siso-img/products/01-agency-hero.png",
+      "source": "public/siso-img/products/01-agency-hero.png",
+      "sha256": "d4b41e5a9b8c18808ea2376c8b5c9197d2e959eea1658d0bdf5ca5b949156191",
+      "required": true
+    },
+    {
+      "url": "/siso-img/products/09-footer-launch.png",
+      "source": "public/siso-img/products/09-footer-launch.png",
+      "sha256": "cfb445e8229d87da0a8b7477b182b5fe4d44874a822c7790df5030b109e3d74f",
+      "required": true
+    },
+    {
+      "url": "/siso-img/products/04-library-hero.png",
+      "source": "public/siso-img/products/04-library-hero.png",
+      "sha256": "62a635e5630623170e0db3672fe7b63ea15a24130965d4bc770aa5c54be5ba42",
+      "required": true
+    },
+    {
+      "url": "/siso-img/products/02-os-hero.png",
+      "source": "public/siso-img/products/02-os-hero.png",
+      "sha256": "66945fd51054b67d113d4a890776dd6750042f2a041ad06a52092db079854480",
+      "required": true
+    },
+    {
+      "url": "/siso-img/products/08-estate-module.png",
+      "source": "public/siso-img/products/08-estate-module.png",
+      "sha256": "53a2d64c05ab7c1e15c5491b32d83dd6c72a8c55d430996795ef2871b9a59f78",
+      "required": true
+    },
+    {
+      "url": "/siso-img/products/03-voice-hero.png",
+      "source": "public/siso-img/products/03-voice-hero.png",
+      "sha256": "832f5360eca714b5ac2656331737129d42a2144c6999924bd4e867c1a03c43b0",
+      "required": true
+    },
+    {
+      "url": "/siso-img/products/07-whatsapp-module.png",
+      "source": "public/siso-img/products/07-whatsapp-module.png",
+      "sha256": "7c5e5ee4b198ebb94ea579397b7388d5ab12f51b2b7e1bf4e66588a400adb318",
+      "required": true
+    },
+    {
+      "url": "/siso-img/industries/14-kit-rooms.png",
+      "source": "public/siso-img/industries/14-kit-rooms.png",
+      "sha256": "5882e7fca9f62a08df4af244121dff25daee50898b165d0d8562691b5df0fca1",
+      "required": true
+    },
+    {
+      "url": "/siso-img/industries/05-spas-clinics.png",
+      "source": "public/siso-img/industries/05-spas-clinics.png",
+      "sha256": "d1b746cbc2a44b065a596750097232f9d831af92e51928a1df048b02d58a7067",
+      "required": true
+    },
+    {
+      "url": "/siso-img/industries/07-world-index.png",
+      "source": "public/siso-img/industries/07-world-index.png",
+      "sha256": "ac91fea6608b8d3aada8d8f6d8767ef443e66fd10bb7c3079e279c0521ec7fe2",
+      "required": true
+    },
+    {
+      "url": "/siso-img/industries/06-yoga-fitness.png",
+      "source": "public/siso-img/industries/06-yoga-fitness.png",
+      "sha256": "1522aac0d040831dcfe1dc623fc4f017b8e8207cc0dca8460489142c9480ed4d",
+      "required": true
+    },
+    {
+      "url": "/siso-img/industries/18-thai-restaurant.png",
+      "source": "public/siso-img/industries/18-thai-restaurant.png",
+      "sha256": "07db0537f0156105618248d1eed9b58ce1bb2745b3bd10c89326cbd7ff2ce37d",
+      "required": true
+    },
+    {
+      "url": "/siso-img/industries/02-restaurants.png",
+      "source": "public/siso-img/industries/02-restaurants.png",
+      "sha256": "34f009d810e185ee81b2280ca1081f9cc9147908d3a5416907b6661b85c22ea1",
+      "required": true
+    },
+    {
+      "url": "/siso-img/industries/12-kit-consult.png",
+      "source": "public/siso-img/industries/12-kit-consult.png",
+      "sha256": "54716566c3e8711852b4f8a3220f4f4353e66e7530c44d8f7ffae4b096fef3bd",
+      "required": true
+    },
+    {
+      "url": "/siso-img/industries/01-cafes.png",
+      "source": "public/siso-img/industries/01-cafes.png",
+      "sha256": "5c313c025908814bce3235d58703ca797af04f95c46f3afeb38a1b8a65c19a2b",
+      "required": true
+    },
+    {
+      "url": "/siso-img/industries/11-kit-booking.png",
+      "source": "public/siso-img/industries/11-kit-booking.png",
+      "sha256": "2ec0004247d1a9d21db752cba1210efd8950b3e11d7b866f46869bf6c1558b77",
+      "required": true
+    },
+    {
+      "url": "/siso-img/industries/09-kit-catalogue.png",
+      "source": "public/siso-img/industries/09-kit-catalogue.png",
+      "sha256": "8f5f5c6d8728caea4096cebf526efa509cc8a9b8868eda7c20bad9bda0fa4b74",
+      "required": true
+    },
+    {
+      "url": "/siso-img/industries/10-kit-quote.png",
+      "source": "public/siso-img/industries/10-kit-quote.png",
+      "sha256": "deb428820cb3ffba6163d4b6e20555f64ae0a668f3002f173117cd2746091568",
+      "required": true
+    },
+    {
+      "url": "/siso-img/industries/16-nail-salon.png",
+      "source": "public/siso-img/industries/16-nail-salon.png",
+      "sha256": "e2d8c111a7e1d626c1fe38d174aa5877edc7fcc7d8cf35e4301f9be77f4a210b",
+      "required": true
+    },
+    {
+      "url": "/siso-img/industries/04-barbers-nails.png",
+      "source": "public/siso-img/industries/04-barbers-nails.png",
+      "sha256": "df0dca69bc82a02c4f2b6d63470e54b9a82126be49c4fe92f8a2b149ada03a03",
+      "required": true
+    },
+    {
+      "url": "/siso-img/industries/03-beauty-salons.png",
+      "source": "public/siso-img/industries/03-beauty-salons.png",
+      "sha256": "a53c12793492fab1daab816e922dac91a177c3ac6b5b59a24d85ac087ad73369",
+      "required": true
+    },
+    {
+      "url": "/siso-img/industries/08-street-grid.png",
+      "source": "public/siso-img/industries/08-street-grid.png",
+      "sha256": "aa5aef6006f8f8415c2f682676dc84854f045222146f526218e8168740498990",
+      "required": true
+    },
+    {
+      "url": "/siso-img/industries/20-auto-repair.png",
+      "source": "public/siso-img/industries/20-auto-repair.png",
+      "sha256": "5d478f24337fcacfd070a33368f99b7bca22a8a9f6c460f3b1f4aa55b9240839",
+      "required": true
+    },
+    {
+      "url": "/siso-img/industries/19-pizza.png",
+      "source": "public/siso-img/industries/19-pizza.png",
+      "sha256": "d49293606426f245988bae82bf175d22622d67a083838310d7aa5b384f0cebd0",
+      "required": true
+    },
+    {
+      "url": "/siso-img/industries/17-japanese-restaurant.png",
+      "source": "public/siso-img/industries/17-japanese-restaurant.png",
+      "sha256": "5bf3541712f71576c976acf27abece875b844a7959a1c26d29a7ca7ae59fef79",
+      "required": true
+    },
+    {
+      "url": "/siso-img/industries/13-kit-classes.png",
+      "source": "public/siso-img/industries/13-kit-classes.png",
+      "sha256": "763e8c20571c27863456c24fbd5a14d2039756bfc2d29a2fbd4054101a039e17",
+      "required": true
+    },
+    {
+      "url": "/siso-img/industries/15-kit-offers.png",
+      "source": "public/siso-img/industries/15-kit-offers.png",
+      "sha256": "40c626e5549edb1554ba379d8394203bacbb3b4f8b2491d994b382ec3823f39f",
+      "required": true
+    },
+    {
+      "url": "/siso-img/merch/t-shirt-black-front.webp",
+      "source": "public/siso-img/merch/t-shirt-black-front.webp",
+      "sha256": "3e2fadfe710ea7aa55f51cce08e509247e211a653a33a2d3b9c5dccdad7e7bc9",
+      "required": true
+    },
+    {
+      "url": "/siso-img/merch/knit-runner-white-studio.webp",
+      "source": "public/siso-img/merch/knit-runner-white-studio.webp",
+      "sha256": "fc8bdf164315a4d2fca1ee31fc1deb8fb362dc9f3cff1ad5a09af3d4295376da",
+      "required": true
+    },
+    {
+      "url": "/siso-img/merch/t-shirt-black-agency-front.webp",
+      "source": "public/siso-img/merch/t-shirt-black-agency-front.webp",
+      "sha256": "9bab48f155a637739acd63ae4a1420733bdefa55672464402e40992c212472d4",
+      "required": true
+    },
+    {
+      "url": "/siso-img/merch/skeleton-watch-black-studio.webp",
+      "source": "public/siso-img/merch/skeleton-watch-black-studio.webp",
+      "sha256": "4b76123591cf48601d12594d244f3e0188e7bb2feef604b62df214d6d382aa3b",
+      "required": true
+    },
+    {
+      "url": "/siso-img/merch/hoodie-black-front.webp",
+      "source": "public/siso-img/merch/hoodie-black-front.webp",
+      "sha256": "8110b3f0afe8755fb594f004d81731b4f536d2f0d5f746a75f41bd30d66587a7",
+      "required": true
+    },
+    {
+      "url": "/siso-img/merch/range-mono-hero.webp",
+      "source": "public/siso-img/merch/range-mono-hero.webp",
+      "sha256": "0ade44e73cde5be257440b6dfc0e61497bd185ac251eb28a4db364bfc0fb0311",
+      "required": true
+    },
+    {
+      "url": "/siso-img/merch/knit-runner-black-studio.webp",
+      "source": "public/siso-img/merch/knit-runner-black-studio.webp",
+      "sha256": "9664d3d083d19c258e1c1d180e60b1df9dda60ce524c9536db6545cdda7889ec",
+      "required": true
+    },
+    {
+      "url": "/siso-img/merch/hoodie-black-back.webp",
+      "source": "public/siso-img/merch/hoodie-black-back.webp",
+      "sha256": "7dcfdbf6ac04b577b2b5112861c74a98660a846ea3da4680d6390c31e2a80f57",
+      "required": true
+    },
+    {
+      "url": "/siso-img/merch/skeleton-watch-black-lifestyle.webp",
+      "source": "public/siso-img/merch/skeleton-watch-black-lifestyle.webp",
+      "sha256": "f13b7b3b9c7c2df6a085d00e6eb13a8fb6ea39aa909862ccbc9c3b3df5549867",
+      "required": true
+    },
+    {
+      "url": "/siso-img/merch/t-shirt-white-flat.webp",
+      "source": "public/siso-img/merch/t-shirt-white-flat.webp",
+      "sha256": "d91625c4946c798dc53f20143b25a16f89098ca0c82c4e1a0d873292f8006133",
+      "required": true
+    },
+    {
+      "url": "/siso-img/merch/hoodie-white-lifestyle.webp",
+      "source": "public/siso-img/merch/hoodie-white-lifestyle.webp",
+      "sha256": "ca9f2c03e23f85d497a9e89b90b25e15fff0cba7a45e9077de91c584d937f4b6",
+      "required": true
+    },
+    {
+      "url": "/siso-img/merch/hoodie-white-front-wordmark.webp",
+      "source": "public/siso-img/merch/hoodie-white-front-wordmark.webp",
+      "sha256": "393afe71a92fe4a3fb1006d6ea056e01ffffd48c847c67090af7d77cd32cae35",
+      "required": true
+    },
+    {
+      "url": "/siso-img/industries/thumb/08-street-grid.webp",
+      "source": "public/siso-img/industries/thumb/08-street-grid.webp",
+      "sha256": "e556b162bd459703cb6263a0be4c20b2ce442f67d6fb872fea8659539f768d52",
+      "required": true
+    },
+    {
+      "url": "/siso-img/industries/thumb/15-kit-offers.webp",
+      "source": "public/siso-img/industries/thumb/15-kit-offers.webp",
+      "sha256": "8c2218d8cd916f11504c2cb0d3641b836a49e7a3997597f4d2bd6a23045d3d2e",
+      "required": true
+    },
+    {
+      "url": "/siso-img/industries/thumb/01-cafes.webp",
+      "source": "public/siso-img/industries/thumb/01-cafes.webp",
+      "sha256": "bf9b8fb9fff72c37deaed4f5fcb10f1329cfe2617ae39d6714a9e127934d0abf",
+      "required": true
+    },
+    {
+      "url": "/siso-img/industries/thumb/10-kit-quote.webp",
+      "source": "public/siso-img/industries/thumb/10-kit-quote.webp",
+      "sha256": "8cf248143e67bf45925796d7707b0c96d4efad8df77a2791e882ed395f251e57",
+      "required": true
+    },
+    {
+      "url": "/siso-img/industries/thumb/06-yoga-fitness.webp",
+      "source": "public/siso-img/industries/thumb/06-yoga-fitness.webp",
+      "sha256": "8baecfab68ae5cfa634d693a938aca556291d7bfacbb0f81ee2bd36ca3ec4af6",
+      "required": true
+    },
+    {
+      "url": "/siso-img/industries/thumb/20-auto-repair.webp",
+      "source": "public/siso-img/industries/thumb/20-auto-repair.webp",
+      "sha256": "ff2440dc743ab9b43dcd9b7b42553c1c66cb47776abd9edc888bd581e8501755",
+      "required": true
+    },
+    {
+      "url": "/siso-img/industries/thumb/11-kit-booking.webp",
+      "source": "public/siso-img/industries/thumb/11-kit-booking.webp",
+      "sha256": "5ffd9eacd04b2894ebb07ce60337bb6b66608ab7134a2f2ed1602d5ca13ba6e9",
+      "required": true
+    },
+    {
+      "url": "/siso-img/industries/thumb/05-spas-clinics.webp",
+      "source": "public/siso-img/industries/thumb/05-spas-clinics.webp",
+      "sha256": "4c680dffb884882374c1d613dafcfab1c9113fcbb00e4d8bc4a40ff38f0217ed",
+      "required": true
+    },
+    {
+      "url": "/siso-img/industries/thumb/13-kit-classes.webp",
+      "source": "public/siso-img/industries/thumb/13-kit-classes.webp",
+      "sha256": "d16078c758bff8f696ddbc7096fa561967d110390205d591bbc362027d090d5d",
+      "required": true
+    },
+    {
+      "url": "/siso-img/industries/thumb/04-barbers-nails.webp",
+      "source": "public/siso-img/industries/thumb/04-barbers-nails.webp",
+      "sha256": "5458cde6e4bbac6abe2620e5e8defe9b55c556bacde79fe8a714be35e563d3e3",
+      "required": true
+    },
+    {
+      "url": "/siso-img/industries/thumb/02-restaurants.webp",
+      "source": "public/siso-img/industries/thumb/02-restaurants.webp",
+      "sha256": "2994e32a50265fa65511cea6ddfccbb278c1f3af3d421291f897108634367290",
+      "required": true
+    },
+    {
+      "url": "/siso-img/industries/thumb/16-nail-salon.webp",
+      "source": "public/siso-img/industries/thumb/16-nail-salon.webp",
+      "sha256": "eac43f983b9a74b5c902ab6542730eaa83a329fdc2d5881b9c185a334f2d89c3",
+      "required": true
+    },
+    {
+      "url": "/siso-img/industries/thumb/09-kit-catalogue.webp",
+      "source": "public/siso-img/industries/thumb/09-kit-catalogue.webp",
+      "sha256": "b332b8ab6ceecdd6e5cb0acc0369b6a477c3e9f789e6fd85abe874ec25c35c78",
+      "required": true
+    },
+    {
+      "url": "/siso-img/industries/thumb/18-thai-restaurant.webp",
+      "source": "public/siso-img/industries/thumb/18-thai-restaurant.webp",
+      "sha256": "33cbc5a82d3e8305f7808f06b8ea13e774e9684bfd8e5d05700e4c3c24e6f636",
+      "required": true
+    },
+    {
+      "url": "/siso-img/industries/thumb/17-japanese-restaurant.webp",
+      "source": "public/siso-img/industries/thumb/17-japanese-restaurant.webp",
+      "sha256": "38b82643bfedd9b42e76796c5619966db32303634248766a03e80d2903315684",
+      "required": true
+    },
+    {
+      "url": "/siso-img/industries/thumb/14-kit-rooms.webp",
+      "source": "public/siso-img/industries/thumb/14-kit-rooms.webp",
+      "sha256": "3a506453129ae2c71737b3faabd1fa4f5a09f54ee21547ea34296a906bb0dd47",
+      "required": true
+    },
+    {
+      "url": "/siso-img/industries/thumb/12-kit-consult.webp",
+      "source": "public/siso-img/industries/thumb/12-kit-consult.webp",
+      "sha256": "71a65e1382ed2f65a86b7584467245a063ef8942ffe2a76207d79ed479ff375a",
+      "required": true
+    },
+    {
+      "url": "/siso-img/industries/thumb/19-pizza.webp",
+      "source": "public/siso-img/industries/thumb/19-pizza.webp",
+      "sha256": "80388e01ea01f912fcae55a4c33184fb7ed9e82972bf5fc3453766d813e15970",
+      "required": true
+    },
+    {
+      "url": "/siso-img/industries/thumb/03-beauty-salons.webp",
+      "source": "public/siso-img/industries/thumb/03-beauty-salons.webp",
+      "sha256": "92fdaa4e1f0915ec46b82628640b02f2e28e255a8233795ce0e80ea7a61b346f",
+      "required": true
+    },
+    {
+      "url": "/siso-img/industries/thumb/07-world-index.webp",
+      "source": "public/siso-img/industries/thumb/07-world-index.webp",
+      "sha256": "d438a67cb7e98971d6878f46386381465e8c5c439e09e90b9015518d896d54fb",
+      "required": true
+    },
+    {
+      "url": "/siso-img/industries/web/08-street-grid.webp",
+      "source": "public/siso-img/industries/web/08-street-grid.webp",
+      "sha256": "858d97f79f2e1caf0a6614cb62de82652f87a58101a898b0cd56a0e3666911ee",
+      "required": true
+    },
+    {
+      "url": "/siso-img/industries/web/15-kit-offers.webp",
+      "source": "public/siso-img/industries/web/15-kit-offers.webp",
+      "sha256": "8291261ded6db05fcd904829ec53c61beefeb64617a27b1bc46f93938e32be29",
+      "required": true
+    },
+    {
+      "url": "/siso-img/industries/web/01-cafes.webp",
+      "source": "public/siso-img/industries/web/01-cafes.webp",
+      "sha256": "7e36f8064beb33945bbdb6436657b577fe1bff844c220a47f5d3aa290e4b5ebf",
+      "required": true
+    },
+    {
+      "url": "/siso-img/industries/web/10-kit-quote.webp",
+      "source": "public/siso-img/industries/web/10-kit-quote.webp",
+      "sha256": "2ce6b1783d2bdbbab54438c926b7201b0dad4ccfb9e4a278edf0e10fca99e0cf",
+      "required": true
+    },
+    {
+      "url": "/siso-img/industries/web/06-yoga-fitness.webp",
+      "source": "public/siso-img/industries/web/06-yoga-fitness.webp",
+      "sha256": "b1995de635c46ecc76a82a034dca26696a9807b31cfd9cf8090c519efa8d77e5",
+      "required": true
+    },
+    {
+      "url": "/siso-img/industries/web/20-auto-repair.webp",
+      "source": "public/siso-img/industries/web/20-auto-repair.webp",
+      "sha256": "32b6c45d96b8d4152bae17559c55be1cd2f0fa8bf37bf6028197a2a28f52181a",
+      "required": true
+    },
+    {
+      "url": "/siso-img/industries/web/11-kit-booking.webp",
+      "source": "public/siso-img/industries/web/11-kit-booking.webp",
+      "sha256": "896cac44e2f94ca3ace1870a45150ba082380d55837ad8a8eb25a1dd9d76ea6d",
+      "required": true
+    },
+    {
+      "url": "/siso-img/industries/web/05-spas-clinics.webp",
+      "source": "public/siso-img/industries/web/05-spas-clinics.webp",
+      "sha256": "1e4ca457b4c25aebf6c82e3cde9424ddba08297c495f1acc914ff53fcff242b0",
+      "required": true
+    },
+    {
+      "url": "/siso-img/industries/web/13-kit-classes.webp",
+      "source": "public/siso-img/industries/web/13-kit-classes.webp",
+      "sha256": "b2e41e926c81c7d0d571bdd76474a814c94b39f527055b264afd1399620f93f4",
+      "required": true
+    },
+    {
+      "url": "/siso-img/industries/web/04-barbers-nails.webp",
+      "source": "public/siso-img/industries/web/04-barbers-nails.webp",
+      "sha256": "95207e0cfc85d762b4957dee0c876bac3a2314b0761374bbd0a93a46af45564a",
+      "required": true
+    },
+    {
+      "url": "/siso-img/industries/web/02-restaurants.webp",
+      "source": "public/siso-img/industries/web/02-restaurants.webp",
+      "sha256": "426b891cc4f67baf8ea8b23eb899f998b12f06be639da8815e5ca6d306ecd2a6",
+      "required": true
+    },
+    {
+      "url": "/siso-img/industries/web/16-nail-salon.webp",
+      "source": "public/siso-img/industries/web/16-nail-salon.webp",
+      "sha256": "b01b2f4aed593bc38427d06e7b845b2f94366a12b2d2a8b9682a40b39b120b30",
+      "required": true
+    },
+    {
+      "url": "/siso-img/industries/web/09-kit-catalogue.webp",
+      "source": "public/siso-img/industries/web/09-kit-catalogue.webp",
+      "sha256": "ea8db575c9040317108d5fbda1e84df9bbab3a72a3b572d811e1bffa460bd20d",
+      "required": true
+    },
+    {
+      "url": "/siso-img/industries/web/18-thai-restaurant.webp",
+      "source": "public/siso-img/industries/web/18-thai-restaurant.webp",
+      "sha256": "de6668772d8b6bfbd4f423885ee3cfd53c69cbbd2859a165983b6576fc9c5e02",
+      "required": true
+    },
+    {
+      "url": "/siso-img/industries/web/17-japanese-restaurant.webp",
+      "source": "public/siso-img/industries/web/17-japanese-restaurant.webp",
+      "sha256": "e102459eff1c4cbc53a011fa29130e9c63cc236f384171f3299aa281d0649b0b",
+      "required": true
+    },
+    {
+      "url": "/siso-img/industries/web/14-kit-rooms.webp",
+      "source": "public/siso-img/industries/web/14-kit-rooms.webp",
+      "sha256": "55ddfe32a7891151819e1c94112241a3daf247cee94e16f467969083338bd50a",
+      "required": true
+    },
+    {
+      "url": "/siso-img/industries/web/12-kit-consult.webp",
+      "source": "public/siso-img/industries/web/12-kit-consult.webp",
+      "sha256": "466025c8c83b9971448027119651c4bc84f92a748af753e4dd6af0712d32cc8e",
+      "required": true
+    },
+    {
+      "url": "/siso-img/industries/web/19-pizza.webp",
+      "source": "public/siso-img/industries/web/19-pizza.webp",
+      "sha256": "0fc5cf5cc9d9ece357ba6721e7d0ef935022b92cdadb9f81d7b8f572e5a5cba5",
+      "required": true
+    },
+    {
+      "url": "/siso-img/industries/web/03-beauty-salons.webp",
+      "source": "public/siso-img/industries/web/03-beauty-salons.webp",
+      "sha256": "03dcc4a5ac1db55e0bf056af53631301d562726d7ff077434eaf8c4dbf82d85c",
+      "required": true
+    },
+    {
+      "url": "/siso-img/industries/web/07-world-index.webp",
+      "source": "public/siso-img/industries/web/07-world-index.webp",
+      "sha256": "9d1748016e17e0d94f4a3f4d28d351a4574384f04f9b2a8d9de65e056b4e2782",
+      "required": true
+    },
+    {
+      "url": "/siso-img/products/keyed/02-os-hero.webp",
+      "source": "public/siso-img/products/keyed/02-os-hero.webp",
+      "sha256": "4dcecac30d2e1587617082a256231ebaf45bed029c9d9c8345b86132dd4f3bdd",
+      "required": true
+    },
+    {
+      "url": "/siso-img/products/keyed/07-whatsapp-module.webp",
+      "source": "public/siso-img/products/keyed/07-whatsapp-module.webp",
+      "sha256": "6a9628b7239af3dd92f83861c9eea6626ec2effebcb49251a1ca9ee3007e0c4d",
+      "required": true
+    },
+    {
+      "url": "/siso-img/products/keyed/03-voice-hero.webp",
+      "source": "public/siso-img/products/keyed/03-voice-hero.webp",
+      "sha256": "72deafc65d93c6ff054682c0f0e38326881d5e2ab3d53ffcfd48da9980ba44d6",
+      "required": true
+    },
+    {
+      "url": "/siso-img/products/thumb/11-bg-particles.webp",
+      "source": "public/siso-img/products/thumb/11-bg-particles.webp",
+      "sha256": "d886412eedd474a523c85e137f09ccebca5699b6bdd588bf1191f624b990622e",
+      "required": true
+    },
+    {
+      "url": "/siso-img/products/thumb/02-os-hero.webp",
+      "source": "public/siso-img/products/thumb/02-os-hero.webp",
+      "sha256": "dba2f9ab8c8c33fcaf17647d50470ef93e310a32ca10d33b35b6dd9e5d212dad",
+      "required": true
+    },
+    {
+      "url": "/siso-img/products/thumb/05-research-hero.webp",
+      "source": "public/siso-img/products/thumb/05-research-hero.webp",
+      "sha256": "6cff65d96d9a7399dd01b13932108f5f241f483c55302cd12c0233e33c4d8d84",
+      "required": true
+    },
+    {
+      "url": "/siso-img/products/thumb/10-bg-beam.webp",
+      "source": "public/siso-img/products/thumb/10-bg-beam.webp",
+      "sha256": "bce48c130233fcf5db534fc9e78e395c0af86c6549f583a06672ceccbc3c39f1",
+      "required": true
+    },
+    {
+      "url": "/siso-img/products/thumb/06-skills-hero.webp",
+      "source": "public/siso-img/products/thumb/06-skills-hero.webp",
+      "sha256": "9da1559b93497c523076431e52148338f416b176535f9e8bd2c7724e6148b40e",
+      "required": true
+    },
+    {
+      "url": "/siso-img/products/thumb/09-footer-launch.webp",
+      "source": "public/siso-img/products/thumb/09-footer-launch.webp",
+      "sha256": "615dd98991e740b81a27e5803390357e7e8755203c057e3451d5ee62a9554dd4",
+      "required": true
+    },
+    {
+      "url": "/siso-img/products/thumb/01-agency-hero.webp",
+      "source": "public/siso-img/products/thumb/01-agency-hero.webp",
+      "sha256": "eaaf17a29b8d41d04589e56233c76bf65d120ee6605511fd17f3d0346e2ffa91",
+      "required": true
+    },
+    {
+      "url": "/siso-img/products/thumb/12-bg-rings.webp",
+      "source": "public/siso-img/products/thumb/12-bg-rings.webp",
+      "sha256": "af6a666dfa78f8ae812c6646d7fa3c2eb2968900577559f5735d60f544297750",
+      "required": true
+    },
+    {
+      "url": "/siso-img/products/thumb/07-whatsapp-module.webp",
+      "source": "public/siso-img/products/thumb/07-whatsapp-module.webp",
+      "sha256": "950d3be43c0d25a085bf1f401c71ef00e9047f9dff2b7938c909f5115e14ce1b",
+      "required": true
+    },
+    {
+      "url": "/siso-img/products/thumb/08-estate-module.webp",
+      "source": "public/siso-img/products/thumb/08-estate-module.webp",
+      "sha256": "e38b063f9a84c3d606807e0d75bbad1923f6578808c8616918f110d0e7efad07",
+      "required": true
+    },
+    {
+      "url": "/siso-img/products/thumb/04-library-hero.webp",
+      "source": "public/siso-img/products/thumb/04-library-hero.webp",
+      "sha256": "237256d619b1f346c9a59b0cd027c091efaaf06a8fcd11eaf97d417334084261",
+      "required": true
+    },
+    {
+      "url": "/siso-img/products/thumb/03-voice-hero.webp",
+      "source": "public/siso-img/products/thumb/03-voice-hero.webp",
+      "sha256": "e1042f9aff9187ac023b1f7f0a39084fa9f25b4caad60891c51a2c39ed472b48",
+      "required": true
+    },
+    {
+      "url": "/siso-img/products/web/11-bg-particles.webp",
+      "source": "public/siso-img/products/web/11-bg-particles.webp",
+      "sha256": "7fdb60f231a25dba620bebf860bbbb3cb972ee7be0a82fb347b269bfefdca6ea",
+      "required": true
+    },
+    {
+      "url": "/siso-img/products/web/02-os-hero.webp",
+      "source": "public/siso-img/products/web/02-os-hero.webp",
+      "sha256": "e11b276b0764b41be620bda11a20f6755ca57ef5288e0433380ebaa9f98eface",
+      "required": true
+    },
+    {
+      "url": "/siso-img/products/web/05-research-hero.webp",
+      "source": "public/siso-img/products/web/05-research-hero.webp",
+      "sha256": "256710ecf84ae6d1d6b1051038bec8972855d3de4e77bcc5dc176a2bde64054c",
+      "required": true
+    },
+    {
+      "url": "/siso-img/products/web/10-bg-beam.webp",
+      "source": "public/siso-img/products/web/10-bg-beam.webp",
+      "sha256": "f9ea2c84b636b18a1fdad85d343a95bb56e85bbcc70971e3f4185a7caa9b1d22",
+      "required": true
+    },
+    {
+      "url": "/siso-img/products/web/06-skills-hero.webp",
+      "source": "public/siso-img/products/web/06-skills-hero.webp",
+      "sha256": "a9bc1300af7b1164d9b3b4add974137aadbc920f92b69c70c85185311c9a8b00",
+      "required": true
+    },
+    {
+      "url": "/siso-img/products/web/09-footer-launch.webp",
+      "source": "public/siso-img/products/web/09-footer-launch.webp",
+      "sha256": "38f52a4a14351b7b7fc4f6db1ef0c1f0ad060c690300ce79b7341ce3f4864d68",
+      "required": true
+    },
+    {
+      "url": "/siso-img/products/web/01-agency-hero.webp",
+      "source": "public/siso-img/products/web/01-agency-hero.webp",
+      "sha256": "ae1b11a1e9a3a975e2377a80d6c61fa3fd4d4af0fe66c07794894c7d309883c8",
+      "required": true
+    },
+    {
+      "url": "/siso-img/products/web/12-bg-rings.webp",
+      "source": "public/siso-img/products/web/12-bg-rings.webp",
+      "sha256": "3c8fc248e9c3f1c03e64e74a46d4afa17d26d460e499a16d2e89fa27ba08b710",
+      "required": true
+    },
+    {
+      "url": "/siso-img/products/web/07-whatsapp-module.webp",
+      "source": "public/siso-img/products/web/07-whatsapp-module.webp",
+      "sha256": "05b8243d77a2a464d855f8b0987bdba9270dc10197cd8cf51ee221ee1087c693",
+      "required": true
+    },
+    {
+      "url": "/siso-img/products/web/08-estate-module.webp",
+      "source": "public/siso-img/products/web/08-estate-module.webp",
+      "sha256": "b0fddbd5b0b39be17ea8d05308eb0ec938341722a2b7db420c48e863aeec7a1a",
+      "required": true
+    },
+    {
+      "url": "/siso-img/products/web/04-library-hero.webp",
+      "source": "public/siso-img/products/web/04-library-hero.webp",
+      "sha256": "2cdde8d88026df50f2f50cb46616b509c6ae71210acbd499f13b15dd383157bb",
+      "required": true
+    },
+    {
+      "url": "/siso-img/products/web/03-voice-hero.webp",
+      "source": "public/siso-img/products/web/03-voice-hero.webp",
+      "sha256": "1607d95534e925628399b4eaed2e083f8fd6a5e2d7153dda4c737c53b8fd39cb",
+      "required": true
+    },
+    {
+      "url": "/siso-img/home/keyed/04-phone-front.webp",
+      "source": "public/siso-img/home/keyed/04-phone-front.webp",
+      "sha256": "6c7be3d4aae6bfaed5af1aef24e37479da5f2730181dd442caf6830b2ba2cc04",
+      "required": true
+    },
+    {
+      "url": "/siso-img/home/keyed/01-cta-desk.webp",
+      "source": "public/siso-img/home/keyed/01-cta-desk.webp",
+      "sha256": "4954d579c0449dee1fe51a18b0fe1e7eecd7faf2c48cfae9f53f98b73a12c03d",
+      "required": true
+    },
+    {
+      "url": "/siso-img/home/keyed/03-ipad-front.webp",
+      "source": "public/siso-img/home/keyed/03-ipad-front.webp",
+      "sha256": "e739ef94993631ffa40859a81c760a2d4da29028c0b729de10d21d26064fc9b7",
+      "required": true
+    },
+    {
+      "url": "/siso-img/home/keyed/02-cta-desk-wide.webp",
+      "source": "public/siso-img/home/keyed/02-cta-desk-wide.webp",
+      "sha256": "d7afb90b7f6d8bb4838d99bb94c0b89a1122398861e6322279b9425899ec2331",
+      "required": true
+    },
+    {
+      "url": "/siso-img/home/thumb/04-phone-front.webp",
+      "source": "public/siso-img/home/thumb/04-phone-front.webp",
+      "sha256": "16e6d9463fbcab671131dd91fc950ad286731d4b91602df26968c615d0dd02fb",
+      "required": true
+    },
+    {
+      "url": "/siso-img/home/thumb/01-cta-desk.webp",
+      "source": "public/siso-img/home/thumb/01-cta-desk.webp",
+      "sha256": "6201f042a4ef7395616bd10ec19c7ec042ba8a8c38684e04bb5e68a7696e0cbd",
+      "required": true
+    },
+    {
+      "url": "/siso-img/home/thumb/09-blog-voice.webp",
+      "source": "public/siso-img/home/thumb/09-blog-voice.webp",
+      "sha256": "30715208f27756381adadba42b3bb1ff484629b9c76f289ca6550c3b4be6fafa",
+      "required": true
+    },
+    {
+      "url": "/siso-img/home/thumb/03-ipad-front.webp",
+      "source": "public/siso-img/home/thumb/03-ipad-front.webp",
+      "sha256": "74f6c8947bec2469b745c284b1a80b6236170ed90156e91d55a089e66615a382",
+      "required": true
+    },
+    {
+      "url": "/siso-img/home/thumb/08-blog-open-source.webp",
+      "source": "public/siso-img/home/thumb/08-blog-open-source.webp",
+      "sha256": "87ae99387b16577c338f6d5f6ea79c6f4db5ae26f0310acf17623cd1fb378d72",
+      "required": true
+    },
+    {
+      "url": "/siso-img/home/thumb/02-cta-desk-wide.webp",
+      "source": "public/siso-img/home/thumb/02-cta-desk-wide.webp",
+      "sha256": "f1c175f757865643ae59dae7e15f07ebd22fd4cd1e185c1f1fd125bbcfeb488e",
+      "required": true
+    },
+    {
+      "url": "/siso-img/home/thumb/06-blog-industries.webp",
+      "source": "public/siso-img/home/thumb/06-blog-industries.webp",
+      "sha256": "b51038ebb51180668173d01f03484eecde476a2effba79c0a60ec57fab584035",
+      "required": true
+    },
+    {
+      "url": "/siso-img/home/thumb/10-hero-glow.webp",
+      "source": "public/siso-img/home/thumb/10-hero-glow.webp",
+      "sha256": "22ebea80c312e4319258c19ebfd6d36c4f399627dc37526f52f6a7e7a2869d7a",
+      "required": true
+    },
+    {
+      "url": "/siso-img/home/thumb/07-blog-cafes.webp",
+      "source": "public/siso-img/home/thumb/07-blog-cafes.webp",
+      "sha256": "6d70e28a3479e098b8adc847faa1d58961230dc1b1d51ed0ca4d9a21714548b4",
+      "required": true
+    },
+    {
+      "url": "/siso-img/home/thumb/05-blog-repos.webp",
+      "source": "public/siso-img/home/thumb/05-blog-repos.webp",
+      "sha256": "1f6eb423ae83ab53a93ed3527c687bfc577c19484340ccc6ec1da7ebf2c1d225",
+      "required": true
+    },
+    {
+      "url": "/siso-img/home/web/04-phone-front.webp",
+      "source": "public/siso-img/home/web/04-phone-front.webp",
+      "sha256": "5612cb18d1525da721740f22fbfb820b95405863649d25e616c81eaf5a944567",
+      "required": true
+    },
+    {
+      "url": "/siso-img/home/web/01-cta-desk.webp",
+      "source": "public/siso-img/home/web/01-cta-desk.webp",
+      "sha256": "196cdc34d80d600f9b59cba477c3cc2be0eff88e5126885fb04099e0c2623ed2",
+      "required": true
+    },
+    {
+      "url": "/siso-img/home/web/03-ipad-front.webp",
+      "source": "public/siso-img/home/web/03-ipad-front.webp",
+      "sha256": "2f04e15190d76baaafcf09976b4f3e646cb84c7ac360bf56b9d93e5fb356316d",
+      "required": true
+    },
+    {
+      "url": "/siso-img/home/web/02-cta-desk-wide.webp",
+      "source": "public/siso-img/home/web/02-cta-desk-wide.webp",
+      "sha256": "7f97ce567f72c81555b1d0eaab565e87d4b33d5d0f6ad5c833ecea400189aa12",
+      "required": true
+    },
+    {
+      "url": "/siso-img/home/web/10-hero-glow.webp",
+      "source": "public/siso-img/home/web/10-hero-glow.webp",
+      "sha256": "c793845831a91c2a75b8d2989362abd0efb264416c07d808efea628be3bcda7c",
+      "required": true
+    },
+    {
+      "url": "/brand/kit/siso-lockup-ink.svg",
+      "source": "public/brand/kit/siso-lockup-ink.svg",
+      "sha256": "7dfd77444b5c2634b14f4ee3fcfddf34f9f27846256c4ea805a1f4439191e21b",
+      "required": true
+    },
+    {
+      "url": "/brand/kit/siso-agency.png",
+      "source": "public/brand/kit/siso-agency.png",
+      "sha256": "7e2d2a005c2c17dca5ef9ed621602bf67ce75fbdecd1fe950881ef4579dbe412",
+      "required": true
+    },
+    {
+      "url": "/brand/kit/siso-mark.svg",
+      "source": "public/brand/kit/siso-mark.svg",
+      "sha256": "5e582e6e39073d81fcd948197f67688b8070873f58480e67f67ba68f68453566",
+      "required": true
+    },
+    {
+      "url": "/brand/kit/siso-wordmark-ink.png",
+      "source": "public/brand/kit/siso-wordmark-ink.png",
+      "sha256": "b4d2743a9f416bf833c40fcdbf02edb80404c7ca7ef8baa10ef126c0ce9dd080",
+      "required": true
+    },
+    {
+      "url": "/brand/kit/siso-wordmark-white.svg",
+      "source": "public/brand/kit/siso-wordmark-white.svg",
+      "sha256": "5cac6d573949c5e3d9b78daf96ed96554ae5f5df2523d0d346f2cd3baf10e7d0",
+      "required": true
+    },
+    {
+      "url": "/brand/kit/siso-lion-white.png",
+      "source": "public/brand/kit/siso-lion-white.png",
+      "sha256": "188b212d85a8b691283619eb1ae74e471d0744edf1ce2a25c56de63e2f24cb0b",
+      "required": true
+    },
+    {
+      "url": "/brand/kit/skills-hub.png",
+      "source": "public/brand/kit/skills-hub.png",
+      "sha256": "ed34f6430a0ff43c36400288bbe476167c8deec6e99a38c10547f48d9a873dd7",
+      "required": true
+    },
+    {
+      "url": "/brand/kit/siso-lion-ink.svg",
+      "source": "public/brand/kit/siso-lion-ink.svg",
+      "sha256": "474fd6d76f325746a5af4daa5060e5f60609c6c6df17ebf99d726d336e028ba7",
+      "required": true
+    },
+    {
+      "url": "/brand/kit/siso-lion-ember.svg",
+      "source": "public/brand/kit/siso-lion-ember.svg",
+      "sha256": "68eb01258f9bacb1053f51ccf151c60cff81a7f776170caebc7c4ead93673136",
+      "required": true
+    },
+    {
+      "url": "/brand/kit/siso-lion-ember.png",
+      "source": "public/brand/kit/siso-lion-ember.png",
+      "sha256": "8c25e174ac0f69406930a468c3168f54a9344787396145df70f8eb52b929efd4",
+      "required": true
+    },
+    {
+      "url": "/brand/kit/skills-hub.svg",
+      "source": "public/brand/kit/skills-hub.svg",
+      "sha256": "647554ee1ff4cbf6472f37b414acb9b8c05b0eca338c2605be6d610ce00517f2",
+      "required": true
+    },
+    {
+      "url": "/brand/kit/siso-lion-ink.png",
+      "source": "public/brand/kit/siso-lion-ink.png",
+      "sha256": "e9a6f4fab3ff551a7e8c7235f2144a997a97ced34495ae0decd84cd205e21933",
+      "required": true
+    },
+    {
+      "url": "/brand/kit/siso-lion-white.svg",
+      "source": "public/brand/kit/siso-lion-white.svg",
+      "sha256": "0930ccec1a4d5217f15305cfe6e869cfa11041e0463b910ce80c980514a81757",
+      "required": true
+    },
+    {
+      "url": "/brand/kit/siso-wordmark-white.png",
+      "source": "public/brand/kit/siso-wordmark-white.png",
+      "sha256": "616681cd8ed681b92c4befbac2c38d5b342d343956fe06c0d94544ffb655d256",
+      "required": true
+    },
+    {
+      "url": "/brand/kit/siso-wordmark-ink.svg",
+      "source": "public/brand/kit/siso-wordmark-ink.svg",
+      "sha256": "df004d06c0ef612f991c4dcb37e861e5b93515b3b084f43111e5729af7013db4",
+      "required": true
+    },
+    {
+      "url": "/brand/kit/siso-mark.png",
+      "source": "public/brand/kit/siso-mark.png",
+      "sha256": "4ade0442dbe2ac973b016cf0c2d1bcb81b4350f353368d0dba1f723d2dc36871",
+      "required": true
+    },
+    {
+      "url": "/brand/kit/siso-agency.svg",
+      "source": "public/brand/kit/siso-agency.svg",
+      "sha256": "a1018a6258f4cf8d82d8b2ede747a4b05e1688728a970bd06407d7bc3afb5c4e",
+      "required": true
+    },
+    {
+      "url": "/brand/kit/siso-lockup-ink.png",
+      "source": "public/brand/kit/siso-lockup-ink.png",
+      "sha256": "136b6e2f04eee80254e543505c4c51c7a32bbaaeba8b23c870208a960fd675ad",
+      "required": true
+    },
+    {
+      "url": "/brand/kit/great-library.svg",
+      "source": "public/brand/kit/great-library.svg",
+      "sha256": "5bf59f2feb5ed636b911b894bffd592db30d2245df8714fe585a9083f32b33bf",
+      "required": true
+    },
+    {
+      "url": "/brand/kit/siso-labs-lockup-ink.svg",
+      "source": "public/brand/kit/siso-labs-lockup-ink.svg",
+      "sha256": "a4c0ffd74701abaf8c8c06c9506e3530436ac49ead3e720d67c751bd3170d6aa",
+      "required": true
+    },
+    {
+      "url": "/brand/kit/agent-base.png",
+      "source": "public/brand/kit/agent-base.png",
+      "sha256": "0358ef98e37240724b2dd86398c22bd5a594f5d3b409b089bf5f794b49d685f4",
+      "required": true
+    },
+    {
+      "url": "/brand/kit/voice.svg",
+      "source": "public/brand/kit/voice.svg",
+      "sha256": "4caa9319c609fd81436a073cb51ff936c6471ba93e48be5435864137db07b10b",
+      "required": true
+    },
+    {
+      "url": "/brand/kit/siso-lockup-white.svg",
+      "source": "public/brand/kit/siso-lockup-white.svg",
+      "sha256": "6e22108893e88a369cbfbb887968d5c6a90d781a0bbbe83d06afab086837bcee",
+      "required": true
+    },
+    {
+      "url": "/brand/kit/ui-hub.svg",
+      "source": "public/brand/kit/ui-hub.svg",
+      "sha256": "726b02e47879aef37e858b072b1a2eead067d53d0b7a644a260bd89872c26391",
+      "required": true
+    },
+    {
+      "url": "/brand/kit/siso-labs-lockup-white.svg",
+      "source": "public/brand/kit/siso-labs-lockup-white.svg",
+      "sha256": "df9065ba20e3d28b69239fb91622cae50070f937c4f220c2982f9a4f34df409e",
+      "required": true
+    },
+    {
+      "url": "/brand/kit/siso-labs-lockup-white.png",
+      "source": "public/brand/kit/siso-labs-lockup-white.png",
+      "sha256": "94b418311069f25dc74dc5bea0a7f728dd2c805505faf3699856e1421cfe7949",
+      "required": true
+    },
+    {
+      "url": "/brand/kit/ui-hub.png",
+      "source": "public/brand/kit/ui-hub.png",
+      "sha256": "5a1235ba456a57c6efaac8dfa5920cd3375337233f98888adb04660eadd56c58",
+      "required": true
+    },
+    {
+      "url": "/brand/kit/siso-lockup-white.png",
+      "source": "public/brand/kit/siso-lockup-white.png",
+      "sha256": "3ed70817baeb4eb2101b9b17a6f25dd2305413df513a742a3d1c16efbb6f1178",
+      "required": true
+    },
+    {
+      "url": "/brand/kit/voice.png",
+      "source": "public/brand/kit/voice.png",
+      "sha256": "00112142267ef434c89a5265bd2292afdcccc89bf8bfeda7d26dad9bbf687a3a",
+      "required": true
+    },
+    {
+      "url": "/brand/kit/great-library.png",
+      "source": "public/brand/kit/great-library.png",
+      "sha256": "62634d36a551d1e825daf7074cc584159c19c6c44a0cda781abfa285237a6f57",
+      "required": true
+    },
+    {
+      "url": "/brand/kit/agent-base.svg",
+      "source": "public/brand/kit/agent-base.svg",
+      "sha256": "5386412600a47a21c2a9c33c3037bda47f392e399c18734ae58f87f337650c40",
+      "required": true
+    },
+    {
+      "url": "/brand/kit/siso-labs-lockup-ink.png",
+      "source": "public/brand/kit/siso-labs-lockup-ink.png",
+      "sha256": "8f8af177a9dd2926e32a58d75b607c75713652854fa7c0564fe64a17764b3db5",
+      "required": true
+    }
+  ],
+  "excluded": "Client/pilot/CDN material and third-party logo collections are outside this SISO art expansion.",
+  "excludedReferenceCount": 96,
+  "review": "Owner inspected all 276 additional raster candidates on eight contact sheets. UI Hub and UI Pick folders contain upstream previews and client examples, so they remain source references."
+}

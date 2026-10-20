@@ -1,0 +1,492 @@
+#!/usr/bin/env python3
+"""Draw parts from their own code, for parts whose library has no page of their own to photograph.
+
+Shaan, 10 Oct: "get maybe all of these components downloaded ... so they can be viewed on the thing". After bin/shoot,
+~21,000 parts still had no picture: their sites show them inside one app (catalogs, atomloader) or a gallery per kind
+(shadcnui-blocks). Their code is held here, so each is drawn as an app would draw it: its files in a sandbox with React,
+shadcn/ui (new-york-v4) and the packages parts use, bundled by esbuild (bin/render-bundle.mjs), styled by Tailwind v4 in
+the dark theme, opened headless and photographed like bin/shoot's pictures (thumbs/<registry>/<key>.webp).
+
+  bin/render setup DIR                       # the sandbox: packages, shadcn/ui from ui.shadcn.com, next/* shims, theme
+  bin/render --print-jsonl > todo.jsonl      # parts with code and no picture, each with its files (sounds, libs left out)
+  UI_THUMBS=<dir> bin/render run DIR < todo.jsonl   # draw them; _rendered.jsonl and _render_failed.jsonl say how it went
+
+A part fails when its bundle needs a package the sandbox lacks (the run ends with the commonest, to install), when it
+throws, or when it draws nothing (no elements, or one flat colour). Resumable: a part with a picture is skipped.
+"""
+import argparse, asyncio, collections, glob, io, json, os, re, shutil, subprocess, sys, time, urllib.request
+
+ROOT = os.path.dirname(os.path.dirname(os.path.realpath(__file__)))
+OUT = os.environ.get("UI_THUMBS", os.path.expanduser("~/SISO_Workspace/_data/ui-hub/thumbs"))
+SHELL = os.environ.get("PW_SHELL") or (sorted((p for p in glob.glob(os.path.expanduser("~/Library/Caches/ms-playwright/chromium_headless_shell-*/*/*headless*shell"))
+                                               if os.path.isfile(p) and os.access(p, os.X_OK)),
+                                              key=lambda p: int(re.search(r"shell-(\d+)", p).group(1)))[-1:] or [None])[0]
+NOT_REACT = re.compile(r"""from\s+['"](vue|svelte|solid-js|react-native|@expo/|heroui-native|@kobalte/|motion-v|@angular/|lit)['"/]""")
+SKIP_TYPES = {"registry:lib", "registry:hook", "registry:file", "registry:style", "registry:theme", "registry:font", "registry:base"}
+PACKAGES = """react react-dom esbuild tailwindcss @tailwindcss/cli tw-animate-css lucide-react motion framer-motion
+class-variance-authority radix-ui @radix-ui/react-slot @radix-ui/react-accordion @radix-ui/react-alert-dialog @radix-ui/react-aspect-ratio
+@radix-ui/react-avatar @radix-ui/react-checkbox @radix-ui/react-collapsible @radix-ui/react-context-menu @radix-ui/react-dialog
+@radix-ui/react-dropdown-menu @radix-ui/react-hover-card @radix-ui/react-label @radix-ui/react-menubar @radix-ui/react-navigation-menu
+@radix-ui/react-popover @radix-ui/react-progress @radix-ui/react-radio-group @radix-ui/react-scroll-area @radix-ui/react-select
+@radix-ui/react-separator @radix-ui/react-slider @radix-ui/react-switch @radix-ui/react-tabs @radix-ui/react-toast @radix-ui/react-toggle
+@radix-ui/react-toggle-group @radix-ui/react-tooltip @radix-ui/react-icons @base-ui/react clsx tailwind-merge recharts sonner
+react-aria-components react-aria react-stately zod react-hook-form @hookform/resolvers date-fns gsap @gsap/react react-icons
+@tanstack/react-table next-themes ogl react-day-picker embla-carousel-react embla-carousel-autoplay @tabler/icons-react @number-flow/react
+three @react-three/fiber @react-three/drei react-use-measure input-otp cmdk vaul @dnd-kit/core @dnd-kit/sortable @dnd-kit/utilities
+tailwind-variants @paper-design/shaders-react @iconify/react @hugeicons/react @hugeicons/core-free-icons @icons-pack/react-simple-icons
+@mui/material @mui/icons-material @emotion/react @emotion/styled @heroui/react @ark-ui/react @tanstack/react-form shiki usehooks-ts
+canvas-confetti lenis react-resizable-panels @remixicon/react @phosphor-icons/react react-wrap-balancer react-markdown
+prosekit platejs @platejs/media @platejs/ai @platejs/selection @platejs/basic-styles @platejs/resizable @platejs/dnd @platejs/table
+@platejs/link @platejs/suggestion react-email @react-email/components ai @ai-sdk/react @jsonforms/core @jsonforms/react
+@xyflow/react valibot embla-carousel remark-gfm nanoid @tanstack/react-virtual @tanstack/react-query
+@radix-ui/react-use-controllable-state echarts lodash react-dropzone @dnd-kit/modifiers marked cobe @visx/responsive @visx/scale
+@tsparticles/react @tsparticles/slim @designcodeio/threeui @editframe/react @antv/gpt-vis @livekit/components-react livekit-client
+geist uuid""".split()
+UI = """accordion alert alert-dialog aspect-ratio avatar badge breadcrumb button button-group calendar card carousel chart checkbox
+collapsible command context-menu dialog drawer dropdown-menu empty field form hover-card input input-group input-otp item kbd label
+menubar native-select navigation-menu pagination popover progress radio-group resizable scroll-area select separator sheet sidebar
+skeleton slider sonner spinner switch table tabs textarea toggle toggle-group tooltip""".split()
+
+THEME = """@import "tailwindcss";
+@import "tw-animate-css";
+@custom-variant dark (&:is(.dark *));
+@theme inline {
+  --color-background: var(--background); --color-foreground: var(--foreground); --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground); --color-popover: var(--popover); --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary); --color-primary-foreground: var(--primary-foreground); --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground); --color-muted: var(--muted); --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent); --color-accent-foreground: var(--accent-foreground); --color-destructive: var(--destructive);
+  --color-border: var(--border); --color-input: var(--input); --color-ring: var(--ring); --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2); --color-chart-3: var(--chart-3); --color-chart-4: var(--chart-4); --color-chart-5: var(--chart-5);
+  --color-sidebar: var(--sidebar); --color-sidebar-foreground: var(--sidebar-foreground); --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground); --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground); --color-sidebar-border: var(--sidebar-border); --color-sidebar-ring: var(--sidebar-ring);
+  --radius-sm: calc(var(--radius) - 4px); --radius-md: calc(var(--radius) - 2px); --radius-lg: var(--radius); --radius-xl: calc(var(--radius) + 4px);
+}
+:root { --radius: 0.625rem; }
+.dark {
+  --background: oklch(0.145 0 0); --foreground: oklch(0.985 0 0); --card: oklch(0.205 0 0); --card-foreground: oklch(0.985 0 0);
+  --popover: oklch(0.205 0 0); --popover-foreground: oklch(0.985 0 0); --primary: oklch(0.922 0 0); --primary-foreground: oklch(0.205 0 0);
+  --secondary: oklch(0.269 0 0); --secondary-foreground: oklch(0.985 0 0); --muted: oklch(0.269 0 0); --muted-foreground: oklch(0.708 0 0);
+  --accent: oklch(0.269 0 0); --accent-foreground: oklch(0.985 0 0); --destructive: oklch(0.704 0.191 22.216); --border: oklch(1 0 0 / 10%);
+  --input: oklch(1 0 0 / 15%); --ring: oklch(0.556 0 0); --chart-1: oklch(0.488 0.243 264.376); --chart-2: oklch(0.696 0.17 162.48);
+  --chart-3: oklch(0.769 0.188 70.08); --chart-4: oklch(0.627 0.265 303.9); --chart-5: oklch(0.645 0.246 16.439); --sidebar: oklch(0.205 0 0);
+  --sidebar-foreground: oklch(0.985 0 0); --sidebar-primary: oklch(0.488 0.243 264.376); --sidebar-primary-foreground: oklch(0.985 0 0);
+  --sidebar-accent: oklch(0.269 0 0); --sidebar-accent-foreground: oklch(0.985 0 0); --sidebar-border: oklch(1 0 0 / 10%); --sidebar-ring: oklch(0.556 0 0);
+}
+@layer base { * { @apply border-border outline-ring/50; } body { @apply bg-background text-foreground; } }
+"""
+SHIMS = {
+    "next-image.tsx": """export default function Image({ src, alt = "", fill, priority, quality, placeholder, blurDataURL, loader, unoptimized, style, ...p }: any) {
+  const s = typeof src === "string" ? src : src?.src
+  return <img src={s} alt={alt} style={fill ? { position: "absolute", inset: 0, width: "100%", height: "100%", objectFit: "cover", ...style } : style} {...p} />
+}""",
+    "next-link.tsx": """export default function Link({ href, prefetch, replace, scroll, shallow, legacyBehavior, passHref, ...p }: any) {
+  return <a href={typeof href === "string" ? href : href?.pathname || "#"} {...p} />
+}""",
+    "next-navigation.tsx": """const router = { push() {}, replace() {}, back() {}, forward() {}, refresh() {}, prefetch() {} }
+export const useRouter = () => router
+export const usePathname = () => "/"
+export const useSearchParams = () => new URLSearchParams()
+export const useParams = () => ({})
+export const useSelectedLayoutSegment = () => null
+export const useSelectedLayoutSegments = () => []
+export const redirect = () => {}
+export const notFound = () => {}""",
+    "next-router.tsx": """export const useRouter = () => ({ push() {}, replace() {}, back() {}, pathname: "/", query: {}, asPath: "/", events: { on() {}, off() {} } })
+export default { push() {} }""",
+    "next-font-google.tsx": """const f: any = () => ({ className: "", variable: "", style: { fontFamily: "inherit" } })
+Object.assign(f, f())
+module.exports = new Proxy({}, { get: (_: any, k: string) => (k === "__esModule" ? false : f) })""",
+    "next-font-local.tsx": """export default function localFont() { return { className: "", variable: "", style: { fontFamily: "inherit" } } }""",
+    "next-dynamic.tsx": """import { lazy, Suspense, createElement } from "react"
+export default function dynamic(load: any) { const C = lazy(async () => { const m = await load(); return { default: m.default || m } }); return (p: any) => createElement(Suspense, { fallback: null }, createElement(C, p)) }""",
+    "next-script.tsx": """export default function Script() { return null }""",
+    "next-head.tsx": """export default function Head() { return null }""",
+    "next-headers.tsx": """export const headers = () => new Map(); export const cookies = () => ({ get() {}, getAll: () => [] })""",
+}
+ENTRY = """import * as M from "{main}"
+import {{ createRoot }} from "react-dom/client"
+import {{ Component, createElement }} from "react"
+class Guard extends Component<any, any> {{
+  state = {{ e: null }}
+  static getDerivedStateFromError(e: any) {{ return {{ e }} }}
+  componentDidCatch(e: any) {{ (window as any).__err = String(e && e.message || e) }}
+  render() {{ return this.state.e ? null : this.props.children }}
+}}
+const m: any = M
+const C = (typeof m.default === "function" || (m.default && m.default.$$typeof)) ? m.default
+  : (Object.entries(m).find(([k, v]: any) => /^[A-Z]/.test(k) && (typeof v === "function" || (v && v.$$typeof))) || [])[1]
+;(window as any).__picked = !!C
+const root = createRoot(document.getElementById("root")!)
+let n = 0
+const draw = (props: any) => root.render(createElement(Guard, {{ key: n++ }}, C ? createElement(C as any, props) : null))
+draw(null)
+// a part that needs content (a heading, a badge, a highlight) draws nothing alone: bin/render redraws it with sample props
+;(window as any).__redraw = (props: any) => {{ (window as any).__err = null; draw(props) }}
+"""
+SAMPLE = {"children": "The quick brown fox", "title": "Title", "label": "Label", "text": "The quick brown fox",
+          "description": "A short description of it", "placeholder": "Type here..."}
+PAGE = """<!doctype html><html class="dark" data-wide="{wide}"><head><meta charset="utf-8"><link rel="stylesheet" href="../../{css}">
+<style>html,body{{margin:0;min-height:100vh}} html[data-wide="0"] body{{display:flex;align-items:center;justify-content:center}}
+html[data-wide="1"] #root{{width:100%}} #root{{position:relative}}</style></head><body><div id="root"></div><link rel="stylesheet" href="out.css">
+<script>addEventListener("error", (e) => {{ window.__err = window.__err || String(e.message || e) }})</script><script src="out.js"></script></body></html>"""
+
+MEASURE = """() => { const body = document.body, bg = getComputedStyle(body).backgroundColor, clear = 'rgba(0, 0, 0, 0)';
+  let n = 0, box = null, ink = null;
+  const add = (b, a) => !a ? [b.left, b.top, b.right, b.bottom] : [Math.min(a[0], b.left), Math.min(a[1], b.top), Math.max(a[2], b.right), Math.max(a[3], b.bottom)];
+  for (const e of body.querySelectorAll('*')) {
+    if (/^(SCRIPT|STYLE|LINK|META|NOSCRIPT|TEMPLATE)$/.test(e.tagName)) continue;
+    n++;
+    const b = e.getBoundingClientRect(); if (b.width < 2 || b.height < 2 || b.right < 0 || b.bottom < 0) continue;
+    const s = getComputedStyle(e); if (s.visibility === 'hidden' || s.display === 'none' || +s.opacity === 0) continue;
+    box = add(b, box);
+    const border = ['Top', 'Right', 'Bottom', 'Left'].some(d => parseFloat(s['border' + d + 'Width']) > 0 && ![clear, bg].includes(s['border' + d + 'Color']));
+    // a full-width band's own background is a section, not the part: a card inside it is framed on its own
+    const band = b.width >= innerWidth * 0.9;
+    if (/^(IMG|SVG|CANVAS|VIDEO|INPUT|TEXTAREA|SELECT|BUTTON|IFRAME|PICTURE)$/i.test(e.tagName) || [...e.childNodes].some(c => c.nodeType === 3 && c.textContent.trim())
+        || (!band && (![clear, bg].includes(s.backgroundColor) || s.backgroundImage !== 'none' || s.boxShadow !== 'none' || border)))
+      ink = add(b, ink);
+  }
+  const fit = (a) => { if (!a) return null; const r = [Math.max(0, a[0]), Math.max(0, a[1]), Math.min(innerWidth, a[2]), Math.min(innerHeight, a[3])];
+    return r[2] > r[0] + 1 && r[3] > r[1] + 1 ? r : null };
+  return { n, err: window.__err || null, picked: !!window.__picked, box: fit(box), ink: fit(ink) } }"""
+# a closed trigger (Radix, Base UI, shadcn's data-slot): opened before the photo, so a dialog shows its dialog
+TRIGGER = "[aria-haspopup]:not([aria-expanded=true]), [aria-expanded=false], [data-slot$=trigger][data-state=closed]"
+OVERLAY = re.compile(r"dialog|drawer|sheet|popover|dropdown|menu|select|tooltip|hover-?card|modal|command|combobox|date-?picker|context|popup|overlay|lightbox|toast|sonner|notif", re.I)
+
+
+def frame(box, vw, vh, wide):
+    """the picture's frame, 4:3 like a card, around what paints: across the screen from its top when that is wide or
+    tall (a page, a hero), else centred on it with room (a card in an empty full-width section, a button)"""
+    x0, y0, x1, y1 = box
+    w, h = x1 - x0, y1 - y0
+    cw = vw if w > vw * 0.7 else min(vw, max(480, w + 64, (h + 64) * 4 / 3))
+    ch = min(vh, cw * 3 / 4)
+    x = max(0, min(vw - cw, (x0 + x1 - cw) / 2))
+    y = max(0, min(vh - ch, y0 - 16 if h >= ch - 32 else (y0 + y1 - ch) / 2))
+    return {"x": x, "y": y, "width": cw, "height": ch}
+
+def key_of(name):
+    parts = [p for p in name.split("/") if p not in ("", ".", "..")]
+    return "/".join(re.sub(r"[^A-Za-z0-9._@+-]", "_", p) for p in parts)
+
+
+def save_webp(png, path):
+    from PIL import Image
+    im = Image.open(io.BytesIO(png)).convert("RGB")
+    if im.width > 800:
+        im = im.resize((800, max(1, round(im.height * 800 / im.width))), Image.LANCZOS)
+    os.makedirs(os.path.dirname(path), exist_ok=True)
+    im.save(path + ".part", "WEBP", quality=72, method=4)
+    os.replace(path + ".part", path)
+
+
+def flat(png):
+    """one flat colour: fewer than 1 pixel in 1,000 differs from the commonest shade (a field of small dots still counts)"""
+    from PIL import Image
+    h = Image.open(io.BytesIO(png)).convert("L").histogram()
+    mode = max(range(256), key=h.__getitem__)
+    return sum(h[v] for v in range(256) if abs(v - mode) > 10) < sum(h) / 1000
+
+
+IMPORT = re.compile(r"""(?:from|import)\s*\(?\s*["'](?:@/|~/|@workspace/ui/)([^"']+)["']""")
+
+
+def tail_keys(p, n=2):
+    """a file's path as imports name it: its last n segments, without extension or a trailing /index"""
+    p = re.sub(r"/index$", "", re.sub(r"\.(tsx|ts|jsx|js|mdx)$", "", p.strip("/")))
+    return "/".join(p.split("/")[-n:])
+
+
+def print_jsonl():
+    """the parts to draw: base parts with code held and no picture, React only, each with the files of the parts of its
+    own registry it needs: those it lists (registryDependencies) and those holding the files its "@/" imports name,
+    which demos and blocks often import without listing (8starlabs-ui's demos import their component), two levels deep"""
+    cls = {json.loads(l)["id"]: json.loads(l) for l in open(os.path.join(ROOT, "classified.jsonl"))}
+    rows = {json.loads(l)["id"]: json.loads(l) for l in open(os.path.join(ROOT, "catalog.jsonl"))}
+    byname, byfile = collections.defaultdict(dict), collections.defaultdict(dict)
+    for x in rows.values():
+        byname[x["reg"]][x["name"]] = x
+        if x.get("code"):
+            for f in x.get("files") or []:
+                byfile[x["reg"]].setdefault(tail_keys(f), x)
+    cache = {}
+
+    def files_of(x):
+        if x["id"] not in cache:
+            try:
+                fs = json.load(open(os.path.join(ROOT, x["code"]))).get("files") or []
+            except (OSError, ValueError):
+                fs = []
+            cache[x["id"]] = [{"path": f.get("path") or "", "target": f.get("target") or "", "content": f.get("content") or ""} for f in fs if f.get("content")]
+        return cache[x["id"]]
+
+    def needs(x, files, seen):
+        out = []
+        for u in x.get("uses") or []:
+            tail = re.sub(r"\.json$", "", u.split(":")[-1].lstrip("@")).split("/")
+            dep = byname[x["reg"]].get("/".join(tail[-2:])) or byname[x["reg"]].get(tail[-1])
+            if dep and dep.get("code") and dep["id"] not in seen:
+                seen.add(dep["id"]); out.append(dep)
+        own = {tail_keys(f["path"] or f["target"]) for f in files} | {tail_keys(f["target"]) for f in files if f["target"]}
+        for f in files:
+            for imp in IMPORT.findall(f["content"]):
+                k = tail_keys(imp)
+                dep = None if k in own else byfile[x["reg"]].get(k)
+                if dep and dep["id"] not in seen:
+                    seen.add(dep["id"]); out.append(dep)
+        return out
+    n = collections.Counter()
+    for i, x in rows.items():
+        c = cls.get(i)
+        if not c or c.get("base") or c.get("junk") or not x.get("code") or x["reg"] == "registrydirectory":
+            continue
+        if c["cat"].startswith(("assets/sound", "lib/", "themes/")) or (x.get("type") or "") in SKIP_TYPES:
+            n["not drawable"] += 1; continue
+        k = f"{x['reg']}/{key_of(x['name'])}"
+        if any(os.path.exists(os.path.join(OUT, k + e)) for e in (".webp", ".svg")):
+            n["has a picture"] += 1; continue
+        files = files_of(x)
+        if not files:
+            n["unreadable"] += 1; continue
+        if any(NOT_REACT.search(f["content"]) for f in files) or not any(re.search(r"\.(tsx|jsx)$", f["path"]) for f in files):
+            n["not React"] += 1; continue
+        seen, extra = {i}, []
+        first = needs(x, files, seen)
+        for dep in first:
+            extra += files_of(dep)
+        for dep in first:  # their own needs, one level more
+            for d2 in needs(dep, files_of(dep), seen):
+                extra += files_of(d2)
+        n["with files it imports"] += bool(extra)
+        wide = 1 if c["cat"].split("/")[0] in ("marketing", "pages", "layout", "flows") or (x.get("type") or "") in ("registry:block", "registry:page") else 0
+        print(json.dumps({"key": k, "name": x["name"], "wide": wide, "files": files, "deps": extra[:60]}, ensure_ascii=False))
+        n["to draw"] += 1
+    print(dict(n), file=sys.stderr)
+
+
+def setup(d):
+    os.makedirs(os.path.join(d, "src/components/ui"), exist_ok=True)
+    os.makedirs(os.path.join(d, "src/lib"), exist_ok=True)
+    os.makedirs(os.path.join(d, "src/hooks"), exist_ok=True)
+    os.makedirs(os.path.join(d, "src/shims"), exist_ok=True)
+    shutil.copy(os.path.join(ROOT, "bin/render-bundle.mjs"), os.path.join(d, "render-bundle.mjs"))
+    open(os.path.join(d, "src/theme.css"), "w").write(THEME)
+    open(os.path.join(d, "src/lib/utils.ts"), "w").write('import { clsx, type ClassValue } from "clsx"\nimport { twMerge } from "tailwind-merge"\n'
+                                                          'export function cn(...inputs: ClassValue[]) { return twMerge(clsx(inputs)) }\n')
+    for f, s in SHIMS.items():
+        open(os.path.join(d, "src/shims", f), "w").write(s + "\n")
+    os.makedirs(os.path.join(d, "src/demos"), exist_ok=True)
+
+    def get(nm):
+        try:
+            with urllib.request.urlopen(f"https://ui.shadcn.com/r/styles/new-york-v4/{nm}.json", timeout=30) as r:
+                return json.load(r)
+        except Exception as e:
+            print(nm, "not fetched:", str(e)[:80])
+    for nm in UI + ["use-mobile"]:  # shadcn/ui as most parts expect it (Radix, new-york-v4), and the hook its sidebar uses
+        for f in (get(nm) or {}).get("files") or []:
+            sub = "hooks" if "/hooks/" in f["path"] else "lib" if "/lib/" in f["path"] else "components/ui"
+            open(os.path.join(d, "src", sub, os.path.basename(f["path"])), "w").write(f["content"])
+    for nm in UI + ["combobox", "date-picker", "data-table", "typography-h1"]:  # its demo shows a library's own primitive of that name
+        files = (get(nm + "-demo") or {}).get("files") or []
+        if files:
+            open(os.path.join(d, "src/demos", nm + ".tsx"), "w").write(files[0]["content"])
+    if not os.path.exists(os.path.join(d, "package.json")):
+        json.dump({"name": "siso-render", "private": True, "type": "module"}, open(os.path.join(d, "package.json"), "w"))
+    # all at once, else one at a time: a package that does not exist must not stop the rest
+    base = ["npm", "install", "--legacy-peer-deps", "--no-audit", "--no-fund", "--loglevel=error"]
+    if subprocess.run(base + PACKAGES, cwd=d).returncode:
+        for p in PACKAGES:
+            if subprocess.run(base + [p], cwd=d).returncode:
+                print("package not installed:", p)
+    print("sandbox ready:", d)
+
+
+def places(f):
+    """where a registry file goes in the part's folder: where an app puts it (its target, which its "@/" imports name),
+    then its registry path with and without src/ (which "@/registry/..." imports name)"""
+    out = []
+    for p in (f["target"], f["path"], re.sub(r"^src/", "", f["path"])):
+        p = re.sub(r"^~/", "", p or "").lstrip("/").replace("..", "_")
+        if p and p not in out:
+            out.append(p)
+    return out or ["part.tsx"]
+
+
+def main_file(part, own):
+    """the file that shows the part: its example or page if it has one, else the file named after it, else a default export"""
+    leaf = part["name"].split("/")[-1].lower()
+    code = [p for p in own if re.search(r"\.(tsx|jsx)$", p)]
+    stem = lambda p: os.path.splitext(os.path.basename(p))[0].lower()
+    for test in (lambda p: stem(p) in (leaf + "-example", leaf + "-demo", "page", "demo", "example"),
+                 lambda p: stem(p) == leaf or (stem(p) == "index" and os.path.basename(os.path.dirname(p)).lower() == leaf),
+                 lambda p: "export default" in own[p], lambda p: leaf.endswith(stem(p))):
+        hit = next((p for p in code if test(p)), None)
+        if hit:
+            return hit
+    return code[0] if code else None
+
+
+async def run(d, parts, jobs, batch):
+    from playwright.async_api import async_playwright
+    work = os.path.join(d, os.environ.get("RENDER_WORK", "work")); os.makedirs(work, exist_ok=True); os.makedirs(OUT, exist_ok=True)
+    done = open(os.path.join(OUT, "_rendered.jsonl"), "a"); bad = open(os.path.join(OUT, "_render_failed.jsonl"), "a")
+    stats, missing, t0 = collections.Counter(), collections.Counter(), time.time()
+    async with async_playwright() as pw:
+        browser = await pw.chromium.launch(executable_path=SHELL, args=["--use-gl=angle", "--use-angle=swiftshader", "--enable-unsafe-swiftshader"])
+        for b0 in range(0, len(parts), batch):
+            chunk, jobsl, dirs = parts[b0:b0 + batch], [], {}
+            for p in chunk:
+                pd = os.path.join(work, re.sub(r"[^A-Za-z0-9._-]", "_", p["key"]))
+                placed = {}
+                for f in p["deps"] + p["files"]:  # the part's own files last: they win a shared path
+                    for rel in places(f):
+                        placed[rel] = f["content"]
+                for rel, s in placed.items():
+                    os.makedirs(os.path.dirname(os.path.join(pd, rel)) or pd, exist_ok=True)
+                    open(os.path.join(pd, rel), "w").write(s)
+                own = {places(f)[0]: f["content"] for f in p["files"]}
+                m = main_file(p, own)
+                if not m:
+                    stats["no component file"] += 1; bad.write(json.dumps({"key": p["key"], "why": "no component file"}) + "\n"); continue
+                mod = "./" + re.sub(r"\.(tsx|jsx)$", "", m)
+                open(os.path.join(pd, "entry.tsx"), "w").write(ENTRY.format(main=mod))
+                entries = [os.path.join(pd, "entry.tsx")]
+                # a bare primitive (accordion, card, tabs) draws nothing alone: shadcn's demo of that name, with the
+                # library's own file in place of shadcn's, shows it as a page would; if the names differ, it is drawn alone
+                stem = os.path.splitext(os.path.basename(m))[0].lower()
+                nm = next((n for n in (p["name"].split("/")[-1].lower(), stem) if os.path.exists(os.path.join(d, "src/demos", n + ".tsx"))), None)
+                if nm and stem not in ("page", "demo", "example") and not stem.endswith(("-demo", "-example")):
+                    demo = open(os.path.join(d, "src/demos", nm + ".tsx")).read()
+                    demo = re.sub(r"""(["'])@/registry/[^"']*/ui/""" + re.escape(nm) + r"\1", f'"{mod}"', demo)
+                    open(os.path.join(pd, "__demo.tsx"), "w").write(demo)
+                    open(os.path.join(pd, "entry-demo.tsx"), "w").write(ENTRY.format(main="./__demo"))
+                    entries.insert(0, os.path.join(pd, "entry-demo.tsx"))
+                jobsl.append({"key": p["key"], "dir": pd, "entries": entries}); dirs[p["key"]] = (pd, p)
+            if not jobsl:
+                continue
+            jf, rf = os.path.join(work, "jobs.json"), os.path.join(work, "results.json")
+            json.dump(jobsl, open(jf, "w"))
+            subprocess.run(["node", "render-bundle.mjs", jf, rf], cwd=d, timeout=900)
+            res = {r["key"]: r for r in json.load(open(rf))}
+            ok = [k for k in dirs if res.get(k, {}).get("ok")]
+            for k in dirs:
+                if k not in ok:
+                    r = res.get(k) or {}
+                    for mm in r.get("missing") or []:
+                        missing["/".join(mm.split("/")[:2]) if mm.startswith("@") else mm.split("/")[0]] += 1
+                    stats["bundle failed"] += 1; bad.write(json.dumps({"key": k, "why": "bundle", "missing": r.get("missing"), "error": r.get("error")}) + "\n")
+            if not ok:
+                continue
+            css = f"{os.path.basename(work)}/batch-{b0}.css"
+            src = "\n".join(f'@source "{dirs[k][0]}";' for k in ok) + f'\n@source "{os.path.join(d, "src/components/ui")}";\n'
+            # source(none): only this batch's parts and the ui are scanned, not every part drawn so far
+            open(os.path.join(work, f"batch-{b0}.in.css"), "w").write(THEME.replace('"tailwindcss";', '"tailwindcss" source(none);', 1) + src)
+            subprocess.run([os.path.join(d, "node_modules/.bin/tailwindcss"), "-i", os.path.join(work, f"batch-{b0}.in.css"), "-o", os.path.join(d, css)],
+                           cwd=d, capture_output=True, timeout=600)
+            for k in ok:
+                pd, p = dirs[k]
+                open(os.path.join(pd, "index.html"), "w").write(PAGE.format(wide=p["wide"], css=css))
+            sem = asyncio.Semaphore(jobs)
+
+            async def shoot(k):
+                pd, p = dirs[k]
+                async with sem:
+                    ctx = await browser.new_context(viewport={"width": 1280, "height": 960}, color_scheme="dark")
+                    pg = await ctx.new_page()
+                    try:
+                        await pg.goto("file://" + os.path.join(pd, "index.html"), wait_until="load", timeout=30000)
+                        await pg.wait_for_timeout(1600)
+                        info = await pg.evaluate(MEASURE)
+                        if info["picked"] and info["n"] and not info["box"]:  # sized by its parent (absolute, h-full): give it the screen
+                            await pg.evaluate("() => document.getElementById('root').setAttribute('style', 'width:100vw;height:100vh;display:flex;align-items:center;justify-content:center')")
+                            await pg.wait_for_timeout(700)
+                            info = await pg.evaluate(MEASURE)
+                        sampled = False
+                        if info["picked"] and not info["ink"]:  # it needs content: draw it again with sample text
+                            await pg.evaluate("(p) => window.__redraw && window.__redraw(p)", SAMPLE)
+                            await pg.wait_for_timeout(700)
+                            again = await pg.evaluate(MEASURE)
+                            if again["ink"]:
+                                info, sampled = again, True
+                        if not info["picked"] or not info["n"] or not info["box"]:
+                            why = ("threw: " + info["err"]) if info["err"] else "nothing exported" if not info["picked"] else "drew nothing"
+                            stats[why.split(":")[0]] += 1; bad.write(json.dumps({"key": k, "why": why[:200]}) + "\n"); return
+                        vw, vh = 1280, 960
+                        x0, y0, x1, y1 = info["ink"] or info["box"]
+                        if OVERLAY.search(p["name"]) or (x1 - x0) * (y1 - y0) < 420 * 220:
+                            t = pg.locator(TRIGGER).first
+                            try:
+                                if await t.count():
+                                    at = pg.url
+                                    await (t.hover(timeout=2500) if re.search(r"tooltip|hover", p["name"], re.I) else t.click(timeout=2500))
+                                    await pg.wait_for_timeout(900)
+                                    if pg.url != at:  # a link, not a trigger: back to the part as it was
+                                        await pg.goto(at, wait_until="load", timeout=30000); await pg.wait_for_timeout(1600)
+                                    again = await pg.evaluate(MEASURE)
+                                    if again["box"]:
+                                        info = again; x0, y0, x1, y1 = info["ink"] or info["box"]; stats["opened"] += 1
+                            except Exception:
+                                pass
+                        if x1 - x0 > 2.2 * (y1 - y0) and y1 - y0 < 420 and x1 - x0 > 860:  # a wide strip (a row of stats): lay it out 900 wide
+                            vw = 900
+                            await pg.set_viewport_size({"width": vw, "height": vh}); await pg.wait_for_timeout(500)
+                            again = await pg.evaluate(MEASURE)
+                            if again["box"]:
+                                info = again
+                            else:
+                                vw = 1280; await pg.set_viewport_size({"width": vw, "height": vh}); await pg.wait_for_timeout(500)
+                        clip = frame(info["ink"] or info["box"], vw, vh, p["wide"])
+                        png = await pg.screenshot(clip=clip)
+                        if os.environ.get("RENDER_DEBUG"):  # the whole screen beside the part, to see why it failed
+                            await pg.screenshot(path=os.path.join(pd, "debug.png")); json.dump({"info": info, "clip": clip}, open(os.path.join(pd, "debug.json"), "w"))
+                        if flat(png):
+                            stats["flat"] += 1; bad.write(json.dumps({"key": k, "why": "one flat colour"}) + "\n"); return
+                        save_webp(png, os.path.join(OUT, k + ".webp"))
+                        how = "shadcn demo" if res[k].get("used", "").endswith("entry-demo.tsx") else "sample text" if sampled else "alone"
+                        stats["drawn"] += 1; stats["drawn in a demo"] += how == "shadcn demo"
+                        done.write(json.dumps({"key": k, "how": how, "stubs": res[k].get("stubs") or [], "at": time.strftime("%Y-%m-%d %H:%M")}) + "\n")
+                    except Exception as e:
+                        stats["error"] += 1; bad.write(json.dumps({"key": k, "why": "page: " + str(e)[:160]}) + "\n")
+                    finally:
+                        await ctx.close()
+                        for f in ("out.js", "out.css"):  # its bundle is rebuilt on a rerun: ~16,000 would fill the disk
+                            if os.path.exists(os.path.join(pd, f)):
+                                os.remove(os.path.join(pd, f))
+
+            await asyncio.gather(*(shoot(k) for k in ok))
+            done.flush(); bad.flush()
+            n = min(b0 + batch, len(parts))
+            print(f"{n}/{len(parts)} · {dict(stats)} · {n / max(1, time.time() - t0) * 60:.0f}/min", flush=True)
+        await browser.close()
+    print("missing packages, commonest first:", missing.most_common(25), flush=True)
+
+
+def main():
+    ap = argparse.ArgumentParser()
+    ap.add_argument("cmd", nargs="?", choices=["setup", "run"])
+    ap.add_argument("dir", nargs="?")
+    ap.add_argument("--print-jsonl", action="store_true")
+    ap.add_argument("--jobs", type=int, default=8)
+    ap.add_argument("--batch", type=int, default=40)
+    ap.add_argument("--limit", type=int, default=0)
+    a = ap.parse_args()
+    if a.print_jsonl:
+        return print_jsonl()
+    d = os.path.abspath(a.dir or "")
+    if a.cmd == "setup":
+        return setup(d)
+    if a.cmd == "run":
+        parts = [json.loads(l) for l in sys.stdin if l.strip()]
+        parts = [p for p in parts if not any(os.path.exists(os.path.join(OUT, p["key"] + e)) for e in (".webp", ".svg"))]
+        if a.limit:
+            parts = parts[: a.limit]
+        print(f"{len(parts)} to draw", flush=True)
+        return asyncio.run(run(d, parts, a.jobs, a.batch))
+    ap.print_help()
+
+
+if __name__ == "__main__":
+    sys.exit(main())

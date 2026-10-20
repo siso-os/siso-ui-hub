@@ -181,7 +181,7 @@ def resolve_bank_row(row, libraries, lookup=None):
 
 
 def build_inventory(hub=HUB, foundry=None, bank=None, agent_base=None, site=None):
-    foundry = Path(foundry or os.environ.get("UIHUB_FOUNDRY", WORKSPACE / "Great_Library_of_SISO/foundry"))
+    foundry = Path(foundry or os.environ.get("UIHUB_FOUNDRY", HUB.parent.parent / "library/foundry"))
     bank = Path(bank or os.environ.get("UIHUB_COMPONENT_BANK") or
                 (WORKSPACE / "Great_Library_of_SISO/banks/siso-component-bank/index.jsonl" if (WORKSPACE / "Great_Library_of_SISO/banks/siso-component-bank/index.jsonl").exists() else WORKSPACE / "_data/ui-hub/bank/index.jsonl"))
     agent_base = Path(agent_base or WORKSPACE / "SISO_Agency/apps/siso-internal-labs/siso-internal-labs-agent-base")

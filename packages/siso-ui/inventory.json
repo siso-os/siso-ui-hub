@@ -1,0 +1,28 @@
+{
+  "package": "@siso/ui",
+  "version": "0.4.1",
+  "components": [],
+  "packages": [
+    "@siso/tokens",
+    "@siso/atoms",
+    "@siso/blocks",
+    "@siso/navigation",
+    "@siso/shells",
+    "@siso/widgets",
+    "@siso/charts",
+    "@siso/site",
+    "@siso/agent"
+  ],
+  "exports": [
+    "tokens",
+    "atoms",
+    "blocks",
+    "navigation",
+    "shells",
+    "widgets",
+    "charts",
+    "site",
+    "agent"
+  ],
+  "mechanism": "Namespace exports keep component names unambiguous; subpath imports load only the selected package."
+}

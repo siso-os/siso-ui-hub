@@ -1,0 +1,66 @@
+{
+  "source_repo": "sisodias/siso-faces-lab",
+  "source_pin": "a9da2cb1240a32e7f73348787f761a218d39ea19",
+  "status": "inactive-research-candidate",
+  "files": [
+    {
+      "path": "alive-polish/engine.js",
+      "blob": "0901d898f2d923039e32d087d8071b9a19826caa",
+      "bytes": 18899,
+      "sha256": "3de7aaec7dad4949bf4720b19205cf77be2ae6376e1a50f41474837f4fff6452",
+      "existing_main_paths": [],
+      "destination": "platform/ui/packages/siso-agent/research/faces-20261005/engine.js",
+      "destination_sha256": "3de7aaec7dad4949bf4720b19205cf77be2ae6376e1a50f41474837f4fff6452",
+      "adaptations": []
+    },
+    {
+      "path": "alive-polish/engine.css",
+      "blob": "cc236420d689a2e08cda58900f4c2866d65e49b5",
+      "bytes": 4015,
+      "sha256": "46fe829674b0605707b66effa23762e60e21151ff5e251c580b1cf616e247c9f",
+      "existing_main_paths": [],
+      "destination": "platform/ui/packages/siso-agent/research/faces-20261005/engine.css",
+      "destination_sha256": "46fe829674b0605707b66effa23762e60e21151ff5e251c580b1cf616e247c9f",
+      "adaptations": []
+    },
+    {
+      "path": "alive-react/AgentFace.tsx",
+      "blob": "a75adf2a5355c6b850134fcad6943896db09e7e5",
+      "bytes": 1758,
+      "sha256": "b87b767d4fd10d0fc480b93b5c8a4e03b2fd9b51c3367cc9d03c2cb6533266ef",
+      "existing_main_paths": [],
+      "destination": "platform/ui/packages/siso-agent/research/faces-20261005/AgentFace.tsx",
+      "destination_sha256": "a42f7f12217b58431665d4c9f1157adf0a0b67dbf6c9ed05ba326a576deec1f2",
+      "adaptations": [
+        "Bind adapter to the selected engine window.FaceMochi global; original adapter referenced absent window.AgentSoul."
+      ]
+    },
+    {
+      "path": "logos/agent-base.svg",
+      "blob": "dc842a6e90643af34ac823b80d616cec4d6a4647",
+      "bytes": 18775,
+      "sha256": "cf658c120617d8ac4bf8290a8caa4722c1d0b5a4c7abbb9cb69c20578532ed5b",
+      "existing_main_paths": [],
+      "destination": "platform/ui/packages/siso-agent/research/faces-20261005/agent-base.svg",
+      "destination_sha256": "cf658c120617d8ac4bf8290a8caa4722c1d0b5a4c7abbb9cb69c20578532ed5b",
+      "adaptations": []
+    },
+    {
+      "path": "logos/siso-agency.svg",
+      "blob": "a7adb6846323611d9e7e1fc47429c67853ed53b2",
+      "bytes": 18807,
+      "sha256": "38538cc3b5c7dd370114a7badb969e78f88b7f0c6e148cc7cd5d91796dbec7ec",
+      "existing_main_paths": [],
+      "destination": "platform/ui/packages/siso-agent/research/faces-20261005/siso-agency.svg",
+      "destination_sha256": "38538cc3b5c7dd370114a7badb969e78f88b7f0c6e148cc7cd5d91796dbec7ec",
+      "adaptations": []
+    }
+  ],
+  "excluded": [
+    "Every HALO logo/image/trace, halo-public.html and gallery bundling HALO assets.",
+    "Public HALO provenance does not override the current brief exclusion.",
+    "Mixed gallery.data.json, gallery HTML, earlier rounds, screenshots, generated fixtures, duplicated originals and private state."
+  ],
+  "runtime_adoption": false,
+  "user_artistic_acceptance": false
+}

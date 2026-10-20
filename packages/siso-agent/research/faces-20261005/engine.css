@@ -1,0 +1,25 @@
+.fm{display:inline-flex;flex:none;position:relative;vertical-align:middle;isolation:isolate;--joy:0;touch-action:manipulation}.fm svg{display:block;width:100%;height:100%;overflow:visible}.fm[role=button]{cursor:pointer;outline-offset:3px;border-radius:36%}.fm:focus-visible{outline:2px solid #aecfff}.fm-mouth,.fm-rest-eye,.fm-brow{fill:none;stroke:#26354c;stroke-width:3;stroke-linecap:round;stroke-linejoin:round}.fm-rest-eye,.fm-brow{display:none}.fm-signal>circle:first-child{fill:#a7b4c3;stroke:#eaf4ff;stroke-width:2}.fm-signal-glyph{fill:none;stroke:#203047;stroke-width:3;stroke-linecap:round;stroke-linejoin:round}.fm-dot{fill:#33445c}.fm[data-status=working] .fm-dot,.fm[data-status=done] .fm-dot,.fm[data-status=blocked] .fm-dot,.fm[data-status=needs-shaan] .fm-dot{display:none}.fm[data-status=working] .fm-signal-glyph{fill:#33445c;stroke-width:1}.fm[data-status=working] .fm-brow{display:block;transform:translateY(4px) rotate(-7deg)}.fm[data-status=working] .fm-lid{opacity:.93}.fm[data-status=needs-shaan] .fm-signal>circle:first-child{fill:#ffd08a;stroke:#fff0c6}.fm[data-status=blocked] .fm-signal>circle:first-child{fill:#ff8b90;stroke:#ffd2d5}.fm[data-status=blocked] .fm-brow{display:block;transform:rotate(-16deg)}.fm[data-status=blocked] .fm-eye:nth-child(2) .fm-brow{transform:rotate(16deg)}.fm[data-status=blocked] .fm-cheek{opacity:.22}.fm[data-status=done] .fm-lid,.fm[data-status=offline] .fm-lid,.fm[data-celebrating=true] .fm-lid{display:none}.fm[data-status=done] .fm-rest-eye,.fm[data-status=offline] .fm-rest-eye,.fm[data-celebrating=true] .fm-rest-eye{display:block}.fm[data-status=offline] .fm-rest-eye{transform:scale(1 -.5)}.fm[data-status=offline] .fm-body{filter:grayscale(1);opacity:.43}.fm[data-status=offline] .fm-signal{opacity:.5}.fm[data-status=offline] .fm-hand{opacity:.5}.fm-sparks{opacity:var(--joy)}.fm[data-small=true] .fm-gloss{stroke-width:5}.fm[data-small=true] .fm-cheek{display:none}.fm[data-small=true] .fm-signal>circle:first-child{stroke-width:4}.fm[data-small=true] .fm-signal-glyph{stroke-width:4}.fm[data-small=true] .fm-mouth{stroke-width:4}.fm[data-reduced=true] .fm-sparks{opacity:0!important}@media(prefers-reduced-motion:reduce){.fm-sparks{opacity:0!important}}
+
+.fm-body{transition:opacity .65s ease,filter .65s ease}.fm[data-reduced=true] .fm-body{transition:none}@media(prefers-reduced-motion:reduce){.fm-body{transition:none}}
+/* R2: porcelain volume; the whole silhouette carries an urgent fact. */
+.fm svg{overflow:hidden}
+.fm-fact-outline{stroke:transparent;stroke-width:6;stroke-linejoin:round}
+.fm[data-status=needs-shaan] .fm-fact-outline{stroke:#ffc25a}
+.fm[data-status=blocked] .fm-fact-outline{stroke:#ff687f}
+.fm[data-small=true] .fm-fact-outline{stroke-width:8}
+.fm[data-small=true] .fm-hand{display:none}
+.fm[data-small=true] .fm-signal{transform:translate(-5px,-4px)}
+.fm[data-small=true] .fm-signal>circle:first-child{stroke-width:2.5}
+.fm[data-small=true] .fm-signal-glyph{stroke-width:4.5}
+.fm[data-status=done] .fm-body{filter:grayscale(1)}
+.fm[data-status=done] .fm-rest-eye{transform:scale(1,-1)}
+.fm[data-celebrating=true] .fm-body{filter:none}
+.fm[data-celebrating=true] .fm-mouth{stroke-width:4;fill:#26354c;d:path('M71 102Q80 121 89 102Q80 105 71 102Z')}
+.fm[data-gesture=boop] .fm-mouth{d:path('M72 104Q80 114 88 104')}
+.fm[data-gesture=notice] .fm-mouth{d:path('M77 103Q80 99 83 103Q86 110 80 111Q74 110 77 103Z')}
+.fm[data-reduced=true] *, .fm[data-paused=true] *{animation:none!important;transition:none!important}
+@media(prefers-reduced-motion:reduce){.fm *{animation:none!important;transition:none!important}}
+.fm[data-status=waiting] .fm-signal,.fm[data-status=working] .fm-signal,.fm[data-status=offline] .fm-signal{display:none}
+.fm[data-delighted=true] .fm-lid{display:none}
+.fm[data-delighted=true] .fm-rest-eye{display:block;transform:scale(1,-1)}
+.fm[data-status=needs-shaan] .fm-drowse,.fm[data-status=blocked] .fm-drowse,.fm[data-gesture=notice] .fm-drowse,.fm[data-gesture=wake] .fm-drowse{display:none}

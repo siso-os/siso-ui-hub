@@ -1,0 +1,190 @@
+/* UI Hub source values, scoped so embedded frame examples retain their original theme. */
+.siso-source-frame.light {
+  /* the app's own colour (looks v7, the App Factory's): one hue and its second; the rim, the chosen row and the dots */
+  --app-rgb: 109 124 255;
+  --app-second: #38bdf8;
+  --siso-night: #070707;
+  --siso-bone: #eeebe4;
+  --siso-paper: #ecebe6;
+  --siso-paper-block: #e2e0da;
+  --siso-red: #FF5722;
+  --siso-orange: #FFA726;
+  --siso-orange-bright: #FFB44D;
+  --siso-on-brand: #1A1209;
+  --siso-cyan: #22D3EE;
+  --siso-canvas: #141514;
+  --siso-chrome: #1A1A1A;
+  --siso-surface: #202020;
+  --siso-text-muted: #9E9E9E;
+  --siso-white: #FFFFFF;
+  --siso-danger: #FB7185;
+  --siso-gradient-brand: linear-gradient(135deg, var(--siso-red), var(--siso-orange));
+  --siso-label-size: 11px;
+  --siso-label-tracking: 0.14em;
+  --siso-heading-tracking: -0.035em;
+  --siso-ease: cubic-bezier(0.2, 0.8, 0.2, 1);
+  --radius: 0.625rem;
+  --siso-radius-card: 14px;
+  --siso-radius-panel: 18px;
+
+  /* Light: paper. The frame is bone, the sheet a lifted paper, cards near white. */
+  --siso-frame: #e4e1da;
+  --background: #f3f2ee;
+  --foreground: var(--siso-night);
+  --card: #fbfaf7;
+  --card-foreground: var(--foreground);
+  --popover: #fbfaf7;
+  --popover-foreground: var(--foreground);
+  --primary: var(--siso-orange);
+  --primary-foreground: var(--siso-on-brand);
+  --secondary: var(--siso-paper-block);
+  --secondary-foreground: var(--foreground);
+  --muted: color-mix(in srgb, var(--siso-paper-block) 70%, var(--background));
+  --muted-foreground: color-mix(in srgb, var(--siso-night) 64%, var(--siso-paper));
+  --accent: color-mix(in srgb, var(--siso-orange) 12%, var(--background));
+  --accent-foreground: var(--foreground);
+  --destructive: color-mix(in srgb, var(--siso-danger) 55%, var(--siso-night));
+  --border: color-mix(in srgb, var(--siso-night) 11%, transparent);
+  --input: color-mix(in srgb, var(--siso-night) 18%, transparent);
+  --neon: var(--siso-orange);
+  /* Orange needs darker ink on paper to retain normal-text contrast. */
+  --neon-ink: color-mix(in srgb, var(--siso-red) 56%, var(--siso-night));
+  --ring: var(--neon-ink);
+  --sidebar: var(--siso-frame);
+  --sidebar-foreground: var(--foreground);
+  --sidebar-primary: var(--neon-ink);
+  --sidebar-primary-foreground: var(--siso-white);
+  --sidebar-accent: color-mix(in srgb, var(--siso-night) 6%, var(--sidebar));
+  --sidebar-accent-foreground: var(--neon-ink);
+  --sidebar-border: var(--border);
+  --sidebar-ring: var(--ring);
+  /* depth: light from above, a soft fall below */
+  --siso-lift: inset 0 1px 0 rgb(255 255 255 / 0.7), 0 1px 2px rgb(20 18 12 / 0.06), 0 8px 24px -14px rgb(20 18 12 / 0.18);
+  --siso-lift-hover: inset 0 1px 0 rgb(255 255 255 / 0.7), 0 2px 4px rgb(20 18 12 / 0.06), 0 22px 44px -20px rgb(255 87 34 / 0.32);
+  --siso-glow: 0 0 0 3px rgb(255 167 38 / 0.16), 0 8px 26px -10px rgb(255 120 30 / 0.55);
+  --siso-rim-fill: var(--card);
+  --siso-rim-rest: linear-gradient(135deg, color-mix(in srgb, var(--siso-orange) 55%, transparent), var(--border) 45%, color-mix(in srgb, var(--siso-red) 40%, transparent));
+  --siso-nav-active: linear-gradient(180deg, color-mix(in srgb, var(--siso-orange) 16%, var(--sidebar)), color-mix(in srgb, var(--siso-red) 9%, var(--sidebar)));
+  --siso-topbar-line: linear-gradient(90deg, color-mix(in srgb, var(--siso-orange) 35%, transparent), color-mix(in srgb, var(--siso-red) 18%, transparent) 35%, transparent 70%);
+  --siso-sheet-glow: radial-gradient(closest-side, rgb(255 140 40 / 0.10), transparent 72%);
+}
+.siso-source-frame.dark {
+  /* the app's own colour (looks v7, the App Factory's): one hue and its second; the rim, the chosen row and the dots */
+  --app-rgb: 109 124 255;
+  --app-second: #38bdf8;
+  --siso-night: #070707;
+  --siso-bone: #eeebe4;
+  --siso-paper: #ecebe6;
+  --siso-paper-block: #e2e0da;
+  --siso-red: #FF5722;
+  --siso-orange: #FFA726;
+  --siso-orange-bright: #FFB44D;
+  --siso-on-brand: #1A1209;
+  --siso-cyan: #22D3EE;
+  --siso-canvas: #141514;
+  --siso-chrome: #1A1A1A;
+  --siso-surface: #202020;
+  --siso-text-muted: #9E9E9E;
+  --siso-white: #FFFFFF;
+  --siso-danger: #FB7185;
+  --siso-gradient-brand: linear-gradient(135deg, var(--siso-red), var(--siso-orange));
+  --siso-label-size: 11px;
+  --siso-label-tracking: 0.14em;
+  --siso-heading-tracking: -0.035em;
+  --siso-ease: cubic-bezier(0.2, 0.8, 0.2, 1);
+  --radius: 0.625rem;
+  --siso-radius-card: 14px;
+  --siso-radius-panel: 18px;
+
+  /* Light: paper. The frame is bone, the sheet a lifted paper, cards near white. */
+  --siso-frame: #e4e1da;
+  --background: #f3f2ee;
+  --foreground: var(--siso-night);
+  --card: #fbfaf7;
+  --card-foreground: var(--foreground);
+  --popover: #fbfaf7;
+  --popover-foreground: var(--foreground);
+  --primary: var(--siso-orange);
+  --primary-foreground: var(--siso-on-brand);
+  --secondary: var(--siso-paper-block);
+  --secondary-foreground: var(--foreground);
+  --muted: color-mix(in srgb, var(--siso-paper-block) 70%, var(--background));
+  --muted-foreground: color-mix(in srgb, var(--siso-night) 64%, var(--siso-paper));
+  --accent: color-mix(in srgb, var(--siso-orange) 12%, var(--background));
+  --accent-foreground: var(--foreground);
+  --destructive: color-mix(in srgb, var(--siso-danger) 55%, var(--siso-night));
+  --border: color-mix(in srgb, var(--siso-night) 11%, transparent);
+  --input: color-mix(in srgb, var(--siso-night) 18%, transparent);
+  --neon: var(--siso-orange);
+  /* Orange needs darker ink on paper to retain normal-text contrast. */
+  --neon-ink: color-mix(in srgb, var(--siso-red) 56%, var(--siso-night));
+  --ring: var(--neon-ink);
+  --sidebar: var(--siso-frame);
+  --sidebar-foreground: var(--foreground);
+  --sidebar-primary: var(--neon-ink);
+  --sidebar-primary-foreground: var(--siso-white);
+  --sidebar-accent: color-mix(in srgb, var(--siso-night) 6%, var(--sidebar));
+  --sidebar-accent-foreground: var(--neon-ink);
+  --sidebar-border: var(--border);
+  --sidebar-ring: var(--ring);
+  /* depth: light from above, a soft fall below */
+  --siso-lift: inset 0 1px 0 rgb(255 255 255 / 0.7), 0 1px 2px rgb(20 18 12 / 0.06), 0 8px 24px -14px rgb(20 18 12 / 0.18);
+  --siso-lift-hover: inset 0 1px 0 rgb(255 255 255 / 0.7), 0 2px 4px rgb(20 18 12 / 0.06), 0 22px 44px -20px rgb(255 87 34 / 0.32);
+  --siso-glow: 0 0 0 3px rgb(255 167 38 / 0.16), 0 8px 26px -10px rgb(255 120 30 / 0.55);
+  --siso-rim-fill: var(--card);
+  --siso-rim-rest: linear-gradient(135deg, color-mix(in srgb, var(--siso-orange) 55%, transparent), var(--border) 45%, color-mix(in srgb, var(--siso-red) 40%, transparent));
+  --siso-nav-active: linear-gradient(180deg, color-mix(in srgb, var(--siso-orange) 16%, var(--sidebar)), color-mix(in srgb, var(--siso-red) 9%, var(--sidebar)));
+  --siso-topbar-line: linear-gradient(90deg, color-mix(in srgb, var(--siso-orange) 35%, transparent), color-mix(in srgb, var(--siso-red) 18%, transparent) 35%, transparent 70%);
+  --siso-sheet-glow: radial-gradient(closest-side, rgb(255 140 40 / 0.10), transparent 72%);
+
+  /* Agent Base: chrome rgb(13 14 13), surface #171715, raised #20201e, rim fill #1b1b19, text #ecece8 / #9e9e98.
+     SISO's surface ladder (Shaan, 10 Oct: "feels too black … we gotta figure out what our standard stuff is"): one rule
+     for light and dark, the nearer a surface the lighter it is. The floor (side nav and top bar) is the darkest, the box
+     is SISO grey, cards sit a step above the box. Light already did this; dark had the box darker than its frame. */
+  --siso-frame: #111211;
+  --background: #1b1b19;
+  --foreground: #ecece8;
+  --card: #232321;
+  --card-foreground: var(--foreground);
+  --popover: rgb(37 37 35 / 0.94);
+  --popover-foreground: var(--foreground);
+  --primary: var(--siso-orange);
+  --primary-foreground: var(--siso-on-brand);
+  --secondary: #2c2c29;
+  --secondary-foreground: var(--foreground);
+  --muted: #20201e;
+  --muted-foreground: #9e9e98;
+  --accent: rgb(255 167 38 / 0.08);
+  --accent-foreground: var(--foreground);
+  --destructive: var(--siso-danger);
+  --border: rgb(255 255 255 / 0.08);
+  --input: rgb(255 255 255 / 0.12);
+  --neon-ink: var(--siso-orange-bright);
+  --ring: var(--siso-orange);
+  --sidebar: var(--siso-frame);
+  --sidebar-foreground: var(--foreground);
+  --sidebar-primary: var(--siso-orange);
+  --sidebar-primary-foreground: var(--siso-on-brand);
+  --sidebar-accent: rgb(255 255 255 / 0.045);
+  --sidebar-accent-foreground: var(--siso-orange-bright);
+  --sidebar-border: var(--border);
+  --sidebar-ring: var(--ring);
+  --siso-lift: inset 0 1px 0 rgb(255 255 255 / 0.04), 0 1px 0 rgb(0 0 0 / 0.4), 0 14px 34px -20px rgb(0 0 0 / 0.9);
+  --siso-lift-hover: inset 0 1px 0 rgb(255 255 255 / 0.05), 0 18px 44px -18px rgb(0 0 0 / 0.95), 0 14px 44px -16px rgb(255 140 40 / 0.38);
+  --siso-glow: 0 0 0 3px rgb(255 167 38 / 0.14), 0 8px 26px -8px rgb(255 167 38 / 0.6);
+  --siso-rim-fill: #1b1b19;
+  --siso-rim-rest: linear-gradient(135deg, color-mix(in srgb, var(--siso-orange) 50%, #333), #2c2c2a 42%, color-mix(in srgb, var(--siso-red) 35%, #2c2c2a));
+  --siso-nav-active: linear-gradient(180deg, rgb(255 167 38 / 0.13), rgb(255 87 34 / 0.06));
+  --siso-sheet-glow: radial-gradient(closest-side, rgb(255 140 40 / 0.075), transparent 72%);
+}
+/* Tailwind preflight used by the source apps, scoped to their shell/nav roots. */
+@layer base {
+  :is(.siso-source-frame,.siso-hub-nav,.siso-app,.siso-sidebar) *,
+  :is(.siso-source-frame,.siso-hub-nav,.siso-app,.siso-sidebar) ::before,
+  :is(.siso-source-frame,.siso-hub-nav,.siso-app,.siso-sidebar) ::after { box-sizing:border-box; border:0 solid var(--border); }
+  :is(.siso-source-frame,.siso-hub-nav,.siso-app,.siso-sidebar) :is(button,input,select,textarea) { font:inherit; color:inherit; letter-spacing:inherit; background:transparent; border-radius:0; margin:0; padding:0; }
+  :is(.siso-source-frame,.siso-hub-nav,.siso-app,.siso-sidebar) :is(h1,h2,h3,h4,h5,h6,p,ul,ol,figure) { margin:0; }
+  :is(.siso-source-frame,.siso-hub-nav,.siso-app,.siso-sidebar) :is(ul,ol) { padding:0; list-style:none; }
+  :is(.siso-source-frame,.siso-hub-nav,.siso-app,.siso-sidebar) a { color:inherit; text-decoration:inherit; }
+  :is(.siso-source-frame,.siso-hub-nav,.siso-app,.siso-sidebar) :is(svg,img) { display:block; vertical-align:middle; }
+}

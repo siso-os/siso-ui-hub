@@ -1,0 +1,2347 @@
+{
+  "package": "@siso/charts",
+  "version": "0.4.1",
+  "familyCount": 27,
+  "components": [
+    {
+      "family": "streamgraph",
+      "exports": [
+        "Streamgraph"
+      ],
+      "variants": [
+        "stacked flowing series",
+        "source hover and motion"
+      ]
+    },
+    {
+      "family": "brush-chart",
+      "exports": [
+        "BrushChart"
+      ],
+      "variants": [
+        "range brushing",
+        "source selection and keyboard"
+      ]
+    },
+    {
+      "family": "ridgeline",
+      "exports": [
+        "Ridgeline"
+      ],
+      "variants": [
+        "multiple distributions",
+        "source focus and motion"
+      ]
+    },
+    {
+      "family": "area",
+      "exports": [
+        "SisoArea",
+        "SisoAreaChart"
+      ],
+      "variants": [
+        "five curves",
+        "gradient/solid/pattern",
+        "stacked/expanded",
+        "seven palettes"
+      ]
+    },
+    {
+      "family": "bars",
+      "exports": [
+        "SisoBars",
+        "SisoBarChart",
+        "SisoCompactBars",
+        "SisoInteractiveBars",
+        "ArcBars"
+      ],
+      "variants": [
+        "vertical/horizontal",
+        "grouped/stacked",
+        "slim",
+        "six fills"
+      ]
+    },
+    {
+      "family": "line",
+      "exports": [
+        "SisoLine",
+        "SisoLineChart",
+        "SisoMultiLine",
+        "SisoInteractiveLine",
+        "ArcLine"
+      ],
+      "variants": [
+        "five curves",
+        "solid/dashed",
+        "comparison",
+        "missing points"
+      ]
+    },
+    {
+      "family": "pie-donut",
+      "exports": [
+        "SisoDonut",
+        "SisoPieChart",
+        "SisoDonutChart",
+        "SisoRadialSlices",
+        "SisoInteractiveDonut",
+        "ArcDonut"
+      ],
+      "variants": [
+        "pie/donut",
+        "hole ratio",
+        "custom colors"
+      ]
+    },
+    {
+      "family": "radial",
+      "exports": [
+        "SisoRadial",
+        "SisoRadialChart",
+        "SisoGoalRing"
+      ],
+      "variants": [
+        "progress",
+        "goal/actual",
+        "multiple rings"
+      ]
+    },
+    {
+      "family": "radar",
+      "exports": [
+        "SisoRadar",
+        "SisoRadarChart"
+      ],
+      "variants": [
+        "multiple series",
+        "fill/pattern"
+      ]
+    },
+    {
+      "family": "composed",
+      "exports": [
+        "SisoComposedChart"
+      ],
+      "variants": [
+        "bar/line/area combination"
+      ]
+    },
+    {
+      "family": "sankey",
+      "exports": [
+        "SisoSankeyChart"
+      ],
+      "variants": [
+        "weighted nodes and links"
+      ]
+    },
+    {
+      "family": "scatter-bubble",
+      "exports": [
+        "SisoScatter"
+      ],
+      "variants": [
+        "scatter/bubble",
+        "quadrant lines",
+        "controlled point selection"
+      ]
+    },
+    {
+      "family": "waterfall",
+      "exports": [
+        "SisoWaterfall"
+      ],
+      "variants": [
+        "signed deltas",
+        "explicit total checkpoints"
+      ]
+    },
+    {
+      "family": "candlestick-ohlc",
+      "exports": [
+        "SisoCandlestick"
+      ],
+      "variants": [
+        "filled",
+        "hollow",
+        "OHLC ticks"
+      ]
+    },
+    {
+      "family": "box-plot",
+      "exports": [
+        "SisoBoxPlot"
+      ],
+      "variants": [
+        "quartiles",
+        "caller-supplied whiskers",
+        "outliers"
+      ]
+    },
+    {
+      "family": "treemap",
+      "exports": [
+        "SisoTreemap",
+        "SisoInteractiveTreemap"
+      ],
+      "variants": [
+        "source hierarchy drill/zoom",
+        "morphing tiles",
+        "flat data adapter"
+      ]
+    },
+    {
+      "family": "cohort",
+      "exports": [
+        "SisoCohortHeatmap"
+      ],
+      "variants": [
+        "retention by cohort age",
+        "missing observations"
+      ]
+    },
+    {
+      "family": "bullet",
+      "exports": [
+        "SisoBulletChart"
+      ],
+      "variants": [
+        "target",
+        "qualitative ranges",
+        "explicit clipping"
+      ]
+    },
+    {
+      "family": "waffle",
+      "exports": [
+        "SisoWaffleChart",
+        "SisoInteractiveWaffle"
+      ],
+      "variants": [
+        "configurable cells/columns",
+        "exact allocation"
+      ]
+    },
+    {
+      "family": "slope",
+      "exports": [
+        "SisoSlopeChart",
+        "SisoInteractiveSlope"
+      ],
+      "variants": [
+        "before/after",
+        "signed values"
+      ]
+    },
+    {
+      "family": "calendar-heatmap",
+      "exports": [
+        "SisoContributionHeatmap",
+        "SisoInteractiveHeatmap",
+        "ArcHeatmap"
+      ],
+      "variants": [
+        "UTC date range",
+        "missing-date gaps"
+      ]
+    },
+    {
+      "family": "matrix-heatmap",
+      "exports": [
+        "SisoMatrixHeatmap"
+      ],
+      "variants": [
+        "red/amber/blue",
+        "row/column data",
+        "keyboard cells"
+      ]
+    },
+    {
+      "family": "funnel",
+      "exports": [
+        "SisoFunnel"
+      ],
+      "variants": [
+        "stage proportions",
+        "drop-off",
+        "keyboard detail"
+      ]
+    },
+    {
+      "family": "range",
+      "exports": [
+        "SisoRangeArea"
+      ],
+      "variants": [
+        "low/high interval",
+        "optional midpoint"
+      ]
+    },
+    {
+      "family": "trend",
+      "exports": [
+        "SisoTrendCard"
+      ],
+      "variants": [
+        "current/baseline",
+        "up/down/neutral"
+      ]
+    },
+    {
+      "family": "sparkline",
+      "exports": [
+        "SisoSparkline",
+        "SisoInteractiveSparkline",
+        "ArcSparkline"
+      ],
+      "variants": [
+        "compact signed series"
+      ]
+    },
+    {
+      "family": "gauge",
+      "exports": [
+        "SisoGauge",
+        "SisoInteractiveGauge",
+        "ArcGauge"
+      ],
+      "variants": [
+        "bounded value and target"
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "id": "grid-bar-chart",
+      "export": "PresetGridBarChart",
+      "family": "bar",
+      "title": "Grid bar chart",
+      "source": "app/src/kit/evilcharts/blocks/recharts/b-grid-bar-chart.tsx",
+      "engine": "recharts"
+    },
+    {
+      "id": "hover-trace-bar-chart",
+      "export": "PresetHoverTraceBarChart",
+      "family": "bar",
+      "title": "Hover trace bar chart",
+      "source": "app/src/kit/evilcharts/blocks/recharts/b-hover-trace-bar-chart.tsx",
+      "engine": "recharts"
+    },
+    {
+      "id": "isometric-bar-chart",
+      "export": "PresetIsometricBarChart",
+      "family": "bar",
+      "title": "Isometric bar chart",
+      "source": "app/src/kit/evilcharts/blocks/recharts/b-isometric-bar-chart.tsx",
+      "engine": "recharts"
+    },
+    {
+      "id": "monospace-bar-chart",
+      "export": "PresetMonospaceBarChart",
+      "family": "bar",
+      "title": "Monospace bar chart",
+      "source": "app/src/kit/evilcharts/blocks/recharts/b-monospace-bar-chart.tsx",
+      "engine": "recharts"
+    },
+    {
+      "id": "animated-dashed-stroke-area-chart",
+      "export": "PresetAnimatedDashedStrokeAreaChart",
+      "family": "area",
+      "title": "Animated dashed stroke area chart",
+      "source": "app/src/kit/evilcharts/examples/recharts/ex-animated-dashed-stroke-area-chart.tsx",
+      "engine": "recharts"
+    },
+    {
+      "id": "animated-dashed-stroke-composed-chart",
+      "export": "PresetAnimatedDashedStrokeComposedChart",
+      "family": "composed",
+      "title": "Animated dashed stroke composed chart",
+      "source": "app/src/kit/evilcharts/examples/recharts/ex-animated-dashed-stroke-composed-chart.tsx",
+      "engine": "recharts"
+    },
+    {
+      "id": "animated-dashed-stroke-line-chart",
+      "export": "PresetAnimatedDashedStrokeLineChart",
+      "family": "line",
+      "title": "Animated dashed stroke line chart",
+      "source": "app/src/kit/evilcharts/examples/recharts/ex-animated-dashed-stroke-line-chart.tsx",
+      "engine": "recharts"
+    },
+    {
+      "id": "area-chart",
+      "export": "PresetAreaChart",
+      "family": "area",
+      "title": "Area chart",
+      "source": "app/src/kit/evilcharts/examples/recharts/ex-area-chart.tsx",
+      "engine": "recharts"
+    },
+    {
+      "id": "bar-chart",
+      "export": "PresetBarChart",
+      "family": "bar",
+      "title": "Bar chart",
+      "source": "app/src/kit/evilcharts/examples/recharts/ex-bar-chart.tsx",
+      "engine": "recharts"
+    },
+    {
+      "id": "bg-4-pointed-star-line-chart",
+      "export": "PresetBg4PointedStarLineChart",
+      "family": "line",
+      "title": "Bg 4 pointed star line chart",
+      "source": "app/src/kit/evilcharts/examples/recharts/ex-bg-4-pointed-star-line-chart.tsx",
+      "engine": "recharts"
+    },
+    {
+      "id": "bg-bubbles-line-chart",
+      "export": "PresetBgBubblesLineChart",
+      "family": "line",
+      "title": "Bg bubbles line chart",
+      "source": "app/src/kit/evilcharts/examples/recharts/ex-bg-bubbles-line-chart.tsx",
+      "engine": "recharts"
+    },
+    {
+      "id": "bg-cross-hatch-line-chart",
+      "export": "PresetBgCrossHatchLineChart",
+      "family": "line",
+      "title": "Bg cross hatch line chart",
+      "source": "app/src/kit/evilcharts/examples/recharts/ex-bg-cross-hatch-line-chart.tsx",
+      "engine": "recharts"
+    },
+    {
+      "id": "bg-diagonal-lines-line-chart",
+      "export": "PresetBgDiagonalLinesLineChart",
+      "family": "line",
+      "title": "Bg diagonal lines line chart",
+      "source": "app/src/kit/evilcharts/examples/recharts/ex-bg-diagonal-lines-line-chart.tsx",
+      "engine": "recharts"
+    },
+    {
+      "id": "bg-dots-line-chart",
+      "export": "PresetBgDotsLineChart",
+      "family": "line",
+      "title": "Bg dots line chart",
+      "source": "app/src/kit/evilcharts/examples/recharts/ex-bg-dots-line-chart.tsx",
+      "engine": "recharts"
+    },
+    {
+      "id": "bg-falling-triangles-line-chart",
+      "export": "PresetBgFallingTrianglesLineChart",
+      "family": "line",
+      "title": "Bg falling triangles line chart",
+      "source": "app/src/kit/evilcharts/examples/recharts/ex-bg-falling-triangles-line-chart.tsx",
+      "engine": "recharts"
+    },
+    {
+      "id": "bg-grid-line-chart",
+      "export": "PresetBgGridLineChart",
+      "family": "line",
+      "title": "Bg grid line chart",
+      "source": "app/src/kit/evilcharts/examples/recharts/ex-bg-grid-line-chart.tsx",
+      "engine": "recharts"
+    },
+    {
+      "id": "bg-overlapping-circles-line-chart",
+      "export": "PresetBgOverlappingCirclesLineChart",
+      "family": "line",
+      "title": "Bg overlapping circles line chart",
+      "source": "app/src/kit/evilcharts/examples/recharts/ex-bg-overlapping-circles-line-chart.tsx",
+      "engine": "recharts"
+    },
+    {
+      "id": "bg-plus-line-chart",
+      "export": "PresetBgPlusLineChart",
+      "family": "line",
+      "title": "Bg plus line chart",
+      "source": "app/src/kit/evilcharts/examples/recharts/ex-bg-plus-line-chart.tsx",
+      "engine": "recharts"
+    },
+    {
+      "id": "bg-tiny-checkers-line-chart",
+      "export": "PresetBgTinyCheckersLineChart",
+      "family": "line",
+      "title": "Bg tiny checkers line chart",
+      "source": "app/src/kit/evilcharts/examples/recharts/ex-bg-tiny-checkers-line-chart.tsx",
+      "engine": "recharts"
+    },
+    {
+      "id": "bg-wiggle-lines-line-chart",
+      "export": "PresetBgWiggleLinesLineChart",
+      "family": "line",
+      "title": "Bg wiggle lines line chart",
+      "source": "app/src/kit/evilcharts/examples/recharts/ex-bg-wiggle-lines-line-chart.tsx",
+      "engine": "recharts"
+    },
+    {
+      "id": "brush-area-chart",
+      "export": "PresetBrushAreaChart",
+      "family": "area",
+      "title": "Brush area chart",
+      "source": "app/src/kit/evilcharts/examples/recharts/ex-brush-area-chart.tsx",
+      "engine": "recharts"
+    },
+    {
+      "id": "buffer-bar-chart",
+      "export": "PresetBufferBarChart",
+      "family": "bar",
+      "title": "Buffer bar chart",
+      "source": "app/src/kit/evilcharts/examples/recharts/ex-buffer-bar-chart.tsx",
+      "engine": "recharts"
+    },
+    {
+      "id": "buffer-line-chart",
+      "export": "PresetBufferLineChart",
+      "family": "line",
+      "title": "Buffer line chart",
+      "source": "app/src/kit/evilcharts/examples/recharts/ex-buffer-line-chart.tsx",
+      "engine": "recharts"
+    },
+    {
+      "id": "bump-curve-composed-chart",
+      "export": "PresetBumpCurveComposedChart",
+      "family": "composed",
+      "title": "Bump curve composed chart",
+      "source": "app/src/kit/evilcharts/examples/recharts/ex-bump-curve-composed-chart.tsx",
+      "engine": "recharts"
+    },
+    {
+      "id": "bump-curve-type-area-chart",
+      "export": "PresetBumpCurveTypeAreaChart",
+      "family": "area",
+      "title": "Bump curve type area chart",
+      "source": "app/src/kit/evilcharts/examples/recharts/ex-bump-curve-type-area-chart.tsx",
+      "engine": "recharts"
+    },
+    {
+      "id": "bump-curve-type-line-chart",
+      "export": "PresetBumpCurveTypeLineChart",
+      "family": "line",
+      "title": "Bump curve type line chart",
+      "source": "app/src/kit/evilcharts/examples/recharts/ex-bump-curve-type-line-chart.tsx",
+      "engine": "recharts"
+    },
+    {
+      "id": "chart-config-default-bar-chart",
+      "export": "PresetChartConfigDefaultBarChart",
+      "family": "bar",
+      "title": "Chart config default bar chart",
+      "source": "app/src/kit/evilcharts/examples/recharts/ex-chart-config-default-bar-chart.tsx",
+      "engine": "recharts"
+    },
+    {
+      "id": "chart-config-icons-bar-chart",
+      "export": "PresetChartConfigIconsBarChart",
+      "family": "bar",
+      "title": "Chart config icons bar chart",
+      "source": "app/src/kit/evilcharts/examples/recharts/ex-chart-config-icons-bar-chart.tsx",
+      "engine": "recharts"
+    },
+    {
+      "id": "circle-grid-radar-chart",
+      "export": "PresetCircleGridRadarChart",
+      "family": "radar",
+      "title": "Circle grid radar chart",
+      "source": "app/src/kit/evilcharts/examples/recharts/ex-circle-grid-radar-chart.tsx",
+      "engine": "recharts"
+    },
+    {
+      "id": "composed-chart",
+      "export": "PresetComposedChart",
+      "family": "composed",
+      "title": "Composed chart",
+      "source": "app/src/kit/evilcharts/examples/recharts/ex-composed-chart.tsx",
+      "engine": "recharts"
+    },
+    {
+      "id": "dashed-stroke-area-chart",
+      "export": "PresetDashedStrokeAreaChart",
+      "family": "area",
+      "title": "Dashed stroke area chart",
+      "source": "app/src/kit/evilcharts/examples/recharts/ex-dashed-stroke-area-chart.tsx",
+      "engine": "recharts"
+    },
+    {
+      "id": "dashed-stroke-composed-chart",
+      "export": "PresetDashedStrokeComposedChart",
+      "family": "composed",
+      "title": "Dashed stroke composed chart",
+      "source": "app/src/kit/evilcharts/examples/recharts/ex-dashed-stroke-composed-chart.tsx",
+      "engine": "recharts"
+    },
+    {
+      "id": "dashed-stroke-line-chart",
+      "export": "PresetDashedStrokeLineChart",
+      "family": "line",
+      "title": "Dashed stroke line chart",
+      "source": "app/src/kit/evilcharts/examples/recharts/ex-dashed-stroke-line-chart.tsx",
+      "engine": "recharts"
+    },
+    {
+      "id": "default-type-area-chart",
+      "export": "PresetDefaultTypeAreaChart",
+      "family": "area",
+      "title": "Default type area chart",
+      "source": "app/src/kit/evilcharts/examples/recharts/ex-default-type-area-chart.tsx",
+      "engine": "recharts"
+    },
+    {
+      "id": "default-variant-bar-chart",
+      "export": "PresetDefaultVariantBarChart",
+      "family": "bar",
+      "title": "Default variant bar chart",
+      "source": "app/src/kit/evilcharts/examples/recharts/ex-default-variant-bar-chart.tsx",
+      "engine": "recharts"
+    },
+    {
+      "id": "donut-pie-chart",
+      "export": "PresetDonutPieChart",
+      "family": "pie",
+      "title": "Donut pie chart",
+      "source": "app/src/kit/evilcharts/examples/recharts/ex-donut-pie-chart.tsx",
+      "engine": "recharts"
+    },
+    {
+      "id": "dot-border-line-chart",
+      "export": "PresetDotBorderLineChart",
+      "family": "line",
+      "title": "Dot border line chart",
+      "source": "app/src/kit/evilcharts/examples/recharts/ex-dot-border-line-chart.tsx",
+      "engine": "recharts"
+    },
+    {
+      "id": "dot-colored-border-line-chart",
+      "export": "PresetDotColoredBorderLineChart",
+      "family": "line",
+      "title": "Dot colored border line chart",
+      "source": "app/src/kit/evilcharts/examples/recharts/ex-dot-colored-border-line-chart.tsx",
+      "engine": "recharts"
+    },
+    {
+      "id": "dot-default-line-chart",
+      "export": "PresetDotDefaultLineChart",
+      "family": "line",
+      "title": "Dot default line chart",
+      "source": "app/src/kit/evilcharts/examples/recharts/ex-dot-default-line-chart.tsx",
+      "engine": "recharts"
+    },
+    {
+      "id": "dots-composed-chart",
+      "export": "PresetDotsComposedChart",
+      "family": "composed",
+      "title": "Dots composed chart",
+      "source": "app/src/kit/evilcharts/examples/recharts/ex-dots-composed-chart.tsx",
+      "engine": "recharts"
+    },
+    {
+      "id": "dotted-area-variant-area-chart",
+      "export": "PresetDottedAreaVariantAreaChart",
+      "family": "area",
+      "title": "Dotted area variant area chart",
+      "source": "app/src/kit/evilcharts/examples/recharts/ex-dotted-area-variant-area-chart.tsx",
+      "engine": "recharts"
+    },
+    {
+      "id": "duotone-reverse-variant-bar-chart",
+      "export": "PresetDuotoneReverseVariantBarChart",
+      "family": "bar",
+      "title": "Duotone reverse variant bar chart",
+      "source": "app/src/kit/evilcharts/examples/recharts/ex-duotone-reverse-variant-bar-chart.tsx",
+      "engine": "recharts"
+    },
+    {
+      "id": "duotone-variant-bar-chart",
+      "export": "PresetDuotoneVariantBarChart",
+      "family": "bar",
+      "title": "Duotone variant bar chart",
+      "source": "app/src/kit/evilcharts/examples/recharts/ex-duotone-variant-bar-chart.tsx",
+      "engine": "recharts"
+    },
+    {
+      "id": "duotone-variant-composed-chart",
+      "export": "PresetDuotoneVariantComposedChart",
+      "family": "composed",
+      "title": "Duotone variant composed chart",
+      "source": "app/src/kit/evilcharts/examples/recharts/ex-duotone-variant-composed-chart.tsx",
+      "engine": "recharts"
+    },
+    {
+      "id": "expanded-type-area-chart",
+      "export": "PresetExpandedTypeAreaChart",
+      "family": "area",
+      "title": "Expanded type area chart",
+      "source": "app/src/kit/evilcharts/examples/recharts/ex-expanded-type-area-chart.tsx",
+      "engine": "recharts"
+    },
+    {
+      "id": "glowing-composed-chart",
+      "export": "PresetGlowingComposedChart",
+      "family": "composed",
+      "title": "Glowing composed chart",
+      "source": "app/src/kit/evilcharts/examples/recharts/ex-glowing-composed-chart.tsx",
+      "engine": "recharts"
+    },
+    {
+      "id": "glowing-desktop-bar-chart",
+      "export": "PresetGlowingDesktopBarChart",
+      "family": "bar",
+      "title": "Glowing desktop bar chart",
+      "source": "app/src/kit/evilcharts/examples/recharts/ex-glowing-desktop-bar-chart.tsx",
+      "engine": "recharts"
+    },
+    {
+      "id": "glowing-desktop-line-chart",
+      "export": "PresetGlowingDesktopLineChart",
+      "family": "line",
+      "title": "Glowing desktop line chart",
+      "source": "app/src/kit/evilcharts/examples/recharts/ex-glowing-desktop-line-chart.tsx",
+      "engine": "recharts"
+    },
+    {
+      "id": "glowing-mobile-bar-chart",
+      "export": "PresetGlowingMobileBarChart",
+      "family": "bar",
+      "title": "Glowing mobile bar chart",
+      "source": "app/src/kit/evilcharts/examples/recharts/ex-glowing-mobile-bar-chart.tsx",
+      "engine": "recharts"
+    },
+    {
+      "id": "glowing-mobile-line-chart",
+      "export": "PresetGlowingMobileLineChart",
+      "family": "line",
+      "title": "Glowing mobile line chart",
+      "source": "app/src/kit/evilcharts/examples/recharts/ex-glowing-mobile-line-chart.tsx",
+      "engine": "recharts"
+    },
+    {
+      "id": "glowing-pie-chart",
+      "export": "PresetGlowingPieChart",
+      "family": "pie",
+      "title": "Glowing pie chart",
+      "source": "app/src/kit/evilcharts/examples/recharts/ex-glowing-pie-chart.tsx",
+      "engine": "recharts"
+    },
+    {
+      "id": "glowing-radar-chart",
+      "export": "PresetGlowingRadarChart",
+      "family": "radar",
+      "title": "Glowing radar chart",
+      "source": "app/src/kit/evilcharts/examples/recharts/ex-glowing-radar-chart.tsx",
+      "engine": "recharts"
+    },
+    {
+      "id": "gradient-area-variant-area-chart",
+      "export": "PresetGradientAreaVariantAreaChart",
+      "family": "area",
+      "title": "Gradient area variant area chart",
+      "source": "app/src/kit/evilcharts/examples/recharts/ex-gradient-area-variant-area-chart.tsx",
+      "engine": "recharts"
+    },
+    {
+      "id": "gradient-colors-area-chart",
+      "export": "PresetGradientColorsAreaChart",
+      "family": "area",
+      "title": "Gradient colors area chart",
+      "source": "app/src/kit/evilcharts/examples/recharts/ex-gradient-colors-area-chart.tsx",
+      "engine": "recharts"
+    },
+    {
+      "id": "gradient-colors-bar-chart",
+      "export": "PresetGradientColorsBarChart",
+      "family": "bar",
+      "title": "Gradient colors bar chart",
+      "source": "app/src/kit/evilcharts/examples/recharts/ex-gradient-colors-bar-chart.tsx",
+      "engine": "recharts"
+    },
+    {
+      "id": "gradient-colors-bump-area-chart",
+      "export": "PresetGradientColorsBumpAreaChart",
+      "family": "area",
+      "title": "Gradient colors bump area chart",
+      "source": "app/src/kit/evilcharts/examples/recharts/ex-gradient-colors-bump-area-chart.tsx",
+      "engine": "recharts"
+    },
+    {
+      "id": "gradient-colors-bump-line-chart",
+      "export": "PresetGradientColorsBumpLineChart",
+      "family": "line",
+      "title": "Gradient colors bump line chart",
+      "source": "app/src/kit/evilcharts/examples/recharts/ex-gradient-colors-bump-line-chart.tsx",
+      "engine": "recharts"
+    },
+    {
+      "id": "gradient-colors-composed-chart",
+      "export": "PresetGradientColorsComposedChart",
+      "family": "composed",
+      "title": "Gradient colors composed chart",
+      "source": "app/src/kit/evilcharts/examples/recharts/ex-gradient-colors-composed-chart.tsx",
+      "engine": "recharts"
+    },
+    {
+      "id": "gradient-colors-line-chart",
+      "export": "PresetGradientColorsLineChart",
+      "family": "line",
+      "title": "Gradient colors line chart",
+      "source": "app/src/kit/evilcharts/examples/recharts/ex-gradient-colors-line-chart.tsx",
+      "engine": "recharts"
+    },
+    {
+      "id": "gradient-colors-pie-chart",
+      "export": "PresetGradientColorsPieChart",
+      "family": "pie",
+      "title": "Gradient colors pie chart",
+      "source": "app/src/kit/evilcharts/examples/recharts/ex-gradient-colors-pie-chart.tsx",
+      "engine": "recharts"
+    },
+    {
+      "id": "gradient-colors-radar-chart",
+      "export": "PresetGradientColorsRadarChart",
+      "family": "radar",
+      "title": "Gradient colors radar chart",
+      "source": "app/src/kit/evilcharts/examples/recharts/ex-gradient-colors-radar-chart.tsx",
+      "engine": "recharts"
+    },
+    {
+      "id": "gradient-colors-radial-chart",
+      "export": "PresetGradientColorsRadialChart",
+      "family": "radial",
+      "title": "Gradient colors radial chart",
+      "source": "app/src/kit/evilcharts/examples/recharts/ex-gradient-colors-radial-chart.tsx",
+      "engine": "recharts"
+    },
+    {
+      "id": "gradient-colors-sankey-chart",
+      "export": "PresetGradientColorsSankeyChart",
+      "family": "sankey",
+      "title": "Gradient colors sankey chart",
+      "source": "app/src/kit/evilcharts/examples/recharts/ex-gradient-colors-sankey-chart.tsx",
+      "engine": "recharts"
+    },
+    {
+      "id": "gradient-reverse-area-variant-area-chart",
+      "export": "PresetGradientReverseAreaVariantAreaChart",
+      "family": "area",
+      "title": "Gradient reverse area variant area chart",
+      "source": "app/src/kit/evilcharts/examples/recharts/ex-gradient-reverse-area-variant-area-chart.tsx",
+      "engine": "recharts"
+    },
+    {
+      "id": "gradient-variant-bar-chart",
+      "export": "PresetGradientVariantBarChart",
+      "family": "bar",
+      "title": "Gradient variant bar chart",
+      "source": "app/src/kit/evilcharts/examples/recharts/ex-gradient-variant-bar-chart.tsx",
+      "engine": "recharts"
+    },
+    {
+      "id": "gradient-variant-composed-chart",
+      "export": "PresetGradientVariantComposedChart",
+      "family": "composed",
+      "title": "Gradient variant composed chart",
+      "source": "app/src/kit/evilcharts/examples/recharts/ex-gradient-variant-composed-chart.tsx",
+      "engine": "recharts"
+    },
+    {
+      "id": "hatched-area-variant-area-chart",
+      "export": "PresetHatchedAreaVariantAreaChart",
+      "family": "area",
+      "title": "Hatched area variant area chart",
+      "source": "app/src/kit/evilcharts/examples/recharts/ex-hatched-area-variant-area-chart.tsx",
+      "engine": "recharts"
+    },
+    {
+      "id": "hatched-variant-bar-chart",
+      "export": "PresetHatchedVariantBarChart",
+      "family": "bar",
+      "title": "Hatched variant bar chart",
+      "source": "app/src/kit/evilcharts/examples/recharts/ex-hatched-variant-bar-chart.tsx",
+      "engine": "recharts"
+    },
+    {
+      "id": "hatched-variant-composed-chart",
+      "export": "PresetHatchedVariantComposedChart",
+      "family": "composed",
+      "title": "Hatched variant composed chart",
+      "source": "app/src/kit/evilcharts/examples/recharts/ex-hatched-variant-composed-chart.tsx",
+      "engine": "recharts"
+    },
+    {
+      "id": "horizontal-layout-bar-chart",
+      "export": "PresetHorizontalLayoutBarChart",
+      "family": "bar",
+      "title": "Horizontal layout bar chart",
+      "source": "app/src/kit/evilcharts/examples/recharts/ex-horizontal-layout-bar-chart.tsx",
+      "engine": "recharts"
+    },
+    {
+      "id": "hover-highlight-bar-chart",
+      "export": "PresetHoverHighlightBarChart",
+      "family": "bar",
+      "title": "Hover highlight bar chart",
+      "source": "app/src/kit/evilcharts/examples/recharts/ex-hover-highlight-bar-chart.tsx",
+      "engine": "recharts"
+    },
+    {
+      "id": "hover-highlight-composed-chart",
+      "export": "PresetHoverHighlightComposedChart",
+      "family": "composed",
+      "title": "Hover highlight composed chart",
+      "source": "app/src/kit/evilcharts/examples/recharts/ex-hover-highlight-composed-chart.tsx",
+      "engine": "recharts"
+    },
+    {
+      "id": "labeled-nodes-sankey-chart",
+      "export": "PresetLabeledNodesSankeyChart",
+      "family": "sankey",
+      "title": "Labeled nodes sankey chart",
+      "source": "app/src/kit/evilcharts/examples/recharts/ex-labeled-nodes-sankey-chart.tsx",
+      "engine": "recharts"
+    },
+    {
+      "id": "labels-pie-chart",
+      "export": "PresetLabelsPieChart",
+      "family": "pie",
+      "title": "Labels pie chart",
+      "source": "app/src/kit/evilcharts/examples/recharts/ex-labels-pie-chart.tsx",
+      "engine": "recharts"
+    },
+    {
+      "id": "legend-circle-line-chart",
+      "export": "PresetLegendCircleLineChart",
+      "family": "line",
+      "title": "Legend circle line chart",
+      "source": "app/src/kit/evilcharts/examples/recharts/ex-legend-circle-line-chart.tsx",
+      "engine": "recharts"
+    },
+    {
+      "id": "legend-circle-outline-line-chart",
+      "export": "PresetLegendCircleOutlineLineChart",
+      "family": "line",
+      "title": "Legend circle outline line chart",
+      "source": "app/src/kit/evilcharts/examples/recharts/ex-legend-circle-outline-line-chart.tsx",
+      "engine": "recharts"
+    },
+    {
+      "id": "legend-horizontal-bar-line-chart",
+      "export": "PresetLegendHorizontalBarLineChart",
+      "family": "bar",
+      "title": "Legend horizontal bar line chart",
+      "source": "app/src/kit/evilcharts/examples/recharts/ex-legend-horizontal-bar-line-chart.tsx",
+      "engine": "recharts"
+    },
+    {
+      "id": "legend-rounded-square-line-chart",
+      "export": "PresetLegendRoundedSquareLineChart",
+      "family": "line",
+      "title": "Legend rounded square line chart",
+      "source": "app/src/kit/evilcharts/examples/recharts/ex-legend-rounded-square-line-chart.tsx",
+      "engine": "recharts"
+    },
+    {
+      "id": "legend-rounded-square-outline-line-chart",
+      "export": "PresetLegendRoundedSquareOutlineLineChart",
+      "family": "line",
+      "title": "Legend rounded square outline line chart",
+      "source": "app/src/kit/evilcharts/examples/recharts/ex-legend-rounded-square-outline-line-chart.tsx",
+      "engine": "recharts"
+    },
+    {
+      "id": "legend-square-line-chart",
+      "export": "PresetLegendSquareLineChart",
+      "family": "line",
+      "title": "Legend square line chart",
+      "source": "app/src/kit/evilcharts/examples/recharts/ex-legend-square-line-chart.tsx",
+      "engine": "recharts"
+    },
+    {
+      "id": "legend-vertical-bar-line-chart",
+      "export": "PresetLegendVerticalBarLineChart",
+      "family": "bar",
+      "title": "Legend vertical bar line chart",
+      "source": "app/src/kit/evilcharts/examples/recharts/ex-legend-vertical-bar-line-chart.tsx",
+      "engine": "recharts"
+    },
+    {
+      "id": "line-chart",
+      "export": "PresetLineChart",
+      "family": "line",
+      "title": "Line chart",
+      "source": "app/src/kit/evilcharts/examples/recharts/ex-line-chart.tsx",
+      "engine": "recharts"
+    },
+    {
+      "id": "lines-area-variant-area-chart",
+      "export": "PresetLinesAreaVariantAreaChart",
+      "family": "line",
+      "title": "Lines area variant area chart",
+      "source": "app/src/kit/evilcharts/examples/recharts/ex-lines-area-variant-area-chart.tsx",
+      "engine": "recharts"
+    },
+    {
+      "id": "lines-variant-radar-chart",
+      "export": "PresetLinesVariantRadarChart",
+      "family": "radar",
+      "title": "Lines variant radar chart",
+      "source": "app/src/kit/evilcharts/examples/recharts/ex-lines-variant-radar-chart.tsx",
+      "engine": "recharts"
+    },
+    {
+      "id": "loading-state-area-chart",
+      "export": "PresetLoadingStateAreaChart",
+      "family": "area",
+      "title": "Loading state area chart",
+      "source": "app/src/kit/evilcharts/examples/recharts/ex-loading-state-area-chart.tsx",
+      "engine": "recharts"
+    },
+    {
+      "id": "loading-state-bar-chart",
+      "export": "PresetLoadingStateBarChart",
+      "family": "bar",
+      "title": "Loading state bar chart",
+      "source": "app/src/kit/evilcharts/examples/recharts/ex-loading-state-bar-chart.tsx",
+      "engine": "recharts"
+    },
+    {
+      "id": "loading-state-composed-chart",
+      "export": "PresetLoadingStateComposedChart",
+      "family": "composed",
+      "title": "Loading state composed chart",
+      "source": "app/src/kit/evilcharts/examples/recharts/ex-loading-state-composed-chart.tsx",
+      "engine": "recharts"
+    },
+    {
+      "id": "loading-state-line-chart",
+      "export": "PresetLoadingStateLineChart",
+      "family": "line",
+      "title": "Loading state line chart",
+      "source": "app/src/kit/evilcharts/examples/recharts/ex-loading-state-line-chart.tsx",
+      "engine": "recharts"
+    },
+    {
+      "id": "loading-state-pie-chart",
+      "export": "PresetLoadingStatePieChart",
+      "family": "pie",
+      "title": "Loading state pie chart",
+      "source": "app/src/kit/evilcharts/examples/recharts/ex-loading-state-pie-chart.tsx",
+      "engine": "recharts"
+    },
+    {
+      "id": "loading-state-radar-chart",
+      "export": "PresetLoadingStateRadarChart",
+      "family": "radar",
+      "title": "Loading state radar chart",
+      "source": "app/src/kit/evilcharts/examples/recharts/ex-loading-state-radar-chart.tsx",
+      "engine": "recharts"
+    },
+    {
+      "id": "loading-state-radial-chart",
+      "export": "PresetLoadingStateRadialChart",
+      "family": "radial",
+      "title": "Loading state radial chart",
+      "source": "app/src/kit/evilcharts/examples/recharts/ex-loading-state-radial-chart.tsx",
+      "engine": "recharts"
+    },
+    {
+      "id": "loading-state-sankey-chart",
+      "export": "PresetLoadingStateSankeyChart",
+      "family": "sankey",
+      "title": "Loading state sankey chart",
+      "source": "app/src/kit/evilcharts/examples/recharts/ex-loading-state-sankey-chart.tsx",
+      "engine": "recharts"
+    },
+    {
+      "id": "monotoney-curve-type-area-chart",
+      "export": "PresetMonotoneyCurveTypeAreaChart",
+      "family": "area",
+      "title": "Monotoney curve type area chart",
+      "source": "app/src/kit/evilcharts/examples/recharts/ex-monotoney-curve-type-area-chart.tsx",
+      "engine": "recharts"
+    },
+    {
+      "id": "monotoney-curve-type-line-chart",
+      "export": "PresetMonotoneyCurveTypeLineChart",
+      "family": "line",
+      "title": "Monotoney curve type line chart",
+      "source": "app/src/kit/evilcharts/examples/recharts/ex-monotoney-curve-type-line-chart.tsx",
+      "engine": "recharts"
+    },
+    {
+      "id": "outside-labels-sankey-chart",
+      "export": "PresetOutsideLabelsSankeyChart",
+      "family": "sankey",
+      "title": "Outside labels sankey chart",
+      "source": "app/src/kit/evilcharts/examples/recharts/ex-outside-labels-sankey-chart.tsx",
+      "engine": "recharts"
+    },
+    {
+      "id": "overlapping-padded-pie-chart",
+      "export": "PresetOverlappingPaddedPieChart",
+      "family": "pie",
+      "title": "Overlapping padded pie chart",
+      "source": "app/src/kit/evilcharts/examples/recharts/ex-overlapping-padded-pie-chart.tsx",
+      "engine": "recharts"
+    },
+    {
+      "id": "padded-pie-chart",
+      "export": "PresetPaddedPieChart",
+      "family": "pie",
+      "title": "Padded pie chart",
+      "source": "app/src/kit/evilcharts/examples/recharts/ex-padded-pie-chart.tsx",
+      "engine": "recharts"
+    },
+    {
+      "id": "percent-type-bar-chart",
+      "export": "PresetPercentTypeBarChart",
+      "family": "bar",
+      "title": "Percent type bar chart",
+      "source": "app/src/kit/evilcharts/examples/recharts/ex-percent-type-bar-chart.tsx",
+      "engine": "recharts"
+    },
+    {
+      "id": "pie-chart",
+      "export": "PresetPieChart",
+      "family": "pie",
+      "title": "Pie chart",
+      "source": "app/src/kit/evilcharts/examples/recharts/ex-pie-chart.tsx",
+      "engine": "recharts"
+    },
+    {
+      "id": "radar-chart",
+      "export": "PresetRadarChart",
+      "family": "radar",
+      "title": "Radar chart",
+      "source": "app/src/kit/evilcharts/examples/recharts/ex-radar-chart.tsx",
+      "engine": "recharts"
+    },
+    {
+      "id": "radial-chart",
+      "export": "PresetRadialChart",
+      "family": "radial",
+      "title": "Radial chart",
+      "source": "app/src/kit/evilcharts/examples/recharts/ex-radial-chart.tsx",
+      "engine": "recharts"
+    },
+    {
+      "id": "sankey-chart",
+      "export": "PresetSankeyChart",
+      "family": "sankey",
+      "title": "Sankey chart",
+      "source": "app/src/kit/evilcharts/examples/recharts/ex-sankey-chart.tsx",
+      "engine": "recharts"
+    },
+    {
+      "id": "semi-variant-radial-chart",
+      "export": "PresetSemiVariantRadialChart",
+      "family": "radial",
+      "title": "Semi variant radial chart",
+      "source": "app/src/kit/evilcharts/examples/recharts/ex-semi-variant-radial-chart.tsx",
+      "engine": "recharts"
+    },
+    {
+      "id": "solid-area-variant-area-chart",
+      "export": "PresetSolidAreaVariantAreaChart",
+      "family": "area",
+      "title": "Solid area variant area chart",
+      "source": "app/src/kit/evilcharts/examples/recharts/ex-solid-area-variant-area-chart.tsx",
+      "engine": "recharts"
+    },
+    {
+      "id": "solid-labeled-nodes-sankey-chart",
+      "export": "PresetSolidLabeledNodesSankeyChart",
+      "family": "sankey",
+      "title": "Solid labeled nodes sankey chart",
+      "source": "app/src/kit/evilcharts/examples/recharts/ex-solid-labeled-nodes-sankey-chart.tsx",
+      "engine": "recharts"
+    },
+    {
+      "id": "solid-link-variant-sankey-chart",
+      "export": "PresetSolidLinkVariantSankeyChart",
+      "family": "sankey",
+      "title": "Solid link variant sankey chart",
+      "source": "app/src/kit/evilcharts/examples/recharts/ex-solid-link-variant-sankey-chart.tsx",
+      "engine": "recharts"
+    },
+    {
+      "id": "solid-stroke-area-chart",
+      "export": "PresetSolidStrokeAreaChart",
+      "family": "area",
+      "title": "Solid stroke area chart",
+      "source": "app/src/kit/evilcharts/examples/recharts/ex-solid-stroke-area-chart.tsx",
+      "engine": "recharts"
+    },
+    {
+      "id": "solid-stroke-line-chart",
+      "export": "PresetSolidStrokeLineChart",
+      "family": "line",
+      "title": "Solid stroke line chart",
+      "source": "app/src/kit/evilcharts/examples/recharts/ex-solid-stroke-line-chart.tsx",
+      "engine": "recharts"
+    },
+    {
+      "id": "source-link-variant-sankey-chart",
+      "export": "PresetSourceLinkVariantSankeyChart",
+      "family": "sankey",
+      "title": "Source link variant sankey chart",
+      "source": "app/src/kit/evilcharts/examples/recharts/ex-source-link-variant-sankey-chart.tsx",
+      "engine": "recharts"
+    },
+    {
+      "id": "stacked-type-area-chart",
+      "export": "PresetStackedTypeAreaChart",
+      "family": "area",
+      "title": "Stacked type area chart",
+      "source": "app/src/kit/evilcharts/examples/recharts/ex-stacked-type-area-chart.tsx",
+      "engine": "recharts"
+    },
+    {
+      "id": "stacked-type-bar-chart",
+      "export": "PresetStackedTypeBarChart",
+      "family": "bar",
+      "title": "Stacked type bar chart",
+      "source": "app/src/kit/evilcharts/examples/recharts/ex-stacked-type-bar-chart.tsx",
+      "engine": "recharts"
+    },
+    {
+      "id": "step-curve-type-area-chart",
+      "export": "PresetStepCurveTypeAreaChart",
+      "family": "area",
+      "title": "Step curve type area chart",
+      "source": "app/src/kit/evilcharts/examples/recharts/ex-step-curve-type-area-chart.tsx",
+      "engine": "recharts"
+    },
+    {
+      "id": "step-curve-type-line-chart",
+      "export": "PresetStepCurveTypeLineChart",
+      "family": "line",
+      "title": "Step curve type line chart",
+      "source": "app/src/kit/evilcharts/examples/recharts/ex-step-curve-type-line-chart.tsx",
+      "engine": "recharts"
+    },
+    {
+      "id": "stripped-variant-bar-chart",
+      "export": "PresetStrippedVariantBarChart",
+      "family": "bar",
+      "title": "Stripped variant bar chart",
+      "source": "app/src/kit/evilcharts/examples/recharts/ex-stripped-variant-bar-chart.tsx",
+      "engine": "recharts"
+    },
+    {
+      "id": "stripped-variant-composed-chart",
+      "export": "PresetStrippedVariantComposedChart",
+      "family": "composed",
+      "title": "Stripped variant composed chart",
+      "source": "app/src/kit/evilcharts/examples/recharts/ex-stripped-variant-composed-chart.tsx",
+      "engine": "recharts"
+    },
+    {
+      "id": "tooltip-default-bar-chart",
+      "export": "PresetTooltipDefaultBarChart",
+      "family": "bar",
+      "title": "Tooltip default bar chart",
+      "source": "app/src/kit/evilcharts/examples/recharts/ex-tooltip-default-bar-chart.tsx",
+      "engine": "recharts"
+    },
+    {
+      "id": "tooltip-frosted-glass-bar-chart",
+      "export": "PresetTooltipFrostedGlassBarChart",
+      "family": "bar",
+      "title": "Tooltip frosted glass bar chart",
+      "source": "app/src/kit/evilcharts/examples/recharts/ex-tooltip-frosted-glass-bar-chart.tsx",
+      "engine": "recharts"
+    },
+    {
+      "id": "echarts:examples/echarts/ex-animated-dashed-stroke-echarts-area-chart",
+      "title": "Animated Dashed Stroke \u00b7 Area Chart",
+      "family": "Area",
+      "export": "EChartsExampleExAnimatedDashedStrokeEchartsAreaChart",
+      "source": "packages/siso-charts/src/echarts/examples/echarts/ex-animated-dashed-stroke-echarts-area-chart.tsx",
+      "engine": "echarts"
+    },
+    {
+      "id": "echarts:examples/echarts/ex-animated-dashed-stroke-echarts-composed-chart",
+      "title": "Animated Dashed Stroke \u00b7 Composed Chart",
+      "family": "Composed",
+      "export": "EChartsExampleExAnimatedDashedStrokeEchartsComposedChart",
+      "source": "packages/siso-charts/src/echarts/examples/echarts/ex-animated-dashed-stroke-echarts-composed-chart.tsx",
+      "engine": "echarts"
+    },
+    {
+      "id": "echarts:examples/echarts/ex-animated-dashed-stroke-echarts-line-chart",
+      "title": "Animated Dashed Stroke \u00b7 Line Chart",
+      "family": "Line",
+      "export": "EChartsExampleExAnimatedDashedStrokeEchartsLineChart",
+      "source": "packages/siso-charts/src/echarts/examples/echarts/ex-animated-dashed-stroke-echarts-line-chart.tsx",
+      "engine": "echarts"
+    },
+    {
+      "id": "echarts:examples/echarts/ex-blocks-variant-echarts-bar-chart",
+      "title": "Blocks Variant \u00b7 Bar Chart",
+      "family": "Bar",
+      "export": "EChartsExampleExBlocksVariantEchartsBarChart",
+      "source": "packages/siso-charts/src/echarts/examples/echarts/ex-blocks-variant-echarts-bar-chart.tsx",
+      "engine": "echarts"
+    },
+    {
+      "id": "echarts:examples/echarts/ex-brush-echarts-area-chart",
+      "title": "Brush \u00b7 Area Chart",
+      "family": "Area",
+      "export": "EChartsExampleExBrushEchartsAreaChart",
+      "source": "packages/siso-charts/src/echarts/examples/echarts/ex-brush-echarts-area-chart.tsx",
+      "engine": "echarts"
+    },
+    {
+      "id": "echarts:examples/echarts/ex-buffer-echarts-area-chart",
+      "title": "Buffer \u00b7 Area Chart",
+      "family": "Area",
+      "export": "EChartsExampleExBufferEchartsAreaChart",
+      "source": "packages/siso-charts/src/echarts/examples/echarts/ex-buffer-echarts-area-chart.tsx",
+      "engine": "echarts"
+    },
+    {
+      "id": "echarts:examples/echarts/ex-buffer-echarts-bar-chart",
+      "title": "Buffer \u00b7 Bar Chart",
+      "family": "Bar",
+      "export": "EChartsExampleExBufferEchartsBarChart",
+      "source": "packages/siso-charts/src/echarts/examples/echarts/ex-buffer-echarts-bar-chart.tsx",
+      "engine": "echarts"
+    },
+    {
+      "id": "echarts:examples/echarts/ex-buffer-echarts-line-chart",
+      "title": "Buffer \u00b7 Line Chart",
+      "family": "Line",
+      "export": "EChartsExampleExBufferEchartsLineChart",
+      "source": "packages/siso-charts/src/echarts/examples/echarts/ex-buffer-echarts-line-chart.tsx",
+      "engine": "echarts"
+    },
+    {
+      "id": "echarts:examples/echarts/ex-bump-curve-echarts-composed-chart",
+      "title": "Bump Curve \u00b7 Composed Chart",
+      "family": "Composed",
+      "export": "EChartsExampleExBumpCurveEchartsComposedChart",
+      "source": "packages/siso-charts/src/echarts/examples/echarts/ex-bump-curve-echarts-composed-chart.tsx",
+      "engine": "echarts"
+    },
+    {
+      "id": "echarts:examples/echarts/ex-bump-curve-type-echarts-area-chart",
+      "title": "Bump Curve Type \u00b7 Area Chart",
+      "family": "Area",
+      "export": "EChartsExampleExBumpCurveTypeEchartsAreaChart",
+      "source": "packages/siso-charts/src/echarts/examples/echarts/ex-bump-curve-type-echarts-area-chart.tsx",
+      "engine": "echarts"
+    },
+    {
+      "id": "echarts:examples/echarts/ex-bump-curve-type-echarts-line-chart",
+      "title": "Bump Curve Type \u00b7 Line Chart",
+      "family": "Line",
+      "export": "EChartsExampleExBumpCurveTypeEchartsLineChart",
+      "source": "packages/siso-charts/src/echarts/examples/echarts/ex-bump-curve-type-echarts-line-chart.tsx",
+      "engine": "echarts"
+    },
+    {
+      "id": "echarts:examples/echarts/ex-chart-config-default-echarts-bar-chart",
+      "title": "Chart Config Default \u00b7 Bar Chart",
+      "family": "Bar",
+      "export": "EChartsExampleExChartConfigDefaultEchartsBarChart",
+      "source": "packages/siso-charts/src/echarts/examples/echarts/ex-chart-config-default-echarts-bar-chart.tsx",
+      "engine": "echarts"
+    },
+    {
+      "id": "echarts:examples/echarts/ex-chart-config-icons-echarts-bar-chart",
+      "title": "Chart Config Icons \u00b7 Bar Chart",
+      "family": "Bar",
+      "export": "EChartsExampleExChartConfigIconsEchartsBarChart",
+      "source": "packages/siso-charts/src/echarts/examples/echarts/ex-chart-config-icons-echarts-bar-chart.tsx",
+      "engine": "echarts"
+    },
+    {
+      "id": "echarts:examples/echarts/ex-circle-grid-echarts-radar-chart",
+      "title": "Circle Grid \u00b7 Radar Chart",
+      "family": "Radar",
+      "export": "EChartsExampleExCircleGridEchartsRadarChart",
+      "source": "packages/siso-charts/src/echarts/examples/echarts/ex-circle-grid-echarts-radar-chart.tsx",
+      "engine": "echarts"
+    },
+    {
+      "id": "echarts:examples/echarts/ex-dashed-stroke-echarts-area-chart",
+      "title": "Dashed Stroke \u00b7 Area Chart",
+      "family": "Area",
+      "export": "EChartsExampleExDashedStrokeEchartsAreaChart",
+      "source": "packages/siso-charts/src/echarts/examples/echarts/ex-dashed-stroke-echarts-area-chart.tsx",
+      "engine": "echarts"
+    },
+    {
+      "id": "echarts:examples/echarts/ex-dashed-stroke-echarts-composed-chart",
+      "title": "Dashed Stroke \u00b7 Composed Chart",
+      "family": "Composed",
+      "export": "EChartsExampleExDashedStrokeEchartsComposedChart",
+      "source": "packages/siso-charts/src/echarts/examples/echarts/ex-dashed-stroke-echarts-composed-chart.tsx",
+      "engine": "echarts"
+    },
+    {
+      "id": "echarts:examples/echarts/ex-dashed-stroke-echarts-line-chart",
+      "title": "Dashed Stroke \u00b7 Line Chart",
+      "family": "Line",
+      "export": "EChartsExampleExDashedStrokeEchartsLineChart",
+      "source": "packages/siso-charts/src/echarts/examples/echarts/ex-dashed-stroke-echarts-line-chart.tsx",
+      "engine": "echarts"
+    },
+    {
+      "id": "echarts:examples/echarts/ex-default-type-echarts-area-chart",
+      "title": "Default Type \u00b7 Area Chart",
+      "family": "Area",
+      "export": "EChartsExampleExDefaultTypeEchartsAreaChart",
+      "source": "packages/siso-charts/src/echarts/examples/echarts/ex-default-type-echarts-area-chart.tsx",
+      "engine": "echarts"
+    },
+    {
+      "id": "echarts:examples/echarts/ex-default-variant-echarts-bar-chart",
+      "title": "Default Variant \u00b7 Bar Chart",
+      "family": "Bar",
+      "export": "EChartsExampleExDefaultVariantEchartsBarChart",
+      "source": "packages/siso-charts/src/echarts/examples/echarts/ex-default-variant-echarts-bar-chart.tsx",
+      "engine": "echarts"
+    },
+    {
+      "id": "echarts:examples/echarts/ex-donut-echarts-pie-chart",
+      "title": "Donut \u00b7 Pie Chart",
+      "family": "Pie",
+      "export": "EChartsExampleExDonutEchartsPieChart",
+      "source": "packages/siso-charts/src/echarts/examples/echarts/ex-donut-echarts-pie-chart.tsx",
+      "engine": "echarts"
+    },
+    {
+      "id": "echarts:examples/echarts/ex-dot-border-echarts-line-chart",
+      "title": "Dot Border \u00b7 Line Chart",
+      "family": "Line",
+      "export": "EChartsExampleExDotBorderEchartsLineChart",
+      "source": "packages/siso-charts/src/echarts/examples/echarts/ex-dot-border-echarts-line-chart.tsx",
+      "engine": "echarts"
+    },
+    {
+      "id": "echarts:examples/echarts/ex-dot-colored-border-echarts-line-chart",
+      "title": "Dot Colored Border \u00b7 Line Chart",
+      "family": "Line",
+      "export": "EChartsExampleExDotColoredBorderEchartsLineChart",
+      "source": "packages/siso-charts/src/echarts/examples/echarts/ex-dot-colored-border-echarts-line-chart.tsx",
+      "engine": "echarts"
+    },
+    {
+      "id": "echarts:examples/echarts/ex-dot-default-echarts-line-chart",
+      "title": "Dot Default \u00b7 Line Chart",
+      "family": "Line",
+      "export": "EChartsExampleExDotDefaultEchartsLineChart",
+      "source": "packages/siso-charts/src/echarts/examples/echarts/ex-dot-default-echarts-line-chart.tsx",
+      "engine": "echarts"
+    },
+    {
+      "id": "echarts:examples/echarts/ex-dot-ping-echarts-line-chart",
+      "title": "Dot Ping \u00b7 Line Chart",
+      "family": "Line",
+      "export": "EChartsExampleExDotPingEchartsLineChart",
+      "source": "packages/siso-charts/src/echarts/examples/echarts/ex-dot-ping-echarts-line-chart.tsx",
+      "engine": "echarts"
+    },
+    {
+      "id": "echarts:examples/echarts/ex-dots-echarts-composed-chart",
+      "title": "Dots \u00b7 Composed Chart",
+      "family": "Composed",
+      "export": "EChartsExampleExDotsEchartsComposedChart",
+      "source": "packages/siso-charts/src/echarts/examples/echarts/ex-dots-echarts-composed-chart.tsx",
+      "engine": "echarts"
+    },
+    {
+      "id": "echarts:examples/echarts/ex-dotted-area-variant-echarts-area-chart",
+      "title": "Dotted Area Variant \u00b7 Area Chart",
+      "family": "Area",
+      "export": "EChartsExampleExDottedAreaVariantEchartsAreaChart",
+      "source": "packages/siso-charts/src/echarts/examples/echarts/ex-dotted-area-variant-echarts-area-chart.tsx",
+      "engine": "echarts"
+    },
+    {
+      "id": "echarts:examples/echarts/ex-duotone-reverse-variant-echarts-bar-chart",
+      "title": "Duotone Reverse Variant \u00b7 Bar Chart",
+      "family": "Bar",
+      "export": "EChartsExampleExDuotoneReverseVariantEchartsBarChart",
+      "source": "packages/siso-charts/src/echarts/examples/echarts/ex-duotone-reverse-variant-echarts-bar-chart.tsx",
+      "engine": "echarts"
+    },
+    {
+      "id": "echarts:examples/echarts/ex-duotone-variant-echarts-bar-chart",
+      "title": "Duotone Variant \u00b7 Bar Chart",
+      "family": "Bar",
+      "export": "EChartsExampleExDuotoneVariantEchartsBarChart",
+      "source": "packages/siso-charts/src/echarts/examples/echarts/ex-duotone-variant-echarts-bar-chart.tsx",
+      "engine": "echarts"
+    },
+    {
+      "id": "echarts:examples/echarts/ex-duotone-variant-echarts-composed-chart",
+      "title": "Duotone Variant \u00b7 Composed Chart",
+      "family": "Composed",
+      "export": "EChartsExampleExDuotoneVariantEchartsComposedChart",
+      "source": "packages/siso-charts/src/echarts/examples/echarts/ex-duotone-variant-echarts-composed-chart.tsx",
+      "engine": "echarts"
+    },
+    {
+      "id": "echarts:examples/echarts/ex-echarts-area-chart",
+      "title": "Echarts Area Chart \u00b7 Area Chart",
+      "family": "Area",
+      "export": "EChartsExampleExEchartsAreaChart",
+      "source": "packages/siso-charts/src/echarts/examples/echarts/ex-echarts-area-chart.tsx",
+      "engine": "echarts"
+    },
+    {
+      "id": "echarts:examples/echarts/ex-echarts-bar-chart",
+      "title": "Echarts Bar Chart \u00b7 Bar Chart",
+      "family": "Bar",
+      "export": "EChartsExampleExEchartsBarChart",
+      "source": "packages/siso-charts/src/echarts/examples/echarts/ex-echarts-bar-chart.tsx",
+      "engine": "echarts"
+    },
+    {
+      "id": "echarts:examples/echarts/ex-echarts-composed-chart",
+      "title": "Echarts Composed Chart \u00b7 Composed Chart",
+      "family": "Composed",
+      "export": "EChartsExampleExEchartsComposedChart",
+      "source": "packages/siso-charts/src/echarts/examples/echarts/ex-echarts-composed-chart.tsx",
+      "engine": "echarts"
+    },
+    {
+      "id": "echarts:examples/echarts/ex-echarts-line-chart",
+      "title": "Echarts Line Chart \u00b7 Line Chart",
+      "family": "Line",
+      "export": "EChartsExampleExEchartsLineChart",
+      "source": "packages/siso-charts/src/echarts/examples/echarts/ex-echarts-line-chart.tsx",
+      "engine": "echarts"
+    },
+    {
+      "id": "echarts:examples/echarts/ex-echarts-pie-chart",
+      "title": "Echarts Pie Chart \u00b7 Pie Chart",
+      "family": "Pie",
+      "export": "EChartsExampleExEchartsPieChart",
+      "source": "packages/siso-charts/src/echarts/examples/echarts/ex-echarts-pie-chart.tsx",
+      "engine": "echarts"
+    },
+    {
+      "id": "echarts:examples/echarts/ex-echarts-radar-chart",
+      "title": "Echarts Radar Chart \u00b7 Radar Chart",
+      "family": "Radar",
+      "export": "EChartsExampleExEchartsRadarChart",
+      "source": "packages/siso-charts/src/echarts/examples/echarts/ex-echarts-radar-chart.tsx",
+      "engine": "echarts"
+    },
+    {
+      "id": "echarts:examples/echarts/ex-echarts-radial-chart",
+      "title": "Echarts Radial Chart \u00b7 Radial Chart",
+      "family": "Radial",
+      "export": "EChartsExampleExEchartsRadialChart",
+      "source": "packages/siso-charts/src/echarts/examples/echarts/ex-echarts-radial-chart.tsx",
+      "engine": "echarts"
+    },
+    {
+      "id": "echarts:examples/echarts/ex-echarts-sankey-chart",
+      "title": "Echarts Sankey Chart \u00b7 Sankey Chart",
+      "family": "Sankey",
+      "export": "EChartsExampleExEchartsSankeyChart",
+      "source": "packages/siso-charts/src/echarts/examples/echarts/ex-echarts-sankey-chart.tsx",
+      "engine": "echarts"
+    },
+    {
+      "id": "echarts:examples/echarts/ex-expandable-variant-echarts-bar-chart",
+      "title": "Expandable Variant \u00b7 Bar Chart",
+      "family": "Bar",
+      "export": "EChartsExampleExExpandableVariantEchartsBarChart",
+      "source": "packages/siso-charts/src/echarts/examples/echarts/ex-expandable-variant-echarts-bar-chart.tsx",
+      "engine": "echarts"
+    },
+    {
+      "id": "echarts:examples/echarts/ex-expanded-type-echarts-area-chart",
+      "title": "Expanded Type \u00b7 Area Chart",
+      "family": "Area",
+      "export": "EChartsExampleExExpandedTypeEchartsAreaChart",
+      "source": "packages/siso-charts/src/echarts/examples/echarts/ex-expanded-type-echarts-area-chart.tsx",
+      "engine": "echarts"
+    },
+    {
+      "id": "echarts:examples/echarts/ex-glowing-desktop-echarts-bar-chart",
+      "title": "Glowing Desktop \u00b7 Bar Chart",
+      "family": "Bar",
+      "export": "EChartsExampleExGlowingDesktopEchartsBarChart",
+      "source": "packages/siso-charts/src/echarts/examples/echarts/ex-glowing-desktop-echarts-bar-chart.tsx",
+      "engine": "echarts"
+    },
+    {
+      "id": "echarts:examples/echarts/ex-glowing-desktop-echarts-line-chart",
+      "title": "Glowing Desktop \u00b7 Line Chart",
+      "family": "Line",
+      "export": "EChartsExampleExGlowingDesktopEchartsLineChart",
+      "source": "packages/siso-charts/src/echarts/examples/echarts/ex-glowing-desktop-echarts-line-chart.tsx",
+      "engine": "echarts"
+    },
+    {
+      "id": "echarts:examples/echarts/ex-glowing-echarts-composed-chart",
+      "title": "Glowing \u00b7 Composed Chart",
+      "family": "Composed",
+      "export": "EChartsExampleExGlowingEchartsComposedChart",
+      "source": "packages/siso-charts/src/echarts/examples/echarts/ex-glowing-echarts-composed-chart.tsx",
+      "engine": "echarts"
+    },
+    {
+      "id": "echarts:examples/echarts/ex-glowing-mobile-echarts-bar-chart",
+      "title": "Glowing Mobile \u00b7 Bar Chart",
+      "family": "Bar",
+      "export": "EChartsExampleExGlowingMobileEchartsBarChart",
+      "source": "packages/siso-charts/src/echarts/examples/echarts/ex-glowing-mobile-echarts-bar-chart.tsx",
+      "engine": "echarts"
+    },
+    {
+      "id": "echarts:examples/echarts/ex-glowing-mobile-echarts-line-chart",
+      "title": "Glowing Mobile \u00b7 Line Chart",
+      "family": "Line",
+      "export": "EChartsExampleExGlowingMobileEchartsLineChart",
+      "source": "packages/siso-charts/src/echarts/examples/echarts/ex-glowing-mobile-echarts-line-chart.tsx",
+      "engine": "echarts"
+    },
+    {
+      "id": "echarts:examples/echarts/ex-gradient-area-variant-echarts-area-chart",
+      "title": "Gradient Area Variant \u00b7 Area Chart",
+      "family": "Area",
+      "export": "EChartsExampleExGradientAreaVariantEchartsAreaChart",
+      "source": "packages/siso-charts/src/echarts/examples/echarts/ex-gradient-area-variant-echarts-area-chart.tsx",
+      "engine": "echarts"
+    },
+    {
+      "id": "echarts:examples/echarts/ex-gradient-colors-bump-echarts-area-chart",
+      "title": "Gradient Colors Bump \u00b7 Area Chart",
+      "family": "Area",
+      "export": "EChartsExampleExGradientColorsBumpEchartsAreaChart",
+      "source": "packages/siso-charts/src/echarts/examples/echarts/ex-gradient-colors-bump-echarts-area-chart.tsx",
+      "engine": "echarts"
+    },
+    {
+      "id": "echarts:examples/echarts/ex-gradient-colors-bump-echarts-line-chart",
+      "title": "Gradient Colors Bump \u00b7 Line Chart",
+      "family": "Line",
+      "export": "EChartsExampleExGradientColorsBumpEchartsLineChart",
+      "source": "packages/siso-charts/src/echarts/examples/echarts/ex-gradient-colors-bump-echarts-line-chart.tsx",
+      "engine": "echarts"
+    },
+    {
+      "id": "echarts:examples/echarts/ex-gradient-colors-echarts-area-chart",
+      "title": "Gradient Colors \u00b7 Area Chart",
+      "family": "Area",
+      "export": "EChartsExampleExGradientColorsEchartsAreaChart",
+      "source": "packages/siso-charts/src/echarts/examples/echarts/ex-gradient-colors-echarts-area-chart.tsx",
+      "engine": "echarts"
+    },
+    {
+      "id": "echarts:examples/echarts/ex-gradient-colors-echarts-bar-chart",
+      "title": "Gradient Colors \u00b7 Bar Chart",
+      "family": "Bar",
+      "export": "EChartsExampleExGradientColorsEchartsBarChart",
+      "source": "packages/siso-charts/src/echarts/examples/echarts/ex-gradient-colors-echarts-bar-chart.tsx",
+      "engine": "echarts"
+    },
+    {
+      "id": "echarts:examples/echarts/ex-gradient-colors-echarts-composed-chart",
+      "title": "Gradient Colors \u00b7 Composed Chart",
+      "family": "Composed",
+      "export": "EChartsExampleExGradientColorsEchartsComposedChart",
+      "source": "packages/siso-charts/src/echarts/examples/echarts/ex-gradient-colors-echarts-composed-chart.tsx",
+      "engine": "echarts"
+    },
+    {
+      "id": "echarts:examples/echarts/ex-gradient-colors-echarts-line-chart",
+      "title": "Gradient Colors \u00b7 Line Chart",
+      "family": "Line",
+      "export": "EChartsExampleExGradientColorsEchartsLineChart",
+      "source": "packages/siso-charts/src/echarts/examples/echarts/ex-gradient-colors-echarts-line-chart.tsx",
+      "engine": "echarts"
+    },
+    {
+      "id": "echarts:examples/echarts/ex-gradient-colors-echarts-pie-chart",
+      "title": "Gradient Colors \u00b7 Pie Chart",
+      "family": "Pie",
+      "export": "EChartsExampleExGradientColorsEchartsPieChart",
+      "source": "packages/siso-charts/src/echarts/examples/echarts/ex-gradient-colors-echarts-pie-chart.tsx",
+      "engine": "echarts"
+    },
+    {
+      "id": "echarts:examples/echarts/ex-gradient-colors-echarts-radar-chart",
+      "title": "Gradient Colors \u00b7 Radar Chart",
+      "family": "Radar",
+      "export": "EChartsExampleExGradientColorsEchartsRadarChart",
+      "source": "packages/siso-charts/src/echarts/examples/echarts/ex-gradient-colors-echarts-radar-chart.tsx",
+      "engine": "echarts"
+    },
+    {
+      "id": "echarts:examples/echarts/ex-gradient-colors-echarts-radial-chart",
+      "title": "Gradient Colors \u00b7 Radial Chart",
+      "family": "Radial",
+      "export": "EChartsExampleExGradientColorsEchartsRadialChart",
+      "source": "packages/siso-charts/src/echarts/examples/echarts/ex-gradient-colors-echarts-radial-chart.tsx",
+      "engine": "echarts"
+    },
+    {
+      "id": "echarts:examples/echarts/ex-gradient-colors-echarts-sankey-chart",
+      "title": "Gradient Colors \u00b7 Sankey Chart",
+      "family": "Sankey",
+      "export": "EChartsExampleExGradientColorsEchartsSankeyChart",
+      "source": "packages/siso-charts/src/echarts/examples/echarts/ex-gradient-colors-echarts-sankey-chart.tsx",
+      "engine": "echarts"
+    },
+    {
+      "id": "echarts:examples/echarts/ex-gradient-reverse-area-variant-echarts-area-chart",
+      "title": "Gradient Reverse Area Variant \u00b7 Area Chart",
+      "family": "Area",
+      "export": "EChartsExampleExGradientReverseAreaVariantEchartsAreaChart",
+      "source": "packages/siso-charts/src/echarts/examples/echarts/ex-gradient-reverse-area-variant-echarts-area-chart.tsx",
+      "engine": "echarts"
+    },
+    {
+      "id": "echarts:examples/echarts/ex-gradient-variant-echarts-bar-chart",
+      "title": "Gradient Variant \u00b7 Bar Chart",
+      "family": "Bar",
+      "export": "EChartsExampleExGradientVariantEchartsBarChart",
+      "source": "packages/siso-charts/src/echarts/examples/echarts/ex-gradient-variant-echarts-bar-chart.tsx",
+      "engine": "echarts"
+    },
+    {
+      "id": "echarts:examples/echarts/ex-gradient-variant-echarts-composed-chart",
+      "title": "Gradient Variant \u00b7 Composed Chart",
+      "family": "Composed",
+      "export": "EChartsExampleExGradientVariantEchartsComposedChart",
+      "source": "packages/siso-charts/src/echarts/examples/echarts/ex-gradient-variant-echarts-composed-chart.tsx",
+      "engine": "echarts"
+    },
+    {
+      "id": "echarts:examples/echarts/ex-hatched-area-variant-echarts-area-chart",
+      "title": "Hatched Area Variant \u00b7 Area Chart",
+      "family": "Area",
+      "export": "EChartsExampleExHatchedAreaVariantEchartsAreaChart",
+      "source": "packages/siso-charts/src/echarts/examples/echarts/ex-hatched-area-variant-echarts-area-chart.tsx",
+      "engine": "echarts"
+    },
+    {
+      "id": "echarts:examples/echarts/ex-hatched-variant-echarts-bar-chart",
+      "title": "Hatched Variant \u00b7 Bar Chart",
+      "family": "Bar",
+      "export": "EChartsExampleExHatchedVariantEchartsBarChart",
+      "source": "packages/siso-charts/src/echarts/examples/echarts/ex-hatched-variant-echarts-bar-chart.tsx",
+      "engine": "echarts"
+    },
+    {
+      "id": "echarts:examples/echarts/ex-hatched-variant-echarts-composed-chart",
+      "title": "Hatched Variant \u00b7 Composed Chart",
+      "family": "Composed",
+      "export": "EChartsExampleExHatchedVariantEchartsComposedChart",
+      "source": "packages/siso-charts/src/echarts/examples/echarts/ex-hatched-variant-echarts-composed-chart.tsx",
+      "engine": "echarts"
+    },
+    {
+      "id": "echarts:examples/echarts/ex-horizontal-layout-echarts-bar-chart",
+      "title": "Horizontal Layout \u00b7 Bar Chart",
+      "family": "Bar",
+      "export": "EChartsExampleExHorizontalLayoutEchartsBarChart",
+      "source": "packages/siso-charts/src/echarts/examples/echarts/ex-horizontal-layout-echarts-bar-chart.tsx",
+      "engine": "echarts"
+    },
+    {
+      "id": "echarts:examples/echarts/ex-hover-highlight-echarts-area-chart",
+      "title": "Hover Highlight \u00b7 Area Chart",
+      "family": "Area",
+      "export": "EChartsExampleExHoverHighlightEchartsAreaChart",
+      "source": "packages/siso-charts/src/echarts/examples/echarts/ex-hover-highlight-echarts-area-chart.tsx",
+      "engine": "echarts"
+    },
+    {
+      "id": "echarts:examples/echarts/ex-hover-highlight-echarts-bar-chart",
+      "title": "Hover Highlight \u00b7 Bar Chart",
+      "family": "Bar",
+      "export": "EChartsExampleExHoverHighlightEchartsBarChart",
+      "source": "packages/siso-charts/src/echarts/examples/echarts/ex-hover-highlight-echarts-bar-chart.tsx",
+      "engine": "echarts"
+    },
+    {
+      "id": "echarts:examples/echarts/ex-hover-highlight-echarts-composed-chart",
+      "title": "Hover Highlight \u00b7 Composed Chart",
+      "family": "Composed",
+      "export": "EChartsExampleExHoverHighlightEchartsComposedChart",
+      "source": "packages/siso-charts/src/echarts/examples/echarts/ex-hover-highlight-echarts-composed-chart.tsx",
+      "engine": "echarts"
+    },
+    {
+      "id": "echarts:examples/echarts/ex-hover-reveal-echarts-area-chart",
+      "title": "Hover Reveal \u00b7 Area Chart",
+      "family": "Area",
+      "export": "EChartsExampleExHoverRevealEchartsAreaChart",
+      "source": "packages/siso-charts/src/echarts/examples/echarts/ex-hover-reveal-echarts-area-chart.tsx",
+      "engine": "echarts"
+    },
+    {
+      "id": "echarts:examples/echarts/ex-hover-reveal-echarts-line-chart",
+      "title": "Hover Reveal \u00b7 Line Chart",
+      "family": "Line",
+      "export": "EChartsExampleExHoverRevealEchartsLineChart",
+      "source": "packages/siso-charts/src/echarts/examples/echarts/ex-hover-reveal-echarts-line-chart.tsx",
+      "engine": "echarts"
+    },
+    {
+      "id": "echarts:examples/echarts/ex-labeled-nodes-echarts-sankey-chart",
+      "title": "Labeled Nodes \u00b7 Sankey Chart",
+      "family": "Sankey",
+      "export": "EChartsExampleExLabeledNodesEchartsSankeyChart",
+      "source": "packages/siso-charts/src/echarts/examples/echarts/ex-labeled-nodes-echarts-sankey-chart.tsx",
+      "engine": "echarts"
+    },
+    {
+      "id": "echarts:examples/echarts/ex-labels-echarts-pie-chart",
+      "title": "Labels \u00b7 Pie Chart",
+      "family": "Pie",
+      "export": "EChartsExampleExLabelsEchartsPieChart",
+      "source": "packages/siso-charts/src/echarts/examples/echarts/ex-labels-echarts-pie-chart.tsx",
+      "engine": "echarts"
+    },
+    {
+      "id": "echarts:examples/echarts/ex-legend-circle-echarts-line-chart",
+      "title": "Legend Circle \u00b7 Line Chart",
+      "family": "Line",
+      "export": "EChartsExampleExLegendCircleEchartsLineChart",
+      "source": "packages/siso-charts/src/echarts/examples/echarts/ex-legend-circle-echarts-line-chart.tsx",
+      "engine": "echarts"
+    },
+    {
+      "id": "echarts:examples/echarts/ex-legend-circle-outline-echarts-line-chart",
+      "title": "Legend Circle Outline \u00b7 Line Chart",
+      "family": "Line",
+      "export": "EChartsExampleExLegendCircleOutlineEchartsLineChart",
+      "source": "packages/siso-charts/src/echarts/examples/echarts/ex-legend-circle-outline-echarts-line-chart.tsx",
+      "engine": "echarts"
+    },
+    {
+      "id": "echarts:examples/echarts/ex-legend-horizontal-bar-echarts-line-chart",
+      "title": "Legend Horizontal Bar \u00b7 Line Chart",
+      "family": "Line",
+      "export": "EChartsExampleExLegendHorizontalBarEchartsLineChart",
+      "source": "packages/siso-charts/src/echarts/examples/echarts/ex-legend-horizontal-bar-echarts-line-chart.tsx",
+      "engine": "echarts"
+    },
+    {
+      "id": "echarts:examples/echarts/ex-legend-rounded-square-echarts-line-chart",
+      "title": "Legend Rounded Square \u00b7 Line Chart",
+      "family": "Line",
+      "export": "EChartsExampleExLegendRoundedSquareEchartsLineChart",
+      "source": "packages/siso-charts/src/echarts/examples/echarts/ex-legend-rounded-square-echarts-line-chart.tsx",
+      "engine": "echarts"
+    },
+    {
+      "id": "echarts:examples/echarts/ex-legend-rounded-square-outline-echarts-line-chart",
+      "title": "Legend Rounded Square Outline \u00b7 Line Chart",
+      "family": "Line",
+      "export": "EChartsExampleExLegendRoundedSquareOutlineEchartsLineChart",
+      "source": "packages/siso-charts/src/echarts/examples/echarts/ex-legend-rounded-square-outline-echarts-line-chart.tsx",
+      "engine": "echarts"
+    },
+    {
+      "id": "echarts:examples/echarts/ex-legend-square-echarts-line-chart",
+      "title": "Legend Square \u00b7 Line Chart",
+      "family": "Line",
+      "export": "EChartsExampleExLegendSquareEchartsLineChart",
+      "source": "packages/siso-charts/src/echarts/examples/echarts/ex-legend-square-echarts-line-chart.tsx",
+      "engine": "echarts"
+    },
+    {
+      "id": "echarts:examples/echarts/ex-legend-vertical-bar-echarts-line-chart",
+      "title": "Legend Vertical Bar \u00b7 Line Chart",
+      "family": "Line",
+      "export": "EChartsExampleExLegendVerticalBarEchartsLineChart",
+      "source": "packages/siso-charts/src/echarts/examples/echarts/ex-legend-vertical-bar-echarts-line-chart.tsx",
+      "engine": "echarts"
+    },
+    {
+      "id": "echarts:examples/echarts/ex-lines-area-variant-echarts-area-chart",
+      "title": "Lines Area Variant \u00b7 Area Chart",
+      "family": "Area",
+      "export": "EChartsExampleExLinesAreaVariantEchartsAreaChart",
+      "source": "packages/siso-charts/src/echarts/examples/echarts/ex-lines-area-variant-echarts-area-chart.tsx",
+      "engine": "echarts"
+    },
+    {
+      "id": "echarts:examples/echarts/ex-lines-variant-echarts-radar-chart",
+      "title": "Lines Variant \u00b7 Radar Chart",
+      "family": "Radar",
+      "export": "EChartsExampleExLinesVariantEchartsRadarChart",
+      "source": "packages/siso-charts/src/echarts/examples/echarts/ex-lines-variant-echarts-radar-chart.tsx",
+      "engine": "echarts"
+    },
+    {
+      "id": "echarts:examples/echarts/ex-loading-state-echarts-area-chart",
+      "title": "Loading State \u00b7 Area Chart",
+      "family": "Area",
+      "export": "EChartsExampleExLoadingStateEchartsAreaChart",
+      "source": "packages/siso-charts/src/echarts/examples/echarts/ex-loading-state-echarts-area-chart.tsx",
+      "engine": "echarts"
+    },
+    {
+      "id": "echarts:examples/echarts/ex-loading-state-echarts-bar-chart",
+      "title": "Loading State \u00b7 Bar Chart",
+      "family": "Bar",
+      "export": "EChartsExampleExLoadingStateEchartsBarChart",
+      "source": "packages/siso-charts/src/echarts/examples/echarts/ex-loading-state-echarts-bar-chart.tsx",
+      "engine": "echarts"
+    },
+    {
+      "id": "echarts:examples/echarts/ex-loading-state-echarts-composed-chart",
+      "title": "Loading State \u00b7 Composed Chart",
+      "family": "Composed",
+      "export": "EChartsExampleExLoadingStateEchartsComposedChart",
+      "source": "packages/siso-charts/src/echarts/examples/echarts/ex-loading-state-echarts-composed-chart.tsx",
+      "engine": "echarts"
+    },
+    {
+      "id": "echarts:examples/echarts/ex-loading-state-echarts-line-chart",
+      "title": "Loading State \u00b7 Line Chart",
+      "family": "Line",
+      "export": "EChartsExampleExLoadingStateEchartsLineChart",
+      "source": "packages/siso-charts/src/echarts/examples/echarts/ex-loading-state-echarts-line-chart.tsx",
+      "engine": "echarts"
+    },
+    {
+      "id": "echarts:examples/echarts/ex-loading-state-echarts-pie-chart",
+      "title": "Loading State \u00b7 Pie Chart",
+      "family": "Pie",
+      "export": "EChartsExampleExLoadingStateEchartsPieChart",
+      "source": "packages/siso-charts/src/echarts/examples/echarts/ex-loading-state-echarts-pie-chart.tsx",
+      "engine": "echarts"
+    },
+    {
+      "id": "echarts:examples/echarts/ex-loading-state-echarts-radar-chart",
+      "title": "Loading State \u00b7 Radar Chart",
+      "family": "Radar",
+      "export": "EChartsExampleExLoadingStateEchartsRadarChart",
+      "source": "packages/siso-charts/src/echarts/examples/echarts/ex-loading-state-echarts-radar-chart.tsx",
+      "engine": "echarts"
+    },
+    {
+      "id": "echarts:examples/echarts/ex-loading-state-echarts-radial-chart",
+      "title": "Loading State \u00b7 Radial Chart",
+      "family": "Radial",
+      "export": "EChartsExampleExLoadingStateEchartsRadialChart",
+      "source": "packages/siso-charts/src/echarts/examples/echarts/ex-loading-state-echarts-radial-chart.tsx",
+      "engine": "echarts"
+    },
+    {
+      "id": "echarts:examples/echarts/ex-loading-state-echarts-sankey-chart",
+      "title": "Loading State \u00b7 Sankey Chart",
+      "family": "Sankey",
+      "export": "EChartsExampleExLoadingStateEchartsSankeyChart",
+      "source": "packages/siso-charts/src/echarts/examples/echarts/ex-loading-state-echarts-sankey-chart.tsx",
+      "engine": "echarts"
+    },
+    {
+      "id": "echarts:examples/echarts/ex-max-highlight-echarts-bar-chart",
+      "title": "Max Highlight \u00b7 Bar Chart",
+      "family": "Bar",
+      "export": "EChartsExampleExMaxHighlightEchartsBarChart",
+      "source": "packages/siso-charts/src/echarts/examples/echarts/ex-max-highlight-echarts-bar-chart.tsx",
+      "engine": "echarts"
+    },
+    {
+      "id": "echarts:examples/echarts/ex-monotoney-curve-type-echarts-area-chart",
+      "title": "Monotoney Curve Type \u00b7 Area Chart",
+      "family": "Area",
+      "export": "EChartsExampleExMonotoneyCurveTypeEchartsAreaChart",
+      "source": "packages/siso-charts/src/echarts/examples/echarts/ex-monotoney-curve-type-echarts-area-chart.tsx",
+      "engine": "echarts"
+    },
+    {
+      "id": "echarts:examples/echarts/ex-monotoney-curve-type-echarts-line-chart",
+      "title": "Monotoney Curve Type \u00b7 Line Chart",
+      "family": "Line",
+      "export": "EChartsExampleExMonotoneyCurveTypeEchartsLineChart",
+      "source": "packages/siso-charts/src/echarts/examples/echarts/ex-monotoney-curve-type-echarts-line-chart.tsx",
+      "engine": "echarts"
+    },
+    {
+      "id": "echarts:examples/echarts/ex-outside-labels-echarts-pie-chart",
+      "title": "Outside Labels \u00b7 Pie Chart",
+      "family": "Pie",
+      "export": "EChartsExampleExOutsideLabelsEchartsPieChart",
+      "source": "packages/siso-charts/src/echarts/examples/echarts/ex-outside-labels-echarts-pie-chart.tsx",
+      "engine": "echarts"
+    },
+    {
+      "id": "echarts:examples/echarts/ex-outside-labels-echarts-sankey-chart",
+      "title": "Outside Labels \u00b7 Sankey Chart",
+      "family": "Sankey",
+      "export": "EChartsExampleExOutsideLabelsEchartsSankeyChart",
+      "source": "packages/siso-charts/src/echarts/examples/echarts/ex-outside-labels-echarts-sankey-chart.tsx",
+      "engine": "echarts"
+    },
+    {
+      "id": "echarts:examples/echarts/ex-overlapping-padded-echarts-pie-chart",
+      "title": "Overlapping Padded \u00b7 Pie Chart",
+      "family": "Pie",
+      "export": "EChartsExampleExOverlappingPaddedEchartsPieChart",
+      "source": "packages/siso-charts/src/echarts/examples/echarts/ex-overlapping-padded-echarts-pie-chart.tsx",
+      "engine": "echarts"
+    },
+    {
+      "id": "echarts:examples/echarts/ex-padded-echarts-pie-chart",
+      "title": "Padded \u00b7 Pie Chart",
+      "family": "Pie",
+      "export": "EChartsExampleExPaddedEchartsPieChart",
+      "source": "packages/siso-charts/src/echarts/examples/echarts/ex-padded-echarts-pie-chart.tsx",
+      "engine": "echarts"
+    },
+    {
+      "id": "echarts:examples/echarts/ex-percent-type-echarts-bar-chart",
+      "title": "Percent Type \u00b7 Bar Chart",
+      "family": "Bar",
+      "export": "EChartsExampleExPercentTypeEchartsBarChart",
+      "source": "packages/siso-charts/src/echarts/examples/echarts/ex-percent-type-echarts-bar-chart.tsx",
+      "engine": "echarts"
+    },
+    {
+      "id": "echarts:examples/echarts/ex-semi-variant-echarts-radial-chart",
+      "title": "Semi Variant \u00b7 Radial Chart",
+      "family": "Radial",
+      "export": "EChartsExampleExSemiVariantEchartsRadialChart",
+      "source": "packages/siso-charts/src/echarts/examples/echarts/ex-semi-variant-echarts-radial-chart.tsx",
+      "engine": "echarts"
+    },
+    {
+      "id": "echarts:examples/echarts/ex-solid-area-variant-echarts-area-chart",
+      "title": "Solid Area Variant \u00b7 Area Chart",
+      "family": "Area",
+      "export": "EChartsExampleExSolidAreaVariantEchartsAreaChart",
+      "source": "packages/siso-charts/src/echarts/examples/echarts/ex-solid-area-variant-echarts-area-chart.tsx",
+      "engine": "echarts"
+    },
+    {
+      "id": "echarts:examples/echarts/ex-solid-labeled-nodes-echarts-sankey-chart",
+      "title": "Solid Labeled Nodes \u00b7 Sankey Chart",
+      "family": "Sankey",
+      "export": "EChartsExampleExSolidLabeledNodesEchartsSankeyChart",
+      "source": "packages/siso-charts/src/echarts/examples/echarts/ex-solid-labeled-nodes-echarts-sankey-chart.tsx",
+      "engine": "echarts"
+    },
+    {
+      "id": "echarts:examples/echarts/ex-solid-link-variant-echarts-sankey-chart",
+      "title": "Solid Link Variant \u00b7 Sankey Chart",
+      "family": "Sankey",
+      "export": "EChartsExampleExSolidLinkVariantEchartsSankeyChart",
+      "source": "packages/siso-charts/src/echarts/examples/echarts/ex-solid-link-variant-echarts-sankey-chart.tsx",
+      "engine": "echarts"
+    },
+    {
+      "id": "echarts:examples/echarts/ex-solid-stroke-echarts-area-chart",
+      "title": "Solid Stroke \u00b7 Area Chart",
+      "family": "Area",
+      "export": "EChartsExampleExSolidStrokeEchartsAreaChart",
+      "source": "packages/siso-charts/src/echarts/examples/echarts/ex-solid-stroke-echarts-area-chart.tsx",
+      "engine": "echarts"
+    },
+    {
+      "id": "echarts:examples/echarts/ex-solid-stroke-echarts-line-chart",
+      "title": "Solid Stroke \u00b7 Line Chart",
+      "family": "Line",
+      "export": "EChartsExampleExSolidStrokeEchartsLineChart",
+      "source": "packages/siso-charts/src/echarts/examples/echarts/ex-solid-stroke-echarts-line-chart.tsx",
+      "engine": "echarts"
+    },
+    {
+      "id": "echarts:examples/echarts/ex-source-link-variant-echarts-sankey-chart",
+      "title": "Source Link Variant \u00b7 Sankey Chart",
+      "family": "Sankey",
+      "export": "EChartsExampleExSourceLinkVariantEchartsSankeyChart",
+      "source": "packages/siso-charts/src/echarts/examples/echarts/ex-source-link-variant-echarts-sankey-chart.tsx",
+      "engine": "echarts"
+    },
+    {
+      "id": "echarts:examples/echarts/ex-stacked-type-echarts-area-chart",
+      "title": "Stacked Type \u00b7 Area Chart",
+      "family": "Area",
+      "export": "EChartsExampleExStackedTypeEchartsAreaChart",
+      "source": "packages/siso-charts/src/echarts/examples/echarts/ex-stacked-type-echarts-area-chart.tsx",
+      "engine": "echarts"
+    },
+    {
+      "id": "echarts:examples/echarts/ex-stacked-type-echarts-bar-chart",
+      "title": "Stacked Type \u00b7 Bar Chart",
+      "family": "Bar",
+      "export": "EChartsExampleExStackedTypeEchartsBarChart",
+      "source": "packages/siso-charts/src/echarts/examples/echarts/ex-stacked-type-echarts-bar-chart.tsx",
+      "engine": "echarts"
+    },
+    {
+      "id": "echarts:examples/echarts/ex-step-curve-type-echarts-area-chart",
+      "title": "Step Curve Type \u00b7 Area Chart",
+      "family": "Area",
+      "export": "EChartsExampleExStepCurveTypeEchartsAreaChart",
+      "source": "packages/siso-charts/src/echarts/examples/echarts/ex-step-curve-type-echarts-area-chart.tsx",
+      "engine": "echarts"
+    },
+    {
+      "id": "echarts:examples/echarts/ex-step-curve-type-echarts-line-chart",
+      "title": "Step Curve Type \u00b7 Line Chart",
+      "family": "Line",
+      "export": "EChartsExampleExStepCurveTypeEchartsLineChart",
+      "source": "packages/siso-charts/src/echarts/examples/echarts/ex-step-curve-type-echarts-line-chart.tsx",
+      "engine": "echarts"
+    },
+    {
+      "id": "echarts:examples/echarts/ex-stripped-variant-echarts-bar-chart",
+      "title": "Stripped Variant \u00b7 Bar Chart",
+      "family": "Bar",
+      "export": "EChartsExampleExStrippedVariantEchartsBarChart",
+      "source": "packages/siso-charts/src/echarts/examples/echarts/ex-stripped-variant-echarts-bar-chart.tsx",
+      "engine": "echarts"
+    },
+    {
+      "id": "echarts:examples/echarts/ex-stripped-variant-echarts-composed-chart",
+      "title": "Stripped Variant \u00b7 Composed Chart",
+      "family": "Composed",
+      "export": "EChartsExampleExStrippedVariantEchartsComposedChart",
+      "source": "packages/siso-charts/src/echarts/examples/echarts/ex-stripped-variant-echarts-composed-chart.tsx",
+      "engine": "echarts"
+    },
+    {
+      "id": "echarts:examples/echarts/ex-svg-renderer-echarts-area-chart",
+      "title": "Svg Renderer \u00b7 Area Chart",
+      "family": "Area",
+      "export": "EChartsExampleExSvgRendererEchartsAreaChart",
+      "source": "packages/siso-charts/src/echarts/examples/echarts/ex-svg-renderer-echarts-area-chart.tsx",
+      "engine": "echarts"
+    },
+    {
+      "id": "echarts:examples/echarts/ex-svg-renderer-echarts-bar-chart",
+      "title": "Svg Renderer \u00b7 Bar Chart",
+      "family": "Bar",
+      "export": "EChartsExampleExSvgRendererEchartsBarChart",
+      "source": "packages/siso-charts/src/echarts/examples/echarts/ex-svg-renderer-echarts-bar-chart.tsx",
+      "engine": "echarts"
+    },
+    {
+      "id": "echarts:examples/echarts/ex-svg-renderer-echarts-composed-chart",
+      "title": "Svg Renderer \u00b7 Composed Chart",
+      "family": "Composed",
+      "export": "EChartsExampleExSvgRendererEchartsComposedChart",
+      "source": "packages/siso-charts/src/echarts/examples/echarts/ex-svg-renderer-echarts-composed-chart.tsx",
+      "engine": "echarts"
+    },
+    {
+      "id": "echarts:examples/echarts/ex-svg-renderer-echarts-line-chart",
+      "title": "Svg Renderer \u00b7 Line Chart",
+      "family": "Line",
+      "export": "EChartsExampleExSvgRendererEchartsLineChart",
+      "source": "packages/siso-charts/src/echarts/examples/echarts/ex-svg-renderer-echarts-line-chart.tsx",
+      "engine": "echarts"
+    },
+    {
+      "id": "echarts:examples/echarts/ex-svg-renderer-echarts-pie-chart",
+      "title": "Svg Renderer \u00b7 Pie Chart",
+      "family": "Pie",
+      "export": "EChartsExampleExSvgRendererEchartsPieChart",
+      "source": "packages/siso-charts/src/echarts/examples/echarts/ex-svg-renderer-echarts-pie-chart.tsx",
+      "engine": "echarts"
+    },
+    {
+      "id": "echarts:examples/echarts/ex-svg-renderer-echarts-radar-chart",
+      "title": "Svg Renderer \u00b7 Radar Chart",
+      "family": "Radar",
+      "export": "EChartsExampleExSvgRendererEchartsRadarChart",
+      "source": "packages/siso-charts/src/echarts/examples/echarts/ex-svg-renderer-echarts-radar-chart.tsx",
+      "engine": "echarts"
+    },
+    {
+      "id": "echarts:examples/echarts/ex-svg-renderer-echarts-radial-chart",
+      "title": "Svg Renderer \u00b7 Radial Chart",
+      "family": "Radial",
+      "export": "EChartsExampleExSvgRendererEchartsRadialChart",
+      "source": "packages/siso-charts/src/echarts/examples/echarts/ex-svg-renderer-echarts-radial-chart.tsx",
+      "engine": "echarts"
+    },
+    {
+      "id": "echarts:examples/echarts/ex-svg-renderer-echarts-sankey-chart",
+      "title": "Svg Renderer \u00b7 Sankey Chart",
+      "family": "Sankey",
+      "export": "EChartsExampleExSvgRendererEchartsSankeyChart",
+      "source": "packages/siso-charts/src/echarts/examples/echarts/ex-svg-renderer-echarts-sankey-chart.tsx",
+      "engine": "echarts"
+    },
+    {
+      "id": "echarts:examples/echarts/ex-tooltip-default-echarts-bar-chart",
+      "title": "Tooltip Default \u00b7 Bar Chart",
+      "family": "Bar",
+      "export": "EChartsExampleExTooltipDefaultEchartsBarChart",
+      "source": "packages/siso-charts/src/echarts/examples/echarts/ex-tooltip-default-echarts-bar-chart.tsx",
+      "engine": "echarts"
+    },
+    {
+      "id": "echarts:examples/echarts/ex-tooltip-frosted-glass-echarts-bar-chart",
+      "title": "Tooltip Frosted Glass \u00b7 Bar Chart",
+      "family": "Bar",
+      "export": "EChartsExampleExTooltipFrostedGlassEchartsBarChart",
+      "source": "packages/siso-charts/src/echarts/examples/echarts/ex-tooltip-frosted-glass-echarts-bar-chart.tsx",
+      "engine": "echarts"
+    },
+    {
+      "id": "echarts:blocks/echarts/b-allocation-echarts-sankey-chart",
+      "title": "Allocation \u00b7 Sankey Chart",
+      "family": "Sankey",
+      "export": "EChartsBlockBAllocationEchartsSankeyChart",
+      "source": "packages/siso-charts/src/echarts/blocks/echarts/b-allocation-echarts-sankey-chart.tsx",
+      "engine": "echarts"
+    },
+    {
+      "id": "echarts:blocks/echarts/b-audience-echarts-area-chart",
+      "title": "Audience \u00b7 Area Chart",
+      "family": "Area",
+      "export": "EChartsBlockBAudienceEchartsAreaChart",
+      "source": "packages/siso-charts/src/echarts/blocks/echarts/b-audience-echarts-area-chart.tsx",
+      "engine": "echarts"
+    },
+    {
+      "id": "echarts:blocks/echarts/b-benchmark-echarts-area-chart",
+      "title": "Benchmark \u00b7 Area Chart",
+      "family": "Area",
+      "export": "EChartsBlockBBenchmarkEchartsAreaChart",
+      "source": "packages/siso-charts/src/echarts/blocks/echarts/b-benchmark-echarts-area-chart.tsx",
+      "engine": "echarts"
+    },
+    {
+      "id": "echarts:blocks/echarts/b-budget-echarts-radial-chart",
+      "title": "Budget \u00b7 Radial Chart",
+      "family": "Radial",
+      "export": "EChartsBlockBBudgetEchartsRadialChart",
+      "source": "packages/siso-charts/src/echarts/blocks/echarts/b-budget-echarts-radial-chart.tsx",
+      "engine": "echarts"
+    },
+    {
+      "id": "echarts:blocks/echarts/b-cache-tiers-echarts-radial-chart",
+      "title": "Cache Tiers \u00b7 Radial Chart",
+      "family": "Radial",
+      "export": "EChartsBlockBCacheTiersEchartsRadialChart",
+      "source": "packages/siso-charts/src/echarts/blocks/echarts/b-cache-tiers-echarts-radial-chart.tsx",
+      "engine": "echarts"
+    },
+    {
+      "id": "echarts:blocks/echarts/b-grid-echarts-bar-chart",
+      "title": "Grid \u00b7 Bar Chart",
+      "family": "Bar",
+      "export": "EChartsBlockBGridEchartsBarChart",
+      "source": "packages/siso-charts/src/echarts/blocks/echarts/b-grid-echarts-bar-chart.tsx",
+      "engine": "echarts"
+    },
+    {
+      "id": "echarts:blocks/echarts/b-latency-echarts-area-chart",
+      "title": "Latency \u00b7 Area Chart",
+      "family": "Area",
+      "export": "EChartsBlockBLatencyEchartsAreaChart",
+      "source": "packages/siso-charts/src/echarts/blocks/echarts/b-latency-echarts-area-chart.tsx",
+      "engine": "echarts"
+    },
+    {
+      "id": "echarts:blocks/echarts/b-market-share-echarts-pie-chart",
+      "title": "Market Share \u00b7 Pie Chart",
+      "family": "Pie",
+      "export": "EChartsBlockBMarketShareEchartsPieChart",
+      "source": "packages/siso-charts/src/echarts/blocks/echarts/b-market-share-echarts-pie-chart.tsx",
+      "engine": "echarts"
+    },
+    {
+      "id": "echarts:blocks/echarts/b-monospace-echarts-bar-chart",
+      "title": "Monospace \u00b7 Bar Chart",
+      "family": "Bar",
+      "export": "EChartsBlockBMonospaceEchartsBarChart",
+      "source": "packages/siso-charts/src/echarts/blocks/echarts/b-monospace-echarts-bar-chart.tsx",
+      "engine": "echarts"
+    },
+    {
+      "id": "echarts:blocks/echarts/b-payouts-echarts-line-chart",
+      "title": "Payouts \u00b7 Line Chart",
+      "family": "Line",
+      "export": "EChartsBlockBPayoutsEchartsLineChart",
+      "source": "packages/siso-charts/src/echarts/blocks/echarts/b-payouts-echarts-line-chart.tsx",
+      "engine": "echarts"
+    },
+    {
+      "id": "echarts:blocks/echarts/b-peak-echarts-bar-chart",
+      "title": "Peak \u00b7 Bar Chart",
+      "family": "Bar",
+      "export": "EChartsBlockBPeakEchartsBarChart",
+      "source": "packages/siso-charts/src/echarts/blocks/echarts/b-peak-echarts-bar-chart.tsx",
+      "engine": "echarts"
+    },
+    {
+      "id": "echarts:blocks/echarts/b-pipeline-echarts-sankey-chart",
+      "title": "Pipeline \u00b7 Sankey Chart",
+      "family": "Sankey",
+      "export": "EChartsBlockBPipelineEchartsSankeyChart",
+      "source": "packages/siso-charts/src/echarts/blocks/echarts/b-pipeline-echarts-sankey-chart.tsx",
+      "engine": "echarts"
+    },
+    {
+      "id": "echarts:blocks/echarts/b-portfolio-echarts-area-chart",
+      "title": "Portfolio \u00b7 Area Chart",
+      "family": "Area",
+      "export": "EChartsBlockBPortfolioEchartsAreaChart",
+      "source": "packages/siso-charts/src/echarts/blocks/echarts/b-portfolio-echarts-area-chart.tsx",
+      "engine": "echarts"
+    },
+    {
+      "id": "echarts:blocks/echarts/b-progress-rings-echarts-pie-chart",
+      "title": "Progress Rings \u00b7 Pie Chart",
+      "family": "Pie",
+      "export": "EChartsBlockBProgressRingsEchartsPieChart",
+      "source": "packages/siso-charts/src/echarts/blocks/echarts/b-progress-rings-echarts-pie-chart.tsx",
+      "engine": "echarts"
+    },
+    {
+      "id": "echarts:blocks/echarts/b-reliability-score-echarts-pie-chart",
+      "title": "Reliability Score \u00b7 Pie Chart",
+      "family": "Pie",
+      "export": "EChartsBlockBReliabilityScoreEchartsPieChart",
+      "source": "packages/siso-charts/src/echarts/blocks/echarts/b-reliability-score-echarts-pie-chart.tsx",
+      "engine": "echarts"
+    },
+    {
+      "id": "echarts:blocks/echarts/b-revenue-mix-echarts-pie-chart",
+      "title": "Revenue Mix \u00b7 Pie Chart",
+      "family": "Pie",
+      "export": "EChartsBlockBRevenueMixEchartsPieChart",
+      "source": "packages/siso-charts/src/echarts/blocks/echarts/b-revenue-mix-echarts-pie-chart.tsx",
+      "engine": "echarts"
+    },
+    {
+      "id": "echarts:blocks/echarts/b-ride-echarts-radial-chart",
+      "title": "Ride \u00b7 Radial Chart",
+      "family": "Radial",
+      "export": "EChartsBlockBRideEchartsRadialChart",
+      "source": "packages/siso-charts/src/echarts/blocks/echarts/b-ride-echarts-radial-chart.tsx",
+      "engine": "echarts"
+    },
+    {
+      "id": "echarts:blocks/echarts/b-shipments-echarts-line-chart",
+      "title": "Shipments \u00b7 Line Chart",
+      "family": "Line",
+      "export": "EChartsBlockBShipmentsEchartsLineChart",
+      "source": "packages/siso-charts/src/echarts/blocks/echarts/b-shipments-echarts-line-chart.tsx",
+      "engine": "echarts"
+    }
+  ],
+  "presetCount": 252,
+  "rechartsPresetCount": 117,
+  "echartsPresetCount": 135,
+  "provenance": "Selected MIT Arc and Evil Charts source preserved with original styles, motion and interactions; additional SISO chart behaviors remain available. Free tier and source hashes are recorded in source-provenance.json.",
+  "decisions": [
+    "charts/ownership-series.json",
+    "charts/ownership-special.json"
+  ],
+  "deferred": [
+    "interactive maps",
+    "physics/3D effects",
+    "rich trading overlays",
+    "streaming data transports"
+  ],
+  "compatibility": "Arc-prefixed exports again point at the actual MIT/free source, including motion, scrubbing, focus/keyboard and imperative APIs. The source subpath exports their complete original contracts."
+}

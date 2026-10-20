@@ -1,0 +1,133 @@
+#!/usr/bin/env python3
+"""Exact copies: parts whose code is the same in two or more libraries.
+
+Shaan, 10 Oct: "which ones are duplicates". Many registries republish another library's parts (shadcn's button,
+Magic UI's marquee) under their own name. Two parts are copies when their code is the same once the things a
+republisher changes are taken out: comments, whitespace, "use client", and import paths (each registry files its
+parts in its own folders). Renamed copies (the same code under another export name) count too: the component's own
+name is taken out. Each group gets an original, the copy the others most likely came from: the part of a library
+that is the known source (shadcn, then the libraries in ORIGINS; never a collection like catalogs; a published registry before a
+repository found on GitHub, bin/pull-github, whose parts are mostly copied), else the one held by the most-installed registry,
+else the first by name.
+
+  bin/dupes              # writes dupes.jsonl: {"key", "ids", "libs", "original"} for every group in 2+ libraries
+  bin/dupes --near       # and near.jsonl: {"id", "near_of", "sim"} for parts nearly the same as one in another library
+
+Near copies are edited forks (a class changed, a prop added): MinHash over 5-token shingles of the same normalised
+code (64 hashes, numpy), banded 16 x 4 to find candidates, kept when the estimate is 0.9 or more. A part's near
+original is its best-ranked neighbour by the same ranking as exact copies; one with no better-ranked neighbour is an
+original. Exact copies are left to dupes.jsonl.
+
+Needs the parts' code on disk (git sparse-checkout add '/r/*/*').
+"""
+import collections, hashlib, json, os, re
+
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+# registries that collect other libraries' parts: never the original while the library itself is held (10 Oct:
+# catalogs was in 1,304 groups with 22 other libraries)
+COLLECTIONS = {"catalogs", "registrydirectory"}
+ORIGINS = ["shadcn", "shadcn-ui", "magicui", "aceternity", "originui", "motion-primitives", "animate-ui", "kokonutui",
+           "react-bits", "cult-ui", "eldoraui", "syntax-ui", "hextaui", "kibo-ui", "tailark", "shadcnblocks"]
+
+
+def norm(code, names):
+    c = re.sub(r"/\*.*?\*/", " ", code, flags=re.S)
+    c = re.sub(r"(?m)(^|[^:\"'])//.*$", r"\1", c)
+    c = re.sub(r"[\"']use client[\"'];?", " ", c)
+    # an import's path names the republisher's folders, not the code: keep only what is imported and its last segment
+    c = re.sub(r"from\s+[\"']([^\"']+)[\"']", lambda m: "from '" + m.group(1).rstrip("/").rsplit("/", 1)[-1] + "'", c)
+    for n in names:
+        if n and len(n) > 2: c = re.sub(rf"\b{re.escape(n)}\b", "X", c)
+    return re.sub(r"\s+", "", c)
+
+
+TOKEN = re.compile(r"[A-Za-z_]\w*|\d+|[^\sA-Za-z_\d]")
+
+
+def near(parts, rank, skip, threshold=0.9, nperm=64, bands=16):
+    """parts: [(row, normalised code)]; rank: a row's sort key (best first); skip: ids already exact copies"""
+    import numpy as np
+    rng = np.random.default_rng(1)
+    salts = rng.integers(1, 2**63 - 1, size=nperm, dtype=np.uint64)
+    mult = np.uint64(0x9E3779B97F4A7C15)
+    rows_per = nperm // bands
+    sig, meta = {}, {}
+    for x, code in parts:
+        if x["id"] in skip: continue
+        toks = TOKEN.findall(code)
+        sh = {hash(" ".join(toks[i:i + 5])) for i in range(max(1, len(toks) - 4))}
+        if len(sh) < 30: continue
+        h = np.fromiter((v & 0xFFFFFFFFFFFF for v in sh), dtype=np.uint64, count=len(sh))
+        sig[x["id"]] = ((h[:, None] ^ salts[None, :]) * mult).min(axis=0)
+        meta[x["id"]] = x
+    buckets = collections.defaultdict(list)
+    for i, s_ in sig.items():
+        for b in range(bands): buckets[(b, s_[b * rows_per:(b + 1) * rows_per].tobytes())].append(i)
+    nb = collections.defaultdict(dict)
+    for ids in buckets.values():
+        if not 1 < len(ids) < 500: continue
+        for j, a in enumerate(ids):
+            for c in ids[j + 1:]:
+                if meta[a]["reg"] == meta[c]["reg"] or c in nb[a]: continue
+                est = float(np.mean(sig[a] == sig[c]))
+                if est >= threshold: nb[a][c] = nb[c][a] = est
+    out = []
+    for i, ns in nb.items():
+        better = [n for n in ns if rank(meta[n]) < rank(meta[i])]
+        if better:
+            o = min(better, key=lambda n: rank(meta[n]))
+            out.append({"id": i, "near_of": o, "sim": round(ns[o], 2)})
+    return sorted(out, key=lambda r: r["id"]), len(sig)
+
+
+def main():
+    import argparse
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--near", action="store_true")
+    args = ap.parse_args()
+    rows = [json.loads(l) for l in open(os.path.join(ROOT, "catalog.jsonl"))]
+    uses = collections.Counter()
+    for x in rows: uses[x["reg"]] += 1
+    groups, seen, parts = collections.defaultdict(list), 0, []
+    for x in rows:
+        p = os.path.join(ROOT, x.get("code") or "")
+        if not x.get("code") or not os.path.exists(p): continue
+        try:
+            item = json.load(open(p))
+        except ValueError:
+            continue
+        files = [f.get("content") or "" for f in item.get("files") or [] if (f.get("content") or "").strip()]
+        if not files or sum(len(f) for f in files) < 200: continue  # a stub or an alias is not a part to compare
+        names = set(re.findall(r"export\s+(?:default\s+)?(?:function|const|class)\s+(\w+)", "\n".join(files)))
+        title = re.sub(r"[^A-Za-z0-9]", "", x.get("title") or "")
+        names |= {title, title + "Props", x["name"].split("/")[-1]}
+        normed = sorted(norm(f, names) for f in files)
+        key = hashlib.sha1("\n".join(normed).encode()).hexdigest()[:16]
+        groups[key].append(x)
+        if args.near and sum(len(f) for f in files) >= 400: parts.append((x, "\n".join(normed)))
+        seen += 1
+    rank = {r: i for i, r in enumerate(ORIGINS)}
+    out = []
+    for key, xs in groups.items():
+        libs = {x["reg"] for x in xs}
+        if len(libs) < 2: continue
+        orig = min(xs, key=lambda x: (x["reg"] in COLLECTIONS, x["reg"].startswith("gh-"), rank.get(x["reg"], len(rank)), -uses[x["reg"]], x["id"]))
+        out.append({"key": key, "ids": sorted(x["id"] for x in xs), "libs": len(libs), "original": orig["id"]})
+    out.sort(key=lambda g: (-g["libs"], -len(g["ids"])))
+    with open(os.path.join(ROOT, "dupes.jsonl"), "w") as f:
+        for g in out: f.write(json.dumps(g) + "\n")
+    copies = sum(len(g["ids"]) - 1 for g in out)
+    if args.near:
+        skip = {i for g in out for i in g["ids"] if i != g["original"]}
+        key = lambda x: (x["reg"] in COLLECTIONS, x["reg"].startswith("gh-"), rank.get(x["reg"], len(rank)), -uses[x["reg"]], x["id"])
+        nr, n = near(parts, key, skip)
+        with open(os.path.join(ROOT, "near.jsonl"), "w") as f:
+            for r in nr: f.write(json.dumps(r) + "\n")
+        print(f"near: {n} parts compared; {len(nr)} nearly the same as a better-ranked part in another library "
+              f"({sum(1 for r in nr if r['sim'] >= 0.95)} at 0.95+)")
+    print(f"{seen} parts compared; {len(out)} groups of the same code in 2+ libraries; {copies} copies of an original")
+    for g in out[:12]: print(g["libs"], len(g["ids"]), g["original"], g["ids"][:4])
+
+
+if __name__ == "__main__":
+    main()

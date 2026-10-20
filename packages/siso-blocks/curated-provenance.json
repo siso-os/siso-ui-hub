@@ -1,0 +1,70 @@
+{
+  "sources": [
+    {
+      "id": "uiable:popover-notifications",
+      "license": "MIT",
+      "copyright": "Copyright (c) 2026 CodedThemes",
+      "commit": "e182f747a5597cc2e856f4eaffdeacefcea72f2a",
+      "files": [
+        {
+          "source": "https://github.com/codedthemes/uiable/blob/e182f747a5597cc2e856f4eaffdeacefcea72f2a/src/components/uiable/popover/popover-notifications.tsx",
+          "target": "packages/siso-blocks/src/curated/uiable/notifications.tsx",
+          "sourceSha256": "11bc66b5cd78f0d25d6f8ff969ad294de6d529f25ebfe14b5d97f147aa0bc8ee",
+          "adaptedSha256": "0f497e03e8eb7245018f89db1a49eb8ab1730b734afc388167e771ca258d5728",
+          "changes": [
+            "local primitive imports",
+            "notifications accessible name",
+            "catalogue marker",
+            "optional host content and callbacks",
+            "local mark-read feedback; no invented backend",
+            "removed misleading hover and pointer styling from static default rows"
+          ]
+        },
+        {
+          "source": "https://github.com/codedthemes/uiable/blob/e182f747a5597cc2e856f4eaffdeacefcea72f2a/src/components/ui/avatar.tsx",
+          "target": "packages/siso-blocks/src/curated/uiable/ui/avatar.tsx",
+          "sourceSha256": "86545a08927e60cb5a2144916dc2c1cb736530bd1a0f860d32bec484fa1b9b49",
+          "adaptedSha256": "1ed877909011381f54ccdab8976ca082c9e1e9be821d96844dba3dd9aa85ccf4",
+          "changes": [
+            "local primitive imports",
+            "notifications accessible name",
+            "catalogue marker"
+          ]
+        },
+        {
+          "source": "https://github.com/codedthemes/uiable/blob/e182f747a5597cc2e856f4eaffdeacefcea72f2a/src/components/ui/button.tsx",
+          "target": "packages/siso-blocks/src/curated/uiable/ui/button.tsx",
+          "sourceSha256": "ebf24d0847575e3128986c3df7a6d58184c0984d73b893e52da83079fdd40cde",
+          "adaptedSha256": "32357c81ed221b3b397d8526da3097b46663074053a7cb74ddca9b454ea4a725",
+          "changes": [
+            "local primitive imports",
+            "notifications accessible name",
+            "catalogue marker"
+          ]
+        },
+        {
+          "source": "https://github.com/codedthemes/uiable/blob/e182f747a5597cc2e856f4eaffdeacefcea72f2a/src/components/ui/popover.tsx",
+          "target": "packages/siso-blocks/src/curated/uiable/ui/popover.tsx",
+          "sourceSha256": "5c941b226c69ec0a3a0492212e300cf3c866f89b61682fa0d821785a99d07349",
+          "adaptedSha256": "b2504cdf9c0a2088e6fdda0b5ba5f1fa0a0a54ced3c9f3ae7bc1f0d7a322e95e",
+          "changes": [
+            "local primitive imports",
+            "notifications accessible name",
+            "catalogue marker"
+          ]
+        },
+        {
+          "source": "https://github.com/codedthemes/uiable/blob/e182f747a5597cc2e856f4eaffdeacefcea72f2a/src/components/ui/separator.tsx",
+          "target": "packages/siso-blocks/src/curated/uiable/ui/separator.tsx",
+          "sourceSha256": "a619e76ccf1f5a83347024ad43b23363c6651caf7be97972ca80344757564b30",
+          "adaptedSha256": "1690a355f73c43910e98c64b919e121621d6ab1858c0b4ad77ac6f6f16016b21",
+          "changes": [
+            "local primitive imports",
+            "notifications accessible name",
+            "catalogue marker"
+          ]
+        }
+      ]
+    }
+  ]
+}

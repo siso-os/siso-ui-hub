@@ -25,6 +25,10 @@ at **[hub.sisolabs.space](https://hub.sisolabs.space)**, or search it from your 
 
 More on [the website](https://www.sisolabs.space/ui-hub/).
 
+## Reusable SISO packages
+
+The UI Hub frame, dashboard widgets, navigation, controls, interaction blocks and charts are also available as the private `@siso/ui` suite. [Browse the package workbench](https://siso-ui-suite.siso-show.pages.dev/) and use [PACKAGES.md](PACKAGES.md) for the inventory, installation channel and composition rules.
+
 ## Install
 
 You need Python 3 and git. Nothing else: no packages, no network calls.

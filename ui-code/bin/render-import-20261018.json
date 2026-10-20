@@ -1,0 +1,89 @@
+{
+  "schema": "siso-code-only-import/1",
+  "source_repo": "sisodias/siso-ui-render",
+  "source_pin": "2f9bb0af24e22bf181e51a57c994d40f41f0d01a",
+  "source_ref": "refs/heads/main",
+  "base_commit": "88a5b37a3508e83edfe5db1f1257cd87c6c8a0a9",
+  "module_id": "siso.packages.ui",
+  "files": [
+    {
+      "source": "bin/render",
+      "source_blob": "ea4e125c0297df6a4b52a637605dbf689c2467e5",
+      "source_bytes": 34303,
+      "source_url": "https://github.com/sisodias/siso-ui-render/blob/2f9bb0af24e22bf181e51a57c994d40f41f0d01a/bin/render",
+      "source_mode": "100755",
+      "destination": "platform/ui/ui-code/bin/render",
+      "destination_blob": "de16c78791127220906b2ac72c3ecb252abd25c6",
+      "destination_sha256": "310ec3626425de3f3510526e16585816f542e1befd8bc59dca203be57999a033",
+      "destination_mode": "100755",
+      "disposition": "preserved-existing"
+    },
+    {
+      "source": "bin/render-bundle.mjs",
+      "source_blob": "4f2b24ffd0e7198d89ca40c85863633f3b1d1f70",
+      "source_bytes": 7628,
+      "source_url": "https://github.com/sisodias/siso-ui-render/blob/2f9bb0af24e22bf181e51a57c994d40f41f0d01a/bin/render-bundle.mjs",
+      "source_mode": "100644",
+      "destination": "platform/ui/ui-code/bin/render-bundle.mjs",
+      "destination_blob": "4f2b24ffd0e7198d89ca40c85863633f3b1d1f70",
+      "destination_sha256": "af1c0ca9bd9497e29d94eb6fdb6e4778290b1dd09b0b42418cb232495f1769df",
+      "destination_mode": "100644",
+      "disposition": "preserved-existing"
+    }
+  ],
+  "allowlist": [
+    "bin/render",
+    "bin/render-bundle.mjs"
+  ],
+  "exclusions": "All other source paths and history; corpus, media, manifests, reviews, runtime receipts, logs, credentials, sessions, private/client/HALO payloads. No source retirement.",
+  "external_originals": "/tmp/spine/sol-small-tooling-sources-20261018/siso-ui-render",
+  "source_scan": {
+    "tool": "gitleaks dir --redact",
+    "exit_code": 0,
+    "report": "/tmp/spine/sol-small-tooling-source-scan.json"
+  },
+  "acceptance": "Code-only integration candidate. No runtime adoption, real pushes/archives, full corpus, browser or visual acceptance.",
+  "parent_ledger": {
+    "required": "Record canonical-existing disposition, not a second code import. Link both pinned source files to existing canonical files and preserve their current destination blobs.",
+    "source": "sisodias/siso-ui-render",
+    "source_sha": "2f9bb0af24e22bf181e51a57c994d40f41f0d01a",
+    "path": "platform/ui/ui-code/bin",
+    "module_id": "siso.packages.ui",
+    "allowlist": [
+      "bin/render",
+      "bin/render-bundle.mjs"
+    ],
+    "evidence": "This receipt (existing renderer comparison, pins, runtime inputs and isolated dependency hold); no renderer README or implementation changed.",
+    "import_type": "code-only-allowlist",
+    "history_reachable": false,
+    "subtree_import": false,
+    "originals_retained": true,
+    "checks_requiring_full_checkout": [
+      "bin/siso index --check",
+      "bin/check-layout",
+      "bin/check-deps"
+    ]
+  },
+  "adaptations": [
+    "No renderer overwritten or duplicated. Existing Python renderer is a superset: expanded public package list, GitHub duplicate suppression, npm --ignore-scripts. Bundle is exact."
+  ],
+  "checks": {
+    "python_ast": "pass",
+    "node_check": "pass",
+    "isolated_bundle": "blocked: ERR_MODULE_NOT_FOUND: Cannot find package esbuild; no install/network/browser",
+    "global_checks": "Sparse checkout: index --check exits 1 for absent agents/adapters/module.json; check-layout exits 1 for absent library; check-deps exits 1 for absent @siso/ui workspace dependency. Parent reruns full checkout."
+  },
+  "target_scan": {
+    "tool": "gitleaks dir --redact",
+    "exit_code": 0,
+    "outgoing_history": "Required zero exit before branch push; final result reported with destination commit."
+  },
+  "runtime_inputs": {
+    "python": "Python 3; full run additionally needs Pillow and playwright.async_api",
+    "node": "Node.js plus existing external sandbox node_modules/esbuild, React/ReactDOM, Tailwind v4 and the PACKAGES list in bin/render; each component may require additional packages",
+    "selection": "--print-jsonl reads classified.jsonl, catalog.jsonl, optional dupes.jsonl and code JSON paths relative to platform/ui/ui-code. Not exercised with corpus.",
+    "bundle": "run inside isolated pre-existing sandbox: render-bundle.mjs jobs.json results.json; jobs provide key, dir and entry or entries, with source files already held locally",
+    "full_run": "stdin part JSONL with key, files, deps and renderer metadata; external DIR contains prepared shims/src/theme.css/node_modules; UI_THUMBS writable external output; PW_SHELL existing compatible headless executable or Playwright browser cache",
+    "setup": "setup DIR fetches shadcn registries and invokes npm install; not run or required for this code-only import. No missing-file shims were introduced or exercised."
+  }
+}

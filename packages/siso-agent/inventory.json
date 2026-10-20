@@ -1,0 +1,97 @@
+{
+  "package": "@siso/agent",
+  "version": "0.4.1",
+  "provenance": "Moved from Agent Base (apps/agent-base/packages: siso-composer, siso-voice, halo-face, siso-icons, siso-os); see provenance.json and NOTICE",
+  "components": [
+    {
+      "name": "composer",
+      "variations": [
+        "ActivityPill",
+        "ActivityPopover",
+        "ArtifactShelfView",
+        "ComposerFrame",
+        "ComposerHud",
+        "ContextMeter",
+        "ContextPopover",
+        "ModelPicker",
+        "UsagePopover",
+        "UsageRing",
+        "UsageRingCard"
+      ]
+    },
+    {
+      "name": "voice",
+      "variations": [
+        "ActivityWall",
+        "AppBreakdownChart",
+        "Card",
+        "ChartShell",
+        "HourRhythmChart",
+        "Select",
+        "SettingRow",
+        "StatPill",
+        "Switch",
+        "VoiceCalendar",
+        "VoiceDictionary",
+        "VoiceHistory",
+        "VoiceSettings",
+        "VoiceStats",
+        "WordsTrendChart",
+        "clock",
+        "dayKey",
+        "dayLabel",
+        "formatGrouped",
+        "formatSavedMinutes",
+        "formatSeconds",
+        "historyPath",
+        "parseDay",
+        "timeAgo",
+        "useVoiceActivity",
+        "useVoiceApi",
+        "useVoiceDays",
+        "useVoiceDictionary",
+        "useVoiceHistory",
+        "useVoiceSettings",
+        "useVoiceStats",
+        "useVoiceStatus",
+        "voiceGet",
+        "voiceRestart",
+        "voiceSend",
+        "voiceWrites"
+      ]
+    },
+    {
+      "name": "face",
+      "variations": [
+        "AgentFace",
+        "LIVING_ICONS",
+        "LivingIcon",
+        "WorkspaceMark",
+        "projectHue"
+      ]
+    },
+    {
+      "name": "icons",
+      "variations": [
+        "AnimatedNavIcon",
+        "ICONS",
+        "isIconName",
+        "staticGlyph"
+      ]
+    },
+    {
+      "name": "os",
+      "variations": [
+        "OsProvider",
+        "createBus",
+        "defineRegistry",
+        "manifestsFrom",
+        "useBus",
+        "useModules",
+        "useOsEvent",
+        "useRegistry",
+        "useSpaces"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+// uihub: siso:package-workbench
+import { useState, type CSSProperties } from "react"
+import { Button } from "@siso/ui/atoms/source"
+import { sisoTokenSets, sisoTokenVars, sisoProductPalettes, SCHEMES, SURFACES, FONTS, SISO_TOKENS, tokenVars, type Tokens } from "@siso/ui/tokens"
+import "@siso/ui/atoms/source.css"
+
+export default function TokenPage() {
+  const [setId,setSetId] = useState("hub")
+  const [theme,setTheme] = useState<"dark"|"light">("dark")
+  const [frame,setFrame] = useState<Tokens>({...SISO_TOKENS})
+  const [mode,setMode] = useState<"source"|"frame">("source")
+  const [product,setProduct] = useState<string>("all")
+  const current = sisoTokenSets.find(s=>s.id===setId)!
+  const palette = sisoProductPalettes.find(p=>p.id===product)!
+  const vars = {...sisoTokenVars(setId,theme), ...(mode==="frame" ? tokenVars(frame,theme) : {})} as Record<string,string>
+  const primary = mode === "frame" ? String(vars["--primary"]) : palette.accent
+  const preview = {...vars,"--accent":primary,"--accent-strong":primary,"--accent-subtle":`color-mix(in srgb, ${primary} 12%, transparent)`,"--accent-foreground":theme==="dark"?"#fff":"#fff","--surface":vars["--card"],"--background":vars["--background"],"--foreground":vars["--foreground"]} as CSSProperties
+  return <section className="source-gallery">
+    <div className="source-gallery-head"><div><h2>The themes already in our apps</h2><p>Actual source values, full surface ladders, product colours, type, radius and motion.</p></div><label className="source-control">Preview theme<select value={theme} onChange={e=>setTheme(e.target.value as "dark"|"light")}><option value="dark">Dark</option><option value="light">Light</option></select></label></div>
+    <div className="theme-set-picker" aria-label="Source token sets">{sisoTokenSets.map(s=><button type="button" key={s.id} aria-pressed={setId===s.id && mode==="source"} onClick={()=>{setSetId(s.id);setMode("source")}}><span className="theme-set-dots">{["--background","--foreground","--primary","--card"].map(k=><i key={k} style={{background:s[theme][k]}}/>)}</span><b>{s.name}</b><small>{Object.keys(s[theme]).length} source variables</small></button>)}<button type="button" aria-pressed={mode==="frame"} onClick={()=>setMode("frame")}><span className="theme-set-dots">{SCHEMES.slice(0,4).map(s=><i key={s.id} style={{background:s.primary}}/>)}</span><b>App frame · eight schemes</b><small>Original Hub theme controls</small></button></div>
+    {mode==="frame"?<div className="theme-controls"><label>Scheme<select value={frame.scheme} onChange={e=>setFrame({...frame,scheme:e.target.value})}>{SCHEMES.map(s=><option key={s.id} value={s.id}>{s.name}</option>)}</select></label><label>Surface<select value={frame.surface} onChange={e=>setFrame({...frame,surface:e.target.value})}>{SURFACES.map(([id,name])=><option key={id} value={id}>{name}</option>)}</select></label><label>Type<select value={frame.font} onChange={e=>setFrame({...frame,font:e.target.value})}>{FONTS.map(([id,name])=><option key={id} value={id}>{name}</option>)}</select></label><label>Radius<select value={frame.radius} onChange={e=>setFrame({...frame,radius:e.target.value})}>{["0","0.375","0.625","1"].map(v=><option key={v}>{v}</option>)}</select></label></div>:<div className="product-palette-picker" aria-label="Landing product palettes">{sisoProductPalettes.map(p=><button type="button" key={p.id} aria-pressed={p.id===product} onClick={()=>setProduct(p.id)}><i style={{background:`linear-gradient(145deg, ${p.top}, ${p.accent})`,boxShadow:`inset 0 1px 0 ${p.tint}66`}}/>{p.id==="os"?"Agent Base":p.id==="all"?"SISO":p.id.replace("ui-hub","UI Hub")}</button>)}</div>}
+    <div className={`theme-specimen arc-scope ${theme}`} data-theme={theme} style={preview}>
+      <div className="theme-specimen-bar"><span><i style={{background:primary}}/> {mode==="frame"?SCHEMES.find(s=>s.id===frame.scheme)?.name:current.name}</span><code>{theme}</code></div>
+      <div className="theme-specimen-content"><p className="specimen-eyebrow" style={{color:primary}}>THE SOURCE, PRESERVED</p><h3>A recognisable SISO surface.</h3><p className="specimen-body">Warm or cool. Paper or night. The foreground, labels, borders and raised surfaces come from the chosen app’s stylesheet.</p><div className="specimen-actions"><Button>Primary action</Button><Button variant="secondary">Secondary</Button><Button variant="ghost">Ghost</Button></div><div className="surface-ladder">{[["Canvas","--background"],["Sidebar","--sidebar"],["Card","--card"],["Popover","--popover"]].map(([label,k])=><div key={k} style={{background:vars[k]??vars["--card"]}}><small>{label}</small><code>{vars[k]??vars["--card"]}</code></div>)}</div></div>
+    </div>
+    <div className="theme-details"><div><h3>Type and rhythm</h3><p className="type-display">Aa — Shape, space, hierarchy.</p><p>Display / body / mono · native font choices from the Hub</p><code>Geist · Inter · Geist Mono</code><div className="spacing-specimen">{[4,8,12,16,24,32].map(n=><span key={n}><i style={{width:n,height:n}}/><small>{n}</small></span>)}</div></div><div><h3>Surfaces and interaction</h3><p>Matte and glass. Sharp through round. Original hover, focus, press and reduced-motion behavior stays in the source components.</p><code>{mode==="frame"?"app/src/kitv1/siso/frame-tokens.ts":current.source}</code><p className="quiet">Landing colours retain their original product identity. The Night / Paper pair uses the landing’s paper and ink values; supporting light surfaces reuse the Hub’s paper tokens.</p></div></div>
+    <details className="token-values"><summary>Inspect every variable in this source set</summary><div>{Object.entries(mode==="frame"?vars:current[theme]).map(([key,value])=><div key={key}><code>{key}</code><span>{value}</span></div>)}</div></details>
+  </section>
+}

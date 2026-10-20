@@ -1,0 +1,36 @@
+{
+  "name": "@siso/site",
+  "version": "0.4.1",
+  "private": true,
+  "type": "module",
+  "license": "SEE LICENSE IN NOTICE",
+  "sideEffects": [
+    "**/*.css"
+  ],
+  "files": [
+    "src",
+    "styles.css",
+    "docs.css",
+    "README.md",
+    "NOTICE",
+    "LICENSE",
+    "inventory.json",
+    "source-manifest.json",
+    "assets.json",
+    "licenses"
+  ],
+  "exports": {
+    ".": "./src/index.ts",
+    "./styles.css": "./styles.css",
+    "./docs.css": "./docs.css",
+    "./inventory.json": "./inventory.json",
+    "./assets.json": "./assets.json"
+  },
+  "peerDependencies": {
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "dependencies": {
+    "lucide-react": "^1.53.0"
+  }
+}

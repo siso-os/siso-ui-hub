@@ -1,0 +1,1129 @@
+// Source: catalogue/app-frame.json; source fixture configuration, not live business data.
+export const SISO_FRAME_SPEC = {
+  "why": "The SISO app frame: one shell with switches. Read from the code of the 87 sidebars and app shells we hold (54 are shadcn's sidebar with different contents) and our own apps. Counts are how many of the 87 do it.",
+  "total": 87,
+  "options": [
+    {
+      "key": "layout",
+      "title": "Layout",
+      "opts": [
+        {
+          "value": "sidebar",
+          "label": "Sidebar",
+          "short": "Sidebar",
+          "count": 79,
+          "examples": [],
+          "from": "most apps; HALO CRM (272px, drag 220-420); SISO CRM (232px, 52px to icons)",
+          "does": "One sidebar with the nav inside it; the HALO CRM and most of the 87."
+        },
+        {
+          "value": "rail-panel",
+          "label": "Rail + panel",
+          "short": "Rail + panel",
+          "count": 8,
+          "examples": [
+            "reui/c-sidebar-2",
+            "animate-ui/demo-components-radix-sidebar",
+            "herocn/sidebar-09",
+            "herocn/sidebar-10"
+          ],
+          "from": "Agent Base: 64px rail, 275px panel (drag 240-520)",
+          "does": "Icons down the left pick a space; a panel beside them is that space's own shell: its name (a switcher), its pages, a status foot; the top bar holds back, forward and tabs (Agent Base)."
+        }
+      ]
+    },
+    {
+      "key": "look",
+      "title": "Look",
+      "opts": [
+        {
+          "value": "plain",
+          "label": "Flush",
+          "short": "Flush",
+          "count": 40,
+          "examples": [
+            "reui/c-sidebar-2",
+            "reui/c-sidebar-3",
+            "reui/c-sidebar-5",
+            "shadcn-dashboard/sidebar-01"
+          ],
+          "from": null,
+          "does": "The sidebar runs flush to the edge, split from the page by a line."
+        },
+        {
+          "value": "inset",
+          "label": "Inset card",
+          "short": "Inset",
+          "count": 3,
+          "examples": [
+            "reui/c-sidebar-1",
+            "herocn/sidebar-08",
+            "shadcn/sidebar-08"
+          ],
+          "from": null,
+          "does": "The page sits in a rounded card beside the sidebar; the sidebar is the background."
+        },
+        {
+          "value": "floating",
+          "label": "Floating",
+          "short": "Floating",
+          "count": 5,
+          "examples": [
+            "reui/c-sidebar-4",
+            "shadcn-dashboard/sidebar-06",
+            "shadcn-space/sidebar-06",
+            "herocn/sidebar-04"
+          ],
+          "from": null,
+          "does": "The sidebar is its own rounded card with a gap all round."
+        }
+      ]
+    },
+    {
+      "key": "collapse",
+      "title": "Collapse",
+      "opts": [
+        {
+          "value": "icon",
+          "label": "To icons",
+          "short": "To icons",
+          "count": 6,
+          "examples": [
+            "reui/c-sidebar-2",
+            "animate-ui/demo-components-radix-sidebar",
+            "herocn/sidebar-07",
+            "herocn/sidebar-09"
+          ],
+          "from": null,
+          "does": "Closing it leaves a strip of icons; hover one for its name."
+        },
+        {
+          "value": "offcanvas",
+          "label": "Slides away",
+          "short": "Slides away",
+          "count": 38,
+          "examples": [
+            "reui/c-sidebar-4",
+            "shadcn-dashboard/sidebar-01",
+            "shadcn-dashboard/sidebar-06",
+            "shadcn-space/sidebar-01"
+          ],
+          "from": null,
+          "does": "Closing it slides the whole sidebar away; the page takes the full width."
+        }
+      ]
+    },
+    {
+      "key": "header",
+      "title": "Switcher",
+      "opts": [
+        {
+          "value": "workspace",
+          "label": "Workspace switcher",
+          "short": "Workspaces",
+          "count": 10,
+          "examples": [
+            "reui/c-sidebar-1",
+            "herocn/sidebar-07",
+            "herocn/sidebar-10",
+            "herocn/sidebar-15"
+          ],
+          "from": null,
+          "does": "Mark, workspace name and plan; click it to switch workspace."
+        },
+        {
+          "value": "views",
+          "label": "View switcher",
+          "short": "Views",
+          "count": null,
+          "examples": [],
+          "from": "HALO CRM: logo and your role's view (Admin, Manager, Chatter, ...)",
+          "does": "HALO: your mark and the view your role gives you (Admin, Manager, Chatter, HR); pick another view and the nav below becomes its pages."
+        }
+      ]
+    },
+    {
+      "key": "tools",
+      "title": "Tools",
+      "opts": [
+        {
+          "value": 0,
+          "label": "No tools",
+          "short": "None",
+          "count": null,
+          "examples": [],
+          "from": "",
+          "does": "No tool icons; the nav is the view's own pages."
+        },
+        {
+          "value": 4,
+          "label": "Four tools",
+          "short": "4",
+          "count": null,
+          "examples": [],
+          "from": "HALO CRM: Dashboard, Docs, Sheets, Chat",
+          "does": "Four tool icons across, as HALO: Dashboard, Docs, Sheets, Chat; each has its own nav."
+        },
+        {
+          "value": 6,
+          "label": "Six tools",
+          "short": "6",
+          "count": null,
+          "examples": [],
+          "from": "HALO CRM: Dashboard, Docs, Sheets, Chat",
+          "does": "Six tool icons across (adds Calendar and People); each has its own nav."
+        }
+      ]
+    },
+    {
+      "key": "nav",
+      "title": "Nav",
+      "opts": [
+        {
+          "value": "grouped",
+          "label": "Grouped with labels",
+          "short": "Grouped",
+          "count": 14,
+          "examples": [
+            "reui/c-sidebar-1",
+            "reui/c-sidebar-2",
+            "reui/c-sidebar-4",
+            "reui/c-sidebar-5"
+          ],
+          "from": null,
+          "does": "Pages under small headings (Overview, Work)."
+        },
+        {
+          "value": "dropdowns",
+          "label": "Groups that drop down",
+          "short": "Drop down",
+          "count": 24,
+          "examples": [
+            "reui/c-sidebar-3",
+            "shadcn-dashboard/sidebar-06",
+            "shadcn-space/sidebar-01",
+            "shadcn-space/sidebar-06"
+          ],
+          "from": null,
+          "does": "Headings plus items that open to show their sub-pages."
+        }
+      ]
+    },
+    {
+      "key": "footer",
+      "title": "Bottom",
+      "opts": [
+        {
+          "value": "user",
+          "label": "User menu",
+          "short": "User",
+          "count": 21,
+          "examples": [
+            "reui/c-sidebar-1",
+            "reui/c-sidebar-4",
+            "animate-ui/demo-components-radix-sidebar",
+            "herocn/sidebar-07"
+          ],
+          "from": null,
+          "does": "Avatar, name and email; click for settings and sign out."
+        },
+        {
+          "value": "upgrade",
+          "label": "Upgrade card + user",
+          "short": "Upgrade + user",
+          "count": 16,
+          "examples": [
+            "reui/c-sidebar-5",
+            "shadcn-dashboard/sidebar-01",
+            "animate-ui/demo-components-radix-sidebar",
+            "herocn/sidebar-07"
+          ],
+          "from": null,
+          "does": "An upgrade card above the user menu."
+        }
+      ]
+    },
+    {
+      "key": "topbar",
+      "title": "Top bar",
+      "opts": [
+        {
+          "value": true,
+          "label": "Top bar",
+          "short": "On",
+          "count": 47,
+          "examples": [
+            "reui/c-sidebar-1",
+            "reui/c-sidebar-2",
+            "reui/c-sidebar-4",
+            "reui/c-sidebar-5"
+          ],
+          "from": null,
+          "does": "A bar across the page: breadcrumb, search icon and bell."
+        },
+        {
+          "value": false,
+          "label": "No top bar",
+          "short": "Off",
+          "count": 40,
+          "examples": [
+            "reui/c-sidebar-3",
+            "intentui/sidebar-01",
+            "intentui/sidebar-02",
+            "intentui/sidebar-03"
+          ],
+          "from": null,
+          "does": "No bar; the page starts at the top."
+        }
+      ]
+    }
+  ],
+  "variations": [
+    {
+      "id": "af-sid-ins-wor-dro-4-use",
+      "name": "Sidebar \u00b7 Inset \u00b7 workspaces \u00b7 drop down \u00b7 4 tools \u00b7 user",
+      "cfg": {
+        "layout": "sidebar",
+        "look": "inset",
+        "header": "workspace",
+        "nav": "dropdowns",
+        "tools": 4,
+        "footer": "user"
+      }
+    },
+    {
+      "id": "af-sid-pla-wor-dro-4-use",
+      "name": "Sidebar \u00b7 Flush \u00b7 workspaces \u00b7 drop down \u00b7 4 tools \u00b7 user",
+      "cfg": {
+        "layout": "sidebar",
+        "look": "plain",
+        "header": "workspace",
+        "nav": "dropdowns",
+        "tools": 4,
+        "footer": "user"
+      }
+    },
+    {
+      "id": "af-sid-flo-wor-dro-4-use",
+      "name": "Sidebar \u00b7 Floating \u00b7 workspaces \u00b7 drop down \u00b7 4 tools \u00b7 user",
+      "cfg": {
+        "layout": "sidebar",
+        "look": "floating",
+        "header": "workspace",
+        "nav": "dropdowns",
+        "tools": 4,
+        "footer": "user"
+      }
+    },
+    {
+      "id": "af-sid-ins-vie-dro-4-use",
+      "name": "Sidebar \u00b7 Inset \u00b7 views \u00b7 drop down \u00b7 4 tools \u00b7 user",
+      "cfg": {
+        "layout": "sidebar",
+        "look": "inset",
+        "header": "views",
+        "nav": "dropdowns",
+        "tools": 4,
+        "footer": "user"
+      }
+    },
+    {
+      "id": "af-sid-pla-vie-dro-4-use",
+      "name": "Sidebar \u00b7 Flush \u00b7 views \u00b7 drop down \u00b7 4 tools \u00b7 user",
+      "cfg": {
+        "layout": "sidebar",
+        "look": "plain",
+        "header": "views",
+        "nav": "dropdowns",
+        "tools": 4,
+        "footer": "user"
+      }
+    },
+    {
+      "id": "af-sid-flo-vie-dro-4-use",
+      "name": "Sidebar \u00b7 Floating \u00b7 views \u00b7 drop down \u00b7 4 tools \u00b7 user",
+      "cfg": {
+        "layout": "sidebar",
+        "look": "floating",
+        "header": "views",
+        "nav": "dropdowns",
+        "tools": 4,
+        "footer": "user"
+      }
+    },
+    {
+      "id": "af-sid-ins-wor-gro-4-use",
+      "name": "Sidebar \u00b7 Inset \u00b7 workspaces \u00b7 grouped \u00b7 4 tools \u00b7 user",
+      "cfg": {
+        "layout": "sidebar",
+        "look": "inset",
+        "header": "workspace",
+        "nav": "grouped",
+        "tools": 4,
+        "footer": "user"
+      }
+    },
+    {
+      "id": "af-sid-pla-wor-gro-4-use",
+      "name": "Sidebar \u00b7 Flush \u00b7 workspaces \u00b7 grouped \u00b7 4 tools \u00b7 user",
+      "cfg": {
+        "layout": "sidebar",
+        "look": "plain",
+        "header": "workspace",
+        "nav": "grouped",
+        "tools": 4,
+        "footer": "user"
+      }
+    },
+    {
+      "id": "af-sid-flo-wor-gro-4-use",
+      "name": "Sidebar \u00b7 Floating \u00b7 workspaces \u00b7 grouped \u00b7 4 tools \u00b7 user",
+      "cfg": {
+        "layout": "sidebar",
+        "look": "floating",
+        "header": "workspace",
+        "nav": "grouped",
+        "tools": 4,
+        "footer": "user"
+      }
+    },
+    {
+      "id": "af-sid-ins-vie-gro-4-use",
+      "name": "Sidebar \u00b7 Inset \u00b7 views \u00b7 grouped \u00b7 4 tools \u00b7 user",
+      "cfg": {
+        "layout": "sidebar",
+        "look": "inset",
+        "header": "views",
+        "nav": "grouped",
+        "tools": 4,
+        "footer": "user"
+      }
+    },
+    {
+      "id": "af-sid-pla-vie-gro-4-use",
+      "name": "Sidebar \u00b7 Flush \u00b7 views \u00b7 grouped \u00b7 4 tools \u00b7 user",
+      "cfg": {
+        "layout": "sidebar",
+        "look": "plain",
+        "header": "views",
+        "nav": "grouped",
+        "tools": 4,
+        "footer": "user"
+      }
+    },
+    {
+      "id": "af-sid-flo-vie-gro-4-use",
+      "name": "Sidebar \u00b7 Floating \u00b7 views \u00b7 grouped \u00b7 4 tools \u00b7 user",
+      "cfg": {
+        "layout": "sidebar",
+        "look": "floating",
+        "header": "views",
+        "nav": "grouped",
+        "tools": 4,
+        "footer": "user"
+      }
+    },
+    {
+      "id": "af-sid-ins-wor-dro-0-use",
+      "name": "Sidebar \u00b7 Inset \u00b7 workspaces \u00b7 drop down \u00b7 user",
+      "cfg": {
+        "layout": "sidebar",
+        "look": "inset",
+        "header": "workspace",
+        "nav": "dropdowns",
+        "tools": 0,
+        "footer": "user"
+      }
+    },
+    {
+      "id": "af-sid-pla-wor-dro-0-use",
+      "name": "Sidebar \u00b7 Flush \u00b7 workspaces \u00b7 drop down \u00b7 user",
+      "cfg": {
+        "layout": "sidebar",
+        "look": "plain",
+        "header": "workspace",
+        "nav": "dropdowns",
+        "tools": 0,
+        "footer": "user"
+      }
+    },
+    {
+      "id": "af-sid-flo-wor-dro-0-use",
+      "name": "Sidebar \u00b7 Floating \u00b7 workspaces \u00b7 drop down \u00b7 user",
+      "cfg": {
+        "layout": "sidebar",
+        "look": "floating",
+        "header": "workspace",
+        "nav": "dropdowns",
+        "tools": 0,
+        "footer": "user"
+      }
+    },
+    {
+      "id": "af-sid-ins-vie-dro-0-use",
+      "name": "Sidebar \u00b7 Inset \u00b7 views \u00b7 drop down \u00b7 user",
+      "cfg": {
+        "layout": "sidebar",
+        "look": "inset",
+        "header": "views",
+        "nav": "dropdowns",
+        "tools": 0,
+        "footer": "user"
+      }
+    },
+    {
+      "id": "af-sid-pla-vie-dro-0-use",
+      "name": "Sidebar \u00b7 Flush \u00b7 views \u00b7 drop down \u00b7 user",
+      "cfg": {
+        "layout": "sidebar",
+        "look": "plain",
+        "header": "views",
+        "nav": "dropdowns",
+        "tools": 0,
+        "footer": "user"
+      }
+    },
+    {
+      "id": "af-sid-flo-vie-dro-0-use",
+      "name": "Sidebar \u00b7 Floating \u00b7 views \u00b7 drop down \u00b7 user",
+      "cfg": {
+        "layout": "sidebar",
+        "look": "floating",
+        "header": "views",
+        "nav": "dropdowns",
+        "tools": 0,
+        "footer": "user"
+      }
+    },
+    {
+      "id": "af-sid-ins-wor-gro-0-use",
+      "name": "Sidebar \u00b7 Inset \u00b7 workspaces \u00b7 grouped \u00b7 user",
+      "cfg": {
+        "layout": "sidebar",
+        "look": "inset",
+        "header": "workspace",
+        "nav": "grouped",
+        "tools": 0,
+        "footer": "user"
+      }
+    },
+    {
+      "id": "af-sid-pla-wor-gro-0-use",
+      "name": "Sidebar \u00b7 Flush \u00b7 workspaces \u00b7 grouped \u00b7 user",
+      "cfg": {
+        "layout": "sidebar",
+        "look": "plain",
+        "header": "workspace",
+        "nav": "grouped",
+        "tools": 0,
+        "footer": "user"
+      }
+    },
+    {
+      "id": "af-sid-flo-wor-gro-0-use",
+      "name": "Sidebar \u00b7 Floating \u00b7 workspaces \u00b7 grouped \u00b7 user",
+      "cfg": {
+        "layout": "sidebar",
+        "look": "floating",
+        "header": "workspace",
+        "nav": "grouped",
+        "tools": 0,
+        "footer": "user"
+      }
+    },
+    {
+      "id": "af-sid-ins-vie-gro-0-use",
+      "name": "Sidebar \u00b7 Inset \u00b7 views \u00b7 grouped \u00b7 user",
+      "cfg": {
+        "layout": "sidebar",
+        "look": "inset",
+        "header": "views",
+        "nav": "grouped",
+        "tools": 0,
+        "footer": "user"
+      }
+    },
+    {
+      "id": "af-sid-pla-vie-gro-0-use",
+      "name": "Sidebar \u00b7 Flush \u00b7 views \u00b7 grouped \u00b7 user",
+      "cfg": {
+        "layout": "sidebar",
+        "look": "plain",
+        "header": "views",
+        "nav": "grouped",
+        "tools": 0,
+        "footer": "user"
+      }
+    },
+    {
+      "id": "af-sid-flo-vie-gro-0-use",
+      "name": "Sidebar \u00b7 Floating \u00b7 views \u00b7 grouped \u00b7 user",
+      "cfg": {
+        "layout": "sidebar",
+        "look": "floating",
+        "header": "views",
+        "nav": "grouped",
+        "tools": 0,
+        "footer": "user"
+      }
+    },
+    {
+      "id": "af-sid-ins-wor-dro-4-upg",
+      "name": "Sidebar \u00b7 Inset \u00b7 workspaces \u00b7 drop down \u00b7 4 tools \u00b7 upgrade",
+      "cfg": {
+        "layout": "sidebar",
+        "look": "inset",
+        "header": "workspace",
+        "nav": "dropdowns",
+        "tools": 4,
+        "footer": "upgrade"
+      }
+    },
+    {
+      "id": "af-sid-pla-wor-dro-4-upg",
+      "name": "Sidebar \u00b7 Flush \u00b7 workspaces \u00b7 drop down \u00b7 4 tools \u00b7 upgrade",
+      "cfg": {
+        "layout": "sidebar",
+        "look": "plain",
+        "header": "workspace",
+        "nav": "dropdowns",
+        "tools": 4,
+        "footer": "upgrade"
+      }
+    },
+    {
+      "id": "af-sid-flo-wor-dro-4-upg",
+      "name": "Sidebar \u00b7 Floating \u00b7 workspaces \u00b7 drop down \u00b7 4 tools \u00b7 upgrade",
+      "cfg": {
+        "layout": "sidebar",
+        "look": "floating",
+        "header": "workspace",
+        "nav": "dropdowns",
+        "tools": 4,
+        "footer": "upgrade"
+      }
+    },
+    {
+      "id": "af-sid-ins-vie-dro-4-upg",
+      "name": "Sidebar \u00b7 Inset \u00b7 views \u00b7 drop down \u00b7 4 tools \u00b7 upgrade",
+      "cfg": {
+        "layout": "sidebar",
+        "look": "inset",
+        "header": "views",
+        "nav": "dropdowns",
+        "tools": 4,
+        "footer": "upgrade"
+      }
+    },
+    {
+      "id": "af-sid-pla-vie-dro-4-upg",
+      "name": "Sidebar \u00b7 Flush \u00b7 views \u00b7 drop down \u00b7 4 tools \u00b7 upgrade",
+      "cfg": {
+        "layout": "sidebar",
+        "look": "plain",
+        "header": "views",
+        "nav": "dropdowns",
+        "tools": 4,
+        "footer": "upgrade"
+      }
+    },
+    {
+      "id": "af-sid-flo-vie-dro-4-upg",
+      "name": "Sidebar \u00b7 Floating \u00b7 views \u00b7 drop down \u00b7 4 tools \u00b7 upgrade",
+      "cfg": {
+        "layout": "sidebar",
+        "look": "floating",
+        "header": "views",
+        "nav": "dropdowns",
+        "tools": 4,
+        "footer": "upgrade"
+      }
+    },
+    {
+      "id": "af-sid-ins-wor-gro-4-upg",
+      "name": "Sidebar \u00b7 Inset \u00b7 workspaces \u00b7 grouped \u00b7 4 tools \u00b7 upgrade",
+      "cfg": {
+        "layout": "sidebar",
+        "look": "inset",
+        "header": "workspace",
+        "nav": "grouped",
+        "tools": 4,
+        "footer": "upgrade"
+      }
+    },
+    {
+      "id": "af-sid-pla-wor-gro-4-upg",
+      "name": "Sidebar \u00b7 Flush \u00b7 workspaces \u00b7 grouped \u00b7 4 tools \u00b7 upgrade",
+      "cfg": {
+        "layout": "sidebar",
+        "look": "plain",
+        "header": "workspace",
+        "nav": "grouped",
+        "tools": 4,
+        "footer": "upgrade"
+      }
+    },
+    {
+      "id": "af-sid-flo-wor-gro-4-upg",
+      "name": "Sidebar \u00b7 Floating \u00b7 workspaces \u00b7 grouped \u00b7 4 tools \u00b7 upgrade",
+      "cfg": {
+        "layout": "sidebar",
+        "look": "floating",
+        "header": "workspace",
+        "nav": "grouped",
+        "tools": 4,
+        "footer": "upgrade"
+      }
+    },
+    {
+      "id": "af-sid-ins-vie-gro-4-upg",
+      "name": "Sidebar \u00b7 Inset \u00b7 views \u00b7 grouped \u00b7 4 tools \u00b7 upgrade",
+      "cfg": {
+        "layout": "sidebar",
+        "look": "inset",
+        "header": "views",
+        "nav": "grouped",
+        "tools": 4,
+        "footer": "upgrade"
+      }
+    },
+    {
+      "id": "af-sid-pla-vie-gro-4-upg",
+      "name": "Sidebar \u00b7 Flush \u00b7 views \u00b7 grouped \u00b7 4 tools \u00b7 upgrade",
+      "cfg": {
+        "layout": "sidebar",
+        "look": "plain",
+        "header": "views",
+        "nav": "grouped",
+        "tools": 4,
+        "footer": "upgrade"
+      }
+    },
+    {
+      "id": "af-sid-flo-vie-gro-4-upg",
+      "name": "Sidebar \u00b7 Floating \u00b7 views \u00b7 grouped \u00b7 4 tools \u00b7 upgrade",
+      "cfg": {
+        "layout": "sidebar",
+        "look": "floating",
+        "header": "views",
+        "nav": "grouped",
+        "tools": 4,
+        "footer": "upgrade"
+      }
+    },
+    {
+      "id": "af-sid-ins-wor-dro-0-upg",
+      "name": "Sidebar \u00b7 Inset \u00b7 workspaces \u00b7 drop down \u00b7 upgrade",
+      "cfg": {
+        "layout": "sidebar",
+        "look": "inset",
+        "header": "workspace",
+        "nav": "dropdowns",
+        "tools": 0,
+        "footer": "upgrade"
+      }
+    },
+    {
+      "id": "af-sid-pla-wor-dro-0-upg",
+      "name": "Sidebar \u00b7 Flush \u00b7 workspaces \u00b7 drop down \u00b7 upgrade",
+      "cfg": {
+        "layout": "sidebar",
+        "look": "plain",
+        "header": "workspace",
+        "nav": "dropdowns",
+        "tools": 0,
+        "footer": "upgrade"
+      }
+    },
+    {
+      "id": "af-sid-flo-wor-dro-0-upg",
+      "name": "Sidebar \u00b7 Floating \u00b7 workspaces \u00b7 drop down \u00b7 upgrade",
+      "cfg": {
+        "layout": "sidebar",
+        "look": "floating",
+        "header": "workspace",
+        "nav": "dropdowns",
+        "tools": 0,
+        "footer": "upgrade"
+      }
+    },
+    {
+      "id": "af-sid-ins-vie-dro-0-upg",
+      "name": "Sidebar \u00b7 Inset \u00b7 views \u00b7 drop down \u00b7 upgrade",
+      "cfg": {
+        "layout": "sidebar",
+        "look": "inset",
+        "header": "views",
+        "nav": "dropdowns",
+        "tools": 0,
+        "footer": "upgrade"
+      }
+    },
+    {
+      "id": "af-sid-pla-vie-dro-0-upg",
+      "name": "Sidebar \u00b7 Flush \u00b7 views \u00b7 drop down \u00b7 upgrade",
+      "cfg": {
+        "layout": "sidebar",
+        "look": "plain",
+        "header": "views",
+        "nav": "dropdowns",
+        "tools": 0,
+        "footer": "upgrade"
+      }
+    },
+    {
+      "id": "af-sid-flo-vie-dro-0-upg",
+      "name": "Sidebar \u00b7 Floating \u00b7 views \u00b7 drop down \u00b7 upgrade",
+      "cfg": {
+        "layout": "sidebar",
+        "look": "floating",
+        "header": "views",
+        "nav": "dropdowns",
+        "tools": 0,
+        "footer": "upgrade"
+      }
+    },
+    {
+      "id": "af-sid-ins-wor-gro-0-upg",
+      "name": "Sidebar \u00b7 Inset \u00b7 workspaces \u00b7 grouped \u00b7 upgrade",
+      "cfg": {
+        "layout": "sidebar",
+        "look": "inset",
+        "header": "workspace",
+        "nav": "grouped",
+        "tools": 0,
+        "footer": "upgrade"
+      }
+    },
+    {
+      "id": "af-sid-pla-wor-gro-0-upg",
+      "name": "Sidebar \u00b7 Flush \u00b7 workspaces \u00b7 grouped \u00b7 upgrade",
+      "cfg": {
+        "layout": "sidebar",
+        "look": "plain",
+        "header": "workspace",
+        "nav": "grouped",
+        "tools": 0,
+        "footer": "upgrade"
+      }
+    },
+    {
+      "id": "af-sid-flo-wor-gro-0-upg",
+      "name": "Sidebar \u00b7 Floating \u00b7 workspaces \u00b7 grouped \u00b7 upgrade",
+      "cfg": {
+        "layout": "sidebar",
+        "look": "floating",
+        "header": "workspace",
+        "nav": "grouped",
+        "tools": 0,
+        "footer": "upgrade"
+      }
+    },
+    {
+      "id": "af-sid-ins-vie-gro-0-upg",
+      "name": "Sidebar \u00b7 Inset \u00b7 views \u00b7 grouped \u00b7 upgrade",
+      "cfg": {
+        "layout": "sidebar",
+        "look": "inset",
+        "header": "views",
+        "nav": "grouped",
+        "tools": 0,
+        "footer": "upgrade"
+      }
+    },
+    {
+      "id": "af-sid-pla-vie-gro-0-upg",
+      "name": "Sidebar \u00b7 Flush \u00b7 views \u00b7 grouped \u00b7 upgrade",
+      "cfg": {
+        "layout": "sidebar",
+        "look": "plain",
+        "header": "views",
+        "nav": "grouped",
+        "tools": 0,
+        "footer": "upgrade"
+      }
+    },
+    {
+      "id": "af-sid-flo-vie-gro-0-upg",
+      "name": "Sidebar \u00b7 Floating \u00b7 views \u00b7 grouped \u00b7 upgrade",
+      "cfg": {
+        "layout": "sidebar",
+        "look": "floating",
+        "header": "views",
+        "nav": "grouped",
+        "tools": 0,
+        "footer": "upgrade"
+      }
+    },
+    {
+      "id": "af-rai-ins-dro-0-off",
+      "name": "Rail + panel \u00b7 Inset \u00b7 drop down",
+      "cfg": {
+        "layout": "rail-panel",
+        "look": "inset",
+        "nav": "dropdowns",
+        "tools": 0,
+        "collapse": "offcanvas"
+      }
+    },
+    {
+      "id": "af-rai-pla-dro-0-off",
+      "name": "Rail + panel \u00b7 Flush \u00b7 drop down",
+      "cfg": {
+        "layout": "rail-panel",
+        "look": "plain",
+        "nav": "dropdowns",
+        "tools": 0,
+        "collapse": "offcanvas"
+      }
+    },
+    {
+      "id": "af-rai-flo-dro-0-off",
+      "name": "Rail + panel \u00b7 Floating \u00b7 drop down",
+      "cfg": {
+        "layout": "rail-panel",
+        "look": "floating",
+        "nav": "dropdowns",
+        "tools": 0,
+        "collapse": "offcanvas"
+      }
+    },
+    {
+      "id": "af-rai-ins-gro-0-off",
+      "name": "Rail + panel \u00b7 Inset \u00b7 grouped",
+      "cfg": {
+        "layout": "rail-panel",
+        "look": "inset",
+        "nav": "grouped",
+        "tools": 0,
+        "collapse": "offcanvas"
+      }
+    },
+    {
+      "id": "af-rai-pla-gro-0-off",
+      "name": "Rail + panel \u00b7 Flush \u00b7 grouped",
+      "cfg": {
+        "layout": "rail-panel",
+        "look": "plain",
+        "nav": "grouped",
+        "tools": 0,
+        "collapse": "offcanvas"
+      }
+    },
+    {
+      "id": "af-rai-flo-gro-0-off",
+      "name": "Rail + panel \u00b7 Floating \u00b7 grouped",
+      "cfg": {
+        "layout": "rail-panel",
+        "look": "floating",
+        "nav": "grouped",
+        "tools": 0,
+        "collapse": "offcanvas"
+      }
+    }
+  ],
+  "ours": [
+    {
+      "app": "HALO CRM (cam/widgets-v3)",
+      "layout": "sidebar",
+      "cfg": {
+        "header": "views",
+        "tools": 4,
+        "nav": "grouped",
+        "footer": "user",
+        "topbar": true,
+        "collapse": "icon"
+      },
+      "regions": "View switcher (logo + role view, 13 views) / search field opening a palette / tool switcher: Dashboard, Docs, Sheets, Chat in a capsule with a sliding pill, Chat unread dot / the view's pages in groups, admin groups drop down / profile button. Top bar 56px: trigger, breadcrumb, bell, settings, theme.",
+      "sizes": "272px default, drag 220-420; 3rem to icons; phone sheet 18rem",
+      "looks": "SISO (default, picked by Shaan 28 Sep), Classic, Rounded, Buzz",
+      "files": [
+        "src/components/shell/SidebarFrame.tsx",
+        "src/components/sidebar/SidebarLogo.tsx",
+        "src/components/sidebar/SidebarSearch.tsx",
+        "src/components/sidebar/SidebarAppBar.tsx",
+        "src/components/sidebar/SidebarNav.tsx",
+        "src/components/sidebar/sidebarViews.ts",
+        "src/components/sidebar/shellVariant.ts",
+        "src/components/sidebar/sidebarWidth.ts"
+      ]
+    },
+    {
+      "app": "SISO CRM (Plane fork)",
+      "layout": "sidebar",
+      "cfg": {
+        "header": "workspace",
+        "tools": 0,
+        "nav": "grouped",
+        "footer": "user",
+        "topbar": false,
+        "collapse": "icon"
+      },
+      "regions": "Workspace switcher + collapse toggle / \u2318K search that folds to an icon / one flat Launcher list of 11 apps (CRM, Tables, AI, Wiki, Docs, Data Rooms, Signatures, Marketing, Team, Calendar, Projects) / utilities row (Needs you, Create, Settings) / dock (account orb). No top bar of its own.",
+      "sizes": "232px, 52px to icons",
+      "files": [
+        "platform/apps/web/core/components/siso/grouped-rail.tsx",
+        "platform/apps/web/styles/siso-grouped-rail.css",
+        "platform/apps/web/styles/siso-crm-tokens.css"
+      ]
+    },
+    {
+      "app": "Agent Base",
+      "layout": "rail-panel",
+      "cfg": {
+        "layout": "rail-panel",
+        "nav": "dropdowns",
+        "topbar": true,
+        "collapse": "offcanvas",
+        "tools": 0
+      },
+      "regions": "Top bar 48px: nav toggle, back, forward, tabs, new tab / rail 64px: Agents, Org chart, Tasks, Servers, Tokens | Voice, Rolodex; SS orb at the foot / side panel: space switcher, pages (Home, Tasks, Stats, Starred, Org chart), project folders, pinned, shelves that fold; HEALTH foot / right panel 320-900px (default 420) with its own title and close.",
+      "sizes": "rail 64px; panel 275px, drag 240-520; the toggle removes the panel, the rail stays",
+      "files": [
+        "packages/siso-shell/src/AppFrame.tsx",
+        "packages/siso-shell/shell.css",
+        "packages/siso-side-nav/src/SideNav.tsx",
+        "packages/siso-shell/src/Panels.tsx",
+        "apps/web/src/App.tsx"
+      ]
+    }
+  ],
+  "retired": [
+    {
+      "key": "search",
+      "title": "Search + \u2318K palette",
+      "opts": [
+        {
+          "value": true,
+          "label": "On",
+          "count": 25,
+          "examples": [
+            "reui/c-sidebar-3",
+            "reui/c-sidebar-5",
+            "animate-ui/demo-components-radix-sidebar",
+            "herocn/sidebar-01"
+          ],
+          "from": null,
+          "does": "A search box with \u2318K under the top; the shortcut opens a palette from anywhere.",
+          "short": "On"
+        },
+        {
+          "value": false,
+          "label": "Off",
+          "count": 62,
+          "examples": [
+            "reui/c-sidebar-1",
+            "reui/c-sidebar-2",
+            "reui/c-sidebar-4",
+            "reui/c-sortable-6"
+          ],
+          "from": null,
+          "does": "No search box and no palette.",
+          "short": "Off"
+        }
+      ]
+    },
+    {
+      "key": "badges",
+      "title": "Counts on items",
+      "opts": [
+        {
+          "value": true,
+          "label": "On",
+          "count": 22,
+          "examples": [
+            "reui/c-sidebar-1",
+            "reui/c-sidebar-2",
+            "reui/c-sidebar-4",
+            "reui/c-sidebar-5"
+          ],
+          "from": null,
+          "does": "Unread or open counts sit at the right of an item.",
+          "short": "On"
+        },
+        {
+          "value": false,
+          "label": "Off",
+          "count": 65,
+          "examples": [
+            "reui/c-sidebar-3",
+            "shadcn-dashboard/sidebar-01",
+            "shadcn-dashboard/sidebar-06",
+            "shadcn-space/sidebar-01"
+          ],
+          "from": null,
+          "does": "No counts.",
+          "short": "Off"
+        }
+      ]
+    },
+    {
+      "key": "projects",
+      "title": "Projects list",
+      "opts": [
+        {
+          "value": true,
+          "label": "On",
+          "count": 19,
+          "examples": [
+            "reui/c-sidebar-1",
+            "reui/c-sidebar-5",
+            "reui/c-sortable-6",
+            "animate-ui/demo-components-radix-sidebar"
+          ],
+          "from": null,
+          "does": "A second list under the nav for pinned projects, each with a colour dot.",
+          "short": "On"
+        },
+        {
+          "value": false,
+          "label": "Off",
+          "count": 68,
+          "examples": [
+            "reui/c-sidebar-2",
+            "reui/c-sidebar-3",
+            "reui/c-sidebar-4",
+            "shadcn-dashboard/sidebar-01"
+          ],
+          "from": null,
+          "does": "No projects list.",
+          "short": "Off"
+        }
+      ]
+    },
+    {
+      "key": "toggle",
+      "title": "Collapse button",
+      "opts": [
+        {
+          "value": "bar",
+          "label": "In the top bar",
+          "count": null,
+          "examples": [],
+          "from": "most shadcn blocks",
+          "does": "The collapse button sits at the left of the top bar.",
+          "short": "Top bar"
+        },
+        {
+          "value": "top",
+          "label": "Up top in the sidebar",
+          "count": null,
+          "examples": [],
+          "from": "the toggle sits beside the brand",
+          "does": "The collapse button sits in the sidebar, beside its top.",
+          "short": "Sidebar"
+        }
+      ]
+    }
+  ],
+  "always": [
+    "Search box with a \u2318K palette (an icon when collapsed)",
+    "Counts on items",
+    "Collapse button up top, beside the brand",
+    "Menus open inside the frame",
+    "Tools swap the nav below them"
+  ],
+  "rules": [
+    "Rail + panel: the panel only slides away; no tools strip, switcher or bottom in the panel (the rail has them)"
+  ]
+} as const

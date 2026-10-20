@@ -1,0 +1,64 @@
+/*
+ * Scoped Teable token bridge.
+ *
+ * Teable consumes HSL triplets. Host RGB tokens must be converted to HSL
+ * before they are supplied through the --actionist-teable-* inputs below.
+ * The Teable variable names are intentionally declared only below the mounted
+ * surface; there is no global root-selector write and no donor-variable leak.
+ *
+ * The fallback values are neutral shadcn-compatible defaults, not a claim of
+ * pixel parity. A host must populate the actionist inputs from its pinned
+ * donor/theme snapshot before making that claim.
+ */
+
+.actionist-teable-surface {
+  --background: var(--actionist-teable-background-hsl, 0 0% 100%);
+  --foreground: var(--actionist-teable-foreground-hsl, 222.2 47.4% 11.2%);
+  --muted: var(--actionist-teable-muted-hsl, 210 40% 96.1%);
+  --muted-foreground: var(--actionist-teable-muted-foreground-hsl, 215.4 16.3% 46.9%);
+  --popover: var(--actionist-teable-popover-hsl, 0 0% 100%);
+  --popover-foreground: var(--actionist-teable-popover-foreground-hsl, 222.2 47.4% 11.2%);
+  --card: var(--actionist-teable-card-hsl, 0 0% 100%);
+  --card-foreground: var(--actionist-teable-card-foreground-hsl, 222.2 47.4% 11.2%);
+  --border: var(--actionist-teable-border-hsl, 214.3 31.8% 91.4% / 1);
+  --border-high: var(--actionist-teable-border-high-hsl, 215 20.2% 65.1% / 1);
+  --input: var(--actionist-teable-input-hsl, 214.3 31.8% 91.4%);
+  --primary: var(--actionist-teable-primary-hsl, 222.2 47.4% 11.2%);
+  --primary-foreground: var(--actionist-teable-primary-foreground-hsl, 210 40% 98%);
+  --secondary: var(--actionist-teable-secondary-hsl, 210 40% 96.1%);
+  --secondary-foreground: var(--actionist-teable-secondary-foreground-hsl, 222.2 47.4% 11.2%);
+  --accent: var(--actionist-teable-accent-hsl, 210 40% 96.1%);
+  --accent-foreground: var(--actionist-teable-accent-foreground-hsl, 222.2 47.4% 11.2%);
+  --destructive: var(--actionist-teable-destructive-hsl, 0 84.2% 60.2%);
+  --destructive-foreground: var(--actionist-teable-destructive-foreground-hsl, 210 40% 98%);
+  --ring: var(--actionist-teable-ring-hsl, 215 20.2% 65.1%);
+  --warning: var(--actionist-teable-warning-hsl, 38 92% 50%);
+  --warning-foreground: var(--actionist-teable-warning-foreground-hsl, 26 83.3% 14.1%);
+  --radius: var(--actionist-radius, 0.375rem);
+}
+
+.actionist-teable-surface[data-theme="dark"],
+.actionist-teable-surface[data-color-scheme="dark"] {
+  --background: var(--actionist-teable-dark-background-hsl, 222.2 47.4% 11.2%);
+  --foreground: var(--actionist-teable-dark-foreground-hsl, 210 40% 98%);
+  --muted: var(--actionist-teable-dark-muted-hsl, 217.2 32.6% 17.5%);
+  --muted-foreground: var(--actionist-teable-dark-muted-foreground-hsl, 215 20.2% 65.1%);
+  --popover: var(--actionist-teable-dark-popover-hsl, 222.2 47.4% 11.2%);
+  --popover-foreground: var(--actionist-teable-dark-popover-foreground-hsl, 210 40% 98%);
+  --card: var(--actionist-teable-dark-card-hsl, 222.2 47.4% 11.2%);
+  --card-foreground: var(--actionist-teable-dark-card-foreground-hsl, 210 40% 98%);
+  --border: var(--actionist-teable-dark-border-hsl, 217.2 32.6% 17.5% / 1);
+  --border-high: var(--actionist-teable-dark-border-high-hsl, 215 20.2% 65.1% / 1);
+  --input: var(--actionist-teable-dark-input-hsl, 217.2 32.6% 17.5%);
+  --primary: var(--actionist-teable-dark-primary-hsl, 210 40% 98%);
+  --primary-foreground: var(--actionist-teable-dark-primary-foreground-hsl, 222.2 47.4% 11.2%);
+  --secondary: var(--actionist-teable-dark-secondary-hsl, 217.2 32.6% 17.5%);
+  --secondary-foreground: var(--actionist-teable-dark-secondary-foreground-hsl, 210 40% 98%);
+  --accent: var(--actionist-teable-dark-accent-hsl, 217.2 32.6% 17.5%);
+  --accent-foreground: var(--actionist-teable-dark-accent-foreground-hsl, 210 40% 98%);
+  --destructive: var(--actionist-teable-dark-destructive-hsl, 0 62.8% 30.6%);
+  --destructive-foreground: var(--actionist-teable-dark-destructive-foreground-hsl, 210 40% 98%);
+  --ring: var(--actionist-teable-dark-ring-hsl, 217.2 32.6% 17.5%);
+  --warning: var(--actionist-teable-dark-warning-hsl, 38 92% 50%);
+  --warning-foreground: var(--actionist-teable-dark-warning-foreground-hsl, 26 83.3% 14.1%);
+}

@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://actionist.local/teable-data-grid/ports/grid-mutate.v1.json",
+  "title": "Teable grid mutation port",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["tenant_id", "base_id", "table_id", "operation", "idempotency_key"],
+  "properties": {
+    "tenant_id": { "type": "string", "minLength": 1 },
+    "base_id": { "type": "string", "minLength": 1 },
+    "table_id": { "type": "string", "minLength": 1 },
+    "record_id": { "type": ["string", "null"] },
+    "operation": { "enum": ["create", "update", "delete"] },
+    "fields": { "type": ["object", "null"] },
+    "idempotency_key": { "type": "string", "minLength": 8 }
+  }
+}

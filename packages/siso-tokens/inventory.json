@@ -1,0 +1,83 @@
+{
+  "package": "@siso/tokens",
+  "components": [
+    {
+      "family": "source token layers",
+      "exports": [
+        "sisoTokenSets",
+        "sisoTokenVars",
+        "setSisoTokenSet"
+      ],
+      "variants": [
+        "UI Hub light/dark",
+        "Landing Night / Paper",
+        "Docs light/dark"
+      ]
+    },
+    {
+      "family": "frame schemes",
+      "exports": [
+        "SCHEMES",
+        "SISO_TOKENS",
+        "tokenVars"
+      ],
+      "variants": [
+        "SISO",
+        "Violet",
+        "Ocean",
+        "Midnight",
+        "Forest",
+        "Rose",
+        "Sand",
+        "Mono"
+      ]
+    },
+    {
+      "family": "product palettes",
+      "exports": [
+        "sisoProductPalettes"
+      ],
+      "variants": [
+        "UI Hub",
+        "Library",
+        "Agent Base",
+        "Research",
+        "Agency",
+        "Voice",
+        "SISO"
+      ]
+    },
+    {
+      "family": "surface and typography",
+      "exports": [
+        "SURFACES",
+        "FONTS"
+      ],
+      "variants": [
+        "matte/glass",
+        "four font stacks",
+        "adjustable radius"
+      ]
+    }
+  ],
+  "exports": [
+    "sisoThemes",
+    "setSisoTheme",
+    "sisoSpacing",
+    "sisoBreakpoints"
+  ],
+  "themes": [
+    "dark",
+    "light"
+  ],
+  "source": {
+    "product": "SISO Agent Base",
+    "path": "packages/siso-tokens/siso.css",
+    "sha256": "1fb516162515bf8d875c09774b6aee7788e17b47021d9728dfb6a045fd5115b9"
+  },
+  "notes": [
+    "siso.css preserves the existing SISO source; tokens.css adds semantic aliases without body/reset side effects."
+  ],
+  "version": "0.4.1",
+  "familyCount": 4
+}

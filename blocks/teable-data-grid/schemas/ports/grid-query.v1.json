@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://actionist.local/teable-data-grid/ports/grid-query.v1.json",
+  "title": "Teable grid query port",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["tenant_id", "base_id", "table_id", "view_id"],
+  "properties": {
+    "tenant_id": { "type": "string", "minLength": 1 },
+    "base_id": { "type": "string", "minLength": 1 },
+    "table_id": { "type": "string", "minLength": 1 },
+    "view_id": { "type": "string", "minLength": 1 },
+    "filter": { "type": ["string", "null"] },
+    "sort": { "type": ["string", "null"] }
+  }
+}

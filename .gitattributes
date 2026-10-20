@@ -1,0 +1,6 @@
+# Preserve upstream source/licence bytes recorded by the extraction manifests.
+examples/package-suite/site-effects/LaserBeam.tsx whitespace=-trailing-space
+packages/siso-blocks/src/source/command-palette/command-palette.module.css whitespace=-trailing-space
+packages/siso-site/licenses/ruixen-MIT.md whitespace=-trailing-space
+packages/siso-site/styles.css whitespace=-blank-at-eof
+packages/siso-tokens/licenses/Geist-OFL.txt whitespace=-trailing-space

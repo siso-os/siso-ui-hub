@@ -8,7 +8,7 @@ import json, os, re, sys, glob, zlib, subprocess
 import numpy as np
 HUB = os.path.dirname(os.path.dirname(os.path.realpath(__file__)))  # the siso-ui-hub repo root
 W = os.path.expanduser("~/SISO_Workspace"); H = HUB; R = f"{W}/_reference/ui-libs"
-B = f"{W}/Great_Library_of_SISO/banks"
+B = os.path.realpath(os.path.join(HUB, "../../library/banks"))
 P = np.uint64(4294967311); rng = np.random.default_rng(7)
 A = rng.integers(1, 2**32 - 1, 128, dtype=np.uint64)[:, None]; Bv = rng.integers(0, 2**32 - 1, 128, dtype=np.uint64)[:, None]
 TOK = re.compile(r"[A-Za-z_$][\w$-]*|\d+(?:\.\d+)?|[{}()\[\];,<>=+*/!?:&|%-]")

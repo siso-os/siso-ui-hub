@@ -1,0 +1,158 @@
+{
+  "package": "@siso/shells",
+  "version": "0.4.1",
+  "styles": "@siso/shells/styles.css",
+  "components": [
+    {
+      "export": "SisoHubShell",
+      "source": "src/shells.tsx",
+      "variations": [
+        "expanded",
+        "offcanvas",
+        "mobile"
+      ],
+      "origin": "app/src/components/AppShell.tsx"
+    },
+    {
+      "export": "SisoAppShell",
+      "source": "src/shells.tsx",
+      "variations": [
+        "sidebar",
+        "rail-panel",
+        "plain",
+        "inset",
+        "floating",
+        "icon-collapse",
+        "offcanvas",
+        "mobile"
+      ],
+      "origin": "app/src/kitv1/siso/app-frame.tsx"
+    },
+    {
+      "export": "SisoAppFrame",
+      "source": "src/source/kitv1/siso/app-frame.tsx",
+      "variations": [
+        "sidebar",
+        "rail-panel",
+        "plain",
+        "inset",
+        "floating",
+        "icon",
+        "offcanvas",
+        "workspace",
+        "views",
+        "grouped",
+        "dropdowns",
+        "user",
+        "upgrade",
+        "phone",
+        "phone-open",
+        "expanded",
+        "collapsed"
+      ],
+      "fixture": "Original source demonstration data; not live account or business records."
+    },
+    {
+      "export": "SisoFrameFixturePage",
+      "source": "src/source/kitv1/siso/app-frame.tsx",
+      "fixture": true
+    },
+    {
+      "export": "SisoHubSourceShell",
+      "source": "src/source-hub.tsx",
+      "origin": "app/src/components/AppShell.tsx",
+      "variations": [
+        "current UI Hub fixed nav",
+        "pinned animated rim",
+        "resizable edge",
+        "collapse",
+        "mobile sheet"
+      ]
+    },
+    {
+      "family": "Agent Base desktop frame",
+      "exports": [
+        "AppFrame",
+        "RailButton",
+        "RailDivider",
+        "TopButton"
+      ],
+      "entry": "@siso/shells/agent-base",
+      "styles": "@siso/shells/agent-base.css",
+      "origin": "Existing Agent Base @siso/shell package; source hashes in agent-base-provenance.json"
+    },
+    {
+      "family": "Agent Base tabs and layouts",
+      "exports": [
+        "PillTabs",
+        "TopTabs",
+        "LayoutSwitch"
+      ],
+      "entry": "@siso/shells/agent-base",
+      "styles": "@siso/shells/agent-base.css",
+      "origin": "Existing Agent Base @siso/shell package; source hashes in agent-base-provenance.json"
+    },
+    {
+      "family": "Agent Base panels",
+      "exports": [
+        "SummaryCard",
+        "CardSection",
+        "CardRow",
+        "SidePanel"
+      ],
+      "entry": "@siso/shells/agent-base",
+      "styles": "@siso/shells/agent-base.css",
+      "origin": "Existing Agent Base @siso/shell package; source hashes in agent-base-provenance.json"
+    },
+    {
+      "family": "Agent Base rail and rim",
+      "exports": [
+        "Rail",
+        "HaloRim"
+      ],
+      "entry": "@siso/shells/agent-base",
+      "styles": "@siso/shells/agent-base.css",
+      "origin": "Existing Agent Base @siso/shell package; source hashes in agent-base-provenance.json"
+    }
+  ],
+  "constants": [
+    "SISO_SHELL_PRESETS",
+    "SISO_FRAME",
+    "SISO_FRAME_FIXTURE",
+    "SISO_FRAME_SPEC",
+    "SCHEMES",
+    "SURFACES",
+    "FONTS",
+    "SISO_TOKENS"
+  ],
+  "types": [
+    "SisoShellProps",
+    "SisoAppShellProps",
+    "SisoShellSlotContext"
+  ],
+  "mechanisms": [
+    "controlled or local state",
+    "bounded pointer capture resize",
+    "keyboard separator resize",
+    "native modal focus trap and Escape",
+    "scoped keyboard shortcuts",
+    "independent content and navigation scroll",
+    "bottom profile slot",
+    "sidebar search"
+  ],
+  "deferred": [
+    {
+      "export": "SisoSiteShell",
+      "reason": "Inspected app-frame is a dashboard frame; no real site shell extraction justified by this brief."
+    }
+  ],
+  "license": "UNLICENSED",
+  "functions": [
+    "normalise",
+    "fit",
+    "applies",
+    "tokenVars"
+  ],
+  "sourceProvenance": "source-provenance.json",
+  "copiedSourceFiles": 46
+}

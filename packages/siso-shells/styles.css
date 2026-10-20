@@ -1,0 +1,62 @@
+/* SISO shell styles: plain CSS, scoped to this package; no Tailwind reset required. */
+.siso-shell {
+  --siso-shell-bg: var(--background, #151518);
+  --siso-shell-frame: var(--sidebar, #111114);
+  --siso-shell-fg: var(--foreground, #f4f4f5);
+  --siso-shell-line: var(--border, #303036);
+  --siso-shell-accent: var(--primary, #f97316);
+  --siso-shell-radius: var(--radius, 12px);
+  display: flex; position: relative; width: 100%; height: 100dvh; min-height: 0;
+  overflow: hidden; background: var(--siso-shell-frame); color: var(--siso-shell-fg);
+  font-family: var(--siso-font-sans, ui-sans-serif, system-ui, sans-serif); font-size: 14px;
+}
+.siso-shell *, .siso-shell *::before, .siso-shell *::after { box-sizing: border-box; }
+.siso-shell button { font: inherit; color: inherit; }
+.siso-shell :focus-visible { outline: 2px solid var(--siso-shell-accent); outline-offset: 2px; }
+.siso-shell__skip { position: absolute; left: 8px; top: -100px; padding: 10px 14px; z-index: 5; background: var(--siso-shell-bg); color: inherit; border-radius: 6px; }
+.siso-shell__skip:focus { top: 8px; }
+.siso-shell__sidebar { position: relative; display: flex; flex-direction: column; flex: 0 0 var(--siso-shell-panel-width, 256px); width: var(--siso-shell-panel-width, 256px); min-height: 0; padding: 12px 10px; }
+.siso-shell__brand { display: flex; align-items: center; gap: 8px; flex-shrink: 0; min-height: 40px; margin-bottom: 12px; }
+.siso-shell__brand-slot { flex: 1; min-width: 0; overflow: hidden; }
+.siso-shell__button { display: inline-grid; flex: 0 0 36px; place-items: center; width: 36px; height: 36px; border: 1px solid transparent; border-radius: 8px; background: transparent; cursor: pointer; font-size: 20px !important; }
+.siso-shell__button:hover, .siso-shell__search-button:hover { background: var(--muted, #242429); }
+.siso-shell__search { flex-shrink: 0; margin-bottom: 12px; }
+.siso-shell__search-button { display: flex; align-items: center; gap: 8px; min-height: 36px; width: 100%; border: 1px solid var(--siso-shell-line); border-radius: 8px; background: transparent; padding: 6px 10px; text-align: left; cursor: pointer; }
+.siso-shell__search-button kbd { margin-left: auto; font-size: 11px; opacity: .65; }
+.siso-shell__nav { flex: 1; min-height: 0; overflow: auto; overscroll-behavior: contain; scrollbar-width: thin; }
+.siso-shell__profile { display: flex; flex-direction: column; gap: 8px; flex-shrink: 0; border-top: 1px solid var(--siso-shell-line); margin-top: 12px; padding-top: 12px; }
+.siso-shell__body { display: flex; flex-direction: column; flex: 1; min-width: 0; min-height: 0; padding: 0 8px 8px; }
+.siso-shell__topbar { display: flex; flex-shrink: 0; align-items: center; gap: 12px; min-height: 56px; padding: 8px 16px; }
+.siso-shell__topbar-content { flex: 1; min-width: 0; overflow: auto; }
+.siso-shell__actions { display: flex; align-items: center; gap: 8px; flex-shrink: 0; }
+.siso-shell__content { flex: 1; min-width: 0; min-height: 0; overflow: auto; overscroll-behavior: contain; scrollbar-gutter: stable; padding: 32px; background: var(--siso-shell-bg); border: 1px solid var(--siso-shell-line); border-radius: var(--siso-shell-radius); }
+.siso-shell__footer { flex-shrink: 0; padding: 10px 16px; }
+.siso-shell__rail { display: flex; flex-direction: column; width: 64px; flex: 0 0 64px; min-height: 0; overflow: auto; align-items: center; padding: 12px 6px; border-right: 1px solid var(--siso-shell-line); }
+.siso-shell__resize { position: absolute; top: 0; bottom: 0; right: -4px; z-index: 2; width: 8px; cursor: col-resize; touch-action: none; }
+.siso-shell__resize:hover, .siso-shell__resize:focus-visible { background: color-mix(in srgb, var(--siso-shell-accent) 30%, transparent); }
+.siso-shell[data-resizing="true"] { user-select: none; cursor: col-resize; }
+.siso-shell[data-collapsed="true"][data-collapse="offcanvas"] > .siso-shell__sidebar { display: none; }
+.siso-shell[data-collapsed="true"][data-collapse="icon"] > .siso-shell__sidebar { flex-basis: 64px; width: 64px; }
+.siso-shell[data-collapsed="true"][data-collapse="icon"] > .siso-shell__sidebar .siso-shell__brand { flex-direction: column; }
+.siso-shell[data-collapsed="true"][data-collapse="icon"] > .siso-shell__sidebar .siso-shell__search-label { display: none; }
+.siso-shell[data-look="plain"] > .siso-shell__body { padding: 0; }
+.siso-shell[data-look="plain"] > .siso-shell__body > .siso-shell__content { border-radius: 0; border-width: 1px 0 0 1px; }
+.siso-shell[data-look="floating"] > .siso-shell__sidebar { margin: 8px; border: 1px solid var(--siso-shell-line); border-radius: var(--siso-shell-radius); }
+.siso-shell__mobile-toggle, .siso-shell__mobile-tabs { display: none; }
+.siso-shell__dialog { position: fixed; inset: 0 auto 0 0; margin: 0; border: 0; padding: 0; width: min(320px, calc(100vw - 32px)); height: 100dvh; max-height: 100dvh; max-width: none; color: var(--siso-shell-fg); background: var(--siso-shell-frame); }
+.siso-shell__dialog::backdrop { background: rgb(0 0 0 / .55); }
+.siso-shell__mobile-panel { display: flex; flex-direction: column; height: 100%; min-height: 0; padding: 16px; }
+.siso-shell__mobile-rail { display: flex; flex-shrink: 0; gap: 8px; overflow: auto; padding-bottom: 12px; }
+@media (max-width: 1023px) {
+  .siso-shell > .siso-shell__sidebar, .siso-shell > .siso-shell__rail, .siso-shell__restore { display: none; }
+  .siso-shell__mobile-toggle { display: inline-grid; }
+  .siso-shell__body { padding: 0; }
+  .siso-shell__topbar { padding: 8px 12px; border-bottom: 1px solid var(--siso-shell-line); }
+  .siso-shell__mobile-tabs { display: flex; flex-shrink: 0; overflow: auto; padding: 8px 12px; border-bottom: 1px solid var(--siso-shell-line); }
+  .siso-shell__content { padding: 20px 16px; border: 0; border-radius: 0; }
+}
+
+/* Actual app-frame glass styling from app/src/index.css, scoped to consumers
+   opting into the original source frame surface. Default matte avoids blur. */
+.siso-source-frame[data-surface="glass"] :is([data-slot="sidebar-inner"], [data-slot="sidebar-inset"], [data-mark="topbar"]) { backdrop-filter: blur(18px) saturate(1.3); }
+.siso-source-frame[data-surface="glass"] [data-slot="sidebar-inner"] { border-color: color-mix(in oklab, white 10%, transparent); }

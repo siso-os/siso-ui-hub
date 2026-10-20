@@ -2,7 +2,8 @@
 // (camofox) and reads back one JSON string. Each check names the rule it holds (principles/, the Operator's FIT-RULES).
 (() => {
   const SKIP = new Set(["SCRIPT", "STYLE", "NOSCRIPT", "TEMPLATE", "svg", "SVG", "path", "PATH", "HEAD", "META", "LINK"]);
-  const all = [...document.body.querySelectorAll("*")].filter(e => !SKIP.has(e.tagName) && !e.closest("svg"));
+  // [data-uihub-exempt] marks a region that shows someone else's UI (product-art mockups, live component demos): none of its parts are judged
+  const all = [...document.body.querySelectorAll("*")].filter(e => !SKIP.has(e.tagName) && !e.closest("svg") && !e.closest("[data-uihub-exempt]"));
   const memo = new Map(), S = e => { let s = memo.get(e); if (!s) memo.set(e, s = getComputedStyle(e)); return s; };
   const px = v => parseFloat(v) || 0;
   const clear = c => !c || c === "transparent" || /rgba\([^)]*,\s*0\)$/.test(c);
@@ -29,13 +30,13 @@
     if (bands.length === 1) bands = [...bands[0].children].filter(shown); }
   bands = bands.filter(b => { const r = b.getBoundingClientRect(); return r.width >= 200 && r.height >= 40; });
   const typeBands = bands.map(b => { const sizes = new Set();
-    for (const e of [b, ...b.querySelectorAll("*")]) if (shown(e) && [...e.childNodes].some(n => n.nodeType === 3 && n.textContent.trim())) sizes.add(Math.round(px(S(e).fontSize) * 2) / 2);
+    for (const e of [b, ...b.querySelectorAll("*")]) if (shown(e) && !e.closest("[data-uihub-exempt]") && [...e.childNodes].some(n => n.nodeType === 3 && n.textContent.trim())) sizes.add(Math.round(px(S(e).fontSize) * 2) / 2);
     return { band: where(b), head: text(b).slice(0, 40), sizes: [...sizes].sort((a, b) => a - b) }; }).filter(b => b.sizes.length > 3);
 
   // rule 14 "real icons": characters that draw as emoji (emoji presentation, or any emoji with VS16); ❯ ★ ✓ → are type
   const EMOJI = /\p{Emoji_Presentation}|\p{Emoji}\uFE0F/u;
   const emoji = []; const tw = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT);
-  for (let n; (n = tw.nextNode());) { const m = n.textContent.match(EMOJI); if (m && n.parentElement && shown(n.parentElement) && !n.parentElement.closest("code,pre,script,style")) emoji.push([m[0], n.parentElement]); }
+  for (let n; (n = tw.nextNode());) { const m = n.textContent.match(EMOJI); if (m && n.parentElement && shown(n.parentElement) && !n.parentElement.closest("code,pre,script,style,[data-uihub-exempt]")) emoji.push([m[0], n.parentElement]); }
 
   // rule 14: no left accent lines (one coloured side, an inset bar shadow, or a thin absolute ::before bar)
   const accent = vis.filter(e => { const s = S(e), r = e.getBoundingClientRect(); if (r.height < 14) return false;
@@ -62,7 +63,7 @@
   // rule 9 + FIT-RULES "empty = one line": an empty message with its icon or picture taller than about two lines
   const EMPTY = /^(no |nothing\b|empty\b|none yet|0 results|you have no|there (are|is) no)/i, tall = [];
   const tw2 = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT);
-  for (let n; (n = tw2.nextNode());) { const t = n.textContent.trim(); if (!EMPTY.test(t) || t.length > 60 || !n.parentElement || !shown(n.parentElement) || full(n.parentElement).length > t.length + 12 || n.parentElement.closest("th,thead,li,code,pre,td:not([colspan])")) continue;
+  for (let n; (n = tw2.nextNode());) { const t = n.textContent.trim(); if (!EMPTY.test(t) || t.length > 60 || !n.parentElement || !shown(n.parentElement) || full(n.parentElement).length > t.length + 12 || n.parentElement.closest("th,thead,li,code,pre,td:not([colspan]),[data-uihub-exempt]")) continue;
     // the empty state is the largest box around the message that holds no other words (its icon, picture or padding)
     let box = n.parentElement; while (box.parentElement && box.parentElement !== document.body && full(box.parentElement).length <= t.length + 12) box = box.parentElement;
     const lh = px(S(n.parentElement).lineHeight) || px(S(n.parentElement).fontSize) * 1.3, h = box.getBoundingClientRect().height;

@@ -1,0 +1,2795 @@
+{
+  "version": "0.4.1",
+  "packages": [
+    {
+      "id": "tokens",
+      "name": "@siso/tokens",
+      "version": "0.4.1",
+      "about": "Actual Hub, landing and docs token layers, eight frame schemes and seven product palettes.",
+      "familyCount": 4,
+      "presetCount": 0,
+      "runtimeExports": [
+        "FONTS",
+        "SCHEMES",
+        "SISO_TOKENS",
+        "SURFACES",
+        "setSisoTheme",
+        "setSisoTokenSet",
+        "sisoBreakpoints",
+        "sisoProductPalettes",
+        "sisoSpacing",
+        "sisoThemes",
+        "sisoTokenSets",
+        "sisoTokenVars",
+        "tokenVars"
+      ],
+      "families": [
+        {
+          "name": "source token layers",
+          "exports": [
+            "sisoTokenSets",
+            "sisoTokenVars",
+            "setSisoTokenSet"
+          ],
+          "variants": [
+            "UI Hub light/dark",
+            "Landing Night / Paper",
+            "Docs light/dark"
+          ]
+        },
+        {
+          "name": "frame schemes",
+          "exports": [
+            "SCHEMES",
+            "SISO_TOKENS",
+            "tokenVars"
+          ],
+          "variants": [
+            "SISO",
+            "Violet",
+            "Ocean",
+            "Midnight",
+            "Forest",
+            "Rose",
+            "Sand",
+            "Mono"
+          ]
+        },
+        {
+          "name": "product palettes",
+          "exports": [
+            "sisoProductPalettes"
+          ],
+          "variants": [
+            "UI Hub",
+            "Library",
+            "Agent Base",
+            "Research",
+            "Agency",
+            "Voice",
+            "SISO"
+          ]
+        },
+        {
+          "name": "surface and typography",
+          "exports": [
+            "SURFACES",
+            "FONTS"
+          ],
+          "variants": [
+            "matte/glass",
+            "four font stacks",
+            "adjustable radius"
+          ]
+        }
+      ],
+      "deferred": []
+    },
+    {
+      "id": "atoms",
+      "name": "@siso/atoms",
+      "version": "0.4.1",
+      "about": "Everyday controls: actions, fields, selections, feedback and typography.",
+      "familyCount": 51,
+      "presetCount": 0,
+      "runtimeExports": [
+        "Alert",
+        "Avatar",
+        "AvatarGroup",
+        "Badge",
+        "Button",
+        "ButtonGroup",
+        "Card",
+        "CardContent",
+        "CardFooter",
+        "CardHeader",
+        "CardTitle",
+        "Checkbox",
+        "Code",
+        "ConfirmButton",
+        "CopyButton",
+        "Field",
+        "Heading",
+        "IconButton",
+        "InlineEdit",
+        "Input",
+        "Kbd",
+        "Label",
+        "MultiSelect",
+        "NumberField",
+        "OTPInput",
+        "PasswordField",
+        "PasswordStrength",
+        "Progress",
+        "RadioGroup",
+        "SearchField",
+        "SegmentedControl",
+        "Select",
+        "Separator",
+        "Skeleton",
+        "Slider",
+        "Spinner",
+        "SplitButton",
+        "Status",
+        "Switch",
+        "Tabs",
+        "TabsContent",
+        "TabsList",
+        "TabsTrigger",
+        "TagInput",
+        "Text",
+        "Textarea",
+        "ToggleButton",
+        "Tooltip",
+        "TooltipContent",
+        "TooltipProvider",
+        "TooltipTrigger",
+        "hubPrimitives",
+        "sourceAtoms"
+      ],
+      "families": [
+        {
+          "name": "action-button",
+          "exports": [
+            "ActionButtonProps",
+            "ActionButton"
+          ],
+          "variants": [
+            "original source contract and documentation examples"
+          ]
+        },
+        {
+          "name": "alert",
+          "exports": [
+            "AlertTone",
+            "AlertProps",
+            "Alert"
+          ],
+          "variants": [
+            "original source contract and documentation examples"
+          ]
+        },
+        {
+          "name": "animated-counter",
+          "exports": [
+            "AnimatedCounterProps",
+            "AnimatedCounter"
+          ],
+          "variants": [
+            "original source contract and documentation examples"
+          ]
+        },
+        {
+          "name": "avatar-group",
+          "exports": [
+            "AvatarGroupMember",
+            "AvatarGroupProps",
+            "AvatarGroup"
+          ],
+          "variants": [
+            "original source contract and documentation examples"
+          ]
+        },
+        {
+          "name": "avatar",
+          "exports": [
+            "AvatarProps",
+            "Avatar"
+          ],
+          "variants": [
+            "original source contract and documentation examples"
+          ]
+        },
+        {
+          "name": "badge",
+          "exports": [
+            "BadgeTone",
+            "BadgeSize",
+            "BadgeProps",
+            "Badge"
+          ],
+          "variants": [
+            "original source contract and documentation examples"
+          ]
+        },
+        {
+          "name": "billing-toggle",
+          "exports": [
+            "BillingToggleOption",
+            "BillingToggleProps",
+            "BillingToggle",
+            "BillingPriceProps",
+            "BillingPrice"
+          ],
+          "variants": [
+            "original source contract and documentation examples"
+          ]
+        },
+        {
+          "name": "button-group",
+          "exports": [
+            "ButtonGroupVariant",
+            "ButtonGroupSize",
+            "ButtonGroupOrientation",
+            "ButtonGroupItem",
+            "ButtonGroupMenuItem",
+            "ButtonGroupMenu",
+            "ButtonGroupProps",
+            "ButtonGroup"
+          ],
+          "variants": [
+            "original source contract and documentation examples"
+          ]
+        },
+        {
+          "name": "button",
+          "exports": [
+            "ButtonVariant",
+            "ButtonSize",
+            "ButtonProps",
+            "Button"
+          ],
+          "variants": [
+            "original source contract and documentation examples"
+          ]
+        },
+        {
+          "name": "card",
+          "exports": [
+            "CardProps",
+            "Card"
+          ],
+          "variants": [
+            "original source contract and documentation examples"
+          ]
+        },
+        {
+          "name": "checkbox",
+          "exports": [
+            "CheckboxProps",
+            "Checkbox"
+          ],
+          "variants": [
+            "original source contract and documentation examples"
+          ]
+        },
+        {
+          "name": "chip-group",
+          "exports": [
+            "ChipOption",
+            "ChipGroupProps",
+            "ChipGroup"
+          ],
+          "variants": [
+            "original source contract and documentation examples"
+          ]
+        },
+        {
+          "name": "confirm-morph",
+          "exports": [
+            "ConfirmMorphState",
+            "ConfirmMorphMode",
+            "ConfirmMorphProps",
+            "ConfirmMorph"
+          ],
+          "variants": [
+            "original source contract and documentation examples"
+          ]
+        },
+        {
+          "name": "copy-button",
+          "exports": [
+            "CopyButtonProps",
+            "CopyButton"
+          ],
+          "variants": [
+            "original source contract and documentation examples"
+          ]
+        },
+        {
+          "name": "countdown",
+          "exports": [
+            "CountdownUnit",
+            "CountdownProps",
+            "toEpoch",
+            "Countdown"
+          ],
+          "variants": [
+            "original source contract and documentation examples"
+          ]
+        },
+        {
+          "name": "expanding-button-group",
+          "exports": [
+            "ExpandingButtonGroupSize",
+            "ExpandingButtonGroupTone",
+            "ExpandingButtonGroupItem",
+            "ExpandingButtonGroupProps",
+            "ExpandingButtonGroup"
+          ],
+          "variants": [
+            "original source contract and documentation examples"
+          ]
+        },
+        {
+          "name": "expanding-search",
+          "exports": [
+            "ExpandingSearchItem",
+            "ExpandingSearchProps",
+            "ExpandingSearch"
+          ],
+          "variants": [
+            "original source contract and documentation examples"
+          ]
+        },
+        {
+          "name": "floating-button-group",
+          "exports": [
+            "FloatingButtonGroupVariant",
+            "FloatingButtonGroupSize",
+            "FloatingButtonGroupOrientation",
+            "FloatingButtonGroupAction",
+            "FloatingButtonGroupSeparator",
+            "FloatingButtonGroupItem",
+            "FloatingButtonGroupProps",
+            "FloatingButtonGroup"
+          ],
+          "variants": [
+            "original source contract and documentation examples"
+          ]
+        },
+        {
+          "name": "hold-to-confirm",
+          "exports": [
+            "HoldToConfirmProps",
+            "HoldToConfirm"
+          ],
+          "variants": [
+            "original source contract and documentation examples"
+          ]
+        },
+        {
+          "name": "in-view-title",
+          "exports": [
+            "InViewTitleVariant",
+            "InViewTitleProps",
+            "InViewTitle"
+          ],
+          "variants": [
+            "original source contract and documentation examples"
+          ]
+        },
+        {
+          "name": "inline-edit",
+          "exports": [
+            "InlineEditProps",
+            "InlineEdit"
+          ],
+          "variants": [
+            "original source contract and documentation examples"
+          ]
+        },
+        {
+          "name": "input",
+          "exports": [
+            "InputProps",
+            "Input"
+          ],
+          "variants": [
+            "original source contract and documentation examples"
+          ]
+        },
+        {
+          "name": "money-input",
+          "exports": [
+            "MoneyInputDetails",
+            "MoneyInputProps",
+            "MoneyInput"
+          ],
+          "variants": [
+            "original source contract and documentation examples"
+          ]
+        },
+        {
+          "name": "multi-select",
+          "exports": [
+            "MultiSelectOption",
+            "MultiSelectProps",
+            "MultiSelect"
+          ],
+          "variants": [
+            "original source contract and documentation examples"
+          ]
+        },
+        {
+          "name": "number-field",
+          "exports": [
+            "NumberFieldAffix",
+            "NumberFieldProps",
+            "NumberFieldSize",
+            "NumberField"
+          ],
+          "variants": [
+            "original source contract and documentation examples"
+          ]
+        },
+        {
+          "name": "otp-input",
+          "exports": [
+            "OtpInputProps",
+            "OtpInput"
+          ],
+          "variants": [
+            "original source contract and documentation examples"
+          ]
+        },
+        {
+          "name": "password-field",
+          "exports": [
+            "PasswordFieldMessages",
+            "defaultPasswordFieldMessages",
+            "PasswordFieldProps",
+            "PasswordField"
+          ],
+          "variants": [
+            "original source contract and documentation examples"
+          ]
+        },
+        {
+          "name": "password-strength",
+          "exports": [
+            "PasswordRule",
+            "PasswordStrengthResult",
+            "PasswordStrengthLevels",
+            "PasswordStrengthMessages",
+            "defaultPasswordStrengthMessages",
+            "PasswordStrengthMessagesInput",
+            "PasswordStrengthProps",
+            "countCodePoints",
+            "PasswordRuleLabels",
+            "PasswordRuleOptions",
+            "createPasswordRules",
+            "defaultPasswordRules",
+            "EstimateStrengthOptions",
+            "estimateStrength",
+            "PasswordStrength"
+          ],
+          "variants": [
+            "original source contract and documentation examples"
+          ]
+        },
+        {
+          "name": "phone-input",
+          "exports": [
+            "PhoneCountry",
+            "PHONE_COUNTRIES",
+            "flagOf",
+            "formatNational",
+            "PhoneStatus",
+            "parsePhoneNumber",
+            "formatPhoneNumber",
+            "PhoneInputDetails",
+            "PhoneInputProps",
+            "PhoneInput"
+          ],
+          "variants": [
+            "original source contract and documentation examples"
+          ]
+        },
+        {
+          "name": "progress",
+          "exports": [
+            "ProgressProps",
+            "Progress"
+          ],
+          "variants": [
+            "original source contract and documentation examples"
+          ]
+        },
+        {
+          "name": "radio-cards",
+          "exports": [
+            "RadioCardOption",
+            "RadioCardsProps",
+            "RadioCards"
+          ],
+          "variants": [
+            "original source contract and documentation examples"
+          ]
+        },
+        {
+          "name": "radio-group",
+          "exports": [
+            "RadioGroupProps",
+            "RadioGroup"
+          ],
+          "variants": [
+            "original source contract and documentation examples"
+          ]
+        },
+        {
+          "name": "search-field",
+          "exports": [
+            "SearchFieldProps",
+            "SearchField"
+          ],
+          "variants": [
+            "original source contract and documentation examples"
+          ]
+        },
+        {
+          "name": "segmented-control",
+          "exports": [
+            "Segment",
+            "SegmentedControlProps",
+            "SegmentedControl"
+          ],
+          "variants": [
+            "original source contract and documentation examples"
+          ]
+        },
+        {
+          "name": "select",
+          "exports": [
+            "SelectProps",
+            "Select"
+          ],
+          "variants": [
+            "original source contract and documentation examples"
+          ]
+        },
+        {
+          "name": "shortcut-recorder",
+          "exports": [
+            "Platform",
+            "ShortcutToken",
+            "keyId",
+            "normalizeShortcut",
+            "shortcutFromEvent",
+            "matchesShortcut",
+            "shortcutTokens",
+            "formatShortcut",
+            "usePlatform",
+            "usePressedKeys",
+            "ShortcutKbdProps",
+            "ShortcutKbd",
+            "Kbd",
+            "KbdProps",
+            "ShortcutKeysProps",
+            "ShortcutKeys",
+            "ShortcutBinding",
+            "ShortcutRecorderProps",
+            "ShortcutRecorder",
+            "ShortcutListItem",
+            "ShortcutListGroup",
+            "ShortcutListProps",
+            "ShortcutList"
+          ],
+          "variants": [
+            "original source contract and documentation examples"
+          ]
+        },
+        {
+          "name": "skeleton",
+          "exports": [
+            "SkeletonProps",
+            "Skeleton"
+          ],
+          "variants": [
+            "original source contract and documentation examples"
+          ]
+        },
+        {
+          "name": "slider",
+          "exports": [
+            "SliderValue",
+            "SliderMark",
+            "SliderProps",
+            "Slider"
+          ],
+          "variants": [
+            "original source contract and documentation examples"
+          ]
+        },
+        {
+          "name": "slot-text",
+          "exports": [
+            "SlotTextProps",
+            "SlotText"
+          ],
+          "variants": [
+            "original source contract and documentation examples"
+          ]
+        },
+        {
+          "name": "split-button",
+          "exports": [
+            "SplitButtonAction",
+            "SplitButtonProps",
+            "SplitButton"
+          ],
+          "variants": [
+            "original source contract and documentation examples"
+          ]
+        },
+        {
+          "name": "stepper",
+          "exports": [
+            "StepperOrientation",
+            "StepperStatus",
+            "StepperStep",
+            "StepperProps",
+            "Stepper"
+          ],
+          "variants": [
+            "original source contract and documentation examples"
+          ]
+        },
+        {
+          "name": "switch",
+          "exports": [
+            "SwitchProps",
+            "Switch"
+          ],
+          "variants": [
+            "original source contract and documentation examples"
+          ]
+        },
+        {
+          "name": "tabs",
+          "exports": [
+            "Tabs",
+            "TabsList",
+            "TabsTrigger",
+            "TabsContent"
+          ],
+          "variants": [
+            "original source contract and documentation examples"
+          ]
+        },
+        {
+          "name": "tag-input",
+          "exports": [
+            "TagInputProps",
+            "TagInput"
+          ],
+          "variants": [
+            "original source contract and documentation examples"
+          ]
+        },
+        {
+          "name": "text-morph",
+          "exports": [
+            "TextMorphProps",
+            "TextMorph"
+          ],
+          "variants": [
+            "original source contract and documentation examples"
+          ]
+        },
+        {
+          "name": "text-reveal",
+          "exports": [
+            "TextRevealProps",
+            "TextReveal"
+          ],
+          "variants": [
+            "original source contract and documentation examples"
+          ]
+        },
+        {
+          "name": "text-shimmer",
+          "exports": [
+            "TextShimmerProps",
+            "TextShimmer"
+          ],
+          "variants": [
+            "original source contract and documentation examples"
+          ]
+        },
+        {
+          "name": "textarea",
+          "exports": [
+            "TextareaProps",
+            "Textarea"
+          ],
+          "variants": [
+            "original source contract and documentation examples"
+          ]
+        },
+        {
+          "name": "theme-switch-eclipse",
+          "exports": [
+            "ThemeSwitchVariant",
+            "Theme",
+            "ThemeSwitchProps",
+            "ThemeSwitch"
+          ],
+          "variants": [
+            "original source contract and documentation examples"
+          ]
+        },
+        {
+          "name": "theme-switch-rise",
+          "exports": [
+            "ThemeSwitchVariant",
+            "Theme",
+            "ThemeSwitchProps",
+            "ThemeSwitch"
+          ],
+          "variants": [
+            "original source contract and documentation examples"
+          ]
+        },
+        {
+          "name": "theme-switch-split",
+          "exports": [
+            "ThemeSwitchVariant",
+            "Theme",
+            "ThemeSwitchProps",
+            "ThemeSwitch"
+          ],
+          "variants": [
+            "original source contract and documentation examples"
+          ]
+        },
+        {
+          "name": "theme-switch",
+          "exports": [
+            "ThemeSwitchVariant",
+            "Theme",
+            "ThemeSwitchProps",
+            "ThemeSwitch"
+          ],
+          "variants": [
+            "original source contract and documentation examples"
+          ]
+        },
+        {
+          "name": "tooltip",
+          "exports": [
+            "TooltipProps",
+            "Tooltip"
+          ],
+          "variants": [
+            "original source contract and documentation examples"
+          ]
+        },
+        {
+          "name": "usage-meter",
+          "exports": [
+            "UsageMeterSegment",
+            "UsageMeterProps",
+            "UsageMeter"
+          ],
+          "variants": [
+            "original source contract and documentation examples"
+          ]
+        }
+      ],
+      "deferred": []
+    },
+    {
+      "id": "blocks",
+      "name": "@siso/blocks",
+      "version": "0.4.1",
+      "about": "Dialogs, search, notifications, tables, timelines, uploads and threads.",
+      "familyCount": 64,
+      "presetCount": 0,
+      "runtimeExports": [
+        "SisoChatThread",
+        "SisoCommandPalette",
+        "SisoCommentThread",
+        "SisoDataTable",
+        "SisoDialog",
+        "SisoDrawer",
+        "SisoEmptyState",
+        "SisoFileDropzone",
+        "SisoFilterToolbar",
+        "SisoHoverCard",
+        "SisoNotificationCenter",
+        "SisoPagination",
+        "SisoPopover",
+        "SisoTimeline",
+        "SisoToastStack",
+        "UiableNotifications",
+        "sisoSortRows",
+        "sisoValidateFiles",
+        "sourceBlocks"
+      ],
+      "families": [
+        {
+          "name": "accordion",
+          "exports": [
+            "AccordionItem",
+            "AccordionProps",
+            "Accordion"
+          ],
+          "variants": [
+            "original source contract and documentation examples"
+          ]
+        },
+        {
+          "name": "announcement-bar",
+          "exports": [
+            "AnnouncementAction",
+            "Announcement",
+            "AnnouncementBarProps",
+            "clearAnnouncementDismissal",
+            "AnnouncementBar"
+          ],
+          "variants": [
+            "original source contract and documentation examples"
+          ]
+        },
+        {
+          "name": "blog-grid",
+          "exports": [
+            "BlogGridProps",
+            "BlogGrid",
+            "BlogGridBlock"
+          ],
+          "variants": [
+            "original source contract and documentation examples"
+          ]
+        },
+        {
+          "name": "bottom-sheet",
+          "exports": [
+            "BottomSheetProps",
+            "BottomSheet",
+            "BottomSheetClose"
+          ],
+          "variants": [
+            "original source contract and documentation examples"
+          ]
+        },
+        {
+          "name": "breadcrumb",
+          "exports": [
+            "BreadcrumbItem",
+            "BreadcrumbProps",
+            "Breadcrumb"
+          ],
+          "variants": [
+            "original source contract and documentation examples"
+          ]
+        },
+        {
+          "name": "calendar",
+          "exports": [
+            "CalendarDateMatcher",
+            "CalendarProps",
+            "Calendar"
+          ],
+          "variants": [
+            "original source contract and documentation examples"
+          ]
+        },
+        {
+          "name": "card-stack",
+          "exports": [
+            "CardDecision",
+            "CardStackProps",
+            "CardStack"
+          ],
+          "variants": [
+            "original source contract and documentation examples"
+          ]
+        },
+        {
+          "name": "carousel",
+          "exports": [
+            "CarouselProps",
+            "Carousel"
+          ],
+          "variants": [
+            "original source contract and documentation examples"
+          ]
+        },
+        {
+          "name": "changelog-feed",
+          "exports": [
+            "ChangelogKind",
+            "ChangelogMedia",
+            "ChangelogEntry",
+            "ChangelogMonth",
+            "ChangelogFeedProps",
+            "ChangelogFeed"
+          ],
+          "variants": [
+            "original source contract and documentation examples"
+          ]
+        },
+        {
+          "name": "chat-thread",
+          "exports": [
+            "ChatParticipant",
+            "ChatAttachment",
+            "ChatReaction",
+            "ChatMessageStatus",
+            "ChatMessage",
+            "ChatDraft",
+            "ChatComposerLabels",
+            "ChatThreadLabels",
+            "ChatThreadHandle",
+            "ChatThreadProps",
+            "formatBytes",
+            "ChatComposerProps",
+            "ChatComposerHandle",
+            "ChatComposer",
+            "ChatThread"
+          ],
+          "variants": [
+            "original source contract and documentation examples"
+          ]
+        },
+        {
+          "name": "code-block",
+          "exports": [
+            "CodeBlockProps",
+            "CodeBlock"
+          ],
+          "variants": [
+            "original source contract and documentation examples"
+          ]
+        },
+        {
+          "name": "color-picker",
+          "exports": [
+            "ColorFormat",
+            "ColorSwatch",
+            "ColorPickerProps",
+            "Hsva",
+            "toHex",
+            "parseColor",
+            "ColorPicker"
+          ],
+          "variants": [
+            "original source contract and documentation examples"
+          ]
+        },
+        {
+          "name": "combobox",
+          "exports": [
+            "ComboboxOption",
+            "ComboboxProps",
+            "Combobox"
+          ],
+          "variants": [
+            "original source contract and documentation examples"
+          ]
+        },
+        {
+          "name": "command-palette",
+          "exports": [
+            "CommandItem",
+            "CommandPaletteProps",
+            "CommandPalette"
+          ],
+          "variants": [
+            "original source contract and documentation examples"
+          ]
+        },
+        {
+          "name": "comment-thread",
+          "exports": [
+            "CommentAuthor",
+            "CommentReaction",
+            "ThreadComment",
+            "CommentThreadEvent",
+            "CommentThreadLabels",
+            "CommentThreadProps",
+            "CommentThread"
+          ],
+          "variants": [
+            "original source contract and documentation examples"
+          ]
+        },
+        {
+          "name": "comparison-table",
+          "exports": [
+            "ComparisonTableProps",
+            "ComparisonTable",
+            "ComparisonTableBlock"
+          ],
+          "variants": [
+            "original source contract and documentation examples"
+          ]
+        },
+        {
+          "name": "contact-section",
+          "exports": [
+            "ContactSectionVariant",
+            "ContactMessage",
+            "ContactChannel",
+            "ContactOffice",
+            "ContactSectionProps",
+            "contactExampleChannels",
+            "contactExampleOffices",
+            "ContactSection",
+            "ContactSectionBlock"
+          ],
+          "variants": [
+            "original source contract and documentation examples"
+          ]
+        },
+        {
+          "name": "context-menu",
+          "exports": [
+            "ContextMenuItem",
+            "ContextMenuProps",
+            "ContextMenu",
+            "contextMenuExampleItems"
+          ],
+          "variants": [
+            "original source contract and documentation examples"
+          ]
+        },
+        {
+          "name": "cta-section",
+          "exports": [
+            "CtaVariant",
+            "CtaSectionProps",
+            "CtaSection",
+            "CtaSectionBlock"
+          ],
+          "variants": [
+            "original source contract and documentation examples"
+          ]
+        },
+        {
+          "name": "date-picker",
+          "exports": [
+            "DatePickerProps",
+            "DatePicker"
+          ],
+          "variants": [
+            "original source contract and documentation examples"
+          ]
+        },
+        {
+          "name": "date-range-picker",
+          "exports": [
+            "DateRange",
+            "DateRangePreset",
+            "DateRangePickerProps",
+            "defaultDateRangePresets",
+            "DateRangePicker"
+          ],
+          "variants": [
+            "original source contract and documentation examples"
+          ]
+        },
+        {
+          "name": "dialog",
+          "exports": [
+            "Dialog",
+            "DialogTrigger",
+            "DialogClose",
+            "DialogContentProps",
+            "DialogContent"
+          ],
+          "variants": [
+            "original source contract and documentation examples"
+          ]
+        },
+        {
+          "name": "drawer",
+          "exports": [
+            "useDrawerItem",
+            "Drawer",
+            "DrawerTrigger",
+            "DrawerClose",
+            "DrawerContentProps",
+            "DrawerContent"
+          ],
+          "variants": [
+            "original source contract and documentation examples"
+          ]
+        },
+        {
+          "name": "dropdown-menu",
+          "exports": [
+            "DropdownItem",
+            "DropdownMenuProps",
+            "DropdownMenu"
+          ],
+          "variants": [
+            "original source contract and documentation examples"
+          ]
+        },
+        {
+          "name": "empty-state",
+          "exports": [
+            "EmptyStateProps",
+            "EmptyState"
+          ],
+          "variants": [
+            "original source contract and documentation examples"
+          ]
+        },
+        {
+          "name": "empty-states",
+          "exports": [
+            "EmptyStates"
+          ],
+          "variants": [
+            "original source contract and documentation examples"
+          ]
+        },
+        {
+          "name": "expandable-card",
+          "exports": [
+            "ExpandableCardProps",
+            "ExpandableCard"
+          ],
+          "variants": [
+            "original source contract and documentation examples"
+          ]
+        },
+        {
+          "name": "faq-section",
+          "exports": [
+            "FaqSectionVariant",
+            "FaqItem",
+            "FaqSectionProps",
+            "faqExampleItems",
+            "FaqSection",
+            "FaqSectionBlock"
+          ],
+          "variants": [
+            "original source contract and documentation examples"
+          ]
+        },
+        {
+          "name": "file-dropzone",
+          "exports": [
+            "FileDropzoneStatus",
+            "FileDropzoneItem",
+            "FileDropzoneUpload",
+            "FileDropzoneProps",
+            "formatFileSize",
+            "FileDropzone"
+          ],
+          "variants": [
+            "original source contract and documentation examples"
+          ]
+        },
+        {
+          "name": "file-upload",
+          "exports": [
+            "FileUploadItem",
+            "FileUploadProps",
+            "FileUpload"
+          ],
+          "variants": [
+            "original source contract and documentation examples"
+          ]
+        },
+        {
+          "name": "filter-toolbar",
+          "exports": [
+            "FilterChip",
+            "FilterOption",
+            "FilterField",
+            "FilterMenuProps",
+            "FilterToolbarProps",
+            "FilterMenu",
+            "FilterToolbar"
+          ],
+          "variants": [
+            "original source contract and documentation examples"
+          ]
+        },
+        {
+          "name": "hero-section",
+          "exports": [
+            "HeroSectionVariant",
+            "HeroSectionProps",
+            "HeroSection",
+            "HeroSectionBlock"
+          ],
+          "variants": [
+            "original source contract and documentation examples"
+          ]
+        },
+        {
+          "name": "hover-card",
+          "exports": [
+            "HoverCardProps",
+            "HoverCard",
+            "HoverCardStat",
+            "HoverCardProfileProps",
+            "HoverCardProfile"
+          ],
+          "variants": [
+            "original source contract and documentation examples"
+          ]
+        },
+        {
+          "name": "image-compare",
+          "exports": [
+            "ImageCompareProps",
+            "ImageCompare"
+          ],
+          "variants": [
+            "original source contract and documentation examples"
+          ]
+        },
+        {
+          "name": "json-viewer",
+          "exports": [
+            "JsonValueType",
+            "JsonViewerCopyDetail",
+            "JsonViewerProps",
+            "JsonViewer"
+          ],
+          "variants": [
+            "original source contract and documentation examples"
+          ]
+        },
+        {
+          "name": "login-centered",
+          "exports": [
+            "LoginMethod",
+            "LoginCenteredProps",
+            "LoginCentered"
+          ],
+          "variants": [
+            "original source contract and documentation examples"
+          ]
+        },
+        {
+          "name": "logo-marquee",
+          "exports": [
+            "LogoMarqueeBrand",
+            "LogoMarqueeTone",
+            "LogoMarqueeProps",
+            "LogoMarquee"
+          ],
+          "variants": [
+            "original source contract and documentation examples"
+          ]
+        },
+        {
+          "name": "mention-input",
+          "exports": [
+            "MentionKind",
+            "MentionPerson",
+            "MentionChannel",
+            "Mention",
+            "MentionValue",
+            "MentionInputHandle",
+            "MentionInputProps",
+            "mentionText",
+            "serializeMentions",
+            "MentionInput"
+          ],
+          "variants": [
+            "original source contract and documentation examples"
+          ]
+        },
+        {
+          "name": "metric-card",
+          "exports": [
+            "MetricCardProps",
+            "MetricCard"
+          ],
+          "variants": [
+            "original source contract and documentation examples"
+          ]
+        },
+        {
+          "name": "morph-select",
+          "exports": [
+            "MorphSelectOption",
+            "MorphSelectGroup",
+            "MorphSelectItem",
+            "MorphSelectProps",
+            "MorphSelect"
+          ],
+          "variants": [
+            "original source contract and documentation examples"
+          ]
+        },
+        {
+          "name": "newsletter-signup",
+          "exports": [
+            "NewsletterVariant",
+            "NewsletterSignupProps",
+            "NewsletterSignup",
+            "NewsletterSignupBlock"
+          ],
+          "variants": [
+            "original source contract and documentation examples"
+          ]
+        },
+        {
+          "name": "notification-center",
+          "exports": [
+            "NotificationItem",
+            "NotificationCenterProps",
+            "NotificationCenter"
+          ],
+          "variants": [
+            "original source contract and documentation examples"
+          ]
+        },
+        {
+          "name": "page-header",
+          "exports": [
+            "PageHeader"
+          ],
+          "variants": [
+            "original source contract and documentation examples"
+          ]
+        },
+        {
+          "name": "pagination",
+          "exports": [
+            "PaginationProps",
+            "Pagination"
+          ],
+          "variants": [
+            "original source contract and documentation examples"
+          ]
+        },
+        {
+          "name": "plan-comparison",
+          "exports": [
+            "PlanComparison"
+          ],
+          "variants": [
+            "original source contract and documentation examples"
+          ]
+        },
+        {
+          "name": "popover",
+          "exports": [
+            "Popover",
+            "PopoverClose",
+            "PopoverTrigger",
+            "PopoverContent"
+          ],
+          "variants": [
+            "original source contract and documentation examples"
+          ]
+        },
+        {
+          "name": "resizable-panels",
+          "exports": [
+            "ResizablePanelProps",
+            "ResizablePanelsProps",
+            "ResizablePanel",
+            "ResizablePanels"
+          ],
+          "variants": [
+            "original source contract and documentation examples"
+          ]
+        },
+        {
+          "name": "rich-text-editor",
+          "exports": [
+            "BlockType",
+            "normalizeUrl",
+            "markdownToHtml",
+            "htmlToMarkdown",
+            "sanitizeHtml",
+            "RichTextValue",
+            "RichTextEditorHandle",
+            "RichTextEditorProps",
+            "RichTextEditor"
+          ],
+          "variants": [
+            "original source contract and documentation examples"
+          ]
+        },
+        {
+          "name": "scroll-area",
+          "exports": [
+            "ScrollAreaEdges",
+            "ScrollAreaProps",
+            "ScrollArea"
+          ],
+          "variants": [
+            "original source contract and documentation examples"
+          ]
+        },
+        {
+          "name": "sign-in",
+          "exports": [
+            "SignInMethod",
+            "SignInAccount",
+            "SignInProps",
+            "SignIn"
+          ],
+          "variants": [
+            "original source contract and documentation examples"
+          ]
+        },
+        {
+          "name": "signature-pad",
+          "exports": [
+            "InkPoint",
+            "InkColor",
+            "InkWidth",
+            "InkStroke",
+            "OutlineOptions",
+            "PAD_WIDTH",
+            "getStrokeOutline",
+            "outlineToPath",
+            "strokePath",
+            "signatureToSvg",
+            "signatureToPng",
+            "SignaturePadProps",
+            "SignaturePad"
+          ],
+          "variants": [
+            "original source contract and documentation examples"
+          ]
+        },
+        {
+          "name": "signup-form",
+          "exports": [
+            "SignupDetails",
+            "SignupFormProps",
+            "SignupForm"
+          ],
+          "variants": [
+            "original source contract and documentation examples"
+          ]
+        },
+        {
+          "name": "site-footer",
+          "exports": [
+            "SiteFooterVariant",
+            "SiteFooterLink",
+            "SiteFooterColumn",
+            "SiteFooterNewsletter",
+            "SiteFooterProps",
+            "siteFooterExampleColumns",
+            "SiteFooter",
+            "SiteFooterBlock"
+          ],
+          "variants": [
+            "original source contract and documentation examples"
+          ]
+        },
+        {
+          "name": "site-header",
+          "exports": [
+            "SiteHeaderVariant",
+            "SiteHeaderLink",
+            "SiteHeaderFeature",
+            "SiteHeaderItem",
+            "SiteHeaderAction",
+            "SiteHeaderDestination",
+            "SiteHeaderProps",
+            "ArcMark",
+            "siteHeaderExampleItems",
+            "SiteHeader",
+            "SiteHeaderBlock"
+          ],
+          "variants": [
+            "original source contract and documentation examples"
+          ]
+        },
+        {
+          "name": "sortable-data-table",
+          "exports": [
+            "SortDirection",
+            "SortState",
+            "DataColumn",
+            "SortableDataTableProps",
+            "SortableDataTable"
+          ],
+          "variants": [
+            "original source contract and documentation examples"
+          ]
+        },
+        {
+          "name": "stats-band",
+          "exports": [
+            "StatsBandLayout",
+            "StatsBandProps",
+            "StatsBand",
+            "StatsBandBlock"
+          ],
+          "variants": [
+            "original source contract and documentation examples"
+          ]
+        },
+        {
+          "name": "swipe-actions",
+          "exports": [
+            "SwipeAction",
+            "SwipeActionsProps",
+            "SwipeActionsRowProps",
+            "SwipeActions",
+            "SwipeActionsRow"
+          ],
+          "variants": [
+            "original source contract and documentation examples"
+          ]
+        },
+        {
+          "name": "time-picker",
+          "exports": [
+            "TimePickerProps",
+            "TimePicker"
+          ],
+          "variants": [
+            "original source contract and documentation examples"
+          ]
+        },
+        {
+          "name": "timeline",
+          "exports": [
+            "TimelineEvent",
+            "TimelineProps",
+            "Timeline"
+          ],
+          "variants": [
+            "original source contract and documentation examples"
+          ]
+        },
+        {
+          "name": "toast-stack",
+          "exports": [
+            "ToastType",
+            "ToastAction",
+            "ToastOptions",
+            "ToastStackApi",
+            "ToastStackProviderProps",
+            "ToastStackProps",
+            "ToastStackProvider",
+            "useToastStack",
+            "ToastStack"
+          ],
+          "variants": [
+            "original source contract and documentation examples"
+          ]
+        },
+        {
+          "name": "toast",
+          "exports": [
+            "ToastProps",
+            "Toast"
+          ],
+          "variants": [
+            "original source contract and documentation examples"
+          ]
+        },
+        {
+          "name": "tree-view",
+          "exports": [
+            "TreeNode",
+            "TreeViewProps",
+            "TreeView"
+          ],
+          "variants": [
+            "original source contract and documentation examples"
+          ]
+        },
+        {
+          "name": "user-menu",
+          "exports": [
+            "UserStatus",
+            "ThemePreference",
+            "userStatuses",
+            "UserMenuUser",
+            "UserMenuItem",
+            "UserMenuProps",
+            "PresenceDot",
+            "UserMenu"
+          ],
+          "variants": [
+            "original source contract and documentation examples"
+          ]
+        },
+        {
+          "name": "uiable-notifications",
+          "exports": [
+            "UiableNotifications"
+          ],
+          "variants": [
+            "original compact popover",
+            "host content and callbacks"
+          ]
+        }
+      ],
+      "deferred": []
+    },
+    {
+      "id": "navigation",
+      "name": "@siso/navigation",
+      "version": "0.4.1",
+      "about": "Grouped side navigation, collapsed rails, mobile menus, tabs and switchers.",
+      "familyCount": 13,
+      "presetCount": 0,
+      "runtimeExports": [
+        "SisoBreadcrumbs",
+        "SisoHubNavFoot",
+        "SisoHubNavGlyph",
+        "SisoHubNavPlaces",
+        "SisoHubNavRow",
+        "SisoHubNavSlide",
+        "SisoHubPillSwitch",
+        "SisoHubSearchButton",
+        "SisoHubSideNav",
+        "SisoMobileNav",
+        "SisoNavSwitcher",
+        "SisoPageTabs",
+        "SisoSideNav",
+        "SisoToolNav",
+        "agentBase",
+        "sisoHubNavIcon"
+      ],
+      "families": [
+        {
+          "name": "SisoSideNav",
+          "exports": [
+            "SisoSideNav"
+          ],
+          "variants": [
+            "grouped",
+            "nested-disclosure",
+            "collapsed-rail",
+            "counts",
+            "controlled-expansion"
+          ]
+        },
+        {
+          "name": "SisoMobileNav",
+          "exports": [
+            "SisoMobileNav"
+          ],
+          "variants": [
+            "native-modal",
+            "controlled",
+            "uncontrolled"
+          ]
+        },
+        {
+          "name": "SisoNavSwitcher",
+          "exports": [
+            "SisoNavSwitcher"
+          ],
+          "variants": [
+            "workspace",
+            "tool",
+            "space"
+          ]
+        },
+        {
+          "name": "SisoToolNav",
+          "exports": [
+            "SisoToolNav"
+          ],
+          "variants": [
+            "horizontal",
+            "vertical"
+          ]
+        },
+        {
+          "name": "SisoBreadcrumbs",
+          "exports": [
+            "SisoBreadcrumbs"
+          ],
+          "variants": [
+            "page-links"
+          ]
+        },
+        {
+          "name": "SisoPageTabs",
+          "exports": [
+            "SisoPageTabs"
+          ],
+          "variants": [
+            "page-links",
+            "counts"
+          ]
+        },
+        {
+          "name": "SisoHubSideNav",
+          "exports": [
+            "SisoHubSideNav"
+          ],
+          "variants": [
+            "factory-core-switcher",
+            "public-hub",
+            "grouped",
+            "drill-back",
+            "foldouts",
+            "source-counts",
+            "places-footer"
+          ]
+        },
+        {
+          "name": "SisoHubNavRow",
+          "exports": [
+            "SisoHubNavRow"
+          ],
+          "variants": [
+            "active-warm-well",
+            "count",
+            "pick-dot",
+            "animated-glyph"
+          ]
+        },
+        {
+          "name": "SisoHubNavSlide",
+          "exports": [
+            "SisoHubNavSlide"
+          ],
+          "variants": [
+            "forward",
+            "back"
+          ]
+        },
+        {
+          "name": "SisoHubSearchButton",
+          "exports": [
+            "SisoHubSearchButton"
+          ],
+          "variants": [
+            "click",
+            "slash",
+            "command-k"
+          ]
+        },
+        {
+          "name": "SisoHubNavFoot",
+          "exports": [
+            "SisoHubNavFoot"
+          ],
+          "variants": [
+            "version",
+            "help-menu",
+            "releases",
+            "shortcuts"
+          ]
+        },
+        {
+          "name": "SisoHubNavPlaces",
+          "exports": [
+            "SisoHubNavPlaces"
+          ],
+          "variants": [
+            "source-icon-strip"
+          ]
+        },
+        {
+          "name": "SisoHubNavGlyph",
+          "exports": [
+            "SisoHubNavGlyph"
+          ],
+          "variants": [
+            "active",
+            "hover",
+            "reduced-motion"
+          ]
+        }
+      ],
+      "deferred": []
+    },
+    {
+      "id": "shells",
+      "name": "@siso/shells",
+      "version": "0.4.1",
+      "about": "The UI Hub frame, app sidebar and rail-plus-panel layouts, with resize and mobile behavior.",
+      "familyCount": 9,
+      "presetCount": 0,
+      "runtimeExports": [
+        "FONTS",
+        "SCHEMES",
+        "SISO_FRAME",
+        "SISO_FRAME_FIXTURE",
+        "SISO_FRAME_SPEC",
+        "SISO_SHELL_PRESETS",
+        "SISO_TOKENS",
+        "SURFACES",
+        "SisoAppFrame",
+        "SisoAppShell",
+        "SisoFrameFixturePage",
+        "SisoHubShell",
+        "SisoHubSourceShell",
+        "agentBase",
+        "applies",
+        "fit",
+        "normalise",
+        "tokenVars"
+      ],
+      "families": [
+        {
+          "name": "SisoHubShell",
+          "exports": [
+            "SisoHubShell"
+          ],
+          "variants": [
+            "expanded",
+            "offcanvas",
+            "mobile"
+          ]
+        },
+        {
+          "name": "SisoAppShell",
+          "exports": [
+            "SisoAppShell"
+          ],
+          "variants": [
+            "sidebar",
+            "rail-panel",
+            "plain",
+            "inset",
+            "floating",
+            "icon-collapse",
+            "offcanvas",
+            "mobile"
+          ]
+        },
+        {
+          "name": "SisoAppFrame",
+          "exports": [
+            "SisoAppFrame"
+          ],
+          "variants": [
+            "sidebar",
+            "rail-panel",
+            "plain",
+            "inset",
+            "floating",
+            "icon",
+            "offcanvas",
+            "workspace",
+            "views",
+            "grouped",
+            "dropdowns",
+            "user",
+            "upgrade",
+            "phone",
+            "phone-open",
+            "expanded",
+            "collapsed"
+          ]
+        },
+        {
+          "name": "SisoFrameFixturePage",
+          "exports": [
+            "SisoFrameFixturePage"
+          ],
+          "variants": []
+        },
+        {
+          "name": "SisoHubSourceShell",
+          "exports": [
+            "SisoHubSourceShell"
+          ],
+          "variants": [
+            "current UI Hub fixed nav",
+            "pinned animated rim",
+            "resizable edge",
+            "collapse",
+            "mobile sheet"
+          ]
+        },
+        {
+          "name": "Agent Base desktop frame",
+          "exports": [
+            "AppFrame",
+            "RailButton",
+            "RailDivider",
+            "TopButton"
+          ],
+          "variants": []
+        },
+        {
+          "name": "Agent Base tabs and layouts",
+          "exports": [
+            "PillTabs",
+            "TopTabs",
+            "LayoutSwitch"
+          ],
+          "variants": []
+        },
+        {
+          "name": "Agent Base panels",
+          "exports": [
+            "SummaryCard",
+            "CardSection",
+            "CardRow",
+            "SidePanel"
+          ],
+          "variants": []
+        },
+        {
+          "name": "Agent Base rail and rim",
+          "exports": [
+            "Rail",
+            "HaloRim"
+          ],
+          "variants": []
+        }
+      ],
+      "deferred": [
+        {
+          "name": "SisoSiteShell",
+          "reason": "Inspected app-frame is a dashboard frame; no real site shell extraction justified by this brief."
+        }
+      ]
+    },
+    {
+      "id": "widgets",
+      "name": "@siso/widgets",
+      "version": "0.4.1",
+      "about": "Dashboard frames, glance/work/detail bands, fitting, layout controls and in-place details.",
+      "familyCount": 3,
+      "presetCount": 0,
+      "runtimeExports": [
+        "SisoWidgetBand",
+        "SisoWidgetBoard",
+        "WIDGET_BANDS",
+        "WIDGET_SIZE_SPANS",
+        "WidgetFrame",
+        "defaultWidgetLayout",
+        "exportWidgetLayout",
+        "fitWidgetSpan",
+        "importWidgetLayout",
+        "moveWidget",
+        "placeWidgets",
+        "validateWidgetDefinitions",
+        "validateWidgetLayout"
+      ],
+      "families": [
+        {
+          "name": "WidgetFrame",
+          "exports": [
+            "WidgetFrame"
+          ],
+          "variants": [
+            "ready",
+            "loading",
+            "empty",
+            "error",
+            "stale",
+            "inline-detail"
+          ]
+        },
+        {
+          "name": "SisoWidgetBand",
+          "exports": [
+            "SisoWidgetBand"
+          ],
+          "variants": [
+            "glance",
+            "work",
+            "detail"
+          ]
+        },
+        {
+          "name": "SisoWidgetBoard",
+          "exports": [
+            "SisoWidgetBoard"
+          ],
+          "variants": [
+            "read-only",
+            "controlled-editing",
+            "responsive-stack",
+            "unavailable-gallery"
+          ]
+        }
+      ],
+      "deferred": []
+    },
+    {
+      "id": "charts",
+      "name": "@siso/charts",
+      "version": "0.4.1",
+      "about": "Parameterized chart behaviors, including comparison, distribution, forecasting, flows and geometry.",
+      "familyCount": 27,
+      "presetCount": 252,
+      "runtimeExports": [
+        "ActivityHeatmap",
+        "ArcBars",
+        "ArcDonut",
+        "ArcGauge",
+        "ArcHeatmap",
+        "ArcLine",
+        "ArcScope",
+        "ArcSparkline",
+        "BarChart",
+        "BrushChart",
+        "DonutChart",
+        "Gauge",
+        "LineChart",
+        "Ridgeline",
+        "SisoArea",
+        "SisoAreaChart",
+        "SisoBarChart",
+        "SisoBars",
+        "SisoBoxPlot",
+        "SisoBulletChart",
+        "SisoCandlestick",
+        "SisoCohortHeatmap",
+        "SisoCompactBars",
+        "SisoComposedChart",
+        "SisoContributionHeatmap",
+        "SisoDonut",
+        "SisoDonutChart",
+        "SisoFunnel",
+        "SisoGauge",
+        "SisoGoalRing",
+        "SisoInteractiveBars",
+        "SisoInteractiveDonut",
+        "SisoInteractiveGauge",
+        "SisoInteractiveHeatmap",
+        "SisoInteractiveLine",
+        "SisoInteractiveSlope",
+        "SisoInteractiveSparkline",
+        "SisoInteractiveTreemap",
+        "SisoInteractiveWaffle",
+        "SisoLine",
+        "SisoLineChart",
+        "SisoMatrixHeatmap",
+        "SisoMultiLine",
+        "SisoPieChart",
+        "SisoRadar",
+        "SisoRadarChart",
+        "SisoRadial",
+        "SisoRadialChart",
+        "SisoRadialSlices",
+        "SisoRangeArea",
+        "SisoSankeyChart",
+        "SisoScatter",
+        "SisoSlopeChart",
+        "SisoSparkline",
+        "SisoTreemap",
+        "SisoTrendCard",
+        "SisoWaffleChart",
+        "SisoWaterfall",
+        "SlopeChart",
+        "Sparkline",
+        "Streamgraph",
+        "Treemap",
+        "TweenlyRadial",
+        "WaffleChart",
+        "chartTheme",
+        "createFormatter",
+        "makeConfig",
+        "palettes"
+      ],
+      "families": [
+        {
+          "name": "streamgraph",
+          "exports": [
+            "Streamgraph"
+          ],
+          "variants": [
+            "stacked flowing series",
+            "source hover and motion"
+          ]
+        },
+        {
+          "name": "brush-chart",
+          "exports": [
+            "BrushChart"
+          ],
+          "variants": [
+            "range brushing",
+            "source selection and keyboard"
+          ]
+        },
+        {
+          "name": "ridgeline",
+          "exports": [
+            "Ridgeline"
+          ],
+          "variants": [
+            "multiple distributions",
+            "source focus and motion"
+          ]
+        },
+        {
+          "name": "area",
+          "exports": [
+            "SisoArea",
+            "SisoAreaChart"
+          ],
+          "variants": [
+            "five curves",
+            "gradient/solid/pattern",
+            "stacked/expanded",
+            "seven palettes"
+          ]
+        },
+        {
+          "name": "bars",
+          "exports": [
+            "SisoBars",
+            "SisoBarChart",
+            "SisoCompactBars",
+            "SisoInteractiveBars",
+            "ArcBars"
+          ],
+          "variants": [
+            "vertical/horizontal",
+            "grouped/stacked",
+            "slim",
+            "six fills"
+          ]
+        },
+        {
+          "name": "line",
+          "exports": [
+            "SisoLine",
+            "SisoLineChart",
+            "SisoMultiLine",
+            "SisoInteractiveLine",
+            "ArcLine"
+          ],
+          "variants": [
+            "five curves",
+            "solid/dashed",
+            "comparison",
+            "missing points"
+          ]
+        },
+        {
+          "name": "pie-donut",
+          "exports": [
+            "SisoDonut",
+            "SisoPieChart",
+            "SisoDonutChart",
+            "SisoRadialSlices",
+            "SisoInteractiveDonut",
+            "ArcDonut"
+          ],
+          "variants": [
+            "pie/donut",
+            "hole ratio",
+            "custom colors"
+          ]
+        },
+        {
+          "name": "radial",
+          "exports": [
+            "SisoRadial",
+            "SisoRadialChart",
+            "SisoGoalRing"
+          ],
+          "variants": [
+            "progress",
+            "goal/actual",
+            "multiple rings"
+          ]
+        },
+        {
+          "name": "radar",
+          "exports": [
+            "SisoRadar",
+            "SisoRadarChart"
+          ],
+          "variants": [
+            "multiple series",
+            "fill/pattern"
+          ]
+        },
+        {
+          "name": "composed",
+          "exports": [
+            "SisoComposedChart"
+          ],
+          "variants": [
+            "bar/line/area combination"
+          ]
+        },
+        {
+          "name": "sankey",
+          "exports": [
+            "SisoSankeyChart"
+          ],
+          "variants": [
+            "weighted nodes and links"
+          ]
+        },
+        {
+          "name": "scatter-bubble",
+          "exports": [
+            "SisoScatter"
+          ],
+          "variants": [
+            "scatter/bubble",
+            "quadrant lines",
+            "controlled point selection"
+          ]
+        },
+        {
+          "name": "waterfall",
+          "exports": [
+            "SisoWaterfall"
+          ],
+          "variants": [
+            "signed deltas",
+            "explicit total checkpoints"
+          ]
+        },
+        {
+          "name": "candlestick-ohlc",
+          "exports": [
+            "SisoCandlestick"
+          ],
+          "variants": [
+            "filled",
+            "hollow",
+            "OHLC ticks"
+          ]
+        },
+        {
+          "name": "box-plot",
+          "exports": [
+            "SisoBoxPlot"
+          ],
+          "variants": [
+            "quartiles",
+            "caller-supplied whiskers",
+            "outliers"
+          ]
+        },
+        {
+          "name": "treemap",
+          "exports": [
+            "SisoTreemap",
+            "SisoInteractiveTreemap"
+          ],
+          "variants": [
+            "source hierarchy drill/zoom",
+            "morphing tiles",
+            "flat data adapter"
+          ]
+        },
+        {
+          "name": "cohort",
+          "exports": [
+            "SisoCohortHeatmap"
+          ],
+          "variants": [
+            "retention by cohort age",
+            "missing observations"
+          ]
+        },
+        {
+          "name": "bullet",
+          "exports": [
+            "SisoBulletChart"
+          ],
+          "variants": [
+            "target",
+            "qualitative ranges",
+            "explicit clipping"
+          ]
+        },
+        {
+          "name": "waffle",
+          "exports": [
+            "SisoWaffleChart",
+            "SisoInteractiveWaffle"
+          ],
+          "variants": [
+            "configurable cells/columns",
+            "exact allocation"
+          ]
+        },
+        {
+          "name": "slope",
+          "exports": [
+            "SisoSlopeChart",
+            "SisoInteractiveSlope"
+          ],
+          "variants": [
+            "before/after",
+            "signed values"
+          ]
+        },
+        {
+          "name": "calendar-heatmap",
+          "exports": [
+            "SisoContributionHeatmap",
+            "SisoInteractiveHeatmap",
+            "ArcHeatmap"
+          ],
+          "variants": [
+            "UTC date range",
+            "missing-date gaps"
+          ]
+        },
+        {
+          "name": "matrix-heatmap",
+          "exports": [
+            "SisoMatrixHeatmap"
+          ],
+          "variants": [
+            "red/amber/blue",
+            "row/column data",
+            "keyboard cells"
+          ]
+        },
+        {
+          "name": "funnel",
+          "exports": [
+            "SisoFunnel"
+          ],
+          "variants": [
+            "stage proportions",
+            "drop-off",
+            "keyboard detail"
+          ]
+        },
+        {
+          "name": "range",
+          "exports": [
+            "SisoRangeArea"
+          ],
+          "variants": [
+            "low/high interval",
+            "optional midpoint"
+          ]
+        },
+        {
+          "name": "trend",
+          "exports": [
+            "SisoTrendCard"
+          ],
+          "variants": [
+            "current/baseline",
+            "up/down/neutral"
+          ]
+        },
+        {
+          "name": "sparkline",
+          "exports": [
+            "SisoSparkline",
+            "SisoInteractiveSparkline",
+            "ArcSparkline"
+          ],
+          "variants": [
+            "compact signed series"
+          ]
+        },
+        {
+          "name": "gauge",
+          "exports": [
+            "SisoGauge",
+            "SisoInteractiveGauge",
+            "ArcGauge"
+          ],
+          "variants": [
+            "bounded value and target"
+          ]
+        }
+      ],
+      "deferred": [
+        {
+          "name": "interactive maps",
+          "reason": "Outside this package's shipped behavior set."
+        },
+        {
+          "name": "physics/3D effects",
+          "reason": "Outside this package's shipped behavior set."
+        },
+        {
+          "name": "rich trading overlays",
+          "reason": "Outside this package's shipped behavior set."
+        },
+        {
+          "name": "streaming data transports",
+          "reason": "Outside this package's shipped behavior set."
+        }
+      ]
+    },
+    {
+      "id": "site",
+      "name": "@siso/site",
+      "version": "0.4.1",
+      "about": "The accepted landing footer, blog parts, docs skin and living product glyphs, with their original source assets.",
+      "familyCount": 14,
+      "presetCount": 0,
+      "runtimeExports": [
+        "ArticleRail",
+        "BlogCard",
+        "BlogHeader",
+        "CopyPage",
+        "DocsFooter",
+        "DocsLive",
+        "DocsPageKicker",
+        "DocsProductHero",
+        "DocsRail",
+        "DocsSocials",
+        "EMPTY_SITE_STATS",
+        "FooterAskAI",
+        "FooterLights",
+        "FooterLinks",
+        "FooterNumbers",
+        "FooterProducts",
+        "FooterRail",
+        "FooterSignature",
+        "FooterSocial",
+        "GitHubMark",
+        "HEADER_CSS",
+        "LionTile",
+        "LiveSection",
+        "PostMeta",
+        "ProductGlyph",
+        "RuixenGradientFooter",
+        "SISO_LANDING_HUES",
+        "SPRITE_TO_PRODUCT",
+        "SisoArrow",
+        "SisoBand",
+        "SisoBlogSkin",
+        "SisoButton",
+        "SisoDocsArticle",
+        "SisoDocsCode",
+        "SisoDocsSource",
+        "SisoHeading",
+        "SisoLandingFooter",
+        "SisoLionGlyph",
+        "SisoNumbers",
+        "SisoPage",
+        "SisoRail",
+        "SiteProvider",
+        "TopicPill",
+        "formatDate",
+        "markdownForPost",
+        "postTopic",
+        "readingMinutes",
+        "selectBackground",
+        "selectLines",
+        "topicStyle",
+        "topics",
+        "useSisoLive",
+        "useSiteConfig"
+      ],
+      "families": [
+        {
+          "name": "Accepted landing footer",
+          "exports": [
+            "SisoLandingFooter"
+          ],
+          "variants": [
+            "full original composition",
+            "configurable links/copyright/data"
+          ]
+        },
+        {
+          "name": "Footer products and links",
+          "exports": [
+            "FooterProducts",
+            "FooterLinks"
+          ],
+          "variants": [
+            "marquee",
+            "hover glyphs",
+            "original three-column layout"
+          ]
+        },
+        {
+          "name": "Metric picker",
+          "exports": [
+            "FooterNumbers"
+          ],
+          "variants": [
+            "caller data",
+            "hover texture",
+            "offscreen pause",
+            "optional caller rate model"
+          ]
+        },
+        {
+          "name": "Footer social and AI",
+          "exports": [
+            "FooterSocial",
+            "FooterAskAI"
+          ],
+          "variants": [
+            "original profile hover cards",
+            "AI source links",
+            "caller social count data"
+          ]
+        },
+        {
+          "name": "Footer lights and partitions",
+          "exports": [
+            "FooterLights",
+            "FooterRail"
+          ],
+          "variants": [
+            "source sparks",
+            "chamfered notch"
+          ]
+        },
+        {
+          "name": "Signature and beam",
+          "exports": [
+            "FooterSignature"
+          ],
+          "variants": [
+            "source contour rings",
+            "Host-owned beam effect slot",
+            "restricted private distribution"
+          ]
+        },
+        {
+          "name": "Scroll gradient",
+          "exports": [
+            "RuixenGradientFooter"
+          ],
+          "variants": [
+            "source gradient stops",
+            "scroll reveal"
+          ]
+        },
+        {
+          "name": "Blog cards",
+          "exports": [
+            "BlogCard",
+            "PostMeta"
+          ],
+          "variants": [
+            "standard",
+            "featured",
+            "original hover strips"
+          ]
+        },
+        {
+          "name": "Blog header",
+          "exports": [
+            "BlogHeader"
+          ],
+          "variants": [
+            "card",
+            "hero",
+            "source background and line layer selection"
+          ]
+        },
+        {
+          "name": "Article tools",
+          "exports": [
+            "ArticleRail",
+            "CopyPage",
+            "TopicPill",
+            "LiveSection"
+          ],
+          "variants": [
+            "TOC progress",
+            "copy Markdown",
+            "animated topic pill"
+          ]
+        },
+        {
+          "name": "Brand and product glyphs",
+          "exports": [
+            "ProductGlyph",
+            "LionTile",
+            "GitHubMark"
+          ],
+          "variants": [
+            "seven products",
+            "original SVG geometry and motion"
+          ]
+        },
+        {
+          "name": "Docs footer and rails",
+          "exports": [
+            "DocsFooter",
+            "DocsRail",
+            "DocsLive",
+            "DocsSocials"
+          ],
+          "variants": [
+            "source footer",
+            "source visibility behavior",
+            "public defaults with caller overrides"
+          ]
+        },
+        {
+          "name": "Docs page headings",
+          "exports": [
+            "DocsProductHero",
+            "DocsPageKicker"
+          ],
+          "variants": [
+            "source product artwork hero",
+            "source breadcrumb"
+          ]
+        },
+        {
+          "name": "Content skins",
+          "exports": [
+            "SisoBlogSkin",
+            "SisoDocsArticle",
+            "SisoDocsCode",
+            "SisoDocsSource"
+          ],
+          "variants": [
+            "complete source blog CSS",
+            "source docs light/dark CSS",
+            "thin semantic markup adapters"
+          ]
+        }
+      ],
+      "deferred": []
+    },
+    {
+      "id": "agent",
+      "name": "@siso/agent",
+      "version": "0.4.1",
+      "about": "The Agent Base parts: composer (model picker, context meter, usage ring), voice, agent faces and living glyphs, the product icon set and the OS module bus.",
+      "familyCount": 5,
+      "presetCount": 0,
+      "runtimeExports": [
+        "composer",
+        "face",
+        "icons",
+        "os",
+        "voice"
+      ],
+      "families": [
+        {
+          "name": "composer",
+          "exports": [
+            "composer"
+          ],
+          "variants": [
+            "ActivityPill",
+            "ActivityPopover",
+            "ArtifactShelfView",
+            "ComposerFrame",
+            "ComposerHud",
+            "ContextMeter",
+            "ContextPopover",
+            "ModelPicker",
+            "UsagePopover",
+            "UsageRing",
+            "UsageRingCard"
+          ]
+        },
+        {
+          "name": "voice",
+          "exports": [
+            "voice"
+          ],
+          "variants": [
+            "ActivityWall",
+            "AppBreakdownChart",
+            "Card",
+            "ChartShell",
+            "HourRhythmChart",
+            "Select",
+            "SettingRow",
+            "StatPill",
+            "Switch",
+            "VoiceCalendar",
+            "VoiceDictionary",
+            "VoiceHistory",
+            "VoiceSettings",
+            "VoiceStats",
+            "WordsTrendChart",
+            "clock",
+            "dayKey",
+            "dayLabel",
+            "formatGrouped",
+            "formatSavedMinutes",
+            "formatSeconds",
+            "historyPath",
+            "parseDay",
+            "timeAgo",
+            "useVoiceActivity",
+            "useVoiceApi",
+            "useVoiceDays",
+            "useVoiceDictionary",
+            "useVoiceHistory",
+            "useVoiceSettings",
+            "useVoiceStats",
+            "useVoiceStatus",
+            "voiceGet",
+            "voiceRestart",
+            "voiceSend",
+            "voiceWrites"
+          ]
+        },
+        {
+          "name": "face",
+          "exports": [
+            "face"
+          ],
+          "variants": [
+            "AgentFace",
+            "LIVING_ICONS",
+            "LivingIcon",
+            "WorkspaceMark",
+            "projectHue"
+          ]
+        },
+        {
+          "name": "icons",
+          "exports": [
+            "icons"
+          ],
+          "variants": [
+            "AnimatedNavIcon",
+            "ICONS",
+            "isIconName",
+            "staticGlyph"
+          ]
+        },
+        {
+          "name": "os",
+          "exports": [
+            "os"
+          ],
+          "variants": [
+            "OsProvider",
+            "createBus",
+            "defineRegistry",
+            "manifestsFrom",
+            "useBus",
+            "useModules",
+            "useOsEvent",
+            "useRegistry",
+            "useSpaces"
+          ]
+        }
+      ],
+      "deferred": []
+    },
+    {
+      "id": "ui",
+      "name": "@siso/ui",
+      "version": "0.4.1",
+      "about": "One umbrella with namespaces and subpath imports for all eight focused packages.",
+      "familyCount": 0,
+      "presetCount": 0,
+      "runtimeExports": [
+        "agent",
+        "atoms",
+        "blocks",
+        "charts",
+        "navigation",
+        "shells",
+        "site",
+        "tokens",
+        "widgets"
+      ],
+      "families": [],
+      "deferred": []
+    }
+  ],
+  "totals": {
+    "packages": 10,
+    "functionalPackages": 9,
+    "runtimeExports": 258,
+    "chartFamilies": 27,
+    "chartPresets": 252
+  },
+  "distribution": "Private npm tarballs, compiled ESM and TypeScript declarations; not published to the public npm registry."
+}

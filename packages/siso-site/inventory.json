@@ -1,0 +1,293 @@
+{
+  "package": "@siso/site",
+  "version": "0.4.1",
+  "private": true,
+  "license": "SEE LICENSE IN NOTICE",
+  "implementation": "source-fidelity extraction from accepted siso-ecosystem footer/blog/docs",
+  "familyCount": 16,
+  "components": [
+    {
+      "name": "Accepted landing footer",
+      "exports": [
+        "SisoLandingFooter"
+      ],
+      "variants": [
+        "full original composition",
+        "configurable links/copyright/data"
+      ],
+      "implementation": "copied source except named skin/markup adapters"
+    },
+    {
+      "name": "Footer products and links",
+      "exports": [
+        "FooterProducts",
+        "FooterLinks"
+      ],
+      "variants": [
+        "marquee",
+        "hover glyphs",
+        "original three-column layout"
+      ],
+      "implementation": "copied source except named skin/markup adapters"
+    },
+    {
+      "name": "Metric picker",
+      "exports": [
+        "FooterNumbers"
+      ],
+      "variants": [
+        "caller data",
+        "hover texture",
+        "offscreen pause",
+        "optional caller rate model"
+      ],
+      "implementation": "copied source except named skin/markup adapters"
+    },
+    {
+      "name": "Footer social and AI",
+      "exports": [
+        "FooterSocial",
+        "FooterAskAI"
+      ],
+      "variants": [
+        "original profile hover cards",
+        "AI source links",
+        "caller social count data"
+      ],
+      "implementation": "copied source except named skin/markup adapters"
+    },
+    {
+      "name": "Footer lights and partitions",
+      "exports": [
+        "FooterLights",
+        "FooterRail"
+      ],
+      "variants": [
+        "source sparks",
+        "chamfered notch"
+      ],
+      "implementation": "copied source except named skin/markup adapters"
+    },
+    {
+      "name": "Signature and beam",
+      "exports": [
+        "FooterSignature"
+      ],
+      "variants": [
+        "source contour rings",
+        "Host-owned beam effect slot",
+        "restricted private distribution"
+      ],
+      "implementation": "copied source except named skin/markup adapters"
+    },
+    {
+      "name": "Scroll gradient",
+      "exports": [
+        "RuixenGradientFooter"
+      ],
+      "variants": [
+        "source gradient stops",
+        "scroll reveal"
+      ],
+      "implementation": "copied source except named skin/markup adapters"
+    },
+    {
+      "name": "Blog cards",
+      "exports": [
+        "BlogCard",
+        "PostMeta"
+      ],
+      "variants": [
+        "standard",
+        "featured",
+        "original hover strips"
+      ],
+      "implementation": "copied source except named skin/markup adapters"
+    },
+    {
+      "name": "Blog header",
+      "exports": [
+        "BlogHeader"
+      ],
+      "variants": [
+        "card",
+        "hero",
+        "source background and line layer selection"
+      ],
+      "implementation": "copied source except named skin/markup adapters"
+    },
+    {
+      "name": "Article tools",
+      "exports": [
+        "ArticleRail",
+        "CopyPage",
+        "TopicPill",
+        "LiveSection"
+      ],
+      "variants": [
+        "TOC progress",
+        "copy Markdown",
+        "animated topic pill"
+      ],
+      "implementation": "copied source except named skin/markup adapters"
+    },
+    {
+      "name": "Brand and product glyphs",
+      "exports": [
+        "ProductGlyph",
+        "LionTile",
+        "GitHubMark"
+      ],
+      "variants": [
+        "seven products",
+        "original SVG geometry and motion"
+      ],
+      "implementation": "copied source except named skin/markup adapters"
+    },
+    {
+      "name": "Docs footer and rails",
+      "exports": [
+        "DocsFooter",
+        "DocsRail",
+        "DocsLive",
+        "DocsSocials"
+      ],
+      "variants": [
+        "source footer",
+        "source visibility behavior",
+        "public defaults with caller overrides"
+      ],
+      "implementation": "copied source except named skin/markup adapters"
+    },
+    {
+      "name": "Docs page headings",
+      "exports": [
+        "DocsProductHero",
+        "DocsPageKicker"
+      ],
+      "variants": [
+        "source product artwork hero",
+        "source breadcrumb"
+      ],
+      "implementation": "copied source except named skin/markup adapters"
+    },
+    {
+      "name": "Content skins",
+      "exports": [
+        "SisoBlogSkin",
+        "SisoDocsArticle",
+        "SisoDocsCode",
+        "SisoDocsSource"
+      ],
+      "variants": [
+        "complete source blog CSS",
+        "source docs light/dark CSS",
+        "thin semantic markup adapters"
+      ],
+      "implementation": "copied source except named skin/markup adapters"
+    },
+    {
+      "name": "Landing page kit",
+      "exports": [
+        "SisoBand",
+        "SisoButton",
+        "SisoHeading",
+        "SisoPage",
+        "SisoNumbers",
+        "SisoRail",
+        "SisoArrow"
+      ],
+      "implementation": "promoted from the committed SISO landing page kit"
+    },
+    {
+      "name": "Landing lion glyph",
+      "exports": [
+        "SisoLionGlyph"
+      ],
+      "implementation": "promoted from the committed SISO landing glyph"
+    }
+  ],
+  "sourceManifest": "source-manifest.json",
+  "assets": "assets.json",
+  "dependencies": [
+    "react (peer)",
+    "react-dom (peer)",
+    "lucide-react"
+  ],
+  "adaptations": [
+    "Native anchor replaces Next Link; no fake router.",
+    "Caller stats replace siso-stats.json and social follower counts.",
+    "Production post data omitted; ArticleRail accepts caller posts.",
+    "Docs skin omits framework import directives; root/body theme scoped.",
+    "Thin docs prose/code/source wrappers use source classes/markup."
+  ],
+  "excluded": [
+    "Next/Fumadocs router, search, MDX engine and OpenAPI",
+    "Production posts and private factual/statistic data",
+    "Private partner WorkspaceMark/geometry",
+    "Footer A/B/C prototypes",
+    "Public redistribution of private SISO source/artwork; restricted shader is excluded from this package"
+  ],
+  "releaseGates": [
+    "Keep original copyright and asset notices.",
+    "Never include the restricted shader in package artifacts; its licensed website use remains in the workbench application."
+  ],
+  "checks": [
+    {
+      "check": "strict TypeScript noEmit, package and selectable preview",
+      "result": "pass",
+      "files": 35,
+      "diagnostics": 0
+    },
+    {
+      "check": "SSR actual accepted footer, product glyph and docs footer",
+      "result": "pass"
+    },
+    {
+      "check": "source hashes and exact inline CSS fidelity",
+      "result": "pass",
+      "inlineCssBlocks": 11
+    },
+    {
+      "check": "package relative imports, no Next/auth/API fetch or production post collection",
+      "result": "pass"
+    },
+    {
+      "check": "asset source presence and hashes",
+      "result": "pass",
+      "assets": 251
+    }
+  ],
+  "additionalExports": [
+    "EMPTY_SITE_STATS",
+    "formatDate",
+    "HEADER_CSS",
+    "markdownForPost",
+    "postTopic",
+    "readingMinutes",
+    "selectBackground",
+    "selectLines",
+    "SISO_LANDING_HUES",
+    "SiteProvider",
+    "SPRITE_TO_PRODUCT",
+    "topics",
+    "topicStyle",
+    "useSisoLive",
+    "useSiteConfig"
+  ],
+  "typeExports": [
+    "BlogTopic",
+    "DocsProductInfo",
+    "FooterLinkItem",
+    "FooterProduct",
+    "FooterStatistic",
+    "Product",
+    "RuixenGradientFooterProps",
+    "SisoBlogPost",
+    "SisoHue",
+    "SisoLandingFooterProps",
+    "SiteConfig",
+    "SiteStats",
+    "Stop"
+  ]
+}

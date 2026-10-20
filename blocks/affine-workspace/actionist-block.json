@@ -1,0 +1,182 @@
+{
+  "$schema": "../_schema/actionist-block.v2.schema.json",
+  "schema_version": "actionist.block-manifest.v2",
+  "block_id": "actionist/affine-workspace",
+  "version": "0.2.0",
+  "capability_id": "actionist/affine-workspace",
+  "display_name": "AFFiNE workspace",
+  "outcome_statement": "A host user can open and edit an authenticated collaborative workspace inside the host's assigned documents destination.",
+  "authorization": {
+    "prototype": true,
+    "implementation_authorized": true
+  },
+  "lifecycle": {
+    "source_reusability": "reusable_candidate",
+    "adaptation_status": "adapted",
+    "proof_status": "partial_local_proof",
+    "admission_status": "held_for_decision",
+    "admission_scope": {
+      "tenants": [],
+      "applications": [],
+      "environments": []
+    }
+  },
+  "reuse": {
+    "shape": "assimilated_package",
+    "rights_exposure": "mixed",
+    "mount_profile": "host_mounted_assimilated",
+    "mount_topology": "same_document",
+    "binding_class": "B4",
+    "coherence_ceiling": "bounded",
+    "data_authority": {
+      "postgres_schema": "knowledge",
+      "redis_namespace": "knowledge",
+      "yjs_and_blobs": "knowledge",
+      "migration_owner": "donor-native-backend"
+    },
+    "framing_debt": {
+      "justification": "The proven implementation builds a same-document browser module from the owned frontend fork while retaining the donor-native backend and data plane.",
+      "absorption_path": "Apply the pinned adaptation patch, run the donor build, rewrite public asset/fetch/worker seams, and bind the backend to the knowledge namespace."
+    },
+    "donor": {
+      "repository": "https://github.com/sisodias/siso-docs",
+      "upstream_repository": "https://github.com/toeverything/AFFiNE",
+      "immutable_revision": "sisodias/siso-docs@837a5c285caf2078e340a6220de38bdd8ab1da9a",
+      "build_checkout_revision": "apps/siso-knowledge@d1dca9fcfaf4395900aa0f37fc3cdd4435bf8ee9",
+      "build_checkout_layout": "frontend/ subproject",
+      "backend_revision": "sisodias/sisonotes-backend@4b5d79282be91fd529dcff84b066f00b3784496a",
+      "source_digest_basis": "immutable donor fork commits; backend pin recorded alongside frontend",
+      "license": "donor fork terms retained; rights review remains required before distribution"
+    },
+    "ownership": {
+      "block_contracts": "actionist",
+      "host_identity_and_route": "host",
+    "donor_source": "sisodias/siso-docs + sisodias/sisonotes-backend",
+      "donor_runtime": "donor-native sidecar",
+      "donor_workspace_data": "donor-owned knowledge schema",
+      "donor_files_and_blobs": "donor-owned knowledge namespace",
+      "host_event_envelope": "shared-contract",
+      "client_application": "none"
+    },
+    "build_evidence": {
+      "builds_in_isolation": true,
+      "excluded_licence_tree": "none; frontend is rebuilt from the pinned owned fork",
+      "imports_from_excluded_tree": 0,
+      "renders_in_host_tree": true
+    },
+    "service_evidence": {
+      "authenticated_flow_proven": true,
+      "same_document_browser_acceptance_proven": true,
+      "semantic_health_readback_proven": true,
+      "data_isolation": {
+        "database": "knowledge PostgreSQL schema",
+        "cache_namespace": "knowledge Redis namespace",
+        "object_storage": "knowledge Yjs/blob namespace",
+        "cross_identity_isolation_proven": false
+      },
+      "wrong_origin_denied": false,
+      "replay_denied": false,
+      "wrong_workspace_denied": true,
+      "session_revocation_proven": true,
+      "donor_login_unreachable": true,
+      "restart_persistence": true,
+      "direct_worker_network_trace_proven": false
+    }
+  },
+  "records": {
+    "capability": "records/01-capability.json",
+    "packaging": "records/02-packaging.json",
+    "host_requirements": "records/03-host-requirements.json",
+    "binding_plan": "records/04-binding-plan.json",
+    "qualification": "records/05-qualification.json",
+    "registry": "records/06-registry.json",
+    "release": "records/07-release.json"
+  },
+  "interfaces": {
+    "host_binding": "host-binding/affine-workspace-host-binding.ts",
+    "host_binding_schema": "schemas/host-binding.schema.json",
+    "generated_binding_filename": "binding.generated.json"
+  },
+  "configuration": {
+    "schema": "config/environment.schema.json",
+    "example": "config/example.json",
+    "secret_policy": "Only secret references are persisted; assertion values arrive at runtime."
+  },
+  "fixture": {
+    "host": "fixture/host.json",
+    "purpose": "Synthetic host fixture for deterministic binding generation and negative-path refusal; it carries no client data and performs no network or donor-source action."
+  },
+  "commands": {
+    "validate": "node scripts/validate.mjs",
+    "smoke": "node --test tests/smoke.test.mjs",
+    "bind": "node scripts/bind.mjs --host fixture/host.json --out ./out",
+    "install": "node scripts/install-release.mjs --host fixture/host.json --app ./out-app"
+  },
+  "verification": {
+    "command": "node --test tests/smoke.test.mjs",
+    "required_evidence": [
+      "manifest_parse",
+      "record_links",
+      "config_shape",
+      "binding_generation",
+      "deterministic_route",
+      "evidence_index_digests",
+      "static_source_boundary"
+    ],
+    "negative_fixtures": [
+      { "name": "wrong-client", "refusal_code": "client_mismatch" },
+      { "name": "expired", "refusal_code": "expired" },
+      { "name": "missing-edit", "refusal_code": "capability_denied" },
+      { "name": "missing-identity", "refusal_code": "missing_identity" }
+    ]
+  },
+  "evidence": {
+    "repository_root": "../../../../agency/industries/software/clients/actionmodel",
+    "index": "../../../../agency/industries/software/clients/actionmodel/research/workstreams/2026-08-28-affine-block/run/evidence-index.json",
+    "current_interpretation": "../../../../agency/industries/software/clients/actionmodel/CURRENT_STATE.md"
+  },
+  "holds": [
+    {
+      "id": "H-THEME",
+      "status": "OPEN",
+      "statement": "Current same-document mounting does not prove complete host token, radius, spacing and font parity. The older cross-origin precedent negotiated mode only.",
+      "owner": "runtime-and-design",
+      "next_gate": "P07 X-3 / gates K-N"
+    },
+    {
+      "id": "H-SETTINGS",
+      "status": "OPEN",
+      "statement": "The donor settings pane remains donor-rendered behind a host settings entry; host-chrome remount has no precedent.",
+      "owner": "shell-and-editor",
+      "next_gate": "P08 Loop 3"
+    },
+    {
+      "id": "H-UPGRADE",
+      "status": "OPEN",
+      "statement": "The host seam is versioned, but donor upgrade replay and donor-export anchor survival have not been run.",
+      "owner": "runtime-and-learning",
+      "next_gate": "P13 upgrade replay"
+    },
+    {
+      "id": "H-DENSITY",
+      "status": "OPEN",
+      "statement": "Runtime density, below-full-page behaviour, tenant switching and mobile acceptance remain unmeasured.",
+      "owner": "runtime-and-learning",
+      "next_gate": "host absorption pilot"
+    },
+    {
+      "id": "H-CE-WEB",
+      "status": "OPEN",
+      "statement": "The official v0.27.3 native artifact is pinned, but a CE web/service adapter and file-level redistribution proof are not established.",
+      "owner": "operator",
+      "next_gate": "official CE web receipt with manifest, SBOM and notices"
+    }
+  ],
+  "source_boundary": {
+    "source_copied": false,
+    "donor_repository_vendored": false,
+    "secrets_embedded": false,
+    "absolute_client_paths_embedded": false,
+    "deployment_performed": false
+  }
+}

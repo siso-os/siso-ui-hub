@@ -1,0 +1,153 @@
+{
+  "schema_version": "actionist.affine.release-spec.v1",
+  "block_id": "actionist/affine-workspace",
+  "version": "0.2.0",
+  "source": {
+    "donor_checkout_revision": "a4a069626c9fd1fa0d2a88cd3fd12fb2b408ec1c",
+    "donor_checkout_tree": "ba2a868007d662a2b4b606c4c2c8d8383859d89f",
+    "frontend_revision": "837a5c285caf2078e340a6220de38bdd8ab1da9a",
+    "backend_revision": "4b5d79282be91fd529dcff84b066f00b3784496a"
+  },
+  "accepted_artifact": {
+    "availability": "NOT_VENDORED_RETRIEVE_OR_BUILD_REQUIRED",
+    "entry_sha256": "382721b5d0b92bb768e479397c6dc5d1f94d03ae72d15c7ea59ab1ee88fd971c",
+    "package_manifest_sha256": "0aa36f1078128cf7bd9dbdd41ff72a7923d4b825d745e6ae2f4659ed534ca7f7",
+    "files": 1007,
+    "bytes": 215080775,
+    "source_receipt": "actionist-base/evidence/affine-acceptance/acceptance.json"
+  },
+  "adaptation": {
+    "patch": "patches/0001-embed-guards.patch",
+    "patch_sha256": "eb3bf704d6e6c458ac6d0b665ed0688e9d526d3792af323ebcacaa7de2c47b76",
+    "build_transform": "build/package-build.mjs",
+    "build_transform_sha256": "0e9b4edda15e0151a32b565b5765e6468c2952cc553b991ee50fcd7c069b130b",
+    "backend_patch": "patches/0002-host-session-isolation.patch",
+    "backend_patch_sha256": "26c5799769bca10624a6b37cbc765ce42fe0696c26edb3343b649d3e97cbd84b",
+    "backend_patch_basis": "donor/backend root; from a donor Git root use --directory=backend"
+  },
+  "runtime": {
+    "profile": "assimilated-package-plus-donor-native-sidecar",
+    "mount_topology": "same_document",
+    "services": [
+      {"id": "host", "owner": "host", "port": "configured", "listener": "configured"},
+      {"id": "compiled-module-assets", "owner": "actionist", "port": "configured", "listener": "loopback_for_acceptance_only"},
+      {"id": "knowledge-backend", "owner": "donor", "port": "configured", "listener": "loopback_for_acceptance_only"},
+      {"id": "host-context-issuer", "owner": "host", "port": "configured", "listener": "loopback_for_acceptance_only"}
+    ],
+    "data_authority": {
+      "postgres_schema": "knowledge",
+      "redis_namespace": "knowledge",
+      "yjs_and_blobs": "knowledge",
+      "migration_owner": "donor-native-backend"
+    }
+  },
+  "configuration_schema": "config/environment.schema.json",
+  "rights_provenance": {
+    "status": "UNKNOWN_HELD_FOR_REVIEW",
+    "distribution_authorized": false,
+    "observed_license_files": [
+      {"donor_path": "frontend/LICENSE", "sha256": "c107c8088fe42bce6def95d313cfe7b5984d3bb2c1608b67f855327da45f497b"},
+      {"donor_path": "frontend/LICENSE-MIT", "sha256": "1cdeca52d4f740361f103926144eb8b3f265975b2337d4e27b3313f72465897f"},
+      {"donor_path": "frontend/packages/backend/server/LICENSE", "sha256": "5a644f9defc017ffd484413598d1edf65bc78718e4011ac33a0e1fcae629e25d"}
+    ],
+    "note": "File presence and digests are provenance observations, not legal interpretation or distribution authority."
+  },
+  "evidence": {
+    "prior_acceptance": {
+      "path": "actionist-base/evidence/affine-acceptance/acceptance.json",
+      "sha256": "d25b1cafaf46c8f0e91fb46cd6eef0f987b865554f4ef50e64a7b9112d3ad569",
+      "artifact_checks_path": "actionist-base/evidence/affine-acceptance/artifact-checks.json",
+      "artifact_checks_sha256": "98671cc6ec643d855af36a119ecc5f1bdc1c13789c4dbe0f41cb2b81db62bf86",
+      "commands_path": "actionist-base/evidence/affine-acceptance/commands.md",
+      "commands_sha256": "d914375e9ba5075ad4812e2f0549fc093dd7763f628ae8d8d6070d6afcb58ce5",
+      "classification": "PRIOR_LOCAL_ACCEPTANCE_NOT_CLEAN_INSTALL_OR_QUALIFICATION"
+    },
+    "installer_checks": {
+      "path": "tests/release.test.mjs",
+      "classification": "DISPOSABLE_PACKAGE_INSTALL_UPGRADE_ROLLBACK_TESTS_NOT_DONOR_RUNTIME"
+    },
+    "isolated_native_acceptance": {
+      "path": "actionist-base/evidence/native-affine-slBdN0/receipt.json",
+      "sha256": "da7b5bb38c83ecd43c53a2f7d0d9ee429830e403aff209385ca557b071221b3f",
+      "network_path": "actionist-base/evidence/native-affine-slBdN0/browser-network.json",
+      "network_sha256": "b77975ed8f78721a3217d619c042c7056f41e6801ec024ae9115a326b093a06e",
+      "classification": "REAL_EDITOR_EMPTY_INDEXEDDB_AND_BACKEND_RESTART_READBACK_WITH_FIXTURE_HOST_SESSION",
+      "limitations": ["Historical compiled artifact, not donor build replay", "No production broker or cross-identity isolation", "Text contrast is not complete theme/token/settings parity"]
+    },
+    "host_boundary": {
+      "path": "actionist-base/evidence/host-boundary-zJV9xy/receipt.json",
+      "sha256": "a2e1229d5de1a7ff039571482a40614805969298b62fd2ce0157a14b0f499b88",
+      "classification": "FIFTEEN_REAL_BROWSER_CASES_WITH_INTERCEPTED_ISSUER_BACKEND_MODULE"
+    },
+    "fresh_build": {
+      "path": "actionist-base/evidence/affine-build-ob0wXW/receipt.json",
+      "sha256": "57d65206496dc7cc9c8b1412e675af5840f8469a323f775762f3e1364154e4a8",
+      "classification": "DISPOSABLE_PATCH_AND_DONOR_BUILD_WITH_EXISTING_INSTALLED_DEPENDENCIES_NOT_FRESH_BOOTSTRAP"
+    },
+    "fresh_build_native_acceptance": {
+      "path": "actionist-base/evidence/native-affine-4Ss5nS/receipt.json",
+      "sha256": "abf15b64cc06019d701b3fc8ae82af0a9872c93950330170e880ed0f36948e8c",
+      "network_path": "actionist-base/evidence/native-affine-4Ss5nS/browser-network.json",
+      "network_sha256": "3cae94aaaceb2d73cdccf979a9a69b7d5529f5052f2c17988ee420db0f9a287e",
+      "classification": "NEWLY_BUILT_ARTIFACT_EDITOR_PERSISTENCE_AND_READABILITY_WITH_FIXTURE_HOST_SESSION"
+    },
+    "unpatched_identity_failures": {
+      "path": "actionist-base/evidence/native-affine-lQPCBy/receipt.json",
+      "sha256": "60a5a64595f4a52ec4fba43666bad18eb2c53630df07ac7b26b871962d8ed350",
+      "classification": "OBSERVED_EXPIRED_SESSION_ACCEPTANCE_AND_EMAIL_IDENTITY_MERGE_IN_UNPATCHED_DISPOSABLE_BACKEND"
+    },
+    "lifecycle_repack": {
+      "path": "actionist-base/evidence/affine-repack-alHWEo/receipt.json",
+      "sha256": "7e8616a5d33ca1f71d4461ee7da96e19ac750a9bc081a89436aae03570267381",
+      "classification": "REPACK_OF_RECORDED_COMPILER_OUTPUT_WITH_VERIFIED_REQUEST_BRIDGE_CLEANUP"
+    },
+    "identity_and_lifecycle_acceptance": {
+      "path": "actionist-base/evidence/native-affine-PKcRTg/receipt.json",
+      "sha256": "2b475dfa50ea329c89a4a84d2cb2575ffd8d4ee4771582e98ab1e57a51a42fbc",
+      "network_path": "actionist-base/evidence/native-affine-PKcRTg/browser-network.json",
+      "network_sha256": "865715da7769e56908bf02f36da6b47ba1230d5f9203a7a852fd6882c868c11e",
+      "classification": "TWENTY_ONE_NATIVE_CHECKS_WITH_TWO_FIXTURE_PRINCIPALS_BACKEND_PATCH_AND_PRIMARY_BROWSER_REMOUNT"
+    }
+  },
+  "gates": {
+    "release_publication": "HELD",
+    "qualification": "NOT_QUALIFIED",
+    "admission": "NOT_ADMITTED",
+    "donor_build_replay": "PASS_DISPOSABLE_PATCHED_SOURCE_WITH_EXISTING_DEPENDENCIES_NOT_FRESH_BOOTSTRAP",
+    "clean_runtime_replay": "PASS_REPACKED_ARTIFACT_PERSISTENCE_AND_LIFECYCLE_WITH_FIXTURE_ISSUER",
+    "identity_isolation": "TWO_FIXTURE_PRINCIPALS_NATIVE_API_PASS_WITH_BACKEND_PATCH",
+    "independent_verification": "INDEPENDENT_RUNTIME_QUALIFICATION_NOT_RUN"
+  },
+  "payload_paths": [
+    "README.md",
+    "actionist-block.json",
+    "package.json",
+    "build/BLOCK-BUILD.md",
+    "build/module-root.tsx",
+    "build/package-build.mjs",
+    "config/environment.schema.json",
+    "config/example.json",
+    "fixture/host.json",
+    "host-binding/affine-workspace-host-binding.ts",
+    "patches/0001-embed-guards.patch",
+    "patches/0002-host-session-isolation.patch",
+    "records/01-capability.json",
+    "records/02-packaging.json",
+    "records/03-host-requirements.json",
+    "records/04-binding-plan.json",
+    "records/05-qualification.json",
+    "records/06-registry.json",
+    "records/07-release.json",
+    "release/release-spec.json",
+    "schemas/actionist-block.schema.json",
+    "schemas/host-binding.schema.json",
+    "scripts/bind.mjs",
+    "scripts/install-release.mjs",
+    "scripts/make-release.mjs",
+    "scripts/release-lib.mjs",
+    "scripts/rollback-release.mjs",
+    "scripts/verify-installed.mjs",
+    "scripts/verify-release.mjs",
+    "tests/release.test.mjs"
+  ]
+}

@@ -1,0 +1,143 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://actionist.local/teable-data-grid/actionist-block.schema.json",
+  "title": "Actionist Teable data-grid block manifest",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["manifestVersion", "block", "reuse", "records", "interfaces", "configuration", "commands", "fixture", "theme", "verification", "runbook"],
+  "properties": {
+    "$schema": { "type": "string" },
+    "manifestVersion": { "const": "1.0.0" },
+    "block": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "label", "version", "status", "outcome"],
+      "properties": {
+        "id": { "type": "string", "pattern": "^[a-z0-9-]+/[a-z0-9-]+@[0-9]+\\.[0-9]+\\.[0-9]+$" },
+        "label": { "type": "string", "minLength": 1 },
+        "version": { "const": "0.1.0" },
+        "status": { "const": "prototype_not_admitted" },
+        "outcome": { "type": "string", "minLength": 1 }
+      }
+    },
+    "reuse": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["shape", "runtimeProfile", "rightsExposure", "donor", "ownership"],
+      "properties": {
+        "shape": { "const": "intact_service" },
+        "runtimeProfile": { "enum": ["sidecar_service", "service"] },
+        "rightsExposure": { "const": "none_network_only" },
+        "donor": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["repository", "upstreamRepository", "immutableRevision", "upstreamRevision", "sourceDigest", "sourceDigestBasis", "license", "runtimeReference"],
+          "properties": {
+            "repository": { "type": "string", "format": "uri" },
+            "upstreamRepository": { "type": "string", "format": "uri" },
+            "immutableRevision": { "type": "string", "pattern": "^[0-9a-f]{40}$" },
+            "upstreamRevision": { "type": "string", "pattern": "^[0-9a-f]{40}$" },
+            "sourceDigest": { "type": "string", "pattern": "^sha256:[a-f0-9]{64}$" },
+            "sourceDigestBasis": { "type": "string", "minLength": 1 },
+            "license": { "type": "string", "minLength": 1 },
+            "runtimeReference": { "type": "string", "minLength": 1 }
+          }
+        },
+        "ownership": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["donorRuntime", "hostBinding", "hostData", "migrationRule"],
+          "properties": {
+            "donorRuntime": { "type": "string", "minLength": 1 },
+            "hostBinding": { "type": "string", "minLength": 1 },
+            "hostData": { "type": "string", "minLength": 1 },
+            "migrationRule": { "type": "string", "minLength": 1 }
+          }
+        }
+      }
+    },
+    "records": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["capability", "packaging", "hostRequirements", "bindingPlan", "qualification", "registry", "release"],
+      "properties": {
+        "capability": { "$ref": "#/$defs/relativePath" },
+        "packaging": { "$ref": "#/$defs/relativePath" },
+        "hostRequirements": { "$ref": "#/$defs/relativePath" },
+        "bindingPlan": { "$ref": "#/$defs/relativePath" },
+        "qualification": { "$ref": "#/$defs/relativePath" },
+        "registry": { "$ref": "#/$defs/relativePath" },
+        "release": { "$ref": "#/$defs/relativePath" }
+      }
+    },
+    "interfaces": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["hostBinding", "hostBindingSchema"],
+      "properties": {
+        "hostBinding": { "$ref": "#/$defs/relativePath" },
+        "hostBindingSchema": { "$ref": "#/$defs/relativePath" }
+      }
+    },
+    "configuration": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["schema", "example", "requiredEnvironmentReferences"],
+      "properties": {
+        "schema": { "$ref": "#/$defs/relativePath" },
+        "example": { "$ref": "#/$defs/relativePath" },
+        "requiredEnvironmentReferences": { "type": "array", "minItems": 1, "items": { "type": "string" }, "uniqueItems": true }
+      }
+    },
+    "commands": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["validate", "install", "bind", "smoke"],
+      "properties": {
+        "validate": { "type": "string", "minLength": 1 },
+        "install": { "type": "string", "minLength": 1 },
+        "bind": { "type": "string", "minLength": 1 },
+        "smoke": { "type": "string", "minLength": 1 }
+      }
+    },
+    "fixture": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["host", "config", "purpose"],
+      "properties": {
+        "host": { "$ref": "#/$defs/relativePath" },
+        "config": { "$ref": "#/$defs/relativePath" },
+        "purpose": { "type": "string", "minLength": 1 }
+      }
+    },
+    "theme": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["bridge", "scopeSelector", "variableFormat", "globalRootWrites"],
+      "properties": {
+        "bridge": { "$ref": "#/$defs/relativePath" },
+        "scopeSelector": { "const": ".actionist-teable-surface" },
+        "variableFormat": { "const": "hsl-triplets" },
+        "globalRootWrites": { "const": false }
+      }
+    },
+    "verification": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["command", "requiredEvidence", "admission"],
+      "properties": {
+        "command": { "type": "string", "minLength": 1 },
+        "requiredEvidence": { "type": "array", "minItems": 1, "items": { "type": "string" }, "uniqueItems": true },
+        "admission": { "const": "not_claimed" }
+      }
+    },
+    "runbook": { "$ref": "#/$defs/relativePath" }
+  },
+  "$defs": {
+    "relativePath": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "^(?!/)(?![A-Za-z]:[\\\\/]).+$"
+    }
+  }
+}

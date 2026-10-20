@@ -1,0 +1,99 @@
+{
+  "record_type": "ReleaseManifest",
+  "record_version": "1.0.0",
+  "record_id": "actionist/affine-workspace@0.2.0#ReleaseManifest",
+  "block_id": "actionist/affine-workspace",
+  "version": "0.2.0",
+  "capability_id": "actionist/affine-workspace",
+  "links": {
+    "manifest": "../actionist-block.json",
+    "capability": "01-capability.json",
+    "packaging": "02-packaging.json",
+    "host_requirements": "03-host-requirements.json",
+    "binding_plan": "04-binding-plan.json",
+    "qualification": "05-qualification.json",
+    "registry": "06-registry.json"
+  },
+  "owner_domain": "D18",
+  "release_id": "actionist/affine-workspace@0.2.0-draft",
+  "application_id": "template:host.application_id",
+  "mutability_rule": "Immutable once released; a changed binding or donor revision mints a new release manifest.",
+  "status": "DRAFT",
+  "pinned_bindings": [
+    "records/01-capability.json",
+    "records/02-packaging.json",
+    "records/03-host-requirements.json",
+    "records/04-binding-plan.json",
+    "records/05-qualification.json",
+    "records/06-registry.json",
+    "host-binding/affine-workspace-host-binding.ts",
+    "build/BLOCK-BUILD.md",
+    "patches/0001-embed-guards.patch"
+  ],
+  "rollback_plan": {
+    "objects": [
+      {
+        "object_kind": "code_artifact",
+        "restore_procedure": "Restore the host binding and block package by retained content digest.",
+        "recovery_horizon_seconds": 0,
+        "owner": "actionist"
+      },
+      {
+        "object_kind": "configuration",
+        "restore_procedure": "Restore the host-owned origin, route and feature configuration snapshot.",
+        "recovery_horizon_seconds": 0,
+        "owner": "actionist"
+      },
+      {
+        "object_kind": "secrets",
+        "restore_procedure": "Revoke and restore the host secret reference through the host secret manager.",
+        "recovery_horizon_seconds": 0,
+        "owner": "actionist"
+      },
+      {
+        "object_kind": "database_schema",
+        "restore_procedure": "Use the donor migration owner procedure; this block owns no donor migration.",
+        "recovery_horizon_seconds": 0,
+        "owner": "donor"
+      },
+      {
+        "object_kind": "data",
+        "restore_procedure": "Use a donor-owned workspace/document restore procedure.",
+        "recovery_horizon_seconds": 0,
+        "owner": "donor"
+      },
+      {
+        "object_kind": "donor_revision",
+        "restore_procedure": "Re-point the donor runtime to the retained immutable artifact digest.",
+        "recovery_horizon_seconds": 0,
+        "owner": "donor"
+      },
+      {
+        "object_kind": "surface_route",
+        "restore_procedure": "Restore the host route entry and keep an alternate route available before any pilot release.",
+        "recovery_horizon_seconds": 0,
+        "owner": "actionist"
+      },
+      {
+        "object_kind": "connector_credential_state",
+        "restore_procedure": "No connector credential state is owned by this block; verify absence at release.",
+        "recovery_horizon_seconds": 0,
+        "owner": "actionist"
+      }
+    ],
+    "rehearsed": false,
+    "rehearsal_status": "not_run"
+  },
+  "recovery_horizon_seconds": 0,
+  "artifact_retention": {
+    "pinned_by_digest": true,
+    "retained_in_actionist_storage": false,
+    "retention_owner": "donor",
+    "note": "The local receipt proves a donor-held official artifact digest, not Actionist-owned retention. Horizon remains zero until a release rehearsal exists."
+  },
+  "deployment_run": false,
+  "execution_status": "LOCAL_SYNTHETIC_ONLY",
+  "admission_status": "NOT_ADMITTED",
+  "local_acceptance_receipt": "../../../actionist-base/evidence/affine-acceptance/acceptance.json",
+  "release_gate_note": "Local browser acceptance passed the recorded gates but does not change DRAFT, NOT_ADMITTED, or LOCAL_SYNTHETIC_ONLY status."
+}

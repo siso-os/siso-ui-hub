@@ -1,0 +1,2699 @@
+{
+  "schemaVersion": 1,
+  "package": "@siso/blocks",
+  "version": "0.4.1",
+  "familyCount": 64,
+  "implementation": "Compatibility Siso* API plus actual MIT/free Arc source subpath; see source-provenance.json",
+  "components": [
+    {
+      "export": "SisoDialog",
+      "family": "dialog",
+      "file": "src/overlays.tsx",
+      "reference": "app/src/arc/dialog/dialog.tsx",
+      "mechanism": "controlled modal, title, description, footer; Radix focus management",
+      "licence": "MIT (SISO implementation; Radix dependencies MIT)",
+      "status": "implemented"
+    },
+    {
+      "export": "SisoDrawer",
+      "family": "drawer",
+      "file": "src/overlays.tsx",
+      "reference": "app/src/arc/drawer/drawer.tsx",
+      "mechanism": "left, right and bottom; controlled modal",
+      "licence": "MIT (SISO implementation; Radix dependencies MIT)",
+      "status": "implemented"
+    },
+    {
+      "export": "SisoPopover",
+      "family": "popover",
+      "file": "src/overlays.tsx",
+      "reference": "app/src/arc/popover/popover.tsx",
+      "mechanism": "four sides, three alignments; controlled or internal open",
+      "licence": "MIT (SISO implementation; Radix dependencies MIT)",
+      "status": "implemented"
+    },
+    {
+      "export": "SisoHoverCard",
+      "family": "hover-card",
+      "file": "src/overlays.tsx",
+      "reference": "app/src/arc/hover-card/hover-card.tsx",
+      "mechanism": "supplementary hover and focus preview",
+      "licence": "MIT (SISO implementation; Radix dependencies MIT)",
+      "status": "implemented"
+    },
+    {
+      "export": "SisoCommandPalette",
+      "family": "command-palette",
+      "file": "src/overlays.tsx",
+      "reference": "app/src/arc/command-palette/command-palette.tsx",
+      "mechanism": "search, groups, disabled items, keyboard navigation",
+      "licence": "MIT (SISO implementation; Radix dependencies MIT)",
+      "status": "implemented"
+    },
+    {
+      "export": "SisoNotificationCenter",
+      "family": "notification-center",
+      "file": "src/feedback.tsx",
+      "reference": "app/src/arc/notification-center/notification-center.tsx",
+      "mechanism": "unread filter, mark read, mark all read, dismiss",
+      "licence": "MIT (SISO implementation; Radix dependencies MIT)",
+      "status": "implemented"
+    },
+    {
+      "export": "SisoToastStack",
+      "family": "toast-stack",
+      "file": "src/feedback.tsx",
+      "reference": "app/src/arc/toast-stack/toast-stack.tsx",
+      "mechanism": "four tones, three positions, optional paused timeout",
+      "licence": "MIT (SISO implementation; Radix dependencies MIT)",
+      "status": "implemented"
+    },
+    {
+      "export": "SisoDataTable",
+      "family": "sortable-data-table",
+      "file": "src/data.tsx",
+      "reference": "app/src/arc/sortable-data-table/sortable-data-table.tsx",
+      "mechanism": "generic columns, natural sort, manual server sort, controlled selection",
+      "licence": "MIT (SISO implementation; Radix dependencies MIT)",
+      "status": "implemented"
+    },
+    {
+      "export": "SisoFilterToolbar",
+      "family": "filter-toolbar",
+      "file": "src/data.tsx",
+      "reference": "app/src/arc/filter-toolbar/filter-toolbar.tsx",
+      "mechanism": "query, select filters, reset and action slot",
+      "licence": "MIT (SISO implementation; Radix dependencies MIT)",
+      "status": "implemented"
+    },
+    {
+      "export": "SisoTimeline",
+      "family": "timeline",
+      "file": "src/feedback.tsx",
+      "reference": "app/src/arc/timeline/timeline.tsx",
+      "mechanism": "data-driven activity with icon and tone slots",
+      "licence": "MIT (SISO implementation; Radix dependencies MIT)",
+      "status": "implemented"
+    },
+    {
+      "export": "SisoEmptyState",
+      "family": "empty-state",
+      "file": "src/feedback.tsx",
+      "reference": "app/src/arc/empty-state/empty-state.tsx",
+      "mechanism": "standard and compact, icon and action slots",
+      "licence": "MIT (SISO implementation; Radix dependencies MIT)",
+      "status": "implemented"
+    },
+    {
+      "export": "SisoFileDropzone",
+      "family": "file-dropzone",
+      "file": "src/upload.tsx",
+      "reference": "app/src/arc/file-dropzone/file-dropzone.tsx",
+      "mechanism": "drop and select, MIME/extension/size/count validation",
+      "licence": "MIT (SISO implementation; Radix dependencies MIT)",
+      "status": "implemented"
+    },
+    {
+      "export": "SisoChatThread",
+      "family": "chat-thread",
+      "file": "src/threads.tsx",
+      "reference": "app/src/arc/chat-thread/chat-thread.tsx",
+      "mechanism": "plain text, attachments, async composer, delivery status and retry",
+      "licence": "MIT (SISO implementation; Radix dependencies MIT)",
+      "status": "implemented"
+    },
+    {
+      "export": "SisoCommentThread",
+      "family": "comment-thread",
+      "file": "src/threads.tsx",
+      "reference": "app/src/arc/comment-thread/comment-thread.tsx",
+      "mechanism": "recursive replies, async drafts, resolve/reopen, permission-gated delete",
+      "licence": "MIT (SISO implementation; Radix dependencies MIT)",
+      "status": "implemented"
+    },
+    {
+      "export": "SisoPagination",
+      "family": "pagination",
+      "file": "src/data.tsx",
+      "reference": "app/src/arc/pagination/pagination.tsx",
+      "mechanism": "1-based controlled pages with bounded page buttons",
+      "licence": "MIT (SISO implementation; Radix dependencies MIT)",
+      "status": "implemented"
+    }
+  ],
+  "helpers": [
+    "sisoSortRows",
+    "sisoValidateFiles"
+  ],
+  "verificationLimits": [
+    "Parent owns compiled build, pack and external consumer verification.",
+    "No live browser or assistive technology proof captured by this lane.",
+    "No pixel-equivalence or motion-equivalence claim against Arc."
+  ],
+  "checks": [
+    {
+      "check": "strict TypeScript ES2022/bundler/react-jsx across six source files",
+      "result": "pass",
+      "diagnostics": 0
+    },
+    {
+      "check": "export inventory and standalone import boundary",
+      "result": "pass",
+      "componentExports": 15
+    },
+    {
+      "check": "sorting, immutable inputs, file rejection and six SSR artifacts",
+      "result": "pass",
+      "details": [
+        "numeric/natural sort",
+        "null values last both directions",
+        "MIME/extensions/size/count rejection",
+        "table aria-sort",
+        "bounded pagination and aria-current",
+        "file input",
+        "recursive replies",
+        "escaped chat text",
+        "toast live status"
+      ]
+    },
+    {
+      "check": "final source parse after explicit button types",
+      "result": "pass",
+      "diagnostics": 0
+    }
+  ],
+  "sourceEntry": {
+    "path": "@siso/blocks/source",
+    "exports": [
+      {
+        "family": "accordion",
+        "exports": [
+          "AccordionItem",
+          "AccordionProps",
+          "Accordion"
+        ],
+        "variants": [
+          "original source contract and documentation examples"
+        ]
+      },
+      {
+        "family": "announcement-bar",
+        "exports": [
+          "AnnouncementAction",
+          "Announcement",
+          "AnnouncementBarProps",
+          "clearAnnouncementDismissal",
+          "AnnouncementBar"
+        ],
+        "variants": [
+          "original source contract and documentation examples"
+        ]
+      },
+      {
+        "family": "blog-grid",
+        "exports": [
+          "BlogGridProps",
+          "BlogGrid",
+          "BlogGridBlock"
+        ],
+        "variants": [
+          "original source contract and documentation examples"
+        ]
+      },
+      {
+        "family": "bottom-sheet",
+        "exports": [
+          "BottomSheetProps",
+          "BottomSheet",
+          "BottomSheetClose"
+        ],
+        "variants": [
+          "original source contract and documentation examples"
+        ]
+      },
+      {
+        "family": "breadcrumb",
+        "exports": [
+          "BreadcrumbItem",
+          "BreadcrumbProps",
+          "Breadcrumb"
+        ],
+        "variants": [
+          "original source contract and documentation examples"
+        ]
+      },
+      {
+        "family": "calendar",
+        "exports": [
+          "CalendarDateMatcher",
+          "CalendarProps",
+          "Calendar"
+        ],
+        "variants": [
+          "original source contract and documentation examples"
+        ]
+      },
+      {
+        "family": "card-stack",
+        "exports": [
+          "CardDecision",
+          "CardStackProps",
+          "CardStack"
+        ],
+        "variants": [
+          "original source contract and documentation examples"
+        ]
+      },
+      {
+        "family": "carousel",
+        "exports": [
+          "CarouselProps",
+          "Carousel"
+        ],
+        "variants": [
+          "original source contract and documentation examples"
+        ]
+      },
+      {
+        "family": "changelog-feed",
+        "exports": [
+          "ChangelogKind",
+          "ChangelogMedia",
+          "ChangelogEntry",
+          "ChangelogMonth",
+          "ChangelogFeedProps",
+          "ChangelogFeed"
+        ],
+        "variants": [
+          "original source contract and documentation examples"
+        ]
+      },
+      {
+        "family": "chat-thread",
+        "exports": [
+          "ChatParticipant",
+          "ChatAttachment",
+          "ChatReaction",
+          "ChatMessageStatus",
+          "ChatMessage",
+          "ChatDraft",
+          "ChatComposerLabels",
+          "ChatThreadLabels",
+          "ChatThreadHandle",
+          "ChatThreadProps",
+          "formatBytes",
+          "ChatComposerProps",
+          "ChatComposerHandle",
+          "ChatComposer",
+          "ChatThread"
+        ],
+        "variants": [
+          "original source contract and documentation examples"
+        ]
+      },
+      {
+        "family": "code-block",
+        "exports": [
+          "CodeBlockProps",
+          "CodeBlock"
+        ],
+        "variants": [
+          "original source contract and documentation examples"
+        ]
+      },
+      {
+        "family": "color-picker",
+        "exports": [
+          "ColorFormat",
+          "ColorSwatch",
+          "ColorPickerProps",
+          "Hsva",
+          "toHex",
+          "parseColor",
+          "ColorPicker"
+        ],
+        "variants": [
+          "original source contract and documentation examples"
+        ]
+      },
+      {
+        "family": "combobox",
+        "exports": [
+          "ComboboxOption",
+          "ComboboxProps",
+          "Combobox"
+        ],
+        "variants": [
+          "original source contract and documentation examples"
+        ]
+      },
+      {
+        "family": "command-palette",
+        "exports": [
+          "CommandItem",
+          "CommandPaletteProps",
+          "CommandPalette"
+        ],
+        "variants": [
+          "original source contract and documentation examples"
+        ]
+      },
+      {
+        "family": "comment-thread",
+        "exports": [
+          "CommentAuthor",
+          "CommentReaction",
+          "ThreadComment",
+          "CommentThreadEvent",
+          "CommentThreadLabels",
+          "CommentThreadProps",
+          "CommentThread"
+        ],
+        "variants": [
+          "original source contract and documentation examples"
+        ]
+      },
+      {
+        "family": "comparison-table",
+        "exports": [
+          "ComparisonTableProps",
+          "ComparisonTable",
+          "ComparisonTableBlock"
+        ],
+        "variants": [
+          "original source contract and documentation examples"
+        ]
+      },
+      {
+        "family": "contact-section",
+        "exports": [
+          "ContactSectionVariant",
+          "ContactMessage",
+          "ContactChannel",
+          "ContactOffice",
+          "ContactSectionProps",
+          "contactExampleChannels",
+          "contactExampleOffices",
+          "ContactSection",
+          "ContactSectionBlock"
+        ],
+        "variants": [
+          "original source contract and documentation examples"
+        ]
+      },
+      {
+        "family": "context-menu",
+        "exports": [
+          "ContextMenuItem",
+          "ContextMenuProps",
+          "ContextMenu",
+          "contextMenuExampleItems"
+        ],
+        "variants": [
+          "original source contract and documentation examples"
+        ]
+      },
+      {
+        "family": "cta-section",
+        "exports": [
+          "CtaVariant",
+          "CtaSectionProps",
+          "CtaSection",
+          "CtaSectionBlock"
+        ],
+        "variants": [
+          "original source contract and documentation examples"
+        ]
+      },
+      {
+        "family": "date-picker",
+        "exports": [
+          "DatePickerProps",
+          "DatePicker"
+        ],
+        "variants": [
+          "original source contract and documentation examples"
+        ]
+      },
+      {
+        "family": "date-range-picker",
+        "exports": [
+          "DateRange",
+          "DateRangePreset",
+          "DateRangePickerProps",
+          "defaultDateRangePresets",
+          "DateRangePicker"
+        ],
+        "variants": [
+          "original source contract and documentation examples"
+        ]
+      },
+      {
+        "family": "dialog",
+        "exports": [
+          "Dialog",
+          "DialogTrigger",
+          "DialogClose",
+          "DialogContentProps",
+          "DialogContent"
+        ],
+        "variants": [
+          "original source contract and documentation examples"
+        ]
+      },
+      {
+        "family": "drawer",
+        "exports": [
+          "useDrawerItem",
+          "Drawer",
+          "DrawerTrigger",
+          "DrawerClose",
+          "DrawerContentProps",
+          "DrawerContent"
+        ],
+        "variants": [
+          "original source contract and documentation examples"
+        ]
+      },
+      {
+        "family": "dropdown-menu",
+        "exports": [
+          "DropdownItem",
+          "DropdownMenuProps",
+          "DropdownMenu"
+        ],
+        "variants": [
+          "original source contract and documentation examples"
+        ]
+      },
+      {
+        "family": "empty-state",
+        "exports": [
+          "EmptyStateProps",
+          "EmptyState"
+        ],
+        "variants": [
+          "original source contract and documentation examples"
+        ]
+      },
+      {
+        "family": "empty-states",
+        "exports": [
+          "EmptyStates"
+        ],
+        "variants": [
+          "original source contract and documentation examples"
+        ]
+      },
+      {
+        "family": "expandable-card",
+        "exports": [
+          "ExpandableCardProps",
+          "ExpandableCard"
+        ],
+        "variants": [
+          "original source contract and documentation examples"
+        ]
+      },
+      {
+        "family": "faq-section",
+        "exports": [
+          "FaqSectionVariant",
+          "FaqItem",
+          "FaqSectionProps",
+          "faqExampleItems",
+          "FaqSection",
+          "FaqSectionBlock"
+        ],
+        "variants": [
+          "original source contract and documentation examples"
+        ]
+      },
+      {
+        "family": "file-dropzone",
+        "exports": [
+          "FileDropzoneStatus",
+          "FileDropzoneItem",
+          "FileDropzoneUpload",
+          "FileDropzoneProps",
+          "formatFileSize",
+          "FileDropzone"
+        ],
+        "variants": [
+          "original source contract and documentation examples"
+        ]
+      },
+      {
+        "family": "file-upload",
+        "exports": [
+          "FileUploadItem",
+          "FileUploadProps",
+          "FileUpload"
+        ],
+        "variants": [
+          "original source contract and documentation examples"
+        ]
+      },
+      {
+        "family": "filter-toolbar",
+        "exports": [
+          "FilterChip",
+          "FilterOption",
+          "FilterField",
+          "FilterMenuProps",
+          "FilterToolbarProps",
+          "FilterMenu",
+          "FilterToolbar"
+        ],
+        "variants": [
+          "original source contract and documentation examples"
+        ]
+      },
+      {
+        "family": "hero-section",
+        "exports": [
+          "HeroSectionVariant",
+          "HeroSectionProps",
+          "HeroSection",
+          "HeroSectionBlock"
+        ],
+        "variants": [
+          "original source contract and documentation examples"
+        ]
+      },
+      {
+        "family": "hover-card",
+        "exports": [
+          "HoverCardProps",
+          "HoverCard",
+          "HoverCardStat",
+          "HoverCardProfileProps",
+          "HoverCardProfile"
+        ],
+        "variants": [
+          "original source contract and documentation examples"
+        ]
+      },
+      {
+        "family": "image-compare",
+        "exports": [
+          "ImageCompareProps",
+          "ImageCompare"
+        ],
+        "variants": [
+          "original source contract and documentation examples"
+        ]
+      },
+      {
+        "family": "json-viewer",
+        "exports": [
+          "JsonValueType",
+          "JsonViewerCopyDetail",
+          "JsonViewerProps",
+          "JsonViewer"
+        ],
+        "variants": [
+          "original source contract and documentation examples"
+        ]
+      },
+      {
+        "family": "login-centered",
+        "exports": [
+          "LoginMethod",
+          "LoginCenteredProps",
+          "LoginCentered"
+        ],
+        "variants": [
+          "original source contract and documentation examples"
+        ]
+      },
+      {
+        "family": "logo-marquee",
+        "exports": [
+          "LogoMarqueeBrand",
+          "LogoMarqueeTone",
+          "LogoMarqueeProps",
+          "LogoMarquee"
+        ],
+        "variants": [
+          "original source contract and documentation examples"
+        ]
+      },
+      {
+        "family": "mention-input",
+        "exports": [
+          "MentionKind",
+          "MentionPerson",
+          "MentionChannel",
+          "Mention",
+          "MentionValue",
+          "MentionInputHandle",
+          "MentionInputProps",
+          "mentionText",
+          "serializeMentions",
+          "MentionInput"
+        ],
+        "variants": [
+          "original source contract and documentation examples"
+        ]
+      },
+      {
+        "family": "metric-card",
+        "exports": [
+          "MetricCardProps",
+          "MetricCard"
+        ],
+        "variants": [
+          "original source contract and documentation examples"
+        ]
+      },
+      {
+        "family": "morph-select",
+        "exports": [
+          "MorphSelectOption",
+          "MorphSelectGroup",
+          "MorphSelectItem",
+          "MorphSelectProps",
+          "MorphSelect"
+        ],
+        "variants": [
+          "original source contract and documentation examples"
+        ]
+      },
+      {
+        "family": "newsletter-signup",
+        "exports": [
+          "NewsletterVariant",
+          "NewsletterSignupProps",
+          "NewsletterSignup",
+          "NewsletterSignupBlock"
+        ],
+        "variants": [
+          "original source contract and documentation examples"
+        ]
+      },
+      {
+        "family": "notification-center",
+        "exports": [
+          "NotificationItem",
+          "NotificationCenterProps",
+          "NotificationCenter"
+        ],
+        "variants": [
+          "original source contract and documentation examples"
+        ]
+      },
+      {
+        "family": "page-header",
+        "exports": [
+          "PageHeader"
+        ],
+        "variants": [
+          "original source contract and documentation examples"
+        ]
+      },
+      {
+        "family": "pagination",
+        "exports": [
+          "PaginationProps",
+          "Pagination"
+        ],
+        "variants": [
+          "original source contract and documentation examples"
+        ]
+      },
+      {
+        "family": "plan-comparison",
+        "exports": [
+          "PlanComparison"
+        ],
+        "variants": [
+          "original source contract and documentation examples"
+        ]
+      },
+      {
+        "family": "popover",
+        "exports": [
+          "Popover",
+          "PopoverClose",
+          "PopoverTrigger",
+          "PopoverContent"
+        ],
+        "variants": [
+          "original source contract and documentation examples"
+        ]
+      },
+      {
+        "family": "resizable-panels",
+        "exports": [
+          "ResizablePanelProps",
+          "ResizablePanelsProps",
+          "ResizablePanel",
+          "ResizablePanels"
+        ],
+        "variants": [
+          "original source contract and documentation examples"
+        ]
+      },
+      {
+        "family": "rich-text-editor",
+        "exports": [
+          "BlockType",
+          "normalizeUrl",
+          "markdownToHtml",
+          "htmlToMarkdown",
+          "sanitizeHtml",
+          "RichTextValue",
+          "RichTextEditorHandle",
+          "RichTextEditorProps",
+          "RichTextEditor"
+        ],
+        "variants": [
+          "original source contract and documentation examples"
+        ]
+      },
+      {
+        "family": "scroll-area",
+        "exports": [
+          "ScrollAreaEdges",
+          "ScrollAreaProps",
+          "ScrollArea"
+        ],
+        "variants": [
+          "original source contract and documentation examples"
+        ]
+      },
+      {
+        "family": "sign-in",
+        "exports": [
+          "SignInMethod",
+          "SignInAccount",
+          "SignInProps",
+          "SignIn"
+        ],
+        "variants": [
+          "original source contract and documentation examples"
+        ]
+      },
+      {
+        "family": "signature-pad",
+        "exports": [
+          "InkPoint",
+          "InkColor",
+          "InkWidth",
+          "InkStroke",
+          "OutlineOptions",
+          "PAD_WIDTH",
+          "getStrokeOutline",
+          "outlineToPath",
+          "strokePath",
+          "signatureToSvg",
+          "signatureToPng",
+          "SignaturePadProps",
+          "SignaturePad"
+        ],
+        "variants": [
+          "original source contract and documentation examples"
+        ]
+      },
+      {
+        "family": "signup-form",
+        "exports": [
+          "SignupDetails",
+          "SignupFormProps",
+          "SignupForm"
+        ],
+        "variants": [
+          "original source contract and documentation examples"
+        ]
+      },
+      {
+        "family": "site-footer",
+        "exports": [
+          "SiteFooterVariant",
+          "SiteFooterLink",
+          "SiteFooterColumn",
+          "SiteFooterNewsletter",
+          "SiteFooterProps",
+          "siteFooterExampleColumns",
+          "SiteFooter",
+          "SiteFooterBlock"
+        ],
+        "variants": [
+          "original source contract and documentation examples"
+        ]
+      },
+      {
+        "family": "site-header",
+        "exports": [
+          "SiteHeaderVariant",
+          "SiteHeaderLink",
+          "SiteHeaderFeature",
+          "SiteHeaderItem",
+          "SiteHeaderAction",
+          "SiteHeaderDestination",
+          "SiteHeaderProps",
+          "ArcMark",
+          "siteHeaderExampleItems",
+          "SiteHeader",
+          "SiteHeaderBlock"
+        ],
+        "variants": [
+          "original source contract and documentation examples"
+        ]
+      },
+      {
+        "family": "sortable-data-table",
+        "exports": [
+          "SortDirection",
+          "SortState",
+          "DataColumn",
+          "SortableDataTableProps",
+          "SortableDataTable"
+        ],
+        "variants": [
+          "original source contract and documentation examples"
+        ]
+      },
+      {
+        "family": "stats-band",
+        "exports": [
+          "StatsBandLayout",
+          "StatsBandProps",
+          "StatsBand",
+          "StatsBandBlock"
+        ],
+        "variants": [
+          "original source contract and documentation examples"
+        ]
+      },
+      {
+        "family": "swipe-actions",
+        "exports": [
+          "SwipeAction",
+          "SwipeActionsProps",
+          "SwipeActionsRowProps",
+          "SwipeActions",
+          "SwipeActionsRow"
+        ],
+        "variants": [
+          "original source contract and documentation examples"
+        ]
+      },
+      {
+        "family": "time-picker",
+        "exports": [
+          "TimePickerProps",
+          "TimePicker"
+        ],
+        "variants": [
+          "original source contract and documentation examples"
+        ]
+      },
+      {
+        "family": "timeline",
+        "exports": [
+          "TimelineEvent",
+          "TimelineProps",
+          "Timeline"
+        ],
+        "variants": [
+          "original source contract and documentation examples"
+        ]
+      },
+      {
+        "family": "toast-stack",
+        "exports": [
+          "ToastType",
+          "ToastAction",
+          "ToastOptions",
+          "ToastStackApi",
+          "ToastStackProviderProps",
+          "ToastStackProps",
+          "ToastStackProvider",
+          "useToastStack",
+          "ToastStack"
+        ],
+        "variants": [
+          "original source contract and documentation examples"
+        ]
+      },
+      {
+        "family": "toast",
+        "exports": [
+          "ToastProps",
+          "Toast"
+        ],
+        "variants": [
+          "original source contract and documentation examples"
+        ]
+      },
+      {
+        "family": "tree-view",
+        "exports": [
+          "TreeNode",
+          "TreeViewProps",
+          "TreeView"
+        ],
+        "variants": [
+          "original source contract and documentation examples"
+        ]
+      },
+      {
+        "family": "user-menu",
+        "exports": [
+          "UserStatus",
+          "ThemePreference",
+          "userStatuses",
+          "UserMenuUser",
+          "UserMenuItem",
+          "UserMenuProps",
+          "PresenceDot",
+          "UserMenu"
+        ],
+        "variants": [
+          "original source contract and documentation examples"
+        ]
+      },
+      {
+        "family": "uiable-notifications",
+        "exports": [
+          "UiableNotifications"
+        ],
+        "variants": [
+          "original compact popover",
+          "host content and callbacks"
+        ],
+        "source": "MIT CodedThemes Uiable"
+      }
+    ],
+    "familyCount": 63
+  },
+  "sourceStyles": "@siso/blocks/source.css",
+  "sourceFamilyCount": 15,
+  "sourceComponents": [
+    {
+      "family": "arc:dialog",
+      "exports": [
+        "Dialog",
+        "DialogTrigger",
+        "DialogClose",
+        "DialogContentProps",
+        "DialogContent"
+      ],
+      "source": "https://uiarc.dev/components/dialog",
+      "file": "src/source/dialog/dialog.tsx",
+      "tier": "free",
+      "license": "MIT",
+      "variations": [
+        "The overlay fades while the panel rises 8px and scales from 0.96 on a smooth spring; closing is shorter and retargets from the current state.",
+        "Title and description changes rise in with a soft blur.",
+        "Reduced motion uses a plain opacity fade, including the CSS keyframe fallback for bare Radix roots."
+      ]
+    },
+    {
+      "family": "arc:drawer",
+      "exports": [
+        "useDrawerItem",
+        "Drawer",
+        "DrawerTrigger",
+        "DrawerClose",
+        "DrawerContentProps",
+        "DrawerContent"
+      ],
+      "source": "https://uiarc.dev/components/drawer",
+      "file": "src/source/drawer/drawer.tsx",
+      "tier": "free",
+      "license": "MIT",
+      "variations": [
+        "The panel springs in from its edge and leaves faster on a tween; a drag past a third of the panel or a quick flick closes it and keeps the release velocity.",
+        "Dragging the header away from the edge rubber-bands; the overlay fades in and out.",
+        "Reduced motion disables dragging and replaces the slide with a short opacity fade."
+      ]
+    },
+    {
+      "family": "arc:popover",
+      "exports": [
+        "Popover",
+        "PopoverClose",
+        "PopoverTrigger",
+        "PopoverContent"
+      ],
+      "source": "https://uiarc.dev/components/popover",
+      "file": "src/source/popover/popover.tsx",
+      "tier": "free",
+      "license": "MIT",
+      "variations": [
+        "CSS transitions: the panel fades and settles from 5px toward its trigger at 0.97 scale on a spring; it leaves in 140ms.",
+        "Transitions instead of keyframes, so a reopen mid-close reverses from where the panel is.",
+        "Reduced motion drops the transform and keeps a short opacity fade."
+      ]
+    },
+    {
+      "family": "arc:hover-card",
+      "exports": [
+        "HoverCardProps",
+        "HoverCard",
+        "HoverCardStat",
+        "HoverCardProfileProps",
+        "HoverCardProfile"
+      ],
+      "source": "https://uiarc.dev/components/hover-card",
+      "file": "src/source/hover-card/hover-card.tsx",
+      "tier": "free",
+      "license": "MIT",
+      "variations": [
+        "Grows from the trigger edge: scale from 0.96 and a 4px offset on a smooth spring, with a separate fade. Mid-exit returns retarget instead of jumping.",
+        "Within 300ms of another card, the next opens after 80ms with a fade only. Profile rows settle in with a small stagger.",
+        "Reduced motion drops scale and travel and keeps a short fade."
+      ]
+    },
+    {
+      "family": "arc:command-palette",
+      "exports": [
+        "CommandItem",
+        "CommandPaletteProps",
+        "CommandPalette"
+      ],
+      "source": "https://uiarc.dev/components/blocks/command-palette",
+      "file": "src/source/command-palette/command-palette.tsx",
+      "tier": "free",
+      "license": "MIT",
+      "variations": [
+        "The panel rises in on a spring; the results frame springs to the list height as the query filters.",
+        "Remaining rows glide into place when the shift is small and snap when it is a long jump; the highlight springs for pointer moves and slides in 70ms for arrow keys.",
+        "Reduced motion removes the entrance, glides, and highlight travel."
+      ]
+    },
+    {
+      "family": "arc:toast",
+      "exports": [
+        "ToastProps",
+        "Toast"
+      ],
+      "source": "https://uiarc.dev/components/toast",
+      "file": "src/source/toast/toast.tsx",
+      "tier": "free",
+      "license": "MIT",
+      "variations": [
+        "Enters rising 16px from 0.96 scale on a morph spring while the check draws in; a swipe past 80px or 480px/s throws it off with its release velocity.",
+        "Closing sinks it 8px and fades. Copy changes rise in while the height springs to fit.",
+        "Reduced motion uses opacity fades and disables dragging."
+      ]
+    },
+    {
+      "family": "arc:notification-center",
+      "exports": [
+        "NotificationItem",
+        "NotificationCenterProps",
+        "NotificationCenter"
+      ],
+      "source": "https://uiarc.dev/components/blocks/notification-center",
+      "file": "src/source/notification-center/notification-center.tsx",
+      "tier": "free",
+      "license": "MIT",
+      "variations": [
+        "The bell tilts when open; counts roll like an odometer in the direction of change.",
+        "Rows open and collapse their own height on a spring, and bulk actions cascade down the list in under a quarter second.",
+        "Reduced motion replaces height, roll, and tilt with instant fades."
+      ]
+    },
+    {
+      "family": "arc:sortable-data-table",
+      "exports": [
+        "SortDirection",
+        "SortState",
+        "DataColumn",
+        "SortableDataTableProps",
+        "SortableDataTable"
+      ],
+      "source": "https://uiarc.dev/components/sortable-data-table",
+      "file": "src/source/sortable-data-table/sortable-data-table.tsx",
+      "tier": "free",
+      "license": "MIT",
+      "variations": [
+        "Rows glide to their new positions on a spring when the sort changes; the sort arrow flips.",
+        "The selection count rolls and Clear fades in with a short blur.",
+        "Reduced motion reorders instantly and fades the count."
+      ]
+    },
+    {
+      "family": "arc:file-dropzone",
+      "exports": [
+        "FileDropzoneStatus",
+        "FileDropzoneItem",
+        "FileDropzoneUpload",
+        "FileDropzoneProps",
+        "formatFileSize",
+        "FileDropzone"
+      ],
+      "source": "https://uiarc.dev/components/file-dropzone",
+      "file": "src/source/file-dropzone/file-dropzone.tsx",
+      "tier": "free",
+      "license": "MIT",
+      "variations": [
+        "The icon lifts while files hover, the edge animates, rows enter and collapse on a smooth spring, and progress bars ease toward their target.",
+        "Reduced motion replaces height and lift animations with short fades and keeps progress changes instant."
+      ]
+    },
+    {
+      "family": "arc:timeline",
+      "exports": [
+        "TimelineEvent",
+        "TimelineProps",
+        "Timeline"
+      ],
+      "source": "https://uiarc.dev/components/timeline",
+      "file": "src/source/timeline/timeline.tsx",
+      "tier": "free",
+      "license": "MIT",
+      "variations": [
+        "The connecting line draws as rows come into view and markers pop in.",
+        "New updates slide in at the top while the rest glide down; details expand on a spring.",
+        "Reduced motion replaces travel with short fades and instant height changes."
+      ]
+    },
+    {
+      "family": "arc:empty-state",
+      "exports": [
+        "EmptyStateProps",
+        "EmptyState"
+      ],
+      "source": "https://uiarc.dev/components/empty-state",
+      "file": "src/source/empty-state/empty-state.tsx",
+      "tier": "free",
+      "license": "MIT",
+      "variations": [
+        "Changing title or description rolls the copy in place while the block height springs to fit.",
+        "A new icon pops in with a short blur.",
+        "Reduced motion swaps copy with a fade and snaps height; the icon's idle animation stops."
+      ]
+    },
+    {
+      "family": "arc:pagination",
+      "exports": [
+        "PaginationProps",
+        "Pagination"
+      ],
+      "source": "https://uiarc.dev/components/pagination",
+      "file": "src/source/pagination/pagination.tsx",
+      "tier": "free",
+      "license": "MIT",
+      "variations": [
+        "The current page mark springs to the selected button.",
+        "When the window shifts, numbers slide like a belt by the number of slots moved.",
+        "Reduced motion jumps the mark and swaps numbers without sliding."
+      ]
+    },
+    {
+      "family": "arc:chat-thread",
+      "exports": [
+        "ChatParticipant",
+        "ChatAttachment",
+        "ChatReaction",
+        "ChatMessageStatus",
+        "ChatMessage",
+        "ChatDraft",
+        "ChatComposerLabels",
+        "ChatThreadLabels",
+        "ChatThreadHandle",
+        "ChatThreadProps",
+        "formatBytes",
+        "ChatComposerProps",
+        "ChatComposerHandle",
+        "ChatComposer",
+        "ChatThread"
+      ],
+      "source": "https://uiarc.dev/components/chat-thread",
+      "file": "src/source/chat-thread/chat-thread.tsx",
+      "tier": "free",
+      "license": "MIT",
+      "variations": [
+        "New messages rise in from their own side with a small scale on a smooth spring, and the list glides up by the added height instead of jumping.",
+        "Reader avatars share a layoutId, so a receipt travels to the newly read message.",
+        "Reaction chips pop in, counts roll up or down, and the reaction row and attachment tray spring open.",
+        "The send arrow lifts out and a new one rises in on each send; the jump to latest pill springs in from below.",
+        "Reduced motion turns these into short fades, stops the typing dots, and scrolls to the bottom instantly."
+      ]
+    },
+    {
+      "family": "arc:comment-thread",
+      "exports": [
+        "CommentAuthor",
+        "CommentReaction",
+        "ThreadComment",
+        "CommentThreadEvent",
+        "CommentThreadLabels",
+        "CommentThreadProps",
+        "CommentThread"
+      ],
+      "source": "https://uiarc.dev/components/comment-thread",
+      "file": "src/source/comment-thread/comment-thread.tsx",
+      "tier": "free",
+      "license": "MIT",
+      "variations": [
+        "The thread height springs when replies expand, comments arrive, or the thread folds into the resolved chip.",
+        "Reaction counts roll to the new value; chips move with layout animation as they are added or removed.",
+        "Edit, confirm, and picker rows slide in from the side.",
+        "Reduced motion swaps content without travel and turns off transitions."
+      ]
+    },
+    {
+      "family": "arc:filter-toolbar",
+      "exports": [
+        "FilterChip",
+        "FilterOption",
+        "FilterField",
+        "FilterMenuProps",
+        "FilterToolbarProps",
+        "FilterMenu",
+        "FilterToolbar"
+      ],
+      "source": "https://uiarc.dev/components/filter-toolbar",
+      "file": "src/source/filter-toolbar/filter-toolbar.tsx",
+      "tier": "free",
+      "license": "MIT",
+      "variations": [
+        "Chips open and close their slot on a spring so neighbors glide; values morph in place.",
+        "The Add filter trigger morphs into the menu surface and steps slide between fields and values.",
+        "Reduced motion replaces the morphs and slides with instant changes and short fades."
+      ]
+    }
+  ],
+  "compatibilitySourceCoverage": [
+    {
+      "reference": "app/src/arc/accordion/accordion.tsx",
+      "family": "accordion",
+      "decision": "omitted-from-this-package",
+      "reason": "Atom/form/display effect outside blocks scope; no export in this package."
+    },
+    {
+      "reference": "app/src/arc/action-button/action-button.tsx",
+      "family": "action-button",
+      "decision": "omitted-from-this-package",
+      "reason": "Atom/form/display effect outside blocks scope; no export in this package."
+    },
+    {
+      "reference": "app/src/arc/activity-heatmap/activity-heatmap.tsx",
+      "family": "activity-heatmap",
+      "decision": "omitted-from-this-package",
+      "reason": "Sibling chart package scope."
+    },
+    {
+      "reference": "app/src/arc/alert/alert.tsx",
+      "family": "alert",
+      "decision": "omitted-from-this-package",
+      "reason": "Atom/form/display effect outside blocks scope; no export in this package."
+    },
+    {
+      "reference": "app/src/arc/animated-counter/animated-counter.tsx",
+      "family": "animated-counter",
+      "decision": "omitted-from-this-package",
+      "reason": "Atom/form/display effect outside blocks scope; no export in this package."
+    },
+    {
+      "reference": "app/src/arc/announcement-bar/announcement-bar.tsx",
+      "family": "announcement-bar",
+      "decision": "omitted-from-this-package",
+      "reason": "Deferred complex interaction; no export or equivalence claim."
+    },
+    {
+      "reference": "app/src/arc/avatar/avatar.tsx",
+      "family": "avatar",
+      "decision": "omitted-from-this-package",
+      "reason": "Atom/form/display effect outside blocks scope; no export in this package."
+    },
+    {
+      "reference": "app/src/arc/avatar-group/avatar-group.tsx",
+      "family": "avatar-group",
+      "decision": "omitted-from-this-package",
+      "reason": "Atom/form/display effect outside blocks scope; no export in this package."
+    },
+    {
+      "reference": "app/src/arc/badge/badge.tsx",
+      "family": "badge",
+      "decision": "omitted-from-this-package",
+      "reason": "Atom/form/display effect outside blocks scope; no export in this package."
+    },
+    {
+      "reference": "app/src/arc/bar-chart/bar-chart.tsx",
+      "family": "bar-chart",
+      "decision": "omitted-from-this-package",
+      "reason": "Sibling chart package scope."
+    },
+    {
+      "reference": "app/src/arc/billing-toggle/billing-toggle.tsx",
+      "family": "billing-toggle",
+      "decision": "omitted-from-this-package",
+      "reason": "Atom/form/display effect outside blocks scope; no export in this package."
+    },
+    {
+      "reference": "app/src/arc/bottom-sheet/bottom-sheet.tsx",
+      "family": "bottom-sheet",
+      "decision": "independent-implementation",
+      "reason": "Behavior family independently implemented as SisoDrawer; no Arc source copied. Swipe/drag dismissal omitted."
+    },
+    {
+      "reference": "app/src/arc/breadcrumb/breadcrumb.tsx",
+      "family": "breadcrumb",
+      "decision": "omitted-from-this-package",
+      "reason": "Sibling navigation/atoms scope; not duplicated."
+    },
+    {
+      "reference": "app/src/arc/brush-chart/brush-chart.tsx",
+      "family": "brush-chart",
+      "decision": "omitted-from-this-package",
+      "reason": "Sibling chart package scope."
+    },
+    {
+      "reference": "app/src/arc/button/button.tsx",
+      "family": "button",
+      "decision": "omitted-from-this-package",
+      "reason": "Atom/form/display effect outside blocks scope; no export in this package."
+    },
+    {
+      "reference": "app/src/arc/button-group/button-group.tsx",
+      "family": "button-group",
+      "decision": "omitted-from-this-package",
+      "reason": "Atom/form/display effect outside blocks scope; no export in this package."
+    },
+    {
+      "reference": "app/src/arc/calendar/calendar.tsx",
+      "family": "calendar",
+      "decision": "omitted-from-this-package",
+      "reason": "Atom/form/display effect outside blocks scope; no export in this package."
+    },
+    {
+      "reference": "app/src/arc/card/card.tsx",
+      "family": "card",
+      "decision": "omitted-from-this-package",
+      "reason": "Atom/form/display effect outside blocks scope; no export in this package."
+    },
+    {
+      "reference": "app/src/arc/card-stack/card-stack.tsx",
+      "family": "card-stack",
+      "decision": "omitted-from-this-package",
+      "reason": "Deferred complex interaction; no export or equivalence claim."
+    },
+    {
+      "reference": "app/src/arc/carousel/carousel.tsx",
+      "family": "carousel",
+      "decision": "omitted-from-this-package",
+      "reason": "Deferred complex interaction; no export or equivalence claim."
+    },
+    {
+      "reference": "app/src/arc/chat-thread/chat-thread.tsx",
+      "family": "chat-thread",
+      "decision": "actual-free-source-restored",
+      "reason": "Actual original MIT/free Arc source retained under @siso/blocks/source, with original module CSS and motion."
+    },
+    {
+      "reference": "app/src/arc/checkbox/checkbox.tsx",
+      "family": "checkbox",
+      "decision": "omitted-from-this-package",
+      "reason": "Atom/form/display effect outside blocks scope; no export in this package."
+    },
+    {
+      "reference": "app/src/arc/chip-group/chip-group.tsx",
+      "family": "chip-group",
+      "decision": "omitted-from-this-package",
+      "reason": "Atom/form/display effect outside blocks scope; no export in this package."
+    },
+    {
+      "reference": "app/src/arc/code-block/code-block.tsx",
+      "family": "code-block",
+      "decision": "omitted-from-this-package",
+      "reason": "Deferred complex interaction; no export or equivalence claim."
+    },
+    {
+      "reference": "app/src/arc/color-picker/color-picker.tsx",
+      "family": "color-picker",
+      "decision": "omitted-from-this-package",
+      "reason": "Atom/form/display effect outside blocks scope; no export in this package."
+    },
+    {
+      "reference": "app/src/arc/combobox/combobox.tsx",
+      "family": "combobox",
+      "decision": "omitted-from-this-package",
+      "reason": "Atom/form/display effect outside blocks scope; no export in this package."
+    },
+    {
+      "reference": "app/src/arc/command-palette/command-palette.tsx",
+      "family": "command-palette",
+      "decision": "actual-free-source-restored",
+      "reason": "Actual original MIT/free Arc source retained under @siso/blocks/source, with original module CSS and motion."
+    },
+    {
+      "reference": "app/src/arc/comment-thread/comment-thread.tsx",
+      "family": "comment-thread",
+      "decision": "actual-free-source-restored",
+      "reason": "Actual original MIT/free Arc source retained under @siso/blocks/source, with original module CSS and motion."
+    },
+    {
+      "reference": "app/src/arc/confirm-morph/confirm-morph.tsx",
+      "family": "confirm-morph",
+      "decision": "omitted-from-this-package",
+      "reason": "Atom/form/display effect outside blocks scope; no export in this package."
+    },
+    {
+      "reference": "app/src/arc/context-menu/context-menu.tsx",
+      "family": "context-menu",
+      "decision": "omitted-from-this-package",
+      "reason": "Atom/form/display effect outside blocks scope; no export in this package."
+    },
+    {
+      "reference": "app/src/arc/copy-button/copy-button.tsx",
+      "family": "copy-button",
+      "decision": "omitted-from-this-package",
+      "reason": "Atom/form/display effect outside blocks scope; no export in this package."
+    },
+    {
+      "reference": "app/src/arc/countdown/countdown.tsx",
+      "family": "countdown",
+      "decision": "omitted-from-this-package",
+      "reason": "Atom/form/display effect outside blocks scope; no export in this package."
+    },
+    {
+      "reference": "app/src/arc/date-picker/date-picker.tsx",
+      "family": "date-picker",
+      "decision": "omitted-from-this-package",
+      "reason": "Atom/form/display effect outside blocks scope; no export in this package."
+    },
+    {
+      "reference": "app/src/arc/date-range-picker/date-range-picker.tsx",
+      "family": "date-range-picker",
+      "decision": "omitted-from-this-package",
+      "reason": "Atom/form/display effect outside blocks scope; no export in this package."
+    },
+    {
+      "reference": "app/src/arc/dialog/dialog.tsx",
+      "family": "dialog",
+      "decision": "actual-free-source-restored",
+      "reason": "Actual original MIT/free Arc source retained under @siso/blocks/source, with original module CSS and motion."
+    },
+    {
+      "reference": "app/src/arc/donut-chart/donut-chart.tsx",
+      "family": "donut-chart",
+      "decision": "omitted-from-this-package",
+      "reason": "Sibling chart package scope."
+    },
+    {
+      "reference": "app/src/arc/drawer/drawer.tsx",
+      "family": "drawer",
+      "decision": "actual-free-source-restored",
+      "reason": "Actual original MIT/free Arc source retained under @siso/blocks/source, with original module CSS and motion."
+    },
+    {
+      "reference": "app/src/arc/dropdown-menu/dropdown-menu.tsx",
+      "family": "dropdown-menu",
+      "decision": "omitted-from-this-package",
+      "reason": "Atom/form/display effect outside blocks scope; no export in this package."
+    },
+    {
+      "reference": "app/src/arc/elastic-slider/elastic-slider.tsx",
+      "family": "elastic-slider",
+      "decision": "omitted-from-this-package",
+      "reason": "Atom/form/display effect outside blocks scope; no export in this package."
+    },
+    {
+      "reference": "app/src/arc/empty-state/empty-state.tsx",
+      "family": "empty-state",
+      "decision": "actual-free-source-restored",
+      "reason": "Actual original MIT/free Arc source retained under @siso/blocks/source, with original module CSS and motion."
+    },
+    {
+      "reference": "app/src/arc/expandable-card/expandable-card.tsx",
+      "family": "expandable-card",
+      "decision": "omitted-from-this-package",
+      "reason": "Deferred complex interaction; no export or equivalence claim."
+    },
+    {
+      "reference": "app/src/arc/expanding-button-group/expanding-button-group.tsx",
+      "family": "expanding-button-group",
+      "decision": "omitted-from-this-package",
+      "reason": "Sibling navigation/atoms scope; not duplicated."
+    },
+    {
+      "reference": "app/src/arc/expanding-search/expanding-search.tsx",
+      "family": "expanding-search",
+      "decision": "omitted-from-this-package",
+      "reason": "Atom/form/display effect outside blocks scope; no export in this package."
+    },
+    {
+      "reference": "app/src/arc/file-dropzone/file-dropzone.tsx",
+      "family": "file-dropzone",
+      "decision": "actual-free-source-restored",
+      "reason": "Actual original MIT/free Arc source retained under @siso/blocks/source, with original module CSS and motion."
+    },
+    {
+      "reference": "app/src/arc/file-upload/file-upload.tsx",
+      "family": "file-upload",
+      "decision": "independent-implementation",
+      "reason": "Behavior family independently implemented as SisoFileDropzone; no Arc source copied. Upload transport and progress omitted."
+    },
+    {
+      "reference": "app/src/arc/filter-toolbar/filter-toolbar.tsx",
+      "family": "filter-toolbar",
+      "decision": "actual-free-source-restored",
+      "reason": "Actual original MIT/free Arc source retained under @siso/blocks/source, with original module CSS and motion."
+    },
+    {
+      "reference": "app/src/arc/floating-button-group/floating-button-group.tsx",
+      "family": "floating-button-group",
+      "decision": "omitted-from-this-package",
+      "reason": "Sibling navigation/atoms scope; not duplicated."
+    },
+    {
+      "reference": "app/src/arc/gauge/gauge.tsx",
+      "family": "gauge",
+      "decision": "omitted-from-this-package",
+      "reason": "Sibling chart package scope."
+    },
+    {
+      "reference": "app/src/arc/hold-to-confirm/hold-to-confirm.tsx",
+      "family": "hold-to-confirm",
+      "decision": "omitted-from-this-package",
+      "reason": "Atom/form/display effect outside blocks scope; no export in this package."
+    },
+    {
+      "reference": "app/src/arc/hover-card/hover-card.tsx",
+      "family": "hover-card",
+      "decision": "actual-free-source-restored",
+      "reason": "Actual original MIT/free Arc source retained under @siso/blocks/source, with original module CSS and motion."
+    },
+    {
+      "reference": "app/src/arc/image-compare/image-compare.tsx",
+      "family": "image-compare",
+      "decision": "omitted-from-this-package",
+      "reason": "Deferred complex interaction; no export or equivalence claim."
+    },
+    {
+      "reference": "app/src/arc/in-view-title/in-view-title.tsx",
+      "family": "in-view-title",
+      "decision": "omitted-from-this-package",
+      "reason": "Atom/form/display effect outside blocks scope; no export in this package."
+    },
+    {
+      "reference": "app/src/arc/inline-edit/inline-edit.tsx",
+      "family": "inline-edit",
+      "decision": "omitted-from-this-package",
+      "reason": "Atom/form/display effect outside blocks scope; no export in this package."
+    },
+    {
+      "reference": "app/src/arc/input/input.tsx",
+      "family": "input",
+      "decision": "omitted-from-this-package",
+      "reason": "Atom/form/display effect outside blocks scope; no export in this package."
+    },
+    {
+      "reference": "app/src/arc/json-viewer/json-viewer.tsx",
+      "family": "json-viewer",
+      "decision": "omitted-from-this-package",
+      "reason": "Deferred complex interaction; no export or equivalence claim."
+    },
+    {
+      "reference": "app/src/arc/line-chart/line-chart.tsx",
+      "family": "line-chart",
+      "decision": "omitted-from-this-package",
+      "reason": "Sibling chart package scope."
+    },
+    {
+      "reference": "app/src/arc/mention-input/mention-input.tsx",
+      "family": "mention-input",
+      "decision": "omitted-from-this-package",
+      "reason": "Deferred complex interaction; no export or equivalence claim."
+    },
+    {
+      "reference": "app/src/arc/metric-card/metric-card.tsx",
+      "family": "metric-card",
+      "decision": "omitted-from-this-package",
+      "reason": "Atom/form/display effect outside blocks scope; no export in this package."
+    },
+    {
+      "reference": "app/src/arc/money-input/money-input.tsx",
+      "family": "money-input",
+      "decision": "omitted-from-this-package",
+      "reason": "Atom/form/display effect outside blocks scope; no export in this package."
+    },
+    {
+      "reference": "app/src/arc/morph-select/morph-select.tsx",
+      "family": "morph-select",
+      "decision": "omitted-from-this-package",
+      "reason": "Atom/form/display effect outside blocks scope; no export in this package."
+    },
+    {
+      "reference": "app/src/arc/multi-select/multi-select.tsx",
+      "family": "multi-select",
+      "decision": "omitted-from-this-package",
+      "reason": "Atom/form/display effect outside blocks scope; no export in this package."
+    },
+    {
+      "reference": "app/src/arc/notification-center/notification-center.tsx",
+      "family": "notification-center",
+      "decision": "actual-free-source-restored",
+      "reason": "Actual original MIT/free Arc source retained under @siso/blocks/source, with original module CSS and motion."
+    },
+    {
+      "reference": "app/src/arc/number-field/number-field.tsx",
+      "family": "number-field",
+      "decision": "omitted-from-this-package",
+      "reason": "Atom/form/display effect outside blocks scope; no export in this package."
+    },
+    {
+      "reference": "app/src/arc/otp-input/otp-input.tsx",
+      "family": "otp-input",
+      "decision": "omitted-from-this-package",
+      "reason": "Atom/form/display effect outside blocks scope; no export in this package."
+    },
+    {
+      "reference": "app/src/arc/pagination/pagination.tsx",
+      "family": "pagination",
+      "decision": "actual-free-source-restored",
+      "reason": "Actual original MIT/free Arc source retained under @siso/blocks/source, with original module CSS and motion."
+    },
+    {
+      "reference": "app/src/arc/password-field/password-field.tsx",
+      "family": "password-field",
+      "decision": "omitted-from-this-package",
+      "reason": "Atom/form/display effect outside blocks scope; no export in this package."
+    },
+    {
+      "reference": "app/src/arc/password-strength/password-strength.tsx",
+      "family": "password-strength",
+      "decision": "omitted-from-this-package",
+      "reason": "Atom/form/display effect outside blocks scope; no export in this package."
+    },
+    {
+      "reference": "app/src/arc/phone-input/phone-input.tsx",
+      "family": "phone-input",
+      "decision": "omitted-from-this-package",
+      "reason": "Atom/form/display effect outside blocks scope; no export in this package."
+    },
+    {
+      "reference": "app/src/arc/popover/popover.tsx",
+      "family": "popover",
+      "decision": "actual-free-source-restored",
+      "reason": "Actual original MIT/free Arc source retained under @siso/blocks/source, with original module CSS and motion."
+    },
+    {
+      "reference": "app/src/arc/progress/progress.tsx",
+      "family": "progress",
+      "decision": "omitted-from-this-package",
+      "reason": "Atom/form/display effect outside blocks scope; no export in this package."
+    },
+    {
+      "reference": "app/src/arc/radio-cards/radio-cards.tsx",
+      "family": "radio-cards",
+      "decision": "omitted-from-this-package",
+      "reason": "Atom/form/display effect outside blocks scope; no export in this package."
+    },
+    {
+      "reference": "app/src/arc/radio-group/radio-group.tsx",
+      "family": "radio-group",
+      "decision": "omitted-from-this-package",
+      "reason": "Atom/form/display effect outside blocks scope; no export in this package."
+    },
+    {
+      "reference": "app/src/arc/resizable-panels/resizable-panels.tsx",
+      "family": "resizable-panels",
+      "decision": "omitted-from-this-package",
+      "reason": "Deferred complex interaction; no export or equivalence claim."
+    },
+    {
+      "reference": "app/src/arc/rich-text-editor/rich-text-editor.tsx",
+      "family": "rich-text-editor",
+      "decision": "omitted-from-this-package",
+      "reason": "Deferred complex interaction; no export or equivalence claim."
+    },
+    {
+      "reference": "app/src/arc/ridgeline/ridgeline.tsx",
+      "family": "ridgeline",
+      "decision": "omitted-from-this-package",
+      "reason": "Sibling chart package scope."
+    },
+    {
+      "reference": "app/src/arc/scroll-area/scroll-area.tsx",
+      "family": "scroll-area",
+      "decision": "omitted-from-this-package",
+      "reason": "Atom/form/display effect outside blocks scope; no export in this package."
+    },
+    {
+      "reference": "app/src/arc/search-field/search-field.tsx",
+      "family": "search-field",
+      "decision": "omitted-from-this-package",
+      "reason": "Atom/form/display effect outside blocks scope; no export in this package."
+    },
+    {
+      "reference": "app/src/arc/segmented-control/segmented-control.tsx",
+      "family": "segmented-control",
+      "decision": "omitted-from-this-package",
+      "reason": "Atom/form/display effect outside blocks scope; no export in this package."
+    },
+    {
+      "reference": "app/src/arc/select/select.tsx",
+      "family": "select",
+      "decision": "omitted-from-this-package",
+      "reason": "Atom/form/display effect outside blocks scope; no export in this package."
+    },
+    {
+      "reference": "app/src/arc/shortcut-recorder/shortcut-recorder.tsx",
+      "family": "shortcut-recorder",
+      "decision": "omitted-from-this-package",
+      "reason": "Atom/form/display effect outside blocks scope; no export in this package."
+    },
+    {
+      "reference": "app/src/arc/signature-pad/signature-pad.tsx",
+      "family": "signature-pad",
+      "decision": "omitted-from-this-package",
+      "reason": "Deferred complex interaction; no export or equivalence claim."
+    },
+    {
+      "reference": "app/src/arc/skeleton/skeleton.tsx",
+      "family": "skeleton",
+      "decision": "omitted-from-this-package",
+      "reason": "Atom/form/display effect outside blocks scope; no export in this package."
+    },
+    {
+      "reference": "app/src/arc/slider/slider.tsx",
+      "family": "slider",
+      "decision": "omitted-from-this-package",
+      "reason": "Atom/form/display effect outside blocks scope; no export in this package."
+    },
+    {
+      "reference": "app/src/arc/slope-chart/slope-chart.tsx",
+      "family": "slope-chart",
+      "decision": "omitted-from-this-package",
+      "reason": "Sibling chart package scope."
+    },
+    {
+      "reference": "app/src/arc/slot-text/slot-text.tsx",
+      "family": "slot-text",
+      "decision": "omitted-from-this-package",
+      "reason": "Atom/form/display effect outside blocks scope; no export in this package."
+    },
+    {
+      "reference": "app/src/arc/sortable-data-table/sortable-data-table.tsx",
+      "family": "sortable-data-table",
+      "decision": "actual-free-source-restored",
+      "reason": "Actual original MIT/free Arc source retained under @siso/blocks/source, with original module CSS and motion."
+    },
+    {
+      "reference": "app/src/arc/sparkline/sparkline.tsx",
+      "family": "sparkline",
+      "decision": "omitted-from-this-package",
+      "reason": "Sibling chart package scope."
+    },
+    {
+      "reference": "app/src/arc/split-button/split-button.tsx",
+      "family": "split-button",
+      "decision": "omitted-from-this-package",
+      "reason": "Atom/form/display effect outside blocks scope; no export in this package."
+    },
+    {
+      "reference": "app/src/arc/stepper/stepper.tsx",
+      "family": "stepper",
+      "decision": "omitted-from-this-package",
+      "reason": "Sibling navigation/atoms scope; not duplicated."
+    },
+    {
+      "reference": "app/src/arc/streamgraph/streamgraph.tsx",
+      "family": "streamgraph",
+      "decision": "omitted-from-this-package",
+      "reason": "Sibling chart package scope."
+    },
+    {
+      "reference": "app/src/arc/swipe-actions/swipe-actions.tsx",
+      "family": "swipe-actions",
+      "decision": "omitted-from-this-package",
+      "reason": "Deferred complex interaction; no export or equivalence claim."
+    },
+    {
+      "reference": "app/src/arc/switch/switch.tsx",
+      "family": "switch",
+      "decision": "omitted-from-this-package",
+      "reason": "Atom/form/display effect outside blocks scope; no export in this package."
+    },
+    {
+      "reference": "app/src/arc/tabs/tabs.tsx",
+      "family": "tabs",
+      "decision": "omitted-from-this-package",
+      "reason": "Sibling navigation/atoms scope; not duplicated."
+    },
+    {
+      "reference": "app/src/arc/tag-input/tag-input.tsx",
+      "family": "tag-input",
+      "decision": "omitted-from-this-package",
+      "reason": "Atom/form/display effect outside blocks scope; no export in this package."
+    },
+    {
+      "reference": "app/src/arc/text-morph/text-morph.tsx",
+      "family": "text-morph",
+      "decision": "omitted-from-this-package",
+      "reason": "Atom/form/display effect outside blocks scope; no export in this package."
+    },
+    {
+      "reference": "app/src/arc/text-reveal/text-reveal.tsx",
+      "family": "text-reveal",
+      "decision": "omitted-from-this-package",
+      "reason": "Atom/form/display effect outside blocks scope; no export in this package."
+    },
+    {
+      "reference": "app/src/arc/text-shimmer/text-shimmer.tsx",
+      "family": "text-shimmer",
+      "decision": "omitted-from-this-package",
+      "reason": "Atom/form/display effect outside blocks scope; no export in this package."
+    },
+    {
+      "reference": "app/src/arc/textarea/textarea.tsx",
+      "family": "textarea",
+      "decision": "omitted-from-this-package",
+      "reason": "Atom/form/display effect outside blocks scope; no export in this package."
+    },
+    {
+      "reference": "app/src/arc/theme-switch/theme-switch.tsx",
+      "family": "theme-switch",
+      "decision": "omitted-from-this-package",
+      "reason": "Atom/form/display effect outside blocks scope; no export in this package."
+    },
+    {
+      "reference": "app/src/arc/time-picker/time-picker.tsx",
+      "family": "time-picker",
+      "decision": "omitted-from-this-package",
+      "reason": "Atom/form/display effect outside blocks scope; no export in this package."
+    },
+    {
+      "reference": "app/src/arc/timeline/timeline.tsx",
+      "family": "timeline",
+      "decision": "actual-free-source-restored",
+      "reason": "Actual original MIT/free Arc source retained under @siso/blocks/source, with original module CSS and motion."
+    },
+    {
+      "reference": "app/src/arc/toast/toast.tsx",
+      "family": "toast",
+      "decision": "actual-free-source-restored",
+      "reason": "Actual original MIT/free Arc source retained under @siso/blocks/source, with original module CSS and motion."
+    },
+    {
+      "reference": "app/src/arc/toast-stack/toast-stack.tsx",
+      "family": "toast-stack",
+      "decision": "independent-implementation",
+      "reason": "Behavior family independently implemented as SisoToastStack; no Arc source copied."
+    },
+    {
+      "reference": "app/src/arc/tooltip/tooltip.tsx",
+      "family": "tooltip",
+      "decision": "omitted-from-this-package",
+      "reason": "Atom/form/display effect outside blocks scope; no export in this package."
+    },
+    {
+      "reference": "app/src/arc/tree-view/tree-view.tsx",
+      "family": "tree-view",
+      "decision": "omitted-from-this-package",
+      "reason": "Deferred complex interaction; no export or equivalence claim."
+    },
+    {
+      "reference": "app/src/arc/treemap/treemap.tsx",
+      "family": "treemap",
+      "decision": "omitted-from-this-package",
+      "reason": "Sibling chart package scope."
+    },
+    {
+      "reference": "app/src/arc/usage-meter/usage-meter.tsx",
+      "family": "usage-meter",
+      "decision": "omitted-from-this-package",
+      "reason": "Atom/form/display effect outside blocks scope; no export in this package."
+    },
+    {
+      "reference": "app/src/arc/user-menu/user-menu.tsx",
+      "family": "user-menu",
+      "decision": "omitted-from-this-package",
+      "reason": "Sibling navigation/atoms scope; not duplicated."
+    },
+    {
+      "reference": "app/src/arc/waffle-chart/waffle-chart.tsx",
+      "family": "waffle-chart",
+      "decision": "omitted-from-this-package",
+      "reason": "Sibling chart package scope."
+    },
+    {
+      "reference": "app/src/arc/demos/*",
+      "family": "Arc demos and marketing blocks",
+      "decision": "omitted-from-this-package",
+      "reason": "App/marketing compositions, licensed assets and factual demo data are not standalone interaction exports; no Arc demo/Pro code or media copied."
+    }
+  ],
+  "compatibilityOmissions": [
+    {
+      "family": "Arc marketing and blocks",
+      "reason": "All marketing/landing/full-app block compositions excluded; app-specific data, assets and item-level redistribution provenance remain outside this interaction package."
+    },
+    {
+      "family": "Arc Pro, Kobra, Kinetics",
+      "reason": "Reference-only; no source or assets redistributed."
+    },
+    {
+      "family": "Arc motion/physics, rich text, mentions, editor, signature, image compare, code/json viewers",
+      "reason": "Deferred; require larger behavior, sanitization, input or licensing work and separate acceptance criteria."
+    },
+    {
+      "family": "Arc file-upload transport and progress",
+      "reason": "Only dropzone validation shipped; network transport, progress, retry and cancellation remain consumer-owned."
+    },
+    {
+      "family": "Arc chat/comment reactions and mentions",
+      "reason": "Deferred; no fabricated server mutation or identity state."
+    },
+    {
+      "family": "Arc tree-view and resizable-panels",
+      "reason": "Deferred; keyboard tree semantics and drag resizing need separate focused implementation."
+    },
+    {
+      "family": "Arc atoms, date/time/form fields and selection primitives",
+      "reason": "Owned by @siso/atoms or future form package; not duplicated."
+    },
+    {
+      "family": "Arc charts, navigation and shells",
+      "reason": "Owned by sibling suite packages; not duplicated."
+    },
+    {
+      "family": "Arc toast",
+      "reason": "Covered by SisoToastStack, not a separate duplicate family."
+    },
+    {
+      "family": "Arc bottom-sheet",
+      "reason": "Covered by SisoDrawer side=bottom without drag/swipe dismissal."
+    }
+  ],
+  "sourceOmissions": [
+    {
+      "family": "Arc Pro, Kobra, Kinetics",
+      "reason": "Never copied; free-tier check applied to every main and support component."
+    },
+    {
+      "family": "toast-stack, tree-view, resizable-panels, editors, marketing blocks",
+      "reason": "Outside this bounded 15-family restoration; no simplified substitute claimed."
+    },
+    {
+      "family": "Arc demo portraits/photos",
+      "reason": "No media copied; two portrait references use owned SISO mark."
+    }
+  ],
+  "sourceChecks": [
+    {
+      "check": "strict TypeScript source, root compatibility and all original demos",
+      "result": "pass",
+      "files": 45,
+      "diagnostics": 0
+    },
+    {
+      "check": "all 15 complete original demos server-render with source scope; CSS imports mocked for SSR",
+      "result": "pass"
+    },
+    {
+      "check": "free tier, source/adapted hashes, exact CSS modules and owned media substitution",
+      "result": "pass",
+      "cssModules": 17,
+      "sourceFiles": 38,
+      "demos": 15
+    }
+  ],
+  "omitted": [
+    {
+      "family": "Arc Pro, Kobra, Kinetics",
+      "reason": "Never copied; free-tier check applied to every main and support component."
+    },
+    {
+      "family": "toast-stack, tree-view, resizable-panels, editors, marketing blocks",
+      "reason": "Outside this bounded 15-family restoration; no simplified substitute claimed."
+    },
+    {
+      "family": "Arc demo portraits/photos",
+      "reason": "No media copied; two portrait references use owned SISO mark."
+    }
+  ],
+  "sourceCoverage": [
+    {
+      "reference": "app/src/arc/accordion/accordion.tsx",
+      "family": "accordion",
+      "decision": "omitted-from-this-package",
+      "reason": "Atom/form/display effect outside blocks scope; no export in this package."
+    },
+    {
+      "reference": "app/src/arc/action-button/action-button.tsx",
+      "family": "action-button",
+      "decision": "omitted-from-this-package",
+      "reason": "Atom/form/display effect outside blocks scope; no export in this package."
+    },
+    {
+      "reference": "app/src/arc/activity-heatmap/activity-heatmap.tsx",
+      "family": "activity-heatmap",
+      "decision": "omitted-from-this-package",
+      "reason": "Sibling chart package scope."
+    },
+    {
+      "reference": "app/src/arc/alert/alert.tsx",
+      "family": "alert",
+      "decision": "omitted-from-this-package",
+      "reason": "Atom/form/display effect outside blocks scope; no export in this package."
+    },
+    {
+      "reference": "app/src/arc/animated-counter/animated-counter.tsx",
+      "family": "animated-counter",
+      "decision": "omitted-from-this-package",
+      "reason": "Atom/form/display effect outside blocks scope; no export in this package."
+    },
+    {
+      "reference": "app/src/arc/announcement-bar/announcement-bar.tsx",
+      "family": "announcement-bar",
+      "decision": "omitted-from-this-package",
+      "reason": "Deferred complex interaction; no export or equivalence claim."
+    },
+    {
+      "reference": "app/src/arc/avatar/avatar.tsx",
+      "family": "avatar",
+      "decision": "omitted-from-this-package",
+      "reason": "Atom/form/display effect outside blocks scope; no export in this package."
+    },
+    {
+      "reference": "app/src/arc/avatar-group/avatar-group.tsx",
+      "family": "avatar-group",
+      "decision": "omitted-from-this-package",
+      "reason": "Atom/form/display effect outside blocks scope; no export in this package."
+    },
+    {
+      "reference": "app/src/arc/badge/badge.tsx",
+      "family": "badge",
+      "decision": "omitted-from-this-package",
+      "reason": "Atom/form/display effect outside blocks scope; no export in this package."
+    },
+    {
+      "reference": "app/src/arc/bar-chart/bar-chart.tsx",
+      "family": "bar-chart",
+      "decision": "omitted-from-this-package",
+      "reason": "Sibling chart package scope."
+    },
+    {
+      "reference": "app/src/arc/billing-toggle/billing-toggle.tsx",
+      "family": "billing-toggle",
+      "decision": "omitted-from-this-package",
+      "reason": "Atom/form/display effect outside blocks scope; no export in this package."
+    },
+    {
+      "reference": "app/src/arc/bottom-sheet/bottom-sheet.tsx",
+      "family": "bottom-sheet",
+      "decision": "independent-implementation",
+      "reason": "Behavior family independently implemented as SisoDrawer; no Arc source copied. Swipe/drag dismissal omitted."
+    },
+    {
+      "reference": "app/src/arc/breadcrumb/breadcrumb.tsx",
+      "family": "breadcrumb",
+      "decision": "omitted-from-this-package",
+      "reason": "Sibling navigation/atoms scope; not duplicated."
+    },
+    {
+      "reference": "app/src/arc/brush-chart/brush-chart.tsx",
+      "family": "brush-chart",
+      "decision": "omitted-from-this-package",
+      "reason": "Sibling chart package scope."
+    },
+    {
+      "reference": "app/src/arc/button/button.tsx",
+      "family": "button",
+      "decision": "omitted-from-this-package",
+      "reason": "Atom/form/display effect outside blocks scope; no export in this package."
+    },
+    {
+      "reference": "app/src/arc/button-group/button-group.tsx",
+      "family": "button-group",
+      "decision": "omitted-from-this-package",
+      "reason": "Atom/form/display effect outside blocks scope; no export in this package."
+    },
+    {
+      "reference": "app/src/arc/calendar/calendar.tsx",
+      "family": "calendar",
+      "decision": "omitted-from-this-package",
+      "reason": "Atom/form/display effect outside blocks scope; no export in this package."
+    },
+    {
+      "reference": "app/src/arc/card/card.tsx",
+      "family": "card",
+      "decision": "omitted-from-this-package",
+      "reason": "Atom/form/display effect outside blocks scope; no export in this package."
+    },
+    {
+      "reference": "app/src/arc/card-stack/card-stack.tsx",
+      "family": "card-stack",
+      "decision": "omitted-from-this-package",
+      "reason": "Deferred complex interaction; no export or equivalence claim."
+    },
+    {
+      "reference": "app/src/arc/carousel/carousel.tsx",
+      "family": "carousel",
+      "decision": "omitted-from-this-package",
+      "reason": "Deferred complex interaction; no export or equivalence claim."
+    },
+    {
+      "reference": "app/src/arc/chat-thread/chat-thread.tsx",
+      "family": "chat-thread",
+      "decision": "actual-free-source-restored",
+      "reason": "Actual original MIT/free Arc source retained under @siso/blocks/source, with original module CSS and motion."
+    },
+    {
+      "reference": "app/src/arc/checkbox/checkbox.tsx",
+      "family": "checkbox",
+      "decision": "omitted-from-this-package",
+      "reason": "Atom/form/display effect outside blocks scope; no export in this package."
+    },
+    {
+      "reference": "app/src/arc/chip-group/chip-group.tsx",
+      "family": "chip-group",
+      "decision": "omitted-from-this-package",
+      "reason": "Atom/form/display effect outside blocks scope; no export in this package."
+    },
+    {
+      "reference": "app/src/arc/code-block/code-block.tsx",
+      "family": "code-block",
+      "decision": "omitted-from-this-package",
+      "reason": "Deferred complex interaction; no export or equivalence claim."
+    },
+    {
+      "reference": "app/src/arc/color-picker/color-picker.tsx",
+      "family": "color-picker",
+      "decision": "omitted-from-this-package",
+      "reason": "Atom/form/display effect outside blocks scope; no export in this package."
+    },
+    {
+      "reference": "app/src/arc/combobox/combobox.tsx",
+      "family": "combobox",
+      "decision": "omitted-from-this-package",
+      "reason": "Atom/form/display effect outside blocks scope; no export in this package."
+    },
+    {
+      "reference": "app/src/arc/command-palette/command-palette.tsx",
+      "family": "command-palette",
+      "decision": "actual-free-source-restored",
+      "reason": "Actual original MIT/free Arc source retained under @siso/blocks/source, with original module CSS and motion."
+    },
+    {
+      "reference": "app/src/arc/comment-thread/comment-thread.tsx",
+      "family": "comment-thread",
+      "decision": "actual-free-source-restored",
+      "reason": "Actual original MIT/free Arc source retained under @siso/blocks/source, with original module CSS and motion."
+    },
+    {
+      "reference": "app/src/arc/confirm-morph/confirm-morph.tsx",
+      "family": "confirm-morph",
+      "decision": "omitted-from-this-package",
+      "reason": "Atom/form/display effect outside blocks scope; no export in this package."
+    },
+    {
+      "reference": "app/src/arc/context-menu/context-menu.tsx",
+      "family": "context-menu",
+      "decision": "omitted-from-this-package",
+      "reason": "Atom/form/display effect outside blocks scope; no export in this package."
+    },
+    {
+      "reference": "app/src/arc/copy-button/copy-button.tsx",
+      "family": "copy-button",
+      "decision": "omitted-from-this-package",
+      "reason": "Atom/form/display effect outside blocks scope; no export in this package."
+    },
+    {
+      "reference": "app/src/arc/countdown/countdown.tsx",
+      "family": "countdown",
+      "decision": "omitted-from-this-package",
+      "reason": "Atom/form/display effect outside blocks scope; no export in this package."
+    },
+    {
+      "reference": "app/src/arc/date-picker/date-picker.tsx",
+      "family": "date-picker",
+      "decision": "omitted-from-this-package",
+      "reason": "Atom/form/display effect outside blocks scope; no export in this package."
+    },
+    {
+      "reference": "app/src/arc/date-range-picker/date-range-picker.tsx",
+      "family": "date-range-picker",
+      "decision": "omitted-from-this-package",
+      "reason": "Atom/form/display effect outside blocks scope; no export in this package."
+    },
+    {
+      "reference": "app/src/arc/dialog/dialog.tsx",
+      "family": "dialog",
+      "decision": "actual-free-source-restored",
+      "reason": "Actual original MIT/free Arc source retained under @siso/blocks/source, with original module CSS and motion."
+    },
+    {
+      "reference": "app/src/arc/donut-chart/donut-chart.tsx",
+      "family": "donut-chart",
+      "decision": "omitted-from-this-package",
+      "reason": "Sibling chart package scope."
+    },
+    {
+      "reference": "app/src/arc/drawer/drawer.tsx",
+      "family": "drawer",
+      "decision": "actual-free-source-restored",
+      "reason": "Actual original MIT/free Arc source retained under @siso/blocks/source, with original module CSS and motion."
+    },
+    {
+      "reference": "app/src/arc/dropdown-menu/dropdown-menu.tsx",
+      "family": "dropdown-menu",
+      "decision": "omitted-from-this-package",
+      "reason": "Atom/form/display effect outside blocks scope; no export in this package."
+    },
+    {
+      "reference": "app/src/arc/elastic-slider/elastic-slider.tsx",
+      "family": "elastic-slider",
+      "decision": "omitted-from-this-package",
+      "reason": "Atom/form/display effect outside blocks scope; no export in this package."
+    },
+    {
+      "reference": "app/src/arc/empty-state/empty-state.tsx",
+      "family": "empty-state",
+      "decision": "actual-free-source-restored",
+      "reason": "Actual original MIT/free Arc source retained under @siso/blocks/source, with original module CSS and motion."
+    },
+    {
+      "reference": "app/src/arc/expandable-card/expandable-card.tsx",
+      "family": "expandable-card",
+      "decision": "omitted-from-this-package",
+      "reason": "Deferred complex interaction; no export or equivalence claim."
+    },
+    {
+      "reference": "app/src/arc/expanding-button-group/expanding-button-group.tsx",
+      "family": "expanding-button-group",
+      "decision": "omitted-from-this-package",
+      "reason": "Sibling navigation/atoms scope; not duplicated."
+    },
+    {
+      "reference": "app/src/arc/expanding-search/expanding-search.tsx",
+      "family": "expanding-search",
+      "decision": "omitted-from-this-package",
+      "reason": "Atom/form/display effect outside blocks scope; no export in this package."
+    },
+    {
+      "reference": "app/src/arc/file-dropzone/file-dropzone.tsx",
+      "family": "file-dropzone",
+      "decision": "actual-free-source-restored",
+      "reason": "Actual original MIT/free Arc source retained under @siso/blocks/source, with original module CSS and motion."
+    },
+    {
+      "reference": "app/src/arc/file-upload/file-upload.tsx",
+      "family": "file-upload",
+      "decision": "independent-implementation",
+      "reason": "Behavior family independently implemented as SisoFileDropzone; no Arc source copied. Upload transport and progress omitted."
+    },
+    {
+      "reference": "app/src/arc/filter-toolbar/filter-toolbar.tsx",
+      "family": "filter-toolbar",
+      "decision": "actual-free-source-restored",
+      "reason": "Actual original MIT/free Arc source retained under @siso/blocks/source, with original module CSS and motion."
+    },
+    {
+      "reference": "app/src/arc/floating-button-group/floating-button-group.tsx",
+      "family": "floating-button-group",
+      "decision": "omitted-from-this-package",
+      "reason": "Sibling navigation/atoms scope; not duplicated."
+    },
+    {
+      "reference": "app/src/arc/gauge/gauge.tsx",
+      "family": "gauge",
+      "decision": "omitted-from-this-package",
+      "reason": "Sibling chart package scope."
+    },
+    {
+      "reference": "app/src/arc/hold-to-confirm/hold-to-confirm.tsx",
+      "family": "hold-to-confirm",
+      "decision": "omitted-from-this-package",
+      "reason": "Atom/form/display effect outside blocks scope; no export in this package."
+    },
+    {
+      "reference": "app/src/arc/hover-card/hover-card.tsx",
+      "family": "hover-card",
+      "decision": "actual-free-source-restored",
+      "reason": "Actual original MIT/free Arc source retained under @siso/blocks/source, with original module CSS and motion."
+    },
+    {
+      "reference": "app/src/arc/image-compare/image-compare.tsx",
+      "family": "image-compare",
+      "decision": "omitted-from-this-package",
+      "reason": "Deferred complex interaction; no export or equivalence claim."
+    },
+    {
+      "reference": "app/src/arc/in-view-title/in-view-title.tsx",
+      "family": "in-view-title",
+      "decision": "omitted-from-this-package",
+      "reason": "Atom/form/display effect outside blocks scope; no export in this package."
+    },
+    {
+      "reference": "app/src/arc/inline-edit/inline-edit.tsx",
+      "family": "inline-edit",
+      "decision": "omitted-from-this-package",
+      "reason": "Atom/form/display effect outside blocks scope; no export in this package."
+    },
+    {
+      "reference": "app/src/arc/input/input.tsx",
+      "family": "input",
+      "decision": "omitted-from-this-package",
+      "reason": "Atom/form/display effect outside blocks scope; no export in this package."
+    },
+    {
+      "reference": "app/src/arc/json-viewer/json-viewer.tsx",
+      "family": "json-viewer",
+      "decision": "omitted-from-this-package",
+      "reason": "Deferred complex interaction; no export or equivalence claim."
+    },
+    {
+      "reference": "app/src/arc/line-chart/line-chart.tsx",
+      "family": "line-chart",
+      "decision": "omitted-from-this-package",
+      "reason": "Sibling chart package scope."
+    },
+    {
+      "reference": "app/src/arc/mention-input/mention-input.tsx",
+      "family": "mention-input",
+      "decision": "omitted-from-this-package",
+      "reason": "Deferred complex interaction; no export or equivalence claim."
+    },
+    {
+      "reference": "app/src/arc/metric-card/metric-card.tsx",
+      "family": "metric-card",
+      "decision": "omitted-from-this-package",
+      "reason": "Atom/form/display effect outside blocks scope; no export in this package."
+    },
+    {
+      "reference": "app/src/arc/money-input/money-input.tsx",
+      "family": "money-input",
+      "decision": "omitted-from-this-package",
+      "reason": "Atom/form/display effect outside blocks scope; no export in this package."
+    },
+    {
+      "reference": "app/src/arc/morph-select/morph-select.tsx",
+      "family": "morph-select",
+      "decision": "omitted-from-this-package",
+      "reason": "Atom/form/display effect outside blocks scope; no export in this package."
+    },
+    {
+      "reference": "app/src/arc/multi-select/multi-select.tsx",
+      "family": "multi-select",
+      "decision": "omitted-from-this-package",
+      "reason": "Atom/form/display effect outside blocks scope; no export in this package."
+    },
+    {
+      "reference": "app/src/arc/notification-center/notification-center.tsx",
+      "family": "notification-center",
+      "decision": "actual-free-source-restored",
+      "reason": "Actual original MIT/free Arc source retained under @siso/blocks/source, with original module CSS and motion."
+    },
+    {
+      "reference": "app/src/arc/number-field/number-field.tsx",
+      "family": "number-field",
+      "decision": "omitted-from-this-package",
+      "reason": "Atom/form/display effect outside blocks scope; no export in this package."
+    },
+    {
+      "reference": "app/src/arc/otp-input/otp-input.tsx",
+      "family": "otp-input",
+      "decision": "omitted-from-this-package",
+      "reason": "Atom/form/display effect outside blocks scope; no export in this package."
+    },
+    {
+      "reference": "app/src/arc/pagination/pagination.tsx",
+      "family": "pagination",
+      "decision": "actual-free-source-restored",
+      "reason": "Actual original MIT/free Arc source retained under @siso/blocks/source, with original module CSS and motion."
+    },
+    {
+      "reference": "app/src/arc/password-field/password-field.tsx",
+      "family": "password-field",
+      "decision": "omitted-from-this-package",
+      "reason": "Atom/form/display effect outside blocks scope; no export in this package."
+    },
+    {
+      "reference": "app/src/arc/password-strength/password-strength.tsx",
+      "family": "password-strength",
+      "decision": "omitted-from-this-package",
+      "reason": "Atom/form/display effect outside blocks scope; no export in this package."
+    },
+    {
+      "reference": "app/src/arc/phone-input/phone-input.tsx",
+      "family": "phone-input",
+      "decision": "omitted-from-this-package",
+      "reason": "Atom/form/display effect outside blocks scope; no export in this package."
+    },
+    {
+      "reference": "app/src/arc/popover/popover.tsx",
+      "family": "popover",
+      "decision": "actual-free-source-restored",
+      "reason": "Actual original MIT/free Arc source retained under @siso/blocks/source, with original module CSS and motion."
+    },
+    {
+      "reference": "app/src/arc/progress/progress.tsx",
+      "family": "progress",
+      "decision": "omitted-from-this-package",
+      "reason": "Atom/form/display effect outside blocks scope; no export in this package."
+    },
+    {
+      "reference": "app/src/arc/radio-cards/radio-cards.tsx",
+      "family": "radio-cards",
+      "decision": "omitted-from-this-package",
+      "reason": "Atom/form/display effect outside blocks scope; no export in this package."
+    },
+    {
+      "reference": "app/src/arc/radio-group/radio-group.tsx",
+      "family": "radio-group",
+      "decision": "omitted-from-this-package",
+      "reason": "Atom/form/display effect outside blocks scope; no export in this package."
+    },
+    {
+      "reference": "app/src/arc/resizable-panels/resizable-panels.tsx",
+      "family": "resizable-panels",
+      "decision": "omitted-from-this-package",
+      "reason": "Deferred complex interaction; no export or equivalence claim."
+    },
+    {
+      "reference": "app/src/arc/rich-text-editor/rich-text-editor.tsx",
+      "family": "rich-text-editor",
+      "decision": "omitted-from-this-package",
+      "reason": "Deferred complex interaction; no export or equivalence claim."
+    },
+    {
+      "reference": "app/src/arc/ridgeline/ridgeline.tsx",
+      "family": "ridgeline",
+      "decision": "omitted-from-this-package",
+      "reason": "Sibling chart package scope."
+    },
+    {
+      "reference": "app/src/arc/scroll-area/scroll-area.tsx",
+      "family": "scroll-area",
+      "decision": "omitted-from-this-package",
+      "reason": "Atom/form/display effect outside blocks scope; no export in this package."
+    },
+    {
+      "reference": "app/src/arc/search-field/search-field.tsx",
+      "family": "search-field",
+      "decision": "omitted-from-this-package",
+      "reason": "Atom/form/display effect outside blocks scope; no export in this package."
+    },
+    {
+      "reference": "app/src/arc/segmented-control/segmented-control.tsx",
+      "family": "segmented-control",
+      "decision": "omitted-from-this-package",
+      "reason": "Atom/form/display effect outside blocks scope; no export in this package."
+    },
+    {
+      "reference": "app/src/arc/select/select.tsx",
+      "family": "select",
+      "decision": "omitted-from-this-package",
+      "reason": "Atom/form/display effect outside blocks scope; no export in this package."
+    },
+    {
+      "reference": "app/src/arc/shortcut-recorder/shortcut-recorder.tsx",
+      "family": "shortcut-recorder",
+      "decision": "omitted-from-this-package",
+      "reason": "Atom/form/display effect outside blocks scope; no export in this package."
+    },
+    {
+      "reference": "app/src/arc/signature-pad/signature-pad.tsx",
+      "family": "signature-pad",
+      "decision": "omitted-from-this-package",
+      "reason": "Deferred complex interaction; no export or equivalence claim."
+    },
+    {
+      "reference": "app/src/arc/skeleton/skeleton.tsx",
+      "family": "skeleton",
+      "decision": "omitted-from-this-package",
+      "reason": "Atom/form/display effect outside blocks scope; no export in this package."
+    },
+    {
+      "reference": "app/src/arc/slider/slider.tsx",
+      "family": "slider",
+      "decision": "omitted-from-this-package",
+      "reason": "Atom/form/display effect outside blocks scope; no export in this package."
+    },
+    {
+      "reference": "app/src/arc/slope-chart/slope-chart.tsx",
+      "family": "slope-chart",
+      "decision": "omitted-from-this-package",
+      "reason": "Sibling chart package scope."
+    },
+    {
+      "reference": "app/src/arc/slot-text/slot-text.tsx",
+      "family": "slot-text",
+      "decision": "omitted-from-this-package",
+      "reason": "Atom/form/display effect outside blocks scope; no export in this package."
+    },
+    {
+      "reference": "app/src/arc/sortable-data-table/sortable-data-table.tsx",
+      "family": "sortable-data-table",
+      "decision": "actual-free-source-restored",
+      "reason": "Actual original MIT/free Arc source retained under @siso/blocks/source, with original module CSS and motion."
+    },
+    {
+      "reference": "app/src/arc/sparkline/sparkline.tsx",
+      "family": "sparkline",
+      "decision": "omitted-from-this-package",
+      "reason": "Sibling chart package scope."
+    },
+    {
+      "reference": "app/src/arc/split-button/split-button.tsx",
+      "family": "split-button",
+      "decision": "omitted-from-this-package",
+      "reason": "Atom/form/display effect outside blocks scope; no export in this package."
+    },
+    {
+      "reference": "app/src/arc/stepper/stepper.tsx",
+      "family": "stepper",
+      "decision": "omitted-from-this-package",
+      "reason": "Sibling navigation/atoms scope; not duplicated."
+    },
+    {
+      "reference": "app/src/arc/streamgraph/streamgraph.tsx",
+      "family": "streamgraph",
+      "decision": "omitted-from-this-package",
+      "reason": "Sibling chart package scope."
+    },
+    {
+      "reference": "app/src/arc/swipe-actions/swipe-actions.tsx",
+      "family": "swipe-actions",
+      "decision": "omitted-from-this-package",
+      "reason": "Deferred complex interaction; no export or equivalence claim."
+    },
+    {
+      "reference": "app/src/arc/switch/switch.tsx",
+      "family": "switch",
+      "decision": "omitted-from-this-package",
+      "reason": "Atom/form/display effect outside blocks scope; no export in this package."
+    },
+    {
+      "reference": "app/src/arc/tabs/tabs.tsx",
+      "family": "tabs",
+      "decision": "omitted-from-this-package",
+      "reason": "Sibling navigation/atoms scope; not duplicated."
+    },
+    {
+      "reference": "app/src/arc/tag-input/tag-input.tsx",
+      "family": "tag-input",
+      "decision": "omitted-from-this-package",
+      "reason": "Atom/form/display effect outside blocks scope; no export in this package."
+    },
+    {
+      "reference": "app/src/arc/text-morph/text-morph.tsx",
+      "family": "text-morph",
+      "decision": "omitted-from-this-package",
+      "reason": "Atom/form/display effect outside blocks scope; no export in this package."
+    },
+    {
+      "reference": "app/src/arc/text-reveal/text-reveal.tsx",
+      "family": "text-reveal",
+      "decision": "omitted-from-this-package",
+      "reason": "Atom/form/display effect outside blocks scope; no export in this package."
+    },
+    {
+      "reference": "app/src/arc/text-shimmer/text-shimmer.tsx",
+      "family": "text-shimmer",
+      "decision": "omitted-from-this-package",
+      "reason": "Atom/form/display effect outside blocks scope; no export in this package."
+    },
+    {
+      "reference": "app/src/arc/textarea/textarea.tsx",
+      "family": "textarea",
+      "decision": "omitted-from-this-package",
+      "reason": "Atom/form/display effect outside blocks scope; no export in this package."
+    },
+    {
+      "reference": "app/src/arc/theme-switch/theme-switch.tsx",
+      "family": "theme-switch",
+      "decision": "omitted-from-this-package",
+      "reason": "Atom/form/display effect outside blocks scope; no export in this package."
+    },
+    {
+      "reference": "app/src/arc/time-picker/time-picker.tsx",
+      "family": "time-picker",
+      "decision": "omitted-from-this-package",
+      "reason": "Atom/form/display effect outside blocks scope; no export in this package."
+    },
+    {
+      "reference": "app/src/arc/timeline/timeline.tsx",
+      "family": "timeline",
+      "decision": "actual-free-source-restored",
+      "reason": "Actual original MIT/free Arc source retained under @siso/blocks/source, with original module CSS and motion."
+    },
+    {
+      "reference": "app/src/arc/toast/toast.tsx",
+      "family": "toast",
+      "decision": "actual-free-source-restored",
+      "reason": "Actual original MIT/free Arc source retained under @siso/blocks/source, with original module CSS and motion."
+    },
+    {
+      "reference": "app/src/arc/toast-stack/toast-stack.tsx",
+      "family": "toast-stack",
+      "decision": "independent-implementation",
+      "reason": "Behavior family independently implemented as SisoToastStack; no Arc source copied."
+    },
+    {
+      "reference": "app/src/arc/tooltip/tooltip.tsx",
+      "family": "tooltip",
+      "decision": "omitted-from-this-package",
+      "reason": "Atom/form/display effect outside blocks scope; no export in this package."
+    },
+    {
+      "reference": "app/src/arc/tree-view/tree-view.tsx",
+      "family": "tree-view",
+      "decision": "omitted-from-this-package",
+      "reason": "Deferred complex interaction; no export or equivalence claim."
+    },
+    {
+      "reference": "app/src/arc/treemap/treemap.tsx",
+      "family": "treemap",
+      "decision": "omitted-from-this-package",
+      "reason": "Sibling chart package scope."
+    },
+    {
+      "reference": "app/src/arc/usage-meter/usage-meter.tsx",
+      "family": "usage-meter",
+      "decision": "omitted-from-this-package",
+      "reason": "Atom/form/display effect outside blocks scope; no export in this package."
+    },
+    {
+      "reference": "app/src/arc/user-menu/user-menu.tsx",
+      "family": "user-menu",
+      "decision": "omitted-from-this-package",
+      "reason": "Sibling navigation/atoms scope; not duplicated."
+    },
+    {
+      "reference": "app/src/arc/waffle-chart/waffle-chart.tsx",
+      "family": "waffle-chart",
+      "decision": "omitted-from-this-package",
+      "reason": "Sibling chart package scope."
+    },
+    {
+      "reference": "app/src/arc/demos/*",
+      "family": "Arc demos and marketing blocks",
+      "decision": "omitted-from-this-package",
+      "reason": "App/marketing compositions, licensed assets and factual demo data are not standalone interaction exports; no Arc demo/Pro code or media copied."
+    }
+  ],
+  "omittedFamilies": [],
+  "relatedFamilyCoverage": [],
+  "arcInstallTargetCount": 63
+}

@@ -1,6 +1,6 @@
 # siso-ui-hub
 
-**In one line:** SISO's one UI hub: the rules (ADRs), the catalogue every project takes its components from, the three kinds of surface, the verticals, and an inventory of every component in every project. Owner: UI-HUB (Opus). District: `Great_Library_of_SISO` (`~/SISO_Workspace/Great_Library_of_SISO/banks/siso-ui-hub`).
+**In one line:** SISO's shared UI kit, design rules and component catalogue. Owner: UI-HUB. Canonical source: `platform/ui` in `sisodias/siso`; the catalog application is `hubs/ui`. Follow root ADRs 0021–0022: products consume shared packages, and the old standalone repo is provenance rather than a second writable source.
 
 ## Before you build any UI (in any SISO project)
 
@@ -26,7 +26,7 @@
 
 ## Tools (`bin/`, no model, no network unless noted)
 
-- `bin/uihub brief|find|show|check|add`: the hub from a shell (see step 0 and 4 above; `bin/uihub --help`). `check` also takes `--repo DIR --base SHA --ref REF --prefix src/` for a project with no inventory yet. `uihub check <url> [--surface dashboard|native-app|landing-site|doc] [--width 390] [--wait 8]` checks a rendered page against the rules a script can see (`bin/pagecheck.js` in a camofox tab, one screenshot; exit 1 on a failure).
+- `bin/uihub brief|find|show|check|add`: the hub from a shell (see step 0 and 4 above; `bin/uihub --help`). `check` also takes `--repo DIR --base SHA --ref REF --prefix src/` for a project with no inventory yet. `uihub check <url> [--surface dashboard|native-app|landing-site|doc] [--width 390] [--wait 8]` checks a rendered page against the rules a script can see (`bin/pagecheck.js` in a camofox tab, one screenshot; exit 1 on a failure). Wrap product-art mockups and live component demos in `data-uihub-exempt` and the check skips them.
 - `bin/census <project> <repo> <ref> <prefix> [--alias @=dir] [--pages RX] [--names-only]`: every component at a git ref, read from git without a checkout; imports followed by name through index files. Command lines per project: `inventory/README.md`.
 - `bin/fingerprint <project>...`: where each component came from (MinHash against 5,940 references).
 - `bin/inventory`: joins census, fingerprints, AB-MAP grades and picks into `inventory/*.jsonl` and `summary.json`.

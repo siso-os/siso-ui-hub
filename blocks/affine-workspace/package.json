@@ -1,0 +1,19 @@
+{
+  "name": "@siso/block-affine-workspace",
+  "version": "0.2.0",
+  "private": true,
+  "type": "module",
+  "description": "Reusable Actionist compound block for an assimilated AFFiNE module and donor-native knowledge runtime.",
+  "scripts": {
+    "validate:source": "node scripts/validate.mjs",
+    "bind": "node scripts/bind.mjs",
+    "install:source": "node scripts/install.mjs",
+    "install-release": "node scripts/install-release.mjs",
+    "verify-release": "node scripts/verify-release.mjs",
+    "verify-installed": "node scripts/verify-installed.mjs",
+    "rollback-release": "node scripts/rollback-release.mjs",
+    "make-release": "node scripts/make-release.mjs",
+    "test": "node --test tests/release.test.mjs",
+    "test:source": "node --test tests/smoke.test.mjs tests/build.test.mjs"
+  }
+}

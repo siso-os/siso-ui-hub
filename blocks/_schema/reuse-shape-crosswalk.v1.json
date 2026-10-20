@@ -1,0 +1,115 @@
+{
+  "schema_version": "actionist.reuse-shape-crosswalk.v1",
+  "status": "source_backed_no_automatic_collapse",
+  "sources": {
+    "canonical_synthesis": "research/actionmodel-builder-research-2026-08-26/FIRST-PRINCIPLES-DOMAIN-MAP.md#d06--reuse-shape-and-ownership-decision",
+    "p04_contract": "research/workstreams/p04-repo-to-module-framework/runs/2026-08-27-sprint-2-opus/module-contract-family.json#records.PackagingProfile",
+    "p04_reconciliation": "research/workstreams/p04-repo-to-module-framework/runs/2026-08-27-sprint-2-opus/repo-to-module-framework.md#22-the-vocabulary-collision-resolved",
+    "manifest_v2": "blocks/_schema/actionist-block.v2.schema.json#/properties/reuse"
+  },
+  "rules": [
+    "reuse_shape is the architecture axis; rights_exposure is a separate source-copying axis",
+    "null manifest projections are HOLD, never aliases",
+    "legacy manifest values require an explicit later vocabulary decision and are never reverse-inferred"
+  ],
+  "architecture_shapes": [
+    {
+      "p04_shape": "intact_service",
+      "canonical_synthesis_shape": "service",
+      "canonical_relation": "normalized_exact",
+      "manifest_v2_shape": "intact_service",
+      "manifest_relation": "exact"
+    },
+    {
+      "p04_shape": "intact_fork",
+      "canonical_synthesis_shape": null,
+      "canonical_relation": "p04_extension",
+      "manifest_v2_shape": null,
+      "manifest_relation": "unmapped"
+    },
+    {
+      "p04_shape": "embedded_module",
+      "canonical_synthesis_shape": "embedded_module",
+      "canonical_relation": "normalized_exact",
+      "manifest_v2_shape": null,
+      "manifest_relation": "unmapped"
+    },
+    {
+      "p04_shape": "transplant",
+      "canonical_synthesis_shape": "transplant",
+      "canonical_relation": "normalized_exact",
+      "manifest_v2_shape": null,
+      "manifest_relation": "unmapped"
+    },
+    {
+      "p04_shape": "extracted_package",
+      "canonical_synthesis_shape": "extracted_package",
+      "canonical_relation": "normalized_exact",
+      "manifest_v2_shape": "extracted_package",
+      "manifest_relation": "exact"
+    },
+    {
+      "p04_shape": "adapter",
+      "canonical_synthesis_shape": "adapter",
+      "canonical_relation": "normalized_exact",
+      "manifest_v2_shape": null,
+      "manifest_relation": "unmapped"
+    },
+    {
+      "p04_shape": "generated_from_pattern",
+      "canonical_synthesis_shape": "generated_pattern",
+      "canonical_relation": "normalized_exact",
+      "manifest_v2_shape": null,
+      "manifest_relation": "unmapped"
+    },
+    {
+      "p04_shape": "template",
+      "canonical_synthesis_shape": "template",
+      "canonical_relation": "exact",
+      "manifest_v2_shape": null,
+      "manifest_relation": "unmapped"
+    },
+    {
+      "p04_shape": "custom_delta",
+      "canonical_synthesis_shape": "custom_delta",
+      "canonical_relation": "normalized_exact",
+      "manifest_v2_shape": null,
+      "manifest_relation": "unmapped"
+    },
+    {
+      "p04_shape": "reference_only",
+      "canonical_synthesis_shape": null,
+      "canonical_relation": "p04_extension",
+      "manifest_v2_shape": null,
+      "manifest_relation": "unmapped"
+    }
+  ],
+  "rights_exposures": [
+    {
+      "p04_rights_exposure": "none_coordinate_only",
+      "manifest_v2_rights_exposure": null,
+      "manifest_relation": "unmapped"
+    },
+    {
+      "p04_rights_exposure": "none_network_only",
+      "manifest_v2_rights_exposure": "none_network_only",
+      "manifest_relation": "exact"
+    },
+    {
+      "p04_rights_exposure": "source_copied",
+      "manifest_v2_rights_exposure": null,
+      "manifest_relation": "incompatible_axis_vocabulary"
+    },
+    {
+      "p04_rights_exposure": "nothing_copied_specification_only",
+      "manifest_v2_rights_exposure": null,
+      "manifest_relation": "unmapped"
+    }
+  ],
+  "unmapped_manifest_v2_shapes": [
+    "absorbed_native",
+    "assimilated_package",
+    "preserved_framed",
+    "preserved_identity_erased"
+  ]
+}

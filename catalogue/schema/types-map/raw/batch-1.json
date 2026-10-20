@@ -1,0 +1,8029 @@
+{
+  "ai-agent/ai-agent": {
+    "types": [
+      {
+        "id": "type-01",
+        "name": "Charts",
+        "what": "Charts components"
+      },
+      {
+        "id": "type-02",
+        "name": "Code",
+        "what": "Code components"
+      },
+      {
+        "id": "type-03",
+        "name": "Forms",
+        "what": "Forms components"
+      },
+      {
+        "id": "type-04",
+        "name": "Lists",
+        "what": "Lists components"
+      },
+      {
+        "id": "type-05",
+        "name": "Messaging",
+        "what": "Messaging components"
+      },
+      {
+        "id": "type-06",
+        "name": "Other",
+        "what": "Other components"
+      },
+      {
+        "id": "type-07",
+        "name": "Typography",
+        "what": "Typography components"
+      }
+    ],
+    "map": {
+      "agent status": {
+        "to": "type-01",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "code block": {
+        "to": "type-02",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "model picker": {
+        "to": "type-03",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "simple list": {
+        "to": "type-04",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "message bubble": {
+        "to": "type-05",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "full chat app": {
+        "to": "type-05",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "chat thread": {
+        "to": "type-05",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "full chat apps": {
+        "to": "type-05",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "chat": {
+        "to": "type-05",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "chat sidebar": {
+        "to": "type-05",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "wrapper of a chat kit": {
+        "to": "type-05",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "artifact": {
+        "to": "type-06",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "tool call or steps": {
+        "to": "type-06",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "voice or orb": {
+        "to": "type-06",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "reasoning": {
+        "to": "type-06",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "sources": {
+        "to": "type-06",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "suggestions": {
+        "to": "type-06",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "composer": {
+        "to": "type-06",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "reasoning and tools": {
+        "to": "type-06",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "orbs and presence": {
+        "to": "type-06",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "attachments": {
+        "to": "type-06",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "voice": {
+        "to": "type-06",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "motion/background": {
+        "to": "type-06",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "motion": {
+        "to": "type-06",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "streaming text": {
+        "to": "type-07",
+        "look": null,
+        "motion": null,
+        "move": null
+      }
+    }
+  },
+  "data-display/calendar": {
+    "types": [
+      {
+        "id": "type-01",
+        "name": "Calendar",
+        "what": "Calendar components"
+      },
+      {
+        "id": "type-02",
+        "name": "Forms",
+        "what": "Forms components"
+      },
+      {
+        "id": "type-03",
+        "name": "Lists",
+        "what": "Lists components"
+      },
+      {
+        "id": "type-04",
+        "name": "Menus",
+        "what": "Menus components"
+      },
+      {
+        "id": "type-05",
+        "name": "Other",
+        "what": "Other components"
+      }
+    ],
+    "map": {
+      "month calendar": {
+        "to": "type-01",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "event calendar": {
+        "to": "type-01",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "mini calendar": {
+        "to": "type-01",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "timeline": {
+        "to": "type-01",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "date picker": {
+        "to": "type-02",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "range picker": {
+        "to": "type-02",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "with event list": {
+        "to": "type-03",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "simple list": {
+        "to": "type-03",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "range selection": {
+        "to": "type-04",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "multi-select": {
+        "to": "type-04",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "week schedule": {
+        "to": "type-05",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "with presets": {
+        "to": "type-05",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "booking": {
+        "to": "type-05",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "heatmap": {
+        "to": "type-05",
+        "look": null,
+        "motion": null,
+        "move": null
+      }
+    }
+  },
+  "data-display/list": {
+    "types": [
+      {
+        "id": "type-01",
+        "name": "Buttons",
+        "what": "Buttons components"
+      },
+      {
+        "id": "type-02",
+        "name": "Calendar",
+        "what": "Calendar components"
+      },
+      {
+        "id": "type-03",
+        "name": "Cards",
+        "what": "Cards components"
+      },
+      {
+        "id": "type-04",
+        "name": "Carousel",
+        "what": "Carousel components"
+      },
+      {
+        "id": "type-05",
+        "name": "Charts",
+        "what": "Charts components"
+      },
+      {
+        "id": "type-06",
+        "name": "Grids",
+        "what": "Grids components"
+      },
+      {
+        "id": "type-07",
+        "name": "Icons",
+        "what": "Icons components"
+      },
+      {
+        "id": "type-08",
+        "name": "Lists",
+        "what": "Lists components"
+      },
+      {
+        "id": "type-09",
+        "name": "Other",
+        "what": "Other components"
+      },
+      {
+        "id": "type-10",
+        "name": "Overlays",
+        "what": "Overlays components"
+      },
+      {
+        "id": "type-11",
+        "name": "Pages",
+        "what": "Pages components"
+      },
+      {
+        "id": "type-12",
+        "name": "Players",
+        "what": "Players components"
+      }
+    ],
+    "map": {
+      "swipe actions": {
+        "to": "type-01",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "button reorder": {
+        "to": "type-01",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "destructive actions": {
+        "to": "type-01",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "event timeline": {
+        "to": "type-02",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "timeline view": {
+        "to": "type-02",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "code or pin": {
+        "to": "type-02",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "tree": {
+        "to": "type-02",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "card grid": {
+        "to": "type-03",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "grid of cards": {
+        "to": "type-03",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "feature card": {
+        "to": "type-03",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "card with review": {
+        "to": "type-03",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "stat tiles": {
+        "to": "type-03",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "location cards": {
+        "to": "type-03",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "specialty cards": {
+        "to": "type-03",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "infinite scroll": {
+        "to": "type-04",
+        "look": null,
+        "motion": "scroll",
+        "move": null
+      },
+      "fixed height scroll": {
+        "to": "type-04",
+        "look": null,
+        "motion": "scroll",
+        "move": null
+      },
+      "task or status": {
+        "to": "type-05",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "capacity statement": {
+        "to": "type-05",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "selectable list": {
+        "to": "type-05",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "sortable": {
+        "to": "type-06",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "sortable or draggable": {
+        "to": "type-06",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "featured grid": {
+        "to": "type-06",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "gallery grid": {
+        "to": "type-06",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "standard grid": {
+        "to": "type-06",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "masonry grid": {
+        "to": "type-06",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "grid": {
+        "to": "type-06",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "comparison table": {
+        "to": "type-06",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "filtered grid": {
+        "to": "type-06",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "video grid": {
+        "to": "type-06",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "work grid": {
+        "to": "type-06",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "skill matrix": {
+        "to": "type-06",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "engagement matrix": {
+        "to": "type-06",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "case study grid": {
+        "to": "type-06",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "milestone grid": {
+        "to": "type-06",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "company table": {
+        "to": "type-06",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "table with controls": {
+        "to": "type-06",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "sortable with dnd": {
+        "to": "type-06",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "stacked sortable": {
+        "to": "type-06",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "image carousel": {
+        "to": "type-07",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "tagged image": {
+        "to": "type-07",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "social icons": {
+        "to": "type-07",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "icon drag": {
+        "to": "type-07",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "simple list": {
+        "to": "type-08",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "list with avatars": {
+        "to": "type-08",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "item": {
+        "to": "type-08",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "simple item": {
+        "to": "type-08",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "data row": {
+        "to": "type-08",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "file list": {
+        "to": "type-08",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "notification list": {
+        "to": "type-08",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "list": {
+        "to": "type-08",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "description list": {
+        "to": "type-08",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "task list": {
+        "to": "type-08",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "compact rows": {
+        "to": "type-08",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "item variant": {
+        "to": "type-08",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "services list": {
+        "to": "type-08",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "download list": {
+        "to": "type-08",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "principle list": {
+        "to": "type-08",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "list with icons": {
+        "to": "type-08",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "list with actions": {
+        "to": "type-08",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "image with product list": {
+        "to": "type-08",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "explanation rows": {
+        "to": "type-08",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "waitlist ranking": {
+        "to": "type-08",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "notification row": {
+        "to": "type-08",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "inclusion checklist": {
+        "to": "type-08",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "location list": {
+        "to": "type-08",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "event list": {
+        "to": "type-08",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "upsell row": {
+        "to": "type-08",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "attachment row": {
+        "to": "type-08",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "collaborative list": {
+        "to": "type-08",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "waitlist": {
+        "to": "type-08",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "investor list": {
+        "to": "type-08",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "discussion list": {
+        "to": "type-08",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "resource list": {
+        "to": "type-08",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "compliance list": {
+        "to": "type-08",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "mockup row": {
+        "to": "type-08",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "quote list": {
+        "to": "type-08",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "job listing": {
+        "to": "type-08",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "credential row": {
+        "to": "type-08",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "interview list": {
+        "to": "type-08",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "package list": {
+        "to": "type-08",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "image rows": {
+        "to": "type-08",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "subscription list": {
+        "to": "type-08",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "book list": {
+        "to": "type-08",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "project rows": {
+        "to": "type-08",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "bestseller row": {
+        "to": "type-08",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "social list": {
+        "to": "type-08",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "publication row": {
+        "to": "type-08",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "byline list": {
+        "to": "type-08",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "address list": {
+        "to": "type-08",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "award row interactive": {
+        "to": "type-08",
+        "look": null,
+        "motion": "interactive",
+        "move": null
+      },
+      "experience listing": {
+        "to": "type-08",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "incentive row": {
+        "to": "type-08",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "gantt rows": {
+        "to": "type-08",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "item sizes": {
+        "to": "type-08",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "item group": {
+        "to": "type-08",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "item with icon": {
+        "to": "type-08",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "item with avatar": {
+        "to": "type-08",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "item with image": {
+        "to": "type-08",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "item basic": {
+        "to": "type-08",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "item composed": {
+        "to": "type-08",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "link rows": {
+        "to": "type-08",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "basic list": {
+        "to": "type-08",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "pinned rows": {
+        "to": "type-08",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "full-row drag": {
+        "to": "type-08",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "searchable list": {
+        "to": "type-08",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "numbered rows": {
+        "to": "type-08",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "stacked rows": {
+        "to": "type-08",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "icon rows": {
+        "to": "type-08",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "draggable list": {
+        "to": "type-08",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "activity feed": {
+        "to": "type-09",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "virtualized": {
+        "to": "type-09",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "animated": {
+        "to": "type-09",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "activity or feed": {
+        "to": "type-09",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "interactive": {
+        "to": "type-09",
+        "look": null,
+        "motion": "interactive",
+        "move": null
+      },
+      "shopping or order": {
+        "to": "type-09",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "hierarchical": {
+        "to": "type-09",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "animated entrance": {
+        "to": "type-09",
+        "look": null,
+        "motion": "entrance",
+        "move": null
+      },
+      "nested": {
+        "to": "type-09",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "filters": {
+        "to": "type-09",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "masonry wall": {
+        "to": "type-09",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "filtered catalog": {
+        "to": "type-09",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "blog archive": {
+        "to": "type-09",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "mission with values": {
+        "to": "type-09",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "tech stack": {
+        "to": "type-09",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "navigation": {
+        "to": "type-09",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "count or pill badge": {
+        "to": "type-09",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "numbered steps": {
+        "to": "type-09",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "rules or restrictions": {
+        "to": "type-09",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "numbered breakdown": {
+        "to": "type-09",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "option groups": {
+        "to": "type-09",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "financial breakdown": {
+        "to": "type-09",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "comparative display": {
+        "to": "type-09",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "spec breakdown": {
+        "to": "type-09",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "feedback loop": {
+        "to": "type-09",
+        "look": null,
+        "motion": "loop",
+        "move": null
+      },
+      "review showcase": {
+        "to": "type-09",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "grouped cart": {
+        "to": "type-09",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "breakdown with bars": {
+        "to": "type-09",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "proof points": {
+        "to": "type-09",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "flow diagram": {
+        "to": "type-09",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "subscription upsell": {
+        "to": "type-09",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "photo reveal": {
+        "to": "type-09",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "gift registry": {
+        "to": "type-09",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "financial model": {
+        "to": "type-09",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "press mentions": {
+        "to": "type-09",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "findings summary": {
+        "to": "type-09",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "glossary": {
+        "to": "type-09",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "glossary with opinion": {
+        "to": "type-09",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "event index": {
+        "to": "type-09",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "travel guide": {
+        "to": "type-09",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "footer layout": {
+        "to": "type-09",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "issue tracker": {
+        "to": "type-09",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "regional data": {
+        "to": "type-09",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "payment options": {
+        "to": "type-09",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "i18n preview": {
+        "to": "type-09",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "migration stories": {
+        "to": "type-09",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "process flow": {
+        "to": "type-09",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "press quotes": {
+        "to": "type-09",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "changelog": {
+        "to": "type-09",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "appearances": {
+        "to": "type-09",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "manifesto": {
+        "to": "type-09",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "bio with scope": {
+        "to": "type-09",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "values with cost": {
+        "to": "type-09",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "awards by project": {
+        "to": "type-09",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "honors index": {
+        "to": "type-09",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "talks index": {
+        "to": "type-09",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "coaching structure": {
+        "to": "type-09",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "principles with proof": {
+        "to": "type-09",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "coach bio": {
+        "to": "type-09",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "project story": {
+        "to": "type-09",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "research to result": {
+        "to": "type-09",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "decision log": {
+        "to": "type-09",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "current work": {
+        "to": "type-09",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "optimization stories": {
+        "to": "type-09",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "project index": {
+        "to": "type-09",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "role detail": {
+        "to": "type-09",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "job history": {
+        "to": "type-09",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "gear guide": {
+        "to": "type-09",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "shoot summary": {
+        "to": "type-09",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "file downloads": {
+        "to": "type-09",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "press facts": {
+        "to": "type-09",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "minimal projects": {
+        "to": "type-09",
+        "look": "minimal",
+        "motion": null,
+        "move": null
+      },
+      "featured project": {
+        "to": "type-09",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "education": {
+        "to": "type-09",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "references": {
+        "to": "type-09",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "skill chips": {
+        "to": "type-09",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "product shop": {
+        "to": "type-09",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "discipline tools": {
+        "to": "type-09",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "practice areas": {
+        "to": "type-09",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "skill levels": {
+        "to": "type-09",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "skill proof": {
+        "to": "type-09",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "daily tools": {
+        "to": "type-09",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "speaker topics": {
+        "to": "type-09",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "talk archive": {
+        "to": "type-09",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "client testimonials": {
+        "to": "type-09",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "film portfolio": {
+        "to": "type-09",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "interactive portfolio": {
+        "to": "type-09",
+        "look": null,
+        "motion": "interactive",
+        "move": null
+      },
+      "numbered work": {
+        "to": "type-09",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "recent work": {
+        "to": "type-09",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "sticky sidebar": {
+        "to": "type-09",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "essay archive": {
+        "to": "type-09",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "invite bar": {
+        "to": "type-09",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "award index": {
+        "to": "type-09",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "honors stack": {
+        "to": "type-09",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "freelancer honors": {
+        "to": "type-09",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "freelancer bio": {
+        "to": "type-09",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "award preview": {
+        "to": "type-09",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "accolades with product": {
+        "to": "type-09",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "incentive band": {
+        "to": "type-09",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "project hover": {
+        "to": "type-09",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "issue backlog": {
+        "to": "type-09",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "compact issues": {
+        "to": "type-09",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "grouped issues": {
+        "to": "type-09",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "priority groups": {
+        "to": "type-09",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "bordered group": {
+        "to": "type-09",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "drag handle": {
+        "to": "type-09",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "muted variant": {
+        "to": "type-09",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "xs size": {
+        "to": "type-09",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "group outline": {
+        "to": "type-09",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "custom content": {
+        "to": "type-09",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "droppable empty": {
+        "to": "type-09",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "grouped drag": {
+        "to": "type-09",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "custom header": {
+        "to": "type-09",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "priority badges": {
+        "to": "type-09",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "workflow builder": {
+        "to": "type-09",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "drag overlay": {
+        "to": "type-10",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "text index": {
+        "to": "type-10",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "full page": {
+        "to": "type-11",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "status page": {
+        "to": "type-11",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "uses page": {
+        "to": "type-11",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "video index": {
+        "to": "type-12",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "form with steps": {
+        "to": "type-12",
+        "look": null,
+        "motion": null,
+        "move": null
+      }
+    }
+  },
+  "data-display/tree": {
+    "types": [
+      {
+        "id": "type-01",
+        "name": "Icons",
+        "what": "Icons components"
+      },
+      {
+        "id": "type-02",
+        "name": "Lists",
+        "what": "Lists components"
+      },
+      {
+        "id": "type-03",
+        "name": "Other",
+        "what": "Other components"
+      },
+      {
+        "id": "type-04",
+        "name": "Trees",
+        "what": "Trees components"
+      }
+    ],
+    "map": {
+      "with icons": {
+        "to": "type-01",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "with avatars": {
+        "to": "type-01",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "table tree": {
+        "to": "type-01",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "grid tree or data tree": {
+        "to": "type-01",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "file list": {
+        "to": "type-02",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "org chart": {
+        "to": "type-02",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "basic": {
+        "to": "type-03",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "json viewer": {
+        "to": "type-03",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "with checkboxes": {
+        "to": "type-03",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "tree view": {
+        "to": "type-04",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "file tree": {
+        "to": "type-04",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "tree": {
+        "to": "type-04",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "hierarchical tree": {
+        "to": "type-04",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "file explorer tree": {
+        "to": "type-04",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "nested tree": {
+        "to": "type-04",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "tree with checkboxes": {
+        "to": "type-04",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "tree with icons": {
+        "to": "type-04",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "drag and drop tree": {
+        "to": "type-04",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "search tree": {
+        "to": "type-04",
+        "look": null,
+        "motion": null,
+        "move": null
+      }
+    }
+  },
+  "data-display/typography": {
+    "types": [
+      {
+        "id": "type-01",
+        "name": "Charts",
+        "what": "Charts components"
+      },
+      {
+        "id": "type-02",
+        "name": "Code",
+        "what": "Code components"
+      },
+      {
+        "id": "type-03",
+        "name": "Forms",
+        "what": "Forms components"
+      },
+      {
+        "id": "type-04",
+        "name": "Grids",
+        "what": "Grids components"
+      },
+      {
+        "id": "type-05",
+        "name": "Lists",
+        "what": "Lists components"
+      },
+      {
+        "id": "type-06",
+        "name": "Other",
+        "what": "Other components"
+      },
+      {
+        "id": "type-07",
+        "name": "Pages",
+        "what": "Pages components"
+      },
+      {
+        "id": "type-08",
+        "name": "Typography",
+        "what": "Typography components"
+      }
+    ],
+    "map": {
+      "typography system": {
+        "to": "type-01",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "typography": {
+        "to": "type-01",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "smart typography": {
+        "to": "type-01",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "validation states": {
+        "to": "type-01",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "inline code": {
+        "to": "type-02",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "code block": {
+        "to": "type-02",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "text input": {
+        "to": "type-03",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "field with description": {
+        "to": "type-03",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "table": {
+        "to": "type-04",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "lists": {
+        "to": "type-05",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "arrow keys": {
+        "to": "type-05",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "list": {
+        "to": "type-05",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "prose": {
+        "to": "type-06",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "keyboard key caps": {
+        "to": "type-06",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "single key": {
+        "to": "type-06",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "keyboard keys": {
+        "to": "type-06",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "keyboard shortcut": {
+        "to": "type-06",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "blockquote": {
+        "to": "type-06",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "split letters": {
+        "to": "type-06",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "key variants": {
+        "to": "type-06",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "modifier keys": {
+        "to": "type-06",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "function keys": {
+        "to": "type-06",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "inline element": {
+        "to": "type-06",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "counter": {
+        "to": "type-06",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "sample data": {
+        "to": "type-06",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "tokens": {
+        "to": "type-06",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "prose section": {
+        "to": "type-07",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "kbd or inline": {
+        "to": "type-08",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "text": {
+        "to": "type-08",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "text primitives": {
+        "to": "type-08",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "headings": {
+        "to": "type-08",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "kbd": {
+        "to": "type-08",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "heading": {
+        "to": "type-08",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "headings and prose": {
+        "to": "type-08",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "heading or title": {
+        "to": "type-08",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "heading scale": {
+        "to": "type-08",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "prose or article text": {
+        "to": "type-08",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "animated heading": {
+        "to": "type-08",
+        "look": null,
+        "motion": null,
+        "move": null
+      }
+    }
+  },
+  "inputs/checkbox": {
+    "types": [
+      {
+        "id": "type-01",
+        "name": "Cards",
+        "what": "Cards components"
+      },
+      {
+        "id": "type-02",
+        "name": "Charts",
+        "what": "Charts components"
+      },
+      {
+        "id": "type-03",
+        "name": "Lists",
+        "what": "Lists components"
+      },
+      {
+        "id": "type-04",
+        "name": "Other",
+        "what": "Other components"
+      },
+      {
+        "id": "type-05",
+        "name": "Typography",
+        "what": "Typography components"
+      }
+    ],
+    "map": {
+      "card checkbox": {
+        "to": "type-01",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "validation states": {
+        "to": "type-02",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "checklist": {
+        "to": "type-03",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "basic checkbox": {
+        "to": "type-04",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "group": {
+        "to": "type-04",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "animated": {
+        "to": "type-04",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "checkbox group": {
+        "to": "type-04",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "animated checkbox": {
+        "to": "type-04",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "indeterminate": {
+        "to": "type-04",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "with label and description": {
+        "to": "type-05",
+        "look": null,
+        "motion": null,
+        "move": null
+      }
+    }
+  },
+  "inputs/date-picker": {
+    "types": [
+      {
+        "id": "type-01",
+        "name": "Calendar",
+        "what": "Calendar components"
+      },
+      {
+        "id": "type-02",
+        "name": "Forms",
+        "what": "Forms components"
+      },
+      {
+        "id": "type-03",
+        "name": "Menus",
+        "what": "Menus components"
+      },
+      {
+        "id": "type-04",
+        "name": "Other",
+        "what": "Other components"
+      },
+      {
+        "id": "type-05",
+        "name": "Overlays",
+        "what": "Overlays components"
+      }
+    ],
+    "map": {
+      "month calendar": {
+        "to": "type-01",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "calendar only": {
+        "to": "type-01",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "segmented date entry": {
+        "to": "type-01",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "date range": {
+        "to": "type-01",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "with time": {
+        "to": "type-01",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "date and time": {
+        "to": "type-01",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "specialized calendar": {
+        "to": "type-01",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "single date picker": {
+        "to": "type-02",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "segmented input": {
+        "to": "type-02",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "date picker": {
+        "to": "type-02",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "date range picker": {
+        "to": "type-02",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "with date input": {
+        "to": "type-02",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "date input field": {
+        "to": "type-02",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "month/year picker": {
+        "to": "type-02",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "month and year pickers": {
+        "to": "type-02",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "month or year picker": {
+        "to": "type-02",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "natural language input": {
+        "to": "type-02",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "range picker": {
+        "to": "type-02",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "time input": {
+        "to": "type-02",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "native input": {
+        "to": "type-02",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "with time selection": {
+        "to": "type-03",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "multi-date select": {
+        "to": "type-03",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "with presets": {
+        "to": "type-04",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "appointment booking": {
+        "to": "type-04",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "with range option": {
+        "to": "type-04",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "localized": {
+        "to": "type-04",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "with quick picks": {
+        "to": "type-04",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "natural language": {
+        "to": "type-04",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "calendar popover": {
+        "to": "type-05",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "bottom sheet modal": {
+        "to": "type-05",
+        "look": null,
+        "motion": null,
+        "move": null
+      }
+    }
+  },
+  "inputs/number-input": {
+    "types": [
+      {
+        "id": "type-01",
+        "name": "Forms",
+        "what": "Forms components"
+      },
+      {
+        "id": "type-02",
+        "name": "Other",
+        "what": "Other components"
+      }
+    ],
+    "map": {
+      "with input": {
+        "to": "type-01",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "localized number input": {
+        "to": "type-01",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "stepper with format": {
+        "to": "type-01",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "stepper": {
+        "to": "type-02",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "scrub": {
+        "to": "type-02",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "stepper horizontal": {
+        "to": "type-02",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "number stepper": {
+        "to": "type-02",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "numeric stepper": {
+        "to": "type-02",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "single": {
+        "to": "type-02",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "quantity": {
+        "to": "type-02",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "phone number": {
+        "to": "type-02",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "animated or custom": {
+        "to": "type-02",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "stepper vertical": {
+        "to": "type-02",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "scrub area": {
+        "to": "type-02",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "phone": {
+        "to": "type-02",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "stepper colored": {
+        "to": "type-02",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "stepper with units": {
+        "to": "type-02",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "stepper quantity": {
+        "to": "type-02",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "rolling stepper": {
+        "to": "type-02",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "hand-drawn stepper": {
+        "to": "type-02",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "scrub with units": {
+        "to": "type-02",
+        "look": null,
+        "motion": null,
+        "move": null
+      }
+    }
+  },
+  "inputs/otp-input": {
+    "types": [
+      {
+        "id": "type-01",
+        "name": "Charts",
+        "what": "Charts components"
+      },
+      {
+        "id": "type-02",
+        "name": "Code",
+        "what": "Code components"
+      },
+      {
+        "id": "type-03",
+        "name": "Effects",
+        "what": "Effects components"
+      },
+      {
+        "id": "type-04",
+        "name": "Forms",
+        "what": "Forms components"
+      },
+      {
+        "id": "type-05",
+        "name": "Other",
+        "what": "Other components"
+      },
+      {
+        "id": "type-06",
+        "name": "Pages",
+        "what": "Pages components"
+      }
+    ],
+    "map": {
+      "with state variants": {
+        "to": "type-01",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "code or pin": {
+        "to": "type-02",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "with animation": {
+        "to": "type-03",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "verification form": {
+        "to": "type-04",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "pin input": {
+        "to": "type-04",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "masked input": {
+        "to": "type-04",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "single input overlay": {
+        "to": "type-04",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "headless field": {
+        "to": "type-04",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "code input variant": {
+        "to": "type-04",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "3d drum input": {
+        "to": "type-04",
+        "look": "3d",
+        "motion": "3d",
+        "move": null
+      },
+      "basic slots": {
+        "to": "type-05",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "segmented slots": {
+        "to": "type-05",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "basic segmented slots": {
+        "to": "type-05",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "animated entrance": {
+        "to": "type-05",
+        "look": null,
+        "motion": "entrance",
+        "move": null
+      },
+      "individual character slots": {
+        "to": "type-05",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "basic": {
+        "to": "type-05",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "styled system": {
+        "to": "type-05",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "with separators": {
+        "to": "type-05",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "pin or 4-digit": {
+        "to": "type-05",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "autofill aware": {
+        "to": "type-05",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "email verification": {
+        "to": "type-05",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "slot machine/reel": {
+        "to": "type-05",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "grouped with separator": {
+        "to": "type-05",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "rolling entry": {
+        "to": "type-05",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "configurable length": {
+        "to": "type-05",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "spring focus indicator": {
+        "to": "type-05",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "hand-drawn slots": {
+        "to": "type-05",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "spring pop slots": {
+        "to": "type-05",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "hopping focus indicator": {
+        "to": "type-05",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "masked entry": {
+        "to": "type-05",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "full page flow": {
+        "to": "type-06",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "email template": {
+        "to": "type-06",
+        "look": null,
+        "motion": null,
+        "move": null
+      }
+    }
+  },
+  "inputs/radio": {
+    "types": [
+      {
+        "id": "type-01",
+        "name": "Cards",
+        "what": "Cards components"
+      },
+      {
+        "id": "type-02",
+        "name": "Charts",
+        "what": "Charts components"
+      },
+      {
+        "id": "type-03",
+        "name": "Ecommerce",
+        "what": "Ecommerce components"
+      },
+      {
+        "id": "type-04",
+        "name": "Icons",
+        "what": "Icons components"
+      },
+      {
+        "id": "type-05",
+        "name": "Menus",
+        "what": "Menus components"
+      },
+      {
+        "id": "type-06",
+        "name": "Other",
+        "what": "Other components"
+      }
+    ],
+    "map": {
+      "card radio": {
+        "to": "type-01",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "choice cards": {
+        "to": "type-01",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "payment cards": {
+        "to": "type-01",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "disabled state": {
+        "to": "type-02",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "pricing or plan": {
+        "to": "type-03",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "with icons": {
+        "to": "type-04",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "with avatar": {
+        "to": "type-04",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "card selection": {
+        "to": "type-05",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "basic radio": {
+        "to": "type-06",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "basic group": {
+        "to": "type-06",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "with description": {
+        "to": "type-06",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "size variants": {
+        "to": "type-06",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "group": {
+        "to": "type-06",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "themed": {
+        "to": "type-06",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "animated": {
+        "to": "type-06",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "segmented": {
+        "to": "type-06",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "storybook story": {
+        "to": "type-06",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "with badge": {
+        "to": "type-06",
+        "look": null,
+        "motion": null,
+        "move": null
+      }
+    }
+  },
+  "inputs/search": {
+    "types": [
+      {
+        "id": "type-01",
+        "name": "Forms",
+        "what": "Forms components"
+      },
+      {
+        "id": "type-02",
+        "name": "Other",
+        "what": "Other components"
+      }
+    ],
+    "map": {
+      "search field": {
+        "to": "type-01",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "with suggestions": {
+        "to": "type-02",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "with filters": {
+        "to": "type-02",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "command style": {
+        "to": "type-02",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "with results": {
+        "to": "type-02",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "expanding": {
+        "to": "type-02",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "domain search": {
+        "to": "type-02",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "search results": {
+        "to": "type-02",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "command palette": {
+        "to": "type-02",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "with autocomplete": {
+        "to": "type-02",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "advanced search": {
+        "to": "type-02",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "search bar": {
+        "to": "type-02",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "cascading or nested": {
+        "to": "type-02",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "live search": {
+        "to": "type-02",
+        "look": null,
+        "motion": null,
+        "move": null
+      }
+    }
+  },
+  "inputs/textarea": {
+    "types": [
+      {
+        "id": "type-01",
+        "name": "Buttons",
+        "what": "Buttons components"
+      },
+      {
+        "id": "type-02",
+        "name": "Charts",
+        "what": "Charts components"
+      },
+      {
+        "id": "type-03",
+        "name": "Code",
+        "what": "Code components"
+      },
+      {
+        "id": "type-04",
+        "name": "Forms",
+        "what": "Forms components"
+      },
+      {
+        "id": "type-05",
+        "name": "Lists",
+        "what": "Lists components"
+      },
+      {
+        "id": "type-06",
+        "name": "Other",
+        "what": "Other components"
+      },
+      {
+        "id": "type-07",
+        "name": "Pages",
+        "what": "Pages components"
+      },
+      {
+        "id": "type-08",
+        "name": "Typography",
+        "what": "Typography components"
+      },
+      {
+        "id": "type-09",
+        "name": "Utilities",
+        "what": "Utilities components"
+      }
+    ],
+    "map": {
+      "with actions": {
+        "to": "type-01",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "validation states": {
+        "to": "type-02",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "state variants": {
+        "to": "type-02",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "code editor": {
+        "to": "type-03",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "minimal editor": {
+        "to": "type-03",
+        "look": "minimal",
+        "motion": null,
+        "move": null
+      },
+      "markdown editor": {
+        "to": "type-03",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "editor lifecycle": {
+        "to": "type-03",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "code block": {
+        "to": "type-03",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "full-featured editor": {
+        "to": "type-03",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "theme editor": {
+        "to": "type-03",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "code validator": {
+        "to": "type-03",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "editor extensions": {
+        "to": "type-03",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "editor toolbar": {
+        "to": "type-03",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "layout editor": {
+        "to": "type-03",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "editor wrapper": {
+        "to": "type-03",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "rich editor": {
+        "to": "type-03",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "mark formatting": {
+        "to": "type-04",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "input rules": {
+        "to": "type-04",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "form field wrapper": {
+        "to": "type-04",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "form field": {
+        "to": "type-04",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "form-integrated": {
+        "to": "type-04",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "form variant": {
+        "to": "type-04",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "auto-growing": {
+        "to": "type-05",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "with toolbar": {
+        "to": "type-06",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "autosize": {
+        "to": "type-06",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "with validation": {
+        "to": "type-06",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "with counter": {
+        "to": "type-06",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "save and export": {
+        "to": "type-06",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "styled variants": {
+        "to": "type-06",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "collaboration crdt": {
+        "to": "type-06",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "node types": {
+        "to": "type-06",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "decorative": {
+        "to": "type-06",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "animated": {
+        "to": "type-06",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "markdown": {
+        "to": "type-06",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "rtl support": {
+        "to": "type-06",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "custom views": {
+        "to": "type-06",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "disabled": {
+        "to": "type-06",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "block dragging": {
+        "to": "type-06",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "change tracking": {
+        "to": "type-06",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "math equations": {
+        "to": "type-06",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "keyboard shortcuts": {
+        "to": "type-06",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "with error": {
+        "to": "type-06",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "embed features": {
+        "to": "type-06",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "block system": {
+        "to": "type-06",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "block definitions": {
+        "to": "type-06",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "utilities": {
+        "to": "type-06",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "storybook": {
+        "to": "type-06",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "display variant": {
+        "to": "type-06",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "page layout": {
+        "to": "type-07",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "basic textarea": {
+        "to": "type-08",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "rich text editor": {
+        "to": "type-08",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "with label": {
+        "to": "type-08",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "with helper text": {
+        "to": "type-08",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "floating label": {
+        "to": "type-08",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "textarea wrapper": {
+        "to": "type-08",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "editor hook": {
+        "to": "type-09",
+        "look": null,
+        "motion": null,
+        "move": null
+      }
+    }
+  },
+  "layout/bento-grid": {
+    "types": [
+      {
+        "id": "type-01",
+        "name": "Cards",
+        "what": "Cards components"
+      },
+      {
+        "id": "type-02",
+        "name": "Charts",
+        "what": "Charts components"
+      },
+      {
+        "id": "type-03",
+        "name": "Code",
+        "what": "Code components"
+      },
+      {
+        "id": "type-04",
+        "name": "Ecommerce",
+        "what": "Ecommerce components"
+      },
+      {
+        "id": "type-05",
+        "name": "Icons",
+        "what": "Icons components"
+      },
+      {
+        "id": "type-06",
+        "name": "Other",
+        "what": "Other components"
+      }
+    ],
+    "map": {
+      "single tile": {
+        "to": "type-01",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "feature cards": {
+        "to": "type-01",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "metric card": {
+        "to": "type-01",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "analytics tile": {
+        "to": "type-01",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "stats bento": {
+        "to": "type-02",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "editorial collage": {
+        "to": "type-03",
+        "look": "editorial",
+        "motion": null,
+        "move": null
+      },
+      "pricing offer": {
+        "to": "type-04",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "image collage": {
+        "to": "type-05",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "editorial image": {
+        "to": "type-05",
+        "look": "editorial",
+        "motion": null,
+        "move": null
+      },
+      "image bento": {
+        "to": "type-05",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "feature bento": {
+        "to": "type-06",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "feature description": {
+        "to": "type-06",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "feature showcase": {
+        "to": "type-06",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "animated bento": {
+        "to": "type-06",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "analytics dashboard": {
+        "to": "type-06",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "product showcase": {
+        "to": "type-06",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "minimal light": {
+        "to": "type-06",
+        "look": "minimal",
+        "motion": null,
+        "move": null
+      },
+      "animated": {
+        "to": "type-06",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "asymmetric layout": {
+        "to": "type-06",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "layout bento": {
+        "to": "type-06",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "metric strip": {
+        "to": "type-06",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "interactive bento": {
+        "to": "type-06",
+        "look": null,
+        "motion": "interactive",
+        "move": null
+      },
+      "flow or diagram": {
+        "to": "type-06",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "dark feature": {
+        "to": "type-06",
+        "look": "dark",
+        "motion": null,
+        "move": null
+      }
+    }
+  },
+  "layout/split-pane": {
+    "types": [
+      {
+        "id": "type-01",
+        "name": "Cards",
+        "what": "Cards components"
+      },
+      {
+        "id": "type-02",
+        "name": "Grids",
+        "what": "Grids components"
+      },
+      {
+        "id": "type-03",
+        "name": "Lists",
+        "what": "Lists components"
+      },
+      {
+        "id": "type-04",
+        "name": "Other",
+        "what": "Other components"
+      }
+    ],
+    "map": {
+      "resizable panels": {
+        "to": "type-01",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "nested panels": {
+        "to": "type-01",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "collapsible panels": {
+        "to": "type-01",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "resizable grid": {
+        "to": "type-02",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "simple list": {
+        "to": "type-03",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "basic two-pane": {
+        "to": "type-04",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "horizontal split with drag handle": {
+        "to": "type-04",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "resizable panes": {
+        "to": "type-04",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "styled variants": {
+        "to": "type-04",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "split view": {
+        "to": "type-04",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "story or demo": {
+        "to": "type-04",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "with handle visible": {
+        "to": "type-04",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "ide layout": {
+        "to": "type-04",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "with toolbar": {
+        "to": "type-04",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "interface builder": {
+        "to": "type-04",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "vertical split with drag handle": {
+        "to": "type-04",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "three-pane layout": {
+        "to": "type-04",
+        "look": null,
+        "motion": null,
+        "move": null
+      }
+    }
+  },
+  "lib/hook": {
+    "types": [
+      {
+        "id": "type-01",
+        "name": "Charts",
+        "what": "Charts components"
+      },
+      {
+        "id": "type-02",
+        "name": "Effects",
+        "what": "Effects components"
+      },
+      {
+        "id": "type-03",
+        "name": "Forms",
+        "what": "Forms components"
+      },
+      {
+        "id": "type-04",
+        "name": "Lists",
+        "what": "Lists components"
+      },
+      {
+        "id": "type-05",
+        "name": "Other",
+        "what": "Other components"
+      },
+      {
+        "id": "type-06",
+        "name": "Utilities",
+        "what": "Utilities components"
+      }
+    ],
+    "map": {
+      "state": {
+        "to": "type-01",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "state management": {
+        "to": "type-01",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "effects and lifecycle": {
+        "to": "type-02",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "form handling": {
+        "to": "type-03",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "browser apis": {
+        "to": "type-04",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "dom or events": {
+        "to": "type-05",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "timing": {
+        "to": "type-05",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "media query": {
+        "to": "type-05",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "data fetching": {
+        "to": "type-05",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "media and layout": {
+        "to": "type-05",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "dom and events": {
+        "to": "type-05",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "timing and motion": {
+        "to": "type-05",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "storage": {
+        "to": "type-05",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "provider": {
+        "to": "type-05",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "accessibility": {
+        "to": "type-05",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "navigation": {
+        "to": "type-05",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "utility components": {
+        "to": "type-06",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "auth helper": {
+        "to": "type-06",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "hook": {
+        "to": "type-06",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "utility": {
+        "to": "type-06",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "helper": {
+        "to": "type-06",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "hook helper": {
+        "to": "type-06",
+        "look": null,
+        "motion": null,
+        "move": null
+      }
+    }
+  },
+  "lib/utility": {
+    "types": [
+      {
+        "id": "type-01",
+        "name": "Charts",
+        "what": "Charts components"
+      },
+      {
+        "id": "type-02",
+        "name": "Code",
+        "what": "Code components"
+      },
+      {
+        "id": "type-03",
+        "name": "Forms",
+        "what": "Forms components"
+      },
+      {
+        "id": "type-04",
+        "name": "Icons",
+        "what": "Icons components"
+      },
+      {
+        "id": "type-05",
+        "name": "Other",
+        "what": "Other components"
+      },
+      {
+        "id": "type-06",
+        "name": "Pages",
+        "what": "Pages components"
+      },
+      {
+        "id": "type-07",
+        "name": "Typography",
+        "what": "Typography components"
+      },
+      {
+        "id": "type-08",
+        "name": "Utilities",
+        "what": "Utilities components"
+      }
+    ],
+    "map": {
+      "state provider": {
+        "to": "type-01",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "code generation": {
+        "to": "type-02",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "formatter or parser": {
+        "to": "type-03",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "formatting": {
+        "to": "type-03",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "form helper": {
+        "to": "type-03",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "formatter": {
+        "to": "type-03",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "icons or glyphs": {
+        "to": "type-04",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "sample data": {
+        "to": "type-05",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "provider": {
+        "to": "type-05",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "provider or adapter": {
+        "to": "type-05",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "generated schema": {
+        "to": "type-05",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "data fetching": {
+        "to": "type-05",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "theme": {
+        "to": "type-05",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "type definitions": {
+        "to": "type-05",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "font loader": {
+        "to": "type-05",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "theme tokens": {
+        "to": "type-05",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "geometry or physics": {
+        "to": "type-05",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "class merger": {
+        "to": "type-05",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "backend integration": {
+        "to": "type-05",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "adapter": {
+        "to": "type-05",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "config or routing": {
+        "to": "type-05",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "rules or guidance": {
+        "to": "type-05",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "theme token": {
+        "to": "type-05",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "ui primitive": {
+        "to": "type-05",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "api client": {
+        "to": "type-05",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "theme or tokens": {
+        "to": "type-05",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "ui library": {
+        "to": "type-05",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "theme provider": {
+        "to": "type-05",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "sample or example": {
+        "to": "type-05",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "parser": {
+        "to": "type-05",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "library core": {
+        "to": "type-05",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "dom or events": {
+        "to": "type-05",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "agent skill": {
+        "to": "type-05",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "error handling": {
+        "to": "type-05",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "skill or router": {
+        "to": "type-05",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "storybook demo": {
+        "to": "type-05",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "email component": {
+        "to": "type-05",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "api endpoint": {
+        "to": "type-05",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "tag or chip": {
+        "to": "type-05",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "design system or kit": {
+        "to": "type-05",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "authentication or db": {
+        "to": "type-05",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "tokens": {
+        "to": "type-05",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "animated badge": {
+        "to": "type-05",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "skill": {
+        "to": "type-05",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "documentation page": {
+        "to": "type-06",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "state or context": {
+        "to": "type-07",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "helper": {
+        "to": "type-08",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "utility": {
+        "to": "type-08",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "hook": {
+        "to": "type-08",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "animation helper": {
+        "to": "type-08",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "class helper": {
+        "to": "type-08",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "server utility": {
+        "to": "type-08",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "data helper": {
+        "to": "type-08",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "class helpers": {
+        "to": "type-08",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "helper or utility": {
+        "to": "type-08",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "class name helper": {
+        "to": "type-08",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "styling helper": {
+        "to": "type-08",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "type utility": {
+        "to": "type-08",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "iterator helper": {
+        "to": "type-08",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "theme helper": {
+        "to": "type-08",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "motion helper": {
+        "to": "type-08",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "calculation helper": {
+        "to": "type-08",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "effect hook": {
+        "to": "type-08",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "string utility": {
+        "to": "type-08",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "state hook": {
+        "to": "type-08",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "validation helper": {
+        "to": "type-08",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "style utility": {
+        "to": "type-08",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "motion helpers": {
+        "to": "type-08",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "effect helper": {
+        "to": "type-08",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "security helper": {
+        "to": "type-08",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "documentation helper": {
+        "to": "type-08",
+        "look": null,
+        "motion": null,
+        "move": null
+      }
+    }
+  },
+  "marketing/cta": {
+    "types": [
+      {
+        "id": "type-01",
+        "name": "Cards",
+        "what": "Cards components"
+      },
+      {
+        "id": "type-02",
+        "name": "Carousel",
+        "what": "Carousel components"
+      },
+      {
+        "id": "type-03",
+        "name": "Forms",
+        "what": "Forms components"
+      },
+      {
+        "id": "type-04",
+        "name": "Grids",
+        "what": "Grids components"
+      },
+      {
+        "id": "type-05",
+        "name": "Hero",
+        "what": "Hero components"
+      },
+      {
+        "id": "type-06",
+        "name": "Icons",
+        "what": "Icons components"
+      },
+      {
+        "id": "type-07",
+        "name": "Lists",
+        "what": "Lists components"
+      },
+      {
+        "id": "type-08",
+        "name": "Other",
+        "what": "Other components"
+      }
+    ],
+    "map": {
+      "card": {
+        "to": "type-01",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "centered card": {
+        "to": "type-01",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "card grid": {
+        "to": "type-01",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "pricing card": {
+        "to": "type-01",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "carousel": {
+        "to": "type-02",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "sliding button": {
+        "to": "type-02",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "with email form": {
+        "to": "type-03",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "waitlist form": {
+        "to": "type-03",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "contact form": {
+        "to": "type-03",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "email form": {
+        "to": "type-03",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "comparison table": {
+        "to": "type-04",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "feature grid": {
+        "to": "type-04",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "centered banner": {
+        "to": "type-05",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "banner": {
+        "to": "type-05",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "inline banner": {
+        "to": "type-05",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "split with image": {
+        "to": "type-06",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "with image": {
+        "to": "type-06",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "link list": {
+        "to": "type-07",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "newsletter signup": {
+        "to": "type-08",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "split layout": {
+        "to": "type-08",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "full-bleed gradient": {
+        "to": "type-08",
+        "look": "gradient",
+        "motion": null,
+        "move": null
+      },
+      "with media": {
+        "to": "type-08",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "split": {
+        "to": "type-08",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "contact options": {
+        "to": "type-08",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "app download": {
+        "to": "type-08",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "glowing and gradient": {
+        "to": "type-08",
+        "look": "gradient",
+        "motion": null,
+        "move": null
+      },
+      "with metrics": {
+        "to": "type-08",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "with social proof": {
+        "to": "type-08",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "with features": {
+        "to": "type-08",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "with integrations": {
+        "to": "type-08",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "band": {
+        "to": "type-08",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "split columns": {
+        "to": "type-08",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "steps": {
+        "to": "type-08",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "quote-led": {
+        "to": "type-08",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "faq": {
+        "to": "type-08",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "bento": {
+        "to": "type-08",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "marquee": {
+        "to": "type-08",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "with booking": {
+        "to": "type-08",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "with testimonials": {
+        "to": "type-08",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "email capture": {
+        "to": "type-08",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "3d or tilt": {
+        "to": "type-08",
+        "look": "3d",
+        "motion": "3d",
+        "move": null
+      },
+      "before and after": {
+        "to": "type-08",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "illustrated": {
+        "to": "type-08",
+        "look": "illustrated",
+        "motion": null,
+        "move": null
+      }
+    }
+  },
+  "marketing/team": {
+    "types": [
+      {
+        "id": "type-01",
+        "name": "Calendar",
+        "what": "Calendar components"
+      },
+      {
+        "id": "type-02",
+        "name": "Cards",
+        "what": "Cards components"
+      },
+      {
+        "id": "type-03",
+        "name": "Forms",
+        "what": "Forms components"
+      },
+      {
+        "id": "type-04",
+        "name": "Grids",
+        "what": "Grids components"
+      },
+      {
+        "id": "type-05",
+        "name": "Lists",
+        "what": "Lists components"
+      },
+      {
+        "id": "type-06",
+        "name": "Other",
+        "what": "Other components"
+      },
+      {
+        "id": "type-07",
+        "name": "Pages",
+        "what": "Pages components"
+      },
+      {
+        "id": "type-08",
+        "name": "People",
+        "what": "People components"
+      }
+    ],
+    "map": {
+      "timeline": {
+        "to": "type-01",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "split with image": {
+        "to": "type-01",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "grid of cards": {
+        "to": "type-02",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "cards with socials": {
+        "to": "type-02",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "glowing cards": {
+        "to": "type-02",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "member picker": {
+        "to": "type-03",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "photo grid": {
+        "to": "type-04",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "team grid": {
+        "to": "type-04",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "masonry grid": {
+        "to": "type-04",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "lists and directories": {
+        "to": "type-05",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "list": {
+        "to": "type-05",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "portraits and hover": {
+        "to": "type-06",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "split layout": {
+        "to": "type-06",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "founders": {
+        "to": "type-06",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "with description": {
+        "to": "type-06",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "masonry": {
+        "to": "type-06",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "photos and hover": {
+        "to": "type-06",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "portrait": {
+        "to": "type-06",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "about section": {
+        "to": "type-07",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "alternating sections": {
+        "to": "type-07",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "team management": {
+        "to": "type-08",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "carousel": {
+        "to": "type-08",
+        "look": null,
+        "motion": null,
+        "move": null
+      }
+    }
+  },
+  "media/carousel": {
+    "types": [
+      {
+        "id": "type-01",
+        "name": "Cards",
+        "what": "Cards components"
+      },
+      {
+        "id": "type-02",
+        "name": "Carousel",
+        "what": "Carousel components"
+      },
+      {
+        "id": "type-03",
+        "name": "Icons",
+        "what": "Icons components"
+      },
+      {
+        "id": "type-04",
+        "name": "Other",
+        "what": "Other components"
+      }
+    ],
+    "map": {
+      "cards carousel": {
+        "to": "type-01",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "card carousel": {
+        "to": "type-01",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "basic slider": {
+        "to": "type-02",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "basic carousel": {
+        "to": "type-02",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "testimonial carousel": {
+        "to": "type-02",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "feature carousel": {
+        "to": "type-02",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "autoplay carousel": {
+        "to": "type-02",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "product carousel": {
+        "to": "type-02",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "motion carousel": {
+        "to": "type-02",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "portfolio carousel": {
+        "to": "type-02",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "hero carousel": {
+        "to": "type-02",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "carousel": {
+        "to": "type-02",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "thumbnail carousel": {
+        "to": "type-02",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "logo carousel": {
+        "to": "type-02",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "transition carousel": {
+        "to": "type-02",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "responsive carousel": {
+        "to": "type-02",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "image carousel": {
+        "to": "type-03",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "image gallery carousel": {
+        "to": "type-03",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "3d or coverflow": {
+        "to": "type-04",
+        "look": "3d",
+        "motion": "3d",
+        "move": null
+      },
+      "embla basic": {
+        "to": "type-04",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "3d or perspective": {
+        "to": "type-04",
+        "look": "3d",
+        "motion": "3d",
+        "move": null
+      },
+      "with slide indicators": {
+        "to": "type-04",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "with thumbnails": {
+        "to": "type-04",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "animated or custom": {
+        "to": "type-04",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "single": {
+        "to": "type-04",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "autoplay": {
+        "to": "type-04",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "vertical": {
+        "to": "type-04",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "coverflow or tilted": {
+        "to": "type-04",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "dots or indicators": {
+        "to": "type-04",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "parallax": {
+        "to": "type-04",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "uploader": {
+        "to": "type-04",
+        "look": null,
+        "motion": null,
+        "move": null
+      }
+    }
+  },
+  "media/player": {
+    "types": [
+      {
+        "id": "type-01",
+        "name": "Effects",
+        "what": "Effects components"
+      },
+      {
+        "id": "type-02",
+        "name": "Forms",
+        "what": "Forms components"
+      },
+      {
+        "id": "type-03",
+        "name": "Icons",
+        "what": "Icons components"
+      },
+      {
+        "id": "type-04",
+        "name": "Menus",
+        "what": "Menus components"
+      },
+      {
+        "id": "type-05",
+        "name": "Other",
+        "what": "Other components"
+      },
+      {
+        "id": "type-06",
+        "name": "Overlays",
+        "what": "Overlays components"
+      },
+      {
+        "id": "type-07",
+        "name": "Pages",
+        "what": "Pages components"
+      },
+      {
+        "id": "type-08",
+        "name": "Players",
+        "what": "Players components"
+      }
+    ],
+    "map": {
+      "video effect": {
+        "to": "type-01",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "ambient glow effect": {
+        "to": "type-01",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "video reveal effect": {
+        "to": "type-01",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "hover reveal effect": {
+        "to": "type-01",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "video playlist section": {
+        "to": "type-01",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "event list section": {
+        "to": "type-01",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "track list section": {
+        "to": "type-01",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "waveform visualizer": {
+        "to": "type-02",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "waveform visualization": {
+        "to": "type-02",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "waveform": {
+        "to": "type-02",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "audio player with waveform": {
+        "to": "type-02",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "live waveform": {
+        "to": "type-02",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "waveform editor": {
+        "to": "type-02",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "image carousel": {
+        "to": "type-03",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "image editor": {
+        "to": "type-03",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "vertical video carousel": {
+        "to": "type-03",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "music card": {
+        "to": "type-03",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "video card": {
+        "to": "type-03",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "social video card": {
+        "to": "type-03",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "device selector": {
+        "to": "type-04",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "voice selector": {
+        "to": "type-04",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "texture helper": {
+        "to": "type-04",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "text to speech player": {
+        "to": "type-04",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "procedural music visualizer": {
+        "to": "type-05",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "aspect ratio container": {
+        "to": "type-05",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "youtube embed": {
+        "to": "type-05",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "podcast": {
+        "to": "type-05",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "media cropper": {
+        "to": "type-05",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "clip tools": {
+        "to": "type-05",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "synced transcript": {
+        "to": "type-05",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "animated or custom": {
+        "to": "type-05",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "device mockup": {
+        "to": "type-05",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "podcast teaser": {
+        "to": "type-05",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "3d or circular": {
+        "to": "type-05",
+        "look": "3d",
+        "motion": "3d",
+        "move": null
+      },
+      "sheet music": {
+        "to": "type-05",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "media converter": {
+        "to": "type-05",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "animated badge": {
+        "to": "type-05",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "voice notes": {
+        "to": "type-05",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "live transcription": {
+        "to": "type-05",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "microphone control": {
+        "to": "type-05",
+        "look": null,
+        "motion": "micro",
+        "move": null
+      },
+      "camera control": {
+        "to": "type-05",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "game overlay": {
+        "to": "type-06",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "shoppable video modal": {
+        "to": "type-06",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "image grid": {
+        "to": "type-06",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "audio hook or utility": {
+        "to": "type-06",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "podcast player or section": {
+        "to": "type-07",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "video gallery section": {
+        "to": "type-07",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "hero video section": {
+        "to": "type-07",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "video chapters section": {
+        "to": "type-07",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "video embed section": {
+        "to": "type-07",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "music gallery section": {
+        "to": "type-07",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "credits section": {
+        "to": "type-07",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "section media": {
+        "to": "type-07",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "video library section": {
+        "to": "type-07",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "accessible video section": {
+        "to": "type-07",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "video player section": {
+        "to": "type-07",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "podcast section": {
+        "to": "type-07",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "video transcript section": {
+        "to": "type-07",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "press kit section": {
+        "to": "type-07",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "song detail section": {
+        "to": "type-07",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "video detail section": {
+        "to": "type-07",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "awards section": {
+        "to": "type-07",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "process section": {
+        "to": "type-07",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "video player": {
+        "to": "type-08",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "audio player": {
+        "to": "type-08",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "video model": {
+        "to": "type-08",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "music player": {
+        "to": "type-08",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "full featured video player": {
+        "to": "type-08",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "audio mixer or controls": {
+        "to": "type-08",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "hover video reveal": {
+        "to": "type-08",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "audio recorder": {
+        "to": "type-08",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "microphone or audio setup": {
+        "to": "type-08",
+        "look": null,
+        "motion": "micro",
+        "move": null
+      },
+      "composable video player": {
+        "to": "type-08",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "video embed": {
+        "to": "type-08",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "video skills": {
+        "to": "type-08",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "video editor": {
+        "to": "type-08",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "video wrapper": {
+        "to": "type-08",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "vertical video reel": {
+        "to": "type-08",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "hls video player": {
+        "to": "type-08",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "video gallery": {
+        "to": "type-08",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "glass video player": {
+        "to": "type-08",
+        "look": "glass",
+        "motion": null,
+        "move": null
+      },
+      "skeuomorphic player": {
+        "to": "type-08",
+        "look": "skeuomorphic",
+        "motion": null,
+        "move": null
+      },
+      "audio server": {
+        "to": "type-08",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "video thumbnail": {
+        "to": "type-08",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "audio editor": {
+        "to": "type-08",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "video loops": {
+        "to": "type-08",
+        "look": null,
+        "motion": "loop",
+        "move": null
+      },
+      "video reel": {
+        "to": "type-08",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "audio reactive": {
+        "to": "type-08",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "full-screen player": {
+        "to": "type-08",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "hero video": {
+        "to": "type-08",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "video player with transcript": {
+        "to": "type-08",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "game player profile": {
+        "to": "type-08",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "podcast player": {
+        "to": "type-08",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "game player frame": {
+        "to": "type-08",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "audio visualizer": {
+        "to": "type-08",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "lazy video embed": {
+        "to": "type-08",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "native media player": {
+        "to": "type-08",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "music notation player": {
+        "to": "type-08",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "3d audio visualizer": {
+        "to": "type-08",
+        "look": "3d",
+        "motion": "3d",
+        "move": null
+      },
+      "narration player": {
+        "to": "type-08",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "video post": {
+        "to": "type-08",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "media player": {
+        "to": "type-08",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "stepped progress player": {
+        "to": "type-08",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "expandable player": {
+        "to": "type-08",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "lazy video": {
+        "to": "type-08",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "player layout": {
+        "to": "type-08",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "video canvas": {
+        "to": "type-08",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "audio analyzer": {
+        "to": "type-08",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "video codec visualizer": {
+        "to": "type-08",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "video annotation": {
+        "to": "type-08",
+        "look": null,
+        "motion": null,
+        "move": null
+      }
+    }
+  },
+  "motion/ascii": {
+    "types": [
+      {
+        "id": "type-01",
+        "name": "Ascii",
+        "what": "Ascii components"
+      },
+      {
+        "id": "type-02",
+        "name": "Charts",
+        "what": "Charts components"
+      },
+      {
+        "id": "type-03",
+        "name": "Other",
+        "what": "Other components"
+      },
+      {
+        "id": "type-04",
+        "name": "Typography",
+        "what": "Typography components"
+      }
+    ],
+    "map": {
+      "ascii render": {
+        "to": "type-01",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "ascii magnify": {
+        "to": "type-01",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "ascii pattern": {
+        "to": "type-01",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "ascii 3d": {
+        "to": "type-01",
+        "look": "3d",
+        "motion": "3d",
+        "move": null
+      },
+      "ascii diagram": {
+        "to": "type-01",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "ascii interactive": {
+        "to": "type-01",
+        "look": null,
+        "motion": "interactive",
+        "move": null
+      },
+      "ascii sphere": {
+        "to": "type-01",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "ascii data": {
+        "to": "type-01",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "ascii loop": {
+        "to": "type-01",
+        "look": null,
+        "motion": "loop",
+        "move": null
+      },
+      "ascii cursor": {
+        "to": "type-01",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "ascii mockup": {
+        "to": "type-01",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "ascii layout": {
+        "to": "type-01",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "ascii loader": {
+        "to": "type-01",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "ascii gallery": {
+        "to": "type-01",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "ascii kit": {
+        "to": "type-01",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "ascii chart": {
+        "to": "type-02",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "empty state": {
+        "to": "type-02",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "ascii editor": {
+        "to": "type-02",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "ascii transition": {
+        "to": "type-02",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "noise animation": {
+        "to": "type-02",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "ascii effect": {
+        "to": "type-02",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "eyeballs tracking": {
+        "to": "type-03",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "marker symbol": {
+        "to": "type-03",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "divider lines": {
+        "to": "type-03",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "digital rain": {
+        "to": "type-03",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "canvas cell": {
+        "to": "type-03",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "layout utility": {
+        "to": "type-03",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "image to ascii": {
+        "to": "type-03",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "shapes or grid": {
+        "to": "type-03",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "ascii grid": {
+        "to": "type-03",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "text reveal": {
+        "to": "type-04",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "ascii art text": {
+        "to": "type-04",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "cascading text": {
+        "to": "type-04",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "text framework": {
+        "to": "type-04",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "live dither field": {
+        "to": "type-04",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "form input": {
+        "to": "type-04",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "live noise field": {
+        "to": "type-04",
+        "look": null,
+        "motion": null,
+        "move": null
+      }
+    }
+  },
+  "motion/number-ticker": {
+    "types": [
+      {
+        "id": "type-01",
+        "name": "Buttons",
+        "what": "Buttons components"
+      },
+      {
+        "id": "type-02",
+        "name": "Calendar",
+        "what": "Calendar components"
+      },
+      {
+        "id": "type-03",
+        "name": "Charts",
+        "what": "Charts components"
+      },
+      {
+        "id": "type-04",
+        "name": "Effects",
+        "what": "Effects components"
+      },
+      {
+        "id": "type-05",
+        "name": "Forms",
+        "what": "Forms components"
+      },
+      {
+        "id": "type-06",
+        "name": "Other",
+        "what": "Other components"
+      }
+    ],
+    "map": {
+      "social interaction": {
+        "to": "type-01",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "countdown timer": {
+        "to": "type-02",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "stopwatch or timer": {
+        "to": "type-02",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "timer": {
+        "to": "type-02",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "timer controls": {
+        "to": "type-02",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "stats counter": {
+        "to": "type-03",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "stat counter": {
+        "to": "type-03",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "counting animation": {
+        "to": "type-04",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "number animation": {
+        "to": "type-04",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "specialized format": {
+        "to": "type-05",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "animated count-up": {
+        "to": "type-06",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "rolling digits": {
+        "to": "type-06",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "number counter": {
+        "to": "type-06",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "odometer": {
+        "to": "type-06",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "sample data": {
+        "to": "type-06",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "interactive counter": {
+        "to": "type-06",
+        "look": null,
+        "motion": "interactive",
+        "move": null
+      },
+      "countdown": {
+        "to": "type-06",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "rolling drum": {
+        "to": "type-06",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "counter": {
+        "to": "type-06",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "word and character counting": {
+        "to": "type-06",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "price or currency": {
+        "to": "type-06",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "animated counter": {
+        "to": "type-06",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "currency display": {
+        "to": "type-06",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "sliding number": {
+        "to": "type-06",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "inventory display": {
+        "to": "type-06",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "animated number": {
+        "to": "type-06",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "character/word counter": {
+        "to": "type-06",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "percentage indicator": {
+        "to": "type-06",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "progress or bar": {
+        "to": "type-06",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "kinetic counter": {
+        "to": "type-06",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "counter display": {
+        "to": "type-06",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "flip/split display": {
+        "to": "type-06",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "counter with grouping": {
+        "to": "type-06",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "social proof": {
+        "to": "type-06",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "retro display": {
+        "to": "type-06",
+        "look": null,
+        "motion": null,
+        "move": null
+      }
+    }
+  },
+  "motion/shader": {
+    "types": [
+      {
+        "id": "type-01",
+        "name": "Buttons",
+        "what": "Buttons components"
+      },
+      {
+        "id": "type-02",
+        "name": "Effects",
+        "what": "Effects components"
+      },
+      {
+        "id": "type-03",
+        "name": "Grids",
+        "what": "Grids components"
+      },
+      {
+        "id": "type-04",
+        "name": "Other",
+        "what": "Other components"
+      },
+      {
+        "id": "type-05",
+        "name": "Shaders",
+        "what": "Shaders components"
+      }
+    ],
+    "map": {
+      "glass or refraction": {
+        "to": "type-01",
+        "look": "glass",
+        "motion": null,
+        "move": null
+      },
+      "light effects": {
+        "to": "type-02",
+        "look": "light",
+        "motion": null,
+        "move": null
+      },
+      "transition effect": {
+        "to": "type-02",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "grid or dots": {
+        "to": "type-03",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "noise or fluid": {
+        "to": "type-04",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "3d shape": {
+        "to": "type-04",
+        "look": "3d",
+        "motion": "3d",
+        "move": null
+      },
+      "fluid or liquid": {
+        "to": "type-04",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "orbsy sphere variant": {
+        "to": "type-04",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "dither": {
+        "to": "type-04",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "waves": {
+        "to": "type-04",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "3d scene": {
+        "to": "type-04",
+        "look": "3d",
+        "motion": "3d",
+        "move": null
+      },
+      "interactive distortion": {
+        "to": "type-04",
+        "look": null,
+        "motion": "interactive",
+        "move": null
+      },
+      "blobs": {
+        "to": "type-04",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "3d viewer": {
+        "to": "type-04",
+        "look": "3d",
+        "motion": "3d",
+        "move": null
+      },
+      "beams or lines": {
+        "to": "type-04",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "gradient mesh": {
+        "to": "type-04",
+        "look": "gradient",
+        "motion": null,
+        "move": null
+      },
+      "noise or grain": {
+        "to": "type-04",
+        "look": "grain",
+        "motion": null,
+        "move": null
+      },
+      "landscape or scene": {
+        "to": "type-04",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "gradient shader": {
+        "to": "type-05",
+        "look": "gradient",
+        "motion": null,
+        "move": null
+      },
+      "shader example": {
+        "to": "type-05",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "shader": {
+        "to": "type-05",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "particles": {
+        "to": "type-05",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "particles or stars": {
+        "to": "type-05",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "background shader": {
+        "to": "type-05",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "3d shader": {
+        "to": "type-05",
+        "look": "3d",
+        "motion": "3d",
+        "move": null
+      }
+    }
+  },
+  "navigation/menu": {
+    "types": [
+      {
+        "id": "type-01",
+        "name": "Grids",
+        "what": "Grids components"
+      },
+      {
+        "id": "type-02",
+        "name": "Menus",
+        "what": "Menus components"
+      },
+      {
+        "id": "type-03",
+        "name": "Messaging",
+        "what": "Messaging components"
+      },
+      {
+        "id": "type-04",
+        "name": "Other",
+        "what": "Other components"
+      }
+    ],
+    "map": {
+      "data grid controls": {
+        "to": "type-01",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "dropdown menu": {
+        "to": "type-02",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "menubar": {
+        "to": "type-02",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "navigation menu": {
+        "to": "type-02",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "toolbar or menubar": {
+        "to": "type-02",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "context or slash menu": {
+        "to": "type-02",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "context menu": {
+        "to": "type-02",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "mega menu": {
+        "to": "type-02",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "user menu": {
+        "to": "type-02",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "filter or sort menu": {
+        "to": "type-02",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "special effect dropdown": {
+        "to": "type-02",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "animated menu": {
+        "to": "type-02",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "food or restaurant menu": {
+        "to": "type-02",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "social menu": {
+        "to": "type-02",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "workspace or user menu": {
+        "to": "type-02",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "radial menu": {
+        "to": "type-02",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "mobile menu": {
+        "to": "type-02",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "themed dropdown": {
+        "to": "type-02",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "filter menu": {
+        "to": "type-02",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "user account menu": {
+        "to": "type-02",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "floating menu": {
+        "to": "type-02",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "specialized select": {
+        "to": "type-02",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "mobile or responsive menu": {
+        "to": "type-02",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "user profile menu": {
+        "to": "type-02",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "data filter menu": {
+        "to": "type-02",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "notification dropdown": {
+        "to": "type-02",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "menu item": {
+        "to": "type-02",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "sidebar menu": {
+        "to": "type-02",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "sort menu": {
+        "to": "type-02",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "cascading menu": {
+        "to": "type-02",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "animated dropdown": {
+        "to": "type-02",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "floating action menu": {
+        "to": "type-02",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "theme selector": {
+        "to": "type-02",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "menu section": {
+        "to": "type-02",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "overflow menu": {
+        "to": "type-02",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "share menu": {
+        "to": "type-02",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "tab menu": {
+        "to": "type-02",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "menu divider": {
+        "to": "type-02",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "permissions menu": {
+        "to": "type-02",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "file actions menu": {
+        "to": "type-02",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "user or workspace menu": {
+        "to": "type-02",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "bubble menu": {
+        "to": "type-03",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "animated or radial": {
+        "to": "type-04",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "toolbar": {
+        "to": "type-04",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "animated morph": {
+        "to": "type-04",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "nested or cascading": {
+        "to": "type-04",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "floating or circular": {
+        "to": "type-04",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "mobile drawer": {
+        "to": "type-04",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "dial or knob": {
+        "to": "type-04",
+        "look": null,
+        "motion": null,
+        "move": null
+      }
+    }
+  },
+  "overlays/hover-card": {
+    "types": [
+      {
+        "id": "type-01",
+        "name": "Calendar",
+        "what": "Calendar components"
+      },
+      {
+        "id": "type-02",
+        "name": "Cards",
+        "what": "Cards components"
+      },
+      {
+        "id": "type-03",
+        "name": "Effects",
+        "what": "Effects components"
+      },
+      {
+        "id": "type-04",
+        "name": "Grids",
+        "what": "Grids components"
+      },
+      {
+        "id": "type-05",
+        "name": "Icons",
+        "what": "Icons components"
+      },
+      {
+        "id": "type-06",
+        "name": "Other",
+        "what": "Other components"
+      },
+      {
+        "id": "type-07",
+        "name": "Overlays",
+        "what": "Overlays components"
+      },
+      {
+        "id": "type-08",
+        "name": "People",
+        "what": "People components"
+      }
+    ],
+    "map": {
+      "timestamp preview": {
+        "to": "type-01",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "timestamp": {
+        "to": "type-01",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "ios context menu": {
+        "to": "type-01",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "basic hover card": {
+        "to": "type-02",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "info card": {
+        "to": "type-02",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "profile card": {
+        "to": "type-02",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "traveling card": {
+        "to": "type-02",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "creative hover effect": {
+        "to": "type-03",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "interactive effect": {
+        "to": "type-03",
+        "look": null,
+        "motion": "interactive",
+        "move": null
+      },
+      "glass effect": {
+        "to": "type-03",
+        "look": "glass",
+        "motion": null,
+        "move": null
+      },
+      "table preview": {
+        "to": "type-04",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "stats preview": {
+        "to": "type-04",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "profile/avatar": {
+        "to": "type-05",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "with icon": {
+        "to": "type-05",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "with image": {
+        "to": "type-05",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "simple preview": {
+        "to": "type-06",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "link preview": {
+        "to": "type-06",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "basic tooltip": {
+        "to": "type-06",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "basic component": {
+        "to": "type-06",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "info tooltip": {
+        "to": "type-06",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "styled variant": {
+        "to": "type-06",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "document preview": {
+        "to": "type-06",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "creative styled": {
+        "to": "type-06",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "accessible hover": {
+        "to": "type-06",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "rich tooltip": {
+        "to": "type-06",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "notification preview": {
+        "to": "type-06",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "product preview": {
+        "to": "type-06",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "positioned": {
+        "to": "type-06",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "paginated content": {
+        "to": "type-06",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "direction-aware reveal": {
+        "to": "type-06",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "stack expand": {
+        "to": "type-06",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "basic popover": {
+        "to": "type-07",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "composable overlay": {
+        "to": "type-07",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "simple popover": {
+        "to": "type-07",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "styled overlay": {
+        "to": "type-07",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "positioned overlay": {
+        "to": "type-07",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "in dialog": {
+        "to": "type-07",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "profile preview": {
+        "to": "type-08",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "profile peek": {
+        "to": "type-08",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "profile info": {
+        "to": "type-08",
+        "look": null,
+        "motion": null,
+        "move": null
+      }
+    }
+  },
+  "overlays/lightbox": {
+    "types": [
+      {
+        "id": "type-01",
+        "name": "Grids",
+        "what": "Grids components"
+      },
+      {
+        "id": "type-02",
+        "name": "Other",
+        "what": "Other components"
+      },
+      {
+        "id": "type-03",
+        "name": "Overlays",
+        "what": "Overlays components"
+      },
+      {
+        "id": "type-04",
+        "name": "Players",
+        "what": "Players components"
+      }
+    ],
+    "map": {
+      "photo grid": {
+        "to": "type-01",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "lightbox": {
+        "to": "type-02",
+        "look": "light",
+        "motion": null,
+        "move": null
+      },
+      "full-screen viewer": {
+        "to": "type-02",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "thumbnail-connected viewer": {
+        "to": "type-02",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "fullscreen viewer": {
+        "to": "type-02",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "embedded media node": {
+        "to": "type-02",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "3d reveal to lightbox": {
+        "to": "type-02",
+        "look": "3d",
+        "motion": "3d",
+        "move": null
+      },
+      "morphing zoom": {
+        "to": "type-02",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "full-bleed viewer": {
+        "to": "type-02",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "masonry to fullscreen": {
+        "to": "type-02",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "ripple zoom": {
+        "to": "type-02",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "ark gallery": {
+        "to": "type-02",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "product gallery": {
+        "to": "type-02",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "lookbook lightbox": {
+        "to": "type-02",
+        "look": "light",
+        "motion": null,
+        "move": null
+      },
+      "floating detachable": {
+        "to": "type-02",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "modal viewer": {
+        "to": "type-03",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "modal image viewer": {
+        "to": "type-03",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "video glow opener": {
+        "to": "type-04",
+        "look": null,
+        "motion": null,
+        "move": null
+      }
+    }
+  },
+  "overlays/popover": {
+    "types": [
+      {
+        "id": "type-01",
+        "name": "Cards",
+        "what": "Cards components"
+      },
+      {
+        "id": "type-02",
+        "name": "Forms",
+        "what": "Forms components"
+      },
+      {
+        "id": "type-03",
+        "name": "Lists",
+        "what": "Lists components"
+      },
+      {
+        "id": "type-04",
+        "name": "Menus",
+        "what": "Menus components"
+      },
+      {
+        "id": "type-05",
+        "name": "Other",
+        "what": "Other components"
+      },
+      {
+        "id": "type-06",
+        "name": "Overlays",
+        "what": "Overlays components"
+      },
+      {
+        "id": "type-07",
+        "name": "People",
+        "what": "People components"
+      }
+    ],
+    "map": {
+      "info card": {
+        "to": "type-01",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "floating panel": {
+        "to": "type-01",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "floating panels": {
+        "to": "type-01",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "form popover": {
+        "to": "type-02",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "form in popover": {
+        "to": "type-02",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "with form": {
+        "to": "type-02",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "feedback form": {
+        "to": "type-02",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "picker popover": {
+        "to": "type-02",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "with arrow": {
+        "to": "type-03",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "menu popover": {
+        "to": "type-04",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "specialized content": {
+        "to": "type-05",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "animated entrance": {
+        "to": "type-05",
+        "look": null,
+        "motion": "entrance",
+        "move": null
+      },
+      "styled variants set": {
+        "to": "type-05",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "morphing": {
+        "to": "type-05",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "creative styled": {
+        "to": "type-05",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "glass or frosted": {
+        "to": "type-05",
+        "look": "glass",
+        "motion": null,
+        "move": null
+      },
+      "with positioning": {
+        "to": "type-05",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "animated": {
+        "to": "type-05",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "highlight or underline": {
+        "to": "type-05",
+        "look": "light",
+        "motion": null,
+        "move": null
+      },
+      "content preview": {
+        "to": "type-05",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "ios-style": {
+        "to": "type-05",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "basic popover": {
+        "to": "type-06",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "popover kit": {
+        "to": "type-06",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "morphing popover": {
+        "to": "type-06",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "composable popover": {
+        "to": "type-06",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "styled popover": {
+        "to": "type-06",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "animated popover": {
+        "to": "type-06",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "tooltip and popover": {
+        "to": "type-06",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "profile details": {
+        "to": "type-07",
+        "look": null,
+        "motion": null,
+        "move": null
+      }
+    }
+  },
+  "pages/templates": {
+    "types": [
+      {
+        "id": "type-01",
+        "name": "Cards",
+        "what": "Cards components"
+      },
+      {
+        "id": "type-02",
+        "name": "Charts",
+        "what": "Charts components"
+      },
+      {
+        "id": "type-03",
+        "name": "Code",
+        "what": "Code components"
+      },
+      {
+        "id": "type-04",
+        "name": "Effects",
+        "what": "Effects components"
+      },
+      {
+        "id": "type-05",
+        "name": "Forms",
+        "what": "Forms components"
+      },
+      {
+        "id": "type-06",
+        "name": "Icons",
+        "what": "Icons components"
+      },
+      {
+        "id": "type-07",
+        "name": "Other",
+        "what": "Other components"
+      },
+      {
+        "id": "type-08",
+        "name": "Pages",
+        "what": "Pages components"
+      }
+    ],
+    "map": {
+      "404 card": {
+        "to": "type-01",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "legal card": {
+        "to": "type-01",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "utility": {
+        "to": "type-01",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "utility function": {
+        "to": "type-01",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "404 typographic": {
+        "to": "type-02",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "coming-soon real-estate": {
+        "to": "type-02",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "status dashboard": {
+        "to": "type-02",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "404 editorial": {
+        "to": "type-03",
+        "look": "editorial",
+        "motion": null,
+        "move": null
+      },
+      "coming-soon editorial": {
+        "to": "type-03",
+        "look": "editorial",
+        "motion": null,
+        "move": null
+      },
+      "cms editor": {
+        "to": "type-03",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "editorial landing": {
+        "to": "type-03",
+        "look": "editorial",
+        "motion": null,
+        "move": null
+      },
+      "404 unicode": {
+        "to": "type-03",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "decorative effect": {
+        "to": "type-04",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "404 with animation": {
+        "to": "type-04",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "404 effect": {
+        "to": "type-04",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "404 animation": {
+        "to": "type-04",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "coming-soon form": {
+        "to": "type-05",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "form demo": {
+        "to": "type-05",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "multi-step form": {
+        "to": "type-05",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "full form": {
+        "to": "type-05",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "login form": {
+        "to": "type-05",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "form field wrapper": {
+        "to": "type-05",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "404 with image": {
+        "to": "type-06",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "coming-soon with image": {
+        "to": "type-06",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "coming-soon timeline": {
+        "to": "type-06",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "coming-soon waitlist": {
+        "to": "type-06",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "blog list": {
+        "to": "type-06",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "coming soon": {
+        "to": "type-07",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "portfolio": {
+        "to": "type-07",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "docs": {
+        "to": "type-07",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "404 minimal": {
+        "to": "type-07",
+        "look": "minimal",
+        "motion": null,
+        "move": null
+      },
+      "404 search": {
+        "to": "type-07",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "404 game": {
+        "to": "type-07",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "blog": {
+        "to": "type-07",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "coming-soon maintenance": {
+        "to": "type-07",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "404 technical": {
+        "to": "type-07",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "404 glitch": {
+        "to": "type-07",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "coming-soon event": {
+        "to": "type-07",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "coming-soon countdown": {
+        "to": "type-07",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "404 directory": {
+        "to": "type-07",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "404 interactive": {
+        "to": "type-07",
+        "look": null,
+        "motion": "interactive",
+        "move": null
+      },
+      "blog post": {
+        "to": "type-07",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "coming-soon commerce": {
+        "to": "type-07",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "404 with recommendations": {
+        "to": "type-07",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "full landing": {
+        "to": "type-07",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "dashboard": {
+        "to": "type-07",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "coming-soon transparency": {
+        "to": "type-07",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "coming-soon education": {
+        "to": "type-07",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "coming-soon placeholder": {
+        "to": "type-07",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "404 helpful": {
+        "to": "type-07",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "portfolio site": {
+        "to": "type-07",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "model catalog": {
+        "to": "type-07",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "404 simple": {
+        "to": "type-07",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "mobile app": {
+        "to": "type-07",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "404 retro": {
+        "to": "type-07",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "404 creative": {
+        "to": "type-07",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "coming-soon social proof": {
+        "to": "type-07",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "coming-soon dashboard": {
+        "to": "type-07",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "coming-soon with ticket": {
+        "to": "type-07",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "coming-soon with mockup": {
+        "to": "type-07",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "coming-soon portfolio": {
+        "to": "type-07",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "coming-soon community": {
+        "to": "type-07",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "coming-soon preview": {
+        "to": "type-07",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "coming-soon reward": {
+        "to": "type-07",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "coming-soon interactive": {
+        "to": "type-07",
+        "look": null,
+        "motion": "interactive",
+        "move": null
+      },
+      "coming-soon features": {
+        "to": "type-07",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "404 portfolio": {
+        "to": "type-07",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "404 elegant": {
+        "to": "type-07",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "email newsletter": {
+        "to": "type-07",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "404 with game": {
+        "to": "type-07",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "data manager": {
+        "to": "type-07",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "analytics dashboard": {
+        "to": "type-07",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "docs site": {
+        "to": "type-07",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "tenant console": {
+        "to": "type-07",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "server route": {
+        "to": "type-07",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "404 split": {
+        "to": "type-07",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "post component": {
+        "to": "type-07",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "404 3d": {
+        "to": "type-07",
+        "look": "3d",
+        "motion": "3d",
+        "move": null
+      },
+      "auth flow": {
+        "to": "type-07",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "landing page": {
+        "to": "type-08",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "error page": {
+        "to": "type-08",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "full-page template": {
+        "to": "type-08",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "email template": {
+        "to": "type-08",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "about section": {
+        "to": "type-08",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "portfolio section": {
+        "to": "type-08",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "status page": {
+        "to": "type-08",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "receipt template": {
+        "to": "type-08",
+        "look": null,
+        "motion": null,
+        "move": null
+      },
+      "mobile template": {
+        "to": "type-08",
+        "look": null,
+        "motion": null,
+        "move": null
+      }
+    }
+  }
+}

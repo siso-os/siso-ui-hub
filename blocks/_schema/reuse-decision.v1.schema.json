@@ -1,0 +1,125 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://actionist.dev/schemas/reuse-decision/v1",
+  "title": "Actionist bounded capability and reuse decision packet v1",
+  "description": "Planning decision only. A selected packet does not qualify, admit, release, install or deploy a block.",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "decision_id",
+    "capability_id",
+    "requested_disposition",
+    "capability_boundary",
+    "selection",
+    "rights_exposure",
+    "maintenance_model",
+    "inputs",
+    "rejected_alternatives"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {"const": "actionist.reuse-decision.v1"},
+    "decision_id": {"type": "string", "minLength": 1},
+    "capability_id": {"type": "string", "pattern": "^[a-z0-9][a-z0-9-]*/[a-z0-9][a-z0-9-]*$"},
+    "requested_disposition": {"enum": ["EVALUATE", "HOLD"]},
+    "capability_boundary": {"$ref": "#/$defs/capabilityBoundary"},
+    "selection": {"$ref": "#/$defs/selection"},
+    "rights_exposure": {
+      "type": ["string", "null"],
+      "enum": ["none_coordinate_only", "none_network_only", "source_copied", "nothing_copied_specification_only", null]
+    },
+    "maintenance_model": {
+      "type": ["string", "null"],
+      "enum": ["downstream_service", "pinned_fork_with_merge", "pinned_fork_no_merge", "vendored_no_upstream", "none", null]
+    },
+    "inputs": {"$ref": "#/$defs/decisionInputs"},
+    "rejected_alternatives": {
+      "type": "array",
+      "items": {"$ref": "#/$defs/rejectedAlternative"}
+    }
+  },
+  "$defs": {
+    "reuseShape": {
+      "enum": [
+        "intact_service",
+        "intact_fork",
+        "embedded_module",
+        "transplant",
+        "extracted_package",
+        "adapter",
+        "generated_from_pattern",
+        "template",
+        "custom_delta",
+        "reference_only"
+      ]
+    },
+    "stringList": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {"type": "string", "minLength": 1}
+    },
+    "capabilityBoundary": {
+      "type": "object",
+      "required": ["outcome_statement", "included_responsibilities", "excluded_responsibilities", "authoritative_state_owner"],
+      "additionalProperties": false,
+      "properties": {
+        "outcome_statement": {"type": "string", "minLength": 1},
+        "included_responsibilities": {"$ref": "#/$defs/stringList"},
+        "excluded_responsibilities": {"$ref": "#/$defs/stringList"},
+        "authoritative_state_owner": {"type": "string", "minLength": 1}
+      }
+    },
+    "selection": {
+      "type": "object",
+      "required": ["selected_shape", "candidate_shapes", "decision_authority"],
+      "additionalProperties": false,
+      "properties": {
+        "selected_shape": {
+          "type": ["string", "null"],
+          "enum": ["intact_service", "intact_fork", "embedded_module", "transplant", "extracted_package", "adapter", "generated_from_pattern", "template", "custom_delta", "reference_only", null]
+        },
+        "candidate_shapes": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {"$ref": "#/$defs/reuseShape"}
+        },
+        "decision_authority": {"type": "string", "minLength": 1}
+      }
+    },
+    "inputState": {
+      "type": "object",
+      "required": ["status", "summary", "evidence_refs"],
+      "additionalProperties": false,
+      "properties": {
+        "status": {"enum": ["known", "not_applicable", "missing", "ambiguous", "incompatible"]},
+        "summary": {"type": "string"},
+        "evidence_refs": {"$ref": "#/$defs/stringList"}
+      }
+    },
+    "decisionInputs": {
+      "type": "object",
+      "required": ["source", "rights", "host", "tenancy", "data", "lifecycle", "evidence"],
+      "additionalProperties": false,
+      "properties": {
+        "source": {"$ref": "#/$defs/inputState"},
+        "rights": {"$ref": "#/$defs/inputState"},
+        "host": {"$ref": "#/$defs/inputState"},
+        "tenancy": {"$ref": "#/$defs/inputState"},
+        "data": {"$ref": "#/$defs/inputState"},
+        "lifecycle": {"$ref": "#/$defs/inputState"},
+        "evidence": {"$ref": "#/$defs/inputState"}
+      }
+    },
+    "rejectedAlternative": {
+      "type": "object",
+      "required": ["shape", "reason", "evidence_refs"],
+      "additionalProperties": false,
+      "properties": {
+        "shape": {"$ref": "#/$defs/reuseShape"},
+        "reason": {"type": "string", "minLength": 1},
+        "evidence_refs": {"$ref": "#/$defs/stringList"}
+      }
+    }
+  }
+}

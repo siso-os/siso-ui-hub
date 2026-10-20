@@ -1,0 +1,169 @@
+{
+  "$schema": "../_schema/actionist-block.v2.schema.json",
+  "schema_version": "actionist.block-manifest.v2",
+  "block_id": "actionist/teable-data-grid",
+  "version": "0.1.0",
+  "capability_id": "actionist/teable-data-grid",
+  "display_name": "Teable data grid",
+  "outcome_statement": "Give a host application a tenant-scoped, high-density operational grid without copying the donor application into the host.",
+  "authorization": {
+    "prototype": true,
+    "implementation_authorized": true
+  },
+  "lifecycle": {
+    "source_reusability": "reusable_candidate",
+    "adaptation_status": "surgery_planned",
+    "proof_status": "partial_local_proof",
+    "admission_status": "held_for_decision",
+    "admission_scope": {
+      "tenants": [],
+      "applications": [],
+      "environments": ["synthetic_fixture_only"],
+      "interpretation": "An empty tenant/application scope means admitted nowhere; synthetic fixture status is a test boundary, not an admission."
+    }
+  },
+  "reuse": {
+    "shape": "intact_service",
+    "rights_exposure": "none_network_only",
+    "mount_topology": "service_only",
+    "runtime_profile": "sidecar_service",
+    "service_evidence": {
+      "authenticated_flow_proven": false,
+      "data_isolation": {
+        "database": "Historical database-layer candidate evidence only; independent current host role/schema/restore proof remains held in records/qualification.json.",
+        "cache_namespace": "Historical Redis ACL/prefix evidence only; no current donor-bound isolation replay by this package.",
+        "object_storage": "Not proven: authenticated attachment upload/read and namespace isolation remain blocked."
+      },
+      "wrong_origin_denied": false,
+      "replay_denied": false,
+      "restart_persistence": false
+    },
+    "framing_debt": {
+      "justification": "Teable owns its HTTP, realtime, metadata and per-base data runtime; absorbing it natively would mean vendoring an AGPL application whose Section 7 corresponding-source obligation is unresolved. The host-proxy sidecar mount preserves the donor runtime while keeping the host in control of identity, tenancy and URL space. Note records/packaging.json describes the donor as a cross-origin/intact service for token purposes: the theme bridge below is host-authored CSS scoped to the host-rendered surface, NOT inherited donor variables.",
+      "absorption_path": "Close the AGPL Section 7 corresponding-source attestation, then absorb the grid rendering layer natively behind the existing ports (grid-query.v1, grid-mutate.v1) while leaving the donor data plane a sidecar; the ports are already the seam that would survive that change."
+    },
+    "donor": {
+      "repository": "https://github.com/sisodias/teable.git",
+      "upstream_repository": "https://github.com/teableio/teable.git",
+      "immutable_revision": "b245a987f8bfb7411d4e2423907b9cbb0a1c9b6b",
+      "upstream_revision": "06a4461e2bc53055182d4df0a72dffa26fd99210",
+      "source_digest": "sha256:e41fe62b54c1d0c077a9c5a036f1b4e04016dcd0203396f943411e89e6e09fc6",
+      "source_digest_basis": "git archive tar stream at immutable revision",
+      "license": "AGPL-3.0 with Teable Section 7 brand-protection terms; packages retain their own notices",
+      "runtime_reference": "SISOCRM integrations/teable-fork.json and teable-community.json"
+    },
+    "ownership": {
+      "donor_runtime": "Teable sidecar owns its HTTP, realtime, metadata and per-base data runtime",
+      "host_binding": "Actionist host owns the verified identity context, outer URL, tenant selection, navigation, settings entry, policy and observability envelope",
+      "host_data": "Host-owned tables remain outside Teable resources and are never claimed by Teable migrations",
+      "migration_rule": "Exactly one migration owner per resource; no shared-table migration history"
+    }
+  },
+  "records": {
+    "capability": "records/capability.json",
+    "packaging": "records/packaging.json",
+    "host_requirements": "records/host-requirements.json",
+    "binding_plan": "records/binding-plan.json",
+    "qualification": "records/qualification.json",
+    "registry": "records/registry.json",
+    "release": "records/release.json"
+  },
+  "interfaces": {
+    "host_binding": "interfaces/host-binding.ts",
+    "host_binding_schema": "schemas/host-binding.schema.json"
+  },
+  "configuration": {
+    "schema": "schemas/config.schema.json",
+    "example": "config/example.config.json",
+    "secret_policy": "Only environment references are persisted; no credential value is written into this package.",
+    "required_environment_references": [
+      "ACTIONIST_TEABLE_BASE_URL",
+      "ACTIONIST_TEABLE_CREDENTIAL_REF",
+      "ACTIONIST_DATABASE_URL",
+      "ACTIONIST_REDIS_URL",
+      "ACTIONIST_ATTACHMENT_STORE_URL"
+    ]
+  },
+  "fixture": {
+    "host": "fixtures/synthetic-host.json",
+    "config": "config/example.config.json",
+    "purpose": "Synthetic manifest validation and binding generation only; it contains no client data and performs no network or donor-source action."
+  },
+  "theme": {
+    "bridge": "theme/teable-theme-bridge.css",
+    "scope_selector": ".actionist-teable-surface",
+    "variable_format": "hsl-triplets",
+    "global_root_writes": false
+  },
+  "commands": {
+    "validate": "node tools/teable-block.mjs validate",
+    "smoke": "node tools/teable-block.mjs smoke",
+    "install": "node tools/teable-block.mjs install --out <disposable-directory>",
+    "bind": "node tools/teable-block.mjs bind --config <config.json> --host <host-fixture.json> --out <disposable-directory>"
+  },
+  "verification": {
+    "command": "node tools/teable-block.mjs smoke",
+    "required_evidence": [
+      "manifest_parse",
+      "record_links",
+      "config_shape",
+      "binding_generation",
+      "identity_refusal",
+      "tenant_refusal",
+      "migration_owner_refusal",
+      "theme_scope",
+      "evidence_parity",
+      "no_secrets_or_absolute_paths"
+    ],
+    "negative_fixtures": [
+      { "name": "missing_or_unverified_identity", "refusal_code": "identity_refusal" },
+      { "name": "missing_tenant", "refusal_code": "tenant_refusal" },
+      { "name": "missing_migration_owner", "refusal_code": "migration_owner_refusal" }
+    ]
+  },
+  "holds": [
+    {
+      "id": "H-NATIVE-UI",
+      "status": "OPEN",
+      "statement": "Authenticated native desktop and mobile UI CRUD are recorded BLOCKED in the exact historical receipt.",
+      "owner": "experiment",
+      "next_gate": "fresh reproducible authenticated proof session covering both surfaces"
+    },
+    {
+      "id": "H-ATTACHMENT",
+      "status": "OPEN",
+      "statement": "Attachment upload/read authorization and tenant/base namespace proof are blocked; a signed URL is not host authorization.",
+      "owner": "experiment",
+      "next_gate": "authenticated upload, read-authorization and cross-tenant denial for a namespaced object"
+    },
+    {
+      "id": "H-ISOLATION",
+      "status": "OPEN",
+      "statement": "Independent per-client role/schema and independent restore boundary do not close in the isolation gate.",
+      "owner": "experiment",
+      "next_gate": "exact-pin run proving least-privilege role/schema, Redis namespace, attachment namespace, backup/restore and second-client denial together"
+    },
+    {
+      "id": "H-HOST-IDENTITY",
+      "status": "OPEN",
+      "statement": "The host identity/session handoff and direct-denial proof are not reproduced in this package.",
+      "owner": "experiment",
+      "next_gate": "reproducible host assertion session proof"
+    },
+    {
+      "id": "H-SECTION7",
+      "status": "OPEN",
+      "statement": "AGPL corresponding-source and Section 7 product/legal attestation gate remains blocked.",
+      "owner": "operator",
+      "next_gate": "corresponding-source decision and applicable notices"
+    }
+  ],
+  "source_boundary": {
+    "source_copied": false,
+    "donor_repository_vendored": false,
+    "secrets_embedded": false,
+    "absolute_client_paths_embedded": false,
+    "deployment_performed": false
+  },
+  "runbook": "RUNBOOK.md"
+}

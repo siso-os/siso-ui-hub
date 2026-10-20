@@ -1,0 +1,6 @@
+# PNGs committed as regular blobs for now — git-lfs not installed locally
+# or on Cloudflare's CI runner. When library grows past 10k components
+# we'll migrate via `git lfs migrate import`. For now, regular blobs
+# avoid the "files should have been pointers" error on CI clones.
+library/**/*.png binary -text
+

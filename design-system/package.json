@@ -1,0 +1,14 @@
+{
+  "name": "siso-design-system",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "build:manifest": "node scripts/build-manifest.mjs",
+    "build:principles": "node scripts/build-principles-index.mjs",
+    "research:fetch": "node scripts/research-fetch.mjs",
+    "build:research": "node scripts/build-research-library.mjs",
+    "prebuild": "node scripts/build-manifest.mjs",
+    "install": "cd viewer && npm install --legacy-peer-deps",
+    "build": "node scripts/build-manifest.mjs && cd viewer && npm run cf:build"
+  }
+}
