@@ -1,0 +1,25 @@
+{
+  "id": "siso.ui.faces.research",
+  "kind": "docs",
+  "owner": "ui-hub",
+  "summary": "Faces research provenance: deduplicated Agent Base studies, archived experiments and restore-verified encrypted render data.",
+  "tags": [
+    "layer:platform"
+  ],
+  "depends": [
+    "siso.packages.ui"
+  ],
+  "status": "archived",
+  "data": [
+    "faces-lab/01",
+    "faces-mini/01"
+  ],
+  "archive_sources": [
+    "_archive/2026-10-21-faces/lab",
+    "_archive/2026-10-21-faces/mini"
+  ],
+  "canonical_product_modules": [
+    "siso.products.agent-base",
+    "siso.packages.ui"
+  ]
+}
