@@ -36,6 +36,6 @@
 
 ## Rules for this repo
 
-- HALO CRM is Cam's repo. Reading and analysing its code is fine (Shaan, 14 Oct: "it's not off limits for code"); its code stays in his repo, never copied into this one.
+- HALO CRM is HALO code in HALO's repo (HALO-AGENCY/halo, apps/platform). Reading and analysing its code is fine (Shaan, 14 Oct: "it's not off limits for code"); its code stays in HALO's repo, never copied into this one.
 - Respect licences: install only what a licence allows (Arc Pro, Kobra, Kinetics are reference only).
 - Nothing is deleted: move it under `_archive/`.
