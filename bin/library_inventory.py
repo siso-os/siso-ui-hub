@@ -62,7 +62,7 @@ def read_rows(path):
     """Foundry may be writing live: count malformed lines, never hide incomplete reads."""
     rows, bad = [], 0
     if path.exists():
-        for line in path.read_text().splitlines():
+        for line in path.read_text(encoding="utf-8").split("\n"):  # not splitlines: U+2028 lives inside Foundry titles
             if not line.strip():
                 continue
             try:

@@ -47,7 +47,7 @@ HALO CRM's `project-base` worktree, commit `a31e3b820b51c5eec474f5b74c56a4e4188d
 - `src/widgets/engine/WidgetShell.tsx`: one shared frame, head/body/footer and content truth.
 - `src/widgets/engine/useWidgetLayout.ts`: pure packing and persisted layout contract.
 
-SISO hub `principles/0003`, `0004`, `0005`, `0009` specify bands, data registries, in-place detail and truthful states. These references informed behavior only; HALO code remains in Cam's repository. `NOTICE` records provenance.
+SISO hub `principles/0003`, `0004`, `0005`, `0009` specify bands, data registries, in-place detail and truthful states. These references informed behavior only; HALO code remains in HALO's repository. `NOTICE` records provenance.
 
 ## Verification
 
